@@ -1,0 +1,25 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Box<TreeNode>>,
+    pub right: Option<Box<TreeNode>>,
+}
+
+impl Solution {
+    pub fn lowest_common_ancestor(root: Option<Box<TreeNode>>, p: i32, q: i32) -> i32 {
+        find(root.as_deref(), p, q).unwrap().val
+    }
+}
+
+fn find(node: Option<&TreeNode>, p: i32, q: i32) -> Option<&TreeNode> {
+    let node = node?;
+    if node.val == p || node.val == q {
+        return Some(node);
+    }
+    let left = find(node.left.as_deref(), p, q);
+    let right = find(node.right.as_deref(), p, q);
+    if left.is_some() && right.is_some() {
+        return Some(node);
+    }
+    left.or(right)
+}

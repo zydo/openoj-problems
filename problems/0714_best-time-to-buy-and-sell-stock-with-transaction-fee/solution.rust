@@ -1,0 +1,12 @@
+impl Solution {
+    pub fn max_profit(prices: Vec<i32>, fee: i32) -> i64 {
+        let (mut cash, mut hold) = (0i64, -(1i64 << 60));
+        for &price in prices.iter() {
+            let new_cash = cash.max(hold + price as i64 - fee as i64);
+            let new_hold = hold.max(cash - price as i64);
+            cash = new_cash;
+            hold = new_hold;
+        }
+        cash
+    }
+}

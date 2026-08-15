@@ -1,0 +1,28 @@
+impl Solution {
+    pub fn min_cut(s: String) -> i32 {
+        let b = s.as_bytes();
+        let n = b.len();
+        let mut cut: Vec<i32> = (-1..n as i32).collect();
+        for c in 0..n {
+            let (mut l, mut r) = (c as isize, c as isize);
+            while l >= 0 && (r as usize) < n && b[l as usize] == b[r as usize] {
+                let relaxed = cut[l as usize] + 1;
+                if relaxed < cut[r as usize + 1] {
+                    cut[r as usize + 1] = relaxed;
+                }
+                l -= 1;
+                r += 1;
+            }
+            let (mut l, mut r) = (c as isize, c as isize + 1);
+            while l >= 0 && (r as usize) < n && b[l as usize] == b[r as usize] {
+                let relaxed = cut[l as usize] + 1;
+                if relaxed < cut[r as usize + 1] {
+                    cut[r as usize + 1] = relaxed;
+                }
+                l -= 1;
+                r += 1;
+            }
+        }
+        cut[n]
+    }
+}

@@ -6,8 +6,7 @@
   "difficulty": "H2",
   "tags": [
     "Array",
-    "Two Pointers",
-    "Binary Search"
+    "Two Pointers"
   ],
   "invocation": {
     "type": "function",

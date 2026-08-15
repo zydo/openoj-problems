@@ -1,0 +1,18 @@
+impl Solution {
+    pub fn last_stone_weight_ii(stones: Vec<i32>) -> i32 {
+        let total: i32 = stones.iter().sum();
+        let target = total / 2;
+        let mut reachable = vec![false; target as usize + 1];
+        reachable[0] = true;
+        for &value in &stones {
+            let v = value as usize;
+            for s in (v..=target as usize).rev() {
+                if reachable[s - v] {
+                    reachable[s] = true;
+                }
+            }
+        }
+        let best = (0..=target as usize).rev().find(|&s| reachable[s]).unwrap();
+        total - 2 * best as i32
+    }
+}

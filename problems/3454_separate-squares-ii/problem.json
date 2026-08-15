@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 3454,
+  "slug": "separate-squares-ii",
+  "title": "Separate Squares II",
+  "difficulty": "H4",
+  "tags": [
+    "Binary Search",
+    "Geometry",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "separateSquares",
+    "parameters": [
+      {
+        "name": "squares",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "number"
+    },
+    "entrypoints": {
+      "go": "separateSquares",
+      "rust": "separate_squares",
+      "typescript": "separateSquares"
+    },
+    "comparison": "close"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

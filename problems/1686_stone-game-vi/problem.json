@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 1686,
+  "slug": "stone-game-vi",
+  "title": "Stone Game VI",
+  "difficulty": "H3",
+  "tags": [
+    "Greedy",
+    "Sorting",
+    "Game Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stoneGameVI",
+    "parameters": [
+      {
+        "name": "aliceValues",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "bobValues",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "stoneGameVI",
+      "rust": "stone_game_vi",
+      "typescript": "stoneGameVI"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

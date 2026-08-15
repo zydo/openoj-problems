@@ -1,0 +1,21 @@
+impl Solution {
+    pub fn single_number(nums: Vec<i32>) -> Vec<i32> {
+        let mut total = 0;
+        for &value in &nums {
+            total ^= value;
+        }
+        let mask = total & total.wrapping_neg();
+        let mut first = 0;
+        for &value in &nums {
+            if value & mask != 0 {
+                first ^= value;
+            }
+        }
+        let second = total ^ first;
+        if first > second {
+            vec![second, first]
+        } else {
+            vec![first, second]
+        }
+    }
+}

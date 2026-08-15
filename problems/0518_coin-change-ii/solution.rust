@@ -1,0 +1,14 @@
+impl Solution {
+    pub fn change(amount: i32, coins: Vec<i32>) -> i32 {
+        let amount = amount as usize;
+        let mut dp = vec![0i32; amount + 1];
+        dp[0] = 1;
+        for &c in &coins {
+            let c = c as usize;
+            for a in c..=amount {
+                dp[a] += dp[a - c];
+            }
+        }
+        dp[amount]
+    }
+}

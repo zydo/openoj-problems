@@ -1,0 +1,45 @@
+impl Solution {
+    pub fn min_cost(nums: Vec<i32>, costs: Vec<i32>) -> i64 {
+        let n = nums.len();
+        let mut next_ge = vec![-1i32; n];
+        let mut next_sm = vec![-1i32; n];
+        let mut stack: Vec<usize> = Vec::new();
+        for i in 0..n {
+            while let Some(&top) = stack.last() {
+                if nums[i] >= nums[top] {
+                    next_ge[top] = i as i32;
+                    stack.pop();
+                } else {
+                    break;
+                }
+            }
+            stack.push(i);
+        }
+        stack.clear();
+        for i in 0..n {
+            while let Some(&top) = stack.last() {
+                if nums[i] < nums[top] {
+                    next_sm[top] = i as i32;
+                    stack.pop();
+                } else {
+                    break;
+                }
+            }
+            stack.push(i);
+        }
+        let inf = 1i64 << 60;
+        let mut dp = vec![inf; n];
+        dp[0] = 0;
+        for i in 0..n - 1 {
+            for j in [next_ge[i], next_sm[i]] {
+                if j >= 0 {
+                    let ju = j as usize;
+                    if dp[i] + (costs[ju] as i64) < dp[ju] {
+                        dp[ju] = dp[i] + costs[ju] as i64;
+                    }
+                }
+            }
+        }
+        dp[n - 1]
+    }
+}

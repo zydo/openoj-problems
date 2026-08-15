@@ -1,0 +1,10 @@
+impl Solution {
+    pub fn two_egg_drop(n: i32) -> i32 {
+        let (mut cover, mut moves) = (0i32, 0i32);
+        while cover < n {
+            moves += 1;
+            cover += moves;
+        }
+        moves
+    }
+}
