@@ -45,7 +45,7 @@
       "rust": "find_median_sorted_arrays",
       "typescript": "findMedianSortedArrays"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

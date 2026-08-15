@@ -43,7 +43,7 @@
       "rust": "largest_sum_of_averages",
       "typescript": "largestSumOfAverages"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

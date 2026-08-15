@@ -38,7 +38,7 @@
       "rust": "my_pow",
       "typescript": "myPow"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

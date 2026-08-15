@@ -40,7 +40,7 @@
       "rust": "get_collision_times",
       "typescript": "getCollisionTimes"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

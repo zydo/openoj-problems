@@ -43,7 +43,7 @@
       "rust": "probability_of_heads",
       "typescript": "probabilityOfHeads"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

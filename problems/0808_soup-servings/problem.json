@@ -32,7 +32,7 @@
       "rust": "soup_servings",
       "typescript": "soupServings"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

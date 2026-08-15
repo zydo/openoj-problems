@@ -42,7 +42,7 @@
       "rust": "find_max_average",
       "typescript": "findMaxAverage"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

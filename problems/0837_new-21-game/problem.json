@@ -49,7 +49,7 @@
       "rust": "new21_game",
       "typescript": "new21Game"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

@@ -66,7 +66,7 @@
       "rust": "calc_equation",
       "typescript": "calcEquation"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

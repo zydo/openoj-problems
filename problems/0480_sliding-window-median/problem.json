@@ -45,7 +45,7 @@
       "rust": "median_sliding_window",
       "typescript": "medianSlidingWindow"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

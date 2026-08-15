@@ -43,7 +43,7 @@
       "rust": "minmax_gas_dist",
       "typescript": "minmaxGasDist"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,

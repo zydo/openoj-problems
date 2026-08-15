@@ -54,7 +54,7 @@
       "rust": "mincost_to_hire_workers",
       "typescript": "mincostToHireWorkers"
     },
-    "comparison": "exact"
+    "comparison": "close"
   },
   "limits": {
     "time_ms": 1500,
