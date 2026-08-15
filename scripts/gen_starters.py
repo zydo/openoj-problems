@@ -4,7 +4,9 @@
 Starters are derived code: never edit them by hand — change problem.json and
 re-run this script. The file extension selects the language (py, javascript,
 typescript, java, cpp, go, rust, sql) and the set of generated starters
-defines the languages the problem offers.
+defines the languages the problem offers. Function problems generate all seven
+languages; sql a single starter.sql; design (class) problems python3 + java
+only — the typed wrappers do not implement the actions/params protocol.
 
 Usage:
   gen_starters.py problems/0001_two-sum [problems/… …]   # default: all
@@ -234,6 +236,8 @@ def _parameters(invocation: dict) -> list[tuple[str, dict]]:
 def generate(invocation: dict, language: str) -> str:
     if invocation.get("type", "function") == "sql":
         return "-- TODO: write a single SELECT query\nSELECT 'TODO';\n"
+    if invocation.get("type", "function") == "design":
+        return _generate_design(invocation, language)
     parameters = _parameters(invocation)
     return_type = invocation.get("return_type") or {"kind": "boolean"}
     structs = _uses_structs(invocation)
@@ -315,9 +319,70 @@ def generate(invocation: dict, language: str) -> str:
     raise ValueError(f"Unsupported language: {language}")
 
 
+def _generate_design(invocation: dict, language: str) -> str:
+    """Design (class) problems: only python3 and java — the typed wrappers do
+    not implement the actions/params protocol. Schema:
+        {"type": "design", "class_name": "NumArray",
+         "constructor": {"parameters": [...]},          # same shape as function
+         "methods": [{"name": ..., "parameters": [...], # return_type omitted
+                      "return_type": {...}}]}           # → void / None
+    """
+    if language not in ("python3", "java"):
+        raise ValueError(f"Design problems support python3 and java, not {language}")
+    class_name = invocation["class_name"]
+    constructor = invocation.get("constructor", {}).get("parameters", [])
+    methods = invocation.get("methods", [])
+    all_specs = [spec.get("value_type") for spec in constructor]
+    all_specs += [spec for method in methods for spec in method.get("parameters", [])]
+    all_specs += [method.get("return_type") for method in methods if method.get("return_type")]
+
+    if language == "python3":
+        blocks = ["from typing import List, Optional\n\n\n"]
+        blocks.append(f"class {class_name}:\n")
+        ctor_signature = ", ".join(
+            ["self", *(f"{parameter['name']}: {python_type(parameter['value_type'])}" for parameter in constructor)]
+        )
+        blocks.append(f"    def __init__({ctor_signature}) -> None:\n")
+        blocks.append('        raise NotImplementedError("TODO")\n')
+        for method in methods:
+            signature = ", ".join(
+                ["self", *(f"{parameter['name']}: {python_type(parameter['value_type'])}" for parameter in method.get("parameters", []))]
+            )
+            returns = python_type(method["return_type"]) if method.get("return_type") else "None"
+            blocks.append(f"\n    def {method['name']}({signature}) -> {returns}:\n")
+            blocks.append('        raise NotImplementedError("TODO")\n')
+        return "".join(blocks)
+
+    # java
+    chunks = []
+    if any(_contains_struct(spec) for spec in all_specs if spec):
+        chunks.append("import java.util.List;\n\n")
+    chunks.append(f"class {class_name} {{\n")
+    ctor_signature = ", ".join(
+        f"{java_type(parameter['value_type'])} {parameter['name']}" for parameter in constructor
+    )
+    chunks.append(f"    public {class_name}({ctor_signature}) {{\n")
+    chunks.append('        throw new UnsupportedOperationException("TODO");\n')
+    chunks.append("    }\n")
+    for method in methods:
+        signature = ", ".join(
+            f"{java_type(parameter['value_type'])} {parameter['name']}"
+            for parameter in method.get("parameters", [])
+        )
+        returns = java_type(method["return_type"]) if method.get("return_type") else "void"
+        chunks.append(f"\n    public {returns} {method['name']}({signature}) {{\n")
+        chunks.append('        throw new UnsupportedOperationException("TODO");\n')
+        chunks.append("    }\n")
+    chunks.append("}\n")
+    return "".join(chunks)
+
+
 def starter_files(invocation: dict) -> dict[str, str]:
-    if invocation.get("type", "function") == "sql":
+    invocation_type = invocation.get("type", "function")
+    if invocation_type == "sql":
         return {"sql": generate(invocation, "sql")}
+    if invocation_type == "design":
+        return {language: generate(invocation, language) for language in ("python3", "java")}
     return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
 
 
