@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 1834,
+  "slug": "single-threaded-cpu",
+  "title": "Single-Threaded CPU",
+  "difficulty": "H3",
+  "tags": [
+    "Heap",
+    "Sorting",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "getOrder",
+    "parameters": [
+      {
+        "name": "tasks",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "getOrder",
+      "rust": "get_order",
+      "typescript": "getOrder"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

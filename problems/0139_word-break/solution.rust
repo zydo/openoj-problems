@@ -1,0 +1,20 @@
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn word_break(s: String, wordDict: Vec<String>) -> bool {
+        let s = s.as_bytes();
+        let words: HashSet<&[u8]> = wordDict.iter().map(|word| word.as_bytes()).collect();
+        let n = s.len();
+        let mut reachable = vec![false; n + 1];
+        reachable[0] = true;
+        for i in 1..=n {
+            for j in 0..i {
+                if reachable[j] && words.contains(&s[j..i]) {
+                    reachable[i] = true;
+                    break;
+                }
+            }
+        }
+        reachable[n]
+    }
+}

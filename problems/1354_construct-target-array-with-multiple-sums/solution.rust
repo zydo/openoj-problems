@@ -1,0 +1,26 @@
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn is_possible(target: Vec<i32>) -> bool {
+        let n = target.len();
+        if n == 1 {
+            return target[0] == 1;
+        }
+        let mut total: i64 = target.iter().map(|&v| v as i64).sum();
+        let mut heap: BinaryHeap<i64> = target.iter().map(|&v| v as i64).collect();
+        loop {
+            let largest = heap.pop().unwrap();
+            if largest == 1 {
+                return true;
+            }
+            let rest = total - largest;
+            if largest <= rest {
+                return false;
+            }
+            let steps = (largest - 1) / rest;
+            let prev = largest - steps * rest;
+            heap.push(prev);
+            total = rest + prev;
+        }
+    }
+}

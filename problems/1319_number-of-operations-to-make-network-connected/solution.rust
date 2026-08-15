@@ -1,0 +1,27 @@
+impl Solution {
+    pub fn make_connected(n: i32, connections: Vec<Vec<i32>>) -> i32 {
+        let n = n as usize;
+        if connections.len() + 1 < n {
+            return -1;
+        }
+        let mut parent: Vec<usize> = (0..n).collect();
+        let mut components = n as i32;
+        for c in &connections {
+            let ra = find(&mut parent, c[0] as usize);
+            let rb = find(&mut parent, c[1] as usize);
+            if ra != rb {
+                parent[ra] = rb;
+                components -= 1;
+            }
+        }
+        components - 1
+    }
+}
+
+fn find(parent: &mut Vec<usize>, mut x: usize) -> usize {
+    while parent[x] != x {
+        parent[x] = parent[parent[x]];
+        x = parent[x];
+    }
+    x
+}

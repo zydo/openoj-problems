@@ -1,0 +1,24 @@
+impl Solution {
+    pub fn num_rolls_to_target(n: i32, k: i32, target: i32) -> i32 {
+        const MOD: i64 = 1_000_000_007;
+        let n = n as usize;
+        let k = k as usize;
+        let target = target as usize;
+        let mut dp = vec![0i64; target + 1];
+        let mut ndp = vec![0i64; target + 1];
+        dp[0] = 1;
+        for _ in 0..n {
+            for t in 1..=target {
+                let hi = k.min(t);
+                let mut s: i64 = 0;
+                for f in 1..=hi {
+                    s += dp[t - f];
+                }
+                ndp[t] = s % MOD;
+            }
+            std::mem::swap(&mut dp, &mut ndp);
+            ndp[0] = 0;
+        }
+        dp[target] as i32
+    }
+}

@@ -1,0 +1,30 @@
+use std::collections::{HashSet, VecDeque};
+
+impl Solution {
+    pub fn max_hamming_distances(nums: Vec<i32>, m: i32) -> Vec<i32> {
+        let size: usize = 1usize << m;
+        let full: usize = size - 1;
+        let mut dist: Vec<i32> = vec![size as i32 + 1; size];
+        let mut queue: VecDeque<usize> = VecDeque::new();
+        let mut seen: HashSet<i32> = HashSet::new();
+        for &value in &nums {
+            if seen.insert(value) {
+                dist[value as usize] = 0;
+                queue.push_back(value as usize);
+            }
+        }
+        while let Some(v) = queue.pop_front() {
+            let nd = dist[v] + 1;
+            for bit in 0..m {
+                let u = v ^ (1usize << bit);
+                if dist[u] > nd {
+                    dist[u] = nd;
+                    queue.push_back(u);
+                }
+            }
+        }
+        nums.iter()
+            .map(|&x| m - dist[full ^ (x as usize)])
+            .collect()
+    }
+}

@@ -1,0 +1,54 @@
+class Solution {
+  public:
+    int minCost(int n, vector<vector<int>> &edges, int k) {
+        int m = (int)edges.size();
+        vector<int> heads(n, -1), nxt(2 * m), to(2 * m), wt(2 * m);
+        int cnt = 0;
+        int maxW = 0;
+        for (auto &e : edges) {
+            to[cnt] = e[1];
+            wt[cnt] = e[2];
+            nxt[cnt] = heads[e[0]];
+            heads[e[0]] = cnt++;
+            to[cnt] = e[0];
+            wt[cnt] = e[2];
+            nxt[cnt] = heads[e[1]];
+            heads[e[1]] = cnt++;
+            maxW = max(maxW, e[2]);
+        }
+
+        vector<int> dist(n);
+        auto can = [&](int money) {
+            fill(dist.begin(), dist.end(), -1);
+            dist[0] = 0;
+            vector<int> queue;
+            queue.reserve(n);
+            queue.push_back(0);
+            for (size_t head = 0; head < queue.size(); head++) {
+                int u = queue[head];
+                if (dist[u] >= k)
+                    continue;
+                for (int e = heads[u]; e != -1; e = nxt[e]) {
+                    int v = to[e];
+                    if (wt[e] <= money && dist[v] == -1) {
+                        dist[v] = dist[u] + 1;
+                        queue.push_back(v);
+                    }
+                }
+            }
+            return dist[n - 1] != -1 && dist[n - 1] <= k;
+        };
+
+        if (!can(maxW))
+            return -1;
+        int lo = 0, hi = maxW;
+        while (lo < hi) {
+            int mid = lo + (hi - lo) / 2;
+            if (can(mid))
+                hi = mid;
+            else
+                lo = mid + 1;
+        }
+        return lo;
+    }
+};

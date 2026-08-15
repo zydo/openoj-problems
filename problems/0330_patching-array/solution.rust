@@ -1,0 +1,17 @@
+impl Solution {
+    pub fn min_patches(nums: Vec<i32>, n: i32) -> i32 {
+        let mut patches = 0i32;
+        let mut i = 0usize;
+        let mut reachable: i64 = 1;
+        while reachable <= n as i64 {
+            if i < nums.len() && nums[i] as i64 <= reachable {
+                reachable += nums[i] as i64;
+                i += 1;
+            } else {
+                reachable += reachable;
+                patches += 1;
+            }
+        }
+        patches
+    }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": 2458,
+  "slug": "height-of-binary-tree-after-subtree-removal-queries",
+  "title": "Height of Binary Tree After Subtree Removal Queries",
+  "difficulty": "H4",
+  "tags": [
+    "Binary Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "treeQueries",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "treeQueries",
+      "rust": "tree_queries",
+      "typescript": "treeQueries"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

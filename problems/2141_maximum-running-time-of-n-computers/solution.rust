@@ -1,0 +1,21 @@
+impl Solution {
+    pub fn max_run_time(n: i32, batteries: Vec<i32>) -> i64 {
+        let n = n as i64;
+        let sum: i64 = batteries.iter().map(|&b| b as i64).sum();
+        let feasible = |t: i64| -> bool {
+            let total: i64 = batteries.iter().map(|&b| (b as i64).min(t)).sum();
+            total >= n * t
+        };
+        let mut lo = 0i64;
+        let mut hi = sum / n;
+        while lo < hi {
+            let mid = (lo + hi + 1) / 2;
+            if feasible(mid) {
+                lo = mid;
+            } else {
+                hi = mid - 1;
+            }
+        }
+        lo
+    }
+}

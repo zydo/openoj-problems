@@ -1,0 +1,26 @@
+impl Solution {
+    pub fn stone_game_iii(stone_value: Vec<i32>) -> String {
+        let n = stone_value.len();
+        let mut dp = vec![0i64; n + 1];
+        for i in (0..n).rev() {
+            let mut take: i64 = 0;
+            let mut best: i64 = i64::MIN;
+            let hi = (i + 3).min(n);
+            for j in i..hi {
+                take += stone_value[j] as i64;
+                let cand = take - dp[j + 1];
+                if cand > best {
+                    best = cand;
+                }
+            }
+            dp[i] = best;
+        }
+        if dp[0] > 0 {
+            "Alice".to_string()
+        } else if dp[0] < 0 {
+            "Bob".to_string()
+        } else {
+            "Tie".to_string()
+        }
+    }
+}

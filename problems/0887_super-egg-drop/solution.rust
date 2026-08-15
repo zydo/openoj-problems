@@ -1,0 +1,16 @@
+impl Solution {
+    pub fn super_egg_drop(k: i32, n: i32) -> i32 {
+        let k = k as usize;
+        let mut dp = vec![0i64; k + 1];
+        let mut moves = 0i32;
+        while dp[k] < n as i64 {
+            moves += 1;
+            let mut e = k;
+            while e >= 1 {
+                dp[e] = dp[e - 1] + dp[e] + 1;
+                e -= 1;
+            }
+        }
+        moves
+    }
+}

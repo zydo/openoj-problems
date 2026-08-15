@@ -1,0 +1,39 @@
+impl Solution {
+    pub fn max_subarray_sum(nums: Vec<i32>) -> i64 {
+        let n = nums.len();
+        if n == 1 {
+            return nums[0] as i64;
+        }
+        // prefixMap keyed by the deleted value; key 0 tracks min prefix sum.
+        let mut prefix_map: std::collections::HashMap<i64, i64> = std::collections::HashMap::new();
+        prefix_map.insert(0, 0);
+        let mut prefix_sum = 0i64;
+        let mut min_prefix = 0i64;
+        let mut result = nums[0] as i64;
+        for &num in &nums {
+            let num = num as i64;
+            prefix_sum += num;
+            if prefix_sum - min_prefix > result {
+                result = prefix_sum - min_prefix;
+            }
+            if num < 0 {
+                let p0 = prefix_map[&0];
+                let val = match prefix_map.get(&num) {
+                    Some(&prev) => p0.min(prev) + num,
+                    None => p0 + num,
+                };
+                prefix_map.insert(num, val);
+                if val < min_prefix {
+                    min_prefix = val;
+                }
+            }
+            if prefix_sum < prefix_map[&0] {
+                prefix_map.insert(0, prefix_sum);
+            }
+            if prefix_map[&0] < min_prefix {
+                min_prefix = prefix_map[&0];
+            }
+        }
+        result
+    }
+}

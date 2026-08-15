@@ -1,0 +1,17 @@
+impl Solution {
+    pub fn number_of_unique_good_subsequences(binary: String) -> i32 {
+        const MOD: i64 = 1_000_000_007;
+        let mut end0: i64 = 0;
+        let mut end1: i64 = 0;
+        let mut has_zero = false;
+        for ch in binary.bytes() {
+            if ch == b'0' {
+                end0 = (end0 + end1) % MOD;
+                has_zero = true;
+            } else {
+                end1 = (end1 + end0 + 1) % MOD;
+            }
+        }
+        ((end0 + end1 + if has_zero { 1 } else { 0 }) % MOD) as i32
+    }
+}

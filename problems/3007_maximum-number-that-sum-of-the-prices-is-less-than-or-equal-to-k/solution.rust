@@ -1,0 +1,35 @@
+impl Solution {
+    pub fn find_maximum_number(k: i64, x: i32) -> i64 {
+        let x = x as u32;
+        let mut lo: i64 = 0;
+        let mut hi: i64 = 10_000_000_000_000_000;
+        while Self::price_sum(hi, x) <= k {
+            hi *= 2;
+        }
+        while lo + 1 < hi {
+            let mid = (lo + hi) / 2;
+            if Self::price_sum(mid, x) <= k {
+                lo = mid;
+            } else {
+                hi = mid;
+            }
+        }
+        lo
+    }
+
+    fn price_sum(n: i64, x: u32) -> i64 {
+        let mut total: i64 = 0;
+        let mut p = x;
+        while ((1i64) << (p - 1)) <= n {
+            let b = p - 1;
+            let cycle = 1i64 << (b + 1);
+            let full = (n + 1) / cycle;
+            let rem = (n + 1) % cycle;
+            let half = 1i64 << b;
+            let extra = (rem - half).max(0);
+            total += full * half + extra;
+            p += x;
+        }
+        total
+    }
+}

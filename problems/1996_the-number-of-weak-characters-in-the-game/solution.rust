@@ -1,0 +1,16 @@
+impl Solution {
+    pub fn number_of_weak_characters(properties: Vec<Vec<i32>>) -> i32 {
+        let mut props = properties;
+        props.sort_by(|a, b| b[0].cmp(&a[0]).then(a[1].cmp(&b[1])));
+        let mut weak = 0;
+        let mut max_defense = 0;
+        for p in &props {
+            if p[1] < max_defense {
+                weak += 1;
+            } else {
+                max_defense = p[1];
+            }
+        }
+        weak
+    }
+}

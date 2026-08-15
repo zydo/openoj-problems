@@ -1,0 +1,22 @@
+/**
+ * @param {number[]} arr
+ * @return {number}
+ */
+var countTriplets = function (arr) {
+    const count = new Map([[0, 1]]);
+    const indexSum = new Map([[0, 0]]);
+    let prefix = 0;
+    let answer = 0;
+    for (let j = 0; j < arr.length; j++) {
+        prefix ^= arr[j];
+        if (count.has(prefix)) {
+            answer += j * count.get(prefix) - indexSum.get(prefix);
+            count.set(prefix, count.get(prefix) + 1);
+            indexSum.set(prefix, indexSum.get(prefix) + (j + 1));
+        } else {
+            count.set(prefix, 1);
+            indexSum.set(prefix, j + 1);
+        }
+    }
+    return answer;
+};

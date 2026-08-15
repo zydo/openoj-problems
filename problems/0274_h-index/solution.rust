@@ -1,0 +1,18 @@
+impl Solution {
+    pub fn h_index(citations: Vec<i32>) -> i32 {
+        let n = citations.len();
+        let mut count = vec![0usize; n + 1];
+        for &c in &citations {
+            let idx = (c as usize).min(n);
+            count[idx] += 1;
+        }
+        let mut total = 0usize;
+        for h in (0..=n).rev() {
+            total += count[h];
+            if total >= h {
+                return h as i32;
+            }
+        }
+        0
+    }
+}

@@ -1,0 +1,13 @@
+impl Solution {
+    pub fn max_sub_array(nums: Vec<i32>) -> i32 {
+        let mut best = nums[0];
+        let mut current = nums[0];
+        for &value in &nums[1..] {
+            current = if current < 0 { value } else { current + value };
+            if current > best {
+                best = current;
+            }
+        }
+        best
+    }
+}

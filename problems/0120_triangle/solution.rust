@@ -1,0 +1,12 @@
+impl Solution {
+    pub fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {
+        let n = triangle.len();
+        let mut dp: Vec<i64> = triangle[n - 1].iter().map(|&v| v as i64).collect();
+        for row in (0..n.saturating_sub(1)).rev() {
+            for i in 0..triangle[row].len() {
+                dp[i] = triangle[row][i] as i64 + dp[i].min(dp[i + 1]);
+            }
+        }
+        dp[0] as i32
+    }
+}

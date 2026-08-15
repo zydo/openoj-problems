@@ -1,0 +1,21 @@
+impl Solution {
+    pub fn my_pow(x: f64, n: i32) -> f64 {
+        fn power(mut base: f64, mut exp: i64) -> f64 {
+            let mut result = 1.0;
+            while exp != 0 {
+                if exp & 1 == 1 {
+                    result *= base;
+                }
+                base *= base;
+                exp >>= 1;
+            }
+            result
+        }
+        let exp = n as i64;
+        if exp < 0 {
+            1.0 / power(x, -exp)
+        } else {
+            power(x, exp)
+        }
+    }
+}

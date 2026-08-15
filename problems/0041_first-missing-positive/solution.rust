@@ -1,0 +1,19 @@
+impl Solution {
+    pub fn first_missing_positive(mut nums: Vec<i32>) -> i32 {
+        let n = nums.len() as i32;
+        let mut i = 0usize;
+        while i < nums.len() {
+            while nums[i] >= 1 && nums[i] <= n && nums[(nums[i] - 1) as usize] != nums[i] {
+                let target = (nums[i] - 1) as usize;
+                nums.swap(i, target);
+            }
+            i += 1;
+        }
+        for j in 0..nums.len() {
+            if nums[j] != j as i32 + 1 {
+                return j as i32 + 1;
+            }
+        }
+        n + 1
+    }
+}

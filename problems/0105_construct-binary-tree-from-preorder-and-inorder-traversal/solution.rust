@@ -1,0 +1,41 @@
+use std::collections::HashMap;
+
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Box<TreeNode>>,
+    pub right: Option<Box<TreeNode>>,
+}
+
+impl Solution {
+    pub fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> Option<Box<TreeNode>> {
+        let mut index: HashMap<i32, usize> = HashMap::new();
+        for (i, &v) in inorder.iter().enumerate() {
+            index.insert(v, i);
+        }
+        let mut position = 0usize;
+        Solution::build(&preorder, &index, &mut position, 0, inorder.len())
+    }
+
+    fn build(
+        preorder: &[i32],
+        index: &HashMap<i32, usize>,
+        position: &mut usize,
+        low: usize,
+        high: usize,
+    ) -> Option<Box<TreeNode>> {
+        if low >= high {
+            return None;
+        }
+        let value = preorder[*position];
+        *position += 1;
+        let mid = index[&value];
+        let left = Solution::build(preorder, index, position, low, mid);
+        let right = Solution::build(preorder, index, position, mid + 1, high);
+        Some(Box::new(TreeNode {
+            val: value,
+            left,
+            right,
+        }))
+    }
+}

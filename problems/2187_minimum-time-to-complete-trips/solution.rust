@@ -1,0 +1,18 @@
+impl Solution {
+    pub fn minimum_time(time: Vec<i32>, total_trips: i32) -> i64 {
+        let total_trips = total_trips as i64;
+        let mn = time.iter().map(|&x| x as i64).min().unwrap();
+        let trips_done = |t: i64| -> i64 { time.iter().map(|&x| t / x as i64).sum() };
+        let mut lo = 1i64;
+        let mut hi = mn * total_trips;
+        while lo < hi {
+            let mid = (lo + hi) / 2;
+            if trips_done(mid) >= total_trips {
+                hi = mid;
+            } else {
+                lo = mid + 1;
+            }
+        }
+        lo
+    }
+}

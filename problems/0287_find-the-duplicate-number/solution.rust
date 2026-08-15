@@ -1,0 +1,20 @@
+impl Solution {
+    pub fn find_duplicate(nums: Vec<i32>) -> i32 {
+        let idx = |v: i32| nums[v as usize];
+        let mut slow = 0i32;
+        let mut fast = 0i32;
+        loop {
+            slow = idx(slow);
+            fast = idx(idx(fast));
+            if slow == fast {
+                break;
+            }
+        }
+        slow = 0;
+        while slow != fast {
+            slow = idx(slow);
+            fast = idx(fast);
+        }
+        slow
+    }
+}

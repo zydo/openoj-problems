@@ -1,0 +1,22 @@
+impl Solution {
+    pub fn min_operations(nums: Vec<i32>) -> i32 {
+        let mut arr = nums;
+        let n = arr.len();
+        let mut operations: i32 = 0;
+        for i in 0..n {
+            if i + 2 >= n {
+                break;
+            }
+            if arr[i] == 0 {
+                operations += 1;
+                arr[i] ^= 1;
+                arr[i + 1] ^= 1;
+                arr[i + 2] ^= 1;
+            }
+        }
+        if arr.contains(&0) {
+            return -1;
+        }
+        operations
+    }
+}

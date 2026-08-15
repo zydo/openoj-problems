@@ -1,0 +1,24 @@
+impl Solution {
+    pub fn largest_rectangle_area(heights: Vec<i32>) -> i32 {
+        let n = heights.len();
+        let mut stack: Vec<usize> = Vec::new();
+        let mut best: i32 = 0;
+        for i in 0..=n {
+            let h = if i == n { 0 } else { heights[i] };
+            while let Some(&top) = stack.last() {
+                if heights[top] <= h {
+                    break;
+                }
+                let height = heights[top];
+                stack.pop();
+                let left_i: i64 = stack.last().map(|&l| l as i64).unwrap_or(-1);
+                let area = (height as i64) * ((i as i64) - left_i - 1);
+                if area > best as i64 {
+                    best = area as i32;
+                }
+            }
+            stack.push(i);
+        }
+        best
+    }
+}

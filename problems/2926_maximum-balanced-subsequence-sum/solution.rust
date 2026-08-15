@@ -1,0 +1,49 @@
+impl Solution {
+    pub fn max_balanced_subsequence_sum(nums: Vec<i32>) -> i64 {
+        let n = nums.len();
+        let vals: Vec<i64> = (0..n).map(|i| nums[i] as i64 - i as i64).collect();
+        let mut comp = vals.clone();
+        comp.sort_unstable();
+        comp.dedup();
+        let m = comp.len();
+
+        let mut bit = vec![0i64; m + 1];
+        let mut ans: i64 = i64::MIN;
+
+        for i in 0..n {
+            let j = comp.partition_point(|&v| v < vals[i]) + 1;
+            let best = Self::query(&bit, j);
+            let dp = if best <= 0 {
+                nums[i] as i64
+            } else {
+                nums[i] as i64 + best
+            };
+            if dp > ans {
+                ans = dp;
+            }
+            Self::update(&mut bit, j, dp);
+        }
+        ans
+    }
+
+    fn update(bit: &mut Vec<i64>, mut i: usize, value: i64) {
+        let m = bit.len() - 1;
+        while i <= m {
+            if value > bit[i] {
+                bit[i] = value;
+            }
+            i += i & i.wrapping_neg();
+        }
+    }
+
+    fn query(bit: &Vec<i64>, mut i: usize) -> i64 {
+        let mut best: i64 = 0;
+        while i > 0 {
+            if bit[i] > best {
+                best = bit[i];
+            }
+            i -= i & i.wrapping_neg();
+        }
+        best
+    }
+}

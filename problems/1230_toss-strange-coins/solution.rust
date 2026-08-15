@@ -1,0 +1,14 @@
+impl Solution {
+    pub fn probability_of_heads(prob: Vec<f64>, target: i32) -> f64 {
+        let target = target as usize;
+        let mut dp = vec![0.0f64; target + 1];
+        dp[0] = 1.0;
+        for &p in &prob {
+            for c in (1..=target).rev() {
+                dp[c] = dp[c] * (1.0 - p) + dp[c - 1] * p;
+            }
+            dp[0] *= 1.0 - p;
+        }
+        dp[target]
+    }
+}

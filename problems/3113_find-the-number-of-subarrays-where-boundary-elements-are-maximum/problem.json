@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 3113,
+  "slug": "find-the-number-of-subarrays-where-boundary-elements-are-maximum",
+  "title": "Find the Number of Subarrays Where Boundary Elements Are Maximum",
+  "difficulty": "H3",
+  "tags": [
+    "Monotonic Stack",
+    "Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "numberOfSubarrays",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "numberOfSubarrays",
+      "rust": "number_of_subarrays",
+      "typescript": "numberOfSubarrays"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

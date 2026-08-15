@@ -1,0 +1,20 @@
+impl Solution {
+    pub fn max_subarray_sum_circular(nums: Vec<i32>) -> i32 {
+        let total: i64 = nums.iter().map(|&x| x as i64).sum();
+        let mut cur_max = nums[0] as i64;
+        let mut best_max = nums[0] as i64;
+        let mut cur_min = nums[0] as i64;
+        let mut best_min = nums[0] as i64;
+        for &x in &nums[1..] {
+            let x = x as i64;
+            cur_max = x + cur_max.max(0);
+            best_max = best_max.max(cur_max);
+            cur_min = x + cur_min.min(0);
+            best_min = best_min.min(cur_min);
+        }
+        if best_max < 0 {
+            return best_max as i32;
+        }
+        best_max.max(total - best_min) as i32
+    }
+}

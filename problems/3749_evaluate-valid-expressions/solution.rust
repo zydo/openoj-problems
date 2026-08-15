@@ -1,0 +1,35 @@
+impl Solution {
+    pub fn evaluate_expression(expression: String) -> i64 {
+        let bytes = expression.as_bytes();
+        let mut pos = 0usize;
+        Self::eval(bytes, &mut pos)
+    }
+
+    fn eval(e: &[u8], pos: &mut usize) -> i64 {
+        let ch = e[*pos];
+        if ch == b'-' || ch.is_ascii_digit() {
+            let mut j = *pos;
+            if ch == b'-' {
+                j += 1;
+            }
+            while j < e.len() && e[j].is_ascii_digit() {
+                j += 1;
+            }
+            let v: i64 = std::str::from_utf8(&e[*pos..j]).unwrap().parse().unwrap();
+            *pos = j;
+            return v;
+        }
+        let op = &e[*pos..*pos + 3];
+        *pos += 4;
+        let a = Self::eval(e, pos);
+        *pos += 1;
+        let b = Self::eval(e, pos);
+        *pos += 1;
+        match op {
+            b"add" => a + b,
+            b"sub" => a - b,
+            b"mul" => a * b,
+            _ => a / b,
+        }
+    }
+}

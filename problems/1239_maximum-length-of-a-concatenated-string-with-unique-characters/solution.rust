@@ -1,0 +1,34 @@
+impl Solution {
+    pub fn max_length(arr: Vec<String>) -> i32 {
+        let n = arr.len();
+        let mut masks = Vec::with_capacity(n);
+        for s in &arr {
+            let mut mask: i32 = 0;
+            let mut bad = false;
+            for ch in s.bytes() {
+                let bit = 1 << (ch - b'a');
+                if mask & bit != 0 {
+                    bad = true;
+                    break;
+                }
+                mask |= bit;
+            }
+            masks.push(if bad { -1 } else { mask });
+        }
+
+        let mut best = 0;
+        fn dfs(masks: &[i32], index: usize, used: i32, best: &mut i32) {
+            let total = used.count_ones() as i32;
+            if total > *best {
+                *best = total;
+            }
+            for j in index..masks.len() {
+                if masks[j] != -1 && used & masks[j] == 0 {
+                    dfs(masks, j + 1, used | masks[j], best);
+                }
+            }
+        }
+        dfs(&masks, 0, 0, &mut best);
+        best
+    }
+}

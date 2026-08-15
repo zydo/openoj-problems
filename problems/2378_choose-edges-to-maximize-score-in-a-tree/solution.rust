@@ -1,0 +1,37 @@
+impl Solution {
+    pub fn max_score(edges: Vec<Vec<i32>>) -> i64 {
+        let n = edges.len();
+        if n == 1 {
+            return 0;
+        }
+        let mut children: Vec<Vec<usize>> = vec![Vec::new(); n];
+        for i in 1..n {
+            children[edges[i][0] as usize].push(i);
+        }
+        let mut order: Vec<usize> = Vec::with_capacity(n);
+        let mut stack: Vec<usize> = vec![0];
+        while let Some(u) = stack.pop() {
+            order.push(u);
+            for &c in &children[u] {
+                stack.push(c);
+            }
+        }
+        let mut dp0 = vec![0i64; n];
+        let mut dp1 = vec![0i64; n];
+        for &u in order.iter().rev() {
+            let mut base: i64 = 0;
+            let mut best_gain: i64 = 0;
+            for &c in &children[u] {
+                let w = edges[c][1] as i64;
+                base += dp0[c];
+                let gain = dp1[c] + w - dp0[c];
+                if gain > best_gain {
+                    best_gain = gain;
+                }
+            }
+            dp0[u] = base + best_gain;
+            dp1[u] = base;
+        }
+        dp0[0]
+    }
+}

@@ -1,0 +1,26 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Box<TreeNode>>,
+    pub right: Option<Box<TreeNode>>,
+}
+
+impl Solution {
+    pub fn bst_to_gst(root: Option<Box<TreeNode>>) -> Option<Box<TreeNode>> {
+        let mut total = 0;
+        Self::reverse_inorder(root, &mut total)
+    }
+
+    fn reverse_inorder(node: Option<Box<TreeNode>>, total: &mut i32) -> Option<Box<TreeNode>> {
+        match node {
+            None => None,
+            Some(mut boxed) => {
+                boxed.right = Self::reverse_inorder(boxed.right.take(), total);
+                *total += boxed.val;
+                boxed.val = *total;
+                boxed.left = Self::reverse_inorder(boxed.left.take(), total);
+                Some(boxed)
+            }
+        }
+    }
+}

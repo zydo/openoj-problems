@@ -1,0 +1,21 @@
+impl Solution {
+    pub fn coin_change(coins: Vec<i32>, amount: i32) -> i32 {
+        let amount = amount as usize;
+        let inf = amount as i32 + 1;
+        let mut dp = vec![inf; amount + 1];
+        dp[0] = 0;
+        for a in 1..=amount {
+            for &c in &coins {
+                let ca = c as usize;
+                if ca <= a && dp[a - ca] + 1 < dp[a] {
+                    dp[a] = dp[a - ca] + 1;
+                }
+            }
+        }
+        if dp[amount] == inf {
+            -1
+        } else {
+            dp[amount]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+use std::cmp::Reverse;
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn min_interval(intervals: Vec<Vec<i32>>, queries: Vec<i32>) -> Vec<i32> {
+        let mut sorted = intervals.clone();
+        sorted.sort();
+        let mut order: Vec<usize> = (0..queries.len()).collect();
+        order.sort_by_key(|&j| queries[j]);
+        // Min-heap of (size, right) pairs ordered by size.
+        let mut heap: BinaryHeap<Reverse<(i64, i64)>> = BinaryHeap::new();
+        let mut answers = vec![0i32; queries.len()];
+        let mut i = 0usize;
+        let n = sorted.len();
+        for &j in &order {
+            let q = queries[j] as i64;
+            while i < n && (sorted[i][0] as i64) <= q {
+                let left = sorted[i][0] as i64;
+                let right = sorted[i][1] as i64;
+                heap.push(Reverse((right - left + 1, right)));
+                i += 1;
+            }
+            while let Some(&Reverse((_, right))) = heap.peek() {
+                if right < q {
+                    heap.pop();
+                } else {
+                    break;
+                }
+            }
+            answers[j] = match heap.peek() {
+                Some(&Reverse((size, _))) => size as i32,
+                None => -1,
+            };
+        }
+        answers
+    }
+}

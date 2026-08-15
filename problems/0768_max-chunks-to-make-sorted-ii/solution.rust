@@ -1,0 +1,27 @@
+impl Solution {
+    pub fn max_chunks_to_sorted(arr: Vec<i32>) -> i32 {
+        let mut ordered = arr.clone();
+        ordered.sort_unstable();
+        let mut counts: std::collections::HashMap<i32, i32> = std::collections::HashMap::new();
+        let mut balance: i32 = 0;
+        let mut chunks: i32 = 0;
+        for i in 0..arr.len() {
+            let ca = {
+                let c = counts.entry(arr[i]).or_insert(0);
+                *c += 1;
+                *c
+            };
+            balance += if ca > 0 { 1 } else { -1 };
+            let cb = {
+                let c = counts.entry(ordered[i]).or_insert(0);
+                *c -= 1;
+                *c
+            };
+            balance += if cb < 0 { 1 } else { -1 };
+            if balance == 0 {
+                chunks += 1;
+            }
+        }
+        chunks
+    }
+}

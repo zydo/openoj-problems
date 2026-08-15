@@ -1,0 +1,17 @@
+impl Solution {
+    pub fn car_pooling(trips: Vec<Vec<i32>>, capacity: i32) -> bool {
+        let mut diff = vec![0i32; 1001];
+        for t in &trips {
+            diff[t[1] as usize] += t[0];
+            diff[t[2] as usize] -= t[0];
+        }
+        let mut used = 0i32;
+        for delta in diff {
+            used += delta;
+            if used > capacity {
+                return false;
+            }
+        }
+        true
+    }
+}

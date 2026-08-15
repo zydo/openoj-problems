@@ -1,0 +1,26 @@
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn word_count(start_words: Vec<String>, target_words: Vec<String>) -> i32 {
+        fn mask(word: &str) -> u32 {
+            let mut m = 0u32;
+            for b in word.bytes() {
+                m |= 1 << (b - b'a');
+            }
+            m
+        }
+
+        let starts: HashSet<u32> = start_words.iter().map(|w| mask(w)).collect();
+        let mut count = 0;
+        for t in &target_words {
+            let m = mask(t);
+            for bit in 0..26 {
+                if m & (1 << bit) != 0 && starts.contains(&(m ^ (1 << bit))) {
+                    count += 1;
+                    break;
+                }
+            }
+        }
+        count
+    }
+}

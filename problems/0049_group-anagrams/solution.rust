@@ -1,0 +1,20 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
+        let mut index: HashMap<Vec<u8>, usize> = HashMap::new();
+        let mut groups: Vec<Vec<String>> = Vec::new();
+        for word in strs {
+            let mut key = word.as_bytes().to_vec();
+            key.sort_unstable();
+            match index.get(&key) {
+                Some(&i) => groups[i].push(word),
+                None => {
+                    index.insert(key, groups.len());
+                    groups.push(vec![word]);
+                }
+            }
+        }
+        groups
+    }
+}

@@ -1,0 +1,26 @@
+impl Solution {
+    pub fn decode_string(s: String) -> String {
+        let mut stack: Vec<(String, usize)> = Vec::new();
+        let mut current = String::new();
+        let mut repeat: usize = 0;
+        for ch in s.chars() {
+            if ch.is_ascii_digit() {
+                repeat = repeat * 10 + (ch as u8 - b'0') as usize;
+            } else if ch == '[' {
+                stack.push((current.clone(), repeat));
+                current.clear();
+                repeat = 0;
+            } else if ch == ']' {
+                let (previous, times) = stack.pop().unwrap();
+                let mut merged = previous;
+                for _ in 0..times {
+                    merged.push_str(&current);
+                }
+                current = merged;
+            } else {
+                current.push(ch);
+            }
+        }
+        current
+    }
+}

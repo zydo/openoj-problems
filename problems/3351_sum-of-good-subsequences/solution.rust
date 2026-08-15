@@ -1,0 +1,22 @@
+impl Solution {
+    pub fn sum_of_good_subsequences(nums: Vec<i32>) -> i32 {
+        const MOD: i64 = 1_000_000_007;
+        // offset by 1 so that value 0 can look up value -1 at index 0
+        let mut cnt = vec![0i64; 100003];
+        let mut sm = vec![0i64; 100003];
+        let mut total: i64 = 0;
+        for &x in &nums {
+            let idx = (x + 1) as usize;
+            let c_prev = cnt[idx - 1];
+            let c_next = cnt[idx + 1];
+            let s_prev = sm[idx - 1];
+            let s_next = sm[idx + 1];
+            let new_cnt = (1 + c_prev + c_next) % MOD;
+            let new_sum = (x as i64 * new_cnt + s_prev + s_next) % MOD;
+            cnt[idx] = (cnt[idx] + new_cnt) % MOD;
+            sm[idx] = (sm[idx] + new_sum) % MOD;
+            total = (total + new_sum) % MOD;
+        }
+        total as i32
+    }
+}

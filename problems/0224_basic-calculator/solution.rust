@@ -1,0 +1,40 @@
+impl Solution {
+    pub fn calculate(s: String) -> i32 {
+        let mut result: i64 = 0;
+        let mut sign: i64 = 1;
+        let mut num: i64 = 0;
+        let mut stack: Vec<i64> = Vec::new();
+        for ch in s.chars() {
+            match ch {
+                '0'..='9' => {
+                    num = num * 10 + (ch as u8 - b'0') as i64;
+                }
+                '+' => {
+                    result += sign * num;
+                    num = 0;
+                    sign = 1;
+                }
+                '-' => {
+                    result += sign * num;
+                    num = 0;
+                    sign = -1;
+                }
+                '(' => {
+                    stack.push(result);
+                    stack.push(sign);
+                    result = 0;
+                    sign = 1;
+                }
+                ')' => {
+                    result += sign * num;
+                    num = 0;
+                    let saved_sign = stack.pop().unwrap();
+                    let saved_result = stack.pop().unwrap();
+                    result = result * saved_sign + saved_result;
+                }
+                _ => {} // spaces are ignored
+            }
+        }
+        (result + sign * num) as i32
+    }
+}

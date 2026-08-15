@@ -1,0 +1,23 @@
+impl Solution {
+    pub fn minimized_maximum(n: i32, quantities: Vec<i32>) -> i32 {
+        let stores_needed = |x: i64| -> i64 {
+            let mut total: i64 = 0;
+            for &q in &quantities {
+                total += (q as i64 + x - 1) / x;
+            }
+            total
+        };
+
+        let mut lo: i64 = 1;
+        let mut hi: i64 = *quantities.iter().max().unwrap() as i64;
+        while lo < hi {
+            let mid = lo + (hi - lo) / 2;
+            if stores_needed(mid) <= n as i64 {
+                hi = mid;
+            } else {
+                lo = mid + 1;
+            }
+        }
+        lo as i32
+    }
+}

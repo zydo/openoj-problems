@@ -1,0 +1,25 @@
+impl Solution {
+    pub fn make_sub_k_sum_equal(arr: Vec<i32>, k: i32) -> i64 {
+        fn gcd(a: i64, b: i64) -> i64 {
+            let (mut a, mut b) = (a, b);
+            while b != 0 {
+                let t = a % b;
+                a = b;
+                b = t;
+            }
+            a
+        }
+        let n = arr.len() as i64;
+        let g = gcd(n, k as i64) as usize;
+        let mut total: i64 = 0;
+        for r in 0..g {
+            let mut group: Vec<i32> = (r..arr.len()).step_by(g).map(|i| arr[i]).collect();
+            group.sort();
+            let median = group[group.len() / 2] as i64;
+            for &v in &group {
+                total += (v as i64 - median).abs();
+            }
+        }
+        total
+    }
+}

@@ -1,0 +1,51 @@
+impl Solution {
+    pub fn critical_connections(n: i32, connections: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+        let n = n as usize;
+        let mut graph: Vec<Vec<usize>> = vec![Vec::new(); n];
+        for e in &connections {
+            let a = e[0] as usize;
+            let b = e[1] as usize;
+            graph[a].push(b);
+            graph[b].push(a);
+        }
+
+        let mut disc: Vec<i32> = vec![-1; n];
+        let mut low: Vec<i32> = vec![0; n];
+        let mut timer: i32 = 0;
+        let mut bridges: Vec<Vec<i32>> = Vec::new();
+
+        fn dfs(
+            u: usize,
+            parent: i32,
+            graph: &Vec<Vec<usize>>,
+            disc: &mut Vec<i32>,
+            low: &mut Vec<i32>,
+            timer: &mut i32,
+            bridges: &mut Vec<Vec<i32>>,
+        ) {
+            disc[u] = *timer;
+            low[u] = *timer;
+            *timer += 1;
+            for &v in graph[u].iter() {
+                if disc[v] == -1 {
+                    dfs(v, u as i32, graph, disc, low, timer, bridges);
+                    if low[v] < low[u] {
+                        low[u] = low[v];
+                    }
+                    if low[v] > disc[u] {
+                        let (a, b) = if u < v { (u, v) } else { (v, u) };
+                        bridges.push(vec![a as i32, b as i32]);
+                    }
+                } else if v as i32 != parent {
+                    if disc[v] < low[u] {
+                        low[u] = disc[v];
+                    }
+                }
+            }
+        }
+
+        dfs(0, -1, &graph, &mut disc, &mut low, &mut timer, &mut bridges);
+        bridges.sort_unstable();
+        bridges
+    }
+}

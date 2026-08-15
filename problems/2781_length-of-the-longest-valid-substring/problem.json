@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": 2781,
+  "slug": "length-of-the-longest-valid-substring",
+  "title": "Length of the Longest Valid Substring",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestValidSubstring",
+    "parameters": [
+      {
+        "name": "word",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "forbidden",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestValidSubstring",
+      "rust": "longest_valid_substring",
+      "typescript": "longestValidSubstring"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

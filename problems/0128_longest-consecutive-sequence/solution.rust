@@ -1,0 +1,18 @@
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn longest_consecutive(nums: Vec<i32>) -> i32 {
+        let values: HashSet<i64> = nums.iter().map(|&value| value as i64).collect();
+        let mut best: i32 = 0;
+        for &value in &values {
+            if !values.contains(&(value - 1)) {
+                let mut length: i64 = 1;
+                while values.contains(&(value + length)) {
+                    length += 1;
+                }
+                best = best.max(length as i32);
+            }
+        }
+        best
+    }
+}

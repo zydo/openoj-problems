@@ -1,0 +1,22 @@
+function suggestedProducts(products: string[], searchWord: string): string[][] {
+    const sorted = products.slice().sort();
+    const result: string[][] = [];
+    let prefix = "";
+    for (const ch of searchWord) {
+        prefix += ch;
+        let lo = 0,
+            hi = sorted.length;
+        while (lo < hi) {
+            const mid = (lo + hi) >> 1;
+            if (sorted[mid] < prefix) lo = mid + 1;
+            else hi = mid;
+        }
+        const suggestions: string[] = [];
+        for (let i = lo; i < sorted.length && suggestions.length < 3; i++) {
+            if (sorted[i].startsWith(prefix)) suggestions.push(sorted[i]);
+            else break;
+        }
+        result.push(suggestions);
+    }
+    return result;
+}

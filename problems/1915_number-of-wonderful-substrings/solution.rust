@@ -1,0 +1,17 @@
+impl Solution {
+    pub fn wonderful_substrings(word: String) -> i64 {
+        let mut count = vec![0i64; 1024];
+        count[0] = 1;
+        let mut mask = 0usize;
+        let mut total: i64 = 0;
+        for ch in word.bytes() {
+            mask ^= 1usize << (ch - b'a');
+            total += count[mask];
+            for b in 0..10 {
+                total += count[mask ^ (1usize << b)];
+            }
+            count[mask] += 1;
+        }
+        total
+    }
+}

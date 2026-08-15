@@ -1,0 +1,33 @@
+impl Solution {
+    pub fn has_cycle(values: Vec<i32>, pos: i32) -> bool {
+        if values.is_empty() {
+            return false;
+        }
+        const NIL: usize = usize::MAX;
+        let mut next = vec![NIL; values.len()];
+        for i in 0..values.len() - 1 {
+            next[i] = i + 1;
+        }
+        if pos != -1 {
+            next[values.len() - 1] = pos as usize;
+        }
+        // Floyd's tortoise and hare over the node graph (indices as links).
+        let mut slow = 0usize;
+        let mut fast = 0usize;
+        loop {
+            let step1 = next[fast];
+            if step1 == NIL {
+                return false;
+            }
+            let step2 = next[step1];
+            if step2 == NIL {
+                return false;
+            }
+            slow = next[slow];
+            fast = step2;
+            if slow == fast {
+                return true;
+            }
+        }
+    }
+}

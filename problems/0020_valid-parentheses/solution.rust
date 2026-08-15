@@ -1,0 +1,22 @@
+impl Solution {
+    pub fn is_valid(s: String) -> bool {
+        let mut stack: Vec<char> = Vec::new();
+        for ch in s.chars() {
+            match ch {
+                '(' | '[' | '{' => stack.push(ch),
+                ')' | ']' | '}' => {
+                    let open = match ch {
+                        ')' => '(',
+                        ']' => '[',
+                        _ => '{',
+                    };
+                    if stack.pop() != Some(open) {
+                        return false;
+                    }
+                }
+                _ => return false,
+            }
+        }
+        stack.is_empty()
+    }
+}

@@ -1,0 +1,23 @@
+impl Solution {
+    pub fn min_score(grid: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+        let m = grid.len();
+        let n = grid[0].len();
+        let mut cells: Vec<(i32, usize, usize)> = Vec::with_capacity(m * n);
+        for r in 0..m {
+            for c in 0..n {
+                cells.push((grid[r][c], r, c));
+            }
+        }
+        cells.sort();
+        let mut row_max = vec![0i32; m];
+        let mut col_max = vec![0i32; n];
+        let mut res = vec![vec![0i32; n]; m];
+        for &(_, r, c) in &cells {
+            let v = 1 + std::cmp::max(row_max[r], col_max[c]);
+            res[r][c] = v;
+            row_max[r] = v;
+            col_max[c] = v;
+        }
+        res
+    }
+}

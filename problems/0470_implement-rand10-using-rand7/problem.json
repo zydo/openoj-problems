@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": 470,
+  "slug": "implement-rand10-using-rand7",
+  "title": "Implement Rand10() Using Rand7()",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "Randomized",
+    "Probability"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "rand10",
+    "parameters": [
+      {
+        "name": "rand7_outputs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "rand10",
+      "rust": "rand10",
+      "typescript": "rand10"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,12 @@
+impl Solution {
+    pub fn two_city_sched_cost(costs: Vec<Vec<i32>>) -> i32 {
+        let mut ordered = costs.clone();
+        ordered.sort_by_key(|cost| cost[0] - cost[1]);
+        let n = ordered.len() / 2;
+        let mut total = 0;
+        for (i, cost) in ordered.iter().enumerate() {
+            total += if i < n { cost[0] } else { cost[1] };
+        }
+        total
+    }
+}

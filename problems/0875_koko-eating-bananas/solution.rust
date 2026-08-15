@@ -1,0 +1,16 @@
+impl Solution {
+    pub fn min_eating_speed(piles: Vec<i32>, h: i32) -> i32 {
+        let hours_needed = |k: i64| -> i64 { piles.iter().map(|&p| (p as i64 + k - 1) / k).sum() };
+        let mut lo = 1i64;
+        let mut hi = *piles.iter().max().unwrap() as i64;
+        while lo < hi {
+            let mid = lo + (hi - lo) / 2;
+            if hours_needed(mid) <= h as i64 {
+                hi = mid;
+            } else {
+                lo = mid + 1;
+            }
+        }
+        lo as i32
+    }
+}

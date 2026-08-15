@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": 1977,
+  "slug": "number-of-ways-to-separate-numbers",
+  "title": "Number of Ways to Separate Numbers",
+  "difficulty": "H4",
+  "tags": [
+    "Dynamic Programming",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "numberOfCombinations",
+    "parameters": [
+      {
+        "name": "num",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "numberOfCombinations",
+      "rust": "number_of_combinations",
+      "typescript": "numberOfCombinations"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 4000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

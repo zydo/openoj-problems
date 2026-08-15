@@ -1,0 +1,38 @@
+impl Solution {
+    pub fn makesquare(matchsticks: Vec<i32>) -> bool {
+        let total: i64 = matchsticks.iter().map(|&v| v as i64).sum();
+        if total % 4 != 0 {
+            return false;
+        }
+        let side = total / 4;
+        let mut sticks = matchsticks;
+        sticks.sort_unstable_by(|a, b| b.cmp(a));
+        if sticks.is_empty() || (sticks[0] as i64) > side {
+            return false;
+        }
+        let mut sides = [0i64; 4];
+        Self::dfs(&sticks, &mut sides, side, 0)
+    }
+
+    fn dfs(sticks: &[i32], sides: &mut [i64; 4], side: i64, i: usize) -> bool {
+        if i == sticks.len() {
+            return sides.iter().all(|&s| s == side);
+        }
+        let value = sticks[i] as i64;
+        let mut tried: Vec<i64> = Vec::new();
+        for j in 0..4 {
+            if tried.contains(&sides[j]) {
+                continue;
+            }
+            tried.push(sides[j]);
+            if sides[j] + value <= side {
+                sides[j] += value;
+                if Self::dfs(sticks, sides, side, i + 1) {
+                    return true;
+                }
+                sides[j] -= value;
+            }
+        }
+        false
+    }
+}

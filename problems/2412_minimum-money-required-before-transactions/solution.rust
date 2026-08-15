@@ -1,0 +1,22 @@
+impl Solution {
+    pub fn minimum_money(transactions: Vec<Vec<i32>>) -> i64 {
+        let mut total_lose = 0i64;
+        let mut max_cashback_losing = 0i64;
+        let mut max_cost_winning = 0i64;
+        for t in &transactions {
+            let cost = t[0] as i64;
+            let cashback = t[1] as i64;
+            if cashback < cost {
+                total_lose += cost - cashback;
+                if cashback > max_cashback_losing {
+                    max_cashback_losing = cashback;
+                }
+            } else {
+                if cost > max_cost_winning {
+                    max_cost_winning = cost;
+                }
+            }
+        }
+        total_lose + max_cashback_losing.max(max_cost_winning)
+    }
+}

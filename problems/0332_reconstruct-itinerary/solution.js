@@ -1,0 +1,32 @@
+/**
+ * @param {string[][]} tickets
+ * @return {string[]}
+ */
+var findItinerary = function (tickets) {
+    const graph = new Map();
+    for (const [departure, arrival] of tickets) {
+        if (!graph.has(departure)) {
+            graph.set(departure, []);
+        }
+        graph.get(departure).push(arrival);
+    }
+    for (const adj of graph.values()) {
+        adj.sort((a, b) => (a < b ? 1 : a > b ? -1 : 0)); // descending
+    }
+
+    // Iterative Hierholzer: always take the lexicographically smallest
+    // unused ticket (last element of the descending-sorted list).
+    const route = [];
+    const stack = ["JFK"];
+    while (stack.length > 0) {
+        const airport = stack[stack.length - 1];
+        const adj = graph.get(airport);
+        if (adj && adj.length > 0) {
+            stack.push(adj.pop());
+        } else {
+            route.push(airport);
+            stack.pop();
+        }
+    }
+    return route.reverse();
+};

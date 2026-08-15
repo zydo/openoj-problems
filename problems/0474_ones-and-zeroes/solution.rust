@@ -1,0 +1,24 @@
+impl Solution {
+    pub fn find_max_form(strs: Vec<String>, m: i32, n: i32) -> i32 {
+        let m = m as usize;
+        let n = n as usize;
+        let mut dp = vec![vec![0i32; n + 1]; m + 1];
+        for s in &strs {
+            let bytes = s.as_bytes();
+            let zeros = bytes.iter().filter(|&&b| b == b'0').count();
+            let ones = bytes.len() - zeros;
+            if zeros > m || ones > n {
+                continue;
+            }
+            for i in (zeros..=m).rev() {
+                for j in (ones..=n).rev() {
+                    let cand = dp[i - zeros][j - ones] + 1;
+                    if cand > dp[i][j] {
+                        dp[i][j] = cand;
+                    }
+                }
+            }
+        }
+        dp[m][n]
+    }
+}

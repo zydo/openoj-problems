@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": 1135,
+  "slug": "connecting-cities-with-minimum-cost",
+  "title": "Connecting Cities With Minimum Cost",
+  "difficulty": "H2",
+  "tags": [
+    "Graph",
+    "Union Find",
+    "Minimum Spanning Tree",
+    "Greedy",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minimumCost",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "connections",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "minimumCost",
+      "rust": "minimum_cost",
+      "typescript": "minimumCost"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

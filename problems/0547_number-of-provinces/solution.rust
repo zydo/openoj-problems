@@ -1,0 +1,25 @@
+impl Solution {
+    pub fn find_circle_num(is_connected: Vec<Vec<i32>>) -> i32 {
+        let n = is_connected.len();
+        let mut visited = vec![false; n];
+        let mut provinces = 0;
+        let mut stack: Vec<usize> = Vec::new();
+        for start in 0..n {
+            if visited[start] {
+                continue;
+            }
+            provinces += 1;
+            visited[start] = true;
+            stack.push(start);
+            while let Some(city) = stack.pop() {
+                for other in 0..n {
+                    if is_connected[city][other] == 1 && !visited[other] {
+                        visited[other] = true;
+                        stack.push(other);
+                    }
+                }
+            }
+        }
+        provinces
+    }
+}

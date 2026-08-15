@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": 1156,
+  "slug": "swap-for-longest-repeated-character-substring",
+  "title": "Swap For Longest Repeated Character Substring",
+  "difficulty": "H3",
+  "tags": [
+    "Sliding Window",
+    "Two Pointers",
+    "String",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxRepOpt1",
+    "parameters": [
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "maxRepOpt1",
+      "rust": "max_rep_opt1",
+      "typescript": "maxRepOpt1"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,29 @@
+impl Solution {
+    pub fn can_change(start: String, target: String) -> bool {
+        let s: Vec<(usize, char)> = start
+            .chars()
+            .enumerate()
+            .filter(|&(_, c)| c != '_')
+            .collect();
+        let t: Vec<(usize, char)> = target
+            .chars()
+            .enumerate()
+            .filter(|&(_, c)| c != '_')
+            .collect();
+        if s.len() != t.len() {
+            return false;
+        }
+        for (&(i, ci), &(j, cj)) in s.iter().zip(t.iter()) {
+            if ci != cj {
+                return false;
+            }
+            if ci == 'L' && i < j {
+                return false;
+            }
+            if ci == 'R' && i > j {
+                return false;
+            }
+        }
+        true
+    }
+}

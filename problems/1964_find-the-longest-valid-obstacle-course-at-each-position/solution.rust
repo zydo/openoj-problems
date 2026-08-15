@@ -1,0 +1,16 @@
+impl Solution {
+    pub fn longest_obstacle_course_at_each_position(obstacles: Vec<i32>) -> Vec<i32> {
+        let mut tails: Vec<i32> = Vec::with_capacity(obstacles.len());
+        let mut ans: Vec<i32> = Vec::with_capacity(obstacles.len());
+        for &x in &obstacles {
+            let i = tails.partition_point(|&t| t <= x);
+            if i == tails.len() {
+                tails.push(x);
+            } else {
+                tails[i] = x;
+            }
+            ans.push(i as i32 + 1);
+        }
+        ans
+    }
+}

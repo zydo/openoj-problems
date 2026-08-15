@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 465,
+  "slug": "optimal-account-balancing",
+  "title": "Optimal Account Balancing",
+  "difficulty": "H4",
+  "tags": [
+    "Backtracking",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minTransfers",
+    "parameters": [
+      {
+        "name": "transactions",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "minTransfers",
+      "rust": "min_transfers",
+      "typescript": "minTransfers"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

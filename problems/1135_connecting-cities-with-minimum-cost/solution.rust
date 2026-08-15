@@ -1,0 +1,32 @@
+impl Solution {
+    pub fn minimum_cost(n: i32, connections: Vec<Vec<i32>>) -> i32 {
+        let n = n as usize;
+        let mut conns = connections;
+        conns.sort_by_key(|c| c[2]);
+
+        let mut parent: Vec<usize> = (0..=n).collect();
+        fn find(parent: &mut Vec<usize>, mut x: usize) -> usize {
+            while parent[x] != x {
+                parent[x] = parent[parent[x]];
+                x = parent[x];
+            }
+            x
+        }
+
+        let mut total = 0i32;
+        let mut components = n as i32;
+        for c in &conns {
+            let rx = find(&mut parent, c[0] as usize);
+            let ry = find(&mut parent, c[1] as usize);
+            if rx != ry {
+                parent[rx] = ry;
+                total += c[2];
+                components -= 1;
+                if components == 1 {
+                    return total;
+                }
+            }
+        }
+        -1
+    }
+}

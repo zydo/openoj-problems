@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": 823,
+  "slug": "binary-trees-with-factors",
+  "title": "Binary Trees With Factors",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "numFactoredBinaryTrees",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "numFactoredBinaryTrees",
+      "rust": "num_factored_binary_trees",
+      "typescript": "numFactoredBinaryTrees"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,21 @@
+impl Solution {
+    pub fn longest_common_subsequence(text1: String, text2: String) -> i32 {
+        let a = text1.into_bytes();
+        let b = text2.into_bytes();
+        let (m, n) = (a.len(), b.len());
+        let mut prev = vec![0i32; n + 1];
+        let mut curr = vec![0i32; n + 1];
+        for i in 1..=m {
+            let c = a[i - 1];
+            for j in 1..=n {
+                if c == b[j - 1] {
+                    curr[j] = prev[j - 1] + 1;
+                } else {
+                    curr[j] = prev[j].max(curr[j - 1]);
+                }
+            }
+            std::mem::swap(&mut prev, &mut curr);
+        }
+        prev[n]
+    }
+}

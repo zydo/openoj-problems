@@ -1,0 +1,20 @@
+impl Solution {
+    pub fn count_palindromic_subsequence(s: String) -> i32 {
+        let bytes = s.as_bytes();
+        let mut count = 0;
+        for c in b'a'..=b'z' {
+            let first = bytes.iter().position(|&b| b == c);
+            if let Some(first) = first {
+                let last = bytes.iter().rposition(|&b| b == c).unwrap();
+                if last - first >= 2 {
+                    let mut seen = [false; 26];
+                    for i in first + 1..last {
+                        seen[(bytes[i] - b'a') as usize] = true;
+                    }
+                    count += seen.iter().filter(|&&b| b).count() as i32;
+                }
+            }
+        }
+        count
+    }
+}

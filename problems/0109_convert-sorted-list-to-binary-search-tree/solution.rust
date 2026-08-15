@@ -1,0 +1,36 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct ListNode {
+    pub val: i32,
+    pub next: Option<Box<ListNode>>,
+}
+
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Box<TreeNode>>,
+    pub right: Option<Box<TreeNode>>,
+}
+
+impl Solution {
+    pub fn sorted_list_to_bst(head: Option<Box<ListNode>>) -> Option<Box<TreeNode>> {
+        let mut values: Vec<i32> = Vec::new();
+        let mut current = head;
+        while let Some(node) = current {
+            values.push(node.val);
+            current = node.next;
+        }
+        build(&values, 0, values.len())
+    }
+}
+
+fn build(values: &[i32], lo: usize, hi: usize) -> Option<Box<TreeNode>> {
+    if lo >= hi {
+        return None;
+    }
+    let mid = lo + (hi - lo) / 2;
+    Some(Box::new(TreeNode {
+        val: values[mid],
+        left: build(values, lo, mid),
+        right: build(values, mid + 1, hi),
+    }))
+}

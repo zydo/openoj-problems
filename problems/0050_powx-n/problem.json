@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 50,
+  "slug": "powx-n",
+  "title": "Pow(x, n)",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "myPow",
+    "parameters": [
+      {
+        "name": "x",
+        "codec": "json",
+        "value_type": {
+          "kind": "number"
+        }
+      },
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "number"
+    },
+    "entrypoints": {
+      "go": "myPow",
+      "rust": "my_pow",
+      "typescript": "myPow"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

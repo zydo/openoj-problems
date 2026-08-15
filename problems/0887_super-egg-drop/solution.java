@@ -1,0 +1,14 @@
+class Solution {
+
+    public int superEggDrop(int k, int n) {
+        long[] dp = new long[k + 1];
+        int moves = 0;
+        while (dp[k] < n) {
+            moves++;
+            for (int e = k; e >= 1; e--) {
+                dp[e] = dp[e - 1] + dp[e] + 1;
+            }
+        }
+        return moves;
+    }
+}

@@ -1,0 +1,28 @@
+use std::collections::VecDeque;
+
+impl Solution {
+    pub fn shortest_path_length(graph: Vec<Vec<i32>>) -> i32 {
+        let n = graph.len();
+        let full = (1usize << n) - 1;
+        let mut dist = vec![-1i32; n * (1 << n)];
+        let mut queue: VecDeque<(usize, usize)> = VecDeque::new();
+        for i in 0..n {
+            dist[i * (1 << n) + (1 << i)] = 0;
+            queue.push_back((i, 1usize << i));
+        }
+        while let Some((node, mask)) = queue.pop_front() {
+            if mask == full {
+                return dist[node * (1 << n) + mask];
+            }
+            for &nxt in &graph[node] {
+                let nxt = nxt as usize;
+                let nmask = mask | (1usize << nxt);
+                if dist[nxt * (1 << n) + nmask] == -1 {
+                    dist[nxt * (1 << n) + nmask] = dist[node * (1 << n) + mask] + 1;
+                    queue.push_back((nxt, nmask));
+                }
+            }
+        }
+        0
+    }
+}

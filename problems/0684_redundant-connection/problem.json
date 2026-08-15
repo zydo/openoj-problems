@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 684,
+  "slug": "redundant-connection",
+  "title": "Redundant Connection",
+  "difficulty": "H2",
+  "tags": [
+    "Graph",
+    "Union Find"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "findRedundantConnection",
+    "parameters": [
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "findRedundantConnection",
+      "rust": "find_redundant_connection",
+      "typescript": "findRedundantConnection"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

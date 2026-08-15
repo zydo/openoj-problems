@@ -1,0 +1,25 @@
+impl Solution {
+    pub fn count_squares(matrix: Vec<Vec<i32>>) -> i32 {
+        let m = matrix.len();
+        let n = matrix[0].len();
+        let mut total: i32 = 0;
+        let mut prev = vec![0i32; n];
+        let mut cur = vec![0i32; n];
+        for i in 0..m {
+            for j in 0..n {
+                cur[j] = 0;
+                if matrix[i][j] == 0 {
+                    continue;
+                }
+                if i == 0 || j == 0 {
+                    cur[j] = 1;
+                } else {
+                    cur[j] = prev[j].min(cur[j - 1]).min(prev[j - 1]) + 1;
+                }
+                total += cur[j];
+            }
+            std::mem::swap(&mut prev, &mut cur);
+        }
+        total
+    }
+}

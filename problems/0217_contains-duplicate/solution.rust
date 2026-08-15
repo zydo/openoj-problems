@@ -1,0 +1,13 @@
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn contains_duplicate(nums: Vec<i32>) -> bool {
+        let mut seen: HashSet<i32> = HashSet::new();
+        for value in nums {
+            if !seen.insert(value) {
+                return true;
+            }
+        }
+        false
+    }
+}

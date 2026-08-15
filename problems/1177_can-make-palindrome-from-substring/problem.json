@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": 1177,
+  "slug": "can-make-palindrome-from-substring",
+  "title": "Can Make Palindrome from Substring",
+  "difficulty": "H3",
+  "tags": [
+    "Prefix Sum",
+    "Bit Manipulation",
+    "String",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canMakePaliQueries",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "boolean"
+      }
+    },
+    "entrypoints": {
+      "go": "canMakePaliQueries",
+      "rust": "can_make_pali_queries",
+      "typescript": "canMakePaliQueries"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

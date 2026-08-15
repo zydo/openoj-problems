@@ -1,0 +1,10 @@
+{
+  "name": "openoj-problems-formatting",
+  "private": true,
+  "description": "Pinned formatter toolchain for generated and authored problem files (see FORMAT.md)",
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "prettier-plugin-java": "2.10.3",
+    "sql-formatter": "15.8.2"
+  }
+}

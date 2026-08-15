@@ -1,0 +1,23 @@
+impl Solution {
+    pub fn get_money_amount(n: i32) -> i32 {
+        let n = n as usize;
+        let size = n + 2;
+        let mut dp = vec![vec![0i32; size]; size];
+        for length in 2..=n {
+            for i in 1..=(n + 1 - length) {
+                let j = i + length - 1;
+                let mut best = i32::MAX;
+                for guess in i..=j {
+                    let lower = dp[i][guess - 1];
+                    let upper = dp[guess + 1][j];
+                    let cost = guess as i32 + lower.max(upper);
+                    if cost < best {
+                        best = cost;
+                    }
+                }
+                dp[i][j] = best;
+            }
+        }
+        dp[1][n]
+    }
+}

@@ -1,0 +1,23 @@
+impl Solution {
+    pub fn minimum_size(nums: Vec<i32>, max_operations: i32) -> i32 {
+        let needed = |penalty: i32| -> i64 {
+            let mut total = 0i64;
+            for &balls in &nums {
+                total += ((balls - 1) / penalty) as i64;
+            }
+            total
+        };
+
+        let mut lo = 1i32;
+        let mut hi = *nums.iter().max().unwrap();
+        while lo < hi {
+            let mid = lo + (hi - lo) / 2;
+            if needed(mid) <= max_operations as i64 {
+                hi = mid;
+            } else {
+                lo = mid + 1;
+            }
+        }
+        lo
+    }
+}

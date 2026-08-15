@@ -1,0 +1,27 @@
+use std::collections::BTreeMap;
+
+impl Solution {
+    pub fn is_n_straight_hand(hand: Vec<i32>, group_size: i32) -> bool {
+        if hand.len() % group_size as usize != 0 {
+            return false;
+        }
+        let mut counts: BTreeMap<i32, i64> = BTreeMap::new();
+        for &v in &hand {
+            *counts.entry(v).or_insert(0) += 1;
+        }
+        let values: Vec<i32> = counts.keys().cloned().collect();
+        for value in values {
+            let need = *counts.get(&value).unwrap_or(&0);
+            if need > 0 {
+                for nv in value..value + group_size {
+                    let have = *counts.get(&nv).unwrap_or(&0);
+                    if have < need {
+                        return false;
+                    }
+                    counts.insert(nv, have - need);
+                }
+            }
+        }
+        true
+    }
+}

@@ -1,0 +1,34 @@
+impl Solution {
+    pub fn min_abs_difference(nums: Vec<i32>, goal: i32) -> i32 {
+        let subset_sums = |arr: &[i32]| -> Vec<i32> {
+            let mut sums: Vec<i32> = vec![0];
+            for &value in arr {
+                let size = sums.len();
+                for j in 0..size {
+                    let s = sums[j];
+                    sums.push(s + value);
+                }
+            }
+            sums
+        };
+
+        let half = nums.len() / 2;
+        let mut left = subset_sums(&nums[..half]);
+        let right = subset_sums(&nums[half..]);
+        left.sort_unstable();
+        let mut best: Option<i32> = None;
+        for s in right {
+            let need = goal - s;
+            let idx = left.partition_point(|&x| x < need);
+            for j in [idx.wrapping_sub(1), idx] {
+                if j < left.len() {
+                    let diff = (left[j] + s - goal).abs();
+                    if best.is_none() || diff < best.unwrap() {
+                        best = Some(diff);
+                    }
+                }
+            }
+        }
+        best.unwrap()
+    }
+}

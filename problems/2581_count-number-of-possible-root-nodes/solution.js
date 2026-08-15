@@ -1,0 +1,60 @@
+/**
+ * @param {number[][]} edges
+ * @param {number[][]} guesses
+ * @param {number} k
+ * @return {number}
+ */
+var rootCount = function (edges, guesses, k) {
+    const n = edges.length + 1;
+    const graph = Array.from({ length: n }, () => []);
+    for (const [a, b] of edges) {
+        graph[a].push(b);
+        graph[b].push(a);
+    }
+    const guessSet = new Set();
+    for (const [a, b] of guesses) {
+        guessSet.add(a * 4294967296 + b);
+    }
+
+    const parent = new Array(n).fill(-1);
+    const order = [];
+    const visited = new Array(n).fill(false);
+    const stack = [0];
+    visited[0] = true;
+    while (stack.length > 0) {
+        const u = stack.pop();
+        order.push(u);
+        for (const v of graph[u]) {
+            if (!visited[v]) {
+                visited[v] = true;
+                parent[v] = u;
+                stack.push(v);
+            }
+        }
+    }
+
+    const cnt = new Array(n).fill(0);
+    for (let v = 1; v < n; v++) {
+        if (guessSet.has(parent[v] * 4294967296 + v)) {
+            cnt[0]++;
+        }
+    }
+
+    let ans = cnt[0] >= k ? 1 : 0;
+    for (let oi = 1; oi < order.length; oi++) {
+        const u = order[oi];
+        const p = parent[u];
+        let c = cnt[p];
+        if (guessSet.has(p * 4294967296 + u)) {
+            c--;
+        }
+        if (guessSet.has(u * 4294967296 + p)) {
+            c++;
+        }
+        cnt[u] = c;
+        if (c >= k) {
+            ans++;
+        }
+    }
+    return ans;
+};

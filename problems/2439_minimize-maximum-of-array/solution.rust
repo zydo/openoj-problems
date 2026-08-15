@@ -1,0 +1,14 @@
+impl Solution {
+    pub fn minimize_array_value(nums: Vec<i32>) -> i32 {
+        let mut total: i64 = 0;
+        let mut best: i64 = 0;
+        for (i, &value) in nums.iter().enumerate() {
+            total += value as i64;
+            let candidate = (total + i as i64) / (i as i64 + 1);
+            if candidate > best {
+                best = candidate;
+            }
+        }
+        best as i32
+    }
+}

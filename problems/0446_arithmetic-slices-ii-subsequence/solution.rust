@@ -1,0 +1,18 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn number_of_arithmetic_slices(nums: Vec<i32>) -> i32 {
+        let n = nums.len();
+        let mut dp: Vec<HashMap<i64, i64>> = (0..n).map(|_| HashMap::new()).collect();
+        let mut total: i64 = 0;
+        for i in 0..n {
+            for j in 0..i {
+                let d = nums[i] as i64 - nums[j] as i64;
+                let cnt = *dp[j].get(&d).unwrap_or(&0);
+                total += cnt;
+                *dp[i].entry(d).or_insert(0) += cnt + 1;
+            }
+        }
+        total as i32
+    }
+}

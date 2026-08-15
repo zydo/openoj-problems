@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 332,
+  "slug": "reconstruct-itinerary",
+  "title": "Reconstruct Itinerary",
+  "difficulty": "H4",
+  "tags": [
+    "Backtracking",
+    "Depth-First Search",
+    "Graph",
+    "Heap (Priority Queue)"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "findItinerary",
+    "parameters": [
+      {
+        "name": "tickets",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "findItinerary",
+      "rust": "find_itinerary",
+      "typescript": "findItinerary"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

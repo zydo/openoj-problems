@@ -1,0 +1,39 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct ListNode {
+    pub val: i32,
+    pub next: Option<Box<ListNode>>,
+}
+
+impl Solution {
+    pub fn merge_two_lists(
+        list1: Option<Box<ListNode>>,
+        list2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
+        let mut a = list1;
+        let mut b = list2;
+        let mut dummy = Box::new(ListNode { val: 0, next: None });
+        let mut cur: &mut ListNode = &mut dummy;
+        loop {
+            let take_a = match (&a, &b) {
+                (Some(x), Some(y)) => x.val <= y.val,
+                (Some(_), None) => true,
+                (None, _) => false,
+            };
+            let taken = if take_a { a.take() } else { b.take() };
+            match taken {
+                Some(mut node) => {
+                    let rest = node.next.take();
+                    cur.next = Some(node);
+                    cur = cur.next.as_mut().unwrap();
+                    if take_a {
+                        a = rest;
+                    } else {
+                        b = rest;
+                    }
+                }
+                None => break,
+            }
+        }
+        dummy.next
+    }
+}

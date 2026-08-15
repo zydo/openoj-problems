@@ -1,0 +1,16 @@
+impl Solution {
+    pub fn max_product(nums: Vec<i32>) -> i32 {
+        let mut best = nums[0];
+        let mut cur_max = nums[0];
+        let mut cur_min = nums[0];
+        for &value in &nums[1..] {
+            if value < 0 {
+                std::mem::swap(&mut cur_max, &mut cur_min);
+            }
+            cur_max = value.max(cur_max * value);
+            cur_min = value.min(cur_min * value);
+            best = best.max(cur_max);
+        }
+        best
+    }
+}

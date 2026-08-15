@@ -1,0 +1,20 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn longest_wpi(hours: Vec<i32>) -> i32 {
+        let mut first: HashMap<i32, i32> = HashMap::new();
+        first.insert(0, -1);
+        let mut prefix = 0i32;
+        let mut best = 0i32;
+        for (i, &hours_day) in hours.iter().enumerate() {
+            prefix += if hours_day > 8 { 1 } else { -1 };
+            if prefix > 0 {
+                best = i as i32 + 1;
+            } else if let Some(&j) = first.get(&(prefix - 1)) {
+                best = best.max(i as i32 - j);
+            }
+            first.entry(prefix).or_insert(i as i32);
+        }
+        best
+    }
+}

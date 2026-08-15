@@ -1,0 +1,16 @@
+impl Solution {
+    pub fn length_of_longest_substring(s: String) -> i32 {
+        let mut last = [-1i32; 128];
+        let mut start = 0i32;
+        let mut best = 0i32;
+        for (i, &b) in s.as_bytes().iter().enumerate() {
+            let idx = (b as usize) & 127;
+            if last[idx] >= start {
+                start = last[idx] + 1;
+            }
+            last[idx] = i as i32;
+            best = best.max(i as i32 - start + 1);
+        }
+        best
+    }
+}

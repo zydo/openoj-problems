@@ -1,0 +1,48 @@
+impl Solution {
+    fn largest_area(heights: &[i32]) -> i32 {
+        let n = heights.len();
+        let mut stack: Vec<usize> = Vec::new();
+        let mut best: i32 = 0;
+        for i in 0..=n {
+            let h = if i == n { 0 } else { heights[i] };
+            while let Some(&top) = stack.last() {
+                if heights[top] <= h {
+                    break;
+                }
+                let height = heights[top];
+                stack.pop();
+                let left_i: i64 = stack.last().map(|&l| l as i64).unwrap_or(-1);
+                let area = (height as i64) * ((i as i64) - left_i - 1);
+                if area > best as i64 {
+                    best = area as i32;
+                }
+            }
+            stack.push(i);
+        }
+        best
+    }
+
+    pub fn maximal_rectangle(matrix: Vec<Vec<String>>) -> i32 {
+        if matrix.is_empty() || matrix[0].is_empty() {
+            return 0;
+        }
+        let rows = matrix.len();
+        let cols = matrix[0].len();
+        let mut heights = vec![0i32; cols];
+        let mut best = 0;
+        for r in 0..rows {
+            for c in 0..cols {
+                heights[c] = if matrix[r][c] == "1" {
+                    heights[c] + 1
+                } else {
+                    0
+                };
+            }
+            let area = Solution::largest_area(&heights);
+            if area > best {
+                best = area;
+            }
+        }
+        best
+    }
+}

@@ -1,0 +1,21 @@
+impl Solution {
+    pub fn count_vowel_permutation(n: i32) -> i32 {
+        const MOD: i64 = 1_000_000_007;
+        let (mut a, mut e, mut i, mut o, mut u) = (1i64, 1i64, 1i64, 1i64, 1i64);
+        for _ in 0..n - 1 {
+            let (na, ne, ni, no, nu) = (
+                (e + i + u) % MOD,
+                (a + i) % MOD,
+                (e + o) % MOD,
+                i,
+                (i + o) % MOD,
+            );
+            a = na;
+            e = ne;
+            i = ni;
+            o = no;
+            u = nu;
+        }
+        ((a + e + i + o + u) % MOD) as i32
+    }
+}

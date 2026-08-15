@@ -1,0 +1,38 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Box<TreeNode>>,
+    pub right: Option<Box<TreeNode>>,
+}
+
+impl Solution {
+    fn depth(mut node: Option<&TreeNode>, left: bool) -> i32 {
+        let mut d = 0;
+        while let Some(n) = node {
+            d += 1;
+            node = if left {
+                n.left.as_deref()
+            } else {
+                n.right.as_deref()
+            };
+        }
+        d
+    }
+
+    fn count(root: Option<&TreeNode>) -> i32 {
+        let root = match root {
+            Some(r) => r,
+            None => return 0,
+        };
+        let left_depth = Self::depth(root.left.as_deref(), true) + 1;
+        let right_depth = Self::depth(root.right.as_deref(), false) + 1;
+        if left_depth == right_depth {
+            return (1i64 << left_depth) as i32 - 1;
+        }
+        1 + Self::count(root.left.as_deref()) + Self::count(root.right.as_deref())
+    }
+
+    pub fn count_nodes(root: Option<Box<TreeNode>>) -> i32 {
+        Self::count(root.as_deref())
+    }
+}

@@ -1,0 +1,15 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn max_equal_rows_after_flips(matrix: Vec<Vec<i32>>) -> i32 {
+        let mut counts: HashMap<Vec<i32>, i32> = HashMap::new();
+        let mut best = 0;
+        for row in &matrix {
+            let key: Vec<i32> = row.iter().map(|&value| value ^ row[0]).collect();
+            let next = counts.entry(key).or_insert(0);
+            *next += 1;
+            best = best.max(*next);
+        }
+        best
+    }
+}

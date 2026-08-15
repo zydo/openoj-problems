@@ -1,0 +1,23 @@
+impl Solution {
+    pub fn min_swap(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {
+        const INF: i32 = i32::MAX / 2;
+        let n = nums1.len();
+        let (mut keep, mut swap) = (0i32, 1i32);
+        for i in 1..n {
+            let (mut nkeep, mut nswap) = (INF, INF);
+            let (a1, b1) = (nums1[i - 1], nums2[i - 1]);
+            let (a2, b2) = (nums1[i], nums2[i]);
+            if a1 < a2 && b1 < b2 {
+                nkeep = nkeep.min(keep);
+                nswap = nswap.min(swap + 1);
+            }
+            if a1 < b2 && b1 < a2 {
+                nkeep = nkeep.min(swap);
+                nswap = nswap.min(keep + 1);
+            }
+            keep = nkeep;
+            swap = nswap;
+        }
+        keep.min(swap)
+    }
+}

@@ -1,0 +1,22 @@
+impl Solution {
+    pub fn shortest_palindrome(s: String) -> String {
+        let rev: String = s.chars().rev().collect();
+        let mut combined: Vec<u8> = s.as_bytes().to_vec();
+        combined.push(b'#');
+        combined.extend_from_slice(rev.as_bytes());
+        let n = combined.len();
+        let mut lps = vec![0usize; n];
+        for i in 1..n {
+            let mut j = lps[i - 1];
+            while j > 0 && combined[i] != combined[j] {
+                j = lps[j - 1];
+            }
+            if combined[i] == combined[j] {
+                j += 1;
+            }
+            lps[i] = j;
+        }
+        let pal_len = if n > 0 { lps[n - 1] } else { 0 };
+        format!("{}{}", &rev[..s.len() - pal_len], s)
+    }
+}

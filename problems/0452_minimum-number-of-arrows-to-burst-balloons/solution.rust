@@ -1,0 +1,15 @@
+impl Solution {
+    pub fn find_min_arrow_shots(points: Vec<Vec<i32>>) -> i32 {
+        let mut ordered = points;
+        ordered.sort_by_key(|p| p[1]);
+        let mut arrows = 0i32;
+        let mut last_arrow = i64::MIN;
+        for p in &ordered {
+            if p[0] as i64 > last_arrow {
+                arrows += 1;
+                last_arrow = p[1] as i64;
+            }
+        }
+        arrows
+    }
+}

@@ -1,0 +1,20 @@
+impl Solution {
+    pub fn last_substring(s: String) -> String {
+        let b = s.as_bytes();
+        let n = b.len();
+        let (mut i, mut j, mut k) = (0usize, 1usize, 0usize);
+        while j + k < n {
+            if b[i + k] == b[j + k] {
+                k += 1;
+            } else if b[i + k] < b[j + k] {
+                i = std::cmp::max(i + k + 1, j);
+                j = i + 1;
+                k = 0;
+            } else {
+                j = j + k + 1;
+                k = 0;
+            }
+        }
+        s[i..].to_string()
+    }
+}

@@ -1,0 +1,34 @@
+impl Solution {
+    pub fn maximum_removals(s: String, p: String, removable: Vec<i32>) -> i32 {
+        let sb = s.as_bytes();
+        let pb = p.as_bytes();
+        let still_subsequence = |k: usize| -> bool {
+            let mut removed = vec![false; sb.len()];
+            for i in 0..k {
+                removed[removable[i] as usize] = true;
+            }
+            let mut pi = 0;
+            for i in 0..sb.len() {
+                if pi >= pb.len() {
+                    break;
+                }
+                if !removed[i] && sb[i] == pb[pi] {
+                    pi += 1;
+                }
+            }
+            pi == pb.len()
+        };
+
+        let mut lo = 0usize;
+        let mut hi = removable.len();
+        while lo < hi {
+            let mid = (lo + hi + 1) / 2;
+            if still_subsequence(mid) {
+                lo = mid;
+            } else {
+                hi = mid - 1;
+            }
+        }
+        lo as i32
+    }
+}

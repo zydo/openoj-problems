@@ -1,0 +1,316 @@
+#!/usr/bin/env python3
+"""Completeness checker for an openoj-problems repository.
+
+Two tiers:
+
+Static (always runs over the whole set, regardless of --problems):
+  - bundle structure: required files, directory-name/id/slug consistency
+  - no duplicate ids or slugs
+  - statement grammar: '# Title' matching problem.json, '## Description'
+    with consecutively numbered ### Example N and ### Constraints (optional
+    for SQL), optional '## Hints' with ### Hint N
+  - cases.json: {public, hidden}, cases are {input, expected}, public cases
+    correspond one-to-one with statement examples
+  - solution.* exists for every starter.* (and no stray files)
+  - starters regenerate exactly from problem.json (gen_starters --check)
+
+Runtime (--problems selection; needs a running OpenOJ serving this repo,
+passed as --api, default http://localhost:8080):
+  - every solution is submitted through the judge and must be ACCEPTED
+    against every case in cases.json
+
+Usage:
+  check.py --problems=all [--skip-runtime] [--api http://localhost:8080]
+  check.py --problems=0001_two-sum,0002_add-two-numbers
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+import urllib.error
+import urllib.request
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import gen_starters  # noqa: E402
+from format import format_content  # noqa: E402 — starters are generator output + pinned formatting
+
+ROOT = Path(__file__).resolve().parent.parent
+PROBLEMS = ROOT / "problems"
+BUNDLE_NAME = re.compile(r"^([0-9]{4,})_([a-z0-9]+(?:-[a-z0-9]+)*)$")
+HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*$", re.M)
+SOLUTION_FOR = {extension: extension for extension in gen_starters.EXTENSIONS.values()}
+
+
+class Failure:
+    def __init__(self, key: str, message: str) -> None:
+        self.key = key
+        self.message = message
+
+    def __str__(self) -> str:
+        return f"{self.key}: {self.message}"
+
+
+def _headings(markdown: str) -> list[tuple[int, str, int]]:
+    headings = []
+    fence = False
+    for number, line in enumerate(markdown.splitlines(keepends=True)):
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            fence = not fence
+            continue
+        if fence:
+            continue
+        match = re.match(r"^(#{1,6})[ \t]+(.+?)[ \t]*$", line)
+        if match:
+            headings.append((len(match.group(1)), match.group(2).strip(), number))
+    return headings
+
+
+def _level3(text: str) -> list[tuple[str, str]]:
+    lines = text.splitlines(keepends=True)
+    headings = [(level, title, number) for level, title, number in _headings(text) if level == 3]
+    sections = []
+    for index, (_, title, number) in enumerate(headings):
+        end = headings[index + 1][2] if index + 1 < len(headings) else len(lines)
+        sections.append((title, "".join(lines[number + 1 : end]).strip("\n")))
+    return sections
+
+
+def _numbered(text: str, heading: str) -> list[str]:
+    bodies = []
+    expected = 1
+    for name, body in _level3(text):
+        if name == f"{heading} {expected}":
+            bodies.append(body)
+            expected += 1
+    return bodies
+
+
+def check_bundle(bundle: Path) -> list[Failure]:
+    key = bundle.name
+    failures = []
+    matched = BUNDLE_NAME.fullmatch(key)
+    if matched is None:
+        return [Failure(key, "directory must be named '<zero-padded id>_<slug>'")]
+
+    def fail(message: str) -> None:
+        failures.append(Failure(key, message))
+
+    for required in ("problem.json", "cases.json", "statement.md"):
+        if not (bundle / required).is_file():
+            fail(f"missing {required}")
+    if failures:
+        return failures
+    try:
+        problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
+        cases = json.loads((bundle / "cases.json").read_text(encoding="utf-8"))
+        statement = (bundle / "statement.md").read_text(encoding="utf-8")
+    except (json.JSONDecodeError, OSError, UnicodeDecodeError) as error:
+        return [Failure(key, f"unreadable bundle content: {error}")]
+
+    expected_keys = {
+        "schema_version", "id", "slug", "title", "difficulty", "tags",
+        "invocation", "limits",
+    }
+    if set(problem) != expected_keys:
+        fail(f"problem.json keys must be exactly {sorted(expected_keys)}")
+        return failures
+    if problem["schema_version"] != 1:
+        fail("unsupported schema_version")
+    if problem["id"] != int(matched.group(1)) or problem["slug"] != matched.group(2):
+        fail("directory name must match problem.json id and slug")
+
+    # statement grammar
+    headings = _headings(statement)
+    top = [entry for entry in headings if entry[0] <= 2]
+    if not top or top[0][0] != 1:
+        fail("statement.md must start with '# <Title>'")
+        return failures
+    if top[0][1] != problem["title"]:
+        fail("statement title must match problem.json title")
+    section_names = [entry[1] for entry in top[1:] if entry[0] == 2]
+    if section_names not in (["Description"], ["Description", "Hints"]):
+        fail("statement.md requires '## Description' then optional '## Hints'")
+        return failures
+    lines = statement.splitlines(keepends=True)
+    description = "".join(lines[top[1][2] + 1 : top[2][2] if len(top) > 2 else len(lines)])
+    if not description.strip():
+        fail("## Description cannot be empty")
+    examples = _numbered(description, "Example")
+    if not examples:
+        fail("## Description needs at least one ### Example heading")
+    section3 = [name for name, _ in _level3(description)]
+    if "Constraints" not in section3 and problem["invocation"].get("type", "function") != "sql":
+        fail("## Description needs ### Constraints")
+    if len(top) > 2:
+        hints = "".join(lines[top[2][2] + 1 :])
+        if not _numbered(hints, "Hint"):
+            fail("## Hints needs at least one ### Hint heading")
+
+    # cases
+    if not isinstance(cases, dict) or set(cases) != {"public", "hidden"}:
+        fail("cases.json must contain exactly 'public' and 'hidden'")
+    else:
+        for group in ("public", "hidden"):
+            if not isinstance(cases[group], list):
+                fail(f"cases.json {group} must be an array")
+                break
+            for index, case in enumerate(cases[group]):
+                if not isinstance(case, dict) or set(case) != {"input", "expected"}:
+                    fail(f"{group} case {index + 1} must contain exactly 'input' and 'expected'")
+        if isinstance(cases["public"], list) and not cases["public"]:
+            fail("at least one public case is required")
+        if isinstance(cases["public"], list) and len(cases["public"]) != len(examples):
+            fail(f"{len(cases['public'])} public cases but {len(examples)} statement examples")
+        if isinstance(cases["hidden"], list) and len(cases["hidden"]) < 10:
+            fail(f"only {len(cases['hidden'])} hidden cases (need >= 10)")
+
+    # starters: regenerate from problem.json and compare byte-for-byte
+    try:
+        generated = gen_starters.starter_files(problem["invocation"])
+    except Exception as error:  # noqa: BLE001
+        fail(f"starter generation failed: {error}")
+        return failures
+    starter_extensions = {path.name[len("starter.") :] for path in bundle.glob("starter.*")}
+    for language, content in generated.items():
+        extension = gen_starters.EXTENSIONS[language]
+        content = format_content(extension, content, tolerant=True)
+        path = bundle / f"starter.{extension}"
+        if extension not in starter_extensions:
+            fail(f"missing starter.{extension}")
+        elif path.read_text(encoding="utf-8") != content:
+            fail(f"starter.{extension} is not generator output — run gen_starters.py")
+    for extension in starter_extensions - {gen_starters.EXTENSIONS[lang] for lang in generated}:
+        fail(f"stray starter.{extension} (not generated for this problem)")
+
+    # solutions: one per starter, nothing stray
+    solution_extensions = {path.name[len("solution.") :] for path in bundle.glob("solution.*")}
+    for extension in starter_extensions:
+        if extension not in solution_extensions:
+            fail(f"missing solution.{extension} for starter.{extension}")
+    for extension in solution_extensions - starter_extensions:
+        fail(f"stray solution.{extension} (no matching starter)")
+    allowed = {"problem.json", "cases.json", "statement.md"} | {
+        f"starter.{extension}" for extension in starter_extensions
+    } | {f"solution.{extension}" for extension in solution_extensions}
+    for stray in sorted(path.name for path in bundle.iterdir() if path.name not in allowed):
+        fail(f"unexpected file {stray}")
+
+    return failures
+
+
+def static_tier() -> tuple[list[Failure], dict[str, dict]]:
+    failures: list[Failure] = []
+    catalog: dict[str, dict] = {}
+    bundles = sorted(path for path in PROBLEMS.iterdir() if path.is_dir())
+    seen_ids: dict[int, str] = {}
+    seen_slugs: dict[str, str] = {}
+    for bundle in bundles:
+        for failure in check_bundle(bundle):
+            failures.append(failure)
+        try:
+            problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
+            if problem.get("id") in seen_ids:
+                failures.append(
+                    Failure(bundle.name, f"duplicate id {problem['id']} (also {seen_ids[problem['id']]})")
+                )
+            else:
+                seen_ids[problem["id"]] = bundle.name
+            if problem.get("slug") in seen_slugs:
+                failures.append(
+                    Failure(bundle.name, f"duplicate slug {problem['slug']} (also {seen_slugs[problem['slug']]})")
+                )
+            else:
+                seen_slugs[problem["slug"]] = bundle.name
+            catalog[bundle.name] = problem
+        except (json.JSONDecodeError, OSError, KeyError):
+            pass
+    return failures, catalog
+
+
+def submit(api: str, slug: str, language: str, code: str) -> dict:
+    request = urllib.request.Request(
+        f"{api}/api/submit",
+        data=json.dumps({"slug": slug, "language": language, "code": code}).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=120) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def runtime_tier(selected: list[str], catalog: dict[str, dict], api: str) -> list[Failure]:
+    failures: list[Failure] = []
+    language_for = {extension: key for key, extension in gen_starters.EXTENSIONS.items()}
+    for position, key in enumerate(selected, start=1):
+        bundle = PROBLEMS / key
+        problem = catalog.get(key)
+        if problem is None:
+            continue
+        for starter in sorted(bundle.glob("starter.*")):
+            language = language_for[starter.name[len("starter.") :]]
+            solution = bundle / f"solution.{starter.name[len('starter.') :]}"
+            try:
+                code = solution.read_text(encoding="utf-8")
+            except OSError:
+                continue  # reported by the static tier
+            try:
+                result = submit(api, problem["slug"], language, code)
+            except urllib.error.URLError as error:
+                failures.append(Failure(key, f"{language}: judge unreachable: {error}"))
+                return failures
+            except Exception as error:  # noqa: BLE001
+                failures.append(Failure(key, f"{language}: submission failed: {error}"))
+                continue
+            if result.get("status") != "accepted":
+                detail = next(
+                    (entry for entry in result.get("results", []) if entry.get("status") not in {"accepted", "completed"}),
+                    {},
+                )
+                failures.append(
+                    Failure(
+                        key,
+                        f"{language}: {result.get('status')} ({result.get('passed')}/{result.get('total')} cases"
+                        f"{'; ' + str(detail.get('status')) if detail else ''})",
+                    )
+                )
+        print(f"  [{position}/{len(selected)}] {key} judged")
+    return failures
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--problems", default="all", help="'all' or comma-separated bundle keys")
+    parser.add_argument("--skip-runtime", action="store_true", help="run the static tier only")
+    parser.add_argument("--api", default="http://localhost:8080", help="OpenOJ base URL for the runtime tier")
+    arguments = parser.parse_args()
+
+    print(f"static tier: checking {len(list(PROBLEMS.iterdir()))} bundles")
+    failures, catalog = static_tier()
+    for failure in failures:
+        print(f"  FAIL {failure}")
+    print(f"static tier: {len(failures)} failures")
+
+    if not arguments.skip_runtime:
+        if arguments.problems == "all":
+            selected = sorted(catalog)
+        else:
+            selected = [entry.strip() for entry in arguments.problems.split(",") if entry.strip()]
+            unknown = [entry for entry in selected if entry not in catalog]
+            if unknown:
+                print(f"unknown problem keys: {', '.join(unknown)}")
+                raise SystemExit(2)
+        print(f"runtime tier: judging {len(selected)} selected problems against {arguments.api}")
+        failures += runtime_tier(selected, catalog, arguments.api)
+
+    if failures:
+        print(f"CHECK FAILED: {len(failures)} failures")
+        raise SystemExit(1)
+    print("CHECK PASSED")
+
+
+if __name__ == "__main__":
+    main()

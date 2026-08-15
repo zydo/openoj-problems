@@ -1,0 +1,26 @@
+impl Solution {
+    pub fn min_moves(nums: Vec<i32>, limit: i32) -> i32 {
+        let n = nums.len();
+        let limit = limit as usize;
+        let mut diff = vec![0i64; 2 * limit + 2];
+        for i in 0..n / 2 {
+            let a = nums[i] as usize;
+            let b = nums[n - 1 - i] as usize;
+            let (lo, hi) = if a < b { (a, b) } else { (b, a) };
+            diff[2] += 2;
+            diff[lo + 1] -= 1;
+            diff[a + b] -= 1;
+            diff[a + b + 1] += 1;
+            diff[hi + limit + 1] += 1;
+        }
+        let mut best = i64::MAX;
+        let mut cur = 0i64;
+        for target in 2..=2 * limit {
+            cur += diff[target];
+            if cur < best {
+                best = cur;
+            }
+        }
+        best as i32
+    }
+}

@@ -1,0 +1,43 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct ListNode {
+    pub val: i32,
+    pub next: Option<Box<ListNode>>,
+}
+
+impl Solution {
+    pub fn merge_k_lists(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
+        let mut cur = lists;
+        while cur.len() > 1 {
+            let mut next = Vec::with_capacity((cur.len() + 1) / 2);
+            let mut it = cur.into_iter();
+            while let (Some(a), b) = (it.next(), it.next()) {
+                next.push(merge2(a, b.flatten()));
+            }
+            cur = next;
+        }
+        cur.into_iter().next().flatten()
+    }
+}
+
+fn merge2(mut a: Option<Box<ListNode>>, mut b: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    let mut dummy = Box::new(ListNode { val: 0, next: None });
+    let mut tail = &mut dummy;
+    loop {
+        let take_a = match (&a, &b) {
+            (Some(x), Some(y)) => x.val <= y.val,
+            _ => break,
+        };
+        if take_a {
+            let mut node = a.take().unwrap();
+            a = node.next.take();
+            tail.next = Some(node);
+        } else {
+            let mut node = b.take().unwrap();
+            b = node.next.take();
+            tail.next = Some(node);
+        }
+        tail = tail.next.as_mut().unwrap();
+    }
+    tail.next = a.or(b);
+    dummy.next
+}

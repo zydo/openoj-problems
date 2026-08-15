@@ -1,0 +1,18 @@
+impl Solution {
+    pub fn find_repeated_dna_sequences(s: String) -> Vec<String> {
+        let bytes = s.as_bytes();
+        let mut seen: std::collections::HashSet<&str> = std::collections::HashSet::new();
+        let mut repeated: std::collections::HashSet<&str> = std::collections::HashSet::new();
+        let mut i = 0;
+        while i + 10 <= bytes.len() {
+            let seq = &s[i..i + 10];
+            if !seen.insert(seq) {
+                repeated.insert(seq);
+            }
+            i += 1;
+        }
+        let mut result: Vec<String> = repeated.into_iter().map(|x| x.to_string()).collect();
+        result.sort();
+        result
+    }
+}

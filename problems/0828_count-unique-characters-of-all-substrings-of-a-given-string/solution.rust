@@ -1,0 +1,26 @@
+impl Solution {
+    pub fn unique_letter_string(s: String) -> i32 {
+        let s = s.as_bytes();
+        let mut positions: Vec<Vec<usize>> = vec![Vec::new(); 26];
+        for (i, &c) in s.iter().enumerate() {
+            positions[(c - b'A') as usize].push(i);
+        }
+        let n = s.len();
+        let mut total: i64 = 0;
+        for list in positions.iter() {
+            if list.is_empty() {
+                continue;
+            }
+            let mut pos: Vec<i64> = Vec::with_capacity(list.len() + 2);
+            pos.push(-1);
+            for &p in list {
+                pos.push(p as i64);
+            }
+            pos.push(n as i64);
+            for k in 1..pos.len() - 1 {
+                total += (pos[k] - pos[k - 1]) * (pos[k + 1] - pos[k]);
+            }
+        }
+        total as i32
+    }
+}

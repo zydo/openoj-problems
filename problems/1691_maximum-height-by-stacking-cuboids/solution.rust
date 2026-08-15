@@ -1,0 +1,26 @@
+impl Solution {
+    pub fn max_height(cuboids: Vec<Vec<i32>>) -> i32 {
+        let mut boxes = cuboids;
+        for b in boxes.iter_mut() {
+            b.sort();
+        }
+        boxes.sort();
+        let n = boxes.len();
+        let mut dp = vec![0i32; n];
+        let mut best = 0;
+        for i in 0..n {
+            dp[i] = boxes[i][2];
+            for j in 0..i {
+                if boxes[j][0] <= boxes[i][0]
+                    && boxes[j][1] <= boxes[i][1]
+                    && boxes[j][2] <= boxes[i][2]
+                    && dp[j] + boxes[i][2] > dp[i]
+                {
+                    dp[i] = dp[j] + boxes[i][2];
+                }
+            }
+            best = best.max(dp[i]);
+        }
+        best
+    }
+}

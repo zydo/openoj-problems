@@ -1,0 +1,30 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn count_the_num_of_k_free_subsets(nums: Vec<i32>, k: i32) -> i64 {
+        let mut sorted = nums.clone();
+        sorted.sort();
+        let mut group_of: HashMap<i32, usize> = HashMap::new();
+        let mut lengths: Vec<i64> = Vec::new();
+        for &x in &sorted {
+            if let Some(&gid) = group_of.get(&(x - k)) {
+                group_of.insert(x, gid);
+                lengths[gid] += 1;
+            } else {
+                group_of.insert(x, lengths.len());
+                lengths.push(1);
+            }
+        }
+        let mut ans: i64 = 1;
+        for &length in &lengths {
+            let (mut a, mut b) = (1i64, 1i64);
+            for _ in 0..length {
+                let nb = a + b;
+                a = b;
+                b = nb;
+            }
+            ans *= b;
+        }
+        ans
+    }
+}

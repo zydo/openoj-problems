@@ -1,0 +1,61 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+
+    public long maxBalancedSubsequenceSum(int[] nums) {
+        int n = nums.length;
+        long[] vals = new long[n];
+        for (int i = 0; i < n; i++) {
+            vals[i] = (long) nums[i] - i;
+        }
+        long[] comp = vals.clone();
+        Arrays.sort(comp);
+        int m = 0;
+        for (int i = 0; i < n; i++) {
+            if (i == 0 || comp[i] != comp[i - 1]) {
+                comp[m++] = comp[i];
+            }
+        }
+        Map<Long, Integer> idxOf = new HashMap<>();
+        for (int i = 0; i < m; i++) {
+            idxOf.put(comp[i], i + 1);
+        }
+
+        long[] bit = new long[m + 1];
+
+        long ans = Long.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            int j = idxOf.get(vals[i]);
+            long best = query(bit, j);
+            long dp = best <= 0 ? nums[i] : nums[i] + best;
+            if (dp > ans) {
+                ans = dp;
+            }
+            update(bit, j, dp);
+        }
+        return ans;
+    }
+
+    private void update(long[] bit, int i, long value) {
+        int m = bit.length - 1;
+        while (i <= m) {
+            if (value > bit[i]) {
+                bit[i] = value;
+            }
+            i += i & -i;
+        }
+    }
+
+    private long query(long[] bit, int i) {
+        long best = 0;
+        while (i > 0) {
+            if (bit[i] > best) {
+                best = bit[i];
+            }
+            i -= i & -i;
+        }
+        return best;
+    }
+}

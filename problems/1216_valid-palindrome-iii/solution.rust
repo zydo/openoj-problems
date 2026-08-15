@@ -1,0 +1,21 @@
+impl Solution {
+    pub fn is_valid_palindrome(s: String, k: i32) -> bool {
+        let b = s.as_bytes();
+        let n = b.len();
+        if n == 0 {
+            return true;
+        }
+        let mut dp = vec![vec![0i32; n]; n];
+        for i in (0..n).rev() {
+            dp[i][i] = 1;
+            for j in i + 1..n {
+                if b[i] == b[j] {
+                    dp[i][j] = dp[i + 1][j - 1] + 2;
+                } else {
+                    dp[i][j] = dp[i + 1][j].max(dp[i][j - 1]);
+                }
+            }
+        }
+        n as i32 - dp[0][n - 1] <= k
+    }
+}

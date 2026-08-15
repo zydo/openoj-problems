@@ -1,0 +1,24 @@
+impl Solution {
+    pub fn longest_palindrome(s: String) -> String {
+        let b = s.as_bytes();
+        let n = b.len() as isize;
+        let expand = |mut left: isize, mut right: isize| -> (usize, usize) {
+            while left >= 0 && right < n && b[left as usize] == b[right as usize] {
+                left -= 1;
+                right += 1;
+            }
+            ((left + 1) as usize, (right - 1) as usize)
+        };
+        let (mut best_start, mut best_end) = (0usize, 0usize);
+        for i in 0..n {
+            let centers = [expand(i, i), expand(i, i + 1)];
+            for &(l, r) in centers.iter() {
+                if l <= r && r - l > best_end - best_start {
+                    best_start = l;
+                    best_end = r;
+                }
+            }
+        }
+        s[best_start..=best_end].to_string()
+    }
+}

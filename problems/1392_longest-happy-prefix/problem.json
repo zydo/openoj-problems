@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": 1392,
+  "slug": "longest-happy-prefix",
+  "title": "Longest Happy Prefix",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "String Matching",
+    "Knuth-Morris-Pratt"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestPrefix",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "longestPrefix",
+      "rust": "longest_prefix",
+      "typescript": "longestPrefix"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 8192
+  }
+}

@@ -1,0 +1,31 @@
+impl Solution {
+    pub fn maximum_sum(nums: Vec<i32>) -> i64 {
+        fn squarefree_part(mut x: i64) -> i64 {
+            let mut result: i64 = 1;
+            let mut d: i64 = 2;
+            while d * d <= x {
+                if x % d == 0 {
+                    let mut count = 0;
+                    while x % d == 0 {
+                        x /= d;
+                        count += 1;
+                    }
+                    if count % 2 == 1 {
+                        result *= d;
+                    }
+                }
+                d += 1;
+            }
+            if x > 1 {
+                result *= x;
+            }
+            result
+        }
+
+        let mut groups: std::collections::HashMap<i64, i64> = std::collections::HashMap::new();
+        for (i, &v) in nums.iter().enumerate() {
+            *groups.entry(squarefree_part(i as i64 + 1)).or_insert(0) += v as i64;
+        }
+        *groups.values().max().unwrap()
+    }
+}

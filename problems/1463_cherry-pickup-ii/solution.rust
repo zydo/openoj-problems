@@ -1,0 +1,44 @@
+impl Solution {
+    pub fn cherry_pickup(grid: Vec<Vec<i32>>) -> i32 {
+        let rows = grid.len();
+        let cols = grid[0].len();
+        const NEG: i32 = -(1 << 30);
+        let mut dp = vec![vec![NEG; cols]; cols];
+        dp[0][cols - 1] = grid[0][0] + if cols > 1 { grid[0][cols - 1] } else { 0 };
+        for r in 1..rows {
+            let mut ndp = vec![vec![NEG; cols]; cols];
+            for c1 in 0..cols {
+                for c2 in 0..cols {
+                    let mut best = NEG;
+                    for d1 in [-1i32, 0, 1] {
+                        for d2 in [-1i32, 0, 1] {
+                            let p1 = c1 as i32 + d1;
+                            let p2 = c2 as i32 + d2;
+                            if p1 >= 0
+                                && p2 >= 0
+                                && (p1 as usize) < cols
+                                && (p2 as usize) < cols
+                                && dp[p1 as usize][p2 as usize] > best
+                            {
+                                best = dp[p1 as usize][p2 as usize];
+                            }
+                        }
+                    }
+                    if best > NEG {
+                        ndp[c1][c2] = best + grid[r][c1] + if c1 != c2 { grid[r][c2] } else { 0 };
+                    }
+                }
+            }
+            dp = ndp;
+        }
+        let mut ans = NEG;
+        for c1 in 0..cols {
+            for c2 in 0..cols {
+                if dp[c1][c2] > ans {
+                    ans = dp[c1][c2];
+                }
+            }
+        }
+        ans
+    }
+}

@@ -1,0 +1,25 @@
+impl Solution {
+    pub fn min_damage(power: i32, damage: Vec<i32>, health: Vec<i32>) -> i64 {
+        let n = damage.len();
+        let mut times = vec![0i64; n];
+        let mut ratio = vec![0.0f64; n];
+        let mut remaining: i64 = 0;
+        for i in 0..n {
+            times[i] = ((health[i] as i64) + (power as i64) - 1) / (power as i64);
+            ratio[i] = damage[i] as f64 / times[i] as f64;
+            remaining += damage[i] as i64;
+        }
+        let mut order: Vec<usize> = (0..n).collect();
+        order.sort_by(|&a, &b| {
+            ratio[b]
+                .partial_cmp(&ratio[a])
+                .unwrap_or(std::cmp::Ordering::Equal)
+        });
+        let mut answer: i64 = 0;
+        for i in order {
+            answer += remaining * times[i];
+            remaining -= damage[i] as i64;
+        }
+        answer
+    }
+}

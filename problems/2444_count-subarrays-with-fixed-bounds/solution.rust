@@ -1,0 +1,22 @@
+impl Solution {
+    pub fn count_subarrays(nums: Vec<i32>, min_k: i32, max_k: i32) -> i64 {
+        let mut count = 0i64;
+        let mut last_bad: i64 = -1;
+        let mut last_min: i64 = -1;
+        let mut last_max: i64 = -1;
+        for (i, &x) in nums.iter().enumerate() {
+            let i = i as i64;
+            if x < min_k || x > max_k {
+                last_bad = i;
+            }
+            if x == min_k {
+                last_min = i;
+            }
+            if x == max_k {
+                last_max = i;
+            }
+            count += (last_min.min(last_max) - last_bad).max(0);
+        }
+        count
+    }
+}

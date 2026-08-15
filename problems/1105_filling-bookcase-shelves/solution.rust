@@ -1,0 +1,23 @@
+impl Solution {
+    pub fn min_height_shelves(books: Vec<Vec<i32>>, shelf_width: i32) -> i32 {
+        let count = books.len();
+        let mut dp = vec![0i64; count + 1];
+        for i in 1..=count {
+            let mut width = 0i64;
+            let mut height = 0i64;
+            dp[i] = i64::MAX / 2;
+            let mut j = i as isize - 1;
+            while j >= 0 {
+                let j_us = j as usize;
+                width += books[j_us][0] as i64;
+                if width > shelf_width as i64 {
+                    break;
+                }
+                height = height.max(books[j_us][1] as i64);
+                dp[i] = dp[i].min(dp[j_us] + height);
+                j -= 1;
+            }
+        }
+        dp[count] as i32
+    }
+}

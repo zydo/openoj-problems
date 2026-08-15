@@ -1,0 +1,44 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Box<TreeNode>>,
+    pub right: Option<Box<TreeNode>>,
+}
+
+impl Solution {
+    pub fn delete_node(root: Option<Box<TreeNode>>, key: i32) -> Option<Box<TreeNode>> {
+        fn delete(node: Option<Box<TreeNode>>, key: i32) -> Option<Box<TreeNode>> {
+            let mut node = match node {
+                None => return None,
+                Some(node) => node,
+            };
+            if key < node.val {
+                let child = node.left.take();
+                node.left = delete(child, key);
+            } else if key > node.val {
+                let child = node.right.take();
+                node.right = delete(child, key);
+            } else {
+                let left = node.left.take();
+                let right = node.right.take();
+                if left.is_none() {
+                    return right;
+                }
+                if right.is_none() {
+                    return left;
+                }
+                let mut successor = right.as_ref().unwrap();
+                while let Some(next) = successor.left.as_ref() {
+                    successor = next;
+                }
+                let successor_val = successor.val;
+                node.val = successor_val;
+                node.left = left;
+                node.right = delete(right, successor_val);
+            }
+            Some(node)
+        }
+
+        delete(root, key)
+    }
+}

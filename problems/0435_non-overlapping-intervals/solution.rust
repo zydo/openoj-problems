@@ -1,0 +1,16 @@
+impl Solution {
+    pub fn erase_overlap_intervals(intervals: Vec<Vec<i32>>) -> i32 {
+        let mut ordered = intervals;
+        ordered.sort_by_key(|iv| iv[1]);
+        let mut removed = 0i32;
+        let mut prev_end = i64::MIN;
+        for iv in &ordered {
+            if iv[0] as i64 >= prev_end {
+                prev_end = iv[1] as i64;
+            } else {
+                removed += 1;
+            }
+        }
+        removed
+    }
+}

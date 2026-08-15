@@ -1,0 +1,26 @@
+impl Solution {
+    pub fn find_maximized_capital(k: i32, w: i32, profits: Vec<i32>, capital: Vec<i32>) -> i32 {
+        let mut projects: Vec<(i64, i64)> = capital
+            .iter()
+            .zip(profits.iter())
+            .map(|(&c, &p)| (c as i64, p as i64))
+            .collect();
+        projects.sort_unstable();
+        let mut affordable = std::collections::BinaryHeap::new();
+        let n = projects.len();
+        let mut current = w as i64;
+        let mut index = 0usize;
+        let limit = (k as i64).min(n as i64);
+        for _ in 0..limit {
+            while index < n && projects[index].0 <= current {
+                affordable.push(projects[index].1);
+                index += 1;
+            }
+            match affordable.pop() {
+                Some(p) => current += p,
+                None => break,
+            }
+        }
+        current as i32
+    }
+}

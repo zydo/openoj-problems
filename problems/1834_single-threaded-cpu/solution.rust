@@ -1,0 +1,31 @@
+use std::cmp::Reverse;
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn get_order(tasks: Vec<Vec<i32>>) -> Vec<i32> {
+        let n = tasks.len();
+        let mut by_enqueue: Vec<usize> = (0..n).collect();
+        by_enqueue.sort_by(|&a, &b| tasks[a][0].cmp(&tasks[b][0]).then(a.cmp(&b)));
+        // Min-heap ordered by (processingTime, index).
+        let mut heap: BinaryHeap<Reverse<(i64, usize)>> = BinaryHeap::new();
+        let mut order: Vec<i32> = Vec::with_capacity(n);
+        let mut time: i64 = 0;
+        let mut i = 0usize;
+        while i < n || !heap.is_empty() {
+            if heap.is_empty() {
+                let enq = tasks[by_enqueue[i]][0] as i64;
+                time = time.max(enq);
+            }
+            while i < n && (tasks[by_enqueue[i]][0] as i64) <= time {
+                let j = by_enqueue[i];
+                heap.push(Reverse((tasks[j][1] as i64, j)));
+                i += 1;
+            }
+            if let Some(Reverse((proc, j))) = heap.pop() {
+                order.push(j as i32);
+                time += proc;
+            }
+        }
+        order
+    }
+}

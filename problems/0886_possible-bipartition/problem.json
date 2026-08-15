@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 886,
+  "slug": "possible-bipartition",
+  "title": "Possible Bipartition",
+  "difficulty": "H3",
+  "tags": [
+    "Graph",
+    "BFS",
+    "DFS"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "possibleBipartition",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "dislikes",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "possibleBipartition",
+      "rust": "possible_bipartition",
+      "typescript": "possibleBipartition"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

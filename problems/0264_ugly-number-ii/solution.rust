@@ -1,0 +1,25 @@
+impl Solution {
+    pub fn nth_ugly_number(n: i32) -> i32 {
+        let n = n as usize;
+        let mut ugly = vec![0i32; n + 1];
+        ugly[0] = 1;
+        let (mut i2, mut i3, mut i5) = (0usize, 0usize, 0usize);
+        for i in 1..=n {
+            let m2 = ugly[i2] * 2;
+            let m3 = ugly[i3] * 3;
+            let m5 = ugly[i5] * 5;
+            let nxt = m2.min(m3).min(m5);
+            ugly[i] = nxt;
+            if nxt == m2 {
+                i2 += 1;
+            }
+            if nxt == m3 {
+                i3 += 1;
+            }
+            if nxt == m5 {
+                i5 += 1;
+            }
+        }
+        ugly[n - 1]
+    }
+}

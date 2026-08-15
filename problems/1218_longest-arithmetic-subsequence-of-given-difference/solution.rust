@@ -1,0 +1,16 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn longest_subsequence(arr: Vec<i32>, difference: i32) -> i32 {
+        let mut dp: HashMap<i32, i32> = HashMap::new();
+        let mut best = 0;
+        for &x in &arr {
+            let len = dp.get(&(x - difference)).copied().unwrap_or(0) + 1;
+            dp.insert(x, len);
+            if len > best {
+                best = len;
+            }
+        }
+        best
+    }
+}

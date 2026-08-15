@@ -1,0 +1,36 @@
+impl Solution {
+    pub fn sort_array(nums: Vec<i32>) -> i32 {
+        let n = nums.len();
+        let ops_for = |target: &[usize]| -> i32 {
+            let sigma: Vec<usize> = nums.iter().map(|&v| target[v as usize]).collect();
+            let blank = nums.iter().position(|&v| v == 0).unwrap();
+            let mut visited = vec![false; n];
+            let mut total = 0i32;
+            for i in 0..n {
+                if visited[i] {
+                    continue;
+                }
+                let mut length = 0i32;
+                let mut has_blank = false;
+                let mut j = i;
+                while !visited[j] {
+                    visited[j] = true;
+                    if j == blank {
+                        has_blank = true;
+                    }
+                    length += 1;
+                    j = sigma[j];
+                }
+                if has_blank {
+                    total += length - 1;
+                } else if length >= 2 {
+                    total += length + 1;
+                }
+            }
+            total
+        };
+        let target_a: Vec<usize> = (0..n).map(|v| if v == 0 { n - 1 } else { v - 1 }).collect();
+        let target_b: Vec<usize> = (0..n).collect();
+        ops_for(&target_a).min(ops_for(&target_b))
+    }
+}

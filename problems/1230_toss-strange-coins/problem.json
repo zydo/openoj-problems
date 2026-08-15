@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": 1230,
+  "slug": "toss-strange-coins",
+  "title": "Toss Strange Coins",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Probability"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "probabilityOfHeads",
+    "parameters": [
+      {
+        "name": "prob",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "number"
+          }
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "number"
+    },
+    "entrypoints": {
+      "go": "probabilityOfHeads",
+      "rust": "probability_of_heads",
+      "typescript": "probabilityOfHeads"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

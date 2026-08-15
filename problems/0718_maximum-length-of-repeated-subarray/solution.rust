@@ -1,0 +1,20 @@
+impl Solution {
+    pub fn find_length(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {
+        let (m, n) = (nums1.len(), nums2.len());
+        let mut dp = vec![0i32; n + 1];
+        let mut best = 0i32;
+        for i in (0..m).rev() {
+            let mut cur = vec![0i32; n + 1];
+            for j in (0..n).rev() {
+                if nums1[i] == nums2[j] {
+                    cur[j] = dp[j + 1] + 1;
+                    if cur[j] > best {
+                        best = cur[j];
+                    }
+                }
+            }
+            dp = cur;
+        }
+        best
+    }
+}

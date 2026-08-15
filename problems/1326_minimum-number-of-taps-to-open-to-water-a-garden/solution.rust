@@ -1,0 +1,27 @@
+impl Solution {
+    pub fn min_taps(n: i32, ranges: Vec<i32>) -> i32 {
+        let mut intervals: Vec<(i32, i32)> = ranges
+            .iter()
+            .enumerate()
+            .map(|(i, &r)| ((i as i32 - r).max(0), (i as i32 + r).min(n)))
+            .collect();
+        intervals.sort();
+        let total = intervals.len();
+        let mut count = 0;
+        let mut covered = 0;
+        let mut i = 0;
+        while covered < n {
+            let mut reach = covered;
+            while i < total && intervals[i].0 <= covered {
+                reach = reach.max(intervals[i].1);
+                i += 1;
+            }
+            if reach == covered {
+                return -1;
+            }
+            covered = reach;
+            count += 1;
+        }
+        count
+    }
+}

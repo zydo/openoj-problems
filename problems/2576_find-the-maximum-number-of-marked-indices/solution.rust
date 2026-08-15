@@ -1,0 +1,14 @@
+impl Solution {
+    pub fn max_num_of_marked_indices(nums: Vec<i32>) -> i32 {
+        let mut a = nums;
+        a.sort_unstable();
+        let n = a.len();
+        let mut i: usize = 0;
+        for j in (n + 1) / 2..n {
+            if 2i64 * a[i] as i64 <= a[j] as i64 {
+                i += 1;
+            }
+        }
+        (2 * i) as i32
+    }
+}

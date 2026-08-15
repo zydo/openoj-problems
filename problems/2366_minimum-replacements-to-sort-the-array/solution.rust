@@ -1,0 +1,17 @@
+impl Solution {
+    pub fn minimum_replacement(nums: Vec<i32>) -> i64 {
+        let mut ops: i64 = 0;
+        let mut bound: i64 = nums[nums.len() - 1] as i64;
+        for i in (0..nums.len() - 1).rev() {
+            let x = nums[i] as i64;
+            if x <= bound {
+                bound = x;
+            } else {
+                let k = (x + bound - 1) / bound;
+                ops += k - 1;
+                bound = x / k;
+            }
+        }
+        ops
+    }
+}

@@ -1,0 +1,23 @@
+impl Solution {
+    pub fn count_primes(n: i32) -> i32 {
+        let n = n as usize;
+        if n < 3 {
+            return 0;
+        }
+        let mut is_composite = vec![false; n];
+        let mut count = 0;
+        for i in 2..n {
+            if !is_composite[i] {
+                count += 1;
+                if i * i < n {
+                    let mut j = i * i;
+                    while j < n {
+                        is_composite[j] = true;
+                        j += i;
+                    }
+                }
+            }
+        }
+        count
+    }
+}

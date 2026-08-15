@@ -1,0 +1,23 @@
+class Solution {
+  public:
+    int maxCompatibilitySum(vector<vector<int>> &students, vector<vector<int>> &mentors) {
+        int m = students.size();
+        vector<vector<int>> score(m, vector<int>(m, 0));
+        for (int i = 0; i < m; i++)
+            for (int j = 0; j < m; j++)
+                for (int t = 0; t < (int)students[i].size(); t++)
+                    if (students[i][t] == mentors[j][t])
+                        score[i][j]++;
+        int full = 1 << m;
+        vector<int> dp(full, 0);
+        for (int mask = 1; mask < full; mask++) {
+            int i = __builtin_popcount(mask) - 1;
+            int best = 0;
+            for (int j = 0; j < m; j++)
+                if (mask >> j & 1)
+                    best = max(best, dp[mask ^ (1 << j)] + score[i][j]);
+            dp[mask] = best;
+        }
+        return dp[full - 1];
+    }
+};

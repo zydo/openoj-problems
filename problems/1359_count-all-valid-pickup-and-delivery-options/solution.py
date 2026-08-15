@@ -1,0 +1,10 @@
+from typing import List, Optional
+
+
+class Solution:
+    def countOrders(self, n: int) -> int:
+        MOD = 10**9 + 7
+        result = 1
+        for i in range(2, n + 1):
+            result = result * (2 * i - 1) * i % MOD
+        return result

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 2135,
+  "slug": "count-words-obtained-after-adding-a-letter",
+  "title": "Count Words Obtained After Adding a Letter",
+  "difficulty": "H3",
+  "tags": [
+    "Bit Manipulation",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "wordCount",
+    "parameters": [
+      {
+        "name": "startWords",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "targetWords",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "wordCount",
+      "rust": "word_count",
+      "typescript": "wordCount"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

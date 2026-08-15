@@ -1,0 +1,16 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn least_bricks(wall: Vec<Vec<i32>>) -> i32 {
+        let mut edge_counts: HashMap<i32, i32> = HashMap::new();
+        for row in &wall {
+            let mut position: i64 = 0;
+            for &width in row.iter().take(row.len().saturating_sub(1)) {
+                position += width as i64;
+                *edge_counts.entry(position as i32).or_insert(0) += 1;
+            }
+        }
+        let best_edges = edge_counts.values().copied().max().unwrap_or(0);
+        wall.len() as i32 - best_edges
+    }
+}

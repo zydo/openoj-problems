@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 2355,
+  "slug": "maximum-number-of-books-you-can-take",
+  "title": "Maximum Number of Books You Can Take",
+  "difficulty": "H4",
+  "tags": [
+    "Dynamic Programming",
+    "Monotonic Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maximumBooks",
+    "parameters": [
+      {
+        "name": "books",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "maximumBooks",
+      "rust": "maximum_books",
+      "typescript": "maximumBooks"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,33 @@
+impl Solution {
+    pub fn max_total_fruits(fruits: Vec<Vec<i32>>, startPos: i32, k: i32) -> i64 {
+        let n = fruits.len();
+        let mut prefix = vec![0i64; n + 1];
+        for i in 0..n {
+            prefix[i + 1] = prefix[i] + fruits[i][1] as i64;
+        }
+
+        let windowCost = |leftPos: i32, rightPos: i32| -> i64 {
+            if startPos <= leftPos {
+                return (rightPos - startPos) as i64;
+            }
+            if startPos >= rightPos {
+                return (startPos - leftPos) as i64;
+            }
+            let a = 2 * (startPos - leftPos) as i64 + (rightPos - startPos) as i64;
+            let b = 2 * (rightPos - startPos) as i64 + (startPos - leftPos) as i64;
+            a.min(b)
+        };
+
+        let mut best: i64 = 0;
+        let mut left = 0usize;
+        for right in 0..n {
+            while left < right && windowCost(fruits[left][0], fruits[right][0]) > k as i64 {
+                left += 1;
+            }
+            if windowCost(fruits[left][0], fruits[right][0]) <= k as i64 {
+                best = best.max(prefix[right + 1] - prefix[left]);
+            }
+        }
+        best
+    }
+}

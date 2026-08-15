@@ -1,0 +1,34 @@
+impl Solution {
+    pub fn maximum_books(books: Vec<i32>) -> i64 {
+        let n = books.len();
+        let mut dp = vec![0i64; n];
+        let mut stack: Vec<usize> = Vec::with_capacity(n);
+        let mut best: i64 = 0;
+        for i in 0..n {
+            let bi = books[i] as i64;
+            while let Some(&t) = stack.last() {
+                if (books[t] as i64) >= bi - (i as i64 - t as i64) {
+                    stack.pop();
+                } else {
+                    break;
+                }
+            }
+            let j: i64 = match stack.last() {
+                Some(&t) => t as i64,
+                None => -1,
+            };
+            let length = if j >= 0 {
+                i as i64 - j
+            } else {
+                (i as i64).min(bi) + 1 // stop where the sequence would go negative
+            };
+            let s = length * bi - length * (length - 1) / 2;
+            dp[i] = s + if j >= 0 { dp[j as usize] } else { 0 };
+            if dp[i] > best {
+                best = dp[i];
+            }
+            stack.push(i);
+        }
+        best
+    }
+}

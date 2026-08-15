@@ -1,0 +1,32 @@
+impl Solution {
+    pub fn find_cheapest_price(n: i32, flights: Vec<Vec<i32>>, src: i32, dst: i32, k: i32) -> i32 {
+        let n = n as usize;
+        let src = src as usize;
+        let dst = dst as usize;
+        let inf = i32::MAX / 2;
+        let mut dist = vec![inf; n];
+        dist[src] = 0;
+        for _ in 0..(k + 1) {
+            let mut ndist = dist.clone();
+            let mut changed = false;
+            for flight in &flights {
+                let f = flight[0] as usize;
+                let t = flight[1] as usize;
+                let price = flight[2];
+                if dist[f].saturating_add(price) < ndist[t] {
+                    ndist[t] = dist[f] + price;
+                    changed = true;
+                }
+            }
+            dist = ndist;
+            if !changed {
+                break;
+            }
+        }
+        if dist[dst] >= inf {
+            -1
+        } else {
+            dist[dst]
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 200,
+  "slug": "number-of-islands",
+  "title": "Number of Islands",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Matrix",
+    "Graph",
+    "BFS",
+    "DFS",
+    "Union-Find"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "numIslands",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "numIslands",
+      "rust": "num_islands",
+      "typescript": "numIslands"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

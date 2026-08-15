@@ -1,0 +1,51 @@
+impl Solution {
+    pub fn number_of_good_subsets(nums: Vec<i32>) -> i32 {
+        const MOD: i64 = 1_000_000_007;
+        const PRIMES: [i32; 10] = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
+
+        let mut count: std::collections::HashMap<i32, i64> = std::collections::HashMap::new();
+        for &v in &nums {
+            *count.entry(v).or_insert(0) += 1;
+        }
+
+        let size = 1usize << 10;
+        let mut dp = vec![0i64; size];
+        dp[0] = 1;
+        for (&value, &freq) in count.iter() {
+            if value == 1 {
+                continue;
+            }
+            let mut mask = 0usize;
+            let mut bad = false;
+            let mut x = value;
+            for (i, &p) in PRIMES.iter().enumerate() {
+                if x % p == 0 {
+                    mask |= 1 << i;
+                    x /= p;
+                    if x % p == 0 {
+                        bad = true;
+                        break;
+                    }
+                }
+            }
+            if bad || mask == 0 {
+                continue;
+            }
+            for prev in (0..size).rev() {
+                if dp[prev] != 0 && prev & mask == 0 {
+                    dp[prev | mask] = (dp[prev | mask] + dp[prev] * freq) % MOD;
+                }
+            }
+        }
+        let mut total: i64 = 0;
+        for i in 1..size {
+            total = (total + dp[i]) % MOD;
+        }
+        let ones = *count.get(&1).unwrap_or(&0);
+        let mut pow: i64 = 1;
+        for _ in 0..ones {
+            pow = pow * 2 % MOD;
+        }
+        (total * pow % MOD) as i32
+    }
+}

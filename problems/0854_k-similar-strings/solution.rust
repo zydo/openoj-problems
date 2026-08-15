@@ -1,0 +1,31 @@
+use std::collections::{HashSet, VecDeque};
+
+impl Solution {
+    pub fn k_similarity(s1: String, s2: String) -> i32 {
+        let s2 = s2.into_bytes();
+        let start = s1.into_bytes();
+        let mut queue: VecDeque<(Vec<u8>, i32)> = VecDeque::new();
+        let mut seen: HashSet<Vec<u8>> = HashSet::new();
+        queue.push_back((start.clone(), 0));
+        seen.insert(start);
+        while let Some((mut s, steps)) = queue.pop_front() {
+            if s == s2 {
+                return steps;
+            }
+            let mut i = 0;
+            while s[i] == s2[i] {
+                i += 1;
+            }
+            for j in (i + 1)..s.len() {
+                if s[j] == s2[i] && s[j] != s2[j] {
+                    s.swap(i, j);
+                    if seen.insert(s.clone()) {
+                        queue.push_back((s.clone(), steps + 1));
+                    }
+                    s.swap(i, j);
+                }
+            }
+        }
+        -1
+    }
+}

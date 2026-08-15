@@ -1,0 +1,14 @@
+impl Solution {
+    pub fn rand10(rand7_outputs: Vec<i32>) -> i32 {
+        let mut index = 0usize;
+        loop {
+            let a = rand7_outputs[index];
+            let b = rand7_outputs[index + 1];
+            index += 2;
+            let idx = (a - 1) * 7 + b;
+            if idx <= 40 {
+                return (idx - 1) % 10 + 1;
+            }
+        }
+    }
+}

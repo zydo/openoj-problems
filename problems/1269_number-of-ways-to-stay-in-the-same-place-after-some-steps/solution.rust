@@ -1,0 +1,24 @@
+impl Solution {
+    pub fn num_ways(steps: i32, arrLen: i32) -> i32 {
+        const MOD: i64 = 1_000_000_007;
+        let steps = steps as usize;
+        let n = (arrLen as usize).min(steps + 1);
+        let mut dp = vec![0i64; n];
+        let mut ndp = vec![0i64; n];
+        dp[0] = 1;
+        for _ in 0..steps {
+            for i in 0..n {
+                let mut total = dp[i];
+                if i > 0 {
+                    total += dp[i - 1];
+                }
+                if i + 1 < n {
+                    total += dp[i + 1];
+                }
+                ndp[i] = total % MOD;
+            }
+            std::mem::swap(&mut dp, &mut ndp);
+        }
+        dp[0] as i32
+    }
+}

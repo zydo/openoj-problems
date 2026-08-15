@@ -1,0 +1,51 @@
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn survived_robots_healths(
+        positions: Vec<i32>,
+        healths: Vec<i32>,
+        directions: String,
+    ) -> Vec<i32> {
+        let n = positions.len();
+        let mut h = healths.clone();
+        let dirs = directions.as_bytes();
+        let mut order: Vec<usize> = (0..n).collect();
+        order.sort_by(|&a, &b| positions[a].cmp(&positions[b]));
+        let mut stack: Vec<usize> = Vec::new();
+        for &idx in &order {
+            if dirs[idx] == b'R' {
+                stack.push(idx);
+            } else {
+                let mut alive = true;
+                while let Some(&top_idx) = stack.last() {
+                    if dirs[top_idx] != b'R' {
+                        break;
+                    }
+                    if h[top_idx] < h[idx] {
+                        h[idx] -= 1;
+                        stack.pop();
+                    } else if h[top_idx] > h[idx] {
+                        h[top_idx] -= 1;
+                        alive = false;
+                        break;
+                    } else {
+                        stack.pop();
+                        alive = false;
+                        break;
+                    }
+                }
+                if alive {
+                    stack.push(idx);
+                }
+            }
+        }
+        let survivors: HashSet<usize> = stack.into_iter().collect();
+        let mut result = Vec::with_capacity(survivors.len());
+        for i in 0..n {
+            if survivors.contains(&i) {
+                result.push(h[i]);
+            }
+        }
+        result
+    }
+}

@@ -1,0 +1,24 @@
+impl Solution {
+    pub fn count_digit_one(n: i32) -> i32 {
+        let n = n as i64;
+        if n <= 0 {
+            return 0;
+        }
+        let mut count: i64 = 0;
+        let mut factor: i64 = 1;
+        while factor <= n {
+            let higher = n / (factor * 10);
+            let current = (n / factor) % 10;
+            let lower = n % factor;
+            if current == 0 {
+                count += higher * factor;
+            } else if current == 1 {
+                count += higher * factor + lower + 1;
+            } else {
+                count += (higher + 1) * factor;
+            }
+            factor *= 10;
+        }
+        count as i32
+    }
+}

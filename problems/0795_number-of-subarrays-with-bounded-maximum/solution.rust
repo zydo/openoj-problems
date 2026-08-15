@@ -1,0 +1,19 @@
+impl Solution {
+    fn count_below(nums: &Vec<i32>, bound: i32) -> i64 {
+        let mut total = 0i64;
+        let mut run = 0i64;
+        for &v in nums {
+            if v <= bound {
+                run += 1;
+                total += run;
+            } else {
+                run = 0;
+            }
+        }
+        total
+    }
+
+    pub fn num_subarray_bounded_max(nums: Vec<i32>, left: i32, right: i32) -> i32 {
+        (Self::count_below(&nums, right) - Self::count_below(&nums, left - 1)) as i32
+    }
+}

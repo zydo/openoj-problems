@@ -1,0 +1,25 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Box<TreeNode>>,
+    pub right: Option<Box<TreeNode>>,
+}
+
+impl Solution {
+    pub fn distribute_coins(root: Option<Box<TreeNode>>) -> i32 {
+        fn dfs(node: &Option<Box<TreeNode>>, moves: &mut i32) -> i32 {
+            match node {
+                None => 0,
+                Some(n) => {
+                    let left = dfs(&n.left, moves);
+                    let right = dfs(&n.right, moves);
+                    *moves += left.abs() + right.abs();
+                    n.val + left + right - 1
+                }
+            }
+        }
+        let mut moves = 0;
+        dfs(&root, &mut moves);
+        moves
+    }
+}

@@ -1,0 +1,12 @@
+impl Solution {
+    pub fn minimum_effort(mut tasks: Vec<Vec<i32>>) -> i64 {
+        tasks.sort_by(|a, b| (b[1] - b[0]).cmp(&(a[1] - a[0])));
+        let mut spent: i64 = 0;
+        let mut answer: i64 = 0;
+        for task in &tasks {
+            answer = answer.max(spent + task[1] as i64);
+            spent += task[0] as i64;
+        }
+        answer
+    }
+}

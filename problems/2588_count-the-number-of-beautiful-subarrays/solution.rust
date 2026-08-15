@@ -1,0 +1,17 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn beautiful_subarrays(nums: Vec<i32>) -> i64 {
+        let mut count: HashMap<i32, i64> = HashMap::new();
+        count.insert(0, 1);
+        let mut x: i32 = 0;
+        let mut ans: i64 = 0;
+        for v in nums {
+            x ^= v;
+            let c = *count.get(&x).unwrap_or(&0);
+            ans += c;
+            count.insert(x, c + 1);
+        }
+        ans
+    }
+}

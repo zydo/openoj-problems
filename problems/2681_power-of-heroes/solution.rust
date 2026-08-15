@@ -1,0 +1,14 @@
+impl Solution {
+    pub fn sum_of_power(nums: Vec<i32>) -> i32 {
+        const MOD: i64 = 1_000_000_007;
+        let mut a: Vec<i64> = nums.iter().map(|&x| x as i64).collect();
+        a.sort();
+        let mut ans: i64 = 0;
+        let mut s: i64 = 0;
+        for &x in &a {
+            ans = (ans + (x * x % MOD) * ((s + x) % MOD)) % MOD;
+            s = (2 * s + x) % MOD;
+        }
+        ans as i32
+    }
+}

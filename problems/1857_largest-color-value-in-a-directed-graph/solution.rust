@@ -1,0 +1,46 @@
+impl Solution {
+    pub fn largest_path_value(colors: String, edges: Vec<Vec<i32>>) -> i32 {
+        let colors = colors.as_bytes();
+        let n = colors.len();
+        let mut graph: Vec<Vec<usize>> = vec![Vec::new(); n];
+        let mut indeg = vec![0i32; n];
+        for e in &edges {
+            let a = e[0] as usize;
+            let b = e[1] as usize;
+            graph[a].push(b);
+            indeg[b] += 1;
+        }
+
+        let mut dp = vec![[0i32; 26]; n];
+        let mut queue: std::collections::VecDeque<usize> =
+            (0..n).filter(|&i| indeg[i] == 0).collect();
+        let mut visited = 0i32;
+        let mut ans = 0i32;
+        while let Some(u) = queue.pop_front() {
+            visited += 1;
+            dp[u][(colors[u] - b'a') as usize] += 1;
+            let du = dp[u];
+            for c in 0..26 {
+                if du[c] > ans {
+                    ans = du[c];
+                }
+            }
+            for &v in &graph[u] {
+                for c in 0..26 {
+                    if du[c] > dp[v][c] {
+                        dp[v][c] = du[c];
+                    }
+                }
+                indeg[v] -= 1;
+                if indeg[v] == 0 {
+                    queue.push_back(v);
+                }
+            }
+        }
+        if visited != n as i32 {
+            -1
+        } else {
+            ans
+        }
+    }
+}

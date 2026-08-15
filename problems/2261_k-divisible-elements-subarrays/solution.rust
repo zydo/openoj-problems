@@ -1,0 +1,26 @@
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn count_distinct(nums: Vec<i32>, k: i32, p: i32) -> i32 {
+        let mut seen: HashSet<String> = HashSet::new();
+        let n = nums.len();
+        for i in 0..n {
+            let mut divisible: i32 = 0;
+            let mut cur = String::new();
+            for j in i..n {
+                if nums[j] % p == 0 {
+                    divisible += 1;
+                }
+                if !cur.is_empty() {
+                    cur.push(',');
+                }
+                cur.push_str(&nums[j].to_string());
+                if divisible > k {
+                    break;
+                }
+                seen.insert(cur.clone());
+            }
+        }
+        seen.len() as i32
+    }
+}

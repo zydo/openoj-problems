@@ -1,0 +1,22 @@
+impl Solution {
+    pub fn min_distance(word1: String, word2: String) -> i32 {
+        let a = word1.as_bytes();
+        let b = word2.as_bytes();
+        let m = a.len();
+        let n = b.len();
+        let mut prev: Vec<i32> = (0..=n as i32).collect();
+        let mut curr: Vec<i32> = vec![0; n + 1];
+        for i in 1..=m {
+            curr[0] = i as i32;
+            for j in 1..=n {
+                if a[i - 1] == b[j - 1] {
+                    curr[j] = prev[j - 1];
+                } else {
+                    curr[j] = 1 + prev[j - 1].min(prev[j]).min(curr[j - 1]);
+                }
+            }
+            std::mem::swap(&mut prev, &mut curr);
+        }
+        prev[n]
+    }
+}

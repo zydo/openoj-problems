@@ -1,0 +1,14 @@
+impl Solution {
+    pub fn max_profit(prices: Vec<i32>) -> i32 {
+        let mut best = 0;
+        let mut min_price = prices[0];
+        for &price in &prices {
+            if price < min_price {
+                min_price = price;
+            } else if price - min_price > best {
+                best = price - min_price;
+            }
+        }
+        best
+    }
+}

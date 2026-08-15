@@ -1,0 +1,21 @@
+use std::collections::BTreeMap;
+
+impl Solution {
+    pub fn split_painting(segments: Vec<Vec<i32>>) -> Vec<Vec<i64>> {
+        let mut diff: BTreeMap<i64, i64> = BTreeMap::new();
+        for seg in &segments {
+            *diff.entry(seg[0] as i64).or_insert(0) += seg[2] as i64;
+            *diff.entry(seg[1] as i64).or_insert(0) -= seg[2] as i64;
+        }
+        let keys: Vec<i64> = diff.keys().copied().collect();
+        let mut result: Vec<Vec<i64>> = Vec::new();
+        let mut running: i64 = 0;
+        for i in 0..keys.len().saturating_sub(1) {
+            running += diff[&keys[i]];
+            if running > 0 {
+                result.push(vec![keys[i], keys[i + 1], running]);
+            }
+        }
+        result
+    }
+}

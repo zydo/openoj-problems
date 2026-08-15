@@ -1,0 +1,15 @@
+impl Solution {
+    pub fn min_operations(nums: Vec<i32>) -> i32 {
+        let mut tails: Vec<i32> = Vec::new();
+        for &x in &nums {
+            let v = -x;
+            let pos = tails.partition_point(|&t| t <= v);
+            if pos == tails.len() {
+                tails.push(v);
+            } else {
+                tails[pos] = v;
+            }
+        }
+        tails.len() as i32
+    }
+}

@@ -1,0 +1,20 @@
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn max_sub_array_len(nums: Vec<i32>, k: i32) -> i32 {
+        let mut first: HashMap<i64, i32> = HashMap::new();
+        first.insert(0, -1);
+        let mut acc: i64 = 0;
+        let mut best: i32 = 0;
+        for (i, &x) in nums.iter().enumerate() {
+            acc += x as i64;
+            if let Some(&j) = first.get(&(acc - k as i64)) {
+                if (i as i32 - j) > best {
+                    best = i as i32 - j;
+                }
+            }
+            first.entry(acc).or_insert(i as i32);
+        }
+        best
+    }
+}

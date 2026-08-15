@@ -1,0 +1,16 @@
+from typing import List, Optional
+
+
+class Solution:
+    def isZeroArray(self, nums: List[int], queries: List[List[int]]) -> bool:
+        n = len(nums)
+        diff = [0] * (n + 1)
+        for l, r in queries:
+            diff[l] += 1
+            diff[r + 1] -= 1
+        coverage = 0
+        for i in range(n):
+            coverage += diff[i]
+            if coverage < nums[i]:
+                return False
+        return True

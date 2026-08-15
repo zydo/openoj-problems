@@ -1,0 +1,28 @@
+impl Solution {
+    pub fn minimum_mountain_removals(nums: Vec<i32>) -> i32 {
+        let n = nums.len();
+        let mut lis = vec![1usize; n];
+        let mut lds = vec![1usize; n];
+        for i in 0..n {
+            for j in 0..i {
+                if nums[j] < nums[i] && lis[j] + 1 > lis[i] {
+                    lis[i] = lis[j] + 1;
+                }
+            }
+        }
+        for i in (0..n).rev() {
+            for j in i + 1..n {
+                if nums[j] < nums[i] && lds[j] + 1 > lds[i] {
+                    lds[i] = lds[j] + 1;
+                }
+            }
+        }
+        let mut best = 0usize;
+        for i in 0..n {
+            if lis[i] >= 2 && lds[i] >= 2 {
+                best = best.max(lis[i] + lds[i] - 1);
+            }
+        }
+        (n - best) as i32
+    }
+}

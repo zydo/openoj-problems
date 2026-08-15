@@ -1,0 +1,14 @@
+impl Solution {
+    pub fn largest_perimeter(nums: Vec<i32>) -> i64 {
+        let mut a = nums;
+        a.sort_unstable();
+        let mut total: i64 = a.iter().map(|&x| x as i64).sum();
+        for i in (2..a.len()).rev() {
+            if total - a[i] as i64 > a[i] as i64 {
+                return total;
+            }
+            total -= a[i] as i64;
+        }
+        -1
+    }
+}

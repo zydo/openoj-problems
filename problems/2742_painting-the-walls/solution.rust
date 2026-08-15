@@ -1,0 +1,20 @@
+impl Solution {
+    pub fn paint_walls(cost: Vec<i32>, time: Vec<i32>) -> i32 {
+        let n = cost.len();
+        let inf = i64::MAX / 2;
+        let mut dp = vec![inf; n + 1];
+        dp[0] = 0;
+        for i in 0..n {
+            let weight = (time[i] + 1) as usize;
+            let c = cost[i] as i64;
+            for j in (1..=n).rev() {
+                let src = if j >= weight { j - weight } else { 0 };
+                let cand = dp[src] + c;
+                if cand < dp[j] {
+                    dp[j] = cand;
+                }
+            }
+        }
+        dp[n] as i32
+    }
+}

@@ -1,0 +1,17 @@
+impl Solution {
+    pub fn minimum_operations(nums: Vec<i32>, target: Vec<i32>) -> i64 {
+        let mut prev: i64 = 0;
+        let mut total: i64 = 0;
+        for i in 0..nums.len() {
+            let cur = nums[i] as i64 - target[i] as i64;
+            if cur > prev {
+                total += cur - prev;
+            }
+            prev = cur;
+        }
+        if prev < 0 {
+            total += -prev;
+        }
+        total
+    }
+}

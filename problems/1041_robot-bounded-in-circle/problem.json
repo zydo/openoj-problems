@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": 1041,
+  "slug": "robot-bounded-in-circle",
+  "title": "Robot Bounded In Circle",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "isRobotBounded",
+    "parameters": [
+      {
+        "name": "instructions",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "isRobotBounded",
+      "rust": "is_robot_bounded",
+      "typescript": "isRobotBounded"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
