@@ -5,8 +5,9 @@ Starters are derived code: never edit them by hand — change problem.json and
 re-run this script. The file extension selects the language (py, javascript,
 typescript, java, cpp, go, rust, sql) and the set of generated starters
 defines the languages the problem offers. Function problems generate all seven
-languages; sql a single starter.sql; design (class) problems python3 + java
-only — the typed wrappers do not implement the actions/params protocol.
+languages; sql a single starter.sql; design (class) and interactive (oracle)
+problems python3 + java only — the typed wrappers do not implement the
+actions/params or oracle protocols.
 
 Usage:
   gen_starters.py problems/0001_two-sum [problems/… …]   # default: all
@@ -238,6 +239,8 @@ def generate(invocation: dict, language: str) -> str:
         return "-- TODO: write a single SELECT query\nSELECT 'TODO';\n"
     if invocation.get("type", "function") == "design":
         return _generate_design(invocation, language)
+    if invocation.get("type", "function") == "interactive":
+        return _generate_interactive(invocation, language)
     parameters = _parameters(invocation)
     return_type = invocation.get("return_type") or {"kind": "boolean"}
     structs = _uses_structs(invocation)
@@ -377,11 +380,43 @@ def _generate_design(invocation: dict, language: str) -> str:
     return "".join(chunks)
 
 
+def _generate_interactive(invocation: dict, language: str) -> str:
+    """Interactive problems: the solution method receives an oracle object
+    (the judge constructs it from the case data). python3 + java only.
+    Schema: {"type": "interactive", "class_name", "method", "oracle":
+    "GridMaster", "oracle_methods": [{name, parameters, return_type?}],
+    "return_type", "query_limit"?}."""
+    if language not in ("python3", "java"):
+        raise ValueError(f"Interactive problems support python3 and java, not {language}")
+    if invocation.get("oracle") != "GridMaster":
+        raise ValueError(f"Unsupported interactive oracle: {invocation.get('oracle')}")
+    class_name = invocation["class_name"]
+    method = invocation["method"]
+    returns = invocation.get("return_type") or {"kind": "integer", "bits": 32}
+
+    if language == "python3":
+        blocks = ["from typing import List, Optional\n\n\n"]
+        blocks.append(f"class {class_name}:\n")
+        blocks.append(f"    def {method}(self, master: GridMaster) -> {python_type(returns)}:\n")
+        blocks.append('        raise NotImplementedError("TODO")\n')
+        return "".join(blocks)
+
+    # java — the oracle API is documented in the statement; the starter's
+    # signature references the GridMaster type from the judge classpath.
+    chunks = [f"class {class_name} {{\n"]
+    chunks.append(f"    public {java_type(returns)} {method}(GridMaster master) {{\n")
+    chunks.append('        throw new UnsupportedOperationException("TODO");\n')
+    chunks.append("    }\n}\n")
+    return "".join(chunks)
+
+
 def starter_files(invocation: dict) -> dict[str, str]:
     invocation_type = invocation.get("type", "function")
     if invocation_type == "sql":
         return {"sql": generate(invocation, "sql")}
     if invocation_type == "design":
+        return {language: generate(invocation, language) for language in ("python3", "java")}
+    if invocation_type == "interactive":
         return {language: generate(invocation, language) for language in ("python3", "java")}
     return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
 

@@ -22,6 +22,9 @@ passed as --api, default http://localhost:8080):
 Usage:
   check.py --problems=all [--skip-runtime] [--api http://localhost:8080]
   check.py --problems=0001_two-sum,0002_add-two-numbers
+  check.py --runtime-only --problems=…            # CI runtime job (static
+                                                  # tier runs separately in
+                                                  # the formatter container)
 """
 from __future__ import annotations
 
@@ -231,11 +234,23 @@ def static_tier() -> tuple[list[Failure], dict[str, dict]]:
     return failures, catalog
 
 
-def submit(api: str, slug: str, language: str, code: str) -> dict:
+def _open_session(api: str) -> str:
+    """The API requires a guest-session cookie for every judging endpoint;
+    CI creates one ephemeral session for the whole run."""
+    request = urllib.request.Request(f"{api}/api/session", data=b"", method="POST")
+    with urllib.request.urlopen(request, timeout=30) as response:
+        cookie = response.headers.get("Set-Cookie", "")
+    match = re.search(r"openoj_session=([0-9a-f]+)", cookie)
+    if not match:
+        raise RuntimeError("session endpoint returned no session cookie")
+    return match.group(1)
+
+
+def submit(api: str, slug: str, language: str, code: str, session: str) -> dict:
     request = urllib.request.Request(
         f"{api}/api/submit",
         data=json.dumps({"slug": slug, "language": language, "code": code}).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
+        headers={"Content-Type": "application/json", "Cookie": f"openoj_session={session}"},
         method="POST",
     )
     with urllib.request.urlopen(request, timeout=120) as response:
@@ -245,6 +260,10 @@ def submit(api: str, slug: str, language: str, code: str) -> dict:
 def runtime_tier(selected: list[str], catalog: dict[str, dict], api: str) -> list[Failure]:
     failures: list[Failure] = []
     language_for = {extension: key for key, extension in gen_starters.EXTENSIONS.items()}
+    try:
+        session = _open_session(api)
+    except Exception as error:  # noqa: BLE001
+        return [Failure("session", f"could not open a judge session: {error}")]
     for position, key in enumerate(selected, start=1):
         bundle = PROBLEMS / key
         problem = catalog.get(key)
@@ -258,7 +277,7 @@ def runtime_tier(selected: list[str], catalog: dict[str, dict], api: str) -> lis
             except OSError:
                 continue  # reported by the static tier
             try:
-                result = submit(api, problem["slug"], language, code)
+                result = submit(api, problem["slug"], language, code, session)
             except urllib.error.URLError as error:
                 failures.append(Failure(key, f"{language}: judge unreachable: {error}"))
                 return failures
@@ -285,14 +304,33 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--problems", default="all", help="'all' or comma-separated bundle keys")
     parser.add_argument("--skip-runtime", action="store_true", help="run the static tier only")
+    parser.add_argument(
+        "--runtime-only",
+        action="store_true",
+        help="skip the static tier (CI runs it separately in the formatter container)",
+    )
     parser.add_argument("--api", default="http://localhost:8080", help="OpenOJ base URL for the runtime tier")
     arguments = parser.parse_args()
 
-    print(f"static tier: checking {len(list(PROBLEMS.iterdir()))} bundles")
-    failures, catalog = static_tier()
-    for failure in failures:
-        print(f"  FAIL {failure}")
-    print(f"static tier: {len(failures)} failures")
+    failures: list[Failure] = []
+    if arguments.runtime_only and arguments.skip_runtime:
+        raise SystemExit("--runtime-only and --skip-runtime together check nothing")
+    if arguments.runtime_only:
+        catalog = {}
+        for bundle in sorted(PROBLEMS.iterdir()):
+            if not bundle.is_dir():
+                continue
+            try:
+                catalog[bundle.name] = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, OSError):
+                print(f"  FAIL {bundle.name}: unreadable problem.json (the static tier reports details)")
+                failures.append(Failure(bundle.name, "unreadable problem.json"))
+    else:
+        print(f"static tier: checking {len(list(PROBLEMS.iterdir()))} bundles")
+        failures, catalog = static_tier()
+        for failure in failures:
+            print(f"  FAIL {failure}")
+        print(f"static tier: {len(failures)} failures")
 
     if not arguments.skip_runtime:
         if arguments.problems == "all":
@@ -304,7 +342,10 @@ def main() -> None:
                 print(f"unknown problem keys: {', '.join(unknown)}")
                 raise SystemExit(2)
         print(f"runtime tier: judging {len(selected)} selected problems against {arguments.api}")
-        failures += runtime_tier(selected, catalog, arguments.api)
+        runtime_failures = runtime_tier(selected, catalog, arguments.api)
+        for failure in runtime_failures:
+            print(f"  FAIL {failure}")
+        failures += runtime_failures
 
     if failures:
         print(f"CHECK FAILED: {len(failures)} failures")

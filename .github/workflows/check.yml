@@ -75,7 +75,7 @@ jobs:
       - name: Judge changed problems' solutions
         if: steps.changed.outputs.skip != 'true'
         run: |
-          python3 problems-repo/scripts/check.py --problems="${{ steps.changed.outputs.keys }}"
+          python3 problems-repo/scripts/check.py --runtime-only --problems="${{ steps.changed.outputs.keys }}"
       - name: Logs on failure
         if: failure() && steps.changed.outputs.skip != 'true'
         run: cd openoj && docker compose logs api runner | tail -80
