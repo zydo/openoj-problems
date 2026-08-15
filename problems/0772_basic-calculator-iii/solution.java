@@ -1,7 +1,24 @@
 class Solution {
 
     public int calculate(String s) {
-        return (int) expr(s, new int[] { 0 });
+        // Recursive descent over a dedicated thread with a large stack: deep
+        // nesting is within the problem's constraints, but the judge's
+        // default thread stack is not.
+        final int[] result = new int[1];
+        Thread worker = new Thread(
+            null,
+            () -> result[0] = (int) expr(s, new int[] { 0 }),
+            "calculate",
+            1 << 26
+        );
+        worker.start();
+        try {
+            worker.join();
+        } catch (InterruptedException error) {
+            Thread.currentThread().interrupt();
+            throw new RuntimeException(error);
+        }
+        return result[0];
     }
 
     private long expr(String s, int[] i) {
