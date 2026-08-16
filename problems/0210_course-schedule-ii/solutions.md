@@ -6,6 +6,8 @@ A valid course order is exactly a topological ordering of the directed graph whe
 
 The code builds an adjacency list and an `indegree` array (the number of unfinished prerequisites per course), then seeds a queue with all courses at indegree zero. Each dequeued course is appended to `order`, and its edges are "consumed" by decrementing the indegrees of the courses that depend on it; any course that falls to zero becomes available and joins the queue. This layer-by-layer peeling guarantees every course is emitted only after all of its prerequisites, and the flexibility in which zero-indegree course to take next is why multiple correct orders exist.
 
+![The prerequisite graph of example 2 (0 -> 1, 0 -> 2, 1 -> 3, 2 -> 3) with each node's indegree, and the four peeling steps that drain the queue into the order [0, 1, 2, 3].](figures/solution-kahn-peeling.svg)
+
 If the graph contains a cycle, the courses on it keep positive indegrees forever and never enter the queue, leaving `order` shorter than `numCourses`; in that case the function returns an empty list, as the problem requires, rather than a partial order. When the loop drains every course, the collected order is a complete valid answer.
 
 **Complexity:** `O(V + E)` time, `O(V + E)` space.

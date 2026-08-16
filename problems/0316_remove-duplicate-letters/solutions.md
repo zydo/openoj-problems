@@ -10,4 +10,6 @@ The walk is a single pass: decrement the count, skip if already placed, otherwis
 
 Edge cases: a string whose letters each appear once is returned unchanged (nothing ever pops, since no future occurrence exists); a string like `"cbacdcbc"` demonstrates both mechanisms — the initial `cb` is popped when `a` arrives, and the later `c` and `b` are skipped because they are already placed. The auxiliary structures are bounded by the 26-letter alphabet.
 
+![Stack snapshots for s = "cbacdcbc", one column per character: b pops c, a pops b, both later c's are skipped as already placed, b is pushed, and the final stack reads acdb.](figures/solution-monotonic-stack.svg)
+
 **Complexity:** `O(n)` time, `O(1)` space.

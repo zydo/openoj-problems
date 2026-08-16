@@ -18,6 +18,8 @@ whole right subtree — exactly the order in which the recursion asks for
 root values. The recursion carries only `(low, high)` bounds on `inorder`
 and picks the root from the cursor.
 
+![Preorder's first value 3 is located in inorder at position 1, splitting [9] to the left and [15, 20, 7] to the right; the cursor then feeds 9 before 20, 15 and 7.](figures/solution-preorder-inorder-split.svg)
+
 The base case `low >= high` marks an empty inorder range, which is how
 missing children come out as `None` without any special casing. Values
 are unique per the constraints, so each hash-map lookup identifies exactly

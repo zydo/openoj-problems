@@ -18,6 +18,8 @@ when it is read. The bottom-up direction also sidesteps the ragged edge
 cells that a top-down sweep would have to special-case, where a cell has
 one parent instead of two.
 
+![The dp triangle fills bottom-up: row 3 seeds 4, 1, 8, 3; row 2 becomes 7, 6, 10; row 1 becomes 9, 10; the apex 11 sits on the path 2 + 3 + 5 + 1.](figures/solution-triangle-dp.svg)
+
 A one-row triangle never enters the loop and returns its only value
 directly, and negative entries cause no trouble — the recurrence takes
 the minimum regardless of sign.

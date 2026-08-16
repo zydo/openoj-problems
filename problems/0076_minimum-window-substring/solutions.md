@@ -25,6 +25,8 @@ continue for the next completion. `left` and `right` each only move forward,
 so all growing and shrinking across the whole run telescopes to linear work
 on top of the `O(n)` tally of `t`.
 
+![Three valid windows in "ADOBECODEBANC": ADOBEC (length 6), CODEBA (length 6) and the best BANC (length 4).](figures/solution-window-shrink.svg)
+
 Degenerate inputs are handled up front: an empty `t`, or a `t` longer than
 `s`, returns `""` immediately, and if no window ever reaches `missing == 0`
 the sentinel `best_len` stays infinite and `""` is returned at the end. The

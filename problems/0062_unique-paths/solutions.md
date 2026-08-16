@@ -19,6 +19,8 @@ the robot could have come from. Each left-to-right pass folds one more row
 of the classic two-dimensional table into the same `n` slots, and after
 `m - 1` passes `row[-1]` is the count for the bottom-right corner.
 
+![The 3x7 path-count grid: the top row and left column are 1, each interior cell such as 10 = 6 + 4 sums its left and upper neighbours, and the corner holds 28.](figures/solution-dp-grid.svg)
+
 Degenerate grids fall out of the loop bounds rather than needing special
 cases: when `m == 1` the outer loop never runs, and when `n == 1` the inner
 range is empty, so in either case the row stays all ones and the returned

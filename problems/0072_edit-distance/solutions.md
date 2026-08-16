@@ -20,6 +20,8 @@ inherits `prev[j]`; insert appends `word2[j - 1]` to `word1` and inherits
 Each choice covers a distinct final move, so the minimum over the three is
 exact.
 
+![The Wagner-Fischer table for horse -> ros fills to dp[5][3] = 3, with the free diagonal alignments o/o and r/r shaded.](figures/solution-dp-table.svg)
+
 Because row `i` only ever reads row `i - 1` and its own left neighbor, two
 one-dimensional rows are enough: `curr` is built left to right and then
 swapped in as `prev`. Empty inputs need no special-casing — if `word1` is

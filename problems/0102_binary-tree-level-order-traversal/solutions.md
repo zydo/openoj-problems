@@ -15,6 +15,8 @@ then right children. Skipping `None` children on enqueue means no sentinel
 markers are needed; the level's list is complete exactly when the round's
 pop count is exhausted.
 
+![The queue holds [3], then [9, 20], then [15, 7] — one full level per round — for the tree 3 / 9 20 / 15 7.](figures/solution-bfs-queue.svg)
+
 An empty tree is handled up front by returning `[]` before the queue is
 created; a single-node tree produces the single-level `[[root.val]]`.
 

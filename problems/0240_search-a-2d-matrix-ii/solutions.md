@@ -6,6 +6,8 @@ Rows sorted left to right and columns sorted top to bottom do not make the matri
 
 Starting at the top-right, if the current value exceeds the target, everything below it in its column is even larger, so the whole column is discarded by moving left; if the current value is smaller than the target, everything to its left in its row is even smaller, so the whole row is discarded by moving down. Each step therefore removes one row or one column from the still-plausible region, and the walk terminates either at the target or by falling off the left or bottom edge, proving absence.
 
+![The example 5x5 matrix searching for 5: from 15 the walk moves left past 11 and 7, discarding those columns (shaded), then 4 < 5 discards the row and the walk steps down onto 5.](figures/solution-staircase-walk.svg)
+
 The path is a monotone staircase of at most `m + n - 1` steps — compare with binary-searching all `m` rows at `O(m log n)`, which is strictly worse whenever the matrix is roughly square. An empty matrix or empty rows are guarded up front; the search itself needs only two index variables.
 
 **Complexity:** `O(m + n)` time, `O(1)` space.

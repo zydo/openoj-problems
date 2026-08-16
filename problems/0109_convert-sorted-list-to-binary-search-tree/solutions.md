@@ -17,6 +17,8 @@ third pointer `prev` trails `slow` so `prev.next = None` can cut the list
 in two; the recursion then treats `node` and `slow.next` as independent
 list heads.
 
+![Slow/fast over -10 -> -3 -> 0 -> 5 -> 9 stops at 0 with prev cutting after -3; recursion yields root 0 with left -3 (child -10) and right 9 (child 5).](figures/solution-list-to-bst.svg)
+
 Empty segments (`node is None`) return `None`, and a one-node segment is
 turned directly into a leaf before the pointer walk — which also matters
 for safety, since with a single node `prev` would still be `None` when

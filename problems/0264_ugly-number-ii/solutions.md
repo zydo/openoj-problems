@@ -6,6 +6,15 @@ Every ugly number except 1 is a smaller ugly number multiplied by 2, 3, or 5. Th
 
 The dp array is filled left to right, with three cursors `i2`, `i3`, `i5` into it. At each step the candidates are `ugly[i2]*2`, `ugly[i3]*3`, `ugly[i5]*5` — the smallest not-yet-emitted element of each virtual list — and the next ugly number is the minimum of the three. Every cursor whose candidate equals the minimum is then advanced, not just one of them: a value like 6 is reachable as both 2·3 and 3·2, and advancing all matching cursors keeps it from appearing twice. The cursors never lag because a candidate can only be consumed once it has become the minimum.
 
+Generating the first entries for the statement's Example 1 (`n = 10`):
+
+1. `ugly = [1]`, all three cursors at index 0; the candidates are 2, 3, and 5.
+2. 2 wins: `ugly[1] = 2`, and only `i2` advances.
+3. Candidates 4, 3, 5: 3 wins (`ugly[2] = 3`), then 4 wins on the next round (`ugly[3] = 4`).
+4. Candidates 6, 6, 5: 5 wins (`ugly[4] = 5`) and `i5` advances.
+5. Candidates 6, 6, 10 again: both `i2` and `i3` advance, emitting 6 exactly once — the dual advance that suppresses duplicates.
+6. The scan continues through 8 = 2·4, 9 = 3·3, and 10 = 2·5 = 5·2 (another dual advance), and the 10th ugly number is 12 = 2·6 = 3·4.
+
 Starting from `ugly[0] = 1`, each of the `n` slots costs three multiplications, three comparisons, and a few increments, and the answer is the last slot filled (`ugly[n - 1]`, since the array is written with a leading 1). The table of `n + 1` values is the entire footprint; n ≤ 1690 keeps it tiny.
 
 **Complexity:** `O(n)` time, `O(n)` space.

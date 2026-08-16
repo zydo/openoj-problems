@@ -6,6 +6,8 @@ The key idea is to reduce the global question to a local one: for each index, wh
 
 The code seeds `best` and `current` with `nums[0]` (not `0`), which is what makes all-negative inputs come out right: the answer for `[-3, -1, -2]` is `-1`, an empty-prefix sum of `0` would wrongly win. For each subsequent value, if the running sum `current` has gone negative it can only drag down whatever follows, so the code drops it and restarts at `value`; otherwise it extends to `current + value`. Either way `best` is raised whenever the new running sum beats it.
 
+![The running best-sum-ending-here for [-2,1,-3,4,-1,2,1,-5,4] restarts at 1 and at 4, and peaks at 6 over the subarray [4,-1,2,1].](figures/solution-kadane-walk.svg)
+
 Restarting on a negative prefix is the greed that makes this correct: a negative `current` contributes less to the future than an empty prefix does, so no optimal subarray extending past this point can include it. Both variables are plain scalars updated in one pass, with no dependence on the input size beyond the iteration itself.
 
 Since every extension-or-restart decision is made from the running best and the current element alone, a single scan suffices — no sliding window, prefix array, or divide-and-conquer recurrence is needed.
