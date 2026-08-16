@@ -13,12 +13,16 @@ Output: 6
 Explanation: The elevation map traps 6 units of rain water.
 ```
 
+![The elevation map of example 1, with the 6 units of trapped water shaded blue.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: height = [4,2,0,3,2,5]
 Output: 9
 ```
+
+![The elevation map of example 2, with the 9 units of trapped water shaded blue.](figures/example-2.svg)
 
 ### Constraints
 

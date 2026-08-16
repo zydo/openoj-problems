@@ -21,12 +21,16 @@ Output: 49
 Explanation: The vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
 ```
 
+![The lines at indices 1 and 8 form the largest container, holding 7 x 7 = 49 units of water.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: height = [1,1]
 Output: 1
 ```
+
+![Two lines of height 1; the container between them holds 1 x 1 = 1.](figures/example-2.svg)
 
 ### Constraints
 
