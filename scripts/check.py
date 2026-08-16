@@ -218,6 +218,16 @@ def check_bundle(bundle: Path) -> list[Failure]:
     allowed = {"problem.json", "cases.json", "statement.md"} | {
         f"starter.{extension}" for extension in starter_extensions
     } | set(solution_names)
+    # solutions.md: optional per-variant Solutions-tab guide (## sections)
+    solutions_guide = bundle / "solutions.md"
+    if solutions_guide.is_file():
+        guide_headings = _headings(solutions_guide.read_text(encoding="utf-8"))
+        if any(level != 2 for level, _, _ in guide_headings):
+            fail("solutions.md sections must all be level-two (## <variant>)")
+        titles = [title.lower() for _, title, _ in guide_headings]
+        if len(titles) != len(set(titles)):
+            fail("solutions.md contains a duplicate variant section")
+        allowed.add("solutions.md")
     # statement figures: a flat figures/ directory of <name>.svg files
     figures_dir = bundle / "figures"
     figures_valid = True
