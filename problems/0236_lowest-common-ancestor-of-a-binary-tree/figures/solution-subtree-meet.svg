@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <rect width="560" height="300" fill="#ffffff"/>
   <!-- tree [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1 -->
-  <rect x="86" y="88" width="178" height="182" rx="10" fill="#4169E1" fill-opacity="0.09"/>
+  <rect x="86" y="88" width="216" height="182" rx="10" fill="#4169E1" fill-opacity="0.09"/>
   <rect x="306" y="88" width="172" height="112" rx="10" fill="#b57f30" fill-opacity="0.12"/>
   <g stroke="#42525e" stroke-width="1.6">
     <line x1="266" y1="55" x2="184" y2="94"/>

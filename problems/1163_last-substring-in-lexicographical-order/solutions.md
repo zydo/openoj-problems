@@ -8,4 +8,11 @@ Each step compares `s[i + k]` with `s[j + k]`, one character beyond the common p
 
 Starting with `i = 0, j = 1, k = 0` and stopping once `j + k` exits the string, the surviving `i` indexes the lexicographically largest suffix, returned as `s[i:]` — that output slice is the only `O(n)` storage; the search itself uses three integers. Single-character strings exit immediately and return themselves; repeated blocks like `"abab"` are exactly what the shared-prefix skipping is for.
 
+Example 1 (`s = "abab"`) moves the two candidate pointers:
+
+1. `i = 0, j = 1`: 'a' < 'b', so `s[0:]` is dominated and `i` jumps to `max(0+0+1, 1) = 1`, with `j = 2`.
+2. 'b' > 'a': the challenger loses and `j` jumps to `3`.
+3. 'b' = 'b': the shared prefix grows to `k = 1`, and then `j + k` exits the string.
+4. The surviving candidate `s[1:] = "bab"` is the answer.
+
 **Complexity:** `O(n)` time, `O(1)` space.

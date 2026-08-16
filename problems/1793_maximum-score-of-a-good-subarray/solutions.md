@@ -8,4 +8,6 @@ The algorithm expands one cell at a time, always taking the larger of the two av
 
 Concretely, the code maintains `cur_min` over the current interval, updates it with each newly absorbed candidate element, and records the best `cur_min * (hi - lo + 1)`; the loop runs until both pointers reach the array ends, guaranteeing every width from 1 to `n` was visited. The initial single-cell interval contributes `nums[k] * 1`, which also handles `n == 1` where the loop body never executes.
 
+![The example array 1, 4, 3, 7, 4, 5 with k = 3 shown as five nested brackets growing from index 3: the interval absorbs 4, then 5 on the right, then 3 and 4 on the left, and the running score climbs 7, 8, 12, 12 to the best 15 at width 5.](figures/solution-expand-from-k.svg)
+
 **Complexity:** `O(n)` time, `O(1)` space.

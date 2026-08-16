@@ -6,6 +6,8 @@ Both lists are sorted and internally disjoint, which invites a merge-style sweep
 
 After recording (or noting the absence of) the overlap, the pointer of the interval that ends earlier advances. That interval can never intersect anything later in the other list — every subsequent interval there starts strictly after its end — so it is finished forever and dropping it is safe. When the two ends are equal, the code advances `j`; either choice would be fine, since the retired interval's end cannot overlap anything starting strictly later.
 
+![The two example lists as lanes, with the six computed overlaps aligned below them.](figures/solution-interval-lanes.svg)
+
 The loop stops as soon as either list is exhausted, so an empty input list immediately yields an empty output, and the sweep performs at most `m + n` pointer advances in total.
 
 **Complexity:** `O(m + n)` time, `O(1)` auxiliary space beyond the output list.

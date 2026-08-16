@@ -8,4 +8,6 @@ Eliminating `p` from this pair of recurrences collapses everything into a single
 
 The base cases `n = 1` and `n = 2` are returned directly (1 way and 2 ways respectively), and the loop runs only from 3 upward, so the seed values are never misapplied. Linearity of the recurrence means one pass of constant work per column suffices, with no need to materialize the intermediate stick-out table.
 
+![The five tilings of the 2 x 3 board: three domino-only arrangements and the two mirrored tromino pairs.](figures/solution-tilings.svg)
+
 **Complexity:** `O(n)` time, `O(1)` space (three rolling values).

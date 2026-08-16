@@ -8,4 +8,11 @@ The loop body captures this directly: return the stop count as soon as `fuel >= 
 
 The `<=` comparisons handle the edge cases: arriving at a station with exactly zero fuel still allows refueling there, and reaching the target with zero fuel counts as arrival. With no stations at all, the heap is empty on the first shortfall check, so the answer is 0 when `startFuel >= target` and -1 otherwise.
 
+Example 3 drives the credit system through:
+
+1. Fuel 10 falls short of the target 100 and reaches exactly station (10, 60), which is pushed onto the heap.
+2. The largest passed fuel — 60 — is retroactively taken: stop 1, fuel 70.
+3. Range 70 sweeps past (20,30), (30,30), (60,40), pushing all three; the largest, 40, is taken next: stop 2, fuel 110.
+4. `110 >= 100`, so two stops suffice; the two 30-liter stations were passed but never needed.
+
 **Complexity:** `O(n log n)` time, `O(n)` space.

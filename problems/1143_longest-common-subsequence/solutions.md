@@ -6,6 +6,8 @@ Let `dp[i][j]` be the LCS length of the prefixes `text1[:i]` and `text2[:j]`. Wh
 
 With `m = len(text1)` and `n = len(text2)`, the table is filled row by row, and each entry reads only the row above (`prev`) and entries to its left in the current row (`curr`), so a full `m x n` table is unnecessary: keep the previous row and build the current one, then swap. The answer is the last entry of the final row, `prev[n]`.
 
+![The table for "abcde" against "ace"; matches extend the diagonal to the corner value 3.](figures/solution-lcs-table.svg)
+
 This is the standard LCS recurrence made 1-pass over each cell: the match case consumes `prev[j-1]` before it is overwritten because `curr` is a fresh array, and the mismatch case mixes one value from `prev` with one already-computed `curr` value. Strings sharing no character stay at 0 throughout, and identical strings accumulate the full length along the diagonal.
 
 **Complexity:** `O(m * n)` time, `O(n)` space.

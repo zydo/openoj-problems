@@ -6,6 +6,8 @@ Only the remainder of a path's sum modulo `k` matters, never the actual sum, so 
 
 The implementation processes cells row by row, keeping one vector per column in a rolling array `dp[j]`; when cell `(i, j)` is computed, `dp[j]` still holds the row above and `dp[j-1]` already holds the current row's left neighbor, exactly the two predecessors. The top-left cell seeds a fresh vector with a single 1 in position `grid[0][0] % k`; first-row and first-column cells simply skip the missing predecessor. The `None` guards cover degenerate shapes and keep the row swap safe.
 
+![The example grid with each cell's value and its remainder-count vector for k = 3: the corner vector [2 1 3] holds 2 remainder-0 paths, traced by the solid 5+2+4+5+2 = 18 and dashed 5+3+0+5+2 = 15 routes.](figures/solution-remainder-vectors.svg)
+
 Work per cell is `O(k)` for the two shifted vector additions, giving `O(m*n*k)` total, which fits comfortably because `m*n <= 5*10^4` and `k <= 50`. Space is the rolling array of `n` vectors of length `k`, i.e. `O(n*k)`; values are reduced modulo `10^9 + 7` at every addition to keep arithmetic on machine integers.
 
 **Complexity:** `O(m*n*k)` time, `O(n*k)` space.

@@ -8,4 +8,12 @@ The code keeps two rolling values: `take`, the best total when the previous dist
 
 Counting occurrences costs one pass over the input; iterating only the sorted distinct values avoids allocating a bucket for every value up to 10^4 when far fewer are present. With `V` the number of distinct values, the sort of those keys dominates the arithmetic.
 
+Example 2 (`nums = [2,2,3,3,3,4]`) rolls the two states over the sorted distinct values:
+
+1. Counting gives 2 (x2), 3 (x3), 4 (x1).
+2. Value 2 has no adjacent predecessor: `take = 2*2 = 4`, `skip = 0`.
+3. Value 3 is adjacent, so the carry-in is `skip = 0`: `take = 0 + 3*3 = 9`, `skip = max(4, 0) = 4`.
+4. Value 4 is adjacent again, carry-in `skip = 4`: `take = 4 + 4*1 = 8`, `skip = max(9, 4) = 9`.
+5. The answer `max(8, 9) = 9` deletes every 3 rather than touching the 4s.
+
 **Complexity:** `O(n + V log V)` time, `O(V)` space.

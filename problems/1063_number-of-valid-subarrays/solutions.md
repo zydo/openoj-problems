@@ -8,4 +8,11 @@ The stack holds indices whose next-smaller element has not yet been seen, and it
 
 Each index is pushed once and popped once, so the whole computation is linear. Edge cases: a strictly decreasing array pops everything immediately and yields exactly n; an all-equal array keeps everything on the stack until the sentinel, giving n(n+1)/2.
 
+Example 1 (`nums = [1,4,2,5,3]`) pops as it scans:
+
+1. Index 0 and 1 push; index 2 (value 2) pops 1 and banks `2 - 1 = 1` subarray — the `[4]` starting there.
+2. Index 3 (5) pushes; index 4 (3) pops 3, banking `4 - 3 = 1` (the `[5]`), but 2 stays because equal values do not pop.
+3. The sentinel -1 at index 5 flushes the stack: 4 banks `5 - 4 = 1`, 2 banks `5 - 2 = 3`, and 1 banks `5 - 0 = 5`.
+4. The total is `1 + 1 + 1 + 3 + 5 = 11` valid subarrays.
+
 **Complexity:** `O(n)` time, `O(n)` space.

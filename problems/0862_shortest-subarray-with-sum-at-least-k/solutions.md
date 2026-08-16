@@ -8,4 +8,12 @@ The deque holds start indices whose prefix sums strictly increase from front to 
 
 Finally `i` itself joins as a candidate start. Each index enters and leaves the deque at most once, so despite the nested `while` loops the whole algorithm is linear. If no qualifying pair was ever found, `best` stays above `n` and the answer is `-1`; the leading sentinel `prefix[0] = 0` lets subarrays that start at index 0 compete.
 
+Example 3 (`nums = [2,-1,2]`, `k = 3`) has prefix sums `[0, 2, 1, 3]`:
+
+1. `i = 0`: the deque is empty; index 0 joins as the first candidate start.
+2. `i = 1` (prefix 2): the front does not yet satisfy `prefix[front] <= 2 - 3`, and index 1 joins behind it.
+3. `i = 2` (prefix 1): the tail's prefix 2 dominates (it is larger and later), so 1 is popped and 2 takes its place.
+4. `i = 3` (prefix 3): `prefix[0] = 0 <= 3 - 3` finally holds, so the front is consumed as a start and offers length `3 - 0 = 3`.
+5. Nothing shorter qualifies, so the answer is 3.
+
 **Complexity:** `O(n)` time, `O(n)` space.

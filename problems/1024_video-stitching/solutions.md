@@ -6,6 +6,8 @@ After sorting the clips by start, cover `[0, time]` the way a jump game would: m
 
 The mechanics use a single cursor `i` over the sorted list that never resets: the inner `while` advances it past every clip with `start <= covered`, updating `farthest` along the way. When the scan stops, either `farthest > covered`, in which case one more clip is counted and `covered` jumps to `farthest`, or `farthest == covered`, meaning no clip reaches past the current coverage — a gap that no later clip can bridge, so the answer is `-1`. Because `i` only moves forward, every clip is examined once across all iterations of the outer loop.
 
+![The sorted clips on a time axis; the greedy takes [0,2], then [1,9], then [8,10].](figures/solution-clip-jumps.svg)
+
 Edge cases are covered by the same test: if no clip starts at 0, the very first scan leaves `farthest == covered == 0` and returns `-1`; the final clip may overshoot `time`, which is fine since the loop exits as soon as `covered >= time`.
 
 **Complexity:** `O(n log n)` time (the sort dominates the linear scan), `O(n)` space for the sorted copy.

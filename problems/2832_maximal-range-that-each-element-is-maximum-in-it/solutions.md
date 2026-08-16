@@ -6,6 +6,8 @@ The longest subarray in which `nums[i]` is the maximum is exactly the window tha
 
 Both boundary arrays come from a monotonic stack of indices whose values are kept in decreasing order. Scanning left to right, before pushing index `i` every index with a smaller value is popped — those indices have just found their nearest greater element to the right, namely `i`. Whatever remains on the stack is the nearest greater element to the left of `i`. A symmetric right-to-left pass fills the other array. Each index is pushed and popped at most once per pass.
 
+![Each element of [1,5,4,3,6] with the bracket spanning its nearest greater boundaries, giving ans = [1,4,2,1,5].](figures/solution-monotonic-stack-spans.svg)
+
 Because all elements are distinct, there are no equal-value ties to break, and the strict/non-strict distinction never matters; every window boundary is unambiguous. A monotone array like `[1, 2, 3, 4, 5]` simply leaves the stack empty in the left pass, so each range extends to the edge, giving `ans[i] = i + 1`.
 
 **Complexity:** `O(n)` time, `O(n)` space.

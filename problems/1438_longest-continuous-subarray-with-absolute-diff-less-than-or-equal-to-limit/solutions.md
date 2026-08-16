@@ -10,4 +10,11 @@ The right pointer advances one position at a time. While the front maximum minus
 
 Duplicate values are handled by popping on non-strict comparisons, which still leaves one copy of the extreme in the deque, and a single-element window is always valid since its spread is zero, so the loop can never get stuck.
 
+Example 1 (`nums = [8,2,4,7]`, `limit = 4`) tracks both deques:
+
+1. `right = 0` (8): the window is `[8]` with both deques holding index 0.
+2. `right = 1` (2): the spread `8 - 2 = 6` exceeds the limit, so `left` advances past the 8; the window shrinks to `[2]`.
+3. `right = 2` (4): the window `[2, 4]` has spread 2 and length 2.
+4. `right = 3` (7): the spread `7 - 2 = 5` evicts the 2, leaving `[4, 7]` with spread 3 — the best length stays 2.
+
 **Complexity:** `O(n)` time, `O(n)` space.

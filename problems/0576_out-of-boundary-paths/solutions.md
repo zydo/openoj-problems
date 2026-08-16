@@ -10,4 +10,11 @@ The pass structure is what encodes the move budget without any time-indexed dime
 
 Each of the `maxMove` passes touches every cell once and does constant work (four directions) per cell.
 
+Layer by layer, Example 1 (`m = n = 2`, `maxMove = 2`) fills:
+
+1. Both tables start at zero; the first pass counts single-step exits.
+2. Every cell of a 2 x 2 grid is a corner with exactly two out-of-grid neighbors, so pass 1 sets every cell to `1 + 1 = 2`.
+3. Pass 2 recomputes cell `(0,0)` as `1 + 1` for its two exits plus the in-grid neighbors' pass-1 values `2 + 2`, giving 6.
+4. All four cells are symmetric, so the final layer is all 6s and the start cell's value is the answer 6.
+
 **Complexity:** `O(maxMove · m · n)` time, `O(m · n)` space.

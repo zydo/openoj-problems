@@ -10,4 +10,11 @@ This forward-style update is correct for team size because the DP values only ev
 
 Storing full teams in the table (rather than parent pointers) makes each candidate construction cost up to the team length, which is bounded by the number of skills, since an optimal team never needs more than one person per still-missing skill. Writing `P` for the number of people and `S <= 16` for the number of required skills bounds the work.
 
+Example 1 (`req_skills = ["java","nodejs","reactjs"]`) builds masks 001, 010, and 110 for the three people:
+
+1. Processing person 0 (mask 001) leaves `dp = {000: [], 001: [0]}`.
+2. Person 1 (010) adds `010: [1]` and `011: [0, 1]`.
+3. Person 2 (110) adds `110: [2]` and `111: [0, 2]`; combining from `011` would give the three-member `[0, 1, 2]`, which loses to the shorter team.
+4. `dp[111] = [0, 2]` — the java specialist plus the nodejs/reactjs generalist.
+
 **Complexity:** `O(P * 2^S * S)` time, `O(2^S * S)` space.

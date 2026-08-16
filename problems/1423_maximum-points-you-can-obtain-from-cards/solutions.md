@@ -8,6 +8,8 @@ The minimum is found with a classic fixed-size sliding window. Compute the sum o
 
 Why the complement view wins over direct DP over `(left taken, right taken)` — an `O(k^2)` table for large `k` — is that the window sum compresses the whole state space to a single dimension: every split `x` corresponds to exactly one window position.
 
+![The seven cards with the kept middle window of n − k = 4 and the k = 3 cards taken off the ends.](figures/solution-card-window.svg)
+
 Edge cases: `k == n` makes the window length 0, every slide degenerates to adding `cardPoints[i] - cardPoints[i] = 0`, and the whole array's total is returned; `k == 0` is excluded by the constraints. Only a few scalars are used beyond the input.
 
 **Complexity:** `O(n)` time, `O(1)` space.

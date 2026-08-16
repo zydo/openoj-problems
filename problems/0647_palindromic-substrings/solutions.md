@@ -8,6 +8,8 @@ The solution loops over each index and tries both center shapes via the pairs `(
 
 This reuse of inner results is what separates the approach from brute force: a single expansion chain of length `L` certifies `L` palindromic substrings with `L` character comparisons, instead of re-verifying each substring from scratch. The worst case is a string of identical characters, where every expansion runs to the string's edge.
 
+![Expansion around the odd center (1, 1) of "aaa" grows "a" into "aaa"; the even center (0, 1) counts "aa".](figures/solution-center-expansion.svg)
+
 Only loop counters and the running total are kept — no tables of previously computed ranges are needed.
 
 **Complexity:** `O(n^2)` time, `O(1)` space.

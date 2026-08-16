@@ -8,4 +8,11 @@ This works because reversing is an involution that composes naturally with nesti
 
 The base fragment pushed before scanning acts as the outermost level, so the fully unwound result is simply `stack[0]` joined at the end. The input guarantees balanced parentheses, so every pop finds a fragment underneath, and the final stack always has exactly one fragment left. No brackets ever enter a fragment, so the output is bracket-free by construction.
 
+Example 2 (`s = "(u(love)i)"`) walks the fragment stack:
+
+1. The outer '(' opens a second fragment and 'u' lands in it: `["", "u"]`.
+2. The inner '(' opens a third; "love" accumulates there and its ')' pops the fragment, reverses it to "evol", and appends it below: `["", "uevol"]`.
+3. 'i' extends the top fragment to "uevoli".
+4. The outer ')' pops and reverses the whole thing, yielding `["iloveu"]`.
+
 **Complexity:** `O(n)` time, `O(n)` space.

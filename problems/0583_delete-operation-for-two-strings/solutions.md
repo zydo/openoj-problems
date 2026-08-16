@@ -8,6 +8,8 @@ The solution fills the classic LCS table: `dp[i][j]` is the LCS length of the fi
 
 A worked example makes the reduction concrete: for `"sea"` and `"eat"`, the LCS is `"ea"` of length 2, giving `3 + 3 - 2 * 2 = 2` deletions. The table is built bottom-up over all `(len(word1) + 1) * (len(word2) + 1)` cells, and the final answer reads the bottom-right corner.
 
+![The LCS table for "sea" against "eat"; the diagonal match on the shared 'a' builds the corner value 2.](figures/solution-lcs-table.svg)
+
 The table depends on both full prefixes, so a full two-dimensional array is used rather than a rolling row; with lengths up to 500 that is at most about 250,000 cells.
 
 **Complexity:** `O(L1 · L2)` time, `O(L1 · L2)` space, where `L1` and `L2` are the two word lengths.

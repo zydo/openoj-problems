@@ -8,4 +8,11 @@ The answer is the smallest `m` with `dp[m][k] >= n`, found by growing `m` one st
 
 This moves-first view is what makes the problem tractable: the state space is moves-by-eggs rather than floors-by-eggs, and because `dp[m][e]` grows like a sum of binomial coefficients, the required `m` is small in practice — two eggs resolve over 10,000 floors in just 141 moves. The worst case `O(k n)` bound is therefore very pessimistic; the true cost is `k` times the answer.
 
+Example 2 (`k = 2`, `n = 6`) grows the resolved-floor table:
+
+1. The rolling array starts at `dp[1] = dp[2] = 0`.
+2. Move 1: `dp[2] = dp[1] + dp[2] + 1 = 1` and `dp[1] = 1` — one drop resolves one floor either way.
+3. Move 2: `dp[2] = 1 + 1 + 1 = 3`, `dp[1] = 2` — a lone egg scans linearly while two eggs already cover three floors.
+4. Move 3: `dp[2] = 2 + 3 + 1 = 6 >= 6`, so three moves determine `f` on six floors.
+
 **Complexity:** `O(k·n)` time, `O(k)` space.

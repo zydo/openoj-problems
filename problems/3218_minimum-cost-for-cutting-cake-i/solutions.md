@@ -6,6 +6,8 @@ A horizontal line must be re-cut once for every vertical strip the cake has alre
 
 The code sorts both cut lists in descending order and merges them like in a two-pointer merge: at each step it takes the head with the larger base cost, charging cut_cost * (opposite_cuts_made + 1) and incrementing that direction's counter. Ties (>=) go to the horizontal head, which is safe because equal base costs are interchangeable in the exchange argument. When one list drains, the remaining cuts of the other direction all pay the now-fixed multiplier of the opposite count.
 
+![The 3x2 cake of example 1: cutting V0 first (x1) splits it into two strips, so each horizontal line is paid twice — 5 + 3*2 + 1*2 = 13.](figures/solution-cut-order.svg)
+
 This replaces the hint's rectangle DP with a sort: the greedy schedule is a global optimum, not an approximation, and it makes the cost independent of m and n beyond the sort itself. The 1×1 target simply means every line is eventually cut, which the two drain loops guarantee.
 
 **Complexity:** `O(m log m + n log n)` time, `O(m + n)` space.

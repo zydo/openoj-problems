@@ -10,4 +10,12 @@ The `if prev < 0: prev = 0` clamp is the subtle part: without it, an all-negativ
 
 Edge cases: `k >= n` never evicts anything and the deque spans all previous positions; the first element has an empty deque and takes the `prev = 0` path, seeding single-element subsequences; and `best` initialized to negative infinity guarantees a non-empty result even when every `dp[i]` is negative.
 
+Example 1 (`nums = [10,2,-10,5,20]`, `k = 2`) rolls the deque:
+
+1. `i = 0`: `dp[0] = 10`, deque `[0]`.
+2. `i = 1`: the front's `dp` is 10, so `dp[1] = 2 + 10 = 12`; 12 evicts 10 from the back, leaving `[1]`.
+3. `i = 2` (-10): `dp[2] = -10 + 12 = 2`, too small to evict anything, so the deque becomes `[1, 2]`.
+4. `i = 3` (5): the window maximum is still 12, so `dp[3] = 17` and evicts both entries.
+5. `i = 4`: `dp[4] = 20 + 17 = 37` — the subsequence `[10, 2, 5, 20]`.
+
 **Complexity:** `O(n)` time, `O(n)` space.

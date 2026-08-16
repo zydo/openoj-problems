@@ -8,4 +8,11 @@ The `max(0, ...)` clamp handles passes that would nominally start before day 1: 
 
 The sweep runs over `range(1, last + 1)` where `last = days[-1]`; nothing after the final travel day matters, and the answer is `dp[last]`. A single travel day, a long gap, and a 30-day pass covering everything are all handled by the same recurrence with no special cases.
 
+Example 1 (`days = [1,4,6,7,8,20]`, `costs = [2,7,15]`) fills `dp` only on travel days:
+
+1. Day 1: `min(dp[0]+2, dp[0]+7, dp[0]+15) = 2` — a 1-day pass.
+2. Day 4: `dp[3] + 2 = 4` beats the 7-day window `dp[0] + 7 = 7`.
+3. Day 6: `dp[5] + 2 = 6`; day 7: a 7-day pass ending here costs `dp[0] + 7 = 7`, beating `dp[6] + 2 = 8`.
+4. Day 8: `dp[1] + 7 = 9` ties `dp[7] + 2 = 9`; day 20: `dp[19] + 2 = 11` — the answer.
+
 **Complexity:** `O(D)` time, `O(D)` space, where `D` is the largest travel day (at most 365).

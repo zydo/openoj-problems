@@ -8,6 +8,8 @@ To keep each transition cheap, a companion table `maxi[i][j]` stores the maximum
 
 The shortest intervals come first for both tables: length-1 entries need no work (`dp[i][i] = 0`, `maxi[i][i] = arr[i]`), and the loops start at length 2. A two-leaf array hits the length-2 sweep with a single split point, giving `max(arr[0], ...)`, i.e. the unavoidable `arr[0] * arr[1]` product, which matches the `n = 2` example. Large leaf values end up multiplied at few nodes and small values at many, which is exactly the trade-off the minimization explores.
 
+![The two trees over leaves [6, 2, 4]: pairing the 2 with the 4 below the 6 costs 32 instead of 36.](figures/solution-leaf-trees.svg)
+
 The constraint `arr.length <= 40` is what makes the cubic sweep practical.
 
 **Complexity:** `O(n^3)` time, `O(n^2)` space.

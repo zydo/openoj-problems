@@ -8,4 +8,11 @@ Each incoming character either extends the run on top of the stack — increment
 
 Checking equality against only the stack top (rather than the top `k` characters) is what makes the scan linear: the count does the bookkeeping that a naive solution would redo `k` times per position. The final string is reconstructed by expanding each surviving `(character, count)` pair in stack order. A string shorter than `k`, or with no run of length `k`, is returned unchanged since no run ever completes.
 
+Example 2 (`s = "deeedbbcccbdaa"`, `k = 3`) cascades through the stack:
+
+1. 'd' then 'eee' completes a run and pops; the following 'd' grows the d-run to 2.
+2. 'bb' arrives, then 'ccc' pops; the next 'b' completes the b-run of 3 and pops.
+3. The next 'd' pushes the d-run to 3 and pops it too, momentarily emptying the stack.
+4. Only "aa" survives, so the final string is "aa".
+
 **Complexity:** `O(n)` time, `O(n)` space.

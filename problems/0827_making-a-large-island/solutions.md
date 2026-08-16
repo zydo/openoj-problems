@@ -8,4 +8,6 @@ The answer is then the best of two cases. Flipping some 0 cell yields `1` plus t
 
 For each water cell the code collects the labels of occupied neighbors into a set before summing. The set is the crucial detail: one island can touch the same 0 cell on two or more sides (for example wrapping around a corner), and without deduplication its size would be added twice and overstate the merged area. Since there are at most four neighbors, the set work per cell is constant, and the whole scan stays linear in the grid.
 
+![A 2 x 2 grid whose two islands are labeled A and B; flipping either water cell merges all three cells.](figures/solution-island-labels.svg)
+
 **Complexity:** `O(n^2)` time, `O(n^2)` space.

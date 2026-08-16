@@ -24,15 +24,15 @@
   </g>
   <!-- givens row by row -->
   <g fill="#1a2026" text-anchor="middle" font-weight="600" font-size="13">
-    <text x="63" y="60">5</text><text x="89" y="60">3</text><text x="141" y="60">7</text>
-    <text x="63" y="86">6</text><text x="115" y="86">1</text><text x="141" y="86">9</text><text x="167" y="86">5</text>
-    <text x="89" y="112">9</text><text x="115" y="112">8</text><text x="219" y="112">6</text>
-    <text x="63" y="138">8</text><text x="141" y="138">6</text><text x="245" y="138">3</text>
-    <text x="63" y="164">4</text><text x="115" y="164">8</text><text x="167" y="164">3</text><text x="245" y="164">1</text>
-    <text x="63" y="190">7</text><text x="141" y="190">2</text><text x="245" y="190">6</text>
+    <text x="63" y="60">5</text><text x="89" y="60">3</text><text x="167" y="60">7</text>
+    <text x="63" y="86">6</text><text x="141" y="86">1</text><text x="167" y="86">9</text><text x="193" y="86">5</text>
+    <text x="89" y="112">9</text><text x="115" y="112">8</text><text x="245" y="112">6</text>
+    <text x="63" y="138">8</text><text x="167" y="138">6</text><text x="271" y="138">3</text>
+    <text x="63" y="164">4</text><text x="141" y="164">8</text><text x="193" y="164">3</text><text x="271" y="164">1</text>
+    <text x="63" y="190">7</text><text x="167" y="190">2</text><text x="271" y="190">6</text>
     <text x="89" y="216">6</text><text x="219" y="216">2</text><text x="245" y="216">8</text>
-    <text x="115" y="242">4</text><text x="141" y="242">1</text><text x="167" y="242">9</text><text x="245" y="242">5</text>
-    <text x="141" y="268">8</text><text x="219" y="268">7</text><text x="245" y="268">9</text>
+    <text x="141" y="242">4</text><text x="167" y="242">1</text><text x="193" y="242">9</text><text x="271" y="242">5</text>
+    <text x="167" y="268">8</text><text x="245" y="268">7</text><text x="271" y="268">9</text>
   </g>
   <!-- target cell (0,1) -->
   <rect x="76" y="42" width="26" height="26" fill="none" stroke="#4169E1" stroke-width="2.6"/>

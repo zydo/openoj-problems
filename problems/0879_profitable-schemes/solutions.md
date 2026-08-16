@@ -8,4 +8,11 @@ The base case `dp[members][0] = 1` for every member budget seeds the empty schem
 
 After all crimes are processed, `dp[n][minProfit]` is the number of subsets that fit the member budget while meeting the profit floor. With at most `G = len(group)` crimes, `n <= 100`, and `minProfit <= 100`, the triple loop stays within a few million operations.
 
+Example 1 (`n = 5`, `minProfit = 3`, `group = [2,2]`, `profit = [2,3]`) fills a tiny table:
+
+1. Base: `dp[m][0] = 1` for every member budget (the empty scheme); all other caps are 0.
+2. Crime (2 members, 2 profit) updates `dp[5]` to `[2, 1, 1, 0]`.
+3. Crime (2, 3) then hits the clamp at cap 3, reading `dp[3][max(0, 3-3)] = dp[3][0] = 2`, so `dp[5][3] = 0 + 2 = 2`.
+4. The two schemes counted are {crime 1} alone (profit 3) and both crimes (profit 5), matching the statement.
+
 **Complexity:** `O(G·n·minProfit)` time, `O(n·minProfit)` space.

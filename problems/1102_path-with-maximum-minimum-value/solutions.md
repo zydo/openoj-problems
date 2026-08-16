@@ -8,4 +8,6 @@ The implementation drives a max-heap of negated cell values starting from the or
 
 Greedy termination is what makes this correct and fast: by always expanding the most valuable frontier cell, the search reaches the goal along a path whose bottleneck is the maximum over all paths, without exploring by distance. Marking visited on push (not on pop) keeps the heap at most one entry per cell. Edge cases: a 1×1 grid returns the single cell's value on the first pop; the start cell's own value correctly caps the answer (e.g. an origin of 0 can never score above 0).
 
+![The example grid with the bottleneck path 5 → 4 → 5 → 6 → 6 found by the max-heap walk.](figures/solution-best-first-grid.svg)
+
 **Complexity:** `O(mn log(mn))` time, `O(mn)` space.

@@ -6,6 +6,8 @@ The solution rests on a classic tree property: run a BFS from any starting node,
 
 A second BFS is then run from any node `u` in that first set. Since `u` is itself a diameter endpoint, the maximum distance recorded in this sweep equals the diameter `D`, and every node at distance exactly `D` from `u` is the opposite endpoint of a diameter path. The union of the two endpoint sets — the farthest nodes from the arbitrary start and the farthest nodes from `u` — is exactly the set of special nodes, which is rendered as the required binary string.
 
+![Example 2's tree annotated with d0 and d4: the farthest nodes from 0 are {4,5}, from 4 are {0,6}, and their union spells "1000111".](figures/solution-double-bfs.svg)
+
 Concretely, the code builds an adjacency list, then uses a list as a FIFO queue for each BFS, recording distances in a `dist` array and tracking the largest distance seen. The helper returns the set of all indices whose distance equals that maximum, which naturally handles every tie. Each node is enqueued exactly once per sweep.
 
 The edge cases fall out of the same mechanism: for `n = 2` both nodes are farthest in both sweeps and both come out special, and star-like or multi-armed trees produce multi-node sets on either sweep, all of which are unioned before producing the answer.

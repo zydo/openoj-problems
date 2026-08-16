@@ -8,4 +8,11 @@ The backward pass then walks `s` in reverse, undoing one operation per character
 
 Both passes are linear in `n = len(s)`. Because `s` starts with a letter and `k` is guaranteed to be within the final length, the reduction always lands on some letter before the scan finishes — the trailing `return s[0]` is a never-reached safety net — and Python's arbitrary-precision integers absorb the huge intermediate lengths without any overflow handling.
 
+Example 1 (`s = "leet2code3"`, `k = 10`) reduces backward:
+
+1. The forward pass sizes the tape: 4 letters, times 2 = 8, plus 4 = 12, times 3 = 36.
+2. Reading backward, the '3' divides the length to 12 and remaps `k = (10 - 1) % 12 + 1 = 10`.
+3. The trailing 'e' and 'd' shrink the length to 11 and then 10 without matching `k`.
+4. At 'o' the length is exactly 10, equal to `k`, so 'o' is the 10th letter of the tape.
+
 **Complexity:** `O(n)` time, `O(1)` space.

@@ -11,7 +11,7 @@
     <text x="128" y="52">c1</text><text x="184" y="52">c2</text><text x="240" y="52">c3</text><text x="296" y="52">c4</text><text x="352" y="52">c5</text><text x="408" y="52">c6</text><text x="464" y="52">c7</text>
   </g>
   <g fill="#8a94a0" font-size="11">
-    <text x="96" y="84" text-anchor="end">r1</text><text x="96" y="140" text-anchor="end">r2</text><text x="96" y="196" text-anchor="end">r3</text>
+    <text x="96" y="84" text-anchor="end">r1</text><text x="96" y="126" text-anchor="end">r2</text><text x="96" y="168" text-anchor="end">r3</text>
   </g>
   <!-- grid -->
   <g stroke="#1a2026" stroke-width="1.4" fill="#ffffff">
@@ -22,8 +22,8 @@
   <!-- values -->
   <g fill="#1a2026" text-anchor="middle" font-weight="600">
     <text x="128" y="86">1</text><text x="184" y="86">1</text><text x="240" y="86">1</text><text x="296" y="86">1</text><text x="352" y="86">1</text><text x="408" y="86">1</text><text x="464" y="86">1</text>
-    <text x="128" y="142">1</text><text x="184" y="142">2</text><text x="240" y="142">3</text><text x="296" y="142">4</text><text x="352" y="142">5</text><text x="408" y="142">6</text><text x="464" y="142">7</text>
-    <text x="128" y="198">1</text><text x="184" y="198">3</text><text x="240" y="198">6</text><text x="296" y="198">10</text><text x="352" y="198">15</text><text x="408" y="198">21</text><text x="464" y="198" fill="#ffffff">28</text>
+    <text x="128" y="128">1</text><text x="184" y="128">2</text><text x="240" y="128">3</text><text x="296" y="128">4</text><text x="352" y="128">5</text><text x="408" y="128">6</text><text x="464" y="128">7</text>
+    <text x="128" y="170">1</text><text x="184" y="170">3</text><text x="240" y="170">6</text><text x="296" y="170">10</text><text x="352" y="170">15</text><text x="408" y="170">21</text><text x="464" y="170" fill="#ffffff">28</text>
   </g>
   <!-- arrows into r3c4 = 10 -->
   <line x1="243" y1="165" x2="262" y2="165" stroke="#4169E1" stroke-width="2" marker-end="url(#arr)"/>

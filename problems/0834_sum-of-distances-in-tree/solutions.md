@@ -8,4 +8,6 @@ The bottom-up pass walks the preorder in reverse so children are finished before
 
 The top-down pass then pushes answers down the preorder. Moving the root across the edge `u -> v` changes exactly the nodes on that edge's two sides: the `sub[v]` nodes inside `v`'s subtree each get one step closer, and the remaining `n - sub[v]` nodes each get one step farther, giving `ans[v] = ans[u] + (n - sub[v]) - sub[v]`. Since parents are processed before children in preorder, every answer is available when it is needed, and all `n` answers are produced after two linear sweeps.
 
+![The example tree with each node's subtree size and answer; rerooting across 0 → 2 shifts two nodes closer and four farther.](figures/solution-reroot.svg)
+
 **Complexity:** `O(n)` time, `O(n)` space.

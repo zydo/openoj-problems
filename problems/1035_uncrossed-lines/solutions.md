@@ -8,4 +8,6 @@ The DP over prefixes is kept at two rows: `prev` holds the answers for the previ
 
 Keeping only the previous and current rows reduces the space from the full `m x n` table to a single row plus the one under construction, and the final `prev[n]` after the last row is the answer.
 
+![The two example rows with the uncrossed 1–1 and 2–2 connections; adding 4–4 would cross them.](figures/solution-uncrossed-lines.svg)
+
 **Complexity:** `O(m * n)` time, `O(n)` space for the two rows over `nums2`.

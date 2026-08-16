@@ -8,4 +8,11 @@ Without memoization the same partial assignment is re-explored under many orderi
 
 With `n <= 16` this is at most 65,536 states; the constraint that each element's frequency is at most 4 keeps duplicate-heavy inputs from degenerating further. `k = 1` degenerates to a single subset holding everything and always succeeds once the divisibility check passes.
 
+Example 1 (`nums = [4,3,2,3,5,2,1]`, `k = 4`) fills the four subsets one at a time:
+
+1. The total 20 divides by 4, so the target is 5; sorted descending the values are 5, 4, 3, 3, 2, 2, 1.
+2. Subset 1 takes the 5: bit 0 is set, `curr` hits the target, and the state recurses with `curr = 0`.
+3. Subset 2 takes 4 then 1 — bits {1, 6}; subset 3 takes 3 then 2 — bits {2, 4}; subset 4 takes the remaining 3 and 2 — bits {3, 5}.
+4. Every element's bit is now set, so the full-mask check succeeds and the answer is true.
+
 **Complexity:** `O(n · 2^n)` time, `O(2^n)` space.

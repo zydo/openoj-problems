@@ -6,7 +6,7 @@
     <rect x="64" y="46" width="48" height="18"/>
     <rect x="88" y="74" width="96" height="18"/>
     <rect x="232" y="102" width="48" height="18"/>
-    <rect x="376" y="130" width="72" height="18"/>
+    <rect x="400" y="130" width="72" height="18"/>
   </g>
   <g fill="#5b6470" font-size="11" text-anchor="end">
     <text x="56" y="59">[1,3]</text>
@@ -24,19 +24,19 @@
   </g>
   <!-- merged output -->
   <g stroke="#4169E1" stroke-width="2" fill="#e9eefb">
-    <rect x="64" y="204" width="144" height="20"/>
+    <rect x="64" y="204" width="120" height="20"/>
     <rect x="232" y="204" width="48" height="20"/>
-    <rect x="376" y="204" width="72" height="20"/>
+    <rect x="400" y="204" width="72" height="20"/>
   </g>
   <g fill="#1a2026" font-size="11" font-weight="600" text-anchor="middle">
-    <text x="136" y="218">[1,6]</text>
+    <text x="124" y="218">[1,6]</text>
     <text x="256" y="218">[8,10]</text>
-    <text x="412" y="218">[15,18]</text>
+    <text x="436" y="218">[15,18]</text>
   </g>
   <!-- overlap guides -->
   <line x1="112" y1="40" x2="112" y2="230" stroke="#8a94a0" stroke-width="0.9" stroke-dasharray="3 3"/>
-  <line x1="160" y1="40" x2="160" y2="230" stroke="#8a94a0" stroke-width="0.9" stroke-dasharray="3 3"/>
-  <path d="M 114 66 C 130 34, 146 34, 158 64" fill="none" stroke="#4169E1" stroke-width="1.4"/>
-  <text x="136" y="30" fill="#4169E1" font-size="10.5" text-anchor="middle">2 &lt;= 3: overlap - end rises to 6</text>
+  <line x1="184" y1="40" x2="184" y2="230" stroke="#8a94a0" stroke-width="0.9" stroke-dasharray="3 3"/>
+  <path d="M 114 66 C 138 34, 162 34, 186 64" fill="none" stroke="#4169E1" stroke-width="1.4"/>
+  <text x="150" y="30" fill="#4169E1" font-size="10.5" text-anchor="middle">2 &lt;= 3: overlap - end rises to 6</text>
   <text x="20" y="250" fill="#5b6470" font-size="11.5">Because the input is sorted by start, any overlap must reach the newest span - nothing earlier can still be open.</text>
 </svg>

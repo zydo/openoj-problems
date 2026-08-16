@@ -10,4 +10,12 @@ Why swapping helps: replacing a long course with a shorter, later-deadline one l
 
 Sorting plus one heap operation per course dominates; each push or replace is logarithmic in the heap size.
 
+Example 1 walks the heap through all four courses:
+
+1. Sorted by deadline, the courses arrive as (100, 200), (1000, 1250), (200, 1300), (2000, 3200).
+2. (100, 200) fits — total 100 — so it is taken: heap `{100}`.
+3. (1000, 1250) fits — total 1100 — heap `{100, 1000}`.
+4. (200, 1300) fits exactly — total 1300 — heap `{100, 200, 1000}`.
+5. (2000, 3200) would need total 3300, and the longest taken course (1000) is not longer than 2000, so no swap helps; the answer is the heap size 3.
+
 **Complexity:** `O(N log N)` time, `O(N)` space.

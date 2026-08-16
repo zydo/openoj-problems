@@ -42,7 +42,7 @@
     <text x="40" y="172" fill="#1a2026">max(R)</text>
   </g>
   <g font-size="12.5" fill="#5c6b76">
-    <text x="576" y="60">root: 3 + 0 + 1</text>
+    <text x="576" y="60">root: 3 + 3 + 1</text>
     <text x="576" y="76">= rob 7</text>
     <text x="576" y="100">skip 6 =</text>
     <text x="576" y="116">max(2,3)</text>

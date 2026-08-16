@@ -8,6 +8,8 @@ When a cell at distance `d` is popped, each in-bounds neighbor is either still u
 
 A subtle point makes this correct: the queue's distances are nondecreasing, so every cell that can still raise a neighbor's color sits one layer earlier and is processed before that neighbor is ever popped. Hence a cell's color is final by the time it spreads, and its children receive the correct winning color even when the cell itself won a tie after being enqueued.
 
+![The 3x3 grid of example 1 at t = 0, 1 and 2: both frontiers grow one ring per step and the three contested cells take the max color 2.](figures/solution-flood-layers.svg)
+
 Edge cases are handled by the same sweep: a single source simply floods the whole grid with one color (the grid is connected under 4-adjacency, so the loop drains only after every cell is colored), and the constraint `n * m <= 10^5` keeps the visited arrays and queue comfortably small.
 
 **Complexity:** `O(n * m)` time, `O(n * m)` space.
