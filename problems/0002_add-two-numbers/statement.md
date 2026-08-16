@@ -18,6 +18,8 @@ Output: [7,0,8]
 Explanation: 342 + 465 = 807.
 ```
 
+![The two input numbers as linked lists, least significant digit first.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
