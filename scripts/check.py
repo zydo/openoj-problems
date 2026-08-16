@@ -189,17 +189,47 @@ def check_bundle(bundle: Path) -> list[Failure]:
     for extension in starter_extensions - {gen_starters.EXTENSIONS[lang] for lang in generated}:
         fail(f"stray starter.{extension} (not generated for this problem)")
 
-    # solutions: one per starter, nothing stray
-    solution_extensions = {path.name[len("solution.") :] for path in bundle.glob("solution.*")}
+    # solutions: solution.<ext> or solution_<variant>.<ext>. Every starter
+    # language needs at least one solution, and the variant set must be the
+    # same in every language (a named variant is equivalent across ports).
+    solution_names = sorted(
+        path.name for path in bundle.iterdir() if path.name.startswith("solution")
+    )
+    solution_pattern = re.compile(r"^solution(?:_[a-z0-9]+)?\.([a-z0-9]+)$")
+    solutions: dict[str, set[str]] = {}
+    for name in solution_names:
+        matched = solution_pattern.match(name)
+        if matched is None:
+            fail(f"unexpected file {name} (solutions are solution.<ext> or solution_<variant>.<ext>)")
+            continue
+        extension = matched.group(1)
+        if extension not in starter_extensions:
+            fail(f"stray {name} (no matching starter.{extension})")
+            continue
+        variant = name[len("solution") : -(len(extension) + 1)]
+        solutions.setdefault(extension, set()).add(variant)
     for extension in starter_extensions:
-        if extension not in solution_extensions:
+        if extension not in solutions:
             fail(f"missing solution.{extension} for starter.{extension}")
-    for extension in solution_extensions - starter_extensions:
-        fail(f"stray solution.{extension} (no matching starter)")
+    if solutions:
+        variant_sets = {tuple(sorted(variants)) for variants in solutions.values()}
+        if len(variant_sets) > 1:
+            fail("solution variants must match across languages")
     allowed = {"problem.json", "cases.json", "statement.md"} | {
         f"starter.{extension}" for extension in starter_extensions
-    } | {f"solution.{extension}" for extension in solution_extensions}
+    } | set(solution_names)
+    # statement figures: a flat figures/ directory of <name>.svg files
+    figures_dir = bundle / "figures"
+    figures_valid = True
+    if figures_dir.is_dir():
+        for figure in figures_dir.iterdir():
+            if not figure.is_file() or re.fullmatch(r"[a-z0-9-]+\.svg", figure.name) is None:
+                fail(f"unexpected figure entry {figure.name} (figures are flat <name>.svg files)")
+                figures_valid = False
+        allowed.add("figures")
     for stray in sorted(path.name for path in bundle.iterdir() if path.name not in allowed):
+        if stray == "figures" and not figures_valid:
+            continue  # already reported above
         fail(f"unexpected file {stray}")
 
     return failures
