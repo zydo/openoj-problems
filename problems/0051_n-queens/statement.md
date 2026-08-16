@@ -18,6 +18,8 @@ Output: [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
 Explanation: There exist two distinct solutions to the 4-queens puzzle.
 ```
 
+![The first 4-queens solution: queens at (row 1, column 2), (row 2, column 4), (row 3, column 1), and (row 4, column 3) of a 4x4 board.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

@@ -193,7 +193,9 @@ def check_bundle(bundle: Path) -> list[Failure]:
     # language needs at least one solution, and the variant set must be the
     # same in every language (a named variant is equivalent across ports).
     solution_names = sorted(
-        path.name for path in bundle.iterdir() if path.name.startswith("solution")
+        path.name
+        for path in bundle.iterdir()
+        if path.name.startswith("solution") and path.name != "solutions.md"
     )
     solution_pattern = re.compile(r"^solution(?:_[a-z0-9]+)?\.([a-z0-9]+)$")
     solutions: dict[str, set[str]] = {}
@@ -222,9 +224,14 @@ def check_bundle(bundle: Path) -> list[Failure]:
     solutions_guide = bundle / "solutions.md"
     if solutions_guide.is_file():
         guide_headings = _headings(solutions_guide.read_text(encoding="utf-8"))
-        if any(level != 2 for level, _, _ in guide_headings):
-            fail("solutions.md sections must all be level-two (## <variant>)")
-        titles = [title.lower() for _, title, _ in guide_headings]
+        levels = [level for level, _, _ in guide_headings]
+        if levels and levels[0] != 1:
+            fail("solutions.md must start with a level-one title")
+        if any(level not in (1, 2) for level in levels) or levels.count(1) > 1:
+            fail("solutions.md allows one title plus level-two (## <variant>) sections only")
+        titles = [title.lower() for level, title, _ in guide_headings if level == 2]
+        if not titles:
+            fail("solutions.md needs at least one ## <variant> section")
         if len(titles) != len(set(titles)):
             fail("solutions.md contains a duplicate variant section")
         allowed.add("solutions.md")

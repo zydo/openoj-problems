@@ -16,6 +16,8 @@ Input: list1 = [1,2,4], list2 = [1,3,4]
 Output: [1,1,2,3,4,4]
 ```
 
+![The two input lists and the merged list, each node colored by the list it came from.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

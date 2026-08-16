@@ -24,6 +24,8 @@ Explanation: The input board is the puzzle above, and the only valid solution
 is the output board.
 ```
 
+![Solved 9x9 sudoku board; blue digits are the cells filled in by the solver, black digits were given in the input](figures/example-1.svg)
+
 ### Constraints
 
 - `board.length == 9`
