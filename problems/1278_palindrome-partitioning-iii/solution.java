@@ -8,6 +8,8 @@ class Solution {
         for (int len = 2; len <= n; ++len) {
             for (int i = 0; i + len <= n; ++i) {
                 int j = i + len - 1;
+                // each mismatched outer pair costs one change; the
+                // interior cost is already known (lengths grow)
                 cost[i][j] = cost[i + 1][j - 1] + (cs[i] == cs[j] ? 0 : 1);
             }
         }
@@ -23,8 +25,10 @@ class Solution {
             dp[1][i] = cost[0][i - 1];
         }
         for (int c = 2; c <= k; ++c) {
+            // i starts at c: c non-empty parts need at least c characters
             for (int i = c; i <= n; ++i) {
                 int best = inf;
+                // the last part is s[j..i-1] — try every left boundary
                 for (int j = c - 1; j < i; ++j) {
                     int cand = dp[c - 1][j] + cost[j][i - 1];
                     if (cand < best) {

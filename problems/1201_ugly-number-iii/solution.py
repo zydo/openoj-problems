@@ -12,8 +12,13 @@ class Solution:
         abc = lcm(ab, c)
 
         def count(x: int) -> int:
+            # ugly numbers <= x via inclusion-exclusion: add each
+            # divisor's multiples, subtract the pairwise lcms (counted
+            # twice), add back the triple lcm
             return x // a + x // b + x // c - x // ab - x // ac - x // bc + x // abc
 
+        # count(x) is non-decreasing, so binary search the smallest x with
+        # count(x) >= n — that x is itself ugly; hi is the answer ceiling
         lo, hi = 1, 2 * 10**9
         while lo < hi:
             mid = (lo + hi) // 2

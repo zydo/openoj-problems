@@ -15,6 +15,9 @@ function stoneGameII(piles: number[]): number {
             let best = 0;
             for (let x = 1; x <= limit; x++) {
                 const m2 = Math.min(Math.max(m, x), n);
+                // taking x piles hands over (i + x, max(m, x)); the two
+                // players split the whole suffix, so the mover's haul is
+                // the suffix total minus the opponent's optimal dp
                 const cand = suf[i] - dp[i + x][m2];
                 if (cand > best) {
                     best = cand;

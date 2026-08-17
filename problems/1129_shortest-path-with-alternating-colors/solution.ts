@@ -15,6 +15,10 @@ function shortestAlternatingPaths(
         adjacency[1][u].push(v);
     }
 
+    // State = (node, color of the edge used to enter it): the same node can
+    // be worth visiting once per incoming color, so BFS runs over the 2n
+    // states of this expanded graph. Node 0 has no incoming edge, so both
+    // colors are seeded at distance 0.
     const INF = Infinity;
     const dist: number[][] = Array.from({ length: n }, () => [INF, INF]);
     dist[0][0] = 0; // arrived at 0 via a red edge (virtual start)
@@ -29,6 +33,8 @@ function shortestAlternatingPaths(
     while (head < queue.length) {
         const [node, color] = queue[head];
         head += 1;
+        // Only edges of the opposite color may leave this state; INF doubles
+        // as the visited test (BFS first arrival is minimal).
         for (const nxt of adjacency[1 - color][node]) {
             if (dist[nxt][1 - color] === INF) {
                 dist[nxt][1 - color] = dist[node][color] + 1;

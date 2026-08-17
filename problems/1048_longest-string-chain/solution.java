@@ -9,6 +9,9 @@ import java.util.Set;
 class Solution {
 
     public int longestStrChain(String[] words) {
+        // dedupe first (duplicates never extend each other), then process
+        // shortest first: every one-deletion predecessor is already in dp
+        // when its successor is reached
         Set<String> unique = new HashSet<>(Arrays.asList(words));
         List<String> sorted = new ArrayList<>(unique);
         sorted.sort((a, b) -> a.length() - b.length());
@@ -16,6 +19,8 @@ class Solution {
         int best = 0;
         StringBuilder sb = new StringBuilder();
         for (String word : sorted) {
+            // dp[word] = longest chain ending at word: 1 + the best value
+            // among its one-deletion variants present in dp (1 = alone)
             int current = 1;
             for (int i = 0; i < word.length(); i++) {
                 sb.setLength(0);

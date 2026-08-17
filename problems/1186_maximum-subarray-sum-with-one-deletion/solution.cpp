@@ -11,6 +11,10 @@ class Solution {
         long long oneDel = LLONG_MIN / 2;
         long long best = arr[0];
         for (int i = 1; i < n; i++) {
+            // two origins: deletion already used earlier and the subarray
+            // extends through arr[i], or the deletion happens exactly now
+            // (drop arr[i] from the previous noDel) — oneDel must be
+            // computed first so it reads the pre-update noDel
             oneDel = max(oneDel + arr[i], noDel);
             noDel = max(noDel + arr[i], (long long)arr[i]);
             best = max({best, noDel, oneDel});

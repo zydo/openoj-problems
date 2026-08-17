@@ -1,4 +1,6 @@
 func findTheCity(n int, edges [][]int, distanceThreshold int) int {
+	// With n <= 100, compute all-pairs distances at once: 0 diagonal,
+	// symmetric direct weights, INF elsewhere.
 	const inf = 1 << 30
 	dist := make([][]int, n)
 	for i := range dist {
@@ -13,6 +15,8 @@ func findTheCity(n int, edges [][]int, distanceThreshold int) int {
 		dist[a][b] = w
 		dist[b][a] = w
 	}
+	// Floyd-Warshall: relax dist[i][j] through intermediate node k. The inf
+	// guards skip pairs that cannot improve anything this pass.
 	for k := 0; k < n; k++ {
 		dk := dist[k]
 		for i := 0; i < n; i++ {
@@ -31,6 +35,8 @@ func findTheCity(n int, edges [][]int, distanceThreshold int) int {
 			}
 		}
 	}
+	// Ascending scan with a strictly-smaller count (or equal count at a
+	// larger index) implements the tie-break: greatest city number wins.
 	bestCity, bestCount := -1, inf
 	for i := 0; i < n; i++ {
 		count := 0

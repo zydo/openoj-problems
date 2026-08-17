@@ -16,6 +16,9 @@ class Solution:
                 best = 0
                 for x in range(1, limit + 1):
                     m2 = min(max(m, x), n)
+                    # taking x piles hands over (i + x, max(m, x)); the two
+                    # players split the whole suffix, so the mover's haul is
+                    # the suffix total minus the opponent's optimal dp
                     cand = suf[i] - dp[i + x][m2]
                     if cand > best:
                         best = cand

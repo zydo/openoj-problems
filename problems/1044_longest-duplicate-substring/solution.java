@@ -13,6 +13,7 @@ class Solution {
         final long MOD2 = 1000000009L;
         final long BASE = 26;
 
+        // Precomputed base powers so each rolling-hash slide costs O(1).
         long[] pow1 = new long[n + 1];
         long[] pow2 = new long[n + 1];
         pow1[0] = 1;
@@ -24,6 +25,9 @@ class Solution {
 
         long mul1 = MOD2 + 7;
 
+        // Monotonicity: a duplicate of length L implies duplicates at every
+        // shorter length, so feasible lengths form a prefix — binary search
+        // the largest one.
         int lo = 1,
             hi = n;
         int bestLength = 0,
@@ -44,6 +48,7 @@ class Solution {
         return s.substring(bestStart, bestStart + bestLength);
     }
 
+    // Returns a start index of some length-`length` duplicate, else -1.
     private int check(
         String s,
         long[] a,
@@ -66,12 +71,16 @@ class Solution {
         Map<Long, List<Integer>> seen = new HashMap<>();
         seen.computeIfAbsent(h1 * mul1 + h2, k -> new ArrayList<>()).add(0);
         for (int i = 1; i + length <= n; i++) {
+            // Roll: drop the leftmost character's contribution, append the incoming one.
             long t1 = (h1 - a[i - 1] * pow1[length - 1]) % MOD1;
             if (t1 < 0) t1 += MOD1;
             h1 = (t1 * BASE + a[i + length - 1]) % MOD1;
             long t2 = (h2 - a[i - 1] * pow2[length - 1]) % MOD2;
             if (t2 < 0) t2 += MOD2;
             h2 = (t2 * BASE + a[i + length - 1]) % MOD2;
+            // Two independent polynomial hashes form the key; a repeat is
+            // still verified character by character so collisions can never
+            // produce a wrong answer.
             long key = h1 * mul1 + h2;
             List<Integer> starts = seen.get(key);
             if (starts != null) {

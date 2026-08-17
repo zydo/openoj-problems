@@ -9,6 +9,7 @@ impl Solution {
         const MOD2: i64 = 1_000_000_009;
         const BASE: i64 = 26;
 
+        // Precomputed base powers so each rolling-hash slide costs O(1).
         let mut pow1 = vec![1i64; n + 1];
         let mut pow2 = vec![1i64; n + 1];
         for i in 1..=n {
@@ -16,6 +17,7 @@ impl Solution {
             pow2[i] = pow2[i - 1] * BASE % MOD2;
         }
 
+        // Returns a start index of some length-`length` duplicate, else None.
         let check = |length: usize| -> Option<usize> {
             if length == 0 {
                 return None;
@@ -29,10 +31,15 @@ impl Solution {
             let mut seen: HashMap<(i64, i64), Vec<usize>> = HashMap::new();
             seen.entry((h1, h2)).or_insert_with(Vec::new).push(0);
             for i in 1..=(n - length) {
+                // Roll: drop the leftmost character's contribution, append the
+                // incoming one.
                 let t1 = (h1 - a[i - 1] * pow1[length - 1]).rem_euclid(MOD1);
                 h1 = (t1 * BASE + a[i + length - 1]) % MOD1;
                 let t2 = (h2 - a[i - 1] * pow2[length - 1]).rem_euclid(MOD2);
                 h2 = (t2 * BASE + a[i + length - 1]) % MOD2;
+                // Two independent polynomial hashes form the key; a repeat is
+                // still verified character by character so collisions can
+                // never produce a wrong answer.
                 let key = (h1, h2);
                 if let Some(starts) = seen.get_mut(&key) {
                     let mut matched = false;
@@ -60,6 +67,9 @@ impl Solution {
             None
         };
 
+        // Monotonicity: a duplicate of length L implies duplicates at every
+        // shorter length, so feasible lengths form a prefix — binary search
+        // the largest one.
         let mut lo = 1usize;
         let mut hi = n;
         let mut best_length = 0usize;

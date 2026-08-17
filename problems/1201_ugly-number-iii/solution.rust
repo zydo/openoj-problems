@@ -5,6 +5,8 @@ impl Solution {
         let ac = Self::lcm(a, c);
         let bc = Self::lcm(b, c);
         let abc = Self::lcm(ab, c);
+        // count(x) is non-decreasing, so binary search the smallest x with
+        // count(x) >= n — that x is itself ugly; hi is the answer ceiling
         let (mut lo, mut hi) = (1i64, 2_000_000_000i64);
         while lo < hi {
             let mid = lo + (hi - lo) / 2;
@@ -18,6 +20,9 @@ impl Solution {
     }
 
     fn count(x: i64, a: i64, b: i64, c: i64, ab: i64, ac: i64, bc: i64, abc: i64) -> i64 {
+        // ugly numbers <= x via inclusion-exclusion: add each divisor's
+        // multiples, subtract the pairwise lcms (counted twice), add
+        // back the triple lcm
         x / a + x / b + x / c - x / ab - x / ac - x / bc + x / abc
     }
 

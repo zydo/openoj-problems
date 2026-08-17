@@ -1,6 +1,8 @@
 class Solution {
   public:
     int findTheCity(int n, vector<vector<int>> &edges, int distanceThreshold) {
+        // With n <= 100, compute all-pairs distances at once: 0 diagonal,
+        // symmetric direct weights, INF elsewhere.
         const int INF = INT_MAX / 2;
         vector<vector<int>> dist(n, vector<int>(n, INF));
         for (int i = 0; i < n; i++) {
@@ -10,6 +12,8 @@ class Solution {
             dist[e[0]][e[1]] = e[2];
             dist[e[1]][e[0]] = e[2];
         }
+        // Floyd-Warshall: relax dist[i][j] through intermediate node k. The
+        // INF guards skip pairs that cannot improve anything this pass.
         for (int k = 0; k < n; k++) {
             for (int i = 0; i < n; i++) {
                 int dik = dist[i][k];
@@ -27,6 +31,8 @@ class Solution {
                 }
             }
         }
+        // Ascending scan with a strictly-smaller count (or equal count at a
+        // larger index) implements the tie-break: greatest city number wins.
         int bestCity = -1;
         int bestCount = INF;
         for (int i = 0; i < n; i++) {

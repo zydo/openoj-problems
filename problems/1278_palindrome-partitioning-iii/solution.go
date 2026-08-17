@@ -12,6 +12,8 @@ func palindromePartition(s string, k int) int {
 			if s[i] != s[j] {
 				mismatch = 1
 			}
+			// each mismatched outer pair costs one change; the
+			// interior cost is already known (lengths grow)
 			cost[i][j] = cost[i+1][j-1] + mismatch
 		}
 	}
@@ -28,8 +30,10 @@ func palindromePartition(s string, k int) int {
 		dp[1][i] = cost[0][i-1]
 	}
 	for c := 2; c <= k; c++ {
+		// i starts at c: c non-empty parts need at least c characters
 		for i := c; i <= n; i++ {
 			best := inf
+			// the last part is s[j..i-1] — try every left boundary
 			for j := c - 1; j < i; j++ {
 				if cand := dp[c-1][j] + cost[j][i-1]; cand < best {
 					best = cand

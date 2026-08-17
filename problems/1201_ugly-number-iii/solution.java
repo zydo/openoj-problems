@@ -5,6 +5,8 @@ class Solution {
             ac = lcm(a, c),
             bc = lcm(b, c);
         long abc = lcm(ab, c);
+        // count(x) is non-decreasing, so binary search the smallest x with
+        // count(x) >= n — that x is itself ugly; hi is the answer ceiling
         long lo = 1,
             hi = 2000000000L;
         while (lo < hi) {
@@ -28,6 +30,9 @@ class Solution {
         long bc,
         long abc
     ) {
+        // ugly numbers <= x via inclusion-exclusion: add each divisor's
+        // multiples, subtract the pairwise lcms (counted twice), add
+        // back the triple lcm
         return x / a + x / b + x / c - x / ab - x / ac - x / bc + x / abc;
     }
 

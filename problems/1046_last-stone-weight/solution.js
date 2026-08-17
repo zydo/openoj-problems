@@ -3,14 +3,18 @@
  * @return {number}
  */
 var lastStoneWeight = function (stones) {
+    // The game is deterministic: only fast access to the current maximum is
+    // needed, which the max-heap below provides.
     const heap = new MaxHeap(stones);
     while (heap.size() > 1) {
+        // The two heaviest stones; equal ones annihilate (nothing pushed).
         const y = heap.pop();
         const x = heap.pop();
         if (x !== y) {
             heap.push(y - x);
         }
     }
+    // Empty heap means every stone paired off into equal smashings.
     return heap.size() ? heap.pop() : 0;
 };
 

@@ -3,6 +3,8 @@ function findTheCity(
     edges: number[][],
     distanceThreshold: number,
 ): number {
+    // With n <= 100, compute all-pairs distances at once: 0 diagonal,
+    // symmetric direct weights, INF elsewhere.
     const INF = Infinity;
     const dist: number[][] = Array.from({ length: n }, () =>
         new Array(n).fill(INF),
@@ -14,6 +16,8 @@ function findTheCity(
         dist[a][b] = w;
         dist[b][a] = w;
     }
+    // Floyd-Warshall: relax dist[i][j] through intermediate node k. The INF
+    // guards skip pairs that cannot improve anything this pass.
     for (let k = 0; k < n; k++) {
         const dk = dist[k];
         for (let i = 0; i < n; i++) {
@@ -33,6 +37,8 @@ function findTheCity(
             }
         }
     }
+    // Ascending scan with a strictly-smaller count (or equal count at a
+    // larger index) implements the tie-break: greatest city number wins.
     let bestCity = -1;
     let bestCount = INF;
     for (let i = 0; i < n; i++) {

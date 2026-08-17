@@ -9,6 +9,8 @@ impl Solution {
             for i in 0..=(n - len) {
                 let j = i + len - 1;
                 let mismatch = if b[i] == b[j] { 0 } else { 1 };
+                // each mismatched outer pair costs one change; the
+                // interior cost is already known (lengths grow)
                 cost[i][j] = cost[i + 1][j - 1] + mismatch;
             }
         }
@@ -19,8 +21,10 @@ impl Solution {
             dp[1][i] = cost[0][i - 1];
         }
         for c in 2..=k {
+            // i starts at c: c non-empty parts need at least c characters
             for i in c..=n {
                 let mut best = inf;
+                // the last part is s[j..i-1] — try every left boundary
                 for j in (c - 1)..i {
                     let cand = dp[c - 1][j] + cost[j][i - 1];
                     if cand < best {

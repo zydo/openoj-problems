@@ -15,15 +15,19 @@ func (h *stoneHeap) Pop() interface{} {
 }
 
 func lastStoneWeight(stones []int) int {
+	// The game is deterministic: only fast access to the current maximum is
+	// needed, which this max-heap provides.
 	h := stoneHeap(stones)
 	heap.Init(&h)
 	for h.Len() > 1 {
+		// The two heaviest stones; equal ones annihilate (nothing pushed).
 		y := heap.Pop(&h).(int)
 		x := heap.Pop(&h).(int)
 		if x != y {
 			heap.Push(&h, y-x)
 		}
 	}
+	// Empty heap means every stone paired off into equal smashings.
 	if h.Len() == 0 {
 		return 0
 	}

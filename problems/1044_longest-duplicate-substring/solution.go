@@ -8,6 +8,7 @@ func longestDupSubstring(s string) string {
 	const MOD2 = 1000000009
 	const BASE = 26
 
+	// Precomputed base powers so each rolling-hash slide costs O(1).
 	pow1 := make([]int64, n+1)
 	pow2 := make([]int64, n+1)
 	pow1[0] = 1
@@ -19,6 +20,7 @@ func longestDupSubstring(s string) string {
 
 	keyOf := func(x, y int64) int64 { return x*(MOD2+7) + y }
 
+	// Returns a start index of some length-`length` duplicate, else -1.
 	check := func(length int) int {
 		if length == 0 {
 			return -1
@@ -31,6 +33,8 @@ func longestDupSubstring(s string) string {
 		seen := make(map[int64][]int)
 		seen[keyOf(h1, h2)] = []int{0}
 		for i := 1; i+length <= n; i++ {
+			// Roll: drop the leftmost character's contribution, append the
+			// incoming one.
 			t1 := (h1 - a[i-1]*pow1[length-1]) % MOD1
 			if t1 < 0 {
 				t1 += MOD1
@@ -41,6 +45,9 @@ func longestDupSubstring(s string) string {
 				t2 += MOD2
 			}
 			h2 = (t2*BASE + a[i+length-1]) % MOD2
+			// Two independent polynomial hashes form the key; a repeat is
+			// still verified character by character so collisions can never
+			// produce a wrong answer.
 			key := keyOf(h1, h2)
 			if starts, ok := seen[key]; ok {
 				matched := false
@@ -68,6 +75,9 @@ func longestDupSubstring(s string) string {
 		return -1
 	}
 
+	// Monotonicity: a duplicate of length L implies duplicates at every
+	// shorter length, so feasible lengths form a prefix — binary search
+	// the largest one.
 	lo, hi := 1, n
 	bestLength := 0
 	bestStart := -1

@@ -6,6 +6,9 @@ function smallestDivisor(nums: number[], threshold: number): number {
         }
         return s;
     };
+    // The ceiled sum is non-increasing in the divisor, so "sum <= threshold"
+    // is monotone: lower-bound search for the smallest valid d. Past
+    // max(nums) every term is already 1, capping the range.
     let lo = 1,
         hi = Math.max(...nums);
     while (lo < hi) {

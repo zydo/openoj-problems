@@ -25,6 +25,9 @@ func stoneGameII(piles []int) int {
 				if m2 > n {
 					m2 = n
 				}
+				// taking x piles hands over (i+x, max(m, x)); the two
+				// players split the whole suffix, so the mover's haul is
+				// the suffix total minus the opponent's optimal dp
 				if cand := suf[i] - dp[i+x][m2]; cand > best {
 					best = cand
 				}

@@ -10,6 +10,7 @@ var longestDupSubstring = function (s) {
     const MOD2 = 1000000009;
     const BASE = 26;
 
+    // Precomputed base powers so each rolling-hash slide costs O(1).
     const pow1 = new Array(n + 1).fill(1);
     const pow2 = new Array(n + 1).fill(1);
     for (let i = 1; i <= n; i++) {
@@ -19,6 +20,7 @@ var longestDupSubstring = function (s) {
 
     const mod = (x, m) => ((x % m) + m) % m;
 
+    // Returns a start index of some length-`length` duplicate, else -1.
     const check = (length) => {
         if (length === 0) return -1;
         let h1 = 0,
@@ -30,6 +32,8 @@ var longestDupSubstring = function (s) {
         const seen = new Map();
         seen.set(h1 + "," + h2, [0]);
         for (let i = 1; i + length <= n; i++) {
+            // Roll: drop the leftmost character's contribution, append the
+            // incoming one.
             h1 = mod(
                 mod(h1 - a[i - 1] * pow1[length - 1], MOD1) * BASE +
                     a[i + length - 1],
@@ -40,6 +44,9 @@ var longestDupSubstring = function (s) {
                     a[i + length - 1],
                 MOD2,
             );
+            // Two independent polynomial hashes form the key; a repeat is
+            // still verified character by character so collisions can never
+            // produce a wrong answer.
             const key = h1 + "," + h2;
             if (seen.has(key)) {
                 const starts = seen.get(key);
@@ -66,6 +73,9 @@ var longestDupSubstring = function (s) {
         return -1;
     };
 
+    // Monotonicity: a duplicate of length L implies duplicates at every
+    // shorter length, so feasible lengths form a prefix — binary search
+    // the largest one.
     let lo = 1,
         hi = n;
     let bestLength = 0,

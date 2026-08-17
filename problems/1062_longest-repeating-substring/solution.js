@@ -5,6 +5,8 @@
 var longestRepeatingSubstring = function (s) {
     const n = s.length;
 
+    // Exact check: every length-`length` window goes into a set, so a hit
+    // means two identical substrings (overlaps allowed) — no hashing caveats.
     const hasRepeat = (length) => {
         if (length === 0) {
             return true;
@@ -20,6 +22,10 @@ var longestRepeatingSubstring = function (s) {
         return false;
     };
 
+    // Monotone feasibility: a repeat of length L implies repeats of every
+    // shorter length, so binary search the largest feasible length. The
+    // upper-mid convention keeps the loop terminating; hi starts at n-1
+    // because the whole string cannot repeat within itself.
     let lo = 0;
     let hi = n - 1;
     while (lo < hi) {

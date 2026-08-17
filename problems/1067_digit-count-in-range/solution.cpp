@@ -1,5 +1,6 @@
 class Solution {
   public:
+    // Prefix-count reduction: occurrences in [low, high] = f(high) - f(low-1).
     int digitsCount(int d, int low, int high) {
         return (int)(countUpTo(d, (long long)high) - countUpTo(d, (long long)low - 1));
     }
@@ -12,6 +13,8 @@ class Solution {
         string s = to_string(n);
         int length = s.size();
         long long total = 0;
+        // Count, per digit position, the numbers <= n with d there:
+        // n = highPart * 10^power + cur * 10^power + lowPart.
         for (int i = 0; i < length; i++) {
             long long highPart = i > 0 ? stoll(s.substr(0, i)) : 0;
             int cur = s[i] - '0';
@@ -21,6 +24,8 @@ class Solution {
                 power *= 10;
             }
             if (d == 0) {
+                // Leading zeros are never written: skip a zero high part, and
+                // the -1 forbids a leading zero on this position.
                 if (highPart >= 1) {
                     if (cur > 0) {
                         total += highPart * power;
@@ -29,6 +34,8 @@ class Solution {
                     }
                 }
             } else {
+                // cur > d: prefix-equal numbers may put anything below;
+                // cur == d: only suffixes up to lowPart still qualify.
                 if (cur > d) {
                     total += (highPart + 1) * power;
                 } else if (cur == d) {

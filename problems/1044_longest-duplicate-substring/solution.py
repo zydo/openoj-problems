@@ -9,6 +9,7 @@ class Solution:
         MOD2 = 10**9 + 9
         BASE = 26
 
+        # Precomputed base powers so each rolling-hash slide costs O(1).
         pow1 = [1] * (n + 1)
         pow2 = [1] * (n + 1)
         for i in range(1, n + 1):
@@ -16,6 +17,7 @@ class Solution:
             pow2[i] = pow2[i - 1] * BASE % MOD2
 
         def check(length):
+            # Returns a start index of some length-`length` duplicate, else -1.
             if length == 0:
                 return -1
             h1 = h2 = 0
@@ -24,12 +26,17 @@ class Solution:
                 h2 = (h2 * BASE + a[i]) % MOD2
             seen = {(h1, h2): [0]}
             for i in range(1, n - length + 1):
+                # Roll: drop the leftmost character's contribution, append the
+                # incoming one.
                 h1 = (
                     (h1 - a[i - 1] * pow1[length - 1]) % MOD1 * BASE + a[i + length - 1]
                 ) % MOD1
                 h2 = (
                     (h2 - a[i - 1] * pow2[length - 1]) % MOD2 * BASE + a[i + length - 1]
                 ) % MOD2
+                # Two independent polynomial hashes form the key; a repeat is
+                # still verified character by character so collisions can
+                # never produce a wrong answer.
                 key = (h1, h2)
                 if key in seen:
                     window = a[i : i + length]
@@ -41,6 +48,9 @@ class Solution:
                     seen[key] = [i]
             return -1
 
+        # Monotonicity: a duplicate of length L implies duplicates at every
+        # shorter length, so feasible lengths form a prefix — binary search
+        # the largest one.
         lo, hi = 1, n
         best_length = 0
         best_start = -1

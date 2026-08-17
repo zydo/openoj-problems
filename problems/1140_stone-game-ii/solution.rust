@@ -14,6 +14,9 @@ impl Solution {
                 let mut best = 0i32;
                 for x in 1..=limit {
                     let m2 = m.max(x).min(n);
+                    // taking x piles hands over (i + x, max(m, x)); the two
+                    // players split the whole suffix, so the mover's haul is
+                    // the suffix total minus the opponent's optimal dp
                     let cand = suf[i] - dp[i + x][m2];
                     if cand > best {
                         best = cand;

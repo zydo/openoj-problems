@@ -10,6 +10,8 @@ var nthUglyNumber = function (n, a, b, c) {
         ac = lcm(a, c),
         bc = lcm(b, c);
     const abc = lcm(ab, c);
+    // count(x) is non-decreasing, so binary search the smallest x with
+    // count(x) >= n — that x is itself ugly; hi is the answer ceiling
     let lo = 1,
         hi = 2000000000;
     while (lo < hi) {
@@ -24,6 +26,9 @@ var nthUglyNumber = function (n, a, b, c) {
 };
 
 function count(x, a, b, c, ab, ac, bc, abc) {
+    // ugly numbers <= x via inclusion-exclusion: add each divisor's
+    // multiples, subtract the pairwise lcms (counted twice), add
+    // back the triple lcm
     return (
         Math.floor(x / a) +
         Math.floor(x / b) +

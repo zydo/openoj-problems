@@ -2,6 +2,10 @@ class Solution {
   public:
     int longestRepeatingSubstring(string s) {
         int n = s.size();
+        // Monotone feasibility: a repeat of length L implies repeats of every
+        // shorter length, so binary search the largest feasible length. The
+        // upper-mid convention keeps the loop terminating; hi starts at n-1
+        // because the whole string cannot repeat within itself.
         int lo = 0;
         int hi = n - 1;
         while (lo < hi) {
@@ -16,6 +20,8 @@ class Solution {
     }
 
   private:
+    // Exact check: every length-`length` window goes into a set, so a hit
+    // means two identical substrings (overlaps allowed) — no hashing caveats.
     bool hasRepeat(const string &s, int length) {
         if (length == 0) {
             return true;
