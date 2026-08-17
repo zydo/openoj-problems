@@ -23,6 +23,8 @@ Output: [[0,1],[2,3,4,5]]
 Explanation: Notice that the two edges 0 and 1 appear in all MSTs, therefore they are critical edges, so we return them in the first list of the output. The edges 2, 3, 4, and 5 are only part of some MSTs, therefore they are considered pseudo-critical edges. We add them to the second list of the output.
 ```
 
+![The five-vertex graph with critical edges 0 and 1 in blue and pseudo-critical edges 2-5 in brown, plus the four MSTs of weight 7.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,6 +32,8 @@ Input: n = 4, edges = [[0,1,1],[1,2,1],[2,3,1],[0,3,1]]
 Output: [[],[0,1,2,3]]
 Explanation: We can observe that since all 4 edges have equal weight, choosing any 3 edges from the given 4 will yield an MST. Therefore all 4 edges are pseudo-critical.
 ```
+
+![The four-vertex cycle with all edges of weight 1; dropping any one edge still leaves an MST.](figures/example-2.svg)
 
 ### Constraints
 

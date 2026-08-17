@@ -18,6 +18,8 @@ Explanation: One optimal partition is: [3,9] and [7,3].
 The absolute difference between the sums of the arrays is abs((3 + 9) - (7 + 3)) = 2.
 ```
 
+![Partition 3,9 and 7,3 of nums = 3,9,7,3](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Output: 0
 Explanation: One optimal partition is: [2,4,-9] and [-1,0,-2].
 The absolute difference between the sums of the arrays is abs((2 + 4 + -9) - (-1 + 0 + -2)) = 0.
 ```
+
+![Partition 2,4,-9 and -1,0,-2 of nums = 2,-1,0,4,-2,-9](figures/example-3.svg)
 
 ### Constraints
 

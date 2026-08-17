@@ -11,6 +11,9 @@ class Solution {
             if (a[0] != b[0]) return Integer.compare(b[0], a[0]); // taller first
             return Integer.compare(a[1], b[1]); // fewer people in front first
         });
+        // With everyone already placed taller-or-equal, inserting at index k
+        // puts exactly k such people in front; shorter people inserted later
+        // are invisible to taller people's counts.
         List<int[]> queue = new ArrayList<>();
         for (int[] person : ordered) {
             queue.add(person[1], person);

@@ -20,6 +20,8 @@ Output: 2
 Explanation: The longest path of the tree is the path 1 - 0 - 2.
 ```
 
+![A three-node star with 0 at the center; the path 1 - 0 - 2 is highlighted in blue.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -27,6 +29,8 @@ Input: edges = [[0,1],[1,2],[2,3],[1,4],[4,5]]
 Output: 4
 Explanation: The longest path of the tree is the path 3 - 2 - 1 - 4 - 5.
 ```
+
+![A six-node tree with the four edges of the path 3 - 2 - 1 - 4 - 5 highlighted in blue and the side edge 0 - 1 plain.](figures/example-2.svg)
 
 ### Constraints
 

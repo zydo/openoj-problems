@@ -4,15 +4,19 @@ import java.util.Map;
 class Solution {
 
     public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
+        // Target already reached before any move: the first player wins.
         if (desiredTotal <= 0) {
             return true;
         }
+        // The whole pool cannot reach the target, so nobody ever wins.
         if (
             ((long) maxChoosableInteger * (maxChoosableInteger + 1)) / 2 <
             desiredTotal
         ) {
             return false;
         }
+        // State = bitmask of used integers (m <= 20 keeps it to 2^m states);
+        // `remaining` is derived from the mask, so memoizing on it suffices.
         Map<Integer, Boolean> memo = new HashMap<>();
         return canWin(0, desiredTotal, maxChoosableInteger, memo);
     }
@@ -32,6 +36,8 @@ class Solution {
             if ((state & bit) != 0) {
                 continue;
             }
+            // Immediate win on reaching the target, else the move wins
+            // exactly when it strands the opponent in a losing state.
             if (
                 choice >= remaining ||
                 !canWin(

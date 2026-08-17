@@ -14,6 +14,8 @@ function calcEquation(
         }
         adj.set(b, w);
     };
+    // Each equation a/b = v becomes a directed edge a -> b of weight v
+    // plus the reverse edge of weight 1/v (division inverts with direction).
     for (let i = 0; i < equations.length; i++) {
         const a = equations[i][0],
             b = equations[i][1];
@@ -23,8 +25,12 @@ function calcEquation(
     }
 
     const query = (start: string, end: string): number => {
+        // An unknown variable is unanswerable (this also covers x / x for
+        // an undefined x); a known variable over itself is 1.0.
         if (!graph.has(start) || !graph.has(end)) return -1.0;
         if (start === end) return 1.0;
+        // BFS carrying the running product: weights along the path telescope
+        // to start / end because intermediate variables cancel.
         const seen = new Set<string>([start]);
         const queue: [string, number][] = [[start, 1.0]];
         let head = 0;
@@ -34,7 +40,11 @@ function calcEquation(
                 string,
                 number
             >) {
-                if (neighbor === end) return product * weight;
+                if (neighbor === end) {
+                    // Equations are consistent, so the first path found
+                    // already yields the correct quotient.
+                    return product * weight;
+                }
                 if (!seen.has(neighbor)) {
                     seen.add(neighbor);
                     queue.push([neighbor, product * weight]);

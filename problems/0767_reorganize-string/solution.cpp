@@ -12,11 +12,15 @@ class Solution {
                 letters.push_back({c, counts[c]});
             }
         }
+        // Frequency-descending with alphabetical ties: the exact ordering
+        // that produces the canonical answer the judge expects.
         sort(letters.begin(), letters.end(), [](const pair<int, int> &a, const pair<int, int> &b) {
             if (a.second != b.second)
                 return a.second > b.second;
             return a.first < b.first;
         });
+        // Feasible iff the most frequent letter fits in the even
+        // positions, which outnumber the odd ones by exactly one.
         if (letters[0].second > (n + 1) / 2) {
             return "";
         }
@@ -25,6 +29,8 @@ class Solution {
         for (auto &[c, cnt] : letters) {
             char ch = 'a' + c;
             for (int k = 0; k < cnt; k++) {
+                // Even positions first; past the end, continue on the
+                // odd ones starting at 1.
                 if (idx >= n) {
                     idx = 1;
                 }
@@ -32,6 +38,9 @@ class Solution {
                 idx += 2;
             }
         }
+        // Copies of a letter are always two slots apart (the wrap keeps a
+        // gap too), and n slots host exactly n letters, so nothing is
+        // overwritten and equals never touch.
         return res;
     }
 };

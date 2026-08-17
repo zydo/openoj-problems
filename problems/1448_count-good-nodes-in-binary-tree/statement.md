@@ -19,6 +19,8 @@ Node 5 -> (3,4,5) is the maximum value in the path.
 Node 3 -> (3,1,3) is the maximum value in the path.
 ```
 
+![The tree rooted at 3 with the four good nodes 3, 3, 4 and 5 shaded blue.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -26,6 +28,8 @@ Input: root = [3,3,null,4,2]
 Output: 3
 Explanation: Node 2 -> (3, 3, 2) is not good, because 3 is higher than it.
 ```
+
+![The tree rooted at 3 with good nodes 3, 3 and 4 shaded; node 2 is not good.](figures/example-2.svg)
 
 ### Example 3
 

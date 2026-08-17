@@ -31,6 +31,8 @@ By the end of the fourth minute, battery 1 is also drained, and the first comput
 We can run the two computers simultaneously for at most 4 minutes, so we return 4.
 ```
 
+![Battery swaps keep both computers running for 4 minutes](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -42,6 +44,8 @@ After one minute, battery 0 and battery 2 are drained so you need to remove them
 After another minute, battery 1 and battery 3 are also drained so the first and second computers are no longer running.
 We can run the two computers simultaneously for at most 2 minutes, so we return 2.
 ```
+
+![Each one-minute battery is swapped in turn, draining after 2 minutes](figures/example-2.svg)
 
 ### Constraints
 

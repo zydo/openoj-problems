@@ -29,6 +29,8 @@ Explanation: Sell the 1st color 1 time (2) and the 2nd color 3 times (5 + 4 + 3)
 The maximum total value is 2 + 5 + 4 + 3 = 14.
 ```
 
+![Two yellow and five blue balls stacked by value; the four sold balls are ringed, worth 2 + 5 + 4 + 3 = 14.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

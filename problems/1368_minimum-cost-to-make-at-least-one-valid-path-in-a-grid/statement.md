@@ -38,6 +38,8 @@ The path to (3, 3) is as follows. (0, 0) --> (0, 1) --> (0, 2) --> (0, 3) change
 The total cost = 3.
 ```
 
+![The 4 x 4 grid of arrows with the snake walk highlighted; three signs are struck out and changed to down arrows, for a total cost of 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -46,12 +48,16 @@ Output: 0
 Explanation: You can follow the path from (0, 0) to (2, 2).
 ```
 
+![The 3 x 3 grid of arrows with the walk from (0, 0) to (2, 2) highlighted; every sign already points the right way, so the cost is 0.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
 Input: grid = [[1,2],[4,3]]
 Output: 1
 ```
+
+![The 2 x 2 grid of arrows; (0,0) points right for free, then the left-pointing sign at (0,1) is changed to down for a total cost of 1.](figures/example-3.svg)
 
 ### Constraints
 

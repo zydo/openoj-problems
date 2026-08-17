@@ -32,6 +32,8 @@ On days 5, 6, and 7, plant the 2nd seed. The seed grows for 1 full day and bloom
 Thus, on day 9, all the seeds are blooming.
 ```
 
+![Three seed tracks: planting, growing, and blooming across days 0 through 9](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -44,6 +46,8 @@ On days 2, 4, and 5, plant the 2nd seed. The seed grows for 2 full days and bloo
 On days 6 and 7, plant the 3rd seed. The seed grows for 1 full day and blooms on day 9.
 Thus, on day 9, all the seeds are blooming.
 ```
+
+![Four seed tracks with interleaved planting days across days 0 through 9](figures/example-2.svg)
 
 ### Example 3
 

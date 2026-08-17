@@ -25,6 +25,8 @@ Output: 1
 Explanation: There is only one way to build the additional rooms: 0 → 1 → 2
 ```
 
+![Example 1 room tree](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -39,6 +41,8 @@ The 6 ways are:
 0 → 2 → 1 → 3 → 4
 0 → 2 → 1 → 4 → 3
 ```
+
+![Example 2 room tree](figures/example-2.svg)
 
 ### Constraints
 

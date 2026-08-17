@@ -9,9 +9,12 @@ func longestIncreasingPath(matrix [][]int) int {
 			cells = append(cells, cell{matrix[i][j], i, j})
 		}
 	}
+	// Strictly increasing paths make the cells a DAG (edges point to
+	// larger neighbors), so ascending value order is a topological order.
 	sort.Slice(cells, func(a, b int) bool {
 		return cells[a].v < cells[b].v
 	})
+	// dp[i][j] = longest increasing path starting at (i, j); 1 = cell alone.
 	dp := make([][]int, m)
 	for i := range dp {
 		dp[i] = make([]int, n)
@@ -22,6 +25,8 @@ func longestIncreasingPath(matrix [][]int) int {
 	best := 1
 	dirs := [4][2]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
 	for _, c := range cells {
+		// Smaller neighbors appear earlier in the sort, so their dp is
+		// final; strict < so equal-valued neighbors never link.
 		for _, d := range dirs {
 			ni, nj := c.i+d[0], c.j+d[1]
 			if ni >= 0 && ni < m && nj >= 0 && nj < n && matrix[ni][nj] < c.v {

@@ -25,6 +25,8 @@ In the second semester, you can take course 1.
 In the third semester, you can take course 4.
 ```
 
+![Courses 2 and 3 in semester 1, course 1 in semester 2 and course 4 in semester 3, at most two per semester.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ In the second semester, you can take course 4.
 In the third semester, you can take course 1.
 In the fourth semester, you can take course 5.
 ```
+
+![The four semesters: 2 and 3 together, then 4, then 1, then 5 — the k = 2 limit forces four semesters.](figures/example-2.svg)
 
 ### Constraints
 

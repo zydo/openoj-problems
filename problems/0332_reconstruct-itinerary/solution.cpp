@@ -23,6 +23,8 @@ class Solution {
                 stack.push_back(adj.back());
                 adj.pop_back();
             } else {
+                // No unused edges left: emit in postorder so dead-end
+                // airports land at their latest possible position.
                 route.push_back(airport);
                 stack.pop_back();
             }

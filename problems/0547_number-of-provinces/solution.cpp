@@ -9,6 +9,8 @@ class Solution {
             if (visited[start]) {
                 continue;
             }
+            // An unvisited city during the sweep starts a new component;
+            // this one traversal absorbs exactly one province.
             provinces++;
             visited[start] = 1;
             stack.push_back(start);
@@ -17,6 +19,9 @@ class Solution {
                 stack.pop_back();
                 for (int other = 0; other < n; other++) {
                     if (isConnected[city][other] == 1 && !visited[other]) {
+                        // Mark at push time so no city is stacked twice;
+                        // membership is by visitation, so self-loops and the
+                        // symmetric matrix never double count.
                         visited[other] = 1;
                         stack.push_back(other);
                     }

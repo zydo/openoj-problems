@@ -13,12 +13,16 @@ Input: n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,f
 Output: 8
 ```
 
+![The tree with apples at 2, 4 and 5; the four green edges are each walked down and back for 8 seconds.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,false,true,false]
 Output: 6
 ```
+
+![The same tree with apples at 2 and 5; only three edges are needed, giving 6 seconds.](figures/example-2.svg)
 
 ### Example 3
 

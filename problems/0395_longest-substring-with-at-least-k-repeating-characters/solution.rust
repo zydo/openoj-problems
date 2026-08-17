@@ -14,10 +14,14 @@ impl Solution {
         for &ch in &s[lo..hi] {
             *counts.entry(ch).or_insert(0) += 1;
         }
+        // A character rarer than k inside this piece can never reach k by
+        // shortening the substring, so it is a hard splitter.
         let is_rare = |ch: u8| -> bool { counts.get(&ch).copied().unwrap_or(0) < k };
         let mut best = 0;
         let mut start = lo;
         let mut all_frequent = true;
+        // Recurse on the pieces between consecutive rare characters; each
+        // level eliminates at least one letter, so depth is bounded by 26.
         for i in lo..hi {
             if is_rare(s[i]) {
                 all_frequent = false;
@@ -26,6 +30,7 @@ impl Solution {
             }
         }
         if all_frequent {
+            // No splitter: the whole piece is already valid.
             return (hi - lo) as i32;
         }
         best.max(Self::longest(s, start, hi, k))

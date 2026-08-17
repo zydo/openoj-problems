@@ -21,6 +21,8 @@ Explanation: The subset chosen is the first and fourth job.
 Time range [1-3]+[3-6], we get profit of 120 = 50 + 70.
 ```
 
+![The four jobs as bars on a time line from 1 to 6; jobs 1 and 4 are highlighted, giving 50 + 70 = 120.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,12 +32,16 @@ Explanation: The subset chosen is the first, fourth and fifth job.
 Profit obtained 150 = 20 + 70 + 60.
 ```
 
+![The five jobs as bars on a time line from 1 to 10; jobs 1, 4 and 5 are highlighted, giving 20 + 70 + 60 = 150.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
 Input: startTime = [1,1,1], endTime = [2,3,4], profit = [5,6,4]
 Output: 6
 ```
+
+![Three jobs all starting at time 1 and overlapping, so only one can be taken; job 2 with profit 6 is highlighted.](figures/example-3.svg)
 
 ### Constraints
 

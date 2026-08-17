@@ -26,6 +26,8 @@ Output: 3
 Explanation: Change the direction of edges shown in red such that each node can reach the node 0 (capital).
 ```
 
+![The six-city tree with the three red edges 0-1, 1-3 and 4-5 marked to flip so every city reaches 0.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,6 +35,8 @@ Input: n = 5, connections = [[1,0],[1,2],[3,2],[3,4]]
 Output: 2
 Explanation: Change the direction of edges shown in red such that each node can reach the node 0 (capital).
 ```
+
+![The five-city tree with the two red edges 1-2 and 3-4 marked to flip so every city reaches 0.](figures/example-2.svg)
 
 ### Example 3
 

@@ -20,6 +20,8 @@ function findItinerary(tickets: string[][]): string[] {
         if (adj && adj.length > 0) {
             stack.push(adj.pop() as string);
         } else {
+            // No unused edges left: emit in postorder so dead-end
+            // airports land at their latest possible position.
             route.push(airport);
             stack.pop();
         }

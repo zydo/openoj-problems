@@ -32,6 +32,8 @@ Course 1 takes 3 months and course 2 takes 2 months to complete respectively.
 Thus, the earliest time we can start course 3 is at month 3, and the total time required is 3 + 5 = 8 months.
 ```
 
+![Courses 1 and 2 both lead into course 3](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -44,6 +46,8 @@ Course 4 can be taken only after course 3 is completed, i.e., after 3 months. It
 Course 5 can be taken only after courses 1, 2, 3, and 4 have been completed, i.e., after max(1,2,3,7) = 7 months.
 Thus, the minimum time needed to complete all the courses is 7 + 5 = 12 months.
 ```
+
+![Courses 1, 2, and 3 feed into course 5, with course 3 also leading through course 4](figures/example-2.svg)
 
 ### Constraints
 

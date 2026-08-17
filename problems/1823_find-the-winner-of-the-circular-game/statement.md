@@ -40,6 +40,8 @@ Explanation: Here are the steps of the game:
 9) Friend 5 leaves the circle. Only friend 3 is left, so they are the winner.
 ```
 
+![Example 1 elimination steps](figures/example-1.svg)
+
 ### Example 2
 
 ```text

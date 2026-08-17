@@ -21,6 +21,8 @@ The shortest path with one obstacle elimination at position (3,2) is 6.
 Such path is (0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2) -> (3,2) -> (4,2).
 ```
 
+![The 5 x 3 grid with hatched obstacles; the 6-move path runs down the right column and crosses out the obstacle at (3, 2).](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Input: grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1
 Output: -1
 Explanation: We need to eliminate at least two obstacles to find such a walk.
 ```
+
+![The 3 x 3 grid with hatched obstacles; every route from the start at (0, 0) to the goal at (2, 2) crosses at least two of them.](figures/example-2.svg)
 
 ### Constraints
 

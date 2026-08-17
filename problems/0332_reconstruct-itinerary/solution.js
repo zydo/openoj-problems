@@ -24,6 +24,8 @@ var findItinerary = function (tickets) {
         if (adj && adj.length > 0) {
             stack.push(adj.pop());
         } else {
+            // No unused edges left: emit in postorder so dead-end
+            // airports land at their latest possible position.
             route.push(airport);
             stack.pop();
         }

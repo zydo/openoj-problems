@@ -24,6 +24,8 @@ Output: [2.00000,2.00000,2.00000]
 Explanation: The fence will have center = (2, 2) and radius = 2.
 ```
 
+![Example 1 fence](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -31,6 +33,8 @@ Input: trees = [[1,2],[2,2],[4,2]]
 Output: [2.50000,2.00000,1.50000]
 Explanation: The fence will have center = (2.5, 2) and radius = 1.5.
 ```
+
+![Example 2 fence](figures/example-2.svg)
 
 ### Constraints
 

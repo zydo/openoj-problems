@@ -7,6 +7,8 @@ function reachableNodes(
         { length: n },
         () => [],
     );
+    // Subdividing [u, v, cnt] yields cnt + 1 unit edges, so Dijkstra on
+    // the compact graph with weight cnt + 1 gives the true distances.
     for (const [u, v, cnt] of edges) {
         adj[u].push([v, cnt + 1]);
         adj[v].push([u, cnt + 1]);
@@ -50,6 +52,7 @@ function reachableNodes(
     hpush([0, 0]);
     while (heap.length > 0) {
         const [d, u] = hpop();
+        // Lazy deletion: a stale heap entry no longer matches dist[u].
         if (d !== dist[u]) continue;
         for (const [v, w] of adj[u]) {
             const nd = d + w;
@@ -60,11 +63,14 @@ function reachableNodes(
         }
     }
     let result = 0;
+    // Half one: original nodes within the budget.
     for (const d of dist) {
         if (d <= maxMoves) {
             result += 1;
         }
     }
+    // Half two: each edge contributes the frontiers walked in from both
+    // ends; min(cnt, a + b) clamps the overlap where they meet.
     for (const [u, v, cnt] of edges) {
         const a = Math.max(0, maxMoves - dist[u]);
         const b = Math.max(0, maxMoves - dist[v]);

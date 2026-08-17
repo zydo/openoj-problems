@@ -9,6 +9,9 @@ import java.util.Set;
 class Solution {
 
     public String[] removeInvalidParentheses(String s) {
+        // BFS over removal counts: every string in a level has had the
+        // same number of characters deleted, so the first level holding
+        // any valid string is exactly the minimum-removal answer.
         Set<String> level = new HashSet<>();
         level.add(s);
         while (true) {
@@ -17,9 +20,12 @@ class Solution {
                 if (isValid(item)) valid.add(item);
             }
             if (!valid.isEmpty()) {
+                // Sorted for deterministic output.
                 Collections.sort(valid);
                 return valid.toArray(new String[0]);
             }
+            // Expand one more deletion; only parentheses are removed and
+            // the set dedups deletions that produce the same string.
             Set<String> next = new HashSet<>();
             for (String item : level) {
                 for (int i = 0; i < item.length(); i++) {
@@ -34,6 +40,8 @@ class Solution {
     }
 
     private boolean isValid(String str) {
+        // Balance scan: fail as soon as a ')' has no '(' to match,
+        // and require the counter to end back at zero.
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);

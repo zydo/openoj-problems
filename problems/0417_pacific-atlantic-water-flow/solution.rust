@@ -3,6 +3,8 @@ impl Solution {
         let m = heights.len();
         let n = heights[0].len();
 
+        // Reverse the flow: walk inland from the ocean border instead of
+        // downhill from every cell, so one traversal finds all draining cells.
         fn reachable(
             heights: &[Vec<i32>],
             m: usize,
@@ -27,7 +29,10 @@ impl Solution {
                 for (dr, dc) in dirs {
                     let nr = (r as isize + dr as isize) as usize;
                     let nc = (c as isize + dc as isize) as usize;
+                    // Only a neighbor at least as tall could have flowed down
+                    // into (r, c).
                     if nr < m && nc < n && !seen[nr][nc] && heights[nr][nc] >= heights[r][c] {
+                        // Mark on push so each cell is stacked at most once.
                         seen[nr][nc] = true;
                         stack.push((nr, nc));
                     }
@@ -36,6 +41,8 @@ impl Solution {
             seen
         }
 
+        // Pacific seeds: top row + left column; Atlantic: bottom row + right
+        // column. Corners appear in both seed lists.
         let mut pacific_border: Vec<(usize, usize)> = Vec::new();
         for c in 0..n {
             pacific_border.push((0, c));
@@ -54,6 +61,7 @@ impl Solution {
         let pacific = reachable(&heights, m, n, pacific_border);
         let atlantic = reachable(&heights, m, n, atlantic_border);
 
+        // Row-major intersection of the two reachable sets comes out sorted.
         let mut result: Vec<Vec<i32>> = Vec::new();
         for r in 0..m {
             for c in 0..n {

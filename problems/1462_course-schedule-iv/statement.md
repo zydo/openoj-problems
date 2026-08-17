@@ -31,6 +31,8 @@ you can take course 0.
 Course 0 is not a prerequisite of course 1, but the opposite is true.
 ```
 
+![Two courses with the single arrow 1 to 0, so only the query [1,0] is true.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -48,6 +50,8 @@ Explanation: The pair [1, 2] indicates you must take course 1 before course 2.
 The pair [1, 0] indicates you must take course 1 before course 0.
 So course 1 is a prerequisite of both courses 0 and 2.
 ```
+
+![Three courses with arrows from 1 to both 0 and 2, so both queries are true.](figures/example-3.svg)
 
 ### Constraints
 

@@ -76,18 +76,25 @@ func (b openojBig) String() string {
 }
 
 func productExceptSelf(nums []int) []any {
+	// The product except nums[i] factors as (product of everything
+	// before i) x (product of everything after i), both computable as
+	// running products — no division, which zeros would break anyway.
 	n := len(nums)
 	pre := make([]openojBig, n+1)
+	// pre[i] = product of the i elements preceding index i.
 	pre[0] = openojBig{d: []uint32{1}}
 	for i := 0; i < n; i++ {
 		pre[i+1] = openojBigMulSmall(pre[i], int64(nums[i]))
 	}
 	suf := make([]openojBig, n+1)
+	// suf[i] = product of everything from index i onward.
 	suf[n] = openojBig{d: []uint32{1}}
 	for i := n - 1; i >= 0; i-- {
 		suf[i] = openojBigMulSmall(suf[i+1], int64(nums[i]))
 	}
 	answer := make([]any, n)
+	// pre[i] x suf[i+1] spans everything except nums[i] itself; a lone
+	// zero zeroes every cell but its own, automatically.
 	for i := 0; i < n; i++ {
 		answer[i] = openojRawInt(openojBigMulBig(pre[i], suf[i+1]).String())
 	}

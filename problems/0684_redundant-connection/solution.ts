@@ -6,6 +6,8 @@ function findRedundantConnection(edges: number[][]): number[] {
         while (parent.get(root) !== root) {
             root = parent.get(root)!;
         }
+        // Second walk repoints every visited node at the root (path
+        // compression), flattening the structure for later finds.
         while (parent.get(node) !== root) {
             const next = parent.get(node)!;
             parent.set(node, root);
@@ -15,6 +17,7 @@ function findRedundantConnection(edges: number[][]): number[] {
     };
 
     const union = function (a: number, b: number): boolean {
+        // Unseen nodes register lazily on first touch.
         if (!parent.has(a)) {
             parent.set(a, a);
         }
@@ -23,6 +26,7 @@ function findRedundantConnection(edges: number[][]): number[] {
         }
         const ra = find(a);
         const rb = find(b);
+        // Equal roots mean this edge would reconnect one component: the cycle.
         if (ra === rb) {
             return false;
         }
@@ -30,6 +34,8 @@ function findRedundantConnection(edges: number[][]): number[] {
         return true;
     };
 
+    // A tree plus one extra edge has exactly one cycle; the first edge
+    // failing the union test is the one that closes it.
     for (const [a, b] of edges) {
         if (!union(a, b)) {
             return [a, b];

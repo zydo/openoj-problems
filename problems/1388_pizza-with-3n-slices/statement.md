@@ -24,6 +24,8 @@ Output: 10
 Explanation: Pick pizza slice of size 4, Alice and Bob will pick slices with size 3 and 5 respectively. Then Pick slices with size 6, finally Alice and Bob will pick slice of size 2 and 1 respectively. Total = 4 + 6.
 ```
 
+![The pizza cut into six slices; you take 4 then 6 while Alice and Bob take the neighbours, keeping 10.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -31,6 +33,8 @@ Input: slices = [8,9,8,6,1,1]
 Output: 16
 Explanation: Pick pizza slice of size 8 in each turn. If you pick slice with size 9 your partners will pick slices of size 8.
 ```
+
+![The pizza in two rounds: taking 8 twice beats taking 9, which would feed Bob an 8 — total 16.](figures/example-2.svg)
 
 ### Constraints
 

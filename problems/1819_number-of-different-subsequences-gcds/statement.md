@@ -23,6 +23,8 @@ Explanation: The figure shows all the non-empty subsequences and their GCDs.
 The different GCDs are 6, 10, 3, 2, and 1.
 ```
 
+![Example 1 subsequences and GCDs](figures/example-1.svg)
+
 ### Example 2
 
 ```text

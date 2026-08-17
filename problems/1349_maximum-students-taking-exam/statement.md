@@ -23,6 +23,8 @@ Output: 4
 Explanation: Teacher can place 4 students in available seats so they don't cheat on the exam.
 ```
 
+![The 3 x 6 classroom with broken seats shaded; four students sit in the free seats of rows 0 and 2 with no cheating sightlines.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

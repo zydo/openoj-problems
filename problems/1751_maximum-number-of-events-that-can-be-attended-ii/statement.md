@@ -23,6 +23,8 @@ Explanation: Choose the green events, 0 and 1 (0-indexed) for a total value
 of 4 + 3 = 7.
 ```
 
+![Example 1 events](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,6 +35,8 @@ Notice that you cannot attend any other event as they overlap, and that you do
 not have to attend k events.
 ```
 
+![Example 2 events](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -41,6 +45,8 @@ Output: 9
 Explanation: Although the events do not overlap, you can only attend 3 events.
 Pick the highest valued three.
 ```
+
+![Example 3 events](figures/example-3.svg)
 
 ### Constraints
 

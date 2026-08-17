@@ -25,6 +25,8 @@ Cuboid 2 is placed next with the 23x12 side facing down with height 45.
 The total height is 95 + 50 + 45 = 190.
 ```
 
+![Three cuboids stacked largest to smallest with their bases labeled 53x37, 45x20 and 23x12, totalling 190.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

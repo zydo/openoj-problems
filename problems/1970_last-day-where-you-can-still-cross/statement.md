@@ -28,6 +28,8 @@ Explanation: The image above depicts how the matrix changes each day starting fr
 The last day where it is possible to cross from top to bottom is on day 2.
 ```
 
+![The grid on days 0 through 3; a crossing remains on day 2](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -37,6 +39,8 @@ Explanation: The image above depicts how the matrix changes each day starting fr
 The last day where it is possible to cross from top to bottom is on day 1.
 ```
 
+![The grid on days 0 through 2; a crossing remains on day 1](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -45,6 +49,8 @@ Output: 3
 Explanation: The image above depicts how the matrix changes each day starting from day 0.
 The last day where it is possible to cross from top to bottom is on day 3.
 ```
+
+![The 3 x 3 grid on days 0 through 4; a crossing remains on day 3](figures/example-3.svg)
 
 ### Constraints
 

@@ -1,6 +1,7 @@
 import "sort"
 
 func palindromePairs(words []string) [][]int {
+	// word -> index: partners are found by hash lookup, not pair scanning.
 	index := make(map[string]int)
 	for i, w := range words {
 		index[w] = i
@@ -21,9 +22,13 @@ func palindromePairs(words []string) [][]int {
 
 	for j, w := range words {
 		length := len(w)
+		// For a concatenation to be a palindrome, one half of w must
+		// already be one and the mirror of the other half must exist.
 		for cut := 0; cut <= length; cut++ {
 			prefix := w[:cut]
 			suffix := w[cut:]
+			// Palindromic prefix: reverse(suffix) can stand on the left.
+			// The != j check stops a word from pairing with itself.
 			if isPalindrome(prefix) {
 				rev := []rune(suffix)
 				for a, b := 0, len(rev)-1; a < b; a, b = a+1, b-1 {
@@ -33,6 +38,9 @@ func palindromePairs(words []string) [][]int {
 					results[[2]int{idx, j}] = true
 				}
 			}
+			// Palindromic suffix: reverse(prefix) goes on the right.
+			// cut != length avoids re-emitting the full-string case,
+			// which the partner word already finds at its cut 0.
 			if cut != length && isPalindrome(suffix) {
 				rev := []rune(prefix)
 				for a, b := 0, len(rev)-1; a < b; a, b = a+1, b-1 {

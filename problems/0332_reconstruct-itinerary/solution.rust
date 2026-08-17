@@ -22,6 +22,8 @@ impl Solution {
                 let adj = match graph.get_mut(&airport) {
                     Some(a) => a,
                     None => {
+                        // No unused edges left: emit in postorder so dead-end
+                        // airports land at their latest possible position.
                         route.push(airport.clone());
                         stack.pop();
                         continue;
@@ -32,6 +34,8 @@ impl Solution {
             match next {
                 Some(destination) => stack.push(destination),
                 None => {
+                    // No unused edges left: emit in postorder so dead-end
+                    // airports land at their latest possible position.
                     route.push(airport.clone());
                     stack.pop();
                 }

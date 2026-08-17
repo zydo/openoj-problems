@@ -50,6 +50,8 @@ Let's take person 2 as the key.
 We can see that at most 2 persons are good in the best case, so we return 2.
 ```
 
+![The three scenarios for person 2; only the lying scenario yields two good people](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -70,6 +72,8 @@ Let's take person 0 as the key.
             - Following that person 0 is bad and lied, there will be only one good person in the group.
 We can see that at most, one person is good in the best case, so we return 1.
 ```
+
+![The three scenarios for person 0; each yields at most one good person](figures/example-2.svg)
 
 ### Constraints
 

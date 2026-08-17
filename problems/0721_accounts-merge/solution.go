@@ -12,6 +12,7 @@ func accountsMerge(accounts [][]string) [][]string {
 		if p == x {
 			return x
 		}
+		// Recursive find with full path compression: repoint x at its root.
 		r := find(p)
 		parent[x] = r
 		return r
@@ -31,11 +32,15 @@ func accountsMerge(accounts [][]string) [][]string {
 			}
 			owner[email] = account[0]
 		}
+		// Unioning with the first email links the whole account — and,
+		// transitively, any chain of accounts sharing emails.
 		for _, email := range account[2:] {
 			union(account[1], email)
 		}
 	}
 
+	// Second pass in input order: merge order follows the earliest-appearing
+	// email of each component, exactly as the judge requires.
 	index := map[string]int{}
 	var groups [][]string
 	for _, account := range accounts {
@@ -45,6 +50,7 @@ func accountsMerge(accounts [][]string) [][]string {
 			if !ok {
 				idx = len(groups)
 				index[root] = idx
+				// The root's owner names the component.
 				groups = append(groups, []string{owner[root]})
 			}
 			groups[idx] = append(groups[idx], email)
@@ -52,6 +58,7 @@ func accountsMerge(accounts [][]string) [][]string {
 	}
 
 	merged := make([][]string, 0, len(groups))
+	// Sort each component's emails and drop duplicates within one account.
 	for _, g := range groups {
 		emails := g[1:]
 		sort.Strings(emails)

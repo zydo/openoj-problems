@@ -31,6 +31,8 @@ Note that the subgraph [[1,0,3],[0,5,6]] also yields the optimal answer.
 It is not possible to get a subgraph with less weight satisfying all the constraints.
 ```
 
+![The subgraph 0 -> 2 -> 1 -> 4 -> 5 with total weight 9](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -40,6 +42,8 @@ Explanation:
 It can be seen that there does not exist any path from node 1 to node 2,
 hence there are no subgraphs satisfying all the constraints.
 ```
+
+![Both edges point into node 1, so node 2 is unreachable](figures/example-2.svg)
 
 ### Constraints
 

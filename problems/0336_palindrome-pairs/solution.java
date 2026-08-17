@@ -8,6 +8,7 @@ import java.util.Set;
 class Solution {
 
     public int[][] palindromePairs(String[] words) {
+        // word -> index: partners are found by hash lookup, not pair scanning.
         Map<String, Integer> index = new HashMap<>();
         for (int i = 0; i < words.length; i++) {
             index.put(words[i], i);
@@ -17,9 +18,13 @@ class Solution {
         for (int j = 0; j < words.length; j++) {
             String w = words[j];
             int length = w.length();
+            // For a concatenation to be a palindrome, one half of w must
+            // already be one and the mirror of the other half must exist.
             for (int cut = 0; cut <= length; cut++) {
                 String prefix = w.substring(0, cut);
                 String suffix = w.substring(cut);
+                // Palindromic prefix: reverse(suffix) can stand on the left.
+                // The != j check stops a word from pairing with itself.
                 if (isPalindrome(prefix)) {
                     String rev = new StringBuilder(suffix).reverse().toString();
                     Integer idx = index.get(rev);
@@ -27,6 +32,9 @@ class Solution {
                         results.add(((long) idx << 32) | (j & 0xffffffffL));
                     }
                 }
+                // Palindromic suffix: reverse(prefix) goes on the right.
+                // cut != length avoids re-emitting the full-string case,
+                // which the partner word already finds at its cut 0.
                 if (cut != length && isPalindrome(suffix)) {
                     String rev = new StringBuilder(prefix).reverse().toString();
                     Integer idx = index.get(rev);

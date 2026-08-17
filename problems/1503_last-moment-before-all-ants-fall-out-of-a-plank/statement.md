@@ -30,6 +30,8 @@ Explanation:
 The last moment when an ant was on the plank is t = 4 seconds. After that, it falls immediately out of the plank. (i.e., We can say that at t = 4.0000000001, there are no ants on the plank).
 ```
 
+![The plank at t = 0, 1, 1.5 and 2: ants B and C keep meeting and turning, and the last fall is at t = 4.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -38,6 +40,8 @@ Output: 7
 Explanation: All ants are going to the right, the ant at index 0 needs 7 seconds to fall.
 ```
 
+![Eight ants on a plank of length 7, all heading right; the one at 0 is the last to fall at t = 7.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -45,6 +49,8 @@ Input: n = 7, left = [0,1,2,3,4,5,6,7], right = []
 Output: 7
 Explanation: All ants are going to the left, the ant at index 7 needs 7 seconds to fall.
 ```
+
+![Eight ants on a plank of length 7, all heading left; the one at 7 is the last to fall at t = 7.](figures/example-3.svg)
 
 ### Constraints
 

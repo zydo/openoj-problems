@@ -4,6 +4,8 @@
  * @return {number[]}
  */
 var medianSlidingWindow = function (nums, k) {
+    // One sorted array mirrors the window: binary insertion keeps it sorted
+    // without ever re-sorting a whole window.
     const window = [];
     const out = [];
     const lowerBound = (arr, target) => {
@@ -18,9 +20,13 @@ var medianSlidingWindow = function (nums, k) {
     };
     for (let i = 0; i < nums.length; i++) {
         window.splice(lowerBound(window, nums[i]), 0, nums[i]);
+        // Evict the leftmost occurrence of the outgoing value — equal
+        // elements are interchangeable, so the multiset stays exact.
         if (i >= k) {
             window.splice(lowerBound(window, nums[i - k]), 1);
         }
+        // Eviction already ran, so exactly k values are present here; the
+        // median is then a plain index lookup (middle pair for even k).
         if (i >= k - 1) {
             if (k % 2 === 1) {
                 out.push(window[Math.floor(k / 2)]);

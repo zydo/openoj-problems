@@ -23,6 +23,8 @@ We can connect the points as shown above to get the minimum cost of 20.
 Notice that there is a unique path between every pair of points.
 ```
 
+![The five points on a grid joined by their minimum spanning tree with edge costs 4, 3, 4 and 9, totalling 20.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

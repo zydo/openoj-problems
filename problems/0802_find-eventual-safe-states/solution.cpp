@@ -2,6 +2,8 @@ class Solution {
   public:
     vector<int> eventualSafeNodes(vector<vector<int>> &graph) {
         int n = graph.size();
+        // Kahn's peel on the reversed graph: a node is safe exactly
+        // when every path from it terminates.
         vector<int> outdeg(n);
         vector<vector<int>> radj(n);
         for (int u = 0; u < n; u++) {
@@ -10,6 +12,7 @@ class Solution {
                 radj[v].push_back(u);
             }
         }
+        // Terminal nodes (out-degree 0) are trivially safe seeds.
         deque<int> queue;
         for (int i = 0; i < n; i++) {
             if (outdeg[i] == 0) {
@@ -21,6 +24,8 @@ class Solution {
             int u = queue.front();
             queue.pop_front();
             safe[u] = true;
+            // A predecessor queues only once every outgoing neighbor
+            // is proven safe — the definition of a safe node.
             for (int v : radj[u]) {
                 outdeg[v]--;
                 if (outdeg[v] == 0) {
@@ -28,6 +33,8 @@ class Solution {
                 }
             }
         }
+        // Unpeeled nodes are exactly those on, or reaching, a cycle;
+        // the ascending scan yields the required sorted order.
         vector<int> result;
         for (int i = 0; i < n; i++) {
             if (safe[i]) {

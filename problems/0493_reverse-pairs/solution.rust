@@ -7,8 +7,13 @@ impl Solution {
             let mid = arr.len() / 2;
             let (left, c1) = merge_count(&arr[..mid]);
             let (right, c2) = merge_count(&arr[mid..]);
+            // Pairs inside either half are already counted; only cross
+            // pairs remain, and both halves come back sorted.
             let mut count = c1 + c2;
             // count cross reverse pairs: left[i] > 2 * right[j]
+            // j never restarts: the next left[i] is at least as large, so
+            // every right element already passed also qualifies — the
+            // sweep is linear per merge level.
             let mut j = 0usize;
             for i in 0..left.len() {
                 while j < right.len() && left[i] > 2 * right[j] {
@@ -34,6 +39,8 @@ impl Solution {
             (merged, count)
         }
 
+        // Widen to i64: values reach both int32 extremes and 2 * value
+        // would overflow.
         let arr: Vec<i64> = nums.iter().map(|&v| v as i64).collect();
         merge_count(&arr).1 as i32
     }

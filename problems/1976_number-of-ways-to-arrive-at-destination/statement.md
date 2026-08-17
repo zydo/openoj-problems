@@ -32,6 +32,8 @@ The four ways to get there in 7 minutes are:
 - 0 ➝ 1 ➝ 3 ➝ 5 ➝ 6
 ```
 
+![Seven intersections joined by ten roads; four routes take 7 minutes from 0 to 6](figures/example-1.svg)
+
 ### Example 2
 
 ```text

@@ -9,6 +9,8 @@ impl Solution {
             while parent[&root] != root {
                 root = parent[&root];
             }
+            // Second walk repoints every visited node at the root (path
+            // compression), flattening the structure for later finds.
             let mut node = node;
             while parent[&node] != root {
                 let next = parent[&node];
@@ -18,8 +20,11 @@ impl Solution {
             root
         }
 
+        // A tree plus one extra edge has exactly one cycle; the first edge
+        // whose endpoints already share a root is the one that closes it.
         for edge in &edges {
             let (a, b) = (edge[0], edge[1]);
+            // Unseen nodes register lazily on first touch.
             parent.entry(a).or_insert(a);
             parent.entry(b).or_insert(b);
             let ra = find(&mut parent, a);

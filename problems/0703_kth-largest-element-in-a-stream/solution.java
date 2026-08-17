@@ -18,6 +18,8 @@ class KthLargest {
     }
 
     public int add(int val) {
+        // Push first, then evict: a value smaller than the root pops right
+        // back out, so no comparison branch is needed.
         heap.offer(val);
         if (heap.size() > k) {
             heap.poll();

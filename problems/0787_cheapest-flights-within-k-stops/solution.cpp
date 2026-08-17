@@ -2,9 +2,13 @@ class Solution {
   public:
     int findCheapestPrice(int n, vector<vector<int>> &flights, int src, int dst, int k) {
         const int INF = INT_MAX / 2;
+        // After r full rounds, dist[v] is the cheapest fare using at
+        // most r edges; k stops allow k+1 flights, so run k+1 rounds.
         vector<int> dist(n, INF);
         dist[src] = 0;
         for (int i = 0; i < k + 1; i++) {
+            // Relax from a frozen copy: writing in place would chain
+            // several edges inside one round and exceed the stop limit.
             vector<int> ndist = dist;
             bool changed = false;
             for (const auto &flight : flights) {
@@ -15,9 +19,13 @@ class Solution {
                 }
             }
             dist = ndist;
+            // A round that changed nothing never improves later rounds.
             if (!changed)
                 break;
         }
+        // Non-negative prices need no negative-cycle handling; a
+        // surviving infinity means the destination is unreachable
+        // within the allowance.
         return dist[dst] >= INF ? -1 : dist[dst];
     }
 };

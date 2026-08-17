@@ -21,6 +21,8 @@ Output: 20
 Explanation: Maximum sum in a valid Binary Search Tree is obtained in the root node with key equal to 3.
 ```
 
+![The tree rooted at 1 with the subtree rooted at 3 enclosed in a dashed blue box; its keys 3, 2, 5, 4 and 6 sum to 20.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Input: root = [4,3,null,1,2]
 Output: 2
 Explanation: Maximum sum in a valid Binary Search Tree is obtained in a single root node with key equal to 2.
 ```
+
+![The tree 4 - 3 with children 1 and 2; node 2 is highlighted as the best BST with sum 2, since 3's right child 2 breaks the ordering.](figures/example-2.svg)
 
 ### Example 3
 

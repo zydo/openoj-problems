@@ -29,6 +29,8 @@ class Solution {
             if (adj != null && !adj.isEmpty()) {
                 stack.push(adj.remove(adj.size() - 1));
             } else {
+                // No unused edges left: emit in postorder so dead-end
+                // airports land at their latest possible position.
                 route.add(airport);
                 stack.pop();
             }

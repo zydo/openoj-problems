@@ -7,6 +7,9 @@ class Solution {
 
     public int largestIsland(int[][] grid) {
         int n = grid.length;
+        // Label each 4-connected island with a distinct color and
+        // record its size; marking cells as they are pushed finds each
+        // island exactly once.
         int[][] label = new int[n][n];
         Map<Integer, Integer> sizes = new HashMap<>();
 
@@ -20,6 +23,8 @@ class Solution {
             }
         }
 
+        // Best starts at the largest existing island — also the answer
+        // when the grid is all 1s and no 0 exists to flip.
         int best = 0;
         for (int value : sizes.values()) {
             best = Math.max(best, value);
@@ -29,6 +34,9 @@ class Solution {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] == 0) {
+                    // Dedup matters: one island can touch this 0 on
+                    // several sides, and counting it twice would
+                    // overstate the merge.
                     boolean[] seen = new boolean[color + 1];
                     int total = 1;
                     for (int d = 0; d < 4; d++) {

@@ -94,15 +94,22 @@ impl OpenOJToJson for OpenOjBig {
 
 impl Solution {
     pub fn product_except_self(nums: Vec<i32>) -> Vec<OpenOjBig> {
+        // The product except nums[i] factors as (product of everything
+        // before i) x (product of everything after i), both computable as
+        // running products — no division, which zeros would break anyway.
         let n = nums.len();
+        // pre[i] = product of the i elements preceding index i.
         let mut pre = vec![OpenOjBig::one(); n + 1];
         for i in 0..n {
             pre[i + 1] = pre[i].mul_small(nums[i]);
         }
+        // suf[i] = product of everything from index i onward.
         let mut suf = vec![OpenOjBig::one(); n + 1];
         for i in (0..n).rev() {
             suf[i] = suf[i + 1].mul_small(nums[i]);
         }
+        // pre[i] x suf[i+1] spans everything except nums[i] itself; a lone
+        // zero zeroes every cell but its own, automatically.
         (0..n).map(|i| pre[i].mul_big(&suf[i + 1])).collect()
     }
 }

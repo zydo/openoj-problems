@@ -31,6 +31,8 @@ func (h *srHeap) Pop() interface{} {
 }
 
 func smallestRange(nums [][]int) []int {
+	// Seed the heap with every list's head; the k-way merge sweeps candidate
+	// ranges in order as the selection's minimum advances.
 	h := &srHeap{}
 	curMax := nums[0][0]
 	for i := 0; i < len(nums); i++ {
@@ -45,6 +47,8 @@ func smallestRange(nums [][]int) []int {
 	for {
 		top := heap.Pop(h).(srItem)
 		lo, i, j := top.v, top.i, top.j
+		// [lo, curMax] covers all k lists: prefer smaller width, then
+		// the smaller left endpoint on ties.
 		if !have || curMax-lo < bestHi-bestLo ||
 			(curMax-lo == bestHi-bestLo && lo < bestLo) {
 			bestLo = lo
@@ -52,9 +56,12 @@ func smallestRange(nums [][]int) []int {
 			have = true
 		}
 		if j+1 == len(nums[i]) {
+			// The popped list is exhausted: no later selection can still
+			// include it, so every further candidate would be worse.
 			return []int{bestLo, bestHi}
 		}
 		nxt := nums[i][j+1]
+		// The next element may raise the tracked maximum.
 		if nxt > curMax {
 			curMax = nxt
 		}

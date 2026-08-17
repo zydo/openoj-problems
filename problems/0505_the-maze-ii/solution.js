@@ -47,11 +47,20 @@ var shortestDistance = function (maze, start, destination) {
         [0, 1],
         [0, -1],
     ];
+    // Dijkstra over stopping cells — positions where the ball halts against
+    // a wall/border. Roll distances vary, so BFS won't do.
     while (heap.length) {
         const [d, r, c] = pop();
+        // Dijkstra settles cells in distance order: destination popped =>
+        // its distance is final.
         if (r === destination[0] && c === destination[1]) return d;
+        // Stale heap entry (cell was already relaxed lower): skip.
         if (d > dist[r][c]) continue;
         for (const [dr, dc] of dirs) {
+            // Roll step by step until the next cell is a wall or out of
+            // bounds; the landing cell is the neighbor, steps the edge
+            // weight. Passing over a cell doesn't create a node — only
+            // stopping on it does.
             let nr = r,
                 nc = c,
                 steps = 0;
@@ -68,6 +77,7 @@ var shortestDistance = function (maze, start, destination) {
             }
             if (steps > 0) {
                 const nd = d + steps;
+                // Relax only when the roll improves the landing cell.
                 if (dist[nr][nc] === -1 || nd < dist[nr][nc]) {
                     dist[nr][nc] = nd;
                     push([nd, nr, nc]);
@@ -75,5 +85,6 @@ var shortestDistance = function (maze, start, destination) {
             }
         }
     }
+    // Heap exhausted: the ball can never stop on the destination.
     return -1;
 };

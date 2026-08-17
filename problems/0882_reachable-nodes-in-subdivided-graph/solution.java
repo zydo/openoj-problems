@@ -10,6 +10,8 @@ class Solution {
         for (int i = 0; i < n; i++) {
             adj.add(new ArrayList<>());
         }
+        // Subdividing [u, v, cnt] yields cnt + 1 unit edges, so Dijkstra on
+        // the compact graph with weight cnt + 1 gives the true distances.
         for (int[] e : edges) {
             int u = e[0],
                 v = e[1],
@@ -29,6 +31,7 @@ class Solution {
             long[] top = pq.poll();
             long d = top[0];
             int u = (int) top[1];
+            // Lazy deletion: a stale heap entry no longer matches dist[u].
             if (d != dist[u]) {
                 continue;
             }
@@ -42,11 +45,14 @@ class Solution {
             }
         }
         long result = 0;
+        // Half one: original nodes within the budget.
         for (long d : dist) {
             if (d <= maxMoves) {
                 result += 1;
             }
         }
+        // Half two: each edge contributes the frontiers walked in from both
+        // ends; min(cnt, a + b) clamps the overlap where they meet.
         for (int[] e : edges) {
             int u = e[0],
                 v = e[1],

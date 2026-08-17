@@ -28,6 +28,8 @@ class Codec:
         tree = self._build(root)
         tokens: List[str] = []
         queue: Deque[Optional[_Node]] = deque([tree])
+        # The queue holds nulls too: a null emits a token and enqueues
+        # nothing, so every child slot gets exactly one token.
         while queue:
             node = queue.popleft()
             if node is None:
@@ -36,6 +38,8 @@ class Codec:
             tokens.append(str(node.val))
             queue.append(node.left)
             queue.append(node.right)
+        # Trailing nulls only mark absent slots, so trimming them keeps
+        # the sequence uniquely recoverable.
         while tokens and tokens[-1] == "null":
             tokens.pop()
         return ",".join(tokens)
@@ -48,6 +52,8 @@ class Codec:
         queue: Deque[_Node] = deque([root])
         index = 1
         while queue and index < len(tokens):
+            # Consume tokens as child slots in queue order; a "null"
+            # fills the slot without adding a node to the queue.
             node = queue.popleft()
             if index < len(tokens):
                 token = tokens[index]
@@ -71,6 +77,8 @@ class Codec:
         queue: Deque[_Node] = deque([root])
         index = 1
         while queue and index < len(level):
+            # MARKER fills an absent child slot; markers have no
+            # children, so they never join the queue.
             node = queue.popleft()
             if index < len(level):
                 value = level[index]

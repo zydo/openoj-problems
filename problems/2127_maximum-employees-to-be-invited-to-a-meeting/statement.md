@@ -27,6 +27,8 @@ Note that the company can also invite employees 1, 2, and 3, and give them their
 The maximum number of employees that can be invited to the meeting is 3.
 ```
 
+![Employees 0, 1, and 2 seated around the round table](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -52,6 +54,8 @@ Employee 2 cannot be invited because the two spots next to their favorite employ
 So the company leaves them out of the meeting.
 The maximum number of employees that can be invited to the meeting is 4.
 ```
+
+![Employees 0, 1, 3, and 4 seated around the round table](figures/example-3.svg)
 
 ### Constraints
 

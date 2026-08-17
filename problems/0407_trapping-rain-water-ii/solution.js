@@ -45,6 +45,8 @@ var trapRainWater = function (heightMap) {
         n = heightMap[0].length;
     const visited = Array.from({ length: m }, () => new Array(n).fill(false));
     const heap = new MinHeap();
+    // Water spills off the map at the border, so the frontier starts as
+    // the whole border ring.
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
             if (i === 0 || i === m - 1 || j === 0 || j === n - 1) {
@@ -62,6 +64,8 @@ var trapRainWater = function (heightMap) {
     ];
     while (heap.size() > 0) {
         const [h, i, j] = heap.pop();
+        // h is the frontier minimum: no undiscovered cell can hold water
+        // above h, since any escape path crosses the frontier at >= h.
         for (const [di, dj] of dirs) {
             const ni = i + di,
                 nj = j + dj;
@@ -69,8 +73,11 @@ var trapRainWater = function (heightMap) {
                 visited[ni][nj] = true;
                 const nh = heightMap[ni][nj];
                 if (nh < h) {
+                    // Lower neighbor settles now, filled up to level h.
                     water += h - nh;
                 }
+                // Push max(h, nh): entries carry the effective
+                // water-plus-terrain level, the running spill level.
                 heap.push([Math.max(h, nh), ni, nj]);
             }
         }

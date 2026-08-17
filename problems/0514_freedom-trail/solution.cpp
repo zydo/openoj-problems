@@ -2,6 +2,9 @@ class Solution {
   public:
     int findRotateSteps(string ring, string key) {
         int n = ring.size();
+        // Precompute each character's indices so every stage only considers
+        // alignments that actually spell the current key character (never
+        // empty because the key is guaranteed spellable).
         vector<vector<int>> positions(26);
         for (int i = 0; i < n; i++)
             positions[ring[i] - 'a'].push_back(i);
@@ -17,6 +20,8 @@ class Solution {
             for (int j : positions[ch - 'a']) {
                 int best = INF;
                 for (int i : active) {
+                    // Circular rotation cost between alignments i and j:
+                    // the shorter of the direct and wrap-around distances.
                     int diff = abs(i - j);
                     int rot = min(diff, n - diff);
                     best = min(best, dp[i] + rot);
@@ -27,6 +32,7 @@ class Solution {
             dp = ndp;
             active = nactive;
         }
+        // Cheapest final alignment, plus one button press per key char.
         int ans = INF;
         for (int i : active)
             ans = min(ans, dp[i]);

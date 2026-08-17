@@ -6,6 +6,9 @@ impl Solution {
         if rectangles.is_empty() {
             return 0;
         }
+        // Coordinate compression: with at most 2R distinct values per
+        // axis, cell boundaries are exactly the rectangle edges, so
+        // coverage is constant within each cell.
         let mut xs_set: Vec<i64> = Vec::new();
         let mut ys_set: Vec<i64> = Vec::new();
         let mut push_unique = |v: &mut Vec<i64>, x: i64| {
@@ -34,6 +37,9 @@ impl Solution {
         let nx = xs.len() - 1;
         let ny = ys.len() - 1;
         let mut grid = vec![false; nx * ny];
+        // Mark the half-open compressed range: adjacent rectangles
+        // share edge cells without overlap or gaps, and idempotent
+        // marking counts overlaps once.
         for rect in &rectangles {
             let x1 = x_index[&(rect[0] as i64)];
             let x2 = x_index[&(rect[2] as i64)];
@@ -45,6 +51,7 @@ impl Solution {
                 }
             }
         }
+        // Sum the real areas of marked cells, reducing at each step.
         let mut total: i64 = 0;
         for i in 0..nx {
             for j in 0..ny {

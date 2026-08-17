@@ -53,6 +53,8 @@ var kSmallestPairs = function (nums1, nums2, k) {
         }
         return top;
     };
+    // Seed each active row's minimum (nums1[i], nums2[0]); rows past
+    // min(len(nums1), k) can never reach the k smallest.
     const limit = Math.min(nums1.length, k);
     for (let i = 0; i < limit; i++) push([nums1[i] + nums2[0], i, 0]);
     const result = [];
@@ -60,6 +62,9 @@ var kSmallestPairs = function (nums1, nums2, k) {
         const top = pop();
         const i = top[1],
             j = top[2];
+        // The popped pair's only unexplored successor in its row is
+        // (i, j+1); pushing it keeps the heap holding the minimum of
+        // every active row, so each pop yields the global minimum left.
         result.push([nums1[i], nums2[j]]);
         if (j + 1 < nums2.length) push([nums1[i] + nums2[j + 1], i, j + 1]);
     }

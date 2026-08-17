@@ -17,12 +17,16 @@ Explanation: Islands in gray are closed because they are completely
 surrounded by water (group of 1s).
 ```
 
+![The 5 x 8 grid with water tinted blue and the two closed islands of 0s in gray: the ring around the center and the single cell at (3, 6).](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]
 Output: 1
 ```
+
+![The 3 x 5 grid with water tinted blue; only the single 0 at (1, 2) is a closed island.](figures/example-2.svg)
 
 ### Example 3
 

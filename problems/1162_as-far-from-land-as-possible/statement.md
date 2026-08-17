@@ -18,6 +18,8 @@ Output: 2
 Explanation: The cell (1, 1) is as far as possible from all the land with distance 2.
 ```
 
+![The 3 x 3 grid with land at the four corners and the center water cell (1, 1) highlighted, 2 away from the nearest land.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -25,6 +27,8 @@ Input: grid = [[1,0,0],[0,0,0],[0,0,0]]
 Output: 4
 Explanation: The cell (2, 2) is as far as possible from all the land with distance 4.
 ```
+
+![The 3 x 3 grid with a single land cell in the top-left corner and the bottom-right water cell (2, 2) highlighted, 4 away from the only land.](figures/example-2.svg)
 
 ### Constraints
 

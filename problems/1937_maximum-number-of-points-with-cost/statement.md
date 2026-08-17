@@ -33,6 +33,8 @@ However, you must subtract abs(2 - 1) + abs(1 - 0) = 2 from your score.
 Your final score is 11 - 2 = 9.
 ```
 
+![Cells (0, 2), (1, 1), and (2, 0) are the optimal picks](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -44,6 +46,8 @@ You add 5 + 3 + 4 = 12 to your score.
 However, you must subtract abs(1 - 1) + abs(1 - 0) = 1 from your score.
 Your final score is 12 - 1 = 11.
 ```
+
+![Cells (0, 1), (1, 1), and (2, 0) are the optimal picks](figures/example-2.svg)
 
 ### Constraints
 

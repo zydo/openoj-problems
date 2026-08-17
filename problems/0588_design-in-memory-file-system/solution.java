@@ -6,7 +6,10 @@ class FileSystem {
 
     private static final class Node {
 
+        // TreeMap keeps children in lexicographic order, so keySet() is
+        // already the sorted listing ls must return.
         final TreeMap<String, Node> children = new TreeMap<>();
+        // Null content marks a directory; a file carries its text buffer.
         StringBuilder content;
     }
 
@@ -20,6 +23,7 @@ class FileSystem {
         for (String part : parts) {
             node = node.children.get(part);
         }
+        // A file answers with its own name; a directory with its children.
         if (node.content != null) {
             List<String> result = new ArrayList<>();
             result.add(parts[parts.length - 1]);
@@ -31,6 +35,7 @@ class FileSystem {
     public void mkdir(String path) {
         Node node = root;
         for (String part : split(path)) {
+            // Inserting each missing component also creates the middle dirs.
             Node next = node.children.get(part);
             if (next == null) {
                 next = new Node();
@@ -47,6 +52,7 @@ class FileSystem {
             node = node.children.get(parts[index]);
         }
         Node file = node.children.get(parts[parts.length - 1]);
+        // Create the buffer on first write, append on every later one.
         if (file == null) {
             file = new Node();
             file.content = new StringBuilder();

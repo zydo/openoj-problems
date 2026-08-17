@@ -9,6 +9,8 @@ impl Solution {
         // node -> adjacency list of (neighbor, weight) in insertion order;
         // re-adding an edge overwrites its weight in place (like Python dict).
         let mut graph: HashMap<String, Vec<(String, f64)>> = HashMap::new();
+        // Each equation a/b = v becomes a directed edge a -> b of weight v
+        // plus the reverse edge of weight 1/v (division inverts with direction).
         for (pair, &value) in equations.iter().zip(values.iter()) {
             let a = pair[0].clone();
             let b = pair[1].clone();
@@ -33,12 +35,16 @@ impl Solution {
     }
 
     fn query(graph: &HashMap<String, Vec<(String, f64)>>, start: &str, end: &str) -> f64 {
+        // An unknown variable is unanswerable (this also covers x / x for
+        // an undefined x); a known variable over itself is 1.0.
         if !graph.contains_key(start) || !graph.contains_key(end) {
             return -1.0;
         }
         if start == end {
             return 1.0;
         }
+        // BFS carrying the running product: weights along the path telescope
+        // to start / end because intermediate variables cancel.
         let mut seen: HashSet<&str> = HashSet::new();
         seen.insert(start);
         let mut queue: VecDeque<(&str, f64)> = VecDeque::new();
@@ -46,6 +52,8 @@ impl Solution {
         while let Some((node, product)) = queue.pop_front() {
             for (neighbor, weight) in graph[node].iter() {
                 if neighbor.as_str() == end {
+                    // Equations are consistent, so the first path found
+                    // already yields the correct quotient.
                     return product * weight;
                 }
                 if !seen.contains(neighbor.as_str()) {

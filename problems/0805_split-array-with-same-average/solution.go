@@ -5,6 +5,8 @@ func splitArraySameAverage(nums []int) bool {
 		total += v
 	}
 
+	// Enumerate one half (at most 2^(n/2) subsets), grouping
+	// achievable sums by subset size.
 	// Map from subset size -> set of achievable sums with that size.
 	subsetSums := func(arr []int) map[int]map[int]bool {
 		d := make(map[int]map[int]bool)
@@ -31,11 +33,16 @@ func splitArraySameAverage(nums []int) bool {
 	right := subsetSums(nums[mid:])
 	nr := n - mid
 
+	// Equal averages force both parts to the whole-array average
+	// total/n, so seek a proper subset of size s summing to
+	// total*s/n; only sizes with an integer target can work, and
+	// s in 1..n-1 keeps both parts non-empty.
 	for s := 1; s < n; s++ {
 		if (total*s)%n != 0 {
 			continue
 		}
 		target := total * s / n
+		// Clamp s1 so both pieces actually fit in their halves.
 		lo := s - nr
 		if lo < 0 {
 			lo = 0
@@ -52,6 +59,8 @@ func splitArraySameAverage(nums []int) bool {
 			if _, ok := right[s2]; !ok {
 				continue
 			}
+			// Assemble: a left sum v plus a right sum target - v
+			// builds a valid subset (only sums, not identities).
 			for v := range left[s1] {
 				if right[s2][target-v] {
 					return true

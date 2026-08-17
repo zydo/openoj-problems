@@ -7,8 +7,13 @@ class Solution {
         vector<long long> r(arr.begin() + mid, arr.end());
         auto [left, c1] = mergeCount(l);
         auto [right, c2] = mergeCount(r);
+        // Pairs inside either half are already counted; only cross pairs
+        // remain, and both halves come back sorted.
         long long count = c1 + c2;
         // count cross reverse pairs: left[i] > 2 * right[j]
+        // j never restarts: the next left[i] is at least as large, so
+        // every right element already passed also qualifies — the sweep is
+        // linear per merge level.
         size_t j = 0;
         for (size_t i = 0; i < left.size(); i++) {
             while (j < right.size() && left[i] > 2LL * right[j]) {
@@ -37,6 +42,8 @@ class Solution {
 
   public:
     int reversePairs(vector<int> &nums) {
+        // Widen to 64-bit: values reach both int32 extremes and 2 * value
+        // would overflow.
         vector<long long> arr(nums.begin(), nums.end());
         return (int)mergeCount(arr).second;
     }

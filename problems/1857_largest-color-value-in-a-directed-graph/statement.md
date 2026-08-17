@@ -26,6 +26,8 @@ Output: 3
 Explanation: The path 0 -> 2 -> 3 -> 4 contains 3 nodes that are colored "a".
 ```
 
+![Example 1 graph](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,6 +35,8 @@ Input: colors = "a", edges = [[0,0]]
 Output: -1
 Explanation: There is a cycle from 0 to 0.
 ```
+
+![Example 2 graph](figures/example-2.svg)
 
 ### Constraints
 

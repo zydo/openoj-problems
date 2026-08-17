@@ -22,12 +22,14 @@ class MyCalendar {
             }
         }
         int index = low - 1; // last booking with start <= startTime
+        // Half-open intervals: strict tests mean touching endpoints coexist.
         if (index >= 0 && ends.get(index) > startTime) {
             return false;
         }
         if (index + 1 < starts.size() && starts.get(index + 1) < endTime) {
             return false;
         }
+        // Insert exactly at the searched position — stays sorted, no re-sort.
         starts.add(index + 1, startTime);
         ends.add(index + 1, endTime);
         return true;

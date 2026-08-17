@@ -8,9 +8,14 @@ func diameterOfBinaryTree(root *TreeNode) int {
 		}
 		left := height(node.Left)
 		right := height(node.Right)
+		// The longest path anchored at this node joins its two subtree
+		// heights (in edges); the best anchor may bypass the root, so
+		// every node contributes a candidate.
 		if left+right > diameter {
 			diameter = left + right
 		}
+		// Return the one-sided height — what the parent's candidate
+		// needs, deliberately distinct from the two-sided diameter.
 		if left > right {
 			return 1 + left
 		}

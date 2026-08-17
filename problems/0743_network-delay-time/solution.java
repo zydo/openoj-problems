@@ -19,7 +19,10 @@ class Solution {
             int[] top = heap.poll();
             int d = top[0],
                 u = top[1];
+            // Lazy stale-entry handling: skip nodes settled by an earlier pop.
             if (dist.containsKey(u)) continue;
+            // Non-negative weights make the first pop the true shortest
+            // distance, so u is final now and never revisited.
             dist.put(u, d);
             List<int[]> edges = graph.get(u);
             if (edges != null) {
@@ -31,7 +34,9 @@ class Solution {
             }
         }
 
+        // Fewer than n settled nodes means something is unreachable from k.
         if (dist.size() != n) return -1;
+        // The last node to hear the signal sets the answer.
         int best = 0;
         for (int v : dist.values()) {
             if (v > best) best = v;

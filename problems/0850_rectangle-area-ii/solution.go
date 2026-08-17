@@ -5,6 +5,9 @@ func rectangleArea(rectangles [][]int) int {
 	if len(rectangles) == 0 {
 		return 0
 	}
+	// Coordinate compression: with at most 2R distinct values per
+	// axis, cell boundaries are exactly the rectangle edges, so
+	// coverage is constant within each cell.
 	xsSet := map[int64]struct{}{}
 	ysSet := map[int64]struct{}{}
 	for _, rect := range rectangles {
@@ -37,6 +40,9 @@ func rectangleArea(rectangles [][]int) int {
 	for i := range grid {
 		grid[i] = make([]bool, ny)
 	}
+	// Mark the half-open compressed range: adjacent rectangles
+	// share edge cells without overlap or gaps, and idempotent
+	// marking counts overlaps once.
 	for _, rect := range rectangles {
 		x1 := xIndex[int64(rect[0])]
 		x2 := xIndex[int64(rect[2])]
@@ -48,6 +54,7 @@ func rectangleArea(rectangles [][]int) int {
 			}
 		}
 	}
+	// Sum the real areas of marked cells, reducing at each step.
 	total := int64(0)
 	for i := 0; i < nx; i++ {
 		for j := 0; j < ny; j++ {

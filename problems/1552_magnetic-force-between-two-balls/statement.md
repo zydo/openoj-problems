@@ -24,6 +24,8 @@ magnetic force between ball pairs [3, 3, 6]. The minimum magnetic force is 3.
 We cannot achieve a larger minimum magnetic force than 3.
 ```
 
+![Baskets on a number line with balls at 1, 4 and 7; both neighbouring gaps are 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

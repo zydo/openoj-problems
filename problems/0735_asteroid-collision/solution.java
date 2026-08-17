@@ -4,9 +4,12 @@ import java.util.Deque;
 class Solution {
 
     public int[] asteroidCollision(int[] asteroids) {
+        // The stack holds survivors — internally stable, all collisions resolved.
         Deque<Integer> stack = new ArrayDeque<>();
         for (int asteroid : asteroids) {
             boolean alive = true;
+            // A newcomer can only fight the top, and only when it moves left
+            // against a right-moving survivor; other pairs never meet.
             while (
                 alive &&
                 !stack.isEmpty() &&
@@ -15,11 +18,14 @@ class Solution {
             ) {
                 int top = stack.peekLast();
                 if (top < -asteroid) {
+                    // Top explodes; the newcomer continues against the new top.
                     stack.pollLast();
                 } else if (top == -asteroid) {
+                    // Equal sizes: both explode.
                     stack.pollLast();
                     alive = false;
                 } else {
+                    // Top is larger: the newcomer explodes.
                     alive = false;
                 }
             }

@@ -7,6 +7,10 @@ func getSkyline(buildings [][]int) [][]int {
 		events = append(events, [4]int{b[0], 0, -b[2], b[1]})
 		events = append(events, [4]int{b[1], 1, b[2], b[1]})
 	}
+	// The 4-tuple ordering encodes the tie-breaking: starts (kind 0) before
+	// ends (kind 1) at equal x so adjacent buildings hand off without a dip
+	// to ground; taller starts first (-height); shorter ends first so a tall
+	// building survives until its own right edge.
 	sort.Slice(events, func(i, j int) bool {
 		for k := 0; k < 4; k++ {
 			if events[i][k] != events[j][k] {
@@ -55,6 +59,8 @@ func getSkyline(buildings [][]int) [][]int {
 	previousHeight := 0
 	for _, ev := range events {
 		x, kind, key, right := ev[0], ev[1], ev[2], ev[3]
+		// Lazy removal: pop top entries whose building has ended; stale
+		// entries below the top are harmless until they surface.
 		for len(heap) > 0 && heap[0][1] <= x {
 			pop()
 		}
@@ -62,6 +68,8 @@ func getSkyline(buildings [][]int) [][]int {
 			push([2]int{-key, right})
 		}
 		currentHeight := heap[0][0]
+		// Emit a key point only when the contour height actually changes,
+		// which also merges consecutive equal-height segments.
 		if currentHeight != previousHeight {
 			result = append(result, []int{x, currentHeight})
 			previousHeight = currentHeight

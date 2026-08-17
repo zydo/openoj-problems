@@ -15,6 +15,8 @@ class Solution {
             }
             adj.emplace_back(b, w);
         };
+        // Each equation a/b = v becomes a directed edge a -> b of weight v
+        // plus the reverse edge of weight 1/v (division inverts with direction).
         for (size_t i = 0; i < equations.size(); i++) {
             const string &a = equations[i][0];
             const string &b = equations[i][1];
@@ -33,10 +35,14 @@ class Solution {
   private:
     double query(unordered_map<string, vector<pair<string, double>>> &graph, const string &start,
                  const string &end) {
+        // An unknown variable is unanswerable (this also covers x / x for
+        // an undefined x); a known variable over itself is 1.0.
         if (graph.find(start) == graph.end() || graph.find(end) == graph.end())
             return -1.0;
         if (start == end)
             return 1.0;
+        // BFS carrying the running product: weights along the path telescope
+        // to start / end because intermediate variables cancel.
         unordered_set<string> seen;
         seen.insert(start);
         deque<pair<string, double>> queue;
@@ -46,6 +52,8 @@ class Solution {
             queue.pop_front();
             for (auto &[neighbor, weight] : graph[node]) {
                 if (neighbor == end) {
+                    // Equations are consistent, so the first path found
+                    // already yields the correct quotient.
                     return product * weight;
                 }
                 if (seen.find(neighbor) == seen.end()) {

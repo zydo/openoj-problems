@@ -41,12 +41,18 @@ function findMaximizedCapital(
     };
     let index = 0;
     let current = w;
+    // Greedy: each round finish the affordable project with the largest
+    // profit — finishing only adds capital, so the affordable set never
+    // shrinks. At most min(k, n) picks: only n distinct projects exist.
     const limit = Math.min(k, n);
     for (let iter = 0; iter < limit; iter++) {
+        // Sweep every newly affordable project into the heap once; a
+        // project affordable now stays affordable forever.
         while (index < n && projects[index][0] <= current) {
             push(projects[index][1]);
             index++;
         }
+        // Heap empty: capital is too low to start anything left.
         if (heap.length === 0) break;
         current += pop();
     }

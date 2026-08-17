@@ -47,7 +47,10 @@ var networkDelayTime = function (times, n, k) {
     push([0, k]);
     while (heap.length > 0) {
         const [d, u] = pop();
+        // Lazy stale-entry handling: skip nodes settled by an earlier pop.
         if (dist.has(u)) continue;
+        // Non-negative weights make the first pop the true shortest distance,
+        // so u is final now and never revisited.
         dist.set(u, d);
         const edges = graph.get(u);
         if (edges) {
@@ -57,7 +60,9 @@ var networkDelayTime = function (times, n, k) {
         }
     }
 
+    // Fewer than n settled nodes means something is unreachable from k.
     if (dist.size !== n) return -1;
+    // The last node to hear the signal sets the answer.
     let best = 0;
     for (const d of dist.values()) {
         if (d > best) best = d;

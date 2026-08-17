@@ -33,6 +33,8 @@ Cherries taken by Robot #2, (1 + 5 + 5 + 1) = 12.
 Total of cherries: 12 + 12 = 24.
 ```
 
+![The 4x3 grid with robot #1's green path collecting 12 and robot #2's blue path collecting 12.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -43,6 +45,8 @@ Cherries taken by Robot #1, (1 + 9 + 5 + 2) = 17.
 Cherries taken by Robot #2, (1 + 3 + 4 + 3) = 11.
 Total of cherries: 17 + 11 = 28.
 ```
+
+![The 5x7 grid with robot #1's green path collecting 17 and robot #2's blue path collecting 11.](figures/example-2.svg)
 
 ### Constraints
 

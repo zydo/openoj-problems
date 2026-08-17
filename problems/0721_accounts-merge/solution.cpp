@@ -12,6 +12,7 @@ class Solution {
             }
             if (it->second == x)
                 return x;
+            // Recursive find with full path compression: repoint x at its root.
             string r = find(it->second);
             it->second = r;
             return r;
@@ -23,6 +24,8 @@ class Solution {
                     parent[account[i]] = account[i];
                 owner[account[i]] = account[0];
             }
+            // Unioning with the first email links the whole account — and,
+            // transitively, any chain of accounts sharing emails.
             for (size_t i = 2; i < account.size(); i++) {
                 string ra = find(account[1]);
                 string rb = find(account[i]);
@@ -31,6 +34,8 @@ class Solution {
             }
         }
 
+        // Second pass in input order: merge order follows the earliest-appearing
+        // email of each component, exactly as the judge requires.
         unordered_map<string, int> index;
         vector<vector<string>> groups;
         for (const auto &account : accounts) {
@@ -41,6 +46,7 @@ class Solution {
                 if (it == index.end()) {
                     idx = (int)groups.size();
                     index.emplace(root, idx);
+                    // The root's owner names the component.
                     groups.push_back({owner[root]});
                 } else {
                     idx = it->second;
@@ -51,6 +57,7 @@ class Solution {
 
         vector<vector<string>> merged;
         merged.reserve(groups.size());
+        // Sort each component's emails and drop duplicates within one account.
         for (auto &g : groups) {
             sort(g.begin() + 1, g.end());
             g.erase(unique(g.begin() + 1, g.end()), g.end());

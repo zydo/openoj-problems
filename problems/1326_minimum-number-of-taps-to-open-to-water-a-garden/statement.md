@@ -28,6 +28,8 @@ The tap at point 5 can cover the interval [5,5].
 Opening only the second tap will water the whole garden [0,5].
 ```
 
+![The taps on a number line from -3 to 5 with their spray ranges drawn as bars; tap 1's range [-3, 5] alone covers the whole garden.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

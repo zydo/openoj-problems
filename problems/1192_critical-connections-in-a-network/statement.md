@@ -20,6 +20,8 @@ Output: [[1,3]]
 Explanation: [[3,1]] is also accepted.
 ```
 
+![Four servers, with 0-1-2 forming a cycle and the critical connection 1-3 highlighted in blue.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

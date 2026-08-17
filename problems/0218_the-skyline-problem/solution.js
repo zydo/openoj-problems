@@ -9,6 +9,10 @@ var getSkyline = function (buildings) {
         events.push([left, 0, -height, right]);
         events.push([right, 1, height, right]);
     }
+    // The 4-field comparison encodes the tie-breaking: starts (kind 0)
+    // before ends (kind 1) at equal x so adjacent buildings hand off without
+    // a dip to ground; taller starts first (-height); shorter ends first so
+    // a tall building survives until its own right edge.
     events.sort(
         (a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2] || a[3] - b[3],
     );
@@ -52,6 +56,8 @@ var getSkyline = function (buildings) {
     const result = [];
     let previousHeight = 0;
     for (const [x, kind, key, right] of events) {
+        // Lazy removal: pop top entries whose building has ended; stale
+        // entries below the top are harmless until they surface.
         while (heap.length > 0 && heap[0][1] <= x) {
             pop();
         }
@@ -59,6 +65,8 @@ var getSkyline = function (buildings) {
             push([-key, right]);
         }
         const currentHeight = heap[0][0];
+        // Emit a key point only when the contour height actually changes,
+        // which also merges consecutive equal-height segments.
         if (currentHeight !== previousHeight) {
             result.push([x, currentHeight]);
             previousHeight = currentHeight;

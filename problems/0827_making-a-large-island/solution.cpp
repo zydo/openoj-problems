@@ -2,6 +2,9 @@ class Solution {
   public:
     int largestIsland(vector<vector<int>> &grid) {
         int n = grid.size();
+        // Label each 4-connected island with a distinct color and
+        // record its size; marking cells as they are pushed finds each
+        // island exactly once.
         vector<vector<int>> label(n, vector<int>(n, 0));
         unordered_map<int, int> sizes;
 
@@ -39,6 +42,8 @@ class Solution {
             }
         }
 
+        // Best starts at the largest existing island — also the answer
+        // when the grid is all 1s and no 0 exists to flip.
         int best = 0;
         for (auto &[c, size] : sizes) {
             best = max(best, size);
@@ -48,6 +53,9 @@ class Solution {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] == 0) {
+                    // Dedup matters: one island can touch this 0 on
+                    // several sides, and counting it twice would
+                    // overstate the merge.
                     unordered_set<int> seen;
                     for (int d = 0; d < 4; d++) {
                         int ni = i + di[d];
@@ -56,6 +64,8 @@ class Solution {
                             seen.insert(label[ni][nj]);
                         }
                     }
+                    // Flipping this 0 merges it with the distinct
+                    // neighboring islands.
                     int total = 1;
                     for (int c : seen) {
                         total += sizes[c];

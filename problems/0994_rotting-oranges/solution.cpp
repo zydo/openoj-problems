@@ -6,6 +6,9 @@ class Solution {
         vector<vector<int>> g = grid;
         queue<array<int, 3>> q;
         int fresh = 0;
+        // Multi-source BFS: every rotten orange starts at t = 0; the answer
+        // is the time the last fresh orange rots. Count fresh cells so
+        // walled-off stragglers can be detected at the end.
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 if (g[r][c] == 2) {
@@ -21,11 +24,14 @@ class Solution {
         while (!q.empty()) {
             auto [r, c, t] = q.front();
             q.pop();
+            // Tracking the max infection time spares per-minute batching.
             minutes = max(minutes, t);
             for (int d = 0; d < 4; d++) {
                 int nr = r + dr[d];
                 int nc = c + dc[d];
                 if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && g[nr][nc] == 1) {
+                    // Flip to rotten on enqueue: each cell queues at most
+                    // once and `fresh` stays in sync with the grid.
                     g[nr][nc] = 2;
                     fresh--;
                     q.push({nr, nc, t + 1});

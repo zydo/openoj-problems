@@ -12,6 +12,9 @@ class Solution {
         }
         Deque<int[]> queue = new ArrayDeque<>();
         int fresh = 0;
+        // Multi-source BFS: every rotten orange starts at t = 0; the answer
+        // is the time the last fresh orange rots. Count fresh cells so
+        // walled-off stragglers can be detected at the end.
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 if (g[r][c] == 2) {
@@ -28,6 +31,7 @@ class Solution {
             int r = cur[0],
                 c = cur[1],
                 t = cur[2];
+            // Tracking the max infection time spares per-minute batching.
             if (t > minutes) {
                 minutes = t;
             }
@@ -41,6 +45,8 @@ class Solution {
                     nc < cols &&
                     g[nr][nc] == 1
                 ) {
+                    // Flip to rotten on enqueue: each cell queues at most
+                    // once and `fresh` stays in sync with the grid.
                     g[nr][nc] = 2;
                     fresh--;
                     queue.offer(new int[] { nr, nc, t + 1 });

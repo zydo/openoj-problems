@@ -10,6 +10,8 @@ func updateMatrix(mat [][]int) [][]int {
 	}
 	type cell struct{ i, j int }
 	queue := make([]cell, 0, m*n)
+	// Reverse the question: every zero broadcasts at distance 0 and the
+	// first wavefront to reach a cell arrives on a shortest path.
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			if mat[i][j] == 0 {
@@ -28,6 +30,10 @@ func updateMatrix(mat [][]int) [][]int {
 			ni := c.i + di[d]
 			nj := c.j + dj[d]
 			if ni >= 0 && ni < m && nj >= 0 && nj < n && dist[ni][nj] == -1 {
+				// An unset distance doubles as the visited check, and
+				// assigning before enqueueing keeps each cell queued
+				// exactly once; non-decreasing dequeue order makes the
+				// first assignment final.
 				dist[ni][nj] = dist[c.i][c.j] + 1
 				queue = append(queue, cell{ni, nj})
 			}

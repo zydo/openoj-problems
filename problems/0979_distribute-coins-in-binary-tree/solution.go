@@ -9,6 +9,8 @@ func distributeCoins(root *TreeNode) int {
 		}
 		left := dfs(node.Left)
 		right := dfs(node.Right)
+		// Each |excess| is the flow on that child edge; flows on separate
+		// edges never interfere, so summing them is the total moves.
 		if left < 0 {
 			moves += -left
 		} else {
@@ -19,6 +21,7 @@ func distributeCoins(root *TreeNode) int {
 		} else {
 			moves += right
 		}
+		// Keep one coin for this node; the rest is the parent-bound flow.
 		return node.Val + left + right - 1
 	}
 

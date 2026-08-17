@@ -1,5 +1,8 @@
 func largestIsland(grid [][]int) int {
 	n := len(grid)
+	// Label each 4-connected island with a distinct color and
+	// record its size; marking cells as they are pushed finds each
+	// island exactly once.
 	label := make([][]int, n)
 	for i := range label {
 		label[i] = make([]int, n)
@@ -39,6 +42,8 @@ func largestIsland(grid [][]int) int {
 		}
 	}
 
+	// Best starts at the largest existing island — also the answer
+	// when the grid is all 1s and no 0 exists to flip.
 	best := 0
 	for _, size := range sizes {
 		if size > best {
@@ -49,6 +54,9 @@ func largestIsland(grid [][]int) int {
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
 			if grid[i][j] == 0 {
+				// Dedup matters: one island can touch this 0 on
+				// several sides, and counting it twice would
+				// overstate the merge.
 				seen := make(map[int]bool)
 				total := 1
 				for _, d := range dirs {

@@ -28,6 +28,8 @@ Person 4 can see person 5.
 Person 5 can see no one since nobody is to the right of them.
 ```
 
+![Queue of six people with heights 10, 6, 8, 5, 11, and 9](figures/example-1.svg)
+
 ### Example 2
 
 ```text

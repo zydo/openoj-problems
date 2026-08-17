@@ -22,6 +22,8 @@ The possible falling paths are:
 The falling path with the smallest sum is [1,5,7], so the answer is 13.
 ```
 
+![The 3 x 3 grid of 1 through 9 with the falling path 1 - 5 - 7 highlighted in blue, always shifting column between rows.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

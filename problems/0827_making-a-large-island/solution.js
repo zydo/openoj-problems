@@ -4,6 +4,9 @@
  */
 var largestIsland = function (grid) {
     const n = grid.length;
+    // Label each 4-connected island with a distinct color and
+    // record its size; marking cells as they are pushed finds each
+    // island exactly once.
     const label = [];
     for (let i = 0; i < n; i++) {
         label.push(new Array(n).fill(0));
@@ -52,6 +55,8 @@ var largestIsland = function (grid) {
         }
     }
 
+    // Best starts at the largest existing island — also the answer
+    // when the grid is all 1s and no 0 exists to flip.
     let best = 0;
     for (const value of sizes.values()) {
         if (value > best) {
@@ -61,6 +66,9 @@ var largestIsland = function (grid) {
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < n; j++) {
             if (grid[i][j] === 0) {
+                // Dedup matters: one island can touch this 0 on
+                // several sides, and counting it twice would
+                // overstate the merge.
                 const seen = new Set();
                 const dirs = [
                     [1, 0],
@@ -81,6 +89,8 @@ var largestIsland = function (grid) {
                         seen.add(label[ni][nj]);
                     }
                 }
+                // Flipping this 0 merges it with the distinct
+                // neighboring islands.
                 let total = 1;
                 for (const c of seen) {
                     total += sizes.get(c);

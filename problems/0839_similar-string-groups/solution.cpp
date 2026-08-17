@@ -5,6 +5,7 @@ class Solution {
         vector<int> parent(n);
         iota(parent.begin(), parent.end(), 0);
 
+        // Path halving keeps repeated lookups nearly constant.
         auto find = [&](int x) {
             while (parent[x] != x) {
                 parent[x] = parent[parent[x]];
@@ -13,6 +14,9 @@ class Solution {
             return x;
         };
 
+        // All words are mutual anagrams, so they are similar iff they
+        // differ in 0 or 2 positions — exactly what one swap fixes;
+        // bail on the third mismatch.
         auto similar = [&](const string &a, const string &b) {
             int mismatches = 0;
             for (size_t i = 0; i < a.size(); i++) {
@@ -26,6 +30,8 @@ class Solution {
             return mismatches == 0 || mismatches == 2;
         };
 
+        // Union every similar pair: groups are the transitive closure,
+        // so indirectly similar words share a root.
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (similar(strs[i], strs[j])) {
@@ -38,6 +44,7 @@ class Solution {
             }
         }
 
+        // The answer is the number of distinct roots remaining.
         unordered_set<int> roots;
         for (int i = 0; i < n; i++) {
             roots.insert(find(i));

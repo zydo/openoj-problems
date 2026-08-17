@@ -17,6 +17,8 @@ Explanation: You can rearrange the columns as shown above.
 The largest submatrix of 1s, in bold, has an area of 4.
 ```
 
+![Example 1 rearrangement](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -25,6 +27,8 @@ Output: 3
 Explanation: You can rearrange the columns as shown above.
 The largest submatrix of 1s, in bold, has an area of 3.
 ```
+
+![Example 2 rearrangement](figures/example-2.svg)
 
 ### Example 3
 

@@ -28,6 +28,8 @@ and greater than the -1 perimeter cells above and to the right, so [0,1] is
 the peak.
 ```
 
+![Example 1 matrix](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -36,6 +38,8 @@ Output: [1,1]
 Explanation: 30 is strictly greater than its neighbors 20 (above), 16 (below),
 21 (left), and 14 (right), so [1,1] is the peak.
 ```
+
+![Example 2 matrix](figures/example-2.svg)
 
 ### Constraints
 

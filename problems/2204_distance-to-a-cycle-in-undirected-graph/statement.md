@@ -32,6 +32,8 @@ The distance from 5 to 2 is 1.
 The distance from 6 to 2 is 2.
 ```
 
+![Nodes 1, 2, 3, and 4 form the cycle, with tails hanging off nodes 1 and 2](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -49,6 +51,8 @@ The distance from 6 to 2 is 1.
 The distance from 7 to 2 is 2.
 The distance from 8 to 2 is 2.
 ```
+
+![Nodes 0, 1, and 2 form the cycle, with tails hanging off nodes 0 and 2](figures/example-2.svg)
 
 ### Constraints
 

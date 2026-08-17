@@ -6,6 +6,8 @@ var pacificAtlantic = function (heights) {
     const m = heights.length;
     const n = heights[0].length;
 
+    // Reverse the flow: walk inland from the ocean border instead of
+    // downhill from every cell, so one traversal finds all draining cells.
     const reachable = (border) => {
         const seen = Array.from({ length: m }, () => new Array(n).fill(false));
         const stack = [];
@@ -26,6 +28,8 @@ var pacificAtlantic = function (heights) {
             for (const [dr, dc] of dirs) {
                 const nr = r + dr;
                 const nc = c + dc;
+                // Only a neighbor at least as tall could have flowed down
+                // into (r, c).
                 if (
                     nr >= 0 &&
                     nr < m &&
@@ -34,6 +38,7 @@ var pacificAtlantic = function (heights) {
                     !seen[nr][nc] &&
                     heights[nr][nc] >= heights[r][c]
                 ) {
+                    // Mark on push so each cell is stacked at most once.
                     seen[nr][nc] = true;
                     stack.push([nr, nc]);
                 }
@@ -42,6 +47,8 @@ var pacificAtlantic = function (heights) {
         return seen;
     };
 
+    // Pacific seeds: top row + left column; Atlantic: bottom row + right
+    // column. Corners appear in both seed lists.
     const pacificBorder = [];
     for (let c = 0; c < n; c++) pacificBorder.push([0, c]);
     for (let r = 0; r < m; r++) pacificBorder.push([r, 0]);
@@ -52,6 +59,7 @@ var pacificAtlantic = function (heights) {
     const pacific = reachable(pacificBorder);
     const atlantic = reachable(atlanticBorder);
 
+    // Row-major intersection of the two reachable sets comes out sorted.
     const result = [];
     for (let r = 0; r < m; r++) {
         for (let c = 0; c < n; c++) {

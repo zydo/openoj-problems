@@ -2,6 +2,8 @@ class Solution {
   public:
     int countRangeSum(vector<int> &nums, int lower, int upper) {
         int n = (int)nums.size();
+        // Range sums become pairs: count i < j with
+        // prefix[j] - prefix[i] in [lower, upper] (leading 0 included).
         vector<long long> prefix(n + 1, 0);
         for (int i = 0; i < n; i++) {
             prefix[i + 1] = prefix[i] + nums[i];
@@ -15,9 +17,13 @@ class Solution {
             return 0;
         }
         int mid = lo + (hi - lo) / 2;
+        // Pairs inside each half first; cross pairs next.
         long long count = mergeCount(prefix, lo, mid, lower, upper) +
                           mergeCount(prefix, mid + 1, hi, lower, upper);
 
+        // Left half is sorted, so for each left prefix the valid right
+        // entries form the window [l, r): l skips below-lower, r passes
+        // at-most-upper; both pointers only ever move forward.
         int l = mid + 1;
         int r = mid + 1;
         for (int i = lo; i <= mid; i++) {
@@ -30,6 +36,8 @@ class Solution {
             count += r - l;
         }
 
+        // Standard merge re-sorts the range, restoring the invariant
+        // the parent level relies on.
         vector<long long> merged;
         merged.reserve(hi - lo + 1);
         int i = lo, j = mid + 1;

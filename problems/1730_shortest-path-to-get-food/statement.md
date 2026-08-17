@@ -27,6 +27,8 @@ Output: 3
 Explanation: It takes 3 steps to reach the food.
 ```
 
+![Example 1 grid](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Output: -1
 Explanation: It is not possible to reach the food.
 ```
 
+![Example 2 grid](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -42,6 +46,8 @@ Input: grid = [["X","X","X","X","X","X","X","X"],["X","*","O","X","O","#","O","X
 Output: 6
 Explanation: There can be multiple food cells. It only takes 6 steps to reach the bottom food.
 ```
+
+![Example 3 grid](figures/example-3.svg)
 
 ### Example 4
 

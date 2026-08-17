@@ -15,6 +15,8 @@ Explanation: The maximum side length of square with sum less than or equal
 to 4 is 2 as shown.
 ```
 
+![The 3 x 7 matrix with the side-2 square of 1s outlined in blue, summing to exactly 4.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

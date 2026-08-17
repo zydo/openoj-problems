@@ -22,12 +22,16 @@ Output: 1
 Explanation: Remove cable between computer 1 and 2 and place between computers 1 and 3.
 ```
 
+![Before and after: the redundant cable 1-2 is dashed out and relaid as the blue cable 1-3, connecting the isolated computer 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: n = 6, connections = [[0,1],[0,2],[0,3],[1,2],[1,3]]
 Output: 2
 ```
+
+![Before and after: two redundant cables among computers 0-3 are dashed out and relaid in blue to connect the isolated computers 4 and 5.](figures/example-2.svg)
 
 ### Example 3
 

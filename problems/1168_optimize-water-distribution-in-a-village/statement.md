@@ -25,6 +25,8 @@ The best strategy is to build a well in the first house with cost 1 and connect
 the other houses to it with cost 2 so the total cost is 3.
 ```
 
+![Three houses with well costs 1, 2 and 2, joined by the two pipes of cost 1; the chosen well at house 1 and both pipes are highlighted, totaling 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

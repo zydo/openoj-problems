@@ -9,6 +9,9 @@ class Solution {
     public int rectangleArea(int[][] rectangles) {
         final long MOD = 1000000007L;
         if (rectangles.length == 0) return 0;
+        // Coordinate compression: with at most 2R distinct values per
+        // axis, cell boundaries are exactly the rectangle edges, so
+        // coverage is constant within each cell.
         TreeSet<Long> xsSet = new TreeSet<>();
         TreeSet<Long> ysSet = new TreeSet<>();
         for (int[] rect : rectangles) {
@@ -26,6 +29,9 @@ class Solution {
         int nx = xs.size() - 1;
         int ny = ys.size() - 1;
         boolean[][] grid = new boolean[nx][ny];
+        // Mark the half-open compressed range: adjacent rectangles
+        // share edge cells without overlap or gaps, and idempotent
+        // marking counts overlaps once.
         for (int[] rect : rectangles) {
             for (
                 int i = xIndex.get((long) rect[0]);
@@ -41,6 +47,7 @@ class Solution {
                 }
             }
         }
+        // Sum the real areas of marked cells, reducing at each step.
         long total = 0;
         for (int i = 0; i < nx; i++) {
             for (int j = 0; j < ny; j++) {

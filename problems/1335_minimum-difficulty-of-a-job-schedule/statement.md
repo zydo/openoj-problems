@@ -26,6 +26,8 @@ Second day you can finish the last job, total difficulty = 1.
 The difficulty of the schedule = 6 + 1 = 7.
 ```
 
+![The six jobs split over two days: the first five under day 1 with hardest job 6, and the last job alone under day 2, for a total of 7.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

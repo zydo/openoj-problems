@@ -21,6 +21,8 @@ func findItinerary(tickets [][]string) []string {
 			graph[airport] = adj[:len(adj)-1]
 			stack = append(stack, next)
 		} else {
+			// No unused edges left: emit in postorder so dead-end
+			// airports land at their latest possible position.
 			route = append(route, airport)
 			stack = stack[:len(stack)-1]
 		}

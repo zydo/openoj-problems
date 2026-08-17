@@ -19,6 +19,8 @@ There is 1 rectangle of side 3x1.
 Total number of rectangles = 6 + 2 + 3 + 1 + 1 = 13.
 ```
 
+![The 3x3 matrix with the six 1-cells shaded; they form 13 all-ones submatrices.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -34,6 +36,8 @@ There are 2 rectangles of side 3x1.
 There is 1 rectangle of side 3x2.
 Total number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24.
 ```
+
+![The 3x4 matrix with the eight 1-cells shaded; they form 24 all-ones submatrices.](figures/example-2.svg)
 
 ### Constraints
 

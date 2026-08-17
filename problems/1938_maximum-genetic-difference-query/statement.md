@@ -28,6 +28,8 @@ Explanation: The queries are processed as follows:
 - [2,5]: The node with the maximum genetic difference is 2, with a difference of 5 XOR 2 = 7.
 ```
 
+![Tree with root 0, child 1, and leaves 2 and 3](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -38,6 +40,8 @@ Explanation: The queries are processed as follows:
 - [1,15]: The node with the maximum genetic difference is 1, with a difference of 15 XOR 1 = 14.
 - [0,5]: The node with the maximum genetic difference is 2, with a difference of 5 XOR 2 = 7.
 ```
+
+![Tree with root 2 whose subtree spans all eight nodes](figures/example-2.svg)
 
 ### Constraints
 

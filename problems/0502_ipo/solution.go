@@ -30,18 +30,25 @@ func findMaximizedCapital(k int, w int, profits []int, capital []int) int {
 		}
 		return projects[i].p < projects[j].p
 	})
+	// Greedy: each round finish the affordable project with the largest
+	// profit — finishing only adds capital, so the affordable set never
+	// shrinks and no smaller-profit pick can unlock more later.
 	affordable := &ipoHeap{}
 	index := 0
 	current := w
+	// At most min(k, n) picks: only n distinct projects exist.
 	limit := k
 	if limit > n {
 		limit = n
 	}
 	for iter := 0; iter < limit; iter++ {
+		// Sweep every newly affordable project into the heap once; a
+		// project affordable now stays affordable forever.
 		for index < n && projects[index].c <= current {
 			heap.Push(affordable, projects[index].p)
 			index++
 		}
+		// Heap empty: capital is too low to start anything left.
 		if affordable.Len() == 0 {
 			break
 		}

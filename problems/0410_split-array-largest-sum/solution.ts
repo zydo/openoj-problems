@@ -1,5 +1,7 @@
 function splitArray(nums: number[], k: number): number {
     function feasible(limit: number): boolean {
+        // Greedy piece count under the limit: extending each piece as far
+        // as possible never forces more pieces later.
         let pieces = 1;
         let current = 0;
         for (const value of nums) {
@@ -16,6 +18,9 @@ function splitArray(nums: number[], k: number): number {
         return true;
     }
 
+    // Binary-search the answer: the smallest limit for which k pieces
+    // suffice (the piece count only falls as the limit rises). Bounds:
+    // no element can be split, and one piece covering everything works.
     let lo = -Infinity;
     let hi = 0;
     for (const value of nums) {

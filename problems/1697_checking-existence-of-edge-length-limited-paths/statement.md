@@ -29,12 +29,16 @@ For the second query, there is a path (0 -> 1 -> 2) of two edges with
 distances less than 5, thus we return true for this query.
 ```
 
+![Example 1 graph](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: n = 5, edgeList = [[0,1,10],[1,2,5],[2,3,9],[3,4,13]], queries = [[0,4,14],[1,4,13]]
 Output: [true,false]
 ```
+
+![Example 2 graph](figures/example-2.svg)
 
 ### Constraints
 

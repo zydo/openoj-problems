@@ -2,6 +2,8 @@ class Solution {
   public:
     int sumSubseqWidths(vector<int> &nums) {
         const long long MOD = 1000000007LL;
+        // Width = max - min, so the total is the sum of subsequence maxes
+        // minus mins; sorting loses nothing (inner order is irrelevant).
         sort(nums.begin(), nums.end());
         int n = nums.size();
         vector<long long> pow2(n);
@@ -11,6 +13,10 @@ class Solution {
         }
         long long total = 0;
         for (int i = 0; i < n; i++) {
+            // nums[i] is the max of 2^i subsequences (partners chosen before
+            // it) and the min of 2^(n-1-i); each subsequence is booked to
+            // exactly one index per role. The extra +MOD repairs the possibly
+            // negative difference of the two powers.
             long long d = pow2[i] - pow2[n - 1 - i];
             total = ((total + nums[i] * d) % MOD + MOD) % MOD;
         }

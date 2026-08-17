@@ -7,6 +7,7 @@ class Solution:
 
         def find(x):
             parent.setdefault(x, x)
+            # Path halving: each hop skips a level, keeping later lookups short.
             while parent[x] != x:
                 parent[x] = parent[parent[x]]
                 x = parent[x]
@@ -23,9 +24,13 @@ class Solution:
             for email in emails:
                 parent.setdefault(email, email)
                 owner[email] = name
+            # Unioning with the first email links the whole account — and,
+            # transitively, any chain of accounts sharing emails.
             for email in emails[1:]:
                 union(emails[0], email)
 
+        # Second pass in input order: merge order follows the earliest-appearing
+        # email of each component, exactly as the judge requires.
         groups = {}
         order = []
         for account in accounts:
@@ -38,5 +43,6 @@ class Solution:
 
         merged = []
         for root in order:
+            # The root's owner names the component; the set absorbed duplicates.
             merged.append([owner[root]] + sorted(groups[root]))
         return merged

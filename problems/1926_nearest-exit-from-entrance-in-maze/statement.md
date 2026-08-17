@@ -29,6 +29,8 @@ It is impossible to reach [2,3] from the entrance.
 Thus, the nearest exit is [0,2], which is 1 step away.
 ```
 
+![Example 1 maze](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -41,6 +43,8 @@ Initially, you are at the entrance cell [1,0].
 Thus, the nearest exit is [1,2], which is 2 steps away.
 ```
 
+![Example 2 maze](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -48,6 +52,8 @@ Input: maze = [[".","+"]], entrance = [0,0]
 Output: -1
 Explanation: There are no exits in this maze.
 ```
+
+![Example 3 maze](figures/example-3.svg)
 
 ### Constraints
 

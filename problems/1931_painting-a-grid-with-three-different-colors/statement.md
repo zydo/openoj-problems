@@ -18,6 +18,8 @@ Output: 3
 Explanation: The three possible colorings are red, green, and blue.
 ```
 
+![A single cell painted red, green, or blue](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Explanation: The six possible colorings are shown below.
 r g    g r    b r
 r b    g b    b g
 ```
+
+![The six colorings of a 1 x 2 grid](figures/example-2.svg)
 
 ### Example 3
 

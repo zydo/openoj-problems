@@ -50,6 +50,8 @@ Folders "/a" and "/c" (and their subfolders) are marked for deletion because
 they both contain an empty folder named "b".
 ```
 
+![Folders /a and /c plus their b subfolders are marked for deletion](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -62,6 +64,8 @@ Note that folders "/a" and "/c" are identical after the deletion, but they are
 not deleted because they were not marked beforehand.
 ```
 
+![Folders /a/b/x and /w plus their y subfolders are marked for deletion](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -70,6 +74,8 @@ Output: [["a"],["a","b"],["c"],["c","d"]]
 Explanation: All folders are unique in the file system.
 Note that the returned array can be in a different order as the order does not matter.
 ```
+
+![All folders in the file structure are unique](figures/example-3.svg)
 
 ### Constraints
 

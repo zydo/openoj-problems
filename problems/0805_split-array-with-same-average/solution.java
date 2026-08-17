@@ -7,6 +7,8 @@ import java.util.Set;
 
 class Solution {
 
+    // Enumerate one half (at most 2^(n/2) subsets), grouping
+    // achievable sums by subset size.
     // Map from subset size -> set of achievable sums with that size.
     private Map<Integer, Set<Long>> subsetSums(int[] arr) {
         Map<Integer, Set<Long>> d = new HashMap<>();
@@ -40,14 +42,21 @@ class Solution {
         Map<Integer, Set<Long>> right = subsetSums(rightArr);
         int nr = n - mid;
 
+        // Equal averages force both parts to the whole-array average
+        // total/n, so seek a proper subset of size s summing to
+        // total*s/n; only sizes with an integer target can work, and
+        // s in 1..n-1 keeps both parts non-empty.
         for (int s = 1; s < n; s++) {
             if ((total * s) % n != 0) continue;
             long target = (total * s) / n;
+            // Clamp s1 so both pieces actually fit in their halves.
             int lo = Math.max(0, s - nr);
             int hi = Math.min(mid, s);
             for (int s1 = lo; s1 <= hi; s1++) {
                 int s2 = s - s1;
                 if (!left.containsKey(s1) || !right.containsKey(s2)) continue;
+                // Assemble: a left sum v plus a right sum target - v
+                // builds a valid subset (only sums, not identities).
                 for (long v : left.get(s1)) {
                     if (right.get(s2).contains(target - v)) return true;
                 }

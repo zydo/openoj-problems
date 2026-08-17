@@ -8,16 +8,23 @@ var encode = function (s) {
     for (let i = 0; i < n; i++) {
         dp.push(new Array(n).fill(""));
     }
+    // dp[i][j] = shortest encoding of s[i..j]; growing interval lengths
+    // guarantee every subinterval is solved before it is needed.
     for (let length = 1; length <= n; length++) {
         for (let i = 0; i + length <= n; i++) {
             const j = i + length - 1;
             const substr = s.slice(i, j + 1);
+            // Candidate 1: keep the substring verbatim.
             let best = substr;
+            // Candidate 2: split in two, concatenate optimal encodings.
             for (let k = i; k < j; k++) {
                 const candidate = dp[i][k] + dp[k + 1][j];
                 if (candidate.length < best.length) best = candidate;
             }
             let compression = null;
+            // Candidate 3: k[pattern] when a period divides the interval.
+            // Embedding the pattern's own encoding (not raw text) gives
+            // nested forms like 4[2[a]] for free.
             for (let p = 1; p < length; p++) {
                 if (length % p === 0) {
                     const pattern = s.slice(i, i + p);
@@ -33,6 +40,9 @@ var encode = function (s) {
                     }
                 }
             }
+            // Encode only if strictly shorter — or tied against an
+            // already-encoded best; a tie with the raw text keeps the text
+            // ("aaa" stays "aaa", "aaaaa" becomes "5[a]").
             if (compression !== null) {
                 if (
                     compression.length < best.length ||

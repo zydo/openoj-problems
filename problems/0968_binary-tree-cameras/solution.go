@@ -5,11 +5,15 @@ func minCameraCover(root *TreeNode) int {
 	var dfs func(node *TreeNode) int
 	dfs = func(node *TreeNode) int {
 		if node == nil {
+			// Null reports covered so leaves start uncovered and push
+			// the first camera one level up.
 			return 2
 		}
 		left := dfs(node.Left)
 		right := dfs(node.Right)
 		if left == 0 || right == 0 {
+			// An uncovered child forces a camera here — the parent of
+			// an uncovered node is always the best placement.
 			cameras++
 			return 1
 		}

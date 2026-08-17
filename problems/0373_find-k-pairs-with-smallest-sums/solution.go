@@ -34,6 +34,8 @@ func kSmallestPairs(nums1 []int, nums2 []int, k int) [][]int {
 		return result
 	}
 	h := &pairHeap{}
+	// Seed each active row's minimum (nums1[i], nums2[0]); rows past
+	// min(len(nums1), k) can never reach the k smallest.
 	limit := len(nums1)
 	if k < limit {
 		limit = k
@@ -45,6 +47,9 @@ func kSmallestPairs(nums1 []int, nums2 []int, k int) [][]int {
 	for h.Len() > 0 && len(result) < k {
 		top := heap.Pop(h).(pairItem)
 		i, j := top.i, top.j
+		// The popped pair's only unexplored successor in its row is
+		// (i, j+1); pushing it keeps the heap holding the minimum of
+		// every active row, so each pop yields the global minimum left.
 		pair := []int{nums1[i], nums2[j]}
 		result = append(result, pair)
 		if j+1 < len(nums2) {

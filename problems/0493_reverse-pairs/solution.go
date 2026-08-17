@@ -7,8 +7,13 @@ func reversePairs(nums []int) int {
 		mid := len(arr) / 2
 		left, c1 := mergeCount(arr[:mid])
 		right, c2 := mergeCount(arr[mid:])
+		// Pairs inside either half are already counted; only cross pairs
+		// remain, and both halves come back sorted.
 		count := c1 + c2
 		// count cross reverse pairs: left[i] > 2 * right[j]
+		// j never restarts: the next left[i] is at least as large, so
+		// every right element already passed also qualifies — the sweep is
+		// linear per merge level.
 		j := 0
 		for i := range left {
 			for j < len(right) && left[i] > 2*right[j] {
@@ -34,6 +39,8 @@ func reversePairs(nums []int) int {
 		return merged, count
 	}
 
+	// Widen to int64: values reach both int32 extremes and 2 * value would
+	// overflow.
 	arr := make([]int64, len(nums))
 	for i, v := range nums {
 		arr[i] = int64(v)

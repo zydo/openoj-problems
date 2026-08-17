@@ -4,6 +4,9 @@ class Solution {
 
     public int findRotateSteps(String ring, String key) {
         int n = ring.length();
+        // Precompute each character's indices so every stage only considers
+        // alignments that actually spell the current key character (never
+        // empty because the key is guaranteed spellable).
         List<List<Integer>> positions = new ArrayList<>();
         for (int i = 0; i < 26; i++) positions.add(new ArrayList<>());
         for (int i = 0; i < n; i++) positions.get(ring.charAt(i) - 'a').add(i);
@@ -17,6 +20,8 @@ class Solution {
                 int best = Integer.MAX_VALUE;
                 for (Map.Entry<Integer, Integer> e : dp.entrySet()) {
                     int i = e.getKey();
+                    // Circular rotation cost between alignments i and j:
+                    // the shorter of the direct and wrap-around distances.
                     int diff = Math.abs(i - j);
                     int rot = Math.min(diff, n - diff);
                     best = Math.min(best, e.getValue() + rot);
@@ -25,6 +30,7 @@ class Solution {
             }
             dp = nxt;
         }
+        // Cheapest final alignment, plus one button press per key char.
         int ans = Integer.MAX_VALUE;
         for (int v : dp.values()) ans = Math.min(ans, v);
         return ans + key.length();

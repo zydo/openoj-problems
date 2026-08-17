@@ -28,6 +28,8 @@ The optimal way is to:
 You moved 3 steps and harvested 3 + 6 = 9 fruits in total.
 ```
 
+![From position 5, walk right to position 8 and collect the fruits on the way](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -43,6 +45,8 @@ The optimal way is to:
 You moved 1 + 3 = 4 steps and harvested 7 + 1 + 2 + 4 = 14 fruits in total.
 ```
 
+![From position 5, four steps cover positions 4 through 7](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -51,6 +55,8 @@ Output: 0
 Explanation:
 You can move at most k = 2 steps and cannot reach any position with fruits.
 ```
+
+![From position 3, every fruit position is out of reach](figures/example-3.svg)
 
 ### Constraints
 

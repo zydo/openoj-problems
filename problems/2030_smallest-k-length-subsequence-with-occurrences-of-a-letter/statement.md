@@ -38,6 +38,8 @@ Output: "ecde"
 Explanation: "ecde" is the lexicographically smallest subsequence of length 4 that has the letter "e" appear at least 2 times.
 ```
 
+![The answer "ecde" picked from s = "leetcode"](figures/example-2.svg)
+
 ### Example 3
 
 ```text

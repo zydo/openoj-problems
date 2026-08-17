@@ -5,6 +5,7 @@ func numSimilarGroups(strs []string) int {
 		parent[i] = i
 	}
 
+	// Path halving keeps repeated lookups nearly constant.
 	var find func(int) int
 	find = func(x int) int {
 		for parent[x] != x {
@@ -14,6 +15,9 @@ func numSimilarGroups(strs []string) int {
 		return x
 	}
 
+	// All words are mutual anagrams, so they are similar iff they
+	// differ in 0 or 2 positions — exactly what one swap fixes;
+	// bail on the third mismatch.
 	similar := func(a, b string) bool {
 		mismatches := 0
 		for i := 0; i < len(a); i++ {
@@ -27,6 +31,8 @@ func numSimilarGroups(strs []string) int {
 		return mismatches == 0 || mismatches == 2
 	}
 
+	// Union every similar pair: groups are the transitive closure,
+	// so indirectly similar words share a root.
 	for i := 0; i < n; i++ {
 		for j := i + 1; j < n; j++ {
 			if similar(strs[i], strs[j]) {
@@ -38,6 +44,7 @@ func numSimilarGroups(strs []string) int {
 		}
 	}
 
+	// The answer is the number of distinct roots remaining.
 	roots := make(map[int]bool)
 	for i := 0; i < n; i++ {
 		roots[find(i)] = true

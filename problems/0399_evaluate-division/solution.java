@@ -16,6 +16,8 @@ class Solution {
         // node -> LinkedHashMap(neighbor -> weight): preserves insertion order and
         // updating an existing key keeps its original position (like Python dict).
         Map<String, Map<String, Double>> graph = new HashMap<>();
+        // Each equation a/b = v becomes a directed edge a -> b of weight v
+        // plus the reverse edge of weight 1/v (division inverts with direction).
         for (int i = 0; i < equations.length; i++) {
             String a = equations[i][0],
                 b = equations[i][1];
@@ -39,8 +41,12 @@ class Solution {
         String start,
         String end
     ) {
+        // An unknown variable is unanswerable (this also covers x / x for
+        // an undefined x); a known variable over itself is 1.0.
         if (!graph.containsKey(start) || !graph.containsKey(end)) return -1.0;
         if (start.equals(end)) return 1.0;
+        // BFS carrying the running product: weights along the path telescope
+        // to start / end because intermediate variables cancel.
         Map<String, Boolean> seen = new HashMap<>();
         seen.put(start, true);
         Deque<String> nodeQueue = new ArrayDeque<>();
@@ -54,6 +60,8 @@ class Solution {
                 String neighbor = edge.getKey();
                 double weight = edge.getValue();
                 if (neighbor.equals(end)) {
+                    // Equations are consistent, so the first path found
+                    // already yields the correct quotient.
                     return product * weight;
                 }
                 if (!seen.containsKey(neighbor)) {

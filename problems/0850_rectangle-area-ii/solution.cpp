@@ -4,6 +4,9 @@ class Solution {
         const long long MOD = 1000000007LL;
         if (rectangles.empty())
             return 0;
+        // Coordinate compression: with at most 2R distinct values per
+        // axis, cell boundaries are exactly the rectangle edges, so
+        // coverage is constant within each cell.
         set<long long> xsSet, ysSet;
         for (auto &rect : rectangles) {
             xsSet.insert(rect[0]);
@@ -21,6 +24,9 @@ class Solution {
         int nx = xs.size() - 1;
         int ny = ys.size() - 1;
         vector<vector<char>> grid(nx, vector<char>(ny, 0));
+        // Mark the half-open compressed range: adjacent rectangles
+        // share edge cells without overlap or gaps, and idempotent
+        // marking counts overlaps once.
         for (auto &rect : rectangles) {
             for (int i = xIndex[rect[0]]; i < xIndex[rect[2]]; i++) {
                 for (int j = yIndex[rect[1]]; j < yIndex[rect[3]]; j++) {
@@ -28,6 +34,7 @@ class Solution {
                 }
             }
         }
+        // Sum the real areas of marked cells, reducing at each step.
         long long total = 0;
         for (int i = 0; i < nx; i++) {
             for (int j = 0; j < ny; j++) {

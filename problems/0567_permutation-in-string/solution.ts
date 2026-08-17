@@ -1,6 +1,7 @@
 function checkInclusion(s1: string, s2: string): boolean {
     const m = s1.length;
     const n = s2.length;
+    // No window of length m can exist inside a shorter s2.
     if (m > n) {
         return false;
     }
@@ -13,10 +14,12 @@ function checkInclusion(s1: string, s2: string): boolean {
     for (const ch of s2.slice(0, m)) {
         window[ch.charCodeAt(0) - a]++;
     }
+    // Matching frequency vectors means the window is a permutation of s1.
     if (matches(need, window)) {
         return true;
     }
     for (let i = m; i < n; i++) {
+        // Slide one position: add the entering char, drop the leaving one.
         window[s2.charCodeAt(i) - a]++;
         window[s2.charCodeAt(i - m) - a]--;
         if (matches(need, window)) {

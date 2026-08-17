@@ -8,6 +8,8 @@ class Solution {
         for (int i = 0; i < n; i++) {
             parent[i] = i;
         }
+        // Union every similar pair: groups are the transitive closure,
+        // so indirectly similar words share a root.
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (similar(strs[i], strs[j])) {
@@ -19,6 +21,7 @@ class Solution {
                 }
             }
         }
+        // The answer is the number of distinct roots remaining.
         Set<Integer> roots = new HashSet<>();
         for (int i = 0; i < n; i++) {
             roots.add(find(parent, i));
@@ -26,6 +29,9 @@ class Solution {
         return roots.size();
     }
 
+    // All words are mutual anagrams, so they are similar iff they
+    // differ in 0 or 2 positions — exactly what one swap fixes;
+    // bail on the third mismatch.
     private boolean similar(String a, String b) {
         int mismatches = 0;
         for (int i = 0; i < a.length(); i++) {
@@ -39,6 +45,7 @@ class Solution {
         return mismatches == 0 || mismatches == 2;
     }
 
+    // Path halving keeps repeated lookups nearly constant.
     private int find(int[] parent, int x) {
         while (parent[x] != x) {
             parent[x] = parent[parent[x]];

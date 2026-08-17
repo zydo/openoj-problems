@@ -12,6 +12,7 @@ class Solution {
         }
         int target = (int) (total / k);
         nums = nums.clone();
+        // Largest elements are hardest to place; descending order prunes early.
         Arrays.sort(nums);
         // descending
         for (int i = 0, j = nums.length - 1; i < j; i++, j--) {
@@ -36,9 +37,12 @@ class Solution {
         int curr,
         Map<Long, Boolean> memo
     ) {
+        // State: bitmask of placed elements plus curr, the partial sum of the
+        // subset currently being filled.
         if (mask == full) {
             return true;
         }
+        // Subset complete: start the next one from zero.
         if (curr == target) {
             return dfs(nums, target, full, mask, 0, memo);
         }
@@ -47,6 +51,7 @@ class Solution {
         if (cached != null) {
             return cached;
         }
+        // Try every unused element that still fits under the target.
         for (int i = 0; i < nums.length; i++) {
             if (((mask >> i) & 1) == 0 && curr + nums[i] <= target) {
                 if (

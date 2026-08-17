@@ -25,6 +25,8 @@ consecutive cells. This is better than the route of [1,2,2,2,5], where the
 maximum absolute difference is 3.
 ```
 
+![The 3x3 grid with the route 1, 3, 5, 3, 5 down the left column and along the bottom shaded green.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -34,6 +36,8 @@ Explanation: The route of [1,2,3,4,5] has a maximum absolute difference of 1 in
 consecutive cells, which is better than route [1,3,5,3,5].
 ```
 
+![The 3x3 grid with the route 1, 2, 3, 4, 5 along the top row and right column shaded green.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -41,6 +45,8 @@ Input: heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]
 Output: 0
 Explanation: This route does not require any effort.
 ```
+
+![The 5x5 grid where the route snakes through all the 1-cells, avoiding every 2.](figures/example-3.svg)
 
 ### Constraints
 

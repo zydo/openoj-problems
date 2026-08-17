@@ -13,7 +13,12 @@ impl Solution {
                 Some(n) => {
                     let left = dfs(&n.left, moves);
                     let right = dfs(&n.right, moves);
+                    // Each |excess| is the flow on that child edge; flows on
+                    // separate edges never interfere, so summing them is the
+                    // total moves.
                     *moves += left.abs() + right.abs();
+                    // Keep one coin for this node; the rest is the
+                    // parent-bound flow (the subtree's excess).
                     n.val + left + right - 1
                 }
             }

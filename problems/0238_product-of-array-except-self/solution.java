@@ -12,18 +12,25 @@ import java.math.BigInteger;
 class Solution {
 
     public int[] productExceptSelf(int[] nums) {
+        // The product except nums[i] factors as (product of everything
+        // before i) x (product of everything after i), both computable as
+        // running products — no division, which zeros would break anyway.
         int n = nums.length;
+        // pre[i] = product of the i elements preceding index i.
         BigInteger[] pre = new BigInteger[n + 1];
         pre[0] = BigInteger.ONE;
         for (int i = 0; i < n; i++) {
             pre[i + 1] = pre[i].multiply(BigInteger.valueOf(nums[i]));
         }
+        // suf[i] = product of everything from index i onward.
         BigInteger[] suf = new BigInteger[n + 1];
         suf[n] = BigInteger.ONE;
         for (int i = n - 1; i >= 0; i--) {
             suf[i] = suf[i + 1].multiply(BigInteger.valueOf(nums[i]));
         }
         StringBuilder json = new StringBuilder("[");
+        // pre[i] x suf[i+1] spans everything except nums[i] itself; a lone
+        // zero zeroes every cell but its own, automatically.
         for (int i = 0; i < n; i++) {
             if (i > 0) {
                 json.append(',');

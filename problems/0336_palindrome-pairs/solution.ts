@@ -1,4 +1,5 @@
 function palindromePairs(words: string[]): number[][] {
+    // word -> index: partners are found by hash lookup, not pair scanning.
     const index = new Map<string, number>();
     for (let i = 0; i < words.length; i++) {
         index.set(words[i], i);
@@ -22,15 +23,22 @@ function palindromePairs(words: string[]): number[][] {
     for (let j = 0; j < words.length; j++) {
         const w = words[j];
         const length = w.length;
+        // For a concatenation to be a palindrome, one half of w must
+        // already be one and the mirror of the other half must exist.
         for (let cut = 0; cut <= length; cut++) {
             const prefix = w.slice(0, cut);
             const suffix = w.slice(cut);
+            // Palindromic prefix: reverse(suffix) can stand on the left.
+            // The !== j check stops a word from pairing with itself.
             if (isPalindrome(prefix)) {
                 const rev = reverse(suffix);
                 if (index.has(rev) && index.get(rev)! !== j) {
                     results.add(index.get(rev)! + "," + j);
                 }
             }
+            // Palindromic suffix: reverse(prefix) goes on the right.
+            // cut !== length avoids re-emitting the full-string case,
+            // which the partner word already finds at its cut 0.
             if (cut !== length && isPalindrome(suffix)) {
                 const rev = reverse(prefix);
                 if (index.has(rev) && index.get(rev)! !== j) {

@@ -25,6 +25,8 @@ Input: n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6]
 Output: [6,3,4,1,5,2,0,7]
 ```
 
+![A table of the eight items with their groups and prerequisites, and below it one valid sorted order with the boxes of group 0 tinted blue and group 1 tinted amber.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

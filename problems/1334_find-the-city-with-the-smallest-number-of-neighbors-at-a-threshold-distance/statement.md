@@ -27,6 +27,8 @@ Cities 0 and 3 have 2 neighboring cities at a distanceThreshold = 4,
 but we have to return city 3 since it has the greatest number.
 ```
 
+![The four cities with weighted edges; city 3 is highlighted as the answer, reaching only cities 1 and 2 within distance 4.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -40,6 +42,8 @@ City 3 -> [City 2, City 4]
 City 4 -> [City 1, City 2, City 3]
 The city 0 has 1 neighboring city at a distanceThreshold = 2.
 ```
+
+![The five cities with weighted edges; city 0 is highlighted as the answer, reaching only city 1 within distance 2.](figures/example-2.svg)
 
 ### Constraints
 

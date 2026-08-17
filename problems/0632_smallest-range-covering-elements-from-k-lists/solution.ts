@@ -39,6 +39,8 @@ function smallestRange(nums: number[][]): number[] {
         return top;
     };
 
+    // Seed the heap with every list's head; the k-way merge sweeps candidate
+    // ranges in order as the selection's minimum advances.
     let curMax = -Infinity;
     for (let i = 0; i < nums.length; i++) {
         push([nums[i][0], i, 0]);
@@ -51,6 +53,8 @@ function smallestRange(nums: number[][]): number[] {
         const lo = top[0],
             i = top[1],
             j = top[2];
+        // [lo, curMax] covers all k lists: prefer smaller width, then
+        // the smaller left endpoint on ties.
         if (
             curMax - lo < bestHi - bestLo ||
             (curMax - lo === bestHi - bestLo && lo < bestLo)
@@ -58,8 +62,13 @@ function smallestRange(nums: number[][]): number[] {
             bestLo = lo;
             bestHi = curMax;
         }
-        if (j + 1 === nums[i].length) return [bestLo, bestHi];
+        if (j + 1 === nums[i].length) {
+            // The popped list is exhausted: no later selection can still
+            // include it, so every further candidate would be worse.
+            return [bestLo, bestHi];
+        }
         const nxt = nums[i][j + 1];
+        // The next element may raise the tracked maximum.
         if (nxt > curMax) curMax = nxt;
         push([nxt, i, j + 1]);
     }

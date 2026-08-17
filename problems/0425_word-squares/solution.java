@@ -7,6 +7,8 @@ class Solution {
 
     public String[][] wordSquares(String[] words) {
         final int n = words[0].length();
+        // Map every prefix of every word (empty prefix included) to the words
+        // sharing it, so each search step is a single lookup.
         Map<String, List<String>> prefixMap = new HashMap<>();
         for (String w : words) {
             for (int i = 0; i <= n; i++) {
@@ -19,6 +21,7 @@ class Solution {
         List<String> square = new ArrayList<>();
         backtrack(prefixMap, square, n, results);
 
+        // Sorting only makes the output order deterministic.
         results.sort((a, b) -> {
             for (int i = 0; i < n; i++) {
                 int cmp = a.get(i).compareTo(b.get(i));
@@ -44,10 +47,15 @@ class Solution {
             return;
         }
         int col = square.size();
+        // Row `col` must start with the column-`col` chars already placed,
+        // so the next word is constrained to one forced prefix.
         StringBuilder sb = new StringBuilder();
         for (int r = 0; r < col; r++) {
             sb.append(square.get(r).charAt(col));
         }
+        // A word with that prefix satisfies square[j][col] ==
+        // square[col][j] for every earlier row j at once; a missing bucket
+        // prunes the branch here.
         List<String> candidates = prefixMap.get(sb.toString());
         if (candidates == null) return;
         for (String w : candidates) {

@@ -20,6 +20,8 @@ One way: attend the first event on day 1, the second event on day 2,
 and the third event on day 3.
 ```
 
+![The three overlapping event bars on a day 1 to 4 calendar, each with its attended day filled in blue: days 1, 2 and 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

@@ -1,5 +1,6 @@
 impl Solution {
     pub fn find_kth_largest(nums: Vec<i32>, k: i32) -> i32 {
+        // Sort ascending; the kth largest sits k slots from the end.
         let mut sorted = nums;
         sorted.sort_unstable();
         sorted[sorted.len() - k as usize]

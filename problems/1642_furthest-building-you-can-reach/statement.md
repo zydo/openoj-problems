@@ -34,6 +34,8 @@ It is impossible to go beyond building 4 because you do not have any more
 bricks or ladders.
 ```
 
+![The skyline of heights 4, 2, 7, 6, 9, 14, 12; five bricks pay the 2-to-7 climb and the ladder pays 6-to-9, stopping at building 4.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

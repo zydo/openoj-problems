@@ -8,11 +8,16 @@ impl Solution {
                 cells.push((matrix[i][j], i, j));
             }
         }
+        // Strictly increasing paths make the cells a DAG (edges point to
+        // larger neighbors), so ascending value order is a topological order.
         cells.sort_unstable();
+        // dp[i][j] = longest increasing path starting at (i, j); 1 = cell alone.
         let mut dp = vec![1i32; m * n];
         let mut best = 1;
         let dirs: [(i64, i64); 4] = [(1, 0), (-1, 0), (0, 1), (0, -1)];
         for &(v, i, j) in &cells {
+            // Smaller neighbors appear earlier in the sort, so their dp is
+            // final; strict < so equal-valued neighbors never link.
             for (di, dj) in dirs {
                 let ni = i as i64 + di;
                 let nj = j as i64 + dj;

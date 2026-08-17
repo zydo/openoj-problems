@@ -28,16 +28,23 @@ const __openojNativeStringify: (
 };
 
 function productExceptSelf(nums: number[]): number[] {
+    // The product except nums[i] factors as (product of everything
+    // before i) x (product of everything after i), both computable as
+    // running products — no division, which zeros would break anyway.
     const n = nums.length;
+    // pre[i] = product of the i elements preceding index i.
     const pre: bigint[] = [1n];
     for (let i = 0; i < n; i++) {
         pre.push(pre[i] * BigInt(nums[i]));
     }
+    // suf[i] = product of everything from index i onward.
     const suf: bigint[] = new Array(n + 1).fill(1n);
     for (let i = n - 1; i >= 0; i--) {
         suf[i] = suf[i + 1] * BigInt(nums[i]);
     }
     const answer: bigint[] = [];
+    // pre[i] x suf[i+1] spans everything except nums[i] itself; a lone
+    // zero zeroes every cell but its own, automatically.
     for (let i = 0; i < n; i++) {
         answer.push(pre[i] * suf[i + 1]);
     }

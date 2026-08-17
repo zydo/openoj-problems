@@ -4,6 +4,10 @@ class Solution {
 
     public int swimInWater(int[][] grid) {
         int n = grid.length;
+        // A path's cost is the max elevation along it, and max is
+        // monotone, so Dijkstra's greedy argument holds with max
+        // relaxation. dist holds the earliest time each cell is
+        // reachable — the start waits for grid[0][0] itself.
         int[][] dist = new int[n][n];
         for (int[] row : dist) {
             java.util.Arrays.fill(row, Integer.MAX_VALUE);
@@ -19,9 +23,12 @@ class Solution {
             int t = top[0],
                 r = top[1],
                 c = top[2];
+            // First pop of the target is optimal: cells settle in order
+            // of their true earliest time.
             if (r == n - 1 && c == n - 1) {
                 return t;
             }
+            // Skip stale entries superseded by a better settled time.
             if (t > dist[r][c]) {
                 continue;
             }
@@ -29,6 +36,7 @@ class Solution {
                 int nr = r + d[0],
                     nc = c + d[1];
                 if (nr >= 0 && nr < n && nc >= 0 && nc < n) {
+                    // Extending a path can only keep or raise its time.
                     int nt = Math.max(t, grid[nr][nc]);
                     if (nt < dist[nr][nc]) {
                         dist[nr][nc] = nt;

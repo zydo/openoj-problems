@@ -5,6 +5,8 @@ class Solution {
 
     public int countRangeSum(int[] nums, int lower, int upper) {
         int n = nums.length;
+        // Range sums become pairs: count i < j with
+        // prefix[j] - prefix[i] in [lower, upper] (leading 0 included).
         long[] prefix = new long[n + 1];
         for (int i = 0; i < n; i++) {
             prefix[i + 1] = prefix[i] + nums[i];
@@ -23,10 +25,14 @@ class Solution {
             return 0;
         }
         int mid = (lo + hi) >>> 1;
+        // Pairs inside each half first; cross pairs next.
         long count =
             mergeCount(prefix, lo, mid, lower, upper) +
             mergeCount(prefix, mid + 1, hi, lower, upper);
 
+        // Left half is sorted, so for each left prefix the valid right
+        // entries form the window [l, r): l skips below-lower, r passes
+        // at-most-upper; both pointers only ever move forward.
         int l = mid + 1;
         int r = mid + 1;
         for (int i = lo; i <= mid; i++) {
@@ -39,6 +45,8 @@ class Solution {
             count += r - l;
         }
 
+        // Standard merge re-sorts the range, restoring the invariant
+        // the parent level relies on.
         List<Long> merged = new ArrayList<>(hi - lo + 1);
         int i = lo,
             j = mid + 1;

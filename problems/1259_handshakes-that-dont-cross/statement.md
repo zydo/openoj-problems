@@ -20,12 +20,16 @@ Explanation: There are two ways to do it, the first way is [(1,2),(3,4)] and
 the second one is [(2,3),(4,1)].
 ```
 
+![Four people around a table shown twice: way 1 pairs (1,2) and (3,4), way 2 pairs (2,3) and (4,1).](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: numPeople = 6
 Output: 5
 ```
+
+![Six people on a line, with the five non-crossing pairings drawn as nested arcs above them.](figures/example-2.svg)
 
 ### Constraints
 

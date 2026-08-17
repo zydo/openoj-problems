@@ -12,12 +12,17 @@ func minTransfers(transactions [][]int) int {
 			debts = append(debts, v)
 		}
 	}
+	// Only nonzero net balances matter: any zero-sum group of s people
+	// settles in s-1 transfers, so maximizing the group count g of a
+	// partition minimizes the total n - g.
 	n := len(debts)
 	if n == 0 {
 		return 0
 	}
 
 	total := 1 << n
+	// Subset sums built incrementally via the lowest set bit; valid marks
+	// zero-sum subsets, the candidate groups.
 	sums := make([]int, total)
 	valid := make([]bool, total)
 	for mask := 1; mask < total; mask++ {
@@ -27,6 +32,8 @@ func minTransfers(transactions [][]int) int {
 		valid[mask] = sums[mask] == 0
 	}
 
+	// dp[mask] = most disjoint valid groups partitioning mask; NEG means
+	// "not exactly partitionable", so only full covers add.
 	const NEG = -1000000000
 	dp := make([]int, total)
 	for i := range dp {
@@ -44,5 +51,6 @@ func minTransfers(transactions [][]int) int {
 			sub = (sub - 1) & mask
 		}
 	}
+	// Fewest transactions = n balances minus the best group count.
 	return n - dp[total-1]
 }

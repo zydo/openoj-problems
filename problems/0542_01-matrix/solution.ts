@@ -3,6 +3,8 @@ function updateMatrix(mat: number[][]): number[][] {
         n = mat[0].length;
     const dist: number[][] = Array.from({ length: m }, () => Array(n).fill(-1));
     const queue: number[] = [];
+    // Reverse the question: every zero broadcasts at distance 0 and the
+    // first wavefront to reach a cell arrives on a shortest path.
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
             if (mat[i][j] === 0) {
@@ -26,6 +28,10 @@ function updateMatrix(mat: number[][]): number[][] {
             const ni = i + di,
                 nj = j + dj;
             if (ni >= 0 && ni < m && nj >= 0 && nj < n && dist[ni][nj] === -1) {
+                // An unset distance doubles as the visited check, and
+                // assigning before enqueueing keeps each cell queued
+                // exactly once; non-decreasing dequeue order makes the
+                // first assignment final.
                 dist[ni][nj] = dist[i][j] + 1;
                 queue.push(ni * n + nj);
             }

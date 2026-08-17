@@ -17,6 +17,8 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 		}
 		graph[a] = append(adj, eqEdge{b, w})
 	}
+	// Each equation a/b = v becomes a directed edge a -> b of weight v
+	// plus the reverse edge of weight 1/v (division inverts with direction).
 	for i := range equations {
 		a, b := equations[i][0], equations[i][1]
 		addEdge(a, b, values[i])
@@ -31,6 +33,8 @@ func calcEquation(equations [][]string, values []float64, queries [][]string) []
 }
 
 func query(graph map[string][]eqEdge, start, end string) float64 {
+	// An unknown variable is unanswerable (this also covers x / x for
+	// an undefined x); a known variable over itself is 1.0.
 	if _, ok := graph[start]; !ok {
 		return -1.0
 	}
@@ -40,6 +44,8 @@ func query(graph map[string][]eqEdge, start, end string) float64 {
 	if start == end {
 		return 1.0
 	}
+	// BFS carrying the running product: weights along the path telescope
+	// to start / end because intermediate variables cancel.
 	seen := map[string]bool{start: true}
 	type state struct {
 		node    string
@@ -50,6 +56,8 @@ func query(graph map[string][]eqEdge, start, end string) float64 {
 		cur := queue[head]
 		for _, edge := range graph[cur.node] {
 			if edge.to == end {
+				// Equations are consistent, so the first path found
+				// already yields the correct quotient.
 				return cur.product * edge.weight
 			}
 			if !seen[edge.to] {

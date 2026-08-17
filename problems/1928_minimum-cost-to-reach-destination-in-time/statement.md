@@ -31,6 +31,8 @@ Output: 11
 Explanation: The path to take is 0 -> 1 -> 2 -> 5, which takes 30 minutes and has $11 worth of passing fees.
 ```
 
+![Path 0 -> 1 -> 2 -> 5 takes 30 minutes and costs $11 in passing fees](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -39,6 +41,8 @@ Output: 48
 Explanation: The path to take is 0 -> 3 -> 4 -> 5, which takes 26 minutes and has $48 worth of passing fees.
 You cannot take path 0 -> 1 -> 2 -> 5 since it would take too long.
 ```
+
+![Path 0 -> 3 -> 4 -> 5 takes 26 minutes and costs $48 in passing fees](figures/example-2.svg)
 
 ### Example 3
 

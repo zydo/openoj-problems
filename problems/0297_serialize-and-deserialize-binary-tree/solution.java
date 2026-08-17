@@ -30,6 +30,8 @@ class Codec {
         if (tree != null) {
             queue.offer(tree);
         }
+        // The queue holds nulls too: a null emits a token and enqueues
+        // nothing, so every child slot gets exactly one token.
         while (!queue.isEmpty()) {
             Node node = queue.poll();
             if (node == null) {
@@ -40,6 +42,8 @@ class Codec {
             queue.offer(node.left);
             queue.offer(node.right);
         }
+        // Trailing nulls only mark absent slots, so trimming them keeps
+        // the sequence uniquely recoverable.
         while (
             !tokens.isEmpty() && tokens.get(tokens.size() - 1).equals("null")
         ) {
@@ -60,6 +64,8 @@ class Codec {
         queue.offer(root);
         int index = 1;
         while (!queue.isEmpty() && index < tokens.length) {
+            // Consume tokens as child slots in queue order; a "null"
+            // fills the slot without adding a node to the queue.
             Node node = queue.poll();
             if (index < tokens.length) {
                 String token = tokens[index++];
@@ -88,6 +94,8 @@ class Codec {
         queue.offer(root);
         int index = 1;
         while (!queue.isEmpty() && index < level.length) {
+            // MARKER fills an absent child slot; markers have no
+            // children, so they never join the queue.
             Node node = queue.poll();
             if (index < level.length) {
                 int value = level[index++];

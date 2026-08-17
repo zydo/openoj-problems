@@ -1,6 +1,9 @@
 import "sort"
 
 func deleteAndEarn(nums []int) int {
+	// Deleting one copy of v removes its neighbors for free, so a strategy
+	// just picks distinct values, earning v*count[v] each — house-robber over
+	// the sorted distinct values.
 	count := map[int]int{}
 	for _, v := range nums {
 		count[v]++
@@ -19,6 +22,8 @@ func deleteAndEarn(nums []int) int {
 		if skip > take {
 			base = skip
 		}
+		// Adjacent predecessor conflicts with its take; a gap (missing v-1)
+		// makes taking v conflict with nothing, so both states carry in.
 		if hasPrev && prev == value-1 {
 			base = skip
 		}

@@ -25,6 +25,8 @@ func (h *distHeap) Pop() interface{} {
 
 func reachableNodes(edges [][]int, maxMoves int, n int) int {
 	adj := make([][]edgeItem, n)
+	// Subdividing [u, v, cnt] yields cnt + 1 unit edges, so Dijkstra on
+	// the compact graph with weight cnt + 1 gives the true distances.
 	for _, e := range edges {
 		u, v, cnt := e[0], e[1], e[2]
 		adj[u] = append(adj[u], edgeItem{v, cnt + 1})
@@ -41,6 +43,7 @@ func reachableNodes(edges [][]int, maxMoves int, n int) int {
 	heap.Push(h, pqItem{0, 0})
 	for h.Len() > 0 {
 		top := heap.Pop(h).(pqItem)
+		// Lazy deletion: a stale heap entry no longer matches dist[u].
 		if top.d != dist[top.u] {
 			continue
 		}
@@ -53,11 +56,14 @@ func reachableNodes(edges [][]int, maxMoves int, n int) int {
 		}
 	}
 	result := int64(0)
+	// Half one: original nodes within the budget.
 	for _, d := range dist {
 		if d <= int64(maxMoves) {
 			result++
 		}
 	}
+	// Half two: each edge contributes the frontiers walked in from both
+	// ends; min(cnt, a + b) clamps the overlap where they meet.
 	for _, e := range edges {
 		u, v, cnt := e[0], e[1], e[2]
 		a := int64(0)

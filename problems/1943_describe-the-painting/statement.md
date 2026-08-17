@@ -46,6 +46,8 @@ Explanation: The painting can be described as follows:
 - [4,7) is colored {7,9} (with a sum of 16) from the second and third segments.
 ```
 
+![Segments 1..4, 4..7, and 1..7 painted with colors 5, 7, and 9](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -58,6 +60,8 @@ Explanation: The painting can be described as follows:
 - [8,10) is colored 7 from the third segment.
 ```
 
+![Segments 1..7, 6..8, and 8..10 painted with colors 9, 15, and 7](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -68,6 +72,8 @@ Explanation: The painting can be described as follows:
 - [4,7) is colored {1,11} (with a sum of 12) from the third and fourth segments.
 Note that returning a single segment [1,7) is incorrect because the mixed color sets are different.
 ```
+
+![Two segments over 1..4 and two over 4..7](figures/example-3.svg)
 
 ### Constraints
 

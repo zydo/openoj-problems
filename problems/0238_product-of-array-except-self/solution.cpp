@@ -76,17 +76,24 @@ static string openoj_json(const OpenOjBig &value) { return openojBigText(value);
 class Solution {
   public:
     vector<OpenOjBig> productExceptSelf(vector<int> &nums) {
+        // The product except nums[i] factors as (product of everything
+        // before i) x (product of everything after i), both computable as
+        // running products — no division, which zeros would break anyway.
         int n = nums.size();
         vector<OpenOjBig> pre(n + 1), suf(n + 1);
+        // pre[i] = product of the i elements preceding index i.
         pre[0] = openojBigOne();
         for (int i = 0; i < n; i++) {
             pre[i + 1] = openojBigMulSmall(pre[i], nums[i]);
         }
+        // suf[i] = product of everything from index i onward.
         suf[n] = openojBigOne();
         for (int i = n - 1; i >= 0; i--) {
             suf[i] = openojBigMulSmall(suf[i + 1], nums[i]);
         }
         vector<OpenOjBig> answer(n);
+        // pre[i] x suf[i+1] spans everything except nums[i] itself; a lone
+        // zero zeroes every cell but its own, automatically.
         for (int i = 0; i < n; i++) {
             answer[i] = openojBigMulBig(pre[i], suf[i + 1]);
         }

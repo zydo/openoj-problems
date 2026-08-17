@@ -21,6 +21,8 @@ Explanation: The 1s colored red in grid2 are those considered to be part of a
 sub-island. There are three sub-islands.
 ```
 
+![Example 1 grids](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -29,6 +31,8 @@ Output: 2
 Explanation: The 1s colored red in grid2 are those considered to be part of a
 sub-island. There are two sub-islands.
 ```
+
+![Example 2 grids](figures/example-2.svg)
 
 ### Constraints
 

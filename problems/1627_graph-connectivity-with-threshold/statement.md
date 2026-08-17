@@ -40,6 +40,8 @@ each query:
 [3,6]   3 is connected to 6 through path 3--6
 ```
 
+![Six cities in two rows joined by the single road 3--6, the only pair sharing a divisor above 2.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -49,6 +51,8 @@ Explanation: The divisors for each number are the same as the previous
 example. However, since the threshold is 0, all divisors can be used. Since all
 numbers share 1 as a divisor, all cities are connected.
 ```
+
+![The same six cities now forming a complete graph — every pair is directly connected.](figures/example-2.svg)
 
 ### Example 3
 
@@ -60,6 +64,8 @@ greater than the threshold 1, so they are the only ones directly connected.
 Please notice that there can be multiple queries for the same pair of nodes
 [x, y], and that the query [x, y] is equivalent to the query [y, x].
 ```
+
+![Five cities joined by the single road 2--4, the only pair sharing a divisor above 1.](figures/example-3.svg)
 
 ### Constraints
 

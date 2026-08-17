@@ -26,6 +26,8 @@ The first cut is done to a rod of length 7 so the cost is 7. The second cut is d
 Rearranging the cuts to be [3, 5, 1, 4] for example will lead to a scenario with total cost = 16 (as shown in the example photo 7 + 4 + 3 + 2 = 16).
 ```
 
+![Cutting in the input order 1, 3, 4, 5 costs 7 + 6 + 4 + 3 = 20; the rearranged order 3, 5, 1, 4 costs only 16.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

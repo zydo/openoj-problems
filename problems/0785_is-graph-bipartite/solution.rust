@@ -1,11 +1,16 @@
 impl Solution {
     pub fn is_bipartite(graph: Vec<Vec<i32>>) -> bool {
         let n = graph.len();
+        // 0 = uncolored, else +1/-1: bipartite iff a proper 2-coloring
+        // exists, with each node's color forced by its distance parity
+        // from the component root.
         let mut color = vec![0i32; n];
         let g: Vec<Vec<usize>> = graph
             .iter()
             .map(|row| row.iter().map(|&x| x as usize).collect())
             .collect();
+        // The graph may be disconnected: start a fresh BFS from every
+        // still-uncolored node.
         for start in 0..n {
             if color[start] != 0 {
                 continue;
@@ -15,15 +20,20 @@ impl Solution {
             queue.push_back(start);
             while let Some(u) = queue.pop_front() {
                 for &v in &g[u] {
+                    // Uncolored neighbor: take the opposite color.
                     if color[v] == 0 {
                         color[v] = -color[u];
                         queue.push_back(v);
                     } else if color[v] == color[u] {
+                        // Same-color edge = odd cycle, the sole
+                        // obstruction to bipartiteness.
                         return false;
                     }
                 }
             }
         }
+        // Every component colored cleanly: the two color classes are
+        // the required partition.
         true
     }
 }

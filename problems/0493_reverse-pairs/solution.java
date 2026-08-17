@@ -7,6 +7,8 @@ class Solution {
 
     public int reversePairs(int[] nums) {
         count = 0;
+        // Widen to long: values reach both int32 extremes and 2 * value
+        // would overflow.
         long[] arr = new long[nums.length];
         for (int i = 0; i < nums.length; i++) {
             arr[i] = nums[i];
@@ -24,7 +26,12 @@ class Solution {
         long[] right = mergeCount(
             java.util.Arrays.copyOfRange(arr, mid, arr.length)
         );
+        // Pairs inside either half are already counted; only cross pairs
+        // remain, and both halves come back sorted.
         // count cross reverse pairs: left[i] > 2 * right[j]
+        // j never restarts: the next left[i] is at least as large, so
+        // every right element already passed also qualifies — the sweep is
+        // linear per merge level.
         int j = 0;
         for (int i = 0; i < left.length; i++) {
             while (j < right.length && left[i] > 2L * right[j]) {

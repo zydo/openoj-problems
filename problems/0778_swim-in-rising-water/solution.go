@@ -20,6 +20,10 @@ func (h *swimHeap) Pop() interface{} {
 
 func swimInWater(grid [][]int) int {
 	n := len(grid)
+	// A path's cost is the max elevation along it, and max is
+	// monotone, so Dijkstra's greedy argument holds with max
+	// relaxation. dist holds the earliest time each cell is
+	// reachable — the start waits for grid[0][0] itself.
 	dist := make([][]int, n)
 	for i := range dist {
 		dist[i] = make([]int, n)
@@ -33,15 +37,19 @@ func swimInWater(grid [][]int) int {
 	dirs := [4][2]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
 	for h.Len() > 0 {
 		cur := heap.Pop(h).(swimNode)
+		// First pop of the target is optimal: cells settle in order
+		// of their true earliest time.
 		if cur.r == n-1 && cur.c == n-1 {
 			return cur.t
 		}
+		// Skip stale entries superseded by a better settled time.
 		if cur.t > dist[cur.r][cur.c] {
 			continue
 		}
 		for _, d := range dirs {
 			nr, nc := cur.r+d[0], cur.c+d[1]
 			if nr >= 0 && nr < n && nc >= 0 && nc < n {
+				// Extending a path can only keep or raise its time.
 				nt := cur.t
 				if grid[nr][nc] > nt {
 					nt = grid[nr][nc]

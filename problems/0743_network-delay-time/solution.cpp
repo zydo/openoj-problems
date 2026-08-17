@@ -12,8 +12,11 @@ class Solution {
         while (!heap.empty()) {
             auto [d, u] = heap.top();
             heap.pop();
+            // Lazy stale-entry handling: skip nodes settled by an earlier pop.
             if (dist[u] != -1)
                 continue;
+            // Non-negative weights make the first pop the true shortest
+            // distance, so u is final now and never revisited.
             dist[u] = d;
             for (const auto &[v, w] : graph[u]) {
                 if (dist[v] == -1) {
@@ -22,10 +25,12 @@ class Solution {
             }
         }
 
+        // Any node still unsettled is unreachable from k.
         int best = -1;
         for (int i = 1; i <= n; i++) {
             if (dist[i] == -1)
                 return -1;
+            // The last node to hear the signal sets the answer.
             best = max(best, dist[i]);
         }
         return best;

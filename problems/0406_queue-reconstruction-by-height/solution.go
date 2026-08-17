@@ -9,6 +9,9 @@ func reconstructQueue(people [][]int) [][]int {
 		}
 		return ordered[a][1] < ordered[b][1] // fewer people in front first
 	})
+	// With everyone already placed taller-or-equal, inserting at index k
+	// puts exactly k such people in front; shorter people inserted later
+	// are invisible to taller people's counts.
 	queue := [][]int{}
 	for _, person := range ordered {
 		pos := person[1]

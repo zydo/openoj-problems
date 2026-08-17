@@ -33,6 +33,8 @@ Explanation: The image shows the assigned heights of each cell.
 The blue cell is the water cell, and the green cells are the land cells.
 ```
 
+![Example 1 heights](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -42,6 +44,8 @@ Explanation: A height of 2 is the maximum possible height of any assignment.
 Any height assignment that has a maximum height of 2 while still meeting the
 rules will also be accepted.
 ```
+
+![Example 2 heights](figures/example-2.svg)
 
 ### Constraints
 
