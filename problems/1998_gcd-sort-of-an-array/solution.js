@@ -4,6 +4,8 @@
  */
 var gcdSort = function (nums) {
     const MX = 100001;
+    // Smallest-prime-factor sieve: spf[v] lets each value be split into
+    // its distinct primes by repeated division.
     const spf = new Array(MX);
     for (let i = 0; i < MX; i++) {
         spf[i] = i;
@@ -18,11 +20,15 @@ var gcdSort = function (nums) {
         }
     }
 
+    // Union-find over values and primes: a swap is legal when the two
+    // values share a prime, and chains of swaps make any two values in
+    // one component mutually reachable.
     const parent = new Array(MX);
     for (let i = 0; i < MX; i++) {
         parent[i] = i;
     }
 
+    // Path halving keeps the forest shallow.
     const find = (a) => {
         while (parent[a] !== a) {
             parent[a] = parent[parent[a]];
@@ -39,6 +45,8 @@ var gcdSort = function (nums) {
         }
     };
 
+    // Link each value to each of its distinct primes. Indexing by value
+    // (not position) automatically merges equal values across positions.
     for (const x of nums) {
         let v = x;
         while (v > 1) {
@@ -51,6 +59,8 @@ var gcdSort = function (nums) {
     }
 
     const target = [...nums].sort((a, b) => a - b);
+    // Sortable iff every element shares a component with its sorted
+    // target; a position spanning two components is immovable.
     for (let i = 0; i < nums.length; i++) {
         if (find(nums[i]) !== find(target[i])) {
             return false;

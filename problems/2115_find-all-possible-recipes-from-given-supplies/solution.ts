@@ -15,13 +15,17 @@ function findAllRecipes(
     for (let i = 0; i < n; i++) {
         const seen = new Set<number>();
         for (const item of ingredients[i]) {
+            // An initial supply satisfies the requirement outright.
             if (have.has(item)) {
                 continue;
             }
             const j = index.get(item);
             if (j === undefined) {
+                // Neither supply nor recipe: never makeable.
                 impossible[i] = true;
             } else if (!seen.has(j)) {
+                // seen dedupes repeated ingredients so the indegree counts
+                // each recipe dependency once.
                 seen.add(j);
                 indegree[i]++;
                 dependents[j].push(i);
@@ -29,6 +33,8 @@ function findAllRecipes(
         }
     }
 
+    // Kahn's algorithm: recipes needing nothing beyond the supplies start
+    // made; cycles never reach indegree zero and drop out automatically.
     const queue: number[] = [];
     for (let i = 0; i < n; i++) {
         if (indegree[i] === 0 && !impossible[i]) {
@@ -40,6 +46,8 @@ function findAllRecipes(
         const i = queue[head];
         made.push(recipes[i]);
         for (const j of dependents[i]) {
+            // Skip impossible recipes so their failure never blocks or
+            // corrupts the rest.
             if (impossible[j]) {
                 continue;
             }

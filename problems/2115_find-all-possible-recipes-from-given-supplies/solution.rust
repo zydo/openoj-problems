@@ -16,12 +16,16 @@ impl Solution {
         for i in 0..n {
             let mut seen: std::collections::HashSet<usize> = std::collections::HashSet::new();
             for item in &ingredients[i] {
+                // An initial supply satisfies the requirement outright.
                 if have.contains(item) {
                     continue;
                 }
                 match index.get(item) {
+                    // Neither supply nor recipe: never makeable.
                     None => impossible[i] = true,
                     Some(&j) => {
+                        // seen dedupes repeated ingredients so the indegree
+                        // counts each recipe dependency once.
                         if seen.insert(j) {
                             indegree[i] += 1;
                             dependents[j].push(i);
@@ -31,6 +35,8 @@ impl Solution {
             }
         }
 
+        // Kahn's algorithm: recipes needing nothing beyond the supplies start
+        // made; cycles never reach indegree zero and drop out automatically.
         let mut queue: std::collections::VecDeque<usize> = std::collections::VecDeque::new();
         for i in 0..n {
             if indegree[i] == 0 && !impossible[i] {
@@ -41,6 +47,8 @@ impl Solution {
         while let Some(i) = queue.pop_front() {
             made.push(recipes[i].clone());
             for &j in &dependents[i] {
+                // Skip impossible recipes so their failure never blocks or
+                // corrupts the rest.
                 if impossible[j] {
                     continue;
                 }

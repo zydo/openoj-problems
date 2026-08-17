@@ -7,11 +7,17 @@ class Solution {
 
     public int maximumInvitations(int[] favorite) {
         int n = favorite.length;
+        // favorite defines a functional graph: disjoint cycles with in-trees
+        // hanging off them.
         int[] indeg = new int[n];
         for (int f : favorite) {
             indeg[f]++;
         }
 
+        // Kahn-style peel of the acyclic nodes: after it, depth[v] is the
+        // node count of the longest chain of non-cycle employees leading
+        // directly into v (at least 1 — itself), i.e. the arm length a
+        // 2-cycle can absorb on that side.
         int[] depth = new int[n];
         java.util.Arrays.fill(depth, 1);
         Deque<Integer> queue = new ArrayDeque<>();
@@ -31,6 +37,10 @@ class Solution {
             }
         }
 
+        // Whatever still has positive indegree is a cycle node. A seating is
+        // either one whole cycle >= 3 (outsiders can't join: every neighbor
+        // seat is taken) or 2-cycles with both chains — and several pairs can
+        // share one table, so those add up.
         int maxCycle = 0;
         int pairSum = 0;
         boolean[] visited = new boolean[n];
@@ -44,6 +54,7 @@ class Solution {
                     cur = favorite[cur];
                 }
                 if (cycleLen == 2) {
+                    // The pair sits together; each side takes one chain.
                     pairSum += depth[i] + depth[favorite[i]];
                 } else if (cycleLen > maxCycle) {
                     maxCycle = cycleLen;

@@ -1,10 +1,16 @@
 function maximumInvitations(favorite: number[]): number {
     const n = favorite.length;
+    // favorite defines a functional graph: disjoint cycles with in-trees
+    // hanging off them.
     const indeg = new Array<number>(n).fill(0);
     for (const f of favorite) {
         indeg[f]++;
     }
 
+    // Kahn-style peel of the acyclic nodes: after it, depth[v] is the node
+    // count of the longest chain of non-cycle employees leading directly
+    // into v (at least 1 — itself), i.e. the arm length a 2-cycle can
+    // absorb on that side.
     const depth = new Array<number>(n).fill(1);
     const queue: number[] = [];
     for (let i = 0; i < n; i++) {
@@ -23,6 +29,10 @@ function maximumInvitations(favorite: number[]): number {
         }
     }
 
+    // Whatever still has positive indegree is a cycle node. A seating is
+    // either one whole cycle >= 3 (outsiders can't join: every neighbor seat
+    // is taken) or 2-cycles with both chains — and several pairs can share
+    // one table, so those add up.
     let maxCycle = 0;
     let pairSum = 0;
     const visited = new Array<boolean>(n).fill(false);
@@ -36,6 +46,7 @@ function maximumInvitations(favorite: number[]): number {
                 cur = favorite[cur];
             }
             if (cycleLen === 2) {
+                // The pair sits together; each side takes one chain.
                 pairSum += depth[i] + depth[favorite[i]];
             } else if (cycleLen > maxCycle) {
                 maxCycle = cycleLen;

@@ -10,11 +10,17 @@ class Solution {
             starts[i] = flowers[i][0];
             ends[i] = flowers[i][1];
         }
+        // The two sides can be sorted separately: a query never needs to know
+        // which start belongs to which end, only the two one-sided counts.
         Arrays.sort(starts);
         Arrays.sort(ends);
         int[] res = new int[people.length];
         for (int i = 0; i < people.length; i++) {
             int t = people[i];
+            // Blooming at t: start <= t and end >= t. upperBound counts
+            // starts <= t (a flower starting exactly at t is blooming);
+            // lowerBound counts ends < t, so a flower ending exactly at t is
+            // still counted.
             res[i] = upperBound(starts, t) - lowerBound(ends, t);
         }
         return res;

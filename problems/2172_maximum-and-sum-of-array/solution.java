@@ -3,6 +3,9 @@ import java.util.*;
 class Solution {
 
     public int maximumANDSum(int[] nums, int numSlots) {
+        // Model each slot as two individual positions: position p belongs to
+        // slot p/2 + 1. numSlots <= 9 gives at most 18 positions, so 2^18
+        // states exhaustively cover every assignment.
         int positions = 2 * numSlots;
         int size = 1 << positions;
         int[] dp = new int[size];
@@ -10,9 +13,13 @@ class Solution {
         dp[0] = 0;
         int best = 0;
         for (int mask = 0; mask < size; mask++) {
+            // -1 marks unreachable masks.
             if (dp[mask] < 0) {
                 continue;
             }
+            // popcount says how many numbers are placed, so the next number
+            // is determined by the state — a fixed placement order is exact
+            // because the sum is symmetric in the assignment.
             int i = Integer.bitCount(mask);
             if (i == nums.length) {
                 best = Math.max(best, dp[mask]);
