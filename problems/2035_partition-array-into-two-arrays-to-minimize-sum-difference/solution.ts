@@ -1,6 +1,8 @@
 function minimumDifference(nums: number[]): number {
     const half = nums.length >> 1;
 
+    // Bucket each half's subset sums by how many elements produced them;
+    // a half of length <= 15 keeps this at most 2^15 entries.
     const subsetSumsByCount = (from: number, to: number): number[][] => {
         const m = to - from;
         const res: number[][] = Array.from({ length: m + 1 }, () => []);
@@ -24,6 +26,9 @@ function minimumDifference(nums: number[]): number {
     let total = 0;
     for (const v of nums) total += v;
 
+    // If the first half contributes c elements with sum a, the second half
+    // must contribute exactly half-c elements with sum b — both sides then
+    // have `half` elements and difference |total - 2(a+b)|.
     let ans = Infinity;
     for (let c = 0; c <= half; c++) {
         const Bc = B[half - c].slice().sort((x, y) => x - y);
@@ -40,6 +45,7 @@ function minimumDifference(nums: number[]): number {
                     hi = mid;
                 }
             }
+            // The closest b sits on one side of the insertion point — try both.
             const idx = lo;
             if (idx < Bc.length) {
                 const d = Math.abs(total - 2 * (a + Bc[idx]));

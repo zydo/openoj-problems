@@ -27,6 +27,8 @@ func minInterval(intervals [][]int, queries []int) []int {
 		}
 		return sorted[a][1] < sorted[b][1]
 	})
+	// Sweep queries in ascending order so each interval's life is a contiguous
+	// stretch of the sweep: live from its left end, dead past its right end.
 	order := make([]int, len(queries))
 	for j := range order {
 		order[j] = j
@@ -40,13 +42,17 @@ func minInterval(intervals [][]int, queries []int) []int {
 	n := len(sorted)
 	for _, j := range order {
 		q := queries[j]
+		// Intervals whose left end has been reached are now live (size, right).
 		for i < n && sorted[i][0] <= q {
 			heap.Push(h, [2]int{sorted[i][1] - sorted[i][0] + 1, sorted[i][1]})
 			i++
 		}
+		// Lazy deletion: the top dies past its right end, and since queries only
+		// grow it fails every later query too — discarding it is permanent.
 		for h.Len() > 0 && (*h)[0][1] < q {
 			heap.Pop(h)
 		}
+		// Surviving top = smallest interval containing q.
 		if h.Len() > 0 {
 			answers[j] = (*h)[0][0]
 		} else {

@@ -10,6 +10,8 @@ import java.util.Map;
 class Solution {
 
     public int[][] validArrangement(int[][] pairs) {
+        // Numbers are nodes, pairs are directed edges: the arrangement is an
+        // Eulerian path (a walk using every edge exactly once).
         Map<Integer, List<Integer>> adj = new LinkedHashMap<>();
         Map<Integer, Integer> indeg = new HashMap<>();
         Map<Integer, Integer> outdeg = new LinkedHashMap<>();
@@ -19,6 +21,8 @@ class Solution {
             indeg.merge(p[1], 1, Integer::sum);
         }
 
+        // The unique out-in == 1 node must start the walk; when all degrees
+        // balance (Eulerian circuit) any edge-bearing node works — pairs[0][0].
         int start = pairs[0][0];
         for (int u : outdeg.keySet()) {
             if (outdeg.get(u) - indeg.getOrDefault(u, 0) == 1) {
@@ -27,6 +31,9 @@ class Solution {
             }
         }
 
+        // Iterative Hierholzer (explicit stack — 1e5 edges would overflow
+        // recursion): deepen while unused edges remain; a node joins `path`
+        // only when stuck, so unwinding emits dead-ends first.
         Deque<Integer> stack = new ArrayDeque<>();
         List<Integer> path = new ArrayList<>();
         stack.push(start);
@@ -40,6 +47,7 @@ class Solution {
                 stack.pop();
             }
         }
+        // Reversal restores walk order; consecutive nodes are the arranged pairs.
         Collections.reverse(path);
 
         int[][] res = new int[path.size() - 1][2];

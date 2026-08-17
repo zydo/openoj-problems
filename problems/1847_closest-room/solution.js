@@ -11,6 +11,7 @@ var closestRoom = function (rooms, queries) {
         .sort(function (a, b) {
             return rooms[b][1] - rooms[a][1];
         });
+    // Offline trick: process queries by decreasing minSize so rooms only accumulate.
     var queryOrder = queries
         .map(function (q, j) {
             return j;
@@ -35,6 +36,8 @@ var closestRoom = function (rooms, queries) {
         var j = queryOrder[qi];
         var preferred = queries[j][0];
         var minSize = queries[j][1];
+        // Every room with size >= minSize qualifies; once inserted it stays
+        // valid for all later queries (their thresholds are only smaller).
         while (
             ri < roomsBySize.length &&
             rooms[roomsBySize[ri]][1] >= minSize
@@ -44,6 +47,7 @@ var closestRoom = function (rooms, queries) {
             ids.splice(pos, 0, id);
             ri += 1;
         }
+        // Closest candidates sit just below/above the insertion point; best stays -1 when both miss.
         var pos2 = lowerBound(ids, preferred);
         var best = -1;
         var bestDist = Infinity;
@@ -51,10 +55,11 @@ var closestRoom = function (rooms, queries) {
             best = ids[pos2 - 1];
             bestDist = preferred - ids[pos2 - 1];
         }
+        // Strict < keeps floor (the smaller id) when the distances tie.
         if (pos2 < ids.length && ids[pos2] - preferred < bestDist) {
             best = ids[pos2];
         }
-        answers[j] = best;
+        answers[j] = best; // write via saved index: original order kept
     }
     return answers;
 };

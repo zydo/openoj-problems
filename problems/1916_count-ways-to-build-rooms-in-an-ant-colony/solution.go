@@ -12,11 +12,16 @@ func waysToBuildRooms(prevRoom []int) int {
 	for i := 1; i <= n; i++ {
 		fact[i] = fact[i-1] * int64(i) % MOD
 	}
+	// Division becomes multiplication: one Fermat exponentiation inverts
+	// fact[n], then invfact[i-1] = invfact[i]*i fills the table backwards —
+	// avoiding one modpow per node.
 	invfact[n] = modpow(fact[n], MOD-2, MOD)
 	for i := n; i >= 1; i-- {
 		invfact[i-1] = invfact[i] * int64(i) % MOD
 	}
 
+	// Recursion is off the table (n up to 1e5): stack-driven preorder puts
+	// parents before descendants, so the reverse walk is a post-order.
 	order := make([]int, 0, n)
 	stack := make([]int, 0, n)
 	stack = append(stack, 0)
@@ -33,6 +38,8 @@ func waysToBuildRooms(prevRoom []int) int {
 		size[i] = 1
 		ways[i] = 1
 	}
+	// Bottom-up: ways[u] = (size(u)-1)! * prod(ways[v] / size[v]!) — build u
+	// first, then multinomial-interleave the children's already-valid orders.
 	for oi := len(order) - 1; oi >= 0; oi-- {
 		u := order[oi]
 		total := 0

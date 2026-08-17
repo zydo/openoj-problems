@@ -6,6 +6,7 @@ var getOrder = function (tasks) {
     var n = tasks.length;
     var byEnqueue = [];
     for (var i = 0; i < n; i++) byEnqueue.push(i);
+    // Indices pre-sorted by (enqueueTime, index): the arrival stream only moves forward.
     byEnqueue.sort(function (a, b) {
         if (tasks[a][0] !== tasks[b][0]) return tasks[a][0] - tasks[b][0];
         return a - b;
@@ -57,16 +58,19 @@ var getOrder = function (tasks) {
     var i = 0;
     while (i < n || heap.length > 0) {
         if (heap.length === 0) {
+            // CPU idle: jump straight to the next arrival instead of ticking.
             time = Math.max(time, tasks[byEnqueue[i]][0]);
         }
+        // Enqueue everything available at this instant BEFORE popping, so all
+        // contenders compete under the same (processingTime, index) order.
         while (i < n && tasks[byEnqueue[i]][0] <= time) {
             var j = byEnqueue[i];
             push([tasks[j][1], j]);
             i += 1;
         }
-        var item = pop();
+        var item = pop(); // winner: shortest processing time, smallest index on ties
         order.push(item[1]);
-        time += item[0];
+        time += item[0]; // clock advances by exactly the winner's duration
     }
     return order;
 };

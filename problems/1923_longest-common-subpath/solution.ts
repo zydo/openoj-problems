@@ -1,4 +1,6 @@
 function longestCommonSubpath(n: number, paths: number[][]): number {
+    // Two independent moduli combined into one key make an accidental
+    // collision astronomically unlikely.
     const MOD1 = 1000000007;
     const MOD2 = 1000000009;
     const BASE = 1000003;
@@ -12,6 +14,7 @@ function longestCommonSubpath(n: number, paths: number[][]): number {
                 h2 = 0;
             let power1 = 1,
                 power2 = 1;
+            // +1 per city id so a run of city 0 never hashes to the all-zero value.
             for (let i = 0; i < length; i++) {
                 h1 = (h1 * BASE + path[i] + 1) % MOD1;
                 h2 = (h2 * BASE + path[i] + 1) % MOD2;
@@ -20,6 +23,8 @@ function longestCommonSubpath(n: number, paths: number[][]): number {
             }
             const hashes = new Set<number>();
             hashes.add(h1 * MOD2 + h2);
+            // Roll the window: multiply by base, drop the outgoing digit
+            // weighted by BASE^L, add the incoming digit (constant per step).
             for (let j = length; j < path.length; j++) {
                 const out1 = ((path[j - length] + 1) * power1) % MOD1;
                 const out2 = ((path[j - length] + 1) * power2) % MOD2;
@@ -29,6 +34,8 @@ function longestCommonSubpath(n: number, paths: number[][]): number {
                 h2 = (h2 + path[j] + 1) % MOD2;
                 hashes.add(h1 * MOD2 + h2);
             }
+            // The first path seeds the set; each later path intersects into
+            // it, bailing out the moment the intersection empties.
             if (common === null) {
                 common = hashes;
             } else {
@@ -45,6 +52,8 @@ function longestCommonSubpath(n: number, paths: number[][]): number {
 
     let lo = 0;
     let hi = Math.min(...paths.map((p) => p.length));
+    // Existence is monotone in L (any prefix of a common subpath is common),
+    // so upper-mid binary search converges on the maximum feasible length.
     while (lo < hi) {
         const mid = Math.floor((lo + hi + 1) / 2);
         if (exists(mid)) {

@@ -6,6 +6,8 @@ class Solution:
     def minimumDifference(self, nums: List[int]) -> int:
         half = len(nums) // 2
 
+        # Bucket each half's subset sums by how many elements produced them;
+        # a half of length <= 15 keeps this at most 2^15 entries.
         def subset_sums_by_count(arr):
             m = len(arr)
             res = [[] for _ in range(m + 1)]
@@ -18,12 +20,15 @@ class Solution:
                 res[cnt].append(total)
             return res
 
+        # If the first half contributes c elements with sum a, the second half
+        # must contribute exactly half-c elements with sum b — both sides then
+        # have `half` elements and difference |total - 2(a+b)|.
         A = subset_sums_by_count(nums[:half])
         B = subset_sums_by_count(nums[half:])
         total = sum(nums)
         ans = float("inf")
         for c in range(half + 1):
-            Bc = sorted(B[half - c])
+            Bc = sorted(B[half - c])  # sorted once per count class
             for a in A[c]:
                 # b >= total/2 - a  <=>  2*b >= total - 2*a (exact integers)
                 want = total - 2 * a
@@ -34,6 +39,7 @@ class Solution:
                         lo = mid + 1
                     else:
                         hi = mid
+                # The closest b sits on one side of the insertion point — try both.
                 idx = lo
                 if idx < len(Bc):
                     d = abs(total - 2 * (a + Bc[idx]))

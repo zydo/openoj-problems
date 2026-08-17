@@ -6,6 +6,8 @@ import (
 func minimumDifference(nums []int) int {
 	half := len(nums) / 2
 
+	// Bucket each half's subset sums by how many elements produced them;
+	// a half of length <= 15 keeps this at most 2^15 entries.
 	subsetSumsByCount := func(from, to int) [][]int64 {
 		m := to - from
 		res := make([][]int64, m+1)
@@ -30,6 +32,9 @@ func minimumDifference(nums []int) int {
 		total += int64(v)
 	}
 
+	// If the first half contributes c elements with sum a, the second half
+	// must contribute exactly half-c elements with sum b — both sides then
+	// have `half` elements and difference |total - 2(a+b)|.
 	ans := int64(1) << 62
 	for c := 0; c <= half; c++ {
 		Bc := append([]int64(nil), B[half-c]...)
@@ -46,6 +51,7 @@ func minimumDifference(nums []int) int {
 					hi = mid
 				}
 			}
+			// The closest b sits on one side of the insertion point — try both.
 			idx := lo
 			if idx < len(Bc) {
 				d := total - 2*(a+Bc[idx])

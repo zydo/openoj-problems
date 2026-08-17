@@ -3,6 +3,8 @@ class Solution {
     int minimumDifference(vector<int> &nums) {
         int half = nums.size() / 2;
 
+        // Bucket each half's subset sums by how many elements produced them;
+        // a half of length <= 15 keeps this at most 2^15 entries.
         auto subsetSumsByCount = [&](int from, int to) {
             int m = to - from;
             vector<vector<long long>> res(m + 1);
@@ -27,6 +29,9 @@ class Solution {
             total += v;
         }
 
+        // If the first half contributes c elements with sum a, the second half
+        // must contribute exactly half-c elements with sum b — both sides then
+        // have `half` elements and difference |total - 2(a+b)|.
         long long ans = LLONG_MAX;
         for (int c = 0; c <= half; ++c) {
             vector<long long> Bc = B[half - c];
@@ -43,6 +48,7 @@ class Solution {
                         hi = mid;
                     }
                 }
+                // The closest b sits on one side of the insertion point — try both.
                 int idx = lo;
                 if (idx < (int)Bc.size()) {
                     long long d = llabs(total - 2 * (a + Bc[idx]));

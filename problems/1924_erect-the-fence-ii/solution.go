@@ -6,6 +6,7 @@ func circleInside(c [3]float64, x, y float64) bool {
 	return dx*dx+dy*dy <= c[2]+1e-7
 }
 
+// Circle with the two points as diameter: midpoint center, squared radius = d^2/4.
 func circleFrom2(ax, ay, bx, by float64) [3]float64 {
 	cx := (ax + bx) / 2.0
 	cy := (ay + by) / 2.0
@@ -15,6 +16,8 @@ func circleFrom2(ax, ay, bx, by float64) [3]float64 {
 }
 
 func circleFrom3(ax, ay, bx, by, cx, cy float64) [3]float64 {
+	// Zero determinant = collinear, no circumcircle; the best two-point
+	// circle among the pairs is the correct enclosing circle.
 	d := 2.0 * (ax*(by-cy) + bx*(cy-ay) + cx*(ay-by))
 	if d == 0.0 {
 		best := circleFrom2(ax, ay, bx, by)
@@ -28,6 +31,7 @@ func circleFrom3(ax, ay, bx, by, cx, cy float64) [3]float64 {
 		}
 		return best
 	}
+	// Circumcenter via the perpendicular-bisector linear system.
 	aa := ax*ax + ay*ay
 	bb := bx*bx + by*by
 	cc := cx*cx + cy*cy
@@ -39,6 +43,8 @@ func circleFrom3(ax, ay, bx, by, cx, cy float64) [3]float64 {
 }
 
 func outerTrees(trees [][]int) []float64 {
+	// Translate by the first tree before converting to floats: small
+	// intermediate magnitudes protect the 1e-5 judge tolerance.
 	n := len(trees)
 	ox, oy := float64(trees[0][0]), float64(trees[0][1])
 	xs := make([]float64, n)
@@ -47,6 +53,9 @@ func outerTrees(trees [][]int) []float64 {
 		xs[i] = float64(p[0]) - ox
 		ys[i] = float64(p[1]) - oy
 	}
+	// Welzl's argument: a point outside the current circle must lie ON the
+	// border of the corrected circle — fix i and rebuild one level deeper
+	// (j escaping fixes a second border point, k escaping fixes all three).
 	circle := [3]float64{xs[0], ys[0], 0.0}
 	for i := 1; i < n; i++ {
 		if circleInside(circle, xs[i], ys[i]) {

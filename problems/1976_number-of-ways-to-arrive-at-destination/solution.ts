@@ -9,7 +9,7 @@ function countPaths(n: number, roads: number[][]): number {
     const dist: number[] = new Array(n).fill(INF);
     const ways: number[] = new Array(n).fill(0);
     dist[0] = 0;
-    ways[0] = 1;
+    ways[0] = 1; // exactly one way to be at the source: the empty path
     // min-heap of encoded values dist * n + node (node < n)
     const hpush = (h: number[], v: number): void => {
         h.push(v);
@@ -50,14 +50,19 @@ function countPaths(n: number, roads: number[][]): number {
         const enc = hpop(heap);
         const d = Math.floor(enc / n);
         const u = enc % n;
+        // Positive weights => u is finalized only after every shortest path
+        // into it was relaxed, so ways[u] is complete at pop time;
+        // d > dist[u] just discards a stale heap entry.
         if (d > dist[u]) continue;
         for (const [v, t] of adj[u]) {
             const nd = d + t;
             if (nd < dist[v]) {
+                // Strictly shorter route: old path counts are obsolete, reset.
                 dist[v] = nd;
                 ways[v] = ways[u];
                 hpush(heap, nd * n + v);
             } else if (nd === dist[v]) {
+                // Equally short route: extend the count, not the distance.
                 ways[v] = (ways[v] + ways[u]) % MOD;
             }
         }

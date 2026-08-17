@@ -13,7 +13,7 @@ func countPaths(n int, roads [][]int) int {
 		dist[i] = INF
 	}
 	dist[0] = 0
-	ways[0] = 1
+	ways[0] = 1 // exactly one way to be at the source: the empty path
 	// min-heap of (dist, node)
 	heap := make([][2]int64, 0, n)
 	hpush := func(v [2]int64) {
@@ -57,6 +57,9 @@ func countPaths(n int, roads [][]int) int {
 	for len(heap) > 0 {
 		top := hpop()
 		d, u := top[0], int(top[1])
+		// Positive weights => u is finalized only after every shortest path into
+		// it was relaxed, so ways[u] is complete at pop time; d > dist[u] just
+		// discards a stale heap entry.
 		if d > dist[u] {
 			continue
 		}
@@ -64,10 +67,12 @@ func countPaths(n int, roads [][]int) int {
 			v, t := e[0], int64(e[1])
 			nd := d + t
 			if nd < dist[v] {
+				// Strictly shorter route: old path counts are obsolete, reset.
 				dist[v] = nd
 				ways[v] = ways[u]
 				hpush([2]int64{nd, int64(v)})
 			} else if nd == dist[v] {
+				// Equally short route: extend the count, not the distance.
 				ways[v] = (ways[v] + ways[u]) % MOD
 			}
 		}

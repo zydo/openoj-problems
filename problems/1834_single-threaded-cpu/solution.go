@@ -29,6 +29,7 @@ func getOrder(tasks [][]int) []int {
 	for i := range byEnqueue {
 		byEnqueue[i] = i
 	}
+	// Indices pre-sorted by (enqueueTime, index): the arrival stream only moves forward.
 	sort.Slice(byEnqueue, func(a, b int) bool {
 		ra, rb := byEnqueue[a], byEnqueue[b]
 		if tasks[ra][0] != tasks[rb][0] {
@@ -43,19 +44,22 @@ func getOrder(tasks [][]int) []int {
 	i := 0
 	for i < n || h.Len() > 0 {
 		if h.Len() == 0 {
+			// CPU idle: jump straight to the next arrival instead of ticking.
 			enq := tasks[byEnqueue[i]][0]
 			if enq > time {
 				time = enq
 			}
 		}
+		// Enqueue everything available at this instant BEFORE popping, so all
+		// contenders compete under the same (processingTime, index) order.
 		for i < n && tasks[byEnqueue[i]][0] <= time {
 			j := byEnqueue[i]
 			heap.Push(h, [2]int{tasks[j][1], j})
 			i++
 		}
-		top := heap.Pop(h).([2]int)
+		top := heap.Pop(h).([2]int) // winner: shortest processing time, smallest index on ties
 		order = append(order, top[1])
-		time += top[0]
+		time += top[0] // clock advances by exactly the winner's duration
 	}
 	return order
 }

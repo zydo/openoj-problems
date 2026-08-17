@@ -1,4 +1,6 @@
 function validArrangement(pairs: number[][]): number[][] {
+    // Numbers are nodes, pairs are directed edges: the arrangement is an
+    // Eulerian path (a walk using every edge exactly once).
     const adj = new Map<number, number[]>();
     const indeg = new Map<number, number>();
     const outdeg = new Map<number, number>();
@@ -11,6 +13,8 @@ function validArrangement(pairs: number[][]): number[][] {
         indeg.set(v, (indeg.get(v) || 0) + 1);
     }
 
+    // The unique out-in == 1 node must start the walk; when all degrees
+    // balance (Eulerian circuit) any edge-bearing node works — pairs[0][0].
     let start = pairs[0][0];
     for (const u of outdeg.keys()) {
         if ((outdeg.get(u) || 0) - (indeg.get(u) || 0) === 1) {
@@ -19,6 +23,9 @@ function validArrangement(pairs: number[][]): number[][] {
         }
     }
 
+    // Iterative Hierholzer (explicit stack — 1e5 edges would overflow
+    // recursion): deepen while unused edges remain; a node joins `path`
+    // only when stuck, so unwinding emits dead-ends first.
     const stack: number[] = [start];
     const path: number[] = [];
     while (stack.length > 0) {
@@ -31,6 +38,7 @@ function validArrangement(pairs: number[][]): number[][] {
             stack.pop();
         }
     }
+    // Reversal restores walk order; consecutive nodes are the arranged pairs.
     path.reverse();
 
     const res: number[][] = [];

@@ -15,6 +15,9 @@ class Solution {
             total += v;
         }
 
+        // If the first half contributes c elements with sum a, the second half
+        // must contribute exactly half-c elements with sum b — both sides then
+        // have `half` elements and difference |total - 2(a+b)|.
         long ans = Long.MAX_VALUE;
         for (int c = 0; c <= half; c++) {
             List<Integer> Bc = new ArrayList<>(B.get(half - c));
@@ -32,6 +35,7 @@ class Solution {
                         hi = mid;
                     }
                 }
+                // The closest b sits on one side of the insertion point — try both.
                 int idx = lo;
                 if (idx < Bc.size()) {
                     long d = Math.abs(total - 2 * (a + Bc.get(idx)));
@@ -50,6 +54,8 @@ class Solution {
         return (int) ans;
     }
 
+    // Bucket each half's subset sums by how many elements produced them;
+    // a half of length <= 15 keeps this at most 2^15 entries.
     private List<List<Integer>> subsetSumsByCount(int[] arr, int from, int to) {
         int m = to - from;
         List<List<Integer>> res = new ArrayList<>();

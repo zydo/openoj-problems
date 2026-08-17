@@ -6,6 +6,7 @@ class Solution {
         return dx * dx + dy * dy <= circle[2] + eps;
     }
 
+    // Circle with the two points as diameter: midpoint center, squared radius = d^2/4.
     private double[] from2(double ax, double ay, double bx, double by) {
         double cx = (ax + bx) / 2.0,
             cy = (ay + by) / 2.0;
@@ -23,6 +24,8 @@ class Solution {
         double cy
     ) {
         double d = 2.0 * (ax * (by - cy) + bx * (cy - ay) + cx * (ay - by));
+        // Zero determinant = collinear, no circumcircle; the best two-point
+        // circle among the pairs is the correct enclosing circle.
         if (d == 0.0) {
             double[] best = null;
             double[][] pairs = {
@@ -37,6 +40,7 @@ class Solution {
             }
             return best;
         }
+        // Circumcenter via the perpendicular-bisector linear system.
         double aa = ax * ax + ay * ay;
         double bb = bx * bx + by * by;
         double cc = cx * cx + cy * cy;
@@ -48,6 +52,8 @@ class Solution {
     }
 
     public double[] outerTrees(int[][] trees) {
+        // Translate by the first tree before converting to floats: small
+        // intermediate magnitudes protect the 1e-5 judge tolerance.
         int n = trees.length;
         double ox = trees[0][0],
             oy = trees[0][1];
@@ -58,6 +64,9 @@ class Solution {
             ys[i] = trees[i][1] - oy;
         }
         double eps = 1e-7;
+        // Welzl's argument: a point outside the current circle must lie ON the
+        // border of the corrected circle — fix i and rebuild one level deeper
+        // (j escaping fixes a second border point, k escaping fixes all three).
         double[] circle = { xs[0], ys[0], 0.0 };
         for (int i = 1; i < n; i++) {
             if (inside(circle, xs[i], ys[i], eps)) {

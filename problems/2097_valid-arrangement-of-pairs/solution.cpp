@@ -1,6 +1,8 @@
 class Solution {
   public:
     vector<vector<int>> validArrangement(vector<vector<int>> &pairs) {
+        // Numbers are nodes, pairs are directed edges: the arrangement is an
+        // Eulerian path (a walk using every edge exactly once).
         unordered_map<int, vector<int>> adj;
         unordered_map<int, int> indeg;
         unordered_map<int, int> outdeg;
@@ -15,6 +17,8 @@ class Solution {
             indeg[v]++;
         }
 
+        // The unique out-in == 1 node must start the walk; when all degrees
+        // balance (Eulerian circuit) any edge-bearing node works — pairs[0][0].
         int start = pairs[0][0];
         for (int u : order) {
             if (outdeg[u] - indeg[u] == 1) {
@@ -23,6 +27,9 @@ class Solution {
             }
         }
 
+        // Iterative Hierholzer (explicit stack — 1e5 edges would overflow
+        // recursion): deepen while unused edges remain; a node joins `path`
+        // only when stuck, so unwinding emits dead-ends first.
         vector<int> stack;
         vector<int> path;
         stack.push_back(start);
@@ -37,6 +44,7 @@ class Solution {
                 stack.pop_back();
             }
         }
+        // Reversal restores walk order; consecutive nodes are the arranged pairs.
         reverse(path.begin(), path.end());
 
         vector<vector<int>> res;

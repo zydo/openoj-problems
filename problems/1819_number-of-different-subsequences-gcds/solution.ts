@@ -14,12 +14,15 @@ function countDifferentSubsequenceGCDs(nums: number[]): number {
         return a;
     };
     let count = 0;
+    // g is achievable iff the gcd of ALL present multiples of g is exactly g:
+    // taking every divisible element minimizes the gcd, so no other subset can do better.
     for (let g = 1; g <= maxVal; g++) {
-        let running = 0;
+        let running = 0; // gcd(0, x) = x, so 0 is the identity seed
         for (let multiple = g; multiple <= maxVal; multiple += g) {
             if (present[multiple]) {
                 running = gcd(running, multiple);
                 if (running === g) {
+                    // Folding more multiples can only shrink the gcd — confirmed, stop early.
                     count++;
                     break;
                 }

@@ -19,13 +19,16 @@ impl Solution {
             a
         }
         let mut count = 0usize;
+        // g is achievable iff the gcd of ALL present multiples of g is exactly g:
+        // taking every divisible element minimizes the gcd, so no other subset can do better.
         for g in 1..=max_val {
-            let mut running = 0usize;
+            let mut running = 0usize; // gcd(0, x) = x, so 0 is the identity seed
             let mut multiple = g;
             while multiple <= max_val {
                 if present[multiple] {
                     running = gcd(running, multiple);
                     if running == g {
+                        // Folding more multiples can only shrink the gcd — confirmed, stop early.
                         count += 1;
                         break;
                     }

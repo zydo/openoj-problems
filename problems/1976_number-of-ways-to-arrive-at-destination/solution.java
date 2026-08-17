@@ -16,7 +16,7 @@ class Solution {
         long[] ways = new long[n];
         java.util.Arrays.fill(dist, Long.MAX_VALUE);
         dist[0] = 0;
-        ways[0] = 1;
+        ways[0] = 1; // exactly one way to be at the source: the empty path
         // min-heap of (dist, node)
         PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) -> {
             if (a[0] != b[0]) return Long.compare(a[0], b[0]);
@@ -27,15 +27,20 @@ class Solution {
             long[] top = heap.poll();
             long d = top[0];
             int u = (int) top[1];
+            // Positive weights => u is finalized only after every shortest path
+            // into it was relaxed, so ways[u] is complete at pop time;
+            // d > dist[u] just discards a stale heap entry.
             if (d > dist[u]) continue;
             for (int[] e : adj[u]) {
                 int v = e[0];
                 long nd = d + e[1];
                 if (nd < dist[v]) {
+                    // Strictly shorter route: old path counts are obsolete, reset.
                     dist[v] = nd;
                     ways[v] = ways[u];
                     heap.offer(new long[] { nd, v });
                 } else if (nd == dist[v]) {
+                    // Equally short route: extend the count, not the distance.
                     ways[v] = (ways[v] + ways[u]) % MOD;
                 }
             }

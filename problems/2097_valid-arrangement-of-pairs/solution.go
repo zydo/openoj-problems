@@ -1,4 +1,6 @@
 func validArrangement(pairs [][]int) [][]int {
+	// Numbers are nodes, pairs are directed edges: the arrangement is an
+	// Eulerian path (a walk using every edge exactly once).
 	adj := make(map[int][]int)
 	indeg := make(map[int]int)
 	outdeg := make(map[int]int)
@@ -20,6 +22,9 @@ func validArrangement(pairs [][]int) [][]int {
 		}
 	}
 
+	// Iterative Hierholzer (explicit stack — 1e5 edges would overflow
+	// recursion): deepen while unused edges remain; a node joins `path`
+	// only when stuck, so unwinding emits dead-ends first.
 	stack := make([]int, 0, len(pairs)+1)
 	stack = append(stack, start)
 	path := make([]int, 0, len(pairs)+1)
@@ -36,7 +41,7 @@ func validArrangement(pairs [][]int) [][]int {
 		}
 	}
 
-	// reverse path
+	// Reversal restores walk order; consecutive nodes are the arranged pairs.
 	for i, j := 0, len(path)-1; i < j; i, j = i+1, j-1 {
 		path[i], path[j] = path[j], path[i]
 	}
