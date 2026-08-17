@@ -14,12 +14,14 @@ class Solution {
                 ? Integer.compare(a[0], b[0])
                 : Integer.compare(a[2], b[2])
         );
+        // endTime[i] = when room i frees up (-1: never used, always free).
         long[] endTime = new long[n];
         java.util.Arrays.fill(endTime, -1L);
         int[] count = new int[n];
         for (int[] m : ordered) {
             int s = m[0],
                 e = m[1];
+            // Lowest-numbered room already free by s wins the allocation.
             int room = -1;
             for (int i = 0; i < n; i++) {
                 if (endTime[i] <= s) {
@@ -28,6 +30,9 @@ class Solution {
                 }
             }
             if (room == -1) {
+                // All busy: take the earliest-finishing room (strict <
+                // keeps the lowest index on ties) and delay the meeting
+                // there with its original duration.
                 room = 0;
                 for (int i = 1; i < n; i++) {
                     if (endTime[i] < endTime[room]) {
@@ -40,6 +45,7 @@ class Solution {
             }
             count[room]++;
         }
+        // Strict comparison keeps the lowest room index on count ties.
         int best = 0;
         for (int i = 1; i < n; i++) {
             if (count[i] > count[best]) best = i;

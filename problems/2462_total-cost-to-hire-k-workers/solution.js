@@ -45,20 +45,27 @@ var totalCost = function (costs, k, candidates) {
     };
     const peek = (h) => h.a[0];
 
+    // Windows overlap => every remaining worker is always eligible, so the
+    // greedy is just "hire the k cheapest overall".
     if (2 * candidates >= n) {
         const sorted = costs.slice().sort((a, b) => a - b);
         let total = 0;
         for (let i = 0; i < k; i++) total += sorted[i];
         return total;
     }
+    // left = front window, right = back window; less() breaks cost ties
+    // by the smaller index.
     const left = heap(),
         right = heap();
     for (let i = 0; i < candidates; i++) push(left, [costs[i], i]);
     for (let i = n - candidates; i < n; i++) push(right, [costs[i], i]);
+    // i feeds left and j feeds right from the untouched middle; i <= j
+    // guards against inserting a middle worker twice.
     let i = candidates,
         j = n - candidates - 1;
     let total = 0;
     for (let t = 0; t < k; t++) {
+        // Cheaper top wins; !less(right, left) also prefers left on ties.
         if (
             right.a.length === 0 ||
             (left.a.length > 0 && !less(peek(right), peek(left)))

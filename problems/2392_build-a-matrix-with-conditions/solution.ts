@@ -3,6 +3,8 @@ function buildMatrix(
     rowConditions: number[][],
     colConditions: number[][],
 ): number[][] {
+    // Kahn's algorithm over the condition graph. Duplicate conditions only
+    // add parallel edges and matching indegrees — harmless.
     const topo = (conditions: number[][]): number[] | null => {
         const adj: number[][] = Array.from({ length: k + 1 }, () => []);
         const indeg: number[] = new Array(k + 1).fill(0);
@@ -24,6 +26,7 @@ function buildMatrix(
                 if (indeg[w] === 0) queue.push(w);
             }
         }
+        // Fewer than k vertices peeled means a cycle: no valid order.
         if (order.length !== k) return null;
         return order;
     };
@@ -32,6 +35,9 @@ function buildMatrix(
     if (rowOrder === null) return [];
     const colOrder = topo(colConditions);
     if (colOrder === null) return [];
+    // The two orders are independent; distinct vertices of a topo order
+    // get distinct positions, so every required pair stays strictly
+    // ordered when v is placed at (rowPos[v], colPos[v]).
     const rowPos: number[] = new Array(k + 1);
     const colPos: number[] = new Array(k + 1);
     rowOrder.forEach((v, i) => {

@@ -35,6 +35,8 @@ class FoodRatings {
             foodNames.add(foods[index]);
             foodIds.put(foods[index], foodId);
             info.put(foods[index], new int[] { ratings[index], cuisineId });
+            // Heap min of {-rating, foodId} is exactly the required winner:
+            // highest rating first, ties to the lexicographically smaller name.
             byCuisine
                 .get(cuisineId)
                 .offer(new int[] { -ratings[index], foodId });
@@ -42,6 +44,8 @@ class FoodRatings {
     }
 
     public void changeRating(String food, int newRating) {
+        // Lazy deletion: push a fresh entry and leave the outdated one in the
+        // heap as garbage; only the info map holds the current rating.
         int[] record = info.get(food);
         record[0] = newRating;
         byCuisine
@@ -53,6 +57,8 @@ class FoodRatings {
         PriorityQueue<int[]> heap = byCuisine.get(cuisineIds.get(cuisine));
         while (!heap.isEmpty()) {
             int[] top = heap.peek();
+            // An entry is stale when its rating disagrees with the food's
+            // current rating; a valid top is peeked, never consumed.
             if (info.get(foodNames.get(top[1]))[0] == -top[0]) {
                 return foodNames.get(top[1]);
             }

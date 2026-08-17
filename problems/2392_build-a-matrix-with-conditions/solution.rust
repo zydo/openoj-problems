@@ -15,6 +15,9 @@ impl Solution {
             Some(o) => o,
             None => return vec![],
         };
+        // The two orders are independent; distinct vertices of a topo order
+        // get distinct positions, so every required pair stays strictly
+        // ordered when v is placed at (row_pos[v], col_pos[v]).
         let mut row_pos = vec![0usize; kk + 1];
         let mut col_pos = vec![0usize; kk + 1];
         for (i, &v) in row_order.iter().enumerate() {
@@ -30,6 +33,8 @@ impl Solution {
         matrix
     }
 
+    // Kahn's algorithm over the condition graph. Duplicate conditions only
+    // add parallel edges and matching indegrees — harmless.
     fn topo(k: usize, conditions: &[Vec<i32>]) -> Option<Vec<i32>> {
         let mut adj: Vec<Vec<usize>> = vec![Vec::new(); k + 1];
         let mut indeg = vec![0i32; k + 1];
@@ -55,6 +60,7 @@ impl Solution {
                 }
             }
         }
+        // Fewer than k vertices peeled means a cycle: no valid order.
         if order.len() != k {
             None
         } else {

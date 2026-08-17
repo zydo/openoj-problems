@@ -6,11 +6,15 @@ impl Solution {
         let n = costs.len();
         let k = k as usize;
         let candidates = candidates as usize;
+        // Windows overlap => every remaining worker is always eligible, so
+        // the greedy is just "hire the k cheapest overall".
         if 2 * candidates >= n {
             let mut sorted = costs.clone();
             sorted.sort_unstable();
             return sorted.iter().take(k).map(|&c| c as i64).sum();
         }
+        // Reverse<(cost, idx)> makes it a min-heap whose cost ties break by
+        // the smaller index; left = front window, right = back window.
         let mut left: BinaryHeap<Reverse<(i32, usize)>> = BinaryHeap::new();
         let mut right: BinaryHeap<Reverse<(i32, usize)>> = BinaryHeap::new();
         for i in 0..candidates {
@@ -19,10 +23,13 @@ impl Solution {
         for i in n - candidates..n {
             right.push(Reverse((costs[i], i)));
         }
+        // i feeds left and j feeds right from the untouched middle; i <= j
+        // guards against inserting a middle worker twice.
         let mut i = candidates;
         let mut j = n - candidates - 1;
         let mut total: i64 = 0;
         for _ in 0..k {
+            // Cheaper top wins; '<=' prefers left on ties.
             let take_left = match (left.peek(), right.peek()) {
                 (Some(l), Some(r)) => l.0 <= r.0,
                 (Some(_), None) => true,

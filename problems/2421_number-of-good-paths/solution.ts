@@ -36,12 +36,20 @@ function numberOfGoodPaths(vals: number[], edges: number[][]): number {
 
     let answer = 0;
     const valueKeys = [...byValue.keys()].sort((a, b) => a - b);
+    // Activate nodes in increasing value order: smaller values are
+    // already merged, so unions only ever connect components whose
+    // nodes are all <= v.
     for (const v of valueKeys) {
         for (const u of byValue.get(v)!) {
+            // Union across edges to already-active (<= v) endpoints: the
+            // value-v nodes are then connected exactly through paths
+            // whose interior nodes are all <= v.
             for (const w of adj[u]) {
                 if (vals[w] <= v) union(u, w);
             }
         }
+        // Group this value's nodes by component; a component holding c
+        // of them yields c*(c-1)/2 good paths (each unordered pair).
         const componentCount = new Map<number, number>();
         for (const u of byValue.get(v)!) {
             const r = find(u);
@@ -51,5 +59,6 @@ function numberOfGoodPaths(vals: number[], edges: number[][]): number {
             answer += (c * (c - 1)) / 2;
         }
     }
+    // Every single node is a good path on its own.
     return answer + n;
 }

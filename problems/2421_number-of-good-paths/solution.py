@@ -32,11 +32,19 @@ class Solution:
             by_value.setdefault(v, []).append(i)
 
         answer = 0
+        # Activate nodes in increasing value order: when the value-v group
+        # is processed, smaller values are already merged, so unions only
+        # ever connect components whose nodes are all <= v.
         for v in sorted(by_value):
             for u in by_value[v]:
+                # Union across edges to already-active (<= v) endpoints: the
+                # value-v nodes are then connected exactly through paths
+                # whose interior nodes are all <= v.
                 for w in adj[u]:
                     if vals[w] <= v:
                         union(u, w)
+            # Group this value's nodes by component; a component holding c
+            # of them yields c*(c-1)/2 good paths (each unordered pair).
             component_count = {}
             for u in by_value[v]:
                 r = find(u)
@@ -44,4 +52,5 @@ class Solution:
             for c in component_count.values():
                 answer += c * (c - 1) // 2
 
+        # Every single node is a good path on its own.
         return answer + n

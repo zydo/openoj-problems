@@ -20,6 +20,9 @@ func minScore(grid [][]int) [][]int {
 		}
 		return cells[i].c < cells[j].c
 	})
+	// Assign in ascending original order: when a cell's turn comes, every
+	// smaller cell sharing its row/column is already placed, so only the
+	// running maxima of that row and column constrain it.
 	rowMax := make([]int, m)
 	colMax := make([]int, n)
 	res := make([][]int, m)
@@ -27,6 +30,9 @@ func minScore(grid [][]int) [][]int {
 		res[r] = make([]int, n)
 	}
 	for _, cl := range cells {
+		// Smallest legal replacement: 1 + max of what's already in the
+		// row/column; larger demands come only from unplaced cells, which
+		// receive strictly larger values later by construction.
 		v := 1 + rowMax[cl.r]
 		if colMax[cl.c] > v-1 {
 			v = 1 + colMax[cl.c]

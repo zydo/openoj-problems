@@ -16,6 +16,9 @@ class Solution {
         if (colOrder == null) {
             return new int[0][];
         }
+        // The two orders are independent; distinct vertices of a topo order
+        // get distinct positions, so every required pair stays strictly
+        // ordered when v is placed at (rowPos[v], colPos[v]).
         int[] rowPos = new int[k + 1];
         int[] colPos = new int[k + 1];
         for (int i = 0; i < k; i++) {
@@ -29,6 +32,8 @@ class Solution {
         return matrix;
     }
 
+    // Kahn's algorithm over the condition graph. Duplicate conditions only
+    // add parallel edges and matching indegrees — harmless.
     private int[] topo(int k, int[][] conditions) {
         int[] indeg = new int[k + 1];
         int[][] adj = new int[k + 1][];
@@ -61,6 +66,7 @@ class Solution {
                 }
             }
         }
+        // Fewer than k vertices peeled means a cycle: no valid order.
         if (idx != k) {
             return null;
         }

@@ -45,15 +45,23 @@ func numberOfGoodPaths(vals []int, edges [][]int) int {
 	sort.Ints(valueKeys)
 
 	answer := 0
+	// Activate nodes in increasing value order: smaller values are
+	// already merged, so unions only ever connect components whose
+	// nodes are all <= v.
 	for _, v := range valueKeys {
 		nodes := byValue[v]
 		for _, u := range nodes {
+			// Union across edges to already-active (<= v) endpoints: the
+			// value-v nodes are then connected exactly through paths
+			// whose interior nodes are all <= v.
 			for _, w := range adj[u] {
 				if vals[w] <= v {
 					union(u, w)
 				}
 			}
 		}
+		// Group this value's nodes by component; a component holding c
+		// of them yields c*(c-1)/2 good paths (each unordered pair).
 		componentCount := make(map[int]int)
 		for _, u := range nodes {
 			componentCount[find(u)]++
@@ -62,5 +70,6 @@ func numberOfGoodPaths(vals []int, edges [][]int) int {
 			answer += c * (c - 1) / 2
 		}
 	}
+	// Every single node is a good path on its own.
 	return answer + n
 }

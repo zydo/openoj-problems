@@ -11,6 +11,8 @@ class Solution:
         colConditions: List[List[int]],
     ) -> List[List[int]]:
         def topo(conditions):
+            # Kahn's algorithm over the condition graph. Duplicate conditions
+            # only add parallel edges and matching indegrees — harmless.
             adj = [[] for _ in range(k + 1)]
             indeg = [0] * (k + 1)
             for a, b in conditions:
@@ -25,6 +27,7 @@ class Solution:
                     indeg[w] -= 1
                     if indeg[w] == 0:
                         queue.append(w)
+            # Fewer than k vertices peeled means a cycle: no valid order.
             if len(order) != k:
                 return None
             return order
@@ -35,6 +38,9 @@ class Solution:
         col_order = topo(colConditions)
         if col_order is None:
             return []
+        # The two orders are independent; distinct vertices of a topo order
+        # get distinct positions, so every required pair stays strictly
+        # ordered when v is placed at (row_pos[v], col_pos[v]).
         row_pos = {v: i for i, v in enumerate(row_order)}
         col_pos = {v: i for i, v in enumerate(col_order)}
         matrix = [[0] * k for _ in range(k)]

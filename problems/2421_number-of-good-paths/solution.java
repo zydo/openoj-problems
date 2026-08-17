@@ -34,14 +34,22 @@ class Solution {
         long answer = 0;
         List<Integer> valueKeys = new ArrayList<>(byValue.keySet());
         java.util.Collections.sort(valueKeys);
+        // Activate nodes in increasing value order: smaller values are
+        // already merged, so unions only ever connect components whose
+        // nodes are all <= v.
         for (int v : valueKeys) {
             for (int u : byValue.get(v)) {
+                // Union across edges to already-active (<= v) endpoints:
+                // the value-v nodes are then connected exactly through
+                // paths whose interior nodes are all <= v.
                 for (int w : adj.get(u)) {
                     if (vals[w] <= v) {
                         union(u, w);
                     }
                 }
             }
+            // Group this value's nodes by component; a component holding c
+            // of them yields c*(c-1)/2 good paths (each unordered pair).
             Map<Integer, Integer> componentCount = new HashMap<>();
             for (int u : byValue.get(v)) {
                 int r = find(u);
@@ -51,6 +59,7 @@ class Solution {
                 answer += ((long) c * (c - 1)) / 2;
             }
         }
+        // Every single node is a good path on its own.
         return (int) (answer + n);
     }
 

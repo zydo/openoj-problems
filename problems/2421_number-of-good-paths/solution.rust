@@ -30,9 +30,15 @@ impl Solution {
         value_keys.sort_unstable();
 
         let mut answer: i64 = 0;
+        // Activate nodes in increasing value order: smaller values are
+        // already merged, so unions only ever connect components whose
+        // nodes are all <= v.
         for v in value_keys {
             let nodes = &by_value[&v];
             for &u in nodes {
+                // Union across edges to already-active (<= v) endpoints:
+                // the value-v nodes are then connected exactly through
+                // paths whose interior nodes are all <= v.
                 for &w in &adj[u] {
                     if vals[w] <= v {
                         let ra = find(&mut parent, u);
@@ -48,6 +54,8 @@ impl Solution {
                     }
                 }
             }
+            // Group this value's nodes by component; a component holding c
+            // of them yields c*(c-1)/2 good paths (each unordered pair).
             let mut component_count: HashMap<usize, i64> = HashMap::new();
             for &u in nodes {
                 let r = find(&mut parent, u);
@@ -57,6 +65,7 @@ impl Solution {
                 answer += c * (c - 1) / 2;
             }
         }
+        // Every single node is a good path on its own.
         (answer + n as i64) as i32
     }
 }

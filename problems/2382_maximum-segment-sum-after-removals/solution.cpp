@@ -15,6 +15,10 @@ class Solution {
             return x;
         };
 
+        // Reverse time: removals become activations, so the process only
+        // ever merges segments. The leading 0 is the answer after the last
+        // removal, where nothing remains; skip removeQueries[0] (all other
+        // positions are still active at that point).
         vector<long long> answer;
         answer.reserve(n);
         answer.push_back(0);
@@ -23,6 +27,8 @@ class Solution {
             int i = removeQueries[qi];
             active[i] = 1;
             ssum[i] = nums[i];
+            // Merge with any active neighbor; the component total stays at
+            // the new root, so ssum[find(i)] is the whole merged block.
             for (int j : {i - 1, i + 1}) {
                 if (j >= 0 && j < n && active[j]) {
                     int a = find(i), b = find(j);
@@ -32,6 +38,8 @@ class Solution {
                     }
                 }
             }
+            // Segments only grow along the reversed timeline, so the running
+            // max is monotone — one max per step, nothing to evict.
             best = max(best, ssum[find(i)]);
             answer.push_back(best);
         }

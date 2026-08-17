@@ -1,4 +1,6 @@
 func lengthOfLIS(nums []int, k int) int {
+	// Max segment tree indexed by VALUE: leaf v holds the longest
+	// valid subsequence seen so far that ends with value v.
 	size := 1
 	for size <= 100000 {
 		size *= 2
@@ -26,8 +28,14 @@ func lengthOfLIS(nums []int, k int) int {
 		return best
 	}
 	answer := 0
+	// Left-to-right scan keeps index order for free: when x arrives,
+	// only earlier elements are in the tree.
 	for _, x := range nums {
+		// Predecessor must be a strictly smaller value within k, so
+		// query [max(1, x-k), x-1]; extend the best of them by one.
 		current := query(max(1, x-k), x-1) + 1
+		// Climb from the leaf and stop once an ancestor is already
+		// >= current: a shorter subsequence never overwrites a longer.
 		for i := x + size; i >= 1 && tree[i] < current; i /= 2 {
 			tree[i] = current
 		}

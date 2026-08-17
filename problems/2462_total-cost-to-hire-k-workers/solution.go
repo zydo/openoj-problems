@@ -26,6 +26,8 @@ func (h *workerHeap) Pop() interface{} {
 
 func totalCost(costs []int, k int, candidates int) int64 {
 	n := len(costs)
+	// Windows overlap => every remaining worker is always eligible, so
+	// the greedy is just "hire the k cheapest overall".
 	if 2*candidates >= n {
 		sorted := make([]int, n)
 		copy(sorted, costs)
@@ -36,6 +38,8 @@ func totalCost(costs []int, k int, candidates int) int64 {
 		}
 		return total
 	}
+	// Heaps hold {cost, idx}: order breaks cost ties by smaller index.
+	// left = front window, right = back window.
 	left := &workerHeap{}
 	right := &workerHeap{}
 	for i := 0; i < candidates; i++ {
@@ -46,9 +50,12 @@ func totalCost(costs []int, k int, candidates int) int64 {
 	}
 	heap.Init(left)
 	heap.Init(right)
+	// i feeds left and j feeds right from the untouched middle; i <= j
+	// guards against inserting a middle worker twice.
 	i, j := candidates, n-candidates-1
 	var total int64
 	for t := 0; t < k; t++ {
+		// Cheaper top wins; the tie comparison prefers left.
 		takeLeft := right.Len() == 0
 		if !takeLeft && left.Len() > 0 {
 			l, r := (*left)[0], (*right)[0]

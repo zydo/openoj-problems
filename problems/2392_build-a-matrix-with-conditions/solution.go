@@ -7,6 +7,9 @@ func buildMatrix(k int, rowConditions [][]int, colConditions [][]int) [][]int {
 	if !ok {
 		return [][]int{}
 	}
+	// The two orders are independent; distinct vertices of a topo order
+	// get distinct positions, so every required pair stays strictly
+	// ordered when v is placed at (rowPos[v], colPos[v]).
 	rowPos := make([]int, k+1)
 	colPos := make([]int, k+1)
 	for i, v := range rowOrder {
@@ -25,6 +28,8 @@ func buildMatrix(k int, rowConditions [][]int, colConditions [][]int) [][]int {
 	return matrix
 }
 
+// Kahn's algorithm over the condition graph. Duplicate conditions only
+// add parallel edges and matching indegrees — harmless.
 func topoOrder(k int, conditions [][]int) ([]int, bool) {
 	adj := make([][]int, k+1)
 	indeg := make([]int, k+1)
@@ -49,6 +54,7 @@ func topoOrder(k int, conditions [][]int) ([]int, bool) {
 			}
 		}
 	}
+	// Fewer than k vertices peeled means a cycle: no valid order.
 	if len(order) != k {
 		return nil, false
 	}

@@ -10,6 +10,9 @@ class Solution {
         if (!topo(k, colConditions, colOrder)) {
             return {};
         }
+        // The two orders are independent; distinct vertices of a topo order
+        // get distinct positions, so every required pair stays strictly
+        // ordered when v is placed at (rowPos[v], colPos[v]).
         vector<int> rowPos(k + 1), colPos(k + 1);
         for (int i = 0; i < k; i++) {
             rowPos[rowOrder[i]] = i;
@@ -23,6 +26,8 @@ class Solution {
     }
 
   private:
+    // Kahn's algorithm over the condition graph. Duplicate conditions only
+    // add parallel edges and matching indegrees — harmless.
     bool topo(int k, vector<vector<int>> &conditions, vector<int> &order) {
         vector<vector<int>> adj(k + 1);
         vector<int> indeg(k + 1, 0);
@@ -46,6 +51,7 @@ class Solution {
                 }
             }
         }
+        // Fewer than k vertices peeled means a cycle: no valid order.
         return (int)order.size() == k;
     }
 };
