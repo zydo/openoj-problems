@@ -85,10 +85,16 @@ func maxAverageRatio(classes [][]int, extraStudents int) float64 {
 		p, t := int64(c[0]), int64(c[1])
 		heap[i] = item{-gain(p, t), p, t}
 	}
+	// Average over a fixed class count, so maximize the ratio sum: one more
+	// student in class (p, t) gains (p+1)/(t+1) - p/t, and that marginal
+	// gain shrinks as the class grows — allocate each identical student
+	// where it buys the most.
 	heapify(heap)
 	for k := 0; k < extraStudents; k++ {
 		top := heappop(&heap)
 		p, t := top.p+1, top.t+1
+		// Re-push: after absorbing a student the class's gain drops and
+		// another class may now offer the best marginal return.
 		heappush(&heap, item{-gain(p, t), p, t})
 	}
 	// Python's sum() uses Neumaier compensated summation for floats; mirror it

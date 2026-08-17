@@ -24,9 +24,14 @@ func maximizeXor(nums []int, queries [][]int) []int {
 	child[0] = [2]int{-1, -1}
 	ptr := 0
 	n := len(sortedNums)
+	// Offline: with nums and queries both sorted by threshold, the trie
+	// holds exactly the values <= mi when a query runs, so the filter
+	// costs nothing at query time.
 	for _, idx := range order {
 		mi := queries[idx][1]
 		xi := queries[idx][0]
+		// ptr only moves forward — each number enters the trie once.
+		// 30 levels (bit 29 down to 0) cover every value < 2^30.
 		for ptr < n && sortedNums[ptr] <= mi {
 			node := 0
 			v := sortedNums[ptr]
@@ -41,11 +46,14 @@ func maximizeXor(nums []int, queries [][]int) []int {
 			ptr++
 		}
 		if ptr == 0 {
+			// Threshold admits no element yet — no candidate exists.
 			answers[idx] = -1
 			continue
 		}
 		node := 0
 		best := 0
+		// Greedy descent from the MSB: prefer the complement child so this
+		// result bit becomes 1; settle for the matching child otherwise.
 		for bit := 29; bit >= 0; bit-- {
 			xb := (xi >> uint(bit)) & 1
 			want := 1 - xb

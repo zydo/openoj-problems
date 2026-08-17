@@ -37,17 +37,25 @@ var minimumDeviation = function (nums) {
         }
         return top;
     };
+    // Normalize: odd values are doubled once — their only upward move —
+    // so afterwards every element can only shrink by halving, and every
+    // reachable configuration is still visited.
     let currentMin = Infinity;
     for (const v of nums) {
         const m = v % 2 === 1 ? v * 2 : v;
         push(m);
+        // The heap yields the maximum; the minimum is tracked separately.
         if (m < currentMin) currentMin = m;
     }
+    // Snapshot the untouched configuration before any halving.
     let best = heap[0] - currentMin;
+    // An even maximum can still be halved; once the maximum is odd
+    // nothing can grow, so the deviation can never improve again.
     while (heap[0] % 2 === 0) {
         const half = pop() / 2;
         push(half);
         if (half < currentMin) currentMin = half;
+        // Re-check max − min after each halving.
         const deviation = heap[0] - currentMin;
         if (deviation < best) best = deviation;
     }

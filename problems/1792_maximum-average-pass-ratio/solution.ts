@@ -68,12 +68,18 @@ function maxAverageRatio(classes: number[][], extraStudents: number): number {
         return lastelt;
     };
 
+    // Average over a fixed class count, so maximize the ratio sum: one more
+    // student in class (p, t) gains (p+1)/(t+1) - p/t, and that marginal
+    // gain shrinks as the class grows — allocate each identical student
+    // where it buys the most.
     const heap: Item[] = classes.map(([p, t]) => [-gain(p, t), p, t]);
     heapify(heap);
     for (let i = 0; i < extraStudents; i++) {
         const top = heappop(heap);
         const p = top[1] + 1;
         const t = top[2] + 1;
+        // Re-push: after absorbing a student the class's gain drops and
+        // another class may now offer the best marginal return.
         heappush(heap, [-gain(p, t), p, t]);
     }
     // Python's sum() uses Neumaier compensated summation for floats; mirror it

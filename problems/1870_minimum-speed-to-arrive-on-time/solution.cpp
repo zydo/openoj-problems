@@ -6,6 +6,9 @@ class Solution {
         long long last = 100LL * dist[n - 1];
 
         auto onTime = [&](long long speed) -> bool {
+            // Every leg but the last must end on an integer hour (the next
+            // train departs then), costing ceil(d/s); the final leg has no
+            // successor and costs exactly d/s — compared here in hundredths.
             long long c = 0;
             for (int i = 0; i + 1 < n; ++i) {
                 c += (dist[i] + speed - 1) / speed;
@@ -16,6 +19,9 @@ class Solution {
             return budget * speed >= last;
         };
 
+        // On-time is monotone in speed — if s works, every faster speed
+        // works — so search for the smallest feasible s; 10^7 is the
+        // guaranteed ceiling, and -1 if even it fails.
         long long lo = 1, hi = 10000000LL;
         if (!onTime(hi))
             return -1;

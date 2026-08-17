@@ -23,6 +23,8 @@ class Solution {
             }
         }
 
+        // Record, per center, the longest odd palindrome that ends exactly
+        // at each index and the longest that starts exactly at each index.
         vector<int> bestEnd(n, 0), bestStart(n, 0);
         for (int c = 0; c < n; c++) {
             int length = 2 * d1[c] - 1;
@@ -47,6 +49,8 @@ class Solution {
                 bestStart[i] = candStart;
         }
 
+        // Prefix max of bestEnd / suffix max of bestStart = the longest
+        // palindrome fully inside each prefix / suffix.
         vector<long long> pref(n), suff(n);
         pref[0] = bestEnd[0];
         for (int i = 1; i < n; i++)
@@ -56,6 +60,9 @@ class Solution {
         for (int i = n - 2; i >= 0; i--)
             suff[i] = max(suff[i + 1], (long long)bestStart[i]);
 
+        // The two palindromes are disjoint, so some split separates them;
+        // try every split. Single characters are length-1 palindromes, so
+        // both sides always contribute at least 1.
         long long ans = 0;
         for (int i = 0; i < n - 1; i++) {
             long long candidate = pref[i] * suff[i + 1];

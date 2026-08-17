@@ -7,6 +7,9 @@ func largestPathValue(colors string, edges [][]int) int {
 		indeg[e[1]]++
 	}
 
+	// dp[u][c] = max number of color-c nodes on any path ending at u.
+	// Kahn's order guarantees every predecessor of u is finalized before
+	// u is processed, so the row pushed out of u is final.
 	dp := make([][26]int, n)
 
 	queue := make([]int, 0, n)
@@ -20,13 +23,17 @@ func largestPathValue(colors string, edges [][]int) int {
 		u := queue[head]
 		head++
 		visited++
+		// u extends every incoming path, so count its own color.
 		dp[u][colors[u]-'a']++
+		// A valid path may end at any node — the row's best entry is a
+		// candidate (this is what lets single-node paths count).
 		for c := 0; c < 26; c++ {
 			if dp[u][c] > ans {
 				ans = dp[u][c]
 			}
 		}
 		for _, v := range graph[u] {
+			// Element-wise max-merge into the neighbor's row.
 			for c := 0; c < 26; c++ {
 				if dp[u][c] > dp[v][c] {
 					dp[v][c] = dp[u][c]
@@ -38,6 +45,7 @@ func largestPathValue(colors string, edges [][]int) int {
 			}
 		}
 	}
+	// Nodes on or downstream of a cycle never reach indegree zero.
 	if visited != n {
 		return -1
 	}

@@ -3,12 +3,18 @@ import java.util.Arrays;
 class Solution {
 
     public int minAbsDifference(int[] nums, int goal) {
+        // Meet in the middle: 2^40 is hopeless, but two halves of <= 20
+        // elements enumerate ~10^6 sums each, and every subsequence sum is
+        // sL + sR with one part from each side.
         int half = nums.length / 2;
         int[] left = subsetSums(nums, 0, half);
         int[] right = subsetSums(nums, half, nums.length);
         Arrays.sort(left);
         int best = Integer.MAX_VALUE;
         for (int s : right) {
+            // The best partner is the left sum nearest goal - s; anything
+            // other than the floor and ceiling around the insertion point
+            // lies strictly farther away.
             int need = goal - s;
             int idx = lowerBound(left, need);
             for (int j = idx - 1; j <= idx; j++) {
@@ -24,6 +30,8 @@ class Solution {
     }
 
     private int[] subsetSums(int[] nums, int from, int to) {
+        // Doubling: each value extends the list with a shifted copy of
+        // itself, turning t sums into 2t (0 included — empty set covered).
         int[] sums = new int[1];
         sums[0] = 0;
         int size = 1;

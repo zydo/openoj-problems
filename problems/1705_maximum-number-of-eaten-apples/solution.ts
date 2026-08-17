@@ -37,13 +37,19 @@ function eatenApples(apples: number[], days: number[]): number {
     };
     const n = apples.length;
     let eaten = 0;
+    // Greedy: always eat from the soonest-rotting batch. Exchange argument
+    // — swapping a later-rotting apple for an earlier-rotting one never
+    // reduces the total — so a min-heap keyed by rot day is optimal.
     for (let i = 0; i < n; i++) {
         if (apples[i] > 0) {
             push([i + days[i], apples[i]]);
         }
+        // Purge batches whose rot day has arrived (inedible from day
+        // i + days[i] on).
         while (heap.length && heap[0][0] <= i) {
             pop();
         }
+        // Eat from the front batch; push it back minus one if any remain.
         if (heap.length) {
             const item = pop();
             eaten += 1;
@@ -52,6 +58,8 @@ function eatenApples(apples: number[], days: number[]): number {
             }
         }
     }
+    // After day n no new apples appear: keep purging and eating one apple
+    // per day until every batch has rotted or been eaten.
     let day = n;
     while (heap.length) {
         while (heap.length && heap[0][0] <= day) {

@@ -14,7 +14,12 @@ function maximizeXor(nums: number[], queries: number[][]): number[] {
     const child: number[][] = [[-1, -1]];
     let ptr = 0;
     const n = sortedNums.length;
+    // Offline: with nums and queries both sorted by threshold, the trie
+    // holds exactly the values <= mi when a query runs, so the filter
+    // costs nothing at query time.
     for (const [mi, xi, idx] of order) {
+        // ptr only moves forward — each number enters the trie once.
+        // 30 levels (bit 29 down to 0) cover every value < 2^30.
         while (ptr < n && sortedNums[ptr] <= mi) {
             let node = 0;
             const v = sortedNums[ptr];
@@ -29,11 +34,14 @@ function maximizeXor(nums: number[], queries: number[][]): number[] {
             ptr++;
         }
         if (ptr === 0) {
+            // Threshold admits no element yet — no candidate exists.
             answers[idx] = -1;
             continue;
         }
         let node = 0;
         let best = 0;
+        // Greedy descent from the MSB: prefer the complement child so this
+        // result bit becomes 1; settle for the matching child otherwise.
         for (let bit = 29; bit >= 0; bit--) {
             const xb = (xi >>> bit) & 1;
             const want = 1 - xb;

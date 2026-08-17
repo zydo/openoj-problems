@@ -4,6 +4,9 @@ function minSpeedOnTime(dist: number[], hour: number): number {
     const last = 100 * dist[n - 1];
 
     const onTime = (speed: number): boolean => {
+        // Every leg but the last must end on an integer hour (the next
+        // train departs then), costing ceil(d/s); the final leg has no
+        // successor and costs exactly d/s — compared here in hundredths.
         let c = 0;
         for (let i = 0; i + 1 < n; i++) {
             c += Math.floor((dist[i] + speed - 1) / speed);
@@ -13,6 +16,9 @@ function minSpeedOnTime(dist: number[], hour: number): number {
         return budget >= Math.floor((last + speed - 1) / speed);
     };
 
+    // On-time is monotone in speed — if s works, every faster speed works —
+    // so search for the smallest feasible s; 10^7 is the guaranteed
+    // ceiling, and -1 if even it fails.
     let lo = 1,
         hi = 10000000;
     if (!onTime(hi)) return -1;

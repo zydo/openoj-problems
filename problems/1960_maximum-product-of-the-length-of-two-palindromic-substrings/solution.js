@@ -26,6 +26,8 @@ var maxProduct = function (s) {
         }
     }
 
+    // Record, per center, the longest odd palindrome that ends exactly
+    // at each index and the longest that starts exactly at each index.
     var bestEnd = new Array(n).fill(0);
     var bestStart = new Array(n).fill(0);
     for (var c = 0; c < n; c++) {
@@ -47,6 +49,8 @@ var maxProduct = function (s) {
         if (candStart > bestStart[i3]) bestStart[i3] = candStart;
     }
 
+    // Prefix max of bestEnd / suffix max of bestStart = the longest
+    // palindrome fully inside each prefix / suffix.
     var pref = new Array(n).fill(0);
     pref[0] = bestEnd[0];
     for (var i4 = 1; i4 < n; i4++) {
@@ -59,6 +63,9 @@ var maxProduct = function (s) {
         suff[i5] = Math.max(suff[i5 + 1], bestStart[i5]);
     }
 
+    // The two palindromes are disjoint, so some split separates them;
+    // try every split. Single characters are length-1 palindromes, so
+    // both sides always contribute at least 1.
     var ans = 0;
     for (var i6 = 0; i6 < n - 1; i6++) {
         var candidate = pref[i6] * suff[i6 + 1];

@@ -1,6 +1,8 @@
 class Solution {
 
     public int maximumGain(String s, int x, int y) {
+        // Remove the higher-priced pattern first: by exchange, the character
+        // left behind still pairs with the other kind, so this never loses.
         if (x >= y) {
             Result first = removePairs(s, 'a', 'b', x);
             Result second = removePairs(first.rest, 'b', 'a', y);
@@ -17,6 +19,9 @@ class Solution {
         char second,
         int points
     ) {
+        // Stack scan: `second` arriving on a top of `first` pops and scores;
+        // everything else is pushed. Survivors are the text with every
+        // non-overlapping removal of this pattern applied.
         StringBuilder stack = new StringBuilder();
         int score = 0;
         for (int i = 0; i < text.length(); i++) {
@@ -29,6 +34,8 @@ class Solution {
                 stack.append(c);
             }
         }
+        // The residue — including non-a/b characters, which never pair — is
+        // exactly what the other pattern's pass sweeps next.
         return new Result(stack.toString(), score);
     }
 

@@ -9,11 +9,17 @@ class Solution {
             long long t = c[1];
             heap.push_back(Item(-gain(p, t), p, t));
         }
+        // Average over a fixed class count, so maximize the ratio sum: one
+        // more student in class (p, t) gains (p+1)/(t+1) - p/t, and that
+        // marginal gain shrinks as the class grows — allocate each identical
+        // student where it buys the most.
         heapify(heap);
         for (int k = 0; k < extraStudents; k++) {
             Item top = heappop(heap);
             long long p = top.p + 1;
             long long t = top.t + 1;
+            // Re-push: after absorbing a student the class's gain drops and
+            // another class may now offer the best marginal return.
             heappush(heap, Item(-gain(p, t), p, t));
         }
         // Python's sum() uses Neumaier compensated summation for floats; mirror it

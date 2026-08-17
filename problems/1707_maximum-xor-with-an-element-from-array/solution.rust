@@ -14,9 +14,14 @@ impl Solution {
         child.push([-1, -1]);
         let mut ptr = 0usize;
         let n = sorted_nums.len();
+        // Offline: with nums and queries both sorted by threshold, the trie
+        // holds exactly the values <= mi when a query runs, so the filter
+        // costs nothing at query time.
         for &idx in &order {
             let mi = queries[idx][1];
             let xi = queries[idx][0];
+            // ptr only moves forward — each number enters the trie once.
+            // 30 levels (bit 29 down to 0) cover every value < 2^30.
             while ptr < n && sorted_nums[ptr] <= mi {
                 let mut node = 0usize;
                 let v = sorted_nums[ptr];
@@ -31,11 +36,14 @@ impl Solution {
                 ptr += 1;
             }
             if ptr == 0 {
+                // Threshold admits no element yet — no candidate exists.
                 answers[idx] = -1;
                 continue;
             }
             let mut node = 0usize;
             let mut best = 0i32;
+            // Greedy descent from the MSB: prefer the complement child so
+            // this result bit becomes 1; settle for the matching child.
             for bit in (0..=29).rev() {
                 let xb = ((xi >> bit) & 1) as usize;
                 let want = 1 - xb;

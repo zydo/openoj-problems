@@ -20,6 +20,8 @@ class Solution:
 
         d1 = manacher_odd(s)
 
+        # Record, per center, the longest odd palindrome that ends exactly
+        # at each index and the longest that starts exactly at each index.
         best_end = [0] * n
         best_start = [0] * n
         for c in range(n):
@@ -42,6 +44,8 @@ class Solution:
             if candidate > best_start[i]:
                 best_start[i] = candidate
 
+        # Prefix max of best_end / suffix max of best_start = the longest
+        # palindrome fully inside each prefix / suffix.
         left = [0] * n
         left[0] = best_end[0]
         for i in range(1, n):
@@ -52,6 +56,9 @@ class Solution:
         for i in range(n - 2, -1, -1):
             right[i] = max(right[i + 1], best_start[i])
 
+        # The two palindromes are disjoint, so some split separates them;
+        # try every split. Single characters are length-1 palindromes, so
+        # both sides always contribute at least 1.
         ans = 0
         for i in range(n - 1):
             candidate = left[i] * right[i + 1]

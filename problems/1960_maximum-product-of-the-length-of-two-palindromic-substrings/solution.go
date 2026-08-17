@@ -27,6 +27,8 @@ func maxProduct(s string) int64 {
 		}
 	}
 
+	// Record, per center, the longest odd palindrome that ends exactly
+	// at each index and the longest that starts exactly at each index.
 	bestEnd := make([]int64, n)
 	bestStart := make([]int64, n)
 	for c := 0; c < n; c++ {
@@ -56,6 +58,8 @@ func maxProduct(s string) int64 {
 		}
 	}
 
+	// Prefix max of bestEnd / suffix max of bestStart = the longest
+	// palindrome fully inside each prefix / suffix.
 	pref := make([]int64, n)
 	pref[0] = bestEnd[0]
 	for i := 1; i < n; i++ {
@@ -68,6 +72,9 @@ func maxProduct(s string) int64 {
 		suff[i] = maxI64(suff[i+1], bestStart[i])
 	}
 
+	// The two palindromes are disjoint, so some split separates them;
+	// try every split. Single characters are length-1 palindromes, so
+	// both sides always contribute at least 1.
 	var ans int64 = 0
 	for i := 0; i < n-1; i++ {
 		candidate := pref[i] * suff[i+1]

@@ -16,10 +16,15 @@ class Solution:
         root = _Node()
         ptr = 0
         n = len(nums)
+        # Offline: with nums and queries both sorted by threshold, the trie
+        # holds exactly the values <= mi when a query runs, so the filter
+        # costs nothing at query time.
         for mi, xi, idx in sorted_queries:
+            # ptr only moves forward — each number enters the trie once.
             while ptr < n and nums[ptr] <= mi:
                 node = root
                 v = nums[ptr]
+                # 30 levels (bit 29 down to 0) cover every value < 2^30.
                 for bit in range(29, -1, -1):
                     b = (v >> bit) & 1
                     if node.child[b] is None:
@@ -27,10 +32,13 @@ class Solution:
                     node = node.child[b]
                 ptr += 1
             if ptr == 0:
+                # Threshold admits no element yet — no candidate exists.
                 answers[idx] = -1
                 continue
             node = root
             best = 0
+            # Greedy descent from the MSB: prefer the complement child so this
+            # result bit becomes 1; settle for the matching child otherwise.
             for bit in range(29, -1, -1):
                 xb = (xi >> bit) & 1
                 want = 1 - xb

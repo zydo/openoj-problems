@@ -20,6 +20,8 @@ impl Solution {
             result
         };
         let mut inv_fact = vec![1i64; MAX + 1];
+        // One Fermat inversion at the top; running it backwards yields every
+        // smaller inverse factorial with a single multiplication each.
         inv_fact[MAX] = mod_pow(fact[MAX], MOD - 2);
         for i in (1..=MAX).rev() {
             inv_fact[i - 1] = inv_fact[i] * i as i64 % MOD;
@@ -37,6 +39,7 @@ impl Solution {
             let n = query[0] as i64;
             let mut k = query[1];
             let mut ways = 1i64;
+            // Trial division up to sqrt(k) collects each prime's exponent.
             let mut d = 2i32;
             while d as i64 * d as i64 <= k as i64 {
                 if k % d == 0 {
@@ -45,10 +48,14 @@ impl Solution {
                         k /= d;
                         exponent += 1;
                     }
+                    // Primes never interact, so the per-prime counts
+                    // multiply: spreading x copies of one prime over n
+                    // slots is stars and bars, C(x + n - 1, n - 1).
                     ways = ways * comb(exponent + n - 1, n - 1) % MOD;
                 }
                 d += 1;
             }
+            // A leftover greater than 1 is a prime of exponent 1.
             if k > 1 {
                 ways = ways * comb(1 + n - 1, n - 1) % MOD;
             }

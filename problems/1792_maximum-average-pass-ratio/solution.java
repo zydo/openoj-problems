@@ -8,6 +8,10 @@ class Solution {
             long t = classes[i][1];
             heap[i] = new Item(-gain(p, t), p, t);
         }
+        // Average over a fixed class count, so maximize the ratio sum: one
+        // more student in class (p, t) gains (p+1)/(t+1) - p/t, and that
+        // marginal gain shrinks as the class grows — allocate each identical
+        // student where it buys the most.
         heapify(heap, n);
         int size = n;
         for (int k = 0; k < extraStudents; k++) {
@@ -15,6 +19,8 @@ class Solution {
             size--;
             long p = top.p + 1;
             long t = top.t + 1;
+            // Re-push: after absorbing a student the class's gain drops and
+            // another class may now offer the best marginal return.
             heappush(heap, size, new Item(-gain(p, t), p, t));
             size++;
         }

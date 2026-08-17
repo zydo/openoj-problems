@@ -11,6 +11,9 @@ impl Solution {
             indeg[b] += 1;
         }
 
+        // dp[u][c] = max number of color-c nodes on any path ending at u.
+        // Kahn's order guarantees every predecessor of u is finalized before
+        // u is processed, so the row pushed out of u is final.
         let mut dp = vec![[0i32; 26]; n];
         let mut queue: std::collections::VecDeque<usize> =
             (0..n).filter(|&i| indeg[i] == 0).collect();
@@ -18,14 +21,18 @@ impl Solution {
         let mut ans = 0i32;
         while let Some(u) = queue.pop_front() {
             visited += 1;
+            // u extends every incoming path, so count its own color.
             dp[u][(colors[u] - b'a') as usize] += 1;
             let du = dp[u];
+            // A valid path may end at any node — the row's best entry is a
+            // candidate (this is what lets single-node paths count).
             for c in 0..26 {
                 if du[c] > ans {
                     ans = du[c];
                 }
             }
             for &v in &graph[u] {
+                // Element-wise max-merge into the neighbor's row.
                 for c in 0..26 {
                     if du[c] > dp[v][c] {
                         dp[v][c] = du[c];
@@ -37,6 +44,7 @@ impl Solution {
                 }
             }
         }
+        // Nodes on or downstream of a cycle never reach indegree zero.
         if visited != n as i32 {
             -1
         } else {

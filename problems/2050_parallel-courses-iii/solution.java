@@ -17,6 +17,10 @@ class Solution {
         }
         // finish[i] = earliest month at which course i completes.
         int[] finish = new int[n + 1];
+        // Longest weighted chain on the prerequisite DAG: with unlimited
+        // parallelism a course finishes at its duration plus the latest
+        // prerequisite finish. Kahn's order makes every prerequisite final
+        // before a course is processed.
         Queue<Integer> queue = new ArrayDeque<>();
         for (int i = 1; i <= n; i++) {
             if (indegree[i] == 0) {
@@ -24,11 +28,14 @@ class Solution {
                 queue.add(i);
             }
         }
+        // Finishing everything means finishing the latest-ending chain.
         int answer = 0;
         while (!queue.isEmpty()) {
             int course = queue.poll();
             answer = Math.max(answer, finish[course]);
             for (int nxt : adjacency.get(course)) {
+                // Relax with a max: the successor waits for ALL of its
+                // prerequisites, not just the first to finish.
                 finish[nxt] = Math.max(
                     finish[nxt],
                     finish[course] + time[nxt - 1]

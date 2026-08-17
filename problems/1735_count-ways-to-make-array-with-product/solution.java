@@ -27,6 +27,8 @@ class Solution {
 
     private static long[] buildInvFact() {
         long[] inv = new long[MAX + 1];
+        // One Fermat inversion at the top; running it backwards yields every
+        // smaller inverse factorial with a single multiplication each.
         inv[MAX] = modPow(fact[MAX], MOD - 2);
         for (int i = MAX; i > 0; i--) {
             inv[i - 1] = (inv[i] * i) % MOD;
@@ -45,6 +47,7 @@ class Solution {
             int n = queries[q][0];
             int k = queries[q][1];
             long ways = 1;
+            // Trial division up to sqrt(k) collects each prime's exponent.
             int d = 2;
             while (d * d <= k) {
                 if (k % d == 0) {
@@ -53,10 +56,14 @@ class Solution {
                         k /= d;
                         exponent++;
                     }
+                    // Primes never interact, so the per-prime counts
+                    // multiply: spreading x copies of one prime over n
+                    // slots is stars and bars, C(x + n - 1, n - 1).
                     ways = (ways * comb(exponent + n - 1, n - 1)) % MOD;
                 }
                 d++;
             }
+            // A leftover greater than 1 is a prime of exponent 1.
             if (k > 1) {
                 ways = (ways * comb(1 + n - 1, n - 1)) % MOD;
             }
