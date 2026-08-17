@@ -22,12 +22,16 @@ Input: isConnected = [[1,1,0],[1,1,0],[0,0,1]]
 Output: 2
 ```
 
+![Cities 1 and 2 connected directly form one province; city 3 forms another.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: isConnected = [[1,0,0],[0,1,0],[0,0,1]]
 Output: 3
 ```
+
+![Three cities with no connections - three provinces.](figures/example-2.svg)
 
 ### Constraints
 

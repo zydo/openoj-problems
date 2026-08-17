@@ -17,6 +17,8 @@ Output: 3
 Explanation: The 5th smallest number is 3.
 ```
 
+![The 3 x 3 multiplication table with its values in sorted order; the 5th smallest is 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -24,6 +26,8 @@ Input: m = 2, n = 3, k = 6
 Output: 6
 Explanation: The 6th smallest number is 6.
 ```
+
+![The 2 x 3 multiplication table with its values in sorted order; the 6th smallest is 6.](figures/example-2.svg)
 
 ### Constraints
 

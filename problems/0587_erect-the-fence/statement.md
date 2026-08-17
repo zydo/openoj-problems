@@ -19,6 +19,8 @@ Output: [[1,1],[2,0],[4,2],[3,3],[2,4]]
 Explanation: All the trees will be on the perimeter of the fence except the tree at [2, 2], which will be inside the fence.
 ```
 
+![Six trees with the fence as their convex hull; the tree at (2, 2) stays inside.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -26,6 +28,8 @@ Input: trees = [[1,2],[2,2],[4,2]]
 Output: [[4,2],[2,2],[1,2]]
 Explanation: The fence forms a line that passes through all the trees.
 ```
+
+![Three collinear trees - the fence degenerates to a straight line through all of them.](figures/example-2.svg)
 
 ### Constraints
 

@@ -1,6 +1,9 @@
 import "sort"
 
+// Sort + two pointers instead of a hash map: order the indexes by value so a
+// classic two-pointer scan can find the pair that sums to target.
 func twoSum(nums []int, target int) []int {
+	// Keep indexes, not values, so the original positions survive the sort.
 	indexes := make([]int, len(nums))
 	for i := range indexes {
 		indexes[i] = i
@@ -12,8 +15,10 @@ func twoSum(nums []int, target int) []int {
 		if sum == target {
 			return []int{indexes[lo], indexes[hi]}
 		} else if sum < target {
+			// Too small: only a larger value can help, so advance lo.
 			lo++
 		} else {
+			// Too large: only a smaller value can help, so retreat hi.
 			hi--
 		}
 	}

@@ -35,6 +35,8 @@ The sum of the heights of the 3 shelves is 1 + 3 + 2 = 6.
 Notice that book number 2 does not have to be on the first shelf.
 ```
 
+![Seven books on three blue shelves of heights 1, 3, and 2, with book 2 on the second shelf.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

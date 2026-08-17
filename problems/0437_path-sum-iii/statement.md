@@ -17,6 +17,8 @@ Output: 3
 Explanation: The paths that sum to 8 are shown.
 ```
 
+![The binary tree with its three paths summing to 8 highlighted: 5 → 3, 5 → 2 → 1 and -3 → 11](figures/example-1.svg)
+
 ### Example 2
 
 ```text

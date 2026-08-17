@@ -15,13 +15,20 @@ class Solution {
             return total;
         }
         const long long neg = -(1LL << 60);
+        // buy[j]: best cash while holding the j-th buy; sell[j]: best profit
+        // after j completed sells. neg marks impossible holdings.
         vector<long long> buy(k + 1, neg), sell(k + 1, 0);
         for (int price : prices) {
             for (int j = 1; j <= k; j++) {
+                // Keep holding, or buy now out of j-1 finished transactions.
                 buy[j] = max(buy[j], sell[j - 1] - price);
+                // Stay sold, or sell the held position at today's price.
+                // Updating buy first permits a same-day buy-then-sell, which
+                // is a zero-profit transaction and never harms optimality.
                 sell[j] = max(sell[j], buy[j] + price);
             }
         }
+        // sell[k] is the best profit with at most k transactions.
         return sell[k];
     }
 };

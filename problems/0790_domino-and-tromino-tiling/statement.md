@@ -16,6 +16,8 @@ Output: 5
 Explanation: The five different ways are shown above.
 ```
 
+![The five ways to tile a 2 x 3 board with dominoes and trominoes.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

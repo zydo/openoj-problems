@@ -37,6 +37,8 @@ Output: [[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
 Explanation: Figure A shows the buildings of the input. Figure B shows the skyline formed by those buildings. The red points in figure B represent the key points in the output list.
 ```
 
+![Figure A shows the five buildings; figure B shows the skyline with its key points marked.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

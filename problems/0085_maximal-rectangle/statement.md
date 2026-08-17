@@ -13,6 +13,8 @@ Output: 6
 Explanation: The maximal rectangle of 1's has area 6.
 ```
 
+![The binary matrix with its maximal all-1 rectangle of area 6 highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

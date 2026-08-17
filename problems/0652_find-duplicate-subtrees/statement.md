@@ -17,6 +17,8 @@ Input: root = [1,2,3,4,null,2,4,null,null,4]
 Output: [[2,4],[4]]
 ```
 
+![The tree [1,2,3,4,null,2,4,null,null,4] with the duplicated subtrees [2,4] and [4] highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -24,12 +26,16 @@ Input: root = [2,1,1]
 Output: [[1]]
 ```
 
+![Both leaves of [2,1,1] are the duplicated subtree [1].](figures/example-2.svg)
+
 ### Example 3
 
 ```text
 Input: root = [2,2,2,3,null,3,null]
 Output: [[2,3],[3]]
 ```
+
+![The tree [2,2,2,3,null,3,null] with the duplicated subtrees [2,3] and [3] highlighted.](figures/example-3.svg)
 
 ### Constraints
 

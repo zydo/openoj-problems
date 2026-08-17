@@ -14,12 +14,16 @@ Input: mat = [[0,0,0],[0,1,0],[0,0,0]]
 Output: [[0,0,0],[0,1,0],[0,0,0]]
 ```
 
+![The 3x3 grid of distances to the nearest 0; here the input and the output coincide](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: mat = [[0,0,0],[0,1,0],[1,1,1]]
 Output: [[0,0,0],[0,1,0],[1,2,1]]
 ```
+
+![Left: the binary matrix; right: every cell's distance to the nearest 0](figures/example-2.svg)
 
 ### Constraints
 

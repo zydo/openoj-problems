@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": 642,
+  "slug": "design-search-autocomplete-system",
+  "title": "Design Search Autocomplete System",
+  "difficulty": "H3",
+  "tags": [
+    "Trie",
+    "String",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "AutocompleteSystem",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "sentences",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        },
+        {
+          "name": "times",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "input",
+        "parameters": [
+          {
+            "name": "c",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 4096
+  }
+}

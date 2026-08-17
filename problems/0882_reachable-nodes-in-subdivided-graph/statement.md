@@ -21,6 +21,8 @@ Explanation: The edge subdivisions are shown in the image above.
 The nodes that are reachable are highlighted in yellow.
 ```
 
+![Left: the original triangle graph with subdivision counts 10, 1 and 2. Right: the subdivided graph with the 13 nodes reachable within 6 moves filled blue.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

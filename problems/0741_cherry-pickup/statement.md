@@ -29,6 +29,8 @@ Output: 5
 Explanation: The player started at (0, 0) and went down, down, right, right to reach (2, 2). 4 cherries were picked up during this single trip, and the grid becomes [[0,1,-1],[0,0,-1],[0,0,0]]. Then, the player went left, up, up, left to return home, picking up one more cherry. The total number of cherries picked up is 5, and this is the maximum possible.
 ```
 
+![The outward trip collects 4 cherries; the return trip collects the 1 remaining cherry.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

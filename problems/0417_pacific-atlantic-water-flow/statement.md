@@ -38,6 +38,8 @@ Note that there are other possible paths for these cells to flow to the
 Pacific and Atlantic oceans.
 ```
 
+![The 5x5 height map between the two oceans, with the seven cells that can flow to both oceans shaded](figures/example-1.svg)
+
 ### Example 2
 
 ```text

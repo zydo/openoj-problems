@@ -28,6 +28,8 @@ Output: true
 Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
 ```
 
+![The list 3 -> 2 -> 0 -> -4 whose tail connects back to node 2.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -36,6 +38,8 @@ Output: true
 Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
 ```
 
+![The list 1 -> 2 whose tail connects back to node 1.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -43,6 +47,8 @@ Input: values = [1], pos = -1
 Output: false
 Explanation: There is no cycle in the linked list.
 ```
+
+![A single node 1 with no cycle.](figures/example-3.svg)
 
 ### Constraints
 

@@ -10,8 +10,13 @@ class Solution {
         Map<String, List<String>> groups = new LinkedHashMap<>();
         for (String word : strs) {
             char[] chars = word.toCharArray();
+            // Sorting canonicalizes the character multiset: anagrams produce
+            // byte-identical keys and non-anagrams can never collide on one.
             Arrays.sort(chars);
             String key = new String(chars);
+            // computeIfAbsent creates the bucket on first sight of a key, so
+            // group membership accumulates automatically: every word lands in
+            // exactly one bucket, alongside precisely its rearrangements.
             groups.computeIfAbsent(key, k -> new ArrayList<>()).add(word);
         }
         String[][] out = new String[groups.size()][];

@@ -23,6 +23,8 @@ equals 1 + 1 + 2 + 2 + 2 = 8.
 Hence, answer[0] = 8, and so on.
 ```
 
+![The tree; the distances from node 0 sum to 1 + 1 + 2 + 2 + 2 = 8.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,12 +32,16 @@ Input: n = 1, edges = []
 Output: [0]
 ```
 
+![A single node with no edges.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
 Input: n = 2, edges = [[1,0]]
 Output: [1,1]
 ```
+
+![Two nodes joined by one edge; each is distance 1 from the other.](figures/example-3.svg)
 
 ### Constraints
 

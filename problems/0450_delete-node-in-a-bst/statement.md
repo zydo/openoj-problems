@@ -26,6 +26,8 @@ delete it. One valid answer is [5,4,6,2,null,null,7]. Please notice that
 another valid answer is [5,2,6,null,4,null,7] and it's also accepted.
 ```
 
+![Left: the BST with node 3 marked for deletion; right: its in-order successor 4 has taken the node's place](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,6 +35,8 @@ Input: root = [5,3,6,2,4,null,7], key = 0
 Output: [5,3,6,2,4,null,7]
 Explanation: The tree does not contain a node with value = 0.
 ```
+
+![The BST is unchanged because it contains no node with value 0](figures/example-2.svg)
 
 ### Example 3
 

@@ -19,12 +19,16 @@ Input: head = [2,1,5]
 Output: [5,5,0]
 ```
 
+![The list 2 - 1 - 5 with dashed arcs from 5 back to both earlier nodes and the answers 5, 5, 0 beneath.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: head = [2,7,4,3,5]
 Output: [7,0,5,5,0]
 ```
+
+![The list 2 - 7 - 4 - 3 - 5 with dashed arcs to each node's next greater value and the answers 7, 0, 5, 5, 0 beneath.](figures/example-2.svg)
 
 ### Constraints
 

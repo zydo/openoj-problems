@@ -16,6 +16,8 @@ Output: 1
 Explanation: Swap the 0 and the 5 in one move.
 ```
 
+![Swapping the 0 and the 5 solves the board in one move.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -23,6 +25,8 @@ Input: board = [[1,2,3],[5,4,0]]
 Output: -1
 Explanation: No number of moves will make the board solved.
 ```
+
+![Starting from [[1,2,3],[5,4,0]], no sequence of moves reaches the solved board.](figures/example-2.svg)
 
 ### Example 3
 
@@ -38,6 +42,8 @@ After move 3: [[1,0,2],[4,5,3]]
 After move 4: [[1,2,0],[4,5,3]]
 After move 5: [[1,2,3],[4,5,0]]
 ```
+
+![A five-move sequence from [[4,1,2],[5,0,3]] to the solved board.](figures/example-3.svg)
 
 ### Constraints
 

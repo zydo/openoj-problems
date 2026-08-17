@@ -13,6 +13,8 @@ pub struct TreeNode {
 
 impl Solution {
     pub fn sorted_list_to_bst(head: Option<Box<ListNode>>) -> Option<Box<TreeNode>> {
+        // A singly linked list gives no random access, so copy its (sorted)
+        // values into a Vec once, then divide and conquer on ranges.
         let mut values: Vec<i32> = Vec::new();
         let mut current = head;
         while let Some(node) = current {
@@ -24,12 +26,17 @@ impl Solution {
 }
 
 fn build(values: &[i32], lo: usize, hi: usize) -> Option<Box<TreeNode>> {
+    // Empty segment <=> missing child.
     if lo >= hi {
         return None;
     }
+    // The middle element is the only root choice making both sides BSTs and
+    // keeping them equal in size, so the tree comes out height-balanced.
     let mid = lo + (hi - lo) / 2;
     Some(Box::new(TreeNode {
         val: values[mid],
+        // Sorted order is preserved on both sides, so every left value is
+        // below values[mid] and every right value above it.
         left: build(values, lo, mid),
         right: build(values, mid + 1, hi),
     }))

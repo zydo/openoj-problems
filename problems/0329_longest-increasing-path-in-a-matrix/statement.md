@@ -17,6 +17,8 @@ Output: 4
 Explanation: The longest increasing path is [1, 2, 6, 9].
 ```
 
+![The matrix with the increasing path 1 → 2 → 6 → 9 shaded and arrowed](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -24,6 +26,8 @@ Input: matrix = [[3,4,5],[3,2,6],[2,2,1]]
 Output: 4
 Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
 ```
+
+![The matrix with the increasing path 3 → 4 → 5 → 6 shaded and arrowed; the path bends around the corner without moving diagonally](figures/example-2.svg)
 
 ### Example 3
 

@@ -24,6 +24,8 @@ Nodes 5 and 6 are terminal nodes as there are no outgoing edges from either of t
 Every path starting at nodes 2, 4, 5, and 6 all lead to either node 5 or 6.
 ```
 
+![Nodes 2, 4, 5, and 6 are safe; nodes 0, 1, and 3 lie on or reach the cycle 0 to 1 to 3 to 0.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

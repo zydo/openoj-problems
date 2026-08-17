@@ -14,12 +14,16 @@ Output: 4
 Explanation: After the rain, water is trapped between the blocks. We have two small ponds 1 and 3 units trapped. The total volume of water trapped is 4.
 ```
 
+![An isometric view of the elevation map with the trapped ponds of 1 and 3 units shaded blue](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: heightMap = [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]
 Output: 10
 ```
+
+![An isometric view of the rim-of-3s bowl holding 10 units of water](figures/example-2.svg)
 
 ### Constraints
 

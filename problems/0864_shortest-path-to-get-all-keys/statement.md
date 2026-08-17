@@ -26,6 +26,8 @@ Output: 8
 Explanation: Note that the goal is to obtain all the keys not to open all the locks.
 ```
 
+![The grid with the 8-move route from @ to key a and around the wall to key b highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,12 +35,16 @@ Input: grid = ["@..aA","..B#.","....b"]
 Output: 6
 ```
 
+![The grid with the 6-move route from @ through key a and lock A down to key b highlighted.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
 Input: grid = ["@Aa"]
 Output: -1
 ```
+
+![A single row @ A a with a blocked barrier on lock A, since key a is unreachable.](figures/example-3.svg)
 
 ### Constraints
 

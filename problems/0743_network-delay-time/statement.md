@@ -19,6 +19,8 @@ Input: times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2
 Output: 2
 ```
 
+![The signal leaves node 2 at t = 0 and reaches nodes 1 and 3 at t = 1 and node 4 at t = 2.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

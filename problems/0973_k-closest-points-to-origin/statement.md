@@ -25,6 +25,8 @@ We only want the closest k = 1 points from the origin, so the answer is just
 [[-2,2]].
 ```
 
+![A coordinate plane with both points plotted and dashed lines to the origin showing the distances sqrt(8) and sqrt(10).](figures/example-1.svg)
+
 ### Example 2
 
 ```text

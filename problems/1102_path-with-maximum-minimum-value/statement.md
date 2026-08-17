@@ -18,6 +18,8 @@ Output: 4
 Explanation: The path with the maximum score is highlighted in yellow.
 ```
 
+![A 3 x 3 grid with the top row and right column tinted along the path 5 - 4 - 5 - 6 - 6.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -25,12 +27,16 @@ Input: grid = [[2,2,1,2,2,2],[1,2,2,2,1,2]]
 Output: 2
 ```
 
+![A 2 x 6 grid with a blue route of all-2 cells weaving between the 1s.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
 Input: grid = [[3,4,6,3,4],[0,2,1,1,7],[8,8,3,2,7],[3,2,4,9,8],[4,1,2,0,0],[4,6,5,4,3]]
 Output: 3
 ```
+
+![A 6 x 5 grid with the long blue path around the right and left edges that never dips below 3.](figures/example-3.svg)
 
 ### Constraints
 

@@ -23,6 +23,8 @@ Input: preorder = [8,5,1,7,10,12]
 Output: [8,5,10,1,7,null,12]
 ```
 
+![The six-node BST with root 8, left subtree 5 - 1 - 7, and right subtree 10 - 12.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

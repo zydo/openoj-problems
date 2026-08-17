@@ -14,7 +14,6 @@ Running the statement's first example, `height = [1,8,6,2,5,4,8,3,7]`, the walk 
 4. `left = 1, right = 6`: the walls tie at 8, area = 8 x 5 = 40, and the tie rule moves the right pointer.
 5. The remaining pairs measure 16, 15, 4 and finally 6 as the pointers meet at indices 1 and 2 — nothing beats 49.
 
-
 This argument is why nothing is missed: every pair that is abandoned is proven no better than a pair already measured, so the maximum is found by the time the pointers meet. The loop runs at most `n - 1` steps, each doing constant work, and only two integers of extra state are kept.
 
 **Complexity:** `O(n)` time, `O(1)` space.

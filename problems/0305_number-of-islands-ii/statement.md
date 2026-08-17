@@ -29,6 +29,8 @@ Explanation: Initially, the 2D grid is filled with water.
 - Operation 4: addLand(2, 1) turns the water at grid[2][1] into a land. We have 3 islands.
 ```
 
+![Five snapshots of the 3x3 grid as land is added; the island count goes 0, 1, 1, 2, 3](figures/example-1.svg)
+
 ### Example 2
 
 ```text

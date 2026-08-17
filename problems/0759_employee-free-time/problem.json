@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": 759,
+  "slug": "employee-free-time",
+  "title": "Employee Free Time",
+  "difficulty": "H2",
+  "tags": [
+    "Heap",
+    "Sorting",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "employeeFreeTime",
+    "parameters": [
+      {
+        "name": "schedule",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "array",
+              "items": {
+                "kind": "integer",
+                "bits": 32
+              }
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "employeeFreeTime",
+      "rust": "employee_free_time",
+      "typescript": "employeeFreeTime"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -19,8 +19,11 @@ class Solution {
         if (!wordSet.contains(endWord)) {
             return new String[0][];
         }
+        // Drop beginWord so the search can never route back through it.
         wordSet.remove(beginWord);
 
+        // BFS over the implicit one-letter-difference graph: record each word's
+        // shortest distance and a DAG of shortest-path edges.
         Map<String, Integer> dist = new HashMap<>();
         dist.put(beginWord, 0);
         Map<String, List<String>> adjacency = new HashMap<>();
@@ -33,6 +36,7 @@ class Solution {
             char[] chars = word.toCharArray();
             for (int i = 0; i < chars.length; i++) {
                 char orig = chars[i];
+                // Try substituting each of the 25 other letters at position i.
                 for (int li = 0; li < 26; li++) {
                     char c = letters.charAt(li);
                     if (c == orig) continue;
@@ -41,16 +45,20 @@ class Solution {
                     if (!wordSet.contains(nxt)) continue;
                     Integer nd = dist.get(nxt);
                     if (nd == null) {
+                        // First discovery: nxt is one level below word.
                         dist.put(nxt, d + 1);
                         adjacency
                             .computeIfAbsent(word, k -> new ArrayList<>())
                             .add(nxt);
                         queue.add(nxt);
                     } else if (nd == d + 1) {
+                        // Already exactly one level below: parallel shortest edge.
                         adjacency
                             .computeIfAbsent(word, k -> new ArrayList<>())
                             .add(nxt);
                     }
+                    // Same-level or backward edges never lie on a shortest
+                    // ladder, so they are simply not recorded.
                 }
                 chars[i] = orig;
             }
@@ -60,6 +68,8 @@ class Solution {
         List<String> path = new ArrayList<>();
         path.add(beginWord);
 
+        // DFS over the recorded DAG: every edge advances exactly one BFS level,
+        // so any root-to-endWord walk is automatically a shortest ladder.
         class Dfs {
 
             void run(String word) {

@@ -20,6 +20,8 @@ Output: 6
 Explanation: The LCA of nodes 2 and 8 is 6.
 ```
 
+![The BST with p = 2, q = 8 and their LCA 6 highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Output: 2
 Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant
 of itself according to the LCA definition.
 ```
+
+![The BST with p = 2, q = 4 and their LCA 2 highlighted.](figures/example-2.svg)
 
 ### Example 3
 

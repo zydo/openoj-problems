@@ -12,12 +12,16 @@ Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1
 Output: 4
 ```
 
+![The binary matrix with a maximal 2 by 2 square highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: matrix = [["0","1"],["1","0"]]
 Output: 1
 ```
+
+![A 2 by 2 board whose two 1s meet only at a corner.](figures/example-2.svg)
 
 ### Example 3
 

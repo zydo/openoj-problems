@@ -22,6 +22,8 @@ Input: rooms = [[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-
 Output: [[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]
 ```
 
+![Left: the rooms grid with gates, walls and INF cells; right: every room filled with its distance to the nearest gate](figures/example-1.svg)
+
 ### Example 2
 
 ```text

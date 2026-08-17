@@ -23,6 +23,8 @@ Output: 1
 Explanation: There are three persons labeled with 0, 1 and 2. graph[i][j] = 1 means person i knows person j, otherwise graph[i][j] = 0 means person i does not know person j. The celebrity is the person labeled as 1 because both 0 and 2 know him but 1 does not know anybody.
 ```
 
+![Three people as circles with directed "knows" arrows; person 1 is highlighted as the celebrity everyone knows](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,6 +32,8 @@ Input: graph = [[1,0,1],[1,1,0],[0,1,1]]
 Output: -1
 Explanation: There is no celebrity.
 ```
+
+![Three people as circles whose "knows" arrows form a cycle, so nobody is a celebrity](figures/example-2.svg)
 
 ### Constraints
 

@@ -31,11 +31,19 @@ class Solution {
         List<String> board,
         List<List<String>> results
     ) {
+        // One queen per row removes row conflicts by construction, so only
+        // columns and diagonals need tracking while the board grows row by row.
+        // Every row holds a queen and no pair attacks here: record a copy so
+        // later backtracking cannot mutate this solution.
         if (row == n) {
             results.add(new ArrayList<>(board));
             return;
         }
         for (int col = 0; col < n; col++) {
+            // O(1) safety check: cols holds occupied columns, diag1 holds
+            // row - col (constant along one diagonal family), diag2 holds
+            // row + col (constant along the other). A candidate is safe
+            // exactly when all three values are unseen.
             if (
                 cols.contains(col) ||
                 diag1.contains(row - col) ||
@@ -56,6 +64,7 @@ class Solution {
             }
             board.add(sb.toString());
             backtrack(row + 1, n, cols, diag1, diag2, board, results);
+            // Undo the placement, restoring state for the next candidate.
             board.remove(board.size() - 1);
             cols.remove(col);
             diag1.remove(row - col);

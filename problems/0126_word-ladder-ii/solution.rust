@@ -10,8 +10,11 @@ impl Solution {
         if !word_set.contains(&end_word) {
             return Vec::new();
         }
+        // Drop begin_word so the search can never route back through it.
         word_set.remove(&begin_word);
 
+        // BFS over the implicit one-letter-difference graph: record each word's
+        // shortest distance and a DAG of shortest-path edges.
         let mut dist: HashMap<String, usize> = HashMap::new();
         dist.insert(begin_word.clone(), 0);
         let mut adjacency: HashMap<String, Vec<String>> = HashMap::new();
@@ -22,6 +25,7 @@ impl Solution {
             let d = *dist.get(&word).unwrap();
             let chars: Vec<u8> = word.bytes().collect();
             for i in 0..chars.len() {
+                // Try substituting each of the 25 other letters at position i.
                 for &c in &letters {
                     if c == chars[i] {
                         continue;
@@ -33,18 +37,24 @@ impl Solution {
                         continue;
                     }
                     if !dist.contains_key(&nxt) {
+                        // First discovery: nxt is one level below word.
                         dist.insert(nxt.clone(), d + 1);
                         adjacency.entry(word.clone()).or_default().push(nxt.clone());
                         queue.push_back(nxt);
                     } else if dist.get(&nxt).copied() == Some(d + 1) {
+                        // Already exactly one level below: parallel shortest edge.
                         adjacency.entry(word.clone()).or_default().push(nxt);
                     }
+                    // Same-level or backward edges never lie on a shortest
+                    // ladder, so they are simply not recorded.
                 }
             }
         }
 
         let mut result: Vec<Vec<String>> = Vec::new();
         let mut path: Vec<String> = vec![begin_word.clone()];
+        // DFS over the recorded DAG: every edge advances exactly one BFS level,
+        // so any root-to-end_word walk is automatically a shortest ladder.
         Self::dfs(&begin_word, &end_word, &adjacency, &mut path, &mut result);
         result
     }

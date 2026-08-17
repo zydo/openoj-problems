@@ -20,6 +20,8 @@ Input: m = 3, n = 7
 Output: 28
 ```
 
+![A 3 by 7 grid with Start in the top-left and Finish in the bottom-right corner.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

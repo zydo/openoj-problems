@@ -24,6 +24,8 @@ In the first semester, you can take courses 1 and 2.
 In the second semester, you can take course 3.
 ```
 
+![Courses 1 and 2 in a semester-1 band, both arrows pointing to course 3 in a semester-2 band.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -31,6 +33,8 @@ Input: n = 3, relations = [[1,2],[2,3],[3,1]]
 Output: -1
 Explanation: No course can be studied because they are prerequisites of each other.
 ```
+
+![Three courses wired as a directed cycle 1 to 2 to 3 back to 1.](figures/example-2.svg)
 
 ### Constraints
 

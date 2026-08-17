@@ -36,6 +36,8 @@ Explanation: The winning strategy is as follows:
 The worst case in all these scenarios is that you pay $16. Hence, you only need $16 to guarantee a win.
 ```
 
+![The decision tree of guesses: guess 7, then 9 (or 3, ...); the worst branch pays $7 + $9 = $16](figures/example-1.svg)
+
 ### Example 2
 
 ```text

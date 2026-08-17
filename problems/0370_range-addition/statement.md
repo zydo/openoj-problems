@@ -19,6 +19,8 @@ Input: length = 5, updates = [[1,3,2],[2,4,3],[0,2,-2]]
 Output: [-2,0,3,5,3]
 ```
 
+![The array evolving through the three range updates to [-2, 0, 3, 5, 3], with each update's range shaded](figures/example-1.svg)
+
 ### Example 2
 
 ```text

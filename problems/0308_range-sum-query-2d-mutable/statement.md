@@ -33,6 +33,8 @@ numMatrix.update(3, 2, 2);       // matrix[3][2] changes from 0 to 2
 numMatrix.sumRegion(2, 1, 4, 3); // returns 10 (sum of the right red rectangle)
 ```
 
+![Two copies of the matrix with the queried rectangle outlined; update(3, 2, 2) changes matrix[3][2] and the same query grows from 8 to 10](figures/example-1.svg)
+
 ### Example 2
 
 ```text

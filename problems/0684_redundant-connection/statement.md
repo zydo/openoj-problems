@@ -22,12 +22,16 @@ Input: edges = [[1,2],[1,3],[2,3]]
 Output: [2,3]
 ```
 
+![Edges [1,2] and [1,3] already connect 2 and 3, so the last edge [2,3] closes the cycle.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]
 Output: [1,4]
 ```
+
+![Edges [1,2], [2,3], [3,4] form a path from 1 to 4, so [1,4] closes the cycle.](figures/example-2.svg)
 
 ### Constraints
 

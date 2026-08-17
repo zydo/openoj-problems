@@ -18,6 +18,8 @@ From (1,1) to (2,2), the green and red rectangles overlap.
 From (1,0) to (2,3), all three rectangles overlap.
 ```
 
+![The three overlapping rectangles on a coordinate grid: a green 2 x 2, a red 1 x 3, and a blue 2 x 1, with overlaps shown darker.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

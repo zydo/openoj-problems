@@ -21,6 +21,8 @@ Explanation: From the root of the tree, we move one coin to its left child,
 and one coin to its right child.
 ```
 
+![The root holding three coins with one coin moving down to each empty child.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,6 +32,8 @@ Explanation: From the left child of the tree, we move two coins to the root
 (taking two moves). Then, we move one coin from the root of the tree to the
 right child.
 ```
+
+![The left child holding three coins: two move up to the empty root and one continues to the empty right child.](figures/example-2.svg)
 
 ### Constraints
 

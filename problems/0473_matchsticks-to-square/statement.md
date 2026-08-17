@@ -17,6 +17,8 @@ Output: true
 Explanation: You can form a square with side length 2; one side of the square came from two sticks with length 1.
 ```
 
+![A square of side 2 built from the five sticks; one side is the two length-1 sticks joined end to end](figures/example-1.svg)
+
 ### Example 2
 
 ```text

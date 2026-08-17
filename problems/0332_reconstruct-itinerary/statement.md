@@ -24,6 +24,8 @@ Input: tickets = [["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]
 Output: ["JFK","MUC","LHR","SFO","SJC"]
 ```
 
+![The four tickets as arrows between five airports, numbered in itinerary order JFK → MUC → LHR → SFO → SJC](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -31,6 +33,8 @@ Input: tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL"
 Output: ["JFK","ATL","JFK","SFO","ATL","SFO"]
 Explanation: Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"] but it is larger in lexical order.
 ```
+
+![The five tickets as a directed multigraph on JFK, ATL and SFO, numbered 1-5 in itinerary order](figures/example-2.svg)
 
 ### Constraints
 

@@ -16,6 +16,8 @@ Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","
 Output: ["eat","oath"]
 ```
 
+![The board with the cells of oath and eat highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

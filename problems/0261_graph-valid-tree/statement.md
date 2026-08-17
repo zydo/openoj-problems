@@ -16,12 +16,16 @@ Input: n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]
 Output: true
 ```
 
+![The five nodes joined as a tree.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: n = 5, edges = [[0,1],[1,2],[2,3],[1,3],[1,4]]
 Output: false
 ```
+
+![The graph with the cycle 1 - 2 - 3 highlighted.](figures/example-2.svg)
 
 ### Constraints
 

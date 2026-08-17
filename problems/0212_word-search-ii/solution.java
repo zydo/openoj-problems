@@ -11,6 +11,8 @@ class Solution {
     public String[] findWords(String[][] board, String[] words) {
         int m = board.length,
             n = board[0].length;
+        // Trie of all words; a terminal node stores the whole word so it can
+        // be recovered without rebuilding it letter by letter.
         Node root = new Node();
         for (String word : words) {
             Node node = root;
@@ -21,8 +23,11 @@ class Solution {
             node.word = word;
         }
 
+        // A cell is used at most once within a word (the seen grid tracks
+        // the current path); the set dedups words found along several paths.
         Set<String> found = new HashSet<>();
         boolean[][] seen = new boolean[m][n];
+        // A word may begin anywhere, so start a DFS from every cell.
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 dfs(board, i, j, root, seen, found);
@@ -44,6 +49,8 @@ class Solution {
         int m = board.length,
             n = board[0].length;
         char ch = board[i][j].charAt(0);
+        // Walk the trie in lockstep with board moves: a missing child rules
+        // out the whole subtree of words with that prefix at once.
         Node next = node.children.get(ch);
         if (next == null) return;
         if (next.word != null) found.add(next.word);
@@ -57,6 +64,7 @@ class Solution {
                 dfs(board, ni, nj, next, seen, found);
             }
         }
+        // Unmark on the way out so the cell can serve other paths/words.
         seen[i][j] = false;
     }
 

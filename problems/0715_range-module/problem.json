@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": 715,
+  "slug": "range-module",
+  "title": "Range Module",
+  "difficulty": "H4",
+  "tags": [
+    "Balanced BST",
+    "Segment Tree"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "RangeModule",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "addRange",
+        "parameters": [
+          {
+            "name": "left",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "right",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "queryRange",
+        "parameters": [
+          {
+            "name": "left",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "right",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      },
+      {
+        "name": "removeRange",
+        "parameters": [
+          {
+            "name": "left",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "right",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

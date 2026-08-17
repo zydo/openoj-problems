@@ -18,6 +18,8 @@ Input: root = [1,2,3,4,5,6]
 Output: 6
 ```
 
+![The complete tree with its six nodes.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

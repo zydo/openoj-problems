@@ -42,6 +42,8 @@ So function 0 spends 2 + 1 = 3 units of total time executing, and function 1
 spends 4 units of total time executing.
 ```
 
+![The timeline of the two calls: function 1 runs inside function 0, for exclusive times 4 and 2 + 1 = 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

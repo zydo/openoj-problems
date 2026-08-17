@@ -20,6 +20,8 @@ Output: 3
 Explanation: The LCA of nodes 5 and 1 is 3.
 ```
 
+![The tree with p = 5, q = 1 and their LCA 3 highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Output: 5
 Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant
 of itself according to the LCA definition.
 ```
+
+![The tree with p = 5, q = 4 and their LCA 5 highlighted.](figures/example-2.svg)
 
 ### Example 3
 

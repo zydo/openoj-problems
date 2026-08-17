@@ -23,6 +23,8 @@ Input: wall = [[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]
 Output: 2
 ```
 
+![The wall with a vertical line at position 4, where 4 of 6 rows have an edge, so the line crosses only 2 bricks.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

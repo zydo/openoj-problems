@@ -21,6 +21,8 @@ Output: 6
 Explanation: Choosing any 2 edges will connect all cities so we choose the minimum 2.
 ```
 
+![A triangle of cities with the cost-1 and cost-5 links chosen in blue and the cost-6 link dashed and unused.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Input: n = 4, connections = [[1,2,3],[3,4,4]]
 Output: -1
 Explanation: There is no way to connect all cities even if all edges are used.
 ```
+
+![Four cities in two disconnected pairs, 1-2 and 3-4, with no cable between the islands.](figures/example-2.svg)
 
 ### Constraints
 

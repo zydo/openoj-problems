@@ -6,6 +6,7 @@ class Solution:
             # odd-length palindromes centered at c
             l, r = c, c
             while l >= 0 and r < n and s[l] == s[r]:
+                # s[l..r] is a palindrome closing the prefix: one more cut.
                 if cut[l] + 1 < cut[r + 1]:
                     cut[r + 1] = cut[l] + 1
                 l -= 1

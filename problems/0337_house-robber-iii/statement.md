@@ -21,6 +21,8 @@ Output: 7
 Explanation: Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.
 ```
 
+![The binary tree with the robbed houses highlighted: 3 + 3 + 1 = 7](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Input: root = [3,4,5,1,3,null,1]
 Output: 9
 Explanation: Maximum amount of money the thief can rob = 4 + 5 = 9.
 ```
+
+![The binary tree with the two robbed middle houses highlighted: 4 + 5 = 9](figures/example-2.svg)
 
 ### Constraints
 

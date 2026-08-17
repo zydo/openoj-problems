@@ -18,12 +18,16 @@ Input: m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0
 Output: 6
 ```
 
+![The 2 x 2 grid with all six paths that leave it within two moves.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: m = 1, n = 3, maxMove = 3, startRow = 0, startColumn = 1
 Output: 12
 ```
+
+![The 1 x 3 grid with all twelve paths that leave it within three moves.](figures/example-2.svg)
 
 ### Constraints
 

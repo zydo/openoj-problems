@@ -3,6 +3,7 @@ use std::collections::{HashMap, HashSet};
 impl Solution {
     pub fn ladder_length(begin_word: String, end_word: String, word_list: Vec<String>) -> i32 {
         let words: HashSet<&str> = word_list.iter().map(String::as_str).collect();
+        // No sequence can end outside the dictionary.
         if !words.contains(end_word.as_str()) {
             return 0;
         }
@@ -13,6 +14,8 @@ impl Solution {
             key
         };
 
+        // Bucket every word under each wildcard pattern ("hot" -> "*ot",
+        // "h*t", "ho*"): all one-letter neighbors share one of its patterns.
         let mut buckets: HashMap<String, Vec<String>> = HashMap::new();
         for word in &word_list {
             for i in 0..length {
@@ -23,6 +26,7 @@ impl Solution {
             }
         }
 
+        // Level-order BFS; steps starts at 1 because begin_word itself counts.
         let mut visited: HashSet<String> = HashSet::new();
         visited.insert(begin_word.clone());
         let mut queue = vec![begin_word];
@@ -34,7 +38,10 @@ impl Solution {
                     return steps;
                 }
                 for i in 0..length {
+                    // remove() pops the bucket so it is read once overall and
+                    // never re-read via a same-level word sharing the pattern.
                     if let Some(bucket) = buckets.remove(&pattern_of(word, i)) {
+                        // Each word is enqueued at most once.
                         for neighbor in bucket {
                             if visited.insert(neighbor.clone()) {
                                 next.push(neighbor);

@@ -14,6 +14,8 @@ Output: 4
 Explanation: One possible path is [1,0,2,0,3]
 ```
 
+![The star graph with node 0 in the center and the route 1 - 0 - 2 - 0 - 3 traced in blue with numbered steps.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -21,6 +23,8 @@ Input: graph = [[1],[0,2,4],[1,3,4],[2],[1,2]]
 Output: 4
 Explanation: One possible path is [0,1,4,2,3]
 ```
+
+![The five-node graph with the route 0 - 1 - 4 - 2 - 3 traced in blue and the unused edge 1 - 2 dashed.](figures/example-2.svg)
 
 ### Constraints
 

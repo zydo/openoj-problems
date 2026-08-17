@@ -8,7 +8,11 @@ func solveNQueens(n int) [][]string {
 	board := []string{}
 
 	var backtrack func(row int)
+	// One queen per row removes row conflicts by construction, so only
+	// columns and diagonals need tracking while the board grows row by row.
 	backtrack = func(row int) {
+		// Every row holds a queen and no pair attacks: record a copy so later
+		// backtracking cannot mutate this solution.
 		if row == n {
 			sol := make([]string, len(board))
 			copy(sol, board)
@@ -16,6 +20,10 @@ func solveNQueens(n int) [][]string {
 			return
 		}
 		for col := 0; col < n; col++ {
+			// O(1) safety check: cols holds occupied columns, diag1 holds
+			// row - col (constant along one diagonal family), diag2 holds
+			// row + col (constant along the other). A candidate is safe
+			// exactly when all three values are unseen.
 			if cols[col] || diag1[row-col] || diag2[row+col] {
 				continue
 			}
@@ -25,6 +33,7 @@ func solveNQueens(n int) [][]string {
 			rowStr := strings.Repeat(".", col) + "Q" + strings.Repeat(".", n-col-1)
 			board = append(board, rowStr)
 			backtrack(row + 1)
+			// Undo the placement, restoring state for the next candidate.
 			board = board[:len(board)-1]
 			delete(cols, col)
 			delete(diag1, row-col)

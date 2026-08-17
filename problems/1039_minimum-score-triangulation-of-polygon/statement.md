@@ -27,6 +27,8 @@ Explanation: The polygon is already triangulated, and the score of the only
 triangle is 6.
 ```
 
+![A triangle with vertex values 1, 2, and 3, already fully triangulated.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -36,6 +38,8 @@ Explanation: There are two triangulations, with possible scores:
 3*7*5 + 4*5*7 = 245, or 3*4*5 + 3*4*7 = 144. The minimum score is 144.
 ```
 
+![Two squares with vertex values 3, 7, 4, 5: the dashed 7-5 diagonal scores 245, the blue 3-4 diagonal scores 144.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -44,6 +48,8 @@ Output: 13
 Explanation: The minimum score triangulation is
 1*1*3 + 1*1*4 + 1*1*5 + 1*1*1 = 13.
 ```
+
+![A hexagon with vertex values 1, 3, 1, 4, 1, 5, cut by blue diagonals into four triangles scoring 3, 1, 4, and 5.](figures/example-3.svg)
 
 ### Constraints
 

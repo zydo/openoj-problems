@@ -20,6 +20,8 @@ Input: firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[1
 Output: [[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]
 ```
 
+![Interval lanes A and B above a number line, with the six intersection pieces marked in blue on an ans lane.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

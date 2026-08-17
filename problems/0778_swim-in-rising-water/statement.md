@@ -22,6 +22,8 @@ You cannot reach point (1, 1) until time 3.
 When the depth of water is 3, we can swim anywhere inside the grid.
 ```
 
+![The 2 x 2 grid; the start and end corners connect only once the water rises to elevation 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,6 +32,8 @@ Output: 16
 Explanation: The final route is shown.
 We need to wait until time 16 so that (0, 0) and (4, 4) are connected.
 ```
+
+![The 5 x 5 grid with the final route, whose highest cell is 16.](figures/example-2.svg)
 
 ### Constraints
 

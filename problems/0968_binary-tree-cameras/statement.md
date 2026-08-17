@@ -16,6 +16,8 @@ Output: 1
 Explanation: One camera is enough to monitor all nodes if placed as shown.
 ```
 
+![A small tree with one camera node on the middle level covering the root and both leaves.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -25,6 +27,8 @@ Explanation: At least two cameras are needed to monitor all nodes of the tree.
 One valid configuration places cameras on the two children that each cover a
 leaf-heavy branch.
 ```
+
+![A five-node chain with cameras on the second and fourth nodes covering the whole tree.](figures/example-2.svg)
 
 ### Constraints
 

@@ -32,6 +32,8 @@ Explanation: The initial health of the knight must be at least 7 if he
 follows the optimal path RIGHT -> RIGHT -> DOWN -> DOWN.
 ```
 
+![The dungeon grid with the path RIGHT, RIGHT, DOWN, DOWN highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

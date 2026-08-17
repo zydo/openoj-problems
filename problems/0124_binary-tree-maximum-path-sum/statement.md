@@ -20,6 +20,8 @@ Output: 6
 Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6.
 ```
 
+![The tree 1, 2, 3 with the path 2 -> 1 -> 3 highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -27,6 +29,8 @@ Input: root = [-10,9,20,null,null,15,7]
 Output: 42
 Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
 ```
+
+![The tree rooted at -10 with the path 15 -> 20 -> 7 highlighted.](figures/example-2.svg)
 
 ### Constraints
 

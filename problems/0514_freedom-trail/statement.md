@@ -40,6 +40,8 @@ Also, we need 1 more step for spelling.
 So the final output is 4.
 ```
 
+![The ring "godding" with g aligned at 12:00; rotating two steps brings the nearest d under the marker](figures/example-1.svg)
+
 ### Example 2
 
 ```text

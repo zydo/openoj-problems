@@ -28,6 +28,8 @@ Output: false
 Explanation: There is no way to partition the nodes into two independent sets such that every edge connects a node in one and the other.
 ```
 
+![The edge 0-2 forces two neighbors of both 1 and 3 into one set, so the graph is not bipartite.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Input: graph = [[1,3],[0,2],[1,3],[0,2]]
 Output: true
 Explanation: We can partition the nodes into two sets: {0, 2} and {1, 3}.
 ```
+
+![Every edge joins a node of {0, 2} to a node of {1, 3}.](figures/example-2.svg)
 
 ### Constraints
 

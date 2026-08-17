@@ -27,12 +27,16 @@ Output: [1]
 Explanation: As shown, the height of the tree is 1 when the root is the node with label 1 which is the only MHT.
 ```
 
+![The tree rooted at each of its four nodes; rooting at node 1 gives height 1, every other root gives height 2](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]
 Output: [3,4]
 ```
+
+![The tree rooted at its two centroids 3 and 4, which both give height 2](figures/example-2.svg)
 
 ### Constraints
 

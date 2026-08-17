@@ -15,12 +15,16 @@ Input: n = 5, edges = [[0,1],[1,2],[3,4]]
 Output: 2
 ```
 
+![Nodes 0-1-2 and 3-4 form two separate components](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: n = 5, edges = [[0,1],[1,2],[2,3],[3,4]]
 Output: 1
 ```
+
+![The edges chain all five nodes into a single component](figures/example-2.svg)
 
 ### Constraints
 

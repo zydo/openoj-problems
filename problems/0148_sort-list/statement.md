@@ -12,12 +12,16 @@ Input: head = [4,2,1,3]
 Output: [1,2,3,4]
 ```
 
+![The list 4 -> 2 -> 1 -> 3 before sorting and 1 -> 2 -> 3 -> 4 after.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: head = [-1,5,3,4,0]
 Output: [-1,0,3,4,5]
 ```
+
+![The list -1 -> 5 -> 3 -> 4 -> 0 before sorting and the sorted result.](figures/example-2.svg)
 
 ### Example 3
 

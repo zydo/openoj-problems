@@ -18,6 +18,8 @@ Explanation: The tree is
    15   7
 ```
 
+![The tree with one tinted band per level and the level-order output on the right.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

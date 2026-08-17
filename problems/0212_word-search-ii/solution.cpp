@@ -7,6 +7,8 @@ class Solution {
   public:
     vector<string> findWords(vector<vector<string>> &board, vector<string> &words) {
         int m = (int)board.size(), n = (int)board[0].size();
+        // Trie of all words; a terminal node stores the whole word so it can
+        // be recovered without rebuilding it letter by letter.
         Node *root = new Node();
         for (const string &word : words) {
             Node *node = root;
@@ -19,17 +21,22 @@ class Solution {
             node->word = word;
         }
 
+        // Flatten the single-letter string cells into a plain char grid.
         vector<string> grid(m);
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++)
                 grid[i] += board[i][j][0];
         }
 
+        // A cell is used at most once within a word (the seen grid tracks the
+        // current path); the set dedups words found along several paths.
         set<string> found;
         vector<vector<bool>> seen(m, vector<bool>(n, false));
         vector<pair<int, int>> dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
         function<void(int, int, Node *)> dfs = [&](int i, int j, Node *node) {
             char ch = grid[i][j];
+            // Walk the trie in lockstep with board moves: a missing child
+            // rules out the whole subtree of words with that prefix at once.
             auto it = node->children.find(ch);
             if (it == node->children.end())
                 return;
@@ -43,8 +50,10 @@ class Solution {
                     dfs(ni, nj, next);
                 }
             }
+            // Unmark on the way out so the cell can serve other paths/words.
             seen[i][j] = false;
         };
+        // A word may begin anywhere, so start a DFS from every cell.
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 dfs(i, j, root);

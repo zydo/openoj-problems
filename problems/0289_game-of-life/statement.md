@@ -34,12 +34,16 @@ Input: board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
 Output: [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
 ```
 
+![Left: the current board with live cells dark; right: the next state after applying all births and deaths at once](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: board = [[1,1],[1,0]]
 Output: [[1,1],[1,1]]
 ```
+
+![Left: a 2x2 block with three live cells; right: the dead cell is born because it has exactly three live neighbors](figures/example-2.svg)
 
 ### Constraints
 

@@ -5,9 +5,13 @@ class Solution {
 
     public String[][] partition(String s) {
         int n = s.length();
+        // Table of palindrome verdicts for every interval s[i..j].
         boolean[][] isPal = new boolean[n][n];
+        // Reverse i ensures the inner interval is computed before any outer
+        // interval that reads it.
         for (int i = n - 1; i >= 0; i--) {
             for (int j = i; j < n; j++) {
+                // Palindrome iff ends match and the interior is empty or pal.
                 if (
                     s.charAt(i) == s.charAt(j) &&
                     (j - i < 2 || isPal[i + 1][j - 1])
@@ -37,9 +41,12 @@ class Solution {
         List<List<String>> result
     ) {
         if (start == s.length()) {
+            // The pieces tile the whole string: snapshot the partition.
             result.add(new ArrayList<>(current));
             return;
         }
+        // Increasing `end` yields shorter first pieces before longer ones,
+        // producing the required output order.
         for (int end = start; end < s.length(); end++) {
             if (isPal[start][end]) {
                 current.add(s.substring(start, end + 1));

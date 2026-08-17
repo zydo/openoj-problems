@@ -12,12 +12,16 @@ Input: head = [1,2,3,4,5]
 Output: [5,4,3,2,1]
 ```
 
+![The list 1 -> 2 -> 3 -> 4 -> 5 and its reversal.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: head = [1,2]
 Output: [2,1]
 ```
+
+![The list 1 -> 2 and its reversal.](figures/example-2.svg)
 
 ### Example 3
 

@@ -1,4 +1,6 @@
 function mergeKLists(lists: (ListNode | null)[]): ListNode | null {
+    // Drop empty entries up front so [] and [[]] both collapse to an empty
+    // candidate list and return null immediately.
     let cur: (ListNode | null)[] = lists.filter(
         (x): x is ListNode => x !== null && x !== undefined,
     );
@@ -7,8 +9,12 @@ function mergeKLists(lists: (ListNode | null)[]): ListNode | null {
         a: ListNode | null,
         b: ListNode | null,
     ): ListNode | null => {
+        // Dummy head: every attachment happens the same way and the real
+        // head falls out as dummy.next.
         const dummy = new ListNode(0);
         let tail = dummy;
+        // Both lists sorted, so the merged list's next node is always the
+        // smaller of the two current heads.
         while (a !== null && b !== null) {
             if (a.val <= b.val) {
                 tail.next = a;
@@ -19,15 +25,23 @@ function mergeKLists(lists: (ListNode | null)[]): ListNode | null {
             }
             tail = tail.next;
         }
+        // Splice whichever list still has nodes -- it is already the sorted
+        // continuation.
         tail.next = a !== null ? a : b;
         return dummy.next;
     };
+    // Tournament rounds: merge adjacent pairs, halving the field each round.
+    // Every surviving node is walked once per round across ceil(log2 k)
+    // rounds, unlike sequential folding which can re-walk one long list k
+    // times.
     while (cur.length > 1) {
         const next: (ListNode | null)[] = [];
         for (let i = 0; i < cur.length; i += 2) {
             if (i + 1 < cur.length) {
                 next.push(merge2(cur[i]!, cur[i + 1]!));
             } else {
+                // Odd count: the last list gets a bye, passing to the next
+                // round untouched.
                 next.push(cur[i]!);
             }
         }

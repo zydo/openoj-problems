@@ -39,6 +39,8 @@ Input: dominoes = ".L.R...LR..L.."
 Output: "LL.RR.LLRRLL.."
 ```
 
+![The dominoes before and after the pushes; dominoes 2 and 5 stay balanced and 12 and 13 are never reached.](figures/example-2.svg)
+
 ### Constraints
 
 - `n == dominoes.length`

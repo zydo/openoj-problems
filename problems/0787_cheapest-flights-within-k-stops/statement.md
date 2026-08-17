@@ -16,6 +16,8 @@ The optimal path with at most 1 stop from city 0 to 3 is marked in red and has c
 Note that the path through cities [0,1,2,3] is cheaper but is invalid because it uses 2 stops.
 ```
 
+![The flight network; the path 0 to 1 to 3 costs 100 + 600 = 700 with 1 stop.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -26,6 +28,8 @@ The graph is shown above.
 The optimal path with at most 1 stop from city 0 to 2 is marked in red and has cost 100 + 100 = 200.
 ```
 
+![The path 0 to 1 to 2 costs 100 + 100 = 200 with 1 stop.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -35,6 +39,8 @@ Explanation:
 The graph is shown above.
 The optimal path with no stops from city 0 to 2 is marked in red and has cost 500.
 ```
+
+![With k = 0 stops forbidden, the direct flight 0 to 2 at cost 500 is the only option.](figures/example-3.svg)
 
 ### Constraints
 

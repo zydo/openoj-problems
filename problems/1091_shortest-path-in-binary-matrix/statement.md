@@ -21,12 +21,16 @@ Input: grid = [[0,1],[1,0]]
 Output: 2
 ```
 
+![A 2 x 2 grid with a blue diagonal step from the top-left 0 to the bottom-right 0.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: grid = [[0,0,0],[1,1,0],[1,1,0]]
 Output: 4
 ```
+
+![A 3 x 3 grid with the blue 4-cell path right, diagonally, and down through the zeros.](figures/example-2.svg)
 
 ### Example 3
 

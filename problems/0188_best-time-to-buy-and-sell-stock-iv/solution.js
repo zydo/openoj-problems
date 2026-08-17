@@ -13,13 +13,20 @@ var maxProfit = function (k, prices) {
             total += Math.max(prices[i] - prices[i - 1], 0);
         return total;
     }
+    // buy[j]: best cash while holding the j-th buy; sell[j]: best profit
+    // after j completed sells. -Infinity marks impossible holdings.
     const buy = new Array(k + 1).fill(-Infinity);
     const sell = new Array(k + 1).fill(0);
     for (const price of prices) {
         for (let j = 1; j <= k; j++) {
+            // Keep holding, or buy now out of j-1 finished transactions.
             buy[j] = Math.max(buy[j], sell[j - 1] - price);
+            // Stay sold, or sell the held position at today's price.
+            // Updating buy first permits a same-day buy-then-sell, which is
+            // a zero-profit transaction and never harms optimality.
             sell[j] = Math.max(sell[j], buy[j] + price);
         }
     }
+    // sell[k] is the best profit with at most k transactions.
     return sell[k];
 };

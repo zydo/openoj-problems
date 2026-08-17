@@ -19,6 +19,8 @@ Output: 4
 Explanation: The four 1x1 submatrices that only contain 0.
 ```
 
+![A 3 x 3 matrix of 0s and 1s with the four corner 0 cells outlined in blue.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

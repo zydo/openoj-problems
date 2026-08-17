@@ -19,6 +19,8 @@ Output: [0,-3,9,-10,null,5]
 Explanation: [0,-3,9,-10,null,5] represents the given height-balanced BST.
 ```
 
+![The sorted list and the height-balanced BST built from it.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

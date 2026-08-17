@@ -28,6 +28,8 @@ We cannot draw 3 uncrossed lines, because the line from nums1[1] = 4 to
 nums2[2] = 4 will intersect the line from nums1[2] = 2 to nums2[1] = 2.
 ```
 
+![Two rows of numbers with the chosen 1-1 and 4-4 lines in blue and the rejected 2-2 line dashed and crossed out.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

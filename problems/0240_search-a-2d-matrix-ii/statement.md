@@ -15,12 +15,16 @@ Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,
 Output: true
 ```
 
+![The staircase walk from the top-right corner that finds target 5.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20
 Output: false
 ```
+
+![The staircase walk for target 20, which exits the matrix.](figures/example-2.svg)
 
 ### Constraints
 

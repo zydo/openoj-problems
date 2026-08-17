@@ -30,6 +30,10 @@ impl Solution {
         board: &mut Vec<String>,
         results: &mut Vec<Vec<String>>,
     ) {
+        // One queen per row removes row conflicts by construction, so only
+        // columns and diagonals need tracking while the board grows row by row.
+        // Every row holds a queen and no pair attacks here: record a clone so
+        // later backtracking cannot mutate this solution.
         if row == n {
             results.push(board.clone());
             return;
@@ -37,6 +41,10 @@ impl Solution {
         for col in 0..n {
             let d1 = row as isize - col as isize;
             let d2 = row as isize + col as isize;
+            // O(1) safety check: cols holds occupied columns, diag1 holds
+            // row - col (constant along one diagonal family), diag2 holds
+            // row + col (constant along the other). A candidate is safe
+            // exactly when all three values are unseen.
             if cols.contains(&col) || diag1.contains(&d1) || diag2.contains(&d2) {
                 continue;
             }
@@ -45,6 +53,7 @@ impl Solution {
             diag2.insert(d2);
             board.push(".".repeat(col) + "Q" + &".".repeat(n - col - 1));
             Solution::backtrack(row + 1, n, cols, diag1, diag2, board, results);
+            // Undo the placement, restoring state for the next candidate.
             board.pop();
             cols.remove(&col);
             diag1.remove(&d1);

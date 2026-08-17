@@ -25,12 +25,16 @@ Explanation: There are two possible trees shown.
 The first has a non-leaf node sum 36, and the second has non-leaf node sum 32.
 ```
 
+![Two trees over the leaves 6, 2, 4: splitting after 6 costs 36, splitting after 2 costs 32.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: arr = [4,11]
 Output: 44
 ```
+
+![A single tree with root 44 over the leaves 4 and 11.](figures/example-2.svg)
 
 ### Constraints
 

@@ -22,6 +22,8 @@ Input: grid = [[2,1,1],[1,1,0],[0,1,1]]
 Output: 4
 ```
 
+![Five snapshots of the 3 x 3 grid from minute 0 to minute 4, with the rot spreading to fresh oranges each minute.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

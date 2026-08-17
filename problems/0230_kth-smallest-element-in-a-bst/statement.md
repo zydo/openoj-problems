@@ -12,12 +12,16 @@ Input: root = [3,1,4,null,2], k = 1
 Output: 1
 ```
 
+![The BST with node 1 highlighted as the smallest value.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: root = [5,3,6,2,4,null,null,1], k = 3
 Output: 3
 ```
+
+![The BST with node 3 highlighted as the 3rd smallest value.](figures/example-2.svg)
 
 ### Constraints
 

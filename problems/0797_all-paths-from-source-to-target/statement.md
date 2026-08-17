@@ -22,12 +22,16 @@ Output: [[0,1,3],[0,2,3]]
 Explanation: There are two paths: 0 -> 1 -> 3 and 0 -> 2 -> 3.
 ```
 
+![The graph with its two paths 0 to 1 to 3 and 0 to 2 to 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: graph = [[4,3,1],[3,2,4],[3],[4],[]]
 Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
 ```
+
+![The graph with all five paths from node 0 to node 4.](figures/example-2.svg)
 
 ### Constraints
 
