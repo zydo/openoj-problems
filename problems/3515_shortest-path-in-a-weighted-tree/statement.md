@@ -29,6 +29,8 @@ Query [1,1,2,4]: The weight of edge (1,2) changes from 7 to 4.
 Query [2,2]: The shortest path from root node 1 to node 2 is 4.
 ```
 
+![Nodes 1 and 2 joined by an edge of weight 7 that is later updated to 4.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -42,6 +44,8 @@ Query [2,2]: The shortest path from root node 1 to node 2 is 2.
 Query [2,3]: The shortest path from root node 1 to node 3 is 7.
 ```
 
+![Root 1 with children 2 and 3; edge (1,3) changes from 4 to 7, so d(3) goes 4 to 7.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -54,6 +58,8 @@ Query [1,2,3,3]: The weight of edge (2,3) changes from 1 to 3.
 Query [2,2]: The shortest path from root node 1 to node 2 is 2.
 Query [2,3]: The shortest path from root node 1 to node 3 consists of edges (1,2) and (2,3) with updated weights 2 + 3 = 5.
 ```
+
+![Chain 1 - 2 - 3 - 4 with weights 2, 1, 5; updating edge (2,3) to 3 lifts d(3) from 3 to 5.](figures/example-3.svg)
 
 ### Constraints
 

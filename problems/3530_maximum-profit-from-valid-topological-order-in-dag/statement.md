@@ -21,6 +21,8 @@ Explanation: The only valid order is [0, 1]. Node 0 is at position 1 and
 node 1 at position 2, so the profit is 2*1 + 3*2 = 8.
 ```
 
+![Node 0 points to node 1; the only order puts them at positions 1 and 2 for a profit of 8.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Input: n = 3, edges = [[0,1],[0,2]], score = [1,6,3]
 Output: 25
 Explanation: The optimal valid order is [0, 2, 1], giving 1*1 + 3*2 + 6*3 = 25.
 ```
+
+![Node 0 points to nodes 1 and 2; the optimal order 0, 2, 1 places score 6 last for a profit of 25.](figures/example-2.svg)
 
 ### Constraints
 

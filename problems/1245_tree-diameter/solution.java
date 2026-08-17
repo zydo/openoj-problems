@@ -6,6 +6,7 @@ import java.util.List;
 class Solution {
 
     public int treeDiameter(int[][] edges) {
+        // No edges: a single-node tree, diameter 0.
         if (edges.length == 0) return 0;
         int n = edges.length + 1;
         List<List<Integer>> adj = new ArrayList<>();
@@ -15,12 +16,16 @@ class Solution {
             adj.get(e[1]).add(e[0]);
         }
 
+        // Double BFS: the farthest node B from any start is an endpoint of a
+        // longest path, so B's eccentricity (second pass) is the diameter.
         int far = bfs(0, adj)[0];
         return bfs(far, adj)[1];
     }
 
     private int[] bfs(int src, List<List<Integer>> adj) {
         int n = adj.size();
+        // -1 doubles as the visited marker; a tree has one path between
+        // any two nodes, so BFS distances are true path lengths.
         int[] dist = new int[n];
         java.util.Arrays.fill(dist, -1);
         dist[src] = 0;
@@ -33,6 +38,7 @@ class Solution {
                 if (dist[v] < 0) {
                     dist[v] = dist[u] + 1;
                     queue.add(v);
+                    // Track the farthest node on the fly.
                     if (dist[v] > dist[far]) far = v;
                 }
             }

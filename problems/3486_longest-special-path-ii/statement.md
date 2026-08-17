@@ -18,6 +18,8 @@ Output: [9,3]
 Explanation: The longest special paths are 1 -> 2 -> 4 and 1 -> 3 -> 6 -> 8, both having a length of 9. The minimum number of nodes across all longest special paths is 3.
 ```
 
+![Tree rooted at 0 with the two length-9 special paths 1 -> 2 -> 4 and 1 -> 3 -> 6 -> 8 highlighted.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -25,6 +27,8 @@ Input: edges = [[1,0,3],[0,2,4],[0,3,5]], nums = [1,1,0,2]
 Output: [5,2]
 Explanation: The longest path is 0 -> 3 consisting of 2 nodes with a length of 5.
 ```
+
+![Star-shaped tree; the highlighted edge from 0 to 3 of weight 5 is the longest special path.](figures/example-2.svg)
 
 ### Constraints
 

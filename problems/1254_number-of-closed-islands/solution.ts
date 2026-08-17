@@ -9,6 +9,9 @@ function closedIsland(grid: number[][]): number {
     ];
 
     const flood = (r: number, c: number): boolean => {
+        // Erase land to water as we walk: the fill doubles as the visited
+        // marker, and an explicit stack keeps snake-shaped islands from
+        // overflowing the recursion stack.
         grid[r][c] = 1;
         const stack: number[][] = [[r, c]];
         let closed = true;
@@ -23,6 +26,8 @@ function closedIsland(grid: number[][]): number {
                         stack.push([nx, ny]);
                     }
                 } else {
+                    // A step off the grid means the component touches
+                    // the border, so the whole island is not closed.
                     closed = false;
                 }
             }
@@ -30,6 +35,8 @@ function closedIsland(grid: number[][]): number {
         return closed;
     };
 
+    // Each surviving land cell seeds exactly one fill; a fill that never
+    // stepped off-grid means the island was surrounded entirely by water.
     let count = 0;
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {

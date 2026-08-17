@@ -29,6 +29,8 @@ The only diameter path is the path from node 0 to node 2.
 The endpoints of this path are nodes 0 and 2, so they are special.
 ```
 
+![A three-node chain; the thick diameter from 0 to 2 spans 2 edges, and the shaded endpoints 0 and 2 are the special nodes.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -45,6 +47,8 @@ The special nodes are nodes 0, 4, 5, 6, as they are endpoints in at least one
 diameter path.
 ```
 
+![A seven-node tree with one diameter 0 - 1 - 2 - 3 - 4 drawn thick; the shaded nodes 0, 4, 5, and 6 are the endpoints of the four diameter paths.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -55,6 +59,8 @@ The diameter of this tree consists of 1 edge.
 The only diameter path is the path from node 0 to node 1.
 The endpoints of this path are nodes 0 and 1, so they are special.
 ```
+
+![Two nodes joined by the single edge, which is the whole diameter; both shaded endpoints 0 and 1 are special.](figures/example-3.svg)
 
 ### Constraints
 

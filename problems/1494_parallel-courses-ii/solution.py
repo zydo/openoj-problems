@@ -9,6 +9,10 @@ class Solution:
         for prev, nxt in relations:
             prereq[nxt - 1] |= 1 << (prev - 1)
         full = (1 << n) - 1
+        # dp[mask] = min semesters to have taken exactly the courses in mask.
+        # Every transition only adds bits, so the target mask is numerically
+        # larger — increasing order finalizes every predecessor first.
+        # The n+1 sentinel parks unreachable states.
         unreachable = n + 1
         dp = [unreachable] * (full + 1)
         dp[0] = 0
@@ -16,6 +20,8 @@ class Solution:
             steps = dp[mask]
             if steps == unreachable:
                 continue
+            # Available = untaken courses whose prerequisite set already sits
+            # inside mask (one AND per course).
             avail = 0
             for course in range(n):
                 if not (mask >> course) & 1 and (prereq[course] & ~mask) == 0:
@@ -23,6 +29,7 @@ class Solution:
             if not avail:
                 continue
             bits = [course for course in range(n) if (avail >> course) & 1]
+            # Fewer than k available: take them all in a single semester.
             if len(bits) <= k:
                 nxt = mask | avail
                 if steps + 1 < dp[nxt]:

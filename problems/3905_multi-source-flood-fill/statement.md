@@ -32,12 +32,16 @@ At time step 2, cells (0, 2), (1, 1), and (2, 0) are reached by both colors, so
 they are assigned color 2 as it has the maximum value among them.
 ```
 
+![Three 3x3 grids at t = 0, 1, and 2; the two sources spread step by step, and at t = 2 the three doubly-reached cells take the larger color 2.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
 Input: n = 3, m = 3, sources = [[0,1,3],[1,1,5]]
 Output: [[3,3,3],[5,5,5],[5,5,5]]
 ```
+
+![Three 3x3 grids at t = 0, 1, and 2; color 3 claims the top row at t = 1 before color 5 can arrive, and color 5 fills everything else by t = 2.](figures/example-2.svg)
 
 ### Example 3
 
@@ -47,6 +51,8 @@ Output: [[5,5],[5,5]]
 Explanation:
 Since there is only one source, all cells are assigned the same color.
 ```
+
+![Three 2x2 grids at t = 0, 1, and 2; the single source floods the whole grid by t = 2, leaving every cell 5.](figures/example-3.svg)
 
 ### Constraints
 

@@ -5,6 +5,10 @@ func minNumberOfSemesters(n int, relations [][]int, k int) int {
 		prereq[relation[1]-1] |= 1 << (relation[0] - 1)
 	}
 	full := 1<<n - 1
+	// dp[mask] = min semesters to have taken exactly the courses in mask.
+	// Every transition only adds bits, so the target mask is numerically
+	// larger — increasing order finalizes every predecessor first.
+	// The n+1 sentinel parks unreachable states.
 	unreachable := n + 1
 	dp := make([]int, full+1)
 	for state := range dp {
@@ -33,6 +37,8 @@ func minNumberOfSemesters(n int, relations [][]int, k int) int {
 		if dp[mask] == unreachable {
 			continue
 		}
+		// Available = untaken courses whose prerequisite set already sits
+		// inside mask (one AND per course).
 		avail := 0
 		for course := 0; course < n; course++ {
 			if mask>>course&1 == 0 && prereq[course]&^mask == 0 {
@@ -48,6 +54,7 @@ func minNumberOfSemesters(n int, relations [][]int, k int) int {
 				bits = append(bits, course)
 			}
 		}
+		// Fewer than k available: take them all in a single semester.
 		if len(bits) <= k {
 			relax(mask|avail, dp[mask]+1)
 		} else {

@@ -3,6 +3,7 @@
  * @return {number}
  */
 var treeDiameter = function (edges) {
+    // No edges: a single-node tree, diameter 0.
     if (edges.length === 0) return 0;
     const n = edges.length + 1;
     const adj = Array.from({ length: n }, () => []);
@@ -12,6 +13,8 @@ var treeDiameter = function (edges) {
     }
 
     const bfs = (src) => {
+        // -1 doubles as the visited marker; a tree has one path between
+        // any two nodes, so BFS distances are true path lengths.
         const dist = new Array(n).fill(-1);
         dist[src] = 0;
         const queue = [src];
@@ -22,6 +25,7 @@ var treeDiameter = function (edges) {
                 if (dist[v] < 0) {
                     dist[v] = dist[u] + 1;
                     queue.push(v);
+                    // Track the farthest node on the fly.
                     if (dist[v] > dist[far]) far = v;
                 }
             }
@@ -29,6 +33,8 @@ var treeDiameter = function (edges) {
         return [far, dist[far]];
     };
 
+    // Double BFS: the farthest node B from any start is an endpoint of a
+    // longest path, so B's eccentricity (second pass) is the diameter.
     const [far] = bfs(0);
     const [, diameter] = bfs(far);
     return diameter;

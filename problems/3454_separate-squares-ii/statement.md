@@ -23,6 +23,8 @@ Output: 1.00000
 Explanation: The two squares cover 1 square unit each. Any horizontal line between y = 1 and y = 2 leaves exactly 1 square unit above it and 1 square unit below it, so the minimum such y-value is 1.
 ```
 
+![Two disjoint unit squares; the covered area is 2 and any line with 1 <= y <= 2 halves it.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,6 +32,8 @@ Input: squares = [[0,0,2],[1,1,1]]
 Output: 1.00000
 Explanation: The smaller square lies entirely inside the larger one, so the covered region is just the 2 by 2 square of area 4. The line y = 1 splits it into two equal parts of area 2.
 ```
+
+![The 1x1 square sits fully inside the 2x2 square, so the line y = 1 splits the covered area into 2 and 2.](figures/example-2.svg)
 
 ### Constraints
 

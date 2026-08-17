@@ -45,17 +45,24 @@ function maxEvents(events: number[][]): number {
         }
         return top;
     };
+    // Day sweep over events sorted by start day.
     while (i < n || heap.length > 0) {
+        // Heap empty: skip idle days by jumping the clock straight to
+        // the next event's start day.
         if (heap.length === 0) {
             day = Math.max(day, sorted[i][0]);
         }
+        // Every event that has started becomes available today.
         while (i < n && sorted[i][0] <= day) {
             push(sorted[i][1]);
             i++;
         }
+        // Discard events whose end day already passed — lost regardless.
         while (heap.length > 0 && heap[0] < day) {
             pop();
         }
+        // Attend the soonest-ending (most perishable) event; an exchange
+        // argument shows swapping it in never breaks feasibility.
         if (heap.length > 0) {
             pop();
             attended++;

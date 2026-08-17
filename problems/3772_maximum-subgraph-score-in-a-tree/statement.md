@@ -34,6 +34,8 @@ Explanation:
 For each node, the best connected subgraph containing it is the whole tree, which has 2 good nodes and 1 bad node, resulting in a score of 1.
 ```
 
+![A three-node path with the good nodes 0 and 2 shaded; keeping the whole tree gives every node a score of 2 - 1 = 1.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -45,6 +47,8 @@ Nodes 1, 3, and 4: The best connected subgraph consists of nodes 1, 3, 4, which 
 Node 2: The best connected subgraph consists of nodes 1, 2, 3, 4, which has 3 good nodes and 1 bad node, resulting in a score of 3 - 1 = 2.
 ```
 
+![A tree rooted at 1; the highlighted subgraph of nodes 1, 3, and 4 has three good nodes and no bad ones, for a score of 3.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -53,6 +57,8 @@ Output: [-1,-1]
 Explanation:
 For each node, including the other node only adds another bad node, so the best score for both nodes is -1.
 ```
+
+![Two bad nodes joined by one edge; each node's best connected subgraph is itself alone, scoring -1.](figures/example-3.svg)
 
 ### Constraints
 

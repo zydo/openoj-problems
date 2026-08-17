@@ -30,6 +30,8 @@ Explanation:
 cycle 0 - 1 - 2 - 0 has total edge weight 1 + 1 + 1 = 3, which is an odd number.
 ```
 
+![A triangle where the dashed edge 0 - 2 would close the cycle 0 - 1 - 2 - 0 with total weight 3 (odd), so it is not added.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -42,6 +44,8 @@ Explanation:
 Note that the cycle 0 - 1 - 2 - 0 has total edge weight 1 + 1 + 0 = 2, which is
 an even number.
 ```
+
+![A triangle whose cycle 0 - 1 - 2 - 0 has total weight 1 + 1 + 0 = 2 (even), so all three edges are added.](figures/example-2.svg)
 
 ### Constraints
 

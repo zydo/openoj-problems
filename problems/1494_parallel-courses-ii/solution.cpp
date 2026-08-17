@@ -7,6 +7,10 @@ class Solution {
             prereq[relation[1] - 1] |= 1 << (relation[0] - 1);
         }
         int full = (1 << n) - 1;
+        // dp[mask] = min semesters to have taken exactly the courses in mask.
+        // Every transition only adds bits, so the target mask is numerically
+        // larger — increasing order finalizes every predecessor first.
+        // The n+1 sentinel parks unreachable states.
         const int unreachable = n + 1;
         vector<int> dp(full + 1, unreachable);
         dp[0] = 0;
@@ -16,6 +20,8 @@ class Solution {
             if (dp[mask] == unreachable) {
                 continue;
             }
+            // Available = untaken courses whose prerequisite set already sits
+            // inside mask (one AND per course).
             int avail = 0;
             for (int course = 0; course < n; course++) {
                 if (!(mask >> course & 1) && (prereq[course] & ~mask) == 0) {
@@ -31,6 +37,7 @@ class Solution {
                     bits.push_back(course);
                 }
             }
+            // Fewer than k available: take them all in a single semester.
             if ((int)bits.size() <= k) {
                 relax(mask | avail, dp[mask] + 1, dp);
             } else {

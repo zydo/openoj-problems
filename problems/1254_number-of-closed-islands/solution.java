@@ -5,6 +5,8 @@ class Solution {
             cols = grid[0].length;
         int[] dr = { 1, -1, 0, 0 };
         int[] dc = { 0, 0, 1, -1 };
+        // Each surviving land cell seeds exactly one fill; a fill that never
+        // stepped off-grid means the island was surrounded entirely by water.
         int count = 0;
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
@@ -25,6 +27,9 @@ class Solution {
         int[] dr,
         int[] dc
     ) {
+        // Erase land to water as we walk: the fill doubles as the visited
+        // marker, and an explicit stack keeps snake-shaped islands from
+        // overflowing the recursion stack.
         java.util.ArrayDeque<int[]> stack = new java.util.ArrayDeque<>();
         grid[r][c] = 1;
         stack.push(new int[] { r, c });
@@ -40,6 +45,8 @@ class Solution {
                         stack.push(new int[] { nx, ny });
                     }
                 } else {
+                    // A step off the grid means the component touches
+                    // the border, so the whole island is not closed.
                     closed = false;
                 }
             }

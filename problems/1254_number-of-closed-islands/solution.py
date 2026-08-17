@@ -7,6 +7,9 @@ class Solution:
         dirs = ((1, 0), (-1, 0), (0, 1), (0, -1))
 
         def flood(r, c):
+            # Erase land to water as we walk: the fill doubles as the visited
+            # marker, and an explicit stack keeps snake-shaped islands from
+            # overflowing the recursion stack.
             grid[r][c] = 1
             stack = [(r, c)]
             closed = True
@@ -19,9 +22,13 @@ class Solution:
                             grid[nx][ny] = 1
                             stack.append((nx, ny))
                     else:
+                        # A step off the grid means the component touches
+                        # the border, so the whole island is not closed.
                         closed = False
             return closed
 
+        # Each surviving land cell seeds exactly one fill; a fill that never
+        # stepped off-grid means the island was surrounded entirely by water.
         count = 0
         for r in range(rows):
             for c in range(cols):

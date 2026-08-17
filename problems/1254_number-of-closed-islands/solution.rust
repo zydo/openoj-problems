@@ -5,6 +5,8 @@ impl Solution {
         let mut grid = grid;
         let dr = [1i32, -1, 0, 0];
         let dc = [0i32, 0, 1, -1];
+        // Each surviving land cell seeds exactly one fill; a fill that never
+        // stepped off-grid means the island was surrounded entirely by water.
         let mut count = 0;
         for r in 0..rows {
             for c in 0..cols {
@@ -35,6 +37,9 @@ impl Solution {
         dr: &[i32; 4],
         dc: &[i32; 4],
     ) -> bool {
+        // Erase land to water as we walk: the fill doubles as the visited
+        // marker, and an explicit stack keeps snake-shaped islands from
+        // overflowing the recursion stack.
         grid[r as usize][c as usize] = 1;
         let mut stack: Vec<(i32, i32)> = vec![(r, c)];
         let mut closed = true;
@@ -48,6 +53,8 @@ impl Solution {
                         stack.push((nx, ny));
                     }
                 } else {
+                    // A step off the grid means the component touches
+                    // the border, so the whole island is not closed.
                     closed = false;
                 }
             }

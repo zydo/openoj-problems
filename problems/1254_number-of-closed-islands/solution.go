@@ -4,6 +4,9 @@ func closedIsland(grid [][]int) int {
 	dc := []int{0, 0, 1, -1}
 
 	flood := func(r, c int) bool {
+		// Erase land to water as we walk: the fill doubles as the visited
+		// marker, and an explicit stack keeps snake-shaped islands from
+		// overflowing the recursion stack.
 		grid[r][c] = 1
 		stack := [][2]int{{r, c}}
 		closed := true
@@ -19,6 +22,8 @@ func closedIsland(grid [][]int) int {
 						stack = append(stack, [2]int{nx, ny})
 					}
 				} else {
+					// A step off the grid means the component touches
+					// the border, so the whole island is not closed.
 					closed = false
 				}
 			}
@@ -26,6 +31,8 @@ func closedIsland(grid [][]int) int {
 		return closed
 	}
 
+	// Each surviving land cell seeds exactly one fill; a fill that never
+	// stepped off-grid means the island was surrounded entirely by water.
 	count := 0
 	for r := 0; r < rows; r++ {
 		for c := 0; c < cols; c++ {

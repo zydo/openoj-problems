@@ -28,6 +28,8 @@ The only valid path using at most k = 1 edge is 0 -> 2, which requires repairing
 the edge with cost 100. Therefore, the minimum required amount of money is 100.
 ```
 
+![A triangle of three nodes; with k = 1 the only route from 0 to 2 is the direct edge of cost 100, so the answer is 100.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -40,6 +42,8 @@ If money < 12, there is no available path of length at most k = 2 from node 0 to
 node 5. Therefore, the minimum required money is 12.
 ```
 
+![A weighted six-node graph; the cheapest path of at most 2 edges from 0 to 5 is 0 - 1 - 5, whose most expensive edge costs 12.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -49,6 +53,8 @@ Explanation:
 It is impossible to reach node 2 from node 0 using any amount of money.
 Therefore, the answer is -1.
 ```
+
+![Three nodes where only 0 - 1 has an edge; node 2 has no incident edge, so it can never be reached and the answer is -1.](figures/example-3.svg)
 
 ### Constraints
 

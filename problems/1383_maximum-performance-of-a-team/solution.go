@@ -10,6 +10,9 @@ func maxPerformance(n int, speed []int, efficiency []int, k int) int {
 	for i := 0; i < n; i++ {
 		engineers[i] = engineer{efficiency[i], speed[i]}
 	}
+	// Decouple sum(speeds) * min(efficiency) by fixing the minimum:
+	// sweep in decreasing efficiency so the current engineer caps the
+	// team, and everyone seen so far has efficiency >= theirs.
 	sort.Slice(engineers, func(a, b int) bool {
 		if engineers[a].eff != engineers[b].eff {
 			return engineers[a].eff > engineers[b].eff
@@ -61,13 +64,18 @@ func maxPerformance(n int, speed []int, efficiency []int, k int) int {
 	for _, e := range engineers {
 		push(e.spd)
 		speedSum += e.spd
+		// Evict the slowest when over budget, leaving the k fastest
+		// among engineers with efficiency >= the current one.
 		if len(heap) > k {
 			speedSum -= pop()
 		}
+		// Best performance of any team this engineer caps; the optimal
+		// team's bottleneck appears as "current" at some step.
 		perf := speedSum * e.eff
 		if perf > best {
 			best = perf
 		}
 	}
+	// Reduce only at the end: the max must be taken on true values.
 	return best % MOD
 }

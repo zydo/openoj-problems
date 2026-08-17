@@ -27,6 +27,8 @@ Output: 2
 Explanation: Select all four points.
 ```
 
+![All four corner points of the 2 by 2 square are selected; every pair is at Manhattan distance 2 or more.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Output: 1
 Explanation: Select the points (0, 0), (2, 0), (2, 2), and (2, 1).
 ```
 
+![The four selected points on the 2 by 2 square; (2, 1) sits distance 1 from both right-edge corners.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -42,6 +46,8 @@ Input: side = 2, points = [[0,0],[0,1],[0,2],[1,2],[2,0],[2,2],[2,1]], k = 5
 Output: 1
 Explanation: Select the points (0, 0), (0, 1), (0, 2), (1, 2), and (2, 2).
 ```
+
+![Five of the seven boundary points are selected, running along the left and top edges with adjacent picks 1 apart.](figures/example-3.svg)
 
 ### Constraints
 

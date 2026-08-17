@@ -10,6 +10,10 @@ class Solution {
             prereq[relation[1] - 1] |= 1 << (relation[0] - 1);
         }
         int full = (1 << n) - 1;
+        // dp[mask] = min semesters to have taken exactly the courses in mask.
+        // Every transition only adds bits, so the target mask is numerically
+        // larger — increasing order finalizes every predecessor first.
+        // The n+1 sentinel parks unreachable states.
         final int unreachable = n + 1;
         int[] dp = new int[full + 1];
         java.util.Arrays.fill(dp, unreachable);
@@ -19,6 +23,8 @@ class Solution {
             if (dp[mask] == unreachable) {
                 continue;
             }
+            // Available = untaken courses whose prerequisite set already sits
+            // inside mask (one AND per course).
             int avail = 0;
             for (int course = 0; course < n; course++) {
                 if (
@@ -36,6 +42,7 @@ class Solution {
                     bits.add(course);
                 }
             }
+            // Fewer than k available: take them all in a single semester.
             if (bits.size() <= k) {
                 relax(mask | avail, dp[mask] + 1, dp);
             } else {

@@ -22,6 +22,8 @@ Output: 1.00000
 Explanation: Any horizontal line between y = 1 and y = 2 will have 1 square unit above it and 1 square unit below it. The lowest option is 1.
 ```
 
+![Two disjoint unit squares; any line with 1 <= y <= 2 leaves 1 unit of area above and below.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -32,6 +34,8 @@ Below the line: 7/6 * 2 (Red) + 1/6 (Blue) = 15/6 = 2.5.
 Above the line: 5/6 * 2 (Red) + 5/6 (Blue) = 15/6 = 2.5.
 Since the areas above and below the line are equal, the output is 7/6 = 1.16667.
 ```
+
+![A 2x2 square with an overlapping 1x1 square whose area counts twice; the line y = 7/6 leaves 2.5 above and below.](figures/example-2.svg)
 
 ### Constraints
 

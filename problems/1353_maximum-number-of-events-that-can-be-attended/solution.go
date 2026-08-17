@@ -18,6 +18,8 @@ func (h *minHeap) Pop() interface{} {
 }
 
 func maxEvents(events [][]int) int {
+	// Day sweep over events sorted by start day; a min-heap of end days
+	// holds the events available today.
 	sort.Slice(events, func(a, b int) bool {
 		if events[a][0] != events[b][0] {
 			return events[a][0] < events[b][0]
@@ -30,18 +32,24 @@ func maxEvents(events [][]int) int {
 	attended := 0
 	openEnds := &minHeap{}
 	for i < n || openEnds.Len() > 0 {
+		// Heap empty: skip idle days by jumping the clock straight to
+		// the next event's start day.
 		if openEnds.Len() == 0 {
 			if events[i][0] > day {
 				day = events[i][0]
 			}
 		}
+		// Every event that has started becomes available today.
 		for i < n && events[i][0] <= day {
 			heap.Push(openEnds, events[i][1])
 			i++
 		}
+		// Discard events whose end day already passed — lost regardless.
 		for openEnds.Len() > 0 && (*openEnds)[0] < day {
 			heap.Pop(openEnds)
 		}
+		// Attend the soonest-ending (most perishable) event; an exchange
+		// argument shows swapping it in never breaks feasibility.
 		if openEnds.Len() > 0 {
 			heap.Pop(openEnds)
 			attended++

@@ -18,6 +18,8 @@ Output: [6,2]
 Explanation: The longest special paths are 2 -> 5 and 0 -> 1 -> 4, both having a length of 6. The minimum number of nodes across all longest special paths is 2.
 ```
 
+![The two longest special paths, 0 -> 1 -> 4 and 2 -> 5, each of total edge length 6.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -25,6 +27,8 @@ Input: edges = [[1,0,8]], nums = [2,2]
 Output: [0,1]
 Explanation: The longest special paths are 0 and 1, both having a length of 0. The minimum number of nodes across all longest special paths is 1.
 ```
+
+![Nodes 0 and 1 both hold value 2, so the edge of length 8 joins no special path.](figures/example-2.svg)
 
 ### Constraints
 

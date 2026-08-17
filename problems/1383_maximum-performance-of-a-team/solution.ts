@@ -9,6 +9,9 @@ function maxPerformance(
     for (let i = 0; i < n; i++) {
         engineers.push([efficiency[i], speed[i]]);
     }
+    // Decouple sum(speeds) * min(efficiency) by fixing the minimum:
+    // sweep in decreasing efficiency so the current engineer caps the
+    // team, and everyone seen so far has efficiency >= theirs.
     engineers.sort((a, b) => b[0] - a[0] || b[1] - a[1]);
     const heap: number[] = [];
     const push = (v: number): void => {
@@ -57,13 +60,19 @@ function maxPerformance(
     for (const [eff, spd] of engineers) {
         push(spd);
         speedSum += spd;
+        // Evict the slowest when over budget, leaving the k fastest
+        // among engineers with efficiency >= the current one.
         if (heap.length > k) {
             speedSum -= pop();
         }
+        // Best performance of any team this engineer caps; the optimal
+        // team's bottleneck appears as "current" at some step. BigInt keeps
+        // the product exact — the max must be taken on true values.
         const perf = BigInt(speedSum) * BigInt(eff);
         if (perf > best) {
             best = perf;
         }
     }
+    // Reduce only at the end.
     return Number(best % MOD);
 }

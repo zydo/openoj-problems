@@ -11,6 +11,10 @@ var minNumberOfSemesters = function (n, relations, k) {
         prereq[nxt - 1] |= 1 << (prev - 1);
     }
     const full = (1 << n) - 1;
+    // dp[mask] = min semesters to have taken exactly the courses in mask.
+    // Every transition only adds bits, so the target mask is numerically
+    // larger — increasing order finalizes every predecessor first.
+    // The n+1 sentinel parks unreachable states.
     const unreachable = n + 1;
     const dp = new Array(full + 1).fill(unreachable);
     dp[0] = 0;
@@ -35,6 +39,8 @@ var minNumberOfSemesters = function (n, relations, k) {
         if (dp[mask] === unreachable) {
             continue;
         }
+        // Available = untaken courses whose prerequisite set already sits
+        // inside mask (one AND per course).
         let avail = 0;
         for (let course = 0; course < n; course++) {
             if (
@@ -53,6 +59,7 @@ var minNumberOfSemesters = function (n, relations, k) {
                 bits.push(course);
             }
         }
+        // Fewer than k available: take them all in a single semester.
         if (bits.length <= k) {
             relax(mask | avail, dp[mask] + 1);
         } else {
