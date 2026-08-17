@@ -26,6 +26,8 @@ func colorTheGrid(m int, n int) int {
 	}
 
 	length := len(states)
+	// Two columns may be adjacent exactly when they differ in every row;
+	// precompute that compatibility table once.
 	compat := make([][]int, length)
 	for i := 0; i < length; i++ {
 		for j := 0; j < length; j++ {
@@ -41,6 +43,8 @@ func colorTheGrid(m int, n int) int {
 		}
 	}
 
+	// All ones: the first column can take any valid coloring (this also
+	// makes n=1 fall out with the loop body never running).
 	cur := make([]int64, length)
 	for i := range cur {
 		cur[i] = 1
@@ -48,7 +52,7 @@ func colorTheGrid(m int, n int) int {
 	for step := 0; step < n-1; step++ {
 		nxt := make([]int64, length)
 		for i := 0; i < length; i++ {
-			if cur[i] != 0 {
+			if cur[i] != 0 { // skip zero-count states (constant-factor saving)
 				for _, j := range compat[i] {
 					nxt[j] = (nxt[j] + cur[i]) % MOD
 				}
@@ -56,6 +60,7 @@ func colorTheGrid(m int, n int) int {
 		}
 		cur = nxt
 	}
+	// The last column may end in any state, so sum the whole vector.
 	var ans int64
 	for _, c := range cur {
 		ans = (ans + c) % MOD

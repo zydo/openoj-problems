@@ -1,5 +1,6 @@
 func maxCompatibilitySum(students [][]int, mentors [][]int) int {
 	m := len(students)
+	// Precompute the m x m agreement counts so the DP touches only ints.
 	score := make([][]int, m)
 	for i := 0; i < m; i++ {
 		score[i] = make([]int, m)
@@ -14,6 +15,10 @@ func maxCompatibilitySum(students [][]int, mentors [][]int) int {
 		}
 	}
 	full := 1 << m
+	// dp[mask] = best total score matching the first popcount(mask) students
+	// to exactly the mentors in mask; dp[0] = 0. The used-mentor count alone
+	// pins down which student is placed next. Increasing numeric order works
+	// because every submask is numerically smaller.
 	dp := make([]int, full)
 	popcount := make([]int, full)
 	for mask := 1; mask < full; mask++ {
@@ -22,6 +27,8 @@ func maxCompatibilitySum(students [][]int, mentors [][]int) int {
 		best := 0
 		for j := 0; j < m; j++ {
 			if mask>>j&1 == 1 {
+				// Mentor j was this student's match: extend the assignment
+				// without j by their pairwise score.
 				v := dp[mask^(1<<j)] + score[i][j]
 				if v > best {
 					best = v

@@ -25,6 +25,8 @@ class Solution {
         }
 
         int len = states.size();
+        // Two columns may be adjacent exactly when they differ in every row;
+        // precompute that compatibility table once.
         vector<vector<int>> compat(len);
         for (int i = 0; i < len; i++) {
             for (int j = 0; j < len; j++) {
@@ -38,11 +40,13 @@ class Solution {
             }
         }
 
+        // All ones: the first column can take any valid coloring (this also
+        // makes n=1 fall out with the loop body never running).
         vector<long long> cur(len, 1);
         for (int step = 0; step < n - 1; step++) {
             vector<long long> nxt(len, 0);
             for (int i = 0; i < len; i++) {
-                if (cur[i]) {
+                if (cur[i]) { // skip zero-count states as a constant-factor saving
                     for (int j : compat[i]) {
                         nxt[j] = (nxt[j] + cur[i]) % MOD;
                     }
@@ -50,6 +54,7 @@ class Solution {
             }
             cur = nxt;
         }
+        // The last column may end in any state, so sum the whole vector.
         long long ans = 0;
         for (long long c : cur)
             ans = (ans + c) % MOD;

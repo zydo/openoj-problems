@@ -1,4 +1,6 @@
 function minimizedMaximum(n: number, quantities: number[]): number {
+    // A store holds one product type only, so a type with q items needs
+    // ceil(q/x) stores.
     const storesNeeded = (x: number): number => {
         let total = 0;
         for (const q of quantities) {
@@ -7,8 +9,13 @@ function minimizedMaximum(n: number, quantities: number[]): number {
         return total;
     };
 
+    // Feasibility is monotone in the cap x, so binary-search the smallest
+    // feasible one. hi = max(quantities) is always feasible (one store can
+    // take an entire product type).
     let lo = 1;
     let hi = Math.max(...quantities);
+    // Invariant: lo possibly too small, hi known feasible; the sum check
+    // uses <= n since leftover stores may receive nothing.
     while (lo < hi) {
         const mid = Math.floor((lo + hi) / 2);
         if (storesNeeded(mid) <= n) {

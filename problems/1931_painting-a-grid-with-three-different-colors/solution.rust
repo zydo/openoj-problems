@@ -20,6 +20,8 @@ impl Solution {
         }
 
         let len = states.len();
+        // Two columns may be adjacent exactly when they differ in every row;
+        // precompute that compatibility table once.
         let mut compat: Vec<Vec<usize>> = vec![Vec::new(); len];
         for i in 0..len {
             for j in 0..len {
@@ -29,11 +31,14 @@ impl Solution {
             }
         }
 
+        // All ones: the first column can take any valid coloring (this also
+        // makes n=1 fall out with the loop body never running).
         let mut cur = vec![1i64; len];
         for _ in 0..(n - 1) {
             let mut nxt = vec![0i64; len];
             for i in 0..len {
                 if cur[i] != 0 {
+                    // skip zero-count states (constant-factor saving)
                     for &j in &compat[i] {
                         nxt[j] = (nxt[j] + cur[i]) % MOD;
                     }
@@ -41,6 +46,7 @@ impl Solution {
             }
             cur = nxt;
         }
+        // The last column may end in any state, so sum the whole vector.
         let mut ans: i64 = 0;
         for c in cur {
             ans = (ans + c) % MOD;

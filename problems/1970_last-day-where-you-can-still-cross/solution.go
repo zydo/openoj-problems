@@ -1,5 +1,7 @@
 func latestDayToCross(row int, col int, cells [][]int) int {
 	canCross := func(floodedCount int) bool {
+		// Rebuild the grid for this query day: mark the flooded cells as
+		// water, then test a top-to-bottom walk by BFS.
 		grid := make([][]int, row)
 		for r := range grid {
 			grid[r] = make([]int, col)
@@ -12,6 +14,7 @@ func latestDayToCross(row int, col int, cells [][]int) int {
 		for r := range seen {
 			seen[r] = make([]bool, col)
 		}
+		// Multi-source BFS: every unflooded top-row cell is a start.
 		for c := 0; c < col; c++ {
 			if grid[0][c] == 0 {
 				queue = append(queue, [2]int{0, c})
@@ -25,7 +28,7 @@ func latestDayToCross(row int, col int, cells [][]int) int {
 			r, c := queue[head][0], queue[head][1]
 			head++
 			if r == row-1 {
-				return true
+				return true // bottom reached: crossing still possible
 			}
 			for d := 0; d < 4; d++ {
 				nr, nc := r+drs[d], c+dcs[d]
@@ -37,9 +40,11 @@ func latestDayToCross(row int, col int, cells [][]int) int {
 		}
 		return false
 	}
+	// Land only floods, never dries, so crossable days form a prefix of
+	// days: binary-search its right endpoint. Day 1 is always crossable.
 	lo, hi := 1, row*col
 	for lo < hi {
-		mid := (lo + hi + 1) / 2
+		mid := (lo + hi + 1) / 2 // upper mid: converge on last feasible day
 		if canCross(mid) {
 			lo = mid
 		} else {

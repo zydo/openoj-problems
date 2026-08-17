@@ -1,8 +1,13 @@
 class Solution {
   public:
     int minimizedMaximum(int n, vector<int> &quantities) {
+        // Feasibility is monotone in the cap x, so binary-search the
+        // smallest feasible one. hi = max(quantities) is always feasible
+        // (one store can take an entire product type).
         int lo = 1;
         int hi = *max_element(quantities.begin(), quantities.end());
+        // Invariant: lo possibly too small, hi known feasible; the sum check
+        // uses <= n since leftover stores may receive nothing.
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
             if (storesNeeded(quantities, mid) <= (long long)n) {
@@ -16,6 +21,8 @@ class Solution {
 
   private:
     long long storesNeeded(vector<int> &quantities, int x) {
+        // A store holds one product type only, so a type with q items needs
+        // ceil(q/x) stores; integer arithmetic avoids floats.
         long long total = 0;
         for (int q : quantities) {
             total += (q + x - 1) / x;

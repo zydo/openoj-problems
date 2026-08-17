@@ -5,6 +5,10 @@ function minCost(
 ): number {
     const n = passingFees.length;
     const INF = Infinity;
+    // Unfold the graph into layers indexed by exact arrival time:
+    // layers[t][c] = min fee of any walk from city 0 arriving at c at
+    // minute t exactly. Within one time layer, minimizing cost is
+    // well-defined, so revisiting a city at a different time stays legal.
     const layers: number[][] = new Array(maxTime + 1);
     const start = new Array<number>(n).fill(INF);
     start[0] = passingFees[0];
@@ -12,7 +16,8 @@ function minCost(
     for (let t = 1; t <= maxTime; t++) {
         const cur = new Array<number>(n).fill(INF);
         for (const [x, y, dt] of edges) {
-            if (dt > t) continue;
+            if (dt > t) continue; // edge cannot fit in the elapsed time
+            // Relax both directions from the layer exactly dt minutes ago.
             const prev = layers[t - dt];
             if (prev[x] + passingFees[y] < cur[y])
                 cur[y] = prev[x] + passingFees[y];
@@ -21,6 +26,8 @@ function minCost(
         }
         layers[t] = cur;
     }
+    // Destination may be reached before maxTime: take the min over all time
+    // layers; all-infinity means no feasible walk.
     let best = INF;
     for (const layer of layers) {
         if (layer[n - 1] < best) best = layer[n - 1];

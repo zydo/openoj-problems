@@ -6,6 +6,9 @@ import java.util.TreeMap;
 class Solution {
 
     public long[][] splitPainting(int[][] segments) {
+        // Difference events per segment: +color at its start, -color at its
+        // end. The mixed sum is piecewise constant and can only change at
+        // these coordinates.
         TreeMap<Long, Long> diff = new TreeMap<>();
         for (int[] seg : segments) {
             long start = seg[0];
@@ -19,7 +22,12 @@ class Solution {
         Long prevKey = null;
         for (Map.Entry<Long, Long> e : diff.entrySet()) {
             if (prevKey != null) {
+                // Between consecutive event coordinates the active set is
+                // fixed, so running is the mixed color on that open interval.
+                // Colors are distinct, so each event genuinely changes the
+                // sum -- emitting at every coordinate is minimal.
                 if (running > 0) {
+                    // skip unpainted gaps: nothing is active
                     result.add(new long[] { prevKey, e.getKey(), running });
                 }
             }

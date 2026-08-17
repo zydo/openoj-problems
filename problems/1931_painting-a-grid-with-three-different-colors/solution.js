@@ -24,6 +24,8 @@ var colorTheGrid = function (m, n) {
     }
 
     const len = states.length;
+    // Two columns may be adjacent exactly when they differ in every row;
+    // precompute that compatibility table once.
     const compat = [];
     for (let i = 0; i < len; i++) {
         const list = [];
@@ -37,12 +39,15 @@ var colorTheGrid = function (m, n) {
         compat.push(list);
     }
 
+    // All ones: the first column can take any valid coloring (this also
+    // makes n=1 fall out with the loop body never running).
     let cur = new Array(len).fill(1);
     for (let step = 0; step < n - 1; step++) {
         const nxt = new Array(len).fill(0);
         for (let i = 0; i < len; i++) {
             const c = cur[i];
             if (c) {
+                // skip zero-count states as a constant-factor saving
                 for (const j of compat[i]) {
                     nxt[j] = (nxt[j] + c) % MOD;
                 }
@@ -50,6 +55,7 @@ var colorTheGrid = function (m, n) {
         }
         cur = nxt;
     }
+    // The last column may end in any state, so sum the whole vector.
     let ans = 0;
     for (const c of cur) ans = (ans + c) % MOD;
     return ans;

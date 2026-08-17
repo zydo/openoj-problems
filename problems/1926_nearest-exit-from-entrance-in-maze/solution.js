@@ -8,12 +8,16 @@ var nearestExit = function (maze, entrance) {
         n = maze[0].length;
     const er = entrance[0],
         ec = entrance[1];
+    // Every move costs one step, so plain BFS from the entrance visits cells
+    // in order of increasing distance; dist doubles as the visited set (-1).
     const dist = Array.from({ length: m }, () => new Array(n).fill(-1));
     dist[er][ec] = 0;
     const q = [[er, ec]];
     let head = 0;
     while (head < q.length) {
         const [i, j] = q[head++];
+        // Test on pop, not push: cleanly skips the entrance itself while
+        // returning the correct distance for any other border cell.
         if (
             (i === 0 || i === m - 1 || j === 0 || j === n - 1) &&
             !(i === er && j === ec)
@@ -36,10 +40,13 @@ var nearestExit = function (maze, entrance) {
                 maze[ni][nj] === "." &&
                 dist[ni][nj] === -1
             ) {
+                // Assigning distance at enqueue time keeps the queue ordered
+                // by distance.
                 dist[ni][nj] = dist[i][j] + 1;
                 q.push([ni, nj]);
             }
         }
     }
+    // Queue drained without dequeuing any exit: no reachable exit exists.
     return -1;
 };

@@ -6,6 +6,8 @@
  */
 var latestDayToCross = function (row, col, cells) {
     const canCross = (floodedCount) => {
+        // Rebuild the grid for this query day: mark the flooded cells as
+        // water, then test a top-to-bottom walk by BFS.
         const grid = new Array(row);
         for (let r = 0; r < row; r++) {
             grid[r] = new Array(col).fill(0);
@@ -18,6 +20,7 @@ var latestDayToCross = function (row, col, cells) {
         for (let r = 0; r < row; r++) {
             seen[r] = new Array(col).fill(false);
         }
+        // Multi-source BFS: every unflooded top-row cell is a start.
         for (let c = 0; c < col; c++) {
             if (grid[0][c] === 0) {
                 queue.push([0, c]);
@@ -27,7 +30,7 @@ var latestDayToCross = function (row, col, cells) {
         let head = 0;
         while (head < queue.length) {
             const [r, c] = queue[head++];
-            if (r === row - 1) return true;
+            if (r === row - 1) return true; // bottom reached: crossing possible
             for (const [dr, dc] of [
                 [1, 0],
                 [-1, 0],
@@ -51,10 +54,12 @@ var latestDayToCross = function (row, col, cells) {
         }
         return false;
     };
+    // Land only floods, never dries, so crossable days form a prefix of
+    // days: binary-search its right endpoint. Day 1 is always crossable.
     let lo = 1;
     let hi = row * col;
     while (lo < hi) {
-        const mid = Math.floor((lo + hi + 1) / 2);
+        const mid = Math.floor((lo + hi + 1) / 2); // upper mid: last feasible
         if (canCross(mid)) {
             lo = mid;
         } else {
