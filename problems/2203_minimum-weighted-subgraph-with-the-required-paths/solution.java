@@ -21,13 +21,17 @@ class Solution {
         }
         for (int[] e : edges) {
             adj[e[0]].add(new long[] { e[1], e[2] });
+            // reverse adjacency: a search from dest on radj yields dist(v, dest)
             radj[e[1]].add(new long[] { e[0], e[2] });
         }
+        // optimal paths from src1 and src2 meet at some node v and share v->dest
         long[] d1 = dijkstra(n, adj, src1);
         long[] d2 = dijkstra(n, adj, src2);
         long[] dd = dijkstra(n, radj, dest);
+        // the shared v->dest segment counts once: independent distances, added
         long best = Long.MAX_VALUE;
         for (int v = 0; v < n; v++) {
+            // skip any v on a missing leg; none can lie on a valid subgraph
             if (
                 dd[v] != Long.MAX_VALUE &&
                 d1[v] != Long.MAX_VALUE &&
@@ -52,7 +56,7 @@ class Solution {
             long[] top = heap.poll();
             long d = top[0];
             int u = (int) top[1];
-            if (d > dist[u]) continue;
+            if (d > dist[u]) continue; // lazy deletion: stale heap entry
             for (long[] e : adj[u]) {
                 int v = (int) e[0];
                 long nd = d + e[1];

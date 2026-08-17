@@ -32,7 +32,7 @@ func dijkstra(n int, adj [][]item, src int) []int64 {
 		top := heap.Pop(h).(item)
 		d, u := top.d, top.u
 		if d > dist[u] {
-			continue
+			continue // lazy deletion: stale heap entry
 		}
 		for _, e := range adj[u] {
 			nd := d + e.d
@@ -51,14 +51,18 @@ func minimumWeight(n int, edges [][]int, src1 int, src2 int, dest int) int64 {
 	for _, e := range edges {
 		u, v, w := e[0], e[1], e[2]
 		adj[u] = append(adj[u], item{int64(w), v})
+		// reverse adjacency: a search from dest on radj yields dist(v, dest)
 		radj[v] = append(radj[v], item{int64(w), u})
 	}
+	// optimal paths from src1 and src2 meet at some node v and share v->dest
 	d1 := dijkstra(n, adj, src1)
 	d2 := dijkstra(n, adj, src2)
 	dd := dijkstra(n, radj, dest)
+	// the shared v->dest segment counts once: independent distances, added
 	const INF = int64(1) << 62
 	best := INF
 	for v := 0; v < n; v++ {
+		// skip any v on a missing leg; none can lie on a valid subgraph
 		if dd[v] < INF && d1[v] < INF && d2[v] < INF {
 			total := d1[v] + d2[v] + dd[v]
 			if total < best {

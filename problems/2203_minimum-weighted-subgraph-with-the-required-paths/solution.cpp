@@ -4,13 +4,17 @@ class Solution {
         vector<vector<pair<int, int>>> adj(n), radj(n);
         for (auto &e : edges) {
             adj[e[0]].push_back({e[1], e[2]});
+            // reverse adjacency: a search from dest on radj yields dist(v, dest)
             radj[e[1]].push_back({e[0], e[2]});
         }
+        // optimal paths from src1 and src2 meet at some node v and share v->dest
         vector<long long> d1 = dijkstra(n, adj, src1);
         vector<long long> d2 = dijkstra(n, adj, src2);
         vector<long long> dd = dijkstra(n, radj, dest);
+        // the shared v->dest segment counts once: independent distances, added
         long long best = LLONG_MAX;
         for (int v = 0; v < n; v++) {
+            // skip any v on a missing leg; none can lie on a valid subgraph
             if (dd[v] < LLONG_MAX && d1[v] < LLONG_MAX && d2[v] < LLONG_MAX) {
                 long long total = d1[v] + d2[v] + dd[v];
                 if (total < best)
@@ -33,7 +37,7 @@ class Solution {
             auto [d, u] = heap.top();
             heap.pop();
             if (d > dist[u])
-                continue;
+                continue; // lazy deletion: stale heap entry
             for (auto &[v, w] : adj[u]) {
                 long long nd = d + w;
                 if (nd < dist[v]) {

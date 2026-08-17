@@ -1,6 +1,7 @@
 use std::cmp::Ordering;
 use std::collections::BinaryHeap;
 
+// wrapper: BinaryHeap (a max-heap) needs Ord, which bare f64 lacks
 #[derive(Clone, Copy, PartialEq)]
 struct OrdF64(f64);
 
@@ -26,12 +27,15 @@ impl Solution {
             total += x as f64;
             heap.push(OrdF64(x as f64));
         }
+        // track the remaining reduction needed instead of re-summing each step
         let mut target = total / 2.0;
         let mut ops = 0;
         while target > 0.0 {
+            // greedy: halving the current maximum removes the most sum per op
             let largest = heap.pop().unwrap().0;
             let half = largest / 2.0;
             target -= half;
+            // the half may still be the max and get halved again
             heap.push(OrdF64(half));
             ops += 1;
         }

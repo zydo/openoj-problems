@@ -16,11 +16,14 @@ func longestRepeating(s string, queryCharacters string, queryIndices []int) []in
 	var build func(node, lo, hi int)
 	var update func(node, lo, hi, pos int, ch byte)
 
+	// recompute a parent's summary from its two children alone
 	pull = func(node int) {
 		l, r := 2*node, 2*node+1
 		segLen[node] = segLen[l] + segLen[r]
 		leftChar[node] = leftChar[l]
 		rightChar[node] = rightChar[r]
+		// prefix spans into the right child only if the left child is one
+		// whole run and the boundary characters agree
 		if pref[l] == segLen[l] && leftChar[l] == leftChar[r] {
 			pref[node] = pref[l] + pref[r]
 		} else {
@@ -31,6 +34,7 @@ func longestRepeating(s string, queryCharacters string, queryIndices []int) []in
 		} else {
 			suf[node] = suf[r]
 		}
+		// a run may straddle the child boundary when the boundary chars agree
 		joined := 0
 		if rightChar[l] == leftChar[r] {
 			joined = suf[l] + pref[r]
@@ -47,6 +51,7 @@ func longestRepeating(s string, queryCharacters string, queryIndices []int) []in
 
 	build = func(node, lo, hi int) {
 		if lo == hi {
+			// a leaf is the trivial summary: a single run of length 1
 			pref[node], suf[node], best[node] = 1, 1, 1
 			segLen[node] = 1
 			leftChar[node] = chars[lo]
@@ -72,6 +77,7 @@ func longestRepeating(s string, queryCharacters string, queryIndices []int) []in
 		} else {
 			update(2*node+1, mid+1, hi, pos, ch)
 		}
+		// recompute the O(log n) nodes on the path back to the root
 		pull(node)
 	}
 
@@ -79,6 +85,7 @@ func longestRepeating(s string, queryCharacters string, queryIndices []int) []in
 	result := make([]int, 0, len(queryIndices))
 	for i, idx := range queryIndices {
 		update(1, 0, n-1, idx, queryCharacters[i])
+		// the root's best is the answer after each point update
 		result = append(result, best[1])
 	}
 	return result

@@ -44,7 +44,7 @@ var minimumWeight = function (n, edges, src1, src2, dest) {
         };
         while (heap.length > 0) {
             const [d, u] = pop();
-            if (d > dist[u]) continue;
+            if (d > dist[u]) continue; // lazy deletion: stale heap entry
             for (const [v, w] of adj[u]) {
                 const nd = d + w;
                 if (nd < dist[v]) {
@@ -60,13 +60,17 @@ var minimumWeight = function (n, edges, src1, src2, dest) {
     const radj = Array.from({ length: n }, () => []);
     for (const [u, v, w] of edges) {
         adj[u].push([v, w]);
+        // reverse adjacency: a search from dest on radj yields dist(v, dest)
         radj[v].push([u, w]);
     }
+    // optimal paths from src1 and src2 meet at some node v and share v->dest
     const d1 = dijkstra(adj, src1);
     const d2 = dijkstra(adj, src2);
     const dd = dijkstra(radj, dest);
+    // the shared v->dest segment counts once: independent distances, added
     let best = Infinity;
     for (let v = 0; v < n; v++) {
+        // nodes unreachable from dest can never lie on a valid subgraph
         if (dd[v] !== Infinity) {
             const total = d1[v] + d2[v] + dd[v];
             if (total < best) best = total;

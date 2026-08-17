@@ -22,12 +22,15 @@ func halveArray(nums []int) int {
 		total += float64(x)
 	}
 	heap.Init(h)
+	// track the remaining reduction needed instead of re-summing each step
 	target := total / 2
 	ops := 0
 	for target > 0 {
+		// greedy: halving the current maximum removes the most sum per op
 		largest := heap.Pop(h).(float64)
 		half := largest / 2
 		target -= half
+		// the half may still be the max and get halved again
 		heap.Push(h, half)
 		ops++
 	}

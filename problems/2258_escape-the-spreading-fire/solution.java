@@ -12,6 +12,8 @@ class Solution {
         int m = grid.length;
         int n = grid[0].length;
 
+        // fire spread is independent of where you walk: one multi-source BFS
+        // gives fire[i][j] = earliest minute fire occupies each cell
         int[][] fire = new int[m][n];
         for (int[] row : fire) {
             Arrays.fill(row, INF);
@@ -46,6 +48,9 @@ class Solution {
             }
         }
 
+        // sentinels first: -1 if even waiting 0 fails; the 1e9 sentinel means
+        // fire can never pin you down. Survivability is monotone in wait, so
+        // binary search the largest survivable wait.
         if (!canReach(grid, fire, 0)) {
             return -1;
         }
@@ -56,6 +61,7 @@ class Solution {
         int lo = 0,
             hi = 1_000_000_000;
         while (lo < hi) {
+            // upper mid: when survivable, lo moves up to mid without stalling
             int mid = lo + (hi - lo + 1) / 2;
             if (canReach(grid, fire, mid)) {
                 lo = mid;
@@ -69,6 +75,7 @@ class Solution {
     private boolean canReach(int[][] grid, int[][] fire, int wait) {
         int m = grid.length;
         int n = grid[0].length;
+        // the start cell must still be fire-free the moment you set out
         if (wait >= fire[0][0]) {
             return false;
         }
@@ -96,12 +103,16 @@ class Solution {
                     !seen[ni][nj]
                 ) {
                     int nt = t + 1;
+                    // the safehouse may tie the fire: reaching it the very
+                    // minute fire does still counts as escaping
                     if (ni == m - 1 && nj == n - 1) {
                         if (nt <= fire[ni][nj]) {
                             seen[ni][nj] = true;
                             dq.add(new int[] { ni, nj, nt });
                         }
                     } else {
+                        // you move, then fire spreads: an ordinary cell is
+                        // safe only if fire arrives strictly later than you
                         if (nt < fire[ni][nj]) {
                             seen[ni][nj] = true;
                             dq.add(new int[] { ni, nj, nt });

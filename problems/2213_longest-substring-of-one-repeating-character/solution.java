@@ -8,6 +8,7 @@ class Solution {
         int n = s.length();
         if (n == 0) return new int[0];
 
+        // per-node summary: uniform prefix/suffix runs, best run, boundary chars
         int[] pref = new int[4 * n];
         int[] suf = new int[4 * n];
         int[] best = new int[4 * n];
@@ -33,6 +34,7 @@ class Solution {
                 queryIndices[i],
                 queryCharacters.charAt(i)
             );
+            // the root's best is the answer after each point update
             result[i] = best[1];
         }
         return result;
@@ -52,6 +54,8 @@ class Solution {
         segLen[node] = segLen[l] + segLen[r];
         leftChar[node] = leftChar[l];
         rightChar[node] = rightChar[r];
+        // prefix spans into the right child only if the left child is one whole
+        // run and the boundary characters agree
         if (pref[l] == segLen[l] && leftChar[l] == leftChar[r]) {
             pref[node] = pref[l] + pref[r];
         } else {
@@ -62,6 +66,7 @@ class Solution {
         } else {
             suf[node] = suf[r];
         }
+        // a run may straddle the child boundary when the boundary chars agree
         int joined = rightChar[l] == leftChar[r] ? suf[l] + pref[r] : 0;
         best[node] = Math.max(best[l], Math.max(best[r], joined));
     }
@@ -79,6 +84,7 @@ class Solution {
         int hi
     ) {
         if (lo == hi) {
+            // a leaf is the trivial summary: a single run of length 1
             pref[node] = suf[node] = best[node] = 1;
             segLen[node] = 1;
             leftChar[node] = rightChar[node] = chars[lo];
@@ -163,6 +169,7 @@ class Solution {
                 ch
             );
         }
+        // recompute the O(log n) nodes on the path back to the root
         pull(pref, suf, best, segLen, leftChar, rightChar, node);
     }
 }

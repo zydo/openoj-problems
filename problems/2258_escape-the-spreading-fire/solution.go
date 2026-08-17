@@ -7,6 +7,8 @@ func maximumMinutes(grid [][]int) int {
 	targetI := m - 1
 	targetJ := n - 1
 
+	// fire spread is independent of where you walk: one multi-source BFS
+	// gives fire[i][j] = earliest minute fire occupies each cell
 	fire := make([][]int, m)
 	for i := 0; i < m; i++ {
 		fire[i] = make([]int, n)
@@ -37,6 +39,7 @@ func maximumMinutes(grid [][]int) int {
 	}
 
 	canReach := func(wait int) bool {
+		// the start cell must still be fire-free the moment you set out
 		if wait >= fire[0][0] {
 			return false
 		}
@@ -58,12 +61,16 @@ func maximumMinutes(grid [][]int) int {
 				nj := j + dj[d]
 				if ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] != 2 && !seen[ni][nj] {
 					nt := t + 1
+					// the safehouse may tie the fire: reaching it the very
+					// minute fire does still counts as escaping
 					if ni == targetI && nj == targetJ {
 						if nt <= fire[ni][nj] {
 							seen[ni][nj] = true
 							dq = append(dq, state{ni, nj, nt})
 						}
 					} else {
+						// you move, then fire spreads: an ordinary cell is
+						// safe only if fire arrives strictly later than you
 						if nt < fire[ni][nj] {
 							seen[ni][nj] = true
 							dq = append(dq, state{ni, nj, nt})
@@ -75,6 +82,9 @@ func maximumMinutes(grid [][]int) int {
 		return false
 	}
 
+	// sentinels first: -1 if even waiting 0 fails; the 1e9 sentinel means
+	// fire can never pin you down. Survivability is monotone in wait, so
+	// binary search the largest survivable wait.
 	if !canReach(0) {
 		return -1
 	}
@@ -84,6 +94,7 @@ func maximumMinutes(grid [][]int) int {
 
 	lo, hi := 0, 1000000000
 	for lo < hi {
+		// upper mid: when survivable, lo moves up to mid without stalling
 		mid := lo + (hi-lo+1)/2
 		if canReach(mid) {
 			lo = mid

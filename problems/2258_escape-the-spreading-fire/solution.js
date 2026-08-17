@@ -15,6 +15,8 @@ var maximumMinutes = function (grid) {
     const targetI = m - 1;
     const targetJ = n - 1;
 
+    // fire spread is independent of where you walk: one multi-source BFS
+    // gives fire[i][j] = earliest minute fire occupies each cell
     const fire = Array.from({ length: m }, () => new Array(n).fill(INF));
     const queue = [];
     for (let i = 0; i < m; i++) {
@@ -45,6 +47,7 @@ var maximumMinutes = function (grid) {
     }
 
     const canReach = (wait) => {
+        // the start cell must still be fire-free the moment you set out
         if (wait >= fire[0][0]) {
             return false;
         }
@@ -68,12 +71,16 @@ var maximumMinutes = function (grid) {
                     !seen[ni][nj]
                 ) {
                     const nt = t + 1;
+                    // the safehouse may tie the fire: reaching it the very
+                    // minute fire does still counts as escaping
                     if (ni === targetI && nj === targetJ) {
                         if (nt <= fire[ni][nj]) {
                             seen[ni][nj] = true;
                             dq.push([ni, nj, nt]);
                         }
                     } else {
+                        // you move, then fire spreads: an ordinary cell is
+                        // safe only if fire arrives strictly later than you
                         if (nt < fire[ni][nj]) {
                             seen[ni][nj] = true;
                             dq.push([ni, nj, nt]);
@@ -85,6 +92,9 @@ var maximumMinutes = function (grid) {
         return false;
     };
 
+    // sentinels first: -1 if even waiting 0 fails; the 1e9 sentinel means
+    // fire can never pin you down. Survivability is monotone in wait, so
+    // binary search the largest survivable wait.
     if (!canReach(0)) {
         return -1;
     }
@@ -95,6 +105,7 @@ var maximumMinutes = function (grid) {
     let lo = 0;
     let hi = 1000000000;
     while (lo < hi) {
+        // upper mid: when survivable, lo moves up to mid without stalling
         const mid = Math.floor((lo + hi + 1) / 2);
         if (canReach(mid)) {
             lo = mid;

@@ -6,6 +6,7 @@ function longestRepeating(
     const n = s.length;
     if (n === 0) return [];
 
+    // per-node summary: uniform prefix/suffix runs, best run, boundary chars
     const pref: number[] = new Array(4 * n).fill(0);
     const suf: number[] = new Array(4 * n).fill(0);
     const best: number[] = new Array(4 * n).fill(0);
@@ -20,6 +21,8 @@ function longestRepeating(
         segLen[node] = segLen[l] + segLen[r];
         leftChar[node] = leftChar[l];
         rightChar[node] = rightChar[r];
+        // prefix spans into the right child only if the left child is one
+        // whole run and the boundary characters agree
         if (pref[l] === segLen[l] && leftChar[l] === leftChar[r]) {
             pref[node] = pref[l] + pref[r];
         } else {
@@ -30,12 +33,14 @@ function longestRepeating(
         } else {
             suf[node] = suf[r];
         }
+        // a run may straddle the child boundary when the boundary chars agree
         const joined = rightChar[l] === leftChar[r] ? suf[l] + pref[r] : 0;
         best[node] = Math.max(best[l], best[r], joined);
     };
 
     const build = (node: number, lo: number, hi: number): void => {
         if (lo === hi) {
+            // a leaf is the trivial summary: a single run of length 1
             pref[node] = suf[node] = best[node] = 1;
             segLen[node] = 1;
             leftChar[node] = rightChar[node] = chars[lo];
@@ -65,6 +70,7 @@ function longestRepeating(
         } else {
             update(2 * node + 1, mid + 1, hi, pos, ch);
         }
+        // recompute the O(log n) nodes on the path back to the root
         pull(node);
     };
 
@@ -72,6 +78,7 @@ function longestRepeating(
     const result: number[] = [];
     for (let i = 0; i < queryIndices.length; i++) {
         update(1, 0, n - 1, queryIndices[i], queryCharacters[i]);
+        // the root's best is the answer after each point update
         result.push(best[1]);
     }
     return result;
