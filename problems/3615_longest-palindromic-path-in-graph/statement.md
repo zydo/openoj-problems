@@ -25,6 +25,8 @@ following the path 0 -> 1 -> 2 forming string "aba". This is a valid palindrome
 of length 3.
 ```
 
+![The path 0 - 1 - 2 labeled a, b, a spells the palindrome "aba" of length 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,6 +35,8 @@ Output: 1
 Explanation: No path with more than one node forms a palindrome. The best option
 is any single node, giving a palindrome of length 1.
 ```
+
+![The star centered on node 0 (a) with leaves b and c admits no palindromic path longer than 1.](figures/example-2.svg)
 
 ### Example 3
 
@@ -43,6 +47,8 @@ Explanation: The longest palindromic path is from node 0 to node 1, following
 the path 0 -> 3 -> 1, forming string "bcb". This is a valid palindrome of length
 3.
 ```
+
+![The path 0 -> 3 -> 1 spells "bcb", bypassing node 2 (a), for a palindrome of length 3.](figures/example-3.svg)
 
 ### Constraints
 

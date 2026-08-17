@@ -33,6 +33,8 @@ Perform a cut on the horizontal line 1 on 2 x 1 subgrid with cost 3.
 The total cost is 5 + 1 + 1 + 3 + 3 = 13.
 ```
 
+![The 3x2 cake fully cut into 1x1 pieces: vertical 5 first, then each horizontal line paid twice, 5 + 2*1 + 2*3 = 13.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

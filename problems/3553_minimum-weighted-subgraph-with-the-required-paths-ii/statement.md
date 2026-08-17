@@ -27,6 +27,8 @@ answer[0]: The minimum subtree that connects src1 = 2, src2 = 3 and dest = 4 use
 answer[1]: The minimum subtree that connects src1 = 0, src2 = 2 and dest = 5 uses the edges of weights 2, 3 and 6, for a total of 11.
 ```
 
+![The same tree twice: query [2, 3, 4] keeps edges of weight 3 + 5 + 4 = 12, and query [0, 2, 5] keeps edges of weight 2 + 3 + 6 = 11.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Output: [15]
 Explanation:
 The tree is a path 1 - 0 - 2. The subtree connecting src1 = 0, src2 = 1 and dest = 2 must contain both edges, for a total weight of 8 + 7 = 15.
 ```
+
+![The path 1 - 0 - 2 must keep both edges of weight 8 and 7, for a total of 15.](figures/example-2.svg)
 
 ### Constraints
 

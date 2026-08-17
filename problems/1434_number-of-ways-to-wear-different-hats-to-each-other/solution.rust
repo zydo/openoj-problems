@@ -9,6 +9,8 @@ impl Solution {
                 h2p[h as usize].push(p);
             }
         }
+        // dp[mask]: ways to hat exactly the people in mask using hats so far
+        // (<=10 people -> 1024 states; hats fold into the loop dimension)
         let mut dp = vec![0i64; full + 1];
         dp[0] = 1;
         for h in 1..=40usize {
@@ -16,6 +18,8 @@ impl Solution {
             if people.is_empty() {
                 continue;
             }
+            // copy encodes leaving this hat unused; updating into the copy
+            // (reading old dp) also ensures no hat is worn by two people
             let mut ndp = dp.clone();
             for mask in 0..=full {
                 let v = dp[mask];
@@ -32,6 +36,7 @@ impl Solution {
             }
             dp = ndp;
         }
+        // full mask: every person hatted; unused hats cost nothing
         dp[full] as i32
     }
 }

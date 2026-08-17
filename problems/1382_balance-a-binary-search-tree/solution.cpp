@@ -1,6 +1,8 @@
 class Solution {
   public:
     TreeNode *balanceBST(TreeNode *root) {
+        // phase 1: iterative in-order walk flattens the BST into sorted
+        // values (explicit stack dodges recursion limits on chain inputs)
         vector<int> values;
         vector<TreeNode *> stack;
         TreeNode *current = root;
@@ -18,6 +20,8 @@ class Solution {
     }
 
   private:
+    // midpoint as root leaves at most half the range per side, so subtree
+    // depths differ by <= 1 (build recursion is O(log n) deep)
     TreeNode *build(vector<int> &values, int lo, int hi) {
         if (lo > hi) {
             return nullptr;

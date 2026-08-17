@@ -9,6 +9,8 @@ impl Solution {
             adjacency[b].push(a);
         }
 
+        // explicit-stack traversal from the root records parents plus a
+        // discovery order — no recursion, safe for deep trees
         let mut parent = vec![0usize; n];
         let mut order: Vec<usize> = Vec::with_capacity(n);
         let mut seen = vec![false; n];
@@ -25,6 +27,9 @@ impl Solution {
             }
         }
 
+        // reversed discovery order finishes every subtree before its parent,
+        // so has[u] is true exactly when u or a descendant holds an apple;
+        // each such used edge is walked down and back — hence the +2
         let mut has = has_apple;
         let mut time = 0i32;
         for &u in order.iter().rev() {
@@ -33,6 +38,7 @@ impl Solution {
             }
             if has[u] {
                 time += 2;
+                // the parent must now be visited too — push the need upward
                 has[parent[u]] = true;
             }
         }

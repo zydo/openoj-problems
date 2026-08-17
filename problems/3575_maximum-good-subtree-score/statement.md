@@ -24,6 +24,8 @@ Explanation: The subtree rooted at node 0 includes nodes (0, 1). The subset
 The maxScore array is [5, 3], so the sum is 8.
 ```
 
+![The two-node tree where the good subset {2, 3} gives maxScore[0] = 5 and maxScore[1] = 3, summing to 8.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -32,6 +34,8 @@ Output: 15
 Explanation: The maxScore array is [8, 5, 2], so the sum is 15.
 ```
 
+![Node 0 with values 1, 5 and 2 below it; maxScore = [8, 5, 2] since every digit is distinct, summing to 15.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -39,6 +43,8 @@ Input: vals = [34,1,2], par = [-1,0,1]
 Output: 42
 Explanation: The maxScore array is [37, 3, 2], so the sum is 42.
 ```
+
+![The chain 34 - 1 - 2 where maxScore = [37, 3, 2] because no digit repeats, summing to 42.](figures/example-3.svg)
 
 ### Example 4
 

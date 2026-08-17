@@ -3,6 +3,8 @@
  * @return {TreeNode}
  */
 var balanceBST = function (root) {
+    // phase 1: iterative in-order walk flattens the BST into sorted
+    // values (explicit stack dodges recursion limits on chain inputs)
     const values = [];
     const stack = [];
     let current = root;
@@ -16,6 +18,8 @@ var balanceBST = function (root) {
         current = current.right;
     }
 
+    // midpoint as root leaves at most half the range per side, so subtree
+    // depths differ by <= 1 (build recursion is O(log n) deep)
     const build = (lo, hi) => {
         if (lo > hi) {
             return null;

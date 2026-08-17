@@ -7,9 +7,12 @@ func canArrange(arr []int, k int) bool {
 		}
 		freq[r]++
 	}
+	// the zero class must pair within itself -> even count
 	if freq[0]%2 != 0 {
 		return false
 	}
+	// complementary classes r and k-r must match exactly (any pairing
+	// inside matched classes works, so counts alone decide)
 	for i := 1; i <= k/2; i++ {
 		if freq[i] != freq[k-i] {
 			return false

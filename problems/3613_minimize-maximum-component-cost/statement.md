@@ -26,6 +26,8 @@ Remove the edge between nodes 3 and 4 (weight 6).
 The resulting components have costs of 0 and 4, so the overall maximum cost is 4.
 ```
 
+![Removing the weight-6 edge between nodes 3 and 4 leaves components of cost 4 and 0, so the maximum cost is 4.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Explanation:
 No edge can be removed, since allowing only one component (k = 1) requires the graph to stay fully connected.
 That single component's cost equals its largest edge weight, which is 5.
 ```
+
+![The four-node chain of weight-5 edges must stay whole for k = 1, so its cost is 5.](figures/example-2.svg)
 
 ### Constraints
 

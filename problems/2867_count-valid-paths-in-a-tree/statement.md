@@ -32,6 +32,8 @@ Explanation: The pairs with exactly one prime number on the path between them ar
 - (2, 4) since the path from 2 to 4 contains prime number 2.
 ```
 
+![The primes 2, 3 and 5 are shaded; exactly one prime lies on the paths (1,2), (1,3), (1,4) and (2,4).](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -45,6 +47,8 @@ Explanation: The pairs with exactly one prime number on the path between them ar
 - (2, 4) since the path from 2 to 4 contains prime number 2.
 - (3, 6) since the path from 3 to 6 contains prime number 3.
 ```
+
+![Six pairs, among them (1,6) through the prime 3 and (2,4) through the prime 2, have exactly one prime on their path.](figures/example-2.svg)
 
 ### Constraints
 

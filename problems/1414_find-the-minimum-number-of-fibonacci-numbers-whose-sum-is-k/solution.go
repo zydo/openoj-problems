@@ -3,6 +3,9 @@ func findMinFibonacciNumbers(k int) int {
 	for fibs[len(fibs)-1]+fibs[len(fibs)-2] <= k {
 		fibs = append(fibs, fibs[len(fibs)-1]+fibs[len(fibs)-2])
 	}
+	// Zeckendorf: greedily taking the largest F <= k never lands on two
+	// consecutive Fibonacci numbers, so this builds the unique minimal
+	// (non-consecutive) representation term by term
 	count := 0
 	remaining := k
 	index := len(fibs) - 1

@@ -34,6 +34,8 @@ The graph has two possible routes from node 0 to node 3:
 There are no other valid paths. Hence, the maximum among all valid path-scores is 3.
 ```
 
+![Both routes from 0 to 3: the left one costs 5 + 10 = 15 > k, while 0 -> 2 -> 3 costs 7 and scores 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -47,6 +49,8 @@ Consider the remaining routes from 0 to 4:
   Path 0 -> 2 -> 4: total cost = 6 + 6 = 12 <= k, valid; score = min(6, 6) = 6.
 Among the two valid paths, their scores are 5 and 6. Therefore, the answer is 6.
 ```
+
+![Node 3 is offline, so the best valid route is 0 -> 2 -> 4, costing 6 + 6 = 12 within k = 12 and scoring 6.](figures/example-2.svg)
 
 ### Constraints
 

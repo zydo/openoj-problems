@@ -38,6 +38,8 @@ In the second query, there is no walk between nodes 3 and 4, so the answer is
 -1.
 ```
 
+![The walk 0-1-2-1-3 uses weights 7, 1, 1, 7, costing 1; node 4 is disconnected so that query is -1.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -46,6 +48,8 @@ Output: [0]
 Explanation: To achieve the cost of 0, move on the edges 1->2 (weight 1),
 2->1 (weight 6), 1->2 (weight 1).
 ```
+
+![Walking 1-2-1-2 crosses the two parallel 1-2 edges of weights 1 and 6, and 1 AND 6 AND 1 = 0.](figures/example-2.svg)
 
 ### Constraints
 

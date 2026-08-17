@@ -32,6 +32,8 @@ It can be shown that no other valid split has more than 2 connected
 components.
 ```
 
+![Cutting the edge between nodes 1 and 2 leaves components summing to 6 and 12, both divisible by k = 6.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -47,6 +49,8 @@ connecting node 0 with 1. The resulting split is valid because:
 It can be shown that no other valid split has more than 3 connected
 components.
 ```
+
+![Cutting the edges 0-1 and 0-2 leaves three components with sums 3, 6 and 9, all divisible by k = 3.](figures/example-2.svg)
 
 ### Constraints
 

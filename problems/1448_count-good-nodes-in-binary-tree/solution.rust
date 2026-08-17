@@ -14,9 +14,12 @@ impl Solution {
     }
 }
 
+// max_so_far is the largest value on the current root path
 fn dfs(node: &Box<TreeNode>, max_so_far: i32) -> i32 {
     let mut count = 0;
     let mut current_max = max_so_far;
+    // non-strict: a value equal to the path max is still good; raising
+    // current_max here means children see the true maximum of their path
     if node.val >= max_so_far {
         count = 1;
         current_max = node.val;

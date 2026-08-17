@@ -13,6 +13,8 @@ class Solution {
             adjacency.get(edge[1]).add(edge[0]);
         }
 
+        // explicit-stack traversal from the root records parents plus a
+        // discovery order — no recursion, safe for deep trees
         int[] parent = new int[n];
         java.util.Arrays.fill(parent, -1);
         int[] order = new int[n];
@@ -38,6 +40,9 @@ class Solution {
         for (int i = 0; i < n; i++) {
             has[i] = hasApple[i];
         }
+        // reversed discovery order finishes every subtree before its parent,
+        // so has[u] is true exactly when u or a descendant holds an apple;
+        // each such used edge is walked down and back — hence the +2
         int time = 0;
         for (int i = orderSize - 1; i >= 0; i--) {
             int u = order[i];
@@ -46,6 +51,7 @@ class Solution {
             }
             if (has[u]) {
                 time += 2;
+                // the parent must now be visited too — push the need upward
                 has[parent[u]] = true;
             }
         }

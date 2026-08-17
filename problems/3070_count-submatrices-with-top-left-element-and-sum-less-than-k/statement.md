@@ -15,6 +15,8 @@ Output: 4
 Explanation: There are only 4 submatrices, shown in the image above, that contain the top-left element of grid, and have a sum less than or equal to 18.
 ```
 
+![The four qualifying submatrices, of sizes 1x1, 1x2, 1x3 and 2x1, with sums 7, 13, 16 and 13.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -22,6 +24,8 @@ Input: grid = [[7,2,9],[1,5,0],[2,6,6]], k = 20
 Output: 6
 Explanation: There are only 6 submatrices, shown in the image above, that contain the top-left element of grid, and have a sum less than or equal to 20.
 ```
+
+![The six qualifying submatrices, of sizes 1x1 up to 3x1, with sums 7, 9, 18, 8, 15 and 10.](figures/example-2.svg)
 
 ### Constraints
 

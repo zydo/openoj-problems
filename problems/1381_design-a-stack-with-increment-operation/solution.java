@@ -1,6 +1,8 @@
 class CustomStack {
 
     private final int[] values;
+    // pending[i]: increment owed by every element at depth <= i,
+    // applied lazily when that element is popped
     private final int[] pending;
     private int size;
 
@@ -24,6 +26,8 @@ class CustomStack {
         }
         size--;
         int increment = pending[size];
+        // increments always target a prefix, so the popped element absorbed
+        // everything its depth owes — pass that down to the new deepest slot
         if (size > 0) {
             pending[size - 1] += increment;
         }
@@ -31,6 +35,7 @@ class CustomStack {
     }
 
     public void increment(int k, int val) {
+        // one write at the deepest slot the increment reaches; no O(k) walk
         int limit = Math.min(k, size);
         if (limit > 0) {
             pending[limit - 1] += val;

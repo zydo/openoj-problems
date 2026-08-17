@@ -10,6 +10,9 @@ class Solution {
         while (fibs.get(fibs.size() - 1) + fibs.get(fibs.size() - 2) <= k) {
             fibs.add(fibs.get(fibs.size() - 1) + fibs.get(fibs.size() - 2));
         }
+        // Zeckendorf: greedily taking the largest F <= k never lands on two
+        // consecutive Fibonacci numbers, so this builds the unique minimal
+        // (non-consecutive) representation term by term
         int count = 0;
         long remaining = k;
         int index = fibs.size() - 1;

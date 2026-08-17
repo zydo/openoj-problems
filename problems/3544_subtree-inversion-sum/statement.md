@@ -22,6 +22,8 @@ Explanation: Apply inversion operations at nodes 0, 3, 4 and 6. The final nums
 array is [-4, 8, 6, 3, 7, 2, 5], and the total sum is 27.
 ```
 
+![The tree with inverted nodes 0, 3, 4 and 6 filled; each node shows its value before and after, and the sum becomes 27.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,6 +32,8 @@ Output: 9
 Explanation: Apply the inversion operation at node 4. The final nums array
 becomes [-1, 3, -2, 4, 5], and the total sum is 9.
 ```
+
+![A path of five nodes where only node 4 is inverted, flipping -5 to 5 for a total sum of 9.](figures/example-2.svg)
 
 ### Example 3
 

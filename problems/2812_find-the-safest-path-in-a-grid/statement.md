@@ -31,6 +31,8 @@ Output: 0
 Explanation: All paths from (0, 0) to (n - 1, n - 1) go through the thieves in cells (0, 0) and (n - 1, n - 1).
 ```
 
+![The start and the destination corners are themselves thieves, so every path has safeness factor 0.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -40,6 +42,8 @@ Explanation: The path depicted in the picture above has a safeness factor of 2 s
 - The closest cell of the path to the thief at cell (0, 2) is cell (0, 0). The distance between them is | 0 - 0 | + | 0 - 2 | = 2.
 It can be shown that there are no other paths with a higher safeness factor.
 ```
+
+![The path down the left column and across the bottom keeps every cell at manhattan distance 2 from the thief at (0, 2).](figures/example-2.svg)
 
 ### Example 3
 
@@ -51,6 +55,8 @@ Explanation: The path depicted in the picture above has a safeness factor of 2 s
 - The closest cell of the path to the thief at cell (3, 0) is cell (3, 2). The distance between them is | 3 - 3 | + | 0 - 2 | = 2.
 It can be shown that there are no other paths with a higher safeness factor.
 ```
+
+![The staircase path from (0, 0) to (3, 3) stays exactly 2 cells away from both thieves.](figures/example-3.svg)
 
 ### Constraints
 

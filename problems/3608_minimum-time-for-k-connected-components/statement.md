@@ -29,6 +29,8 @@ At time = 1 or 2, the graph remains unchanged.
 At time = 3, edge [0, 1] is removed, resulting in k = 2 connected components {0}, {1}. Thus, the answer is 3.
 ```
 
+![A single edge of time 3 joins nodes 0 and 1; removing it at t = 3 leaves the two required components.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -39,6 +41,8 @@ At time = 2, edge [0, 1] is removed, resulting in two connected components {0}, 
 At time = 4, edge [1, 2] is removed, resulting in k = 3 connected components {0}, {1}, {2}. Thus, the answer is 4.
 ```
 
+![Node 1 joins nodes 0 and 2 with edges of time 2 and 4; both are gone by t = 4, leaving three singletons.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -46,6 +50,8 @@ Input: n = 3, edges = [[0,2,5]], k = 2
 Output: 0
 Explanation: Since there are already k = 2 disconnected components {1}, {0, 2}, no edge removal is needed. Thus, the answer is 0.
 ```
+
+![Node 1 is already isolated from the pair {0, 2}, so k = 2 components exist at t = 0 and the answer is 0.](figures/example-3.svg)
 
 ### Constraints
 

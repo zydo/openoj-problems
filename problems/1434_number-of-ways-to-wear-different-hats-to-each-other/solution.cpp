@@ -10,6 +10,8 @@ class Solution {
                 h2p[h].push_back(p);
             }
         }
+        // dp[mask]: ways to hat exactly the people in mask using hats so far
+        // (<=10 people -> 1024 states; hats fold into the loop dimension)
         vector<long long> dp(full + 1, 0);
         dp[0] = 1;
         for (int h = 1; h <= 40; h++) {
@@ -17,6 +19,8 @@ class Solution {
             if (people.empty()) {
                 continue;
             }
+            // copy encodes leaving this hat unused; updating into the copy
+            // (reading old dp) also ensures no hat is worn by two people
             vector<long long> ndp = dp;
             for (int mask = 0; mask <= full; mask++) {
                 long long v = dp[mask];
@@ -33,6 +37,7 @@ class Solution {
             }
             dp = move(ndp);
         }
+        // full mask: every person hatted; unused hats cost nothing
         return (int)dp[full];
     }
 };

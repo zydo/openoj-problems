@@ -27,6 +27,8 @@ The total price sum of all trips is 6 + 7 + 10 = 23.
 It can be proven that 23 is the minimum answer that we can achieve.
 ```
 
+![Halving the pairwise non-adjacent nodes 0, 2 and 3 brings the three trips' costs to 6 + 7 + 10 = 23.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -36,6 +38,8 @@ Explanation:
 For the 1st trip, we choose path [0]. The price sum of that path is 1.
 The total price sum of all trips is 1. It can be proven that 1 is the minimum answer that we can achieve.
 ```
+
+![The single trip never leaves node 0, so halving node 0 alone makes the total 1.](figures/example-2.svg)
 
 ### Constraints
 

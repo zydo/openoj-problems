@@ -34,6 +34,8 @@ For node 2: it is already possible to reach any other node starting from node 2.
 For node 3: after reversing the edges [1,3] and [2,1], it is possible to reach any other node starting from node 3. So answer[3] = 2.
 ```
 
+![The directed tree 0 <- 2 -> 1 -> 3 needs 1, 1, 0 and 2 reversals when starting from nodes 0, 1, 2 and 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -44,6 +46,8 @@ For node 0: after reversing the edges [2,0] and [1,2], it is possible to reach a
 For node 1: it is already possible to reach any other node starting from node 1. So answer[1] = 0.
 For node 2: after reversing the edge [1,2], it is possible to reach any other node starting from node 2. So answer[2] = 1.
 ```
+
+![In the chain 1 -> 2 -> 0 only node 1 can already reach everywhere; nodes 0 and 2 need 2 and 1 reversals.](figures/example-2.svg)
 
 ### Constraints
 

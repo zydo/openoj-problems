@@ -16,6 +16,8 @@ class Solution {
                 h2p.get(h).add(p);
             }
         }
+        // dp[mask]: ways to hat exactly the people in mask using hats so far
+        // (<=10 people -> 1024 states; hats fold into the loop dimension)
         long[] dp = new long[full + 1];
         dp[0] = 1;
         for (int h = 1; h <= 40; h++) {
@@ -23,6 +25,8 @@ class Solution {
             if (people.isEmpty()) {
                 continue;
             }
+            // copy encodes leaving this hat unused; updating into the copy
+            // (reading old dp) also ensures no hat is worn by two people
             long[] ndp = dp.clone();
             for (int mask = 0; mask <= full; mask++) {
                 long v = dp[mask];
@@ -39,6 +43,7 @@ class Solution {
             }
             dp = ndp;
         }
+        // full mask: every person hatted; unused hats cost nothing
         return (int) dp[full];
     }
 }

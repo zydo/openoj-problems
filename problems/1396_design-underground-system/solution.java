@@ -13,6 +13,8 @@ class UndergroundSystem {
     }
 
     public void checkOut(int id, String stationName, int t) {
+        // the trip collapses to one duration folded into a per-pair sum+count;
+        // consuming the check-in frees the id to travel again immediately
         String[] start = checkins.remove(id);
         long duration = t - Long.parseLong(start[1]);
         String key = start[0] + "->" + stationName;
@@ -22,6 +24,7 @@ class UndergroundSystem {
     }
 
     public double getAverageTime(String startStation, String endStation) {
+        // no durations are ever stored — just divide the running totals
         long[] bucket = totals.get(startStation + "->" + endStation);
         return (double) bucket[0] / bucket[1];
     }

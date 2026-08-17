@@ -28,6 +28,8 @@ Explanation:
 - Starting from node 3, we visit the nodes 3 -> 0 -> 1 -> 2 -> 0. The number of different nodes we visit is 4.
 ```
 
+![Nodes 0, 1, 2 form a directed 3-cycle (answer 3 each); node 3 points into the cycle so it visits 4 nodes.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Input: edges = [1,2,3,4,0]
 Output: [5,5,5,5,5]
 Explanation: Starting from any node we can visit every node in the graph in the process.
 ```
+
+![The graph is a single directed 5-cycle, so every starting node visits all 5 nodes.](figures/example-2.svg)
 
 ### Constraints
 

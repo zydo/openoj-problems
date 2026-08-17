@@ -7,6 +7,8 @@ class Solution {
             adjacency[edge[1]].push_back(edge[0]);
         }
 
+        // explicit-stack traversal from the root records parents plus a
+        // discovery order — no recursion, safe for deep trees
         vector<int> parent(n, -1);
         vector<int> order;
         order.reserve(n);
@@ -27,6 +29,9 @@ class Solution {
             }
         }
 
+        // reversed discovery order finishes every subtree before its parent,
+        // so has[u] is true exactly when u or a descendant holds an apple;
+        // each such used edge is walked down and back — hence the +2
         vector<bool> has(hasApple.begin(), hasApple.end());
         int time = 0;
         for (auto it = order.rbegin(); it != order.rend(); ++it) {
@@ -36,6 +41,7 @@ class Solution {
             }
             if (has[u]) {
                 time += 2;
+                // the parent must now be visited too — push the need upward
                 has[parent[u]] = true;
             }
         }

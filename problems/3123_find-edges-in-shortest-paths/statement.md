@@ -27,6 +27,8 @@ Explanation: The following are all the shortest paths between nodes 0 and 5:
 - The path 0 -> 2 -> 3 -> 1 -> 5: the sum of weights is 1 + 1 + 2 + 1 = 5.
 ```
 
+![Six edges lie on one of the three shortest 0-to-5 paths of total weight 5; edges 1-4 and 4-5 do not.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Output: [true,false,false,true]
 Explanation: There is one shortest path between nodes 0 and 3, which is the
 path 0 -> 2 -> 3 with the sum of weights 1 + 2 = 3.
 ```
+
+![The single shortest path 0-2-3 of total weight 3; only its two edges are true.](figures/example-2.svg)
 
 ### Constraints
 

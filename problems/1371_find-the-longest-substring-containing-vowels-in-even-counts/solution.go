@@ -9,11 +9,14 @@ func findTheLongestSubstring(s string) int {
 	for i := range first {
 		first[i] = -2
 	}
+	// empty prefix already has even counts, so a whole-prefix window qualifies
 	first[0] = -1
 	mask := 0
 	best := 0
 	for i := 0; i < len(s); i++ {
 		mask ^= bit[s[i]-'a']
+		// equal masks at two indices => all vowel counts even between them;
+		// keep only the first occurrence of each mask (earliest maximizes length)
 		if first[mask] != -2 {
 			if i-first[mask] > best {
 				best = i - first[mask]

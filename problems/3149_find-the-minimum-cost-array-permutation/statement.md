@@ -20,6 +20,8 @@ Output: [0,1,2]
 Explanation: The lexicographically smallest permutation with minimum cost is [0,1,2]. The cost of this permutation is |0 - 0| + |1 - 2| + |2 - 1| = 2.
 ```
 
+![Each perm[i] pairs cyclically with nums[perm[i+1]], giving score 0 + 1 + 1 = 2 for perm = [0,1,2].](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -27,6 +29,8 @@ Input: nums = [0,2,1]
 Output: [0,2,1]
 Explanation: The lexicographically smallest permutation with minimum cost is [0,2,1]. The cost of this permutation is |0 - 1| + |2 - 2| + |1 - 0| = 2.
 ```
+
+![The optimal pairing swaps positions 1 and 2, giving score 1 + 0 + 1 = 2 for perm = [0,2,1].](figures/example-2.svg)
 
 ### Constraints
 

@@ -36,6 +36,8 @@ Output: [2,17,9,15,10]
 Explanation: No collision occurs in this example, since all robots are moving in the same direction. So, the health of the robots in order from the first robot is returned, [2, 17, 9, 15, 10].
 ```
 
+![All five robots move right, so nobody ever meets another robot and every health is unchanged.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -44,6 +46,8 @@ Output: [14]
 Explanation: There are 2 collisions in this example. Firstly, robot 1 and robot 2 will collide, and since both have the same health, they will be removed from the line. Next, robot 3 and robot 4 will collide and since robot 4's health is smaller, it gets removed, and robot 3's health becomes 15 - 1 = 14. Only robot 3 remains, so we return [14].
 ```
 
+![Both collisions happen at position 4: the equal pair 10/10 removes both robots, and robot 3 survives robot 4 with health 14.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -51,6 +55,8 @@ Input: positions = [1,2,5,6], healths = [10,10,11,11], directions = "RLRL"
 Output: []
 Explanation: Robot 1 and robot 2 will collide and since both have the same health, they are both removed. Robot 3 and 4 will collide and since both have the same health, they are both removed. So, we return an empty array, [].
 ```
+
+![Each collision is between equal-health robots, so all four are removed and the output is empty.](figures/example-3.svg)
 
 ### Constraints
 

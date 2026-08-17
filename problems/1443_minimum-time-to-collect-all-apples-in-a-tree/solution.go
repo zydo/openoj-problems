@@ -6,6 +6,8 @@ func minTime(n int, edges [][]int, hasApple []bool) int {
 		adjacency[b] = append(adjacency[b], a)
 	}
 
+	// explicit-stack traversal from the root records parents plus a
+	// discovery order — no recursion, safe for deep trees
 	parent := make([]int, n)
 	for i := range parent {
 		parent[i] = -1
@@ -27,6 +29,9 @@ func minTime(n int, edges [][]int, hasApple []bool) int {
 		}
 	}
 
+	// reversed discovery order finishes every subtree before its parent,
+	// so has[u] is true exactly when u or a descendant holds an apple;
+	// each such used edge is walked down and back — hence the +2
 	has := make([]bool, n)
 	copy(has, hasApple)
 	time := 0
@@ -37,6 +42,7 @@ func minTime(n int, edges [][]int, hasApple []bool) int {
 		}
 		if has[u] {
 			time += 2
+			// the parent must now be visited too — push the need upward
 			has[parent[u]] = true
 		}
 	}

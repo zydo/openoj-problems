@@ -1,4 +1,6 @@
 func balanceBST(root *TreeNode) *TreeNode {
+	// phase 1: iterative in-order walk flattens the BST into sorted
+	// values (explicit stack dodges recursion limits on chain inputs)
 	values := []int{}
 	stack := []*TreeNode{}
 	current := root
@@ -13,6 +15,8 @@ func balanceBST(root *TreeNode) *TreeNode {
 		current = current.Right
 	}
 
+	// midpoint as root leaves at most half the range per side, so subtree
+	// depths differ by <= 1 (build recursion is O(log n) deep)
 	var build func(lo, hi int) *TreeNode
 	build = func(lo, hi int) *TreeNode {
 		if lo > hi {

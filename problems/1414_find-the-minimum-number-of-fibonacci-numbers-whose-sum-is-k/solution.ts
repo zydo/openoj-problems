@@ -3,6 +3,9 @@ function findMinFibonacciNumbers(k: number): number {
     while (fibs[fibs.length - 1] + fibs[fibs.length - 2] <= k) {
         fibs.push(fibs[fibs.length - 1] + fibs[fibs.length - 2]);
     }
+    // Zeckendorf: greedily taking the largest F <= k never lands on two
+    // consecutive Fibonacci numbers, so this builds the unique minimal
+    // (non-consecutive) representation term by term
     let count = 0;
     let remaining = k;
     let index = fibs.length - 1;

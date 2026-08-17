@@ -5,6 +5,8 @@ function minTime(n: number, edges: number[][], hasApple: boolean[]): number {
         adjacency[b].push(a);
     }
 
+    // explicit-stack traversal from the root records parents plus a
+    // discovery order — no recursion, safe for deep trees
     const parent: number[] = new Array(n).fill(-1);
     const order: number[] = [];
     const seen: boolean[] = new Array(n).fill(false);
@@ -22,6 +24,9 @@ function minTime(n: number, edges: number[][], hasApple: boolean[]): number {
         }
     }
 
+    // reversed discovery order finishes every subtree before its parent,
+    // so has[u] is true exactly when u or a descendant holds an apple;
+    // each such used edge is walked down and back — hence the +2
     const has: boolean[] = hasApple.map(Boolean);
     let time = 0;
     for (let i = order.length - 1; i >= 0; i--) {
@@ -31,6 +36,7 @@ function minTime(n: number, edges: number[][], hasApple: boolean[]): number {
         }
         if (has[u]) {
             time += 2;
+            // the parent must now be visited too — push the need upward
             has[parent[u]] = true;
         }
     }
