@@ -11,8 +11,10 @@ rectangle in the histogram.
 ```text
 Input: heights = [2,1,5,6,2,3]
 Output: 10
-Explanation: The largest rectangle has height 2 and spans the bars of heights 5 and 6, for an area of 10.
+Explanation: The largest rectangle has height 5 and spans two bars, for an area of 10.
 ```
+
+![Histogram of the six bars with the largest rectangle of area 10 highlighted.](figures/example-1.svg)
 
 ### Example 2
 
@@ -20,6 +22,8 @@ Explanation: The largest rectangle has height 2 and spans the bars of heights 5 
 Input: heights = [2,4]
 Output: 4
 ```
+
+![Histogram of the two bars with the largest rectangle of area 4 highlighted.](figures/example-2.svg)
 
 ### Constraints
 
