@@ -14,6 +14,8 @@ var matrixRankTransform = function (matrix) {
     }
     cells.sort((a, b) => (a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]));
 
+    // Largest rank used so far in each row/column, from smaller values
+    // (processing is in increasing value order, so those are final).
     const rowMax = new Array(m).fill(0);
     const colMax = new Array(n).fill(0);
     const ans = Array.from({ length: m }, () => new Array(n).fill(0));
@@ -43,6 +45,9 @@ var matrixRankTransform = function (matrix) {
             j++;
         }
 
+        // Fresh union-find per group, so components never leak across
+        // different values. Equal values sharing a row or column are forced
+        // to the same rank; unions chain through shared rows/columns.
         for (const idx of group) parent[idx] = idx;
         const byRow = new Map();
         for (const idx of group) {
@@ -63,6 +68,8 @@ var matrixRankTransform = function (matrix) {
             }
         }
 
+        // Component rank = 1 + the strictest requirement over its cells;
+        // that is simultaneously the smallest legal rank for all of them.
         const compRank = new Map();
         for (const idx of group) {
             const r = Math.floor(idx / n);
@@ -74,6 +81,8 @@ var matrixRankTransform = function (matrix) {
             }
         }
 
+        // Assign the shared rank and refresh the row/column maxima so
+        // later, larger values see it.
         for (const idx of group) {
             const r = Math.floor(idx / n);
             const c = idx % n;

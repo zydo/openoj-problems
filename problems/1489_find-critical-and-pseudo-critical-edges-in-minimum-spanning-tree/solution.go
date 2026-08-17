@@ -80,6 +80,9 @@ func findCriticalAndPseudoCriticalEdges(n int, edges [][]int) [][]int {
 
 	critical := []int{}
 	pseudo := []int{}
+	// Deletion raising the weight (or disconnecting, seen as the huge value)
+	// marks an edge critical; the forcing test runs only on survivors,
+	// because a critical edge would also pass it.
 	for i := 0; i < m; i++ {
 		if mstWeight(i, -1) > baseWeight {
 			critical = append(critical, i)

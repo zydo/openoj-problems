@@ -1,5 +1,8 @@
 function minimumMountainRemovals(nums: number[]): number {
     const n = nums.length;
+    // lis[i]: longest strictly increasing subsequence ending at i (strict
+    // comparisons — plateaus can ride neither slope); lds[i]: symmetric
+    // strictly decreasing chain starting at i, built scanning right to left.
     const lis: number[] = new Array(n).fill(1);
     const lds: number[] = new Array(n).fill(1);
     for (let i = 0; i < n; i++) {
@@ -16,6 +19,9 @@ function minimumMountainRemovals(nums: number[]): number {
             }
         }
     }
+    // Minimizing removals = maximizing mountain length. A valid peak needs
+    // at least one element on each side, and the peak is counted by both
+    // tables, hence the -1.
     let best = 0;
     for (let i = 0; i < n; i++) {
         if (lis[i] >= 2 && lds[i] >= 2) {

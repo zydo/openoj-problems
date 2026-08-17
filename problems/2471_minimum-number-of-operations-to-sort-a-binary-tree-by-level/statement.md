@@ -26,6 +26,8 @@ We used 3 operations so return 3.
 It can be proven that 3 is the minimum number of operations needed.
 ```
 
+![Tree [1,4,3,7,6,8,5,null,null,null,null,9,null,10]; three numbered swaps sort levels 2 and 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -39,6 +41,8 @@ We used 3 operations so return 3.
 It can be proven that 3 is the minimum number of operations needed.
 ```
 
+![Tree [1,3,2,7,6,5,4]; swaps 3<->2, 7<->4 and 6<->5 sort both levels in 3 operations.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -46,6 +50,8 @@ Input: root = [1,2,3,4,5,6]
 Output: 0
 Explanation: Each level is already sorted in increasing order so return 0.
 ```
+
+![Tree [1,2,3,4,5,6] with levels [1], [2,3] and [4,5,6] already sorted, needing 0 operations.](figures/example-3.svg)
 
 ### Constraints
 

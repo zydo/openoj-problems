@@ -30,6 +30,8 @@ Output: 2
 Explanation: Start at vertex 2, collect the coin at vertex 0, move to vertex 3, collect the coin at vertex 5 then move back to vertex 2.
 ```
 
+![Path 0-1-2-3-4-5 with coins at both ends; starting at 2, both coins fall within distance 2 after one move, costing 2 edges.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -37,6 +39,8 @@ Input: coins = [0,0,0,1,1,0,0,1], edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[5,6],[
 Output: 2
 Explanation: Start at vertex 0, collect the coins at vertices 4 and 3, move to vertex 2, collect the coin at vertex 7, then move back to vertex 0.
 ```
+
+![Tree with coins at vertices 3, 4 and 7; from start vertex 0 one move to 2 covers every coin for 2 edges.](figures/example-2.svg)
 
 ### Constraints
 

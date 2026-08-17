@@ -12,6 +12,9 @@ class Solution {
         for (int i = 0; i < n; i++) {
             parent[i] = i;
         }
+        // Answer offline: the edge sets usable under growing limits are
+        // nested, so union-find only ever grows. Sorting query indices (not
+        // the queries) lets answers return to their original positions.
         int[][] edges = edgeList.clone();
         Arrays.sort(edges, Comparator.comparingInt(e -> e[2]));
         Integer[] order = new Integer[queries.length];
@@ -25,6 +28,8 @@ class Solution {
             int p = queries[qi][0];
             int q = queries[qi][1];
             int limit = queries[qi][2];
+            // Union every edge strictly below the limit — the strict <
+            // excludes edges of weight exactly equal to it.
             while (ei < edges.length && edges[ei][2] < limit) {
                 int ra = find(parent, edges[ei][0]);
                 int rb = find(parent, edges[ei][1]);
@@ -33,6 +38,7 @@ class Solution {
                 }
                 ei++;
             }
+            // The query reduces to a connectivity check.
             answer[qi] = find(parent, p) == find(parent, q);
         }
         return answer;

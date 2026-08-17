@@ -4,6 +4,8 @@
  * @return {number}
  */
 var maxValue = function (events, k) {
+    // Sorted by end day, any compatible set read by finish time is a
+    // subsequence of this order, so earlier choices sit to the left.
     const sorted = events.slice().sort((a, b) => a[1] - b[1]);
     const n = sorted.length;
     const ends = sorted.map((e) => e[1]);
@@ -28,6 +30,7 @@ var maxValue = function (events, k) {
                 }
             }
             const take = prev[lo] + sorted[i - 1][2];
+            // The running max carries the skip option forward.
             if (take > best) {
                 best = take;
             }

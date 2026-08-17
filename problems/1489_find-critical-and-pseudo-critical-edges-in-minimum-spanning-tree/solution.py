@@ -29,9 +29,12 @@ class Solution:
                 self.size[a] += self.size[b]
                 return True
 
+        # Sort edge indices by weight once; every per-edge test reuses this order.
         order = sorted(range(m), key=lambda i: edges[i][2])
 
         def mst_without(skip):
+            # Kruskal with one edge skipped; fewer than n - 1 edges used means
+            # the graph is disconnected, which counts as infinite weight.
             dsu = DSU(n)
             weight = 0
             used = 0
@@ -45,6 +48,8 @@ class Solution:
             return weight if used == n - 1 else float("inf")
 
         def mst_with(force):
+            # Force the edge in first, then complete Kruskal over the rest.
+            dsu = DSU(n)
             dsu = DSU(n)
             weight = 0
             used = 0
@@ -61,6 +66,7 @@ class Solution:
                     used += 1
             return weight if used == n - 1 else float("inf")
 
+        # Base MST weight that both tests measure against.
         base_weight = 0
         dsu = DSU(n)
         for i in order:
@@ -71,6 +77,9 @@ class Solution:
         critical = []
         pseudo = []
         for i in range(m):
+            # Deletion raising the weight (or disconnecting) marks an edge
+            # critical; the forcing test runs only on survivors, because a
+            # critical edge would also pass it.
             if mst_without(i) > base_weight:
                 critical.append(i)
             elif mst_with(i) == base_weight:

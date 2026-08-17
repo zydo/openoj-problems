@@ -30,6 +30,8 @@ It can be shown it is not possible to get a star graph with a sum greater
 than 16.
 ```
 
+![Graph with values [1,2,3,4,10,-10,-20]; the star centered at node 3 with neighbours 1 and 4 sums to 16.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -38,6 +40,8 @@ Output: -5
 Explanation: There is only one possible star graph, which is node 0 itself.
 Hence, we return -5.
 ```
+
+![A single node with value -5 and k = 0; the star is just node 0, so the answer is -5.](figures/example-2.svg)
 
 ### Constraints
 

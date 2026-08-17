@@ -29,6 +29,8 @@ first query, and the matrix after the second query.
   top left corner (0, 0) and bottom right corner (1, 1).
 ```
 
+![The matrix evolves 0s -> +1 on rows 1-2 / cols 1-2 -> +1 on rows 0-1 / cols 0-1, ending at [[1,1,0],[1,2,1],[0,1,1]].](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -36,6 +38,8 @@ Input: n = 2, queries = [[0,0,1,1]]
 Output: [[1,1],[1,1]]
 Explanation: We add 1 to every element in the matrix.
 ```
+
+![A 2x2 matrix of zeros becomes all ones after the single query [0,0,1,1].](figures/example-2.svg)
 
 ### Constraints
 

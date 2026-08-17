@@ -34,6 +34,8 @@ We can see that every edge is satisfied.
 It can be shown that that if we create a fifth group and move any node from the third or fourth group to it, at least on of the edges will not be satisfied.
 ```
 
+![Nodes 5, 1, {2,4} and {3,6} placed in four groups so every edge joins adjacent groups.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

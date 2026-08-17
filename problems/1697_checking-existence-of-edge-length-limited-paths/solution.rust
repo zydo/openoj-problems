@@ -13,6 +13,9 @@ impl Solution {
             }
             x
         }
+        // Answer offline: the edge sets usable under growing limits are
+        // nested, so union-find only ever grows. Sorting query indices (not
+        // the queries) lets answers return to their original positions.
         let mut edges = edgeList;
         edges.sort_by_key(|e| e[2]);
         let mut order: Vec<usize> = (0..queries.len()).collect();
@@ -23,6 +26,8 @@ impl Solution {
             let p = queries[qi][0] as usize;
             let q = queries[qi][1] as usize;
             let limit = queries[qi][2];
+            // Union every edge strictly below the limit — the strict <
+            // excludes edges of weight exactly equal to it.
             while ei < edges.len() && edges[ei][2] < limit {
                 let ra = find(&mut parent, edges[ei][0] as usize);
                 let rb = find(&mut parent, edges[ei][1] as usize);
@@ -31,6 +36,7 @@ impl Solution {
                 }
                 ei += 1;
             }
+            // The query reduces to a connectivity check.
             answer[qi] = find(&mut parent, p) == find(&mut parent, q);
         }
         answer

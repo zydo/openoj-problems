@@ -15,6 +15,8 @@ class Solution {
         for (int i = 0; i < n; i++) {
             parent[i] = i;
         }
+        // Swaps chain into connected components where values can be
+        // permuted arbitrarily, and values never leave their component.
         for (int[] swap : allowedSwaps) {
             int ra = find(parent, swap[0]);
             int rb = find(parent, swap[1]);
@@ -28,6 +30,8 @@ class Solution {
                 .computeIfAbsent(find(parent, i), r -> new ArrayList<>())
                 .add(i);
         }
+        // Per component, match target values against the multiset of
+        // source values; each unmatched target must stay different.
         int distance = 0;
         for (List<Integer> members : groups.values()) {
             HashMap<Integer, Integer> have = new HashMap<>();

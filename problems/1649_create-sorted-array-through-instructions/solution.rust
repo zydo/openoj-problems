@@ -5,8 +5,10 @@ impl Solution {
             return 0;
         }
         let m = *instructions.iter().max().unwrap() as usize;
+        // Fenwick tree indexed by value: prefix counts with point updates.
         let mut tree = vec![0i64; m + 1];
 
+        // Climb the lowbit ladder to add one occurrence of value i.
         let mut update = |tree: &mut Vec<i64>, mut i: usize| {
             while i <= m {
                 tree[i] += 1;
@@ -14,6 +16,7 @@ impl Solution {
             }
         };
 
+        // Sum of occurrences of values 1..i.
         let query = |tree: &Vec<i64>, mut i: usize| -> i64 {
             let mut s: i64 = 0;
             while i > 0 {
@@ -27,6 +30,9 @@ impl Solution {
         let mut count: i64 = 0;
         for &x in &instructions {
             let x = x as usize;
+            // Inserting x costs the smaller of: elements strictly below x
+            // (query(x-1)) and strictly above (count - query(x), since
+            // query(x) includes equals — equals land in neither bucket).
             let less = query(&tree, x - 1);
             let greater = count - query(&tree, x);
             total = (total + less.min(greater)) % MOD;

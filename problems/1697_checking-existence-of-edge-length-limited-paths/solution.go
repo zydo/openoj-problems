@@ -13,6 +13,9 @@ func distanceLimitedPathsExist(n int, edgeList [][]int, queries [][]int) []bool 
 		}
 		return x
 	}
+	// Answer offline: the edge sets usable under growing limits are nested,
+	// so union-find only ever grows. Sorting query indices (not the
+	// queries) lets answers return to their original positions.
 	edges := append([][]int(nil), edgeList...)
 	sort.Slice(edges, func(a, b int) bool { return edges[a][2] < edges[b][2] })
 	order := make([]int, len(queries))
@@ -26,6 +29,8 @@ func distanceLimitedPathsExist(n int, edgeList [][]int, queries [][]int) []bool 
 		p := queries[qi][0]
 		q := queries[qi][1]
 		limit := queries[qi][2]
+		// Union every edge strictly below the limit — the strict < excludes
+		// edges of weight exactly equal to it.
 		for ei < len(edges) && edges[ei][2] < limit {
 			ra := find(edges[ei][0])
 			rb := find(edges[ei][1])
@@ -34,6 +39,7 @@ func distanceLimitedPathsExist(n int, edgeList [][]int, queries [][]int) []bool 
 			}
 			ei++
 		}
+		// The query reduces to a connectivity check.
 		answer[qi] = find(p) == find(q)
 	}
 	return answer

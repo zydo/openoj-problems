@@ -17,6 +17,8 @@ impl Solution {
             x
         }
 
+        // Swaps chain into connected components where values can be
+        // permuted arbitrarily, and values never leave their component.
         for swap in &allowed_swaps {
             let ra = find(&mut parent, swap[0] as usize);
             let rb = find(&mut parent, swap[1] as usize);
@@ -30,6 +32,8 @@ impl Solution {
             groups.entry(find(&mut parent, i)).or_default().push(i);
         }
 
+        // Per component, match target values against the multiset of
+        // source values; each unmatched target must stay different.
         let mut distance = 0i32;
         for members in groups.values() {
             let mut have: HashMap<i32, i32> = HashMap::new();

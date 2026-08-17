@@ -6,6 +6,8 @@ func minCostConnectPoints(points [][]int) int64 {
 		return 0
 	}
 	inf := int64(math.MaxInt64)
+	// best[v]: cheapest Manhattan distance from any tree vertex to the
+	// outside vertex v; best[0] = 0 makes the seed point free.
 	best := make([]int64, n)
 	for i := range best {
 		best[i] = inf
@@ -14,6 +16,8 @@ func minCostConnectPoints(points [][]int) int64 {
 	used := make([]bool, n)
 	total := int64(0)
 	for step := 0; step < n; step++ {
+		// Cheapest edge leaving the current tree — safe to add by Prim's
+		// cut property.
 		u := -1
 		for v := 0; v < n; v++ {
 			if !used[v] && (u == -1 || best[v] < best[u]) {
@@ -22,6 +26,7 @@ func minCostConnectPoints(points [][]int) int64 {
 		}
 		total += best[u]
 		used[u] = true
+		// Relax every outside vertex against the newly attached u.
 		for v := 0; v < n; v++ {
 			if !used[v] {
 				d := int64(abs(points[u][0]-points[v][0]) + abs(points[u][1]-points[v][1]))

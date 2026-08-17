@@ -38,6 +38,8 @@ Root = 4, correct guesses = [1,3], [1,0]
 Considering 0, 1, or 2 as root node leads to 3 correct guesses.
 ```
 
+![Tree 0-1-2-4 / 1-3 with the four guesses as dashed arrows; rooting at 0, 1 or 2 makes 3 of them true.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -51,6 +53,8 @@ Root = 3, correct guesses = [1,0], [2,1], [3,2], [3,4]
 Root = 4, correct guesses = [1,0], [2,1], [3,2]
 Considering any node as root will give at least 1 correct guess.
 ```
+
+![Chain 0-1-2-3-4 with guesses as dashed arcs; every root keeps at least one guess true, so all 5 roots count.](figures/example-2.svg)
 
 ### Constraints
 

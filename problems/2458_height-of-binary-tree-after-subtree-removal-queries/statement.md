@@ -32,6 +32,8 @@ Explanation: The diagram above shows the tree after removing the subtree rooted 
 The height of the tree is 2 (The path 1 -> 3 -> 2).
 ```
 
+![Removing the subtree rooted at 4 leaves the path 1 -> 3 -> 2, so the height is 2.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -43,6 +45,8 @@ Explanation: We have the following queries:
 - Removing the subtree rooted at node with value 4. The height of the tree becomes 3 (The path 5 -> 8 -> 2 -> 6).
 - Removing the subtree rooted at node with value 8. The height of the tree becomes 2 (The path 5 -> 9 -> 3).
 ```
+
+![The complete tree [5,8,9,2,1,3,7,4,6]; each query removes one subtree and the answers are [3,2,3,2].](figures/example-2.svg)
 
 ### Constraints
 

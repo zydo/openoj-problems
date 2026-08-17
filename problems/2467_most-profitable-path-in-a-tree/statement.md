@@ -47,6 +47,8 @@ Explanation:
 It is not possible for Alice to get a higher net income.
 ```
 
+![Alice walks 0 -> 1 -> 3 -> 4 while Bob walks 3 -> 1 -> 0; sharing the +4 at node 1 gives Alice a net income of 6.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -55,6 +57,8 @@ Output: -7280
 Explanation:
 Alice follows the path 0->1 whereas Bob follows the path 1->0. Thus, Alice opens the gate at node 0 only. Hence, her net income is -7280.
 ```
+
+![Two nodes 0 and 1 with amounts -7280 and 2350; Bob starts at 1, so Alice only pays for node 0.](figures/example-2.svg)
 
 ### Constraints
 

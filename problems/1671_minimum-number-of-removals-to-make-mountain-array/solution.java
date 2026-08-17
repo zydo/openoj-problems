@@ -4,7 +4,11 @@ class Solution {
 
     public int minimumMountainRemovals(int[] nums) {
         int n = nums.length;
+        // lis[i]: longest strictly increasing subsequence ending at i
+        // (strict comparisons — plateaus can ride neither slope).
         int[] lis = new int[n];
+        // lds[i]: symmetric strictly decreasing chain starting at i, built
+        // by scanning right to left.
         int[] lds = new int[n];
         Arrays.fill(lis, 1);
         Arrays.fill(lds, 1);
@@ -22,6 +26,9 @@ class Solution {
                 }
             }
         }
+        // Minimizing removals = maximizing mountain length. A valid peak
+        // needs at least one element on each side, and the peak is counted
+        // by both tables, hence the -1.
         int best = 0;
         for (int i = 0; i < n; i++) {
             if (lis[i] >= 2 && lds[i] >= 2) {

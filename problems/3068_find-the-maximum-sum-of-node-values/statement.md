@@ -27,6 +27,8 @@ choose the edge [0,2]. nums[0] and nums[2] become 1 XOR 3 = 2, and the array
 nums becomes [1,2,1] -> [2,2,2]. The total sum of the values is 2 + 2 + 2 = 6.
 ```
 
+![The path graph with nums = [1,2,1]; one operation on edge [0,2] turns both 1s into 2s for a sum of 6.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

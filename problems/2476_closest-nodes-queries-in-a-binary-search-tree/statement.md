@@ -31,6 +31,8 @@ Explanation: We answer the queries in the following way:
   answer for the third query is [15,-1].
 ```
 
+![BST [6,2,13,1,4,9,15,null,null,null,null,null,null,14]; queries [2,5,16] get [[2,2],[4,6],[15,-1]].](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -40,6 +42,8 @@ Explanation: The largest number that is smaller or equal than 3 in the tree
 does not exist, and the smallest number that is greater or equal than 3 is 4.
 So the answer for the query is [-1,4].
 ```
+
+![The two-node BST [4,null,9]; query 3 has no value <= 3 below it, giving [-1,4].](figures/example-2.svg)
 
 ### Constraints
 

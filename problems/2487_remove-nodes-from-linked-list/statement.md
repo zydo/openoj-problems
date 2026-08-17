@@ -20,6 +20,8 @@ Explanation: The nodes that should be removed are 5, 2 and 3.
 - Node 8 is to the right of node 3.
 ```
 
+![List [5,2,13,3,8]; nodes 5, 2 and 3 are removed, leaving 13 -> 8.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

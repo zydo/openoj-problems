@@ -3,6 +3,7 @@ impl Solution {
         let n = n as usize;
         let m = edges.len();
 
+        // Sort edge indices by weight once; every per-edge test reuses this order.
         let mut order: Vec<usize> = (0..m).collect();
         order.sort_by_key(|&i| edges[i][2]);
 
@@ -79,6 +80,9 @@ impl Solution {
 
         let mut critical: Vec<i32> = Vec::new();
         let mut pseudo: Vec<i32> = Vec::new();
+        // Deletion raising the weight (or disconnecting, seen as None) marks
+        // an edge critical; the forcing test runs only on survivors, because
+        // a critical edge would also pass it.
         for i in 0..m {
             let without = mst_weight(Some(i), None);
             let is_worse = match without {

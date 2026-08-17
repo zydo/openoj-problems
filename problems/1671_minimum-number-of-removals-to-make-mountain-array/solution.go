@@ -1,5 +1,8 @@
 func minimumMountainRemovals(nums []int) int {
 	n := len(nums)
+	// lis[i]: longest strictly increasing subsequence ending at i (strict
+	// comparisons — plateaus can ride neither slope); lds[i]: symmetric
+	// strictly decreasing chain starting at i, built scanning right to left.
 	lis := make([]int, n)
 	lds := make([]int, n)
 	for i := range lis {
@@ -20,6 +23,9 @@ func minimumMountainRemovals(nums []int) int {
 			}
 		}
 	}
+	// Minimizing removals = maximizing mountain length. A valid peak needs
+	// at least one element on each side, and the peak is counted by both
+	// tables, hence the -1.
 	best := 0
 	for i := 0; i < n; i++ {
 		if lis[i] >= 2 && lds[i] >= 2 {

@@ -18,6 +18,8 @@ func matrixRankTransform(matrix [][]int) [][]int {
 		return ia < ib
 	})
 
+	// Largest rank used so far in each row/column, from smaller values
+	// (processing is in increasing value order, so those are final).
 	rowMax := make([]int, m)
 	colMax := make([]int, n)
 	ans := make([][]int, m)
@@ -52,6 +54,9 @@ func matrixRankTransform(matrix [][]int) [][]int {
 			j++
 		}
 
+		// Fresh union-find per group, so components never leak across
+		// different values. Equal values sharing a row or column are forced
+		// to the same rank; unions chain through shared rows/columns.
 		for _, idx := range group {
 			parent[idx] = idx
 		}
@@ -74,6 +79,8 @@ func matrixRankTransform(matrix [][]int) [][]int {
 			}
 		}
 
+		// Component rank = 1 + the strictest requirement over its cells;
+		// that is simultaneously the smallest legal rank for all of them.
 		compRank := make(map[int]int)
 		for _, idx := range group {
 			r := idx / n
@@ -89,6 +96,8 @@ func matrixRankTransform(matrix [][]int) [][]int {
 			}
 		}
 
+		// Assign the shared rank and refresh the row/column maxima so later,
+		// larger values see it.
 		for _, idx := range group {
 			r := idx / n
 			c := idx % n

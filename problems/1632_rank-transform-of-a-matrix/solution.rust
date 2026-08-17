@@ -16,6 +16,8 @@ impl Solution {
             }
         });
 
+        // Largest rank used so far in each row/column, from smaller values
+        // (processing is in increasing value order, so those are final).
         let mut row_max = vec![0i32; m];
         let mut col_max = vec![0i32; n];
         let mut ans = vec![vec![0i32; n]; m];
@@ -47,6 +49,10 @@ impl Solution {
                 j += 1;
             }
 
+            // Fresh union-find per group, so components never leak across
+            // different values. Equal values sharing a row or column are
+            // forced to the same rank; unions chain through shared
+            // rows/columns.
             for &idx in &group {
                 parent[idx] = idx;
             }
@@ -71,6 +77,8 @@ impl Solution {
                 }
             }
 
+            // Component rank = 1 + the strictest requirement over its cells;
+            // that is simultaneously the smallest legal rank for all of them.
             let mut comp_rank: HashMap<usize, i32> = HashMap::new();
             for &idx in &group {
                 let r = idx / n;
@@ -83,6 +91,8 @@ impl Solution {
                 }
             }
 
+            // Assign the shared rank and refresh the row/column maxima so
+            // later, larger values see it.
             for &idx in &group {
                 let r = idx / n;
                 let c = idx % n;

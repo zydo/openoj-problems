@@ -4,6 +4,10 @@
  * @return {number}
  */
 var minimumSize = function (nums, maxOperations) {
+    // A bag of v must end as ceil(v/penalty) pieces; each division creates
+    // exactly one new bag, so it costs ceil(v/penalty) - 1 =
+    // floor((v - 1) / penalty) operations — achievable with near-equal
+    // splits, all of size <= penalty.
     const needed = (penalty) => {
         let total = 0;
         for (const balls of nums) {
@@ -12,6 +16,8 @@ var minimumSize = function (nums, maxOperations) {
         return total;
     };
 
+    // Achievability is monotone in the penalty, so binary search the
+    // smallest feasible value; max(nums) needs zero operations.
     let lo = 1;
     let hi = 0;
     for (const balls of nums) {

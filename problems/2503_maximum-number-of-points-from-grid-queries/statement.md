@@ -28,6 +28,8 @@ Output: [5,8,1]
 Explanation: The diagrams above show which cells we visit to get points for each query.
 ```
 
+![Grid [[1,2,3],[2,5,7],[3,5,1]] with reachable cells below each query shaded: 5, 8 and 1 points.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -35,6 +37,8 @@ Input: grid = [[5,2,1],[1,1,2]], queries = [3]
 Output: [0]
 Explanation: We can not get any points because the value of the top left cell is already greater than or equal to 3.
 ```
+
+![Grid [[5,2,1],[1,1,2]]; the corner value 5 blocks every query below 3, so no points are scored.](figures/example-2.svg)
 
 ### Constraints
 

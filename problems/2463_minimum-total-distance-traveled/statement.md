@@ -47,6 +47,8 @@ The limit of the second factory is 2, and it fixed 1 robot.
 The total distance is |2 - 0| + |2 - 4| + |6 - 6| = 4. It can be shown that we cannot achieve a better total distance than 4.
 ```
 
+![Robots at 0, 4, 6 on a number line with factories at 2 and 6; both left robots reach position 2 for a total of 4.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -59,6 +61,8 @@ The limit of the first factory is 1, and it fixed 1 robot.
 The limit of the second factory is 1, and it fixed 1 robot.
 The total distance is |2 - 1| + |(-2) - (-1)| = 2. It can be shown that we cannot achieve a better total distance than 2.
 ```
+
+![Robots at -1 and 1 with single-capacity factories at -2 and 2; each robot crosses one unit for a total of 2.](figures/example-2.svg)
 
 ### Constraints
 

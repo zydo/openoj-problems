@@ -15,6 +15,8 @@ class Solution {
             return a < b;
         });
 
+        // Largest rank used so far in each row/column, from smaller values
+        // (processing is in increasing value order, so those are final).
         vector<int> rowMax(m, 0);
         vector<int> colMax(n, 0);
         vector<vector<int>> ans(m, vector<int>(n, 0));
@@ -32,6 +34,10 @@ class Solution {
                 j++;
             }
 
+            // Fresh union-find per group, so components never leak across
+            // different values. Equal values sharing a row or column are
+            // forced to the same rank; unions chain through shared
+            // rows/columns.
             for (int idx : group)
                 parent[idx] = idx;
             unordered_map<int, int> byRow;
@@ -55,6 +61,8 @@ class Solution {
                 }
             }
 
+            // Component rank = 1 + the strictest requirement over its cells;
+            // that is simultaneously the smallest legal rank for all of them.
             unordered_map<int, int> compRank;
             for (int idx : group) {
                 int r = idx / n;
@@ -67,6 +75,8 @@ class Solution {
                 }
             }
 
+            // Assign the shared rank and refresh the row/column maxima so
+            // later, larger values see it.
             for (int idx : group) {
                 int r = idx / n;
                 int c = idx % n;

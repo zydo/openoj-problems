@@ -11,8 +11,11 @@ var waysToSplit = function (nums) {
     }
     const total = prefix[n];
     let answer = 0;
+    // prefix is non-decreasing, so for a fixed left cut the legal second
+    // cuts form one contiguous range — delimit it with two binary searches.
     for (let i = 1; i < n - 1; i++) {
         const left = prefix[i];
+        // left <= mid becomes prefix[j] >= 2 * left: first legal j.
         let lo = i + 1;
         let hi = n;
         while (lo < hi) {
@@ -26,6 +29,8 @@ var waysToSplit = function (nums) {
         if (lo >= n) {
             continue;
         }
+        // mid <= right becomes prefix[j] <= (total + left) / 2 — the floor
+        // is exact because the bound is an integer inequality.
         let l = lo;
         let h = n;
         while (l < h) {

@@ -30,6 +30,8 @@ Output: 24
 Explanation: Node 1's subtree has sum of values 16, while node 2's subtree has sum of values 8, so choosing these nodes will yield a score of 16 XOR 8 = 24. It can be proved that is the maximum possible score we can obtain.
 ```
 
+![Tree with values [2,8,3,6,2,5]; the subtree at node 1 sums to 16 and the subtree at node 2 to 8, giving 16 XOR 8 = 24.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -37,6 +39,8 @@ Input: n = 3, edges = [[0,1],[1,2]], values = [4,6,1]
 Output: 0
 Explanation: There is no possible way to select two non-overlapping subtrees, so we just return 0.
 ```
+
+![The chain 0-1-2 with values [4,6,1]; every subtree nests inside another, so the score is 0.](figures/example-2.svg)
 
 ### Constraints
 

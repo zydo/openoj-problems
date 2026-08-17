@@ -32,6 +32,8 @@ Explanation: The minimum cost for each starting city is the following:
 - Starting at city 4: You take the path 4 -> 3 -> 2 then you buy at city 2, and finally take the path 2 -> 3 -> 4. The total cost is 1 + 2 + 42 + 1 * 2 + 2 * 2 = 51.
 ```
 
+![Four cities in a diamond with road costs 4, 2, 5, 1, 4 and apple prices 56, 42, 102, 301; the answers are [54, 42, 48, 51].](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -39,6 +41,8 @@ Input: n = 3, roads = [[1,2,5],[2,3,1],[3,1,2]], appleCost = [2,3,1], k = 3
 Output: [2,3,1]
 Explanation: It is always optimal to buy the apple in the starting city.
 ```
+
+![Three cities in a triangle with road costs 5, 1, 2 and apple prices 2, 3, 1; buying locally is optimal.](figures/example-2.svg)
 
 ### Constraints
 

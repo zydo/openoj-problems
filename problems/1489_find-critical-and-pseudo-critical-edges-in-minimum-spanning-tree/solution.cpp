@@ -3,6 +3,7 @@ class Solution {
     vector<vector<int>> findCriticalAndPseudoCriticalEdges(int n, vector<vector<int>> &edges) {
         int m = (int)edges.size();
 
+        // Sort edge indices by weight once; every per-edge test reuses this order.
         vector<int> order(m);
         for (int i = 0; i < m; i++)
             order[i] = i;
@@ -23,6 +24,9 @@ class Solution {
         }
 
         vector<int> critical, pseudo;
+        // Deletion raising the weight (or disconnecting, seen as INT_MAX)
+        // marks an edge critical; the forcing test runs only on survivors,
+        // because a critical edge would also pass it.
         for (int i = 0; i < m; i++) {
             if (mstWeight(n, edges, order, i, -1) > baseWeight) {
                 critical.push_back(i);

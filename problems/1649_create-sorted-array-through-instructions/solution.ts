@@ -6,8 +6,10 @@ function createSortedArray(instructions: number[]): number {
             m = x;
         }
     }
+    // Fenwick tree indexed by value: prefix counts with point updates.
     const tree: number[] = new Array(m + 1).fill(0);
 
+    // Climb the lowbit ladder to add one occurrence of value i.
     const update = (i: number): void => {
         while (i <= m) {
             tree[i] += 1;
@@ -15,6 +17,7 @@ function createSortedArray(instructions: number[]): number {
         }
     };
 
+    // Sum of occurrences of values 1..i.
     const query = (i: number): number => {
         let s = 0;
         while (i > 0) {
@@ -27,6 +30,9 @@ function createSortedArray(instructions: number[]): number {
     let total = 0;
     let count = 0;
     for (const x of instructions) {
+        // Inserting x costs the smaller of: elements strictly below x
+        // (query(x-1)) and strictly above (count - query(x), since
+        // query(x) includes equals — equals land in neither bucket).
         const less = query(x - 1);
         const greater = count - query(x);
         total = (total + Math.min(less, greater)) % MOD;

@@ -5,8 +5,11 @@ class Solution:
     def matrixRankTransform(self, matrix: List[List[int]]) -> List[List[int]]:
         m = len(matrix)
         n = len(matrix[0])
+        # Process in increasing value order: strictly smaller values are
+        # already assigned, so only ties need coordination.
         cells = sorted((matrix[r][c], r, c) for r in range(m) for c in range(n))
 
+        # Largest rank used so far in each row/column, from smaller values.
         row_max = [0] * m
         col_max = [0] * n
         ans = [[0] * n for _ in range(m)]
@@ -33,8 +36,12 @@ class Solution:
                 group.append((cells[j][1], cells[j][2]))
                 j += 1
 
+            # Fresh union-find per group, so components never leak across
+            # different values.
             for r, c in group:
                 parent[(r, c)] = (r, c)
+            # Equal values sharing a row or column are forced to the same
+            # rank; unions chain through shared rows/columns.
             by_row = {}
             for r, c in group:
                 if r in by_row:
@@ -48,6 +55,8 @@ class Solution:
                 else:
                     by_col[c] = (r, c)
 
+            # Component rank = 1 + the strictest requirement over its cells;
+            # that is simultaneously the smallest legal rank for all of them.
             comp_rank = {}
             for r, c in group:
                 root = find((r, c))
@@ -55,6 +64,8 @@ class Solution:
                 if candidate > comp_rank.get(root, 0):
                     comp_rank[root] = candidate
 
+            # Assign the shared rank and refresh the row/column maxima so
+            # later, larger values see it.
             for r, c in group:
                 rank = comp_rank[find((r, c))]
                 ans[r][c] = rank

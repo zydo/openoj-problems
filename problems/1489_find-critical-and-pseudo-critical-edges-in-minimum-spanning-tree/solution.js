@@ -35,6 +35,7 @@ var findCriticalAndPseudoCriticalEdges = function (n, edges) {
         };
     }
 
+    // Sort edge indices by weight once; every per-edge test reuses this order.
     const order = [];
     for (let i = 0; i < m; i++) order.push(i);
     order.sort((a, b) => edges[a][2] - edges[b][2]);
@@ -51,10 +52,13 @@ var findCriticalAndPseudoCriticalEdges = function (n, edges) {
                 used++;
             }
         }
+        // Fewer than n - 1 edges used means the graph got disconnected,
+        // which counts as infinite weight.
         return used === n - 1 ? weight : INF;
     }
 
     function mstWith(force) {
+        // Force the edge in first, then complete Kruskal over the rest.
         const dsu = makeDsu();
         let weight = 0;
         let used = 0;
@@ -84,6 +88,9 @@ var findCriticalAndPseudoCriticalEdges = function (n, edges) {
 
     const critical = [];
     const pseudo = [];
+    // Deletion raising the weight (or disconnecting) marks an edge critical;
+    // the forcing test runs only on survivors, because a critical edge
+    // would also pass it.
     for (let i = 0; i < m; i++) {
         if (mstWithout(i) > baseWeight) {
             critical.push(i);

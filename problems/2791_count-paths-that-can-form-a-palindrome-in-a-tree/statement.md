@@ -22,6 +22,8 @@ Explanation: The valid pairs are:
 - The pair (3,5) results in the string "acac" which can be rearranged into the palindrome "acca".
 ```
 
+![The tree labelled with s = "acaabc"; node letters determine which of the 15 node pairs form palindromes.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

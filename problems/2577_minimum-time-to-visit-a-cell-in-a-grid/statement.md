@@ -31,6 +31,8 @@ Explanation: One of the paths that we can take is the following:
 The final time is 7. It can be shown that it is the minimum time possible.
 ```
 
+![Grid [[0,1,3,2],[5,1,2,5],[4,3,8,6]]; the walker bounces between (1,1) and (1,2) to wait, reaching (2,3) at t = 7.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -38,6 +40,8 @@ Input: grid = [[0,2,4],[3,2,1],[1,0,4]]
 Output: -1
 Explanation: There is no path from the top left to the bottom-right cell.
 ```
+
+![Grid [[0,2,4],[3,2,1],[1,0,4]]; both neighbours of the start need time 2 and 3, so the walker is stuck at t = 1.](figures/example-2.svg)
 
 ### Constraints
 

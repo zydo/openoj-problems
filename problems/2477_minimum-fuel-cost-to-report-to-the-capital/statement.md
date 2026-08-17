@@ -33,6 +33,8 @@ It costs 3 liters of fuel at minimum.
 It can be proven that 3 is the minimum number of liters of fuel needed.
 ```
 
+![Star with capital 0 and cities 1-3; each representative drives alone, costing 3 liters.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -49,6 +51,8 @@ Explanation:
 It costs 7 liters of fuel at minimum.
 It can be proven that 7 is the minimum number of liters of fuel needed.
 ```
+
+![Tree rooted at capital 0; every edge costs one liter except 1 -> 0 which carries three representatives in two cars, totalling 7.](figures/example-2.svg)
 
 ### Example 3
 

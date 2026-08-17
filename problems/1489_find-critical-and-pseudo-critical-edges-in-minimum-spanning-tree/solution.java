@@ -5,6 +5,7 @@ class Solution {
     public int[][] findCriticalAndPseudoCriticalEdges(int n, int[][] edges) {
         int m = edges.length;
 
+        // Sort edge indices by weight once; every per-edge test reuses this order.
         Integer[] order = new Integer[m];
         for (int i = 0; i < m; i++) order[i] = i;
         Arrays.sort(order, (a, b) -> Integer.compare(edges[a][2], edges[b][2]));
@@ -25,6 +26,9 @@ class Solution {
 
         List<Integer> critical = new ArrayList<>();
         List<Integer> pseudo = new ArrayList<>();
+        // Deletion raising the weight (or disconnecting, seen as MAX_VALUE)
+        // marks an edge critical; the forcing test runs only on survivors,
+        // because a critical edge would also pass it.
         for (int i = 0; i < m; i++) {
             if (mstWeight(n, edges, order, i, -1) > baseWeight) {
                 critical.add(i);

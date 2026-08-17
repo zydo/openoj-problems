@@ -18,6 +18,9 @@ func minimumEffortPath(heights [][]int) int {
 	rows := len(heights)
 	cols := len(heights[0])
 	const inf = int(^uint(0) >> 1)
+	// Bottleneck shortest path: Dijkstra with max in place of addition — a
+	// path's effort is the largest height difference along it, and the
+	// smallest tentative effort popped is already final.
 	dist := make([][]int, rows)
 	for i := range dist {
 		dist[i] = make([]int, cols)
@@ -32,9 +35,11 @@ func minimumEffortPath(heights [][]int) int {
 	for h.Len() > 0 {
 		top := heap.Pop(h).([3]int)
 		d, r, c := top[0], top[1], top[2]
+		// The first time the goal is popped its effort is optimal.
 		if r == rows-1 && c == cols-1 {
 			return d
 		}
+		// Stale-entry guard: skip outdated heap records.
 		if d > dist[r][c] {
 			continue
 		}
@@ -49,6 +54,7 @@ func minimumEffortPath(heights [][]int) int {
 				if diff > nd {
 					nd = diff
 				}
+				// Relax only when the bottleneck effort strictly improves.
 				if nd < dist[nr][nc] {
 					dist[nr][nc] = nd
 					heap.Push(h, [3]int{nd, nr, nc})

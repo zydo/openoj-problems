@@ -2,6 +2,9 @@ function minimumEffortPath(heights: number[][]): number {
     const rows = heights.length;
     const cols = heights[0].length;
     const INF = Infinity;
+    // Bottleneck shortest path: Dijkstra with max in place of addition — a
+    // path's effort is the largest height difference along it, and the
+    // smallest tentative effort popped is already final.
     const dist: number[][] = Array.from({ length: rows }, () =>
         new Array(cols).fill(INF),
     );
@@ -48,9 +51,11 @@ function minimumEffortPath(heights: number[][]): number {
     ];
     while (heap.length > 0) {
         const [d, r, c] = pop();
+        // The first time the goal is popped its effort is optimal.
         if (r === rows - 1 && c === cols - 1) {
             return d;
         }
+        // Stale-entry guard: skip outdated heap records.
         if (d > dist[r][c]) {
             continue;
         }
@@ -62,6 +67,7 @@ function minimumEffortPath(heights: number[][]): number {
                     d,
                     Math.abs(heights[nr][nc] - heights[r][c]),
                 );
+                // Relax only when the bottleneck effort strictly improves.
                 if (nd < dist[nr][nc]) {
                     dist[nr][nc] = nd;
                     push([nd, nr, nc]);

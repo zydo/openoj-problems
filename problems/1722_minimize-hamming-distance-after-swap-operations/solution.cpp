@@ -15,6 +15,8 @@ class Solution {
             return x;
         };
 
+        // Swaps chain into connected components where values can be
+        // permuted arbitrarily, and values never leave their component.
         for (auto &swap : allowedSwaps) {
             int ra = find(swap[0]);
             int rb = find(swap[1]);
@@ -26,6 +28,8 @@ class Solution {
         for (int i = 0; i < n; i++)
             groups[find(i)].push_back(i);
 
+        // Per component, match target values against the multiset of
+        // source values; each unmatched target must stay different.
         int distance = 0;
         for (auto &[root, members] : groups) {
             unordered_map<int, int> have;
