@@ -1,14 +1,16 @@
+import java.util.List;
+
 class Codec {
 
     public Codec() {
         throw new UnsupportedOperationException("TODO");
     }
 
-    public String serialize(int[] root) {
+    public String serialize(TreeNode root) {
         throw new UnsupportedOperationException("TODO");
     }
 
-    public int[] deserialize(String data) {
+    public TreeNode deserialize(String data) {
         throw new UnsupportedOperationException("TODO");
     }
 }

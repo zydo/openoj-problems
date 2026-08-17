@@ -2,7 +2,7 @@ from typing import List, Optional
 
 
 class BSTIterator:
-    def __init__(self, root: List[int]) -> None:
+    def __init__(self, root: Optional[TreeNode]) -> None:
         raise NotImplementedError("TODO")
 
     def next(self) -> int:

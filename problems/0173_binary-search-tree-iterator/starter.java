@@ -1,6 +1,8 @@
+import java.util.List;
+
 class BSTIterator {
 
-    public BSTIterator(int[] root) {
+    public BSTIterator(TreeNode root) {
         throw new UnsupportedOperationException("TODO");
     }
 

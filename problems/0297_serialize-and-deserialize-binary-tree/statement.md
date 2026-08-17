@@ -9,40 +9,29 @@ serialize and deserialize a binary tree.
 
 Implement the `Codec` class:
 
-- `String serialize(int[] root)` Encodes the tree `root` into a single
+- `String serialize(TreeNode root)` Encodes the tree `root` into a single
   string.
-- `int[] deserialize(String data)` Decodes the encoded string back into the
-  tree, reported in the same array form as `serialize` receives.
+- `TreeNode deserialize(String data)` Decodes that string back into the same
+  tree.
 
-The two formats this class works with are fixed so outputs are comparable:
-
-- **Array form** (the parameter of `serialize` and the return of
-  `deserialize`): the tree's level-order traversal, where the value `100001`
-  marks a missing child. Children of markers are omitted and trailing
-  markers are dropped. Node values lie in `[-1000, 1000]`, so the marker can
-  never collide with a value. An empty tree is the empty array `[]`.
-- **String form** (the return of `serialize` and the parameter of
-  `deserialize`): the trimmed level-order tokens joined by single commas,
-  where each token is a node value in decimal or the literal `null` for a
-  missing child. The empty tree is the empty string `""`.
-
-A correct implementation is one whose round trip preserves the tree exactly:
-`deserialize(serialize(root))` equals `root` for every tree, and each method
-produces exactly the canonical form described above.
+**There is no required string format.** The judge calls `serialize` on a
+tree, feeds the exact string it returned straight into your own
+`deserialize`, and checks that the tree that comes back is identical to the
+original. Any encoding that round-trips — level order, preorder with null
+markers, parenthesised, anything — is accepted; the serialized string itself
+is never compared. The empty tree must survive the round trip too.
 
 ### Example 1
 
 ```text
 Input:
 ["Codec", "serialize", "deserialize"]
-[[], [[1, 2, 3, 100001, 100001, 4, 5]], ["1,2,3,null,null,4,5"]]
-Output: [null, "1,2,3,null,null,4,5", [1, 2, 3, 100001, 100001, 4, 5]]
+[[], [[1, 2, 3, null, null, 4, 5]], [<the string serialize returned>]]
+Output: [null, <any string>, [1, 2, 3, null, null, 4, 5]]
 Explanation:
 Codec codec = new Codec();
-codec.serialize([1, 2, 3, 100001, 100001, 4, 5]);
-// return "1,2,3,null,null,4,5" — node 2 has no children (two null markers)
-codec.deserialize("1,2,3,null,null,4,5");
-// return [1, 2, 3, 100001, 100001, 4, 5] — the tree is rebuilt exactly
+String data = codec.serialize(root);   // any encoding you like
+codec.deserialize(data);               // must rebuild the same tree
 ```
 
 ### Example 2
@@ -50,11 +39,10 @@ codec.deserialize("1,2,3,null,null,4,5");
 ```text
 Input:
 ["Codec", "serialize", "deserialize"]
-[[], [[]], [""]]
-Output: [null, "", []]
+[[], [[]], [<the string serialize returned>]]
+Output: [null, <any string>, []]
 Explanation:
-The empty tree serializes to the empty string, and the empty string
-deserializes back to the empty tree.
+The empty tree must round-trip back to the empty tree.
 ```
 
 ### Constraints
@@ -64,7 +52,7 @@ deserializes back to the empty tree.
 
 ### Follow-up
 
-The level-order format above is breadth-first. Could you design a
+The reference solution encodes breadth-first. Could you design a
 depth-first encoding (for instance preorder with explicit null markers) that
 also rebuilds the tree uniquely, and would its strings be shorter or longer
 on sparse trees?

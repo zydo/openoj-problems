@@ -15,13 +15,9 @@
       "parameters": [
         {
           "name": "root",
-          "codec": "json",
+          "codec": "tree_node",
           "value_type": {
-            "kind": "array",
-            "items": {
-              "kind": "integer",
-              "bits": 32
-            }
+            "kind": "binary_tree"
           }
         }
       ]

@@ -5,8 +5,8 @@ class Codec:
     def __init__(self) -> None:
         raise NotImplementedError("TODO")
 
-    def serialize(self, root: List[int]) -> str:
+    def serialize(self, root: Optional[TreeNode]) -> str:
         raise NotImplementedError("TODO")
 
-    def deserialize(self, data: str) -> List[int]:
+    def deserialize(self, data: str) -> Optional[TreeNode]:
         raise NotImplementedError("TODO")
