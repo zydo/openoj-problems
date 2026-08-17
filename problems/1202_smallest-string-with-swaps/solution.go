@@ -9,6 +9,7 @@ func smallestStringWithSwaps(s string, pairs [][]int) string {
 
 	var find func(int) int
 	find = func(x int) int {
+		// path halving keeps the trees shallow
 		for parent[x] != x {
 			parent[x] = parent[parent[x]]
 			x = parent[x]
@@ -16,6 +17,8 @@ func smallestStringWithSwaps(s string, pairs [][]int) string {
 		return x
 	}
 
+	// chained swaps let any two indices in one component exchange, so a
+	// component's character multiset is fixed but freely permutable
 	for _, pair := range pairs {
 		ra := find(pair[0])
 		rb := find(pair[1])
@@ -31,6 +34,8 @@ func smallestStringWithSwaps(s string, pairs [][]int) string {
 	}
 
 	result := []byte(s)
+	// smallest characters to the smallest indices of each component;
+	// components are independent so this is globally optimal
 	for _, indices := range groups {
 		sort.Ints(indices)
 		chars := make([]byte, len(indices))

@@ -39,6 +39,8 @@ The column conditions are the following:
 Note that there may be multiple correct answers.
 ```
 
+![One valid 3 x 3 matrix: rows hold 3, 1, 2 top to bottom and columns hold 3, 2, 1 left to right.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

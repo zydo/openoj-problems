@@ -6,6 +6,7 @@ class Solution {
             skill_index[req_skills[i]] = i;
 
         int np = (int)people.size();
+        // compress each person to the bitmask of skills they contribute
         vector<int> masks(np, 0);
         for (int i = 0; i < np; i++) {
             for (auto &skill : people[i])
@@ -14,7 +15,8 @@ class Solution {
 
         int full = (1 << (int)req_skills.size()) - 1;
 
-        // Emulate an insertion-ordered dict: state -> team.
+        // Emulate an insertion-ordered dict: state -> team. The dp maps each
+        // covered-skill mask to the smallest team achieving it, seeded empty.
         vector<int> order;           // states in insertion order
         vector<vector<int>> teams;   // team for each state in `order`
         unordered_map<int, int> pos; // state -> index into order/teams
@@ -22,6 +24,8 @@ class Solution {
         teams.push_back({});
         pos[0] = 0;
 
+        // people are processed in index order, so every subset of people is
+        // tried as a candidate team
         for (int i = 0; i < np; i++) {
             int snap = (int)order.size();
             // new_entries: insertion-ordered small map
@@ -35,6 +39,7 @@ class Solution {
                 vector<int> candidate = team;
                 candidate.push_back(i);
                 auto it = pos.find(newState);
+                // keep the candidate only when it beats the recorded team
                 bool accept =
                     (it == pos.end()) || (int)teams[it->second].size() > (int)candidate.size();
                 if (accept) {
@@ -65,6 +70,7 @@ class Solution {
             }
         }
 
+        // team covering every required skill, sorted for a deterministic order
         vector<int> res = teams[pos[full]];
         sort(res.begin(), res.end());
         return res;

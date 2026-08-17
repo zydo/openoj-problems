@@ -33,6 +33,8 @@ This obtains a total of 14 + 3 + 2 = 19 money earned.
 It can be shown that 19 is the maximum amount of money that can be earned.
 ```
 
+![The 3 x 5 sheet cut into two 2x2 pieces (7 each), a 2x1 piece (3) and a 1x4 piece (2), leaving one 1x1 cell unsold.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -46,6 +48,8 @@ It can be shown that 32 is the maximum amount of money that can be earned.
 Notice that we cannot rotate the 1 x 4 piece of wood to obtain a 4 x 1 piece
 of wood.
 ```
+
+![The 4 x 6 sheet cut into three 3x2 pieces (10 each) and a 1x4 piece (2), leaving a 1x2 strip unsold.](figures/example-2.svg)
 
 ### Constraints
 

@@ -18,6 +18,8 @@ Output: 0
 Explanation: There are no pairs of nodes that are unreachable from each other. Therefore, we return 0.
 ```
 
+![A triangle: all three nodes reach each other, so there are no unreachable pairs.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -27,6 +29,8 @@ Explanation: There are 14 pairs of nodes that are unreachable from each other:
 [[0,1],[0,3],[0,6],[1,2],[1,3],[1,4],[1,5],[2,3],[2,6],[3,4],[3,5],[3,6],[4,6],[5,6]].
 Therefore, we return 14.
 ```
+
+![Three components of sizes 4, 2 and 1, giving 21 - 6 - 1 = 14 unreachable pairs.](figures/example-2.svg)
 
 ### Constraints
 

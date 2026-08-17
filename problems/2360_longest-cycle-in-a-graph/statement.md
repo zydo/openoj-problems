@@ -23,6 +23,8 @@ Explanation: The longest cycle in the graph is the cycle: 2 -> 4 -> 3 -> 2.
 The length of this cycle is 3, so 3 is returned.
 ```
 
+![The functional graph with the cycle 2 to 4 to 3 back to 2 highlighted; its length is 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,6 +32,8 @@ Input: edges = [2,-1,3,1]
 Output: -1
 Explanation: There are no cycles in this graph.
 ```
+
+![The chain 0 to 2 to 3 to 1 ends at node 1, so there is no cycle.](figures/example-2.svg)
 
 ### Constraints
 

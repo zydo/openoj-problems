@@ -33,9 +33,12 @@ function connectSticks(sticks: number[]): number {
         }
     };
     let total = 0;
+    // Huffman-style exchange argument: a length is paid once per merge
+    // above it, so always merging the two shortest is optimal
     while (heap.length > 1) {
         const combined = pop() + pop();
         total += combined;
+        // the combined stick re-enters the pool for later merges
         push(combined);
     }
     return total;

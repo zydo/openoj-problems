@@ -32,6 +32,8 @@ Explanation:
 - The person at (0, 4) cannot see anybody.
 ```
 
+![The heights row and its answer row: each person sees rightward until someone at least as tall blocks the view.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -45,6 +47,8 @@ Explanation:
 - The person at (2, 0) can see the person at (2, 1).
 - The person at (2, 1) cannot see anybody.
 ```
+
+![The 3 x 2 heights grid and its answer grid.](figures/example-2.svg)
 
 ### Constraints
 

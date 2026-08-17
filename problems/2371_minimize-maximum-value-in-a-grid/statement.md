@@ -36,6 +36,8 @@ Explanation: A valid replacement is shown above.
 The maximum number in the matrix is 2. It can be shown that no smaller value can be obtained.
 ```
 
+![The grid before and after replacement: relative order is kept and the maximum becomes 2.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

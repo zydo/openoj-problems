@@ -8,6 +8,7 @@ impl Solution {
         }
 
         let np = people.len();
+        // compress each person to the bitmask of skills they contribute
         let mut masks = vec![0u32; np];
         for (i, skills) in people.iter().enumerate() {
             for skill in skills {
@@ -19,11 +20,15 @@ impl Solution {
 
         // Emulate an insertion-ordered dict: entries in insertion order plus a
         // state -> position index. Updating an existing state keeps its position.
+        // The dp maps each covered-skill mask to the smallest team achieving
+        // it, seeded empty.
         let mut order: Vec<u32> = vec![0];
         let mut teams: Vec<Vec<i32>> = vec![Vec::new()];
         let mut pos: HashMap<u32, usize> = HashMap::new();
         pos.insert(0, 0);
 
+        // people are processed in index order, so every subset of people is
+        // tried as a candidate team
         for i in 0..np {
             let snap = order.len();
             let mut ne_order: Vec<u32> = Vec::new();
@@ -36,6 +41,7 @@ impl Solution {
                 let mut candidate = team.clone();
                 candidate.push(i as i32);
                 let accept = match pos.get(&new_state) {
+                    // keep the candidate only when it beats the recorded team
                     None => true,
                     Some(&idx) => teams[idx].len() > candidate.len(),
                 };
@@ -68,6 +74,7 @@ impl Solution {
             }
         }
 
+        // team covering every required skill, sorted for a deterministic order
         let mut res = teams[pos[&full]].clone();
         res.sort_unstable();
         res

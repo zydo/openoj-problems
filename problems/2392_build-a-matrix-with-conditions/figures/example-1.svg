@@ -22,5 +22,5 @@
     <text x="190" y="196" font-weight="700" fill="#1a2026">2</text>
     <text x="252" y="196" fill="#9aa5ae">0</text>
   </g>
-  <text x="190" y="238" text-anchor="middle" fill="#1a2026" font-size="13.5">rows top→bottom 3, 2, 1 · columns left→right 3, 2, 1</text>
+  <text x="190" y="238" text-anchor="middle" fill="#1a2026" font-size="13.5">rows top→bottom hold 3, 1, 2 · columns left→right hold 3, 2, 1</text>
 </svg>

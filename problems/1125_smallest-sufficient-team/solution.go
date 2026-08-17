@@ -7,6 +7,7 @@ func smallestSufficientTeam(reqSkills []string, people [][]string) []int {
 	}
 
 	np := len(people)
+	// compress each person to the bitmask of skills they contribute
 	masks := make([]int, np)
 	for i := range people {
 		for _, skill := range people[i] {
@@ -16,11 +17,14 @@ func smallestSufficientTeam(reqSkills []string, people [][]string) []int {
 
 	full := (1 << len(reqSkills)) - 1
 
-	// Emulate an insertion-ordered dict: state -> team.
+	// Emulate an insertion-ordered dict: state -> team. The dp maps each
+	// covered-skill mask to the smallest team achieving it, seeded empty.
 	order := []int{0}        // states in insertion order
 	teams := [][]int{{}}     // team per state, parallel to order
 	pos := map[int]int{0: 0} // state -> index into order/teams
 
+	// people are processed in index order, so every subset of people is
+	// tried as a candidate team
 	for i := 0; i < np; i++ {
 		snap := len(order)
 		// new_entries: insertion-ordered
@@ -35,6 +39,7 @@ func smallestSufficientTeam(reqSkills []string, people [][]string) []int {
 			copy(candidate, team)
 			candidate = append(candidate, i)
 			idx, inDp := pos[newState]
+			// keep the candidate only when it beats the recorded team
 			accept := !inDp || len(teams[idx]) > len(candidate)
 			if accept {
 				idx2, inNe := nePos[newState]
@@ -61,6 +66,7 @@ func smallestSufficientTeam(reqSkills []string, people [][]string) []int {
 		}
 	}
 
+	// team covering every required skill, sorted for a deterministic order
 	res := append([]int(nil), teams[pos[full]]...)
 	sort.Ints(res)
 	return res

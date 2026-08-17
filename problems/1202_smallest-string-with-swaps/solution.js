@@ -9,6 +9,7 @@ var smallestStringWithSwaps = function (s, pairs) {
     for (let i = 0; i < n; i++) parent[i] = i;
 
     const find = (x) => {
+        // path halving keeps the trees shallow
         while (parent[x] !== x) {
             parent[x] = parent[parent[x]];
             x = parent[x];
@@ -16,6 +17,8 @@ var smallestStringWithSwaps = function (s, pairs) {
         return x;
     };
 
+    // chained swaps let any two indices in one component exchange, so a
+    // component's character multiset is fixed but freely permutable
     for (const [a, b] of pairs) {
         const ra = find(a);
         const rb = find(b);
@@ -30,6 +33,8 @@ var smallestStringWithSwaps = function (s, pairs) {
     }
 
     const result = s.split("");
+    // smallest characters to the smallest indices of each component;
+    // components are independent so this is globally optimal
     for (const indices of groups.values()) {
         const chars = indices.map((i) => result[i]).sort();
         indices.sort((a, b) => a - b);

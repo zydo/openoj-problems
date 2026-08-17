@@ -19,6 +19,8 @@ Output: [1,2,2,2]
 Explanation: For each person, we return the number of flowers in full bloom during their arrival.
 ```
 
+![Flowers in bloom at each time 1 through 13 with the four people below; the answers are 1, 2, 2 and 2.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -26,6 +28,8 @@ Input: flowers = [[1,10],[3,3]], people = [3,3,2]
 Output: [2,2,1]
 Explanation: For each person, we return the number of flowers in full bloom during their arrival.
 ```
+
+![Flowers in bloom at each time 1 through 10; two people arrive at t = 3 (answer 2) and one at t = 2 (answer 1).](figures/example-2.svg)
 
 ### Constraints
 

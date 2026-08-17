@@ -19,6 +19,8 @@ The first path has a sum of 5 + 2 + 4 + 5 + 2 = 18 which is divisible by 3.
 The second path has a sum of 5 + 3 + 0 + 5 + 2 = 15 which is divisible by 3.
 ```
 
+![The two paths with sums 18 (right, right, down, down) and 15 (down, right, right, down), both divisible by 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -27,6 +29,8 @@ Output: 1
 Explanation: The path has a sum of 0 + 0 = 0 which is divisible by 5.
 ```
 
+![The 1 x 2 grid; its only path sums to 0.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -34,6 +38,8 @@ Input: grid = [[7,3,4,9],[2,3,6,2],[2,3,7,0]], k = 1
 Output: 10
 Explanation: Every integer is divisible by 1 so the sum of the elements on every possible path is divisible by k.
 ```
+
+![The 3 x 4 grid; all 10 paths qualify when k = 1.](figures/example-3.svg)
 
 ### Constraints
 

@@ -25,6 +25,8 @@ It can be shown that we need to remove at least 2 obstacles, so we return 2.
 Note that there may be other ways to remove 2 obstacles to create a path.
 ```
 
+![The grid before and after removing the obstacles at (0,1) and (0,2); the cleared top row opens a path to (2,2).](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,6 +35,8 @@ Output: 0
 Explanation: We can move from (0, 0) to (2, 4) without removing any
 obstacles, so we return 0.
 ```
+
+![The 3 x 5 grid; a free route already links (0,0) to (2,4).](figures/example-2.svg)
 
 ### Constraints
 

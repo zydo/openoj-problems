@@ -5,6 +5,7 @@ impl Solution {
         let mut parent: Vec<usize> = (0..n).collect();
 
         fn find(parent: &mut Vec<usize>, mut x: usize) -> usize {
+            // path halving keeps the trees shallow
             while parent[x] != x {
                 parent[x] = parent[parent[x]];
                 x = parent[x];
@@ -12,6 +13,8 @@ impl Solution {
             x
         }
 
+        // chained swaps let any two indices in one component exchange, so a
+        // component's character multiset is fixed but freely permutable
         for pair in &pairs {
             let ra = find(&mut parent, pair[0] as usize);
             let rb = find(&mut parent, pair[1] as usize);
@@ -28,6 +31,8 @@ impl Solution {
         }
 
         let mut result = bytes;
+        // smallest characters to the smallest indices of each component;
+        // components are independent so this is globally optimal
         for (_, mut indices) in groups {
             indices.sort_unstable();
             let mut chars: Vec<u8> = indices.iter().map(|&i| result[i]).collect();

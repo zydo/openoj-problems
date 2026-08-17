@@ -18,7 +18,7 @@
   </g>
   <g fill="#b57f30" font-size="12.5" font-weight="600" text-anchor="middle">
     <text x="210" y="78">3</text>
-    <text x="210" y="188">2</text>
+    <text x="210" y="216">2</text>
   </g>
-  <text x="210" y="248" text-anchor="middle" fill="#1a2026" font-size="13.5">no trip uses 3 distinct highways → <tspan fill="#4169E1" font-weight="700">-1</tspan></text>
+  <text x="210" y="248" text-anchor="middle" fill="#1a2026" font-size="13.5">no valid trip of length k = 2 exists → <tspan fill="#4169E1" font-weight="700">-1</tspan></text>
 </svg>

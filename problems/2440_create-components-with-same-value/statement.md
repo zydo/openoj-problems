@@ -24,6 +24,8 @@ Output: 2
 Explanation: We can delete the edges [0,1] and [3,4]. The created components are nodes [0], [1,2,3] and [4]. The sum of the values in each component equals 6. It can be proven that no better deletion exists, so the answer is 2.
 ```
 
+![The tree with the deleted edges dashed; the components 0, 1-2-3 and 4 each sum to 6.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

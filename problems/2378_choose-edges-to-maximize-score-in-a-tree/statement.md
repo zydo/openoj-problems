@@ -34,6 +34,8 @@ The total score is 5 + 6 = 11.
 It can be shown that no better score can be obtained.
 ```
 
+![The tree with the chosen edges of weights 5 and 6 highlighted for a score of 11.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -42,6 +44,8 @@ Output: 7
 Explanation: We choose the edge with weight 7.
 Note that we cannot choose more than one edge because all edges are adjacent to each other.
 ```
+
+![Every edge meets node 0, so only the edge of weight 7 can be chosen.](figures/example-2.svg)
 
 ### Constraints
 

@@ -12,6 +12,9 @@ class Solution {
         }
         // b[0..m) is sorted and distinct
 
+        // dp: strictly increasing prefix whose last value is v -> min ops.
+        // keeping arr1[0] costs 0; any smaller replacement costs 1 (larger
+        // replacements are dominated by keeping)
         Map<Integer, Integer> dp = new HashMap<>();
         dp.put(arr1[0], 0);
         for (int i = 0; i < m; i++) {
@@ -23,10 +26,13 @@ class Solution {
             for (Map.Entry<Integer, Integer> kv : dp.entrySet()) {
                 int last = kv.getKey();
                 int ops = kv.getValue();
+                // keep arr1[i] when it strictly exceeds last: no cost
                 if (arr1[i] > last) {
                     Integer cur = ndp.get(arr1[i]);
                     if (cur == null || cur > ops) ndp.put(arr1[i], ops);
                 }
+                // replace with the smallest arr2 value > last: the smallest
+                // choice leaves the most room for what follows; costs 1 op
                 int idx = upperBound(b, m, last);
                 if (idx < m) {
                     int v = b[idx];
@@ -36,6 +42,7 @@ class Solution {
                 }
             }
             dp = ndp;
+            // no state survives: a strictly increasing arrangement is impossible
             if (dp.isEmpty()) return -1;
         }
 

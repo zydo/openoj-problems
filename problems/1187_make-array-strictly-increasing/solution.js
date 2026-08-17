@@ -19,6 +19,9 @@ var makeArrayIncreasing = function (arr1, arr2) {
         return lo;
     };
 
+    // dp: strictly increasing prefix whose last value is v -> min ops.
+    // keeping arr1[0] costs 0; any smaller replacement costs 1 (larger
+    // replacements are dominated by keeping)
     const dp = new Map();
     dp.set(arr1[0], 0);
     for (const v of b) {
@@ -28,10 +31,13 @@ var makeArrayIncreasing = function (arr1, arr2) {
     for (let i = 1; i < arr1.length; i++) {
         const ndp = new Map();
         for (const [last, ops] of dp) {
+            // keep arr1[i] when it strictly exceeds last: no cost
             if (arr1[i] > last) {
                 const cur = ndp.get(arr1[i]);
                 if (cur === undefined || cur > ops) ndp.set(arr1[i], ops);
             }
+            // replace with the smallest arr2 value > last: the smallest
+            // choice leaves the most room for what follows; costs 1 op
             const idx = bisectRight(last);
             if (idx < m) {
                 const v = b[idx];
@@ -40,6 +46,7 @@ var makeArrayIncreasing = function (arr1, arr2) {
                 if (cur === undefined || cur > cost) ndp.set(v, cost);
             }
         }
+        // no state survives: a strictly increasing arrangement is impossible
         if (ndp.size === 0) return -1;
         dp.clear();
         for (const [k, v] of ndp) dp.set(k, v);

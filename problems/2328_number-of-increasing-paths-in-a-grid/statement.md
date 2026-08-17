@@ -24,6 +24,8 @@ Explanation: The strictly increasing paths are:
 The total number of paths is 4 + 3 + 1 = 8.
 ```
 
+![The 2 x 2 grid holding 4 length-1 paths, 3 length-2 paths and 1 length-3 path.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

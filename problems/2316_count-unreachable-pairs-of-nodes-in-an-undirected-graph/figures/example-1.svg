@@ -11,9 +11,9 @@
     <circle cx="290" cy="160" r="21"/>
   </g>
   <g text-anchor="middle" font-weight="700" fill="#1a2026">
-    <text x="200" y="45">0</text>
-    <text x="110" y="165">1</text>
-    <text x="290" y="165">2</text>
+    <text x="200" y="45">2</text>
+    <text x="110" y="165">0</text>
+    <text x="290" y="165">1</text>
   </g>
   <text x="200" y="212" text-anchor="middle" fill="#1a2026" font-size="13.5">every node reaches every other → <tspan fill="#4169E1" font-weight="700">0</tspan> unreachable pairs</text>
 </svg>

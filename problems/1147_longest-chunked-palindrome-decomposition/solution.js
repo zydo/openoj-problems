@@ -10,11 +10,14 @@ var longestDecomposition = function (text) {
     while (left < right) {
         let size = 1;
         let matched = false;
+        // prefix and suffix of equal size must not overlap
         while (left + size <= right - size) {
             if (
                 text.slice(left, left + size) ===
                 text.slice(right - size, right)
             ) {
+                // shortest matching pair first: an exchange argument shows
+                // splitting a longer pair here never lowers the count
                 count += 2;
                 left += size;
                 right -= size;
@@ -24,6 +27,7 @@ var longestDecomposition = function (text) {
             size += 1;
         }
         if (!matched) {
+            // no size pairs: the entire remainder is one final chunk
             count += 1;
             break;
         }

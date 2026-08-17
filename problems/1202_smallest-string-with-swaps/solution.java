@@ -5,6 +5,8 @@ class Solution {
         int[] parent = new int[n];
         for (int i = 0; i < n; i++) parent[i] = i;
 
+        // chained swaps let any two indices in one component exchange, so a
+        // component's character multiset is fixed but freely permutable
         for (int[] pair : pairs) {
             int ra = find(parent, pair[0]);
             int rb = find(parent, pair[1]);
@@ -21,6 +23,8 @@ class Solution {
         }
 
         char[] result = s.toCharArray();
+        // smallest characters to the smallest indices of each component;
+        // components are independent so this is globally optimal
         for (java.util.List<Integer> indices : groups.values()) {
             java.util.Collections.sort(indices);
             char[] chars = new char[indices.size()];
@@ -36,6 +40,7 @@ class Solution {
     }
 
     private int find(int[] parent, int x) {
+        // path halving keeps the trees shallow
         while (parent[x] != x) {
             parent[x] = parent[parent[x]];
             x = parent[x];

@@ -25,6 +25,8 @@ It has a product of 15 * 20 * 6 * 1 * 10 = 18000 which has 3 trailing zeros.
 It can be shown that this is the maximum trailing zeros in the product of a cornered path.
 ```
 
+![Three copies of the grid: the left one highlights the valid cornered path with product 15 x 20 x 6 x 1 x 10 = 18000 (3 trailing zeros); the other two highlight walks that are not cornered paths.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,6 +35,8 @@ Output: 0
 Explanation: The grid is shown in the figure above.
 There are no cornered paths in the grid that result in a product with a trailing zero.
 ```
+
+![The 3 x 3 grid; every cornered path here has a product with no trailing zero.](figures/example-2.svg)
 
 ### Constraints
 

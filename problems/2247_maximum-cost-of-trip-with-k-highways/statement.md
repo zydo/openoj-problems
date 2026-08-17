@@ -29,6 +29,8 @@ Note that the trip 4 -> 1 -> 0 -> 1 is not allowed because you visit the
 city 1 twice.
 ```
 
+![The highway network with the trip 0 to 1 to 4 to 3 highlighted; its cost is 4 + 11 + 2 = 17.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -36,6 +38,8 @@ Input: n = 4, highways = [[0,1,3],[2,3,2]], k = 2
 Output: -1
 Explanation: There are no valid trips of length 2, so return -1.
 ```
+
+![Two disconnected highway pairs, so no trip of length 2 exists.](figures/example-2.svg)
 
 ### Constraints
 

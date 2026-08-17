@@ -34,6 +34,8 @@ There is 1 additional good path: 1 -> 0 -> 2 -> 4.
 Note that 0 -> 2 -> 3 is not a good path because vals[2] > vals[0].
 ```
 
+![The tree with values beside each node; the good path 1 - 0 - 2 - 4 joins two nodes of value 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -43,6 +45,8 @@ Explanation: There are 5 good paths consisting of a single node.
 There are 2 additional good paths: 0 -> 1 and 2 -> 3.
 ```
 
+![The tree with values beside each node; the good paths 0 - 1 and 2 - 3 join equal-valued neighbors.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -50,6 +54,8 @@ Input: vals = [1], edges = []
 Output: 1
 Explanation: The tree consists of only one node, so there is one good path.
 ```
+
+![The tree is a single node of value 1, which is itself a good path.](figures/example-3.svg)
 
 ### Constraints
 

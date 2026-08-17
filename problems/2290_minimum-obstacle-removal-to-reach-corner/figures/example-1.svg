@@ -20,8 +20,8 @@
   <text x="276" y="112" text-anchor="middle" fill="#5c6b76" font-size="12.5">remove (0,1) and (0,2)</text>
   <g stroke="#42525e" stroke-width="1.4">
     <rect x="350" y="44" width="54" height="54" fill="#ffffff"/>
-    <rect x="404" y="44" width="54" height="54" fill="#e6ecfb" stroke="#4169E1" stroke-width="1.8"/>
-    <rect x="458" y="44" width="54" height="54" fill="#e6ecfb" stroke="#4169E1" stroke-width="1.8"/>
+    <rect x="404" y="44" width="54" height="54" fill="#ffffff" stroke="#4169E1" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <rect x="458" y="44" width="54" height="54" fill="#ffffff" stroke="#4169E1" stroke-width="1.6" stroke-dasharray="5 4"/>
     <rect x="350" y="98" width="54" height="54" fill="#55616c"/>
     <rect x="404" y="98" width="54" height="54" fill="#55616c"/>
     <rect x="458" y="98" width="54" height="54" fill="#ffffff"/>

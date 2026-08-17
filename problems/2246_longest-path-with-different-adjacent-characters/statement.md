@@ -25,6 +25,8 @@ so 3 is returned. It can be proven that there is no longer path that satisfies
 the conditions.
 ```
 
+![The tree with letters beside each node; the highlighted path 0 - 1 - 3 spells a, b, c and has length 3.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -34,6 +36,8 @@ Explanation: The longest path where each two adjacent nodes have different
 characters is the path: 2 -> 0 -> 3. The length of this path is 3, so 3 is
 returned.
 ```
+
+![The tree with letters beside each node; the highlighted path 2 - 0 - 3 spells b, a, c and has length 3.](figures/example-2.svg)
 
 ### Constraints
 

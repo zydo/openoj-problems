@@ -26,6 +26,8 @@ You will still be able to safely reach the safehouse.
 Staying for more than 3 minutes will not allow you to safely reach the safehouse.
 ```
 
+![The 5 x 7 grid at t = 0, after waiting 3 minutes, after the first move at t = 4, and on arrival at t = 13: staying 3 minutes still reaches the safehouse.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -36,6 +38,8 @@ Fire will spread to any cell you move towards and it is impossible to safely rea
 Thus, -1 is returned.
 ```
 
+![The grid at t = 0 and t = 1: moving right immediately, the fire reaches every cell you step toward.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -45,6 +49,8 @@ Explanation: The figure above shows the initial grid.
 Notice that the fire is contained by walls and you will always be able to safely reach the safehouse.
 Thus, 10^9 is returned.
 ```
+
+![The initial 3 x 3 grid: walls contain the fire, so the safehouse is always reachable.](figures/example-3.svg)
 
 ### Constraints
 

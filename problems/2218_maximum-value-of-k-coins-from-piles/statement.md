@@ -23,6 +23,8 @@ The above diagram shows the different ways we can choose k coins.
 The maximum total we can obtain is 101.
 ```
 
+![Three ways to take k = 2 coins from the two piles: 1 and 100 from pile 0 for 101, 1 and 7 for 8, or 7 and 8 for 15.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

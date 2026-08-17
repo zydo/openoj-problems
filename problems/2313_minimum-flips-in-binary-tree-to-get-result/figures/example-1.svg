@@ -55,7 +55,7 @@
     <text x="465" y="122">NOT</text>
     <text x="605" y="122">XOR</text>
     <text x="425" y="198">OR</text>
-    <text x="460" y="272">true</text>
+    <text x="460" y="272">false</text>
     <text x="650" y="272">true</text>
   </g>
   <g text-anchor="middle" font-size="12.5" font-weight="700" fill="#4169E1">

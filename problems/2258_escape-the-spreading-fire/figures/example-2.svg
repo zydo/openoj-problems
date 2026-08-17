@@ -36,7 +36,7 @@
   <rect x="512" y="144" width="44" height="44" fill="#ffffff" stroke="#42525e" stroke-width="1.3"/>
   <path d="M 527.0 165.0 L 534.0 158.0 L 541.0 165.0 Z" fill="#3f8f5f"/><rect x="528.5" y="165.0" width="11" height="7.5" fill="#dff0e6" stroke="#3f8f5f" stroke-width="1.4"/>
   <line x1="252" y1="122" x2="364" y2="122" stroke="#42525e" stroke-width="1.6" marker-end="url(#arrow)"/>
-  <text x="308" y="111" text-anchor="middle" fill="#5c6b76" font-size="12.5">move right</text>
+  <text x="308" y="111" text-anchor="middle" fill="#5c6b76" font-size="12.5">1 min</text>
     <g font-size="12.5" fill="#1a2026">
   <rect x="60" y="224" width="16" height="16" fill="#ffffff" stroke="#42525e" stroke-width="1.3"/>
   <text x="82" y="236.5">grass</text>

@@ -40,6 +40,8 @@ Explanation: It can be shown that a minimum of 2 nodes have to be flipped to
 make the root of the tree evaluate to true.
 ```
 
+![The expression tree before and after flipping two leaves: OR gets two false leaves and XOR one false leaf, so the AND root evaluates to true.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

@@ -5,6 +5,7 @@ function minimumSemesters(n: number, relations: number[][]): number {
         adjacency[prev].push(nxt);
         indegree[nxt] += 1;
     }
+    // semester 1: every course with no prerequisites
     const queue: number[] = [];
     for (let i = 1; i <= n; i++) {
         if (indegree[i] === 0) {
@@ -13,7 +14,8 @@ function minimumSemesters(n: number, relations: number[][]): number {
     }
     let semesters = 0;
     let taken = 0;
-    // Level-by-level BFS using index ranges.
+    // Level-by-level BFS using index ranges: one range drained per semester
+    // (the answer is the longest prerequisite chain).
     let start = 0;
     while (start < queue.length) {
         semesters += 1;
@@ -23,6 +25,7 @@ function minimumSemesters(n: number, relations: number[][]): number {
             taken += 1;
             for (const nxt of adjacency[course]) {
                 indegree[nxt] -= 1;
+                // prerequisite count hits zero: ready for next semester
                 if (indegree[nxt] === 0) {
                     queue.push(nxt);
                 }
@@ -30,5 +33,6 @@ function minimumSemesters(n: number, relations: number[][]): number {
         }
         start = end;
     }
+    // fewer than n taken means a cycle kept some courses at indegree > 0
     return taken === n ? semesters : -1;
 }

@@ -32,6 +32,8 @@ Note that the sequences [3,1,2,0] and [1,0,2,3] are also valid and have a score 
 The sequence [0,3,2,4] is not valid since no edge connects nodes 0 and 3.
 ```
 
+![The example graph with the chosen sequence 0 - 1 - 2 - 3 highlighted in blue; its score is 5 + 2 + 9 + 8 = 24.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -39,6 +41,8 @@ Input: scores = [9,20,6,4,11,12], edges = [[0,3],[5,3],[2,4],[1,3]]
 Output: -1
 Explanation: There are no valid node sequences of length 4, so we return -1.
 ```
+
+![The example graph: node 3 links to 0, 1 and 5, while 2 links only to 4, so no sequence of four distinct nodes exists.](figures/example-2.svg)
 
 ### Constraints
 
