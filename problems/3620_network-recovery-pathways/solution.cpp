@@ -9,6 +9,8 @@ class Solution {
             indeg[e[1]] += 1;
         }
 
+        // Kahn's algorithm: the topological order is computed once and reused
+        // by every feasibility check below (the graph is a DAG).
         deque<int> queue;
         for (int i = 0; i < n; i++)
             if (indeg[i] == 0)
@@ -24,12 +26,18 @@ class Solution {
             }
         }
 
+        // Feasibility is monotone in the threshold (lowering it only adds
+        // edges), so binary-search the sorted distinct edge costs for the
+        // largest feasible score.
         set<int> costSet;
         for (auto &e : edges)
             costSet.insert(e[2]);
         vector<int> costs(costSet.begin(), costSet.end());
 
         const long long INF = LLONG_MAX;
+        // feasible(s): a path from 0 to n-1 within budget k exists using only
+        // edges of cost >= s and only online nodes. The cheapest such path is
+        // the right witness, so distances are minimized in topological order.
         auto feasible = [&](long long s) {
             vector<long long> dist(n, INF);
             dist[0] = 0;
@@ -47,6 +55,8 @@ class Solution {
             return dist[n - 1] <= k;
         };
 
+        // If even with every edge allowed no budget-feasible path exists, no
+        // score is achievable.
         if (!feasible(0))
             return -1;
         if (costs.empty())

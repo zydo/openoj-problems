@@ -2,6 +2,7 @@ class Solution {
 
     public int[] longestCommonPrefix(String[] words, int k) {
         int n = words.length;
+        // With one word gone there are fewer than k words, so no prefix survives.
         if (n - 1 < k) {
             return new int[n];
         }
@@ -18,6 +19,7 @@ class Solution {
         int[] cnt = new int[cap];
         int[] depth = new int[cap];
         int nodes = 1;
+        // A trie node at depth d is a prefix of length d shared by cnt words.
         for (String w : words) {
             int cur = 0;
             cnt[0]++;
@@ -37,6 +39,8 @@ class Solution {
         int[] top2 = new int[maxLen + 1];
         java.util.Arrays.fill(top1, -1);
         java.util.Arrays.fill(top2, -1);
+        // Keep the two distinct nodes per depth with cnt >= k: if the removed
+        // word's path covers the best one, the second is still off that path.
         for (int node = 0; node < nodes; node++) {
             if (cnt[node] >= k) {
                 int d = depth[node];
@@ -62,9 +66,11 @@ class Solution {
         for (int wi = 0; wi < n; wi++) {
             String w = words[wi];
             int tag = wi + 1;
+            // A unique timestamp marks this word's trie path; old marks never match.
             stamp[0] = tag;
             int cur = 0;
             int big = 0;
+            // On-path node survives the removal only with cnt >= k + 1.
             for (int i = 0; i < w.length(); i++) {
                 cur = children[cur * 26 + (w.charAt(i) - 'a')];
                 stamp[cur] = tag;
@@ -73,6 +79,7 @@ class Solution {
                 }
             }
             int fb = 0;
+            // Deepest off-path depth: top2 exists there, or top1 is off the path.
             for (int d : depths) {
                 if (top2[d] != -1) {
                     fb = d;

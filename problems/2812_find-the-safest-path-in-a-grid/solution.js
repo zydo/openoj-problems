@@ -4,6 +4,9 @@
  */
 var maximumSafenessFactor = function (grid) {
     const n = grid.length;
+    // Multi-source BFS from every thief at once: wavefront exploration
+    // makes dist[r][c] the minimum grid steps to the nearest thief —
+    // exactly the cell's safeness value.
     const dist = Array.from({ length: n }, () => new Array(n).fill(-1));
     let q = [];
     for (let r = 0; r < n; r++) {
@@ -33,6 +36,9 @@ var maximumSafenessFactor = function (grid) {
     }
 
     function reachable(threshold) {
+        // A path has factor >= threshold iff the corners stay connected
+        // after deleting cells with dist < threshold; endpoints below it
+        // fail immediately.
         if (dist[0][0] < threshold || dist[n - 1][n - 1] < threshold) {
             return false;
         }
@@ -63,6 +69,9 @@ var maximumSafenessFactor = function (grid) {
         return false;
     }
 
+    // Reachability is monotone in the threshold, so binary search the
+    // largest feasible v over [0, 2n]. A thief on a corner pins its dist
+    // to 0, capping the answer at 0.
     let lo = 0,
         hi = 2 * n,
         ans = 0;

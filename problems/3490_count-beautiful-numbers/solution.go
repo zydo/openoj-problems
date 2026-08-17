@@ -1,6 +1,7 @@
 import "fmt"
 
 func beautifulNumbers(l int, r int) int {
+	// Beautiful in [l, r] = count up to r minus count up to l - 1.
 	return int(countUpTo(int64(r)) - countUpTo(int64(l)-1))
 }
 
@@ -14,11 +15,16 @@ func countUpTo(x int64) int64 {
 		digits[i] = int(c - '0')
 	}
 	memo := make(map[uint64]int64)
+	// Fresh memo per bound: tight transitions depend on x's digits.
 	return dp(digits, memo, 0, true, false, 0, 1)
 }
 
+// State: position, tight (prefix equals x's), started (nonzero seen),
+// running digit sum and digit product — all that beauty depends on.
 func dp(digits []int, memo map[uint64]int64, pos int, tight bool, started bool, ssum int64, prod int64) int64 {
 	if pos == len(digits) {
+		// Beautiful iff a number was built and prod is a multiple of the sum;
+		// a 0 digit zeroes prod, and 0 is divisible by any positive sum.
 		if started && ssum > 0 && prod%ssum == 0 {
 			return 1
 		}
@@ -28,6 +34,7 @@ func dp(digits []int, memo map[uint64]int64, pos int, tight bool, started bool, 
 	if v, ok := memo[key]; ok {
 		return v
 	}
+	// A tight prefix is capped at x's digit; free prefixes may take any digit.
 	limit := 9
 	if tight {
 		limit = digits[pos]
@@ -35,6 +42,7 @@ func dp(digits []int, memo map[uint64]int64, pos int, tight bool, started bool, 
 	var res int64
 	for d := 0; d <= limit; d++ {
 		nt := tight && d == limit
+		// Leading zeros contaminate neither the sum nor the product.
 		if !started && d == 0 {
 			res += dp(digits, memo, pos+1, nt, false, 0, 1)
 		} else {

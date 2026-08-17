@@ -10,8 +10,12 @@ class Solution:
         for a, b in edges:
             graph[a].append(b)
             graph[b].append(a)
+        # Guess set of (parent, child) tuples gives O(1) direction checks.
         guess_set = set(map(tuple, guesses))
 
+        # Iterative DFS from root 0 records each node's parent and an order
+        # where parents precede children — rerooting without recursion, which
+        # also sidesteps recursion limits on deep trees.
         parent = [-1] * n
         order = []
         visited = [False] * n
@@ -27,12 +31,17 @@ class Solution:
                     stack.append(v)
 
         cnt = [0] * n
+        # Correct-guess count for root 0: one point per edge whose
+        # (parent, child) direction was guessed.
         for v in range(1, n):
             if (parent[v], v) in guess_set:
                 cnt[0] += 1
 
         ans = 1 if cnt[0] >= k else 0
         for u in order[1:]:
+            # Moving the root across edge p -> u flips only that one edge:
+            # guess (p, u) becomes wrong and reversed guess (u, p) becomes
+            # right. Parents come first in `order`, so cnt[p] is final here.
             p = parent[u]
             c = cnt[p]
             if (p, u) in guess_set:

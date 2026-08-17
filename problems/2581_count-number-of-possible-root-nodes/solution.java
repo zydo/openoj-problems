@@ -8,11 +8,15 @@ class Solution {
     public int rootCount(int[][] edges, int[][] guesses, int k) {
         int n = edges.length + 1;
         int[][] graph = buildAdj(edges, n);
+        // Guess set of packed (parent, child) keys gives O(1) direction checks.
         Set<Long> guessSet = new HashSet<>();
         for (int[] g : guesses) {
             guessSet.add(key(g[0], g[1]));
         }
 
+        // Iterative DFS from root 0 records each node's parent and an order
+        // where parents precede children — rerooting without recursion, which
+        // also sidesteps deep call stacks.
         int[] parent = new int[n];
         java.util.Arrays.fill(parent, -1);
         int[] order = new int[n];
@@ -35,6 +39,8 @@ class Solution {
         }
 
         int[] cnt = new int[n];
+        // Correct-guess count for root 0: one point per edge whose
+        // (parent, child) direction was guessed.
         for (int v = 1; v < n; v++) {
             if (guessSet.contains(key(parent[v], v))) {
                 cnt[0]++;
@@ -43,6 +49,9 @@ class Solution {
 
         int ans = cnt[0] >= k ? 1 : 0;
         for (int oi = 1; oi < orderLen; oi++) {
+            // Moving the root across edge p -> u flips only that one edge:
+            // guess (p, u) becomes wrong and reversed guess (u, p) becomes
+            // right. Parents come first in `order`, so cnt[p] is final here.
             int u = order[oi];
             int p = parent[u];
             int c = cnt[p];

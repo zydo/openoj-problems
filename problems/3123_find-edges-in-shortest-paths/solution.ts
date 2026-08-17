@@ -56,6 +56,7 @@ function findAnswer(n: number, edges: number[][]): boolean[] {
         pq.push([0, src]);
         while (pq.size() > 0) {
             const [d, u] = pq.pop();
+            // stale entry: dist[u] was improved after this was pushed
             if (d !== dist[u]) {
                 continue;
             }
@@ -72,13 +73,17 @@ function findAnswer(n: number, edges: number[][]): boolean[] {
 
     const dist0 = dijkstra(0);
     const distN = dijkstra(n - 1);
+    // reference length every shortest 0 -> n-1 path must match
     const total = dist0[n - 1];
+    // unreachable: no edge lies on a shortest path
     if (total === INF) {
         return new Array<boolean>(edges.length).fill(false);
     }
 
     const ans: boolean[] = [];
     for (const [u, v, w] of edges) {
+        // on a shortest path iff d0(one end) + w + dN(other end) == total,
+        // tested both ways since the undirected edge may be crossed either way
         if (
             dist0[u] + w + distN[v] === total ||
             dist0[v] + w + distN[u] === total

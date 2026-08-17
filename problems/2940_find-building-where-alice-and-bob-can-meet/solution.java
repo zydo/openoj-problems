@@ -5,6 +5,8 @@ class Solution {
 
     public int[] leftmostBuildingQueries(int[] heights, int[][] queries) {
         int n = heights.length;
+        // Max segment tree over heights, padded to a power of two: leaves hold
+        // heights, each parent the max of its children.
         size = 1;
         while (size < n) {
             size <<= 1;
@@ -18,6 +20,7 @@ class Solution {
         }
 
         int[] result = new int[queries.length];
+        // Movements only go rightward and strictly upward in height.
         for (int q = 0; q < queries.length; q++) {
             int a = queries[q][0];
             int b = queries[q][1];
@@ -31,6 +34,8 @@ class Solution {
             } else if (heights[a] < heights[b]) {
                 result[q] = b;
             } else {
+                // The taller building sets the bar both must clear strictly
+                // right of b; find the leftmost one above it.
                 long threshold = Math.max(heights[a], heights[b]);
                 result[q] = findFirst(1, 0, size, b + 1, n, threshold);
             }
@@ -38,6 +43,7 @@ class Solution {
         return result;
     }
 
+    // First index in [ql, qr) whose height exceeds threshold, or -1.
     private int findFirst(
         int node,
         int nl,
@@ -46,6 +52,7 @@ class Solution {
         int qr,
         long threshold
     ) {
+        // Prune any node outside the query range or whose max cannot qualify.
         if (nr <= ql || qr <= nl || seg[node] <= threshold) {
             return -1;
         }
@@ -53,6 +60,7 @@ class Solution {
             return nl;
         }
         int mid = (nl + nr) >>> 1;
+        // Left child first, so the first leaf reached is the leftmost hit.
         int res = findFirst(2 * node, nl, mid, ql, qr, threshold);
         if (res != -1) {
             return res;

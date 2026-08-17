@@ -6,6 +6,7 @@ import java.util.Map;
 class Solution {
 
     public int[] resultArray(int[] nums) {
+        // Compress distinct values to 1-based ranks for the two Fenwick trees.
         int[] sorted = nums.clone();
         java.util.Arrays.sort(sorted);
         List<Integer> vals = new ArrayList<>();
@@ -24,6 +25,7 @@ class Solution {
 
         List<Integer> arr1 = new ArrayList<>();
         List<Integer> arr2 = new ArrayList<>();
+        // Seed both arrays and their trees with the first two elements.
         arr1.add(nums[0]);
         arr2.add(nums[1]);
         add(tree1, comp.get(nums[0]), 1);
@@ -31,6 +33,7 @@ class Solution {
 
         for (int i = 2; i < nums.length; i++) {
             int x = nums[i];
+            // greaterCount = size - prefix count of ranks <= rank(x).
             int c1 = arr1.size() - query(tree1, comp.get(x));
             int c2 = arr2.size() - query(tree2, comp.get(x));
             if (c1 > c2) {
@@ -40,6 +43,7 @@ class Solution {
                 arr2.add(x);
                 add(tree2, comp.get(x), 1);
             } else {
+                // Equal counts: shorter array wins; ties on length go to arr1.
                 if (arr1.size() <= arr2.size()) {
                     arr1.add(x);
                     add(tree1, comp.get(x), 1);

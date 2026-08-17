@@ -5,13 +5,21 @@ class Solution:
     def maxDifference(self, s: str, k: int) -> int:
         n = len(s)
         best = -(10**18)
+        # Only digits '0'..'4' occur, so the 20 ordered pairs (a, b) with
+        # a != b cover every candidate "freq[a] odd, freq[b] even" answer.
         for a in range(5):
             for b in range(5):
                 if a == b:
                     continue
+                # diff[i] = (#a - #b) among the first i chars; pa/pb are the
+                # parities of those counts. A substring s[l..r-1] scores
+                # diff[r] - diff[l]; it is valid iff pa flips and pb does not.
                 diff = [0] * (n + 1)
                 pa = [0] * (n + 1)
                 pb = [0] * (n + 1)
+                # last_b_at[r]: index of the last b inside the first r chars.
+                # A left boundary l <= last_b_at[r] keeps at least one b in
+                # the window (its count must be even but nonzero).
                 last_b_at = [0] * (n + 1)
                 last_b = -1
                 for i in range(n):

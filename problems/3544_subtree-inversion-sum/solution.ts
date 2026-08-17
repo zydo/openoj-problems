@@ -10,6 +10,8 @@ function subtreeInversionSum(
         adj[v].push(u);
     }
 
+    // BFS from the root records each parent and an order whose reversal
+    // lists children before parents, so the DP below needs no recursion.
     const parent: number[] = new Array(n).fill(-1);
     parent[0] = -2;
     const order: number[] = [0];
@@ -23,10 +25,14 @@ function subtreeInversionSum(
         }
     }
 
+    // dp[u][flip][d]: best subtree sum of u given the parity of sign flips
+    // applied from ancestors and the edge distance d to the nearest inverted
+    // ancestor, capped at k since any larger distance behaves identically.
     const width = k + 1;
     const dp: Float64Array[][] = new Array(n);
     for (let idx = n - 1; idx >= 0; idx--) {
         const u = order[idx];
+        // Children are already computed; pool their tables per (flip, distance).
         const childSum: Float64Array[] = [
             new Float64Array(width),
             new Float64Array(width),
@@ -41,6 +47,9 @@ function subtreeInversionSum(
             }
         }
 
+        // Not inverting: children observe distance+1 (capped at k). Once the
+        // distance is >= k, inverting u is legal too: it flips the parity and
+        // resets the child distance to 1; keep the better of the two options.
         const table: Float64Array[] = [
             new Float64Array(width),
             new Float64Array(width),
@@ -64,5 +73,6 @@ function subtreeInversionSum(
         }
         dp[u] = table;
     }
+    // The root has no recent inversion above it, so it is free to invert.
     return dp[0][0][k];
 }

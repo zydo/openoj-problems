@@ -17,15 +17,16 @@ class Solution {
 
         long[] dist0 = dijkstra(n, adj, 0);
         long[] distN = dijkstra(n, adj, n - 1);
+        // reference length every shortest 0 -> n-1 path must match
         long total = dist0[n - 1];
         boolean[] ans = new boolean[edges.length];
+        // unreachable: no edge lies on a shortest path
         if (total == Long.MAX_VALUE) {
             return ans;
         }
         for (int i = 0; i < edges.length; i++) {
-            int u = edges[i][0],
-                v = edges[i][1],
-                w = edges[i][2];
+            // on a shortest path iff d0(one end) + w + dN(other end) == total,
+            // tested both ways since the undirected edge may be crossed either way
             if (
                 dist0[u] + w + distN[v] == total ||
                 dist0[v] + w + distN[u] == total
@@ -48,6 +49,7 @@ class Solution {
             long[] top = pq.poll();
             long d = top[0];
             int u = (int) top[1];
+            // stale entry: dist[u] was improved after this was pushed
             if (d != dist[u]) {
                 continue;
             }

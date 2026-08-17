@@ -6,10 +6,13 @@ impl Solution {
         if n == 1 {
             return true;
         }
+        // 1 has no prime factors, so it can never share an edge.
         if nums.iter().any(|&x| x == 1) {
             return false;
         }
 
+        // Sieve smallest prime factors once so any value decomposes into its
+        // distinct primes by repeated SPF division.
         let maxv = *nums.iter().max().unwrap() as usize;
         let mut spf: Vec<usize> = (0..=maxv).collect();
         let mut i = 2usize;
@@ -35,6 +38,10 @@ impl Solution {
         }
 
         let mut parent: Vec<usize> = (0..n).collect();
+        // Each prime is a hub chaining its indices: union against the
+        // previous claimer, then take ownership — consecutive links keep a
+        // prime's indices mutually connected with linearly many unions
+        // instead of quadratic.
         let mut last: HashMap<usize, usize> = HashMap::new();
         for (i, &x) in nums.iter().enumerate() {
             let mut v = x as usize;
@@ -54,6 +61,7 @@ impl Solution {
             }
         }
 
+        // All indices mutually reachable iff one component holds them all.
         let root = find(&mut parent, 0);
         (1..n).all(|i| find(&mut parent, i) == root)
     }

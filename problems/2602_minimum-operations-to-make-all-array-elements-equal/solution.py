@@ -12,8 +12,13 @@ class Solution:
             prefix[i + 1] = prefix[i] + x
         out = []
         for q in queries:
+            # Each query is the sum of |nums[i] - q|; sorted prefix sums make
+            # it one binary search plus O(1) arithmetic. j counts elements
+            # strictly below q (ties land right but contribute zero anyway).
             j = bisect_left(nums, q)
+            # Smaller elements are raised to q: q * j - their sum.
             left = q * j - prefix[j]
+            # Larger elements are lowered: their sum - q * (n - j).
             right = (prefix[n] - prefix[j]) - q * (n - j)
             out.append(left + right)
         return out

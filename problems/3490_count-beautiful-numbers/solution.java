@@ -4,6 +4,7 @@ import java.util.Map;
 class Solution {
 
     public int beautifulNumbers(int l, int r) {
+        // Beautiful in [l, r] = count up to r minus count up to l - 1.
         return (int) (count(r) - count(l - 1));
     }
 
@@ -17,9 +18,12 @@ class Solution {
             digits[i] = s.charAt(i) - '0';
         }
         Map<Long, Long> memo = new HashMap<>();
+        // The memo is scoped per bound: tight transitions depend on x's digits.
         return dp(digits, memo, 0, true, false, 0, 1);
     }
 
+    // State: position, tight (prefix equals x's), started (nonzero seen),
+    // running digit sum and digit product — all that beauty depends on.
     private long dp(
         int[] digits,
         Map<Long, Long> memo,
@@ -30,6 +34,8 @@ class Solution {
         long prod
     ) {
         if (pos == digits.length) {
+            // Beautiful iff a number was built and prod is a multiple of the sum;
+            // a 0 digit zeroes prod, and 0 is divisible by any positive sum.
             return started && ssum > 0 && prod % ssum == 0 ? 1 : 0;
         }
         long key = pack(pos, tight, started, ssum, prod);
@@ -37,10 +43,12 @@ class Solution {
         if (cached != null) {
             return cached;
         }
+        // A tight prefix is capped at x's digit; free prefixes may take any digit.
         int limit = tight ? digits[pos] : 9;
         long res = 0;
         for (int d = 0; d <= limit; d++) {
             boolean nt = tight && d == limit;
+            // Leading zeros contaminate neither the sum nor the product.
             if (!started && d == 0) {
                 res += dp(digits, memo, pos + 1, nt, false, 0, 1);
             } else {

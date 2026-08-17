@@ -1,6 +1,7 @@
 class Solution {
   public:
     vector<int> minimumCost(int n, vector<vector<int>> &edges, vector<vector<int>> &query) {
+        // Walks may repeat edges, so the optimum ANDs in every edge of the component.
         vector<int> parent(n), sz(n, 1);
         for (int i = 0; i < n; i++)
             parent[i] = i;
@@ -9,6 +10,7 @@ class Solution {
             unite(parent, sz, e[0], e[1]);
         }
 
+        // AND every edge weight into its component, keyed by root.
         unordered_map<int, int> compAnd;
         for (auto &e : edges) {
             int r = find(parent, e[0]);
@@ -20,6 +22,7 @@ class Solution {
             }
         }
 
+        // Different roots mean no walk exists; same root answers with the AND.
         vector<int> ans;
         ans.reserve(query.size());
         for (auto &q : query) {
@@ -35,6 +38,7 @@ class Solution {
     }
 
   private:
+    // Union-find: path halving in find, union by size in unite.
     int find(vector<int> &parent, int x) {
         while (parent[x] != x) {
             parent[x] = parent[parent[x]];

@@ -14,9 +14,11 @@ class Solution {
 
         List<Map<Character, Integer>> children = new ArrayList<>();
         List<Integer> best = new ArrayList<>();
+        // Trie over reversed words; node 0 is the root (empty suffix).
         children.add(new HashMap<>());
         best.add(-1);
 
+        // Insert each word backwards, annotating every visited node, root included.
         for (int i = 0; i < m; i++) {
             String word = wordsContainer[i];
             int node = 0;
@@ -40,9 +42,11 @@ class Solution {
         }
 
         int[] ans = new int[wordsQuery.length];
+        // Walk the reversed query as deep as the trie allows; deepest node's best wins.
         for (int q = 0; q < wordsQuery.length; q++) {
             String word = wordsQuery[q];
             int node = 0;
+            // Root's best answers the empty-suffix case (no child matched).
             int res = best.get(0);
             for (int j = word.length() - 1; j >= 0; j--) {
                 Integer nxt = children.get(node).get(word.charAt(j));
@@ -57,6 +61,7 @@ class Solution {
         return ans;
     }
 
+    // Tie-break: shorter word wins, then the smaller index.
     private boolean better(int[] lens, int a, int b) {
         if (b == -1) {
             return true;

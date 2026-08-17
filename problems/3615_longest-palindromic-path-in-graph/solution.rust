@@ -11,6 +11,9 @@ impl Solution {
         let codes: Vec<u8> = label.bytes().collect();
         let mut memo: Vec<i32> = vec![-1; (1usize << n) * n * n];
 
+        // dp(mask, left, right): best length reachable when mask is the visited
+        // set and left/right are the path endpoints. Invariant: the visited
+        // nodes spell a palindrome read from left to right.
         fn dp(
             adj: &Vec<Vec<usize>>,
             codes: &Vec<u8>,
@@ -24,7 +27,12 @@ impl Solution {
             if memo[idx] >= 0 {
                 return memo[idx];
             }
+            // The standing path already spells a palindrome, so its length is
+            // the floor every extension must beat.
             let mut best = mask.count_ones() as i32;
+            // Grow outward by one matched pair: u glues onto the left end, v
+            // onto the right end; they must be distinct, unvisited, and equally
+            // labeled so the path stays palindromic.
             for &u in &adj[left] {
                 if (mask >> u) & 1 == 1 {
                     continue;
@@ -54,6 +62,8 @@ impl Solution {
             best
         }
 
+        // Every palindrome has a center: seed odd paths from each single node
+        // and even paths from each equal-label adjacent pair.
         let mut answer: i32 = 1;
         for i in 0..n {
             let length = dp(&adj, &codes, &mut memo, n, 1usize << i, i, i);

@@ -18,6 +18,9 @@ class Solution {
             adj.get(e[1]).add(e[0]);
         }
 
+        // Undiscounted cost is sum(price[i] * freq[i]), so counting how
+        // many trip paths pass through each node decouples routing from
+        // the discount choice.
         int[] freq = new int[n];
         for (int[] trip : trips) {
             int start = trip[0],
@@ -39,6 +42,9 @@ class Solution {
                     }
                 }
             }
+            // Walking back from end through parent pointers touches
+            // exactly the unique trip path; halting after start also
+            // covers the trivial start == end trip.
             int cur = end;
             while (cur != -1) {
                 freq[cur]++;
@@ -47,6 +53,7 @@ class Solution {
             }
         }
 
+        // The answer is the better of the two root states.
         long[] res = dfs(0, -1, adj, price, freq);
         return (int) Math.min(res[0], res[1]);
     }
@@ -58,11 +65,16 @@ class Solution {
         int[] price,
         int[] freq
     ) {
+        // Classic independent-set tree DP: dfs returns the min subtree
+        // cost with v's price kept full (dp0) versus halved (dp1).
         long dp0 = (long) price[v] * freq[v];
         long dp1 = ((long) price[v] / 2) * freq[v];
         for (int u : adj.get(v)) {
             if (u == p) continue;
             long[] c = dfs(u, v, adj, price, freq);
+            // A full node accepts children of either state; a halved
+            // node forces its children full since discounts apply only
+            // to non-adjacent nodes.
             dp0 += Math.min(c[0], c[1]);
             dp1 += c[0];
         }

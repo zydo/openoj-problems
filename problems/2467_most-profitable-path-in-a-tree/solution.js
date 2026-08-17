@@ -12,6 +12,8 @@ var mostProfitablePath = function (edges, bob, amount) {
         adj[b].push(a);
     }
 
+    // One BFS from the root orients the tree: depth[u] is Alice's
+    // arrival time, and order lists every node after its parent.
     const parent = new Array(n).fill(-1);
     const depth = new Array(n).fill(0);
     const seen = new Array(n).fill(false);
@@ -32,6 +34,8 @@ var mostProfitablePath = function (edges, bob, amount) {
         }
     }
 
+    // Bob has no choices: walk his unique path to the root, recording
+    // his arrival time at each node along it.
     const bobTime = new Map();
     let t = 0;
     let node = bob;
@@ -41,6 +45,10 @@ var mostProfitablePath = function (edges, bob, amount) {
         node = parent[node];
     }
 
+    // BFS order makes income[parent] final before u, so each root-to-node
+    // path sum builds in one sweep. gain compares arrivals: Bob later or
+    // absent -> full amount; simultaneous -> half (exact: amounts are
+    // even); Bob earlier -> gate already open, 0.
     const income = new Array(n).fill(0);
     let best = null;
     for (const u of order) {
@@ -55,6 +63,8 @@ var mostProfitablePath = function (edges, bob, amount) {
             gain = 0;
         }
         income[u] = (u !== 0 ? income[parent[u]] : 0) + gain;
+        // Alice must keep moving, so she stops at a leaf: a non-root
+        // node with exactly one neighbor.
         if (u !== 0 && adj[u].length === 1) {
             if (best === null || income[u] > best) best = income[u];
         }

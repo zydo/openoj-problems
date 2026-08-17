@@ -3,6 +3,8 @@ function leftmostBuildingQueries(
     queries: number[][],
 ): number[] {
     const n = heights.length;
+    // Max segment tree over heights, padded to a power of two: leaves hold
+    // heights, each parent the max of its children.
     let size = 1;
     while (size < n) {
         size <<= 1;
@@ -15,6 +17,7 @@ function leftmostBuildingQueries(
         seg[i] = Math.max(seg[2 * i], seg[2 * i + 1]);
     }
 
+    // First index in [ql, qr) whose height exceeds threshold, or -1.
     function findFirst(
         node: number,
         nl: number,
@@ -23,6 +26,7 @@ function leftmostBuildingQueries(
         qr: number,
         threshold: number,
     ): number {
+        // Prune any node outside the query range or whose max cannot qualify.
         if (nr <= ql || qr <= nl || seg[node] <= threshold) {
             return -1;
         }
@@ -30,6 +34,7 @@ function leftmostBuildingQueries(
             return nl;
         }
         const mid = (nl + nr) >> 1;
+        // Left child first, so the first leaf reached is the leftmost hit.
         const res = findFirst(2 * node, nl, mid, ql, qr, threshold);
         if (res !== -1) {
             return res;
@@ -38,6 +43,7 @@ function leftmostBuildingQueries(
     }
 
     const result: number[] = [];
+    // Movements only go rightward and strictly upward in height.
     for (const [a0, b0] of queries) {
         let a = a0;
         let b = b0;
@@ -51,6 +57,8 @@ function leftmostBuildingQueries(
         } else if (heights[a] < heights[b]) {
             result.push(b);
         } else {
+            // The taller building sets the bar both must clear strictly
+            // right of b; find the leftmost one above it.
             const threshold = heights[a] > heights[b] ? heights[a] : heights[b];
             result.push(findFirst(1, 0, size, b + 1, n, threshold));
         }

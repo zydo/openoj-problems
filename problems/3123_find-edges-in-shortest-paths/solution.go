@@ -20,6 +20,7 @@ func findAnswer(n int, edges [][]int) []bool {
 		for h.Len() > 0 {
 			top := heap.Pop(h).([2]int64)
 			d, u := top[0], int(top[1])
+			// stale entry: dist[u] was improved after this was pushed
 			if d != dist[u] {
 				continue
 			}
@@ -37,14 +38,18 @@ func findAnswer(n int, edges [][]int) []bool {
 
 	dist0 := dijkstra(0)
 	distN := dijkstra(n - 1)
+	// reference length every shortest 0 -> n-1 path must match
 	total := dist0[n-1]
 
 	ans := make([]bool, len(edges))
+	// unreachable: no edge lies on a shortest path
 	if total == inf {
 		return ans
 	}
 	for i, e := range edges {
 		u, v, w := e[0], e[1], int64(e[2])
+		// on a shortest path iff d0(one end) + w + dN(other end) == total,
+		// tested both ways since the undirected edge may be crossed either way
 		if dist0[u]+w+distN[v] == total || dist0[v]+w+distN[u] == total {
 			ans[i] = true
 		}

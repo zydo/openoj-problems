@@ -33,15 +33,24 @@ function maxScore(nums1: number[], nums2: number[], k: number): number {
         }
         return top;
     };
+    // merged sweeps pairs in descending nums2 order, so when it reaches a
+    // pair, that pair's nums2 is the minimum of any set drawn from pairs seen
+    // so far — the sweep enumerates the min provider.
     let total = 0;
     let best = 0;
     for (const [, j] of merged) {
         const a = nums1[j];
         push(a);
         total += a;
+        // Min-heap of size k with a running sum holds the k largest nums1
+        // seen so far; ejecting the smallest keeps the top-k sum correct.
         if (heap.length > k) {
             total -= pop();
         }
+        // With k companions available, total * nums2[j] is the best score
+        // under the assumption that nums2[j] is the minimum; take the max
+        // over the sweep. Ties in nums2 are safe: the last of them still
+        // sees all the others in the heap.
         if (heap.length === k) {
             const b = total * nums2[j];
             if (b > best) best = b;

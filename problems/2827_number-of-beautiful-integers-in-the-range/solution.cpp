@@ -5,6 +5,10 @@ class Solution {
     }
 
   private:
+    // Digit DP tracking everything the two conditions need: balance (odd
+    // digits minus even digits written so far) and value mod k. Memoization
+    // shares all loose subproblems, so the recursion enumerates states, not
+    // numbers.
     long long dp(int pos, int tight, int started, int balance, int mod, const vector<int> &digits,
                  int k, vector<long long> &memo) {
         int len = (int)digits.size();
@@ -15,10 +19,13 @@ class Solution {
             (long long)(((pos * 2 + tight) * 2 + started) * 21 + balance + 10) * k + mod;
         if (memo[key] >= 0)
             return memo[key];
+        // tight: prefix still equals the bound's, capping this digit.
         int limit = tight == 1 ? digits[pos] : 9;
         long long total = 0;
         for (int d = 0; d <= limit; d++) {
             int nextTight = (tight == 1 && d == limit) ? 1 : 0;
+            // A leading zero writes nothing: it leaves the balance
+            // untouched and does not count as an even digit.
             if (started == 0 && d == 0) {
                 total += dp(pos + 1, nextTight, 0, balance, (mod * 10 + d) % k, digits, k, memo);
             } else {
@@ -30,6 +37,9 @@ class Solution {
         return total;
     }
 
+    // countUpTo(n) = beautiful integers in [1, n]; the answer is the
+    // difference of the two bounds. f(0) returns 0, so low = 1 contributes
+    // nothing on the low side.
     long long countUpTo(long long n, int k) {
         if (n <= 0)
             return 0;

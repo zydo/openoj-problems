@@ -6,6 +6,8 @@ func subtreeInversionSum(edges [][]int, nums []int, k int) int64 {
 		adj[e[1]] = append(adj[e[1]], e[0])
 	}
 
+	// BFS from the root records each parent and an order whose reversal
+	// lists children before parents, so the DP below needs no recursion.
 	parent := make([]int, n)
 	for i := range parent {
 		parent[i] = -1
@@ -23,10 +25,14 @@ func subtreeInversionSum(edges [][]int, nums []int, k int) int64 {
 		}
 	}
 
+	// dp[u][flip][d]: best subtree sum of u given the parity of sign flips
+	// applied from ancestors and the edge distance d to the nearest inverted
+	// ancestor, capped at k since any larger distance behaves identically.
 	width := k + 1
 	dp := make([][][]int64, n)
 	for idx := n - 1; idx >= 0; idx-- {
 		u := order[idx]
+		// Children are already computed; pool their tables per (flip, distance).
 		childSum := make([][]int64, 2)
 		for f := range childSum {
 			childSum[f] = make([]int64, width)
@@ -43,6 +49,9 @@ func subtreeInversionSum(edges [][]int, nums []int, k int) int64 {
 			}
 		}
 
+		// Not inverting: children observe distance+1 (capped at k). Once the
+		// distance is >= k, inverting u is legal too: it flips the parity and
+		// resets the child distance to 1; keep the better of the two options.
 		table := make([][]int64, 2)
 		for f := range table {
 			table[f] = make([]int64, width)
@@ -76,5 +85,6 @@ func subtreeInversionSum(edges [][]int, nums []int, k int) int64 {
 		}
 		dp[u] = table
 	}
+	// The root has no recent inversion above it, so it is free to invert.
 	return dp[0][0][k]
 }

@@ -37,7 +37,12 @@ var makePrefSumNonNegative = function (nums) {
     let ops = 0;
     for (const num of nums) {
         prefix += num;
+        // Every element seen so far is a deferral candidate; a negative is
+        // handled not when read but at the first prefix it poisons.
         push(num);
+        // Prefix dipped below zero: defer the smallest element seen so far
+        // to the end. Removing the minimum raises the prefix the most, so by
+        // an exchange argument this uses the fewest operations.
         while (prefix < 0) {
             prefix -= pop();
             ops += 1;

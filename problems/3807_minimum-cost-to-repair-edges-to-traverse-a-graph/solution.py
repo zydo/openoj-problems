@@ -13,10 +13,15 @@ class Solution:
             if w > max_w:
                 max_w = w
 
+        # Budget `money` repairs exactly the edges with w <= money, so raising
+        # money only adds usable edges: feasibility is monotone and the answer
+        # is binary-searchable.
         def can(money):
             dist = [-1] * n
             dist[0] = 0
             queue = deque([0])
+            # BFS explores level by level, so dist[v] is the fewest edges over
+            # available paths; nodes already at k edges are never expanded.
             while queue:
                 u = queue.popleft()
                 if dist[u] >= k:
@@ -27,6 +32,9 @@ class Solution:
                         queue.append(v)
             return dist[n - 1] != -1 and dist[n - 1] <= k
 
+        # If even repairing every edge fails (target unreachable, or every
+        # path longer than k), there is no answer; otherwise can(hi) always
+        # holds and the loop converges on the smallest feasible amount.
         if not can(max_w):
             return -1
         lo, hi = 0, max_w

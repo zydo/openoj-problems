@@ -23,6 +23,8 @@ Output: 4
 Explanation: The knight takes 4 moves to reach the pawn at (0, 0).
 ```
 
+![A small checkered board window with the knight at (1, 1) hopping a 4-move path to the pawn at (0, 0).](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -33,6 +35,8 @@ Bob picks the pawn at (3, 3) and captures it in two moves: (2, 2) -> (4, 1) -> (
 Alice picks the pawn at (1, 1) and captures it in four moves: (3, 3) -> (4, 1) -> (2, 2) -> (0, 3) -> (1, 1).
 ```
 
+![The knight starts at (0, 2); solid blue hops 1-2 take pawn 2 at (2, 2), dashed hops 3-4 take pawn 3 at (3, 3), and solid hops 5-8 take pawn 1 at (1, 1) — 8 moves in all.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
@@ -41,6 +45,8 @@ Output: 3
 Explanation: Alice picks the pawn at (2, 4) and captures it in two moves: (0, 0) -> (1, 2) -> (2, 4). Note that the pawn at (1, 2) is not captured.
 Bob picks the pawn at (1, 2) and captures it in one move: (2, 4) -> (1, 2).
 ```
+
+![The knight starts at (0, 0); solid hops 1-2 pass over pawn 1 at (1, 2) and capture pawn 2 at (2, 4), then the dashed hop 3 takes pawn 1 — 3 moves in all.](figures/example-3.svg)
 
 ### Constraints
 

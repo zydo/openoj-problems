@@ -7,6 +7,9 @@ class Solution {
             adj[e[1]].push_back(e[0]);
         }
 
+        // First sweep from node 0: one side's diameter endpoints. Any member
+        // of that set is itself an endpoint, so the second sweep's farthest
+        // nodes are the opposite endpoints.
         vector<char> oneEnd = bfs(n, adj, 0);
         int first = 0;
         for (int i = 0; i < n; i++) {
@@ -17,6 +20,7 @@ class Solution {
         }
         vector<char> otherEnd = bfs(n, adj, first);
 
+        // The union of the two endpoint sets is exactly the special nodes.
         string res(n, '0');
         for (int i = 0; i < n; i++) {
             if (oneEnd[i] || otherEnd[i]) {
@@ -27,6 +31,8 @@ class Solution {
     }
 
   private:
+    // Classic property: every node tying as farthest from src is the endpoint
+    // of some diameter path, so the sweep marks the whole farthest set.
     vector<char> bfs(int n, vector<vector<int>> &adj, int src) {
         vector<int> dist(n, -1);
         vector<int> queue;

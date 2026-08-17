@@ -10,6 +10,8 @@ func maximumScore(nums []int, k int) int {
 		}
 	}
 
+	// Smallest-prime-factor sieve: lets each value's distinct prime
+	// count be read off by repeated division, no trial division.
 	spf := make([]int, maxv+1)
 	for i := range spf {
 		spf[i] = i
@@ -24,6 +26,8 @@ func maximumScore(nums []int, k int) int {
 		}
 	}
 
+	// Prime score = number of distinct prime factors; dividing out
+	// each prime fully counts it exactly once.
 	scores := make([]int, n)
 	for i, x := range nums {
 		v := x
@@ -42,6 +46,10 @@ func maximumScore(nums []int, k int) int {
 		scores[i] = cnt
 	}
 
+	// left[i]: nearest index left of i with prime score >= score[i];
+	// right[i]: nearest index right of i with score strictly greater.
+	// The >= / > asymmetry gives tied subarrays to the smallest index,
+	// so every subarray is attributed to exactly one element.
 	left := make([]int, n)
 	right := make([]int, n)
 	stack := make([]int, 0, n)
@@ -69,6 +77,8 @@ func maximumScore(nums []int, k int) int {
 		stack = append(stack, i)
 	}
 
+	// Greedy: take the largest value first; element i wins exactly
+	// (i-left[i]) * (right[i]-i) subarrays, bounding its picks.
 	idx := make([]int, n)
 	for i := range idx {
 		idx[i] = i
@@ -80,6 +90,8 @@ func maximumScore(nums []int, k int) int {
 	score := int64(1)
 	rem := int64(k)
 	for _, i := range idx {
+		// Cap picks at the winning-subarray count and the remaining
+		// budget; one fast exponentiation covers any multiplicity.
 		cnt := int64(i-left[i]) * int64(right[i]-i)
 		use := cnt
 		if rem < use {

@@ -12,6 +12,7 @@ function findKthSmallest(coins: number[], k: number): number {
 
     function countLe(x: number): number {
         let total = 0;
+        // inclusion-exclusion: each subset S contributes floor(x / lcm(S))
         for (let mask = 1; mask < 1 << m; mask++) {
             let l = 1;
             let bits = 0;
@@ -21,6 +22,7 @@ function findKthSmallest(coins: number[], k: number): number {
                     const g = gcd(l, coins[j]);
                     l = Math.floor(l / g) * coins[j];
                     bits++;
+                    // an lcm past x would only contribute 0; stop early
                     if (l > x) {
                         overflow = true;
                         break;
@@ -30,6 +32,7 @@ function findKthSmallest(coins: number[], k: number): number {
             if (overflow) {
                 continue;
             }
+            // odd subsets add, even subtract, so duplicates count once
             if (bits % 2 === 1) {
                 total += Math.floor(x / l);
             } else {
@@ -39,6 +42,8 @@ function findKthSmallest(coins: number[], k: number): number {
         return total;
     }
 
+    // count(x) is monotone; the answer is the least x with count(x) >= k
+    // (the k-th multiple of the smallest coin is a safe upper bound)
     let lo = 1;
     let hi = k * Math.min(...coins);
     while (lo < hi) {

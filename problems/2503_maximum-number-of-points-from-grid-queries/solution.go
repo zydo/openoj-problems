@@ -32,6 +32,9 @@ func (h *cellHeap) Pop() interface{} {
 func maxPoints(grid [][]int, queries []int) []int {
 	m, n := len(grid), len(grid[0])
 	qlen := len(queries)
+	// A query q scores exactly the cells reachable from (0,0) through
+	// values < q; that set only grows with q, so answer queries in
+	// ascending order against one shared frontier.
 	order := make([]int, qlen)
 	for i := range order {
 		order[i] = i
@@ -45,10 +48,14 @@ func maxPoints(grid [][]int, queries []int) []int {
 		visited[i] = make([]bool, n)
 	}
 	visited[0][0] = true
+	// Min-heap frontier keyed by cell value; the start cell is marked
+	// visited up front so it must be earned by the pop loop like any other.
 	h := &cellHeap{{grid[0][0], 0, 0}}
 	count := 0
 	for _, idx := range order {
 		q := queries[idx]
+		// Pop while the cheapest frontier cell is strictly below q: this is
+		// Dijkstra-like expansion in value order, one point per popped cell.
 		for h.Len() > 0 && (*h)[0].val < q {
 			top := heap.Pop(h).(cellItem)
 			count++
@@ -56,11 +63,15 @@ func maxPoints(grid [][]int, queries []int) []int {
 			for _, d := range nb {
 				nr, nc := d[0], d[1]
 				if nr >= 0 && nr < m && nc >= 0 && nc < n && !visited[nr][nc] {
+					// Mark at push time: no duplicate entries, so each cell
+					// enters and leaves the heap exactly once overall.
 					visited[nr][nc] = true
 					heap.Push(h, cellItem{grid[nr][nc], nr, nc})
 				}
 			}
 		}
+		// Heap min >= q (or empty): nothing further is reachable for this or
+		// any smaller remaining query, so the running count answers it.
 		answer[idx] = count
 	}
 	return answer

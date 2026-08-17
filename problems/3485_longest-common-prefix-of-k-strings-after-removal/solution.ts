@@ -1,5 +1,6 @@
 function longestCommonPrefix(words: string[], k: number): number[] {
     const n = words.length;
+    // With one word gone there are fewer than k words, so no prefix survives.
     if (n - 1 < k) {
         return new Array(n).fill(0);
     }
@@ -15,6 +16,7 @@ function longestCommonPrefix(words: string[], k: number): number[] {
     const cnt: number[] = new Array(cap).fill(0);
     const depth: number[] = new Array(cap).fill(0);
     let nodes = 1;
+    // A trie node at depth d is a prefix of length d shared by cnt words.
     for (const w of words) {
         let cur = 0;
         cnt[0]++;
@@ -32,6 +34,8 @@ function longestCommonPrefix(words: string[], k: number): number[] {
 
     const top1: number[] = new Array(maxLen + 1).fill(-1);
     const top2: number[] = new Array(maxLen + 1).fill(-1);
+    // Keep the two distinct nodes per depth with cnt >= k: if the removed
+    // word's path covers the best one, the second is still off that path.
     for (let node = 0; node < nodes; node++) {
         if (cnt[node] >= k) {
             const d = depth[node];
@@ -52,9 +56,11 @@ function longestCommonPrefix(words: string[], k: number): number[] {
     for (let wi = 0; wi < n; wi++) {
         const w = words[wi];
         const tag = wi + 1;
+        // A unique timestamp marks this word's trie path; old marks never match.
         stamp[0] = tag;
         let cur = 0;
         let big = 0;
+        // On-path node survives the removal only with cnt >= k + 1.
         for (let i = 0; i < w.length; i++) {
             cur = children[cur * 26 + (w.charCodeAt(i) - 97)];
             stamp[cur] = tag;
@@ -63,6 +69,7 @@ function longestCommonPrefix(words: string[], k: number): number[] {
             }
         }
         let fb = 0;
+        // Deepest off-path depth: top2 exists there, or top1 is off the path.
         for (const d of depths) {
             if (top2[d] !== -1) {
                 fb = d;

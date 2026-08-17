@@ -16,6 +16,8 @@ class Solution {
             indeg[e[1]] += 1;
         }
 
+        // Kahn's algorithm: the topological order is computed once and reused
+        // by every feasibility check below (the graph is a DAG).
         java.util.ArrayDeque<Integer> queue = new java.util.ArrayDeque<>();
         for (int i = 0; i < n; i++) if (indeg[i] == 0) queue.add(i);
         List<Integer> topo = new ArrayList<>();
@@ -27,6 +29,9 @@ class Solution {
             }
         }
 
+        // Feasibility is monotone in the threshold (lowering it only adds
+        // edges), so binary-search the sorted distinct edge costs for the
+        // largest feasible score.
         Set<Long> costSet = new HashSet<>();
         for (int[] e : edges) costSet.add((long) e[2]);
         List<Long> costs = new ArrayList<>(costSet);
@@ -34,6 +39,8 @@ class Solution {
 
         final long INF = Long.MAX_VALUE;
 
+        // If even with every edge allowed no budget-feasible path exists, no
+        // score is achievable.
         if (!feasible(adj, topo, online, 0, n, INF, k)) return -1;
         if (costs.isEmpty()) return 0;
         int lo = 0,
@@ -51,6 +58,9 @@ class Solution {
         return (int) ans;
     }
 
+    // feasible(s): a path from 0 to n-1 within budget k exists using only edges
+    // of cost >= s and only online nodes. The cheapest such path is the right
+    // witness, so distances are minimized in topological order.
     private boolean feasible(
         List<List<int[]>> adj,
         List<Integer> topo,

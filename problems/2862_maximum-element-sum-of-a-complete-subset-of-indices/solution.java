@@ -4,6 +4,11 @@ import java.util.Map;
 class Solution {
 
     public long maximumSum(int[] nums) {
+        // Writing each index as (squarefree part) x (perfect square), the
+        // product of two indices is a perfect square exactly when their
+        // squarefree parts match — so complete subsets are precisely the
+        // indices sharing one squarefree part. Sum per group, take the max;
+        // singletons qualify since the pair condition is vacuous.
         Map<Integer, Long> groups = new HashMap<>();
         for (int i = 1; i <= nums.length; i++) {
             int key = squarefreePart(i);
@@ -17,6 +22,9 @@ class Solution {
     }
 
     private int squarefreePart(int x) {
+        // Product of primes with odd exponent in x, e.g. P(18) = 2. Trial
+        // division suffices: only indices are factored. Anything surviving
+        // the loop is one leftover prime with exponent one.
         int result = 1;
         int d = 2;
         while ((long) d * d <= x) {

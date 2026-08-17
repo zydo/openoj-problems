@@ -3,11 +3,20 @@ func numberOfWays(s string, t string, k int64) int {
 	n := len(s)
 	cnt := countRotations2851(s, t)
 
+	// Aggregate rotations into two classes: cnt that spell t and n - cnt
+	// that do not. From a T rotation one operation lands on cnt - 1 others
+	// (the identity shift is forbidden) or n - cnt non-T; from a non-T it
+	// lands on cnt T or n - 1 - cnt non-T. Length-k walk counts depend only
+	// on the starting class, hence this 2x2 matrix.
 	mat := [2][2]int64{
 		{modNorm2851(int64(cnt-1), mod), modNorm2851(int64(cnt), mod)},
 		{modNorm2851(int64(n-cnt), mod), modNorm2851(int64(n-1-cnt), mod)},
 	}
+	// k reaches 1e15, so exponentiate by repeated squaring: O(log k)
+	// constant-size multiplications under the modulus.
 	mk := matPow2851(mat, k, mod)
+	// Start on the class-T rotation iff s == t; the answer is the class-T
+	// component (automatically 0 when cnt = 0).
 	v0 := int64(0)
 	if s == t {
 		v0 = 1
@@ -25,6 +34,10 @@ func modNorm2851(x int64, m int64) int64 {
 }
 
 func countRotations2851(s string, t string) int {
+	// Every operation rotates s by a nonzero shift, so s is always one of
+	// its n rotations. Count those equal to t by searching t in s+s
+	// truncated to 2n-1 characters (dropping the last so the full-string
+	// rotation is not double counted).
 	n := len(s)
 	pi := make([]int, n)
 	for i := 1; i < n; i++ {

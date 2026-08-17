@@ -19,6 +19,8 @@ Output: 22
 Explanation: Node 2 has edges with 3 other nodes. We remove the edge [0, 2, 2], ensuring that no node has edges with more than k = 2 nodes. The sum of weights is 22, and we can't achieve a greater sum.
 ```
 
+![A tree rooted at 0 with children 1 and 2; node 2 fans out to 3 and 4. The weight-2 edge from 0 to 2 is dashed as removed, leaving weights 4, 12, and 6.](figures/example-1.svg)
+
 ### Example 2
 
 ```text

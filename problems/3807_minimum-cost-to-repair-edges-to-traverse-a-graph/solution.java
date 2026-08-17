@@ -27,6 +27,9 @@ class Solution {
         int[] dist = new int[n];
         Deque<Integer> queue = new ArrayDeque<>();
 
+        // If even repairing every edge fails (target unreachable, or every
+        // path longer than k), there is no answer; otherwise can(hi) always
+        // holds and the loop converges on the smallest feasible amount.
         if (!can(n, heads, next, to, wt, maxW, k, dist, queue)) return -1;
         int lo = 0,
             hi = maxW;
@@ -38,6 +41,9 @@ class Solution {
         return lo;
     }
 
+    // Budget `money` repairs exactly the edges with w <= money, so raising
+    // money only adds usable edges: feasibility is monotone and the answer
+    // is binary-searchable.
     private boolean can(
         int n,
         int[] heads,
@@ -53,6 +59,8 @@ class Solution {
         queue.clear();
         dist[0] = 0;
         queue.add(0);
+        // BFS explores level by level, so dist[v] is the fewest edges over
+        // available paths; nodes already at k edges are never expanded.
         while (!queue.isEmpty()) {
             int u = queue.poll();
             if (dist[u] >= k) continue;

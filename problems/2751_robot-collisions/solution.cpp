@@ -9,14 +9,24 @@ class Solution {
             order[i] = i;
         }
         sort(order.begin(), order.end(), [&](int a, int b) { return positions[a] < positions[b]; });
+        // Sweep left to right; every collision is a right-mover meeting a
+        // left-mover face to face, so a stack of sweep survivors is the only
+        // state needed. Health changes are written into `h` so survivors
+        // keep their decremented values.
         vector<int> stack;
         for (int idx : order) {
             if (directions[idx] == 'R') {
+                // Right-movers wait on the stack for someone to hit them.
                 stack.push_back(idx);
             } else {
+                // A left-mover duels right-movers off the stack top until
+                // it dies or the right-movers run out (same-direction robots
+                // ahead can never collide with it).
                 bool alive = true;
                 while (!stack.empty() && directions[stack.back()] == 'R') {
                     int top = stack.back();
+                    // Weaker top dies; the incoming robot loses 1 health and
+                    // fights on. Stronger top survives at -1; equal kills both.
                     if (h[top] < h[idx]) {
                         h[idx] -= 1;
                         stack.pop_back();
@@ -35,6 +45,7 @@ class Solution {
                 }
             }
         }
+        // Survivors are exactly the stack, but reported in input order.
         vector<bool> survivor(n, false);
         for (int idx : stack) {
             survivor[idx] = true;

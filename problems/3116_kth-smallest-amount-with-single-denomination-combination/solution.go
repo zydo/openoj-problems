@@ -10,6 +10,7 @@ func findKthSmallest(coins []int, k int) int64 {
 
 	countLe := func(x int64) int64 {
 		var total int64
+		// inclusion-exclusion: each subset S contributes floor(x / lcm(S))
 		for mask := 1; mask < 1<<m; mask++ {
 			l := int64(1)
 			bits := 0
@@ -19,6 +20,7 @@ func findKthSmallest(coins []int, k int) int64 {
 					g := gcdEuclid(l, int64(coins[j]))
 					l = l / g * int64(coins[j])
 					bits++
+					// an lcm past x would only contribute 0; stop early
 					if l > x {
 						overflow = true
 						break
@@ -28,6 +30,7 @@ func findKthSmallest(coins []int, k int) int64 {
 			if overflow {
 				continue
 			}
+			// odd subsets add, even subtract, so duplicates count once
 			if bits%2 == 1 {
 				total += x / l
 			} else {
@@ -37,6 +40,8 @@ func findKthSmallest(coins []int, k int) int64 {
 		return total
 	}
 
+	// count(x) is monotone; the answer is the least x with count(x) >= k
+	// (the k-th multiple of the smallest coin is a safe upper bound)
 	lo, hi := int64(1), int64(k)*int64(minCoin)
 	for lo < hi {
 		mid := lo + (hi-lo)/2

@@ -1,6 +1,10 @@
 impl Solution {
     pub fn max_price(items: Vec<Vec<i32>>, capacity: i32) -> f64 {
         let total_weight: i64 = items.iter().map(|it| it[1] as i64).sum();
+        // Divisibility makes this fractional knapsack: moving a unit of weight
+        // from a cheaper to a dearer price-per-weight item never lowers the
+        // total, so a greedy fill in unit-price order is optimal. If even all
+        // items together weigh less than the bag, no packing can fill it.
         if total_weight < capacity as i64 {
             return -1.0;
         }
@@ -22,6 +26,8 @@ impl Solution {
                 price += p as f64;
                 remaining -= w;
             } else {
+                // First item heavier than what remains: take just the
+                // fraction remaining/w of it — the only floating-point step.
                 price += (p as f64) * ((remaining as f64) / (w as f64));
                 remaining = 0;
             }

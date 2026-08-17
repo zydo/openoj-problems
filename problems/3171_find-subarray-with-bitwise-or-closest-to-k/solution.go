@@ -7,9 +7,13 @@ func minimumDifference(nums []int, k int) int {
 		}
 		return v
 	}
+	// Seed from the first element so single-element subarrays are covered.
 	best := abs(nums[0] - k)
+	// Empty-subarray seed: 0 | v = v lets the first build produce {v}.
 	current := []int{0}
+	// OR never clears bits, so the nested frontier holds at most ~31 values.
 	for _, value := range nums {
+		// New frontier: {value} plus every previous OR extended by value.
 		nxt := []int{value}
 		for _, prev := range current {
 			nxt = append(nxt, prev|value)

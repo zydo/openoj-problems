@@ -11,6 +11,8 @@ class Solution:
             adj[u].append(v)
             adj[v].append(u)
 
+        # BFS from the root records each parent and an order whose reversal
+        # lists children before parents, so the DP below needs no recursion.
         parent = [-1] * n
         order = [0]
         parent[0] = -2
@@ -20,9 +22,13 @@ class Solution:
                     parent[v] = u
                     order.append(v)
 
+        # dp[u][flip][d]: best subtree sum of u given the parity of sign flips
+        # applied from ancestors and the edge distance d to the nearest inverted
+        # ancestor, capped at k since any larger distance behaves identically.
         width = k + 1
         dp = [None] * n
         for u in reversed(order):
+            # Children are already computed; pool their tables per (flip, distance).
             child_sum = [[0] * width for _ in range(2)]
             for v in adj[u]:
                 if v == parent[u]:
@@ -34,6 +40,9 @@ class Solution:
                     for d in range(width):
                         row[d] += crow[d]
 
+            # Not inverting: children observe distance+1 (capped at k). Once the
+            # distance is >= k, inverting u is legal too: it flips the parity and
+            # resets the child distance to 1; keep the better of the two options.
             table = [[0] * width for _ in range(2)]
             for flip in range(2):
                 s = -1 if flip else 1
@@ -50,4 +59,5 @@ class Solution:
                     else:
                         table[flip][dist] = val_dont
             dp[u] = table
+        # The root has no recent inversion above it, so it is free to invert.
         return dp[0][0][k]

@@ -10,11 +10,14 @@ impl Solution {
             graph[b].push(a);
         }
         let key = |a: usize, b: usize| -> i64 { (a as i64) << 32 | (b as i64) & 0xFFFFFFFF };
+        // Guess set of packed (parent, child) keys gives O(1) direction checks.
         let guess_set: HashSet<i64> = guesses
             .iter()
             .map(|g| key(g[0] as usize, g[1] as usize))
             .collect();
 
+        // Iterative DFS from root 0 records each node's parent and an order
+        // where parents precede children — rerooting without recursion.
         let mut parent: Vec<i64> = vec![-1; n];
         let mut order: Vec<usize> = Vec::with_capacity(n);
         let mut visited = vec![false; n];
@@ -32,6 +35,8 @@ impl Solution {
         }
 
         let mut cnt: Vec<i64> = vec![0; n];
+        // Correct-guess count for root 0: one point per edge whose
+        // (parent, child) direction was guessed.
         for v in 1..n {
             if guess_set.contains(&key(parent[v] as usize, v)) {
                 cnt[0] += 1;
@@ -40,6 +45,9 @@ impl Solution {
 
         let mut ans: i32 = if cnt[0] >= k as i64 { 1 } else { 0 };
         for &u in &order[1..] {
+            // Moving the root across edge p -> u flips only that one edge:
+            // guess (p, u) becomes wrong and reversed guess (u, p) becomes
+            // right. Parents come first in `order`, so cnt[p] is final here.
             let p = parent[u] as usize;
             let mut c = cnt[p];
             if guess_set.contains(&key(p, u)) {

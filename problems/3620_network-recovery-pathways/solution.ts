@@ -11,6 +11,8 @@ function findMaxPathScore(
         indeg[v] += 1;
     }
 
+    // Kahn's algorithm: the topological order is computed once and reused
+    // by every feasibility check below (the graph is a DAG).
     const queue: number[] = [];
     for (let i = 0; i < n; i++) if (indeg[i] === 0) queue.push(i);
     const topo: number[] = [];
@@ -24,9 +26,15 @@ function findMaxPathScore(
         }
     }
 
+    // Feasibility is monotone in the threshold (lowering it only adds
+    // edges), so binary-search the sorted distinct edge costs for the
+    // largest feasible score.
     const costSet = new Set(edges.map((e) => e[2]));
     const costs = Array.from(costSet).sort((a, b) => a - b);
 
+    // feasible(s): a path from 0 to n-1 within budget k exists using only
+    // edges of cost >= s and only online nodes. The cheapest such path is
+    // the right witness, so distances are minimized in topological order.
     const feasible = (s: number): boolean => {
         const INF = Infinity;
         const dist = new Array(n).fill(INF);
@@ -43,6 +51,8 @@ function findMaxPathScore(
         return dist[n - 1] <= k;
     };
 
+    // If even with every edge allowed no budget-feasible path exists, no
+    // score is achievable.
     if (!feasible(0)) return -1;
     if (costs.length === 0) return 0;
     let lo = 0,

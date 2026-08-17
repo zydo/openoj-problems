@@ -16,6 +16,7 @@ class Solution {
             while (!pq.empty()) {
                 auto [d, u] = pq.top();
                 pq.pop();
+                // stale entry: dist[u] was improved after this was pushed
                 if (d != dist[u])
                     continue;
                 for (auto [v, w] : adj[u]) {
@@ -31,14 +32,18 @@ class Solution {
 
         vector<long long> dist0 = dijkstra(0);
         vector<long long> distN = dijkstra(n - 1);
+        // reference length every shortest 0 -> n-1 path must match
         long long total = dist0[n - 1];
 
         vector<bool> ans(edges.size(), false);
+        // unreachable: no edge lies on a shortest path
         if (total == INF) {
             return ans;
         }
         for (int i = 0; i < (int)edges.size(); i++) {
             int u = edges[i][0], v = edges[i][1], w = edges[i][2];
+            // on a shortest path iff d0(one end) + w + dN(other end) == total,
+            // tested both ways since the undirected edge may be crossed either way
             if (dist0[u] + w + distN[v] == total || dist0[v] + w + distN[u] == total) {
                 ans[i] = true;
             }

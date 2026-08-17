@@ -12,6 +12,8 @@ impl Solution {
             x
         }
 
+        // Reverse Kruskal: sweep edges from longest-lived to shortest so the
+        // union-find mirrors the graph with every edge of time <= t removed.
         let mut ordered = edges.clone();
         ordered.sort_by(|a, b| b[2].cmp(&a[2]));
 
@@ -21,14 +23,19 @@ impl Solution {
         let m = ordered.len();
         while i < m {
             let t = ordered[i][2];
+            // Pre-merge state: every edge of time <= t is gone. If the count
+            // already reaches k, t works; later overwrites keep the minimum.
             if components >= k {
                 answer = t;
             }
+            // Merge the whole equal-time group so a partially merged group is
+            // never mistaken for a valid intermediate state.
             while i < m && ordered[i][2] == t {
                 let u = ordered[i][0] as usize;
                 let v = ordered[i][1] as usize;
                 let ru = find(&mut parent, u);
                 let rv = find(&mut parent, v);
+                // A redundant edge (both ends already united) leaves the count alone.
                 if ru != rv {
                     parent[ru] = rv;
                     components -= 1;
@@ -36,6 +43,7 @@ impl Solution {
                 i += 1;
             }
         }
+        // The full graph itself may already have >= k components: answer 0.
         if components >= k {
             answer = 0;
         }

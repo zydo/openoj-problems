@@ -1,4 +1,5 @@
 function minCost(n: number, edges: number[][], k: number): number {
+    // k >= n lets every node sit alone: no cut is ever needed.
     if (k >= n) return 0;
 
     const feasible = (t: number): boolean => {

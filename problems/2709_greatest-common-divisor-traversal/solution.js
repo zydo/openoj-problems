@@ -5,10 +5,13 @@
 var canTraverseAllPairs = function (nums) {
     const n = nums.length;
     if (n === 1) return true;
+    // 1 has no prime factors, so it can never share an edge.
     for (const x of nums) {
         if (x === 1) return false;
     }
 
+    // Sieve smallest prime factors once so any value decomposes into its
+    // distinct primes by repeated SPF division.
     let maxv = 0;
     for (const x of nums) {
         if (x > maxv) maxv = x;
@@ -40,6 +43,10 @@ var canTraverseAllPairs = function (nums) {
         if (ra !== rb) parent[ra] = rb;
     };
 
+    // Each prime is a hub chaining its indices: union against the previous
+    // claimer, then take ownership — consecutive links keep a prime's
+    // indices mutually connected with linearly many unions instead of
+    // quadratic.
     const last = new Map();
     for (let i = 0; i < n; i++) {
         let v = nums[i];
@@ -51,6 +58,7 @@ var canTraverseAllPairs = function (nums) {
         }
     }
 
+    // All indices mutually reachable iff one component holds them all.
     const root = find(0);
     for (let i = 1; i < n; i++) {
         if (find(i) !== root) return false;

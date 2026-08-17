@@ -10,6 +10,8 @@ var findSpecialNodes = function (n, edges) {
         adj[b].push(a);
     }
 
+    // Classic property: every node tying as farthest from src is the endpoint
+    // of some diameter path, so the sweep returns the whole farthest set.
     function bfs(src) {
         const dist = new Array(n).fill(-1);
         dist[src] = 0;
@@ -33,9 +35,13 @@ var findSpecialNodes = function (n, edges) {
         return set;
     }
 
+    // First sweep from node 0: one side's diameter endpoints. Any member of
+    // that set is itself an endpoint, so the second sweep's farthest nodes
+    // are the opposite endpoints.
     const oneEnd = bfs(0);
     const first = oneEnd.values().next().value;
     const otherEnd = bfs(first);
+    // The union of the two endpoint sets is exactly the special nodes.
     let res = "";
     for (let i = 0; i < n; i++) {
         res += oneEnd.has(i) || otherEnd.has(i) ? "1" : "0";

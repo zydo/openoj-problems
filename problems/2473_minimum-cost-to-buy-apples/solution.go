@@ -32,7 +32,12 @@ func minCost(n int, roads [][]int, appleCost []int, k int) []int {
 
 	const inf = int64(1) << 62
 	answer := make([]int, n)
+	// A trip is: reach j, buy, retrace. Any cheaper return path would
+	// also be a cheaper outbound path, so the total is
+	// appleCost[j] + (k+1)*d(j) with d = shortest distance from start.
 	for start := 1; start <= n; start++ {
+		// Dijkstra needs the strictly positive road weights; a popped
+		// entry older than dist[top.node] is stale (lazy deletion).
 		dist := make([]int64, n+1)
 		for i := range dist {
 			dist[i] = inf
@@ -52,6 +57,8 @@ func minCost(n int, roads [][]int, appleCost []int, k int) []int {
 				}
 			}
 		}
+		// j = start contributes d = 0, so buying locally is always a
+		// candidate.
 		var best int64 = inf
 		for j := 1; j <= n; j++ {
 			total := int64(appleCost[j-1]) + int64(k+1)*dist[j]

@@ -23,6 +23,8 @@ func minTime(n int, edges [][]int, k int) int {
 		return true
 	}
 
+	// Reverse Kruskal: sweep edges from longest-lived to shortest so the
+	// union-find mirrors the graph with every edge of time <= t removed.
 	ordered := make([][]int, len(edges))
 	copy(ordered, edges)
 	sort.Slice(ordered, func(a, b int) bool {
@@ -35,16 +37,22 @@ func minTime(n int, edges [][]int, k int) int {
 	m := len(ordered)
 	for i < m {
 		t := ordered[i][2]
+		// Pre-merge state: every edge of time <= t is gone. If the count
+		// already reaches k, t works; later overwrites keep the minimum.
 		if components >= k {
 			answer = t
 		}
+		// Merge the whole equal-time group so a partially merged group is
+		// never mistaken for a valid intermediate state.
 		for i < m && ordered[i][2] == t {
+			// A redundant edge (no-op union) does not decrement the count.
 			if union(ordered[i][0], ordered[i][1]) {
 				components--
 			}
 			i++
 		}
 	}
+	// The full graph itself may already have >= k components: answer 0.
 	if components >= k {
 		answer = 0
 	}

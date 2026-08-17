@@ -8,6 +8,8 @@ class Solution {
             adj[e[1]].push_back(e[0]);
         }
 
+        // BFS from the root records each parent and an order whose reversal
+        // lists children before parents, so the DP below needs no recursion.
         vector<int> parent(n, -1);
         parent[0] = -2;
         vector<int> order;
@@ -23,11 +25,15 @@ class Solution {
             }
         }
 
+        // dp[u][d][flip]: best subtree sum of u given the parity of sign flips
+        // applied from ancestors and the edge distance d to the nearest inverted
+        // ancestor, capped at k since any larger distance behaves identically.
         int width = k + 1;
         vector<array<long long, 2>> rows;
         vector<vector<array<long long, 2>>> dp(n);
         for (int idx = n - 1; idx >= 0; idx--) {
             int u = order[idx];
+            // Children are already computed; pool their tables per (flip, distance).
             vector<array<long long, 2>> childSum(width, {0, 0});
             for (int v : adj[u]) {
                 if (v == parent[u])
@@ -39,6 +45,9 @@ class Solution {
                 }
             }
 
+            // Not inverting: children observe distance+1 (capped at k). Once the
+            // distance is >= k, inverting u is legal too: it flips the parity and
+            // resets the child distance to 1; keep the better of the two options.
             rows.assign(width, {0, 0});
             for (int flip = 0; flip < 2; flip++) {
                 long long s = flip ? -1 : 1;
@@ -57,6 +66,7 @@ class Solution {
             }
             dp[u] = rows;
         }
+        // The root has no recent inversion above it, so it is free to invert.
         return dp[0][k][0];
     }
 };

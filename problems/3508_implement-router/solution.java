@@ -13,6 +13,8 @@ class Router {
         return source * 200_001L + destination;
     }
 
+    // three parallel views of the stored packets: FIFO order, duplicate
+    // detection, and an append-only timestamp log per destination
     private final int limit;
     private final Deque<int[]> queue = new ArrayDeque<>();
     private final Map<Long, Set<Integer>> stored = new HashMap<>();
@@ -32,6 +34,8 @@ class Router {
             return false;
         }
         if (queue.size() == limit) {
+            // the oldest packet leaves all three views; its log entry is only
+            // abandoned past the head, never shifted out of the list
             int[] oldest = queue.pollFirst();
             stored.get(pairKey(oldest[0], oldest[1])).remove(oldest[2]);
             heads.merge(oldest[1], 1, Integer::sum);
@@ -46,6 +50,7 @@ class Router {
     }
 
     public int[] forwardPacket() {
+        // forwarding hands over the oldest packet and drops it from every view
         int[] oldest = queue.pollFirst();
         if (oldest == null) {
             return new int[0];
@@ -60,6 +65,8 @@ class Router {
         if (times == null) {
             return 0;
         }
+        // adds arrive with non-decreasing timestamps, so each log is sorted
+        // for free and the live entries are the suffix [head, size)
         int head = heads.get(destination);
         int low = lowerBound(times, head, times.size(), startTime);
         int high = upperBound(times, head, times.size(), endTime);

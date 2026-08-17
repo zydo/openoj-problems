@@ -11,14 +11,24 @@ func survivedRobotsHealths(positions []int, healths []int, directions string) []
 	sort.Slice(order, func(a, b int) bool {
 		return positions[order[a]] < positions[order[b]]
 	})
+	// Sweep left to right; every collision is a right-mover meeting a
+	// left-mover face to face, so a stack of sweep survivors is the only
+	// state needed. Health changes are written into `h` so survivors keep
+	// their decremented values.
 	stack := []int{}
 	for _, idx := range order {
 		if directions[idx] == 'R' {
+			// Right-movers wait on the stack for someone to hit them.
 			stack = append(stack, idx)
 		} else {
+			// A left-mover duels right-movers off the stack top until it
+			// dies or the right-movers run out (same-direction robots ahead
+			// can never collide with it).
 			alive := true
 			for len(stack) > 0 && directions[stack[len(stack)-1]] == 'R' {
 				top := stack[len(stack)-1]
+				// Weaker top dies; the incoming robot loses 1 health and
+				// fights on. Stronger top survives at -1; equal kills both.
 				if h[top] < h[idx] {
 					h[idx]--
 					stack = stack[:len(stack)-1]
@@ -37,6 +47,7 @@ func survivedRobotsHealths(positions []int, healths []int, directions string) []
 			}
 		}
 	}
+	// Survivors are exactly the stack, but reported in input order.
 	survivor := make([]bool, n)
 	for _, idx := range stack {
 		survivor[idx] = true

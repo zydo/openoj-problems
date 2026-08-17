@@ -23,6 +23,8 @@ From focus point 0 to focus point 4.
 From focus point 0 to focus point 5.
 ```
 
+![Focus point 0 (with the crystal) sits in the rune cycle 0 -> 1 -> 2 -> 3 -> 0; dashed runes from 0 feed the detached points 4 and 5.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -30,6 +32,8 @@ Input: n = 7, crystals = [3,5], flowFrom = [0,1,2,3,5], flowTo = [1,2,0,4,6]
 Output: 1
 Explanation: Add a directed rune from focus point 4 to focus point 2.
 ```
+
+![The cycle 0 -> 1 -> 2 -> 0 receives no crystal flow, while crystals at 3 and 5 feed 4 and 6; one dashed rune from 4 to 2 rescues the cycle.](figures/example-2.svg)
 
 ### Constraints
 

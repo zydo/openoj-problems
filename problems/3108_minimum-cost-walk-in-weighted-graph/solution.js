@@ -5,9 +5,11 @@
  * @return {number[]}
  */
 var minimumCost = function (n, edges, query) {
+    // Walks may repeat edges, so the optimum ANDs in every edge of the component.
     const parent = Array.from({ length: n }, (_, i) => i);
     const size = new Array(n).fill(1);
 
+    // Union-find: path halving in find, union by size in union.
     function find(x) {
         while (parent[x] !== x) {
             parent[x] = parent[parent[x]];
@@ -36,6 +38,7 @@ var minimumCost = function (n, edges, query) {
         union(u, v);
     }
 
+    // AND every edge weight into its component, keyed by root.
     const compAnd = new Map();
     for (const [u, v, w] of edges) {
         const r = find(u);
@@ -46,6 +49,7 @@ var minimumCost = function (n, edges, query) {
         }
     }
 
+    // Different roots mean no walk exists; same root answers with the AND.
     const ans = [];
     for (const [s, t] of query) {
         const rs = find(s),

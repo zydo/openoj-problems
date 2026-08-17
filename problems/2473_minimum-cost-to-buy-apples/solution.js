@@ -50,7 +50,12 @@ var minCost = function (n, roads, appleCost, k) {
 
     const INF = Infinity;
     const answer = [];
+    // A trip is: reach j, buy, retrace. Any cheaper return path would
+    // also be a cheaper outbound path, so the total is
+    // appleCost[j] + (k+1)*d(j) with d = shortest distance from start.
     for (let start = 1; start <= n; start++) {
+        // Dijkstra needs the strictly positive road weights; a popped
+        // entry older than dist[u] is stale (lazy deletion).
         const dist = new Array(n + 1).fill(INF);
         dist[start] = 0;
         const heap = [[0, start]];
@@ -65,6 +70,8 @@ var minCost = function (n, roads, appleCost, k) {
                 }
             }
         }
+        // j = start contributes d = 0, so buying locally is always a
+        // candidate.
         let best = INF;
         for (let j = 1; j <= n; j++) {
             const total = appleCost[j - 1] + (k + 1) * dist[j];

@@ -9,6 +9,7 @@ function stringIndices(
 ): number[] {
     const lens = wordsContainer.map((w) => w.length);
 
+    // Tie-break: shorter word wins, then the smaller index.
     function better(a: number, b: number): boolean {
         if (b === -1) {
             return true;
@@ -19,8 +20,10 @@ function stringIndices(
         return a < b;
     }
 
+    // Trie over reversed words; the root represents the empty suffix.
     const root: TrieNode = { best: -1 };
 
+    // Insert each word backwards, annotating every visited node, root included.
     for (let i = 0; i < wordsContainer.length; i++) {
         const word = wordsContainer[i];
         let node: TrieNode = root;
@@ -41,9 +44,11 @@ function stringIndices(
         }
     }
 
+    // Walk the reversed query as deep as the trie allows; deepest node's best wins.
     const ans: number[] = [];
     for (const word of wordsQuery) {
         let node: TrieNode = root;
+        // Root's best answers the empty-suffix case (no child matched).
         let res = root.best as number;
         for (let j = word.length - 1; j >= 0; j--) {
             const nxt = node[word[j]] as TrieNode | undefined;

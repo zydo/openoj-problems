@@ -4,8 +4,10 @@ impl Solution {
     pub fn median_of_uniqueness_array(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         let length = (n as i64) * (n as i64 + 1) / 2;
+        // Lower median of the virtual uniqueness array = rank (length + 1) / 2.
         let target_rank = (length + 1) / 2;
 
+        // Count subarrays with at most x distinct values via a sliding window.
         let count_at_most = |x: usize| -> i64 {
             let mut freq: HashMap<i32, i32> = HashMap::new();
             let mut left: usize = 0;
@@ -22,11 +24,13 @@ impl Solution {
                         }
                     }
                 }
+                // Every start inside the now-valid window yields a qualifying subarray.
                 result += (right - left + 1) as i64;
             }
             result
         };
 
+        // count_at_most is monotone in x, so the least x reaching the rank is the median.
         let mut lo: i64 = 1;
         let mut hi: i64 = n as i64;
         while lo < hi {

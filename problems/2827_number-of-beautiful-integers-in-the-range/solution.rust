@@ -4,6 +4,9 @@ impl Solution {
         (Self::count_up_to(high as i64, k) - Self::count_up_to((low as i64) - 1, k)) as i32
     }
 
+    // count_up_to(n) = beautiful integers in [1, n]; the answer is the
+    // difference of the two bounds. f(0) returns 0, so low = 1 contributes
+    // nothing on the low side.
     fn count_up_to(n: i64, k: usize) -> i64 {
         if n <= 0 {
             return 0;
@@ -23,6 +26,10 @@ impl Solution {
             k: usize,
             memo: &mut Vec<i64>,
         ) -> i64 {
+            // Digit DP tracking everything the two conditions need: balance
+            // (odd digits minus even digits written so far) and value mod k.
+            // Memoization shares all loose subproblems, so the recursion
+            // enumerates states, not numbers.
             if pos == digits.len() {
                 return if started == 1 && balance == 0 && mod_ == 0 {
                     1
@@ -35,10 +42,13 @@ impl Solution {
             if memo[key] >= 0 {
                 return memo[key];
             }
+            // tight: prefix still equals the bound's, capping this digit.
             let limit = if tight == 1 { digits[pos] } else { 9 };
             let mut total: i64 = 0;
             for d in 0..=limit {
                 let next_tight = if tight == 1 && d == limit { 1 } else { 0 };
+                // A leading zero writes nothing: it leaves the balance
+                // untouched and does not count as an even digit.
                 if started == 0 && d == 0 {
                     total += dp(
                         pos + 1,

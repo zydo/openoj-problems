@@ -1,6 +1,7 @@
 impl Solution {
     pub fn string_indices(words_container: Vec<String>, words_query: Vec<String>) -> Vec<i32> {
         let lens: Vec<usize> = words_container.iter().map(|w| w.len()).collect();
+        // Tie-break: shorter word wins, then the smaller index.
         let better = |a: usize, b: i32| -> bool {
             if b == -1 {
                 return true;
@@ -20,8 +21,10 @@ impl Solution {
             children: std::collections::HashMap::new(),
             best: -1,
         };
+        // Trie over reversed words; node 0 is the root (empty suffix).
         let mut nodes: Vec<Node> = vec![new_node()];
 
+        // Insert each word backwards, annotating every visited node, root included.
         for (i, word) in words_container.iter().enumerate() {
             let mut cur: usize = 0;
             if better(i, nodes[0].best) {
@@ -45,8 +48,10 @@ impl Solution {
         }
 
         let mut ans: Vec<i32> = Vec::with_capacity(words_query.len());
+        // Walk the reversed query as deep as the trie allows; deepest node's best wins.
         for word in &words_query {
             let mut cur: usize = 0;
+            // Root's best answers the empty-suffix case (no child matched).
             let mut res = nodes[0].best;
             for b in word.bytes().rev() {
                 match nodes[cur].children.get(&b) {

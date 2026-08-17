@@ -7,6 +7,8 @@ class Solution:
         n = len(nums)
         maxv = max(nums)
 
+        # Smallest-prime-factor sieve: lets each value's distinct prime
+        # count be read off by repeated division, no trial division.
         spf = list(range(maxv + 1))
         i = 2
         while i * i <= maxv:
@@ -16,6 +18,8 @@ class Solution:
                         spf[j] = i
             i += 1
 
+        # Prime score = number of distinct prime factors; dividing out
+        # each prime fully counts it exactly once.
         scores = []
         for x in nums:
             primes = set()
@@ -27,6 +31,7 @@ class Solution:
                     v //= p
             scores.append(len(primes))
 
+        # left[i]: nearest index left of i with prime score >= score[i].
         left = [-1] * n
         stack = []
         for i in range(n):
@@ -35,6 +40,9 @@ class Solution:
             left[i] = stack[-1] if stack else -1
             stack.append(i)
 
+        # right[i]: nearest index right of i with score strictly greater.
+        # The >= / > asymmetry gives tied subarrays to the smallest index,
+        # so every subarray is attributed to exactly one element.
         right = [n] * n
         stack = []
         for i in range(n - 1, -1, -1):
@@ -43,12 +51,16 @@ class Solution:
             right[i] = stack[-1] if stack else n
             stack.append(i)
 
+        # ranges[i] = subarrays whose highest-score element is i; greedy
+        # takes the largest value as many times as those subarrays allow.
         ranges = [(i - left[i]) * (right[i] - i) for i in range(n)]
         items = sorted(zip(nums, ranges), key=lambda t: -t[0])
 
         score = 1
         rem = k
         for val, cnt in items:
+            # Cap picks at the winning-subarray count and the remaining
+            # budget; one fast exponentiation covers any multiplicity.
             use = min(cnt, rem)
             if use:
                 score = score * pow(val, use, MOD) % MOD

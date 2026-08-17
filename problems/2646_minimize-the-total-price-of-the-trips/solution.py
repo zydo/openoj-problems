@@ -10,6 +10,9 @@ class Solution:
             adj[a].append(b)
             adj[b].append(a)
 
+        # Undiscounted cost is sum(price[i] * freq[i]), so counting how
+        # many trip paths pass through each node decouples routing from
+        # the discount choice.
         freq = [0] * n
         for trip in trips:
             start, end = trip[0], trip[1]
@@ -26,6 +29,9 @@ class Solution:
                         visited[u] = True
                         parent[u] = v
                         stack.append(u)
+            # Walking back from end through parent pointers touches
+            # exactly the unique trip path; halting after start also
+            # covers the trivial start == end trip.
             cur = end
             while cur != -1:
                 freq[cur] += 1
@@ -33,6 +39,8 @@ class Solution:
                     break
                 cur = parent[cur]
 
+        # Classic independent-set tree DP: dfs returns the min subtree
+        # cost with v's price kept full (dp0) versus halved (dp1).
         def dfs(v, p):
             dp0 = price[v] * freq[v]
             dp1 = (price[v] // 2) * freq[v]
@@ -40,8 +48,12 @@ class Solution:
                 if u == p:
                     continue
                 c0, c1 = dfs(u, v)
+                # A full node accepts children of either state; a halved
+                # node forces its children full since discounts apply
+                # only to non-adjacent nodes.
                 dp0 += min(c0, c1)
                 dp1 += c0
             return dp0, dp1
 
+        # The answer is the better of the two root states.
         return min(dfs(0, -1))

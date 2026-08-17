@@ -21,9 +21,14 @@ func minOperations(nums []int, k int) int {
 	}
 	heap.Init(h)
 	operations := 0
+	// Each operation must consume the two smallest values, so the process
+	// is fully deterministic once the array sits in a min-heap.
+	// Done when the minimum reaches k (then every element has) or fewer
+	// than two elements remain.
 	for h.Len() >= 2 && (*h)[0] < int64(k) {
 		x := heap.Pop(h).(int64)
 		y := heap.Pop(h).(int64)
+		// x is the smaller pop by heap order, so this is min*2 + max.
 		heap.Push(h, x*2+y)
 		operations++
 	}

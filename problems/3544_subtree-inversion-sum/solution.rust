@@ -9,6 +9,8 @@ impl Solution {
             adj[v].push(u);
         }
 
+        // BFS from the root records each parent and an order whose reversal
+        // lists children before parents, so the DP below needs no recursion.
         let mut parent: Vec<i64> = vec![-1; n];
         parent[0] = -2;
         let mut order: Vec<usize> = Vec::with_capacity(n);
@@ -25,11 +27,15 @@ impl Solution {
             }
         }
 
+        // dp[u][flip][d]: best subtree sum of u given the parity of sign flips
+        // applied from ancestors and the edge distance d to the nearest inverted
+        // ancestor, capped at k since any larger distance behaves identically.
         let width = k + 1;
         // dp[u][flip][dist]
         let mut dp: Vec<Vec<Vec<i64>>> = vec![Vec::new(); n];
         for idx in (0..n).rev() {
             let u = order[idx];
+            // Children are already computed; pool their tables per (flip, distance).
             let mut child_sum = vec![vec![0i64; width]; 2];
             for &v in &adj[u] {
                 if v as i64 == parent[u] {
@@ -43,6 +49,9 @@ impl Solution {
                 }
             }
 
+            // Not inverting: children observe distance+1 (capped at k). Once the
+            // distance is >= k, inverting u is legal too: it flips the parity and
+            // resets the child distance to 1; keep the better of the two options.
             let mut table = vec![vec![0i64; width]; 2];
             for flip in 0..2 {
                 let s: i64 = if flip == 0 { 1 } else { -1 };
@@ -67,6 +76,7 @@ impl Solution {
             }
             dp[u] = table;
         }
+        // The root has no recent inversion above it, so it is free to invert.
         dp[0][0][k]
     }
 }

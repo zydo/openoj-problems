@@ -18,12 +18,17 @@ class Solution {
         }
 
         vector<int> dist(n);
+        // Budget `money` repairs exactly the edges with w <= money, so raising
+        // money only adds usable edges: feasibility is monotone and the
+        // answer is binary-searchable.
         auto can = [&](int money) {
             fill(dist.begin(), dist.end(), -1);
             dist[0] = 0;
             vector<int> queue;
             queue.reserve(n);
             queue.push_back(0);
+            // BFS explores level by level, so dist[v] is the fewest edges
+            // over available paths; nodes already at k are never expanded.
             for (size_t head = 0; head < queue.size(); head++) {
                 int u = queue[head];
                 if (dist[u] >= k)
@@ -39,6 +44,9 @@ class Solution {
             return dist[n - 1] != -1 && dist[n - 1] <= k;
         };
 
+        // If even repairing every edge fails (target unreachable, or every
+        // path longer than k), there is no answer; otherwise can(hi) always
+        // holds and the loop converges on the smallest feasible amount.
         if (!can(maxW))
             return -1;
         int lo = 0, hi = maxW;

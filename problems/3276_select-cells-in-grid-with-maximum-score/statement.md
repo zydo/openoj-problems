@@ -21,6 +21,8 @@ Output: 8
 Explanation: We can select the cells with values 1, 3, and 4 that are colored above.
 ```
 
+![A 3x3 grid with the values 1 2 3 / 4 3 2 / 1 1 1; the cells holding 3, 4, and 1 — one per row, all distinct — are shaded.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -28,6 +30,8 @@ Input: grid = [[8,7,6],[8,3,2]]
 Output: 15
 Explanation: We can select the cells with values 7 and 8 that are colored above.
 ```
+
+![A 2x3 grid with the values 8 7 6 / 8 3 2; the 7 in the top row and the 8 in the bottom row are shaded.](figures/example-2.svg)
 
 ### Constraints
 

@@ -13,7 +13,12 @@ class Solution {
         }
 
         int[] answer = new int[n];
+        // A trip is: reach j, buy, retrace. Any cheaper return path would
+        // also be a cheaper outbound path, so the total is
+        // appleCost[j] + (k+1)*d(j) with d = shortest distance from start.
         for (int start = 1; start <= n; start++) {
+            // Dijkstra needs the strictly positive road weights; a popped
+            // entry older than dist[u] is stale (lazy deletion).
             int[] dist = new int[n + 1];
             java.util.Arrays.fill(dist, Integer.MAX_VALUE);
             dist[start] = 0;
@@ -36,6 +41,8 @@ class Solution {
                     }
                 }
             }
+            // j = start contributes d = 0, so buying locally is always a
+            // candidate.
             int best = Integer.MAX_VALUE;
             for (int j = 1; j <= n; j++) {
                 int total = appleCost[j - 1] + (k + 1) * dist[j];

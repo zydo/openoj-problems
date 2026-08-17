@@ -5,6 +5,9 @@ from collections import deque
 class Solution:
     def maximumSafenessFactor(self, grid: List[List[int]]) -> int:
         n = len(grid)
+        # Multi-source BFS from every thief at once: wavefront exploration
+        # makes dist[r][c] the minimum grid steps to the nearest thief —
+        # exactly the cell's safeness value.
         dist = [[-1] * n for _ in range(n)]
         q = deque()
         for r in range(n):
@@ -22,6 +25,9 @@ class Solution:
                     q.append((nr, nc))
 
         def reachable(threshold):
+            # A path has factor >= threshold iff the corners stay connected
+            # after deleting every cell with dist < threshold; endpoints
+            # below it fail immediately.
             if dist[0][0] < threshold or dist[n - 1][n - 1] < threshold:
                 return False
             seen = [[False] * n for _ in range(n)]
@@ -43,6 +49,9 @@ class Solution:
                         dq.append((nr, nc))
             return False
 
+        # Reachability is monotone in the threshold, so binary search the
+        # largest feasible v over [0, 2n] (the widest distance possible).
+        # A thief on a corner pins its dist to 0, capping the answer at 0.
         lo, hi = 0, 2 * n
         ans = 0
         while lo <= hi:

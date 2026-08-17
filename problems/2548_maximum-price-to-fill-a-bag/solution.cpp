@@ -4,6 +4,10 @@ class Solution {
         long long totalWeight = 0;
         for (auto &item : items)
             totalWeight += item[1];
+        // Divisibility makes this fractional knapsack: moving a unit of weight
+        // from a cheaper to a dearer price-per-weight item never lowers the
+        // total, so a greedy fill in unit-price order is optimal. If even all
+        // items together weigh less than the bag, no packing can fill it.
         if (totalWeight < capacity)
             return -1.0;
         // Stable sort by price-per-weight ratio, descending.
@@ -20,6 +24,8 @@ class Solution {
                 price += p;
                 remaining -= w;
             } else {
+                // First item heavier than what remains: take just the
+                // fraction remaining/w of it — the only floating-point step.
                 price += p * ((double)remaining / w);
                 remaining = 0;
             }

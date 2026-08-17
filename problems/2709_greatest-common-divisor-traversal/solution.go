@@ -3,12 +3,15 @@ func canTraverseAllPairs(nums []int) bool {
 	if n == 1 {
 		return true
 	}
+	// 1 has no prime factors, so it can never share an edge.
 	for _, x := range nums {
 		if x == 1 {
 			return false
 		}
 	}
 
+	// Sieve smallest prime factors once so any value decomposes into its
+	// distinct primes by repeated SPF division.
 	maxv := 0
 	for _, x := range nums {
 		if x > maxv {
@@ -50,6 +53,9 @@ func canTraverseAllPairs(nums []int) bool {
 		}
 	}
 
+	// Each prime is a hub chaining its indices: union against the previous
+	// claimer, then take ownership — consecutive links keep a prime's indices
+	// mutually connected with linearly many unions instead of quadratic.
 	last := make(map[int]int)
 	for i, x := range nums {
 		v := x
@@ -65,6 +71,7 @@ func canTraverseAllPairs(nums []int) bool {
 		}
 	}
 
+	// All indices mutually reachable iff one component holds them all.
 	root := find(0)
 	for i := 1; i < n; i++ {
 		if find(i) != root {

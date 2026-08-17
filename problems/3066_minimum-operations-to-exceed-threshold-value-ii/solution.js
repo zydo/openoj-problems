@@ -25,12 +25,17 @@ var minOperations = function (nums, k) {
 
     let size = n;
     let operations = 0;
+    // Each operation must consume the two smallest values, so the process
+    // is fully deterministic once the array sits in a min-heap.
+    // Done when the minimum reaches k (then every element has) or fewer
+    // than two elements remain.
     while (size >= 2 && h[0] < k) {
         const x = h[0];
         h[0] = h[size - 1];
         size--;
         siftDown(h, 0, size);
         const y = h[0];
+        // x and y are the two smallest by heap order, so the merge is min*2+max.
         h[0] = x * 2 + y;
         siftDown(h, 0, size);
         operations++;

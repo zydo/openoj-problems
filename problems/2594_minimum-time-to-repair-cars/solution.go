@@ -7,8 +7,13 @@ func repairCars(ranks []int, cars int) int64 {
 			minRank = int64(r)
 		}
 	}
+	// Feasibility is monotone in t (mechanics can idle), so binary search the
+	// minimum feasible time. Upper bound: the best mechanic repairing every
+	// car alone, min(ranks) * cars^2.
 	lo, hi := int64(1), minRank*int64(cars)*int64(cars)
 	feasible := func(t int64) bool {
+		// Within budget t, a rank-r mechanic finishes r*n^2 <= t cars, so
+		// its capacity is isqrt(t / r); sum capacities with early exit.
 		var total int64
 		for _, r := range ranks {
 			total += isqrt64(t / int64(r))

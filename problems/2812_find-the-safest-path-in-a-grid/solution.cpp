@@ -2,6 +2,9 @@ class Solution {
   public:
     int maximumSafenessFactor(vector<vector<int>> &grid) {
         int n = grid.size();
+        // Multi-source BFS from every thief at once: wavefront exploration
+        // makes dist[r][c] the minimum grid steps to the nearest thief —
+        // exactly the cell's safeness value.
         vector<vector<int>> dist(n, vector<int>(n, -1));
         vector<pair<int, int>> q;
         for (int r = 0; r < n; r++) {
@@ -25,6 +28,11 @@ class Solution {
             }
         }
 
+        // A path has factor >= threshold iff the corners stay connected
+        // after deleting cells with dist < threshold, and that reachability
+        // is monotone in the threshold — so binary search the largest
+        // feasible v over [0, 2n]. A thief on a corner pins its dist to 0,
+        // capping the answer at 0.
         int lo = 0, hi = 2 * n, ans = 0;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
@@ -40,6 +48,8 @@ class Solution {
 
   private:
     bool reachable(vector<vector<int>> &dist, int n, int threshold) {
+        // Endpoints below the threshold can never connect; otherwise a
+        // plain BFS over cells with dist >= threshold decides.
         if (dist[0][0] < threshold || dist[n - 1][n - 1] < threshold) {
             return false;
         }

@@ -6,6 +6,7 @@ class Solution {
         for (int i = 0; i < m; i++) {
             lens[i] = (int)wordsContainer[i].size();
         }
+        // Tie-break: shorter word wins, then the smaller index.
         auto better = [&](int a, int b) {
             if (b == -1)
                 return true;
@@ -14,9 +15,11 @@ class Solution {
             return a < b;
         };
 
+        // Trie over reversed words; node 0 is the root (empty suffix).
         vector<unordered_map<char, int>> children(1);
         vector<int> best(1, -1);
 
+        // Insert each word backwards, annotating every visited node, root included.
         for (int i = 0; i < m; i++) {
             const string &word = wordsContainer[i];
             int node = 0;
@@ -42,8 +45,10 @@ class Solution {
 
         vector<int> ans;
         ans.reserve(wordsQuery.size());
+        // Walk the reversed query as deep as the trie allows; deepest node's best wins.
         for (const string &word : wordsQuery) {
             int node = 0;
+            // Root's best answers the empty-suffix case (no child matched).
             int res = best[0];
             for (int j = (int)word.size() - 1; j >= 0; j--) {
                 auto it = children[node].find(word[j]);

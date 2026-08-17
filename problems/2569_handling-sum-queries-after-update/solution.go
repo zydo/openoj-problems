@@ -16,11 +16,15 @@ func (st *segTree) build(node, lo, hi int, arr []int) {
 }
 
 func (st *segTree) apply(node, lo, hi int) {
+	// Flipping a 0/1 segment swaps every bit, so its sum of ones
+	// becomes segment_length - sum; the children's flip is deferred.
 	st.tree[node] = int64(hi-lo+1) - st.tree[node]
 	st.lazy[node] = !st.lazy[node]
 }
 
 func (st *segTree) push(node, lo, hi int) {
+	// lazy means "children's data is stale": hand the pending flip to
+	// both children and clear it before recursing below this node.
 	if st.lazy[node] {
 		mid := (lo + hi) / 2
 		st.apply(node*2, lo, mid)
@@ -33,6 +37,8 @@ func (st *segTree) flip(node, lo, hi, ql, qr int) {
 	if ql > hi || qr < lo {
 		return
 	}
+	// A node fully inside [ql, qr] applies the flip locally and stops,
+	// so a range flip touches O(log n) nodes, not O(r - l).
 	if ql <= lo && hi <= qr {
 		st.apply(node, lo, hi)
 		return
@@ -54,6 +60,8 @@ func handleQuery(nums1 []int, nums2 []int, queries [][]int) []int64 {
 	if n > 0 {
 		st.build(1, 0, n-1, nums1)
 	}
+	// Maintain sum(nums2) incrementally: nums2 is never materialized
+	// or rescanned (n, q up to 1e5 and values up to 1e9).
 	var total int64
 	for _, x := range nums2 {
 		total += int64(x)

@@ -23,6 +23,8 @@ For i = 1: Node 0 is marked at t = 2, and Node 2 at t = 4.
 For i = 2: Node 0 is marked at t = 2, and Node 1 at t = 3.
 ```
 
+![A tree with node 0 at the root and odd node 1, even node 2 as its leaves; marking 0 first reaches the odd child in one step but the even child in two.](figures/example-1.svg)
+
 ### Example 2
 
 ```text
@@ -32,12 +34,16 @@ Explanation: For i = 0: Node 1 is marked at t = 1.
 For i = 1: Node 0 is marked at t = 2.
 ```
 
+![A single edge between node 0 above and node 1 below; the odd node 1 is marked one step after node 0, while even node 0 needs two steps after node 1.](figures/example-2.svg)
+
 ### Example 3
 
 ```text
 Input: edges = [[2,4],[0,1],[2,3],[0,2]]
 Output: [4,6,3,5,5]
 ```
+
+![A five-node tree: root 0 joins node 1 on the left and node 2 below it, and node 2 spreads to leaves 3 and 4.](figures/example-3.svg)
 
 ### Constraints
 

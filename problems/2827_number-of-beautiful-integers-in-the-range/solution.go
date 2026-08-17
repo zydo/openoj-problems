@@ -4,6 +4,9 @@ func numberOfBeautifulIntegers(low int, high int, k int) int {
 	return int(countUpTo2827(int64(high), k) - countUpTo2827(int64(low-1), k))
 }
 
+// countUpTo2827(n) = beautiful integers in [1, n]; the answer is the
+// difference of the two bounds. f(0) returns 0, so low = 1 contributes
+// nothing on the low side.
 func countUpTo2827(n int64, k int) int64 {
 	if n <= 0 {
 		return 0
@@ -20,6 +23,10 @@ func countUpTo2827(n int64, k int) int64 {
 	}
 	var dp func(pos, tight, started, balance, mod int) int64
 	dp = func(pos, tight, started, balance, mod int) int64 {
+		// Digit DP tracking everything the two conditions need: balance
+		// (odd digits minus even digits written so far) and value mod k.
+		// Memoization shares all loose subproblems, so the recursion
+		// enumerates states, not numbers.
 		if pos == length {
 			if started == 1 && balance == 0 && mod == 0 {
 				return 1
@@ -30,6 +37,7 @@ func countUpTo2827(n int64, k int) int64 {
 		if memo[key] >= 0 {
 			return memo[key]
 		}
+		// tight: prefix still equals the bound's, capping this digit.
 		limit := 9
 		if tight == 1 {
 			limit = digits[pos]
@@ -40,6 +48,8 @@ func countUpTo2827(n int64, k int) int64 {
 			if tight == 1 && d == limit {
 				nextTight = 1
 			}
+			// A leading zero writes nothing: it leaves the balance untouched
+			// and does not count as an even digit.
 			if started == 0 && d == 0 {
 				total += dp(pos+1, nextTight, 0, balance, (mod*10+d)%k)
 			} else {

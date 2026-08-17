@@ -4,11 +4,14 @@ class Solution {
         int n = nums.size();
         if (n == 1)
             return true;
+        // 1 has no prime factors, so it can never share an edge.
         for (int x : nums) {
             if (x == 1)
                 return false;
         }
 
+        // Sieve smallest prime factors once so any value decomposes into its
+        // distinct primes by repeated SPF division.
         int maxv = 0;
         for (int x : nums)
             maxv = max(maxv, x);
@@ -41,6 +44,10 @@ class Solution {
                 parent[ra] = rb;
         };
 
+        // Each prime is a hub chaining its indices: union against the
+        // previous claimer, then take ownership — consecutive links keep a
+        // prime's indices mutually connected with linearly many unions
+        // instead of quadratic.
         unordered_map<int, int> last;
         for (int i = 0; i < n; i++) {
             int v = nums[i];
@@ -55,6 +62,7 @@ class Solution {
             }
         }
 
+        // All indices mutually reachable iff one component holds them all.
         int root = find(0);
         for (int i = 1; i < n; i++) {
             if (find(i) != root)

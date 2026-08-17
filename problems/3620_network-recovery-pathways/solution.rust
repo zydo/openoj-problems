@@ -8,6 +8,8 @@ impl Solution {
             indeg[e[1] as usize] += 1;
         }
 
+        // Kahn's algorithm: the topological order is computed once and reused
+        // by every feasibility check below (the graph is a DAG).
         let mut queue: std::collections::VecDeque<usize> = std::collections::VecDeque::new();
         for i in 0..n {
             if indeg[i] == 0 {
@@ -25,10 +27,16 @@ impl Solution {
             }
         }
 
+        // Feasibility is monotone in the threshold (lowering it only adds
+        // edges), so binary-search the sorted distinct edge costs for the
+        // largest feasible score.
         let mut costs: Vec<i64> = edges.iter().map(|e| e[2] as i64).collect();
         costs.sort();
         costs.dedup();
 
+        // feasible(s): a path from 0 to n-1 within budget k exists using only
+        // edges of cost >= s and only online nodes. The cheapest such path is
+        // the right witness, so distances are minimized in topological order.
         let feasible = |s: i64| -> bool {
             let inf = i64::MAX / 4;
             let mut dist = vec![inf; n];
@@ -49,6 +57,8 @@ impl Solution {
             dist[n - 1] <= k
         };
 
+        // If even with every edge allowed no budget-feasible path exists, no
+        // score is achievable.
         if !feasible(0) {
             return -1;
         }

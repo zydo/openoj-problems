@@ -5,11 +5,20 @@ class Solution {
     public int numberOfWays(String s, String t, long k) {
         long n = s.length();
         long cnt = countRotations(s, t);
+        // Aggregate rotations into two classes: cnt that spell t and n - cnt
+        // that do not. From a T rotation one operation lands on cnt - 1
+        // others (the identity shift is forbidden) or n - cnt non-T; from a
+        // non-T it lands on cnt T or n - 1 - cnt non-T. Length-k walk counts
+        // depend only on the starting class, hence this 2x2 matrix.
         long[][] mat = {
             { mod(cnt - 1), mod(cnt) },
             { mod(n - cnt), mod(n - 1 - cnt) },
         };
+        // k reaches 1e15, so exponentiate by repeated squaring: O(log k)
+        // constant-size multiplications under the modulus.
         long[][] mk = matPow(mat, k);
+        // Start on the class-T rotation iff s == t; the answer is the
+        // class-T component (automatically 0 when cnt = 0).
         long v0 = s.equals(t) ? 1 : 0;
         long v1 = 1 - v0;
         return (int) ((mk[0][0] * v0 + mk[0][1] * v1) % MOD);
@@ -22,6 +31,10 @@ class Solution {
     }
 
     private long countRotations(String s, String t) {
+        // Every operation rotates s by a nonzero shift, so s is always one
+        // of its n rotations. Count those equal to t by searching t in s+s
+        // truncated to 2n-1 characters (dropping the last so the
+        // full-string rotation is not double counted).
         int n = s.length();
         int[] pi = new int[n];
         for (int i = 1; i < n; i++) {

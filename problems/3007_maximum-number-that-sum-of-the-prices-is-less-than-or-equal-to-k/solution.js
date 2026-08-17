@@ -12,8 +12,11 @@ var findMaximumNumber = function (k, x) {
     function priceSum(n) {
         let total = 0n;
         let p = x;
+        // Positions with 2^(p-1) > n contribute nothing, so stop there.
         while (1n << BigInt(p - 1) <= n) {
             const b = BigInt(p - 1);
+            // Bit b alternates in blocks of 2^b set / 2^b clear: count full
+            // cycles plus the partial one over the first n+1 values.
             const cycle = 1n << (b + 1n);
             const np1 = n + 1n;
             const full = np1 / cycle;
@@ -27,11 +30,14 @@ var findMaximumNumber = function (k, x) {
         return total;
     }
 
+    // The accumulated price is nondecreasing in n, so the answer is the
+    // largest n with priceSum(n) <= k. First double hi until it is expensive.
     let lo = 0n;
     let hi = 10000000000000000n;
     while (priceSum(hi) <= K) {
         hi *= 2n;
     }
+    // Invariant: lo is cheap, hi is expensive; lo ends as the answer.
     while (lo + 1n < hi) {
         const mid = (lo + hi) / 2n;
         if (priceSum(mid) <= K) {

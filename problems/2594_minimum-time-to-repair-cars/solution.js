@@ -19,6 +19,8 @@ var repairCars = function (ranks, cars) {
         return r;
     };
     const feasible = (t) => {
+        // Within budget t, a rank-r mechanic finishes r*n^2 <= t cars, so
+        // its capacity is isqrt(t / r); sum capacities with early exit.
         let total = 0;
         for (const r of ranks) {
             total += isqrt(Math.floor(t / r));
@@ -28,6 +30,9 @@ var repairCars = function (ranks, cars) {
         }
         return total >= cars;
     };
+    // Feasibility is monotone in t (mechanics can idle), so binary search the
+    // minimum feasible time. Upper bound: the best mechanic repairing every
+    // car alone, min(ranks) * cars^2.
     let lo = 1,
         hi = minRank * cars * cars;
     while (lo < hi) {

@@ -9,6 +9,8 @@ class Graph {
 
     @SuppressWarnings("unchecked")
     public Graph(int n, int[][] edges) {
+        // Edges are only appended, never removed or reweighted, so a
+        // plain adjacency list never needs invalidating or rebuilding.
         this.adjacency = new List[n];
         for (int node = 0; node < n; node++) {
             adjacency[node] = new ArrayList<>();
@@ -26,6 +28,9 @@ class Graph {
         if (node1 == node2) {
             return 0;
         }
+        // Every cost is positive, so Dijkstra applies: the min-heap
+        // hands out nodes in settle order by tentative distance. Longs
+        // keep the Long.MAX_VALUE sentinel arithmetic clean.
         int n = adjacency.length;
         long[] distance = new long[n];
         Arrays.fill(distance, Long.MAX_VALUE);
@@ -38,14 +43,19 @@ class Graph {
             long[] top = heap.poll();
             long soFar = top[0];
             int node = (int) top[1];
+            // Stale entry: the node was already settled through a
+            // cheaper route, so skip it.
             if (soFar > distance[node]) {
                 continue;
             }
+            // Popping node2 settles it, so its distance is final here.
             if (node == node2) {
                 return (int) soFar;
             }
             for (int[] edge : adjacency[node]) {
                 long candidate = soFar + edge[1];
+                // Only improving relaxations push a fresh entry, so any
+                // entry goes stale at most once.
                 if (candidate < distance[edge[0]]) {
                     distance[edge[0]] = candidate;
                     heap.offer(new long[] { candidate, edge[0] });

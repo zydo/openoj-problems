@@ -7,6 +7,8 @@ class Solution {
         for (int x : nums)
             maxv = max(maxv, x);
 
+        // Smallest-prime-factor sieve: lets each value's distinct prime
+        // count be read off by repeated division, no trial division.
         vector<int> spf(maxv + 1);
         for (int i = 0; i <= maxv; i++)
             spf[i] = i;
@@ -19,6 +21,8 @@ class Solution {
             }
         }
 
+        // Prime score = number of distinct prime factors; dividing out
+        // each prime fully counts it exactly once.
         vector<int> scores(n);
         for (int i = 0; i < n; i++) {
             int v = nums[i];
@@ -36,6 +40,10 @@ class Solution {
             scores[i] = cnt;
         }
 
+        // left[i]: nearest index left of i with prime score >= score[i];
+        // right[i]: nearest index right of i with score strictly greater.
+        // The >= / > asymmetry gives tied subarrays to the smallest index,
+        // so every subarray is attributed to exactly one element.
         vector<int> left(n), right(n), stackIdx(n);
         int top = 0;
         for (int i = 0; i < n; i++) {
@@ -52,6 +60,8 @@ class Solution {
             stackIdx[top++] = i;
         }
 
+        // Greedy: take the largest value first; element i wins exactly
+        // (i - left[i]) * (right[i] - i) subarrays, bounding its picks.
         vector<int> idx(n);
         for (int i = 0; i < n; i++)
             idx[i] = i;
@@ -60,6 +70,8 @@ class Solution {
         long long score = 1;
         long long rem = k;
         for (int i : idx) {
+            // Cap picks at the winning-subarray count and the remaining
+            // budget; one fast exponentiation covers any multiplicity.
             long long cnt = (long long)(i - left[i]) * (right[i] - i);
             long long use = min(cnt, rem);
             if (use > 0) {

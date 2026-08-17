@@ -6,6 +6,10 @@ MOD = 10**9 + 7
 class Solution:
     def numberOfWays(self, s: str, t: str, k: int) -> int:
         def _count_rotations(s, t):
+            # Every operation rotates s by a nonzero shift, so s is always
+            # one of its n rotations. Count those equal to t by searching t
+            # in s+s truncated to 2n-1 characters (dropping the last so the
+            # full-string rotation is not double counted).
             n = len(s)
             pi = [0] * n
             for i in range(1, n):
@@ -53,11 +57,20 @@ class Solution:
 
         n = len(s)
         cnt = _count_rotations(s, t)
+        # Aggregate rotations into two classes: cnt that spell t and n - cnt
+        # that do not. From a T rotation one operation lands on cnt - 1
+        # others (the identity shift is forbidden) or n - cnt non-T; from a
+        # non-T it lands on cnt T or n - 1 - cnt non-T. Length-k walk counts
+        # depend only on the starting class, hence this 2x2 matrix.
         mat = [
             [(cnt - 1) % MOD, cnt % MOD],
             [(n - cnt) % MOD, (n - 1 - cnt) % MOD],
         ]
+        # k reaches 1e15, so exponentiate by repeated squaring: O(log k)
+        # constant-size multiplications under the modulus.
         mk = _mat_pow(mat, k)
+        # Start on the class-T rotation iff s == t; the answer is the
+        # class-T component (automatically 0 when cnt = 0).
         v0 = 1 if s == t else 0
         v1 = 1 - v0
         return (mk[0][0] * v0 + mk[0][1] * v1) % MOD

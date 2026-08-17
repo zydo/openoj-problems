@@ -26,13 +26,21 @@ func maxLen(n int, edges [][]int, label string) int {
 		return cnt
 	}
 
+	// dp(mask, left, right): best length reachable when mask is the visited
+	// set and left/right are the path endpoints. Invariant: the visited
+	// nodes spell a palindrome read from left to right.
 	var dp func(mask, left, right int) int
 	dp = func(mask, left, right int) int {
 		idx := (mask*n+left)*n + right
 		if memo[idx] >= 0 {
 			return int(memo[idx])
 		}
+		// The standing path already spells a palindrome, so its length is
+		// the floor every extension must beat.
 		best := popcount(mask)
+		// Grow outward by one matched pair: u glues onto the left end, v onto
+		// the right end; they must be distinct, unvisited, and equally
+		// labeled so the path stays palindromic.
 		for _, u := range adj[left] {
 			if (mask>>uint(u))&1 != 0 {
 				continue
@@ -54,6 +62,8 @@ func maxLen(n int, edges [][]int, label string) int {
 		return best
 	}
 
+	// Every palindrome has a center: seed odd paths from each single node
+	// and even paths from each equal-label adjacent pair.
 	answer := 1
 	for i := 0; i < n; i++ {
 		length := dp(1<<uint(i), i, i)

@@ -25,6 +25,7 @@ func findMaxSum(nums1 []int, nums2 []int, k int) []int {
 	for i := range indices {
 		indices[i] = i
 	}
+	// sweep indices by increasing nums1: each query pools the strictly smaller values
 	sort.Slice(indices, func(a, b int) bool { return nums1[indices[a]] < nums1[indices[b]] })
 	h := &minHeap3478{}
 	total := 0
@@ -35,10 +36,13 @@ func findMaxSum(nums1 []int, nums2 []int, k int) []int {
 		for j < n && nums1[indices[j]] == nums1[indices[i]] {
 			j++
 		}
+		// strict <: the equal-value block is answered before its own values join
 		for t := i; t < j; t++ {
 			result[indices[t]] = total
 		}
+		// pool invariant: the heap holds the top-k nums2 so far, total their sum
 		for t := i; t < j; t++ {
+			// evict the current minimum only when the newcomer beats it
 			val := nums2[indices[t]]
 			if h.Len() < k {
 				heap.Push(h, val)

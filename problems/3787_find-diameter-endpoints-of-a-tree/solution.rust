@@ -11,10 +11,14 @@ impl Solution {
             adj[b].push(a);
         }
 
+        // First sweep from node 0: one side's diameter endpoints. Any member
+        // of that set is itself an endpoint, so the second sweep's farthest
+        // nodes are the opposite endpoints.
         let one_end = Self::bfs(n, &adj, 0);
         let first = one_end.iter().position(|&x| x).unwrap();
         let other_end = Self::bfs(n, &adj, first);
 
+        // The union of the two endpoint sets is exactly the special nodes.
         let mut out = String::with_capacity(n);
         for i in 0..n {
             out.push(if one_end[i] || other_end[i] { '1' } else { '0' });
@@ -22,6 +26,8 @@ impl Solution {
         out
     }
 
+    // Classic property: every node tying as farthest from src is the endpoint
+    // of some diameter path, so the sweep marks the whole farthest set.
     fn bfs(n: usize, adj: &Vec<Vec<usize>>, src: usize) -> Vec<bool> {
         let mut dist = vec![-1i32; n];
         dist[src] = 0;

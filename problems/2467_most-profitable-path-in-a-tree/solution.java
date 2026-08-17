@@ -16,6 +16,8 @@ class Solution {
             adj.get(e[1]).add(e[0]);
         }
 
+        // One BFS from the root orients the tree: depth[u] is Alice's
+        // arrival time, and order lists every node after its parent.
         int[] parent = new int[n];
         int[] depth = new int[n];
         boolean[] seen = new boolean[n];
@@ -37,6 +39,8 @@ class Solution {
             }
         }
 
+        // Bob has no choices: walk his unique path to the root, recording
+        // his arrival time at each node along it.
         Map<Integer, Integer> bobTime = new HashMap<>();
         int t = 0;
         int node = bob;
@@ -46,6 +50,10 @@ class Solution {
             node = parent[node];
         }
 
+        // BFS order makes income[parent] final before u, so each root-to-node
+        // path sum builds in one sweep. gain compares arrivals: Bob later or
+        // absent -> full amount; simultaneous -> half (exact: amounts are
+        // even); Bob earlier -> gate already open, 0.
         int[] income = new int[n];
         boolean hasBest = false;
         int best = 0;
@@ -61,6 +69,8 @@ class Solution {
                 gain = 0;
             }
             income[u] = (u != 0 ? income[parent[u]] : 0) + gain;
+            // Alice must keep moving, so she stops at a leaf: a non-root
+            // node with exactly one neighbor.
             if (u != 0 && adj.get(u).size() == 1) {
                 if (!hasBest || income[u] > best) {
                     best = income[u];

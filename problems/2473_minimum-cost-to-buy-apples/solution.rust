@@ -15,7 +15,12 @@ impl Solution {
 
         const INF: i64 = i64::MAX / 4;
         let mut answer = Vec::with_capacity(n);
+        // A trip is: reach j, buy, retrace. Any cheaper return path would
+        // also be a cheaper outbound path, so the total is
+        // apple_cost[j] + (k+1)*d(j) with d = shortest distance from start.
         for start in 1..=n {
+            // Dijkstra needs the strictly positive road weights; a popped
+            // entry older than dist[u] is stale (lazy deletion).
             let mut dist = vec![INF; n + 1];
             dist[start] = 0;
             let mut heap: BinaryHeap<Reverse<(i64, usize)>> = BinaryHeap::new();
@@ -32,6 +37,8 @@ impl Solution {
                     }
                 }
             }
+            // j = start contributes d = 0, so buying locally is always a
+            // candidate.
             let mut best = INF;
             for j in 1..=n {
                 let total = apple_cost[j - 1] as i64 + (k as i64 + 1) * dist[j];

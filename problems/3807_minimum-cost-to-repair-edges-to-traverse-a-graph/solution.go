@@ -13,6 +13,9 @@ func minCost(n int, edges [][]int, k int) int {
 
 	dist := make([]int, n)
 	queue := make([]int, 0, n)
+	// Budget `money` repairs exactly the edges with w <= money, so raising
+	// money only adds usable edges: feasibility is monotone and the answer
+	// is binary-searchable.
 	var can func(money int) bool
 	can = func(money int) bool {
 		for i := range dist {
@@ -21,6 +24,8 @@ func minCost(n int, edges [][]int, k int) int {
 		dist[0] = 0
 		queue = queue[:0]
 		queue = append(queue, 0)
+		// BFS explores level by level, so dist[v] is the fewest edges over
+		// available paths; nodes already at k edges are never expanded.
 		for head := 0; head < len(queue); head++ {
 			u := queue[head]
 			if dist[u] >= k {
@@ -36,6 +41,9 @@ func minCost(n int, edges [][]int, k int) int {
 		return dist[n-1] != -1 && dist[n-1] <= k
 	}
 
+	// If even repairing every edge fails (target unreachable, or every path
+	// longer than k), there is no answer; otherwise can(hi) always holds and
+	// the loop converges on the smallest feasible amount.
 	if !can(maxW) {
 		return -1
 	}

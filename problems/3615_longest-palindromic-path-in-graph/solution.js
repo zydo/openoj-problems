@@ -27,12 +27,20 @@ var maxLen = function (n, edges, label) {
         return cnt;
     }
 
+    // dp(mask, left, right): best length reachable when mask is the visited set
+    // and left/right are the path endpoints. Invariant: the visited nodes spell
+    // a palindrome read from left to right.
     function dp(mask, left, right) {
         var idx = (mask * n + left) * n + right;
         if (memo[idx] >= 0) return memo[idx];
+        // The standing path already spells a palindrome, so its length is the
+        // floor every extension must beat.
         var best = popcount(mask);
         var lu = adj[left];
         var rv = adj[right];
+        // Grow outward by one matched pair: u glues onto the left end, v onto
+        // the right end; they must be distinct, unvisited, and equally labeled
+        // so the path stays palindromic.
         for (var a = 0; a < lu.length; a++) {
             var u = lu[a];
             if (((mask >> u) & 1) !== 0) continue;
@@ -48,6 +56,8 @@ var maxLen = function (n, edges, label) {
         return best;
     }
 
+    // Every palindrome has a center: seed odd paths from each single node
+    // and even paths from each equal-label adjacent pair.
     var answer = 1;
     for (var s = 0; s < n; s++) {
         var len1 = dp(1 << s, s, s);

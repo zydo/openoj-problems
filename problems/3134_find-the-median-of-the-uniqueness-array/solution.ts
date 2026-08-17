@@ -1,7 +1,9 @@
 function medianOfUniquenessArray(nums: number[]): number {
     const n = nums.length;
     const length = (n * (n + 1)) / 2;
+    // Lower median of the virtual uniqueness array = rank (length + 1) / 2.
     const targetRank = Math.floor((length + 1) / 2);
+    // Count subarrays with at most x distinct values via a sliding window.
     const countAtMost = (x: number): number => {
         const freq = new Map<number, number>();
         let left = 0;
@@ -16,10 +18,12 @@ function medianOfUniquenessArray(nums: number[]): number {
                 else freq.set(out, c);
                 left++;
             }
+            // Every start inside the now-valid window yields a qualifying subarray.
             result += right - left + 1;
         }
         return result;
     };
+    // countAtMost is monotone in x, so the least x reaching the rank is the median.
     let lo = 1,
         hi = n;
     while (lo < hi) {

@@ -12,6 +12,8 @@ var minOperations = function (nums, queries) {
     }
     const out = [];
     for (const q of queries) {
+        // Each query is the sum of |nums[i] - q|; sorted prefix sums make it
+        // one binary search plus O(1) arithmetic.
         let lo = 0,
             hi = n;
         while (lo < hi) {
@@ -19,6 +21,8 @@ var minOperations = function (nums, queries) {
             if (nums[mid] < q) lo = mid + 1;
             else hi = mid;
         }
+        // j counts elements strictly below q (ties land right but contribute
+        // zero either way): smaller ones are raised to q, the rest lowered.
         const j = lo;
         const left = q * j - prefix[j];
         const right = prefix[n] - prefix[j] - q * (n - j);

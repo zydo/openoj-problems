@@ -10,11 +10,15 @@ func separateSquares(squares [][]int) float64 {
 		}
 	}
 	target := float64(total) / 2.0
+	// area below a horizontal line is non-decreasing in its height, so
+	// binary search the smallest y whose below-area reaches half the total
 	lo := 0.0
 	hi := float64(hiTop)
+	// 60 halvings shrink the interval well below the 1e-5 tolerance
 	for it := 0; it < 60; it++ {
 		mid := (lo + hi) / 2.0
 		below := 0.0
+		// each square contributes width * height clipped to [0, l]
 		for _, sq := range squares {
 			y := int64(sq[1])
 			l := int64(sq[2])
@@ -28,6 +32,7 @@ func separateSquares(squares [][]int) float64 {
 			}
 			below += (m - float64(y)) * float64(l)
 		}
+		// >= steers the search to the leftmost qualifying height
 		if below >= target {
 			hi = mid
 		} else {

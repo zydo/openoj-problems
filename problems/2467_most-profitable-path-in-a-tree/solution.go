@@ -9,6 +9,8 @@ func mostProfitablePath(edges [][]int, bob int, amount []int) int {
 		adj[e[1]] = append(adj[e[1]], e[0])
 	}
 
+	// One BFS from the root orients the tree: depth[u] is Alice's
+	// arrival time, and order lists every node after its parent.
 	parent := make([]int, n)
 	depth := make([]int, n)
 	seen := make([]bool, n)
@@ -31,6 +33,8 @@ func mostProfitablePath(edges [][]int, bob int, amount []int) int {
 		}
 	}
 
+	// Bob has no choices: walk his unique path to the root, recording
+	// his arrival time at each node along it.
 	bobTime := make(map[int]int)
 	t := 0
 	node := bob
@@ -40,6 +44,10 @@ func mostProfitablePath(edges [][]int, bob int, amount []int) int {
 		node = parent[node]
 	}
 
+	// BFS order makes income[parent] final before u, so each root-to-node
+	// path sum builds in one sweep. gain compares arrivals: Bob later or
+	// absent -> full amount; simultaneous -> half (exact: amounts are
+	// even); Bob earlier -> gate already open, 0.
 	income := make([]int, n)
 	hasBest := false
 	best := 0
@@ -63,6 +71,8 @@ func mostProfitablePath(edges [][]int, bob int, amount []int) int {
 		} else {
 			income[u] = gain
 		}
+		// Alice must keep moving, so she stops at a leaf: a non-root
+		// node with exactly one neighbor.
 		if u != 0 && len(adj[u]) == 1 {
 			if !hasBest || income[u] > best {
 				best = income[u]

@@ -6,6 +6,8 @@ impl Solution {
         }
         let cars64 = cars as i64;
         let feasible = |t: i64| -> bool {
+            // Within budget t, a rank-r mechanic finishes r*n^2 <= t cars,
+            // so its capacity is isqrt(t / r); sum capacities with early exit.
             let mut total: i64 = 0;
             for &r in &ranks {
                 total += isqrt64(t / r as i64);
@@ -15,6 +17,9 @@ impl Solution {
             }
             total >= cars64
         };
+        // Feasibility is monotone in t (mechanics can idle), so binary search
+        // the minimum feasible time. Upper bound: the best mechanic repairing
+        // every car alone, min(ranks) * cars^2.
         let (mut lo, mut hi) = (1i64, min_rank * cars64 * cars64);
         while lo < hi {
             let mid = lo + (hi - lo) / 2;

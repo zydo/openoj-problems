@@ -1,6 +1,7 @@
 class Solution {
   public:
     vector<int> resultArray(vector<int> &nums) {
+        // Compress distinct values to 1-based ranks for the two Fenwick trees.
         vector<int> vals = nums;
         sort(vals.begin(), vals.end());
         vals.erase(unique(vals.begin(), vals.end()), vals.end());
@@ -22,6 +23,7 @@ class Solution {
         };
 
         vector<int> arr1, arr2;
+        // Seed both arrays and their trees with the first two elements.
         arr1.push_back(nums[0]);
         arr2.push_back(nums[1]);
         add(tree1, comp[nums[0]], 1);
@@ -29,6 +31,7 @@ class Solution {
 
         for (int i = 2; i < (int)nums.size(); i++) {
             int x = nums[i];
+            // greaterCount = size - prefix count of ranks <= rank(x).
             long long c1 = (long long)arr1.size() - query(tree1, comp[x]);
             long long c2 = (long long)arr2.size() - query(tree2, comp[x]);
             if (c1 > c2) {
@@ -38,6 +41,7 @@ class Solution {
                 arr2.push_back(x);
                 add(tree2, comp[x], 1);
             } else {
+                // Equal counts: shorter array wins; ties on length go to arr1.
                 if (arr1.size() <= arr2.size()) {
                     arr1.push_back(x);
                     add(tree1, comp[x], 1);

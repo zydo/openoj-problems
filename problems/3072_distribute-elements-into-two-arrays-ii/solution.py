@@ -3,10 +3,12 @@ from typing import List, Optional
 
 class Solution:
     def resultArray(self, nums: List[int]) -> List[int]:
+        # Compress distinct values to 1-based ranks; trees count occurrences per rank.
         vals = sorted(set(nums))
         comp = {v: i + 1 for i, v in enumerate(vals)}
         size = len(vals)
 
+        # Fenwick tree over ranks: point update, prefix-count query.
         class BIT:
             def __init__(self, n):
                 self.n = n
@@ -25,10 +27,12 @@ class Solution:
                 return s
 
         def greater_count(bit, length, x):
+            # Prefix sum counts elements <= x; the rest are exactly the greater ones.
             idx = comp[x]
             le = bit.query(idx)
             return length - le
 
+        # Seed both arrays and their trees with the first two elements.
         arr1 = [nums[0]]
         arr2 = [nums[1]]
         bit1 = BIT(size)
@@ -46,6 +50,7 @@ class Solution:
                 arr2.append(x)
                 bit2.add(comp[x], 1)
             else:
+                # Equal counts: shorter array wins; ties on length go to arr1.
                 if len(arr1) <= len(arr2):
                     arr1.append(x)
                     bit1.add(comp[x], 1)
