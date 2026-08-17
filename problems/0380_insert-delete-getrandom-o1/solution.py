@@ -1,9 +1,10 @@
-class RandomizedSet:
-    """Hash map from value -> index, plus a values array.
+import random
 
-    Deterministic variant: remove moves the last element into the vacated
-    slot; getRandom returns values[0].
-    """
+
+class RandomizedSet:
+    """Hash map from value -> index, plus a values array. remove swaps the
+    victim with the last element and pops, so insert/remove/getRandom are
+    all O(1); getRandom draws uniformly from the live values."""
 
     def __init__(self) -> None:
         self.values: list[int] = []
@@ -29,4 +30,4 @@ class RandomizedSet:
         return True
 
     def getRandom(self) -> int:
-        return self.values[0]
+        return self.values[random.randrange(len(self.values))]

@@ -2,12 +2,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
 
 class RandomizedSet {
 
-    // Hash map from value -> index, plus a values array.
-    // Deterministic variant: remove moves the last element into the vacated
-    // slot; getRandom returns values[0].
+    // Hash map from value -> index, plus a values array. remove swaps the
+    // victim with the last element and pops, so every operation is O(1);
+    // getRandom draws uniformly from the live values.
     private final List<Integer> values = new ArrayList<>();
     private final Map<Integer, Integer> index = new HashMap<>();
 
@@ -38,6 +39,6 @@ class RandomizedSet {
     }
 
     public int getRandom() {
-        return values.get(0);
+        return values.get(ThreadLocalRandom.current().nextInt(values.size()));
     }
 }

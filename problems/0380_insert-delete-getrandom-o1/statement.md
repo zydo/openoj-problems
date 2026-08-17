@@ -14,24 +14,16 @@ Implement the `RandomizedSet` class:
 
 Each of the three operations must run in **average O(1)** time.
 
-### Deterministic judging rule
+### Statistical judging
 
-In the original formulation `getRandom` picks an element uniformly at random,
-which cannot be compared against an expected output. OpenOJ therefore judges a
-**deterministic variant** in which the set behaves as if it were backed by a
-plain array `a` maintained under exactly these rules:
+`getRandom` picks an element **uniformly at random**, exactly as on
+LeetCode — the judge verifies this statistically rather than comparing a
+single draw. Each judged `getRandom` is invoked ~2000 times, every returned
+value must belong to the current set, and the empirical frequency of each
+live element must fall within a tolerance band of its uniform probability.
+Any correct uniform sampler passes; `insert` and `remove` return values are
+compared exactly.
 
-1. `insert(val)` appends `val` to the **end** of `a` (and leaves `a` untouched
-   when `val` is already present — in a set each value occurs at most once).
-2. `remove(val)` locates the occurrence of `val` in `a`, at index `i`. The
-   element at the **end** of `a` is moved into slot `i` (unless `i` already is
-   the end), and `a` shrinks by one. The relative order of the other elements
-   may change.
-3. `getRandom()` returns `a[0]`, the element stored at the smallest index.
-
-Any implementation that follows these rules produces identical return values —
-the classic one keeps `a` together with a hash map from each value to its
-index in `a`, updated on every insert, swap and removal.
 
 ### Example 1
 
