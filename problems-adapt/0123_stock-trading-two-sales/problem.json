@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 123,
+  "slug": "stock-trading-two-sales",
+  "title": "Stock Trading, Two Sales",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stockTradingTwoSales",
+    "parameters": [
+      {
+        "name": "prices",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "stockTradingTwoSales",
+      "rust": "stock_trading_two_sales",
+      "typescript": "stockTradingTwoSales"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

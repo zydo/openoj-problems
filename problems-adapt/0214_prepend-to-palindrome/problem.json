@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": 214,
+  "slug": "prepend-to-palindrome",
+  "title": "Prepend To Palindrome",
+  "difficulty": "H4",
+  "tags": [
+    "KMP",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "prependToPalindrome",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "prependToPalindrome",
+      "rust": "prepend_to_palindrome",
+      "typescript": "prependToPalindrome"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

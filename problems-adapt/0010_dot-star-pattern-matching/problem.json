@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 10,
+  "slug": "dot-star-pattern-matching",
+  "title": "Dot-Star Pattern Matching",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Expression Parsing"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "dotStarMatch",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "p",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "dotStarMatch",
+      "rust": "dot_star_match",
+      "typescript": "dotStarMatch"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

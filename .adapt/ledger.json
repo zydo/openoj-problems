@@ -115,6 +115,536 @@
       },
       "kind": "concurrent",
       "figures": "none"
+    },
+    {
+      "source": "0003_longest-substring-without-repeating-characters",
+      "source_id": 3,
+      "source_title": "Longest Substring Without Repeating Characters",
+      "adapted": "0003_longest-duplicate-free-substring",
+      "id": 3,
+      "title": "Longest Duplicate-Free Substring",
+      "api": {
+        "lengthOfLongestSubstring": "longestDuplicateFreeLength",
+        "length_of_longest_substring": "longest_duplicate_free_length"
+      },
+      "kind": "function (multi-solution)",
+      "figures": "dropped"
+    },
+    {
+      "source": "0075_sort-colors",
+      "source_id": 75,
+      "source_title": "Sort Colors",
+      "adapted": "0075_sort-three-values",
+      "id": 75,
+      "title": "Sort Three Values",
+      "api": {
+        "sortColors": "sortThreeValues",
+        "sort_colors": "sort_three_values"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0269_alien-dictionary",
+      "source_id": 269,
+      "source_title": "Alien Dictionary",
+      "adapted": "0269_infer-letter-order",
+      "id": 269,
+      "title": "Infer Letter Order",
+      "api": {
+        "alienOrder": "inferLetterOrder",
+        "alien_order": "infer_letter_order"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0004_median-of-two-sorted-arrays",
+      "source_id": 4,
+      "source_title": "Median of Two Sorted Arrays",
+      "adapted": "0004_combined-median",
+      "id": 4,
+      "title": "Combined Median",
+      "api": {
+        "findMedianSortedArrays": "combinedMedian",
+        "find_median_sorted_arrays": "combined_median",
+        "nums1": "first",
+        "nums2": "second"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0076_minimum-window-substring",
+      "source_id": 76,
+      "source_title": "Minimum Window Substring",
+      "adapted": "0076_smallest-covering-window",
+      "id": 76,
+      "title": "Smallest Covering Window",
+      "api": {
+        "minWindow": "smallestCoveringWindow",
+        "min_window": "smallest_covering_window"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0201_bitwise-and-of-numbers-range",
+      "source_id": 201,
+      "source_title": "Bitwise AND of Numbers Range",
+      "adapted": "0201_common-prefix-bits",
+      "id": 201,
+      "title": "Common Prefix Bits",
+      "api": {
+        "rangeBitwiseAnd": "commonPrefixBits",
+        "range_bitwise_and": "common_prefix_bits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0202_happy-number",
+      "source_id": 202,
+      "source_title": "Happy Number",
+      "adapted": "0202_happy-number",
+      "id": 202,
+      "title": "Happy Number",
+      "api": {},
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0274_h-index",
+      "source_id": 274,
+      "source_title": "H-Index",
+      "adapted": "0274_h-index",
+      "id": 274,
+      "title": "H-Index",
+      "api": {},
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0005_longest-palindromic-substring",
+      "source_id": 5,
+      "source_title": "Longest Palindromic Substring",
+      "adapted": "0005_longest-palindrome-slice",
+      "id": 5,
+      "title": "Longest Palindrome Slice",
+      "api": {
+        "longestPalindrome": "longestPalindromeSlice",
+        "longest_palindrome": "longest_palindrome_slice"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0010_regular-expression-matching",
+      "source_id": 10,
+      "source_title": "Regular Expression Matching",
+      "adapted": "0010_dot-star-pattern-matching",
+      "id": 10,
+      "title": "Dot-Star Pattern Matching",
+      "api": {
+        "isMatch": "dotStarMatch",
+        "is_match": "dot_star_match"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0015_3sum",
+      "source_id": 15,
+      "source_title": "3Sum",
+      "adapted": "0015_triple-zero-sum",
+      "id": 15,
+      "title": "Triple Zero Sum",
+      "api": {
+        "threeSum": "tripleZeroSum",
+        "three_sum": "triple_zero_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0020_valid-parentheses",
+      "source_id": 20,
+      "source_title": "Valid Parentheses",
+      "adapted": "0020_balanced-brackets",
+      "id": 20,
+      "title": "Balanced Brackets",
+      "api": {
+        "isValid": "balancedBrackets",
+        "is_valid": "balanced_brackets"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0021_merge-two-sorted-lists",
+      "source_id": 21,
+      "source_title": "Merge Two Sorted Lists",
+      "adapted": "0021_splice-two-sorted-lists",
+      "id": 21,
+      "title": "Splice Two Sorted Lists",
+      "api": {
+        "mergeTwoLists": "spliceTwoSortedLists",
+        "merge_two_lists": "splice_two_sorted_lists",
+        "list1": "first",
+        "list2": "second"
+      },
+      "kind": "function (multi-solution)",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0084_largest-rectangle-in-histogram",
+      "source_id": 84,
+      "source_title": "Largest Rectangle in Histogram",
+      "adapted": "0084_largest-skyline-rectangle",
+      "id": 84,
+      "title": "Largest Skyline Rectangle",
+      "api": {
+        "largestRectangleArea": "largestSkylineRectangle",
+        "largest_rectangle_area": "largest_skyline_rectangle"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0085_maximal-rectangle",
+      "source_id": 85,
+      "source_title": "Maximal Rectangle",
+      "adapted": "0085_largest-ones-rectangle",
+      "id": 85,
+      "title": "Largest Ones Rectangle",
+      "api": {
+        "maximalRectangle": "largestOnesRectangle",
+        "maximal_rectangle": "largest_ones_rectangle"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0102_binary-tree-level-order-traversal",
+      "source_id": 102,
+      "source_title": "Binary Tree Level Order Traversal",
+      "adapted": "0102_group-tree-by-depth",
+      "id": 102,
+      "title": "Group Tree By Depth",
+      "api": {
+        "levelOrder": "groupTreeByDepth",
+        "level_order": "group_tree_by_depth"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0105_construct-binary-tree-from-preorder-and-inorder-traversal",
+      "source_id": 105,
+      "source_title": "Construct Binary Tree from Preorder and Inorder Traversal",
+      "adapted": "0105_rebuild-tree-from-two-traversals",
+      "id": 105,
+      "title": "Rebuild Tree From Two Traversals",
+      "api": {
+        "buildTree": "rebuildTreeFromTwoTraversals",
+        "build_tree": "rebuild_tree_from_two_traversals"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0109_convert-sorted-list-to-binary-search-tree",
+      "source_id": 109,
+      "source_title": "Convert Sorted List to Binary Search Tree",
+      "adapted": "0109_balanced-tree-from-sorted-list",
+      "id": 109,
+      "title": "Balanced Tree From Sorted List",
+      "api": {
+        "sortedListToBST": "balancedTreeFromSortedList",
+        "sorted_list_to_bst": "balanced_tree_from_sorted_list"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0121_best-time-to-buy-and-sell-stock",
+      "source_id": 121,
+      "source_title": "Best Time to Buy and Sell Stock",
+      "adapted": "0121_stock-trading-one-sale",
+      "id": 121,
+      "title": "Stock Trading, One Sale",
+      "api": {
+        "maxProfit": "stockTradingOneSale",
+        "max_profit": "stock_trading_one_sale"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0123_best-time-to-buy-and-sell-stock-iii",
+      "source_id": 123,
+      "source_title": "Best Time to Buy and Sell Stock III",
+      "adapted": "0123_stock-trading-two-sales",
+      "id": 123,
+      "title": "Stock Trading, Two Sales",
+      "api": {
+        "maxProfit": "stockTradingTwoSales",
+        "max_profit": "stock_trading_two_sales"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0188_best-time-to-buy-and-sell-stock-iv",
+      "source_id": 188,
+      "source_title": "Best Time to Buy and Sell Stock IV",
+      "adapted": "0188_stock-trading-k-sales",
+      "id": 188,
+      "title": "Stock Trading, K Sales",
+      "api": {
+        "maxProfit": "stockTradingKSales",
+        "max_profit": "stock_trading_k_sales"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0204_count-primes",
+      "source_id": 204,
+      "source_title": "Count Primes",
+      "adapted": "0204_primes-below-n",
+      "id": 204,
+      "title": "Primes Below N",
+      "api": {
+        "countPrimes": "primesBelowN",
+        "count_primes": "primes_below_n"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0209_minimum-size-subarray-sum",
+      "source_id": 209,
+      "source_title": "Minimum Size Subarray Sum",
+      "adapted": "0209_shortest-subarray-to-target",
+      "id": 209,
+      "title": "Shortest Subarray To Target",
+      "api": {
+        "minSubArrayLen": "shortestSubarrayToTarget",
+        "min_sub_array_len": "shortest_subarray_to_target"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0212_word-search-ii",
+      "source_id": 212,
+      "source_title": "Word Search II",
+      "adapted": "0212_find-grid-words",
+      "id": 212,
+      "title": "Find Grid Words",
+      "api": {
+        "findWords": "findGridWords",
+        "find_words": "find_grid_words"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0214_shortest-palindrome",
+      "source_id": 214,
+      "source_title": "Shortest Palindrome",
+      "adapted": "0214_prepend-to-palindrome",
+      "id": 214,
+      "title": "Prepend To Palindrome",
+      "api": {
+        "shortestPalindrome": "prependToPalindrome",
+        "shortest_palindrome": "prepend_to_palindrome"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0215_kth-largest-element-in-an-array",
+      "source_id": 215,
+      "source_title": "Kth Largest Element in an Array",
+      "adapted": "0215_select-kth-largest",
+      "id": 215,
+      "title": "Select Kth Largest",
+      "api": {
+        "findKthLargest": "selectKthLargest",
+        "find_kth_largest": "select_kth_largest"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0217_contains-duplicate",
+      "source_id": 217,
+      "source_title": "Contains Duplicate",
+      "adapted": "0217_any-repeated-value",
+      "id": 217,
+      "title": "Any Repeated Value",
+      "api": {
+        "containsDuplicate": "anyRepeatedValue",
+        "contains_duplicate": "any_repeated_value"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0277_find-the-celebrity",
+      "source_id": 277,
+      "source_title": "Find the Celebrity",
+      "adapted": "0277_universal-sink",
+      "id": 277,
+      "title": "Universal Sink",
+      "api": {
+        "findCelebrity": "findUniversalSink",
+        "find_celebrity": "find_universal_sink"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0279_perfect-squares",
+      "source_id": 279,
+      "source_title": "Perfect Squares",
+      "adapted": "0279_fewest-square-summands",
+      "id": 279,
+      "title": "Fewest Square Summands",
+      "api": {
+        "numSquares": "fewestSquareSummands",
+        "num_squares": "fewest_square_summands"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0282_expression-add-operators",
+      "source_id": 282,
+      "source_title": "Expression Add Operators",
+      "adapted": "0282_operators-between-digits",
+      "id": 282,
+      "title": "Operators Between Digits",
+      "api": {
+        "addOperators": "operatorsBetweenDigits",
+        "add_operators": "operators_between_digits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0283_move-zeroes",
+      "source_id": 283,
+      "source_title": "Move Zeroes",
+      "adapted": "0283_zeros-to-the-end",
+      "id": 283,
+      "title": "Zeros To The End",
+      "api": {
+        "moveZeroes": "zerosToEnd",
+        "move_zeroes": "zeros_to_end"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0309_best-time-to-buy-and-sell-stock-with-cooldown",
+      "source_id": 309,
+      "source_title": "Best Time to Buy and Sell Stock with Cooldown",
+      "adapted": "0309_stock-trading-with-cooldown",
+      "id": 309,
+      "title": "Stock Trading With Cooldown",
+      "api": {
+        "maxProfit": "stockTradingWithCooldown",
+        "max_profit": "stock_trading_with_cooldown"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0115_distinct-subsequences",
+      "source_id": 115,
+      "source_title": "Distinct Subsequences",
+      "adapted": "0115_count-subsequence-matches",
+      "id": 115,
+      "title": "Count Subsequence Matches",
+      "api": {
+        "numDistinct": "countSubsequenceMatches",
+        "num_distinct": "count_subsequence_matches"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0136_single-number",
+      "source_id": 136,
+      "source_title": "Single Number",
+      "adapted": "0136_lone-element",
+      "id": 136,
+      "title": "Lone Element",
+      "api": {
+        "singleNumber": "loneElement",
+        "single_number": "lone_element"
+      },
+      "kind": "function (multi-solution)",
+      "figures": "none"
+    },
+    {
+      "source": "0137_single-number-ii",
+      "source_id": 137,
+      "source_title": "Single Number II",
+      "adapted": "0137_lone-element-among-triples",
+      "id": 137,
+      "title": "Lone Element Among Triples",
+      "api": {
+        "singleNumber": "loneElementAmongTriples",
+        "single_number": "lone_element_among_triples"
+      },
+      "kind": "function (multi-solution)",
+      "figures": "none"
+    },
+    {
+      "source": "0218_the-skyline-problem",
+      "source_id": 218,
+      "source_title": "The Skyline Problem",
+      "adapted": "0218_building-outline",
+      "id": 218,
+      "title": "Building Outline",
+      "api": {
+        "getSkyline": "buildingOutline",
+        "get_skyline": "building_outline"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0260_single-number-iii",
+      "source_id": 260,
+      "source_title": "Single Number III",
+      "adapted": "0260_two-lone-elements",
+      "id": 260,
+      "title": "Two Lone Elements",
+      "api": {
+        "singleNumber": "twoLoneElements",
+        "single_number": "two_lone_elements"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0286_walls-and-gates",
+      "source_id": 286,
+      "source_title": "Walls and Gates",
+      "adapted": "0286_nearest-source-distances",
+      "id": 286,
+      "title": "Nearest Source Distances",
+      "api": {
+        "wallsAndGates": "nearestSourceDistances",
+        "walls_and_gates": "nearest_source_distances"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }

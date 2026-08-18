@@ -1,0 +1,3 @@
+func smallestCoveringWindow(s string, t string) string {
+	panic("TODO")
+}

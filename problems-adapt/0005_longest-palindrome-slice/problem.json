@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": 5,
+  "slug": "longest-palindrome-slice",
+  "title": "Longest Palindrome Slice",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestPalindromeSlice",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "longestPalindromeSlice",
+      "rust": "longest_palindrome_slice",
+      "typescript": "longestPalindromeSlice"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

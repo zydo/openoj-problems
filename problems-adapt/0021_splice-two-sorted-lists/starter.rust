@@ -1,0 +1,14 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct ListNode {
+    pub val: i32,
+    pub next: Option<Box<ListNode>>,
+}
+
+impl Solution {
+    pub fn splice_two_sorted_lists(
+        first: Option<Box<ListNode>>,
+        second: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
+        panic!("TODO")
+    }
+}
