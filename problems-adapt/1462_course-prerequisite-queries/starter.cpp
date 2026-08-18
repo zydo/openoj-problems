@@ -1,0 +1,7 @@
+class Solution {
+  public:
+    vector<bool> coursePrerequisiteQueries(int courseCount, vector<vector<int>> &prerequisites,
+                                           vector<vector<int>> &queries) {
+        throw logic_error("TODO");
+    }
+};

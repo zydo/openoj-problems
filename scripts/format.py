@@ -81,11 +81,16 @@ def _format_sql(content: str) -> str:
 
 def _formatter(extension: str):
     if extension == "py":
-        return lambda c: _run(["ruff", "format", "--line-length", "88", "-"], c, "ruff")
+        return lambda c: _run(["ruff", "format", "--line-length", "120", "-"], c, "ruff")
     if extension == "go":
         return lambda c: _run(["gofmt"], c, "gofmt")
     if extension == "rust":
-        return lambda c: _run(["rustfmt", "--edition", "2021", "--emit", "stdout"], c, "rustfmt")
+        # rustfmt reads its config from the working directory, which is not
+        # ours to rely on when formatting a stream, so the width is passed
+        # explicitly rather than left to rustfmt.toml.
+        return lambda c: _run(
+            ["rustfmt", "--edition", "2021", "--config", "max_width=120", "--emit", "stdout"], c, "rustfmt"
+        )
     if extension == "cpp":
         return lambda c: _run(["clang-format", "--style=file", "--assume-filename=x.cpp"], c, "clang-format")
     if extension in ("js", "ts", "java", "md"):

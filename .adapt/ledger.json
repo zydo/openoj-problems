@@ -2540,6 +2540,220 @@
       "figures": "dropped",
       "note": "Salvaged centrally: statement, cases and all seven implementations were finished and green; the quota window killed the agent before solutions.md and the starters. Both written here from the adapted solution, source closed.",
       "id": 514
+    },
+    {
+      "source": "0402_remove-k-digits",
+      "source_id": 402,
+      "source_title": "Remove K Digits",
+      "adapted": "0402_smallest-number-after-deletions",
+      "id": 402,
+      "title": "Smallest Number After Deletions",
+      "api": {
+        "removeKdigits": "smallestAfterDeletions",
+        "remove_kdigits": "smallest_after_deletions",
+        "num": "digits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0403_frog-jump",
+      "source_id": 403,
+      "source_title": "Frog Jump",
+      "adapted": "0403_hops-across-stones",
+      "id": 403,
+      "title": "Hops Across Stones",
+      "api": {
+        "canCross": "canHopAcross",
+        "can_cross": "can_hop_across"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "0406_queue-reconstruction-by-height",
+      "source_id": 406,
+      "source_title": "Queue Reconstruction by Height",
+      "adapted": "0406_rebuild-line-from-taller-counts",
+      "id": 406,
+      "title": "Rebuild Line From Taller Counts",
+      "api": {
+        "reconstructQueue": "rebuildLine",
+        "reconstruct_queue": "rebuild_line"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0472_concatenated-words",
+      "source_id": 472,
+      "source_title": "Concatenated Words",
+      "adapted": "0472_compound-words",
+      "id": 472,
+      "title": "Compound Words",
+      "api": {
+        "findAllConcatenatedWordsInADict": "findCompoundWords",
+        "find_all_concatenated_words_in_a_dict": "find_compound_words"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0473_matchsticks-to-square",
+      "source_id": 473,
+      "source_title": "Matchsticks to Square",
+      "adapted": "0473_square-from-sticks",
+      "id": 473,
+      "title": "Square From Sticks",
+      "api": {
+        "makesquare": "canFormSquare",
+        "matchsticks": "lengths"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0647_palindromic-substrings",
+      "source_id": 647,
+      "source_title": "Palindromic Substrings",
+      "adapted": "0647_count-palindrome-slices",
+      "id": 647,
+      "title": "Count Palindrome Slices",
+      "api": {
+        "countSubstrings": "countPalindromeSlices",
+        "count_substrings": "count_palindrome_slices"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "0718_maximum-length-of-repeated-subarray",
+      "source_id": 718,
+      "source_title": "Maximum Length of Repeated Subarray",
+      "adapted": "0718_longest-shared-run",
+      "id": 718,
+      "title": "Longest Shared Run",
+      "api": {
+        "findLength": "longestSharedRun",
+        "find_length": "longest_shared_run",
+        "nums1": "first",
+        "nums2": "second"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0719_find-k-th-smallest-pair-distance",
+      "source_id": 719,
+      "source_title": "Find K-th Smallest Pair Distance",
+      "adapted": "0719_kth-smallest-gap",
+      "id": 719,
+      "title": "K-th Smallest Gap",
+      "api": {
+        "smallestDistancePair": "kthSmallestGap",
+        "smallest_distance_pair": "kth_smallest_gap"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0721_accounts-merge",
+      "source_id": 721,
+      "source_title": "Accounts Merge",
+      "adapted": "0721_merge-contact-records",
+      "id": 721,
+      "title": "Merge Contact Records",
+      "api": {
+        "accountsMerge": "mergeContactRecords",
+        "accounts_merge": "merge_contact_records",
+        "accounts": "records"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0765_couples-holding-hands",
+      "source_id": 765,
+      "source_title": "Couples Holding Hands",
+      "adapted": "0765_fewest-pairing-swaps",
+      "id": 765,
+      "title": "Fewest Pairing Swaps",
+      "api": {
+        "minSwapsCouples": "fewestPairingSwaps",
+        "min_swaps_couples": "fewest_pairing_swaps",
+        "row": "line"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0795_number-of-subarrays-with-bounded-maximum",
+      "source_id": 795,
+      "source_title": "Number of Subarrays with Bounded Maximum",
+      "adapted": "0795_bounded-peak-subarrays",
+      "id": 795,
+      "title": "Bounded Peak Subarrays",
+      "api": {
+        "numSubarrayBoundedMax": "boundedPeakSubarrays",
+        "num_subarray_bounded_max": "bounded_peak_subarrays"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0797_all-paths-from-source-to-target",
+      "source_id": 797,
+      "source_title": "All Paths From Source to Target",
+      "adapted": "0797_enumerate-dag-routes",
+      "id": 797,
+      "title": "Enumerate DAG Routes",
+      "api": {
+        "allPathsSourceTarget": "enumerateDagRoutes",
+        "all_paths_source_target": "enumerate_dag_routes"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "1462_course-schedule-iv",
+      "source_id": 1462,
+      "source_title": "Course Schedule IV",
+      "adapted": "1462_course-prerequisite-queries",
+      "id": 1462,
+      "title": "Course Prerequisite Queries",
+      "api": {
+        "checkIfPrerequisite": "coursePrerequisiteQueries",
+        "check_if_prerequisite": "course_prerequisite_queries",
+        "numCourses": "courseCount"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "id": 307,
+      "source": "0307_range-sum-query-mutable",
+      "adapted": "0307_updatable-range-sums",
+      "title": "Updatable Range Sums",
+      "kind": "design",
+      "api": {
+        "NumArray": "UpdatableRanges",
+        "update": "setValue",
+        "sumRange": "rangeSum"
+      },
+      "figures": "none",
+      "note": "Second attempt. The first bundle under this source was deleted for carrying the source statement verbatim; this rewrite passes the stale gate. Fragment reconstructed centrally after the session limit killed the agent."
+    },
+    {
+      "id": 834,
+      "source": "0834_sum-of-distances-in-tree",
+      "adapted": "0834_tree-distance-totals",
+      "title": "Tree Distance Totals",
+      "kind": "function",
+      "api": {
+        "sumOfDistancesInTree": "treeDistanceTotals"
+      },
+      "figures": "none",
+      "note": "Salvaged centrally: bundle complete and green, fragment missing when the session limit killed the agent."
     }
   ]
 }
