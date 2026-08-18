@@ -499,6 +499,7 @@ INTERACTIVE_ORACLES = {
         "java": "InteractiveOracles.InfiniteStream",
         "parameter": "stream",
     },
+    "Sea": {"python": "Sea", "java": "InteractiveOracles.Sea", "parameter": "sea"},
 }
 
 
