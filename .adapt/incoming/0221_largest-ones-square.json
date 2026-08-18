@@ -1,4 +1,0 @@
-{"source": "0221_maximal-square", "source_id": 221, "source_title": "Maximal Square",
- "adapted": "0221_largest-ones-square", "id": 221, "title": "Largest Ones Square",
- "api": {"maximalSquare": "largestOnesSquare", "maximal_square": "largest_ones_square"},
- "kind": "function", "figures": "labels updated"}

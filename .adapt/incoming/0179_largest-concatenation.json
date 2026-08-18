@@ -1,4 +1,0 @@
-{"source": "0179_largest-number", "source_id": 179, "source_title": "Largest Number",
- "adapted": "0179_largest-concatenation", "id": 179, "title": "Largest Concatenation",
- "api": {"largestNumber": "largestConcatenation", "largest_number": "largest_concatenation"},
- "kind": "function", "figures": "none"}

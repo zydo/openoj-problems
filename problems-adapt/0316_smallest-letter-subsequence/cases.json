@@ -1,0 +1,108 @@
+{
+  "public": [
+    {
+      "input": [
+        "hfdhkhfh"
+      ],
+      "expected": "dhkf"
+    },
+    {
+      "input": [
+        "bab"
+      ],
+      "expected": "ab"
+    },
+    {
+      "input": [
+        "twisted"
+      ],
+      "expected": "twised"
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "a"
+      ],
+      "expected": "a"
+    },
+    {
+      "input": [
+        "ab"
+      ],
+      "expected": "ab"
+    },
+    {
+      "input": [
+        "ba"
+      ],
+      "expected": "ba"
+    },
+    {
+      "input": [
+        "aabbb"
+      ],
+      "expected": "ab"
+    },
+    {
+      "input": [
+        "bbbaaa"
+      ],
+      "expected": "ba"
+    },
+    {
+      "input": [
+        "zyxw"
+      ],
+      "expected": "zyxw"
+    },
+    {
+      "input": [
+        "abcabc"
+      ],
+      "expected": "abc"
+    },
+    {
+      "input": [
+        "leetcode"
+      ],
+      "expected": "letcod"
+    },
+    {
+      "input": [
+        "edfbgedbf"
+      ],
+      "expected": "bgedf"
+    },
+    {
+      "input": [
+        "abab"
+      ],
+      "expected": "ab"
+    },
+    {
+      "input": [
+        "bbbb"
+      ],
+      "expected": "b"
+    },
+    {
+      "input": [
+        "qwertyuiopasdfghjklzxcvbnm"
+      ],
+      "expected": "qwertyuiopasdfghjklzxcvbnm"
+    },
+    {
+      "input": [
+        "mitnlruhznjfia"
+      ],
+      "expected": "mitlruhznjfa"
+    },
+    {
+      "input": [
+        "cbacdcbcacd"
+      ],
+      "expected": "abcd"
+    }
+  ]
+}

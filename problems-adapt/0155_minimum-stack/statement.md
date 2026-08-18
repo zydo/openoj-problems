@@ -1,81 +1,77 @@
-# Min Stack
+# Minimum Stack
 
 ## Description
 
-Design a stack that supports `push`, `pop`, `top`, and retrieving the minimum
-element in constant time.
+Build a stack of integers on which the smallest element held is as cheap to
+read as the top one.
 
-Implement the `MinStack` class:
+Implement the `MinimumStack` class:
 
-- `MinStack()` Initializes the stack object.
-- `void push(int value)` Pushes the element `value` onto the stack.
-- `void pop()` Removes the element on the top of the stack.
-- `int top()` Gets the top element of the stack.
-- `int getMin()` Retrieves the minimum element in the stack.
+- `MinimumStack()` — start with an empty stack.
+- `void push(int value)` — place `value` on top of the stack.
+- `void pop()` — remove the top element.
+- `int top()` — return the top element.
+- `int minimum()` — return the smallest element currently on the stack.
 
-Each of the four operations must run in `O(1)` time.
+Every one of the four operations must finish in `O(1)` time.
 
 ### Example 1
 
 ```text
 Input:
-["MinStack", "push", "push", "push", "getMin", "pop", "top", "getMin"]
-[[], [-2], [0], [-3], [], [], [], []]
-Output: [null, null, null, null, -3, null, 0, -2]
+["MinimumStack", "push", "push", "push", "minimum", "pop", "minimum", "top"]
+[[], [3], [8], [1], [], [], [], []]
+Output: [null, null, null, null, 1, null, 3, 8]
 Explanation:
-MinStack minStack = new MinStack();
-minStack.push(-2);
-minStack.push(0);
-minStack.push(-3);
-minStack.getMin(); // return -3
-minStack.pop();
-minStack.top();    // return 0
-minStack.getMin(); // return -2
+MinimumStack stack = new MinimumStack();
+stack.push(3);
+stack.push(8);
+stack.push(1);
+stack.minimum(); // 1
+stack.pop();     // discards the 1
+stack.minimum(); // 3 — the stack remembers its earlier state
+stack.top();     // 8
 ```
 
 ### Example 2
 
 ```text
 Input:
-["MinStack", "push", "push", "getMin", "pop", "getMin", "push", "getMin", "top"]
-[[], [5], [5], [], [], [], [-1], [], []]
-Output: [null, null, null, 5, null, 5, null, -1, -1]
+["MinimumStack", "push", "push", "minimum", "pop", "minimum", "push", "push", "minimum", "top", "pop", "minimum"]
+[[], [6], [6], [], [], [], [9], [2], [], [], [], []]
+Output: [null, null, null, 6, null, 6, null, null, 2, 2, null, 6]
 Explanation:
-MinStack minStack = new MinStack();
-minStack.push(5);
-minStack.push(5);  // duplicate of the current minimum
-minStack.getMin(); // return 5
-minStack.pop();
-minStack.getMin(); // still 5 — the other copy remains
-minStack.push(-1);
-minStack.getMin(); // return -1
-minStack.top();    // return -1
+Two copies of 6 sit on the stack; popping one leaves the minimum at 6
+because the other copy is still there. Pushing 2 makes 2 the minimum, and
+popping it again restores 6.
 ```
 
 ### Constraints
 
 - `-2³¹ <= value <= 2³¹ - 1`
-- `pop`, `top`, and `getMin` are always called on non-empty stacks.
-- At most `3 * 10⁴` calls will be made to `push`, `pop`, `top`, and `getMin`.
+- Methods `pop`, `top`, and `minimum` are never invoked on an empty stack.
+- At most `3 * 10⁴` calls in total across the four operations.
 
 ## Hints
 
 ### Hint 1
 
-Scanning the stack for the minimum on demand costs `O(n)` per `getMin`, and
-recomputing a cached minimum on every `pop` can cost just as much. The minimum
-needs to be readable off the stack's state directly.
+Reading the minimum by scanning the stack is linear work, and keeping one
+cached smallest value fails the moment a `pop` removes it — there would be
+nothing left to consult without scanning again. The whole history of minima
+has to be available without recomputation.
 
 ### Hint 2
 
-Pair each pushed value with the minimum of the stack **as of that moment**:
-when `value` arrives, the new running minimum is `min(value, previous
-running minimum)` (or `value` alone when the stack was empty). The pair sits
-on top of the stack, so `top` and `getMin` each read one field.
+Pair every pushed value with the smallest value seen at or below it at the
+time of the push: either the value itself, or the minimum recorded by the
+entry it lands on. The top entry then holds both answers — its own value for
+`top`, its recorded minimum for `minimum`.
 
 ### Hint 3
 
-Why pairs are enough: after a `pop`, the stack returns exactly to a state it
-was in before, and the pair now on top already records the minimum of that
-earlier state — no recomputation needed. Duplicates of the minimum are handled
-naturally since each copy carries its own `min` snapshot.
+A `pop` only ever rewinds the stack to a configuration it had before, and
+the entry newly exposed already carries the minimum of exactly that
+configuration. Repeated smallest values are covered automatically: every
+copy stores its own snapshot, so the minimum persists until the last copy
+goes.

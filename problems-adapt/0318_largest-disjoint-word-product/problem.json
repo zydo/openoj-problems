@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 318,
+  "slug": "largest-disjoint-word-product",
+  "title": "Largest Disjoint Word Product",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "String",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "largestDisjointProduct",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "largestDisjointProduct",
+      "rust": "largest_disjoint_product",
+      "typescript": "largestDisjointProduct"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

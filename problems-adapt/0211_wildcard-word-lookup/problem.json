@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": 211,
+  "slug": "wildcard-word-lookup",
+  "title": "Wildcard Word Lookup",
+  "difficulty": "H3",
+  "tags": [
+    "Trie",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "WordMatcher",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "add",
+        "parameters": [
+          {
+            "name": "word",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "search",
+        "parameters": [
+          {
+            "name": "word",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

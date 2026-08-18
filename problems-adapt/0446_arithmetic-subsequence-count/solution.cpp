@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int numberOfArithmeticSlices(vector<int> &nums) {
+    int countArithmeticSubsequences(vector<int> &nums) {
         int n = (int)nums.size();
         // dp[i][d] = number of arithmetic subsequences of length >= 2 ending
         // at i with common difference d. Hashing per (index, difference)
@@ -16,7 +16,7 @@ class Solution {
                     cnt = it->second;
                 }
                 // Each length >= 2 subsequence ending at j extends by nums[i]
-                // into a slice of length >= 3, counted once at its last
+                // into a progression of length >= 3, counted once at its last
                 // element.
                 total += cnt;
                 // cnt extensions plus the new length-2 pair (j, i) itself;

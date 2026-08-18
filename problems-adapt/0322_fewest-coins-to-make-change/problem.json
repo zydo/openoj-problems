@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": 322,
+  "slug": "fewest-coins-to-make-change",
+  "title": "Fewest Coins To Make Change",
+  "difficulty": "H2",
+  "tags": [
+    "Dynamic Programming",
+    "Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestCoins",
+    "parameters": [
+      {
+        "name": "coins",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "amount",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestCoins",
+      "rust": "fewest_coins",
+      "typescript": "fewestCoins"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

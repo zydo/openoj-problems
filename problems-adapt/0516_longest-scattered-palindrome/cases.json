@@ -1,0 +1,102 @@
+{
+  "public": [
+    {
+      "input": [
+        "acgtca"
+      ],
+      "expected": 5
+    },
+    {
+      "input": [
+        "xoyyx"
+      ],
+      "expected": 4
+    },
+    {
+      "input": [
+        "qwerty"
+      ],
+      "expected": 1
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "a"
+      ],
+      "expected": 1
+    },
+    {
+      "input": [
+        "aa"
+      ],
+      "expected": 2
+    },
+    {
+      "input": [
+        "ab"
+      ],
+      "expected": 1
+    },
+    {
+      "input": [
+        "aaaa"
+      ],
+      "expected": 4
+    },
+    {
+      "input": [
+        "abcdefg"
+      ],
+      "expected": 1
+    },
+    {
+      "input": [
+        "racecar"
+      ],
+      "expected": 7
+    },
+    {
+      "input": [
+        "abcba"
+      ],
+      "expected": 5
+    },
+    {
+      "input": [
+        "aabbcc"
+      ],
+      "expected": 2
+    },
+    {
+      "input": [
+        "agbdba"
+      ],
+      "expected": 5
+    },
+    {
+      "input": [
+        "abacdfgdcaba"
+      ],
+      "expected": 11
+    },
+    {
+      "input": [
+        "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      ],
+      "expected": 1000
+    },
+    {
+      "input": [
+        "abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab"
+      ],
+      "expected": 999
+    },
+    {
+      "input": [
+        "abcdeffedcba"
+      ],
+      "expected": 12
+    }
+  ]
+}

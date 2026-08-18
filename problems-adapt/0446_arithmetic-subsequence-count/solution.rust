@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn number_of_arithmetic_slices(nums: Vec<i32>) -> i32 {
+    pub fn count_arithmetic_subsequences(nums: Vec<i32>) -> i32 {
         let n = nums.len();
         // dp[i][d] = number of arithmetic subsequences of length >= 2 ending
         // at i with common difference d. Hashing per (index, difference)
@@ -13,7 +13,7 @@ impl Solution {
                 let d = nums[i] as i64 - nums[j] as i64;
                 let cnt = *dp[j].get(&d).unwrap_or(&0);
                 // Each length >= 2 subsequence ending at j extends by
-                // nums[i] into a slice of length >= 3, counted once at its
+                // nums[i] into a progression of length >= 3, counted once at its
                 // last element.
                 total += cnt;
                 // cnt extensions plus the new length-2 pair (j, i) itself;

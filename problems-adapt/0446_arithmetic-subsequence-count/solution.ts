@@ -1,4 +1,4 @@
-function numberOfArithmeticSlices(nums: number[]): number {
+function countArithmeticSubsequences(nums: number[]): number {
     const n = nums.length;
     // dp[i].get(d) = number of arithmetic subsequences of length >= 2 ending
     // at i with common difference d. Hashing per (index, difference)
@@ -11,7 +11,7 @@ function numberOfArithmeticSlices(nums: number[]): number {
             const d = nums[i] - nums[j];
             const cnt = dp[j].get(d) || 0;
             // Each length >= 2 subsequence ending at j extends by nums[i]
-            // into a slice of length >= 3, counted once at its last element.
+            // into a progression of length >= 3, counted once at its last element.
             total += cnt;
             // cnt extensions plus the new length-2 pair (j, i) itself;
             // pairs of exactly length 2 reach the total only via extension.

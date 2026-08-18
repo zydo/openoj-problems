@@ -2,8 +2,19 @@
   "policy": "Adaptive subagent concurrency for the adaptation program. Target is the number of agents kept running; on frequent rate limiting it steps down, and it recovers slowly when quiet.",
   "cap": 16,
   "floor": 4,
-  "target": 16,
+  "target": 8,
   "step_down_on": "2 or more rate-limit agent deaths within one quota window",
   "recover": "+2 to target per hour with zero rate-limit events",
-  "events": []
+  "events": [
+    {
+      "ts": "2026-08-18T20:13:46",
+      "agent": "chunk 15",
+      "kind": "429 per-minute rate limit"
+    },
+    {
+      "ts": "2026-08-18T20:15:59",
+      "agent": "chunk 14",
+      "kind": "429 per-minute rate limit"
+    }
+  ]
 }

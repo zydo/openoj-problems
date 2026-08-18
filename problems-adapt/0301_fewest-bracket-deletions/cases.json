@@ -1,0 +1,178 @@
+{
+  "public": [
+    {
+      "input": [
+        "(()()"
+      ],
+      "expected": [
+        "(())",
+        "()()"
+      ]
+    },
+    {
+      "input": [
+        "(a(b)c)d)"
+      ],
+      "expected": [
+        "(a(b)c)d",
+        "(a(b)cd)",
+        "(a(bc)d)"
+      ]
+    },
+    {
+      "input": [
+        ")a("
+      ],
+      "expected": [
+        "a"
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "("
+      ],
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "input": [
+        ")"
+      ],
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "input": [
+        "()"
+      ],
+      "expected": [
+        "()"
+      ]
+    },
+    {
+      "input": [
+        "(((("
+      ],
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "input": [
+        "abc"
+      ],
+      "expected": [
+        "abc"
+      ]
+    },
+    {
+      "input": [
+        "(()"
+      ],
+      "expected": [
+        "()"
+      ]
+    },
+    {
+      "input": [
+        "())"
+      ],
+      "expected": [
+        "()"
+      ]
+    },
+    {
+      "input": [
+        "()()"
+      ],
+      "expected": [
+        "()()"
+      ]
+    },
+    {
+      "input": [
+        "(a(b(c)d)e)"
+      ],
+      "expected": [
+        "(a(b(c)d)e)"
+      ]
+    },
+    {
+      "input": [
+        "(()())"
+      ],
+      "expected": [
+        "(()())"
+      ]
+    },
+    {
+      "input": [
+        "()))))()"
+      ],
+      "expected": [
+        "()()"
+      ]
+    },
+    {
+      "input": [
+        "()(("
+      ],
+      "expected": [
+        "()"
+      ]
+    },
+    {
+      "input": [
+        "(((k))"
+      ],
+      "expected": [
+        "((k))"
+      ]
+    },
+    {
+      "input": [
+        "n"
+      ],
+      "expected": [
+        "n"
+      ]
+    },
+    {
+      "input": [
+        "())(()"
+      ],
+      "expected": [
+        "()()"
+      ]
+    },
+    {
+      "input": [
+        "()v)"
+      ],
+      "expected": [
+        "()v",
+        "(v)"
+      ]
+    },
+    {
+      "input": [
+        "(())("
+      ],
+      "expected": [
+        "(())"
+      ]
+    },
+    {
+      "input": [
+        "((((())())))"
+      ],
+      "expected": [
+        "((((())())))"
+      ]
+    }
+  ]
+}

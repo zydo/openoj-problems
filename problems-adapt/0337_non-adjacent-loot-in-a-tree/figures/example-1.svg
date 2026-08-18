@@ -6,7 +6,7 @@
     <line x1="180" y1="129" x2="180" y2="175"/>
     <line x1="380" y1="129" x2="380" y2="175"/>
   </g>
-  <!-- robbed houses: the root 3, the left leaf 3 and the right leaf 1 -->
+  <!-- chosen nodes: the root 4, the left leaf 5 and the right leaf 6 -->
   <circle cx="280" cy="40" r="17" fill="#4169E1" fill-opacity="0.18" stroke="#4169E1" stroke-width="2"/>
   <circle cx="180" cy="192" r="17" fill="#4169E1" fill-opacity="0.18" stroke="#4169E1" stroke-width="2"/>
   <circle cx="380" cy="192" r="17" fill="#4169E1" fill-opacity="0.18" stroke="#4169E1" stroke-width="2"/>
@@ -15,12 +15,12 @@
     <circle cx="380" cy="112" r="17"/>
   </g>
   <g fill="#1a2026" font-weight="600" text-anchor="middle">
-    <text x="280" y="45">3</text>
-    <text x="180" y="117">2</text>
-    <text x="380" y="117">3</text>
-    <text x="180" y="197">3</text>
-    <text x="380" y="197">1</text>
+    <text x="280" y="45">4</text>
+    <text x="180" y="117">1</text>
+    <text x="380" y="117">2</text>
+    <text x="180" y="197">5</text>
+    <text x="380" y="197">6</text>
   </g>
-  <text x="280" y="236" text-anchor="middle" fill="#4169E1" font-weight="600">robbed: 3 + 3 + 1 = 7</text>
-  <text x="280" y="252" text-anchor="middle" fill="#5c6b76" font-size="12.5">no two robbed houses are directly linked</text>
+  <text x="280" y="236" text-anchor="middle" fill="#4169E1" font-weight="600">chosen: 4 + 5 + 6 = 15</text>
+  <text x="280" y="252" text-anchor="middle" fill="#5c6b76" font-size="12.5">no two chosen nodes are a parent and child</text>
 </svg>

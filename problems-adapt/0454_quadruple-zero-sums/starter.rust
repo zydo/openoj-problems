@@ -1,0 +1,10 @@
+impl Solution {
+    pub fn count_quadruple_zero_sums(
+        first: Vec<i32>,
+        second: Vec<i32>,
+        third: Vec<i32>,
+        fourth: Vec<i32>,
+    ) -> i32 {
+        panic!("TODO")
+    }
+}

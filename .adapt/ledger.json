@@ -1154,6 +1154,869 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0056_merge-intervals",
+      "source_id": 56,
+      "source_title": "Merge Intervals",
+      "adapted": "0056_coalesce-overlapping-intervals",
+      "id": 56,
+      "title": "Coalesce Overlapping Intervals",
+      "api": {
+        "merge": "coalesce"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0062_unique-paths",
+      "source_id": 62,
+      "source_title": "Unique Paths",
+      "adapted": "0062_count-grid-paths",
+      "id": 62,
+      "title": "Count Grid Paths",
+      "api": {
+        "uniquePaths": "countGridPaths",
+        "unique_paths": "count_grid_paths"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0131_palindrome-partitioning",
+      "source_id": 131,
+      "source_title": "Palindrome Partitioning",
+      "adapted": "0131_palindrome-partitions",
+      "id": 131,
+      "title": "Palindrome Partitions",
+      "api": {
+        "partition": "palindromePartitions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0132_palindrome-partitioning-ii",
+      "source_id": 132,
+      "source_title": "Palindrome Partitioning II",
+      "adapted": "0132_fewest-palindrome-cuts",
+      "id": 132,
+      "title": "Fewest Palindrome Cuts",
+      "api": {
+        "minCut": "fewestPalindromeCuts"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0155_min-stack",
+      "source_id": 155,
+      "source_title": "Min Stack",
+      "adapted": "0155_minimum-stack",
+      "id": 155,
+      "title": "Minimum Stack",
+      "api": {
+        "MinStack": "MinimumStack",
+        "getMin": "minimum"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0179_largest-number",
+      "source_id": 179,
+      "source_title": "Largest Number",
+      "adapted": "0179_largest-concatenation",
+      "id": 179,
+      "title": "Largest Concatenation",
+      "api": {
+        "largestNumber": "largestConcatenation",
+        "largest_number": "largest_concatenation"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0187_repeated-dna-sequences",
+      "source_id": 187,
+      "source_title": "Repeated DNA Sequences",
+      "adapted": "0187_repeated-ten-letter-windows",
+      "id": 187,
+      "title": "Repeated Ten-Letter Windows",
+      "api": {
+        "findRepeatedDnaSequences": "findRepeatedWindows",
+        "find_repeated_dna_sequences": "find_repeated_windows"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0221_maximal-square",
+      "source_id": 221,
+      "source_title": "Maximal Square",
+      "adapted": "0221_largest-ones-square",
+      "id": 221,
+      "title": "Largest Ones Square",
+      "api": {
+        "maximalSquare": "largestOnesSquare",
+        "maximal_square": "largest_ones_square"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0264_ugly-number-ii",
+      "source_id": 264,
+      "source_title": "Ugly Number II",
+      "adapted": "0264_nth-five-smooth-number",
+      "id": 264,
+      "title": "Nth Five-Smooth Number",
+      "api": {
+        "nthUglyNumber": "nthFiveSmooth",
+        "nth_ugly_number": "nth_five_smooth"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0268_missing-number",
+      "source_id": 268,
+      "source_title": "Missing Number",
+      "adapted": "0268_the-missing-value",
+      "id": 268,
+      "title": "The Missing Value",
+      "api": {
+        "missingNumber": "missingValue",
+        "missing_number": "missing_value"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0287_find-the-duplicate-number",
+      "source_id": 287,
+      "source_title": "Find the Duplicate Number",
+      "adapted": "0287_the-repeated-value",
+      "id": 287,
+      "title": "The Repeated Value",
+      "api": {
+        "findDuplicate": "repeatedValue",
+        "find_duplicate": "repeated_value"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0315_count-of-smaller-numbers-after-self",
+      "source_id": 315,
+      "source_title": "Count of Smaller Numbers After Self",
+      "adapted": "0315_right-smaller-counts",
+      "id": 315,
+      "title": "Right Smaller Counts",
+      "api": {
+        "countSmaller": "rightSmallerCounts",
+        "count_smaller": "right_smaller_counts"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0407_trapping-rain-water-ii",
+      "source_id": 407,
+      "source_title": "Trapping Rain Water II",
+      "adapted": "0407_water-pooled-on-a-grid",
+      "id": 407,
+      "title": "Water Pooled On A Grid",
+      "api": {
+        "trapRainWater": "pooledOnGrid",
+        "trap_rain_water": "pooled_on_grid",
+        "heightMap": "heights",
+        "height_map": "heights"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0446_arithmetic-slices-ii-subsequence",
+      "source_id": 446,
+      "source_title": "Arithmetic Slices II - Subsequence",
+      "adapted": "0446_arithmetic-subsequence-count",
+      "id": 446,
+      "title": "Arithmetic Subsequence Count",
+      "api": {
+        "numberOfArithmeticSlices": "countArithmeticSubsequences",
+        "number_of_arithmetic_slices": "count_arithmetic_subsequences"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0474_ones-and-zeroes",
+      "source_id": 474,
+      "source_title": "Ones and Zeroes",
+      "adapted": "0474_most-strings-within-bit-budgets",
+      "id": 474,
+      "title": "Most Strings Within Bit Budgets",
+      "api": {
+        "findMaxForm": "mostStringsWithinBudgets",
+        "find_max_form": "most_strings_within_budgets"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0072_edit-distance",
+      "source_id": 72,
+      "source_title": "Edit Distance",
+      "adapted": "0072_edit-distance",
+      "id": 72,
+      "title": "Edit Distance",
+      "api": {
+        "word1": "source",
+        "word2": "target"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0120_triangle",
+      "source_id": 120,
+      "source_title": "Triangle",
+      "adapted": "0120_cheapest-triangle-path",
+      "id": 120,
+      "title": "Cheapest Triangle Path",
+      "api": {
+        "minimumTotal": "cheapestPath",
+        "minimum_total": "cheapest_path"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0207_course-schedule",
+      "source_id": 207,
+      "source_title": "Course Schedule",
+      "adapted": "0207_course-feasibility",
+      "id": 207,
+      "title": "Course Feasibility",
+      "api": {
+        "canFinish": "coursesFeasible",
+        "can_finish": "courses_feasible",
+        "numCourses": "courseCount"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0222_count-complete-tree-nodes",
+      "source_id": 222,
+      "source_title": "Count Complete Tree Nodes",
+      "adapted": "0222_size-of-a-complete-tree",
+      "id": 222,
+      "title": "Size Of A Complete Tree",
+      "api": {
+        "countNodes": "treeSize",
+        "count_nodes": "tree_size"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0289_game-of-life",
+      "source_id": 289,
+      "source_title": "Game of Life",
+      "adapted": "0289_life-one-generation",
+      "id": 289,
+      "title": "Life, One Generation",
+      "api": {
+        "gameOfLife": "nextGeneration",
+        "game_of_life": "next_generation"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0316_remove-duplicate-letters",
+      "source_id": 316,
+      "source_title": "Remove Duplicate Letters",
+      "adapted": "0316_smallest-letter-subsequence",
+      "id": 316,
+      "title": "Smallest Letter Subsequence",
+      "api": {
+        "removeDuplicateLetters": "smallestLetterSubsequence",
+        "remove_duplicate_letters": "smallest_letter_subsequence"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0337_house-robber-iii",
+      "source_id": 337,
+      "source_title": "House Robber III",
+      "adapted": "0337_non-adjacent-loot-in-a-tree",
+      "id": 337,
+      "title": "Non-Adjacent Loot in a Tree",
+      "api": {
+        "rob": "maxNonAdjacentLoot"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0480_sliding-window-median",
+      "source_id": 480,
+      "source_title": "Sliding Window Median",
+      "adapted": "0480_rolling-window-medians",
+      "id": 480,
+      "title": "Rolling Window Medians",
+      "api": {
+        "medianSlidingWindow": "rollingWindowMedians",
+        "median_sliding_window": "rolling_window_medians"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0587_erect-the-fence",
+      "source_id": 587,
+      "source_title": "Erect the Fence",
+      "adapted": "0587_convex-fence",
+      "id": 587,
+      "title": "Convex Fence",
+      "api": {
+        "outerTrees": "fencePoints",
+        "outer_trees": "fence_points",
+        "trees": "points"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0120_triangle",
+      "source_id": 120,
+      "source_title": "Triangle",
+      "adapted": "0120_cheapest-pyramid-path",
+      "id": 120,
+      "title": "Cheapest Pyramid Path",
+      "api": {
+        "minimumTotal": "cheapestPath",
+        "minimum_total": "cheapest_path",
+        "triangle": "rows"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0173_binary-search-tree-iterator",
+      "source_id": 173,
+      "source_title": "Binary Search Tree Iterator",
+      "adapted": "0173_in-order-tree-iterator",
+      "id": 173,
+      "title": "In-Order Tree Iterator",
+      "api": {
+        "BSTIterator": "InOrderTreeIterator"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0200_number-of-islands",
+      "source_id": 200,
+      "source_title": "Number of Islands",
+      "adapted": "0200_count-grid-islands",
+      "id": 200,
+      "title": "Count Grid Islands",
+      "api": {
+        "numIslands": "countGridIslands",
+        "num_islands": "count_grid_islands"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0208_implement-trie-prefix-tree",
+      "source_id": 208,
+      "source_title": "Implement Trie (Prefix Tree)",
+      "adapted": "0208_prefix-tree",
+      "id": 208,
+      "title": "Prefix Tree",
+      "api": {
+        "Trie": "PrefixTree",
+        "startsWith": "hasPrefix"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0210_course-schedule-ii",
+      "source_id": 210,
+      "source_title": "Course Schedule II",
+      "adapted": "0210_course-order",
+      "id": 210,
+      "title": "Course Order",
+      "api": {
+        "findOrder": "courseOrder",
+        "find_order": "course_order",
+        "numCourses": "courseCount"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0211_design-add-and-search-words-data-structure",
+      "source_id": 211,
+      "source_title": "Design Add and Search Words Data Structure",
+      "adapted": "0211_wildcard-word-lookup",
+      "id": 211,
+      "title": "Wildcard Word Lookup",
+      "api": {
+        "WordDictionary": "WordMatcher",
+        "addWord": "add"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0224_basic-calculator",
+      "source_id": 224,
+      "source_title": "Basic Calculator",
+      "adapted": "0224_calculator-with-parentheses",
+      "id": 224,
+      "title": "Calculator With Parentheses",
+      "api": {
+        "calculate": "calculateWithParentheses"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0227_basic-calculator-ii",
+      "source_id": 227,
+      "source_title": "Basic Calculator II",
+      "adapted": "0227_calculator-with-precedence",
+      "id": 227,
+      "title": "Calculator With Precedence",
+      "api": {
+        "calculate": "calculateWithPrecedence"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0230_kth-smallest-element-in-a-bst",
+      "source_id": 230,
+      "source_title": "Kth Smallest Element in a BST",
+      "adapted": "0230_select-kth-smallest-in-a-search-tree",
+      "id": 230,
+      "title": "Select Kth Smallest In A Search Tree",
+      "api": {
+        "kthSmallest": "selectKthSmallest",
+        "kth_smallest": "select_kth_smallest"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0233_number-of-digit-one",
+      "source_id": 233,
+      "source_title": "Number of Digit One",
+      "adapted": "0233_digit-one-tally",
+      "id": 233,
+      "title": "Digit One Tally",
+      "api": {
+        "countDigitOne": "digitOneTally",
+        "count_digit_one": "digit_one_tally"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0262_trips-and-users",
+      "source_id": 262,
+      "source_title": "Trips and Users",
+      "adapted": "0262_ride-cancellation-rates",
+      "id": 262,
+      "title": "Ride Cancellation Rates",
+      "api": {
+        "Trips": "Rides",
+        "Users": "Members",
+        "client_id": "rider_id",
+        "users_id": "member_id",
+        "request_at": "ride_date"
+      },
+      "kind": "sql",
+      "figures": "none"
+    },
+    {
+      "source": "0300_longest-increasing-subsequence",
+      "source_id": 300,
+      "source_title": "Longest Increasing Subsequence",
+      "adapted": "0300_longest-ascending-subsequence",
+      "id": 300,
+      "title": "Longest Ascending Subsequence",
+      "api": {
+        "lengthOfLIS": "longestAscendingLength",
+        "length_of_lis": "longest_ascending_length"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0301_remove-invalid-parentheses",
+      "source_id": 301,
+      "source_title": "Remove Invalid Parentheses",
+      "adapted": "0301_fewest-bracket-deletions",
+      "id": 301,
+      "title": "Fewest Bracket Deletions",
+      "api": {
+        "removeInvalidParentheses": "fewestBracketDeletions",
+        "remove_invalid_parentheses": "fewest_bracket_deletions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0318_maximum-product-of-word-lengths",
+      "source_id": 318,
+      "source_title": "Maximum Product of Word Lengths",
+      "adapted": "0318_largest-disjoint-word-product",
+      "id": 318,
+      "title": "Largest Disjoint Word Product",
+      "api": {
+        "maxProduct": "largestDisjointProduct",
+        "max_product": "largest_disjoint_product"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0322_coin-change",
+      "source_id": 322,
+      "source_title": "Coin Change",
+      "adapted": "0322_fewest-coins-to-make-change",
+      "id": 322,
+      "title": "Fewest Coins To Make Change",
+      "api": {
+        "coinChange": "fewestCoins",
+        "coin_change": "fewest_coins"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0323_number-of-connected-components-in-an-undirected-graph",
+      "source_id": 323,
+      "source_title": "Number of Connected Components in an Undirected Graph",
+      "adapted": "0323_count-graph-components",
+      "id": 323,
+      "title": "Count Graph Components",
+      "api": {
+        "countComponents": "countGraphComponents",
+        "count_components": "count_graph_components"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0338_counting-bits",
+      "source_id": 338,
+      "source_title": "Counting Bits",
+      "adapted": "0338_set-bit-counts-to-n",
+      "id": 338,
+      "title": "Set-Bit Counts to N",
+      "api": {
+        "countBits": "setBitCounts",
+        "count_bits": "set_bit_counts"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0340_longest-substring-with-at-most-k-distinct-characters",
+      "source_id": 340,
+      "source_title": "Longest Substring with At Most K Distinct Characters",
+      "adapted": "0340_longest-window-of-at-most-k-symbols",
+      "id": 340,
+      "title": "Longest Window of At Most K Symbols",
+      "api": {
+        "lengthOfLongestSubstringKDistinct": "longestKSymbolWindow",
+        "length_of_longest_substring_k_distinct": "longest_k_symbol_window"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0380_insert-delete-getrandom-o1",
+      "source_id": 380,
+      "source_title": "Insert Delete GetRandom O(1)",
+      "adapted": "0380_random-draw-set",
+      "id": 380,
+      "title": "Random Draw Set",
+      "api": {
+        "RandomizedSet": "RandomDrawSet",
+        "getRandom": "draw"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0410_split-array-largest-sum",
+      "source_id": 410,
+      "source_title": "Split Array Largest Sum",
+      "adapted": "0410_smallest-largest-split-sum",
+      "id": 410,
+      "title": "Smallest Largest Split Sum",
+      "api": {
+        "splitArray": "smallestLargestSplit",
+        "split_array": "smallest_largest_split"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0416_partition-equal-subset-sum",
+      "source_id": 416,
+      "source_title": "Partition Equal Subset Sum",
+      "adapted": "0416_split-into-equal-sum-halves",
+      "id": 416,
+      "title": "Split Into Equal-Sum Halves",
+      "api": {
+        "canPartition": "hasEqualSumSplit",
+        "can_partition": "has_equal_sum_split"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0450_delete-node-in-a-bst",
+      "source_id": 450,
+      "source_title": "Delete Node in a BST",
+      "adapted": "0450_bst-node-removal",
+      "id": 450,
+      "title": "BST Node Removal",
+      "api": {
+        "deleteNode": "removeNode",
+        "delete_node": "remove_node"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0452_minimum-number-of-arrows-to-burst-balloons",
+      "source_id": 452,
+      "source_title": "Minimum Number of Arrows to Burst Balloons",
+      "adapted": "0452_fewest-positions-to-cover-intervals",
+      "id": 452,
+      "title": "Fewest Positions To Cover Intervals",
+      "api": {
+        "findMinArrowShots": "minCoveringPositions",
+        "find_min_arrow_shots": "min_covering_positions",
+        "points": "intervals"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0454_4sum-ii",
+      "source_id": 454,
+      "source_title": "4Sum II",
+      "adapted": "0454_quadruple-zero-sums",
+      "id": 454,
+      "title": "Quadruple Zero Sums",
+      "api": {
+        "fourSumCount": "countQuadrupleZeroSums",
+        "four_sum_count": "count_quadruple_zero_sums",
+        "nums1": "first",
+        "nums2": "second",
+        "nums3": "third",
+        "nums4": "fourth"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0486_predict-the-winner",
+      "source_id": 486,
+      "source_title": "Predict the Winner",
+      "adapted": "0486_end-picking-game-winner",
+      "id": 486,
+      "title": "End-Picking Game Winner",
+      "api": {
+        "predictTheWinner": "firstPlayerWins",
+        "predict_the_winner": "first_player_wins"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0493_reverse-pairs",
+      "source_id": 493,
+      "source_title": "Reverse Pairs",
+      "adapted": "0493_inversions-beyond-double",
+      "id": 493,
+      "title": "Inversions Beyond Double",
+      "api": {
+        "reversePairs": "countInversionsBeyondDouble",
+        "reverse_pairs": "count_inversions_beyond_double"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0494_target-sum",
+      "source_id": 494,
+      "source_title": "Target Sum",
+      "adapted": "0494_signed-totals-to-a-target",
+      "id": 494,
+      "title": "Signed Totals To A Target",
+      "api": {
+        "findTargetSumWays": "countSignedTotals",
+        "find_target_sum_ways": "count_signed_totals"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0496_next-greater-element-i",
+      "source_id": 496,
+      "source_title": "Next Greater Element I",
+      "adapted": "0496_next-greater-query-values",
+      "id": 496,
+      "title": "Next Greater, Query Values",
+      "api": {
+        "nextGreaterElement": "nextGreaterForQueries",
+        "next_greater_element": "next_greater_for_queries",
+        "nums1": "queries",
+        "nums2": "nums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0503_next-greater-element-ii",
+      "source_id": 503,
+      "source_title": "Next Greater Element II",
+      "adapted": "0503_next-greater-circular-array",
+      "id": 503,
+      "title": "Next Greater, Circular Array",
+      "api": {
+        "nextGreaterElements": "nextGreaterCircular",
+        "next_greater_elements": "next_greater_circular"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0516_longest-palindromic-subsequence",
+      "source_id": 516,
+      "source_title": "Longest Palindromic Subsequence",
+      "adapted": "0516_longest-scattered-palindrome",
+      "id": 516,
+      "title": "Longest Scattered Palindrome",
+      "api": {
+        "longestPalindromeSubseq": "longestScatteredPalindrome",
+        "longest_palindrome_subseq": "longest_scattered_palindrome"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0518_coin-change-ii",
+      "source_id": 518,
+      "source_title": "Coin Change II",
+      "adapted": "0518_ways-to-make-change",
+      "id": 518,
+      "title": "Ways To Make Change",
+      "api": {
+        "change": "combinations"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0528_random-pick-with-weight",
+      "source_id": 528,
+      "source_title": "Random Pick with Weight",
+      "adapted": "0528_weighted-random-draw",
+      "id": 528,
+      "title": "Weighted Random Draw",
+      "api": {
+        "pickIndex": "drawIndex",
+        "w": "weights"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0741_cherry-pickup",
+      "source_id": 741,
+      "source_title": "Cherry Pickup",
+      "adapted": "0741_round-trip-cherry-harvest",
+      "id": 741,
+      "title": "Round-Trip Cherry Harvest",
+      "api": {
+        "cherryPickup": "roundTripHarvest",
+        "cherry_pickup": "round_trip_harvest"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1463_cherry-pickup-ii",
+      "source_id": 1463,
+      "source_title": "Cherry Pickup II",
+      "adapted": "1463_twin-robot-cherry-harvest",
+      "id": 1463,
+      "title": "Twin-Robot Cherry Harvest",
+      "api": {
+        "cherryPickup": "twinRobotHarvest",
+        "cherry_pickup": "twin_robot_harvest"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1924_erect-the-fence-ii",
+      "source_id": 1924,
+      "source_title": "Erect the Fence II",
+      "adapted": "1924_circular-fence",
+      "id": 1924,
+      "title": "Circular Fence",
+      "api": {
+        "outerTrees": "fenceCircle",
+        "outer_trees": "fence_circle",
+        "trees": "positions"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2454_next-greater-element-iv",
+      "source_id": 2454,
+      "source_title": "Next Greater Element IV",
+      "adapted": "2454_next-greater-second-match",
+      "id": 2454,
+      "title": "Next Greater, Second Match",
+      "api": {
+        "secondGreaterElement": "secondNextGreater",
+        "second_greater_element": "second_next_greater"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2560_house-robber-iv",
+      "source_id": 2560,
+      "source_title": "House Robber IV",
+      "adapted": "2560_non-adjacent-loot-under-a-cap",
+      "id": 2560,
+      "title": "Non-Adjacent Loot Under a Cap",
+      "api": {
+        "minCapability": "minNonAdjacentLootCap",
+        "min_capability": "min_non_adjacent_loot_cap"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
