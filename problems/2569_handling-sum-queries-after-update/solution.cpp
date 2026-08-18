@@ -50,8 +50,7 @@ class Solution {
     }
 
   public:
-    vector<long long> handleQuery(vector<int> &nums1, vector<int> &nums2,
-                                  vector<vector<int>> &queries) {
+    vector<long long> handleQuery(vector<int> &nums1, vector<int> &nums2, vector<vector<int>> &queries) {
         n = (int)nums1.size();
         tree.assign(4 * max(1, n), 0);
         lazy.assign(4 * max(1, n), 0);

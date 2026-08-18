@@ -1,8 +1,3 @@
-function minimumTotalPrice(
-    n: number,
-    edges: number[][],
-    price: number[],
-    trips: number[][],
-): number {
+function minimumTotalPrice(n: number, edges: number[][], price: number[], trips: number[][]): number {
     throw new Error("TODO");
 }

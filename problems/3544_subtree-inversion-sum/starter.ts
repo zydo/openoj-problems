@@ -1,7 +1,3 @@
-function subtreeInversionSum(
-    edges: number[][],
-    nums: number[],
-    k: number,
-): number {
+function subtreeInversionSum(edges: number[][], nums: number[], k: number): number {
     throw new Error("TODO");
 }

@@ -11,15 +11,7 @@ impl Solution {
         for r in 0..rows {
             for c in 0..cols {
                 if grid[r][c] == 0 {
-                    if Self::flood(
-                        &mut grid,
-                        r as i32,
-                        c as i32,
-                        rows as i32,
-                        cols as i32,
-                        &dr,
-                        &dc,
-                    ) {
+                    if Self::flood(&mut grid, r as i32, c as i32, rows as i32, cols as i32, &dr, &dc) {
                         count += 1;
                     }
                 }
@@ -28,15 +20,7 @@ impl Solution {
         count
     }
 
-    fn flood(
-        grid: &mut Vec<Vec<i32>>,
-        r: i32,
-        c: i32,
-        rows: i32,
-        cols: i32,
-        dr: &[i32; 4],
-        dc: &[i32; 4],
-    ) -> bool {
+    fn flood(grid: &mut Vec<Vec<i32>>, r: i32, c: i32, rows: i32, cols: i32, dr: &[i32; 4], dc: &[i32; 4]) -> bool {
         // Erase land to water as we walk: the fill doubles as the visited
         // marker, and an explicit stack keeps snake-shaped islands from
         // overflowing the recursion stack.

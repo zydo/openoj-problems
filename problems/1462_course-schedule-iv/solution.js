@@ -14,9 +14,7 @@ var checkIfPrerequisite = function (numCourses, prerequisites, queries) {
     const bits = 30;
     const words = Math.ceil(numCourses / bits);
     // reach[v] is a bitset (30-bit chunks) of the courses that reach course v
-    const reach = Array.from({ length: numCourses }, () =>
-        new Array(words).fill(0),
-    );
+    const reach = Array.from({ length: numCourses }, () => new Array(words).fill(0));
     const queue = [];
     for (let i = 0; i < numCourses; i++) {
         if (indegree[i] === 0) {
@@ -35,7 +33,5 @@ var checkIfPrerequisite = function (numCourses, prerequisites, queries) {
             }
         }
     }
-    return queries.map(
-        ([u, v]) => (reach[v][(u / bits) | 0] & (1 << (u % bits))) !== 0,
-    );
+    return queries.map(([u, v]) => (reach[v][(u / bits) | 0] & (1 << (u % bits))) !== 0);
 };

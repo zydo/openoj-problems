@@ -3,11 +3,7 @@ import java.util.Queue;
 
 class Solution {
 
-    public int[][] buildMatrix(
-        int k,
-        int[][] rowConditions,
-        int[][] colConditions
-    ) {
+    public int[][] buildMatrix(int k, int[][] rowConditions, int[][] colConditions) {
         int[] rowOrder = topo(k, rowConditions);
         if (rowOrder == null) {
             return new int[0][];

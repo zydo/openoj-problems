@@ -3,11 +3,7 @@ function minimumDifference(nums: number[]): number {
     const n = Math.floor(total / 3);
 
     // Generic binary heap helpers.
-    const push = (
-        h: number[],
-        v: number,
-        greater: (a: number, b: number) => boolean,
-    ): void => {
+    const push = (h: number[], v: number, greater: (a: number, b: number) => boolean): void => {
         h.push(v);
         let c = h.length - 1;
         while (c > 0) {
@@ -22,10 +18,7 @@ function minimumDifference(nums: number[]): number {
             }
         }
     };
-    const pop = (
-        h: number[],
-        greater: (a: number, b: number) => boolean,
-    ): number => {
+    const pop = (h: number[], greater: (a: number, b: number) => boolean): number => {
         const top = h[0];
         const last = h.pop()!;
         if (h.length > 0) {

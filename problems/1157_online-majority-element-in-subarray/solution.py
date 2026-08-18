@@ -41,9 +41,7 @@ class MajorityChecker:
         count = bisect_left(occurrences, right + 1) - bisect_left(occurrences, left)
         return candidate if count >= threshold else -1
 
-    def _fold(
-        self, node: int, lo: int, hi: int, left: int, right: int
-    ) -> tuple[int, int]:
+    def _fold(self, node: int, lo: int, hi: int, left: int, right: int) -> tuple[int, int]:
         if left <= lo and hi <= right:
             return self.tree[node]
         mid = (lo + hi) // 2

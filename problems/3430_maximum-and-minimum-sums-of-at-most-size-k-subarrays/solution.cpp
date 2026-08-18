@@ -60,8 +60,7 @@ class Solution {
 
         long long answer = 0;
         for (int i = 0; i < n; i++) {
-            long long cnt =
-                Helper::countPairs(Lmax[i], Rmax[i], K) + Helper::countPairs(Lmin[i], Rmin[i], K);
+            long long cnt = Helper::countPairs(Lmax[i], Rmax[i], K) + Helper::countPairs(Lmin[i], Rmin[i], K);
             answer += (long long)nums[i] * cnt;
         }
         return answer;

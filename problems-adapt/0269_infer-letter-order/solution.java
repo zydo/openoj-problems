@@ -4,8 +4,7 @@ class Solution {
         final int A = 26;
         boolean[] present = new boolean[A];
         for (String w : words) {
-            for (int i = 0; i < w.length(); i++) present[w.charAt(i) - 'a'] =
-                true;
+            for (int i = 0; i < w.length(); i++) present[w.charAt(i) - 'a'] = true;
         }
         int total = 0;
         for (int c = 0; c < A; c++) if (present[c]) total++;

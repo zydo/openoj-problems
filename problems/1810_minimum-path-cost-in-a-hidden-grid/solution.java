@@ -35,9 +35,7 @@ class Solution {
                 int nr = r + DR[idx],
                     nc = c + DC[idx];
                 idx += 1;
-                if (
-                    master.canMove(direction) && !cost.containsKey(key(nr, nc))
-                ) {
+                if (master.canMove(direction) && !cost.containsKey(key(nr, nc))) {
                     cost.put(key(nr, nc), master.move(direction));
                     if (master.isTarget()) {
                         foundTarget = new int[] { nr, nc };
@@ -62,9 +60,7 @@ class Solution {
             return -1;
         }
         Map<Long, Integer> d = new HashMap<>();
-        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) ->
-            Long.compare(a[0], b[0])
-        );
+        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
         d.put(startKey, 0);
         heap.add(new long[] { 0, 0, 0 });
         while (!heap.isEmpty()) {

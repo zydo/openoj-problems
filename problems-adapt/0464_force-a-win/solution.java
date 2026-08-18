@@ -9,10 +9,7 @@ class Solution {
             return true;
         }
         // The whole pool cannot reach the target, so nobody ever wins.
-        if (
-            ((long) maxNumber * (maxNumber + 1)) / 2 <
-            target
-        ) {
+        if (((long) maxNumber * (maxNumber + 1)) / 2 < target) {
             return false;
         }
         // State = bitmask of used integers (m <= 20 keeps it to 2^m states);
@@ -21,12 +18,7 @@ class Solution {
         return canWin(0, target, maxNumber, memo);
     }
 
-    private boolean canWin(
-        int state,
-        int remaining,
-        int maxNumber,
-        Map<Integer, Boolean> memo
-    ) {
+    private boolean canWin(int state, int remaining, int maxNumber, Map<Integer, Boolean> memo) {
         Boolean cached = memo.get(state);
         if (cached != null) {
             return cached;
@@ -38,15 +30,7 @@ class Solution {
             }
             // Immediate win on reaching the target, else the move wins
             // exactly when it strands the opponent in a losing state.
-            if (
-                choice >= remaining ||
-                !canWin(
-                    state | bit,
-                    remaining - choice,
-                    maxNumber,
-                    memo
-                )
-            ) {
+            if (choice >= remaining || !canWin(state | bit, remaining - choice, maxNumber, memo)) {
                 memo.put(state, true);
                 return true;
             }

@@ -2,16 +2,9 @@ import java.util.*;
 
 class Solution {
 
-    public int[] shortestAlternatingPaths(
-        int n,
-        int[][] redEdges,
-        int[][] blueEdges
-    ) {
+    public int[] shortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges) {
         // adjacency[c][u] lists endpoints of color-c edges from u.
-        List<List<Integer>>[] adjacency = new List[] {
-            new ArrayList<>(),
-            new ArrayList<>(),
-        };
+        List<List<Integer>>[] adjacency = new List[] { new ArrayList<>(), new ArrayList<>() };
         for (int c = 0; c < 2; c++) {
             for (int u = 0; u < n; u++) {
                 adjacency[c].add(new ArrayList<>());
@@ -53,10 +46,7 @@ class Solution {
                 if (dist[nxt][1 - color] == INF) {
                     dist[nxt][1 - color] = dist[node][color] + 1;
                     int value = dist[nxt][1 - color];
-                    answer[nxt] =
-                        answer[nxt] == -1
-                            ? value
-                            : Math.min(answer[nxt], value);
+                    answer[nxt] = answer[nxt] == -1 ? value : Math.min(answer[nxt], value);
                     queue.offer(new int[] { nxt, 1 - color });
                 }
             }

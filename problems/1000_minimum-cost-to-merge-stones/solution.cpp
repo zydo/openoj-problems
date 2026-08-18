@@ -13,8 +13,7 @@ class Solution {
             prefix[i + 1] = prefix[i] + stones[i];
         }
         // dp[i][j][m] = min cost to compress stones[i..j] into exactly m piles
-        vector<vector<vector<long long>>> dp(
-            n, vector<vector<long long>>(n, vector<long long>(k + 1, INF)));
+        vector<vector<vector<long long>>> dp(n, vector<vector<long long>>(n, vector<long long>(k + 1, INF)));
         // base: a single stone is already one pile at zero cost
         for (int i = 0; i < n; i++) {
             dp[i][i][1] = 0;

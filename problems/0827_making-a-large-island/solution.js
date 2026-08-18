@@ -29,14 +29,7 @@ var largestIsland = function (grid) {
             for (const [di, dj] of dirs) {
                 const ni = i + di;
                 const nj = j + dj;
-                if (
-                    ni >= 0 &&
-                    ni < n &&
-                    nj >= 0 &&
-                    nj < n &&
-                    grid[ni][nj] === 1 &&
-                    label[ni][nj] === 0
-                ) {
+                if (ni >= 0 && ni < n && nj >= 0 && nj < n && grid[ni][nj] === 1 && label[ni][nj] === 0) {
                     label[ni][nj] = color;
                     stack.push([ni, nj]);
                 }
@@ -79,13 +72,7 @@ var largestIsland = function (grid) {
                 for (const [di, dj] of dirs) {
                     const ni = i + di;
                     const nj = j + dj;
-                    if (
-                        ni >= 0 &&
-                        ni < n &&
-                        nj >= 0 &&
-                        nj < n &&
-                        label[ni][nj] !== 0
-                    ) {
+                    if (ni >= 0 && ni < n && nj >= 0 && nj < n && label[ni][nj] !== 0) {
                         seen.add(label[ni][nj]);
                     }
                 }

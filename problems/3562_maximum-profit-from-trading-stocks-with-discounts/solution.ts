@@ -1,10 +1,4 @@
-function maxProfit(
-    n: number,
-    present: number[],
-    future: number[],
-    hierarchy: number[][],
-    budget: number,
-): number {
+function maxProfit(n: number, present: number[], future: number[], hierarchy: number[][], budget: number): number {
     const children: number[][] = Array.from({ length: n }, () => []);
     for (const [u, v] of hierarchy) {
         children[u - 1].push(v - 1);
@@ -13,10 +7,7 @@ function maxProfit(
     // Knapsack merge of the children's budget profiles: spend t in one child
     // against every budget level b, then a prefix maximum so leftover budget
     // never lowers a value.
-    const combine = (
-        kids: number[],
-        tables: (Int32Array | undefined)[],
-    ): Int32Array => {
+    const combine = (kids: number[], tables: (Int32Array | undefined)[]): Int32Array => {
         const cur = new Int32Array(budget + 1);
         for (const child of kids) {
             const arr = tables[child] as Int32Array;

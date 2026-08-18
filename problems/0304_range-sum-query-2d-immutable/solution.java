@@ -15,10 +15,7 @@ class NumMatrix {
                 // neighbors; the top-left term is subtracted because
                 // both the row strip and column strip contain it.
                 prefix[row + 1][col + 1] =
-                    matrix[row][col] +
-                    prefix[row][col + 1] +
-                    prefix[row + 1][col] -
-                    prefix[row][col];
+                    matrix[row][col] + prefix[row][col + 1] + prefix[row + 1][col] - prefix[row][col];
             }
         }
     }
@@ -26,11 +23,6 @@ class NumMatrix {
     public long sumRegion(int row1, int col1, int row2, int col2) {
         // The same inclusion-exclusion in reverse: the strips above and
         // left of the query cancel, leaving the rectangle in O(1).
-        return (
-            prefix[row2 + 1][col2 + 1] -
-            prefix[row1][col2 + 1] -
-            prefix[row2 + 1][col1] +
-            prefix[row1][col1]
-        );
+        return prefix[row2 + 1][col2 + 1] - prefix[row1][col2 + 1] - prefix[row2 + 1][col1] + prefix[row1][col1];
     }
 }

@@ -10,8 +10,7 @@ class Solution {
         // numeric comparison is useless (3 must come before 30). A sorted
         // result admits no adjacent swap that enlarges the string, so it is
         // the maximal arrangement.
-        sort(strs.begin(), strs.end(),
-             [](const string &a, const string &b) { return a + b > b + a; });
+        sort(strs.begin(), strs.end(), [](const string &a, const string &b) { return a + b > b + a; });
         string result;
         for (const string &s : strs) {
             result += s;

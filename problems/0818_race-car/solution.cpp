@@ -4,9 +4,7 @@ class Solution {
         long long bound = 2LL * target;
         long long span = 4 * bound + 1;
         // Encode (pos, speed) as an integer key: speed lives in [-2*bound, 2*bound].
-        auto encode = [&](long long pos, long long speed) {
-            return (pos + bound) * span + (speed + 2 * bound);
-        };
+        auto encode = [&](long long pos, long long speed) { return (pos + bound) * span + (speed + 2 * bound); };
         vector<pair<long long, long long>> queue;
         queue.push_back({0, 1});
         unordered_set<long long> visited;

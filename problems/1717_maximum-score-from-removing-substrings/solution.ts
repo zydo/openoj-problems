@@ -1,21 +1,12 @@
 function maximumGain(s: string, x: number, y: number): number {
-    const removePairs = (
-        text: string,
-        first: string,
-        second: string,
-        points: number,
-    ): [string, number] => {
+    const removePairs = (text: string, first: string, second: string, points: number): [string, number] => {
         const stack: string[] = [];
         let score = 0;
         // Stack scan: `second` arriving on a top of `first` pops and scores;
         // everything else is pushed. Survivors are the text with every
         // non-overlapping removal of this pattern applied.
         for (const c of text) {
-            if (
-                stack.length &&
-                stack[stack.length - 1] === first &&
-                c === second
-            ) {
+            if (stack.length && stack[stack.length - 1] === first && c === second) {
                 stack.pop();
                 score += points;
             } else {

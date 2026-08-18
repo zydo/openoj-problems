@@ -1,8 +1,4 @@
-function minNumberOfSemesters(
-    n: number,
-    relations: number[][],
-    k: number,
-): number {
+function minNumberOfSemesters(n: number, relations: number[][], k: number): number {
     // prereq[i] = bitmask of courses that must precede course i.
     const prereq: number[] = new Array(n).fill(0);
     for (const [prev, nxt] of relations) {
@@ -23,13 +19,7 @@ function minNumberOfSemesters(
         }
     };
     // Enumerate every exactly-need-sized subset of bits[start..] by recursion.
-    const choose = (
-        bits: number[],
-        start: number,
-        need: number,
-        taken: number,
-        steps: number,
-    ): void => {
+    const choose = (bits: number[], start: number, need: number, taken: number, steps: number): void => {
         if (need === 0) {
             relax(taken, steps + 1);
             return;
@@ -47,10 +37,7 @@ function minNumberOfSemesters(
         // inside mask (one AND per course).
         let avail = 0;
         for (let course = 0; course < n; course++) {
-            if (
-                ((mask >> course) & 1) === 0 &&
-                (prereq[course] & ~mask) === 0
-            ) {
+            if (((mask >> course) & 1) === 0 && (prereq[course] & ~mask) === 0) {
                 avail |= 1 << course;
             }
         }

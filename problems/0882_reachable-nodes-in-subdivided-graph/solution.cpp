@@ -12,9 +12,7 @@ class Solution {
         const long long INF = LLONG_MAX;
         vector<long long> dist(n, INF);
         dist[0] = 0;
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>,
-                       greater<pair<long long, int>>>
-            pq;
+        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
         pq.push({0, 0});
         while (!pq.empty()) {
             auto [d, u] = pq.top();

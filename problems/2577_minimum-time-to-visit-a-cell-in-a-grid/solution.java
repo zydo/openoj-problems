@@ -22,9 +22,7 @@ class Solution {
             Arrays.fill(row, Integer.MAX_VALUE);
         }
         dist[0][0] = 0;
-        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            Integer.compare(a[0], b[0])
-        );
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         heap.add(new int[] { 0, 0, 0 });
         int[][] dirs = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
         while (!heap.isEmpty()) {

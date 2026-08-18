@@ -2,9 +2,7 @@ function shortestCommonSupersequence(str1: string, str2: string): string {
     const n = str1.length;
     const m = str2.length;
     // dp[i][j] = length of the LCS of str1[i:] and str2[j:].
-    const dp: number[][] = Array.from({ length: n + 1 }, () =>
-        new Array(m + 1).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
     for (let i = n - 1; i >= 0; i--) {
         for (let j = m - 1; j >= 0; j--) {
             if (str1[i] === str2[j]) {

@@ -71,7 +71,5 @@ var minimumWeight = function (edges, queries) {
 
     // The minimal subtree joining a, b, c is the union of the three paths,
     // each edge lying on exactly two of them.
-    return queries.map(
-        ([a, b, c]) => (distance(a, b) + distance(b, c) + distance(c, a)) / 2,
-    );
+    return queries.map(([a, b, c]) => (distance(a, b) + distance(b, c) + distance(c, a)) / 2);
 };

@@ -39,15 +39,7 @@ impl Solution {
     }
 
     // First index in [ql, qr) whose height exceeds threshold, or -1.
-    fn find_first(
-        seg: &[i64],
-        node: usize,
-        nl: usize,
-        nr: usize,
-        ql: usize,
-        qr: usize,
-        threshold: i64,
-    ) -> isize {
+    fn find_first(seg: &[i64], node: usize, nl: usize, nr: usize, ql: usize, qr: usize, threshold: i64) -> isize {
         // Prune any node outside the query range or whose max cannot qualify.
         if nr <= ql || qr <= nl || seg[node] <= threshold {
             return -1;

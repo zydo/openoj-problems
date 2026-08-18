@@ -1,8 +1,4 @@
-function findMaxPathScore(
-    edges: number[][],
-    online: boolean[],
-    k: number,
-): number {
+function findMaxPathScore(edges: number[][], online: boolean[], k: number): number {
     const n = online.length;
     const adj: [number, number][][] = Array.from({ length: n }, () => []);
     const indeg = new Array(n).fill(0);

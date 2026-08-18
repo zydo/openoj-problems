@@ -12,11 +12,7 @@ impl Solution {
             while head < tail && (nums[dq[tail - 1]] as i64) < nums[left] as i64 {
                 tail -= 1;
                 let l = dq[tail];
-                let r: i64 = if head < tail {
-                    dq[tail - 1] as i64 - 1
-                } else {
-                    right
-                };
+                let r: i64 = if head < tail { dq[tail - 1] as i64 - 1 } else { right };
                 cnt += (r - l as i64 + 1) * (nums[left] as i64 - nums[l] as i64);
             }
             dq[tail] = left;

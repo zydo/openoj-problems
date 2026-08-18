@@ -25,11 +25,7 @@ class Solution {
                 j = top[2];
             // [lo, curMax] covers all k lists: prefer smaller width, then
             // the smaller left endpoint on ties.
-            if (
-                !have ||
-                curMax - lo < bestHi - bestLo ||
-                (curMax - lo == bestHi - bestLo && lo < bestLo)
-            ) {
+            if (!have || curMax - lo < bestHi - bestLo || (curMax - lo == bestHi - bestLo && lo < bestLo)) {
                 bestLo = lo;
                 bestHi = curMax;
                 have = true;

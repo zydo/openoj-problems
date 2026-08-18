@@ -1,7 +1,6 @@
 class Solution {
   public:
-    vector<bool> distanceLimitedPathsExist(int n, vector<vector<int>> &edgeList,
-                                           vector<vector<int>> &queries) {
+    vector<bool> distanceLimitedPathsExist(int n, vector<vector<int>> &edgeList, vector<vector<int>> &queries) {
         vector<int> parent(n);
         for (int i = 0; i < n; i++) {
             parent[i] = i;
@@ -10,14 +9,12 @@ class Solution {
         // nested, so union-find only ever grows. Sorting query indices (not
         // the queries) lets answers return to their original positions.
         vector<vector<int>> edges = edgeList;
-        sort(edges.begin(), edges.end(),
-             [](const vector<int> &a, const vector<int> &b) { return a[2] < b[2]; });
+        sort(edges.begin(), edges.end(), [](const vector<int> &a, const vector<int> &b) { return a[2] < b[2]; });
         vector<int> order(queries.size());
         for (int i = 0; i < (int)order.size(); i++) {
             order[i] = i;
         }
-        sort(order.begin(), order.end(),
-             [&](int a, int b) { return queries[a][2] < queries[b][2]; });
+        sort(order.begin(), order.end(), [&](int a, int b) { return queries[a][2] < queries[b][2]; });
         vector<bool> answer(queries.size(), false);
         int ei = 0;
         for (int qi : order) {

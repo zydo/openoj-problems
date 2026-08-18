@@ -26,9 +26,7 @@ var minimumEffortPath = function (heights) {
         [0, -1],
     ];
     const reachable = (cap) => {
-        const visited = Array.from({ length: rows }, () =>
-            new Array(cols).fill(false),
-        );
+        const visited = Array.from({ length: rows }, () => new Array(cols).fill(false));
         visited[0][0] = true;
         const queue = [[0, 0]];
         for (let head = 0; head < queue.length; head++) {

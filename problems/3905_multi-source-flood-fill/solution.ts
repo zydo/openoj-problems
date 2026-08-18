@@ -1,10 +1,6 @@
 function colorGrid(n: number, m: number, sources: number[][]): number[][] {
-    const grid: number[][] = Array.from({ length: n }, () =>
-        new Array<number>(m).fill(0),
-    );
-    const dist: number[][] = Array.from({ length: n }, () =>
-        new Array<number>(m).fill(-1),
-    );
+    const grid: number[][] = Array.from({ length: n }, () => new Array<number>(m).fill(0));
+    const dist: number[][] = Array.from({ length: n }, () => new Array<number>(m).fill(-1));
     const queue: number[][] = [];
     for (const [r, c, color] of sources) {
         grid[r][c] = color;

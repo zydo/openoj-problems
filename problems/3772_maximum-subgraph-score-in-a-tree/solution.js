@@ -59,10 +59,7 @@ var maxSubgraphScore = function (n, edges, good) {
         let totalPos = 0;
         for (const c of children[u]) totalPos += Math.max(0, down[c]);
         for (const c of children[u]) {
-            up[c] =
-                weight[u] +
-                (totalPos - Math.max(0, down[c])) +
-                Math.max(0, up[u]);
+            up[c] = weight[u] + (totalPos - Math.max(0, down[c])) + Math.max(0, up[u]);
         }
         // Answer for u: its weight, its positive child branches, and the
         // optional parent-side piece.

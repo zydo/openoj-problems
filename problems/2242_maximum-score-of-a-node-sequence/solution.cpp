@@ -13,8 +13,7 @@ class Solution {
         vector<vector<int>> top3(n);
         for (int u = 0; u < n; u++) {
             vector<int> nbrs = adj[u];
-            stable_sort(nbrs.begin(), nbrs.end(),
-                        [&](int x, int y) { return scores[x] > scores[y]; });
+            stable_sort(nbrs.begin(), nbrs.end(), [&](int x, int y) { return scores[x] > scores[y]; });
             if ((int)nbrs.size() > 3)
                 nbrs.resize(3);
             top3[u] = nbrs;

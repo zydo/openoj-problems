@@ -16,9 +16,7 @@ class Solution {
 
         vector<vector<int>> dist(m, vector<int>(n, INT_MAX));
         dist[0][0] = 0;
-        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>,
-                       greater<tuple<int, int, int>>>
-            heap;
+        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> heap;
         heap.push({0, 0, 0});
         int dr[4] = {1, -1, 0, 0};
         int dc[4] = {0, 0, 1, -1};

@@ -4,9 +4,7 @@ import heapq
 
 
 class Solution:
-    def mazeRollDistance(
-        self, maze: List[List[int]], start: List[int], destination: List[int]
-    ) -> int:
+    def mazeRollDistance(self, maze: List[List[int]], start: List[int], destination: List[int]) -> int:
         m, n = len(maze), len(maze[0])
         start = (start[0], start[1])
         destination = (destination[0], destination[1])
@@ -30,11 +28,7 @@ class Solution:
                 # bounds; the landing cell is the neighbor, steps the edge
                 # weight. Passing over a cell doesn't create a node — only
                 # stopping on it does.
-                while (
-                    0 <= nr + dr < m
-                    and 0 <= nc + dc < n
-                    and maze[nr + dr][nc + dc] == 0
-                ):
+                while 0 <= nr + dr < m and 0 <= nc + dc < n and maze[nr + dr][nc + dc] == 0:
                     nr += dr
                     nc += dc
                     steps += 1

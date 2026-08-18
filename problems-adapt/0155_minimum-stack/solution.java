@@ -24,8 +24,7 @@ class MinimumStack {
         values[size] = value;
         // Snapshot the minimum of the stack as of this push: the new value
         // combined with the minimum of the entry below.
-        minimums[size] =
-            size == 0 ? value : Math.min(value, minimums[size - 1]);
+        minimums[size] = size == 0 ? value : Math.min(value, minimums[size - 1]);
         size++;
     }
 

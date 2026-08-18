@@ -8,12 +8,8 @@ class StockPrice {
     private final Map<Integer, Integer> priceAt = new HashMap<>();
     // Twin lazy heaps over {price, timestamp}: entries are pushed on update
     // and never removed; stale ones are discarded only at the top.
-    private final PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) ->
-        Integer.compare(b[0], a[0])
-    );
-    private final PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) ->
-        Integer.compare(a[0], b[0])
-    );
+    private final PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) -> Integer.compare(b[0], a[0]));
+    private final PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
     private int latestTimestamp = 0;
 
     public StockPrice() {}

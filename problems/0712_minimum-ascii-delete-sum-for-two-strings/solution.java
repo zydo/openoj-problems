@@ -19,10 +19,7 @@ class Solution {
                     dp[i][j] = dp[i - 1][j - 1];
                 } else {
                     // A mismatch can retain at most one end: pay its ASCII value.
-                    dp[i][j] = Math.min(
-                        dp[i - 1][j] + a[i - 1],
-                        dp[i][j - 1] + b[j - 1]
-                    );
+                    dp[i][j] = Math.min(dp[i - 1][j] + a[i - 1], dp[i][j - 1] + b[j - 1]);
                 }
             }
         }

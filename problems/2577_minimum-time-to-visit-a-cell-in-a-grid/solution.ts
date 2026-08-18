@@ -13,9 +13,7 @@ function minimumTime(grid: number[][]): number {
     }
 
     const INF = Infinity;
-    const dist: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(INF),
-    );
+    const dist: number[][] = Array.from({ length: m }, () => new Array(n).fill(INF));
     dist[0][0] = 0;
 
     // binary min-heap of [t, r, c]

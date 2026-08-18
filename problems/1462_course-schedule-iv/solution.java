@@ -6,11 +6,7 @@ import java.util.List;
 
 class Solution {
 
-    public boolean[] checkIfPrerequisite(
-        int numCourses,
-        int[][] prerequisites,
-        int[][] queries
-    ) {
+    public boolean[] checkIfPrerequisite(int numCourses, int[][] prerequisites, int[][] queries) {
         List<List<Integer>> adjacency = new ArrayList<>();
         for (int i = 0; i < numCourses; i++) {
             adjacency.add(new ArrayList<>());

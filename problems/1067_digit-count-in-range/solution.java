@@ -19,8 +19,7 @@ class Solution {
         for (int i = 0; i < length; i++) {
             long highPart = i > 0 ? Long.parseLong(s.substring(0, i)) : 0;
             int cur = s.charAt(i) - '0';
-            long lowPart =
-                i + 1 < length ? Long.parseLong(s.substring(i + 1)) : 0;
+            long lowPart = i + 1 < length ? Long.parseLong(s.substring(i + 1)) : 0;
             long power = 1;
             for (int k = 0; k < length - 1 - i; k++) {
                 power *= 10;

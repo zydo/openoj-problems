@@ -3,10 +3,7 @@ function canHopAcross(stones: number[]): boolean {
     const index = new Map<number, number>();
     for (let i = 0; i < n; i++) index.set(stones[i], i);
     // jumps[i] = set of last-jump sizes that can land on stone i
-    const jumps: Set<number>[] = Array.from(
-        { length: n },
-        () => new Set<number>(),
-    );
+    const jumps: Set<number>[] = Array.from({ length: n }, () => new Set<number>());
     jumps[0].add(0);
     for (let i = 0; i < n; i++) {
         for (const last of jumps[i]) {

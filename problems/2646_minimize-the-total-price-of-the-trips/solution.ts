@@ -1,9 +1,4 @@
-function minimumTotalPrice(
-    n: number,
-    edges: number[][],
-    price: number[],
-    trips: number[][],
-): number {
+function minimumTotalPrice(n: number, edges: number[][], price: number[], trips: number[][]): number {
     const adj: number[][] = Array.from({ length: n }, () => []);
     for (const e of edges) {
         adj[e[0]].push(e[1]);

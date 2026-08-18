@@ -10,10 +10,7 @@ class Solution {
         ArrayList<int[]> t = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             if (start.charAt(i) != '_') s.add(new int[] { i, start.charAt(i) });
-            if (target.charAt(i) != '_') t.add(new int[] {
-                i,
-                target.charAt(i),
-            });
+            if (target.charAt(i) != '_') t.add(new int[] { i, target.charAt(i) });
         }
         // unequal piece counts can never be matched one-to-one
         if (s.size() != t.size()) return false;

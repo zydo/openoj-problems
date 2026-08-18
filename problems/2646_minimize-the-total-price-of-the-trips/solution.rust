@@ -1,10 +1,5 @@
 impl Solution {
-    pub fn minimum_total_price(
-        n: i32,
-        edges: Vec<Vec<i32>>,
-        price: Vec<i32>,
-        trips: Vec<Vec<i32>>,
-    ) -> i32 {
+    pub fn minimum_total_price(n: i32, edges: Vec<Vec<i32>>, price: Vec<i32>, trips: Vec<Vec<i32>>) -> i32 {
         let n = n as usize;
         let mut adj: Vec<Vec<usize>> = vec![Vec::new(); n];
         for e in &edges {
@@ -44,13 +39,7 @@ impl Solution {
             }
         }
 
-        fn dfs(
-            v: usize,
-            p: i64,
-            adj: &Vec<Vec<usize>>,
-            price: &Vec<i32>,
-            freq: &Vec<i64>,
-        ) -> (i64, i64) {
+        fn dfs(v: usize, p: i64, adj: &Vec<Vec<usize>>, price: &Vec<i32>, freq: &Vec<i64>) -> (i64, i64) {
             let pv = price[v] as i64;
             let mut dp0 = pv * freq[v];
             let mut dp1 = (pv / 2) * freq[v];

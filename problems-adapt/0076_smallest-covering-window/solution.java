@@ -40,8 +40,6 @@ class Solution {
                 left++;
             }
         }
-        return bestLen == Integer.MAX_VALUE
-            ? ""
-            : s.substring(bestStart, bestStart + bestLen);
+        return bestLen == Integer.MAX_VALUE ? "" : s.substring(bestStart, bestStart + bestLen);
     }
 }

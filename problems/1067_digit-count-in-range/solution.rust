@@ -18,11 +18,7 @@ impl Solution {
         for i in 0..length {
             let high_part: i64 = if i > 0 { s[..i].parse().unwrap() } else { 0 };
             let cur = (bytes[i] - b'0') as i64;
-            let low_part: i64 = if i + 1 < length {
-                s[i + 1..].parse().unwrap()
-            } else {
-                0
-            };
+            let low_part: i64 = if i + 1 < length { s[i + 1..].parse().unwrap() } else { 0 };
             let mut power: i64 = 1;
             for _ in 0..(length - 1 - i) {
                 power *= 10;

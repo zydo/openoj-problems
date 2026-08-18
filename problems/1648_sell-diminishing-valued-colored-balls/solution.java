@@ -18,9 +18,7 @@ class Solution {
         int i = 0;
         int n = inv.length;
         while (remaining > 0 && i < n - 1) {
-            while (
-                i + 1 < n - 1 && inv[i + 1].intValue() == inv[i].intValue()
-            ) {
+            while (i + 1 < n - 1 && inv[i + 1].intValue() == inv[i].intValue()) {
                 i += 1;
             }
             long h = inv[i];

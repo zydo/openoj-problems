@@ -6,9 +6,7 @@ function specialPerm(nums: number[]): number {
     // with `last`, every adjacent pair already compatible. n <= 14 keeps the
     // 2^n * n table small. Increasing mask order finalizes each state before
     // it propagates.
-    const dp: number[][] = Array.from({ length: size }, () =>
-        new Array(n).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: size }, () => new Array(n).fill(0));
     for (let i = 0; i < n; i++) {
         dp[1 << i][i] = 1;
     }
@@ -29,10 +27,7 @@ function specialPerm(nums: number[]): number {
                 // nums[last] or is divided by it (checked symmetrically).
                 // Every special permutation decomposes uniquely into such
                 // steps, so none is double-counted.
-                if (
-                    nums[last] % nums[nxt] === 0 ||
-                    nums[nxt] % nums[last] === 0
-                ) {
+                if (nums[last] % nums[nxt] === 0 || nums[nxt] % nums[last] === 0) {
                     const t = dp[mask | (1 << nxt)];
                     t[nxt] = (t[nxt] + ways) % MOD;
                 }

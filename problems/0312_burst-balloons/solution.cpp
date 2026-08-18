@@ -16,8 +16,8 @@ class Solution {
                 // Try each k as the LAST burst in the open interval (left, right):
                 // at that moment its neighbors are the fixed boundaries.
                 for (int k = left; k <= right; k++) {
-                    long long coins = padded[left - 1] * padded[k] * padded[right + 1] +
-                                      dp[left][k - 1] + dp[k + 1][right];
+                    long long coins =
+                        padded[left - 1] * padded[k] * padded[right + 1] + dp[left][k - 1] + dp[k + 1][right];
                     if (coins > dp[left][right]) {
                         dp[left][right] = coins;
                     }

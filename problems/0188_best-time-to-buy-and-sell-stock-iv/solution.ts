@@ -4,8 +4,7 @@ function maxProfit(k: number, prices: number[]): number {
     if (k >= Math.floor(n / 2)) {
         // The limit can never bind: sum every upward move.
         let total = 0;
-        for (let i = 1; i < n; i++)
-            total += Math.max(prices[i] - prices[i - 1], 0);
+        for (let i = 1; i < n; i++) total += Math.max(prices[i] - prices[i - 1], 0);
         return total;
     }
     // buy[j]: best cash while holding the j-th buy; sell[j]: best profit

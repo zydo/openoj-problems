@@ -28,9 +28,7 @@ impl Solution {
                         let pattern = sub(i, i + p - 1);
                         if pattern.repeat(length / p) == substr {
                             let encoded = format!("{}[{}]", length / p, dp[i][i + p - 1]);
-                            if compression.is_none()
-                                || encoded.len() < compression.as_ref().unwrap().len()
-                            {
+                            if compression.is_none() || encoded.len() < compression.as_ref().unwrap().len() {
                                 compression = Some(encoded);
                             }
                         }

@@ -25,9 +25,7 @@ class Solution:
             # Relax every outside vertex against the newly attached u.
             for v in range(n):
                 if not used[v]:
-                    d = abs(points[u][0] - points[v][0]) + abs(
-                        points[u][1] - points[v][1]
-                    )
+                    d = abs(points[u][0] - points[v][0]) + abs(points[u][1] - points[v][1])
                     if d < best[v]:
                         best[v] = d
         return total

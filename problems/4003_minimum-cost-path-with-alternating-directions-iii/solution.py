@@ -7,9 +7,7 @@ class Solution:
 
         INF = float("inf")
         size = m * n
-        dist = [
-            [INF, INF] for _ in range(size)
-        ]  # [parity 0 (next odd), parity 1 (next even)]
+        dist = [[INF, INF] for _ in range(size)]  # [parity 0 (next odd), parity 1 (next even)]
         dist[0][0] = 1  # entrance cost of (0, 0); next action is odd
         pq = [(1, 0, 0)]
         target = size - 1

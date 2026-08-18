@@ -18,9 +18,7 @@ class Solution {
         BigInteger dp = BigInteger.ONE;
         for (int i = 0; i < m; i++) {
             int x = values[i];
-            BigInteger mask = BigInteger.ONE.shiftLeft(x).subtract(
-                BigInteger.ONE
-            );
+            BigInteger mask = BigInteger.ONE.shiftLeft(x).subtract(BigInteger.ONE);
             dp = dp.or(dp.and(mask).shiftLeft(x));
         }
         return dp.bitLength() - 1;

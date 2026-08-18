@@ -9,9 +9,7 @@ class Solution {
 
         // left_min[i] = sum of the n smallest values among nums[0..i] (valid when i >= n-1)
         long[] leftMin = new long[total];
-        PriorityQueue<Integer> heap = new PriorityQueue<>(
-            Collections.reverseOrder()
-        ); // keeps the n smallest so far
+        PriorityQueue<Integer> heap = new PriorityQueue<>(Collections.reverseOrder()); // keeps the n smallest so far
         long running = 0;
         for (int i = 0; i < total; i++) {
             int value = nums[i];

@@ -9,10 +9,7 @@ class Solution {
         Deque<Integer> dq = new ArrayDeque<>();
 
         for (int i = 1; i <= n; i++) {
-            while (
-                !dq.isEmpty() &&
-                value(dq.peekLast(), dp, prices) >= value(i, dp, prices)
-            ) {
+            while (!dq.isEmpty() && value(dq.peekLast(), dp, prices) >= value(i, dp, prices)) {
                 dq.pollLast();
             }
             dq.addLast(i);

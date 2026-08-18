@@ -18,8 +18,7 @@ impl Solution {
         let mut restart = true;
         while restart {
             restart = false;
-            let mut prefix_to_index: std::collections::HashMap<i32, i32> =
-                std::collections::HashMap::new();
+            let mut prefix_to_index: std::collections::HashMap<i32, i32> = std::collections::HashMap::new();
             prefix_to_index.insert(0, -1);
             let mut prefix: i32 = 0;
             let mut i = 0usize;

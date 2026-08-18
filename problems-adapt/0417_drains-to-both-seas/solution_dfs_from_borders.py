@@ -16,12 +16,7 @@ class Solution:
                     nr, nc = r + dr, c + dc
                     # Only a neighbor at least as tall could have flowed down
                     # into (r, c); marking on push stacks each cell once.
-                    if (
-                        0 <= nr < m
-                        and 0 <= nc < n
-                        and (nr, nc) not in seen
-                        and heights[nr][nc] >= heights[r][c]
-                    ):
+                    if 0 <= nr < m and 0 <= nc < n and (nr, nc) not in seen and heights[nr][nc] >= heights[r][c]:
                         seen.add((nr, nc))
                         stack.append((nr, nc))
             return seen
@@ -29,13 +24,6 @@ class Solution:
         # The upper sea is seeded from the top row and left column, the lower sea from
         # the bottom row and right column; corners belong to both seed lists.
         upperSea = reachable([(0, c) for c in range(n)] + [(r, 0) for r in range(m)])
-        lowerSea = reachable(
-            [(m - 1, c) for c in range(n)] + [(r, n - 1) for r in range(m)]
-        )
+        lowerSea = reachable([(m - 1, c) for c in range(n)] + [(r, n - 1) for r in range(m)])
         # The row-major scan outputs the intersection already sorted.
-        return [
-            [r, c]
-            for r in range(m)
-            for c in range(n)
-            if (r, c) in upperSea and (r, c) in lowerSea
-        ]
+        return [[r, c] for r in range(m) for c in range(n) if (r, c) in upperSea and (r, c) in lowerSea]

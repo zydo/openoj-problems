@@ -7,8 +7,7 @@ class Solution {
         long best = 0;
         while (left < right) {
             // Area = width x the shorter wall: water above it would spill.
-            long area =
-                (long) (right - left) * Math.min(height[left], height[right]);
+            long area = (long) (right - left) * Math.min(height[left], height[right]);
             if (area > best) best = area;
             // Moving the taller wall inward can never help -- the area stays
             // capped by the shorter wall while the width falls -- so the

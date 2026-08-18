@@ -7,8 +7,7 @@ function kMostFrequent(nums: number[], k: number): number[] {
     // min-heap of [value, count] whose root is the weakest keeper:
     // smallest count, and among equal counts the largest value —
     // eviction order mirrors the final ranking.
-    const less = (a: [number, number], b: [number, number]): boolean =>
-        a[1] !== b[1] ? a[1] < b[1] : a[0] > b[0];
+    const less = (a: [number, number], b: [number, number]): boolean => (a[1] !== b[1] ? a[1] < b[1] : a[0] > b[0]);
     const heap: [number, number][] = [];
     const push = (item: [number, number]): void => {
         heap.push(item);

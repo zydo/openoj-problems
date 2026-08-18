@@ -38,10 +38,7 @@ class Solution {
                     // Only novel strings join the queue; matched
                     // positions are never touched again.
                     if (seen.add(ns)) {
-                        queue.add(new String[] {
-                            ns,
-                            String.valueOf(steps + 1),
-                        });
+                        queue.add(new String[] { ns, String.valueOf(steps + 1) });
                     }
                 }
             }

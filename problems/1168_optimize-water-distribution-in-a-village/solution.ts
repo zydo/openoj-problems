@@ -1,8 +1,4 @@
-function minCostToSupplyWater(
-    n: number,
-    wells: number[],
-    pipes: number[][],
-): number {
+function minCostToSupplyWater(n: number, wells: number[], pipes: number[][]): number {
     // Kruskal over houses 1..n plus a virtual node 0 (well edges).
     const edges: [number, number, number][] = [];
     for (let i = 0; i < n; i++) {

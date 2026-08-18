@@ -1,8 +1,4 @@
-function furthestBuilding(
-    heights: number[],
-    bricks: number,
-    ladders: number,
-): number {
+function furthestBuilding(heights: number[], bricks: number, ladders: number): number {
     // Min-heap of the climbs covered by ladders
     const heap: number[] = [];
     const push = (v: number): void => {

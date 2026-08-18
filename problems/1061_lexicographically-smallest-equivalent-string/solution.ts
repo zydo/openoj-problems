@@ -1,8 +1,4 @@
-function smallestEquivalentString(
-    s1: string,
-    s2: string,
-    baseStr: string,
-): string {
+function smallestEquivalentString(s1: string, s2: string, baseStr: string): string {
     const parent = new Array(26).fill(0).map((_, i) => i);
     // Path halving: re-point each visited node at its grandparent so the
     // trees flatten as we walk.

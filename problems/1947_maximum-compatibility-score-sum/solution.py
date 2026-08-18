@@ -2,15 +2,10 @@ from typing import List, Optional
 
 
 class Solution:
-    def maxCompatibilitySum(
-        self, students: List[List[int]], mentors: List[List[int]]
-    ) -> int:
+    def maxCompatibilitySum(self, students: List[List[int]], mentors: List[List[int]]) -> int:
         m = len(students)
         # Precompute the m x m agreement counts so the DP touches only ints.
-        score = [
-            [sum(a == b for a, b in zip(students[i], mentors[j])) for j in range(m)]
-            for i in range(m)
-        ]
+        score = [[sum(a == b for a, b in zip(students[i], mentors[j])) for j in range(m)] for i in range(m)]
         full = 1 << m
         # dp[mask] = best total score matching the first popcount(mask)
         # students to exactly the mentors in mask; dp[0] = 0. The used-mentor

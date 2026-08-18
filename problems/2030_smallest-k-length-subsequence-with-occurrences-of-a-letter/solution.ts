@@ -1,9 +1,4 @@
-function smallestSubsequence(
-    s: string,
-    k: number,
-    letter: string,
-    repetition: number,
-): string {
+function smallestSubsequence(s: string, k: number, letter: string, repetition: number): string {
     const n = s.length;
     const target = letter;
     // suffix[i] = number of `letter` occurrences in s[i:]

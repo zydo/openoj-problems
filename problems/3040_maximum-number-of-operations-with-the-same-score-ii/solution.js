@@ -19,10 +19,7 @@ var maxOperations = function (nums) {
                     best = Math.max(best, 1 + (l + 2 <= r ? dp[l][r - 2] : 0));
                 }
                 if (nums[l] + nums[r] === score) {
-                    best = Math.max(
-                        best,
-                        1 + (l + 2 <= r ? dp[l + 1][r - 1] : 0),
-                    );
+                    best = Math.max(best, 1 + (l + 2 <= r ? dp[l + 1][r - 1] : 0));
                 }
                 dp[l][r] = best;
             }
@@ -30,11 +27,7 @@ var maxOperations = function (nums) {
         return dp[0][n - 1];
     };
 
-    const candidates = new Set([
-        nums[0] + nums[1],
-        nums[n - 1] + nums[n - 2],
-        nums[0] + nums[n - 1],
-    ]);
+    const candidates = new Set([nums[0] + nums[1], nums[n - 1] + nums[n - 2], nums[0] + nums[n - 1]]);
     let ans = 0;
     for (const score of candidates) {
         ans = Math.max(ans, maxForScore(score));

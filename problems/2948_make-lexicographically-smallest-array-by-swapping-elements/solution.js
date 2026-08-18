@@ -5,9 +5,7 @@
  */
 var lexicographicallySmallestArray = function (nums, limit) {
     const n = nums.length;
-    const pairs = nums
-        .map((v, i) => [v, i])
-        .sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    const pairs = nums.map((v, i) => [v, i]).sort((a, b) => a[0] - b[0] || a[1] - b[1]);
     const result = new Array(n).fill(0);
     let i = 0;
     while (i < n) {

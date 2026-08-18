@@ -1,9 +1,6 @@
 class Solution {
 
-    public TreeNode rebuildTreeFromTwoTraversals(
-        int[] preorder,
-        int[] inorder
-    ) {
+    public TreeNode rebuildTreeFromTwoTraversals(int[] preorder, int[] inorder) {
         throw new UnsupportedOperationException("TODO");
     }
 }

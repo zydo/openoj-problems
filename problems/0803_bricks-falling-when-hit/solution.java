@@ -49,14 +49,8 @@ class Solution {
             for (int c = 0; c < n; c++) {
                 if (g[r][c] == 1) {
                     if (r == 0) union(r * n + c, top);
-                    if (r + 1 < m && g[r + 1][c] == 1) union(
-                        r * n + c,
-                        (r + 1) * n + c
-                    );
-                    if (c + 1 < n && g[r][c + 1] == 1) union(
-                        r * n + c,
-                        r * n + c + 1
-                    );
+                    if (r + 1 < m && g[r + 1][c] == 1) union(r * n + c, (r + 1) * n + c);
+                    if (c + 1 < n && g[r][c + 1] == 1) union(r * n + c, r * n + c + 1);
                 }
             }
         }

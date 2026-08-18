@@ -17,8 +17,8 @@ class Solution {
     }
 
   private:
-    long long count(long long x, long long a, long long b, long long c, long long ab, long long ac,
-                    long long bc, long long abc) {
+    long long count(long long x, long long a, long long b, long long c, long long ab, long long ac, long long bc,
+                    long long abc) {
         // ugly numbers <= x via inclusion-exclusion: add each divisor's
         // multiples, subtract the pairwise lcms (counted twice), add
         // back the triple lcm

@@ -59,12 +59,7 @@ class NumMatrix {
 
     public long sumRegion(int row1, int col1, int row2, int col2) {
         // Inclusion-exclusion over four top-left-anchored prefix rectangles.
-        return (
-            prefix(row2 + 1, col2 + 1) -
-            prefix(row1, col2 + 1) -
-            prefix(row2 + 1, col1) +
-            prefix(row1, col1)
-        );
+        return prefix(row2 + 1, col2 + 1) - prefix(row1, col2 + 1) - prefix(row2 + 1, col1) + prefix(row1, col1);
     }
 
     private long prefix(int rows, int cols) {

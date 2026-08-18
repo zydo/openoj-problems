@@ -40,12 +40,10 @@ class Solution {
                 candidate.push_back(i);
                 auto it = pos.find(newState);
                 // keep the candidate only when it beats the recorded team
-                bool accept =
-                    (it == pos.end()) || (int)teams[it->second].size() > (int)candidate.size();
+                bool accept = (it == pos.end()) || (int)teams[it->second].size() > (int)candidate.size();
                 if (accept) {
                     auto it2 = nePos.find(newState);
-                    bool accept2 = (it2 == nePos.end()) ||
-                                   (int)neTeams[it2->second].size() > (int)candidate.size();
+                    bool accept2 = (it2 == nePos.end()) || (int)neTeams[it2->second].size() > (int)candidate.size();
                     if (accept2) {
                         if (it2 == nePos.end()) {
                             nePos[newState] = (int)neOrder.size();

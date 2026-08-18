@@ -9,8 +9,7 @@ class Solution {
     }
 
   private:
-    void backtrack(vector<int> &cookies, vector<long long> &children, int i, long long curMax,
-                   long long &best, int k) {
+    void backtrack(vector<int> &cookies, vector<long long> &children, int i, long long curMax, long long &best, int k) {
         // bound pruning: the running max only grows, so this branch can no
         // longer beat the best complete distribution found so far
         if (curMax >= best)

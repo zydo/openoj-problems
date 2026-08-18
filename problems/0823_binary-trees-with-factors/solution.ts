@@ -21,8 +21,7 @@ function numFactoredBinaryTrees(arr: number[]): number {
             if (v % arr[j] === 0) {
                 const other = v / arr[j];
                 if (index.has(other)) {
-                    total =
-                        (total + mulMod(dp[j], dp[index.get(other)!])) % MOD;
+                    total = (total + mulMod(dp[j], dp[index.get(other)!])) % MOD;
                 }
             }
         }

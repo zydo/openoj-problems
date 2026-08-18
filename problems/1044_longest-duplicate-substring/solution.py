@@ -28,12 +28,8 @@ class Solution:
             for i in range(1, n - length + 1):
                 # Roll: drop the leftmost character's contribution, append the
                 # incoming one.
-                h1 = (
-                    (h1 - a[i - 1] * pow1[length - 1]) % MOD1 * BASE + a[i + length - 1]
-                ) % MOD1
-                h2 = (
-                    (h2 - a[i - 1] * pow2[length - 1]) % MOD2 * BASE + a[i + length - 1]
-                ) % MOD2
+                h1 = ((h1 - a[i - 1] * pow1[length - 1]) % MOD1 * BASE + a[i + length - 1]) % MOD1
+                h2 = ((h2 - a[i - 1] * pow2[length - 1]) % MOD2 * BASE + a[i + length - 1]) % MOD2
                 # Two independent polynomial hashes form the key; a repeat is
                 # still verified character by character so collisions can
                 # never produce a wrong answer.

@@ -1,7 +1,4 @@
-function mergeTwoLists(
-    list1: ListNode | null,
-    list2: ListNode | null,
-): ListNode | null {
+function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
     // Base case: an empty list is already sorted, so the other list —
     // whatever remains of it — is the merged continuation as is.
     if (list1 === null) {

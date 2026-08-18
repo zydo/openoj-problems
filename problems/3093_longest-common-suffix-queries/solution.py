@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def stringIndices(
-        self, wordsContainer: List[str], wordsQuery: List[str]
-    ) -> List[int]:
+    def stringIndices(self, wordsContainer: List[str], wordsQuery: List[str]) -> List[int]:
         lens = [len(w) for w in wordsContainer]
 
         # Tie-break: shorter word wins, then the smaller index.

@@ -8,8 +8,7 @@ class Solution {
     }
 
   private:
-    void backtrack(vector<int> &candidates, int start, int remaining, vector<int> &path,
-                   vector<vector<int>> &results) {
+    void backtrack(vector<int> &candidates, int start, int remaining, vector<int> &path, vector<vector<int>> &results) {
         // remaining = target minus the sum of the path so far; when it hits 0
         // the path is a valid combination, recorded by value (a copy).
         if (remaining == 0) {

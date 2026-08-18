@@ -18,11 +18,7 @@ class Solution {
             for (int i = 1; i <= n; i++) {
                 for (int j = 1; j <= n; j++) {
                     // The finite guards keep INF + INF from overflowing.
-                    if (
-                        d[i][m] < INF &&
-                        d[m][j] < INF &&
-                        d[i][m] + d[m][j] < d[i][j]
-                    ) {
+                    if (d[i][m] < INF && d[m][j] < INF && d[i][m] + d[m][j] < d[i][j]) {
                         d[i][j] = d[i][m] + d[m][j];
                     }
                 }

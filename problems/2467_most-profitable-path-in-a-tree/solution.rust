@@ -58,11 +58,7 @@ impl Solution {
                 Some(bt) if bt == d => amount[u].div_euclid(2),
                 Some(_) => 0,
             };
-            income[u] = if u != 0 {
-                income[parent[u] as usize]
-            } else {
-                0
-            } + gain;
+            income[u] = if u != 0 { income[parent[u] as usize] } else { 0 } + gain;
             // Alice must keep moving, so she stops at a leaf: a non-root
             // node with exactly one neighbor.
             if u != 0 && adj[u].len() == 1 {

@@ -18,7 +18,5 @@ class Solution:
                     dp[i][j] = dp[i - 1][j - 1]
                 else:
                     # A mismatch can retain at most one end: pay its ASCII value.
-                    dp[i][j] = min(
-                        dp[i - 1][j] + ord(a[i - 1]), dp[i][j - 1] + ord(b[j - 1])
-                    )
+                    dp[i][j] = min(dp[i - 1][j] + ord(a[i - 1]), dp[i][j - 1] + ord(b[j - 1]))
         return dp[la][lb]

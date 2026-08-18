@@ -14,9 +14,7 @@ class Solution {
             } else {
                 k = Math.min(d1[left + right - i], right - i + 1);
             }
-            while (
-                i - k >= 0 && i + k < n && s.charAt(i - k) == s.charAt(i + k)
-            ) {
+            while (i - k >= 0 && i + k < n && s.charAt(i - k) == s.charAt(i + k)) {
                 k++;
             }
             d1[i] = k;

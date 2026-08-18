@@ -21,13 +21,7 @@ var gameOfLife = function (board) {
             for (const [dr, dc] of dirs) {
                 const nr = r + dr;
                 const nc = c + dc;
-                if (
-                    nr >= 0 &&
-                    nr < m &&
-                    nc >= 0 &&
-                    nc < n &&
-                    (board[nr][nc] === 1 || board[nr][nc] === 2)
-                ) {
+                if (nr >= 0 && nr < m && nc >= 0 && nc < n && (board[nr][nc] === 1 || board[nr][nc] === 2)) {
                     live++;
                 }
             }

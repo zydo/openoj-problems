@@ -2,10 +2,7 @@ function carFleet(target: number, position: number[], speed: number[]): number {
     const n = position.length;
     // Cars cannot pass each other, so sweep from the car nearest
     // the target backward.
-    const cars: Array<[number, number]> = Array.from({ length: n }, (_, i) => [
-        position[i],
-        speed[i],
-    ]);
+    const cars: Array<[number, number]> = Array.from({ length: n }, (_, i) => [position[i], speed[i]]);
     cars.sort((a, b) => b[0] - a[0] || b[1] - a[1]);
     let fleets = 0;
     let lastTime = 0.0;

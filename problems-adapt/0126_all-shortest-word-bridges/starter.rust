@@ -1,9 +1,5 @@
 impl Solution {
-    pub fn all_shortest_bridges(
-        startWord: String,
-        targetWord: String,
-        dictionary: Vec<String>,
-    ) -> Vec<Vec<String>> {
+    pub fn all_shortest_bridges(startWord: String, targetWord: String, dictionary: Vec<String>) -> Vec<Vec<String>> {
         panic!("TODO")
     }
 }

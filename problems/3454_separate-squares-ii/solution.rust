@@ -67,17 +67,7 @@ impl Solution {
             let y = events[k].0;
             while k < events.len() && events[k].0 == y {
                 let (_, x1, x2, d) = events[k];
-                update(
-                    &xs,
-                    &mut count,
-                    &mut cover,
-                    1,
-                    0,
-                    m - 1,
-                    index[&x1],
-                    index[&x2],
-                    d,
-                );
+                update(&xs, &mut count, &mut cover, 1, 0, m - 1, index[&x1], index[&x2], d);
                 k += 1;
             }
             if k < events.len() {

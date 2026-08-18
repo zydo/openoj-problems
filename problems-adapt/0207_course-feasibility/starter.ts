@@ -1,6 +1,3 @@
-function coursesFeasible(
-    courseCount: number,
-    prerequisites: number[][],
-): boolean {
+function coursesFeasible(courseCount: number, prerequisites: number[][]): boolean {
     throw new Error("TODO");
 }

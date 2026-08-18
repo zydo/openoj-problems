@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def subtreeInversionSum(
-        self, edges: List[List[int]], nums: List[int], k: int
-    ) -> int:
+    def subtreeInversionSum(self, edges: List[List[int]], nums: List[int], k: int) -> int:
         n = len(nums)
         adj = [[] for _ in range(n)]
         for u, v in edges:

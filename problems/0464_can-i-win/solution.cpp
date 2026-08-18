@@ -27,8 +27,7 @@ class Solution {
             }
             // Immediate win on reaching the target, else the move wins
             // exactly when it strands the opponent in a losing state.
-            if (choice >= remaining ||
-                !canWin(state | bit, remaining - choice, maxChoosableInteger, memo)) {
+            if (choice >= remaining || !canWin(state | bit, remaining - choice, maxChoosableInteger, memo)) {
                 memo[state] = 1;
                 return true;
             }

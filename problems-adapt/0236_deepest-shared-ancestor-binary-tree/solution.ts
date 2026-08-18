@@ -1,8 +1,4 @@
-function deepestSharedAncestor(
-    root: TreeNode | null,
-    p: number,
-    q: number,
-): number {
+function deepestSharedAncestor(root: TreeNode | null, p: number, q: number): number {
     // find answers a narrower question per subtree: does it hold p or q?
     // It returns the found target node itself, or null if neither is there.
     function find(node: TreeNode | null): TreeNode | null {

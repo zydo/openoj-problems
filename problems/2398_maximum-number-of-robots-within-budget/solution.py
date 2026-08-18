@@ -3,9 +3,7 @@ from collections import deque
 
 
 class Solution:
-    def maximumRobots(
-        self, chargeTimes: List[int], runningCosts: List[int], budget: int
-    ) -> int:
+    def maximumRobots(self, chargeTimes: List[int], runningCosts: List[int], budget: int) -> int:
         n = len(chargeTimes)
         dq = deque()  # indices with decreasing chargeTimes
         run = 0

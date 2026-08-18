@@ -23,12 +23,7 @@ class Solution:
                     return True  # bottom row reached: crossing still possible
                 for dr, dc in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                     nr, nc = r + dr, c + dc
-                    if (
-                        0 <= nr < row
-                        and 0 <= nc < col
-                        and not seen[nr][nc]
-                        and grid[nr][nc] == 0
-                    ):
+                    if 0 <= nr < row and 0 <= nc < col and not seen[nr][nc] and grid[nr][nc] == 0:
                         seen[nr][nc] = True
                         queue.append((nr, nc))
             return False

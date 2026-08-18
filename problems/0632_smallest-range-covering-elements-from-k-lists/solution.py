@@ -15,9 +15,7 @@ class Solution:
             lo, i, j = heapq.heappop(heap)
             # [lo, cur_max] covers all k lists: prefer smaller width, then
             # the smaller left endpoint on ties.
-            if cur_max - lo < best_hi - best_lo or (
-                cur_max - lo == best_hi - best_lo and lo < best_lo
-            ):
+            if cur_max - lo < best_hi - best_lo or (cur_max - lo == best_hi - best_lo and lo < best_lo):
                 best_lo, best_hi = lo, cur_max
             if j + 1 == len(nums[i]):
                 # The popped list is exhausted: no later selection can still

@@ -1,11 +1,7 @@
 use std::collections::{HashMap, HashSet, VecDeque};
 
 impl Solution {
-    pub fn all_shortest_bridges(
-        begin_word: String,
-        end_word: String,
-        word_list: Vec<String>,
-    ) -> Vec<Vec<String>> {
+    pub fn all_shortest_bridges(begin_word: String, end_word: String, word_list: Vec<String>) -> Vec<Vec<String>> {
         let mut word_set: HashSet<String> = word_list.into_iter().collect();
         if !word_set.contains(&end_word) {
             return Vec::new();

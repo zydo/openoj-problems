@@ -1,7 +1,6 @@
 impl Solution {
     pub fn find_compound_words(words: Vec<String>) -> Vec<String> {
-        let dictionary: std::collections::HashSet<&str> =
-            words.iter().map(|word| word.as_str()).collect();
+        let dictionary: std::collections::HashSet<&str> = words.iter().map(|word| word.as_str()).collect();
 
         fn is_compound(word: &str, dictionary: &std::collections::HashSet<&str>) -> bool {
             let n = word.len();

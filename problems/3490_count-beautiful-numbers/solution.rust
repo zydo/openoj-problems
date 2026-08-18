@@ -31,11 +31,7 @@ impl Solution {
         if pos == digits.len() {
             // Beautiful iff a number was built and prod is a multiple of the sum;
             // a 0 digit zeroes prod, and 0 is divisible by any positive sum.
-            return if started && ssum > 0 && prod % ssum == 0 {
-                1
-            } else {
-                0
-            };
+            return if started && ssum > 0 && prod % ssum == 0 { 1 } else { 0 };
         }
         let key = pack_key(pos, tight, started, ssum, prod);
         if let Some(&v) = memo.get(&key) {
@@ -50,15 +46,7 @@ impl Solution {
             if !started && d == 0 {
                 res += Self::dp(digits, memo, pos + 1, nt, false, 0, 1);
             } else {
-                res += Self::dp(
-                    digits,
-                    memo,
-                    pos + 1,
-                    nt,
-                    true,
-                    ssum + d as i64,
-                    prod * d as i64,
-                );
+                res += Self::dp(digits, memo, pos + 1, nt, true, ssum + d as i64, prod * d as i64);
             }
         }
         memo.insert(key, res);

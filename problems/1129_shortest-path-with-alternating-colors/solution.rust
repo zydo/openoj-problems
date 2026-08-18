@@ -1,11 +1,7 @@
 use std::collections::VecDeque;
 
 impl Solution {
-    pub fn shortest_alternating_paths(
-        n: i32,
-        red_edges: Vec<Vec<i32>>,
-        blue_edges: Vec<Vec<i32>>,
-    ) -> Vec<i32> {
+    pub fn shortest_alternating_paths(n: i32, red_edges: Vec<Vec<i32>>, blue_edges: Vec<Vec<i32>>) -> Vec<i32> {
         let n = n as usize;
         // adjacency[c][u] lists endpoints of color-c edges from u.
         let mut adjacency: Vec<Vec<Vec<usize>>> = vec![vec![Vec::new(); n]; 2];

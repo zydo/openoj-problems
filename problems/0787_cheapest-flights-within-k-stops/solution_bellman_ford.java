@@ -1,12 +1,6 @@
 class Solution {
 
-    public int findCheapestPrice(
-        int n,
-        int[][] flights,
-        int src,
-        int dst,
-        int k
-    ) {
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         final int INF = Integer.MAX_VALUE / 2;
         // After r full rounds, dist[v] is the cheapest fare using at
         // most r edges; k stops allow k+1 flights, so run k+1 rounds.

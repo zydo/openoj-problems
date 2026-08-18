@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def numBusesToDestination(
-        self, routes: List[List[int]], source: int, target: int
-    ) -> int:
+    def numBusesToDestination(self, routes: List[List[int]], source: int, target: int) -> int:
         # Early exits: same stop needs no bus; an endpoint on no route
         # has no path.
         if source == target:

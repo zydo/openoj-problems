@@ -1,9 +1,4 @@
-function maxKDivisibleComponents(
-    n: number,
-    edges: number[][],
-    values: number[],
-    k: number,
-): number {
+function maxKDivisibleComponents(n: number, edges: number[][], values: number[], k: number): number {
     const adj: number[][] = Array.from({ length: n }, () => []);
     for (const [a, b] of edges) {
         adj[a].push(b);

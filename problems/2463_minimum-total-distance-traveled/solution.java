@@ -6,11 +6,7 @@ class Solution {
         int[] rob = robot.clone();
         Arrays.sort(rob);
         int[][] fac = factory.clone();
-        Arrays.sort(fac, (a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[1], b[1])
-        );
+        Arrays.sort(fac, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
         // Optimal plans are non-crossing (triangle inequality), so after
         // sorting, each factory serves a contiguous block of robots in order.
         int n = rob.length;

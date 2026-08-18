@@ -1,7 +1,4 @@
-function maxGeneticDifference(
-    parents: number[],
-    queries: number[][],
-): number[] {
+function maxGeneticDifference(parents: number[], queries: number[][]): number[] {
     const BITS = 18;
     const n = parents.length;
     const children: number[][] = new Array(n);

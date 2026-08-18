@@ -1,20 +1,11 @@
-function handleQuery(
-    nums1: number[],
-    nums2: number[],
-    queries: number[][],
-): number[] {
+function handleQuery(nums1: number[], nums2: number[], queries: number[][]): number[] {
     const n = nums1.length;
     // segment tree over nums1 with lazy range-flip
     const size = 4 * Math.max(1, n);
     const tree: number[] = new Array(size).fill(0);
     const lazy: boolean[] = new Array(size).fill(false);
 
-    const build = (
-        node: number,
-        lo: number,
-        hi: number,
-        arr: number[],
-    ): void => {
+    const build = (node: number, lo: number, hi: number, arr: number[]): void => {
         if (lo === hi) {
             tree[node] = arr[lo];
             return;
@@ -36,13 +27,7 @@ function handleQuery(
             lazy[node] = false;
         }
     };
-    const flip = (
-        node: number,
-        lo: number,
-        hi: number,
-        ql: number,
-        qr: number,
-    ): void => {
+    const flip = (node: number, lo: number, hi: number, ql: number, qr: number): void => {
         if (ql > hi || qr < lo) {
             return;
         }

@@ -25,8 +25,7 @@ class Solution {
                     int nc = c + dc[d];
                     // Only a neighbor at least as tall could have flowed down
                     // into (r, c).
-                    if (nr >= 0 && nr < m && nc >= 0 && nc < n && !seen[nr][nc] &&
-                        heights[nr][nc] >= heights[r][c]) {
+                    if (nr >= 0 && nr < m && nc >= 0 && nc < n && !seen[nr][nc] && heights[nr][nc] >= heights[r][c]) {
                         // Mark on push so each cell is stacked at most once.
                         seen[nr][nc] = true;
                         stack.push_back({nr, nc});

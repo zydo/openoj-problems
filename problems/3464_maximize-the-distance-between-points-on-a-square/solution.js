@@ -16,9 +16,7 @@ var maxDistance = function (side, points, k) {
     };
 
     const n = points.length;
-    const coords = points
-        .map((p) => perimeter(p[0], p[1]))
-        .sort((a, b) => a - b);
+    const coords = points.map((p) => perimeter(p[0], p[1])).sort((a, b) => a - b);
     const arr = new Array(2 * n);
     for (let i = 0; i < n; i++) {
         arr[i] = coords[i];

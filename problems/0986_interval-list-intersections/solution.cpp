@@ -1,7 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> intervalIntersection(vector<vector<int>> &firstList,
-                                             vector<vector<int>> &secondList) {
+    vector<vector<int>> intervalIntersection(vector<vector<int>> &firstList, vector<vector<int>> &secondList) {
         vector<vector<int>> result;
         size_t i = 0, j = 0;
         while (i < firstList.size() && j < secondList.size()) {

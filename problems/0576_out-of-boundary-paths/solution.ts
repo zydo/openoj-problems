@@ -1,21 +1,11 @@
-function findPaths(
-    m: number,
-    n: number,
-    maxMove: number,
-    startRow: number,
-    startColumn: number,
-): number {
+function findPaths(m: number, n: number, maxMove: number, startRow: number, startColumn: number): number {
     const MOD = 1000000007;
     // Zero moves can never leave the grid.
     if (maxMove === 0) return 0;
     // After t passes, prev[i][j] = paths from (i, j) that exit within t moves.
-    let prev: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(0),
-    );
+    let prev: number[][] = Array.from({ length: m }, () => new Array(n).fill(0));
     for (let step = 0; step < maxMove; step++) {
-        const cur: number[][] = Array.from({ length: m }, () =>
-            new Array(n).fill(0),
-        );
+        const cur: number[][] = Array.from({ length: m }, () => new Array(n).fill(0));
         for (let i = 0; i < m; i++) {
             for (let j = 0; j < n; j++) {
                 let total = 0;

@@ -11,10 +11,7 @@ impl Solution {
         }
         let key = |a: usize, b: usize| -> i64 { (a as i64) << 32 | (b as i64) & 0xFFFFFFFF };
         // Guess set of packed (parent, child) keys gives O(1) direction checks.
-        let guess_set: HashSet<i64> = guesses
-            .iter()
-            .map(|g| key(g[0] as usize, g[1] as usize))
-            .collect();
+        let guess_set: HashSet<i64> = guesses.iter().map(|g| key(g[0] as usize, g[1] as usize)).collect();
 
         // Iterative DFS from root 0 records each node's parent and an order
         // where parents precede children — rerooting without recursion.

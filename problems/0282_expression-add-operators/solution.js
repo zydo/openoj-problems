@@ -39,12 +39,7 @@ var addOperators = function (num, target) {
                 dfs(end + 1, -nxt, current - nxt, expression + "-" + nxt);
                 // '*' rewrites the tail in place: drop the chain's old
                 // contribution, add prev * nxt.
-                dfs(
-                    end + 1,
-                    prev * nxt,
-                    current - prev + prev * nxt,
-                    expression + "*" + nxt,
-                );
+                dfs(end + 1, prev * nxt, current - prev + prev * nxt, expression + "*" + nxt);
             }
         }
     };

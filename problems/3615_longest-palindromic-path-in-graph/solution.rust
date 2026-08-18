@@ -44,15 +44,7 @@ impl Solution {
                     if codes[u] != codes[v] {
                         continue;
                     }
-                    let cand = dp(
-                        adj,
-                        codes,
-                        memo,
-                        n,
-                        mask | (1usize << u) | (1usize << v),
-                        u,
-                        v,
-                    );
+                    let cand = dp(adj, codes, memo, n, mask | (1usize << u) | (1usize << v), u, v);
                     if cand > best {
                         best = cand;
                     }
@@ -75,15 +67,7 @@ impl Solution {
             let u = e[0] as usize;
             let v = e[1] as usize;
             if codes[u] == codes[v] {
-                let length = dp(
-                    &adj,
-                    &codes,
-                    &mut memo,
-                    n,
-                    (1usize << u) | (1usize << v),
-                    u,
-                    v,
-                );
+                let length = dp(&adj, &codes, &mut memo, n, (1usize << u) | (1usize << v), u, v);
                 if length > answer {
                     answer = length;
                 }

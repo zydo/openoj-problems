@@ -19,14 +19,7 @@ impl Solution {
         }
 
         let mut best = 0;
-        fn dfs(
-            needs: &[[i32; 26]],
-            values: &[i32],
-            i: usize,
-            remaining: [i32; 26],
-            total: i32,
-            best: &mut i32,
-        ) {
+        fn dfs(needs: &[[i32; 26]], values: &[i32], i: usize, remaining: [i32; 26], total: i32, best: &mut i32) {
             // every node is already a complete valid selection (the rest can
             // be skipped), so compare best here rather than only at leaves
             if total > *best {

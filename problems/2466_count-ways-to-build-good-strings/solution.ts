@@ -1,9 +1,4 @@
-function countGoodStrings(
-    low: number,
-    high: number,
-    zero: number,
-    one: number,
-): number {
+function countGoodStrings(low: number, high: number, zero: number, one: number): number {
     const MOD = 1000000007;
     // dp[L] = buildable strings of length L; dp[0] = 1 for the empty
     // string. A string's final block (zeros or ones) fixes its last

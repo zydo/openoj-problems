@@ -5,9 +5,7 @@ function maxSizeSlices(slices: number[]): number {
     // with no two chosen adjacent.
     const rob = function (arr: number[], picks: number): number {
         const length = arr.length;
-        const dp: number[][] = Array.from({ length: length + 1 }, () =>
-            new Array(picks + 1).fill(-1),
-        );
+        const dp: number[][] = Array.from({ length: length + 1 }, () => new Array(picks + 1).fill(-1));
         dp[0][0] = 0;
         for (let i = 1; i <= length; i++) {
             for (let j = 0; j <= picks; j++) {

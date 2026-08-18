@@ -1,7 +1,4 @@
-function intervalIntersection(
-    firstList: number[][],
-    secondList: number[][],
-): number[][] {
+function intervalIntersection(firstList: number[][], secondList: number[][]): number[][] {
     const result: number[][] = [];
     let i = 0;
     let j = 0;

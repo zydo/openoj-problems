@@ -6,11 +6,7 @@ import java.util.List;
 
 class Solution {
 
-    public boolean[] coursePrerequisiteQueries(
-        int courseCount,
-        int[][] prerequisites,
-        int[][] queries
-    ) {
+    public boolean[] coursePrerequisiteQueries(int courseCount, int[][] prerequisites, int[][] queries) {
         List<List<Integer>> adjacency = new ArrayList<>();
         for (int i = 0; i < courseCount; i++) {
             adjacency.add(new ArrayList<>());

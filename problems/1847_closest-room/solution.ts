@@ -1,11 +1,7 @@
 function closestRoom(rooms: number[][], queries: number[][]): number[] {
-    const roomsBySize = rooms
-        .map((_, i) => i)
-        .sort((a, b) => rooms[b][1] - rooms[a][1]);
+    const roomsBySize = rooms.map((_, i) => i).sort((a, b) => rooms[b][1] - rooms[a][1]);
     // Offline trick: process queries by decreasing minSize so rooms only accumulate.
-    const queryOrder = queries
-        .map((_, j) => j)
-        .sort((a, b) => queries[b][1] - queries[a][1]);
+    const queryOrder = queries.map((_, j) => j).sort((a, b) => queries[b][1] - queries[a][1]);
     const lowerBound = (arr: number[], target: number): number => {
         let lo = 0,
             hi = arr.length;
@@ -24,10 +20,7 @@ function closestRoom(rooms: number[][], queries: number[][]): number[] {
         const minSize = queries[j][1];
         // Every room with size >= minSize qualifies; once inserted it stays
         // valid for all later queries (their thresholds are only smaller).
-        while (
-            ri < roomsBySize.length &&
-            rooms[roomsBySize[ri]][1] >= minSize
-        ) {
+        while (ri < roomsBySize.length && rooms[roomsBySize[ri]][1] >= minSize) {
             const id = rooms[roomsBySize[ri]][0];
             const pos = lowerBound(ids, id);
             ids.splice(pos, 0, id);

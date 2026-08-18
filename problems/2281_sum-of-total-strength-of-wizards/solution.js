@@ -10,10 +10,7 @@ var totalStrength = function (strength) {
     const prev = new Array(n);
     let stack = [];
     for (let i = 0; i < n; i++) {
-        while (
-            stack.length &&
-            strength[stack[stack.length - 1]] >= strength[i]
-        ) {
+        while (stack.length && strength[stack[stack.length - 1]] >= strength[i]) {
             stack.pop();
         }
         prev[i] = stack.length ? stack[stack.length - 1] : -1;
@@ -24,10 +21,7 @@ var totalStrength = function (strength) {
     const nxt = new Array(n);
     stack = [];
     for (let i = n - 1; i >= 0; i--) {
-        while (
-            stack.length &&
-            strength[stack[stack.length - 1]] > strength[i]
-        ) {
+        while (stack.length && strength[stack[stack.length - 1]] > strength[i]) {
             stack.pop();
         }
         nxt[i] = stack.length ? stack[stack.length - 1] : n;

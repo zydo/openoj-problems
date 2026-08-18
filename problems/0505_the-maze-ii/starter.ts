@@ -1,7 +1,3 @@
-function shortestDistance(
-    maze: number[][],
-    start: number[],
-    destination: number[],
-): number {
+function shortestDistance(maze: number[][], start: number[], destination: number[]): number {
     throw new Error("TODO");
 }

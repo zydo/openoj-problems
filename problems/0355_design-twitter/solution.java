@@ -18,9 +18,7 @@ class Twitter {
     public Twitter() {}
 
     public void postTweet(int userId, int tweetId) {
-        posts
-            .computeIfAbsent(userId, key -> new ArrayList<>())
-            .add(new int[] { clock, tweetId });
+        posts.computeIfAbsent(userId, key -> new ArrayList<>()).add(new int[] { clock, tweetId });
         clock++;
     }
 
@@ -34,11 +32,7 @@ class Twitter {
             if (timeline == null) {
                 continue;
             }
-            for (
-                int index = Math.max(0, timeline.size() - 10);
-                index < timeline.size();
-                index++
-            ) {
+            for (int index = Math.max(0, timeline.size() - 10); index < timeline.size(); index++) {
                 heap.offer(timeline.get(index));
                 if (heap.size() > 10) {
                     heap.poll();
@@ -57,9 +51,7 @@ class Twitter {
     }
 
     public void follow(int followerId, int followeeId) {
-        following
-            .computeIfAbsent(followerId, key -> new HashSet<>())
-            .add(followeeId);
+        following.computeIfAbsent(followerId, key -> new HashSet<>()).add(followeeId);
     }
 
     public void unfollow(int followerId, int followeeId) {

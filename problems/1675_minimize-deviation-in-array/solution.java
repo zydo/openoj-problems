@@ -4,9 +4,7 @@ import java.util.PriorityQueue;
 class Solution {
 
     public int minimumDeviation(int[] nums) {
-        PriorityQueue<Integer> heap = new PriorityQueue<>(
-            Collections.reverseOrder()
-        );
+        PriorityQueue<Integer> heap = new PriorityQueue<>(Collections.reverseOrder());
         // Normalize: odd values are doubled once — their only upward move —
         // so afterwards every element can only shrink by halving, and every
         // reachable configuration is still visited.

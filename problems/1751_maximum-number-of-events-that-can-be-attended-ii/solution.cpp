@@ -3,8 +3,7 @@ class Solution {
     long long maxValue(vector<vector<int>> &events, int k) {
         // Sorted by end day, any compatible set read by finish time is a
         // subsequence of this order, so earlier choices sit to the left.
-        sort(events.begin(), events.end(),
-             [](const vector<int> &a, const vector<int> &b) { return a[1] < b[1]; });
+        sort(events.begin(), events.end(), [](const vector<int> &a, const vector<int> &b) { return a[1] < b[1]; });
         int n = (int)events.size();
         vector<int> ends(n);
         for (int i = 0; i < n; i++) {

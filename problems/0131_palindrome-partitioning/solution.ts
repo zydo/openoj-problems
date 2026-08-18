@@ -1,9 +1,7 @@
 function partition(s: string): string[][] {
     const n = s.length;
     // Table of palindrome verdicts for every interval s[i..j].
-    const isPal: boolean[][] = Array.from({ length: n }, () =>
-        new Array<boolean>(n).fill(false),
-    );
+    const isPal: boolean[][] = Array.from({ length: n }, () => new Array<boolean>(n).fill(false));
     // Reverse i ensures the inner interval is computed before any outer
     // interval that reads it.
     for (let i = n - 1; i >= 0; i--) {

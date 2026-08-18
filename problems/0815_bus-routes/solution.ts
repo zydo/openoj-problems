@@ -1,8 +1,4 @@
-function numBusesToDestination(
-    routes: number[][],
-    source: number,
-    target: number,
-): number {
+function numBusesToDestination(routes: number[][], source: number, target: number): number {
     // Early exits: same stop needs no bus; an endpoint on no route
     // has no path.
     if (source === target) {

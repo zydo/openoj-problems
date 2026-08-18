@@ -3,9 +3,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def findAllRecipes(
-        self, recipes: List[str], ingredients: List[List[str]], supplies: List[str]
-    ) -> List[str]:
+    def findAllRecipes(self, recipes: List[str], ingredients: List[List[str]], supplies: List[str]) -> List[str]:
         have = set(supplies)
         index = {name: i for i, name in enumerate(recipes)}
         n = len(recipes)

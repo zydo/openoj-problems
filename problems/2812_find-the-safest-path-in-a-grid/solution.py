@@ -39,12 +39,7 @@ class Solution:
                     return True
                 for dr, dc in dirs:
                     nr, nc = r + dr, c + dc
-                    if (
-                        0 <= nr < n
-                        and 0 <= nc < n
-                        and not seen[nr][nc]
-                        and dist[nr][nc] >= threshold
-                    ):
+                    if 0 <= nr < n and 0 <= nc < n and not seen[nr][nc] and dist[nr][nc] >= threshold:
                         seen[nr][nc] = True
                         dq.append((nr, nc))
             return False

@@ -1,7 +1,4 @@
-function findCriticalAndPseudoCriticalEdges(
-    n: number,
-    edges: number[][],
-): number[][] {
+function findCriticalAndPseudoCriticalEdges(n: number, edges: number[][]): number[][] {
     const m = edges.length;
     const INF = Infinity;
 

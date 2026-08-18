@@ -2,12 +2,7 @@ import java.util.Arrays;
 
 class Solution {
 
-    public int minimumCost(
-        int m,
-        int n,
-        int[] horizontalCut,
-        int[] verticalCut
-    ) {
+    public int minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut) {
         // A cut costs its base price times the pieces it crosses: one more
         // for every opposite-direction cut already made. An exchange argument
         // (swapping adjacent opposite cuts never helps unless the pricier one

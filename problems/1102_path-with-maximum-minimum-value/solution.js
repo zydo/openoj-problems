@@ -49,9 +49,7 @@ var maximumMinimumPath = function (grid) {
     // Best-first on the highest-valued frontier cell: taking the largest
     // candidate can never lower the running minimum, so the first arrival at
     // the goal carries the maximum bottleneck (Dijkstra with max).
-    const visited = Array.from({ length: rows }, () =>
-        new Array(cols).fill(false),
-    );
+    const visited = Array.from({ length: rows }, () => new Array(cols).fill(false));
     visited[0][0] = true;
     push([-grid[0][0], 0, 0]);
     let best = grid[0][0];
@@ -71,13 +69,7 @@ var maximumMinimumPath = function (grid) {
             const nr = r + dr;
             const nc = c + dc;
             // Mark visited on push so each cell enters the heap at most once.
-            if (
-                nr >= 0 &&
-                nr < rows &&
-                nc >= 0 &&
-                nc < cols &&
-                !visited[nr][nc]
-            ) {
+            if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && !visited[nr][nc]) {
                 visited[nr][nc] = true;
                 push([-grid[nr][nc], nr, nc]);
             }

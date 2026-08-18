@@ -27,9 +27,7 @@ class Solution {
             for (int[] d : dirs) {
                 int ni = cell[1] + d[0],
                     nj = cell[2] + d[1];
-                if (
-                    ni >= 0 && ni < m && nj >= 0 && nj < n && !visited[ni][nj]
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && !visited[ni][nj]) {
                     visited[ni][nj] = true;
                     int nh = heightMap[ni][nj];
                     if (nh < h) {

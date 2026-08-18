@@ -1,9 +1,4 @@
-function minCost(
-    n: number,
-    roads: number[][],
-    appleCost: number[],
-    k: number,
-): number[] {
+function minCost(n: number, roads: number[][], appleCost: number[], k: number): number[] {
     const adj: [number, number][][] = Array.from({ length: n + 1 }, () => []);
     for (const [a, b, c] of roads) {
         adj[a].push([b, c]);

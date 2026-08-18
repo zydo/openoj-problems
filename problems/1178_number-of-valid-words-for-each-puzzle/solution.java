@@ -21,8 +21,7 @@ class Solution {
             // a valid word mask must contain the puzzle's first letter
             int first = 1 << (puzzle.charAt(0) - 'a');
             int puzzleMask = 0;
-            for (int t = 0; t < puzzle.length(); t++) puzzleMask |=
-                1 << (puzzle.charAt(t) - 'a');
+            for (int t = 0; t < puzzle.length(); t++) puzzleMask |= 1 << (puzzle.charAt(t) - 'a');
             int total = 0;
             // enumerate every submask of the 7-letter puzzle mask (at most
             // 127); sub = (sub - 1) & puzzleMask walks them all in order

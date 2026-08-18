@@ -1,9 +1,7 @@
 function assignBikes(workers: number[][], bikes: number[][]): number {
     const n = workers.length;
     const m = bikes.length;
-    const dist = workers.map(([wx, wy]) =>
-        bikes.map(([bx, by]) => Math.abs(wx - bx) + Math.abs(wy - by)),
-    );
+    const dist = workers.map(([wx, wy]) => bikes.map(([bx, by]) => Math.abs(wx - bx) + Math.abs(wy - by)));
     const size = 1 << m;
     const INF = Infinity;
     const dp = new Array<number>(size).fill(INF);

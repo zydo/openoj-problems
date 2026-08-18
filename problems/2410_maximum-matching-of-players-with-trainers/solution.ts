@@ -1,7 +1,4 @@
-function matchPlayersAndTrainers(
-    players: number[],
-    trainers: number[],
-): number {
+function matchPlayersAndTrainers(players: number[], trainers: number[]): number {
     players = players.slice().sort((a, b) => a - b);
     trainers = trainers.slice().sort((a, b) => a - b);
     // Greedy: pair the weakest unmatched player with the weakest

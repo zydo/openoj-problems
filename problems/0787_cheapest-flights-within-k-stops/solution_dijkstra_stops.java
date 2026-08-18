@@ -5,13 +5,7 @@ import java.util.PriorityQueue;
 
 class Solution {
 
-    public int findCheapestPrice(
-        int n,
-        int[][] flights,
-        int src,
-        int dst,
-        int k
-    ) {
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         List<int[]>[] graph = new ArrayList[n];
         for (int i = 0; i < n; i++) {
             graph[i] = new ArrayList<>();
@@ -22,9 +16,7 @@ class Solution {
         // State = (cost, node, flights taken). Carrying the count in the
         // state is what enforces the limit: a state that already used its
         // k+1 flights is never allowed to board another.
-        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            Integer.compare(a[0], b[0])
-        );
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         heap.offer(new int[] { 0, src, 0 });
         int[] best = new int[n];
         Arrays.fill(best, Integer.MAX_VALUE);
@@ -45,11 +37,7 @@ class Solution {
             best[node] = edges;
             if (edges < k + 1) {
                 for (int[] flight : graph[node]) {
-                    heap.offer(new int[] {
-                        cost + flight[1],
-                        flight[0],
-                        edges + 1,
-                    });
+                    heap.offer(new int[] { cost + flight[1], flight[0], edges + 1 });
                 }
             }
         }

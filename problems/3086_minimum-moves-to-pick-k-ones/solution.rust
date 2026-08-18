@@ -26,10 +26,8 @@ impl Solution {
                 let pos = (l + r) / 2;
                 let left_cnt = pos - l;
                 let right_cnt = r - pos;
-                let left = left_cnt * ones[pos as usize]
-                    - (prefix[(pos - 1) as usize] - prefix[(l - 1) as usize]);
-                let right =
-                    (prefix[r as usize] - prefix[pos as usize]) - right_cnt * ones[pos as usize];
+                let left = left_cnt * ones[pos as usize] - (prefix[(pos - 1) as usize] - prefix[(l - 1) as usize]);
+                let right = (prefix[r as usize] - prefix[pos as usize]) - right_cnt * ones[pos as usize];
                 let cost = left + right;
                 if cost < best {
                     best = cost;

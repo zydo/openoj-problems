@@ -1,8 +1,5 @@
 function findDuplicateSubtrees(root: TreeNode | null): (TreeNode | null)[] {
-    const info = new Map<
-        string,
-        { node: TreeNode | null; lastIndex: number; count: number }
-    >();
+    const info = new Map<string, { node: TreeNode | null; lastIndex: number; count: number }>();
     let counter = 0;
 
     const key = function (node: TreeNode | null): string {

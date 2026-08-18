@@ -14,9 +14,7 @@ class Solution {
 
     private int expand(String s, int left, int right) {
         int count = 0;
-        while (
-            left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)
-        ) {
+        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
             // Every successful step is one more palindrome; stop at the
             // first mismatch — wrapping can never restore symmetry.
             count++;

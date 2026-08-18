@@ -8,8 +8,7 @@ function separateSquares(squares: number[][]): number {
     xs.sort((a, b) => a - b);
     const unique: number[] = [];
     for (const v of xs) {
-        if (unique.length === 0 || unique[unique.length - 1] !== v)
-            unique.push(v);
+        if (unique.length === 0 || unique[unique.length - 1] !== v) unique.push(v);
     }
     const m = unique.length;
     const index = new Map<number, number>();
@@ -31,14 +30,7 @@ function separateSquares(squares: number[][]): number {
     const count: number[] = new Array(4 * m).fill(0);
     const cover: number[] = new Array(4 * m).fill(0);
     // exact integer arithmetic throughout (values stay below 2^53)
-    const update = (
-        node: number,
-        lo: number,
-        hi: number,
-        i: number,
-        j: number,
-        delta: number,
-    ): void => {
+    const update = (node: number, lo: number, hi: number, i: number, j: number, delta: number): void => {
         if (j <= lo || hi <= i) return;
         if (i <= lo && hi <= j) {
             count[node] += delta;

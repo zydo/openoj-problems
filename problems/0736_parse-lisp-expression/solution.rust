@@ -29,11 +29,7 @@ impl Solution {
         tokens[i + 1] == ")"
     }
 
-    fn parse(
-        tokens: &[String],
-        i: &mut usize,
-        env: &std::collections::HashMap<String, i32>,
-    ) -> i32 {
+    fn parse(tokens: &[String], i: &mut usize, env: &std::collections::HashMap<String, i32>) -> i32 {
         let token = tokens[*i].clone();
         if token != "(" {
             *i += 1;

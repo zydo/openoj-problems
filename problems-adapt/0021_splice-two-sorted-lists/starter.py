@@ -8,7 +8,5 @@ class ListNode:
 
 
 class Solution:
-    def spliceTwoSortedLists(
-        self, first: Optional[ListNode], second: Optional[ListNode]
-    ) -> Optional[ListNode]:
+    def spliceTwoSortedLists(self, first: Optional[ListNode], second: Optional[ListNode]) -> Optional[ListNode]:
         raise NotImplementedError("TODO")

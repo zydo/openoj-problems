@@ -33,13 +33,7 @@ function nearestSourceDistances(grid: number[][]): number[][] {
                 // Still INF means unvisited; writing the distance doubles as
                 // the visited mark, and sources and blocked cells never match INF so they
                 // are never entered or overwritten.
-                if (
-                    nr >= 0 &&
-                    nr < m &&
-                    nc >= 0 &&
-                    nc < n &&
-                    grid[nr][nc] === INF
-                ) {
+                if (nr >= 0 && nr < m && nc >= 0 && nc < n && grid[nr][nc] === INF) {
                     grid[nr][nc] = dist;
                     queue.push([nr, nc]);
                 }

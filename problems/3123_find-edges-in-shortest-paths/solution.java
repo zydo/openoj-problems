@@ -27,10 +27,7 @@ class Solution {
         for (int i = 0; i < edges.length; i++) {
             // on a shortest path iff d0(one end) + w + dN(other end) == total,
             // tested both ways since the undirected edge may be crossed either way
-            if (
-                dist0[u] + w + distN[v] == total ||
-                dist0[v] + w + distN[u] == total
-            ) {
+            if (dist0[u] + w + distN[v] == total || dist0[v] + w + distN[u] == total) {
                 ans[i] = true;
             }
         }
@@ -41,9 +38,7 @@ class Solution {
         long[] dist = new long[n];
         Arrays.fill(dist, Long.MAX_VALUE);
         dist[src] = 0;
-        PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) ->
-            Long.compare(a[0], b[0])
-        );
+        PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
         pq.add(new long[] { 0, src });
         while (!pq.isEmpty()) {
             long[] top = pq.poll();

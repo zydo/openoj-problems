@@ -1,8 +1,4 @@
-function minimumCost(
-    n: number,
-    edges: number[][],
-    query: number[][],
-): number[] {
+function minimumCost(n: number, edges: number[][], query: number[][]): number[] {
     // Walks may repeat edges, so the optimum ANDs in every edge of the component.
     const parent = Array.from({ length: n }, (_, i) => i);
     const size = new Array(n).fill(1);

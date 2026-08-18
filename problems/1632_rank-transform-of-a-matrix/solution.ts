@@ -14,9 +14,7 @@ function matrixRankTransform(matrix: number[][]): number[][] {
     // (processing is in increasing value order, so those are final).
     const rowMax: number[] = new Array(m).fill(0);
     const colMax: number[] = new Array(n).fill(0);
-    const ans: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(0),
-    );
+    const ans: number[][] = Array.from({ length: m }, () => new Array(n).fill(0));
 
     const parent: number[] = new Array(m * n).fill(-1);
     const find = (x: number): number => {
@@ -74,10 +72,7 @@ function matrixRankTransform(matrix: number[][]): number[][] {
             const c = idx % n;
             const root = find(idx);
             const candidate = Math.max(rowMax[r], colMax[c]) + 1;
-            if (
-                !compRank.has(root) ||
-                candidate > (compRank.get(root) as number)
-            ) {
+            if (!compRank.has(root) || candidate > (compRank.get(root) as number)) {
                 compRank.set(root, candidate);
             }
         }

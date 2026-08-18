@@ -15,9 +15,7 @@ var subsequencePairCount = function (nums) {
     // dp[g1][g2] = ways to split the processed prefix into a sequence with
     // gcd g1 and a sequence with gcd g2 (gcd 0 denotes an empty sequence).
     const maxVal = 200;
-    let dp = Array.from({ length: maxVal + 1 }, () =>
-        new Array(maxVal + 1).fill(0),
-    );
+    let dp = Array.from({ length: maxVal + 1 }, () => new Array(maxVal + 1).fill(0));
     dp[0][0] = 1;
     for (const x of nums) {
         const ndp = dp.map((row) => row.slice());

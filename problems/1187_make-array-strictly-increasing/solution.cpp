@@ -29,9 +29,7 @@ class Solution {
                 }
                 // replace with the smallest arr2 value > last: the smallest
                 // choice leaves the most room for what follows; costs 1 op
-                int idx =
-                    (int)(upper_bound(b.begin(), b.end(), (int)min<long long>(last, 2147483647LL)) -
-                          b.begin());
+                int idx = (int)(upper_bound(b.begin(), b.end(), (int)min<long long>(last, 2147483647LL)) - b.begin());
                 if (idx < m) {
                     long long v = b[idx];
                     int cost = ops + 1;

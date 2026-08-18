@@ -36,9 +36,7 @@ class Solution {
                 for (int d = 0; d < 4; d++) {
                     int ni = cell[0] + di[d];
                     int nj = cell[1] + dj[d];
-                    if (
-                        ni >= 0 && ni < n && nj >= 0 && nj < n && g[ni][nj] == 0
-                    ) {
+                    if (ni >= 0 && ni < n && nj >= 0 && nj < n && g[ni][nj] == 0) {
                         // flip to 1 on enqueue: each cell is queued once
                         g[ni][nj] = 1;
                         queue.add(new int[] { ni, nj });

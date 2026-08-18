@@ -14,21 +14,13 @@ class Solution {
         return (int) mergeCount(prefix, 0, n, lower, upper);
     }
 
-    private long mergeCount(
-        long[] prefix,
-        int lo,
-        int hi,
-        int lower,
-        int upper
-    ) {
+    private long mergeCount(long[] prefix, int lo, int hi, int lower, int upper) {
         if (lo >= hi) {
             return 0;
         }
         int mid = (lo + hi) >>> 1;
         // Pairs inside each half first; cross pairs next.
-        long count =
-            mergeCount(prefix, lo, mid, lower, upper) +
-            mergeCount(prefix, mid + 1, hi, lower, upper);
+        long count = mergeCount(prefix, lo, mid, lower, upper) + mergeCount(prefix, mid + 1, hi, lower, upper);
 
         // Left half is sorted, so for each left prefix the valid right
         // entries form the window [l, r): l skips below-lower, r passes

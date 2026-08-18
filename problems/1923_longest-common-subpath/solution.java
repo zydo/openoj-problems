@@ -28,13 +28,7 @@ class Solution {
         return lo;
     }
 
-    private static boolean exists(
-        int length,
-        int[][] paths,
-        long MOD1,
-        long MOD2,
-        long BASE
-    ) {
+    private static boolean exists(int length, int[][] paths, long MOD1, long MOD2, long BASE) {
         Set<Long> common = null;
         for (int[] path : paths) {
             if (path.length < length) return false;

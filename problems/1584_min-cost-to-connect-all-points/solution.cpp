@@ -26,8 +26,8 @@ class Solution {
             // Relax every outside vertex against the newly attached u.
             for (int v = 0; v < n; v++) {
                 if (!used[v]) {
-                    long long d = llabs((long long)points[u][0] - points[v][0]) +
-                                  llabs((long long)points[u][1] - points[v][1]);
+                    long long d =
+                        llabs((long long)points[u][0] - points[v][0]) + llabs((long long)points[u][1] - points[v][1]);
                     if (d < best[v]) {
                         best[v] = d;
                     }

@@ -28,10 +28,7 @@ class Solution {
                 if ((k & 1) == 1) {
                     out[oi++] = (double) window.get(k / 2);
                 } else {
-                    out[oi++] =
-                        ((long) window.get(k / 2 - 1) +
-                            (long) window.get(k / 2)) /
-                        2.0;
+                    out[oi++] = ((long) window.get(k / 2 - 1) + (long) window.get(k / 2)) / 2.0;
                 }
             }
         }

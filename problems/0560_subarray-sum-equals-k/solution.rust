@@ -10,10 +10,7 @@ impl Solution {
         for &value in &nums {
             running += value as i64;
             // Subarrays ending here sum to k exactly when an earlier prefix equals running - k.
-            total += prefix_counts
-                .get(&(running - k as i64))
-                .copied()
-                .unwrap_or(0);
+            total += prefix_counts.get(&(running - k as i64)).copied().unwrap_or(0);
             // Record only after counting, so a subarray never matches against itself.
             *prefix_counts.entry(running).or_insert(0) += 1;
         }

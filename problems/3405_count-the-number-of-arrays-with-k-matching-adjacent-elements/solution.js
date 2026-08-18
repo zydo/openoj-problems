@@ -36,8 +36,5 @@ var countGoodArrays = function (n, m, k) {
         return mulmod(mulmod(fact[a], inv_fact[b]), inv_fact[a - b]);
     };
 
-    return mulmod(
-        mulmod(m % MOD, comb(n - 1, k)),
-        powmod(m - 1, n - 1 - k, MOD),
-    );
+    return mulmod(mulmod(m % MOD, comb(n - 1, k)), powmod(m - 1, n - 1 - k, MOD));
 };

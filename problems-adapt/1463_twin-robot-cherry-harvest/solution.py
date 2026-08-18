@@ -25,9 +25,7 @@ class Solution:
                                 best = dp[p1][p2]
                     if best > NEG:
                         # both cells harvested, except a shared cell counts once
-                        ndp[c1][c2] = (
-                            best + grid[r][c1] + (grid[r][c2] if c1 != c2 else 0)
-                        )
+                        ndp[c1][c2] = best + grid[r][c1] + (grid[r][c2] if c1 != c2 else 0)
             dp = ndp
         # every move is strictly downward, so all paths reach the bottom row
         # together — the answer is the best entry of the last table

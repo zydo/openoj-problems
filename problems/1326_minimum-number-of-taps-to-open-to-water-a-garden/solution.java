@@ -12,11 +12,7 @@ class Solution {
             intervals[i][1] = Math.min(n, i + ranges[i]);
         }
         // Sorting by left endpoint makes the sweep a single pass.
-        Arrays.sort(intervals, (a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[1], b[1])
-        );
+        Arrays.sort(intervals, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
         int count = 0;
         int covered = 0;
         int i = 0;

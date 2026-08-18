@@ -46,13 +46,7 @@ class Solution {
 
     // Kruskal skipping edge `skip` (>= 0) and/or forcing edge `force` (>= 0) in first.
     // Returns Integer.MAX_VALUE when no spanning tree can be formed.
-    private int mstWeight(
-        int n,
-        int[][] edges,
-        Integer[] order,
-        int skip,
-        int force
-    ) {
+    private int mstWeight(int n, int[][] edges, Integer[] order, int skip, int force) {
         int[] par = new int[n];
         int[] size = new int[n];
         for (int i = 0; i < n; i++) par[i] = i;

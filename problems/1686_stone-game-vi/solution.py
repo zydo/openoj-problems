@@ -6,9 +6,7 @@ class Solution:
         n = len(aliceValues)
         # Taking a stone gains your value AND denies the opponent theirs, so
         # both players effectively compete for aliceValues[i] + bobValues[i].
-        order = sorted(
-            range(n), key=lambda i: aliceValues[i] + bobValues[i], reverse=True
-        )
+        order = sorted(range(n), key=lambda i: aliceValues[i] + bobValues[i], reverse=True)
         diff = 0
         for rank, i in enumerate(order):
             if rank % 2 == 0:

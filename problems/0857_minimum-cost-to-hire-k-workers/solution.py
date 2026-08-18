@@ -3,9 +3,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def mincostToHireWorkers(
-        self, quality: List[int], wage: List[int], k: int
-    ) -> float:
+    def mincostToHireWorkers(self, quality: List[int], wage: List[int], k: int) -> float:
         # Sort workers by wage/quality ratio. For each worker as the one paid
         # exactly their minimum wage (the highest ratio in the chosen group),
         # the best group is the k-1 others with smallest quality among cheaper

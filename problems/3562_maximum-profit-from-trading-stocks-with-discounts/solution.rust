@@ -26,13 +26,7 @@ impl Solution {
         cur
     }
 
-    pub fn max_profit(
-        n: i32,
-        present: Vec<i32>,
-        future: Vec<i32>,
-        hierarchy: Vec<Vec<i32>>,
-        budget: i32,
-    ) -> i32 {
+    pub fn max_profit(n: i32, present: Vec<i32>, future: Vec<i32>, hierarchy: Vec<Vec<i32>>, budget: i32) -> i32 {
         let n = n as usize;
         let budget = budget as usize;
         let mut children: Vec<Vec<usize>> = vec![Vec::new(); n];

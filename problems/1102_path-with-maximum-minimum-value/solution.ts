@@ -3,8 +3,7 @@ function maximumMinimumPath(grid: number[][]): number {
     const cols = grid[0].length;
     // Min-heap keyed on the first element (negated cell value).
     const heap: [number, number, number][] = [];
-    const less = (a: [number, number, number], b: [number, number, number]) =>
-        a[0] < b[0];
+    const less = (a: [number, number, number], b: [number, number, number]) => a[0] < b[0];
     const push = (item: [number, number, number]): void => {
         heap.push(item);
         let i = heap.length - 1;
@@ -46,9 +45,7 @@ function maximumMinimumPath(grid: number[][]): number {
     // Best-first on the highest-valued frontier cell: taking the largest
     // candidate can never lower the running minimum, so the first arrival at
     // the goal carries the maximum bottleneck (Dijkstra with max).
-    const visited: boolean[][] = Array.from({ length: rows }, () =>
-        new Array(cols).fill(false),
-    );
+    const visited: boolean[][] = Array.from({ length: rows }, () => new Array(cols).fill(false));
     visited[0][0] = true;
     push([-grid[0][0], 0, 0]);
     let best = grid[0][0];
@@ -68,13 +65,7 @@ function maximumMinimumPath(grid: number[][]): number {
             const nr = r + dr;
             const nc = c + dc;
             // Mark visited on push so each cell enters the heap at most once.
-            if (
-                nr >= 0 &&
-                nr < rows &&
-                nc >= 0 &&
-                nc < cols &&
-                !visited[nr][nc]
-            ) {
+            if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && !visited[nr][nc]) {
                 visited[nr][nc] = true;
                 push([-grid[nr][nc], nr, nc]);
             }

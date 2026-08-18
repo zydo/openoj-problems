@@ -44,14 +44,7 @@ class Solution {
     }
 
     // First index in [ql, qr) whose height exceeds threshold, or -1.
-    private int findFirst(
-        int node,
-        int nl,
-        int nr,
-        int ql,
-        int qr,
-        long threshold
-    ) {
+    private int findFirst(int node, int nl, int nr, int ql, int qr, long threshold) {
         // Prune any node outside the query range or whose max cannot qualify.
         if (nr <= ql || qr <= nl || seg[node] <= threshold) {
             return -1;

@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def minimumCost(
-        self, m: int, n: int, horizontalCut: List[int], verticalCut: List[int]
-    ) -> int:
+    def minimumCost(self, m: int, n: int, horizontalCut: List[int], verticalCut: List[int]) -> int:
         # A cut costs its base price times the pieces it crosses: one more
         # for every opposite-direction cut already made. An exchange argument
         # (swapping adjacent opposite cuts never helps unless the pricier one

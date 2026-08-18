@@ -1,8 +1,4 @@
-function minRefuelStops(
-    target: number,
-    startFuel: number,
-    stations: number[][],
-): number {
+function minRefuelStops(target: number, startFuel: number, stations: number[][]): number {
     let fuel = startFuel;
     const available: number[] = []; // fuels at stations already passed
     let stops = 0;

@@ -49,9 +49,7 @@ class Solution {
         Item(double g, long long p, long long t) : g(g), p(p), t(t) {}
     };
 
-    static double gain(long long p, long long t) {
-        return (double)(p + 1) / (double)(t + 1) - (double)p / (double)t;
-    }
+    static double gain(long long p, long long t) { return (double)(p + 1) / (double)(t + 1) - (double)p / (double)t; }
 
     static bool less(const Item &a, const Item &b) {
         if (a.g != b.g)

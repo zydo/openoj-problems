@@ -9,8 +9,7 @@ class Solution {
         // others (the identity shift is forbidden) or n - cnt non-T; from a
         // non-T it lands on cnt T or n - 1 - cnt non-T. Length-k walk counts
         // depend only on the starting class, hence this 2x2 matrix.
-        long long mat[2][2] = {{mod(cnt - 1, MOD), mod(cnt, MOD)},
-                               {mod(n - cnt, MOD), mod(n - 1 - cnt, MOD)}};
+        long long mat[2][2] = {{mod(cnt - 1, MOD), mod(cnt, MOD)}, {mod(n - cnt, MOD), mod(n - 1 - cnt, MOD)}};
         long long mk[2][2];
         // k reaches 1e15, so exponentiate by repeated squaring: O(log k)
         // constant-size multiplications under the modulus.
@@ -65,8 +64,7 @@ class Solution {
         return cnt;
     }
 
-    void matMul(const long long a[2][2], const long long b[2][2], long long out[2][2],
-                long long MOD) {
+    void matMul(const long long a[2][2], const long long b[2][2], long long out[2][2], long long MOD) {
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
                 out[i][j] = (a[i][0] * b[0][j] + a[i][1] * b[1][j]) % MOD;

@@ -1,8 +1,4 @@
-function areSentencesSimilarTwo(
-    sentence1: string[],
-    sentence2: string[],
-    similarPairs: string[][],
-): boolean {
+function areSentencesSimilarTwo(sentence1: string[], sentence2: string[], similarPairs: string[][]): boolean {
     // Different lengths can never be similar.
     if (sentence1.length !== sentence2.length) return false;
 

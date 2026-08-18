@@ -1,8 +1,5 @@
 function sortList(head: ListNode | null): ListNode | null {
-    const merge = function (
-        a: ListNode | null,
-        b: ListNode | null,
-    ): ListNode | null {
+    const merge = function (a: ListNode | null, b: ListNode | null): ListNode | null {
         const dummy = new ListNode(0);
         let tail = dummy;
         while (a !== null && b !== null) {

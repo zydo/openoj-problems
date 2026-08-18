@@ -1,9 +1,4 @@
-function sortItems(
-    n: number,
-    m: number,
-    group: number[],
-    beforeItems: number[][],
-): number[] {
+function sortItems(n: number, m: number, group: number[], beforeItems: number[][]): number[] {
     const grp = group.slice();
     let total = m;
     for (let i = 0; i < n; i++) {
@@ -30,11 +25,7 @@ function sortItems(
 
     // LIFO Kahn: stack initialized in descending id order so the smallest
     // zero-indegree id pops first; newly available nodes are pushed on top.
-    const kahn = function (
-        keys: number[],
-        adj: number[][],
-        indeg: number[],
-    ): number[] | null {
+    const kahn = function (keys: number[], adj: number[][], indeg: number[]): number[] | null {
         const ind = indeg.slice();
         const available: number[] = [];
         for (const k of keys) {

@@ -40,8 +40,7 @@ impl Solution {
                 if (mask >> nxt) & 1 != 0 {
                     continue;
                 }
-                if absd(last as i64 - nums[nxt] as i64) + f[mask | (1 << nxt)][nxt] == f[mask][last]
-                {
+                if absd(last as i64 - nums[nxt] as i64) + f[mask | (1 << nxt)][nxt] == f[mask][last] {
                     perm.push(nxt as i32);
                     mask |= 1 << nxt;
                     last = nxt;

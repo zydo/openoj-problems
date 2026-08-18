@@ -9,14 +9,13 @@ class Solution {
     // digits minus even digits written so far) and value mod k. Memoization
     // shares all loose subproblems, so the recursion enumerates states, not
     // numbers.
-    long long dp(int pos, int tight, int started, int balance, int mod, const vector<int> &digits,
-                 int k, vector<long long> &memo) {
+    long long dp(int pos, int tight, int started, int balance, int mod, const vector<int> &digits, int k,
+                 vector<long long> &memo) {
         int len = (int)digits.size();
         if (pos == len) {
             return (started == 1 && balance == 0 && mod == 0) ? 1 : 0;
         }
-        long long key =
-            (long long)(((pos * 2 + tight) * 2 + started) * 21 + balance + 10) * k + mod;
+        long long key = (long long)(((pos * 2 + tight) * 2 + started) * 21 + balance + 10) * k + mod;
         if (memo[key] >= 0)
             return memo[key];
         // tight: prefix still equals the bound's, capping this digit.

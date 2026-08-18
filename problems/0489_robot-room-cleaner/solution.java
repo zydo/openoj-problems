@@ -5,12 +5,7 @@ import java.util.Set;
 
 class Solution {
 
-    private static final int[][] DIRS = {
-        { -1, 0 },
-        { 0, 1 },
-        { 1, 0 },
-        { 0, -1 },
-    }; // up, right, down, left
+    private static final int[][] DIRS = { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } }; // up, right, down, left
 
     public void cleanRoom(InteractiveOracles.Robot robot) {
         Set<Long> visited = new HashSet<>();

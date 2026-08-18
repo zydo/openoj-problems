@@ -9,9 +9,7 @@ function shortestPathBinaryMatrix(grid: number[][]): number {
     }
     // Unit-cost moves make BFS optimal: first arrival is a shortest path.
     // dist doubles as the visited marker; length counts cells, so start = 1.
-    const dist: number[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(0),
-    );
+    const dist: number[][] = Array.from({ length: n }, () => new Array(n).fill(0));
     const queue: Array<[number, number]> = [[0, 0]];
     dist[0][0] = 1;
     let head = 0;
@@ -23,14 +21,7 @@ function shortestPathBinaryMatrix(grid: number[][]): number {
                 if (dx === 0 && dy === 0) continue;
                 const nx = x + dx,
                     ny = y + dy;
-                if (
-                    nx >= 0 &&
-                    nx < n &&
-                    ny >= 0 &&
-                    ny < n &&
-                    grid[nx][ny] === 0 &&
-                    dist[nx][ny] === 0
-                ) {
+                if (nx >= 0 && nx < n && ny >= 0 && ny < n && grid[nx][ny] === 0 && dist[nx][ny] === 0) {
                     // Early exit the moment the goal becomes reachable.
                     if (nx === n - 1 && ny === n - 1) {
                         return dist[x][y] + 1;

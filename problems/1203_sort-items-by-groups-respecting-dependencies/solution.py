@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def sortItems(
-        self, n: int, m: int, group: List[int], beforeItems: List[List[int]]
-    ) -> List[int]:
+    def sortItems(self, n: int, m: int, group: List[int], beforeItems: List[List[int]]) -> List[int]:
         group = list(group)
         # Assign each ungrouped item its own private group id.
         for i in range(n):

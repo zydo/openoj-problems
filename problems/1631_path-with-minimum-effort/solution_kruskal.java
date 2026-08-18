@@ -13,11 +13,7 @@ class Solution {
             for (int c = 0; c < cols; c++) {
                 if (r + 1 < rows) {
                     int w = Math.abs(heights[r + 1][c] - heights[r][c]);
-                    edges.add(new int[] {
-                        w,
-                        r * cols + c,
-                        (r + 1) * cols + c,
-                    });
+                    edges.add(new int[] { w, r * cols + c, (r + 1) * cols + c });
                 }
                 if (c + 1 < cols) {
                     int w = Math.abs(heights[r][c + 1] - heights[r][c]);

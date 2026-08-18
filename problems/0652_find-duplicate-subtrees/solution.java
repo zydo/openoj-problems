@@ -20,21 +20,12 @@ class Solution {
         return duplicates;
     }
 
-    private String key(
-        TreeNode node,
-        Map<String, Object[]> info,
-        int[] counter
-    ) {
+    private String key(TreeNode node, Map<String, Object[]> info, int[] counter) {
         if (node == null) {
             return "#";
         }
         int index = counter[0]++;
-        String serial =
-            node.val +
-            "," +
-            key(node.left, info, counter) +
-            "," +
-            key(node.right, info, counter);
+        String serial = node.val + "," + key(node.left, info, counter) + "," + key(node.right, info, counter);
         Object[] entry = info.get(serial);
         if (entry != null) {
             entry[1] = index;

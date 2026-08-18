@@ -23,10 +23,7 @@ class Solution {
             java.util.Arrays.fill(dist, Integer.MAX_VALUE);
             dist[start] = 0;
             // Monotone bucket queue would do, but a plain binary heap is fine.
-            java.util.PriorityQueue<long[]> heap =
-                new java.util.PriorityQueue<>((a, b) ->
-                    Long.compare(a[0], b[0])
-                );
+            java.util.PriorityQueue<long[]> heap = new java.util.PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
             heap.add(new long[] { 0, start });
             while (!heap.isEmpty()) {
                 long[] top = heap.poll();

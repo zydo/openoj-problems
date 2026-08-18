@@ -6,9 +6,7 @@ class Solution {
         int[][] dist = new int[n][m];
         for (int i = 0; i < n; i++) {
             for (int b = 0; b < m; b++) {
-                dist[i][b] =
-                    Math.abs(workers[i][0] - bikes[b][0]) +
-                    Math.abs(workers[i][1] - bikes[b][1]);
+                dist[i][b] = Math.abs(workers[i][0] - bikes[b][0]) + Math.abs(workers[i][1] - bikes[b][1]);
             }
         }
         int size = 1 << m;

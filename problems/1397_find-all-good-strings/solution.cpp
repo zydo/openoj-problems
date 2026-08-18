@@ -16,8 +16,7 @@ class Solution {
         }
 
         // dp[pos][state][lo][hi]
-        vector<vector<array<array<long long, 2>, 2>>> dp(
-            n + 1, vector<array<array<long long, 2>, 2>>(m + 1));
+        vector<vector<array<array<long long, 2>, 2>>> dp(n + 1, vector<array<array<long long, 2>, 2>>(m + 1));
         for (int st = 0; st <= m; st++) {
             for (int lo = 0; lo <= 1; lo++) {
                 for (int hi = 0; hi <= 1; hi++) {

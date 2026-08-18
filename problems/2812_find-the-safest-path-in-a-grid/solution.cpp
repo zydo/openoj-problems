@@ -66,8 +66,7 @@ class Solution {
             }
             for (int k = 0; k < 4; k++) {
                 int nr = r + dr[k], nc = c + dc[k];
-                if (nr >= 0 && nr < n && nc >= 0 && nc < n && !seen[nr][nc] &&
-                    dist[nr][nc] >= threshold) {
+                if (nr >= 0 && nr < n && nc >= 0 && nc < n && !seen[nr][nc] && dist[nr][nc] >= threshold) {
                     seen[nr][nc] = true;
                     dq.push_back({nr, nc});
                 }

@@ -23,10 +23,7 @@ var subStrHash = function (s, power, modulo, k, hashValue) {
     }
     let answer = cur === hashValue ? s.slice(n - k) : "";
     for (let i = n - k - 1; i >= 0; i--) {
-        cur =
-            (((cur - ((val(i + k) * top) % modulo) + modulo) % modulo) * power +
-                val(i)) %
-            modulo;
+        cur = (((cur - ((val(i + k) * top) % modulo) + modulo) % modulo) * power + val(i)) % modulo;
         if (cur === hashValue) {
             answer = s.slice(i, i + k); // scanning right-to-left keeps the leftmost match
         }

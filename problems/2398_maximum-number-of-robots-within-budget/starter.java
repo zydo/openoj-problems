@@ -1,10 +1,6 @@
 class Solution {
 
-    public int maximumRobots(
-        int[] chargeTimes,
-        int[] runningCosts,
-        long budget
-    ) {
+    public int maximumRobots(int[] chargeTimes, int[] runningCosts, long budget) {
         throw new UnsupportedOperationException("TODO");
     }
 }

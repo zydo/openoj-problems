@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def findTheCity(
-        self, n: int, edges: List[List[int]], distanceThreshold: int
-    ) -> int:
+    def findTheCity(self, n: int, edges: List[List[int]], distanceThreshold: int) -> int:
         # With n <= 100, compute all-pairs distances at once: 0 diagonal,
         # symmetric direct weights, INF elsewhere.
         INF = float("inf")
@@ -31,9 +29,7 @@ class Solution:
         best_city = -1
         best_count = INF
         for i in range(n):
-            count = sum(
-                1 for j in range(n) if j != i and dist[i][j] <= distanceThreshold
-            )
+            count = sum(1 for j in range(n) if j != i and dist[i][j] <= distanceThreshold)
             if count < best_count or (count == best_count and i > best_city):
                 best_city, best_count = i, count
         return best_city

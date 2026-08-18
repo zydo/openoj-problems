@@ -1,12 +1,5 @@
-function reachableNodes(
-    edges: number[][],
-    maxMoves: number,
-    n: number,
-): number {
-    const adj: Array<Array<[number, number]>> = Array.from(
-        { length: n },
-        () => [],
-    );
+function reachableNodes(edges: number[][], maxMoves: number, n: number): number {
+    const adj: Array<Array<[number, number]>> = Array.from({ length: n }, () => []);
     // Subdividing [u, v, cnt] yields cnt + 1 unit edges, so Dijkstra on
     // the compact graph with weight cnt + 1 gives the true distances.
     for (const [u, v, cnt] of edges) {
@@ -38,10 +31,8 @@ function reachableNodes(
                 let smallest = i;
                 const l = 2 * i + 1;
                 const r = 2 * i + 2;
-                if (l < heap.length && heap[l][0] < heap[smallest][0])
-                    smallest = l;
-                if (r < heap.length && heap[r][0] < heap[smallest][0])
-                    smallest = r;
+                if (l < heap.length && heap[l][0] < heap[smallest][0]) smallest = l;
+                if (r < heap.length && heap[r][0] < heap[smallest][0]) smallest = r;
                 if (smallest === i) break;
                 [heap[smallest], heap[i]] = [heap[i], heap[smallest]];
                 i = smallest;

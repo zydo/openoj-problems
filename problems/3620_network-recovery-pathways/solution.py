@@ -4,9 +4,7 @@ from collections import deque
 
 
 class Solution:
-    def findMaxPathScore(
-        self, edges: List[List[int]], online: List[bool], k: int
-    ) -> int:
+    def findMaxPathScore(self, edges: List[List[int]], online: List[bool], k: int) -> int:
         n = len(online)
         adj = [[] for _ in range(n)]
         indeg = [0] * n

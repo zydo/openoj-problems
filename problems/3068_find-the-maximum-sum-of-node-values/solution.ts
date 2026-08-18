@@ -5,8 +5,7 @@ function maximumValueSum(nums: number[], k: number, edges: number[][]): number {
     const deltas = nums.map((x) => (x ^ k) - x);
     // Greedy: take every positive delta while the count stays even.
     const positives = deltas.filter((d) => d > 0);
-    let base =
-        nums.reduce((a, b) => a + b, 0) + positives.reduce((a, b) => a + b, 0);
+    let base = nums.reduce((a, b) => a + b, 0) + positives.reduce((a, b) => a + b, 0);
     if (positives.length % 2 === 0) {
         return base;
     }

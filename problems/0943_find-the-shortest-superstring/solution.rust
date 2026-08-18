@@ -61,8 +61,7 @@ impl Solution {
                         None => true,
                         Some(_) => {
                             cand_len < dp_len[new_mask][nxt]
-                                || (cand_len == dp_len[new_mask][nxt]
-                                    && seq_less(&cand_seq, &dp_seq[new_mask][nxt]))
+                                || (cand_len == dp_len[new_mask][nxt] && seq_less(&cand_seq, &dp_seq[new_mask][nxt]))
                         }
                     };
                     if replace {
@@ -84,8 +83,7 @@ impl Solution {
                 None => true,
                 Some(b) => {
                     dp_len[full][j] < dp_len[full][b]
-                        || (dp_len[full][j] == dp_len[full][b]
-                            && seq_less(&dp_seq[full][j], &dp_seq[full][b]))
+                        || (dp_len[full][j] == dp_len[full][b] && seq_less(&dp_seq[full][j], &dp_seq[full][b]))
                 }
             };
             if better {

@@ -20,9 +20,7 @@ class MajorityChecker {
         this.surplusOf = new int[4 * n];
         build(1, 0, n - 1, arr);
         for (int i = 0; i < n; i++) {
-            positions
-                .computeIfAbsent(arr[i], value -> new ArrayList<>())
-                .add(i);
+            positions.computeIfAbsent(arr[i], value -> new ArrayList<>()).add(i);
         }
     }
 
@@ -45,12 +43,7 @@ class MajorityChecker {
         surplusOf[node] = merged[1];
     }
 
-    private static int[] merge(
-        int leftValue,
-        int leftVotes,
-        int rightValue,
-        int rightVotes
-    ) {
+    private static int[] merge(int leftValue, int leftVotes, int rightValue, int rightVotes) {
         if (leftValue == rightValue) {
             return new int[] { leftValue, leftVotes + rightVotes };
         }
@@ -69,8 +62,7 @@ class MajorityChecker {
         if (occurrences == null) {
             return -1;
         }
-        int count =
-            lowerBound(occurrences, right + 1) - lowerBound(occurrences, left);
+        int count = lowerBound(occurrences, right + 1) - lowerBound(occurrences, left);
         return count >= threshold ? candidate : -1;
     }
 

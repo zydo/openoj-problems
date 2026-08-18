@@ -17,12 +17,7 @@ var largestSubarraySum = function (nums) {
         const [rt, rp, rs, rb] = solve(mid, hi);
         // The best subarray either stays in one half or is the seam of the
         // left half's best suffix and the right half's best prefix.
-        return [
-            lt + rt,
-            Math.max(lp, lt + rp),
-            Math.max(rs, rt + ls),
-            Math.max(lb, rb, ls + rp),
-        ];
+        return [lt + rt, Math.max(lp, lt + rp), Math.max(rs, rt + ls), Math.max(lb, rb, ls + rp)];
     };
     return solve(0, nums.length)[3];
 };

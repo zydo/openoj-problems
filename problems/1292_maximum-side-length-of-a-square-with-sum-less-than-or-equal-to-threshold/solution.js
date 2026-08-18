@@ -7,9 +7,7 @@ var maxSideLength = function (mat, threshold) {
     const m = mat.length;
     const n = mat[0].length;
     // prefix[i][j] = sum of the rectangle from (0,0) to (i-1, j-1)
-    const prefix = Array.from({ length: m + 1 }, () =>
-        new Array(n + 1).fill(0),
-    );
+    const prefix = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
     for (let i = 0; i < m; i++) {
         const row = mat[i];
         const prow = prefix[i];
@@ -32,11 +30,7 @@ var maxSideLength = function (mat, threshold) {
             // try side ans+1 while it fits the matrix and the threshold;
             // ans never shrinks, so failures cost a single O(1) check and
             // each side length is paid at most once across the scan
-            while (
-                i + ans < m &&
-                j + ans < n &&
-                squareSum(i, j, ans + 1) <= threshold
-            ) {
+            while (i + ans < m && j + ans < n && squareSum(i, j, ans + 1) <= threshold) {
                 ans += 1;
             }
         }

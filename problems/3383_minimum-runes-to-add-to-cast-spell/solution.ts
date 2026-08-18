@@ -1,9 +1,4 @@
-function minRunesToAdd(
-    n: number,
-    crystals: number[],
-    flowFrom: number[],
-    flowTo: number[],
-): number {
+function minRunesToAdd(n: number, crystals: number[], flowFrom: number[], flowTo: number[]): number {
     const graph: number[][] = Array.from({ length: n }, () => []);
     const rgraph: number[][] = Array.from({ length: n }, () => []);
     for (let e = 0; e < flowFrom.length; e++) {

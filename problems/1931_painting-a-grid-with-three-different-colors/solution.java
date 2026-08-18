@@ -24,8 +24,7 @@ class Solution {
         int len = states.size();
         // Two columns may be adjacent exactly when they differ in every row;
         // precompute that compatibility table once.
-        java.util.List<java.util.List<Integer>> compat =
-            new java.util.ArrayList<>();
+        java.util.List<java.util.List<Integer>> compat = new java.util.ArrayList<>();
         for (int i = 0; i < len; i++) {
             java.util.List<Integer> list = new java.util.ArrayList<>();
             for (int j = 0; j < len; j++) {

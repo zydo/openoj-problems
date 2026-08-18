@@ -43,10 +43,7 @@ function smallestChair(times: number[][], targetFriend: number): number {
     for (const i of order) {
         const arrival = times[i][0];
         const leaving = times[i][1];
-        while (
-            occupied.length > 0 &&
-            Math.floor(occupied[0] / 1048576) <= arrival
-        ) {
+        while (occupied.length > 0 && Math.floor(occupied[0] / 1048576) <= arrival) {
             const enc = hpop(occupied);
             hpush(free, enc % 1048576);
         }

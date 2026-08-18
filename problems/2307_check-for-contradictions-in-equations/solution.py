@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def checkContradictions(
-        self, equations: List[List[str]], values: List[float]
-    ) -> bool:
+    def checkContradictions(self, equations: List[List[str]], values: List[float]) -> bool:
         EPS = 1e-5
         parent = {}
         weight = {}  # weight[x] = x / parent[x]

@@ -4,12 +4,9 @@ function minimumMoves(arr: number[]): number {
 
     // dp[i][j] = min moves to erase arr[i..j]; removals concatenate the
     // surviving parts, so the cost depends only on the subarray's contents.
-    const dp: number[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: n }, () => new Array(n).fill(0));
     for (let i = 0; i < n; i++) dp[i][i] = 1;
-    for (let i = 0; i + 1 < n; i++)
-        dp[i][i + 1] = arr[i] === arr[i + 1] ? 1 : 2;
+    for (let i = 0; i + 1 < n; i++) dp[i][i + 1] = arr[i] === arr[i + 1] ? 1 : 2;
 
     // Fill by increasing length so every referenced subinterval is final.
     for (let length = 3; length <= n; length++) {
@@ -27,8 +24,7 @@ function minimumMoves(arr: number[]): number {
             // clear the interior first, then remove the pair together.
             // Peeling a matched pair never breaks palindromes, so it
             // costs nothing extra.
-            if (arr[i] === arr[j] && dp[i + 1][j - 1] < best)
-                best = dp[i + 1][j - 1];
+            if (arr[i] === arr[j] && dp[i + 1][j - 1] < best) best = dp[i + 1][j - 1];
             dp[i][j] = best;
         }
     }

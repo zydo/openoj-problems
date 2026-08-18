@@ -7,12 +7,7 @@ function operatorsBetweenDigits(num: string, target: number): string[] {
     // well within exact double range.
     // current is the expression's value so far; prev is the trailing
     // multiplicand chain that a later '*' binds to, not all of current.
-    const dfs = (
-        index: number,
-        prev: number,
-        current: number,
-        expression: string,
-    ): void => {
+    const dfs = (index: number, prev: number, current: number, expression: string): void => {
         if (index === n) {
             // The evaluation travels with the search: one comparison.
             if (current === target) {
@@ -39,12 +34,7 @@ function operatorsBetweenDigits(num: string, target: number): string[] {
                 dfs(end + 1, -nxt, current - nxt, expression + "-" + nxt);
                 // '*' rewrites the tail in place: drop the chain's old
                 // contribution, add prev * nxt.
-                dfs(
-                    end + 1,
-                    prev * nxt,
-                    current - prev + prev * nxt,
-                    expression + "*" + nxt,
-                );
+                dfs(end + 1, prev * nxt, current - prev + prev * nxt, expression + "*" + nxt);
             }
         }
     };

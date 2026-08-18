@@ -1,9 +1,7 @@
 function seePeople(heights: number[][]): number[][] {
     const m = heights.length;
     const n = heights[0].length;
-    const res: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(0),
-    );
+    const res: number[][] = Array.from({ length: m }, () => new Array(n).fill(0));
 
     // Count people visible to the right in each row.
     for (let i = 0; i < m; i++) {

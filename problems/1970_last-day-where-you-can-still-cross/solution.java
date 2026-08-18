@@ -19,12 +19,7 @@ class Solution {
         return lo;
     }
 
-    private boolean canCross(
-        int row,
-        int col,
-        int[][] cells,
-        int floodedCount
-    ) {
+    private boolean canCross(int row, int col, int[][] cells, int floodedCount) {
         // Rebuild the grid for this query day: mark the flooded cells as
         // water, then test a top-to-bottom walk by BFS.
         int[][] grid = new int[row][col];
@@ -50,14 +45,7 @@ class Solution {
             for (int d = 0; d < 4; d++) {
                 int nr = r + dr[d];
                 int nc = c + dc[d];
-                if (
-                    nr >= 0 &&
-                    nr < row &&
-                    nc >= 0 &&
-                    nc < col &&
-                    !seen[nr][nc] &&
-                    grid[nr][nc] == 0
-                ) {
+                if (nr >= 0 && nr < row && nc >= 0 && nc < col && !seen[nr][nc] && grid[nr][nc] == 0) {
                     seen[nr][nc] = true;
                     queue.offer(new int[] { nr, nc });
                 }

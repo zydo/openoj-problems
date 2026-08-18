@@ -12,10 +12,7 @@ class Solution {
         for (int i = n - 1; i >= 0; i--) {
             for (int j = i; j < n; j++) {
                 // Palindrome iff ends match and the interior is empty or pal.
-                if (
-                    s.charAt(i) == s.charAt(j) &&
-                    (j - i < 2 || isPal[i + 1][j - 1])
-                ) {
+                if (s.charAt(i) == s.charAt(j) && (j - i < 2 || isPal[i + 1][j - 1])) {
                     isPal[i][j] = true;
                 }
             }
@@ -33,13 +30,7 @@ class Solution {
         return output;
     }
 
-    private void backtrack(
-        String s,
-        int start,
-        boolean[][] isPal,
-        List<String> current,
-        List<List<String>> result
-    ) {
+    private void backtrack(String s, int start, boolean[][] isPal, List<String> current, List<List<String>> result) {
         if (start == s.length()) {
             // The pieces tile the whole string: snapshot the partition.
             result.add(new ArrayList<>(current));

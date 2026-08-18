@@ -1,8 +1,6 @@
 class Solution {
   public:
-    long long goodIntegers(long long l, long long r, int k) {
-        return countGood(r, k) - countGood(l - 1, k);
-    }
+    long long goodIntegers(long long l, long long r, int k) { return countGood(r, k) - countGood(l - 1, k); }
 
   private:
     long long countGood(long long x, int k) {
@@ -15,8 +13,7 @@ class Solution {
             digits[i] = s[i] - '0';
         // memo[pos][tight][prev+1][started]; prev index 0 = unused
         vector<vector<vector<vector<long long>>>> memo(
-            n + 1, vector<vector<vector<long long>>>(
-                       2, vector<vector<long long>>(11, vector<long long>(2, -1))));
+            n + 1, vector<vector<vector<long long>>>(2, vector<vector<long long>>(11, vector<long long>(2, -1))));
         return dp(0, 1, 0, 0, digits, k, memo);
     }
 

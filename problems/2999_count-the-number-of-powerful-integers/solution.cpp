@@ -43,8 +43,7 @@ class Solution {
         return dp(0, 1, p, capDigits, lim, memo);
     }
 
-    long long dp(int pos, int tight, int p, const vector<int> &capDigits, int lim,
-                 vector<vector<long long>> &memo) {
+    long long dp(int pos, int tight, int p, const vector<int> &capDigits, int lim, vector<vector<long long>> &memo) {
         if (pos == p)
             return 1;
         if (memo[pos][tight] >= 0)

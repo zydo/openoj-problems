@@ -38,13 +38,7 @@ class Solution {
             for (int[] d : dirs) {
                 int nr = r + d[0];
                 int nc = c + d[1];
-                if (
-                    nr >= 0 &&
-                    nr < rows &&
-                    nc >= 0 &&
-                    nc < cols &&
-                    g[nr][nc] == 1
-                ) {
+                if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && g[nr][nc] == 1) {
                     // Flip to rotten on enqueue: each cell queues at most
                     // once and `fresh` stays in sync with the grid.
                     g[nr][nc] = 2;

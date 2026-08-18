@@ -33,8 +33,7 @@ class Solution {
     }
 
   private:
-    double query(unordered_map<string, vector<pair<string, double>>> &graph, const string &start,
-                 const string &end) {
+    double query(unordered_map<string, vector<pair<string, double>>> &graph, const string &start, const string &end) {
         // An unknown variable is unanswerable (this also covers x / x for
         // an undefined x); a known variable over itself is 1.0.
         if (graph.find(start) == graph.end() || graph.find(end) == graph.end())

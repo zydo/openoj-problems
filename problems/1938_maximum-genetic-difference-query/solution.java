@@ -54,13 +54,7 @@ class Solution {
         return ans;
     }
 
-    private static void insert(
-        int x,
-        int delta,
-        int[][] nxt,
-        int[] count,
-        int[] nodeCount
-    ) {
+    private static void insert(int x, int delta, int[][] nxt, int[] count, int[] nodeCount) {
         int node = 0;
         count[node] += delta;
         for (int b = BITS - 1; b >= 0; b--) {

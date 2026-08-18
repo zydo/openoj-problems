@@ -19,9 +19,7 @@ class Solution {
         }
         int n = (int)costs.size();
         // min-heap of (sum, idx); ties on sum broken by smaller idx
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>,
-                       greater<pair<long long, int>>>
-            heap;
+        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> heap;
         heap.push({costs[0], 0});
         long long count = 1; // empty subset (sum 0) is the 1st smallest
         while (count < k) {

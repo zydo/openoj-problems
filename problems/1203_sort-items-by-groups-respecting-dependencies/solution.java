@@ -85,11 +85,7 @@ class Solution {
         return cnt == total ? order : null;
     }
 
-    private int[] kahnItems(
-        List<Integer> nodes,
-        List<List<Integer>> adj,
-        int[] indeg
-    ) {
+    private int[] kahnItems(List<Integer> nodes, List<List<Integer>> adj, int[] indeg) {
         Deque<Integer> stack = new ArrayDeque<>();
         for (int i = nodes.size() - 1; i >= 0; i--) {
             if (indeg[nodes.get(i)] == 0) stack.push(nodes.get(i));

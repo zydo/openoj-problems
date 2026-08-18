@@ -15,8 +15,7 @@ class Solution {
                     // A square growing out of this corner must fit inside all
                     // three predecessors: up, left, and diagonal — so the
                     // minimum is the binding constraint.
-                    curr[j + 1] =
-                        Math.min(prev[j], Math.min(prev[j + 1], curr[j])) + 1;
+                    curr[j + 1] = Math.min(prev[j], Math.min(prev[j + 1], curr[j])) + 1;
                     if (curr[j + 1] > best) {
                         best = curr[j + 1];
                     }

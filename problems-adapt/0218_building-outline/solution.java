@@ -28,9 +28,7 @@ class Solution {
         // max-heap of (height, right) with lazy removal; sentinel ground level
         // (right kept as long so a building ending at Integer.MAX_VALUE can
         // never knock the sentinel out of the heap)
-        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) ->
-            Long.compare(b[0], a[0])
-        );
+        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) -> Long.compare(b[0], a[0]));
         heap.offer(new long[] { 0, (long) Integer.MAX_VALUE + 1 });
 
         List<int[]> result = new ArrayList<>();

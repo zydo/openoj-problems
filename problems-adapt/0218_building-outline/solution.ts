@@ -9,9 +9,7 @@ function buildingOutline(buildings: number[][]): number[][] {
     // before ends (kind 1) at equal x so adjacent buildings hand off without
     // a dip to ground; taller starts first (-height); shorter ends first so
     // a tall building survives until its own right edge.
-    events.sort(
-        (a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2] || a[3] - b[3],
-    );
+    events.sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2] || a[3] - b[3]);
 
     // max-heap of (height, right) with lazy removal
     const heap: number[][] = [[0, Infinity]];

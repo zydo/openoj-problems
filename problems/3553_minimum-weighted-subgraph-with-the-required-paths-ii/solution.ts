@@ -64,12 +64,9 @@ function minimumWeight(edges: number[][], queries: number[][]): number[] {
         }
         return up[0][x];
     };
-    const distance = (x: number, y: number): number =>
-        dist[x] + dist[y] - 2 * dist[lca(x, y)];
+    const distance = (x: number, y: number): number => dist[x] + dist[y] - 2 * dist[lca(x, y)];
 
     // The minimal subtree joining a, b, c is the union of the three paths,
     // each edge lying on exactly two of them.
-    return queries.map(
-        ([a, b, c]) => (distance(a, b) + distance(b, c) + distance(c, a)) / 2,
-    );
+    return queries.map(([a, b, c]) => (distance(a, b) + distance(b, c) + distance(c, a)) / 2);
 }

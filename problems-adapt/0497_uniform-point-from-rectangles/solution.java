@@ -34,9 +34,6 @@ class Solution {
         int[] rect = rects[low - 1];
         int width = rect[2] - rect[0] + 1;
         long offset = cell - prefix[low - 1];
-        return new int[] {
-            rect[0] + (int) (offset % width),
-            rect[1] + (int) (offset / width),
-        };
+        return new int[] { rect[0] + (int) (offset % width), rect[1] + (int) (offset / width) };
     }
 }

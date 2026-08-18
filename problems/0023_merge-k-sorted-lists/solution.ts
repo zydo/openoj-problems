@@ -1,14 +1,9 @@
 function mergeKLists(lists: (ListNode | null)[]): ListNode | null {
     // Drop empty entries up front so [] and [[]] both collapse to an empty
     // candidate list and return null immediately.
-    let cur: (ListNode | null)[] = lists.filter(
-        (x): x is ListNode => x !== null && x !== undefined,
-    );
+    let cur: (ListNode | null)[] = lists.filter((x): x is ListNode => x !== null && x !== undefined);
     if (cur.length === 0) return null;
-    const merge2 = (
-        a: ListNode | null,
-        b: ListNode | null,
-    ): ListNode | null => {
+    const merge2 = (a: ListNode | null, b: ListNode | null): ListNode | null => {
         // Dummy head: every attachment happens the same way and the real
         // head falls out as dummy.next.
         const dummy = new ListNode(0);

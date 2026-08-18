@@ -6,8 +6,7 @@ class Solution {
         // when its successor is reached
         unordered_set<string> unique(words.begin(), words.end());
         vector<string> sorted(unique.begin(), unique.end());
-        sort(sorted.begin(), sorted.end(),
-             [](const string &a, const string &b) { return a.size() < b.size(); });
+        sort(sorted.begin(), sorted.end(), [](const string &a, const string &b) { return a.size() < b.size(); });
         unordered_map<string, int> dp;
         int best = 0;
         for (const string &word : sorted) {

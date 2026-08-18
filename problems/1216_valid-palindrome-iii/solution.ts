@@ -3,9 +3,7 @@ function isValidPalindrome(s: string, k: number): boolean {
     if (n === 0) return true;
     // Reformulation: deleting <= k chars to leave a palindrome is the same
     // as keeping a palindromic subsequence of length >= n - k.
-    const dp: number[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: n }, () => new Array(n).fill(0));
     // dp[i][j] = LPS length of s[i..j]; filling i right-to-left means every
     // strictly smaller interval used below is already computed.
     for (let i = n - 1; i >= 0; i--) {

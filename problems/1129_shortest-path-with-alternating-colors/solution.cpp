@@ -1,7 +1,6 @@
 class Solution {
   public:
-    vector<int> shortestAlternatingPaths(int n, vector<vector<int>> &redEdges,
-                                         vector<vector<int>> &blueEdges) {
+    vector<int> shortestAlternatingPaths(int n, vector<vector<int>> &redEdges, vector<vector<int>> &blueEdges) {
         // adjacency[c][u] lists endpoints of color-c edges from u.
         vector<vector<vector<int>>> adjacency(2, vector<vector<int>>(n));
         for (auto &edge : redEdges) {

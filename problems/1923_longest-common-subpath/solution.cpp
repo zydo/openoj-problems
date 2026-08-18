@@ -25,8 +25,7 @@ class Solution {
     }
 
   private:
-    static bool exists(int length, vector<vector<int>> &paths, long long MOD1, long long MOD2,
-                       long long BASE) {
+    static bool exists(int length, vector<vector<int>> &paths, long long MOD1, long long MOD2, long long BASE) {
         set<pair<long long, long long>> common;
         bool haveCommon = false;
         for (auto &path : paths) {

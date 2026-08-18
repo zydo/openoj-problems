@@ -53,14 +53,7 @@ var maximumSafenessFactor = function (grid) {
             for (const [dr, dc] of dirs) {
                 const nr = r + dr,
                     nc = c + dc;
-                if (
-                    nr >= 0 &&
-                    nr < n &&
-                    nc >= 0 &&
-                    nc < n &&
-                    !seen[nr][nc] &&
-                    dist[nr][nc] >= threshold
-                ) {
+                if (nr >= 0 && nr < n && nc >= 0 && nc < n && !seen[nr][nc] && dist[nr][nc] >= threshold) {
                     seen[nr][nc] = true;
                     dq.push([nr, nc]);
                 }

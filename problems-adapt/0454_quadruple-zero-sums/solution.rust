@@ -1,12 +1,7 @@
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn count_quadruple_zero_sums(
-        first: Vec<i32>,
-        second: Vec<i32>,
-        third: Vec<i32>,
-        fourth: Vec<i32>,
-    ) -> i32 {
+    pub fn count_quadruple_zero_sums(first: Vec<i32>, second: Vec<i32>, third: Vec<i32>, fourth: Vec<i32>) -> i32 {
         // Meet in the middle: a+b+c+d = 0 iff a+b = -(c+d), so index the
         // first two arrays' pair sums with multiplicities (not a set).
         let mut sums: HashMap<i32, i32> = HashMap::new();

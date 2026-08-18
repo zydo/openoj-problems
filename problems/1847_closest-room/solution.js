@@ -38,10 +38,7 @@ var closestRoom = function (rooms, queries) {
         var minSize = queries[j][1];
         // Every room with size >= minSize qualifies; once inserted it stays
         // valid for all later queries (their thresholds are only smaller).
-        while (
-            ri < roomsBySize.length &&
-            rooms[roomsBySize[ri]][1] >= minSize
-        ) {
+        while (ri < roomsBySize.length && rooms[roomsBySize[ri]][1] >= minSize) {
             var id = rooms[roomsBySize[ri]][0];
             var pos = lowerBound(ids, id);
             ids.splice(pos, 0, id);

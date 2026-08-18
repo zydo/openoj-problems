@@ -8,9 +8,7 @@ function maxPoints(grid: number[][], queries: number[]): number[] {
     const order = Array.from({ length: qlen }, (_, i) => i);
     order.sort((a, b) => queries[a] - queries[b]);
     const answer = new Array<number>(qlen).fill(0);
-    const visited: boolean[][] = Array.from({ length: m }, () =>
-        new Array<boolean>(n).fill(false),
-    );
+    const visited: boolean[][] = Array.from({ length: m }, () => new Array<boolean>(n).fill(false));
     visited[0][0] = true;
 
     // Min-heap of [val, r, c]. The start cell is marked visited up front so
@@ -71,13 +69,7 @@ function maxPoints(grid: number[][], queries: number[]): number[] {
             for (const t of nb) {
                 const nr = t[0],
                     nc = t[1];
-                if (
-                    0 <= nr &&
-                    nr < m &&
-                    0 <= nc &&
-                    nc < n &&
-                    !visited[nr][nc]
-                ) {
+                if (0 <= nr && nr < m && 0 <= nc && nc < n && !visited[nr][nc]) {
                     // Mark at push time: no duplicate entries, so each cell
                     // enters and leaves the heap exactly once overall.
                     visited[nr][nc] = true;

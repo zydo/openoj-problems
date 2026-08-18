@@ -13,9 +13,7 @@ function maximumMinutes(grid: number[][]): number {
 
     // fire spread is independent of where you walk: one multi-source BFS
     // gives fire[i][j] = earliest minute fire occupies each cell
-    const fire: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(INF),
-    );
+    const fire: number[][] = Array.from({ length: m }, () => new Array(n).fill(INF));
     const queue: number[][] = [];
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
@@ -30,14 +28,7 @@ function maximumMinutes(grid: number[][]): number {
         for (const [di, dj] of dirs) {
             const ni = i + di;
             const nj = j + dj;
-            if (
-                ni >= 0 &&
-                ni < m &&
-                nj >= 0 &&
-                nj < n &&
-                grid[ni][nj] !== 2 &&
-                fire[ni][nj] === INF
-            ) {
+            if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] !== 2 && fire[ni][nj] === INF) {
                 fire[ni][nj] = fire[i][j] + 1;
                 queue.push([ni, nj]);
             }
@@ -49,9 +40,7 @@ function maximumMinutes(grid: number[][]): number {
         if (wait >= fire[0][0]) {
             return false;
         }
-        const seen: boolean[][] = Array.from({ length: m }, () =>
-            new Array(n).fill(false),
-        );
+        const seen: boolean[][] = Array.from({ length: m }, () => new Array(n).fill(false));
         seen[0][0] = true;
         const dq: number[][] = [[0, 0, wait]];
         for (let head = 0; head < dq.length; head++) {
@@ -62,14 +51,7 @@ function maximumMinutes(grid: number[][]): number {
             for (const [di, dj] of dirs) {
                 const ni = i + di;
                 const nj = j + dj;
-                if (
-                    ni >= 0 &&
-                    ni < m &&
-                    nj >= 0 &&
-                    nj < n &&
-                    grid[ni][nj] !== 2 &&
-                    !seen[ni][nj]
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] !== 2 && !seen[ni][nj]) {
                     const nt = t + 1;
                     // the safehouse may tie the fire: reaching it the very
                     // minute fire does still counts as escaping

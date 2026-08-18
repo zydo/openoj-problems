@@ -4,9 +4,7 @@ class RunningMedian {
 
     // Two heaps around the median: a max-heap holding the smaller half and a
     // min-heap holding the larger half. The sizes differ by at most one.
-    private final PriorityQueue<Integer> low = new PriorityQueue<>(
-        (a, b) -> b - a
-    );
+    private final PriorityQueue<Integer> low = new PriorityQueue<>((a, b) -> b - a);
     private final PriorityQueue<Integer> high = new PriorityQueue<>();
 
     public RunningMedian() {}

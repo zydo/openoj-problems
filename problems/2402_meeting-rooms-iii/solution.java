@@ -9,11 +9,7 @@ class Solution {
         for (int i = 0; i < meetings.length; i++) {
             ordered.add(new int[] { meetings[i][0], meetings[i][1], i });
         }
-        Collections.sort(ordered, (a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[2], b[2])
-        );
+        Collections.sort(ordered, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[2], b[2]));
         // endTime[i] = when room i frees up (-1: never used, always free).
         long[] endTime = new long[n];
         java.util.Arrays.fill(endTime, -1L);

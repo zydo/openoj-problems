@@ -40,13 +40,7 @@ class Solution {
         return lo;
     }
 
-    private boolean feasible(
-        long[] power,
-        long[] extra,
-        int r,
-        long target,
-        long k
-    ) {
+    private boolean feasible(long[] power, long[] extra, int r, long target, long k) {
         int n = power.length;
         Arrays.fill(extra, 0L);
         long cur = 0;

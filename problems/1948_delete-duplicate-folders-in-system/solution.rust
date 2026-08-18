@@ -55,9 +55,7 @@ impl Solution {
 
         let mut marked = vec![false; total];
         for &node in &nodes {
-            if !children[node].is_empty()
-                && sig_counts.get(&node_sig[node]).copied().unwrap_or(0) >= 2
-            {
+            if !children[node].is_empty() && sig_counts.get(&node_sig[node]).copied().unwrap_or(0) >= 2 {
                 let mut mark_stack = vec![node];
                 while let Some(cur) = mark_stack.pop() {
                     marked[cur] = true;

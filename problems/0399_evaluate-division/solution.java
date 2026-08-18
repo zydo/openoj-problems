@@ -8,11 +8,7 @@ import java.util.Map;
 
 class Solution {
 
-    public double[] calcEquation(
-        String[][] equations,
-        double[] values,
-        String[][] queries
-    ) {
+    public double[] calcEquation(String[][] equations, double[] values, String[][] queries) {
         // node -> LinkedHashMap(neighbor -> weight): preserves insertion order and
         // updating an existing key keeps its original position (like Python dict).
         Map<String, Map<String, Double>> graph = new HashMap<>();
@@ -21,12 +17,8 @@ class Solution {
         for (int i = 0; i < equations.length; i++) {
             String a = equations[i][0],
                 b = equations[i][1];
-            graph
-                .computeIfAbsent(a, x -> new LinkedHashMap<>())
-                .put(b, values[i]);
-            graph
-                .computeIfAbsent(b, x -> new LinkedHashMap<>())
-                .put(a, 1.0 / values[i]);
+            graph.computeIfAbsent(a, x -> new LinkedHashMap<>()).put(b, values[i]);
+            graph.computeIfAbsent(b, x -> new LinkedHashMap<>()).put(a, 1.0 / values[i]);
         }
 
         double[] result = new double[queries.length];
@@ -36,11 +28,7 @@ class Solution {
         return result;
     }
 
-    private double query(
-        Map<String, Map<String, Double>> graph,
-        String start,
-        String end
-    ) {
+    private double query(Map<String, Map<String, Double>> graph, String start, String end) {
         // An unknown variable is unanswerable (this also covers x / x for
         // an undefined x); a known variable over itself is 1.0.
         if (!graph.containsKey(start) || !graph.containsKey(end)) return -1.0;

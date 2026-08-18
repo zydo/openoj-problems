@@ -1,8 +1,4 @@
-function coursePrerequisiteQueries(
-    courseCount: number,
-    prerequisites: number[][],
-    queries: number[][],
-): boolean[] {
+function coursePrerequisiteQueries(courseCount: number, prerequisites: number[][], queries: number[][]): boolean[] {
     const adjacency: number[][] = Array.from({ length: courseCount }, () => []);
     const indegree: number[] = new Array(courseCount).fill(0);
     for (const [a, b] of prerequisites) {
@@ -12,9 +8,7 @@ function coursePrerequisiteQueries(
     const bits = 30;
     const words = Math.ceil(courseCount / bits);
     // reach[v] is a bitset (30-bit chunks) of the courses that reach course v
-    const reach: number[][] = Array.from({ length: courseCount }, () =>
-        new Array<number>(words).fill(0),
-    );
+    const reach: number[][] = Array.from({ length: courseCount }, () => new Array<number>(words).fill(0));
     const queue: number[] = [];
     for (let i = 0; i < courseCount; i++) {
         if (indegree[i] === 0) {
@@ -33,7 +27,5 @@ function coursePrerequisiteQueries(
             }
         }
     }
-    return queries.map(
-        ([u, v]) => (reach[v][(u / bits) | 0] & (1 << (u % bits))) !== 0,
-    );
+    return queries.map(([u, v]) => (reach[v][(u / bits) | 0] & (1 << (u % bits))) !== 0);
 }

@@ -34,14 +34,7 @@ class Solution {
             for (int d = 0; d < 4; d++) {
                 int ni = i + DI[d];
                 int nj = j + DJ[d];
-                if (
-                    ni >= 0 &&
-                    ni < m &&
-                    nj >= 0 &&
-                    nj < n &&
-                    grid[ni][nj] != 2 &&
-                    fire[ni][nj] == INF
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] != 2 && fire[ni][nj] == INF) {
                     fire[ni][nj] = fire[i][j] + 1;
                     queue.add(new int[] { ni, nj });
                 }
@@ -94,14 +87,7 @@ class Solution {
             for (int d = 0; d < 4; d++) {
                 int ni = i + DI[d];
                 int nj = j + DJ[d];
-                if (
-                    ni >= 0 &&
-                    ni < m &&
-                    nj >= 0 &&
-                    nj < n &&
-                    grid[ni][nj] != 2 &&
-                    !seen[ni][nj]
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] != 2 && !seen[ni][nj]) {
                     int nt = t + 1;
                     // the safehouse may tie the fire: reaching it the very
                     // minute fire does still counts as escaping

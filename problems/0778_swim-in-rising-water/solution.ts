@@ -5,9 +5,7 @@ function swimInWater(grid: number[][]): number {
     // monotone, so Dijkstra's greedy argument holds with max
     // relaxation. dist holds the earliest time each cell is
     // reachable — the start waits for grid[0][0] itself.
-    const dist: number[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(INF),
-    );
+    const dist: number[][] = Array.from({ length: n }, () => new Array(n).fill(INF));
     dist[0][0] = grid[0][0];
     // Array kept sorted descending so pop() yields the min-time entry.
     const heap: [number, number, number][] = [[grid[0][0], 0, 0]];

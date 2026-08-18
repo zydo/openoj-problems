@@ -1,8 +1,7 @@
 function countOfPeaks(nums: number[], queries: number[][]): number[] {
     const n = nums.length;
 
-    const isPeak = (i: number): boolean =>
-        i > 0 && i < n - 1 && nums[i] > nums[i - 1] && nums[i] > nums[i + 1];
+    const isPeak = (i: number): boolean => i > 0 && i < n - 1 && nums[i] > nums[i - 1] && nums[i] > nums[i + 1];
 
     // Fenwick tree over 1-indexed positions; API is 0-indexed.
     const bit: number[] = new Array(n + 1).fill(0);
@@ -22,8 +21,7 @@ function countOfPeaks(nums: number[], queries: number[][]): number[] {
         }
         return total;
     };
-    const rangeSum = (l: number, r: number): number =>
-        l > r ? 0 : prefix(r) - prefix(l - 1);
+    const rangeSum = (l: number, r: number): number => (l > r ? 0 : prefix(r) - prefix(l - 1));
 
     for (let i = 0; i < n; i++) {
         if (isPeak(i)) add(i, 1);
@@ -38,9 +36,7 @@ function countOfPeaks(nums: number[], queries: number[][]): number[] {
         } else {
             const idx = q[1],
                 val = q[2];
-            const affected = [idx - 1, idx, idx + 1].filter(
-                (j) => j >= 0 && j < n,
-            );
+            const affected = [idx - 1, idx, idx + 1].filter((j) => j >= 0 && j < n);
             for (const j of affected) {
                 if (isPeak(j)) add(j, -1);
             }

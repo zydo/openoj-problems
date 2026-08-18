@@ -32,8 +32,7 @@ class Solution {
     }
 
   private:
-    bool check(vector<int> &nums, vector<int> &changeIndices, vector<int> &first, long long total,
-               int t) {
+    bool check(vector<int> &nums, vector<int> &changeIndices, vector<int> &first, long long total, int t) {
         priority_queue<long long, vector<long long>, greater<long long>> minHeap;
         long long cnt = 0;
         long long sum = 0;

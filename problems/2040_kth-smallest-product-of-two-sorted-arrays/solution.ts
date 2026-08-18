@@ -1,8 +1,4 @@
-function kthSmallestProduct(
-    nums1: number[],
-    nums2: number[],
-    k: number,
-): number {
+function kthSmallestProduct(nums1: number[], nums2: number[], k: number): number {
     // exact floored division for |a| <= ~1e10, |b| <= 1e5 (well within 2^53)
     const floorDiv = (a: number, b: number): number => {
         const q = Math.trunc(a / b);

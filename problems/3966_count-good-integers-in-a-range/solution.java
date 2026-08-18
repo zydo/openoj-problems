@@ -12,21 +12,11 @@ class Solution {
         for (int i = 0; i < n; i++) digits[i] = s.charAt(i) - '0';
         // memo[pos][tight][prev+1][started]; prev index 0 = unused
         long[][][][] memo = new long[n + 1][2][11][2];
-        for (long[][][] a : memo)
-            for (long[][] b : a)
-                for (long[] c : b) java.util.Arrays.fill(c, -1);
+        for (long[][][] a : memo) for (long[][] b : a) for (long[] c : b) java.util.Arrays.fill(c, -1);
         return dp(0, 1, 0, 0, digits, k, memo);
     }
 
-    private long dp(
-        int pos,
-        int tight,
-        int prev,
-        int started,
-        int[] digits,
-        int k,
-        long[][][][] memo
-    ) {
+    private long dp(int pos, int tight, int prev, int started, int[] digits, int k, long[][][][] memo) {
         if (pos == digits.length) return 1;
         long slot = memo[pos][tight][prev + 1][started];
         if (slot != -1) return slot;

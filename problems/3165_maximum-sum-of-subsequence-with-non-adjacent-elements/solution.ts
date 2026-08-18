@@ -39,13 +39,7 @@ function maximumSumSubsequence(nums: number[], queries: number[][]): number {
         tree[node] = merge(tree[node * 2], tree[node * 2 + 1]);
     }
 
-    function update(
-        node: number,
-        lo: number,
-        hi: number,
-        pos: number,
-        val: number,
-    ): void {
+    function update(node: number, lo: number, hi: number, pos: number, val: number): void {
         if (hi - lo === 1) {
             tree[node] = leaf(val);
             return;

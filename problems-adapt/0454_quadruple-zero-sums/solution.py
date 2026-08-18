@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def countQuadrupleZeroSums(
-        self, first: List[int], second: List[int], third: List[int], fourth: List[int]
-    ) -> int:
+    def countQuadrupleZeroSums(self, first: List[int], second: List[int], third: List[int], fourth: List[int]) -> int:
         # Meet in the middle: a+b+c+d = 0 iff a+b = -(c+d), so index the
         # first two arrays' pair sums with multiplicities (not a set).
         sums = {}

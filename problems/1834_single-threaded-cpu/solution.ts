@@ -3,13 +3,10 @@ function getOrder(tasks: number[][]): number[] {
     const byEnqueue: number[] = [];
     for (let i = 0; i < n; i++) byEnqueue.push(i);
     // Indices pre-sorted by (enqueueTime, index): the arrival stream only moves forward.
-    byEnqueue.sort((a, b) =>
-        tasks[a][0] !== tasks[b][0] ? tasks[a][0] - tasks[b][0] : a - b,
-    );
+    byEnqueue.sort((a, b) => (tasks[a][0] !== tasks[b][0] ? tasks[a][0] - tasks[b][0] : a - b));
     // Min-heap of [processingTime, index] pairs.
     const heap: [number, number][] = [];
-    const less = (a: [number, number], b: [number, number]) =>
-        a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1];
+    const less = (a: [number, number], b: [number, number]) => (a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1]);
     const push = (item: [number, number]) => {
         heap.push(item);
         let i = heap.length - 1;

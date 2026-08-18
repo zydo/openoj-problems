@@ -1,8 +1,4 @@
-function checkIfPrerequisite(
-    numCourses: number,
-    prerequisites: number[][],
-    queries: number[][],
-): boolean[] {
+function checkIfPrerequisite(numCourses: number, prerequisites: number[][], queries: number[][]): boolean[] {
     const adjacency: number[][] = Array.from({ length: numCourses }, () => []);
     const indegree: number[] = new Array(numCourses).fill(0);
     for (const [a, b] of prerequisites) {
@@ -12,9 +8,7 @@ function checkIfPrerequisite(
     const bits = 30;
     const words = Math.ceil(numCourses / bits);
     // reach[v] is a bitset (30-bit chunks) of the courses that reach course v
-    const reach: number[][] = Array.from({ length: numCourses }, () =>
-        new Array<number>(words).fill(0),
-    );
+    const reach: number[][] = Array.from({ length: numCourses }, () => new Array<number>(words).fill(0));
     const queue: number[] = [];
     for (let i = 0; i < numCourses; i++) {
         if (indegree[i] === 0) {
@@ -33,7 +27,5 @@ function checkIfPrerequisite(
             }
         }
     }
-    return queries.map(
-        ([u, v]) => (reach[v][(u / bits) | 0] & (1 << (u % bits))) !== 0,
-    );
+    return queries.map(([u, v]) => (reach[v][(u / bits) | 0] & (1 << (u % bits))) !== 0);
 }

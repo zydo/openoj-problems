@@ -8,9 +8,7 @@ function lexicographicallySmallestString(s: string): string {
     };
 
     // rem[i][j] = can s[i..j] be removed entirely
-    const rem: boolean[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(false),
-    );
+    const rem: boolean[][] = Array.from({ length: n }, () => new Array(n).fill(false));
     for (let length = 2; length <= n; length++) {
         for (let i = 0; i + length <= n; i++) {
             const j = i + length - 1;

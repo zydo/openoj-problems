@@ -41,11 +41,7 @@ function shortestPathAllKeys(grid: string[]): number {
             if (ch === "#") {
                 continue;
             }
-            if (
-                ch >= "A" &&
-                ch <= "F" &&
-                !(mask & (1 << (ch.charCodeAt(0) - 65)))
-            ) {
+            if (ch >= "A" && ch <= "F" && !(mask & (1 << (ch.charCodeAt(0) - 65)))) {
                 continue;
             }
             let nmask = mask;

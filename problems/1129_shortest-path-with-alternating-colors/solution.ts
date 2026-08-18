@@ -1,8 +1,4 @@
-function shortestAlternatingPaths(
-    n: number,
-    redEdges: number[][],
-    blueEdges: number[][],
-): number[] {
+function shortestAlternatingPaths(n: number, redEdges: number[][], blueEdges: number[][]): number[] {
     // adjacency[c][u] lists endpoints of color-c edges from u.
     const adjacency: number[][][] = [
         Array.from({ length: n }, () => [] as number[]),
@@ -39,8 +35,7 @@ function shortestAlternatingPaths(
             if (dist[nxt][1 - color] === INF) {
                 dist[nxt][1 - color] = dist[node][color] + 1;
                 const value = dist[nxt][1 - color];
-                answer[nxt] =
-                    answer[nxt] === -1 ? value : Math.min(answer[nxt], value);
+                answer[nxt] = answer[nxt] === -1 ? value : Math.min(answer[nxt], value);
                 queue.push([nxt, 1 - color]);
             }
         }

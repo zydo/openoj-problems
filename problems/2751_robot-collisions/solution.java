@@ -6,20 +6,14 @@ import java.util.Set;
 
 class Solution {
 
-    public int[] survivedRobotsHealths(
-        int[] positions,
-        int[] healths,
-        String directions
-    ) {
+    public int[] survivedRobotsHealths(int[] positions, int[] healths, String directions) {
         int n = positions.length;
         int[] h = Arrays.copyOf(healths, n);
         Integer[] order = new Integer[n];
         for (int i = 0; i < n; i++) {
             order[i] = i;
         }
-        Arrays.sort(order, (a, b) ->
-            Integer.compare(positions[a], positions[b])
-        );
+        Arrays.sort(order, (a, b) -> Integer.compare(positions[a], positions[b]));
         // Sweep left to right; every collision is a right-mover meeting a
         // left-mover face to face, so a stack of sweep survivors is the only
         // state needed. Health changes are written into `h` so survivors

@@ -8,9 +8,8 @@ class Solution {
         for (int i = 0; i < n; i++) {
             order[i] = i;
         }
-        sort(order.begin(), order.end(), [&](int i, int j) {
-            return aliceValues[i] + bobValues[i] > aliceValues[j] + bobValues[j];
-        });
+        sort(order.begin(), order.end(),
+             [&](int i, int j) { return aliceValues[i] + bobValues[i] > aliceValues[j] + bobValues[j]; });
         long long diff = 0;
         for (int rank = 0; rank < n; rank++) {
             int i = order[rank];

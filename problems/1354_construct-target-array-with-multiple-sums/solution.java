@@ -13,9 +13,7 @@ class Solution {
         // Reverse simulation: the total strictly grows each operation, so the
         // largest element of any reachable state was necessarily written last.
         // Max-heap + `total` tracking the current array sum.
-        PriorityQueue<Long> pq = new PriorityQueue<>(
-            Collections.reverseOrder()
-        );
+        PriorityQueue<Long> pq = new PriorityQueue<>(Collections.reverseOrder());
         for (int v : target) {
             total += v;
             pq.add((long) v);

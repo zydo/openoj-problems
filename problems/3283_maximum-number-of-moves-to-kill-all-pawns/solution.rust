@@ -1,20 +1,10 @@
 impl Solution {
     // BFS: minimum knight moves from (sx, sy) to every square.
     fn knight_distances(sx: usize, sy: usize) -> Vec<Vec<i32>> {
-        const MOVES: [(i32, i32); 8] = [
-            (-2, -1),
-            (-2, 1),
-            (-1, -2),
-            (-1, 2),
-            (1, -2),
-            (1, 2),
-            (2, -1),
-            (2, 1),
-        ];
+        const MOVES: [(i32, i32); 8] = [(-2, -1), (-2, 1), (-1, -2), (-1, 2), (1, -2), (1, 2), (2, -1), (2, 1)];
         let mut dist = vec![vec![-1i32; 50]; 50];
         dist[sx][sy] = 0;
-        let mut queue: std::collections::VecDeque<(usize, usize)> =
-            std::collections::VecDeque::new();
+        let mut queue: std::collections::VecDeque<(usize, usize)> = std::collections::VecDeque::new();
         queue.push_back((sx, sy));
         while let Some((x, y)) = queue.pop_front() {
             let d = dist[x][y];

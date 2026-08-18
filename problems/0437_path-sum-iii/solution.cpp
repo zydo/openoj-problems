@@ -9,8 +9,7 @@ class Solution {
     }
 
   private:
-    long long dfs(TreeNode *node, long long running, int targetSum,
-                  unordered_map<long long, long long> &counter) {
+    long long dfs(TreeNode *node, long long running, int targetSum, unordered_map<long long, long long> &counter) {
         if (node == nullptr) {
             return 0;
         }

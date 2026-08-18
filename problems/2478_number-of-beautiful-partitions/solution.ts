@@ -2,9 +2,7 @@ function beautifulPartitions(s: string, k: number, minLength: number): number {
     const MOD = 1000000007;
     const isP = (c: string) => c === "2" || c === "3" || c === "5" || c === "7";
     const n = s.length;
-    const dp: number[][] = Array.from({ length: n + 1 }, () =>
-        new Array(k + 1).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: n + 1 }, () => new Array(k + 1).fill(0));
     dp[0][0] = 1;
     for (let j = 1; j <= k; j++) {
         const prefix: number[] = new Array(n + 1).fill(0);

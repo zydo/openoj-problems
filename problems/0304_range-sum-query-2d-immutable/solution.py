@@ -15,17 +15,10 @@ class NumMatrix:
                 # Inclusion-exclusion over three already-computed
                 # neighbors; the top-left term is subtracted because
                 # both the row strip and column strip contain it.
-                row_prefix[c + 1] = (
-                    matrix[r][c] + above[c + 1] + row_prefix[c] - above[c]
-                )
+                row_prefix[c + 1] = matrix[r][c] + above[c + 1] + row_prefix[c] - above[c]
 
     def sumRegion(self, row1: int, col1: int, row2: int, col2: int) -> int:
         # The same inclusion-exclusion in reverse: the strips above and
         # left of the query cancel, leaving the rectangle in O(1).
         prefix = self.prefix
-        return (
-            prefix[row2 + 1][col2 + 1]
-            - prefix[row1][col2 + 1]
-            - prefix[row2 + 1][col1]
-            + prefix[row1][col1]
-        )
+        return prefix[row2 + 1][col2 + 1] - prefix[row1][col2 + 1] - prefix[row2 + 1][col1] + prefix[row1][col1]

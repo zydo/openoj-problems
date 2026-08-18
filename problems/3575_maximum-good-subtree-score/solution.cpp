@@ -3,8 +3,7 @@ class Solution {
     static constexpr long long NEG = -(long long)1e18;
 
     // res[c] = max over x subset of c of a[x] + b[c^x]
-    static void subsetConvolve(const vector<long long> &a, const vector<long long> &b,
-                               vector<long long> &res) {
+    static void subsetConvolve(const vector<long long> &a, const vector<long long> &b, vector<long long> &res) {
         for (int c = 0; c < 1024; c++) {
             long long best = NEG;
             int x = c;

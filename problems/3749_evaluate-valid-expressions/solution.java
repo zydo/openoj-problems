@@ -14,11 +14,7 @@ class Solution {
         if (ch == '-' || (ch >= '0' && ch <= '9')) {
             int i = pos[0];
             int j = ch == '-' ? i + 1 : i;
-            while (
-                j < expr.length() &&
-                expr.charAt(j) >= '0' &&
-                expr.charAt(j) <= '9'
-            ) {
+            while (j < expr.length() && expr.charAt(j) >= '0' && expr.charAt(j) <= '9') {
                 j++;
             }
             pos[0] = j;

@@ -25,9 +25,7 @@ class Solution {
                 int next = mask | bit;
                 // fewer sessions wins; tie -> more remaining time wins
                 if (
-                    !reachable[next] ||
-                    candS < sessions[next] ||
-                    (candS == sessions[next] && candR > remaining[next])
+                    !reachable[next] || candS < sessions[next] || (candS == sessions[next] && candR > remaining[next])
                 ) {
                     reachable[next] = true;
                     sessions[next] = candS;

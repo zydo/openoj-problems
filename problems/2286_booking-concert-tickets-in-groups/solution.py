@@ -42,13 +42,9 @@ class BookMyShow:
         if left <= lo and hi <= right:
             return self.sums[node]
         mid = (lo + hi) // 2
-        return self._range_sum(2 * node, lo, mid, left, right) + self._range_sum(
-            2 * node + 1, mid + 1, hi, left, right
-        )
+        return self._range_sum(2 * node, lo, mid, left, right) + self._range_sum(2 * node + 1, mid + 1, hi, left, right)
 
-    def _first_at_least(
-        self, node: int, lo: int, hi: int, left: int, right: int, k: int
-    ) -> int:
+    def _first_at_least(self, node: int, lo: int, hi: int, left: int, right: int, k: int) -> int:
         """Smallest index in [left, right] with remaining >= k, or -1."""
         if right < lo or hi < left or self.maxs[node] < k:
             return -1

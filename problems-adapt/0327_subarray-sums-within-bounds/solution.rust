@@ -19,8 +19,7 @@ fn merge_count(prefix: &mut Vec<i64>, lo: usize, hi: usize, lower: i64, upper: i
     }
     let mid = lo + (hi - lo) / 2;
     // Pairs inside each half first; cross pairs next.
-    let mut count =
-        merge_count(prefix, lo, mid, lower, upper) + merge_count(prefix, mid + 1, hi, lower, upper);
+    let mut count = merge_count(prefix, lo, mid, lower, upper) + merge_count(prefix, mid + 1, hi, lower, upper);
 
     // Left half is sorted, so for each left prefix the valid right
     // entries form the window [l, r): l skips below-lower, r passes

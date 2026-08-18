@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def subStrHash(
-        self, s: str, power: int, modulo: int, k: int, hashValue: int
-    ) -> str:
+    def subStrHash(self, s: str, power: int, modulo: int, k: int, hashValue: int) -> str:
         n = len(s)
 
         def val(c):

@@ -27,13 +27,7 @@ class Solution {
         return lo;
     }
 
-    private int check(
-        List<int[]>[] adj,
-        int n,
-        int limit,
-        boolean[] seen,
-        int[] stack
-    ) {
+    private int check(List<int[]>[] adj, int n, int limit, boolean[] seen, int[] stack) {
         java.util.Arrays.fill(seen, false);
         seen[0] = true;
         int sp = 0,

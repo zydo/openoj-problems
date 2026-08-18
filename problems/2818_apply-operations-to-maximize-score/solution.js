@@ -67,8 +67,7 @@ var maximumScore = function (nums, k) {
     const left = new Array(n);
     let stack = [];
     for (let i = 0; i < n; i++) {
-        while (stack.length > 0 && scores[stack[stack.length - 1]] < scores[i])
-            stack.pop();
+        while (stack.length > 0 && scores[stack[stack.length - 1]] < scores[i]) stack.pop();
         left[i] = stack.length > 0 ? stack[stack.length - 1] : -1;
         stack.push(i);
     }
@@ -76,8 +75,7 @@ var maximumScore = function (nums, k) {
     const right = new Array(n);
     stack = [];
     for (let i = n - 1; i >= 0; i--) {
-        while (stack.length > 0 && scores[stack[stack.length - 1]] <= scores[i])
-            stack.pop();
+        while (stack.length > 0 && scores[stack[stack.length - 1]] <= scores[i]) stack.pop();
         right[i] = stack.length > 0 ? stack[stack.length - 1] : n;
         stack.push(i);
     }

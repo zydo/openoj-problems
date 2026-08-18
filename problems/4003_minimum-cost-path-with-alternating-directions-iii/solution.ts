@@ -5,8 +5,7 @@ function minCost(m: number, n: number, penalty: number[][]): number {
     dist[0][0] = 1; // entrance cost of (0, 0); next action is odd
     // heap entries: [cost, cell, parity]
     const pq: number[][] = [[1, 0, 0]];
-    const cmp = (a: number[], b: number[]): number =>
-        a[0] - b[0] || a[1] - b[1] || a[2] - b[2];
+    const cmp = (a: number[], b: number[]): number => a[0] - b[0] || a[1] - b[1] || a[2] - b[2];
     const push = (item: number[]): void => {
         pq.push(item);
         let i = pq.length - 1;

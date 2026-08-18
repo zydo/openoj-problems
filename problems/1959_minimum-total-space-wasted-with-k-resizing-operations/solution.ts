@@ -15,9 +15,7 @@ function minSpaceWastedKResizing(nums: number[], k: number): number {
     }
     const INF = Infinity;
     // dp[j][i] = min waste for suffix starting at i using j segments
-    const dp: number[][] = Array.from({ length: k + 2 }, () =>
-        new Array(n + 1).fill(INF),
-    );
+    const dp: number[][] = Array.from({ length: k + 2 }, () => new Array(n + 1).fill(INF));
     dp[0][n] = 0;
     for (let j = 1; j < k + 2; j++) {
         for (let i = n - 1; i >= 0; i--) {

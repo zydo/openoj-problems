@@ -45,10 +45,7 @@ function countNoZeroPairs(n: number): number {
                             const s = da + db + carry;
                             if (s % 10 !== ds[pos]) continue;
                             const nc = Math.floor(s / 10);
-                            res +=
-                                g[nc][aa && da !== 0 ? 1 : 0][
-                                    ba && db !== 0 ? 1 : 0
-                                ];
+                            res += g[nc][aa && da !== 0 ? 1 : 0][ba && db !== 0 ? 1 : 0];
                         }
                     }
                     ng[carry][aa][ba] = res % MOD;

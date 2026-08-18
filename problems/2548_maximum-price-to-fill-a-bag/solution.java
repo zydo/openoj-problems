@@ -15,9 +15,7 @@ class Solution {
         // Stable sort by price-per-weight ratio, descending.
         List<int[]> ordered = new ArrayList<>();
         for (int[] item : items) ordered.add(item);
-        Collections.sort(ordered, (a, b) ->
-            Double.compare((double) b[0] / b[1], (double) a[0] / a[1])
-        );
+        Collections.sort(ordered, (a, b) -> Double.compare((double) b[0] / b[1], (double) a[0] / a[1]));
         double price = 0.0;
         long remaining = capacity;
         for (int[] item : ordered) {

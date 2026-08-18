@@ -12,9 +12,7 @@ impl Solution {
         }
 
         // Phase 1: repeatedly remove leaves that carry no coin.
-        let mut leaves: Vec<usize> = (0..n)
-            .filter(|&i| adj[i].len() == 1 && coins[i] == 0)
-            .collect();
+        let mut leaves: Vec<usize> = (0..n).filter(|&i| adj[i].len() == 1 && coins[i] == 0).collect();
         while !leaves.is_empty() {
             let mut nxt: Vec<usize> = Vec::new();
             for u in leaves {

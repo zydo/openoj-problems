@@ -17,8 +17,8 @@ class Solution {
         Stats r = solve(nums, mid, hi);
         // The best subarray either stays in one half or is the seam of the
         // left half's best suffix and the right half's best prefix.
-        return {l.total + r.total, max(l.prefix, l.total + r.prefix),
-                max(r.suffix, r.total + l.suffix), max({l.best, r.best, l.suffix + r.prefix})};
+        return {l.total + r.total, max(l.prefix, l.total + r.prefix), max(r.suffix, r.total + l.suffix),
+                max({l.best, r.best, l.suffix + r.prefix})};
     }
 
   public:

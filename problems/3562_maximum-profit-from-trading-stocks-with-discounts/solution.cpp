@@ -25,8 +25,7 @@ class Solution {
     }
 
   public:
-    int maxProfit(int n, vector<int> &present, vector<int> &future, vector<vector<int>> &hierarchy,
-                  int budget) {
+    int maxProfit(int n, vector<int> &present, vector<int> &future, vector<vector<int>> &hierarchy, int budget) {
         vector<vector<int>> children(n);
         for (auto &e : hierarchy) {
             children[e[0] - 1].push_back(e[1] - 1);

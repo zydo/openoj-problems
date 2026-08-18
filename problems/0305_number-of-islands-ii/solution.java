@@ -29,9 +29,7 @@ class Solution {
             for (int k = 0; k < 4; k++) {
                 int nr = r + dr[k],
                     nc = c + dc[k];
-                if (
-                    nr < 0 || nr >= m || nc < 0 || nc >= n || !land[nr * n + nc]
-                ) {
+                if (nr < 0 || nr >= m || nc < 0 || nc >= n || !land[nr * n + nc]) {
                     continue;
                 }
                 // Distinct roots mean two islands merge, losing one count; a

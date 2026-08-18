@@ -1,9 +1,5 @@
 function evaluate(expression: string): number {
-    const tokens = expression
-        .replace(/\(/g, " ( ")
-        .replace(/\)/g, " ) ")
-        .trim()
-        .split(/\s+/);
+    const tokens = expression.replace(/\(/g, " ( ").replace(/\)/g, " ) ").trim().split(/\s+/);
 
     const isVar = (t: string): boolean => {
         const c = t.charAt(0);

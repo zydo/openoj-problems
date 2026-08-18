@@ -17,13 +17,7 @@ class Solution {
         return build(preorder, index, position, 0, inorder.length);
     }
 
-    private TreeNode build(
-        int[] preorder,
-        Map<Integer, Integer> index,
-        int[] position,
-        int low,
-        int high
-    ) {
+    private TreeNode build(int[] preorder, Map<Integer, Integer> index, int[] position, int low, int high) {
         // Empty inorder range <=> missing child, so base cases need no
         // special casing.
         if (low >= high) {

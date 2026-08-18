@@ -32,14 +32,7 @@ var maximumMinutes = function (grid) {
         for (const [di, dj] of dirs) {
             const ni = i + di;
             const nj = j + dj;
-            if (
-                ni >= 0 &&
-                ni < m &&
-                nj >= 0 &&
-                nj < n &&
-                grid[ni][nj] !== 2 &&
-                fire[ni][nj] === INF
-            ) {
+            if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] !== 2 && fire[ni][nj] === INF) {
                 fire[ni][nj] = fire[i][j] + 1;
                 queue.push([ni, nj]);
             }
@@ -62,14 +55,7 @@ var maximumMinutes = function (grid) {
             for (const [di, dj] of dirs) {
                 const ni = i + di;
                 const nj = j + dj;
-                if (
-                    ni >= 0 &&
-                    ni < m &&
-                    nj >= 0 &&
-                    nj < n &&
-                    grid[ni][nj] !== 2 &&
-                    !seen[ni][nj]
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] !== 2 && !seen[ni][nj]) {
                     const nt = t + 1;
                     // the safehouse may tie the fire: reaching it the very
                     // minute fire does still counts as escaping

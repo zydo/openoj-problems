@@ -18,9 +18,7 @@ class Solution {
         List<List<Integer>> top3 = new ArrayList<>();
         for (List<Integer> neighbors : adj) {
             List<Integer> copy = new ArrayList<>(neighbors);
-            Collections.sort(copy, (u, v) ->
-                Integer.compare(scores[v], scores[u])
-            );
+            Collections.sort(copy, (u, v) -> Integer.compare(scores[v], scores[u]));
             top3.add(copy.subList(0, Math.min(3, copy.size())));
         }
 

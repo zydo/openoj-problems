@@ -75,10 +75,7 @@ class Solution {
                 // ')'
                 List<int[]> values = new ArrayList<>();
                 List<Character> ops = new ArrayList<>();
-                while (
-                    !isValStack.isEmpty() &&
-                    !(isValStack.peek() == false && opStack.peek() == '(')
-                ) {
+                while (!isValStack.isEmpty() && !(isValStack.peek() == false && opStack.peek() == '(')) {
                     boolean isVal = isValStack.pop();
                     if (isVal) {
                         values.add(valStack.pop());

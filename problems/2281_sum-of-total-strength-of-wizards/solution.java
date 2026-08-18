@@ -44,13 +44,10 @@ class Solution {
         for (int i = 0; i < n; i++) {
             long left = i - prev[i];
             long right = nxt[i] - i;
-            long sumLeft =
-                (prePrefix[i + 1] - prePrefix[prev[i] + 1] + MOD) % MOD;
-            long sumRight =
-                (prePrefix[nxt[i] + 1] - prePrefix[i + 1] + MOD) % MOD;
+            long sumLeft = (prePrefix[i + 1] - prePrefix[prev[i] + 1] + MOD) % MOD;
+            long sumRight = (prePrefix[nxt[i] + 1] - prePrefix[i + 1] + MOD) % MOD;
             // Python's % is always non-negative; normalize explicitly.
-            long term =
-                (((left * sumRight - right * sumLeft) % MOD) + MOD) % MOD;
+            long term = (((left * sumRight - right * sumLeft) % MOD) + MOD) % MOD;
             long contribution = ((strength[i] % MOD) * term) % MOD;
             answer = (answer + contribution) % MOD;
         }

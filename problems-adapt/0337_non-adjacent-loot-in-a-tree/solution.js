@@ -14,8 +14,7 @@ var maxNonAdjacentLoot = function (root) {
         // Taking here forbids both children: use their skip values.
         const takeHere = node.val + leftSkip + rightSkip;
         // Skipping leaves each child free to do its better option.
-        const skipHere =
-            Math.max(leftTake, leftSkip) + Math.max(rightTake, rightSkip);
+        const skipHere = Math.max(leftTake, leftSkip) + Math.max(rightTake, rightSkip);
         return [takeHere, skipHere];
     }
     const [takeHere, skipHere] = best(root);

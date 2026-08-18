@@ -10,10 +10,7 @@ struct OpenOjBig {
 
 impl OpenOjBig {
     fn one() -> OpenOjBig {
-        OpenOjBig {
-            neg: false,
-            d: vec![1],
-        }
+        OpenOjBig { neg: false, d: vec![1] }
     }
 
     fn zero() -> OpenOjBig {

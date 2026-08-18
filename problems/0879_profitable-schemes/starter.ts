@@ -1,8 +1,3 @@
-function profitableSchemes(
-    n: number,
-    minProfit: number,
-    group: number[],
-    profit: number[],
-): number {
+function profitableSchemes(n: number, minProfit: number, group: number[], profit: number[]): number {
     throw new Error("TODO");
 }

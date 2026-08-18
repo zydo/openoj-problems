@@ -17,10 +17,7 @@ class Solution {
         if (k > 2 && total > 0) {
             // whole middle copies pay off only when total > 0: score the
             // best suffix + best prefix + (k - 2) full copies
-            best = Math.max(
-                best,
-                maxSuffix(arr) + maxPrefix(arr) + (k - 2) * total
-            );
+            best = Math.max(best, maxSuffix(arr) + maxPrefix(arr) + (k - 2) * total);
         }
         // reduce only at the end — residues no longer compare by magnitude
         return (int) (best % MOD);

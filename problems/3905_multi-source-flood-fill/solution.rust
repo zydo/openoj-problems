@@ -4,8 +4,7 @@ impl Solution {
         let m = m as usize;
         let mut grid = vec![vec![0i32; m]; n];
         let mut dist = vec![vec![-1i32; m]; n];
-        let mut queue: std::collections::VecDeque<(usize, usize)> =
-            std::collections::VecDeque::new();
+        let mut queue: std::collections::VecDeque<(usize, usize)> = std::collections::VecDeque::new();
         for s in &sources {
             let (r, c, color) = (s[0] as usize, s[1] as usize, s[2]);
             grid[r][c] = color;

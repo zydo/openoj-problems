@@ -22,10 +22,7 @@ var largestSumOfAverages = function (nums, k) {
         for (let i = 0; i <= n - groups; i++) {
             let result = 0.0;
             for (let j = i + 1; j <= n - groups + 1; j++) {
-                result = Math.max(
-                    result,
-                    (prefix[j] - prefix[i]) / (j - i) + dp[j],
-                );
+                result = Math.max(result, (prefix[j] - prefix[i]) / (j - i) + dp[j]);
             }
             ndp[i] = result;
         }

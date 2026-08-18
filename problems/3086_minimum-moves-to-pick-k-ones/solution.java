@@ -23,10 +23,7 @@ class Solution {
         while (hi - lo > 4) {
             long m1 = lo + (hi - lo) / 3;
             long m2 = hi - (hi - lo) / 3;
-            if (
-                total((int) m1, k, ones, prefix, m, INF) <=
-                total((int) m2, k, ones, prefix, m, INF)
-            ) {
+            if (total((int) m1, k, ones, prefix, m, INF) <= total((int) m2, k, ones, prefix, m, INF)) {
                 hi = m2;
             } else {
                 lo = m1;
@@ -42,14 +39,7 @@ class Solution {
         return ans;
     }
 
-    private long total(
-        int t,
-        int k,
-        long[] ones,
-        long[] prefix,
-        int m,
-        long INF
-    ) {
+    private long total(int t, int k, long[] ones, long[] prefix, int m, long INF) {
         long wc = windowCost(t, ones, prefix, m, INF);
         if (wc == INF) {
             return INF;
@@ -57,13 +47,7 @@ class Solution {
         return wc + 2L * (k - t);
     }
 
-    private long windowCost(
-        int t,
-        long[] ones,
-        long[] prefix,
-        int m,
-        long INF
-    ) {
+    private long windowCost(int t, long[] ones, long[] prefix, int m, long INF) {
         if (t == 0) {
             return 0;
         }

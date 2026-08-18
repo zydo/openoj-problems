@@ -1,9 +1,3 @@
-function findCheapestPrice(
-    n: number,
-    flights: number[][],
-    src: number,
-    dst: number,
-    k: number,
-): number {
+function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {
     throw new Error("TODO");
 }

@@ -20,8 +20,8 @@ class Solution {
                         auto [x, y] = queue[head];
                         for (int k = 0; k < 4; k++) {
                             int nx = x + dx[k], ny = y + dy[k];
-                            if (nx >= 0 && nx < rows && ny >= 0 && ny < cols &&
-                                grid[nx][ny] == "1" && !visited[nx][ny]) {
+                            if (nx >= 0 && nx < rows && ny >= 0 && ny < cols && grid[nx][ny] == "1" &&
+                                !visited[nx][ny]) {
                                 visited[nx][ny] = 1;
                                 queue.push_back({nx, ny});
                             }

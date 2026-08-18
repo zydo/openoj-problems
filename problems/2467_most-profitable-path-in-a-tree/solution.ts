@@ -1,8 +1,4 @@
-function mostProfitablePath(
-    edges: number[][],
-    bob: number,
-    amount: number[],
-): number {
+function mostProfitablePath(edges: number[][], bob: number, amount: number[]): number {
     const n = amount.length;
     const adj: number[][] = Array.from({ length: n }, () => []);
     for (const [a, b] of edges) {

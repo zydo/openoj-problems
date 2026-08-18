@@ -23,8 +23,8 @@ class Solution {
 
         for (int a = 1; a <= m; a++) {
             for (int b = 1; b <= m; b++) {
-                table[a][b] = 0.25 * (value(a - 4, b) + value(a - 3, b - 1) + value(a - 2, b - 2) +
-                                      value(a - 1, b - 3));
+                table[a][b] =
+                    0.25 * (value(a - 4, b) + value(a - 3, b - 1) + value(a - 2, b - 2) + value(a - 1, b - 3));
             }
         }
         return value(m, m);

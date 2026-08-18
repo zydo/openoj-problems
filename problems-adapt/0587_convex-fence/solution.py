@@ -39,9 +39,7 @@ class Solution:
                 if p in in_result or p == a or p == b:
                     continue
                 if cross(a, b, p) == 0:
-                    if min(a[0], b[0]) <= p[0] <= max(a[0], b[0]) and min(
-                        a[1], b[1]
-                    ) <= p[1] <= max(a[1], b[1]):
+                    if min(a[0], b[0]) <= p[0] <= max(a[0], b[0]) and min(a[1], b[1]) <= p[1] <= max(a[1], b[1]):
                         result.append(p)
                         in_result.add(p)
         return [list(p) for p in result]

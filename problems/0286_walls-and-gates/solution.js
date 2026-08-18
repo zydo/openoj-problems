@@ -37,13 +37,7 @@ var wallsAndGates = function (rooms) {
                 // Still INF means unvisited; writing the distance doubles as
                 // the visited mark, and walls/gates never match INF so they
                 // are never entered or overwritten.
-                if (
-                    nr >= 0 &&
-                    nr < m &&
-                    nc >= 0 &&
-                    nc < n &&
-                    rooms[nr][nc] === INF
-                ) {
+                if (nr >= 0 && nr < m && nc >= 0 && nc < n && rooms[nr][nc] === INF) {
                     rooms[nr][nc] = dist;
                     queue.push([nr, nc]);
                 }

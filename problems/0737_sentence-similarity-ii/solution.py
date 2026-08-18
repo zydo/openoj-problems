@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def areSentencesSimilarTwo(
-        self, sentence1: List[str], sentence2: List[str], similarPairs: List[List[str]]
-    ) -> bool:
+    def areSentencesSimilarTwo(self, sentence1: List[str], sentence2: List[str], similarPairs: List[List[str]]) -> bool:
         # Different lengths can never be similar.
         if len(sentence1) != len(sentence2):
             return False

@@ -3,13 +3,7 @@ import java.util.List;
 
 class Solution {
 
-    public int maxProfit(
-        int n,
-        int[] present,
-        int[] future,
-        int[][] hierarchy,
-        int budget
-    ) {
+    public int maxProfit(int n, int[] present, int[] future, int[][] hierarchy, int budget) {
         List<List<Integer>> children = new ArrayList<>();
         for (int i = 0; i < n; i++) children.add(new ArrayList<>());
         for (int[] e : hierarchy) {

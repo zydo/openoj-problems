@@ -11,9 +11,7 @@ class Solution {
         // ascending order against one shared frontier.
         Integer[] order = new Integer[qlen];
         for (int i = 0; i < qlen; i++) order[i] = i;
-        java.util.Arrays.sort(order, (a, b) ->
-            Integer.compare(queries[a], queries[b])
-        );
+        java.util.Arrays.sort(order, (a, b) -> Integer.compare(queries[a], queries[b]));
         int[] answer = new int[qlen];
         boolean[][] visited = new boolean[m][n];
         visited[0][0] = true;
@@ -40,13 +38,7 @@ class Solution {
                 for (int d = 0; d < 4; d++) {
                     int nr = r + dr[d],
                         nc = c + dc[d];
-                    if (
-                        0 <= nr &&
-                        nr < m &&
-                        0 <= nc &&
-                        nc < n &&
-                        !visited[nr][nc]
-                    ) {
+                    if (0 <= nr && nr < m && 0 <= nc && nc < n && !visited[nr][nc]) {
                         // Mark at push time: no duplicate entries, so each
                         // cell enters and leaves the heap exactly once.
                         visited[nr][nc] = true;

@@ -3,9 +3,7 @@ from bisect import bisect_left, bisect_right
 
 
 class Solution:
-    def fullBloomFlowers(
-        self, flowers: List[List[int]], people: List[int]
-    ) -> List[int]:
+    def fullBloomFlowers(self, flowers: List[List[int]], people: List[int]) -> List[int]:
         # The two sides can be sorted separately: a query never needs to know
         # which start belongs to which end, only the two one-sided counts.
         starts = sorted(f[0] for f in flowers)

@@ -53,16 +53,8 @@ impl Solution {
                             if st2 == m {
                                 continue;
                             }
-                            let nlo = if lo == 1 && code == low_base {
-                                1usize
-                            } else {
-                                0usize
-                            };
-                            let nhi = if hi == 1 && code == high_base {
-                                1usize
-                            } else {
-                                0usize
-                            };
+                            let nlo = if lo == 1 && code == low_base { 1usize } else { 0usize };
+                            let nhi = if hi == 1 && code == high_base { 1usize } else { 0usize };
                             total += dp[((pos + 1) * (m + 1) + st2) * 4 + nlo * 2 + nhi];
                         }
                         dp[(pos * (m + 1) + state) * 4 + lo * 2 + hi] = total % MOD;

@@ -26,14 +26,7 @@ var getFood = function (grid) {
         ]) {
             const ni = i + di,
                 nj = j + dj;
-            if (
-                ni >= 0 &&
-                ni < m &&
-                nj >= 0 &&
-                nj < n &&
-                grid[ni][nj] !== "X" &&
-                dist[ni][nj] === -1
-            ) {
+            if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] !== "X" && dist[ni][nj] === -1) {
                 dist[ni][nj] = dist[i][j] + 1;
                 q.push([ni, nj]);
             }

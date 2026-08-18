@@ -2,9 +2,7 @@ function minimumObstacles(grid: number[][]): number {
     const m = grid.length;
     const n = grid[0].length;
     const INF = Infinity;
-    const dist: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(INF),
-    );
+    const dist: number[][] = Array.from({ length: m }, () => new Array(n).fill(INF));
     dist[0][0] = 0;
     // Deque via two stacks (amortized O(1) push/pop on both ends).
     let left: [number, number][] = [];

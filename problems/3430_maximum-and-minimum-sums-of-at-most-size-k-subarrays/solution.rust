@@ -94,8 +94,7 @@ impl Solution {
 
         let mut answer: i64 = 0;
         for i in 0..n {
-            let cnt =
-                Self::count_pairs(lmax[i], rmax[i], kk) + Self::count_pairs(lmin[i], rmin[i], kk);
+            let cnt = Self::count_pairs(lmax[i], rmax[i], kk) + Self::count_pairs(lmin[i], rmin[i], kk);
             answer += nums[i] as i64 * cnt;
         }
         answer

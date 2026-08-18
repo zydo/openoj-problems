@@ -24,15 +24,7 @@ class Solution {
 
     // State: position, tight (prefix equals x's), started (nonzero seen),
     // running digit sum and digit product — all that beauty depends on.
-    private long dp(
-        int[] digits,
-        Map<Long, Long> memo,
-        int pos,
-        boolean tight,
-        boolean started,
-        int ssum,
-        long prod
-    ) {
+    private long dp(int[] digits, Map<Long, Long> memo, int pos, boolean tight, boolean started, int ssum, long prod) {
         if (pos == digits.length) {
             // Beautiful iff a number was built and prod is a multiple of the sum;
             // a 0 digit zeroes prod, and 0 is divisible by any positive sum.
@@ -59,17 +51,9 @@ class Solution {
         return res;
     }
 
-    private long pack(
-        int pos,
-        boolean tight,
-        boolean started,
-        int ssum,
-        long prod
-    ) {
+    private long pack(int pos, boolean tight, boolean started, int ssum, long prod) {
         // pos <= 9 (4 bits), tight (1), started (1), ssum <= 90 (7 bits), prod <= 9^10 < 2^32
-        long head =
-            (((long) pos * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)) * 128 +
-            ssum;
+        long head = (((long) pos * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)) * 128 + ssum;
         return head * (1L << 32) + prod;
     }
 }

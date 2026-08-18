@@ -23,11 +23,7 @@ class Solution {
             // first three of the run; the loop stops at the first word not
             // sharing the prefix, so cost is independent of run length
             int count = 0;
-            while (
-                lo + count < sorted.length &&
-                count < 3 &&
-                sorted[lo + count].startsWith(prefix)
-            ) {
+            while (lo + count < sorted.length && count < 3 && sorted[lo + count].startsWith(prefix)) {
                 count++;
             }
             String[] suggestions = new String[count];

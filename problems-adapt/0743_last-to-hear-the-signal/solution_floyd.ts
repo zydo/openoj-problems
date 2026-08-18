@@ -1,8 +1,6 @@
 function lastToHear(edges: number[][], n: number, k: number): number {
     const INF = Infinity;
-    const d: number[][] = Array.from({ length: n + 1 }, () =>
-        new Array(n + 1).fill(INF),
-    );
+    const d: number[][] = Array.from({ length: n + 1 }, () => new Array(n + 1).fill(INF));
     for (let i = 1; i <= n; i++) d[i][i] = 0;
     for (const [u, v, w] of edges) {
         if (w < d[u][v]) d[u][v] = w; // keep the smallest parallel-edge weight

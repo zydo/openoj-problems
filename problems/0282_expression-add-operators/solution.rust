@@ -50,29 +50,11 @@ impl Solution {
                     // subtraction).
                     expression.push('+');
                     expression.push_str(&nxt.to_string());
-                    dfs(
-                        bytes,
-                        n,
-                        target,
-                        end + 1,
-                        nxt,
-                        current + nxt,
-                        expression,
-                        results,
-                    );
+                    dfs(bytes, n, target, end + 1, nxt, current + nxt, expression, results);
                     expression.truncate(length_before);
                     expression.push('-');
                     expression.push_str(&nxt.to_string());
-                    dfs(
-                        bytes,
-                        n,
-                        target,
-                        end + 1,
-                        -nxt,
-                        current - nxt,
-                        expression,
-                        results,
-                    );
+                    dfs(bytes, n, target, end + 1, -nxt, current - nxt, expression, results);
                     expression.truncate(length_before);
                     // '*' rewrites the tail in place: drop the chain's old
                     // contribution, add prev * nxt.

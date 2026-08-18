@@ -16,10 +16,7 @@ class Solution {
         // re-check affordability before counting (a lone unreachable fruit
         // never contributes). Both pointers only advance, so linear overall.
         for (int right = 0; right < n; right++) {
-            while (
-                left < right &&
-                windowCost(fruits[left][0], fruits[right][0], startPos) > k
-            ) {
+            while (left < right && windowCost(fruits[left][0], fruits[right][0], startPos) > k) {
                 left++;
             }
             if (windowCost(fruits[left][0], fruits[right][0], startPos) <= k) {

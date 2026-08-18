@@ -26,9 +26,7 @@ class Solution {
         long ans = 0;
         for (int i = 0; i < n; i++) {
             int x = nums[i];
-            List<Integer> lst = positions.computeIfAbsent(x, k ->
-                new ArrayList<>()
-            );
+            List<Integer> lst = positions.computeIfAbsent(x, k -> new ArrayList<>());
             // hand-rolled bisect_right: first position beyond leftGreater[i]
             int lo = 0,
                 hi = lst.size();

@@ -4,8 +4,7 @@ class Solution {
         int q = queries.length;
         int[] result = new int[q];
         for (int i = 0; i < q; i++) {
-            long exp =
-                exponentSum(queries[i][1] + 1) - exponentSum(queries[i][0]);
+            long exp = exponentSum(queries[i][1] + 1) - exponentSum(queries[i][0]);
             result[i] = (int) powmod(2L, exp, queries[i][2]);
         }
         return result;

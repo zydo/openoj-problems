@@ -67,8 +67,7 @@ var findProductsOfElements = function (queries) {
 
     const result = [];
     for (const query of queries) {
-        const exp =
-            exponentSum(BigInt(query[1]) + 1n) - exponentSum(BigInt(query[0]));
+        const exp = exponentSum(BigInt(query[1]) + 1n) - exponentSum(BigInt(query[0]));
         // pow(2, exp, mod) with mod <= ~1e5
         const mod = BigInt(query[2]);
         let base = 2n % mod;

@@ -3,9 +3,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def minRefuelStops(
-        self, target: int, startFuel: int, stations: List[List[int]]
-    ) -> int:
+    def minRefuelStops(self, target: int, startFuel: int, stations: List[List[int]]) -> int:
         # Greedy: drive as far as possible; when short of the target,
         # retroactively refuel with the largest fuel among stations passed.
         fuel = startFuel

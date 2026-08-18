@@ -33,12 +33,7 @@ class Solution {
         return false;
     }
 
-    private int getId(
-        Map<String, Integer> id,
-        String s,
-        int[] parent,
-        double[] weight
-    ) {
+    private int getId(Map<String, Integer> id, String s, int[] parent, double[] weight) {
         Integer existing = id.get(s);
         if (existing != null) return existing;
         int fresh = id.size();

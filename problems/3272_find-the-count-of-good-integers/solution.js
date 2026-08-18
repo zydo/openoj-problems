@@ -41,8 +41,7 @@ var countGoodIntegers = function (n, k) {
         if (counts[0] > 0) {
             let lead = fact[n - 1];
             lead = Math.floor(lead / fact[counts[0] - 1]);
-            for (let d = 1; d < 10; d++)
-                lead = Math.floor(lead / fact[counts[d]]);
+            for (let d = 1; d < 10; d++) lead = Math.floor(lead / fact[counts[d]]);
             total -= lead;
         }
         answer += total;

@@ -12,11 +12,7 @@ var maximumGain = function (s, x, y) {
         const stack = [];
         let score = 0;
         for (const c of text) {
-            if (
-                stack.length &&
-                stack[stack.length - 1] === first &&
-                c === second
-            ) {
+            if (stack.length && stack[stack.length - 1] === first && c === second) {
                 stack.pop();
                 score += points;
             } else {

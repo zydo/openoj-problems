@@ -32,9 +32,8 @@ class Solution {
     }
 
   private:
-    long long window(const vector<long long> &lefts, const vector<long long> &rights,
-                     const vector<long long> &cs, const vector<long long> &area,
-                     const vector<long long> &prefix, long long k, long long start) {
+    long long window(const vector<long long> &lefts, const vector<long long> &rights, const vector<long long> &cs,
+                     const vector<long long> &area, const vector<long long> &prefix, long long k, long long start) {
         // Coins inside [start, start + k - 1]. `a` is the first segment whose
         // right end reaches the window; `b` the last whose left end falls
         // inside it.

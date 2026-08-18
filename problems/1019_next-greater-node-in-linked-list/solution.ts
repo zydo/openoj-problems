@@ -6,10 +6,7 @@ function nextLargerNodes(head: ListNode | null): number[] {
     const answer: number[] = new Array(values.length).fill(0);
     const stack: number[] = []; // indices with values in decreasing order
     for (let i = 0; i < values.length; i++) {
-        while (
-            stack.length > 0 &&
-            values[stack[stack.length - 1]] < values[i]
-        ) {
+        while (stack.length > 0 && values[stack[stack.length - 1]] < values[i]) {
             answer[stack.pop()!] = values[i];
         }
         stack.push(i);

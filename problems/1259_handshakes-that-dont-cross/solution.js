@@ -18,11 +18,7 @@ var numberOfWays = function (numPeople) {
         // recurrence catalan[i] = Σ catalan[j]·catalan[i-1-j]. BigInt
         // keeps each product exact before reducing mod 1e9+7.
         for (let j = 0; j < i; j++) {
-            total = Number(
-                (BigInt(total) +
-                    BigInt(catalan[j]) * BigInt(catalan[i - 1 - j])) %
-                    BigInt(MOD),
-            );
+            total = Number((BigInt(total) + BigInt(catalan[j]) * BigInt(catalan[i - 1 - j])) % BigInt(MOD));
         }
         catalan[i] = total;
     }

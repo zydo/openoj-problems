@@ -15,11 +15,7 @@ var smallestLetterSubsequence = function (s) {
         if (inStack[c]) continue;
         // Local exchange: popping a larger top is safe exactly while it
         // still re-occurs later (count > 0), and only shrinks the prefix.
-        while (
-            stack.length > 0 &&
-            stack[stack.length - 1] > c &&
-            count[stack[stack.length - 1]] > 0
-        ) {
+        while (stack.length > 0 && stack[stack.length - 1] > c && count[stack[stack.length - 1]] > 0) {
             inStack[stack.pop()] = false;
         }
         stack.push(c);

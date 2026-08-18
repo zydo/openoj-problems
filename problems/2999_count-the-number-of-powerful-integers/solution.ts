@@ -1,9 +1,4 @@
-function numberOfPowerfulInt(
-    start: number,
-    finish: number,
-    limit: number,
-    s: string,
-): number {
+function numberOfPowerfulInt(start: number, finish: number, limit: number, s: string): number {
     function pow10(e: number): number {
         let r = 1;
         for (let i = 0; i < e; i++) r *= 10;

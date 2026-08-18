@@ -38,12 +38,7 @@ class Solution {
                 List<int[]> neighbors = adj.get(u);
                 for (int i = neighbors.size() - 1; i >= 0; i--) {
                     int[] nb = neighbors.get(i);
-                    if (nb[0] != p) stack.push(new int[] {
-                        nb[0],
-                        u,
-                        nb[1],
-                        0,
-                    });
+                    if (nb[0] != p) stack.push(new int[] { nb[0], u, nb[1], 0 });
                 }
             } else {
                 tout[u] = timer;
@@ -70,10 +65,8 @@ class Solution {
                 int child = parent[u] == v ? u : v;
                 long delta = wp - upW[child];
                 upW[child] = wp;
-                for (int i = tin[child]; i <= size; i += i & -i) bit[i] +=
-                    delta;
-                for (int i = tout[child] + 1; i <= size; i += i & -i) bit[i] -=
-                    delta;
+                for (int i = tin[child]; i <= size; i += i & -i) bit[i] += delta;
+                for (int i = tout[child] + 1; i <= size; i += i & -i) bit[i] -= delta;
             }
         }
 

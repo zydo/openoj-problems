@@ -13,11 +13,7 @@ class Solution {
             }
         }
         // Sorted by start (then end), the sweep meets busy blocks in order.
-        intervals.sort((a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[1], b[1])
-        );
+        intervals.sort((a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
         List<int[]> free = new ArrayList<>();
         boolean started = false;
         int previousEnd = 0;
@@ -30,9 +26,7 @@ class Solution {
             }
             // Otherwise merge into the busy block, keeping the running max
             // of ends so a long interval absorbs shorter ones inside it.
-            previousEnd = !started
-                ? interval[1]
-                : Math.max(previousEnd, interval[1]);
+            previousEnd = !started ? interval[1] : Math.max(previousEnd, interval[1]);
             started = true;
         }
         return free.toArray(new int[0][]);

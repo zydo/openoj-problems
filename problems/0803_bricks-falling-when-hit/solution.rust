@@ -71,18 +71,8 @@ impl Solution {
             for &(dr, dc) in &dirs {
                 let nr = r as i32 + dr;
                 let nc = c as i32 + dc;
-                if nr >= 0
-                    && (nr as usize) < m
-                    && nc >= 0
-                    && (nc as usize) < n
-                    && g[nr as usize][nc as usize] == 1
-                {
-                    union(
-                        &mut parent,
-                        &mut size,
-                        idx(r, c),
-                        idx(nr as usize, nc as usize),
-                    );
+                if nr >= 0 && (nr as usize) < m && nc >= 0 && (nc as usize) < n && g[nr as usize][nc as usize] == 1 {
+                    union(&mut parent, &mut size, idx(r, c), idx(nr as usize, nc as usize));
                 }
             }
             let after = size[find(&mut parent, top)];

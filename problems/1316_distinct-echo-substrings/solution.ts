@@ -9,9 +9,7 @@ function distinctEchoSubstrings(text: string): number {
         for (let i = 0; i + 2 * half <= n; i++) {
             // Direct half comparison: no non-echo can pass, and every
             // echo appears for exactly its own (half, i).
-            if (
-                text.slice(i, i + half) === text.slice(i + half, i + 2 * half)
-            ) {
+            if (text.slice(i, i + half) === text.slice(i + half, i + 2 * half)) {
                 // The set silently discards repeats — equal substrings
                 // hash/compare identically — so its size is the answer.
                 seen.add(text.slice(i, i + 2 * half));

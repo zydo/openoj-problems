@@ -11,9 +11,7 @@ function countPaths(grid: number[][]): number {
     cells.sort((x, y) => y[0] - x[0]);
     // dp[i][j] = number of increasing paths starting at (i, j);
     // 1 accounts for the length-1 path of the cell itself.
-    const dp: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(1),
-    );
+    const dp: number[][] = Array.from({ length: m }, () => new Array(n).fill(1));
     for (const [v, i, j] of cells) {
         for (const [di, dj] of [
             [1, 0],

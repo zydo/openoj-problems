@@ -1,7 +1,6 @@
 class Solution {
   public:
-    int minimumHammingDistance(vector<int> &source, vector<int> &target,
-                               vector<vector<int>> &allowedSwaps) {
+    int minimumHammingDistance(vector<int> &source, vector<int> &target, vector<vector<int>> &allowedSwaps) {
         int n = source.size();
         vector<int> parent(n);
         for (int i = 0; i < n; i++)

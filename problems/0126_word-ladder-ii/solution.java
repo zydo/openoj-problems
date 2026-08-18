@@ -9,11 +9,7 @@ import java.util.Set;
 
 class Solution {
 
-    public String[][] findLadders(
-        String beginWord,
-        String endWord,
-        String[] wordList
-    ) {
+    public String[][] findLadders(String beginWord, String endWord, String[] wordList) {
         Set<String> wordSet = new HashSet<>();
         for (String w : wordList) wordSet.add(w);
         if (!wordSet.contains(endWord)) {
@@ -47,15 +43,11 @@ class Solution {
                     if (nd == null) {
                         // First discovery: nxt is one level below word.
                         dist.put(nxt, d + 1);
-                        adjacency
-                            .computeIfAbsent(word, k -> new ArrayList<>())
-                            .add(nxt);
+                        adjacency.computeIfAbsent(word, k -> new ArrayList<>()).add(nxt);
                         queue.add(nxt);
                     } else if (nd == d + 1) {
                         // Already exactly one level below: parallel shortest edge.
-                        adjacency
-                            .computeIfAbsent(word, k -> new ArrayList<>())
-                            .add(nxt);
+                        adjacency.computeIfAbsent(word, k -> new ArrayList<>()).add(nxt);
                     }
                     // Same-level or backward edges never lie on a shortest
                     // ladder, so they are simply not recorded.

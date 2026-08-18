@@ -1,12 +1,8 @@
 function getMaxFunctionValue(receiver: number[], k: number): number {
     const n = receiver.length;
     const log = k.toString(2).length; // bit length of k
-    const up: number[][] = Array.from({ length: log }, () =>
-        new Array(n).fill(0),
-    );
-    const sm: number[][] = Array.from({ length: log }, () =>
-        new Array(n).fill(0),
-    );
+    const up: number[][] = Array.from({ length: log }, () => new Array(n).fill(0));
+    const sm: number[][] = Array.from({ length: log }, () => new Array(n).fill(0));
     for (let x = 0; x < n; x++) {
         up[0][x] = receiver[x];
         sm[0][x] = receiver[x];

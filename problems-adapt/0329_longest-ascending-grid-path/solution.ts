@@ -9,9 +9,7 @@ function longestAscendingPath(matrix: number[][]): number {
     // larger neighbors), so ascending value order is a topological order.
     cells.sort((a, b) => a[0] - b[0]);
     // dp[i][j] = longest increasing path starting at (i, j); 1 = cell alone.
-    const dp: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(1),
-    );
+    const dp: number[][] = Array.from({ length: m }, () => new Array(n).fill(1));
     let best = 1;
     for (const [v, i, j] of cells) {
         // Smaller neighbors appear earlier in the sort, so their dp is

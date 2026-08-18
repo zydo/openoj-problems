@@ -18,8 +18,7 @@ var findNumOfValidWords = function (words, puzzles) {
         // a valid word mask must contain the puzzle's first letter
         const first = 1 << (puzzle.charCodeAt(0) - 97);
         let puzzleMask = 0;
-        for (let t = 0; t < puzzle.length; t++)
-            puzzleMask |= 1 << (puzzle.charCodeAt(t) - 97);
+        for (let t = 0; t < puzzle.length; t++) puzzleMask |= 1 << (puzzle.charCodeAt(t) - 97);
         let total = 0;
         // enumerate every submask of the 7-letter puzzle mask (at most 127);
         // sub = (sub - 1) & puzzleMask walks them all in order

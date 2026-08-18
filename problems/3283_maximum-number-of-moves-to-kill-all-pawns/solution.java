@@ -32,9 +32,7 @@ class Solution {
             for (int[] mv : MOVES) {
                 int nx = x + mv[0],
                     ny = y + mv[1];
-                if (
-                    nx >= 0 && nx < 50 && ny >= 0 && ny < 50 && dist[nx][ny] < 0
-                ) {
+                if (nx >= 0 && nx < 50 && ny >= 0 && ny < 50 && dist[nx][ny] < 0) {
                     dist[nx][ny] = d + 1;
                     queue.add(new int[] { nx, ny });
                 }

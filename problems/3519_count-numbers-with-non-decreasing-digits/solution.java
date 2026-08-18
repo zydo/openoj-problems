@@ -54,9 +54,7 @@ class Solution {
         }
         if (digits.isEmpty()) return new int[] { 0 };
         int[] out = new int[digits.size()];
-        for (int i = 0; i < out.length; i++) out[i] = digits.get(
-            out.length - 1 - i
-        );
+        for (int i = 0; i < out.length; i++) out[i] = digits.get(out.length - 1 - i);
         return out;
     }
 
@@ -65,13 +63,11 @@ class Solution {
         int m = digits.length;
         // g[pos][last][tight][started]
         long[][][][] g = new long[m + 1][b][2][2];
-        for (int last = 0; last < b; last++) for (
-            int tight = 0;
-            tight < 2;
-            tight++
-        ) for (int started = 0; started < 2; started++) g[m][last][tight][
-            started
-        ] = 1;
+        for (int last = 0; last < b; last++) for (int tight = 0; tight < 2; tight++) for (
+            int started = 0;
+            started < 2;
+            started++
+        ) g[m][last][tight][started] = 1;
         for (int pos = m - 1; pos >= 0; pos--) {
             for (int last = 0; last < b; last++) {
                 for (int tight = 0; tight < 2; tight++) {

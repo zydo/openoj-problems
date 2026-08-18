@@ -56,9 +56,7 @@ class Solution {
 
         long answer = 0;
         for (int i = 0; i < n; i++) {
-            long cnt =
-                countPairs(Lmax[i], Rmax[i], K) +
-                countPairs(Lmin[i], Rmin[i], K);
+            long cnt = countPairs(Lmax[i], Rmax[i], K) + countPairs(Lmin[i], Rmin[i], K);
             answer += (long) nums[i] * cnt;
         }
         return answer;

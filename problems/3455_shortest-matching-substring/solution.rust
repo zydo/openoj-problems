@@ -34,11 +34,7 @@ impl Solution {
             return 0;
         }
         if segs.len() == 1 {
-            return if segs[0].1.is_empty() {
-                -1
-            } else {
-                segs[0].0 as i32
-            };
+            return if segs[0].1.is_empty() { -1 } else { segs[0].0 as i32 };
         }
         if segs.len() == 2 {
             let (l1, occ1) = (&segs[0].0, &segs[0].1);
@@ -62,11 +58,7 @@ impl Solution {
         let mut best_i_for_j: Vec<Option<i64>> = Vec::with_capacity(occ2.len());
         for &j in occ2 {
             let idx = occ1.partition_point(|&x| x <= j - l1) as i64 - 1;
-            best_i_for_j.push(if idx >= 0 {
-                Some(occ1[idx as usize])
-            } else {
-                None
-            });
+            best_i_for_j.push(if idx >= 0 { Some(occ1[idx as usize]) } else { None });
         }
         let mut best: Option<i64> = None;
         for &k in occ3 {

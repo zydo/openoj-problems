@@ -35,10 +35,7 @@ class Solution {
                 return base - cur;
             }
             if (idx + 1 < n) {
-                heap.add(new long[] {
-                    cur - costs[idx] + costs[idx + 1],
-                    idx + 1,
-                });
+                heap.add(new long[] { cur - costs[idx] + costs[idx + 1], idx + 1 });
                 heap.add(new long[] { cur + costs[idx + 1], idx + 1 });
             }
         }

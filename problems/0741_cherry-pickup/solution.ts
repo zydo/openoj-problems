@@ -5,9 +5,7 @@ function cherryPickup(grid: number[][]): number {
     let dp: number[][] = Array.from({ length: n }, () => new Array(n).fill(-1));
     dp[0][0] = grid[0][0];
     for (let t = 1; t <= 2 * n - 2; t++) {
-        const ndp: number[][] = Array.from({ length: n }, () =>
-            new Array(n).fill(-1),
-        );
+        const ndp: number[][] = Array.from({ length: n }, () => new Array(n).fill(-1));
         const lo = Math.max(0, t - n + 1);
         const hi = Math.min(n - 1, t);
         for (let r1 = lo; r1 <= hi; r1++) {

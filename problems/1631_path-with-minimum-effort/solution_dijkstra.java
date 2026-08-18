@@ -13,9 +13,7 @@ class Solution {
             java.util.Arrays.fill(row, Integer.MAX_VALUE);
         }
         dist[0][0] = 0;
-        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            Integer.compare(a[0], b[0])
-        );
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         heap.offer(new int[] { 0, 0, 0 });
         int[][] dirs = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
         while (!heap.isEmpty()) {
@@ -35,10 +33,7 @@ class Solution {
                 int nr = r + dir[0];
                 int nc = c + dir[1];
                 if (nr >= 0 && nr < rows && nc >= 0 && nc < cols) {
-                    int nd = Math.max(
-                        d,
-                        Math.abs(heights[nr][nc] - heights[r][c])
-                    );
+                    int nd = Math.max(d, Math.abs(heights[nr][nc] - heights[r][c]));
                     // Relax only when the bottleneck effort strictly improves.
                     if (nd < dist[nr][nc]) {
                         dist[nr][nc] = nd;

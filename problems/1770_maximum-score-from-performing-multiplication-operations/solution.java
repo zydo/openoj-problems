@@ -17,8 +17,7 @@ class Solution {
                 // prev holds stage i + 1: taking the left moves to
                 // (i+1, l+1), taking the right to (i+1, l).
                 long takeLeft = prev[l + 1] + (long) multipliers[i] * nums[l];
-                long takeRight =
-                    prev[l] + (long) multipliers[i] * nums[n - 1 - r];
+                long takeRight = prev[l] + (long) multipliers[i] * nums[n - 1 - r];
                 cur[l] = takeLeft >= takeRight ? takeLeft : takeRight;
             }
             long[] tmp = prev;

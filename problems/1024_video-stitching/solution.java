@@ -5,11 +5,7 @@ class Solution {
     public int videoStitching(int[][] clips, int time) {
         // Jump-game greedy over clips sorted by start.
         int[][] ordered = clips.clone();
-        Arrays.sort(ordered, (a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[1], b[1])
-        );
+        Arrays.sort(ordered, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
         int count = 0;
         int covered = 0;
         int farthest = 0;

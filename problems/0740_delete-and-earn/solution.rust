@@ -13,11 +13,7 @@ impl Solution {
         for (&value, &c) in &count {
             // Adjacent predecessor conflicts with its take; a gap (missing v-1)
             // makes taking v conflict with nothing, so both states carry in.
-            let base = if prev == Some(value - 1) {
-                skip
-            } else {
-                take.max(skip)
-            };
+            let base = if prev == Some(value - 1) { skip } else { take.max(skip) };
             let new_take = base + value as i64 * c;
             let new_skip = take.max(skip);
             take = new_take;

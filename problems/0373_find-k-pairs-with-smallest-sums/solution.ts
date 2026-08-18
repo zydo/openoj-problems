@@ -1,8 +1,4 @@
-function kSmallestPairs(
-    nums1: number[],
-    nums2: number[],
-    k: number,
-): number[][] {
+function kSmallestPairs(nums1: number[], nums2: number[], k: number): number[][] {
     if (nums1.length === 0 || nums2.length === 0 || k <= 0) return [];
     // min-heap of [sum, i, j] ordered lexicographically
     const heap: number[][] = [];

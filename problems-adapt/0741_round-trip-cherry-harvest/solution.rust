@@ -30,12 +30,8 @@ impl Solution {
                     if best < 0 {
                         continue;
                     }
-                    let gain = grid[r1 as usize][c1 as usize]
-                        + if r1 != r2 {
-                            grid[r2 as usize][c2 as usize]
-                        } else {
-                            0
-                        };
+                    let gain =
+                        grid[r1 as usize][c1 as usize] + if r1 != r2 { grid[r2 as usize][c2 as usize] } else { 0 };
                     ndp[r1 as usize][r2 as usize] = best + gain;
                 }
             }

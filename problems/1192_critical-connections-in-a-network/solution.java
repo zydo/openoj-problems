@@ -25,11 +25,7 @@ class Solution {
         // graph is connected, so one root reaches every server
         dfs(0, -1);
         // sort only for a deterministic output order
-        bridges.sort((x, y) ->
-            x[0] != y[0]
-                ? Integer.compare(x[0], y[0])
-                : Integer.compare(x[1], y[1])
-        );
+        bridges.sort((x, y) -> x[0] != y[0] ? Integer.compare(x[0], y[0]) : Integer.compare(x[1], y[1]));
         int[][] res = new int[bridges.size()][2];
         for (int i = 0; i < bridges.size(); i++) {
             res[i][0] = bridges.get(i)[0];

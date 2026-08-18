@@ -1,8 +1,4 @@
-function longestRepeating(
-    s: string,
-    queryCharacters: string,
-    queryIndices: number[],
-): number[] {
+function longestRepeating(s: string, queryCharacters: string, queryIndices: number[]): number[] {
     const n = s.length;
     if (n === 0) return [];
 
@@ -52,13 +48,7 @@ function longestRepeating(
         pull(node);
     };
 
-    const update = (
-        node: number,
-        lo: number,
-        hi: number,
-        pos: number,
-        ch: string,
-    ): void => {
+    const update = (node: number, lo: number, hi: number, pos: number, ch: string): void => {
         if (lo === hi) {
             chars[pos] = ch;
             leftChar[node] = rightChar[node] = ch;

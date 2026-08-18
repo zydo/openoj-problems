@@ -9,6 +9,4 @@ class Solution:
         # First half (most negative differences) flies A, rest fly B — the
         # split satisfies the half/half count structurally.
         n = len(ordered) // 2
-        return sum(cost[0] for cost in ordered[:n]) + sum(
-            cost[1] for cost in ordered[n:]
-        )
+        return sum(cost[0] for cost in ordered[:n]) + sum(cost[1] for cost in ordered[n:])

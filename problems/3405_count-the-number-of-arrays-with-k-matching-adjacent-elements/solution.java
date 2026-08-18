@@ -14,15 +14,9 @@ class Solution {
             invFact[i - 1] = (invFact[i] * i) % MOD;
         }
 
-        long comb =
-            k < 0 || k > n - 1
-                ? 0
-                : (((fact[n - 1] * invFact[k]) % MOD) * invFact[n - 1 - k]) %
-                  MOD;
+        long comb = k < 0 || k > n - 1 ? 0 : (((fact[n - 1] * invFact[k]) % MOD) * invFact[n - 1 - k]) % MOD;
 
-        return (int) (((((long) (m % MOD) * comb) % MOD) *
-            powMod(m - 1, n - 1 - k, MOD)) %
-            MOD);
+        return (int) (((((long) (m % MOD) * comb) % MOD) * powMod(m - 1, n - 1 - k, MOD)) % MOD);
     }
 
     private long powMod(long base, long exp, long mod) {

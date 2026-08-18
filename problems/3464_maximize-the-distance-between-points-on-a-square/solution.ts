@@ -10,9 +10,7 @@ function maxDistance(side: number, points: number[][], k: number): number {
     };
 
     const n = points.length;
-    const coords: number[] = points
-        .map((p) => perimeter(p[0], p[1]))
-        .sort((a, b) => a - b);
+    const coords: number[] = points.map((p) => perimeter(p[0], p[1])).sort((a, b) => a - b);
     const arr: number[] = new Array(2 * n);
     for (let i = 0; i < n; i++) {
         arr[i] = coords[i];

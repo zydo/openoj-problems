@@ -2,9 +2,7 @@ function countGridIslands(grid: string[][]): number {
     const rows = grid.length;
     if (rows === 0) return 0;
     const cols = grid[0].length;
-    const visited: boolean[][] = Array.from({ length: rows }, () =>
-        new Array(cols).fill(false),
-    );
+    const visited: boolean[][] = Array.from({ length: rows }, () => new Array(cols).fill(false));
     const dirs = [
         [1, 0],
         [-1, 0],
@@ -23,14 +21,7 @@ function countGridIslands(grid: string[][]): number {
                     for (const [dx, dy] of dirs) {
                         const nx = x + dx,
                             ny = y + dy;
-                        if (
-                            nx >= 0 &&
-                            nx < rows &&
-                            ny >= 0 &&
-                            ny < cols &&
-                            grid[nx][ny] === "1" &&
-                            !visited[nx][ny]
-                        ) {
+                        if (nx >= 0 && nx < rows && ny >= 0 && ny < cols && grid[nx][ny] === "1" && !visited[nx][ny]) {
                             visited[nx][ny] = true;
                             stack.push([nx, ny]);
                         }

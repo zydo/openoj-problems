@@ -33,11 +33,7 @@ function lengthOfLIS(nums: number[], k: number): number {
         const current = query(Math.max(1, x - k), x - 1) + 1;
         // Climb from the leaf and stop once an ancestor is already
         // >= current: a shorter subsequence never overwrites a longer.
-        for (
-            let i = x + size;
-            i >= 1 && tree[i] < current;
-            i = Math.floor(i / 2)
-        ) {
+        for (let i = x + size; i >= 1 && tree[i] < current; i = Math.floor(i / 2)) {
             tree[i] = current;
         }
         answer = Math.max(answer, current);

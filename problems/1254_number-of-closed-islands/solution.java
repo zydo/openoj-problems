@@ -18,15 +18,7 @@ class Solution {
         return count;
     }
 
-    private boolean flood(
-        int[][] grid,
-        int r,
-        int c,
-        int rows,
-        int cols,
-        int[] dr,
-        int[] dc
-    ) {
+    private boolean flood(int[][] grid, int r, int c, int rows, int cols, int[] dr, int[] dc) {
         // Erase land to water as we walk: the fill doubles as the visited
         // marker, and an explicit stack keeps snake-shaped islands from
         // overflowing the recursion stack.

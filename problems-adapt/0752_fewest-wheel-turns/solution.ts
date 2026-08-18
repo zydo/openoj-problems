@@ -18,10 +18,7 @@ function fewestTurns(deadends: string[], target: string): number {
                 for (const delta of [1, -1]) {
                     // Turn wheel i up or down, wrapping 0..9.
                     const digit = (state.charCodeAt(i) - 48 + delta + 10) % 10;
-                    const nxt =
-                        state.substring(0, i) +
-                        String(digit) +
-                        state.substring(i + 1);
+                    const nxt = state.substring(0, i) + String(digit) + state.substring(i + 1);
                     // Mark seen at enqueue time so each state enters
                     // the queue once; never step on a deadend.
                     if (!seen.has(nxt) && !dead.has(nxt)) {

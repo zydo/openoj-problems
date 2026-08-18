@@ -1,8 +1,7 @@
 class Solution {
   public:
     int findMinArrowShots(vector<vector<int>> &points) {
-        sort(points.begin(), points.end(),
-             [](const vector<int> &a, const vector<int> &b) { return a[1] < b[1]; });
+        sort(points.begin(), points.end(), [](const vector<int> &a, const vector<int> &b) { return a[1] < b[1]; });
         // Point-cover greedy: sort by right endpoint and shoot at the right
         // end of the first unburst balloon — among points covering it, the
         // right endpoint covers every interval any earlier point could.

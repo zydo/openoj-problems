@@ -59,15 +59,12 @@ class Solution {
                 int vert5_top = col5[j][i + 1];
                 int vert5_bottom = col5[j][m] - col5[j][i];
 
-                answer = max(
-                    answer,
-                    max({
-                        min(horiz2_left + vert2_top - cell2, horiz5_left + vert5_top - cell5),
-                        min(horiz2_right + vert2_top - cell2, horiz5_right + vert5_top - cell5),
-                        min(horiz2_left + vert2_bottom - cell2, horiz5_left + vert5_bottom - cell5),
-                        min(horiz2_right + vert2_bottom - cell2,
-                            horiz5_right + vert5_bottom - cell5),
-                    }));
+                answer = max(answer, max({
+                                         min(horiz2_left + vert2_top - cell2, horiz5_left + vert5_top - cell5),
+                                         min(horiz2_right + vert2_top - cell2, horiz5_right + vert5_top - cell5),
+                                         min(horiz2_left + vert2_bottom - cell2, horiz5_left + vert5_bottom - cell5),
+                                         min(horiz2_right + vert2_bottom - cell2, horiz5_right + vert5_bottom - cell5),
+                                     }));
             }
         }
         return answer;

@@ -1,7 +1,7 @@
 class Solution {
   public:
-    long long minimumCost(string source, string target, vector<string> &original,
-                          vector<string> &changed, vector<int> &cost) {
+    long long minimumCost(string source, string target, vector<string> &original, vector<string> &changed,
+                          vector<int> &cost) {
         // A conversion rule is a directed edge in the 26-letter cost graph;
         // the cheapest a->b conversion is the shortest path a->b.
         const long long INF = LLONG_MAX / 4;

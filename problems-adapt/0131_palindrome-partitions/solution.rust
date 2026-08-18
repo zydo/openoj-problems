@@ -22,13 +22,7 @@ impl Solution {
     }
 }
 
-fn backtrack(
-    s: &[u8],
-    start: usize,
-    is_pal: &[Vec<bool>],
-    current: &mut Vec<String>,
-    result: &mut Vec<Vec<String>>,
-) {
+fn backtrack(s: &[u8], start: usize, is_pal: &[Vec<bool>], current: &mut Vec<String>, result: &mut Vec<Vec<String>>) {
     if start == s.len() {
         // The pieces tile the whole string: snapshot the palindromePartitions.
         result.push(current.clone());

@@ -6,13 +6,7 @@ import java.util.PriorityQueue;
 
 class Solution {
 
-    public long minimumWeight(
-        int n,
-        int[][] edges,
-        int src1,
-        int src2,
-        int dest
-    ) {
+    public long minimumWeight(int n, int[][] edges, int src1, int src2, int dest) {
         List<long[]>[] adj = new ArrayList[n];
         List<long[]>[] radj = new ArrayList[n];
         for (int i = 0; i < n; i++) {
@@ -32,11 +26,7 @@ class Solution {
         long best = Long.MAX_VALUE;
         for (int v = 0; v < n; v++) {
             // skip any v on a missing leg; none can lie on a valid subgraph
-            if (
-                dd[v] != Long.MAX_VALUE &&
-                d1[v] != Long.MAX_VALUE &&
-                d2[v] != Long.MAX_VALUE
-            ) {
+            if (dd[v] != Long.MAX_VALUE && d1[v] != Long.MAX_VALUE && d2[v] != Long.MAX_VALUE) {
                 long total = d1[v] + d2[v] + dd[v];
                 if (total < best) best = total;
             }
@@ -48,9 +38,7 @@ class Solution {
         long[] dist = new long[n];
         Arrays.fill(dist, Long.MAX_VALUE);
         dist[src] = 0;
-        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) ->
-            Long.compare(a[0], b[0])
-        );
+        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
         heap.offer(new long[] { 0, src });
         while (!heap.isEmpty()) {
             long[] top = heap.poll();

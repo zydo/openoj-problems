@@ -4,9 +4,8 @@ class Solution {
         // Order by slack (minimum - actual) descending: a high-slack task
         // done early banks its surplus while the budget is still high —
         // exchange arguments show an adjacent inversion never helps.
-        sort(tasks.begin(), tasks.end(), [](const vector<int> &a, const vector<int> &b) {
-            return (b[1] - b[0]) < (a[1] - a[0]);
-        });
+        sort(tasks.begin(), tasks.end(),
+             [](const vector<int> &a, const vector<int> &b) { return (b[1] - b[0]) < (a[1] - a[0]); });
         long long spent = 0;
         long long answer = 0;
         for (auto &task : tasks) {

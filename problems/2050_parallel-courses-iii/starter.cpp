@@ -1,6 +1,4 @@
 class Solution {
   public:
-    int minimumTime(int n, vector<vector<int>> &relations, vector<int> &time) {
-        throw logic_error("TODO");
-    }
+    int minimumTime(int n, vector<vector<int>> &relations, vector<int> &time) { throw logic_error("TODO"); }
 };

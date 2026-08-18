@@ -4,9 +4,7 @@ import heapq
 
 
 class Solution:
-    def maxPerformance(
-        self, n: int, speed: List[int], efficiency: List[int], k: int
-    ) -> int:
+    def maxPerformance(self, n: int, speed: List[int], efficiency: List[int], k: int) -> int:
         MOD = 10**9 + 7
         # Decouple sum(speeds) * min(efficiency) by fixing the minimum:
         # sweep in decreasing efficiency so the current engineer caps the

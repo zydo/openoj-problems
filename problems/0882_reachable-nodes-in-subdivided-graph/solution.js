@@ -37,10 +37,8 @@ var reachableNodes = function (edges, maxMoves, n) {
                 let smallest = i;
                 const l = 2 * i + 1;
                 const r = 2 * i + 2;
-                if (l < heap.length && heap[l][0] < heap[smallest][0])
-                    smallest = l;
-                if (r < heap.length && heap[r][0] < heap[smallest][0])
-                    smallest = r;
+                if (l < heap.length && heap[l][0] < heap[smallest][0]) smallest = l;
+                if (r < heap.length && heap[r][0] < heap[smallest][0]) smallest = r;
                 if (smallest === i) break;
                 [heap[smallest], heap[i]] = [heap[i], heap[smallest]];
                 i = smallest;

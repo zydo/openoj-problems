@@ -3,9 +3,7 @@ impl Solution {
         let n = start_time.len();
         // Weighted interval scheduling: pack as (end, start, profit) so jobs
         // come out in end-time order and best[i] is final before it is read.
-        let mut jobs: Vec<(i32, i32, i32)> = (0..n)
-            .map(|i| (end_time[i], start_time[i], profit[i]))
-            .collect();
+        let mut jobs: Vec<(i32, i32, i32)> = (0..n).map(|i| (end_time[i], start_time[i], profit[i])).collect();
         jobs.sort();
         let ends: Vec<i32> = jobs.iter().map(|j| j.0).collect();
 

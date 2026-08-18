@@ -1,9 +1,7 @@
 class Solution {
 
     public boolean matrixContains(int[][] matrix, int target) {
-        if (
-            matrix == null || matrix.length == 0 || matrix[0].length == 0
-        ) return false;
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return false;
         // Start at the top-right corner: largest in its row and smallest in
         // its column, so one comparison eliminates a whole row or column.
         int row = 0,

@@ -2,9 +2,7 @@ import java.util.List;
 
 class Solution {
 
-    public int leftMostColumnWithOne(
-        InteractiveOracles.BinaryMatrix binaryMatrix
-    ) {
+    public int leftMostColumnWithOne(InteractiveOracles.BinaryMatrix binaryMatrix) {
         List<Integer> size = binaryMatrix.dimensions();
         int rows = size.get(0),
             cols = size.get(1);

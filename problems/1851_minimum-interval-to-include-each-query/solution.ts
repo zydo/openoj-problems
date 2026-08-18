@@ -1,16 +1,11 @@
 function minInterval(intervals: number[][], queries: number[]): number[] {
-    const sorted = [...intervals].sort((a, b) =>
-        a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1],
-    );
+    const sorted = [...intervals].sort((a, b) => (a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]));
     // Sweep queries in ascending order so each interval's life is a contiguous
     // stretch of the sweep: live from its left end, dead past its right end.
-    const order = queries
-        .map((_, j) => j)
-        .sort((a, b) => queries[a] - queries[b]);
+    const order = queries.map((_, j) => j).sort((a, b) => queries[a] - queries[b]);
     // Min-heap of [size, right] pairs.
     const heap: [number, number][] = [];
-    const less = (a: [number, number], b: [number, number]) =>
-        a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1];
+    const less = (a: [number, number], b: [number, number]) => (a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1]);
     const push = (item: [number, number]) => {
         heap.push(item);
         let i = heap.length - 1;

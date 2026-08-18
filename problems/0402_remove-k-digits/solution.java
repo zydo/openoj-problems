@@ -6,11 +6,7 @@ class Solution {
             char ch = num.charAt(i);
             // A kept digit larger than the arriving one should go: a smaller
             // digit in a more significant position outweighs anything later.
-            while (
-                k > 0 &&
-                stack.length() > 0 &&
-                stack.charAt(stack.length() - 1) > ch
-            ) {
+            while (k > 0 && stack.length() > 0 && stack.charAt(stack.length() - 1) > ch) {
                 stack.deleteCharAt(stack.length() - 1);
                 --k;
             }

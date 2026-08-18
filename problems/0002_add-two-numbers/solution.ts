@@ -1,7 +1,4 @@
-function addTwoNumbers(
-    l1: ListNode | null,
-    l2: ListNode | null,
-): ListNode | null {
+function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
     // Dummy head anchors the result list so the first node is not a
     // special case; tail always points at the last node built.
     const dummy = new ListNode(0);

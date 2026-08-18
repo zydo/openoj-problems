@@ -16,8 +16,7 @@ function maxProfit(inventory: number[], orders: number): number {
         const band = width * (h - low); // balls in the full band (low, h]
         if (remaining >= band) {
             // sell every ball valued low+1 .. h for each of the width colors
-            total +=
-                (BigInt(width) * BigInt(h + low + 1) * BigInt(h - low)) / 2n;
+            total += (BigInt(width) * BigInt(h + low + 1) * BigInt(h - low)) / 2n;
             remaining -= band;
             i += 1;
         } else {

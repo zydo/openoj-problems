@@ -3,12 +3,7 @@ import java.util.Map;
 
 class Solution {
 
-    public int countQuadrupleZeroSums(
-        int[] first,
-        int[] second,
-        int[] third,
-        int[] fourth
-    ) {
+    public int countQuadrupleZeroSums(int[] first, int[] second, int[] third, int[] fourth) {
         // Meet in the middle: a+b+c+d = 0 iff a+b = -(c+d), so index the
         // first two arrays' pair sums with multiplicities (not a set).
         Map<Integer, Integer> sums = new HashMap<>();

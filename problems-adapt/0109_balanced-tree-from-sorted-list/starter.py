@@ -15,7 +15,5 @@ class TreeNode:
 
 
 class Solution:
-    def balancedTreeFromSortedList(
-        self, head: Optional[ListNode]
-    ) -> Optional[TreeNode]:
+    def balancedTreeFromSortedList(self, head: Optional[ListNode]) -> Optional[TreeNode]:
         raise NotImplementedError("TODO")

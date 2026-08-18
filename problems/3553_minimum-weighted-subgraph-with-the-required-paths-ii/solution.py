@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def minimumWeight(
-        self, edges: List[List[int]], queries: List[List[int]]
-    ) -> List[int]:
+    def minimumWeight(self, edges: List[List[int]], queries: List[List[int]]) -> List[int]:
         n = len(edges) + 1
         adj: List[List[tuple]] = [[] for _ in range(n)]
         for u, v, w in edges:
@@ -58,7 +56,4 @@ class Solution:
 
         # The minimal subtree joining a, b, c is the union of the three paths,
         # each edge lying on exactly two of them.
-        return [
-            (distance(a, b) + distance(b, c) + distance(c, a)) // 2
-            for a, b, c in queries
-        ]
+        return [(distance(a, b) + distance(b, c) + distance(c, a)) // 2 for a, b, c in queries]

@@ -16,12 +16,7 @@ class Solution {
 
     // Classic greedy subsequence scan: skipping removed positions, match each
     // character of p at the earliest opportunity (optimal for containment).
-    private boolean stillSubsequence(
-        String s,
-        String p,
-        int[] removable,
-        int k
-    ) {
+    private boolean stillSubsequence(String s, String p, int[] removable, int k) {
         boolean[] removed = new boolean[s.length()];
         for (int i = 0; i < k; i++) removed[removable[i]] = true;
         int pi = 0;

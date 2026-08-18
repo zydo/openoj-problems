@@ -12,9 +12,7 @@ class Solution {
         dist[0] = 0;
         ways[0] = 1; // exactly one way to be at the source: the empty path
         // min-heap of (dist, node)
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>,
-                       greater<pair<long long, int>>>
-            heap;
+        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> heap;
         heap.push({0, 0});
         while (!heap.empty()) {
             auto [d, u] = heap.top();

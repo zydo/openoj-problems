@@ -9,7 +9,5 @@ class TreeNode:
 
 
 class Solution:
-    def rebuildTreeFromTwoTraversals(
-        self, preorder: List[int], inorder: List[int]
-    ) -> Optional[TreeNode]:
+    def rebuildTreeFromTwoTraversals(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
         raise NotImplementedError("TODO")

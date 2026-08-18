@@ -1,7 +1,3 @@
-function boundedPeakSubarrays(
-    nums: number[],
-    left: number,
-    right: number,
-): number {
+function boundedPeakSubarrays(nums: number[], left: number, right: number): number {
     throw new Error("TODO");
 }

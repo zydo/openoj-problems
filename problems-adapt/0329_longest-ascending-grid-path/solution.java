@@ -8,11 +8,7 @@ class Solution {
             n = matrix[0].length;
         List<int[]> cells = new ArrayList<>();
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) cells.add(new int[] {
-                matrix[i][j],
-                i,
-                j,
-            });
+            for (int j = 0; j < n; j++) cells.add(new int[] { matrix[i][j], i, j });
         }
         // Strictly increasing paths make the cells a DAG (edges point to
         // larger neighbors), so ascending value order is a topological order.
@@ -31,9 +27,7 @@ class Solution {
             for (int[] d : dirs) {
                 int ni = i + d[0],
                     nj = j + d[1];
-                if (
-                    ni >= 0 && ni < m && nj >= 0 && nj < n && matrix[ni][nj] < v
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && matrix[ni][nj] < v) {
                     if (dp[ni][nj] + 1 > dp[i][j]) dp[i][j] = dp[ni][nj] + 1;
                 }
             }

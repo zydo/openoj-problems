@@ -49,18 +49,7 @@ class Solution {
         while (k < events.length) {
             long y = events[k][0];
             while (k < events.length && events[k][0] == y) {
-                update(
-                    xs,
-                    index,
-                    count,
-                    cover,
-                    1,
-                    0,
-                    m - 1,
-                    events[k][1],
-                    events[k][2],
-                    (int) events[k][3]
-                );
+                update(xs, index, count, cover, 1, 0, m - 1, events[k][1], events[k][2], (int) events[k][3]);
                 k++;
             }
             if (k < events.length) {
@@ -108,18 +97,7 @@ class Solution {
         } else {
             int mid = (lo + hi) / 2;
             update(xs, index, count, cover, 2 * node, lo, mid, x1, x2, delta);
-            update(
-                xs,
-                index,
-                count,
-                cover,
-                2 * node + 1,
-                mid,
-                hi,
-                x1,
-                x2,
-                delta
-            );
+            update(xs, index, count, cover, 2 * node + 1, mid, hi, x1, x2, delta);
         }
         if (count[node] > 0) {
             cover[node] = xs[hi] - xs[lo];

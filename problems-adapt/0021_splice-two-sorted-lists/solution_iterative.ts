@@ -1,7 +1,4 @@
-function spliceTwoSortedLists(
-    first: ListNode | null,
-    second: ListNode | null,
-): ListNode | null {
+function spliceTwoSortedLists(first: ListNode | null, second: ListNode | null): ListNode | null {
     // Dummy head: every attachment happens the same way, with no special
     // case for the first node; the real head is simply dummy.next.
     const dummy = new ListNode(0);

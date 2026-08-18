@@ -8,9 +8,7 @@ class Solution {
         // State = (cost, node, flights taken). Carrying the count in the
         // state is what enforces the limit: a state that already used its
         // k+1 flights is never allowed to board another.
-        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>,
-                       greater<tuple<int, int, int>>>
-            heap;
+        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> heap;
         heap.emplace(0, src, 0);
         vector<int> best(n, INT_MAX);
         while (!heap.empty()) {

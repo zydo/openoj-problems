@@ -20,8 +20,7 @@ var maxPoints = function (grid, queries) {
     // each cell is pushed at most once). The start cell is marked visited up
     // front so it must be earned by the pop loop like any other.
     const heap = [[grid[0][0], 0, 0]];
-    const less = (x, y) =>
-        x[0] !== y[0] ? x[0] < y[0] : x[1] !== y[1] ? x[1] < y[1] : x[2] < y[2];
+    const less = (x, y) => (x[0] !== y[0] ? x[0] < y[0] : x[1] !== y[1] ? x[1] < y[1] : x[2] < y[2]);
     const push = (v) => {
         heap.push(v);
         let i = heap.length - 1;
@@ -72,13 +71,7 @@ var maxPoints = function (grid, queries) {
                 [r, c - 1],
             ];
             for (const [nr, nc] of nb) {
-                if (
-                    0 <= nr &&
-                    nr < m &&
-                    0 <= nc &&
-                    nc < n &&
-                    !visited[nr][nc]
-                ) {
+                if (0 <= nr && nr < m && 0 <= nc && nc < n && !visited[nr][nc]) {
                     // Mark at push time: no duplicate entries, so each cell
                     // enters and leaves the heap exactly once overall.
                     visited[nr][nc] = true;

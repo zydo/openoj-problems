@@ -8,8 +8,7 @@ class Solution {
                 int j = i + gap;
                 int best = Integer.MAX_VALUE;
                 for (int k = i + 1; k < j; k++) {
-                    int candidate =
-                        dp[i][k] + dp[k][j] + values[i] * values[k] * values[j];
+                    int candidate = dp[i][k] + dp[k][j] + values[i] * values[k] * values[j];
                     if (candidate < best) {
                         best = candidate;
                     }

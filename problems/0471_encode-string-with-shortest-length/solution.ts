@@ -25,12 +25,8 @@ function encode(s: string): string {
                 if (length % p === 0) {
                     const pattern = s.slice(i, i + p);
                     if (pattern.repeat(length / p) === substr) {
-                        const encoded =
-                            String(length / p) + "[" + dp[i][i + p - 1] + "]";
-                        if (
-                            compression === null ||
-                            encoded.length < compression.length
-                        ) {
+                        const encoded = String(length / p) + "[" + dp[i][i + p - 1] + "]";
+                        if (compression === null || encoded.length < compression.length) {
                             compression = encoded;
                         }
                     }
@@ -40,10 +36,7 @@ function encode(s: string): string {
             // already-encoded best; a tie with the raw text keeps the text
             // ("aaa" stays "aaa", "aaaaa" becomes "5[a]").
             if (compression !== null) {
-                if (
-                    compression.length < best.length ||
-                    (compression.length === best.length && best !== substr)
-                ) {
+                if (compression.length < best.length || (compression.length === best.length && best !== substr)) {
                     best = compression;
                 }
             }

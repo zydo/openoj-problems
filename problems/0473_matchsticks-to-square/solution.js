@@ -19,12 +19,7 @@ var makesquare = function (matchsticks) {
         if (i === sticks.length) {
             // Guaranteed by the capacity checks + total = 4 * side; kept
             // as a final safety assertion.
-            return (
-                sides[0] === side &&
-                sides[1] === side &&
-                sides[2] === side &&
-                sides[3] === side
-            );
+            return sides[0] === side && sides[1] === side && sides[2] === side && sides[3] === side;
         }
         const value = sticks[i];
         const tried = new Set();

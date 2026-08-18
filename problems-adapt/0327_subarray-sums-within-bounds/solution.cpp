@@ -18,8 +18,7 @@ class Solution {
         }
         int mid = lo + (hi - lo) / 2;
         // Pairs inside each half first; cross pairs next.
-        long long count = mergeCount(prefix, lo, mid, lower, upper) +
-                          mergeCount(prefix, mid + 1, hi, lower, upper);
+        long long count = mergeCount(prefix, lo, mid, lower, upper) + mergeCount(prefix, mid + 1, hi, lower, upper);
 
         // Left half is sorted, so for each left prefix the valid right
         // entries form the window [l, r): l skips below-lower, r passes

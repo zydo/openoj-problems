@@ -22,8 +22,8 @@ class Solution {
     }
 
   private:
-    void backtrack(const string &s, int start, const vector<vector<bool>> &isPal,
-                   vector<string> &current, vector<vector<string>> &result) {
+    void backtrack(const string &s, int start, const vector<vector<bool>> &isPal, vector<string> &current,
+                   vector<vector<string>> &result) {
         if (start == (int)s.size()) {
             // The pieces tile the whole string: snapshot the palindromePartitions.
             result.push_back(current);

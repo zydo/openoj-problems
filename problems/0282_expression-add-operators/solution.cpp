@@ -14,8 +14,8 @@ class Solution {
     // current is the expression's value so far; prev is the trailing
     // multiplicand chain that a later '*' binds to, not all of current.
     // The very first operand seeds both.
-    void dfs(const string &num, long long target, int index, long long prev, long long current,
-             string &expression, vector<string> &results) {
+    void dfs(const string &num, long long target, int index, long long prev, long long current, string &expression,
+             vector<string> &results) {
         int n = (int)num.size();
         if (index == n) {
             // The evaluation travels with the search: one comparison.
@@ -52,8 +52,7 @@ class Solution {
                 // contribution, add prev * nxt.
                 expression += '*';
                 expression += to_string(nxt);
-                dfs(num, target, end + 1, prev * nxt, current - prev + prev * nxt, expression,
-                    results);
+                dfs(num, target, end + 1, prev * nxt, current - prev + prev * nxt, expression, results);
             }
             expression.resize(lengthBefore);
         }

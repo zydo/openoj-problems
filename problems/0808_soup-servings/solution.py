@@ -23,11 +23,6 @@ class Solution:
 
         for a in range(1, m + 1):
             for b in range(1, m + 1):
-                table[a][b] = 0.25 * (
-                    value(a - 4, b)
-                    + value(a - 3, b - 1)
-                    + value(a - 2, b - 2)
-                    + value(a - 1, b - 3)
-                )
+                table[a][b] = 0.25 * (value(a - 4, b) + value(a - 3, b - 1) + value(a - 2, b - 2) + value(a - 1, b - 3))
 
         return value(m, m)

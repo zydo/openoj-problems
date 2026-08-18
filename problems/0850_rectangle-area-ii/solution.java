@@ -33,16 +33,8 @@ class Solution {
         // share edge cells without overlap or gaps, and idempotent
         // marking counts overlaps once.
         for (int[] rect : rectangles) {
-            for (
-                int i = xIndex.get((long) rect[0]);
-                i < xIndex.get((long) rect[2]);
-                i++
-            ) {
-                for (
-                    int j = yIndex.get((long) rect[1]);
-                    j < yIndex.get((long) rect[3]);
-                    j++
-                ) {
+            for (int i = xIndex.get((long) rect[0]); i < xIndex.get((long) rect[2]); i++) {
+                for (int j = yIndex.get((long) rect[1]); j < yIndex.get((long) rect[3]); j++) {
                     grid[i][j] = true;
                 }
             }

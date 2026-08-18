@@ -1,8 +1,7 @@
 function totalCost(costs: number[], k: number, candidates: number): number {
     const n = costs.length;
     type Pair = [number, number];
-    const less = (x: Pair, y: Pair): boolean =>
-        x[0] !== y[0] ? x[0] < y[0] : x[1] < y[1];
+    const less = (x: Pair, y: Pair): boolean => (x[0] !== y[0] ? x[0] < y[0] : x[1] < y[1]);
     class MinHeap {
         a: Pair[] = [];
         push(v: Pair): void {
@@ -68,10 +67,7 @@ function totalCost(costs: number[], k: number, candidates: number): number {
     let total = 0;
     for (let t = 0; t < k; t++) {
         // Cheaper top wins; !less(right, left) also prefers left on ties.
-        if (
-            right.size === 0 ||
-            (left.size > 0 && !less(right.peek()!, left.peek()!))
-        ) {
+        if (right.size === 0 || (left.size > 0 && !less(right.peek()!, left.peek()!))) {
             const cost = left.pop()[0];
             if (i <= j) {
                 left.push([costs[i], i]);

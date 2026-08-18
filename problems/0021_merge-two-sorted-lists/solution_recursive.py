@@ -8,9 +8,7 @@ class ListNode:
 
 
 class Solution:
-    def mergeTwoLists(
-        self, list1: Optional[ListNode], list2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         # Base case: an empty list is already sorted, so the other list —
         # whatever remains of it — is the merged continuation as is.
         if list1 is None:

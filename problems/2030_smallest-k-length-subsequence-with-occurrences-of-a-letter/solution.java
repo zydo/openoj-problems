@@ -1,11 +1,6 @@
 class Solution {
 
-    public String smallestSubsequence(
-        String s,
-        int k,
-        String letter,
-        int repetition
-    ) {
+    public String smallestSubsequence(String s, int k, String letter, int repetition) {
         int n = s.length();
         char target = letter.charAt(0);
         // suffix[i] = number of `letter` occurrences in s[i:]

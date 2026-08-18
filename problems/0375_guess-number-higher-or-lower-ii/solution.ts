@@ -13,8 +13,7 @@ function getMoneyAmount(n: number): number {
             // Minimax: the opponent may hide in the worse side, so
             // guessing g costs g + max(dp of the two remaining sides).
             for (let guess = i; guess <= j; guess++) {
-                const cost =
-                    guess + Math.max(dp[i][guess - 1], dp[guess + 1][j]);
+                const cost = guess + Math.max(dp[i][guess - 1], dp[guess + 1][j]);
                 if (cost < best) best = cost;
             }
             dp[i][j] = best;

@@ -50,10 +50,7 @@ var rectangleArea = function (rectangles) {
     for (let i = 0; i < nx; i++) {
         for (let j = 0; j < ny; j++) {
             if (grid[i][j]) {
-                total =
-                    (total +
-                        mulmod(xs[i + 1] - xs[i], ys[j + 1] - ys[j], MOD)) %
-                    MOD;
+                total = (total + mulmod(xs[i + 1] - xs[i], ys[j + 1] - ys[j], MOD)) % MOD;
             }
         }
     }

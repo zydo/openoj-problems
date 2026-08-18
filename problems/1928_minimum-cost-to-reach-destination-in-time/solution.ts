@@ -1,8 +1,4 @@
-function minCost(
-    maxTime: number,
-    edges: number[][],
-    passingFees: number[],
-): number {
+function minCost(maxTime: number, edges: number[][], passingFees: number[]): number {
     const n = passingFees.length;
     const INF = Infinity;
     // Unfold the graph into layers indexed by exact arrival time:
@@ -19,10 +15,8 @@ function minCost(
             if (dt > t) continue; // edge cannot fit in the elapsed time
             // Relax both directions from the layer exactly dt minutes ago.
             const prev = layers[t - dt];
-            if (prev[x] + passingFees[y] < cur[y])
-                cur[y] = prev[x] + passingFees[y];
-            if (prev[y] + passingFees[x] < cur[x])
-                cur[x] = prev[y] + passingFees[x];
+            if (prev[x] + passingFees[y] < cur[y]) cur[y] = prev[x] + passingFees[y];
+            if (prev[y] + passingFees[x] < cur[x]) cur[x] = prev[y] + passingFees[x];
         }
         layers[t] = cur;
     }

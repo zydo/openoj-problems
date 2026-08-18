@@ -71,8 +71,7 @@ class AllOne {
         Bucket old = node.bucket;
         unlinkNode(node);
         Bucket neighbour = up ? old.next : old.prev;
-        Bucket bucket =
-            neighbour.count == target ? neighbour : new Bucket(target);
+        Bucket bucket = neighbour.count == target ? neighbour : new Bucket(target);
         if (bucket != neighbour) {
             addBucketAfter(up ? old : neighbour, bucket);
         }

@@ -14,19 +14,11 @@ class Solution {
             // Odd-length palindromes expand from (c, c): each still-matching
             // step exposes s[l..r] and relaxes cut[r + 1] with cut[l] + 1.
             // Left-to-right centers keep every cut[l] read already final.
-            for (
-                int l = c, r = c;
-                l >= 0 && r < n && cs[l] == cs[r];
-                --l, ++r
-            ) {
+            for (int l = c, r = c; l >= 0 && r < n && cs[l] == cs[r]; --l, ++r) {
                 cut[r + 1] = Math.min(cut[r + 1], cut[l] + 1);
             }
             // Even-length palindromes expand from (c, c + 1).
-            for (
-                int l = c, r = c + 1;
-                l >= 0 && r < n && cs[l] == cs[r];
-                --l, ++r
-            ) {
+            for (int l = c, r = c + 1; l >= 0 && r < n && cs[l] == cs[r]; --l, ++r) {
                 cut[r + 1] = Math.min(cut[r + 1], cut[l] + 1);
             }
         }

@@ -1,8 +1,4 @@
-function maxTotalFruits(
-    fruits: number[][],
-    startPos: number,
-    k: number,
-): number {
+function maxTotalFruits(fruits: number[][], startPos: number, k: number): number {
     const n = fruits.length;
     // An optimal walk turns at most once, so the harvest is always one
     // contiguous interval of the position-sorted fruit array. Prefix sums
@@ -35,10 +31,7 @@ function maxTotalFruits(
     // affordability before counting (a lone unreachable fruit never
     // contributes). Both pointers only advance, so the sweep is linear.
     for (let right = 0; right < n; right++) {
-        while (
-            left < right &&
-            windowCost(positions[left], positions[right]) > k
-        ) {
+        while (left < right && windowCost(positions[left], positions[right]) > k) {
             left++;
         }
         if (windowCost(positions[left], positions[right]) <= k) {

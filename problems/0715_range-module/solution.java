@@ -76,22 +76,12 @@ class RangeModule {
         return low;
     }
 
-    private static void splice(
-        List<Integer> values,
-        int from,
-        int to,
-        int value
-    ) {
+    private static void splice(List<Integer> values, int from, int to, int value) {
         values.subList(from, to).clear();
         values.add(from, value);
     }
 
-    private static void replace(
-        List<Integer> values,
-        int from,
-        int to,
-        List<Integer> replacement
-    ) {
+    private static void replace(List<Integer> values, int from, int to, List<Integer> replacement) {
         values.subList(from, to).clear();
         values.addAll(from, replacement);
     }

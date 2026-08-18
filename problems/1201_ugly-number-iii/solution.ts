@@ -18,16 +18,7 @@ function nthUglyNumber(n: number, a: number, b: number, c: number): number {
     return lo;
 }
 
-function count(
-    x: number,
-    a: number,
-    b: number,
-    c: number,
-    ab: number,
-    ac: number,
-    bc: number,
-    abc: number,
-): number {
+function count(x: number, a: number, b: number, c: number, ab: number, ac: number, bc: number, abc: number): number {
     // ugly numbers <= x via inclusion-exclusion: add each divisor's
     // multiples, subtract the pairwise lcms (counted twice), add
     // back the triple lcm

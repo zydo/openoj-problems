@@ -18,9 +18,7 @@ class Solution {
                     cur[j] = 1;
                 } else {
                     // limited by the three neighbors: above, left, diagonal
-                    cur[j] =
-                        Math.min(prev[j], Math.min(cur[j - 1], prev[j - 1])) +
-                        1;
+                    cur[j] = Math.min(prev[j], Math.min(cur[j - 1], prev[j - 1])) + 1;
                 }
                 // a corner of max side k covers all k nested squares ending
                 // there, so summing dp values counts every square exactly once

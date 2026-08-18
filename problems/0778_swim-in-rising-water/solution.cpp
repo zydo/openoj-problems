@@ -8,9 +8,7 @@ class Solution {
         // reachable — the start waits for grid[0][0] itself.
         vector<vector<int>> dist(n, vector<int>(n, INT_MAX));
         dist[0][0] = grid[0][0];
-        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>,
-                       greater<tuple<int, int, int>>>
-            heap;
+        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> heap;
         heap.push({grid[0][0], 0, 0});
         int dirs[4][2] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
         while (!heap.empty()) {

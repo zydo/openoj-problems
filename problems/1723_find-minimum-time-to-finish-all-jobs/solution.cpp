@@ -16,8 +16,7 @@ class Solution {
     }
 
   private:
-    static void dfs(int i, int n, int k, const vector<int> &jobs, vector<long long> &loads,
-                    long long &best) {
+    static void dfs(int i, int n, int k, const vector<int> &jobs, vector<long long> &loads, long long &best) {
         if (i == n) {
             // Every complete assignment is legal; keep its max load.
             long long current = 0;

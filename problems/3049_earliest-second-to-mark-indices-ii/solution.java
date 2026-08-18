@@ -34,13 +34,7 @@ class Solution {
         return low <= m ? (int) low : -1;
     }
 
-    private boolean check(
-        int[] nums,
-        int[] changeIndices,
-        int[] first,
-        long total,
-        int t
-    ) {
+    private boolean check(int[] nums, int[] changeIndices, int[] first, long total, int t) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         long cnt = 0;
         long sum = 0;

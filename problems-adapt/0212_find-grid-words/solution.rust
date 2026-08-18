@@ -35,9 +35,7 @@ impl Solution {
         // A word may begin anywhere, so start a DFS from every cell.
         for i in 0..m {
             for j in 0..n {
-                Self::dfs(
-                    &grid, i as i64, j as i64, &root, &mut seen, &mut found, &dirs,
-                );
+                Self::dfs(&grid, i as i64, j as i64, &root, &mut seen, &mut found, &dirs);
             }
         }
         found.into_iter().collect()

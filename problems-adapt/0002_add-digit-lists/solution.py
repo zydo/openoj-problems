@@ -8,9 +8,7 @@ class ListNode:
 
 
 class Solution:
-    def addDigitLists(
-        self, first: Optional[ListNode], second: Optional[ListNode]
-    ) -> Optional[ListNode]:
+    def addDigitLists(self, first: Optional[ListNode], second: Optional[ListNode]) -> Optional[ListNode]:
         # Dummy head anchors the result list so the first node is not a
         # special case; tail always points at the last node built.
         dummy = ListNode(0)

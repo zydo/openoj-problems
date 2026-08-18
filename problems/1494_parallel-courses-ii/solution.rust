@@ -22,28 +22,14 @@ impl Solution {
             }
         }
         // Enumerate every exactly-need-sized subset of bits[start..] by recursion.
-        fn choose(
-            bits: &[usize],
-            start: usize,
-            need: usize,
-            taken: usize,
-            steps: i32,
-            dp: &mut [i32],
-        ) {
+        fn choose(bits: &[usize], start: usize, need: usize, taken: usize, steps: i32, dp: &mut [i32]) {
             if need == 0 {
                 relax(taken, steps + 1, dp);
                 return;
             }
             let mut i = start;
             while i + need <= bits.len() {
-                choose(
-                    bits,
-                    i + 1,
-                    need - 1,
-                    taken | (1usize << bits[i]),
-                    steps,
-                    dp,
-                );
+                choose(bits, i + 1, need - 1, taken | (1usize << bits[i]), steps, dp);
                 i += 1;
             }
         }

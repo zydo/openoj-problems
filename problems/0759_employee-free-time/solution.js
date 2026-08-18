@@ -5,9 +5,7 @@
 var employeeFreeTime = function (schedule) {
     // A moment is free exactly when no employee is busy, so only the
     // union matters: pool every interval, forgetting ownership.
-    const intervals = []
-        .concat(...schedule)
-        .sort((a, b) => (a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]));
+    const intervals = [].concat(...schedule).sort((a, b) => (a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]));
     const free = [];
     let previousEnd = null;
     for (const [start, end] of intervals) {

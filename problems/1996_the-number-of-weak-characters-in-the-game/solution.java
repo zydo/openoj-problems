@@ -7,11 +7,7 @@ class Solution {
         // same-attack characters (who can never weaken each other) only
         // ever meet a running max from strictly higher-attack groups.
         int[][] props = properties.clone();
-        Arrays.sort(props, (a, b) ->
-            b[0] != a[0]
-                ? Integer.compare(b[0], a[0])
-                : Integer.compare(a[1], b[1])
-        );
+        Arrays.sort(props, (a, b) -> b[0] != a[0] ? Integer.compare(b[0], a[0]) : Integer.compare(a[1], b[1]));
         int weak = 0;
         // Every earlier character has attack >= the current one's, so the
         // current one is weak exactly when some seen defense is strictly

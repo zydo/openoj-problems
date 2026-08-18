@@ -1,8 +1,4 @@
-function successfulPairs(
-    spells: number[],
-    potions: number[],
-    success: number,
-): number[] {
+function successfulPairs(spells: number[], potions: number[], success: number): number[] {
     // a pair works iff spell * potion >= success; successful potions are
     // exactly the strongest suffix of the sorted copy
     const sorted = potions.slice().sort((a, b) => a - b);

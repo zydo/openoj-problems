@@ -1,7 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> buildMatrix(int k, vector<vector<int>> &rowConditions,
-                                    vector<vector<int>> &colConditions) {
+    vector<vector<int>> buildMatrix(int k, vector<vector<int>> &rowConditions, vector<vector<int>> &colConditions) {
         vector<int> rowOrder;
         if (!topo(k, rowConditions, rowOrder)) {
             return {};

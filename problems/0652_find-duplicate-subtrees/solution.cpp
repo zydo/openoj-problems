@@ -15,8 +15,7 @@ class Solution {
         for (const auto &[serial, entry] : info) {
             entries.push_back(entry);
         }
-        sort(entries.begin(), entries.end(),
-             [](const Entry &a, const Entry &b) { return a.lastIndex < b.lastIndex; });
+        sort(entries.begin(), entries.end(), [](const Entry &a, const Entry &b) { return a.lastIndex < b.lastIndex; });
         vector<TreeNode *> duplicates;
         for (const Entry &entry : entries) {
             if (entry.count >= 2) {
@@ -32,8 +31,8 @@ class Solution {
             return "#";
         }
         int index = counter++;
-        string serial = to_string(node->val) + "," + key(node->left, info, counter) + "," +
-                        key(node->right, info, counter);
+        string serial =
+            to_string(node->val) + "," + key(node->left, info, counter) + "," + key(node->right, info, counter);
         auto it = info.find(serial);
         if (it != info.end()) {
             it->second.lastIndex = index;

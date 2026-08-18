@@ -5,9 +5,7 @@ function lenLongestFibSubseq(arr: number[]): number {
         indexOf.set(arr[i], i);
     }
     // dp[j][i] = longest Fibonacci-like subsequence ending with arr[j], arr[i]
-    const dp: number[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(2),
-    );
+    const dp: number[][] = Array.from({ length: n }, () => new Array(n).fill(2));
     let best = 0;
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < i; j++) {

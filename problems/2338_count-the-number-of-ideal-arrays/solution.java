@@ -19,10 +19,7 @@ class Solution {
                 break;
             }
             // C(n-1, chainLen) = C(n-1, chainLen-1) * (n - chainLen) / chainLen
-            comb =
-                (((comb * (n - chainLen)) % MOD) *
-                    powmod(chainLen, MOD - 2, MOD)) %
-                MOD;
+            comb = (((comb * (n - chainLen)) % MOD) * powmod(chainLen, MOD - 2, MOD)) % MOD;
             long[] ndp = new long[maxValue + 1];
             for (int v = 1; v <= maxValue; v++) {
                 long cv = dp[v];

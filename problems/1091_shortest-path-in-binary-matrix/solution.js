@@ -25,14 +25,7 @@ var shortestPathBinaryMatrix = function (grid) {
                 if (dx === 0 && dy === 0) continue;
                 const nx = x + dx,
                     ny = y + dy;
-                if (
-                    nx >= 0 &&
-                    nx < n &&
-                    ny >= 0 &&
-                    ny < n &&
-                    grid[nx][ny] === 0 &&
-                    dist[nx][ny] === 0
-                ) {
+                if (nx >= 0 && nx < n && ny >= 0 && ny < n && grid[nx][ny] === 0 && dist[nx][ny] === 0) {
                     // Early exit the moment the goal becomes reachable.
                     if (nx === n - 1 && ny === n - 1) {
                         return dist[x][y] + 1;

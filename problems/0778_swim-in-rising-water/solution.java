@@ -13,9 +13,7 @@ class Solution {
             java.util.Arrays.fill(row, Integer.MAX_VALUE);
         }
         dist[0][0] = grid[0][0];
-        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            Integer.compare(a[0], b[0])
-        );
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         heap.add(new int[] { grid[0][0], 0, 0 });
         int[][] dirs = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
         while (!heap.isEmpty()) {

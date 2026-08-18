@@ -10,10 +10,7 @@ impl Solution {
         // reduces the total — so a min-heap keyed by rot day is optimal.
         for i in 0..n {
             if apples[i] > 0 {
-                heap.push(std::cmp::Reverse((
-                    i as i64 + days[i] as i64,
-                    apples[i] as i64,
-                )));
+                heap.push(std::cmp::Reverse((i as i64 + days[i] as i64, apples[i] as i64)));
             }
             // Purge batches whose rot day has arrived (inedible from day
             // i + days[i] on).

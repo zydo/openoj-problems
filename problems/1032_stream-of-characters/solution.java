@@ -20,9 +20,7 @@ class StreamChecker {
         for (String word : words) {
             Node node = root;
             for (int index = 0; index < word.length(); index++) {
-                node = node.children.computeIfAbsent(word.charAt(index), key ->
-                    new Node()
-                );
+                node = node.children.computeIfAbsent(word.charAt(index), key -> new Node());
             }
             node.word = true;
         }

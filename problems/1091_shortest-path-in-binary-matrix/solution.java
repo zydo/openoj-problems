@@ -19,16 +19,7 @@ class Solution {
         dist[0][0] = 1;
         queue.offer(new int[] { 0, 0 });
         // Eight-directional neighborhood (diagonals included).
-        int[][] moves = {
-            { -1, -1 },
-            { -1, 0 },
-            { -1, 1 },
-            { 0, -1 },
-            { 0, 1 },
-            { 1, -1 },
-            { 1, 0 },
-            { 1, 1 },
-        };
+        int[][] moves = { { -1, -1 }, { -1, 0 }, { -1, 1 }, { 0, -1 }, { 0, 1 }, { 1, -1 }, { 1, 0 }, { 1, 1 } };
         while (!queue.isEmpty()) {
             int[] cur = queue.poll();
             int x = cur[0],
@@ -36,14 +27,7 @@ class Solution {
             for (int[] m : moves) {
                 int nx = x + m[0],
                     ny = y + m[1];
-                if (
-                    nx >= 0 &&
-                    nx < n &&
-                    ny >= 0 &&
-                    ny < n &&
-                    grid[nx][ny] == 0 &&
-                    dist[nx][ny] == 0
-                ) {
+                if (nx >= 0 && nx < n && ny >= 0 && ny < n && grid[nx][ny] == 0 && dist[nx][ny] == 0) {
                     // Early exit the moment the goal becomes reachable.
                     if (nx == n - 1 && ny == n - 1) {
                         return dist[x][y] + 1;

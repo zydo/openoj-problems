@@ -4,9 +4,7 @@ impl Solution {
         // Taking a stone gains your value AND denies the opponent theirs, so
         // both players effectively compete for aliceValues[i] + bobValues[i].
         let mut order: Vec<usize> = (0..n).collect();
-        order.sort_by(|&i, &j| {
-            (alice_values[j] + bob_values[j]).cmp(&(alice_values[i] + bob_values[i]))
-        });
+        order.sort_by(|&i, &j| (alice_values[j] + bob_values[j]).cmp(&(alice_values[i] + bob_values[i])));
         let mut diff: i64 = 0;
         for (rank, &i) in order.iter().enumerate() {
             if rank % 2 == 0 {

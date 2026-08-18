@@ -49,39 +49,15 @@ class Solution {
                 // '+'/'-' fold nxt straight into current; the chain resets
                 // to nxt (or -nxt so a later '*' reverses the subtraction).
                 expression.append('+').append(nxt);
-                dfs(
-                    num,
-                    target,
-                    end + 1,
-                    nxt,
-                    current + nxt,
-                    expression,
-                    results
-                );
+                dfs(num, target, end + 1, nxt, current + nxt, expression, results);
                 expression.setLength(lengthBefore);
                 expression.append('-').append(nxt);
-                dfs(
-                    num,
-                    target,
-                    end + 1,
-                    -nxt,
-                    current - nxt,
-                    expression,
-                    results
-                );
+                dfs(num, target, end + 1, -nxt, current - nxt, expression, results);
                 expression.setLength(lengthBefore);
                 // '*' rewrites the tail in place: drop the chain's old
                 // contribution, add prev * nxt.
                 expression.append('*').append(nxt);
-                dfs(
-                    num,
-                    target,
-                    end + 1,
-                    prev * nxt,
-                    current - prev + prev * nxt,
-                    expression,
-                    results
-                );
+                dfs(num, target, end + 1, prev * nxt, current - prev + prev * nxt, expression, results);
             }
             expression.setLength(lengthBefore);
         }

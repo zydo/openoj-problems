@@ -3,9 +3,7 @@ from bisect import bisect_left
 
 
 class Solution:
-    def suggestedProducts(
-        self, products: List[str], searchWord: str
-    ) -> List[List[str]]:
+    def suggestedProducts(self, products: List[str], searchWord: str) -> List[List[str]]:
         # lexicographic order makes every shared prefix a contiguous run
         products = sorted(products)
         result = []

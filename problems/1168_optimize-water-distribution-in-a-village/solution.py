@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def minCostToSupplyWater(
-        self, n: int, wells: List[int], pipes: List[List[int]]
-    ) -> int:
+    def minCostToSupplyWater(self, n: int, wells: List[int], pipes: List[List[int]]) -> int:
         # Kruskal over houses 1..n plus a virtual node 0 (well edges).
         edges = []
         for i in range(n):

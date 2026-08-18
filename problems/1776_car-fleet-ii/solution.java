@@ -20,8 +20,7 @@ class Solution {
             while (!stack.isEmpty()) {
                 int j = stack.peek();
                 // When i would reach j, assuming j keeps its speed.
-                double t =
-                    (double) (cars[j][0] - position) / (speed - cars[j][1]);
+                double t = (double) (cars[j][0] - position) / (speed - cars[j][1]);
                 // If j merges earlier, it has slowed before i arrives: it is
                 // no first collision for i (nor for anyone further left), so
                 // pop permanently and try the next candidate.

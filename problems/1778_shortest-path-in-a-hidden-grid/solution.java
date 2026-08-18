@@ -34,9 +34,7 @@ class Solution {
                 int nr = r + DR[idx],
                     nc = c + DC[idx];
                 idx += 1;
-                if (
-                    master.canMove(direction) && !seen.containsKey(key(nr, nc))
-                ) {
+                if (master.canMove(direction) && !seen.containsKey(key(nr, nc))) {
                     master.move(direction);
                     seen.put(key(nr, nc), Boolean.TRUE);
                     if (master.isTarget()) {
@@ -74,10 +72,7 @@ class Solution {
             for (int i = 0; i < 4; i++) {
                 int nr = r + DR[i],
                     nc = c + DC[i];
-                if (
-                    seen.containsKey(key(nr, nc)) &&
-                    !dist.containsKey(key(nr, nc))
-                ) {
+                if (seen.containsKey(key(nr, nc)) && !dist.containsKey(key(nr, nc))) {
                     dist.put(key(nr, nc), d + 1);
                     queue.add(new long[] { nr, nc });
                 }

@@ -3,11 +3,7 @@
  * @return {number}
  */
 var evaluate = function (expression) {
-    const tokens = expression
-        .replace(/\(/g, " ( ")
-        .replace(/\)/g, " ) ")
-        .trim()
-        .split(/\s+/);
+    const tokens = expression.replace(/\(/g, " ( ").replace(/\)/g, " ) ").trim().split(/\s+/);
 
     const isVar = (t) => {
         const c = t.charAt(0);

@@ -25,8 +25,7 @@ var minimumMoves = function (nums, k, maxChanges) {
             const pos = Math.floor((l + r) / 2);
             const leftCnt = pos - l;
             const rightCnt = r - pos;
-            const left =
-                leftCnt * ones[pos] - (prefix[pos - 1] - prefix[l - 1]);
+            const left = leftCnt * ones[pos] - (prefix[pos - 1] - prefix[l - 1]);
             const right = prefix[r] - prefix[pos] - rightCnt * ones[pos];
             const cost = left + right;
             if (cost < best) best = cost;

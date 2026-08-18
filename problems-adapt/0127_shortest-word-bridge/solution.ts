@@ -1,14 +1,9 @@
-function shortestBridgeLength(
-    startWord: string,
-    targetWord: string,
-    dictionary: string[],
-): number {
+function shortestBridgeLength(startWord: string, targetWord: string, dictionary: string[]): number {
     const wordSet = new Set(dictionary);
     // No sequence can end outside the dictionary.
     if (!wordSet.has(targetWord)) return 0;
     const length = startWord.length;
-    const patternOf = (word: string, i: number): string =>
-        word.slice(0, i) + "*" + word.slice(i + 1);
+    const patternOf = (word: string, i: number): string => word.slice(0, i) + "*" + word.slice(i + 1);
 
     // File every word under each wildcard pattern ("malt" -> "*alt",
     // "m*lt", ...): all one-letter neighbors share one of its patterns.

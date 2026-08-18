@@ -8,21 +8,10 @@ class Solution:
 
         # Enumerate the at most 3*2^(m-1)=48 column states: every valid
         # coloring of one column has vertically adjacent rows differing.
-        states = [
-            col
-            for col in product(range(3), repeat=m)
-            if all(col[i] != col[i + 1] for i in range(m - 1))
-        ]
+        states = [col for col in product(range(3), repeat=m) if all(col[i] != col[i + 1] for i in range(m - 1))]
         # Two columns may be adjacent exactly when they differ in every row;
         # precompute that compatibility table once.
-        compat = [
-            [
-                j
-                for j in range(len(states))
-                if all(x != y for x, y in zip(col_a, states[j]))
-            ]
-            for col_a in states
-        ]
+        compat = [[j for j in range(len(states)) if all(x != y for x, y in zip(col_a, states[j]))] for col_a in states]
 
         # All ones: the first column can take any valid coloring (this also
         # makes n=1 fall out with the loop body never running).

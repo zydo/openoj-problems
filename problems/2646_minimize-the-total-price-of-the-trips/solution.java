@@ -5,12 +5,7 @@ import java.util.List;
 
 class Solution {
 
-    public int minimumTotalPrice(
-        int n,
-        int[][] edges,
-        int[] price,
-        int[][] trips
-    ) {
+    public int minimumTotalPrice(int n, int[][] edges, int[] price, int[][] trips) {
         List<List<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) adj.add(new ArrayList<>());
         for (int[] e : edges) {
@@ -58,13 +53,7 @@ class Solution {
         return (int) Math.min(res[0], res[1]);
     }
 
-    private long[] dfs(
-        int v,
-        int p,
-        List<List<Integer>> adj,
-        int[] price,
-        int[] freq
-    ) {
+    private long[] dfs(int v, int p, List<List<Integer>> adj, int[] price, int[] freq) {
         // Classic independent-set tree DP: dfs returns the min subtree
         // cost with v's price kept full (dp0) versus halved (dp1).
         long dp0 = (long) price[v] * freq[v];

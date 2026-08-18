@@ -1,8 +1,4 @@
-function subtreeInversionSum(
-    edges: number[][],
-    nums: number[],
-    k: number,
-): number {
+function subtreeInversionSum(edges: number[][], nums: number[], k: number): number {
     const n = nums.length;
     const adj: number[][] = Array.from({ length: n }, () => []);
     for (const [u, v] of edges) {
@@ -33,10 +29,7 @@ function subtreeInversionSum(
     for (let idx = n - 1; idx >= 0; idx--) {
         const u = order[idx];
         // Children are already computed; pool their tables per (flip, distance).
-        const childSum: Float64Array[] = [
-            new Float64Array(width),
-            new Float64Array(width),
-        ];
+        const childSum: Float64Array[] = [new Float64Array(width), new Float64Array(width)];
         for (const v of adj[u]) {
             if (v === parent[u]) continue;
             const cv = dp[v];
@@ -50,10 +43,7 @@ function subtreeInversionSum(
         // Not inverting: children observe distance+1 (capped at k). Once the
         // distance is >= k, inverting u is legal too: it flips the parity and
         // resets the child distance to 1; keep the better of the two options.
-        const table: Float64Array[] = [
-            new Float64Array(width),
-            new Float64Array(width),
-        ];
+        const table: Float64Array[] = [new Float64Array(width), new Float64Array(width)];
         for (let flip = 0; flip < 2; flip++) {
             const s = flip === 0 ? 1 : -1;
             const baseDont = nums[u] * s;

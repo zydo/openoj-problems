@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def treeQueries(
-        self, n: int, edges: List[List[int]], queries: List[List[int]]
-    ) -> List[int]:
+    def treeQueries(self, n: int, edges: List[List[int]], queries: List[List[int]]) -> List[int]:
         adj = [[] for _ in range(n + 1)]
         for u, v, w in edges:
             adj[u].append((v, w))

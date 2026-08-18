@@ -3,10 +3,7 @@ interface TrieNode {
     [key: string]: number | TrieNode;
 }
 
-function stringIndices(
-    wordsContainer: string[],
-    wordsQuery: string[],
-): number[] {
+function stringIndices(wordsContainer: string[], wordsQuery: string[]): number[] {
     const lens = wordsContainer.map((w) => w.length);
 
     // Tie-break: shorter word wins, then the smaller index.

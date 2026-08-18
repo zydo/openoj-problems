@@ -59,10 +59,6 @@ impl Solution {
         visit(root, &mut counter, &mut info);
         let mut entries: Vec<Entry> = info.into_values().collect();
         entries.sort_by_key(|e| e.last_index);
-        entries
-            .into_iter()
-            .filter(|e| e.count >= 2)
-            .map(|e| e.node)
-            .collect()
+        entries.into_iter().filter(|e| e.count >= 2).map(|e| e.node).collect()
     }
 }

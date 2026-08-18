@@ -10,8 +10,7 @@ var minScoreTriangulation = function (values) {
             const j = i + gap;
             let best = Infinity;
             for (let k = i + 1; k < j; k++) {
-                const candidate =
-                    dp[i][k] + dp[k][j] + values[i] * values[k] * values[j];
+                const candidate = dp[i][k] + dp[k][j] + values[i] * values[k] * values[j];
                 if (candidate < best) {
                     best = candidate;
                 }

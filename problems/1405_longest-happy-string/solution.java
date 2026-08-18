@@ -19,11 +19,7 @@ class Solution {
                 break;
             }
             int len = result.length();
-            if (
-                len >= 2 &&
-                result.charAt(len - 1) == letters[pick] &&
-                result.charAt(len - 2) == letters[pick]
-            ) {
+            if (len >= 2 && result.charAt(len - 1) == letters[pick] && result.charAt(len - 2) == letters[pick]) {
                 // head letter just placed twice -> switch to the runner-up; if
                 // the runner-up is out of budget, only one letter remains and it
                 // is already doubled — cap here rather than emit a triple

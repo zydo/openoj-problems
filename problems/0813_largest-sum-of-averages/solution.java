@@ -19,10 +19,7 @@ class Solution {
             for (int i = 0; i <= n - groups; i++) {
                 double result = 0.0;
                 for (int j = i + 1; j <= n - groups + 1; j++) {
-                    result = Math.max(
-                        result,
-                        (double) (prefix[j] - prefix[i]) / (j - i) + dp[j]
-                    );
+                    result = Math.max(result, (double) (prefix[j] - prefix[i]) / (j - i) + dp[j]);
                 }
                 ndp[i] = result;
             }

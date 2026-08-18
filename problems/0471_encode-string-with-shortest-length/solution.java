@@ -26,12 +26,8 @@ class Solution {
                     if (length % p == 0) {
                         String pattern = s.substring(i, i + p);
                         if (pattern.repeat(length / p).equals(substr)) {
-                            String encoded =
-                                length / p + "[" + dp[i][i + p - 1] + "]";
-                            if (
-                                compression == null ||
-                                encoded.length() < compression.length()
-                            ) {
+                            String encoded = length / p + "[" + dp[i][i + p - 1] + "]";
+                            if (compression == null || encoded.length() < compression.length()) {
                                 compression = encoded;
                             }
                         }
@@ -43,8 +39,7 @@ class Solution {
                 if (compression != null) {
                     if (
                         compression.length() < best.length() ||
-                        (compression.length() == best.length() &&
-                            !best.equals(substr))
+                        (compression.length() == best.length() && !best.equals(substr))
                     ) {
                         best = compression;
                     }

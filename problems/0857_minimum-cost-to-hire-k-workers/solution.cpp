@@ -6,10 +6,9 @@ class Solution {
         for (int i = 0; i < n; i++) {
             workers[i] = {wage[i], quality[i]};
         }
-        stable_sort(workers.begin(), workers.end(),
-                    [](const pair<int, int> &a, const pair<int, int> &b) {
-                        return (double)a.first / a.second < (double)b.first / b.second;
-                    });
+        stable_sort(workers.begin(), workers.end(), [](const pair<int, int> &a, const pair<int, int> &b) {
+            return (double)a.first / a.second < (double)b.first / b.second;
+        });
 
         priority_queue<int> heap; // max-heap of chosen qualities
         long long totalQuality = 0;

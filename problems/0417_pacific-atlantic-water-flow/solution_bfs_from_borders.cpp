@@ -24,8 +24,7 @@ class Solution {
                     int nc = c + dc[d];
                     // Only a neighbor at least as tall could have flowed down
                     // into (r, c).
-                    if (nr >= 0 && nr < m && nc >= 0 && nc < n && !seen[nr][nc] &&
-                        heights[nr][nc] >= heights[r][c]) {
+                    if (nr >= 0 && nr < m && nc >= 0 && nc < n && !seen[nr][nc] && heights[nr][nc] >= heights[r][c]) {
                         // Mark on enqueue so each cell enters the queue at most once.
                         seen[nr][nc] = true;
                         queue.push_back({nr, nc});

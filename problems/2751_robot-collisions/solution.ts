@@ -1,8 +1,4 @@
-function survivedRobotsHealths(
-    positions: number[],
-    healths: number[],
-    directions: string,
-): number[] {
+function survivedRobotsHealths(positions: number[], healths: number[], directions: string): number[] {
     const h = healths.slice();
     const n = positions.length;
     const order = Array.from({ length: n }, (_, i) => i);
@@ -21,10 +17,7 @@ function survivedRobotsHealths(
             // dies or the right-movers run out (same-direction robots ahead
             // can never collide with it).
             let alive = true;
-            while (
-                stack.length > 0 &&
-                directions[stack[stack.length - 1]] === "R"
-            ) {
+            while (stack.length > 0 && directions[stack[stack.length - 1]] === "R") {
                 const top = stack[stack.length - 1];
                 // Weaker top dies; the incoming robot loses 1 health and
                 // fights on. Stronger top survives at -1; equal kills both.

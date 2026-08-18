@@ -1,12 +1,7 @@
 use std::collections::{HashSet, VecDeque};
 
 impl Solution {
-    pub fn min_runes_to_add(
-        n: i32,
-        crystals: Vec<i32>,
-        flow_from: Vec<i32>,
-        flow_to: Vec<i32>,
-    ) -> i32 {
+    pub fn min_runes_to_add(n: i32, crystals: Vec<i32>, flow_from: Vec<i32>, flow_to: Vec<i32>) -> i32 {
         let n = n as usize;
         let mut graph: Vec<Vec<usize>> = vec![Vec::new(); n];
         let mut rgraph: Vec<Vec<usize>> = vec![Vec::new(); n];

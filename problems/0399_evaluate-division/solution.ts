@@ -1,8 +1,4 @@
-function calcEquation(
-    equations: string[][],
-    values: number[],
-    queries: string[][],
-): number[] {
+function calcEquation(equations: string[][], values: number[], queries: string[][]): number[] {
     // node -> Map(neighbor -> weight); Map preserves insertion order and
     // updating an existing key keeps its original position (like Python dict).
     const graph = new Map<string, Map<string, number>>();
@@ -36,10 +32,7 @@ function calcEquation(
         let head = 0;
         while (head < queue.length) {
             const [node, product] = queue[head++];
-            for (const [neighbor, weight] of graph.get(node) as Map<
-                string,
-                number
-            >) {
+            for (const [neighbor, weight] of graph.get(node) as Map<string, number>) {
                 if (neighbor === end) {
                     // Equations are consistent, so the first path found
                     // already yields the correct quotient.

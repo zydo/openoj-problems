@@ -1,8 +1,4 @@
-function mazeRollDistance(
-    maze: number[][],
-    start: number[],
-    destination: number[],
-): number {
+function mazeRollDistance(maze: number[][], start: number[], destination: number[]): number {
     const m = maze.length,
         n = maze[0].length;
     const dist: number[][] = Array.from({ length: m }, () => Array(n).fill(-1));
@@ -62,13 +58,7 @@ function mazeRollDistance(
             let nr = r,
                 nc = c,
                 steps = 0;
-            while (
-                nr + dr >= 0 &&
-                nr + dr < m &&
-                nc + dc >= 0 &&
-                nc + dc < n &&
-                maze[nr + dr][nc + dc] === 0
-            ) {
+            while (nr + dr >= 0 && nr + dr < m && nc + dc >= 0 && nc + dc < n && maze[nr + dr][nc + dc] === 0) {
                 nr += dr;
                 nc += dc;
                 steps++;

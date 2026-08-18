@@ -7,12 +7,7 @@ impl Solution {
 
         // Reverse the flow: walk inland from the ocean border instead of
         // downhill from every cell, so one traversal finds all draining cells.
-        fn reachable(
-            heights: &[Vec<i32>],
-            m: usize,
-            n: usize,
-            border: Vec<(usize, usize)>,
-        ) -> Vec<Vec<bool>> {
+        fn reachable(heights: &[Vec<i32>], m: usize, n: usize, border: Vec<(usize, usize)>) -> Vec<Vec<bool>> {
             let mut seen = vec![vec![false; n]; m];
             let mut queue: VecDeque<(usize, usize)> = VecDeque::new();
             for cell in border {

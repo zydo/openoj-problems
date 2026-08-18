@@ -10,15 +10,11 @@ class Solution {
         }
         // Indices pre-sorted by (enqueueTime, index): the arrival stream only moves forward.
         Arrays.sort(byEnqueue, (a, b) ->
-            tasks[a][0] != tasks[b][0]
-                ? Integer.compare(tasks[a][0], tasks[b][0])
-                : Integer.compare(a, b)
+            tasks[a][0] != tasks[b][0] ? Integer.compare(tasks[a][0], tasks[b][0]) : Integer.compare(a, b)
         );
         // Min-heap ordered by (processingTime, index).
         PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[1], b[1])
+            a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1])
         );
         int[] order = new int[n];
         long time = 0;

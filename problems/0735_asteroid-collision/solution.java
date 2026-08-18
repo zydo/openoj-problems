@@ -10,12 +10,7 @@ class Solution {
             boolean alive = true;
             // A newcomer can only fight the top, and only when it moves left
             // against a right-moving survivor; other pairs never meet.
-            while (
-                alive &&
-                !stack.isEmpty() &&
-                asteroid < 0 &&
-                stack.peekLast() > 0
-            ) {
+            while (alive && !stack.isEmpty() && asteroid < 0 && stack.peekLast() > 0) {
                 int top = stack.peekLast();
                 if (top < -asteroid) {
                     // Top explodes; the newcomer continues against the new top.

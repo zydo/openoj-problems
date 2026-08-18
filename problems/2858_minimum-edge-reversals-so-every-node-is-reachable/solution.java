@@ -39,8 +39,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             int x = order[i];
             for (int[] t : graph[x]) {
-                if (parent[t[0]] == x) ans[t[0]] =
-                    ans[x] + (t[1] == 0 ? 1 : -1);
+                if (parent[t[0]] == x) ans[t[0]] = ans[x] + (t[1] == 0 ? 1 : -1);
             }
         }
         return ans;

@@ -7,11 +7,7 @@ impl Solution {
         // one dominates would strand it in a forced aaa/bbb/ccc run
         loop {
             let mut idx = [0usize, 1, 2];
-            idx.sort_by(|&x, &y| {
-                counts[y]
-                    .cmp(&counts[x])
-                    .then_with(|| letters[x].cmp(&letters[y]))
-            });
+            idx.sort_by(|&x, &y| counts[y].cmp(&counts[x]).then_with(|| letters[x].cmp(&letters[y])));
             let mut pick = idx[0];
             if counts[pick] == 0 {
                 break;

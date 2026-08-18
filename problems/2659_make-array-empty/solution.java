@@ -24,8 +24,7 @@ class Solution {
             if (pos >= cur) {
                 ops += prefix(tree, pos) - prefix(tree, cur - 1);
             } else {
-                ops +=
-                    prefix(tree, n) - prefix(tree, cur - 1) + prefix(tree, pos);
+                ops += prefix(tree, n) - prefix(tree, cur - 1) + prefix(tree, pos);
             }
             add(tree, n, pos, -1);
             removed++;

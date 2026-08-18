@@ -5,10 +5,7 @@ pub struct ListNode {
 }
 
 impl Solution {
-    pub fn merge_two_lists(
-        list1: Option<Box<ListNode>>,
-        list2: Option<Box<ListNode>>,
-    ) -> Option<Box<ListNode>> {
+    pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut a = list1;
         let mut b = list2;
         // Dummy head: the loop attaches every node the same way, with no

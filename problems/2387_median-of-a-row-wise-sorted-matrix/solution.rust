@@ -16,9 +16,7 @@ impl Solution {
         let count_le = |x: i32| -> usize {
             // Each row is sorted, so partition_point counts its <=x entries
             // in O(log n); row counts add up across the matrix.
-            grid.iter()
-                .map(|row| row.partition_point(|&v| v <= x))
-                .sum()
+            grid.iter().map(|row| row.partition_point(|&v| v <= x)).sum()
         };
         // Find the smallest x with count_le(x) >= need. It must occur in
         // the matrix, else the counts at x and x-1 would be equal.

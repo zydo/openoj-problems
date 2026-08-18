@@ -58,11 +58,7 @@ impl Solution {
                 if parent[y] != x {
                     continue;
                 }
-                let (c0, c1) = if prime[x] {
-                    (0i64, dp0[y])
-                } else {
-                    (dp0[y], dp1[y])
-                };
+                let (c0, c1) = if prime[x] { (0i64, dp0[y]) } else { (dp0[y], dp1[y]) };
                 if prime[x] {
                     // need f(a) + f(b) == 2 (both endpoints one prime)
                     ans += total1 * c1;

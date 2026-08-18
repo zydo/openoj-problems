@@ -25,10 +25,7 @@ impl Solution {
         }
         let mut result: Option<Box<ListNode>> = None;
         for &v in kept.iter() {
-            result = Some(Box::new(ListNode {
-                val: v,
-                next: result,
-            }));
+            result = Some(Box::new(ListNode { val: v, next: result }));
         }
         result
     }

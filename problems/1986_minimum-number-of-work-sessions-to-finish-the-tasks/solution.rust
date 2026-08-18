@@ -24,8 +24,7 @@ impl Solution {
                 };
                 let next = mask | bit;
                 // fewer sessions wins; tie -> more remaining time wins
-                if cand_s < sessions[next] || (cand_s == sessions[next] && cand_r > remaining[next])
-                {
+                if cand_s < sessions[next] || (cand_s == sessions[next] && cand_r > remaining[next]) {
                     sessions[next] = cand_s;
                     remaining[next] = cand_r;
                 }

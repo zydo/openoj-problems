@@ -1,9 +1,6 @@
 function collectTheCoins(coins: number[], edges: number[][]): number {
     const n = coins.length;
-    const adj: Set<number>[] = Array.from(
-        { length: n },
-        () => new Set<number>(),
-    );
+    const adj: Set<number>[] = Array.from({ length: n }, () => new Set<number>());
     for (const [a, b] of edges) {
         adj[a].add(b);
         adj[b].add(a);

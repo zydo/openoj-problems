@@ -1,14 +1,7 @@
 class Solution {
 
-    public long numberOfPowerfulInt(
-        long start,
-        long finish,
-        int limit,
-        String s
-    ) {
-        return (
-            countPowerful(finish, limit, s) - countPowerful(start - 1, limit, s)
-        );
+    public long numberOfPowerfulInt(long start, long finish, int limit, String s) {
+        return countPowerful(finish, limit, s) - countPowerful(start - 1, limit, s);
     }
 
     private long countPowerful(long x, int limit, String s) {
@@ -49,14 +42,7 @@ class Solution {
         return dp(0, 1, p, capDigits, lim, memo);
     }
 
-    private long dp(
-        int pos,
-        int tight,
-        int p,
-        int[] capDigits,
-        int lim,
-        long[][] memo
-    ) {
+    private long dp(int pos, int tight, int p, int[] capDigits, int lim, long[][] memo) {
         if (pos == p) return 1;
         if (memo[pos][tight] >= 0) return memo[pos][tight];
         int up = tight == 1 ? capDigits[pos] : 9;
@@ -64,14 +50,7 @@ class Solution {
         long total = 0;
         int hi = Math.min(up, lim);
         for (int d = lo; d <= hi; d++) {
-            total += dp(
-                pos + 1,
-                tight == 1 && d == up ? 1 : 0,
-                p,
-                capDigits,
-                lim,
-                memo
-            );
+            total += dp(pos + 1, tight == 1 && d == up ? 1 : 0, p, capDigits, lim, memo);
         }
         memo[pos][tight] = total;
         return total;

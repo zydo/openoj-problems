@@ -7,8 +7,7 @@ class Solution {
         vector<int> order(m);
         for (int i = 0; i < m; i++)
             order[i] = i;
-        stable_sort(order.begin(), order.end(),
-                    [&](int a, int b) { return edges[a][2] < edges[b][2]; });
+        stable_sort(order.begin(), order.end(), [&](int a, int b) { return edges[a][2] < edges[b][2]; });
 
         // base MST weight
         int baseWeight = 0;

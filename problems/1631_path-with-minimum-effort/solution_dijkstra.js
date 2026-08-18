@@ -65,10 +65,7 @@ var minimumEffortPath = function (heights) {
             const nr = r + dr;
             const nc = c + dc;
             if (nr >= 0 && nr < rows && nc >= 0 && nc < cols) {
-                const nd = Math.max(
-                    d,
-                    Math.abs(heights[nr][nc] - heights[r][c]),
-                );
+                const nd = Math.max(d, Math.abs(heights[nr][nc] - heights[r][c]));
                 // Relax only when the bottleneck effort strictly improves.
                 if (nd < dist[nr][nc]) {
                     dist[nr][nc] = nd;

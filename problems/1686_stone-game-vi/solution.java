@@ -10,11 +10,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             order[i] = i;
         }
-        Arrays.sort(
-            order,
-            (i, j) ->
-                aliceValues[j] + bobValues[j] - (aliceValues[i] + bobValues[i])
-        );
+        Arrays.sort(order, (i, j) -> aliceValues[j] + bobValues[j] - (aliceValues[i] + bobValues[i]));
         long diff = 0;
         for (int rank = 0; rank < n; rank++) {
             int i = order[rank];

@@ -25,9 +25,7 @@ class Solution {
                     // Replace inherits prev[j-1], delete drops word1[i-1]
                     // and inherits prev[j], insert appends word2[j-1] and
                     // inherits curr[j-1] (one fewer char of word2 to match).
-                    curr[j] =
-                        1 +
-                        Math.min(prev[j - 1], Math.min(prev[j], curr[j - 1]));
+                    curr[j] = 1 + Math.min(prev[j - 1], Math.min(prev[j], curr[j - 1]));
                 }
             }
             // Roll the rows: curr becomes the new prev.

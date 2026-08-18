@@ -19,8 +19,7 @@ class Solution {
 
     // State: position, tight (prefix equals x's), started (nonzero seen),
     // running digit sum and digit product — all that beauty depends on.
-    long long dp(vector<int> &digits, int pos, bool tight, bool started, long long ssum,
-                 long long prod) {
+    long long dp(vector<int> &digits, int pos, bool tight, bool started, long long ssum, long long prod) {
         if (pos == (int)digits.size()) {
             // Beautiful iff a number was built and prod is a multiple of the sum;
             // a 0 digit zeroes prod, and 0 is divisible by any positive sum.
@@ -48,8 +47,7 @@ class Solution {
 
     long long pack(int pos, bool tight, bool started, long long ssum, long long prod) {
         // pos <= 9 (4 bits), tight (1), started (1), ssum <= 90 (7 bits), prod <= 9^10 < 2^32
-        long long head =
-            ((((long long)pos * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)) * 128 + ssum);
+        long long head = ((((long long)pos * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)) * 128 + ssum);
         return head * (1LL << 32) + prod;
     }
 

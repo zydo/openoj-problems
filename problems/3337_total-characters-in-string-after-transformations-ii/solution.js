@@ -27,9 +27,7 @@ var lengthAfterTransformations = function (s, t, nums) {
 
     const matPow = (base, exp) => {
         const size = base.length;
-        let result = Array.from({ length: size }, (_, i) =>
-            Array.from({ length: size }, (_, j) => (i === j ? 1 : 0)),
-        );
+        let result = Array.from({ length: size }, (_, i) => Array.from({ length: size }, (_, j) => (i === j ? 1 : 0)));
         while (exp > 0) {
             if (exp & 1) {
                 result = matMul(result, base);

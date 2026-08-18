@@ -26,9 +26,7 @@ class Solution {
             for (int[] dir : dirs) {
                 int ni = i + dir[0],
                     nj = j + dir[1];
-                if (
-                    ni >= 0 && ni < m && nj >= 0 && nj < n && dist[ni][nj] == -1
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && dist[ni][nj] == -1) {
                     // An unset distance doubles as the visited check, and
                     // assigning before enqueueing keeps each cell queued
                     // exactly once; non-decreasing dequeue order makes the

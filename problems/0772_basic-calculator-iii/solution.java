@@ -5,12 +5,7 @@ class Solution {
         // nesting is within the problem's constraints, but the judge's
         // default thread stack is not.
         final int[] result = new int[1];
-        Thread worker = new Thread(
-            null,
-            () -> result[0] = (int) expr(s, new int[] { 0 }),
-            "calculate",
-            1 << 26
-        );
+        Thread worker = new Thread(null, () -> result[0] = (int) expr(s, new int[] { 0 }), "calculate", 1 << 26);
         worker.start();
         try {
             worker.join();
@@ -23,10 +18,7 @@ class Solution {
 
     private long expr(String s, int[] i) {
         long value = term(s, i);
-        while (
-            i[0] < s.length() &&
-            (s.charAt(i[0]) == '+' || s.charAt(i[0]) == '-')
-        ) {
+        while (i[0] < s.length() && (s.charAt(i[0]) == '+' || s.charAt(i[0]) == '-')) {
             char op = s.charAt(i[0]);
             i[0]++;
             long rhs = term(s, i);
@@ -37,10 +29,7 @@ class Solution {
 
     private long term(String s, int[] i) {
         long value = factor(s, i);
-        while (
-            i[0] < s.length() &&
-            (s.charAt(i[0]) == '*' || s.charAt(i[0]) == '/')
-        ) {
+        while (i[0] < s.length() && (s.charAt(i[0]) == '*' || s.charAt(i[0]) == '/')) {
             char op = s.charAt(i[0]);
             i[0]++;
             long rhs = factor(s, i);

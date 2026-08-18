@@ -11,12 +11,7 @@ class Solution {
         return (int) dfs(root, 0L, targetSum, counter);
     }
 
-    private long dfs(
-        TreeNode node,
-        long running,
-        int targetSum,
-        Map<Long, Long> counter
-    ) {
+    private long dfs(TreeNode node, long running, int targetSum, Map<Long, Long> counter) {
         if (node == null) {
             return 0;
         }

@@ -20,16 +20,7 @@ class Solution {
         return lo;
     }
 
-    private long count(
-        long x,
-        long a,
-        long b,
-        long c,
-        long ab,
-        long ac,
-        long bc,
-        long abc
-    ) {
+    private long count(long x, long a, long b, long c, long ab, long ac, long bc, long abc) {
         // ugly numbers <= x via inclusion-exclusion: add each divisor's
         // multiples, subtract the pairwise lcms (counted twice), add
         // back the triple lcm

@@ -25,9 +25,7 @@ class FoodRatings {
                         if (a[0] != b[0]) {
                             return Integer.compare(a[0], b[0]);
                         }
-                        return foodNames
-                            .get(a[1])
-                            .compareTo(foodNames.get(b[1]));
+                        return foodNames.get(a[1]).compareTo(foodNames.get(b[1]));
                     })
                 );
             }
@@ -37,9 +35,7 @@ class FoodRatings {
             info.put(foods[index], new int[] { ratings[index], cuisineId });
             // Heap min of {-rating, foodId} is exactly the required winner:
             // highest rating first, ties to the lexicographically smaller name.
-            byCuisine
-                .get(cuisineId)
-                .offer(new int[] { -ratings[index], foodId });
+            byCuisine.get(cuisineId).offer(new int[] { -ratings[index], foodId });
         }
     }
 
@@ -48,9 +44,7 @@ class FoodRatings {
         // heap as garbage; only the info map holds the current rating.
         int[] record = info.get(food);
         record[0] = newRating;
-        byCuisine
-            .get(record[1])
-            .offer(new int[] { -newRating, foodIds.get(food) });
+        byCuisine.get(record[1]).offer(new int[] { -newRating, foodIds.get(food) });
     }
 
     public String highestRated(String cuisine) {

@@ -5,15 +5,11 @@ class Solution {
     public int lastToHear(int[][] edges, int n, int k) {
         Map<Integer, List<int[]>> graph = new HashMap<>();
         for (int[] t : edges) {
-            graph
-                .computeIfAbsent(t[0], x -> new ArrayList<>())
-                .add(new int[] { t[1], t[2] });
+            graph.computeIfAbsent(t[0], x -> new ArrayList<>()).add(new int[] { t[1], t[2] });
         }
 
         Map<Integer, Integer> dist = new HashMap<>();
-        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            Integer.compare(a[0], b[0])
-        );
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         heap.offer(new int[] { 0, k });
         while (!heap.isEmpty()) {
             int[] top = heap.poll();

@@ -1,7 +1,3 @@
-function successfulPairs(
-    spells: number[],
-    potions: number[],
-    success: number,
-): number[] {
+function successfulPairs(spells: number[], potions: number[], success: number): number[] {
     throw new Error("TODO");
 }

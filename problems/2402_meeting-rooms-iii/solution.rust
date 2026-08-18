@@ -1,11 +1,7 @@
 impl Solution {
     pub fn most_booked(n: i32, meetings: Vec<Vec<i32>>) -> i32 {
         let n = n as usize;
-        let mut ordered: Vec<(i32, i32, usize)> = meetings
-            .iter()
-            .enumerate()
-            .map(|(i, m)| (m[0], m[1], i))
-            .collect();
+        let mut ordered: Vec<(i32, i32, usize)> = meetings.iter().enumerate().map(|(i, m)| (m[0], m[1], i)).collect();
         ordered.sort_by(|a, b| a.0.cmp(&b.0).then(a.2.cmp(&b.2)));
         // end_time[i] = when room i frees up (-1: never used, always free).
         let mut end_time: Vec<i64> = vec![-1; n];

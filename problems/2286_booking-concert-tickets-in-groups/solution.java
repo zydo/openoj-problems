@@ -59,21 +59,11 @@ class BookMyShow {
             return sums[node];
         }
         int mid = (lo + hi) >>> 1;
-        return (
-            rangeSum(2 * node, lo, mid, left, right) +
-            rangeSum(2 * node + 1, mid + 1, hi, left, right)
-        );
+        return rangeSum(2 * node, lo, mid, left, right) + rangeSum(2 * node + 1, mid + 1, hi, left, right);
     }
 
     /** Smallest index in [left, right] with remaining >= k, or -1. */
-    private int firstAtLeast(
-        int node,
-        int lo,
-        int hi,
-        int left,
-        int right,
-        int k
-    ) {
+    private int firstAtLeast(int node, int lo, int hi, int left, int right, int k) {
         if (right < lo || hi < left || maxs[node] < k) {
             return -1;
         }

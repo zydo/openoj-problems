@@ -6,9 +6,7 @@ function dieSimulator(n: number, rollMax: number[]): number {
     // base: one single-roll sequence per face
     for (let j = 0; j < 6; j++) dp[j][1] = 1;
     for (let step = 2; step <= n; step++) {
-        const nxt: number[][] = Array.from({ length: 6 }, () =>
-            new Array(16).fill(0),
-        );
+        const nxt: number[][] = Array.from({ length: 6 }, () => new Array(16).fill(0));
         // per-face totals and grand total, from the previous table
         const totals = dp.map((row) => row.reduce((a, b) => a + b, 0));
         const grand = totals.reduce((a, b) => a + b, 0);

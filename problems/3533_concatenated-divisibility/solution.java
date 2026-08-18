@@ -25,9 +25,7 @@ class Solution {
                 for (int i = 0; i < n; i++) {
                     if (((mask >> i) & 1) == 0) {
                         // appending nums[i] shifts rem to (rem*10^len + x) mod k
-                        int nrem = (int) (((long) rem * pow10[lens[i]] +
-                            nums[i]) %
-                            k);
+                        int nrem = (int) (((long) rem * pow10[lens[i]] + nums[i]) % k);
                         if (dp[mask | (1 << i)][nrem]) {
                             dp[mask][rem] = true;
                             break;
@@ -44,9 +42,7 @@ class Solution {
         Integer[] order = new Integer[n];
         for (int i = 0; i < n; i++) order[i] = i;
         java.util.Arrays.sort(order, (a, b) ->
-            nums[a] != nums[b]
-                ? Integer.compare(nums[a], nums[b])
-                : Integer.compare(a, b)
+            nums[a] != nums[b] ? Integer.compare(nums[a], nums[b]) : Integer.compare(a, b)
         );
         List<Integer> res = new ArrayList<>();
         int mask = 0;

@@ -1,9 +1,4 @@
-function maxPerformance(
-    n: number,
-    speed: number[],
-    efficiency: number[],
-    k: number,
-): number {
+function maxPerformance(n: number, speed: number[], efficiency: number[], k: number): number {
     const MOD = 1000000007n;
     const engineers: number[][] = [];
     for (let i = 0; i < n; i++) {

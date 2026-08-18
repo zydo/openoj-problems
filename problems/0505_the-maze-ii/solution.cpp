@@ -28,8 +28,8 @@ class Solution {
                 // weight. Passing over a cell doesn't create a node — only
                 // stopping on it does.
                 int nr = r, nc = c, steps = 0;
-                while (nr + dr[dir] >= 0 && nr + dr[dir] < m && nc + dc[dir] >= 0 &&
-                       nc + dc[dir] < n && maze[nr + dr[dir]][nc + dc[dir]] == 0) {
+                while (nr + dr[dir] >= 0 && nr + dr[dir] < m && nc + dc[dir] >= 0 && nc + dc[dir] < n &&
+                       maze[nr + dr[dir]][nc + dc[dir]] == 0) {
                     nr += dr[dir];
                     nc += dc[dir];
                     steps++;

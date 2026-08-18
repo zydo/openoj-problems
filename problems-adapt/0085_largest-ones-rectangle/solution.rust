@@ -48,11 +48,7 @@ impl Solution {
             // Fold the row in: '1' extends the run, '0' resets to 0 since a
             // rectangle cannot span a zero.
             for c in 0..cols {
-                heights[c] = if matrix[r][c] == "1" {
-                    heights[c] + 1
-                } else {
-                    0
-                };
+                heights[c] = if matrix[r][c] == "1" { heights[c] + 1 } else { 0 };
             }
             let area = Solution::largest_area(&heights);
             if area > best {

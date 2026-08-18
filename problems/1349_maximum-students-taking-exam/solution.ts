@@ -46,10 +46,7 @@ function maxStudents(seats: string[][]): number {
             }
             if (best >= 0) {
                 const v = best + popcount(mask);
-                if (
-                    !newStates.has(mask) ||
-                    v > (newStates.get(mask) as number)
-                ) {
+                if (!newStates.has(mask) || v > (newStates.get(mask) as number)) {
                     newStates.set(mask, v);
                 }
             }

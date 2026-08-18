@@ -1,10 +1,4 @@
-function minimumWeight(
-    n: number,
-    edges: number[][],
-    src1: number,
-    src2: number,
-    dest: number,
-): number {
+function minimumWeight(n: number, edges: number[][], src1: number, src2: number, dest: number): number {
     const dijkstra = (adj: [number, number][][], src: number): number[] => {
         const INF = Infinity;
         const dist: number[] = new Array(n).fill(INF);

@@ -35,9 +35,7 @@ class Graph {
         long[] distance = new long[n];
         Arrays.fill(distance, Long.MAX_VALUE);
         distance[node1] = 0;
-        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) ->
-            Long.compare(a[0], b[0])
-        );
+        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
         heap.offer(new long[] { 0, node1 });
         while (!heap.isEmpty()) {
             long[] top = heap.poll();

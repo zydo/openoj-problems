@@ -33,10 +33,7 @@ class Solution {
                         dist[ni][nj] = nd;
                         // 0-1 BFS: free steps go to the front, obstacle
                         // steps to the back, keeping the deque sorted.
-                        if (grid[ni][nj] == 0) dq.addFirst(new int[] {
-                            ni,
-                            nj,
-                        });
+                        if (grid[ni][nj] == 0) dq.addFirst(new int[] { ni, nj });
                         else dq.addLast(new int[] { ni, nj });
                     }
                 }

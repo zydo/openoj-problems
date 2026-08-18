@@ -4,9 +4,7 @@ from collections import deque
 
 
 class Solution:
-    def shortestAlternatingPaths(
-        self, n: int, redEdges: List[List[int]], blueEdges: List[List[int]]
-    ) -> List[int]:
+    def shortestAlternatingPaths(self, n: int, redEdges: List[List[int]], blueEdges: List[List[int]]) -> List[int]:
         adjacency = ([[] for _ in range(n)], [[] for _ in range(n)])
         for u, v in redEdges:
             adjacency[0][u].append(v)
@@ -34,8 +32,6 @@ class Solution:
                 if dist[nxt][1 - color] == INF:
                     dist[nxt][1 - color] = dist[node][color] + 1
                     value = dist[nxt][1 - color]
-                    answer[nxt] = (
-                        value if answer[nxt] == -1 else min(answer[nxt], value)
-                    )
+                    answer[nxt] = value if answer[nxt] == -1 else min(answer[nxt], value)
                     queue.append((nxt, 1 - color))
         return answer

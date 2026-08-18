@@ -69,10 +69,7 @@ var deleteDuplicateFolder = function (paths) {
     var marked = new Array(total).fill(false);
     for (var m = 0; m < nodes.length; m++) {
         var node3 = nodes[m];
-        if (
-            Object.keys(children[node3]).length > 0 &&
-            sigCounts[nodeSig[node3]] >= 2
-        ) {
+        if (Object.keys(children[node3]).length > 0 && sigCounts[nodeSig[node3]] >= 2) {
             var markStack = [node3];
             while (markStack.length > 0) {
                 var cur = markStack.pop();

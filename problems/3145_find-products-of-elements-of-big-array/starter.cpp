@@ -1,6 +1,4 @@
 class Solution {
   public:
-    vector<int> findProductsOfElements(vector<vector<long long>> &queries) {
-        throw logic_error("TODO");
-    }
+    vector<int> findProductsOfElements(vector<vector<long long>> &queries) { throw logic_error("TODO"); }
 };

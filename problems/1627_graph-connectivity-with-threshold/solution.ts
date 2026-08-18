@@ -1,8 +1,4 @@
-function areConnected(
-    n: number,
-    threshold: number,
-    queries: number[][],
-): boolean[] {
+function areConnected(n: number, threshold: number, queries: number[][]): boolean[] {
     const parent: number[] = Array.from({ length: n + 1 }, (_, i) => i);
 
     const find = (x: number): number => {

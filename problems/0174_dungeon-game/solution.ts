@@ -5,9 +5,7 @@ function calculateMinimumHP(dungeon: number[][]): number {
     // need[i][j]: smallest health needed when ENTERING (i, j) so some
     // right/down path survives to the princess. An INF border keeps
     // out-of-bounds neighbors from ever being chosen.
-    const need: number[][] = Array.from({ length: m + 1 }, () =>
-        new Array(n + 1).fill(INF),
-    );
+    const need: number[][] = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(INF));
     // Seed: leaving the bottom-right room requires at least 1 health.
     need[m][n - 1] = 1;
     // Fill bottom-to-top, right-to-left so both onward values are final.

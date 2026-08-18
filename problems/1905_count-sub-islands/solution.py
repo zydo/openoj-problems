@@ -24,12 +24,7 @@ class Solution:
                             is_sub = False
                         for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                             nx, ny = x + dx, y + dy
-                            if (
-                                0 <= nx < m
-                                and 0 <= ny < n
-                                and grid2[nx][ny] == 1
-                                and not seen[nx][ny]
-                            ):
+                            if 0 <= nx < m and 0 <= ny < n and grid2[nx][ny] == 1 and not seen[nx][ny]:
                                 # Mark at push time so no cell is ever enqueued twice.
                                 seen[nx][ny] = True
                                 stack.append((nx, ny))

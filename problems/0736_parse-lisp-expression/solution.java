@@ -6,11 +6,7 @@ class Solution {
 
     public int evaluate(String expression) {
         List<String> list = new ArrayList<>();
-        for (String tok : expression
-            .replace("(", " ( ")
-            .replace(")", " ) ")
-            .trim()
-            .split("\\s+")) {
+        for (String tok : expression.replace("(", " ( ").replace(")", " ) ").trim().split("\\s+")) {
             list.add(tok);
         }
         tokens = list.toArray(new String[0]);
@@ -42,10 +38,7 @@ class Solution {
         if (op.equals("add") || op.equals("mult")) {
             int[] a = parse(i, env);
             int[] b = parse(a[1], env);
-            return new int[] {
-                op.equals("add") ? a[0] + b[0] : a[0] * b[0],
-                b[1] + 1,
-            };
+            return new int[] { op.equals("add") ? a[0] + b[0] : a[0] * b[0], b[1] + 1 };
         }
         // let
         Map<String, Integer> local = new HashMap<>(env);

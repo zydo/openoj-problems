@@ -4,14 +4,12 @@
  * JSON.stringify, which cannot represent BigInt natively; teach it to emit
  * bare integer tokens for BigInt members.
  */
-const __openojNativeStringify: (
+const __openojNativeStringify: (value: any, replacer?: any, space?: any) => string = JSON.stringify;
+(JSON as { stringify: (value: any, replacer?: any, space?: any) => string }).stringify = function (
     value: any,
     replacer?: any,
     space?: any,
-) => string = JSON.stringify;
-(
-    JSON as { stringify: (value: any, replacer?: any, space?: any) => string }
-).stringify = function (value: any, replacer?: any, space?: any): string {
+): string {
     const text = __openojNativeStringify(
         value,
         function (key: string, item: any) {
@@ -22,9 +20,7 @@ const __openojNativeStringify: (
         },
         space,
     );
-    return typeof text === "string"
-        ? text.replace(/"__openoj_bigint__(-?\d+)"/g, "$1")
-        : text;
+    return typeof text === "string" ? text.replace(/"__openoj_bigint__(-?\d+)"/g, "$1") : text;
 };
 
 function productExceptSelf(nums: number[]): number[] {

@@ -15,24 +15,13 @@ class Solution {
         return new double[] { cx, cy, (dx * dx + dy * dy) / 4.0 };
     }
 
-    private double[] from3(
-        double ax,
-        double ay,
-        double bx,
-        double by,
-        double cx,
-        double cy
-    ) {
+    private double[] from3(double ax, double ay, double bx, double by, double cx, double cy) {
         double d = 2.0 * (ax * (by - cy) + bx * (cy - ay) + cx * (ay - by));
         // Zero determinant = collinear, no circumcircle; the best two-point
         // circle among the pairs is the correct enclosing circle.
         if (d == 0.0) {
             double[] best = null;
-            double[][] pairs = {
-                from2(ax, ay, bx, by),
-                from2(ax, ay, cx, cy),
-                from2(bx, by, cx, cy),
-            };
+            double[][] pairs = { from2(ax, ay, bx, by), from2(ax, ay, cx, cy), from2(bx, by, cx, cy) };
             for (double[] c : pairs) {
                 if (best == null || c[2] < best[2]) {
                     best = c;
@@ -86,10 +75,6 @@ class Solution {
                 }
             }
         }
-        return new double[] {
-            circle[0] + ox,
-            circle[1] + oy,
-            Math.sqrt(circle[2]),
-        };
+        return new double[] { circle[0] + ox, circle[1] + oy, Math.sqrt(circle[2]) };
     }
 }

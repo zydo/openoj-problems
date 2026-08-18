@@ -42,8 +42,7 @@ class Solution {
             for (int d = 0; d < 4; d++) {
                 int nr = r + dr[d];
                 int nc = c + dc[d];
-                if (nr >= 0 && nr < row && nc >= 0 && nc < col && !seen[nr][nc] &&
-                    grid[nr][nc] == 0) {
+                if (nr >= 0 && nr < row && nc >= 0 && nc < col && !seen[nr][nc] && grid[nr][nc] == 0) {
                     seen[nr][nc] = true;
                     queue.push_back({nr, nc});
                 }

@@ -64,13 +64,7 @@ var mazeRollDistance = function (maze, start, destination) {
             let nr = r,
                 nc = c,
                 steps = 0;
-            while (
-                nr + dr >= 0 &&
-                nr + dr < m &&
-                nc + dc >= 0 &&
-                nc + dc < n &&
-                maze[nr + dr][nc + dc] === 0
-            ) {
+            while (nr + dr >= 0 && nr + dr < m && nc + dc >= 0 && nc + dc < n && maze[nr + dr][nc + dc] === 0) {
                 nr += dr;
                 nc += dc;
                 steps++;

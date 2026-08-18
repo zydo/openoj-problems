@@ -30,8 +30,7 @@ class Solution {
             for (int v = 0; v < n; v++) {
                 if (!used[v]) {
                     long d =
-                        Math.abs((long) points[u][0] - points[v][0]) +
-                        Math.abs((long) points[u][1] - points[v][1]);
+                        Math.abs((long) points[u][0] - points[v][0]) + Math.abs((long) points[u][1] - points[v][1]);
                     if (d < best[v]) {
                         best[v] = d;
                     }

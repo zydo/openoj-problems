@@ -6,11 +6,7 @@ class Solution {
     public int maxEvents(int[][] events) {
         // Day sweep over events sorted by start day; a min-heap of end days
         // holds the events available today.
-        Arrays.sort(events, (a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[1], b[1])
-        );
+        Arrays.sort(events, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
         int n = events.length;
         int i = 0;
         int day = 1;

@@ -12,18 +12,10 @@ var minimumEffortPath = function (heights) {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {
             if (r + 1 < rows) {
-                edges.push([
-                    Math.abs(heights[r + 1][c] - heights[r][c]),
-                    r * cols + c,
-                    (r + 1) * cols + c,
-                ]);
+                edges.push([Math.abs(heights[r + 1][c] - heights[r][c]), r * cols + c, (r + 1) * cols + c]);
             }
             if (c + 1 < cols) {
-                edges.push([
-                    Math.abs(heights[r][c + 1] - heights[r][c]),
-                    r * cols + c,
-                    r * cols + c + 1,
-                ]);
+                edges.push([Math.abs(heights[r][c + 1] - heights[r][c]), r * cols + c, r * cols + c + 1]);
             }
         }
     }

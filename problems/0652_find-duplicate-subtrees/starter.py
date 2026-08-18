@@ -9,7 +9,5 @@ class TreeNode:
 
 
 class Solution:
-    def findDuplicateSubtrees(
-        self, root: Optional[TreeNode]
-    ) -> List[Optional[TreeNode]]:
+    def findDuplicateSubtrees(self, root: Optional[TreeNode]) -> List[Optional[TreeNode]]:
         raise NotImplementedError("TODO")

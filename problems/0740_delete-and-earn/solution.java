@@ -17,8 +17,7 @@ class Solution {
             int value = e.getKey();
             // Adjacent predecessor conflicts with its take; a gap (missing v-1)
             // makes taking v conflict with nothing, so both states carry in.
-            long base =
-                prev != null && prev == value - 1 ? skip : Math.max(take, skip);
+            long base = prev != null && prev == value - 1 ? skip : Math.max(take, skip);
             long newTake = base + (long) value * e.getValue();
             long newSkip = Math.max(take, skip);
             take = newTake;

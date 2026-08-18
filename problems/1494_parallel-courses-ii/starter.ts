@@ -1,7 +1,3 @@
-function minNumberOfSemesters(
-    n: number,
-    relations: number[][],
-    k: number,
-): number {
+function minNumberOfSemesters(n: number, relations: number[][], k: number): number {
     throw new Error("TODO");
 }

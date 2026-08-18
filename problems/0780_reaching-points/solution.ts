@@ -1,9 +1,4 @@
-function reachingPoints(
-    sx: number,
-    sy: number,
-    tx: number,
-    ty: number,
-): boolean {
+function reachingPoints(sx: number, sy: number, tx: number, ty: number): boolean {
     // Work backwards from the target: the last forward move added
     // one coordinate to the other, so the larger must subtract the
     // smaller. Forward moves only grow coordinates, so stop once

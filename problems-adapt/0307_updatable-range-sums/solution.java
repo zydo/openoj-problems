@@ -27,11 +27,7 @@ class UpdatableRanges {
         int delta = value - nums[index];
         nums[index] = value;
         // Climb by the low bit to visit every block containing this cell.
-        for (
-            int position = index + 1;
-            position <= n;
-            position += position & -position
-        ) {
+        for (int position = index + 1; position <= n; position += position & -position) {
             tree[position] += delta;
         }
     }

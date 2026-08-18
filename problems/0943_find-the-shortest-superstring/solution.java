@@ -11,11 +11,7 @@ class Solution {
                 int best = 0;
                 int limit = Math.min(words[i].length(), words[j].length());
                 for (int size = 1; size <= limit; size++) {
-                    if (
-                        words[i]
-                            .substring(words[i].length() - size)
-                            .equals(words[j].substring(0, size))
-                    ) {
+                    if (words[i].substring(words[i].length() - size).equals(words[j].substring(0, size))) {
                         best = size;
                     }
                 }
@@ -41,10 +37,8 @@ class Solution {
                 int[] curSeq = dpSeq[mask][j];
                 for (int nxt = 0; nxt < k; nxt++) {
                     if (((mask >> nxt) & 1) != 0) continue;
-                    int candLen =
-                        curLen + words[nxt].length() - overlap[j][nxt];
-                    String candStr =
-                        curStr + words[nxt].substring(overlap[j][nxt]);
+                    int candLen = curLen + words[nxt].length() - overlap[j][nxt];
+                    String candStr = curStr + words[nxt].substring(overlap[j][nxt]);
                     int[] candSeq = Arrays.copyOf(curSeq, curSeq.length + 1);
                     candSeq[curSeq.length] = nxt;
                     int newMask = mask | (1 << nxt);
@@ -52,8 +46,7 @@ class Solution {
                     if (
                         existing == null ||
                         candLen < dpLen[newMask][nxt] ||
-                        (candLen == dpLen[newMask][nxt] &&
-                            seqLess(candSeq, dpSeq[newMask][nxt]))
+                        (candLen == dpLen[newMask][nxt] && seqLess(candSeq, dpSeq[newMask][nxt]))
                     ) {
                         dpLen[newMask][nxt] = candLen;
                         dpStr[newMask][nxt] = candStr;
@@ -70,8 +63,7 @@ class Solution {
             if (
                 bestJ == -1 ||
                 dpLen[full][j] < dpLen[full][bestJ] ||
-                (dpLen[full][j] == dpLen[full][bestJ] &&
-                    seqLess(dpSeq[full][j], dpSeq[full][bestJ]))
+                (dpLen[full][j] == dpLen[full][bestJ] && seqLess(dpSeq[full][j], dpSeq[full][bestJ]))
             ) {
                 bestJ = j;
             }

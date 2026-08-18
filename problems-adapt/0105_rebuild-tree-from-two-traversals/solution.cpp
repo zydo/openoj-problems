@@ -14,8 +14,7 @@ class Solution {
     }
 
   private:
-    TreeNode *build(vector<int> &preorder, unordered_map<int, int> &index, int &position, int low,
-                    int high) {
+    TreeNode *build(vector<int> &preorder, unordered_map<int, int> &index, int &position, int low, int high) {
         // Empty inorder range <=> missing child, so base cases need no
         // special casing.
         if (low >= high) {

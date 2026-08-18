@@ -4,8 +4,7 @@ class Solution {
         // Kruskal: scan edges cheapest-first; the greedy exchange argument
         // makes the accepted set a minimum spanning tree
         vector<vector<int>> conns(connections);
-        sort(conns.begin(), conns.end(),
-             [](const vector<int> &a, const vector<int> &b) { return a[2] < b[2]; });
+        sort(conns.begin(), conns.end(), [](const vector<int> &a, const vector<int> &b) { return a[2] < b[2]; });
         // union-find over n + 1 slots (index 0 unused; cities are 1-based)
         vector<int> parent(n + 1);
         iota(parent.begin(), parent.end(), 0);

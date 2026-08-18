@@ -19,17 +19,11 @@ class Solution {
             for (int r = 0; r < 3; r++) {
                 if (prev1[r] != NEG) {
                     cur1[r] = Math.max(cur1[r], prev1[r] + v1); // stay in lane 1
-                    if (r > 0) cur2[r - 1] = Math.max(
-                        cur2[r - 1],
-                        prev1[r] + v2
-                    ); // switch to lane 2
+                    if (r > 0) cur2[r - 1] = Math.max(cur2[r - 1], prev1[r] + v2); // switch to lane 2
                 }
                 if (prev2[r] != NEG) {
                     cur2[r] = Math.max(cur2[r], prev2[r] + v2); // stay in lane 2
-                    if (r > 0) cur1[r - 1] = Math.max(
-                        cur1[r - 1],
-                        prev2[r] + v1
-                    ); // switch to lane 1
+                    if (r > 0) cur1[r - 1] = Math.max(cur1[r - 1], prev2[r] + v1); // switch to lane 1
                 }
             }
             prev1 = cur1;

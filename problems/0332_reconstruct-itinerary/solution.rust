@@ -4,10 +4,7 @@ impl Solution {
     pub fn find_itinerary(tickets: Vec<Vec<String>>) -> Vec<String> {
         let mut graph: HashMap<String, Vec<String>> = HashMap::new();
         for ticket in &tickets {
-            graph
-                .entry(ticket[0].clone())
-                .or_default()
-                .push(ticket[1].clone());
+            graph.entry(ticket[0].clone()).or_default().push(ticket[1].clone());
         }
         for adj in graph.values_mut() {
             adj.sort_by(|a, b| b.cmp(a)); // descending

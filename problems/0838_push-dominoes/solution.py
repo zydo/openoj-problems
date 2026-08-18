@@ -30,6 +30,4 @@ class Solution:
             forces[i] -= f
         # Sign decides: positive falls right, negative left, and zero
         # means the pushes balance — or nothing reached it.
-        return "".join(
-            "." if forces[i] == 0 else ("R" if forces[i] > 0 else "L") for i in range(n)
-        )
+        return "".join("." if forces[i] == 0 else ("R" if forces[i] > 0 else "L") for i in range(n))

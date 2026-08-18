@@ -25,8 +25,7 @@ impl Solution {
             // Relax every outside vertex against the newly attached u.
             for v in 0..n {
                 if !used[v] {
-                    let d = ((points[u][0] - points[v][0]).abs() as i64)
-                        + ((points[u][1] - points[v][1]).abs() as i64);
+                    let d = ((points[u][0] - points[v][0]).abs() as i64) + ((points[u][1] - points[v][1]).abs() as i64);
                     if d < best[v] {
                         best[v] = d;
                     }

@@ -22,16 +22,11 @@ class Solution {
                     // occurrence of p.charAt(j-2) consuming s.charAt(i-1).
                     dp[i][j] =
                         dp[i][j - 2] ||
-                        (dp[i - 1][j] &&
-                            (p.charAt(j - 2) == '.' ||
-                                p.charAt(j - 2) == s.charAt(i - 1)));
+                        (dp[i - 1][j] && (p.charAt(j - 2) == '.' || p.charAt(j - 2) == s.charAt(i - 1)));
                 } else {
                     // A literal or '.' must consume one character of s that
                     // it equals ('.' agrees with anything).
-                    dp[i][j] =
-                        dp[i - 1][j - 1] &&
-                        (p.charAt(j - 1) == '.' ||
-                            p.charAt(j - 1) == s.charAt(i - 1));
+                    dp[i][j] = dp[i - 1][j - 1] && (p.charAt(j - 1) == '.' || p.charAt(j - 1) == s.charAt(i - 1));
                 }
             }
         }

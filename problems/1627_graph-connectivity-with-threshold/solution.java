@@ -17,8 +17,7 @@ class Solution {
 
         boolean[] result = new boolean[queries.length];
         for (int i = 0; i < queries.length; i++) {
-            result[i] =
-                find(parent, queries[i][0]) == find(parent, queries[i][1]);
+            result[i] = find(parent, queries[i][0]) == find(parent, queries[i][1]);
         }
         return result;
     }

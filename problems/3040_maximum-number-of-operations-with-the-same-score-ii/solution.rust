@@ -1,11 +1,7 @@
 impl Solution {
     pub fn max_operations(nums: Vec<i32>) -> i32 {
         let n = nums.len();
-        let candidates = [
-            nums[0] + nums[1],
-            nums[n - 1] + nums[n - 2],
-            nums[0] + nums[n - 1],
-        ];
+        let candidates = [nums[0] + nums[1], nums[n - 1] + nums[n - 2], nums[0] + nums[n - 1]];
         let mut best = 0;
         for &score in &candidates {
             best = best.max(Self::max_for_score(&nums, score));

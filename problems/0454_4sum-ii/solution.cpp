@@ -1,7 +1,6 @@
 class Solution {
   public:
-    int fourSumCount(vector<int> &nums1, vector<int> &nums2, vector<int> &nums3,
-                     vector<int> &nums4) {
+    int fourSumCount(vector<int> &nums1, vector<int> &nums2, vector<int> &nums3, vector<int> &nums4) {
         // Meet in the middle: a+b+c+d = 0 iff a+b = -(c+d), so index the
         // first two arrays' pair sums with multiplicities (not a set).
         unordered_map<int, int> sums;

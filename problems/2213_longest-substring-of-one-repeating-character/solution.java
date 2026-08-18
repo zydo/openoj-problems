@@ -1,10 +1,6 @@
 class Solution {
 
-    public int[] longestRepeating(
-        String s,
-        String queryCharacters,
-        int[] queryIndices
-    ) {
+    public int[] longestRepeating(String s, String queryCharacters, int[] queryIndices) {
         int n = s.length();
         if (n == 0) return new int[0];
 
@@ -40,15 +36,7 @@ class Solution {
         return result;
     }
 
-    private void pull(
-        int[] pref,
-        int[] suf,
-        int[] best,
-        int[] segLen,
-        char[] leftChar,
-        char[] rightChar,
-        int node
-    ) {
+    private void pull(int[] pref, int[] suf, int[] best, int[] segLen, char[] leftChar, char[] rightChar, int node) {
         int l = 2 * node,
             r = 2 * node + 1;
         segLen[node] = segLen[l] + segLen[r];
@@ -91,30 +79,8 @@ class Solution {
             return;
         }
         int mid = (lo + hi) >>> 1;
-        build(
-            chars,
-            pref,
-            suf,
-            best,
-            segLen,
-            leftChar,
-            rightChar,
-            2 * node,
-            lo,
-            mid
-        );
-        build(
-            chars,
-            pref,
-            suf,
-            best,
-            segLen,
-            leftChar,
-            rightChar,
-            2 * node + 1,
-            mid + 1,
-            hi
-        );
+        build(chars, pref, suf, best, segLen, leftChar, rightChar, 2 * node, lo, mid);
+        build(chars, pref, suf, best, segLen, leftChar, rightChar, 2 * node + 1, mid + 1, hi);
         pull(pref, suf, best, segLen, leftChar, rightChar, node);
     }
 
@@ -139,35 +105,9 @@ class Solution {
         }
         int mid = (lo + hi) >>> 1;
         if (pos <= mid) {
-            update(
-                chars,
-                pref,
-                suf,
-                best,
-                segLen,
-                leftChar,
-                rightChar,
-                2 * node,
-                lo,
-                mid,
-                pos,
-                ch
-            );
+            update(chars, pref, suf, best, segLen, leftChar, rightChar, 2 * node, lo, mid, pos, ch);
         } else {
-            update(
-                chars,
-                pref,
-                suf,
-                best,
-                segLen,
-                leftChar,
-                rightChar,
-                2 * node + 1,
-                mid + 1,
-                hi,
-                pos,
-                ch
-            );
+            update(chars, pref, suf, best, segLen, leftChar, rightChar, 2 * node + 1, mid + 1, hi, pos, ch);
         }
         // recompute the O(log n) nodes on the path back to the root
         pull(pref, suf, best, segLen, leftChar, rightChar, node);

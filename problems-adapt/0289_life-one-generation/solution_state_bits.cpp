@@ -11,8 +11,7 @@ class Solution {
                 for (int d = 0; d < 8; d++) {
                     int nr = r + dr[d];
                     int nc = c + dc[d];
-                    if (nr >= 0 && nr < m && nc >= 0 && nc < n &&
-                        (board[nr][nc] == 1 || board[nr][nc] == 2)) {
+                    if (nr >= 0 && nr < m && nc >= 0 && nc < n && (board[nr][nc] == 1 || board[nr][nc] == 2)) {
                         live++;
                     }
                 }

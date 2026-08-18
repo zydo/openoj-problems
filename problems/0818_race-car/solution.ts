@@ -2,8 +2,7 @@ function racecar(target: number): number {
     const bound = 2 * target;
     // Encode (pos, speed) as an integer key: speed lives in [-2*bound, 2*bound].
     const span = 4 * bound + 1;
-    const encode = (pos: number, speed: number): number =>
-        (pos + bound) * span + (speed + 2 * bound);
+    const encode = (pos: number, speed: number): number => (pos + bound) * span + (speed + 2 * bound);
     const queue: Array<[number, number]> = [[0, 1]];
     const visited = new Set<number>();
     visited.add(encode(0, 1));

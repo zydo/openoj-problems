@@ -8,11 +8,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             ivs[i] = new int[] { intervals[i][0], intervals[i][1] };
         }
-        Arrays.sort(ivs, (a, b) ->
-            a[1] != b[1]
-                ? Integer.compare(a[1], b[1])
-                : Integer.compare(b[0], a[0])
-        );
+        Arrays.sort(ivs, (a, b) -> a[1] != b[1] ? Integer.compare(a[1], b[1]) : Integer.compare(b[0], a[0]));
         // Chosen points stay non-decreasing; points inside [s, e] are the
         // trailing run, so checking the last two suffices.
         int[] chosen = new int[2 * n];

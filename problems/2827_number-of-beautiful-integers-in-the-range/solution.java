@@ -27,16 +27,7 @@ class Solution {
         return dp(0, 1, 0, 0, 0, digits, k, memo);
     }
 
-    private long dp(
-        int pos,
-        int tight,
-        int started,
-        int balance,
-        int mod,
-        int[] digits,
-        int k,
-        long[][][][][] memo
-    ) {
+    private long dp(int pos, int tight, int started, int balance, int mod, int[] digits, int k, long[][][][][] memo) {
         // Digit DP tracking everything the two conditions need: balance
         // (odd digits minus even digits written so far) and value mod k.
         // Memoization shares all loose subproblems, so the recursion
@@ -55,28 +46,10 @@ class Solution {
             // A leading zero writes nothing: it leaves the balance
             // untouched and does not count as an even digit.
             if (started == 0 && d == 0) {
-                total += dp(
-                    pos + 1,
-                    nextTight,
-                    0,
-                    balance,
-                    (mod * 10 + d) % k,
-                    digits,
-                    k,
-                    memo
-                );
+                total += dp(pos + 1, nextTight, 0, balance, (mod * 10 + d) % k, digits, k, memo);
             } else {
                 int newBalance = balance + (d % 2 == 1 ? 1 : -1);
-                total += dp(
-                    pos + 1,
-                    nextTight,
-                    1,
-                    newBalance,
-                    (mod * 10 + d) % k,
-                    digits,
-                    k,
-                    memo
-                );
+                total += dp(pos + 1, nextTight, 1, newBalance, (mod * 10 + d) % k, digits, k, memo);
             }
         }
         memo[pos][tight][started][balance + 10][mod] = total;

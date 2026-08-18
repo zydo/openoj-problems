@@ -11,11 +11,7 @@ impl Solution {
         let mut d = 0;
         while let Some(n) = node {
             d += 1;
-            node = if left {
-                n.left.as_deref()
-            } else {
-                n.right.as_deref()
-            };
+            node = if left { n.left.as_deref() } else { n.right.as_deref() };
         }
         d
     }

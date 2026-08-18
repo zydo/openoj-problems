@@ -21,8 +21,7 @@ class Solution {
                     if (((mask >> nxt) & 1) != 0) {
                         continue;
                     }
-                    long cost =
-                        Math.abs(last - nums[nxt]) + f[mask | (1 << nxt)][nxt];
+                    long cost = Math.abs(last - nums[nxt]) + f[mask | (1 << nxt)][nxt];
                     if (cost < best) {
                         best = cost;
                     }
@@ -42,10 +41,7 @@ class Solution {
                 if (((mask >> nxt) & 1) != 0) {
                     continue;
                 }
-                if (
-                    Math.abs(last - nums[nxt]) + f[mask | (1 << nxt)][nxt] ==
-                    f[mask][last]
-                ) {
+                if (Math.abs(last - nums[nxt]) + f[mask | (1 << nxt)][nxt] == f[mask][last]) {
                     perm[len++] = nxt;
                     mask |= 1 << nxt;
                     last = nxt;

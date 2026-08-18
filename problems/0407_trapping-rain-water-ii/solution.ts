@@ -1,9 +1,7 @@
 function trapRainWater(heightMap: number[][]): number {
     const m = heightMap.length,
         n = heightMap[0].length;
-    const visited: boolean[][] = Array.from({ length: m }, () =>
-        new Array<boolean>(n).fill(false),
-    );
+    const visited: boolean[][] = Array.from({ length: m }, () => new Array<boolean>(n).fill(false));
     const heap = new MinHeap();
     // Water spills off the map at the border, so the frontier starts as
     // the whole border ring.

@@ -54,10 +54,7 @@ function deleteDuplicateFolder(paths: string[][]): string[][] {
 
     const marked = new Array<boolean>(total).fill(false);
     for (const node of nodes) {
-        if (
-            children[node].size > 0 &&
-            (sigCounts.get(nodeSig[node]) || 0) >= 2
-        ) {
+        if (children[node].size > 0 && (sigCounts.get(nodeSig[node]) || 0) >= 2) {
             const markStack = [node];
             while (markStack.length > 0) {
                 const cur = markStack.pop()!;

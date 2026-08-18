@@ -53,9 +53,7 @@ class _SegTree:
 
 
 class Solution:
-    def handleQuery(
-        self, nums1: List[int], nums2: List[int], queries: List[List[int]]
-    ) -> List[int]:
+    def handleQuery(self, nums1: List[int], nums2: List[int], queries: List[List[int]]) -> List[int]:
         n = len(nums1)
         seg = _SegTree(nums1)
         # Maintain sum(nums2) incrementally: nums2 is never materialized

@@ -1,12 +1,6 @@
 class Solution {
 
-    public String subStrHash(
-        String s,
-        int power,
-        int modulo,
-        int k,
-        int hashValue
-    ) {
+    public String subStrHash(String s, int power, int modulo, int k, int hashValue) {
         int n = s.length();
         long p = power;
         long m = modulo;
@@ -24,11 +18,7 @@ class Solution {
         }
         String answer = cur == hashValue ? s.substring(n - k) : "";
         for (int i = n - k - 1; i >= 0; i--) {
-            cur =
-                (((cur - (((s.charAt(i + k) - 'a' + 1) * top) % m) + m) % m) *
-                    p +
-                    (s.charAt(i) - 'a' + 1)) %
-                m;
+            cur = (((cur - (((s.charAt(i + k) - 'a' + 1) * top) % m) + m) % m) * p + (s.charAt(i) - 'a' + 1)) % m;
             if (cur == hashValue) {
                 answer = s.substring(i, i + k); // scanning right-to-left keeps the leftmost match
             }

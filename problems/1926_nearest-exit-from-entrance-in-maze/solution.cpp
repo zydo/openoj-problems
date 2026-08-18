@@ -21,8 +21,7 @@ class Solution {
             }
             for (auto &d : dirs) {
                 int ni = i + d[0], nj = j + d[1];
-                if (ni >= 0 && ni < m && nj >= 0 && nj < n && maze[ni][nj] == "." &&
-                    dist[ni][nj] == -1) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && maze[ni][nj] == "." && dist[ni][nj] == -1) {
                     // Assigning distance at enqueue time is what keeps the
                     // queue ordered by distance.
                     dist[ni][nj] = dist[i][j] + 1;

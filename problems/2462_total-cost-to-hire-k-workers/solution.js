@@ -66,10 +66,7 @@ var totalCost = function (costs, k, candidates) {
     let total = 0;
     for (let t = 0; t < k; t++) {
         // Cheaper top wins; !less(right, left) also prefers left on ties.
-        if (
-            right.a.length === 0 ||
-            (left.a.length > 0 && !less(peek(right), peek(left)))
-        ) {
+        if (right.a.length === 0 || (left.a.length > 0 && !less(peek(right), peek(left)))) {
             const cost = pop(left)[0];
             if (i <= j) {
                 push(left, [costs[i], i]);

@@ -7,9 +7,7 @@ function getFood(grid: string[][]): number {
             if (grid[i][j] === "*") start = [i, j];
         }
     }
-    const dist: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(-1),
-    );
+    const dist: number[][] = Array.from({ length: m }, () => new Array(n).fill(-1));
     dist[start[0]][start[1]] = 0;
     const q: [number, number][] = [start];
     let head = 0;
@@ -24,14 +22,7 @@ function getFood(grid: string[][]): number {
         ] as const) {
             const ni = i + di,
                 nj = j + dj;
-            if (
-                ni >= 0 &&
-                ni < m &&
-                nj >= 0 &&
-                nj < n &&
-                grid[ni][nj] !== "X" &&
-                dist[ni][nj] === -1
-            ) {
+            if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] !== "X" && dist[ni][nj] === -1) {
                 dist[ni][nj] = dist[i][j] + 1;
                 q.push([ni, nj]);
             }

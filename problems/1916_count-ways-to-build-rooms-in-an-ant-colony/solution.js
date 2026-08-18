@@ -17,8 +17,7 @@ var waysToBuildRooms = function (prevRoom) {
     // fact[n], then invfact[i-1] = invfact[i]*i fills the table backwards —
     // avoiding one modpow per node.
     invfact[n] = modpow(fact[n], MOD - 2n, MOD);
-    for (var g = n; g >= 1; g--)
-        invfact[g - 1] = (invfact[g] * BigInt(g)) % MOD;
+    for (var g = n; g >= 1; g--) invfact[g - 1] = (invfact[g] * BigInt(g)) % MOD;
 
     // Recursion is off the table (n up to 1e5): stack-driven preorder puts
     // parents before descendants, so the reverse walk is a post-order.

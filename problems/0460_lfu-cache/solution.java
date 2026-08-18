@@ -76,10 +76,7 @@ class LFUCache {
         Bucket old = node.bucket;
         Bucket following = old.next;
         unlinkNode(node);
-        Bucket target =
-            following.freq == node.freq + 1
-                ? following
-                : new Bucket(node.freq + 1);
+        Bucket target = following.freq == node.freq + 1 ? following : new Bucket(node.freq + 1);
         if (target != following) {
             addBucketAfter(old, target);
         }

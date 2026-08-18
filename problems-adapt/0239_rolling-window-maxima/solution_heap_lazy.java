@@ -4,9 +4,7 @@ class Solution {
 
     public int[] rollingWindowMaxima(int[] nums, int k) {
         // Max-heap of (value, index) records, ordered by value.
-        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            Integer.compare(b[0], a[0])
-        );
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(b[0], a[0]));
         int[] result = new int[Math.max(0, nums.length - k + 1)];
         int ri = 0;
         for (int i = 0; i < nums.length; i++) {

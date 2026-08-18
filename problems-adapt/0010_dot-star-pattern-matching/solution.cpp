@@ -19,8 +19,7 @@ class Solution {
                     // Two cases cover every repetition count: zero
                     // occurrences (erase the x* unit), or one more
                     // occurrence of p[j-2] consuming s[i-1].
-                    dp[i][j] =
-                        dp[i][j - 2] || (dp[i - 1][j] && (p[j - 2] == '.' || p[j - 2] == s[i - 1]));
+                    dp[i][j] = dp[i][j - 2] || (dp[i - 1][j] && (p[j - 2] == '.' || p[j - 2] == s[i - 1]));
                 } else {
                     // A literal or '.' must consume one character of s that
                     // it equals ('.' agrees with anything).

@@ -10,8 +10,7 @@ function rob(root: TreeNode | null): number {
         // Robbing here forbids both children: take their skip values.
         const robHere = node.val + leftSkip + rightSkip;
         // Skipping leaves each child free to do its better option.
-        const skipHere =
-            Math.max(leftRob, leftSkip) + Math.max(rightRob, rightSkip);
+        const skipHere = Math.max(leftRob, leftSkip) + Math.max(rightRob, rightSkip);
         return [robHere, skipHere];
     }
     const [robHere, skipHere] = best(root);

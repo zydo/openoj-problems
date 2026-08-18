@@ -37,8 +37,7 @@ impl Solution {
                     0
                 };
             }
-            let key =
-                ((pos * 2 + tight) * 2 + started) * 21 * k + (balance as usize + 10) * k + mod_;
+            let key = ((pos * 2 + tight) * 2 + started) * 21 * k + (balance as usize + 10) * k + mod_;
             if memo[key] >= 0 {
                 return memo[key];
             }
@@ -50,16 +49,7 @@ impl Solution {
                 // A leading zero writes nothing: it leaves the balance
                 // untouched and does not count as an even digit.
                 if started == 0 && d == 0 {
-                    total += dp(
-                        pos + 1,
-                        next_tight,
-                        0,
-                        balance,
-                        (mod_ * 10 + d) % k,
-                        digits,
-                        k,
-                        memo,
-                    );
+                    total += dp(pos + 1, next_tight, 0, balance, (mod_ * 10 + d) % k, digits, k, memo);
                 } else {
                     let new_balance = balance + if d % 2 == 1 { 1 } else { -1 };
                     total += dp(

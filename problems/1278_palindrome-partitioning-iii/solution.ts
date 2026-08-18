@@ -1,9 +1,7 @@
 function palindromePartition(s: string, k: number): number {
     const n = s.length;
     // cost[i][j] = min changes to make s[i..j] a palindrome
-    const cost: number[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(0),
-    );
+    const cost: number[][] = Array.from({ length: n }, () => new Array(n).fill(0));
     for (let len = 2; len <= n; ++len) {
         for (let i = 0; i + len <= n; ++i) {
             const j = i + len - 1;
@@ -14,9 +12,7 @@ function palindromePartition(s: string, k: number): number {
     }
     // dp[c][i] = min changes to split prefix of length i into c parts
     const INF = (n >> 1) + 1; // any interval costs at most n / 2
-    const dp: number[][] = Array.from({ length: k + 1 }, () =>
-        new Array(n + 1).fill(INF),
-    );
+    const dp: number[][] = Array.from({ length: k + 1 }, () => new Array(n + 1).fill(INF));
     for (let i = 1; i <= n; ++i) {
         dp[1][i] = cost[0][i - 1];
     }

@@ -1,8 +1,4 @@
-function findAllRecipes(
-    recipes: string[],
-    ingredients: string[][],
-    supplies: string[],
-): string[] {
+function findAllRecipes(recipes: string[], ingredients: string[][], supplies: string[]): string[] {
     const have = new Set(supplies);
     const index = new Map<string, number>();
     for (let i = 0; i < recipes.length; i++) {

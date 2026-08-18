@@ -5,10 +5,7 @@ impl Solution {
         // when its successor is reached
         let mut unique: Vec<String> = {
             let mut set = std::collections::HashSet::new();
-            words
-                .into_iter()
-                .filter(|w| set.insert(w.clone()))
-                .collect()
+            words.into_iter().filter(|w| set.insert(w.clone())).collect()
         };
         unique.sort_by_key(|w| w.len());
         let mut dp: std::collections::HashMap<String, i32> = std::collections::HashMap::new();

@@ -1,8 +1,7 @@
 class Solution {
   public:
     int minOperations(vector<int> &nums, int k) {
-        priority_queue<long long, vector<long long>, greater<long long>> heap(nums.begin(),
-                                                                              nums.end());
+        priority_queue<long long, vector<long long>, greater<long long>> heap(nums.begin(), nums.end());
         int operations = 0;
         // Each operation must consume the two smallest values, so the process
         // is fully deterministic once the array sits in a min-heap.

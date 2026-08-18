@@ -49,10 +49,8 @@ var hitBricks = function (grid, hits) {
         for (let c = 0; c < n; c++) {
             if (g[r][c] === 1) {
                 if (r === 0) union(idx(r, c), top);
-                if (r + 1 < m && g[r + 1][c] === 1)
-                    union(idx(r, c), idx(r + 1, c));
-                if (c + 1 < n && g[r][c + 1] === 1)
-                    union(idx(r, c), idx(r, c + 1));
+                if (r + 1 < m && g[r + 1][c] === 1) union(idx(r, c), idx(r + 1, c));
+                if (c + 1 < n && g[r][c + 1] === 1) union(idx(r, c), idx(r, c + 1));
             }
         }
     }

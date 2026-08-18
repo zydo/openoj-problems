@@ -29,21 +29,14 @@ class Solution {
                         for (int d2 = -1; d2 <= 1; d2++) {
                             int p1 = c1 + d1;
                             int p2 = c2 + d2;
-                            if (
-                                p1 >= 0 &&
-                                p1 < cols &&
-                                p2 >= 0 &&
-                                p2 < cols &&
-                                dp[p1][p2] > best
-                            ) {
+                            if (p1 >= 0 && p1 < cols && p2 >= 0 && p2 < cols && dp[p1][p2] > best) {
                                 best = dp[p1][p2];
                             }
                         }
                     }
                     if (best > NEG) {
                         // both cells harvested, except a shared cell counts once
-                        ndp[c1][c2] =
-                            best + grid[r][c1] + (c1 != c2 ? grid[r][c2] : 0);
+                        ndp[c1][c2] = best + grid[r][c1] + (c1 != c2 ? grid[r][c2] : 0);
                     }
                 }
             }

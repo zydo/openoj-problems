@@ -1,7 +1,6 @@
 class Solution {
   public:
-    vector<bool> checkIfPrerequisite(int numCourses, vector<vector<int>> &prerequisites,
-                                     vector<vector<int>> &queries) {
+    vector<bool> checkIfPrerequisite(int numCourses, vector<vector<int>> &prerequisites, vector<vector<int>> &queries) {
         vector<vector<int>> adjacency(numCourses);
         vector<int> indegree(numCourses, 0);
         for (const vector<int> &pair : prerequisites) {
@@ -10,8 +9,7 @@ class Solution {
         }
         int words = (numCourses + 63) / 64;
         // reach[v] is a bitset of the courses that reach course v
-        vector<vector<unsigned long long>> reach(numCourses,
-                                                 vector<unsigned long long>(words, 0ULL));
+        vector<vector<unsigned long long>> reach(numCourses, vector<unsigned long long>(words, 0ULL));
         vector<int> queue;
         queue.reserve(numCourses);
         for (int i = 0; i < numCourses; i++) {

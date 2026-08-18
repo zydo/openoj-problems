@@ -12,8 +12,7 @@ var separateSquares = function (squares) {
     xs.sort((a, b) => a - b);
     const unique = [];
     for (const v of xs) {
-        if (unique.length === 0 || unique[unique.length - 1] !== v)
-            unique.push(v);
+        if (unique.length === 0 || unique[unique.length - 1] !== v) unique.push(v);
     }
     const m = unique.length;
     const index = new Map();

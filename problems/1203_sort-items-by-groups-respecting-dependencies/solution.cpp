@@ -24,8 +24,7 @@ class Solution {
 
         // LIFO Kahn: stack initialized in descending id order so the smallest
         // zero-indegree id pops first; newly available nodes are pushed on top.
-        auto kahn = [](const vector<int> &keys, const vector<vector<int>> &adj,
-                       vector<int> indeg) -> vector<int> {
+        auto kahn = [](const vector<int> &keys, const vector<vector<int>> &adj, vector<int> indeg) -> vector<int> {
             vector<int> available;
             for (int k : keys) {
                 if (indeg[k] == 0)

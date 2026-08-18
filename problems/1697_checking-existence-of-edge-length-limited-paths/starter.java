@@ -1,10 +1,6 @@
 class Solution {
 
-    public boolean[] distanceLimitedPathsExist(
-        int n,
-        int[][] edgeList,
-        int[][] queries
-    ) {
+    public boolean[] distanceLimitedPathsExist(int n, int[][] edgeList, int[][] queries) {
         throw new UnsupportedOperationException("TODO");
     }
 }

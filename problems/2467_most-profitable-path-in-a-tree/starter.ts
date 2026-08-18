@@ -1,7 +1,3 @@
-function mostProfitablePath(
-    edges: number[][],
-    bob: number,
-    amount: number[],
-): number {
+function mostProfitablePath(edges: number[][], bob: number, amount: number[]): number {
     throw new Error("TODO");
 }

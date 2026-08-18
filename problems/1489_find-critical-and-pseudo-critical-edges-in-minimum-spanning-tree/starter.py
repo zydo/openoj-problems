@@ -2,7 +2,5 @@ from typing import List, Optional
 
 
 class Solution:
-    def findCriticalAndPseudoCriticalEdges(
-        self, n: int, edges: List[List[int]]
-    ) -> List[List[int]]:
+    def findCriticalAndPseudoCriticalEdges(self, n: int, edges: List[List[int]]) -> List[List[int]]:
         raise NotImplementedError("TODO")

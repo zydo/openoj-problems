@@ -5,14 +5,10 @@ impl Solution {
         let mut dq: Vec<usize> = Vec::with_capacity(n + 1);
         let mut head = 0usize;
 
-        let value = |l: usize, dp: &Vec<i64>, prices: &Vec<i32>| -> i64 {
-            dp[l - 1] + prices[l - 1] as i64
-        };
+        let value = |l: usize, dp: &Vec<i64>, prices: &Vec<i32>| -> i64 { dp[l - 1] + prices[l - 1] as i64 };
 
         for i in 1..=n {
-            while dq.len() > head
-                && value(*dq.last().unwrap(), &dp, &prices) >= value(i, &dp, &prices)
-            {
+            while dq.len() > head && value(*dq.last().unwrap(), &dp, &prices) >= value(i, &dp, &prices) {
                 dq.pop();
             }
             dq.push(i);

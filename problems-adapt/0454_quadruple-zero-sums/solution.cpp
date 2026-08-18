@@ -1,7 +1,6 @@
 class Solution {
   public:
-    int countQuadrupleZeroSums(vector<int> &first, vector<int> &second, vector<int> &third,
-                     vector<int> &fourth) {
+    int countQuadrupleZeroSums(vector<int> &first, vector<int> &second, vector<int> &third, vector<int> &fourth) {
         // Meet in the middle: a+b+c+d = 0 iff a+b = -(c+d), so index the
         // first two arrays' pair sums with multiplicities (not a set).
         unordered_map<int, int> sums;

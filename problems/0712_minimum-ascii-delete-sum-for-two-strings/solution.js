@@ -22,10 +22,7 @@ var minimumDeleteSum = function (s1, s2) {
                 dp[i][j] = dp[i - 1][j - 1];
             } else {
                 // A mismatch can retain at most one end: pay its ASCII value.
-                dp[i][j] = Math.min(
-                    dp[i - 1][j] + a.charCodeAt(i - 1),
-                    dp[i][j - 1] + b.charCodeAt(j - 1),
-                );
+                dp[i][j] = Math.min(dp[i - 1][j] + a.charCodeAt(i - 1), dp[i][j - 1] + b.charCodeAt(j - 1));
             }
         }
     }

@@ -1,9 +1,4 @@
-function findMaximizedCapital(
-    k: number,
-    w: number,
-    profits: number[],
-    capital: number[],
-): number {
+function findMaximizedCapital(k: number, w: number, profits: number[], capital: number[]): number {
     const n = profits.length;
     const projects: number[][] = [];
     for (let i = 0; i < n; i++) projects.push([capital[i], profits[i]]);

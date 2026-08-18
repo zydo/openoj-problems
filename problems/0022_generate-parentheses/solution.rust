@@ -7,13 +7,7 @@ impl Solution {
     }
 }
 
-fn backtrack(
-    n: i32,
-    current: &mut Vec<u8>,
-    open_count: i32,
-    close_count: i32,
-    result: &mut Vec<String>,
-) {
+fn backtrack(n: i32, current: &mut Vec<u8>, open_count: i32, close_count: i32, result: &mut Vec<String>) {
     // Under the two guards below every leaf reached at length 2n is
     // well-formed by construction, so nothing needs re-validating.
     if current.len() == 2 * n as usize {

@@ -8,9 +8,7 @@ class Solution {
         int[][] dist = new int[m][n];
         for (int[] row : dist) Arrays.fill(row, -1);
         // min-heap of [d, r, c]
-        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            Integer.compare(a[0], b[0])
-        );
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         // Dijkstra over stopping cells — positions where the ball halts
         // against a wall/border. Roll distances vary, so BFS won't do.
         dist[start[0]][start[1]] = 0;
@@ -36,13 +34,7 @@ class Solution {
                 int nr = r,
                     nc = c,
                     steps = 0;
-                while (
-                    nr + dr >= 0 &&
-                    nr + dr < m &&
-                    nc + dc >= 0 &&
-                    nc + dc < n &&
-                    maze[nr + dr][nc + dc] == 0
-                ) {
+                while (nr + dr >= 0 && nr + dr < m && nc + dc >= 0 && nc + dc < n && maze[nr + dr][nc + dc] == 0) {
                     nr += dr;
                     nc += dc;
                     steps++;

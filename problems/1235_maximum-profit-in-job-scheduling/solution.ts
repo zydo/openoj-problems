@@ -1,8 +1,4 @@
-function jobScheduling(
-    startTime: number[],
-    endTime: number[],
-    profit: number[],
-): number {
+function jobScheduling(startTime: number[], endTime: number[], profit: number[]): number {
     const n = startTime.length;
     // Weighted interval scheduling: pack as (end, start, profit) so jobs
     // come out in end-time order and best[i] is final before it is read.
@@ -13,11 +9,7 @@ function jobScheduling(
     jobs.sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
     const ends = jobs.map((job) => job[0]);
 
-    const bisectRight = (
-        values: number[],
-        target: number,
-        hi: number,
-    ): number => {
+    const bisectRight = (values: number[], target: number, hi: number): number => {
         let lo = 0;
         while (lo < hi) {
             const mid = (lo + hi) >> 1;

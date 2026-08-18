@@ -25,14 +25,7 @@ var countSubIslands = function (grid1, grid2) {
                     ]) {
                         const nx = x + dx,
                             ny = y + dy;
-                        if (
-                            nx >= 0 &&
-                            nx < m &&
-                            ny >= 0 &&
-                            ny < n &&
-                            grid2[nx][ny] === 1 &&
-                            !seen[nx][ny]
-                        ) {
+                        if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid2[nx][ny] === 1 && !seen[nx][ny]) {
                             seen[nx][ny] = true;
                             stack.push([nx, ny]);
                         }

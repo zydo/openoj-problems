@@ -9,16 +9,7 @@ class Solution {
         for (int r = 0; r < m; r++) {
             snapshot[r] = board[r].clone();
         }
-        int[][] dirs = {
-            { -1, -1 },
-            { -1, 0 },
-            { -1, 1 },
-            { 0, -1 },
-            { 0, 1 },
-            { 1, -1 },
-            { 1, 0 },
-            { 1, 1 },
-        };
+        int[][] dirs = { { -1, -1 }, { -1, 0 }, { -1, 1 }, { 0, -1 }, { 0, 1 }, { 1, -1 }, { 1, 0 }, { 1, 1 } };
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 int live = 0;
@@ -27,13 +18,7 @@ class Solution {
                 for (int[] d : dirs) {
                     int nr = r + d[0];
                     int nc = c + d[1];
-                    if (
-                        nr >= 0 &&
-                        nr < m &&
-                        nc >= 0 &&
-                        nc < n &&
-                        snapshot[nr][nc] == 1
-                    ) {
+                    if (nr >= 0 && nr < m && nc >= 0 && nc < n && snapshot[nr][nc] == 1) {
                         live++;
                     }
                 }

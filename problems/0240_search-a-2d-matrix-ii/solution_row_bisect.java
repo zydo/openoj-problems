@@ -1,9 +1,7 @@
 class Solution {
 
     public boolean searchMatrix(int[][] matrix, int target) {
-        if (
-            matrix == null || matrix.length == 0 || matrix[0].length == 0
-        ) return false;
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return false;
         int cols = matrix[0].length;
         for (int[] row : matrix) {
             // Columns are sorted, so once a row's first element already

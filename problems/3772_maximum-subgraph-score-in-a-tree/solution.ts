@@ -1,8 +1,4 @@
-function maxSubgraphScore(
-    n: number,
-    edges: number[][],
-    good: number[],
-): number[] {
+function maxSubgraphScore(n: number, edges: number[][], good: number[]): number[] {
     const NEG = -1e18;
     const adj: number[][] = Array.from({ length: n }, () => []);
     for (const [a, b] of edges) {
@@ -57,10 +53,7 @@ function maxSubgraphScore(
         let totalPos = 0;
         for (const c of children[u]) totalPos += Math.max(0, down[c]);
         for (const c of children[u]) {
-            up[c] =
-                weight[u] +
-                (totalPos - Math.max(0, down[c])) +
-                Math.max(0, up[u]);
+            up[c] = weight[u] + (totalPos - Math.max(0, down[c])) + Math.max(0, up[u]);
         }
         // Answer for u: its weight, its positive child branches, and the
         // optional parent-side piece.

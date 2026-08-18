@@ -1,8 +1,4 @@
-function buildMatrix(
-    k: number,
-    rowConditions: number[][],
-    colConditions: number[][],
-): number[][] {
+function buildMatrix(k: number, rowConditions: number[][], colConditions: number[][]): number[][] {
     // Kahn's algorithm over the condition graph. Duplicate conditions only
     // add parallel edges and matching indegrees — harmless.
     const topo = (conditions: number[][]): number[] | null => {
@@ -46,9 +42,7 @@ function buildMatrix(
     colOrder.forEach((v, i) => {
         colPos[v] = i;
     });
-    const matrix: number[][] = Array.from({ length: k }, () =>
-        new Array(k).fill(0),
-    );
+    const matrix: number[][] = Array.from({ length: k }, () => new Array(k).fill(0));
     for (let v = 1; v <= k; v++) {
         matrix[rowPos[v]][colPos[v]] = v;
     }

@@ -38,9 +38,7 @@ class Solution:
                 nxt_state = advance(state, ch)
                 if nxt_state == m:
                     continue
-                total += dfs(
-                    pos + 1, nxt_state, lo and ch == s1[pos], hi and ch == s2[pos]
-                )
+                total += dfs(pos + 1, nxt_state, lo and ch == s1[pos], hi and ch == s2[pos])
             return total % MOD
 
         return dfs(0, 0, True, True) % MOD

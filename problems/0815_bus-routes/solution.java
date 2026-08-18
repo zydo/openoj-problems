@@ -22,10 +22,7 @@ class Solution {
                 stopToRoutes.computeIfAbsent(s, k -> new ArrayList<>()).add(r);
             }
         }
-        if (
-            !stopToRoutes.containsKey(source) ||
-            !stopToRoutes.containsKey(target)
-        ) {
+        if (!stopToRoutes.containsKey(source) || !stopToRoutes.containsKey(target)) {
             return -1;
         }
         Set<Integer> usedRoutes = new HashSet<>();
@@ -37,10 +34,7 @@ class Solution {
             int[] front = queue.poll();
             int stop = front[0];
             int buses = front[1];
-            List<Integer> list = stopToRoutes.getOrDefault(
-                stop,
-                new ArrayList<>()
-            );
+            List<Integer> list = stopToRoutes.getOrDefault(stop, new ArrayList<>());
             for (int r : list) {
                 // BFS over stops: boarding a route reaches all its
                 // stops one level deeper. Expand each route only once

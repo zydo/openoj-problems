@@ -9,9 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def closestNodes(
-        self, root: Optional[TreeNode], queries: List[int]
-    ) -> List[List[int]]:
+    def closestNodes(self, root: Optional[TreeNode], queries: List[int]) -> List[List[int]]:
         # A BST's inorder traversal is sorted: flatten once and each
         # query becomes two binary searches; the iterative walk dodges
         # recursion depth on a skewed tree.

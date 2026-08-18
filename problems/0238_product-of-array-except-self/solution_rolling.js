@@ -19,9 +19,7 @@ JSON.stringify = function (value, replacer, space) {
         },
         space,
     );
-    return typeof text === "string"
-        ? text.replace(/"__openoj_bigint__(-?\d+)"/g, "$1")
-        : text;
+    return typeof text === "string" ? text.replace(/"__openoj_bigint__(-?\d+)"/g, "$1") : text;
 };
 
 var productExceptSelf = function (nums) {

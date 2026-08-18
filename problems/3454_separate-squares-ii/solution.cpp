@@ -55,8 +55,7 @@ class Solution {
         while (k < (int)events.size()) {
             long long y = events[k][0];
             while (k < (int)events.size() && events[k][0] == y) {
-                update(update, 1, 0, m - 1, index[events[k][1]], index[events[k][2]],
-                       (int)events[k][3]);
+                update(update, 1, 0, m - 1, index[events[k][1]], index[events[k][2]], (int)events[k][3]);
                 k++;
             }
             if (k < (int)events.size()) {

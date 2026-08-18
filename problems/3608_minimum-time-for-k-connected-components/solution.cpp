@@ -8,8 +8,7 @@ class Solution {
         // Reverse Kruskal: sweep edges from longest-lived to shortest so the
         // union-find mirrors the graph with every edge of time <= t removed.
         vector<vector<int>> ordered(edges);
-        sort(ordered.begin(), ordered.end(),
-             [](const vector<int> &a, const vector<int> &b) { return a[2] > b[2]; });
+        sort(ordered.begin(), ordered.end(), [](const vector<int> &a, const vector<int> &b) { return a[2] > b[2]; });
 
         int components = n;
         int answer = 0;

@@ -24,8 +24,7 @@ class Solution {
                             isSub = false;
                         for (auto &d : dirs) {
                             int nx = x + d[0], ny = y + d[1];
-                            if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid2[nx][ny] == 1 &&
-                                !seen[nx][ny]) {
+                            if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid2[nx][ny] == 1 && !seen[nx][ny]) {
                                 // Mark at push time so no cell is ever enqueued twice.
                                 seen[nx][ny] = true;
                                 stack.push_back({nx, ny});

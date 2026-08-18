@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def maxGeneticDifference(
-        self, parents: List[int], queries: List[List[int]]
-    ) -> List[int]:
+    def maxGeneticDifference(self, parents: List[int], queries: List[List[int]]) -> List[int]:
         BITS = 18
         n = len(parents)
         children = [[] for _ in range(n)]

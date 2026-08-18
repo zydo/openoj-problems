@@ -19,12 +19,7 @@ class Solution:
                 return dist[i][j]
             for di, dj in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                 ni, nj = i + di, j + dj
-                if (
-                    0 <= ni < m
-                    and 0 <= nj < n
-                    and grid[ni][nj] != "X"
-                    and dist[ni][nj] == -1
-                ):
+                if 0 <= ni < m and 0 <= nj < n and grid[ni][nj] != "X" and dist[ni][nj] == -1:
                     dist[ni][nj] = dist[i][j] + 1
                     q.append((ni, nj))
         return -1

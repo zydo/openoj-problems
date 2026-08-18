@@ -1,7 +1,6 @@
 class Solution {
   public:
-    vector<vector<long long>> matMul(const vector<vector<long long>> &a,
-                                     const vector<vector<long long>> &b) {
+    vector<vector<long long>> matMul(const vector<vector<long long>> &a, const vector<vector<long long>> &b) {
         int size = (int)a.size();
         vector<vector<long long>> c(size, vector<long long>(size, 0));
         for (int i = 0; i < size; i++) {

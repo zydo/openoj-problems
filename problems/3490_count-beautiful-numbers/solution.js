@@ -20,11 +20,7 @@ var beautifulNumbers = function (l, r) {
                 // positive sum.
                 return started && ssum > 0 && prod % ssum === 0 ? 1 : 0;
             }
-            const key =
-                (((pos * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)) * 128 +
-                    ssum) *
-                    4294967296 +
-                prod;
+            const key = (((pos * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)) * 128 + ssum) * 4294967296 + prod;
             if (memo.has(key)) return memo.get(key);
             // A tight prefix is capped at x's digit; free prefixes take any digit.
             const limit = tight ? digits[pos] : 9;

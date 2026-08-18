@@ -9,8 +9,7 @@ impl Solution {
             for j in 0..n {
                 // Two-dimensional inclusion-exclusion: add above + left,
                 // subtract the doubly-counted corner, add the cell.
-                prefix[i + 1][j + 1] =
-                    prefix[i][j + 1] + prefix[i + 1][j] - prefix[i][j] + mat[i][j] as i64;
+                prefix[i + 1][j + 1] = prefix[i][j + 1] + prefix[i + 1][j] - prefix[i][j] + mat[i][j] as i64;
             }
         }
         let mut answer = vec![vec![0i32; n]; m];
@@ -24,8 +23,7 @@ impl Solution {
                 let c1 = j.saturating_sub(k as usize);
                 let c2 = std::cmp::min(n, j + k as usize + 1);
                 // Four lookups with alternating signs: O(1) for any k.
-                answer[i][j] =
-                    (prefix[r2][c2] - prefix[r1][c2] - prefix[r2][c1] + prefix[r1][c1]) as i32;
+                answer[i][j] = (prefix[r2][c2] - prefix[r1][c2] - prefix[r2][c1] + prefix[r1][c1]) as i32;
             }
         }
         answer

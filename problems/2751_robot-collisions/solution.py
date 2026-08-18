@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def survivedRobotsHealths(
-        self, positions: List[int], healths: List[int], directions: str
-    ) -> List[int]:
+    def survivedRobotsHealths(self, positions: List[int], healths: List[int], directions: str) -> List[int]:
         healths = list(healths)
         n = len(positions)
         order = sorted(range(n), key=lambda i: positions[i])

@@ -1,7 +1,5 @@
 function maxEvents(events: number[][]): number {
-    const sorted = events
-        .slice()
-        .sort((a, b) => (a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]));
+    const sorted = events.slice().sort((a, b) => (a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]));
     const n = sorted.length;
     let i = 0;
     let day = 1;

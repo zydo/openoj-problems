@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def minCost(
-        self, maxTime: int, edges: List[List[int]], passingFees: List[int]
-    ) -> int:
+    def minCost(self, maxTime: int, edges: List[List[int]], passingFees: List[int]) -> int:
         n = len(passingFees)
         INF = float("inf")
         # Unfold the graph into layers indexed by exact arrival time:

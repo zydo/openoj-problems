@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def jobScheduling(
-        self, startTime: List[int], endTime: List[int], profit: List[int]
-    ) -> int:
+    def jobScheduling(self, startTime: List[int], endTime: List[int], profit: List[int]) -> int:
         from bisect import bisect_right
 
         # Weighted interval scheduling: pack as (end, start, profit) so jobs

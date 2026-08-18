@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def distanceLimitedPathsExist(
-        self, n: int, edgeList: List[List[int]], queries: List[List[int]]
-    ) -> List[bool]:
+    def distanceLimitedPathsExist(self, n: int, edgeList: List[List[int]], queries: List[List[int]]) -> List[bool]:
         parent = list(range(n))
 
         def find(x):

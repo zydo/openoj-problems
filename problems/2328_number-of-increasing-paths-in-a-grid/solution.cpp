@@ -11,8 +11,7 @@ class Solution {
         }
         // Decreasing value order: when (i, j) is handled, every strictly
         // larger neighbor's dp entry is already final.
-        sort(cells.begin(), cells.end(),
-             [](const array<int, 3> &x, const array<int, 3> &y) { return x[0] > y[0]; });
+        sort(cells.begin(), cells.end(), [](const array<int, 3> &x, const array<int, 3> &y) { return x[0] > y[0]; });
         // dp[i][j] = number of increasing paths starting at (i, j);
         // 1 accounts for the length-1 path of the cell itself.
         vector<vector<long long>> dp(m, vector<long long>(n, 1));

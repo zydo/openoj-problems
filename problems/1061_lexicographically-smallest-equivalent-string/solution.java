@@ -1,10 +1,6 @@
 class Solution {
 
-    public String smallestEquivalentString(
-        String s1,
-        String s2,
-        String baseStr
-    ) {
+    public String smallestEquivalentString(String s1, String s2, String baseStr) {
         int[] parent = new int[26];
         for (int i = 0; i < 26; i++) {
             parent[i] = i;

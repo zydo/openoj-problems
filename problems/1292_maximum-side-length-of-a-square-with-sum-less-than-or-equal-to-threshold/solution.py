@@ -25,10 +25,6 @@ class Solution:
                 # try side ans+1 while it fits the matrix and the threshold;
                 # ans never shrinks, so failures cost a single O(1) check and
                 # each side length is paid at most once across the scan
-                while (
-                    i + ans < m
-                    and j + ans < n
-                    and square_sum(i, j, ans + 1) <= threshold
-                ):
+                while i + ans < m and j + ans < n and square_sum(i, j, ans + 1) <= threshold:
                     ans += 1
         return ans

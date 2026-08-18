@@ -33,27 +33,13 @@ class Solution {
         // nothing and the binary searches handle them.
         long best = 0;
         for (int i = 0; i < n; i++) {
-            best = Math.max(
-                best,
-                window(lefts, rights, cs, area, prefix, k, lefts[i])
-            );
-            best = Math.max(
-                best,
-                window(lefts, rights, cs, area, prefix, k, rights[i] - k + 1)
-            );
+            best = Math.max(best, window(lefts, rights, cs, area, prefix, k, lefts[i]));
+            best = Math.max(best, window(lefts, rights, cs, area, prefix, k, rights[i] - k + 1));
         }
         return best;
     }
 
-    private long window(
-        long[] lefts,
-        long[] rights,
-        long[] cs,
-        long[] area,
-        long[] prefix,
-        int k,
-        long start
-    ) {
+    private long window(long[] lefts, long[] rights, long[] cs, long[] area, long[] prefix, int k, long start) {
         // Coins inside [start, start + k - 1]. `a` is the first segment whose
         // right end reaches the window; `b` the last whose left end falls
         // inside it.

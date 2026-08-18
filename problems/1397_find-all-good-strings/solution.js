@@ -65,8 +65,7 @@ var findGoodStrings = function (n, s1, s2, evil) {
                         if (ns === m) continue;
                         var nlo = lo2 && code === s1c[pos] ? 1 : 0;
                         var nhi = hi2 && code === s2c[pos] ? 1 : 0;
-                        total +=
-                            dp[((pos + 1) * (m + 1) + ns) * 4 + nlo * 2 + nhi];
+                        total += dp[((pos + 1) * (m + 1) + ns) * 4 + nlo * 2 + nhi];
                     }
                     dp[idx] = total % MOD;
                 }

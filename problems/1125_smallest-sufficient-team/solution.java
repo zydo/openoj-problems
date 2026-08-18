@@ -6,22 +6,15 @@ import java.util.Map;
 
 class Solution {
 
-    public int[] smallestSufficientTeam(
-        String[] req_skills,
-        String[][] people
-    ) {
+    public int[] smallestSufficientTeam(String[] req_skills, String[][] people) {
         Map<String, Integer> skill_index = new HashMap<>();
-        for (int i = 0; i < req_skills.length; i++) skill_index.put(
-            req_skills[i],
-            i
-        );
+        for (int i = 0; i < req_skills.length; i++) skill_index.put(req_skills[i], i);
 
         int np = people.length;
         // compress each person to the bitmask of skills they contribute
         int[] masks = new int[np];
         for (int i = 0; i < np; i++) {
-            for (String skill : people[i])
-                masks[i] |= 1 << skill_index.get(skill);
+            for (String skill : people[i]) masks[i] |= 1 << skill_index.get(skill);
         }
 
         int full = (1 << req_skills.length) - 1;
@@ -35,9 +28,7 @@ class Solution {
         // people are processed in index order, so every subset of people is
         // tried as a candidate team
         for (int i = 0; i < np; i++) {
-            List<Map.Entry<Integer, List<Integer>>> snapshot = new ArrayList<>(
-                dp.entrySet()
-            );
+            List<Map.Entry<Integer, List<Integer>>> snapshot = new ArrayList<>(dp.entrySet());
             Map<Integer, List<Integer>> newEntries = new LinkedHashMap<>();
             for (Map.Entry<Integer, List<Integer>> e : snapshot) {
                 int newState = e.getKey() | masks[i];

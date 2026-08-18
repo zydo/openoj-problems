@@ -10,8 +10,8 @@ class Solution {
     }
 
   private:
-    void backtrack(int row, int n, vector<int> &cols, vector<int> &diag1, vector<int> &diag2,
-                   vector<string> &board, vector<vector<string>> &results) {
+    void backtrack(int row, int n, vector<int> &cols, vector<int> &diag1, vector<int> &diag2, vector<string> &board,
+                   vector<vector<string>> &results) {
         // One queen per row removes row conflicts by construction, so only
         // columns and diagonals need tracking while the board grows row by row.
         // Every row holds a queen and no pair attacks here; push_back copies

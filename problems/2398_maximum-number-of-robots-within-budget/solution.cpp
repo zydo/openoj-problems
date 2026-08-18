@@ -17,8 +17,7 @@ class Solution {
             run += runningCosts[right];
             // over budget: shrink from the left, dropping the front (the
             // argmax) once left passes it; the window may empty to length 0
-            while (!dq.empty() &&
-                   chargeTimes[dq.front()] + (long long)(right - left + 1) * run > budget) {
+            while (!dq.empty() && chargeTimes[dq.front()] + (long long)(right - left + 1) * run > budget) {
                 if (dq.front() == left) {
                     dq.pop_front();
                 }

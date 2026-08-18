@@ -14,10 +14,7 @@ var shortestSuperstring = function (words) {
             var best = 0;
             var limit = Math.min(words[a].length, words[b].length);
             for (var size = 1; size <= limit; size++) {
-                if (
-                    words[a].slice(words[a].length - size) ===
-                    words[b].slice(0, size)
-                ) {
+                if (words[a].slice(words[a].length - size) === words[b].slice(0, size)) {
                     best = size;
                 }
             }
@@ -62,8 +59,7 @@ var shortestSuperstring = function (words) {
                 if (
                     dpStr[newMask][nxt] === null ||
                     candLen < dpLen[newMask][nxt] ||
-                    (candLen === dpLen[newMask][nxt] &&
-                        seqLess(candSeq, dpSeq[newMask][nxt]))
+                    (candLen === dpLen[newMask][nxt] && seqLess(candSeq, dpSeq[newMask][nxt]))
                 ) {
                     dpLen[newMask][nxt] = candLen;
                     dpStr[newMask][nxt] = candStr;
@@ -80,8 +76,7 @@ var shortestSuperstring = function (words) {
         if (
             bestJ === -1 ||
             dpLen[full][z] < dpLen[full][bestJ] ||
-            (dpLen[full][z] === dpLen[full][bestJ] &&
-                seqLess(dpSeq[full][z], dpSeq[full][bestJ]))
+            (dpLen[full][z] === dpLen[full][bestJ] && seqLess(dpSeq[full][z], dpSeq[full][bestJ]))
         ) {
             bestJ = z;
         }

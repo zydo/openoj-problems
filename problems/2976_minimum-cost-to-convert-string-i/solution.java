@@ -1,12 +1,6 @@
 class Solution {
 
-    public long minimumCost(
-        String source,
-        String target,
-        String[] original,
-        String[] changed,
-        int[] cost
-    ) {
+    public long minimumCost(String source, String target, String[] original, String[] changed, int[] cost) {
         // A conversion rule is a directed edge in the 26-letter cost graph;
         // the cheapest a->b conversion is the shortest path a->b.
         final long INF = Long.MAX_VALUE / 4;

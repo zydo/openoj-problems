@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def fourSumCount(
-        self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]
-    ) -> int:
+    def fourSumCount(self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]) -> int:
         # Meet in the middle: a+b+c+d = 0 iff a+b = -(c+d), so index the
         # first two arrays' pair sums with multiplicities (not a set).
         sums = {}

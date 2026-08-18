@@ -9,13 +9,7 @@ impl Solution {
             // All five are computed from the old values before any is
             // assigned, so no partially updated state leaks into the step;
             // the mod keeps the exponentially growing counts bounded
-            let (na, ne, ni, no, nu) = (
-                (e + i + u) % MOD,
-                (a + i) % MOD,
-                (e + o) % MOD,
-                i,
-                (i + o) % MOD,
-            );
+            let (na, ne, ni, no, nu) = ((e + i + u) % MOD, (a + i) % MOD, (e + o) % MOD, i, (i + o) % MOD);
             a = na;
             e = ne;
             i = ni;

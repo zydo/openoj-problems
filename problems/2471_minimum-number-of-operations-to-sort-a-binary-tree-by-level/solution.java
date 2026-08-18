@@ -28,10 +28,7 @@ class Solution {
             for (int i = 0; i < level.size(); i++) pos.put(level.get(i), i);
             boolean[] visited = new boolean[level.size()];
             for (int i = 0; i < level.size(); i++) {
-                if (
-                    visited[i] ||
-                    level.get(i).intValue() == target.get(i).intValue()
-                ) {
+                if (visited[i] || level.get(i).intValue() == target.get(i).intValue()) {
                     visited[i] = true;
                     continue;
                 }

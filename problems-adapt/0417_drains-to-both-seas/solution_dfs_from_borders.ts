@@ -5,9 +5,7 @@ function drainsToBothSeas(heights: number[][]): number[][] {
     // Reverse the flow: walk inland from the ocean border instead of
     // downhill from every cell, so one traversal finds all draining cells.
     const reachable = (border: Array<[number, number]>): boolean[][] => {
-        const seen: boolean[][] = Array.from({ length: m }, () =>
-            new Array(n).fill(false),
-        );
+        const seen: boolean[][] = Array.from({ length: m }, () => new Array(n).fill(false));
         const stack: Array<[number, number]> = [];
         for (const [r, c] of border) {
             if (!seen[r][c]) {
@@ -28,14 +26,7 @@ function drainsToBothSeas(heights: number[][]): number[][] {
                 const nc = c + dc;
                 // Only a neighbor at least as tall could have flowed down
                 // into (r, c).
-                if (
-                    nr >= 0 &&
-                    nr < m &&
-                    nc >= 0 &&
-                    nc < n &&
-                    !seen[nr][nc] &&
-                    heights[nr][nc] >= heights[r][c]
-                ) {
+                if (nr >= 0 && nr < m && nc >= 0 && nc < n && !seen[nr][nc] && heights[nr][nc] >= heights[r][c]) {
                     // Mark on push so each cell is stacked at most once.
                     seen[nr][nc] = true;
                     stack.push([nr, nc]);

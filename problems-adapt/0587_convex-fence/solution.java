@@ -7,19 +7,12 @@ import java.util.Set;
 class Solution {
 
     private long cross(int[] o, int[] a, int[] b) {
-        return (
-            (long) (a[0] - o[0]) * (b[1] - o[1]) -
-            (long) (a[1] - o[1]) * (b[0] - o[0])
-        );
+        return (long) (a[0] - o[0]) * (b[1] - o[1]) - (long) (a[1] - o[1]) * (b[0] - o[0]);
     }
 
     public int[][] fencePoints(int[][] posts) {
         int[][] sorted = posts.clone();
-        Arrays.sort(sorted, (p, q) ->
-            p[0] != q[0]
-                ? Integer.compare(p[0], q[0])
-                : Integer.compare(p[1], q[1])
-        );
+        Arrays.sort(sorted, (p, q) -> p[0] != q[0] ? Integer.compare(p[0], q[0]) : Integer.compare(p[1], q[1]));
         List<int[]> pointsList = new ArrayList<>();
         for (int[] p : sorted) {
             if (!pointsList.isEmpty()) {
@@ -36,14 +29,7 @@ class Solution {
         // Strict convex hull vertices (cross <= 0 pops collinear interior unique).
         List<int[]> lower = new ArrayList<>();
         for (int[] p : unique) {
-            while (
-                lower.size() >= 2 &&
-                cross(
-                    lower.get(lower.size() - 2),
-                    lower.get(lower.size() - 1),
-                    p
-                ) <= 0
-            ) {
+            while (lower.size() >= 2 && cross(lower.get(lower.size() - 2), lower.get(lower.size() - 1), p) <= 0) {
                 lower.remove(lower.size() - 1);
             }
             lower.add(p);
@@ -51,14 +37,7 @@ class Solution {
         List<int[]> upper = new ArrayList<>();
         for (int i = unique.length - 1; i >= 0; i--) {
             int[] p = unique[i];
-            while (
-                upper.size() >= 2 &&
-                cross(
-                    upper.get(upper.size() - 2),
-                    upper.get(upper.size() - 1),
-                    p
-                ) <= 0
-            ) {
+            while (upper.size() >= 2 && cross(upper.get(upper.size() - 2), upper.get(upper.size() - 1), p) <= 0) {
                 upper.remove(upper.size() - 1);
             }
             upper.add(p);

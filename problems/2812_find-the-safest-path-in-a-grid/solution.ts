@@ -3,9 +3,7 @@ function maximumSafenessFactor(grid: number[][]): number {
     // Multi-source BFS from every thief at once: wavefront exploration
     // makes dist[r][c] the minimum grid steps to the nearest thief —
     // exactly the cell's safeness value.
-    const dist: number[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(-1),
-    );
+    const dist: number[][] = Array.from({ length: n }, () => new Array(n).fill(-1));
     const q: number[][] = [];
     for (let r = 0; r < n; r++) {
         for (let c = 0; c < n; c++) {
@@ -40,9 +38,7 @@ function maximumSafenessFactor(grid: number[][]): number {
         if (dist[0][0] < threshold || dist[n - 1][n - 1] < threshold) {
             return false;
         }
-        const seen: boolean[][] = Array.from({ length: n }, () =>
-            new Array(n).fill(false),
-        );
+        const seen: boolean[][] = Array.from({ length: n }, () => new Array(n).fill(false));
         seen[0][0] = true;
         const dq: number[][] = [[0, 0]];
         for (let head = 0; head < dq.length; head++) {
@@ -53,14 +49,7 @@ function maximumSafenessFactor(grid: number[][]): number {
             for (const [dr, dc] of dirs) {
                 const nr = r + dr,
                     nc = c + dc;
-                if (
-                    nr >= 0 &&
-                    nr < n &&
-                    nc >= 0 &&
-                    nc < n &&
-                    !seen[nr][nc] &&
-                    dist[nr][nc] >= threshold
-                ) {
+                if (nr >= 0 && nr < n && nc >= 0 && nc < n && !seen[nr][nc] && dist[nr][nc] >= threshold) {
                     seen[nr][nc] = true;
                     dq.push([nr, nc]);
                 }

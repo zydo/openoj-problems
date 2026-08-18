@@ -1,7 +1,7 @@
 class Solution {
   public:
     vector<bool> coursePrerequisiteQueries(int courseCount, vector<vector<int>> &prerequisites,
-                                     vector<vector<int>> &queries) {
+                                           vector<vector<int>> &queries) {
         vector<vector<int>> adjacency(courseCount);
         vector<int> indegree(courseCount, 0);
         for (const vector<int> &pair : prerequisites) {
@@ -10,8 +10,7 @@ class Solution {
         }
         int words = (courseCount + 63) / 64;
         // reach[v] is a bitset of the courses that reach course v
-        vector<vector<unsigned long long>> reach(courseCount,
-                                                 vector<unsigned long long>(words, 0ULL));
+        vector<vector<unsigned long long>> reach(courseCount, vector<unsigned long long>(words, 0ULL));
         vector<int> queue;
         queue.reserve(courseCount);
         for (int i = 0; i < courseCount; i++) {

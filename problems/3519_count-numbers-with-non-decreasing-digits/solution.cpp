@@ -55,8 +55,7 @@ class Solution {
         vector<int> digits = toBase(s, b);
         int m = (int)digits.size();
         // g[pos][last][tight][started]
-        vector<vector<array<array<long long, 2>, 2>>> g(m + 1,
-                                                        vector<array<array<long long, 2>, 2>>(b));
+        vector<vector<array<array<long long, 2>, 2>>> g(m + 1, vector<array<array<long long, 2>, 2>>(b));
         for (int last = 0; last < b; last++)
             for (int tight = 0; tight < 2; tight++)
                 for (int started = 0; started < 2; started++)

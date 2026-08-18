@@ -25,12 +25,6 @@ fn dfs(node: &Box<TreeNode>, max_so_far: i32) -> i32 {
         current_max = node.val;
     }
     count
-        + node
-            .left
-            .as_ref()
-            .map_or(0, |child| dfs(child, current_max))
-        + node
-            .right
-            .as_ref()
-            .map_or(0, |child| dfs(child, current_max))
+        + node.left.as_ref().map_or(0, |child| dfs(child, current_max))
+        + node.right.as_ref().map_or(0, |child| dfs(child, current_max))
 }

@@ -21,10 +21,7 @@ impl Solution {
             let range = cur_max as i64 - lo as i64;
             // [lo, cur_max] covers all k lists: prefer smaller width, then
             // the smaller left endpoint on ties.
-            if !have
-                || range < best_hi - best_lo
-                || (range == best_hi - best_lo && (lo as i64) < best_lo)
-            {
+            if !have || range < best_hi - best_lo || (range == best_hi - best_lo && (lo as i64) < best_lo) {
                 best_lo = lo as i64;
                 best_hi = cur_max as i64;
                 have = true;

@@ -6,9 +6,7 @@ class Solution {
     public int lastStoneWeight(int[] stones) {
         // The game is deterministic: only fast access to the current maximum
         // is needed, which a max-heap provides.
-        PriorityQueue<Integer> heap = new PriorityQueue<>(
-            Comparator.reverseOrder()
-        );
+        PriorityQueue<Integer> heap = new PriorityQueue<>(Comparator.reverseOrder());
         for (int s : stones) {
             heap.offer(s);
         }

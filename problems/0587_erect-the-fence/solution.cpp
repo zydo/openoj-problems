@@ -25,8 +25,7 @@ class Solution {
         // Strict convex hull vertices (cross <= 0 pops collinear interior points).
         vector<pair<int, int>> lower;
         for (auto &p : points) {
-            while (lower.size() >= 2 &&
-                   cross(lower[lower.size() - 2], lower[lower.size() - 1], p) <= 0) {
+            while (lower.size() >= 2 && cross(lower[lower.size() - 2], lower[lower.size() - 1], p) <= 0) {
                 lower.pop_back();
             }
             lower.push_back(p);
@@ -34,8 +33,7 @@ class Solution {
         vector<pair<int, int>> upper;
         for (int i = (int)points.size() - 1; i >= 0; i--) {
             const pair<int, int> &p = points[i];
-            while (upper.size() >= 2 &&
-                   cross(upper[upper.size() - 2], upper[upper.size() - 1], p) <= 0) {
+            while (upper.size() >= 2 && cross(upper[upper.size() - 2], upper[upper.size() - 1], p) <= 0) {
                 upper.pop_back();
             }
             upper.push_back(p);
@@ -58,8 +56,7 @@ class Solution {
                     continue;
                 if (cross(a, b, p) == 0) {
                     if (min(a.first, b.first) <= p.first && p.first <= max(a.first, b.first) &&
-                        min(a.second, b.second) <= p.second &&
-                        p.second <= max(a.second, b.second)) {
+                        min(a.second, b.second) <= p.second && p.second <= max(a.second, b.second)) {
                         result.push_back(p);
                         inResult.insert(p);
                     }

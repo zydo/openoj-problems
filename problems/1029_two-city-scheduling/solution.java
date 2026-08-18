@@ -6,9 +6,7 @@ class Solution {
         // Switching person i from B to A changes the total by a_i - b_i alone,
         // so the cheapest plan applies the n smallest differences.
         int[][] ordered = costs.clone();
-        Arrays.sort(ordered, (a, b) ->
-            Integer.compare(a[0] - a[1], b[0] - b[1])
-        );
+        Arrays.sort(ordered, (a, b) -> Integer.compare(a[0] - a[1], b[0] - b[1]));
         // First half (most negative differences) flies A, rest fly B — the
         // split satisfies the half/half count structurally.
         int n = ordered.length / 2;

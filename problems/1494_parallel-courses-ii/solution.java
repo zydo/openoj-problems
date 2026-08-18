@@ -27,9 +27,7 @@ class Solution {
             // inside mask (one AND per course).
             int avail = 0;
             for (int course = 0; course < n; course++) {
-                if (
-                    ((mask >> course) & 1) == 0 && (prereq[course] & ~mask) == 0
-                ) {
+                if (((mask >> course) & 1) == 0 && (prereq[course] & ~mask) == 0) {
                     avail |= 1 << course;
                 }
             }
@@ -61,27 +59,13 @@ class Solution {
     }
 
     // Enumerate every exactly-need-sized subset of bits[start..] by recursion.
-    private static void choose(
-        List<Integer> bits,
-        int start,
-        int need,
-        int taken,
-        int steps,
-        int[] dp
-    ) {
+    private static void choose(List<Integer> bits, int start, int need, int taken, int steps, int[] dp) {
         if (need == 0) {
             relax(taken, steps + 1, dp);
             return;
         }
         for (int i = start; i + need <= bits.size(); i++) {
-            choose(
-                bits,
-                i + 1,
-                need - 1,
-                taken | (1 << bits.get(i)),
-                steps,
-                dp
-            );
+            choose(bits, i + 1, need - 1, taken | (1 << bits.get(i)), steps, dp);
         }
     }
 }

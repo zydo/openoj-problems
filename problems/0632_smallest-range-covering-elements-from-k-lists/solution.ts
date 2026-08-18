@@ -1,8 +1,7 @@
 function smallestRange(nums: number[][]): number[] {
     // min-heap of nodes: [value, listIndex, elemIndex]
     const heap: number[][] = [];
-    const cmp = (a: number[], b: number[]): number =>
-        a[0] - b[0] || a[1] - b[1] || a[2] - b[2];
+    const cmp = (a: number[], b: number[]): number => a[0] - b[0] || a[1] - b[1] || a[2] - b[2];
     const push = (node: number[]): void => {
         heap.push(node);
         let c = heap.length - 1;
@@ -55,10 +54,7 @@ function smallestRange(nums: number[][]): number[] {
             j = top[2];
         // [lo, curMax] covers all k lists: prefer smaller width, then
         // the smaller left endpoint on ties.
-        if (
-            curMax - lo < bestHi - bestLo ||
-            (curMax - lo === bestHi - bestLo && lo < bestLo)
-        ) {
+        if (curMax - lo < bestHi - bestLo || (curMax - lo === bestHi - bestLo && lo < bestLo)) {
             bestLo = lo;
             bestHi = curMax;
         }

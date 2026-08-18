@@ -75,8 +75,6 @@ class Solution {
     }
 
     private static boolean isPeak(int[] nums, int i, int n) {
-        return (
-            i > 0 && i < n - 1 && nums[i] > nums[i - 1] && nums[i] > nums[i + 1]
-        );
+        return i > 0 && i < n - 1 && nums[i] > nums[i - 1] && nums[i] > nums[i + 1];
     }
 }

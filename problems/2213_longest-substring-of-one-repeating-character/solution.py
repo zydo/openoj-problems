@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def longestRepeating(
-        self, s: str, queryCharacters: str, queryIndices: List[int]
-    ) -> List[int]:
+    def longestRepeating(self, s: str, queryCharacters: str, queryIndices: List[int]) -> List[int]:
         n = len(s)
         if n == 0:
             return []

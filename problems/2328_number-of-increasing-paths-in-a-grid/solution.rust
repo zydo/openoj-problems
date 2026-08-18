@@ -21,12 +21,7 @@ impl Solution {
                 let ni = i as isize + di;
                 let nj = j as isize + dj;
                 // Strict '>' skips equal values, so plateau cells never chain.
-                if ni >= 0
-                    && ni < m as isize
-                    && nj >= 0
-                    && nj < n as isize
-                    && grid[ni as usize][nj as usize] > v
-                {
+                if ni >= 0 && ni < m as isize && nj >= 0 && nj < n as isize && grid[ni as usize][nj as usize] > v {
                     dp[i][j] = (dp[i][j] + dp[ni as usize][nj as usize]) % MOD;
                 }
             }

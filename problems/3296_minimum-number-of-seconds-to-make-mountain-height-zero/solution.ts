@@ -1,7 +1,4 @@
-function minNumberOfSeconds(
-    mountainHeight: number,
-    workerTimes: number[],
-): number {
+function minNumberOfSeconds(mountainHeight: number, workerTimes: number[]): number {
     // Integer square root of a non-negative BigInt (exact).
     const isqrt = (n: bigint): bigint => {
         let r = BigInt(Math.floor(Math.sqrt(Number(n))));

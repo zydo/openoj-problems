@@ -1,7 +1,4 @@
-function leftmostBuildingQueries(
-    heights: number[],
-    queries: number[][],
-): number[] {
+function leftmostBuildingQueries(heights: number[], queries: number[][]): number[] {
     const n = heights.length;
     // Max segment tree over heights, padded to a power of two: leaves hold
     // heights, each parent the max of its children.
@@ -18,14 +15,7 @@ function leftmostBuildingQueries(
     }
 
     // First index in [ql, qr) whose height exceeds threshold, or -1.
-    function findFirst(
-        node: number,
-        nl: number,
-        nr: number,
-        ql: number,
-        qr: number,
-        threshold: number,
-    ): number {
+    function findFirst(node: number, nl: number, nr: number, ql: number, qr: number, threshold: number): number {
         // Prune any node outside the query range or whose max cannot qualify.
         if (nr <= ql || qr <= nl || seg[node] <= threshold) {
             return -1;

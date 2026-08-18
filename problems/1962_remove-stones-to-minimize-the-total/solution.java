@@ -6,9 +6,7 @@ class Solution {
         // Max-heap. The removal floor(p/2) is non-decreasing in p, so always
         // halving the current max is optimal: any operation on a smaller
         // pile could be swapped to the larger one without worsening the total.
-        PriorityQueue<Integer> heap = new PriorityQueue<>((a, b) ->
-            Integer.compare(b, a)
-        );
+        PriorityQueue<Integer> heap = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
         for (int p : piles) heap.offer(p);
         for (int i = 0; i < k; i++) {
             int top = heap.peek();

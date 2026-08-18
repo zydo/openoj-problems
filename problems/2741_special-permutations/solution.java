@@ -29,10 +29,7 @@ class Solution {
                     // divides nums[last] or is divided by it (checked
                     // symmetrically). Every special permutation decomposes
                     // uniquely into such steps, so none is double-counted.
-                    if (
-                        nums[last] % nums[nxt] == 0 ||
-                        nums[nxt] % nums[last] == 0
-                    ) {
+                    if (nums[last] % nums[nxt] == 0 || nums[nxt] % nums[last] == 0) {
                         int[] t = dp[mask | (1 << nxt)];
                         t[nxt] = (t[nxt] + ways) % MOD;
                     }

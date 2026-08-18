@@ -1,8 +1,4 @@
-function findLadders(
-    beginWord: string,
-    endWord: string,
-    wordList: string[],
-): string[][] {
+function findLadders(beginWord: string, endWord: string, wordList: string[]): string[][] {
     const wordSet = new Set<string>(wordList);
     if (!wordSet.has(endWord)) return [];
     // Drop beginWord so the search can never route back through it.

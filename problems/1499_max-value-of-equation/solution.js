@@ -31,10 +31,7 @@ var findMaxValueOfEquation = function (points, k) {
         // a back entry with key <= newcomer's can never win a future j;
         // popping ties is safe — the newer index has larger x, so it
         // stays inside the k-window at least as long
-        while (
-            head < tail &&
-            points[dq[tail - 1]][1] - points[dq[tail - 1]][0] <= yj - xj
-        ) {
+        while (head < tail && points[dq[tail - 1]][1] - points[dq[tail - 1]][0] <= yj - xj) {
             tail--;
         }
         dq[tail++] = j;

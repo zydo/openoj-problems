@@ -1,8 +1,4 @@
-function numSubarrayBoundedMax(
-    nums: number[],
-    left: number,
-    right: number,
-): number {
+function numSubarrayBoundedMax(nums: number[], left: number, right: number): number {
     // One-sided count of subarrays whose max is <= bound; the
     // answer follows by subtracting the two bounds.
     function countBelow(bound: number): number {

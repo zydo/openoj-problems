@@ -22,11 +22,7 @@ class Solution {
                 // Accelerate.
                 long np = pos + speed,
                     ns = speed * 2;
-                if (
-                    -bound <= np &&
-                    np <= bound &&
-                    visited.add(encode(np, ns, bound, span))
-                ) {
+                if (-bound <= np && np <= bound && visited.add(encode(np, ns, bound, span))) {
                     queue.add(new long[] { np, ns });
                 }
                 // Reverse.

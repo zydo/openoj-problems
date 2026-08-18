@@ -49,15 +49,7 @@ class Solution {
         return board;
     }
 
-    private boolean backtrack(
-        char[][] grid,
-        int[] er,
-        int[] ec,
-        int[] rows,
-        int[] cols,
-        int[] boxes,
-        int k
-    ) {
+    private boolean backtrack(char[][] grid, int[] er, int[] ec, int[] rows, int[] cols, int[] boxes, int k) {
         // Past the last empty cell: a complete consistent assignment. True
         // unwinds the whole stack immediately, so the solver stops at the
         // first solution (the puzzle is guaranteed unique).
@@ -71,11 +63,7 @@ class Solution {
             int bit = 1 << d;
             // Legality is three constant-time ANDs against the masks,
             // instead of re-scanning 27 cells.
-            if (
-                (rows[r] & bit) != 0 ||
-                (cols[c] & bit) != 0 ||
-                (boxes[b] & bit) != 0
-            ) {
+            if ((rows[r] & bit) != 0 || (cols[c] & bit) != 0 || (boxes[b] & bit) != 0) {
                 continue;
             }
             // Place d: set its three bits, write the cell, attack k + 1.

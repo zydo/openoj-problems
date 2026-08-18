@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def criticalConnections(
-        self, n: int, connections: List[List[int]]
-    ) -> List[List[int]]:
+    def criticalConnections(self, n: int, connections: List[List[int]]) -> List[List[int]]:
         graph = [[] for _ in range(n)]
         for a, b in connections:
             graph[a].append(b)

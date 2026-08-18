@@ -56,8 +56,6 @@ class Solution:
 
         answer = 0
         for i in range(n):
-            cnt = _count_pairs(L_max[i], R_max[i], K) + _count_pairs(
-                L_min[i], R_min[i], K
-            )
+            cnt = _count_pairs(L_max[i], R_max[i], K) + _count_pairs(L_min[i], R_min[i], K)
             answer += nums[i] * cnt
         return answer

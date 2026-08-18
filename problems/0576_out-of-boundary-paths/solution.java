@@ -1,12 +1,6 @@
 class Solution {
 
-    public int findPaths(
-        int m,
-        int n,
-        int maxMove,
-        int startRow,
-        int startColumn
-    ) {
+    public int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
         final int MOD = 1_000_000_007;
         // Zero moves can never leave the grid.
         if (maxMove == 0) {

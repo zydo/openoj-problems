@@ -1,7 +1,3 @@
-function furthestBuilding(
-    heights: number[],
-    bricks: number,
-    ladders: number,
-): number {
+function furthestBuilding(heights: number[], bricks: number, ladders: number): number {
     throw new Error("TODO");
 }

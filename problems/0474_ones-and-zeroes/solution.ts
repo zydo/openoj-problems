@@ -2,9 +2,7 @@ function findMaxForm(strs: string[], m: number, n: number): number {
     // dp[i][j] = most strings pickable with at most i zeros and j ones: a
     // 0/1 knapsack with two resource axes; the all-zero table already
     // encodes "pick nothing".
-    const dp: number[][] = Array.from({ length: m + 1 }, () =>
-        new Array<number>(n + 1).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: m + 1 }, () => new Array<number>(n + 1).fill(0));
     for (const s of strs) {
         // Only the string's shape matters: its 0-count and 1-count.
         let zeros = 0;

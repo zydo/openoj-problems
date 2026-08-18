@@ -1,7 +1,5 @@
 function mostBooked(n: number, meetings: number[][]): number {
-    const ordered = meetings
-        .map((m, i) => [m[0], m[1], i])
-        .sort((a, b) => a[0] - b[0] || a[2] - b[2]);
+    const ordered = meetings.map((m, i) => [m[0], m[1], i]).sort((a, b) => a[0] - b[0] || a[2] - b[2]);
     // endTime[i] = when room i frees up (-1: never used, always free).
     const endTime = new Array<number>(n).fill(-1);
     const count = new Array<number>(n).fill(0);

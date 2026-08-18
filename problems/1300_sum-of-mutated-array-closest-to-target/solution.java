@@ -9,10 +9,7 @@ class Solution {
             if (mutatedSum(arr, mid) >= (long) target) hi = mid;
             else lo = mid + 1;
         }
-        if (
-            Math.abs(mutatedSum(arr, lo - 1) - target) <=
-            Math.abs(mutatedSum(arr, lo) - target)
-        ) {
+        if (Math.abs(mutatedSum(arr, lo - 1) - target) <= Math.abs(mutatedSum(arr, lo) - target)) {
             return lo - 1;
         }
         return lo;

@@ -2,11 +2,7 @@ import java.util.*;
 
 class Solution {
 
-    public boolean areSentencesSimilarTwo(
-        String[] sentence1,
-        String[] sentence2,
-        String[][] similarPairs
-    ) {
+    public boolean areSentencesSimilarTwo(String[] sentence1, String[] sentence2, String[][] similarPairs) {
         // Different lengths can never be similar.
         if (sentence1.length != sentence2.length) return false;
 

@@ -44,14 +44,7 @@ impl Solution {
         Self::dp(0, 1, p, &cap_digits, lim, &mut memo)
     }
 
-    fn dp(
-        pos: usize,
-        tight: usize,
-        p: usize,
-        cap_digits: &[i64],
-        lim: i64,
-        memo: &mut Vec<[i64; 2]>,
-    ) -> i64 {
+    fn dp(pos: usize, tight: usize, p: usize, cap_digits: &[i64], lim: i64, memo: &mut Vec<[i64; 2]>) -> i64 {
         if pos == p {
             return 1;
         }

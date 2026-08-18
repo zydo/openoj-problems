@@ -2,9 +2,7 @@ class Solution {
   public:
     vector<int> smallestRange(vector<vector<int>> &nums) {
         // min-heap of (value, list index, element index)
-        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>,
-                       greater<tuple<int, int, int>>>
-            heap;
+        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> heap;
         // Seed the heap with every list's head; the k-way merge sweeps candidate
         // ranges in order as the selection's minimum advances.
         int curMax = INT_MIN;

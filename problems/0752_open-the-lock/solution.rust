@@ -12,8 +12,7 @@ impl Solution {
         }
         let mut seen: std::collections::HashSet<String> = std::collections::HashSet::new();
         seen.insert(start.clone());
-        let mut queue: std::collections::VecDeque<(String, i32)> =
-            std::collections::VecDeque::new();
+        let mut queue: std::collections::VecDeque<(String, i32)> = std::collections::VecDeque::new();
         queue.push_back((start, 0));
         while let Some((state, steps)) = queue.pop_front() {
             if state == target {

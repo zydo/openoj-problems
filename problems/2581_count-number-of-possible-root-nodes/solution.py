@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def rootCount(
-        self, edges: List[List[int]], guesses: List[List[int]], k: int
-    ) -> int:
+    def rootCount(self, edges: List[List[int]], guesses: List[List[int]], k: int) -> int:
         n = len(edges) + 1
         graph = [[] for _ in range(n)]
         for a, b in edges:

@@ -3,9 +3,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def minCost(
-        self, n: int, roads: List[List[int]], appleCost: List[int], k: int
-    ) -> List[int]:
+    def minCost(self, n: int, roads: List[List[int]], appleCost: List[int], k: int) -> List[int]:
         adj = [[] for _ in range(n + 1)]
         for a, b, c in roads:
             adj[a].append((b, c))

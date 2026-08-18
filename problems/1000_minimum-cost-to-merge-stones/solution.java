@@ -31,9 +31,7 @@ class Solution {
                 // any m-pile configuration has such a first-pile split
                 for (int m = 2; m <= k; m++) {
                     for (int mid = i; mid < j; mid++) {
-                        if (
-                            dp[i][mid][1] < INF && dp[mid + 1][j][m - 1] < INF
-                        ) {
+                        if (dp[i][mid][1] < INF && dp[mid + 1][j][m - 1] < INF) {
                             long cand = dp[i][mid][1] + dp[mid + 1][j][m - 1];
                             if (cand < dp[i][j][m]) {
                                 dp[i][j][m] = cand;

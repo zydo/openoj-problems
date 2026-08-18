@@ -16,8 +16,7 @@ class Solution {
         // Robbing here forbids both children: take their skip values.
         int robHere = node.val + left[1] + right[1];
         // Skipping leaves each child free to do its better option.
-        int skipHere =
-            Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
+        int skipHere = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
         return new int[] { robHere, skipHere };
     }
 }

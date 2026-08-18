@@ -23,23 +23,13 @@ class Solution {
                 j = cur[1];
             // Test on pop, not push: this cleanly skips the entrance itself
             // while returning the correct distance for any other border cell.
-            if (
-                (i == 0 || i == m - 1 || j == 0 || j == n - 1) &&
-                !(i == er && j == ec)
-            ) {
+            if ((i == 0 || i == m - 1 || j == 0 || j == n - 1) && !(i == er && j == ec)) {
                 return dist[i][j];
             }
             for (int[] d : dirs) {
                 int ni = i + d[0],
                     nj = j + d[1];
-                if (
-                    ni >= 0 &&
-                    ni < m &&
-                    nj >= 0 &&
-                    nj < n &&
-                    maze[ni][nj].equals(".") &&
-                    dist[ni][nj] == -1
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && maze[ni][nj].equals(".") && dist[ni][nj] == -1) {
                     // Assigning distance at enqueue time is what keeps the
                     // queue ordered by distance.
                     dist[ni][nj] = dist[i][j] + 1;

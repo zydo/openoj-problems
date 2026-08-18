@@ -5,10 +5,7 @@ pub struct ListNode {
 }
 
 impl Solution {
-    pub fn add_digit_lists(
-        first: Option<Box<ListNode>>,
-        second: Option<Box<ListNode>>,
-    ) -> Option<Box<ListNode>> {
+    pub fn add_digit_lists(first: Option<Box<ListNode>>, second: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut first = first;
         let mut second = second;
         // Dummy head anchors the result list so the first node is not a

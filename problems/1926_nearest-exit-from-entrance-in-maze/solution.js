@@ -18,10 +18,7 @@ var nearestExit = function (maze, entrance) {
         const [i, j] = q[head++];
         // Test on pop, not push: cleanly skips the entrance itself while
         // returning the correct distance for any other border cell.
-        if (
-            (i === 0 || i === m - 1 || j === 0 || j === n - 1) &&
-            !(i === er && j === ec)
-        ) {
+        if ((i === 0 || i === m - 1 || j === 0 || j === n - 1) && !(i === er && j === ec)) {
             return dist[i][j];
         }
         for (const [di, dj] of [
@@ -32,14 +29,7 @@ var nearestExit = function (maze, entrance) {
         ]) {
             const ni = i + di,
                 nj = j + dj;
-            if (
-                ni >= 0 &&
-                ni < m &&
-                nj >= 0 &&
-                nj < n &&
-                maze[ni][nj] === "." &&
-                dist[ni][nj] === -1
-            ) {
+            if (ni >= 0 && ni < m && nj >= 0 && nj < n && maze[ni][nj] === "." && dist[ni][nj] === -1) {
                 // Assigning distance at enqueue time keeps the queue ordered
                 // by distance.
                 dist[ni][nj] = dist[i][j] + 1;

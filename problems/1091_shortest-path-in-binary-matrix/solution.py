@@ -24,12 +24,7 @@ class Solution:
                     if dx == 0 and dy == 0:
                         continue
                     nx, ny = x + dx, y + dy
-                    if (
-                        0 <= nx < n
-                        and 0 <= ny < n
-                        and grid[nx][ny] == 0
-                        and dist[nx][ny] == 0
-                    ):
+                    if 0 <= nx < n and 0 <= ny < n and grid[nx][ny] == 0 and dist[nx][ny] == 0:
                         # Early exit the moment the goal becomes reachable.
                         if nx == n - 1 and ny == n - 1:
                             return dist[x][y] + 1

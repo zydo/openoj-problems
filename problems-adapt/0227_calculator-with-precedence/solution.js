@@ -17,13 +17,7 @@ var calculateWithPrecedence = function (s) {
         }
         // Two separate ifs: a digit in the last position must both extend num
         // and trigger the final flush (else-if would drop the last term).
-        if (
-            ch === "+" ||
-            ch === "-" ||
-            ch === "*" ||
-            ch === "/" ||
-            i === last
-        ) {
+        if (ch === "+" || ch === "-" || ch === "*" || ch === "/" || i === last) {
             if (op === "+") {
                 stack.push(num);
             } else if (op === "-") {

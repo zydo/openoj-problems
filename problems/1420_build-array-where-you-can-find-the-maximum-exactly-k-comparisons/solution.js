@@ -14,9 +14,7 @@ var numOfArrays = function (n, m, k) {
         dp[1][j] = 1;
     }
     for (let step = 2; step <= n; step++) {
-        const ndp = Array.from({ length: k + 1 }, () =>
-            new Array(m + 1).fill(0),
-        );
+        const ndp = Array.from({ length: k + 1 }, () => new Array(m + 1).fill(0));
         for (let c = 1; c <= k; c++) {
             const prev = dp[c - 1];
             const pref = new Array(m + 1).fill(0);

@@ -11,9 +11,7 @@ var goodIntegers = function (l, r, k) {
         const n = digits.length;
         // memo[pos][tight][prev+1][started]; prev index 0 = unused
         const memo = Array.from({ length: n + 1 }, () =>
-            Array.from({ length: 2 }, () =>
-                Array.from({ length: 11 }, () => new Array(2).fill(-1)),
-            ),
+            Array.from({ length: 2 }, () => Array.from({ length: 11 }, () => new Array(2).fill(-1))),
         );
         const dp = (pos, tight, prev, started) => {
             if (pos === n) return 1;

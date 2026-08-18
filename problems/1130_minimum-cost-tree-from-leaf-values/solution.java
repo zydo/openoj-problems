@@ -20,8 +20,7 @@ class Solution {
                 int j = i + length - 1;
                 int best = Integer.MAX_VALUE;
                 for (int k = i; k < j; k++) {
-                    int cost =
-                        maxi[i][k] * maxi[k + 1][j] + dp[i][k] + dp[k + 1][j];
+                    int cost = maxi[i][k] * maxi[k + 1][j] + dp[i][k] + dp[k + 1][j];
                     if (cost < best) {
                         best = cost;
                     }

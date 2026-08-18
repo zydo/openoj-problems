@@ -17,9 +17,7 @@ class Solution {
             // Pop the top while nothing smaller remains unread: writing it
             // now is never wrong, since later arrivals are >= top. Ties pop
             // early too — safe and never a wasted hold.
-            while (
-                st.length() > 0 && st.charAt(st.length() - 1) <= suffixMin[i]
-            ) {
+            while (st.length() > 0 && st.charAt(st.length() - 1) <= suffixMin[i]) {
                 out.append(st.charAt(st.length() - 1));
                 st.deleteCharAt(st.length() - 1);
             }

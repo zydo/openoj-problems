@@ -27,8 +27,6 @@ impl Solution {
             }
         }
         // The complement's closest element is x's farthest.
-        nums.iter()
-            .map(|&x| m - dist[full ^ (x as usize)])
-            .collect()
+        nums.iter().map(|&x| m - dist[full ^ (x as usize)]).collect()
     }
 }

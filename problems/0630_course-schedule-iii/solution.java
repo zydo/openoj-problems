@@ -6,9 +6,7 @@ class Solution {
 
     public int scheduleCourse(int[][] courses) {
         Arrays.sort(courses, Comparator.comparingInt(course -> course[1]));
-        PriorityQueue<Integer> heap = new PriorityQueue<>(
-            Comparator.reverseOrder()
-        );
+        PriorityQueue<Integer> heap = new PriorityQueue<>(Comparator.reverseOrder());
         long total = 0;
         for (int[] course : courses) {
             int duration = course[0];

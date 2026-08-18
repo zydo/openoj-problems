@@ -30,15 +30,13 @@ var minMaxSubarraySum = function (nums, k) {
     const Rmax = new Array(n);
     let stack = [];
     for (let i = 0; i < n; i++) {
-        while (stack.length && nums[stack[stack.length - 1]] <= nums[i])
-            stack.pop();
+        while (stack.length && nums[stack[stack.length - 1]] <= nums[i]) stack.pop();
         Lmax[i] = stack.length ? i - stack[stack.length - 1] - 1 : i;
         stack.push(i);
     }
     stack = [];
     for (let i = n - 1; i >= 0; i--) {
-        while (stack.length && nums[stack[stack.length - 1]] < nums[i])
-            stack.pop();
+        while (stack.length && nums[stack[stack.length - 1]] < nums[i]) stack.pop();
         Rmax[i] = stack.length ? stack[stack.length - 1] - i - 1 : n - 1 - i;
         stack.push(i);
     }
@@ -47,23 +45,20 @@ var minMaxSubarraySum = function (nums, k) {
     const Rmin = new Array(n);
     stack = [];
     for (let i = 0; i < n; i++) {
-        while (stack.length && nums[stack[stack.length - 1]] >= nums[i])
-            stack.pop();
+        while (stack.length && nums[stack[stack.length - 1]] >= nums[i]) stack.pop();
         Lmin[i] = stack.length ? i - stack[stack.length - 1] - 1 : i;
         stack.push(i);
     }
     stack = [];
     for (let i = n - 1; i >= 0; i--) {
-        while (stack.length && nums[stack[stack.length - 1]] > nums[i])
-            stack.pop();
+        while (stack.length && nums[stack[stack.length - 1]] > nums[i]) stack.pop();
         Rmin[i] = stack.length ? stack[stack.length - 1] - i - 1 : n - 1 - i;
         stack.push(i);
     }
 
     let answer = 0;
     for (let i = 0; i < n; i++) {
-        const cnt =
-            countPairs(Lmax[i], Rmax[i], K) + countPairs(Lmin[i], Rmin[i], K);
+        const cnt = countPairs(Lmax[i], Rmax[i], K) + countPairs(Lmin[i], Rmin[i], K);
         answer += nums[i] * cnt;
     }
     return answer;

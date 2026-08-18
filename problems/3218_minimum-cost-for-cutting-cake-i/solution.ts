@@ -1,9 +1,4 @@
-function minimumCost(
-    m: number,
-    n: number,
-    horizontalCut: number[],
-    verticalCut: number[],
-): number {
+function minimumCost(m: number, n: number, horizontalCut: number[], verticalCut: number[]): number {
     // A cut costs its base price times the pieces it crosses: one more
     // for every opposite-direction cut already made. An exchange argument
     // (swapping adjacent opposite cuts never helps unless the pricier one

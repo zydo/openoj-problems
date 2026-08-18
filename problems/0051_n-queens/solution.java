@@ -44,11 +44,7 @@ class Solution {
             // row - col (constant along one diagonal family), diag2 holds
             // row + col (constant along the other). A candidate is safe
             // exactly when all three values are unseen.
-            if (
-                cols.contains(col) ||
-                diag1.contains(row - col) ||
-                diag2.contains(row + col)
-            ) {
+            if (cols.contains(col) || diag1.contains(row - col) || diag2.contains(row + col)) {
                 continue;
             }
             cols.add(col);

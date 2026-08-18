@@ -18,8 +18,7 @@ class Solution {
             }
         }
         int best = 0;
-        function<void(int, array<int, 26> &, int)> dfs = [&](int i, array<int, 26> &remaining,
-                                                             int total) {
+        function<void(int, array<int, 26> &, int)> dfs = [&](int i, array<int, 26> &remaining, int total) {
             // every node is already a complete valid selection (the rest can
             // be skipped), so compare best here rather than only at leaves
             best = max(best, total);

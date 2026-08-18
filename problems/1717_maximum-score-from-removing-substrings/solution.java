@@ -13,12 +13,7 @@ class Solution {
         return first.score + second.score;
     }
 
-    private Result removePairs(
-        String text,
-        char first,
-        char second,
-        int points
-    ) {
+    private Result removePairs(String text, char first, char second, int points) {
         // Stack scan: `second` arriving on a top of `first` pops and scores;
         // everything else is pushed. Survivors are the text with every
         // non-overlapping removal of this pattern applied.

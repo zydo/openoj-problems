@@ -17,11 +17,7 @@ impl Solution {
                 // (i+1, l+1), taking the right to (i+1, l).
                 let take_left = prev[l + 1] + multipliers[i] as i64 * nums[l] as i64;
                 let take_right = prev[l] + multipliers[i] as i64 * nums[n - 1 - r] as i64;
-                cur[l] = if take_left >= take_right {
-                    take_left
-                } else {
-                    take_right
-                };
+                cur[l] = if take_left >= take_right { take_left } else { take_right };
             }
             std::mem::swap(&mut prev, &mut cur);
         }

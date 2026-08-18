@@ -10,11 +10,7 @@ class Solution {
             n = grid[0].length;
         List<int[]> cells = new ArrayList<>();
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) cells.add(new int[] {
-                grid[i][j],
-                i,
-                j,
-            });
+            for (int j = 0; j < n; j++) cells.add(new int[] { grid[i][j], i, j });
         }
         // Decreasing value order: when (i, j) is handled, every strictly
         // larger neighbor's dp entry is already final.
@@ -35,9 +31,7 @@ class Solution {
                     nj = j + dir[1];
                 // Strict '>' skips equal values, so plateau cells never
                 // chain (an increasing path can never revisit a cell).
-                if (
-                    ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] > v
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] > v) {
                     dp[i][j] = (dp[i][j] + dp[ni][nj]) % MOD;
                 }
             }

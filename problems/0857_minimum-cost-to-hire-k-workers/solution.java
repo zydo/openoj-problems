@@ -10,9 +10,7 @@ class Solution {
         }
         final int[] q = quality;
         final int[] w = wage;
-        Arrays.sort(order, (a, b) ->
-            Double.compare(w[a] / (double) q[a], w[b] / (double) q[b])
-        );
+        Arrays.sort(order, (a, b) -> Double.compare(w[a] / (double) q[a], w[b] / (double) q[b]));
 
         PriorityQueue<Integer> heap = new PriorityQueue<>((a, b) -> b - a);
         long totalQuality = 0;

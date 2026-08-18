@@ -1,6 +1,5 @@
 class Solution {
-    bool dfs(const vector<int> &nums, int target, int full, int mask, int curr,
-             vector<char> &memo) {
+    bool dfs(const vector<int> &nums, int target, int full, int mask, int curr, vector<char> &memo) {
         // State: bitmask of placed elements plus curr, the partial sum of the
         // subset currently being filled.
         if (mask == full)

@@ -34,11 +34,7 @@ impl Solution {
         }
         for r in 0..m {
             for c in 0..n {
-                board[r][c] = if board[r][c] == 1 || board[r][c] == 3 {
-                    1
-                } else {
-                    0
-                };
+                board[r][c] = if board[r][c] == 1 || board[r][c] == 3 { 1 } else { 0 };
             }
         }
         board

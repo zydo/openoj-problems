@@ -9,17 +9,13 @@ class Solution {
         for (int i = 0; i < n; i++) {
             roomsBySize[i] = i;
         }
-        Arrays.sort(roomsBySize, (a, b) ->
-            Integer.compare(rooms[b][1], rooms[a][1])
-        );
+        Arrays.sort(roomsBySize, (a, b) -> Integer.compare(rooms[b][1], rooms[a][1]));
         // Offline trick: process queries by decreasing minSize so rooms only accumulate.
         Integer[] queryOrder = new Integer[q];
         for (int j = 0; j < q; j++) {
             queryOrder[j] = j;
         }
-        Arrays.sort(queryOrder, (a, b) ->
-            Integer.compare(queries[b][1], queries[a][1])
-        );
+        Arrays.sort(queryOrder, (a, b) -> Integer.compare(queries[b][1], queries[a][1]));
         TreeSet<Integer> ids = new TreeSet<>();
         int[] answers = new int[q];
         int ri = 0;

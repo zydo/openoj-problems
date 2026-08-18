@@ -66,8 +66,7 @@ class Solution {
         vector<long long> answer;
         answer.reserve(queries.size());
         for (auto &q : queries) {
-            answer.push_back((distance(q[0], q[1]) + distance(q[1], q[2]) + distance(q[2], q[0])) /
-                             2);
+            answer.push_back((distance(q[0], q[1]) + distance(q[1], q[2]) + distance(q[2], q[0])) / 2);
         }
         return answer;
     }

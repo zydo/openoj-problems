@@ -1,11 +1,5 @@
-function mincostToHireWorkers(
-    quality: number[],
-    wage: number[],
-    k: number,
-): number {
-    const workers: [number, number][] = wage.map(
-        (w, i) => [w, quality[i]] as [number, number],
-    );
+function mincostToHireWorkers(quality: number[], wage: number[], k: number): number {
+    const workers: [number, number][] = wage.map((w, i) => [w, quality[i]] as [number, number]);
     workers.sort((a, b) => a[0] / a[1] - b[0] / b[1]);
 
     // Local max-heap of chosen qualities.

@@ -27,12 +27,7 @@ class Solution:
         sig_counts = {}
         node_sig = {}
         for node in reversed(nodes):
-            key = tuple(
-                sorted(
-                    (name, node_sig[child["id"]])
-                    for name, child in node["children"].items()
-                )
-            )
+            key = tuple(sorted((name, node_sig[child["id"]]) for name, child in node["children"].items()))
             if key not in sig_to_id:
                 sig_to_id[key] = len(sig_to_id)
             sid = sig_to_id[key]

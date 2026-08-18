@@ -8,11 +8,7 @@ import java.util.Set;
 
 class Solution {
 
-    public int ladderLength(
-        String beginWord,
-        String endWord,
-        String[] wordList
-    ) {
+    public int ladderLength(String beginWord, String endWord, String[] wordList) {
         Set<String> words = new HashSet<>(Arrays.asList(wordList));
         // No sequence can end outside the dictionary.
         if (!words.contains(endWord)) {
@@ -24,9 +20,7 @@ class Solution {
         Map<String, List<String>> buckets = new HashMap<>();
         for (String word : wordList) {
             for (int i = 0; i < length; ++i) {
-                buckets
-                    .computeIfAbsent(pattern(word, i), key -> new ArrayList<>())
-                    .add(word);
+                buckets.computeIfAbsent(pattern(word, i), key -> new ArrayList<>()).add(word);
             }
         }
 

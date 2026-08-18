@@ -5,10 +5,7 @@ pub struct ListNode {
 }
 
 impl Solution {
-    pub fn merge_two_lists(
-        list1: Option<Box<ListNode>>,
-        list2: Option<Box<ListNode>>,
-    ) -> Option<Box<ListNode>> {
+    pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         match (list1, list2) {
             // Base case: an empty list is already sorted, so the other list —
             // whatever remains of it — is the merged continuation as is.

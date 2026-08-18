@@ -1,18 +1,10 @@
-function count(
-    num1: string,
-    num2: string,
-    min_sum: number,
-    max_sum: number,
-): number {
+function count(num1: string, num2: string, min_sum: number, max_sum: number): number {
     const MOD = 1000000007;
 
     const countRange = (s: string): number => {
         const m = s.length;
         const ms = max_sum;
-        let dp: number[][] = [
-            new Array(ms + 1).fill(0),
-            new Array(ms + 1).fill(0),
-        ];
+        let dp: number[][] = [new Array(ms + 1).fill(0), new Array(ms + 1).fill(0)];
         for (let sm = 0; sm <= ms; sm++) {
             const v = sm >= min_sum ? 1 : 0;
             dp[0][sm] = v;
@@ -20,10 +12,7 @@ function count(
         }
         for (let pos = m - 1; pos >= 0; pos--) {
             const d0 = s.charCodeAt(pos) - 48;
-            const ndp: number[][] = [
-                new Array(ms + 1).fill(0),
-                new Array(ms + 1).fill(0),
-            ];
+            const ndp: number[][] = [new Array(ms + 1).fill(0), new Array(ms + 1).fill(0)];
             for (let tight = 0; tight < 2; tight++) {
                 const limit = tight === 1 ? d0 : 9;
                 for (let sm = 0; sm <= ms; sm++) {

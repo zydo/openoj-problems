@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def leftmostBuildingQueries(
-        self, heights: List[int], queries: List[List[int]]
-    ) -> List[int]:
+    def leftmostBuildingQueries(self, heights: List[int], queries: List[List[int]]) -> List[int]:
         n = len(heights)
         # Max segment tree over heights, padded to a power of two: leaves hold
         # heights, each parent the max of its children.

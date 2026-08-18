@@ -1,8 +1,4 @@
-function countInterestingSubarrays(
-    nums: number[],
-    modulo: number,
-    k: number,
-): number {
+function countInterestingSubarrays(nums: number[], modulo: number, k: number): number {
     // Only whether nums[i] % modulo == k matters, so track pref: the number
     // of hits among the prefix. A subarray is interesting iff its hit count
     // has residue k — prefix-sum counting, applied to residues. Seed residue

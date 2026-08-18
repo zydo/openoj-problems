@@ -34,9 +34,7 @@ class Solution {
                 int ni = i + di[t],
                     nj = j + dj[t];
                 if (!(ni >= 0 && ni < m && nj >= 0 && nj < n)) continue;
-                boolean follows =
-                    (isOdd && di[t] + dj[t] > 0) ||
-                    (!isOdd && di[t] + dj[t] < 0);
+                boolean follows = (isOdd && di[t] + dj[t] > 0) || (!isOdd && di[t] + dj[t] < 0);
                 long w = (long) (ni + 1) * (nj + 1);
                 if (!follows) w += penalty[i][j];
                 int ncell = ni * n + nj;

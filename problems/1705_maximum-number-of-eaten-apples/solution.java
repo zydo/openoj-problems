@@ -5,9 +5,7 @@ class Solution {
     public int eatenApples(int[] apples, int[] days) {
         int n = apples.length;
         PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[1], b[1])
+            a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1])
         );
         int eaten = 0;
         // Greedy: always eat from the soonest-rotting batch. Exchange argument

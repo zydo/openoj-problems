@@ -1,9 +1,4 @@
-function findGoodStrings(
-    n: number,
-    s1: string,
-    s2: string,
-    evil: string,
-): number {
+function findGoodStrings(n: number, s1: string, s2: string, evil: string): number {
     const MOD = 1000000007;
     const m = evil.length;
     const fail: number[] = new Array(m).fill(0);
@@ -63,8 +58,7 @@ function findGoodStrings(
                         if (ns === m) continue;
                         const nlo = lo && code === s1c[pos] ? 1 : 0;
                         const nhi = hi && code === s2c[pos] ? 1 : 0;
-                        total +=
-                            dp[((pos + 1) * (m + 1) + ns) * 4 + nlo * 2 + nhi];
+                        total += dp[((pos + 1) * (m + 1) + ns) * 4 + nlo * 2 + nhi];
                     }
                     dp[(pos * (m + 1) + state) * 4 + lo * 2 + hi] = total % MOD;
                 }

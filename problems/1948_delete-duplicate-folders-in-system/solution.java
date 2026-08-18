@@ -41,17 +41,12 @@ class Solution {
         int[] nodeSig = new int[total];
         for (int ni = nodes.size() - 1; ni >= 0; ni--) {
             int node = nodes.get(ni);
-            List<Map.Entry<String, Integer>> entries = new ArrayList<>(
-                children.get(node).entrySet()
-            );
+            List<Map.Entry<String, Integer>> entries = new ArrayList<>(children.get(node).entrySet());
             entries.sort((a, b) -> a.getKey().compareTo(b.getKey()));
             // build key with separator characters (names cannot contain them)
             StringBuilder sb = new StringBuilder();
             for (Map.Entry<String, Integer> e : entries) {
-                sb.append(e.getKey())
-                    .append('')
-                    .append(nodeSig[e.getValue()])
-                    .append('');
+                sb.append(e.getKey()).append('').append(nodeSig[e.getValue()]).append('');
             }
             String key = sb.toString();
             Integer sidBoxed = sigToId.get(key);
@@ -68,10 +63,7 @@ class Solution {
 
         boolean[] marked = new boolean[total];
         for (int node : nodes) {
-            if (
-                !children.get(node).isEmpty() &&
-                sigCounts.get(nodeSig[node]) >= 2
-            ) {
+            if (!children.get(node).isEmpty() && sigCounts.get(nodeSig[node]) >= 2) {
                 List<Integer> markStack = new ArrayList<>();
                 markStack.add(node);
                 while (!markStack.isEmpty()) {

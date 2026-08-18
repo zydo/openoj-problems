@@ -11,9 +11,7 @@ class Solution:
             for j in range(n):
                 # Two-dimensional inclusion-exclusion: add above + left,
                 # subtract the doubly-counted corner, add the cell.
-                prefix[i + 1][j + 1] = (
-                    prefix[i][j + 1] + prefix[i + 1][j] - prefix[i][j] + mat[i][j]
-                )
+                prefix[i + 1][j + 1] = prefix[i][j + 1] + prefix[i + 1][j] - prefix[i][j] + mat[i][j]
         answer = []
         for i in range(m):
             row = []
@@ -24,8 +22,6 @@ class Solution:
                 r1, r2 = max(0, i - k), min(m, i + k + 1)
                 c1, c2 = max(0, j - k), min(n, j + k + 1)
                 # Four lookups with alternating signs: O(1) for any k.
-                row.append(
-                    prefix[r2][c2] - prefix[r1][c2] - prefix[r2][c1] + prefix[r1][c1]
-                )
+                row.append(prefix[r2][c2] - prefix[r1][c2] - prefix[r2][c1] + prefix[r1][c1])
             answer.append(row)
         return answer

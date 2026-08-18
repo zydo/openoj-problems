@@ -17,8 +17,7 @@ var deleteAndEarn = function (nums) {
     for (const value of values) {
         // Adjacent predecessor conflicts with its take; a gap (missing v-1)
         // makes taking v conflict with nothing, so both states carry in.
-        const base =
-            prev !== null && prev === value - 1 ? skip : Math.max(take, skip);
+        const base = prev !== null && prev === value - 1 ? skip : Math.max(take, skip);
         const newTake = base + value * count.get(value);
         const newSkip = Math.max(take, skip);
         take = newTake;

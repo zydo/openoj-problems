@@ -1,8 +1,4 @@
-function minimumHammingDistance(
-    source: number[],
-    target: number[],
-    allowedSwaps: number[][],
-): number {
+function minimumHammingDistance(source: number[], target: number[], allowedSwaps: number[][]): number {
     const n = source.length;
     const parent: number[] = new Array(n);
     for (let i = 0; i < n; i++) {

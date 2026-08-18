@@ -1,7 +1,6 @@
 class Solution {
   public:
-    int minimumTotalPrice(int n, vector<vector<int>> &edges, vector<int> &price,
-                          vector<vector<int>> &trips) {
+    int minimumTotalPrice(int n, vector<vector<int>> &edges, vector<int> &price, vector<vector<int>> &trips) {
         vector<vector<int>> adj(n);
         for (auto &e : edges) {
             adj[e[0]].push_back(e[1]);

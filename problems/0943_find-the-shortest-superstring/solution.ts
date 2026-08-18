@@ -8,10 +8,7 @@ function shortestSuperstring(words: string[]): string {
             let best = 0;
             const limit = Math.min(words[i].length, words[j].length);
             for (let size = 1; size <= limit; size++) {
-                if (
-                    words[i].slice(words[i].length - size) ===
-                    words[j].slice(0, size)
-                ) {
+                if (words[i].slice(words[i].length - size) === words[j].slice(0, size)) {
                     best = size;
                 }
             }
@@ -57,8 +54,7 @@ function shortestSuperstring(words: string[]): string {
                 if (
                     dpStr[newMask][nxt] === null ||
                     candLen < exLen ||
-                    (candLen === exLen &&
-                        seqLess(candSeq, dpSeq[newMask][nxt] as number[]))
+                    (candLen === exLen && seqLess(candSeq, dpSeq[newMask][nxt] as number[]))
                 ) {
                     dpLen[newMask][nxt] = candLen;
                     dpStr[newMask][nxt] = candStr;
@@ -76,10 +72,7 @@ function shortestSuperstring(words: string[]): string {
             bestJ === -1 ||
             dpLen[full][j] < dpLen[full][bestJ] ||
             (dpLen[full][j] === dpLen[full][bestJ] &&
-                seqLess(
-                    dpSeq[full][j] as number[],
-                    dpSeq[full][bestJ] as number[],
-                ))
+                seqLess(dpSeq[full][j] as number[], dpSeq[full][bestJ] as number[]))
         ) {
             bestJ = j;
         }

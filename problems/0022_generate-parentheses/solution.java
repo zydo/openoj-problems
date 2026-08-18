@@ -6,13 +6,7 @@ class Solution {
         return result.toArray(new String[0]);
     }
 
-    private void backtrack(
-        int n,
-        StringBuilder current,
-        int openCount,
-        int closeCount,
-        java.util.List<String> result
-    ) {
+    private void backtrack(int n, StringBuilder current, int openCount, int closeCount, java.util.List<String> result) {
         // Under the two guards below every leaf reached at length 2n is
         // well-formed by construction, so nothing needs re-validating.
         if (current.length() == 2 * n) {

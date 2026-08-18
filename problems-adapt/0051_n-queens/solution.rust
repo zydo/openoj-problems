@@ -9,15 +9,7 @@ impl Solution {
         let mut diag2: HashSet<isize> = HashSet::new();
         let mut board: Vec<String> = Vec::new();
 
-        Solution::backtrack(
-            0,
-            n,
-            &mut cols,
-            &mut diag1,
-            &mut diag2,
-            &mut board,
-            &mut results,
-        );
+        Solution::backtrack(0, n, &mut cols, &mut diag1, &mut diag2, &mut board, &mut results);
         results
     }
 

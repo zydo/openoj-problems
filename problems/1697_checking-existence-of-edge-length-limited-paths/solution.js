@@ -20,9 +20,7 @@ var distanceLimitedPathsExist = function (n, edgeList, queries) {
     // so union-find only ever grows. Sorting query indices (not the
     // queries) lets answers return to their original positions.
     const edges = edgeList.slice().sort((a, b) => a[2] - b[2]);
-    const order = queries
-        .map((_, i) => i)
-        .sort((a, b) => queries[a][2] - queries[b][2]);
+    const order = queries.map((_, i) => i).sort((a, b) => queries[a][2] - queries[b][2]);
     const answer = new Array(queries.length).fill(false);
     let ei = 0;
     for (const qi of order) {

@@ -29,13 +29,7 @@ class Solution {
                 int nr = r + dir[0];
                 int nc = c + dir[1];
                 // Mark visited on push so each cell enters the heap at most once.
-                if (
-                    nr >= 0 &&
-                    nr < rows &&
-                    nc >= 0 &&
-                    nc < cols &&
-                    !visited[nr][nc]
-                ) {
+                if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && !visited[nr][nc]) {
                     visited[nr][nc] = true;
                     heap.offer(new int[] { grid[nr][nc], nr, nc });
                 }

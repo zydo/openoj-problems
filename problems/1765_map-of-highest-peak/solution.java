@@ -32,13 +32,7 @@ class Solution {
                     nj = j + d[1];
                 // height == -1 doubles as the visited marker, so each cell
                 // is enqueued once, by its nearest source.
-                if (
-                    ni >= 0 &&
-                    ni < m &&
-                    nj >= 0 &&
-                    nj < n &&
-                    height[ni][nj] == -1
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && height[ni][nj] == -1) {
                     height[ni][nj] = height[i][j] + 1;
                     q.offer(new int[] { ni, nj });
                 }

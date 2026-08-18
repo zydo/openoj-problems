@@ -1,9 +1,5 @@
 impl Solution {
-    pub fn check_if_prerequisite(
-        num_courses: i32,
-        prerequisites: Vec<Vec<i32>>,
-        queries: Vec<Vec<i32>>,
-    ) -> Vec<bool> {
+    pub fn check_if_prerequisite(num_courses: i32, prerequisites: Vec<Vec<i32>>, queries: Vec<Vec<i32>>) -> Vec<bool> {
         let n = num_courses as usize;
         let mut adjacency: Vec<Vec<usize>> = vec![Vec::new(); n];
         let mut indegree = vec![0usize; n];

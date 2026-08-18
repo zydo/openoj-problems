@@ -3,11 +3,7 @@ import java.util.Comparator;
 
 class Solution {
 
-    public boolean[] distanceLimitedPathsExist(
-        int n,
-        int[][] edgeList,
-        int[][] queries
-    ) {
+    public boolean[] distanceLimitedPathsExist(int n, int[][] edgeList, int[][] queries) {
         int[] parent = new int[n];
         for (int i = 0; i < n; i++) {
             parent[i] = i;

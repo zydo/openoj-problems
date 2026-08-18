@@ -1,6 +1,4 @@
 class Solution {
   public:
-    double mincostToHireWorkers(vector<int> &quality, vector<int> &wage, int k) {
-        throw logic_error("TODO");
-    }
+    double mincostToHireWorkers(vector<int> &quality, vector<int> &wage, int k) { throw logic_error("TODO"); }
 };

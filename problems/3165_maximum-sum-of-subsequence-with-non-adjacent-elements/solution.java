@@ -49,10 +49,7 @@ class Solution {
                         if (k == 1 && l == 1) {
                             continue;
                         }
-                        long val = addClamped(
-                            left[i * 2 + k],
-                            right[l * 2 + j]
-                        );
+                        long val = addClamped(left[i * 2 + k], right[l * 2 + j]);
                         if (val > b) {
                             b = val;
                         }

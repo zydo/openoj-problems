@@ -29,9 +29,7 @@ class Solution {
             for (int[] d : dirs) {
                 int nr = r + d[0],
                     nc = c + d[1];
-                if (
-                    nr >= 0 && nr < n && nc >= 0 && nc < n && dist[nr][nc] == -1
-                ) {
+                if (nr >= 0 && nr < n && nc >= 0 && nc < n && dist[nr][nc] == -1) {
                     dist[nr][nc] = dist[r][c] + 1;
                     q.add(new int[] { nr, nc });
                 }
@@ -58,12 +56,7 @@ class Solution {
         return ans;
     }
 
-    private boolean reachable(
-        int[][] dist,
-        int n,
-        int threshold,
-        int[][] dirs
-    ) {
+    private boolean reachable(int[][] dist, int n, int threshold, int[][] dirs) {
         // Endpoints below the threshold can never connect; otherwise a
         // plain BFS over cells with dist >= threshold decides.
         if (dist[0][0] < threshold || dist[n - 1][n - 1] < threshold) {
@@ -83,14 +76,7 @@ class Solution {
             for (int[] d : dirs) {
                 int nr = r + d[0],
                     nc = c + d[1];
-                if (
-                    nr >= 0 &&
-                    nr < n &&
-                    nc >= 0 &&
-                    nc < n &&
-                    !seen[nr][nc] &&
-                    dist[nr][nc] >= threshold
-                ) {
+                if (nr >= 0 && nr < n && nc >= 0 && nc < n && !seen[nr][nc] && dist[nr][nc] >= threshold) {
                     seen[nr][nc] = true;
                     dq.add(new int[] { nr, nc });
                 }

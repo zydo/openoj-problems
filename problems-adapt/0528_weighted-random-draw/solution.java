@@ -15,10 +15,7 @@ class Solution {
     }
 
     public int drawIndex() {
-        long target = ThreadLocalRandom.current().nextLong(
-            1,
-            prefix[prefix.length - 1] + 1
-        );
+        long target = ThreadLocalRandom.current().nextLong(1, prefix[prefix.length - 1] + 1);
         int low = 1,
             high = prefix.length - 1; // first index with prefix[i] >= target
         while (low < high) {

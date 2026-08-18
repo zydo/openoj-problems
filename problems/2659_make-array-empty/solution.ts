@@ -33,9 +33,7 @@ function countOperationsToEmptyArray(nums: number[]): number {
 
     for (let i = 1; i <= n; i++) add(i, 1);
 
-    const order: number[] = nums
-        .map((_, i) => i)
-        .sort((a, b) => nums[a] - nums[b]);
+    const order: number[] = nums.map((_, i) => i).sort((a, b) => nums[a] - nums[b]);
     let ops = 0;
     let cur = 1;
     let removed = 0;

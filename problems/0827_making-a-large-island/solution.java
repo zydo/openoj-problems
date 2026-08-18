@@ -42,13 +42,7 @@ class Solution {
                     for (int d = 0; d < 4; d++) {
                         int ni = i + di[d];
                         int nj = j + dj[d];
-                        if (
-                            ni >= 0 &&
-                            ni < n &&
-                            nj >= 0 &&
-                            nj < n &&
-                            label[ni][nj] != 0
-                        ) {
+                        if (ni >= 0 && ni < n && nj >= 0 && nj < n && label[ni][nj] != 0) {
                             int c = label[ni][nj];
                             if (!seen[c]) {
                                 seen[c] = true;
@@ -63,14 +57,7 @@ class Solution {
         return best;
     }
 
-    private int flood(
-        int[][] grid,
-        int[][] label,
-        int n,
-        int si,
-        int sj,
-        int color
-    ) {
+    private int flood(int[][] grid, int[][] label, int n, int si, int sj, int color) {
         int count = 0;
         Deque<int[]> stack = new ArrayDeque<>();
         stack.push(new int[] { si, sj });
@@ -85,14 +72,7 @@ class Solution {
             for (int d = 0; d < 4; d++) {
                 int ni = i + di[d];
                 int nj = j + dj[d];
-                if (
-                    ni >= 0 &&
-                    ni < n &&
-                    nj >= 0 &&
-                    nj < n &&
-                    grid[ni][nj] == 1 &&
-                    label[ni][nj] == 0
-                ) {
+                if (ni >= 0 && ni < n && nj >= 0 && nj < n && grid[ni][nj] == 1 && label[ni][nj] == 0) {
                     label[ni][nj] = color;
                     stack.push(new int[] { ni, nj });
                 }

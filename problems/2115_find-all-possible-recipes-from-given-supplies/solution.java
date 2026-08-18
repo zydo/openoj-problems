@@ -8,11 +8,7 @@ import java.util.Set;
 
 class Solution {
 
-    public String[] findAllRecipes(
-        String[] recipes,
-        String[][] ingredients,
-        String[] supplies
-    ) {
+    public String[] findAllRecipes(String[] recipes, String[][] ingredients, String[] supplies) {
         Set<String> have = new HashSet<>(Arrays.asList(supplies));
         Map<String, Integer> index = new HashMap<>();
         for (int i = 0; i < recipes.length; i++) {

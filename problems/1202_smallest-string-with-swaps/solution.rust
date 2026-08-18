@@ -23,8 +23,7 @@ impl Solution {
             }
         }
 
-        let mut groups: std::collections::HashMap<usize, Vec<usize>> =
-            std::collections::HashMap::new();
+        let mut groups: std::collections::HashMap<usize, Vec<usize>> = std::collections::HashMap::new();
         for i in 0..n {
             let root = find(&mut parent, i);
             groups.entry(root).or_default().push(i);

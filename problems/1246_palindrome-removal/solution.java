@@ -8,8 +8,7 @@ class Solution {
         // surviving parts, so the cost depends only on the subarray's contents.
         int[][] dp = new int[n][n];
         for (int i = 0; i < n; i++) dp[i][i] = 1;
-        for (int i = 0; i + 1 < n; i++) dp[i][i + 1] =
-            arr[i] == arr[i + 1] ? 1 : 2;
+        for (int i = 0; i + 1 < n; i++) dp[i][i + 1] = arr[i] == arr[i + 1] ? 1 : 2;
 
         // Fill by increasing length so every referenced subinterval is final.
         for (int length = 3; length <= n; length++) {
@@ -27,9 +26,7 @@ class Solution {
                 // clear the interior first, then remove the pair together.
                 // Peeling a matched pair never breaks palindromes, so it
                 // costs nothing extra.
-                if (arr[i] == arr[j] && dp[i + 1][j - 1] < best) best = dp[
-                    i + 1
-                ][j - 1];
+                if (arr[i] == arr[j] && dp[i + 1][j - 1] < best) best = dp[i + 1][j - 1];
                 dp[i][j] = best;
             }
         }

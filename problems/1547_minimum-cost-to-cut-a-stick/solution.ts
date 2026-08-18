@@ -7,9 +7,7 @@ function minCost(n: number, cuts: number[]): number {
     const size = positions.length;
     // dp[i][j]: minimum cost of all cuts strictly between boundaries i and
     // j; adjacent boundaries (no interior cut) stay 0.
-    const dp: number[][] = Array.from({ length: size }, () =>
-        new Array(size).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: size }, () => new Array(size).fill(0));
     // Fill by increasing segment length so both subproblems of an interval
     // are already solved when it needs them.
     for (let length = 2; length < size; length++) {

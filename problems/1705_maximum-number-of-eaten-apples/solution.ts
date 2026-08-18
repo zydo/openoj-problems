@@ -1,7 +1,6 @@
 function eatenApples(apples: number[], days: number[]): number {
     const heap: Array<[number, number]> = [];
-    const less = (a: [number, number], b: [number, number]): number =>
-        a[0] - b[0] || a[1] - b[1];
+    const less = (a: [number, number], b: [number, number]): number => a[0] - b[0] || a[1] - b[1];
     const push = (item: [number, number]): void => {
         heap.push(item);
         let i = heap.length - 1;

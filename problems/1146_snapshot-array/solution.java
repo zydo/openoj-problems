@@ -13,12 +13,8 @@ class SnapshotArray {
     public SnapshotArray(int length) {}
 
     public void set(int index, int val) {
-        List<int[]> entries = history.computeIfAbsent(index, ignored ->
-            new ArrayList<>()
-        );
-        if (
-            !entries.isEmpty() && entries.get(entries.size() - 1)[0] == current
-        ) {
+        List<int[]> entries = history.computeIfAbsent(index, ignored -> new ArrayList<>());
+        if (!entries.isEmpty() && entries.get(entries.size() - 1)[0] == current) {
             entries.get(entries.size() - 1)[1] = val;
         } else {
             entries.add(new int[] { current, val });

@@ -8,9 +8,7 @@ class Solution {
             // Swap while nums[i] is a positive in [1, n] whose home slot does
             // not already hold it. The != guard also makes duplicates harmless:
             // a duplicate finds its target occupied and stops swapping.
-            while (
-                nums[i] >= 1 && nums[i] <= n && nums[nums[i] - 1] != nums[i]
-            ) {
+            while (nums[i] >= 1 && nums[i] <= n && nums[nums[i] - 1] != nums[i]) {
                 int target = nums[i] - 1;
                 int tmp = nums[i];
                 nums[i] = nums[target];

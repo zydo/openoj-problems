@@ -1,11 +1,7 @@
 use std::collections::{HashMap, HashSet, VecDeque};
 
 impl Solution {
-    pub fn calc_equation(
-        equations: Vec<Vec<String>>,
-        values: Vec<f64>,
-        queries: Vec<Vec<String>>,
-    ) -> Vec<f64> {
+    pub fn calc_equation(equations: Vec<Vec<String>>, values: Vec<f64>, queries: Vec<Vec<String>>) -> Vec<f64> {
         // node -> adjacency list of (neighbor, weight) in insertion order;
         // re-adding an edge overwrites its weight in place (like Python dict).
         let mut graph: HashMap<String, Vec<(String, f64)>> = HashMap::new();
@@ -17,10 +13,7 @@ impl Solution {
             Self::add_edge(&mut graph, a.clone(), b.clone(), value);
             Self::add_edge(&mut graph, b, a, 1.0 / value);
         }
-        queries
-            .iter()
-            .map(|q| Self::query(&graph, &q[0], &q[1]))
-            .collect()
+        queries.iter().map(|q| Self::query(&graph, &q[0], &q[1])).collect()
     }
 
     fn add_edge(graph: &mut HashMap<String, Vec<(String, f64)>>, a: String, b: String, w: f64) {

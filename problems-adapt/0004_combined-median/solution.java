@@ -32,9 +32,7 @@ class Solution {
                     // Odd total: the left half was made the smaller side.
                     return (double) Math.min(aRight, bRight);
                 }
-                return (
-                    (Math.max(aLeft, bLeft) + Math.min(aRight, bRight)) / 2.0
-                );
+                return (Math.max(aLeft, bLeft) + Math.min(aRight, bRight)) / 2.0;
             }
             if (aLeft > bRight) {
                 // first is contributing too many elements to the left half.

@@ -9,9 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def findDuplicateSubtrees(
-        self, root: Optional[TreeNode]
-    ) -> List[Optional[TreeNode]]:
+    def findDuplicateSubtrees(self, root: Optional[TreeNode]) -> List[Optional[TreeNode]]:
         info: dict = {}  # serial -> [first node, last preorder index, count]
         counter = [0]
 
@@ -30,9 +28,5 @@ class Solution:
             return serial
 
         key(root)
-        duplicates = [
-            entry[0]
-            for entry in sorted(info.values(), key=lambda e: e[1])
-            if entry[2] >= 2
-        ]
+        duplicates = [entry[0] for entry in sorted(info.values(), key=lambda e: e[1]) if entry[2] >= 2]
         return duplicates

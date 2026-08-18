@@ -41,8 +41,7 @@ class Solution {
 
   private:
     // First index in [ql, qr) whose height exceeds threshold, or -1.
-    int findFirst(vector<long long> &seg, int node, int nl, int nr, int ql, int qr,
-                  long long threshold) {
+    int findFirst(vector<long long> &seg, int node, int nl, int nr, int ql, int qr, long long threshold) {
         // Prune any node outside the query range or whose max cannot qualify.
         if (nr <= ql || qr <= nl || seg[node] <= threshold) {
             return -1;

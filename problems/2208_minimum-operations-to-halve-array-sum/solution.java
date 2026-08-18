@@ -6,9 +6,7 @@ class Solution {
     public int halveArray(int[] nums) {
         double total = 0;
         // reverse order: PriorityQueue is a min-heap by default, we need the max
-        PriorityQueue<Double> pq = new PriorityQueue<>(
-            Collections.reverseOrder()
-        );
+        PriorityQueue<Double> pq = new PriorityQueue<>(Collections.reverseOrder());
         for (int x : nums) {
             pq.add((double) x);
             total += x;

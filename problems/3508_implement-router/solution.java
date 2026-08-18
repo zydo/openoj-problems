@@ -27,9 +27,7 @@ class Router {
 
     public boolean addPacket(int source, int destination, int timestamp) {
         long pair = pairKey(source, destination);
-        Set<Integer> seen = stored.computeIfAbsent(pair, key ->
-            new HashSet<>()
-        );
+        Set<Integer> seen = stored.computeIfAbsent(pair, key -> new HashSet<>());
         if (seen.contains(timestamp)) {
             return false;
         }
@@ -42,9 +40,7 @@ class Router {
         }
         queue.addLast(new int[] { source, destination, timestamp });
         seen.add(timestamp);
-        timestamps
-            .computeIfAbsent(destination, key -> new ArrayList<>())
-            .add(timestamp);
+        timestamps.computeIfAbsent(destination, key -> new ArrayList<>()).add(timestamp);
         heads.putIfAbsent(destination, 0);
         return true;
     }

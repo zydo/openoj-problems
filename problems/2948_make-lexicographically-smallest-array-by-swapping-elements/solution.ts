@@ -1,12 +1,6 @@
-function lexicographicallySmallestArray(
-    nums: number[],
-    limit: number,
-): number[] {
+function lexicographicallySmallestArray(nums: number[], limit: number): number[] {
     const n = nums.length;
-    const pairs: [number, number][] = nums.map((v, i): [number, number] => [
-        v,
-        i,
-    ]);
+    const pairs: [number, number][] = nums.map((v, i): [number, number] => [v, i]);
     pairs.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
     const result: number[] = new Array(n).fill(0);
     let i = 0;

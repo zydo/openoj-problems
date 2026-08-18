@@ -4,9 +4,7 @@ function minDifficulty(jobDifficulty: number[], d: number): number {
         return -1;
     }
     const INF = Infinity;
-    const dp: number[][] = Array.from({ length: d + 1 }, () =>
-        new Array(n + 1).fill(INF),
-    );
+    const dp: number[][] = Array.from({ length: d + 1 }, () => new Array(n + 1).fill(INF));
     dp[0][0] = 0;
     for (let j = 1; j <= d; j++) {
         for (let i = j; i <= n; i++) {

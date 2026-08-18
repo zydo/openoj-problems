@@ -57,18 +57,9 @@ impl Solution {
                 answer = answer.max(
                     (horiz2_left + vert2_top - cell2)
                         .min(horiz5_left + vert5_top - cell5)
-                        .max(
-                            (horiz2_right + vert2_top - cell2)
-                                .min(horiz5_right + vert5_top - cell5),
-                        )
-                        .max(
-                            (horiz2_left + vert2_bottom - cell2)
-                                .min(horiz5_left + vert5_bottom - cell5),
-                        )
-                        .max(
-                            (horiz2_right + vert2_bottom - cell2)
-                                .min(horiz5_right + vert5_bottom - cell5),
-                        ),
+                        .max((horiz2_right + vert2_top - cell2).min(horiz5_right + vert5_top - cell5))
+                        .max((horiz2_left + vert2_bottom - cell2).min(horiz5_left + vert5_bottom - cell5))
+                        .max((horiz2_right + vert2_bottom - cell2).min(horiz5_right + vert5_bottom - cell5)),
                 );
             }
         }

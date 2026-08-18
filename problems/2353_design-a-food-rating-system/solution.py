@@ -2,9 +2,7 @@ import heapq
 
 
 class FoodRatings:
-    def __init__(
-        self, foods: list[str], cuisines: list[str], ratings: list[int]
-    ) -> None:
+    def __init__(self, foods: list[str], cuisines: list[str], ratings: list[int]) -> None:
         self.info: dict[str, tuple[str, int]] = {}
         self.by_cuisine: dict[str, list[tuple[int, str]]] = {}
         for food, cuisine, rating in zip(foods, cuisines, ratings):

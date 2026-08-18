@@ -25,9 +25,7 @@ class Solution {
         for (String[] account : records) {
             for (int i = 1; i < account.length; i++) {
                 String root = find(parent, account[i]);
-                groups
-                    .computeIfAbsent(root, r -> new TreeSet<>())
-                    .add(account[i]);
+                groups.computeIfAbsent(root, r -> new TreeSet<>()).add(account[i]);
             }
         }
 

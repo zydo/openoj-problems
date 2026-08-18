@@ -6,11 +6,7 @@ function evaluateExpression(expression: string): number {
         // A digit or '-' starts a literal: optional sign, then digits.
         if (ch === "-" || (ch >= "0" && ch <= "9")) {
             let j = ch === "-" ? i + 1 : i;
-            while (
-                j < expression.length &&
-                expression[j] >= "0" &&
-                expression[j] <= "9"
-            ) {
+            while (j < expression.length && expression[j] >= "0" && expression[j] <= "9") {
                 j++;
             }
             return [parseInt(expression.slice(i, j), 10), j];

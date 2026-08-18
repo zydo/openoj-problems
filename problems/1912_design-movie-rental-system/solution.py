@@ -4,16 +4,10 @@ import heapq
 class MovieRentingSystem:
     def __init__(self, n: int, entries: list[list[int]]) -> None:
         self.price: dict[tuple[int, int], int] = {}
-        self.unrented: dict[
-            int, list[tuple[int, int, int]]
-        ] = {}  # movie -> (price, shop, token)
-        self.unrented_token: dict[
-            tuple[int, int], int
-        ] = {}  # (movie, shop) -> live token
+        self.unrented: dict[int, list[tuple[int, int, int]]] = {}  # movie -> (price, shop, token)
+        self.unrented_token: dict[tuple[int, int], int] = {}  # (movie, shop) -> live token
         self.rented: list[tuple[int, int, int, int]] = []  # (price, shop, movie, token)
-        self.rented_token: dict[
-            tuple[int, int], int
-        ] = {}  # (shop, movie) -> live token
+        self.rented_token: dict[tuple[int, int], int] = {}  # (shop, movie) -> live token
         self.serial = 0
         for shop, movie, price in entries:
             self.price[(shop, movie)] = price
@@ -42,9 +36,7 @@ class MovieRentingSystem:
         del self.unrented_token[(movie, shop)]
         self.serial += 1
         self.rented_token[(shop, movie)] = self.serial
-        heapq.heappush(
-            self.rented, (self.price[(shop, movie)], shop, movie, self.serial)
-        )
+        heapq.heappush(self.rented, (self.price[(shop, movie)], shop, movie, self.serial))
 
     def drop(self, shop: int, movie: int) -> None:
         del self.rented_token[(shop, movie)]

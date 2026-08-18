@@ -7,15 +7,13 @@ class Solution {
         for (int i = 0; i < n; i++) {
             roomsBySize[i] = i;
         }
-        sort(roomsBySize.begin(), roomsBySize.end(),
-             [&](int a, int b) { return rooms[a][1] > rooms[b][1]; });
+        sort(roomsBySize.begin(), roomsBySize.end(), [&](int a, int b) { return rooms[a][1] > rooms[b][1]; });
         // Offline trick: process queries by decreasing minSize so rooms only accumulate.
         vector<int> queryOrder(q);
         for (int j = 0; j < q; j++) {
             queryOrder[j] = j;
         }
-        sort(queryOrder.begin(), queryOrder.end(),
-             [&](int a, int b) { return queries[a][1] > queries[b][1]; });
+        sort(queryOrder.begin(), queryOrder.end(), [&](int a, int b) { return queries[a][1] > queries[b][1]; });
         set<int> ids;
         vector<int> answers(q);
         int ri = 0;

@@ -16,8 +16,7 @@ impl Solution {
 
         let nn = n as i64;
         let comb: i64 = if k >= 0 && k <= nn - 1 {
-            fact[(nn - 1) as usize] * inv_fact[k as usize] % MOD * inv_fact[(nn - 1 - k) as usize]
-                % MOD
+            fact[(nn - 1) as usize] * inv_fact[k as usize] % MOD * inv_fact[(nn - 1 - k) as usize] % MOD
         } else {
             0
         };

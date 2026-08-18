@@ -11,13 +11,7 @@ impl Solution {
         // The graph is acyclic, so every walk from 0 is a simple
         // path and DFS can never loop; at the target, snapshot a
         // copy and stop.
-        fn dfs(
-            g: &Vec<Vec<usize>>,
-            target: usize,
-            node: usize,
-            path: &mut Vec<i32>,
-            paths: &mut Vec<Vec<i32>>,
-        ) {
+        fn dfs(g: &Vec<Vec<usize>>, target: usize, node: usize, path: &mut Vec<i32>, paths: &mut Vec<Vec<i32>>) {
             if node == target {
                 paths.push(path.clone());
                 return;

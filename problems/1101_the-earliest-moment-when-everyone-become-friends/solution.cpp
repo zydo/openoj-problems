@@ -3,8 +3,7 @@ class Solution {
     int earliestAcq(vector<vector<int>> &logs, int n) {
         // Replay events chronologically; connectivity models acquaintance.
         vector<vector<int>> sorted(logs);
-        sort(sorted.begin(), sorted.end(),
-             [](const vector<int> &a, const vector<int> &b) { return a[0] < b[0]; });
+        sort(sorted.begin(), sorted.end(), [](const vector<int> &a, const vector<int> &b) { return a[0] < b[0]; });
         vector<int> parent(n);
         for (int i = 0; i < n; i++) {
             parent[i] = i;

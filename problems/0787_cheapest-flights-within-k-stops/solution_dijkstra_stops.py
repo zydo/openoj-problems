@@ -3,9 +3,7 @@ import heapq
 
 
 class Solution:
-    def findCheapestPrice(
-        self, n: int, flights: List[List[int]], src: int, dst: int, k: int
-    ) -> int:
+    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
         graph = [[] for _ in range(n)]
         for f, t, price in flights:
             graph[f].append((t, price))

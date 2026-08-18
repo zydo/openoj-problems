@@ -3,9 +3,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def minRunesToAdd(
-        self, n: int, crystals: List[int], flowFrom: List[int], flowTo: List[int]
-    ) -> int:
+    def minRunesToAdd(self, n: int, crystals: List[int], flowFrom: List[int], flowTo: List[int]) -> int:
         graph = [[] for _ in range(n)]
         rgraph = [[] for _ in range(n)]
         for u, v in zip(flowFrom, flowTo):

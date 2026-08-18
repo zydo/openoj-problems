@@ -28,9 +28,7 @@ var minCostConnectPoints = function (points) {
         // Relax every outside vertex against the newly attached u.
         for (let v = 0; v < n; v++) {
             if (!used[v]) {
-                const d =
-                    Math.abs(points[u][0] - points[v][0]) +
-                    Math.abs(points[u][1] - points[v][1]);
+                const d = Math.abs(points[u][0] - points[v][0]) + Math.abs(points[u][1] - points[v][1]);
                 if (d < best[v]) {
                     best[v] = d;
                 }

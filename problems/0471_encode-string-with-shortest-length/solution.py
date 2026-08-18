@@ -33,9 +33,7 @@ class Solution:
                 # already-encoded best; a tie with the raw text keeps the
                 # text ("aaa" stays "aaa", "aaaaa" becomes "5[a]").
                 if compression is not None:
-                    if len(compression) < len(best) or (
-                        len(compression) == len(best) and best != substr
-                    ):
+                    if len(compression) < len(best) or (len(compression) == len(best) and best != substr):
                         best = compression
                 dp[i][j] = best
         return dp[0][n - 1]

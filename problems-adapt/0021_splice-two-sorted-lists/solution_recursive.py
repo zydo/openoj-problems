@@ -8,9 +8,7 @@ class ListNode:
 
 
 class Solution:
-    def spliceTwoSortedLists(
-        self, first: Optional[ListNode], second: Optional[ListNode]
-    ) -> Optional[ListNode]:
+    def spliceTwoSortedLists(self, first: Optional[ListNode], second: Optional[ListNode]) -> Optional[ListNode]:
         # Base case: an empty list is already sorted, so the other list —
         # whatever remains of it — is the merged continuation as is.
         if first is None:

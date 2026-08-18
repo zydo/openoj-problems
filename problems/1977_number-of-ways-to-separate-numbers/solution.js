@@ -43,10 +43,7 @@ var numberOfCombinations = function (num) {
                     const a = i - 2 * j;
                     const b = m;
                     const l = lcp[a * stride + b];
-                    if (
-                        l >= j ||
-                        num.charCodeAt(a + l) <= num.charCodeAt(b + l)
-                    ) {
+                    if (l >= j || num.charCodeAt(a + l) <= num.charCodeAt(b + l)) {
                         let add = pre[m * stride + j] - pre[m * stride + j - 1];
                         if (add < 0) {
                             add += MOD;

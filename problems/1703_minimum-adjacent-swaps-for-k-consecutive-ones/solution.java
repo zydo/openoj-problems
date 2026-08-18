@@ -26,8 +26,7 @@ class Solution {
             // Left half pulled onto the median, right half symmetrically,
             // both in O(1) via the prefix sums.
             long left = q[mid] * (mid - i) - (pref[mid] - pref[i]);
-            long right =
-                pref[i + k] - pref[mid + 1] - q[mid] * (i + k - 1 - mid);
+            long right = pref[i + k] - pref[mid + 1] - q[mid] * (i + k - 1 - mid);
             long cost = left + right;
             if (cost < best) best = cost;
         }

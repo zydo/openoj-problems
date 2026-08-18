@@ -5,12 +5,7 @@ function asteroidCollision(asteroids: number[]): number[] {
         let alive = true;
         // A newcomer can only fight the top, and only when it moves left
         // against a right-moving survivor; other pairs never meet.
-        while (
-            alive &&
-            stack.length > 0 &&
-            asteroid < 0 &&
-            stack[stack.length - 1] > 0
-        ) {
+        while (alive && stack.length > 0 && asteroid < 0 && stack[stack.length - 1] > 0) {
             const top = stack[stack.length - 1];
             if (top < -asteroid) {
                 // Top explodes; the newcomer continues against the new top.

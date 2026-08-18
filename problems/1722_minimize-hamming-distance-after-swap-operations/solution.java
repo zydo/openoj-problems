@@ -5,11 +5,7 @@ import java.util.Map;
 
 class Solution {
 
-    public int minimumHammingDistance(
-        int[] source,
-        int[] target,
-        int[][] allowedSwaps
-    ) {
+    public int minimumHammingDistance(int[] source, int[] target, int[][] allowedSwaps) {
         int n = source.length;
         int[] parent = new int[n];
         for (int i = 0; i < n; i++) {
@@ -26,9 +22,7 @@ class Solution {
         }
         Map<Integer, List<Integer>> groups = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            groups
-                .computeIfAbsent(find(parent, i), r -> new ArrayList<>())
-                .add(i);
+            groups.computeIfAbsent(find(parent, i), r -> new ArrayList<>()).add(i);
         }
         // Per component, match target values against the multiset of
         // source values; each unmatched target must stay different.

@@ -13,9 +13,7 @@ function minScore(grid: number[][]): number[][] {
     // running maxima of that row and column constrain it.
     const rowMax = new Array<number>(m).fill(0);
     const colMax = new Array<number>(n).fill(0);
-    const res: number[][] = Array.from({ length: m }, () =>
-        new Array<number>(n).fill(0),
-    );
+    const res: number[][] = Array.from({ length: m }, () => new Array<number>(n).fill(0));
     for (const cell of cells) {
         const r = cell[1],
             c = cell[2];

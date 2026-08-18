@@ -36,14 +36,7 @@ function latestDayToCross(row: number, col: number, cells: number[][]): number {
             for (const [dr, dc] of dirs) {
                 const nr = r + dr;
                 const nc = c + dc;
-                if (
-                    nr >= 0 &&
-                    nr < row &&
-                    nc >= 0 &&
-                    nc < col &&
-                    !seen[nr][nc] &&
-                    grid[nr][nc] === 0
-                ) {
+                if (nr >= 0 && nr < row && nc >= 0 && nc < col && !seen[nr][nc] && grid[nr][nc] === 0) {
                     seen[nr][nc] = true;
                     queue.push([nr, nc]);
                 }

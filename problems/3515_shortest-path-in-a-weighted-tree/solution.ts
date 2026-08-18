@@ -1,8 +1,4 @@
-function treeQueries(
-    n: number,
-    edges: number[][],
-    queries: number[][],
-): number[] {
+function treeQueries(n: number, edges: number[][], queries: number[][]): number[] {
     const adj: [number, number][][] = Array.from({ length: n + 1 }, () => []);
     for (const [u, v, w] of edges) {
         adj[u].push([v, w]);

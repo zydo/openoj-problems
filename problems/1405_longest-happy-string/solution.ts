@@ -4,9 +4,7 @@ function longestDiverseString(a: number, b: number, c: number): string {
     while (true) {
         // most plentiful letter first: burning rare letters while a common
         // one dominates would strand it in a forced aaa/bbb/ccc run
-        const ranked = Object.entries(counts).sort(
-            (x, y) => y[1] - x[1] || (x[0] < y[0] ? -1 : 1),
-        );
+        const ranked = Object.entries(counts).sort((x, y) => y[1] - x[1] || (x[0] < y[0] ? -1 : 1));
         let letter = ranked[0][0];
         if (ranked[0][1] === 0) {
             break;

@@ -36,10 +36,7 @@ class Solution {
             for (int nxt : adjacency.get(course)) {
                 // Relax with a max: the successor waits for ALL of its
                 // prerequisites, not just the first to finish.
-                finish[nxt] = Math.max(
-                    finish[nxt],
-                    finish[course] + time[nxt - 1]
-                );
+                finish[nxt] = Math.max(finish[nxt], finish[course] + time[nxt - 1]);
                 indegree[nxt] -= 1;
                 if (indegree[nxt] == 0) {
                     queue.add(nxt);

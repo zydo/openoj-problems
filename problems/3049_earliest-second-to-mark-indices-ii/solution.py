@@ -3,9 +3,7 @@ import heapq
 
 
 class Solution:
-    def earliestSecondToMarkIndices(
-        self, nums: List[int], changeIndices: List[int]
-    ) -> int:
+    def earliestSecondToMarkIndices(self, nums: List[int], changeIndices: List[int]) -> int:
         n = len(nums)
         m = len(changeIndices)
 

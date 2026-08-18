@@ -9,9 +9,7 @@ class Solution:
             # dp[c] = set of OR values achievable with exactly c elements
             dp = [set() for _ in range(k + 1)]
             dp[0].add(0)
-            pre = [
-                set() for _ in range(n + 1)
-            ]  # pre[j] = ORs of k from first j elements
+            pre = [set() for _ in range(n + 1)]  # pre[j] = ORs of k from first j elements
             for i, x in enumerate(nums):
                 top = min(i + 1, k)
                 for c in range(top, 0, -1):

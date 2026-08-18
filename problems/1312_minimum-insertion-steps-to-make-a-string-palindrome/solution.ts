@@ -1,8 +1,6 @@
 function minInsertions(s: string): number {
     const n = s.length;
-    const dp: number[][] = Array.from({ length: n }, () =>
-        new Array(n).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: n }, () => new Array(n).fill(0));
     for (let length = 2; length <= n; length++) {
         for (let i = 0; i + length - 1 < n; i++) {
             const j = i + length - 1;

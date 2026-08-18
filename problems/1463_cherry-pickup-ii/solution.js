@@ -13,9 +13,7 @@ var cherryPickup = function (grid) {
     // has both share the start cell, counted once
     dp[0][cols - 1] = grid[0][0] + (cols > 1 ? grid[0][cols - 1] : 0);
     for (let r = 1; r < rows; r++) {
-        const ndp = Array.from({ length: cols }, () =>
-            new Array(cols).fill(NEG),
-        );
+        const ndp = Array.from({ length: cols }, () => new Array(cols).fill(NEG));
         for (let c1 = 0; c1 < cols; c1++) {
             for (let c2 = 0; c2 < cols; c2++) {
                 // best of the 9 predecessor column pairs (each robot
@@ -25,21 +23,14 @@ var cherryPickup = function (grid) {
                     for (let d2 = -1; d2 <= 1; d2++) {
                         const p1 = c1 + d1;
                         const p2 = c2 + d2;
-                        if (
-                            p1 >= 0 &&
-                            p1 < cols &&
-                            p2 >= 0 &&
-                            p2 < cols &&
-                            dp[p1][p2] > best
-                        ) {
+                        if (p1 >= 0 && p1 < cols && p2 >= 0 && p2 < cols && dp[p1][p2] > best) {
                             best = dp[p1][p2];
                         }
                     }
                 }
                 if (best > NEG) {
                     // both cells harvested, except a shared cell counts once
-                    ndp[c1][c2] =
-                        best + grid[r][c1] + (c1 !== c2 ? grid[r][c2] : 0);
+                    ndp[c1][c2] = best + grid[r][c1] + (c1 !== c2 ? grid[r][c2] : 0);
                 }
             }
         }

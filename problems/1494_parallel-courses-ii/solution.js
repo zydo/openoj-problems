@@ -43,10 +43,7 @@ var minNumberOfSemesters = function (n, relations, k) {
         // inside mask (one AND per course).
         let avail = 0;
         for (let course = 0; course < n; course++) {
-            if (
-                ((mask >> course) & 1) === 0 &&
-                (prereq[course] & ~mask) === 0
-            ) {
+            if (((mask >> course) & 1) === 0 && (prereq[course] & ~mask) === 0) {
                 avail |= 1 << course;
             }
         }

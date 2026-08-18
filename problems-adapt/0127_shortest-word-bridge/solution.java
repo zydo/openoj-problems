@@ -8,11 +8,7 @@ import java.util.Set;
 
 class Solution {
 
-    public int shortestBridgeLength(
-        String startWord,
-        String targetWord,
-        String[] dictionary
-    ) {
+    public int shortestBridgeLength(String startWord, String targetWord, String[] dictionary) {
         Set<String> words = new HashSet<>(Arrays.asList(dictionary));
         // No sequence can end outside the dictionary.
         if (!words.contains(targetWord)) {
@@ -25,9 +21,7 @@ class Solution {
         Map<String, List<String>> buckets = new HashMap<>();
         for (String word : dictionary) {
             for (int i = 0; i < length; ++i) {
-                buckets
-                    .computeIfAbsent(pattern(word, i), key -> new ArrayList<>())
-                    .add(word);
+                buckets.computeIfAbsent(pattern(word, i), key -> new ArrayList<>()).add(word);
             }
         }
 

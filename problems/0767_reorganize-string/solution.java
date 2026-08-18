@@ -14,11 +14,7 @@ class Solution {
         }
         // Frequency-descending with alphabetical ties: the exact ordering
         // that produces the canonical answer the judge expects.
-        letters.sort((a, b) ->
-            b[1] != a[1]
-                ? Integer.compare(b[1], a[1])
-                : Integer.compare(a[0], b[0])
-        );
+        letters.sort((a, b) -> b[1] != a[1] ? Integer.compare(b[1], a[1]) : Integer.compare(a[0], b[0]));
         // Feasible iff the most frequent letter fits in the even
         // positions, which outnumber the odd ones by exactly one.
         if (letters.get(0)[1] > (n + 1) / 2) {

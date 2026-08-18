@@ -26,14 +26,10 @@ class Solution:
                     # A leading zero writes nothing: it leaves the balance
                     # untouched and does not count as an even digit.
                     if not started and d == 0:
-                        total += dp(
-                            pos + 1, next_tight, False, balance, (mod * 10 + d) % k
-                        )
+                        total += dp(pos + 1, next_tight, False, balance, (mod * 10 + d) % k)
                     else:
                         new_balance = balance + (1 if d % 2 == 1 else -1)
-                        total += dp(
-                            pos + 1, next_tight, True, new_balance, (mod * 10 + d) % k
-                        )
+                        total += dp(pos + 1, next_tight, True, new_balance, (mod * 10 + d) % k)
                 return total
 
             return dp(0, True, False, 0, 0)

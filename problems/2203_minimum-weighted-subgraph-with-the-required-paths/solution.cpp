@@ -29,9 +29,7 @@ class Solution {
         const long long INF = LLONG_MAX;
         vector<long long> dist(n, INF);
         dist[src] = 0;
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>,
-                       greater<pair<long long, int>>>
-            heap;
+        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> heap;
         heap.push({0, src});
         while (!heap.empty()) {
             auto [d, u] = heap.top();

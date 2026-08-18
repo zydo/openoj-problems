@@ -3,9 +3,7 @@ function merge(intervals: number[][]): number[][] {
     // overlapping an earlier one must overlap or touch the most recent
     // merged interval, so a sweep tracking only the last merged
     // interval suffices. Sorting the copy leaves the input untouched.
-    const ordered = [...intervals].sort((a, b) =>
-        a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1],
-    );
+    const ordered = [...intervals].sort((a, b) => (a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]));
     const merged: number[][] = [];
     for (const [start, end] of ordered) {
         // `<=` counts touching intervals as overlapping, as required.

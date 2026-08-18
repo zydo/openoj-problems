@@ -9,10 +9,7 @@ function maximumBooks(books: number[]): number {
         const bi = books[i];
         // Pop shelves x that still fit the demand books[i] - (i - x):
         // any future chain stopping past them stops at or before i.
-        while (
-            stack.length &&
-            books[stack[stack.length - 1]] >= bi - (i - stack[stack.length - 1])
-        ) {
+        while (stack.length && books[stack[stack.length - 1]] >= bi - (i - stack[stack.length - 1])) {
             stack.pop();
         }
         // Remaining top is the nearest barrier j; the chain covers j+1..i.

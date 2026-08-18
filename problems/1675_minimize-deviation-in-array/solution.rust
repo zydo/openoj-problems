@@ -5,10 +5,7 @@ impl Solution {
         // Normalize: odd values are doubled once — their only upward move —
         // so afterwards every element can only shrink by halving, and every
         // reachable configuration is still visited.
-        let mut heap: BinaryHeap<i32> = nums
-            .into_iter()
-            .map(|v| if v % 2 == 1 { v * 2 } else { v })
-            .collect();
+        let mut heap: BinaryHeap<i32> = nums.into_iter().map(|v| if v % 2 == 1 { v * 2 } else { v }).collect();
         // The heap yields the maximum; the minimum is tracked separately.
         let mut current_min = *heap.iter().min().unwrap();
         // Snapshot the untouched configuration before any halving.

@@ -66,8 +66,7 @@ class Solution {
             TreeNode right = u.right;
             int dv = depth.get(u.val);
             if (left != null) {
-                int hWithoutLeft =
-                    right != null ? 1 + height.get(right.val) : 0;
+                int hWithoutLeft = right != null ? 1 + height.get(right.val) : 0;
                 int newMx = mx;
                 if (dv + hWithoutLeft > newMx) {
                     newMx = dv + hWithoutLeft;

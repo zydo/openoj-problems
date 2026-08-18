@@ -33,9 +33,7 @@ class Solution {
         List<Integer> result = new ArrayList<>();
         for (int i = best; i != -1; i = parent[i]) result.add(arr[i]);
         int[] out = new int[result.size()];
-        for (int k = 0; k < out.length; k++) out[k] = result.get(
-            out.length - 1 - k
-        );
+        for (int k = 0; k < out.length; k++) out[k] = result.get(out.length - 1 - k);
         return out;
     }
 }

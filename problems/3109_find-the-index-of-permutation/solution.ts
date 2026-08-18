@@ -36,10 +36,7 @@ function getPermutationIndex(perm: number[]): number {
         // Lehmer digit: how many unused values are smaller than perm[i]
         const smaller = query(x - 1);
         // each such value placed here leads (n - 1 - i)! earlier permutations
-        ans = Number(
-            (BigInt(ans) + BigInt(smaller) * BigInt(fact[n - 1 - i])) %
-                BigInt(MOD),
-        );
+        ans = Number((BigInt(ans) + BigInt(smaller) * BigInt(fact[n - 1 - i])) % BigInt(MOD));
         // perm[i] is spent; later positions see only the remaining values
         add(x, -1);
     }

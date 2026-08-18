@@ -1,7 +1,4 @@
-function earliestSecondToMarkIndices(
-    nums: number[],
-    changeIndices: number[],
-): number {
+function earliestSecondToMarkIndices(nums: number[], changeIndices: number[]): number {
     const n = nums.length;
     const m = changeIndices.length;
 

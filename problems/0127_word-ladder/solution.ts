@@ -1,14 +1,9 @@
-function ladderLength(
-    beginWord: string,
-    endWord: string,
-    wordList: string[],
-): number {
+function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {
     const wordSet = new Set(wordList);
     // No sequence can end outside the dictionary.
     if (!wordSet.has(endWord)) return 0;
     const length = beginWord.length;
-    const patternOf = (word: string, i: number): string =>
-        word.slice(0, i) + "*" + word.slice(i + 1);
+    const patternOf = (word: string, i: number): string => word.slice(0, i) + "*" + word.slice(i + 1);
 
     // Bucket every word under each wildcard pattern ("hot" -> "*ot", "h*t",
     // "ho*"): all one-letter neighbors share one of its patterns.

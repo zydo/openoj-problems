@@ -29,12 +29,7 @@ impl Solution {
                 }
                 heap.pop();
                 count += 1;
-                let nb = [
-                    (r + 1, c),
-                    (r.wrapping_sub(1), c),
-                    (r, c + 1),
-                    (r, c.wrapping_sub(1)),
-                ];
+                let nb = [(r + 1, c), (r.wrapping_sub(1), c), (r, c + 1), (r, c.wrapping_sub(1))];
                 for (nr, nc) in nb {
                     if nr < m && nc < n && !visited[nr][nc] {
                         // Mark at push time: no duplicate entries, so each

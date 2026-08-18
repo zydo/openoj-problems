@@ -21,10 +21,8 @@ var minCost = function (maxTime, edges, passingFees) {
             if (dt > t) continue; // edge cannot fit in the elapsed time
             // Relax both directions from the layer exactly dt minutes ago.
             const prev = layers[t - dt];
-            if (prev[x] + passingFees[y] < cur[y])
-                cur[y] = prev[x] + passingFees[y];
-            if (prev[y] + passingFees[x] < cur[x])
-                cur[x] = prev[y] + passingFees[x];
+            if (prev[x] + passingFees[y] < cur[y]) cur[y] = prev[x] + passingFees[y];
+            if (prev[y] + passingFees[x] < cur[x]) cur[x] = prev[y] + passingFees[x];
         }
         layers[t] = cur;
     }

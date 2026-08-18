@@ -20,10 +20,7 @@ impl Solution {
         let mut buckets: HashMap<String, Vec<String>> = HashMap::new();
         for word in &word_list {
             for i in 0..length {
-                buckets
-                    .entry(pattern_of(word, i))
-                    .or_default()
-                    .push(word.clone());
+                buckets.entry(pattern_of(word, i)).or_default().push(word.clone());
             }
         }
 

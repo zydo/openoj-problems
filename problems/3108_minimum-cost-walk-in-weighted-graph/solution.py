@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def minimumCost(
-        self, n: int, edges: List[List[int]], query: List[List[int]]
-    ) -> List[int]:
+    def minimumCost(self, n: int, edges: List[List[int]], query: List[List[int]]) -> List[int]:
         # Walks may repeat edges, so the optimum ANDs in every edge of the component.
         parent = list(range(n))
         size = [1] * n

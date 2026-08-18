@@ -30,14 +30,11 @@ function countNumbers(l: string, r: string, b: number): number {
         const m = digits.length;
         // g[pos][last][tight][started]
         const g: number[][][][] = Array.from({ length: m + 1 }, () =>
-            Array.from({ length: b }, () =>
-                Array.from({ length: 2 }, () => new Array(2).fill(0)),
-            ),
+            Array.from({ length: b }, () => Array.from({ length: 2 }, () => new Array(2).fill(0))),
         );
         for (let last = 0; last < b; last++)
             for (let tight = 0; tight < 2; tight++)
-                for (let started = 0; started < 2; started++)
-                    g[m][last][tight][started] = 1;
+                for (let started = 0; started < 2; started++) g[m][last][tight][started] = 1;
         for (let pos = m - 1; pos >= 0; pos--) {
             for (let last = 0; last < b; last++) {
                 for (let tight = 0; tight < 2; tight++) {

@@ -30,11 +30,7 @@ impl Solution {
                 // neighbours around the query slot: largest <= q and
                 // first >= q, -1 when that side is empty.
                 let minimum = if upper > 0 { values[upper - 1] } else { -1 };
-                let maximum = if lower < values.len() {
-                    values[lower]
-                } else {
-                    -1
-                };
+                let maximum = if lower < values.len() { values[lower] } else { -1 };
                 vec![minimum, maximum]
             })
             .collect()

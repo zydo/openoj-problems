@@ -7,12 +7,7 @@ import java.util.Set;
 
 class Solution {
 
-    public int minRunesToAdd(
-        int n,
-        int[] crystals,
-        int[] flowFrom,
-        int[] flowTo
-    ) {
+    public int minRunesToAdd(int n, int[] crystals, int[] flowFrom, int[] flowTo) {
         List<List<Integer>> graph = new ArrayList<>();
         List<List<Integer>> rgraph = new ArrayList<>();
         for (int i = 0; i < n; i++) {

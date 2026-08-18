@@ -29,14 +29,7 @@ class Solution {
         return dfs(nums, target, full, 0, 0, memo);
     }
 
-    private boolean dfs(
-        int[] nums,
-        int target,
-        int full,
-        int mask,
-        int curr,
-        Map<Long, Boolean> memo
-    ) {
+    private boolean dfs(int[] nums, int target, int full, int mask, int curr, Map<Long, Boolean> memo) {
         // State: bitmask of placed elements plus curr, the partial sum of the
         // subset currently being filled.
         if (mask == full) {
@@ -54,16 +47,7 @@ class Solution {
         // Try every unused element that still fits under the target.
         for (int i = 0; i < nums.length; i++) {
             if (((mask >> i) & 1) == 0 && curr + nums[i] <= target) {
-                if (
-                    dfs(
-                        nums,
-                        target,
-                        full,
-                        mask | (1 << i),
-                        curr + nums[i],
-                        memo
-                    )
-                ) {
+                if (dfs(nums, target, full, mask | (1 << i), curr + nums[i], memo)) {
                     memo.put(key, true);
                     return true;
                 }

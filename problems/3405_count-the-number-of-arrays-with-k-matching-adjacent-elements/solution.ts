@@ -18,8 +18,7 @@ function countGoodArrays(n: number, m: number, k: number): number {
         }
         return Number(result);
     };
-    const mulmod = (a: number, b: number): number =>
-        Number((BigInt(a) * BigInt(b)) % BigInt(MOD));
+    const mulmod = (a: number, b: number): number => Number((BigInt(a) * BigInt(b)) % BigInt(MOD));
     const inv_fact: number[] = new Array(n + 1);
     inv_fact[n] = powmod(fact[n], MOD - 2, MOD);
     for (let i = n; i >= 1; i--) {
@@ -31,8 +30,5 @@ function countGoodArrays(n: number, m: number, k: number): number {
         return mulmod(mulmod(fact[a], inv_fact[b]), inv_fact[a - b]);
     };
 
-    return mulmod(
-        mulmod(m % MOD, comb(n - 1, k)),
-        powmod(m - 1, n - 1 - k, MOD),
-    );
+    return mulmod(mulmod(m % MOD, comb(n - 1, k)), powmod(m - 1, n - 1 - k, MOD));
 }

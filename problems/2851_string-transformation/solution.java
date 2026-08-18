@@ -10,10 +10,7 @@ class Solution {
         // others (the identity shift is forbidden) or n - cnt non-T; from a
         // non-T it lands on cnt T or n - 1 - cnt non-T. Length-k walk counts
         // depend only on the starting class, hence this 2x2 matrix.
-        long[][] mat = {
-            { mod(cnt - 1), mod(cnt) },
-            { mod(n - cnt), mod(n - 1 - cnt) },
-        };
+        long[][] mat = { { mod(cnt - 1), mod(cnt) }, { mod(n - cnt), mod(n - 1 - cnt) } };
         // k reaches 1e15, so exponentiate by repeated squaring: O(log k)
         // constant-size multiplications under the modulus.
         long[][] mk = matPow(mat, k);
@@ -67,14 +64,8 @@ class Solution {
 
     private long[][] matMul(long[][] a, long[][] b) {
         return new long[][] {
-            {
-                (a[0][0] * b[0][0] + a[0][1] * b[1][0]) % MOD,
-                (a[0][0] * b[0][1] + a[0][1] * b[1][1]) % MOD,
-            },
-            {
-                (a[1][0] * b[0][0] + a[1][1] * b[1][0]) % MOD,
-                (a[1][0] * b[0][1] + a[1][1] * b[1][1]) % MOD,
-            },
+            { (a[0][0] * b[0][0] + a[0][1] * b[1][0]) % MOD, (a[0][0] * b[0][1] + a[0][1] * b[1][1]) % MOD },
+            { (a[1][0] * b[0][0] + a[1][1] * b[1][0]) % MOD, (a[1][0] * b[0][1] + a[1][1] * b[1][1]) % MOD },
         };
     }
 

@@ -7,10 +7,7 @@ function alienOrder(words: string[]): string {
     let total = 0;
     for (let c = 0; c < A; c++) if (present[c]) total++;
 
-    const adj: Set<number>[] = Array.from(
-        { length: A },
-        () => new Set<number>(),
-    );
+    const adj: Set<number>[] = Array.from({ length: A }, () => new Set<number>());
     const indeg: number[] = new Array(A).fill(0);
     for (let i = 0; i + 1 < words.length; i++) {
         const prev = words[i],

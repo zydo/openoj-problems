@@ -2,9 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def smallestSufficientTeam(
-        self, req_skills: List[str], people: List[List[str]]
-    ) -> List[int]:
+    def smallestSufficientTeam(self, req_skills: List[str], people: List[List[str]]) -> List[int]:
         skill_index = {skill: i for i, skill in enumerate(req_skills)}
         # compress each person to the bitmask of skills they contribute
         masks = []
@@ -27,9 +25,7 @@ class Solution:
                 # keep the candidate only when it is shorter than the best
                 # known team for the resulting mask (or none exists yet)
                 if new_state not in dp or len(dp[new_state]) > len(candidate):
-                    if new_state not in new_entries or len(
-                        new_entries[new_state]
-                    ) > len(candidate):
+                    if new_state not in new_entries or len(new_entries[new_state]) > len(candidate):
                         new_entries[new_state] = candidate
             dp.update(new_entries)
 

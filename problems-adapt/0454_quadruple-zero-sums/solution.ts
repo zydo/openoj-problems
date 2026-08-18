@@ -1,9 +1,4 @@
-function countQuadrupleZeroSums(
-    first: number[],
-    second: number[],
-    third: number[],
-    fourth: number[],
-): number {
+function countQuadrupleZeroSums(first: number[], second: number[], third: number[], fourth: number[]): number {
     // Meet in the middle: a+b+c+d = 0 iff a+b = -(c+d), so index the first
     // two arrays' pair sums with multiplicities (not a set).
     const sums = new Map<number, number>();

@@ -62,24 +62,12 @@ class Solution {
                 answer = Math.max(
                     answer,
                     Math.max(
-                        Math.min(
-                            horiz2Left + vert2Top - cell2,
-                            horiz5Left + vert5Top - cell5
-                        ),
+                        Math.min(horiz2Left + vert2Top - cell2, horiz5Left + vert5Top - cell5),
                         Math.max(
-                            Math.min(
-                                horiz2Right + vert2Top - cell2,
-                                horiz5Right + vert5Top - cell5
-                            ),
+                            Math.min(horiz2Right + vert2Top - cell2, horiz5Right + vert5Top - cell5),
                             Math.max(
-                                Math.min(
-                                    horiz2Left + vert2Bottom - cell2,
-                                    horiz5Left + vert5Bottom - cell5
-                                ),
-                                Math.min(
-                                    horiz2Right + vert2Bottom - cell2,
-                                    horiz5Right + vert5Bottom - cell5
-                                )
+                                Math.min(horiz2Left + vert2Bottom - cell2, horiz5Left + vert5Bottom - cell5),
+                                Math.min(horiz2Right + vert2Bottom - cell2, horiz5Right + vert5Bottom - cell5)
                             )
                         )
                     )

@@ -10,11 +10,9 @@ class Solution {
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 if (r + 1 < rows)
-                    edges.push_back(
-                        {abs(heights[r + 1][c] - heights[r][c]), r * cols + c, (r + 1) * cols + c});
+                    edges.push_back({abs(heights[r + 1][c] - heights[r][c]), r * cols + c, (r + 1) * cols + c});
                 if (c + 1 < cols)
-                    edges.push_back(
-                        {abs(heights[r][c + 1] - heights[r][c]), r * cols + c, r * cols + c + 1});
+                    edges.push_back({abs(heights[r][c + 1] - heights[r][c]), r * cols + c, r * cols + c + 1});
             }
         }
         // Ascending weight order is Kruskal's skeleton: the first edge that

@@ -13,11 +13,7 @@ impl Solution {
             if i <= right {
                 let mirror = d1[(left + right - i) as usize];
                 let span = right - i + 1;
-                k = if mirror < span as usize {
-                    mirror as isize
-                } else {
-                    span
-                };
+                k = if mirror < span as usize { mirror as isize } else { span };
             }
             while i - k >= 0 && i + k < n as isize && s[(i - k) as usize] == s[(i + k) as usize] {
                 k += 1;

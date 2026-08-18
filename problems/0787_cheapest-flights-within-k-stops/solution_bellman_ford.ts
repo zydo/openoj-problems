@@ -1,10 +1,4 @@
-function findCheapestPrice(
-    n: number,
-    flights: number[][],
-    src: number,
-    dst: number,
-    k: number,
-): number {
+function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {
     const INF = Infinity;
     // After r full rounds, dist[v] is the cheapest fare using at
     // most r edges; k stops allow k+1 flights, so run k+1 rounds.

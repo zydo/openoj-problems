@@ -9,9 +9,7 @@ var maxSizeSlices = function (slices) {
     // with no two chosen adjacent.
     const rob = function (arr, picks) {
         const length = arr.length;
-        const dp = Array.from({ length: length + 1 }, () =>
-            new Array(picks + 1).fill(-1),
-        );
+        const dp = Array.from({ length: length + 1 }, () => new Array(picks + 1).fill(-1));
         dp[0][0] = 0;
         for (let i = 1; i <= length; i++) {
             for (let j = 0; j <= picks; j++) {

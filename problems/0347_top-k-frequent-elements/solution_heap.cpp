@@ -16,8 +16,7 @@ class Solution {
                 return a.first > b.first;
             return a.second < b.second;
         };
-        priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(evictFirst)> heap(
-            evictFirst);
+        priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(evictFirst)> heap(evictFirst);
         for (const auto &kv : counts) {
             pair<int, int> item = {kv.second, kv.first};
             if ((int)heap.size() < k) {
@@ -27,8 +26,7 @@ class Solution {
             const pair<int, int> &root = heap.top();
             // Replace the root only when the newcomer outranks it:
             // higher count, or equal count and smaller value.
-            if (item.first > root.first ||
-                (item.first == root.first && item.second < root.second)) {
+            if (item.first > root.first || (item.first == root.first && item.second < root.second)) {
                 heap.pop();
                 heap.push(item);
             }
@@ -40,12 +38,11 @@ class Solution {
         }
         // Survivors are exactly the top k by (higher count, then smaller
         // value); emit them in that order.
-        sort(survivors.begin(), survivors.end(),
-             [](const pair<int, int> &a, const pair<int, int> &b) {
-                 if (a.first != b.first)
-                     return a.first > b.first;
-                 return a.second < b.second;
-             });
+        sort(survivors.begin(), survivors.end(), [](const pair<int, int> &a, const pair<int, int> &b) {
+            if (a.first != b.first)
+                return a.first > b.first;
+            return a.second < b.second;
+        });
         vector<int> result;
         result.reserve(k);
         for (int i = 0; i < k && i < (int)survivors.size(); ++i) {

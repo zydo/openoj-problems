@@ -8,9 +8,7 @@ class Solution {
         // smallest tentative effort popped is already final.
         vector<vector<int>> dist(rows, vector<int>(cols, INT_MAX));
         dist[0][0] = 0;
-        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>,
-                       greater<tuple<int, int, int>>>
-            heap;
+        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<tuple<int, int, int>>> heap;
         heap.emplace(0, 0, 0);
         int dirs[4][2] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
         while (!heap.empty()) {

@@ -3,9 +3,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def mostProfitablePath(
-        self, edges: List[List[int]], bob: int, amount: List[int]
-    ) -> int:
+    def mostProfitablePath(self, edges: List[List[int]], bob: int, amount: List[int]) -> int:
         n = len(amount)
         adj = [[] for _ in range(n)]
         for a, b in edges:

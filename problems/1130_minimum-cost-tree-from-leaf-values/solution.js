@@ -22,8 +22,7 @@ var mctFromLeafValues = function (arr) {
             const j = i + length - 1;
             let best = null;
             for (let k = i; k < j; k++) {
-                const cost =
-                    maxi[i][k] * maxi[k + 1][j] + dp[i][k] + dp[k + 1][j];
+                const cost = maxi[i][k] * maxi[k + 1][j] + dp[i][k] + dp[k + 1][j];
                 if (best === null || cost < best) {
                     best = cost;
                 }

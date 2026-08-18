@@ -16,8 +16,7 @@ function findPermutation(nums: number[]): number[] {
             let best = INF;
             for (let nxt = 0; nxt < n; nxt++) {
                 if ((mask >> nxt) & 1) continue;
-                const cost =
-                    Math.abs(last - nums[nxt]) + f[mask | (1 << nxt)][nxt];
+                const cost = Math.abs(last - nums[nxt]) + f[mask | (1 << nxt)][nxt];
                 if (cost < best) best = cost;
             }
             f[mask][last] = best;
@@ -31,10 +30,7 @@ function findPermutation(nums: number[]): number[] {
     for (let step = 1; step < n; step++) {
         for (let nxt = 0; nxt < n; nxt++) {
             if ((mask >> nxt) & 1) continue;
-            if (
-                Math.abs(last - nums[nxt]) + f[mask | (1 << nxt)][nxt] ===
-                f[mask][last]
-            ) {
+            if (Math.abs(last - nums[nxt]) + f[mask | (1 << nxt)][nxt] === f[mask][last]) {
                 perm.push(nxt);
                 mask |= 1 << nxt;
                 last = nxt;

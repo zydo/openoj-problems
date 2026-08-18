@@ -15,8 +15,5 @@ class Solution:
             else:
                 # A pass of duration u ending today covers (day - u, day].
                 # max(0, ...) treats dp[0] = 0 as "nothing before day 1".
-                dp[day] = min(
-                    dp[max(0, day - duration)] + cost
-                    for duration, cost in zip(durations, costs)
-                )
+                dp[day] = min(dp[max(0, day - duration)] + cost for duration, cost in zip(durations, costs))
         return dp[last]

@@ -26,10 +26,7 @@ class Solution {
                     for (int delta : new int[] { 1, -1 }) {
                         // Turn wheel i up or down, wrapping 0..9.
                         int digit = (state.charAt(i) - '0' + delta + 10) % 10;
-                        String nxt =
-                            state.substring(0, i) +
-                            (char) ('0' + digit) +
-                            state.substring(i + 1);
+                        String nxt = state.substring(0, i) + (char) ('0' + digit) + state.substring(i + 1);
                         // Mark seen at enqueue time so each state enters
                         // the queue once; never step on a deadend.
                         if (!seen.contains(nxt) && !dead.contains(nxt)) {

@@ -1,6 +1,4 @@
 class Solution {
   public:
-    string subStrHash(string s, int power, int modulo, int k, int hashValue) {
-        throw logic_error("TODO");
-    }
+    string subStrHash(string s, int power, int modulo, int k, int hashValue) { throw logic_error("TODO"); }
 };

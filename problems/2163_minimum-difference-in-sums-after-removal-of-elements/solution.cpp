@@ -23,8 +23,7 @@ class Solution {
 
         // right_max[i] = sum of the n largest values among nums[i..] (valid when total - i >= n)
         vector<long long> rightMax(total, 0);
-        priority_queue<long long, vector<long long>, greater<long long>>
-            heap2; // keeps the n largest so far
+        priority_queue<long long, vector<long long>, greater<long long>> heap2; // keeps the n largest so far
         long long running2 = 0;
         for (int i = total - 1; i >= 0; i--) {
             long long value = nums[i];

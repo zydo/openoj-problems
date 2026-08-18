@@ -4,9 +4,7 @@ NEG = -(10**18)
 
 
 class Solution:
-    def maxSubgraphScore(
-        self, n: int, edges: List[List[int]], good: List[int]
-    ) -> List[int]:
+    def maxSubgraphScore(self, n: int, edges: List[List[int]], good: List[int]) -> List[int]:
         adj = [[] for _ in range(n)]
         for a, b in edges:
             adj[a].append(b)

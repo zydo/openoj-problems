@@ -10,11 +10,7 @@ class Solution {
         // increasing widths, so at most one pair per width fits, and the
         // descending tie-break keeps equal widths from chaining among
         // themselves — the task reduces to LIS on heights.
-        sorted.sort((a, b) ->
-            a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(b[1], a[1])
-        );
+        sorted.sort((a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(b[1], a[1]));
         // Patience sorting: tails[i] = min height ending a chain of length i+1.
         List<Integer> tails = new ArrayList<>();
         for (int[] e : sorted) {

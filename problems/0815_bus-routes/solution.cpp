@@ -13,8 +13,7 @@ class Solution {
                 stopToRoutes[s].push_back(r);
             }
         }
-        if (stopToRoutes.find(source) == stopToRoutes.end() ||
-            stopToRoutes.find(target) == stopToRoutes.end()) {
+        if (stopToRoutes.find(source) == stopToRoutes.end() || stopToRoutes.find(target) == stopToRoutes.end()) {
             return -1;
         }
         unordered_set<int> usedRoutes;

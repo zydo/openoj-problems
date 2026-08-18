@@ -14,9 +14,7 @@ class TimeMap {
 
     public void set(String key, String value, int timestamp) {
         values.computeIfAbsent(key, ignored -> new ArrayList<>()).add(value);
-        stamps
-            .computeIfAbsent(key, ignored -> new ArrayList<>())
-            .add(timestamp);
+        stamps.computeIfAbsent(key, ignored -> new ArrayList<>()).add(timestamp);
     }
 
     public String get(String key, int timestamp) {

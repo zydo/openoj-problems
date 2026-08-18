@@ -19,9 +19,7 @@ function distinctSequences(n: number): number {
         }
     }
     for (let len = 3; len <= n; len++) {
-        const ndp: number[][] = Array.from({ length: 7 }, () =>
-            new Array(7).fill(0),
-        );
+        const ndp: number[][] = Array.from({ length: 7 }, () => new Array(7).fill(0));
         for (let a = 1; a <= 6; a++) {
             for (let b = 1; b <= 6; b++) {
                 const cnt = dp[a][b];

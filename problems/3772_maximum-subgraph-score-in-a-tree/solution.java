@@ -63,10 +63,7 @@ class Solution {
             long totalPos = 0;
             for (int c : children.get(u)) totalPos += Math.max(0L, down[c]);
             for (int c : children.get(u)) {
-                up[c] =
-                    weight[u] +
-                    (totalPos - Math.max(0L, down[c])) +
-                    Math.max(0L, up[u]);
+                up[c] = weight[u] + (totalPos - Math.max(0L, down[c])) + Math.max(0L, up[u]);
             }
             // Answer for u: its weight, its positive child branches, and the
             // optional parent-side piece.

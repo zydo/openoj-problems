@@ -6,9 +6,7 @@ function stoneGameII(piles: number[]): number {
     }
     // dp[i][m]: max stones the player to move collects from piles[i:]
     // when the current M is m. dp[n][*] = 0.
-    const dp: number[][] = Array.from({ length: n + 1 }, () =>
-        new Array(n + 1).fill(0),
-    );
+    const dp: number[][] = Array.from({ length: n + 1 }, () => new Array(n + 1).fill(0));
     for (let i = n - 1; i >= 0; i--) {
         for (let m = 1; m <= n; m++) {
             const limit = Math.min(2 * m, n - i);

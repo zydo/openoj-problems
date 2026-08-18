@@ -40,9 +40,7 @@ var maxMoves = function (kx, ky, positions) {
     const m = positions.length;
     const grids = positions.map(([x, y]) => knightDistances(x, y));
     const dStart = grids.map((g) => g[kx][ky]);
-    const dist = Array.from({ length: m }, (_, i) =>
-        grids.map((g) => g[positions[i][0]][positions[i][1]]),
-    );
+    const dist = Array.from({ length: m }, (_, i) => grids.map((g) => g[positions[i][0]][positions[i][1]]));
 
     const full = (1 << m) - 1;
     // dp[mask][last]: best total remaining moves with `mask` captured and the

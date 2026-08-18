@@ -8,9 +8,7 @@ class ListNode:
 
 
 class Solution:
-    def addTwoNumbers(
-        self, l1: Optional[ListNode], l2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         # Dummy head anchors the result list so the first node is not a
         # special case; tail always points at the last node built.
         dummy = ListNode(0)

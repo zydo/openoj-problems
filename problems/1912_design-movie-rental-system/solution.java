@@ -7,8 +7,7 @@ import java.util.PriorityQueue;
 class MovieRentingSystem {
 
     private final Map<Long, Integer> price = new HashMap<>(); // (shop, movie) -> price
-    private final Map<Integer, PriorityQueue<long[]>> unrented =
-        new HashMap<>(); // movie -> {price, shop, token}
+    private final Map<Integer, PriorityQueue<long[]>> unrented = new HashMap<>(); // movie -> {price, shop, token}
     private final Map<Long, Long> unrentedToken = new HashMap<>(); // (movie, shop) -> live token
     private final PriorityQueue<long[]> rented = new PriorityQueue<>((a, b) -> {
         if (a[0] != b[0]) {
@@ -72,12 +71,7 @@ class MovieRentingSystem {
         unrentedToken.remove(pack(movie, shop));
         serial++;
         rentedToken.put(pack(shop, movie), serial);
-        rented.offer(new long[] {
-            price.get(pack(shop, movie)),
-            shop,
-            movie,
-            serial,
-        });
+        rented.offer(new long[] { price.get(pack(shop, movie)), shop, movie, serial });
     }
 
     public void drop(int shop, int movie) {

@@ -23,10 +23,7 @@ var survivedRobotsHealths = function (positions, healths, directions) {
             // dies or the right-movers run out (same-direction robots ahead
             // can never collide with it).
             let alive = true;
-            while (
-                stack.length > 0 &&
-                directions[stack[stack.length - 1]] === "R"
-            ) {
+            while (stack.length > 0 && directions[stack[stack.length - 1]] === "R") {
                 const top = stack[stack.length - 1];
                 // Weaker top dies; the incoming robot loses 1 health and
                 // fights on. Stronger top survives at -1; equal kills both.

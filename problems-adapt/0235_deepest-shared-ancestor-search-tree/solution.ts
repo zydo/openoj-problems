@@ -1,8 +1,4 @@
-function deepestSharedAncestor(
-    root: TreeNode | null,
-    p: number,
-    q: number,
-): number {
+function deepestSharedAncestor(root: TreeNode | null, p: number, q: number): number {
     // Plain descent, no stack or parent pointers: two comparisons per
     // level decide which side both targets lie on.
     let node: TreeNode | null = root;

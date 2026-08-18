@@ -57,8 +57,7 @@ class Solution {
     }
 
     // Enumerate every exactly-need-sized subset of bits[start..] by recursion.
-    static void choose(const vector<int> &bits, int start, int need, int taken, int steps,
-                       vector<int> &dp) {
+    static void choose(const vector<int> &bits, int start, int need, int taken, int steps, vector<int> &dp) {
         if (need == 0) {
             relax(taken, steps + 1, dp);
             return;

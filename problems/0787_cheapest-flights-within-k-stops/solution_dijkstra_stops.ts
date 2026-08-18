@@ -1,10 +1,4 @@
-function findCheapestPrice(
-    n: number,
-    flights: number[][],
-    src: number,
-    dst: number,
-    k: number,
-): number {
+function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {
     const graph: number[][][] = Array.from({ length: n }, () => []);
     for (const [f, t, price] of flights) {
         graph[f].push([t, price]);

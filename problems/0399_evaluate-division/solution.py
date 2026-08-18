@@ -3,9 +3,7 @@ from collections import defaultdict, deque
 
 
 class Solution:
-    def calcEquation(
-        self, equations: List[List[str]], values: List[float], queries: List[List[str]]
-    ) -> List[float]:
+    def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
         graph = defaultdict(dict)
         # Each equation a/b = v becomes a directed edge a -> b of weight v
         # plus the reverse edge of weight 1/v (division inverts with direction).

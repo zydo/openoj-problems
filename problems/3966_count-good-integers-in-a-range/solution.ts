@@ -5,16 +5,9 @@ function goodIntegers(l: number, r: number, k: number): number {
         const n = digits.length;
         // memo[pos][tight][prev+1][started]; prev index 0 = unused
         const memo: number[][][][] = Array.from({ length: n + 1 }, () =>
-            Array.from({ length: 2 }, () =>
-                Array.from({ length: 11 }, () => new Array<number>(2).fill(-1)),
-            ),
+            Array.from({ length: 2 }, () => Array.from({ length: 11 }, () => new Array<number>(2).fill(-1))),
         );
-        const dp = (
-            pos: number,
-            tight: number,
-            prev: number,
-            started: number,
-        ): number => {
+        const dp = (pos: number, tight: number, prev: number, started: number): number => {
             if (pos === n) return 1;
             const slot = memo[pos][tight][prev + 1][started];
             if (slot !== -1) return slot;

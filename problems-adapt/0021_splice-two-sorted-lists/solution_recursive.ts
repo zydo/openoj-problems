@@ -1,7 +1,4 @@
-function spliceTwoSortedLists(
-    first: ListNode | null,
-    second: ListNode | null,
-): ListNode | null {
+function spliceTwoSortedLists(first: ListNode | null, second: ListNode | null): ListNode | null {
     // Base case: an empty list is already sorted, so the other list —
     // whatever remains of it — is the merged continuation as is.
     if (first === null) {

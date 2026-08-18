@@ -23,9 +23,7 @@ class Solution {
         long[] dist = new long[n];
         Arrays.fill(dist, INF);
         dist[0] = 0;
-        PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) ->
-            Long.compare(a[0], b[0])
-        );
+        PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
         pq.add(new long[] { 0, 0 });
         while (!pq.isEmpty()) {
             long[] top = pq.poll();

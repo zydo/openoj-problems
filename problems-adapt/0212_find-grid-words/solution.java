@@ -38,14 +38,7 @@ class Solution {
         return sorted.toArray(new String[0]);
     }
 
-    private void dfs(
-        String[][] board,
-        int i,
-        int j,
-        Node node,
-        boolean[][] seen,
-        Set<String> found
-    ) {
+    private void dfs(String[][] board, int i, int j, Node node, boolean[][] seen, Set<String> found) {
         int m = board.length,
             n = board[0].length;
         char ch = board[i][j].charAt(0);

@@ -22,10 +22,7 @@ function minSessions(tasks: number[], sessionTime: number): number {
             }
             const next = mask | bit;
             // fewer sessions wins; tie -> more remaining time wins
-            if (
-                candS < sessions[next] ||
-                (candS === sessions[next] && candR > remaining[next])
-            ) {
+            if (candS < sessions[next] || (candS === sessions[next] && candR > remaining[next])) {
                 sessions[next] = candS;
                 remaining[next] = candR;
             }

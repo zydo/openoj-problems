@@ -53,11 +53,7 @@ impl Solution {
                 if v as i64 == parent[u] {
                     continue;
                 }
-                let base = if v as i64 == last_no[u] {
-                    second[u]
-                } else {
-                    last[u]
-                };
+                let base = if v as i64 == last_no[u] { second[u] } else { last[u] };
                 let pl = up[u].max(base) + cost;
                 up[v] = pl;
                 if pl > answer[v] {

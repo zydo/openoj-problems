@@ -7,9 +7,7 @@ class Solution {
         Integer[] indices = new Integer[n];
         for (int i = 0; i < n; i++) indices[i] = i;
         // sweep indices by increasing nums1: each query pools the strictly smaller values
-        java.util.Arrays.sort(indices, (a, b) ->
-            Integer.compare(nums1[a], nums1[b])
-        );
+        java.util.Arrays.sort(indices, (a, b) -> Integer.compare(nums1[a], nums1[b]));
         PriorityQueue<Integer> heap = new PriorityQueue<>(); // min-heap of top-k nums2 values
         long total = 0;
         int[] result = new int[n];

@@ -1,10 +1,4 @@
-function subStrHash(
-    s: string,
-    power: number,
-    modulo: number,
-    k: number,
-    hashValue: number,
-): string {
+function subStrHash(s: string, power: number, modulo: number, k: number, hashValue: number): string {
     const n = s.length;
     const val = (i: number): number => s.charCodeAt(i) - 96;
 
@@ -21,10 +15,7 @@ function subStrHash(
     }
     let answer = cur === hashValue ? s.slice(n - k) : "";
     for (let i = n - k - 1; i >= 0; i--) {
-        cur =
-            (((cur - ((val(i + k) * top) % modulo) + modulo) % modulo) * power +
-                val(i)) %
-            modulo;
+        cur = (((cur - ((val(i + k) * top) % modulo) + modulo) % modulo) * power + val(i)) % modulo;
         if (cur === hashValue) {
             answer = s.slice(i, i + k); // scanning right-to-left keeps the leftmost match
         }

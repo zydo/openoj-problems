@@ -1,8 +1,4 @@
-function allShortestBridges(
-    startWord: string,
-    targetWord: string,
-    dictionary: string[],
-): string[][] {
+function allShortestBridges(startWord: string, targetWord: string, dictionary: string[]): string[][] {
     const wordSet = new Set<string>(dictionary);
     if (!wordSet.has(targetWord)) return [];
     // Drop startWord so the search can never route back through it.

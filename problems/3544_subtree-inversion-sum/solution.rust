@@ -64,11 +64,7 @@ impl Solution {
                     let val_dont = base_dont + dont_row[dd];
                     if dist >= k {
                         let val_inv = base_inv + inv_row[1];
-                        table[flip][dist] = if val_dont > val_inv {
-                            val_dont
-                        } else {
-                            val_inv
-                        };
+                        table[flip][dist] = if val_dont > val_inv { val_dont } else { val_inv };
                     } else {
                         table[flip][dist] = val_dont;
                     }

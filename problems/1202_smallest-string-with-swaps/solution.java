@@ -13,13 +13,10 @@ class Solution {
             if (ra != rb) parent[ra] = rb;
         }
 
-        java.util.Map<Integer, java.util.List<Integer>> groups =
-            new java.util.HashMap<>();
+        java.util.Map<Integer, java.util.List<Integer>> groups = new java.util.HashMap<>();
         for (int i = 0; i < n; i++) {
             int root = find(parent, i);
-            groups
-                .computeIfAbsent(root, r -> new java.util.ArrayList<>())
-                .add(i);
+            groups.computeIfAbsent(root, r -> new java.util.ArrayList<>()).add(i);
         }
 
         char[] result = s.toCharArray();

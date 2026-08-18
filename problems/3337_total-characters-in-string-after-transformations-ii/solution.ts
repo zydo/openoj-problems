@@ -1,17 +1,10 @@
-function lengthAfterTransformations(
-    s: string,
-    t: number,
-    nums: number[],
-): number {
+function lengthAfterTransformations(s: string, t: number, nums: number[]): number {
     const MOD = 1000000007;
-    const mulmod = (a: number, b: number): number =>
-        Number((BigInt(a) * BigInt(b)) % 1000000007n);
+    const mulmod = (a: number, b: number): number => Number((BigInt(a) * BigInt(b)) % 1000000007n);
 
     const matMul = (a: number[][], b: number[][]): number[][] => {
         const size = a.length;
-        const c: number[][] = Array.from({ length: size }, () =>
-            new Array<number>(size).fill(0),
-        );
+        const c: number[][] = Array.from({ length: size }, () => new Array<number>(size).fill(0));
         for (let i = 0; i < size; i++) {
             for (let k = 0; k < size; k++) {
                 const aik = a[i][k];
@@ -47,9 +40,7 @@ function lengthAfterTransformations(
     }
 
     // transition[i][j] = 1 if character j produces character i.
-    const transition: number[][] = Array.from({ length: 26 }, () =>
-        new Array<number>(26).fill(0),
-    );
+    const transition: number[][] = Array.from({ length: 26 }, () => new Array<number>(26).fill(0));
     for (let j = 0; j < 26; j++) {
         for (let a = 1; a <= nums[j]; a++) {
             transition[(j + a) % 26][j] = 1;

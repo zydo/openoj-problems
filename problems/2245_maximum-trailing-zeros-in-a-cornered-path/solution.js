@@ -60,22 +60,10 @@ var maxTrailingZeros = function (grid) {
         const vert5Bottom = col5[c][m] - col5[c][r];
 
         return Math.max(
-            Math.min(
-                horiz2Left + vert2Top - cell2,
-                horiz5Left + vert5Top - cell5,
-            ),
-            Math.min(
-                horiz2Right + vert2Top - cell2,
-                horiz5Right + vert5Top - cell5,
-            ),
-            Math.min(
-                horiz2Left + vert2Bottom - cell2,
-                horiz5Left + vert5Bottom - cell5,
-            ),
-            Math.min(
-                horiz2Right + vert2Bottom - cell2,
-                horiz5Right + vert5Bottom - cell5,
-            ),
+            Math.min(horiz2Left + vert2Top - cell2, horiz5Left + vert5Top - cell5),
+            Math.min(horiz2Right + vert2Top - cell2, horiz5Right + vert5Top - cell5),
+            Math.min(horiz2Left + vert2Bottom - cell2, horiz5Left + vert5Bottom - cell5),
+            Math.min(horiz2Right + vert2Bottom - cell2, horiz5Right + vert5Bottom - cell5),
         );
     };
 

@@ -13,9 +13,7 @@ class Solution {
 
     public Solution(int[] nums) {
         for (int index = 0; index < nums.length; index++) {
-            positions
-                .computeIfAbsent(nums[index], value -> new ArrayList<>())
-                .add(index);
+            positions.computeIfAbsent(nums[index], value -> new ArrayList<>()).add(index);
         }
     }
 

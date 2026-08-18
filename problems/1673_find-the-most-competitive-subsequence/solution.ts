@@ -9,11 +9,7 @@ function mostCompetitive(nums: number[], k: number): number[] {
         // Drop strictly larger tops while enough unread values remain to
         // refill to k; the strict > keeps the earlier of equal values,
         // which changes nothing lexicographically.
-        while (
-            stack.length &&
-            stack[stack.length - 1] > value &&
-            stack.length + remaining > k
-        ) {
+        while (stack.length && stack[stack.length - 1] > value && stack.length + remaining > k) {
             stack.pop();
         }
         // Append only while there is room; a full stack can only change

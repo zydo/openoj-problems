@@ -18,9 +18,7 @@ function findGridWords(board: string[][], words: string[]): string[] {
     // A cell is used at most once within a word (the seen grid tracks the
     // current path); the set dedups words found along several paths.
     const found = new Set<string>();
-    const seen: boolean[][] = Array.from({ length: m }, () =>
-        new Array<boolean>(n).fill(false),
-    );
+    const seen: boolean[][] = Array.from({ length: m }, () => new Array<boolean>(n).fill(false));
 
     const dfs = (i: number, j: number, node: TrieNode): void => {
         const ch = board[i][j];

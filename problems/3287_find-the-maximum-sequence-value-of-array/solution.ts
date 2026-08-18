@@ -5,10 +5,7 @@ function maxValue(nums: number[], k: number): number {
     // pre[j] = ORs of exactly k elements from first j elements (bitmask array)
     const pre: Uint8Array[] = new Array(n + 1);
     {
-        const dp: Uint8Array[] = Array.from(
-            { length: k + 1 },
-            () => new Uint8Array(V),
-        );
+        const dp: Uint8Array[] = Array.from({ length: k + 1 }, () => new Uint8Array(V));
         dp[0][0] = 1;
         for (let i = 0; i < n; i++) {
             const x = nums[i];
@@ -27,10 +24,7 @@ function maxValue(nums: number[], k: number): number {
     // suf[i] = ORs of exactly k elements from nums[i:]
     const suf: Uint8Array[] = new Array(n + 1);
     {
-        const dp: Uint8Array[] = Array.from(
-            { length: k + 1 },
-            () => new Uint8Array(V),
-        );
+        const dp: Uint8Array[] = Array.from({ length: k + 1 }, () => new Uint8Array(V));
         dp[0][0] = 1;
         for (let i = n - 1; i >= 0; i--) {
             const x = nums[i];

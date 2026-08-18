@@ -1,7 +1,4 @@
-function maxCompatibilitySum(
-    students: number[][],
-    mentors: number[][],
-): number {
+function maxCompatibilitySum(students: number[][], mentors: number[][]): number {
     const m = students.length;
     // Precompute the m x m agreement counts so the DP touches only ints.
     const score: number[][] = [];

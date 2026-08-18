@@ -7,8 +7,7 @@ class Solution {
         // Total planting time is fixed regardless of order, so only the
         // order matters: by an exchange argument, plant slow-growing seeds
         // first so their long growth overlaps the planting of the rest.
-        stable_sort(idx.begin(), idx.end(),
-                    [&](int a, int b) { return growTime[a] > growTime[b]; });
+        stable_sort(idx.begin(), idx.end(), [&](int a, int b) { return growTime[a] > growTime[b]; });
         int best = 0;
         int prefix = 0;
         for (int i : idx) {

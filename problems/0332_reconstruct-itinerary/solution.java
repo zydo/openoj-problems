@@ -10,9 +10,7 @@ class Solution {
     public String[] findItinerary(String[][] tickets) {
         Map<String, List<String>> graph = new HashMap<>();
         for (String[] ticket : tickets) {
-            graph
-                .computeIfAbsent(ticket[0], k -> new ArrayList<>())
-                .add(ticket[1]);
+            graph.computeIfAbsent(ticket[0], k -> new ArrayList<>()).add(ticket[1]);
         }
         for (List<String> adj : graph.values()) {
             adj.sort((a, b) -> b.compareTo(a)); // descending

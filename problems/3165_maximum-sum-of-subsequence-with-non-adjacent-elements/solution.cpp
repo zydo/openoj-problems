@@ -36,8 +36,7 @@ class Solution {
         return a + b;
     }
 
-    static array<long long, 4> merge(const array<long long, 4> &left,
-                                     const array<long long, 4> &right) {
+    static array<long long, 4> merge(const array<long long, 4> &left, const array<long long, 4> &right) {
         array<long long, 4> out{};
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {

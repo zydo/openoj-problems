@@ -5,10 +5,7 @@ struct Fenwick {
 
 impl Fenwick {
     fn new(n: usize) -> Self {
-        Fenwick {
-            n,
-            bit: vec![0; n + 1],
-        }
+        Fenwick { n, bit: vec![0; n + 1] }
     }
 
     fn add(&mut self, i: usize, delta: i32) {

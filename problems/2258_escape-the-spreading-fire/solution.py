@@ -24,12 +24,7 @@ class Solution:
             i, j = queue.popleft()
             for di, dj in dirs:
                 ni, nj = i + di, j + dj
-                if (
-                    0 <= ni < m
-                    and 0 <= nj < n
-                    and grid[ni][nj] != 2
-                    and fire[ni][nj] == INF
-                ):
+                if 0 <= ni < m and 0 <= nj < n and grid[ni][nj] != 2 and fire[ni][nj] == INF:
                     fire[ni][nj] = fire[i][j] + 1
                     queue.append((ni, nj))
 
@@ -46,12 +41,7 @@ class Solution:
                     return True
                 for di, dj in dirs:
                     ni, nj = i + di, j + dj
-                    if (
-                        0 <= ni < m
-                        and 0 <= nj < n
-                        and grid[ni][nj] != 2
-                        and not seen[ni][nj]
-                    ):
+                    if 0 <= ni < m and 0 <= nj < n and grid[ni][nj] != 2 and not seen[ni][nj]:
                         nt = t + 1
                         # the safehouse may tie the fire: reaching it the very
                         # minute fire does still counts as escaping

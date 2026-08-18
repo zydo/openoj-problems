@@ -27,10 +27,7 @@ var canForceWin = function (maxNumber, target) {
             }
             // Immediate win on reaching the target, else the move wins
             // exactly when it strands the opponent in a losing state.
-            if (
-                choice >= remaining ||
-                !canWin(state | bit, remaining - choice)
-            ) {
+            if (choice >= remaining || !canWin(state | bit, remaining - choice)) {
                 memo.set(state, true);
                 return true;
             }

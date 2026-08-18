@@ -4,8 +4,7 @@ class Solution {
         static const string TARGET = "123450";
         // Adjacency of each row-major cell on the 2x3 board (-1 = none),
         // so the expansion needs no bounds logic.
-        static const int NEIGHBORS[6][3] = {{1, 3, -1}, {0, 2, 4}, {1, 5, -1},
-                                            {0, 4, -1}, {3, 5, 1}, {2, 4, -1}};
+        static const int NEIGHBORS[6][3] = {{1, 3, -1}, {0, 2, 4}, {1, 5, -1}, {0, 4, -1}, {3, 5, 1}, {2, 4, -1}};
         // Boards are nodes, slides of the 0 are edges: BFS gives the
         // minimum move count over at most 6! = 720 states, encoded as
         // strings so they hash into a visited set.

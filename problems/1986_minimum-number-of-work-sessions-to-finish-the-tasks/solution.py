@@ -23,8 +23,6 @@ class Solution:
                 else:
                     cand = (sessions + 1, sessionTime - cost)
                 # fewer sessions wins; tie -> more remaining time wins
-                if cand[0] < dp[mask | bit][0] or (
-                    cand[0] == dp[mask | bit][0] and cand[1] > dp[mask | bit][1]
-                ):
+                if cand[0] < dp[mask | bit][0] or (cand[0] == dp[mask | bit][0] and cand[1] > dp[mask | bit][1]):
                     dp[mask | bit] = cand
         return dp[FULL][0]

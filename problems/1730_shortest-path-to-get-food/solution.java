@@ -31,14 +31,7 @@ class Solution {
             for (int[] d : dirs) {
                 int ni = i + d[0],
                     nj = j + d[1];
-                if (
-                    ni >= 0 &&
-                    ni < m &&
-                    nj >= 0 &&
-                    nj < n &&
-                    !grid[ni][nj].equals("X") &&
-                    dist[ni][nj] == -1
-                ) {
+                if (ni >= 0 && ni < m && nj >= 0 && nj < n && !grid[ni][nj].equals("X") && dist[ni][nj] == -1) {
                     dist[ni][nj] = dist[i][j] + 1;
                     q.offer(new int[] { ni, nj });
                 }

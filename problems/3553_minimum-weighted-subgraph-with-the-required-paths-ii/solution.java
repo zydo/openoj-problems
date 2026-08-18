@@ -90,14 +90,7 @@ class Solution {
         return up[0][x];
     }
 
-    private static long distance(
-        int x,
-        int y,
-        long[] dist,
-        int[][] up,
-        int[] depth,
-        int log
-    ) {
+    private static long distance(int x, int y, long[] dist, int[][] up, int[] depth, int log) {
         return dist[x] + dist[y] - 2 * dist[lca(x, y, depth, up, log)];
     }
 }

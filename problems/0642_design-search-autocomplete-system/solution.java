@@ -43,9 +43,7 @@ class AutocompleteSystem {
         }
         order.sort((a, b) -> {
             int byHotness = hotnesses.get(b) - hotnesses.get(a);
-            return byHotness != 0
-                ? byHotness
-                : sentences.get(a).compareTo(sentences.get(b));
+            return byHotness != 0 ? byHotness : sentences.get(a).compareTo(sentences.get(b));
         });
         List<String> top = new ArrayList<>();
         for (int index = 0; index < Math.min(3, order.size()); index++) {
@@ -57,19 +55,12 @@ class AutocompleteSystem {
     private Node insert(String sentence) {
         Node node = root;
         for (int index = 0; index < sentence.length(); index++) {
-            node = node.children.computeIfAbsent(sentence.charAt(index), key ->
-                new Node()
-            );
+            node = node.children.computeIfAbsent(sentence.charAt(index), key -> new Node());
         }
         return node;
     }
 
-    private void collect(
-        Node node,
-        StringBuilder prefix,
-        List<String> sentences,
-        List<Integer> hotnesses
-    ) {
+    private void collect(Node node, StringBuilder prefix, List<String> sentences, List<Integer> hotnesses) {
         if (node.hotness > 0) {
             sentences.add(prefix.toString());
             hotnesses.add(node.hotness);

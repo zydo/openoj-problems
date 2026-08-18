@@ -84,10 +84,7 @@ function findAnswer(n: number, edges: number[][]): boolean[] {
     for (const [u, v, w] of edges) {
         // on a shortest path iff d0(one end) + w + dN(other end) == total,
         // tested both ways since the undirected edge may be crossed either way
-        if (
-            dist0[u] + w + distN[v] === total ||
-            dist0[v] + w + distN[u] === total
-        ) {
+        if (dist0[u] + w + distN[v] === total || dist0[v] + w + distN[u] === total) {
             ans.push(true);
         } else {
             ans.push(false);

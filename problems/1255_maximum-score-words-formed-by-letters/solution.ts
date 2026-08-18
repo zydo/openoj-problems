@@ -1,8 +1,4 @@
-function maxScoreWords(
-    words: string[],
-    letters: string[],
-    score: number[],
-): number {
+function maxScoreWords(words: string[], letters: string[], score: number[]): number {
     // 26-entry count of the letter pool
     const available: number[] = new Array(26).fill(0);
     for (const ch of letters) {

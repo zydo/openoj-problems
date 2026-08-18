@@ -18,10 +18,7 @@ var findBestValue = function (arr, target) {
         if (mutatedSum(mid) >= target) hi = mid;
         else lo = mid + 1;
     }
-    if (
-        Math.abs(mutatedSum(lo - 1) - target) <=
-        Math.abs(mutatedSum(lo) - target)
-    ) {
+    if (Math.abs(mutatedSum(lo - 1) - target) <= Math.abs(mutatedSum(lo) - target)) {
         return lo - 1;
     }
     return lo;

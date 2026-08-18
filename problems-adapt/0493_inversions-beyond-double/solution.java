@@ -23,9 +23,7 @@ class Solution {
         }
         int mid = arr.length / 2;
         long[] left = mergeCount(java.util.Arrays.copyOfRange(arr, 0, mid));
-        long[] right = mergeCount(
-            java.util.Arrays.copyOfRange(arr, mid, arr.length)
-        );
+        long[] right = mergeCount(java.util.Arrays.copyOfRange(arr, mid, arr.length));
         // Pairs inside either half are already counted; only cross pairs
         // remain, and both halves come back sorted.
         // count cross pairs beyond double: left[i] > 2 * right[j]

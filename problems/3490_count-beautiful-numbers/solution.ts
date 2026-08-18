@@ -8,24 +8,14 @@ function beautifulNumbers(l: number, r: number): number {
         // Memo scoped per bound: tight transitions depend on x's digits.
         // State: position, tight (prefix equals x's), started (nonzero seen),
         // running digit sum and digit product — all that beauty depends on.
-        const dp = (
-            pos: number,
-            tight: boolean,
-            started: boolean,
-            ssum: number,
-            prod: number,
-        ): number => {
+        const dp = (pos: number, tight: boolean, started: boolean, ssum: number, prod: number): number => {
             if (pos === digits.length) {
                 // Beautiful iff a number was built and prod is a multiple of
                 // the sum; a 0 digit zeroes prod, and 0 is divisible by any
                 // positive sum.
                 return started && ssum > 0 && prod % ssum === 0 ? 1 : 0;
             }
-            const key =
-                (((pos * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)) * 128 +
-                    ssum) *
-                    4294967296 +
-                prod;
+            const key = (((pos * 2 + (tight ? 1 : 0)) * 2 + (started ? 1 : 0)) * 128 + ssum) * 4294967296 + prod;
             if (memo.has(key)) return memo.get(key)!;
             // A tight prefix is capped at x's digit; free prefixes take any digit.
             const limit = tight ? digits[pos] : 9;

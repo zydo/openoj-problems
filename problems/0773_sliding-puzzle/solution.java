@@ -8,14 +8,7 @@ class Solution {
     private static final String TARGET = "123450";
     // Adjacency of each row-major cell on the 2x3 board, so the
     // expansion needs no bounds logic.
-    private static final int[][] NEIGHBORS = {
-        { 1, 3 },
-        { 0, 2, 4 },
-        { 1, 5 },
-        { 0, 4 },
-        { 3, 5, 1 },
-        { 2, 4 },
-    };
+    private static final int[][] NEIGHBORS = { { 1, 3 }, { 0, 2, 4 }, { 1, 5 }, { 0, 4 }, { 3, 5, 1 }, { 2, 4 } };
 
     public int slidingPuzzle(int[][] board) {
         // Boards are nodes, slides of the 0 are edges: BFS gives the
