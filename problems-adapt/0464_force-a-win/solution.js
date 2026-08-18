@@ -1,0 +1,43 @@
+/**
+ * @param {number} maxNumber
+ * @param {number} target
+ * @return {boolean}
+ */
+var canForceWin = function (maxNumber, target) {
+    // Target already reached before any move: the first player wins.
+    if (target <= 0) {
+        return true;
+    }
+    // The whole pool cannot reach the target, so nobody ever wins.
+    if ((maxNumber * (maxNumber + 1)) / 2 < target) {
+        return false;
+    }
+    // State = bitmask of used integers (m <= 20 keeps it to 2^m states);
+    // `remaining` is derived from the mask, so memoizing on it suffices.
+    const memo = new Map();
+
+    const canWin = (state, remaining) => {
+        if (memo.has(state)) {
+            return memo.get(state);
+        }
+        for (let choice = 1; choice <= maxNumber; choice++) {
+            const bit = 1 << (choice - 1);
+            if (state & bit) {
+                continue;
+            }
+            // Immediate win on reaching the target, else the move wins
+            // exactly when it strands the opponent in a losing state.
+            if (
+                choice >= remaining ||
+                !canWin(state | bit, remaining - choice)
+            ) {
+                memo.set(state, true);
+                return true;
+            }
+        }
+        memo.set(state, false);
+        return false;
+    };
+
+    return canWin(0, target);
+};

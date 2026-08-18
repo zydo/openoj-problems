@@ -15,6 +15,13 @@
       "ts": "2026-08-18T20:15:59",
       "agent": "chunk 14",
       "kind": "429 per-minute rate limit"
+    },
+    {
+      "at": "2026-08-18T05:45:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 11,
+      "note": "The whole fleet died at once on the shared 5-hour pool, not on per-minute 429s. Concurrency does not cause this class of death -- total consumption does -- so the target is left where it is rather than stepped down again. Pool resets ~09:45 PDT; the 11:00 timer restarts the fleet after it."
     }
-  ]
+  ],
+  "pool_resets_at": "2026-08-18T09:45:00-07:00"
 }

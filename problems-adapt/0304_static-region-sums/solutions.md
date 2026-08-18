@@ -1,13 +1,32 @@
-# Solutions — Range Sum Query 2D - Immutable
+# Solutions — Static Region Sums
 
-## 2D Prefix Sums (Integral Image)
+## Integral Image
 
-Because the matrix is fixed at construction time, every `sumRegion` queries the same unchanging data — so the summing should happen once, not per call. The `NumMatrix` class precomputes an integral image: `prefix[r][c]` holds the sum of all elements in rows `0..r-1` and columns `0..c-1`, with a guard row and column of zeros on the top and left so index arithmetic never needs boundary checks.
+Every question reads the same frozen grid, so the area-counting work
+belongs to construction. `StaticRegions` builds an integral image:
+`prefix[r][c]` totals the cells in rows `0..r-1` and columns `0..c-1`, and
+a guard row and column of zeros pad the top and left so that no index in
+the arithmetic ever needs a boundary case.
 
-Each entry is built from its three already-computed neighbors by inclusion–exclusion: `prefix[r][c] = matrix[r-1][c-1] + prefix[r-1][c] + prefix[r][c-1] - prefix[r-1][c-1]` — the top-left term is subtracted because the row-strip and column-strip counts both include it. One pass over the matrix fills the whole table.
+Filling it is inclusion–exclusion at every cell: the entry above already
+counts a row strip, the entry to the left a column strip, and both strips
+count the diagonal entry — so `prefix[r][c] = matrix[r-1][c-1] +
+prefix[r-1][c] + prefix[r][c-1] - prefix[r-1][c-1]`. One sweep of the grid
+produces the whole table.
 
-A query rectangle is then the same inclusion–exclusion in reverse: `sumRegion(r1, c1, r2, c2) = prefix[r2+1][c2+1] - prefix[r1][c2+1] - prefix[r2+1][c1] + prefix[r1][c1]`. The two strips above and to the left of the query cancel, leaving exactly the requested rectangle — four lookups and three arithmetic operations, independent of the rectangle's size.
+A query then runs the same identity with the signs kept: the anchored
+rectangle ending at `(bottom, right)`, less the strip of anchored
+rectangles above the query, less the strip to its left, plus back the
+corner those two strips both removed:
+`regionSum(top, left, bottom, right) = prefix[bottom+1][right+1] -
+prefix[top][right+1] - prefix[bottom+1][left] + prefix[top][left]`. On the
+Example 1 grid this makes the interior block `regionSum(1, 1, 2, 3)` four
+lookups totalling `20`, whatever its area — four operations for a single
+cell or for the whole grid alike.
 
-Both the Python and Java canonical solutions implement exactly this table (accumulating into `long`, safely above the worst-case total of `200 · 200 · 10⁴ = 4 · 10⁸`). With at most `10⁴` queries, the whole workload is quadratic preprocessing plus constant-time lookups, satisfying the follow-up.
+The Java port accumulates into `long`; the largest possible total is
+`200 · 200 · 10⁴ = 4 · 10⁸`, beyond 32 bits. Up to `10⁴` queries ride on
+quadratic preprocessing and constant-time answers.
 
-**Complexity:** `O(m · n)` construction, `O(1)` per `sumRegion`, `O(m · n)` extra space.
+**Complexity:** `O(m · n)` construction, `O(1)` per `regionSum`, `O(m · n)`
+extra space.

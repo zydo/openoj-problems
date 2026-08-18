@@ -1,0 +1,18 @@
+from typing import List, Optional
+
+
+class NewsBoard:
+    def __init__(self) -> None:
+        raise NotImplementedError("TODO")
+
+    def postMessage(self, userId: int, messageId: int) -> None:
+        raise NotImplementedError("TODO")
+
+    def getFeed(self, userId: int) -> List[int]:
+        raise NotImplementedError("TODO")
+
+    def follow(self, followerId: int, followeeId: int) -> None:
+        raise NotImplementedError("TODO")
+
+    def unfollow(self, followerId: int, followeeId: int) -> None:
+        raise NotImplementedError("TODO")

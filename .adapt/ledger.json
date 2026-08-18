@@ -2397,6 +2397,149 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0304_range-sum-query-2d-immutable",
+      "source_id": 304,
+      "source_title": "Range Sum Query 2D - Immutable",
+      "adapted": "0304_static-region-sums",
+      "id": 304,
+      "title": "Static Region Sums",
+      "api": {
+        "NumMatrix": "StaticRegions",
+        "sumRegion": "regionSum",
+        "row1": "top",
+        "col1": "left",
+        "row2": "bottom",
+        "col2": "right"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0355_design-twitter",
+      "source_id": 355,
+      "source_title": "Design Twitter",
+      "adapted": "0355_news-board",
+      "id": 355,
+      "title": "News Board",
+      "api": {
+        "Twitter": "NewsBoard",
+        "postTweet": "postMessage",
+        "getNewsFeed": "getFeed",
+        "tweetId": "messageId"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0611_valid-triangle-number",
+      "source_id": 611,
+      "source_title": "Valid Triangle Number",
+      "adapted": "0611_valid-triangle-count",
+      "id": 611,
+      "title": "Valid Triangle Count",
+      "api": {
+        "triangleNumber": "countTriangles",
+        "triangle_number": "count_triangles",
+        "nums": "sides"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0752_open-the-lock",
+      "source_id": 752,
+      "source_title": "Open the Lock",
+      "adapted": "0752_fewest-wheel-turns",
+      "id": 752,
+      "title": "Fewest Wheel Turns",
+      "api": {
+        "openLock": "fewestTurns",
+        "open_lock": "fewest_turns"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0394_decode-string",
+      "source_id": 394,
+      "source_title": "Decode String",
+      "adapted": "0394_expand-bracket-repeats",
+      "id": 394,
+      "title": "Expand Bracket Repeats",
+      "api": {
+        "decodeString": "expandRepeats",
+        "decode_string": "expand_repeats"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0547_number-of-provinces",
+      "source_id": 547,
+      "source_title": "Number of Provinces",
+      "adapted": "0547_count-graph-components",
+      "id": 547,
+      "title": "Count Graph Components",
+      "api": {
+        "findCircleNum": "countComponents",
+        "find_circle_num": "count_components",
+        "isConnected": "adjacency"
+      },
+      "kind": "function (multi-solution)",
+      "figures": "labels updated (example-1); dropped (example-2)"
+    },
+    {
+      "source": "0378_kth-smallest-element-in-a-sorted-matrix",
+      "adapted": "0378_select-kth-smallest-in-a-grid",
+      "title": "Select Kth Smallest in a Grid",
+      "kind": "function",
+      "api": {
+        "kthSmallest": "selectKthSmallest",
+        "matrix": "grid"
+      },
+      "figures": "labels updated",
+      "note": "Salvaged centrally: the authoring agent died on the quota window after the bundle was complete and green; the fragment is reconstructed from the finished bundle.",
+      "id": 378
+    },
+    {
+      "source": "0464_can-i-win",
+      "adapted": "0464_force-a-win",
+      "title": "Force A Win",
+      "kind": "function",
+      "api": {
+        "canIWin": "canForceWin",
+        "maxChoosableInteger": "maxNumber",
+        "desiredTotal": "target"
+      },
+      "figures": "none",
+      "note": "Salvaged centrally: the authoring agent died on the quota window after the bundle was complete and green; the fragment is reconstructed from the finished bundle.",
+      "id": 464
+    },
+    {
+      "source": "0646_maximum-length-of-pair-chain",
+      "adapted": "0646_longest-pair-chain",
+      "title": "Longest Pair Chain",
+      "kind": "function",
+      "api": {
+        "findLongestChain": "longestPairChain"
+      },
+      "figures": "none",
+      "note": "Salvaged centrally: the quota window killed the agent between writing the bundle and generating starters. Starters generated here; all three gates green.",
+      "id": 646
+    },
+    {
+      "source": "0514_freedom-trail",
+      "adapted": "0514_dial-spelling-steps",
+      "title": "Dial Spelling Steps",
+      "kind": "function",
+      "api": {
+        "findRotateSteps": "dialSpellingSteps"
+      },
+      "figures": "dropped",
+      "note": "Salvaged centrally: statement, cases and all seven implementations were finished and green; the quota window killed the agent before solutions.md and the starters. Both written here from the adapted solution, source closed.",
+      "id": 514
     }
   ]
 }
