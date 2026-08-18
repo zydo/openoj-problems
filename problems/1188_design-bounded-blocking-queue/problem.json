@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": 1188,
+  "slug": "design-bounded-blocking-queue",
+  "title": "Design Bounded Blocking Queue",
+  "difficulty": "H3",
+  "tags": [
+    "Queue",
+    "Concurrency"
+  ],
+  "invocation": {
+    "type": "concurrent",
+    "class_name": "BoundedBlockingQueue",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "capacity",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "enqueue",
+        "parameters": [
+          {
+            "name": "element",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "dequeue",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "size",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "multiset"
+  },
+  "limits": {
+    "time_ms": 4000,
+    "memory_mb": 256,
+    "output_kb": 64,
+    "threads": 60
+  }
+}

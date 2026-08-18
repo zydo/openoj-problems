@@ -5,9 +5,9 @@ Starters are derived code: never edit them by hand — change problem.json and
 re-run this script. The file extension selects the language (py, javascript,
 typescript, java, cpp, go, rust, sql) and the set of generated starters
 defines the languages the problem offers. Function problems generate all seven
-languages; sql a single starter.sql; design (class) and interactive (oracle)
-problems python3 + java only — the typed wrappers do not implement the
-actions/params or oracle protocols.
+languages; sql a single starter.sql; design (class), interactive (oracle) and
+concurrent (threaded schedule) problems python3 + java only — the typed
+wrappers do not implement the actions/params, oracle or schedule protocols.
 
 Usage:
   gen_starters.py problems/0001_two-sum [problems/… …]   # default: all
@@ -241,6 +241,8 @@ def generate(invocation: dict, language: str) -> str:
         return _generate_design(invocation, language)
     if invocation.get("type", "function") == "interactive":
         return _generate_interactive(invocation, language)
+    if invocation.get("type", "function") == "concurrent":
+        return _generate_concurrent(invocation, language)
     parameters = _parameters(invocation)
     return_type = invocation.get("return_type") or {"kind": "boolean"}
     structs = _uses_structs(invocation)
@@ -380,6 +382,93 @@ def _generate_design(invocation: dict, language: str) -> str:
     return "".join(chunks)
 
 
+def _generate_concurrent(invocation: dict, language: str) -> str:
+    """Concurrency problems: python3 + java only, same class shape as design.
+    A parameter of kind "callback" is LeetCode's release callback — the judge
+    supplies it (a zero-argument lambda / Runnable) and records the token it
+    appends to the shared log. Java methods declare `throws
+    InterruptedException` because every one of them may block on the schedule.
+    Schema:
+        {"type": "concurrent", "class_name": "H2O",
+         "constructor": {"parameters": [...]},
+         "methods": [{"name": "hydrogen",
+                      "parameters": [{"name": "releaseHydrogen",
+                                      "value_type": {"kind": "callback"}}]}]}
+    """
+    if language not in ("python3", "java"):
+        raise ValueError(f"Concurrency problems support python3 and java, not {language}")
+    class_name = invocation["class_name"]
+    constructor = invocation.get("constructor", {}).get("parameters", [])
+    methods = invocation.get("methods", [])
+    parameters = constructor + [
+        parameter for method in methods for parameter in method.get("parameters", [])
+    ]
+    callbacks = any(_kind(parameter["value_type"]) == "callback" for parameter in parameters)
+
+    if language == "python3":
+        typing_names = "Callable, List, Optional" if callbacks else "List, Optional"
+        blocks = [f"from typing import {typing_names}\n\n\n", f"class {class_name}:\n"]
+
+        def signature(specs: list[dict]) -> str:
+            return ", ".join(
+                [
+                    "self",
+                    *(
+                        f"{parameter['name']}: "
+                        + (
+                            "Callable[[], None]"
+                            if _kind(parameter["value_type"]) == "callback"
+                            else python_type(parameter["value_type"])
+                        )
+                        for parameter in specs
+                    ),
+                ]
+            )
+
+        blocks.append(f"    def __init__({signature(constructor)}) -> None:\n")
+        blocks.append('        raise NotImplementedError("TODO")\n')
+        for method in methods:
+            returns = python_type(method["return_type"]) if method.get("return_type") else "None"
+            blocks.append(f"\n    def {method['name']}({signature(method.get('parameters', []))}) -> {returns}:\n")
+            blocks.append('        raise NotImplementedError("TODO")\n')
+        return "".join(blocks)
+
+    # java
+    chunks = []
+    if any(
+        _contains_struct(parameter["value_type"])
+        for parameter in parameters
+        if _kind(parameter["value_type"]) != "callback"
+    ):
+        chunks.append("import java.util.List;\n\n")
+    chunks.append(f"class {class_name} {{\n")
+
+    def java_signature(specs: list[dict]) -> str:
+        return ", ".join(
+            (
+                "Runnable"
+                if _kind(parameter["value_type"]) == "callback"
+                else java_type(parameter["value_type"])
+            )
+            + f" {parameter['name']}"
+            for parameter in specs
+        )
+
+    chunks.append(f"    public {class_name}({java_signature(constructor)}) {{\n")
+    chunks.append('        throw new UnsupportedOperationException("TODO");\n')
+    chunks.append("    }\n")
+    for method in methods:
+        returns = java_type(method["return_type"]) if method.get("return_type") else "void"
+        chunks.append(
+            f"\n    public {returns} {method['name']}({java_signature(method.get('parameters', []))})"
+            " throws InterruptedException {\n"
+        )
+        chunks.append('        throw new UnsupportedOperationException("TODO");\n')
+        chunks.append("    }\n")
+    chunks.append("}\n")
+    return "".join(chunks)
+
+
 # Interactive oracle table: the python type is injected into the submission
 # module by runner/python_harness.py; the java type is the judge-classpath
 # class (GridMaster is top-level, later oracles nest in InteractiveOracles).
@@ -469,7 +558,7 @@ def starter_files(invocation: dict) -> dict[str, str]:
         return {"sql": generate(invocation, "sql")}
     if invocation_type == "design":
         return {language: generate(invocation, language) for language in ("python3", "java")}
-    if invocation_type == "interactive":
+    if invocation_type in ("interactive", "concurrent"):
         return {language: generate(invocation, language) for language in ("python3", "java")}
     return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
 
