@@ -59,12 +59,29 @@ def shingles(text: str) -> set[tuple[str, ...]]:
     return {tuple(tokens[i : i + SHINGLE]) for i in range(len(tokens) - SHINGLE + 1)}
 
 
+def background_shingles(exclude: Path) -> set[tuple[str, ...]]:
+    """Phrases so common in the bank they cannot evidence copying.
+
+    Framework boilerplate ("the test cases seed this table with different
+    datasets", "write your solution as a single select query") and standard
+    judge phrasing appear in many statements at once; a phrase found across
+    the wider corpus predates any single rewrite.
+    """
+    counts: dict[tuple[str, ...], int] = {}
+    for bundle in sorted(LIVE.glob("*/statement.md")):
+        if bundle.parent == exclude:
+            continue
+        for shingle in shingles(bundle.read_text(encoding="utf-8")):
+            counts[shingle] = counts.get(shingle, 0) + 1
+    return {shingle for shingle, count in counts.items() if count >= 3}
+
+
 def gate_overlap(source: Path, adapted: Path) -> list[str]:
     before = shingles((source / "statement.md").read_text(encoding="utf-8"))
     after = shingles((adapted / "statement.md").read_text(encoding="utf-8"))
     if not after:
         return ["adapted statement has no prose to compare"]
-    shared = before & after
+    shared = (before & after) - background_shingles(source)
     ratio = len(shared) / len(after)
     if ratio <= OVERLAP_LIMIT:
         return []
@@ -91,6 +108,10 @@ def identifiers(bundle: Path) -> tuple[set[str], set[str]]:
             names.add(invocation[field])
     names.update((invocation.get("entrypoints") or {}).values())
     names.update(method["name"] for method in invocation.get("methods", []))
+    # A SQL bundle's API is its schema: the table and column names live in
+    # one CREATE TABLE string rather than in structured fields.
+    if invocation.get("sql", {}).get("schema"):
+        names.update(re.findall(r"[A-Za-z_][A-Za-z0-9_]*", invocation["sql"]["schema"]))
     parameters = {parameter["name"] for parameter in invocation.get("parameters", [])}
     for method in invocation.get("methods", []):
         parameters.update(parameter["name"] for parameter in method.get("parameters", []))
@@ -184,6 +205,10 @@ def gate_compatibility(source: Path, adapted: Path) -> list[str]:
     before = json.loads((source / "problem.json").read_text(encoding="utf-8"))["invocation"]
     after = json.loads((adapted / "problem.json").read_text(encoding="utf-8"))["invocation"]
     renames: list[tuple[str, str]] = []
+    # SQL renames (table and column names) have no structured field to
+    # derive them from; the ledger's api map is where they are recorded.
+    entry = ledger_entry(adapted.name) or {}
+    renames.extend((old, new) for old, new in (entry.get("api") or {}).items())
     for field in ("class_name", "method", "oracle"):
         if before.get(field) and after.get(field) and before[field] != after[field]:
             renames.append((before[field], after[field]))

@@ -85,6 +85,23 @@
       },
       "kind": "interactive",
       "figures": "none"
+    },
+    {
+      "source": "0534_game-play-analysis-iii",
+      "source_id": 534,
+      "source_title": "Game Play Analysis III",
+      "adapted": "0534_play-log-running-totals",
+      "id": 534,
+      "title": "Play Log Running Totals",
+      "api": {
+        "Activity": "PlayLog",
+        "player_id": "user_id",
+        "event_date": "session_date",
+        "games_played": "rounds",
+        "games_played_so_far": "rounds_so_far"
+      },
+      "kind": "sql",
+      "figures": "none"
     }
   ]
 }
