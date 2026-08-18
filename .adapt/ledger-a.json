@@ -1,0 +1,253 @@
+{
+  "entries": [
+    {
+      "source": "0308_range-sum-query-2d-mutable",
+      "source_id": 308,
+      "source_title": "Range Sum Query 2D - Mutable",
+      "adapted": "0308_updatable-region-sums",
+      "id": 308,
+      "title": "Updatable Region Sums",
+      "api": {
+        "NumMatrix": "UpdatableRegions",
+        "update": "setValue",
+        "sumRegion": "regionSum",
+        "val": "value",
+        "row1": "top",
+        "col1": "left",
+        "row2": "bottom",
+        "col2": "right"
+      },
+      "kind": "design",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0440_k-th-smallest-in-lexicographical-order",
+      "source_id": 440,
+      "source_title": "K-th Smallest in Lexicographical Order",
+      "adapted": "0440_kth-number-in-dictionary-order",
+      "id": 440,
+      "title": "Kth Number in Dictionary Order",
+      "api": {
+        "findKthNumber": "kthDictionaryNumber",
+        "find_kth_number": "kth_dictionary_number"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "0465_optimal-account-balancing",
+      "source_id": 465,
+      "source_title": "Optimal Account Balancing",
+      "adapted": "0465_fewest-debt-settlements",
+      "id": 465,
+      "title": "Fewest Debt Settlements",
+      "api": {
+        "minTransfers": "fewestSettlements",
+        "min_transfers": "fewest_settlements",
+        "transactions": "ledger"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0698_partition-to-k-equal-sum-subsets",
+      "source_id": 698,
+      "source_title": "Partition to K Equal Sum Subsets",
+      "adapted": "0698_split-into-k-equal-sum-groups",
+      "id": 698,
+      "title": "Split Into K Equal-Sum Groups",
+      "api": {
+        "canPartitionKSubsets": "hasKEqualSumGroups",
+        "can_partition_k_subsets": "has_k_equal_sum_groups"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0703_kth-largest-element-in-a-stream",
+      "source_id": 703,
+      "source_title": "Kth Largest Element in a Stream",
+      "adapted": "0703_running-kth-largest",
+      "id": 703,
+      "title": "Running Kth Largest",
+      "api": {
+        "KthLargest": "RunningKthLargest"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0704_binary-search",
+      "source_id": 704,
+      "source_title": "Binary Search",
+      "adapted": "0704_binary-search",
+      "id": 704,
+      "title": "Binary Search",
+      "api": {},
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0768_max-chunks-to-make-sorted-ii",
+      "source_id": 768,
+      "source_title": "Max Chunks To Make Sorted II",
+      "adapted": "0768_maximum-sortable-blocks",
+      "id": 768,
+      "title": "Maximum Sortable Blocks",
+      "api": {
+        "maxChunksToSorted": "maximumSortableBlocks",
+        "max_chunks_to_sorted": "maximum_sortable_blocks"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0772_basic-calculator-iii",
+      "source_id": 772,
+      "source_title": "Basic Calculator III",
+      "adapted": "0772_calculator-with-parentheses-and-precedence",
+      "id": 772,
+      "title": "Calculator With Parentheses And Precedence",
+      "api": {
+        "calculate": "calculateWithParenthesesAndPrecedence"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0820_short-encoding-of-words",
+      "source_id": 820,
+      "source_title": "Short Encoding of Words",
+      "adapted": "0820_packed-word-store",
+      "id": 820,
+      "title": "Packed Word Store",
+      "api": {
+        "minimumLengthEncoding": "packedStoreLength",
+        "minimum_length_encoding": "packed_store_length"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0823_binary-trees-with-factors",
+      "source_id": 823,
+      "source_title": "Binary Trees With Factors",
+      "adapted": "0823_count-product-trees",
+      "id": 823,
+      "title": "Count Product Trees",
+      "api": {
+        "numFactoredBinaryTrees": "countProductTrees",
+        "num_factored_binary_trees": "count_product_trees",
+        "arr": "values"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0827_making-a-large-island",
+      "source_id": 827,
+      "source_title": "Making A Large Island",
+      "adapted": "0827_largest-island-after-one-flip",
+      "id": 827,
+      "title": "Largest Island After One Flip",
+      "api": {
+        "largestIsland": "largestIslandAfterFlip",
+        "largest_island": "largest_island_after_flip"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0875_koko-eating-bananas",
+      "source_id": 875,
+      "source_title": "Koko Eating Bananas",
+      "adapted": "0875_slowest-clearing-rate",
+      "id": 875,
+      "title": "Slowest Clearing Rate",
+      "api": {
+        "minEatingSpeed": "slowestClearingRate",
+        "min_eating_speed": "slowest_clearing_rate",
+        "piles": "batches"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0879_profitable-schemes",
+      "source_id": 879,
+      "source_title": "Profitable Schemes",
+      "adapted": "0879_count-task-selections",
+      "id": 879,
+      "title": "Count Task Selections",
+      "api": {
+        "profitableSchemes": "countTaskSelections",
+        "profitable_schemes": "count_task_selections",
+        "minProfit": "minPayoff",
+        "group": "crew",
+        "profit": "payoff"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0986_interval-list-intersections",
+      "source_id": 986,
+      "source_title": "Interval List Intersections",
+      "adapted": "0986_common-interval-pieces",
+      "id": 986,
+      "title": "Common Interval Pieces",
+      "api": {
+        "intervalIntersection": "commonIntervalPieces",
+        "interval_intersection": "common_interval_pieces",
+        "firstList": "rangesA",
+        "secondList": "rangesB",
+        "first_list": "ranges_a",
+        "second_list": "ranges_b"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0994_rotting-oranges",
+      "source_id": 994,
+      "source_title": "Rotting Oranges",
+      "adapted": "0994_grid-spread-time",
+      "id": 994,
+      "title": "Grid Spread Time",
+      "api": {
+        "orangesRotting": "gridSpreadTime",
+        "oranges_rotting": "grid_spread_time"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1044_longest-duplicate-substring",
+      "source_id": 1044,
+      "source_title": "Longest Duplicate Substring",
+      "adapted": "1044_longest-repeated-segment",
+      "id": 1044,
+      "title": "Longest Repeated Segment",
+      "api": {
+        "longestDupSubstring": "longestRepeatedSegment",
+        "longest_dup_substring": "longest_repeated_segment"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1046_last-stone-weight",
+      "source_id": 1046,
+      "source_title": "Last Stone Weight",
+      "adapted": "1046_greedy-stone-smashing",
+      "id": 1046,
+      "title": "Greedy Stone Smashing",
+      "api": {
+        "lastStoneWeight": "greedyStoneSmashing",
+        "last_stone_weight": "greedy_stone_smashing"
+      },
+      "kind": "function",
+      "figures": "none"
+    }
+  ]
+}

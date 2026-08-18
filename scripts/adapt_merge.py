@@ -1,31 +1,72 @@
 #!/usr/bin/env python3
-"""Merge ledger fragments from .adapt/incoming/ into .adapt/ledger.json.
+"""Merge ledger fragments into the ledger.
 
 Adapting agents work in parallel and never touch the ledger; each writes
-one fragment per finished bundle. This is the only writer of ledger.json.
+one fragment per finished bundle. This is the only writer of the ledger.
 
-    adapt_merge.py [--check]     # --check: report pending, merge nothing
+The remaining work is split between two independent main agents (see
+.adapt/PARTITION.md). Each owns a separate inbox and a separate ledger
+shard, so the two never write the same file and their commits never
+conflict. ledger.json is the frozen base both shards extend.
+
+    adapt_merge.py [--check]              # the base ledger (historical)
+    adapt_merge.py --part a [--check]     # .adapt/incoming/   -> ledger-a.json
+    adapt_merge.py --part b [--check]     # .adapt/incoming-b/ -> ledger-b.json
 """
 from __future__ import annotations
 
-import argparse
 import json
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-INCOMING = ROOT / ".adapt" / "incoming"
-LEDGER = ROOT / ".adapt" / "ledger.json"
+ADAPT = ROOT / ".adapt"
+LEDGER = ADAPT / "ledger.json"
+
+# Part A keeps the original inbox: its agents were already dispatched
+# against that path and renaming it underneath them would strand fragments.
+PARTS = {
+    "a": (ADAPT / "incoming", ADAPT / "ledger-a.json"),
+    "b": (ADAPT / "incoming-b", ADAPT / "ledger-b.json"),
+}
+
+
+def _part() -> str | None:
+    if "--part" not in sys.argv:
+        return None
+    part = sys.argv[sys.argv.index("--part") + 1].lower()
+    if part not in PARTS:
+        raise SystemExit(f"unknown part {part!r}; expected one of {sorted(PARTS)}")
+    return part
+
+
+def _load(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    return json.loads(path.read_text(encoding="utf-8"))["entries"]
 
 
 def main() -> int:
     check = "--check" in sys.argv
-    entries = json.loads(LEDGER.read_text(encoding="utf-8"))["entries"]
-    by_adapted = {entry["adapted"]: entry for entry in entries}
+    part = _part()
+    if part is None:
+        incoming, ledger = ADAPT / "incoming", LEDGER
+        entries = _load(ledger)
+    else:
+        incoming, ledger = PARTS[part]
+        entries = _load(ledger)
 
-    fragments = sorted(INCOMING.glob("*.json")) if INCOMING.is_dir() else []
+    # Base plus every shard: a bundle already recorded anywhere is not new,
+    # whichever part recorded it.
+    known = {e["adapted"]: e for e in _load(LEDGER)}
+    for _, shard in PARTS.values():
+        known.update({e["adapted"]: e for e in _load(shard)})
+    by_adapted = known
+
+    fragments = sorted(incoming.glob("*.json")) if incoming.is_dir() else []
+    label = f"part {part}" if part else "base"
     if check:
-        print(f"{len(fragments)} fragments pending merge, {len(entries)} entries in ledger")
+        print(f"{len(fragments)} fragments pending merge, {len(by_adapted)} adapted overall ({label}: {len(entries)})")
         for fragment in fragments:
             print(f"  {fragment.name}")
         return 0
@@ -46,8 +87,8 @@ def main() -> int:
         fragment.unlink()
 
     if merged or skipped:
-        LEDGER.write_text(json.dumps({"entries": entries}, indent=2) + "\n", encoding="utf-8")
-    print(f"merged {merged}, conflicts {skipped}, ledger now {len(entries)} entries")
+        ledger.write_text(json.dumps({"entries": entries}, indent=2) + "\n", encoding="utf-8")
+    print(f"merged {merged}, conflicts {skipped}, {label} now {len(entries)}, {len(by_adapted)} adapted overall")
     return 1 if skipped else 0
 
 

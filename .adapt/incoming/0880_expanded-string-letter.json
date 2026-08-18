@@ -1,0 +1,14 @@
+{
+  "source": "0880_decoded-string-at-index",
+  "source_id": 880,
+  "source_title": "Decoded String at Index",
+  "adapted": "0880_expanded-string-letter",
+  "id": 880,
+  "title": "Expanded String Letter",
+  "api": {
+    "decodeAtIndex": "expandedStringLetter",
+    "decode_at_index": "expanded_string_letter"
+  },
+  "kind": "function",
+  "figures": "none"
+}

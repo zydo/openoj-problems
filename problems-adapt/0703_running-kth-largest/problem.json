@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": 703,
+  "slug": "running-kth-largest",
+  "title": "Running Kth Largest",
+  "difficulty": "H2",
+  "tags": [
+    "Heap"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "RunningKthLargest",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "k",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        },
+        {
+          "name": "nums",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "add",
+        "parameters": [
+          {
+            "name": "val",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 128
+  }
+}
