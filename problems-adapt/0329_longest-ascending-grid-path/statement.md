@@ -18,7 +18,7 @@ Explanation: The longest path collects 3, 5, 7, 11 in that order, starting
 at the bottom-middle cell and climbing to the top-left corner.
 ```
 
-![The grid with the ascending path 3 → 5 → 7 → 11 shaded and arrowed](figures/example-1.svg)
+![The grid with cells 3, 5, 7 and 11 tinted and joined by arrows climbing from the bottom-middle cell to the top-left corner](figures/example-1.svg)
 
 ### Example 2
 
@@ -30,7 +30,7 @@ top row, then one down. A shorter-looking diagonal shortcut to 13 does not
 exist, since diagonal steps are not allowed.
 ```
 
-![The grid with the ascending path 7 → 9 → 10 → 13 shaded and arrowed; the path bends around the corner without moving diagonally](figures/example-2.svg)
+![The grid with cells 7, 9, 10 and 13 tinted; arrows run across the top row and then step down, turning the corner rather than cutting across it](figures/example-2.svg)
 
 ### Example 3
 

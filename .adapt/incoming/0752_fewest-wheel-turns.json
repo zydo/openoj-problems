@@ -1,0 +1,14 @@
+{
+  "source": "0752_open-the-lock",
+  "source_id": 752,
+  "source_title": "Open the Lock",
+  "adapted": "0752_fewest-wheel-turns",
+  "id": 752,
+  "title": "Fewest Wheel Turns",
+  "api": {
+    "openLock": "fewestTurns",
+    "open_lock": "fewest_turns"
+  },
+  "kind": "function",
+  "figures": "none"
+}

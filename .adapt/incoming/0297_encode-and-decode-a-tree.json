@@ -1,4 +1,0 @@
-{"source": "0297_serialize-and-deserialize-binary-tree", "source_id": 297, "source_title": "Serialize and Deserialize Binary Tree",
- "adapted": "0297_encode-and-decode-a-tree", "id": 297, "title": "Encode and Decode a Tree",
- "api": {"Codec": "TreeCodec"},
- "kind": "design", "figures": "none"}

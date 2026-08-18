@@ -2101,6 +2101,302 @@
       },
       "kind": "design",
       "figures": "none"
+    },
+    {
+      "source": "0124_binary-tree-maximum-path-sum",
+      "source_id": 124,
+      "source_title": "Binary Tree Maximum Path Sum",
+      "adapted": "0124_best-tree-path-sum",
+      "id": 124,
+      "title": "Best Tree Path Sum",
+      "api": {
+        "maxPathSum": "bestPathSum",
+        "max_path_sum": "best_path_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0297_serialize-and-deserialize-binary-tree",
+      "source_id": 297,
+      "source_title": "Serialize and Deserialize Binary Tree",
+      "adapted": "0297_encode-and-decode-a-tree",
+      "id": 297,
+      "title": "Encode and Decode a Tree",
+      "api": {
+        "Codec": "TreeCodec"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0303_range-sum-query-immutable",
+      "source_id": 303,
+      "source_title": "Range Sum Query - Immutable",
+      "adapted": "0303_static-range-sums",
+      "id": 303,
+      "title": "Static Range Sums",
+      "api": {
+        "NumArray": "StaticRanges",
+        "sumRange": "rangeSum"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0327_count-of-range-sum",
+      "source_id": 327,
+      "source_title": "Count of Range Sum",
+      "adapted": "0327_subarray-sums-within-bounds",
+      "id": 327,
+      "title": "Subarray Sums Within Bounds",
+      "api": {
+        "countRangeSum": "countBoundedSums",
+        "count_range_sum": "count_bounded_sums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0329_longest-increasing-path-in-a-matrix",
+      "source_id": 329,
+      "source_title": "Longest Increasing Path in a Matrix",
+      "adapted": "0329_longest-ascending-grid-path",
+      "id": 329,
+      "title": "Longest Ascending Grid Path",
+      "api": {
+        "longestIncreasingPath": "longestAscendingPath",
+        "longest_increasing_path": "longest_ascending_path"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0347_top-k-frequent-elements",
+      "source_id": 347,
+      "source_title": "Top K Frequent Elements",
+      "adapted": "0347_k-most-frequent-values",
+      "id": 347,
+      "title": "K Most Frequent Values",
+      "api": {
+        "topKFrequent": "kMostFrequent",
+        "top_k_frequent": "k_most_frequent"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0354_russian-doll-envelopes",
+      "source_id": 354,
+      "source_title": "Russian Doll Envelopes",
+      "adapted": "0354_longest-chain-of-nested-pairs",
+      "id": 354,
+      "title": "Longest Chain of Nested Pairs",
+      "api": {
+        "maxEnvelopes": "longestNestedChain",
+        "max_envelopes": "longest_nested_chain",
+        "envelopes": "pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0381_insert-delete-getrandom-o1-duplicates-allowed",
+      "source_id": 381,
+      "source_title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+      "adapted": "0381_random-draw-multiset",
+      "id": 381,
+      "title": "Random Draw Multiset",
+      "api": {
+        "RandomizedCollection": "RandomDrawMultiset",
+        "getRandom": "draw"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0382_linked-list-random-node",
+      "source_id": 382,
+      "source_title": "Linked List Random Node",
+      "adapted": "0382_random-node-from-a-list",
+      "id": 382,
+      "title": "Random Node from a List",
+      "api": {
+        "getRandom": "draw"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0384_shuffle-an-array",
+      "source_id": 384,
+      "source_title": "Shuffle an Array",
+      "adapted": "0384_shuffle-an-array",
+      "id": 384,
+      "title": "Shuffle an Array",
+      "api": {},
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0417_pacific-atlantic-water-flow",
+      "source_id": 417,
+      "source_title": "Pacific Atlantic Water Flow",
+      "adapted": "0417_drains-to-both-seas",
+      "id": 417,
+      "title": "Drains To Both Seas",
+      "api": {
+        "pacificAtlantic": "drainsToBothSeas",
+        "pacific_atlantic": "drains_to_both_seas",
+        "pacific": "upperSea",
+        "atlantic": "lowerSea",
+        "pacificBorder": "upperBorder",
+        "atlanticBorder": "lowerBorder",
+        "pacific_border": "upper_border",
+        "atlantic_border": "lower_border"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0456_132-pattern",
+      "source_id": 456,
+      "source_title": "132 Pattern",
+      "adapted": "0456_ascent-then-partial-retreat",
+      "id": 456,
+      "title": "Ascent Then Partial Retreat",
+      "api": {
+        "find132pattern": "ascentretreat"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0460_lfu-cache",
+      "source_id": 460,
+      "source_title": "LFU Cache",
+      "adapted": "0460_frequency-cache",
+      "id": 460,
+      "title": "Frequency Cache",
+      "api": {
+        "LFUCache": "FrequencyCache"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0502_ipo",
+      "source_id": 502,
+      "source_title": "IPO",
+      "adapted": "0502_most-capital-from-k-projects",
+      "id": 502,
+      "title": "Most Capital From k Projects",
+      "api": {
+        "findMaximizedCapital": "mostCapitalFromProjects",
+        "find_maximized_capital": "most_capital_from_projects"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0505_the-maze-ii",
+      "source_id": 505,
+      "source_title": "The Maze II",
+      "adapted": "0505_rolling-ball-maze-distance",
+      "id": 505,
+      "title": "Rolling Ball Maze Distance",
+      "api": {
+        "shortestDistance": "mazeRollDistance",
+        "shortest_distance": "maze_roll_distance"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0542_01-matrix",
+      "source_id": 542,
+      "source_title": "01 Matrix",
+      "adapted": "0542_nearest-zero-distances",
+      "id": 542,
+      "title": "Nearest Zero Distances",
+      "api": {
+        "updateMatrix": "nearestZeroDistances",
+        "update_matrix": "nearest_zero_distances"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0543_diameter-of-binary-tree",
+      "source_id": 543,
+      "source_title": "Diameter of Binary Tree",
+      "adapted": "0543_widest-tree-path",
+      "id": 543,
+      "title": "Widest Tree Path",
+      "api": {
+        "diameterOfBinaryTree": "widestTreePath",
+        "diameter_of_binary_tree": "widest_tree_path"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0588_design-in-memory-file-system",
+      "source_id": 588,
+      "source_title": "Design In-Memory File System",
+      "adapted": "0588_file-tree",
+      "id": 588,
+      "title": "File Tree",
+      "api": {
+        "FileSystem": "FileTree",
+        "addContentToFile": "appendToFile",
+        "readContentFromFile": "readFile"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0600_non-negative-integers-without-consecutive-ones",
+      "source_id": 600,
+      "source_title": "Non-negative Integers without Consecutive Ones",
+      "adapted": "0600_no-adjacent-one-bits",
+      "id": 600,
+      "title": "No Adjacent One-Bits",
+      "api": {
+        "findIntegers": "countNoAdjacentOnes",
+        "find_integers": "count_no_adjacent_ones"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0743_network-delay-time",
+      "source_id": 743,
+      "source_title": "Network Delay Time",
+      "adapted": "0743_last-to-hear-the-signal",
+      "id": 743,
+      "title": "Last To Hear The Signal",
+      "api": {
+        "networkDelayTime": "lastToHear",
+        "network_delay_time": "last_to_hear",
+        "times": "edges"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0746_min-cost-climbing-stairs",
+      "source_id": 746,
+      "source_title": "Min Cost Climbing Stairs",
+      "adapted": "0746_cheapest-stair-climb",
+      "id": 746,
+      "title": "Cheapest Stair Climb",
+      "api": {
+        "minCostClimbingStairs": "cheapestClimb",
+        "min_cost_climbing_stairs": "cheapest_climb"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
