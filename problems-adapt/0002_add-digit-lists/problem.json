@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": 2,
+  "slug": "add-digit-lists",
+  "title": "Add Digit Lists",
+  "difficulty": "H2",
+  "tags": [
+    "Linked List",
+    "Math",
+    "Recursion"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "addDigitLists",
+    "parameters": [
+      {
+        "name": "first",
+        "codec": "list_node",
+        "value_type": {
+          "kind": "linked_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "second",
+        "codec": "list_node",
+        "value_type": {
+          "kind": "linked_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "list_node",
+    "return_type": {
+      "kind": "linked_list",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "addDigitLists",
+      "rust": "add_digit_lists",
+      "typescript": "addDigitLists"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

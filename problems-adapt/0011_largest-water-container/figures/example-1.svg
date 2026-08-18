@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 316" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12">
+  <rect width="570" height="316" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a2026"/>
+    </marker>
+  </defs>
+  <!-- water between indices 1 and 7, up to min(7, 8) = 7 -->
+  <rect x="130" y="86" width="300" height="182" fill="#4169E1" fill-opacity="0.15"/>
+  <line x1="130" y1="86" x2="430" y2="86" stroke="#4169E1" stroke-width="1.6"/>
+  <text x="155" y="188" text-anchor="middle" fill="#4169E1" stroke="none" font-size="21" font-weight="600">42</text>
+  <!-- vertical lines at each index; accent marks the optimal pair (1 and 7) -->
+  <g stroke="#1a2026" stroke-width="2">
+    <line x1="80" y1="268" x2="80" y2="190"/>
+    <line x1="180" y1="268" x2="180" y2="216"/>
+    <line x1="230" y1="268" x2="230" y2="34"/>
+    <line x1="280" y1="268" x2="280" y2="164"/>
+    <line x1="330" y1="268" x2="330" y2="112"/>
+    <line x1="380" y1="268" x2="380" y2="242"/>
+    <line x1="480" y1="268" x2="480" y2="138"/>
+  </g>
+  <g stroke="#4169E1" stroke-width="2.4">
+    <line x1="130" y1="268" x2="130" y2="86"/>
+    <line x1="430" y1="268" x2="430" y2="60"/>
+  </g>
+  <!-- axes with unit ticks -->
+  <g stroke="#1a2026" stroke-width="1.6">
+    <line x1="80" y1="268" x2="528" y2="268" marker-end="url(#arrow)"/>
+    <line x1="80" y1="268" x2="80" y2="24" marker-end="url(#arrow)"/>
+  </g>
+  <g stroke="#1a2026" stroke-width="1.2">
+    <line x1="80" y1="268" x2="80" y2="272"/>
+    <line x1="130" y1="268" x2="130" y2="272"/>
+    <line x1="180" y1="268" x2="180" y2="272"/>
+    <line x1="230" y1="268" x2="230" y2="272"/>
+    <line x1="280" y1="268" x2="280" y2="272"/>
+    <line x1="330" y1="268" x2="330" y2="272"/>
+    <line x1="380" y1="268" x2="380" y2="272"/>
+    <line x1="430" y1="268" x2="430" y2="272"/>
+    <line x1="480" y1="268" x2="480" y2="272"/>
+    <line x1="76" y1="268" x2="80" y2="268"/>
+    <line x1="76" y1="242" x2="80" y2="242"/>
+    <line x1="76" y1="216" x2="80" y2="216"/>
+    <line x1="76" y1="190" x2="80" y2="190"/>
+    <line x1="76" y1="164" x2="80" y2="164"/>
+    <line x1="76" y1="138" x2="80" y2="138"/>
+    <line x1="76" y1="112" x2="80" y2="112"/>
+    <line x1="76" y1="86" x2="80" y2="86"/>
+    <line x1="76" y1="60" x2="80" y2="60"/>
+    <line x1="76" y1="34" x2="80" y2="34"/>
+  </g>
+  <g fill="#5c6b76">
+    <g text-anchor="middle">
+      <text x="80" y="290">0</text>
+      <text x="130" y="290">1</text>
+      <text x="180" y="290">2</text>
+      <text x="230" y="290">3</text>
+      <text x="280" y="290">4</text>
+      <text x="330" y="290">5</text>
+      <text x="380" y="290">6</text>
+      <text x="430" y="290">7</text>
+      <text x="480" y="290">8</text>
+    </g>
+    <g text-anchor="end">
+      <text x="70" y="272">0</text>
+      <text x="70" y="246">1</text>
+      <text x="70" y="220">2</text>
+      <text x="70" y="194">3</text>
+      <text x="70" y="168">4</text>
+      <text x="70" y="142">5</text>
+      <text x="70" y="116">6</text>
+      <text x="70" y="90">7</text>
+      <text x="70" y="64">8</text>
+      <text x="70" y="38">9</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 292" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12">
+  <rect width="290" height="292" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a2026"/>
+    </marker>
+  </defs>
+  <!-- water between indices 0 and 1, up to min(3, 3) = 3 -->
+  <rect x="80" y="34" width="120" height="210" fill="#4169E1" fill-opacity="0.15"/>
+  <line x1="80" y1="34" x2="200" y2="34" stroke="#4169E1" stroke-width="1.6"/>
+  <text x="140" y="150" text-anchor="middle" fill="#4169E1" stroke="none" font-size="21" font-weight="600">3</text>
+  <g stroke="#4169E1" stroke-width="2.4">
+    <line x1="80" y1="244" x2="80" y2="34"/>
+    <line x1="200" y1="244" x2="200" y2="34"/>
+  </g>
+  <!-- axes with unit ticks -->
+  <g stroke="#1a2026" stroke-width="1.6">
+    <line x1="80" y1="244" x2="248" y2="244" marker-end="url(#arrow)"/>
+    <line x1="80" y1="244" x2="80" y2="24" marker-end="url(#arrow)"/>
+  </g>
+  <g stroke="#1a2026" stroke-width="1.2">
+    <line x1="80" y1="244" x2="80" y2="248"/>
+    <line x1="200" y1="244" x2="200" y2="248"/>
+    <line x1="76" y1="244" x2="80" y2="244"/>
+    <line x1="76" y1="174" x2="80" y2="174"/>
+    <line x1="76" y1="104" x2="80" y2="104"/>
+    <line x1="76" y1="34" x2="80" y2="34"/>
+  </g>
+  <g fill="#5c6b76">
+    <g text-anchor="middle">
+      <text x="80" y="266">0</text>
+      <text x="200" y="266">1</text>
+    </g>
+    <g text-anchor="end">
+      <text x="70" y="248">0</text>
+      <text x="70" y="178">1</text>
+      <text x="70" y="108">2</text>
+      <text x="70" y="38">3</text>
+    </g>
+  </g>
+</svg>

@@ -13,6 +13,37 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0002_add-two-numbers",
+      "source_id": 2,
+      "source_title": "Add Two Numbers",
+      "adapted": "0002_add-digit-lists",
+      "id": 2,
+      "title": "Add Digit Lists",
+      "api": {
+        "addTwoNumbers": "addDigitLists",
+        "add_two_numbers": "add_digit_lists",
+        "l1": "first",
+        "l2": "second"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0011_container-with-most-water",
+      "source_id": 11,
+      "source_title": "Container With Most Water",
+      "adapted": "0011_largest-water-container",
+      "id": 11,
+      "title": "Largest Water Container",
+      "api": {
+        "maxArea": "largestWaterArea",
+        "max_area": "largest_water_area",
+        "height": "heights"
+      },
+      "kind": "function",
+      "figures": "regenerated"
     }
   ]
 }

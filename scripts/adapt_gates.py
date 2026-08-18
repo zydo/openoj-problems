@@ -76,7 +76,13 @@ def gate_overlap(source: Path, adapted: Path) -> list[str]:
     ]
 
 
-def identifiers(bundle: Path) -> set[str]:
+def identifiers(bundle: Path) -> tuple[set[str], set[str]]:
+    """(names, parameters) — the two travel under different rules.
+
+    A name like `twoSum` or `Two Sum` is stale wherever it appears. A
+    parameter name is often an ordinary English word (`height`, `target`,
+    `k`), so it only counts where it appears *as an identifier*.
+    """
     problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
     invocation = problem["invocation"]
     names = {problem["title"], problem["slug"]}
@@ -85,14 +91,20 @@ def identifiers(bundle: Path) -> set[str]:
             names.add(invocation[field])
     names.update((invocation.get("entrypoints") or {}).values())
     names.update(method["name"] for method in invocation.get("methods", []))
-    return {name for name in names if name}
+    parameters = {parameter["name"] for parameter in invocation.get("parameters", [])}
+    for method in invocation.get("methods", []):
+        parameters.update(parameter["name"] for parameter in method.get("parameters", []))
+    return {name for name in names if name}, {name for name in parameters if name}
 
 
 def source_identifiers(source: Path, adapted: Path) -> dict[str, list[str]]:
     # Only a *renamed* identifier can be stale. Names the adaptation
     # legitimately kept — the framework's `Solution` wrapper, or a title
     # too generic to rename — are shared by both bundles and mean nothing.
-    names = identifiers(source) - identifiers(adapted)
+    source_names, source_parameters = identifiers(source)
+    adapted_names, adapted_parameters = identifiers(adapted)
+    names = source_names - adapted_names
+    parameters = source_parameters - adapted_parameters
     # Example values are as identifying as names: a new statement beside
     # the source's numbers has not been rewritten.
     statement = (source / "statement.md").read_text(encoding="utf-8")
@@ -100,7 +112,11 @@ def source_identifiers(source: Path, adapted: Path) -> dict[str, list[str]]:
     for block in re.findall(r"```text\n(.*?)```", statement, flags=re.S):
         for array in re.findall(r"\[[^\[\]\n]{4,}\]", block):
             literals.add(array.replace(" ", ""))
-    return {"names": sorted(names), "literals": sorted(literals)}
+    return {
+        "names": sorted(names),
+        "parameters": sorted(parameters),
+        "literals": sorted(literals),
+    }
 
 
 def gate_stale(source: Path, adapted: Path) -> list[str]:
@@ -117,6 +133,19 @@ def gate_stale(source: Path, adapted: Path) -> list[str]:
         for name in wanted["names"]:
             if re.search(rf"\b{re.escape(name)}\b", body):
                 failures.append(f"{path.name}: source identifier {name!r}")
+        # Prose refers to identifiers in backticks; SVG's own attribute
+        # vocabulary (height, width, x, y) collides with parameter names
+        # constantly and carries no identifier at all.
+        if path.suffix == ".md":
+            haystacks = re.findall(r"`[^`]*`", body) + re.findall(r"```.*?```", body, flags=re.S)
+        elif path.suffix == ".svg":
+            haystacks = []
+        else:
+            haystacks = [body]
+        for name in wanted["parameters"]:
+            pattern = re.compile(rf"\b{re.escape(name)}\b")
+            if any(pattern.search(haystack) for haystack in haystacks):
+                failures.append(f"{path.name}: source parameter {name!r}")
         for literal in wanted["literals"]:
             if literal in squashed:
                 failures.append(f"{path.name}: source example {literal}")
