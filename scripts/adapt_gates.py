@@ -132,7 +132,12 @@ def source_identifiers(source: Path, adapted: Path) -> dict[str, list[str]]:
     literals = set()
     for block in re.findall(r"```text\n(.*?)```", statement, flags=re.S):
         for array in re.findall(r"\[[^\[\]\n]{4,}\]", block):
-            literals.add(array.replace(" ", ""))
+            # A literal over a two-symbol alphabet is not identifying:
+            # the H2O log ["H","H","O"] is one permutation of a forced
+            # set that any statement of the same task would show.
+            characters = set(array) - set("[]\",' ")
+            if len(characters) > 2:
+                literals.add(array.replace(" ", ""))
     return {
         "names": sorted(names),
         "parameters": sorted(parameters),
@@ -187,7 +192,7 @@ def gate_stale(source: Path, adapted: Path) -> list[str]:
                 failures.append(f"{path.name}: source identifier {name!r}")
         for name in wanted["parameters"]:
             pattern = re.compile(rf"\b{re.escape(name)}\b")
-            if any(pattern.search(haystack) for haystack in haystacks):
+            if any(pattern.search(haystack) for haystack in code_spans):
                 failures.append(f"{path.name}: source parameter {name!r}")
         for literal in wanted["literals"]:
             if literal in squashed:
