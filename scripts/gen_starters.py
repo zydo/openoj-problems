@@ -494,6 +494,11 @@ INTERACTIVE_ORACLES = {
         "java": "InteractiveOracles.ArrayReader",
         "parameter": "reader",
     },
+    "SequenceReader": {
+        "python": "SequenceReader",
+        "java": "InteractiveOracles.SequenceReader",
+        "parameter": "reader",
+    },
     "InfiniteStream": {
         "python": "InfiniteStream",
         "java": "InteractiveOracles.InfiniteStream",

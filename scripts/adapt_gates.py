@@ -119,6 +119,17 @@ def source_identifiers(source: Path, adapted: Path) -> dict[str, list[str]]:
     }
 
 
+def distinctive(name: str) -> bool:
+    """A name that could only be an identifier, never English prose.
+
+    `twoSum`, `max_area`, `two-sum` and `Two Sum` are distinctive; `search`,
+    `get`, `put` are common words that appear in any technical discussion
+    ("binary search"). Distinctive names are stale wherever they appear;
+    bare lowercase words only count as identifiers.
+    """
+    return bool(re.search(r"[A-Z_\- ]", name))
+
+
 def gate_stale(source: Path, adapted: Path) -> list[str]:
     wanted = source_identifiers(source, adapted)
     failures = []
@@ -130,18 +141,29 @@ def gate_stale(source: Path, adapted: Path) -> list[str]:
         except (UnicodeDecodeError, OSError):
             continue
         squashed = body.replace(" ", "")
-        for name in wanted["names"]:
-            if re.search(rf"\b{re.escape(name)}\b", body):
-                failures.append(f"{path.name}: source identifier {name!r}")
-        # Prose refers to identifiers in backticks; SVG's own attribute
-        # vocabulary (height, width, x, y) collides with parameter names
-        # constantly and carries no identifier at all.
+        # Where an identifier may legitimately appear, per file kind:
+        # markdown refers to code in backticks; code files carry the real
+        # identifiers; SVG never carries solution identifiers at all.
         if path.suffix == ".md":
-            haystacks = re.findall(r"`[^`]*`", body) + re.findall(r"```.*?```", body, flags=re.S)
+            code_spans = re.findall(r"`[^`]*`", body) + re.findall(r"```.*?```", body, flags=re.S)
         elif path.suffix == ".svg":
-            haystacks = []
+            code_spans = []
         else:
-            haystacks = [body]
+            code_spans = [body]
+        for name in wanted["names"]:
+            if distinctive(name):
+                if re.search(rf"\b{re.escape(name)}\b", body):
+                    failures.append(f"{path.name}: source identifier {name!r}")
+            elif path.suffix == ".json":
+                # A bare word is stale in JSON only as an exact value, never
+                # as a fragment of a longer slug.
+                if re.search(rf'"{name}"', body):
+                    failures.append(f"{path.name}: source identifier {name!r}")
+            elif any(re.search(rf"\b{re.escape(name)}\s*\(", span) for span in code_spans):
+                # In code, a bare-word identifier appears at a call or
+                # declaration site — `name(`. Prose in comments ("binary
+                # search") never does.
+                failures.append(f"{path.name}: source identifier {name!r}")
         for name in wanted["parameters"]:
             pattern = re.compile(rf"\b{re.escape(name)}\b")
             if any(pattern.search(haystack) for haystack in haystacks):

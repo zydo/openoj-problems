@@ -71,6 +71,20 @@
       },
       "kind": "function (multi-solution)",
       "figures": "regenerated"
+    },
+    {
+      "source": "0702_search-in-a-sorted-array-of-unknown-size",
+      "source_id": 702,
+      "source_title": "Search in a Sorted Array of Unknown Size",
+      "adapted": "0702_search-hidden-sorted-sequence",
+      "id": 702,
+      "title": "Search a Hidden Sorted Sequence",
+      "api": {
+        "search": "findInSequence",
+        "ArrayReader": "SequenceReader"
+      },
+      "kind": "interactive",
+      "figures": "none"
     }
   ]
 }
