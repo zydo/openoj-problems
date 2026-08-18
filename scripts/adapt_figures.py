@@ -139,7 +139,106 @@ def container_lines(heights: list[int]) -> str:
     return "".join(parts)
 
 
-RENDERERS = {"container-lines": container_lines}
+def kadane_walk(nums: list[int]) -> str:
+    """0053-family: the nums row above the running best-ending-here row,
+    with the restarts marked and the winning span bracketed."""
+    current = best = nums[0]
+    row, restarts = [current], []
+    start = best_start = best_end = 0
+    for index, value in enumerate(nums[1:], 1):
+        if current < 0:
+            current, start = value, index
+            restarts.append(index)
+        else:
+            current += value
+        row.append(current)
+        if current > best:
+            best, best_start, best_end = current, start, index
+
+    cell, gap, x0 = 52, 0, 70
+    # Two annotation rows above the table: consecutive restart labels are
+    # wide enough to collide, and the live 0053 figure does exactly that.
+    footnotes = [
+        "Everywhere else current = previous current + value; a negative running sum",
+        "can only drag down what follows, so it is replaced by a fresh start.",
+        "The answer is the largest current ever seen, not the final one.",
+    ]
+    width = max(580, x0 + cell * len(nums) + 42, max(len(line) for line in footnotes) * 6 + 40)
+    height = 278
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+        'font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">\n'
+        f'  <rect width="{width}" height="{height}" fill="#ffffff"/>\n'
+        f'  <text x="20" y="24" fill="{INK}" font-weight="600">nums = '
+        f'[{",".join(str(v) for v in nums)}] - best subarray sum ending at each index (current)</text>\n'
+    ]
+
+    def x(index: int) -> int:
+        return x0 + (cell + gap) * index
+
+    for label, y_label, y_box, values, fill in (
+        ("nums", 92, 72, nums, "#ffffff"),
+        ("current", 152, 132, row, "#e9eefb"),
+    ):
+        parts.append(
+            f'  <!-- {label} row -->\n'
+            f'  <text x="20" y="{y_label}" fill="#5b6470" font-size="11.5">{label}</text>\n'
+            f'  <g stroke="{INK}" stroke-width="1.4" fill="{fill}">\n    '
+            + "".join(f'<rect x="{x(i)}" y="{y_box}" width="{cell}" height="30"/>' for i in range(len(nums)))
+            + "\n  </g>\n"
+        )
+        if label == "current":
+            parts.append(
+                f'  <rect x="{x(best_end)}" y="{y_box}" width="{cell}" height="30" '
+                f'fill="none" stroke="{ACCENT}" stroke-width="2.6"/>\n'
+            )
+        parts.append(
+            f'  <g fill="{INK}" text-anchor="middle" font-weight="600">\n    '
+            + "".join(
+                f'<text x="{x(i) + cell // 2}" y="{y_label}"'
+                + (f' fill="{ACCENT}"' if label == "current" and i == best_end else "")
+                + f">{v}</text>"
+                for i, v in enumerate(values)
+            )
+            + "\n  </g>\n"
+        )
+
+    if restarts:
+        parts.append("  <!-- restart separators -->\n")
+        for index in restarts:
+            parts.append(
+                f'  <line x1="{x(index)}" y1="66" x2="{x(index)}" y2="168" '
+                f'stroke="{ACCENT}" stroke-width="1.6" stroke-dasharray="4 3"/>\n'
+            )
+        occupied = -1.0
+        for index in restarts:
+            text = f"restart: prefix sum {row[index - 1]} &lt; 0, dropped"
+            start = x(index) + 8
+            # ~5.4px per character at 10.5px; drop to the upper row rather
+            # than overprint the previous label.
+            row_y = 58 if start > occupied else 44
+            if row_y == 58:
+                occupied = start + len(text) * 5.4
+            parts.append(f'  <text x="{start}" y="{row_y}" fill="{ACCENT}" font-size="10.5">{text}</text>\n')
+
+    span = nums[best_start : best_end + 1]
+    parts.append(
+        f"  <!-- best bracket under cells {best_start}..{best_end} -->\n"
+        f'  <path d="M {x(best_start)} 178 L {x(best_start)} 188 L {x(best_end) + cell} 188 '
+        f'L {x(best_end) + cell} 178" fill="none" stroke="{ACCENT}" stroke-width="1.6"/>\n'
+        f'  <text x="{(x(best_start) + x(best_end) + cell) // 2}" y="208" fill="{ACCENT}" '
+        f'text-anchor="middle" font-size="11.5" font-weight="600">best = {best}, '
+        f'the subarray [{", ".join(str(v) for v in span)}]</text>\n'
+        + "".join(
+            f'  <text x="20" y="{230 + 16 * line}" fill="#5b6470" font-size="11.5">{text}</text>\n'
+            for line, text in enumerate(footnotes)
+        )
+        + "</svg>\n"
+    )
+    return "".join(parts)
+
+
+RENDERERS = {"container-lines": container_lines, "kadane-walk": kadane_walk}
 
 
 def main() -> int:

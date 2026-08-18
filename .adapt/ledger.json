@@ -44,6 +44,33 @@
       },
       "kind": "function",
       "figures": "regenerated"
+    },
+    {
+      "source": "0146_lru-cache",
+      "source_id": 146,
+      "source_title": "LRU Cache",
+      "adapted": "0146_recency-cache",
+      "id": 146,
+      "title": "Recency Cache",
+      "api": {
+        "LRUCache": "RecencyCache"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0053_maximum-subarray",
+      "source_id": 53,
+      "source_title": "Maximum Subarray",
+      "adapted": "0053_largest-subarray-sum",
+      "id": 53,
+      "title": "Largest Subarray Sum",
+      "api": {
+        "maxSubArray": "largestSubarraySum",
+        "max_sub_array": "largest_subarray_sum"
+      },
+      "kind": "function (multi-solution)",
+      "figures": "regenerated"
     }
   ]
 }
