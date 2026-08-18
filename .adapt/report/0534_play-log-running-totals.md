@@ -8,7 +8,7 @@
 - Constraints: domain unchanged, presentation rewritten
 - Skeletons regenerated: sql
 - Figures: none
-- Gates: check ✓ verify ✓ (13/13 cases) sandbox **pending** compatibility ✓ stale ✓ overlap ✓
+- Gates: check ✓ verify ✓ (13/13 cases) sandbox ✓ compatibility ✓ stale ✓ overlap ✓
 
 ### Notes for the pilot review
 

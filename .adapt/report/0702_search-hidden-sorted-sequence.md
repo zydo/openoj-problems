@@ -9,7 +9,7 @@
 - Constraints: domain unchanged, presentation rewritten
 - Skeletons regenerated: python3 + java (interactive offers only these)
 - Figures: none
-- Gates: check ✓ verify ✓ (2/2 languages, 22/22 cases) sandbox **pending** compatibility ✓ stale ✓ overlap ✓
+- Gates: check ✓ verify ✓ (2/2 languages, 22/22 cases) sandbox ✓ compatibility ✓ stale ✓ overlap ✓
 - Alias regression: the original 0702 still passes 21/21 in both languages under the old `ArrayReader` name
 
 ### Notes for the pilot review

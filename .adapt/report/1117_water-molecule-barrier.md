@@ -8,7 +8,7 @@
 - Constraints: domain unchanged, presentation rewritten
 - Skeletons regenerated: python3 + java (concurrency offers only these)
 - Figures: none
-- Gates: check ✓ verify ✓ (2/2 languages, 18/18 cases) sandbox **pending** compatibility ✓ stale ✓ overlap ✓ (needed several rewording rounds)
+- Gates: check ✓ verify ✓ (2/2 languages, 18/18 cases) sandbox ✓ compatibility ✓ stale ✓ overlap ✓ (needed several rewording rounds)
 
 ### Notes for the pilot review
 

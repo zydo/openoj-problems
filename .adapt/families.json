@@ -1,0 +1,48 @@
+{
+ "two-sum": {
+  "0167_two-sum-ii-input-array-is-sorted": "Pair Sum In Order"
+ },
+ "reverse": {
+  "0092_reverse-linked-list-ii": "Reverse List Range",
+  "0206_reverse-linked-list": "Reverse Whole List"
+ },
+ "ladder": {
+  "0127_word-ladder": "Shortest Word Bridge",
+  "0126_word-ladder-ii": "All Shortest Word Bridges"
+ },
+ "palin-part": {
+  "0131_palindrome-partitioning": "Palindrome Partitions",
+  "0132_palindrome-partitioning-ii": "Fewest Palindrome Cuts"
+ },
+ "stock": {
+  "0121_best-time-to-buy-and-sell-stock": "Stock Trading, One Sale",
+  "0123_best-time-to-buy-and-sell-stock-iii": "Stock Trading, Two Sales",
+  "0188_best-time-to-buy-and-sell-stock-iv": "Stock Trading, K Sales",
+  "0309_best-time-to-buy-and-sell-stock-with-cooldown": "Stock Trading With Cooldown"
+ },
+ "lone": {
+  "0136_single-number": "Lone Element",
+  "0137_single-number-ii": "Lone Element Among Triples",
+  "0260_single-number-iii": "Two Lone Elements"
+ },
+ "cycle": {
+  "0141_linked-list-cycle": "Cycle Detection In A List",
+  "0142_linked-list-cycle-ii": "Cycle Entry In A List"
+ },
+ "robber": {
+  "0198_house-robber": "Maximum Non-Adjacent Loot",
+  "0213_house-robber-ii": "Maximum Non-Adjacent Loot, Circular"
+ },
+ "course": {
+  "0207_course-schedule": "Course Feasibility",
+  "0210_course-schedule-ii": "Course Order"
+ },
+ "calc": {
+  "0224_basic-calculator": "Calculator With Parentheses",
+  "0227_basic-calculator-ii": "Calculator With Precedence"
+ },
+ "islands": {
+  "0200_number-of-islands": "Count Grid Islands",
+  "0305_number-of-islands-ii": "Count Grid Islands, Land Updates"
+ }
+}
