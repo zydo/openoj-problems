@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 148,
+  "slug": "order-linked-list",
+  "title": "Order Linked List",
+  "difficulty": "H3",
+  "tags": [
+    "Linked List",
+    "Divide and Conquer",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "orderList",
+    "parameters": [
+      {
+        "name": "head",
+        "codec": "list_node",
+        "value_type": {
+          "kind": "linked_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "list_node",
+    "return_type": {
+      "kind": "linked_list",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "orderList",
+      "rust": "order_list",
+      "typescript": "orderList"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,4 @@
+{"source": "0187_repeated-dna-sequences", "source_id": 187, "source_title": "Repeated DNA Sequences",
+ "adapted": "0187_repeated-ten-letter-windows", "id": 187, "title": "Repeated Ten-Letter Windows",
+ "api": {"findRepeatedDnaSequences": "findRepeatedWindows", "find_repeated_dna_sequences": "find_repeated_windows"},
+ "kind": "function", "figures": "none"}

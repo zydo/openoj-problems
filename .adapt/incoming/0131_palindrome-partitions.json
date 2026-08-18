@@ -1,0 +1,13 @@
+{
+  "source": "0131_palindrome-partitioning",
+  "source_id": 131,
+  "source_title": "Palindrome Partitioning",
+  "adapted": "0131_palindrome-partitions",
+  "id": 131,
+  "title": "Palindrome Partitions",
+  "api": {
+    "partition": "palindromePartitions"
+  },
+  "kind": "function",
+  "figures": "none"
+}

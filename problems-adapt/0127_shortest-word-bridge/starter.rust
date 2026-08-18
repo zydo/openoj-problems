@@ -1,0 +1,9 @@
+impl Solution {
+    pub fn shortest_bridge_length(
+        startWord: String,
+        targetWord: String,
+        dictionary: Vec<String>,
+    ) -> i32 {
+        panic!("TODO")
+    }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 37,
+  "slug": "fill-a-sudoku-grid",
+  "title": "Fill A Sudoku Grid",
+  "difficulty": "H3",
+  "tags": [
+    "Matrix",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fillSudoku",
+    "parameters": [
+      {
+        "name": "board",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "string"
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "fillSudoku",
+      "rust": "fill_sudoku",
+      "typescript": "fillSudoku"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

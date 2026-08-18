@@ -645,6 +645,515 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0023_merge-k-sorted-lists",
+      "source_id": 23,
+      "source_title": "Merge k Sorted Lists",
+      "adapted": "0023_splice-k-sorted-lists",
+      "id": 23,
+      "title": "Splice K Sorted Lists",
+      "api": {
+        "mergeKLists": "spliceKSortedLists",
+        "merge_k_lists": "splice_k_sorted_lists"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0167_two-sum-ii-input-array-is-sorted",
+      "source_id": 167,
+      "source_title": "Two Sum II - Input Array Is Sorted",
+      "adapted": "0167_pair-sum-in-order",
+      "id": 167,
+      "title": "Pair Sum In Order",
+      "api": {
+        "twoSum": "pairSumInOrder",
+        "two_sum": "pair_sum_in_order",
+        "numbers": "nums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0022_generate-parentheses",
+      "source_id": 22,
+      "source_title": "Generate Parentheses",
+      "adapted": "0022_all-balanced-bracket-strings",
+      "id": 22,
+      "title": "All Balanced Bracket Strings",
+      "api": {
+        "generateParenthesis": "allBalancedBracketStrings",
+        "generate_parenthesis": "all_balanced_bracket_strings"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0032_longest-valid-parentheses",
+      "source_id": 32,
+      "source_title": "Longest Valid Parentheses",
+      "adapted": "0032_longest-balanced-bracket-run",
+      "id": 32,
+      "title": "Longest Balanced Bracket Run",
+      "api": {
+        "longestValidParentheses": "longestBalancedRun",
+        "longest_valid_parentheses": "longest_balanced_run"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0033_search-in-rotated-sorted-array",
+      "source_id": 33,
+      "source_title": "Search in Rotated Sorted Array",
+      "adapted": "0033_rotated-array-lookup",
+      "id": 33,
+      "title": "Rotated Array Lookup",
+      "api": {
+        "search": "lookup"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0037_sudoku-solver",
+      "source_id": 37,
+      "source_title": "Sudoku Solver",
+      "adapted": "0037_fill-a-sudoku-grid",
+      "id": 37,
+      "title": "Fill A Sudoku Grid",
+      "api": {
+        "solveSudoku": "fillSudoku",
+        "solve_sudoku": "fill_sudoku"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0039_combination-sum",
+      "source_id": 39,
+      "source_title": "Combination Sum",
+      "adapted": "0039_summands-to-a-target",
+      "id": 39,
+      "title": "Summands To A Target",
+      "api": {
+        "combinationSum": "summandsToTarget",
+        "combination_sum": "summands_to_target"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0128_longest-consecutive-sequence",
+      "source_id": 128,
+      "source_title": "Longest Consecutive Sequence",
+      "adapted": "0128_longest-integer-streak",
+      "id": 128,
+      "title": "Longest Integer Streak",
+      "api": {
+        "longestConsecutive": "longestIntegerStreak",
+        "longest_consecutive": "longest_integer_streak"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0134_gas-station",
+      "source_id": 134,
+      "source_title": "Gas Station",
+      "adapted": "0134_circular-route-start",
+      "id": 134,
+      "title": "Circular Route Start",
+      "api": {
+        "canCompleteCircuit": "circularRouteStart",
+        "can_complete_circuit": "circular_route_start",
+        "gas": "supply"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0135_candy",
+      "source_id": 135,
+      "source_title": "Candy",
+      "adapted": "0135_weight-apportionment",
+      "id": 135,
+      "title": "Weight Apportionment",
+      "api": {
+        "candy": "apportion",
+        "ratings": "scores"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0139_word-break",
+      "source_id": 139,
+      "source_title": "Word Break",
+      "adapted": "0139_vocabulary-segmentation",
+      "id": 139,
+      "title": "Vocabulary Segmentation",
+      "api": {
+        "wordBreak": "canSegment",
+        "word_break": "can_segment",
+        "wordDict": "vocabulary"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0198_house-robber",
+      "source_id": 198,
+      "source_title": "House Robber",
+      "adapted": "0198_maximum-non-adjacent-loot",
+      "id": 198,
+      "title": "Maximum Non-Adjacent Loot",
+      "api": {
+        "rob": "maxNonAdjacentLoot"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0206_reverse-linked-list",
+      "source_id": 206,
+      "source_title": "Reverse Linked List",
+      "adapted": "0206_reverse-whole-list",
+      "id": 206,
+      "title": "Reverse Whole List",
+      "api": {
+        "reverseList": "reverseWholeList",
+        "reverse_list": "reverse_whole_list"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0235_lowest-common-ancestor-of-a-binary-search-tree",
+      "source_id": 235,
+      "source_title": "Lowest Common Ancestor of a Binary Search Tree",
+      "adapted": "0235_deepest-shared-ancestor-search-tree",
+      "id": 235,
+      "title": "Deepest Shared Ancestor, Search Tree",
+      "api": {
+        "lowestCommonAncestor": "deepestSharedAncestor",
+        "lowest_common_ancestor": "deepest_shared_ancestor"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0236_lowest-common-ancestor-of-a-binary-tree",
+      "source_id": 236,
+      "source_title": "Lowest Common Ancestor of a Binary Tree",
+      "adapted": "0236_deepest-shared-ancestor-binary-tree",
+      "id": 236,
+      "title": "Deepest Shared Ancestor, Binary Tree",
+      "api": {
+        "lowestCommonAncestor": "deepestSharedAncestor",
+        "lowest_common_ancestor": "deepest_shared_ancestor"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0238_product-of-array-except-self",
+      "source_id": 238,
+      "source_title": "Product of Array Except Self",
+      "adapted": "0238_product-of-the-rest",
+      "id": 238,
+      "title": "Product Of The Rest",
+      "api": {
+        "productExceptSelf": "productOfRest",
+        "product_except_self": "product_of_rest"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0239_sliding-window-maximum",
+      "source_id": 239,
+      "source_title": "Sliding Window Maximum",
+      "adapted": "0239_rolling-window-maxima",
+      "id": 239,
+      "title": "Rolling Window Maxima",
+      "api": {
+        "maxSlidingWindow": "rollingWindowMaxima",
+        "max_sliding_window": "rolling_window_maxima"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0041_first-missing-positive",
+      "source_id": 41,
+      "source_title": "First Missing Positive",
+      "adapted": "0041_smallest-absent-positive",
+      "id": 41,
+      "title": "Smallest Absent Positive",
+      "api": {
+        "firstMissingPositive": "smallestAbsentPositive",
+        "first_missing_positive": "smallest_absent_positive"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0042_trapping-rain-water",
+      "source_id": 42,
+      "source_title": "Trapping Rain Water",
+      "adapted": "0042_water-pooled-between-bars",
+      "id": 42,
+      "title": "Water Pooled Between Bars",
+      "api": {
+        "trap": "pooled"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0049_group-anagrams",
+      "source_id": 49,
+      "source_title": "Group Anagrams",
+      "adapted": "0049_group-words-by-letters",
+      "id": 49,
+      "title": "Group Words By Letters",
+      "api": {
+        "groupAnagrams": "groupByLetters",
+        "group_anagrams": "group_by_letters",
+        "strs": "words"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0141_linked-list-cycle",
+      "source_id": 141,
+      "source_title": "Linked List Cycle",
+      "adapted": "0141_cycle-detection-in-a-list",
+      "id": 141,
+      "title": "Cycle Detection In A List",
+      "api": {
+        "hasCycle": "listContainsCycle",
+        "has_cycle": "list_contains_cycle",
+        "pos": "tailLink"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0142_linked-list-cycle-ii",
+      "source_id": 142,
+      "source_title": "Linked List Cycle II",
+      "adapted": "0142_cycle-entry-in-a-list",
+      "id": 142,
+      "title": "Cycle Entry In A List",
+      "api": {
+        "detectCycle": "listCycleEntry",
+        "detect_cycle": "list_cycle_entry",
+        "pos": "tailLink"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0148_sort-list",
+      "source_id": 148,
+      "source_title": "Sort List",
+      "adapted": "0148_order-linked-list",
+      "id": 148,
+      "title": "Order Linked List",
+      "api": {
+        "sortList": "orderList",
+        "sort_list": "order_list"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0152_maximum-product-subarray",
+      "source_id": 152,
+      "source_title": "Maximum Product Subarray",
+      "adapted": "0152_largest-subarray-product",
+      "id": 152,
+      "title": "Largest Subarray Product",
+      "api": {
+        "maxProduct": "largestSubarrayProduct",
+        "max_product": "largest_subarray_product"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0153_find-minimum-in-rotated-sorted-array",
+      "source_id": 153,
+      "source_title": "Find Minimum in Rotated Sorted Array",
+      "adapted": "0153_rotated-array-minimum",
+      "id": 153,
+      "title": "Rotated Array Minimum",
+      "api": {
+        "findMin": "rotatedArrayMinimum",
+        "find_min": "rotated_array_minimum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0240_search-a-2d-matrix-ii",
+      "source_id": 240,
+      "source_title": "Search a 2D Matrix II",
+      "adapted": "0240_sorted-matrix-membership",
+      "id": 240,
+      "title": "Sorted Matrix Membership",
+      "api": {
+        "searchMatrix": "matrixContains",
+        "search_matrix": "matrix_contains"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0050_powx-n",
+      "source_id": 50,
+      "source_title": "Pow(x, n)",
+      "adapted": "0050_raise-to-a-power",
+      "id": 50,
+      "title": "Raise To A Power",
+      "api": {
+        "myPow": "raiseToPower",
+        "my_pow": "raise_to_power"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0051_n-queens",
+      "source_id": 51,
+      "source_title": "N-Queens",
+      "adapted": "0051_n-queens",
+      "id": 51,
+      "title": "N-Queens",
+      "api": {},
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0055_jump-game",
+      "source_id": 55,
+      "source_title": "Jump Game",
+      "adapted": "0055_reach-the-last-cell",
+      "id": 55,
+      "title": "Reach The Last Cell",
+      "api": {
+        "canJump": "canReachEnd",
+        "can_jump": "can_reach_end",
+        "nums": "steps"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0126_word-ladder-ii",
+      "source_id": 126,
+      "source_title": "Word Ladder II",
+      "adapted": "0126_all-shortest-word-bridges",
+      "id": 126,
+      "title": "All Shortest Word Bridges",
+      "api": {
+        "findLadders": "allShortestBridges",
+        "find_ladders": "all_shortest_bridges",
+        "beginWord": "startWord",
+        "endWord": "targetWord",
+        "wordList": "dictionary"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0127_word-ladder",
+      "source_id": 127,
+      "source_title": "Word Ladder",
+      "adapted": "0127_shortest-word-bridge",
+      "id": 127,
+      "title": "Shortest Word Bridge",
+      "api": {
+        "ladderLength": "shortestBridgeLength",
+        "ladder_length": "shortest_bridge_length",
+        "beginWord": "startWord",
+        "endWord": "targetWord",
+        "wordList": "dictionary"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0162_find-peak-element",
+      "source_id": 162,
+      "source_title": "Find Peak Element",
+      "adapted": "0162_leftmost-local-maximum",
+      "id": 162,
+      "title": "Leftmost Local Maximum",
+      "api": {
+        "findPeakElement": "leftmostLocalMaximum",
+        "find_peak_element": "leftmost_local_maximum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0169_majority-element",
+      "source_id": 169,
+      "source_title": "Majority Element",
+      "adapted": "0169_majority-element",
+      "id": 169,
+      "title": "Majority Element",
+      "api": {},
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0174_dungeon-game",
+      "source_id": 174,
+      "source_title": "Dungeon Game",
+      "adapted": "0174_minimum-start-health",
+      "id": 174,
+      "title": "Minimum Start Health",
+      "api": {
+        "calculateMinimumHP": "minimumStartHealth",
+        "calculate_minimum_hp": "minimum_start_health",
+        "dungeon": "grid"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0253_meeting-rooms-ii",
+      "source_id": 253,
+      "source_title": "Meeting Rooms II",
+      "adapted": "0253_peak-interval-overlap",
+      "id": 253,
+      "title": "Peak Interval Overlap",
+      "api": {
+        "minMeetingRooms": "peakOverlap",
+        "min_meeting_rooms": "peak_overlap"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0261_graph-valid-tree",
+      "source_id": 261,
+      "source_title": "Graph Valid Tree",
+      "adapted": "0261_tree-shaped-graph",
+      "id": 261,
+      "title": "Tree-Shaped Graph",
+      "api": {
+        "validTree": "isTreeShaped",
+        "valid_tree": "is_tree_shaped"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }

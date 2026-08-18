@@ -1,0 +1,14 @@
+{
+  "source": "0264_ugly-number-ii",
+  "source_id": 264,
+  "source_title": "Ugly Number II",
+  "adapted": "0264_nth-five-smooth-number",
+  "id": 264,
+  "title": "Nth Five-Smooth Number",
+  "api": {
+    "nthUglyNumber": "nthFiveSmooth",
+    "nth_ugly_number": "nth_five_smooth"
+  },
+  "kind": "function",
+  "figures": "none"
+}

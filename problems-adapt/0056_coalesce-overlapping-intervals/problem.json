@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": 56,
+  "slug": "coalesce-overlapping-intervals",
+  "title": "Coalesce Overlapping Intervals",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "coalesce",
+    "parameters": [
+      {
+        "name": "intervals",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "coalesce",
+      "rust": "coalesce",
+      "typescript": "coalesce"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source": "0056_merge-intervals",
+  "source_id": 56,
+  "source_title": "Merge Intervals",
+  "adapted": "0056_coalesce-overlapping-intervals",
+  "id": 56,
+  "title": "Coalesce Overlapping Intervals",
+  "api": {
+    "merge": "coalesce"
+  },
+  "kind": "function",
+  "figures": "dropped"
+}

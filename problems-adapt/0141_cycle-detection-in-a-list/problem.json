@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": 141,
+  "slug": "cycle-detection-in-a-list",
+  "title": "Cycle Detection In A List",
+  "difficulty": "H2",
+  "tags": [
+    "Linked List",
+    "Two Pointers",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "listContainsCycle",
+    "parameters": [
+      {
+        "name": "values",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "tailLink",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "listContainsCycle",
+      "rust": "list_contains_cycle",
+      "typescript": "listContainsCycle"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

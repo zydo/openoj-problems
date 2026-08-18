@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 407,
+  "slug": "water-pooled-on-a-grid",
+  "title": "Water Pooled On A Grid",
+  "difficulty": "H4",
+  "tags": [
+    "Heap",
+    "BFS",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "pooledOnGrid",
+    "parameters": [
+      {
+        "name": "heights",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "pooledOnGrid",
+      "rust": "pooled_on_grid",
+      "typescript": "pooledOnGrid"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
