@@ -351,6 +351,11 @@ def runtime_tier(selected: list[str], catalog: dict[str, dict], api: str) -> lis
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--problems", default="all", help="'all' or comma-separated bundle keys")
+    parser.add_argument(
+        "--tree",
+        default="problems",
+        help="which bundle tree to check, relative to the repo root (e.g. problems-adapt)",
+    )
     parser.add_argument("--skip-runtime", action="store_true", help="run the static tier only")
     parser.add_argument(
         "--runtime-only",
@@ -359,6 +364,11 @@ def main() -> None:
     )
     parser.add_argument("--api", default="http://localhost:8080", help="OpenOJ base URL for the runtime tier")
     arguments = parser.parse_args()
+
+    global PROBLEMS
+    PROBLEMS = ROOT / arguments.tree
+    if not PROBLEMS.is_dir():
+        raise SystemExit(f"no bundle tree at {PROBLEMS}")
 
     failures: list[Failure] = []
     if arguments.runtime_only and arguments.skip_runtime:

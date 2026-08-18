@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "source": "0001_two-sum",
+      "source_id": 1,
+      "source_title": "Two Sum",
+      "adapted": "0001_pair-sum",
+      "id": 1,
+      "title": "Pair Sum",
+      "api": {
+        "twoSum": "pairSum",
+        "two_sum": "pair_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    }
+  ]
+}
