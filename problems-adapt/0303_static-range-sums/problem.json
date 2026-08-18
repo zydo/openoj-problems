@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": 303,
+  "slug": "static-range-sums",
+  "title": "Static Range Sums",
+  "difficulty": "H1",
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "StaticRanges",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "nums",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "rangeSum",
+        "parameters": [
+          {
+            "name": "left",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "right",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

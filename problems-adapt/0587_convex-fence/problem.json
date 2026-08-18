@@ -14,7 +14,7 @@
     "method": "fencePoints",
     "parameters": [
       {
-        "name": "positions",
+        "name": "posts",
         "codec": "json",
         "value_type": {
           "kind": "array",

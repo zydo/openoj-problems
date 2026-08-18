@@ -1,25 +1,25 @@
 /**
- * @param {number[][]} positions
+ * @param {number[][]} posts
  * @return {number[][]}
  */
-var fencePoints = function (positions) {
-    const sorted = positions
+var fencePoints = function (posts) {
+    const sorted = posts
         .map((t) => [t[0], t[1]])
         .sort((p, q) => p[0] - q[0] || p[1] - q[1]);
-    const points = [];
+    const unique = [];
     for (const p of sorted) {
-        const last = points[points.length - 1];
+        const last = unique[unique.length - 1];
         if (last && last[0] === p[0] && last[1] === p[1]) continue;
-        points.push(p);
+        unique.push(p);
     }
-    if (points.length <= 1) return points.map((p) => [p[0], p[1]]);
+    if (unique.length <= 1) return unique.map((p) => [p[0], p[1]]);
 
     const cross = (o, a, b) =>
         (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
 
-    // Strict convex hull vertices (cross <= 0 pops collinear interior points).
+    // Strict convex hull vertices (cross <= 0 pops collinear interior unique).
     const lower = [];
-    for (const p of points) {
+    for (const p of unique) {
         while (
             lower.length >= 2 &&
             cross(lower[lower.length - 2], lower[lower.length - 1], p) <= 0
@@ -29,8 +29,8 @@ var fencePoints = function (positions) {
         lower.push(p);
     }
     const upper = [];
-    for (let i = points.length - 1; i >= 0; i--) {
-        const p = points[i];
+    for (let i = unique.length - 1; i >= 0; i--) {
+        const p = unique[i];
         while (
             upper.length >= 2 &&
             cross(upper[upper.length - 2], upper[upper.length - 1], p) <= 0
@@ -45,15 +45,15 @@ var fencePoints = function (positions) {
 
     const result = hull.map((p) => [p[0], p[1]]);
     const n = hull.length;
-    if (n < 2) return points.map((p) => [p[0], p[1]]);
+    if (n < 2) return unique.map((p) => [p[0], p[1]]);
 
     const key = (p) => p[0] + "," + p[1];
     const inResult = new Set(hull.map(key));
-    // Add collinear points lying on hull edges (boundary points not at vertices).
+    // Add collinear unique lying on hull edges (boundary unique not at vertices).
     for (let i = 0; i < n; i++) {
         const a = hull[i];
         const b = hull[(i + 1) % n];
-        for (const p of points) {
+        for (const p of unique) {
             if (
                 inResult.has(key(p)) ||
                 (p[0] === a[0] && p[1] === a[1]) ||

@@ -1,3 +1,3 @@
-func hasAscentThenRetreat(nums []int) bool {
+func ascentretreat(nums []int) bool {
 	panic("TODO")
 }

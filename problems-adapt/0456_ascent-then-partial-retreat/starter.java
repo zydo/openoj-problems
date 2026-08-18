@@ -1,6 +1,6 @@
 class Solution {
 
-    public boolean hasAscentThenRetreat(int[] nums) {
+    public boolean ascentretreat(int[] nums) {
         throw new UnsupportedOperationException("TODO");
     }
 }

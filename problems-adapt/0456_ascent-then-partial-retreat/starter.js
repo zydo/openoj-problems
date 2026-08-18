@@ -2,6 +2,6 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var hasAscentThenRetreat = function (nums) {
+var ascentretreat = function (nums) {
     throw new Error("TODO");
 };

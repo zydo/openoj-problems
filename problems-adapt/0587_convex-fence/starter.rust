@@ -1,5 +1,5 @@
 impl Solution {
-    pub fn fence_points(positions: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    pub fn fence_points(posts: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         panic!("TODO")
     }
 }

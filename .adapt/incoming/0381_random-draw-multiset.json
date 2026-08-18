@@ -1,0 +1,14 @@
+{
+  "source": "0381_insert-delete-getrandom-o1-duplicates-allowed",
+  "source_id": 381,
+  "source_title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+  "adapted": "0381_random-draw-multiset",
+  "id": 381,
+  "title": "Random Draw Multiset",
+  "api": {
+    "RandomizedCollection": "RandomDrawMultiset",
+    "getRandom": "draw"
+  },
+  "kind": "design",
+  "figures": "none"
+}

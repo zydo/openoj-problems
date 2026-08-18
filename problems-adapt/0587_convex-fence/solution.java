@@ -13,8 +13,8 @@ class Solution {
         );
     }
 
-    public int[][] fencePoints(int[][] positions) {
-        int[][] sorted = positions.clone();
+    public int[][] fencePoints(int[][] posts) {
+        int[][] sorted = posts.clone();
         Arrays.sort(sorted, (p, q) ->
             p[0] != q[0]
                 ? Integer.compare(p[0], q[0])
@@ -28,14 +28,14 @@ class Solution {
             }
             pointsList.add(p);
         }
-        int[][] points = pointsList.toArray(new int[0][]);
-        if (points.length <= 1) {
-            return points;
+        int[][] unique = pointsList.toArray(new int[0][]);
+        if (unique.length <= 1) {
+            return unique;
         }
 
-        // Strict convex hull vertices (cross <= 0 pops collinear interior points).
+        // Strict convex hull vertices (cross <= 0 pops collinear interior unique).
         List<int[]> lower = new ArrayList<>();
-        for (int[] p : points) {
+        for (int[] p : unique) {
             while (
                 lower.size() >= 2 &&
                 cross(
@@ -49,8 +49,8 @@ class Solution {
             lower.add(p);
         }
         List<int[]> upper = new ArrayList<>();
-        for (int i = points.length - 1; i >= 0; i--) {
-            int[] p = points[i];
+        for (int i = unique.length - 1; i >= 0; i--) {
+            int[] p = unique[i];
             while (
                 upper.size() >= 2 &&
                 cross(
@@ -69,18 +69,18 @@ class Solution {
         List<int[]> result = new ArrayList<>(hull);
         int n = hull.size();
         if (n < 2) {
-            return points;
+            return unique;
         }
 
         Set<Long> inResult = new HashSet<>();
         for (int[] p : hull) {
             inResult.add(((long) p[0] << 32) ^ p[1]);
         }
-        // Add collinear points lying on hull edges (boundary points not at vertices).
+        // Add collinear unique lying on hull edges (boundary unique not at vertices).
         for (int i = 0; i < n; i++) {
             int[] a = hull.get(i);
             int[] b = hull.get((i + 1) % n);
-            for (int[] p : points) {
+            for (int[] p : unique) {
                 long pk = ((long) p[0] << 32) ^ p[1];
                 if (inResult.contains(pk)) continue;
                 if (cross(a, b, p) == 0) {

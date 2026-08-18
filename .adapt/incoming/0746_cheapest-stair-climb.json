@@ -1,0 +1,14 @@
+{
+  "source": "0746_min-cost-climbing-stairs",
+  "source_id": 746,
+  "source_title": "Min Cost Climbing Stairs",
+  "adapted": "0746_cheapest-stair-climb",
+  "id": 746,
+  "title": "Cheapest Stair Climb",
+  "api": {
+    "minCostClimbingStairs": "cheapestClimb",
+    "min_cost_climbing_stairs": "cheapest_climb"
+  },
+  "kind": "function",
+  "figures": "none"
+}

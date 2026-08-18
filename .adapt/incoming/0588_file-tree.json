@@ -1,0 +1,15 @@
+{
+ "source": "0588_design-in-memory-file-system",
+ "source_id": 588,
+ "source_title": "Design In-Memory File System",
+ "adapted": "0588_file-tree",
+ "id": 588,
+ "title": "File Tree",
+ "api": {
+  "FileSystem": "FileTree",
+  "addContentToFile": "appendToFile",
+  "readContentFromFile": "readFile"
+ },
+ "kind": "design",
+ "figures": "none"
+}

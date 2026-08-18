@@ -2,22 +2,22 @@ from typing import List
 
 
 class Solution:
-    def fencePoints(self, positions: List[List[int]]) -> List[List[int]]:
-        points = sorted(set((x, y) for x, y in positions))
-        if len(points) <= 1:
-            return [list(p) for p in points]
+    def fencePoints(self, posts: List[List[int]]) -> List[List[int]]:
+        posts = sorted(set((x, y) for x, y in posts))
+        if len(posts) <= 1:
+            return [list(p) for p in posts]
 
         def cross(o, a, b):
             return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
 
-        # Strict convex hull vertices (cross <= 0 pops collinear interior points).
+        # Strict convex hull vertices (cross <= 0 pops collinear interior posts).
         lower = []
-        for p in points:
+        for p in posts:
             while len(lower) >= 2 and cross(lower[-2], lower[-1], p) <= 0:
                 lower.pop()
             lower.append(p)
         upper = []
-        for p in reversed(points):
+        for p in reversed(posts):
             while len(upper) >= 2 and cross(upper[-2], upper[-1], p) <= 0:
                 upper.pop()
             upper.append(p)
@@ -26,16 +26,16 @@ class Solution:
         result = list(hull)
         n = len(hull)
         if n < 2:
-            return [list(p) for p in points]
+            return [list(p) for p in posts]
 
         in_result = set(hull)
-        m = len(points)
-        # Add collinear points lying on hull edges (boundary points not at vertices).
+        m = len(posts)
+        # Add collinear posts lying on hull edges (boundary posts not at vertices).
         for i in range(n):
             a = hull[i]
             b = hull[(i + 1) % n]
             for idx in range(m):
-                p = points[idx]
+                p = posts[idx]
                 if p in in_result or p == a or p == b:
                     continue
                 if cross(a, b, p) == 0:

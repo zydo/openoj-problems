@@ -1,4 +1,4 @@
-function hasAscentThenRetreat(nums: number[]): boolean {
+function ascentretreat(nums: number[]): boolean {
     if (nums.length < 3) {
         return false;
     }

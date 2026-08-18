@@ -1,87 +1,84 @@
-# Find Median from Data Stream
+# Running Median
 
 ## Description
 
-The **median** is the middle value in an ordered integer list. If the size of
-the list is even, there is no middle value and the median is the mean of the
-two middle values.
+Numbers arrive one at a time. After each arrival, the **median** of
+everything seen so far must be readable at once: the middle value of the
+collection in sorted order, or — when the count is even — the mean of the
+two values straddling the middle. So for `[4, 6, 9]` the median is `6`, and
+for `[4, 9]` it is `(4 + 9) / 2 = 6.5`.
 
-- For example, for `arr = [2, 3, 4]`, the median is `3`.
-- For example, for `arr = [2, 3]`, the median is `(2 + 3) / 2 = 2.5`.
+Implement the `RunningMedian` class:
 
-Implement the `MedianFinder` class:
+- `RunningMedian()` — start with nothing collected.
+- `void add(int num)` — note that `num` has arrived.
+- `double median()` — return the median of all numbers collected so far.
 
-- `MedianFinder()` Initializes the `MedianFinder` object.
-- `void addNum(int num)` Adds the integer `num` from the data stream to the
-  data structure.
-- `double findMedian()` Returns the median of all elements so far.
+`median()` is only ever called after at least one number has arrived.
 
 ### Example 1
 
 ```text
 Input:
-["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]
-[[], [1], [2], [], [3], []]
-Output: [null, null, null, 1.5, null, 2.0]
+["RunningMedian", "add", "add", "median", "add", "median"]
+[[], [4], [9], [], [6], []]
+Output: [null, null, null, 6.5, null, 6.0]
 Explanation:
-MedianFinder medianFinder = new MedianFinder();
-medianFinder.addNum(1);    // arr = [1]
-medianFinder.addNum(2);    // arr = [1, 2]
-medianFinder.findMedian(); // return 1.5 (i.e., (1 + 2) / 2)
-medianFinder.addNum(3);    // arr = [1, 2, 3]
-medianFinder.findMedian(); // return 2.0
+RunningMedian running = new RunningMedian();
+running.add(4);   // collected [4]
+running.add(9);   // collected [4, 9]
+running.median(); // (4 + 9) / 2 = 6.5
+running.add(6);   // collected [4, 6, 9]
+running.median(); // 6.0 — the middle of three values
 ```
 
 ### Example 2
 
 ```text
 Input:
-["MedianFinder", "addNum", "findMedian", "addNum", "findMedian", "addNum", "findMedian", "addNum", "findMedian"]
-[[], [5], [], [2], [], [7], [], [0], []]
-Output: [null, null, 5.0, null, 3.5, null, 5.0, null, 3.5]
+["RunningMedian", "add", "median", "add", "median", "add", "median", "add", "median"]
+[[], [-3], [], [8], [], [-7], [], [0], []]
+Output: [null, null, -3.0, null, 2.5, null, -3.0, null, -1.5]
 Explanation:
-medianFinder.addNum(5);    // arr = [5]
-medianFinder.findMedian(); // return 5.0
-medianFinder.addNum(2);    // arr = [2, 5]
-medianFinder.findMedian(); // return (2 + 5) / 2 = 3.5
-medianFinder.addNum(7);    // arr = [2, 5, 7]
-medianFinder.findMedian(); // return 5.0
-medianFinder.addNum(0);    // arr = [0, 2, 5, 7]
-medianFinder.findMedian(); // return (2 + 5) / 2 = 3.5
+After -3 the median is -3.0; after 8 it is (-3 + 8) / 2 = 2.5; after -7
+the sorted order is [-7, -3, 8] and the median is -3.0 again; after 0 the
+sorted order is [-7, -3, 0, 8] and the two middle values -3 and 0 average
+to -1.5.
 ```
 
 ### Constraints
 
 - `-10⁵ <= num <= 10⁵`
-- There will be at least one element in the data structure before calling
-  `findMedian`.
-- At most `5 * 10⁴` calls will be made to `addNum` and `findMedian`.
+- At least one number is present whenever `median()` is called.
+- No more than `5 * 10⁴` calls to `add` and `median` in total.
 
 ### Follow-up
 
-If all numbers from the stream were guaranteed to lie in `[0, 100]`, what
-counting structure would answer `findMedian` without any comparisons at all?
-And if only 99% of them did?
+Suppose every arriving number were guaranteed to lie in `[0, 100]`. Which
+counting-based structure could answer `median()` then, with no comparisons
+at all? And what if only 99% of the numbers were so bounded?
 
 ## Hints
 
 ### Hint 1
 
-The median depends only on the middle of the sorted order, so split the
-stream around it: keep the smaller half in one structure and the larger half
-in another. What matters is that the largest of the smaller half and the
-smallest of the larger half are both instantly reachable.
+Nothing outside the middle of the sorted order is ever read, so cut the
+collection in two at the middle and keep one structure per side. The values
+worth making instantly reachable are the boundary pair — the biggest value
+on the low side and the smallest value on the high side.
 
 ### Hint 2
 
-A max-heap exposes the largest of the smaller half and a min-heap the smallest
-of the larger half — exactly the two values an even-length median averages,
-while an odd-length median is the top of whichever half holds the extra
-element. Size the halves to differ by at most one.
+Give the low side a max-heap and the high side a min-heap: each heap then
+surfaces exactly the one value its side may have to contribute. Hold the
+two sizes as equal as parity allows, never differing by more than one, so
+an even count averages both tops and an odd count takes the top of whichever
+side absorbed the extra number.
 
 ### Hint 3
 
-To insert `num`, first push it onto one heap, then move that heap's top across
-to the other, then rebalance if a half grew two elements larger. Routing every
-number through both heaps keeps the ordering invariant true regardless of
-where the new value belongs.
+To place a new number, push it onto one heap, move that heap's top across
+to the other, and if the far side has grown by two, move its top back.
+Sending every number on this round trip keeps both invariants — every
+element of the low side at most every element of the high side, sizes within
+one — true without a single comparison against either top.

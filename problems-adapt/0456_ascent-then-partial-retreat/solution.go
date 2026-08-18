@@ -1,6 +1,6 @@
 import "math"
 
-func hasAscentThenRetreat(nums []int) bool {
+func ascentretreat(nums []int) bool {
 	if len(nums) < 3 {
 		return false
 	}

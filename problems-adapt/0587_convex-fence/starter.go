@@ -1,3 +1,3 @@
-func fencePoints(positions [][]int) [][]int {
+func fencePoints(posts [][]int) [][]int {
 	panic("TODO")
 }

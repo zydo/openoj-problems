@@ -1,0 +1,13 @@
+{
+  "source": "0382_linked-list-random-node",
+  "source_id": 382,
+  "source_title": "Linked List Random Node",
+  "adapted": "0382_random-node-from-a-list",
+  "id": 382,
+  "title": "Random Node from a List",
+  "api": {
+    "getRandom": "draw"
+  },
+  "kind": "design",
+  "figures": "none"
+}

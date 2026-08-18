@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var hasAscentThenRetreat = function (nums) {
+var ascentretreat = function (nums) {
     if (nums.length < 3) {
         return false;
     }

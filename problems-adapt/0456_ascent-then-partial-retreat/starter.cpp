@@ -1,4 +1,4 @@
 class Solution {
   public:
-    bool hasAscentThenRetreat(vector<int> &nums) { throw logic_error("TODO"); }
+    bool ascentretreat(vector<int> &nums) { throw logic_error("TODO"); }
 };

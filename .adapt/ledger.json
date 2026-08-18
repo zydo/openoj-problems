@@ -1486,7 +1486,7 @@
       "api": {
         "outerTrees": "fencePoints",
         "outer_trees": "fence_points",
-        "trees": "points"
+        "trees": "posts"
       },
       "kind": "function",
       "figures": "dropped"
@@ -2016,6 +2016,90 @@
         "min_capability": "min_non_adjacent_loot_cap"
       },
       "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0305_number-of-islands-ii",
+      "source_id": 305,
+      "source_title": "Number of Islands II",
+      "adapted": "0305_count-grid-islands-land-updates",
+      "id": 305,
+      "title": "Count Grid Islands, Land Updates",
+      "api": {
+        "numIslands2": "countGridIslandsPerUpdate",
+        "num_islands2": "count_grid_islands_per_update"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0310_minimum-height-trees",
+      "source_id": 310,
+      "source_title": "Minimum Height Trees",
+      "adapted": "0310_tree-centroids",
+      "id": 310,
+      "title": "Tree Centroids",
+      "api": {
+        "findMinHeightTrees": "treeCentroids",
+        "find_min_height_trees": "tree_centroids"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0325_maximum-size-subarray-sum-equals-k",
+      "source_id": 325,
+      "source_title": "Maximum Size Subarray Sum Equals k",
+      "adapted": "0325_longest-subarray-with-sum-k",
+      "id": 325,
+      "title": "Longest Subarray With Sum k",
+      "api": {
+        "maxSubArrayLen": "longestSubarrayWithSum",
+        "max_sub_array_len": "longest_subarray_with_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0540_single-element-in-a-sorted-array",
+      "source_id": 540,
+      "source_title": "Single Element in a Sorted Array",
+      "adapted": "0540_unpaired-value-in-a-sorted-array",
+      "id": 540,
+      "title": "Unpaired Value In A Sorted Array",
+      "api": {
+        "singleNonDuplicate": "unpairedValue",
+        "single_non_duplicate": "unpaired_value"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0295_find-median-from-data-stream",
+      "source_id": 295,
+      "source_title": "Find Median from Data Stream",
+      "adapted": "0295_running-median",
+      "id": 295,
+      "title": "Running Median",
+      "api": {
+        "MedianFinder": "RunningMedian",
+        "addNum": "add",
+        "findMedian": "median"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0497_random-point-in-non-overlapping-rectangles",
+      "source_id": 497,
+      "source_title": "Random Point in Non-overlapping Rectangles",
+      "adapted": "0497_uniform-point-from-rectangles",
+      "id": 497,
+      "title": "Uniform Point From Rectangles",
+      "api": {
+        "pick": "drawPoint"
+      },
+      "kind": "design",
       "figures": "none"
     }
   ]

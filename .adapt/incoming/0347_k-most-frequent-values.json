@@ -1,0 +1,14 @@
+{
+  "source": "0347_top-k-frequent-elements",
+  "source_id": 347,
+  "source_title": "Top K Frequent Elements",
+  "adapted": "0347_k-most-frequent-values",
+  "id": 347,
+  "title": "K Most Frequent Values",
+  "api": {
+    "topKFrequent": "kMostFrequent",
+    "top_k_frequent": "k_most_frequent"
+  },
+  "kind": "function",
+  "figures": "none"
+}

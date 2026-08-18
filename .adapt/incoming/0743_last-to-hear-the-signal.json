@@ -1,0 +1,15 @@
+{
+  "source": "0743_network-delay-time",
+  "source_id": 743,
+  "source_title": "Network Delay Time",
+  "adapted": "0743_last-to-hear-the-signal",
+  "id": 743,
+  "title": "Last To Hear The Signal",
+  "api": {
+    "networkDelayTime": "lastToHear",
+    "network_delay_time": "last_to_hear",
+    "times": "edges"
+  },
+  "kind": "function",
+  "figures": "labels updated"
+}

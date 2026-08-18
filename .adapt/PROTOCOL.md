@@ -21,6 +21,13 @@ For one source bundle `problems/<key>`:
    Sibling problems (near-twins sharing a family) must keep recognizably
    related titles — for batch work the family titles are pre-decided in
    your instructions; do not improvise them.
+   **Before renaming a parameter, grep the source solutions for the
+   candidate name as an identifier.** A source solution's own local
+   variables survive the rename untouched, so renaming `trees` to `points`
+   when a source solution already declares a local `points` makes the
+   compatibility gate unfixable — the staged source solution can never
+   compile (0587 cost an hour to this exact trap). Pick a name unused in
+   every source solution.
 4. **Choose the examples first, figures second.** Two or three examples,
    meaningfully different shapes, followable by eye. If a figure exists,
    prefer an example that preserves the drawn structure (same lengths /

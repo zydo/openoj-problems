@@ -1,0 +1,11 @@
+{
+ "source": "0502_ipo",
+ "source_id": 502,
+ "source_title": "IPO",
+ "adapted": "0502_most-capital-from-k-projects",
+ "id": 502,
+ "title": "Most Capital From k Projects",
+ "api": {"findMaximizedCapital": "mostCapitalFromProjects", "find_maximized_capital": "most_capital_from_projects"},
+ "kind": "function",
+ "figures": "none"
+}

@@ -1,5 +1,5 @@
 impl Solution {
-    pub fn has_ascent_then_retreat(nums: Vec<i32>) -> bool {
+    pub fn ascentretreat(nums: Vec<i32>) -> bool {
         panic!("TODO")
     }
 }

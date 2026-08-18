@@ -2,7 +2,7 @@ from typing import List, Optional
 
 
 class Solution:
-    def hasAscentThenRetreat(self, nums: List[int]) -> bool:
+    def ascentretreat(self, nums: List[int]) -> bool:
         if len(nums) < 3:
             return False
         stack = []

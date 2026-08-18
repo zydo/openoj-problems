@@ -1,6 +1,6 @@
 class Solution {
 
-    public int[][] fencePoints(int[][] positions) {
+    public int[][] fencePoints(int[][] posts) {
         throw new UnsupportedOperationException("TODO");
     }
 }

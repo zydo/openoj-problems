@@ -1,0 +1,4 @@
+{"source": "0303_range-sum-query-immutable", "source_id": 303, "source_title": "Range Sum Query - Immutable",
+ "adapted": "0303_static-range-sums", "id": 303, "title": "Static Range Sums",
+ "api": {"NumArray": "StaticRanges", "sumRange": "rangeSum"},
+ "kind": "design", "figures": "none"}

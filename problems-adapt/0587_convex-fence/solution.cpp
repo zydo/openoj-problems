@@ -13,18 +13,18 @@ class Solution {
     }
 
   public:
-    vector<vector<int>> fencePoints(vector<vector<int>> &positions) {
-        vector<pair<int, int>> points;
-        for (auto &t : positions)
-            points.push_back({t[0], t[1]});
-        sort(points.begin(), points.end());
-        points.erase(unique(points.begin(), points.end()), points.end());
-        if (points.size() <= 1)
-            return toVec(points);
+    vector<vector<int>> fencePoints(vector<vector<int>> &posts) {
+        vector<pair<int, int>> unique;
+        for (auto &t : unique)
+            unique.push_back({t[0], t[1]});
+        sort(unique.begin(), unique.end());
+        unique.erase(unique(unique.begin(), unique.end()), unique.end());
+        if (unique.size() <= 1)
+            return toVec(unique);
 
-        // Strict convex hull vertices (cross <= 0 pops collinear interior points).
+        // Strict convex hull vertices (cross <= 0 pops collinear interior unique).
         vector<pair<int, int>> lower;
-        for (auto &p : points) {
+        for (auto &p : unique) {
             while (lower.size() >= 2 &&
                    cross(lower[lower.size() - 2], lower[lower.size() - 1], p) <= 0) {
                 lower.pop_back();
@@ -32,8 +32,8 @@ class Solution {
             lower.push_back(p);
         }
         vector<pair<int, int>> upper;
-        for (int i = (int)points.size() - 1; i >= 0; i--) {
-            const pair<int, int> &p = points[i];
+        for (int i = (int)unique.size() - 1; i >= 0; i--) {
+            const pair<int, int> &p = unique[i];
             while (upper.size() >= 2 &&
                    cross(upper[upper.size() - 2], upper[upper.size() - 1], p) <= 0) {
                 upper.pop_back();
@@ -46,14 +46,14 @@ class Solution {
         vector<pair<int, int>> result = hull;
         size_t n = hull.size();
         if (n < 2)
-            return toVec(points);
+            return toVec(unique);
 
         set<pair<int, int>> inResult(hull.begin(), hull.end());
-        // Add collinear points lying on hull edges (boundary points not at vertices).
+        // Add collinear unique lying on hull edges (boundary unique not at vertices).
         for (size_t i = 0; i < n; i++) {
             const pair<int, int> &a = hull[i];
             const pair<int, int> &b = hull[(i + 1) % n];
-            for (auto &p : points) {
+            for (auto &p : unique) {
                 if (inResult.count(p))
                     continue;
                 if (cross(a, b, p) == 0) {

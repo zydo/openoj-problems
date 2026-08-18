@@ -1,3 +1,3 @@
-function fencePoints(positions: number[][]): number[][] {
+function fencePoints(posts: number[][]): number[][] {
     throw new Error("TODO");
 }

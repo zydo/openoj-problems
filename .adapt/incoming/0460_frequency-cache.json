@@ -1,0 +1,13 @@
+{
+ "source": "0460_lfu-cache",
+ "source_id": 460,
+ "source_title": "LFU Cache",
+ "adapted": "0460_frequency-cache",
+ "id": 460,
+ "title": "Frequency Cache",
+ "api": {
+  "LFUCache": "FrequencyCache"
+ },
+ "kind": "design",
+ "figures": "none"
+}

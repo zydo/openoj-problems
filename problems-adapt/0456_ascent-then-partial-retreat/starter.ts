@@ -1,3 +1,3 @@
-function hasAscentThenRetreat(nums: number[]): boolean {
+function ascentretreat(nums: number[]): boolean {
     throw new Error("TODO");
 }

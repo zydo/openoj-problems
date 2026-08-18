@@ -1,0 +1,14 @@
+{
+  "source": "0542_01-matrix",
+  "source_id": 542,
+  "source_title": "01 Matrix",
+  "adapted": "0542_nearest-zero-distances",
+  "id": 542,
+  "title": "Nearest Zero Distances",
+  "api": {
+    "updateMatrix": "nearestZeroDistances",
+    "update_matrix": "nearest_zero_distances"
+  },
+  "kind": "function",
+  "figures": "dropped"
+}

@@ -1,0 +1,14 @@
+{
+ "source": "0600_non-negative-integers-without-consecutive-ones",
+ "source_id": 600,
+ "source_title": "Non-negative Integers without Consecutive Ones",
+ "adapted": "0600_no-adjacent-one-bits",
+ "id": 600,
+ "title": "No Adjacent One-Bits",
+ "api": {
+  "findIntegers": "countNoAdjacentOnes",
+  "find_integers": "count_no_adjacent_ones"
+ },
+ "kind": "function",
+ "figures": "none"
+}

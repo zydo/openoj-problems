@@ -1,6 +1,6 @@
 class Solution {
   public:
-    bool hasAscentThenRetreat(vector<int> &nums) {
+    bool ascentretreat(vector<int> &nums) {
         if (nums.size() < 3) {
             return false;
         }

@@ -1,11 +1,35 @@
-# Solutions — Single Element in a Sorted Array
+# Solutions — Unpaired Value In A Sorted Array
 
-## Binary Search on Even Indices
+## Binary Search Over Pair Boundaries
 
-In the array before the single element appears, every pair is intact, so each pair's first occurrence sits at an even index; after the single element, the pairing is shifted by one and every pair starts at an odd index. This parity break is monotone — intact-then-broken, never reverting — which is exactly the invariant binary search needs. The search therefore only ever examines even indices: whenever the midpoint `mid` lands on an odd index it is shifted back by one, so `mid` and `mid + 1` always form a candidate pair starting on an even slot.
+Walk mentally through the array and the pairs line up like this: left of
+the unpaired value, each pair fills an even slot and the odd slot after it;
+right of the unpaired value, the whole pairing has slipped one slot, so
+each pair fills an odd slot and the even slot after it. The unpaired value
+is exactly where the slip happens, and since the layout goes
+intact-then-slipped and never back, the slip is a monotone boundary — the
+one thing binary search is built to find.
 
-The comparison decides which side holds the answer. If `nums[mid] == nums[mid + 1]`, that pair is intact, so the single element must lie strictly to the right and the search moves `lo = mid + 2`; otherwise the pair is already broken (either `mid` is the single element or the break is earlier), so the answer is at `mid` or to its left and `hi = mid`. The bounds close without ever stepping past a valid index: while `lo < hi`, the even-adjusted `mid` stays at most `n - 2`, so `mid + 1` is always in range.
+The search therefore only ever inspects even positions: whenever the
+midpoint comes out odd it is stepped back one, so `mid` and `mid + 1`
+always describe a candidate pair starting on an even slot. The comparison
+then decides a side. When `nums[mid] == nums[mid + 1]` the candidate pair
+is intact, the slip is strictly right of `mid + 1`, and the search sets
+`lo = mid + 2`. When they differ, that pair is already broken — either the
+unpaired value sits at `mid`, or the slip happened earlier — so the answer
+is at `mid` or left of it and `hi = mid`.
 
-The loop ends when `lo == hi`, and that surviving index is the single element — `hi` only ever settles onto a candidate left behind by a broken pair or by exhaustion of the right side, and a one-element array resolves trivially with the loop never running. The search halves the range each step and keeps only two indices, meeting the logarithmic-time, constant-space requirement without touching the input.
+Tracing `nums = [5,5,9,13,13,16,16,22,22]`: `lo = 0, hi = 8` picks
+`mid = 4`, where `13 != 16`, so `hi = 4`; then `mid = 2`, where
+`9 != 13`, so `hi = 2`; then `mid = 1` snaps to `0`, where `5 == 5`, so
+`lo = 2`. The bounds meet at index 2 and `nums[2] = 9`.
+
+The index arithmetic never leaves the array: while `lo < hi` the
+even-snapped `mid` stays at most `n - 2`, so `mid + 1` is always valid. A
+one-element array never enters the loop and returns itself, and the loop's
+surviving index is the answer because `hi` only settles where a pair was
+found broken or the right side ran out. Halving the range each step with
+two indices of state meets the logarithmic-time, constant-space
+requirement without modifying the input.
 
 **Complexity:** `O(log n)` time, `O(1)` space.

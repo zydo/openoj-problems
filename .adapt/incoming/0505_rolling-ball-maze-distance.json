@@ -1,0 +1,11 @@
+{
+ "source": "0505_the-maze-ii",
+ "source_id": 505,
+ "source_title": "The Maze II",
+ "adapted": "0505_rolling-ball-maze-distance",
+ "id": 505,
+ "title": "Rolling Ball Maze Distance",
+ "api": {"shortestDistance": "mazeRollDistance", "shortest_distance": "maze_roll_distance"},
+ "kind": "function",
+ "figures": "dropped"
+}

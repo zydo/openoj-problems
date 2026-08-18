@@ -14,7 +14,7 @@
   "invocation": {
     "type": "function",
     "class_name": "Solution",
-    "method": "hasAscentThenRetreat",
+    "method": "ascentretreat",
     "parameters": [
       {
         "name": "nums",
@@ -33,9 +33,9 @@
       "kind": "boolean"
     },
     "entrypoints": {
-      "go": "hasAscentThenRetreat",
-      "rust": "has_ascent_then_retreat",
-      "typescript": "hasAscentThenRetreat"
+      "go": "ascentretreat",
+      "rust": "ascentretreat",
+      "typescript": "ascentretreat"
     },
     "comparison": "exact"
   },
