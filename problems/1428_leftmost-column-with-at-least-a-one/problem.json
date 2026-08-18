@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": 1428,
+  "slug": "leftmost-column-with-at-least-a-one",
+  "title": "Leftmost Column with at Least a One",
+  "difficulty": "H2",
+  "tags": [
+    "Binary Search",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "leftMostColumnWithOne",
+    "oracle": "BinaryMatrix",
+    "oracle_methods": [
+      {
+        "name": "get",
+        "parameters": [
+          {
+            "name": "row",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "col",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "dimensions",
+        "parameters": [],
+        "return_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "query_limit": 1000,
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

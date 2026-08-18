@@ -380,31 +380,84 @@ def _generate_design(invocation: dict, language: str) -> str:
     return "".join(chunks)
 
 
+# Interactive oracle table: the python type is injected into the submission
+# module by runner/python_harness.py; the java type is the judge-classpath
+# class (GridMaster is top-level, later oracles nest in InteractiveOracles).
+# "parameter" names the oracle argument; oracles whose LeetCode signature
+# takes extra data (wordlist / target / pattern) declare it in
+# invocation["parameters"], rendered after the oracle argument.
+INTERACTIVE_ORACLES = {
+    "GridMaster": {"python": "GridMaster", "java": "GridMaster", "parameter": "master"},
+    "Robot": {"python": "Robot", "java": "InteractiveOracles.Robot", "parameter": "robot"},
+    "Master": {"python": "Master", "java": "InteractiveOracles.Master", "parameter": "master"},
+    "MountainArray": {
+        "python": "MountainArray",
+        "java": "InteractiveOracles.MountainArray",
+        "parameter": "mountainArr",
+    },
+    "BinaryMatrix": {
+        "python": "BinaryMatrix",
+        "java": "InteractiveOracles.BinaryMatrix",
+        "parameter": "binaryMatrix",
+    },
+    "ArrayReader": {
+        "python": "ArrayReader",
+        "java": "InteractiveOracles.ArrayReader",
+        "parameter": "reader",
+    },
+    "InfiniteStream": {
+        "python": "InfiniteStream",
+        "java": "InteractiveOracles.InfiniteStream",
+        "parameter": "stream",
+    },
+}
+
+
 def _generate_interactive(invocation: dict, language: str) -> str:
     """Interactive problems: the solution method receives an oracle object
-    (the judge constructs it from the case data). python3 + java only.
+    (the judge constructs it from the case data), plus any auxiliary
+    arguments declared in invocation["parameters"]. python3 + java only.
     Schema: {"type": "interactive", "class_name", "method", "oracle":
     "GridMaster", "oracle_methods": [{name, parameters, return_type?}],
-    "return_type", "query_limit"?}."""
+    "parameters": [...auxiliary args...], "return_type", "query_limit"?}.
+    A void method declares {"kind": "void"}."""
     if language not in ("python3", "java"):
         raise ValueError(f"Interactive problems support python3 and java, not {language}")
-    if invocation.get("oracle") != "GridMaster":
-        raise ValueError(f"Unsupported interactive oracle: {invocation.get('oracle')}")
+    oracle = invocation.get("oracle")
+    if oracle not in INTERACTIVE_ORACLES:
+        raise ValueError(f"Unsupported interactive oracle: {oracle}")
+    types = INTERACTIVE_ORACLES[oracle]
     class_name = invocation["class_name"]
     method = invocation["method"]
+    auxiliary = [
+        (parameter["name"], parameter["value_type"])
+        for parameter in invocation.get("parameters", [])
+    ]
     returns = invocation.get("return_type") or {"kind": "integer", "bits": 32}
+    if returns.get("kind") == "void":
+        python_return, java_return = "None", "void"
+    else:
+        python_return, java_return = python_type(returns), java_type(returns)
 
     if language == "python3":
+        oracle_argument = f"{types['parameter']}: {types['python']}"
+        signature = ", ".join(
+            ["self", oracle_argument, *(f"{name}: {python_type(spec)}" for name, spec in auxiliary)]
+        )
         blocks = ["from typing import List, Optional\n\n\n"]
         blocks.append(f"class {class_name}:\n")
-        blocks.append(f"    def {method}(self, master: GridMaster) -> {python_type(returns)}:\n")
+        blocks.append(f"    def {method}({signature}) -> {python_return}:\n")
         blocks.append('        raise NotImplementedError("TODO")\n')
         return "".join(blocks)
 
     # java — the oracle API is documented in the statement; the starter's
-    # signature references the GridMaster type from the judge classpath.
+    # signature references the oracle type from the judge classpath.
+    oracle_argument = f"{types['java']} {types['parameter']}"
+    signature = ", ".join(
+        [oracle_argument, *(f"{java_type(spec)} {name}" for name, spec in auxiliary)]
+    )
     chunks = [f"class {class_name} {{\n"]
-    chunks.append(f"    public {java_type(returns)} {method}(GridMaster master) {{\n")
+    chunks.append(f"    public {java_return} {method}({signature}) {{\n")
     chunks.append('        throw new UnsupportedOperationException("TODO");\n')
     chunks.append("    }\n}\n")
     return "".join(chunks)

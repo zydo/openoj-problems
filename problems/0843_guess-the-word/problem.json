@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": 843,
+  "slug": "guess-the-word",
+  "title": "Guess the Word",
+  "difficulty": "H3",
+  "tags": [
+    "Randomized",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "findSecretWord",
+    "oracle": "Master",
+    "oracle_methods": [
+      {
+        "name": "guess",
+        "parameters": [
+          {
+            "name": "word",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "wordlist",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "query_limit": 10,
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

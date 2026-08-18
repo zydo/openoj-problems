@@ -197,7 +197,8 @@ def check_bundle(bundle: Path) -> list[Failure]:
         for path in bundle.iterdir()
         if path.name.startswith("solution") and path.name != "solutions.md"
     )
-    solution_pattern = re.compile(r"^solution(?:_[a-z0-9]+)?\.([a-z0-9]+)$")
+    # variant names may themselves contain underscores (solution_bellman_ford.py)
+    solution_pattern = re.compile(r"^solution(?:_[a-z0-9]+)*\.([a-z0-9]+)$")
     solutions: dict[str, set[str]] = {}
     for name in solution_names:
         matched = solution_pattern.match(name)

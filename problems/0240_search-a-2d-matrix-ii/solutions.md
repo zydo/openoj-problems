@@ -11,3 +11,11 @@ Starting at the top-right, if the current value exceeds the target, everything b
 The path is a monotone staircase of at most `m + n - 1` steps — compare with binary-searching all `m` rows at `O(m log n)`, which is strictly worse whenever the matrix is roughly square. An empty matrix or empty rows are guarded up front; the search itself needs only two index variables.
 
 **Complexity:** `O(m + n)` time, `O(1)` space.
+
+## Row-by-Row Binary Search
+
+Ignore the column ordering for a moment and the matrix is just `m` independent sorted arrays, each searchable in `O(log n)`: keep the classic two-bound window `[lo, hi]`, push `lo` past everything smaller than the target, clamp `hi` down onto everything at least as large, and when the bounds meet, `lo` sits on the leftmost element `>= target` — one equality check decides the row.
+
+The sorted columns are then used not to guide a search but to end the scan: reading rows top to bottom, the first element of each row is a lower bound for the entire submatrix below it, so the first time a row opens above the target, every remaining row starts even larger and cannot contain it — the scan stops and reports absence. Empty matrix or empty rows are guarded up front, exactly as in the staircase variant.
+
+**Complexity:** `O(m log n)` time, `O(1)` space — strictly worse than the staircase's `O(m + n)` on roughly square matrices, but the better trade when there are few, very wide rows.
