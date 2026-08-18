@@ -1,0 +1,15 @@
+{
+  "source": "0167_two-sum-ii-input-array-is-sorted",
+  "source_id": 167,
+  "source_title": "Two Sum II - Input Array Is Sorted",
+  "adapted": "0167_pair-sum-in-order",
+  "id": 167,
+  "title": "Pair Sum In Order",
+  "api": {
+    "twoSum": "pairSumInOrder",
+    "two_sum": "pair_sum_in_order",
+    "numbers": "nums"
+  },
+  "kind": "function",
+  "figures": "none"
+}

@@ -1,17 +1,4 @@
 [
- "0201_bitwise-and-of-numbers-range",
- "0202_happy-number",
- "0204_count-primes",
- "0209_minimum-size-subarray-sum",
- "0212_word-search-ii",
- "0214_shortest-palindrome",
- "0215_kth-largest-element-in-an-array",
- "0217_contains-duplicate",
- "0218_the-skyline-problem",
- "0221_maximal-square",
- "0222_count-complete-tree-nodes",
- "0230_kth-smallest-element-in-a-bst",
- "0233_number-of-digit-one",
  "0235_lowest-common-ancestor-of-a-binary-search-tree",
  "0236_lowest-common-ancestor-of-a-binary-tree",
  "0238_product-of-array-except-self",
@@ -20,5 +7,10 @@
  "0253_meeting-rooms-ii",
  "0261_graph-valid-tree",
  "0264_ugly-number-ii",
- "0268_missing-number"
+ "0268_missing-number",
+ "0287_find-the-duplicate-number",
+ "0289_game-of-life",
+ "0300_longest-increasing-subsequence",
+ "0301_remove-invalid-parentheses",
+ "0310_minimum-height-trees"
 ]

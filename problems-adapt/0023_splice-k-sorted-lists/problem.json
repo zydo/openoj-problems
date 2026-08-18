@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 23,
+  "slug": "splice-k-sorted-lists",
+  "title": "Splice K Sorted Lists",
+  "difficulty": "H2",
+  "tags": [
+    "Linked List",
+    "Heap (Priority Queue)",
+    "Divide and Conquer"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "spliceKSortedLists",
+    "parameters": [
+      {
+        "name": "lists",
+        "codec": "list_node_array",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "linked_list",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "list_node",
+    "return_type": {
+      "kind": "linked_list",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "spliceKSortedLists",
+      "rust": "splice_k_sorted_lists",
+      "typescript": "spliceKSortedLists"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

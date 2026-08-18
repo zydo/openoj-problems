@@ -1,14 +1,4 @@
 [
- "0075_sort-colors",
- "0076_minimum-window-substring",
- "0084_largest-rectangle-in-histogram",
- "0085_maximal-rectangle",
- "0102_binary-tree-level-order-traversal",
- "0105_construct-binary-tree-from-preorder-and-inorder-traversal",
- "0109_convert-sorted-list-to-binary-search-tree",
- "0115_distinct-subsequences",
- "0120_triangle",
- "0124_binary-tree-maximum-path-sum",
  "0128_longest-consecutive-sequence",
  "0134_gas-station",
  "0135_candy",
@@ -20,5 +10,9 @@
  "0169_majority-element",
  "0174_dungeon-game",
  "0179_largest-number",
- "0187_repeated-dna-sequences"
+ "0187_repeated-dna-sequences",
+ "0221_maximal-square",
+ "0222_count-complete-tree-nodes",
+ "0230_kth-smallest-element-in-a-bst",
+ "0233_number-of-digit-one"
 ]

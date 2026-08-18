@@ -1,12 +1,4 @@
 [
- "0003_longest-substring-without-repeating-characters",
- "0004_median-of-two-sorted-arrays",
- "0005_longest-palindromic-substring",
- "0010_regular-expression-matching",
- "0015_3sum",
- "0020_valid-parentheses",
- "0021_merge-two-sorted-lists",
- "0022_generate-parentheses",
  "0023_merge-k-sorted-lists",
  "0032_longest-valid-parentheses",
  "0033_search-in-rotated-sorted-array",
@@ -20,5 +12,7 @@
  "0055_jump-game",
  "0056_merge-intervals",
  "0062_unique-paths",
- "0072_edit-distance"
+ "0072_edit-distance",
+ "0120_triangle",
+ "0124_binary-tree-maximum-path-sum"
 ]

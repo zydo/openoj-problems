@@ -40,7 +40,10 @@ For one source bundle `problems/<key>`:
      are regenerated from your new examples, expected values computed by
      the reference algorithm (write a tiny local script and run it — never
      compute expectations by hand). Public case objects hold exactly
-     `input` and `expected`.
+     `input` and `expected`. Run that script with
+     `PYTHONDONTWRITEBYTECODE=1` — importing a bundle's `solution.py`
+     otherwise drops a `__pycache__` directory inside the bundle, which
+     `check.py` rejects as an unexpected file.
    - `statement.md` — written from the spec alone: `# Title`, `##
      Description` in the house voice (look at 0001 for the register),
      examples as `### Example N` with ```text blocks, `### Constraints`

@@ -1,0 +1,14 @@
+{
+  "source": "0023_merge-k-sorted-lists",
+  "source_id": 23,
+  "source_title": "Merge k Sorted Lists",
+  "adapted": "0023_splice-k-sorted-lists",
+  "id": 23,
+  "title": "Splice K Sorted Lists",
+  "api": {
+    "mergeKLists": "spliceKSortedLists",
+    "merge_k_lists": "splice_k_sorted_lists"
+  },
+  "kind": "function",
+  "figures": "labels updated"
+}
