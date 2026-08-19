@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <!-- grid = [[8,2,5],[7,3,6],[1,4,9]], k = 3; the two qualifying routes -->
+  <g stroke="#42525e" stroke-width="1.4">
+    <rect x="60" y="40" width="54" height="54" fill="#e6ecfb" stroke="#4169E1" stroke-width="1.8"/>
+    <rect x="114" y="40" width="54" height="54" fill="#e6ecfb" stroke="#4169E1" stroke-width="1.8"/>
+    <rect x="168" y="40" width="54" height="54" fill="#e6ecfb" stroke="#4169E1" stroke-width="1.8"/>
+    <rect x="60" y="94" width="54" height="54" fill="#ffffff"/>
+    <rect x="114" y="94" width="54" height="54" fill="#ffffff"/>
+    <rect x="168" y="94" width="54" height="54" fill="#e6ecfb" stroke="#4169E1" stroke-width="1.8"/>
+    <rect x="60" y="148" width="54" height="54" fill="#ffffff"/>
+    <rect x="114" y="148" width="54" height="54" fill="#ffffff"/>
+    <rect x="168" y="148" width="54" height="54" fill="#e6ecfb" stroke="#4169E1" stroke-width="1.8"/>
+  </g>
+  <g text-anchor="middle" fill="#1a2026">
+    <text x="87" y="72" font-weight="700">8</text><text x="141" y="72" font-weight="700">2</text><text x="195" y="72" font-weight="700">5</text>
+    <text x="87" y="126">7</text><text x="141" y="126">3</text><text x="195" y="126" font-weight="700">6</text>
+    <text x="87" y="180">1</text><text x="141" y="180">4</text><text x="195" y="180" font-weight="700">9</text>
+  </g>
+  <g stroke="#42525e" stroke-width="1.4">
+    <rect x="330" y="40" width="54" height="54" fill="#f6ecd9" stroke="#b57f30" stroke-width="1.8"/>
+    <rect x="384" y="40" width="54" height="54" fill="#ffffff"/>
+    <rect x="438" y="40" width="54" height="54" fill="#ffffff"/>
+    <rect x="330" y="94" width="54" height="54" fill="#f6ecd9" stroke="#b57f30" stroke-width="1.8"/>
+    <rect x="384" y="94" width="54" height="54" fill="#f6ecd9" stroke="#b57f30" stroke-width="1.8"/>
+    <rect x="438" y="94" width="54" height="54" fill="#f6ecd9" stroke="#b57f30" stroke-width="1.8"/>
+    <rect x="330" y="148" width="54" height="54" fill="#ffffff"/>
+    <rect x="384" y="148" width="54" height="54" fill="#ffffff"/>
+    <rect x="438" y="148" width="54" height="54" fill="#f6ecd9" stroke="#b57f30" stroke-width="1.8"/>
+  </g>
+  <g text-anchor="middle" fill="#1a2026">
+    <text x="357" y="72" font-weight="700">8</text><text x="411" y="72">2</text><text x="465" y="72">5</text>
+    <text x="357" y="126" font-weight="700">7</text><text x="411" y="126" font-weight="700">3</text><text x="465" y="126" font-weight="700">6</text>
+    <text x="357" y="180">1</text><text x="411" y="180">4</text><text x="465" y="180" font-weight="700">9</text>
+  </g>
+  <text x="141" y="222" text-anchor="middle" fill="#4169E1" font-weight="700" font-size="13.5">8 + 2 + 5 + 6 + 9 = 30</text>
+  <text x="411" y="222" text-anchor="middle" fill="#7a5a1e" font-weight="700" font-size="13.5">8 + 7 + 3 + 6 + 9 = 33</text>
+  <text x="276" y="234" text-anchor="middle" fill="#5c6b76" font-size="12.5">both sums are divisible by k = 3</text>
+</svg>

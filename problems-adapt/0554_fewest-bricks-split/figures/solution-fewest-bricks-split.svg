@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692 252" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <g stroke="#1a2026" stroke-width="1.4">
+    <rect x="56" y="50" width="92" height="30" fill="#f1ede6"/>
+    <text x="102" y="69" text-anchor="middle" fill="#1a2026" stroke="none">2</text>
+    <rect x="148" y="50" width="46" height="30" fill="#f1ede6"/>
+    <text x="171" y="69" text-anchor="middle" fill="#1a2026" stroke="none">1</text>
+    <rect x="194" y="50" width="138" height="30" fill="#f1ede6"/>
+    <text x="263" y="69" text-anchor="middle" fill="#1a2026" stroke="none">3</text>
+    <rect x="332" y="50" width="92" height="30" fill="#f1ede6"/>
+    <text x="378" y="69" text-anchor="middle" fill="#1a2026" stroke="none">2</text>
+    <rect x="56" y="80" width="46" height="30" fill="#f1ede6"/>
+    <text x="79" y="99" text-anchor="middle" fill="#1a2026" stroke="none">1</text>
+    <rect x="102" y="80" width="184" height="30" fill="#f1ede6"/>
+    <text x="194" y="99" text-anchor="middle" fill="#1a2026" stroke="none">4</text>
+    <rect x="286" y="80" width="138" height="30" fill="#e9c9a4"/>
+    <text x="355" y="99" text-anchor="middle" fill="#1a2026" stroke="none">3</text>
+    <rect x="56" y="110" width="138" height="30" fill="#f1ede6"/>
+    <text x="125" y="129" text-anchor="middle" fill="#1a2026" stroke="none">3</text>
+    <rect x="194" y="110" width="138" height="30" fill="#f1ede6"/>
+    <text x="263" y="129" text-anchor="middle" fill="#1a2026" stroke="none">3</text>
+    <rect x="332" y="110" width="92" height="30" fill="#f1ede6"/>
+    <text x="378" y="129" text-anchor="middle" fill="#1a2026" stroke="none">2</text>
+    <rect x="56" y="140" width="92" height="30" fill="#f1ede6"/>
+    <text x="102" y="159" text-anchor="middle" fill="#1a2026" stroke="none">2</text>
+    <rect x="148" y="140" width="92" height="30" fill="#f1ede6"/>
+    <text x="194" y="159" text-anchor="middle" fill="#1a2026" stroke="none">2</text>
+    <rect x="240" y="140" width="46" height="30" fill="#f1ede6"/>
+    <text x="263" y="159" text-anchor="middle" fill="#1a2026" stroke="none">1</text>
+    <rect x="286" y="140" width="138" height="30" fill="#e9c9a4"/>
+    <text x="355" y="159" text-anchor="middle" fill="#1a2026" stroke="none">3</text>
+    <rect x="56" y="170" width="184" height="30" fill="#f1ede6"/>
+    <text x="148" y="189" text-anchor="middle" fill="#1a2026" stroke="none">4</text>
+    <rect x="240" y="170" width="92" height="30" fill="#f1ede6"/>
+    <text x="286" y="189" text-anchor="middle" fill="#1a2026" stroke="none">2</text>
+    <rect x="332" y="170" width="92" height="30" fill="#f1ede6"/>
+    <text x="378" y="189" text-anchor="middle" fill="#1a2026" stroke="none">2</text>
+  </g>
+  <line x1="332" y1="34" x2="332" y2="216" stroke="#4169E1" stroke-width="2.6" stroke-dasharray="7 5"/>
+  <text x="332" y="26" text-anchor="middle" fill="#4169E1" font-size="12.5" font-weight="600">cut at 6</text>
+  <text x="56" y="236" fill="#5c6b76" font-size="12.5">Widths shown per brick; 6 is the offset most rows reach exactly, and 5 &#8722; 3 = 2 rows lack it.</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 170" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <!-- grid = [[2,3]], k = 5; the single route -->
+  <g stroke="#4169E1" stroke-width="1.8" fill="#e6ecfb">
+    <rect x="116" y="40" width="64" height="64"/>
+    <rect x="180" y="40" width="64" height="64"/>
+  </g>
+  <g text-anchor="middle" fill="#1a2026" font-weight="600">
+    <text x="148" y="77">2</text><text x="212" y="77">3</text>
+  </g>
+  <text x="180" y="146" text-anchor="middle" fill="#1a2026" font-size="13.5">the only route collects 2 + 3 = 5, a multiple of 5 → <tspan fill="#4169E1" font-weight="700">1</tspan></text>
+</svg>

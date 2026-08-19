@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 2435,
+  "slug": "count-grid-paths-with-divisible-sum",
+  "title": "Count Grid Paths With Divisible Sum",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countDivisiblePaths",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countDivisiblePaths",
+      "rust": "count_divisible_paths",
+      "typescript": "countDivisiblePaths"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "public": [
+    {
+      "input": [
+        "(let a 5 (add a (let a 2 b 7 (mult a b))))"
+      ],
+      "expected": 19
+    },
+    {
+      "input": [
+        "(let p 6 q (mult p p) (add p q))"
+      ],
+      "expected": 42
+    },
+    {
+      "input": [
+        "(let k 2 k (add k k) (mult k -3))"
+      ],
+      "expected": -12
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "123"
+      ],
+      "expected": 123
+    },
+    {
+      "input": [
+        "-42"
+      ],
+      "expected": -42
+    },
+    {
+      "input": [
+        "(add 1 2)"
+      ],
+      "expected": 3
+    },
+    {
+      "input": [
+        "(add -3 5)"
+      ],
+      "expected": 2
+    },
+    {
+      "input": [
+        "(mult -3 -4)"
+      ],
+      "expected": 12
+    },
+    {
+      "input": [
+        "(mult -2 (add -3 8))"
+      ],
+      "expected": -10
+    },
+    {
+      "input": [
+        "(let x 7 x)"
+      ],
+      "expected": 7
+    },
+    {
+      "input": [
+        "(let x -2 x)"
+      ],
+      "expected": -2
+    },
+    {
+      "input": [
+        "(let a1 5 a1)"
+      ],
+      "expected": 5
+    },
+    {
+      "input": [
+        "(let a1 2 b2 3 (mult a1 b2))"
+      ],
+      "expected": 6
+    },
+    {
+      "input": [
+        "(let x 2 (add (let x 3 x) x))"
+      ],
+      "expected": 5
+    },
+    {
+      "input": [
+        "(let y 3 (let x (add y 4) (mult x y)))"
+      ],
+      "expected": 21
+    },
+    {
+      "input": [
+        "(let x 2 x (add x 3) x (mult x x))"
+      ],
+      "expected": 25
+    },
+    {
+      "input": [
+        "(add 1000000000 1000000000)"
+      ],
+      "expected": 2000000000
+    },
+    {
+      "input": [
+        "(mult (mult 46341 0) (add 5 -5))"
+      ],
+      "expected": 0
+    },
+    {
+      "input": [
+        "(add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 (add 1 1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+      ],
+      "expected": 221
+    }
+  ]
+}

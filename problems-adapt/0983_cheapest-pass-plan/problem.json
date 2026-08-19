@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 983,
+  "slug": "cheapest-pass-plan",
+  "title": "Cheapest Pass Plan",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cheapestPassPlan",
+    "parameters": [
+      {
+        "name": "days",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "prices",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "cheapestPassPlan",
+      "rust": "cheapest_pass_plan",
+      "typescript": "cheapestPassPlan"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

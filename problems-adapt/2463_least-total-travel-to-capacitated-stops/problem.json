@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": 2463,
+  "slug": "least-total-travel-to-capacitated-stops",
+  "title": "Least Total Travel to Capacitated Stops",
+  "difficulty": "H4",
+  "tags": [
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "leastTotalTravel",
+    "parameters": [
+      {
+        "name": "units",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "stations",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "leastTotalTravel",
+      "rust": "least_total_travel",
+      "typescript": "leastTotalTravel"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
