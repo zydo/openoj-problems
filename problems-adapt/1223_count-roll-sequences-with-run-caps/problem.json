@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 1223,
+  "slug": "count-roll-sequences-with-run-caps",
+  "title": "Count Roll Sequences With Run Caps",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countRollSequences",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "runCaps",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countRollSequences",
+      "rust": "count_roll_sequences",
+      "typescript": "countRollSequences"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

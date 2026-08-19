@@ -459,6 +459,277 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1155_number-of-dice-rolls-with-target-sum",
+      "source_id": 1155,
+      "source_title": "Number of Dice Rolls With Target Sum",
+      "adapted": "1155_count-bounded-sequences-with-a-given-sum",
+      "id": 1155,
+      "title": "Count Bounded Sequences With a Given Sum",
+      "api": {
+        "numRollsToTarget": "countBoundedSequences",
+        "num_rolls_to_target": "count_bounded_sequences"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1156_swap-for-longest-repeated-character-substring",
+      "source_id": 1156,
+      "source_title": "Swap For Longest Repeated Character Substring",
+      "adapted": "1156_longest-uniform-run-after-one-swap",
+      "id": 1156,
+      "title": "Longest Uniform Run After One Swap",
+      "api": {
+        "maxRepOpt1": "longestUniformRunAfterSwap",
+        "max_rep_opt1": "longest_uniform_run_after_swap"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1157_online-majority-element-in-subarray",
+      "source_id": 1157,
+      "source_title": "Online Majority Element In Subarray",
+      "adapted": "1157_range-majority-queries",
+      "id": 1157,
+      "title": "Range Majority Queries",
+      "api": {
+        "MajorityChecker": "RangeMajority"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "1220_count-vowels-permutation",
+      "source_id": 1220,
+      "source_title": "Count Vowels Permutation",
+      "adapted": "1220_count-constrained-vowel-strings",
+      "id": 1220,
+      "title": "Count Constrained Vowel Strings",
+      "api": {
+        "countVowelPermutation": "countConstrainedVowelStrings",
+        "count_vowel_permutation": "count_constrained_vowel_strings"
+      },
+      "kind": "function",
+      "figures": "kept unchanged (solution-vowel-graph draws the rule graph, which is functional)"
+    },
+    {
+      "source": "1223_dice-roll-simulation",
+      "source_id": 1223,
+      "source_title": "Dice Roll Simulation",
+      "adapted": "1223_count-roll-sequences-with-run-caps",
+      "id": 1223,
+      "title": "Count Roll Sequences With Run Caps",
+      "api": {
+        "dieSimulator": "countRollSequences",
+        "die_simulator": "count_roll_sequences",
+        "rollMax": "runCaps",
+        "roll_max": "run_caps"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1230_toss-strange-coins",
+      "source_id": 1230,
+      "source_title": "Toss Strange Coins",
+      "adapted": "1230_probability-of-exactly-k-heads",
+      "id": 1230,
+      "title": "Probability of Exactly K Heads",
+      "api": {
+        "probabilityOfHeads": "probabilityOfExactHeads",
+        "probability_of_heads": "probability_of_exact_heads"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1231_divide-chocolate",
+      "source_id": 1231,
+      "source_title": "Divide Chocolate",
+      "adapted": "1231_largest-smallest-split-sum",
+      "id": 1231,
+      "title": "Largest Smallest Split Sum",
+      "api": {
+        "maximizeSweetness": "largestSmallestSplit",
+        "maximize_sweetness": "largest_smallest_split",
+        "sweetness": "nums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1235_maximum-profit-in-job-scheduling",
+      "source_id": 1235,
+      "source_title": "Maximum Profit in Job Scheduling",
+      "adapted": "1235_most-profit-from-non-overlapping-jobs",
+      "id": 1235,
+      "title": "Most Profit From Non-Overlapping Jobs",
+      "api": {
+        "jobScheduling": "maxNonOverlappingProfit",
+        "job_scheduling": "max_non_overlapping_profit"
+      },
+      "kind": "function",
+      "figures": "regenerated (all four timelines re-emitted from the recovered layout rule: fixed pitch per time unit, bar x/width from span; new examples keep job counts, overlap patterns, and highlight sets)"
+    },
+    {
+      "source": "1239_maximum-length-of-a-concatenated-string-with-unique-characters",
+      "source_id": 1239,
+      "source_title": "Maximum Length of a Concatenated String with Unique Characters",
+      "adapted": "1239_longest-duplicate-free-concatenation",
+      "id": 1239,
+      "title": "Longest Duplicate-Free Concatenation",
+      "api": {
+        "maxLength": "longestDuplicateFreeConcat",
+        "max_length": "longest_duplicate_free_concat"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1245_tree-diameter",
+      "source_id": 1245,
+      "source_title": "Tree Diameter",
+      "adapted": "1245_widest-tree-path-from-an-edge-list",
+      "id": 1245,
+      "title": "Widest Tree Path From an Edge List",
+      "api": {
+        "treeDiameter": "widestTreePathFromEdges",
+        "tree_diameter": "widest_tree_path_from_edges"
+      },
+      "kind": "function",
+      "figures": "labels updated (example-1, example-2 relabeled node ids and captions; solution figure relabeled node ids, dist|dist annotations recomputed for the new labels, and renamed solution-tree-diameter.svg -> solution-two-sweeps.svg so no source slug survives)"
+    },
+    {
+      "source": "1246_palindrome-removal",
+      "source_id": 1246,
+      "source_title": "Palindrome Removal",
+      "adapted": "1246_fewest-palindrome-removals",
+      "id": 1246,
+      "title": "Fewest Palindrome Removals",
+      "api": {
+        "minimumMoves": "fewestPalindromeRemovals",
+        "minimum_moves": "fewest_palindrome_removals"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1248_count-number-of-nice-subarrays",
+      "source_id": 1248,
+      "source_title": "Count Number of Nice Subarrays",
+      "adapted": "1248_count-subarrays-with-k-odd-numbers",
+      "id": 1248,
+      "title": "Count Subarrays With K Odd Numbers",
+      "api": {
+        "numberOfSubarrays": "countSubarraysWithKOdds",
+        "number_of_subarrays": "count_subarrays_with_k_odds"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1254_number-of-closed-islands",
+      "source_id": 1254,
+      "source_title": "Number of Closed Islands",
+      "adapted": "1254_count-closed-grid-islands",
+      "id": 1254,
+      "title": "Count Closed Grid Islands",
+      "api": {
+        "closedIsland": "countClosedGridIslands",
+        "closed_island": "count_closed_grid_islands"
+      },
+      "kind": "function",
+      "figures": "regenerated (example-1, example-2, solution-closed-islands re-emitted from the recovered per-cell layout rule: fixed cell pitch, fill chosen by value and closed/open status, legend and captions rewritten; grids keep the drawn dimensions 5x8 and 3x5)"
+    },
+    {
+      "source": "1255_maximum-score-words-formed-by-letters",
+      "source_id": 1255,
+      "source_title": "Maximum Score Words Formed by Letters",
+      "adapted": "1255_best-word-score-from-a-letter-pool",
+      "id": 1255,
+      "title": "Best Word Score From a Letter Pool",
+      "api": {
+        "maxScoreWords": "bestWordScore",
+        "max_score_words": "best_word_score"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1259_handshakes-that-dont-cross",
+      "source_id": 1259,
+      "source_title": "Handshakes That Don't Cross",
+      "adapted": "1259_count-non-crossing-circle-pairings",
+      "id": 1259,
+      "title": "Count Non-Crossing Circle Pairings",
+      "api": {
+        "numberOfWays": "countNonCrossingPairings",
+        "number_of_ways": "count_non_crossing_pairings"
+      },
+      "kind": "function",
+      "figures": "kept unchanged (all three drawings show the forced enumerations for 4 and 6 people \u2014 every panel is one of the 2 or 5 total layouts, so no old-specific data exists to change)"
+    },
+    {
+      "source": "1268_search-suggestions-system",
+      "source_id": 1268,
+      "source_title": "Search Suggestions System",
+      "adapted": "1268_autocomplete-suggestions",
+      "id": 1268,
+      "title": "Autocomplete Suggestions",
+      "api": {
+        "suggestedProducts": "suggestWords",
+        "suggested_products": "suggest_words",
+        "products": "catalog",
+        "searchWord": "query"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1269_number-of-ways-to-stay-in-the-same-place-after-some-steps",
+      "source_id": 1269,
+      "source_title": "Number of Ways to Stay in the Same Place After Some Steps",
+      "adapted": "1269_count-walks-back-to-the-start",
+      "id": 1269,
+      "title": "Count Walks Back to the Start",
+      "api": {
+        "numWays": "countWalks",
+        "num_ways": "count_walks",
+        "arrLen": "width"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1277_count-square-submatrices-with-all-ones",
+      "source_id": 1277,
+      "source_title": "Count Square Submatrices with All Ones",
+      "adapted": "1277_count-all-ones-squares",
+      "id": 1277,
+      "title": "Count All-Ones Squares",
+      "api": {
+        "countSquares": "countAllOnesSquares",
+        "count_squares": "count_all_ones_squares"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1278_palindrome-partitioning-iii",
+      "source_id": 1278,
+      "source_title": "Palindrome Partitioning III",
+      "adapted": "1278_fewest-rewrites-into-k-palindromes",
+      "id": 1278,
+      "title": "Fewest Rewrites into k Palindromes",
+      "api": {
+        "palindromePartition": "fewestRewrites",
+        "palindrome_partition": "fewest_rewrites"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

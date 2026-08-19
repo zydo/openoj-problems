@@ -1,0 +1,6 @@
+from typing import List, Optional
+
+
+class Solution:
+    def countNonCrossingPairings(self, numPeople: int) -> int:
+        raise NotImplementedError("TODO")
