@@ -207,6 +207,13 @@ illegal-goods` (moved out of Part B at completion).
 - **G — reserved for the Part B session**, to start when F completes
   (succession D → F → G set 2026-08-19).
 
+**Part D complete (2026-08-19): 67/67** adapted, merged into
+`.adapt/ledger-d.json`, gate-swept, committed (`31cc1c5f`). Zero
+skips, zero blocked sources; two live-tree figure-label defects were
+noted in reports (1235 timeline label, 1162 water-cell labels) and left
+for the central pass. `.adapt/incoming-d/` should now stay empty. The
+session moved on to Part F per the D → F → G succession.
+
 ## Part B complete (2026-08-19 03:43)
 
 Part B is done: **215 of 215** in its final territory adapted, merged
