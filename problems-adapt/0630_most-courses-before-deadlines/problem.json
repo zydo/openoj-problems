@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 630,
+  "slug": "most-courses-before-deadlines",
+  "title": "Most Courses Before Deadlines",
+  "difficulty": "H4",
+  "tags": [
+    "Greedy",
+    "Heap",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "mostCoursesBeforeDeadlines",
+    "parameters": [
+      {
+        "name": "courses",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "mostCoursesBeforeDeadlines",
+      "rust": "most_courses_before_deadlines",
+      "typescript": "mostCoursesBeforeDeadlines"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

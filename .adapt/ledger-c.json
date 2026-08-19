@@ -169,6 +169,20 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "0630_course-schedule-iii",
+      "source_id": 630,
+      "source_title": "Course Schedule III",
+      "adapted": "0630_most-courses-before-deadlines",
+      "id": 630,
+      "title": "Most Courses Before Deadlines",
+      "api": {
+        "scheduleCourse": "mostCoursesBeforeDeadlines",
+        "schedule_course": "most_courses_before_deadlines"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
