@@ -183,6 +183,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0632_smallest-range-covering-elements-from-k-lists",
+      "source_id": 632,
+      "source_title": "Smallest Range Covering Elements from K Lists",
+      "adapted": "0632_tightest-multi-list-range",
+      "id": 632,
+      "title": "Tightest Multi-List Range",
+      "api": {
+        "smallestRange": "tightestCoveringRange",
+        "smallest_range": "tightest_covering_range"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
