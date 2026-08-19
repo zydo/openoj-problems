@@ -2253,6 +2253,48 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "2603_collect-coins-in-a-tree",
+      "source_id": 2603,
+      "source_title": "Collect Coins in a Tree",
+      "adapted": "2603_shortest-coin-gathering-round-trip",
+      "id": 2603,
+      "title": "Shortest Coin-Gathering Round Trip",
+      "api": {
+        "collectTheCoins": "shortestTour",
+        "collect_the_coins": "shortest_tour"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2681_power-of-heroes",
+      "source_id": 2681,
+      "source_title": "Power of Heroes",
+      "adapted": "2681_sum-of-subset-scores",
+      "id": 2681,
+      "title": "Sum of Subset Scores",
+      "api": {
+        "sumOfPower": "sumOfSubsetScores",
+        "sum_of_power": "sum_of_subset_scores"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2709_greatest-common-divisor-traversal",
+      "source_id": 2709,
+      "source_title": "Greatest Common Divisor Traversal",
+      "adapted": "2709_shared-factor-reachability",
+      "id": 2709,
+      "title": "Shared Factor Reachability",
+      "api": {
+        "canTraverseAllPairs": "allIndicesReachable",
+        "can_traverse_all_pairs": "all_indices_reachable"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
