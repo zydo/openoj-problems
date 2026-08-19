@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 396" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <!-- books = [[2,2],[2,5],[2,5],[1,4],[1,5],[1,4],[1,5]], shelfWidth = 4; 26 px per unit, 16 px between shelves -->
+  <g fill="#ffffff" stroke="#1a2026" stroke-width="1.4">
+    <rect x="70" y="18" width="52" height="52"/>
+    <rect x="70" y="86" width="52" height="130"/>
+    <rect x="122" y="86" width="52" height="130"/>
+    <rect x="70" y="258" width="26" height="104"/>
+    <rect x="96" y="232" width="26" height="130"/>
+    <rect x="122" y="258" width="26" height="104"/>
+    <rect x="148" y="232" width="26" height="130"/>
+  </g>
+  <g fill="#5c6b76" text-anchor="middle">
+    <text x="96" y="48">1</text>
+    <text x="96" y="155">2</text>
+    <text x="148" y="155">3</text>
+    <text x="83" y="314">4</text>
+    <text x="109" y="301">5</text>
+    <text x="135" y="314">6</text>
+    <text x="161" y="301">7</text>
+  </g>
+  <g stroke="#4169E1" stroke-width="2.5">
+    <line x1="62" y1="70" x2="182" y2="70"/>
+    <line x1="62" y1="216" x2="182" y2="216"/>
+    <line x1="62" y1="362" x2="182" y2="362"/>
+  </g>
+  <!-- per-shelf heights -->
+  <g stroke="#b9c4cd" stroke-width="1.2">
+    <line x1="194" y1="70" x2="194" y2="18"/>
+    <line x1="194" y1="216" x2="194" y2="86"/>
+    <line x1="194" y1="362" x2="194" y2="232"/>
+  </g>
+  <g fill="#5c6b76" font-size="11.5">
+    <text x="202" y="48">2</text>
+    <text x="202" y="155">5</text>
+    <text x="202" y="301">5</text>
+  </g>
+  <text x="150" y="388" text-anchor="middle" fill="#5c6b76" font-size="12.5">shelf heights 2 + 5 + 5 = 12 — book 2 stays off the first shelf</text>
+</svg>

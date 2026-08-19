@@ -69,6 +69,238 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "1092_shortest-common-supersequence",
+      "source_id": 1092,
+      "source_title": "Shortest Common Supersequence",
+      "adapted": "1092_shortest-common-supersequence",
+      "id": 1092,
+      "title": "Shortest Common Supersequence",
+      "api": {
+        "str1": "s",
+        "str2": "t"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1094_car-pooling",
+      "source_id": 1094,
+      "source_title": "Car Pooling",
+      "adapted": "1094_seat-load-on-a-route",
+      "id": 1094,
+      "title": "Seat Load on a Route",
+      "api": {
+        "carPooling": "seatLoadFits",
+        "car_pooling": "seat_load_fits",
+        "trips": "groups"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1101_the-earliest-moment-when-everyone-become-friends",
+      "source_id": 1101,
+      "source_title": "The Earliest Moment When Everyone Become Friends",
+      "adapted": "1101_first-full-connection",
+      "id": 1101,
+      "title": "First Full Connection",
+      "api": {
+        "earliestAcq": "firstFullConnection",
+        "earliest_acq": "first_full_connection",
+        "logs": "events"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1102_path-with-maximum-minimum-value",
+      "source_id": 1102,
+      "source_title": "Path With Maximum Minimum Value",
+      "adapted": "1102_widest-grid-path",
+      "id": 1102,
+      "title": "Widest Grid Path",
+      "api": {
+        "maximumMinimumPath": "widestGridPath",
+        "maximum_minimum_path": "widest_grid_path"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1105_filling-bookcase-shelves",
+      "source_id": 1105,
+      "source_title": "Filling Bookcase Shelves",
+      "adapted": "1105_minimum-bookcase-height",
+      "id": 1105,
+      "title": "Minimum Bookcase Height",
+      "api": {
+        "minHeightShelves": "minimumBookcaseHeight",
+        "min_height_shelves": "minimum_bookcase_height"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1106_parsing-a-boolean-expression",
+      "source_id": 1106,
+      "source_title": "Parsing A Boolean Expression",
+      "adapted": "1106_evaluate-a-boolean-formula",
+      "id": 1106,
+      "title": "Evaluate a Boolean Formula",
+      "api": {
+        "parseBoolExpr": "evaluateBooleanFormula",
+        "parse_bool_expr": "evaluate_boolean_formula",
+        "expression": "formula"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1109_corporate-flight-bookings",
+      "source_id": 1109,
+      "source_title": "Corporate Flight Bookings",
+      "adapted": "1109_seats-booked-per-flight",
+      "id": 1109,
+      "title": "Seats Booked per Flight",
+      "api": {
+        "corpFlightBookings": "seatsBookedPerFlight",
+        "corp_flight_bookings": "seats_booked_per_flight"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1146_snapshot-array",
+      "source_id": 1146,
+      "source_title": "Snapshot Array",
+      "adapted": "1146_versioned-array",
+      "id": 1146,
+      "title": "Versioned Array",
+      "api": {
+        "SnapshotArray": "VersionedArray",
+        "snap": "commit",
+        "snap_id": "commit_id",
+        "snapId": "commitId"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "1178_number-of-valid-words-for-each-puzzle",
+      "source_id": 1178,
+      "source_title": "Number of Valid Words for Each Puzzle",
+      "adapted": "1178_playable-words-per-puzzle",
+      "id": 1178,
+      "title": "Playable Words per Puzzle",
+      "api": {
+        "findNumOfValidWords": "countPlayableWords",
+        "find_num_of_valid_words": "count_playable_words"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1186_maximum-subarray-sum-with-one-deletion",
+      "source_id": 1186,
+      "source_title": "Maximum Subarray Sum with One Deletion",
+      "adapted": "1186_largest-subarray-sum-with-one-deletion",
+      "id": 1186,
+      "title": "Largest Subarray Sum with One Deletion",
+      "api": {
+        "maximumSum": "largestSumWithDeletion",
+        "maximum_sum": "largest_sum_with_deletion"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1187_make-array-strictly-increasing",
+      "source_id": 1187,
+      "source_title": "Make Array Strictly Increasing",
+      "adapted": "1187_fewest-overwrites-for-a-rising-array",
+      "id": 1187,
+      "title": "Fewest Overwrites for a Rising Array",
+      "api": {
+        "makeArrayIncreasing": "fewestOverwrites",
+        "make_array_increasing": "fewest_overwrites",
+        "arr1": "values",
+        "arr2": "pool"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1190_reverse-substrings-between-each-pair-of-parentheses",
+      "source_id": 1190,
+      "source_title": "Reverse Substrings Between Each Pair of Parentheses",
+      "adapted": "1190_reverse-every-bracketed-segment",
+      "id": 1190,
+      "title": "Reverse Every Bracketed Segment",
+      "api": {
+        "reverseParentheses": "reverseBracketedSegments",
+        "reverse_parentheses": "reverse_bracketed_segments"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1191_k-concatenation-maximum-sum",
+      "source_id": 1191,
+      "source_title": "K-Concatenation Maximum Sum",
+      "adapted": "1191_largest-subarray-sum-in-the-repeated-array",
+      "id": 1191,
+      "title": "Largest Subarray Sum in the Repeated Array",
+      "api": {
+        "kConcatenationMaxSum": "largestRepeatedSum",
+        "k_concatenation_max_sum": "largest_repeated_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1192_critical-connections-in-a-network",
+      "source_id": 1192,
+      "source_title": "Critical Connections in a Network",
+      "adapted": "1192_bridge-edges-in-a-connected-graph",
+      "id": 1192,
+      "title": "Bridge Edges in a Connected Graph",
+      "api": {
+        "criticalConnections": "findBridges",
+        "critical_connections": "find_bridges",
+        "connections": "edges"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1201_ugly-number-iii",
+      "source_id": 1201,
+      "source_title": "Ugly Number III",
+      "adapted": "1201_nth-multiple-of-any-of-three-divisors",
+      "id": 1201,
+      "title": "Nth Multiple of Any of Three Divisors",
+      "api": {
+        "nthUglyNumber": "nthMultiple",
+        "nth_ugly_number": "nth_multiple"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1202_smallest-string-with-swaps",
+      "source_id": 1202,
+      "source_title": "Smallest String With Swaps",
+      "adapted": "1202_smallest-string-reachable-by-swaps",
+      "id": 1202,
+      "title": "Smallest String Reachable by Swaps",
+      "api": {
+        "smallestStringWithSwaps": "smallestReachableString",
+        "smallest_string_with_swaps": "smallest_reachable_string"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

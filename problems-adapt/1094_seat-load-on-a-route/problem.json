@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 1094,
+  "slug": "seat-load-on-a-route",
+  "title": "Seat Load on a Route",
+  "difficulty": "H2",
+  "tags": [
+    "Difference Array",
+    "Prefix Sum",
+    "Sorting",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "seatLoadFits",
+    "parameters": [
+      {
+        "name": "groups",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "capacity",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "seatLoadFits",
+      "rust": "seat_load_fits",
+      "typescript": "seatLoadFits"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
