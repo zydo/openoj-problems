@@ -173,6 +173,8 @@ per-part delta files (`PART-E-CHUNK.md`, `PART-F-CHUNK.md`,
 `PART-G-CHUNK.md`; C and D use `PART-B-CHUNK.md` directly with their own
 inbox paths).
 
+- Codex `/root` session claimed Part C on 2026-08-19.
+
 Two bookkeeping notes. First, `part-b.json` was pruned to B's true
 territory (216 = its finished + remaining + blocked) so the old E keys
 it still listed no longer shadow the new parts in `adapt_remaining.py`.

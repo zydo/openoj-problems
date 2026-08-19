@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "source": "0370_range-addition",
+      "source_id": 370,
+      "source_title": "Range Addition",
+      "adapted": "0370_apply-interval-updates",
+      "id": 370,
+      "title": "Apply Interval Updates",
+      "api": {
+        "getModifiedArray": "applyIntervalUpdates",
+        "get_modified_array": "apply_interval_updates"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    }
+  ]
+}
