@@ -1171,6 +1171,78 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2030_smallest-k-length-subsequence-with-occurrences-of-a-letter",
+      "source_id": 2030,
+      "source_title": "Smallest K-Length Subsequence With Occurrences of a Letter",
+      "adapted": "2030_smallest-subsequence-with-letter-quota",
+      "id": 2030,
+      "title": "Smallest Subsequence With a Letter Quota",
+      "api": {
+        "smallestSubsequence": "smallestSubsequenceWithLetterQuota",
+        "smallest_subsequence": "smallest_subsequence_with_letter_quota",
+        "repetition": "quota"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2156_find-substring-with-given-hash-value",
+      "source_id": 2156,
+      "source_title": "Find Substring With Given Hash Value",
+      "adapted": "2156_leftmost-window-with-a-given-hash",
+      "id": 2156,
+      "title": "Leftmost Window With a Given Hash",
+      "api": {
+        "subStrHash": "firstHashWindow",
+        "sub_str_hash": "first_hash_window"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2305_fair-distribution-of-cookies",
+      "source_id": 2305,
+      "source_title": "Fair Distribution of Cookies",
+      "adapted": "2305_smallest-largest-group-sum",
+      "id": 2305,
+      "title": "Smallest Largest Group Sum",
+      "api": {
+        "distributeCookies": "smallestLargestGroupSum",
+        "distribute_cookies": "smallest_largest_group_sum",
+        "cookies": "nums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2354_number-of-excellent-pairs",
+      "source_id": 2354,
+      "source_title": "Number of Excellent Pairs",
+      "adapted": "2354_count-pairs-by-combined-set-bits",
+      "id": 2354,
+      "title": "Count Pairs by Combined Set Bits",
+      "api": {
+        "countExcellentPairs": "countSetBitPairs",
+        "count_excellent_pairs": "count_set_bit_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2381_shifting-letters-ii",
+      "source_id": 2381,
+      "source_title": "Shifting Letters II",
+      "adapted": "2381_shift-letters-over-ranges",
+      "id": 2381,
+      "title": "Shift Letters Over Ranges",
+      "api": {
+        "shiftingLetters": "shiftLettersOverRanges",
+        "shifting_letters": "shift_letters_over_ranges"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

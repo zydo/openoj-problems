@@ -1,0 +1,3 @@
+func firstHashWindow(s string, power int, modulo int, k int, hashValue int) string {
+	panic("TODO")
+}
