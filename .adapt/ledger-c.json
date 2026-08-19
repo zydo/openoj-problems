@@ -211,6 +211,20 @@
       },
       "kind": "design",
       "figures": "none"
+    },
+    {
+      "source": "0644_maximum-average-subarray-ii",
+      "source_id": 644,
+      "source_title": "Maximum Average Subarray II",
+      "adapted": "0644_best-average-minimum-length",
+      "id": 644,
+      "title": "Best Average with Minimum Length",
+      "api": {
+        "findMaxAverage": "bestAverageAtLeastK",
+        "find_max_average": "best_average_at_least_k"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
