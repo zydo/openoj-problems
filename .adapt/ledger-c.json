@@ -100,6 +100,20 @@
       },
       "kind": "design",
       "figures": "none"
+    },
+    {
+      "source": "0435_non-overlapping-intervals",
+      "source_id": 435,
+      "source_title": "Non-overlapping Intervals",
+      "adapted": "0435_minimum-interval-removals",
+      "id": 435,
+      "title": "Minimum Interval Removals",
+      "api": {
+        "eraseOverlapIntervals": "minimumOverlapRemovals",
+        "erase_overlap_intervals": "minimum_overlap_removals"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
