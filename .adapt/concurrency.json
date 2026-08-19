@@ -21,6 +21,12 @@
       "kind": "quota-window-exhausted",
       "agents_lost": 11,
       "note": "The whole fleet died at once on the shared 5-hour pool, not on per-minute 429s. Concurrency does not cause this class of death -- total consumption does -- so the target is left where it is rather than stepped down again. Pool resets ~09:45 PDT; the 11:00 timer restarts the fleet after it."
+    },
+    {
+      "at": "2026-08-18T17:40:00-07:00",
+      "kind": "fleet-interrupted",
+      "agents_lost": 8,
+      "note": "Host session restart killed all 8 Part B chunk agents (not rate limiting). 7 finished bundles were merged and committed (e41571ef); all 8 resumed from their saved transcripts at target 8. Part B live fleet: 8 as of 17:40 PDT."
     }
   ],
   "pool_resets_at": "2026-08-18T09:45:00-07:00"

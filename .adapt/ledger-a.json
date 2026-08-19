@@ -248,6 +248,100 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0470_implement-rand10-using-rand7",
+      "source_id": 470,
+      "source_title": "Implement Rand10() Using Rand7()",
+      "adapted": "0470_ten-sided-roll-from-seven",
+      "id": 470,
+      "title": "Ten-Sided Roll From a Seven-Sided Die",
+      "api": {
+        "rand10": "roll10",
+        "rand7_outputs": "seven_rolls"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0828_count-unique-characters-of-all-substrings-of-a-given-string",
+      "source_id": 828,
+      "source_title": "Count Unique Characters of All Substrings of a Given String",
+      "adapted": "0828_singleton-letters-in-substrings",
+      "id": 828,
+      "title": "Singleton Letters In Substrings",
+      "api": {
+        "uniqueLetterString": "singletonLetterTotal",
+        "unique_letter_string": "singleton_letter_total"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0880_decoded-string-at-index",
+      "source_id": 880,
+      "source_title": "Decoded String at Index",
+      "adapted": "0880_expanded-string-letter",
+      "id": 880,
+      "title": "Expanded String Letter",
+      "api": {
+        "decodeAtIndex": "expandedStringLetter",
+        "decode_at_index": "expanded_string_letter"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0995_minimum-number-of-k-consecutive-bit-flips",
+      "source_id": 995,
+      "source_title": "Minimum Number of K Consecutive Bit Flips",
+      "adapted": "0995_fewest-window-flips",
+      "id": 995,
+      "title": "Fewest Window Flips",
+      "api": {
+        "minKBitFlips": "fewestWindowFlips",
+        "min_k_bit_flips": "fewest_window_flips"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1049_last-stone-weight-ii",
+      "source_id": 1049,
+      "source_title": "Last Stone Weight II",
+      "adapted": "1049_optimal-stone-smashing",
+      "id": 1049,
+      "title": "Optimal Stone Smashing",
+      "api": {
+        "lastStoneWeightII": "optimalStoneSmashing",
+        "last_stone_weight_ii": "optimal_stone_smashing"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "id": 312,
+      "source": "0312_burst-balloons",
+      "adapted": "0312_maximum-removal-score",
+      "title": "Maximum Removal Score",
+      "kind": "function",
+      "api": {
+        "maxCoins": "maximumRemovalScore"
+      },
+      "figures": "none",
+      "note": "Salvaged centrally: bundle complete and green, fragment missing when the session limit killed the agent."
+    },
+    {
+      "id": 710,
+      "source": "0710_random-pick-with-blacklist",
+      "adapted": "0710_random-draw-with-exclusions",
+      "title": "Random Draw With Exclusions",
+      "kind": "design",
+      "api": {
+        "Solution": "RandomDrawWithExclusions"
+      },
+      "figures": "none",
+      "note": "Salvaged centrally: bundle complete and green, fragment missing when the session limit killed the agent."
     }
   ]
 }
