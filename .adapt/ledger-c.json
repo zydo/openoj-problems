@@ -437,6 +437,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0787_cheapest-flights-within-k-stops",
+      "source_id": 787,
+      "source_title": "Cheapest Flights Within K Stops",
+      "adapted": "0787_minimum-cost-with-limited-intermediates",
+      "id": 787,
+      "title": "Minimum Cost with Limited Intermediates",
+      "api": {
+        "findCheapestPrice": "minimumLimitedRouteCost",
+        "find_cheapest_price": "minimum_limited_route_cost"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
