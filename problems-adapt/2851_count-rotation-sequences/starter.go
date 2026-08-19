@@ -1,0 +1,3 @@
+func countRotationSequences(s string, t string, k int64) int {
+	panic("TODO")
+}

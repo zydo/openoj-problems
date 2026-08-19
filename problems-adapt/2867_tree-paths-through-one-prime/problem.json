@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 2867,
+  "slug": "tree-paths-through-one-prime",
+  "title": "Tree Paths Through Exactly One Prime",
+  "difficulty": "H3",
+  "tags": [
+    "Tree",
+    "DFS",
+    "Number Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countOnePrimePaths",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "countOnePrimePaths",
+      "rust": "count_one_prime_paths",
+      "typescript": "countOnePrimePaths"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

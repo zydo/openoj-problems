@@ -1,0 +1,3 @@
+func countCappedNumbers(start int64, finish int64, limit int, s string) int64 {
+	panic("TODO")
+}

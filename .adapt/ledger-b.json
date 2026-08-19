@@ -2308,6 +2308,230 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2328_number-of-increasing-paths-in-a-grid",
+      "source_id": 2328,
+      "source_title": "Number of Increasing Paths in a Grid",
+      "adapted": "2328_rising-paths-in-a-grid",
+      "id": 2328,
+      "title": "Rising Paths in a Grid",
+      "api": {
+        "countPaths": "countRisingPaths",
+        "count_paths": "count_rising_paths"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2402_meeting-rooms-iii",
+      "source_id": 2402,
+      "source_title": "Meeting Rooms III",
+      "adapted": "2402_busiest-meeting-room",
+      "id": 2402,
+      "title": "Busiest Meeting Room",
+      "api": {
+        "mostBooked": "busiestRoom",
+        "most_booked": "busiest_room"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2488_count-subarrays-with-median-k",
+      "source_id": 2488,
+      "source_title": "Count Subarrays With Median K",
+      "adapted": "2488_count-subarrays-balanced-around-k",
+      "id": 2488,
+      "title": "Count Subarrays Balanced Around K",
+      "api": {
+        "countSubarrays": "countBalancedSubarrays",
+        "count_subarrays": "count_balanced_subarrays"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2493_divide-nodes-into-the-maximum-number-of-groups",
+      "source_id": 2493,
+      "source_title": "Divide Nodes Into the Maximum Number of Groups",
+      "adapted": "2493_deepest-valid-grouping-of-a-graph",
+      "id": 2493,
+      "title": "Deepest Valid Grouping of a Graph",
+      "api": {
+        "magnificentSets": "deepestGrouping",
+        "magnificent_sets": "deepest_grouping"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2731_movement-of-robots",
+      "source_id": 2731,
+      "source_title": "Movement of Robots",
+      "adapted": "2731_pairwise-distances-after-bounces",
+      "id": 2731,
+      "title": "Pairwise Distances After Bounces",
+      "api": {
+        "sumDistance": "sumPairDistances",
+        "sum_distance": "sum_pair_distances"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2741_special-permutations",
+      "source_id": 2741,
+      "source_title": "Special Permutations",
+      "adapted": "2741_orderings-with-divisible-neighbours",
+      "id": 2741,
+      "title": "Orderings with Divisible Neighbours",
+      "api": {
+        "specialPerm": "countDivisibleOrderings",
+        "special_perm": "count_divisible_orderings"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2742_painting-the-walls",
+      "source_id": 2742,
+      "source_title": "Painting the Walls",
+      "adapted": "2742_two-painters-minimum-bill",
+      "id": 2742,
+      "title": "Two Painters, Minimum Bill",
+      "api": {
+        "paintWalls": "leastPaintCost",
+        "paint_walls": "least_paint_cost"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2772_apply-operations-to-make-all-array-elements-equal-to-zero",
+      "source_id": 2772,
+      "source_title": "Apply Operations to Make All Array Elements Equal to Zero",
+      "adapted": "2772_zero-array-with-fixed-windows",
+      "id": 2772,
+      "title": "Zero the Array with Fixed Windows",
+      "api": {
+        "checkArray": "canZeroArray",
+        "check_array": "can_zero_array"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2781_length-of-the-longest-valid-substring",
+      "source_id": 2781,
+      "source_title": "Length of the Longest Valid Substring",
+      "adapted": "2781_longest-forbidden-free-substring",
+      "id": 2781,
+      "title": "Longest Forbidden-Free Substring",
+      "api": {
+        "longestValidSubstring": "longestForbiddenFree",
+        "longest_valid_substring": "longest_forbidden_free"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2791_count-paths-that-can-form-a-palindrome-in-a-tree",
+      "source_id": 2791,
+      "source_title": "Count Paths That Can Form a Palindrome in a Tree",
+      "adapted": "2791_tree-paths-that-rearrange-to-palindromes",
+      "id": 2791,
+      "title": "Tree Paths That Rearrange to Palindromes",
+      "api": {
+        "countPalindromePaths": "countRearrangeablePaths",
+        "count_palindrome_paths": "count_rearrangeable_paths"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2851_string-transformation",
+      "source_id": 2851,
+      "source_title": "String Transformation",
+      "adapted": "2851_count-rotation-sequences",
+      "id": 2851,
+      "title": "Count Rotation Sequences",
+      "api": {
+        "numberOfWays": "countRotationSequences",
+        "number_of_ways": "count_rotation_sequences"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2858_minimum-edge-reversals-so-every-node-is-reachable",
+      "source_id": 2858,
+      "source_title": "Minimum Edge Reversals So Every Node Is Reachable",
+      "adapted": "2858_reversals-to-reach-every-node",
+      "id": 2858,
+      "title": "Reversals to Reach Every Node",
+      "api": {
+        "minEdgeReversals": "minReversalsPerRoot",
+        "min_edge_reversals": "min_reversals_per_root"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2862_maximum-element-sum-of-a-complete-subset-of-indices",
+      "source_id": 2862,
+      "source_title": "Maximum Element-Sum of a Complete Subset of Indices",
+      "adapted": "2862_maximum-square-compatible-index-sum",
+      "id": 2862,
+      "title": "Maximum Square-Compatible Index Sum",
+      "api": {
+        "maximumSum": "maxSquareIndexSum",
+        "maximum_sum": "max_square_index_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2867_count-valid-paths-in-a-tree",
+      "source_id": 2867,
+      "source_title": "Count Valid Paths in a Tree",
+      "adapted": "2867_tree-paths-through-one-prime",
+      "id": 2867,
+      "title": "Tree Paths Through Exactly One Prime",
+      "api": {
+        "countPaths": "countOnePrimePaths",
+        "count_paths": "count_one_prime_paths"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2976_minimum-cost-to-convert-string-i",
+      "source_id": 2976,
+      "source_title": "Minimum Cost to Convert String I",
+      "adapted": "2976_cheapest-letter-rewrites",
+      "id": 2976,
+      "title": "Cheapest Letter Rewrites",
+      "api": {
+        "minimumCost": "leastRewriteCost",
+        "minimum_cost": "least_rewrite_cost"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2999_count-the-number-of-powerful-integers",
+      "source_id": 2999,
+      "source_title": "Count the Number of Powerful Integers",
+      "adapted": "2999_count-capped-digit-numbers-with-a-given-ending",
+      "id": 2999,
+      "title": "Count Capped-Digit Numbers With a Given Ending",
+      "api": {
+        "numberOfPowerfulInt": "countCappedNumbers",
+        "number_of_powerful_int": "count_capped_numbers"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
