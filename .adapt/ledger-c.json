@@ -141,6 +141,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0576_out-of-boundary-paths",
+      "source_id": 576,
+      "source_title": "Out of Boundary Paths",
+      "adapted": "0576_grid-exit-walk-count",
+      "id": 576,
+      "title": "Grid Exit Walk Count",
+      "api": {
+        "findPaths": "countExitWalks",
+        "find_paths": "count_exit_walks"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
