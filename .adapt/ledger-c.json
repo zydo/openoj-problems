@@ -267,6 +267,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0713_subarray-product-less-than-k",
+      "source_id": 713,
+      "source_title": "Subarray Product Less Than K",
+      "adapted": "0713_product-bounded-segment-count",
+      "id": 713,
+      "title": "Product-Bounded Segment Count",
+      "api": {
+        "numSubarrayProductLessThanK": "countProductBoundedSegments",
+        "num_subarray_product_less_than_k": "count_product_bounded_segments"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
