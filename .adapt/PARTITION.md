@@ -195,6 +195,12 @@ and the bundle re-verifies. The analysis lives in
 Current backlog: `2167_minimum-time-to-remove-all-cars-containing-
 illegal-goods` (moved out of Part B at completion).
 
+## Part claims
+
+- **D — claimed by the Part B session** (2026-08-19 ~03:50), starting
+  with `wave-d-01.json` (first 5 keys) per instruction; fragments to
+  `.adapt/incoming-d/`, merged with `--part d`.
+
 ## Part B complete (2026-08-19 03:43)
 
 Part B is done: **215 of 215** in its final territory adapted, merged
