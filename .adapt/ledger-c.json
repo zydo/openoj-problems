@@ -197,6 +197,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0642_design-search-autocomplete-system",
+      "source_id": 642,
+      "source_title": "Design Search Autocomplete System",
+      "adapted": "0642_ranked-prefix-suggestions",
+      "id": 642,
+      "title": "Ranked Prefix Suggestions",
+      "api": {
+        "AutocompleteSystem": "PrefixSuggester",
+        "input": "typeCharacter"
+      },
+      "kind": "design",
+      "figures": "none"
     }
   ]
 }
