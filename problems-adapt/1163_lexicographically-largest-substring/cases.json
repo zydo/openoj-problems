@@ -1,0 +1,120 @@
+{
+  "public": [
+    {
+      "input": [
+        "banana"
+      ],
+      "expected": "nana"
+    },
+    {
+      "input": [
+        "ztzz"
+      ],
+      "expected": "zz"
+    },
+    {
+      "input": [
+        "dcd"
+      ],
+      "expected": "dcd"
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "a"
+      ],
+      "expected": "a"
+    },
+    {
+      "input": [
+        "abc"
+      ],
+      "expected": "c"
+    },
+    {
+      "input": [
+        "cba"
+      ],
+      "expected": "cba"
+    },
+    {
+      "input": [
+        "aaaa"
+      ],
+      "expected": "aaaa"
+    },
+    {
+      "input": [
+        "baba"
+      ],
+      "expected": "baba"
+    },
+    {
+      "input": [
+        "zzzabc"
+      ],
+      "expected": "zzzabc"
+    },
+    {
+      "input": [
+        "abcdz"
+      ],
+      "expected": "z"
+    },
+    {
+      "input": [
+        "cacac"
+      ],
+      "expected": "cacac"
+    },
+    {
+      "input": [
+        "dcb"
+      ],
+      "expected": "dcb"
+    },
+    {
+      "input": [
+        "azby"
+      ],
+      "expected": "zby"
+    },
+    {
+      "input": [
+        "abaz"
+      ],
+      "expected": "z"
+    },
+    {
+      "input": [
+        "zyxw"
+      ],
+      "expected": "zyxw"
+    },
+    {
+      "input": [
+        "babababababababababa"
+      ],
+      "expected": "babababababababababa"
+    },
+    {
+      "input": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "input": [
+        "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc"
+      ],
+      "expected": "cabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc"
+    },
+    {
+      "input": [
+        "cabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcab"
+      ],
+      "expected": "cabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcab"
+    }
+  ]
+}

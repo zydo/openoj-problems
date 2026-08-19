@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 1293,
+  "slug": "shortest-grid-walk-with-k-obstacle-crossings",
+  "title": "Shortest Grid Walk with k Obstacle Crossings",
+  "difficulty": "H3",
+  "tags": [
+    "BFS",
+    "Shortest Path",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "shortestWalk",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "shortestWalk",
+      "rust": "shortest_walk",
+      "typescript": "shortestWalk"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
