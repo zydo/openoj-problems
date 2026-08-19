@@ -275,5 +275,11 @@ minus `3123_find-edges-in-shortest-paths`, moved to the backlog — its
 live Java port does not compile; see `.adapt/blocked-f.md`). Merged into
 `.adapt/ledger-f.json`, gate-swept, committed (`2f2fef8d`); wave-f-01's
 starters were regenerated once after the harness formatter widened
-(`9cca3b5f`). `.adapt/incoming-f/` should now stay empty. The Part B
+(`9cca3b5f`). `.adapt/incoming-f/` should now stay empty.  The Part B
 session moved on to Part G, the last part.
+
+**Part G complete (2026-08-19): 66/66** adapted, merged into
+`.adapt/ledger-g.json`, gate-swept, committed (`c7daf78c`). Zero skips,
+zero blocked sources. `.adapt/incoming-g/` should now stay empty. Per the
+extended succession the session moved on to **Part E** (66, waves
+`wave-e-01` .. `wave-e-06`).
