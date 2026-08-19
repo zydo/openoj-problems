@@ -451,6 +451,20 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0792_number-of-matching-subsequences",
+      "source_id": 792,
+      "source_title": "Number of Matching Subsequences",
+      "adapted": "0792_count-candidates-embedded-in-a-text",
+      "id": 792,
+      "title": "Count Candidates Embedded in a Text",
+      "api": {
+        "numMatchingSubseq": "countEmbeddedCandidates",
+        "num_matching_subseq": "count_embedded_candidates"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
