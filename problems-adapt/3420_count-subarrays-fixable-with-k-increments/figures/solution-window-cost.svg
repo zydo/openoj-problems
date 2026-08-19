@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect x="0" y="0" width="640" height="280" fill="#ffffff"/>
+  <!-- panel A: left = 1, window [1..5]; bar i at x = 40 + 42*i, height 12*value, baseline y = 200 -->
+  <text x="40" y="28" fill="#1a2026" font-weight="600">left = 1: window [4, 2, 3, 5, 5]</text>
+  <line x1="34" y1="200" x2="250" y2="200" stroke="#1a2026" stroke-width="1.5"/>
+  <!-- bars -->
+  <g fill="#ffffff" stroke="#1a2026" stroke-width="1.4">
+    <rect x="40" y="152" width="34" height="48"/>
+    <rect x="82" y="176" width="34" height="24"/>
+    <rect x="124" y="164" width="34" height="36"/>
+    <rect x="166" y="140" width="34" height="60"/>
+    <rect x="208" y="140" width="34" height="60"/>
+  </g>
+  <!-- cost shading: raise 2->4 and 3->4 -->
+  <rect x="82" y="152" width="34" height="24" fill="#e8edfa"/>
+  <rect x="124" y="152" width="34" height="12" fill="#e8edfa"/>
+  <!-- running max step line -->
+  <path d="M 40 152 L 158 152 L 158 140 L 242 140" fill="none" stroke="#4169E1" stroke-width="1.9"/>
+  <g text-anchor="middle" fill="#1a2026" font-weight="600">
+    <text x="57" y="216">4</text><text x="99" y="216">2</text><text x="141" y="216">3</text>
+    <text x="183" y="216">5</text><text x="225" y="216">5</text>
+  </g>
+  <g text-anchor="middle" fill="#5c6b76" font-size="12.5">
+    <text x="99" y="234">raise by 2</text><text x="141" y="234">raise by 1</text>
+  </g>
+  <text x="40" y="144" fill="#4169E1" font-size="12.5">running max</text>
+  <text x="40" y="258" fill="#5c6b76" font-size="12.5">cost 2 + 1 = 3 ≤ k = 8</text>
+  <text x="40" y="276" fill="#4169E1" font-size="12.5">→ counts 5 subarrays</text>
+  <!-- panel B: left = 0 -->
+  <text x="340" y="28" fill="#1a2026" font-weight="600">left = 0: 7 arrives, cost 16 &gt; 8</text>
+  <line x1="334" y1="200" x2="610" y2="200" stroke="#1a2026" stroke-width="1.5"/>
+  <g fill="#ffffff" stroke="#1a2026" stroke-width="1.4">
+    <rect x="340" y="116" width="34" height="84"/>
+    <rect x="382" y="152" width="34" height="48"/>
+    <rect x="424" y="176" width="34" height="24"/>
+  </g>
+  <rect x="382" y="116" width="34" height="36" fill="#e8edfa"/>
+  <rect x="424" y="116" width="34" height="60" fill="#e8edfa"/>
+  <line x1="340" y1="116" x2="458" y2="116" stroke="#4169E1" stroke-width="1.9"/>
+  <g text-anchor="middle" fill="#1a2026" font-weight="600">
+    <text x="357" y="216">7</text><text x="399" y="216">4</text><text x="441" y="216">2</text>
+  </g>
+  <g fill="#98a2ac">
+    <text x="482" y="216" font-size="12.5">5 · 5</text>
+    <text x="482" y="232" font-size="12.5">shrunk off</text>
+  </g>
+  <text x="420" y="108" text-anchor="middle" fill="#5c6b76" font-size="12.5">raise by 3 and by 5</text>
+  <text x="340" y="258" fill="#5c6b76" font-size="12.5">shrink right → window [7, 4, 2], cost 8 = k</text>
+  <text x="340" y="276" fill="#4169E1" font-size="12.5">→ counts 3 subarrays · total 18</text>
+</svg>

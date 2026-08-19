@@ -332,6 +332,194 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "3419_minimize-the-maximum-edge-weight-of-graph",
+      "source_id": 3419,
+      "source_title": "Minimize the Maximum Edge Weight of Graph",
+      "adapted": "3419_least-weight-cap-for-reaching-node-zero",
+      "id": 3419,
+      "title": "Least Weight Cap for Reaching Node Zero",
+      "api": {
+        "minMaxWeight": "leastWeightCap",
+        "min_max_weight": "least_weight_cap"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3420_count-non-decreasing-subarrays-after-k-operations",
+      "source_id": 3420,
+      "source_title": "Count Non-Decreasing Subarrays After K Operations",
+      "adapted": "3420_count-subarrays-fixable-with-k-increments",
+      "id": 3420,
+      "title": "Count Subarrays Fixable With K Increments",
+      "api": {
+        "countNonDecreasingSubarrays": "countFixableSubarrays",
+        "count_non_decreasing_subarrays": "count_fixable_subarrays"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3425_longest-special-path",
+      "source_id": 3425,
+      "source_title": "Longest Special Path",
+      "adapted": "3425_longest-duplicate-free-descent",
+      "id": 3425,
+      "title": "Longest Duplicate-Free Descent",
+      "api": {
+        "longestSpecialPath": "longestDuplicateFreeDescent",
+        "longest_special_path": "longest_duplicate_free_descent"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3430_maximum-and-minimum-sums-of-at-most-size-k-subarrays",
+      "source_id": 3430,
+      "source_title": "Maximum and Minimum Sums of at Most Size K Subarrays",
+      "adapted": "3430_sum-of-extremes-over-short-subarrays",
+      "id": 3430,
+      "title": "Sum of Extremes Over Short Subarrays",
+      "api": {
+        "minMaxSubarraySum": "sumOfExtremes",
+        "min_max_subarray_sum": "sum_of_extremes"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3464_maximize-the-distance-between-points-on-a-square",
+      "source_id": 3464,
+      "source_title": "Maximize the Distance Between Points on a Square",
+      "adapted": "3464_most-separated-points-on-a-square-boundary",
+      "id": 3464,
+      "title": "Most Separated Points on a Square Boundary",
+      "api": {
+        "maxDistance": "mostSeparated",
+        "max_distance": "most_separated"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3466_maximum-coin-collection",
+      "source_id": 3466,
+      "source_title": "Maximum Coin Collection",
+      "adapted": "3466_richest-two-lane-ride",
+      "id": 3466,
+      "title": "Richest Two-Lane Ride",
+      "api": {
+        "maxCoins": "richestRide",
+        "max_coins": "richest_ride"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3472_longest-palindromic-subsequence-after-at-most-k-operations",
+      "source_id": 3472,
+      "source_title": "Longest Palindromic Subsequence After at Most K Operations",
+      "adapted": "3472_longest-scattered-palindrome-within-k-letter-shifts",
+      "id": 3472,
+      "title": "Longest Scattered Palindrome Within k Letter Shifts",
+      "api": {
+        "longestPalindromicSubsequence": "longestWithinShifts",
+        "longest_palindromic_subsequence": "longest_within_shifts"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3473_sum-of-k-subarrays-with-length-at-least-m",
+      "source_id": 3473,
+      "source_title": "Sum of K Subarrays With Length at Least M",
+      "adapted": "3473_best-k-disjoint-windows-of-minimum-length-m",
+      "id": 3473,
+      "title": "Best k Disjoint Windows of Minimum Length m",
+      "api": {
+        "maxSum": "bestWindows",
+        "max_sum": "best_windows"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3478_choose-k-elements-with-maximum-sum",
+      "source_id": 3478,
+      "source_title": "Choose K Elements With Maximum Sum",
+      "adapted": "3478_top-k-sums-below-each-key",
+      "id": 3478,
+      "title": "Top-k Sums Below Each Key",
+      "api": {
+        "findMaxSum": "topKSums",
+        "find_max_sum": "top_k_sums"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3480_maximize-subarrays-after-removing-one-conflicting-pair",
+      "source_id": 3480,
+      "source_title": "Maximize Subarrays After Removing One Conflicting Pair",
+      "adapted": "3480_clean-subarrays-after-one-pair-removal",
+      "id": 3480,
+      "title": "Clean Subarrays After One Pair Removal",
+      "api": {
+        "maxSubarrays": "cleanSubarrays",
+        "max_subarrays": "clean_subarrays",
+        "conflictingPairs": "forbiddenPairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3482_analyze-organization-hierarchy",
+      "source_id": 3482,
+      "source_title": "Analyze Organization Hierarchy",
+      "adapted": "3482_reporting-tree-rollup",
+      "id": 3482,
+      "title": "Reporting Tree Rollup",
+      "api": {
+        "Employees": "Staff",
+        "employee_id": "staff_id",
+        "employee_name": "staff_name",
+        "manager_id": "supervisor_id",
+        "level": "depth",
+        "team_size": "reports",
+        "budget": "payroll"
+      },
+      "kind": "sql",
+      "figures": "none"
+    },
+    {
+      "source": "3485_longest-common-prefix-of-k-strings-after-removal",
+      "source_id": 3485,
+      "source_title": "Longest Common Prefix of K Strings After Removal",
+      "adapted": "3485_longest-shared-prefix-after-each-deletion",
+      "id": 3485,
+      "title": "Longest Shared Prefix After Each Deletion",
+      "api": {
+        "longestCommonPrefix": "longestSharedPrefix",
+        "longest_common_prefix": "longest_shared_prefix"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3486_longest-special-path-ii",
+      "source_id": 3486,
+      "source_title": "Longest Special Path II",
+      "adapted": "3486_longest-distinct-value-path-with-one-repeat",
+      "id": 3486,
+      "title": "Longest Distinct-Value Path With One Repeat",
+      "api": {
+        "longestSpecialPath": "longestOneRepeatPath",
+        "longest_special_path": "longest_one_repeat_path"
+      },
+      "kind": "function",
+      "figures": "regenerated"
     }
   ]
 }

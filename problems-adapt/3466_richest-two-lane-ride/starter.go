@@ -1,0 +1,3 @@
+func richestRide(lane1 []int, lane2 []int) int64 {
+	panic("TODO")
+}

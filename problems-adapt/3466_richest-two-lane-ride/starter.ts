@@ -1,0 +1,3 @@
+function richestRide(lane1: number[], lane2: number[]): number {
+    throw new Error("TODO");
+}

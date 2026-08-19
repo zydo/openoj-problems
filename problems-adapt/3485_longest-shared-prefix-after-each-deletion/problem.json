@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": 3485,
+  "slug": "longest-shared-prefix-after-each-deletion",
+  "title": "Longest Shared Prefix After Each Deletion",
+  "difficulty": "H4",
+  "tags": [
+    "Trie",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestSharedPrefix",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "longestSharedPrefix",
+      "rust": "longest_shared_prefix",
+      "typescript": "longestSharedPrefix"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
