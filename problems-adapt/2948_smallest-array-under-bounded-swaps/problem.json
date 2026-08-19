@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 2948,
+  "slug": "smallest-array-under-bounded-swaps",
+  "title": "Smallest Array Under Bounded Swaps",
+  "difficulty": "H3",
+  "tags": [
+    "Union-Find",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestArrayUnderBoundedSwaps",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "limit",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "smallestArrayUnderBoundedSwaps",
+      "rust": "smallest_array_under_bounded_swaps",
+      "typescript": "smallestArrayUnderBoundedSwaps"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

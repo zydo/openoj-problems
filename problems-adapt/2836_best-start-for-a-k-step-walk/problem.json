@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": 2836,
+  "slug": "best-start-for-a-k-step-walk",
+  "title": "Best Start for a k-Step Walk",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bestWalkSum",
+    "parameters": [
+      {
+        "name": "receiver",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "bestWalkSum",
+      "rust": "best_walk_sum",
+      "typescript": "bestWalkSum"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

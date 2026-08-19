@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 2969,
+  "slug": "fewest-coins-to-take-every-fruit",
+  "title": "Fewest Coins to Take Every Fruit",
+  "difficulty": "H4",
+  "tags": [
+    "Dynamic Programming",
+    "Monotonic Queue"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minCoinsForAllFruits",
+    "parameters": [
+      {
+        "name": "prices",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "minCoinsForAllFruits",
+      "rust": "min_coins_for_all_fruits",
+      "typescript": "minCoinsForAllFruits"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

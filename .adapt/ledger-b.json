@@ -2658,6 +2658,217 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2406_divide-intervals-into-minimum-number-of-groups",
+      "source_id": 2406,
+      "source_title": "Divide Intervals Into Minimum Number of Groups",
+      "adapted": "2406_fewest-interval-groups",
+      "id": 2406,
+      "title": "Fewest Interval Groups",
+      "api": {
+        "minGroups": "fewestIntervalGroups",
+        "min_groups": "fewest_interval_groups"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2407_longest-increasing-subsequence-ii",
+      "source_id": 2407,
+      "source_title": "Longest Increasing Subsequence II",
+      "adapted": "2407_longest-increasing-subsequence-with-bounded-steps",
+      "id": 2407,
+      "title": "Longest Increasing Subsequence With Bounded Steps",
+      "api": {
+        "lengthOfLIS": "lengthOfBoundedStepLIS",
+        "length_of_lis": "length_of_bounded_step_lis"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2497_maximum-star-sum-of-a-graph",
+      "source_id": 2497,
+      "source_title": "Maximum Star Sum of a Graph",
+      "adapted": "2497_largest-star-sum-in-a-graph",
+      "id": 2497,
+      "title": "Largest Star Sum in a Graph",
+      "api": {
+        "maxStarSum": "largestStarSum",
+        "max_star_sum": "largest_star_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2503_maximum-number-of-points-from-grid-queries",
+      "source_id": 2503,
+      "source_title": "Maximum Number of Points From Grid Queries",
+      "adapted": "2503_reachable-grid-cells-per-query",
+      "id": 2503,
+      "title": "Reachable Grid Cells Per Query",
+      "api": {
+        "maxPoints": "reachableCellsPerQuery",
+        "max_points": "reachable_cells_per_query"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2818_apply-operations-to-maximize-score",
+      "source_id": 2818,
+      "source_title": "Apply Operations to Maximize Score",
+      "adapted": "2818_choose-subarrays-for-the-largest-product",
+      "id": 2818,
+      "title": "Choose Subarrays for the Largest Product",
+      "api": {
+        "maximumScore": "largestProduct",
+        "maximum_score": "largest_product"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2827_number-of-beautiful-integers-in-the-range",
+      "source_id": 2827,
+      "source_title": "Number of Beautiful Integers in the Range",
+      "adapted": "2827_balanced-digit-multiples-in-a-range",
+      "id": 2827,
+      "title": "Balanced-Digit Multiples in a Range",
+      "api": {
+        "numberOfBeautifulIntegers": "countBalancedMultiples",
+        "number_of_beautiful_integers": "count_balanced_multiples"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2830_maximize-the-profit-as-the-salesman",
+      "source_id": 2830,
+      "source_title": "Maximize the Profit as the Salesman",
+      "adapted": "2830_best-total-from-disjoint-segments",
+      "id": 2830,
+      "title": "Best Total from Disjoint Segments",
+      "api": {
+        "maximizeTheProfit": "maxDisjointTotal",
+        "maximize_the_profit": "max_disjoint_total",
+        "offers": "segments"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2832_maximal-range-that-each-element-is-maximum-in-it",
+      "source_id": 2832,
+      "source_title": "Maximal Range That Each Element Is Maximum in It",
+      "adapted": "2832_widest-span-where-each-element-is-maximum",
+      "id": 2832,
+      "title": "Widest Span Where Each Element Is Maximum",
+      "api": {
+        "maximumLengthOfRanges": "widestSpans",
+        "maximum_length_of_ranges": "widest_spans"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2836_maximize-value-of-function-in-a-ball-passing-game",
+      "source_id": 2836,
+      "source_title": "Maximize Value of Function in a Ball Passing Game",
+      "adapted": "2836_best-start-for-a-k-step-walk",
+      "id": 2836,
+      "title": "Best Start for a k-Step Walk",
+      "api": {
+        "getMaxFunctionValue": "bestWalkSum",
+        "get_max_function_value": "best_walk_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2845_count-of-interesting-subarrays",
+      "source_id": 2845,
+      "source_title": "Count of Interesting Subarrays",
+      "adapted": "2845_count-subarrays-with-matching-residues",
+      "id": 2845,
+      "title": "Count Subarrays with Matching Residues",
+      "api": {
+        "countInterestingSubarrays": "countResidueMatches",
+        "count_interesting_subarrays": "count_residue_matches"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2940_find-building-where-alice-and-bob-can-meet",
+      "source_id": 2940,
+      "source_title": "Find Building Where Alice and Bob Can Meet",
+      "adapted": "2940_leftmost-reachable-point-from-two-positions",
+      "id": 2940,
+      "title": "Leftmost Reachable Point From Two Positions",
+      "api": {
+        "leftmostBuildingQueries": "leftmostMeetingPoints",
+        "leftmost_building_queries": "leftmost_meeting_points"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2948_make-lexicographically-smallest-array-by-swapping-elements",
+      "source_id": 2948,
+      "source_title": "Make Lexicographically Smallest Array by Swapping Elements",
+      "adapted": "2948_smallest-array-under-bounded-swaps",
+      "id": 2948,
+      "title": "Smallest Array Under Bounded Swaps",
+      "api": {
+        "lexicographicallySmallestArray": "smallestArrayUnderBoundedSwaps",
+        "lexicographically_smallest_array": "smallest_array_under_bounded_swaps"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2952_minimum-number-of-coins-to-be-added",
+      "source_id": 2952,
+      "source_title": "Minimum Number of Coins to be Added",
+      "adapted": "2952_fewest-coins-to-cover-every-sum",
+      "id": 2952,
+      "title": "Fewest Coins to Cover Every Sum",
+      "api": {
+        "minimumAddedCoins": "minCoinsToCoverSums",
+        "minimum_added_coins": "min_coins_to_cover_sums"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2969_minimum-number-of-coins-for-fruits-ii",
+      "source_id": 2969,
+      "source_title": "Minimum Number of Coins for Fruits II",
+      "adapted": "2969_fewest-coins-to-take-every-fruit",
+      "id": 2969,
+      "title": "Fewest Coins to Take Every Fruit",
+      "api": {
+        "minimumCoins": "minCoinsForAllFruits",
+        "minimum_coins": "min_coins_for_all_fruits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2971_find-polygon-with-the-largest-perimeter",
+      "source_id": 2971,
+      "source_title": "Find Polygon With the Largest Perimeter",
+      "adapted": "2971_largest-polygon-perimeter",
+      "id": 2971,
+      "title": "Largest Polygon Perimeter",
+      "api": {
+        "largestPerimeter": "maxPolygonPerimeter",
+        "largest_perimeter": "max_polygon_perimeter"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
