@@ -409,6 +409,20 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0780_reaching-points",
+      "source_id": 780,
+      "source_title": "Reaching Points",
+      "adapted": "0780_additive-pair-reachability",
+      "id": 780,
+      "title": "Additive Pair Reachability",
+      "api": {
+        "reachingPoints": "canTransformAdditivePair",
+        "reaching_points": "can_transform_additive_pair"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
