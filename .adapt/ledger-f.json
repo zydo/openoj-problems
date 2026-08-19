@@ -507,6 +507,37 @@
       "api": {},
       "kind": "design",
       "figures": "none"
+    },
+    {
+      "source": "1834_single-threaded-cpu",
+      "source_id": 1834,
+      "source_title": "Single-Threaded CPU",
+      "adapted": "1834_shortest-job-first-schedule",
+      "id": 1834,
+      "title": "Shortest Job First Schedule",
+      "api": {
+        "getOrder": "processingOrder",
+        "get_order": "processing_order",
+        "tasks": "jobs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3055_top-percentile-fraud",
+      "source_id": 3055,
+      "source_title": "Top Percentile Fraud",
+      "adapted": "3055_top-percentile-alerts",
+      "id": 3055,
+      "title": "Top Percentile Alerts",
+      "api": {
+        "Fraud": "Alerts",
+        "policy_id": "alert_id",
+        "state": "region",
+        "fraud_score": "risk_score"
+      },
+      "kind": "sql",
+      "figures": "none"
     }
   ]
 }

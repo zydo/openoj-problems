@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": 3055,
+  "slug": "top-percentile-alerts",
+  "title": "Top Percentile Alerts",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL",
+    "Window Function"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Alerts (alert_id INTEGER, region TEXT, risk_score REAL);"
+    }
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
