@@ -155,6 +155,20 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0583_delete-operation-for-two-strings",
+      "source_id": 583,
+      "source_title": "Delete Operation for Two Strings",
+      "adapted": "0583_equalize-strings-by-deletion",
+      "id": 583,
+      "title": "Equalize Strings by Deletion",
+      "api": {
+        "minDistance": "minimumDeletionsToEqual",
+        "min_distance": "minimum_deletions_to_equal"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
