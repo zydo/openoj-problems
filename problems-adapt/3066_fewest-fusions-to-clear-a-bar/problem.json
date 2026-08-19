@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 3066,
+  "slug": "fewest-fusions-to-clear-a-bar",
+  "title": "Fewest Fusions to Clear a Bar",
+  "difficulty": "H2",
+  "tags": [
+    "Heap"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestFusions",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestFusions",
+      "rust": "fewest_fusions",
+      "typescript": "fewestFusions"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

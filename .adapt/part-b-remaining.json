@@ -1,11 +1,4 @@
 [
-  "2536_increment-submatrices-by-one",
-  "2537_count-the-number-of-good-subarrays",
-  "2542_maximum-subsequence-score",
-  "3040_maximum-number-of-operations-with-the-same-score-ii",
-  "3043_find-the-length-of-the-longest-common-prefix",
-  "3049_earliest-second-to-mark-indices-ii",
-  "3066_minimum-operations-to-exceed-threshold-value-ii",
   "3068_find-the-maximum-sum-of-node-values",
   "3070_count-submatrices-with-top-left-element-and-sum-less-than-k",
   "3072_distribute-elements-into-two-arrays-ii"

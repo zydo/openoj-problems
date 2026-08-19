@@ -2913,6 +2913,105 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2536_increment-submatrices-by-one",
+      "source_id": 2536,
+      "source_title": "Increment Submatrices by One",
+      "adapted": "2536_rectangle-coverage-counts",
+      "id": 2536,
+      "title": "Rectangle Coverage Counts",
+      "api": {
+        "rangeAddQueries": "rectangleCoverage",
+        "range_add_queries": "rectangle_coverage"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2537_count-the-number-of-good-subarrays",
+      "source_id": 2537,
+      "source_title": "Count the Number of Good Subarrays",
+      "adapted": "2537_subarrays-with-at-least-k-equal-pairs",
+      "id": 2537,
+      "title": "Subarrays With At Least K Equal Pairs",
+      "api": {
+        "countGood": "countEqualPairSubarrays",
+        "count_good": "count_equal_pair_subarrays"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2542_maximum-subsequence-score",
+      "source_id": 2542,
+      "source_title": "Maximum Subsequence Score",
+      "adapted": "2542_largest-sum-min-product-of-k-picks",
+      "id": 2542,
+      "title": "Largest Sum-Min Product of K Picks",
+      "api": {
+        "maxScore": "largestSumMinProduct",
+        "max_score": "largest_sum_min_product"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3040_maximum-number-of-operations-with-the-same-score-ii",
+      "source_id": 3040,
+      "source_title": "Maximum Number of Operations With the Same Score II",
+      "adapted": "3040_most-end-pair-removals-with-one-sum",
+      "id": 3040,
+      "title": "Most End-Pair Removals With One Sum",
+      "api": {
+        "maxOperations": "mostEndPairRemovals",
+        "max_operations": "most_end_pair_removals"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3043_find-the-length-of-the-longest-common-prefix",
+      "source_id": 3043,
+      "source_title": "Find the Length of the Longest Common Prefix",
+      "adapted": "3043_longest-shared-leading-digits",
+      "id": 3043,
+      "title": "Longest Shared Leading Digits",
+      "api": {
+        "longestCommonPrefix": "longestSharedPrefix",
+        "longest_common_prefix": "longest_shared_prefix"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3049_earliest-second-to-mark-indices-ii",
+      "source_id": 3049,
+      "source_title": "Earliest Second to Mark Indices II",
+      "adapted": "3049_earliest-time-to-finalize-every-counter",
+      "id": 3049,
+      "title": "Earliest Time to Finalize Every Counter",
+      "api": {
+        "earliestSecondToMarkIndices": "earliestFinalizeTime",
+        "earliest_second_to_mark_indices": "earliest_finalize_time",
+        "changeIndices": "resets"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3066_minimum-operations-to-exceed-threshold-value-ii",
+      "source_id": 3066,
+      "source_title": "Minimum Operations to Exceed Threshold Value II",
+      "adapted": "3066_fewest-fusions-to-clear-a-bar",
+      "id": 3066,
+      "title": "Fewest Fusions to Clear a Bar",
+      "api": {
+        "minOperations": "fewestFusions",
+        "min_operations": "fewest_fusions"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
