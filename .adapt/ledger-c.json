@@ -367,6 +367,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0767_reorganize-string",
+      "source_id": 767,
+      "source_title": "Reorganize String",
+      "adapted": "0767_separate-repeated-symbols",
+      "id": 767,
+      "title": "Separate Repeated Symbols",
+      "api": {
+        "reorganizeString": "separateRepeatedSymbols",
+        "reorganize_string": "separate_repeated_symbols"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
