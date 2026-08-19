@@ -932,6 +932,21 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "3620_network-recovery-pathways",
+      "source_id": 3620,
+      "source_title": "Network Recovery Pathways",
+      "adapted": "3620_best-bottleneck-route-within-a-budget",
+      "id": 3620,
+      "title": "Best Bottleneck Route Within a Budget",
+      "api": {
+        "findMaxPathScore": "bestBottleneckRoute",
+        "find_max_path_score": "best_bottleneck_route",
+        "online": "available"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
