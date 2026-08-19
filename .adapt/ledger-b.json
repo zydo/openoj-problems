@@ -2098,6 +2098,161 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2327_number-of-people-aware-of-a-secret",
+      "source_id": 2327,
+      "source_title": "Number of People Aware of a Secret",
+      "adapted": "2327_counting-secret-holders",
+      "id": 2327,
+      "title": "Counting Secret Holders",
+      "api": {
+        "peopleAwareOfSecret": "countSecretHolders",
+        "people_aware_of_secret": "count_secret_holders"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2401_longest-nice-subarray",
+      "source_id": 2401,
+      "source_title": "Longest Nice Subarray",
+      "adapted": "2401_longest-bit-disjoint-subarray",
+      "id": 2401,
+      "title": "Longest Bit-Disjoint Subarray",
+      "api": {
+        "longestNiceSubarray": "longestBitDisjointSubarray",
+        "longest_nice_subarray": "longest_bit_disjoint_subarray"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2477_minimum-fuel-cost-to-report-to-the-capital",
+      "source_id": 2477,
+      "source_title": "Minimum Fuel Cost to Report to the Capital",
+      "adapted": "2477_carpool-fuel-to-the-capital",
+      "id": 2477,
+      "title": "Carpool Fuel to the Capital",
+      "api": {
+        "minimumFuelCost": "carpoolFuel",
+        "minimum_fuel_cost": "carpool_fuel"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2478_number-of-beautiful-partitions",
+      "source_id": 2478,
+      "source_title": "Number of Beautiful Partitions",
+      "adapted": "2478_count-partitions-with-prime-starts",
+      "id": 2478,
+      "title": "Count Partitions With Prime Starts",
+      "api": {
+        "beautifulPartitions": "countPrimeStartParts",
+        "beautiful_partitions": "count_prime_start_parts"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2487_remove-nodes-from-linked-list",
+      "source_id": 2487,
+      "source_title": "Remove Nodes From Linked List",
+      "adapted": "2487_filter-list-by-suffix-maximum",
+      "id": 2487,
+      "title": "Filter List by Suffix Maximum",
+      "api": {
+        "removeNodes": "filterBySuffixMax",
+        "remove_nodes": "filter_by_suffix_max"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2599_make-the-prefix-sum-non-negative",
+      "source_id": 2599,
+      "source_title": "Make the Prefix Sum Non-negative",
+      "adapted": "2599_least-deferrals-for-nonnegative-prefixes",
+      "id": 2599,
+      "title": "Least Deferrals for Nonnegative Prefixes",
+      "api": {
+        "makePrefSumNonNegative": "leastDeferrals",
+        "make_pref_sum_non_negative": "least_deferrals"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2602_minimum-operations-to-make-all-array-elements-equal",
+      "source_id": 2602,
+      "source_title": "Minimum Operations to Make All Array Elements Equal",
+      "adapted": "2602_steps-to-align-every-value",
+      "id": 2602,
+      "title": "Steps to Align Every Value",
+      "api": {
+        "minOperations": "alignmentCosts",
+        "min_operations": "alignment_costs",
+        "queries": "targets"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2638_count-the-number-of-k-free-subsets",
+      "source_id": 2638,
+      "source_title": "Count the Number of K-Free Subsets",
+      "adapted": "2638_count-subsets-avoiding-difference-k",
+      "id": 2638,
+      "title": "Count Subsets Avoiding Difference k",
+      "api": {
+        "countTheNumOfKFreeSubsets": "countSubsetsAvoidingDiff",
+        "count_the_num_of_k_free_subsets": "count_subsets_avoiding_diff"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2646_minimize-the-total-price-of-the-trips",
+      "source_id": 2646,
+      "source_title": "Minimize the Total Price of the Trips",
+      "adapted": "2646_cheapest-trips-after-halving-node-prices",
+      "id": 2646,
+      "title": "Cheapest Trips After Halving Node Prices",
+      "api": {
+        "minimumTotalPrice": "cheapestTripsTotal",
+        "minimum_total_price": "cheapest_trips_total"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2659_make-array-empty",
+      "source_id": 2659,
+      "source_title": "Make Array Empty",
+      "adapted": "2659_steps-to-drain-a-rotating-queue",
+      "id": 2659,
+      "title": "Steps to Drain a Rotating Queue",
+      "api": {
+        "countOperationsToEmptyArray": "stepsToDrainQueue",
+        "count_operations_to_empty_array": "steps_to_drain_queue"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2751_robot-collisions",
+      "source_id": 2751,
+      "source_title": "Robot Collisions",
+      "adapted": "2751_line-collision-survivors",
+      "id": 2751,
+      "title": "Line Collision Survivors",
+      "api": {
+        "survivedRobotsHealths": "survivorHealths",
+        "survived_robots_healths": "survivor_healths"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
