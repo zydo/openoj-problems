@@ -27,7 +27,13 @@
       "kind": "fleet-interrupted",
       "agents_lost": 8,
       "note": "Host session restart killed all 8 Part B chunk agents (not rate limiting). 7 finished bundles were merged and committed (e41571ef); all 8 resumed from their saved transcripts at target 8. Part B live fleet: 8 as of 17:40 PDT."
+    },
+    {
+      "at": "2026-08-18T17:50:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 6,
+      "note": "Second fleet-wide 5-hour-pool exhaustion today (waves 04,05,06,08,09,10 died on 429; reset reported as 2026-08-19 12:33:02 in the error's own clock, likely UTC+8 = 21:33 PDT). Same class as 05:45 this morning: total consumption, not concurrency -- target stays 8. Main-session channel still works; bookkeeping done inline; fleet restart scheduled via timer for 21:41 PDT, with fallback to the pessimistic reading (12:33 PDT Aug 19) if the restart 429s again."
     }
   ],
-  "pool_resets_at": "2026-08-18T09:45:00-07:00"
+  "pool_resets_at": "2026-08-18T21:33:00-07:00"
 }

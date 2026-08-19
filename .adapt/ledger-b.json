@@ -1128,6 +1128,49 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "2151_maximum-good-people-based-on-statements",
+      "source_id": 2151,
+      "source_title": "Maximum Good People Based on Statements",
+      "adapted": "2151_largest-truthful-group",
+      "id": 2151,
+      "title": "Largest Truthful Group",
+      "api": {
+        "maximumGood": "mostTruthful",
+        "maximum_good": "most_truthful"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2281_sum-of-total-strength-of-wizards",
+      "source_id": 2281,
+      "source_title": "Sum of Total Strength of Wizards",
+      "adapted": "2281_sum-of-min-times-sum-over-all-subarrays",
+      "id": 2281,
+      "title": "Sum of Min Times Sum Over All Subarrays",
+      "api": {
+        "totalStrength": "totalMinTimesSum",
+        "total_strength": "total_min_times_sum",
+        "strength": "power"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2350_shortest-impossible-sequence-of-rolls",
+      "source_id": 2350,
+      "source_title": "Shortest Impossible Sequence of Rolls",
+      "adapted": "2350_shortest-missing-roll-pattern",
+      "id": 2350,
+      "title": "Shortest Missing Roll Pattern",
+      "api": {
+        "shortestSequence": "shortestMissing",
+        "shortest_sequence": "shortest_missing"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
