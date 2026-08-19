@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 1072,
+  "slug": "uniform-rows-after-column-flips",
+  "title": "Uniform Rows After Column Flips",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "mostUniformRowsAfterFlips",
+    "parameters": [
+      {
+        "name": "matrix",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "mostUniformRowsAfterFlips",
+      "rust": "most_uniform_rows_after_flips",
+      "typescript": "mostUniformRowsAfterFlips"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

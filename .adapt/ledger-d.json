@@ -1,0 +1,74 @@
+{
+  "entries": [
+    {
+      "source": "1048_longest-string-chain",
+      "source_id": 1048,
+      "source_title": "Longest String Chain",
+      "adapted": "1048_longest-word-chain",
+      "id": 1048,
+      "title": "Longest Word Chain",
+      "api": {
+        "longestStrChain": "longestWordChain",
+        "longest_str_chain": "longest_word_chain"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1067_digit-count-in-range",
+      "source_id": 1067,
+      "source_title": "Digit Count in Range",
+      "adapted": "1067_digit-occurrences-in-a-range",
+      "id": 1067,
+      "title": "Digit Occurrences in a Range",
+      "api": {
+        "digitsCount": "countDigitOccurrences",
+        "digits_count": "count_digit_occurrences"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1072_flip-columns-for-maximum-number-of-equal-rows",
+      "source_id": 1072,
+      "source_title": "Flip Columns For Maximum Number of Equal Rows",
+      "adapted": "1072_uniform-rows-after-column-flips",
+      "id": 1072,
+      "title": "Uniform Rows After Column Flips",
+      "api": {
+        "maxEqualRowsAfterFlips": "mostUniformRowsAfterFlips",
+        "max_equal_rows_after_flips": "most_uniform_rows_after_flips"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1074_number-of-submatrices-that-sum-to-target",
+      "source_id": 1074,
+      "source_title": "Number of Submatrices That Sum to Target",
+      "adapted": "1074_count-submatrices-with-a-given-sum",
+      "id": 1074,
+      "title": "Count Submatrices With a Given Sum",
+      "api": {
+        "numSubmatrixSumTarget": "countSubmatricesWithSum",
+        "num_submatrix_sum_target": "count_submatrices_with_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1091_shortest-path-in-binary-matrix",
+      "source_id": 1091,
+      "source_title": "Shortest Path in Binary Matrix",
+      "adapted": "1091_shortest-grid-crossing",
+      "id": 1091,
+      "title": "Shortest Grid Crossing",
+      "api": {
+        "shortestPathBinaryMatrix": "shortestGridCrossing",
+        "shortest_path_binary_matrix": "shortest_grid_crossing"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    }
+  ]
+}
