@@ -66,6 +66,11 @@
       "kind": "quota-window-exhausted",
       "agents_lost": 2,
       "note": "Fifth exhaustion (~12:18 PDT; reset 15:15 PDT). g-05/g-06 died; user ordered immediate resume + fallback timer if it bounces."
+    },
+    {
+      "at": "2026-08-19T15:45:00-07:00",
+      "kind": "plan",
+      "note": "User: after Part G completes, this session continues with Part E (66). Succession now D->F->G->E. Same pattern: waves of 11, up to 3 agents."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"
