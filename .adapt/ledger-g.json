@@ -520,6 +520,47 @@
       },
       "kind": "function",
       "figures": "regenerated"
+    },
+    {
+      "source": "3435_frequencies-of-shortest-supersequences",
+      "source_id": 3435,
+      "source_title": "Frequencies of Shortest Supersequences",
+      "adapted": "3435_shortest-supersequence-letter-counts",
+      "id": 3435,
+      "title": "Shortest Supersequence Letter Counts",
+      "api": {
+        "supersequences": "supersequenceLetterCounts"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3490_count-beautiful-numbers",
+      "source_id": 3490,
+      "source_title": "Count Beautiful Numbers",
+      "adapted": "3490_digit-sum-divides-digit-product",
+      "id": 3490,
+      "title": "Digit Sum Divides Digit Product",
+      "api": {
+        "beautifulNumbers": "countSumDividesProduct",
+        "beautiful_numbers": "count_sum_divides_product"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3500_minimum-cost-to-divide-array-into-subarrays",
+      "source_id": 3500,
+      "source_title": "Minimum Cost to Divide Array Into Subarrays",
+      "adapted": "3500_cheapest-array-partition-with-index-fees",
+      "id": 3500,
+      "title": "Cheapest Array Partition With Index Fees",
+      "api": {
+        "minimumCost": "cheapestPartition",
+        "minimum_cost": "cheapest_partition"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

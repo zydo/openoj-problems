@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": 3435,
+  "slug": "shortest-supersequence-letter-counts",
+  "title": "Shortest Supersequence Letter Counts",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "String",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Topological Sort"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "supersequenceLetterCounts",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "supersequenceLetterCounts",
+      "rust": "supersequenceLetterCounts",
+      "typescript": "supersequenceLetterCounts"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
