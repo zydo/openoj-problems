@@ -357,6 +357,156 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1803_count-pairs-with-xor-in-a-range",
+      "source_id": 1803,
+      "source_title": "Count Pairs With XOR in a Range",
+      "adapted": "1803_count-pairs-within-an-xor-band",
+      "id": 1803,
+      "title": "Count Pairs Within an XOR Band",
+      "api": {
+        "countPairs": "countXorBandPairs",
+        "count_pairs": "count_xor_band_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1819_number-of-different-subsequences-gcds",
+      "source_id": 1819,
+      "source_title": "Number of Different Subsequences GCDs",
+      "adapted": "1819_distinct-subsequence-gcds",
+      "id": 1819,
+      "title": "Distinct Subsequence GCDs",
+      "api": {
+        "countDifferentSubsequenceGCDs": "countSubsequenceGcds",
+        "count_different_subsequence_gcds": "count_subsequence_gcds"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1823_find-the-winner-of-the-circular-game",
+      "source_id": 1823,
+      "source_title": "Find the Winner of the Circular Game",
+      "adapted": "1823_last-one-standing-in-a-circle",
+      "id": 1823,
+      "title": "Last One Standing In A Circle",
+      "api": {
+        "findTheWinner": "circleSurvivor",
+        "find_the_winner": "circle_survivor"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1912_design-movie-rental-system",
+      "source_id": 1912,
+      "source_title": "Design Movie Rental System",
+      "adapted": "1912_movie-rental-desk",
+      "id": 1912,
+      "title": "Movie Rental Desk",
+      "api": {
+        "MovieRentingSystem": "MovieRentalDesk",
+        "drop": "handBack"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "2034_stock-price-fluctuation",
+      "source_id": 2034,
+      "source_title": "Stock Price Fluctuation",
+      "adapted": "2034_correctable-price-log",
+      "id": 2034,
+      "title": "Correctable Price Log",
+      "api": {
+        "StockPrice": "PriceLog",
+        "update": "record",
+        "current": "latest",
+        "maximum": "highest",
+        "minimum": "lowest"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "2050_parallel-courses-iii",
+      "source_id": 2050,
+      "source_title": "Parallel Courses III",
+      "adapted": "2050_fewest-course-months",
+      "id": 2050,
+      "title": "Fewest Course Months",
+      "api": {
+        "minimumTime": "fewestCourseMonths",
+        "minimum_time": "fewest_course_months",
+        "relations": "precedence"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2276_count-integers-in-intervals",
+      "source_id": 2276,
+      "source_title": "Count Integers in Intervals",
+      "adapted": "2276_growing-interval-union",
+      "id": 2276,
+      "title": "Growing Interval Union",
+      "api": {
+        "CountIntervals": "IntervalUnion",
+        "count": "size"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "2286_booking-concert-tickets-in-groups",
+      "source_id": 2286,
+      "source_title": "Booking Concert Tickets in Groups",
+      "adapted": "2286_hall-seating",
+      "id": 2286,
+      "title": "Hall Seating",
+      "api": {
+        "BookMyShow": "HallSeating",
+        "gather": "block",
+        "scatter": "spread",
+        "maxRow": "lastRow"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "2353_design-a-food-rating-system",
+      "source_id": 2353,
+      "source_title": "Design a Food Rating System",
+      "adapted": "2353_player-ratings-by-team",
+      "id": 2353,
+      "title": "Player Ratings by Team",
+      "api": {
+        "FoodRatings": "PlayerRatings",
+        "changeRating": "setRating",
+        "highestRated": "bestPlayer",
+        "foods": "players",
+        "cuisines": "teams",
+        "ratings": "scores",
+        "food": "player",
+        "newRating": "score",
+        "cuisine": "team"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "2642_design-graph-with-shortest-path-calculator",
+      "source_id": 2642,
+      "source_title": "Design Graph With Shortest Path Calculator",
+      "adapted": "2642_distances-in-a-growing-digraph",
+      "id": 2642,
+      "title": "Distances in a Growing Digraph",
+      "api": {},
+      "kind": "design",
+      "figures": "none"
     }
   ]
 }
