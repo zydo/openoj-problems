@@ -199,7 +199,11 @@ illegal-goods` (moved out of Part B at completion).
 
 - **D — claimed by the Part B session** (2026-08-19 ~03:50), starting
   with `wave-d-01.json` (first 5 keys) per instruction; fragments to
-  `.adapt/incoming-d/`, merged with `--part d`.
+  `.adapt/incoming-d/`, merged with `--part d`. Extended the same day to
+  all of D (`wave-d-02` .. `wave-d-07` cover the remaining 62), one
+  agent at a time, and on D's completion the session continues with
+  **Part F** under the same pattern.
+- **F — reserved for the Part B session**, to start when D completes.
 
 ## Part B complete (2026-08-19 03:43)
 
