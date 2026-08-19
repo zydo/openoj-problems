@@ -2630,6 +2630,34 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2926_maximum-balanced-subsequence-sum",
+      "source_id": 2926,
+      "source_title": "Maximum Balanced Subsequence Sum",
+      "adapted": "2926_largest-non-decreasing-offset-subsequence-sum",
+      "id": 2926,
+      "title": "Largest Non-Decreasing-Offset Subsequence Sum",
+      "api": {
+        "maxBalancedSubsequenceSum": "maxOffsetSubsequenceSum",
+        "max_balanced_subsequence_sum": "max_offset_subsequence_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3026_maximum-good-subarray-sum",
+      "source_id": 3026,
+      "source_title": "Maximum Good Subarray Sum",
+      "adapted": "3026_best-subarray-sum-with-endpoints-k-apart",
+      "id": 3026,
+      "title": "Best Subarray Sum With Endpoints k Apart",
+      "api": {
+        "maximumSubarraySum": "bestSubarraySum",
+        "maximum_subarray_sum": "best_subarray_sum"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
