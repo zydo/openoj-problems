@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect x="0" y="0" width="560" height="250" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4169E1"/>
+    </marker>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a2026"/>
+    </marker>
+  </defs>
+  <!-- board window x=0..3, y=0..3 ; cell (x,y) at (100+44(x-0), 30+44(3-y)) -->
+  <g stroke="#98a2ac" stroke-width="1.1">
+    <rect x="100" y="30" width="44" height="44" fill="#ffffff"/>
+    <rect x="144" y="30" width="44" height="44" fill="#e9eef4"/>
+    <rect x="188" y="30" width="44" height="44" fill="#ffffff"/>
+    <rect x="232" y="30" width="44" height="44" fill="#e9eef4"/>
+    <rect x="100" y="74" width="44" height="44" fill="#e9eef4"/>
+    <rect x="144" y="74" width="44" height="44" fill="#ffffff"/>
+    <rect x="188" y="74" width="44" height="44" fill="#e9eef4"/>
+    <rect x="232" y="74" width="44" height="44" fill="#ffffff"/>
+    <rect x="100" y="118" width="44" height="44" fill="#ffffff"/>
+    <rect x="144" y="118" width="44" height="44" fill="#e9eef4"/>
+    <rect x="188" y="118" width="44" height="44" fill="#ffffff"/>
+    <rect x="232" y="118" width="44" height="44" fill="#e9eef4"/>
+    <rect x="100" y="162" width="44" height="44" fill="#e9eef4"/>
+    <rect x="144" y="162" width="44" height="44" fill="#ffffff"/>
+    <rect x="188" y="162" width="44" height="44" fill="#e9eef4"/>
+    <rect x="232" y="162" width="44" height="44" fill="#ffffff"/>
+  </g>
+  <!-- path cells -->
+  <g fill="#e8edfa" stroke="#4169E1" stroke-width="1.8">
+    <rect x="100" y="74" width="44" height="44"/>
+    <rect x="188" y="118" width="44" height="44"/>
+    <rect x="100" y="162" width="44" height="44"/>
+    <rect x="144" y="74" width="44" height="44"/>
+    <rect x="188" y="162" width="44" height="44"/>
+    <rect x="232" y="74" width="44" height="44"/>
+    <rect x="144" y="118" width="44" height="44"/>
+  </g>
+  <g fill="#5c6b76" font-size="11.5" text-anchor="middle">
+    <text x="122" y="220">0</text>
+    <text x="166" y="220">1</text>
+    <text x="210" y="220">2</text>
+    <text x="254" y="220">3</text>
+    <text x="88" y="190">0</text>
+    <text x="88" y="146">1</text>
+    <text x="88" y="102">2</text>
+    <text x="88" y="58">3</text>
+  </g>
+  <!-- hops -->
+  <g fill="none" stroke-width="1.8">
+    <path d="M 197 59 L 135 89" stroke="#4169E1" marker-end="url(#arrowA)"/>
+    <path d="M 135 103 L 197 133" stroke="#4169E1" marker-end="url(#arrowA)"/>
+    <path d="M 197 147 L 135 177" stroke="#4169E1" marker-end="url(#arrowA)"/>
+    <path d="M 129 171 L 159 109" stroke="#1a2026" stroke-dasharray="5 3" marker-end="url(#arrowB)"/>
+    <path d="M 173 109 L 203 171" stroke="#1a2026" stroke-dasharray="5 3" marker-end="url(#arrowB)"/>
+    <path d="M 217 171 L 247 109" stroke="#1a2026" stroke-dasharray="5 3" marker-end="url(#arrowB)"/>
+    <path d="M 241 103 L 179 133" stroke="#4169E1" marker-end="url(#arrowA)"/>
+  </g>
+  <g font-size="11.5" font-weight="600">
+    <text x="160" y="61" fill="#4169E1">1</text>
+    <text x="160" y="131" fill="#4169E1">2</text>
+    <text x="182" y="168" fill="#4169E1">3</text>
+    <text x="143" y="146" fill="#1a2026">4</text>
+    <text x="175" y="146" fill="#1a2026">5</text>
+    <text x="245" y="146" fill="#1a2026">6</text>
+    <text x="204" y="105" fill="#4169E1">7</text>
+  </g>
+  <circle cx="210" cy="52" r="9" fill="#4169E1"/>
+  <text x="210" y="56.5" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">K</text>
+  <g fill="#1a2026">
+    <circle cx="122" cy="184" r="9"/>
+    <circle cx="166" cy="140" r="9"/>
+    <circle cx="254" cy="96" r="9"/>
+  </g>
+  <g fill="#ffffff" font-size="11" font-weight="600" text-anchor="middle">
+    <text x="122" y="188.5">0</text>
+    <text x="166" y="144.5">1</text>
+    <text x="254" y="100.5">2</text>
+  </g>
+  <!-- legend -->
+  <g font-size="12.5" fill="#5c6b76">
+    <text x="330" y="48">Alice (maximizing): hops 1-3</text>
+    <text x="330" y="66">take pawn 0 at (0,0); hop 7</text>
+    <text x="330" y="84">takes pawn 1 at (1,1).</text>
+    <text x="330" y="102">Bob (minimizing): hops 4-6</text>
+    <text x="330" y="120">take pawn 2 at (3,2).</text>
+    <text x="330" y="138"></text>
+    <text x="330" y="156" font-weight="600" fill="#1a2026">BFS from every square gives</text>
+    <text x="330" y="174" font-weight="600" fill="#1a2026">each pairwise knight distance;</text>
+    <text x="330" y="192" font-weight="600" fill="#1a2026">the mask dp plays out the</text>
+    <text x="330" y="210" font-weight="600" fill="#1a2026">game on those numbers - 7.</text>
+  </g>
+</svg>

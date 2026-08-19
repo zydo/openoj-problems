@@ -914,6 +914,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "3283_maximum-number-of-moves-to-kill-all-pawns",
+      "source_id": 3283,
+      "source_title": "Maximum Number of Moves to Kill All Pawns",
+      "adapted": "3283_most-knight-moves-to-clear-every-pawn",
+      "id": 3283,
+      "title": "Most Knight Moves to Clear Every Pawn",
+      "api": {
+        "maxMoves": "mostMoves",
+        "max_moves": "most_moves"
+      },
+      "kind": "function",
+      "figures": "regenerated"
     }
   ]
 }

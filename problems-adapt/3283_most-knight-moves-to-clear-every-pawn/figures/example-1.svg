@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 290" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect x="0" y="0" width="300" height="290" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4169E1"/>
+    </marker>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a2026"/>
+    </marker>
+  </defs>
+  <!-- board window x=0..2, y=0..3 ; cell (x,y) at (60+44(x-0), 30+44(3-y)) -->
+  <g stroke="#98a2ac" stroke-width="1.1">
+    <rect x="60" y="30" width="44" height="44" fill="#ffffff"/>
+    <rect x="104" y="30" width="44" height="44" fill="#e9eef4"/>
+    <rect x="148" y="30" width="44" height="44" fill="#ffffff"/>
+    <rect x="60" y="74" width="44" height="44" fill="#e9eef4"/>
+    <rect x="104" y="74" width="44" height="44" fill="#ffffff"/>
+    <rect x="148" y="74" width="44" height="44" fill="#e9eef4"/>
+    <rect x="60" y="118" width="44" height="44" fill="#ffffff"/>
+    <rect x="104" y="118" width="44" height="44" fill="#e9eef4"/>
+    <rect x="148" y="118" width="44" height="44" fill="#ffffff"/>
+    <rect x="60" y="162" width="44" height="44" fill="#e9eef4"/>
+    <rect x="104" y="162" width="44" height="44" fill="#ffffff"/>
+    <rect x="148" y="162" width="44" height="44" fill="#e9eef4"/>
+  </g>
+  <!-- path cells -->
+  <g fill="#e8edfa" stroke="#4169E1" stroke-width="1.8">
+    <rect x="60" y="118" width="44" height="44"/>
+    <rect x="104" y="30" width="44" height="44"/>
+    <rect x="148" y="118" width="44" height="44"/>
+    <rect x="60" y="162" width="44" height="44"/>
+  </g>
+  <g fill="#5c6b76" font-size="11.5" text-anchor="middle">
+    <text x="82" y="220">0</text>
+    <text x="126" y="220">1</text>
+    <text x="170" y="220">2</text>
+    <text x="48" y="190">0</text>
+    <text x="48" y="146">1</text>
+    <text x="48" y="102">2</text>
+    <text x="48" y="58">3</text>
+  </g>
+  <!-- hops -->
+  <g fill="none" stroke-width="1.8">
+    <path d="M 157 103 L 95 133" stroke="#4169E1" marker-end="url(#arrowA)"/>
+    <path d="M 89 127 L 119 65" stroke="#4169E1" marker-end="url(#arrowA)"/>
+    <path d="M 133 65 L 163 127" stroke="#4169E1" marker-end="url(#arrowA)"/>
+    <path d="M 157 147 L 95 177" stroke="#4169E1" marker-end="url(#arrowA)"/>
+  </g>
+  <g font-size="11.5" font-weight="600">
+    <text x="138" y="95" fill="#4169E1">1</text>
+    <text x="101" y="108" fill="#4169E1">2</text>
+    <text x="153" y="104" fill="#4169E1">3</text>
+    <text x="120" y="149" fill="#4169E1">4</text>
+  </g>
+  <circle cx="170" cy="96" r="9" fill="#4169E1"/>
+  <text x="170" y="100.5" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">K</text>
+  <g fill="#1a2026">
+    <circle cx="82" cy="184" r="9"/>
+  </g>
+  <g fill="#ffffff" font-size="11" font-weight="600" text-anchor="middle">
+    <text x="82" y="188.5">P</text>
+  </g>
+  <!-- caption -->
+  <text x="126" y="262" text-anchor="middle" fill="#5c6b76" font-size="12.5">The knight at (2, 2) reaches the</text>
+  <text x="126" y="278" text-anchor="middle" fill="#5c6b76" font-size="12.5">pawn at (0, 0) in 4 hops.</text>
+</svg>
