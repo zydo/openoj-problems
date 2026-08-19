@@ -10,9 +10,9 @@ the session pool and its half fell behind Part B's.
 
 | Part | File | To do | Notes |
 | --- | --- | --- | --- |
-| A | `.adapt/part-a.json` | 90 | plus the 49 it has already finished |
+| A | `.adapt/part-a.json` | **0 — complete** | 87 adapted; inbox drained, shard closed |
 | B | `.adapt/part-b.json` | 201 | plus the 117 it has already finished |
-| C | `.adapt/part-c.json` | 89 | new |
+| C | `.adapt/part-c.json` | 141 | 89 from the A/C/D split, plus 52 handed back by A |
 | D | `.adapt/part-d.json` | 89 | new |
 
 `part-a.json` lists everything Part A owns, finished and unfinished, so it
@@ -117,3 +117,76 @@ and 2 SQL sources from the old wave-b-27) became **Part E**:
 infrastructure and commits it; dispatching E belongs to whichever session
 takes Part E. The blocked source `2167` stayed with B
 (`.adapt/blocked-b.md`).
+
+## Part A hands 39 back to C (2026-08-19)
+
+Part A was told to finish a short tail rather than its full share, so the
+39 problems it had not yet dispatched moved to Part C, leaving A with 18:
+the 3 still in flight in `wave-a-06` plus 15 in `wave-a-07` .. `wave-a-09`.
+The in-flight three were deliberately excluded from the transfer — moving a
+key an agent is mid-way through would have two parts writing one bundle.
+
+`part-a.json` was rewritten to A's true scope (82 done + 18 to do), so it no
+longer lists work A will not do. `part-c.json` grew from 89 to 128. No family
+group was split: none of the 54 candidates had a sibling among them.
+
+One family does span the boundary, and it predates this transfer:
+`1201_ugly-number-iii` sits in A while `0264_ugly-number-ii` is already
+adapted in the frozen base as `0264_nth-five-smooth-number`. The sibling is
+finished, so there is no coordination problem — A's agent just reads the
+base ledger and matches the idiom.
+
+## Part A closes out; the rest of its tail goes to C (2026-08-19)
+
+Part A is being wound down to whatever its agents already had in hand, so
+the 5 problems in the undispatched `wave-a-09` moved to Part C as well
+(C: 128 -> 133) and that wave file was deleted. `part-a.json` is now
+84 finished + 11 in flight across `wave-a-06` (1 left), `wave-a-07` and
+`wave-a-08`.
+
+The boundary is *dispatched vs not*, not an ID range: a key an agent is
+already working cannot move without two parts writing one bundle. When
+those 11 land, Part A is complete and `.adapt/incoming/` should stay
+empty — any later fragment there would be a stray.
+
+`1201_ugly-number-iii` moved to C with the rest. Its sibling
+`0264_ugly-number-ii` is already adapted in the frozen base as
+`0264_nth-five-smooth-number`, so whoever takes it should match that
+idiom rather than invent a new one.
+
+## Part A is complete (2026-08-19)
+
+Part A finished with **87 adapted**, `.adapt/ledger-a.json` closed, and
+`.adapt/incoming/` drained to empty. `part-a.json` now lists exactly those
+87 and nothing else, so `--part a --check` reports 0 pending forever after.
+The wave files `wave-a-01` .. `wave-a-08` were consumed; 07 and 08 were
+deleted along with 09 because their unstarted keys moved on.
+
+Part A was wound down deliberately rather than run to exhaustion, so its
+remaining queue went to Part C in three transfers: 39, then 5, then the
+final 8. Part C grew 89 → 141. Nothing was dropped and nothing was
+duplicated — every key A ever owned is either in `ledger-a.json` or in
+`part-c.json`.
+
+**The one salvage.** `1124_longest-overworked-stretch` was fully authored
+when its agent was stopped — seven starters, seven solutions, statement,
+cases — but had no ledger fragment, which is the only thing that makes a
+bundle real. Rather than delete it, the gates and the local judge were
+re-run (all green, 7/7 languages, 17/17 cases) and the fragment plus report
+were reconstructed from the bundle and the source. `.adapt/report/1124_*.md`
+records that its report is reconstructed rather than agent-authored.
+
+**Interrupting cleanly.** The wind-down cut at *problem boundaries*, never
+mid-bundle: agents were told to finish only the problem in hand and to
+delete anything not finishable. That is why the tail left exactly one
+complete-but-unrecorded bundle and zero scrap. The eight keys that moved to
+C had no files on disk at all, so C starts them clean.
+
+**Not inherited by C, but worth knowing.** Three adapted bundles judge with
+`comparison: exact` on problems whose specifications admit several valid
+answers — `0753` (any shortest string), `0652` (root order unspecified) and
+`0943` (any shortest superstring). All three are pre-existing source
+defects, not adaptation errors, and all were deliberately left alone
+because `comparison` is a kept field. `0943` additionally chose examples
+with a provably unique optimum so nothing rides on the tie-break. These
+want one central decision, not per-bundle patches.

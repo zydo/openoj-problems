@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 368,
+  "slug": "longest-divisibility-chain",
+  "title": "Longest Divisibility Chain",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestDivisibilityChain",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "longestDivisibilityChain",
+      "rust": "longest_divisibility_chain",
+      "typescript": "longestDivisibilityChain"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

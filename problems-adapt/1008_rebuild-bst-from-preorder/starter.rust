@@ -1,0 +1,12 @@
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Box<TreeNode>>,
+    pub right: Option<Box<TreeNode>>,
+}
+
+impl Solution {
+    pub fn rebuild_bst_from_preorder(preorder: Vec<i32>) -> Option<Box<TreeNode>> {
+        panic!("TODO")
+    }
+}

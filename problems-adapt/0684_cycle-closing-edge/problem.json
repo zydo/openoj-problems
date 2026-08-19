@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 684,
+  "slug": "cycle-closing-edge",
+  "title": "Cycle-Closing Edge",
+  "difficulty": "H2",
+  "tags": [
+    "Graph",
+    "Union Find"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cycleClosingEdge",
+    "parameters": [
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "cycleClosingEdge",
+      "rust": "cycle_closing_edge",
+      "typescript": "cycleClosingEdge"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

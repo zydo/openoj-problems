@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": 979,
+  "slug": "equalize-tree-coins",
+  "title": "Equalize Tree Coins",
+  "difficulty": "H3",
+  "tags": [
+    "Tree DP",
+    "Tree",
+    "Binary Tree",
+    "Depth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "equalizeCoins",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "equalizeCoins",
+      "rust": "equalize_coins",
+      "typescript": "equalizeCoins"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": 737,
+  "slug": "sentences-equivalent-under-synonyms",
+  "title": "Sentences Equivalent Under Synonyms",
+  "difficulty": "H3",
+  "tags": [
+    "Union Find",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "sentencesEquivalent",
+    "parameters": [
+      {
+        "name": "wordsA",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "wordsB",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "synonyms",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "sentencesEquivalent",
+      "rust": "sentences_equivalent",
+      "typescript": "sentencesEquivalent"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

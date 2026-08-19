@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": 895,
+  "slug": "popularity-stack",
+  "title": "Popularity Stack",
+  "difficulty": "H3",
+  "tags": [
+    "Stack",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "PopularityStack",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "push",
+        "parameters": [
+          {
+            "name": "val",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "pop",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

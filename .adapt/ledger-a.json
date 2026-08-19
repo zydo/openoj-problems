@@ -703,6 +703,553 @@
       },
       "figures": "none",
       "note": "Salvaged centrally: bundle complete and green, fragment missing when the session limit killed the agent."
+    },
+    {
+      "source": "0368_largest-divisible-subset",
+      "source_id": 368,
+      "source_title": "Largest Divisible Subset",
+      "adapted": "0368_longest-divisibility-chain",
+      "id": 368,
+      "title": "Longest Divisibility Chain",
+      "api": {
+        "largestDivisibleSubset": "longestDivisibilityChain",
+        "largest_divisible_subset": "longest_divisibility_chain"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0375_guess-number-higher-or-lower-ii",
+      "source_id": 375,
+      "source_title": "Guess Number Higher or Lower II",
+      "adapted": "0375_guaranteed-guessing-budget",
+      "id": 375,
+      "title": "Guaranteed Guessing Budget",
+      "api": {
+        "getMoneyAmount": "guessingBudget",
+        "get_money_amount": "guessing_budget"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0399_evaluate-division",
+      "source_id": 399,
+      "source_title": "Evaluate Division",
+      "adapted": "0399_resolve-ratios",
+      "id": 399,
+      "title": "Resolve Ratios",
+      "api": {
+        "calcEquation": "resolveRatios",
+        "calc_equation": "resolve_ratios",
+        "equations": "pairs",
+        "values": "ratios"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0425_word-squares",
+      "source_id": 425,
+      "source_title": "Word Squares",
+      "adapted": "0425_symmetric-word-grids",
+      "id": 425,
+      "title": "Symmetric Word Grids",
+      "api": {
+        "wordSquares": "symmetricWordGrids",
+        "word_squares": "symmetric_word_grids"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0437_path-sum-iii",
+      "source_id": 437,
+      "source_title": "Path Sum III",
+      "adapted": "0437_count-paths-with-sum",
+      "id": 437,
+      "title": "Count Paths With Sum",
+      "api": {
+        "pathSum": "countPathsWithSum",
+        "path_sum": "count_paths_with_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1345_jump-game-iv",
+      "source_id": 1345,
+      "source_title": "Jump Game IV",
+      "adapted": "1345_shortest-leap-route",
+      "id": 1345,
+      "title": "Shortest Leap Route",
+      "api": {
+        "minJumps": "shortestLeapRoute",
+        "min_jumps": "shortest_leap_route",
+        "arr": "nums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1696_jump-game-vi",
+      "source_id": 1696,
+      "source_title": "Jump Game VI",
+      "adapted": "1696_richest-leap-route",
+      "id": 1696,
+      "title": "Richest Leap Route",
+      "api": {
+        "maxResult": "richestLeapRoute",
+        "max_result": "richest_leap_route"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0552_student-attendance-record-ii",
+      "source_id": 552,
+      "source_title": "Student Attendance Record II",
+      "adapted": "0552_count-constrained-strings",
+      "id": 552,
+      "title": "Count Constrained Strings",
+      "api": {
+        "checkRecord": "countConstrainedStrings",
+        "check_record": "count_constrained_strings"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2297_jump-game-viii",
+      "source_id": 2297,
+      "source_title": "Jump Game VIII",
+      "adapted": "2297_cheapest-leap-route",
+      "id": 2297,
+      "title": "Cheapest Leap Route",
+      "api": {
+        "minCost": "cheapestLeapRoute",
+        "min_cost": "cheapest_leap_route"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0621_task-scheduler",
+      "source_id": 621,
+      "source_title": "Task Scheduler",
+      "adapted": "0621_shortest-cooldown-schedule",
+      "id": 621,
+      "title": "Shortest Cooldown Schedule",
+      "api": {
+        "leastInterval": "shortestCooldownSchedule",
+        "least_interval": "shortest_cooldown_schedule",
+        "tasks": "jobs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0684_redundant-connection",
+      "source_id": 684,
+      "source_title": "Redundant Connection",
+      "adapted": "0684_cycle-closing-edge",
+      "id": 684,
+      "title": "Cycle-Closing Edge",
+      "api": {
+        "findRedundantConnection": "cycleClosingEdge",
+        "find_redundant_connection": "cycle_closing_edge"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0714_best-time-to-buy-and-sell-stock-with-transaction-fee",
+      "source_id": 714,
+      "source_title": "Best Time to Buy and Sell Stock with Transaction Fee",
+      "adapted": "0714_stock-trading-with-fees",
+      "id": 714,
+      "title": "Stock Trading With Fees",
+      "api": {
+        "maxProfit": "stockTradingWithFees",
+        "max_profit": "stock_trading_with_fees"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0737_sentence-similarity-ii",
+      "source_id": 737,
+      "source_title": "Sentence Similarity II",
+      "adapted": "0737_sentences-equivalent-under-synonyms",
+      "id": 737,
+      "title": "Sentences Equivalent Under Synonyms",
+      "api": {
+        "areSentencesSimilarTwo": "sentencesEquivalent",
+        "are_sentences_similar_two": "sentences_equivalent",
+        "similarPairs": "synonyms",
+        "similar_pairs": "synonyms",
+        "sentence1": "wordsA",
+        "sentence2": "wordsB"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0753_cracking-the-safe",
+      "source_id": 753,
+      "source_title": "Cracking the Safe",
+      "adapted": "0753_shortest-string-with-every-code",
+      "id": 753,
+      "title": "Shortest String With Every Code",
+      "api": {
+        "crackSafe": "shortestCoveringString",
+        "crack_safe": "shortest_covering_string"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0763_partition-labels",
+      "source_id": 763,
+      "source_title": "Partition Labels",
+      "adapted": "0763_split-into-letter-exclusive-parts",
+      "id": 763,
+      "title": "Split Into Letter-Exclusive Parts",
+      "api": {
+        "partitionLabels": "letterExclusiveParts",
+        "partition_labels": "letter_exclusive_parts"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0774_minimize-max-distance-to-gas-station",
+      "source_id": 774,
+      "source_title": "Minimize Max Distance to Gas Station",
+      "adapted": "0774_minimum-largest-gap-after-insertions",
+      "id": 774,
+      "title": "Minimum Largest Gap After Insertions",
+      "api": {
+        "minmaxGasDist": "minimumLargestGap",
+        "minmax_gas_dist": "minimum_largest_gap",
+        "stations": "positions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0636_exclusive-time-of-functions",
+      "source_id": 636,
+      "source_title": "Exclusive Time of Functions",
+      "adapted": "0636_routine-self-times",
+      "id": 636,
+      "title": "Routine Self Times",
+      "api": {
+        "exclusiveTime": "routineSelfTimes",
+        "exclusive_time": "routine_self_times",
+        "logs": "events"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0652_find-duplicate-subtrees",
+      "source_id": 652,
+      "source_title": "Find Duplicate Subtrees",
+      "adapted": "0652_repeated-subtrees",
+      "id": 652,
+      "title": "Repeated Subtrees",
+      "api": {
+        "findDuplicateSubtrees": "repeatedSubtrees",
+        "find_duplicate_subtrees": "repeated_subtrees"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0855_exam-room",
+      "source_id": 855,
+      "source_title": "Exam Room",
+      "adapted": "0855_spread-seating",
+      "id": 855,
+      "title": "Spread Seating",
+      "api": {
+        "ExamRoom": "SpreadSeating",
+        "seat": "assign",
+        "leave": "vacate"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0864_shortest-path-to-get-all-keys",
+      "source_id": 864,
+      "source_title": "Shortest Path to Get All Keys",
+      "adapted": "0864_steps-to-gather-every-key",
+      "id": 864,
+      "title": "Steps to Gather Every Key",
+      "api": {
+        "shortestPathAllKeys": "stepsToGatherKeys",
+        "shortest_path_all_keys": "steps_to_gather_keys"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0873_length-of-longest-fibonacci-subsequence",
+      "source_id": 873,
+      "source_title": "Length of Longest Fibonacci Subsequence",
+      "adapted": "0873_longest-additive-subsequence",
+      "id": 873,
+      "title": "Longest Additive Subsequence",
+      "api": {
+        "lenLongestFibSubseq": "longestAdditiveSubseq",
+        "len_longest_fib_subseq": "longest_additive_subseq",
+        "arr": "nums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0886_possible-bipartition",
+      "source_id": 886,
+      "source_title": "Possible Bipartition",
+      "adapted": "0886_two-conflict-free-groups",
+      "id": 886,
+      "title": "Two Conflict-Free Groups",
+      "api": {
+        "possibleBipartition": "canSplitInTwo",
+        "possible_bipartition": "can_split_in_two",
+        "dislikes": "conflicts"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0943_find-the-shortest-superstring",
+      "source_id": 943,
+      "source_title": "Find the Shortest Superstring",
+      "adapted": "0943_shortest-merged-string",
+      "id": 943,
+      "title": "Shortest Merged String",
+      "api": {
+        "shortestSuperstring": "shortestMerge",
+        "shortest_superstring": "shortest_merge"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0895_maximum-frequency-stack",
+      "source_id": 895,
+      "source_title": "Maximum Frequency Stack",
+      "adapted": "0895_popularity-stack",
+      "id": 895,
+      "title": "Popularity Stack",
+      "api": {
+        "FreqStack": "PopularityStack"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "0907_sum-of-subarray-minimums",
+      "source_id": 907,
+      "source_title": "Sum of Subarray Minimums",
+      "adapted": "0907_total-subarray-minima",
+      "id": 907,
+      "title": "Total Subarray Minima",
+      "api": {
+        "sumSubarrayMins": "totalSubarrayMinima",
+        "sum_subarray_mins": "total_subarray_minima",
+        "arr": "nums"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "0785_is-graph-bipartite",
+      "source_id": 785,
+      "source_title": "Is Graph Bipartite?",
+      "adapted": "0785_two-colorable-graph",
+      "id": 785,
+      "title": "Two-Colorable Graph",
+      "api": {
+        "isBipartite": "isTwoColorable",
+        "is_bipartite": "is_two_colorable"
+      },
+      "kind": "function (multi-solution)",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0790_domino-and-tromino-tiling",
+      "source_id": 790,
+      "source_title": "Domino and Tromino Tiling",
+      "adapted": "0790_two-row-strip-tilings",
+      "id": 790,
+      "title": "Two-Row Strip Tilings",
+      "api": {
+        "numTilings": "countStripTilings",
+        "num_tilings": "count_strip_tilings"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "0808_soup-servings",
+      "source_id": 808,
+      "source_title": "Soup Servings",
+      "adapted": "0808_probability-of-emptying-first",
+      "id": 808,
+      "title": "Probability of Emptying First",
+      "api": {
+        "soupServings": "emptyFirstProbability",
+        "soup_servings": "empty_first_probability"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0818_race-car",
+      "source_id": 818,
+      "source_title": "Race Car",
+      "adapted": "0818_doubling-shuttle",
+      "id": 818,
+      "title": "Doubling Shuttle",
+      "api": {
+        "racecar": "shuttle"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0839_similar-string-groups",
+      "source_id": 839,
+      "source_title": "Similar String Groups",
+      "adapted": "0839_one-swap-word-groups",
+      "id": 839,
+      "title": "One-Swap Word Groups",
+      "api": {
+        "numSimilarGroups": "countSwapGroups",
+        "num_similar_groups": "count_swap_groups",
+        "strs": "words"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0850_rectangle-area-ii",
+      "source_id": 850,
+      "source_title": "Rectangle Area II",
+      "adapted": "0850_rectangle-union-area",
+      "id": 850,
+      "title": "Rectangle Union Area",
+      "api": {
+        "rectangleArea": "rectangleUnionArea",
+        "rectangle_area": "rectangle_union_area"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "0979_distribute-coins-in-binary-tree",
+      "source_id": 979,
+      "source_title": "Distribute Coins in Binary Tree",
+      "adapted": "0979_equalize-tree-coins",
+      "id": 979,
+      "title": "Equalize Tree Coins",
+      "api": {
+        "distributeCoins": "equalizeCoins",
+        "distribute_coins": "equalize_coins"
+      },
+      "kind": "function",
+      "figures": "example figures dropped; solution figure relabelled"
+    },
+    {
+      "source": "1008_construct-binary-search-tree-from-preorder-traversal",
+      "source_id": 1008,
+      "source_title": "Construct Binary Search Tree from Preorder Traversal",
+      "adapted": "1008_rebuild-bst-from-preorder",
+      "id": 1008,
+      "title": "Rebuild BST From Preorder",
+      "api": {
+        "bstFromPreorder": "rebuildBstFromPreorder",
+        "bst_from_preorder": "rebuild_bst_from_preorder"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1012_numbers-with-repeated-digits",
+      "source_id": 1012,
+      "source_title": "Numbers With Repeated Digits",
+      "adapted": "1012_count-repeat-digit-numbers",
+      "id": 1012,
+      "title": "Count Repeat-Digit Numbers",
+      "api": {
+        "numDupDigitsAtMostN": "countRepeatDigitNumbers",
+        "num_dup_digits_at_most_n": "count_repeat_digit_numbers"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1024_video-stitching",
+      "source_id": 1024,
+      "source_title": "Video Stitching",
+      "adapted": "1024_fewest-segments-to-cover-a-range",
+      "id": 1024,
+      "title": "Fewest Segments to Cover a Range",
+      "api": {
+        "videoStitching": "fewestSegments",
+        "video_stitching": "fewest_segments",
+        "clips": "segments",
+        "time": "span"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1032_stream-of-characters",
+      "source_id": 1032,
+      "source_title": "Stream of Characters",
+      "adapted": "1032_stream-suffix-watcher",
+      "id": 1032,
+      "title": "Stream Suffix Watcher",
+      "api": {
+        "StreamChecker": "SuffixWatcher",
+        "query": "feed"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "1039_minimum-score-triangulation-of-polygon",
+      "source_id": 1039,
+      "source_title": "Minimum Score Triangulation of Polygon",
+      "adapted": "1039_cheapest-polygon-triangulation",
+      "id": 1039,
+      "title": "Cheapest Polygon Triangulation",
+      "api": {
+        "minScoreTriangulation": "cheapestTriangulation",
+        "min_score_triangulation": "cheapest_triangulation"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1124_longest-well-performing-interval",
+      "source_id": 1124,
+      "source_title": "Longest Well-Performing Interval",
+      "adapted": "1124_longest-overworked-stretch",
+      "id": 1124,
+      "title": "Longest Overworked Stretch",
+      "api": {
+        "longestWPI": "longestOverworkedStretch",
+        "longest_wpi": "longest_overworked_stretch"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

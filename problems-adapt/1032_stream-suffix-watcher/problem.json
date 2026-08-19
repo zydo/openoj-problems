@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 1032,
+  "slug": "stream-suffix-watcher",
+  "title": "Stream Suffix Watcher",
+  "difficulty": "H3",
+  "tags": [
+    "Trie"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "SuffixWatcher",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "words",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "feed",
+        "parameters": [
+          {
+            "name": "letter",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

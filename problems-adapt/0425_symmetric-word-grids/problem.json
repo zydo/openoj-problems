@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 425,
+  "slug": "symmetric-word-grids",
+  "title": "Symmetric Word Grids",
+  "difficulty": "H4",
+  "tags": [
+    "Backtracking",
+    "Trie"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "symmetricWordGrids",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "string"
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "symmetricWordGrids",
+      "rust": "symmetric_word_grids",
+      "typescript": "symmetricWordGrids"
+    },
+    "comparison": "sorted"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

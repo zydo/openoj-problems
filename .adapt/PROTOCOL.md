@@ -32,8 +32,14 @@ For one source bundle `problems/<key>`:
    meaningfully different shapes, followable by eye. If a figure exists,
    prefer an example that preserves the drawn structure (same lengths /
    shape / grid size) so the figure needs only label edits. If the figure's
-   geometry encodes the data and no renderer exists for its family, drop
-   the figure and say so in the report.
+   geometry encodes the data and no renderer exists for its family, try
+   recovering the drawing's layout rule before giving up: many of these
+   SVGs are a deterministic function of the input (a fixed pitch per array
+   index, one bracket per element, a documented coordinate mapping in a
+   comment), so the coordinate formulas can be read out of the original and
+   re-emitted for the new data. That turns a drop into a regeneration --
+   record it as `regenerated` and eyeball the render. Only when the layout
+   is genuinely irregular, drop the figure and say so in the report.
 5. **Write the artifacts**:
    - `problem.json` — copy the source, change `id`, `slug`, `title`, and
      the API fields you are renaming (`method`, `class_name`, `oracle`,
