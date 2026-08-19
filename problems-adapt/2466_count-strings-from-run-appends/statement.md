@@ -32,7 +32,7 @@ length 4 can be grown — for instance "1011" as "" -> "1" -> "10" -> "101"
 Input: low = 3, high = 4, zero = 2, one = 1
 Output: 8
 Explanation: The moves append either "00" or "1". The qualifying strings are
-"100", "001", and "111" of length 3, plus "1100", "0001", "1001", "0011", and
+"100", "001", and "111" of length 3, plus "0000", "0011", "1001", "1100", and
 "1111" of length 4 — 8 in total.
 ```
 
