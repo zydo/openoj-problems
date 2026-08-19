@@ -311,6 +311,20 @@
       },
       "kind": "design",
       "figures": "none"
+    },
+    {
+      "source": "0739_daily-temperatures",
+      "source_id": 739,
+      "source_title": "Daily Temperatures",
+      "adapted": "0739_steps-to-a-higher-reading",
+      "id": 739,
+      "title": "Steps to a Higher Reading",
+      "api": {
+        "dailyTemperatures": "stepsUntilHigher",
+        "daily_temperatures": "steps_until_higher"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
