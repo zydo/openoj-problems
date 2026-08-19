@@ -395,6 +395,20 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0778_swim-in-rising-water",
+      "source_id": 778,
+      "source_title": "Swim in Rising Water",
+      "adapted": "0778_minimum-peak-matrix-route",
+      "id": 778,
+      "title": "Minimum Peak Matrix Route",
+      "api": {
+        "swimInWater": "minimumRoutePeak",
+        "swim_in_water": "minimum_route_peak"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
