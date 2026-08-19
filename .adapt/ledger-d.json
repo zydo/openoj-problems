@@ -301,6 +301,149 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1125_smallest-sufficient-team",
+      "source_id": 1125,
+      "source_title": "Smallest Sufficient Team",
+      "adapted": "1125_smallest-covering-team",
+      "id": 1125,
+      "title": "Smallest Covering Team",
+      "api": {
+        "smallestSufficientTeam": "smallestCoveringTeam",
+        "smallest_sufficient_team": "smallest_covering_team"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1129_shortest-path-with-alternating-colors",
+      "source_id": 1129,
+      "source_title": "Shortest Path with Alternating Colors",
+      "adapted": "1129_alternating-color-distances",
+      "id": 1129,
+      "title": "Alternating Color Distances",
+      "api": {
+        "shortestAlternatingPaths": "alternatingColorDistances",
+        "shortest_alternating_paths": "alternating_color_distances"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1130_minimum-cost-tree-from-leaf-values",
+      "source_id": 1130,
+      "source_title": "Minimum Cost Tree From Leaf Values",
+      "adapted": "1130_minimum-non-leaf-sum",
+      "id": 1130,
+      "title": "Minimum Non-Leaf Sum",
+      "api": {
+        "mctFromLeafValues": "minimumNonLeafSum",
+        "mct_from_leaf_values": "minimum_non_leaf_sum",
+        "arr": "leaves"
+      },
+      "kind": "function",
+      "figures": "labels updated (example-1/2.svg); solution-leaf-trees.svg dropped"
+    },
+    {
+      "source": "1140_stone-game-ii",
+      "source_id": 1140,
+      "source_title": "Stone Game II",
+      "adapted": "1140_stone-piles-game-ii",
+      "id": 1140,
+      "title": "Stone Piles Game II",
+      "api": {
+        "stoneGameII": "stonePilesGameII",
+        "stone_game_ii": "stone_piles_game_ii"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1143_longest-common-subsequence",
+      "source_id": 1143,
+      "source_title": "Longest Common Subsequence",
+      "adapted": "1143_longest-common-subsequence",
+      "id": 1143,
+      "title": "Longest Common Subsequence",
+      "api": {
+        "text1": "s",
+        "text2": "t"
+      },
+      "kind": "function",
+      "figures": "dropped (solution-lcs-table.svg)"
+    },
+    {
+      "source": "1147_longest-chunked-palindrome-decomposition",
+      "source_id": 1147,
+      "source_title": "Longest Chunked Palindrome Decomposition",
+      "adapted": "1147_most-pieces-in-a-mirrored-split",
+      "id": 1147,
+      "title": "Most Pieces in a Mirrored Split",
+      "api": {
+        "longestDecomposition": "mostMirroredPieces",
+        "longest_decomposition": "most_mirrored_pieces"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1203_sort-items-by-groups-respecting-dependencies",
+      "source_id": 1203,
+      "source_title": "Sort Items by Groups Respecting Dependencies",
+      "adapted": "1203_grouped-items-in-dependency-order",
+      "id": 1203,
+      "title": "Grouped Items in Dependency Order",
+      "api": {
+        "sortItems": "orderGroupedItems",
+        "sort_items": "order_grouped_items",
+        "beforeItems": "prerequisites"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1209_remove-all-adjacent-duplicates-in-string-ii",
+      "source_id": 1209,
+      "source_title": "Remove All Adjacent Duplicates in String II",
+      "adapted": "1209_collapse-every-run-of-k-equal-letters",
+      "id": 1209,
+      "title": "Collapse Every Run of k Equal Letters",
+      "api": {
+        "removeDuplicates": "collapseRuns",
+        "remove_duplicates": "collapse_runs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1216_valid-palindrome-iii",
+      "source_id": 1216,
+      "source_title": "Valid Palindrome III",
+      "adapted": "1216_palindrome-within-k-deletions",
+      "id": 1216,
+      "title": "Palindrome Within k Deletions",
+      "api": {
+        "isValidPalindrome": "isPalindromeWithinK",
+        "is_valid_palindrome": "is_palindrome_within_k"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1218_longest-arithmetic-subsequence-of-given-difference",
+      "source_id": 1218,
+      "source_title": "Longest Arithmetic Subsequence of Given Difference",
+      "adapted": "1218_longest-fixed-step-subsequence",
+      "id": 1218,
+      "title": "Longest Fixed-Step Subsequence",
+      "api": {
+        "longestSubsequence": "longestStepSubsequence",
+        "longest_subsequence": "longest_step_subsequence",
+        "difference": "step"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

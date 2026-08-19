@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": 1147,
+  "slug": "most-pieces-in-a-mirrored-split",
+  "title": "Most Pieces in a Mirrored Split",
+  "difficulty": "H3",
+  "tags": [
+    "Greedy",
+    "Two Pointers",
+    "String",
+    "Recursion"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "mostMirroredPieces",
+    "parameters": [
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "mostMirroredPieces",
+      "rust": "most_mirrored_pieces",
+      "typescript": "mostMirroredPieces"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

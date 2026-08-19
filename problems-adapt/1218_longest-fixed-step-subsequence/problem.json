@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": 1218,
+  "slug": "longest-fixed-step-subsequence",
+  "title": "Longest Fixed-Step Subsequence",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestStepSubsequence",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "step",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestStepSubsequence",
+      "rust": "longest_step_subsequence",
+      "typescript": "longestStepSubsequence"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
