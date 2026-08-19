@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": 2382,
+  "slug": "largest-run-sum-after-each-removal",
+  "title": "Largest Run Sum After Each Removal",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Union Find",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "largestRunSumAfterEachRemoval",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "removeQueries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 64
+      }
+    },
+    "entrypoints": {
+      "go": "largestRunSumAfterEachRemoval",
+      "rust": "largest_run_sum_after_each_removal",
+      "typescript": "largestRunSumAfterEachRemoval"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

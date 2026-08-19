@@ -1,0 +1,43 @@
+/**
+ * @param {string[][]} pairs
+ * @param {number[]} ratios
+ * @return {boolean}
+ */
+var hasRatioConflict = function (pairs, ratios) {
+    const EPS = 1e-5;
+    const id = new Map();
+    const parent = [];
+    const weight = [];
+
+    function getId(s) {
+        if (!id.has(s)) {
+            id.set(s, parent.length);
+            parent.push(parent.length);
+            weight.push(1.0);
+        }
+        return id.get(s);
+    }
+
+    function find(x) {
+        if (parent[x] === x) return [x, 1.0];
+        const [root, w] = find(parent[x]);
+        parent[x] = root;
+        weight[x] *= w;
+        return [root, weight[x]];
+    }
+
+    for (let i = 0; i < pairs.length; i++) {
+        const a = getId(pairs[i][0]);
+        const b = getId(pairs[i][1]);
+        const w = ratios[i];
+        const [rootA, wa] = find(a);
+        const [rootB, wb] = find(b);
+        if (rootA === rootB) {
+            if (Math.abs(wa / wb - w) > EPS) return true;
+        } else {
+            parent[rootA] = rootB;
+            weight[rootA] = (wb * w) / wa;
+        }
+    }
+    return false;
+};

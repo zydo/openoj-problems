@@ -1243,6 +1243,188 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2035_partition-array-into-two-arrays-to-minimize-sum-difference",
+      "source_id": 2035,
+      "source_title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+      "adapted": "2035_most-balanced-even-split",
+      "id": 2035,
+      "title": "Most Balanced Even Split",
+      "api": {
+        "minimumDifference": "mostBalancedEvenSplit",
+        "minimum_difference": "most_balanced_even_split"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2157_groups-of-strings",
+      "source_id": 2157,
+      "source_title": "Groups of Strings",
+      "adapted": "2157_word-groups-by-single-letter-edits",
+      "id": 2157,
+      "title": "Word Groups By Single-Letter Edits",
+      "api": {
+        "groupStrings": "groupWords",
+        "group_strings": "group_words"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2163_minimum-difference-in-sums-after-removal-of-elements",
+      "source_id": 2163,
+      "source_title": "Minimum Difference in Sums After Removal of Elements",
+      "adapted": "2163_smallest-sum-gap-after-discards",
+      "id": 2163,
+      "title": "Smallest Sum Gap After Discards",
+      "api": {
+        "minimumDifference": "smallestSumGap",
+        "minimum_difference": "smallest_sum_gap"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2307_check-for-contradictions-in-equations",
+      "source_id": 2307,
+      "source_title": "Check for Contradictions in Equations",
+      "adapted": "2307_conflicting-ratios",
+      "id": 2307,
+      "title": "Conflicting Ratios",
+      "api": {
+        "checkContradictions": "hasRatioConflict",
+        "check_contradictions": "has_ratio_conflict",
+        "equations": "pairs",
+        "values": "ratios"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2312_selling-pieces-of-wood",
+      "source_id": 2312,
+      "source_title": "Selling Pieces of Wood",
+      "adapted": "2312_wood-cutting-revenue",
+      "id": 2312,
+      "title": "Wood Cutting Revenue",
+      "api": {
+        "sellingWood": "woodCuttingRevenue",
+        "selling_wood": "wood_cutting_revenue"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2355_maximum-number-of-books-you-can-take",
+      "source_id": 2355,
+      "source_title": "Maximum Number of Books You Can Take",
+      "adapted": "2355_maximum-books-with-strictly-rising-takes",
+      "id": 2355,
+      "title": "Maximum Books With Strictly Rising Takes",
+      "api": {
+        "maximumBooks": "maxRisingTake",
+        "maximum_books": "max_rising_take"
+      },
+      "kind": "function",
+      "figures": "dropped (solution figure: bar heights encode the source example; no renderer for the family)"
+    },
+    {
+      "source": "2360_longest-cycle-in-a-graph",
+      "source_id": 2360,
+      "source_title": "Longest Cycle in a Graph",
+      "adapted": "2360_longest-cycle-in-a-functional-graph",
+      "id": 2360,
+      "title": "Longest Cycle in a Functional Graph",
+      "api": {},
+      "kind": "function",
+      "figures": "dropped (both example figures: node layout and arrows encode the source examples; no renderer for the family)"
+    },
+    {
+      "source": "2366_minimum-replacements-to-sort-the-array",
+      "source_id": 2366,
+      "source_title": "Minimum Replacements to Sort the Array",
+      "adapted": "2366_minimum-splits-to-sort-the-array",
+      "id": 2366,
+      "title": "Minimum Splits to Sort the Array",
+      "api": {
+        "minimumReplacement": "minimumSplits",
+        "minimum_replacement": "minimum_splits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2371_minimize-maximum-value-in-a-grid",
+      "source_id": 2371,
+      "source_title": "Minimize Maximum Value in a Grid",
+      "adapted": "2371_smallest-maximum-after-renumbering-a-grid",
+      "id": 2371,
+      "title": "Smallest Maximum After Renumbering a Grid",
+      "api": {
+        "minScore": "renumberGrid",
+        "min_score": "renumber_grid"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2382_maximum-segment-sum-after-removals",
+      "source_id": 2382,
+      "source_title": "Maximum Segment Sum After Removals",
+      "adapted": "2382_largest-run-sum-after-each-removal",
+      "id": 2382,
+      "title": "Largest Run Sum After Each Removal",
+      "api": {
+        "maximumSegmentSum": "largestRunSumAfterEachRemoval",
+        "maximum_segment_sum": "largest_run_sum_after_each_removal"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2412_minimum-money-required-before-transactions",
+      "source_id": 2412,
+      "source_title": "Minimum Money Required Before Transactions",
+      "adapted": "2412_minimum-starting-cash-for-any-deal-order",
+      "id": 2412,
+      "title": "Minimum Starting Cash for Any Deal Order",
+      "api": {
+        "minimumMoney": "minimumStartingCash",
+        "minimum_money": "minimum_starting_cash",
+        "transactions": "deals"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2416_sum-of-prefix-scores-of-strings",
+      "source_id": 2416,
+      "source_title": "Sum of Prefix Scores of Strings",
+      "adapted": "2416_total-prefix-hits",
+      "id": 2416,
+      "title": "Total Prefix Hits",
+      "api": {
+        "sumPrefixScores": "totalPrefixHits",
+        "sum_prefix_scores": "total_prefix_hits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2458_height-of-binary-tree-after-subtree-removal-queries",
+      "source_id": 2458,
+      "source_title": "Height of Binary Tree After Subtree Removal Queries",
+      "adapted": "2458_tree-height-after-subtree-cuts",
+      "id": 2458,
+      "title": "Tree Height After Subtree Cuts",
+      "api": {
+        "treeQueries": "cutHeights",
+        "tree_queries": "cut_heights"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
