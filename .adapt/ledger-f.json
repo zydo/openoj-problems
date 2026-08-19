@@ -621,6 +621,143 @@
       },
       "kind": "function",
       "figures": "regenerated"
+    },
+    {
+      "source": "3108_minimum-cost-walk-in-weighted-graph",
+      "source_id": 3108,
+      "source_title": "Minimum Cost Walk in Weighted Graph",
+      "adapted": "3108_minimum-and-of-a-walk",
+      "id": 3108,
+      "title": "Minimum AND of a Walk",
+      "api": {
+        "minimumCost": "minWalkCost"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3109_find-the-index-of-permutation",
+      "source_id": 3109,
+      "source_title": "Find the Index of Permutation",
+      "adapted": "3109_rank-of-a-permutation",
+      "id": 3109,
+      "title": "Rank of a Permutation",
+      "api": {
+        "getPermutationIndex": "permutationRank"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3113_find-the-number-of-subarrays-where-boundary-elements-are-maximum",
+      "source_id": 3113,
+      "source_title": "Find the Number of Subarrays Where Boundary Elements Are Maximum",
+      "adapted": "3113_subarrays-with-equal-maximal-ends",
+      "id": 3113,
+      "title": "Subarrays with Equal Maximal Ends",
+      "api": {
+        "numberOfSubarrays": "countMaximalEnds"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3134_find-the-median-of-the-uniqueness-array",
+      "source_id": 3134,
+      "source_title": "Find the Median of the Uniqueness Array",
+      "adapted": "3134_median-subarray-distinct-count",
+      "id": 3134,
+      "title": "Median Subarray Distinct Count",
+      "api": {
+        "medianOfUniquenessArray": "medianDistinctCount",
+        "median_of_uniqueness_array": "median_distinct_count"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3141_maximum-hamming-distances",
+      "source_id": 3141,
+      "source_title": "Maximum Hamming Distances",
+      "adapted": "3141_farthest-hamming-neighbor",
+      "id": 3141,
+      "title": "Farthest Hamming Neighbor",
+      "api": {
+        "maxHammingDistances": "farthestHamming",
+        "max_hamming_distances": "farthest_hamming"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3145_find-products-of-elements-of-big-array",
+      "source_id": 3145,
+      "source_title": "Find Products of Elements of Big Array",
+      "adapted": "3145_range-products-in-the-set-bit-stream",
+      "id": 3145,
+      "title": "Range Products in the Set-Bit Stream",
+      "api": {
+        "findProductsOfElements": "rangeProducts",
+        "find_products_of_elements": "range_products"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3193_count-the-number-of-inversions",
+      "source_id": 3193,
+      "source_title": "Count the Number of Inversions",
+      "adapted": "3193_permutations-with-prescribed-prefix-inversions",
+      "id": 3193,
+      "title": "Permutations with Prescribed Prefix Inversions",
+      "api": {
+        "numberOfPermutations": "countMatchingPermutations",
+        "number_of_permutations": "count_matching_permutations"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3218_minimum-cost-for-cutting-cake-i",
+      "source_id": 3218,
+      "source_title": "Minimum Cost for Cutting Cake I",
+      "adapted": "3218_cheapest-cuts-to-unit-cells",
+      "id": 3218,
+      "title": "Cheapest Cuts to Unit Cells",
+      "api": {
+        "minimumCost": "cheapestTotalCost",
+        "minimum_cost": "cheapest_total_cost"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3229_minimum-operations-to-make-array-equal-to-target",
+      "source_id": 3229,
+      "source_title": "Minimum Operations to Make Array Equal to Target",
+      "adapted": "3229_fewest-block-adjustments-to-match-a-target",
+      "id": 3229,
+      "title": "Fewest Block Adjustments to Match a Target",
+      "api": {
+        "minimumOperations": "fewestAdjustments",
+        "minimum_operations": "fewest_adjustments"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3231_minimum-number-of-increasing-subsequence-to-be-removed",
+      "source_id": 3231,
+      "source_title": "Minimum Number of Increasing Subsequence to Be Removed",
+      "adapted": "3231_fewest-rising-subsequences-to-clear-an-array",
+      "id": 3231,
+      "title": "Fewest Rising Subsequences to Clear an Array",
+      "api": {
+        "minOperations": "fewestRemovals",
+        "min_operations": "fewest_removals"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
