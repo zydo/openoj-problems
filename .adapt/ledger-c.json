@@ -55,6 +55,20 @@
       },
       "kind": "design",
       "figures": "none"
+    },
+    {
+      "source": "0421_maximum-xor-of-two-numbers-in-an-array",
+      "source_id": 421,
+      "source_title": "Maximum XOR of Two Numbers in an Array",
+      "adapted": "0421_largest-pairwise-xor",
+      "id": 421,
+      "title": "Largest Pairwise XOR",
+      "api": {
+        "findMaximumXOR": "largestPairXor",
+        "find_maximum_xor": "largest_pair_xor"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
