@@ -297,6 +297,20 @@
       },
       "kind": "design",
       "figures": "none"
+    },
+    {
+      "source": "0729_my-calendar-i",
+      "source_id": 729,
+      "source_title": "My Calendar I",
+      "adapted": "0729_nonoverlapping-reservation-book",
+      "id": 729,
+      "title": "Nonoverlapping Reservation Book",
+      "api": {
+        "MyCalendar": "ReservationBook",
+        "book": "reserveSlot"
+      },
+      "kind": "design",
+      "figures": "none"
     }
   ]
 }
