@@ -423,6 +423,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0786_k-th-smallest-prime-fraction",
+      "source_id": 786,
+      "source_title": "K-th Smallest Prime Fraction",
+      "adapted": "0786_ranked-fraction-from-a-prime-list",
+      "id": 786,
+      "title": "Ranked Fraction from a Prime List",
+      "api": {
+        "kthSmallestPrimeFraction": "rankedPrimeFraction",
+        "kth_smallest_prime_fraction": "ranked_prime_fraction"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
