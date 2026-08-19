@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": 3553,
+  "slug": "least-weight-subtree-joining-three-nodes",
+  "title": "Least-Weight Subtree Joining Three Nodes",
+  "difficulty": "H3",
+  "tags": [
+    "Tree",
+    "DFS",
+    "Shortest Path"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "leastSubtreeWeight",
+    "parameters": [
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 64
+      }
+    },
+    "entrypoints": {
+      "go": "leastSubtreeWeight",
+      "rust": "least_subtree_weight",
+      "typescript": "leastSubtreeWeight"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

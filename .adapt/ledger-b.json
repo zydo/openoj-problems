@@ -696,6 +696,438 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "1905_count-sub-islands",
+      "source_id": 1905,
+      "source_title": "Count Sub Islands",
+      "adapted": "1905_count-contained-grid-islands",
+      "id": 1905,
+      "title": "Count Contained Grid Islands",
+      "api": {
+        "countSubIslands": "countContainedGridIslands",
+        "count_sub_islands": "count_contained_grid_islands"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1915_number-of-wonderful-substrings",
+      "source_id": 1915,
+      "source_title": "Number of Wonderful Substrings",
+      "adapted": "1915_nearly-even-substrings",
+      "id": 1915,
+      "title": "Nearly Even Substrings",
+      "api": {
+        "wonderfulSubstrings": "countNearlyEvenSubstrings",
+        "wonderful_substrings": "count_nearly_even_substrings"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1916_count-ways-to-build-rooms-in-an-ant-colony",
+      "source_id": 1916,
+      "source_title": "Count Ways to Build Rooms in an Ant Colony",
+      "adapted": "1916_count-dependency-tree-orderings",
+      "id": 1916,
+      "title": "Count Dependency Tree Orderings",
+      "api": {
+        "waysToBuildRooms": "countDependencyOrderings",
+        "ways_to_build_rooms": "count_dependency_orderings",
+        "prevRoom": "parents"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1918_kth-smallest-subarray-sum",
+      "source_id": 1918,
+      "source_title": "Kth Smallest Subarray Sum",
+      "adapted": "1918_kth-least-subarray-sum",
+      "id": 1918,
+      "title": "Kth Least Subarray Sum",
+      "api": {
+        "kthSmallestSubarraySum": "kthLeastSubarraySum",
+        "kth_smallest_subarray_sum": "kth_least_subarray_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1943_describe-the-painting",
+      "source_id": 1943,
+      "source_title": "Describe the Painting",
+      "adapted": "1943_mixed-layer-sums",
+      "id": 1943,
+      "title": "Mixed Layer Sums",
+      "api": {
+        "splitPainting": "mixedLayerSums",
+        "split_painting": "mixed_layer_sums"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1944_number-of-visible-people-in-a-queue",
+      "source_id": 1944,
+      "source_title": "Number of Visible People in a Queue",
+      "adapted": "1944_sightlines-in-a-queue",
+      "id": 1944,
+      "title": "Sightlines in a Queue",
+      "api": {
+        "canSeePersonsCount": "countSightlines",
+        "can_see_persons_count": "count_sightlines"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "1947_maximum-compatibility-score-sum",
+      "source_id": 1947,
+      "source_title": "Maximum Compatibility Score Sum",
+      "adapted": "1947_maximum-matching-agreement",
+      "id": 1947,
+      "title": "Maximum Matching Agreement",
+      "api": {
+        "maxCompatibilitySum": "maxMatchingAgreement",
+        "max_compatibility_sum": "max_matching_agreement"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1948_delete-duplicate-folders-in-system",
+      "source_id": 1948,
+      "source_title": "Delete Duplicate Folders in System",
+      "adapted": "1948_prune-duplicate-folders",
+      "id": 1948,
+      "title": "Prune Duplicate Folders",
+      "api": {
+        "deleteDuplicateFolder": "pruneDuplicateFolders",
+        "delete_duplicate_folder": "prune_duplicate_folders"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1998_gcd-sort-of-an-array",
+      "source_id": 1998,
+      "source_title": "GCD Sort of an Array",
+      "adapted": "1998_sortable-by-shared-factor-swaps",
+      "id": 1998,
+      "title": "Sortable by Shared-Factor Swaps",
+      "api": {
+        "gcdSort": "sortableBySharedFactorSwaps",
+        "gcd_sort": "sortable_by_shared_factor_swaps"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2024_maximize-the-confusion-of-an-exam",
+      "source_id": 2024,
+      "source_title": "Maximize the Confusion of an Exam",
+      "adapted": "2024_longest-uniform-run-after-k-flips",
+      "id": 2024,
+      "title": "Longest Uniform Run After k Flips",
+      "api": {
+        "maxConsecutiveAnswers": "longestUniformRunAfterKFlips",
+        "max_consecutive_answers": "longest_uniform_run_after_k_flips",
+        "answerKey": "s"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2135_count-words-obtained-after-adding-a-letter",
+      "source_id": 2135,
+      "source_title": "Count Words Obtained After Adding a Letter",
+      "adapted": "2135_targets-from-adding-one-letter",
+      "id": 2135,
+      "title": "Targets From Adding One Letter",
+      "api": {
+        "wordCount": "reachableTargets",
+        "word_count": "reachable_targets"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2136_earliest-possible-day-of-full-bloom",
+      "source_id": 2136,
+      "source_title": "Earliest Possible Day of Full Bloom",
+      "adapted": "2136_earliest-complete-bloom",
+      "id": 2136,
+      "title": "Earliest Complete Bloom",
+      "api": {
+        "earliestFullBloom": "earliestCompleteBloom",
+        "earliest_full_bloom": "earliest_complete_bloom"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2140_solving-questions-with-brainpower",
+      "source_id": 2140,
+      "source_title": "Solving Questions With Brainpower",
+      "adapted": "2140_best-score-with-cooldowns",
+      "id": 2140,
+      "title": "Best Score With Cooldowns",
+      "api": {
+        "mostPoints": "bestScore",
+        "most_points": "best_score"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2141_maximum-running-time-of-n-computers",
+      "source_id": 2141,
+      "source_title": "Maximum Running Time of N Computers",
+      "adapted": "2141_longest-parallel-uptime",
+      "id": 2141,
+      "title": "Longest Parallel Uptime",
+      "api": {
+        "maxRunTime": "maxUptime",
+        "max_run_time": "max_uptime"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2204_distance-to-a-cycle-in-undirected-graph",
+      "source_id": 2204,
+      "source_title": "Distance to a Cycle in Undirected Graph",
+      "adapted": "2204_distance-from-the-cycle",
+      "id": 2204,
+      "title": "Distance From the Cycle",
+      "api": {
+        "distanceToCycle": "distanceFromCycle",
+        "distance_to_cycle": "distance_from_cycle"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2208_minimum-operations-to-halve-array-sum",
+      "source_id": 2208,
+      "source_title": "Minimum Operations to Halve Array Sum",
+      "adapted": "2208_least-steps-to-halve-the-sum",
+      "id": 2208,
+      "title": "Least Steps to Halve the Sum",
+      "api": {
+        "halveArray": "leastStepsToHalve",
+        "halve_array": "least_steps_to_halve"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2213_longest-substring-of-one-repeating-character",
+      "source_id": 2213,
+      "source_title": "Longest Substring of One Repeating Character",
+      "adapted": "2213_longest-uniform-run-after-each-edit",
+      "id": 2213,
+      "title": "Longest Uniform Run After Each Edit",
+      "api": {
+        "longestRepeating": "longestUniformRun",
+        "longest_repeating": "longest_uniform_run",
+        "queryCharacters": "rewriteChars",
+        "query_characters": "rewrite_chars",
+        "queryIndices": "rewritePositions",
+        "query_indices": "rewrite_positions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2218_maximum-value-of-k-coins-from-piles",
+      "source_id": 2218,
+      "source_title": "Maximum Value of K Coins From Piles",
+      "adapted": "2218_max-coins-from-stack-tops",
+      "id": 2218,
+      "title": "Max Coins From Stack Tops",
+      "api": {
+        "maxValueOfCoins": "maxCoinsFromStackTops",
+        "max_value_of_coins": "max_coins_from_stack_tops",
+        "piles": "stacks"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2223_sum-of-scores-of-built-strings",
+      "source_id": 2223,
+      "source_title": "Sum of Scores of Built Strings",
+      "adapted": "2223_sum-of-suffix-match-scores",
+      "id": 2223,
+      "title": "Sum of Suffix Match Scores",
+      "api": {
+        "sumScores": "sumSuffixMatchScores",
+        "sum_scores": "sum_suffix_match_scores"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2251_number-of-flowers-in-full-bloom",
+      "source_id": 2251,
+      "source_title": "Number of Flowers in Full Bloom",
+      "adapted": "2251_intervals-covering-each-query",
+      "id": 2251,
+      "title": "Intervals Covering Each Query",
+      "api": {
+        "fullBloomFlowers": "countCovering",
+        "full_bloom_flowers": "count_covering",
+        "flowers": "intervals",
+        "people": "queries"
+      },
+      "kind": "function",
+      "figures": "dropped (timeline geometry encodes the intervals; no renderer for the family)"
+    },
+    {
+      "source": "2258_escape-the-spreading-fire",
+      "source_id": 2258,
+      "source_title": "Escape the Spreading Fire",
+      "adapted": "2258_latest-safe-departure",
+      "id": 2258,
+      "title": "Latest Safe Departure",
+      "api": {
+        "maximumMinutes": "latestDeparture",
+        "maximum_minutes": "latest_departure"
+      },
+      "kind": "function",
+      "figures": "dropped (fire-spread panels encode the grid over time; no renderer)"
+    },
+    {
+      "source": "2261_k-divisible-elements-subarrays",
+      "source_id": 2261,
+      "source_title": "K Divisible Elements Subarrays",
+      "adapted": "2261_distinct-subarrays-with-at-most-k-multiples",
+      "id": 2261,
+      "title": "Distinct Subarrays With at Most K Multiples",
+      "api": {
+        "countDistinct": "countDistinctSubarrays",
+        "count_distinct": "count_distinct_subarrays"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2262_total-appeal-of-a-string",
+      "source_id": 2262,
+      "source_title": "Total Appeal of A String",
+      "adapted": "2262_distinct-letters-over-all-substrings",
+      "id": 2262,
+      "title": "Distinct Letters Over All Substrings",
+      "api": {
+        "appealSum": "distinctLetterSum",
+        "appeal_sum": "distinct_letter_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2272_substring-with-largest-variance",
+      "source_id": 2272,
+      "source_title": "Substring With Largest Variance",
+      "adapted": "2272_widest-letter-spread-in-a-substring",
+      "id": 2272,
+      "title": "Widest Letter Spread in a Substring",
+      "api": {
+        "largestVariance": "widestLetterSpread",
+        "largest_variance": "widest_letter_spread"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2290_minimum-obstacle-removal-to-reach-corner",
+      "source_id": 2290,
+      "source_title": "Minimum Obstacle Removal to Reach Corner",
+      "adapted": "2290_cheapest-corner-to-corner-route",
+      "id": 2290,
+      "title": "Cheapest Corner-to-Corner Route",
+      "api": {
+        "minimumObstacles": "cheapestCornerRoute",
+        "minimum_obstacles": "cheapest_corner_route"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2300_successful-pairs-of-spells-and-potions",
+      "source_id": 2300,
+      "source_title": "Successful Pairs of Spells and Potions",
+      "adapted": "2300_products-clearing-a-threshold",
+      "id": 2300,
+      "title": "Products Clearing a Threshold",
+      "api": {
+        "successfulPairs": "countClearingProducts",
+        "successful_pairs": "count_clearing_products",
+        "spells": "factors",
+        "potions": "values",
+        "success": "threshold"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2334_subarray-with-elements-greater-than-varying-threshold",
+      "source_id": 2334,
+      "source_title": "Subarray With Elements Greater Than Varying Threshold",
+      "adapted": "2334_smallest-subarray-over-length-scaled-threshold",
+      "id": 2334,
+      "title": "Smallest Subarray Over a Length-Scaled Threshold",
+      "api": {
+        "validSubarraySize": "smallestSubarrayLength",
+        "valid_subarray_size": "smallest_subarray_length"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2337_move-pieces-to-obtain-a-string",
+      "source_id": 2337,
+      "source_title": "Move Pieces to Obtain a String",
+      "adapted": "2337_one-way-sliding-pieces",
+      "id": 2337,
+      "title": "One-Way Sliding Pieces",
+      "api": {
+        "canChange": "canReach",
+        "can_change": "can_reach"
+      },
+      "kind": "function",
+      "figures": "dropped (solution figure: cell fills and match arrows encode the source example; no renderer for the family)"
+    },
+    {
+      "source": "2338_count-the-number-of-ideal-arrays",
+      "source_id": 2338,
+      "source_title": "Count the Number of Ideal Arrays",
+      "adapted": "2338_count-arrays-along-divisor-chains",
+      "id": 2338,
+      "title": "Count Arrays Along Divisor Chains",
+      "api": {
+        "idealArrays": "countDivisorChainArrays",
+        "ideal_arrays": "count_divisor_chain_arrays"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3553_minimum-weighted-subgraph-with-the-required-paths-ii",
+      "source_id": 3553,
+      "source_title": "Minimum Weighted Subgraph With the Required Paths II",
+      "adapted": "3553_least-weight-subtree-joining-three-nodes",
+      "id": 3553,
+      "title": "Least-Weight Subtree Joining Three Nodes",
+      "api": {
+        "minimumWeight": "leastSubtreeWeight",
+        "minimum_weight": "least_subtree_weight"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }

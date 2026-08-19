@@ -1,0 +1,3 @@
+function distinctLetterSum(s: string): number {
+    throw new Error("TODO");
+}

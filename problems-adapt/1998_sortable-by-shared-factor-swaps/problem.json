@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 1998,
+  "slug": "sortable-by-shared-factor-swaps",
+  "title": "Sortable by Shared-Factor Swaps",
+  "difficulty": "H3",
+  "tags": [
+    "Union Find",
+    "Number Theory",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "sortableBySharedFactorSwaps",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "sortableBySharedFactorSwaps",
+      "rust": "sortable_by_shared_factor_swaps",
+      "typescript": "sortableBySharedFactorSwaps"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
