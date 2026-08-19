@@ -730,6 +730,94 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1162_as-far-from-land-as-possible",
+      "source_id": 1162,
+      "source_title": "As Far from Land as Possible",
+      "adapted": "1162_greatest-distance-to-land",
+      "id": 1162,
+      "title": "Greatest Distance to Land",
+      "api": {
+        "maxDistance": "greatestDistanceToLand",
+        "max_distance": "greatest_distance_to_land"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1283_find-the-smallest-divisor-given-a-threshold",
+      "source_id": 1283,
+      "source_title": "Find the Smallest Divisor Given a Threshold",
+      "adapted": "1283_smallest-divisor-under-a-cap",
+      "id": 1283,
+      "title": "Smallest Divisor Under a Cap",
+      "api": {
+        "smallestDivisor": "smallestDivisorUnderCap",
+        "smallest_divisor": "smallest_divisor_under_cap",
+        "threshold": "cap"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1289_minimum-falling-path-sum-ii",
+      "source_id": 1289,
+      "source_title": "Minimum Falling Path Sum II",
+      "adapted": "1289_cheapest-descent-with-sideways-steps",
+      "id": 1289,
+      "title": "Cheapest Descent with Sideways Steps",
+      "api": {
+        "minFallingPathSum": "cheapestDescent",
+        "min_falling_path_sum": "cheapest_descent"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1292_maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
+      "source_id": 1292,
+      "source_title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
+      "adapted": "1292_largest-square-within-a-sum-budget",
+      "id": 1292,
+      "title": "Largest Square Within a Sum Budget",
+      "api": {
+        "maxSideLength": "largestSquareSide",
+        "max_side_length": "largest_square_side",
+        "mat": "grid",
+        "threshold": "budget"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1314_matrix-block-sum",
+      "source_id": 1314,
+      "source_title": "Matrix Block Sum",
+      "adapted": "1314_grid-neighborhood-sums",
+      "id": 1314,
+      "title": "Grid Neighborhood Sums",
+      "api": {
+        "matrixBlockSum": "gridNeighborhoodSums",
+        "matrix_block_sum": "grid_neighborhood_sums",
+        "mat": "grid"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1316_distinct-echo-substrings",
+      "source_id": 1316,
+      "source_title": "Distinct Echo Substrings",
+      "adapted": "1316_distinct-doubled-substrings",
+      "id": 1316,
+      "title": "Distinct Doubled Substrings",
+      "api": {
+        "distinctEchoSubstrings": "distinctDoubledSubstrings",
+        "distinct_echo_substrings": "distinct_doubled_substrings"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

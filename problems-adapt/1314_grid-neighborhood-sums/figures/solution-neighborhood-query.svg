@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 372" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#42525e"/>
+    </marker>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4169E1"/>
+    </marker>
+  </defs>
+<rect x="120" y="80" width="74" height="74" fill="#ffffff" stroke="#1a2026"/>
+<text x="157.0" y="123.0" text-anchor="middle" fill="#1a2026" font-weight="600">12</text>
+<rect x="200" y="80" width="74" height="74" fill="#ffffff" stroke="#1a2026"/>
+<text x="237.0" y="123.0" text-anchor="middle" fill="#1a2026" font-weight="600">3</text>
+<rect x="280" y="80" width="74" height="74" fill="#ffffff" stroke="#1a2026"/>
+<text x="317.0" y="123.0" text-anchor="middle" fill="#1a2026" font-weight="600">7</text>
+<rect x="120" y="160" width="74" height="74" fill="#e8edf8" stroke="#1a2026"/>
+<text x="157.0" y="203.0" text-anchor="middle" fill="#1a2026" font-weight="600">5</text>
+<rect x="200" y="160" width="74" height="74" fill="#ffffff" stroke="#1a2026"/>
+<text x="237.0" y="203.0" text-anchor="middle" fill="#1a2026" font-weight="600">20</text>
+<rect x="280" y="160" width="74" height="74" fill="#ffffff" stroke="#1a2026"/>
+<text x="317.0" y="203.0" text-anchor="middle" fill="#1a2026" font-weight="600">1</text>
+<rect x="120" y="240" width="74" height="74" fill="#ffffff" stroke="#1a2026"/>
+<text x="157.0" y="283.0" text-anchor="middle" fill="#1a2026" font-weight="600">9</text>
+<rect x="200" y="240" width="74" height="74" fill="#ffffff" stroke="#1a2026"/>
+<text x="237.0" y="283.0" text-anchor="middle" fill="#1a2026" font-weight="600">4</text>
+<rect x="280" y="240" width="74" height="74" fill="#ffffff" stroke="#1a2026"/>
+<text x="317.0" y="283.0" text-anchor="middle" fill="#1a2026" font-weight="600">15</text>
+<rect x="120" y="80" width="154" height="234" fill="none" stroke="#4169E1" stroke-width="2.4"/>
+<text x="274" y="70" text-anchor="middle" fill="#4169E1" font-size="12">P[3][2]</text>
+<rect x="280" y="80" width="74" height="234" fill="none" stroke="#b57f30" stroke-width="1.8" stroke-dasharray="5 4"/>
+<text x="314.0" y="70" text-anchor="middle" fill="#b57f30" font-size="12">strip = 23</text>
+<text x="40" y="40" fill="#5c6b76" font-size="12">Neighborhood of row 1, column 0, k = 1: the window reaches past the left edge, so</text>
+<text x="40" y="58" fill="#5c6b76" font-size="12">the blue frame is clipped at the boundary and reads P[3][2] &#8722; P[0][2] &#8722; P[3][0]</text>
+<text x="40" y="76" fill="#5c6b76" font-size="12">+ P[0][0] = 53. The dashed strip (23) is what a wider window gives up: 76 &#8722; 23 = 53.</text>
+<text x="40" y="350" fill="#5c6b76" font-size="12">Building the table: above + left &#8722; overlap + cell; every query is then four lookups.</text>
+</svg>

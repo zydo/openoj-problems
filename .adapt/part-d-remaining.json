@@ -1,18 +1,12 @@
 [
-  "1162_as-far-from-land-as-possible",
   "1163_last-substring-in-lexicographical-order",
   "1167_minimum-cost-to-connect-sticks",
   "1168_optimize-water-distribution-in-a-village",
   "1171_remove-zero-sum-consecutive-nodes-from-linked-list",
   "1177_can-make-palindrome-from-substring",
-  "1283_find-the-smallest-divisor-given-a-threshold",
-  "1289_minimum-falling-path-sum-ii",
-  "1292_maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
   "1293_shortest-path-in-a-grid-with-obstacles-elimination",
   "1296_divide-array-in-sets-of-k-consecutive-numbers",
   "1300_sum-of-mutated-array-closest-to-target",
   "1310_xor-queries-of-a-subarray",
-  "1312_minimum-insertion-steps-to-make-a-string-palindrome",
-  "1314_matrix-block-sum",
-  "1316_distinct-echo-substrings"
+  "1312_minimum-insertion-steps-to-make-a-string-palindrome"
 ]
