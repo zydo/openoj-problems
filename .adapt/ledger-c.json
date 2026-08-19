@@ -325,6 +325,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0740_delete-and-earn",
+      "source_id": 740,
+      "source_title": "Delete and Earn",
+      "adapted": "0740_max-score-from-nonadjacent-values",
+      "id": 740,
+      "title": "Maximum Score from Nonadjacent Values",
+      "api": {
+        "deleteAndEarn": "maxNonadjacentValueScore",
+        "delete_and_earn": "max_nonadjacent_value_score"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
