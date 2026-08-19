@@ -444,6 +444,21 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1151_minimum-swaps-to-group-all-1s-together",
+      "source_id": 1151,
+      "source_title": "Minimum Swaps to Group All 1's Together",
+      "adapted": "1151_fewest-swaps-to-gather-the-ones",
+      "id": 1151,
+      "title": "Fewest Swaps to Gather the Ones",
+      "api": {
+        "minSwaps": "fewestSwapsToGatherOnes",
+        "min_swaps": "fewest_swaps_to_gather_ones",
+        "data": "bits"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
