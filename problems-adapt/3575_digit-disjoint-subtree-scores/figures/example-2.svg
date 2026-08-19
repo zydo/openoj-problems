@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <!-- vals = [7,7,3,9], par = [-1,0,0,0]; best = [19,7,3,9], sum 38 (verified by tree DP over digit masks) -->
+  <line x1="280" y1="60" x2="120" y2="160" stroke="#42525e" stroke-width="1.6"/>
+  <line x1="280" y1="60" x2="280" y2="160" stroke="#42525e" stroke-width="1.6"/>
+  <line x1="280" y1="60" x2="440" y2="160" stroke="#42525e" stroke-width="1.6"/>
+  <g stroke="#42525e" stroke-width="1.6" fill="#ffffff">
+    <circle cx="280" cy="60" r="21"/>
+    <circle cx="120" cy="160" r="21"/>
+    <circle cx="280" cy="160" r="21"/>
+    <circle cx="440" cy="160" r="21"/>
+  </g>
+  <g text-anchor="middle" font-weight="700" fill="#1a2026">
+    <text x="280" y="65">7</text>
+    <text x="120" y="165">7</text>
+    <text x="280" y="165">3</text>
+    <text x="440" y="165">9</text>
+  </g>
+  <text x="280" y="32" text-anchor="middle" fill="#5c6b76" font-size="11.5">node 0</text>
+  <g font-size="11.5" fill="#5c6b76" text-anchor="middle">
+    <text x="120" y="200">node 1</text>
+    <text x="280" y="200">node 2</text>
+    <text x="440" y="200">node 3</text>
+  </g>
+  <text x="316" y="52" fill="#4169E1" font-weight="600" font-size="12">best = 19</text>
+  <g font-size="12" fill="#4169E1" font-weight="600" text-anchor="middle">
+    <text x="120" y="218">best = 7</text>
+    <text x="280" y="218">best = 3</text>
+    <text x="440" y="218">best = 9</text>
+  </g>
+  <text x="280" y="248" text-anchor="middle" fill="#1a2026" font-size="13.5">the digit 7 sits at nodes 0 and 1, so the root's set drops one seven: 7 + 3 + 9 = 19; the scores total <tspan fill="#4169E1" font-weight="700">38</tspan></text>
+</svg>

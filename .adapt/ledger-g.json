@@ -764,6 +764,174 @@
       },
       "kind": "function",
       "figures": "labels updated (example-3 dropped)"
+    },
+    {
+      "source": "3575_maximum-good-subtree-score",
+      "source_id": 3575,
+      "source_title": "Maximum Good Subtree Score",
+      "adapted": "3575_digit-disjoint-subtree-scores",
+      "id": 3575,
+      "title": "Digit-Disjoint Subtree Scores",
+      "api": {
+        "goodSubtreeSum": "digitDisjointScoreSum",
+        "good_subtree_sum": "digit_disjoint_score_sum"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3595_once-twice",
+      "source_id": 3595,
+      "source_title": "Once Twice",
+      "adapted": "3595_lone-element-and-one-pair",
+      "id": 3595,
+      "title": "Lone Element and One Pair",
+      "api": {
+        "onceTwice": "loneElementAndPair",
+        "once_twice": "lone_element_and_pair"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3600_maximize-spanning-tree-stability-with-upgrades",
+      "source_id": 3600,
+      "source_title": "Maximize Spanning Tree Stability with Upgrades",
+      "adapted": "3600_widest-spanning-tree-with-strength-doubles",
+      "id": 3600,
+      "title": "Widest Spanning Tree With Strength Doubles",
+      "api": {
+        "maxStability": "widestSpanningTree",
+        "max_stability": "widest_spanning_tree"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3608_minimum-time-for-k-connected-components",
+      "source_id": 3608,
+      "source_title": "Minimum Time for K Connected Components",
+      "adapted": "3608_earliest-split-into-k-components",
+      "id": 3608,
+      "title": "Earliest Split Into K Components",
+      "api": {
+        "minTime": "earliestSplitTime",
+        "min_time": "earliest_split_time"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3613_minimize-maximum-component-cost",
+      "source_id": 3613,
+      "source_title": "Minimize Maximum Component Cost",
+      "adapted": "3613_lowest-component-cost-after-splitting",
+      "id": 3613,
+      "title": "Lowest Component Cost After Splitting",
+      "api": {
+        "minCost": "lowestSplitCost",
+        "min_cost": "lowest_split_cost"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3615_longest-palindromic-path-in-graph",
+      "source_id": 3615,
+      "source_title": "Longest Palindromic Path in Graph",
+      "adapted": "3615_longest-path-spelling-a-palindrome",
+      "id": 3615,
+      "title": "Longest Path Spelling a Palindrome",
+      "api": {
+        "maxLen": "longestPalindromePath",
+        "max_len": "longest_palindrome_path"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3807_minimum-cost-to-repair-edges-to-traverse-a-graph",
+      "source_id": 3807,
+      "source_title": "Minimum Cost to Repair Edges to Traverse a Graph",
+      "adapted": "3807_smallest-clearing-budget-for-a-short-route",
+      "id": 3807,
+      "title": "Smallest Clearing Budget for a Short Route",
+      "api": {
+        "minCost": "smallestBudget",
+        "min_cost": "smallest_budget"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3877_minimum-removals-to-achieve-target-xor",
+      "source_id": 3877,
+      "source_title": "Minimum Removals to Achieve Target XOR",
+      "adapted": "3877_fewest-deletions-for-a-target-xor",
+      "id": 3877,
+      "title": "Fewest Deletions for a Target XOR",
+      "api": {
+        "minRemovals": "fewestDeletions",
+        "min_removals": "fewest_deletions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3887_incremental-even-weighted-cycle-queries",
+      "source_id": 3887,
+      "source_title": "Incremental Even-Weighted Cycle Queries",
+      "adapted": "3887_keep-every-cycle-even",
+      "id": 3887,
+      "title": "Keep Every Cycle Even",
+      "api": {
+        "numberOfEdgesAdded": "edgesAdmitted",
+        "number_of_edges_added": "edges_admitted"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3905_multi-source-flood-fill",
+      "source_id": 3905,
+      "source_title": "Multi Source Flood Fill",
+      "adapted": "3905_simultaneous-color-spread",
+      "id": 3905,
+      "title": "Simultaneous Color Spread",
+      "api": {
+        "colorGrid": "finalColors",
+        "color_grid": "final_colors"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3966_count-good-integers-in-a-range",
+      "source_id": 3966,
+      "source_title": "Count Good Integers in a Range",
+      "adapted": "3966_count-steady-integers-in-a-range",
+      "id": 3966,
+      "title": "Count Steady Integers in a Range",
+      "api": {
+        "goodIntegers": "countSteadyIntegers",
+        "good_integers": "count_steady_integers"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "4003_minimum-cost-path-with-alternating-directions-iii",
+      "source_id": 4003,
+      "source_title": "Minimum Cost Path with Alternating Directions III",
+      "adapted": "4003_cheapest-parity-ruled-grid-walk",
+      "id": 4003,
+      "title": "Cheapest Parity-Ruled Grid Walk",
+      "api": {
+        "minCost": "cheapestWalk",
+        "min_cost": "cheapest_walk"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
