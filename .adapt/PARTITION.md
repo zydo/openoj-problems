@@ -103,3 +103,17 @@ message then lies about its scope, so stage explicitly instead:
 
 A bundle only becomes a part's to commit once it is *in that part's ledger*.
 Until then it is somebody's work in progress and not yours to snapshot.
+
+## Part B → B + E (2026-08-18 ~22:30)
+
+With 117 of 318 merged and one blocked source, Part B's remainder split:
+the Part B session keeps everything already dispatched (waves 04, 08–15)
+plus undispatched waves 16–18 — recorded in `.adapt/part-b-remaining.json`
+(98 at split time) — and waves 19–27 (102 problems, including the 8 design
+and 2 SQL sources from the old wave-b-27) became **Part E**:
+`.adapt/part-e.json`, inbox `.adapt/incoming-e/`, shard
+`.adapt/ledger-e.json`, agent instructions `.adapt/PART-E-CHUNK.md`
+(a thin delta over `PART-B-CHUNK.md`). The B session set up the E
+infrastructure and commits it; dispatching E belongs to whichever session
+takes Part E. The blocked source `2167` stayed with B
+(`.adapt/blocked-b.md`).

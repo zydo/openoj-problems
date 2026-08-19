@@ -20,7 +20,9 @@ wins.
   `.adapt/ledger*.json`, `MAPPING.md`, `.adapt/incoming/`, `part-a.json`,
   or anything under `problems/` (the live tree). Do not commit, and do
   not edit the gates or the scripts — the main agent commits per wave
-  and adjudicates gate false positives.
+  and adjudicates gate false positives. Part B's territory is
+  `.adapt/part-b-remaining.json`; files under `.adapt/part-e/`-suffixed
+  paths (`incoming-e/`, `wave-e-*`) belong to the Part E session.
 
 ## Gates
 
