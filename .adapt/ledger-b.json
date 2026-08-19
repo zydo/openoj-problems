@@ -2295,6 +2295,19 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2719_count-of-integers",
+      "source_id": 2719,
+      "source_title": "Count of Integers",
+      "adapted": "2719_count-numbers-by-digit-sum",
+      "id": 2719,
+      "title": "Count Numbers by Digit Sum",
+      "api": {
+        "count": "countByDigitSum"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
