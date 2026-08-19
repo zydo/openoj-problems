@@ -381,6 +381,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0773_sliding-puzzle",
+      "source_id": 773,
+      "source_title": "Sliding Puzzle",
+      "adapted": "0773_fewest-moves-on-a-2x3-tile-grid",
+      "id": 773,
+      "title": "Fewest Moves on a 2x3 Tile Grid",
+      "api": {
+        "slidingPuzzle": "minimumTileGridMoves",
+        "sliding_puzzle": "minimum_tile_grid_moves"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
