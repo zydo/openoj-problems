@@ -27,6 +27,34 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0395_longest-substring-with-at-least-k-repeating-characters",
+      "source_id": 395,
+      "source_title": "Longest Substring with At Least K Repeating Characters",
+      "adapted": "0395_longest-frequency-qualified-substring",
+      "id": 395,
+      "title": "Longest Frequency-Qualified Substring",
+      "api": {
+        "longestSubstring": "longestQualifiedSubstring",
+        "longest_substring": "longest_qualified_substring"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "0398_random-pick-index",
+      "source_id": 398,
+      "source_title": "Random Pick Index",
+      "adapted": "0398_uniform-matching-index",
+      "id": 398,
+      "title": "Uniform Matching Index",
+      "api": {
+        "Solution": "IndexSampler",
+        "pick": "drawIndex"
+      },
+      "kind": "design",
+      "figures": "none"
     }
   ]
 }
