@@ -69,6 +69,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0424_longest-repeating-character-replacement",
+      "source_id": 424,
+      "source_title": "Longest Repeating Character Replacement",
+      "adapted": "0424_longest-uniformizable-window",
+      "id": 424,
+      "title": "Longest Uniformizable Window",
+      "api": {
+        "characterReplacement": "longestUniformWindow",
+        "character_replacement": "longest_uniform_window"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
