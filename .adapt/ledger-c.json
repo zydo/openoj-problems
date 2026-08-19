@@ -225,6 +225,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0658_find-k-closest-elements",
+      "source_id": 658,
+      "source_title": "Find K Closest Elements",
+      "adapted": "0658_nearest-sorted-window",
+      "id": 658,
+      "title": "Nearest Sorted Window",
+      "api": {
+        "findClosestElements": "nearestWindow",
+        "find_closest_elements": "nearest_window"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
