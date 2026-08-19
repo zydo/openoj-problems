@@ -1,0 +1,103 @@
+{
+  "entries": [
+    {
+      "source": "1866_number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
+      "source_id": 1866,
+      "source_title": "Number of Ways to Rearrange Sticks With K Sticks Visible",
+      "adapted": "1866_sequences-with-k-records",
+      "id": 1866,
+      "title": "Sequences With K Records",
+      "api": {
+        "rearrangeSticks": "countKRecordSequences",
+        "rearrange_sticks": "count_k_record_sequences"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1870_minimum-speed-to-arrive-on-time",
+      "source_id": 1870,
+      "source_title": "Minimum Speed to Arrive on Time",
+      "adapted": "1870_minimum-route-speed",
+      "id": 1870,
+      "title": "Minimum Route Speed",
+      "api": {
+        "minSpeedOnTime": "minRouteSpeed",
+        "min_speed_on_time": "min_route_speed"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1923_longest-common-subpath",
+      "source_id": 1923,
+      "source_title": "Longest Common Subpath",
+      "adapted": "1923_longest-shared-segment",
+      "id": 1923,
+      "title": "Longest Shared Segment",
+      "api": {
+        "longestCommonSubpath": "longestSharedSegment",
+        "longest_common_subpath": "longest_shared_segment"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1950_maximum-of-minimum-values-in-all-subarrays",
+      "source_id": 1950,
+      "source_title": "Maximum of Minimum Values in All Subarrays",
+      "adapted": "1950_max-of-window-minima",
+      "id": 1950,
+      "title": "Max of Window Minima",
+      "api": {
+        "findMaximums": "maxWindowMinima",
+        "find_maximums": "max_window_minima"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1987_number-of-unique-good-subsequences",
+      "source_id": 1987,
+      "source_title": "Number of Unique Good Subsequences",
+      "adapted": "1987_count-distinct-valid-numerals",
+      "id": 1987,
+      "title": "Count Distinct Valid Numerals",
+      "api": {
+        "numberOfUniqueGoodSubsequences": "countDistinctValidNumerals",
+        "number_of_unique_good_subsequences": "count_distinct_valid_numerals"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2106_maximum-fruits-harvested-after-at-most-k-steps",
+      "source_id": 2106,
+      "source_title": "Maximum Fruits Harvested After at Most K Steps",
+      "adapted": "2106_fruit-harvest-within-a-step-budget",
+      "id": 2106,
+      "title": "Fruit Harvest Within a Step Budget",
+      "api": {
+        "maxTotalFruits": "maxHarvest",
+        "max_total_fruits": "max_harvest"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2226_maximum-candies-allocated-to-k-children",
+      "source_id": 2226,
+      "source_title": "Maximum Candies Allocated to K Children",
+      "adapted": "2226_largest-equal-share",
+      "id": 2226,
+      "title": "Largest Equal Share",
+      "api": {
+        "maximumCandies": "maxShare",
+        "maximum_candies": "max_share",
+        "candies": "piles"
+      },
+      "kind": "function",
+      "figures": "none"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  "3355_zero-array-transformation-i",
+  "3367_maximize-sum-of-weights-after-edge-removals",
+  "3381_maximum-subarray-sum-with-length-divisible-by-k",
+  "3383_minimum-runes-to-add-to-cast-spell",
+  "3388_count-beautiful-splits-in-an-array",
+  "3393_count-paths-with-the-given-xor-value",
+  "3405_count-the-number-of-arrays-with-k-matching-adjacent-elements",
+  "3410_maximize-subarray-sum-after-removing-all-occurrences-of-one-element",
+  "3413_maximum-coins-from-k-consecutive-bags",
+  "3419_minimize-the-maximum-edge-weight-of-graph",
+  "3420_count-non-decreasing-subarrays-after-k-operations",
+  "3425_longest-special-path"
+]
