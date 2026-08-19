@@ -1,3 +1,337 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "source": "3287_find-the-maximum-sequence-value-of-array",
+      "source_id": 3287,
+      "source_title": "Find the Maximum Sequence Value of Array",
+      "adapted": "3287_largest-xor-of-two-or-halves",
+      "id": 3287,
+      "title": "Largest XOR of Two OR Halves",
+      "api": {
+        "maxValue": "largestXor",
+        "max_value": "largest_xor"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3296_minimum-number-of-seconds-to-make-mountain-height-zero",
+      "source_id": 3296,
+      "source_title": "Minimum Number of Seconds to Make Mountain Height Zero",
+      "adapted": "3296_seconds-needed-to-level-a-mountain",
+      "id": 3296,
+      "title": "Seconds Needed to Level a Mountain",
+      "api": {
+        "minNumberOfSeconds": "secondsToLevel",
+        "min_number_of_seconds": "seconds_to_level"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3333_find-the-original-typed-string-ii",
+      "source_id": 3333,
+      "source_title": "Find the Original Typed String II",
+      "adapted": "3333_count-intended-strings-of-length-at-least-k",
+      "id": 3333,
+      "title": "Count Intended Strings of Length at Least K",
+      "api": {
+        "possibleStringCount": "countIntended",
+        "possible_string_count": "count_intended"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3336_find-the-number-of-subsequences-with-equal-gcd",
+      "source_id": 3336,
+      "source_title": "Find the Number of Subsequences With Equal GCD",
+      "adapted": "3336_count-subsequence-pairs-with-matching-gcds",
+      "id": 3336,
+      "title": "Count Subsequence Pairs with Matching GCDs",
+      "api": {
+        "subsequencePairCount": "countGcdPairs",
+        "subsequence_pair_count": "count_gcd_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3337_total-characters-in-string-after-transformations-ii",
+      "source_id": 3337,
+      "source_title": "Total Characters in String After Transformations II",
+      "adapted": "3337_length-after-repeated-letter-expansions",
+      "id": 3337,
+      "title": "Length After Repeated Letter Expansions",
+      "api": {
+        "lengthAfterTransformations": "lengthAfterExpansions",
+        "length_after_transformations": "length_after_expansions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3351_sum-of-good-subsequences",
+      "source_id": 3351,
+      "source_title": "Sum of Good Subsequences",
+      "adapted": "3351_stepping-subsequence-sum",
+      "id": 3351,
+      "title": "Stepping Subsequence Sum",
+      "api": {
+        "sumOfGoodSubsequences": "steppingSum",
+        "sum_of_good_subsequences": "stepping_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3352_count-k-reducible-numbers-less-than-n",
+      "source_id": 3352,
+      "source_title": "Count K-Reducible Numbers Less Than N",
+      "adapted": "3352_count-numbers-shrinking-to-one-in-k-bit-counts",
+      "id": 3352,
+      "title": "Count Numbers Shrinking to One in K Bit Counts",
+      "api": {
+        "countKReducibleNumbers": "countShrinkingNumbers",
+        "count_k_reducible_numbers": "count_shrinking_numbers"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3355_zero-array-transformation-i",
+      "source_id": 3355,
+      "source_title": "Zero Array Transformation I",
+      "adapted": "3355_clearing-an-array-with-window-decrements",
+      "id": 3355,
+      "title": "Clearing an Array with Window Decrements",
+      "api": {
+        "isZeroArray": "canClear",
+        "is_zero_array": "can_clear"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3367_maximize-sum-of-weights-after-edge-removals",
+      "source_id": 3367,
+      "source_title": "Maximize Sum of Weights after Edge Removals",
+      "adapted": "3367_heaviest-forest-under-a-degree-cap",
+      "id": 3367,
+      "title": "Heaviest Forest Under a Degree Cap",
+      "api": {
+        "maximizeSumOfWeights": "heaviestForest",
+        "maximize_sum_of_weights": "heaviest_forest"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3381_maximum-subarray-sum-with-length-divisible-by-k",
+      "source_id": 3381,
+      "source_title": "Maximum Subarray Sum With Length Divisible by K",
+      "adapted": "3381_largest-subarray-sum-with-length-a-multiple-of-k",
+      "id": 3381,
+      "title": "Largest Subarray Sum with Length a Multiple of K",
+      "api": {
+        "maxSubarraySum": "largestKMultipleSum",
+        "max_subarray_sum": "largest_k_multiple_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3383_minimum-runes-to-add-to-cast-spell",
+      "source_id": 3383,
+      "source_title": "Minimum Runes to Add to Cast Spell",
+      "adapted": "3383_fewest-edges-to-reach-every-node-from-a-source",
+      "id": 3383,
+      "title": "Fewest Edges to Reach Every Node from a Source",
+      "api": {
+        "minRunesToAdd": "fewestEdgesToAdd",
+        "min_runes_to_add": "fewest_edges_to_add",
+        "crystals": "sources",
+        "flowFrom": "edgeFrom",
+        "flowTo": "edgeTo",
+        "flow_from": "edge_from",
+        "flow_to": "edge_to"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3388_count-beautiful-splits-in-an-array",
+      "source_id": 3388,
+      "source_title": "Count Beautiful Splits in an Array",
+      "adapted": "3388_count-repeated-prefix-splits",
+      "id": 3388,
+      "title": "Count Repeated-Prefix Splits",
+      "api": {
+        "beautifulSplits": "repeatedPrefixSplits",
+        "beautiful_splits": "repeated_prefix_splits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3393_count-paths-with-the-given-xor-value",
+      "source_id": 3393,
+      "source_title": "Count Paths With the Given XOR Value",
+      "adapted": "3393_count-grid-routes-with-a-given-xor",
+      "id": 3393,
+      "title": "Count Grid Routes With a Given Xor",
+      "api": {
+        "countPathsWithXorValue": "countXorRoutes",
+        "count_paths_with_xor_value": "count_xor_routes"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3405_count-the-number-of-arrays-with-k-matching-adjacent-elements",
+      "source_id": 3405,
+      "source_title": "Count the Number of Arrays with K Matching Adjacent Elements",
+      "adapted": "3405_count-sequences-with-k-immediate-repeats",
+      "id": 3405,
+      "title": "Count Sequences With K Immediate Repeats",
+      "api": {
+        "countGoodArrays": "countSequencesWithRepeats",
+        "count_good_arrays": "count_sequences_with_repeats"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3408_design-task-manager",
+      "source_id": 3408,
+      "source_title": "Design Task Manager",
+      "adapted": "3408_job-board",
+      "id": 3408,
+      "title": "Job Board",
+      "api": {
+        "TaskManager": "JobBoard",
+        "add": "post",
+        "edit": "reprioritize",
+        "rmv": "withdraw",
+        "execTop": "runTop",
+        "tasks": "jobs",
+        "taskId": "jobId"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "3410_maximize-subarray-sum-after-removing-all-occurrences-of-one-element",
+      "source_id": 3410,
+      "source_title": "Maximize Subarray Sum After Removing All Occurrences of One Element",
+      "adapted": "3410_largest-subarray-sum-after-purging-a-value",
+      "id": 3410,
+      "title": "Largest Subarray Sum After Purging a Value",
+      "api": {
+        "maxSubarraySum": "largestSumAfterPurge",
+        "max_subarray_sum": "largest_sum_after_purge"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3413_maximum-coins-from-k-consecutive-bags",
+      "source_id": 3413,
+      "source_title": "Maximum Coins From K Consecutive Bags",
+      "adapted": "3413_most-value-in-k-consecutive-cells",
+      "id": 3413,
+      "title": "Most Value in K Consecutive Cells",
+      "api": {
+        "maximumCoins": "mostValueInKCells",
+        "maximum_coins": "most_value_in_k_cells",
+        "coins": "runs"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3445_maximum-difference-between-even-and-odd-frequency-ii",
+      "source_id": 3445,
+      "source_title": "Maximum Difference Between Even and Odd Frequency II",
+      "adapted": "3445_largest-odd-even-frequency-gap",
+      "id": 3445,
+      "title": "Largest Odd-Even Frequency Gap",
+      "api": {
+        "maxDifference": "largestGap",
+        "max_difference": "largest_gap"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3448_count-substrings-divisible-by-last-digit",
+      "source_id": 3448,
+      "source_title": "Count Substrings Divisible By Last Digit",
+      "adapted": "3448_last-digit-divisible-substrings",
+      "id": 3448,
+      "title": "Last-Digit Divisible Substrings",
+      "api": {
+        "countSubstrings": "countDivisible",
+        "count_substrings": "count_divisible"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3449_maximize-the-minimum-game-score",
+      "source_id": 3449,
+      "source_title": "Maximize the Minimum Game Score",
+      "adapted": "3449_lift-the-lowest-cell-score",
+      "id": 3449,
+      "title": "Lift the Lowest Cell Score",
+      "api": {
+        "maxScore": "liftLowest",
+        "max_score": "lift_lowest"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3453_separate-squares-i",
+      "source_id": 3453,
+      "source_title": "Separate Squares I",
+      "adapted": "3453_halve-square-area-sum",
+      "id": 3453,
+      "title": "Halve the Square Area Sum",
+      "api": {
+        "separateSquares": "halveAreaSum",
+        "separate_squares": "halve_area_sum"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3454_separate-squares-ii",
+      "source_id": 3454,
+      "source_title": "Separate Squares II",
+      "adapted": "3454_halve-square-area-union",
+      "id": 3454,
+      "title": "Halve the Square Area Union",
+      "api": {
+        "separateSquares": "halveAreaUnion",
+        "separate_squares": "halve_area_union"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3455_shortest-matching-substring",
+      "source_id": 3455,
+      "source_title": "Shortest Matching Substring",
+      "adapted": "3455_tightest-two-gap-pattern-match",
+      "id": 3455,
+      "title": "Tightest Two-Gap Pattern Match",
+      "api": {
+        "shortestMatchingSubstring": "tightestMatch",
+        "shortest_matching_substring": "tightest_match"
+      },
+      "kind": "function",
+      "figures": "none"
+    }
+  ]
 }

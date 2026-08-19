@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": 3413,
+  "slug": "most-value-in-k-consecutive-cells",
+  "title": "Most Value in K Consecutive Cells",
+  "difficulty": "H3",
+  "tags": [
+    "Sliding Window",
+    "Two Pointer",
+    "Prefix Sum",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "mostValueInKCells",
+    "parameters": [
+      {
+        "name": "runs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "mostValueInKCells",
+      "rust": "most_value_in_k_cells",
+      "typescript": "mostValueInKCells"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

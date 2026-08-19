@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": 3336,
+  "slug": "count-subsequence-pairs-with-matching-gcds",
+  "title": "Count Subsequence Pairs with Matching GCDs",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Number Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countGcdPairs",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countGcdPairs",
+      "rust": "count_gcd_pairs",
+      "typescript": "countGcdPairs"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <!-- squares = [[0,0,2],[4,3,2]]; total area 8, half = 4; minimal y with area below >= 4 is exactly 2 (verified exactly) -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#42525e"/>
+    </marker>
+  </defs>
+  <rect x="110" y="196" width="90" height="90" fill="#f6ecd9" stroke="#b57f30" stroke-width="1.6"/>
+  <rect x="290" y="61" width="90" height="90" fill="#e6ecfb" stroke="#4169E1" stroke-width="1.6"/>
+  <g stroke="#42525e" stroke-width="1.6" fill="none">
+    <line x1="96" y1="286" x2="400" y2="286" marker-end="url(#arrow)"/>
+    <line x1="110" y1="300" x2="110" y2="50" marker-end="url(#arrow)"/>
+    <line x1="155" y1="286" x2="155" y2="291"/>
+    <line x1="200" y1="286" x2="200" y2="291"/>
+    <line x1="245" y1="286" x2="245" y2="291"/>
+    <line x1="290" y1="286" x2="290" y2="291"/>
+    <line x1="335" y1="286" x2="335" y2="291"/>
+    <line x1="380" y1="286" x2="380" y2="291"/>
+    <line x1="105" y1="241" x2="110" y2="241"/>
+    <line x1="105" y1="196" x2="110" y2="196"/>
+    <line x1="105" y1="151" x2="110" y2="151"/>
+    <line x1="105" y1="106" x2="110" y2="106"/>
+    <line x1="105" y1="61" x2="110" y2="61"/>
+  </g>
+  <g fill="#5c6b76" font-size="11" text-anchor="middle">
+    <text x="155" y="304">1</text>
+    <text x="200" y="304">2</text>
+    <text x="245" y="304">3</text>
+    <text x="290" y="304">4</text>
+    <text x="335" y="304">5</text>
+    <text x="380" y="304">6</text>
+    <text x="98" y="245">1</text>
+    <text x="98" y="200">2</text>
+    <text x="98" y="155">3</text>
+    <text x="98" y="110">4</text>
+    <text x="98" y="65">5</text>
+    <text x="98" y="304">0</text>
+  </g>
+  <line x1="92" y1="196" x2="396" y2="196" stroke="#42525e" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="402" y="200" fill="#42525e" font-size="12.5" font-weight="600">y = 2</text>
+  <text x="300" y="322" text-anchor="middle" fill="#1a2026" font-size="13.5">any line with <tspan fill="#4169E1" font-weight="700">2 ≤ y ≤ 3</tspan> leaves 4 square units above and below; the minimum is <tspan fill="#4169E1" font-weight="700">y = 2</tspan></text>
+</svg>

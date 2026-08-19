@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": 3405,
+  "slug": "count-sequences-with-k-immediate-repeats",
+  "title": "Count Sequences With K Immediate Repeats",
+  "difficulty": "H3",
+  "tags": [
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countSequencesWithRepeats",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "m",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countSequencesWithRepeats",
+      "rust": "count_sequences_with_repeats",
+      "typescript": "countSequencesWithRepeats"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

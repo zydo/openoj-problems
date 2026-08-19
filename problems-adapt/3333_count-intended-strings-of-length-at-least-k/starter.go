@@ -1,0 +1,3 @@
+func countIntended(word string, k int) int {
+	panic("TODO")
+}
