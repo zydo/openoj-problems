@@ -3054,6 +3054,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2167_minimum-time-to-remove-all-cars-containing-illegal-goods",
+      "source_id": 2167,
+      "source_title": "Minimum Time to Remove All Cars Containing Illegal Goods",
+      "adapted": "2167_minimum-cost-to-clear-flagged-cells",
+      "id": 2167,
+      "title": "Minimum Cost to Clear Flagged Cells",
+      "api": {
+        "minimumTime": "minimumCost",
+        "minimum_time": "minimum_cost"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

@@ -928,6 +928,20 @@
       },
       "kind": "function",
       "figures": "regenerated"
+    },
+    {
+      "source": "3123_find-edges-in-shortest-paths",
+      "source_id": 3123,
+      "source_title": "Find Edges in Shortest Paths",
+      "adapted": "3123_edges-on-shortest-paths",
+      "id": 3123,
+      "title": "Edges on Shortest Paths",
+      "api": {
+        "findAnswer": "shortestPathEdges",
+        "find_answer": "shortest_path_edges"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
