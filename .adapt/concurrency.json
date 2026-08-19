@@ -44,6 +44,11 @@
       "at": "2026-08-19T02:55:00-07:00",
       "kind": "policy-fleet-wind-down",
       "note": "User instruction (02:55): reduce fleet, fire nothing new when a wave completes, run until ALL of Part B is drained. The 4 live agents (waves 10/13/16/17) run to completion, never replaced -- fleet shrinks 4->1. When they are done, wave-b-18's existing dead agent is resumed as the sole last agent (already-dispatched work being drained, not a new wave). After it lands: final merge/sweep/refresh, commit, pull --rebase, push, pause until instructed."
+    },
+    {
+      "at": "2026-08-19T09:15:00-07:00",
+      "kind": "plan-d-then-f",
+      "note": "User: continue Part D's remaining 62 (waves d-02..d-07, one agent at a time, cap 4); on D completion continue Part F (66). The 10:15 AM timer's 'resume' means continue D (or F if D done)."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"
