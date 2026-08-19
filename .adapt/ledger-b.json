@@ -2899,6 +2899,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2528_maximize-the-minimum-powered-city",
+      "source_id": 2528,
+      "source_title": "Maximize the Minimum Powered City",
+      "adapted": "2528_largest-minimum-city-power",
+      "id": 2528,
+      "title": "Largest Minimum City Power",
+      "api": {
+        "maxPower": "largestMinPower",
+        "max_power": "largest_min_power"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
