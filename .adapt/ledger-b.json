@@ -2869,6 +2869,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2517_maximum-tastiness-of-candy-basket",
+      "source_id": 2517,
+      "source_title": "Maximum Tastiness of Candy Basket",
+      "adapted": "2517_largest-minimum-price-gap",
+      "id": 2517,
+      "title": "Largest Minimum Price Gap",
+      "api": {
+        "maximumTastiness": "largestMinGap",
+        "maximum_tastiness": "largest_min_gap"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
