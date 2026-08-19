@@ -353,6 +353,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0759_employee-free-time",
+      "source_id": 759,
+      "source_title": "Employee Free Time",
+      "adapted": "0759_shared-gaps-across-timelines",
+      "id": 759,
+      "title": "Shared Gaps Across Timelines",
+      "api": {
+        "employeeFreeTime": "sharedIdleGaps",
+        "employee_free_time": "shared_idle_gaps"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
