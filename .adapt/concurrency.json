@@ -54,6 +54,12 @@
       "at": "2026-08-19T09:20:00-07:00",
       "kind": "policy",
       "note": "User: at most 3 subagents working different waves of Part D (or F after it). Target set to 3."
+    },
+    {
+      "at": "2026-08-19T10:15:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 3,
+      "note": "Fourth exhaustion (~07:47 PDT; reset 09:57 PDT). Waves f-04/f-05/f-06 died together; f-05 had skipped+documented 3123 before dying. Resumed all three at the 10:15 succession timer. Consumption-driven as before; cap stays 3."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"

@@ -538,6 +538,89 @@
       },
       "kind": "sql",
       "figures": "none"
+    },
+    {
+      "source": "3077_maximum-strength-of-k-disjoint-subarrays",
+      "source_id": 3077,
+      "source_title": "Maximum Strength of K Disjoint Subarrays",
+      "adapted": "3077_k-blocks-with-alternating-weights",
+      "id": 3077,
+      "title": "K Blocks with Alternating Weights",
+      "api": {
+        "maximumStrength": "maxBlockScore"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3086_minimum-moves-to-pick-k-ones",
+      "source_id": 3086,
+      "source_title": "Minimum Moves to Pick K Ones",
+      "adapted": "3086_cheapest-gathering-of-k-ones",
+      "id": 3086,
+      "title": "Cheapest Gathering of K Ones",
+      "api": {
+        "minimumMoves": "cheapestGathering",
+        "maxChanges": "maxFlips"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3093_longest-common-suffix-queries",
+      "source_id": 3093,
+      "source_title": "Longest Common Suffix Queries",
+      "adapted": "3093_best-suffix-matches",
+      "id": 3093,
+      "title": "Best Suffix Matches",
+      "api": {
+        "stringIndices": "bestSuffixMatches",
+        "wordsContainer": "entries",
+        "wordsQuery": "queries"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3098_find-the-sum-of-subsequence-powers",
+      "source_id": 3098,
+      "source_title": "Find the Sum of Subsequence Powers",
+      "adapted": "3098_sum-of-subsequence-tightness",
+      "id": 3098,
+      "title": "Sum of Subsequence Tightness",
+      "api": {
+        "sumOfPowers": "totalTightness"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3116_kth-smallest-amount-with-single-denomination-combination",
+      "source_id": 3116,
+      "source_title": "Kth Smallest Amount With Single Denomination Combination",
+      "adapted": "3116_kth-smallest-single-coin-amount",
+      "id": 3116,
+      "title": "Kth Smallest Single-Coin Amount",
+      "api": {
+        "findKthSmallest": "kthSingleCoinAmount",
+        "find_kth_smallest": "kth_single_coin_amount"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3191_minimum-operations-to-make-binary-array-elements-equal-to-one-i",
+      "source_id": 3191,
+      "source_title": "Minimum Operations to Make Binary Array Elements Equal to One I",
+      "adapted": "3191_fewest-triple-flips-for-all-ones",
+      "id": 3191,
+      "title": "Fewest Triple Flips for All Ones",
+      "api": {
+        "minOperations": "fewestFlips",
+        "min_operations": "fewest_flips"
+      },
+      "kind": "function",
+      "figures": "regenerated"
     }
   ]
 }

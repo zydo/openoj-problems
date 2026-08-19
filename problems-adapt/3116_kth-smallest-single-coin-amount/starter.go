@@ -1,0 +1,3 @@
+func kthSingleCoinAmount(coins []int, k int) int64 {
+	panic("TODO")
+}
