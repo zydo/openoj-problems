@@ -339,6 +339,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0757_set-intersection-size-at-least-two",
+      "source_id": 757,
+      "source_title": "Set Intersection Size At Least Two",
+      "adapted": "0757_fewest-points-hitting-every-range-twice",
+      "id": 757,
+      "title": "Fewest Points Hitting Every Range Twice",
+      "api": {
+        "intersectionSizeTwo": "minimumDoubleCoveragePoints",
+        "intersection_size_two": "minimum_double_coverage_points"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
