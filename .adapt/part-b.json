@@ -59,6 +59,7 @@
   "2156_find-substring-with-given-hash-value",
   "2157_groups-of-strings",
   "2163_minimum-difference-in-sums-after-removal-of-elements",
+  "2167_minimum-time-to-remove-all-cars-containing-illegal-goods",
   "2172_maximum-and-sum-of-array",
   "2179_count-good-triplets-in-an-array",
   "2183_count-array-pairs-divisible-by-k",
@@ -75,7 +76,6 @@
   "2245_maximum-trailing-zeros-in-a-cornered-path",
   "2246_longest-path-with-different-adjacent-characters",
   "2247_maximum-cost-of-trip-with-k-highways",
-  "3553_minimum-weighted-subgraph-with-the-required-paths-ii",
   "2251_number-of-flowers-in-full-bloom",
   "2258_escape-the-spreading-fire",
   "2261_k-divisible-elements-subarrays",
@@ -213,5 +213,6 @@
   "3066_minimum-operations-to-exceed-threshold-value-ii",
   "3068_find-the-maximum-sum-of-node-values",
   "3070_count-submatrices-with-top-left-element-and-sum-less-than-k",
-  "3072_distribute-elements-into-two-arrays-ii"
+  "3072_distribute-elements-into-two-arrays-ii",
+  "3553_minimum-weighted-subgraph-with-the-required-paths-ii"
 ]

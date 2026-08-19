@@ -45,3 +45,6 @@ pick weights whose qualifying edge set differs, and regroup the blue/gray
 "You are given an undirected weighted graph" opening must be reworded from
 scratch or the overlap gate trips — `![...]` alt text is prose to the
 shingler.
+
+
+**RESOLVED 2026-08-19** (central fix applied by the Part B session, commit b7ebc217): loop locals declared, solution.java compiles, live bundle re-verified 7/7 x 15/15. Re-dispatched via wave-f-07.json.
