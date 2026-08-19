@@ -1,3 +1,362 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "source": "1707_maximum-xor-with-an-element-from-array",
+      "source_id": 1707,
+      "source_title": "Maximum XOR With an Element From Array",
+      "adapted": "1707_best-xor-under-a-ceiling",
+      "id": 1707,
+      "title": "Best XOR Under a Ceiling",
+      "api": {
+        "maximizeXor": "bestXorUnder",
+        "maximize_xor": "best_xor_under"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1712_ways-to-split-array-into-three-subarrays",
+      "source_id": 1712,
+      "source_title": "Ways to Split Array Into Three Subarrays",
+      "adapted": "1712_three-way-splits-with-nondecreasing-sums",
+      "id": 1712,
+      "title": "Three-Way Splits With Nondecreasing Sums",
+      "api": {
+        "waysToSplit": "countThreeWaySplits",
+        "ways_to_split": "count_three_way_splits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1713_minimum-operations-to-make-a-subsequence",
+      "source_id": 1713,
+      "source_title": "Minimum Operations to Make a Subsequence",
+      "adapted": "1713_fewest-insertions-to-embed-a-sequence",
+      "id": 1713,
+      "title": "Fewest Insertions to Embed a Sequence",
+      "api": {
+        "minOperations": "fewestInsertions",
+        "min_operations": "fewest_insertions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1717_maximum-score-from-removing-substrings",
+      "source_id": 1717,
+      "source_title": "Maximum Score From Removing Substrings",
+      "adapted": "1717_best-score-erasing-letter-pairs",
+      "id": 1717,
+      "title": "Best Score Erasing Letter Pairs",
+      "api": {
+        "maximumGain": "bestEraseScore",
+        "maximum_gain": "best_erase_score"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1722_minimize-hamming-distance-after-swap-operations",
+      "source_id": 1722,
+      "source_title": "Minimize Hamming Distance After Swap Operations",
+      "adapted": "1722_fewest-mismatches-after-free-swaps",
+      "id": 1722,
+      "title": "Fewest Mismatches After Free Swaps",
+      "api": {
+        "minimumHammingDistance": "fewestMismatches",
+        "minimum_hamming_distance": "fewest_mismatches"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1723_find-minimum-time-to-finish-all-jobs",
+      "source_id": 1723,
+      "source_title": "Find Minimum Time to Finish All Jobs",
+      "adapted": "1723_smallest-maximum-workload",
+      "id": 1723,
+      "title": "Smallest Maximum Workload",
+      "api": {
+        "minimumTimeRequired": "smallestMaxWorkload",
+        "minimum_time_required": "smallest_max_workload"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1727_largest-submatrix-with-rearrangements",
+      "source_id": 1727,
+      "source_title": "Largest Submatrix With Rearrangements",
+      "adapted": "1727_largest-ones-block-with-shuffled-columns",
+      "id": 1727,
+      "title": "Largest Ones Block With Shuffled Columns",
+      "api": {
+        "largestSubmatrix": "largestOnesBlock",
+        "largest_submatrix": "largest_ones_block"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1730_shortest-path-to-get-food",
+      "source_id": 1730,
+      "source_title": "Shortest Path to Get Food",
+      "adapted": "1730_fewest-steps-to-a-food-cell",
+      "id": 1730,
+      "title": "Fewest Steps to a Food Cell",
+      "api": {
+        "getFood": "stepsToFood",
+        "get_food": "steps_to_food"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1735_count-ways-to-make-array-with-product",
+      "source_id": 1735,
+      "source_title": "Count Ways to Make Array With Product",
+      "adapted": "1735_count-arrays-that-multiply-to-k",
+      "id": 1735,
+      "title": "Count Arrays That Multiply to k",
+      "api": {
+        "waysToFillArray": "countProductArrays",
+        "ways_to_fill_array": "count_product_arrays"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1751_maximum-number-of-events-that-can-be-attended-ii",
+      "source_id": 1751,
+      "source_title": "Maximum Number of Events That Can Be Attended II",
+      "adapted": "1751_best-value-from-at-most-k-events",
+      "id": 1751,
+      "title": "Best Value From at Most k Events",
+      "api": {
+        "maxValue": "bestValue",
+        "max_value": "best_value"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1755_closest-subsequence-sum",
+      "source_id": 1755,
+      "source_title": "Closest Subsequence Sum",
+      "adapted": "1755_nearest-subsequence-sum",
+      "id": 1755,
+      "title": "Nearest Subsequence Sum",
+      "api": {
+        "minAbsDifference": "nearestSumGap",
+        "min_abs_difference": "nearest_sum_gap"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1760_minimum-limit-of-balls-in-a-bag",
+      "source_id": 1760,
+      "source_title": "Minimum Limit of Balls in a Bag",
+      "adapted": "1760_minimum-largest-pile",
+      "id": 1760,
+      "title": "Minimum Largest Pile",
+      "api": {
+        "minimumSize": "minimumLargestPile",
+        "minimum_size": "minimum_largest_pile",
+        "nums": "piles",
+        "maxOperations": "maxSplits",
+        "max_operations": "max_splits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1765_map-of-highest-peak",
+      "source_id": 1765,
+      "source_title": "Map of Highest Peak",
+      "adapted": "1765_terrain-height-map",
+      "id": 1765,
+      "title": "Terrain Height Map",
+      "api": {
+        "highestPeak": "heightMap",
+        "highest_peak": "height_map"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1770_maximum-score-from-performing-multiplication-operations",
+      "source_id": 1770,
+      "source_title": "Maximum Score from Performing Multiplication Operations",
+      "adapted": "1770_weighted-end-deletions",
+      "id": 1770,
+      "title": "Weighted End Deletions",
+      "api": {
+        "maximumScore": "maxWeightedEndScore",
+        "maximum_score": "max_weighted_end_score",
+        "multipliers": "weights"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1776_car-fleet-ii",
+      "source_id": 1776,
+      "source_title": "Car Fleet II",
+      "adapted": "1776_rear-end-collision-times",
+      "id": 1776,
+      "title": "Rear-End Collision Times",
+      "api": {
+        "getCollisionTimes": "collisionTimes",
+        "get_collision_times": "collision_times"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1792_maximum-average-pass-ratio",
+      "source_id": 1792,
+      "source_title": "Maximum Average Pass Ratio",
+      "adapted": "1792_best-average-success-rate",
+      "id": 1792,
+      "title": "Best Average Success Rate",
+      "api": {
+        "maxAverageRatio": "bestAverageSuccessRate",
+        "max_average_ratio": "best_average_success_rate",
+        "classes": "batches",
+        "extraStudents": "extraTrials",
+        "extra_students": "extra_trials"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1793_maximum-score-of-a-good-subarray",
+      "source_id": 1793,
+      "source_title": "Maximum Score of a Good Subarray",
+      "adapted": "1793_best-min-width-product-through-k",
+      "id": 1793,
+      "title": "Best Min-Width Product Through K",
+      "api": {
+        "maximumScore": "bestMinWidthProduct",
+        "maximum_score": "best_min_width_product"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1798_maximum-number-of-consecutive-values-you-can-make",
+      "source_id": 1798,
+      "source_title": "Maximum Number of Consecutive Values You Can Make",
+      "adapted": "1798_reachable-sums-from-zero",
+      "id": 1798,
+      "title": "Reachable Sums From Zero",
+      "api": {
+        "getMaximumConsecutive": "reachableSumRun",
+        "get_maximum_consecutive": "reachable_sum_run"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1838_frequency-of-the-most-frequent-element",
+      "source_id": 1838,
+      "source_title": "Frequency of the Most Frequent Element",
+      "adapted": "1838_highest-reachable-frequency",
+      "id": 1838,
+      "title": "Highest Reachable Frequency",
+      "api": {
+        "maxFrequency": "highestReachableFrequency",
+        "max_frequency": "highest_reachable_frequency"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1845_seat-reservation-manager",
+      "source_id": 1845,
+      "source_title": "Seat Reservation Manager",
+      "adapted": "1845_seat-pool",
+      "id": 1845,
+      "title": "Seat Pool",
+      "api": {
+        "SeatManager": "SeatPool",
+        "unreserve": "release",
+        "seatNumber": "seat"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "1847_closest-room",
+      "source_id": 1847,
+      "source_title": "Closest Room",
+      "adapted": "1847_nearest-qualifying-room",
+      "id": 1847,
+      "title": "Nearest Qualifying Room",
+      "api": {
+        "closestRoom": "nearestQualifyingRoom",
+        "closest_room": "nearest_qualifying_room"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1851_minimum-interval-to-include-each-query",
+      "source_id": 1851,
+      "source_title": "Minimum Interval to Include Each Query",
+      "adapted": "1851_smallest-covering-span-per-query",
+      "id": 1851,
+      "title": "Smallest Covering Span per Query",
+      "api": {
+        "minInterval": "smallestCoveringSpan",
+        "min_interval": "smallest_covering_span"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1856_maximum-subarray-min-product",
+      "source_id": 1856,
+      "source_title": "Maximum Subarray Min-Product",
+      "adapted": "1856_maximum-subarray-score",
+      "id": 1856,
+      "title": "Maximum Subarray Score",
+      "api": {
+        "maxSumMinProduct": "maxSubarrayScore",
+        "max_sum_min_product": "max_subarray_score"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1857_largest-color-value-in-a-directed-graph",
+      "source_id": 1857,
+      "source_title": "Largest Color Value in a Directed Graph",
+      "adapted": "1857_most-frequent-color-on-a-directed-path",
+      "id": 1857,
+      "title": "Most Frequent Color on a Directed Path",
+      "api": {
+        "largestPathValue": "mostFrequentColor",
+        "largest_path_value": "most_frequent_color"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1862_sum-of-floored-pairs",
+      "source_id": 1862,
+      "source_title": "Sum of Floored Pairs",
+      "adapted": "1862_sum-of-pairwise-floor-quotients",
+      "id": 1862,
+      "title": "Sum of Pairwise Floor Quotients",
+      "api": {
+        "sumOfFlooredPairs": "sumOfFloorQuotients",
+        "sum_of_floored_pairs": "sum_of_floor_quotients"
+      },
+      "kind": "function",
+      "figures": "none"
+    }
+  ]
 }

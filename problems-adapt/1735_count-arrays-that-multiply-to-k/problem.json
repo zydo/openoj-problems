@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 1735,
+  "slug": "count-arrays-that-multiply-to-k",
+  "title": "Count Arrays That Multiply to k",
+  "difficulty": "H4",
+  "tags": [
+    "Combinatorics",
+    "Number Theory",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countProductArrays",
+    "parameters": [
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "countProductArrays",
+      "rust": "count_product_arrays",
+      "typescript": "countProductArrays"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
