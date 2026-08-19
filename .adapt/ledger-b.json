@@ -2883,6 +2883,22 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2410_maximum-matching-of-players-with-trainers",
+      "source_id": 2410,
+      "source_title": "Maximum Matching of Players With Trainers",
+      "adapted": "2410_most-pairs-from-requirements-and-capacities",
+      "id": 2410,
+      "title": "Most Pairs From Requirements and Capacities",
+      "api": {
+        "matchPlayersAndTrainers": "mostRequirementCapacityPairs",
+        "match_players_and_trainers": "most_requirement_capacity_pairs",
+        "players": "requirements",
+        "trainers": "capacities"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
