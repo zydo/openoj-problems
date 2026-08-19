@@ -239,6 +239,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0668_kth-smallest-number-in-multiplication-table",
+      "source_id": 668,
+      "source_title": "Kth Smallest Number in Multiplication Table",
+      "adapted": "0668_product-grid-order-statistic",
+      "id": 668,
+      "title": "Product Grid Order Statistic",
+      "api": {
+        "findKthNumber": "productGridKthValue",
+        "find_kth_number": "product_grid_kth_value"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }
