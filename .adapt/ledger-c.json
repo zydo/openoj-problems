@@ -114,6 +114,20 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "0438_find-all-anagrams-in-a-string",
+      "source_id": 438,
+      "source_title": "Find All Anagrams in a String",
+      "adapted": "0438_permutation-window-starts",
+      "id": 438,
+      "title": "Permutation Window Starts",
+      "api": {
+        "findAnagrams": "permutationWindowStarts",
+        "find_anagrams": "permutation_window_starts"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
