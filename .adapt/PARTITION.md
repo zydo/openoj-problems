@@ -266,3 +266,11 @@ defects, not adaptation errors, and all were deliberately left alone
 because `comparison` is a kept field. `0943` additionally chose examples
 with a provably unique optimum so nothing rides on the tie-break. These
 want one central decision, not per-bundle patches.
+
+**Part F complete (2026-08-19): 65/65** in its final territory (66
+minus `3123_find-edges-in-shortest-paths`, moved to the backlog — its
+live Java port does not compile; see `.adapt/blocked-f.md`). Merged into
+`.adapt/ledger-f.json`, gate-swept, committed (`2f2fef8d`); wave-f-01's
+starters were regenerated once after the harness formatter widened
+(`9cca3b5f`). `.adapt/incoming-f/` should now stay empty. The Part B
+session moved on to Part G, the last part.
