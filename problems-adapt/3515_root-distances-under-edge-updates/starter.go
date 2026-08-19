@@ -1,0 +1,3 @@
+func rootDistances(n int, edges [][]int, queries [][]int) []int {
+	panic("TODO")
+}

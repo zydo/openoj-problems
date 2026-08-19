@@ -561,6 +561,164 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "3508_implement-router",
+      "source_id": 3508,
+      "source_title": "Implement Router",
+      "adapted": "3508_design-a-packet-buffer",
+      "id": 3508,
+      "title": "Design a Packet Buffer",
+      "api": {
+        "Router": "PacketBuffer",
+        "memoryLimit": "capacity",
+        "addPacket": "receive",
+        "forwardPacket": "dispatch",
+        "getCount": "countInWindow"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "3515_shortest-path-in-a-weighted-tree",
+      "source_id": 3515,
+      "source_title": "Shortest Path in a Weighted Tree",
+      "adapted": "3515_root-distances-under-edge-updates",
+      "id": 3515,
+      "title": "Root Distances Under Edge Updates",
+      "api": {
+        "treeQueries": "rootDistances",
+        "tree_queries": "root_distances"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3519_count-numbers-with-non-decreasing-digits",
+      "source_id": 3519,
+      "source_title": "Count Numbers with Non-Decreasing Digits",
+      "adapted": "3519_count-climbing-digit-numbers",
+      "id": 3519,
+      "title": "Count Climbing-Digit Numbers",
+      "api": {
+        "countNumbers": "countClimbing",
+        "count_numbers": "count_climbing"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3526_range-xor-queries-with-subarray-reversals",
+      "source_id": 3526,
+      "source_title": "Range XOR Queries with Subarray Reversals",
+      "adapted": "3526_xor-ranges-in-a-reversible-array",
+      "id": 3526,
+      "title": "XOR Ranges in a Reversible Array",
+      "api": {
+        "getResults": "xorResults",
+        "get_results": "xor_results"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3530_maximum-profit-from-valid-topological-order-in-dag",
+      "source_id": 3530,
+      "source_title": "Maximum Profit from Valid Topological Order in DAG",
+      "adapted": "3530_maximize-scored-topological-ordering",
+      "id": 3530,
+      "title": "Maximize Scored Topological Ordering",
+      "api": {
+        "maxProfit": "maxScoredOrdering",
+        "max_profit": "max_scored_ordering"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3533_concatenated-divisibility",
+      "source_id": 3533,
+      "source_title": "Concatenated Divisibility",
+      "adapted": "3533_smallest-divisible-ordering",
+      "id": 3533,
+      "title": "Smallest Divisible Ordering",
+      "api": {
+        "concatenatedDivisibility": "smallestDivisibleOrdering",
+        "concatenated_divisibility": "smallest_divisible_ordering"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3544_subtree-inversion-sum",
+      "source_id": 3544,
+      "source_title": "Subtree Inversion Sum",
+      "adapted": "3544_subtree-sign-flip-sum",
+      "id": 3544,
+      "title": "Subtree Sign-Flip Sum",
+      "api": {
+        "subtreeInversionSum": "subtreeSignFlipSum",
+        "subtree_inversion_sum": "subtree_sign_flip_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3704_count-no-zero-pairs-that-sum-to-n",
+      "source_id": 3704,
+      "source_title": "Count No-Zero Pairs That Sum to N",
+      "adapted": "3704_count-zero-free-pairs-that-sum-to-n",
+      "id": 3704,
+      "title": "Count Zero-Free Pairs That Sum to N",
+      "api": {
+        "countNoZeroPairs": "countZeroFreePairs",
+        "count_no_zero_pairs": "count_zero_free_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3749_evaluate-valid-expressions",
+      "source_id": 3749,
+      "source_title": "Evaluate Valid Expressions",
+      "adapted": "3749_evaluate-nested-arithmetic-calls",
+      "id": 3749,
+      "title": "Evaluate Nested Arithmetic Calls",
+      "api": {
+        "evaluateExpression": "evaluateCalls",
+        "evaluate_expression": "evaluate_calls"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3772_maximum-subgraph-score-in-a-tree",
+      "source_id": 3772,
+      "source_title": "Maximum Subgraph Score in a Tree",
+      "adapted": "3772_best-connected-piece-through-each-node",
+      "id": 3772,
+      "title": "Best Connected Piece Through Each Node",
+      "api": {
+        "maxSubgraphScore": "bestPieceScores",
+        "max_subgraph_score": "best_piece_scores",
+        "good": "marked"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3782_last-remaining-integer-after-alternating-deletion-operations",
+      "source_id": 3782,
+      "source_title": "Last Remaining Integer After Alternating Deletion Operations",
+      "adapted": "3782_two-way-thinning-survivor",
+      "id": 3782,
+      "title": "Two-Way Thinning Survivor",
+      "api": {
+        "lastInteger": "thinningSurvivor",
+        "last_integer": "thinning_survivor"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
