@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 192" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <!-- price = [2,5], reward = [7,6], edges = [[1,2]], budget = 4; both bought: spend 2 + 2 = 4, gain 5 + 4 = 9 (verified by brute force) -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#42525e"/>
+    </marker>
+  </defs>
+  <line x1="171" y1="70" x2="359" y2="70" stroke="#42525e" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="265" y="58" text-anchor="middle" fill="#5c6b76" font-size="12">direct parent</text>
+  <g stroke="#4169E1" stroke-width="1.6" fill="#e6ecfb">
+    <circle cx="150" cy="70" r="21"/>
+    <circle cx="390" cy="70" r="21"/>
+  </g>
+  <g text-anchor="middle" font-weight="700" fill="#1a2026">
+    <text x="150" y="75">1</text>
+    <text x="390" y="75">2</text>
+  </g>
+  <g font-size="12" text-anchor="middle">
+    <text x="150" y="116" fill="#5c6b76">pay 2, reward 7</text>
+    <text x="150" y="133" fill="#4169E1" font-weight="600">gain 7 - 2 = 5</text>
+    <text x="390" y="116" fill="#5c6b76">half price floor(5/2) = 2</text>
+    <text x="390" y="133" fill="#4169E1" font-weight="600">gain 6 - 2 = 4</text>
+  </g>
+  <text x="280" y="172" text-anchor="middle" fill="#1a2026" font-size="13.5">spend 2 + 2 = 4 ≤ budget 4, so the total gain is 5 + 4 = <tspan fill="#4169E1" font-weight="700">9</tspan></text>
+</svg>

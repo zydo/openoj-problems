@@ -719,6 +719,51 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "3562_maximum-profit-from-trading-stocks-with-discounts",
+      "source_id": 3562,
+      "source_title": "Maximum Profit from Trading Stocks with Discounts",
+      "adapted": "3562_best-tree-purchases-within-a-budget",
+      "id": 3562,
+      "title": "Best Tree Purchases Within a Budget",
+      "api": {
+        "maxProfit": "bestTreePurchases",
+        "max_profit": "best_tree_purchases",
+        "present": "price",
+        "future": "reward",
+        "hierarchy": "edges"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3563_lexicographically-smallest-string-after-adjacent-removals",
+      "source_id": 3563,
+      "source_title": "Lexicographically Smallest String After Adjacent Removals",
+      "adapted": "3563_smallest-string-after-pair-deletions",
+      "id": 3563,
+      "title": "Smallest String After Pair Deletions",
+      "api": {
+        "lexicographicallySmallestString": "smallestAfterPairDeletions",
+        "lexicographically_smallest_string": "smallest_after_pair_deletions"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3787_find-diameter-endpoints-of-a-tree",
+      "source_id": 3787,
+      "source_title": "Find Diameter Endpoints of a Tree",
+      "adapted": "3787_mark-diameter-endpoints-in-a-tree",
+      "id": 3787,
+      "title": "Mark Diameter Endpoints in a Tree",
+      "api": {
+        "findSpecialNodes": "markDiameterEnds",
+        "find_special_nodes": "mark_diameter_ends"
+      },
+      "kind": "function",
+      "figures": "labels updated (example-3 dropped)"
     }
   ]
 }

@@ -1,6 +1,4 @@
 [
-  "3562_maximum-profit-from-trading-stocks-with-discounts",
-  "3563_lexicographically-smallest-string-after-adjacent-removals",
   "3575_maximum-good-subtree-score",
   "3595_once-twice",
   "3600_maximize-spanning-tree-stability-with-upgrades",
@@ -8,7 +6,6 @@
   "3613_minimize-maximum-component-cost",
   "3615_longest-palindromic-path-in-graph",
   "3620_network-recovery-pathways",
-  "3787_find-diameter-endpoints-of-a-tree",
   "3807_minimum-cost-to-repair-edges-to-traverse-a-graph",
   "3877_minimum-removals-to-achieve-target-xor",
   "3887_incremental-even-weighted-cycle-queries",
