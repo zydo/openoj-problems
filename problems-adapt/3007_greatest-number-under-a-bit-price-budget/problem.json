@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 3007,
+  "slug": "greatest-number-under-a-bit-price-budget",
+  "title": "Greatest Number Under a Bit-Price Budget",
+  "difficulty": "H4",
+  "tags": [
+    "Binary Search",
+    "Digit DP",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "greatestUnderBudget",
+    "parameters": [
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      },
+      {
+        "name": "x",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "greatestUnderBudget",
+      "rust": "greatest_under_budget",
+      "typescript": "greatestUnderBudget"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

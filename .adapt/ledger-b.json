@@ -2532,6 +2532,104 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2403_minimum-time-to-kill-all-monsters",
+      "source_id": 2403,
+      "source_title": "Minimum Time to Kill All Monsters",
+      "adapted": "2403_fewest-days-to-defeat-all-foes",
+      "id": 2403,
+      "title": "Fewest Days to Defeat All Foes",
+      "api": {
+        "minimumTime": "fewestDaysToDefeatAll",
+        "minimum_time": "fewest_days_to_defeat_all"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2812_find-the-safest-path-in-a-grid",
+      "source_id": 2812,
+      "source_title": "Find the Safest Path in a Grid",
+      "adapted": "2812_safest-route-across-a-hazard-grid",
+      "id": 2812,
+      "title": "Safest Route Across a Hazard Grid",
+      "api": {
+        "maximumSafenessFactor": "maximumClearance",
+        "maximum_safeness_factor": "maximum_clearance"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2813_maximum-elegance-of-a-k-length-subsequence",
+      "source_id": 2813,
+      "source_title": "Maximum Elegance of a K-Length Subsequence",
+      "adapted": "2813_best-k-picks-for-profit-and-variety",
+      "id": 2813,
+      "title": "Best k Picks for Profit and Variety",
+      "api": {
+        "findMaximumElegance": "bestPickScore",
+        "find_maximum_elegance": "best_pick_score"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2872_maximum-number-of-k-divisible-components",
+      "source_id": 2872,
+      "source_title": "Maximum Number of K-Divisible Components",
+      "adapted": "2872_tree-split-into-divisible-sums",
+      "id": 2872,
+      "title": "Tree Split into Divisible Sums",
+      "api": {
+        "maxKDivisibleComponents": "maxDivisibleComponents",
+        "max_k_divisible_components": "max_divisible_components"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2876_count-visited-nodes-in-a-directed-graph",
+      "source_id": 2876,
+      "source_title": "Count Visited Nodes in a Directed Graph",
+      "adapted": "2876_distinct-nodes-until-a-repeat",
+      "id": 2876,
+      "title": "Distinct Nodes Until a Repeat",
+      "api": {
+        "countVisitedNodes": "countDistinctUntilRepeat",
+        "count_visited_nodes": "count_distinct_until_repeat"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "3007_maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
+      "source_id": 3007,
+      "source_title": "Maximum Number That Sum of the Prices Is Less Than or Equal to K",
+      "adapted": "3007_greatest-number-under-a-bit-price-budget",
+      "id": 3007,
+      "title": "Greatest Number Under a Bit-Price Budget",
+      "api": {
+        "findMaximumNumber": "greatestUnderBudget",
+        "find_maximum_number": "greatest_under_budget"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3013_divide-an-array-into-subarrays-with-minimum-cost-ii",
+      "source_id": 3013,
+      "source_title": "Divide an Array Into Subarrays With Minimum Cost II",
+      "adapted": "3013_least-cost-split-within-a-span",
+      "id": 3013,
+      "title": "Least-Cost Split Within a Span",
+      "api": {
+        "minimumCost": "leastSplitCost",
+        "minimum_cost": "least_split_cost"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
