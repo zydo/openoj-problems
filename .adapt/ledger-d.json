@@ -935,6 +935,34 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1171_remove-zero-sum-consecutive-nodes-from-linked-list",
+      "source_id": 1171,
+      "source_title": "Remove Zero Sum Consecutive Nodes from Linked List",
+      "adapted": "1171_dropping-zero-sum-stretches-in-a-linked-list",
+      "id": 1171,
+      "title": "Dropping Zero-Sum Stretches in a Linked List",
+      "api": {
+        "removeZeroSumSublists": "dropZeroSumStretches",
+        "remove_zero_sum_sublists": "drop_zero_sum_stretches"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1177_can-make-palindrome-from-substring",
+      "source_id": 1177,
+      "source_title": "Can Make Palindrome from Substring",
+      "adapted": "1177_substring-palindrome-queries",
+      "id": 1177,
+      "title": "Substring Palindrome Queries",
+      "api": {
+        "canMakePaliQueries": "substringPalindromeQueries",
+        "can_make_pali_queries": "substring_palindrome_queries"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
