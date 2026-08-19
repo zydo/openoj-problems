@@ -253,6 +253,20 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "0712_minimum-ascii-delete-sum-for-two-strings",
+      "source_id": 712,
+      "source_title": "Minimum ASCII Delete Sum for Two Strings",
+      "adapted": "0712_weighted-string-reconciliation",
+      "id": 712,
+      "title": "Weighted String Reconciliation",
+      "api": {
+        "minimumDeleteSum": "reconcileDeletionCost",
+        "minimum_delete_sum": "reconcile_deletion_cost"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
