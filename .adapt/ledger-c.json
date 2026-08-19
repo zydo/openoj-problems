@@ -281,6 +281,22 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "0715_range-module",
+      "source_id": 715,
+      "source_title": "Range Module",
+      "adapted": "0715_continuous-coverage-ledger",
+      "id": 715,
+      "title": "Continuous Coverage Ledger",
+      "api": {
+        "RangeModule": "CoverageLedger",
+        "addRange": "addSpan",
+        "queryRange": "coversSpan",
+        "removeRange": "removeSpan"
+      },
+      "kind": "design",
+      "figures": "none"
     }
   ]
 }
