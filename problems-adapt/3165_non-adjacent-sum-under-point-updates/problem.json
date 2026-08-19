@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": 3165,
+  "slug": "non-adjacent-sum-under-point-updates",
+  "title": "Non-Adjacent Sum Under Point Updates",
+  "difficulty": "H4",
+  "tags": [
+    "Segment Tree",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "nonAdjacentSum",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "nonAdjacentSum",
+      "rust": "non_adjacent_sum",
+      "typescript": "nonAdjacentSum"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 4000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

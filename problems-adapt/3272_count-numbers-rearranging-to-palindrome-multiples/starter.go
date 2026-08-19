@@ -1,0 +1,3 @@
+func countRearrangeable(n int, k int) int64 {
+	panic("TODO")
+}

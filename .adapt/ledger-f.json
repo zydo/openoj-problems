@@ -758,6 +758,162 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "3149_find-the-minimum-cost-array-permutation",
+      "source_id": 3149,
+      "source_title": "Find the Minimum Cost Array Permutation",
+      "adapted": "3149_minimum-cost-cyclic-ordering",
+      "id": 3149,
+      "title": "Minimum-Cost Cyclic Ordering",
+      "api": {
+        "findPermutation": "minCostOrder",
+        "find_permutation": "min_cost_order"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "3165_maximum-sum-of-subsequence-with-non-adjacent-elements",
+      "source_id": 3165,
+      "source_title": "Maximum Sum of Subsequence With Non-adjacent Elements",
+      "adapted": "3165_non-adjacent-sum-under-point-updates",
+      "id": 3165,
+      "title": "Non-Adjacent Sum Under Point Updates",
+      "api": {
+        "maximumSumSubsequence": "nonAdjacentSum",
+        "maximum_sum_subsequence": "non_adjacent_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3171_find-subarray-with-bitwise-or-closest-to-k",
+      "source_id": 3171,
+      "source_title": "Find Subarray With Bitwise OR Closest to K",
+      "adapted": "3171_nearest-subarray-or-to-a-target",
+      "id": 3171,
+      "title": "Nearest Subarray OR to a Target",
+      "api": {
+        "minimumDifference": "nearestOr",
+        "minimum_difference": "nearest_or"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3177_find-the-maximum-length-of-a-good-subsequence-ii",
+      "source_id": 3177,
+      "source_title": "Find the Maximum Length of a Good Subsequence II",
+      "adapted": "3177_longest-subsequence-with-at-most-k-breaks",
+      "id": 3177,
+      "title": "Longest Subsequence With at Most K Breaks",
+      "api": {
+        "maximumLength": "longestWithBreaks",
+        "maximum_length": "longest_with_breaks"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3181_maximum-total-reward-using-operations-ii",
+      "source_id": 3181,
+      "source_title": "Maximum Total Reward Using Operations II",
+      "adapted": "3181_maximum-collectible-reward",
+      "id": 3181,
+      "title": "Maximum Collectible Reward",
+      "api": {
+        "maxTotalReward": "maxCollectibleReward",
+        "max_total_reward": "max_collectible_reward",
+        "rewardValues": "rewards",
+        "reward_values": "rewards"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3187_peaks-in-array",
+      "source_id": 3187,
+      "source_title": "Peaks in Array",
+      "adapted": "3187_peak-counts-under-point-updates",
+      "id": 3187,
+      "title": "Peak Counts Under Point Updates",
+      "api": {
+        "countOfPeaks": "countPeaks",
+        "count_of_peaks": "count_peaks"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3241_time-taken-to-mark-all-nodes",
+      "source_id": 3241,
+      "source_title": "Time Taken to Mark All Nodes",
+      "adapted": "3241_marking-spread-times-on-a-tree",
+      "id": 3241,
+      "title": "Marking Spread Times on a Tree",
+      "api": {
+        "timeTaken": "spreadTimes",
+        "time_taken": "spread_times"
+      },
+      "kind": "function",
+      "figures": "example-1 regenerated (4-node star), example-3 labels updated, example-2 dropped"
+    },
+    {
+      "source": "3272_find-the-count-of-good-integers",
+      "source_id": 3272,
+      "source_title": "Find the Count of Good Integers",
+      "adapted": "3272_count-numbers-rearranging-to-palindrome-multiples",
+      "id": 3272,
+      "title": "Count Numbers Rearranging to Palindrome Multiples",
+      "api": {
+        "countGoodIntegers": "countRearrangeable",
+        "count_good_integers": "count_rearrangeable"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3273_minimum-amount-of-damage-dealt-to-bob",
+      "source_id": 3273,
+      "source_title": "Minimum Amount of Damage Dealt to Bob",
+      "adapted": "3273_least-damage-taken-finishing-all-enemies",
+      "id": 3273,
+      "title": "Least Damage Taken Finishing All Enemies",
+      "api": {
+        "minDamage": "leastDamage",
+        "min_damage": "least_damage"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "3276_select-cells-in-grid-with-maximum-score",
+      "source_id": 3276,
+      "source_title": "Select Cells in Grid With Maximum Score",
+      "adapted": "3276_largest-distinct-value-sum-across-grid-rows",
+      "id": 3276,
+      "title": "Largest Distinct-Value Sum Across Grid Rows",
+      "api": {
+        "maxScore": "bestPickSum",
+        "max_score": "best_pick_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3281_maximize-score-of-numbers-in-ranges",
+      "source_id": 3281,
+      "source_title": "Maximize Score of Numbers in Ranges",
+      "adapted": "3281_widest-gap-choosing-one-point-per-interval",
+      "id": 3281,
+      "title": "Widest Gap Choosing One Point Per Interval",
+      "api": {
+        "maxPossibleScore": "widestGap",
+        "max_possible_score": "widest_gap"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

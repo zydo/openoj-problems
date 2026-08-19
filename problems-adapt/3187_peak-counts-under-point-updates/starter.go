@@ -1,0 +1,3 @@
+func countPeaks(nums []int, queries [][]int) []int {
+	panic("TODO")
+}
