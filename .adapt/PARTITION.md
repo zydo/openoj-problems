@@ -182,6 +182,30 @@ Second, no family group spanned the union (the earlier splits had kept
 them whole), so the five-way cut is by plain id order and stays
 family-safe.
 
+## Backlog — the special part (2026-08-19)
+
+`.adapt/part-backlog.json` holds sources that cannot be adapted until a
+central fix lands in the live tree (statement ↔ oracle contradictions,
+data that follows a buggy oracle). It is not a dispatchable part: no
+inbox, no shard, no waves. An item graduates from the backlog to a
+working part once the live-tree fix and hidden-data regeneration land
+and the bundle re-verifies. The analysis lives in
+`.adapt/blocked-b.md`; the list mirrors `.adapt/blocked.json`.
+
+Current backlog: `2167_minimum-time-to-remove-all-cars-containing-
+illegal-goods` (moved out of Part B at completion).
+
+## Part B complete (2026-08-19 03:43)
+
+Part B is done: **215 of 215** in its final territory adapted, merged
+into `.adapt/ledger-b.json`, gate-swept, and committed. The blocked
+`2167` moved to the backlog above, so B's file lists done work only.
+`.adapt/incoming-b/` should now stay empty — a fragment there would be
+a stray. The B session's waves, conventions file (`PART-B-CHUNK.md`),
+and the E/F/G infrastructure it built remain for the claiming sessions
+to reuse. One source-defect finding is the backlog item; no other
+source in B's 318 original problems needed a central fix.
+
 `1201_ugly-number-iii` moved to C with the rest. Its sibling
 `0264_ugly-number-ii` is already adapted in the frozen base as
 `0264_nth-five-smooth-number`, so whoever takes it should match that

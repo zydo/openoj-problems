@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 362" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <!-- grid = [[3,1,4],[2,6,1],[5,0,2]], k = 15; qualifying sums 3, 4, 8, 5, 12, 10 (verified by prefix sums) -->
+  <g font-size="12" fill="#5c6b76" text-anchor="middle">
+    <text x="85" y="48">1 x 1</text>
+    <text x="255" y="48">1 x 2</text>
+    <text x="425" y="48">1 x 3</text>
+    <text x="85" y="202">2 x 1</text>
+    <text x="255" y="202">2 x 2</text>
+    <text x="425" y="202">3 x 1</text>
+  </g>
+  <g stroke="#42525e" stroke-width="1.4" fill="#ffffff">
+    <rect x="40" y="56" width="30" height="30"/><rect x="70" y="56" width="30" height="30"/><rect x="100" y="56" width="30" height="30"/>
+    <rect x="40" y="86" width="30" height="30"/><rect x="70" y="86" width="30" height="30"/><rect x="100" y="86" width="30" height="30"/>
+    <rect x="40" y="116" width="30" height="30"/><rect x="70" y="116" width="30" height="30"/><rect x="100" y="116" width="30" height="30"/>
+    <rect x="210" y="56" width="30" height="30"/><rect x="240" y="56" width="30" height="30"/><rect x="270" y="56" width="30" height="30"/>
+    <rect x="210" y="86" width="30" height="30"/><rect x="240" y="86" width="30" height="30"/><rect x="270" y="86" width="30" height="30"/>
+    <rect x="210" y="116" width="30" height="30"/><rect x="240" y="116" width="30" height="30"/><rect x="270" y="116" width="30" height="30"/>
+    <rect x="380" y="56" width="30" height="30"/><rect x="410" y="56" width="30" height="30"/><rect x="440" y="56" width="30" height="30"/>
+    <rect x="380" y="86" width="30" height="30"/><rect x="410" y="86" width="30" height="30"/><rect x="440" y="86" width="30" height="30"/>
+    <rect x="380" y="116" width="30" height="30"/><rect x="410" y="116" width="30" height="30"/><rect x="440" y="116" width="30" height="30"/>
+    <rect x="40" y="210" width="30" height="30"/><rect x="70" y="210" width="30" height="30"/><rect x="100" y="210" width="30" height="30"/>
+    <rect x="40" y="240" width="30" height="30"/><rect x="70" y="240" width="30" height="30"/><rect x="100" y="240" width="30" height="30"/>
+    <rect x="40" y="270" width="30" height="30"/><rect x="70" y="270" width="30" height="30"/><rect x="100" y="270" width="30" height="30"/>
+    <rect x="210" y="210" width="30" height="30"/><rect x="240" y="210" width="30" height="30"/><rect x="270" y="210" width="30" height="30"/>
+    <rect x="210" y="240" width="30" height="30"/><rect x="240" y="240" width="30" height="30"/><rect x="270" y="240" width="30" height="30"/>
+    <rect x="210" y="270" width="30" height="30"/><rect x="240" y="270" width="30" height="30"/><rect x="270" y="270" width="30" height="30"/>
+    <rect x="380" y="210" width="30" height="30"/><rect x="410" y="210" width="30" height="30"/><rect x="440" y="210" width="30" height="30"/>
+    <rect x="380" y="240" width="30" height="30"/><rect x="410" y="240" width="30" height="30"/><rect x="440" y="240" width="30" height="30"/>
+    <rect x="380" y="270" width="30" height="30"/><rect x="410" y="270" width="30" height="30"/><rect x="440" y="270" width="30" height="30"/>
+  </g>
+  <g stroke="#4169E1" stroke-width="2" fill="#e6ecfb">
+    <rect x="40" y="56" width="30" height="30"/>
+    <rect x="210" y="56" width="30" height="30"/><rect x="240" y="56" width="30" height="30"/>
+    <rect x="380" y="56" width="30" height="30"/><rect x="410" y="56" width="30" height="30"/><rect x="440" y="56" width="30" height="30"/>
+    <rect x="40" y="210" width="30" height="30"/><rect x="40" y="240" width="30" height="30"/>
+    <rect x="210" y="210" width="30" height="30"/><rect x="240" y="210" width="30" height="30"/>
+    <rect x="210" y="240" width="30" height="30"/><rect x="240" y="240" width="30" height="30"/>
+    <rect x="380" y="210" width="30" height="30"/><rect x="380" y="240" width="30" height="30"/><rect x="380" y="270" width="30" height="30"/>
+  </g>
+  <g text-anchor="middle" font-weight="600" fill="#1a2026">
+    <text x="55" y="76">3</text><text x="85" y="76">1</text><text x="115" y="76">4</text>
+    <text x="55" y="106">2</text><text x="85" y="106">6</text><text x="115" y="106">1</text>
+    <text x="55" y="136">5</text><text x="85" y="136">0</text><text x="115" y="136">2</text>
+    <text x="225" y="76">3</text><text x="255" y="76">1</text><text x="285" y="76">4</text>
+    <text x="225" y="106">2</text><text x="255" y="106">6</text><text x="285" y="106">1</text>
+    <text x="225" y="136">5</text><text x="255" y="136">0</text><text x="285" y="136">2</text>
+    <text x="395" y="76">3</text><text x="425" y="76">1</text><text x="455" y="76">4</text>
+    <text x="395" y="106">2</text><text x="425" y="106">6</text><text x="455" y="106">1</text>
+    <text x="395" y="136">5</text><text x="425" y="136">0</text><text x="455" y="136">2</text>
+    <text x="55" y="230">3</text><text x="85" y="230">1</text><text x="115" y="230">4</text>
+    <text x="55" y="260">2</text><text x="85" y="260">6</text><text x="115" y="260">1</text>
+    <text x="55" y="290">5</text><text x="85" y="290">0</text><text x="115" y="290">2</text>
+    <text x="225" y="230">3</text><text x="255" y="230">1</text><text x="285" y="230">4</text>
+    <text x="225" y="260">2</text><text x="255" y="260">6</text><text x="285" y="260">1</text>
+    <text x="225" y="290">5</text><text x="255" y="290">0</text><text x="285" y="290">2</text>
+    <text x="395" y="230">3</text><text x="425" y="230">1</text><text x="455" y="230">4</text>
+    <text x="395" y="260">2</text><text x="425" y="260">6</text><text x="455" y="260">1</text>
+    <text x="395" y="290">5</text><text x="425" y="290">0</text><text x="455" y="290">2</text>
+  </g>
+  <g fill="#4169E1" font-size="12.5" font-weight="600" text-anchor="middle">
+    <text x="85" y="166">sum 3</text>
+    <text x="255" y="166">sum 4</text>
+    <text x="425" y="166">sum 8</text>
+    <text x="85" y="320">sum 5</text>
+    <text x="255" y="320">sum 12</text>
+    <text x="425" y="320">sum 10</text>
+  </g>
+  <text x="233" y="352" text-anchor="middle" fill="#1a2026" font-size="13.5">the <tspan fill="#4169E1" font-weight="700">6</tspan> anchored rectangles with sum at most 15: sums 3, 4, 8, 5, 12, 10</text>
+</svg>

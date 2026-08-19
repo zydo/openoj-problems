@@ -3012,6 +3012,48 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "3068_find-the-maximum-sum-of-node-values",
+      "source_id": 3068,
+      "source_title": "Find the Maximum Sum of Node Values",
+      "adapted": "3068_largest-node-sum-with-edge-xors",
+      "id": 3068,
+      "title": "Largest Node Sum With Edge XORs",
+      "api": {
+        "maximumValueSum": "largestNodeSum",
+        "maximum_value_sum": "largest_node_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3070_count-submatrices-with-top-left-element-and-sum-less-than-k",
+      "source_id": 3070,
+      "source_title": "Count Submatrices with Top-Left Element and Sum Less Than k",
+      "adapted": "3070_count-anchored-submatrices-within-a-budget",
+      "id": 3070,
+      "title": "Count Anchored Submatrices Within a Budget",
+      "api": {
+        "countSubmatrices": "countAnchored",
+        "count_submatrices": "count_anchored"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "3072_distribute-elements-into-two-arrays-ii",
+      "source_id": 3072,
+      "source_title": "Distribute Elements Into Two Arrays II",
+      "adapted": "3072_splitting-a-stream-by-greater-counts",
+      "id": 3072,
+      "title": "Splitting a Stream by Greater Counts",
+      "api": {
+        "resultArray": "splitByGreater",
+        "result_array": "split_by_greater"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
