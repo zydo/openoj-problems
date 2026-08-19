@@ -204,6 +204,8 @@ illegal-goods` (moved out of Part B at completion).
   agent at a time, and on D's completion the session continues with
   **Part F** under the same pattern.
 - **F — reserved for the Part B session**, to start when D completes.
+- **G — reserved for the Part B session**, to start when F completes
+  (succession D → F → G set 2026-08-19).
 
 ## Part B complete (2026-08-19 03:43)
 
