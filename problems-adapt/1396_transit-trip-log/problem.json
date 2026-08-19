@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": 1396,
+  "slug": "transit-trip-log",
+  "title": "Transit Trip Log",
+  "difficulty": "H2",
+  "tags": [
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "TransitLog",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "tapIn",
+        "parameters": [
+          {
+            "name": "id",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "stop",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "t",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "tapOut",
+        "parameters": [
+          {
+            "name": "id",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "stop",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "t",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "averageTrip",
+        "parameters": [
+          {
+            "name": "fromStop",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "toStop",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "number"
+        }
+      }
+    ],
+    "comparison": "close"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

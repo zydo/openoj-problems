@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": 1352,
+  "slug": "suffix-products-over-a-stream",
+  "title": "Suffix Products Over a Stream",
+  "difficulty": "H2",
+  "tags": [
+    "Prefix Sum"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "SuffixProducts",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "append",
+        "parameters": [
+          {
+            "name": "num",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "suffixProduct",
+        "parameters": [
+          {
+            "name": "k",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

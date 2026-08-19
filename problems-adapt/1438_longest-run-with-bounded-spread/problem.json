@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": 1438,
+  "slug": "longest-run-with-bounded-spread",
+  "title": "Longest Run With Bounded Spread",
+  "difficulty": "H3",
+  "tags": [
+    "Sliding Window",
+    "Monotonic Queue",
+    "Heap"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestRunWithBoundedSpread",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "limit",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestRunWithBoundedSpread",
+      "rust": "longest_run_with_bounded_spread",
+      "typescript": "longestRunWithBoundedSpread"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

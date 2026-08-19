@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 1319,
+  "slug": "fewest-reroutes-to-connect-the-graph",
+  "title": "Fewest Reroutes to Connect the Graph",
+  "difficulty": "H3",
+  "tags": [
+    "Graph",
+    "Union Find",
+    "DFS"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minReroutes",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "links",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "minReroutes",
+      "rust": "min_reroutes",
+      "typescript": "minReroutes"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

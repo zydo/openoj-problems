@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": 1371,
+  "slug": "longest-even-vowel-substring",
+  "title": "Longest Even-Vowel Substring",
+  "difficulty": "H3",
+  "tags": [
+    "Bit Manipulation",
+    "String",
+    "Prefix Sum",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestEvenVowelSubstring",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestEvenVowelSubstring",
+      "rust": "longest_even_vowel_substring",
+      "typescript": "longestEvenVowelSubstring"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 1353,
+  "slug": "most-tasks-done-one-per-day",
+  "title": "Most Tasks Done, One Per Day",
+  "difficulty": "H3",
+  "tags": [
+    "Greedy",
+    "Heap",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxTasks",
+    "parameters": [
+      {
+        "name": "windows",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "maxTasks",
+      "rust": "max_tasks",
+      "typescript": "maxTasks"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,3 +1,482 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "source": "1319_number-of-operations-to-make-network-connected",
+      "source_id": 1319,
+      "source_title": "Number of Operations to Make Network Connected",
+      "adapted": "1319_fewest-reroutes-to-connect-the-graph",
+      "id": 1319,
+      "title": "Fewest Reroutes to Connect the Graph",
+      "api": {
+        "makeConnected": "minReroutes",
+        "make_connected": "min_reroutes",
+        "connections": "links"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1326_minimum-number-of-taps-to-open-to-water-a-garden",
+      "source_id": 1326,
+      "source_title": "Minimum Number of Taps to Open to Water a Garden",
+      "adapted": "1326_fewest-stations-to-cover-a-segment",
+      "id": 1326,
+      "title": "Fewest Stations to Cover a Segment",
+      "api": {
+        "minTaps": "minStations",
+        "min_taps": "min_stations",
+        "ranges": "radii"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1334_find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+      "source_id": 1334,
+      "source_title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+      "adapted": "1334_most-isolated-node-under-a-reach-budget",
+      "id": 1334,
+      "title": "Most Isolated Node Under a Reach Budget",
+      "api": {
+        "findTheCity": "findMostIsolated",
+        "find_the_city": "find_most_isolated",
+        "distanceThreshold": "budget"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1335_minimum-difficulty-of-a-job-schedule",
+      "source_id": 1335,
+      "source_title": "Minimum Difficulty of a Job Schedule",
+      "adapted": "1335_cheapest-split-of-work-into-rounds",
+      "id": 1335,
+      "title": "Cheapest Split of Work into Rounds",
+      "api": {
+        "minDifficulty": "minEffort",
+        "min_difficulty": "min_effort",
+        "jobDifficulty": "weights"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1349_maximum-students-taking-exam",
+      "source_id": 1349,
+      "source_title": "Maximum Students Taking Exam",
+      "adapted": "1349_most-cells-without-adjacent-neighbors",
+      "id": 1349,
+      "title": "Most Cells Without Adjacent Neighbors",
+      "api": {
+        "maxStudents": "maxCells",
+        "max_students": "max_cells",
+        "seats": "cells"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1352_product-of-the-last-k-numbers",
+      "source_id": 1352,
+      "source_title": "Product of the Last K Numbers",
+      "adapted": "1352_suffix-products-over-a-stream",
+      "id": 1352,
+      "title": "Suffix Products Over a Stream",
+      "api": {
+        "ProductOfNumbers": "SuffixProducts",
+        "add": "append",
+        "getProduct": "suffixProduct"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "1353_maximum-number-of-events-that-can-be-attended",
+      "source_id": 1353,
+      "source_title": "Maximum Number of Events That Can Be Attended",
+      "adapted": "1353_most-tasks-done-one-per-day",
+      "id": 1353,
+      "title": "Most Tasks Done, One Per Day",
+      "api": {
+        "maxEvents": "maxTasks",
+        "max_events": "max_tasks",
+        "events": "windows"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1354_construct-target-array-with-multiple-sums",
+      "source_id": 1354,
+      "source_title": "Construct Target Array With Multiple Sums",
+      "adapted": "1354_reachable-by-replacing-with-the-sum",
+      "id": 1354,
+      "title": "Reachable by Replacing With the Sum",
+      "api": {
+        "isPossible": "isReachable",
+        "is_possible": "is_reachable"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1358_number-of-substrings-containing-all-three-characters",
+      "source_id": 1358,
+      "source_title": "Number of Substrings Containing All Three Characters",
+      "adapted": "1358_substrings-spanning-all-three-letters",
+      "id": 1358,
+      "title": "Substrings Spanning All Three Letters",
+      "api": {
+        "numberOfSubstrings": "countSpans",
+        "number_of_substrings": "count_spans"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1359_count-all-valid-pickup-and-delivery-options",
+      "source_id": 1359,
+      "source_title": "Count All Valid Pickup and Delivery Options",
+      "adapted": "1359_counting-start-before-finish-sequences",
+      "id": 1359,
+      "title": "Counting Start-Before-Finish Sequences",
+      "api": {
+        "countOrders": "countTimelines",
+        "count_orders": "count_timelines"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1368_minimum-cost-to-make-at-least-one-valid-path-in-a-grid",
+      "source_id": 1368,
+      "source_title": "Minimum Cost to Make at Least One Valid Path in a Grid",
+      "adapted": "1368_rewrite-signs-to-reach-the-far-corner",
+      "id": 1368,
+      "title": "Rewrite Signs to Reach the Far Corner",
+      "api": {
+        "minCost": "minRewrites",
+        "min_cost": "min_rewrites"
+      },
+      "kind": "function",
+      "figures": "mixed: example figures dropped (hand-placed walk overlays), solution figure regenerated"
+    },
+    {
+      "source": "1371_find-the-longest-substring-containing-vowels-in-even-counts",
+      "source_id": 1371,
+      "source_title": "Find the Longest Substring Containing Vowels in Even Counts",
+      "adapted": "1371_longest-even-vowel-substring",
+      "id": 1371,
+      "title": "Longest Even-Vowel Substring",
+      "api": {
+        "findTheLongestSubstring": "longestEvenVowelSubstring",
+        "find_the_longest_substring": "longest_even_vowel_substring"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1373_maximum-sum-bst-in-binary-tree",
+      "source_id": 1373,
+      "source_title": "Maximum Sum BST in Binary Tree",
+      "adapted": "1373_largest-bst-subtree-sum",
+      "id": 1373,
+      "title": "Largest BST Subtree Sum",
+      "api": {
+        "maxSumBST": "largestBstSubtreeSum",
+        "max_sum_bst": "largest_bst_subtree_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1381_design-a-stack-with-increment-operation",
+      "source_id": 1381,
+      "source_title": "Design a Stack With Increment Operation",
+      "adapted": "1381_bottom-boost-stack",
+      "id": 1381,
+      "title": "Bottom-Boost Stack",
+      "api": {
+        "CustomStack": "BottomBoostStack",
+        "increment": "boost"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "1382_balance-a-binary-search-tree",
+      "source_id": 1382,
+      "source_title": "Balance a Binary Search Tree",
+      "adapted": "1382_rebalance-a-bst",
+      "id": 1382,
+      "title": "Rebalance a BST",
+      "api": {
+        "balanceBST": "rebalanceBst",
+        "balance_bst": "rebalance_bst"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1383_maximum-performance-of-a-team",
+      "source_id": 1383,
+      "source_title": "Maximum Performance of a Team",
+      "adapted": "1383_weakest-link-team-score",
+      "id": 1383,
+      "title": "Weakest-Link Team Score",
+      "api": {
+        "maxPerformance": "bestTeamScore",
+        "max_performance": "best_team_score"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1388_pizza-with-3n-slices",
+      "source_id": 1388,
+      "source_title": "Pizza With 3n Slices",
+      "adapted": "1388_keep-a-third-of-the-ring",
+      "id": 1388,
+      "title": "Keep a Third of the Ring",
+      "api": {
+        "maxSizeSlices": "bestRingPicks",
+        "max_size_slices": "best_ring_picks",
+        "slices": "ring"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1392_longest-happy-prefix",
+      "source_id": 1392,
+      "source_title": "Longest Happy Prefix",
+      "adapted": "1392_longest-string-border",
+      "id": 1392,
+      "title": "Longest String Border",
+      "api": {
+        "longestPrefix": "longestBorder",
+        "longest_prefix": "longest_border"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1396_design-underground-system",
+      "source_id": 1396,
+      "source_title": "Design Underground System",
+      "adapted": "1396_transit-trip-log",
+      "id": 1396,
+      "title": "Transit Trip Log",
+      "api": {
+        "UndergroundSystem": "TransitLog",
+        "checkIn": "tapIn",
+        "checkOut": "tapOut",
+        "getAverageTime": "averageTrip",
+        "stationName": "stop",
+        "startStation": "fromStop",
+        "endStation": "toStop"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "1397_find-all-good-strings",
+      "source_id": 1397,
+      "source_title": "Find All Good Strings",
+      "adapted": "1397_count-strings-avoiding-a-pattern",
+      "id": 1397,
+      "title": "Count Strings Avoiding a Pattern",
+      "api": {
+        "findGoodStrings": "countAvoidingStrings",
+        "find_good_strings": "count_avoiding_strings",
+        "evil": "pattern"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1405_longest-happy-string",
+      "source_id": 1405,
+      "source_title": "Longest Happy String",
+      "adapted": "1405_longest-no-triple-string",
+      "id": 1405,
+      "title": "Longest No-Triple String",
+      "api": {
+        "longestDiverseString": "longestNoTripleString",
+        "longest_diverse_string": "longest_no_triple_string"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1406_stone-game-iii",
+      "source_id": 1406,
+      "source_title": "Stone Game III",
+      "adapted": "1406_stone-piles-game-iii",
+      "id": 1406,
+      "title": "Stone Piles Game III",
+      "api": {
+        "stoneGameIII": "stonePilesGameIII",
+        "stone_game_iii": "stone_piles_game_iii",
+        "stoneValue": "piles"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1414_find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k",
+      "source_id": 1414,
+      "source_title": "Find the Minimum Number of Fibonacci Numbers Whose Sum Is K",
+      "adapted": "1414_fewest-fibonacci-summands",
+      "id": 1414,
+      "title": "Fewest Fibonacci Summands",
+      "api": {
+        "findMinFibonacciNumbers": "fewestFibonacciSummands",
+        "find_min_fibonacci_numbers": "fewest_fibonacci_summands"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1420_build-array-where-you-can-find-the-maximum-exactly-k-comparisons",
+      "source_id": 1420,
+      "source_title": "Build Array Where You Can Find The Maximum Exactly K Comparisons",
+      "adapted": "1420_arrays-with-k-record-maxima",
+      "id": 1420,
+      "title": "Arrays With K Record Maxima",
+      "api": {
+        "numOfArrays": "arraysWithKRecordMaxima",
+        "num_of_arrays": "arrays_with_k_record_maxima"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1423_maximum-points-you-can-obtain-from-cards",
+      "source_id": 1423,
+      "source_title": "Maximum Points You Can Obtain from Cards",
+      "adapted": "1423_best-k-cards-from-the-ends",
+      "id": 1423,
+      "title": "Best K Cards From The Ends",
+      "api": {
+        "maxScore": "bestKCardsFromTheEnds",
+        "max_score": "best_k_cards_from_the_ends"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1425_constrained-subsequence-sum",
+      "source_id": 1425,
+      "source_title": "Constrained Subsequence Sum",
+      "adapted": "1425_bounded-gap-subsequence-sum",
+      "id": 1425,
+      "title": "Bounded Gap Subsequence Sum",
+      "api": {
+        "constrainedSubsetSum": "boundedGapSubsequenceSum",
+        "constrained_subset_sum": "bounded_gap_subsequence_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1434_number-of-ways-to-wear-different-hats-to-each-other",
+      "source_id": 1434,
+      "source_title": "Number of Ways to Wear Different Hats to Each Other",
+      "adapted": "1434_count-locker-assignments",
+      "id": 1434,
+      "title": "Count Locker Assignments",
+      "api": {
+        "numberWays": "countLockerAssignments",
+        "number_ways": "count_locker_assignments",
+        "hats": "lockers"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1438_longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+      "source_id": 1438,
+      "source_title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+      "adapted": "1438_longest-run-with-bounded-spread",
+      "id": 1438,
+      "title": "Longest Run With Bounded Spread",
+      "api": {
+        "longestSubarray": "longestRunWithBoundedSpread",
+        "longest_subarray": "longest_run_with_bounded_spread"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1442_count-triplets-that-can-form-two-arrays-of-equal-xor",
+      "source_id": 1442,
+      "source_title": "Count Triplets That Can Form Two Arrays of Equal XOR",
+      "adapted": "1442_count-equal-xor-splits",
+      "id": 1442,
+      "title": "Count Equal-XOR Splits",
+      "api": {
+        "countTriplets": "countEqualXorSplits",
+        "count_triplets": "count_equal_xor_splits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1443_minimum-time-to-collect-all-apples-in-a-tree",
+      "source_id": 1443,
+      "source_title": "Minimum Time to Collect All Apples in a Tree",
+      "adapted": "1443_apple-tree-round-trip",
+      "id": 1443,
+      "title": "Apple Tree Round Trip",
+      "api": {
+        "minTime": "appleTreeRoundTrip",
+        "min_time": "apple_tree_round_trip"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1448_count-good-nodes-in-binary-tree",
+      "source_id": 1448,
+      "source_title": "Count Good Nodes in Binary Tree",
+      "adapted": "1448_count-visible-tree-nodes",
+      "id": 1448,
+      "title": "Count Visible Tree Nodes",
+      "api": {
+        "goodNodes": "countVisibleNodes",
+        "good_nodes": "count_visible_nodes"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1456_maximum-number-of-vowels-in-a-substring-of-given-length",
+      "source_id": 1456,
+      "source_title": "Maximum Number of Vowels in a Substring of Given Length",
+      "adapted": "1456_vowel-heaviest-window",
+      "id": 1456,
+      "title": "Vowel-Heaviest Window",
+      "api": {
+        "maxVowels": "vowelHeaviestWindow",
+        "max_vowels": "vowel_heaviest_window"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1461_check-if-a-string-contains-all-binary-codes-of-size-k",
+      "source_id": 1461,
+      "source_title": "Check If a String Contains All Binary Codes of Size K",
+      "adapted": "1461_covers-every-k-bit-pattern",
+      "id": 1461,
+      "title": "Covers Every K-Bit Pattern",
+      "api": {
+        "hasAllCodes": "coversEveryKBitPattern",
+        "has_all_codes": "covers_every_k_bit_pattern"
+      },
+      "kind": "function",
+      "figures": "none"
+    }
+  ]
 }
