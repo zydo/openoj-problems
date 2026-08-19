@@ -83,6 +83,23 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0432_all-oone-data-structure",
+      "source_id": 432,
+      "source_title": "All O`one Data Structure",
+      "adapted": "0432_constant-time-frequency-extremes",
+      "id": 432,
+      "title": "Constant-Time Frequency Extremes",
+      "api": {
+        "AllOne": "FrequencyExtremes",
+        "inc": "increase",
+        "dec": "decrease",
+        "getMaxKey": "highestKey",
+        "getMinKey": "lowestKey"
+      },
+      "kind": "design",
+      "figures": "none"
     }
   ]
 }
