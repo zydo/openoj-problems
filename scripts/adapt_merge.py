@@ -13,6 +13,8 @@ conflict. ledger.json is the frozen base both shards extend.
     adapt_merge.py --part a [--check]     # .adapt/incoming/   -> ledger-a.json
     adapt_merge.py --part b [--check]     # .adapt/incoming-b/ -> ledger-b.json
     adapt_merge.py --part e [--check]     # .adapt/incoming-e/ -> ledger-e.json
+    adapt_merge.py --part f [--check]     # .adapt/incoming-f/ -> ledger-f.json
+    adapt_merge.py --part g [--check]     # .adapt/incoming-g/ -> ledger-g.json
     adapt_merge.py --part c [--check]     # .adapt/incoming-c/ -> ledger-c.json
     adapt_merge.py --part d [--check]     # .adapt/incoming-d/ -> ledger-d.json
 """
@@ -34,6 +36,8 @@ PARTS = {
     "c": (ADAPT / "incoming-c", ADAPT / "ledger-c.json"),
     "d": (ADAPT / "incoming-d", ADAPT / "ledger-d.json"),
     "e": (ADAPT / "incoming-e", ADAPT / "ledger-e.json"),
+    "f": (ADAPT / "incoming-f", ADAPT / "ledger-f.json"),
+    "g": (ADAPT / "incoming-g", ADAPT / "ledger-g.json"),
 }
 
 

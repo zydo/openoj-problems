@@ -149,6 +149,37 @@ already working cannot move without two parts writing one bundle. When
 those 11 land, Part A is complete and `.adapt/incoming/` should stay
 empty — any later fragment there would be a stray.
 
+## C+D+E re-divided into five owner-less parts (2026-08-19 ~03:30)
+
+The combined C, D and E territories (141 + 89 + 102 = 332, none
+dispatched, no shard history) were re-sliced into five almost-equal
+parts:
+
+| Part | File | To do |
+| --- | --- | --- |
+| C | `.adapt/part-c.json` | 67 |
+| D | `.adapt/part-d.json` | 67 |
+| E | `.adapt/part-e.json` | 66 |
+| F | `.adapt/part-f.json` | 66 |
+| G | `.adapt/part-g.json` | 66 |
+
+**None of these five parts is owned by any agent or session until
+claimed.** A session claims a part by appending a line under this
+heading naming itself and the part; until then the part files are inert
+lists. Inboxes `incoming-<part>/`, shards `ledger-<part>.json`,
+`adapt_merge.py --part <p>` and `adapt_remaining.py <p>` exist for all
+seven letters. Agent instructions: `PART-B-CHUNK.md` plus the thin
+per-part delta files (`PART-E-CHUNK.md`, `PART-F-CHUNK.md`,
+`PART-G-CHUNK.md`; C and D use `PART-B-CHUNK.md` directly with their own
+inbox paths).
+
+Two bookkeeping notes. First, `part-b.json` was pruned to B's true
+territory (216 = its finished + remaining + blocked) so the old E keys
+it still listed no longer shadow the new parts in `adapt_remaining.py`.
+Second, no family group spanned the union (the earlier splits had kept
+them whole), so the five-way cut is by plain id order and stays
+family-safe.
+
 `1201_ugly-number-iii` moved to C with the rest. Its sibling
 `0264_ugly-number-ii` is already adapted in the frozen base as
 `0264_nth-five-smooth-number`, so whoever takes it should match that

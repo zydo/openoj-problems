@@ -1,7 +1,9 @@
 # Part E chunk-agent instructions
 
-Part E is the second half of Part B's remainder (split 2026-08-18; see
-`.adapt/PARTITION.md`). Its problem list is `.adapt/part-e.json`.
+Part E is one of the five owner-less parts created by the 2026-08-19
+re-division of C+D+E (see `.adapt/PARTITION.md`; E's earlier scope from
+the B→B+E split was folded into that re-division). Its problem list is
+`.adapt/part-e.json`.
 
 Everything is identical to `.adapt/PART-B-CHUNK.md` — read that file in
 full, along with `openoj/ADAPT.md` and `.adapt/PROTOCOL.md` — with these
