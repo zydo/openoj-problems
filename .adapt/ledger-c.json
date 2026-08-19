@@ -128,6 +128,19 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0471_encode-string-with-shortest-length",
+      "source_id": 471,
+      "source_title": "Encode String with Shortest Length",
+      "adapted": "0471_shortest-repetition-encoding",
+      "id": 471,
+      "title": "Shortest Repetition Encoding",
+      "api": {
+        "encode": "shortestEncoding"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
