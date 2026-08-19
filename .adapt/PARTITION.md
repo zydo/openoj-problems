@@ -206,6 +206,9 @@ illegal-goods` (moved out of Part B at completion).
 - **F — reserved for the Part B session**, to start when D completes.
 - **G — reserved for the Part B session**, to start when F completes
   (succession D → F → G set 2026-08-19).
+- **E — claimed by the Part B session** (2026-08-19 ~15:45), to
+  start when G completes — succession extended to D → F → G → E per
+  instruction; `wave-e-01` .. `wave-e-06` queued.
 
 **Part D complete (2026-08-19): 67/67** adapted, merged into
 `.adapt/ledger-d.json`, gate-swept, committed (`31cc1c5f`). Zero
