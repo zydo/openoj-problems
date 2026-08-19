@@ -13,6 +13,20 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "0373_find-k-pairs-with-smallest-sums",
+      "source_id": 373,
+      "source_title": "Find K Pairs with Smallest Sums",
+      "adapted": "0373_lowest-sum-cross-array-pairs",
+      "id": 373,
+      "title": "Lowest-Sum Cross-Array Pairs",
+      "api": {
+        "kSmallestPairs": "lowestSumPairs",
+        "k_smallest_pairs": "lowest_sum_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
