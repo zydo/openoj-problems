@@ -98,6 +98,604 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1879_minimum-xor-sum-of-two-arrays",
+      "source_id": 1879,
+      "source_title": "Minimum XOR Sum of Two Arrays",
+      "adapted": "1879_minimum-xor-matching",
+      "id": 1879,
+      "title": "Minimum XOR Matching",
+      "api": {
+        "minimumXORSum": "minXORMatching",
+        "minimum_xor_sum": "min_xor_matching"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1884_egg-drop-with-2-eggs-and-n-floors",
+      "source_id": 1884,
+      "source_title": "Egg Drop With 2 Eggs and N Floors",
+      "adapted": "1884_two-probes-one-threshold",
+      "id": 1884,
+      "title": "Two Probes, One Threshold",
+      "api": {
+        "twoEggDrop": "twoProbeSearch",
+        "two_egg_drop": "two_probe_search"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1888_minimum-number-of-flips-to-make-the-binary-string-alternating",
+      "source_id": 1888,
+      "source_title": "Minimum Number of Flips to Make the Binary String Alternating",
+      "adapted": "1888_fewest-flips-after-rotation",
+      "id": 1888,
+      "title": "Fewest Flips After Rotation",
+      "api": {
+        "minFlips": "fewestFlipsAfterRotation",
+        "min_flips": "fewest_flips_after_rotation"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1896_minimum-cost-to-change-the-final-value-of-expression",
+      "source_id": 1896,
+      "source_title": "Minimum Cost to Change the Final Value of Expression",
+      "adapted": "1896_least-edits-to-invert-an-expression",
+      "id": 1896,
+      "title": "Least Edits to Invert an Expression",
+      "api": {
+        "minOperationsToFlip": "leastEditsToInvert",
+        "min_operations_to_flip": "least_edits_to_invert"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1898_maximum-number-of-removable-characters",
+      "source_id": 1898,
+      "source_title": "Maximum Number of Removable Characters",
+      "adapted": "1898_most-deletions-a-subsequence-survives",
+      "id": 1898,
+      "title": "Most Deletions a Subsequence Survives",
+      "api": {
+        "maximumRemovals": "mostDeletionsSurvived",
+        "maximum_removals": "most_deletions_survived"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1901_find-a-peak-element-ii",
+      "source_id": 1901,
+      "source_title": "Find a Peak Element II",
+      "adapted": "1901_peak-in-a-matrix",
+      "id": 1901,
+      "title": "Peak in a Matrix",
+      "api": {
+        "findPeakGrid": "findMatrixPeak",
+        "find_peak_grid": "find_matrix_peak"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1926_nearest-exit-from-entrance-in-maze",
+      "source_id": 1926,
+      "source_title": "Nearest Exit from Entrance in Maze",
+      "adapted": "1926_nearest-grid-exit",
+      "id": 1926,
+      "title": "Nearest Grid Exit",
+      "api": {
+        "nearestExit": "nearestGridExit",
+        "nearest_exit": "nearest_grid_exit"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "1928_minimum-cost-to-reach-destination-in-time",
+      "source_id": 1928,
+      "source_title": "Minimum Cost to Reach Destination in Time",
+      "adapted": "1928_cheapest-route-within-time",
+      "id": 1928,
+      "title": "Cheapest Route Within Time",
+      "api": {
+        "minCost": "cheapestRoute",
+        "min_cost": "cheapest_route"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1930_unique-length-3-palindromic-subsequences",
+      "source_id": 1930,
+      "source_title": "Unique Length-3 Palindromic Subsequences",
+      "adapted": "1930_distinct-three-letter-palindromes",
+      "id": 1930,
+      "title": "Distinct Three-Letter Palindromes",
+      "api": {
+        "countPalindromicSubsequence": "countThreeLetterPalindromes",
+        "count_palindromic_subsequence": "count_three_letter_palindromes"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1931_painting-a-grid-with-three-different-colors",
+      "source_id": 1931,
+      "source_title": "Painting a Grid With Three Different Colors",
+      "adapted": "1931_count-proper-grid-colorings",
+      "id": 1931,
+      "title": "Count Proper Grid Colorings",
+      "api": {
+        "colorTheGrid": "countProperGridColorings",
+        "color_the_grid": "count_proper_grid_colorings"
+      },
+      "kind": "function",
+      "figures": "kept unchanged (corner examples are forced by the hidden cases)"
+    },
+    {
+      "source": "1937_maximum-number-of-points-with-cost",
+      "source_id": 1937,
+      "source_title": "Maximum Number of Points with Cost",
+      "adapted": "1937_row-picks-with-distance-penalty",
+      "id": 1937,
+      "title": "Row Picks With Distance Penalty",
+      "api": {
+        "maxPoints": "maxRowScore",
+        "max_points": "max_row_score"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1938_maximum-genetic-difference-query",
+      "source_id": 1938,
+      "source_title": "Maximum Genetic Difference Query",
+      "adapted": "1938_maximum-xor-along-root-paths",
+      "id": 1938,
+      "title": "Maximum Xor Along Root Paths",
+      "api": {
+        "maxGeneticDifference": "maxRootPathXor",
+        "max_genetic_difference": "max_root_path_xor"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1942_the-number-of-the-smallest-unoccupied-chair",
+      "source_id": 1942,
+      "source_title": "The Number of the Smallest Unoccupied Chair",
+      "adapted": "1942_lowest-free-chair-number",
+      "id": 1942,
+      "title": "Lowest Free Chair Number",
+      "api": {
+        "smallestChair": "lowestFreeChair",
+        "smallest_chair": "lowest_free_chair",
+        "targetFriend": "targetGuest"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1955_count-number-of-special-subsequences",
+      "source_id": 1955,
+      "source_title": "Count Number of Special Subsequences",
+      "adapted": "1955_count-three-block-subsequences",
+      "id": 1955,
+      "title": "Count Three-Block Subsequences",
+      "api": {
+        "countSpecialSubsequences": "countThreeBlockSubsequences",
+        "count_special_subsequences": "count_three_block_subsequences"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1959_minimum-total-space-wasted-with-k-resizing-operations",
+      "source_id": 1959,
+      "source_title": "Minimum Total Space Wasted With K Resizing Operations",
+      "adapted": "1959_least-slack-with-k-resizes",
+      "id": 1959,
+      "title": "Least Slack With K Resizes",
+      "api": {
+        "minSpaceWastedKResizing": "leastSlack",
+        "min_space_wasted_k_resizing": "least_slack"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1960_maximum-product-of-the-length-of-two-palindromic-substrings",
+      "source_id": 1960,
+      "source_title": "Maximum Product of the Length of Two Palindromic Substrings",
+      "adapted": "1960_disjoint-palindrome-product",
+      "id": 1960,
+      "title": "Disjoint Palindrome Product",
+      "api": {
+        "maxProduct": "disjointPalindromeProduct",
+        "max_product": "disjoint_palindrome_product"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1962_remove-stones-to-minimize-the-total",
+      "source_id": 1962,
+      "source_title": "Remove Stones to Minimize the Total",
+      "adapted": "1962_smallest-total-after-k-halvings",
+      "id": 1962,
+      "title": "Smallest Total After K Halvings",
+      "api": {
+        "minStoneSum": "smallestTotalAfterKHalvings",
+        "min_stone_sum": "smallest_total_after_k_halvings",
+        "piles": "values"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1964_find-the-longest-valid-obstacle-course-at-each-position",
+      "source_id": 1964,
+      "source_title": "Find the Longest Valid Obstacle Course at Each Position",
+      "adapted": "1964_longest-non-decreasing-chain-at-each-index",
+      "id": 1964,
+      "title": "Longest Non-Decreasing Chain at Each Index",
+      "api": {
+        "longestObstacleCourseAtEachPosition": "longestChainAtEachIndex",
+        "longest_obstacle_course_at_each_position": "longest_chain_at_each_index",
+        "obstacles": "heights"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1970_last-day-where-you-can-still-cross",
+      "source_id": 1970,
+      "source_title": "Last Day Where You Can Still Cross",
+      "adapted": "1970_last-crossable-day",
+      "id": 1970,
+      "title": "Last Crossable Day",
+      "api": {
+        "latestDayToCross": "lastCrossableDay",
+        "latest_day_to_cross": "last_crossable_day"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "1976_number-of-ways-to-arrive-at-destination",
+      "source_id": 1976,
+      "source_title": "Number of Ways to Arrive at Destination",
+      "adapted": "1976_count-shortest-routes",
+      "id": 1976,
+      "title": "Count Shortest Routes",
+      "api": {
+        "countPaths": "countShortestRoutes",
+        "count_paths": "count_shortest_routes"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "1977_number-of-ways-to-separate-numbers",
+      "source_id": 1977,
+      "source_title": "Number of Ways to Separate Numbers",
+      "adapted": "1977_count-non-decreasing-splits",
+      "id": 1977,
+      "title": "Count Non-Decreasing Splits",
+      "api": {
+        "numberOfCombinations": "countNonDecreasingSplits",
+        "number_of_combinations": "count_non_decreasing_splits"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1982_find-array-given-subset-sums",
+      "source_id": 1982,
+      "source_title": "Find Array Given Subset Sums",
+      "adapted": "1982_rebuild-from-subset-sums",
+      "id": 1982,
+      "title": "Rebuild From Subset Sums",
+      "api": {
+        "recoverArray": "rebuildFromSubsetSums",
+        "recover_array": "rebuild_from_subset_sums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1983_widest-pair-of-indices-with-equal-range-sum",
+      "source_id": 1983,
+      "source_title": "Widest Pair of Indices With Equal Range Sum",
+      "adapted": "1983_longest-equal-sum-span",
+      "id": 1983,
+      "title": "Longest Equal-Sum Span",
+      "api": {
+        "widestPairOfIndices": "longestEqualSumSpan",
+        "widest_pair_of_indices": "longest_equal_sum_span"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1986_minimum-number-of-work-sessions-to-finish-the-tasks",
+      "source_id": 1986,
+      "source_title": "Minimum Number of Work Sessions to Finish the Tasks",
+      "adapted": "1986_fewest-work-sessions",
+      "id": 1986,
+      "title": "Fewest Work Sessions",
+      "api": {
+        "minSessions": "fewestWorkSessions",
+        "min_sessions": "fewest_work_sessions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1994_the-number-of-good-subsets",
+      "source_id": 1994,
+      "source_title": "The Number of Good Subsets",
+      "adapted": "1994_count-distinct-prime-product-subsets",
+      "id": 1994,
+      "title": "Count Distinct-Prime Product Subsets",
+      "api": {
+        "numberOfGoodSubsets": "countDistinctPrimeProductSubsets",
+        "number_of_good_subsets": "count_distinct_prime_product_subsets"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1996_the-number-of-weak-characters-in-the-game",
+      "source_id": 1996,
+      "source_title": "The Number of Weak Characters in the Game",
+      "adapted": "1996_count-dominated-points",
+      "id": 1996,
+      "title": "Count Dominated Points",
+      "api": {
+        "numberOfWeakCharacters": "countDominatedPoints",
+        "number_of_weak_characters": "count_dominated_points",
+        "properties": "points"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1997_first-day-where-you-have-been-in-all-the-rooms",
+      "source_id": 1997,
+      "source_title": "First Day Where You Have Been in All the Rooms",
+      "adapted": "1997_first-day-in-every-cell",
+      "id": 1997,
+      "title": "First Day in Every Cell",
+      "api": {
+        "firstDayBeenInAllRooms": "firstDayInEveryCell",
+        "first_day_been_in_all_rooms": "first_day_in_every_cell"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2111_minimum-operations-to-make-the-array-k-increasing",
+      "source_id": 2111,
+      "source_title": "Minimum Operations to Make the Array K-Increasing",
+      "adapted": "2111_fewest-rewrites-to-a-strided-order",
+      "id": 2111,
+      "title": "Fewest Rewrites to a Strided Order",
+      "api": {
+        "kIncreasing": "fewestRewrites",
+        "k_increasing": "fewest_rewrites"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2115_find-all-possible-recipes-from-given-supplies",
+      "source_id": 2115,
+      "source_title": "Find All Possible Recipes from Given Supplies",
+      "adapted": "2115_buildable-recipes",
+      "id": 2115,
+      "title": "Buildable Recipes",
+      "api": {
+        "findAllRecipes": "buildableRecipes",
+        "find_all_recipes": "buildable_recipes"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2127_maximum-employees-to-be-invited-to-a-meeting",
+      "source_id": 2127,
+      "source_title": "Maximum Employees to Be Invited to a Meeting",
+      "adapted": "2127_round-table-favorites",
+      "id": 2127,
+      "title": "Round Table Favorites",
+      "api": {
+        "maximumInvitations": "maxSeated",
+        "maximum_invitations": "max_seated"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2172_maximum-and-sum-of-array",
+      "source_id": 2172,
+      "source_title": "Maximum AND Sum of Array",
+      "adapted": "2172_maximum-slot-and-sum",
+      "id": 2172,
+      "title": "Maximum Slot AND Sum",
+      "api": {
+        "maximumANDSum": "maxSlotAndSum",
+        "maximum_and_sum": "max_slot_and_sum",
+        "numSlots": "slots",
+        "num_slots": "slots"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2179_count-good-triplets-in-an-array",
+      "source_id": 2179,
+      "source_title": "Count Good Triplets in an Array",
+      "adapted": "2179_count-same-order-triplets",
+      "id": 2179,
+      "title": "Count Same-Order Triplets",
+      "api": {
+        "goodTriplets": "countSameOrderTriplets",
+        "good_triplets": "count_same_order_triplets"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2183_count-array-pairs-divisible-by-k",
+      "source_id": 2183,
+      "source_title": "Count Array Pairs Divisible by K",
+      "adapted": "2183_count-product-divisible-pairs",
+      "id": 2183,
+      "title": "Count Product-Divisible Pairs",
+      "api": {
+        "countPairs": "countProductDivisiblePairs",
+        "count_pairs": "count_product_divisible_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2187_minimum-time-to-complete-trips",
+      "source_id": 2187,
+      "source_title": "Minimum Time to Complete Trips",
+      "adapted": "2187_minimum-minutes-to-finish-the-jobs",
+      "id": 2187,
+      "title": "Minimum Minutes to Finish the Jobs",
+      "api": {
+        "minimumTime": "minMinutesToFinishJobs",
+        "minimum_time": "min_minutes_to_finish_jobs",
+        "time": "cycles",
+        "totalTrips": "quota",
+        "total_trips": "quota"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2193_minimum-number-of-moves-to-make-palindrome",
+      "source_id": 2193,
+      "source_title": "Minimum Number of Moves to Make Palindrome",
+      "adapted": "2193_fewest-adjacent-swaps-to-a-palindrome",
+      "id": 2193,
+      "title": "Fewest Adjacent Swaps to a Palindrome",
+      "api": {
+        "minMovesToMakePalindrome": "fewestSwapsToPalindrome",
+        "min_moves_to_make_palindrome": "fewest_swaps_to_palindrome"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2203_minimum-weighted-subgraph-with-the-required-paths",
+      "source_id": 2203,
+      "source_title": "Minimum Weighted Subgraph With the Required Paths",
+      "adapted": "2203_minimum-shared-route-weight",
+      "id": 2203,
+      "title": "Minimum Shared Route Weight",
+      "api": {
+        "minimumWeight": "minSharedRouteWeight",
+        "minimum_weight": "min_shared_route_weight"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2242_maximum-score-of-a-node-sequence",
+      "source_id": 2242,
+      "source_title": "Maximum Score of a Node Sequence",
+      "adapted": "2242_highest-four-node-path-score",
+      "id": 2242,
+      "title": "Highest Four-Node Path Score",
+      "api": {
+        "maximumScore": "bestPathScore",
+        "maximum_score": "best_path_score"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2245_maximum-trailing-zeros-in-a-cornered-path",
+      "source_id": 2245,
+      "source_title": "Maximum Trailing Zeros in a Cornered Path",
+      "adapted": "2245_most-trailing-zeros-on-a-one-bend-path",
+      "id": 2245,
+      "title": "Most Trailing Zeros on a One-Bend Path",
+      "api": {
+        "maxTrailingZeros": "mostTrailingZeros",
+        "max_trailing_zeros": "most_trailing_zeros"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2246_longest-path-with-different-adjacent-characters",
+      "source_id": 2246,
+      "source_title": "Longest Path With Different Adjacent Characters",
+      "adapted": "2246_longest-path-with-unequal-adjacent-letters",
+      "id": 2246,
+      "title": "Longest Path With Unequal Adjacent Letters",
+      "api": {
+        "longestPath": "longestUnequalPath",
+        "longest_path": "longest_unequal_path"
+      },
+      "kind": "function",
+      "figures": "labels updated (example-2 dropped: star parent array is shape-forced)"
+    },
+    {
+      "source": "2247_maximum-cost-of-trip-with-k-highways",
+      "source_id": 2247,
+      "source_title": "Maximum Cost of Trip With K Highways",
+      "adapted": "2247_heaviest-trip-over-exactly-k-roads",
+      "id": 2247,
+      "title": "Heaviest Trip Over Exactly K Roads",
+      "api": {
+        "maximumCost": "maxTripCost",
+        "maximum_cost": "max_trip_cost",
+        "highways": "roads"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2282_number-of-people-that-can-be-seen-in-a-grid",
+      "source_id": 2282,
+      "source_title": "Number of People That Can Be Seen in a Grid",
+      "adapted": "2282_grid-sight-lines",
+      "id": 2282,
+      "title": "Grid Sight Lines",
+      "api": {
+        "seePeople": "countSightLines",
+        "see_people": "count_sight_lines"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2289_steps-to-make-array-non-decreasing",
+      "source_id": 2289,
+      "source_title": "Steps to Make Array Non-decreasing",
+      "adapted": "2289_rounds-until-non-decreasing",
+      "id": 2289,
+      "title": "Rounds Until Non-decreasing",
+      "api": {
+        "totalSteps": "roundsUntilNonDecreasing",
+        "total_steps": "rounds_until_non_decreasing"
+      },
+      "kind": "function",
+      "figures": "labels updated"
     }
   ]
 }

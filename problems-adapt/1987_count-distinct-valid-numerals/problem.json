@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": 1987,
+  "slug": "count-distinct-valid-numerals",
+  "title": "Count Distinct Valid Numerals",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countDistinctValidNumerals",
+    "parameters": [
+      {
+        "name": "binary",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countDistinctValidNumerals",
+      "rust": "count_distinct_valid_numerals",
+      "typescript": "countDistinctValidNumerals"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

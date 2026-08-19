@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": 1986,
+  "slug": "fewest-work-sessions",
+  "title": "Fewest Work Sessions",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestWorkSessions",
+    "parameters": [
+      {
+        "name": "tasks",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "sessionTime",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestWorkSessions",
+      "rust": "fewest_work_sessions",
+      "typescript": "fewestWorkSessions"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

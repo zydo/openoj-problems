@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": 2115,
+  "slug": "buildable-recipes",
+  "title": "Buildable Recipes",
+  "difficulty": "H3",
+  "tags": [
+    "Graph",
+    "Topological Sort",
+    "Breadth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "buildableRecipes",
+    "parameters": [
+      {
+        "name": "recipes",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "ingredients",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      },
+      {
+        "name": "supplies",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "buildableRecipes",
+      "rust": "buildable_recipes",
+      "typescript": "buildableRecipes"
+    },
+    "comparison": "sorted"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

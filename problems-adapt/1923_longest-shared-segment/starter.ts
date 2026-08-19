@@ -1,0 +1,3 @@
+function longestSharedSegment(n: number, paths: number[][]): number {
+    throw new Error("TODO");
+}

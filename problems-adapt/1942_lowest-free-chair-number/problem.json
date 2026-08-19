@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 1942,
+  "slug": "lowest-free-chair-number",
+  "title": "Lowest Free Chair Number",
+  "difficulty": "H3",
+  "tags": [
+    "Heap",
+    "Hash Table",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "lowestFreeChair",
+    "parameters": [
+      {
+        "name": "times",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "targetGuest",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "lowestFreeChair",
+      "rust": "lowest_free_chair",
+      "typescript": "lowestFreeChair"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

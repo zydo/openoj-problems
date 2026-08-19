@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 196" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <!-- grid = [[6,7,9],[11,13,17],[19,21,23]]: no one-bend path ends in 0 -->
+  <g stroke="#42525e" stroke-width="1.4" fill="#ffffff">
+    <rect x="51" y="24" width="46" height="46"/>
+    <rect x="97" y="24" width="46" height="46"/>
+    <rect x="143" y="24" width="46" height="46"/>
+    <rect x="51" y="70" width="46" height="46"/>
+    <rect x="97" y="70" width="46" height="46"/>
+    <rect x="143" y="70" width="46" height="46"/>
+    <rect x="51" y="116" width="46" height="46"/>
+    <rect x="97" y="116" width="46" height="46"/>
+    <rect x="143" y="116" width="46" height="46"/>
+  </g>
+  <g text-anchor="middle" fill="#1a2026">
+    <text x="74" y="52">6</text><text x="120" y="52">7</text><text x="166" y="52">9</text>
+    <text x="74" y="98">11</text><text x="120" y="98">13</text><text x="166" y="98">17</text>
+    <text x="74" y="144">19</text><text x="120" y="144">21</text><text x="166" y="144">23</text>
+  </g>
+  <text x="120" y="188" text-anchor="middle" fill="#5c6b76" font-size="13">no path product here ends in 0</text>
+</svg>

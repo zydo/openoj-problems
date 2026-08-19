@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": 1962,
+  "slug": "smallest-total-after-k-halvings",
+  "title": "Smallest Total After K Halvings",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Heap",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestTotalAfterKHalvings",
+    "parameters": [
+      {
+        "name": "values",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "smallestTotalAfterKHalvings",
+      "rust": "smallest_total_after_k_halvings",
+      "typescript": "smallestTotalAfterKHalvings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

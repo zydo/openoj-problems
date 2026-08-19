@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": 1896,
+  "slug": "least-edits-to-invert-an-expression",
+  "title": "Least Edits to Invert an Expression",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "leastEditsToInvert",
+    "parameters": [
+      {
+        "name": "expression",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "leastEditsToInvert",
+      "rust": "least_edits_to_invert",
+      "typescript": "leastEditsToInvert"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
