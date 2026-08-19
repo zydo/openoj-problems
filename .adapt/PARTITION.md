@@ -63,3 +63,31 @@ When both parts are drained, the shards fold back into `ledger.json` and the
 per-part inboxes and shard files go away. Until then the shards are the
 record, and `adapt_merge.py --check` reports the true total across all three
 files.
+
+## Staging: `problems-adapt/` is shared ground
+
+The two sessions share one working tree, so `git add -A` sweeps up whatever
+the *other* part happens to have half-written at that moment. Excluding
+`.adapt/incoming-b/`, `.adapt/ledger-b.json` and `.adapt/holdback-b/` is not
+enough — bundle directories under `problems-adapt/` carry no part marker at
+all, and Part A committed a dozen of Part B's in-progress bundles before this
+was noticed.
+
+Nothing is lost when that happens: an unrecorded bundle is inert, and the
+owning part commits its finished version over the top. But the commit
+message then lies about its scope, so stage explicitly instead:
+
+    # Part A: the pre-split base plus its own shard, and nothing else
+    python3 - <<'PY' > /tmp/pa_paths.txt
+    import json, pathlib
+    def load(p):
+        f = pathlib.Path(p)
+        return json.loads(f.read_text())["entries"] if f.exists() else []
+    for e in load('.adapt/ledger.json') + load('.adapt/ledger-a.json'):
+        print(f"problems-adapt/{e['adapted']}")
+    PY
+    git add .adapt/ledger-a.json .adapt/part-a*.json .adapt/wave-a-*.json \
+            .adapt/report MAPPING.md $(cat /tmp/pa_paths.txt)
+
+A bundle only becomes a part's to commit once it is *in that part's ledger*.
+Until then it is somebody's work in progress and not yours to snapshot.
