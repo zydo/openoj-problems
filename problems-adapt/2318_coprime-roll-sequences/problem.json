@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": 2318,
+  "slug": "coprime-roll-sequences",
+  "title": "Coprime Roll Sequences",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countCoprimeRollSequences",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countCoprimeRollSequences",
+      "rust": "count_coprime_roll_sequences",
+      "typescript": "countCoprimeRollSequences"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

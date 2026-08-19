@@ -1665,6 +1665,439 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "2097_valid-arrangement-of-pairs",
+      "source_id": 2097,
+      "source_title": "Valid Arrangement of Pairs",
+      "adapted": "2097_link-pairs-into-one-chain",
+      "id": 2097,
+      "title": "Link Pairs Into One Chain",
+      "api": {
+        "validArrangement": "linkPairsIntoOneChain",
+        "valid_arrangement": "link_pairs_into_one_chain"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2104_sum-of-subarray-ranges",
+      "source_id": 2104,
+      "source_title": "Sum of Subarray Ranges",
+      "adapted": "2104_total-subarray-spread",
+      "id": 2104,
+      "title": "Total Subarray Spread",
+      "api": {
+        "subArrayRanges": "totalSubarraySpread",
+        "sub_array_ranges": "total_subarray_spread"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2316_count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+      "source_id": 2316,
+      "source_title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+      "adapted": "2316_unreachable-node-pairs",
+      "id": 2316,
+      "title": "Unreachable Node Pairs",
+      "api": {
+        "countPairs": "countUnreachablePairs",
+        "count_pairs": "count_unreachable_pairs"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2318_number-of-distinct-roll-sequences",
+      "source_id": 2318,
+      "source_title": "Number of Distinct Roll Sequences",
+      "adapted": "2318_coprime-roll-sequences",
+      "id": 2318,
+      "title": "Coprime Roll Sequences",
+      "api": {
+        "distinctSequences": "countCoprimeRollSequences",
+        "distinct_sequences": "count_coprime_roll_sequences"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2387_median-of-a-row-wise-sorted-matrix",
+      "source_id": 2387,
+      "source_title": "Median of a Row Wise Sorted Matrix",
+      "adapted": "2387_median-across-sorted-rows",
+      "id": 2387,
+      "title": "Median Across Sorted Rows",
+      "api": {
+        "matrixMedian": "medianAcrossSortedRows",
+        "matrix_median": "median_across_sorted_rows"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2392_build-a-matrix-with-conditions",
+      "source_id": 2392,
+      "source_title": "Build a Matrix With Conditions",
+      "adapted": "2392_grid-placement-from-ordering-rules",
+      "id": 2392,
+      "title": "Grid Placement From Ordering Rules",
+      "api": {
+        "buildMatrix": "gridPlacement",
+        "build_matrix": "grid_placement"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2398_maximum-number-of-robots-within-budget",
+      "source_id": 2398,
+      "source_title": "Maximum Number of Robots Within Budget",
+      "adapted": "2398_longest-affordable-consecutive-stretch",
+      "id": 2398,
+      "title": "Longest Affordable Consecutive Stretch",
+      "api": {
+        "maximumRobots": "longestAffordableStretch",
+        "maximum_robots": "longest_affordable_stretch",
+        "chargeTimes": "startCosts",
+        "charge_times": "start_costs",
+        "runningCosts": "usageCosts",
+        "running_costs": "usage_costs"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2435_paths-in-matrix-whose-sum-is-divisible-by-k",
+      "source_id": 2435,
+      "source_title": "Paths in Matrix Whose Sum Is Divisible by K",
+      "adapted": "2435_count-grid-paths-with-divisible-sum",
+      "id": 2435,
+      "title": "Count Grid Paths With Divisible Sum",
+      "api": {
+        "numberOfPaths": "countDivisiblePaths",
+        "number_of_paths": "count_divisible_paths"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2439_minimize-maximum-of-array",
+      "source_id": 2439,
+      "source_title": "Minimize Maximum of Array",
+      "adapted": "2439_smallest-peak-after-leftward-shifts",
+      "id": 2439,
+      "title": "Smallest Peak After Leftward Shifts",
+      "api": {
+        "minimizeArrayValue": "smallestPeakAfterLeftShifts",
+        "minimize_array_value": "smallest_peak_after_left_shifts"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2440_create-components-with-same-value",
+      "source_id": 2440,
+      "source_title": "Create Components With Same Value",
+      "adapted": "2440_cutting-a-tree-into-equal-sum-parts",
+      "id": 2440,
+      "title": "Cutting a Tree Into Equal-Sum Parts",
+      "api": {
+        "componentValue": "maxEqualSumCuts",
+        "component_value": "max_equal_sum_cuts"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2444_count-subarrays-with-fixed-bounds",
+      "source_id": 2444,
+      "source_title": "Count Subarrays With Fixed Bounds",
+      "adapted": "2444_count-subarrays-with-given-extremes",
+      "id": 2444,
+      "title": "Count Subarrays With Given Extremes",
+      "api": {
+        "countSubarrays": "countSubarraysWithExtremes",
+        "count_subarrays": "count_subarrays_with_extremes",
+        "minK": "lo",
+        "maxK": "hi",
+        "min_k": "lo",
+        "max_k": "hi"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2448_minimum-cost-to-make-array-equal",
+      "source_id": 2448,
+      "source_title": "Minimum Cost to Make Array Equal",
+      "adapted": "2448_cheapest-common-level",
+      "id": 2448,
+      "title": "Cheapest Common Level",
+      "api": {
+        "minCost": "cheapestCommonLevel",
+        "min_cost": "cheapest_common_level"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2463_minimum-total-distance-traveled",
+      "source_id": 2463,
+      "source_title": "Minimum Total Distance Traveled",
+      "adapted": "2463_least-total-travel-to-capacitated-stops",
+      "id": 2463,
+      "title": "Least Total Travel to Capacitated Stops",
+      "api": {
+        "minimumTotalDistance": "leastTotalTravel",
+        "minimum_total_distance": "least_total_travel",
+        "robot": "units",
+        "factory": "stations"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2466_count-ways-to-build-good-strings",
+      "source_id": 2466,
+      "source_title": "Count Ways To Build Good Strings",
+      "adapted": "2466_count-strings-from-run-appends",
+      "id": 2466,
+      "title": "Count Strings From Run Appends",
+      "api": {
+        "countGoodStrings": "countRunStrings",
+        "count_good_strings": "count_run_strings"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2467_most-profitable-path-in-a-tree",
+      "source_id": 2467,
+      "source_title": "Most Profitable Path in a Tree",
+      "adapted": "2467_best-root-to-leaf-walk-against-a-rival",
+      "id": 2467,
+      "title": "Best Root-to-Leaf Walk Against a Rival",
+      "api": {
+        "mostProfitablePath": "bestWalkIncome",
+        "most_profitable_path": "best_walk_income"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2471_minimum-number-of-operations-to-sort-a-binary-tree-by-level",
+      "source_id": 2471,
+      "source_title": "Minimum Number of Operations to Sort a Binary Tree by Level",
+      "adapted": "2471_least-swaps-to-sort-each-tree-level",
+      "id": 2471,
+      "title": "Least Swaps to Sort Each Tree Level",
+      "api": {
+        "minimumOperations": "leastLevelSwaps",
+        "minimum_operations": "least_level_swaps"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2473_minimum-cost-to-buy-apples",
+      "source_id": 2473,
+      "source_title": "Minimum Cost to Buy Apples",
+      "adapted": "2473_cheapest-apple-run-from-every-town",
+      "id": 2473,
+      "title": "Cheapest Apple Run From Every Town",
+      "api": {
+        "minCost": "cheapestAppleRun",
+        "min_cost": "cheapest_apple_run"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2476_closest-nodes-queries-in-a-binary-search-tree",
+      "source_id": 2476,
+      "source_title": "Closest Nodes Queries in a Binary Search Tree",
+      "adapted": "2476_floor-and-ceiling-in-a-search-tree",
+      "id": 2476,
+      "title": "Floor and Ceiling in a Search Tree",
+      "api": {
+        "closestNodes": "floorCeilPairs",
+        "closest_nodes": "floor_ceil_pairs"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2479_maximum-xor-of-two-non-overlapping-subtrees",
+      "source_id": 2479,
+      "source_title": "Maximum XOR of Two Non-Overlapping Subtrees",
+      "adapted": "2479_largest-xor-of-two-disjoint-subtrees",
+      "id": 2479,
+      "title": "Largest XOR of Two Disjoint Subtrees",
+      "api": {
+        "maxXor": "maxDisjointXor",
+        "max_xor": "max_disjoint_xor"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2483_minimum-penalty-for-a-shop",
+      "source_id": 2483,
+      "source_title": "Minimum Penalty for a Shop",
+      "adapted": "2483_cheapest-closing-hour",
+      "id": 2483,
+      "title": "Cheapest Closing Hour",
+      "api": {
+        "bestClosingTime": "cheapestClosingHour",
+        "best_closing_time": "cheapest_closing_hour"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2569_handling-sum-queries-after-update",
+      "source_id": 2569,
+      "source_title": "Handling Sum Queries After Update",
+      "adapted": "2569_range-flips-and-running-totals",
+      "id": 2569,
+      "title": "Range Flips and Running Totals",
+      "api": {
+        "handleQuery": "runningTotals",
+        "handle_query": "running_totals",
+        "nums1": "bits",
+        "nums2": "values"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2572_count-the-number-of-square-free-subsets",
+      "source_id": 2572,
+      "source_title": "Count the Number of Square-Free Subsets",
+      "adapted": "2572_square-free-product-subsets",
+      "id": 2572,
+      "title": "Square-Free Product Subsets",
+      "api": {
+        "squareFreeSubsets": "countSquareFreeProducts",
+        "square_free_subsets": "count_square_free_products"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2576_find-the-maximum-number-of-marked-indices",
+      "source_id": 2576,
+      "source_title": "Find the Maximum Number of Marked Indices",
+      "adapted": "2576_most-pairs-under-doubling",
+      "id": 2576,
+      "title": "Most Pairs Under Doubling",
+      "api": {
+        "maxNumOfMarkedIndices": "mostPairs",
+        "max_num_of_marked_indices": "most_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2577_minimum-time-to-visit-a-cell-in-a-grid",
+      "source_id": 2577,
+      "source_title": "Minimum Time to Visit a Cell In a Grid",
+      "adapted": "2577_earliest-arrival-in-a-timed-grid",
+      "id": 2577,
+      "title": "Earliest Arrival in a Timed Grid",
+      "api": {
+        "minimumTime": "earliestArrival",
+        "minimum_time": "earliest_arrival"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2581_count-number-of-possible-root-nodes",
+      "source_id": 2581,
+      "source_title": "Count Number of Possible Root Nodes",
+      "adapted": "2581_plausible-roots-of-a-tree",
+      "id": 2581,
+      "title": "Plausible Roots of a Tree",
+      "api": {
+        "rootCount": "plausibleRoots",
+        "root_count": "plausible_roots"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2588_count-the-number-of-beautiful-subarrays",
+      "source_id": 2588,
+      "source_title": "Count the Number of Beautiful Subarrays",
+      "adapted": "2588_subarrays-whose-xor-vanishes",
+      "id": 2588,
+      "title": "Subarrays Whose XOR Vanishes",
+      "api": {
+        "beautifulSubarrays": "zeroXorSubarrays",
+        "beautiful_subarrays": "zero_xor_subarrays"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2594_minimum-time-to-repair-cars",
+      "source_id": 2594,
+      "source_title": "Minimum Time to Repair Cars",
+      "adapted": "2594_least-time-to-clear-every-job",
+      "id": 2594,
+      "title": "Least Time to Clear Every Job",
+      "api": {
+        "repairCars": "leastTime",
+        "repair_cars": "least_time",
+        "ranks": "factors",
+        "cars": "jobs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2607_make-k-subarray-sums-equal",
+      "source_id": 2607,
+      "source_title": "Make K-Subarray Sums Equal",
+      "adapted": "2607_equalize-circular-window-sums",
+      "id": 2607,
+      "title": "Equalize Circular Window Sums",
+      "api": {
+        "makeSubKSumEqual": "equalizeWindowSums",
+        "make_sub_k_sum_equal": "equalize_window_sums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2615_sum-of-distances",
+      "source_id": 2615,
+      "source_title": "Sum of Distances",
+      "adapted": "2615_distances-to-equal-values",
+      "id": 2615,
+      "title": "Distances to Equal Values",
+      "api": {
+        "distance": "equalValueDistances"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2616_minimize-the-maximum-difference-of-pairs",
+      "source_id": 2616,
+      "source_title": "Minimize the Maximum Difference of Pairs",
+      "adapted": "2616_smallest-widest-pair-gap",
+      "id": 2616,
+      "title": "Smallest Widest Pair Gap",
+      "api": {
+        "minimizeMax": "smallestWidestGap",
+        "minimize_max": "smallest_widest_gap"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": 2097,
+  "slug": "link-pairs-into-one-chain",
+  "title": "Link Pairs Into One Chain",
+  "difficulty": "H4",
+  "tags": [
+    "Graph",
+    "DFS",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "linkPairsIntoOneChain",
+    "parameters": [
+      {
+        "name": "pairs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "linkPairsIntoOneChain",
+      "rust": "link_pairs_into_one_chain",
+      "typescript": "linkPairsIntoOneChain"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

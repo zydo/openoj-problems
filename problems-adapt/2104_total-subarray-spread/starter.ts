@@ -1,0 +1,3 @@
+function totalSubarraySpread(nums: number[]): number {
+    throw new Error("TODO");
+}

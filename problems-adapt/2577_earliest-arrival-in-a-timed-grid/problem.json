@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 2577,
+  "slug": "earliest-arrival-in-a-timed-grid",
+  "title": "Earliest Arrival in a Timed Grid",
+  "difficulty": "H4",
+  "tags": [
+    "BFS",
+    "Shortest Path",
+    "Heap"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "earliestArrival",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "earliestArrival",
+      "rust": "earliest_arrival",
+      "typescript": "earliestArrival"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": 2476,
+  "slug": "floor-and-ceiling-in-a-search-tree",
+  "title": "Floor and Ceiling in a Search Tree",
+  "difficulty": "H2",
+  "tags": [
+    "Binary Search Tree",
+    "Binary Search",
+    "Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "floorCeilPairs",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "floorCeilPairs",
+      "rust": "floor_ceil_pairs",
+      "typescript": "floorCeilPairs"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

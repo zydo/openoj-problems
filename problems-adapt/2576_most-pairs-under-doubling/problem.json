@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": 2576,
+  "slug": "most-pairs-under-doubling",
+  "title": "Most Pairs Under Doubling",
+  "difficulty": "H3",
+  "tags": [
+    "Two Pointer",
+    "Sorting",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "mostPairs",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "mostPairs",
+      "rust": "most_pairs",
+      "typescript": "mostPairs"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
