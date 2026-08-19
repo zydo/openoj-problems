@@ -1425,6 +1425,246 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "2040_kth-smallest-product-of-two-sorted-arrays",
+      "source_id": 2040,
+      "source_title": "Kth Smallest Product of Two Sorted Arrays",
+      "adapted": "2040_kth-smallest-pair-product",
+      "id": 2040,
+      "title": "Kth Smallest Pair Product",
+      "api": {
+        "kthSmallestProduct": "kthSmallestPairProduct",
+        "kth_smallest_product": "kth_smallest_pair_product"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2064_minimized-maximum-of-products-distributed-to-any-store",
+      "source_id": 2064,
+      "source_title": "Minimized Maximum of Products Distributed to Any Store",
+      "adapted": "2064_smallest-largest-bin-load",
+      "id": 2064,
+      "title": "Smallest Largest Bin Load",
+      "api": {
+        "minimizedMaximum": "smallestLargestBinLoad",
+        "minimized_maximum": "smallest_largest_bin_load",
+        "quantities": "piles"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2313_minimum-flips-in-binary-tree-to-get-result",
+      "source_id": 2313,
+      "source_title": "Minimum Flips in Binary Tree to Get Result",
+      "adapted": "2313_leaf-flips-to-reach-a-root-value",
+      "id": 2313,
+      "title": "Leaf Flips to Reach a Root Value",
+      "api": {
+        "minimumFlips": "minLeafFlips",
+        "minimum_flips": "min_leaf_flips"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2375_construct-smallest-number-from-di-string",
+      "source_id": 2375,
+      "source_title": "Construct Smallest Number From DI String",
+      "adapted": "2375_smallest-number-fitting-an-up-down-pattern",
+      "id": 2375,
+      "title": "Smallest Number Fitting an Up-Down Pattern",
+      "api": {
+        "smallestNumber": "smallestFromPattern",
+        "smallest_number": "smallest_from_pattern"
+      },
+      "kind": "function",
+      "figures": "dropped (solution figure: block widths and stack snapshots encode the source pattern; no renderer for the family)"
+    },
+    {
+      "source": "2376_count-special-integers",
+      "source_id": 2376,
+      "source_title": "Count Special Integers",
+      "adapted": "2376_count-integers-with-distinct-digits",
+      "id": 2376,
+      "title": "Count Integers With Distinct Digits",
+      "api": {
+        "countSpecialNumbers": "countDistinctDigitNumbers",
+        "count_special_numbers": "count_distinct_digit_numbers"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2378_choose-edges-to-maximize-score-in-a-tree",
+      "source_id": 2378,
+      "source_title": "Choose Edges to Maximize Score in a Tree",
+      "adapted": "2378_largest-sum-of-non-adjacent-tree-edges",
+      "id": 2378,
+      "title": "Largest Sum of Non-Adjacent Tree Edges",
+      "api": {
+        "maxScore": "maxNonAdjacentEdgeSum",
+        "max_score": "max_non_adjacent_edge_sum"
+      },
+      "kind": "function",
+      "figures": "dropped (both example figures: node layout encodes the source trees; no renderer for the family)"
+    },
+    {
+      "source": "2386_find-the-k-sum-of-an-array",
+      "source_id": 2386,
+      "source_title": "Find the K-Sum of an Array",
+      "adapted": "2386_kth-largest-subsequence-sum",
+      "id": 2386,
+      "title": "Kth Largest Subsequence Sum",
+      "api": {
+        "kSum": "kthSubsequenceSum",
+        "k_sum": "kth_subsequence_sum"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2421_number-of-good-paths",
+      "source_id": 2421,
+      "source_title": "Number of Good Paths",
+      "adapted": "2421_twin-peak-paths-in-a-tree",
+      "id": 2421,
+      "title": "Twin-Peak Paths in a Tree",
+      "api": {
+        "numberOfGoodPaths": "countTwinPeakPaths",
+        "number_of_good_paths": "count_twin_peak_paths"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2425_bitwise-xor-of-all-pairings",
+      "source_id": 2425,
+      "source_title": "Bitwise XOR of All Pairings",
+      "adapted": "2425_xor-over-all-cross-pairs",
+      "id": 2425,
+      "title": "XOR Over All Cross Pairs",
+      "api": {
+        "xorAllNums": "xorCrossPairs",
+        "xor_all_nums": "xor_cross_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2426_number-of-pairs-satisfying-inequality",
+      "source_id": 2426,
+      "source_title": "Number of Pairs Satisfying Inequality",
+      "adapted": "2426_count-difference-bounded-pairs",
+      "id": 2426,
+      "title": "Count Difference-Bounded Pairs",
+      "api": {
+        "numberOfPairs": "countDifferenceBoundedPairs",
+        "number_of_pairs": "count_difference_bounded_pairs"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2430_maximum-deletions-on-a-string",
+      "source_id": 2430,
+      "source_title": "Maximum Deletions on a String",
+      "adapted": "2430_longest-deletion-sequence",
+      "id": 2430,
+      "title": "Longest Deletion Sequence",
+      "api": {
+        "deleteString": "longestDeletionSequence",
+        "delete_string": "longest_deletion_sequence"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2434_using-a-robot-to-print-the-lexicographically-smallest-string",
+      "source_id": 2434,
+      "source_title": "Using a Robot to Print the Lexicographically Smallest String",
+      "adapted": "2434_smallest-output-through-a-stack",
+      "id": 2434,
+      "title": "Smallest Output Through a Stack",
+      "api": {
+        "robotWithString": "smallestStackOutput",
+        "robot_with_string": "smallest_stack_output"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2459_sort-array-by-moving-items-to-empty-space",
+      "source_id": 2459,
+      "source_title": "Sort Array by Moving Items to Empty Space",
+      "adapted": "2459_least-moves-to-sort-into-the-blank",
+      "id": 2459,
+      "title": "Least Moves to Sort Into the Blank",
+      "api": {
+        "sortArray": "leastMovesToSort",
+        "sort_array": "least_moves_to_sort"
+      },
+      "kind": "function",
+      "figures": "dropped"
+    },
+    {
+      "source": "2461_maximum-sum-of-distinct-subarrays-with-length-k",
+      "source_id": 2461,
+      "source_title": "Maximum Sum of Distinct Subarrays With Length K",
+      "adapted": "2461_largest-repeat-free-window-sum",
+      "id": 2461,
+      "title": "Largest Repeat-Free Window Sum",
+      "api": {
+        "maximumSubarraySum": "bestDistinctWindowSum",
+        "maximum_subarray_sum": "best_distinct_window_sum"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "2462_total-cost-to-hire-k-workers",
+      "source_id": 2462,
+      "source_title": "Total Cost to Hire K Workers",
+      "adapted": "2462_k-cheapest-picks-from-both-ends",
+      "id": 2462,
+      "title": "K Cheapest Picks From Both Ends",
+      "api": {
+        "totalCost": "cheapestPickSum",
+        "total_cost": "cheapest_pick_sum",
+        "candidates": "window"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2548_maximum-price-to-fill-a-bag",
+      "source_id": 2548,
+      "source_title": "Maximum Price to Fill a Bag",
+      "adapted": "2548_most-value-in-a-full-bag",
+      "id": 2548,
+      "title": "Most Value in a Full Bag",
+      "api": {
+        "maxPrice": "mostValue",
+        "max_price": "most_value"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "2551_put-marbles-in-bags",
+      "source_id": 2551,
+      "source_title": "Put Marbles in Bags",
+      "adapted": "2551_score-range-over-k-cuts",
+      "id": 2551,
+      "title": "Score Range Over K Cuts",
+      "api": {
+        "putMarbles": "scoreRange",
+        "put_marbles": "score_range"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
