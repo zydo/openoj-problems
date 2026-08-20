@@ -689,6 +689,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0898_bitwise-ors-of-subarrays",
+      "source_id": 898,
+      "source_title": "Bitwise ORs of Subarrays",
+      "adapted": "0898_distinct-or-results-of-contiguous-segments",
+      "id": 898,
+      "title": "Distinct OR Results of Contiguous Segments",
+      "api": {
+        "subarrayBitwiseORs": "countDistinctSegmentOrs",
+        "subarray_bitwise_ors": "count_distinct_segment_ors"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

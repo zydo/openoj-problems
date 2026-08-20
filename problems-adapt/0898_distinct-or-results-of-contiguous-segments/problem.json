@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 898,
+  "slug": "distinct-or-results-of-contiguous-segments",
+  "title": "Distinct OR Results of Contiguous Segments",
+  "difficulty": "H3",
+  "tags": [
+    "Bit Manipulation",
+    "Hash Set"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countDistinctSegmentOrs",
+    "parameters": [
+      {
+        "name": "values",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countDistinctSegmentOrs",
+      "rust": "count_distinct_segment_ors",
+      "typescript": "countDistinctSegmentOrs"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
