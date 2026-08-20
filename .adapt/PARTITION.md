@@ -292,14 +292,14 @@ the user-selected boundary. Part C keeps entries 51 through 55 — `0901`,
 former entries 56 through 67, `1000` through `1043`, are now the 12-source
 **Part H**.
 
-Part H is currently unclaimed. Its assignments live in
+Part H was unclaimed when this split was committed. Its assignments live in
 `.adapt/part-h.json`, fragments go to `.adapt/incoming-h/`, merges use
 `adapt_merge.py --part h`, and `.adapt/ledger-h.json` is its independent
 shard. Chunk instructions are in `.adapt/PART-H-CHUNK.md`.
 
 **Part C complete (2026-08-19): 55/55** adapted, merged, and gate-swept.
-`.adapt/incoming-c/` is drained and should now stay empty. Part H remains
-unclaimed at 0/12.
+`.adapt/incoming-c/` is drained and should now stay empty. Part H has since
+been claimed by the Part B/E session and stands at 0/12.
 
 
 ## Part H claimed (2026-08-19 late)
