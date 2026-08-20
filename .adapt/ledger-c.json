@@ -745,6 +745,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0968_binary-tree-cameras",
+      "source_id": 968,
+      "source_title": "Binary Tree Cameras",
+      "adapted": "0968_minimum-tree-monitors",
+      "id": 968,
+      "title": "Minimum Tree Monitors",
+      "api": {
+        "minCameraCover": "minimumTreeMonitors",
+        "min_camera_cover": "minimum_tree_monitors"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
