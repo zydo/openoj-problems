@@ -3,7 +3,7 @@
 // wire contract — see common/README.md.
 #![allow(dead_code)]
 
-#[derive(Debug, Clone)]
+#[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
     pub next: Option<Box<ListNode>>,
@@ -15,7 +15,7 @@ impl ListNode {
     }
 }
 
-#[derive(Debug, Clone)]
+#[derive(PartialEq, Eq, Clone, Debug)]
 pub struct TreeNode {
     pub val: i32,
     pub left: Option<Box<TreeNode>>,
@@ -28,7 +28,7 @@ impl TreeNode {
     }
 }
 
-#[derive(Debug, Clone)]
+#[derive(PartialEq, Eq, Clone, Debug)]
 pub struct Node {
     pub val: i32,
     pub children: Vec<Option<Box<Node>>>,
