@@ -59,6 +59,33 @@ def shingles(text: str) -> set[tuple[str, ...]]:
     return {tuple(tokens[i : i + SHINGLE]) for i in range(len(tokens) - SHINGLE + 1)}
 
 
+
+BUNDLE_NAME = re.compile(r"^\d+_[a-z0-9][a-z0-9-]*$")
+
+
+def find_bundle(root: Path, key: str) -> Path:
+    """A bundle dir by key, flat or inside an id-range shard."""
+    direct = root / key
+    if direct.is_dir():
+        return direct
+    hits = [p for p in root.glob(f"*/{key}") if p.is_dir()]
+    if len(hits) != 1:
+        raise SystemExit(f"bundle {key} not found under {root}")
+    return hits[0]
+
+
+def iter_bundles(root: Path):
+    for child in sorted(root.iterdir()):
+        if not child.is_dir():
+            continue
+        if BUNDLE_NAME.fullmatch(child.name):
+            yield child
+        else:
+            for sub in sorted(child.iterdir()):
+                if sub.is_dir() and BUNDLE_NAME.fullmatch(sub.name):
+                    yield sub
+
+
 def background_shingles(exclude: Path) -> set[tuple[str, ...]]:
     """Phrases so common in the bank they cannot evidence copying.
 
@@ -68,10 +95,13 @@ def background_shingles(exclude: Path) -> set[tuple[str, ...]]:
     the wider corpus predates any single rewrite.
     """
     counts: dict[tuple[str, ...], int] = {}
-    for bundle in sorted(LIVE.glob("*/statement.md")):
-        if bundle.parent == exclude:
+    for bundle in iter_bundles(LIVE):
+        if bundle == exclude:
             continue
-        for shingle in shingles(bundle.read_text(encoding="utf-8")):
+        statement = bundle / "statement.md"
+        if not statement.is_file():
+            continue
+        for shingle in shingles(statement.read_text(encoding="utf-8")):
             counts[shingle] = counts.get(shingle, 0) + 1
     return {shingle for shingle, count in counts.items() if count >= 3}
 
@@ -270,7 +300,7 @@ def main() -> int:
     parser.add_argument("--gate", action="append", choices=sorted(GATES), help="run only these gates")
     arguments = parser.parse_args()
 
-    adapted = ADAPTED / arguments.key
+    adapted = find_bundle(ADAPTED, arguments.key)
     if not adapted.is_dir():
         print(f"no adapted bundle at {adapted}")
         return 2
@@ -278,7 +308,7 @@ def main() -> int:
     if not source_key:
         print(f"no source recorded for {arguments.key}; pass --source")
         return 2
-    source = LIVE / source_key
+    source = find_bundle(LIVE, source_key)
     if not source.is_dir():
         print(f"no source bundle at {source}")
         return 2

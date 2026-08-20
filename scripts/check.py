@@ -253,10 +253,32 @@ def check_bundle(bundle: Path) -> list[Failure]:
     return failures
 
 
+
+def bundle_dirs(root: Path) -> list[Path]:
+    """Every bundle directory under root, flat or sharded by id ranges.
+
+    The trees are sharded `<lo>-<hi>/<id>_<slug>/` (100 ids per shard);
+    flat `root/<id>_<slug>/` keeps working so old checkouts and test
+    fixtures do not break.
+    """
+    bundles = []
+    for child in sorted(root.iterdir()):
+        if not child.is_dir():
+            continue
+        if BUNDLE_NAME.fullmatch(child.name):
+            bundles.append(child)
+        else:
+            bundles.extend(
+                sub for sub in sorted(child.iterdir())
+                if sub.is_dir() and BUNDLE_NAME.fullmatch(sub.name)
+            )
+    return bundles
+
+
 def static_tier() -> tuple[list[Failure], dict[str, dict]]:
     failures: list[Failure] = []
     catalog: dict[str, dict] = {}
-    bundles = sorted(path for path in PROBLEMS.iterdir() if path.is_dir())
+    bundles = bundle_dirs(PROBLEMS)
     seen_ids: dict[int, str] = {}
     seen_slugs: dict[str, str] = {}
     for bundle in bundles:
@@ -375,16 +397,14 @@ def main() -> None:
         raise SystemExit("--runtime-only and --skip-runtime together check nothing")
     if arguments.runtime_only:
         catalog = {}
-        for bundle in sorted(PROBLEMS.iterdir()):
-            if not bundle.is_dir():
-                continue
+        for bundle in bundle_dirs(PROBLEMS):
             try:
                 catalog[bundle.name] = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
             except (json.JSONDecodeError, OSError):
                 print(f"  FAIL {bundle.name}: unreadable problem.json (the static tier reports details)")
                 failures.append(Failure(bundle.name, "unreadable problem.json"))
     else:
-        print(f"static tier: checking {len(list(PROBLEMS.iterdir()))} bundles")
+        print(f"static tier: checking {len(bundle_dirs(PROBLEMS))} bundles")
         failures, catalog = static_tier()
         for failure in failures:
             print(f"  FAIL {failure}")
