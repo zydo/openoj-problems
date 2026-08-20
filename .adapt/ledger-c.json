@@ -619,6 +619,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0871_minimum-number-of-refueling-stops",
+      "source_id": 871,
+      "source_title": "Minimum Number of Refueling Stops",
+      "adapted": "0871_fewest-supply-stops-to-destination",
+      "id": 871,
+      "title": "Fewest Supply Stops to Destination",
+      "api": {
+        "minRefuelStops": "minimumSupplyStops",
+        "min_refuel_stops": "minimum_supply_stops"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
