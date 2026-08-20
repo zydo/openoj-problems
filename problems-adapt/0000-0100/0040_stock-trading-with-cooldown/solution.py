@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def stockTradingWithCooldown(self, prices: List[int]) -> int:
+    def stockTradingWithCooldown(self, prices: list[int]) -> int:
         # End-of-day states: hold (own a share), sold (just sold today),
         # rest (own nothing, free to buy). The sentinel makes owning a
         # share before any purchase impossible.

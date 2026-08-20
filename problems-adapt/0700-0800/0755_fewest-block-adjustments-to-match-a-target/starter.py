@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestAdjustments(self, nums: List[int], target: List[int]) -> int:
+    def fewestAdjustments(self, nums: list[int], target: list[int]) -> int:
         raise NotImplementedError("TODO")

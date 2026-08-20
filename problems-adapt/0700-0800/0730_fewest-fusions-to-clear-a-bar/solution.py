@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def fewestFusions(self, nums: List[int], k: int) -> int:
+    def fewestFusions(self, nums: list[int], k: int) -> int:
         h = list(nums)
         heapq.heapify(h)
         operations = 0

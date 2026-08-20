@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countOnePrimePaths(self, n: int, edges: List[List[int]]) -> int:
+    def countOnePrimePaths(self, n: int, edges: list[list[int]]) -> int:
         # sieve of primes up to n
         prime = [True] * (n + 1)
         prime[0] = False

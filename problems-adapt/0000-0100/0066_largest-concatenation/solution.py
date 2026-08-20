@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestConcatenation(self, nums: List[int]) -> str:
+    def largestConcatenation(self, nums: list[int]) -> str:
         from functools import cmp_to_key
 
         strs = [str(n) for n in nums]

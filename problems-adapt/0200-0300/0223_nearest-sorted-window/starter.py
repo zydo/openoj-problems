@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nearestWindow(self, arr: List[int], k: int, x: int) -> List[int]:
+    def nearestWindow(self, arr: list[int], k: int, x: int) -> list[int]:
         raise NotImplementedError("TODO")

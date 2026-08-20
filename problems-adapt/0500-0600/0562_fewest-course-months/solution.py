@@ -1,9 +1,8 @@
-from typing import List
 from collections import deque
 
 
 class Solution:
-    def fewestCourseMonths(self, n: int, precedence: List[List[int]], time: List[int]) -> int:
+    def fewestCourseMonths(self, n: int, precedence: list[list[int]], time: list[int]) -> int:
         adjacency = [[] for _ in range(n + 1)]
         indegree = [0] * (n + 1)
         for prev, nxt in precedence:

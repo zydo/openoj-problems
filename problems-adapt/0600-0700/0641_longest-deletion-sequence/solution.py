@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestDeletionSequence(self, s: str) -> int:
         # dp[i] = max steps to delete s[i:]; LCP via two rolling rows

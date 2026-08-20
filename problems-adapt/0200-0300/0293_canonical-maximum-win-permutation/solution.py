@@ -1,9 +1,6 @@
 from bisect import bisect_right
-from typing import List, Optional
-
-
 class Solution:
-    def canonicalWinningPermutation(self, available: List[int], opponents: List[int]) -> List[int]:
+    def canonicalWinningPermutation(self, available: list[int], opponents: list[int]) -> list[int]:
         # Greedy: for each opponents[i] (left to right) assign the smallest unused
         # available value strictly greater than opponents[i], or the smallest unused
         # value. A Fenwick tree over the sorted values gives order statistics.

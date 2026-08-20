@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_left
 
 
 class Solution:
-    def fewestInsertions(self, target: List[int], arr: List[int]) -> int:
+    def fewestInsertions(self, target: list[int], arr: list[int]) -> int:
         # Answer = len(target) - LCS: each target element not kept costs one
         # insertion. target has distinct values, so rewriting arr as target
         # indices turns the LCS into a longest strictly increasing run.

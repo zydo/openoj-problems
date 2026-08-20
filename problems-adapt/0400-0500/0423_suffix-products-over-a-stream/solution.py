@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class SuffixProducts:
     def __init__(self) -> None:
         # prefix[i] = product of the first i numbers since the last zero;

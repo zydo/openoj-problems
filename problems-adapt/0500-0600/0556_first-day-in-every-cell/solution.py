@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def firstDayInEveryCell(self, nextVisit: List[int]) -> int:
+    def firstDayInEveryCell(self, nextVisit: list[int]) -> int:
         MOD = 10**9 + 7
         n = len(nextVisit)
         # f[i] = day cell i is first visited; f[0] = 0 anchors the

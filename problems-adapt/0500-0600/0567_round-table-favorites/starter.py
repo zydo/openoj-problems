@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxSeated(self, favorite: List[int]) -> int:
+    def maxSeated(self, favorite: list[int]) -> int:
         raise NotImplementedError("TODO")

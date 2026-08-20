@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countSpans(self, s: str) -> int:
         # last occurrence of a/b/c so far; -1 = letter not seen yet

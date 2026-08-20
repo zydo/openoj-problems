@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def widestGridPath(self, grid: List[List[int]]) -> int:
+    def widestGridPath(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

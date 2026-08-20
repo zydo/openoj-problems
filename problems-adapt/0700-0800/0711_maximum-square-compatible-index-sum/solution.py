@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import defaultdict
 
 
 class Solution:
-    def maxSquareIndexSum(self, nums: List[int]) -> int:
+    def maxSquareIndexSum(self, nums: list[int]) -> int:
         def squarefree_part(x):
             # Product of primes with odd exponent in x, e.g. P(18) = 2.
             # Trial division suffices: only indices are factored, not

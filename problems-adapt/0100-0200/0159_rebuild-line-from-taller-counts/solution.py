@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rebuildLine(self, people: List[List[int]]) -> List[List[int]]:
+    def rebuildLine(self, people: list[list[int]]) -> list[list[int]]:
         # Tallest first, ties by smaller k: everyone already placed is then
         # taller-or-equal, so inserting at index k puts exactly k such people
         # in front.

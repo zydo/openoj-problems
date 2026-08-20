@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def countPathsWithSum(self, root: Optional[TreeNode], targetSum: int) -> int:
+    def countPathsWithSum(self, root: TreeNode | None, targetSum: int) -> int:
         # counter maps root-to-node prefix sums seen on the current path to
         # their counts; {0: 1} counts paths starting at a node itself.
         counter = {}

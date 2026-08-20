@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestLargestSplit(self, nums: List[int], k: int) -> int:
+    def smallestLargestSplit(self, nums: list[int], k: int) -> int:
         def feasible(limit):
             # Greedy piece count under the limit: extending each piece as far
             # as possible never forces more pieces later.

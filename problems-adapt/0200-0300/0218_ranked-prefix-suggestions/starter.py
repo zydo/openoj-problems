@@ -1,9 +1,6 @@
-from typing import List, Optional
-
-
 class PrefixSuggester:
-    def __init__(self, sentences: List[str], times: List[int]) -> None:
+    def __init__(self, sentences: list[str], times: list[int]) -> None:
         raise NotImplementedError("TODO")
 
-    def typeCharacter(self, c: str) -> List[str]:
+    def typeCharacter(self, c: str) -> list[str]:
         raise NotImplementedError("TODO")

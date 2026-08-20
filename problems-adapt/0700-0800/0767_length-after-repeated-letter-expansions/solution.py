@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     @staticmethod
     def _mat_mul(a, b):
@@ -28,7 +25,7 @@ class Solution:
             exp >>= 1
         return result
 
-    def lengthAfterExpansions(self, s: str, t: int, nums: List[int]) -> int:
+    def lengthAfterExpansions(self, s: str, t: int, nums: list[int]) -> int:
         MOD = 10**9 + 7
         v = [0] * 26
         for ch in s:

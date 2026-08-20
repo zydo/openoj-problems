@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def coalesce(self, intervals: List[List[int]]) -> List[List[int]]:
+    def coalesce(self, intervals: list[list[int]]) -> list[list[int]]:
         # Sort by start (end as tiebreaker) so any interval overlapping an
         # earlier one must overlap or touch the most recent coalesced interval;
         # a sweep that only tracks the last coalesced interval then suffices.

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countShortestRoutes(self, n: int, roads: List[List[int]]) -> int:
+    def countShortestRoutes(self, n: int, roads: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

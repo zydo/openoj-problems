@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canReachEnd(self, steps: List[int]) -> bool:
+    def canReachEnd(self, steps: list[int]) -> bool:
         # `farthest` is the largest index reachable using any sequence of
         # jumps among positions visited so far; an index is standable
         # exactly when index <= farthest (reachability grows continuously).

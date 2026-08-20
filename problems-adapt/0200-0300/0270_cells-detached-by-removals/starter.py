@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cellsDetachedByRemovals(self, grid: List[List[int]], removals: List[List[int]]) -> List[int]:
+    def cellsDetachedByRemovals(self, grid: list[list[int]], removals: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leftmostMeetingPoints(self, heights: List[int], queries: List[List[int]]) -> List[int]:
+    def leftmostMeetingPoints(self, heights: list[int], queries: list[list[int]]) -> list[int]:
         n = len(heights)
         # Max segment tree over heights, padded to a power of two: leaves hold
         # heights, each parent the max of its children.

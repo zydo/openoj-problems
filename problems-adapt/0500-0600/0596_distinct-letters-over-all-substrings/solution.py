@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def distinctLetterSum(self, s: str) -> int:
         # flip the accounting: per character, count the substrings containing it

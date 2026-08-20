@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def letterExclusiveParts(self, s: str) -> List[int]:
+    def letterExclusiveParts(self, s: str) -> list[int]:
         # A part must extend to the last occurrence of every letter it
         # contains, so record where each letter finally appears.
         last = {}

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestBudget(self, n: int, edges: List[List[int]], k: int) -> int:
+    def smallestBudget(self, n: int, edges: list[list[int]], k: int) -> int:
         from collections import deque
 
         adj = [[] for _ in range(n)]

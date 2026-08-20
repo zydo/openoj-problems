@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def tallestStack(self, cuboids: List[List[int]]) -> int:
+    def tallestStack(self, cuboids: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

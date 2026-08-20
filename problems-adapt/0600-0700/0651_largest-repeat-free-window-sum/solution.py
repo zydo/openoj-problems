@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestDistinctWindowSum(self, nums: List[int], k: int) -> int:
+    def bestDistinctWindowSum(self, nums: list[int], k: int) -> int:
         # counts maps value -> frequency in the current window; zero-count
         # keys are deleted so len(counts) is the window's distinct count.
         counts = {}

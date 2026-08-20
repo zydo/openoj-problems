@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def splitByGreater(self, nums: List[int]) -> List[int]:
+    def splitByGreater(self, nums: list[int]) -> list[int]:
         # Compress distinct values to 1-based ranks; trees count occurrences per rank.
         vals = sorted(set(nums))
         comp = {v: i + 1 for i, v in enumerate(vals)}

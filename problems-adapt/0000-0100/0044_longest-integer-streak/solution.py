@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestIntegerStreak(self, nums: List[int]) -> int:
+    def longestIntegerStreak(self, nums: list[int]) -> int:
         # The set collapses duplicates and makes membership an O(1) test.
         values = set(nums)
         best = 0

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countRunStrings(self, low: int, high: int, zero: int, one: int) -> int:
         MOD = 10**9 + 7

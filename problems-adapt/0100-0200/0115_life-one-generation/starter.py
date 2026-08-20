@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nextGeneration(self, board: List[List[int]]) -> List[List[int]]:
+    def nextGeneration(self, board: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

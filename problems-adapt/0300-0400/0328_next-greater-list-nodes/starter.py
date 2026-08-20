@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -8,5 +5,5 @@ class ListNode:
 
 
 class Solution:
-    def nextGreaterListNodes(self, head: Optional[ListNode]) -> List[int]:
+    def nextGreaterListNodes(self, head: ListNode | None) -> list[int]:
         raise NotImplementedError("TODO")

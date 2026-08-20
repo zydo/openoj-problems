@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxDisjointTotal(self, n: int, segments: List[List[int]]) -> int:
+    def maxDisjointTotal(self, n: int, segments: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

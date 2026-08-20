@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def collisionSurvivors(self, movers: List[int]) -> List[int]:
+    def collisionSurvivors(self, movers: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

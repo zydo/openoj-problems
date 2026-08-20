@@ -1,9 +1,8 @@
-from typing import List, Optional
 from math import gcd
 
 
 class Solution:
-    def countSubsequenceGcds(self, nums: List[int]) -> int:
+    def countSubsequenceGcds(self, nums: list[int]) -> int:
         present = set(nums)
         max_val = max(nums)
         count = 0

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fillSudoku(self, board: List[List[str]]) -> List[List[str]]:
+    def fillSudoku(self, board: list[list[str]]) -> list[list[str]]:
         # One pass collects the empty cells and records the digits already
         # used in 27 bitmasks -- one per row, column, and 3x3 box -- with
         # digit d encoded as bit 1 << d.

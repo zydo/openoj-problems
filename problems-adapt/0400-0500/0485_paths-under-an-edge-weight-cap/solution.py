@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def pathsUnderCap(self, n: int, edgeList: List[List[int]], queries: List[List[int]]) -> List[bool]:
+    def pathsUnderCap(self, n: int, edgeList: list[list[int]], queries: list[list[int]]) -> list[bool]:
         parent = list(range(n))
 
         def find(x):

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def isTwoColorable(self, graph: List[List[int]]) -> bool:
+    def isTwoColorable(self, graph: list[list[int]]) -> bool:
         raise NotImplementedError("TODO")

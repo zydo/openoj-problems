@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class UpdatableRanges:
-    def __init__(self, nums: List[int]) -> None:
+    def __init__(self, nums: list[int]) -> None:
         raise NotImplementedError("TODO")
 
     def setValue(self, index: int, value: int) -> None:

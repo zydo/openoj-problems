@@ -1,9 +1,6 @@
 from collections import deque
-from typing import List, Optional
-
-
 class Solution:
-    def carpoolFuel(self, roads: List[List[int]], seats: int) -> int:
+    def carpoolFuel(self, roads: list[list[int]], seats: int) -> int:
         n = len(roads) + 1
         if n == 1:
             return 0

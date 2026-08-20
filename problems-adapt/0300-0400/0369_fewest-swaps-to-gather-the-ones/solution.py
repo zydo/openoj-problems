@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestSwapsToGatherOnes(self, bits: List[int]) -> int:
+    def fewestSwapsToGatherOnes(self, bits: list[int]) -> int:
         # the grouped block must hold every 1, so its length is fixed at ones
         ones = sum(bits)
         if ones <= 1:

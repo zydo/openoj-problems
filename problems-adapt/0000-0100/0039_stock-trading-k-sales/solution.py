@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def stockTradingKSales(self, k: int, prices: List[int]) -> int:
+    def stockTradingKSales(self, k: int, prices: list[int]) -> int:
         n = len(prices)
         if n < 2 or k == 0:
             return 0

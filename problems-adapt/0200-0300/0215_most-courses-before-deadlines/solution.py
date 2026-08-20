@@ -1,12 +1,10 @@
-from typing import List
-
 import heapq
 
 
 class Solution:
-    def mostCoursesBeforeDeadlines(self, courses: List[List[int]]) -> int:
+    def mostCoursesBeforeDeadlines(self, courses: list[list[int]]) -> int:
         total = 0
-        heap: List[int] = []  # max-heap via negated durations
+        heap: list[int] = []  # max-heap via negated durations
         for duration, last_day in sorted(courses, key=lambda course: course[1]):
             if total + duration <= last_day:
                 total += duration

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def equalizeWindowSums(self, arr: List[int], k: int) -> int:
+    def equalizeWindowSums(self, arr: list[int], k: int) -> int:
         raise NotImplementedError("TODO")

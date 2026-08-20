@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def discountedPrices(self, prices: List[int]) -> List[int]:
+    def discountedPrices(self, prices: list[int]) -> list[int]:
         answer = list(prices)
         stack = []  # indices with pending discount
         for i, price in enumerate(prices):

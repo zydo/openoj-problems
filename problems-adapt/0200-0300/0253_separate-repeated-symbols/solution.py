@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def separateRepeatedSymbols(self, text: str) -> str:
         n = len(text)

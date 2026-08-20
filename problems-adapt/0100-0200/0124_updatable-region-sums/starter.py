@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class UpdatableRegions:
-    def __init__(self, matrix: List[List[int]]) -> None:
+    def __init__(self, matrix: list[list[int]]) -> None:
         raise NotImplementedError("TODO")
 
     def setValue(self, row: int, col: int, value: int) -> None:

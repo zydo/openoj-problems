@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumTwoItemContainers(self, weights: List[int], capacity: int) -> int:
+    def minimumTwoItemContainers(self, weights: list[int], capacity: int) -> int:
         weights = sorted(weights)
         i, j = 0, len(weights) - 1
         boats = 0

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class _Trie:
     def __init__(self, bits):
         self.bits = bits
@@ -39,7 +36,7 @@ class _Trie:
 
 
 class Solution:
-    def maxDisjointXor(self, n: int, edges: List[List[int]], values: List[int]) -> int:
+    def maxDisjointXor(self, n: int, edges: list[list[int]], values: list[int]) -> int:
         graph = [[] for _ in range(n)]
         for a, b in edges:
             graph[a].append(b)

@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def rollingWindowMaxima(self, nums: List[int], k: int) -> List[int]:
+    def rollingWindowMaxima(self, nums: list[int], k: int) -> list[int]:
         heap = []  # (-value, index): negation turns heapq's min-heap into a max-heap
         result = []
         for i, value in enumerate(nums):

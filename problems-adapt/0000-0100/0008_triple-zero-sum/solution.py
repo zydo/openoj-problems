@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def tripleZeroSum(self, nums: List[int]) -> List[List[int]]:
+    def tripleZeroSum(self, nums: list[int]) -> list[list[int]]:
         # Fresh sorted list: caller's array is untouched. Sorting means every
         # emitted triplet is already ascending, and scanning i left to right
         # emits triplets in lexicographic order.

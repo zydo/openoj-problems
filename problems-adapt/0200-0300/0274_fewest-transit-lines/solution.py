@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestTransitLines(self, lines: List[List[int]], startStop: int, endStop: int) -> int:
+    def fewestTransitLines(self, lines: list[list[int]], startStop: int, endStop: int) -> int:
         # Early exits: same stop needs no line; an endpoint on no route
         # has no path.
         if startStop == endStop:

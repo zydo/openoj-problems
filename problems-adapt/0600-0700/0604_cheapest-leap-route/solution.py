@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def cheapestLeapRoute(self, nums: List[int], costs: List[int]) -> int:
+    def cheapestLeapRoute(self, nums: list[int], costs: list[int]) -> int:
         n = len(nums)
         # from any i, jump to the first later j with nums[j] >= nums[i],
         # or the first later j with nums[j] < nums[i]; nothing farther is reachable

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastMergeCost(self, lengths: List[int]) -> int:
+    def leastMergeCost(self, lengths: list[int]) -> int:
         raise NotImplementedError("TODO")

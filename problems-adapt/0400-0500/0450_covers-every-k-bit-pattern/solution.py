@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def coversEveryKBitPattern(self, s: str, k: int) -> bool:
         # all 2^k codes present <=> distinct length-k substrings reach 2^k

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class PacketBuffer:
     def __init__(self, capacity: int) -> None:
         raise NotImplementedError("TODO")
@@ -8,7 +5,7 @@ class PacketBuffer:
     def receive(self, source: int, destination: int, timestamp: int) -> bool:
         raise NotImplementedError("TODO")
 
-    def dispatch(self) -> List[int]:
+    def dispatch(self) -> list[int]:
         raise NotImplementedError("TODO")
 
     def countInWindow(self, destination: int, startTime: int, endTime: int) -> int:

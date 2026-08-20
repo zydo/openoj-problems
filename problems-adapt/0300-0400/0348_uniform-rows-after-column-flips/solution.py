@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostUniformRowsAfterFlips(self, matrix: List[List[int]]) -> int:
+    def mostUniformRowsAfterFlips(self, matrix: list[list[int]]) -> int:
         # column flips XOR one fixed mask onto every row at once, so a row
         # turns uniform iff it equals the mask or its complement: exactly
         # the identical-or-complementary rows can be fixed together

@@ -1,4 +1,3 @@
-from typing import List, Optional
 from collections import deque
 
 
@@ -10,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def minLeafFlips(self, root: Optional[TreeNode], result: bool) -> int:
+    def minLeafFlips(self, root: TreeNode | None, result: bool) -> int:
         if root is None:
             return 0
         order = []

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_right
 
 
 class Solution:
-    def medianAcrossSortedRows(self, grid: List[List[int]]) -> int:
+    def medianAcrossSortedRows(self, grid: list[list[int]]) -> int:
         m, n = len(grid), len(grid[0])
         # Odd element count, so the median is the (m*n)//2+1-th smallest
         # value — an actual matrix entry, returned exactly.

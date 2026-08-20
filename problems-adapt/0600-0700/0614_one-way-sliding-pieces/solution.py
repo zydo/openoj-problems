@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def canReach(self, start: str, target: str) -> bool:
         # pieces cannot pass through each other, so their relative order is

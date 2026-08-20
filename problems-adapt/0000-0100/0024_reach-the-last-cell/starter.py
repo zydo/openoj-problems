@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canReachEnd(self, steps: List[int]) -> bool:
+    def canReachEnd(self, steps: list[int]) -> bool:
         raise NotImplementedError("TODO")

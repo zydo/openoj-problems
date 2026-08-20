@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nextGeneration(self, board: List[List[int]]) -> List[List[int]]:
+    def nextGeneration(self, board: list[list[int]]) -> list[list[int]]:
         m, n = len(board), len(board[0])
         # Snapshot the current generation: every neighbor count must read
         # the old states even while the board itself is being overwritten.

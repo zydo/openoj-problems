@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stepsToFood(self, grid: List[List[str]]) -> int:
+    def stepsToFood(self, grid: list[list[str]]) -> int:
         raise NotImplementedError("TODO")

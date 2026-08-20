@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostRequirementCapacityPairs(self, requirements: List[int], capacities: List[int]) -> int:
+    def mostRequirementCapacityPairs(self, requirements: list[int], capacities: list[int]) -> int:
         requirements = sorted(requirements)
         capacities = sorted(capacities)
         # Greedy: pair the weakest unmatched requirement with the weakest

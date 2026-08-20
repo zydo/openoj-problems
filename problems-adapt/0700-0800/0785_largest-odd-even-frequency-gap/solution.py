@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def largestGap(self, s: str, k: int) -> int:
         n = len(s)

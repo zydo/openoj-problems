@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def lowestFreeChair(self, times: List[List[int]], targetGuest: int) -> int:
+    def lowestFreeChair(self, times: list[list[int]], targetGuest: int) -> int:
         raise NotImplementedError("TODO")

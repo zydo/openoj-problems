@@ -1,9 +1,8 @@
-from typing import List, Optional
 from math import isqrt
 
 
 class Solution:
-    def leastTime(self, factors: List[int], jobs: int) -> int:
+    def leastTime(self, factors: list[int], jobs: int) -> int:
         def feasible(t):
             # Within budget t, a rank-r mechanic finishes r*n^2 <= t jobs, so
             # its capacity is isqrt(t // r); the check sums capacities and

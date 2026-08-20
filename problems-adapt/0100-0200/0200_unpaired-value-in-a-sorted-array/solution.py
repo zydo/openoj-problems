@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def unpairedValue(self, nums: List[int]) -> int:
+    def unpairedValue(self, nums: list[int]) -> int:
         # Pairs start on even indices before the single element and on odd
         # indices after it — a monotone parity break, ideal for binary search.
         lo, hi = 0, len(nums) - 1

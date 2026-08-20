@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastWeightCap(self, n: int, edges: List[List[int]], threshold: int) -> int:
+    def leastWeightCap(self, n: int, edges: list[list[int]], threshold: int) -> int:
         adj = [[] for _ in range(n)]
         maxw = 0
         for u, v, w in edges:

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countLockerAssignments(self, lockers: List[List[int]]) -> int:
+    def countLockerAssignments(self, lockers: list[list[int]]) -> int:
         MOD = 10**9 + 7
         n = len(lockers)
         full = (1 << n) - 1

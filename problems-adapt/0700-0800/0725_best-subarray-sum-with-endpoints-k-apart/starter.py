@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestSubarraySum(self, nums: List[int], k: int) -> int:
+    def bestSubarraySum(self, nums: list[int], k: int) -> int:
         raise NotImplementedError("TODO")

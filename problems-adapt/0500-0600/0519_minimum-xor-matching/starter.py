@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minXORMatching(self, nums1: List[int], nums2: List[int]) -> int:
+    def minXORMatching(self, nums1: list[int], nums2: list[int]) -> int:
         raise NotImplementedError("TODO")

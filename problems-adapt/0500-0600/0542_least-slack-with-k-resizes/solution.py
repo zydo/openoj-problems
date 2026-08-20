@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastSlack(self, nums: List[int], k: int) -> int:
+    def leastSlack(self, nums: list[int], k: int) -> int:
         n = len(nums)
         prefix = [0] * (n + 1)
         for i in range(n):

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class PrefixSuggester:
-    def __init__(self, sentences: List[str], times: List[int]) -> None:
+    def __init__(self, sentences: list[str], times: list[int]) -> None:
         self.root = {}
         for sentence, time in zip(sentences, times):
             node = self.root
@@ -12,7 +9,7 @@ class PrefixSuggester:
         self.node = self.root
         self.typed = []
 
-    def typeCharacter(self, c: str) -> List[str]:
+    def typeCharacter(self, c: str) -> list[str]:
         if c == "#":
             sentence = "".join(self.typed)
             node = self.root

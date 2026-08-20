@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def shortestGridCrossing(self, grid: List[List[int]]) -> int:
+    def shortestGridCrossing(self, grid: list[list[int]]) -> int:
         n = len(grid)
         # Blocked corners admit no path; a 1x1 open grid needs no moves.
         if grid[0][0] != 0 or grid[n - 1][n - 1] != 0:

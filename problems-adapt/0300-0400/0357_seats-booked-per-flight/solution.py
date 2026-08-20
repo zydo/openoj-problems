@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def seatsBookedPerFlight(self, bookings: List[List[int]], n: int) -> List[int]:
+    def seatsBookedPerFlight(self, bookings: list[list[int]], n: int) -> list[int]:
         # difference array (n + 1 slots keeps the stamp at index last in
         # bounds when last == n): each booking costs two writes instead of
         # touching every flight in [first, last]

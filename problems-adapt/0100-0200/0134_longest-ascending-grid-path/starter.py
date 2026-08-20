@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestAscendingPath(self, matrix: List[List[int]]) -> int:
+    def longestAscendingPath(self, matrix: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

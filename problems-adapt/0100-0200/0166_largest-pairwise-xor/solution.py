@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestPairXor(self, nums: List[int]) -> int:
+    def largestPairXor(self, nums: list[int]) -> int:
         best = 0
         mask = 0
         # Decide each answer bit from the MSB down: a set higher bit dominates

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def fewestCourseRounds(self, n: int, precedence: List[List[int]]) -> int:
+    def fewestCourseRounds(self, n: int, precedence: list[list[int]]) -> int:
         adjacency = [[] for _ in range(n + 1)]
         indegree = [0] * (n + 1)
         for prev, nxt in precedence:

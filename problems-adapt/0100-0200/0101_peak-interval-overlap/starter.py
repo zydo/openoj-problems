@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def peakOverlap(self, intervals: List[List[int]]) -> int:
+    def peakOverlap(self, intervals: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

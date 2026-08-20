@@ -1,6 +1,3 @@
-from typing import List
-
-
 class AncestorFinder:
     """Binary lifting: up[j][v] is the 2^j-th ancestor of v, or -1.
 
@@ -8,10 +5,10 @@ class AncestorFinder:
     lookup per set bit, so at most ⌈log₂ n⌉ jumps.
     """
 
-    def __init__(self, n: int, parent: List[int]) -> None:
+    def __init__(self, n: int, parent: list[int]) -> None:
         # 2^levels > n >= k, so every k fits in `levels` bits.
         self.levels = max(1, n.bit_length())
-        self.up: List[List[int]] = [list(parent)]
+        self.up: list[list[int]] = [list(parent)]
         for _ in range(1, self.levels):
             previous = self.up[-1]
             # A 2^j jump is two 2^(j-1) jumps; -1 absorbs everything above

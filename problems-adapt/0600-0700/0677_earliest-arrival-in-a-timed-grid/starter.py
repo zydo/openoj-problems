@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def earliestArrival(self, grid: List[List[int]]) -> int:
+    def earliestArrival(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

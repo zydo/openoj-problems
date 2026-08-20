@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def stockTradingWithFees(self, prices: List[int], fee: int) -> int:
+    def stockTradingWithFees(self, prices: list[int], fee: int) -> int:
         # cash: best profit holding no share; hold: best profit holding one.
         # The sentinel makes pre-day-1 holding unreachable; cash=0 means do nothing.
         cash, hold = 0, -(10**9)

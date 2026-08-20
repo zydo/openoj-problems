@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class JobBoard:
-    def __init__(self, jobs: List[List[int]]) -> None:
+    def __init__(self, jobs: list[list[int]]) -> None:
         raise NotImplementedError("TODO")
 
     def post(self, userId: int, jobId: int, priority: int) -> None:

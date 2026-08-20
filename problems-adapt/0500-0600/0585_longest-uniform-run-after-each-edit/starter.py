@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestUniformRun(self, s: str, rewriteChars: str, rewritePositions: List[int]) -> List[int]:
+    def longestUniformRun(self, s: str, rewriteChars: str, rewritePositions: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

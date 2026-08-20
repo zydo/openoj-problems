@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def combinations(self, amount: int, coins: List[int]) -> int:
+    def combinations(self, amount: int, coins: list[int]) -> int:
         # dp[a] = number of combinations summing exactly to a; dp[0] = 1
         # is the empty combination.
         dp = [0] * (amount + 1)

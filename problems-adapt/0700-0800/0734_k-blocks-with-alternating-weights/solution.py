@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxBlockScore(self, nums: List[int], k: int) -> int:
+    def maxBlockScore(self, nums: list[int], k: int) -> int:
         NEG = float("-inf")
         n = len(nums)
         # nxt[j][x] = dp[i+1][j][x]: x=1 means nums[i] is inside the j-th

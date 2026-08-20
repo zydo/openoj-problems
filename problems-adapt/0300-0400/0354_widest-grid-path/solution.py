@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def widestGridPath(self, grid: List[List[int]]) -> int:
+    def widestGridPath(self, grid: list[list[int]]) -> int:
         rows, cols = len(grid), len(grid[0])
         # Best-first on the highest-valued frontier cell: taking the largest
         # candidate can never lower the running minimum, so the first arrival

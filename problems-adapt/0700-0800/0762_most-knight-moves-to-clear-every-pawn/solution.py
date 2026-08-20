@@ -1,4 +1,3 @@
-from typing import List, Optional
 from collections import deque
 from functools import lru_cache
 
@@ -30,7 +29,7 @@ class Solution:
                     queue.append((nx, ny))
         return dist
 
-    def mostMoves(self, kx: int, ky: int, positions: List[List[int]]) -> int:
+    def mostMoves(self, kx: int, ky: int, positions: list[list[int]]) -> int:
         m = len(positions)
         grids = [self._distances(p[0], p[1]) for p in positions]
         d_start = [g[kx][ky] for g in grids]

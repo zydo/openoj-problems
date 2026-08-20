@@ -1,11 +1,9 @@
-from typing import List, Optional
-
 MOD = 10**9 + 7
 NEG = -(10**18)
 
 
 class Solution:
-    def nonAdjacentSum(self, nums: List[int], queries: List[List[int]]) -> int:
+    def nonAdjacentSum(self, nums: list[int], queries: list[list[int]]) -> int:
         n = len(nums)
         tree = [None] * (4 * n)
 

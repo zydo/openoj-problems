@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestSharedSegment(self, n: int, paths: List[List[int]]) -> int:
+    def longestSharedSegment(self, n: int, paths: list[list[int]]) -> int:
         # Two independent moduli paired in the key make an accidental collision
         # astronomically unlikely.
         MOD1 = 10**9 + 7

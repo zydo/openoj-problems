@@ -1,9 +1,6 @@
 from collections import deque
-from typing import List, Optional
-
-
 class Solution:
-    def boundedGapSubsequenceSum(self, nums: List[int], k: int) -> int:
+    def boundedGapSubsequenceSum(self, nums: list[int], k: int) -> int:
         n = len(nums)
         dp = [0] * n
         dq = deque()  # indices, dp values decreasing

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def boundedFinalScoreProbability(self, scoreLimit: int, stopScore: int, drawMaximum: int) -> float:
         if stopScore == 0 or scoreLimit >= stopScore - 1 + drawMaximum:

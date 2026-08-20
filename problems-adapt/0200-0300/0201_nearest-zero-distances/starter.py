@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nearestZeroDistances(self, mat: List[List[int]]) -> List[List[int]]:
+    def nearestZeroDistances(self, mat: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def greedyStoneSmashing(self, stones: List[int]) -> int:
+    def greedyStoneSmashing(self, stones: list[int]) -> int:
         raise NotImplementedError("TODO")

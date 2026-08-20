@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mixedLayerSums(self, segments: List[List[int]]) -> List[List[int]]:
+    def mixedLayerSums(self, segments: list[list[int]]) -> list[list[int]]:
         # Difference events per segment: +color at its start, -color at its
         # end. The mixed sum is piecewise constant and can only change at
         # these coordinates.

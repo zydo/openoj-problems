@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestWalk(self, m: int, n: int, penalty: List[List[int]]) -> int:
+    def cheapestWalk(self, m: int, n: int, penalty: list[list[int]]) -> int:
         import heapq
 
         INF = float("inf")

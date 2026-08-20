@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestAscendingPath(self, matrix: List[List[int]]) -> int:
+    def longestAscendingPath(self, matrix: list[list[int]]) -> int:
         if not matrix or not matrix[0]:
             return 0
         m = len(matrix)

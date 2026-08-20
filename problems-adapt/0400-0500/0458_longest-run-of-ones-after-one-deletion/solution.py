@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestRun(self, nums: List[int]) -> int:
+    def longestRun(self, nums: list[int]) -> int:
         best = 0
         left = 0
         zeros = 0

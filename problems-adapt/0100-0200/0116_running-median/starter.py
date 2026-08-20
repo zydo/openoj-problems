@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class RunningMedian:
     def __init__(self) -> None:
         raise NotImplementedError("TODO")

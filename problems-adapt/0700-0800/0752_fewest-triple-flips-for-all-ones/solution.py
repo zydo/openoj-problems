@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestFlips(self, nums: List[int]) -> int:
+    def fewestFlips(self, nums: list[int]) -> int:
         arr = list(nums)
         n = len(arr)
         operations = 0

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countMaximalEnds(self, nums: List[int]) -> int:
+    def countMaximalEnds(self, nums: list[int]) -> int:
         n = len(nums)
         # leftGreater[i]: nearest index to the left with a strictly greater value
         leftGreater = [-1] * n

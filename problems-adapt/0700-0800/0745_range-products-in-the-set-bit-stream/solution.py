@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rangeProducts(self, queries: List[List[int]]) -> List[int]:
+    def rangeProducts(self, queries: list[list[int]]) -> list[int]:
         def _count_bit(M, b):
             # count of integers in [1, M] with bit b set
             if M <= 0:

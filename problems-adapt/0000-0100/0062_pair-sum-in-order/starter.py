@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def pairSumInOrder(self, nums: List[int], target: int) -> List[int]:
+    def pairSumInOrder(self, nums: list[int], target: int) -> list[int]:
         raise NotImplementedError("TODO")

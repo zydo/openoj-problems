@@ -1,6 +1,3 @@
-from typing import Dict, List
-
-
 class PopularityStack:
     """Frequency buckets: groups[f-1] is the stack of values at frequency f.
 
@@ -9,8 +6,8 @@ class PopularityStack:
     """
 
     def __init__(self) -> None:
-        self.freq: Dict[int, int] = {}
-        self.groups: List[List[int]] = []  # groups[f-1] holds values at freq f
+        self.freq: dict[int, int] = {}
+        self.groups: list[list[int]] = []  # groups[f-1] holds values at freq f
         self.maxfreq = 0
 
     def push(self, val: int) -> None:

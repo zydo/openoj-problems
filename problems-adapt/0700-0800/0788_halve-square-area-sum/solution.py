@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def halveAreaSum(self, squares: List[List[int]]) -> float:
+    def halveAreaSum(self, squares: list[list[int]]) -> float:
         total = sum(l * l for _, _, l in squares)
         target = total / 2.0
         # area below a horizontal line is non-decreasing in its height, so

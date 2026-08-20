@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def productOfRest(self, nums: List[int]) -> List[int]:
+    def productOfRest(self, nums: list[int]) -> list[int]:
         # The product except nums[i] factors as (product of everything
         # before i) x (product of everything after i), both computable as
         # running products — no division, which zeros would break anyway.

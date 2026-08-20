@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def circleSurvivor(self, n: int, k: int) -> int:
         # Surviving friends in circle order; idx marks where the next count starts.

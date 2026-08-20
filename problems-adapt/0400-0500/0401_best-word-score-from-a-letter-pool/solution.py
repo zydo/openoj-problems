@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestWordScore(self, words: List[str], letters: List[str], score: List[int]) -> int:
+    def bestWordScore(self, words: list[str], letters: list[str], score: list[int]) -> int:
         # 26-entry count of the letter pool
         available = [0] * 26
         for ch in letters:

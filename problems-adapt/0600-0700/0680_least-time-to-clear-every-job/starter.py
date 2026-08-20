@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastTime(self, factors: List[int], jobs: int) -> int:
+    def leastTime(self, factors: list[int], jobs: int) -> int:
         raise NotImplementedError("TODO")

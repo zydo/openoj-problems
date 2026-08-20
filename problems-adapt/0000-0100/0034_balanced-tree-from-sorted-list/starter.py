@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -15,5 +12,5 @@ class TreeNode:
 
 
 class Solution:
-    def balancedTreeFromSortedList(self, head: Optional[ListNode]) -> Optional[TreeNode]:
+    def balancedTreeFromSortedList(self, head: ListNode | None) -> TreeNode | None:
         raise NotImplementedError("TODO")

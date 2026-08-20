@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def combinedMedian(self, first: List[int], second: List[int]) -> float:
+    def combinedMedian(self, first: list[int], second: list[int]) -> float:
         # Keep first as the shorter array: smaller search space, and the
         # partner cut j is guaranteed to land inside [0, n].
         if len(first) > len(second):

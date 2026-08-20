@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def reachableSumRun(self, coins: List[int]) -> int:
+    def reachableSumRun(self, coins: list[int]) -> int:
         raise NotImplementedError("TODO")

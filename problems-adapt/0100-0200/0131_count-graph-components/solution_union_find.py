@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countGraphComponents(self, n: int, edges: List[List[int]]) -> int:
+    def countGraphComponents(self, n: int, edges: list[list[int]]) -> int:
         parent = list(range(n))
 
         # Path-halving: splice every other node directly under its

@@ -1,14 +1,11 @@
-from typing import List, Optional
-
-
 class Solution:
     def leastRewriteCost(
         self,
         source: str,
         target: str,
-        original: List[str],
-        changed: List[str],
-        cost: List[int],
+        original: list[str],
+        changed: list[str],
+        cost: list[int],
     ) -> int:
         # A conversion rule is a directed edge in the 26-letter cost graph;
         # the cheapest a->b conversion is the shortest path a->b.

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestLargestGroupSum(self, nums: List[int], k: int) -> int:
+    def smallestLargestGroupSum(self, nums: list[int], k: int) -> int:
         best = [float("inf")]
         groups = [0] * k
 

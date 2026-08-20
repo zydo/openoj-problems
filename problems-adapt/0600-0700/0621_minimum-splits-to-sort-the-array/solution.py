@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumSplits(self, nums: List[int]) -> int:
+    def minimumSplits(self, nums: list[int]) -> int:
         # Splitting only shrinks numbers, so never touch the last element:
         # keep `bound` = max value allowed here given a sorted suffix.
         ops = 0

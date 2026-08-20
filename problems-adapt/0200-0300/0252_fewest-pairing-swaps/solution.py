@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestPairingSwaps(self, line: List[int]) -> int:
+    def fewestPairingSwaps(self, line: list[int]) -> int:
         line = list(line)
         n = len(line)
         pos = [0] * n

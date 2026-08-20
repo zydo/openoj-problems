@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestNestedChain(self, pairs: List[List[int]]) -> int:
+    def longestNestedChain(self, pairs: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

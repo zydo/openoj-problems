@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestSharedPrefix(self, words: List[str], k: int) -> List[int]:
+    def longestSharedPrefix(self, words: list[str], k: int) -> list[int]:
         n = len(words)
         # With one word gone there are fewer than k words, so no prefix survives.
         if n - 1 < k:

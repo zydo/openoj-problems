@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countTaskSelections(self, n: int, minPayoff: int, crew: List[int], payoff: List[int]) -> int:
+    def countTaskSelections(self, n: int, minPayoff: int, crew: list[int], payoff: list[int]) -> int:
         # dp[workers][p] = number of subsets using at most `workers` workers and
         # at least p payoff; p is capped at minPayoff.
         MOD = 10**9 + 7

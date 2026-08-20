@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def combinedMedian(self, nums1: List[int], nums2: List[int]) -> float:
+    def combinedMedian(self, nums1: list[int], nums2: list[int]) -> float:
         raise NotImplementedError("TODO")

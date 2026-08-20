@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def courseOrder(self, courseCount: int, prerequisites: List[List[int]]) -> List[int]:
+    def courseOrder(self, courseCount: int, prerequisites: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

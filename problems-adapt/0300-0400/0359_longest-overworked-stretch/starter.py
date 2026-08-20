@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestOverworkedStretch(self, hours: List[int]) -> int:
+    def longestOverworkedStretch(self, hours: list[int]) -> int:
         raise NotImplementedError("TODO")

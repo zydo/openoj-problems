@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cycleClosingEdge(self, edges: List[List[int]]) -> List[int]:
+    def cycleClosingEdge(self, edges: list[list[int]]) -> list[int]:
         parent: dict = {}
 
         def find(node: int) -> int:

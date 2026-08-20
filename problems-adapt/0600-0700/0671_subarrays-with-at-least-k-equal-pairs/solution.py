@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countEqualPairSubarrays(self, nums: List[int], k: int) -> int:
+    def countEqualPairSubarrays(self, nums: list[int], k: int) -> int:
         count = {}
         pairs = 0
         ans = 0

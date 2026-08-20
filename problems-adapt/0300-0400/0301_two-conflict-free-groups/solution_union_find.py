@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canSplitInTwo(self, n: int, conflicts: List[List[int]]) -> bool:
+    def canSplitInTwo(self, n: int, conflicts: list[list[int]]) -> bool:
         # A conflict runs both ways, so build an undirected adjacency list: the
         # unions below need, for every person, everyone that person avoids.
         adjacency = [[] for _ in range(n + 1)]

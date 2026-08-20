@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDistinctSegmentOrs(self, values: List[int]) -> int:
+    def countDistinctSegmentOrs(self, values: list[int]) -> int:
         raise NotImplementedError("TODO")

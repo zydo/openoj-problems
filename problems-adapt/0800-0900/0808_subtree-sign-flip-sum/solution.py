@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def subtreeSignFlipSum(self, edges: List[List[int]], nums: List[int], k: int) -> int:
+    def subtreeSignFlipSum(self, edges: list[list[int]], nums: list[int], k: int) -> int:
         n = len(nums)
         adj = [[] for _ in range(n)]
         for u, v in edges:

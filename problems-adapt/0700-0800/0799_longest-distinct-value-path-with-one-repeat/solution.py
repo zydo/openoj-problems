@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def longestOneRepeatPath(self, edges: List[List[int]], nums: List[int]) -> List[int]:
+    def longestOneRepeatPath(self, edges: list[list[int]], nums: list[int]) -> list[int]:
         n = len(nums)
         adj = [[] for _ in range(n)]
         for u, v, w in edges:

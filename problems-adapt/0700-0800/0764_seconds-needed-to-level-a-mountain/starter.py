@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def secondsToLevel(self, mountainHeight: int, workerTimes: List[int]) -> int:
+    def secondsToLevel(self, mountainHeight: int, workerTimes: list[int]) -> int:
         raise NotImplementedError("TODO")

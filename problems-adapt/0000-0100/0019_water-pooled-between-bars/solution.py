@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def pooled(self, height: List[int]) -> int:
+    def pooled(self, height: list[int]) -> int:
         # Water above bar i is min(tallest to its left, tallest to its right)
         # minus height[i]; two converging pointers derive both maxima on the
         # fly instead of precomputing two running-max arrays.

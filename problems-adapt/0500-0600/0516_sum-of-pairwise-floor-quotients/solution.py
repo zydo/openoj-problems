@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def sumOfFloorQuotients(self, nums: List[int]) -> int:
+    def sumOfFloorQuotients(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         if not nums:
             return 0

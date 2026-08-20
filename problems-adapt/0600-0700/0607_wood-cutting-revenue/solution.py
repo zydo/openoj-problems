@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def woodCuttingRevenue(self, m: int, n: int, prices: List[List[int]]) -> int:
+    def woodCuttingRevenue(self, m: int, n: int, prices: list[list[int]]) -> int:
         # Dense price table: 0 where a shape is unsold, max on duplicates.
         price = [[0] * (n + 1) for _ in range(m + 1)]
         for h, w, p in prices:

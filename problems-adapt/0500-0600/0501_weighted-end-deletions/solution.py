@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxWeightedEndScore(self, nums: List[int], weights: List[int]) -> int:
+    def maxWeightedEndScore(self, nums: list[int], weights: list[int]) -> int:
         m = len(weights)
         n = len(nums)
         NEG_INF = float("-inf")

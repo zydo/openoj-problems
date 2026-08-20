@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestPairScore(self, points: List[List[int]], k: int) -> int:
+    def bestPairScore(self, points: list[list[int]], k: int) -> int:
         raise NotImplementedError("TODO")

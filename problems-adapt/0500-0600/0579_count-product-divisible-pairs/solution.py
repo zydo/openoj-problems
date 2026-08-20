@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from math import gcd
 
 
 class Solution:
-    def countProductDivisiblePairs(self, nums: List[int], k: int) -> int:
+    def countProductDivisiblePairs(self, nums: list[int], k: int) -> int:
         # Bucket by g = gcd(num, k): the gcd strips every factor of num
         # irrelevant to divisibility by k, and num_i * num_j is divisible
         # by k exactly when (gi * gj) % k == 0. Each g divides k, so there

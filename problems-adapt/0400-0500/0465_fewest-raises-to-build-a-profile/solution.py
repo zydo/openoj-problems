@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestRaises(self, heights: List[int]) -> int:
+    def fewestRaises(self, heights: list[int]) -> int:
         # Each operation is one horizontal layer of the final profile, and the
         # first heights[0] layers must all span index 0.
         ops = heights[0]

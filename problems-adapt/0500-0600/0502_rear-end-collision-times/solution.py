@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def collisionTimes(self, cars: List[List[int]]) -> List[float]:
+    def collisionTimes(self, cars: list[list[int]]) -> list[float]:
         n = len(cars)
         answer = [-1.0] * n
         # Right-to-left scan; the stack holds cars still free-wheeling, the

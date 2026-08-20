@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def medianDistinctCount(self, nums: List[int]) -> int:
+    def medianDistinctCount(self, nums: list[int]) -> int:
         n = len(nums)
         length = n * (n + 1) // 2
         # Lower median of the virtual distinct-count array = rank (length + 1) // 2.

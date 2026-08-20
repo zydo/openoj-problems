@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def pairSum(self, nums: List[int], target: int) -> List[int]:
+    def pairSum(self, nums: list[int], target: int) -> list[int]:
         # Hash map from value -> index: one pass answers "seen the complement?"
         # in O(1), replacing the nested brute-force scan.
         seen = {}

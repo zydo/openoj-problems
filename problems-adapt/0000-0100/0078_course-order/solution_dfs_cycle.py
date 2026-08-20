@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def courseOrder(self, courseCount: int, prerequisites: List[List[int]]) -> List[int]:
+    def courseOrder(self, courseCount: int, prerequisites: list[list[int]]) -> list[int]:
         # A valid order is exactly a topological ordering of the graph where
         # each pair [course, prereq] is the edge prereq -> course.
         adjacency = [[] for _ in range(courseCount)]

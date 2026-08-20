@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestCourseRounds(self, n: int, precedence: List[List[int]]) -> int:
+    def fewestCourseRounds(self, n: int, precedence: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

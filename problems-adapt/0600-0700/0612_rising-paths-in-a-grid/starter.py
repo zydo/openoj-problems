@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countRisingPaths(self, grid: List[List[int]]) -> int:
+    def countRisingPaths(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

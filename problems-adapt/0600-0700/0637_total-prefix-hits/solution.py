@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def totalPrefixHits(self, words: List[str]) -> List[int]:
+    def totalPrefixHits(self, words: list[str]) -> list[int]:
         # one shared trie: a node's "#" counter equals the hit count of its prefix
         root = {}
         for word in words:

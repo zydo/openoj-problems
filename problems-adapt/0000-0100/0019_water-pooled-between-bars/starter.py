@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def pooled(self, height: List[int]) -> int:
+    def pooled(self, height: list[int]) -> int:
         raise NotImplementedError("TODO")

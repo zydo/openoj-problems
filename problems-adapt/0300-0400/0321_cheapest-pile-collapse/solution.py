@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestPileCollapse(self, piles: List[int], k: int) -> int:
+    def cheapestPileCollapse(self, piles: list[int], k: int) -> int:
         n = len(piles)
         # each merge replaces k piles with one (count drops by k - 1), so
         # reaching a single pile requires (k - 1) | (n - 1)

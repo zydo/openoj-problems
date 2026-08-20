@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def minCoinsForAllFruits(self, prices: List[int]) -> int:
+    def minCoinsForAllFruits(self, prices: list[int]) -> int:
         n = len(prices)
         dp = [0] * (n + 1)
         dq = deque()

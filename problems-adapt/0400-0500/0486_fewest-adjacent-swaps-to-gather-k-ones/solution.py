@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestAdjacentSwaps(self, nums: List[int], k: int) -> int:
+    def fewestAdjacentSwaps(self, nums: list[int], k: int) -> int:
         if k <= 1:
             return 0
         pos = [i for i, v in enumerate(nums) if v == 1]

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def leastDamage(self, power: int, damage: List[int], health: List[int]) -> int:
+    def leastDamage(self, power: int, damage: list[int], health: list[int]) -> int:
         n = len(damage)
         # Enemy i needs ceil(health/power) seconds of focused attack to die.
         times = [(h + power - 1) // power for h in health]

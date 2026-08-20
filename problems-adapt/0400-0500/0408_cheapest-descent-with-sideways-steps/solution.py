@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestDescent(self, grid: List[List[int]]) -> int:
+    def cheapestDescent(self, grid: list[list[int]]) -> int:
         n = len(grid)
         prev = list(grid[0])
         for i in range(1, n):

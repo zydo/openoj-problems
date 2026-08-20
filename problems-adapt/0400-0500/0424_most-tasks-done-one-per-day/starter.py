@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxTasks(self, windows: List[List[int]]) -> int:
+    def maxTasks(self, windows: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

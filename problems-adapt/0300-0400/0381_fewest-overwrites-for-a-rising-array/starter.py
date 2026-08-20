@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestOverwrites(self, values: List[int], pool: List[int]) -> int:
+    def fewestOverwrites(self, values: list[int], pool: list[int]) -> int:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDistinctUntilRepeat(self, edges: List[int]) -> List[int]:
+    def countDistinctUntilRepeat(self, edges: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

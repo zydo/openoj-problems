@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def medianAcrossSortedRows(self, grid: List[List[int]]) -> int:
+    def medianAcrossSortedRows(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stonePilesGameIII(self, piles: List[int]) -> str:
+    def stonePilesGameIII(self, piles: list[int]) -> str:
         raise NotImplementedError("TODO")

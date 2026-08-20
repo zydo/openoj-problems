@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestPassPlan(self, days: List[int], prices: List[int]) -> int:
+    def cheapestPassPlan(self, days: list[int], prices: list[int]) -> int:
         raise NotImplementedError("TODO")

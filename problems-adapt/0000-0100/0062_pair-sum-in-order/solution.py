@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def pairSumInOrder(self, nums: List[int], target: int) -> List[int]:
+    def pairSumInOrder(self, nums: list[int], target: int) -> list[int]:
         left, right = 0, len(nums) - 1
         while left < right:
             total = nums[left] + nums[right]

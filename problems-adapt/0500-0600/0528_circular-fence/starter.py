@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fenceCircle(self, positions: List[List[int]]) -> List[float]:
+    def fenceCircle(self, positions: list[list[int]]) -> list[float]:
         raise NotImplementedError("TODO")

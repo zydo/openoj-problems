@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from math import gcd
 
 
 class Solution:
-    def equalizeWindowSums(self, arr: List[int], k: int) -> int:
+    def equalizeWindowSums(self, arr: list[int], k: int) -> int:
         n = len(arr)
         # Adjacent windows of length k must agree, forcing arr[(i+k) mod n] =
         # arr[i]: stepping by k around the cycle visits exactly one residue

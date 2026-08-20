@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def splitByGreater(self, nums: List[int]) -> List[int]:
+    def splitByGreater(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

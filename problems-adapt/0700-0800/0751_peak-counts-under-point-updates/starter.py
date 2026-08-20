@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countPeaks(self, nums: List[int], queries: List[List[int]]) -> List[int]:
+    def countPeaks(self, nums: list[int], queries: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

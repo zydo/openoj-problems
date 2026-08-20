@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxDisjointTotal(self, n: int, segments: List[List[int]]) -> int:
+    def maxDisjointTotal(self, n: int, segments: list[list[int]]) -> int:
         # Non-overlapping segments make this weighted interval scheduling on a
         # line. Bucket segments by end position — the bucket array itself provides
         # ordering by end position, so no sorting is needed.

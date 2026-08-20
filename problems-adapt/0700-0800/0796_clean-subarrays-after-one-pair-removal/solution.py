@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cleanSubarrays(self, n: int, forbiddenPairs: List[List[int]]) -> int:
+    def cleanSubarrays(self, n: int, forbiddenPairs: list[list[int]]) -> int:
         # bucket each pair at its smaller element; g[a] collects the larger endpoints
         g = [[] for _ in range(n + 1)]
         for a, b in forbiddenPairs:

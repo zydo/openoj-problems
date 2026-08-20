@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def deepestGrouping(self, n: int, edges: List[List[int]]) -> int:
+    def deepestGrouping(self, n: int, edges: list[list[int]]) -> int:
         graph = [[] for _ in range(n + 1)]
         for a, b in edges:
             graph[a].append(b)

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostValue(self, items: List[List[int]], capacity: int) -> float:
+    def mostValue(self, items: list[list[int]], capacity: int) -> float:
         # Divisibility makes this fractional knapsack: moving a unit of weight
         # from a cheaper to a dearer value-per-weight item never lowers the
         # total, so a greedy fill in unit-value order is optimal.

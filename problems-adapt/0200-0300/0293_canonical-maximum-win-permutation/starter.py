@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canonicalWinningPermutation(self, available: List[int], opponents: List[int]) -> List[int]:
+    def canonicalWinningPermutation(self, available: list[int], opponents: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

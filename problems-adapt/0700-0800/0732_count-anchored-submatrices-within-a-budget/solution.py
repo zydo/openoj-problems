@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countAnchored(self, grid: List[List[int]], k: int) -> int:
+    def countAnchored(self, grid: list[list[int]], k: int) -> int:
         rows, cols = len(grid), len(grid[0])
         # col_sums[j] accumulates column j over rows 0..i, so a submatrix
         # anchored at (0, 0) is identified by its bottom-right corner (i, j).

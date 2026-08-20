@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def bestBottleneckRoute(self, edges: List[List[int]], available: List[bool], k: int) -> int:
+    def bestBottleneckRoute(self, edges: list[list[int]], available: list[bool], k: int) -> int:
         n = len(available)
         adj = [[] for _ in range(n)]
         indeg = [0] * n

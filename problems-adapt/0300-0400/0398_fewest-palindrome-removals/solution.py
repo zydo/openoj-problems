@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestPalindromeRemovals(self, arr: List[int]) -> int:
+    def fewestPalindromeRemovals(self, arr: list[int]) -> int:
         n = len(arr)
         if n == 0:
             return 0

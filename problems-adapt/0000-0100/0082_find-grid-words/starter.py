@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findGridWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+    def findGridWords(self, board: list[list[str]], words: list[str]) -> list[str]:
         raise NotImplementedError("TODO")

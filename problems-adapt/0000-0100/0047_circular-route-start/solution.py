@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def circularRouteStart(self, supply: List[int], cost: List[int]) -> int:
+    def circularRouteStart(self, supply: list[int], cost: list[int]) -> int:
         total = 0
         tank = 0
         start = 0

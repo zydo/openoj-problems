@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumRoutePeak(self, heights: List[List[int]]) -> int:
+    def minimumRoutePeak(self, heights: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

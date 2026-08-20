@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestMaxWorkload(self, jobs: List[int], k: int) -> int:
+    def smallestMaxWorkload(self, jobs: list[int], k: int) -> int:
         raise NotImplementedError("TODO")

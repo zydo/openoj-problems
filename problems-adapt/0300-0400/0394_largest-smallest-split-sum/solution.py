@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSmallestSplit(self, nums: List[int], k: int) -> int:
+    def largestSmallestSplit(self, nums: list[int], k: int) -> int:
         def pieces_at_least(target):
             # Greedy check: cut as soon as the running sum reaches the target.
             # Cutting earlier never hurts — a delay only feeds an already-satisfied

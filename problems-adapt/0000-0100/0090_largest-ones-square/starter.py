@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestOnesSquare(self, matrix: List[List[str]]) -> int:
+    def largestOnesSquare(self, matrix: list[list[str]]) -> int:
         raise NotImplementedError("TODO")

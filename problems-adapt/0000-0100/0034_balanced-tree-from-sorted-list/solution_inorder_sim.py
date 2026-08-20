@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -15,7 +12,7 @@ class TreeNode:
 
 
 class Solution:
-    def balancedTreeFromSortedList(self, head: Optional[ListNode]) -> Optional[TreeNode]:
+    def balancedTreeFromSortedList(self, head: ListNode | None) -> TreeNode | None:
         # One sizing pass first: the recursion needs each subtree's node
         # count to pick the same middles the midpoint walk would.
         count = 0
@@ -27,7 +24,7 @@ class Solution:
         # nodes exactly where an inorder insertion would place them.
         current = head
 
-        def build(lo: int, hi: int) -> Optional[TreeNode]:
+        def build(lo: int, hi: int) -> TreeNode | None:
             nonlocal current
             if lo >= hi:
                 return None

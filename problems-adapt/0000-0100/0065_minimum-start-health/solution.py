@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumStartHealth(self, grid: List[List[int]]) -> int:
+    def minimumStartHealth(self, grid: list[list[int]]) -> int:
         m = len(grid)
         n = len(grid[0])
         INF = float("inf")

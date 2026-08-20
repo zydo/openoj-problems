@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nearestSourceDistances(self, grid: List[List[int]]) -> List[List[int]]:
+    def nearestSourceDistances(self, grid: list[list[int]]) -> list[list[int]]:
         from collections import deque
 
         m, n = len(grid), len(grid[0])

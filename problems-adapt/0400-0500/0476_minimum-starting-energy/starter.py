@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumEnergy(self, tasks: List[List[int]]) -> int:
+    def minimumEnergy(self, tasks: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

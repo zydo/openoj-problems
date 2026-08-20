@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def hasEqualSumSplit(self, nums: List[int]) -> bool:
+    def hasEqualSumSplit(self, nums: list[int]) -> bool:
         raise NotImplementedError("TODO")

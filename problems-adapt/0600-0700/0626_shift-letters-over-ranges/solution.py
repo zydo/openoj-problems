@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shiftLettersOverRanges(self, s: str, shifts: List[List[int]]) -> str:
+    def shiftLettersOverRanges(self, s: str, shifts: list[list[int]]) -> str:
         n = len(s)
         # Shifts commute, so only the net shift per position matters.
         # Extra slot at n keeps every end+1 marker in bounds.

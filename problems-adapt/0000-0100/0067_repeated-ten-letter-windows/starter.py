@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findRepeatedWindows(self, s: str) -> List[str]:
+    def findRepeatedWindows(self, s: str) -> list[str]:
         raise NotImplementedError("TODO")

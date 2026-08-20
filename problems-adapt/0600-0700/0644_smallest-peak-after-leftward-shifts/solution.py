@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestPeakAfterLeftShifts(self, nums: List[int]) -> int:
+    def smallestPeakAfterLeftShifts(self, nums: list[int]) -> int:
         # Value only moves leftward, so each prefix's max is at least its
         # ceiling average; the max over all prefixes is also achievable by
         # balancing each prefix to that ceiling.

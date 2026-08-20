@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestNodeSum(self, nums: List[int], k: int, edges: List[List[int]]) -> int:
+    def largestNodeSum(self, nums: list[int], k: int, edges: list[list[int]]) -> int:
         # Each operation XORs two endpoints, and tree connectivity lets any
         # even-sized subset of nodes be flipped, so only the parity of the
         # pick matters. delta = gain from flipping one node.

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestBricksSplit(self, wall: List[List[int]]) -> int:
+    def fewestBricksSplit(self, wall: list[list[int]]) -> int:
         edge_counts = {}
         # Flip the question: a line at position p crosses a row unless that
         # row has a brick edge at p, so count edges per position.

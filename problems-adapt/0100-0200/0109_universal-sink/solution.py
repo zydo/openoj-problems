@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findUniversalSink(self, graph: List[List[int]]) -> int:
+    def findUniversalSink(self, graph: list[list[int]]) -> int:
         n = len(graph)
         # Elimination pass: a candidate that knows nobody else.
         candidate = 0

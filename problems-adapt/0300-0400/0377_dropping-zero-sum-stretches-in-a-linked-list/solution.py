@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -8,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def dropZeroSumStretches(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def dropZeroSumStretches(self, head: ListNode | None) -> ListNode | None:
         values = []
         node = head
         while node is not None:

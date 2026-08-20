@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def rollingWindowMedians(self, nums: List[int], k: int) -> List[float]:
+    def rollingWindowMedians(self, nums: list[int], k: int) -> list[float]:
         from bisect import bisect_left, insort
 
         # One sorted list mirrors the window: binary insertion keeps it

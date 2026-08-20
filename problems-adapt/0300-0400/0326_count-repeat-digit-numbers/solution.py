@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countRepeatDigitNumbers(self, n: int) -> int:
         # Complement counting: tally numbers in [1, n] with all-distinct digits.

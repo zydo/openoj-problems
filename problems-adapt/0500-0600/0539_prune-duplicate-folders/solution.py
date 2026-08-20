@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def pruneDuplicateFolders(self, paths: List[List[str]]) -> List[List[str]]:
+    def pruneDuplicateFolders(self, paths: list[list[str]]) -> list[list[str]]:
         root = {"children": {}, "id": 0}
         next_id = 1
         for path in paths:

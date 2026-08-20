@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def countShortestRoutes(self, n: int, roads: List[List[int]]) -> int:
+    def countShortestRoutes(self, n: int, roads: list[list[int]]) -> int:
         MOD = 10**9 + 7
         adj = [[] for _ in range(n)]
         for u, v, t in roads:

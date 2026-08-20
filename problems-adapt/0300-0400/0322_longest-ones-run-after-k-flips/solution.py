@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestOnesRunAfterKFlips(self, nums: List[int], k: int) -> int:
+    def longestOnesRunAfterKFlips(self, nums: list[int], k: int) -> int:
         # flipping <= k zeros == longest window holding <= k zeros
         # (nothing is actually flipped)
         left = 0

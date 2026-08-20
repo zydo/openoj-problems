@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def countNoAdjacentOnes(self, n: int) -> int:
         s = bin(n)[2:]

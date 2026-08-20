@@ -1,10 +1,9 @@
-from typing import List, Optional
 from fractions import Fraction
 from math import ceil
 
 
 class Solution:
-    def minRouteSpeed(self, dist: List[int], hour: float) -> int:
+    def minRouteSpeed(self, dist: list[int], hour: float) -> int:
         n = len(dist)
         # Fraction(str(hour)) reads the decimal representation, so every
         # deadline comparison below is an exact rational, not a binary float.

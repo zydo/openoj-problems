@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def treeCentroids(self, n: int, edges: List[List[int]]) -> List[int]:
+    def treeCentroids(self, n: int, edges: list[list[int]]) -> list[int]:
         # A one- or two-node tree is its own center; the general loop would
         # also mishandle two nodes that are each other's leaves.
         if n <= 2:

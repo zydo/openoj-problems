@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countClosedGridIslands(self, grid: List[List[int]]) -> int:
+    def countClosedGridIslands(self, grid: list[list[int]]) -> int:
         rows, cols = len(grid), len(grid[0])
         dirs = ((1, 0), (-1, 0), (0, 1), (0, -1))
 

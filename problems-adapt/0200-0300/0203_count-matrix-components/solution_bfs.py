@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def countComponents(self, adjacency: List[List[int]]) -> int:
+    def countComponents(self, adjacency: list[list[int]]) -> int:
         n = len(adjacency)
         visited = [False] * n
         components = 0

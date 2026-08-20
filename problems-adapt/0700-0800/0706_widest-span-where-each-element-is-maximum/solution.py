@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def widestSpans(self, nums: List[int]) -> List[int]:
+    def widestSpans(self, nums: list[int]) -> list[int]:
         n = len(nums)
         left = [0] * n  # nearest index with a greater element on the left, +1
         stack = []

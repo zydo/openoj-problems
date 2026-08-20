@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestPath(self, rows: List[List[int]]) -> int:
+    def cheapestPath(self, rows: list[list[int]]) -> int:
         # dp[i] = minimum path sum from column i of the current row to the
         # bottom. The last row seeds it directly: a path starting there is
         # just that cell.

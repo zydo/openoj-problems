@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def smallestLetterRewrite(self, s1: str, s2: str, text: str) -> str:
         parent = list(range(26))

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestProduct(self, nums: List[int], k: int) -> int:
+    def largestProduct(self, nums: list[int], k: int) -> int:
         MOD = 10**9 + 7
         n = len(nums)
         maxv = max(nums)

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countDigitOccurrences(self, d: int, low: int, high: int) -> int:
         # Prefix-count reduction: occurrences in [low, high] = f(high) - f(low-1).

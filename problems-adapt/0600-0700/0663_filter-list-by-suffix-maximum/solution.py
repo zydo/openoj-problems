@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -8,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def filterBySuffixMax(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def filterBySuffixMax(self, head: ListNode | None) -> ListNode | None:
         # Reverse the list, then keep every node whose value is >= the max
         # seen so far (i.e. the max of the suffix in the original order),
         # building the result (back in original order) as we go.

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def busiestRoom(self, n: int, meetings: List[List[int]]) -> int:
+    def busiestRoom(self, n: int, meetings: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

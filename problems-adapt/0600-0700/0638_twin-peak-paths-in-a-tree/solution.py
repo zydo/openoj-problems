@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countTwinPeakPaths(self, vals: List[int], edges: List[List[int]]) -> int:
+    def countTwinPeakPaths(self, vals: list[int], edges: list[list[int]]) -> int:
         n = len(vals)
         parent = list(range(n))
         size = [1] * n

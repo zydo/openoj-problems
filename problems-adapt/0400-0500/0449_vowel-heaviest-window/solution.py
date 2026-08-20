@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def vowelHeaviestWindow(self, s: str, k: int) -> int:
         vowels = set("aeiou")

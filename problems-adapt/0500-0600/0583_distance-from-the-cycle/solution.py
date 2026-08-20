@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def distanceFromCycle(self, n: int, edges: List[List[int]]) -> List[int]:
+    def distanceFromCycle(self, n: int, edges: list[list[int]]) -> list[int]:
         adj = [[] for _ in range(n)]
         degree = [0] * n
         for a, b in edges:

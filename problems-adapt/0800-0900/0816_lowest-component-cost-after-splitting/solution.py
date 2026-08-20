@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def lowestSplitCost(self, n: int, edges: List[List[int]], k: int) -> int:
+    def lowestSplitCost(self, n: int, edges: list[list[int]], k: int) -> int:
         # k >= n lets every node sit alone: no cut is ever needed.
         if k >= n:
             return 0

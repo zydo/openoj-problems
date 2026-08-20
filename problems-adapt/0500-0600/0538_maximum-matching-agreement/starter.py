@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxMatchingAgreement(self, students: List[List[int]], mentors: List[List[int]]) -> int:
+    def maxMatchingAgreement(self, students: list[list[int]], mentors: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

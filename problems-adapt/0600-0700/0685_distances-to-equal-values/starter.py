@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def equalValueDistances(self, nums: List[int]) -> List[int]:
+    def equalValueDistances(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestOnesSquare(self, matrix: List[List[str]]) -> int:
+    def largestOnesSquare(self, matrix: list[list[str]]) -> int:
         m = len(matrix)
         n = len(matrix[0])
         best = 0

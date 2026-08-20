@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDominatedPoints(self, points: List[List[int]]) -> int:
+    def countDominatedPoints(self, points: list[list[int]]) -> int:
         # x descending; y ASCENDING within equal x so that equal-x points
         # (which can never dominate each other) only ever meet a running
         # max from strictly larger-x groups.

@@ -1,6 +1,3 @@
-from typing import List, Tuple
-
-
 class PriceSpanTracker:
     """Monotonic stack of (price, span) with strictly decreasing prices.
 
@@ -9,7 +6,7 @@ class PriceSpanTracker:
     """
 
     def __init__(self) -> None:
-        self.stack: List[Tuple[int, int]] = []
+        self.stack: list[tuple[int, int]] = []
 
     def record(self, price: int) -> int:
         span = 1

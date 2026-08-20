@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def kthSingleCoinAmount(self, coins: List[int], k: int) -> int:
+    def kthSingleCoinAmount(self, coins: list[int], k: int) -> int:
         def gcd(a, b):
             while b:
                 a, b = b, a % b

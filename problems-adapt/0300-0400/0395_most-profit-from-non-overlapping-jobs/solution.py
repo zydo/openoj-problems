@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxNonOverlappingProfit(self, startTime: List[int], endTime: List[int], profit: List[int]) -> int:
+    def maxNonOverlappingProfit(self, startTime: list[int], endTime: list[int], profit: list[int]) -> int:
         from bisect import bisect_right
 
         # Weighted interval scheduling: pack as (end, start, profit) so jobs

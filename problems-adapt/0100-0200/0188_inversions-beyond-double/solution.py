@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def countInversionsBeyondDouble(self, nums: List[int]) -> int:
+    def countInversionsBeyondDouble(self, nums: list[int]) -> int:
         def merge_count(arr):
             if len(arr) <= 1:
                 return arr, 0

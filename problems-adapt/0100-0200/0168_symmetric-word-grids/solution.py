@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def symmetricWordGrids(self, words: List[str]) -> List[List[str]]:
+    def symmetricWordGrids(self, words: list[str]) -> list[list[str]]:
         n = len(words[0])
         # Map every prefix of every word (empty prefix included) to the words
         # sharing it, so each search step is a single lookup.

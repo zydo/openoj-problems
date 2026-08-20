@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastMovesToSort(self, nums: List[int]) -> int:
+    def leastMovesToSort(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

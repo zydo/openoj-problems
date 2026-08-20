@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestWordChain(self, words: List[str]) -> int:
+    def longestWordChain(self, words: list[str]) -> int:
         # Process shortest first; a word's chain extends from any predecessor
         # formed by deleting one character.
         dp = {}

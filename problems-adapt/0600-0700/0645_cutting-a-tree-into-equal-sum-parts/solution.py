@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def maxEqualSumCuts(self, nums: List[int], edges: List[List[int]]) -> int:
+    def maxEqualSumCuts(self, nums: list[int], edges: list[list[int]]) -> int:
         n = len(nums)
         adjacency = [[] for _ in range(n)]
         for a, b in edges:

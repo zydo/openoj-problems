@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def sortableBySharedFactorSwaps(self, nums: List[int]) -> bool:
+    def sortableBySharedFactorSwaps(self, nums: list[int]) -> bool:
         MX = 100001
         # Smallest-prime-factor sieve: spf[v] lets each value be split into
         # its distinct primes by repeated division.

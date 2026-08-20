@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def allIndicesReachable(self, nums: List[int]) -> bool:
+    def allIndicesReachable(self, nums: list[int]) -> bool:
         n = len(nums)
         if n == 1:
             return True

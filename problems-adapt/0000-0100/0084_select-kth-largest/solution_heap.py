@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def selectKthLargest(self, nums: List[int], k: int) -> int:
+    def selectKthLargest(self, nums: list[int], k: int) -> int:
         # A min-heap of size k holds the k largest values seen so far;
         # its root is the smallest of them — the current kth largest.
         heap = nums[:k]

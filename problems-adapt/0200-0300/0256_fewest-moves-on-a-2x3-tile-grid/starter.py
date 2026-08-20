@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumTileGridMoves(self, grid: List[List[int]]) -> int:
+    def minimumTileGridMoves(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

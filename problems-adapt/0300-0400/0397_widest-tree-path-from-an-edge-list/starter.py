@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def widestTreePathFromEdges(self, edges: List[List[int]]) -> int:
+    def widestTreePathFromEdges(self, edges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

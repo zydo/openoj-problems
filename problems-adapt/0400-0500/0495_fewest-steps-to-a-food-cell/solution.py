@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def stepsToFood(self, grid: List[List[str]]) -> int:
+    def stepsToFood(self, grid: list[list[str]]) -> int:
         m, n = len(grid), len(grid[0])
         start = None
         for i in range(m):

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestRunSumAfterEachRemoval(self, nums: List[int], removeQueries: List[int]) -> List[int]:
+    def largestRunSumAfterEachRemoval(self, nums: list[int], removeQueries: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

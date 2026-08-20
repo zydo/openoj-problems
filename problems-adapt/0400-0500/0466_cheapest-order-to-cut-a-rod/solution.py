@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastCost(self, n: int, cuts: List[int]) -> int:
+    def leastCost(self, n: int, cuts: list[int]) -> int:
         # Sort the cuts together with the two stick ends: the cutting order is
         # free while the input order is not, and the sentinel endpoints make
         # the outermost segments uniform.

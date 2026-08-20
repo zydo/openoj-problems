@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def lookup(self, nums: List[int], target: int) -> int:
+    def lookup(self, nums: list[int], target: int) -> int:
         # Invariant binary search can still ride on: inside any window
         # [lo, hi], the midpoint splits it into two halves and at least one
         # half is properly sorted.

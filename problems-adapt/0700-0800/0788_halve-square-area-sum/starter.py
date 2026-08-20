@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def halveAreaSum(self, squares: List[List[int]]) -> float:
+    def halveAreaSum(self, squares: list[list[int]]) -> float:
         raise NotImplementedError("TODO")

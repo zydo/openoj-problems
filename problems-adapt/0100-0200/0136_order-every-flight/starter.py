@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def orderFlights(self, flights: List[List[str]]) -> List[str]:
+    def orderFlights(self, flights: list[list[str]]) -> list[str]:
         raise NotImplementedError("TODO")

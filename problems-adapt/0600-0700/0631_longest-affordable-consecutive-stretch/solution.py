@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def longestAffordableStretch(self, startCosts: List[int], usageCosts: List[int], budget: int) -> int:
+    def longestAffordableStretch(self, startCosts: list[int], usageCosts: list[int], budget: int) -> int:
         n = len(startCosts)
         dq = deque()  # indices with decreasing startCosts
         run = 0

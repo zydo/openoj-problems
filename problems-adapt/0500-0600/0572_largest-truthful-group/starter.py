@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostTruthful(self, statements: List[List[int]]) -> int:
+    def mostTruthful(self, statements: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

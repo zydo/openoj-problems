@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def minSharedRouteWeight(self, n: int, edges: List[List[int]], src1: int, src2: int, dest: int) -> int:
+    def minSharedRouteWeight(self, n: int, edges: list[list[int]], src1: int, src2: int, dest: int) -> int:
         def dijkstra(adj, src):
             INF = float("inf")
             dist = [INF] * n

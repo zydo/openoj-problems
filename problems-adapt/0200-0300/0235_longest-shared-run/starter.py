@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestSharedRun(self, first: List[int], second: List[int]) -> int:
+    def longestSharedRun(self, first: list[int], second: list[int]) -> int:
         raise NotImplementedError("TODO")

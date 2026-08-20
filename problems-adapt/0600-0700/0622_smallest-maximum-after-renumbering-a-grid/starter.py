@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def renumberGrid(self, grid: List[List[int]]) -> List[List[int]]:
+    def renumberGrid(self, grid: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

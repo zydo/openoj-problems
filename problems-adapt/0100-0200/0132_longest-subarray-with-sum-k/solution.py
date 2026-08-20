@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestSubarrayWithSum(self, nums: List[int], k: int) -> int:
+    def longestSubarrayWithSum(self, nums: list[int], k: int) -> int:
         # first[prefix] = earliest index that prefix value occurred; the
         # seed 0: -1 lets a subarray starting at index 0 be found.
         first = {0: -1}

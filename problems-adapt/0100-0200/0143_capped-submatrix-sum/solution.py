@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cappedSubmatrixSum(self, matrix: List[List[int]], k: int) -> int:
+    def cappedSubmatrixSum(self, matrix: list[list[int]], k: int) -> int:
         import bisect
 
         m = len(matrix)

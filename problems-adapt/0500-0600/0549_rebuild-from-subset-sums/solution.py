@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import Counter
 
 
 class Solution:
-    def rebuildFromSubsetSums(self, n: int, sums: List[int]) -> List[int]:
+    def rebuildFromSubsetSums(self, n: int, sums: list[int]) -> list[int]:
         sums = sorted(sums)
         res = []
         while len(sums) > 1:

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestAverageAtLeastK(self, nums: List[int], k: int) -> float:
+    def bestAverageAtLeastK(self, nums: list[int], k: int) -> float:
         raise NotImplementedError("TODO")

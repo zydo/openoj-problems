@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxWindowMinima(self, nums: List[int]) -> List[int]:
+    def maxWindowMinima(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

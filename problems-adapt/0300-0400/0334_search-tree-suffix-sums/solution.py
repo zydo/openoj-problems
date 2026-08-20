@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def searchTreeSuffixSums(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def searchTreeSuffixSums(self, root: TreeNode | None) -> TreeNode | None:
         # Running sum of every value the reverse in-order has visited.
         total = 0
 

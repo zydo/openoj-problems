@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def discountedPrices(self, prices: List[int]) -> List[int]:
+    def discountedPrices(self, prices: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

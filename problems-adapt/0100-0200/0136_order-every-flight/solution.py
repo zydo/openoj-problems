@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import defaultdict
 
 
 class Solution:
-    def orderFlights(self, flights: List[List[str]]) -> List[str]:
+    def orderFlights(self, flights: list[list[str]]) -> list[str]:
         graph = defaultdict(list)
         for departure, arrival in flights:
             graph[departure].append(arrival)

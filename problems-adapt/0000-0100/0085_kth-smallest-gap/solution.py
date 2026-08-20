@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def kthSmallestGap(self, nums: List[int], k: int) -> int:
+    def kthSmallestGap(self, nums: list[int], k: int) -> int:
         nums = sorted(nums)
         n = len(nums)
 

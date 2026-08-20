@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def permutationRank(self, perm: List[int]) -> int:
+    def permutationRank(self, perm: list[int]) -> int:
         raise NotImplementedError("TODO")

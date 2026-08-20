@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def runningTotals(self, bits: List[int], values: List[int], queries: List[List[int]]) -> List[int]:
+    def runningTotals(self, bits: list[int], values: list[int], queries: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

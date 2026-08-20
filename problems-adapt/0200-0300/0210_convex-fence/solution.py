@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def fencePoints(self, posts: List[List[int]]) -> List[List[int]]:
+    def fencePoints(self, posts: list[list[int]]) -> list[list[int]]:
         posts = sorted(set((x, y) for x, y in posts))
         if len(posts) <= 1:
             return [list(p) for p in posts]

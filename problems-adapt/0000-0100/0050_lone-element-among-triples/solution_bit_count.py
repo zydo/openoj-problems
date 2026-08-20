@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def loneElementAmongTriples(self, nums: List[int]) -> int:
+    def loneElementAmongTriples(self, nums: list[int]) -> int:
         result = 0
         for i in range(32):
             # Triples contribute 0 or 3 set bits at position i (a multiple of

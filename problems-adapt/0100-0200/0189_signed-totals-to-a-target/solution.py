@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSignedTotals(self, nums: List[int], target: int) -> int:
+    def countSignedTotals(self, nums: list[int], target: int) -> int:
         # dp maps each reachable running sum to the number of sign
         # assignments producing it; one way to stand at 0 before any number.
         dp = {0: 1}

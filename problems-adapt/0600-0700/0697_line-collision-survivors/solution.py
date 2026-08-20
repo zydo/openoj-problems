@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def survivorHealths(self, positions: List[int], healths: List[int], directions: str) -> List[int]:
+    def survivorHealths(self, positions: list[int], healths: list[int], directions: str) -> list[int]:
         healths = list(healths)
         n = len(positions)
         order = sorted(range(n), key=lambda i: positions[i])

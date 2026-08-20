@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumStartHealth(self, grid: List[List[int]]) -> int:
+    def minimumStartHealth(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

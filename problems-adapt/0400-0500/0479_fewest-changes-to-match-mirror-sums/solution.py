@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestChanges(self, nums: List[int], limit: int) -> int:
+    def fewestChanges(self, nums: list[int], limit: int) -> int:
         n = len(nums)
         # Difference array over candidate target sums t in [2, 2*limit]:
         # each mirror pair's cost curve becomes range updates.

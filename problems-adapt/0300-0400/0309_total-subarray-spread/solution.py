@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def totalSubarraySpread(self, nums: List[int]) -> int:
+    def totalSubarraySpread(self, nums: list[int]) -> int:
         n = len(nums)
         total = 0
         for i in range(n):

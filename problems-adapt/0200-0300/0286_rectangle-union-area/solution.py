@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rectangleUnionArea(self, rectangles: List[List[int]]) -> int:
+    def rectangleUnionArea(self, rectangles: list[list[int]]) -> int:
         MOD = 10**9 + 7
         # Coordinate compression: with at most 2R distinct values per
         # axis, cell boundaries are exactly the rectangle edges, so

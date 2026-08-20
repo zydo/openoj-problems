@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSetBitPairs(self, nums: List[int], k: int) -> int:
+    def countSetBitPairs(self, nums: list[int], k: int) -> int:
         # identity: popcount(a|b) + popcount(a&b) = popcount(a) + popcount(b),
         # so the pair condition depends only on the two individual bit counts
         counts = {}

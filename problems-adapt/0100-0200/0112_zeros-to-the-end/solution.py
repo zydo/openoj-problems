@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def zerosToEnd(self, nums: List[int]) -> List[int]:
+    def zerosToEnd(self, nums: list[int]) -> list[int]:
         # Invariant: nums[:slow] is the stabilized prefix of non-zero values
         # in their original order; nums[slow:fast] holds only zeros.
         slow = 0

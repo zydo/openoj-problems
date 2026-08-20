@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import random
 
 
 class Solution:
-    def selectKthLargest(self, nums: List[int], k: int) -> int:
+    def selectKthLargest(self, nums: list[int], k: int) -> int:
         # The kth largest sits at index n - k of the ascending-sorted
         # array; quickselect homes in on that target index.
         target = len(nums) - k

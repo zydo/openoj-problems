@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def allBalancedBracketStrings(self, n: int) -> List[str]:
+    def allBalancedBracketStrings(self, n: int) -> list[str]:
         result = []
 
         def backtrack(current, open_count, close_count):

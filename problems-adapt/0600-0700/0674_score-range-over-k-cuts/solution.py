@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def scoreRange(self, weights: List[int], k: int) -> int:
+    def scoreRange(self, weights: list[int], k: int) -> int:
         # One piece means no cuts — a correctness guard, not an optimization:
         # the general formula's slicing does not describe the k = 1 case.
         if k == 1:

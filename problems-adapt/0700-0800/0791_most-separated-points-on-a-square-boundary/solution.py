@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostSeparated(self, side: int, points: List[List[int]], k: int) -> int:
+    def mostSeparated(self, side: int, points: list[list[int]], k: int) -> int:
         L = 4 * side
 
         def perimeter(x, y):

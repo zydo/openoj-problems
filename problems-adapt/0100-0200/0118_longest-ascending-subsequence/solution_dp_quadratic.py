@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestAscendingLength(self, nums: List[int]) -> int:
+    def longestAscendingLength(self, nums: list[int]) -> int:
         n = len(nums)
         # dp[i] = length of the longest ascending subsequence ending
         # exactly at i; the global answer is the max over all endings.

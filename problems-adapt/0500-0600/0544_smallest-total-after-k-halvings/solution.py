@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def smallestTotalAfterKHalvings(self, values: List[int], k: int) -> int:
+    def smallestTotalAfterKHalvings(self, values: list[int], k: int) -> int:
         # Max-heap via negated values. The removal floor(p/2) is
         # non-decreasing in p, so always halving the current max is optimal:
         # any operation on a smaller pile could be swapped to the larger one

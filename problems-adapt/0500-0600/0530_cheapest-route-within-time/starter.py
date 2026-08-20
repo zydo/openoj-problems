@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestRoute(self, maxTime: int, edges: List[List[int]], passingFees: List[int]) -> int:
+    def cheapestRoute(self, maxTime: int, edges: list[list[int]], passingFees: list[int]) -> int:
         raise NotImplementedError("TODO")

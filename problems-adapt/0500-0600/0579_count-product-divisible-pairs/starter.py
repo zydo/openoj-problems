@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countProductDivisiblePairs(self, nums: List[int], k: int) -> int:
+    def countProductDivisiblePairs(self, nums: list[int], k: int) -> int:
         raise NotImplementedError("TODO")

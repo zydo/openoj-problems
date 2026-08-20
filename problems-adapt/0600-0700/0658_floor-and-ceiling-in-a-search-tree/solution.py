@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def floorCeilPairs(self, root: Optional[TreeNode], queries: List[int]) -> List[List[int]]:
+    def floorCeilPairs(self, root: TreeNode | None, queries: list[int]) -> list[list[int]]:
         # A BST's inorder traversal is sorted: flatten once and each
         # query becomes two binary searches; the iterative walk dodges
         # recursion depth on a skewed tree.

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def digitDisjointScoreSum(self, vals: List[int], par: List[int]) -> int:
+    def digitDisjointScoreSum(self, vals: list[int], par: list[int]) -> int:
         raise NotImplementedError("TODO")

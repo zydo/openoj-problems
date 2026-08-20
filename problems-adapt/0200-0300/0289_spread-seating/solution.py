@@ -1,8 +1,5 @@
 import heapq
 from bisect import bisect_left, insort
-from typing import List, Set, Tuple
-
-
 class SpreadSeating:
     """Max-heap of free-gap segments between occupied seats, lazily deleted.
 
@@ -13,9 +10,9 @@ class SpreadSeating:
 
     def __init__(self, n: int) -> None:
         self.n = n
-        self.occupied: List[int] = []
-        self.live: Set[Tuple[int, int]] = set()
-        self.heap: List[Tuple[int, int, int, int]] = []  # (-dist, spot, l, r)
+        self.occupied: list[int] = []
+        self.live: set[tuple[int, int]] = set()
+        self.heap: list[tuple[int, int, int, int]] = []  # (-dist, spot, l, r)
 
     def assign(self) -> int:
         if not self.occupied:

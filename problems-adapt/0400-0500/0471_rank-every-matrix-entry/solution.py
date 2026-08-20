@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rankEntries(self, matrix: List[List[int]]) -> List[List[int]]:
+    def rankEntries(self, matrix: list[list[int]]) -> list[list[int]]:
         m = len(matrix)
         n = len(matrix[0])
         # Process in increasing value order: strictly smaller values are

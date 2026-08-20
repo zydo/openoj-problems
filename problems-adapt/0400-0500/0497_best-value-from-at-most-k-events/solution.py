@@ -1,9 +1,6 @@
 from bisect import bisect_left
-from typing import List
-
-
 class Solution:
-    def bestValue(self, events: List[List[int]], k: int) -> int:
+    def bestValue(self, events: list[list[int]], k: int) -> int:
         # Sorted by end day, any compatible set read by finish time is a
         # subsequence of this order, so earlier choices sit to the left.
         events.sort(key=lambda e: e[1])

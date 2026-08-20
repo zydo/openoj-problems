@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def balancedBrackets(self, s: str) -> bool:
         # Map each closer to its required opener, so the expected partner of

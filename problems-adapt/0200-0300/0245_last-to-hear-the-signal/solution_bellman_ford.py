@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def lastToHear(self, edges: List[List[int]], n: int, k: int) -> int:
+    def lastToHear(self, edges: list[list[int]], n: int, k: int) -> int:
         INF = 10**8
         dist = [INF] * (n + 1)
         dist[k] = 0

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestRevenue(self, stacks: List[int], orders: int) -> int:
+    def bestRevenue(self, stacks: list[int], orders: int) -> int:
         raise NotImplementedError("TODO")

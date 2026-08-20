@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def widestSpanningTree(self, n: int, edges: List[List[int]], k: int) -> int:
+    def widestSpanningTree(self, n: int, edges: list[list[int]], k: int) -> int:
         raise NotImplementedError("TODO")

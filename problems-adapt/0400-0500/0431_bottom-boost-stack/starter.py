@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class BottomBoostStack:
     def __init__(self, maxSize: int) -> None:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestCycle(self, edges: List[int]) -> int:
+    def longestCycle(self, edges: list[int]) -> int:
         n = len(edges)
         # Three colors: 0 = unvisited, 1 = on the current walk, 2 = finished.
         color = [0] * n

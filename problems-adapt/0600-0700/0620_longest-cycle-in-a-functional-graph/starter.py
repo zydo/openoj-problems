@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestCycle(self, edges: List[int]) -> int:
+    def longestCycle(self, edges: list[int]) -> int:
         raise NotImplementedError("TODO")

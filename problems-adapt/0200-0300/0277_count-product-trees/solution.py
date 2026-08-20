@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countProductTrees(self, values: List[int]) -> int:
+    def countProductTrees(self, values: list[int]) -> int:
         MOD = 10**9 + 7
         values = sorted(values)
         index = {v: i for i, v in enumerate(values)}

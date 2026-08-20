@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class _SegTree:
     def __init__(self, arr):
         self.n = len(arr)
@@ -53,7 +50,7 @@ class _SegTree:
 
 
 class Solution:
-    def runningTotals(self, bits: List[int], values: List[int], queries: List[List[int]]) -> List[int]:
+    def runningTotals(self, bits: list[int], values: list[int], queries: list[list[int]]) -> list[int]:
         n = len(bits)
         seg = _SegTree(bits)
         # Maintain sum(values) incrementally: values is never materialized

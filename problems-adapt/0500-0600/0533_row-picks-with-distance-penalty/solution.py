@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxRowScore(self, points: List[List[int]]) -> int:
+    def maxRowScore(self, points: list[list[int]]) -> int:
         m = len(points)
         n = len(points[0])
         # dp[c] = best score with the current row's pick at column c; the

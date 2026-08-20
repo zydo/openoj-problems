@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def inferLetterOrder(self, words: List[str]) -> str:
+    def inferLetterOrder(self, words: list[str]) -> str:
         adj = {}
         indeg = {}
         for word in words:

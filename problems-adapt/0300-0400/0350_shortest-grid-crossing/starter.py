@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shortestGridCrossing(self, grid: List[List[int]]) -> int:
+    def shortestGridCrossing(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

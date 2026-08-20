@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shortestTour(self, coins: List[int], edges: List[List[int]]) -> int:
+    def shortestTour(self, coins: list[int], edges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

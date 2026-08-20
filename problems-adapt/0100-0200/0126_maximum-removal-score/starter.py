@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maximumRemovalScore(self, nums: List[int]) -> int:
+    def maximumRemovalScore(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

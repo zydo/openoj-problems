@@ -1,14 +1,11 @@
-from typing import Dict, Optional
-
-
 class _Node:
     __slots__ = ("key", "prev", "next", "bucket")
 
     def __init__(self, key: str) -> None:
         self.key = key
-        self.prev: Optional["_Node"] = None
-        self.next: Optional["_Node"] = None
-        self.bucket: Optional["_Bucket"] = None
+        self.prev: "_Node" | None = None
+        self.next: "_Node" | None = None
+        self.bucket: "_Bucket" | None = None
 
 
 class _Bucket:
@@ -23,8 +20,8 @@ class _Bucket:
         self.tail = _Node("")  # sentinel after the last key
         self.head.next = self.tail
         self.tail.prev = self.head
-        self.prev: Optional["_Bucket"] = None
-        self.next: Optional["_Bucket"] = None
+        self.prev: "_Bucket" | None = None
+        self.next: "_Bucket" | None = None
 
 
 class FrequencyExtremes:
@@ -37,7 +34,7 @@ class FrequencyExtremes:
     """
 
     def __init__(self) -> None:
-        self.nodes: Dict[str, _Node] = {}
+        self.nodes: dict[str, _Node] = {}
         self.first = _Bucket(0)  # sentinel before the lowest count
         self.last = _Bucket(0)  # sentinel after the highest count
         self.first.next = self.last

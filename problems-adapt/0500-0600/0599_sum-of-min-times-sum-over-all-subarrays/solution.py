@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 MOD = 10**9 + 7
 
 
 class Solution:
-    def totalMinTimesSum(self, power: List[int]) -> int:
+    def totalMinTimesSum(self, power: list[int]) -> int:
         n = len(power)
 
         # prev[i]: index of nearest strictly-smaller element to the left, else -1.

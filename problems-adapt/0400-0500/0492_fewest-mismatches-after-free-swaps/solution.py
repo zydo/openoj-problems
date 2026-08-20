@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import Counter
 
 
 class Solution:
-    def fewestMismatches(self, source: List[int], target: List[int], allowedSwaps: List[List[int]]) -> int:
+    def fewestMismatches(self, source: list[int], target: list[int], allowedSwaps: list[list[int]]) -> int:
         n = len(source)
         parent = list(range(n))
 

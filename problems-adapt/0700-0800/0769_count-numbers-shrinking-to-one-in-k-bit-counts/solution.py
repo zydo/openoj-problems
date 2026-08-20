@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countShrinkingNumbers(self, s: str, k: int) -> int:
         MOD = 10**9 + 7

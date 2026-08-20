@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumOverlapRemovals(self, intervals: List[List[int]]) -> int:
+    def minimumOverlapRemovals(self, intervals: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

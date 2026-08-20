@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def expandRepeats(self, s: str) -> str:
         # One (previous_string, repeat_count) frame per unclosed '[' —

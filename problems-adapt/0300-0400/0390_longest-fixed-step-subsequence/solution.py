@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestStepSubsequence(self, arr: List[int], step: int) -> int:
+    def longestStepSubsequence(self, arr: list[int], step: int) -> int:
         # A fixed step means each step must land on v + step, so
         # the DP collapses from positions to a map keyed by ending value.
         dp = {}

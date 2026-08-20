@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestLargestBinLoad(self, n: int, piles: List[int]) -> int:
+    def smallestLargestBinLoad(self, n: int, piles: list[int]) -> int:
         def bins_needed(x):
             # A bin holds items from one pile only, so a pile with q items
             # needs ceil(q/x) bins; integer arithmetic avoids floats.

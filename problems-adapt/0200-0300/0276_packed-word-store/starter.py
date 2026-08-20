@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def packedStoreLength(self, words: List[str]) -> int:
+    def packedStoreLength(self, words: list[str]) -> int:
         raise NotImplementedError("TODO")

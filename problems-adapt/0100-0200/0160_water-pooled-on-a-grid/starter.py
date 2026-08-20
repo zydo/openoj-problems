@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def pooledOnGrid(self, heights: List[List[int]]) -> int:
+    def pooledOnGrid(self, heights: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

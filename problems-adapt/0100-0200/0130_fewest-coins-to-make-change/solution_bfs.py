@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def fewestCoins(self, coins: List[int], amount: int) -> int:
+    def fewestCoins(self, coins: list[int], amount: int) -> int:
         # BFS over amounts: level k holds every amount reachable with
         # exactly k coins, so the first time `amount` is dequeued its level
         # is the minimum coin count. visited keeps each amount enqueued once.

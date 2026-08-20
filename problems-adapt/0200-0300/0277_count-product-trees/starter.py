@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countProductTrees(self, values: List[int]) -> int:
+    def countProductTrees(self, values: list[int]) -> int:
         raise NotImplementedError("TODO")

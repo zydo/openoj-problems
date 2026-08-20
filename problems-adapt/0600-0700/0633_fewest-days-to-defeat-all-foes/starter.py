@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestDaysToDefeatAll(self, power: List[int]) -> int:
+    def fewestDaysToDefeatAll(self, power: list[int]) -> int:
         raise NotImplementedError("TODO")

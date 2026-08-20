@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class VersionedArray:
     def __init__(self, length: int) -> None:
         raise NotImplementedError("TODO")

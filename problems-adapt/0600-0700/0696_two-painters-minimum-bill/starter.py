@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastPaintCost(self, cost: List[int], time: List[int]) -> int:
+    def leastPaintCost(self, cost: list[int], time: list[int]) -> int:
         raise NotImplementedError("TODO")

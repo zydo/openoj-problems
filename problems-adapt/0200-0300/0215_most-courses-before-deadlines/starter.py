@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostCoursesBeforeDeadlines(self, courses: List[List[int]]) -> int:
+    def mostCoursesBeforeDeadlines(self, courses: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

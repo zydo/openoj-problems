@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def maxSeated(self, favorite: List[int]) -> int:
+    def maxSeated(self, favorite: list[int]) -> int:
         n = len(favorite)
         # favorite defines a functional graph: disjoint cycles with in-trees
         # hanging off them.

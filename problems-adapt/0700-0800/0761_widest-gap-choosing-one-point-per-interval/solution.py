@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def widestGap(self, start: List[int], d: int) -> int:
+    def widestGap(self, start: list[int], d: int) -> int:
         arr = sorted(start)
         n = len(arr)
 

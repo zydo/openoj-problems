@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumPairingDistance(self, points: List[List[int]], anchors: List[List[int]]) -> int:
+    def minimumPairingDistance(self, points: list[list[int]], anchors: list[list[int]]) -> int:
         # Bitmask DP over the set of used anchors; dp[mask] is the cheapest way
         # to assign the first popcount(mask) points using exactly those anchors.
         n, m = len(points), len(anchors)

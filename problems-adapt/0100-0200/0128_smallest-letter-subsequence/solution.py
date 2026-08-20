@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def smallestLetterSubsequence(self, s: str) -> str:
         # count[ch] = occurrences of ch strictly after the current position.

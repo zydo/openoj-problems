@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solveNQueens(self, n: int) -> list[list[str]]:
         results = []
         cols = set()
         diag1 = set()

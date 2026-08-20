@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canFormSquare(self, lengths: List[int]) -> bool:
+    def canFormSquare(self, lengths: list[int]) -> bool:
         raise NotImplementedError("TODO")

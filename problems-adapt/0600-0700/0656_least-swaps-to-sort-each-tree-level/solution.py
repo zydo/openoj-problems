@@ -1,7 +1,4 @@
 from collections import deque
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -10,7 +7,7 @@ class TreeNode:
 
 
 class Solution:
-    def leastLevelSwaps(self, root: Optional[TreeNode]) -> int:
+    def leastLevelSwaps(self, root: TreeNode | None) -> int:
         if root is None:
             return 0
         total = 0

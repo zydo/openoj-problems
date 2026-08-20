@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def renumberGrid(self, grid: List[List[int]]) -> List[List[int]]:
+    def renumberGrid(self, grid: list[list[int]]) -> list[list[int]]:
         m, n = len(grid), len(grid[0])
         # Assign in ascending original order: when a cell's turn comes, every
         # smaller cell sharing its row/column is already placed, so only the

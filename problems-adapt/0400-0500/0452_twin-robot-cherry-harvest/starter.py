@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def twinRobotHarvest(self, grid: List[List[int]]) -> int:
+    def twinRobotHarvest(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

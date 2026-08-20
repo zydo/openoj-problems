@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def repeatedValue(self, nums: List[int]) -> int:
+    def repeatedValue(self, nums: list[int]) -> int:
         # Read the array as a linked list: index i points to nums[i]. The
         # duplicate is the cycle entry, since two indices point at it.
         slow = fast = 0

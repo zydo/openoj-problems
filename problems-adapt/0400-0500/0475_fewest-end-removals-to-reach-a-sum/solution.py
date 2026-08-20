@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestRemovals(self, nums: List[int], x: int) -> int:
+    def fewestRemovals(self, nums: list[int], x: int) -> int:
         total = sum(nums)
         target = total - x  # find the longest middle subarray summing to target
         if target < 0:

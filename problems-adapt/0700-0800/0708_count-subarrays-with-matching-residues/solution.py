@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import defaultdict
 
 
 class Solution:
-    def countResidueMatches(self, nums: List[int], modulo: int, k: int) -> int:
+    def countResidueMatches(self, nums: list[int], modulo: int, k: int) -> int:
         # Only whether nums[i] % modulo == k matters, so track pref: the
         # number of hits among the prefix. A subarray is qualifying iff its
         # hit count has residue k — prefix-sum counting, applied to residues.

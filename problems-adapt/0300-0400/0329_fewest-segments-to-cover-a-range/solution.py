@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestSegments(self, segments: List[List[int]], span: int) -> int:
+    def fewestSegments(self, segments: list[list[int]], span: int) -> int:
         # Jump-game greedy over segments sorted by start.
         ordered = sorted(segments)
         count = 0

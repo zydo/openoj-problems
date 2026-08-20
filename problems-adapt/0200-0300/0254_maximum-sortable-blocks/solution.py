@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maximumSortableBlocks(self, arr: List[int]) -> int:
+    def maximumSortableBlocks(self, arr: list[int]) -> int:
         # A boundary is legal exactly when the multiset of arr's prefix
         # equals the sorted copy's prefix — values repeat, so multisets,
         # not max/min ranges, decide.

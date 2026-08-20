@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nextGreaterForQueries(self, queries: List[int], nums: List[int]) -> List[int]:
+    def nextGreaterForQueries(self, queries: list[int], nums: list[int]) -> list[int]:
         # One scan of nums answers every query: the stack holds values
         # still waiting for their next greater element.
         next_greater = {}

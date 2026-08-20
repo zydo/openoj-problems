@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestSwapsForRisingRows(self, top: List[int], bottom: List[int]) -> int:
+    def fewestSwapsForRisingRows(self, top: list[int], bottom: list[int]) -> int:
         raise NotImplementedError("TODO")

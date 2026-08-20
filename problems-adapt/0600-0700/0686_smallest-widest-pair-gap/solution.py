@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestWidestGap(self, nums: List[int], p: int) -> int:
+    def smallestWidestGap(self, nums: list[int], p: int) -> int:
         # An optimal selection can always pair adjacent sorted values, so
         # sort once and ask: does a cap `diff` admit p disjoint pairs?
         nums = sorted(nums)

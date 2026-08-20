@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countTwinPeakPaths(self, vals: List[int], edges: List[List[int]]) -> int:
+    def countTwinPeakPaths(self, vals: list[int], edges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

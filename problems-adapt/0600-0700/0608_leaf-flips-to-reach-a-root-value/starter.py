@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,5 +6,5 @@ class TreeNode:
 
 
 class Solution:
-    def minLeafFlips(self, root: Optional[TreeNode], result: bool) -> int:
+    def minLeafFlips(self, root: TreeNode | None, result: bool) -> int:
         raise NotImplementedError("TODO")

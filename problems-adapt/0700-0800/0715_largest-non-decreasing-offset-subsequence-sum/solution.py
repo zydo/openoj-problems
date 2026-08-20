@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxOffsetSubsequenceSum(self, nums: List[int]) -> int:
+    def maxOffsetSubsequenceSum(self, nums: list[int]) -> int:
         n = len(nums)
         # Balance rearranges to nums[j] - j >= nums[i] - i, so a subsequence
         # is balanced precisely when b[i] = nums[i] - i is non-decreasing

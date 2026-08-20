@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def optimalStoneSmashing(self, stones: List[int]) -> int:
+    def optimalStoneSmashing(self, stones: list[int]) -> int:
         raise NotImplementedError("TODO")

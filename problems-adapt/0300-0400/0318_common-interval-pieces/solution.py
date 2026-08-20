@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def commonIntervalPieces(self, rangesA: List[List[int]], rangesB: List[List[int]]) -> List[List[int]]:
+    def commonIntervalPieces(self, rangesA: list[list[int]], rangesB: list[list[int]]) -> list[list[int]]:
         result = []
         i = j = 0
         while i < len(rangesA) and j < len(rangesB):

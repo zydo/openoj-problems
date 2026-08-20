@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from bisect import bisect_left
 
 
 class Solution:
-    def shortestSubarrayToTarget(self, target: int, nums: List[int]) -> int:
+    def shortestSubarrayToTarget(self, target: int, nums: list[int]) -> int:
         n = len(nums)
         # prefix[i] = sum of the first i elements. Positivity makes it
         # strictly increasing, which is what licenses the binary search.

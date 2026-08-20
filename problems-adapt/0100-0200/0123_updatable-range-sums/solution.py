@@ -1,8 +1,5 @@
-from typing import List
-
-
 class UpdatableRanges:
-    def __init__(self, nums: List[int]) -> None:
+    def __init__(self, nums: list[int]) -> None:
         self.n = len(nums)
         self.nums = list(nums)
         # Fenwick tree, 1-based: slot i holds the sum of the block of length

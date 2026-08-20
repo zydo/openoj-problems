@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canSplitEqualMean(self, values: List[int]) -> bool:
+    def canSplitEqualMean(self, values: list[int]) -> bool:
         n = len(values)
         total = sum(values)
 

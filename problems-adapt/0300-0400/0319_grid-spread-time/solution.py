@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def gridSpreadTime(self, grid: List[List[int]]) -> int:
+    def gridSpreadTime(self, grid: list[list[int]]) -> int:
         grid = [row[:] for row in grid]
         rows, cols = len(grid), len(grid[0])
         queue = deque()

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostNonCrossingMatches(self, nums1: List[int], nums2: List[int]) -> int:
+    def mostNonCrossingMatches(self, nums1: list[int], nums2: list[int]) -> int:
         # Longest common subsequence of nums1 and nums2.
         n = len(nums2)
         prev = [0] * (n + 1)

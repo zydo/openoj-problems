@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def singletonLetterTotal(self, s: str) -> int:
         # Reorganize the sum per occurrence: a letter adds 1 exactly

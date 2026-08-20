@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def earliestFinalizeTime(self, nums: List[int], resets: List[int]) -> int:
+    def earliestFinalizeTime(self, nums: list[int], resets: list[int]) -> int:
         n = len(nums)
         m = len(resets)
 

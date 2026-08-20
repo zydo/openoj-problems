@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestAdditiveSubseq(self, nums: List[int]) -> int:
+    def longestAdditiveSubseq(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class _Fenwick:
     def __init__(self, size):
         self.n = size
@@ -27,7 +24,7 @@ class _Fenwick:
 
 
 class Solution:
-    def leastSplitCost(self, nums: List[int], k: int, dist: int) -> int:
+    def leastSplitCost(self, nums: list[int], k: int, dist: int) -> int:
         n = len(nums)
         target = k - 2
         vals = sorted(set(nums))

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countTriangles(self, sides: List[int]) -> int:
+    def countTriangles(self, sides: list[int]) -> int:
         sides = sorted(sides)
         n = len(sides)
         count = 0

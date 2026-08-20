@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 MOD = 10**9 + 7
 
 
 class Solution:
-    def totalTightness(self, nums: List[int], k: int) -> int:
+    def totalTightness(self, nums: list[int], k: int) -> int:
         nums = sorted(nums)
         n = len(nums)
         diffs = sorted({nums[j] - nums[i] for i in range(n) for j in range(i + 1, n)})

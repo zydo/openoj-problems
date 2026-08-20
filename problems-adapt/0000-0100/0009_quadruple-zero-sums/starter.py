@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countQuadrupleZeroSums(self, first: List[int], second: List[int], third: List[int], fourth: List[int]) -> int:
+    def countQuadrupleZeroSums(self, first: list[int], second: list[int], third: list[int], fourth: list[int]) -> int:
         raise NotImplementedError("TODO")

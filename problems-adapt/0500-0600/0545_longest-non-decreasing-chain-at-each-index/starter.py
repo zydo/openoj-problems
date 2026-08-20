@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestChainAtEachIndex(self, heights: List[int]) -> List[int]:
+    def longestChainAtEachIndex(self, heights: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def containsAnagram(self, pattern: str, text: str) -> bool:
         m, n = len(pattern), len(text)

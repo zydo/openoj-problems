@@ -1,4 +1,3 @@
-from typing import List, Optional
 from bisect import bisect_left
 
 
@@ -12,7 +11,7 @@ def _subset_sums(arr):
 
 
 class Solution:
-    def nearestSumGap(self, nums: List[int], goal: int) -> int:
+    def nearestSumGap(self, nums: list[int], goal: int) -> int:
         # Meet in the middle: 2^40 is hopeless, but two halves of <= 20
         # elements enumerate ~10^6 sums each, and every subsequence sum is
         # sL + sR with one part from each side.

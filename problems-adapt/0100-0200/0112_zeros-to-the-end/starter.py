@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def zerosToEnd(self, nums: List[int]) -> List[int]:
+    def zerosToEnd(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

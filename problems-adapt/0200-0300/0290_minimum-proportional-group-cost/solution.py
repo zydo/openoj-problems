@@ -1,9 +1,6 @@
 import heapq
-from typing import List, Optional
-
-
 class Solution:
-    def minimumProportionalGroupCost(self, units: List[int], minimumPayments: List[int], groupCount: int) -> float:
+    def minimumProportionalGroupCost(self, units: list[int], minimumPayments: list[int], groupCount: int) -> float:
         # Sort workers by minimumPayments/units ratio. For each worker as the one paid
         # exactly their minimum minimumPayments (the highest ratio in the chosen group),
         # the best group is the groupCount-1 others with smallest units among cheaper

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestReachableString(self, s: str, pairs: List[List[int]]) -> str:
+    def smallestReachableString(self, s: str, pairs: list[list[int]]) -> str:
         n = len(s)
         parent = list(range(n))
 

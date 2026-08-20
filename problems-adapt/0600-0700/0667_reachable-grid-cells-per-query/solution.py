@@ -1,9 +1,6 @@
 import heapq
-from typing import List, Optional
-
-
 class Solution:
-    def reachableCellsPerQuery(self, grid: List[List[int]], queries: List[int]) -> List[int]:
+    def reachableCellsPerQuery(self, grid: list[list[int]], queries: list[int]) -> list[int]:
         m, n = len(grid), len(grid[0])
         # A query q scores exactly the cells reachable from (0,0) through values
         # < q; that set only grows with q, so answer queries in ascending order

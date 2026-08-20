@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestCoveringTeam(self, req_skills: List[str], people: List[List[str]]) -> List[int]:
+    def smallestCoveringTeam(self, req_skills: list[str], people: list[list[str]]) -> list[int]:
         skill_index = {skill: i for i, skill in enumerate(req_skills)}
         # compress each person to the bitmask of skills they contribute
         masks = []

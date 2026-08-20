@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def matrixContains(self, matrix: List[List[int]], target: int) -> bool:
+    def matrixContains(self, matrix: list[list[int]], target: int) -> bool:
         if not matrix or not matrix[0]:
             return False
         # Start at the top-right corner: largest in its row and smallest in

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestLeapRoute(self, nums: List[int], costs: List[int]) -> int:
+    def cheapestLeapRoute(self, nums: list[int], costs: list[int]) -> int:
         raise NotImplementedError("TODO")

@@ -1,11 +1,8 @@
-from typing import List, Optional
-
-
 class Solution:
-    def summandsToTarget(self, candidates: List[int], target: int) -> List[List[int]]:
+    def summandsToTarget(self, candidates: list[int], target: int) -> list[list[int]]:
         results = []
 
-        def backtrack(start: int, remaining: int, path: List[int]) -> None:
+        def backtrack(start: int, remaining: int, path: list[int]) -> None:
             # remaining = target minus the sum of the path so far; when it hits 0
             # the path is a valid combination, so record a copy before it mutates.
             if remaining == 0:

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import defaultdict
 
 
 class Solution:
-    def linkPairsIntoOneChain(self, pairs: List[List[int]]) -> List[List[int]]:
+    def linkPairsIntoOneChain(self, pairs: list[list[int]]) -> list[list[int]]:
         # Numbers are nodes, pairs are directed edges: the arrangement is an
         # Eulerian path (a walk using every edge exactly once).
         adj = defaultdict(list)

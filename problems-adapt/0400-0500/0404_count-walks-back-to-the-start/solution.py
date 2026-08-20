@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countWalks(self, steps: int, width: int) -> int:
         MOD = 10**9 + 7

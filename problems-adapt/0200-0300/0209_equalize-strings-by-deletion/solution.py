@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def minimumDeletionsToEqual(self, word1: str, word2: str) -> int:
         a, b = word1, word2

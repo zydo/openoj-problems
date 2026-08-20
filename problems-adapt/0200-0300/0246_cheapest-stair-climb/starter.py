@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestClimb(self, cost: List[int]) -> int:
+    def cheapestClimb(self, cost: list[int]) -> int:
         raise NotImplementedError("TODO")

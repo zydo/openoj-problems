@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_left, bisect_right
 
 
 class Solution:
-    def countCovering(self, intervals: List[List[int]], queries: List[int]) -> List[int]:
+    def countCovering(self, intervals: list[list[int]], queries: list[int]) -> list[int]:
         # The two sides can be sorted separately: a query never needs to know
         # which start belongs to which end, only the two one-sided counts.
         starts = sorted(f[0] for f in intervals)

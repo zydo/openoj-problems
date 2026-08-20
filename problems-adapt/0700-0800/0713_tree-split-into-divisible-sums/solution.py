@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxDivisibleComponents(self, n: int, edges: List[List[int]], values: List[int], k: int) -> int:
+    def maxDivisibleComponents(self, n: int, edges: list[list[int]], values: list[int], k: int) -> int:
         adj = [[] for _ in range(n)]
         for a, b in edges:
             adj[a].append(b)

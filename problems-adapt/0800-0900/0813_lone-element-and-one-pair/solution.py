@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def loneElementAndPair(self, nums: List[int]) -> List[int]:
+    def loneElementAndPair(self, nums: list[int]) -> list[int]:
         from collections import Counter
 
         # Exactly one value occurs once, one occurs twice, the rest thrice;

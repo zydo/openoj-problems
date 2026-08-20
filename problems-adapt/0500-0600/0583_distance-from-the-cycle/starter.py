@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def distanceFromCycle(self, n: int, edges: List[List[int]]) -> List[int]:
+    def distanceFromCycle(self, n: int, edges: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def canTransformAdditivePair(self, startA: int, startB: int, goalA: int, goalB: int) -> bool:
         # Work backwards from the target: the last forward move added

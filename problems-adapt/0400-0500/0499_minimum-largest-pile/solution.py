@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumLargestPile(self, piles: List[int], maxSplits: int) -> int:
+    def minimumLargestPile(self, piles: list[int], maxSplits: int) -> int:
         def needed(penalty):
             # A pile of v must end as ceil(v/penalty) pieces; each split
             # creates exactly one new pile, so it costs ceil(v/penalty) - 1 =

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from math import gcd
 
 
 class Solution:
-    def countGcdPairs(self, nums: List[int]) -> int:
+    def countGcdPairs(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         # dp[g1][g2] = ways to split the processed prefix into a sequence with
         # gcd g1 and a sequence with gcd g2 (gcd 0 denotes an empty sequence).

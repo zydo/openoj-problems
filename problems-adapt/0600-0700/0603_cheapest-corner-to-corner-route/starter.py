@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestCornerRoute(self, grid: List[List[int]]) -> int:
+    def cheapestCornerRoute(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

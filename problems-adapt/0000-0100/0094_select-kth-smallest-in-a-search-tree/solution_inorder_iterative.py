@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def selectKthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+    def selectKthSmallest(self, root: TreeNode | None, k: int) -> int:
         # In-order traversal of a BST visits values in ascending order, so
         # the kth visit is the kth smallest. The explicit stack simulates the
         # recursion, keeping space proportional to the tree height.

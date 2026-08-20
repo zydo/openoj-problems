@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def stoneDraft(self, aliceValues: List[int], bobValues: List[int]) -> int:
+    def stoneDraft(self, aliceValues: list[int], bobValues: list[int]) -> int:
         n = len(aliceValues)
         # Taking a stone gains your value AND denies the opponent theirs, so
         # both players effectively compete for aliceValues[i] + bobValues[i].

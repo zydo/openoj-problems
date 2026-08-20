@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
+    def majorityElement(self, nums: list[int]) -> int:
         # Boyer-Moore voting: the majority outnumbers all others combined, so
         # pairing each of its votes against one opposing vote still leaves a
         # survivor — no explicit counting needed.

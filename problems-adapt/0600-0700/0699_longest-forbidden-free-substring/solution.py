@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestForbiddenFree(self, word: str, forbidden: List[str]) -> int:
+    def longestForbiddenFree(self, word: str, forbidden: list[str]) -> int:
         banned = set(forbidden)
         max_len = max((len(s) for s in banned), default=0)
         n = len(word)

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestEvenVowelSubstring(self, s: str) -> int:
         # each vowel toggles one of 5 parity bits in the running mask

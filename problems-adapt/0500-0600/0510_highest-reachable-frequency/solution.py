@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def highestReachableFrequency(self, nums: List[int], k: int) -> int:
+    def highestReachableFrequency(self, nums: list[int], k: int) -> int:
         # Operations only raise values, so an optimal equal-value group is a
         # contiguous window in sorted order, raised to its right end.
         nums = sorted(nums)

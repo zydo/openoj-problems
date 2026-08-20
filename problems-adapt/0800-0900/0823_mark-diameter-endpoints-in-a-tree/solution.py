@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def markDiameterEnds(self, n: int, edges: List[List[int]]) -> str:
+    def markDiameterEnds(self, n: int, edges: list[list[int]]) -> str:
         adj = [[] for _ in range(n)]
         for a, b in edges:
             adj[a].append(b)

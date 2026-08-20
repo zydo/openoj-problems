@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shortestMerge(self, words: List[str]) -> str:
+    def shortestMerge(self, words: list[str]) -> str:
         k = len(words)
         overlap = [[0] * k for _ in range(k)]
         for i in range(k):

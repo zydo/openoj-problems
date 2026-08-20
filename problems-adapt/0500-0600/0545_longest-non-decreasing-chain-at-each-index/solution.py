@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_right
 
 
 class Solution:
-    def longestChainAtEachIndex(self, heights: List[int]) -> List[int]:
+    def longestChainAtEachIndex(self, heights: list[int]) -> list[int]:
         # tails[j] = smallest possible tail of a non-decreasing subsequence
         # of length j+1 over the prefix so far; it stays sorted, so each
         # obstacle is placed by binary search.

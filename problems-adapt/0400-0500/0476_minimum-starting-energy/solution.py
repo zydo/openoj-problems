@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumEnergy(self, tasks: List[List[int]]) -> int:
+    def minimumEnergy(self, tasks: list[list[int]]) -> int:
         # Order by slack (minimum - actual) descending: a high-slack task
         # done early banks its surplus while the budget is still high —
         # exchange arguments show an adjacent inversion never helps.

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDistinctSegmentOrs(self, values: List[int]) -> int:
+    def countDistinctSegmentOrs(self, values: list[int]) -> int:
         seen = set()
         # current: distinct OR values of subarrays ending at this index.
         current = set()

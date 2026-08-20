@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def expandedStringLetter(self, s: str, k: int) -> str:
         # Forward pass computes the expanded expansion length; the backward pass

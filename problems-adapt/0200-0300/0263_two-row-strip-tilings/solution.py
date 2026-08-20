@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countStripTilings(self, n: int) -> int:
         MOD = 10**9 + 7

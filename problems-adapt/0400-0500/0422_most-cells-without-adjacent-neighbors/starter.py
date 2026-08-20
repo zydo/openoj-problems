@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxCells(self, cells: List[List[str]]) -> int:
+    def maxCells(self, cells: list[list[str]]) -> int:
         raise NotImplementedError("TODO")

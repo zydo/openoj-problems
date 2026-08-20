@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def twoLoneElements(self, nums: List[int]) -> List[int]:
+    def twoLoneElements(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

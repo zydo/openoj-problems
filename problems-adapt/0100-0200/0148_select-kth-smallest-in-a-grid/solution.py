@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def selectKthSmallest(self, grid: List[List[int]], k: int) -> int:
+    def selectKthSmallest(self, grid: list[list[int]], k: int) -> int:
         n = len(grid)
 
         def count_le(x):

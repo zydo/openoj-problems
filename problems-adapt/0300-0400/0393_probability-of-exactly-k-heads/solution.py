@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def probabilityOfExactHeads(self, prob: List[float], target: int) -> float:
+    def probabilityOfExactHeads(self, prob: list[float], target: int) -> float:
         # dp[c] = probability of exactly c heads among the coins so far;
         # zero heads is certain before any toss.
         dp = [0.0] * (target + 1)

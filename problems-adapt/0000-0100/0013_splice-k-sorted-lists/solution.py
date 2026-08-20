@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -8,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def spliceKSortedLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    def spliceKSortedLists(self, lists: list[ListNode | None]) -> ListNode | None:
         # Drop null entries up front so [] and [[]] both collapse to an empty
         # candidate list and return None immediately.
         lists = [x for x in lists if x is not None]

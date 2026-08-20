@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shiftLettersOverRanges(self, s: str, shifts: List[List[int]]) -> str:
+    def shiftLettersOverRanges(self, s: str, shifts: list[list[int]]) -> str:
         raise NotImplementedError("TODO")

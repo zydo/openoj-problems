@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def edgesAdmitted(self, n: int, edges: List[List[int]]) -> int:
+    def edgesAdmitted(self, n: int, edges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

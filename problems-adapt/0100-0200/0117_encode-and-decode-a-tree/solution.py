@@ -1,5 +1,5 @@
 from collections import deque
-from typing import Deque, Optional
+from typing import Deque
 
 
 class TreeCodec:
@@ -10,9 +10,9 @@ class TreeCodec:
     Both directions are iterative, so deep trees are safe.
     """
 
-    def serialize(self, root: Optional[TreeNode]) -> str:  # noqa: F821
+    def serialize(self, root: TreeNode | None) -> str:  # noqa: F821
         tokens: list[str] = []
-        queue: Deque[Optional[TreeNode]] = deque([root])  # noqa: F821
+        queue: Deque[TreeNode | None] = deque([root])  # noqa: F821
         # The queue holds nulls too: a null emits a token and enqueues
         # nothing, so every child slot gets exactly one token.
         while queue:
@@ -29,7 +29,7 @@ class TreeCodec:
             tokens.pop()
         return ",".join(tokens)
 
-    def deserialize(self, data: str) -> Optional[TreeNode]:  # noqa: F821
+    def deserialize(self, data: str) -> TreeNode | None:  # noqa: F821
         if not data:
             return None
         tokens = data.split(",")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def liftLowest(self, points: List[int], m: int) -> int:
+    def liftLowest(self, points: list[int], m: int) -> int:
         raise NotImplementedError("TODO")

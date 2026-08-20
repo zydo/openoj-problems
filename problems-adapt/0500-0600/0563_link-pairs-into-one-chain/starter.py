@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def linkPairsIntoOneChain(self, pairs: List[List[int]]) -> List[List[int]]:
+    def linkPairsIntoOneChain(self, pairs: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def cheapestTotalCost(self, m: int, n: int, horizontalCut: List[int], verticalCut: List[int]) -> int:
+    def cheapestTotalCost(self, m: int, n: int, horizontalCut: list[int], verticalCut: list[int]) -> int:
         # A cut costs its base price times the pieces it crosses: one more
         # for every opposite-direction cut already made. An exchange argument
         # (swapping adjacent opposite cuts never helps unless the pricier one

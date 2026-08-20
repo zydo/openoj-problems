@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def gridPlacement(self, k: int, rowConditions: List[List[int]], colConditions: List[List[int]]) -> List[List[int]]:
+    def gridPlacement(self, k: int, rowConditions: list[list[int]], colConditions: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

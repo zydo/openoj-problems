@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def loneElement(self, nums: List[int]) -> int:
+    def loneElement(self, nums: list[int]) -> int:
         # Parity hash set: the first sight of a value adds it, the second
         # removes it — a paired element erases its own trace, so the set
         # holds exactly the values seen an odd number of times.

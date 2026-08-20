@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def tightestCoveringRange(self, nums: List[List[int]]) -> List[int]:
+    def tightestCoveringRange(self, nums: list[list[int]]) -> list[int]:
         # Seed the heap with every list's head; the k-way merge sweeps candidate
         # ranges in order as the selection's minimum advances.
         heap = [(lst[0], i, 0) for i, lst in enumerate(nums)]

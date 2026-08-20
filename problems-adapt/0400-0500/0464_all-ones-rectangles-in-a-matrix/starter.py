@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countOnesRectangles(self, mat: List[List[int]]) -> int:
+    def countOnesRectangles(self, mat: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

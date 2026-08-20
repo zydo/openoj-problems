@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def nearestOr(self, nums: List[int], k: int) -> int:
+    def nearestOr(self, nums: list[int], k: int) -> int:
         # Seed from the first element so single-element subarrays are covered.
         best = abs(nums[0] - k)
         # Empty-subarray seed: 0 | v = v lets the first build produce {v}.

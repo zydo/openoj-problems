@@ -1,9 +1,6 @@
-from typing import List, Optional
-
-
 class Solution:
-    def __init__(self, rects: List[List[int]]) -> None:
+    def __init__(self, rects: list[list[int]]) -> None:
         raise NotImplementedError("TODO")
 
-    def drawPoint(self) -> List[int]:
+    def drawPoint(self) -> list[int]:
         raise NotImplementedError("TODO")

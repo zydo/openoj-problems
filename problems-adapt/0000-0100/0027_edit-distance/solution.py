@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def minDistance(self, source: str, target: str) -> int:
         # dp[i][j] = min operations turning the first i chars of source into

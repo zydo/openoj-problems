@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def groupWords(self, words: List[str]) -> List[int]:
+    def groupWords(self, words: list[str]) -> list[int]:
         from collections import Counter
 
         mask_counter = Counter()

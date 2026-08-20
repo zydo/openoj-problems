@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cycleClosingEdge(self, edges: List[List[int]]) -> List[int]:
+    def cycleClosingEdge(self, edges: list[list[int]]) -> list[int]:
         adj: dict = {}
 
         def connected(a: int, b: int) -> bool:

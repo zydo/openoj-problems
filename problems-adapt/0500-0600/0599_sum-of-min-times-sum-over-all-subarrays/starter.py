@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def totalMinTimesSum(self, power: List[int]) -> int:
+    def totalMinTimesSum(self, power: list[int]) -> int:
         raise NotImplementedError("TODO")

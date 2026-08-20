@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countThreeBlockSubsequences(self, nums: List[int]) -> int:
+    def countThreeBlockSubsequences(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         # Over each prefix: f0 = all-zero subsequences, f1 = 0s-then-1s,
         # f2 = complete special subsequences. Each element updates exactly

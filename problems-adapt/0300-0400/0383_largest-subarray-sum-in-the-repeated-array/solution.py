@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestRepeatedSum(self, arr: List[int], k: int) -> int:
+    def largestRepeatedSum(self, arr: list[int], k: int) -> int:
         MOD = 10**9 + 7
 
         # the best subarray never needs more than two partial copies plus

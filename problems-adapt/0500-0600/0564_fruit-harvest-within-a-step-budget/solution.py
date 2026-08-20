@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxHarvest(self, fruits: List[List[int]], startPos: int, k: int) -> int:
+    def maxHarvest(self, fruits: list[list[int]], startPos: int, k: int) -> int:
         # An optimal walk turns at most once, so the harvest is always one
         # contiguous interval of the position-sorted fruit array. Prefix sums
         # give each interval's fruit total in O(1).

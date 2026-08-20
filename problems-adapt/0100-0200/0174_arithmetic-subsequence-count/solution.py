@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countArithmeticSubsequences(self, nums: List[int]) -> int:
+    def countArithmeticSubsequences(self, nums: list[int]) -> int:
         n = len(nums)
         # dp[i][d] = number of arithmetic subsequences of length >= 2 ending
         # at i with common difference d. Hashing per (index, difference)

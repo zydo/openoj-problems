@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def summandsToTarget(self, candidates: List[int], target: int) -> List[List[int]]:
+    def summandsToTarget(self, candidates: list[int], target: int) -> list[list[int]]:
         raise NotImplementedError("TODO")

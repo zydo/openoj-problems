@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countClearingProducts(self, factors: List[int], values: List[int], threshold: int) -> List[int]:
+    def countClearingProducts(self, factors: list[int], values: list[int], threshold: int) -> list[int]:
         raise NotImplementedError("TODO")

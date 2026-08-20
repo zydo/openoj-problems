@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxPolygonPerimeter(self, nums: List[int]) -> int:
+    def maxPolygonPerimeter(self, nums: list[int]) -> int:
         nums = sorted(nums)
         total = sum(nums)
         # Try candidate longest sides from the largest down; stop at i == 2 so

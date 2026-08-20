@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countXorRoutes(self, grid: List[List[int]], k: int) -> int:
+    def countXorRoutes(self, grid: list[list[int]], k: int) -> int:
         MOD = 1_000_000_007
         m = len(grid)
         n = len(grid[0])

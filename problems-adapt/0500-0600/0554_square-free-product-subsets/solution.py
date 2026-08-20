@@ -1,4 +1,3 @@
-from typing import List, Optional
 from collections import Counter
 
 MOD = 10**9 + 7
@@ -17,7 +16,7 @@ def _mask_of(value):
 
 
 class Solution:
-    def countSquareFreeProducts(self, nums: List[int]) -> int:
+    def countSquareFreeProducts(self, nums: list[int]) -> int:
         counts = Counter(nums)
         # dp[mask] = ways to pick a square-free set of numbers (at most one copy
         # of each value, values > 1) whose combined prime factors are `mask`.

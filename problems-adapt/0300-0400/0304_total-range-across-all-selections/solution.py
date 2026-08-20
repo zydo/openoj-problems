@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def totalSelectionRanges(self, values: List[int]) -> int:
+    def totalSelectionRanges(self, values: list[int]) -> int:
         MOD = 10**9 + 7
         # Width = max - min, so the total is the sum of subsequence maxes
         # minus mins; sorting loses nothing (inner order is irrelevant).

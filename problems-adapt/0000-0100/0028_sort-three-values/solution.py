@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def sortThreeValues(self, nums: List[int]) -> List[int]:
+    def sortThreeValues(self, nums: list[int]) -> list[int]:
         # With only three keys the multiset fixes the output, so tally each
         # color into a slot indexed by the value itself.
         counts = [0, 0, 0]

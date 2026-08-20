@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestPairXor(self, nums: List[int]) -> int:
+    def largestPairXor(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

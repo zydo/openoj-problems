@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSubarraysWithKOdds(self, nums: List[int], k: int) -> int:
+    def countSubarraysWithKOdds(self, nums: list[int], k: int) -> int:
         n = len(nums)
         # counts[c] = how many earlier prefixes had odd-count c; seeding the
         # empty prefix at 0 makes subarrays starting at index 0 countable.

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestOnesBlock(self, matrix: List[List[int]]) -> int:
+    def largestOnesBlock(self, matrix: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

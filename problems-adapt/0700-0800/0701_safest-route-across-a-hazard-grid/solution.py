@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def maximumClearance(self, grid: List[List[int]]) -> int:
+    def maximumClearance(self, grid: list[list[int]]) -> int:
         n = len(grid)
         # Multi-source BFS from every hazard at once: wavefront exploration
         # makes dist[r][c] the minimum grid steps to the nearest hazard —

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stepsToDrainQueue(self, nums: List[int]) -> int:
+    def stepsToDrainQueue(self, nums: list[int]) -> int:
         n = len(nums)
         if n == 0:
             return 0

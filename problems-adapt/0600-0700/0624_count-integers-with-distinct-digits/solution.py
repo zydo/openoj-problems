@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countDistinctDigitNumbers(self, n: int) -> int:
         def perm(a, k):

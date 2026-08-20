@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxUptime(self, n: int, batteries: List[int]) -> int:
+    def maxUptime(self, n: int, batteries: list[int]) -> int:
         def feasible(t):
             # Over a t-minute horizon a battery powers one computer at a
             # time, so it contributes at most min(b, t) computer-minutes;

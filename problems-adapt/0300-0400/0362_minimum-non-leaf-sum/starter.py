@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumNonLeafSum(self, leaves: List[int]) -> int:
+    def minimumNonLeafSum(self, leaves: list[int]) -> int:
         raise NotImplementedError("TODO")

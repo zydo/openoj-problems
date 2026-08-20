@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastCostToSupplyAll(self, n: int, sources: List[int], links: List[List[int]]) -> int:
+    def leastCostToSupplyAll(self, n: int, sources: list[int], links: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

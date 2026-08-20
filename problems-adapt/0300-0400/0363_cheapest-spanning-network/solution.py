@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestSpanningNetwork(self, n: int, links: List[List[int]]) -> int:
+    def cheapestSpanningNetwork(self, n: int, links: list[list[int]]) -> int:
         # union-find over n + 1 slots (index 0 unused; nodes are 1-based)
         parent = list(range(n + 1))
 

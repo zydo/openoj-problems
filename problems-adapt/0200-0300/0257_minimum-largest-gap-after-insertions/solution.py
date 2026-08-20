@@ -1,9 +1,8 @@
-from typing import List, Optional
 import math
 
 
 class Solution:
-    def minimumLargestGap(self, positions: List[int], k: int) -> float:
+    def minimumLargestGap(self, positions: list[int], k: int) -> float:
         gaps = [positions[i + 1] - positions[i] for i in range(len(positions) - 1)]
         lo = 0.0
         hi = float(max(gaps))

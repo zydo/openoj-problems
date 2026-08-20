@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rootDistances(self, n: int, edges: List[List[int]], queries: List[List[int]]) -> List[int]:
+    def rootDistances(self, n: int, edges: list[list[int]], queries: list[list[int]]) -> list[int]:
         adj = [[] for _ in range(n + 1)]
         for u, v, w in edges:
             adj[u].append((v, w))

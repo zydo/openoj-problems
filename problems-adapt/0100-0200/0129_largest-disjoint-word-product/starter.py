@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestDisjointProduct(self, words: List[str]) -> int:
+    def largestDisjointProduct(self, words: list[str]) -> int:
         raise NotImplementedError("TODO")

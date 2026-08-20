@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mixedLayerSums(self, segments: List[List[int]]) -> List[List[int]]:
+    def mixedLayerSums(self, segments: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

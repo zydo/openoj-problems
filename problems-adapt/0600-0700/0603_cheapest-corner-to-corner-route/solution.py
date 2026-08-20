@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def cheapestCornerRoute(self, grid: List[List[int]]) -> int:
+    def cheapestCornerRoute(self, grid: list[list[int]]) -> int:
         m = len(grid)
         n = len(grid[0])
         INF = float("inf")

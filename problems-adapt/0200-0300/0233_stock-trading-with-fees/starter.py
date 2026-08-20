@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stockTradingWithFees(self, prices: List[int], fee: int) -> int:
+    def stockTradingWithFees(self, prices: list[int], fee: int) -> int:
         raise NotImplementedError("TODO")

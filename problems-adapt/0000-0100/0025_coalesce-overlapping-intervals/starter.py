@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def coalesce(self, intervals: List[List[int]]) -> List[List[int]]:
+    def coalesce(self, intervals: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

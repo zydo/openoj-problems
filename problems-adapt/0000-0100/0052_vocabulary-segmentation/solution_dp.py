@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canSegment(self, s: str, vocabulary: List[str]) -> bool:
+    def canSegment(self, s: str, vocabulary: list[str]) -> bool:
         words = set(vocabulary)
         n = len(s)
         # reachable[i]: the prefix s[0..i) can be segmented.

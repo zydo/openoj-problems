@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSubarraySum(self, nums: List[int]) -> int:
+    def largestSubarraySum(self, nums: list[int]) -> int:
         # Each range answers four questions at once: total sum, best prefix,
         # best suffix, and best interior subarray. Merging two halves glues
         # them together, so one recursion describes the whole array.

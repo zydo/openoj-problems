@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxNonAdjacentEdgeSum(self, edges: List[List[int]]) -> int:
+    def maxNonAdjacentEdgeSum(self, edges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

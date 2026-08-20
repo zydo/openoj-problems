@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minCoinsToCoverSums(self, coins: List[int], target: int) -> int:
+    def minCoinsToCoverSums(self, coins: list[int], target: int) -> int:
         coins = sorted(coins)
         reach = 0  # every value in [1, reach] is obtainable
         added = 0

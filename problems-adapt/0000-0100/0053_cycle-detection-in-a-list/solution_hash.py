@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -8,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def listContainsCycle(self, values: List[int], tailLink: int) -> bool:
+    def listContainsCycle(self, values: list[int], tailLink: int) -> bool:
         if not values:
             # Empty input is acyclic by convention.
             return False

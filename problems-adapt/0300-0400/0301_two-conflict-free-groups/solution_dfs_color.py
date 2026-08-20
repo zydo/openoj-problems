@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canSplitInTwo(self, n: int, conflicts: List[List[int]]) -> bool:
+    def canSplitInTwo(self, n: int, conflicts: list[list[int]]) -> bool:
         # A conflict runs both ways, so build an undirected adjacency list: a
         # valid two-group split is exactly a 2-coloring of this graph.
         adjacency = [[] for _ in range(n + 1)]

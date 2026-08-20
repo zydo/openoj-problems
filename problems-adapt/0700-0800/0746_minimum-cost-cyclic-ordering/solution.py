@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minCostOrder(self, nums: List[int]) -> List[int]:
+    def minCostOrder(self, nums: list[int]) -> list[int]:
         n = len(nums)
         full = (1 << n) - 1
         INF = float("inf")

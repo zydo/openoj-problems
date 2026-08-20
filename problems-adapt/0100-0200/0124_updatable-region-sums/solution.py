@@ -1,8 +1,5 @@
-from typing import List
-
-
 class UpdatableRegions:
-    def __init__(self, matrix: List[List[int]]) -> None:
+    def __init__(self, matrix: list[list[int]]) -> None:
         self.m = len(matrix)
         self.n = len(matrix[0])
         self.matrix = [row[:] for row in matrix]

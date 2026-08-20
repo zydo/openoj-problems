@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -15,8 +12,8 @@ class TreeNode:
 
 
 class Solution:
-    def balancedTreeFromSortedList(self, head: Optional[ListNode]) -> Optional[TreeNode]:
-        def build(node: Optional[ListNode]) -> Optional[TreeNode]:
+    def balancedTreeFromSortedList(self, head: ListNode | None) -> TreeNode | None:
+        def build(node: ListNode | None) -> TreeNode | None:
             if node is None:
                 return None
             # A one-node segment is a leaf. Doing this before the pointer walk

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestCourseMonths(self, n: int, precedence: List[List[int]], time: List[int]) -> int:
+    def fewestCourseMonths(self, n: int, precedence: list[list[int]], time: list[int]) -> int:
         raise NotImplementedError("TODO")

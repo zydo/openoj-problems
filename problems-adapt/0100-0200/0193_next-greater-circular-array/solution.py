@@ -1,11 +1,8 @@
-from typing import List
-
-
 class Solution:
-    def nextGreaterCircular(self, nums: List[int]) -> List[int]:
+    def nextGreaterCircular(self, nums: list[int]) -> list[int]:
         n = len(nums)
         result = [-1] * n
-        stack: List[int] = []
+        stack: list[int] = []
         # One extra lap simulates the wrap-around without copying the array;
         # the resolver of any waiting index lies within one cycle ahead.
         for i in range(2 * n):

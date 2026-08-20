@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def shortestSegment(self, nums: List[int], target: int) -> int:
+    def shortestSegment(self, nums: list[int], target: int) -> int:
         n = len(nums)
         # Negatives break the sliding-window trick, so reason in
         # prefix sums: a subarray sum is prefix[i] - prefix[j], and

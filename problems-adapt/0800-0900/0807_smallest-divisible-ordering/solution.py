@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestDivisibleOrdering(self, nums: List[int], k: int) -> List[int]:
+    def smallestDivisibleOrdering(self, nums: list[int], k: int) -> list[int]:
         n = len(nums)
         lens = [len(str(x)) for x in nums]
         pow10 = [1] * 8

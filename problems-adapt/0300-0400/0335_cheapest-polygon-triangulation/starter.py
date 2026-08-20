@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestTriangulation(self, values: List[int]) -> int:
+    def cheapestTriangulation(self, values: list[int]) -> int:
         raise NotImplementedError("TODO")

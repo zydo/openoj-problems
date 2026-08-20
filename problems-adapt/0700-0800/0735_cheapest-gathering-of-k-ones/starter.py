@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestGathering(self, nums: List[int], k: int, maxFlips: int) -> int:
+    def cheapestGathering(self, nums: list[int], k: int, maxFlips: int) -> int:
         raise NotImplementedError("TODO")

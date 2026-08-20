@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestKSymbolWindow(self, s: str, k: int) -> int:
         # counts holds the multiplicities inside the window [left, right];

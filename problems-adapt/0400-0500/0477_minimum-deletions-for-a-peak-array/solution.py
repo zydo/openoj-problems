@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumPeakDeletions(self, nums: List[int]) -> int:
+    def minimumPeakDeletions(self, nums: list[int]) -> int:
         n = len(nums)
         # lis[i]: longest strictly increasing subsequence ending at i
         # (strict comparisons — plateaus can ride neither slope).

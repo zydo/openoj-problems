@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestScore(self, questions: List[List[int]]) -> int:
+    def bestScore(self, questions: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

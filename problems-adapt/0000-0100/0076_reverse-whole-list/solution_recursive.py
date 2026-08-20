@@ -1,6 +1,4 @@
 import sys
-from typing import List, Optional
-
 # The list can hold 5000 nodes, past CPython's default recursion limit.
 sys.setrecursionlimit(10_000)
 
@@ -12,7 +10,7 @@ class ListNode:
 
 
 class Solution:
-    def reverseWholeList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def reverseWholeList(self, head: ListNode | None) -> ListNode | None:
         # A missing head or a last node is already reversed: it is its own
         # new head and terminates the recursion.
         if head is None or head.next is None:

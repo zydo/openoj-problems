@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minReversalsPerRoot(self, n: int, edges: List[List[int]]) -> List[int]:
+    def minReversalsPerRoot(self, n: int, edges: list[list[int]]) -> list[int]:
         graph = [[] for _ in range(n)]
         for u, v in edges:
             graph[u].append((v, 0))  # traversing u -> v costs 0

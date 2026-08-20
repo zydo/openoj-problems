@@ -1,5 +1,3 @@
-from typing import List
-
 import heapq
 
 
@@ -12,8 +10,8 @@ class RunningMedian:
     """
 
     def __init__(self) -> None:
-        self.low: List[int] = []  # smaller half, max-heap via negation
-        self.high: List[int] = []  # larger half, min-heap
+        self.low: list[int] = []  # smaller half, max-heap via negation
+        self.high: list[int] = []  # larger half, min-heap
 
     def add(self, num: int) -> None:
         heapq.heappush(self.low, -num)

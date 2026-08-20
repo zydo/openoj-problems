@@ -1,7 +1,4 @@
 from bisect import bisect_left
-from typing import Dict, List
-
-
 class HistoryStore:
     """Per-key parallel (values, timestamps) lists, binary-searched on get.
 
@@ -10,8 +7,8 @@ class HistoryStore:
     """
 
     def __init__(self) -> None:
-        self.values: Dict[str, List[str]] = {}
-        self.stamps: Dict[str, List[int]] = {}
+        self.values: dict[str, list[str]] = {}
+        self.stamps: dict[str, list[int]] = {}
 
     def set(self, key: str, value: str, timestamp: int) -> None:
         self.values.setdefault(key, []).append(value)

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestAdditions(self, nums: List[int], n: int) -> int:
+    def fewestAdditions(self, nums: list[int], n: int) -> int:
         raise NotImplementedError("TODO")

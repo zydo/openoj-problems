@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shortestTour(self, coins: List[int], edges: List[List[int]]) -> int:
+    def shortestTour(self, coins: list[int], edges: list[list[int]]) -> int:
         n = len(coins)
         adj = [set() for _ in range(n)]
         for a, b in edges:

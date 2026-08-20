@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastWiringCost(self, points: List[List[int]]) -> int:
+    def leastWiringCost(self, points: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

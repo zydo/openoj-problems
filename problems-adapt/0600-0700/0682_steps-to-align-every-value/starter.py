@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def alignmentCosts(self, nums: List[int], targets: List[int]) -> List[int]:
+    def alignmentCosts(self, nums: list[int], targets: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

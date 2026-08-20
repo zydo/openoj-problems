@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDistinctPrimeProductSubsets(self, nums: List[int]) -> int:
+    def countDistinctPrimeProductSubsets(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 

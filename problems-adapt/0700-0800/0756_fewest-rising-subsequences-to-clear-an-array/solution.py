@@ -1,9 +1,6 @@
 from bisect import bisect_right
-from typing import List
-
-
 class Solution:
-    def fewestRemovals(self, nums: List[int]) -> int:
+    def fewestRemovals(self, nums: list[int]) -> int:
         # Each removal takes out one strictly increasing subsequence, so a
         # non-increasing chain (x >= y in order) must span distinct removals;
         # by Dilworth's theorem the answer is the longest non-increasing

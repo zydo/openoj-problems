@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestDeletions(self, nums: List[int], target: int) -> int:
+    def fewestDeletions(self, nums: list[int], target: int) -> int:
         # dp[xor] = maximum number of elements we can KEEP with XOR == xor
         dp = {0: 0}
         for x in nums:

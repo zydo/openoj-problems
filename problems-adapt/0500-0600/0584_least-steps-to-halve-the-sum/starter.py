@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastStepsToHalve(self, nums: List[int]) -> int:
+    def leastStepsToHalve(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

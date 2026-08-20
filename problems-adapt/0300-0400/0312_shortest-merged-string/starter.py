@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shortestMerge(self, words: List[str]) -> str:
+    def shortestMerge(self, words: list[str]) -> str:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def commonPrefixBits(self, left: int, right: int) -> int:
         # Clear the lowest set bit of right while it still exceeds left:

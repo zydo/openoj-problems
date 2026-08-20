@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def countGridIslandsPerUpdate(self, m: int, n: int, positions: List[List[int]]) -> List[int]:
+    def countGridIslandsPerUpdate(self, m: int, n: int, positions: list[list[int]]) -> list[int]:
         # Union-find over flattened cell ids r * n + c keeps the island count
         # incremental; no full grid rescan after each update.
         parent = list(range(m * n))

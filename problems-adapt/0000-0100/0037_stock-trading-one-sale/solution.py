@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stockTradingOneSale(self, prices: List[int]) -> int:
+    def stockTradingOneSale(self, prices: list[int]) -> int:
         # best seeds at 0: the profit of never trading. min_price tracks the
         # cheapest buy seen so far, so each day needs only one candidate --
         # sell today against it -- instead of testing every buy/sell pair.

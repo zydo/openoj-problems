@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countMaximalEnds(self, nums: List[int]) -> int:
+    def countMaximalEnds(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

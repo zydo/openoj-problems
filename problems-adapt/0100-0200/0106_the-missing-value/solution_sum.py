@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def missingValue(self, nums: List[int]) -> int:
+    def missingValue(self, nums: list[int]) -> int:
         n = len(nums)
         # n distinct values drawn from 0..n: exactly one is absent, and it is
         # the full-range total minus the sum of what is actually present.

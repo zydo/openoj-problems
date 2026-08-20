@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def lastFall(self, n: int, left: List[int], right: List[int]) -> int:
+    def lastFall(self, n: int, left: list[int], right: list[int]) -> int:
         raise NotImplementedError("TODO")

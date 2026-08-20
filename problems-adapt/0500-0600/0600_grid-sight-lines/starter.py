@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSightLines(self, heights: List[List[int]]) -> List[List[int]]:
+    def countSightLines(self, heights: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

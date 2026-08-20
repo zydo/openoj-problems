@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestAbsentPositive(self, nums: List[int]) -> int:
+    def smallestAbsentPositive(self, nums: list[int]) -> int:
         # Work on a copy so the caller's list is never mutated.
         nums = list(nums)
         n = len(nums)

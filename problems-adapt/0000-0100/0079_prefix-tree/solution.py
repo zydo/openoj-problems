@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class _Node:
     """One trie node: 26 child slots indexed by ``ord(c) - ord('a')`` plus a
     whole-word terminator flag."""
@@ -8,7 +5,7 @@ class _Node:
     __slots__ = ("children", "end")
 
     def __init__(self) -> None:
-        self.children: List[Optional[_Node]] = [None] * 26
+        self.children: list[_Node | None] = [None] * 26
         self.end = False
 
 
@@ -35,7 +32,7 @@ class PrefixTree:
             node = child
         node.end = True
 
-    def _walk(self, s: str) -> Optional[_Node]:
+    def _walk(self, s: str) -> _Node | None:
         node = self.root
         for ch in s:
             node = node.children[ord(ch) - 97]

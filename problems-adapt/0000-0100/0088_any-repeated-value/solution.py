@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def anyRepeatedValue(self, nums: List[int]) -> bool:
+    def anyRepeatedValue(self, nums: list[int]) -> bool:
         # One pass with a set of already-visited values.
         seen = set()
         for value in nums:

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findRepeatedWindows(self, s: str) -> List[str]:
+    def findRepeatedWindows(self, s: str) -> list[str]:
         seen = set()
         # A second set collects each repeated window exactly once, even when
         # it occurs three or more times.

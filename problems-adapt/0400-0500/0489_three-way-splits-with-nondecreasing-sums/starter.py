@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countThreeWaySplits(self, nums: List[int]) -> int:
+    def countThreeWaySplits(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

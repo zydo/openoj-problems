@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def lastCrossableDay(self, row: int, col: int, cells: List[List[int]]) -> int:
+    def lastCrossableDay(self, row: int, col: int, cells: list[list[int]]) -> int:
         def can_cross(flooded):
             # Rebuild the grid for this query day: mark the flooded cells
             # as water, then test a top-to-bottom walk by BFS.

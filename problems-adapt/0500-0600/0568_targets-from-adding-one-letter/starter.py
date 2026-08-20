@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def reachableTargets(self, startWords: List[str], targetWords: List[str]) -> int:
+    def reachableTargets(self, startWords: list[str], targetWords: list[str]) -> int:
         raise NotImplementedError("TODO")

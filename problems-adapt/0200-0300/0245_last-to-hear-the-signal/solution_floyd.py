@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def lastToHear(self, edges: List[List[int]], n: int, k: int) -> int:
+    def lastToHear(self, edges: list[list[int]], n: int, k: int) -> int:
         INF = float("inf")
         d = [[INF] * (n + 1) for _ in range(n + 1)]
         for i in range(1, n + 1):

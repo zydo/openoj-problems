@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestBracketDeletions(self, s: str) -> List[str]:
+    def fewestBracketDeletions(self, s: str) -> list[str]:
         def is_valid(string):
             # Balance scan: fail as soon as a ')' has no '(' to match,
             # and require the counter to end back at zero.

@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def peakOverlap(self, intervals: List[List[int]]) -> int:
+    def peakOverlap(self, intervals: list[list[int]]) -> int:
         if not intervals:
             return 0
         intervals = sorted(intervals, key=lambda x: x[0])

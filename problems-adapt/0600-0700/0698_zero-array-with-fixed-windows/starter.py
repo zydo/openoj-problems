@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canZeroArray(self, nums: List[int], k: int) -> bool:
+    def canZeroArray(self, nums: list[int], k: int) -> bool:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestCoins(self, coins: List[int], amount: int) -> int:
+    def fewestCoins(self, coins: list[int], amount: int) -> int:
         # dp[a] = fewest coins for amount a; dp[0] = 0, every other amount
         # starts unreachable (inf doubles as the no-solution marker).
         inf = float("inf")

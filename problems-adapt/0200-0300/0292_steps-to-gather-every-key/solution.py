@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def stepsToGatherKeys(self, grid: List[str]) -> int:
+    def stepsToGatherKeys(self, grid: list[str]) -> int:
         m, n = len(grid), len(grid[0])
         start = None
         target = 0

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countGridIslands(self, grid: List[List[str]]) -> int:
+    def countGridIslands(self, grid: list[list[str]]) -> int:
         if not grid:
             return 0
         rows, cols = len(grid), len(grid[0])

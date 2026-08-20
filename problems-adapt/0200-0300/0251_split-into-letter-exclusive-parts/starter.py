@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def letterExclusiveParts(self, s: str) -> List[int]:
+    def letterExclusiveParts(self, s: str) -> list[int]:
         raise NotImplementedError("TODO")

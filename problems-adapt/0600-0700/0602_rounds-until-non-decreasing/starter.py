@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def roundsUntilNonDecreasing(self, nums: List[int]) -> int:
+    def roundsUntilNonDecreasing(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

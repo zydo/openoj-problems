@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stepsUntilHigher(self, readings: List[int]) -> List[int]:
+    def stepsUntilHigher(self, readings: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostEndPairRemovals(self, nums: List[int]) -> int:
+    def mostEndPairRemovals(self, nums: list[int]) -> int:
         n = len(nums)
 
         def max_for_score(score):

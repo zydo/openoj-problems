@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rectangleUnionArea(self, rectangles: List[List[int]]) -> int:
+    def rectangleUnionArea(self, rectangles: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

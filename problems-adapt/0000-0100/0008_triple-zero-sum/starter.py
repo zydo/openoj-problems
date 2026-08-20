@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def tripleZeroSum(self, nums: List[int]) -> List[List[int]]:
+    def tripleZeroSum(self, nums: list[int]) -> list[list[int]]:
         raise NotImplementedError("TODO")

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def nearestGridExit(self, maze: List[List[str]], entrance: List[int]) -> int:
+    def nearestGridExit(self, maze: list[list[str]], entrance: list[int]) -> int:
         m, n = len(maze), len(maze[0])
         er, ec = entrance[0], entrance[1]
         # Every move costs one step, so plain BFS from the entrance visits cells

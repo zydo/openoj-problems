@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumBookcaseHeight(self, books: List[List[int]], shelfWidth: int) -> int:
+    def minimumBookcaseHeight(self, books: list[list[int]], shelfWidth: int) -> int:
         # Order is fixed and each shelf holds a contiguous run, so the only
         # freedom is where boundaries fall: dp[i] = best height for the first
         # i books, with dp[0] = 0 as the empty base.

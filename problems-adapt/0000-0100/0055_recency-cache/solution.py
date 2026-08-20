@@ -1,14 +1,11 @@
-from typing import Dict, Optional
-
-
 class _Node:
     __slots__ = ("key", "value", "prev", "next")
 
     def __init__(self, key: int = -1, value: int = -1) -> None:
         self.key = key
         self.value = value
-        self.prev: Optional[_Node] = None
-        self.next: Optional[_Node] = None
+        self.prev: _Node | None = None
+        self.next: _Node | None = None
 
 
 class RecencyCache:
@@ -20,7 +17,7 @@ class RecencyCache:
 
     def __init__(self, capacity: int) -> None:
         self.capacity = capacity
-        self.nodes: Dict[int, _Node] = {}
+        self.nodes: dict[int, _Node] = {}
         self.head = _Node()  # sentinel before the most recent entry
         self.tail = _Node()  # sentinel after the least recent entry
         self.head.next = self.tail

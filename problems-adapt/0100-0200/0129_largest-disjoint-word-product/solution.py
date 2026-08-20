@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestDisjointProduct(self, words: List[str]) -> int:
+    def largestDisjointProduct(self, words: list[str]) -> int:
         # Only the set of distinct letters matters: compress each word into
         # a 26-bit mask (bit set per letter present) plus its length.
         masks = []

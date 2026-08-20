@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countDivisorChainArrays(self, n: int, maxValue: int) -> int:
         MOD = 10**9 + 7

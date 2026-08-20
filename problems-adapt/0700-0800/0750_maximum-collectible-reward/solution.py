@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxCollectibleReward(self, rewards: List[int]) -> int:
+    def maxCollectibleReward(self, rewards: list[int]) -> int:
         # Bitset DP: bit j of dp is 1 iff total reward j is achievable.
         # Duplicates can never be reused (a second equal value would require
         # x > total >= x), so sorting + deduplication is safe.

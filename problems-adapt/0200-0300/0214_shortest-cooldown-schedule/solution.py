@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import Counter
 
 
 class Solution:
-    def shortestCooldownSchedule(self, jobs: List[str], n: int) -> int:
+    def shortestCooldownSchedule(self, jobs: list[str], n: int) -> int:
         counts = Counter(jobs)
         max_freq = max(counts.values())
         # Labels tying the max each occupy one slot of the final partial run.

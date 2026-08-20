@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def raiseToPower(self, x: float, n: int) -> float:
         def power(base: float, exp: int) -> float:

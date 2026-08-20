@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countPairSumsDivisibleBy60(self, durations: List[int]) -> int:
+    def countPairSumsDivisibleBy60(self, durations: list[int]) -> int:
         raise NotImplementedError("TODO")

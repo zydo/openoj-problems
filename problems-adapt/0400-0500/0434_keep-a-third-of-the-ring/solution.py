@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestRingPicks(self, ring: List[int]) -> int:
+    def bestRingPicks(self, ring: list[int]) -> int:
         k = len(ring) // 3
 
         def rob(arr, picks):

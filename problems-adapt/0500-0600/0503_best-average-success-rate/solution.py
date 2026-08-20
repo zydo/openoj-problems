@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def bestAverageSuccessRate(self, batches: List[List[int]], extraTrials: int) -> float:
+    def bestAverageSuccessRate(self, batches: list[list[int]], extraTrials: int) -> float:
         def gain(p, t):
             # One more sure trial in batch (p, t) raises its rate by exactly
             # this, and the gain shrinks as the batch grows (concave).

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastDeferrals(self, nums: List[int]) -> int:
+    def leastDeferrals(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

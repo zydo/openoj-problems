@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rotatedArrayMinimum(self, nums: List[int]) -> int:
+    def rotatedArrayMinimum(self, nums: list[int]) -> int:
         lo = 0
         hi = len(nums) - 1
         while lo < hi:

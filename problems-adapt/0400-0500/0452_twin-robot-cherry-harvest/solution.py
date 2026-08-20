@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def twinRobotHarvest(self, grid: List[List[int]]) -> int:
+    def twinRobotHarvest(self, grid: list[list[int]]) -> int:
         rows, cols = len(grid), len(grid[0])
         NEG = float("-inf")
         # both robots drop one row per step, so the state is just the column

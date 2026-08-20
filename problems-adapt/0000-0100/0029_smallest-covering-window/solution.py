@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def smallestCoveringWindow(self, s: str, t: str) -> str:
         if not t or len(t) > len(s):

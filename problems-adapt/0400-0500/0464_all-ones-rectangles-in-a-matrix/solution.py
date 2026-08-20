@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countOnesRectangles(self, mat: List[List[int]]) -> int:
+    def countOnesRectangles(self, mat: list[list[int]]) -> int:
         m = len(mat)
         n = len(mat[0]) if m else 0
         total = 0

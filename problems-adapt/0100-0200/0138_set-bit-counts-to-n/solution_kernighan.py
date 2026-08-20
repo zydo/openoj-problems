@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def setBitCounts(self, n: int) -> List[int]:
+    def setBitCounts(self, n: int) -> list[int]:
         ans = [0] * (n + 1)
         for i in range(1, n + 1):
             # value & (value - 1) clears the lowest set bit in one AND, so

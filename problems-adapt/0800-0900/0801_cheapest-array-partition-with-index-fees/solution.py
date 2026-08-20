@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestPartition(self, nums: List[int], cost: List[int], k: int) -> int:
+    def cheapestPartition(self, nums: list[int], cost: list[int], k: int) -> int:
         n = len(nums)
         pref_nums = [0] * (n + 1)
         pref_cost = [0] * (n + 1)

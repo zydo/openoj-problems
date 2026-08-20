@@ -1,10 +1,8 @@
-from typing import List
-
 from collections import defaultdict, deque
 
 
 class Solution:
-    def shortestLeapRoute(self, nums: List[int]) -> int:
+    def shortestLeapRoute(self, nums: list[int]) -> int:
         n = len(nums)
         # Start is already the target.
         if n == 1:

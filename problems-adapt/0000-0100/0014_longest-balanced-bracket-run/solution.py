@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestBalancedRun(self, s: str) -> int:
         # Stack of indices seeded with -1: a sentinel base marking the

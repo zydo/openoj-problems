@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestCommonSubsequence(self, s: str, t: str) -> int:
         m, n = len(s), len(t)

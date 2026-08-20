@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countGridPaths(self, m: int, n: int) -> int:
         # One rolling row, seeded with the all-ones counts of the first row.

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countRisingPaths(self, grid: List[List[int]]) -> int:
+    def countRisingPaths(self, grid: list[list[int]]) -> int:
         MOD = 10**9 + 7
         m, n = len(grid), len(grid[0])
         # Process cells in decreasing value order: when (i, j) is handled,

@@ -1,13 +1,10 @@
-from typing import List, Optional
-
-
 class Solution:
     def bestTreePurchases(
         self,
         n: int,
-        price: List[int],
-        reward: List[int],
-        edges: List[List[int]],
+        price: list[int],
+        reward: list[int],
+        edges: list[list[int]],
         budget: int,
     ) -> int:
         children = [[] for _ in range(n)]

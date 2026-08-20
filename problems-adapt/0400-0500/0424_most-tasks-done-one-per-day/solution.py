@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def maxTasks(self, windows: List[List[int]]) -> int:
+    def maxTasks(self, windows: list[list[int]]) -> int:
         # Day sweep over windows sorted by start day; a min-heap of end days
         # holds the windows available today.
         windows = sorted(windows)

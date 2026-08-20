@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestDivisibilityChain(self, nums: List[int]) -> List[int]:
+    def longestDivisibilityChain(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def secondNextGreater(self, nums: List[int]) -> List[int]:
+    def secondNextGreater(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

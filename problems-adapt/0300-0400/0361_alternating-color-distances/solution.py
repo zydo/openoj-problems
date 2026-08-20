@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def alternatingColorDistances(self, n: int, redEdges: List[List[int]], blueEdges: List[List[int]]) -> List[int]:
+    def alternatingColorDistances(self, n: int, redEdges: list[list[int]], blueEdges: list[list[int]]) -> list[int]:
         adjacency = ([[] for _ in range(n)], [[] for _ in range(n)])
         for u, v in redEdges:
             adjacency[0][u].append(v)

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countDistinctValidNumerals(self, binary: str) -> int:
         MOD = 10**9 + 7

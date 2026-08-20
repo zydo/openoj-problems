@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countBoundedSums(self, nums: List[int], lower: int, upper: int) -> int:
+    def countBoundedSums(self, nums: list[int], lower: int, upper: int) -> int:
         n = len(nums)
         # Range sums become pairs: count i < j with
         # prefix[j] - prefix[i] in [lower, upper] (leading 0 included).

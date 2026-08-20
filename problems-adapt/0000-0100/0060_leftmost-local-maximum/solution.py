@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leftmostLocalMaximum(self, nums: List[int]) -> int:
+    def leftmostLocalMaximum(self, nums: list[int]) -> int:
         n = len(nums)
         # Scan left to right and stop at the first descent - the direct route to
         # the leftmost qualifying index, which halving search cannot guarantee.

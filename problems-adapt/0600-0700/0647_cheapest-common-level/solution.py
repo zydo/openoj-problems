@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestCommonLevel(self, nums: List[int], cost: List[int]) -> int:
+    def cheapestCommonLevel(self, nums: list[int], cost: list[int]) -> int:
         # The cost sum(|nums[i]-t|*cost[i]) is convex piecewise-linear in t;
         # its slope flips where cumulative cost crosses half the total, so
         # the optimum is the weighted median.

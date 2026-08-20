@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestSharedPrefix(self, arr1: List[int], arr2: List[int]) -> int:
+    def longestSharedPrefix(self, arr1: list[int], arr2: list[int]) -> int:
         # A shared prefix of length L means the first L decimal digits agree,
         # so collect every decimal prefix of arr1 into a set.
         prefixes = set()

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSightlines(self, heights: List[int]) -> List[int]:
+    def countSightlines(self, heights: list[int]) -> list[int]:
         n = len(heights)
         answer = [0] * n
         # Scan right-to-left; the stack holds exactly the people visible to a

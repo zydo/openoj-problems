@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestIntervalGroups(self, intervals: List[List[int]]) -> int:
+    def fewestIntervalGroups(self, intervals: list[list[int]]) -> int:
         # Answer = peak coverage depth: intervals sharing a point pairwise
         # intersect, so they need distinct groups, and peak depth suffices.
         starts = sorted(interval[0] for interval in intervals)

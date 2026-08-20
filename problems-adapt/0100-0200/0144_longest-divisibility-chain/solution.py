@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestDivisibilityChain(self, nums: List[int]) -> List[int]:
+    def longestDivisibilityChain(self, nums: list[int]) -> list[int]:
         # Divisibility is transitive, so in ascending order each element
         # need only be divisible by the previous one — a longest-chain DP.
         nums = sorted(nums)

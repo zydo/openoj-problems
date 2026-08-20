@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canHopAcross(self, stones: List[int]) -> bool:
+    def canHopAcross(self, stones: list[int]) -> bool:
         n = len(stones)
         index = {position: i for i, position in enumerate(stones)}
         # jumps[i] = set of last-jump sizes that can land on stone i

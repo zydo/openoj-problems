@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canPairUp(self, nums: List[int], k: int) -> bool:
+    def canPairUp(self, nums: list[int], k: int) -> bool:
         # tally remainder classes mod k (Python % is already non-negative);
         # r pairs only with k-r, and remainder 0 only with itself
         freq = [0] * k

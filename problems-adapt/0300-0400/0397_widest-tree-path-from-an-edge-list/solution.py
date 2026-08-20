@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def widestTreePathFromEdges(self, edges: List[List[int]]) -> int:
+    def widestTreePathFromEdges(self, edges: list[list[int]]) -> int:
         # No edges: a single-node tree, diameter 0.
         if not edges:
             return 0

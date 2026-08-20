@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastInsertionCost(self, arrivals: List[int]) -> int:
+    def leastInsertionCost(self, arrivals: list[int]) -> int:
         MOD = 10**9 + 7
         m = max(arrivals)
         # Fenwick tree indexed by value: prefix counts with point updates.

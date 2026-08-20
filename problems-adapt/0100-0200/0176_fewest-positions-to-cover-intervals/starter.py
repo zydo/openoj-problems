@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minCoveringPositions(self, intervals: List[List[int]]) -> int:
+    def minCoveringPositions(self, intervals: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

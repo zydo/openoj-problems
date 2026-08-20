@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class SuffixWatcher:
-    def __init__(self, words: List[str]) -> None:
+    def __init__(self, words: list[str]) -> None:
         raise NotImplementedError("TODO")
 
     def feed(self, letter: str) -> bool:

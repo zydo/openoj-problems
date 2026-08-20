@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def firstPlayerWins(self, nums: List[int]) -> bool:
+    def firstPlayerWins(self, nums: list[int]) -> bool:
         raise NotImplementedError("TODO")

@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def smallestCoveringSpan(self, intervals: List[List[int]], queries: List[int]) -> List[int]:
+    def smallestCoveringSpan(self, intervals: list[list[int]], queries: list[int]) -> list[int]:
         # Sweep queries in ascending order; intervals sorted by left end feed the sweep
         # through one forward-moving pointer, so each is pushed exactly once.
         intervals = sorted(intervals)

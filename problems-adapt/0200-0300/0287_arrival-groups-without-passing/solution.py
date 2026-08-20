@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countArrivalGroups(self, destination: int, starts: List[int], velocities: List[int]) -> int:
+    def countArrivalGroups(self, destination: int, starts: list[int], velocities: list[int]) -> int:
         # Cars cannot pass each other, so sweep from the car nearest
         # the destination backward.
         cars = sorted(zip(starts, velocities), reverse=True)

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def boundedPeakSubarrays(self, nums: List[int], left: int, right: int) -> int:
+    def boundedPeakSubarrays(self, nums: list[int], left: int, right: int) -> int:
         def count_below(bound):
             # One-sided count of subarrays whose max is <= bound; the
             # answer follows by subtracting the two bounds.

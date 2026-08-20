@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestOverworkedStretch(self, hours: List[int]) -> int:
+    def longestOverworkedStretch(self, hours: list[int]) -> int:
         # earliest index each prefix value has been seen; {0: -1} lets
         # blocks starting at index 0 be handled uniformly
         first = {0: -1}

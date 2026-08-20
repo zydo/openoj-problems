@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestCircularSegmentSum(self, nums: List[int]) -> int:
+    def largestCircularSegmentSum(self, nums: list[int]) -> int:
         total = sum(nums)
         # One pass runs Kadane twice: best_max for the non-wrapping case, and
         # best_min because a wrapping subarray is total minus the omitted

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def cheapestClosingHour(self, customers: str) -> int:
         # penalty at closing hour j = (#'N' in customers[:j]) + (#'Y' in customers[j:])

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countUnreachablePairs(self, n: int, edges: List[List[int]]) -> int:
+    def countUnreachablePairs(self, n: int, edges: list[list[int]]) -> int:
         # reachability in an undirected graph is an equivalence, so the answer
         # is all pairs minus the pairs inside one connected component
         parent = list(range(n))

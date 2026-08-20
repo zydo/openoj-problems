@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countUnreachablePairs(self, n: int, edges: List[List[int]]) -> int:
+    def countUnreachablePairs(self, n: int, edges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

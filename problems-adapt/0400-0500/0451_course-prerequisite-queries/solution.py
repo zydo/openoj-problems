@@ -1,11 +1,8 @@
 from collections import deque
-from typing import List
-
-
 class Solution:
     def coursePrerequisiteQueries(
-        self, courseCount: int, prerequisites: List[List[int]], queries: List[List[int]]
-    ) -> List[bool]:
+        self, courseCount: int, prerequisites: list[list[int]], queries: list[list[int]]
+    ) -> list[bool]:
         adjacency = [[] for _ in range(courseCount)]
         indegree = [0] * courseCount
         for a, b in prerequisites:

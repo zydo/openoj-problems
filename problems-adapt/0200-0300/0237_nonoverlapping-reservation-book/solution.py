@@ -1,7 +1,4 @@
 from bisect import bisect_right
-from typing import List
-
-
 class ReservationBook:
     """Accepted reservations as parallel sorted starts/ends arrays.
 
@@ -10,8 +7,8 @@ class ReservationBook:
     """
 
     def __init__(self) -> None:
-        self.starts: List[int] = []
-        self.ends: List[int] = []
+        self.starts: list[int] = []
+        self.ends: list[int] = []
 
     def reserveSlot(self, start: int, end: int) -> bool:
         index = bisect_right(self.starts, start) - 1

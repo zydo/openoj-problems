@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestAppleRun(self, n: int, roads: List[List[int]], appleCost: List[int], k: int) -> List[int]:
+    def cheapestAppleRun(self, n: int, roads: list[list[int]], appleCost: list[int], k: int) -> list[int]:
         raise NotImplementedError("TODO")

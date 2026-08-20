@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSubarraySum(self, nums: List[int]) -> int:
+    def largestSubarraySum(self, nums: list[int]) -> int:
         # Kadane's algorithm: `current` is the best sum of a subarray ending
         # exactly here; every optimal subarray ends somewhere, so the answer
         # is the max of `current` over all indices.

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def stockTradingTwoSales(self, prices: List[int]) -> int:
+    def stockTradingTwoSales(self, prices: list[int]) -> int:
         # Wealth after each day in four states: after the first buy, first
         # sell, second buy, second sell. Buy states start at -1e9, a
         # sentinel meaning "not yet reachable" (prices are at most 1e5, so

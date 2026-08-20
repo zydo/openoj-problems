@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def loneElement(self, nums: List[int]) -> int:
+    def loneElement(self, nums: list[int]) -> int:
         # XOR fold: x ^ x = 0 cancels each pair, x ^ 0 = x passes the lone
         # value through, and commutativity makes grouping order irrelevant.
         result = 0

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findMatrixPeak(self, mat: List[List[int]]) -> List[int]:
+    def findMatrixPeak(self, mat: list[list[int]]) -> list[int]:
         m, n = len(mat), len(mat[0])
         lo, hi = 0, m - 1
         while lo <= hi:

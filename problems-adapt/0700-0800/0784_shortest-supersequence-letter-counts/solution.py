@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def supersequenceLetterCounts(self, words: List[str]) -> List[List[int]]:
+    def supersequenceLetterCounts(self, words: list[str]) -> list[list[int]]:
         chars = set()
         edges = []
         for w in words:

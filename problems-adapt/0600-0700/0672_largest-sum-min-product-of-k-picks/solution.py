@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def largestSumMinProduct(self, nums1: List[int], nums2: List[int], k: int) -> int:
+    def largestSumMinProduct(self, nums1: list[int], nums2: list[int], k: int) -> int:
         # Enumerate which element provides the min(nums2): sweeping pairs in
         # descending nums2 order means everything already seen has nums2 >= b,
         # so b is the minimum of any set drawn from pairs seen so far.

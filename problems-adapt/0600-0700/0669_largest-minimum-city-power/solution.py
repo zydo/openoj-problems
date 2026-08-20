@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestMinPower(self, stations: List[int], r: int, k: int) -> int:
+    def largestMinPower(self, stations: list[int], r: int, k: int) -> int:
         n = len(stations)
         # power[i] = initial number of power stations serving city i
         diff = [0] * (n + 1)

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxCoinsFromStackTops(self, stacks: List[List[int]], k: int) -> int:
+    def maxCoinsFromStackTops(self, stacks: list[list[int]], k: int) -> int:
         # dp[j]: best value using exactly j coins from the stacks seen so far
         dp = [0] * (k + 1)
         for pile in stacks:

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestPairScoreWithDistancePenalty(self, values: List[int]) -> int:
+    def bestPairScoreWithDistancePenalty(self, values: list[int]) -> int:
         best_prefix = values[0]  # max of values[i] + i seen so far
         best = float("-inf")
         for j in range(1, len(values)):

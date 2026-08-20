@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def splitIntoRuns(self, nums: List[int], k: int) -> bool:
+    def splitIntoRuns(self, nums: list[int], k: int) -> bool:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countPlayableWords(self, words: List[str], puzzles: List[str]) -> List[int]:
+    def countPlayableWords(self, words: list[str], puzzles: list[str]) -> list[int]:
         raise NotImplementedError("TODO")

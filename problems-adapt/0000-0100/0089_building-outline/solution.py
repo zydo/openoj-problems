@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def buildingOutline(self, buildings: List[List[int]]) -> List[List[int]]:
+    def buildingOutline(self, buildings: list[list[int]]) -> list[list[int]]:
         events = []
         for left, right, height in buildings:
             # Tuple sorting encodes the tie-breaking: starts (kind 0) before

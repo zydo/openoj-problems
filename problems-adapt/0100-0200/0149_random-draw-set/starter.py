@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class RandomDrawSet:
     def __init__(self) -> None:
         raise NotImplementedError("TODO")

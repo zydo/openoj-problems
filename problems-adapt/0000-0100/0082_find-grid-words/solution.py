@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findGridWords(self, board: List[List[str]], words: List[str]) -> List[str]:
+    def findGridWords(self, board: list[list[str]], words: list[str]) -> list[str]:
         m, n = len(board), len(board[0])
         # Trie of nested dicts; a terminal "#" key stores the whole word so it
         # can be recovered without rebuilding it letter by letter.

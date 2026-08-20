@@ -1,9 +1,8 @@
-from typing import List, Optional
 import bisect
 
 
 class Solution:
-    def fewestOverwrites(self, values: List[int], pool: List[int]) -> int:
+    def fewestOverwrites(self, values: list[int], pool: list[int]) -> int:
         # sorted, distinct replacement candidates so binary search applies
         pool = sorted(set(pool))
         m = len(pool)

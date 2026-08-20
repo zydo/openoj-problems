@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -8,5 +5,5 @@ class ListNode:
 
 
 class Solution:
-    def addDigitLists(self, first: Optional[ListNode], second: Optional[ListNode]) -> Optional[ListNode]:
+    def addDigitLists(self, first: ListNode | None, second: ListNode | None) -> ListNode | None:
         raise NotImplementedError("TODO")

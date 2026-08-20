@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def fewestSquareSummands(self, n: int) -> int:
         # The squares available as subtractions, ascending — so the inner

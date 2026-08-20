@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def spreadTimes(self, edges: List[List[int]]) -> List[int]:
+    def spreadTimes(self, edges: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

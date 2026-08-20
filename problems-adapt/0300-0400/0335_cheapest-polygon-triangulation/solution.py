@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestTriangulation(self, values: List[int]) -> int:
+    def cheapestTriangulation(self, values: list[int]) -> int:
         # dp[i][j] = minimum score to triangulate the sub-polygon values[i..j].
         n = len(values)
         dp = [[0] * n for _ in range(n)]

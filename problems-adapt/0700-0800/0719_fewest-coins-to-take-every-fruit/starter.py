@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minCoinsForAllFruits(self, prices: List[int]) -> int:
+    def minCoinsForAllFruits(self, prices: list[int]) -> int:
         raise NotImplementedError("TODO")

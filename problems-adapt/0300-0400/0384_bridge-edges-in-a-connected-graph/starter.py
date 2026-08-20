@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findBridges(self, n: int, edges: List[List[int]]) -> List[List[int]]:
+    def findBridges(self, n: int, edges: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

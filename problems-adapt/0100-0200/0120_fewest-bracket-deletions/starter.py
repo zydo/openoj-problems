@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestBracketDeletions(self, s: str) -> List[str]:
+    def fewestBracketDeletions(self, s: str) -> list[str]:
         raise NotImplementedError("TODO")

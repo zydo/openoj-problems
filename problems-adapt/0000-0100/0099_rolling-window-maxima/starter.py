@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rollingWindowMaxima(self, nums: List[int], k: int) -> List[int]:
+    def rollingWindowMaxima(self, nums: list[int], k: int) -> list[int]:
         raise NotImplementedError("TODO")

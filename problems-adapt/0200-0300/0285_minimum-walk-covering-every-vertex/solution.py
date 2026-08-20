@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def minimumCoveringWalkLength(self, adjacency: List[List[int]]) -> int:
+    def minimumCoveringWalkLength(self, adjacency: list[list[int]]) -> int:
         n = len(adjacency)
         full = (1 << n) - 1
         # Walks may revisit nodes, so the state is (node, visited

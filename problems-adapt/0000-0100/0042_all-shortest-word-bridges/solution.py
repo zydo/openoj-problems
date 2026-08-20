@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def allShortestBridges(self, startWord: str, targetWord: str, dictionary: List[str]) -> List[List[str]]:
+    def allShortestBridges(self, startWord: str, targetWord: str, dictionary: list[str]) -> list[list[str]]:
         from collections import defaultdict, deque
 
         word_set = set(dictionary)

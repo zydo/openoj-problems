@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSquareSide(self, grid: List[List[int]], budget: int) -> int:
+    def largestSquareSide(self, grid: list[list[int]], budget: int) -> int:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSubarraysWithExtremes(self, nums: List[int], lo: int, hi: int) -> int:
+    def countSubarraysWithExtremes(self, nums: list[int], lo: int, hi: int) -> int:
         count = 0
         # most recent positions of an out-of-range element, of lo, of hi
         last_bad = -1

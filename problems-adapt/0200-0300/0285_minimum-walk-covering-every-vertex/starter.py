@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumCoveringWalkLength(self, adjacency: List[List[int]]) -> int:
+    def minimumCoveringWalkLength(self, adjacency: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def ascentretreat(self, nums: List[int]) -> bool:
+    def ascentretreat(self, nums: list[int]) -> bool:
         if len(nums) < 3:
             return False
         stack = []

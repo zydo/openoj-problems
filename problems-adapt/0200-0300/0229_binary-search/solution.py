@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def search(self, nums: List[int], target: int) -> int:
+    def search(self, nums: list[int], target: int) -> int:
         # Invariant: if the target exists, its index stays inside nums[lo..hi].
         lo, hi = 0, len(nums) - 1
         while lo <= hi:

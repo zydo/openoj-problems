@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumPairingDistance(self, points: List[List[int]], anchors: List[List[int]]) -> int:
+    def minimumPairingDistance(self, points: list[list[int]], anchors: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

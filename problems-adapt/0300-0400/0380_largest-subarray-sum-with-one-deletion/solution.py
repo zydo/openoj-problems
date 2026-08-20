@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSumWithDeletion(self, arr: List[int]) -> int:
+    def largestSumWithDeletion(self, arr: list[int]) -> int:
         n = len(arr)
         if n == 1:
             return arr[0]

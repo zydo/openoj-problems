@@ -1,10 +1,9 @@
-from typing import List, Optional
 import heapq
 from collections import defaultdict
 
 
 class Solution:
-    def lastToHear(self, edges: List[List[int]], n: int, k: int) -> int:
+    def lastToHear(self, edges: list[list[int]], n: int, k: int) -> int:
         graph = defaultdict(list)
         for u, v, w in edges:
             graph[u].append((v, w))

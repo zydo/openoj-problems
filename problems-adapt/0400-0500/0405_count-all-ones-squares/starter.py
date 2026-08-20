@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countAllOnesSquares(self, matrix: List[List[int]]) -> int:
+    def countAllOnesSquares(self, matrix: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

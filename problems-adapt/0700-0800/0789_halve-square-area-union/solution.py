@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def halveAreaUnion(self, squares: List[List[int]]) -> float:
+    def halveAreaUnion(self, squares: list[list[int]]) -> float:
         # Sweep the square bottoms/tops in y; between consecutive events the
         # union of active x-intervals — and therefore the covered width — is
         # constant. A segment tree over compressed x-coordinates maintains the

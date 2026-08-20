@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def processingOrder(self, jobs: List[List[int]]) -> List[int]:
+    def processingOrder(self, jobs: list[list[int]]) -> list[int]:
         n = len(jobs)
         # Indices pre-sorted by (enqueueTime, index): the arrival stream only moves forward.
         by_enqueue = sorted(range(n), key=lambda i: (jobs[i][0], i))

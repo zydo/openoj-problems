@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countNonCrossingPairings(self, numPeople: int) -> int:
         MOD = 10**9 + 7

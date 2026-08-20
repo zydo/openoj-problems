@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxSlotAndSum(self, nums: List[int], slots: int) -> int:
+    def maxSlotAndSum(self, nums: list[int], slots: int) -> int:
         # Model each slot as two individual positions: position p belongs to
         # slot p//2 + 1. slots <= 9 gives at most 18 positions, so 2^18
         # states exhaustively cover every assignment.

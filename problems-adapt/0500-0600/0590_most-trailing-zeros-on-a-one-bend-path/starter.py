@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostTrailingZeros(self, grid: List[List[int]]) -> int:
+    def mostTrailingZeros(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

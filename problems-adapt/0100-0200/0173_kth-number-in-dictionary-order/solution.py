@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def kthDictionaryNumber(self, n: int, k: int) -> int:
         def count_steps(n, n1, n2):

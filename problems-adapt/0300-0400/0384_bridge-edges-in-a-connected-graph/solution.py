@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findBridges(self, n: int, edges: List[List[int]]) -> List[List[int]]:
+    def findBridges(self, n: int, edges: list[list[int]]) -> list[list[int]]:
         graph = [[] for _ in range(n)]
         for a, b in edges:
             graph[a].append(b)

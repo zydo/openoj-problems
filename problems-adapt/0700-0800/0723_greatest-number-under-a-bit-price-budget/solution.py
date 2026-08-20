@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def greatestUnderBudget(self, k: int, x: int) -> int:
         # Accumulated price of n: for each watched bit position p = x, 2x, ...,

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def richestRide(self, lane1: List[int], lane2: List[int]) -> int:
+    def richestRide(self, lane1: list[int], lane2: list[int]) -> int:
         NEG = float("-inf")
 
         n = len(lane1)

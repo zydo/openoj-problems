@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumOverlapRemovals(self, intervals: List[List[int]]) -> int:
+    def minimumOverlapRemovals(self, intervals: list[list[int]]) -> int:
         removed = 0
         # None (not 0) marks "nothing kept yet" since endpoints may be <= 0.
         prev_end = None

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def steppingSum(self, nums: List[int]) -> int:
+    def steppingSum(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         # cnt[v] / sm[v]: number of, and total element sum of, the good
         # subsequences seen so far that end in value v. The differ-by-one

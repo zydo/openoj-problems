@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def palindromicConcatenations(self, words: List[str]) -> List[List[int]]:
+    def palindromicConcatenations(self, words: list[str]) -> list[list[int]]:
         # word -> index: partners are found by hash lookup, not pair scanning.
         index = {w: i for i, w in enumerate(words)}
         results = set()

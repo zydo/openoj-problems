@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def kthSubsequenceSum(self, nums: List[int], k: int) -> int:
+    def kthSubsequenceSum(self, nums: list[int], k: int) -> int:
         # every subsequence sum = base - (subset sum of absolute values)
         base = sum(x for x in nums if x > 0)
         costs = sorted(abs(x) for x in nums)

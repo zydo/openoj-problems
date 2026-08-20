@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def hasEqualSumSplit(self, nums: List[int]) -> bool:
+    def hasEqualSumSplit(self, nums: list[int]) -> bool:
         total = sum(nums)
         if total % 2:
             # An odd total cannot split into two equal halves.

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def packedStoreLength(self, words: List[str]) -> int:
+    def packedStoreLength(self, words: list[str]) -> int:
         # A word needs no slot of its own when another word ends with
         # it: start from every word, then discard strict suffixes.
         keep = set(words)

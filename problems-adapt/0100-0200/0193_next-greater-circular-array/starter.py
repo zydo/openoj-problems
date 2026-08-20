@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nextGreaterCircular(self, nums: List[int]) -> List[int]:
+    def nextGreaterCircular(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

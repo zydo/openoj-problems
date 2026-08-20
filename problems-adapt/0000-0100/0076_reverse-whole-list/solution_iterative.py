@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -8,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def reverseWholeList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def reverseWholeList(self, head: ListNode | None) -> ListNode | None:
         # prev heads the already-reversed chain; current is the node being
         # processed. Invariant: behind prev everything is reversed, ahead of
         # current nothing has been touched.

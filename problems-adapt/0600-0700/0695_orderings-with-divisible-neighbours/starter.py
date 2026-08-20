@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDivisibleOrderings(self, nums: List[int]) -> int:
+    def countDivisibleOrderings(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

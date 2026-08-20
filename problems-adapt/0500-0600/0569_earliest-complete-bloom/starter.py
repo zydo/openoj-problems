@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def earliestCompleteBloom(self, plantTime: List[int], growTime: List[int]) -> int:
+    def earliestCompleteBloom(self, plantTime: list[int], growTime: list[int]) -> int:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countArithmeticSubsequences(self, nums: List[int]) -> int:
+    def countArithmeticSubsequences(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

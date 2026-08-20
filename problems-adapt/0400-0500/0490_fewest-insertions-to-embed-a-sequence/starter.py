@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestInsertions(self, target: List[int], arr: List[int]) -> int:
+    def fewestInsertions(self, target: list[int], arr: list[int]) -> int:
         raise NotImplementedError("TODO")

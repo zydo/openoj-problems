@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def greatestDistanceToLand(self, grid: List[List[int]]) -> int:
+    def greatestDistanceToLand(self, grid: list[list[int]]) -> int:
         n = len(grid)
         # copy so the input is not mutated; the copy doubles as visited marks
         g = [row[:] for row in grid]

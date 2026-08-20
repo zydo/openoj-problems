@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_left
 
 
 class Solution:
-    def longestNestedChain(self, pairs: List[List[int]]) -> int:
+    def longestNestedChain(self, pairs: list[list[int]]) -> int:
         # Width ascending, height descending on ties: a chain needs strictly
         # increasing widths, so at most one pair per width fits, and the
         # descending tie-break keeps equal widths from chaining among

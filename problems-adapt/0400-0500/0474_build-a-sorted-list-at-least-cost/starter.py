@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastInsertionCost(self, arrivals: List[int]) -> int:
+    def leastInsertionCost(self, arrivals: list[int]) -> int:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def lengthOfBoundedStepLIS(self, nums: List[int], k: int) -> int:
+    def lengthOfBoundedStepLIS(self, nums: list[int], k: int) -> int:
         # Max segment tree indexed by VALUE: leaf v holds the longest
         # valid subsequence seen so far that ends with value v.
         size = 1

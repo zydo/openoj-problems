@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def shortestWalk(self, grid: List[List[int]], k: int) -> int:
+    def shortestWalk(self, grid: list[list[int]], k: int) -> int:
         m, n = len(grid), len(grid[0])
         # If we can eliminate every obstacle on a monotone path, take it directly.
         if k >= m + n - 2:

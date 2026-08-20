@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rightSmallerCounts(self, nums: List[int]) -> List[int]:
+    def rightSmallerCounts(self, nums: list[int]) -> list[int]:
         offset = 10002  # maps nums[i] in [-10^4, 10^4] to a positive index
         size = 20005
         bit = [0] * (size + 1)

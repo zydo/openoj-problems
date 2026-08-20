@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countProductArrays(self, queries: List[List[int]]) -> List[int]:
+    def countProductArrays(self, queries: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

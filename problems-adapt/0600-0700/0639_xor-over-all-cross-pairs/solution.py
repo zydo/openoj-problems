@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def xorCrossPairs(self, nums1: List[int], nums2: List[int]) -> int:
+    def xorCrossPairs(self, nums1: list[int], nums2: list[int]) -> int:
         # Each a_i appears m times and each b_j n times in the n*m pair XORs;
         # even counts self-cancel, so only parity survives.
         answer = 0

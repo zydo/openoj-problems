@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestSharedRun(self, first: List[int], second: List[int]) -> int:
+    def longestSharedRun(self, first: list[int], second: list[int]) -> int:
         m, n = len(first), len(second)
         # dp[j] = longest common run starting exactly at first[i+1], second[j];
         # sweeping i downward keeps row i+1 available when row i is computed.

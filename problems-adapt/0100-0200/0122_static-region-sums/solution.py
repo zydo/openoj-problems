@@ -1,8 +1,5 @@
-from typing import List
-
-
 class StaticRegions:
-    def __init__(self, matrix: List[List[int]]) -> None:
+    def __init__(self, matrix: list[list[int]]) -> None:
         rows, cols = len(matrix), len(matrix[0])
         # Integral image: prefix[r][c] sums rows 0..r-1 and columns
         # 0..c-1. The guard row and column of zeros remove every

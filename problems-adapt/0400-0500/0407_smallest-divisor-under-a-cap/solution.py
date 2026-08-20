@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestDivisorUnderCap(self, nums: List[int], cap: int) -> int:
+    def smallestDivisorUnderCap(self, nums: list[int], cap: int) -> int:
         # (x + d - 1) // d is the float-free ceiling of x / d.
         def total(divisor):
             return sum((x + divisor - 1) // divisor for x in nums)

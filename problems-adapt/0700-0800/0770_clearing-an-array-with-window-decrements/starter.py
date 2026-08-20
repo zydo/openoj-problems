@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canClear(self, nums: List[int], queries: List[List[int]]) -> bool:
+    def canClear(self, nums: list[int], queries: list[list[int]]) -> bool:
         raise NotImplementedError("TODO")

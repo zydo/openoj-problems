@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestSubarrayLength(self, nums: List[int], threshold: int) -> int:
+    def smallestSubarrayLength(self, nums: list[int], threshold: int) -> int:
         n = len(nums)
         # next_le[i] = nearest index j > i with nums[j] <= nums[i]
         next_le = [n] * n

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def hasKEqualSumGroups(self, nums: List[int], k: int) -> bool:
+    def hasKEqualSumGroups(self, nums: list[int], k: int) -> bool:
         total = sum(nums)
         if total % k:
             return False

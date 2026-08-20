@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestIslandAfterFlip(self, grid: List[List[int]]) -> int:
+    def largestIslandAfterFlip(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

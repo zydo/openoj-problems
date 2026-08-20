@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minFlips(self, n: int, roads: List[List[int]]) -> int:
+    def minFlips(self, n: int, roads: list[list[int]]) -> int:
         adj = [[] for _ in range(n)]
         for a, b in roads:
             adj[a].append((b, 1))  # original direction a -> b

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def mostFrequentColor(self, colors: str, edges: List[List[int]]) -> int:
+    def mostFrequentColor(self, colors: str, edges: list[list[int]]) -> int:
         n = len(colors)
         graph = [[] for _ in range(n)]
         indeg = [0] * n

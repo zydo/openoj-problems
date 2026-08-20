@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stepsToGatherKeys(self, grid: List[str]) -> int:
+    def stepsToGatherKeys(self, grid: list[str]) -> int:
         raise NotImplementedError("TODO")

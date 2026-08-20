@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stonePilesGameIII(self, piles: List[int]) -> str:
+    def stonePilesGameIII(self, piles: list[int]) -> str:
         n = len(piles)
         # dp[i] = best (current player's score - opponent's score) on the
         # suffix starting at i; dp[n] = 0 is the empty-row base.

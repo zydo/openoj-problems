@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def minimumRoutePeak(self, heights: List[List[int]]) -> int:
+    def minimumRoutePeak(self, heights: list[list[int]]) -> int:
         n = len(heights)
         INF = float("inf")
         # A path's cost is the max elevation along it, and max is

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import Counter
 
 
 class Solution:
-    def splitIntoRuns(self, nums: List[int], k: int) -> bool:
+    def splitIntoRuns(self, nums: list[int], k: int) -> bool:
         # size-k sets can partition the array only if k divides n
         if len(nums) % k != 0:
             return False

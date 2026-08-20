@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def mostCapitalFromProjects(self, k: int, w: int, profits: List[int], capital: List[int]) -> int:
+    def mostCapitalFromProjects(self, k: int, w: int, profits: list[int], capital: list[int]) -> int:
         # Greedy: each round finish the affordable project with the largest
         # profit — finishing only adds capital, so the affordable set never
         # shrinks and no smaller-profit pick can unlock more later.

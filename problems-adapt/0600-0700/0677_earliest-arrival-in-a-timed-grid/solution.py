@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def earliestArrival(self, grid: List[List[int]]) -> int:
+    def earliestArrival(self, grid: list[list[int]]) -> int:
         m = len(grid)
         n = len(grid[0])
         if m == 1 and n == 1:

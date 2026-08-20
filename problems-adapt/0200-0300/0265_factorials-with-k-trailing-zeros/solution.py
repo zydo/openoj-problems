@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countFactorialsWithKZeros(self, k: int) -> int:
         def zeta(x):

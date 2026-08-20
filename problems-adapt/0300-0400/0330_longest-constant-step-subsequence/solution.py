@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestConstantStepSubsequence(self, nums: List[int]) -> int:
+    def longestConstantStepSubsequence(self, nums: list[int]) -> int:
         # dp[i][d] = length of the longest constant-step subsequence ending at i
         # with common difference d.
         n = len(nums)

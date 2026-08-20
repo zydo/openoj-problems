@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxNonAdjacentLoot(self, nums: List[int]) -> int:
+    def maxNonAdjacentLoot(self, nums: list[int]) -> int:
         # Rolling two-variable DP: cur = best through position i-1, prev = best
         # through position i-2; both start at 0 ("nothing taken yet").
         prev, cur = 0, 0

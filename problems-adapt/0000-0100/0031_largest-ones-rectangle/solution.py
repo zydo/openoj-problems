@@ -1,10 +1,7 @@
-from typing import List, Optional
-
-
 class Solution:
     # Largest rectangle under one row's histogram: monotonic stack of
     # column indices with strictly increasing heights.
-    def largest_area(self, heights: List[int]) -> int:
+    def largest_area(self, heights: list[int]) -> int:
         stack = []
         best = 0
         # The trailing 0 is a sentinel that flushes whatever remains on
@@ -23,7 +20,7 @@ class Solution:
             stack.append(i)
         return best
 
-    def largestOnesRectangle(self, matrix: List[List[str]]) -> int:
+    def largestOnesRectangle(self, matrix: list[list[str]]) -> int:
         if not matrix or not matrix[0]:
             return 0
         rows, cols = len(matrix), len(matrix[0])

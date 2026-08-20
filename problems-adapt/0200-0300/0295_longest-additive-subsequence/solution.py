@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestAdditiveSubseq(self, nums: List[int]) -> int:
+    def longestAdditiveSubseq(self, nums: list[int]) -> int:
         # dp[(j, i)] = length of the longest additive subsequence ending
         # with nums[j], nums[i].
         index_of = {value: i for i, value in enumerate(nums)}

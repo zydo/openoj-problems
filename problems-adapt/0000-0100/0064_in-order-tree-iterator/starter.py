@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class InOrderTreeIterator:
-    def __init__(self, root: Optional[TreeNode]) -> None:
+    def __init__(self, root: TreeNode | None) -> None:
         raise NotImplementedError("TODO")
 
     def next(self) -> int:

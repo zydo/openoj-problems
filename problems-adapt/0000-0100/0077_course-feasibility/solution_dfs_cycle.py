@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def coursesFeasible(self, courseCount: int, prerequisites: List[List[int]]) -> bool:
+    def coursesFeasible(self, courseCount: int, prerequisites: list[list[int]]) -> bool:
         # Each pair [course, prereq] is an edge prereq -> course; all courses
         # can finish exactly when this graph is acyclic.
         adjacency = [[] for _ in range(courseCount)]

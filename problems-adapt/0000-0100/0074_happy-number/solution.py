@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def isHappy(self, n: int) -> bool:
         # Sum of the squares of the digits, one digit per iteration.

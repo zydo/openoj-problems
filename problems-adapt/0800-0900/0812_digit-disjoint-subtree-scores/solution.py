@@ -1,11 +1,9 @@
-from typing import List, Optional
-
 MOD = 10**9 + 7
 NEG = -(10**18)
 
 
 class Solution:
-    def digitDisjointScoreSum(self, vals: List[int], par: List[int]) -> int:
+    def digitDisjointScoreSum(self, vals: list[int], par: list[int]) -> int:
         n = len(vals)
         children = [[] for _ in range(n)]
         for i in range(1, n):

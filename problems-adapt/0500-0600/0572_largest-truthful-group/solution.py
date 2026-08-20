@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostTruthful(self, statements: List[List[int]]) -> int:
+    def mostTruthful(self, statements: list[list[int]]) -> int:
         n = len(statements)
         best = 0
         # Enumerate every assignment: bit i set means person i is truthful.

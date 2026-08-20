@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestWorkSessions(self, tasks: List[int], sessionTime: int) -> int:
+    def fewestWorkSessions(self, tasks: list[int], sessionTime: int) -> int:
         raise NotImplementedError("TODO")

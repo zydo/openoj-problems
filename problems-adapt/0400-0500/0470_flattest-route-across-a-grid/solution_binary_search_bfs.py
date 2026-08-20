@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def flattestRoute(self, heights: List[List[int]]) -> int:
+    def flattestRoute(self, heights: list[list[int]]) -> int:
         rows, cols = len(heights), len(heights[0])
         # hi = the largest adjacent height difference: no path can force a
         # bigger step. A 1x1 grid has no edges, so hi stays 0 and the loop

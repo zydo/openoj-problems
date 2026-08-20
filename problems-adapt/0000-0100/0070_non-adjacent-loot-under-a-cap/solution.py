@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def minNonAdjacentLootCap(self, nums: List[int], k: int) -> int:
+    def minNonAdjacentLootCap(self, nums: list[int], k: int) -> int:
         def feasible(cap: int) -> bool:
             # Greedy scan: take every position that fits under the cap and skip
             # its neighbour. Taking an eligible position is never worse than

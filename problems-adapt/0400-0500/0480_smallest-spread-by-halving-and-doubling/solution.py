@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def smallestSpread(self, nums: List[int]) -> int:
+    def smallestSpread(self, nums: list[int]) -> int:
         # Normalize: odd values are doubled once — their only upward move —
         # so afterwards every element can only shrink by halving, and every
         # reachable configuration is still visited.

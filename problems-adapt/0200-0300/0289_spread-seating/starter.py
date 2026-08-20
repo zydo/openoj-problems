@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class SpreadSeating:
     def __init__(self, n: int) -> None:
         raise NotImplementedError("TODO")

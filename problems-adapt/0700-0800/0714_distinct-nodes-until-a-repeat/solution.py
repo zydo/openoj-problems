@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDistinctUntilRepeat(self, edges: List[int]) -> List[int]:
+    def countDistinctUntilRepeat(self, edges: list[int]) -> list[int]:
         n = len(edges)
         state = [0] * n  # 0 unvisited, 1 on the current path, 2 resolved
         ans = [0] * n

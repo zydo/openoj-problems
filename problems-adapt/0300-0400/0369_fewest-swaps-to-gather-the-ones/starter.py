@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestSwapsToGatherOnes(self, bits: List[int]) -> int:
+    def fewestSwapsToGatherOnes(self, bits: list[int]) -> int:
         raise NotImplementedError("TODO")

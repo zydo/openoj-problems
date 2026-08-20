@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestUnequalPath(self, parent: List[int], s: str) -> int:
+    def longestUnequalPath(self, parent: list[int], s: str) -> int:
         n = len(parent)
         children = [[] for _ in range(n)]
         for i in range(1, n):

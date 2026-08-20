@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def countVisibleNodes(self, root: Optional[TreeNode]) -> int:
+    def countVisibleNodes(self, root: TreeNode | None) -> int:
         count = 0
         # each entry carries the max value along its root-to-node path
         stack = [(root, root.val)]

@@ -1,12 +1,9 @@
-from typing import List
-
-
 class Solution:
-    def sharedIdleGaps(self, timelines: List[List[List[int]]]) -> List[List[int]]:
+    def sharedIdleGaps(self, timelines: list[list[list[int]]]) -> list[list[int]]:
         # A moment is free exactly when no timeline is busy, so only the
         # union matters: pool every interval, forgetting ownership.
         intervals = sorted(interval for timeline in timelines for interval in timeline)
-        free: List[List[int]] = []
+        free: list[list[int]] = []
         previous_end = None
         for start, end in intervals:
             # Starting strictly beyond the furthest end seen so far proves

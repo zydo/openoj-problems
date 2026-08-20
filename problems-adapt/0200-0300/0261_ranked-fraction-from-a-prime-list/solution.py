@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rankedPrimeFraction(self, values: List[int], rank: int) -> List[int]:
+    def rankedPrimeFraction(self, values: list[int], rank: int) -> list[int]:
         n = len(values)
         lo, hi = 0.0, 1.0
         ans = [values[0], values[-1]]

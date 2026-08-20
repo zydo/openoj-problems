@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def roundTripHarvest(self, grid: List[List[int]]) -> int:
+    def roundTripHarvest(self, grid: list[list[int]]) -> int:
         n = len(grid)
         # dp[r1][r2]: best cherries with walker 1 at (r1, t-r1) and walker 2 at
         # (r2, t-r2) after t steps; -1 marks unreachable states.

@@ -171,7 +171,10 @@ def check_bundle(bundle: Path) -> list[Failure]:
         if isinstance(cases["hidden"], list) and len(cases["hidden"]) < 10:
             fail(f"only {len(cases['hidden'])} hidden cases (need >= 10)")
 
-    # starters: regenerate from problem.json and compare byte-for-byte
+    # starters: regenerate from problem.json and compare byte-for-byte.
+    # Python style follows the tree: the adapted tree is modernized, the
+    # live tree keeps its legacy annotations.
+    gen_starters.set_python_style("modern" if "problems-adapt" in bundle.parts else "legacy")
     try:
         generated = gen_starters.starter_files(problem["invocation"])
     except Exception as error:  # noqa: BLE001

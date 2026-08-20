@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rangeProducts(self, queries: List[List[int]]) -> List[int]:
+    def rangeProducts(self, queries: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def distanceSums(self, nums: List[int]) -> List[int]:
+    def distanceSums(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

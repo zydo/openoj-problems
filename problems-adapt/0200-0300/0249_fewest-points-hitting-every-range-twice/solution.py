@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumDoubleCoveragePoints(self, ranges: List[List[int]]) -> int:
+    def minimumDoubleCoveragePoints(self, ranges: list[list[int]]) -> int:
         # Greedy: sort by right endpoint ascending, then left endpoint descending.
         ivs = sorted(ranges, key=lambda iv: (iv[1], -iv[0]))
         # Chosen points stay in non-decreasing order, so the points inside any

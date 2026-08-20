@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def arraysWithKRecordMaxima(self, n: int, m: int, k: int) -> int:
         MOD = 10**9 + 7

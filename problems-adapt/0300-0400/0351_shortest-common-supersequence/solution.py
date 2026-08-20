@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def shortestCommonSupersequence(self, s: str, t: str) -> str:
         n, m = len(s), len(t)

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestSwapsForRisingRows(self, top: List[int], bottom: List[int]) -> int:
+    def fewestSwapsForRisingRows(self, top: list[int], bottom: list[int]) -> int:
         n = len(top)
         # Only two configurations matter per index — pair kept or
         # swapped — and swap starts at 1: swapping index 0 costs one op.

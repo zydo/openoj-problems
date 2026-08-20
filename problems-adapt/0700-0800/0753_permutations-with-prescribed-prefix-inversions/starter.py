@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countMatchingPermutations(self, n: int, requirements: List[List[int]]) -> int:
+    def countMatchingPermutations(self, n: int, requirements: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findCompoundWords(self, words: List[str]) -> List[str]:
+    def findCompoundWords(self, words: list[str]) -> list[str]:
         dictionary = set(words)
 
         def is_compound(word):

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def distinctDoubledSubstrings(self, text: str) -> int:
         n = len(text)

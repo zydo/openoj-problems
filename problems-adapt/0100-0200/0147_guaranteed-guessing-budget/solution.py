@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def guessingBudget(self, n: int) -> int:
         # dp[i][j] = min money that guarantees finding any number in

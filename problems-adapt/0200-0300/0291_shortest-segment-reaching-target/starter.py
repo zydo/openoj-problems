@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shortestSegment(self, nums: List[int], target: int) -> int:
+    def shortestSegment(self, nums: list[int], target: int) -> int:
         raise NotImplementedError("TODO")

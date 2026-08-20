@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestLargestDailyLoad(self, weights: List[int], days: int) -> int:
+    def smallestLargestDailyLoad(self, weights: list[int], days: int) -> int:
         raise NotImplementedError("TODO")

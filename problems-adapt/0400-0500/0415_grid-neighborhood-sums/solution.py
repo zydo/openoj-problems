@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def gridNeighborhoodSums(self, grid: List[List[int]], k: int) -> List[List[int]]:
+    def gridNeighborhoodSums(self, grid: list[list[int]], k: int) -> list[list[int]]:
         m, n = len(grid), len(grid[0])
         # prefix[i+1][j+1] = sum of the rectangle (0,0)..(i,j); the extra zero
         # row and column remove all boundary special-casing.

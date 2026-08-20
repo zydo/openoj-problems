@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countComponents(self, adjacency: List[List[int]]) -> int:
+    def countComponents(self, adjacency: list[list[int]]) -> int:
         n = len(adjacency)
         parent = list(range(n))
 

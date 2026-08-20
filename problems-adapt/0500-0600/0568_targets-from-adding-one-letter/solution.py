@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def reachableTargets(self, startWords: List[str], targetWords: List[str]) -> int:
+    def reachableTargets(self, startWords: list[str], targetWords: list[str]) -> int:
         def mask(word):
             # No letter repeats, so a word is fully described by the 26-bit
             # mask of letters it contains.

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,5 +6,5 @@ class TreeNode:
 
 
 class Solution:
-    def rebalanceBst(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def rebalanceBst(self, root: TreeNode | None) -> TreeNode | None:
         raise NotImplementedError("TODO")

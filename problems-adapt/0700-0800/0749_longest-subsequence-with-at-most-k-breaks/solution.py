@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestWithBreaks(self, nums: List[int], k: int) -> int:
+    def longestWithBreaks(self, nums: list[int], k: int) -> int:
         # remap values to compact ids
         mapping = {}
         remapped = []

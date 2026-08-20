@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestCommonLevel(self, nums: List[int], cost: List[int]) -> int:
+    def cheapestCommonLevel(self, nums: list[int], cost: list[int]) -> int:
         raise NotImplementedError("TODO")

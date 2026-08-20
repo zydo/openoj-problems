@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestSumGap(self, nums: List[int]) -> int:
+    def smallestSumGap(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

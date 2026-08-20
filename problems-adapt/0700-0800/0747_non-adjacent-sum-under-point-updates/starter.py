@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nonAdjacentSum(self, nums: List[int], queries: List[List[int]]) -> int:
+    def nonAdjacentSum(self, nums: list[int], queries: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

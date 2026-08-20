@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def setBitCounts(self, n: int) -> List[int]:
+    def setBitCounts(self, n: int) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumStartingCash(self, deals: List[List[int]]) -> int:
+    def minimumStartingCash(self, deals: list[list[int]]) -> int:
         total_drain = 0
         max_rebate_losing = 0
         max_price_winning = 0

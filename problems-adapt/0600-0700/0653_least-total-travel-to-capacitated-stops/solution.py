@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastTotalTravel(self, units: List[int], stations: List[List[int]]) -> int:
+    def leastTotalTravel(self, units: list[int], stations: list[list[int]]) -> int:
         # Optimal plans are non-crossing (triangle inequality), so after
         # sorting, each station serves a contiguous block of units in order.
         units = sorted(units)

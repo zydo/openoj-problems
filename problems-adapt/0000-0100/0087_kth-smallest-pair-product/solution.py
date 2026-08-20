@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_left, bisect_right
 
 
 class Solution:
-    def kthSmallestPairProduct(self, nums1: List[int], nums2: List[int], k: int) -> int:
+    def kthSmallestPairProduct(self, nums1: list[int], nums2: list[int], k: int) -> int:
         def _ceil_div(a, b):
             # ceil(a / b) for any non-zero b (Python floored division)
             return -((-a) // b)

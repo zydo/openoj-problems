@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def totalSelectionRanges(self, values: List[int]) -> int:
+    def totalSelectionRanges(self, values: list[int]) -> int:
         raise NotImplementedError("TODO")

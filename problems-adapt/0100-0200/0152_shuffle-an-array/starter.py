@@ -1,12 +1,9 @@
-from typing import List, Optional
-
-
 class Solution:
-    def __init__(self, nums: List[int]) -> None:
+    def __init__(self, nums: list[int]) -> None:
         raise NotImplementedError("TODO")
 
-    def reset(self) -> List[int]:
+    def reset(self) -> list[int]:
         raise NotImplementedError("TODO")
 
-    def shuffle(self) -> List[int]:
+    def shuffle(self) -> list[int]:
         raise NotImplementedError("TODO")

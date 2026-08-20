@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minReroutes(self, n: int, links: List[List[int]]) -> int:
+    def minReroutes(self, n: int, links: list[list[int]]) -> int:
         # Connecting n computers needs at least n-1 cables; with fewer the
         # task is impossible no matter how cables are rearranged.
         if len(links) < n - 1:

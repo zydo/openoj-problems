@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def minRewrites(self, grid: List[List[int]]) -> int:
+    def minRewrites(self, grid: list[list[int]]) -> int:
         m, n = len(grid), len(grid[0])
         # Shortest path over cells: each move costs 0 when the cell's sign
         # points at that neighbor and 1 otherwise (the price of rewriting it).

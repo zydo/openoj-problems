@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastSlack(self, nums: List[int], k: int) -> int:
+    def leastSlack(self, nums: list[int], k: int) -> int:
         raise NotImplementedError("TODO")

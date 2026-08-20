@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rectangleCoverage(self, n: int, queries: List[List[int]]) -> List[List[int]]:
+    def rectangleCoverage(self, n: int, queries: list[list[int]]) -> list[list[int]]:
         # 2-D difference trick applied row by row.
         diff = [[0] * (n + 1) for _ in range(n)]
         for r1, c1, r2, c2 in queries:

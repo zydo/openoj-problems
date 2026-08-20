@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minRewrites(self, grid: List[List[int]]) -> int:
+    def minRewrites(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

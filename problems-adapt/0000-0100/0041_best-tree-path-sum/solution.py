@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,11 +6,11 @@ class TreeNode:
 
 
 class Solution:
-    def bestPathSum(self, root: Optional[TreeNode]) -> int:
+    def bestPathSum(self, root: TreeNode | None) -> int:
         # A path must contain at least one node, so start at -inf, not 0.
         best = float("-inf")
 
-        def gain(node: Optional[TreeNode]) -> int:
+        def gain(node: TreeNode | None) -> int:
             # Best path that starts at `node` and descends into at most one child.
             nonlocal best
             if node is None:

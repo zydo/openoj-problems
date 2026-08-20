@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def isTwoColorable(self, graph: List[List[int]]) -> bool:
+    def isTwoColorable(self, graph: list[list[int]]) -> bool:
         n = len(graph)
         parent = list(range(n))
 

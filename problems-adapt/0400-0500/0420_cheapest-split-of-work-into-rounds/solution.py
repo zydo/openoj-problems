@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minEffort(self, weights: List[int], d: int) -> int:
+    def minEffort(self, weights: list[int], d: int) -> int:
         n = len(weights)
         if n < d:
             return -1

@@ -1,10 +1,7 @@
-from typing import List, Optional
-
-
 class Solution:
-    def collisionSurvivors(self, movers: List[int]) -> List[int]:
+    def collisionSurvivors(self, movers: list[int]) -> list[int]:
         # The stack holds survivors — internally stable, all collisions resolved.
-        stack: List[int] = []
+        stack: list[int] = []
         for mover in movers:
             alive = True
             # A newcomer can only fight the top, and only when it moves left

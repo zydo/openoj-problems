@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestEqualSumSpan(self, nums1: List[int], nums2: List[int]) -> int:
+    def longestEqualSumSpan(self, nums1: list[int], nums2: list[int]) -> int:
         # Track the running prefix difference (sum1 - sum2); a range has
         # equal sums in both arrays iff the difference repeats. Seed the
         # empty prefix's value 0 at -1 so pairs starting at index 0 measure

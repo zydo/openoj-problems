@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def smallestSumGap(self, nums: List[int]) -> int:
+    def smallestSumGap(self, nums: list[int]) -> int:
         total = len(nums)
         n = total // 3
 

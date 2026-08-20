@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def nearestZeroDistances(self, mat: List[List[int]]) -> List[List[int]]:
+    def nearestZeroDistances(self, mat: list[list[int]]) -> list[list[int]]:
         m, n = len(mat), len(mat[0])
         dist = [[None] * n for _ in range(m)]
         queue = deque()

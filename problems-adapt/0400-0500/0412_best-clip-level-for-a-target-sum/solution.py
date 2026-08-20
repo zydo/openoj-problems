@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestClipLevel(self, nums: List[int], target: int) -> int:
+    def bestClipLevel(self, nums: list[int], target: int) -> int:
         def mutated_sum(value):
             return sum(x if x < value else value for x in nums)
 

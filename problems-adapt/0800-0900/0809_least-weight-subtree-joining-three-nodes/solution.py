@@ -1,10 +1,7 @@
-from typing import List
-
-
 class Solution:
-    def leastSubtreeWeight(self, edges: List[List[int]], queries: List[List[int]]) -> List[int]:
+    def leastSubtreeWeight(self, edges: list[list[int]], queries: list[list[int]]) -> list[int]:
         n = len(edges) + 1
-        adj: List[List[tuple]] = [[] for _ in range(n)]
+        adj: list[list[tuple]] = [[] for _ in range(n)]
         for u, v, w in edges:
             adj[u].append((v, w))
             adj[v].append((u, w))

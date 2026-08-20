@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def symmetricWordGrids(self, words: List[str]) -> List[List[str]]:
+    def symmetricWordGrids(self, words: list[str]) -> list[list[str]]:
         raise NotImplementedError("TODO")

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import defaultdict, deque
 
 
 class Solution:
-    def resolveRatios(self, pairs: List[List[str]], ratios: List[float], queries: List[List[str]]) -> List[float]:
+    def resolveRatios(self, pairs: list[list[str]], ratios: list[float], queries: list[list[str]]) -> list[float]:
         graph = defaultdict(dict)
         # Each ratio a/b = v becomes a directed edge a -> b of weight v
         # plus the reverse edge of weight 1/v (division inverts with direction).

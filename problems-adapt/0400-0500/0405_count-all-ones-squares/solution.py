@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countAllOnesSquares(self, matrix: List[List[int]]) -> int:
+    def countAllOnesSquares(self, matrix: list[list[int]]) -> int:
         m = len(matrix)
         n = len(matrix[0])
         total = 0

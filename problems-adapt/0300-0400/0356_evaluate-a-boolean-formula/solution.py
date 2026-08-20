@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def evaluateBooleanFormula(self, formula: str) -> bool:
         def parse(expr: str, index: int):

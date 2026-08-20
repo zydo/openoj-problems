@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestPickSum(self, grid: List[List[int]]) -> int:
+    def bestPickSum(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

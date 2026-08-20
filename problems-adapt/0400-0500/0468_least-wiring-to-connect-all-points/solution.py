@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastWiringCost(self, points: List[List[int]]) -> int:
+    def leastWiringCost(self, points: list[list[int]]) -> int:
         n = len(points)
         if n <= 1:
             return 0

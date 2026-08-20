@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class _Node:
     __slots__ = ("val", "prio", "size", "xor", "rev", "left", "right")
 
@@ -15,7 +12,7 @@ class _Node:
 
 
 class Solution:
-    def xorResults(self, nums: List[int], queries: List[List[int]]) -> List[int]:
+    def xorResults(self, nums: list[int], queries: list[list[int]]) -> list[int]:
         seed = 123456789
 
         def next_prio():

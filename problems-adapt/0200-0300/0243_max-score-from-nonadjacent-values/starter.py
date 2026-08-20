@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxNonadjacentValueScore(self, values: List[int]) -> int:
+    def maxNonadjacentValueScore(self, values: list[int]) -> int:
         raise NotImplementedError("TODO")

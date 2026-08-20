@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestXor(self, nums: List[int], k: int) -> int:
+    def largestXor(self, nums: list[int], k: int) -> int:
         n = len(nums)
 
         def build_prefix():

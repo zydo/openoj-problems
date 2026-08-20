@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestTransitLines(self, lines: List[List[int]], startStop: int, endStop: int) -> int:
+    def fewestTransitLines(self, lines: list[list[int]], startStop: int, endStop: int) -> int:
         raise NotImplementedError("TODO")

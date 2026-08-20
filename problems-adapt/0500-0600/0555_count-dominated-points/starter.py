@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDominatedPoints(self, points: List[List[int]]) -> int:
+    def countDominatedPoints(self, points: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

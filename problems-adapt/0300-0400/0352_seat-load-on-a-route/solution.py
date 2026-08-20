@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def seatLoadFits(self, groups: List[List[int]], capacity: int) -> bool:
+    def seatLoadFits(self, groups: list[list[int]], capacity: int) -> bool:
         # difference array over the bounded locations: each group is just
         # two events, +passengers at pickup and -passengers at dropoff
         diff = [0] * 1001

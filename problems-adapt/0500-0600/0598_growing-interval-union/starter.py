@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class IntervalUnion:
     def __init__(self) -> None:
         raise NotImplementedError("TODO")

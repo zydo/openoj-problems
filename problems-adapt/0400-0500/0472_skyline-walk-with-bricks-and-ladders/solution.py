@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def furthestRooftop(self, heights: List[int], bricks: int, ladders: int) -> int:
+    def furthestRooftop(self, heights: list[int], bricks: int, ladders: int) -> int:
         ladder_climbs = []  # min-heap of the climbs covered by ladders
         for i in range(len(heights) - 1):
             climb = heights[i + 1] - heights[i]

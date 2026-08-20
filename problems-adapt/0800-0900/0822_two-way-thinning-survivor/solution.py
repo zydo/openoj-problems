@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def thinningSurvivor(self, n: int) -> int:
         start, step, remaining = 1, 1, n

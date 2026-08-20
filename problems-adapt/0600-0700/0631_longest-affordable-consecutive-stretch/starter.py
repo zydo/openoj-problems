@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestAffordableStretch(self, startCosts: List[int], usageCosts: List[int], budget: int) -> int:
+    def longestAffordableStretch(self, startCosts: list[int], usageCosts: list[int], budget: int) -> int:
         raise NotImplementedError("TODO")

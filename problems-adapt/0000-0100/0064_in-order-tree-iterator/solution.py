@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class InOrderTreeIterator:
     """Lazy in-order traversal of a BST via a left-spine stack.
 
@@ -11,8 +8,8 @@ class InOrderTreeIterator:
     path — O(h) memory.
     """
 
-    def __init__(self, root: Optional[TreeNode]) -> None:  # noqa: F821
-        self.stack: List[TreeNode] = []  # noqa: F821
+    def __init__(self, root: TreeNode | None) -> None:  # noqa: F821
+        self.stack: list[TreeNode] = []  # noqa: F821
         self._push_spine(root)
 
     def _push_spine(self, node) -> None:

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def fewestSquareSummands(self, n: int) -> int:
         # dp[i] = fewest perfect squares summing to i: any decomposition ends

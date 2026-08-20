@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestDescent(self, grid: List[List[int]]) -> int:
+    def cheapestDescent(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

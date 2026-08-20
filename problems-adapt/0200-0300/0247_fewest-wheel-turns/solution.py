@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def fewestTurns(self, deadends: List[str], target: str) -> int:
+    def fewestTurns(self, deadends: list[str], target: str) -> int:
         # BFS over the 10,000 four-digit lock states, one edge per wheel
         # turn: layer order equals turn count, so reaching the target
         # first is optimal.

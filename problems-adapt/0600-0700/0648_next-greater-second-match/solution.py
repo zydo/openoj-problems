@@ -1,17 +1,14 @@
-from typing import List
-
-
 class Solution:
-    def secondNextGreater(self, nums: List[int]) -> List[int]:
+    def secondNextGreater(self, nums: list[int]) -> list[int]:
         n = len(nums)
         result = [-1] * n
-        first: List[int] = []  # indices awaiting their first greater value
-        second: List[int] = []  # indices awaiting their second greater value
+        first: list[int] = []  # indices awaiting their first greater value
+        second: list[int] = []  # indices awaiting their second greater value
         for i in range(n):
             x = nums[i]
             while second and nums[second[-1]] < x:
                 result[second.pop()] = x
-            batch: List[int] = []
+            batch: list[int] = []
             while first and nums[first[-1]] < x:
                 batch.append(first.pop())
             # batch leaves the first stack in increasing value order; push it

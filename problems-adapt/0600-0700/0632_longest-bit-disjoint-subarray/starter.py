@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestBitDisjointSubarray(self, nums: List[int]) -> int:
+    def longestBitDisjointSubarray(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

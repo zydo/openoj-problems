@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def mazeRollDistance(self, maze: List[List[int]], start: List[int], destination: List[int]) -> int:
+    def mazeRollDistance(self, maze: list[list[int]], start: list[int], destination: list[int]) -> int:
         m, n = len(maze), len(maze[0])
         start = (start[0], start[1])
         destination = (destination[0], destination[1])

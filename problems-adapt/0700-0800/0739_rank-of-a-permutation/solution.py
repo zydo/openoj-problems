@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def permutationRank(self, perm: List[int]) -> int:
+    def permutationRank(self, perm: list[int]) -> int:
         MOD = 1_000_000_007
         n = len(perm)
         # fact[i] = i!; position i's Lehmer digit weighs (n - 1 - i)!

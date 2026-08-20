@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def fewestFibonacciSummands(self, k: int) -> int:
         fibs = [1, 1]

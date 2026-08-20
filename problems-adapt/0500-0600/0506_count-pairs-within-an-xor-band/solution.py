@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countXorBandPairs(self, nums: List[int], low: int, high: int) -> int:
+    def countXorBandPairs(self, nums: list[int], low: int, high: int) -> int:
         def pairs_le(k: int) -> int:
             # Count pairs (i, j), i < j, with nums[i] ^ nums[j] <= k, using a
             # binary trie over 16-bit values (values < 2^16).

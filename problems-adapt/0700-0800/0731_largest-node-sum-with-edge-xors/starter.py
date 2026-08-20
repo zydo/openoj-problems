@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestNodeSum(self, nums: List[int], k: int, edges: List[List[int]]) -> int:
+    def largestNodeSum(self, nums: list[int], k: int, edges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List
-
-
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -8,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def listCycleEntry(self, values: List[int], tailLink: int) -> int:
+    def listCycleEntry(self, values: list[int], tailLink: int) -> int:
         if not values:
             return -1
         # Materialize the wire form: one node per value, then close the cycle.

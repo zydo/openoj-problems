@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class RunningKthLargest:
-    def __init__(self, k: int, nums: List[int]) -> None:
+    def __init__(self, k: int, nums: list[int]) -> None:
         raise NotImplementedError("TODO")
 
     def add(self, val: int) -> int:

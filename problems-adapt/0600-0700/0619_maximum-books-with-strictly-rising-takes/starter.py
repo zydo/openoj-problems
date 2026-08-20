@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxRisingTake(self, books: List[int]) -> int:
+    def maxRisingTake(self, books: list[int]) -> int:
         raise NotImplementedError("TODO")

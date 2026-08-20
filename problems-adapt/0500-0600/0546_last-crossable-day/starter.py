@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def lastCrossableDay(self, row: int, col: int, cells: List[List[int]]) -> int:
+    def lastCrossableDay(self, row: int, col: int, cells: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

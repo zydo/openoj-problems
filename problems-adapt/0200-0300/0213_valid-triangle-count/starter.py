@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countTriangles(self, sides: List[int]) -> int:
+    def countTriangles(self, sides: list[int]) -> int:
         raise NotImplementedError("TODO")

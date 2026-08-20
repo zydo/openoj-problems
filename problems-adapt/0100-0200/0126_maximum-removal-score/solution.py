@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maximumRemovalScore(self, nums: List[int]) -> int:
+    def maximumRemovalScore(self, nums: list[int]) -> int:
         # Pad with virtual 1s so removals at the boundary need no special casing.
         padded = [1] + nums + [1]
         m = len(padded)

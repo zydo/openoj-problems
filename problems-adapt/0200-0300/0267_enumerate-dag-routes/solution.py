@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def enumerateDagRoutes(self, graph: List[List[int]]) -> List[List[int]]:
+    def enumerateDagRoutes(self, graph: list[list[int]]) -> list[list[int]]:
         n = len(graph)
         target = n - 1
         paths = []

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def appleTreeRoundTrip(self, n: int, edges: List[List[int]], hasApple: List[bool]) -> int:
+    def appleTreeRoundTrip(self, n: int, edges: list[list[int]], hasApple: list[bool]) -> int:
         adjacency = [[] for _ in range(n)]
         for a, b in edges:
             adjacency[a].append(b)

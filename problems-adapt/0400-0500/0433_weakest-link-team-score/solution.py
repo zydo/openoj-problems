@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def bestTeamScore(self, n: int, speed: List[int], efficiency: List[int], k: int) -> int:
+    def bestTeamScore(self, n: int, speed: list[int], efficiency: list[int], k: int) -> int:
         MOD = 10**9 + 7
         # Decouple sum(speeds) * min(efficiency) by fixing the minimum:
         # sweep in decreasing efficiency so the current engineer caps the

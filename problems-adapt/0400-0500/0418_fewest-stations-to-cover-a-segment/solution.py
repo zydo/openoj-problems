@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minStations(self, n: int, radii: List[int]) -> int:
+    def minStations(self, n: int, radii: list[int]) -> int:
         # Each tap becomes the interval [i-r, i+r] clamped to [0, n]; the task
         # is the classic minimum-interval-cover of the garden segment.
         # Sorting by left endpoint makes the sweep a single pass.

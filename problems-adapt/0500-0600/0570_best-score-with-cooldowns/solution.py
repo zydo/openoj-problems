@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestScore(self, questions: List[List[int]]) -> int:
+    def bestScore(self, questions: list[list[int]]) -> int:
         n = len(questions)
         # dp[i] = best score starting at question i; dp[n] = 0 is the
         # sentinel for "nothing left". Fill right to left so every future

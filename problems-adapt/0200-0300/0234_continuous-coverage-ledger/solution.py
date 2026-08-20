@@ -1,7 +1,4 @@
 from bisect import bisect_left, bisect_right
-from typing import List
-
-
 class CoverageLedger:
     """Tracked set as canonical disjoint intervals (parallel starts/ends).
 
@@ -11,8 +8,8 @@ class CoverageLedger:
     """
 
     def __init__(self) -> None:
-        self.starts: List[int] = []
-        self.ends: List[int] = []
+        self.starts: list[int] = []
+        self.ends: list[int] = []
 
     def addSpan(self, start: int, end: int) -> None:
         i = bisect_left(self.ends, start)  # first interval ending at/after start

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countFixableSubarrays(self, nums: List[int], k: int) -> int:
+    def countFixableSubarrays(self, nums: list[int], k: int) -> int:
         result = 0
         cnt = 0
         dq = []

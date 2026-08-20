@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def shortestCoveringString(self, n: int, k: int) -> str:
         # Iterative Hierholzer over the de Bruijn graph: nodes are (n-1)-digit

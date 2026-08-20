@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def spreadTimes(self, edges: List[List[int]]) -> List[int]:
+    def spreadTimes(self, edges: list[list[int]]) -> list[int]:
         # Reroot DP. Moving into node v costs 1 if v is odd, 2 if v is even.
         n = len(edges) + 1
         adj = [[] for _ in range(n)]

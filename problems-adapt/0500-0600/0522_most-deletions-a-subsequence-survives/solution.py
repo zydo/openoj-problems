@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostDeletionsSurvived(self, s: str, p: str, removable: List[int]) -> int:
+    def mostDeletionsSurvived(self, s: str, p: str, removable: list[int]) -> int:
         # Classic greedy subsequence scan: skipping removed positions, match each
         # character of p at the earliest opportunity (optimal for containment).
         def still_subsequence(removed):

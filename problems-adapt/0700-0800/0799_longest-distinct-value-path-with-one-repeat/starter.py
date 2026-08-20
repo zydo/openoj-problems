@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestOneRepeatPath(self, edges: List[List[int]], nums: List[int]) -> List[int]:
+    def longestOneRepeatPath(self, edges: list[list[int]], nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

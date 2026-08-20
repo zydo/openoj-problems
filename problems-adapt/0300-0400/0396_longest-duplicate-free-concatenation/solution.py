@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestDuplicateFreeConcat(self, arr: List[str]) -> int:
+    def longestDuplicateFreeConcat(self, arr: list[str]) -> int:
         # A concatenation is fully described by which of the 26 letters it
         # holds, so each string becomes a bitmask; a self-repeating string
         # (mask -1) can never join a valid combination and is skipped later.

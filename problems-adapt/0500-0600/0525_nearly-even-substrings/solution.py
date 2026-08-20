@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countNearlyEvenSubstrings(self, word: str) -> int:
         # count[m] = prefixes seen so far with parity mask m (10 bits, letters a..j).

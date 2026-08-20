@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -25,7 +22,7 @@ class Solution:
         tail.next = a if a else b
         return dummy.next
 
-    def orderList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def orderList(self, head: ListNode | None) -> ListNode | None:
         # Base case: an empty or single-node list is already sorted.
         if head is None or head.next is None:
             return head

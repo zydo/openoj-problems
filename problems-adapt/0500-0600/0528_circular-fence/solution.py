@@ -1,9 +1,6 @@
 import math
-from typing import List
-
-
 class Solution:
-    def fenceCircle(self, positions: List[List[int]]) -> List[float]:
+    def fenceCircle(self, positions: list[list[int]]) -> list[float]:
         # Translate by the first tree before converting to floats: small
         # intermediate magnitudes protect the 1e-5 judge tolerance.
         ox, oy = positions[0]

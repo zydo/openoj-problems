@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def roll10(self, seven_rolls: List[int]) -> int:
+    def roll10(self, seven_rolls: list[int]) -> int:
         index = 0
         while True:
             a = seven_rolls[index]

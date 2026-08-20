@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxRowScore(self, points: List[List[int]]) -> int:
+    def maxRowScore(self, points: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

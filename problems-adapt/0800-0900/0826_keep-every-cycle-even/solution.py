@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def edgesAdmitted(self, n: int, edges: List[List[int]]) -> int:
+    def edgesAdmitted(self, n: int, edges: list[list[int]]) -> int:
         parent = list(range(n))
         rank = [0] * n
         par = [0] * n  # xor distance from node to its parent in the DSU tree

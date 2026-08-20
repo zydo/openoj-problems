@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countDivisible(self, s: str) -> int:
         digits = [ord(c) - 48 for c in s]

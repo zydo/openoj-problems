@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nearestGridExit(self, maze: List[List[str]], entrance: List[int]) -> int:
+    def nearestGridExit(self, maze: list[list[str]], entrance: list[int]) -> int:
         raise NotImplementedError("TODO")

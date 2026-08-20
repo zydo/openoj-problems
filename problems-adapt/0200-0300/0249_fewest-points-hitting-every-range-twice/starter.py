@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumDoubleCoveragePoints(self, ranges: List[List[int]]) -> int:
+    def minimumDoubleCoveragePoints(self, ranges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

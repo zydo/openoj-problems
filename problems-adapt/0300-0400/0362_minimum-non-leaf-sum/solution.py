@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumNonLeafSum(self, leaves: List[int]) -> int:
+    def minimumNonLeafSum(self, leaves: list[int]) -> int:
         n = len(leaves)
         # dp[i][j] = min sum of non-leaf nodes for subarray leaves[i..j]
         dp = [[0] * n for _ in range(n)]

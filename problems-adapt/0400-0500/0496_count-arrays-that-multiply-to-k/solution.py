@@ -1,5 +1,3 @@
-from typing import List, Optional
-
 MOD = 1_000_000_007
 _MAX = 20000
 
@@ -45,7 +43,7 @@ def _prime_exponents(k):
 
 
 class Solution:
-    def countProductArrays(self, queries: List[List[int]]) -> List[int]:
+    def countProductArrays(self, queries: list[list[int]]) -> list[int]:
         answers = []
         for n, k in queries:
             ways = 1

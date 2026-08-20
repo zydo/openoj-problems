@@ -1,9 +1,6 @@
 from collections import deque
-from typing import List, Optional
-
-
 class Solution:
-    def fewestEdgesToAdd(self, n: int, sources: List[int], edgeFrom: List[int], edgeTo: List[int]) -> int:
+    def fewestEdgesToAdd(self, n: int, sources: list[int], edgeFrom: list[int], edgeTo: list[int]) -> int:
         graph = [[] for _ in range(n)]
         rgraph = [[] for _ in range(n)]
         for u, v in zip(edgeFrom, edgeTo):

@@ -1,9 +1,6 @@
 import heapq
-from typing import List, Optional
-
-
 class Solution:
-    def minimumSupplyStops(self, destination: int, initialRange: int, supplies: List[List[int]]) -> int:
+    def minimumSupplyStops(self, destination: int, initialRange: int, supplies: list[list[int]]) -> int:
         # Greedy: drive as far as possible; when short of the destination,
         # retroactively refuel with the largest fuel among supplies passed.
         fuel = initialRange

@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def minimumTileGridMoves(self, grid: List[List[int]]) -> int:
+    def minimumTileGridMoves(self, grid: list[list[int]]) -> int:
         # Boards are nodes, slides of the 0 are edges: BFS gives the
         # minimum move count over at most 6! = 720 states.
         target = (1, 2, 3, 4, 5, 0)

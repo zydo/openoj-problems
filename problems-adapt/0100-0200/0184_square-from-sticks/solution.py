@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canFormSquare(self, lengths: List[int]) -> bool:
+    def canFormSquare(self, lengths: list[int]) -> bool:
         total = sum(lengths)
         # A square is 4 equal-length groups: the total must split evenly and
         # no single stick may exceed the side.

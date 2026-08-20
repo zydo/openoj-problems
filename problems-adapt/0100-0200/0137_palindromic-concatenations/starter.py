@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def palindromicConcatenations(self, words: List[str]) -> List[List[int]]:
+    def palindromicConcatenations(self, words: list[str]) -> list[list[int]]:
         raise NotImplementedError("TODO")

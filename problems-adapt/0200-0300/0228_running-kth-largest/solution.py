@@ -1,7 +1,4 @@
 import heapq
-from typing import List
-
-
 class RunningKthLargest:
     """Min-heap holding exactly the k largest scores seen so far.
 
@@ -10,7 +7,7 @@ class RunningKthLargest:
     reads the root.
     """
 
-    def __init__(self, k: int, nums: List[int]) -> None:
+    def __init__(self, k: int, nums: list[int]) -> None:
         self.k = k
         self.heap = list(nums)
         heapq.heapify(self.heap)

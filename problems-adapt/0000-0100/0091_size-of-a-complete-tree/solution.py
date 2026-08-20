@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -17,7 +14,7 @@ class Solution:
             node = node.left if left else node.right
         return depth
 
-    def treeSize(self, root: Optional[TreeNode]) -> int:
+    def treeSize(self, root: TreeNode | None) -> int:
         if root is None:
             return 0
         left_depth = self._depth(root, True)

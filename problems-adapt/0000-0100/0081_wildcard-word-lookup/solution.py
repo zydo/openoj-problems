@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class _Node:
     """One trie node: 26 child slots indexed by ``ord(c) - ord('a')`` plus a
     whole-word terminator flag."""
@@ -8,7 +5,7 @@ class _Node:
     __slots__ = ("children", "end")
 
     def __init__(self) -> None:
-        self.children: List[Optional[_Node]] = [None] * 26
+        self.children: list[_Node | None] = [None] * 26
         self.end = False
 
 
@@ -31,7 +28,7 @@ class WordMatcher:
         node.end = True
 
     def search(self, word: str) -> bool:
-        def match(node: Optional[_Node], index: int) -> bool:
+        def match(node: _Node | None, index: int) -> bool:
             if node is None:
                 return False
             if index == len(word):

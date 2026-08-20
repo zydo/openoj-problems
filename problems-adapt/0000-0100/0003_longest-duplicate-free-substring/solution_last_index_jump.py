@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestDuplicateFreeLength(self, s: str) -> int:
         # last_seen maps each character to its most recent index; the window

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def firstPlayerWins(self, nums: List[int]) -> bool:
+    def firstPlayerWins(self, nums: list[int]) -> bool:
         n = len(nums)
         # dp[i] = best (player-to-move score - opponent score) on the current
         # window ending at j, processed by increasing window length.

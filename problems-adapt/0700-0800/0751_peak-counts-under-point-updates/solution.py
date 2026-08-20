@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Fenwick:
     """Fenwick tree over 1-indexed positions, API is 0-indexed."""
 
@@ -29,7 +26,7 @@ class Fenwick:
 
 
 class Solution:
-    def countPeaks(self, nums: List[int], queries: List[List[int]]) -> List[int]:
+    def countPeaks(self, nums: list[int], queries: list[list[int]]) -> list[int]:
         n = len(nums)
 
         def is_peak(i):

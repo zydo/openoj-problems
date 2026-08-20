@@ -1,9 +1,6 @@
 import heapq
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestPickSum(self, costs: List[int], k: int, window: int) -> int:
+    def cheapestPickSum(self, costs: list[int], k: int, window: int) -> int:
         n = len(costs)
         # Windows overlap => every remaining worker is always eligible,
         # so the greedy is just "hire the k cheapest overall".

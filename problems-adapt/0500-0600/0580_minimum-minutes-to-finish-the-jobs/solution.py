@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minMinutesToFinishJobs(self, cycles: List[int], quota: int) -> int:
+    def minMinutesToFinishJobs(self, cycles: list[int], quota: int) -> int:
         def jobs_done(t):
             # Workers run independently: each finishes t // x jobs by minute
             # t, so the floor-sum is the exact job count — no simulation.

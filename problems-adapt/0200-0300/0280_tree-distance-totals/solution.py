@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def treeDistanceTotals(self, n: int, edges: List[List[int]]) -> List[int]:
+    def treeDistanceTotals(self, n: int, edges: list[list[int]]) -> list[int]:
         adj = [[] for _ in range(n)]
         for a, b in edges:
             adj[a].append(b)

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canZeroArray(self, nums: List[int], k: int) -> bool:
+    def canZeroArray(self, nums: list[int], k: int) -> bool:
         n = len(nums)
         diff = [0] * (n + 1)
         # running: net number of still-active windows covering i (a

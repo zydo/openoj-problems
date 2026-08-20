@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def routineSelfTimes(self, n: int, events: List[str]) -> List[int]:
+    def routineSelfTimes(self, n: int, events: list[str]) -> list[int]:
         res = [0] * n
         stack = []  # [routine_id, resume_time]
         for log in events:

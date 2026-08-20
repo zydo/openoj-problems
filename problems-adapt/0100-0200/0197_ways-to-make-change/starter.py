@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def combinations(self, amount: int, coins: List[int]) -> int:
+    def combinations(self, amount: int, coins: list[int]) -> int:
         raise NotImplementedError("TODO")

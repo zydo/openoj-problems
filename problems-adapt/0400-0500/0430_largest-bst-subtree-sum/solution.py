@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def largestBstSubtreeSum(self, root: Optional[TreeNode]) -> int:
+    def largestBstSubtreeSum(self, root: TreeNode | None) -> int:
         best = 0
 
         # returns (is_bst, min_val, max_val, subtree_sum) or None if not a BST

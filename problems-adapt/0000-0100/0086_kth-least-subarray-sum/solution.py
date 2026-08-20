@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def kthLeastSubarraySum(self, nums: List[int], k: int) -> int:
+    def kthLeastSubarraySum(self, nums: list[int], k: int) -> int:
         # f(x) = number of subarrays with sum <= x. Sliding window: positivity
         # guarantees shrinking monotonically reduces the sum.
         def count_at_most(limit):

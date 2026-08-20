@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestSharedPrefix(self, arr1: List[int], arr2: List[int]) -> int:
+    def longestSharedPrefix(self, arr1: list[int], arr2: list[int]) -> int:
         raise NotImplementedError("TODO")

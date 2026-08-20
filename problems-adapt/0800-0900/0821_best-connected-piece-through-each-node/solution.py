@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 NEG = -(10**18)
 
 
 class Solution:
-    def bestPieceScores(self, n: int, edges: List[List[int]], marked: List[int]) -> List[int]:
+    def bestPieceScores(self, n: int, edges: list[list[int]], marked: list[int]) -> list[int]:
         adj = [[] for _ in range(n)]
         for a, b in edges:
             adj[a].append(b)

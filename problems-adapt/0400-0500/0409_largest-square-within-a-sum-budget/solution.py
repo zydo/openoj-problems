@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSquareSide(self, grid: List[List[int]], budget: int) -> int:
+    def largestSquareSide(self, grid: list[list[int]], budget: int) -> int:
         m, n = len(grid), len(grid[0])
         # prefix[i][j] = sum of the rectangle from (0,0) to (i-1, j-1)
         prefix = [[0] * (n + 1) for _ in range(m + 1)]

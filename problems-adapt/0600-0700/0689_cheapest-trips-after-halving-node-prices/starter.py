@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestTripsTotal(self, n: int, edges: List[List[int]], price: List[int], trips: List[List[int]]) -> int:
+    def cheapestTripsTotal(self, n: int, edges: list[list[int]], price: list[int], trips: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

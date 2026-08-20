@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestTeamScore(self, n: int, speed: List[int], efficiency: List[int], k: int) -> int:
+    def bestTeamScore(self, n: int, speed: list[int], efficiency: list[int], k: int) -> int:
         raise NotImplementedError("TODO")

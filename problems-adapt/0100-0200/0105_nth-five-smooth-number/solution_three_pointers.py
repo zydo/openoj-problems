@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def nthFiveSmooth(self, n: int) -> int:
         # Every five-smooth number past 1 is a smaller one times 2, 3, or 5, so the

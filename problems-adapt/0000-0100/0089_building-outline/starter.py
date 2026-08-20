@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def buildingOutline(self, buildings: List[List[int]]) -> List[List[int]]:
+    def buildingOutline(self, buildings: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

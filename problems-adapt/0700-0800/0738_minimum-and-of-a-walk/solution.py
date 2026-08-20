@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minWalkCost(self, n: int, edges: List[List[int]], query: List[List[int]]) -> List[int]:
+    def minWalkCost(self, n: int, edges: list[list[int]], query: list[list[int]]) -> list[int]:
         # Walks may repeat edges, so the optimum ANDs in every edge of the component.
         parent = list(range(n))
         size = [1] * n

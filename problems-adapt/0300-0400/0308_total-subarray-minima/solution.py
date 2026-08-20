@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def totalSubarrayMinima(self, nums: List[int]) -> int:
+    def totalSubarrayMinima(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         n = len(nums)
         left = [-1] * n

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def processingOrder(self, jobs: List[List[int]]) -> List[int]:
+    def processingOrder(self, jobs: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

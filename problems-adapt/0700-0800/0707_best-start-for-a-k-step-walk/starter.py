@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestWalkSum(self, receiver: List[int], k: int) -> int:
+    def bestWalkSum(self, receiver: list[int], k: int) -> int:
         raise NotImplementedError("TODO")

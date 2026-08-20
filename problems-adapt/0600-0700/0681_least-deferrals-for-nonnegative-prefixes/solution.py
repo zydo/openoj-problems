@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def leastDeferrals(self, nums: List[int]) -> int:
+    def leastDeferrals(self, nums: list[int]) -> int:
         heap = []
         prefix = 0
         ops = 0

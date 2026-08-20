@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def fewestAdjustments(self, nums: List[int], target: List[int]) -> int:
+    def fewestAdjustments(self, nums: list[int], target: list[int]) -> int:
         # Work with d[i] = nums[i] - target[i]: each operation adds +-1 to a
         # contiguous run of d, building it from the all-zero state. An
         # interval's two edges supply one unit of upward step each, so the

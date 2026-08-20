@@ -1,9 +1,6 @@
 from collections import deque
-from typing import List, Optional
-
-
 class Solution:
-    def buildableRecipes(self, recipes: List[str], ingredients: List[List[str]], supplies: List[str]) -> List[str]:
+    def buildableRecipes(self, recipes: list[str], ingredients: list[list[str]], supplies: list[str]) -> list[str]:
         have = set(supplies)
         index = {name: i for i, name in enumerate(recipes)}
         n = len(recipes)

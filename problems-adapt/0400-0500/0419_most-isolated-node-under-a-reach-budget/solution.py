@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def findMostIsolated(self, n: int, edges: List[List[int]], budget: int) -> int:
+    def findMostIsolated(self, n: int, edges: list[list[int]], budget: int) -> int:
         # With n <= 100, compute all-pairs distances at once: 0 diagonal,
         # symmetric direct weights, INF elsewhere.
         INF = float("inf")

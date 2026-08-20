@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def bestEraseScore(self, s: str, x: int, y: int) -> int:
         def remove_pairs(text, first, second, points):

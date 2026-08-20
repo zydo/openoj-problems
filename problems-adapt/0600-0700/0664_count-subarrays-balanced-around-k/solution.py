@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countBalancedSubarrays(self, nums: List[int], k: int) -> int:
+    def countBalancedSubarrays(self, nums: list[int], k: int) -> int:
         pos = nums.index(k)
         balance = {0: 1}
         current = 0

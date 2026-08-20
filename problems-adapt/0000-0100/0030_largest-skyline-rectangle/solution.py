@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSkylineRectangle(self, heights: List[int]) -> int:
+    def largestSkylineRectangle(self, heights: list[int]) -> int:
         # Stack of indices whose heights are strictly increasing. For any
         # bar, the widest full-height rectangle spans the nearest strictly
         # shorter bar on each side; the scan finds both boundaries

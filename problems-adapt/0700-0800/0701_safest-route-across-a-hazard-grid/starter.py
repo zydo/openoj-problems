@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maximumClearance(self, grid: List[List[int]]) -> int:
+    def maximumClearance(self, grid: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

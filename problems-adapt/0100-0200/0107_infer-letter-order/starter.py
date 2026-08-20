@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def inferLetterOrder(self, words: List[str]) -> str:
+    def inferLetterOrder(self, words: list[str]) -> str:
         raise NotImplementedError("TODO")

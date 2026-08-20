@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def shortestBridgeLength(self, startWord: str, targetWord: str, dictionary: List[str]) -> int:
+    def shortestBridgeLength(self, startWord: str, targetWord: str, dictionary: list[str]) -> int:
         word_set = set(dictionary)
         # No sequence can end outside the dictionary.
         if targetWord not in word_set:

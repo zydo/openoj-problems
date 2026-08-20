@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSwapGroups(self, words: List[str]) -> int:
+    def countSwapGroups(self, words: list[str]) -> int:
         def similar(a: str, b: str) -> bool:
             # All words are mutual anagrams, so they are similar iff
             # they differ in 0 or 2 positions — exactly what one swap

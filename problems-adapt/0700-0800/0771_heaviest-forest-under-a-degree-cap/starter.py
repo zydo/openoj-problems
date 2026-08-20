@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def heaviestForest(self, edges: List[List[int]], k: int) -> int:
+    def heaviestForest(self, edges: list[list[int]], k: int) -> int:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestGathering(self, nums: List[int], k: int, maxFlips: int) -> int:
+    def cheapestGathering(self, nums: list[int], k: int, maxFlips: int) -> int:
         ones = [0]  # 1-indexed positions of ones
         prefix = [0]
         for i, value in enumerate(nums):

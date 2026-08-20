@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def anyRepeatedValue(self, nums: List[int]) -> bool:
+    def anyRepeatedValue(self, nums: list[int]) -> bool:
         raise NotImplementedError("TODO")

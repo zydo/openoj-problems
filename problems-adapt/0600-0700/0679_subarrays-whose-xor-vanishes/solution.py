@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def zeroXorSubarrays(self, nums: List[int]) -> int:
+    def zeroXorSubarrays(self, nums: list[int]) -> int:
         # Each operation clears one set bit in each of two elements, so the
         # XOR of a subarray is invariant; it reduces to all zeros exactly
         # when its XOR is already 0.

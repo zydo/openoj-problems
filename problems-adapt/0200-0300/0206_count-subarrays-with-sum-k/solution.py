@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSubarraysWithSum(self, nums: List[int], k: int) -> int:
+    def countSubarraysWithSum(self, nums: list[int], k: int) -> int:
         # Seed with the empty prefix so subarrays starting at index 0 are counted.
         prefix_counts = {0: 1}
         running = 0

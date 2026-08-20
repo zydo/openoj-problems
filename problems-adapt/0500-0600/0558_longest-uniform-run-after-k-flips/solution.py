@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestUniformRunAfterKFlips(self, s: str, k: int) -> int:
         # cnt tracks the T/F counts inside the window; a window can be made

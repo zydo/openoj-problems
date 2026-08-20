@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def primesBelowN(self, n: int) -> int:
         # No primes strictly below 2.

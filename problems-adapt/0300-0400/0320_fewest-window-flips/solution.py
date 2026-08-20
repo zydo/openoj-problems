@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestWindowFlips(self, nums: List[int], k: int) -> int:
+    def fewestWindowFlips(self, nums: list[int], k: int) -> int:
         n = len(nums)
         hint = [0] * n
         flips = 0

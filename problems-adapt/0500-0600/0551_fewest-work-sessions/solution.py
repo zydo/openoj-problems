@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestWorkSessions(self, tasks: List[int], sessionTime: int) -> int:
+    def fewestWorkSessions(self, tasks: list[int], sessionTime: int) -> int:
         n = len(tasks)
         FULL = (1 << n) - 1
         INF = float("inf")

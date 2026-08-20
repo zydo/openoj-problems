@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def rollingWindowMaxima(self, nums: List[int], k: int) -> List[int]:
+    def rollingWindowMaxima(self, nums: list[int], k: int) -> list[int]:
         dq = deque()  # indices, values decreasing
         result = []
         for i, value in enumerate(nums):

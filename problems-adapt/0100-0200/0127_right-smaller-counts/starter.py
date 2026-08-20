@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rightSmallerCounts(self, nums: List[int]) -> List[int]:
+    def rightSmallerCounts(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

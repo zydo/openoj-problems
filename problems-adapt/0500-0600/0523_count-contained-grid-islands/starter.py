@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countContainedGridIslands(self, grid1: List[List[int]], grid2: List[List[int]]) -> int:
+    def countContainedGridIslands(self, grid1: list[list[int]], grid2: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

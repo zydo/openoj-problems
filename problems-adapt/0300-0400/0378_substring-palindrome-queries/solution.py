@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def substringPalindromeQueries(self, s: str, queries: List[List[int]]) -> List[bool]:
+    def substringPalindromeQueries(self, s: str, queries: list[list[int]]) -> list[bool]:
         n = len(s)
         # prefix[i] = bitmask of parities of letter counts in s[:i]
         prefix = [0] * (n + 1)

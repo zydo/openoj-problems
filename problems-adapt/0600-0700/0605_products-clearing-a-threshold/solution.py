@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_left
 
 
 class Solution:
-    def countClearingProducts(self, factors: List[int], values: List[int], threshold: int) -> List[int]:
+    def countClearingProducts(self, factors: list[int], values: list[int], threshold: int) -> list[int]:
         # a pair works iff factor * value >= threshold, i.e. value >= need;
         # qualifying values are exactly the strongest suffix of the sorted list
         values = sorted(values)

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countRollSequences(self, n: int, runCaps: List[int]) -> int:
+    def countRollSequences(self, n: int, runCaps: list[int]) -> int:
         MOD = 10**9 + 7
         # dp[j][c]: sequences of the current length ending with face j
         # repeated exactly c times (runCaps[i] <= 15, so 16 columns suffice)

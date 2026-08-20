@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestPalindromeSlice(self, s: str) -> str:
         # Walk outward from a center while the two boundary characters

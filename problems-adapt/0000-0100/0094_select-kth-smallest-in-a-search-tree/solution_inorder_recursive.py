@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,13 +6,13 @@ class TreeNode:
 
 
 class Solution:
-    def selectKthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+    def selectKthSmallest(self, root: TreeNode | None, k: int) -> int:
         # In-order traversal of a BST visits values in ascending order, so
         # the kth visit is the kth smallest. k counts down inside the
         # closure; the visit that zeroes it records the answer.
         answer = -1
 
-        def visit(node: Optional[TreeNode]) -> None:
+        def visit(node: TreeNode | None) -> None:
             nonlocal k, answer
             # Early stop: once the answer is recorded, the unvisited
             # remainder of the tree is never touched.

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestMaxWorkload(self, jobs: List[int], k: int) -> int:
+    def smallestMaxWorkload(self, jobs: list[int], k: int) -> int:
         n = len(jobs)
         # Largest jobs first: the biggest loads surface at the shallowest
         # levels, where the bound tightens soonest.

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class PrefixTree:
     def __init__(self) -> None:
         raise NotImplementedError("TODO")

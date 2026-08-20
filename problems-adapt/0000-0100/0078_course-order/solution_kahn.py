@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def courseOrder(self, courseCount: int, prerequisites: List[List[int]]) -> List[int]:
+    def courseOrder(self, courseCount: int, prerequisites: list[list[int]]) -> list[int]:
         from collections import deque
 
         # A valid order is exactly a topological ordering of the graph where

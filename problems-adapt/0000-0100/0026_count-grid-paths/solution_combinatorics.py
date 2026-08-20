@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def countGridPaths(self, m: int, n: int) -> int:
         # Every path is m-1 downs and n-1 rights in some order, so counting

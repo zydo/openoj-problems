@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countPairSumsDivisibleBy60(self, durations: List[int]) -> int:
+    def countPairSumsDivisibleBy60(self, durations: list[int]) -> int:
         # entries bucketed by duration % 60: only the remainders decide
         # whether two durations sum to a multiple of 60
         counts = [0] * 60

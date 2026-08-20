@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestKMultipleSum(self, nums: List[int], k: int) -> int:
+    def largestKMultipleSum(self, nums: list[int], k: int) -> int:
         n = len(nums)
         prefix = [0] * (n + 1)
         for i in range(n):

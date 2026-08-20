@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestWaterArea(self, heights: List[int]) -> int:
+    def largestWaterArea(self, heights: list[int]) -> int:
         # Start with the widest possible container, one pointer at each end.
         left, right = 0, len(heights) - 1
         best = 0

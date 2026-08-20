@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def twoLoneElements(self, nums: List[int]) -> List[int]:
+    def twoLoneElements(self, nums: list[int]) -> list[int]:
         # XOR of the whole array: every value appearing twice cancels to
         # zero, so total is the XOR of exactly the two singles.
         total = 0

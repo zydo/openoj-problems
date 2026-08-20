@@ -1,5 +1,3 @@
-from typing import List, Optional
-
 MOD = 10**9 + 7
 
 

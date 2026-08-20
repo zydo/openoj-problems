@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def lastFall(self, n: int, left: List[int], right: List[int]) -> int:
+    def lastFall(self, n: int, left: list[int], right: list[int]) -> int:
         # Two ants bouncing off each other is indistinguishable from passing
         # through while swapping identities; the plank empties at a time that
         # depends only on positions, so collisions can be ignored.

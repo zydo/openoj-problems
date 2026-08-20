@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def coursesFeasible(self, courseCount: int, prerequisites: List[List[int]]) -> bool:
+    def coursesFeasible(self, courseCount: int, prerequisites: list[list[int]]) -> bool:
         raise NotImplementedError("TODO")

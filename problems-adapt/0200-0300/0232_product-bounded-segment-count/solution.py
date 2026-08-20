@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countProductBoundedSegments(self, values: List[int], limit: int) -> int:
+    def countProductBoundedSegments(self, values: list[int], limit: int) -> int:
         # Products are at least 1 (elements >= 1), so limit <= 1 admits nothing.
         if limit <= 1:
             return 0

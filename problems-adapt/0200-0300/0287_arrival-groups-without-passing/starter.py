@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countArrivalGroups(self, destination: int, starts: List[int], velocities: List[int]) -> int:
+    def countArrivalGroups(self, destination: int, starts: list[int], velocities: list[int]) -> int:
         raise NotImplementedError("TODO")

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def groupByLetters(self, words: List[str]) -> List[List[str]]:
+    def groupByLetters(self, words: list[str]) -> list[list[str]]:
         raise NotImplementedError("TODO")

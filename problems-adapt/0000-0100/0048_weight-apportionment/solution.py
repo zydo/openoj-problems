@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def apportion(self, scores: List[int]) -> int:
+    def apportion(self, scores: list[int]) -> int:
         n = len(scores)
         # A weight of one everywhere is the floor the rules allow.
         weights = [1] * n

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rebuildLine(self, people: List[List[int]]) -> List[List[int]]:
+    def rebuildLine(self, people: list[list[int]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

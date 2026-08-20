@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestKCardsFromTheEnds(self, cardPoints: List[int], k: int) -> int:
+    def bestKCardsFromTheEnds(self, cardPoints: list[int], k: int) -> int:
         n = len(cardPoints)
         total = sum(cardPoints)
         # taking k cards off the ends always leaves a contiguous middle block

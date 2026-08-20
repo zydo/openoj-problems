@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rootDistances(self, n: int, edges: List[List[int]], queries: List[List[int]]) -> List[int]:
+    def rootDistances(self, n: int, edges: list[list[int]], queries: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

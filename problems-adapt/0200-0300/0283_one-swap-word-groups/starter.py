@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSwapGroups(self, words: List[str]) -> int:
+    def countSwapGroups(self, words: list[str]) -> int:
         raise NotImplementedError("TODO")

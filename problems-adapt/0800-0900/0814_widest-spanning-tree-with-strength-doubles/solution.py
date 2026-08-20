@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def widestSpanningTree(self, n: int, edges: List[List[int]], k: int) -> int:
+    def widestSpanningTree(self, n: int, edges: list[list[int]], k: int) -> int:
         def feasible(x):
             parent = list(range(n))
             size = [1] * n

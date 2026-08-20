@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestPalindromeRemovals(self, arr: List[int]) -> int:
+    def fewestPalindromeRemovals(self, arr: list[int]) -> int:
         raise NotImplementedError("TODO")

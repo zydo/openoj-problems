@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def productGridKthValue(self, m: int, n: int, k: int) -> int:
         # The table is too big to build; its values are orderly enough to count.

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leftmostMeetingPoints(self, heights: List[int], queries: List[List[int]]) -> List[int]:
+    def leftmostMeetingPoints(self, heights: list[int], queries: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

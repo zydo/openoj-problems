@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestBitDisjointSubarray(self, nums: List[int]) -> int:
+    def longestBitDisjointSubarray(self, nums: list[int]) -> int:
         # a lone element is always nice: best starts at 1, mask starts empty
         best = 1
         left = 0

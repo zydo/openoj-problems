@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def isReachable(self, target: List[int]) -> bool:
+    def isReachable(self, target: list[int]) -> bool:
         raise NotImplementedError("TODO")

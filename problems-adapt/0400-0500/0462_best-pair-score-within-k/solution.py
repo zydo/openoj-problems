@@ -1,9 +1,6 @@
 from collections import deque
-from typing import List, Optional
-
-
 class Solution:
-    def bestPairScore(self, points: List[List[int]], k: int) -> int:
+    def bestPairScore(self, points: list[list[int]], k: int) -> int:
         # x is sorted increasing, so for i < j the equation value is
         # yj + xj + (yi - xi): the best partner maximizes the key y - x,
         # turning this into a sliding-window max over that key

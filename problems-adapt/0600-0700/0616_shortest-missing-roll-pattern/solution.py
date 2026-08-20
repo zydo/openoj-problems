@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shortestMissing(self, rolls: List[int], k: int) -> int:
+    def shortestMissing(self, rolls: list[int], k: int) -> int:
         # A "complete window" (all k faces seen since the last reset)
         # extends coverage to sequences one roll longer.
         seen = set()

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSubarrayProduct(self, nums: List[int]) -> int:
+    def largestSubarrayProduct(self, nums: list[int]) -> int:
         # Seed with the first element so a single-element array returns itself.
         best = nums[0]
         # Extremes of subarray products ending exactly at the current index;

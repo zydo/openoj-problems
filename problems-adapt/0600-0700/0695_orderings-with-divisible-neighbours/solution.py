@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDivisibleOrderings(self, nums: List[int]) -> int:
+    def countDivisibleOrderings(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         n = len(nums)
         size = 1 << n

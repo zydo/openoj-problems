@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def leastStepsToHalve(self, nums: List[int]) -> int:
+    def leastStepsToHalve(self, nums: list[int]) -> int:
         total = sum(nums)
         # heapq is a min-heap, so negate values to simulate a max-heap
         heap = [-float(x) for x in nums]

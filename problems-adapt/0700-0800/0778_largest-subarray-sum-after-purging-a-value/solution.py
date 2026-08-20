@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestSumAfterPurge(self, nums: List[int]) -> int:
+    def largestSumAfterPurge(self, nums: list[int]) -> int:
         n = len(nums)
         if n == 1:
             # Deleting the only element is forbidden, so its value stands.

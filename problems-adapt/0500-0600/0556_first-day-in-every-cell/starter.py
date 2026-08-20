@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def firstDayInEveryCell(self, nextVisit: List[int]) -> int:
+    def firstDayInEveryCell(self, nextVisit: list[int]) -> int:
         raise NotImplementedError("TODO")

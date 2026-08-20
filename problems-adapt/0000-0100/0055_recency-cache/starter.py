@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class RecencyCache:
     def __init__(self, capacity: int) -> None:
         raise NotImplementedError("TODO")

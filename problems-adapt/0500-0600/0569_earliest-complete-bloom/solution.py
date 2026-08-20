@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def earliestCompleteBloom(self, plantTime: List[int], growTime: List[int]) -> int:
+    def earliestCompleteBloom(self, plantTime: list[int], growTime: list[int]) -> int:
         best = 0
         prefix = 0
         # Total planting time is fixed regardless of order, so only the

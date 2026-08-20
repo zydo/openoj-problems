@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minCoveringPositions(self, intervals: List[List[int]]) -> int:
+    def minCoveringPositions(self, intervals: list[list[int]]) -> int:
         chosen = 0
         # None (not 0) marks "no position chosen yet" since coordinates can be <= 0.
         last_position = None

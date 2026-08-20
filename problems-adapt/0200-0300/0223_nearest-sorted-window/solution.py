@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def nearestWindow(self, arr: List[int], k: int, x: int) -> List[int]:
+    def nearestWindow(self, arr: list[int], k: int, x: int) -> list[int]:
         # The k closest elements form a contiguous block, so binary search the
         # block's start over [0, n - k].
         lo, hi = 0, len(arr) - k

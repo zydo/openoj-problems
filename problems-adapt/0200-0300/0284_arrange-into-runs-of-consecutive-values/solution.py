@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import Counter
 
 
 class Solution:
-    def arrangeIntoConsecutiveRuns(self, entries: List[int], runLength: int) -> bool:
+    def arrangeIntoConsecutiveRuns(self, entries: list[int], runLength: int) -> bool:
         # A divisible entries must be a multiple of runLength long.
         if len(entries) % runLength != 0:
             return False

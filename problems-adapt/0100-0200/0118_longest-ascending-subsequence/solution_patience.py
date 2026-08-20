@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_left
 
 
 class Solution:
-    def longestAscendingLength(self, nums: List[int]) -> int:
+    def longestAscendingLength(self, nums: list[int]) -> int:
         # tails[k] = smallest value ending an ascending subsequence of
         # length k+1; it stays sorted, which licenses the binary search.
         tails = []

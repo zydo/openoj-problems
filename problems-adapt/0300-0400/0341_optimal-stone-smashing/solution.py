@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def optimalStoneSmashing(self, stones: List[int]) -> int:
+    def optimalStoneSmashing(self, stones: list[int]) -> int:
         # Smash order is irrelevant: the last stone is a signed sum, so the
         # task is a two-group partition minimizing the difference of sums.
         total = sum(stones)

@@ -1,9 +1,8 @@
-from typing import List
 from operator import sub
 
 
 class Solution:
-    def bestAverageAtLeastK(self, nums: List[int], k: int) -> float:
+    def bestAverageAtLeastK(self, nums: list[int], k: int) -> float:
         n = len(nums)
         # prefix[i] = sum of nums[:i]
         prefix = [0] * (n + 1)

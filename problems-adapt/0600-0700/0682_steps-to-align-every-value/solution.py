@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from bisect import bisect_left
 
 
 class Solution:
-    def alignmentCosts(self, nums: List[int], targets: List[int]) -> List[int]:
+    def alignmentCosts(self, nums: list[int], targets: list[int]) -> list[int]:
         nums = sorted(nums)
         n = len(nums)
         prefix = [0] * (n + 1)

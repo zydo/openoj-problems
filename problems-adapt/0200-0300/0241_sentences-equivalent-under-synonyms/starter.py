@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def sentencesEquivalent(self, wordsA: List[str], wordsB: List[str], synonyms: List[List[str]]) -> bool:
+    def sentencesEquivalent(self, wordsA: list[str], wordsB: list[str], synonyms: list[list[str]]) -> bool:
         raise NotImplementedError("TODO")

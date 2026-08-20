@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def deepestGrouping(self, n: int, edges: List[List[int]]) -> int:
+    def deepestGrouping(self, n: int, edges: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

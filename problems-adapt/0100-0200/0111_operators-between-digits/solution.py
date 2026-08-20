@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def operatorsBetweenDigits(self, num: str, target: int) -> List[str]:
+    def operatorsBetweenDigits(self, num: str, target: int) -> list[str]:
         n = len(num)
         results = []
 

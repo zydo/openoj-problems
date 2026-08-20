@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,10 +6,10 @@ class TreeNode:
 
 
 class Solution:
-    def deepestSharedAncestor(self, root: Optional[TreeNode], p: int, q: int) -> int:
+    def deepestSharedAncestor(self, root: TreeNode | None, p: int, q: int) -> int:
         # find answers a narrower question per subtree: does it hold p or q?
         # It returns the found target node itself, or None if neither is there.
-        def find(node: Optional[TreeNode]) -> Optional[TreeNode]:
+        def find(node: TreeNode | None) -> TreeNode | None:
             # A node counts as a descendant of itself, so a value match is
             # itself a successful find and we return immediately.
             if node is None or node.val == p or node.val == q:

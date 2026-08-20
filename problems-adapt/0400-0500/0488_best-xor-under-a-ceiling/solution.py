@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class _Node:
     __slots__ = ("child",)
 
@@ -9,7 +6,7 @@ class _Node:
 
 
 class Solution:
-    def bestXorUnder(self, nums: List[int], queries: List[List[int]]) -> List[int]:
+    def bestXorUnder(self, nums: list[int], queries: list[list[int]]) -> list[int]:
         nums = sorted(nums)
         sorted_queries = sorted((mi, xi, idx) for idx, (xi, mi) in enumerate(queries))
         answers = [0] * len(queries)

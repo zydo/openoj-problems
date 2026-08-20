@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def productOfRest(self, nums: List[int]) -> List[int]:
+    def productOfRest(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

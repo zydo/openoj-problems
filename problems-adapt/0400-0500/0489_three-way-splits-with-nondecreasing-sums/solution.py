@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_left, bisect_right
 
 
 class Solution:
-    def countThreeWaySplits(self, nums: List[int]) -> int:
+    def countThreeWaySplits(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         n = len(nums)
         prefix = [0] * (n + 1)

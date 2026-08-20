@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def stoneDraft(self, aliceValues: List[int], bobValues: List[int]) -> int:
+    def stoneDraft(self, aliceValues: list[int], bobValues: list[int]) -> int:
         raise NotImplementedError("TODO")

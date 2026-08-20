@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxRisingTake(self, books: List[int]) -> int:
+    def maxRisingTake(self, books: list[int]) -> int:
         n = len(books)
         # dp[i] = best total of a strictly increasing chain ending at i;
         # the rightmost shelf gives everything, so each take is books[i]-(i-x).

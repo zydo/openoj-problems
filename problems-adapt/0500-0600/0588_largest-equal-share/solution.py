@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxShare(self, piles: List[int], k: int) -> int:
+    def maxShare(self, piles: list[int], k: int) -> int:
         # feasibility is monotone in c: if every child can get c, any smaller
         # amount works too, so binary search the largest feasible c
         def can(c):

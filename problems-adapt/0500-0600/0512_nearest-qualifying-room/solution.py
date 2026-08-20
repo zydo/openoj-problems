@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from bisect import bisect_left, insort
 
 
 class Solution:
-    def nearestQualifyingRoom(self, rooms: List[List[int]], queries: List[List[int]]) -> List[int]:
+    def nearestQualifyingRoom(self, rooms: list[list[int]], queries: list[list[int]]) -> list[int]:
         # Offline trick: process queries by decreasing minSize so rooms only accumulate.
         rooms_by_size = sorted(rooms, key=lambda r: -r[1])
         query_order = sorted(range(len(queries)), key=lambda j: -queries[j][1])

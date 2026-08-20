@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestWalkSum(self, receiver: List[int], k: int) -> int:
+    def bestWalkSum(self, receiver: list[int], k: int) -> int:
         n = len(receiver)
         log = k.bit_length()
         up = [[0] * n for _ in range(log)]

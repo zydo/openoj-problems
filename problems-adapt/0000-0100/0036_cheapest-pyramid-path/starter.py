@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestPath(self, rows: List[List[int]]) -> int:
+    def cheapestPath(self, rows: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

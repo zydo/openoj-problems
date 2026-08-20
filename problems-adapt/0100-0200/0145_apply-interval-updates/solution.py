@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def applyIntervalUpdates(self, length: int, updates: List[List[int]]) -> List[int]:
+    def applyIntervalUpdates(self, length: int, updates: list[list[int]]) -> list[int]:
         # Record only where the running total changes: +inc at start,
         # -inc just past end. The extra slot makes end+1 safe at the
         # last index.

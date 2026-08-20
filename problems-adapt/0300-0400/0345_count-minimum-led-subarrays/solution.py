@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countMinimumLedSubarrays(self, nums: List[int]) -> int:
+    def countMinimumLedSubarrays(self, nums: list[int]) -> int:
         # For each start i, valid subarrays extend until the first element
         # strictly smaller than nums[i]; count via a monotonic stack.
         n = len(nums)

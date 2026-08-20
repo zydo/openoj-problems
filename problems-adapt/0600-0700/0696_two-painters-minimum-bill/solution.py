@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastPaintCost(self, cost: List[int], time: List[int]) -> int:
+    def leastPaintCost(self, cost: list[int], time: list[int]) -> int:
         n = len(cost)
         INF = 10**18
         # Paying for wall i covers time[i] + 1 walls — itself plus time[i]

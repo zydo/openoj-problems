@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestSettlements(self, ledger: List[List[int]]) -> int:
+    def fewestSettlements(self, ledger: list[list[int]]) -> int:
         balance = {}
         for frm, to, amount in ledger:
             balance[frm] = balance.get(frm, 0) - amount

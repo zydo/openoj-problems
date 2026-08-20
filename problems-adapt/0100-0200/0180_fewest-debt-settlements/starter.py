@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestSettlements(self, ledger: List[List[int]]) -> int:
+    def fewestSettlements(self, ledger: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

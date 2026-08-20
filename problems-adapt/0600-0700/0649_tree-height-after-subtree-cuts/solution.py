@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def cutHeights(self, root: Optional[TreeNode], queries: List[int]) -> List[int]:
+    def cutHeights(self, root: TreeNode | None, queries: list[int]) -> list[int]:
         if root is None:
             return [0] * len(queries)
 

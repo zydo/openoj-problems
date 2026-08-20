@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxCollectibleReward(self, rewards: List[int]) -> int:
+    def maxCollectibleReward(self, rewards: list[int]) -> int:
         raise NotImplementedError("TODO")

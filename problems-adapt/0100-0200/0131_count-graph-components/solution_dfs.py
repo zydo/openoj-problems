@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countGraphComponents(self, n: int, edges: List[List[int]]) -> int:
+    def countGraphComponents(self, n: int, edges: list[list[int]]) -> int:
         # Both directions per edge: the graph is undirected, so each
         # endpoint must list the other among its neighbors.
         adjacency = [[] for _ in range(n)]

@@ -1,5 +1,3 @@
-from typing import List, Optional
-
 from bisect import bisect_right
 
 

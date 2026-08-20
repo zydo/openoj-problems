@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestConstantStepSubsequence(self, nums: List[int]) -> int:
+    def longestConstantStepSubsequence(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

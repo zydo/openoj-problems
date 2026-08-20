@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def reachableSumRun(self, coins: List[int]) -> int:
+    def reachableSumRun(self, coins: list[int]) -> int:
         # Invariant: every value in [0, reachable] is makeable as a subset sum.
         reachable = 0
         # Ascending order, so each check applies to the cheapest remaining coin.

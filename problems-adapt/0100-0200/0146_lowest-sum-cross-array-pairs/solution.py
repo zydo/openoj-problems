@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def lowestSumPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
+    def lowestSumPairs(self, nums1: list[int], nums2: list[int], k: int) -> list[list[int]]:
         if not nums1 or not nums2 or k <= 0:
             return []
         result = []

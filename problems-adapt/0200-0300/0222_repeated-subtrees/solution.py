@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,11 +6,11 @@ class TreeNode:
 
 
 class Solution:
-    def repeatedSubtrees(self, root: Optional[TreeNode]) -> List[Optional[TreeNode]]:
+    def repeatedSubtrees(self, root: TreeNode | None) -> list[TreeNode | None]:
         info: dict = {}  # serial -> [first node, last preorder index, count]
         counter = [0]
 
-        def key(node: Optional[TreeNode]) -> str:
+        def key(node: TreeNode | None) -> str:
             if node is None:
                 return "#"
             index = counter[0]

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestSubarraySum(self, nums: List[int], k: int) -> int:
+    def bestSubarraySum(self, nums: list[int], k: int) -> int:
         best = {nums[0]: 0}  # value -> minimum prefix sum P[i] for a start i
         prefix = 0
         ans = None

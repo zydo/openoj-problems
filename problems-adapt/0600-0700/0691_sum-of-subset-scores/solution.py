@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def sumOfSubsetScores(self, nums: List[int]) -> int:
+    def sumOfSubsetScores(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         nums = sorted(nums)
         ans = 0

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def setBitCounts(self, n: int) -> List[int]:
+    def setBitCounts(self, n: int) -> list[int]:
         ans = [0] * (n + 1)
         # i & (i - 1) clears i's lowest set bit, so its popcount is already
         # computed; the +1 adds the cleared bit back. Since i & (i-1) < i

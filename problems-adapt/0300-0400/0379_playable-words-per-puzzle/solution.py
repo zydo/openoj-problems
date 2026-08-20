@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countPlayableWords(self, words: List[str], puzzles: List[str]) -> List[int]:
+    def countPlayableWords(self, words: list[str], puzzles: list[str]) -> list[int]:
         def word_mask(text):
             # a word is fully described by its 26-bit distinct-letter mask;
             # repeats within the word are irrelevant to validity

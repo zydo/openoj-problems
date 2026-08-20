@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def equalizeCoins(self, root: Optional[TreeNode]) -> int:
+    def equalizeCoins(self, root: TreeNode | None) -> int:
         moves = 0
 
         # dfs returns the subtree's excess: coins minus nodes. That excess

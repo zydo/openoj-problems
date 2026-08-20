@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestIslandAfterFlip(self, grid: List[List[int]]) -> int:
+    def largestIslandAfterFlip(self, grid: list[list[int]]) -> int:
         n = len(grid)
         # Label each 4-connected island with a distinct color and
         # record its size; marking cells as they are pushed finds each

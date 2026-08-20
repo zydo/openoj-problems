@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countEmbeddedCandidates(self, text: str, candidates: List[str]) -> int:
+    def countEmbeddedCandidates(self, text: str, candidates: list[str]) -> int:
         # Bucket each word by the next character it waits for: stream text
         # once and advance every word waiting on the arriving character.
         waiting = {}

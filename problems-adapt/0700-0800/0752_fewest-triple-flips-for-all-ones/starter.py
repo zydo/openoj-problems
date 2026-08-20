@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestFlips(self, nums: List[int]) -> int:
+    def fewestFlips(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

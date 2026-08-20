@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostPairs(self, nums: List[int]) -> int:
+    def mostPairs(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

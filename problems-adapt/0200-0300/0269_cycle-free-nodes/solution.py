@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cycleFreeNodes(self, graph: List[List[int]]) -> List[int]:
+    def cycleFreeNodes(self, graph: list[list[int]]) -> list[int]:
         n = len(graph)
         # Kahn's peel on the reversed graph: a node is safe exactly
         # when every path from it terminates.

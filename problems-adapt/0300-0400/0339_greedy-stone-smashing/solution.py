@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def greedyStoneSmashing(self, stones: List[int]) -> int:
+    def greedyStoneSmashing(self, stones: list[int]) -> int:
         # heapq is a min-heap, so store negated weights: smallest negated
         # value = heaviest stone.
         heap = [-s for s in stones]

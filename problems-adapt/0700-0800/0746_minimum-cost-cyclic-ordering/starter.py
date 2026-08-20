@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minCostOrder(self, nums: List[int]) -> List[int]:
+    def minCostOrder(self, nums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

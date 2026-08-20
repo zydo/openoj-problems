@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 import heapq
 
 
 class Solution:
-    def isReachable(self, target: List[int]) -> bool:
+    def isReachable(self, target: list[int]) -> bool:
         n = len(target)
         # With no "rest" to un-mix against, the only reachable target is [1].
         if n == 1:

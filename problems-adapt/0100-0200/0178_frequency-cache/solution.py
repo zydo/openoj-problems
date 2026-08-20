@@ -1,6 +1,3 @@
-from typing import Dict, Optional
-
-
 class _Node:
     __slots__ = ("key", "value", "freq", "bucket", "prev", "next")
 
@@ -8,9 +5,9 @@ class _Node:
         self.key = key
         self.value = value
         self.freq = 1
-        self.bucket: Optional["_Bucket"] = None
-        self.prev: Optional["_Node"] = None
-        self.next: Optional["_Node"] = None
+        self.bucket: "_Bucket" | None = None
+        self.prev: "_Node" | None = None
+        self.next: "_Node" | None = None
 
 
 class _Bucket:
@@ -25,8 +22,8 @@ class _Bucket:
         self.tail = _Node()  # sentinel after the most recent node
         self.head.next = self.tail
         self.tail.prev = self.head
-        self.prev: Optional["_Bucket"] = None
-        self.next: Optional["_Bucket"] = None
+        self.prev: "_Bucket" | None = None
+        self.next: "_Bucket" | None = None
 
 
 class FrequencyCache:
@@ -39,7 +36,7 @@ class FrequencyCache:
 
     def __init__(self, capacity: int) -> None:
         self.capacity = capacity
-        self.nodes: Dict[int, _Node] = {}
+        self.nodes: dict[int, _Node] = {}
         self.first = _Bucket(0)  # sentinel before the lowest frequency
         self.last = _Bucket(0)  # sentinel after the highest frequency
         self.first.next = self.last

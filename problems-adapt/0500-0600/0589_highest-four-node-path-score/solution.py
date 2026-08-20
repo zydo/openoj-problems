@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def bestPathScore(self, scores: List[int], edges: List[List[int]]) -> int:
+    def bestPathScore(self, scores: list[int], edges: list[list[int]]) -> int:
         n = len(scores)
         adj = [[] for _ in range(n)]
         for a, b in edges:

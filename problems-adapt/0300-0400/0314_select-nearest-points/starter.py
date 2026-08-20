@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def selectNearestPoints(self, points: List[List[int]], k: int) -> List[List[int]]:
+    def selectNearestPoints(self, points: list[list[int]], k: int) -> list[list[int]]:
         raise NotImplementedError("TODO")

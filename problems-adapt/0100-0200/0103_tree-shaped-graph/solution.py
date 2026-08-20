@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def isTreeShaped(self, n: int, edges: List[List[int]]) -> bool:
+    def isTreeShaped(self, n: int, edges: list[list[int]]) -> bool:
         # A tree needs exactly n - 1 edges: fewer cannot connect n nodes,
         # more cannot stay acyclic — any other count fails immediately.
         if len(edges) != n - 1:

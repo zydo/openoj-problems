@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestUniformWindow(self, s: str, k: int) -> int:
         # A window is fixable with k changes iff length - (count of its most

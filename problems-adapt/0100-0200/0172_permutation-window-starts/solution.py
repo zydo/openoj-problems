@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def permutationWindowStarts(self, s: str, p: str) -> List[int]:
+    def permutationWindowStarts(self, s: str, p: str) -> list[int]:
         length = len(p)
         n = len(s)
         result = []

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def survivorHealths(self, positions: List[int], healths: List[int], directions: str) -> List[int]:
+    def survivorHealths(self, positions: list[int], healths: list[int], directions: str) -> list[int]:
         raise NotImplementedError("TODO")

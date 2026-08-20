@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxSubarrayScore(self, nums: List[int]) -> int:
+    def maxSubarrayScore(self, nums: list[int]) -> int:
         MOD = 10**9 + 7
         n = len(nums)
         prefix = [0] * (n + 1)

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def shortestSubarrayToTarget(self, target: int, nums: List[int]) -> int:
+    def shortestSubarrayToTarget(self, target: int, nums: list[int]) -> int:
         n = len(nums)
         # Sentinel: an impossible length that survives when target is never met.
         best = n + 1

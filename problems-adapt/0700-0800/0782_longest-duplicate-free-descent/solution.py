@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestDuplicateFreeDescent(self, edges: List[List[int]], nums: List[int]) -> List[int]:
+    def longestDuplicateFreeDescent(self, edges: list[list[int]], nums: list[int]) -> list[int]:
         n = len(nums)
         adj = [[] for _ in range(n)]
         for u, v, w in edges:

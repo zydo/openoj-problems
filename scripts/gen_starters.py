@@ -86,6 +86,29 @@ def _entry(invocation: dict, language: str) -> str:
 # --- per-language type rendering -------------------------------------------------
 
 
+# The Python style starters are emitted in. "legacy" keeps the
+# LeetCode-era annotations (typing.List, typing.Optional) the live tree
+# was authored with; "modern" uses PEP 585/604 (list[int], X | None) and
+# drops the typing import unless something genuinely needs it. The
+# adapted tree generates modern; the live tree stays legacy.
+PYTHON_STYLE = "legacy"
+
+
+def set_python_style(style: str) -> None:
+    global PYTHON_STYLE
+    if style not in ("legacy", "modern"):
+        raise SystemExit(f"unknown python style {style!r} (legacy or modern)")
+    PYTHON_STYLE = style
+
+
+def _py_imports(callbacks: bool = False) -> list[str]:
+    """The leading import block for a Python starter, per style."""
+    if PYTHON_STYLE == "modern":
+        return [f"from typing import Callable\n\n\n"] if callbacks else []
+    names = "Callable, List, Optional" if callbacks else "List, Optional"
+    return [f"from typing import {names}\n\n\n"]
+
+
 def python_type(spec: dict) -> str:
     kind = _kind(spec)
     return {
@@ -94,9 +117,9 @@ def python_type(spec: dict) -> str:
         "number": "float",
         "boolean": "bool",
         "string": "str",
-        "linked_list": "Optional[ListNode]",
-        "binary_tree": "Optional[TreeNode]",
-    }.get(kind) or f"List[{python_type(spec['items'])}]"
+        "linked_list": "ListNode | None" if PYTHON_STYLE == "modern" else "Optional[ListNode]",
+        "binary_tree": "TreeNode | None" if PYTHON_STYLE == "modern" else "Optional[TreeNode]",
+    }.get(kind) or ("list[" if PYTHON_STYLE == "modern" else "List[") + f"{python_type(spec['items'])}]"
 
 
 def javascript_type(spec: dict) -> str:
@@ -249,7 +272,7 @@ def generate(invocation: dict, language: str) -> str:
     name = _entry(invocation, language)
 
     if language == "python3":
-        blocks = ["from typing import List, Optional\n\n\n"]
+        blocks = _py_imports()
         if "list" in structs:
             blocks.append(PY_LIST_NODE + "\n\n")
         if "tree" in structs:
@@ -342,7 +365,7 @@ def _generate_design(invocation: dict, language: str) -> str:
     all_specs += [method.get("return_type") for method in methods if method.get("return_type")]
 
     if language == "python3":
-        blocks = ["from typing import List, Optional\n\n\n"]
+        blocks = _py_imports()
         blocks.append(f"class {class_name}:\n")
         ctor_signature = ", ".join(
             ["self", *(f"{parameter['name']}: {python_type(parameter['value_type'])}" for parameter in constructor)]
@@ -406,8 +429,7 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
     callbacks = any(_kind(parameter["value_type"]) == "callback" for parameter in parameters)
 
     if language == "python3":
-        typing_names = "Callable, List, Optional" if callbacks else "List, Optional"
-        blocks = [f"from typing import {typing_names}\n\n\n", f"class {class_name}:\n"]
+        blocks = [*_py_imports(callbacks), f"class {class_name}:\n"]
 
         def signature(specs: list[dict]) -> str:
             return ", ".join(
@@ -539,7 +561,7 @@ def _generate_interactive(invocation: dict, language: str) -> str:
         signature = ", ".join(
             ["self", oracle_argument, *(f"{name}: {python_type(spec)}" for name, spec in auxiliary)]
         )
-        blocks = ["from typing import List, Optional\n\n\n"]
+        blocks = _py_imports()
         blocks.append(f"class {class_name}:\n")
         blocks.append(f"    def {method}({signature}) -> {python_return}:\n")
         blocks.append('        raise NotImplementedError("TODO")\n')
@@ -572,9 +594,19 @@ def starter_files(invocation: dict) -> dict[str, str]:
 def main() -> None:
     arguments = sys.argv[1:]
     check_only = "--check" in arguments
+    style = next((argument.split("=", 1)[1] for argument in arguments
+                  if argument.startswith("--style=")), None)
     targets = [Path(argument) for argument in arguments if not argument.startswith("--")]
+    root = Path(__file__).resolve().parent.parent
     if not targets:
-        targets = sorted(Path(__file__).resolve().parent.parent.glob("problems/*"))
+        # bundle dirs flat or inside the 100-id shards
+        targets = sorted(
+            child if (child / "problem.json").is_file() else sub
+            for child in root.glob("problems/*")
+            for sub in ([child] if (child / "problem.json").is_file() else sorted(child.iterdir()))
+            if sub.is_dir() and (sub / "problem.json").is_file()
+        )
+    set_python_style(style or ("modern" if any("problems-adapt" in p.parts for p in targets) else "legacy"))
     failures = 0
     for bundle in targets:
         problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))

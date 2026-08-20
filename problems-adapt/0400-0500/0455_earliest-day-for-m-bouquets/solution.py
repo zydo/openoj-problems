@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def earliestDay(self, openDay: List[int], m: int, k: int) -> int:
+    def earliestDay(self, openDay: list[int], m: int, k: int) -> int:
         n = len(openDay)
         # Not enough flowers to ever build m bouquets of k flowers each.
         if m * k > n:

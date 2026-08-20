@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestDivisibleOrdering(self, nums: List[int], k: int) -> List[int]:
+    def smallestDivisibleOrdering(self, nums: list[int], k: int) -> list[int]:
         raise NotImplementedError("TODO")

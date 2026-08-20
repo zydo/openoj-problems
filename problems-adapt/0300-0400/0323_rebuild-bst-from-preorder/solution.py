@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,7 +6,7 @@ class TreeNode:
 
 
 class Solution:
-    def rebuildBstFromPreorder(self, preorder: List[int]) -> Optional[TreeNode]:
+    def rebuildBstFromPreorder(self, preorder: list[int]) -> TreeNode | None:
         index = 0
 
         def build(low, high):

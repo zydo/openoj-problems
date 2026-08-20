@@ -1,7 +1,4 @@
 from bisect import bisect_right
-from typing import Dict, List, Tuple
-
-
 class VersionedArray:
     """Per-index history of (commit_id, val); versions are virtual counters.
 
@@ -11,7 +8,7 @@ class VersionedArray:
 
     def __init__(self, length: int) -> None:
         self.current = 0  # version id the next commit() will return
-        self.history: Dict[int, List[Tuple[int, int]]] = {}
+        self.history: dict[int, list[tuple[int, int]]] = {}
 
     def set(self, index: int, val: int) -> None:
         entries = self.history.setdefault(index, [])

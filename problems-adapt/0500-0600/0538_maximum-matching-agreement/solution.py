@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxMatchingAgreement(self, students: List[List[int]], mentors: List[List[int]]) -> int:
+    def maxMatchingAgreement(self, students: list[list[int]], mentors: list[list[int]]) -> int:
         m = len(students)
         # Precompute the m x m agreement counts so the DP touches only ints.
         score = [[sum(a == b for a, b in zip(students[i], mentors[j])) for j in range(m)] for i in range(m)]

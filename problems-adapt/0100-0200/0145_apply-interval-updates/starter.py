@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def applyIntervalUpdates(self, length: int, updates: List[List[int]]) -> List[int]:
+    def applyIntervalUpdates(self, length: int, updates: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

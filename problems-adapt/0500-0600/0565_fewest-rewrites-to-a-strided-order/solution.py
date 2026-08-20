@@ -1,9 +1,6 @@
 from bisect import bisect_right
-from typing import List, Optional
-
-
 class Solution:
-    def fewestRewrites(self, arr: List[int], k: int) -> int:
+    def fewestRewrites(self, arr: list[int], k: int) -> int:
         def longest_nondecreasing(seq):
             # Patience trick: tails[l] is the smallest possible tail of a
             # non-decreasing subsequence of length l+1.

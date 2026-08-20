@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestMinGap(self, price: List[int], k: int) -> int:
+    def largestMinGap(self, price: list[int], k: int) -> int:
         # In a sorted selection the minimum pairwise gap always occurs between
         # adjacent picks, so sorting once reduces the problem to chain gaps.
         price = sorted(price)

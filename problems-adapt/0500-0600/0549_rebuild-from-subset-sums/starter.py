@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def rebuildFromSubsetSums(self, n: int, sums: List[int]) -> List[int]:
+    def rebuildFromSubsetSums(self, n: int, sums: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

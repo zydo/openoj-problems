@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def tallestStack(self, cuboids: List[List[int]]) -> int:
+    def tallestStack(self, cuboids: list[list[int]]) -> int:
         # Rotations are free, so sort each cuboid's dimensions — largest up
         # is simultaneously tallest and least constrained — then sort the
         # cuboids lexicographically so a potential base precedes its tippers.

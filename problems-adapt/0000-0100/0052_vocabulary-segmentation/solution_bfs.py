@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import deque
 
 
 class Solution:
-    def canSegment(self, s: str, vocabulary: List[str]) -> bool:
+    def canSegment(self, s: str, vocabulary: list[str]) -> bool:
         words = set(vocabulary)
         n = len(s)
         # Only entries short enough to fit can ever be a next piece.

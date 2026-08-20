@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def sumOfExtremes(self, nums: List[int], k: int) -> int:
+    def sumOfExtremes(self, nums: list[int], k: int) -> int:
         def _count_pairs(A, B, K):
             """Number of (a, b) with 0<=a<=A, 0<=b<=B, a+b<=K."""
             if K < 0 or A < 0 or B < 0:

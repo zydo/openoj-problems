@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostUniformRowsAfterFlips(self, matrix: List[List[int]]) -> int:
+    def mostUniformRowsAfterFlips(self, matrix: list[list[int]]) -> int:
         raise NotImplementedError("TODO")

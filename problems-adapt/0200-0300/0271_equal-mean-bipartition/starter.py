@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canSplitEqualMean(self, values: List[int]) -> bool:
+    def canSplitEqualMean(self, values: list[int]) -> bool:
         raise NotImplementedError("TODO")

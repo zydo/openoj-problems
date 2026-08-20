@@ -1,9 +1,8 @@
-from typing import List, Optional
 from bisect import bisect_left
 
 
 class Solution:
-    def mostBalancedEvenSplit(self, nums: List[int]) -> int:
+    def mostBalancedEvenSplit(self, nums: list[int]) -> int:
         half = len(nums) // 2
 
         # Bucket each half's subset sums by how many elements produced them;

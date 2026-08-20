@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class PlayerRatings:
-    def __init__(self, players: List[str], teams: List[str], scores: List[int]) -> None:
+    def __init__(self, players: list[str], teams: list[str], scores: list[int]) -> None:
         raise NotImplementedError("TODO")
 
     def setRating(self, player: str, score: int) -> None:

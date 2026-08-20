@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def minimumPeakDeletions(self, nums: List[int]) -> int:
+    def minimumPeakDeletions(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

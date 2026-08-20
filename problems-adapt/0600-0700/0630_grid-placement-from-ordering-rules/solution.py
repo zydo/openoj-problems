@@ -1,5 +1,3 @@
-from typing import List, Optional
-
 from collections import deque
 
 
@@ -7,9 +5,9 @@ class Solution:
     def gridPlacement(
         self,
         k: int,
-        rowConditions: List[List[int]],
-        colConditions: List[List[int]],
-    ) -> List[List[int]]:
+        rowConditions: list[list[int]],
+        colConditions: list[list[int]],
+    ) -> list[list[int]]:
         def topo(conditions):
             # Kahn's algorithm over the condition graph. Duplicate conditions
             # only add parallel edges and matching indegrees — harmless.

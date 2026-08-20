@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def leastMergeCost(self, lengths: List[int]) -> int:
+    def leastMergeCost(self, lengths: list[int]) -> int:
         if len(lengths) <= 1:
             # a single stick needs no merge
             return 0

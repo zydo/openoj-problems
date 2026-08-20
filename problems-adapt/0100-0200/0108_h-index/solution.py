@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def hIndex(self, citations: List[int]) -> int:
+    def hIndex(self, citations: list[int]) -> int:
         n = len(citations)
         # h can never exceed the paper count, so citations above n are as good
         # as n: tally into n+1 buckets with oversized values clamped to n.

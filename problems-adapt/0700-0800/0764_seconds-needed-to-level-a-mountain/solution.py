@@ -1,9 +1,6 @@
 from math import isqrt
-from typing import List, Optional
-
-
 class Solution:
-    def secondsToLevel(self, mountainHeight: int, workerTimes: List[int]) -> int:
+    def secondsToLevel(self, mountainHeight: int, workerTimes: list[int]) -> int:
         def units(wt, t):
             # largest x such that wt * x*(x+1)/2 <= t  =>  x*(x+1) <= 2*t//wt
             c = (2 * t) // wt

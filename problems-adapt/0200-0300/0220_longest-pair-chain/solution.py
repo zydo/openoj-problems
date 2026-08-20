@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestPairChain(self, pairs: List[List[int]]) -> int:
+    def longestPairChain(self, pairs: list[list[int]]) -> int:
         # Taking the compatible pair that ends earliest leaves the most room,
         # so sorting by right endpoint makes a single greedy pass optimal.
         pairs = sorted(pairs, key=lambda p: p[1])

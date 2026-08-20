@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostStringsWithinBudgets(self, strs: List[str], m: int, n: int) -> int:
+    def mostStringsWithinBudgets(self, strs: list[str], m: int, n: int) -> int:
         # dp[i][j] = most strings pickable with at most i zeros and j ones:
         # a 0/1 knapsack with two resource axes; the all-zero table already
         # encodes "pick nothing".

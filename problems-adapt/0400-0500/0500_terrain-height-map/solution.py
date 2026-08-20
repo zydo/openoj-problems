@@ -1,9 +1,8 @@
-from typing import List, Optional
 from collections import deque
 
 
 class Solution:
-    def heightMap(self, isWater: List[List[int]]) -> List[List[int]]:
+    def heightMap(self, isWater: list[list[int]]) -> list[list[int]]:
         m, n = len(isWater), len(isWater[0])
         # Optimal height = distance to the nearest water: the two rules cap
         # every cell there, and assigning exactly that maximizes all cells

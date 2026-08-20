@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canClear(self, nums: List[int], queries: List[List[int]]) -> bool:
+    def canClear(self, nums: list[int], queries: list[list[int]]) -> bool:
         n = len(nums)
         # Difference array: +1 at l and -1 at r+1 per query; the spare slot
         # at index n absorbs the r+1 == n write without a bounds check.

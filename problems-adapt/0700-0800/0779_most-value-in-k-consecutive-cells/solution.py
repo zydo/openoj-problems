@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def mostValueInKCells(self, runs: List[List[int]], k: int) -> int:
+    def mostValueInKCells(self, runs: list[list[int]], k: int) -> int:
         import bisect
 
         # Sort by left endpoint: a window can only intersect a contiguous

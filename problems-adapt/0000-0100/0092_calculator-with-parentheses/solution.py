@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def calculateWithParentheses(self, s: str) -> int:
         # Only + and - appear, so the whole expression reduces to summing

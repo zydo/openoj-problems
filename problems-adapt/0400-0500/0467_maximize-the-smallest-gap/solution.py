@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def largestMinGap(self, slots: List[int], m: int) -> int:
+    def largestMinGap(self, slots: list[int], m: int) -> int:
         slots = sorted(slots)
 
         def feasible(distance: int) -> bool:

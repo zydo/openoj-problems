@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def flattestRoute(self, heights: List[List[int]]) -> int:
+    def flattestRoute(self, heights: list[list[int]]) -> int:
         rows, cols = len(heights), len(heights[0])
         # Bottleneck shortest path: Dijkstra with max in place of addition —
         # a path's effort is the largest height difference along it, and the

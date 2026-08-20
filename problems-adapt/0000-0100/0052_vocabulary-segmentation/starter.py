@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def canSegment(self, s: str, vocabulary: List[str]) -> bool:
+    def canSegment(self, s: str, vocabulary: list[str]) -> bool:
         raise NotImplementedError("TODO")

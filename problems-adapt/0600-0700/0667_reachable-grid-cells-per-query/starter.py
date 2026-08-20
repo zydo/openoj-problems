@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def reachableCellsPerQuery(self, grid: List[List[int]], queries: List[int]) -> List[int]:
+    def reachableCellsPerQuery(self, grid: list[list[int]], queries: list[int]) -> list[int]:
         raise NotImplementedError("TODO")

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
     def coursePrerequisiteQueries(
-        self, courseCount: int, prerequisites: List[List[int]], queries: List[List[int]]
-    ) -> List[bool]:
+        self, courseCount: int, prerequisites: list[list[int]], queries: list[list[int]]
+    ) -> list[bool]:
         raise NotImplementedError("TODO")

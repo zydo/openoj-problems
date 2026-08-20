@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def tightestCoveringRange(self, nums: List[List[int]]) -> List[int]:
+    def tightestCoveringRange(self, nums: list[list[int]]) -> list[int]:
         raise NotImplementedError("TODO")

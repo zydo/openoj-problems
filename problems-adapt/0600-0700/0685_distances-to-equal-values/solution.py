@@ -1,10 +1,8 @@
-from typing import List, Optional
-
 from collections import defaultdict
 
 
 class Solution:
-    def equalValueDistances(self, nums: List[int]) -> List[int]:
+    def equalValueDistances(self, nums: list[int]) -> list[int]:
         # Only equal values interact, so bucket indices by value; each bucket
         # is an independent 1-D problem over its sorted occurrence list.
         pos = defaultdict(list)

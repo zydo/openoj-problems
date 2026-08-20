@@ -1,4 +1,3 @@
-from typing import List, Optional
 from collections import deque
 
 
@@ -10,7 +9,7 @@ class TreeNode:
 
 
 class Solution:
-    def groupTreeByDepth(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def groupTreeByDepth(self, root: TreeNode | None) -> list[list[int]]:
         # Handle the empty tree up front, before the queue exists.
         if root is None:
             return []

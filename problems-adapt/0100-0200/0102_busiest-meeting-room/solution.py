@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def busiestRoom(self, n: int, meetings: List[List[int]]) -> int:
+    def busiestRoom(self, n: int, meetings: list[list[int]]) -> int:
         # Process meetings by start time.
         ordered = sorted(meetings, key=lambda m: m[0])
         # free holds unused room numbers (min-heap: lowest room pops first);

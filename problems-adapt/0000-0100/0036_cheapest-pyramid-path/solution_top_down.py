@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def cheapestPath(self, rows: List[List[int]]) -> int:
+    def cheapestPath(self, rows: list[list[int]]) -> int:
         # Top-down mirror of the bottom-up DP: best[i] = minimum path sum
         # from the apex down to column i of the current row.
         best = list(rows[0])

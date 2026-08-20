@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def suggestWords(self, catalog: List[str], query: str) -> List[List[str]]:
+    def suggestWords(self, catalog: list[str], query: str) -> list[list[str]]:
         raise NotImplementedError("TODO")

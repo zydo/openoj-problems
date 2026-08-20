@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def mostApples(self, apples: List[int], days: List[int]) -> int:
+    def mostApples(self, apples: list[int], days: list[int]) -> int:
         n = len(apples)
         heap = []
         eaten = 0

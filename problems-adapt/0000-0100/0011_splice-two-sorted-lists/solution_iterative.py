@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -8,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def spliceTwoSortedLists(self, first: Optional[ListNode], second: Optional[ListNode]) -> Optional[ListNode]:
+    def spliceTwoSortedLists(self, first: ListNode | None, second: ListNode | None) -> ListNode | None:
         # Dummy head: every attachment happens the same way, with no special
         # case for the first node; the real head is simply dummy.next.
         dummy = ListNode(0)

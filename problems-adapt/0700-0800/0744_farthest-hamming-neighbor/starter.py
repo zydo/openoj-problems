@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def farthestHamming(self, nums: List[int], m: int) -> List[int]:
+    def farthestHamming(self, nums: list[int], m: int) -> list[int]:
         raise NotImplementedError("TODO")

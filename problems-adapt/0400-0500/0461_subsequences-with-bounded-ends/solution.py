@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countSubseq(self, nums: List[int], target: int) -> int:
+    def countSubseq(self, nums: list[int], target: int) -> int:
         MOD = 10**9 + 7
         # A subsequence is defined by membership, not order, so sorting loses
         # nothing; validity then depends only on smallest + largest <= target.

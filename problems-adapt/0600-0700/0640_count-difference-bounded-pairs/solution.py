@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDifferenceBoundedPairs(self, nums1: List[int], nums2: List[int], diff: int) -> int:
+    def countDifferenceBoundedPairs(self, nums1: list[int], nums2: list[int], diff: int) -> int:
         values = [x - y for x, y in zip(nums1, nums2)]
         lo = min(values)
         hi = max(values)

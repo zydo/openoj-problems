@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def lowestFreeChair(self, times: List[List[int]], targetGuest: int) -> int:
+    def lowestFreeChair(self, times: list[list[int]], targetGuest: int) -> int:
         n = len(times)
         order = sorted(range(n), key=lambda i: times[i][0])
         occupied = []  # min-heap of (leaving_time, chair)

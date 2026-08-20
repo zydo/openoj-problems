@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def isWalkBounded(self, instructions: str) -> bool:
         # simulate one pass from the origin facing north; L/R rotate the

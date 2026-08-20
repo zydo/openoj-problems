@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -9,5 +6,5 @@ class TreeNode:
 
 
 class Solution:
-    def countPathsWithSum(self, root: Optional[TreeNode], targetSum: int) -> int:
+    def countPathsWithSum(self, root: TreeNode | None, targetSum: int) -> int:
         raise NotImplementedError("TODO")

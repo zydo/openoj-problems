@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def roundsUntilNonDecreasing(self, nums: List[int]) -> int:
+    def roundsUntilNonDecreasing(self, nums: list[int]) -> int:
         # dp[i] = step at which nums[i] is removed (0 = never removed).
         st = []  # pairs (value, step)
         ans = 0

@@ -1,6 +1,3 @@
-from typing import List
-
-
 class FileTree:
     # The whole file system is one tree: a dict is a directory, a str value is
     # a file's accumulated content — files and subdirs share one namespace.
@@ -8,7 +5,7 @@ class FileTree:
     def __init__(self) -> None:
         self.root = {}
 
-    def ls(self, path: str) -> List[str]:
+    def ls(self, path: str) -> list[str]:
         parts = [part for part in path.split("/") if part]
         node = self.root
         for part in parts[:-1]:

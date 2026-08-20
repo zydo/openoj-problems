@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def leastMovesToSort(self, nums: List[int]) -> int:
+    def leastMovesToSort(self, nums: list[int]) -> int:
         def ops_for(target):
             n = len(nums)
             # sigma[i] = destination slot of the item currently at slot i.

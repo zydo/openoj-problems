@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def unpairedValue(self, nums: List[int]) -> int:
+    def unpairedValue(self, nums: list[int]) -> int:
         raise NotImplementedError("TODO")

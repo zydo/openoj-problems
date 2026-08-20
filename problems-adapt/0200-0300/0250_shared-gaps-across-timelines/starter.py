@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def sharedIdleGaps(self, timelines: List[List[List[int]]]) -> List[List[int]]:
+    def sharedIdleGaps(self, timelines: list[list[list[int]]]) -> list[list[int]]:
         raise NotImplementedError("TODO")

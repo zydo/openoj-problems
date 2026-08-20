@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def emptyFirstProbability(self, n: int) -> float:
         # Round up to whole servings of 25 mL each.

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestArrayUnderBoundedSwaps(self, nums: List[int], limit: int) -> List[int]:
+    def smallestArrayUnderBoundedSwaps(self, nums: list[int], limit: int) -> list[int]:
         n = len(nums)
         # Sort (value, index) pairs so components are contiguous runs of values.
         pairs = sorted((nums[i], i) for i in range(n))

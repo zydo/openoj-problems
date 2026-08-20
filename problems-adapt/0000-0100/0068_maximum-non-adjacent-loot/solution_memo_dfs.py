@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxNonAdjacentLoot(self, nums: List[int]) -> int:
+    def maxNonAdjacentLoot(self, nums: list[int]) -> int:
         n = len(nums)
         # Top-down mirror of the rolling DP: best(i) = max loot from position i
         # onward. memo[i] caches it (-1 = not computed yet); n <= 100 keeps

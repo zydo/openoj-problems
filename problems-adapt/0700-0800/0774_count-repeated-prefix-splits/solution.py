@@ -1,9 +1,6 @@
 from array import array
-from typing import List, Optional
-
-
 class Solution:
-    def repeatedPrefixSplits(self, nums: List[int]) -> int:
+    def repeatedPrefixSplits(self, nums: list[int]) -> int:
         n = len(nums)
         if n < 3:
             return 0

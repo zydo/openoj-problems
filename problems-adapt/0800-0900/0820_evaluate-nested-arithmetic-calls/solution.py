@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def evaluateCalls(self, expression: str) -> int:
         # One recursive parse(i) -> (value, next index) covers the whole

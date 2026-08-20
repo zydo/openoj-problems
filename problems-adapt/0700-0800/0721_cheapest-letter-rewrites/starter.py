@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
     def leastRewriteCost(
-        self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]
+        self, source: str, target: str, original: list[str], changed: list[str], cost: list[int]
     ) -> int:
         raise NotImplementedError("TODO")

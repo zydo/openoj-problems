@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def topKSums(self, nums1: List[int], nums2: List[int], k: int) -> List[int]:
+    def topKSums(self, nums1: list[int], nums2: list[int], k: int) -> list[int]:
         import heapq
 
         n = len(nums1)

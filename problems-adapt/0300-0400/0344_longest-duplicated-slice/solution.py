@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def longestDuplicatedSlice(self, s: str) -> int:
         n = len(s)

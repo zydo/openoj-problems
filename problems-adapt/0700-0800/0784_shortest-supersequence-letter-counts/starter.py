@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def supersequenceLetterCounts(self, words: List[str]) -> List[List[int]]:
+    def supersequenceLetterCounts(self, words: list[str]) -> list[list[int]]:
         raise NotImplementedError("TODO")

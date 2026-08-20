@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def isTwoColorable(self, graph: List[List[int]]) -> bool:
+    def isTwoColorable(self, graph: list[list[int]]) -> bool:
         n = len(graph)
         # 0 = uncolored, else +1/-1: two-colorable iff a proper 2-coloring
         # exists, with each node forced to the opposite of the color it

@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countDependencyOrderings(self, parents: List[int]) -> int:
+    def countDependencyOrderings(self, parents: list[int]) -> int:
         MOD = 10**9 + 7
         n = len(parents)
         children = [[] for _ in range(n)]

@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestDuplicateFreeConcat(self, arr: List[str]) -> int:
+    def longestDuplicateFreeConcat(self, arr: list[str]) -> int:
         raise NotImplementedError("TODO")

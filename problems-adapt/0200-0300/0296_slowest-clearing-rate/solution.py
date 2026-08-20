@@ -1,9 +1,8 @@
-from typing import List, Optional
 import math
 
 
 class Solution:
-    def slowestClearingRate(self, batches: List[int], h: int) -> int:
+    def slowestClearingRate(self, batches: list[int], h: int) -> int:
         # Batch p costs ceil(p / k) hours; hours(k) only shrinks as k
         # grows, so feasibility is a threshold.
         def hours_needed(k: int) -> int:

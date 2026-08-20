@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -8,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    def spliceTwoSortedLists(self, first: Optional[ListNode], second: Optional[ListNode]) -> Optional[ListNode]:
+    def spliceTwoSortedLists(self, first: ListNode | None, second: ListNode | None) -> ListNode | None:
         # Base case: an empty list is already sorted, so the other list —
         # whatever remains of it — is the merged continuation as is.
         if first is None:

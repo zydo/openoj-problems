@@ -1,9 +1,8 @@
-from typing import List
 from collections import deque
 
 
 class Solution:
-    def richestLeapRoute(self, nums: List[int], k: int) -> int:
+    def richestLeapRoute(self, nums: list[int], k: int) -> int:
         n = len(nums)
         dp = [0] * n
         dp[0] = nums[0]

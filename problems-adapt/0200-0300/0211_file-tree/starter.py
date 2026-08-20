@@ -1,11 +1,8 @@
-from typing import List, Optional
-
-
 class FileTree:
     def __init__(self) -> None:
         raise NotImplementedError("TODO")
 
-    def ls(self, path: str) -> List[str]:
+    def ls(self, path: str) -> list[str]:
         raise NotImplementedError("TODO")
 
     def mkdir(self, path: str) -> None:

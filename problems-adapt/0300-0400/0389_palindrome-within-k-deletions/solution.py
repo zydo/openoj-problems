@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
     def isPalindromeWithinK(self, s: str, k: int) -> bool:
         n = len(s)

@@ -1,9 +1,6 @@
 import heapq
-from typing import List
-
-
 class Solution:
-    def pooledOnGrid(self, heights: List[List[int]]) -> int:
+    def pooledOnGrid(self, heights: list[list[int]]) -> int:
         m, n = len(heights), len(heights[0])
         visited = [[False] * n for _ in range(m)]
         heap: list[tuple[int, int, int]] = []

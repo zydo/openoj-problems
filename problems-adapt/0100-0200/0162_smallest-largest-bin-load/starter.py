@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def smallestLargestBinLoad(self, n: int, piles: List[int]) -> int:
+    def smallestLargestBinLoad(self, n: int, piles: list[int]) -> int:
         raise NotImplementedError("TODO")

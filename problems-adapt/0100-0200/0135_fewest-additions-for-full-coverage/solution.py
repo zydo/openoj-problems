@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def fewestAdditions(self, nums: List[int], n: int) -> int:
+    def fewestAdditions(self, nums: list[int], n: int) -> int:
         patches = 0
         i = 0
         # Invariant: every sum in [1, reachable) is formable; reachable

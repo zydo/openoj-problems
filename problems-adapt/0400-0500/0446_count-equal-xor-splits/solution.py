@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def countEqualXorSplits(self, arr: List[int]) -> int:
+    def countEqualXorSplits(self, arr: list[int]) -> int:
         # per prefix value: occurrence count and sum of (index+1); seeded
         # with the empty prefix so segments starting at index 0 count too
         count = {0: 1}

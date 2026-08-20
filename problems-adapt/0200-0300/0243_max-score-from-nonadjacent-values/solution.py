@@ -1,8 +1,5 @@
-from typing import List, Optional
-
-
 class Solution:
-    def maxNonadjacentValueScore(self, values: List[int]) -> int:
+    def maxNonadjacentValueScore(self, values: list[int]) -> int:
         # Each distinct value has weight v * count[v], so the optimization
         # selects nonconsecutive weighted labels using a two-state recurrence
         # over the sorted distinct values.

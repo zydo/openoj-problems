@@ -1,9 +1,8 @@
-from typing import List, Optional
 import heapq
 
 
 class Solution:
-    def countReachableExpandedVertices(self, links: List[List[int]], moveBudget: int, vertexCount: int) -> int:
+    def countReachableExpandedVertices(self, links: list[list[int]], moveBudget: int, vertexCount: int) -> int:
         adj = [[] for _ in range(vertexCount)]
         # Subdividing [u, v, cnt] yields cnt + 1 unit links, so Dijkstra on
         # the compact graph with weight cnt + 1 gives the true distances.

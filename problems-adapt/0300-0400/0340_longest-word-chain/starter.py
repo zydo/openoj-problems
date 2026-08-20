@@ -1,6 +1,3 @@
-from typing import List, Optional
-
-
 class Solution:
-    def longestWordChain(self, words: List[str]) -> int:
+    def longestWordChain(self, words: list[str]) -> int:
         raise NotImplementedError("TODO")
