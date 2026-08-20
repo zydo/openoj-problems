@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <defs>
+    <marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <rect width="560" height="200" fill="#ffffff"/>
+  <!-- number line -->
+  <line x1="50" y1="130" x2="491" y2="130" stroke="#42525e" stroke-width="1.6"/>
+  <g stroke="#42525e" stroke-width="1.2">
+    <line x1="50" y1="125" x2="50" y2="135"/><line x1="99" y1="125" x2="99" y2="135"/><line x1="148" y1="125" x2="148" y2="135"/><line x1="197" y1="125" x2="197" y2="135"/><line x1="246" y1="125" x2="246" y2="135"/><line x1="295" y1="125" x2="295" y2="135"/><line x1="344" y1="125" x2="344" y2="135"/><line x1="393" y1="125" x2="393" y2="135"/><line x1="442" y1="125" x2="442" y2="135"/><line x1="491" y1="125" x2="491" y2="135"/>
+  </g>
+  <g fill="#5c6b76" font-size="11" text-anchor="middle">
+    <text x="50" y="152">0</text><text x="99" y="152">1</text><text x="148" y="152">2</text><text x="197" y="152">3</text><text x="246" y="152">4</text><text x="295" y="152">5</text><text x="344" y="152">6</text><text x="393" y="152">7</text><text x="442" y="152">8</text><text x="491" y="152">9</text>
+  </g>
+  <!-- slots -->
+  <g fill="#f3e9d2" stroke="#b08968" stroke-width="1.4">
+    <path d="M 85 126 L 113 126 L 108 106 L 90 106 Z"/>
+    <path d="M 134 126 L 162 126 L 157 106 L 139 106 Z"/>
+    <path d="M 330 126 L 358 126 L 353 106 L 335 106 Z"/>
+    <path d="M 379 126 L 407 126 L 402 106 L 384 106 Z"/>
+    <path d="M 477 126 L 505 126 L 500 106 L 482 106 Z"/>
+  </g>
+  <!-- markers in slots [1, 6, 9] -->
+  <g fill="#4169E1" stroke="#274db1" stroke-width="1.4">
+    <circle cx="99" cy="96" r="9"/>
+    <circle cx="344" cy="96" r="9"/>
+    <circle cx="491" cy="96" r="9"/>
+  </g>
+  <!-- gap arrows -->
+  <line x1="112" y1="62" x2="331" y2="62" stroke="#c0392b" stroke-width="1.6" marker-start="url(#f)" marker-end="url(#f)"/>
+  <line x1="357" y1="62" x2="478" y2="62" stroke="#c0392b" stroke-width="1.6" marker-start="url(#f)" marker-end="url(#f)"/>
+  <text x="221" y="50" text-anchor="middle" fill="#c0392b" font-size="12">gap 5</text>
+  <text x="417" y="50" text-anchor="middle" fill="#c0392b" font-size="12">gap 3</text>
+  <text x="270" y="185" text-anchor="middle" fill="#1a2026" font-weight="600">markers at 1, 6, 9 — the closest pair is 3 apart, the widest achievable</text>
+</svg>

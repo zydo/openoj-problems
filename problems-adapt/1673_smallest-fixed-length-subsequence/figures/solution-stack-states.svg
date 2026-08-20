@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect width="660" height="300" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5c6b76"/>
+    </marker>
+  </defs>
+  <!-- nums = [4,7,1,5], k = 2; stack states bottom-aligned at y=240, boxes 46x34 -->
+  <!-- state 1: read 4 -> push -->
+  <text x="60" y="60" fill="#5c6b76" font-size="12.5">i = 0, value 4</text>
+  <text x="60" y="78" fill="#5c6b76" font-size="12.5">push (stack has room)</text>
+  <rect x="78" y="206" width="46" height="34" fill="#dbe4f6" stroke="#42525e" stroke-width="1.5"/>
+  <text x="101" y="228" text-anchor="middle" font-weight="600">4</text>
+  <!-- state 2: read 7 -> push -->
+  <text x="180" y="60" fill="#5c6b76" font-size="12.5">i = 1, value 7</text>
+  <text x="180" y="78" fill="#5c6b76" font-size="12.5">7 ≥ 4 → push</text>
+  <rect x="198" y="240" width="46" height="34" fill="#dbe4f6" stroke="#42525e" stroke-width="1.5"/>
+  <rect x="198" y="206" width="46" height="34" fill="#4169E1" stroke="#42525e" stroke-width="1.5"/>
+  <text x="221" y="262" text-anchor="middle" font-weight="600">4</text>
+  <text x="221" y="228" text-anchor="middle" font-weight="600" fill="#ffffff">7</text>
+  <!-- state 3: read 1 -> pop 7, pop 4, push 1 -->
+  <text x="330" y="60" fill="#5c6b76" font-size="12.5">i = 2, value 1</text>
+  <text x="330" y="78" fill="#5c6b76" font-size="12.5">1 &lt; 7 and 2 + 2 left &gt; k</text>
+  <g opacity="0.45">
+    <rect x="348" y="240" width="46" height="34" fill="#dbe4f6" stroke="#42525e" stroke-width="1.5"/>
+    <rect x="348" y="206" width="46" height="34" fill="#dbe4f6" stroke="#42525e" stroke-width="1.5"/>
+    <text x="371" y="262" text-anchor="middle" font-weight="600">4</text>
+    <text x="371" y="228" text-anchor="middle" font-weight="600">7</text>
+  </g>
+  <g stroke="#5c6b76" stroke-width="1.6">
+    <line x1="344" y1="214" x2="398" y2="266"/>
+    <line x1="344" y1="248" x2="398" y2="272"/>
+  </g>
+  <rect x="428" y="206" width="46" height="34" fill="#4169E1" stroke="#42525e" stroke-width="1.5"/>
+  <text x="451" y="228" text-anchor="middle" font-weight="600" fill="#ffffff">1</text>
+  <path d="M 398 223 L 424 223" fill="none" stroke="#5c6b76" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <!-- state 4: read 5 -> push, answer -->
+  <text x="530" y="60" fill="#5c6b76" font-size="12.5">i = 3, value 5</text>
+  <text x="530" y="78" fill="#5c6b76" font-size="12.5">5 ≥ 1 → push → answer</text>
+  <rect x="548" y="240" width="46" height="34" fill="#dbe4f6" stroke="#42525e" stroke-width="1.5"/>
+  <rect x="548" y="206" width="46" height="34" fill="#dbe4f6" stroke="#42525e" stroke-width="1.5"/>
+  <text x="571" y="262" text-anchor="middle" font-weight="600">1</text>
+  <text x="571" y="228" text-anchor="middle" font-weight="600">5</text>
+  <text x="60" y="160" fill="#1a2026" font-size="13">The stack stays non-decreasing while it can: 7 is pushed on top of 4, but the smaller 1</text>
+  <text x="60" y="178" fill="#1a2026" font-size="13">arrives with 2 unread values still able to refill the k = 2 slots, so both entries are</text>
+  <text x="60" y="196" fill="#1a2026" font-size="13">popped and 1 takes their place — yielding the smallest selection <tspan fill="#4169E1" font-weight="600">[1, 5]</tspan>.</text>
+</svg>

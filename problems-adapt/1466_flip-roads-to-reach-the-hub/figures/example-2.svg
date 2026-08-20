@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <defs>
+    <marker id="ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#42525e"/>
+    </marker>
+    <marker id="red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <rect width="560" height="400" fill="#ffffff"/>
+  <!-- roads that already point toward town 0 -->
+  <g stroke="#42525e" stroke-width="1.7">
+    <line x1="250.0" y1="93.0" x2="250.0" y2="62.0" marker-end="url(#ink)"/>
+    <line x1="332.4" y1="176.8" x2="267.6" y2="128.2" marker-end="url(#ink)"/>
+  </g>
+  <!-- roads that must be reversed -->
+  <g stroke="#c0392b" stroke-width="2">
+    <line x1="232.4" y1="128.2" x2="167.6" y2="176.8" marker-end="url(#red)"/>
+    <line x1="335.0" y1="206.1" x2="295.0" y2="248.9" marker-end="url(#red)"/>
+    <line x1="280.0" y1="287.0" x2="280.0" y2="318.0" marker-end="url(#red)"/>
+    <line x1="366.0" y1="205.0" x2="414.0" y2="250.0" marker-end="url(#red)"/>
+  </g>
+  <g stroke="#c0392b" stroke-width="1.6">
+    <line x1="196" y1="148" x2="204" y2="156"/><line x1="204" y1="148" x2="196" y2="156"/>
+    <line x1="311" y1="224" x2="319" y2="232"/><line x1="319" y1="224" x2="311" y2="232"/>
+    <line x1="276" y1="298" x2="284" y2="306"/><line x1="284" y1="298" x2="276" y2="306"/>
+    <line x1="386" y1="224" x2="394" y2="232"/><line x1="394" y1="224" x2="386" y2="232"/>
+  </g>
+  <!-- towns -->
+  <g stroke-width="1.7" fill="#ffffff">
+    <circle cx="250" cy="40" r="17" stroke="#42525e"/>
+    <circle cx="250" cy="115" r="17" stroke="#42525e"/>
+    <circle cx="150" cy="190" r="17" stroke="#42525e"/>
+    <circle cx="350" cy="190" r="17" stroke="#42525e"/>
+    <circle cx="280" cy="265" r="17" stroke="#42525e"/>
+    <circle cx="430" cy="265" r="17" stroke="#42525e"/>
+    <circle cx="280" cy="340" r="17" stroke="#42525e"/>
+  </g>
+  <g text-anchor="middle" fill="#1a2026" font-weight="600">
+    <text x="250" y="45">0</text>
+    <text x="250" y="120">2</text>
+    <text x="150" y="195">1</text>
+    <text x="350" y="195">3</text>
+    <text x="280" y="270">4</text>
+    <text x="430" y="270">6</text>
+    <text x="280" y="345">5</text>
+  </g>
+  <text x="500" y="45" fill="#5c6b76" font-size="12">hub</text>
+  <text x="280.0" y="387" text-anchor="middle" fill="#1a2026" font-weight="600">4 roads (2→1, 3→4, 4→5, 3→6) point away from town 0 and must be reversed</text>
+</svg>

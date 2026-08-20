@@ -71,6 +71,12 @@
       "at": "2026-08-19T15:45:00-07:00",
       "kind": "plan",
       "note": "User: after Part G completes, this session continues with Part E (66). Succession now D->F->G->E. Same pattern: waves of 11, up to 3 agents."
+    },
+    {
+      "at": "2026-08-19T21:01:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 3,
+      "note": "Sixth exhaustion (~17:24 PDT; reset 20:37 PDT). e-04/e-05/e-06 died together; 16 stragglers merged at resume. All three resumed post-reset."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"

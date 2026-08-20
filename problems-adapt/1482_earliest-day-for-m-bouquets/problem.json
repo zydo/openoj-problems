@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": 1482,
+  "slug": "earliest-day-for-m-bouquets",
+  "title": "Earliest Day for m Bouquets",
+  "difficulty": "H3",
+  "tags": [
+    "Binary Search",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "earliestDay",
+    "parameters": [
+      {
+        "name": "openDay",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "m",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "earliestDay",
+      "rust": "earliest_day",
+      "typescript": "earliestDay"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

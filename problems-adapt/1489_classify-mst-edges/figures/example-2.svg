@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 350" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect width="560" height="350" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" fill="#5c6b76" font-size="12.5">edges labelled index · weight</text>
+  <g stroke="#b57f30" stroke-width="2.4">
+    <line x1="265.2" y1="69.8" x2="184.8" y2="150.2"/>
+    <line x1="184.8" y1="179.8" x2="265.2" y2="260.2"/>
+    <line x1="294.8" y1="260.2" x2="375.2" y2="179.8"/>
+    <line x1="294.8" y1="69.8" x2="375.2" y2="150.2"/>
+    <line x1="191.0" y1="165.0" x2="369.0" y2="165.0"/>
+  </g>
+  <g fill="#5c6b76" font-size="12" text-anchor="middle">
+    <text x="210" y="100">0 · 4</text>
+    <text x="210" y="235">1 · 4</text>
+    <text x="352" y="235">2 · 4</text>
+    <text x="352" y="100">3 · 4</text>
+    <text x="280" y="157">4 · 4</text>
+  </g>
+  <g stroke="#42525e" stroke-width="1.6" fill="#ffffff">
+    <circle cx="280" cy="55" r="18"/>
+    <circle cx="170" cy="165" r="18"/>
+    <circle cx="280" cy="275" r="18"/>
+    <circle cx="390" cy="165" r="18"/>
+  </g>
+  <g text-anchor="middle" fill="#1a2026" font-weight="600">
+    <text x="280" y="60">0</text><text x="170" y="170">1</text><text x="280" y="280">2</text><text x="390" y="170">3</text>
+  </g>
+  <text x="280" y="335" text-anchor="middle" fill="#1a2026" font-weight="600">any spanning three edges form an MST of weight 12 — all pseudo-critical</text>
+</svg>

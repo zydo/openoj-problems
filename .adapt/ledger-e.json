@@ -477,6 +477,235 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1466_reorder-routes-to-make-all-paths-lead-to-the-city-zero",
+      "source_id": 1466,
+      "source_title": "Reorder Routes to Make All Paths Lead to the City Zero",
+      "adapted": "1466_flip-roads-to-reach-the-hub",
+      "id": 1466,
+      "title": "Flip Roads to Reach the Hub",
+      "api": {
+        "minReorder": "minFlips",
+        "min_reorder": "min_flips",
+        "connections": "roads"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1475_final-prices-with-a-special-discount-in-a-shop",
+      "source_id": 1475,
+      "source_title": "Final Prices With a Special Discount in a Shop",
+      "adapted": "1475_next-cheaper-price",
+      "id": 1475,
+      "title": "Next Cheaper Price",
+      "api": {
+        "finalPrices": "discountedPrices",
+        "final_prices": "discounted_prices"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1482_minimum-number-of-days-to-make-m-bouquets",
+      "source_id": 1482,
+      "source_title": "Minimum Number of Days to Make m Bouquets",
+      "adapted": "1482_earliest-day-for-m-bouquets",
+      "id": 1482,
+      "title": "Earliest Day for m Bouquets",
+      "api": {
+        "minDays": "earliestDay",
+        "min_days": "earliest_day",
+        "bloomDay": "openDay",
+        "bloom_day": "open_day"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1483_kth-ancestor-of-a-tree-node",
+      "source_id": 1483,
+      "source_title": "Kth Ancestor of a Tree Node",
+      "adapted": "1483_kth-ancestor-queries",
+      "id": 1483,
+      "title": "Kth Ancestor Queries",
+      "api": {
+        "TreeAncestor": "AncestorFinder",
+        "getKthAncestor": "kthAncestor"
+      },
+      "kind": "design",
+      "figures": "none"
+    },
+    {
+      "source": "1489_find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+      "source_id": 1489,
+      "source_title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+      "adapted": "1489_classify-mst-edges",
+      "id": 1489,
+      "title": "Classify MST Edges",
+      "api": {
+        "findCriticalAndPseudoCriticalEdges": "classifyEdges",
+        "find_critical_and_pseudo_critical_edges": "classify_edges"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1526_minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+      "source_id": 1526,
+      "source_title": "Minimum Number of Increments on Subarrays to Form a Target Array",
+      "adapted": "1526_fewest-raises-to-build-a-profile",
+      "id": 1526,
+      "title": "Fewest Raises to Build a Profile",
+      "api": {
+        "minNumberOperations": "fewestRaises",
+        "min_number_operations": "fewest_raises",
+        "target": "heights"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1547_minimum-cost-to-cut-a-stick",
+      "source_id": 1547,
+      "source_title": "Minimum Cost to Cut a Stick",
+      "adapted": "1547_cheapest-order-to-cut-a-rod",
+      "id": 1547,
+      "title": "Cheapest Order to Cut a Rod",
+      "api": {
+        "minCost": "leastCost",
+        "min_cost": "least_cost"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1552_magnetic-force-between-two-balls",
+      "source_id": 1552,
+      "source_title": "Magnetic Force Between Two Balls",
+      "adapted": "1552_maximize-the-smallest-gap",
+      "id": 1552,
+      "title": "Maximize the Smallest Gap",
+      "api": {
+        "maxDistance": "largestMinGap",
+        "max_distance": "largest_min_gap",
+        "position": "slots"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1665_minimum-initial-energy-to-finish-tasks",
+      "source_id": 1665,
+      "source_title": "Minimum Initial Energy to Finish Tasks",
+      "adapted": "1665_minimum-starting-energy",
+      "id": 1665,
+      "title": "Minimum Starting Energy",
+      "api": {
+        "minimumEffort": "minimumEnergy",
+        "minimum_effort": "minimum_energy"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1671_minimum-number-of-removals-to-make-mountain-array",
+      "source_id": 1671,
+      "source_title": "Minimum Number of Removals to Make Mountain Array",
+      "adapted": "1671_minimum-deletions-for-a-peak-array",
+      "id": 1671,
+      "title": "Minimum Deletions for a Peak Array",
+      "api": {
+        "minimumMountainRemovals": "minimumPeakDeletions",
+        "minimum_mountain_removals": "minimum_peak_deletions"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1673_find-the-most-competitive-subsequence",
+      "source_id": 1673,
+      "source_title": "Find the Most Competitive Subsequence",
+      "adapted": "1673_smallest-fixed-length-subsequence",
+      "id": 1673,
+      "title": "Smallest Fixed-Length Subsequence",
+      "api": {
+        "mostCompetitive": "smallestFixedSubsequence",
+        "most_competitive": "smallest_fixed_subsequence"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1674_minimum-moves-to-make-array-complementary",
+      "source_id": 1674,
+      "source_title": "Minimum Moves to Make Array Complementary",
+      "adapted": "1674_fewest-changes-to-match-mirror-sums",
+      "id": 1674,
+      "title": "Fewest Changes to Match Mirror Sums",
+      "api": {
+        "minMoves": "fewestChanges",
+        "min_moves": "fewest_changes"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1675_minimize-deviation-in-array",
+      "source_id": 1675,
+      "source_title": "Minimize Deviation in Array",
+      "adapted": "1675_smallest-spread-by-halving-and-doubling",
+      "id": 1675,
+      "title": "Smallest Spread by Halving and Doubling",
+      "api": {
+        "minimumDeviation": "smallestSpread",
+        "minimum_deviation": "smallest_spread"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1685_sum-of-absolute-differences-in-a-sorted-array",
+      "source_id": 1685,
+      "source_title": "Sum of Absolute Differences in a Sorted Array",
+      "adapted": "1685_distance-sums-in-a-sorted-array",
+      "id": 1685,
+      "title": "Distance Sums in a Sorted Array",
+      "api": {
+        "getSumAbsoluteDifferences": "distanceSums",
+        "get_sum_absolute_differences": "distance_sums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1686_stone-game-vi",
+      "source_id": 1686,
+      "source_title": "Stone Game VI",
+      "adapted": "1686_stone-draft-with-rival-values",
+      "id": 1686,
+      "title": "Stone Draft with Rival Values",
+      "api": {
+        "stoneGameVI": "stoneDraft",
+        "stone_game_vi": "stone_draft"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1691_maximum-height-by-stacking-cuboids",
+      "source_id": 1691,
+      "source_title": "Maximum Height by Stacking Cuboids",
+      "adapted": "1691_tallest-cuboid-stack",
+      "id": 1691,
+      "title": "Tallest Cuboid Stack",
+      "api": {
+        "maxHeight": "tallestStack",
+        "max_height": "tallest_stack"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
