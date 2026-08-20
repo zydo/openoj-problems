@@ -577,6 +577,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0854_k-similar-strings",
+      "source_id": 854,
+      "source_title": "K-Similar Strings",
+      "adapted": "0854_minimum-swaps-between-anagrams",
+      "id": 854,
+      "title": "Minimum Swaps Between Anagrams",
+      "api": {
+        "kSimilarity": "minimumAnagramSwaps",
+        "k_similarity": "minimum_anagram_swaps"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
