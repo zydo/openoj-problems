@@ -141,6 +141,34 @@
       },
       "kind": "function",
       "figures": "labels updated"
+    },
+    {
+      "source": "1041_robot-bounded-in-circle",
+      "source_id": 1041,
+      "source_title": "Robot Bounded In Circle",
+      "adapted": "1041_bounded-repeating-walk",
+      "id": 1041,
+      "title": "Bounded Repeating Walk",
+      "api": {
+        "isRobotBounded": "isWalkBounded",
+        "is_robot_bounded": "is_walk_bounded"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1043_partition-array-for-maximum-sum",
+      "source_id": 1043,
+      "source_title": "Partition Array for Maximum Sum",
+      "adapted": "1043_largest-sum-after-block-replacement",
+      "id": 1043,
+      "title": "Largest Sum After Block Replacement",
+      "api": {
+        "maxSumAfterPartitioning": "largestSumAfterBlockReplacement",
+        "max_sum_after_partitioning": "largest_sum_after_block_replacement"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

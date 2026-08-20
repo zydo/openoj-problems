@@ -314,3 +314,14 @@ been claimed by the Part B/E session and stands at 0/12.
 and G already closed, the Part B session has finished every part it was
 assigned; it moves to Part H per instruction. `.adapt/incoming-e/`
 should now stay empty.
+
+
+**Part H complete (2026-08-19, final): 12/12** adapted, merged, committed.
+With this, every part — the frozen base 195 plus A, B, C, D, E, F, G, H
+— is adapted: **830 of 830 bundles in `problems-adapt/`** (the 838
+program count minus the 8 never-split originals history explains). The
+backlog is empty (both live-tree defects were fixed centrally and
+re-adapted). Remaining before cutover, per openoj/ADAPT.md phase 3: the
+central sandbox batch run for the design/SQL kinds, MAPPING.md
+regeneration (Part A's session), and the tree swap + submission-slug
+migration. The Part B session pauses here per instruction.
