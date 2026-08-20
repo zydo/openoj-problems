@@ -875,6 +875,78 @@
       },
       "kind": "function",
       "figures": "regenerated"
+    },
+    {
+      "source": "1632_rank-transform-of-a-matrix",
+      "source_id": 1632,
+      "source_title": "Rank Transform of a Matrix",
+      "adapted": "1632_rank-every-matrix-entry",
+      "id": 1632,
+      "title": "Rank Every Matrix Entry",
+      "api": {
+        "matrixRankTransform": "rankEntries",
+        "matrix_rank_transform": "rank_entries"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1642_furthest-building-you-can-reach",
+      "source_id": 1642,
+      "source_title": "Furthest Building You Can Reach",
+      "adapted": "1642_skyline-walk-with-bricks-and-ladders",
+      "id": 1642,
+      "title": "Skyline Walk With Bricks and Ladders",
+      "api": {
+        "furthestBuilding": "furthestRooftop",
+        "furthest_building": "furthest_rooftop"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1648_sell-diminishing-valued-colored-balls",
+      "source_id": 1648,
+      "source_title": "Sell Diminishing-Valued Colored Balls",
+      "adapted": "1648_sell-tokens-from-shrinking-stacks",
+      "id": 1648,
+      "title": "Sell Tokens From Shrinking Stacks",
+      "api": {
+        "maxProfit": "bestRevenue",
+        "max_profit": "best_revenue",
+        "inventory": "stacks"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1649_create-sorted-array-through-instructions",
+      "source_id": 1649,
+      "source_title": "Create Sorted Array through Instructions",
+      "adapted": "1649_build-a-sorted-list-at-least-cost",
+      "id": 1649,
+      "title": "Build a Sorted List at Least Cost",
+      "api": {
+        "createSortedArray": "leastInsertionCost",
+        "create_sorted_array": "least_insertion_cost",
+        "instructions": "arrivals"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1658_minimum-operations-to-reduce-x-to-zero",
+      "source_id": 1658,
+      "source_title": "Minimum Operations to Reduce X to Zero",
+      "adapted": "1658_fewest-end-removals-to-reach-a-sum",
+      "id": 1658,
+      "title": "Fewest End Removals to Reach a Sum",
+      "api": {
+        "minOperations": "fewestRemovals",
+        "min_operations": "fewest_removals"
+      },
+      "kind": "function",
+      "figures": "regenerated"
     }
   ]
 }

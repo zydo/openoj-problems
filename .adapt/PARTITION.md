@@ -297,9 +297,20 @@ Part H is currently unclaimed. Its assignments live in
 `adapt_merge.py --part h`, and `.adapt/ledger-h.json` is its independent
 shard. Chunk instructions are in `.adapt/PART-H-CHUNK.md`.
 
+**Part C complete (2026-08-19): 55/55** adapted, merged, and gate-swept.
+`.adapt/incoming-c/` is drained and should now stay empty. Part H remains
+unclaimed at 0/12.
+
 
 ## Part H claimed (2026-08-19 late)
 
 **H — claimed by the Part B/E session**, to start once Part E closes
 (per user instruction: after E, finish H). `wave-h-01.json` carries all
 12 keys; fragments to `.adapt/incoming-h/`, merged with `--part h`.
+
+
+**Part E complete (2026-08-19, late): 66/66** adapted, merged into
+`.adapt/ledger-e.json`, gate-swept, committed. Zero skips. With B, D, F
+and G already closed, the Part B session has finished every part it was
+assigned; it moves to Part H per instruction. `.adapt/incoming-e/`
+should now stay empty.

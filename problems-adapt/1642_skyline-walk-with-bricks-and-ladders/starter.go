@@ -1,0 +1,3 @@
+func furthestRooftop(heights []int, bricks int, ladders int) int {
+	panic("TODO")
+}
