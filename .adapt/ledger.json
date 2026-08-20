@@ -1382,12 +1382,13 @@
       "source": "0120_triangle",
       "source_id": 120,
       "source_title": "Triangle",
-      "adapted": "0120_cheapest-triangle-path",
+      "adapted": "0120_cheapest-pyramid-path",
       "id": 120,
-      "title": "Cheapest Triangle Path",
+      "title": "Cheapest Pyramid Path",
       "api": {
         "minimumTotal": "cheapestPath",
-        "minimum_total": "cheapest_path"
+        "minimum_total": "cheapest_path",
+        "triangle": "rows"
       },
       "kind": "function",
       "figures": "labels updated"
@@ -1490,21 +1491,6 @@
       },
       "kind": "function",
       "figures": "dropped"
-    },
-    {
-      "source": "0120_triangle",
-      "source_id": 120,
-      "source_title": "Triangle",
-      "adapted": "0120_cheapest-pyramid-path",
-      "id": 120,
-      "title": "Cheapest Pyramid Path",
-      "api": {
-        "minimumTotal": "cheapestPath",
-        "minimum_total": "cheapest_path",
-        "triangle": "rows"
-      },
-      "kind": "function",
-      "figures": "labels updated"
     },
     {
       "source": "0173_binary-search-tree-iterator",
