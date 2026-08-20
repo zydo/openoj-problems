@@ -77,6 +77,12 @@
       "kind": "quota-window-exhausted",
       "agents_lost": 3,
       "note": "Sixth exhaustion (~17:24 PDT; reset 20:37 PDT). e-04/e-05/e-06 died together; 16 stragglers merged at resume. All three resumed post-reset."
+    },
+    {
+      "at": "2026-08-20T22:30:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 3,
+      "note": "Seventh exhaustion (~22:28 PDT; reset 2026-08-21 01:37 PDT per error clock). Final-nine trio agents died mid-bundle (0489 starters; 1778 oracles; trio2 verifying slugs). Resume all three at/after reset. Partial work on disk: 0489_sweep-the-hidden-room exists with some provided/ oracles+starters."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"
