@@ -731,6 +731,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0940_distinct-subsequences-ii",
+      "source_id": 940,
+      "source_title": "Distinct Subsequences II",
+      "adapted": "0940_count-unique-nonempty-subsequences",
+      "id": 940,
+      "title": "Count Unique Nonempty Subsequences",
+      "api": {
+        "distinctSubseqII": "countUniqueNonemptySubsequences",
+        "distinct_subseq_ii": "count_unique_nonempty_subsequences"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
