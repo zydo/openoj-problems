@@ -675,6 +675,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0891_sum-of-subsequence-widths",
+      "source_id": 891,
+      "source_title": "Sum of Subsequence Widths",
+      "adapted": "0891_total-range-across-all-selections",
+      "id": 891,
+      "title": "Total Range Across All Selections",
+      "api": {
+        "sumSubseqWidths": "totalSelectionRanges",
+        "sum_subseq_widths": "total_selection_ranges"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
