@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": 838,
+  "slug": "final-domino-orientations",
+  "title": "Final Domino Orientations",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Two Pointers",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "resolveDominoOrientations",
+    "parameters": [
+      {
+        "name": "initialState",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "resolveDominoOrientations",
+      "rust": "resolve_domino_orientations",
+      "typescript": "resolveDominoOrientations"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 8192
+  }
+}

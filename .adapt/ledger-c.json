@@ -521,6 +521,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0838_push-dominoes",
+      "source_id": 838,
+      "source_title": "Push Dominoes",
+      "adapted": "0838_final-domino-orientations",
+      "id": 838,
+      "title": "Final Domino Orientations",
+      "api": {
+        "pushDominoes": "resolveDominoOrientations",
+        "push_dominoes": "resolve_domino_orientations"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
