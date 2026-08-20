@@ -633,6 +633,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0881_boats-to-save-people",
+      "source_id": 881,
+      "source_title": "Boats to Save People",
+      "adapted": "0881_minimum-two-item-containers",
+      "id": 881,
+      "title": "Minimum Two-Item Containers",
+      "api": {
+        "numRescueBoats": "minimumTwoItemContainers",
+        "num_rescue_boats": "minimum_two_item_containers"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
