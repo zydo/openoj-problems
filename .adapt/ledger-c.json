@@ -549,6 +549,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0847_shortest-path-visiting-all-nodes",
+      "source_id": 847,
+      "source_title": "Shortest Path Visiting All Nodes",
+      "adapted": "0847_minimum-walk-covering-every-vertex",
+      "id": 847,
+      "title": "Minimum Walk Covering Every Vertex",
+      "api": {
+        "shortestPathLength": "minimumCoveringWalkLength",
+        "shortest_path_length": "minimum_covering_walk_length"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
