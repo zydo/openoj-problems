@@ -759,6 +759,20 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0973_k-closest-points-to-origin",
+      "source_id": 973,
+      "source_title": "K Closest Points to Origin",
+      "adapted": "0973_select-nearest-points",
+      "id": 973,
+      "title": "Select Nearest Points",
+      "api": {
+        "kClosest": "selectNearestPoints",
+        "k_closest": "select_nearest_points"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
