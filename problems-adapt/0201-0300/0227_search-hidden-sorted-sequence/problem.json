@@ -59,6 +59,13 @@
           "target"
         ]
       }
+    },
+    "entrypoints": {
+      "go": "findInSequence",
+      "rust": "find_in_sequence",
+      "cpp": "findInSequence",
+      "javascript": "findInSequence",
+      "typescript": "findInSequence"
     }
   },
   "limits": {

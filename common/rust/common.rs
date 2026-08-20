@@ -1,8 +1,6 @@
 // Common data types supplied to every Rust submission (assembled into
 // one crate source with the submission). Field layout is the judge's
 // wire contract — see common/README.md.
-#![allow(dead_code)]
-
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,

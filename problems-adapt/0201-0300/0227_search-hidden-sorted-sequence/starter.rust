@@ -1,0 +1,5 @@
+impl Solution {
+    pub fn find_in_sequence(reader: &mut SequenceReader, target: i32) -> i32 {
+        panic!("TODO")
+    }
+}
