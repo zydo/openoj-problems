@@ -479,6 +479,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0813_largest-sum-of-averages",
+      "source_id": 813,
+      "source_title": "Largest Sum of Averages",
+      "adapted": "0813_maximum-contiguous-mean-score",
+      "id": 813,
+      "title": "Maximum Contiguous Mean Score",
+      "api": {
+        "largestSumOfAverages": "maximumContiguousMeanScore",
+        "largest_sum_of_averages": "maximum_contiguous_mean_score"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
