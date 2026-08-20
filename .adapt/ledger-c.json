@@ -661,6 +661,20 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0887_super-egg-drop",
+      "source_id": 887,
+      "source_title": "Super Egg Drop",
+      "adapted": "0887_minimum-threshold-tests-with-fragile-probes",
+      "id": 887,
+      "title": "Minimum Threshold Tests With Fragile Probes",
+      "api": {
+        "superEggDrop": "minimumFragileProbeTests",
+        "super_egg_drop": "minimum_fragile_probe_tests"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
