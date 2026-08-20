@@ -591,6 +591,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0857_minimum-cost-to-hire-k-workers",
+      "source_id": 857,
+      "source_title": "Minimum Cost to Hire K Workers",
+      "adapted": "0857_minimum-proportional-group-cost",
+      "id": 857,
+      "title": "Minimum Proportional Group Cost",
+      "api": {
+        "mincostToHireWorkers": "minimumProportionalGroupCost",
+        "mincost_to_hire_workers": "minimum_proportional_group_cost"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
