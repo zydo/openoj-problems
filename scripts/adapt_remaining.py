@@ -25,8 +25,8 @@ def _load(path: Path, default):
 
 
 def main() -> int:
-    if len(sys.argv) != 2 or sys.argv[1] not in {"a", "b", "c", "d", "e", "f", "g"}:
-        raise SystemExit("usage: adapt_remaining.py <a|b|c|d|e>")
+    if len(sys.argv) != 2 or sys.argv[1] not in {"a", "b", "c", "d", "e", "f", "g", "h"}:
+        raise SystemExit("usage: adapt_remaining.py <a|b|c|d|e|f|g|h>")
     part = sys.argv[1]
     assigned = _load(ADAPT / f"part-{part}.json", [])
     shard = _load(ADAPT / f"ledger-{part}.json", {"entries": []})["entries"]
@@ -43,7 +43,7 @@ def main() -> int:
     # (E was carved from B's original assignment), so anything assigned to
     # a different part is not this part's to do either.
     others: set[str] = set()
-    for p in ("a", "b", "c", "d", "e", "f", "g"):
+    for p in ("a", "b", "c", "d", "e", "f", "g", "h"):
         if p != part:
             others |= set(_load(ADAPT / f"part-{p}.json", []))
     remaining = [k for k in assigned if k not in done and k not in blocked and k not in others]

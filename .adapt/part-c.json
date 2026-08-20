@@ -53,17 +53,5 @@
   "0918_maximum-sum-circular-subarray",
   "0940_distinct-subsequences-ii",
   "0968_binary-tree-cameras",
-  "0973_k-closest-points-to-origin",
-  "1000_minimum-cost-to-merge-stones",
-  "1004_max-consecutive-ones-iii",
-  "1010_pairs-of-songs-with-total-durations-divisible-by-60",
-  "1011_capacity-to-ship-packages-within-d-days",
-  "1014_best-sightseeing-pair",
-  "1019_next-greater-node-in-linked-list",
-  "1027_longest-arithmetic-subsequence",
-  "1029_two-city-scheduling",
-  "1035_uncrossed-lines",
-  "1038_binary-search-tree-to-greater-sum-tree",
-  "1041_robot-bounded-in-circle",
-  "1043_partition-array-for-maximum-sum"
+  "0973_k-closest-points-to-origin"
 ]

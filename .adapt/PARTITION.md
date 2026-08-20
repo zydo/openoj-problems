@@ -283,3 +283,16 @@ session moved on to Part G, the last part.
 zero blocked sources. `.adapt/incoming-g/` should now stay empty. Per the
 extended succession the session moved on to **Part E** (66, waves
 `wave-e-01` .. `wave-e-06`).
+
+## Part C tail moves to Part H (2026-08-19)
+
+After Part C completed 50 of its 67 sources, its ordered tail was split at
+the user-selected boundary. Part C keeps entries 51 through 55 — `0901`,
+`0918`, `0940`, `0968` and `0973` — so its final scope is 55 sources. The
+former entries 56 through 67, `1000` through `1043`, are now the 12-source
+**Part H**.
+
+Part H is currently unclaimed. Its assignments live in
+`.adapt/part-h.json`, fragments go to `.adapt/incoming-h/`, merges use
+`adapt_merge.py --part h`, and `.adapt/ledger-h.json` is its independent
+shard. Chunk instructions are in `.adapt/PART-H-CHUNK.md`.
