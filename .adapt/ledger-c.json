@@ -493,6 +493,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0815_bus-routes",
+      "source_id": 815,
+      "source_title": "Bus Routes",
+      "adapted": "0815_fewest-transit-lines",
+      "id": 815,
+      "title": "Fewest Transit Lines",
+      "api": {
+        "numBusesToDestination": "fewestTransitLines",
+        "num_buses_to_destination": "fewest_transit_lines"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
