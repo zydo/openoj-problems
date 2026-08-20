@@ -296,3 +296,10 @@ Part H is currently unclaimed. Its assignments live in
 `.adapt/part-h.json`, fragments go to `.adapt/incoming-h/`, merges use
 `adapt_merge.py --part h`, and `.adapt/ledger-h.json` is its independent
 shard. Chunk instructions are in `.adapt/PART-H-CHUNK.md`.
+
+
+## Part H claimed (2026-08-19 late)
+
+**H — claimed by the Part B/E session**, to start once Part E closes
+(per user instruction: after E, finish H). `wave-h-01.json` carries all
+12 keys; fragments to `.adapt/incoming-h/`, merged with `--part h`.
