@@ -819,6 +819,62 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "1503_last-moment-before-all-ants-fall-out-of-a-plank",
+      "source_id": 1503,
+      "source_title": "Last Moment Before All Ants Fall Out of a Plank",
+      "adapted": "1503_last-ant-off-the-plank",
+      "id": 1503,
+      "title": "Last Ant Off the Plank",
+      "api": {
+        "getLastMoment": "lastFall",
+        "get_last_moment": "last_fall"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1627_graph-connectivity-with-threshold",
+      "source_id": 1627,
+      "source_title": "Graph Connectivity With Threshold",
+      "adapted": "1627_linked-by-a-shared-divisor",
+      "id": 1627,
+      "title": "Linked by a Shared Divisor",
+      "api": {
+        "areConnected": "areLinked",
+        "are_connected": "are_linked"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1504_count-submatrices-with-all-ones",
+      "source_id": 1504,
+      "source_title": "Count Submatrices With All Ones",
+      "adapted": "1504_all-ones-rectangles-in-a-matrix",
+      "id": 1504,
+      "title": "All-Ones Rectangles in a Matrix",
+      "api": {
+        "numSubmat": "countOnesRectangles",
+        "num_submat": "count_ones_rectangles"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1631_path-with-minimum-effort",
+      "source_id": 1631,
+      "source_title": "Path With Minimum Effort",
+      "adapted": "1631_flattest-route-across-a-grid",
+      "id": 1631,
+      "title": "Flattest Route Across a Grid",
+      "api": {
+        "minimumEffortPath": "flattestRoute",
+        "minimum_effort_path": "flattest_route"
+      },
+      "kind": "function",
+      "figures": "regenerated"
     }
   ]
 }

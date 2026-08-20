@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 350" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect width="660" height="350" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a2026"/>
+    </marker>
+  </defs>
+  <!-- 3x3 grid, cell 92, x=180 y=40; fills by final dist -->
+  <g fill="#4169E1"><rect x="180" y="40" width="92" height="92"/></g>
+  <g fill="#9db4ea"><rect x="272" y="40" width="92" height="92"/></g>
+  <g fill="#dbe4f6"><rect x="180" y="132" width="92" height="92"/><rect x="180" y="224" width="92" height="92"/><rect x="272" y="224" width="92" height="92"/><rect x="364" y="224" width="92" height="92"/></g>
+  <g fill="#ffffff"><rect x="364" y="40" width="92" height="92"/><rect x="272" y="132" width="92" height="92"/><rect x="364" y="132" width="92" height="92"/></g>
+  <g stroke="#42525e" stroke-width="1.5" fill="none">
+    <rect x="180" y="40" width="92" height="92"/> <rect x="272" y="40" width="92" height="92"/> <rect x="364" y="40" width="92" height="92"/> <rect x="180" y="132" width="92" height="92"/> <rect x="272" y="132" width="92" height="92"/> <rect x="364" y="132" width="92" height="92"/> <rect x="180" y="224" width="92" height="92"/> <rect x="272" y="224" width="92" height="92"/> <rect x="364" y="224" width="92" height="92"/>
+  </g>
+  <!-- heights center, dist top-left -->
+  <g text-anchor="middle" font-weight="600">
+    <text x="226" y="94" fill="#ffffff">2</text> <text x="318" y="94" fill="#1a2026">3</text> <text x="410" y="94" fill="#1a2026">9</text> <text x="226" y="186" fill="#1a2026">4</text> <text x="318" y="186" fill="#1a2026">15</text> <text x="410" y="186" fill="#1a2026">12</text> <text x="226" y="278" fill="#1a2026">6</text> <text x="318" y="278" fill="#1a2026">5</text> <text x="410" y="278" fill="#1a2026">7</text>
+  </g>
+  <g font-size="11.5" fill="#1a2026">
+    <text x="186" y="56">0</text> <text x="278" y="56">1</text> <text x="370" y="56">5</text> <text x="186" y="148">2</text> <text x="278" y="148">5</text> <text x="370" y="148">5</text> <text x="186" y="240">2</text> <text x="278" y="240">2</text> <text x="370" y="240">2</text>
+  </g>
+  <!-- optimal route 2-4-6-5-7 -->
+  <g stroke="#1a2026" stroke-width="2.6" fill="none">
+    <polyline points="226,86 226,178 226,270 318,270 404,270" marker-end="url(#arrow)"/>
+  </g>
+  <!-- narration -->
+  <g font-size="12.5" fill="#5c6b76">
+    <text x="40" y="60">Every cell shows its</text>
+    <text x="40" y="76">height (large) and its</text>
+    <text x="40" y="92">settled bottleneck</text>
+    <text x="40" y="108">distance (corner).</text>
+    <text x="40" y="140">Color = distance ring:</text>
+    <text x="40" y="156">0 dark, 1 mid, 2 light.</text>
+    <text x="40" y="188">Relaxation combines</text>
+    <text x="40" y="204">with max(dist, |height</text>
+    <text x="40" y="220">difference|) rather</text>
+    <text x="40" y="236">than a sum, so cells</text>
+    <text x="40" y="252">still settle in order</text>
+    <text x="40" y="268">of smallest steepest</text>
+    <text x="40" y="284">single step.</text>
+  </g>
+  <text x="40" y="330" fill="#1a2026" font-size="13">The dark route 2 → 4 → 6 → 5 → 7 never steps up more than <tspan fill="#4169E1" font-weight="600">2</tspan>, so the goal settles at distance 2.</text>
+</svg>
