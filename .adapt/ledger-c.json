@@ -605,6 +605,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0870_advantage-shuffle",
+      "source_id": 870,
+      "source_title": "Advantage Shuffle",
+      "adapted": "0870_canonical-maximum-win-permutation",
+      "id": 870,
+      "title": "Canonical Maximum-Win Permutation",
+      "api": {
+        "advantageCount": "canonicalWinningPermutation",
+        "advantage_count": "canonical_winning_permutation"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

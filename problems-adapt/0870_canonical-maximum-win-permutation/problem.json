@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": 870,
+  "slug": "canonical-maximum-win-permutation",
+  "title": "Canonical Maximum-Win Permutation",
+  "difficulty": "H3",
+  "tags": [
+    "Sorting",
+    "Greedy",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canonicalWinningPermutation",
+    "parameters": [
+      {
+        "name": "available",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "opponents",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "canonicalWinningPermutation",
+      "rust": "canonical_winning_permutation",
+      "typescript": "canonicalWinningPermutation"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
