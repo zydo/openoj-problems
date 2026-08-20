@@ -507,6 +507,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0837_new-21-game",
+      "source_id": 837,
+      "source_title": "New 21 Game",
+      "adapted": "0837_bounded-final-score-probability",
+      "id": 837,
+      "title": "Bounded Final Score Probability",
+      "api": {
+        "new21Game": "boundedFinalScoreProbability",
+        "new21_game": "bounded_final_score_probability"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
