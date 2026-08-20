@@ -703,6 +703,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0901_online-stock-span",
+      "source_id": 901,
+      "source_title": "Online Stock Span",
+      "adapted": "0901_streaming-price-span",
+      "id": 901,
+      "title": "Streaming Price Span",
+      "api": {
+        "StockSpanner": "PriceSpanTracker",
+        "next": "record"
+      },
+      "kind": "design",
+      "figures": "none"
     }
   ]
 }
