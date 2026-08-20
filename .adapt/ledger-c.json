@@ -535,6 +535,20 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0846_hand-of-straights",
+      "source_id": 846,
+      "source_title": "Hand of Straights",
+      "adapted": "0846_arrange-into-runs-of-consecutive-values",
+      "id": 846,
+      "title": "Arrange Into Runs of Consecutive Values",
+      "api": {
+        "isNStraightHand": "arrangeIntoConsecutiveRuns",
+        "is_n_straight_hand": "arrange_into_consecutive_runs"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
