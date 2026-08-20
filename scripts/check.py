@@ -224,6 +224,18 @@ def check_bundle(bundle: Path) -> list[Failure]:
     allowed = {"problem.json", "cases.json", "statement.md"} | {
         f"starter.{extension}" for extension in starter_extensions
     } | set(solution_names)
+    # provided/: the problem-carried oracle/library sources the judge
+    # assembles with every submission (see docs/CODECS.md); one flat
+    # directory per language, e.g. provided/python/oracle.py.
+    provided_dir = bundle / "provided"
+    if provided_dir.is_dir():
+        for language_dir in provided_dir.iterdir():
+            if not language_dir.is_dir():
+                fail(f"unexpected file provided/{language_dir.name} (one flat directory per language)")
+            for source in language_dir.iterdir():
+                if not source.is_file():
+                    fail(f"unexpected directory provided/{language_dir.name}/{source.name}")
+        allowed.add("provided")
     # solutions.md: optional per-variant Solutions-tab guide (## sections)
     solutions_guide = bundle / "solutions.md"
     if solutions_guide.is_file():

@@ -1,9 +1,12 @@
 # Solutions — The Missing Value
 
-Two one-pass, constant-extra-space answers to the follow-up. One argues from a
-known total, the other pairs values off against positions with XOR.
+Two one-pass, constant-extra-space answers to the follow-up. One argues
+from a known total — the candidate range's sum, fixed by a formula before
+the array is even read; the other pairs values off against positions with
+XOR, letting every present value cancel itself out. Which value survives
+is the one that never showed up.
 
-## Sum
+## Sum Formula
 
 The candidate range `0..n` is a complete run, so its total is fixed in advance
 by the series formula `n(n+1)/2`. Whatever the array adds up to falls short of
@@ -23,7 +26,7 @@ the total of about `5 * 10^7` needs.
 
 **Complexity:** `O(n)` time, `O(1)` space.
 
-## XOR
+## XOR Fold
 
 The same pairing trick with a different partner set. The full range `0..n`
 consists of the array's positions `0..n-1` plus the length `n` — so seeding an
