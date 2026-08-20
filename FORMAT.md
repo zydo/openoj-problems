@@ -1,25 +1,28 @@
 # openoj-problems format
 
 A problem-set repository for [OpenOJ](https://github.com/zydo/openoj). Each
-problem is one directory under `problems/`, named `<zero-padded id>_<slug>` —
-the directory name is the single source of the problem key:
+problem is one directory under `problems/`, named `<zero-padded id>_<slug>`,
+inside an inclusive id-range shard directory of 100 problems
+(`<lo>-<hi>`, e.g. `0001-0100` for ids 1-100) — the directory name is
+the single source of the problem key:
 
 ```text
 problems/
-└── 0001_two-sum/
-    ├── problem.json     machine data: metadata, invocation, limits
-    ├── cases.json       testcase corpus ({public, hidden} display grouping)
-    ├── statement.md     the human-readable problem statement
-    ├── starter.py       generated — never handcrafted
-    ├── starter.java     generated
-    ├── starter.cpp      generated
-    ├── starter.go       generated
-    ├── starter.rust     generated
-    ├── starter.js
-    ├── starter.ts
-    ├── solution.py      authored — must match the starter signature and pass
-    ├── solution.java    every case in cases.json
-    └── ...
+└── 0001-0100/           inclusive id-range shards of 100
+    └── 0001_two-sum/
+        ├── problem.json     machine data: metadata, invocation, limits
+        ├── cases.json       testcase corpus ({public, hidden} display grouping)
+        ├── statement.md     the human-readable problem statement
+        ├── starter.py       generated — never handcrafted
+        ├── starter.java     generated
+        ├── starter.cpp      generated
+        ├── starter.go       generated
+        ├── starter.rust     generated
+        ├── starter.js
+        ├── starter.ts
+        ├── solution.py      authored — must match the starter signature and pass
+        ├── solution.java    every case in cases.json
+        └── ...
 ```
 
 Starters are always generated from `problem.json` by
@@ -31,14 +34,14 @@ Solutions are authored on top of the generated starters.
 
 ```json
 {
-  "schema_version": 1,
-  "id": 1,
-  "slug": "two-sum",
-  "title": "Two Sum",
-  "difficulty": "H1",
-  "tags": ["Array", "Hash Table"],
-  "invocation": { "...": "see below" },
-  "limits": {"time_ms": 1500, "memory_mb": 256, "output_kb": 64}
+    "schema_version": 1,
+    "id": 1,
+    "slug": "two-sum",
+    "title": "Two Sum",
+    "difficulty": "H1",
+    "tags": ["Array", "Hash Table"],
+    "invocation": { "...": "see below" },
+    "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
 }
 ```
 
@@ -53,17 +56,21 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 ```json
 {
-  "type": "function",
-  "class_name": "Solution",
-  "method": "twoSum",
-  "parameters": [
-    {"name": "nums", "codec": "json", "value_type": {"kind": "array", "items": {"kind": "integer", "bits": 32}}},
-    {"name": "target", "codec": "json", "value_type": {"kind": "integer", "bits": 32}}
-  ],
-  "return_codec": "json",
-  "return_type": {"kind": "array", "items": {"kind": "integer", "bits": 32}},
-  "entrypoints": {"go": "twoSum", "rust": "two_sum", "typescript": "twoSum"},
-  "comparison": "exact"
+    "type": "function",
+    "class_name": "Solution",
+    "method": "twoSum",
+    "parameters": [
+        {
+            "name": "nums",
+            "codec": "json",
+            "value_type": { "kind": "array", "items": { "kind": "integer", "bits": 32 } }
+        },
+        { "name": "target", "codec": "json", "value_type": { "kind": "integer", "bits": 32 } }
+    ],
+    "return_codec": "json",
+    "return_type": { "kind": "array", "items": { "kind": "integer", "bits": 32 } },
+    "entrypoints": { "go": "twoSum", "rust": "two_sum", "typescript": "twoSum" },
+    "comparison": "exact"
 }
 ```
 
@@ -79,10 +86,10 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 ```json
 {
-  "type": "sql",
-  "parameters": [{"name": "dataset", "codec": "sql_setup"}],
-  "return_codec": "rows",
-  "comparison": "set"
+    "type": "sql",
+    "parameters": [{ "name": "dataset", "codec": "sql_setup" }],
+    "return_codec": "rows",
+    "comparison": "set"
 }
 ```
 
@@ -93,8 +100,8 @@ seeds the tables with `INSERT` statements.
 
 ```json
 {
-  "public": [{"input": [[2, 7, 11, 15], 9], "expected": [0, 1]}],
-  "hidden": [{"input": [[3, 2, 4], 6], "expected": [1, 2]}]
+    "public": [{ "input": [[2, 7, 11, 15], 9], "expected": [0, 1] }],
+    "hidden": [{ "input": [[3, 2, 4], 6], "expected": [1, 2] }]
 }
 ```
 
@@ -110,7 +117,7 @@ reference solution, never hand-computed.
 
 Pure prose, one required grammar:
 
-```text
+````text
 # <Title>                       required — no numbering
 ## Description                  required
 ### Example N                   required (N counts from 1), a ```text block
@@ -118,7 +125,7 @@ Pure prose, one required grammar:
 ### Follow up                   optional
 ## Hints                        optional
 ### Hint 1, ### Hint 2, …       hints, when present, use this form
-```
+````
 
 The `# <Title>` heading must equal `problem.json`'s `title`. Example inputs
 must correspond one-to-one, in order, to the `public` cases. SQL problems
@@ -157,18 +164,18 @@ docker build -f scripts/format.Dockerfile -t openoj-format .
 docker run --rm -v "$PWD":/repo -w /repo openoj-format --check
 ```
 
-| Files | Formatter | Pin / install |
-|---|---|---|
-| `*.py` | `ruff format` (line length 88) | `ruff==0.16.3` (pip) |
-| `*.go` | `gofmt` | Go 1.24 toolchain |
-| `*.rust` | `rustfmt --edition 2021` | rust 1.85 toolchain |
-| `*.cpp` | `clang-format` (LLVM style, indent 4) | `clang-format==22.1.8` (pip) |
-| `*.js` | `prettier` | `prettier@3.9.6` (npm) |
-| `*.ts` | `prettier` | `prettier@3.9.6` (npm) |
-| `*.java` | `prettier` + `prettier-plugin-java` | plugin `@2.10.3` (npm) |
-| `*.sql` | `sql-formatter` (sqlite dialect) | `sql-formatter@15.8.2` (npm) |
-| `*.json` | canonical 2-space JSON + trailing newline | matches VS Code's built-in |
-| `statement.md` | `prettier` (`proseWrap: preserve`) | `prettier@3.9.6` (npm) |
+| Files          | Formatter                                 | Pin / install                |
+| -------------- | ----------------------------------------- | ---------------------------- |
+| `*.py`         | `ruff format` (line length 88)            | `ruff==0.16.3` (pip)         |
+| `*.go`         | `gofmt`                                   | Go 1.24 toolchain            |
+| `*.rust`       | `rustfmt --edition 2021`                  | rust 1.85 toolchain          |
+| `*.cpp`        | `clang-format` (LLVM style, indent 4)     | `clang-format==22.1.8` (pip) |
+| `*.js`         | `prettier`                                | `prettier@3.9.6` (npm)       |
+| `*.ts`         | `prettier`                                | `prettier@3.9.6` (npm)       |
+| `*.java`       | `prettier` + `prettier-plugin-java`       | plugin `@2.10.3` (npm)       |
+| `*.sql`        | `sql-formatter` (sqlite dialect)          | `sql-formatter@15.8.2` (npm) |
+| `*.json`       | canonical 2-space JSON + trailing newline | matches VS Code's built-in   |
+| `statement.md` | `prettier` (`proseWrap: preserve`)        | `prettier@3.9.6` (npm)       |
 
 npm tools are pinned in `package.json` / `package-lock.json`
 (`npm ci`). Config lives in `.prettierrc.json`, `.clang-format`, and

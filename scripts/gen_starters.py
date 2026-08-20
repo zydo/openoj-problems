@@ -10,7 +10,7 @@ concurrent (threaded schedule) problems python3 + java only — the typed
 wrappers do not implement the actions/params, oracle or schedule protocols.
 
 Usage:
-  gen_starters.py problems/0001_two-sum [problems/… …]   # default: all
+  gen_starters.py problems/0001-0100/0001_two-sum [ … ]  # default: all
   gen_starters.py --check problems/…                     # diff, write nothing
 """
 from __future__ import annotations
