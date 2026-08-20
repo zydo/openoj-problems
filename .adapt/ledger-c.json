@@ -647,6 +647,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0882_reachable-nodes-in-subdivided-graph",
+      "source_id": 882,
+      "source_title": "Reachable Nodes In Subdivided Graph",
+      "adapted": "0882_reachable-vertices-after-edge-expansion",
+      "id": 882,
+      "title": "Reachable Vertices After Edge Expansion",
+      "api": {
+        "reachableNodes": "countReachableExpandedVertices",
+        "reachable_nodes": "count_reachable_expanded_vertices"
+      },
+      "kind": "function",
+      "figures": "dropped"
     }
   ]
 }
