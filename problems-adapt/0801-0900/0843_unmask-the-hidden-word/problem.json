@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": 843,
+  "slug": "unmask-the-hidden-word",
+  "title": "Unmask the Hidden Word",
+  "difficulty": "H3",
+  "tags": [
+    "Randomized",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "unmaskWord",
+    "oracle": "Interrogator",
+    "oracle_methods": [
+      {
+        "name": "guess",
+        "parameters": [
+          {
+            "name": "word",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "wordlist",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "query_limit": 10,
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "Interrogator",
+        "construct": [
+          "wordlist",
+          "secret"
+        ],
+        "auxiliary": [
+          "wordlist"
+        ]
+      }
+    },
+    "entrypoints": {
+      "go": "unmaskWord",
+      "rust": "unmask_word",
+      "cpp": "unmaskWord",
+      "javascript": "unmaskWord",
+      "typescript": "unmaskWord"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

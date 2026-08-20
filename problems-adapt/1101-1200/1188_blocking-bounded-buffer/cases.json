@@ -1,0 +1,2959 @@
+{
+  "public": [
+    {
+      "input": {
+        "constructor": [
+          2
+        ],
+        "threads": [
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              1
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        4,
+        6,
+        9
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          3
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              8
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        3,
+        5,
+        7,
+        8
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": {
+        "constructor": [
+          1
+        ],
+        "threads": [
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          }
+        ]
+      },
+      "expected": [
+        7
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          1
+        ],
+        "threads": [
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              1
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              15
+            ]
+          }
+        ]
+      },
+      "expected": [
+        1,
+        6,
+        6,
+        12,
+        12,
+        13,
+        15,
+        20
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          1
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              15
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          }
+        ]
+      },
+      "expected": [
+        2,
+        2,
+        2,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        7,
+        7,
+        9,
+        9,
+        10,
+        10,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        14,
+        15,
+        16,
+        18,
+        18
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          2
+        ],
+        "threads": [
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          }
+        ]
+      },
+      "expected": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          2
+        ],
+        "threads": [
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              19
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              1
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              15
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          }
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        2,
+        2,
+        4,
+        4,
+        5,
+        5,
+        6,
+        7,
+        10,
+        10,
+        11,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          3
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              15
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              17
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          }
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        4,
+        5,
+        5,
+        5,
+        5,
+        6,
+        7,
+        7,
+        9,
+        9,
+        10,
+        10,
+        10,
+        11,
+        13,
+        13,
+        14,
+        15,
+        17,
+        18,
+        18,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          4
+        ],
+        "threads": [
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              17
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              19
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        0,
+        7,
+        10,
+        10,
+        11,
+        17,
+        18,
+        18,
+        18,
+        19,
+        20,
+        20
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          5
+        ],
+        "threads": [
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              17
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              17
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              19
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        0,
+        4,
+        5,
+        6,
+        6,
+        6,
+        7,
+        9,
+        9,
+        9,
+        10,
+        11,
+        13,
+        13,
+        13,
+        14,
+        14,
+        16,
+        16,
+        17,
+        17,
+        18,
+        18,
+        18,
+        19
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          6
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              1
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              19
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              18
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              8
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              1
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              17
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              19
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        3,
+        4,
+        5,
+        7,
+        7,
+        8,
+        9,
+        9,
+        10,
+        12,
+        13,
+        13,
+        13,
+        14,
+        14,
+        16,
+        16,
+        17,
+        18,
+        19,
+        19,
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          8
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              8
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        3,
+        4,
+        5,
+        7,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          10
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          10
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              19
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              20
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              8
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          }
+        ]
+      },
+      "expected": [
+        3,
+        5,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        19,
+        20
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          10
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              15
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              15
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              1
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              8
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          }
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        6,
+        6,
+        7,
+        7,
+        7,
+        7,
+        8,
+        9,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        14,
+        14,
+        14,
+        14,
+        15,
+        15,
+        16,
+        16
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          9
+        ],
+        "threads": [
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              14
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              2
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              17
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              16
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              0
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              10
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              8
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              17
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              7
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              4
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              11
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              6
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              13
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              8
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              12
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              9
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              3
+            ]
+          },
+          {
+            "call": "put",
+            "args": [
+              5
+            ]
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          },
+          {
+            "call": "take",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7,
+        8,
+        8,
+        9,
+        10,
+        11,
+        12,
+        12,
+        13,
+        13,
+        13,
+        14,
+        16,
+        17,
+        17
+      ]
+    },
+    {
+      "input": {
+        "constructor": [
+          3
+        ],
+        "threads": [
+          {
+            "call": "size",
+            "records": true
+          }
+        ]
+      },
+      "expected": [
+        0
+      ]
+    }
+  ]
+}

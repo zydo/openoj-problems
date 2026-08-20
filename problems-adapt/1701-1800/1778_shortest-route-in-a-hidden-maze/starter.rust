@@ -1,0 +1,5 @@
+impl Solution {
+    pub fn find_shortest_route(maze: &mut MazeController) -> i32 {
+        panic!("TODO")
+    }
+}

@@ -270,7 +270,8 @@ def gate_compatibility(source: Path, adapted: Path) -> list[str]:
             result = subprocess.run(
                 [
                     sys.executable, str(VERIFY),
-                    f"problems-adapt/{adapted.name}",
+                    # the sharded layout: pass the resolved bundle path
+                    str(adapted),
                     "--solution", str(target),
                 ],
                 capture_output=True,

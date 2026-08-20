@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": 489,
+  "slug": "sweep-the-hidden-room",
+  "title": "Sweep the Hidden Room",
+  "difficulty": "H3",
+  "tags": [
+    "DFS",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "sweepRoom",
+    "oracle": "Sweeper",
+    "oracle_methods": [
+      {
+        "name": "move",
+        "parameters": [],
+        "return_type": {
+          "kind": "boolean"
+        }
+      },
+      {
+        "name": "turnLeft",
+        "parameters": [],
+        "return_type": {
+          "kind": "void"
+        }
+      },
+      {
+        "name": "turnRight",
+        "parameters": [],
+        "return_type": {
+          "kind": "void"
+        }
+      },
+      {
+        "name": "clean",
+        "parameters": [],
+        "return_type": {
+          "kind": "void"
+        }
+      }
+    ],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "query_limit": 200000,
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "Sweeper",
+        "construct": [
+          "room",
+          "start"
+        ],
+        "auxiliary": []
+      }
+    },
+    "entrypoints": {
+      "go": "sweepRoom",
+      "rust": "sweep_room",
+      "cpp": "sweepRoom",
+      "javascript": "sweepRoom",
+      "typescript": "sweepRoom"
+    }
+  },
+  "limits": {
+    "time_ms": 4000,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

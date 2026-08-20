@@ -3068,6 +3068,138 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0489_robot-room-cleaner",
+      "source_id": 489,
+      "source_title": "Robot Room Cleaner",
+      "adapted": "0489_sweep-the-hidden-room",
+      "id": 489,
+      "title": "Sweep the Hidden Room",
+      "api": {
+        "cleanRoom": "sweepRoom",
+        "clean_room": "sweep_room",
+        "Robot": "Sweeper"
+      },
+      "kind": "interactive",
+      "figures": "none"
+    },
+    {
+      "source": "0843_guess-the-word",
+      "source_id": 843,
+      "source_title": "Guess the Word",
+      "adapted": "0843_unmask-the-hidden-word",
+      "id": 843,
+      "title": "Unmask the Hidden Word",
+      "api": {
+        "findSecretWord": "unmaskWord",
+        "find_secret_word": "unmask_word",
+        "Master": "Interrogator"
+      },
+      "kind": "interactive",
+      "figures": "none"
+    },
+    {
+      "source": "1095_find-in-mountain-array",
+      "source_id": 1095,
+      "source_title": "Find in Mountain Array",
+      "adapted": "1095_search-hidden-mountain-sequence",
+      "id": 1095,
+      "title": "Search a Hidden Mountain Sequence",
+      "api": {
+        "findInMountainArray": "findInMountain",
+        "find_in_mountain_array": "find_in_mountain",
+        "MountainArray": "MountainReader"
+      },
+      "kind": "interactive",
+      "figures": "none"
+    },
+    {
+      "source": "1188_design-bounded-blocking-queue",
+      "source_id": 1188,
+      "source_title": "Design Bounded Blocking Queue",
+      "adapted": "1188_blocking-bounded-buffer",
+      "id": 1188,
+      "title": "Blocking Bounded Buffer",
+      "api": {
+        "BoundedBlockingQueue": "BoundedBuffer",
+        "enqueue": "put",
+        "dequeue": "take"
+      },
+      "kind": "concurrent",
+      "figures": "none"
+    },
+    {
+      "source": "1274_number-of-ships-in-a-rectangle",
+      "source_id": 1274,
+      "source_title": "Number of Ships in a Rectangle",
+      "adapted": "1274_count-hidden-ships-in-a-rectangle",
+      "id": 1274,
+      "title": "Count Hidden Ships in a Rectangle",
+      "api": {
+        "countShips": "countHiddenShips",
+        "Sea": "Ocean",
+        "sea": "ocean"
+      },
+      "kind": "interactive",
+      "figures": "none"
+    },
+    {
+      "source": "1428_leftmost-column-with-at-least-a-one",
+      "source_id": 1428,
+      "source_title": "Leftmost Column with at Least a One",
+      "adapted": "1428_first-column-containing-a-one",
+      "id": 1428,
+      "title": "First Column Containing a One",
+      "api": {
+        "leftMostColumnWithOne": "firstColumnWithOne",
+        "BinaryMatrix": "BitMatrix",
+        "binaryMatrix": "matrix"
+      },
+      "kind": "interactive",
+      "figures": "none"
+    },
+    {
+      "source": "1778_shortest-path-in-a-hidden-grid",
+      "source_id": 1778,
+      "source_title": "Shortest Path in a Hidden Grid",
+      "adapted": "1778_shortest-route-in-a-hidden-maze",
+      "id": 1778,
+      "title": "Shortest Route in a Hidden Maze",
+      "api": {
+        "findShortestPath": "findShortestRoute",
+        "GridMaster": "MazeController"
+      },
+      "kind": "interactive",
+      "figures": "none"
+    },
+    {
+      "source": "1810_minimum-path-cost-in-a-hidden-grid",
+      "source_id": 1810,
+      "source_title": "Minimum Path Cost in a Hidden Grid",
+      "adapted": "1810_cheapest-route-in-a-hidden-maze",
+      "id": 1810,
+      "title": "Cheapest Route in a Hidden Maze",
+      "api": {
+        "findMinimumPath": "findCheapestRoute",
+        "GridMaster": "MazeController"
+      },
+      "kind": "interactive",
+      "figures": "none"
+    },
+    {
+      "source": "3023_find-pattern-in-infinite-stream-i",
+      "source_id": 3023,
+      "source_title": "Find Pattern in Infinite Stream I",
+      "adapted": "3023_first-pattern-match-in-a-bit-stream",
+      "id": 3023,
+      "title": "First Pattern Match in a Bit Stream",
+      "api": {
+        "findPattern": "firstMatchIndex",
+        "InfiniteStream": "BitStream"
+      },
+      "kind": "interactive",
+      "figures": "none"
     }
   ]
 }
