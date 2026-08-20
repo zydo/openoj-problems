@@ -706,6 +706,119 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "1493_longest-subarray-of-1s-after-deleting-one-element",
+      "source_id": 1493,
+      "source_title": "Longest Subarray of 1's After Deleting One Element",
+      "adapted": "1493_longest-run-of-ones-after-one-deletion",
+      "id": 1493,
+      "title": "Longest Run of Ones After One Deletion",
+      "api": {
+        "longestSubarray": "longestRun",
+        "longest_subarray": "longest_run"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1497_check-if-array-pairs-are-divisible-by-k",
+      "source_id": 1497,
+      "source_title": "Check If Array Pairs Are Divisible by k",
+      "adapted": "1497_pair-sums-divisible-by-k",
+      "id": 1497,
+      "title": "Pair Sums Divisible by k",
+      "api": {
+        "canArrange": "canPairUp",
+        "can_arrange": "can_pair_up",
+        "arr": "nums"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1498_number-of-subsequences-that-satisfy-the-given-sum-condition",
+      "source_id": 1498,
+      "source_title": "Number of Subsequences That Satisfy the Given Sum Condition",
+      "adapted": "1498_subsequences-with-bounded-ends",
+      "id": 1498,
+      "title": "Subsequences With Bounded Ends",
+      "api": {
+        "numSubseq": "countSubseq",
+        "num_subseq": "count_subseq"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1499_max-value-of-equation",
+      "source_id": 1499,
+      "source_title": "Max Value of Equation",
+      "adapted": "1499_best-pair-score-within-k",
+      "id": 1499,
+      "title": "Best Pair Score Within k",
+      "api": {
+        "findMaxValueOfEquation": "bestPairScore",
+        "find_max_value_of_equation": "best_pair_score"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1584_min-cost-to-connect-all-points",
+      "source_id": 1584,
+      "source_title": "Min Cost to Connect All Points",
+      "adapted": "1584_least-wiring-to-connect-all-points",
+      "id": 1584,
+      "title": "Least Wiring to Connect All Points",
+      "api": {
+        "minCostConnectPoints": "leastWiringCost",
+        "min_cost_connect_points": "least_wiring_cost"
+      },
+      "kind": "function",
+      "figures": "regenerated"
+    },
+    {
+      "source": "1697_checking-existence-of-edge-length-limited-paths",
+      "source_id": 1697,
+      "source_title": "Checking Existence of Edge Length Limited Paths",
+      "adapted": "1697_paths-under-an-edge-weight-cap",
+      "id": 1697,
+      "title": "Paths Under an Edge-Weight Cap",
+      "api": {
+        "distanceLimitedPathsExist": "pathsUnderCap",
+        "distance_limited_paths_exist": "paths_under_cap"
+      },
+      "kind": "function",
+      "figures": "labels updated"
+    },
+    {
+      "source": "1703_minimum-adjacent-swaps-for-k-consecutive-ones",
+      "source_id": 1703,
+      "source_title": "Minimum Adjacent Swaps for K Consecutive Ones",
+      "adapted": "1703_fewest-adjacent-swaps-to-gather-k-ones",
+      "id": 1703,
+      "title": "Fewest Adjacent Swaps to Gather K Ones",
+      "api": {
+        "minMoves": "fewestAdjacentSwaps",
+        "min_moves": "fewest_adjacent_swaps"
+      },
+      "kind": "function",
+      "figures": "none"
+    },
+    {
+      "source": "1705_maximum-number-of-eaten-apples",
+      "source_id": 1705,
+      "source_title": "Maximum Number of Eaten Apples",
+      "adapted": "1705_most-apples-before-rot",
+      "id": 1705,
+      "title": "Most Apples Before Rot",
+      "api": {
+        "eatenApples": "mostApples",
+        "eaten_apples": "most_apples"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }

@@ -1,19 +1,11 @@
 [
-  "1493_longest-subarray-of-1s-after-deleting-one-element",
-  "1497_check-if-array-pairs-are-divisible-by-k",
-  "1498_number-of-subsequences-that-satisfy-the-given-sum-condition",
-  "1499_max-value-of-equation",
   "1503_last-moment-before-all-ants-fall-out-of-a-plank",
   "1504_count-submatrices-with-all-ones",
-  "1584_min-cost-to-connect-all-points",
   "1627_graph-connectivity-with-threshold",
   "1631_path-with-minimum-effort",
   "1632_rank-transform-of-a-matrix",
   "1642_furthest-building-you-can-reach",
   "1648_sell-diminishing-valued-colored-balls",
   "1649_create-sorted-array-through-instructions",
-  "1658_minimum-operations-to-reduce-x-to-zero",
-  "1697_checking-existence-of-edge-length-limited-paths",
-  "1703_minimum-adjacent-swaps-for-k-consecutive-ones",
-  "1705_maximum-number-of-eaten-apples"
+  "1658_minimum-operations-to-reduce-x-to-zero"
 ]
