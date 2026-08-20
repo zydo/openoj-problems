@@ -41,13 +41,26 @@ def _entries() -> list[dict]:
 def main() -> int:
     entries = _entries()
     rows = []
+    mapping = {}
     for entry in sorted(entries, key=lambda e: e["id"]):
         api = ", ".join(f"`{old}` → `{new}`" for old, new in (entry.get("api") or {}).items())
         rows.append(
             f"| `{entry['adapted']}` | `{entry['source']}` | {api or '—'} | {entry.get('kind', '—')} |"
         )
+        # The machine-readable twin: what cutover's submission-key rewrite
+        # consumes. Keyed by source so a LeetCode slug resolves directly.
+        mapping[entry["source"]] = {
+            "id": entry["id"],
+            "adapted": entry["adapted"],
+            "title": entry["title"],
+            "api": entry.get("api") or {},
+            "kind": entry.get("kind"),
+        }
     MAPPING.write_text(HEADER + "\n".join(rows) + "\n", encoding="utf-8")
-    print(f"MAPPING.md: {len(rows)} adapted problems")
+    MAPPING.with_suffix(".json").write_text(
+        json.dumps(mapping, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    print(f"MAPPING.md + MAPPING.json: {len(rows)} adapted problems")
     return 0
 
 
