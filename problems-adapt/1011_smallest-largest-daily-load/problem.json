@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": 1011,
+  "slug": "smallest-largest-daily-load",
+  "title": "Smallest Largest Daily Load",
+  "difficulty": "H3",
+  "tags": [
+    "Binary Search",
+    "Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestLargestDailyLoad",
+    "parameters": [
+      {
+        "name": "weights",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "days",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "smallestLargestDailyLoad",
+      "rust": "smallest_largest_daily_load",
+      "typescript": "smallestLargestDailyLoad"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

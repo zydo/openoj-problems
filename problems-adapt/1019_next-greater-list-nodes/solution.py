@@ -1,0 +1,23 @@
+from typing import List, Optional
+
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
+class Solution:
+    def nextGreaterListNodes(self, head: Optional[ListNode]) -> List[int]:
+        values = []
+        node = head
+        while node is not None:
+            values.append(node.val)
+            node = node.next
+        answer = [0] * len(values)
+        stack = []  # indices with values in decreasing order
+        for i, value in enumerate(values):
+            while stack and values[stack[-1]] < value:
+                answer[stack.pop()] = value
+            stack.append(i)
+        return answer
