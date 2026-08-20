@@ -59,7 +59,18 @@
       "bits": 32
     },
     "query_limit": 4000000,
-    "comparison": "exact"
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "GridMaster",
+        "construct": [
+          "grid",
+          "start",
+          "target"
+        ],
+        "auxiliary": []
+      }
+    }
   },
   "limits": {
     "time_ms": 4000,

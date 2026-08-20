@@ -58,7 +58,16 @@
       "bits": 32
     },
     "query_limit": 1000,
-    "comparison": "exact"
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "BinaryMatrix",
+        "construct": [
+          "matrix"
+        ],
+        "auxiliary": []
+      }
+    }
   },
   "limits": {
     "time_ms": 1500,

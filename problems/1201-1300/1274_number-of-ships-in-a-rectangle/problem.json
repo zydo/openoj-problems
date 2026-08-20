@@ -74,7 +74,19 @@
       "bits": 32
     },
     "query_limit": 400,
-    "comparison": "exact"
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "Sea",
+        "construct": [
+          "ships"
+        ],
+        "auxiliary": [
+          "topRight",
+          "bottomLeft"
+        ]
+      }
+    }
   },
   "limits": {
     "time_ms": 1500,

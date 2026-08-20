@@ -1,6 +1,6 @@
 class Solution {
 
-    public int findInMountainArray(InteractiveOracles.MountainArray mountainArr, int target) {
+    public int findInMountainArray(MountainArray mountainArr, int target) {
         int n = mountainArr.length();
 
         // Peak: the last index still on the rising slope — get(mid - 1) <

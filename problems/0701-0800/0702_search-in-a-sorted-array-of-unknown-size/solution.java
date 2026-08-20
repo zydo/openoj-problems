@@ -1,6 +1,6 @@
 class Solution {
 
-    public int search(InteractiveOracles.ArrayReader reader, int target) {
+    public int search(ArrayReader reader, int target) {
         // Exponential probe: find the smallest power-of-two index whose
         // value reaches the target (or the out-of-range sentinel, which is
         // larger than any real element).

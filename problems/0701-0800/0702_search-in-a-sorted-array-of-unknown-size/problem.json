@@ -48,7 +48,18 @@
       "bits": 32
     },
     "query_limit": 10000,
-    "comparison": "exact"
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "ArrayReader",
+        "construct": [
+          "arr"
+        ],
+        "auxiliary": [
+          "target"
+        ]
+      }
+    }
   },
   "limits": {
     "time_ms": 1500,

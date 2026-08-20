@@ -42,7 +42,18 @@
       "bits": 32
     },
     "query_limit": 1000000,
-    "comparison": "exact"
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "InfiniteStream",
+        "construct": [
+          "bits"
+        ],
+        "auxiliary": [
+          "pattern"
+        ]
+      }
+    }
   },
   "limits": {
     "time_ms": 1500,

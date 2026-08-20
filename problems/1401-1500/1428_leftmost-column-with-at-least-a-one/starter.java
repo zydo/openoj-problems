@@ -1,6 +1,6 @@
 class Solution {
 
-    public int leftMostColumnWithOne(InteractiveOracles.BinaryMatrix binaryMatrix) {
+    public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
         throw new UnsupportedOperationException("TODO");
     }
 }

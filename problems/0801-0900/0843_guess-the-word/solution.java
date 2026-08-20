@@ -3,7 +3,7 @@ import java.util.List;
 
 class Solution {
 
-    public void findSecretWord(InteractiveOracles.Master master, String[] wordlist) {
+    public void findSecretWord(Master master, String[] wordlist) {
         List<String> candidates = new ArrayList<>(List.of(wordlist));
         while (!candidates.isEmpty()) {
             // Pick the word whose worst-case surviving group is smallest:

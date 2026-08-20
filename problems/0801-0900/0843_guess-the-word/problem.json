@@ -48,7 +48,19 @@
       "kind": "void"
     },
     "query_limit": 10,
-    "comparison": "exact"
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "Master",
+        "construct": [
+          "wordlist",
+          "secret"
+        ],
+        "auxiliary": [
+          "wordlist"
+        ]
+      }
+    }
   },
   "limits": {
     "time_ms": 1500,

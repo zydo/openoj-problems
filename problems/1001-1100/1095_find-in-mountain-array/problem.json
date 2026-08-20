@@ -55,7 +55,18 @@
       "bits": 32
     },
     "query_limit": 100,
-    "comparison": "exact"
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "MountainArray",
+        "construct": [
+          "mountain"
+        ],
+        "auxiliary": [
+          "target"
+        ]
+      }
+    }
   },
   "limits": {
     "time_ms": 1500,

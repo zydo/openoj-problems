@@ -49,7 +49,17 @@
       "kind": "void"
     },
     "query_limit": 200000,
-    "comparison": "exact"
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "Robot",
+        "construct": [
+          "room",
+          "start"
+        ],
+        "auxiliary": []
+      }
+    }
   },
   "limits": {
     "time_ms": 4000,

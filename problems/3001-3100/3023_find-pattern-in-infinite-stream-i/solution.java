@@ -1,6 +1,6 @@
 class Solution {
 
-    public int findPattern(InteractiveOracles.InfiniteStream stream, int[] pattern) {
+    public int findPattern(InfiniteStream stream, int[] pattern) {
         int length = pattern.length;
         // Circular buffer of the last `length` bits: newest bit overwrites
         // the oldest, and a full window is compared against the pattern.

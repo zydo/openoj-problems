@@ -7,7 +7,7 @@ class Solution {
 
     private static final int[][] DIRS = { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } }; // up, right, down, left
 
-    public void cleanRoom(InteractiveOracles.Robot robot) {
+    public void cleanRoom(Robot robot) {
         Set<Long> visited = new HashSet<>();
         visited.add(key(0, 0));
         robot.clean();

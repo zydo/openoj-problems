@@ -1,6 +1,6 @@
 class Solution {
 
-    public int countShips(InteractiveOracles.Sea sea, int[] topRight, int[] bottomLeft) {
+    public int countShips(Sea sea, int[] topRight, int[] bottomLeft) {
         // A split can hand a child an empty rectangle; reject it without
         // spending a query.
         if (bottomLeft[0] > topRight[0] || bottomLeft[1] > topRight[1]) {

@@ -491,42 +491,44 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
     return "".join(chunks)
 
 
-# Interactive oracle table: the python type is injected into the submission
-# module by runner/python_harness.py; the java type is the judge-classpath
-# class (GridMaster is top-level, later oracles nest in InteractiveOracles).
+# Interactive oracle table (fallback when the invocation carries no
+# provided.oracle manifest): with bundle-carried oracles both languages
+# reference the bare class name — the provided source is assembled into
+# the python namespace / compiled in the same java package as the
+# submission.
 # "parameter" names the oracle argument; oracles whose LeetCode signature
 # takes extra data (wordlist / target / pattern) declare it in
 # invocation["parameters"], rendered after the oracle argument.
 INTERACTIVE_ORACLES = {
     "GridMaster": {"python": "GridMaster", "java": "GridMaster", "parameter": "master"},
-    "Robot": {"python": "Robot", "java": "InteractiveOracles.Robot", "parameter": "robot"},
-    "Master": {"python": "Master", "java": "InteractiveOracles.Master", "parameter": "master"},
+    "Robot": {"python": "Robot", "java": "Robot", "parameter": "robot"},
+    "Master": {"python": "Master", "java": "Master", "parameter": "master"},
     "MountainArray": {
         "python": "MountainArray",
-        "java": "InteractiveOracles.MountainArray",
+        "java": "MountainArray",
         "parameter": "mountainArr",
     },
     "BinaryMatrix": {
         "python": "BinaryMatrix",
-        "java": "InteractiveOracles.BinaryMatrix",
+        "java": "BinaryMatrix",
         "parameter": "binaryMatrix",
     },
     "ArrayReader": {
         "python": "ArrayReader",
-        "java": "InteractiveOracles.ArrayReader",
+        "java": "ArrayReader",
         "parameter": "reader",
     },
     "SequenceReader": {
         "python": "SequenceReader",
-        "java": "InteractiveOracles.SequenceReader",
+        "java": "SequenceReader",
         "parameter": "reader",
     },
     "InfiniteStream": {
         "python": "InfiniteStream",
-        "java": "InteractiveOracles.InfiniteStream",
+        "java": "InfiniteStream",
         "parameter": "stream",
     },
-    "Sea": {"python": "Sea", "java": "InteractiveOracles.Sea", "parameter": "sea"},
+    "Sea": {"python": "Sea", "java": "Sea", "parameter": "sea"},
 }
 
 
