@@ -717,6 +717,20 @@
       },
       "kind": "design",
       "figures": "none"
+    },
+    {
+      "source": "0918_maximum-sum-circular-subarray",
+      "source_id": 918,
+      "source_title": "Maximum Sum Circular Subarray",
+      "adapted": "0918_largest-sum-on-a-circular-sequence",
+      "id": 918,
+      "title": "Largest Sum on a Circular Sequence",
+      "api": {
+        "maxSubarraySumCircular": "largestCircularSegmentSum",
+        "max_subarray_sum_circular": "largest_circular_segment_sum"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
