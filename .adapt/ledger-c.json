@@ -465,6 +465,20 @@
       },
       "kind": "function",
       "figures": "none"
+    },
+    {
+      "source": "0805_split-array-with-same-average",
+      "source_id": 805,
+      "source_title": "Split Array With Same Average",
+      "adapted": "0805_equal-mean-bipartition",
+      "id": 805,
+      "title": "Equal-Mean Bipartition",
+      "api": {
+        "splitArraySameAverage": "canSplitEqualMean",
+        "split_array_same_average": "can_split_equal_mean"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
