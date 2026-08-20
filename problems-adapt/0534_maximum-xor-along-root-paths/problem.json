@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": 534,
+  "slug": "maximum-xor-along-root-paths",
+  "title": "Maximum Xor Along Root Paths",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Trie",
+    "Depth-First Search",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxRootPathXor",
+    "parameters": [
+      {
+        "name": "parents",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "maxRootPathXor",
+      "rust": "max_root_path_xor",
+      "typescript": "maxRootPathXor"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 4000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

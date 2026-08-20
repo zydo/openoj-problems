@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": 693,
+  "slug": "count-numbers-by-digit-sum",
+  "title": "Count Numbers by Digit Sum",
+  "difficulty": "H4",
+  "tags": [
+    "Digit DP",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countByDigitSum",
+    "parameters": [
+      {
+        "name": "num1",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "num2",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "min_sum",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "max_sum",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countByDigitSum",
+      "rust": "countByDigitSum",
+      "typescript": "countByDigitSum"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

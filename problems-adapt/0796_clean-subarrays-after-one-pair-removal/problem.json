@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 796,
+  "slug": "clean-subarrays-after-one-pair-removal",
+  "title": "Clean Subarrays After One Pair Removal",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cleanSubarrays",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "forbiddenPairs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "cleanSubarrays",
+      "rust": "clean_subarrays",
+      "typescript": "cleanSubarrays"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

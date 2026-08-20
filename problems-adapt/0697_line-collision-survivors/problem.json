@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": 697,
+  "slug": "line-collision-survivors",
+  "title": "Line Collision Survivors",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "survivorHealths",
+    "parameters": [
+      {
+        "name": "positions",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "healths",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "directions",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "survivorHealths",
+      "rust": "survivor_healths",
+      "typescript": "survivorHealths"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 247,
+  "slug": "fewest-wheel-turns",
+  "title": "Fewest Wheel Turns",
+  "difficulty": "H3",
+  "tags": [
+    "Breadth-First Search",
+    "String",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestTurns",
+    "parameters": [
+      {
+        "name": "deadends",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestTurns",
+      "rust": "fewest_turns",
+      "typescript": "fewestTurns"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

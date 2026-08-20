@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": 82,
+  "slug": "find-grid-words",
+  "title": "Find Grid Words",
+  "difficulty": "H4",
+  "tags": [
+    "Trie",
+    "Backtracking",
+    "DFS",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "findGridWords",
+    "parameters": [
+      {
+        "name": "board",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      },
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "findGridWords",
+      "rust": "find_grid_words",
+      "typescript": "findGridWords"
+    },
+    "comparison": "sorted"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

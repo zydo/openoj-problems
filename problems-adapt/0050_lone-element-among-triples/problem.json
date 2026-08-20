@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": 50,
+  "slug": "lone-element-among-triples",
+  "title": "Lone Element Among Triples",
+  "difficulty": "H3",
+  "tags": [
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "loneElementAmongTriples",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "loneElementAmongTriples",
+      "rust": "lone_element_among_triples",
+      "typescript": "loneElementAmongTriples"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

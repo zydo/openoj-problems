@@ -1,4 +1,4 @@
-## 0005 — Longest Palindromic Substring
+## 5 — Longest Palindromic Substring
 
 - New id / title / slug: 5 / Longest Palindrome Slice / `longest-palindrome-slice`
 - Old → new API: `longestPalindrome` → `longestPalindromeSlice` (go `longestPalindromeSlice`, rust `longest_palindrome_slice`, ts `longestPalindromeSlice`)

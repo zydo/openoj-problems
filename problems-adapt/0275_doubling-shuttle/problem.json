@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": 275,
+  "slug": "doubling-shuttle",
+  "title": "Doubling Shuttle",
+  "difficulty": "H4",
+  "tags": [
+    "Dynamic Programming",
+    "Breadth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "shuttle",
+    "parameters": [
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "shuttle",
+      "rust": "shuttle",
+      "typescript": "shuttle"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

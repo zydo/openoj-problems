@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 48,
+  "slug": "weight-apportionment",
+  "title": "Weight Apportionment",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "apportion",
+    "parameters": [
+      {
+        "name": "scores",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "apportion",
+      "rust": "apportion",
+      "typescript": "apportion"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

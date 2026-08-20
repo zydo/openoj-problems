@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": 234,
+  "slug": "continuous-coverage-ledger",
+  "title": "Continuous Coverage Ledger",
+  "difficulty": "H4",
+  "tags": [
+    "Balanced BST",
+    "Segment Tree"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "CoverageLedger",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "addSpan",
+        "parameters": [
+          {
+            "name": "start",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "end",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "coversSpan",
+        "parameters": [
+          {
+            "name": "start",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "end",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      },
+      {
+        "name": "removeSpan",
+        "parameters": [
+          {
+            "name": "start",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "end",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

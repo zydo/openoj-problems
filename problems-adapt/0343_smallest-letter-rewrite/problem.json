@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": 343,
+  "slug": "smallest-letter-rewrite",
+  "title": "Smallest Letter Rewrite",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Union Find",
+    "Graph"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestLetterRewrite",
+    "parameters": [
+      {
+        "name": "s1",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "s2",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "smallestLetterRewrite",
+      "rust": "smallest_letter_rewrite",
+      "typescript": "smallestLetterRewrite"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 111,
+  "slug": "operators-between-digits",
+  "title": "Operators Between Digits",
+  "difficulty": "H4",
+  "tags": [
+    "Backtracking",
+    "Math",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "operatorsBetweenDigits",
+    "parameters": [
+      {
+        "name": "num",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "operatorsBetweenDigits",
+      "rust": "operators_between_digits",
+      "typescript": "operatorsBetweenDigits"
+    },
+    "comparison": "sorted"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

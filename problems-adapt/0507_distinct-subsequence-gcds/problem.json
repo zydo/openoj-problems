@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": 507,
+  "slug": "distinct-subsequence-gcds",
+  "title": "Distinct Subsequence GCDs",
+  "difficulty": "H4",
+  "tags": [
+    "Number Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countSubsequenceGcds",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countSubsequenceGcds",
+      "rust": "count_subsequence_gcds",
+      "typescript": "countSubsequenceGcds"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

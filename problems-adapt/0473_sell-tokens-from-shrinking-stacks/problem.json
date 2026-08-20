@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 473,
+  "slug": "sell-tokens-from-shrinking-stacks",
+  "title": "Sell Tokens From Shrinking Stacks",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bestRevenue",
+    "parameters": [
+      {
+        "name": "stacks",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "orders",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "bestRevenue",
+      "rust": "best_revenue",
+      "typescript": "bestRevenue"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

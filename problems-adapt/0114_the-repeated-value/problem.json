@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": 114,
+  "slug": "the-repeated-value",
+  "title": "The Repeated Value",
+  "difficulty": "H3",
+  "tags": [
+    "Two Pointers",
+    "Binary Search",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "repeatedValue",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "repeatedValue",
+      "rust": "repeated_value",
+      "typescript": "repeatedValue"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

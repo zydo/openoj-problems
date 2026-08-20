@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 207,
+  "slug": "contains-an-anagram",
+  "title": "Contains An Anagram",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Sliding Window",
+    "Hash Table",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "containsAnagram",
+    "parameters": [
+      {
+        "name": "pattern",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "containsAnagram",
+      "rust": "contains_anagram",
+      "typescript": "containsAnagram"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

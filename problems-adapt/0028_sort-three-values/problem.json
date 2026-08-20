@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 28,
+  "slug": "sort-three-values",
+  "title": "Sort Three Values",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "sortThreeValues",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "sortThreeValues",
+      "rust": "sort_three_values",
+      "typescript": "sortThreeValues"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

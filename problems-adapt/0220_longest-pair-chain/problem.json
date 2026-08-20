@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 220,
+  "slug": "longest-pair-chain",
+  "title": "Longest Pair Chain",
+  "difficulty": "H2",
+  "tags": [
+    "Sorting",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestPairChain",
+    "parameters": [
+      {
+        "name": "pairs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestPairChain",
+      "rust": "longest_pair_chain",
+      "typescript": "longestPairChain"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

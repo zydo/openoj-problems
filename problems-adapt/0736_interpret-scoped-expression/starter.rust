@@ -1,5 +1,0 @@
-impl Solution {
-    pub fn scoped_value(expression: String) -> i32 {
-        panic!("TODO")
-    }
-}

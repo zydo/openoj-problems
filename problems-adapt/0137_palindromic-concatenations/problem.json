@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 137,
+  "slug": "palindromic-concatenations",
+  "title": "Palindromic Concatenations",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Hash Table",
+    "Trie"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "palindromicConcatenations",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "palindromicConcatenations",
+      "rust": "palindromic_concatenations",
+      "typescript": "palindromicConcatenations"
+    },
+    "comparison": "sorted"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": 623,
+  "slug": "smallest-number-fitting-an-up-down-pattern",
+  "title": "Smallest Number Fitting an Up-Down Pattern",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Backtracking",
+    "Stack",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestFromPattern",
+    "parameters": [
+      {
+        "name": "pattern",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "smallestFromPattern",
+      "rust": "smallest_from_pattern",
+      "typescript": "smallestFromPattern"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

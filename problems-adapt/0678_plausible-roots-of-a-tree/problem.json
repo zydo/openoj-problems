@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": 678,
+  "slug": "plausible-roots-of-a-tree",
+  "title": "Plausible Roots of a Tree",
+  "difficulty": "H3",
+  "tags": [
+    "Tree",
+    "Tree DP",
+    "DFS"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "plausibleRoots",
+    "parameters": [
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "guesses",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "plausibleRoots",
+      "rust": "plausible_roots",
+      "typescript": "plausibleRoots"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

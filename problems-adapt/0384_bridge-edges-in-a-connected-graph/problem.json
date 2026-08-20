@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": 384,
+  "slug": "bridge-edges-in-a-connected-graph",
+  "title": "Bridge Edges in a Connected Graph",
+  "difficulty": "H4",
+  "tags": [
+    "Graph",
+    "Depth-First Search",
+    "Bridge (Graph)"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "findBridges",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "findBridges",
+      "rust": "find_bridges",
+      "typescript": "findBridges"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

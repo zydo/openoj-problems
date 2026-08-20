@@ -1,4 +1,4 @@
-## 0002 — Add Two Numbers
+## 2 — Add Two Numbers
 
 - New id / title / slug: 2 / Add Digit Lists / `add-digit-lists`
 - Old → new API: `addTwoNumbers` → `addDigitLists` (go `addDigitLists`, rust `add_digit_lists`, ts `addDigitLists`); parameters `l1`, `l2` → `first`, `second`

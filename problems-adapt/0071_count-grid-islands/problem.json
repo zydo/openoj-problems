@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 71,
+  "slug": "count-grid-islands",
+  "title": "Count Grid Islands",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Matrix",
+    "Graph",
+    "BFS",
+    "DFS",
+    "Union-Find"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countGridIslands",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countGridIslands",
+      "rust": "count_grid_islands",
+      "typescript": "countGridIslands"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

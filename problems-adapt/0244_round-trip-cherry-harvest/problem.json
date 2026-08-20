@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 244,
+  "slug": "round-trip-cherry-harvest",
+  "title": "Round-Trip Cherry Harvest",
+  "difficulty": "H4",
+  "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "roundTripHarvest",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "roundTripHarvest",
+      "rust": "round_trip_harvest",
+      "typescript": "roundTripHarvest"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

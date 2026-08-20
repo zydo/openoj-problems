@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 335,
+  "slug": "cheapest-polygon-triangulation",
+  "title": "Cheapest Polygon Triangulation",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cheapestTriangulation",
+    "parameters": [
+      {
+        "name": "values",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "cheapestTriangulation",
+      "rust": "cheapest_triangulation",
+      "typescript": "cheapestTriangulation"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

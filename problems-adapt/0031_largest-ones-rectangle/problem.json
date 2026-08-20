@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": 31,
+  "slug": "largest-ones-rectangle",
+  "title": "Largest Ones Rectangle",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Matrix",
+    "Monotonic Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "largestOnesRectangle",
+    "parameters": [
+      {
+        "name": "matrix",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "largestOnesRectangle",
+      "rust": "largest_ones_rectangle",
+      "typescript": "largestOnesRectangle"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

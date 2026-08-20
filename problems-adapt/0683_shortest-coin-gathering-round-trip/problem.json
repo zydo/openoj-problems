@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": 683,
+  "slug": "shortest-coin-gathering-round-trip",
+  "title": "Shortest Coin-Gathering Round Trip",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Tree",
+    "Graph",
+    "Topological Sort"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "shortestTour",
+    "parameters": [
+      {
+        "name": "coins",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "shortestTour",
+      "rust": "shortest_tour",
+      "typescript": "shortestTour"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

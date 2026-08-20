@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": 194,
+  "slug": "rolling-ball-maze-distance",
+  "title": "Rolling Ball Maze Distance",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Heap",
+    "Shortest Path",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "mazeRollDistance",
+    "parameters": [
+      {
+        "name": "maze",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "start",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "destination",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "mazeRollDistance",
+      "rust": "maze_roll_distance",
+      "typescript": "mazeRollDistance"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

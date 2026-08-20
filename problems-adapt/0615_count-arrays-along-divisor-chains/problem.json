@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": 615,
+  "slug": "count-arrays-along-divisor-chains",
+  "title": "Count Arrays Along Divisor Chains",
+  "difficulty": "H4",
+  "tags": [
+    "Combinatorics",
+    "Number Theory",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countDivisorChainArrays",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "maxValue",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countDivisorChainArrays",
+      "rust": "count_divisor_chain_arrays",
+      "typescript": "countDivisorChainArrays"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 470,
+  "slug": "flattest-route-across-a-grid",
+  "title": "Flattest Route Across a Grid",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Heap",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "flattestRoute",
+    "parameters": [
+      {
+        "name": "heights",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "flattestRoute",
+      "rust": "flattest_route",
+      "typescript": "flattestRoute"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

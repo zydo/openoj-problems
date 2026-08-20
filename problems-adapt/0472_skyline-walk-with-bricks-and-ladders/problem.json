@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": 472,
+  "slug": "skyline-walk-with-bricks-and-ladders",
+  "title": "Skyline Walk With Bricks and Ladders",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Greedy",
+    "Heap"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "furthestRooftop",
+    "parameters": [
+      {
+        "name": "heights",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "bricks",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "ladders",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "furthestRooftop",
+      "rust": "furthest_rooftop",
+      "typescript": "furthestRooftop"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

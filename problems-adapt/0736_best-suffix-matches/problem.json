@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 736,
+  "slug": "best-suffix-matches",
+  "title": "Best Suffix Matches",
+  "difficulty": "H3",
+  "tags": [
+    "Trie",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bestSuffixMatches",
+    "parameters": [
+      {
+        "name": "entries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "bestSuffixMatches",
+      "rust": "best_suffix_matches",
+      "typescript": "bestSuffixMatches"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

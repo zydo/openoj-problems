@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 634,
+  "slug": "fewest-interval-groups",
+  "title": "Fewest Interval Groups",
+  "difficulty": "H2",
+  "tags": [
+    "Sorting",
+    "Greedy",
+    "Heap"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestIntervalGroups",
+    "parameters": [
+      {
+        "name": "intervals",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestIntervalGroups",
+      "rust": "fewest_interval_groups",
+      "typescript": "fewestIntervalGroups"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

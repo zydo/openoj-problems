@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": 292,
+  "slug": "steps-to-gather-every-key",
+  "title": "Steps to Gather Every Key",
+  "difficulty": "H4",
+  "tags": [
+    "BFS",
+    "Graph",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stepsToGatherKeys",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "stepsToGatherKeys",
+      "rust": "steps_to_gather_keys",
+      "typescript": "stepsToGatherKeys"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

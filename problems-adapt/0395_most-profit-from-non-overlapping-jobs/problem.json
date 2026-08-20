@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": 395,
+  "slug": "most-profit-from-non-overlapping-jobs",
+  "title": "Most Profit From Non-Overlapping Jobs",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Binary Search",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxNonOverlappingProfit",
+    "parameters": [
+      {
+        "name": "startTime",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "endTime",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "profit",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "maxNonOverlappingProfit",
+      "rust": "max_non_overlapping_profit",
+      "typescript": "maxNonOverlappingProfit"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

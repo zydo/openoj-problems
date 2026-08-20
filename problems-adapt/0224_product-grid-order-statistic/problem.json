@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 224,
+  "slug": "product-grid-order-statistic",
+  "title": "Product Grid Order Statistic",
+  "difficulty": "H3",
+  "tags": [
+    "Binary Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "productGridKthValue",
+    "parameters": [
+      {
+        "name": "m",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "productGridKthValue",
+      "rust": "product_grid_kth_value",
+      "typescript": "productGridKthValue"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

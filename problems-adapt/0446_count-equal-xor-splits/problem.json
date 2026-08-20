@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": 446,
+  "slug": "count-equal-xor-splits",
+  "title": "Count Equal-XOR Splits",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countEqualXorSplits",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countEqualXorSplits",
+      "rust": "count_equal_xor_splits",
+      "typescript": "countEqualXorSplits"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

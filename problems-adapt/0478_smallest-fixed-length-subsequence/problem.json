@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 478,
+  "slug": "smallest-fixed-length-subsequence",
+  "title": "Smallest Fixed-Length Subsequence",
+  "difficulty": "H3",
+  "tags": [
+    "Monotonic Stack",
+    "Stack",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestFixedSubsequence",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "smallestFixedSubsequence",
+      "rust": "smallest_fixed_subsequence",
+      "typescript": "smallestFixedSubsequence"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

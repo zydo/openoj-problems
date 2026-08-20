@@ -1,4 +1,4 @@
-## 0003 — Longest Substring Without Repeating Characters
+## 3 — Longest Substring Without Repeating Characters
 
 - New id / title / slug: 3 / Longest Duplicate-Free Substring / `longest-duplicate-free-substring`
 - Old → new API: `lengthOfLongestSubstring` → `longestDuplicateFreeLength` (go `longestDuplicateFreeLength`, rust `longest_duplicate_free_length`, ts `longestDuplicateFreeLength`)

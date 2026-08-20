@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": 662,
+  "slug": "cheapest-closing-hour",
+  "title": "Cheapest Closing Hour",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Prefix Sum"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cheapestClosingHour",
+    "parameters": [
+      {
+        "name": "customers",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "cheapestClosingHour",
+      "rust": "cheapest_closing_hour",
+      "typescript": "cheapestClosingHour"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

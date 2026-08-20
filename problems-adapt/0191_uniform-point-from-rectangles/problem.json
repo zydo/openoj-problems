@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": 191,
+  "slug": "uniform-point-from-rectangles",
+  "title": "Uniform Point From Rectangles",
+  "difficulty": "H2",
+  "tags": [
+    "Randomized",
+    "Prefix Sum",
+    "Binary Search"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "Solution",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "rects",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "array",
+              "items": {
+                "kind": "integer",
+                "bits": 32
+              }
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "drawPoint",
+        "parameters": [],
+        "return_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 2048
+  }
+}

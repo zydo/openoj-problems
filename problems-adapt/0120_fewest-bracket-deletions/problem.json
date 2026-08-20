@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": 120,
+  "slug": "fewest-bracket-deletions",
+  "title": "Fewest Bracket Deletions",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestBracketDeletions",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "fewestBracketDeletions",
+      "rust": "fewest_bracket_deletions",
+      "typescript": "fewestBracketDeletions"
+    },
+    "comparison": "sorted"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

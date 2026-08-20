@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": 770,
+  "slug": "clearing-an-array-with-window-decrements",
+  "title": "Clearing an Array with Window Decrements",
+  "difficulty": "H2",
+  "tags": [
+    "Difference Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canClear",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "queries",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "canClear",
+      "rust": "can_clear",
+      "typescript": "canClear"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

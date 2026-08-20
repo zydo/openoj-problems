@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 746,
+  "slug": "minimum-cost-cyclic-ordering",
+  "title": "Minimum-Cost Cyclic Ordering",
+  "difficulty": "H4",
+  "tags": [
+    "Bitmask DP",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minCostOrder",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "minCostOrder",
+      "rust": "min_cost_order",
+      "typescript": "minCostOrder"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

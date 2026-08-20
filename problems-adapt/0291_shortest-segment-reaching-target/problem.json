@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": 291,
+  "slug": "shortest-segment-reaching-target",
+  "title": "Shortest Segment Reaching Target",
+  "difficulty": "H4",
+  "tags": [
+    "Prefix Sum",
+    "Monotonic Queue",
+    "Deque"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "shortestSegment",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "shortestSegment",
+      "rust": "shortest_segment",
+      "typescript": "shortestSegment"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

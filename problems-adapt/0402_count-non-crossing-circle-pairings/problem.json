@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": 402,
+  "slug": "count-non-crossing-circle-pairings",
+  "title": "Count Non-Crossing Circle Pairings",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countNonCrossingPairings",
+    "parameters": [
+      {
+        "name": "numPeople",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countNonCrossingPairings",
+      "rust": "count_non_crossing_pairings",
+      "typescript": "countNonCrossingPairings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

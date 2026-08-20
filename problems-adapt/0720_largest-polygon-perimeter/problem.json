@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": 720,
+  "slug": "largest-polygon-perimeter",
+  "title": "Largest Polygon Perimeter",
+  "difficulty": "H2",
+  "tags": [
+    "Sorting",
+    "Prefix Sum",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxPolygonPerimeter",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "maxPolygonPerimeter",
+      "rust": "max_polygon_perimeter",
+      "typescript": "maxPolygonPerimeter"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

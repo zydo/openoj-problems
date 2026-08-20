@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 452,
+  "slug": "twin-robot-cherry-harvest",
+  "title": "Twin-Robot Cherry Harvest",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "twinRobotHarvest",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "twinRobotHarvest",
+      "rust": "twin_robot_harvest",
+      "typescript": "twinRobotHarvest"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

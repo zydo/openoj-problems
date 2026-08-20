@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": 790,
+  "slug": "tightest-two-gap-pattern-match",
+  "title": "Tightest Two-Gap Pattern Match",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Z Algorithm"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "tightestMatch",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "p",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "tightestMatch",
+      "rust": "tightest_match",
+      "typescript": "tightestMatch"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

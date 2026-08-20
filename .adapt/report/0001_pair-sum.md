@@ -1,4 +1,4 @@
-## 0001 — Two Sum
+## 1 — Two Sum
 
 - New id / title / slug: 1 / Pair Sum / `pair-sum`
 - Old → new API: `twoSum` → `pairSum` (go `pairSum`, rust `pair_sum`, ts `pairSum`)

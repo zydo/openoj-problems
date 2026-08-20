@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": 438,
+  "slug": "longest-no-triple-string",
+  "title": "Longest No-Triple String",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Greedy",
+    "Heap"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestNoTripleString",
+    "parameters": [
+      {
+        "name": "a",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "b",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "c",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "longestNoTripleString",
+      "rust": "longest_no_triple_string",
+      "typescript": "longestNoTripleString"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": 312,
+  "slug": "shortest-merged-string",
+  "title": "Shortest Merged String",
+  "difficulty": "H5",
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Bitmask"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "shortestMerge",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "shortestMerge",
+      "rust": "shortest_merge",
+      "typescript": "shortestMerge"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

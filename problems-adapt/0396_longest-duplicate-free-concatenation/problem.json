@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": 396,
+  "slug": "longest-duplicate-free-concatenation",
+  "title": "Longest Duplicate-Free Concatenation",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestDuplicateFreeConcat",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestDuplicateFreeConcat",
+      "rust": "longest_duplicate_free_concat",
+      "typescript": "longestDuplicateFreeConcat"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": 341,
+  "slug": "optimal-stone-smashing",
+  "title": "Optimal Stone Smashing",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "optimalStoneSmashing",
+    "parameters": [
+      {
+        "name": "stones",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "optimalStoneSmashing",
+      "rust": "optimal_stone_smashing",
+      "typescript": "optimalStoneSmashing"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

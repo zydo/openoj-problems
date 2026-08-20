@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 260,
+  "slug": "two-colorable-graph",
+  "title": "Two-Colorable Graph",
+  "difficulty": "H2",
+  "tags": [
+    "Graph",
+    "BFS",
+    "DFS",
+    "Union Find"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "isTwoColorable",
+    "parameters": [
+      {
+        "name": "graph",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "isTwoColorable",
+      "rust": "is_two_colorable",
+      "typescript": "isTwoColorable"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

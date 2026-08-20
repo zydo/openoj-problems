@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": 40,
+  "slug": "stock-trading-with-cooldown",
+  "title": "Stock Trading With Cooldown",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stockTradingWithCooldown",
+    "parameters": [
+      {
+        "name": "prices",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "stockTradingWithCooldown",
+      "rust": "stock_trading_with_cooldown",
+      "typescript": "stockTradingWithCooldown"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

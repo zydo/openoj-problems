@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": 238,
+  "slug": "peak-booking-depth",
+  "title": "Peak Booking Depth",
+  "difficulty": "H3",
+  "tags": [
+    "Segment Tree",
+    "Balanced BST",
+    "Difference Array"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "BookingDepth",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "add",
+        "parameters": [
+          {
+            "name": "start",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "end",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

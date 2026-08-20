@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": 632,
+  "slug": "longest-bit-disjoint-subarray",
+  "title": "Longest Bit-Disjoint Subarray",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Sliding Window"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestBitDisjointSubarray",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestBitDisjointSubarray",
+      "rust": "longest_bit_disjoint_subarray",
+      "typescript": "longestBitDisjointSubarray"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

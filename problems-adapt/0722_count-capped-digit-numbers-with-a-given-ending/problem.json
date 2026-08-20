@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": 722,
+  "slug": "count-capped-digit-numbers-with-a-given-ending",
+  "title": "Count Capped-Digit Numbers With a Given Ending",
+  "difficulty": "H4",
+  "tags": [
+    "Digit DP"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countCappedNumbers",
+    "parameters": [
+      {
+        "name": "start",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      },
+      {
+        "name": "finish",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      },
+      {
+        "name": "limit",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "countCappedNumbers",
+      "rust": "count_capped_numbers",
+      "typescript": "countCappedNumbers"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

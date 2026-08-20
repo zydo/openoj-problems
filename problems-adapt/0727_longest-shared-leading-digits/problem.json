@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 727,
+  "slug": "longest-shared-leading-digits",
+  "title": "Longest Shared Leading Digits",
+  "difficulty": "H2",
+  "tags": [
+    "Trie",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestSharedPrefix",
+    "parameters": [
+      {
+        "name": "arr1",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "arr2",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestSharedPrefix",
+      "rust": "longest_shared_prefix",
+      "typescript": "longestSharedPrefix"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

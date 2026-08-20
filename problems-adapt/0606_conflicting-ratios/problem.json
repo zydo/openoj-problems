@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": 606,
+  "slug": "conflicting-ratios",
+  "title": "Conflicting Ratios",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "String",
+    "Depth First Search",
+    "Union Find",
+    "Graph"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "hasRatioConflict",
+    "parameters": [
+      {
+        "name": "pairs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      },
+      {
+        "name": "ratios",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "number"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "hasRatioConflict",
+      "rust": "has_ratio_conflict",
+      "typescript": "hasRatioConflict"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

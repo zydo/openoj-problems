@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": 477,
+  "slug": "minimum-deletions-for-a-peak-array",
+  "title": "Minimum Deletions for a Peak Array",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Array",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minimumPeakDeletions",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "minimumPeakDeletions",
+      "rust": "minimum_peak_deletions",
+      "typescript": "minimumPeakDeletions"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

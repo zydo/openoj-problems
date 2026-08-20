@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": 464,
+  "slug": "all-ones-rectangles-in-a-matrix",
+  "title": "All-Ones Rectangles in a Matrix",
+  "difficulty": "H4",
+  "tags": [
+    "Matrix",
+    "Dynamic Programming",
+    "Monotonic Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countOnesRectangles",
+    "parameters": [
+      {
+        "name": "mat",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countOnesRectangles",
+      "rust": "count_ones_rectangles",
+      "typescript": "countOnesRectangles"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

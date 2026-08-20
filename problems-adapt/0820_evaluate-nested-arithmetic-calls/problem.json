@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": 820,
+  "slug": "evaluate-nested-arithmetic-calls",
+  "title": "Evaluate Nested Arithmetic Calls",
+  "difficulty": "H2",
+  "tags": [
+    "Expression Parsing",
+    "Recursion",
+    "Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "evaluateCalls",
+    "parameters": [
+      {
+        "name": "expression",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "evaluateCalls",
+      "rust": "evaluate_calls",
+      "typescript": "evaluateCalls"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,4 +1,4 @@
-## 0004 — Median of Two Sorted Arrays
+## 4 — Median of Two Sorted Arrays
 
 - New id / title / slug: 4 / Combined Median / `combined-median`
 - Old → new API: `findMedianSortedArrays` → `combinedMedian` (go `combinedMedian`, rust `combined_median`, ts `combinedMedian`); parameters `nums1`, `nums2` → `first`, `second`

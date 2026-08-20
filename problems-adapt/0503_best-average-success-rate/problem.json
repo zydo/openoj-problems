@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 503,
+  "slug": "best-average-success-rate",
+  "title": "Best Average Success Rate",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Greedy",
+    "Heap"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bestAverageSuccessRate",
+    "parameters": [
+      {
+        "name": "batches",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "extraTrials",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "number"
+    },
+    "entrypoints": {
+      "go": "bestAverageSuccessRate",
+      "rust": "best_average_success_rate",
+      "typescript": "bestAverageSuccessRate"
+    },
+    "comparison": "close"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

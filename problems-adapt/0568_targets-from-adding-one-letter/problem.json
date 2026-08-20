@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": 568,
+  "slug": "targets-from-adding-one-letter",
+  "title": "Targets From Adding One Letter",
+  "difficulty": "H3",
+  "tags": [
+    "Bit Manipulation",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "reachableTargets",
+    "parameters": [
+      {
+        "name": "startWords",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "targetWords",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "reachableTargets",
+      "rust": "reachable_targets",
+      "typescript": "reachableTargets"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

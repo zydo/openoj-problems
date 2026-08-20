@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": 589,
+  "slug": "highest-four-node-path-score",
+  "title": "Highest Four-Node Path Score",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Graph",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bestPathScore",
+    "parameters": [
+      {
+        "name": "scores",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "bestPathScore",
+      "rust": "best_path_score",
+      "typescript": "bestPathScore"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
