@@ -563,6 +563,20 @@
       },
       "kind": "function",
       "figures": "dropped"
+    },
+    {
+      "source": "0853_car-fleet",
+      "source_id": 853,
+      "source_title": "Car Fleet",
+      "adapted": "0853_arrival-groups-without-passing",
+      "id": 853,
+      "title": "Arrival Groups Without Passing",
+      "api": {
+        "carFleet": "countArrivalGroups",
+        "car_fleet": "count_arrival_groups"
+      },
+      "kind": "function",
+      "figures": "none"
     }
   ]
 }
