@@ -17,7 +17,7 @@ impl IntervalUnion {
         // Merge every stored range that reaches the newcomer: with the
         // family disjoint, all of them start at or before `right`.
         loop {
-            let candidate = self.intervals.range(..=right).next_back().copied();
+            let candidate = self.intervals.range(..=right).next_back().map(|(&start, &end)| (start, end));
             match candidate {
                 Some((start, end)) if end >= new_left => {
                     self.covered -= (end - start + 1) as i64;

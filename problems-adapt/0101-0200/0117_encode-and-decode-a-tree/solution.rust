@@ -10,16 +10,16 @@ impl TreeCodec {
     // deserialize(serialize(root)) rebuilds the same tree. Both directions
     // are iterative, so deep trees are safe.
     pub fn serialize(&mut self, root: Option<Box<TreeNode>>) -> String {
-        let mut tokens: Vec<&str> = Vec::new();
+        let mut tokens: Vec<String> = Vec::new();
         // The queue holds None too: it emits a marker and enqueues nothing,
         // so every child slot gets exactly one token.
         let mut queue: Vec<Option<Box<TreeNode>>> = vec![root];
         let mut head = 0;
         while head < queue.len() {
             match queue[head].take() {
-                None => tokens.push("#"),
+                None => tokens.push("#".to_string()),
                 Some(node) => {
-                    tokens.push(&node.val.to_string());
+                    tokens.push(node.val.to_string());
                     queue.push(node.left);
                     queue.push(node.right);
                 }
@@ -28,7 +28,7 @@ impl TreeCodec {
         }
         // Trailing markers only mark absent slots, so trimming them keeps
         // the sequence uniquely recoverable.
-        while tokens.last() == Some(&"#") {
+        while tokens.last().map(|token| token == "#").unwrap_or(false) {
             tokens.pop();
         }
         tokens.join(",")
