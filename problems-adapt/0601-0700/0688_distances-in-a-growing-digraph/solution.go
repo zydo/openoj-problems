@@ -1,10 +1,5 @@
 package main
 
-import (
-	"container/heap"
-	"math"
-)
-
 type Graph struct {
 	adjacency [][][2]int
 }
@@ -24,22 +19,43 @@ func (design *Graph) addEdge(edge []int) {
 	design.adjacency[source] = append(design.adjacency[source], [2]int{target, cost})
 }
 
-type frontierItem struct {
-	distance int
-	node     int
+// minHeap orders (distance, node) pairs by distance. Sift up on push,
+// sift down on pop — the classic array-backed binary heap.
+type minHeap [][2]int
+
+func (heap *minHeap) push(item [2]int) {
+	*heap = append(*heap, item)
+	for child := len(*heap) - 1; child > 0; {
+		parent := (child - 1) / 2
+		if (*heap)[parent][0] <= (*heap)[child][0] {
+			break
+		}
+		(*heap)[parent], (*heap)[child] = (*heap)[child], (*heap)[parent]
+		child = parent
+	}
 }
 
-type frontier []frontierItem
-
-func (f frontier) Len() int            { return len(f) }
-func (f frontier) Less(i, j int) bool  { return f[i].distance < f[j].distance }
-func (f frontier) Swap(i, j int)       { f[i], f[j] = f[j], f[i] }
-func (f *frontier) Push(item any)      { *f = append(*f, item.(frontierItem)) }
-func (f *frontier) Pop() any {
-	old := *f
-	item := old[len(old)-1]
-	*f = old[:len(old)-1]
-	return item
+func (heap *minHeap) pop() [2]int {
+	top := (*heap)[0]
+	size := len(*heap) - 1
+	(*heap)[0] = (*heap)[size]
+	*heap = (*heap)[:size]
+	for parent := 0; ; {
+		left := 2*parent + 1
+		if left >= size {
+			break
+		}
+		smallest := left
+		if right := left + 1; right < size && (*heap)[right][0] < (*heap)[left][0] {
+			smallest = right
+		}
+		if (*heap)[parent][0] <= (*heap)[smallest][0] {
+			break
+		}
+		(*heap)[parent], (*heap)[smallest] = (*heap)[smallest], (*heap)[parent]
+		parent = smallest
+	}
+	return top
 }
 
 func (design *Graph) shortestPath(node1 int, node2 int) int {
@@ -48,30 +64,31 @@ func (design *Graph) shortestPath(node1 int, node2 int) int {
 	}
 	// Every cost is positive, so Dijkstra applies: the min-heap
 	// hands out nodes in settle order by tentative distance.
+	const unreachable = int(^uint(0) >> 1)
 	distance := make([]int, len(design.adjacency))
 	for i := range distance {
-		distance[i] = math.MaxInt64
+		distance[i] = unreachable
 	}
 	distance[node1] = 0
-	queue := &frontier{{0, node1}}
-	for queue.Len() > 0 {
-		item := heap.Pop(queue).(frontierItem)
+	queue := &minHeap{{0, node1}}
+	for len(*queue) > 0 {
+		item := queue.pop()
 		// Stale entry: the node was already settled through a
 		// cheaper route, so skip it.
-		if item.distance > distance[item.node] {
+		if item[0] > distance[item[1]] {
 			continue
 		}
 		// Popping node2 settles it, so its distance is final here.
-		if item.node == node2 {
-			return item.distance
+		if item[1] == node2 {
+			return item[0]
 		}
-		for _, edge := range design.adjacency[item.node] {
-			candidate := item.distance + edge[1]
+		for _, edge := range design.adjacency[item[1]] {
+			candidate := item[0] + edge[1]
 			// Only improving relaxations push a fresh entry, so any
 			// entry goes stale at most once.
 			if candidate < distance[edge[0]] {
 				distance[edge[0]] = candidate
-				heap.Push(queue, frontierItem{candidate, edge[0]})
+				queue.push([2]int{candidate, edge[0]})
 			}
 		}
 	}

@@ -36,12 +36,21 @@ type FrequencyExtremes struct {
 }
 
 func NewFrequencyExtremesTyped() *FrequencyExtremes {
-	extremes := &FrequencyExtremes{nodes: make(map[string]*freqNode)}
-	extremes.first = newFreqBucket(0)
-	extremes.last = newFreqBucket(0)
-	extremes.first.next = extremes.last
-	extremes.last.prev = extremes.first
+	extremes := &FrequencyExtremes{}
+	extremes.ensure()
 	return extremes
+}
+
+// The judge assembles this class from its zero value, so every entry point
+// seeds the map and the sentinel buckets on first use.
+func (design *FrequencyExtremes) ensure() {
+	if design.nodes == nil {
+		design.nodes = make(map[string]*freqNode)
+		design.first = newFreqBucket(0)
+		design.last = newFreqBucket(0)
+		design.first.next = design.last
+		design.last.prev = design.first
+	}
 }
 
 func (design *FrequencyExtremes) unlinkNode(node *freqNode) {
@@ -101,6 +110,7 @@ func (design *FrequencyExtremes) move(node *freqNode, target int, up bool) {
 }
 
 func (design *FrequencyExtremes) increase(key string) {
+	design.ensure()
 	node, exists := design.nodes[key]
 	if !exists {
 		node = &freqNode{key: key}
@@ -119,6 +129,7 @@ func (design *FrequencyExtremes) increase(key string) {
 }
 
 func (design *FrequencyExtremes) decrease(key string) {
+	design.ensure()
 	node := design.nodes[key]
 	if node.bucket.count == 1 {
 		design.unlinkNode(node)
@@ -132,6 +143,7 @@ func (design *FrequencyExtremes) decrease(key string) {
 }
 
 func (design *FrequencyExtremes) highestKey() string {
+	design.ensure()
 	bucket := design.last.prev
 	if bucket == design.first {
 		return ""
@@ -140,6 +152,7 @@ func (design *FrequencyExtremes) highestKey() string {
 }
 
 func (design *FrequencyExtremes) lowestKey() string {
+	design.ensure()
 	bucket := design.first.next
 	if bucket == design.last {
 		return ""

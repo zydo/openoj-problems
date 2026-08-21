@@ -1,0 +1,36 @@
+// The pristine original is kept untouched; every shuffle() runs
+// Fisher-Yates on a fresh copy — slot i (from the top down) swaps with a
+// uniformly chosen slot in [0, i] — so each of the n! orderings is exactly
+// equally likely, and reset() is a plain copy. Uniform picks come from a
+// splitmix64 stream; std ships no RNG, so the tiny generator lives here.
+pub struct Solution {
+    original: Vec<i32>,
+    random: u64,
+}
+
+impl Solution {
+    pub fn new(nums: Vec<i32>) -> Self {
+        Solution { original: nums, random: 0x9E3779B97F4A7C15 }
+    }
+
+    fn next_u64(&mut self) -> u64 {
+        self.random = self.random.wrapping_add(0x9E3779B97F4A7C15);
+        let mut z = self.random;
+        z = (z ^ (z >> 30)).wrapping_mul(0xBF58476D1CE4E5B9);
+        z = (z ^ (z >> 27)).wrapping_mul(0x94D049BB133111EB);
+        z ^ (z >> 31)
+    }
+
+    pub fn reset(&mut self) -> Vec<i32> {
+        self.original.clone()
+    }
+
+    pub fn shuffle(&mut self) -> Vec<i32> {
+        let mut array = self.original.clone();
+        for i in (1..array.len()).rev() {
+            let j = (self.next_u64() % (i as u64 + 1)) as usize;
+            array.swap(i, j);
+        }
+        array
+    }
+}
