@@ -1,5 +1,5 @@
 impl Solution {
-    pub fn count_hidden_ships(ocean: &mut Ocean, top_right: Vec<i32>, bottom_left: Vec<i32>) -> i32 {
+    pub fn count_hidden_ships(ocean: &mut Ocean, topRight: Vec<i32>, bottomLeft: Vec<i32>) -> i32 {
         panic!("TODO")
     }
 }

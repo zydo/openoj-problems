@@ -1,6 +1,6 @@
 class Solution {
 
-    public int firstColumnWithOne(BitMatrix matrix) {
+    public int firstColumnWithOne(BitMatrix bitMatrix) {
         throw new UnsupportedOperationException("TODO");
     }
 }

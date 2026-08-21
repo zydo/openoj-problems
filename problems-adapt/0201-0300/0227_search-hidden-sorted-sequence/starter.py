@@ -1,3 +1,3 @@
 class Solution:
-    def findInSequence(self, reader: SequenceReader, target: int) -> int:
+    def findInSequence(self, sequenceReader: SequenceReader, target: int) -> int:
         raise NotImplementedError("TODO")

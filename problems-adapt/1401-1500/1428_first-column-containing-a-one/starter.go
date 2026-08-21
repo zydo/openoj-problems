@@ -2,6 +2,6 @@ package main
 
 type Solution struct{}
 
-func (solution *Solution) firstColumnWithOne(matrix *BitMatrix) int {
+func (solution *Solution) firstColumnWithOne(bitMatrix *BitMatrix) int {
 	panic("TODO")
 }

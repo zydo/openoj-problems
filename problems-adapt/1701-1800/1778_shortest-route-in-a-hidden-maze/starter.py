@@ -1,3 +1,3 @@
 class Solution:
-    def findShortestRoute(self, maze: MazeController) -> int:
+    def findShortestRoute(self, mazeController: MazeController) -> int:
         raise NotImplementedError("TODO")

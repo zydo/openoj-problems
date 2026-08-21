@@ -1,5 +1,5 @@
 class Solution {
-    firstMatchIndex(stream, pattern) {
+    firstMatchIndex(bitStream, pattern) {
         throw new Error("TODO");
     }
 }

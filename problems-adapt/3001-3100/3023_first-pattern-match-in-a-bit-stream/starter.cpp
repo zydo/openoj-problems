@@ -2,5 +2,5 @@ class BitStream;
 
 class Solution {
   public:
-    int firstMatchIndex(BitStream &stream, vector<int> &pattern);
+    int firstMatchIndex(BitStream &bitStream, vector<int> pattern);
 };

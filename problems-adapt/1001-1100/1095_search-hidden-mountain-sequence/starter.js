@@ -1,5 +1,5 @@
 class Solution {
-    findInMountain(reader, target) {
+    findInMountain(mountainReader, target) {
         throw new Error("TODO");
     }
 }

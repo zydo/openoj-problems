@@ -534,61 +534,117 @@ INTERACTIVE_ORACLES = {
 
 def _generate_interactive(invocation: dict, language: str) -> str:
     """Interactive problems: the solution method receives an oracle object
-    (the judge constructs it from the case data), plus any auxiliary
-    arguments declared in invocation["parameters"]. python3 + java only.
-    Schema: {"type": "interactive", "class_name", "method", "oracle":
-    "GridMaster", "oracle_methods": [{name, parameters, return_type?}],
-    "parameters": [...auxiliary args...], "return_type", "query_limit"?}.
-    A void method declares {"kind": "void"}."""
-    if language not in ("python3", "java"):
-        raise ValueError(f"Interactive problems support python3 and java, not {language}")
-    oracle = invocation.get("oracle")
-    if oracle not in INTERACTIVE_ORACLES:
+    (the problem's provided/ sources, assembled by the judge), plus any
+    auxiliary arguments declared in invocation["parameters"]. All seven
+    languages. The oracle type comes from invocation.provided.oracle
+    (the manifest) when present, with INTERACTIVE_ORACLES as the legacy
+    fallback; per-language method names come from entrypoints. Schema:
+    {"type": "interactive", "class_name", "method", "entrypoints"?,
+    "oracle", "oracle_methods": [...], "parameters": [...auxiliary...],
+    "return_type", "query_limit"?}. A void method declares
+    {"kind": "void"} and is judged by the oracle's verdict()."""
+    provided = (invocation.get("provided") or {}).get("oracle")
+    oracle = invocation.get("oracle") or (provided or {}).get("class")
+    if provided:
+        parameter = (provided.get("parameter") or oracle[0].lower() + oracle[1:]).lstrip("_") or "oracle"
+    elif oracle in INTERACTIVE_ORACLES:
+        parameter = INTERACTIVE_ORACLES[oracle]["parameter"]
+    else:
         raise ValueError(f"Unsupported interactive oracle: {oracle}")
-    types = INTERACTIVE_ORACLES[oracle]
     class_name = invocation["class_name"]
-    method = invocation["method"]
+    entrypoints = invocation.get("entrypoints") or {}
+    method = entrypoints.get(language, invocation["method"])
     auxiliary = [
-        (parameter["name"], parameter["value_type"])
-        for parameter in invocation.get("parameters", [])
+        (parameter_["name"], parameter_["value_type"])
+        for parameter_ in invocation.get("parameters", [])
     ]
     returns = invocation.get("return_type") or {"kind": "integer", "bits": 32}
-    if returns.get("kind") == "void":
-        python_return, java_return = "None", "void"
-    else:
-        python_return, java_return = python_type(returns), java_type(returns)
+    is_void = returns.get("kind") == "void"
 
     if language == "python3":
-        oracle_argument = f"{types['parameter']}: {types['python']}"
         signature = ", ".join(
-            ["self", oracle_argument, *(f"{name}: {python_type(spec)}" for name, spec in auxiliary)]
+            ["self", f"{parameter}: {oracle}", *(f"{name}: {python_type(spec)}" for name, spec in auxiliary)]
         )
-        blocks = _py_imports()
+        blocks = list(_py_imports())
         blocks.append(f"class {class_name}:\n")
-        blocks.append(f"    def {method}({signature}) -> {python_return}:\n")
+        blocks.append(f"    def {method}({signature}) -> {'None' if is_void else python_type(returns)}:\n")
         blocks.append('        raise NotImplementedError("TODO")\n')
         return "".join(blocks)
 
-    # java — the oracle API is documented in the statement; the starter's
-    # signature references the oracle type from the judge classpath.
-    oracle_argument = f"{types['java']} {types['parameter']}"
-    signature = ", ".join(
-        [oracle_argument, *(f"{java_type(spec)} {name}" for name, spec in auxiliary)]
-    )
-    chunks = [f"class {class_name} {{\n"]
-    chunks.append(f"    public {java_return} {method}({signature}) {{\n")
-    chunks.append('        throw new UnsupportedOperationException("TODO");\n')
-    chunks.append("    }\n}\n")
-    return "".join(chunks)
+    if language == "java":
+        signature = ", ".join(
+            [f"{oracle} {parameter}", *(f"{java_type(spec)} {name}" for name, spec in auxiliary)]
+        )
+        chunks = [f"class {class_name} {{\n"]
+        chunks.append(f"    public {'void' if is_void else java_type(returns)} {method}({signature}) {{\n")
+        chunks.append('        throw new UnsupportedOperationException("TODO");\n')
+        chunks.append("    }\n}")
+        return "".join(chunks)
 
+    if language == "cpp":
+        signature = ", ".join(
+            [f"{oracle}& {parameter}", *(f"{cpp_type(spec)} {name}" for name, spec in auxiliary)]
+        )
+        blocks = [f"class {oracle};\n\n"]
+        blocks.append(f"class {class_name} {{\npublic:\n")
+        blocks.append(f"    {'void' if is_void else cpp_type(returns)} {method}({signature});\n")
+        blocks.append("};\n")
+        return "".join(blocks)
 
+    if language == "go":
+        go_method = entrypoints.get("go", method)
+        signature = ", ".join(
+            [f"{parameter} *{oracle}", *(f"{name} {go_type(spec)}" for name, spec in auxiliary)]
+        )
+        return (
+            "package main\n\n"
+            f"type {class_name} struct{{}}\n\n"
+            f"func (solution *{class_name}) {go_method}({signature}) {'void' if is_void else go_type(returns)} {{\n"
+            '\tpanic("TODO")\n'
+            "}\n"
+        )
+
+    if language == "rust":
+        rust_method = entrypoints.get("rust", method)
+        signature = ", ".join(
+            [f"{parameter}: &mut {oracle}", *(f"{name}: {rust_type(spec)}" for name, spec in auxiliary)]
+        )
+        return (
+            f"impl {class_name} {{\n"
+            f"    pub fn {rust_method}({signature}) -> {'()' if is_void else rust_type(returns)} {{\n"
+            '        panic!("TODO")\n'
+            "    }\n"
+            "}\n"
+        )
+
+    if language in ("javascript", "typescript"):
+        signature = ", ".join(
+            [parameter, *(name for name, _ in auxiliary)]
+        )
+        typed = ""
+        if language == "typescript":
+            signature = ", ".join(
+                [f"{parameter}: {oracle}", *(f"{name}: {typescript_type(spec)}" for name, spec in auxiliary)]
+            )
+            typed = f": {'void' if is_void else typescript_type(returns)}"
+        return (
+            f"class {class_name} {{\n"
+            f"    {method}({signature}){typed} {{\n"
+            '        throw new Error("TODO");\n'
+            "    }\n"
+            "}\n"
+        )
+
+    raise ValueError(f"Unsupported language for interactive starters: {language}")
 def starter_files(invocation: dict) -> dict[str, str]:
     invocation_type = invocation.get("type", "function")
     if invocation_type == "sql":
         return {"sql": generate(invocation, "sql")}
     if invocation_type == "design":
         return {language: generate(invocation, language) for language in ("python3", "java")}
-    if invocation_type in ("interactive", "concurrent"):
+    if invocation_type == "interactive":
+        return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
+    if invocation_type == "concurrent":
         return {language: generate(invocation, language) for language in ("python3", "java")}
     return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
 

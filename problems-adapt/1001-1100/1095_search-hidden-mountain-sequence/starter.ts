@@ -1,5 +1,5 @@
 class Solution {
-    findInMountain(reader: MountainReader, target: number): number {
+    findInMountain(mountainReader: MountainReader, target: number): number {
         throw new Error("TODO");
     }
 }

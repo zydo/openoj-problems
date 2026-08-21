@@ -1,5 +1,5 @@
 class Solution {
-    findShortestRoute(maze) {
+    findShortestRoute(mazeController) {
         throw new Error("TODO");
     }
 }

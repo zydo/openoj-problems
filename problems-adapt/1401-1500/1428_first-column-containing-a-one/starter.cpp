@@ -2,5 +2,5 @@ class BitMatrix;
 
 class Solution {
   public:
-    int firstColumnWithOne(BitMatrix &matrix);
+    int firstColumnWithOne(BitMatrix &bitMatrix);
 };

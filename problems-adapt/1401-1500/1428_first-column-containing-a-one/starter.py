@@ -1,3 +1,3 @@
 class Solution:
-    def firstColumnWithOne(self, matrix: BitMatrix) -> int:
+    def firstColumnWithOne(self, bitMatrix: BitMatrix) -> int:
         raise NotImplementedError("TODO")

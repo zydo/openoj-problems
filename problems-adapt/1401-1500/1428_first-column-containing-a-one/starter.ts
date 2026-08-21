@@ -1,5 +1,5 @@
 class Solution {
-    firstColumnWithOne(matrix: BitMatrix): number {
+    firstColumnWithOne(bitMatrix: BitMatrix): number {
         throw new Error("TODO");
     }
 }

@@ -1,5 +1,5 @@
 class Solution {
-    findInSequence(reader, target) {
+    findInSequence(sequenceReader, target) {
         throw new Error("TODO");
     }
 }
