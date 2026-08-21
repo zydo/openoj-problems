@@ -1811,13 +1811,13 @@
     "title": "End-Picking Game Winner"
   },
   "0489_robot-room-cleaner": {
-    "adapted": "0489_sweep-the-hidden-room",
+    "adapted": "0830_sweep-the-hidden-room",
     "api": {
       "Robot": "Sweeper",
       "cleanRoom": "sweepRoom",
       "clean_room": "sweep_room"
     },
-    "id": 489,
+    "id": 830,
     "kind": "interactive",
     "title": "Sweep the Hidden Room"
   },

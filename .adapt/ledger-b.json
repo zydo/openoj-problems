@@ -3073,8 +3073,8 @@
       "source": "0489_robot-room-cleaner",
       "source_id": 489,
       "source_title": "Robot Room Cleaner",
-      "adapted": "0489_sweep-the-hidden-room",
-      "id": 489,
+      "adapted": "0830_sweep-the-hidden-room",
+      "id": 830,
       "title": "Sweep the Hidden Room",
       "api": {
         "cleanRoom": "sweepRoom",

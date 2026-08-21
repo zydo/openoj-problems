@@ -1,6 +1,6 @@
-## 489 — Robot Room Cleaner
+## 830 — Robot Room Cleaner
 
-- New id / title / slug: 489 / Sweep the Hidden Room / `sweep-the-hidden-room`
+- New id / title / slug: 830 / Sweep the Hidden Room / `sweep-the-hidden-room`
 - Old → new API: `cleanRoom` → `sweepRoom` (go `sweepRoom`, rust `sweep_room`); **oracle `Robot` → `Sweeper`**; the four oracle operations (`move`, `turnLeft`, `turnRight`, `clean`) keep their names — they are the task's vocabulary
 - Core algorithm / difficulty: iterative spiral DFS over a hidden grid with an explicit frame stack and a five-call back-out / H3 (unchanged)
 - Statement rewritten from spec: yes (a cleaning machine on a hidden floor plan; judging paragraph explains the cleaned-set verdict)
