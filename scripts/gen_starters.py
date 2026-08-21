@@ -348,63 +348,137 @@ def generate(invocation: dict, language: str) -> str:
 
 
 def _generate_design(invocation: dict, language: str) -> str:
-    """Design (class) problems: only python3 and java — the typed wrappers do
-    not implement the actions/params protocol. Schema:
-        {"type": "design", "class_name": "NumArray",
-         "constructor": {"parameters": [...]},          # same shape as function
-         "methods": [{"name": ..., "parameters": [...], # return_type omitted
-                      "return_type": {...}}]}           # → void / None
-    """
-    if language not in ("python3", "java"):
-        raise ValueError(f"Design problems support python3 and java, not {language}")
+    """Design (class) problems in every language. The class API is judged
+    through the actions/params replay protocol; constructors and methods
+    follow the per-language conventions the judge's design wrapper
+    generates (cpp: declared class with methods; go: NewXTyped +
+    methods; rust: struct + impl with new; js/ts: class with
+    constructor)."""
     class_name = invocation["class_name"]
     constructor = invocation.get("constructor", {}).get("parameters", [])
     methods = invocation.get("methods", [])
-    all_specs = [spec.get("value_type") for spec in constructor]
-    all_specs += [spec for method in methods for spec in method.get("parameters", [])]
-    all_specs += [method.get("return_type") for method in methods if method.get("return_type")]
+    entrypoints = invocation.get("entrypoints") or {}
+    constructor_names = [p["name"] for p in constructor]
+    constructor_specs = [p.get("value_type") for p in constructor]
 
     if language == "python3":
-        blocks = _py_imports()
-        blocks.append(f"class {class_name}:\n")
+        blocks = list(_py_imports())
         ctor_signature = ", ".join(
-            ["self", *(f"{parameter['name']}: {python_type(parameter['value_type'])}" for parameter in constructor)]
+            ["self", *(f"{name}: {python_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))]
         )
-        blocks.append(f"    def __init__({ctor_signature}) -> None:\n")
-        blocks.append('        raise NotImplementedError("TODO")\n')
+        blocks.append(f"class {class_name}:\n")
+        blocks.append(f"    def __init__({ctor_signature}):\n")
+        blocks.append("        pass\n")
         for method in methods:
+            name = method["name"]
+            specs = [p.get("value_type") for p in method.get("parameters", [])]
+            names = [p["name"] for p in method.get("parameters", [])]
+            returns = method.get("return_type")
             signature = ", ".join(
-                ["self", *(f"{parameter['name']}: {python_type(parameter['value_type'])}" for parameter in method.get("parameters", []))]
+                ["self", *(f"{n}: {python_type(s)}" for n, s in zip(names, specs))]
             )
-            returns = python_type(method["return_type"]) if method.get("return_type") else "None"
-            blocks.append(f"\n    def {method['name']}({signature}) -> {returns}:\n")
-            blocks.append('        raise NotImplementedError("TODO")\n')
+            ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {python_type(returns)}"
+            blocks.append(f"\n    def {name}({signature}){ret}:\n")
+            blocks.append("        pass\n")
         return "".join(blocks)
 
-    # java
-    chunks = []
-    if any(_contains_struct(spec) for spec in all_specs if spec):
-        chunks.append("import java.util.List;\n\n")
-    chunks.append(f"class {class_name} {{\n")
-    ctor_signature = ", ".join(
-        f"{java_type(parameter['value_type'])} {parameter['name']}" for parameter in constructor
-    )
-    chunks.append(f"    public {class_name}({ctor_signature}) {{\n")
-    chunks.append('        throw new UnsupportedOperationException("TODO");\n')
-    chunks.append("    }\n")
-    for method in methods:
-        signature = ", ".join(
-            f"{java_type(parameter['value_type'])} {parameter['name']}"
-            for parameter in method.get("parameters", [])
+    if language == "java":
+        ctor_signature = ", ".join(
+            f"{java_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs)
         )
-        returns = java_type(method["return_type"]) if method.get("return_type") else "void"
-        chunks.append(f"\n    public {returns} {method['name']}({signature}) {{\n")
-        chunks.append('        throw new UnsupportedOperationException("TODO");\n')
-        chunks.append("    }\n")
-    chunks.append("}\n")
-    return "".join(chunks)
+        chunks = [f"class {class_name} {{\n"]
+        chunks.append(f"    public {class_name}({ctor_signature}) {{\n    }}\n")
+        for method in methods:
+            name = method["name"]
+            specs = [p.get("value_type") for p in method.get("parameters", [])]
+            names = [p["name"] for p in method.get("parameters", [])]
+            returns = method.get("return_type")
+            ret = "void" if (returns is None or returns.get("kind") == "void") else java_type(returns)
+            signature = ", ".join(f"{java_type(s)} {n}" for n, s in zip(names, specs))
+            chunks.append(f"\n    public {ret} {name}({signature}) {{\n    }}\n")
+        chunks.append("}\n")
+        return "".join(chunks)
 
+    if language == "cpp":
+        lines = [f"class {class_name} {{\n  public:\n"]
+        ctor_args = ", ".join(
+            f"{cpp_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs)
+        )
+        lines.append(f"    {class_name}({ctor_args});\n")
+        for method in methods:
+            name = method["name"]
+            cpp_name = entrypoints.get(f"cpp.{name}", name)
+            specs = [p.get("value_type") for p in method.get("parameters", [])]
+            names = [p["name"] for p in method.get("parameters", [])]
+            returns = method.get("return_type")
+            ret = "void" if (returns is None or returns.get("kind") == "void") else cpp_type(returns)
+            args = ", ".join(f"{cpp_type(s)} {n}" for n, s in zip(names, specs))
+            lines.append(f"    {ret} {cpp_name}({args});\n")
+        lines.append("};\n")
+        return "".join(lines)
 
+    if language == "go":
+        out = ["package main\n\n", f"type {class_name} struct{{}}\n\n"]
+        ctor_args = ", ".join(
+            f"{name} {go_type(spec)}" for name, spec in zip(constructor_names, constructor_specs)
+        )
+        out.append(f"func New{class_name}Typed({ctor_args}) *{class_name} {{\n\tpanic(\"TODO\")\n}}\n")
+        for method in methods:
+            name = method["name"]
+            go_name = entrypoints.get(f"go.{name}", name)
+            specs = [p.get("value_type") for p in method.get("parameters", [])]
+            names = [p["name"] for p in method.get("parameters", [])]
+            returns = method.get("return_type")
+            args = ", ".join(f"{n} {go_type(s)}" for n, s in zip(names, specs))
+            ret = "" if (returns is None or returns.get("kind") == "void") else f" {go_type(returns)}"
+            out.append(f"\nfunc (design *{class_name}) {go_name}({args}){ret} {{\n\tpanic(\"TODO\")\n}}\n")
+        return "".join(out)
+
+    if language == "rust":
+        out = [f"pub struct {class_name};\n\nimpl {class_name} {{\n"]
+        ctor_args = ", ".join(
+            f"{name}: {rust_type(spec)}" for name, spec in zip(constructor_names, constructor_specs)
+        )
+        out.append(f"    pub fn new({ctor_args}) -> Self {{\n        panic!(\"TODO\")\n    }}\n")
+        for method in methods:
+            name = method["name"]
+            rust_name = entrypoints.get(f"rust.{name}", name)
+            specs = [p.get("value_type") for p in method.get("parameters", [])]
+            names = [p["name"] for p in method.get("parameters", [])]
+            returns = method.get("return_type")
+            args = ", ".join(f"{n}: {rust_type(s)}" for n, s in zip(names, specs))
+            ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {rust_type(returns)}"
+            body = "()" if (returns is None or returns.get("kind") == "void") else "0"
+            out.append(f"\n    pub fn {rust_name}(&mut self{', ' + args if args else ''}){ret} {{\n        panic!(\"TODO\")\n    }}\n")
+        out.append("}\n")
+        return "".join(out)
+
+    if language in ("javascript", "typescript"):
+        typed = language == "typescript"
+        ctor_args = ", ".join(
+            (f"{name}: {typescript_type(spec)}" if typed else name)
+            for name, spec in zip(constructor_names, constructor_specs)
+        )
+        lines = [f"class {class_name} {{\n"]
+        lines.append(f"    constructor({ctor_args}) {{\n")
+        if not typed:
+            lines.append("        throw new Error(\"TODO\");\n")
+        lines.append("    }\n")
+        for method in methods:
+            name = method["name"]
+            specs = [p.get("value_type") for p in method.get("parameters", [])]
+            names = [p["name"] for p in method.get("parameters", [])]
+            returns = method.get("return_type")
+            args = ", ".join((f"{n}: {typescript_type(s)}" if typed else n) for n, s in zip(names, specs))
+            ret = ("" if (returns is None or returns.get("kind") == "void") else f": {typescript_type(returns)}") if typed else ""
+            lines.append(f"\n    {name}({args}){ret} {{\n")
+            if not typed:
+                lines.append("        throw new Error(\"TODO\");\n")
+            lines.append("    }\n")
+        lines.append("}\n")
+        return "".join(lines)
+
+    raise ValueError(f"Unsupported language for design starters: {language}")
 def _generate_concurrent(invocation: dict, language: str) -> str:
     """Concurrency problems: python3 + java only, same class shape as design.
     A parameter of kind "callback" is LeetCode's release callback — the judge
@@ -641,7 +715,7 @@ def starter_files(invocation: dict) -> dict[str, str]:
     if invocation_type == "sql":
         return {"sql": generate(invocation, "sql")}
     if invocation_type == "design":
-        return {language: generate(invocation, language) for language in ("python3", "java")}
+        return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
     if invocation_type == "interactive":
         return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
     if invocation_type == "concurrent":
