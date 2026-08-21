@@ -63,7 +63,11 @@
         ]
       }
     ],
-    "comparison": "exact"
+    "comparison": "exact",
+    "entrypoints": {
+      "go.get": "get",
+      "go.put": "put"
+    }
   },
   "limits": {
     "time_ms": 1500,
