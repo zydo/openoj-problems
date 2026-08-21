@@ -1,6 +1,15 @@
 # Solutions — Summands To A Target
 
-## Backtracking with a start index
+Both solutions enumerate the same ways — each multiset of candidate copies
+summing to `target`, once — and both pin the enumeration with the same idea:
+process candidates in array order and never look backwards, so of all the
+orderings of a multiset exactly one can ever be assembled. The backtracking
+walks the search tree depth first, discovering a way each time a path owes
+nothing. The bottom-up table turns that inside out: it settles small amounts
+first and builds larger ones by extending already-finished ways, so no
+branch is ever walked twice and the recursion disappears.
+
+## Backtracking
 
 The recursion carries exactly two pieces of state: `remaining`, how much of the
 target is still owed after the summands already on the path, and `start`, the
@@ -39,3 +48,33 @@ tree and the cost of copying each hit. The stack and the working path are the
 only space beyond the output.
 
 **Complexity:** `O(n^(T/M))` time, `O(T/M)` space.
+
+## Bottom Up
+
+The recursion asks one cell of a table that is never written twice: "which
+ways reach amount `t` using the first `k` candidates?" The bottom-up sweep
+answers those cells directly, smallest amount first. `table[t]` lists the ways
+reaching `t`, seeded by `table[0] = [ [] ]` — owing nothing has the empty way.
+Then one pass per candidate — the array-order guarantee that replaced the
+start index — walks amounts ascending and, at each `t`, appends `value` to a
+copy of every way in `table[t - value]`.
+
+Two rules of that loop do the backtracking's work. Ascending amounts *within*
+a pass let a way already containing this candidate be extended by it again —
+`table[4]` gains `[2]` and later `[2,2]` gains from `table[2]` — which is the
+unlimited reuse. And the candidate-outer order pins each multiset to a single
+assembly: a way is always a run of copies of some candidate, then a run of the
+next, so `[2,2,4]` can be built but `[4,2,2]` never forms. Nothing is memoized
+across branches; a way once recorded at `table[t]` simply sits there, ready
+for every later candidate that needs it.
+
+What the table cannot do is emit the ways in the order the search tree meets
+them — its rows fill in amount order — so a final sort orders `table[target]`
+lexicographically by candidate position, which is exactly the discovery order
+of the depth-first walk (a way can never be a prefix of another, since the
+values are positive). Each cell extension copies one way once, so the whole
+sweep costs `O(n · T · W)` where `W` is the number of ways recorded; the table
+itself is the only storage beyond the output.
+
+**Complexity:** `O(n · T · W)` time, `O(T · W)` space, with `W` the number of
+ways found.

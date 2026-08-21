@@ -2811,13 +2811,13 @@
     "title": "One-Swap Word Groups"
   },
   "0843_guess-the-word": {
-    "adapted": "0843_unmask-the-hidden-word",
+    "adapted": "0831_unmask-the-hidden-word",
     "api": {
       "Master": "Interrogator",
       "findSecretWord": "unmaskWord",
       "find_secret_word": "unmask_word"
     },
-    "id": 843,
+    "id": 831,
     "kind": "interactive",
     "title": "Unmask the Hidden Word"
   },
@@ -3513,13 +3513,13 @@
     "title": "Seat Load on a Route"
   },
   "1095_find-in-mountain-array": {
-    "adapted": "1095_search-hidden-mountain-sequence",
+    "adapted": "0832_search-hidden-mountain-sequence",
     "api": {
       "MountainArray": "MountainReader",
       "findInMountainArray": "findInMountain",
       "find_in_mountain_array": "find_in_mountain"
     },
-    "id": 1095,
+    "id": 832,
     "kind": "interactive",
     "title": "Search a Hidden Mountain Sequence"
   },
@@ -3825,13 +3825,13 @@
     "title": "Fewest Overwrites for a Rising Array"
   },
   "1188_design-bounded-blocking-queue": {
-    "adapted": "1188_blocking-bounded-buffer",
+    "adapted": "0833_blocking-bounded-buffer",
     "api": {
       "BoundedBlockingQueue": "BoundedBuffer",
       "dequeue": "take",
       "enqueue": "put"
     },
-    "id": 1188,
+    "id": 833,
     "kind": "concurrent",
     "title": "Blocking Bounded Buffer"
   },
@@ -4075,13 +4075,13 @@
     "title": "Count Walks Back to the Start"
   },
   "1274_number-of-ships-in-a-rectangle": {
-    "adapted": "1274_count-hidden-ships-in-a-rectangle",
+    "adapted": "0834_count-hidden-ships-in-a-rectangle",
     "api": {
       "Sea": "Ocean",
       "countShips": "countHiddenShips",
       "sea": "ocean"
     },
-    "id": 1274,
+    "id": 834,
     "kind": "interactive",
     "title": "Count Hidden Ships in a Rectangle"
   },
@@ -4498,13 +4498,13 @@
     "title": "Bounded Gap Subsequence Sum"
   },
   "1428_leftmost-column-with-at-least-a-one": {
-    "adapted": "1428_first-column-containing-a-one",
+    "adapted": "0835_first-column-containing-a-one",
     "api": {
       "BinaryMatrix": "BitMatrix",
       "binaryMatrix": "matrix",
       "leftMostColumnWithOne": "firstColumnWithOne"
     },
-    "id": 1428,
+    "id": 835,
     "kind": "interactive",
     "title": "First Column Containing a One"
   },
@@ -5114,12 +5114,12 @@
     "title": "Rear-End Collision Times"
   },
   "1778_shortest-path-in-a-hidden-grid": {
-    "adapted": "1778_shortest-route-in-a-hidden-maze",
+    "adapted": "0836_shortest-route-in-a-hidden-maze",
     "api": {
       "GridMaster": "MazeController",
       "findShortestPath": "findShortestRoute"
     },
-    "id": 1778,
+    "id": 836,
     "kind": "interactive",
     "title": "Shortest Route in a Hidden Maze"
   },
@@ -5167,12 +5167,12 @@
     "title": "Count Pairs Within an XOR Band"
   },
   "1810_minimum-path-cost-in-a-hidden-grid": {
-    "adapted": "1810_cheapest-route-in-a-hidden-maze",
+    "adapted": "0837_cheapest-route-in-a-hidden-maze",
     "api": {
       "GridMaster": "MazeController",
       "findMinimumPath": "findCheapestRoute"
     },
-    "id": 1810,
+    "id": 837,
     "kind": "interactive",
     "title": "Cheapest Route in a Hidden Maze"
   },
@@ -7514,12 +7514,12 @@
     "title": "Least-Cost Split Within a Span"
   },
   "3023_find-pattern-in-infinite-stream-i": {
-    "adapted": "3023_first-pattern-match-in-a-bit-stream",
+    "adapted": "0838_first-pattern-match-in-a-bit-stream",
     "api": {
       "InfiniteStream": "BitStream",
       "findPattern": "firstMatchIndex"
     },
-    "id": 3023,
+    "id": 838,
     "kind": "interactive",
     "title": "First Pattern Match in a Bit Stream"
   },
