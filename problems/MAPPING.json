@@ -1810,6 +1810,17 @@
     "kind": "function",
     "title": "End-Picking Game Winner"
   },
+  "0489_robot-room-cleaner": {
+    "adapted": "0489_sweep-the-hidden-room",
+    "api": {
+      "Robot": "Sweeper",
+      "cleanRoom": "sweepRoom",
+      "clean_room": "sweep_room"
+    },
+    "id": 489,
+    "kind": "interactive",
+    "title": "Sweep the Hidden Room"
+  },
   "0493_reverse-pairs": {
     "adapted": "0188_inversions-beyond-double",
     "api": {
@@ -2799,6 +2810,17 @@
     "kind": "function",
     "title": "One-Swap Word Groups"
   },
+  "0843_guess-the-word": {
+    "adapted": "0843_unmask-the-hidden-word",
+    "api": {
+      "Master": "Interrogator",
+      "findSecretWord": "unmaskWord",
+      "find_secret_word": "unmask_word"
+    },
+    "id": 843,
+    "kind": "interactive",
+    "title": "Unmask the Hidden Word"
+  },
   "0846_hand-of-straights": {
     "adapted": "0284_arrange-into-runs-of-consecutive-values",
     "api": {
@@ -3490,6 +3512,17 @@
     "kind": "function",
     "title": "Seat Load on a Route"
   },
+  "1095_find-in-mountain-array": {
+    "adapted": "1095_search-hidden-mountain-sequence",
+    "api": {
+      "MountainArray": "MountainReader",
+      "findInMountainArray": "findInMountain",
+      "find_in_mountain_array": "find_in_mountain"
+    },
+    "id": 1095,
+    "kind": "interactive",
+    "title": "Search a Hidden Mountain Sequence"
+  },
   "1101_the-earliest-moment-when-everyone-become-friends": {
     "adapted": "0353_first-full-connection",
     "api": {
@@ -3791,6 +3824,17 @@
     "kind": "function",
     "title": "Fewest Overwrites for a Rising Array"
   },
+  "1188_design-bounded-blocking-queue": {
+    "adapted": "1188_blocking-bounded-buffer",
+    "api": {
+      "BoundedBlockingQueue": "BoundedBuffer",
+      "dequeue": "take",
+      "enqueue": "put"
+    },
+    "id": 1188,
+    "kind": "concurrent",
+    "title": "Blocking Bounded Buffer"
+  },
   "1190_reverse-substrings-between-each-pair-of-parentheses": {
     "adapted": "0382_reverse-every-bracketed-segment",
     "api": {
@@ -4029,6 +4073,17 @@
     "id": 404,
     "kind": "function",
     "title": "Count Walks Back to the Start"
+  },
+  "1274_number-of-ships-in-a-rectangle": {
+    "adapted": "1274_count-hidden-ships-in-a-rectangle",
+    "api": {
+      "Sea": "Ocean",
+      "countShips": "countHiddenShips",
+      "sea": "ocean"
+    },
+    "id": 1274,
+    "kind": "interactive",
+    "title": "Count Hidden Ships in a Rectangle"
   },
   "1277_count-square-submatrices-with-all-ones": {
     "adapted": "0405_count-all-ones-squares",
@@ -4441,6 +4496,17 @@
     "id": 443,
     "kind": "function",
     "title": "Bounded Gap Subsequence Sum"
+  },
+  "1428_leftmost-column-with-at-least-a-one": {
+    "adapted": "1428_first-column-containing-a-one",
+    "api": {
+      "BinaryMatrix": "BitMatrix",
+      "binaryMatrix": "matrix",
+      "leftMostColumnWithOne": "firstColumnWithOne"
+    },
+    "id": 1428,
+    "kind": "interactive",
+    "title": "First Column Containing a One"
   },
   "1434_number-of-ways-to-wear-different-hats-to-each-other": {
     "adapted": "0444_count-locker-assignments",
@@ -5047,6 +5113,16 @@
     "kind": "function",
     "title": "Rear-End Collision Times"
   },
+  "1778_shortest-path-in-a-hidden-grid": {
+    "adapted": "1778_shortest-route-in-a-hidden-maze",
+    "api": {
+      "GridMaster": "MazeController",
+      "findShortestPath": "findShortestRoute"
+    },
+    "id": 1778,
+    "kind": "interactive",
+    "title": "Shortest Route in a Hidden Maze"
+  },
   "1792_maximum-average-pass-ratio": {
     "adapted": "0503_best-average-success-rate",
     "api": {
@@ -5089,6 +5165,16 @@
     "id": 506,
     "kind": "function",
     "title": "Count Pairs Within an XOR Band"
+  },
+  "1810_minimum-path-cost-in-a-hidden-grid": {
+    "adapted": "1810_cheapest-route-in-a-hidden-maze",
+    "api": {
+      "GridMaster": "MazeController",
+      "findMinimumPath": "findCheapestRoute"
+    },
+    "id": 1810,
+    "kind": "interactive",
+    "title": "Cheapest Route in a Hidden Maze"
   },
   "1819_number-of-different-subsequences-gcds": {
     "adapted": "0507_distinct-subsequence-gcds",
@@ -7426,6 +7512,16 @@
     "id": 724,
     "kind": "function",
     "title": "Least-Cost Split Within a Span"
+  },
+  "3023_find-pattern-in-infinite-stream-i": {
+    "adapted": "3023_first-pattern-match-in-a-bit-stream",
+    "api": {
+      "InfiniteStream": "BitStream",
+      "findPattern": "firstMatchIndex"
+    },
+    "id": 3023,
+    "kind": "interactive",
+    "title": "First Pattern Match in a Bit Stream"
   },
   "3026_maximum-good-subarray-sum": {
     "adapted": "0725_best-subarray-sum-with-endpoints-k-apart",

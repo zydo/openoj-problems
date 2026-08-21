@@ -1,22 +1,12 @@
 class PriceLog {
 
-    public PriceLog() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public PriceLog() {}
 
-    public void record(int timestamp, int price) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public void record(int timestamp, int price) {}
 
-    public int latest() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int latest() {}
 
-    public int highest() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int highest() {}
 
-    public int lowest() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int lowest() {}
 }

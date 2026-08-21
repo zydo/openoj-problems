@@ -1,18 +1,10 @@
 class RandomDrawSet {
 
-    public RandomDrawSet() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public RandomDrawSet() {}
 
-    public boolean insert(int val) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public boolean insert(int val) {}
 
-    public boolean remove(int val) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public boolean remove(int val) {}
 
-    public int draw() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int draw() {}
 }

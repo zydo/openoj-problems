@@ -174,7 +174,7 @@ def check_bundle(bundle: Path) -> list[Failure]:
     # starters: regenerate from problem.json and compare byte-for-byte.
     # Python style follows the tree: the adapted tree is modernized, the
     # live tree keeps its legacy annotations.
-    gen_starters.set_python_style("modern" if "problems-adapt" in bundle.parts else "legacy")
+    gen_starters.set_python_style("modern" if "problems" in bundle.parts else "legacy")
     try:
         generated = gen_starters.starter_files(problem["invocation"])
     except Exception as error:  # noqa: BLE001
@@ -391,7 +391,7 @@ def main() -> None:
     parser.add_argument(
         "--tree",
         default="problems",
-        help="which bundle tree to check, relative to the repo root (e.g. problems-adapt)",
+        help="which bundle tree to check, relative to the repo root (e.g. problems)",
     )
     parser.add_argument("--skip-runtime", action="store_true", help="run the static tier only")
     parser.add_argument(

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate problems-adapt/MAPPING.md from the adaptation ledger.
+"""Regenerate problems/MAPPING.md from the adaptation ledger.
 
 The ledger is the machine-readable record; this is the page a human
 reads. It is also what cutover needs: submissions are keyed by slug, so
@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LEDGER = ROOT / ".adapt" / "ledger.json"
-MAPPING = ROOT / "problems-adapt" / "MAPPING.md"
+MAPPING = ROOT / "problems" / "MAPPING.md"
 
 HEADER = """# Mapping — adapted problems to their sources
 

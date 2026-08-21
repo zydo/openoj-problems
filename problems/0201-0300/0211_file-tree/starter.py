@@ -1,15 +1,15 @@
 class FileTree:
-    def __init__(self) -> None:
-        raise NotImplementedError("TODO")
+    def __init__(self):
+        pass
 
     def ls(self, path: str) -> list[str]:
-        raise NotImplementedError("TODO")
+        pass
 
-    def mkdir(self, path: str) -> None:
-        raise NotImplementedError("TODO")
+    def mkdir(self, path: str):
+        pass
 
-    def appendToFile(self, filePath: str, content: str) -> None:
-        raise NotImplementedError("TODO")
+    def appendToFile(self, filePath: str, content: str):
+        pass
 
     def readFile(self, filePath: str) -> str:
-        raise NotImplementedError("TODO")
+        pass

@@ -1,5 +1,5 @@
 class StaticRanges:
-    def __init__(self, nums: list[int]) -> None:
+    def __init__(self, nums: list[int]):
         raise NotImplementedError("TODO")
 
     def rangeSum(self, left: int, right: int) -> int:

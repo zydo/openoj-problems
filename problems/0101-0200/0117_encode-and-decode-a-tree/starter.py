@@ -1,5 +1,5 @@
 class TreeCodec:
-    def __init__(self) -> None:
+    def __init__(self):
         raise NotImplementedError("TODO")
 
     def serialize(self, root: TreeNode | None) -> str:

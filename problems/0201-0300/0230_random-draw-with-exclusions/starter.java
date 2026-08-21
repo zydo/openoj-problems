@@ -1,10 +1,6 @@
 class RandomDrawWithExclusions {
 
-    public RandomDrawWithExclusions(int n, int[] excluded) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public RandomDrawWithExclusions(int n, int[] excluded) {}
 
-    public int pick() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int pick() {}
 }

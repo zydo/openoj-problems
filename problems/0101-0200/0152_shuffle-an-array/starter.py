@@ -1,5 +1,5 @@
 class Solution:
-    def __init__(self, nums: list[int]) -> None:
+    def __init__(self, nums: list[int]):
         raise NotImplementedError("TODO")
 
     def reset(self) -> list[int]:

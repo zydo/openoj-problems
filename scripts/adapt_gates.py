@@ -24,8 +24,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-LIVE = ROOT / "problems"
-ADAPTED = ROOT / "problems-adapt"
+LIVE = ROOT / "problems-bettercode"
+ADAPTED = ROOT / "problems"
 LEDGER = ROOT / ".adapt" / "ledger.json"
 VERIFY = ROOT.parent / "openoj" / ".localonly" / "verify_solution.py"
 

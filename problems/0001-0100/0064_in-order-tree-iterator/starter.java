@@ -1,16 +1,8 @@
-import java.util.List;
-
 class InOrderTreeIterator {
 
-    public InOrderTreeIterator(TreeNode root) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public InOrderTreeIterator(TreeNode root) {}
 
-    public int next() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int next() {}
 
-    public boolean hasNext() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public boolean hasNext() {}
 }

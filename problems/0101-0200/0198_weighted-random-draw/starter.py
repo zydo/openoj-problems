@@ -1,5 +1,5 @@
 class Solution:
-    def __init__(self, weights: list[int]) -> None:
+    def __init__(self, weights: list[int]):
         raise NotImplementedError("TODO")
 
     def drawIndex(self) -> int:

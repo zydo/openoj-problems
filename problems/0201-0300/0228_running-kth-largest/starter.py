@@ -1,6 +1,6 @@
 class RunningKthLargest:
-    def __init__(self, k: int, nums: list[int]) -> None:
-        raise NotImplementedError("TODO")
+    def __init__(self, k: int, nums: list[int]):
+        pass
 
     def add(self, val: int) -> int:
-        raise NotImplementedError("TODO")
+        pass

@@ -1,22 +1,12 @@
 class MovieRentalDesk {
 
-    public MovieRentalDesk(int n, int[][] entries) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public MovieRentalDesk(int n, int[][] entries) {}
 
-    public int[] search(int movie) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int[] search(int movie) {}
 
-    public void rent(int shop, int movie) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public void rent(int shop, int movie) {}
 
-    public void handBack(int shop, int movie) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public void handBack(int shop, int movie) {}
 
-    public int[][] report() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int[][] report() {}
 }

@@ -1,5 +1,5 @@
 class PacketBuffer:
-    def __init__(self, capacity: int) -> None:
+    def __init__(self, capacity: int):
         raise NotImplementedError("TODO")
 
     def receive(self, source: int, destination: int, timestamp: int) -> bool:

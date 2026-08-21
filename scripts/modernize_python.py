@@ -3,7 +3,7 @@
 
     modernize_python.py <bundle>... [--check]
 
-Applies only under problems-adapt/ — the live LeetCode-derived tree keeps
+Applies only under problems/ — the live LeetCode-derived tree keeps
 its legacy style by choice (see openoj/TODO.md's history). The rewrite:
 
   List[X] -> list[X]        Dict[K, V] -> dict[K, V]
@@ -89,8 +89,8 @@ def main() -> int:
         raise SystemExit("usage: modernize_python.py <bundle-or-file>... [--check]")
     changed = 0
     for target in targets:
-        if "problems-adapt" not in target.resolve().parts:
-            raise SystemExit(f"refusing {target}: only the adapted tree is modernized")
+        if "problems" not in target.resolve().parts or "problems-bettercode" in target.resolve().parts:
+            raise SystemExit(f"refusing {target}: only the adapted tree (problems/) is modernized")
         files = [target] if target.is_file() else sorted(target.glob("solution*.py"))
         for path in files:
             original = path.read_text(encoding="utf-8")

@@ -1,14 +1,8 @@
 class FrequencyCache {
 
-    public FrequencyCache(int capacity) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public FrequencyCache(int capacity) {}
 
-    public int get(int key) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int get(int key) {}
 
-    public void put(int key, int value) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public void put(int key, int value) {}
 }

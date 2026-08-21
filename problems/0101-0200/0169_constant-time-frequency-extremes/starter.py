@@ -1,11 +1,11 @@
 class FrequencyExtremes:
-    def __init__(self) -> None:
+    def __init__(self):
         raise NotImplementedError("TODO")
 
-    def increase(self, key: str) -> None:
+    def increase(self, key: str):
         raise NotImplementedError("TODO")
 
-    def decrease(self, key: str) -> None:
+    def decrease(self, key: str):
         raise NotImplementedError("TODO")
 
     def highestKey(self) -> str:

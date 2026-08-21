@@ -1,14 +1,8 @@
 class SeatPool {
 
-    public SeatPool(int n) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public SeatPool(int n) {}
 
-    public int reserve() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int reserve() {}
 
-    public void release(int seat) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public void release(int seat) {}
 }

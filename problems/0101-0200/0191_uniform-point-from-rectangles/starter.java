@@ -1,10 +1,6 @@
 class Solution {
 
-    public Solution(int[][] rects) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public Solution(int[][] rects) {}
 
-    public int[] drawPoint() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int[] drawPoint() {}
 }

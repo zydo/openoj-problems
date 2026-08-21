@@ -1,5 +1,5 @@
 class HallSeating:
-    def __init__(self, n: int, m: int) -> None:
+    def __init__(self, n: int, m: int):
         raise NotImplementedError("TODO")
 
     def block(self, k: int, lastRow: int) -> list[int]:

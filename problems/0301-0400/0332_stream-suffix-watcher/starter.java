@@ -1,10 +1,6 @@
 class SuffixWatcher {
 
-    public SuffixWatcher(String[] words) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public SuffixWatcher(String[] words) {}
 
-    public boolean feed(String letter) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public boolean feed(String letter) {}
 }

@@ -1,8 +1,8 @@
 class PopularityStack:
-    def __init__(self) -> None:
+    def __init__(self):
         raise NotImplementedError("TODO")
 
-    def push(self, val: int) -> None:
+    def push(self, val: int):
         raise NotImplementedError("TODO")
 
     def pop(self) -> int:

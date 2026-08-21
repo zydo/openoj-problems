@@ -368,7 +368,7 @@ def _generate_design(invocation: dict, language: str) -> str:
         )
         blocks.append(f"class {class_name}:\n")
         blocks.append(f"    def __init__({ctor_signature}):\n")
-        blocks.append("        pass\n")
+        blocks.append('        raise NotImplementedError("TODO")\n')
         for method in methods:
             name = method["name"]
             specs = [p.get("value_type") for p in method.get("parameters", [])]
@@ -379,7 +379,7 @@ def _generate_design(invocation: dict, language: str) -> str:
             )
             ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {python_type(returns)}"
             blocks.append(f"\n    def {name}({signature}){ret}:\n")
-            blocks.append("        pass\n")
+            blocks.append('        raise NotImplementedError("TODO")\n')
         return "".join(blocks)
 
     if language == "java":
@@ -738,7 +738,7 @@ def main() -> None:
             for sub in ([child] if (child / "problem.json").is_file() else sorted(child.iterdir()))
             if sub.is_dir() and (sub / "problem.json").is_file()
         )
-    set_python_style(style or ("modern" if any("problems-adapt" in p.parts for p in targets) else "legacy"))
+    set_python_style(style or ("modern" if any("problems" in p.parts for p in targets) else "legacy"))
     failures = 0
     for bundle in targets:
         problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
