@@ -1,12 +1,12 @@
 class CoverageLedger:
     def __init__(self):
-        pass
+        raise NotImplementedError("TODO")
 
     def addSpan(self, start: int, end: int):
-        pass
+        raise NotImplementedError("TODO")
 
     def coversSpan(self, start: int, end: int) -> bool:
-        pass
+        raise NotImplementedError("TODO")
 
     def removeSpan(self, start: int, end: int):
-        pass
+        raise NotImplementedError("TODO")

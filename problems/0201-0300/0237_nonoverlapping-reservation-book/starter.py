@@ -1,6 +1,6 @@
 class ReservationBook:
     def __init__(self):
-        pass
+        raise NotImplementedError("TODO")
 
     def reserveSlot(self, start: int, end: int) -> bool:
-        pass
+        raise NotImplementedError("TODO")

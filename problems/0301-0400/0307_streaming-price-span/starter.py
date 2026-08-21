@@ -1,6 +1,6 @@
 class PriceSpanTracker:
     def __init__(self):
-        pass
+        raise NotImplementedError("TODO")
 
     def record(self, price: int) -> int:
-        pass
+        raise NotImplementedError("TODO")

@@ -1,6 +1,6 @@
 class RandomDrawWithExclusions:
     def __init__(self, n: int, excluded: list[int]):
-        pass
+        raise NotImplementedError("TODO")
 
     def pick(self) -> int:
-        pass
+        raise NotImplementedError("TODO")

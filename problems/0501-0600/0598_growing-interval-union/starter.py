@@ -1,9 +1,9 @@
 class IntervalUnion:
     def __init__(self):
-        pass
+        raise NotImplementedError("TODO")
 
     def add(self, left: int, right: int):
-        pass
+        raise NotImplementedError("TODO")
 
     def size(self) -> int:
-        pass
+        raise NotImplementedError("TODO")

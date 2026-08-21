@@ -1,15 +1,15 @@
 class JobBoard:
     def __init__(self, jobs: list[list[int]]):
-        pass
+        raise NotImplementedError("TODO")
 
     def post(self, userId: int, jobId: int, priority: int):
-        pass
+        raise NotImplementedError("TODO")
 
     def reprioritize(self, jobId: int, newPriority: int):
-        pass
+        raise NotImplementedError("TODO")
 
     def withdraw(self, jobId: int):
-        pass
+        raise NotImplementedError("TODO")
 
     def runTop(self) -> int:
-        pass
+        raise NotImplementedError("TODO")

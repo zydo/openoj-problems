@@ -1,9 +1,9 @@
 class SpreadSeating:
     def __init__(self, n: int):
-        pass
+        raise NotImplementedError("TODO")
 
     def assign(self) -> int:
-        pass
+        raise NotImplementedError("TODO")
 
     def vacate(self, p: int):
-        pass
+        raise NotImplementedError("TODO")
