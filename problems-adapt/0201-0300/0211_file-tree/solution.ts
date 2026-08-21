@@ -1,5 +1,5 @@
-interface TreeNode {
-    children: Map<string, TreeNode> | null;
+interface FileNode {
+    children: Map<string, FileNode> | null;
     file: boolean;
     content: string;
 }
@@ -9,7 +9,7 @@ class FileTree {
     // (children map) or a file (content buffer) — files and subdirs share
     // one namespace. The children map is plain; ls sorts names on the way
     // out.
-    private root: TreeNode = { children: new Map(), file: false, content: "" };
+    private root: FileNode = { children: new Map(), file: false, content: "" };
 
     constructor() {}
 
@@ -30,7 +30,7 @@ class FileTree {
         let node = this.root;
         for (const part of this.split(path)) {
             // Creating each missing component also creates the middle dirs.
-            let next = node.children!.get(part);
+            let next: FileNode | undefined = node.children!.get(part);
             if (!next) {
                 next = { children: new Map(), file: false, content: "" };
                 node.children!.set(part, next);
