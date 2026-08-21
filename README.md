@@ -4,8 +4,13 @@ Problem sets for [OpenOJ](https://github.com/zydo/openoj) — a self-hosted,
 self-motivated learning framework. Nothing here is secret: every testcase
 and its expected output is public data by design.
 
-Each problem is one directory under `problems/` — sharded into id-range
-subdirectories of 100 (`problems/0001-0100/0001_two-sum/`) — carrying its statement,
+The default set is `problems/` — our independently authored bank
+(838 problems, statements and APIs written from functional
+specifications; see [MAPPING.md](problems/MAPPING.md) for its
+provenance). `problems-bettercode/` archives the LeetCode-derived
+originals it was built from, curated by BETTERCODE.md. Each problem is
+one directory sharded into id-range subdirectories of 100
+(`problems/0001-0100/0001_pair-sum/`) — carrying its statement,
 machine schema, testcase corpus, generated starters, and recommended
 solutions in every offered language. See [FORMAT.md](FORMAT.md) for the
 complete specification.
