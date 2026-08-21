@@ -7,8 +7,8 @@ namespace {
 // One directory or file: a file carries a text buffer and no children, a
 // directory the reverse. std::map keeps children in lexicographic order,
 // so ls never sorts.
-struct Node {
-    std::map<std::string, Node> children;
+struct FileNode {
+    std::map<std::string, FileNode> children;
     std::string content;
     bool file = false;
 };
@@ -40,7 +40,7 @@ class FileTree {
 
     std::vector<std::string> ls(std::string path) {
         std::vector<std::string> parts = splitPath(path);
-        Node *node = &root;
+        FileNode *node = &root;
         for (const std::string &part : parts) {
             node = &node->children[part];
         }
@@ -56,7 +56,7 @@ class FileTree {
     }
 
     void mkdir(std::string path) {
-        Node *node = &root;
+        FileNode *node = &root;
         for (const std::string &part : splitPath(path)) {
             // Inserting each missing component also creates the middle dirs.
             node = &node->children[part];
@@ -65,19 +65,19 @@ class FileTree {
 
     void appendToFile(std::string filePath, std::string content) {
         std::vector<std::string> parts = splitPath(filePath);
-        Node *node = &root;
+        FileNode *node = &root;
         for (size_t index = 0; index + 1 < parts.size(); index++) {
             node = &node->children[parts[index]];
         }
         // Append to the existing buffer, creating the file on first write.
-        Node &file = node->children[parts.back()];
+        FileNode &file = node->children[parts.back()];
         file.file = true;
         file.content += content;
     }
 
     std::string readFile(std::string filePath) {
         std::vector<std::string> parts = splitPath(filePath);
-        Node *node = &root;
+        FileNode *node = &root;
         for (size_t index = 0; index + 1 < parts.size(); index++) {
             node = &node->children[parts[index]];
         }
@@ -85,5 +85,5 @@ class FileTree {
     }
 
   private:
-    Node root;
+    FileNode root;
 };
