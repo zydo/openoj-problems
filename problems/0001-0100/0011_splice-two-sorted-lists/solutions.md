@@ -2,9 +2,27 @@
 
 Two merges that arrive at the same thread: each hands out the input nodes in
 sorted order, each relinks rather than allocates, and each favours `first`'s
-node when both heads are equal. What separates them is only the driver — a
-loop advancing a tail pointer, or the call stack descending one node at a
-time.
+node when both heads are equal. What separates them is only the driver — the
+call stack descending one node at a time, or a loop advancing a tail
+pointer.
+
+## Recursive
+
+One decision per call, made by the call stack. The base case needs no
+thought: an empty list leaves the other list — whatever remains of it —
+already ordered, so it _is_ the merged continuation. Otherwise the smaller
+head stands at the front of the answer; recurse on that head's successor and
+the untouched other list, and reattach whatever comes back as the head's new
+tail. `<=` hands ties to `first`, the same stability rule the loop follows.
+
+Every call retires one node, so the recursion lands after `n + m` calls and
+allocates nothing while relinking. What it spends instead is stack — one
+frame per merged node, exactly the depth the iterative form avoids. (The Rust
+port detours through ownership: the winner's tail is unlinked so the
+recursive call can own it, then the merged remainder is reattached — but the
+node chosen on each call is the same one.)
+
+**Complexity:** `O(n + m)` time, `O(n + m)` space for the call stack.
 
 ## Iterative
 
@@ -27,21 +45,3 @@ length; relinking existing nodes means the placeholder is the only allocation
 and extra memory is constant.
 
 **Complexity:** `O(n + m)` time, `O(1)` space.
-
-## Recursive
-
-One decision per call, made by the call stack. The base case needs no
-thought: an empty list leaves the other list — whatever remains of it —
-already ordered, so it _is_ the merged continuation. Otherwise the smaller
-head stands at the front of the answer; recurse on that head's successor and
-the untouched other list, and reattach whatever comes back as the head's new
-tail. `<=` hands ties to `first`, the same stability rule the loop follows.
-
-Every call retires one node, so the recursion lands after `n + m` calls and
-allocates nothing while relinking. What it spends instead is stack — one
-frame per merged node, exactly the depth the iterative form avoids. (The Rust
-port detours through ownership: the winner's tail is unlinked so the
-recursive call can own it, then the merged remainder is reattached — but the
-node chosen on each call is the same one.)
-
-**Complexity:** `O(n + m)` time, `O(n + m)` space for the call stack.

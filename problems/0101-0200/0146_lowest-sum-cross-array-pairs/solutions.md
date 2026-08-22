@@ -3,33 +3,12 @@
 Both solutions must emit the `k` smallest pairs `(nums1[i], nums2[j])` in
 order, ties going to the earlier `nums1` index — the lexicographically
 first `k` triples `(sum, i, j)`. Neither materializes the Cartesian
-product. One works *inside* the product: it merges the sorted rows of the
-pair matrix through a min-heap, discovering the answers one pop at a time.
-The other works *around* it: it never pops anything, but finds the value of
-the `k`-th smallest sum directly by binary search on the number line,
-counts pairs against each candidate in linear time, and then harvests the
-chosen sums by position.
-
-## Min-Heap Frontier
-
-Imagine one sorted row for each position `i` in `nums1`. Row `i` contains
-the pairs `(nums1[i], nums2[j])` as `j` increases. Because `nums2` is
-sorted, the sums within every row are non-decreasing. We only need to merge
-the beginnings of these rows rather than construct every pair.
-
-Seed a min-heap with `(i, 0)` for the first `min(nums1.length, k)` rows. A
-later row cannot reach the first `k` outputs: each of those earlier rows
-already begins with a sum no greater than its first sum. Store `(sum, i,
-j)` in the heap so the index `i` supplies the required tie-break.
-
-The heap minimum is the next output pair. After removing `(i, j)`, insert
-`(i, j + 1)` when that position exists. This restores one frontier item for
-row `i`; every other row's smallest unseen item remains in the heap.
-Repeating the operation `k` times therefore performs a partial merge of all
-relevant rows. Duplicate values stay as separate indexed choices and are
-emitted as often as they occur.
-
-**Complexity:** `O(k log k)` time and `O(k)` auxiliary space.
+product. One works *around* it: it never pops anything, but finds the
+value of the `k`-th smallest sum directly by binary search on the number
+line, counts pairs against each candidate in linear time, and then
+harvests the chosen sums by position. The other works *inside* the
+product: it merges the sorted rows of the pair matrix through a min-heap,
+discovering the answers one pop at a time.
 
 ## Binary Search on the Sum
 
@@ -62,3 +41,24 @@ types, since candidate sums span twice the value range.
 
 **Complexity:** `O((m + n) log(maxSum) + k log k)` time, `O(k)` auxiliary
 space.
+
+## Min-Heap Frontier
+
+Imagine one sorted row for each position `i` in `nums1`. Row `i` contains
+the pairs `(nums1[i], nums2[j])` as `j` increases. Because `nums2` is
+sorted, the sums within every row are non-decreasing. We only need to merge
+the beginnings of these rows rather than construct every pair.
+
+Seed a min-heap with `(i, 0)` for the first `min(nums1.length, k)` rows. A
+later row cannot reach the first `k` outputs: each of those earlier rows
+already begins with a sum no greater than its first sum. Store `(sum, i,
+j)` in the heap so the index `i` supplies the required tie-break.
+
+The heap minimum is the next output pair. After removing `(i, j)`, insert
+`(i, j + 1)` when that position exists. This restores one frontier item for
+row `i`; every other row's smallest unseen item remains in the heap.
+Repeating the operation `k` times therefore performs a partial merge of all
+relevant rows. Duplicate values stay as separate indexed choices and are
+emitted as often as they occur.
+
+**Complexity:** `O(k log k)` time and `O(k)` auxiliary space.

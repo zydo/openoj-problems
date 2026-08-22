@@ -1,8 +1,28 @@
 # Solutions — Two Conflict-Free Groups
 
-Two routes to the same decision: paint the people with two colours and watch
-for a contradiction, or forget the colours and only track who is obliged to
-end up together.
+Two routes to the same decision: forget the colours and only track who is
+obliged to end up together, or paint the people with two colours and watch
+for a contradiction.
+
+## union_find
+
+The colours are not really needed. What matters is the _must share a badge_
+relation, and it follows from one observation: everyone a given person clashes
+with is pushed to the other side of that person, so they all land together.
+Build the same adjacency list, then for each person merge that person's entire
+neighbour list into a single component, joining each neighbour to the first
+one.
+
+A disjoint-set forest records these obligations without naming any group. When
+the input is satisfiable the merging produces sets that never straddle a
+listed clash; when it is not, transitivity drags the two ends of some clash
+into one set. So the verdict is read afterwards: walk the entries once and
+return `false` at the first `[a, b]` whose roots coincide, `true` if none do.
+Path halving during `find` — pointing every second node at its grandparent on
+the way up — keeps the trees shallow without a second pass.
+
+**Complexity:** `O(n + e·α(n))` time, `O(n + e)` space, with `α` the inverse
+Ackermann function.
 
 ## dfs_color
 
@@ -27,23 +47,3 @@ Because the constraints give `a < b` inside each entry, nobody clashes with
 themselves, which would be unsatisfiable on its own.
 
 **Complexity:** `O(n + e)` time, `O(n + e)` space, for `e` listed clashes.
-
-## union_find
-
-The colours are not really needed. What matters is the _must share a badge_
-relation, and it follows from one observation: everyone a given person clashes
-with is pushed to the other side of that person, so they all land together.
-Build the same adjacency list, then for each person merge that person's entire
-neighbour list into a single component, joining each neighbour to the first
-one.
-
-A disjoint-set forest records these obligations without naming any group. When
-the input is satisfiable the merging produces sets that never straddle a
-listed clash; when it is not, transitivity drags the two ends of some clash
-into one set. So the verdict is read afterwards: walk the entries once and
-return `false` at the first `[a, b]` whose roots coincide, `true` if none do.
-Path halving during `find` — pointing every second node at its grandparent on
-the way up — keeps the trees shallow without a second pass.
-
-**Complexity:** `O(n + e·α(n))` time, `O(n + e)` space, with `α` the inverse
-Ackermann function.

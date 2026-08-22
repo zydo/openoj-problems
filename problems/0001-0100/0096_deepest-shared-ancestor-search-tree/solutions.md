@@ -2,10 +2,36 @@
 
 Two ways of cashing the same ordering cheque. Both reach each target by a
 straight comparison-guided walk, because a search tree never hides a target
-behind an inspection. One spends nothing beyond its current position: the two
-questions travel together, and the node where they part ways answers on the
-spot. The other writes each walk down as a list of values and settles the
-matter afterwards, reading the two lists side by side.
+behind an inspection. One writes each walk down as a list of values and
+settles the matter afterwards, reading the two lists side by side. The
+other spends nothing beyond its current position: the two questions travel
+together, and the node where they part ways answers on the spot.
+
+## Path Comparison
+
+The other route keeps the two searches separate and lets paper do the meeting.
+Walk from the root to `p`, recording the value of every node stepped through —
+each step is the same single comparison as in the other variant, so the
+recorded list is exactly the chain of ancestors of `p`, ending with `p`
+itself. Then do the
+same for `q`. Two lists, each in root-to-target order.
+
+The shared ancestors are now visible rather than deduced: both lists begin at
+the root, and they agree entry for entry as long as the two walks stayed on the
+same node — which is precisely the condition of both targets lying in the same
+subtree. Read the lists in lockstep and stop at the first disagreement; the
+last value they agreed on is the deepest node whose subtree covers both.
+Example 2 spells it out: the `20` path is `[50, 20]`, the `35` path is
+`[50, 20, 35]`, and the lockstep ends where the shorter list does, at `20`
+itself: the above-the-other shape falls out because one path is a prefix of
+the other, with no case of its own.
+
+What the lists buy is a separable question — each walk is an ordinary search,
+and the ancestor logic lives in one small comparison loop afterwards. What
+they cost is the memory the other method declines: two lists of up to `h`
+entries, and a second full pass before anything is decided.
+
+**Complexity:** `O(h)` time, `O(h)` space.
 
 ## Iterative Descent
 
@@ -33,28 +59,3 @@ tree carries no balance guarantee, so the path length `h` can be as long as the
 node count when the tree degenerates into a chain.
 
 **Complexity:** `O(h)` time, `O(1)` space.
-
-## Path Comparison
-
-The other route keeps the two searches separate and lets paper do the meeting.
-Walk from the root to `p`, recording the value of every node stepped through —
-each step is the same single comparison as above, so the recorded list is
-exactly the chain of ancestors of `p`, ending with `p` itself. Then do the
-same for `q`. Two lists, each in root-to-target order.
-
-The shared ancestors are now visible rather than deduced: both lists begin at
-the root, and they agree entry for entry as long as the two walks stayed on the
-same node — which is precisely the condition of both targets lying in the same
-subtree. Read the lists in lockstep and stop at the first disagreement; the
-last value they agreed on is the deepest node whose subtree covers both.
-Example 2 spells it out: the `20` path is `[50, 20]`, the `35` path is
-`[50, 20, 35]`, and the lockstep ends where the shorter list does, at `20`
-itself: the above-the-other shape falls out because one path is a prefix of
-the other, with no case of its own.
-
-What the lists buy is a separable question — each walk is an ordinary search,
-and the ancestor logic lives in one small comparison loop afterwards. What
-they cost is the memory the first method declines: two lists of up to `h`
-entries, and a second full pass before anything is decided.
-
-**Complexity:** `O(h)` time, `O(h)` space.

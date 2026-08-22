@@ -3,33 +3,8 @@
 Nothing has to be built here. The nodes handed in are already the nodes of the
 answer; what changes is which way each outgoing link points. Both approaches
 below repaint those links, touching every node once and allocating no new ones.
-They part company only over who remembers the node behind — a variable, or a
-suspended call.
-
-## Iterative
-
-Carry the frontier in three references. `prev` is the front of the portion
-already turned around, empty to begin with; `current` is the node whose link is
-about to be repainted; `nxt` is scratch space holding the route onward.
-
-The order of the four statements inside the loop is the whole trick. Writing
-`current.next = prev` overwrites the only reference to everything downstream,
-so `nxt = current.next` has to run first — after that the remainder is safely
-in hand and the link can be repainted freely. Then `prev` slides onto the node
-just finished and `current` onto the saved successor. What holds at the top of
-every pass: behind `prev` every link already points backwards, ahead of
-`current` no link has been disturbed.
-
-![Mid-sweep on the chain 8 -> 3 -> 9 -> 1 -> 4: with node 9 finished, prev fronts the turned-around chain 9 -> 3 -> 8 -> None while current stands on 1 and nxt holds 4.](figures/solution-pointer-reversal.svg)
-
-The loop stops when `current` runs off the end, and at that instant `prev` is
-sitting on what used to be the final node — which is exactly the front of the
-answer. On `[8,3,9,1,4]` the sweep leaves `prev` on `4`, whose chain reads
-`4 -> 1 -> 9 -> 3 -> 8`. An empty chain skips the loop entirely and returns
-nothing, and a lone node has its link written to the empty value it already
-held.
-
-**Complexity:** `O(n)` time, `O(1)` space.
+They part company only over who remembers the node behind — a suspended
+call, or a variable.
 
 ## Recursive
 
@@ -55,3 +30,28 @@ a logarithmic depth bought with `O(n log n)` walking.
 
 **Complexity:** `O(n)` time, `O(n)` space for the frames — the JS/TS ports trade
 down to `O(log n)` depth at `O(n log n)` time.
+
+## Iterative
+
+Carry the frontier in three references. `prev` is the front of the portion
+already turned around, empty to begin with; `current` is the node whose link is
+about to be repainted; `nxt` is scratch space holding the route onward.
+
+The order of the four statements inside the loop is the whole trick. Writing
+`current.next = prev` overwrites the only reference to everything downstream,
+so `nxt = current.next` has to run first — after that the remainder is safely
+in hand and the link can be repainted freely. Then `prev` slides onto the node
+just finished and `current` onto the saved successor. What holds at the top of
+every pass: behind `prev` every link already points backwards, ahead of
+`current` no link has been disturbed.
+
+![Mid-sweep on the chain 8 -> 3 -> 9 -> 1 -> 4: with node 9 finished, prev fronts the turned-around chain 9 -> 3 -> 8 -> None while current stands on 1 and nxt holds 4.](figures/solution-pointer-reversal.svg)
+
+The loop stops when `current` runs off the end, and at that instant `prev` is
+sitting on what used to be the final node — which is exactly the front of the
+answer. On `[8,3,9,1,4]` the sweep leaves `prev` on `4`, whose chain reads
+`4 -> 1 -> 9 -> 3 -> 8`. An empty chain skips the loop entirely and returns
+nothing, and a lone node has its link written to the empty value it already
+held.
+
+**Complexity:** `O(n)` time, `O(1)` space.

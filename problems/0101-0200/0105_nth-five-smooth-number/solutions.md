@@ -1,7 +1,25 @@
 # Solutions — Nth Five-Smooth Number
 
-Two ordered generators over one recurrence: the first merges three virtual
-lists with cursors, the second grows a frontier through a min-heap.
+Two ordered generators over one recurrence: the first grows a frontier
+through a min-heap, the second merges three virtual lists with cursors.
+
+## heap
+
+Read the same generation as best-first expansion instead. A min-heap holds the
+frontier — terms produced but not yet emitted — seeded with 1; pop the smallest,
+then push each of `2·v`, `3·v`, `5·v` that has never been pushed before.
+Because the heap always exposes its least element, every pop is the next term
+in order, and after `n - 1` pops the top is the answer.
+
+The `seen` set is what keeps the frontier a set: 12 arises as both `2·6` and
+`3·4`, and admitting each value on first sight only is what makes the emission
+sequence duplicate-free. Size stays modest — one element leaves and at most
+three arrive per round — while the `O(log k)` sift per push makes the total
+`O(n log n)`. The fixed-width ports keep 64-bit heap entries, since pushed
+multiples routinely overshoot the 32-bit answer before being popped, and the
+dedupe set is keyed on that full 64-bit value.
+
+**Complexity:** `O(n log n)` time, `O(n)` space.
 
 ## three_pointers
 
@@ -29,21 +47,3 @@ increments; the array of `n + 1` values (index 0 holds the seed 1) is the whole
 footprint, and `n <= 1690` keeps it tiny. The answer reads from slot `n - 1`.
 
 **Complexity:** `O(n)` time, `O(n)` space.
-
-## heap
-
-Read the same generation as best-first expansion instead. A min-heap holds the
-frontier — terms produced but not yet emitted — seeded with 1; pop the smallest,
-then push each of `2·v`, `3·v`, `5·v` that has never been pushed before.
-Because the heap always exposes its least element, every pop is the next term
-in order, and after `n - 1` pops the top is the answer.
-
-The `seen` set is what keeps the frontier a set: 12 arises as both `2·6` and
-`3·4`, and admitting each value on first sight only is what makes the emission
-sequence duplicate-free. Size stays modest — one element leaves and at most
-three arrive per round — while the `O(log k)` sift per push makes the total
-`O(n log n)`. The fixed-width ports keep 64-bit heap entries, since pushed
-multiples routinely overshoot the 32-bit answer before being popped, and the
-dedupe set is keyed on that full 64-bit value.
-
-**Complexity:** `O(n log n)` time, `O(n)` space.

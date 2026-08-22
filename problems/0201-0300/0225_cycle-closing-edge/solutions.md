@@ -2,8 +2,28 @@
 
 Both approaches sweep the pairs left to right and stop at the first one whose
 two endpoints are already tied together by earlier pairs. They differ only in
-how that question is answered: a disjoint-set forest keeps the components
-explicit, while the plain search rediscovers reachability each time.
+how that question is answered: the plain search rediscovers reachability each
+time, while a disjoint-set forest keeps the components explicit.
+
+## dfs
+
+The same stopping rule without any bookkeeping structure. Keep an adjacency map
+of the pairs accepted so far and, for each new pair `(a, b)`, ask whether `b` can
+already be reached from `a` over that partial graph. A yes means the two nodes
+were connected before this pair existed, so this pair is the one that closes the
+cycle. A no means the pair is part of the underlying tree, and it is stored in
+both directions before the sweep continues.
+
+Reachability is tested with an explicit stack. A node is marked the moment it is
+pushed rather than when it is popped, so it can never be queued twice, and the
+probe stops as soon as the target surfaces or the component is exhausted. Since
+every prefix of the input is a forest, "reachable through the prefix" and
+"already in one component" are the same predicate, so this variant returns the
+identical pair as the disjoint-set version.
+
+**Complexity:** `O(E·(V+E))` time — a reachability probe may run for each of the
+E pairs over the prefix graph — and `O(V+E)` space for the adjacency map, the
+stack and the marked set.
 
 ## union_find
 
@@ -27,23 +47,3 @@ inputs the sweep always terminates early; the trailing empty list exists only so
 the function is total.
 
 **Complexity:** `O(n log n)` time, `O(n)` space.
-
-## dfs
-
-The same stopping rule without any bookkeeping structure. Keep an adjacency map
-of the pairs accepted so far and, for each new pair `(a, b)`, ask whether `b` can
-already be reached from `a` over that partial graph. A yes means the two nodes
-were connected before this pair existed, so this pair is the one that closes the
-cycle. A no means the pair is part of the underlying tree, and it is stored in
-both directions before the sweep continues.
-
-Reachability is tested with an explicit stack. A node is marked the moment it is
-pushed rather than when it is popped, so it can never be queued twice, and the
-probe stops as soon as the target surfaces or the component is exhausted. Since
-every prefix of the input is a forest, "reachable through the prefix" and
-"already in one component" are the same predicate, so this variant returns the
-identical pair as the disjoint-set version.
-
-**Complexity:** `O(E·(V+E))` time — a reachability probe may run for each of the
-E pairs over the prefix graph — and `O(V+E)` space for the adjacency map, the
-stack and the marked set.

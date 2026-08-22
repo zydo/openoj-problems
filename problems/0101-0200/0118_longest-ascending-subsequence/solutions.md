@@ -5,6 +5,28 @@ dynamic program that defines the problem by endings, and the patience method
 that swaps the inner scan for a binary search over a tails array. Both return
 the same number; only the second meets the follow-up's bound.
 
+## dp_quadratic
+
+The definition, transcribed. Let `dp[i]` be the length of the longest climbing
+chain that ends exactly at `nums[i]`; since every chain ends somewhere, the
+answer is the largest entry in the table. A chain ending at `i` is either the
+lone entry `nums[i]` (length 1, the seed) or it continues an earlier chain: any
+`nums[j] < nums[i]` with `j < i` may stand immediately before `nums[i]`, so
+`dp[i]` is one plus the best `dp[j]` among those predecessors.
+
+Each position therefore scans everything to its left, and that `j < i` double
+loop is the quadratic cost. At `n <= 2500` it is about three million
+comparisons, well inside the limits here, and the table makes the correctness
+argument plain: `dp[i]` is filled only from positions strictly earlier, whose
+values are already final when read.
+
+Strictness lives in the guard `nums[j] < nums[i]` — not `<=` — so an equal
+entry is no predecessor and `[5, 5, 5]` leaves every slot at 1. Descending
+inputs never find a predecessor either, and a lone entry returns its seed
+unchanged.
+
+**Complexity:** `O(n²)` time, `O(n)` space.
+
 ## patience
 
 Keep `tails`, where `tails[k]` is the smallest value seen so far that can end a
@@ -49,25 +71,3 @@ searches. A single-entry array returns 1 from the first append, and a strictly
 descending input never appends after the first element.
 
 **Complexity:** `O(n log n)` time, `O(n)` space.
-
-## dp_quadratic
-
-The definition, transcribed. Let `dp[i]` be the length of the longest climbing
-chain that ends exactly at `nums[i]`; since every chain ends somewhere, the
-answer is the largest entry in the table. A chain ending at `i` is either the
-lone entry `nums[i]` (length 1, the seed) or it continues an earlier chain: any
-`nums[j] < nums[i]` with `j < i` may stand immediately before `nums[i]`, so
-`dp[i]` is one plus the best `dp[j]` among those predecessors.
-
-Each position therefore scans everything to its left, and that `j < i` double
-loop is the quadratic cost. At `n <= 2500` it is about three million
-comparisons, well inside the limits here, and the table makes the correctness
-argument plain: `dp[i]` is filled only from positions strictly earlier, whose
-values are already final when read.
-
-Strictness lives in the guard `nums[j] < nums[i]` — not `<=` — so an equal
-entry is no predecessor and `[5, 5, 5]` leaves every slot at 1. Descending
-inputs never find a predecessor either, and a lone entry returns its seed
-unchanged.
-
-**Complexity:** `O(n²)` time, `O(n)` space.

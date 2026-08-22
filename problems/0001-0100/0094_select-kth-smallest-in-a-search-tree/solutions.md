@@ -1,5 +1,26 @@
 # Solutions — Select Kth Smallest In A Search Tree
 
+## Recursive Inorder with an Early Stop
+
+The same walk in its plain recursive dress: left subtree, node, right
+subtree. The countdown travels as shared state — a `nonlocal` in the Python
+closure, an `int[]` cell in Java, a reference parameter in C++, a `&mut` pair
+in Rust — and each visited node lowers it by one; the visit that empties it
+records its value as the answer. The tree itself is never written to.
+
+The stop happens on the way in, not the way out: the helper's first check
+returns at once once the countdown has emptied, so after the kth visit nothing
+further descends and the stack unwinds through the calls already made. The
+work is the path to the kth value plus the k visits, exactly as in the
+iterative twin.
+
+What the recursive form pays is call-stack depth: it is bounded by the height,
+which on a fully skewed tree is the node count itself. That is the concrete
+reason the iterative variant exists — with the stack in hand the same walk
+cannot overflow, whatever shape the input takes.
+
+**Complexity:** `O(h + k)` time, `O(h)` space for the call stack (worst case `n` on a chain).
+
 ## Iterative Inorder with an Early Stop
 
 The tree already knows the sorted order: walking a search tree inorder —
@@ -24,24 +45,3 @@ subtree size would replace the walk with a guided descent, answering in time
 proportional to the height alone.
 
 **Complexity:** `O(h + k)` time, `O(h)` space.
-
-## Recursive Inorder with an Early Stop
-
-The same walk in its plain recursive dress: left subtree, node, right
-subtree. The countdown travels as shared state — a `nonlocal` in the Python
-closure, an `int[]` cell in Java, a reference parameter in C++, a `&mut` pair
-in Rust — and each visited node lowers it by one; the visit that empties it
-records its value as the answer. The tree itself is never written to.
-
-The stop happens on the way in, not the way out: the helper's first check
-returns at once once the countdown has emptied, so after the kth visit nothing
-further descends and the stack unwinds through the calls already made. The
-work is the path to the kth value plus the k visits, exactly as in the
-iterative twin.
-
-What the recursive form pays is call-stack depth: it is bounded by the height,
-which on a fully skewed tree is the node count itself. That is the concrete
-reason the iterative variant exists — with the stack in hand the same walk
-cannot overflow, whatever shape the input takes.
-
-**Complexity:** `O(h + k)` time, `O(h)` space for the call stack (worst case `n` on a chain).

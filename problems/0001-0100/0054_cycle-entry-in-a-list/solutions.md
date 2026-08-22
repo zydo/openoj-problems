@@ -8,6 +8,23 @@ position rather than a node, both detectors finish the same way — having
 identified the entry node, they walk from the front counting steps until they
 reach it.
 
+## Hash set
+
+Walk forward from the front, putting every node you stand on into a set keyed
+by identity rather than value. Running off the end means no cycle and the
+answer is `-1`. Otherwise the first node you find already in the set is the
+entry, and that is worth being precise about: a node before the entry is passed
+once and never reached again, since nothing links back to it, so it can never
+be the first repeat. The entry is passed on the way in and met again as soon as
+the first lap closes, which makes it the earliest node the walk can see twice.
+
+With the entry node in hand, a short walk from the front counts the positions
+up to it. No distance algebra is needed here at all — the whole argument is
+"which node do I see twice first?" — and the price for that clarity is the set,
+`O(n)` memory, exactly what the follow-up asks you to do without.
+
+**Complexity:** `O(n)` time, `O(n)` space.
+
 ## Floyd
 
 The first phase is the two-speed walk: one walker advancing a node per step,
@@ -38,20 +55,3 @@ follow-up's constant-memory bound.
 
 **Complexity:** `O(n)` time, `O(n)` space — the construction; the detection
 itself is `O(1)`.
-
-## Hash set
-
-Walk forward from the front, putting every node you stand on into a set keyed
-by identity rather than value. Running off the end means no cycle and the
-answer is `-1`. Otherwise the first node you find already in the set is the
-entry, and that is worth being precise about: a node before the entry is passed
-once and never reached again, since nothing links back to it, so it can never
-be the first repeat. The entry is passed on the way in and met again as soon as
-the first lap closes, which makes it the earliest node the walk can see twice.
-
-With the entry node in hand, a short walk from the front counts the positions
-up to it. No distance algebra is needed here at all — the whole argument is
-"which node do I see twice first?" — and the price for that clarity is the set,
-`O(n)` memory, exactly what the follow-up asks you to do without.
-
-**Complexity:** `O(n)` time, `O(n)` space.

@@ -8,6 +8,23 @@ the spot. That construction alone holds every node, so `O(n)` storage is forced
 by the argument format no matter which detector follows; what the two variants
 differ in is whether they add more on top of it.
 
+## Hash set
+
+The direct reading of the definition. Walk forward from the front and record
+every node you stand on in a set keyed by the node's identity rather than its
+value — `values = [6,4]` and a chain of two sixes must behave the same way, so
+the number stored in a node tells you nothing about whether you have been
+there. Falling off the end means the chain terminates and there is no cycle;
+arriving at a node already in the set means the walk has come back round, which
+is exactly the definition of one.
+
+This needs no argument about relative speeds — the question it asks is just
+"have I stood here before?" — and that transparency is what it is for. The
+price is the set, `O(n)` memory, which is the bound the follow-up exists to
+avoid.
+
+**Complexity:** `O(n)` time, `O(n)` space.
+
 ## Floyd
 
 Send two walkers from the front, one advancing a single node per step and the
@@ -28,20 +45,3 @@ either exits or the two coincide.
 
 **Complexity:** `O(n)` time, `O(n)` space — the construction; the detection
 itself is `O(1)`.
-
-## Hash set
-
-The direct reading of the definition. Walk forward from the front and record
-every node you stand on in a set keyed by the node's identity rather than its
-value — `values = [6,4]` and a chain of two sixes must behave the same way, so
-the number stored in a node tells you nothing about whether you have been
-there. Falling off the end means the chain terminates and there is no cycle;
-arriving at a node already in the set means the walk has come back round, which
-is exactly the definition of one.
-
-This needs no argument about relative speeds — the question it asks is just
-"have I stood here before?" — and that transparency is what it is for. The
-price is the set, `O(n)` memory, which is the bound the follow-up exists to
-avoid.
-
-**Complexity:** `O(n)` time, `O(n)` space.

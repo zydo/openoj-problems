@@ -1,9 +1,36 @@
 # Solutions — Largest Subarray Sum
 
-Two routes to the largest block sum: one greedy left-to-right scan that keeps
-the best sum ending at each position, and a divide-and-conquer recursion that
-merges range statistics over halves. Both produce the same number; they differ
-in how the global answer is assembled out of local facts.
+Two routes to the largest block sum: a divide-and-conquer recursion that
+merges range statistics over halves, and a greedy left-to-right scan that
+keeps the best sum ending at each position. Both produce the same number;
+they differ in how the global answer is assembled out of local facts.
+
+## divide_and_conquer
+
+Cut the array in half, solve both halves recursively, and glue. The glue needs
+more than each half's best block: it needs four numbers per range — the `total`
+sum, the best `prefix` (a block touching the left edge), the best `suffix` (one
+touching the right edge), and the best block `best` anywhere inside. A
+one-element range is `(x, x, x, x)`, and two neighbouring ranges combine in
+constant time:
+
+- `total = left.total + right.total`
+- `prefix = max(left.prefix, left.total + right.prefix)`
+- `suffix = max(right.suffix, right.total + left.suffix)`
+- `best = max(left.best, right.best, left.suffix + right.prefix)`
+
+Only the last line is genuinely new. A winning block either lies inside one
+half — already answered by the recursion — or straddles the cut, in which case
+it is some suffix of the left half joined to some prefix of the right, and the
+best such join is `left.suffix + right.prefix`. Bottoming out at single
+elements means all-negative inputs need no seeding trick; no comparison ever
+sees an implicit `0`.
+
+Each level merges in `O(n)` across `O(log n)` levels, and the stack is only as
+deep as the halving — around 17 frames at `n = 10^5`, safe in every language
+here.
+
+**Complexity:** `O(n log n)` time, `O(log n)` space for the recursion stack.
 
 ## kadane
 
@@ -33,30 +60,3 @@ Because each extend-or-restart decision needs only the running sum and the
 current entry, one scan suffices — no window, prefix array, or recursion.
 
 **Complexity:** `O(n)` time, `O(1)` space.
-
-## divide_and_conquer
-
-Cut the array in half, solve both halves recursively, and glue. The glue needs
-more than each half's best block: it needs four numbers per range — the `total`
-sum, the best `prefix` (a block touching the left edge), the best `suffix` (one
-touching the right edge), and the best block `best` anywhere inside. A
-one-element range is `(x, x, x, x)`, and two neighbouring ranges combine in
-constant time:
-
-- `total = left.total + right.total`
-- `prefix = max(left.prefix, left.total + right.prefix)`
-- `suffix = max(right.suffix, right.total + left.suffix)`
-- `best = max(left.best, right.best, left.suffix + right.prefix)`
-
-Only the last line is genuinely new. A winning block either lies inside one
-half — already answered by the recursion — or straddles the cut, in which case
-it is some suffix of the left half joined to some prefix of the right, and the
-best such join is `left.suffix + right.prefix`. Bottoming out at single
-elements means all-negative inputs need no seeding trick; no comparison ever
-sees an implicit `0`.
-
-Each level merges in `O(n)` across `O(log n)` levels, and the stack is only as
-deep as the halving — around 17 frames at `n = 10^5`, safe in every language
-here.
-
-**Complexity:** `O(n log n)` time, `O(log n)` space for the recursion stack.

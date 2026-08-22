@@ -1,8 +1,34 @@
 # Solutions — Two-Colorable Graph
 
-Two ways to answer the same question: try to paint the graph and watch for a
-clash, or merge nodes that are forced onto the same side and check afterwards
-that no edge ended up inside a merged block.
+Two ways to answer the same question: merge nodes that are forced onto the
+same side and check afterwards that no edge ended up inside a merged block,
+or try to paint the graph and watch for a clash.
+
+## union_find
+
+Read the requirement from a node's point of view. Every neighbour of `u` must
+end up opposite `u`, and therefore all of `u`'s neighbours must end up on one
+and the same side as each other. That is a statement about _forced togetherness_,
+which is what a disjoint-set structure records.
+
+So sweep the nodes and, for each `u`, merge every entry of `graph[u]` into the
+set of the first entry `graph[u][0]`. When the sweep finishes, each set collects
+nodes that are compelled to share a side.
+
+Now check the requirement itself. Run over every edge `(u, v)` and ask whether
+the two ends landed in one set. If they did, some chain of forced-togetherness
+constraints demands that `u` and `v` sit together while the edge between them
+demands they sit apart — an odd closed walk in disguise — so return `false`.
+Survive every edge and the sets are a legitimate two-sided split.
+
+`find` does two passes: one to climb to the representative, and a second along
+the same chain repointing each node straight at it. That second pass costs
+nothing asymptotically and leaves the structure flatter for the queries that
+follow.
+
+**Complexity:** `O((V + E)·log V)` time — `O(V + E)` merge and lookup calls,
+each amortised logarithmic and in practice near constant — and `O(V)` space for
+the parent array.
 
 ## dfs_color
 
@@ -35,29 +61,3 @@ the two groups the problem asks for.
 
 **Complexity:** `O(V + E)` time — one visit per node, two per edge — and
 `O(V)` space for the colour array and the stack.
-
-## union_find
-
-Read the requirement from a node's point of view. Every neighbour of `u` must
-end up opposite `u`, and therefore all of `u`'s neighbours must end up on one
-and the same side as each other. That is a statement about _forced togetherness_,
-which is what a disjoint-set structure records.
-
-So sweep the nodes and, for each `u`, merge every entry of `graph[u]` into the
-set of the first entry `graph[u][0]`. When the sweep finishes, each set collects
-nodes that are compelled to share a side.
-
-Now check the requirement itself. Run over every edge `(u, v)` and ask whether
-the two ends landed in one set. If they did, some chain of forced-togetherness
-constraints demands that `u` and `v` sit together while the edge between them
-demands they sit apart — an odd closed walk in disguise — so return `false`.
-Survive every edge and the sets are a legitimate two-sided split.
-
-`find` does two passes: one to climb to the representative, and a second along
-the same chain repointing each node straight at it. That second pass costs
-nothing asymptotically and leaves the structure flatter for the queries that
-follow.
-
-**Complexity:** `O((V + E)·log V)` time — `O(V + E)` merge and lookup calls,
-each amortised logarithmic and in practice near constant — and `O(V)` space for
-the parent array.

@@ -5,8 +5,31 @@ decremented. `x^e = (x²)^(e/2)` when `e` is even, and `x^e = x · (x²)^((e-1)/
 when it is odd, so the work per step is a squaring plus at most one extra
 factor, and the exponent loses a bit. That is what separates `O(log n)`
 multiplications from the `n` multiplications of repeated multiplication. The
-two variants differ only in whether the exponent is consumed bit by bit in a
-loop or halved by recursion.
+two variants differ only in whether the exponent is halved by recursion or
+consumed bit by bit in a loop.
+
+## fast_pow_recursive
+
+The same identity stated top-down. `power(x, e)` asks for `power(x, e / 2)`
+exactly once, squares what comes back, and multiplies in one extra `x` when
+`e` is odd. Producing the half a single time and squaring it — rather than
+multiplying two recursive calls — is the point: the recursion is a chain of
+depth `log₂(e) + 1`, about 31 frames at the top of the 32-bit range, with one
+multiplication per even level and two per odd one.
+
+The base case `e == 0` returns `1.0` with no loop at all. A negative exponent
+reciprocates the positive result, exactly as in the iterative variant, and the
+fixed-width ports widen the exponent before negating it so that `n = -2³¹`
+cannot overflow. For `x = 3`, `n = 5` the chain runs 5 → 2 → 1 → 0: the base
+case returns 1, the odd level at 1 contributes the spare factor 3, the level
+at 2 squares to 9, and the top level squares again and folds in the last 3 to
+reach 243.
+
+The structural difference from the iterative variant is the call stack:
+`O(log n)` frames against a fixed handful of variables, both negligible at
+this exponent bound.
+
+**Complexity:** `O(log n)` time, `O(log n)` stack space.
 
 ## fast_pow_iterative
 
@@ -35,26 +58,3 @@ The state is three float variables regardless of exponent size, and the loop
 runs once per bit of `|n|`.
 
 **Complexity:** `O(log n)` time, `O(1)` space.
-
-## fast_pow_recursive
-
-The same identity stated top-down. `power(x, e)` asks for `power(x, e / 2)`
-exactly once, squares what comes back, and multiplies in one extra `x` when
-`e` is odd. Producing the half a single time and squaring it — rather than
-multiplying two recursive calls — is the point: the recursion is a chain of
-depth `log₂(e) + 1`, about 31 frames at the top of the 32-bit range, with one
-multiplication per even level and two per odd one.
-
-The base case `e == 0` returns `1.0` with no loop at all. A negative exponent
-reciprocates the positive result, exactly as in the iterative variant, and the
-fixed-width ports widen the exponent before negating it so that `n = -2³¹`
-cannot overflow. For `x = 3`, `n = 5` the chain runs 5 → 2 → 1 → 0: the base
-case returns 1, the odd level at 1 contributes the spare factor 3, the level
-at 2 squares to 9, and the top level squares again and folds in the last 3 to
-reach 243.
-
-The structural difference from the iterative variant is the call stack:
-`O(log n)` frames against a fixed handful of variables, both negligible at
-this exponent bound.
-
-**Complexity:** `O(log n)` time, `O(log n)` stack space.

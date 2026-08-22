@@ -4,6 +4,21 @@ Both variants are the same spread over the land cells; each cell of each
 landmass is reached exactly once, and the two differ only in the order the
 frontier is drained and the constants of the container holding it.
 
+## DFS
+
+The same spread with the other frontier discipline: a stack. Seeding is
+identical, but the cell leaving the stack is the most recently pushed one, so
+the spread digs to the far end of a peninsula before returning to explore the
+seed's other neighbours — one landmass is carved in a single depth-first
+sweep. The stack is explicit rather than the language's call stack, because a
+300×300 all-land grid would otherwise need one call frame per cell and
+overflow long before the spread finished.
+
+**Complexity:** `O(m·n)` time — each cell is pushed at most once and each edge
+is examined a constant number of times. `O(m·n)` extra space in the worst case:
+unlike the queue, the stack can hold an entire landmass before it begins to
+drain.
+
 ## BFS
 
 Spread over one island ring by ring, holding the frontier in a queue. The scan
@@ -25,18 +40,3 @@ one distance from the seed.
 edge is examined a constant number of times. `O(min(m, n))` extra space for
 the queue in the worst case: a diagonal island keeps the frontier short, and a
 full grid keeps it no wider than the smaller dimension's front.
-
-## DFS
-
-The same spread with the other frontier discipline: a stack. Seeding is
-identical, but the cell leaving the stack is the most recently pushed one, so
-the spread digs to the far end of a peninsula before returning to explore the
-seed's other neighbours — one landmass is carved in a single depth-first
-sweep. The stack is explicit rather than the language's call stack, because a
-300×300 all-land grid would otherwise need one call frame per cell and
-overflow long before the spread finished.
-
-**Complexity:** `O(m·n)` time — each cell is pushed at most once and each edge
-is examined a constant number of times. `O(m·n)` extra space in the worst case:
-unlike the queue, the stack can hold an entire landmass before it begins to
-drain.

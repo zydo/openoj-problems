@@ -1,5 +1,26 @@
 # Solutions — Count Graph Components
 
+## dfs
+
+Count components the literal way: first materialize the undirected adjacency
+list — each edge appended at both ends, so traversal can cross it in either
+direction — then walk the node range `0..n-1`. Whenever the sweep meets a
+node nobody has claimed, that node opens a fresh component: add one to the
+count and flood everything reachable from it. Each flood swallows exactly
+one component whole, and every node belongs to exactly one flood, so the
+number of floods is the component count.
+
+The flood runs as an explicit-stack DFS, immune to recursion-depth limits.
+Popping a node walks its adjacency list, and any neighbor not yet marked is
+marked and pushed at once. Marking on push rather than on pop is what keeps
+a node from ever sitting twice on the stack, so each node is popped once and
+each adjacency entry is read once over the entire run — linear work in the
+edge-list representation, where one node's list holds only its actual edges
+instead of a full matrix row.
+
+**Complexity:** `O(n + E)` time, `O(n + E)` space for the adjacency list,
+visited array, and a stack that peaks at all `n` nodes.
+
 ## union_find
 
 Start from `n` singleton components, `count` at `n`, and process the edge
@@ -25,24 +46,3 @@ like `[2,3]` among `n = 4` nodes leaves the answer at three.
 
 **Complexity:** `O(E · α(n))` time — effectively linear under compression —
 with `O(n)` space.
-
-## dfs
-
-Count components the literal way: first materialize the undirected adjacency
-list — each edge appended at both ends, so traversal can cross it in either
-direction — then walk the node range `0..n-1`. Whenever the sweep meets a
-node nobody has claimed, that node opens a fresh component: add one to the
-count and flood everything reachable from it. Each flood swallows exactly
-one component whole, and every node belongs to exactly one flood, so the
-number of floods is the component count.
-
-The flood runs as an explicit-stack DFS, immune to recursion-depth limits.
-Popping a node walks its adjacency list, and any neighbor not yet marked is
-marked and pushed at once. Marking on push rather than on pop is what keeps
-a node from ever sitting twice on the stack, so each node is popped once and
-each adjacency entry is read once over the entire run — linear work in the
-edge-list representation, where one node's list holds only its actual edges
-instead of a full matrix row.
-
-**Complexity:** `O(n + E)` time, `O(n + E)` space for the adjacency list,
-visited array, and a stack that peaks at all `n` nodes.

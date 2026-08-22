@@ -4,26 +4,22 @@ Three standard shortest-path engines, each reading off the same quantity: the
 moment the flood finishes is the largest shortest distance from `k`, and a node
 with no route from `k` turns the answer into `-1`.
 
-## Dijkstra with a Min-Heap
+## Floyd-Warshall
 
-A message crossing a link of weight `w` is a directed edge of length `w`, so
-the arrival moment at each node is its single-source shortest distance from
-`k`, and the finishing moment is the maximum of those distances over all `n`
-nodes. The heap-driven form of Dijkstra computes them all at once: the heap
-holds `(distance, node)` candidates, pops the nearest unsettled node first,
-and a node is finalized on its first pop.
+Solve every source at once instead of one. The graph becomes an
+`(n+1)×(n+1)` matrix — zero on the diagonal, infinity elsewhere, and the
+smaller weight if a pair repeats — and a triple loop offers every node `m` as
+a waypoint, relaxing `d[i][j]` against `d[i][m] + d[m][j]`. Once the outer
+loop has admitted each waypoint in turn, `d[i][j]` is the true distance for
+every pair simultaneously.
 
-Stale entries are simply skipped — a pop that finds its node already settled
-does nothing, and settled neighbors are never pushed again. Non-negative
-weights are what make the first pop provably final, which licenses settling a
-node immediately and never looking back.
+All-pairs breadth is wasted effort for one source but costs nothing here: with
+`n <= 100` the cubic loop is about a million comparisons, and the guards keep
+`INF + INF` from overflowing the sentinel where no float infinity exists. Row
+`k` then holds the answer: any infinity among `d[k][1..n]` means someone never
+heard the signal (`-1`), otherwise the row's maximum is the finishing moment.
 
-If fewer than `n` nodes were settled, the flood missed one and the answer is
-`-1`; otherwise it is the largest settled distance. With `V` nodes and `E`
-edges, the adjacency list costs a linear pass and every edge triggers at most
-one heap push, so heap work dominates.
-
-**Complexity:** `O(E log E)` time, `O(V + E)` space.
+**Complexity:** `O(n³)` time, `O(n²)` space.
 
 ## Bellman-Ford
 
@@ -47,19 +43,23 @@ unlike Dijkstra, the scan would survive weights going negative.
 
 **Complexity:** `O(V·E)` time, `O(V)` space.
 
-## Floyd-Warshall
+## Dijkstra with a Min-Heap
 
-Solve every source at once instead of one. The graph becomes an
-`(n+1)×(n+1)` matrix — zero on the diagonal, infinity elsewhere, and the
-smaller weight if a pair repeats — and a triple loop offers every node `m` as
-a waypoint, relaxing `d[i][j]` against `d[i][m] + d[m][j]`. Once the outer
-loop has admitted each waypoint in turn, `d[i][j]` is the true distance for
-every pair simultaneously.
+A message crossing a link of weight `w` is a directed edge of length `w`, so
+the arrival moment at each node is its single-source shortest distance from
+`k`, and the finishing moment is the maximum of those distances over all `n`
+nodes. The heap-driven form of Dijkstra computes them all at once: the heap
+holds `(distance, node)` candidates, pops the nearest unsettled node first,
+and a node is finalized on its first pop.
 
-All-pairs breadth is wasted effort for one source but costs nothing here: with
-`n <= 100` the cubic loop is about a million comparisons, and the guards keep
-`INF + INF` from overflowing the sentinel where no float infinity exists. Row
-`k` then holds the answer: any infinity among `d[k][1..n]` means someone never
-heard the signal (`-1`), otherwise the row's maximum is the finishing moment.
+Stale entries are simply skipped — a pop that finds its node already settled
+does nothing, and settled neighbors are never pushed again. Non-negative
+weights are what make the first pop provably final, which licenses settling a
+node immediately and never looking back.
 
-**Complexity:** `O(n³)` time, `O(n²)` space.
+If fewer than `n` nodes were settled, the flood missed one and the answer is
+`-1`; otherwise it is the largest settled distance. With `V` nodes and `E`
+edges, the adjacency list costs a linear pass and every edge triggers at most
+one heap push, so heap work dominates.
+
+**Complexity:** `O(E log E)` time, `O(V + E)` space.

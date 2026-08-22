@@ -1,9 +1,31 @@
 # Solutions — Rolling Window Maxima
 
 Neighbouring blocks share all but two of their entries, so the interesting
-question is how to carry information across the shift. Two answers: prune the
-candidates down to those that can still lead a block, or keep them all in a
-priority queue and tolerate expired entries near the top until they surface.
+question is how to carry information across the shift. Two answers: keep them
+all in a priority queue and tolerate expired entries near the top until they
+surface, or prune the candidates down to those that can still lead a block.
+
+## Lazy Max-Heap
+
+Push `(value, index)` for every entry as it arrives; the heap's top is then the
+largest value seen so far, which is the answer as long as its index is still
+inside the block. A binary heap has no cheap way to reach in and delete an
+entry that has just expired, so nothing is deleted eagerly. Instead, just
+before reading the top, pop while the top's index satisfies `index <= i - k`.
+
+This lazy policy is safe precisely because the heap is ordered by value. An
+expired record can only shadow the true answer if it is larger than it, and it
+is popped in exactly that case; expired records that are smaller sit harmlessly
+below and get discarded whenever a later pop brings them to the surface. Every
+entry is pushed once and popped at most once, so the heap work totals
+`O(n log n)`.
+
+That logarithm is the whole difference between the two variants. The heap
+carries records that can no longer win but have not yet been noticed; the deque
+throws them away at the moment of arrival and so never pays to sort anything.
+
+**Complexity:** `O(n log n)` time, `O(n)` space — before stale records are
+popped the heap can hold one per entry.
 
 ## Monotonic Deque
 
@@ -28,28 +50,6 @@ The inner `while` looks like it could be quadratic, but each index is appended
 once and removed once, from whichever end, so the whole run is linear. The
 deque never exceeds `k` indices and the answer has `n - k + 1` entries. That is
 strictly better than rescanning each block (`O(n·k)`) and better than the heap
-below by a logarithmic factor.
+above by a logarithmic factor.
 
 **Complexity:** `O(n)` time, `O(k)` space.
-
-## Lazy Max-Heap
-
-Push `(value, index)` for every entry as it arrives; the heap's top is then the
-largest value seen so far, which is the answer as long as its index is still
-inside the block. A binary heap has no cheap way to reach in and delete an
-entry that has just expired, so nothing is deleted eagerly. Instead, just
-before reading the top, pop while the top's index satisfies `index <= i - k`.
-
-This lazy policy is safe precisely because the heap is ordered by value. An
-expired record can only shadow the true answer if it is larger than it, and it
-is popped in exactly that case; expired records that are smaller sit harmlessly
-below and get discarded whenever a later pop brings them to the surface. Every
-entry is pushed once and popped at most once, so the heap work totals
-`O(n log n)`.
-
-That logarithm is the whole difference between the two variants. The heap
-carries records that can no longer win but have not yet been noticed; the deque
-throws them away at the moment of arrival and so never pays to sort anything.
-
-**Complexity:** `O(n log n)` time, `O(n)` space — before stale records are
-popped the heap can hold one per entry.
