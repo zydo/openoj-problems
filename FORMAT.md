@@ -146,47 +146,42 @@ solution matches its starter's signature exactly and must pass every case in
 
 ## Formatting
 
-Every file in the repository is formatted by a pinned toolchain, applied at
-generation time (`gen_starters.py` formats its output) and enforced in CI
-(`format.py --check` inside the `scripts/format.Dockerfile` all-in-one
-container, so CI and the pinned local container are the same environment).
-The workspace `.vscode/settings.json` maps every language to an
-`editor.defaultFormatter` that delegates to the same pinned engine as the
-CLI: ruff, gofmt, rustfmt, clang-format, and sql-formatter via their
-language extensions, and prettier (workspace `node_modules`, driven by
-`.prettierrc.json`) via `esbenp.prettier-vscode` for JavaScript,
-TypeScript, Java, and Markdown. Editor, generator, and CI therefore all
-produce identical bytes. Without the tools installed locally, run the
-container:
+Every file in the repository is formatted by **one toolchain, owned by the
+openoj runner image**: `openoj/runner/formatters.py` (in the openoj repo)
+holds the implementation and every version pin, and this repo's
+`scripts/format.py` is only a loader that imports it — from inside the
+image in CI, or from a sibling openoj checkout locally (`OPENOJ_RUNNER_DIR`
+to point elsewhere). Generation (`gen_starters.py`), checking
+(`check.py`), CI, the editor's Format button, and the `openoj format` CLI
+all format through that single module, so output is byte-identical
+everywhere. This repo deliberately carries no formatter pins or
+`node_modules` of its own.
+
+| Files          | Formatter                                 | Language key in formatters.py |
+| -------------- | ----------------------------------------- | ------------------------------ |
+| `*.py`         | `ruff format` (line length 120)          | `python3`                      |
+| `*.go`         | `gofmt`                                   | `go`                           |
+| `*.rust`       | `rustfmt --edition 2021` (width 120)     | `rust`                         |
+| `*.cpp`        | `clang-format` (LLVM style, indent 4)    | `cpp`                          |
+| `*.js`         | `prettier`                                | `javascript`                   |
+| `*.ts`         | `prettier`                                | `typescript`                   |
+| `*.java`       | `prettier` + `prettier-plugin-java`       | `java`                         |
+| `*.sql`        | `sql-formatter` (sqlite dialect)          | `sql`                          |
+| `*.json`       | canonical 2-space JSON + trailing newline | `json`                         |
+| `*.md`         | `prettier` (`proseWrap: preserve`)        | `markdown`                     |
+
+Tool versions are pinned in the runner image's Dockerfile (the same build
+the editor's Format button runs on). Run `python3 scripts/format.py` to
+format everything or `--check` to verify without writing; equivalently,
+from the image:
 
 ```bash
-docker build -f scripts/format.Dockerfile -t openoj-format .
-docker run --rm -v "$PWD":/repo -w /repo openoj-format --check
+docker run --rm --user 0:0 -v "$PWD":/repo:rw \
+  ghcr.io/zydo/openoj-runner:latest openoj format --check /repo
 ```
 
-| Files          | Formatter                                 | Pin / install                |
-| -------------- | ----------------------------------------- | ---------------------------- |
-| `*.py`         | `ruff format` (line length 88)            | `ruff==0.16.3` (pip)         |
-| `*.go`         | `gofmt`                                   | Go 1.24 toolchain            |
-| `*.rust`       | `rustfmt --edition 2021`                  | rust 1.85 toolchain          |
-| `*.cpp`        | `clang-format` (LLVM style, indent 4)     | `clang-format==22.1.8` (pip) |
-| `*.js`         | `prettier`                                | `prettier@3.9.6` (npm)       |
-| `*.ts`         | `prettier`                                | `prettier@3.9.6` (npm)       |
-| `*.java`       | `prettier` + `prettier-plugin-java`       | plugin `@2.10.3` (npm)       |
-| `*.sql`        | `sql-formatter` (sqlite dialect)          | `sql-formatter@15.8.2` (npm) |
-| `*.json`       | canonical 2-space JSON + trailing newline | matches VS Code's built-in   |
-| `statement.md` | `prettier` (`proseWrap: preserve`)        | `prettier@3.9.6` (npm)       |
-
-npm tools are pinned in `package.json` / `package-lock.json`
-(`npm ci`). Config lives in `.prettierrc.json`, `.clang-format`, and
-`ruff.toml`. Run `python3 scripts/format.py` to format everything, or
-`--check` to verify without writing. When you add or edit a solution, run
-the formatter before pushing — CI rejects unformatted files.
-
-Two deliberate substitutions where an editor engine has no CLI: the VS Code
-built-in JS/TS formatter is replaced by prettier (the ecosystem standard),
-and Java's JDT formatter is replaced by prettier-plugin-java; both are
-pinned so output is deterministic everywhere.
+When you add or edit a solution, run the formatter before pushing — CI
+rejects unformatted files.
 
 ## Checking
 
