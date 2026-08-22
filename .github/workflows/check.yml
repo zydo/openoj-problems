@@ -1,0 +1,52 @@
+name: Check problems
+
+# Runs inside the published runner image (the same build that powers the
+# editor's Format button and the openoj CLI), so the toolchain is the
+# pinned one by construction: format check + static bundle checks on
+# every push/PR, plus the full judge sweep on demand and weekly.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * 1"  # weekly, off the :00 marks
+
+permissions:
+  contents: read
+
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/zydo/openoj-runner:latest
+      options: --user 0:0
+    steps:
+      - uses: actions/checkout@v5
+      - name: Format check (every formattable file)
+        run: openoj format --check problems
+      - name: Bundle static checks
+        run: python3 scripts/check.py --tree problems --skip-runtime
+
+  judge:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/zydo/openoj-runner:latest
+      options: --user 0:0
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ["0001-0100", "0101-0200", "0201-0300", "0301-0400", "0401-0500", "0501-0600", "0601-0700", "0701-0800", "0801-0900"]
+    steps:
+      - uses: actions/checkout@v5
+      - name: Judge every bundle in ${{ matrix.shard }}
+        run: |
+          set -e
+          failures=0
+          for bundle in problems/${{ matrix.shard }}/*/; do
+            if ! openoj judge "$bundle"; then failures=$((failures + 1)); fi
+          done
+          echo "bundles with failures in ${{ matrix.shard }}: $failures"
+          exit $((failures > 0))
