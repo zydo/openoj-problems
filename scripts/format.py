@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
-"""Format (or --check) every problem-repo file with the pinned toolchain.
+"""Format (or --check) problem-repo files.
 
-The toolchain mirrors the VS Code formatter settings documented in
-FORMAT.md, using each engine's CLI so editor, generation, and CI all agree:
+The formatter implementation and every tool pin live in ONE place: the
+openoj runner image's `formatters.py` (see openoj/runner/formatters.py —
+the editor's Format button and the `openoj format` CLI use the same
+module). This file is only a loader: it imports that implementation from
+wherever it is available so that generation (gen_starters), checking
+(check.py), CI (inside the image), and the editor all format
+byte-identically. There is deliberately no local toolchain here anymore.
 
-  extension      formatter                pin (see package.json / CI)
-  ------------   -----------------------  -----------------------------
-  .py            ruff format              ruff==0.16.3 (pip)
-  .go            gofmt                    Go 1.24 toolchain
-  .rust          rustfmt --edition 2021   rust 1.85 toolchain
-  .cpp           clang-format             clang-format==22.1.8 (pip)
-  .js            prettier                 prettier==3.9.6 (npm)
-  .ts            prettier                 prettier==3.9.6 (npm)
-  .java          prettier + plugin        prettier-plugin-java==2.10.3
-  .sql           sql-formatter            sql-formatter==15.8.2 (npm)
-  .json          canonical JSON           2-space indent + trailing newline
-  .md            prettier                 proseWrap: preserve
+Loader order:
+  1. an in-image `formatters.py` next to the runner (when this script
+     runs inside the openoj image);
+  2. `$OPENOJ_RUNNER_DIR/formatters.py` (a checkout of the openoj repo);
+  3. a sibling `../openoj/runner/formatters.py` checkout.
 
 Usage:
   format.py [--check] [--tolerant] [<bundle-or-file> ...]   # default: all
@@ -25,102 +23,72 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import json
-import shutil
-import subprocess
+import importlib.util
+import os
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PRETTIER_CONFIG = ["--config", str(ROOT / ".prettierrc.json")]
+
+
+def _load_formatters():
+    candidates = []
+    runner_dir = os.environ.get("OPENOJ_RUNNER_DIR")
+    if runner_dir:
+        candidates.append(Path(runner_dir))
+    here = Path(__file__).resolve().parent          # in-image: /runner
+    candidates.append(here)
+    candidates.append(ROOT.parent / "openoj" / "runner")  # sibling checkout
+    for directory in candidates:
+        module_path = directory / "formatters.py"
+        if not module_path.is_file():
+            continue
+        spec = importlib.util.spec_from_file_location("openoj_formatters", module_path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+    raise SystemExit(
+        "formatters.py not found. Formatting is owned by the openoj runner image:\n"
+        "  - run inside the image (docker run ghcr.io/zydo/openoj-runner ...), or\n"
+        "  - set OPENOJ_RUNNER_DIR to a checkout of the openoj repo's runner/, or\n"
+        "  - keep a sibling checkout of the openoj repo next to this one."
+    )
+
+
+_formatters = _load_formatters()
+
+# The implementation resolves tools on PATH. Inside the image they are
+# global; from a sibling checkout the tools live in this repo's
+# node_modules/.bin (same pins the image was built from), so expose that
+# before any formatting happens.
+_extra_bin = ROOT / "node_modules" / ".bin"
+if _extra_bin.is_dir():
+    os.environ["PATH"] = f"{_extra_bin}{os.pathsep}{os.environ.get('PATH', '')}"
+
+EXTENSION_LANGUAGE = {
+    "py": "python3", "go": "go", "rust": "rust", "cpp": "cpp",
+    "js": "javascript", "ts": "typescript", "java": "java",
+    "sql": "sql", "json": "json", "md": "markdown",
+}
 
 _missing: set[str] = set()
-
-
-def _resolve(executable: str) -> str | None:
-    found = shutil.which(executable)
-    if found:
-        return found
-    # documented fallback location for pip --user installs
-    candidate = Path.home() / f"Library/Python/{sys.version_info.major}.{sys.version_info.minor}/bin" / executable
-    if candidate.is_file():
-        return str(candidate)
-    return None
-
-
-def _run(command: list[str], content: str, tool: str) -> str:
-    resolved = _resolve(command[0])
-    if resolved is None:
-        raise FileNotFoundError(command[0])
-    completed = subprocess.run(
-        [resolved, *command[1:]], input=content, capture_output=True, text=True, timeout=60
-    )
-    if completed.returncode != 0:
-        raise RuntimeError(f"{tool} failed: {completed.stderr.strip()[:400]}")
-    return completed.stdout
-
-
-def _node(script: str, content: str, tool: str) -> str:
-    if shutil.which("node") is None:
-        raise FileNotFoundError("node")
-    completed = subprocess.run(
-        ["node", "-e", script], input=content, capture_output=True, text=True, timeout=60, cwd=ROOT
-    )
-    if completed.returncode != 0:
-        raise RuntimeError(f"{tool} failed: {completed.stderr.strip()[:400]}")
-    return completed.stdout
-
-
-def _format_sql(content: str) -> str:
-    script = (
-        "const { format } = require('sql-formatter');"
-        "process.stdout.write(format(require('fs').readFileSync(0, 'utf8'), { language: 'sqlite' }))"
-    )
-    return _node(script, content, "sql-formatter")
-
-
-def _formatter(extension: str):
-    if extension == "py":
-        return lambda c: _run(["ruff", "format", "--line-length", "120", "-"], c, "ruff")
-    if extension == "go":
-        return lambda c: _run(["gofmt"], c, "gofmt")
-    if extension == "rust":
-        # rustfmt reads its config from the working directory, which is not
-        # ours to rely on when formatting a stream, so the width is passed
-        # explicitly rather than left to rustfmt.toml.
-        return lambda c: _run(
-            ["rustfmt", "--edition", "2021", "--config", "max_width=120", "--emit", "stdout"], c, "rustfmt"
-        )
-    if extension == "cpp":
-        return lambda c: _run(["clang-format", "--style=file", "--assume-filename=x.cpp"], c, "clang-format")
-    if extension in ("js", "ts", "java", "md"):
-        parser = {"js": "babel", "ts": "typescript", "java": "java", "md": "markdown"}[extension]
-        return lambda c, parser=parser: _run(
-            ["npx", "--no-install", "prettier", *PRETTIER_CONFIG, "--parser", parser], c, "prettier"
-        )
-    if extension == "sql":
-        return _format_sql
-    if extension == "json":
-        return lambda c: json.dumps(json.loads(c), indent=2, ensure_ascii=False) + "\n"
-    return None
 
 
 def format_content(extension: str, content: str, tolerant: bool = True) -> str:
     """Format one file's content; returns it unchanged when the tool for its
     language is unavailable and tolerant is set (generation-time behavior)."""
-    formatter = _formatter(extension)
-    if formatter is None:
+    language = EXTENSION_LANGUAGE.get(extension)
+    if language is None:
         return content
     try:
-        formatted = formatter(content)
-    except (FileNotFoundError, RuntimeError) as error:
+        return _formatters.format_source(language, content)
+    except _formatters.FormatError as error:
         if not tolerant:
             raise
         if extension not in _missing:
             _missing.add(extension)
             print(f"warning: {error} — leaving .{extension} files unformatted", file=sys.stderr)
         return content
-    return formatted
 
 
 def _targets(arguments: list[str]) -> list[Path]:
@@ -132,7 +100,7 @@ def _targets(arguments: list[str]) -> list[Path]:
     return [path for path in files if path.is_file()]
 
 
-FORMATTABLE = {"py", "go", "rust", "cpp", "js", "ts", "java", "sql", "json", "md"}
+FORMATTABLE = set(EXTENSION_LANGUAGE)
 
 
 def main() -> None:
