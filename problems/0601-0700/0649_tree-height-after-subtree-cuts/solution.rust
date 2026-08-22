@@ -1,12 +1,5 @@
 use std::collections::HashMap;
 
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
-
 impl Solution {
     pub fn cut_heights(root: Option<Box<TreeNode>>, queries: Vec<i32>) -> Vec<i32> {
         let mut depth: HashMap<i32, i32> = HashMap::new();

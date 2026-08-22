@@ -1,9 +1,7 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
+// Judge-provided types (not editable here; the judge assembles their
+// definitions into every submission):
+//   ListNode:  { field val: i32, next: Option<Box<ListNode>> }
+//   TreeNode:  { field val: i32, left/right: Option<Box<TreeNode>> }
 
 impl Solution {
     pub fn deepest_shared_ancestor(root: Option<Box<TreeNode>>, p: i32, q: i32) -> i32 {

@@ -230,6 +230,19 @@ PY_LIST_NODE = """class ListNode:
         self.next = next
 """
 
+PY_SHARED_DOC = """
+# Judge-provided types (not editable here; the judge assembles their
+# definitions into every submission):
+#   ListNode:  .val int, .next ListNode | None
+#   TreeNode:  .val int, .left / .right TreeNode | None
+"""
+
+RUST_SHARED_DOC = """// Judge-provided types (not editable here; the judge assembles their
+// definitions into every submission):
+//   ListNode:  { field val: i32, next: Option<Box<ListNode>> }
+//   TreeNode:  { field val: i32, left/right: Option<Box<TreeNode>> }
+"""
+
 PY_TREE_NODE = """class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -273,10 +286,8 @@ def generate(invocation: dict, language: str) -> str:
 
     if language == "python3":
         blocks = _py_imports()
-        if "list" in structs:
-            blocks.append(PY_LIST_NODE + "\n\n")
-        if "tree" in structs:
-            blocks.append(PY_TREE_NODE + "\n\n")
+        if structs:
+            blocks.append(PY_SHARED_DOC + "\n\n")
         signature = ", ".join(
             [f"self", *(f"{parameter}: {python_type(spec)}" for parameter, spec in parameters)]
         )
@@ -333,10 +344,8 @@ def generate(invocation: dict, language: str) -> str:
     if language == "rust":
         chunks = []
         item = _struct_item_type(invocation)
-        if "list" in structs:
-            chunks.append(RUST_LIST_NODE.replace("{item}", item) + "\n")
-        if "tree" in structs:
-            chunks.append(RUST_TREE_NODE.replace("{item}", item) + "\n")
+        if structs:
+            chunks.append(RUST_SHARED_DOC + "\n")
         signature = ", ".join(f"{parameter}: {rust_type(spec)}" for parameter, spec in parameters)
         chunks.append("impl Solution {\n")
         chunks.append(f"    pub fn {name}({signature}) -> {rust_type(return_type)} {{\n")

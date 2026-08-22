@@ -1,8 +1,7 @@
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+# Judge-provided types (not editable here; the judge assembles their
+# definitions into every submission):
+#   ListNode:  .val int, .next ListNode | None
+#   TreeNode:  .val int, .left / .right TreeNode | None
 
 
 class Solution:

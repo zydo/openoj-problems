@@ -1,8 +1,7 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
+// Judge-provided types (not editable here; the judge assembles their
+// definitions into every submission):
+//   ListNode:  { field val: i32, next: Option<Box<ListNode>> }
+//   TreeNode:  { field val: i32, left/right: Option<Box<TreeNode>> }
 
 impl Solution {
     pub fn splice_k_sorted_lists(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {

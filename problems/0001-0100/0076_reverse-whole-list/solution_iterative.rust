@@ -1,9 +1,3 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
 impl Solution {
     pub fn reverse_whole_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         // prev heads the already-reversed chain; invariant: behind prev

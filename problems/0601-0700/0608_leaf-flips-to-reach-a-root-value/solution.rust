@@ -1,10 +1,3 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
-
 use std::collections::HashMap;
 
 impl Solution {
