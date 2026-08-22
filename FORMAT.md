@@ -9,7 +9,7 @@ the single source of the problem key:
 ```text
 problems/
 └── 0001-0100/           inclusive id-range shards of 100
-    └── 0001_two-sum/
+    └── 0001_pair-sum/
         ├── problem.json     machine data: metadata, invocation, limits
         ├── cases.json       testcase corpus ({public, hidden} display grouping)
         ├── statement.md     the human-readable problem statement
@@ -187,7 +187,7 @@ rejects unformatted files.
 
 ```bash
 python3 scripts/check.py --problems=all
-python3 scripts/check.py --problems=0001_two-sum,0002_add-two-numbers
+python3 scripts/check.py --problems=0001_pair-sum,0002_add-digit-lists
 ```
 
 The static tier (bundle completeness, schema conformance, statement grammar,
