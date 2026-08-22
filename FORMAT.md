@@ -177,7 +177,7 @@ from the image:
 
 ```bash
 docker run --rm --user 0:0 -v "$PWD":/repo:rw \
-  ghcr.io/zydo/openoj-runner:latest openoj format --check /repo
+  ghcr.io/zydo/openoj:latest openoj format --check /repo
 ```
 
 When you add or edit a solution, run the formatter before pushing — CI
