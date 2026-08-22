@@ -1,7 +1,13 @@
 # common — the shared vocabulary every problem builds on
 
 One version of the common data types, owned by the problem set rather
-than the judge. For every submission the judge assembles one complete
+than the judge. The contract is versioned: `VERSION.json` declares the
+harness version, the types it provides, and their field layout — the
+consumers below read it at startup (the CLI asserts compatibility, and
+the API records the version with every job). A bump here means every
+bundle's `problem.json` may declare `"common": <n>` (default: the
+version present in the checkout; anything older than the checkout's is
+served compatibly as long as the wire layout above is unchanged). For every submission the judge assembles one complete
 program:
 
     common/<language>  +  problems/<key>/provided/<language>  +  submission

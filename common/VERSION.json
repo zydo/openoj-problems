@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "version": 1,
+  "types": ["ListNode", "TreeNode", "Node"],
+  "wire": {
+    "ListNode": {"val": "int", "next": "ListNode | null"},
+    "TreeNode": {"val": "int", "left": "TreeNode | null", "right": "TreeNode | null"},
+    "Node": {"val": "int", "children": "list[Node]"}
+  }
+}
