@@ -20,7 +20,7 @@ jobs:
   static:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/zydo/openoj-runner:latest
+      image: ghcr.io/zydo/openoj:latest
       options: --user 0:0
     steps:
       - uses: actions/checkout@v5
@@ -33,7 +33,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/zydo/openoj-runner:latest
+      image: ghcr.io/zydo/openoj:latest
       options: --user 0:0
     strategy:
       fail-fast: false
