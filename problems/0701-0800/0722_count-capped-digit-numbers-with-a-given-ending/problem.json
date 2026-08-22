@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 722,
   "slug": "count-capped-digit-numbers-with-a-given-ending",
   "title": "Count Capped-Digit Numbers With a Given Ending",

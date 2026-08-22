@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 462,
   "slug": "best-pair-score-within-k",
   "title": "Best Pair Score Within k",

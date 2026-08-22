@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 160,
   "slug": "water-pooled-on-a-grid",
   "title": "Water Pooled On A Grid",

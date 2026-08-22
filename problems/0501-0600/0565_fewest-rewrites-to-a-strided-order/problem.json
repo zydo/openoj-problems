@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 565,
   "slug": "fewest-rewrites-to-a-strided-order",
   "title": "Fewest Rewrites to a Strided Order",

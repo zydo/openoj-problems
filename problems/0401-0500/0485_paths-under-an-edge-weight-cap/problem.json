@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 485,
   "slug": "paths-under-an-edge-weight-cap",
   "title": "Paths Under an Edge-Weight Cap",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 479,
   "slug": "fewest-changes-to-match-mirror-sums",
   "title": "Fewest Changes to Match Mirror Sums",

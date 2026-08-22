@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 775,
   "slug": "count-grid-routes-with-a-given-xor",
   "title": "Count Grid Routes With a Given Xor",

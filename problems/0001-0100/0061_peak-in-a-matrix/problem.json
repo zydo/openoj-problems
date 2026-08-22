@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "row_max_binary_search",
   "id": 61,
   "slug": "peak-in-a-matrix",
   "title": "Peak in a Matrix",

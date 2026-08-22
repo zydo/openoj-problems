@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "min_heap",
   "id": 13,
   "slug": "splice-k-sorted-lists",
   "title": "Splice K Sorted Lists",

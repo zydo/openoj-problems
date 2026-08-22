@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 665,
   "slug": "deepest-valid-grouping-of-a-graph",
   "title": "Deepest Valid Grouping of a Graph",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 678,
   "slug": "plausible-roots-of-a-tree",
   "title": "Plausible Roots of a Tree",

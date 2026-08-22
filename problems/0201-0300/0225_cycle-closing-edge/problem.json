@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "union_find",
   "id": 225,
   "slug": "cycle-closing-edge",
   "title": "Cycle-Closing Edge",

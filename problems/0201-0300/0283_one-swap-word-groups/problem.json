@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 283,
   "slug": "one-swap-word-groups",
   "title": "One-Swap Word Groups",

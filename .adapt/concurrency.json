@@ -2,7 +2,7 @@
   "policy": "Adaptive subagent concurrency for the adaptation program. Target is the number of agents kept running; on frequent rate limiting it steps down, and it recovers slowly when quiet.",
   "cap": 16,
   "floor": 4,
-  "target": 3,
+  "target": 4,
   "step_down_on": "2 or more rate-limit agent deaths within one quota window",
   "recover": "+2 to target per hour with zero rate-limit events",
   "events": [
@@ -88,7 +88,24 @@
       "at": "2026-08-21T12:46:00-07:00",
       "kind": "per-minute-429",
       "agents_lost": 1,
-      "note": "Design-port wave: 9 agents at once tripped the per-minute request limit (1302), killing 'Port design solutions 2' (trio agent; dispatch: 0230/0303/0307/0355/0460/0380 \u2014 its last note confused a 0094 path). 8 agents still running; resume this one only when a slot frees. Do not launch replacements now."
+      "note": "Design-port wave: 9 agents at once tripped the per-minute request limit (1302), killing 'Port design solutions 2' (trio agent; dispatch: 0230/0303/0307/0355/0460/0380 — its last note confused a 0094 path). 8 agents still running; resume this one only when a slot frees. Do not launch replacements now."
+    },
+    {
+      "at": "2026-08-21T23:55:00-07:00",
+      "kind": "policy",
+      "note": "User raised the parallelism cap for the multi-solution variant wave: more subagents may run in parallel on task #5 (authoring). Target set to 9. Rate-limit step-down rules unchanged if 429s return."
+    },
+    {
+      "at": "2026-08-22T14:25:00-07:00",
+      "kind": "per-minute-429",
+      "agents_lost": 5,
+      "note": "Variant-authoring wave 1 (9 concurrent incl. curators) tripped 429 code 1302 (per-minute limit; error id 202608221422058ff8bb72f97b483a). User capped subagents at 4 and manually stopped five authoring agents (0363/0428/0546/0376/0403) so they must be resumed one-per-free-slot, in that order. Curator C stalled the same way: its verification sub-batches died; resume it with no-new-subagents. Target set to 4."
+    },
+    {
+      "at": "2026-08-22T17:32:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 1,
+      "note": "Variant wave tail: the 0587 (hash LCP) authoring agent died on the 5-hour pool (429 code 1308; reset 2026-08-22 18:14:11 PDT, error id 2026082217315176ca3a1caba140eb). Consumption-driven, not concurrency -- target stays 4. 0587 had read all seven solutions + solutions.md; resume it via SendMessage after reset. Three tail agents (0739/0606/0826) may also die; no new launches until the pool resets. A one-shot 18:16 PDT timer fires the resume."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"

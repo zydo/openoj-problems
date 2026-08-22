@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 401,
   "slug": "best-word-score-from-a-letter-pool",
   "title": "Best Word Score From a Letter Pool",

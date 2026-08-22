@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 626,
   "slug": "shift-letters-over-ranges",
   "title": "Shift Letters Over Ranges",

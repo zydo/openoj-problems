@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 705,
   "slug": "best-total-from-disjoint-segments",
   "title": "Best Total from Disjoint Segments",

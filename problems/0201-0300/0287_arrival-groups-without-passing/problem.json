@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 287,
   "slug": "arrival-groups-without-passing",
   "title": "Arrival Groups Without Passing",

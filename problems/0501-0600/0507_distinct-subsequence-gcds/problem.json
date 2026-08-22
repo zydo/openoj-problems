@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 507,
   "slug": "distinct-subsequence-gcds",
   "title": "Distinct Subsequence GCDs",

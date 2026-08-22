@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 375,
   "slug": "least-cost-to-merge-the-lengths",
   "title": "Least Cost to Merge the Lengths",

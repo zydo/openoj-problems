@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 463,
   "slug": "last-ant-off-the-plank",
   "title": "Last Ant Off the Plank",

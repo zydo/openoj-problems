@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 764,
   "slug": "seconds-needed-to-level-a-mountain",
   "title": "Seconds Needed to Level a Mountain",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 82,
   "slug": "find-grid-words",
   "title": "Find Grid Words",

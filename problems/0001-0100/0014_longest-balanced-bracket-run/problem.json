@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "run_length_dp",
   "id": 14,
   "slug": "longest-balanced-bracket-run",
   "title": "Longest Balanced Bracket Run",

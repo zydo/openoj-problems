@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 619,
   "slug": "maximum-books-with-strictly-rising-takes",
   "title": "Maximum Books With Strictly Rising Takes",

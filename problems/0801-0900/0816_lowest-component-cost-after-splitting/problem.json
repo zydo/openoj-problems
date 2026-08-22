@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 816,
   "slug": "lowest-component-cost-after-splitting",
   "title": "Lowest Component Cost After Splitting",

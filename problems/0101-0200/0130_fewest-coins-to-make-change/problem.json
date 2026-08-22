@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "bfs",
   "id": 130,
   "slug": "fewest-coins-to-make-change",
   "title": "Fewest Coins To Make Change",

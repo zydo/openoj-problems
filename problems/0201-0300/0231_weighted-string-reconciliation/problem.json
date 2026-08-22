@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 231,
   "slug": "weighted-string-reconciliation",
   "title": "Weighted String Reconciliation",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 409,
   "slug": "largest-square-within-a-sum-budget",
   "title": "Largest Square Within a Sum Budget",

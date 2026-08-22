@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 250,
   "slug": "shared-gaps-across-timelines",
   "title": "Shared Gaps Across Timelines",

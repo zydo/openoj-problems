@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 539,
   "slug": "prune-duplicate-folders",
   "title": "Prune Duplicate Folders",

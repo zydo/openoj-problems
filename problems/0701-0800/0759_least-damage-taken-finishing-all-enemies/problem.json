@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 759,
   "slug": "least-damage-taken-finishing-all-enemies",
   "title": "Least Damage Taken Finishing All Enemies",

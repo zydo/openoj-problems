@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 221,
   "slug": "count-palindrome-slices",
   "title": "Count Palindrome Slices",

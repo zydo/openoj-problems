@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 650,
   "slug": "least-moves-to-sort-into-the-blank",
   "title": "Least Moves to Sort Into the Blank",

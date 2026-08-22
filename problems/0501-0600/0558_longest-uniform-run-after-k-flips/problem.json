@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 558,
   "slug": "longest-uniform-run-after-k-flips",
   "title": "Longest Uniform Run After k Flips",

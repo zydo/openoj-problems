@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 450,
   "slug": "covers-every-k-bit-pattern",
   "title": "Covers Every K-Bit Pattern",

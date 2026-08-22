@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "state_bits",
   "id": 115,
   "slug": "life-one-generation",
   "title": "Life, One Generation",

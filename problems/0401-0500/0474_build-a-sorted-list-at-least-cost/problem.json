@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 474,
   "slug": "build-a-sorted-list-at-least-cost",
   "title": "Build a Sorted List at Least Cost",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "quickselect",
   "id": 84,
   "slug": "select-kth-largest",
   "title": "Select Kth Largest",

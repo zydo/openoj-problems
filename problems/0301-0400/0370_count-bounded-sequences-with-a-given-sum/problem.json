@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 370,
   "slug": "count-bounded-sequences-with-a-given-sum",
   "title": "Count Bounded Sequences With a Given Sum",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 455,
   "slug": "earliest-day-for-m-bouquets",
   "title": "Earliest Day for m Bouquets",

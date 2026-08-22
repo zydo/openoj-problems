@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "rolling_bits",
   "id": 67,
   "slug": "repeated-ten-letter-windows",
   "title": "Repeated Ten-Letter Windows",

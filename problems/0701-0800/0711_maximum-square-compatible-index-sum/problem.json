@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 711,
   "slug": "maximum-square-compatible-index-sum",
   "title": "Maximum Square-Compatible Index Sum",

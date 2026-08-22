@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 746,
   "slug": "minimum-cost-cyclic-ordering",
   "title": "Minimum-Cost Cyclic Ordering",

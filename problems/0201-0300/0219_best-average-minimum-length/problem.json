@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 219,
   "slug": "best-average-minimum-length",
   "title": "Best Average with Minimum Length",

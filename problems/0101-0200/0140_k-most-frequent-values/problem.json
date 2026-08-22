@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "bucket",
   "id": 140,
   "slug": "k-most-frequent-values",
   "title": "K Most Frequent Values",

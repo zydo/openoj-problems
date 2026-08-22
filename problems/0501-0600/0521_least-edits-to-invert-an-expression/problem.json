@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 521,
   "slug": "least-edits-to-invert-an-expression",
   "title": "Least Edits to Invert an Expression",

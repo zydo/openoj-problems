@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 624,
   "slug": "count-integers-with-distinct-digits",
   "title": "Count Integers With Distinct Digits",

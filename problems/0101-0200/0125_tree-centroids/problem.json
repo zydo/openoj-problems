@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "double_bfs",
   "id": 125,
   "slug": "tree-centroids",
   "title": "Tree Centroids",

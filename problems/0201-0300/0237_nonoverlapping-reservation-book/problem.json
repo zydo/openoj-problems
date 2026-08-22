@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 237,
   "slug": "nonoverlapping-reservation-book",
   "title": "Nonoverlapping Reservation Book",

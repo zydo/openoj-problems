@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 310,
   "slug": "largest-sum-on-a-circular-sequence",
   "title": "Largest Sum on a Circular Sequence",

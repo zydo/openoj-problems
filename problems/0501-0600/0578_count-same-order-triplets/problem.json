@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "merge_counting",
   "id": 578,
   "slug": "count-same-order-triplets",
   "title": "Count Same-Order Triplets",

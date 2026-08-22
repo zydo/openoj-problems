@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 713,
   "slug": "tree-split-into-divisible-sums",
   "title": "Tree Split into Divisible Sums",

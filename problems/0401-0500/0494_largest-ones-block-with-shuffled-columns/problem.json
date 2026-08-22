@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 494,
   "slug": "largest-ones-block-with-shuffled-columns",
   "title": "Largest Ones Block With Shuffled Columns",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 638,
   "slug": "twin-peak-paths-in-a-tree",
   "title": "Twin-Peak Paths in a Tree",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 349,
   "slug": "count-submatrices-with-a-given-sum",
   "title": "Count Submatrices With a Given Sum",

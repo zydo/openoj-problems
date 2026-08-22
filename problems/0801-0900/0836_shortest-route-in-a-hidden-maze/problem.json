@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 836,
   "slug": "shortest-route-in-a-hidden-maze",
   "title": "Shortest Route in a Hidden Maze",

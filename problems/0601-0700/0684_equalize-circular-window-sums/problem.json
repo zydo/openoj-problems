@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 684,
   "slug": "equalize-circular-window-sums",
   "title": "Equalize Circular Window Sums",

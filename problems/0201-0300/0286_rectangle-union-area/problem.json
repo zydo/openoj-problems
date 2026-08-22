@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 286,
   "slug": "rectangle-union-area",
   "title": "Rectangle Union Area",

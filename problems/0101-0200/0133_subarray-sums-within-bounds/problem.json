@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "fenwick",
   "id": 133,
   "slug": "subarray-sums-within-bounds",
   "title": "Subarray Sums Within Bounds",

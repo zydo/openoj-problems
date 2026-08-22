@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 770,
   "slug": "clearing-an-array-with-window-decrements",
   "title": "Clearing an Array with Window Decrements",

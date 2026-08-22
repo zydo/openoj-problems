@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 773,
   "slug": "fewest-edges-to-reach-every-node-from-a-source",
   "title": "Fewest Edges to Reach Every Node from a Source",

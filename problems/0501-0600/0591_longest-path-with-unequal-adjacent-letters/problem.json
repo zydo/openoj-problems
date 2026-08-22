@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 591,
   "slug": "longest-path-with-unequal-adjacent-letters",
   "title": "Longest Path With Unequal Adjacent Letters",

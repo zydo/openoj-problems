@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 805,
   "slug": "xor-ranges-in-a-reversible-array",
   "title": "XOR Ranges in a Reversible Array",

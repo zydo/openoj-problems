@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 43,
   "slug": "shortest-word-bridge",
   "title": "Shortest Word Bridge",

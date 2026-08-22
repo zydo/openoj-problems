@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 652,
   "slug": "k-cheapest-picks-from-both-ends",
   "title": "K Cheapest Picks From Both Ends",

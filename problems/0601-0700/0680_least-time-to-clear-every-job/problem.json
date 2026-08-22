@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 680,
   "slug": "least-time-to-clear-every-job",
   "title": "Least Time to Clear Every Job",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 187,
   "slug": "end-picking-game-winner",
   "title": "End-Picking Game Winner",

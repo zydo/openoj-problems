@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 396,
   "slug": "longest-duplicate-free-concatenation",
   "title": "Longest Duplicate-Free Concatenation",

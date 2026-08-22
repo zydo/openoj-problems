@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 761,
   "slug": "widest-gap-choosing-one-point-per-interval",
   "title": "Widest Gap Choosing One Point Per Interval",

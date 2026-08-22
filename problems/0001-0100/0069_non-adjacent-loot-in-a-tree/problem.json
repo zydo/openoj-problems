@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "postorder_pairs",
   "id": 69,
   "slug": "non-adjacent-loot-in-a-tree",
   "title": "Non-Adjacent Loot in a Tree",

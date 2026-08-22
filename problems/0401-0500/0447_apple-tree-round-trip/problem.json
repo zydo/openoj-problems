@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 447,
   "slug": "apple-tree-round-trip",
   "title": "Apple Tree Round Trip",

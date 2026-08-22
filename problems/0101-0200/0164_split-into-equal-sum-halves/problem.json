@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 164,
   "slug": "split-into-equal-sum-halves",
   "title": "Split Into Equal-Sum Halves",

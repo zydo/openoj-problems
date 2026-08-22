@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "inorder_sim",
   "id": 34,
   "slug": "balanced-tree-from-sorted-list",
   "title": "Balanced Tree From Sorted List",

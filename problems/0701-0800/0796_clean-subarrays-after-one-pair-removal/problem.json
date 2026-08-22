@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 796,
   "slug": "clean-subarrays-after-one-pair-removal",
   "title": "Clean Subarrays After One Pair Removal",

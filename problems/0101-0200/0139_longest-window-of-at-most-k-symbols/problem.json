@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "sliding_window",
   "id": 139,
   "slug": "longest-window-of-at-most-k-symbols",
   "title": "Longest Window of At Most K Symbols",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "height_probe_recursion",
   "id": 91,
   "slug": "size-of-a-complete-tree",
   "title": "Size Of A Complete Tree",

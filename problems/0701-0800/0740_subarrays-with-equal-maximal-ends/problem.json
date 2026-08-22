@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 740,
   "slug": "subarrays-with-equal-maximal-ends",
   "title": "Subarrays with Equal Maximal Ends",

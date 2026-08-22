@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 783,
   "slug": "sum-of-extremes-over-short-subarrays",
   "title": "Sum of Extremes Over Short Subarrays",

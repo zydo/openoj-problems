@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "bottom_up",
   "id": 36,
   "slug": "cheapest-pyramid-path",
   "title": "Cheapest Pyramid Path",

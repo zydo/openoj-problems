@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 176,
   "slug": "fewest-positions-to-cover-intervals",
   "title": "Fewest Positions To Cover Intervals",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 199,
   "slug": "play-log-running-totals",
   "title": "Play Log Running Totals",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 636,
   "slug": "minimum-starting-cash-for-any-deal-order",
   "title": "Minimum Starting Cash for Any Deal Order",

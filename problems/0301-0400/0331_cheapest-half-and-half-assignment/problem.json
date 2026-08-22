@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 331,
   "slug": "cheapest-half-and-half-assignment",
   "title": "Cheapest Half-and-Half Assignment",

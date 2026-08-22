@@ -115,14 +115,28 @@ def check_bundle(bundle: Path) -> list[Failure]:
         return [Failure(key, f"unreadable bundle content: {error}")]
 
     expected_keys = {
-        "schema_version", "id", "slug", "title", "difficulty", "tags",
-        "invocation", "limits",
+        "schema_version", "common_version", "reference_solution", "id", "slug",
+        "title", "difficulty", "tags", "invocation", "limits",
     }
     if set(problem) != expected_keys:
         fail(f"problem.json keys must be exactly {sorted(expected_keys)}")
         return failures
     if problem["schema_version"] != 1:
         fail("unsupported schema_version")
+    if not isinstance(problem["common_version"], int) or isinstance(problem["common_version"], bool) \
+            or problem["common_version"] < 1:
+        fail("common_version must be a positive integer (see common/VERSION.json)")
+    designated = problem["reference_solution"]
+    if not isinstance(designated, str):
+        fail("reference_solution must be a string")
+    elif designated:
+        import re as _re
+        if _re.fullmatch(r"[a-z0-9]+(?:_[a-z0-9]+)*", designated) is None:
+            fail("reference_solution must be a lowercase snake_case variant slug")
+        elif not any(f.name.startswith(f"solution_{designated}.") and f.is_file() for f in bundle.iterdir()):
+            fail(f"reference_solution names no solution_{designated}.* file")
+    elif not any(f.name.startswith("solution.") and f.is_file() for f in bundle.iterdir()):
+        fail("reference_solution is empty but the bundle has no canonical solution.* files")
     if problem["id"] != int(matched.group(1)) or problem["slug"] != matched.group(2):
         fail("directory name must match problem.json id and slug")
 

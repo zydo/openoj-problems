@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 806,
   "slug": "maximize-scored-topological-ordering",
   "title": "Maximize Scored Topological Ordering",

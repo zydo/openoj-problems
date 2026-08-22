@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 418,
   "slug": "fewest-stations-to-cover-a-segment",
   "title": "Fewest Stations to Cover a Segment",

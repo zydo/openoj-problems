@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 658,
   "slug": "floor-and-ceiling-in-a-search-tree",
   "title": "Floor and Ceiling in a Search Tree",

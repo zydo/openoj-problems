@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 672,
   "slug": "largest-sum-min-product-of-k-picks",
   "title": "Largest Sum-Min Product of K Picks",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 745,
   "slug": "range-products-in-the-set-bit-stream",
   "title": "Range Products in the Set-Bit Stream",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 762,
   "slug": "most-knight-moves-to-clear-every-pawn",
   "title": "Most Knight Moves to Clear Every Pawn",

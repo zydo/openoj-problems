@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "fee_greedy",
   "id": 233,
   "slug": "stock-trading-with-fees",
   "title": "Stock Trading With Fees",

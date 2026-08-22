@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 747,
   "slug": "non-adjacent-sum-under-point-updates",
   "title": "Non-Adjacent Sum Under Point Updates",

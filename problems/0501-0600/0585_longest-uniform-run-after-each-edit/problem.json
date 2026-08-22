@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 585,
   "slug": "longest-uniform-run-after-each-edit",
   "title": "Longest Uniform Run After Each Edit",

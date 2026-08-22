@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 702,
   "slug": "best-k-picks-for-profit-and-variety",
   "title": "Best k Picks for Profit and Variety",

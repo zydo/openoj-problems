@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 505,
   "slug": "reachable-sums-from-zero",
   "title": "Reachable Sums From Zero",

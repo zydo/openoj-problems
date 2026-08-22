@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 249,
   "slug": "fewest-points-hitting-every-range-twice",
   "title": "Fewest Points Hitting Every Range Twice",

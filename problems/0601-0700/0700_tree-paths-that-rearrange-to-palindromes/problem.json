@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 700,
   "slug": "tree-paths-that-rearrange-to-palindromes",
   "title": "Tree Paths That Rearrange to Palindromes",

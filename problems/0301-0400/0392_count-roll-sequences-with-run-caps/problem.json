@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 392,
   "slug": "count-roll-sequences-with-run-caps",
   "title": "Count Roll Sequences With Run Caps",

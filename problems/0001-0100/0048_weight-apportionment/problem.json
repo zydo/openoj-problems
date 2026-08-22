@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "slope_arithmetic",
   "id": 48,
   "slug": "weight-apportionment",
   "title": "Weight Apportionment",

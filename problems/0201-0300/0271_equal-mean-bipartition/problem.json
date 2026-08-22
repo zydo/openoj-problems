@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 271,
   "slug": "equal-mean-bipartition",
   "title": "Equal-Mean Bipartition",

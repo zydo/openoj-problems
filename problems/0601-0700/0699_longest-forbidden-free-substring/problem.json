@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "aho_corasick",
   "id": 699,
   "slug": "longest-forbidden-free-substring",
   "title": "Longest Forbidden-Free Substring",

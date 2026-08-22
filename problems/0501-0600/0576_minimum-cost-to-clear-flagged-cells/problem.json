@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 576,
   "slug": "minimum-cost-to-clear-flagged-cells",
   "title": "Minimum Cost to Clear Flagged Cells",

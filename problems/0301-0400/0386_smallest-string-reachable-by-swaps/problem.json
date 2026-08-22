@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 386,
   "slug": "smallest-string-reachable-by-swaps",
   "title": "Smallest String Reachable by Swaps",

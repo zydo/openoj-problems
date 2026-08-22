@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 380,
   "slug": "largest-subarray-sum-with-one-deletion",
   "title": "Largest Subarray Sum with One Deletion",

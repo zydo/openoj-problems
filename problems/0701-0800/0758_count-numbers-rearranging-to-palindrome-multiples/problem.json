@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 758,
   "slug": "count-numbers-rearranging-to-palindrome-multiples",
   "title": "Count Numbers Rearranging to Palindrome Multiples",

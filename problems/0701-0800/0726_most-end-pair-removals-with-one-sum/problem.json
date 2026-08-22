@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 726,
   "slug": "most-end-pair-removals-with-one-sum",
   "title": "Most End-Pair Removals With One Sum",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 725,
   "slug": "best-subarray-sum-with-endpoints-k-apart",
   "title": "Best Subarray Sum With Endpoints k Apart",

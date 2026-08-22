@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 723,
   "slug": "greatest-number-under-a-bit-price-budget",
   "title": "Greatest Number Under a Bit-Price Budget",

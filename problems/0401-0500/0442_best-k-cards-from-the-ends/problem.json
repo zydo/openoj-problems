@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 442,
   "slug": "best-k-cards-from-the-ends",
   "title": "Best K Cards From The Ends",

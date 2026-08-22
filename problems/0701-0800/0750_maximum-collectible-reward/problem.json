@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 750,
   "slug": "maximum-collectible-reward",
   "title": "Maximum Collectible Reward",

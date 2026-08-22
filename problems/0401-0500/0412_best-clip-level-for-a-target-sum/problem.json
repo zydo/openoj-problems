@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 412,
   "slug": "best-clip-level-for-a-target-sum",
   "title": "Best Clip Level for a Target Sum",

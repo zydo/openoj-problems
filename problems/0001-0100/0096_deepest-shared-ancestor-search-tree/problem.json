@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "iterative_descent",
   "id": 96,
   "slug": "deepest-shared-ancestor-search-tree",
   "title": "Deepest Shared Ancestor, Search Tree",

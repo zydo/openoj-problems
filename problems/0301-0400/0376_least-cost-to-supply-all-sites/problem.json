@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 376,
   "slug": "least-cost-to-supply-all-sites",
   "title": "Least Cost to Supply All Sites",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 655,
   "slug": "best-root-to-leaf-walk-against-a-rival",
   "title": "Best Root-to-Leaf Walk Against a Rival",

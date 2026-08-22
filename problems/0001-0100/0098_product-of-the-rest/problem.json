@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "rolling",
   "id": 98,
   "slug": "product-of-the-rest",
   "title": "Product Of The Rest",

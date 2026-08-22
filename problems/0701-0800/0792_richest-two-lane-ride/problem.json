@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 792,
   "slug": "richest-two-lane-ride",
   "title": "Richest Two-Lane Ride",

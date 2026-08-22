@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 522,
   "slug": "most-deletions-a-subsequence-survives",
   "title": "Most Deletions a Subsequence Survives",

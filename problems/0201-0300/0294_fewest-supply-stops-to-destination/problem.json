@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 294,
   "slug": "fewest-supply-stops-to-destination",
   "title": "Fewest Supply Stops to Destination",

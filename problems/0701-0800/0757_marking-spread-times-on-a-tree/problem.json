@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 757,
   "slug": "marking-spread-times-on-a-tree",
   "title": "Marking Spread Times on a Tree",

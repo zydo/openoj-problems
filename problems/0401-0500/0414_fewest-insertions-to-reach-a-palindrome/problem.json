@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 414,
   "slug": "fewest-insertions-to-reach-a-palindrome",
   "title": "Fewest Insertions to Reach a Palindrome",

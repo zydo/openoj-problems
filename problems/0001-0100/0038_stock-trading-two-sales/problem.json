@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 38,
   "slug": "stock-trading-two-sales",
   "title": "Stock Trading, Two Sales",

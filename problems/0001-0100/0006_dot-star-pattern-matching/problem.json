@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 6,
   "slug": "dot-star-pattern-matching",
   "title": "Dot-Star Pattern Matching",

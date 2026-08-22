@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 468,
   "slug": "least-wiring-to-connect-all-points",
   "title": "Least Wiring to Connect All Points",

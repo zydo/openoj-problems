@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 322,
   "slug": "longest-ones-run-after-k-flips",
   "title": "Longest Ones Run After K Flips",

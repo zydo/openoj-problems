@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "kahn",
   "id": 77,
   "slug": "course-feasibility",
   "title": "Course Feasibility",

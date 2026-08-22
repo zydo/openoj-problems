@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "single_pass_binary",
   "id": 15,
   "slug": "rotated-array-lookup",
   "title": "Rotated Array Lookup",

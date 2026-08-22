@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 592,
   "slug": "heaviest-trip-over-exactly-k-roads",
   "title": "Heaviest Trip Over Exactly K Roads",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 397,
   "slug": "widest-tree-path-from-an-edge-list",
   "title": "Widest Tree Path From an Edge List",

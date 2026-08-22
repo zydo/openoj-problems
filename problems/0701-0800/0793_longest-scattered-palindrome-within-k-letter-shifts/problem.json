@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 793,
   "slug": "longest-scattered-palindrome-within-k-letter-shifts",
   "title": "Longest Scattered Palindrome Within k Letter Shifts",

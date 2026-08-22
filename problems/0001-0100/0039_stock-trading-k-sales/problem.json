@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 39,
   "slug": "stock-trading-k-sales",
   "title": "Stock Trading, K Sales",

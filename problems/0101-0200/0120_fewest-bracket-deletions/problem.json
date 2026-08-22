@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 120,
   "slug": "fewest-bracket-deletions",
   "title": "Fewest Bracket Deletions",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 466,
   "slug": "cheapest-order-to-cut-a-rod",
   "title": "Cheapest Order to Cut a Rod",

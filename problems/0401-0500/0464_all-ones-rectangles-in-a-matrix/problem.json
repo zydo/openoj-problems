@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 464,
   "slug": "all-ones-rectangles-in-a-matrix",
   "title": "All-Ones Rectangles in a Matrix",

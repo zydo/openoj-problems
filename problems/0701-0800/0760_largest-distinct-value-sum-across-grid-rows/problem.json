@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 760,
   "slug": "largest-distinct-value-sum-across-grid-rows",
   "title": "Largest Distinct-Value Sum Across Grid Rows",

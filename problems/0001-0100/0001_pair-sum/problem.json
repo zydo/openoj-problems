@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "hash_map",
   "id": 1,
   "slug": "pair-sum",
   "title": "Pair Sum",

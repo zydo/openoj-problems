@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 813,
   "slug": "lone-element-and-one-pair",
   "title": "Lone Element and One Pair",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 706,
   "slug": "widest-span-where-each-element-is-maximum",
   "title": "Widest Span Where Each Element Is Maximum",

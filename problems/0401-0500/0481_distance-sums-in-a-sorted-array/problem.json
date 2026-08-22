@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 481,
   "slug": "distance-sums-in-a-sorted-array",
   "title": "Distance Sums in a Sorted Array",

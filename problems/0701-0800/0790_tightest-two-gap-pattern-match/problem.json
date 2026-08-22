@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 790,
   "slug": "tightest-two-gap-pattern-match",
   "title": "Tightest Two-Gap Pattern Match",

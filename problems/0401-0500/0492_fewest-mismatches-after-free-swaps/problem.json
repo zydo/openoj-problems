@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 492,
   "slug": "fewest-mismatches-after-free-swaps",
   "title": "Fewest Mismatches After Free Swaps",

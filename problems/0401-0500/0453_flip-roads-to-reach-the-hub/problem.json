@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 453,
   "slug": "flip-roads-to-reach-the-hub",
   "title": "Flip Roads to Reach the Hub",

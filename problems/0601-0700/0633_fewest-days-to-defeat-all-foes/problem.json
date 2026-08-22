@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 633,
   "slug": "fewest-days-to-defeat-all-foes",
   "title": "Fewest Days to Defeat All Foes",

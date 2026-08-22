@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 437,
   "slug": "count-strings-avoiding-a-pattern",
   "title": "Count Strings Avoiding a Pattern",

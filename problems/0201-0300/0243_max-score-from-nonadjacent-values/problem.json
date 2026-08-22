@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 243,
   "slug": "max-score-from-nonadjacent-values",
   "title": "Maximum Score from Nonadjacent Values",

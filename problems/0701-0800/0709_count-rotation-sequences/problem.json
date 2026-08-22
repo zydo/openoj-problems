@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 709,
   "slug": "count-rotation-sequences",
   "title": "Count Rotation Sequences",

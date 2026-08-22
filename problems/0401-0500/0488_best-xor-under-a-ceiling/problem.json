@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 488,
   "slug": "best-xor-under-a-ceiling",
   "title": "Best XOR Under a Ceiling",

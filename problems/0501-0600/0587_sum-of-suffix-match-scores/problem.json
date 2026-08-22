@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 587,
   "slug": "sum-of-suffix-match-scores",
   "title": "Sum of Suffix Match Scores",

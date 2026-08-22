@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "rerooting_dp",
   "id": 823,
   "slug": "mark-diameter-endpoints-in-a-tree",
   "title": "Mark Diameter Endpoints in a Tree",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 749,
   "slug": "longest-subsequence-with-at-most-k-breaks",
   "title": "Longest Subsequence With at Most K Breaks",

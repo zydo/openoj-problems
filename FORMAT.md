@@ -35,6 +35,8 @@ Solutions are authored on top of the generated starters.
 ```json
 {
     "schema_version": 1,
+    "common_version": 1,
+    "reference_solution": "",
     "id": 1,
     "slug": "two-sum",
     "title": "Two Sum",
@@ -47,6 +49,15 @@ Solutions are authored on top of the generated starters.
 
 - `id` matches the numeric directory prefix; `slug` and `title` match the
   directory and the statement's `# Title` heading.
+- `common_version` declares the common-library version the bundle was
+  authored against (`common/README.md` is the contract); it may not
+  exceed the checkout's `common/VERSION.json`.
+- `reference_solution` designates the time-cost baseline: `""` names the
+  canonical `solution.<ext>` files, a variant slug names
+  `solution_<variant>.<ext>`. It is always the optimal approach — the
+  section the worst-to-best `solutions.md` ordering ends with — and the
+  judge runs exactly this one reference alongside the submission when
+  scoring the time-cost percentage.
 - `difficulty` is one of `H1`–`H5`; `tags` is a non-empty array of strings.
 - `invocation.type` is `function` or `sql`.
 

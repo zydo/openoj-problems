@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 831,
   "slug": "unmask-the-hidden-word",
   "title": "Unmask the Hidden Word",

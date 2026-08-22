@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 689,
   "slug": "cheapest-trips-after-halving-node-prices",
   "title": "Cheapest Trips After Halving Node Prices",

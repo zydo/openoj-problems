@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 563,
   "slug": "link-pairs-into-one-chain",
   "title": "Link Pairs Into One Chain",

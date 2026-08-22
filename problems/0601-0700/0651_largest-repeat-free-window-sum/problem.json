@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 651,
   "slug": "largest-repeat-free-window-sum",
   "title": "Largest Repeat-Free Window Sum",

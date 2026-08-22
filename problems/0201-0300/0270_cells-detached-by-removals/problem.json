@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 270,
   "slug": "cells-detached-by-removals",
   "title": "Cells Detached By Removals",

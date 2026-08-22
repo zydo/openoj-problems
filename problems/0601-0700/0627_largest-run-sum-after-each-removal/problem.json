@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 627,
   "slug": "largest-run-sum-after-each-removal",
   "title": "Largest Run Sum After Each Removal",

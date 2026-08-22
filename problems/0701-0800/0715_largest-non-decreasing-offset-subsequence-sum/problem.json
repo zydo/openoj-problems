@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 715,
   "slug": "largest-non-decreasing-offset-subsequence-sum",
   "title": "Largest Non-Decreasing-Offset Subsequence Sum",

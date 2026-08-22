@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 664,
   "slug": "count-subarrays-balanced-around-k",
   "title": "Count Subarrays Balanced Around K",

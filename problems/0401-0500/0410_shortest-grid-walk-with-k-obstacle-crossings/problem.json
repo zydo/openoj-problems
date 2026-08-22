@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 410,
   "slug": "shortest-grid-walk-with-k-obstacle-crossings",
   "title": "Shortest Grid Walk with k Obstacle Crossings",

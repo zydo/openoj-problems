@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 472,
   "slug": "skyline-walk-with-bricks-and-ladders",
   "title": "Skyline Walk With Bricks and Ladders",

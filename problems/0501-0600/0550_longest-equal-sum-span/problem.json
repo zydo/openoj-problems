@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 550,
   "slug": "longest-equal-sum-span",
   "title": "Longest Equal-Sum Span",

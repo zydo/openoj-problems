@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 515,
   "slug": "most-frequent-color-on-a-directed-path",
   "title": "Most Frequent Color on a Directed Path",

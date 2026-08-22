@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "iterative_stack",
   "id": 33,
   "slug": "rebuild-tree-from-two-traversals",
   "title": "Rebuild Tree From Two Traversals",

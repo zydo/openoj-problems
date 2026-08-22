@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 42,
   "slug": "all-shortest-word-bridges",
   "title": "All Shortest Word Bridges",

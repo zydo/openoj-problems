@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 230,
   "slug": "random-draw-with-exclusions",
   "title": "Random Draw With Exclusions",

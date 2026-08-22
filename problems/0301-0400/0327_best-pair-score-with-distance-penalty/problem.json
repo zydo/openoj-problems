@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 327,
   "slug": "best-pair-score-with-distance-penalty",
   "title": "Best Pair Score With Distance Penalty",

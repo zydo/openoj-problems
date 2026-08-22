@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 588,
   "slug": "largest-equal-share",
   "title": "Largest Equal Share",

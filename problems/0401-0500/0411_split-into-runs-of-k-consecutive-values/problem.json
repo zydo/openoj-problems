@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 411,
   "slug": "split-into-runs-of-k-consecutive-values",
   "title": "Split Into Runs of k Consecutive Values",

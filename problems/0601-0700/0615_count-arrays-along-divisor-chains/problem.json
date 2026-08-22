@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 615,
   "slug": "count-arrays-along-divisor-chains",
   "title": "Count Arrays Along Divisor Chains",

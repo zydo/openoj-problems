@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 742,
   "slug": "edges-on-shortest-paths",
   "title": "Edges on Shortest Paths",

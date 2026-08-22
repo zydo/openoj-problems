@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 162,
   "slug": "smallest-largest-bin-load",
   "title": "Smallest Largest Bin Load",

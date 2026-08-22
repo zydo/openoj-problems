@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 173,
   "slug": "kth-number-in-dictionary-order",
   "title": "Kth Number in Dictionary Order",

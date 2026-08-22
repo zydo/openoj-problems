@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 625,
   "slug": "largest-sum-of-non-adjacent-tree-edges",
   "title": "Largest Sum of Non-Adjacent Tree Edges",

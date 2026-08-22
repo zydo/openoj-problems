@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 471,
   "slug": "rank-every-matrix-entry",
   "title": "Rank Every Matrix Entry",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 389,
   "slug": "palindrome-within-k-deletions",
   "title": "Palindrome Within k Deletions",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 574,
   "slug": "word-groups-by-single-letter-edits",
   "title": "Word Groups By Single-Letter Edits",

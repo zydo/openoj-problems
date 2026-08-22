@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 72,
   "slug": "count-grid-islands-land-updates",
   "title": "Count Grid Islands, Land Updates",

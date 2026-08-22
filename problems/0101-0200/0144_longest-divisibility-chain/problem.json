@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 144,
   "slug": "longest-divisibility-chain",
   "title": "Longest Divisibility Chain",

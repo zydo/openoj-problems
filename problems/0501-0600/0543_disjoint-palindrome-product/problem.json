@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 543,
   "slug": "disjoint-palindrome-product",
   "title": "Disjoint Palindrome Product",

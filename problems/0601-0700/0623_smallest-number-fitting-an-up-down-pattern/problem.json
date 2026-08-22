@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 623,
   "slug": "smallest-number-fitting-an-up-down-pattern",
   "title": "Smallest Number Fitting an Up-Down Pattern",

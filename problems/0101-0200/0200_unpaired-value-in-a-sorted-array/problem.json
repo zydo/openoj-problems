@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 200,
   "slug": "unpaired-value-in-a-sorted-array",
   "title": "Unpaired Value In A Sorted Array",

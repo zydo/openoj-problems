@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 255,
   "slug": "calculator-with-parentheses-and-precedence",
   "title": "Calculator With Parentheses And Precedence",

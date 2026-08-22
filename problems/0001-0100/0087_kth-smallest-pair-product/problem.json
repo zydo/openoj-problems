@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 87,
   "slug": "kth-smallest-pair-product",
   "title": "Kth Smallest Pair Product",

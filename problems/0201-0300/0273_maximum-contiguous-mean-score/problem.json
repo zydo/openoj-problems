@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 273,
   "slug": "maximum-contiguous-mean-score",
   "title": "Maximum Contiguous Mean Score",

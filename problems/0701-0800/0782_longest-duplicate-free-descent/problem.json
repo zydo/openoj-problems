@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 782,
   "slug": "longest-duplicate-free-descent",
   "title": "Longest Duplicate-Free Descent",

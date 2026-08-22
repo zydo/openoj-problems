@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 557,
   "slug": "sortable-by-shared-factor-swaps",
   "title": "Sortable by Shared-Factor Swaps",

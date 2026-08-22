@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 119,
   "slug": "longest-increasing-subsequence-with-bounded-steps",
   "title": "Longest Increasing Subsequence With Bounded Steps",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 609,
   "slug": "unreachable-node-pairs",
   "title": "Unreachable Node Pairs",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 365,
   "slug": "stone-piles-game-ii",
   "title": "Stone Piles Game II",

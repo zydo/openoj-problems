@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 497,
   "slug": "best-value-from-at-most-k-events",
   "title": "Best Value From at Most k Events",

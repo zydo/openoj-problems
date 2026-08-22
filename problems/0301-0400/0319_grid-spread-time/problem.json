@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 319,
   "slug": "grid-spread-time",
   "title": "Grid Spread Time",

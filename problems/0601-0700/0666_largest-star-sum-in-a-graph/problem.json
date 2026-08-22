@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 666,
   "slug": "largest-star-sum-in-a-graph",
   "title": "Largest Star Sum in a Graph",

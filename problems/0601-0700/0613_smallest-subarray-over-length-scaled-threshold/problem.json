@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 613,
   "slug": "smallest-subarray-over-length-scaled-threshold",
   "title": "Smallest Subarray Over a Length-Scaled Threshold",

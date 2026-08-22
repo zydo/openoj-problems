@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 714,
   "slug": "distinct-nodes-until-a-repeat",
   "title": "Distinct Nodes Until a Repeat",

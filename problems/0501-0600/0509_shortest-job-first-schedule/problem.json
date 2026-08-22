@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 509,
   "slug": "shortest-job-first-schedule",
   "title": "Shortest Job First Schedule",

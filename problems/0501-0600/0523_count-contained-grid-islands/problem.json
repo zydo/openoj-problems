@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 523,
   "slug": "count-contained-grid-islands",
   "title": "Count Contained Grid Islands",

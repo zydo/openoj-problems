@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 299,
   "slug": "minimum-two-item-containers",
   "title": "Minimum Two-Item Containers",

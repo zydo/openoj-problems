@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 776,
   "slug": "count-sequences-with-k-immediate-repeats",
   "title": "Count Sequences With K Immediate Repeats",

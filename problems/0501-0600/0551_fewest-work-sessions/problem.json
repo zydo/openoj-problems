@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 551,
   "slug": "fewest-work-sessions",
   "title": "Fewest Work Sessions",

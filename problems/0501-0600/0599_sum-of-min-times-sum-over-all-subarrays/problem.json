@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 599,
   "slug": "sum-of-min-times-sum-over-all-subarrays",
   "title": "Sum of Min Times Sum Over All Subarrays",

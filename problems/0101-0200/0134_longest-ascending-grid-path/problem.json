@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "memoized_dfs",
   "id": 134,
   "slug": "longest-ascending-grid-path",
   "title": "Longest Ascending Grid Path",

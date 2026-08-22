@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "monotonic_deque",
   "id": 99,
   "slug": "rolling-window-maxima",
   "title": "Rolling Window Maxima",

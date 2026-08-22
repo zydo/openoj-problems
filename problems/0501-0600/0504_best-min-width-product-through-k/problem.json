@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 504,
   "slug": "best-min-width-product-through-k",
   "title": "Best Min-Width Product Through K",

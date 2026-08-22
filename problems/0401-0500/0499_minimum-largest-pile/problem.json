@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 499,
   "slug": "minimum-largest-pile",
   "title": "Minimum Largest Pile",

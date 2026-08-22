@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 752,
   "slug": "fewest-triple-flips-for-all-ones",
   "title": "Fewest Triple Flips for All Ones",

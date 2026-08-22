@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 690,
   "slug": "steps-to-drain-a-rotating-queue",
   "title": "Steps to Drain a Rotating Queue",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 377,
   "slug": "dropping-zero-sum-stretches-in-a-linked-list",
   "title": "Dropping Zero-Sum Stretches in a Linked List",

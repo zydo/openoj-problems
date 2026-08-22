@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 763,
   "slug": "largest-xor-of-two-or-halves",
   "title": "Largest XOR of Two OR Halves",

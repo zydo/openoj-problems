@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 748,
   "slug": "nearest-subarray-or-to-a-target",
   "title": "Nearest Subarray OR to a Target",

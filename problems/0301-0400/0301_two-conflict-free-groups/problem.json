@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "dfs_color",
   "id": 301,
   "slug": "two-conflict-free-groups",
   "title": "Two Conflict-Free Groups",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "recursive_dfs",
   "id": 32,
   "slug": "group-tree-by-depth",
   "title": "Group Tree By Depth",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 660,
   "slug": "count-partitions-with-prime-starts",
   "title": "Count Partitions With Prime Starts",

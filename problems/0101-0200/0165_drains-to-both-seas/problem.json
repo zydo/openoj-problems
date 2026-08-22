@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "bfs_from_borders",
   "id": 165,
   "slug": "drains-to-both-seas",
   "title": "Drains To Both Seas",

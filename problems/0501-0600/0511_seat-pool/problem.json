@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 511,
   "slug": "seat-pool",
   "title": "Seat Pool",

@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 353,
   "slug": "first-full-connection",
   "title": "First Full Connection",

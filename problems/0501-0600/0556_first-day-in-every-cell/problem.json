@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
   "id": 556,
   "slug": "first-day-in-every-cell",
   "title": "First Day in Every Cell",
