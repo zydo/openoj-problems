@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
-  <rect x="0" y="0" width="640" height="320" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 345" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect x="0" y="0" width="640" height="345" fill="#ffffff"/>
   <!-- non-shortest-path edges -->
   <g stroke="#98a2ac" stroke-width="1.4" stroke-dasharray="5 3">
     <line x1="86" y1="178" x2="184" y2="244"/>
@@ -48,9 +48,9 @@
   </g>
   <!-- legend -->
   <g font-size="12.5" fill="#5c6b76">
-    <line x1="60" y1="306" x2="92" y2="306" stroke="#4169E1" stroke-width="2.2"/>
-    <text x="100" y="310">d0[u] + w + d5[v] = 6 → on a shortest path</text>
-    <line x1="60" y1="286" x2="92" y2="286" stroke="#98a2ac" stroke-width="1.4" stroke-dasharray="5 3"/>
-    <text x="100" y="290">e.g. 0 → 2: 0 + 5 + 7 = 12 ≠ 6 → excluded</text>
+    <line x1="60" y1="328" x2="92" y2="328" stroke="#4169E1" stroke-width="2.2"/>
+    <text x="100" y="332">d0[u] + w + d5[v] = 6 → on a shortest path</text>
+    <line x1="60" y1="308" x2="92" y2="308" stroke="#98a2ac" stroke-width="1.4" stroke-dasharray="5 3"/>
+    <text x="100" y="312">e.g. 0 → 2: 0 + 5 + 7 = 12 ≠ 6 → excluded</text>
   </g>
 </svg>

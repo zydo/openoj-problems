@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 352" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 370" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
   <rect width="100%" height="100%" fill="#ffffff"/>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
@@ -46,7 +46,8 @@
   <text x="312.0" y="238.0" text-anchor="middle" fill="#4169E1" font-weight="600">3</text>
   <path d="M 290 194 L 290 154" stroke="#4169E1" stroke-width="1.6" marker-end="url(#arrowB)"/>
   <path d="M 282 202 L 230 246" stroke="#4169E1" stroke-width="1.6" marker-end="url(#arrowB)"/>
-  <text x="40" y="300" fill="#5c6b76" font-size="12">Cell values: matrix entry (grey) above the dp value (blue). At the circled 3, all</text>
-  <text x="40" y="318" fill="#5c6b76" font-size="12">three neighbors &#8212; left, above, diagonal &#8212; are &#8805; 2, so the largest square ending</text>
-  <text x="40" y="336" fill="#5c6b76" font-size="12">there has side 3; summing all dp cells gives 17 squares.</text>
+  <text x="40" y="300" fill="#5c6b76" font-size="12">Cell values: matrix entry (grey) above the dp value (blue). At the</text>
+  <text x="40" y="318" fill="#5c6b76" font-size="12">circled 3, all three neighbors &#8212; left, above, diagonal</text>
+  <text x="40" y="336" fill="#5c6b76" font-size="12">&#8212; are &#8805; 2, so the largest square ending there has</text>
+  <text x="40" y="354" fill="#5c6b76" font-size="12">side 3; summing all dp cells gives 17 squares.</text>
 </svg>

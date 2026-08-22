@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 168" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 654 168" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <!-- n = 2, edges = [[0,1,6]], k = 2; the only edge vanishes at t = 6, leaving components {0}, {1} (verified by brute force) -->
   <line x1="201" y1="70" x2="379" y2="70" stroke="#42525e" stroke-width="1.6"/>
   <text x="290" y="58" text-anchor="middle" fill="#5c6b76" font-size="12">time 6</text>
@@ -14,5 +14,5 @@
     <text x="180" y="116">component {0}</text>
     <text x="400" y="116">component {1}</text>
   </g>
-  <text x="290" y="154" text-anchor="middle" fill="#1a2026" font-size="13.5">the pair holds together until t = 6, when the only edge vanishes and k = 2 singletons remain: answer <tspan fill="#4169E1" font-weight="700">6</tspan></text>
+  <text x="327" y="154" text-anchor="middle" fill="#1a2026" font-size="13.5">the pair holds together until t = 6, when the only edge vanishes and k = 2 singletons remain: answer <tspan fill="#4169E1" font-weight="700">6</tspan></text>
 </svg>

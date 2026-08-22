@@ -20,6 +20,6 @@
   <g font-size="12.5" fill="#5c6b76">
     <text x="60" y="220">Alice is ahead of Bob on node 0, and node 1's gate</text>
     <text x="60" y="236">was already opened by Bob — so her income is</text>
-    <text x="292" y="236" fill="#4169E1" font-weight="600">−4210.</text>
+    <text x="342" y="236" fill="#4169E1" font-weight="600">−4210.</text>
   </g>
 </svg>

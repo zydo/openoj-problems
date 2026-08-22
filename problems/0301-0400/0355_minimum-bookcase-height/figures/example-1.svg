@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 396" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 434" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12">
   <rect width="100%" height="100%" fill="#ffffff"/>
   <!-- books = [[2,2],[2,5],[2,5],[1,4],[1,5],[1,4],[1,5]], shelfWidth = 4; 26 px per unit, 16 px between shelves -->
   <g fill="#ffffff" stroke="#1a2026" stroke-width="1.4">
@@ -35,5 +35,7 @@
     <text x="202" y="155">5</text>
     <text x="202" y="301">5</text>
   </g>
-  <text x="150" y="388" text-anchor="middle" fill="#5c6b76" font-size="12.5">shelf heights 2 + 5 + 5 = 12 — book 2 stays off the first shelf</text>
+  <text x="150" y="388" text-anchor="middle" fill="#5c6b76" font-size="12.5">shelf heights 2 + 5 + 5 =</text>
+  <text x="150" y="407" text-anchor="middle" fill="#5c6b76" font-size="12.5">12 — book 2 stays off</text>
+  <text x="150" y="426" text-anchor="middle" fill="#5c6b76" font-size="12.5">the first shelf</text>
 </svg>

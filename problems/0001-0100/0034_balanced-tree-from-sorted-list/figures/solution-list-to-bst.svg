@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
-  <rect width="600" height="340" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 683 340" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
+  <rect width="683" height="340" fill="#ffffff"/>
   <defs>
     <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a94a0"/>
@@ -23,13 +23,14 @@
   <text x="570" y="70" fill="#8a94a0" font-size="11">None</text>
   <!-- cut marker -->
   <line x1="262" y1="36" x2="262" y2="94" stroke="#4169E1" stroke-width="1.8" stroke-dasharray="5 4"/>
-  <text x="262" y="30" fill="#4169E1" font-size="11" text-anchor="middle" font-weight="600">prev.next = None</text>
+  <text x="262" y="38" fill="#4169E1" font-size="11" text-anchor="middle" font-weight="600">prev.next = None</text>
   <!-- slow/fast -->
   <path d="M 305 106 L 305 88" stroke="#4169E1" stroke-width="2" marker-end="url(#arr)"/>
   <text x="305" y="122" fill="#4169E1" font-size="11.5" text-anchor="middle" font-weight="700">slow</text>
   <path d="M 560 106 C 560 96, 545 92, 535 88" stroke="#8a94a0" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr)"/>
   <text x="560" y="122" fill="#8a94a0" font-size="11.5" text-anchor="middle">fast -&gt; None</text>
-  <text x="50" y="122" fill="#5b6470" font-size="11.5">fast moves two per slow step, so slow stops on the second midpoint of an even run</text>
+  <text x="50" y="122" fill="#5b6470" font-size="11.5">fast moves two per slow step, so slow stops</text>
+  <text x="50" y="138" fill="#5b6470" font-size="11.5">on the second midpoint of an even run</text>
   <!-- BST -->
   <g stroke="#8a94a0" stroke-width="1.3" fill="none">
     <line x1="300" y1="196" x2="210" y2="246" marker-end="url(#arr)"/>

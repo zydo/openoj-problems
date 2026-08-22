@@ -41,5 +41,5 @@
     <text x="560" y="237">15</text>
   </g>
   <text x="430" y="290" text-anchor="middle" fill="#1a2026" font-weight="600">the subtree rooted at 9 is a BST: 9 + 4 + 12 + 11 + 15 = 51</text>
-  <text x="170" y="290" text-anchor="middle" fill="#5c6b76" font-size="12.5">the root's own subtree is not a BST</text>
+  <text x="138" y="290" text-anchor="middle" fill="#5c6b76" font-size="12.5">the root's own subtree is not a BST</text>
 </svg>

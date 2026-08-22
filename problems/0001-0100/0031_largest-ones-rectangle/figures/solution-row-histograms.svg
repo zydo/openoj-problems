@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
-  <rect width="600" height="260" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 705 260" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
+  <rect width="705" height="260" fill="#ffffff"/>
   <text x="20" y="24" fill="#1a2026" font-weight="600">Each row becomes a histogram of consecutive 1s ending there; the row-2 histogram holds a 2 x 3 rectangle</text>
   <!-- matrix 4x5, cell 26 -->
   <g stroke="#1a2026" stroke-width="1.2" fill="#ffffff">

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 374" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636 374" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <!-- m = 3, n = 2, horizontalCut = [4,2], verticalCut = [6]; optimal: vertical 6 first, then each horizontal paid twice: 6 + 2*4 + 2*2 = 18 (verified by DP) -->
   <rect x="200" y="50" width="180" height="270" fill="#ffffff" stroke="#42525e" stroke-width="1.6"/>
   <g stroke="#4169E1" stroke-width="3.2">
@@ -19,5 +19,5 @@
     <text x="188" y="234" text-anchor="end">cut 3 · cost 2 × 2</text>
     <text x="302" y="182">cut 1 · cost 6</text>
   </g>
-  <text x="290" y="358" text-anchor="middle" fill="#1a2026" font-size="13.5">cut the vertical line first (6), then each horizontal line is paid on both 3 x 1 strips: 6 + 2·4 + 2·2 = <tspan fill="#4169E1" font-weight="700">18</tspan></text>
+  <text x="318" y="358" text-anchor="middle" fill="#1a2026" font-size="13.5">cut the vertical line first (6), then each horizontal line is paid on both 3 x 1 strips: 6 + 2·4 + 2·2 = <tspan fill="#4169E1" font-weight="700">18</tspan></text>
 </svg>

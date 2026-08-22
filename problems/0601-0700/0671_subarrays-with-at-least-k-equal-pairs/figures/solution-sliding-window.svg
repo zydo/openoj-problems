@@ -20,7 +20,7 @@
   </g>
   <!-- window 1: right = 5, [0..5], adds n - right = 2 -->
   <path d="M 60 108 L 60 96 L 360 96 L 360 108" fill="none" stroke="#4169E1" stroke-width="1.8"/>
-  <text x="210" y="128" text-anchor="middle" fill="#4169E1">right = 5: pairs (5,5) and (8,8) = 2 ≥ k → every start ≤ left works: +n−right = +2</text>
+  <text x="259" y="128" text-anchor="middle" fill="#4169E1">right = 5: pairs (5,5) and (8,8) = 2 ≥ k → every start ≤ left works: +n−right = +2</text>
   <!-- window 2: after shrinking, right = 6, [1..6] -->
   <path d="M 120 158 L 120 146 L 450 146 L 450 158" fill="none" stroke="#1a2026" stroke-width="1.6"/>
   <text x="285" y="178" text-anchor="middle" fill="#1a2026">shrink to [1..6]: pairs (8,8) and (3,3) = 2 ≥ k → +1</text>

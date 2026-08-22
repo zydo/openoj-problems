@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 372" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 448" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
   <rect width="100%" height="100%" fill="#ffffff"/>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
@@ -30,8 +30,10 @@
 <text x="274" y="70" text-anchor="middle" fill="#4169E1" font-size="12">P[3][2]</text>
 <rect x="280" y="80" width="74" height="234" fill="none" stroke="#b57f30" stroke-width="1.8" stroke-dasharray="5 4"/>
 <text x="314.0" y="70" text-anchor="middle" fill="#b57f30" font-size="12">strip = 23</text>
-<text x="40" y="40" fill="#5c6b76" font-size="12">Neighborhood of row 1, column 0, k = 1: the window reaches past the left edge, so</text>
-<text x="40" y="58" fill="#5c6b76" font-size="12">the blue frame is clipped at the boundary and reads P[3][2] &#8722; P[0][2] &#8722; P[3][0]</text>
-<text x="40" y="76" fill="#5c6b76" font-size="12">+ P[0][0] = 53. The dashed strip (23) is what a wider window gives up: 76 &#8722; 23 = 53.</text>
-<text x="40" y="350" fill="#5c6b76" font-size="12">Building the table: above + left &#8722; overlap + cell; every query is then four lookups.</text>
+<text x="40" y="340" fill="#5c6b76" font-size="12">Neighborhood of row 1, column 0, k = 1: the window reaches</text>
+  <text x="40" y="358" fill="#5c6b76" font-size="12">past the left edge, so the blue frame is clipped at the</text>
+  <text x="40" y="376" fill="#5c6b76" font-size="12">boundary and reads P[3][2] &#8722; P[0][2] &#8722; P[3][0] +</text>
+  <text x="40" y="394" fill="#5c6b76" font-size="12">P[0][0] = 53. The dashed strip (23) is what a wider window</text>
+  <text x="40" y="412" fill="#5c6b76" font-size="12">gives up: 76 &#8722; 23 = 53. Building the table: above + left</text>
+  <text x="40" y="430" fill="#5c6b76" font-size="12">&#8722; overlap + cell; every query is then four lookups.</text>
 </svg>

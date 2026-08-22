@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
-  <rect width="560" height="330" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 330" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect width="576" height="330" fill="#ffffff"/>
   <!-- 3x3 grid, cell 90, x=170 y=40; fills: water 0 dark, ring 1 mid, ring 2 light -->
   <g fill="#4169E1">
     <rect x="260" y="40" width="90" height="90"/><rect x="170" y="220" width="90" height="90"/>

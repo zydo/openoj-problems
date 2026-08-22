@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
-  <rect width="680" height="330" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 330" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect width="740" height="330" fill="#ffffff"/>
   <!-- nums = [1,6,3,7,5,4], k = 3; cells x = 100 + 80i, w 62 -->
   <g stroke="#42525e" stroke-width="1.5" fill="#ffffff">
     <rect x="100" y="40" width="62" height="36"/><rect x="180" y="40" width="62" height="36"/>

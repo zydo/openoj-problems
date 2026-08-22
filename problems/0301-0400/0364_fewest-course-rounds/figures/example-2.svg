@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 278" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <rect width="100%" height="100%" fill="#ffffff"/>
   <defs>
     <marker id="ra" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
@@ -21,5 +21,7 @@
     <text x="270" y="55">2</text>
     <text x="190" y="185">3</text>
   </g>
-  <text x="190" y="228" text-anchor="middle" fill="#5c6b76" font-size="12.5">every course points at the next one around the ring, so none of them can open: -1</text>
+  <text x="190" y="228" text-anchor="middle" fill="#5c6b76" font-size="12.5">every course points at the</text>
+  <text x="190" y="247" text-anchor="middle" fill="#5c6b76" font-size="12.5">next one around the ring, so</text>
+  <text x="190" y="266" text-anchor="middle" fill="#5c6b76" font-size="12.5">none of them can open: -1</text>
 </svg>

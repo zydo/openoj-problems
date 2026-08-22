@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
-  <rect width="560" height="260" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 587 260" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
+  <rect width="587" height="260" fill="#ffffff"/>
   <!-- left half background band -->
   <rect x="60" y="46" width="163" height="124" fill="#e9eefb"/>
   <text x="70" y="64" fill="#4169E1" font-size="11.5" font-weight="600">left half (1 element)</text>
@@ -20,7 +20,7 @@
   <!-- cut markers -->
   <line x1="223" y1="52" x2="223" y2="190" stroke="#4169E1" stroke-width="2" stroke-dasharray="5 4"/>
   <line x1="188" y1="140" x2="188" y2="190" stroke="#4169E1" stroke-width="2" stroke-dasharray="5 4"/>
-  <text x="252" y="60" fill="#4169E1" font-size="11.5">cut after i = 1 elements of first</text>
+  <text x="252" y="44" fill="#4169E1" font-size="11.5">cut after i = 1 elements of first</text>
   <text x="62" y="140" fill="#4169E1" font-size="11.5">j = half - i = 0</text>
   <!-- flank labels -->
   <g fill="#5b6470" font-size="11.5">

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 214" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
-  <rect x="0" y="0" width="640" height="214" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 752 214" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect x="0" y="0" width="752" height="214" fill="#ffffff"/>
   <!-- row 0: initial [1,1,0,1,1,0] -->
   <g stroke="#1a2026" stroke-width="1.5" fill="none">
     <rect x="60" y="28" width="56" height="42" rx="4"/><rect x="116" y="28" width="56" height="42" rx="4"/>

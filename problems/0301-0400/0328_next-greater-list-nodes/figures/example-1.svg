@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 212" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 231" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <rect width="100%" height="100%" fill="#ffffff"/>
   <defs>
     <marker id="la" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
@@ -32,5 +32,6 @@
     <text x="190" y="176" fill="#1a2026">9</text>
     <text x="310" y="176" fill="#5c6b76">0</text>
   </g>
-  <text x="176" y="198" text-anchor="middle" fill="#5c6b76" font-size="12.5">both 4 and 3 first meet a larger value at 9; 9 itself never does</text>
+  <text x="176" y="198" text-anchor="middle" fill="#5c6b76" font-size="12.5">both 4 and 3 first meet a larger</text>
+  <text x="176" y="217" text-anchor="middle" fill="#5c6b76" font-size="12.5">value at 9; 9 itself never does</text>
 </svg>

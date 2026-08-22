@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 320" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#42525e"/>
     </marker>
   </defs>
-  <rect width="460" height="320" fill="#ffffff"/>
+  <rect width="544" height="320" fill="#ffffff"/>
   <g fill="#4169E1" fill-opacity="0.07" stroke="#4169E1" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="4 3">
     <rect x="55" y="48" width="200" height="64" rx="8"/>
     <rect x="255" y="128" width="70" height="64" rx="8"/>
@@ -31,5 +31,5 @@
     <text x="100" y="85">1</text><text x="190" y="85">2</text><text x="290" y="165">5</text>
     <text x="190" y="165">3</text><text x="190" y="245">4</text>
   </g>
-  <text x="230" y="308" text-anchor="middle" fill="#1a2026" font-weight="600">{1,2} → {5} → {3} → {4}: the cap of two spills one course into a round of its own</text>
+  <text x="272" y="308" text-anchor="middle" fill="#1a2026" font-weight="600">{1,2} → {5} → {3} → {4}: the cap of two spills one course into a round of its own</text>
 </svg>

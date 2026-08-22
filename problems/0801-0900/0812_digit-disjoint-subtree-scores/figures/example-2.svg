@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 260" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <!-- vals = [7,7,3,9], par = [-1,0,0,0]; best = [19,7,3,9], sum 38 (verified by tree DP over digit masks) -->
   <line x1="280" y1="60" x2="120" y2="160" stroke="#42525e" stroke-width="1.6"/>
   <line x1="280" y1="60" x2="280" y2="160" stroke="#42525e" stroke-width="1.6"/>
@@ -27,5 +27,5 @@
     <text x="280" y="218">best = 3</text>
     <text x="440" y="218">best = 9</text>
   </g>
-  <text x="280" y="248" text-anchor="middle" fill="#1a2026" font-size="13.5">the digit 7 sits at nodes 0 and 1, so the root's set drops one seven: 7 + 3 + 9 = 19; the scores total <tspan fill="#4169E1" font-weight="700">38</tspan></text>
+  <text x="325" y="248" text-anchor="middle" fill="#1a2026" font-size="13.5">the digit 7 sits at nodes 0 and 1, so the root's set drops one seven: 7 + 3 + 9 = 19; the scores total <tspan fill="#4169E1" font-weight="700">38</tspan></text>
 </svg>

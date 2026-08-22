@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
-  <rect width="600" height="270" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 775 270" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13">
+  <rect width="775" height="270" fill="#ffffff"/>
   <text x="20" y="24" fill="#1a2026" font-weight="600">s = "BEFFCDEAAFBAD", t = "BFD" - every time missing hits 0, the window is squeezed from the left</text>
   <!-- char cells: 13 chars, x = 70 + i*36, w=34 -->
   <g fill="#8a94a0" font-size="10.5" text-anchor="middle">

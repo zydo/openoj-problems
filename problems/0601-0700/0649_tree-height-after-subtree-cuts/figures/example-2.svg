@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 330" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
-  <rect width="620" height="330" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 683 330" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect width="683" height="330" fill="#ffffff"/>
   <!-- complete tree [6,3,8,1,5,2,7,4,9] -->
   <g stroke="#42525e" stroke-width="1.8">
     <line x1="310" y1="67" x2="222" y2="113"/>

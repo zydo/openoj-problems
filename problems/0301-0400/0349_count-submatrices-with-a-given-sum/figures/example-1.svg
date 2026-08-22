@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 212" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="15">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 250" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="15">
   <rect width="100%" height="100%" fill="#ffffff"/>
   <!-- matrix = [[0,2,0],[2,2,2],[0,2,0]], target = 0: the four corner cells -->
   <g fill="#e5ebfa">
@@ -25,5 +25,7 @@
     <text x="110" y="99">2</text><text x="154" y="99">2</text><text x="198" y="99">2</text>
     <text x="110" y="143">0</text><text x="154" y="143">2</text><text x="198" y="143">0</text>
   </g>
-  <text x="154" y="196" text-anchor="middle" fill="#5c6b76" font-size="12.5">exactly four rectangles reach the target 0: the single-cell corners</text>
+  <text x="154" y="196" text-anchor="middle" fill="#5c6b76" font-size="12.5">exactly four rectangles</text>
+  <text x="154" y="215" text-anchor="middle" fill="#5c6b76" font-size="12.5">reach the target 0: the</text>
+  <text x="154" y="234" text-anchor="middle" fill="#5c6b76" font-size="12.5">single-cell corners</text>
 </svg>

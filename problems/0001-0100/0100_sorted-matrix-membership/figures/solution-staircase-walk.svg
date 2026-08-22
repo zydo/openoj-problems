@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 336" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 354" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <rect width="460" height="336" fill="#ffffff"/>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
@@ -44,6 +44,7 @@
     <circle cx="136" cy="46" r="8.5" fill="#4169E1"/><text x="136" y="50" text-anchor="middle" fill="#ffffff" font-size="10.5" font-weight="600">4</text>
     <circle cx="136" cy="96" r="8.5" fill="#4169E1"/><text x="136" y="100" text-anchor="middle" fill="#ffffff" font-size="10.5" font-weight="600">5</text>
   </g>
-  <text x="60" y="312" fill="#5c6b76" font-size="12.5">start top-right, target 12: 35 &#8594; 29 &#8594; 21 each drop a column, 8 &#60; 12 drops the row</text>
-  <text x="60" y="330" fill="#5c6b76" font-size="12.5">shaded cells are already eliminated &#183; the walk lands on 12 in five steps</text>
+  <text x="60" y="312" fill="#5c6b76" font-size="12.5">start top-right, target 12: 35 &#8594; 29 &#8594; 21 each drop a</text>
+  <text x="60" y="330" fill="#5c6b76" font-size="12.5">column, 8 &#60; 12 drops the row shaded cells are already</text>
+  <text x="60" y="348" fill="#5c6b76" font-size="12.5">eliminated &#183; the walk lands on 12 in five steps</text>
 </svg>

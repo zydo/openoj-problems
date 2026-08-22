@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
-  <rect width="640" height="300" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 798 300" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect width="798" height="300" fill="#ffffff"/>
   <!-- grid1 5x5, cell 36, x=140 y=60 -->
   <text x="140" y="48" fill="#5c6b76" font-size="13">grid1</text>
   <g stroke="#42525e" stroke-width="1.3">

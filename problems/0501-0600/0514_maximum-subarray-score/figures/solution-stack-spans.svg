@@ -21,7 +21,8 @@
   <!-- stack snapshots -->
   <g font-size="12.5" fill="#5c6b76">
     <text x="70" y="322">i = 2 → stack [0, 1, 2] (values 2 &lt; 3 &lt; 5)</text>
-    <text x="70" y="340">i = 3, cur 3 → pops 5 (window [2,2], 5 × 5 = 25) and 3 (window [1,2], 3 × 8 = 24), pushes 3</text>
+    <text x="70" y="340">i = 3, cur 3 → pops 5 (window [2,2], 5 × 5 = 25)</text>
+    <text x="70" y="358">and 3 (window [1,2], 3 × 8 = 24), pushes 3</text>
   </g>
   <g font-size="12.5" fill="#5c6b76">
     <text x="430" y="322">sentinel 0 → pops index 3:</text>

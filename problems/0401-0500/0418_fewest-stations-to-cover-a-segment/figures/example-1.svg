@@ -17,8 +17,8 @@
     <circle cx="418" cy="52" r="4" fill="#ffffff"/><circle cx="534" cy="52" r="4" fill="#ffffff"/>
   </g>
   <g fill="#5c6b76" text-anchor="end">
-    <text x="62" y="122">station 0: [-1, 1]</text>
-    <text x="62" y="78">station 1: [-1, 3]</text>
+    <text x="70" y="68" text-anchor="start">station 1: [-1, 3]</text>
+    <text x="70" y="112" text-anchor="start">station 0: [-1, 1]</text>
     <text x="410" y="56">station 6: [5, 7]</text>
   </g>
   <g>

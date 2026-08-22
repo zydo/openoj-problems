@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 624 300" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <!-- edges = [[1,0,4],[0,2,6],[0,3,8]], nums = [3,3,7,6]; answer [8,2], winning path 0-3 (verified by brute force) -->
   <g stroke="#42525e" stroke-width="1.6">
     <line x1="280" y1="60" x2="120" y2="170"/>
@@ -31,5 +31,5 @@
     <text x="298" y="120">6</text>
     <text x="372" y="108">8</text>
   </g>
-  <text x="280" y="238" text-anchor="middle" fill="#1a2026" font-size="13.5">the nearly-distinct path <tspan fill="#4169E1" font-weight="700">0 → 3</tspan> has length <tspan fill="#4169E1" font-weight="700">8</tspan> with <tspan fill="#4169E1" font-weight="700">2</tspan> nodes — every other downward path is shorter</text>
+  <text x="312" y="238" text-anchor="middle" fill="#1a2026" font-size="13.5">the nearly-distinct path <tspan fill="#4169E1" font-weight="700">0 → 3</tspan> has length <tspan fill="#4169E1" font-weight="700">8</tspan> with <tspan fill="#4169E1" font-weight="700">2</tspan> nodes — every other downward path is shorter</text>
 </svg>

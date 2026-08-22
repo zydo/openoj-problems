@@ -24,6 +24,6 @@
   </g>
   <rect x="66" y="164" width="14" height="14" fill="#b9cdf2" stroke="#1a2026" stroke-width="1"/>
   <text x="86" y="176" fill="#5c6b76" font-size="12.5">water (height 0)</text>
-  <rect x="130" y="164" width="14" height="14" fill="#cfe8c5" stroke="#1a2026" stroke-width="1"/>
-  <text x="150" y="176" fill="#5c6b76" font-size="12.5">land</text>
+  <rect x="190" y="164" width="14" height="14" fill="#cfe8c5" stroke="#1a2026" stroke-width="1"/>
+  <text x="210" y="176" fill="#5c6b76" font-size="12.5">land</text>
 </svg>

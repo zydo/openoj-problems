@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 168" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 191.725" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
   <!-- n = 2, edges = [[0,1]], marked = [0,1]; best scores = [0,1] (verified by brute force: the marked node stands alone, the unmarked one takes the pair) -->
   <line x1="110" y1="70" x2="270" y2="70" stroke="#42525e" stroke-width="1.6"/>
   <circle cx="110" cy="70" r="21" fill="#ffffff" stroke="#42525e" stroke-width="1.6"/>
@@ -11,5 +11,6 @@
     <text x="110" y="118" fill="#5c6b76">unmarked</text>
     <text x="270" y="118" fill="#4169E1">marked</text>
   </g>
-  <text x="230" y="156" text-anchor="middle" fill="#1a2026" font-size="13.5">the marked node scores <tspan fill="#4169E1" font-weight="700">1</tspan> alone; its unmarked neighbor rises from −1 to <tspan fill="#4169E1" font-weight="700">0</tspan> by attaching it</text>
+  <text x="230" y="156" text-anchor="middle" fill="#1a2026" font-size="13.5">the marked node scores 1 alone; its unmarked neighbor rises from −1</text>
+  <text x="230" y="175" text-anchor="middle" fill="#1a2026" font-size="13.5">to 0 by attaching it</text>
 </svg>
