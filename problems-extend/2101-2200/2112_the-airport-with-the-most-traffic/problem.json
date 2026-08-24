@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2112,
+  "slug": "the-airport-with-the-most-traffic",
+  "title": "The Airport With the Most Traffic",
+  "difficulty": "",
+  "tags": [
+    "Database"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Flights (departure_airport INTEGER, arrival_airport INTEGER, flights_count INTEGER, PRIMARY KEY (departure_airport, arrival_airport));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

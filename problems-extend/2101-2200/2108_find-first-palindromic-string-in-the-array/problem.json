@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2108,
+  "slug": "find-first-palindromic-string-in-the-array",
+  "title": "Find First Palindromic String in the Array",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "firstPalindrome",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "firstPalindrome",
+      "rust": "first_palindrome",
+      "typescript": "firstPalindrome"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
