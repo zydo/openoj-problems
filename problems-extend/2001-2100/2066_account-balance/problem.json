@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2066,
+  "slug": "account-balance",
+  "title": "Account Balance",
+  "difficulty": "",
+  "tags": [
+    "Database"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Transactions (account_id INTEGER, day DATE, type VARCHAR, amount INTEGER, PRIMARY KEY (account_id, day));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

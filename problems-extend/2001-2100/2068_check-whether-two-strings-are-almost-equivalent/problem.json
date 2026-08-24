@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2068,
+  "slug": "check-whether-two-strings-are-almost-equivalent",
+  "title": "Check Whether Two Strings are Almost Equivalent",
+  "difficulty": "",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "checkAlmostEquivalent",
+    "parameters": [
+      {
+        "name": "word1",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "word2",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "checkAlmostEquivalent",
+      "rust": "check_almost_equivalent",
+      "typescript": "checkAlmostEquivalent"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

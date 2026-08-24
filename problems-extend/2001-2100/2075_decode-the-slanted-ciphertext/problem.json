@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2075,
+  "slug": "decode-the-slanted-ciphertext",
+  "title": "Decode the Slanted Ciphertext",
+  "difficulty": "",
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "decodeCiphertext",
+    "parameters": [
+      {
+        "name": "encodedText",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "rows",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "decodeCiphertext",
+      "rust": "decode_ciphertext",
+      "typescript": "decodeCiphertext"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

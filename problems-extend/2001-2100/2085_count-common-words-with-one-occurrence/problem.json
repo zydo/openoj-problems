@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2085,
+  "slug": "count-common-words-with-one-occurrence",
+  "title": "Count Common Words With One Occurrence",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countWords",
+    "parameters": [
+      {
+        "name": "words1",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "words2",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countWords",
+      "rust": "count_words",
+      "typescript": "countWords"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
