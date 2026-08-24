@@ -1,4 +1,4 @@
-# Valid Phone Number
+# Valid Phone Numbers
 
 ## Description
 
