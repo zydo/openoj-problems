@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 1618,
+  "slug": "maximum-font-to-fit-a-sentence-in-a-screen",
+  "title": "Maximum Font to Fit a Sentence in a Screen",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Interactive"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxFont",
+    "parameters": [
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": { "kind": "string" }
+      },
+      {
+        "name": "w",
+        "codec": "json",
+        "value_type": { "kind": "integer", "bits": 32 }
+      },
+      {
+        "name": "h",
+        "codec": "json",
+        "value_type": { "kind": "integer", "bits": 32 }
+      },
+      {
+        "name": "fonts",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": { "kind": "integer", "bits": 32 }
+        }
+      },
+      {
+        "name": "widths",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": { "kind": "integer", "bits": 32 }
+          }
+        }
+      },
+      {
+        "name": "heights",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": { "kind": "integer", "bits": 32 }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": { "kind": "integer", "bits": 32 },
+    "entrypoints": {
+      "go": "maxFont",
+      "rust": "max_font",
+      "typescript": "maxFont"
+    },
+    "comparison": "exact"
+  },
+  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+}

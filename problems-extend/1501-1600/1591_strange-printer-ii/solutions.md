@@ -1,31 +1,33 @@
 # Solutions — Strange Printer II
 
-## Bounding rectangles plus a dependency graph
+## Bounding rectangles and a dependency graph
 
-For every color that appears in `targetGrid`, compute its bounding
-rectangle: the smallest range of rows and columns that contains every
-cell holding that color. If a stamp sequence exists, it can always be
-rearranged so each color's stamp is exactly that bounding rectangle —
-shrinking a larger stamp down to the bounding box only removes cells
-that a later stamp would have overwritten anyway, so it never breaks a
-working sequence. That turns the question into: is there an order of
-the colors such that stamping each one's bounding rectangle, in that
-order, reproduces the grid exactly?
+For each color, find its bounding rectangle in `targetGrid`: the smallest
+axis-aligned rectangle spanning every cell that holds that color (its
+min/max row and min/max col). If that color were ever stamped, the stamp
+had to cover at least this rectangle, since a stamp is a solid rectangle
+and every cell of it takes on the stamped color at that moment. So a color
+`c` can only be a *valid* stamp if every cell inside `c`'s bounding
+rectangle ends up, in the final grid, either still showing `c` or showing
+some other color that could only have arrived by being stamped again later,
+on top of `c`.
 
-A color's bounding rectangle can only end up correct if every cell
-inside it is either that color itself or a color stamped afterward —
-otherwise a wrong color would show through at the end. Scanning each
-color's bounding rectangle and recording an edge from that color to
-every other color found inside it builds a directed graph of "must be
-stamped before" constraints. The grid is printable exactly when this
-graph has no cycle, since a cycle means two colors each need to be
-stamped before the other, which no order can satisfy; acyclicity is
-checked with a topological sort (Kahn's algorithm or three-color DFS),
-and the grid is printable iff every color gets ordered.
+That "stamped later, on top of" relationship is exactly a dependency: for
+every cell inside color `c`'s bounding rectangle that shows a different
+color `d` in the target grid, `c` must be stamped before `d`. Recording one
+directed edge `c -> d` for every such pair (skipping self-edges) builds a
+graph over the colors present in the grid. A stamping order that produces
+`targetGrid` exists precisely when this graph has a valid topological order
+— equivalently, when it contains no cycle: run a cycle check (DFS with a
+"visiting/done" coloring, or Kahn's algorithm removing zero-in-degree
+nodes) over the up-to-60 distinct colors, treating parallel edges between
+the same pair as one. Any topological order the graph admits corresponds to
+a legal stamp sequence (paint the colors in that order over their bounding
+rectangles), because each color is stamped before every color the target
+grid shows on top of it, and stamped after nothing that would need to see
+through it. The grid is printable exactly when no cycle is found.
 
-The number of distinct colors is bounded by the value range rather than
-by the grid size, so building the graph costs one pass over the grid
-per color to find its bounding rectangle, plus one more pass over each
-rectangle to find the colors nested inside it.
-
-**Complexity:** `O(colors * m * n)` time, `O(m * n + colors^2)` space.
+**Complexity:** `O(m·n + k²)` time, where `k <= 60` is the number of
+distinct colors — `O(m·n)` to compute each color's bounding rectangle and
+scan those rectangles for dependency edges, plus `O(k²)` for the cycle
+check over at most `k²` edges. `O(k²)` space for the dependency graph.

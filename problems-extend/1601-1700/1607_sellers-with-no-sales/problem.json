@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 1607,
+  "slug": "sellers-with-no-sales",
+  "title": "Sellers With No Sales",
+  "difficulty": "",
+  "tags": [
+    "Database"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Customer (customer_id INTEGER, customer_name VARCHAR);\nCREATE TABLE Orders (order_id INTEGER, sale_date DATE, order_cost INTEGER, customer_id INTEGER, seller_id INTEGER);\nCREATE TABLE Seller (seller_id INTEGER, seller_name VARCHAR);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
