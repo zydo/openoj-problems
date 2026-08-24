@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 488,
+  "slug": "zuma-game",
+  "title": "Zuma Game",
+  "difficulty": "",
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Breadth-First Search",
+    "Memoization"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "findMinStep",
+    "parameters": [
+      {
+        "name": "board",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "hand",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "findMinStep",
+      "rust": "find_min_step",
+      "typescript": "findMinStep"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2047,
+  "slug": "number-of-valid-words-in-a-sentence",
+  "title": "Number of Valid Words in a Sentence",
+  "difficulty": "",
+  "tags": [
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countValidWords",
+    "parameters": [
+      {
+        "name": "sentence",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countValidWords",
+      "rust": "count_valid_words",
+      "typescript": "countValidWords"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

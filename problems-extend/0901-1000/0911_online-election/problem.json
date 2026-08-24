@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 911,
+  "slug": "online-election",
+  "title": "Online Election",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "TopVotedCandidate",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "persons",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        },
+        {
+          "name": "times",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "q",
+        "parameters": [
+          {
+            "name": "t",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

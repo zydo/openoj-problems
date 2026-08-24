@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 432,
+  "slug": "all-oone-data-structure",
+  "title": "All O`one Data Structure",
+  "difficulty": "",
+  "tags": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Doubly-Linked List"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "AllOne",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "inc",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dec",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "getMaxKey",
+        "parameters": [],
+        "return_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "getMinKey",
+        "parameters": [],
+        "return_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

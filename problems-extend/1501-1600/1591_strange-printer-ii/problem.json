@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 1591,
+  "slug": "strange-printer-ii",
+  "title": "Strange Printer II",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Graph Theory",
+    "Topological Sort",
+    "Matrix",
+    "Directed Acyclic Graph"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "isPrintable",
+    "parameters": [
+      {
+        "name": "targetGrid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "isPrintable",
+      "rust": "is_printable",
+      "typescript": "isPrintable"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

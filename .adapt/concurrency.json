@@ -2,7 +2,7 @@
   "policy": "Adaptive subagent concurrency for the adaptation program. Target is the number of agents kept running; on frequent rate limiting it steps down, and it recovers slowly when quiet.",
   "cap": 16,
   "floor": 4,
-  "target": 4,
+  "target": 8,
   "step_down_on": "2 or more rate-limit agent deaths within one quota window",
   "recover": "+2 to target per hour with zero rate-limit events",
   "events": [
@@ -106,6 +106,254 @@
       "kind": "quota-window-exhausted",
       "agents_lost": 1,
       "note": "Variant wave tail: the 0587 (hash LCP) authoring agent died on the 5-hour pool (429 code 1308; reset 2026-08-22 18:14:11 PDT, error id 2026082217315176ca3a1caba140eb). Consumption-driven, not concurrency -- target stays 4. 0587 had read all seven solutions + solutions.md; resume it via SendMessage after reset. Three tail agents (0739/0606/0826) may also die; no new launches until the pool resets. A one-shot 18:16 PDT timer fires the resume."
+    },
+    {
+      "at": "2026-08-23T04:30:00-07:00",
+      "kind": "policy",
+      "note": "User temporarily raised the problems-extend authoring cap from 4 to 6. Rate-limit step-down rules unchanged: on per-minute 429s step back toward 4; 5-hour-pool exhaustion is consumption-driven (wait for reset, resume, no step-down)."
+    },
+    {
+      "at": "2026-08-23T05:00:00-07:00",
+      "kind": "policy",
+      "note": "User raised the problems-extend authoring cap from 6 to 8. Step-down rules unchanged: per-minute 429s step back toward 4; 5h-pool exhaustion is consumption-driven (wait for reset, resume)."
+    },
+    {
+      "at": "2026-08-23T05:20:00-07:00",
+      "kind": "policy",
+      "note": "User reduced the problems-extend authoring cap from 8 back to 6. No kills: the 8 in-flight agents run to completion; launches hold until live agents <= 6, then one-per-completion resumes."
+    },
+    {
+      "at": "2026-08-22T19:52:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 5,
+      "note": "Extend wave: 0031/0036/0038/0040/0043 died on the 5-hour pool (429 code 1308; reset 2026-08-22 22:32:03 PDT). Consumption-driven, no step-down (cap stays 6). 0038 and 0031 died after their verify gates ran green -- coordinator checks their on-disk state locally and closes them out without agents if complete. 0035 landed green pre-cut, closed by coordinator. 0036/0040/0043 partial: resume via SendMessage after reset (one-shot 22:34 PDT timer)."
+    },
+    {
+      "at": "2026-08-22T05:10:00-07:00",
+      "kind": "policy",
+      "note": "User manually reset the usage limit and ordered a gradual ramp: 0043 canary confirmed alive; resume 0036+0040 to 3 live, then +1 per clean landing until the cap of 6. The 07:34 one-shot timer is deleted (superseded)."
+    },
+    {
+      "at": "2026-08-22T22:45:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 5,
+      "note": "Extend wave tail: 0093/0097/0098/0099/0100 died on the 5-hour pool (429 code 1308; reset 2026-08-23 01:02:25 PDT per error clock). All five died mid-authoring with contexts absorbed (0093 was mid static-check; 0097 mid ceiling-case design with the same-source-swap insight; 0098/0099/0100 mid file-generation). Resume all five via SendMessage after reset; no new launches until then. Standing: 65/500 done, shard 1 at 65/70."
+    },
+    {
+      "at": "2026-08-23T04:07:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 2,
+      "note": "0156 died post-verify-mid-sanity (bundle complete on disk, verify 7/7 — closed out locally). 0159 died pre-write (nothing on disk). Reset 2026-08-23 06:04:44 PDT per error clock (UTC+8). Record 0159 for SendMessage resume after reset."
+    },
+    {
+      "at": "2026-08-23T04:30:00-07:00",
+      "kind": "policy",
+      "note": "USER DIRECTIVE: always keep 6 concurrent authors; maximize concurrency; refill to 6 immediately on every completion; on rate-limit deaths relaunch instantly WITHOUT waiting for pool resets (user manages limits externally and has reset them repeatedly). Never wait for user prompt or timers to refill."
+    },
+    {
+      "at": "2026-08-23T05:10:00-07:00",
+      "kind": "policy",
+      "note": "User raised the cap from 6 to 7 concurrent authors. Refill to 7 on every completion; relaunch on death without waiting."
+    },
+    {
+      "at": "2026-08-23T05:40:00-07:00",
+      "kind": "policy",
+      "note": "User set the cap back to 6 (the sustainable peak) — keep the pool AT 6 continuously: the next launch fires the moment an author finishes, so the working pool never dips. Relaunch on rate-limit death without waiting."
+    },
+    {
+      "at": "2026-08-22T18:35:00-07:00",
+      "kind": "session-handoff",
+      "note": "Post-/clear coordinator resumed problems-extend. Closed out 4 landed bundles from the pre-clear fleet (0232 15/15x7, 0234 20/20x7, 0237 green w/ value-pin documented, 0243 16/16x7) and marked them done in ROSTER.json (139/500-region done; shard 1 70/70, 0201-0300 now 18 done/39 pending). Launched 6 fresh authors 0244-0249 (0244 design kind, 0247/0249 pinned-order, 0248 Hard). Cap stays 6, refill-on-completion per the standing directive. Leftover shard-2 pendings are all SQL (0178/0180-0185/0197) on the coordinator-inline track tied to the uncommitted runner/sql_harness.py work."
+    },
+    {
+      "at": "2026-08-22T19:10:00-07:00",
+      "kind": "corpus-note",
+      "note": "0247_strobogrammatic-number-ii set output_kb 2048 (first departure from the extend-set all-64 default; 20 problems-adapt bundles already use 2048): n=14's exact-comparison return serializes to ~1038 KiB, impossible under 64. Future output-heavy extend bundles (large sorted-list returns) need the same raise -- the binding constraint is runner/python_harness.py:_json_safe vs output_kb*1024."
+    },
+    {
+      "at": "2026-08-22T19:40:00-07:00",
+      "kind": "corpus-note",
+      "note": "0254_factor-combinations ordering pin inferred from the crawl's single displayed example as 'each combination ascending; outer list grouped by factor COUNT (fewest first), lex within group' -- neither plain lexicographic nor DFS emission order. Alternative 'last-factor descending' also fits the one example; agent chose the statable reading per 0018 precedent. If a contradicting source ever surfaces, the pin lives in statement.md."
+    },
+    {
+      "at": "2026-08-22T19:20:00-07:00",
+      "kind": "corpus-note",
+      "note": "0280_wiggle-sort raised output_kb 64->512: a 5*10^4-element int-array return (worst 288KiB) cannot pass at 64 -- runner/worker.py reads only output_kb KiB of protocol output, on top of _json_safe. Large ARRAY returns at length ceilings need the 512 tier (100+ bank bundles above 64; e.g. 0307 at 297KiB); large list-of-string returns need 2048 (0247) / measured (0267). Both pins otherwise standard."
+    },
+    {
+      "at": "2026-08-23T10:15:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 5,
+      "note": "Extend wave: 0272/0273/0275/0281/0290 died together on the 5-hour pool (429 code 1308; reset 2026-08-23 13:33:14 per error clock). All five resumed via SendMessage per the standing relaunch-instantly directive. Separately 0285 hit a REAL inexpressibility wall (agent stopped at gate, bundle removed): pinned int-or-null return cannot marshal in cpp (openoj_json has no null) or rust (no Option<OpenOJToJson>); five languages green. Coordinator re-pin: return the successor NODE as tree_node-out wire (judge-native; [] = no successor, all 7 green today), bridge sentence documents it. Judge-side alternative (nullable scalar type through typed.py/cpp.py/rust.py + gen_starters + image rebuild) recorded for the user; NOT done mid-wave -- openoj tree already carries uncommitted sql_harness work."
+    },
+    {
+      "at": "2026-08-23T11:20:00-07:00",
+      "kind": "milestone",
+      "note": "Shard 0201-0300 complete: 57/57 bundles authored + verify-gated green (0201..0299). problems-extend total 180 done (shard 1 70/70, shard 2 57/57, shard 3 3 landed + 5 in flight 0306/0313/0314/0317/0319). Notable this stretch: first interactive bundle (0278, provided/ machinery), first float param (0270/0272), string-matrix wire (0302), output_kb tiers 512/2048 documented (0247/0280/0293/0311), 0285 nullable-scalar wall found + node-out re-pin."
+    },
+    {
+      "at": "2026-08-22T21:05:00-07:00",
+      "kind": "session-handoff",
+      "note": "Coordinator session died ~20:45 mid-wave; new coordinator resumed. Closed out 0321 (29/29x7 green) and 0334 (green) from disk. 0333 was PARTIAL (problem.json + solution.py only, rest never written) — relaunched fresh with its original prompt plus a partial-state note. Relaunched 0335/0339/0343 with prompts recovered verbatim from the dead session's transcript (nothing on disk). Fresh targets 0344/0345 to fill to 6 per the standing directive. problems-extend now 184/500 done (shard 0301-0400: 14 done, 0333/0335/0339/0343/0344/0345 in flight)."
+    },
+    {
+      "at": "2026-08-22T21:25:00-07:00",
+      "kind": "policy",
+      "note": "SQL block (0178/0180-0185/0197, all native SELECTs) moves from the parked coordinator-inline track into the fleet refill rotation — the template is proven (0175/0176/0177/0196 landed) and the sql_harness '--' fix is regression-verified in openoj's working tree. Eight briefs staged at openoj/.localonly/relaunch/sql/*.prompt (each with an early-smoke rule: prove float/date/two-table wire on the public case before building hidden cases). Launch one per freed fleet slot, roster order."
+    },
+    {
+      "at": "2026-08-22T21:35:00-07:00",
+      "kind": "blocked",
+      "note": "0339_nested-list-weight-sum BLOCKED at the expressibility gate (no bundle written): NestedInteger is a recursive union (integer | list, depth <= 50); no SUPPORTED_KIND carries it (array = one items-spec per level; linked_list/binary_tree = integer-only fixed shapes; nary Node is not a schema kind and collapses Node(2,[]) vs 2), the tagged recursive stream exists only behind the interactive oracle protocol (different contract), and a string serialization fails the 0237/0271/0284 honesty bar (judged work becomes parse-then-traverse). ROSTER marked blocked; CORPUS-FLAGS entry 8 filed. Unblock = judge-contract extension: a self-referential nested/json value kind end-to-end. Slot refilled with SQL 0178 per the rotation."
+    },
+    {
+      "at": "2026-08-22T22:35:00-07:00",
+      "kind": "milestone",
+      "note": "Post-handoff wave healthy: interrupted-set recovery complete (0321/0333/0334 closed out; 0333 re-authored green), 0335/0343/0344/0345 landed green, 0339 blocked at the expressibility gate (CORPUS-FLAGS entry 10). SQL rotation: 0178/0180/0181/0182 landed green, 0183/0184/0185/0197 in flight. problems-extend total 200 done, 10 blocked. Shard 0301-0400: 19 done, 0346/0348 in flight next. SQL wire findings so far: no trailing semicolon in solution.sql (executor wraps in SELECT * FROM (...)); REAL scores round-trip as full JSON floats; two-table datasets assemble in one sql_setup string."
+    },
+    {
+      "at": "2026-08-22T23:15:00-07:00",
+      "kind": "milestone",
+      "note": "SQL block COMPLETE: all 8 (0178/0180-0185/0197) authored and verify-gated green through the agent rotation. 0101-0200 now 57 done / 8 blocked, zero SQL pendings. problems-extend total 204 done. Fleet continues on shard 0301-0400 (0346/0348/0349/0350/0351 in flight, 0352 launching). SQL-block reusable findings: grouped-max join canonical beats window form for 0184; DENSE_RANK for 0185; every expected dual-derived (sqlite + python oracle)."
+    },
+    {
+      "at": "2026-08-23T01:20:00-07:00",
+      "kind": "blocked",
+      "note": "0364_nested-list-weight-sum-ii marked blocked WITHOUT an agent probe: its input is the identical recursive NestedInteger union that blocked 0339 (entry 10) — same schema enumeration applies. Coordinator also corrected tags on two landed bundles whose briefs carried mis-transcribed tag lists (0346, 0357 order, 0353 extra Matrix) — briefs now instruct reading the crawl's Topics row directly."
+    },
+    {
+      "at": "2026-08-23T03:05:00-07:00",
+      "kind": "blocked",
+      "note": "0385_mini-parser blocked without an agent probe: output is the recursive NestedInteger structure (entry 10's union); no output codec exists, string round-trip = identity no-op (entry 7 class). 0364 likewise folded into entry 10 earlier."
+    },
+    {
+      "at": "2026-08-23T05:10:00-07:00",
+      "kind": "blocked",
+      "note": "0341_flatten-nested-list-iterator blocked without an agent probe: the constructor input is the recursive NestedInteger union (entry 10). Shard 0301-0400 now has only authorable pendings in flight (0320/0377/0390/0396/0397/0400); after these land, shard complete and refills move to 0401-0500."
+    },
+    {
+      "at": "2026-08-23T07:30:00-07:00",
+      "kind": "milestone",
+      "note": "Shard 0301-0400 COMPLETE: 44 done + 5 blocked (0116-class pointer/graph/recursion walls: 0339/0341/0364/0385 NestedInteger family + none other) of 49 rostered... final: every authorable problem in the shard is landed green. problems-extend total 246 done, 16 blocked. Fleet continues on 0401-0500 (0404/0411/0414/0415/0418/0419 in flight or queued). Coordinator note: several briefs this stretch carried my transcription slips (tags, constraint-blind cases, wrong expecteds) — agents caught every one via crawl-source reads and oracle cross-checks; briefs now mandate reading tags/constraints from the crawl file directly."
+    },
+    {
+      "at": "2026-08-23T08:20:00-07:00",
+      "kind": "blocked",
+      "note": "0426_convert-binary-search-tree-to-sorted-doubly-linked-list blocked without an agent probe: output is circular prev/next wiring (entry 5 pointer family, output side) — node codec cannot serialize the cycle, value-list output = inorder degeneration. ROSTER blocked; CORPUS-FLAGS entry 5 addendum filed."
+    },
+    {
+      "at": "2026-08-23T08:25:00-07:00",
+      "kind": "blocked",
+      "note": "0427_construct-quad-tree blocked without an agent probe: 4-child node output has no typed kind (entry 6 family) AND non-leaf val is arbitrary by spec (nondeterministic output). CORPUS-FLAGS entry 6 addendum filed."
+    },
+    {
+      "at": "2026-08-23T08:30:00-07:00",
+      "kind": "blocked",
+      "note": "0429_n-ary-tree-level-order-traversal blocked without an agent probe: n-ary tree input has no 7-language wire (entry 6 — nary absent from SUPPORTED_KINDS, legacy codec Java-rejected). Entry 6 addendum filed. Shard-4 blocked so far: 0426 (entry 5), 0427 (entry 6), 0429 (entry 6)."
+    },
+    {
+      "at": "2026-08-23T08:35:00-07:00",
+      "kind": "blocked",
+      "note": "0430_flatten-a-multilevel-doubly-linked-list blocked without an agent probe: child-pointer multilevel input has no wire kind (entry 5, input side). Shard-4 blocked set now 0426/0427/0429/0430 — the 04xx range is dense with pointer-structure problems."
+    },
+    {
+      "at": "2026-08-23T08:40:00-07:00",
+      "kind": "blocked",
+      "note": "0428_serialize-and-deserialize-n-ary-tree and 0431_encode-n-ary-tree-to-binary-tree blocked without probes: n-ary wire both directions (entry 6). Shard-4 blocked set: 0426/0427/0428/0429/0430/0431 — six pointer/nary walls in ten ids."
+    },
+    {
+      "at": "2026-08-23T13:55:00-07:00",
+      "kind": "rate-limit",
+      "note": "0442 author died on a per-minute 429 (code 1302, request-rate class) mid-authoring — near-complete (was checking Rust/Go idiom details). Resumed instantly via SendMessage per the standing relaunch directive. Per fleet policy this is the concurrency-driven class, but the standing USER DIRECTIVE overrides step-down: relaunch instantly, cap stays 6."
+    },
+    {
+      "at": "2026-08-23T15:20:00-07:00",
+      "kind": "blocked",
+      "note": "0478_generate-random-point-in-a-circle blocked without an agent probe: random-output problem — exact-comparison judge cannot pin uniform random floats; LC itself validates statistically. New CORPUS-FLAGS entry 11 (random-output class, unblock = seeded-RNG judge contract)."
+    },
+    {
+      "at": "2026-08-23T16:20:00-07:00",
+      "kind": "policy",
+      "note": "USER DIRECTIVE: expand the wave's working scope from the first ~500 ids to the FULL corpus — all 3180 rostered problems through shard 4001-4100. ROSTER already carries every shard (no manifest change). Standing fleet rules unchanged: cap 6, refill-on-completion, relaunch-instantly on rate-limit deaths. Current: 284 done, 19 blocked, 2877 authorable remaining. Refills continue shard-by-shard in id order after 0401-0500 drains."
+    },
+    {
+      "at": "2026-08-23T14:50:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 4,
+      "note": "5h pool exhausted (429 code 1308, reset stamp 18:51:28 PDT): 0487 (post-verify, cleanup only), 0491 (mid), 0492 (mid), 0495 (early). User typed 'resume' (limits managed externally per standing directive) — all four resumed instantly via SendMessage with contexts intact. 0488/0490 unconfirmed (no death notice yet; may have survived or may die next tool round)."
+    },
+    {
+      "at": "2026-08-23T17:30:00-07:00",
+      "kind": "milestone",
+      "note": "Shard 0401-0500 COMPLETE (58 done + 7 blocked of 65; every authorable landed green). Four shards done (1-4), 302/3180 total. Fleet continues on 0501-0600 (5 in flight + refills). Post-handoff pace holding ~7/hour at cap 6."
+    },
+    {
+      "at": "2026-08-23T18:10:00-07:00",
+      "kind": "blocked",
+      "note": "0519_random-flip-matrix blocked without a probe: random-output class (entry 11, same as 0478 — flip() returns a uniformly random zero cell; LC judges it by statistical/consecutive-uniqueness checks, not exact comparison)."
+    },
+    {
+      "at": "2026-08-23T20:05:00-07:00",
+      "kind": "policy",
+      "note": "USER DIRECTIVE: partition the remaining corpus for parallel authoring. Boundary at shard 2001 — A (this session) owns 0001-2000, CODEX owns 2001-4100 (1737 pending, nothing started). Conflict protocol: A is sole writer of ROSTER.json/CORPUS-FLAGS.md/.adapt/concurrency.json; Codex tracks in .localonly/codex/{partition.json,events.json,blocked.md} (seeded), merge later. Codex fleet shares the account rate limits; resume-instantly rule applies to both sides. Handover doc: openoj/HANDOVER_TO_CODEX.md."
+    },
+    {
+      "at": "2026-08-23T15:45:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 6,
+      "note": "5h pool exhausted (429 code 1308, reset stamp 19:50:02 PDT): the ENTIRE fleet died at once — 0536 (mid solutions), 0538 (mid strict-BST zigzag fix caught by its own fuzz), 0539 (final markdown rewrap only), 0541 (starting case generator), 0544 (checking output_kb), 0545 (reading exemplars). User typed 'resume' (limits managed externally) — all six resumed instantly via SendMessage with context-aware pickup notes."
+    },
+    {
+      "at": "2026-08-23T17:20:00-07:00",
+      "kind": "blocked",
+      "note": "0558_logical-or-of-two-quad-trees blocked without a probe: quad-Node input AND output (entry 6, the 0427 wall both directions). ROSTER blocked; entry 6 addendum filed."
+    },
+    {
+      "at": "2026-08-23T17:35:00-07:00",
+      "kind": "blocked",
+      "note": "0559_maximum-depth-of-n-ary-tree blocked without a probe: n-ary Node input (entry 6, the 0429 wall). Also: coordinator dropped 3 value-1 hidden cases from 0553 (below the crawl's stated 2<=nums[i] bound — brief error, the established constraint-first correction); re-verified 23/23 x 7 green."
+    },
+    {
+      "at": "2026-08-23T20:40:00-07:00",
+      "kind": "blocked",
+      "note": "0589_n-ary-tree-preorder-traversal and 0590_n-ary-tree-postorder-traversal blocked without probes: n-ary Node inputs (entry 6, the 0429/0559 wall). Entry 6 addendum filed."
+    },
+    {
+      "at": "2026-08-23T21:30:00-07:00",
+      "kind": "policy",
+      "note": "USER DIRECTIVE: three-way split. Partition C (another Claude Code session, different model) carved from A's upper range: shards 1501-1600..1901-2000 (401 pending). A now owns 0001..1500 only (working 0501-0600 upward through 1401-1500); Codex keeps 2001+. C's bookkeeping seeded at .localonly/claude-c/ (partition.json/events.json/blocked.md), handover at openoj/HANDOVER_TO_ANOTHER_CLAUDE.md. A must not author >= 1501 from now on."
+    },
+    {
+      "at": "2026-08-23T17:20:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 3,
+      "note": "5h pool exhausted (429 code 1308, reset stamp 21:09:27 PDT): 0593 (early, reading exemplars), 0594 (reading 0532 idiom), 0595 (mid). 0592 survived and landed green. User typed 'resume' — all three resumed instantly via SendMessage with context-aware pickup notes."
+    },
+    {
+      "at": "2026-08-23T23:30:00-07:00",
+      "kind": "milestone",
+      "note": "Shard 0501-0600 COMPLETE (71 done + 4 blocked of 79... final: every authorable landed green; 0598 i64 correction noted — 1.6e9 fits i32 contrary to the brief). Five shards done (1-5). Partition-A total 371. Shard 6 (0601-0700) already opened (0601/0602 in flight). Concurrent sessions: Codex ~54 done (2001+), Claude-C ~19 done (1501-2000)."
+    },
+    {
+      "at": "2026-08-24T01:20:00-07:00",
+      "kind": "corpus-note",
+      "note": "0616 coordinator fix: the brief's method name boldWords contradicted the crawl skeleton's addBoldTag (skeleton authoritative under ORIGINAL form) — renamed in problem.json + all 7 solutions, starters regenerated, re-verified 19/19 x 7 green."
+    },
+    {
+      "at": "2026-08-24T02:30:00-07:00",
+      "kind": "policy",
+      "note": "USER DIRECTIVE (reaffirmed): keep 6 concurrent authors running as much of the time as possible — refill the instant a completion arrives, never let the fleet idle below cap while pendings remain."
+    },
+    {
+      "at": "2026-08-24T04:10:00-07:00",
+      "kind": "policy",
+      "note": "USER DIRECTIVE: cap raised 6 -> 8. Keep 8 concurrent authors running as much of the time as possible; refill instantly on every completion. Two immediate launches on top of the current 6 (0615/0655/0656/0657/0659/0660 in flight) -> 0661 image-smoother, 0662 maximum-width-of-binary-tree."
+    },
+    {
+      "at": "2026-08-23T19:22:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 4,
+      "note": "5h pool exhausted (429 code 1308, reset stamp 23:28:05 PDT): 0662 (debugging a bush-case discrepancy), 0663 (corpus locked, at the verify gate), 0666 (reading gen_starters conventions), 0667 (checking output_kb enforcement). 0615/0664/0665 survived. User typed 'resume' — all four resumed instantly via SendMessage with context-aware pickup notes. Cap stays 8."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"

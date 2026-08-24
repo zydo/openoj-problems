@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 817,
+  "slug": "linked-list-components",
+  "title": "Linked List Components",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "numComponents",
+    "parameters": [
+      {
+        "name": "head",
+        "codec": "list_node",
+        "value_type": {
+          "kind": "linked_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "numComponents",
+      "rust": "num_components",
+      "typescript": "numComponents"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 649,
+  "slug": "dota2-senate",
+  "title": "Dota2 Senate",
+  "difficulty": "",
+  "tags": [
+    "String",
+    "Greedy",
+    "Queue"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "predictPartyVictory",
+    "parameters": [
+      {
+        "name": "senate",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "predictPartyVictory",
+      "rust": "predict_party_victory",
+      "typescript": "predictPartyVictory"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

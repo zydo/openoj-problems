@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 359,
+  "slug": "logger-rate-limiter",
+  "title": "Logger Rate Limiter",
+  "difficulty": "",
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Data Stream"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "Logger",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "shouldPrintMessage",
+        "parameters": [
+          {
+            "name": "timestamp",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "message",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

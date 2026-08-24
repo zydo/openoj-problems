@@ -7,6 +7,13 @@ contradicts something the wave proved. None is fixed because each requires
 an authored-content decision (frozen cases.json / statement wording), not
 a code change. Resolve top-down; tick the log at the bottom.
 
+Entries 1–4 concern problems whose LeetCode originals are archived in
+problems-bettercode and whose adapted bundles live in problems-adapt.
+Every entry from 5 on concerns the problems-extend set, which keeps the
+crawled originals as-is under ORIGINAL form. The two tracks are separate
+corpora: resolve each entry against its own tree, and never port a
+decision, wording, or wire pin from one track to the other.
+
 ----------------------------------------------------------------------
 
 ## 1. 0432_rebalance-a-bst — the DSW variant is impossible under exact-shape pinning
@@ -154,9 +161,212 @@ correctly kept agents out of old section bodies.
 
 ----------------------------------------------------------------------
 
+## 5. problems-extend 0116/0117/0138/0426/0430/0510 — pointer-wired nodes inexpressible under the judge contract
+
+**State**: no bundle authored (correctly — the agent proved impossibility and
+wrote nothing). ROSTER marks both `blocked`. 0385_mini-parser is the output-side variant of the same
+wall (deserialize a string into a NestedInteger): the input string rides the wire
+fine, but no output codec can serialize the recursive structure back, and a
+string round-trip (s in, s out) would judge an identity no-op — the same
+output-unfalsifiable class as entry 7's 0138. Blocked with this entry.
+
+**What happened**: LC 116 (and its sibling 117) need a binary node with a
+`next` pointer. No value_type kind, codec, starter emission, or provided/
+mechanism can carry it: `leetcode_types.py`'s codec registry is closed (a
+next-wired tree serializes to exactly its own input — the wiring is
+unjudgeable and a no-op solution would pass); `typed.py` hard-validates
+SUPPORTED_KINDS whose binary_tree wire encodes only left/right;
+`gen_starters.py` maps only ListNode/TreeNode; `provided/` injects source
+text but cannot carry a typed argument or return (the interactive-oracle
+route is the sole instance path and fails ORIGINAL form on four axes).
+
+**0426 addendum** (output side): convert-BST-to-sorted-circular-doubly-linked-list's answer IS the
+prev/next wiring — a head-node tree codec cannot serialize the cycle, and pinning the output
+to the sorted value list degenerates the problem to plain inorder (the 0138 mechanical-rewrite
+class). Blocked here rather than shipped bent.
+
+**0430 addendum** (input side): flatten-a-multilevel-doubly-linked-list's INPUT is a child-pointer
+multilevel list — no wire kind carries prev/child wiring (linked_list is single-next only), so the
+structure cannot even reach the solution. Blocked on the input side of this same wall.
+
+**0510 addendum**: inorder-successor-in-bst-ii hands the solution a NODE with parent, left, right
+references and no root — the parent wiring cannot ride any wire kind (entry 5's wall), and
+receiving 'just a node' without the graph is meaningless on a value-passing judge. (Its root-based
+twin 0285 IS authorable and landed, via the tree codec + node-out re-pin.) Blocked.
+
+**Unblock** (runner-owned): a new `next_tree` value_type kind + codec in
+`leetcode_types.py` AND `typed.py` (binary wire + SUPPORTED_KINDS) +
+`gen_starters.py` type maps + a per-language NodeWithNext (or TreeNode with
+optional next) in common/. Until then, both problems stay blocked.
+
+## 6. problems-extend 0133/0427/0428/0429/0431/0558/0559/0589/0590 — graph/quad/nary Nodes inexpressible; nary_tree codec is tree-only
+
+**State**: no bundle authored (proved impossible, wrote nothing). ROSTER marks 0133 `blocked`.
+
+**What happened**: LC 133 needs a graph Node with a `neighbors` field. The common
+library's n-ary Node is a TREE node (`children`, not `neighbors`), and the
+`nary_tree` codec cannot carry a graph at all — serialize never terminates on
+cycles (BFS with no visited set; even a 2-node cycle hangs), and parse never
+creates shared references (a finite wire encodes only an unfolded tree with
+duplicate-valued nodes, violating the statement's unique-val guarantee). No
+`graph` value_type kind exists in `typed.py`'s SUPPORTED_KINDS; gen_starters
+emits no Node-wired starter; provided/ still cannot carry typed args/returns
+(entry 5). The adjacency-list json degeneration makes an identity no-op pass
+every case — the cloning skill is unjudgeable.
+
+**0427 addendum**: construct-quad-tree needs a 4-child (isLeaf, val) node OUTPUT — no quad/nary
+kind exists in the typed stream (this entry's codec enumeration), and the original spec makes
+non-leaf `val` explicitly arbitrary ("both are accepted"), so the output is nondeterministic by
+design even before the wire gap. Blocked.
+
+**0429 addendum** (input side): n-ary-tree-level-order-traversal takes an n-ary tree INPUT — the
+nary kind is absent from SUPPORTED_KINDS and the legacy python-only nary_tree codec is rejected
+by the Java harness (this entry's evidence), so no 7-language wire exists. Same unblock path:
+an nary kind + codec end-to-end (val + null-grouped level-order children per the original).
+
+**0558 addendum**: logical-or-of-two-binary-grids-represented-as-quad-trees takes quad-Node
+inputs AND returns one — both sides of the 0427 wall (no 4-child kind; non-leaf val arbitrary
+by spec). Blocked on the same evidence.
+
+**0559 addendum**: maximum-depth-of-n-ary-tree takes an n-ary Node input — the 0429 wall
+(no nary kind in the typed stream). Blocked.
+
+**0589/0590 addendum**: n-ary-tree-preorder/postorder-traversal take n-ary Node inputs — the same
+0559/0429 wall (no nary kind in the typed stream; the legacy codec is python-only and
+Java-rejected). Both blocked on identical evidence.
+
+**0428/0431 addendum**: serialize/deserialize-n-ary-tree and encode-n-ary-tree-to-binary-tree both
+carry the n-ary structure on input AND output (0431's binary encoding target also changes the
+answer shape) — the same missing nary wire as 0429, both directions. Blocked.
+
+**Unblock** (runner-owned): a `graph` value_type kind + codec pair
+(adjacency-list ↔ shared-reference Node with a cycle-safe visited-set
+serialize, val-as-index per the LC test format), SUPPORTED_KINDS + binary wire
+in `typed.py`, gen_starters type maps, and a common/ field decision
+(`neighbors` per LC, or the codec maps onto `children`).
+
+## 7. problems-extend 0138 — random-pointer list node: entry 5 confirmed, output unfalsifiable
+
+**State**: no bundle authored (proved impossible, wrote nothing). ROSTER marks
+0138 `blocked`; folded conceptually into entry 5's family (title updated to
+0116/0117/0138).
+
+**Decisive closure**: the OUTPUT side. `_serialize_list_node` walks only
+`.val`/`.next`, so random wiring is silently dropped and `return head` — the
+shallow alias the statement explicitly forbids — serializes byte-identically
+to a correct deep copy. The problem's defining property is unjudgeable. Input
+decode garbles, `typed.py` SUPPORTED_KINDS closes the typed path,
+gen_starters cannot emit the starter, and the provided/interactive route fails
+ORIGINAL form on the same four axes as entry 5. A json fallback (pairs of
+`[val, random_index]` arrays) would pass mechanically but is a rewritten
+problem — the bent bundle this set forbids.
+
+**Unblock** (runner-owned): a `random_list` value_type kind + codec pair in
+`leetcode_types.py` AND `typed.py` (binary wire with a random-index slot) +
+gen_starters type maps + a per-language NodeWithRandom in common/.
+
+## 8. problems-extend 0157/0158 — read4 out-buffer contract unjudgeable
+
+**State**: no bundle authored (proved impossible, wrote nothing). ROSTER marks
+both 0157 and 0158 `blocked` (158 is the same read4 contract with stateful
+multiple calls — same closure).
+
+**What happened**: LC 157/158's deliverable lives in the solution-written
+out-buffer `buf`, and the judge's surface is exactly {method return value} ∪
+{oracle-observed state} on every path (verified against all four harness
+implementations: python_harness, go_interactive, js_interactive, the Java
+harness). Auxiliary arguments are never re-inspected after the call in any
+language; in five of seven the decode-per-key design makes cross-key aliasing
+structurally impossible. A count-only judging is provably insufficient — a
+solution that reads in the exact correct pattern, discards the data, never
+writes buf, and returns min(n, len) has a byte-identical observable transcript
+to a correct one; no query budget separates them. Interactive IS genuinely
+7-language now (CODECS.md's "Python+Java only" is stale — 0838 ships all
+seven), so cross-language support was NOT the blocker; the out-param is.
+
+**Unblock** (runner-owned): an out-parameter judging surface — harnesses
+re-encoding mutated auxiliary arrays into the actual, or a verdict granted
+access to them.
+
+## 9. problems-extend 0160 — tail-sharing between two list_node params inexpressible
+
+**State**: no bundle authored (proved impossible, wrote nothing). ROSTER marks
+0160 `blocked`.
+
+**What happened**: LC 160 needs two lists that share a tail. The wire cannot
+build the Y: `_parse_list_node` allocates fresh nodes per decode and
+`_invoke_function` decodes each positional independently — no codec or hook
+can make two parameters alias. Identity judging (two list_node heads in)
+degenerates to always-null (the decoded lists are always disjoint, so the
+canonical two-pointer returns [] on every intersecting example); value-tail
+judging passes only a longest-common-suffix matcher — a different problem. On
+a genuinely shared Y the two judgings would coincide exactly; the blocker is
+purely wire expressiveness. The repo's own bettercode 0141/0142 solved the
+identical structure-gap by rewriting the contract (json values+pos,
+solution-side building) — exactly the move ORIGINAL form forbids.
+
+**Unblock** (runner-owned): a shared-structure wire capability (e.g. a
+`list_node_shared` codec where later lists may reference earlier nodes by
+index), or accept the bettercode-0141 adapted form for this family.
+
+## 10. problems-extend 0339/0364/0341/0385 — recursive NestedInteger union inexpressible in every schema kind
+
+**State**: no bundle authored (0339's agent proved impossibility at its
+expressibility gate and wrote nothing; 0364 carries the identical recursive
+input wire and is blocked on the same evidence without a separate probe).
+ROSTER marks both `blocked`. 0385_mini-parser is the output-side variant of the same
+wall (deserialize a string into a NestedInteger): the input string rides the wire
+fine, but no output codec can serialize the recursive structure back, and a
+string round-trip (s in, s out) would judge an identity no-op — the same
+output-unfalsifiable class as entry 7's 0138. Blocked with this entry.
+
+**What happened**: Nested List Weight Sum's input is a recursive union — at
+every level an element is an integer OR a nested list, depth up to 50 — and
+both public examples mix leaf depths (`[[1,1],2,[1,1]]`, `[1,[4,[6]]]`).
+`typed.py`'s SUPPORTED_KINDS has no carrier: `array` allows exactly one
+items-spec per level (a depth-k spec demands leaves at exactly depth k);
+`linked_list`/`binary_tree` are integer-only fixed shapes; the n-ary `Node`
+is not a schema kind at all (its legacy python-only codec is used by zero
+bundles and collapses `Node(2, [])` versus the integer `2` — lossy). The
+one recursive-capable encoding (the tagged TAG_INT32|TAG_ARRAY stream)
+exists only behind the interactive-oracle protocol, a different problem
+contract than the pinned flat `depthSum(nestedList) -> int`. A string
+serialization of the structure is lossless through all seven executors but
+fails the 0237/0271/0284 honesty bar: the judged work becomes
+parse-then-traverse, the NestedInteger interface story vanishes, and every
+example's Input line visibly becomes a quoted string — the problem's
+essence (being handed a recursively-typed structure) is what the bridge
+would remove.
+
+**Unblock** (runner-owned): a self-referential `nested`/`json` value_type
+kind end-to-end — a `integer | array<nested>` spec in `type_spec`, a
+self-describing (or tagged) form on the function stream, recursive
+`read()` in all seven typed wrappers, and `python_type`/`java_type`/…
+renderers for `List[NestedInteger]`; optionally a provided `NestedInteger`
+class per language with harness-side construction. A common wire-schema
+bump, not an authoring act.
+
+## 11. problems-extend 0478/0519 — random-output problems unjudgeable under exact comparison
+
+**State**: no bundle authored. ROSTER marks 0478 and 0519 `blocked`.
+
+**What happened**: generate-random-point-in-a-circle's `randPoint()` returns uniform
+random floats by definition — the original's own judge validates statistical
+properties (distribution, in-circle membership), never exact values. This bank's
+judge compares outputs exactly; no deterministic pin exists because the problem's
+essence IS the randomness. Any seeding would have to reproduce one identical PRNG
+sequence across seven languages.
+
+**Unblock** (runner-owned): a seeded-RNG judge contract — a harness-provided
+deterministic PRNG (one fixed algorithm, one seed per case) exposed to all seven
+executors, plus a statistical or sequence-pinned comparator. Then 0478 (and any
+future random-output problem) authors against the seeded stream.
+
 ## Resolution log
 
 - [ ] 1. 0432 — decide drop / any_of / comparator (verify any_of first)
 - [ ] 2. 0527 — case 14 n→7, re-verify bundle
 - [ ] 3. 0236 — reword Hint 3 (optionally normalize canonical tie rule)
 - [ ] 4. 0254 — insert "strictly" in the multiset section
+- [ ] 10. 0339 — unblock only via the nested/json judge-contract extension
+- [ ] 11. 0478 — unblock via a seeded-RNG judge contract

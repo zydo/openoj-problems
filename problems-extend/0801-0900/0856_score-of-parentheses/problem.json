@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 856,
+  "slug": "score-of-parentheses",
+  "title": "Score of Parentheses",
+  "difficulty": "",
+  "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "scoreOfParentheses",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "scoreOfParentheses",
+      "rust": "score_of_parentheses",
+      "typescript": "scoreOfParentheses"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
