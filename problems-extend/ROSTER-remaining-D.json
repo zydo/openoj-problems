@@ -159,7 +159,7 @@
       {
         "id": 2768,
         "slug": "number-of-black-blocks",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2769,
@@ -179,7 +179,7 @@
       {
         "id": 2773,
         "slug": "height-of-special-binary-tree",
-        "status": "pending"
+        "status": "blocked"
       },
       {
         "id": 2774,
@@ -189,12 +189,12 @@
       {
         "id": 2775,
         "slug": "undefined-to-null",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2776,
         "slug": "convert-callback-based-function-to-promise-based-function",
-        "status": "pending"
+        "status": "blocked"
       },
       {
         "id": 2777,

@@ -276,7 +276,7 @@
       {
         "id": 1080,
         "slug": "insufficient-nodes-in-root-to-leaf-paths",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1081,
@@ -286,57 +286,57 @@
       {
         "id": 1082,
         "slug": "sales-analysis-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1083,
         "slug": "sales-analysis-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1084,
         "slug": "sales-analysis-iii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1085,
         "slug": "sum-of-digits-in-the-minimum-number",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1086,
         "slug": "high-five",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1087,
         "slug": "brace-expansion",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1088,
         "slug": "confusing-number-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1089,
         "slug": "duplicate-zeros",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1090,
         "slug": "largest-values-from-labels",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1093,
         "slug": "statistics-from-a-large-sample",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1096,
         "slug": "brace-expansion-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1097,
@@ -363,22 +363,22 @@
       {
         "id": 1103,
         "slug": "distribute-candies-to-people",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1104,
         "slug": "path-in-zigzag-labelled-binary-tree",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1107,
         "slug": "new-users-daily-count",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1108,
         "slug": "defanging-an-ip-address",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1110,
@@ -700,22 +700,22 @@
       {
         "id": 1204,
         "slug": "last-person-to-fit-in-the-bus",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1205,
         "slug": "monthly-transactions-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1206,
         "slug": "design-skiplist",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1207,
         "slug": "unique-number-of-occurrences",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1208,
@@ -1057,22 +1057,22 @@
       {
         "id": 1301,
         "slug": "number-of-paths-with-max-score",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1302,
         "slug": "deepest-leaves-sum",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1303,
         "slug": "find-the-team-size",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1304,
         "slug": "find-n-unique-integers-sum-up-to-zero",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1305,
@@ -1434,22 +1434,22 @@
       {
         "id": 1401,
         "slug": "circle-and-rectangle-overlapping",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1402,
         "slug": "reducing-dishes",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1403,
         "slug": "minimum-subsequence-in-non-increasing-order",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1404,
         "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1407,

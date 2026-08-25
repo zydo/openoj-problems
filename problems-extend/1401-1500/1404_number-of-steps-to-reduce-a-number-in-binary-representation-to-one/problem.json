@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 1404,
+  "slug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+  "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+  "difficulty": "",
+  "tags": [
+    "String",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "numSteps",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "numSteps",
+      "rust": "num_steps",
+      "typescript": "numSteps"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
