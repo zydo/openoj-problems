@@ -6,19 +6,47 @@
   "slug": "shortest-way-to-form-string",
   "title": "Shortest Way to Form String",
   "difficulty": "",
-  "tags": ["Two Pointers", "String", "Binary Search", "Greedy"],
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "Greedy"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",
     "method": "shortestWay",
     "parameters": [
-      { "name": "source", "codec": "json", "value_type": { "kind": "string" } },
-      { "name": "target", "codec": "json", "value_type": { "kind": "string" } }
+      {
+        "name": "source",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
     ],
     "return_codec": "json",
-    "return_type": { "kind": "integer", "bits": 32 },
-    "entrypoints": { "go": "shortestWay", "rust": "shortest_way", "typescript": "shortestWay" },
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "shortestWay",
+      "rust": "shortest_way",
+      "typescript": "shortestWay"
+    },
     "comparison": "exact"
   },
-  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
 }

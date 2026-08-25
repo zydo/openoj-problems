@@ -2,9 +2,13 @@
 
 ## Description
 
-Given an array of positive integers `arr` (not necessarily distinct), return the lexicographically largest permutation that is smaller than `arr`, that can be made with exactly one swap. If it cannot be done, then return the same array.
+Given an array of positive integers arr (not necessarily distinct),
+return the lexicographically largest permutation that is smaller than
+arr, that can be made with exactly one swap. If it cannot be done, then
+return the same array.
 
-Note that a swap exchanges the positions of two numbers `arr[i]` and `arr[j]`.
+Note that a swap exchanges the positions of two numbers arr[i] and
+arr[j]
 
 ### Example 1
 
@@ -32,11 +36,12 @@ Explanation: Swapping 9 and 7.
 
 ### Constraints
 
-- `1 <= arr.length <= 10^4`
-- `1 <= arr[i] <= 10^4`
+- `1 <= arr.length <= 10⁴`
+- `1 <= arr[i] <= 10⁴`
 
 ## Hints
 
 ### Hint 1
 
-You need to swap two values, one larger than the other. Where is the larger one located?
+You need to swap two values, one larger than the other. Where is the
+larger one located?

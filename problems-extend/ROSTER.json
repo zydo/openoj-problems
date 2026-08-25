@@ -16844,7 +16844,7 @@
         ],
         "premium": true,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1677,
@@ -17081,7 +17081,7 @@
         ],
         "premium": true,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1699,
@@ -17163,7 +17163,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1708,
@@ -17253,7 +17253,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1718,
@@ -17397,7 +17397,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1732,
@@ -17424,7 +17424,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1734,
@@ -17437,7 +17437,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1736,
@@ -17450,7 +17450,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1737,
@@ -17484,7 +17484,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 1739,

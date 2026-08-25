@@ -1,19 +1,26 @@
 # Solutions — Shortest Way to Form String
 
-## Greedy two-pointer scan
+## Greedy repeated passes through source
 
-Repeatedly scan through `source` once from the start, greedily advancing a
-pointer into `target` whenever the current `source` character matches the
-next unmatched `target` character. Each full scan of `source` — or the
-partial scan that finishes when `target` runs out mid-scan — counts as one
-used subsequence, so the running scan count is incremented at the end of
-every pass. If an entire pass through `source` completes without the
-`target` pointer advancing even once, no further progress can ever be
-made and `target` contains a character absent from `source`, so return
-`-1`. Otherwise, repeat until every character of `target` has been
-matched and return the number of passes used.
+The target is built one full pass through `source` at a time. Each pass walks
+`source` left to right and greedily consumes the next unmatched character of
+`target` whenever the current `source` character equals it — a fresh subsequence
+is exactly one such pass, so counting completed passes counts the subsequences
+used.
 
-**Complexity:** `O(N * M)` time, `O(1)` space (excluding the output),
-where `N` is the length of `source` and `M` is the length of `target` —
-in the worst case each pass through `source` advances the `target`
-pointer by only one character.
+A pass that advances the `target` pointer by zero characters means the pass's
+scan of every character in `source` found not a single match for the next
+required character — that character never occurs anywhere in `source`, so the
+task is impossible and the answer is `-1`. Otherwise the pointer into `target`
+strictly advances every pass, so the loop always terminates, and the pass count
+when the pointer reaches the end of `target` is the minimum number of
+subsequences: greedily grabbing every matchable character in a single pass can
+never require more passes than any other matching strategy, since skipping an
+available match only defers it to a later pass without shortening any other.
+
+Each pass rescans all of `source`, and `target` gains at least one matched
+character per pass, so the total work across all passes is bounded by scanning
+`source` once for every character consumed from `target`.
+
+**Complexity:** `O(n * m)` time, `O(1)` space, where `n = source.length` and
+`m = target.length`.

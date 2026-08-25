@@ -1,24 +1,23 @@
 # Solutions — Previous Permutation With One Swap
 
-## Rightmost descent, then leftmost tie among the best replacement
+## Scan from the right for the pivot, then swap in the best smaller value
 
-Scanning `arr` from the right, everything past the first index `i` with
-`arr[i] > arr[i + 1]` is non-decreasing — the smallest possible arrangement
-of that tail — so no swap confined to it can shrink the array further.
-That means `i` is the rightmost position whose value can still decrease
-while the prefix before it stays fixed; if no such `i` exists, `arr` is
-already its own smallest permutation and is returned unchanged.
+Scan the array from the right to find the rightmost index `i` where
+`arr[i] > arr[i + 1]`; everything after that point is already
+non-decreasing, so it can never be the site of a beneficial swap, and
+this is the latest position whose value can still be lowered by a swap.
+If no such index exists, `arr` is already its own smallest permutation
+and is returned unchanged.
 
-To shrink `arr[i]` as little as possible (keeping the result as large as
-possible while still smaller than the original), the method looks for the
-value in the non-decreasing suffix that is the largest one still strictly
-below `arr[i]`. Because the suffix is sorted, scanning it from the right
-while its values stay `>= arr[i]` lands exactly on that value, but on its
-rightmost occurrence. When that value repeats, placing `arr[i]` at the
-rightmost tied position leaves the earlier, equal-valued copies in place
-ahead of it; placing `arr[i]` at the leftmost tied position instead pushes
-the larger value as early as possible, which is what maximizes the result,
-so the method walks left across equal values before committing to the
-swap. Swapping `arr[i]` with that position produces the answer.
+Otherwise, walk the suffix starting at `i` and track the largest value
+seen so far that is still strictly less than `arr[i]`. Because the
+suffix is non-decreasing, scanning it left to right and only updating on
+a strictly larger candidate naturally keeps the *leftmost* occurrence of
+that maximum qualifying value: placing `arr[i]`'s old value at the
+earliest possible position among the tied candidates leaves the largest
+possible value sitting at every position in between, which is what
+maximizes the result lexicographically. Swap `arr[i]` with the position
+holding that value and return the array.
 
-**Complexity:** `O(n)` time, `O(1)` extra space.
+**Complexity:** `O(n)` time, `O(1)` extra space, where `n` is the length
+of `arr`.
