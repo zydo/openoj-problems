@@ -31,7 +31,7 @@ EXTENSIONS = {
     "java": "java",
     "cpp": "cpp",
     "go": "go",
-    "rust": "rust",
+    "rust": "rs",
     "sql": "sql",
 }
 

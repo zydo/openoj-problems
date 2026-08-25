@@ -17,7 +17,7 @@ problems/
         ├── starter.java     generated
         ├── starter.cpp      generated
         ├── starter.go       generated
-        ├── starter.rust     generated
+        ├── starter.rs       generated
         ├── starter.js
         ├── starter.ts
         ├── solution.py      authored — must match the starter signature and pass
@@ -172,7 +172,7 @@ everywhere. This repo deliberately carries no formatter pins or
 | -------------- | ----------------------------------------- | ------------------------------ |
 | `*.py`         | `ruff format` (line length 120)          | `python3`                      |
 | `*.go`         | `gofmt`                                   | `go`                           |
-| `*.rust`       | `rustfmt --edition 2021` (width 120)     | `rust`                         |
+| `*.rs`         | `rustfmt --edition 2021` (width 120)     | `rust`                         |
 | `*.cpp`        | `clang-format` (LLVM style, indent 4)    | `cpp`                          |
 | `*.js`         | `prettier`                                | `javascript`                   |
 | `*.ts`         | `prettier`                                | `typescript`                   |

@@ -66,7 +66,7 @@ if _extra_bin.is_dir():
     os.environ["PATH"] = f"{_extra_bin}{os.pathsep}{os.environ.get('PATH', '')}"
 
 EXTENSION_LANGUAGE = {
-    "py": "python3", "go": "go", "rust": "rust", "cpp": "cpp",
+    "py": "python3", "go": "go", "rust": "rust", "rs": "rust", "cpp": "cpp",
     "js": "javascript", "ts": "typescript", "java": "java",
     "sql": "sql", "json": "json", "md": "markdown",
 }
