@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 1025,
+  "slug": "divisor-game",
+  "title": "Divisor Game",
+  "difficulty": "",
+  "tags": ["Math", "Dynamic Programming", "Brainteaser", "Game Theory", "Impartial Game"],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "divisorGame",
+    "parameters": [{ "name": "n", "codec": "json", "value_type": { "kind": "integer", "bits": 32 } }],
+    "return_codec": "json",
+    "return_type": { "kind": "boolean" },
+    "entrypoints": { "go": "divisorGame", "rust": "divisor_game", "typescript": "divisorGame" },
+    "comparison": "exact"
+  },
+  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+}

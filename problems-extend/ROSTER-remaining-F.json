@@ -1,0 +1,1802 @@
+{
+  "shards": {
+    "3601-3700": [
+      {
+        "id": 3633,
+        "slug": "earliest-finish-time-for-land-and-water-rides-i",
+        "status": "done"
+      },
+      {
+        "id": 3634,
+        "slug": "minimum-removals-to-balance-array",
+        "status": "done"
+      },
+      {
+        "id": 3635,
+        "slug": "earliest-finish-time-for-land-and-water-rides-ii",
+        "status": "done"
+      },
+      {
+        "id": 3636,
+        "slug": "threshold-majority-queries",
+        "status": "done"
+      },
+      {
+        "id": 3637,
+        "slug": "trionic-array-i",
+        "status": "done"
+      },
+      {
+        "id": 3638,
+        "slug": "maximum-balanced-shipments",
+        "status": "done"
+      },
+      {
+        "id": 3639,
+        "slug": "minimum-time-to-activate-string",
+        "status": "done"
+      },
+      {
+        "id": 3640,
+        "slug": "trionic-array-ii",
+        "status": "done"
+      },
+      {
+        "id": 3641,
+        "slug": "longest-semi-repeating-subarray",
+        "status": "done"
+      },
+      {
+        "id": 3642,
+        "slug": "find-books-with-polarized-opinions",
+        "status": "done"
+      },
+      {
+        "id": 3643,
+        "slug": "flip-square-submatrix-vertically",
+        "status": "done"
+      },
+      {
+        "id": 3644,
+        "slug": "maximum-k-to-sort-a-permutation",
+        "status": "done"
+      },
+      {
+        "id": 3645,
+        "slug": "maximum-total-from-optimal-activation-order",
+        "status": "done"
+      },
+      {
+        "id": 3646,
+        "slug": "next-special-palindrome-number",
+        "status": "done"
+      },
+      {
+        "id": 3647,
+        "slug": "maximum-weight-in-two-bags",
+        "status": "done"
+      },
+      {
+        "id": 3648,
+        "slug": "minimum-sensors-to-cover-grid",
+        "status": "done"
+      },
+      {
+        "id": 3649,
+        "slug": "number-of-perfect-pairs",
+        "status": "done"
+      },
+      {
+        "id": 3650,
+        "slug": "minimum-cost-path-with-edge-reversals",
+        "status": "done"
+      },
+      {
+        "id": 3651,
+        "slug": "minimum-cost-path-with-teleportations",
+        "status": "done"
+      },
+      {
+        "id": 3652,
+        "slug": "best-time-to-buy-and-sell-stock-using-strategy",
+        "status": "done"
+      },
+      {
+        "id": 3653,
+        "slug": "xor-after-range-multiplication-queries-i",
+        "status": "done"
+      },
+      {
+        "id": 3654,
+        "slug": "minimum-sum-after-divisible-sum-deletions",
+        "status": "done"
+      },
+      {
+        "id": 3655,
+        "slug": "xor-after-range-multiplication-queries-ii",
+        "status": "done"
+      },
+      {
+        "id": 3656,
+        "slug": "determine-if-a-simple-graph-exists",
+        "status": "done"
+      },
+      {
+        "id": 3657,
+        "slug": "find-loyal-customers",
+        "status": "done"
+      },
+      {
+        "id": 3658,
+        "slug": "gcd-of-odd-and-even-sums",
+        "status": "done"
+      },
+      {
+        "id": 3659,
+        "slug": "partition-array-into-k-distinct-groups",
+        "status": "done"
+      },
+      {
+        "id": 3660,
+        "slug": "jump-game-ix",
+        "status": "done"
+      },
+      {
+        "id": 3661,
+        "slug": "maximum-walls-destroyed-by-robots",
+        "status": "done"
+      },
+      {
+        "id": 3662,
+        "slug": "filter-characters-by-frequency",
+        "status": "done"
+      },
+      {
+        "id": 3663,
+        "slug": "find-the-least-frequent-digit",
+        "status": "done"
+      },
+      {
+        "id": 3664,
+        "slug": "two-letter-card-game",
+        "status": "done"
+      },
+      {
+        "id": 3665,
+        "slug": "twisted-mirror-path-count",
+        "status": "done"
+      },
+      {
+        "id": 3666,
+        "slug": "minimum-operations-to-equalize-binary-string",
+        "status": "done"
+      },
+      {
+        "id": 3667,
+        "slug": "sort-array-by-absolute-value",
+        "status": "done"
+      },
+      {
+        "id": 3668,
+        "slug": "restore-finishing-order",
+        "status": "done"
+      },
+      {
+        "id": 3669,
+        "slug": "balanced-k-factor-decomposition",
+        "status": "done"
+      },
+      {
+        "id": 3670,
+        "slug": "maximum-product-of-two-integers-with-no-common-bits",
+        "status": "done"
+      },
+      {
+        "id": 3671,
+        "slug": "sum-of-beautiful-subsequences",
+        "status": "done"
+      },
+      {
+        "id": 3672,
+        "slug": "sum-of-weighted-modes-in-subarrays",
+        "status": "done"
+      },
+      {
+        "id": 3673,
+        "slug": "find-zombie-sessions",
+        "status": "done"
+      },
+      {
+        "id": 3674,
+        "slug": "minimum-operations-to-equalize-array",
+        "status": "done"
+      },
+      {
+        "id": 3675,
+        "slug": "minimum-operations-to-transform-string",
+        "status": "done"
+      },
+      {
+        "id": 3676,
+        "slug": "count-bowl-subarrays",
+        "status": "done"
+      },
+      {
+        "id": 3677,
+        "slug": "count-binary-palindromic-numbers",
+        "status": "done"
+      },
+      {
+        "id": 3678,
+        "slug": "smallest-absent-positive-greater-than-average",
+        "status": "done"
+      },
+      {
+        "id": 3679,
+        "slug": "minimum-discards-to-balance-inventory",
+        "status": "done"
+      },
+      {
+        "id": 3680,
+        "slug": "generate-schedule",
+        "status": "done"
+      },
+      {
+        "id": 3681,
+        "slug": "maximum-xor-of-subsequences",
+        "status": "done"
+      },
+      {
+        "id": 3682,
+        "slug": "minimum-index-sum-of-common-elements",
+        "status": "done"
+      },
+      {
+        "id": 3683,
+        "slug": "earliest-time-to-finish-one-task",
+        "status": "done"
+      },
+      {
+        "id": 3684,
+        "slug": "maximize-sum-of-at-most-k-distinct-elements",
+        "status": "done"
+      },
+      {
+        "id": 3685,
+        "slug": "subsequence-sum-after-capping-elements",
+        "status": "done"
+      },
+      {
+        "id": 3686,
+        "slug": "number-of-stable-subsequences",
+        "status": "done"
+      },
+      {
+        "id": 3687,
+        "slug": "library-late-fee-calculator",
+        "status": "done"
+      },
+      {
+        "id": 3688,
+        "slug": "bitwise-or-of-even-numbers-in-an-array",
+        "status": "done"
+      },
+      {
+        "id": 3689,
+        "slug": "maximum-total-subarray-value-i",
+        "status": "done"
+      },
+      {
+        "id": 3690,
+        "slug": "split-and-merge-array-transformation",
+        "status": "done"
+      },
+      {
+        "id": 3691,
+        "slug": "maximum-total-subarray-value-ii",
+        "status": "done"
+      },
+      {
+        "id": 3692,
+        "slug": "majority-frequency-characters",
+        "status": "done"
+      },
+      {
+        "id": 3693,
+        "slug": "climbing-stairs-ii",
+        "status": "done"
+      },
+      {
+        "id": 3694,
+        "slug": "distinct-points-reachable-after-substring-removal",
+        "status": "done"
+      },
+      {
+        "id": 3695,
+        "slug": "maximize-alternating-sum-using-swaps",
+        "status": "done"
+      },
+      {
+        "id": 3696,
+        "slug": "maximum-distance-between-unequal-words-in-array-i",
+        "status": "done"
+      },
+      {
+        "id": 3697,
+        "slug": "compute-decimal-representation",
+        "status": "done"
+      },
+      {
+        "id": 3698,
+        "slug": "split-array-with-minimum-difference",
+        "status": "done"
+      },
+      {
+        "id": 3699,
+        "slug": "number-of-zigzag-arrays-i",
+        "status": "done"
+      },
+      {
+        "id": 3700,
+        "slug": "number-of-zigzag-arrays-ii",
+        "status": "done"
+      }
+    ],
+    "3701-3800": [
+      {
+        "id": 3701,
+        "slug": "compute-alternating-sum",
+        "status": "done"
+      },
+      {
+        "id": 3702,
+        "slug": "longest-subsequence-with-non-zero-bitwise-xor",
+        "status": "done"
+      },
+      {
+        "id": 3703,
+        "slug": "remove-k-balanced-substrings",
+        "status": "done"
+      },
+      {
+        "id": 3705,
+        "slug": "find-golden-hour-customers",
+        "status": "done"
+      },
+      {
+        "id": 3706,
+        "slug": "maximum-distance-between-unequal-words-in-array-ii",
+        "status": "done"
+      },
+      {
+        "id": 3707,
+        "slug": "equal-score-substrings",
+        "status": "done"
+      },
+      {
+        "id": 3708,
+        "slug": "longest-fibonacci-subarray",
+        "status": "done"
+      },
+      {
+        "id": 3709,
+        "slug": "design-exam-scores-tracker",
+        "status": "done"
+      },
+      {
+        "id": 3710,
+        "slug": "maximum-partition-factor",
+        "status": "done"
+      },
+      {
+        "id": 3711,
+        "slug": "maximum-transactions-without-negative-balance",
+        "status": "done"
+      },
+      {
+        "id": 3712,
+        "slug": "sum-of-elements-with-frequency-divisible-by-k",
+        "status": "done"
+      },
+      {
+        "id": 3713,
+        "slug": "longest-balanced-substring-i",
+        "status": "done"
+      },
+      {
+        "id": 3714,
+        "slug": "longest-balanced-substring-ii",
+        "status": "done"
+      },
+      {
+        "id": 3715,
+        "slug": "sum-of-perfect-square-ancestors",
+        "status": "done"
+      },
+      {
+        "id": 3716,
+        "slug": "find-churn-risk-customers",
+        "status": "done"
+      },
+      {
+        "id": 3717,
+        "slug": "minimum-operations-to-make-the-array-beautiful",
+        "status": "pending"
+      },
+      {
+        "id": 3718,
+        "slug": "smallest-missing-multiple-of-k",
+        "status": "done"
+      },
+      {
+        "id": 3719,
+        "slug": "longest-balanced-subarray-i",
+        "status": "done"
+      },
+      {
+        "id": 3720,
+        "slug": "lexicographically-smallest-permutation-greater-than-target",
+        "status": "done"
+      },
+      {
+        "id": 3721,
+        "slug": "longest-balanced-subarray-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3722,
+        "slug": "lexicographically-smallest-string-after-reverse",
+        "status": "done"
+      },
+      {
+        "id": 3723,
+        "slug": "maximize-sum-of-squares-of-digits",
+        "status": "pending"
+      },
+      {
+        "id": 3724,
+        "slug": "minimum-operations-to-transform-array",
+        "status": "pending"
+      },
+      {
+        "id": 3725,
+        "slug": "count-ways-to-choose-coprime-integers-from-rows",
+        "status": "pending"
+      },
+      {
+        "id": 3726,
+        "slug": "remove-zeros-in-decimal-representation",
+        "status": "pending"
+      },
+      {
+        "id": 3727,
+        "slug": "maximum-alternating-sum-of-squares",
+        "status": "pending"
+      },
+      {
+        "id": 3728,
+        "slug": "stable-subarrays-with-equal-boundary-and-interior-sum",
+        "status": "pending"
+      },
+      {
+        "id": 3729,
+        "slug": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
+        "status": "pending"
+      },
+      {
+        "id": 3730,
+        "slug": "maximum-calories-burnt-from-jumps",
+        "status": "pending"
+      },
+      {
+        "id": 3731,
+        "slug": "find-missing-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3732,
+        "slug": "maximum-product-of-three-elements-after-one-replacement",
+        "status": "pending"
+      },
+      {
+        "id": 3733,
+        "slug": "minimum-time-to-complete-all-deliveries",
+        "status": "pending"
+      },
+      {
+        "id": 3734,
+        "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+        "status": "pending"
+      },
+      {
+        "id": 3735,
+        "slug": "lexicographically-smallest-string-after-reverse-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3736,
+        "slug": "minimum-moves-to-equal-array-elements-iii",
+        "status": "pending"
+      },
+      {
+        "id": 3737,
+        "slug": "count-subarrays-with-majority-element-i",
+        "status": "pending"
+      },
+      {
+        "id": 3738,
+        "slug": "longest-non-decreasing-subarray-after-replacing-at-most-one-element",
+        "status": "pending"
+      },
+      {
+        "id": 3739,
+        "slug": "count-subarrays-with-majority-element-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3740,
+        "slug": "minimum-distance-between-three-equal-elements-i",
+        "status": "pending"
+      },
+      {
+        "id": 3741,
+        "slug": "minimum-distance-between-three-equal-elements-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3742,
+        "slug": "maximum-path-score-in-a-grid",
+        "status": "pending"
+      },
+      {
+        "id": 3743,
+        "slug": "maximize-cyclic-partition-score",
+        "status": "pending"
+      },
+      {
+        "id": 3744,
+        "slug": "find-kth-character-in-expanded-string",
+        "status": "pending"
+      },
+      {
+        "id": 3745,
+        "slug": "maximize-expression-of-three-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3746,
+        "slug": "minimum-string-length-after-balanced-removals",
+        "status": "pending"
+      },
+      {
+        "id": 3747,
+        "slug": "count-distinct-integers-after-removing-zeros",
+        "status": "pending"
+      },
+      {
+        "id": 3748,
+        "slug": "count-stable-subarrays",
+        "status": "pending"
+      },
+      {
+        "id": 3750,
+        "slug": "minimum-number-of-flips-to-reverse-binary-string",
+        "status": "pending"
+      },
+      {
+        "id": 3751,
+        "slug": "total-waviness-of-numbers-in-range-i",
+        "status": "pending"
+      },
+      {
+        "id": 3752,
+        "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
+        "status": "pending"
+      },
+      {
+        "id": 3753,
+        "slug": "total-waviness-of-numbers-in-range-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3754,
+        "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+        "status": "pending"
+      },
+      {
+        "id": 3755,
+        "slug": "find-maximum-balanced-xor-subarray-length",
+        "status": "pending"
+      },
+      {
+        "id": 3756,
+        "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3757,
+        "slug": "number-of-effective-subsequences",
+        "status": "pending"
+      },
+      {
+        "id": 3758,
+        "slug": "convert-number-words-to-digits",
+        "status": "pending"
+      },
+      {
+        "id": 3759,
+        "slug": "count-elements-with-at-least-k-greater-values",
+        "status": "pending"
+      },
+      {
+        "id": 3760,
+        "slug": "maximum-substrings-with-distinct-start",
+        "status": "pending"
+      },
+      {
+        "id": 3761,
+        "slug": "minimum-absolute-distance-between-mirror-pairs",
+        "status": "pending"
+      },
+      {
+        "id": 3762,
+        "slug": "minimum-operations-to-equalize-subarrays",
+        "status": "pending"
+      },
+      {
+        "id": 3763,
+        "slug": "maximum-total-sum-with-threshold-constraints",
+        "status": "pending"
+      },
+      {
+        "id": 3764,
+        "slug": "most-common-course-pairs",
+        "status": "pending"
+      },
+      {
+        "id": 3765,
+        "slug": "complete-prime-number",
+        "status": "pending"
+      },
+      {
+        "id": 3766,
+        "slug": "minimum-operations-to-make-binary-palindrome",
+        "status": "pending"
+      },
+      {
+        "id": 3767,
+        "slug": "maximize-points-after-choosing-k-tasks",
+        "status": "pending"
+      },
+      {
+        "id": 3768,
+        "slug": "minimum-inversion-count-in-subarrays-of-fixed-length",
+        "status": "pending"
+      },
+      {
+        "id": 3769,
+        "slug": "sort-integers-by-binary-reflection",
+        "status": "pending"
+      },
+      {
+        "id": 3770,
+        "slug": "largest-prime-from-consecutive-prime-sum",
+        "status": "pending"
+      },
+      {
+        "id": 3771,
+        "slug": "total-score-of-dungeon-runs",
+        "status": "pending"
+      },
+      {
+        "id": 3773,
+        "slug": "maximum-number-of-equal-length-runs",
+        "status": "pending"
+      },
+      {
+        "id": 3774,
+        "slug": "absolute-difference-between-maximum-and-minimum-k-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3775,
+        "slug": "reverse-words-with-same-vowel-count",
+        "status": "pending"
+      },
+      {
+        "id": 3776,
+        "slug": "minimum-moves-to-balance-circular-array",
+        "status": "pending"
+      },
+      {
+        "id": 3777,
+        "slug": "minimum-deletions-to-make-alternating-substring",
+        "status": "pending"
+      },
+      {
+        "id": 3778,
+        "slug": "minimum-distance-excluding-one-maximum-weighted-edge",
+        "status": "pending"
+      },
+      {
+        "id": 3779,
+        "slug": "minimum-number-of-operations-to-have-distinct-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3780,
+        "slug": "maximum-sum-of-three-numbers-divisible-by-three",
+        "status": "pending"
+      },
+      {
+        "id": 3781,
+        "slug": "maximum-score-after-binary-swaps",
+        "status": "pending"
+      },
+      {
+        "id": 3783,
+        "slug": "mirror-distance-of-an-integer",
+        "status": "pending"
+      },
+      {
+        "id": 3784,
+        "slug": "minimum-deletion-cost-to-make-all-characters-equal",
+        "status": "pending"
+      },
+      {
+        "id": 3785,
+        "slug": "minimum-swaps-to-avoid-forbidden-values",
+        "status": "pending"
+      },
+      {
+        "id": 3786,
+        "slug": "total-sum-of-interaction-cost-in-tree-groups",
+        "status": "pending"
+      },
+      {
+        "id": 3788,
+        "slug": "maximum-score-of-a-split",
+        "status": "pending"
+      },
+      {
+        "id": 3789,
+        "slug": "minimum-cost-to-acquire-required-items",
+        "status": "pending"
+      },
+      {
+        "id": 3790,
+        "slug": "smallest-all-ones-multiple",
+        "status": "pending"
+      },
+      {
+        "id": 3791,
+        "slug": "number-of-balanced-integers-in-a-range",
+        "status": "pending"
+      },
+      {
+        "id": 3792,
+        "slug": "sum-of-increasing-product-blocks",
+        "status": "pending"
+      },
+      {
+        "id": 3793,
+        "slug": "find-users-with-high-token-usage",
+        "status": "pending"
+      },
+      {
+        "id": 3794,
+        "slug": "reverse-string-prefix",
+        "status": "pending"
+      },
+      {
+        "id": 3795,
+        "slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
+        "status": "pending"
+      },
+      {
+        "id": 3796,
+        "slug": "find-maximum-value-in-a-constrained-sequence",
+        "status": "pending"
+      },
+      {
+        "id": 3797,
+        "slug": "count-routes-to-climb-a-rectangular-grid",
+        "status": "pending"
+      },
+      {
+        "id": 3798,
+        "slug": "largest-even-number",
+        "status": "pending"
+      },
+      {
+        "id": 3799,
+        "slug": "word-squares-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3800,
+        "slug": "minimum-cost-to-make-two-binary-strings-equal",
+        "status": "pending"
+      }
+    ],
+    "3801-3900": [
+      {
+        "id": 3801,
+        "slug": "minimum-cost-to-merge-sorted-lists",
+        "status": "pending"
+      },
+      {
+        "id": 3802,
+        "slug": "number-of-ways-to-paint-sheets",
+        "status": "pending"
+      },
+      {
+        "id": 3803,
+        "slug": "count-residue-prefixes",
+        "status": "pending"
+      },
+      {
+        "id": 3804,
+        "slug": "number-of-centered-subarrays",
+        "status": "pending"
+      },
+      {
+        "id": 3805,
+        "slug": "count-caesar-cipher-pairs",
+        "status": "pending"
+      },
+      {
+        "id": 3806,
+        "slug": "maximum-bitwise-and-after-increment-operations",
+        "status": "pending"
+      },
+      {
+        "id": 3808,
+        "slug": "find-emotionally-consistent-users",
+        "status": "pending"
+      },
+      {
+        "id": 3809,
+        "slug": "best-reachable-tower",
+        "status": "pending"
+      },
+      {
+        "id": 3810,
+        "slug": "minimum-operations-to-reach-target-array",
+        "status": "pending"
+      },
+      {
+        "id": 3811,
+        "slug": "number-of-alternating-xor-partitions",
+        "status": "pending"
+      },
+      {
+        "id": 3812,
+        "slug": "minimum-edge-toggles-on-a-tree",
+        "status": "pending"
+      },
+      {
+        "id": 3813,
+        "slug": "vowel-consonant-score",
+        "status": "pending"
+      },
+      {
+        "id": 3814,
+        "slug": "maximum-capacity-within-budget",
+        "status": "pending"
+      },
+      {
+        "id": 3815,
+        "slug": "design-auction-system",
+        "status": "pending"
+      },
+      {
+        "id": 3816,
+        "slug": "lexicographically-smallest-string-after-deleting-duplicate-characters",
+        "status": "pending"
+      },
+      {
+        "id": 3817,
+        "slug": "good-indices-in-a-digit-string",
+        "status": "pending"
+      },
+      {
+        "id": 3818,
+        "slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
+        "status": "pending"
+      },
+      {
+        "id": 3819,
+        "slug": "rotate-non-negative-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3820,
+        "slug": "pythagorean-distance-nodes-in-a-tree",
+        "status": "pending"
+      },
+      {
+        "id": 3821,
+        "slug": "find-nth-smallest-integer-with-k-one-bits",
+        "status": "pending"
+      },
+      {
+        "id": 3822,
+        "slug": "design-order-management-system",
+        "status": "pending"
+      },
+      {
+        "id": 3823,
+        "slug": "reverse-letters-then-special-characters-in-a-string",
+        "status": "pending"
+      },
+      {
+        "id": 3824,
+        "slug": "minimum-k-to-reduce-array-within-limit",
+        "status": "pending"
+      },
+      {
+        "id": 3825,
+        "slug": "longest-strictly-increasing-subsequence-with-non-zero-bitwise-and",
+        "status": "pending"
+      },
+      {
+        "id": 3826,
+        "slug": "minimum-partition-score",
+        "status": "pending"
+      },
+      {
+        "id": 3827,
+        "slug": "count-monobit-integers",
+        "status": "pending"
+      },
+      {
+        "id": 3828,
+        "slug": "final-element-after-subarray-deletions",
+        "status": "pending"
+      },
+      {
+        "id": 3829,
+        "slug": "design-ride-sharing-system",
+        "status": "pending"
+      },
+      {
+        "id": 3830,
+        "slug": "longest-alternating-subarray-after-removing-at-most-one-element",
+        "status": "pending"
+      },
+      {
+        "id": 3831,
+        "slug": "median-of-a-binary-search-tree-level",
+        "status": "pending"
+      },
+      {
+        "id": 3832,
+        "slug": "find-users-with-persistent-behavior-patterns",
+        "status": "pending"
+      },
+      {
+        "id": 3833,
+        "slug": "count-dominant-indices",
+        "status": "pending"
+      },
+      {
+        "id": 3834,
+        "slug": "merge-adjacent-equal-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3835,
+        "slug": "count-subarrays-with-cost-less-than-or-equal-to-k",
+        "status": "pending"
+      },
+      {
+        "id": 3836,
+        "slug": "maximum-score-using-exactly-k-pairs",
+        "status": "pending"
+      },
+      {
+        "id": 3837,
+        "slug": "delayed-count-of-equal-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3838,
+        "slug": "weighted-word-mapping",
+        "status": "pending"
+      },
+      {
+        "id": 3839,
+        "slug": "number-of-prefix-connected-groups",
+        "status": "pending"
+      },
+      {
+        "id": 3840,
+        "slug": "house-robber-v",
+        "status": "pending"
+      },
+      {
+        "id": 3841,
+        "slug": "palindromic-path-queries-in-a-tree",
+        "status": "pending"
+      },
+      {
+        "id": 3842,
+        "slug": "toggle-light-bulbs",
+        "status": "pending"
+      },
+      {
+        "id": 3843,
+        "slug": "first-element-with-unique-frequency",
+        "status": "pending"
+      },
+      {
+        "id": 3844,
+        "slug": "longest-almost-palindromic-substring",
+        "status": "pending"
+      },
+      {
+        "id": 3845,
+        "slug": "maximum-subarray-xor-with-bounded-range",
+        "status": "pending"
+      },
+      {
+        "id": 3846,
+        "slug": "total-distance-to-type-a-string-using-one-finger",
+        "status": "pending"
+      },
+      {
+        "id": 3847,
+        "slug": "find-the-score-difference-in-a-game",
+        "status": "pending"
+      },
+      {
+        "id": 3848,
+        "slug": "check-digitorial-permutation",
+        "status": "pending"
+      },
+      {
+        "id": 3849,
+        "slug": "maximum-bitwise-xor-after-rearrangement",
+        "status": "pending"
+      },
+      {
+        "id": 3850,
+        "slug": "count-sequences-to-k",
+        "status": "pending"
+      },
+      {
+        "id": 3851,
+        "slug": "maximum-requests-without-violating-the-limit",
+        "status": "pending"
+      },
+      {
+        "id": 3852,
+        "slug": "smallest-pair-with-different-frequencies",
+        "status": "pending"
+      },
+      {
+        "id": 3853,
+        "slug": "merge-close-characters",
+        "status": "pending"
+      },
+      {
+        "id": 3854,
+        "slug": "minimum-operations-to-make-array-parity-alternating",
+        "status": "pending"
+      },
+      {
+        "id": 3855,
+        "slug": "sum-of-k-digit-numbers-in-a-range",
+        "status": "pending"
+      },
+      {
+        "id": 3856,
+        "slug": "trim-trailing-vowels",
+        "status": "pending"
+      },
+      {
+        "id": 3857,
+        "slug": "minimum-cost-to-split-into-ones",
+        "status": "pending"
+      },
+      {
+        "id": 3858,
+        "slug": "minimum-bitwise-or-from-grid",
+        "status": "pending"
+      },
+      {
+        "id": 3859,
+        "slug": "count-subarrays-with-k-distinct-integers",
+        "status": "pending"
+      },
+      {
+        "id": 3860,
+        "slug": "unique-email-groups",
+        "status": "pending"
+      },
+      {
+        "id": 3861,
+        "slug": "minimum-capacity-box",
+        "status": "pending"
+      },
+      {
+        "id": 3862,
+        "slug": "find-the-smallest-balanced-index",
+        "status": "pending"
+      },
+      {
+        "id": 3863,
+        "slug": "minimum-operations-to-sort-a-string",
+        "status": "pending"
+      },
+      {
+        "id": 3864,
+        "slug": "minimum-cost-to-partition-a-binary-string",
+        "status": "pending"
+      },
+      {
+        "id": 3865,
+        "slug": "reverse-k-subarrays",
+        "status": "pending"
+      },
+      {
+        "id": 3866,
+        "slug": "first-unique-even-element",
+        "status": "pending"
+      },
+      {
+        "id": 3867,
+        "slug": "sum-of-gcd-of-formed-pairs",
+        "status": "pending"
+      },
+      {
+        "id": 3868,
+        "slug": "minimum-cost-to-equalize-arrays-using-swaps",
+        "status": "pending"
+      },
+      {
+        "id": 3869,
+        "slug": "count-fancy-numbers-in-a-range",
+        "status": "pending"
+      },
+      {
+        "id": 3870,
+        "slug": "count-commas-in-range",
+        "status": "pending"
+      },
+      {
+        "id": 3871,
+        "slug": "count-commas-in-range-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3872,
+        "slug": "longest-arithmetic-sequence-after-changing-at-most-one-element",
+        "status": "pending"
+      },
+      {
+        "id": 3873,
+        "slug": "maximum-points-activated-with-one-addition",
+        "status": "pending"
+      },
+      {
+        "id": 3874,
+        "slug": "valid-subarrays-with-exactly-one-peak",
+        "status": "pending"
+      },
+      {
+        "id": 3875,
+        "slug": "construct-uniform-parity-array-i",
+        "status": "pending"
+      },
+      {
+        "id": 3876,
+        "slug": "construct-uniform-parity-array-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3878,
+        "slug": "count-good-subarrays",
+        "status": "pending"
+      },
+      {
+        "id": 3879,
+        "slug": "maximum-distinct-path-sum-in-a-binary-tree",
+        "status": "pending"
+      },
+      {
+        "id": 3880,
+        "slug": "minimum-absolute-difference-between-two-values",
+        "status": "pending"
+      },
+      {
+        "id": 3881,
+        "slug": "direction-assignments-with-exactly-k-visible-people",
+        "status": "pending"
+      },
+      {
+        "id": 3882,
+        "slug": "minimum-xor-path-in-a-grid",
+        "status": "pending"
+      },
+      {
+        "id": 3883,
+        "slug": "count-non-decreasing-arrays-with-given-digit-sums",
+        "status": "pending"
+      },
+      {
+        "id": 3884,
+        "slug": "first-matching-character-from-both-ends",
+        "status": "pending"
+      },
+      {
+        "id": 3885,
+        "slug": "design-event-manager",
+        "status": "pending"
+      },
+      {
+        "id": 3886,
+        "slug": "sum-of-sortable-integers",
+        "status": "pending"
+      },
+      {
+        "id": 3888,
+        "slug": "minimum-operations-to-make-all-grid-elements-equal",
+        "status": "pending"
+      },
+      {
+        "id": 3889,
+        "slug": "mirror-frequency-distance",
+        "status": "pending"
+      },
+      {
+        "id": 3890,
+        "slug": "integers-with-multiple-sum-of-two-cubes",
+        "status": "pending"
+      },
+      {
+        "id": 3891,
+        "slug": "minimum-increase-to-maximize-special-indices",
+        "status": "pending"
+      },
+      {
+        "id": 3892,
+        "slug": "minimum-operations-to-achieve-at-least-k-peaks",
+        "status": "pending"
+      },
+      {
+        "id": 3893,
+        "slug": "maximum-team-size-with-overlapping-intervals",
+        "status": "pending"
+      },
+      {
+        "id": 3894,
+        "slug": "traffic-signal-color",
+        "status": "pending"
+      },
+      {
+        "id": 3895,
+        "slug": "count-digit-appearances",
+        "status": "pending"
+      },
+      {
+        "id": 3896,
+        "slug": "minimum-operations-to-transform-array-into-alternating-prime",
+        "status": "pending"
+      },
+      {
+        "id": 3897,
+        "slug": "maximum-value-of-concatenated-binary-segments",
+        "status": "pending"
+      },
+      {
+        "id": 3898,
+        "slug": "find-the-degree-of-each-vertex",
+        "status": "pending"
+      },
+      {
+        "id": 3899,
+        "slug": "angles-of-a-triangle",
+        "status": "pending"
+      },
+      {
+        "id": 3900,
+        "slug": "longest-balanced-substring-after-one-swap",
+        "status": "pending"
+      }
+    ],
+    "3901-4000": [
+      {
+        "id": 3901,
+        "slug": "good-subsequence-queries",
+        "status": "pending"
+      },
+      {
+        "id": 3902,
+        "slug": "zigzag-level-sum-of-binary-tree",
+        "status": "pending"
+      },
+      {
+        "id": 3903,
+        "slug": "smallest-stable-index-i",
+        "status": "pending"
+      },
+      {
+        "id": 3904,
+        "slug": "smallest-stable-index-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3906,
+        "slug": "count-good-integers-on-a-grid-path",
+        "status": "pending"
+      },
+      {
+        "id": 3907,
+        "slug": "count-smaller-elements-with-opposite-parity",
+        "status": "pending"
+      },
+      {
+        "id": 3908,
+        "slug": "valid-digit-number",
+        "status": "pending"
+      },
+      {
+        "id": 3909,
+        "slug": "compare-sums-of-bitonic-parts",
+        "status": "pending"
+      },
+      {
+        "id": 3910,
+        "slug": "count-connected-subgraphs-with-even-node-sum",
+        "status": "pending"
+      },
+      {
+        "id": 3911,
+        "slug": "k-th-smallest-remaining-even-integer-in-subarray-queries",
+        "status": "pending"
+      },
+      {
+        "id": 3912,
+        "slug": "valid-elements-in-an-array",
+        "status": "pending"
+      },
+      {
+        "id": 3913,
+        "slug": "sort-vowels-by-frequency",
+        "status": "pending"
+      },
+      {
+        "id": 3914,
+        "slug": "minimum-operations-to-make-array-non-decreasing",
+        "status": "pending"
+      },
+      {
+        "id": 3915,
+        "slug": "maximum-sum-of-alternating-subsequence-with-distance-at-least-k",
+        "status": "pending"
+      },
+      {
+        "id": 3916,
+        "slug": "number-of-zigzag-arrays-iii",
+        "status": "pending"
+      },
+      {
+        "id": 3917,
+        "slug": "count-indices-with-opposite-parity",
+        "status": "pending"
+      },
+      {
+        "id": 3918,
+        "slug": "sum-of-primes-between-number-and-its-reverse",
+        "status": "pending"
+      },
+      {
+        "id": 3919,
+        "slug": "minimum-cost-to-move-between-indices",
+        "status": "pending"
+      },
+      {
+        "id": 3920,
+        "slug": "maximize-fixed-points-after-deletions",
+        "status": "pending"
+      },
+      {
+        "id": 3921,
+        "slug": "score-validator",
+        "status": "pending"
+      },
+      {
+        "id": 3922,
+        "slug": "minimum-flips-to-make-binary-string-coherent",
+        "status": "pending"
+      },
+      {
+        "id": 3923,
+        "slug": "minimum-generations-to-target-point",
+        "status": "pending"
+      },
+      {
+        "id": 3924,
+        "slug": "minimum-threshold-path-with-limited-heavy-edges",
+        "status": "pending"
+      },
+      {
+        "id": 3925,
+        "slug": "concatenate-array-with-reverse",
+        "status": "pending"
+      },
+      {
+        "id": 3926,
+        "slug": "count-valid-word-occurrences",
+        "status": "pending"
+      },
+      {
+        "id": 3927,
+        "slug": "minimize-array-sum-using-divisible-replacements",
+        "status": "pending"
+      },
+      {
+        "id": 3928,
+        "slug": "minimum-cost-to-buy-apples-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3929,
+        "slug": "minimum-partition-score-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3930,
+        "slug": "power-update-after-k-th-largest-insertion-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3931,
+        "slug": "check-adjacent-digit-differences",
+        "status": "pending"
+      },
+      {
+        "id": 3932,
+        "slug": "count-k-th-roots-in-a-range",
+        "status": "pending"
+      },
+      {
+        "id": 3933,
+        "slug": "largest-local-values-in-a-matrix-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3934,
+        "slug": "smallest-unique-subarray",
+        "status": "pending"
+      },
+      {
+        "id": 3935,
+        "slug": "power-update-after-k-th-largest-insertion-i",
+        "status": "pending"
+      },
+      {
+        "id": 3936,
+        "slug": "minimum-swaps-to-move-zeros-to-end",
+        "status": "pending"
+      },
+      {
+        "id": 3937,
+        "slug": "minimum-operations-to-make-array-modulo-alternating-i",
+        "status": "pending"
+      },
+      {
+        "id": 3938,
+        "slug": "maximum-path-intersection-sum-in-a-grid",
+        "status": "pending"
+      },
+      {
+        "id": 3939,
+        "slug": "count-non-adjacent-subsets-in-a-rooted-tree",
+        "status": "pending"
+      },
+      {
+        "id": 3940,
+        "slug": "limit-occurrences-in-sorted-array",
+        "status": "pending"
+      },
+      {
+        "id": 3941,
+        "slug": "password-strength",
+        "status": "pending"
+      },
+      {
+        "id": 3942,
+        "slug": "minimum-operations-to-sort-a-permutation",
+        "status": "pending"
+      },
+      {
+        "id": 3943,
+        "slug": "number-of-pairs-after-increment",
+        "status": "pending"
+      },
+      {
+        "id": 3944,
+        "slug": "minimum-operations-to-make-array-modulo-alternating-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3945,
+        "slug": "digit-frequency-score",
+        "status": "pending"
+      },
+      {
+        "id": 3946,
+        "slug": "maximum-number-of-items-from-sale-i",
+        "status": "pending"
+      },
+      {
+        "id": 3947,
+        "slug": "maximum-number-of-items-from-sale-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3948,
+        "slug": "lexicographically-maximum-mex-array",
+        "status": "pending"
+      },
+      {
+        "id": 3949,
+        "slug": "subtree-inversion-sum-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3950,
+        "slug": "exactly-one-consecutive-set-bits-pair",
+        "status": "pending"
+      },
+      {
+        "id": 3951,
+        "slug": "minimum-energy-to-maintain-brightness",
+        "status": "pending"
+      },
+      {
+        "id": 3952,
+        "slug": "maximum-total-value-of-covered-indices",
+        "status": "pending"
+      },
+      {
+        "id": 3953,
+        "slug": "maximum-score-with-co-prime-element",
+        "status": "pending"
+      },
+      {
+        "id": 3954,
+        "slug": "sum-of-compatible-numbers-in-range-i",
+        "status": "pending"
+      },
+      {
+        "id": 3955,
+        "slug": "valid-binary-strings-with-cost-limit",
+        "status": "pending"
+      },
+      {
+        "id": 3956,
+        "slug": "maximum-sum-of-m-non-overlapping-subarrays-i",
+        "status": "pending"
+      },
+      {
+        "id": 3957,
+        "slug": "maximum-sum-of-m-non-overlapping-subarrays-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3958,
+        "slug": "minimum-cost-to-split-into-ones-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3959,
+        "slug": "check-good-integer",
+        "status": "pending"
+      },
+      {
+        "id": 3960,
+        "slug": "frequency-balance-subarray",
+        "status": "pending"
+      },
+      {
+        "id": 3961,
+        "slug": "maximize-sum-of-device-ratings",
+        "status": "pending"
+      },
+      {
+        "id": 3962,
+        "slug": "maximum-subarray-sum-after-at-most-k-swaps",
+        "status": "pending"
+      },
+      {
+        "id": 3963,
+        "slug": "create-grid-with-exactly-one-path",
+        "status": "pending"
+      },
+      {
+        "id": 3964,
+        "slug": "minimum-lights-to-illuminate-a-road",
+        "status": "pending"
+      },
+      {
+        "id": 3965,
+        "slug": "finish-time-of-tasks-i",
+        "status": "pending"
+      },
+      {
+        "id": 3967,
+        "slug": "finish-time-of-tasks-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3968,
+        "slug": "maximum-manhattan-distance-after-all-moves",
+        "status": "pending"
+      },
+      {
+        "id": 3969,
+        "slug": "valid-subarrays-with-matching-sum-digits-i",
+        "status": "pending"
+      },
+      {
+        "id": 3970,
+        "slug": "shortest-path-with-at-most-k-consecutive-identical-characters",
+        "status": "pending"
+      },
+      {
+        "id": 3971,
+        "slug": "maximum-total-value",
+        "status": "pending"
+      },
+      {
+        "id": 3972,
+        "slug": "valid-subarrays-with-matching-sum-digits-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3973,
+        "slug": "distinct-gate-paths-to-lca",
+        "status": "pending"
+      },
+      {
+        "id": 3974,
+        "slug": "maximum-total-sum-of-k-selected-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3975,
+        "slug": "filter-occupied-intervals",
+        "status": "pending"
+      },
+      {
+        "id": 3976,
+        "slug": "maximum-subarray-sum-after-multiplier",
+        "status": "pending"
+      },
+      {
+        "id": 3977,
+        "slug": "minimum-time-to-reach-target-with-limited-power",
+        "status": "pending"
+      },
+      {
+        "id": 3978,
+        "slug": "unique-middle-element",
+        "status": "pending"
+      },
+      {
+        "id": 3979,
+        "slug": "maximum-valid-pair-sum",
+        "status": "pending"
+      },
+      {
+        "id": 3980,
+        "slug": "minimum-operations-to-transform-binary-string",
+        "status": "pending"
+      },
+      {
+        "id": 3981,
+        "slug": "count-distinct-ways-to-form-target-from-two-strings",
+        "status": "pending"
+      },
+      {
+        "id": 3982,
+        "slug": "sum-of-integers-with-maximum-digit-range",
+        "status": "pending"
+      },
+      {
+        "id": 3983,
+        "slug": "subsequence-after-one-replacement",
+        "status": "pending"
+      },
+      {
+        "id": 3984,
+        "slug": "divisible-game",
+        "status": "pending"
+      },
+      {
+        "id": 3985,
+        "slug": "palindromic-subarray-sum",
+        "status": "pending"
+      },
+      {
+        "id": 3986,
+        "slug": "number-of-elapsed-seconds-between-two-times",
+        "status": "pending"
+      },
+      {
+        "id": 3987,
+        "slug": "minimum-total-cost-to-process-all-elements",
+        "status": "pending"
+      },
+      {
+        "id": 3988,
+        "slug": "create-grid-with-exactly-k-paths-i",
+        "status": "pending"
+      },
+      {
+        "id": 3989,
+        "slug": "maximum-consistent-columns-in-a-grid",
+        "status": "pending"
+      },
+      {
+        "id": 3990,
+        "slug": "create-grid-with-exactly-k-paths-ii",
+        "status": "pending"
+      },
+      {
+        "id": 3991,
+        "slug": "sort-array-using-prefix-reversals",
+        "status": "pending"
+      },
+      {
+        "id": 3992,
+        "slug": "rearrange-string-to-avoid-character-pair",
+        "status": "pending"
+      },
+      {
+        "id": 3993,
+        "slug": "maximum-value-of-an-alternating-sequence",
+        "status": "pending"
+      },
+      {
+        "id": 3994,
+        "slug": "minimum-adjacent-swaps-to-partition-array",
+        "status": "pending"
+      },
+      {
+        "id": 3995,
+        "slug": "minimum-cost-to-convert-string-iii",
+        "status": "pending"
+      },
+      {
+        "id": 3996,
+        "slug": "even-number-of-knight-moves",
+        "status": "pending"
+      },
+      {
+        "id": 3997,
+        "slug": "count-dominant-nodes-in-a-binary-tree",
+        "status": "pending"
+      },
+      {
+        "id": 3998,
+        "slug": "transform-binary-string-using-subsequence-sort",
+        "status": "pending"
+      },
+      {
+        "id": 3999,
+        "slug": "minimum-number-of-string-groups-through-transformations",
+        "status": "pending"
+      },
+      {
+        "id": 4000,
+        "slug": "largest-integer-with-given-digit-sum",
+        "status": "pending"
+      }
+    ]
+  }
+}

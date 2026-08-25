@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 3713,
+  "slug": "longest-balanced-substring-i",
+  "title": "Longest Balanced Substring I",
+  "difficulty": "",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestBalanced",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestBalanced",
+      "rust": "longest_balanced",
+      "typescript": "longestBalanced"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
