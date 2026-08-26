@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 1111,
+  "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+  "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+  "difficulty": "",
+  "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxDepthAfterSplit",
+    "parameters": [
+      {
+        "name": "seq",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "maxDepthAfterSplit",
+      "rust": "max_depth_after_split",
+      "typescript": "maxDepthAfterSplit"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

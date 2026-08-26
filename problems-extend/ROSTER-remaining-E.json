@@ -239,214 +239,214 @@
       {
         "id": 3261,
         "slug": "count-substrings-that-satisfy-k-constraint-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3262,
         "slug": "find-overlapping-shifts",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3263,
         "slug": "convert-doubly-linked-list-to-array-i",
-        "status": "pending"
+        "status": "blocked"
       },
       {
         "id": 3264,
         "slug": "final-array-state-after-k-multiplication-operations-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3265,
         "slug": "count-almost-equal-pairs-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3266,
         "slug": "final-array-state-after-k-multiplication-operations-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3267,
         "slug": "count-almost-equal-pairs-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3268,
         "slug": "find-overlapping-shifts-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3269,
         "slug": "constructing-two-increasing-arrays",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3270,
         "slug": "find-the-key-of-the-numbers",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3271,
         "slug": "hash-divided-string",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3274,
         "slug": "check-if-two-chessboard-squares-have-the-same-color",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3275,
         "slug": "k-th-nearest-obstacle-queries",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3277,
         "slug": "maximum-xor-score-subarray-queries",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3278,
         "slug": "find-candidates-for-data-scientist-position-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3279,
         "slug": "maximum-total-area-occupied-by-pistons",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3280,
         "slug": "convert-date-to-binary",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3282,
         "slug": "reach-end-of-array-with-max-score",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3284,
         "slug": "sum-of-consecutive-subarrays",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3285,
         "slug": "find-indices-of-stable-mountains",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3286,
         "slug": "find-a-safe-walk-through-a-grid",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3288,
         "slug": "length-of-the-longest-increasing-path",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3289,
         "slug": "the-two-sneaky-numbers-of-digitville",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3290,
         "slug": "maximum-multiplication-score",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3291,
         "slug": "minimum-number-of-valid-strings-to-form-target-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3292,
         "slug": "minimum-number-of-valid-strings-to-form-target-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3293,
         "slug": "calculate-product-final-price",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3294,
         "slug": "convert-doubly-linked-list-to-array-ii",
-        "status": "pending"
+        "status": "blocked"
       },
       {
         "id": 3295,
         "slug": "report-spam-message",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3297,
         "slug": "count-substrings-that-can-be-rearranged-to-contain-a-string-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3298,
         "slug": "count-substrings-that-can-be-rearranged-to-contain-a-string-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3299,
         "slug": "sum-of-consecutive-subsequences",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3300,
         "slug": "minimum-element-after-replacement-with-digit-sum",
-        "status": "pending"
+        "status": "done"
       }
     ],
     "3301-3400": [
       {
         "id": 3301,
         "slug": "maximize-the-total-height-of-unique-towers",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3302,
         "slug": "find-the-lexicographically-smallest-valid-sequence",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3303,
         "slug": "find-the-occurrence-of-first-almost-equal-substring",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3304,
         "slug": "find-the-k-th-character-in-string-game-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3305,
         "slug": "count-of-substrings-containing-every-vowel-and-k-consonants-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3306,
         "slug": "count-of-substrings-containing-every-vowel-and-k-consonants-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3307,
         "slug": "find-the-k-th-character-in-string-game-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3308,
         "slug": "find-top-performing-driver",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3309,
         "slug": "maximum-possible-number-by-binary-concatenation",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3310,
@@ -471,7 +471,7 @@
       {
         "id": 3314,
         "slug": "construct-the-minimum-bitwise-array-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3315,

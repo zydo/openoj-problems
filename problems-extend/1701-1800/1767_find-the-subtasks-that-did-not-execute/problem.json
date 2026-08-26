@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 1767,
+  "slug": "find-the-subtasks-that-did-not-execute",
+  "title": "Find the Subtasks That Did Not Execute",
+  "difficulty": "",
+  "tags": [
+    "Database"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Tasks (task_id INTEGER PRIMARY KEY, subtasks_count INTEGER); CREATE TABLE Executed (task_id INTEGER, subtask_id INTEGER, PRIMARY KEY (task_id, subtask_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

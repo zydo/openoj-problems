@@ -1,49 +1,50 @@
 func minOperations(nums []int) int {
-	// Position 0 is frozen, so every later value is a multiple of the one
-	// before it. Cap the value axis at 2 * max(nums): no optimal chain ever
-	// needs a value above that (exchange argument in solutions.md).
-	n := len(nums)
-	if n == 1 {
-		return 0
-	}
-	maxVal := nums[0]
-	for _, v := range nums[1:] {
-		if v > maxVal {
-			maxVal = v
+	// Only increments exist and index 0 never moves, so a finished array is
+	// a nondecreasing divisibility chain anchored at nums[0]. No optimal
+	// chain runs above 2600: past max(nums) the chain could be held flat for
+	// free (equal still divides), so only the last element may sit higher,
+	// and its cheapest fix stays under predecessor + 50.
+	const limit = 2600
+	// Divisor lists of every final value, self inclusive -- holding the
+	// previous height must remain a legal move.
+	divisors := make([][]int, limit+1)
+	for u := 1; u <= limit; u++ {
+		for m := u; m <= limit; m += u {
+			divisors[m] = append(divisors[m], u)
 		}
 	}
-	cap := 2 * maxVal
-	const INF = int(1e9)
-	dp := make([]int, cap+1)
-	ndp := make([]int, cap+1)
-	for i := range dp {
-		dp[i] = INF
+	const inf = 1<<31 - 1
+	// dp[v]: cheapest way to make the processed prefix beautiful with the
+	// last position holding exactly v.
+	dp := make([]int, limit+1)
+	for v := range dp {
+		dp[v] = inf
 	}
 	dp[nums[0]] = 0
-	for _, x := range nums[1:] {
-		for i := range ndp {
-			ndp[i] = INF
+	for i := 1; i < len(nums); i++ {
+		need := nums[i]
+		ndp := make([]int, limit+1)
+		for v := range ndp {
+			ndp[v] = inf
 		}
-		for u := 1; u <= cap; u++ {
-			if dp[u] >= INF {
-				continue
-			}
-			// First multiple of u reaching x, then every multiple after.
-			start := ((x + u - 1) / u) * u
-			for v := start; v <= cap; v += u {
-				cand := dp[u] + (v - x)
-				if cand < ndp[v] {
-					ndp[v] = cand
+		for v := need; v <= limit; v++ {
+			best := inf
+			for _, u := range divisors[v] {
+				if dp[u] < best {
+					best = dp[u]
 				}
 			}
+			if best != inf {
+				ndp[v] = best + v - need
+			}
 		}
-		dp, ndp = ndp, dp
+		copy(dp, ndp)
 	}
-	ans := INF
+	best := inf
 	for _, v := range dp {
-		if v < ans {
-			ans = v
+		if v < best {
+			best = v
 		}
 	}
-	return ans
+	return best
 }

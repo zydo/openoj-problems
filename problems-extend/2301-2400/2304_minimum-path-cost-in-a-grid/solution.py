@@ -9,10 +9,7 @@ class Solution:
             previous = grid[row - 1]
             next_costs = []
             for column in range(columns):
-                best = min(
-                    costs[source] + moveCost[previous[source]][column]
-                    for source in range(columns)
-                )
+                best = min(costs[source] + moveCost[previous[source]][column] for source in range(columns))
                 next_costs.append(best + grid[row][column])
             costs = next_costs
         return min(costs)

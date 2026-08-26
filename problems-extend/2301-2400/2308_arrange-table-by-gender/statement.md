@@ -10,7 +10,7 @@ Table: `Genders`
 | gender      | varchar |
 
 `user_id` is the primary key (column with unique values) for this table.
-`gender` is an ENUM (category) of type `'female'`, `'male'`, or `'other'`.
+`gender` is ENUM (category) of type `'female'`, `'male'`, or `'other'`.
 Each row in this table contains the ID of a user and their gender.
 The table has an equal number of `'female'`, `'male'`, and `'other'`.
 
@@ -69,9 +69,10 @@ The rearrangement is a perfect interleaving of the three gender groups:
 each gender's IDs are read in ascending order, then the rows are emitted
 one ID from each group in turn, in the fixed cycle `'female'`, `'other'`,
 `'male'`. Because the table holds an equal number of each gender, the
-cycles exhaust all three groups at exactly the same row, so every row of
-the output is fully determined. The `user_id` values are unique, so the
-order is total — no two output rows can ever tie. Write your solution as
+cycles exhaust all three groups at exactly the same row; a gender whose
+list has run out early simply yields its turns while the remaining
+groups keep alternating. The `user_id` values are unique, so the order
+is total — no two output rows can ever tie. Write your solution as
 a single `SELECT` query returning two columns — `user_id` and `gender`,
 in that order — with the rows in the exact alternating order described
 above.

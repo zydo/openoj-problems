@@ -6,7 +6,11 @@
   "slug": "sum-of-special-evenly-spaced-elements-in-array",
   "title": "Sum Of Special Evenly-Spaced Elements In Array",
   "difficulty": "",
-  "tags": ["Array", "Dynamic Programming", "Sqrt Decomposition"],
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sqrt Decomposition"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

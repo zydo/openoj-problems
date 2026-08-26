@@ -20,7 +20,7 @@
     "return_codec": "rows",
     "comparison": "exact",
     "sql": {
-      "schema": "CREATE TABLE Genders (user_id INTEGER, gender VARCHAR);"
+      "schema": "CREATE TABLE Genders (user_id INTEGER PRIMARY KEY, gender VARCHAR);"
     }
   },
   "limits": {

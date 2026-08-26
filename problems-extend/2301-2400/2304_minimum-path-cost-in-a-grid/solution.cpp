@@ -1,11 +1,11 @@
 class Solution {
   public:
-    int minPathCost(vector<vector<int>>& grid, vector<vector<int>>& moveCost) {
+    int minPathCost(vector<vector<int>> &grid, vector<vector<int>> &moveCost) {
         int rows = static_cast<int>(grid.size());
         int columns = static_cast<int>(grid[0].size());
         vector<int> costs(grid[0].begin(), grid[0].end());
         for (int row = 1; row < rows; row++) {
-            const vector<int>& previous = grid[row - 1];
+            const vector<int> &previous = grid[row - 1];
             vector<int> next_costs;
             for (int column = 0; column < columns; column++) {
                 int best = costs[0] + moveCost[previous[0]][column];

@@ -1,26 +1,32 @@
 # Solutions — Longest Balanced Subarray II
 
-## Sweep the left end over a segment tree of right ends
+## Balance segment tree over right endpoints
 
-Fix a left endpoint `l` and slide the right endpoint `r` outward. The value
-`balance(l, r)` — the number of distinct odd values minus the number of
-distinct even values in `[l, r]` — changes by `-1`, `0`, or `+1` at every
-step, because extending by one element alters exactly one parity's distinct
-set by at most one. The window `[l, r]` is balanced exactly when
-`balance(l, r) = 0`, so for a fixed `l` the goal is the largest `r` whose
-balance is zero.
+Give each value a sign — +1 when odd, −1 when even — and score a window by
+`g`, the sum of signs of its *distinct* values; balanced is exactly `g = 0`.
+Fixing the left end `l` and sweeping the right end `r`, the score `g(l, r)`
+changes only where the arriving value is new to the window: a value
+contributes its sign precisely on the stretch of right ends that starts at
+its first occurrence and stops just before its next occurrence, where a
+later copy takes over the counting. One precomputation — the next occurrence
+of each position's value — therefore turns distinct-value bookkeeping into
+plain range additions.
 
-Hold all right ends in one lazy segment tree whose leaf `r` stores
-`balance(l, r)` for the current `l`. Moving `l` to `l+1` removes `nums[l]`;
-a value `v` with sign `+1` (odd) or `-1` (even) stops contributing to every
-window that has not yet reached its next occurrence, so the tree
-subtracts `sign(v)` on the range `[l, next[l] - 1]`. After each move the
-tree answers "rightmost `r` with value 0": because adjacent leaves differ
-by at most 1, a node whose minimum and maximum straddle 0 must contain an
-exact 0, which makes the descent sound. Seeding the tree from each value's
-first occurrence fixes `balance(0, r)` for every `r` in one pass.
+A lazy segment tree over right endpoints holds every current score. Seeding
+left end 0 costs one range add per distinct value: the value's sign lands on
+every right end from its first occurrence onward. Sliding the left end past
+position `l` withdraws `nums[l]`'s sign on `[l, next(l) - 1]` — exactly the
+ends that were still counting this copy — after which entry `r` equals
+`g(l, r)` for every `r >= l`, and entries left of `l` have returned to zero.
+Each node stores the minimum and maximum of its segment under pending
+additions, so "does any entry hold zero" is the test `min <= 0 <= max`.
 
-The sweep touches each position once, and each update and query costs
-`O(log n)`, so the whole array is processed in `O(n log n)`.
+The longest balanced window for left end `l` ends at the *rightmost* zero
+among entries `r >= l`. A descent finds it: at each node a child can be
+skipped only when its minimum and maximum fail to straddle zero (a subtree
+straddling zero may still hold none — think of a huge padding sentinel next
+to a −1), so right children are tried first, bracketing left siblings are
+stacked for backtracking, and leaves are verified outright. The largest
+`r - l + 1` seen over the scan is the answer.
 
 **Complexity:** `O(n log n)` time, `O(n)` space.

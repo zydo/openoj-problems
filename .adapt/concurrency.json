@@ -354,6 +354,18 @@
       "kind": "quota-window-exhausted",
       "agents_lost": 4,
       "note": "5h pool exhausted (429 code 1308, reset stamp 23:28:05 PDT): 0662 (debugging a bush-case discrepancy), 0663 (corpus locked, at the verify gate), 0666 (reading gen_starters conventions), 0667 (checking output_kb enforcement). 0615/0664/0665 survived. User typed 'resume' — all four resumed instantly via SendMessage with context-aware pickup notes. Cap stays 8."
+    },
+    {
+      "at": "2026-08-26T01:37:26ZZ",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 3,
+      "note": "Fleet B headless relaunch: 3 of 4 workers (b1 batch5 1831-1835, b2 batch5 1925-1932, b3 batch5 2168-2171) died instantly at launch on the 5h pool (429 code 1308; reset 2026-08-26 12:31:35 per error clock UTC+8 = 04:31:35Z). b4 (batch4 2217-2221) launched ~40s earlier and slipped through — still live. Consumption-driven: no step-down; briefs already staged; resume = relaunch b1/b2/b3 with existing briefs after reset. Coordinator session may itself be dead by then; recovery path documented in memory."
+    },
+    {
+      "at": "2026-08-26T01:43:30Z",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 4,
+      "note": "Relaunch attempt at 01:35-01:41Z (b1 probe + b2 + b3, plus b4 which had survived the first cull ~6 min) ALL died on the same 5h pool 429 code 1308 (reset 2026-08-26 12:31:35 UTC+8 = 04:31:35Z). A 45s-living probe was a false positive - the CLI lingers before its first rejected API call; instant-death window is really up to ~2 min. Fleet B now ZERO live workers. All dying workers died pre-write (no partial bundles). Recovery plan: single canary probe at >=04:32Z, on success relaunch b1/b2/b3 batch-5 briefs + stage/launch b4 next batch."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"

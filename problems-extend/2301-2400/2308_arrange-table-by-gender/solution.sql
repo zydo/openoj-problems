@@ -4,8 +4,10 @@ WITH
       user_id,
       gender,
       ROW_NUMBER() OVER (
-        PARTITION BY gender
-        ORDER BY user_id
+        PARTITION BY
+          gender
+        ORDER BY
+          user_id
       ) AS rn
     FROM
       Genders

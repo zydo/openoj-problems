@@ -3,31 +3,37 @@
  * @return {number}
  */
 var minOperations = function (nums) {
-    // Position 0 is frozen, so every later value is a multiple of the one
-    // before it. Cap the value axis at 2 * max(nums): no optimal chain ever
-    // needs a value above that (exchange argument in solutions.md).
-    const n = nums.length;
-    if (n === 1) {
-        return 0;
+    // Only increments exist and index 0 never moves, so a finished array is
+    // a nondecreasing divisibility chain anchored at nums[0]. No optimal
+    // chain runs above 2600: past max(nums) the chain could be held flat for
+    // free (equal still divides), so only the last element may sit higher,
+    // and its cheapest fix stays under predecessor + 50.
+    const limit = 2600;
+    // Divisor lists of every final value, self inclusive -- holding the
+    // previous height must remain a legal move.
+    const divisors = Array.from({ length: limit + 1 }, () => []);
+    for (let u = 1; u <= limit; u++) {
+        for (let m = u; m <= limit; m += u) {
+            divisors[m].push(u);
+        }
     }
-    const cap = 2 * Math.max(...nums);
-    const INF = 1e9;
-    let dp = new Array(cap + 1).fill(INF);
+    const inf = Infinity;
+    // dp[v]: cheapest way to make the processed prefix beautiful with the
+    // last position holding exactly v.
+    let dp = new Array(limit + 1).fill(inf);
     dp[nums[0]] = 0;
-    for (let i = 1; i < n; i++) {
-        const x = nums[i];
-        const ndp = new Array(cap + 1).fill(INF);
-        for (let u = 1; u <= cap; u++) {
-            if (dp[u] >= INF) {
-                continue;
-            }
-            // First multiple of u reaching x, then every multiple after.
-            const start = Math.ceil(x / u) * u;
-            for (let v = start; v <= cap; v += u) {
-                const cand = dp[u] + (v - x);
-                if (cand < ndp[v]) {
-                    ndp[v] = cand;
+    for (let i = 1; i < nums.length; i++) {
+        const need = nums[i];
+        const ndp = new Array(limit + 1).fill(inf);
+        for (let v = need; v <= limit; v++) {
+            let best = inf;
+            for (const u of divisors[v]) {
+                if (dp[u] < best) {
+                    best = dp[u];
                 }
+            }
+            if (best !== inf) {
+                ndp[v] = best + v - need;
             }
         }
         dp = ndp;

@@ -14,8 +14,8 @@ Table: `TeamStats`
 | losses         | int     |
 
 `team_id` is the unique key for this table.
-Each row of this table contains team id, team name, `matches_played`,
-`wins`, `draws`, and `losses`.
+This table contains team id, team name, `matches_played`, `wins`,
+`draws`, and `losses`.
 
 Write a solution to calculate the points and rank for each team in the
 league. Points are calculated as follows:
@@ -59,4 +59,6 @@ ordered by points in descending order and then by team_name in ascending
 order. Teams that share a point total share a position, and the next
 distinct total resumes one past the number of teams already placed: two
 co-leaders take positions 1 and 1, and the best team behind them takes
-position 3.
+position 3. The judge compares result rows as an unordered multiset, so
+row order does not affect correctness — produce the demanded order
+anyway.

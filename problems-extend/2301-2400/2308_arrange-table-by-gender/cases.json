@@ -47,6 +47,183 @@
   "hidden": [
     {
       "input": [
+        ""
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Genders VALUES\n(9,'male'),\n(1,'male'),\n(5,'male');"
+      ],
+      "expected": [
+        [
+          1,
+          "male"
+        ],
+        [
+          5,
+          "male"
+        ],
+        [
+          9,
+          "male"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Genders VALUES\n(6,'female'),\n(7,'male'),\n(10,'other'),\n(13,'female'),\n(2,'other'),\n(21,'female'),\n(4,'female'),\n(19,'female');"
+      ],
+      "expected": [
+        [
+          4,
+          "female"
+        ],
+        [
+          2,
+          "other"
+        ],
+        [
+          7,
+          "male"
+        ],
+        [
+          6,
+          "female"
+        ],
+        [
+          10,
+          "other"
+        ],
+        [
+          13,
+          "female"
+        ],
+        [
+          19,
+          "female"
+        ],
+        [
+          21,
+          "female"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Genders VALUES\n(11,'male'),\n(5,'female'),\n(3,'male'),\n(1,'other'),\n(12,'female'),\n(15,'male'),\n(8,'male');"
+      ],
+      "expected": [
+        [
+          5,
+          "female"
+        ],
+        [
+          1,
+          "other"
+        ],
+        [
+          3,
+          "male"
+        ],
+        [
+          12,
+          "female"
+        ],
+        [
+          8,
+          "male"
+        ],
+        [
+          11,
+          "male"
+        ],
+        [
+          15,
+          "male"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Genders VALUES\n(6,'female'),\n(9,'other'),\n(17,'male'),\n(14,'other'),\n(2,'other'),\n(20,'other'),\n(10,'male');"
+      ],
+      "expected": [
+        [
+          6,
+          "female"
+        ],
+        [
+          2,
+          "other"
+        ],
+        [
+          10,
+          "male"
+        ],
+        [
+          9,
+          "other"
+        ],
+        [
+          17,
+          "male"
+        ],
+        [
+          14,
+          "other"
+        ],
+        [
+          20,
+          "other"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Genders VALUES\n(9,'other'),\n(8,'male'),\n(7,'female'),\n(6,'male'),\n(5,'other'),\n(4,'female'),\n(3,'male'),\n(2,'other'),\n(1,'female');"
+      ],
+      "expected": [
+        [
+          1,
+          "female"
+        ],
+        [
+          2,
+          "other"
+        ],
+        [
+          3,
+          "male"
+        ],
+        [
+          4,
+          "female"
+        ],
+        [
+          5,
+          "other"
+        ],
+        [
+          6,
+          "male"
+        ],
+        [
+          7,
+          "female"
+        ],
+        [
+          9,
+          "other"
+        ],
+        [
+          8,
+          "male"
+        ]
+      ]
+    },
+    {
+      "input": [
         "INSERT INTO Genders VALUES\n(1,'female'),\n(2,'other'),\n(3,'male');"
       ],
       "expected": [

@@ -461,107 +461,107 @@
       {
         "id": 3725,
         "slug": "count-ways-to-choose-coprime-integers-from-rows",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3726,
         "slug": "remove-zeros-in-decimal-representation",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3727,
         "slug": "maximum-alternating-sum-of-squares",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3728,
         "slug": "stable-subarrays-with-equal-boundary-and-interior-sum",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3729,
         "slug": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3730,
         "slug": "maximum-calories-burnt-from-jumps",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3731,
         "slug": "find-missing-elements",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3732,
         "slug": "maximum-product-of-three-elements-after-one-replacement",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3733,
         "slug": "minimum-time-to-complete-all-deliveries",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3734,
         "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3735,
         "slug": "lexicographically-smallest-string-after-reverse-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3736,
         "slug": "minimum-moves-to-equal-array-elements-iii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3737,
         "slug": "count-subarrays-with-majority-element-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3738,
         "slug": "longest-non-decreasing-subarray-after-replacing-at-most-one-element",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3739,
         "slug": "count-subarrays-with-majority-element-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3740,
         "slug": "minimum-distance-between-three-equal-elements-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3741,
         "slug": "minimum-distance-between-three-equal-elements-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3742,
         "slug": "maximum-path-score-in-a-grid",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3743,
         "slug": "maximize-cyclic-partition-score",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3744,
         "slug": "find-kth-character-in-expanded-string",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3745,
         "slug": "maximize-expression-of-three-elements",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3746,
@@ -581,27 +581,27 @@
       {
         "id": 3750,
         "slug": "minimum-number-of-flips-to-reverse-binary-string",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3751,
         "slug": "total-waviness-of-numbers-in-range-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3752,
         "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3753,
         "slug": "total-waviness-of-numbers-in-range-ii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3754,
         "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3755,
@@ -621,67 +621,67 @@
       {
         "id": 3758,
         "slug": "convert-number-words-to-digits",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3759,
         "slug": "count-elements-with-at-least-k-greater-values",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3760,
         "slug": "maximum-substrings-with-distinct-start",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3761,
         "slug": "minimum-absolute-distance-between-mirror-pairs",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3762,
         "slug": "minimum-operations-to-equalize-subarrays",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3763,
         "slug": "maximum-total-sum-with-threshold-constraints",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3764,
         "slug": "most-common-course-pairs",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3765,
         "slug": "complete-prime-number",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3766,
         "slug": "minimum-operations-to-make-binary-palindrome",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3767,
         "slug": "maximize-points-after-choosing-k-tasks",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3768,
         "slug": "minimum-inversion-count-in-subarrays-of-fixed-length",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3769,
         "slug": "sort-integers-by-binary-reflection",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3770,
         "slug": "largest-prime-from-consecutive-prime-sum",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3771,
