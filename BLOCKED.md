@@ -1,6 +1,6 @@
 # Blocked problems — six-fleet extend wave (record as of 2026-08-26)
 
-All 17 problems marked `blocked` across ROSTER-remaining-{A..F}.json,
+All 21 problems marked `blocked` across ROSTER-remaining-{A..F}.json,
 with consolidated reasons. Full per-problem evidence lives in the fleet
 bookkeeping: `.localonly/resplit/part-*/blocked.md` and
 `.localonly/fleetA_*/blocked_notes.md` (crawl paths, harness line
@@ -10,7 +10,19 @@ references, probe transcripts). Crawl originals:
 None of these are authoring failures — every one is a judge-contract /
 wire-codec limitation. Unblock classes are listed at the end.
 
-## Fleet A (8)
+## Fleet A (10)
+
+### 2252 dynamic-pivoting-of-a-table (2201-2300)
+Dynamic pivot needs a data-dependent column list derived per testcase via
+GROUP_CONCAT + prepared statement/procedure; sql.py rejects ';' (no
+multi-statement) and the harness wraps every submission as
+`SELECT * FROM (...)`. Worker verified the dead end. Unblock: procedure /
+dynamic-SQL executor class.
+
+### 2253 dynamic-unpivoting-of-a-table (2201-2300)
+Mirror direction of 2252: unpivot must reference testcase-variable store
+columns; single-SELECT harness cannot express the column enumeration.
+Same unblock class as 2252.
 
 ### 1116 print-zero-even-odd (1101-1200)
 Value-carrying callback concurrent API. Every method takes a one-int-arg
@@ -117,6 +129,22 @@ node reference (not the head), so the wire would additionally need to
 encode which node is passed.
 
 ---
+
+## Fleet B (2)
+
+### 2664 the-knights-tour (2601-2700)
+Any-valid-tour output unjudgeable under exact comparison: 45 of 46
+solvable instances admit multiple distinct valid tours including crawl
+Example 2, so pinning one expected string rejects correct alternates.
+Evidence: .localonly/fleetb_2664/. Unblock: comparison mode accepting any
+arrangement satisfying the tour-validity predicate.
+
+### 2674 split-a-circular-linked-list (2601-2700)
+Blocked class: pointer-wired nodes. The crawl skeleton takes a circular
+ListNode and returns two rewired circular ListNode heads — next-pointer
+wiring in AND out; no value/level-order wire family expresses it.
+Unblock: judge support for pointer-shaped list returns (circular list
+codec).
 
 ## Unblock classes (judge-contract extensions)
 

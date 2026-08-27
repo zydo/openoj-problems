@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2573,
+  "slug": "find-the-string-with-lcp",
+  "title": "Find the String with LCP",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Union-Find",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "findTheString",
+    "parameters": [
+      {
+        "name": "lcp",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "findTheString",
+      "rust": "find_the_string",
+      "typescript": "findTheString"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

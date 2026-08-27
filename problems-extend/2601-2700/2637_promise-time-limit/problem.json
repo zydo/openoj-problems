@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2637,
+  "slug": "promise-time-limit",
+  "title": "Promise Time Limit",
+  "difficulty": "",
+  "tags": [],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "LimitCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "LimitCase",
+        "construct": [
+          "source",
+          "inputs",
+          "t"
+        ],
+        "auxiliary": [],
+        "parameter": "limitCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
