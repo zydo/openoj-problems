@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 3804,
+  "slug": "number-of-centered-subarrays",
+  "title": "Number of Centered Subarrays",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "centeredSubarrays",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "centeredSubarrays",
+      "rust": "centered_subarrays",
+      "typescript": "centeredSubarrays"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

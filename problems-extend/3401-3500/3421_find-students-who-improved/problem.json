@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 3421,
+  "slug": "find-students-who-improved",
+  "title": "Find Students Who Improved",
+  "difficulty": "",
+  "tags": [
+    "Database"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Scores (student_id INTEGER, subject TEXT, score INTEGER, exam_date TEXT);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

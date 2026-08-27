@@ -4,224 +4,224 @@
       {
         "id": 2678,
         "slug": "number-of-senior-citizens",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2679,
         "slug": "sum-in-a-matrix",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2680,
         "slug": "maximum-or",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2682,
         "slug": "find-the-losers-of-the-circular-game",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2683,
         "slug": "neighboring-bitwise-xor",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2684,
         "slug": "maximum-number-of-moves-in-a-grid",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2685,
         "slug": "count-the-number-of-complete-components",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2686,
         "slug": "immediate-food-delivery-iii",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2687,
         "slug": "bikes-last-time-used",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2688,
         "slug": "find-active-users",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2689,
         "slug": "extract-kth-character-from-the-rope-tree",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2690,
         "slug": "infinite-method-object",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2691,
         "slug": "immutability-helper",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2692,
         "slug": "make-object-immutable",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2693,
         "slug": "call-function-with-custom-context",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2694,
         "slug": "event-emitter",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2695,
         "slug": "array-wrapper",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2696,
         "slug": "minimum-string-length-after-removing-substrings",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2697,
         "slug": "lexicographically-smallest-palindrome",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2698,
         "slug": "find-the-punishment-number-of-an-integer",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2699,
         "slug": "modify-graph-edge-weights",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2700,
         "slug": "differences-between-two-objects",
-        "status": "pending"
+        "status": "done"
       }
     ],
     "2701-2800": [
       {
         "id": 2701,
         "slug": "consecutive-transactions-with-increasing-amounts",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2702,
         "slug": "minimum-operations-to-make-numbers-non-positive",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2703,
         "slug": "return-length-of-arguments-passed",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2704,
         "slug": "to-be-or-not-to-be",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2705,
         "slug": "compact-object",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2706,
         "slug": "buy-two-chocolates",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2707,
         "slug": "extra-characters-in-a-string",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2708,
         "slug": "maximum-strength-of-a-group",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2710,
         "slug": "remove-trailing-zeros-from-a-string",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2711,
         "slug": "difference-of-number-of-distinct-values-on-diagonals",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2712,
         "slug": "minimum-cost-to-make-all-characters-equal",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2713,
         "slug": "maximum-strictly-increasing-cells-in-a-matrix",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2714,
         "slug": "find-shortest-path-with-k-hops",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2715,
         "slug": "timeout-cancellation",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2716,
         "slug": "minimize-string-length",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2717,
         "slug": "semi-ordered-permutation",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2718,
         "slug": "sum-of-matrix-after-queries",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2720,
         "slug": "popularity-percentage",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2721,
         "slug": "execute-asynchronous-functions-in-parallel",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2722,
         "slug": "join-two-arrays-by-id",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2723,
         "slug": "add-two-promises",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2724,
         "slug": "sort-by",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2725,
@@ -266,24 +266,24 @@
       {
         "id": 2800,
         "slug": "shortest-string-that-contains-three-strings",
-        "status": "pending"
+        "status": "done"
       }
     ],
     "2801-2900": [
       {
         "id": 2801,
         "slug": "count-stepping-numbers-in-range",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2802,
         "slug": "find-the-k-th-lucky-number",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2803,
         "slug": "factorial-generator",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2804,
@@ -298,7 +298,7 @@
       {
         "id": 2806,
         "slug": "account-balance-after-rounded-purchase",
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 2807,

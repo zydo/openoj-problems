@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 3846,
+  "slug": "total-distance-to-type-a-string-using-one-finger",
+  "title": "Total Distance to Type a String Using One Finger",
+  "difficulty": "",
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "totalDistance",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "totalDistance",
+      "rust": "total_distance",
+      "typescript": "totalDistance"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -19,7 +19,10 @@ A substring is a contiguous sequence of characters within a string.
 ```text
 Input: a = "abc", b = "bca", c = "aaa"
 Output: "aaabca"
-Explanation:  We show that "aaabca" contains all the given strings: a = ans[2...4], b = ans[3..5], c = ans[0..2]. It can be shown that the length of the resulting string would be at least 6 and "aaabca" is the lexicographically smallest one.
+Explanation:  We show that "aaabca" contains all the given strings:
+a = ans[2...4], b = ans[3..5], c = ans[0..2]. It can be shown that the
+length of the resulting string would be at least 6 and "aaabca" is the
+lexicographically smallest one.
 ```
 
 ### Example 2
@@ -27,7 +30,11 @@ Explanation:  We show that "aaabca" contains all the given strings: a = ans[2...
 ```text
 Input: a = "ab", b = "ba", c = "aba"
 Output: "aba"
-Explanation: We show that the string "aba" contains all the given strings: a = ans[0..1], b = ans[1..2], c = ans[0..2]. Since the length of c is 3, the length of the resulting string would be at least 3. It can be shown that "aba" is the lexicographically smallest one.
+Explanation: We show that the string "aba" contains all the given
+strings: a = ans[0..1], b = ans[1..2], c = ans[0..2]. Since the
+length of c is 3, the length of the resulting string would be at
+least 3. It can be shown that "aba" is the lexicographically
+smallest one.
 ```
 
 ### Constraints

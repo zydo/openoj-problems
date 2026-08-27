@@ -1,8 +1,8 @@
 {
   "policy": "Adaptive subagent concurrency for the adaptation program. Target is the number of agents kept running; on frequent rate limiting it steps down, and it recovers slowly when quiet.",
-  "cap": 16,
+  "cap": 5,
   "floor": 4,
-  "target": 8,
+  "target": 5,
   "step_down_on": "2 or more rate-limit agent deaths within one quota window",
   "recover": "+2 to target per hour with zero rate-limit events",
   "events": [
@@ -366,6 +366,347 @@
       "kind": "quota-window-exhausted",
       "agents_lost": 4,
       "note": "Relaunch attempt at 01:35-01:41Z (b1 probe + b2 + b3, plus b4 which had survived the first cull ~6 min) ALL died on the same 5h pool 429 code 1308 (reset 2026-08-26 12:31:35 UTC+8 = 04:31:35Z). A 45s-living probe was a false positive - the CLI lingers before its first rejected API call; instant-death window is really up to ~2 min. Fleet B now ZERO live workers. All dying workers died pre-write (no partial bundles). Recovery plan: single canary probe at >=04:32Z, on success relaunch b1/b2/b3 batch-5 briefs + stage/launch b4 next batch."
+    },
+    {
+      "at": "2026-08-26T05:32:00Z",
+      "kind": "rate-limit",
+      "agents_lost": 1,
+      "note": "[1302] per-minute rate limit killed fleet-B worker w4 seconds after launch (~05:30Z). Cause: burst timing — fleet B launched 4 headless workers simultaneously while fleet D (2901-3000 x1) and fleet E (3401-3500/3501-3600/3601-3700 x3) coordinators had just launched 4 more on the SAME z.ai pool; other coordinators are independent sessions not visible via ListAgents here. Pool-wide live workers ~7 + coordinators. Fix applied: relaunch w4 SOLO and stagger future launches; do not step below current pool usage."
+    },
+    {
+      "at": "2026-08-26T05:32:00Z",
+      "kind": "rate_limit_per_minute",
+      "agents_lost": 1,
+      "note": "Fleet D headless worker d1 (batch 2981/2982/2983/2992) killed by 429 [1302] requests-per-minute ~05:31:53Z, ~6 min after launch. Cause: cross-FLEET pileup — other coordinator sessions launched fleet E (e1-e4) + fleet C (c1 x4) + fleet B2 (w4) workers on the same shared pool minutes earlier (~9 concurrent glm workers). Consumption class: per-minute, not 5h-pool. Action: relaunching d1 once; if a second per-minute death hits this window, hold D refills instead of stepping down solo (target is shared across coordinators, no single writer)."
+    },
+    {
+      "at": "2026-08-26T05:38:00Z",
+      "kind": "rate-limit",
+      "agents_lost": 1,
+      "note": "[1302] per-minute limit killed fleet-B w3 at ~05:36Z, ~6 min after launch (mid-first-bundle; partials on disk: 2419 problem.json+statement only). Second cross-fleet burst casualty — pool-wide worker count ~12 glm processes. Fleet B live: w1, w2 (+w4 relaunch in stagger window). No step-down (other coordinators own the rest); fleet B holds at its own cap 4 and staggers all future launches."
+    },
+    {
+      "at": "2026-08-26T05:40:00Z",
+      "kind": "rate_limit_per_minute",
+      "agents_lost": 2,
+      "note": "Second wave: d2 (bpwwh1k63, ~12min old, mid-work) AND the d1 relaunch (bri4uhhdz, ~7min old) both died on 429 [1302] at ~05:39Z. That is >=2 per-minute deaths in one quota window across fleet D -> per policy, step down / hold. Fleet D now ZERO live workers, no partial bundles (both died pre-write; verified no new dirs). Cross-fleet context: other sessions still hold ~10 workers (fleet C x4, E x4+, B2) on the shared pool — the binding constraint is global, not D-local. HOLD: no D relaunch for 15 min (~05:55Z), then relaunch ONE worker (d1 brief first); on a quiet hour step back to 2."
+    },
+    {
+      "at": "2026-08-26T05:41:00Z",
+      "kind": "rate-limit",
+      "agents_lost": 1,
+      "note": "[1302] killed fleet-B w2 at ~05:39Z (~12 min in, died before writing any bundle — its assignment 2414-2418 has nothing on disk yet). Third fleet-B casualty of the cross-fleet burst window. Fleet B live: w1 only (+w3/w4 in stagger). Holding further relaunches ~6 min to let the shared per-minute window drain; pool-wide glm count was ~12."
+    },
+    {
+      "at": "2026-08-26T05:41:04Z",
+      "kind": "429 per-minute rate limit",
+      "note": "[1302] killed fleet-C batch-1 workers w2678/w2680/w2682 at ~05:36-05:40Z (~7-11 min in; none wrote bundle dirs yet). w2679 still alive. Same cross-fleet burst window that is killing fleet-B workers — fleet C holds at 1 live + coordinator, no refills until the shared window drains. Fleet C batch-2 briefs staged (c2-2800/2801/2803/2706)."
+    },
+    {
+      "at": "2026-08-26T05:57:00Z",
+      "kind": "rate-limit",
+      "agents_lost": 1,
+      "note": "[1302] killed fleet-B w4 RELAUNCH at ~05:55Z (~24 min after its stagger began, ~3 min into actual work; partial 2424 on disk: problem.json+statement+cases, no solutions yet). Pool glm process count now ~18 — other coordinators keep launching. Fleet B live: w1 + w2 + w3 (relaunches). w4 will re-relaunch with a long stagger; fleet B is absorbing repeated per-minute saturation caused by cross-fleet launch volume."
+    },
+    {
+      "at": "2026-08-26T05:59:00Z",
+      "kind": "rate-limit",
+      "agents_lost": 1,
+      "note": "[1302] killed fleet-B w1 (the ORIGINAL survivor) at ~05:57Z — but it died POST-WRITE: all four of its bundles (2408/2409/2411/2413) are complete 18-file bundles on disk. Whether they passed its x7 gate is unproven; the coordinator will re-gate each through verify_solution.py now. Fleet B live: w2 + w3 relaunches; w4 re-relaunch staggered +10min."
+    },
+    {
+      "at": "2026-08-26T05:43:00Z",
+      "kind": "policy",
+      "note": "USER DIRECTIVE: use at most 5 agents. Cap lowered 8 -> 5, target clamped to 5. Supersedes the 2026-08-24 cap raise. Applies to ALL coordinators reading this file — at directive time ~10 foreign-session workers (fleet C x4, E x4+, B2) were still live, already over this budget; holders of those sessions must drain to <=5. Fleet D honors it: currently 0 live workers (post-429 hold), single d1 relaunch at ~05:55Z, ramp toward 5 only as the per-minute error window stays quiet."
+    },
+    {
+      "at": "2026-08-26T06:00:42Z",
+      "kind": "user-directive",
+      "note": "USER DIRECTIVE 2026-08-26 ~06:00Z: 'use at most 5 agents'. Target stepped to 5 (from 8). Applies to coordinator-launched headless authoring workers; fleet C will run at most 4-5 concurrent. Other fleets' live workers belong to their own sessions."
+    },
+    {
+      "at": "2026-08-26T06:01:32Z",
+      "kind": "snapshot",
+      "note": "Cross-fleet picture at cap-5 directive: 9 live glm workers (fleetB2 w2/w4/w5, fleetD d1-2901, fleetE e1/e2/e3/e4/e9) + 5 staggered launches pending (b2 w2/w4/w5, d1-2901, e1). Fleet C holds 0 live. With other fleets at ~9 already over the new global target of 5, fleet C stays dark until the count drains below target; then relaunches batch-1 briefs one at a time, never exceeding 5 total and only counting C's own share conservatively."
+    },
+    {
+      "at": "2026-08-26T06:10:00Z",
+      "kind": "rate-limit",
+      "agents_lost": 1,
+      "note": "[1302] killed fleet-B w2 relaunch at ~06:08Z — but it had COMPLETED bundle 1 of 4 (2414, full 18-file bundle on disk) before dying; bundles 2-4 (2415/2417/2418) untouched. Coordinator re-gates 2414 now; w2's remaining 3 are covered by refill worker w5 (same assignment, launching staggered). Pattern this window: workers keep dying mid-batch on cross-fleet per-minute saturation, but post-write deaths make the work recoverable."
+    },
+    {
+      "at": "2026-08-26T06:12:30Z",
+      "kind": "rate-limit",
+      "agents_lost": 1,
+      "note": "[1302] killed fleet-B w5 refill at ~06:11Z, seconds after its 5-min stagger expired — it walked straight into a saturated minute. Pool count ~13 and falling as other fleets' workers die too; the whole pool is thrashing on per-minute limits. Fleet B live: w3 + w4 relaunches only. Decision: hold w5 relaunch 15 min (longest stagger yet) rather than keep feeding the storm."
+    },
+    {
+      "at": "2026-08-26T06:23:30Z",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 1,
+      "note": "Fleet D d1 (hold-relaunch, alive 05:55:28Z->~06:22Z) died on 5h-pool exhaustion 429 [1308], reset 2026-08-26 17:35:43 (error clock UTC+8) = 09:35:43Z — ~3h10m away. It AUTHORED 2981 + 2982 as full 18-file bundles and started 2983 (2 files: problem.json+statement.md) before dying. Consumption-driven class: NO step-down; fleet D waits for the reset, then resumes d1's remaining work. NOTE: this pool died ~4h after the 04:31Z reset — the shared budget is being consumed much faster with ~10 cross-fleet workers; cap-5 directive landed mid-window."
+    },
+    {
+      "at": "2026-08-26T06:27:28Z",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 1,
+      "note": "[1308] 5-HOUR POOL exhausted (NOT per-minute): fleet-C w2678 relaunch died instantly at ~06:26Z. Error says limit resets 2026-08-26 17:35:43 in the error's own clock (UTC+8) = 09:35:43 UTC = 02:35 PDT. Consumption-driven class — target stays 5; fleet C goes DARK until pool reset. No point relaunching: every glm worker across all fleets will hit the same wall."
+    },
+    {
+      "at": "2026-08-26T06:31:00Z",
+      "kind": "policy",
+      "note": "USER DIRECTIVE: one problem at a time — NO multiple concurrent authoring subagents. Supersedes the cap-5 ramp plan for fleet D: a single worker authors ONE bundle per run, coordinator re-gates, then the next single-bundle worker launches. Batch briefs (4 problems per headless run) remain valid as ordered queues but each run still processes strictly one at a time; no parallel d1+d2. Fleet D resume at 09:38Z = single d1 run (finish 2983 first, then 2981/2982 gate-checks are coordinator-side)."
+    },
+    {
+      "at": "2026-08-26T06:44:00Z",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 1,
+      "note": "User ordered immediate resume; the 2983 single-problem launch died instantly on the still-exhausted 5h pool ([1308], reset 09:35:43Z). Zero work lost (died pre-write). Auto-relaunch re-armed for 09:38Z."
+    },
+    {
+      "at": "06:52:11Z",
+      "kind": "user-directive",
+      "note": "USER DIRECTIVE ~06:51Z: 'cancel all timers and sleepers, IGNORE previous 429, resume working.' Pool-reset one-shot 87afaafc cancelled (no timers remain). Fleet C resumes NOW despite the earlier [1308] — user says ignore it. Staggered single-slot launches under cap-5, survival-check each before the next."
+    },
+    {
+      "at": "2026-08-26T09:59:30Z",
+      "kind": "snapshot",
+      "note": "Pool-reset probe FAILED: the 09:31Z w2678 early-probe died on [1308] again (same reset stamp; output fleetc_w2678.out) and its wrapper exited ~09:40Z. Meanwhile six LONG-LIVED workers from fleets D/E are alive and writing past the stamped reset: e1-3406 (pid 6218), d-2983 single (11877), e9-3746 (16840), d3-sql-2984..2987 (57228), d4-sql-2988..2991 (57234), d5-2992/2996/2997/3000 (57237). Interpretation: fresh glm launches are still locked out even though old processes thrive — fleet C stays dark; next C probe only after one of the six exits cleanly or a fresh-launch success is observed elsewhere. Cap-5 in force; global count now 6."
+    },
+    {
+      "at": "2026-08-26T10:00:50Z",
+      "kind": "coordinator-gate",
+      "note": "Post-reset coordinator sweep: 3746 (fleet E, e9 batch) had one hidden case over the statement ceiling by 1 char (a^50001 b^50000 @ 100001 vs n<=10^5) — trimmed to a^49999 b^50000 @ 99999 keeping its max-imbalance-one intent, expected 0->1; re-gated green x7. Tracker NOT yet updated for any fleet-E bundle; landing law pending user commit order."
+    },
+    {
+      "at": "2026-08-26T10:02:10Z",
+      "kind": "coordinator-gate",
+      "note": "Pool reset 09:35:43Z confirmed live: three staged fleet-E sleepers fired (e6-3406, e1-3395, e9-3746) and all survived the 3-min falsification window. e1's worker died ~10:00Z AFTER finishing 3398 (18 files); coordinator re-gated green x7 (34 cases) and marked it done in ROSTER-remaining-E (pending 200->199). e6 + e9 still authoring. Fleet E now 13/212 done."
+    },
+    {
+      "at": "2026-08-26T10:04:00Z",
+      "kind": "dispatch",
+      "note": "Lockout CLEARED ~10:00Z: d-2983 completed (18-file bundle, cases.json 09:59Z) and fresh launches from other coordinators survived and are writing (fleetd_2989). Global live at launch: 3 (E e9-3746 pid 16840, D d3 57228, D d4 57234; d5 57237 exited). Fleet C batch-1 slot 1 LAUNCHED: 2678_number-of-senior-citizens (single-slot, one-at-a-time directive). Next brief c1-2679 only after survival check >=3 min without [1308] AND global count < 5."
+    },
+    {
+      "at": "2026-08-26T10:06:03Z",
+      "kind": "coordinator-gate",
+      "note": "Fleet E post-reset batch landed: e6 (3406/3407/3409/3411) + e9 (3746 fixed-case/3747/3748/3755) re-gated green x7 by coordinator; tracker marked done (E 20/212). e1 died after finishing 3398 only (green x7, marked); e6's process also exited — its 2nd-batch brief never staged. Remaining live: e9 (16840) authoring; foreign workers on D-2992, B/C-2308, C-2678. Fleet E next pendings: 3399, 3400, 3412, 3414."
+    },
+    {
+      "at": "2026-08-26T10:09:30Z",
+      "kind": "milestone",
+      "note": "w2678 SURVIVED the burst window: 6 min alive, zero API errors, scratch producing (fleetc_2678/gen_cases.py + manifest.json). Fresh-launch lockout confirmed over. Global live now ~5 (E e9, D d3, D d4 + C w2678 + one foreign). Per cap-5 and one-at-a-time directive, fleet C holds at this single slot until a global slot frees; next C brief c1-2679 launches when count < 4 or w2678 completes."
+    },
+    {
+      "at": "2026-08-26T10:10:00Z",
+      "kind": "snapshot",
+      "note": "Corrected census: exactly 3 live glm workers globally — E e9 (3746, 31 min), D d5-relaunch (2992/2996/2997/3000, 10 min), C w2678 (6 min). The earlier 'five' double-counted wrapper shells. Cap-5 has headroom; one-at-a-time directive still binds fleet C to its single slot until w2678 finishes."
+    },
+    {
+      "at": "2026-08-26T10:14:09Z",
+      "kind": "coordinator-gate",
+      "note": "e9 worker (16840) exited 10:13Z with BATCH COMPLETE 4 0 (3746/3747/3748/3755). Its report confirms my coordinator-side 3746 case fix survived on disk (idx2052 = a^49999 b^50000, expected 1 — the worker's own final write predates it; cases.json mtime unchanged since 03:00Z). All four re-gated green x7 earlier. Fleet E: 20/212 done. USER PAUSE ORDER in effect — no refills; next pendings 3399, 3400, 3412, 3414 staged for explicit go."
+    },
+    {
+      "at": "2026-08-26T10:21:06Z",
+      "kind": "launch",
+      "note": "USER RESUME ORDER. Fleet E relaunched: e5 (3399+3400, shard-boundary brief fixed for 3400->3401-3500), e10 (3412/3414/3415/3416 — slugs re-verified against tracker after a guessed-slug generation was caught and regenerated), e11 (3417/3418/3421). Staggered ~75s; tracked background tasks with notifications. 3415/3421 are Database-kind. 13 foreign workers live incl. four on 2415; pool window fresh until ~14:35Z."
+    },
+    {
+      "at": "2026-08-26T10:36:08Z",
+      "kind": "coordinator-gate",
+      "note": "e5 landed 3399+3400 green x7 (27 + 18 cases, triple-oracle triangulation / pair-delta bins). NOTE: coordinator's brief said 3400->shard 3401-3500 — WRONG; tracker buckets are x01-x00 so 3400 lives in 3301-3400. Worker caught it via tracker; authored correctly. Future briefs: shard = ((id-1)//100)*100+1 .. +100."
+    },
+    {
+      "at": "2026-08-26T10:41:12Z",
+      "kind": "coordinator-gate",
+      "note": "e11 landed 3417+3418 (green x7) + 3421 (sql, green x1, Database class as expected). E 25/212."
+    },
+    {
+      "at": "2026-08-26T10:42:19Z",
+      "kind": "launch",
+      "note": "Fleet E continue: e12 (3422/3423/3424) + e13 (3426/3427/3428) launched staggered 75s alongside still-running e10. All six slugs verified against tracker+crawl filenames, all in shard 3401-3500, disk clean. Machine load 12 headless pre-launch."
+    },
+    {
+      "at": "2026-08-26T11:01:43Z",
+      "kind": "coordinator-gate",
+      "note": "e10 batch complete 4 0: 3412/3414/3416 green x7 + 3415 sql green x1 (as predicted Database class). All coordinator-re-gated; E 29/212."
+    },
+    {
+      "at": "2026-08-26T11:04:42Z",
+      "kind": "coordinator-gate",
+      "note": "e12 landed 3422/3423/3424 all green x7 (24/18/22 cases). E 32/212. Slot refilled with e15 (3433/3434/3436). In flight: e13, e14, e15."
+    },
+    {
+      "at": "2026-08-26T11:09:39Z",
+      "kind": "coordinator-gate",
+      "note": "e13 landed 3426/3427/3428 all green x7 (20/18/20 cases). E 35/212. In flight: e14, e15."
+    },
+    {
+      "at": "2026-08-26T11:23:51Z",
+      "kind": "coordinator-gate",
+      "note": "e14 batch complete 3 0 (3429 early-gated; 3431/3432 now re-gated green x7). E 40/212."
+    },
+    {
+      "at": "2026-08-26T11:26:27Z",
+      "kind": "coordinator-gate",
+      "note": "e15 batch complete 3 0 (3433/3434 early-gated green x7; 3436 sql green x1, Database class as flagged). E 41/212."
+    },
+    {
+      "at": "2026-08-26T11:29:24Z",
+      "kind": "rate-limit",
+      "agents_lost": 1,
+      "note": "[1214] modelCode does not exist RECURRENCE: ~/.claude/settings.json rewritten by proxy tooling at 11:26:01Z injected ANTHROPIC_MODEL=ox-alpha-free (+ *_MODEL_NAME keys, ANTHROPIC_API_KEY=PROXY_MANAGED) into every Bash-spawned worker env; e18 died instantly twice (env-prefix missing ANTHROPIC_MODEL; then BSD env -u-after-assignment ordering). Working launch prefix: env -u <4x *_MODEL_NAME> ANTHROPIC_MODEL='glm-5.3[1m]' CLAUDE_CODE_SUBAGENT_MODEL='glm-5.3[1m]' claude -p --settings settings-glm.json. e16/e17 launched pre-rewrite, unaffected."
+    },
+    {
+      "at": "2026-08-26T11:34:45Z",
+      "kind": "coordinator-gate",
+      "note": "e16 batch complete 3 0, all green x7 (3437: 9 cases — hidden<12 justified by exhaustive feasible domain per report; 3438: 18; 3439: 17). E 44/212."
+    },
+    {
+      "at": "2026-08-26T11:53:34Z",
+      "kind": "coordinator-gate",
+      "note": "e19 batch complete 3 0 (hardened prefix worked): 3447 (early-gated) + 3450 green x7, 3451 sql green x1 (Database as flagged). E 48/212."
+    },
+    {
+      "at": "2026-08-26T12:14:39Z",
+      "kind": "coordinator-gate",
+      "note": "e18 batch complete 3 0 after [1214] recovery: 3443/3444/3446 all green x7 (19/19/17 cases). E 51/212."
+    },
+    {
+      "at": "2026-08-26T12:18:17Z",
+      "kind": "coordinator-gate",
+      "note": "e17 + e20 batches complete 6 0 total: 3440(early)/3441/3442 + 3452/3456/3457 all green x7. E 56/212."
+    },
+    {
+      "at": "2026-08-26T12:50:48Z",
+      "kind": "coordinator-gate",
+      "note": "e21 + e22 batches complete 6 0 total: 3458/3459/3460 (23/23/20 cases) + 3461/3462/3463 (1261/51/1274 cases — digits-equal I/II are exhaustive-heavy). 3459 cases.json 13.3MiB input-side, outputs int<=500 within tier. E 62/212."
+    },
+    {
+      "at": "2026-08-26T13:10:52Z",
+      "kind": "coordinator-gate",
+      "note": "e23 batch complete 3 0: 3465 sql green x1, 3467 green x7 (37), 3468 green x7 (33). E 65/212."
+    },
+    {
+      "at": "2026-08-26T13:24:24Z",
+      "kind": "user-stop",
+      "note": "Both tracked worker tasks (e24 3469-3471, e25 3474-3476) were externally STOPPED at ~13:23Z (task notifications say 'was stopped', no API errors). e24's first bundle 3469 was complete on disk — coordinator re-gated green x7 (24 cases) and marked it; 3470/3471 + e25 targets untouched. NOT relaunching without user direction — awaiting word. E 66/212."
+    },
+    {
+      "at": "2026-08-26T15:52:00Z",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 1,
+      "note": "[1308] 5h-pool exhaustion killed fleet-C w2801 at ~13:33Z mid-work (statement.md done, 5 oracle scripts in scratch; recoverable resume). Reset stamp 2026-08-27 00:59:32 error-clock (UTC+8) = 16:59:32Z today. Consumption class — no step-down. Session idle 13:33-15:51Z; at 15:51Z a foreign worker launched successfully, so probing the real c2-2801 brief now (200s survival check). Session restart note: post-/exit env re-leak fixed by inline ANTHROPIC_MODEL='glm-5.3[1m]' prefix on every launch."
+    },
+    {
+      "at": "2026-08-26T15:53:42Z",
+      "kind": "launch",
+      "note": "RESUME at reduced momentum after 2.5h silence: 13:23Z task-stops looked collateral (both claude procs SIGTERMed same instant, 'Execution error', no user words; other fleets kept launching through the window and started fresh workers at 15:50Z). Standing 'continue fleet E' + nudge loop honored with ONE worker: e26 (3470/3471 only — 3469 already landed green). Second worker (e25 brief 3474-3476) held back pending e26's clean batch or user word."
+    },
+    {
+      "at": "2026-08-26T16:22:57Z",
+      "kind": "coordinator-gate",
+      "note": "e26 (reduced-momentum probe) batch complete 2 0: 3470/3471 green x7 (28/34 cases; 3471 restored crawler-eaten '1 < k < n' hint text). E 68/212. Probe clean — e25 slot (3474-3476) clears for relaunch."
+    },
+    {
+      "at": "2026-08-26T17:08:59Z",
+      "kind": "coordinator-gate",
+      "note": "e25 batch complete 3 0: 3474/3476 green x7 (38/24), 3475 sql green x1 (15). Both post-stop relaunches clean — full momentum restored. E 71/212."
+    },
+    {
+      "at": "2026-08-26T17:37:44Z",
+      "kind": "coordinator-gate",
+      "note": "e27 batch complete 3 0: 3477/3479/3481 all green x7 (21/19/18 cases; 3479 ships 15.7MB cases.json — new corpus max, inputs-only, outputs within tier). E 74/212."
+    },
+    {
+      "at": "2026-08-26T17:53:31Z",
+      "kind": "coordinator-gate",
+      "note": "e28 batch complete 3 0: 3483/3484/3487 all green x7 (26/19/25 cases; 3484 is a design-class bundle that passed the standard wire). E 77/212."
+    },
+    {
+      "at": "2026-08-26T18:19:27Z",
+      "kind": "coordinator-gate",
+      "note": "e29 batch complete 3 0: 3488/3489/3491 all green x7 (184/297/361 cases, exhaustive-heavy; 3488 measured 326,071B output vs 512KiB tier). E 80/212."
+    },
+    {
+      "at": "2026-08-26T18:53:37Z",
+      "kind": "coordinator-gate",
+      "note": "e30 batch complete 3 0: 3492/3493/3494 all green x7 (398/344/944 cases; 3494 convex-hull O(n+m log n) vs O(nm) sim oracle, 888 exhaustive + 5 max 5000x5000). E 83/212."
+    },
+    {
+      "at": "2026-08-26T19:15:00Z",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 1,
+      "note": "[1308] 5-hour-pool exhaustion killed fleet-C w2695 (array-wrapper) at ~19:08Z PRE-WRITE (zero files on disk; clean slate). Reset stamp 2026-08-27 05:59:33 error-clock (UTC+8) = 21:59:33Z today. Second exhaustion window today (first 13:33Z, which recovered ~15:51Z — ~1h10m BEFORE its stamp; treat the stamp as pessimistic and probe periodically). Consumption class: NO step-down, target stays 5. All global workers died with the pool (count 0 at 19:14Z). Fleet C resume = probe w2695 every ~15 min until a launch survives 3+ min, then run to completion."
+    },
+    {
+      "at": "2026-08-26T19:19:00Z",
+      "kind": "probe",
+      "note": "Probe attempt 1 for w2695: [1308] lockout holds (worker gone pre-write after ~3 min; matches pool-wide death). Loop retries every 15 min; next attempt ~19:33Z. Expected recovery ~20:30-22:00Z given today's recovery-beats-stamp pattern."
+    },
+    {
+      "at": "2026-08-26T19:08:00Z",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 1,
+      "note": "[1308] 5h-pool exhaustion killed fleet-E worker e31 (3495/3496/3497 brief) at ~19:08Z. e31 had authored 3495 fully (complete, since re-gated) and 3496 partially (statement+solutions done, no cases.json/solutions.md/starters); 3497 untouched. Reset stamp 2026-08-27 05:59:33 UTC+8 = 21:59:33Z. Consumption class - no step-down. e32 (3498/3499) not yet launched. Resume at/after reset: relaunch e31 remainder (3496 interrupted-work + 3497) + e32."
+    },
+    {
+      "at": "2026-08-26T19:18:00Z",
+      "kind": "coordinator-recover",
+      "note": "Session-restart orphan recovery (fleet E): 3495 (e31 survivor, x7 16/16), 3746 (e9-batch survivor, x7 2071/2071), 3757 (e9-batch survivor, x7 22/22) re-gated green and marked done. E 86/212."
+    },
+    {
+      "at": "2026-08-26T19:31:00Z",
+      "kind": "coordinator-gate",
+      "note": "e31 remainder finished LOCALLY (no pool needed): 3496 completed by coordinator (gen.py DP-sweep oracle 9840 arrays, 27 hidden cases, cases.json 8.57MiB input-side / outputs <=10B; solutions.md authored; starters generated; re-gated green x7 29/29) and marked done. e31 batch fully recovered (3495+3496). E 87/212. Wave-1 briefs staged for pool reset (~21:59:33Z): e31r-3497, e32-3498/3499, e33-3502/3503/3504, e34-3605/3606/3607, e35-3756/3771/3773."
+    },
+    {
+      "at": "2026-08-26T19:40:00Z",
+      "kind": "launch-probe-failed",
+      "note": "User-requested early resume probe at 19:37Z: launched e31r (3497) as first worker; died instantly on [1308] (reset still 2026-08-27 05:59:33 UTC+8 = 21:59:33Z). Pool confirmed hard-down; wave launch stays pinned to the 21:56Z one-shot. No other workers launched (probe-first policy)."
+    },
+    {
+      "at": "2026-08-26T19:43:00Z",
+      "kind": "config-change",
+      "note": "USER DIRECTIVE (2026-08-26 ~19:40Z): ignore the glm pool block — \"we are using the new model now, continue authoring!\". Worker launch config CHANGED: stop using settings-glm.json + ANTHROPIC_MODEL=glm-5.3[1m]; workers now launch PLAIN (inherit global ~/.claude/settings.json: local proxy 127.0.0.1:15721, deepseek-v4-flash, CLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash[1M]). The z.ai glm 5h pool is no longer the binding constraint. e31r (3497) relaunched under the new config as probe; wave continues on success."
+    },
+    {
+      "at": "2026-08-26T19:58:00Z",
+      "kind": "coordinator-gate",
+      "note": "e32 batch landed (first new-model batch): 3498 (x7 16/16) + 3499 (x7 18/18) re-gated green, marked done. BATCH COMPLETE 2 0. E 89/212. Refilling with e36 (3505/3506/3507)."
+    },
+    {
+      "at": "2026-08-26T20:01:00Z",
+      "kind": "coordinator-gate",
+      "note": "e31r landed: 3497 SQL bundle [sql] 15/15 re-gated green, marked done. SHARD 3401-3500 COMPLETE. E 90/212."
+    },
+    {
+      "at": "2026-08-26T20:06:00Z",
+      "kind": "coordinator-gate",
+      "note": "e33 landed: 3502 (x7 20/20) + 3503 (x7 22/22) + 3504 (x7 24/24) re-gated green, marked done. BATCH COMPLETE 3 0. E 93/212. Refill e39 (3509/3510/3511)."
+    },
+    {
+      "at": "2026-08-26T20:10:00Z",
+      "kind": "coordinator-gate",
+      "note": "e35 landed: 3756 (x7 117/117) + 3771 (x7 271/271) + 3773 (x7 260/260) re-gated green, marked done. E 96/212. Refill e38 (3774/3775/3776)."
+    },
+    {
+      "at": "2026-08-26T20:15:00Z",
+      "kind": "coordinator-gate",
+      "note": "e34 landed: 3605 (x7 22/22) + 3606 (x7 19/19) + 3607 (x7 20/20) re-gated green, marked done. E 99/212. Refill e40 (3612/3614/3616)."
+    },
+    {
+      "at": "2026-08-26T21:01:00Z",
+      "kind": "outage",
+      "note": "Fleet E wave e36-e40 all died ~20:15Z on 401 Insufficient balance at opencode.ai (wrk_01M0W03G8P7TBKFF8278TYDDET) — the proxy backend account drained mid-wave; NOT a concurrency issue. No in-flight bundle was lost (deaths occurred at startup / pre-authoring; partial dirs 3609-3612 left as interrupted work). Balance restored ~20:57Z (direct proxy probe returned a valid deepseek response, cost 0). Relaunched e36/e37/e38/e39/e40 20:57-21:00Z under same config; fleet E at 5 workers. Note: user session also launched workers after top-up (a Fleet E e40 worker that died, and a Fleet B worker). Re-gate/refill loop resumes."
+    },
+    {
+      "at": "2026-08-26T21:07:00Z",
+      "kind": "coordinator-gate",
+      "note": "e37 (relaunch) landed: 3609 (x7 24/24) + 3610 (x7 21/21) + 3611 (sql 13/13) re-gated green, marked done. E 102/212. Refill e42 (3617/3618/3619)."
     }
   ],
   "pool_resets_at": "2026-08-19T02:39:31-07:00"

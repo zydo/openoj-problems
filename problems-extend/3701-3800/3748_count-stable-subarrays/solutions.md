@@ -12,18 +12,20 @@ computes `left[]` by carrying the running start forward whenever
 
 Counting per query then only needs two prefix sums over those endpoints:
 `base[e] = e - left[e] + 1` counts every stable subarray ending at `e`
-within its own run, and `full[e] = left[e]` will count, summed over a range,
-every subarray that stretches all the way back to the query's left edge.
-For a query `[l, r]`, ends `e` with `left[e] >= l` contribute their full run
-window `base[e]`, while earlier ends — sitting past a drop somewhere inside
-`[l, r]` — are clipped to the query edge and contribute `e - l + 1`. Because
-`left[]` never decreases, the two populations split at one threshold `p`,
-found by binary search: the clipped ones are exactly `e ∈ [l, p)`.
+within its own run, and a prefix sum of `left[e]` itself will price the
+clipping correction. For a query `[l, r]`, ends `e` with `left[e] >= l`
+contribute their full run window `base[e]`, while earlier ends — sitting past
+a drop somewhere inside `[l, r]` — overcount: `base[e]` reaches before `l`,
+so their true contribution is clipped to `e - l + 1`. Because `left[]` never
+decreases, the two populations split at one threshold `p`, found by binary
+search: the clipped ones are exactly `e ∈ [l, p)`.
 
-So each answer collapses to `sum(base[l..r]) + sum(full[p..r]) - l * (r - p
-+ 1)` read off the prefix arrays in constant time after the linear scan,
-where the subtracted term unfolds the clipping formula over that suffix.
-Values reach roughly `n * (n + 1) / 2` — about `5 * 10^9` at `n = 10^5` —
-so every sum is accumulated in 64-bit integers and returned as such.
+So each answer collapses to `sum(base[l..r]) + l * (p - l) - sum(left[l..p))`
+read off the prefix arrays in constant time after the linear scan: the added
+term hands every clipped end `e ∈ [l, p)` its `l - left[e]` overcount back,
+which unfolds over that prefix as `l` repeated `p - l` times minus the
+`left[e]` values themselves. Values reach roughly `n * (n + 1) / 2` — about
+`5 * 10^9` at `n = 10^5` — so every sum is accumulated in 64-bit integers and
+returned as such.
 
 **Complexity:** `O(n + q log n)` time, `O(n)` space.

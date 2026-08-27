@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 3793,
+  "slug": "find-users-with-high-token-usage",
+  "title": "Find Users with High Token Usage",
+  "difficulty": "",
+  "tags": [],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Prompts (user_id INTEGER, prompt VARCHAR, tokens INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

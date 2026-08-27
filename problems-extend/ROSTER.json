@@ -42706,7 +42706,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3888,
@@ -42721,7 +42721,7 @@
         ],
         "premium": true,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3889,
@@ -42735,7 +42735,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3890,
@@ -42750,7 +42750,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3891,
@@ -42817,7 +42817,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3896,
@@ -42834,7 +42834,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3897,
@@ -42848,7 +42848,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3898,
@@ -42862,7 +42862,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3899,
@@ -42876,7 +42876,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3900,
@@ -42890,7 +42890,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       }
     ],
     "3901-4000": [
@@ -42921,7 +42921,7 @@
         ],
         "premium": true,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3903,
@@ -42934,7 +42934,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3904,
@@ -42947,7 +42947,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3906,
@@ -42959,7 +42959,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3907,
@@ -42971,7 +42971,7 @@
         ],
         "premium": true,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3908,
@@ -42983,7 +42983,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3909,
@@ -42995,7 +42995,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3910,
@@ -43013,7 +43013,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3911,
@@ -43026,7 +43026,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3912,
@@ -43038,7 +43038,7 @@
         ],
         "premium": false,
         "statement": true,
-        "status": "pending"
+        "status": "done"
       },
       {
         "id": 3913,

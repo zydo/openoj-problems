@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2726,
+  "slug": "calculator-with-method-chaining",
+  "title": "Calculator with Method Chaining",
+  "difficulty": "",
+  "tags": [],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "CalculatorCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "CalculatorCase",
+        "construct": [
+          "actions",
+          "values"
+        ],
+        "auxiliary": [],
+        "parameter": "calculatorCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

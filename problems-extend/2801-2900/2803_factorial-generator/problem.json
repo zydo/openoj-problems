@@ -25,6 +25,7 @@
         "construct": [
           "n"
         ],
+        "auxiliary": [],
         "parameter": "genCase"
       }
     }

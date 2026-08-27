@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2704,
+  "slug": "to-be-or-not-to-be",
+  "title": "To Be Or Not To Be",
+  "difficulty": "",
+  "tags": [],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "ExpectCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "ExpectCase",
+        "construct": [
+          "func"
+        ],
+        "auxiliary": [],
+        "parameter": "expectCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
