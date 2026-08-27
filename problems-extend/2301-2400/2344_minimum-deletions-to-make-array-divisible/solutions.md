@@ -1,24 +1,25 @@
 # Solutions — Minimum Deletions to Make Array Divisible
 
-## Reduce numsDivide to its gcd, then scan nums for the smallest divisor
+## Reduce numsDivide to its GCD, then scan sorted nums once
 
-Deleting elements only ever moves the minimum of nums upward, and the final
-minimum must divide every element of numsDivide. An integer divides all the
-elements of numsDivide exactly when it divides their greatest common divisor
-`g`, since every element is a multiple of `g` and `g` itself divides any
-common divisor of the whole array. So compute `g` with one Euclidean pass
-over numsDivide; the question becomes: which distinct values in nums are
-divisors of `g`, and what does promoting the smallest of them cost?
+An element `x` can become the smallest element of the trimmed `nums` only
+if it divides every value in `numsDivide`. Rather than testing each
+candidate against all of `numsDivide`, collapse the whole requirement into
+one number first: a value divides every element of `numsDivide` exactly
+when it divides their greatest common divisor. One pass over `numsDivide`
+with a running GCD therefore produces a single target that fully encodes
+the divisibility condition.
 
-Because deletions are free-form, the cheapest surviving arrangement keeps
-every element greater than or equal to the chosen value, so the deletions
-needed for a candidate `v` are simply the count of elements smaller than `v`
-— duplicates at or above `v` are harmless and never deleted. Scanning nums
-in sorted order therefore visits candidates in increasing cost order, and
-the first value satisfying `g % v == 0` is the answer; if no value in nums
-divides `g`, return -1. (Equivalently, one unsorted pass tracking the best
-`(value, count)` pair works: keep the smallest qualifying value seen so far,
-resetting the count whenever a strictly smaller qualifier appears.)
+With the target in hand, deletions resolve greedily. Deleting elements
+never forces removal of anything larger than necessary — only the elements
+smaller than the smallest valid candidate need to go — so sort `nums` and
+walk it in ascending order, counting every element that fails to divide
+the target and stopping at the first one that succeeds; the count is the
+answer. If no element divides the target, no amount of deleting helps and
+the answer is `-1`.
 
-**Complexity:** `O(n log n + m log M)` time, `O(1)` extra space. Here `M`
-is the largest value in numsDivide.
+Sorting dominates at `O((n + m) log n)` time for `n = len(nums)`,
+`m = len(numsDivide)` (the GCD pass is linear), plus `O(n)` space for the
+sorted copy.
+
+**Complexity:** `O(n log n + m log max(numsDivide))` time, `O(n)` space.

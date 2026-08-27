@@ -1,0 +1,36 @@
+{
+  "public": [
+    {
+      "input": [
+        "is2 sentence4 This1 a3"
+      ],
+      "expected": "This is a sentence"
+    },
+    {
+      "input": [
+        "Myself2 Me1 I4 and3"
+      ],
+      "expected": "Me Myself and I"
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "a1"
+      ],
+      "expected": "a"
+    },
+    {
+      "input": [
+        "Z9 x8 c7 v6 b5 n4 m3 q2 w1"
+      ],
+      "expected": "w q m n b v c x Z"
+    },
+    {
+      "input": [
+        "Iota9 beta2 theta8 Alpha1 Eta7 zeta6 delta4 Epsilon5 Gamma3"
+      ],
+      "expected": "Alpha beta Gamma delta Epsilon zeta Eta theta Iota"
+    }
+  ]
+}

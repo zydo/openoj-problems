@@ -1,26 +1,29 @@
 # Solutions — Finding the Number of Visible Mountains
 
-## Rotate the plane, sort, and keep a running maximum
+## Sort by x, then one monotonic-stack sweep
 
-A mountain's sides have slopes 1 and -1, so its region is
-`|X - x| <= y - Y` for every ground point `(X, Y)` under peak `(x, y)`.
-Peak `a` therefore lies inside or on mountain `b` exactly when both
-`xa - xb <= ya - yb` and `xb - xa <= yb - ya` hold — that is, when
-`xa + (-ya) >= xb + (-yb)` and `xa + ya >= xb + yb`. Rotating every peak
-to `(u, v) = (x - y, x + y)` turns this containment test into plain
-componentwise comparison: mountain `b` hides mountain `a` iff
-`u_b <= u_a` and `v_b >= v_a`. The rotation is just a 45-degree change of
-basis, so nothing about which peaks dominate which changes — only the
-bookkeeping gets easier.
+Mountain `(x, y)` contains peak `(a, b)` exactly when `|a - x| <= y - b` —
+the peak sits inside or on the slopes of the triangle. That containment is
+one-sided in `x`: a mountain can only hide peaks at its own height or
+below. Sorting the peaks by `x` ascending (breaking ties by `y` descending)
+therefore lines every potential coverer up before the peaks it can cover,
+and the whole problem collapses to a single left-to-right pass.
 
-Sort by `u` ascending, breaking ties by `v` descending, then sweep. A
-peak is visible exactly when no earlier-processed peak has an equal or
-smaller `u` together with an equal or larger `v`; because of the tie
-order, any such dominator appears before it in the sweep. So track the
-maximum `v` seen so far and count a peak as visible only if its own `v`
-is strictly greater than that running maximum. Equal `(u, v)` duplicates
-sit adjacent after sorting: each sees the previous copy's identical `v`,
-fails the strict comparison, and correctly disappears from the count,
-matching Example 2 where coincident peaks hide each other.
+The pass keeps a stack of mountains that are still candidates for
+visibility. When a new mountain arrives it first pops every stacked
+mountain whose peak falls inside it — those are hidden and gone for good,
+since no later mountain hides them any less. It is then itself tested
+against the new top: if its peak lies inside that mountain's slopes it is
+discarded without being pushed; otherwise it joins the stack. Amortized
+`O(1)` work per peak follows because each mountain is pushed and popped at
+most once.
 
-**Complexity:** `O(n log n)` time, `O(n)` space.
+Two edge details finish the count. Duplicate peaks must be collapsed with
+their multiplicity kept: identical mountains lie within each other, so any
+duplicated peak is invisible — yet an invisible duplicate still hides other
+peaks, which is why duplicates are filtered only when the final stack is
+tallied, never skipped during the sweep. And containment uses `<=`, so a
+peak sitting exactly on another's slope counts as covered, matching the
+statement's border rule.
+
+**Complexity:** `O(n log n)` time (the sort), `O(n)` space.

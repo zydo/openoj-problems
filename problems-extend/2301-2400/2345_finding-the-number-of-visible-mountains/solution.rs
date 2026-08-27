@@ -1,36 +1,44 @@
 impl Solution {
-    pub fn visible_mountains(peaks: Vec<Vec<i32>>) -> i32 {
-        // (u, v) = (x - y, x + y): mountain b hides peak a iff
-        // u_b <= u_a and v_b >= v_a. Sort by u ascending, v descending,
-        // then a peak is visible iff its v beats every earlier one strictly.
-        let mut points: Vec<(i64, i64)> = peaks
-            .iter()
-            .map(|p| {
-                let (x, y) = (p[0] as i64, p[1] as i64);
-                (x - y, -(x + y))
-            })
-            .collect();
-        points.sort_unstable();
-        let n = points.len();
-        let mut count = 0i32;
-        let mut best_seen = false;
-        let mut best = 0i64;
-        let mut i = 0usize;
-        while i < n {
-            let (u, negv) = points[i];
-            let mut j = i + 1;
-            while j < n && points[j] == (u, negv) {
+    // Mountain (x, y) contains peak (a, b) exactly when |a - x| <= y - b:
+    // the peak sits inside or on the slopes. Sorting by x ascending (ties
+    // by y descending) puts every potential coverer no later, so a
+    // monotonic stack settles everything in one pass. Duplicated peaks are
+    // invisible but still hide others, so they stay on the stack for their
+    // covering effect and are only excluded from the final count.
+    pub fn visible_mountains(mut peaks: Vec<Vec<i32>>) -> i32 {
+        peaks.sort_by(|p, q| {
+            if p[0] != q[0] {
+                p[0].cmp(&q[0])
+            } else {
+                q[1].cmp(&p[1])
+            }
+        });
+        let mut stack: Vec<(i32, i32, bool)> = Vec::new(); // (x, y, counted)
+        let mut i = 0;
+        while i < peaks.len() {
+            let mut j = i; // run-length encode equal peaks to detect duplicates
+            while j < peaks.len() && peaks[j][0] == peaks[i][0] && peaks[j][1] == peaks[i][1] {
                 j += 1;
             }
-            if j - i == 1 && (!best_seen || -negv > best) {
-                count += 1;
+            let duplicated = j - i > 1;
+            let x = peaks[i][0];
+            let y = peaks[i][1];
+            while let Some(&(tx, ty, _)) = stack.last() {
+                if (tx - x).abs() <= y - ty {
+                    stack.pop();
+                } else {
+                    break;
+                }
             }
-            if !best_seen || -negv > best {
-                best = -negv;
-                best_seen = true;
+            let covered = match stack.last() {
+                Some(&(tx, ty, _)) => (x - tx).abs() <= ty - y,
+                None => false,
+            };
+            if !covered {
+                stack.push((x, y, !duplicated));
             }
             i = j;
         }
-        count
+        stack.iter().filter(|&&(_, _, counted)| counted).count() as i32
     }
 }

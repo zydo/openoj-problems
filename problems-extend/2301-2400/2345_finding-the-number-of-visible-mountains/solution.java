@@ -1,43 +1,50 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 class Solution {
 
     public int visibleMountains(int[][] peaks) {
-        // (u, v) = (x - y, x + y): mountain b hides peak a iff
-        // u_b <= u_a and v_b >= v_a. Sort by u ascending, v descending,
-        // then a peak is visible iff its v beats every earlier one strictly.
-        // v is carried negated, so "largest v so far" is the smallest negv.
-        int n = peaks.length;
-        long[] us = new long[n];
-        long[] negvs = new long[n];
-        Integer[] order = new Integer[n];
-        for (int i = 0; i < n; i++) {
-            us[i] = (long) peaks[i][0] - peaks[i][1];
-            negvs[i] = -((long) peaks[i][0] + peaks[i][1]);
-            order[i] = i;
-        }
-        Arrays.sort(order, (a, b) -> {
-            if (us[a] != us[b]) return Long.compare(us[a], us[b]);
-            return Long.compare(negvs[a], negvs[b]);
+        // Mountain (x, y) contains peak (a, b) exactly when |a - x| <= y - b:
+        // the peak sits inside or on the slopes. Sorting by x ascending
+        // (ties by y descending) puts every potential coverer no later, so
+        // a monotonic stack settles everything in one pass. Duplicated
+        // peaks are invisible but still hide others, so they stay on the
+        // stack for their covering effect and are only excluded from the
+        // final count.
+        Arrays.sort(peaks, (p, q) -> {
+            if (p[0] != q[0]) {
+                return Integer.compare(p[0], q[0]);
+            }
+            return Integer.compare(q[1], p[1]);
         });
-        int count = 0;
-        boolean bestSeen = false;
-        long best = 0;
+        List<int[]> stack = new ArrayList<>();  // {x, y, counted}
         int i = 0;
-        while (i < n) {
-            int j = i + 1;
-            while (j < n && us[order[j]] == us[order[i]] && negvs[order[j]] == negvs[order[i]]) {
-                j++;
+        while (i < peaks.length) {
+            int j = i;  // run-length encode equal peaks to detect duplicates
+            while (j < peaks.length && peaks[j][0] == peaks[i][0] && peaks[j][1] == peaks[i][1]) {
+                ++j;
             }
-            if (j - i == 1 && (!bestSeen || negvs[order[i]] < best)) {
-                count++;
+            boolean duplicated = j - i > 1;
+            int x = peaks[i][0], y = peaks[i][1];
+            while (!stack.isEmpty()
+                    && Math.abs(stack.get(stack.size() - 1)[0] - x)
+                            <= y - stack.get(stack.size() - 1)[1]) {
+                stack.remove(stack.size() - 1);
             }
-            if (!bestSeen || negvs[order[i]] < best) {
-                best = negvs[order[i]];
-                bestSeen = true;
+            boolean covered =
+                    !stack.isEmpty()
+                            && Math.abs(x - stack.get(stack.size() - 1)[0])
+                                    <= stack.get(stack.size() - 1)[1] - y;
+            if (!covered) {
+                stack.add(new int[] {x, y, duplicated ? 0 : 1});
             }
             i = j;
         }
-        return count;
+        int visible = 0;
+        for (int[] entry : stack) {
+            visible += entry[2];
+        }
+        return visible;
     }
 }

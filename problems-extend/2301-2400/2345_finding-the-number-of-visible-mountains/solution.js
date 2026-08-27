@@ -3,31 +3,40 @@
  * @return {number}
  */
 var visibleMountains = function (peaks) {
-    // (u, v) = (x - y, x + y): mountain b hides peak a iff
-    // u_b <= u_a and v_b >= v_a. Sort by u ascending, v descending,
-    // then a peak is visible iff its v beats every earlier one strictly.
-    // Coordinates are <= 1e5, so u and v fit in a JS number exactly.
-    const points = peaks.map(([x, y]) => [x - y, -(x + y)]);
-    points.sort((a, b) => (a[0] !== b[0] ? a[0] - b[0] : a[1] - b[1]));
-    let count = 0;
-    let best = null;
+    // Mountain (x, y) contains peak (a, b) exactly when |a - x| <= y - b:
+    // the peak sits inside or on the slopes. Sorting by x ascending (ties
+    // by y descending) puts every potential coverer no later, so a
+    // monotonic stack settles everything in one pass. Duplicated peaks are
+    // invisible but still hide others, so they stay on the stack for their
+    // covering effect and are only excluded from the final count.
+    peaks.sort((p, q) => (p[0] !== q[0] ? p[0] - q[0] : q[1] - p[1]));
+    const stack = []; // entries: [x, y, counted]
     let i = 0;
-    while (i < points.length) {
-        let j = i + 1;
+    while (i < peaks.length) {
+        let j = i; // run-length encode equal peaks to detect duplicates
+        while (j < peaks.length && peaks[j][0] === peaks[i][0] && peaks[j][1] === peaks[i][1]) {
+            ++j;
+        }
+        const duplicated = j - i > 1;
+        const x = peaks[i][0];
+        const y = peaks[i][1];
         while (
-            j < points.length &&
-            points[j][0] === points[i][0] &&
-            points[j][1] === points[i][1]
+            stack.length > 0 &&
+            Math.abs(stack[stack.length - 1][0] - x) <= y - stack[stack.length - 1][1]
         ) {
-            j++;
+            stack.pop();
         }
-        if (j - i === 1 && (best === null || -points[i][1] > best)) {
-            count++;
-        }
-        if (best === null || -points[i][1] > best) {
-            best = -points[i][1];
+        const covered =
+            stack.length > 0 &&
+            Math.abs(x - stack[stack.length - 1][0]) <= stack[stack.length - 1][1] - y;
+        if (!covered) {
+            stack.push([x, y, duplicated ? 0 : 1]);
         }
         i = j;
     }
-    return count;
+    let visible = 0;
+    for (const entry of stack) {
+        visible += entry[2];
+    }
+    return visible;
 };

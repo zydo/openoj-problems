@@ -1,14 +1,18 @@
 class Solution {
   public:
-    long long zeroFilledSubarray(vector<int> &nums) {
+    long long zeroFilledSubarray(vector<int>& nums) {
+        // Every zero-filled subarray ends at exactly one index, and the ones
+        // ending at i are exactly the run of consecutive zeros through i —
+        // add the current run length at every zero. Totals reach ~5e9, so
+        // accumulate in 64 bits.
         long long total = 0;
-        long long streak = 0;
-        for (int num : nums) {
-            if (num == 0) {
-                streak++;
-                total += streak;
+        long long run = 0;
+        for (int value : nums) {
+            if (value == 0) {
+                ++run;
+                total += run;
             } else {
-                streak = 0;
+                run = 0;
             }
         }
         return total;

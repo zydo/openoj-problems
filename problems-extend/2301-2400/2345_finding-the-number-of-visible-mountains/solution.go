@@ -1,42 +1,54 @@
-import (
-	"sort"
-)
+import "sort"
 
 func visibleMountains(peaks [][]int) int {
-	// (u, v) = (x - y, x + y): mountain b hides peak a iff
-	// u_b <= u_a and v_b >= v_a. Sort by u ascending, v descending,
-	// then a peak is visible iff its v beats every earlier one strictly.
-	type point struct {
-		u int
-		v int
-	}
-	points := make([]point, 0, len(peaks))
-	for _, p := range peaks {
-		points = append(points, point{p[0] - p[1], p[0] + p[1]})
-	}
-	sort.Slice(points, func(i, j int) bool {
-		if points[i].u != points[j].u {
-			return points[i].u < points[j].u
+	// Mountain (x, y) contains peak (a, b) exactly when |a - x| <= y - b:
+	// the peak sits inside or on the slopes. Sorting by x ascending (ties
+	// by y descending) puts every potential coverer no later, so a
+	// monotonic stack settles everything in one pass. Duplicated peaks are
+	// invisible but still hide others, so they stay on the stack for their
+	// covering effect and are only excluded from the final count.
+	sort.Slice(peaks, func(i, j int) bool {
+		if peaks[i][0] != peaks[j][0] {
+			return peaks[i][0] < peaks[j][0]
 		}
-		// equal u: larger (negated) v first
-		return points[i].v > points[j].v
+		return peaks[i][1] > peaks[j][1]
 	})
-	count := 0
-	bestSeen := false
-	best := 0
-	for i := 0; i < len(points); {
-		j := i + 1
-		for j < len(points) && points[j] == points[i] {
+	type entry struct{ x, y, counted int }
+	var stack []entry
+	for i := 0; i < len(peaks); {
+		j := i
+		for j < len(peaks) && peaks[j][0] == peaks[i][0] && peaks[j][1] == peaks[i][1] {
 			j++
 		}
-		if j-i == 1 && (!bestSeen || points[i].v > best) {
-			count++
+		duplicated := j-i > 1
+		x, y := peaks[i][0], peaks[i][1]
+		for len(stack) > 0 && abs(stack[len(stack)-1].x-x) <= y-stack[len(stack)-1].y {
+			stack = stack[:len(stack)-1]
 		}
-		if !bestSeen || points[i].v > best {
-			best = points[i].v
-			bestSeen = true
+		covered := false
+		if len(stack) > 0 {
+			top := stack[len(stack)-1]
+			covered = abs(x-top.x) <= top.y-y
+		}
+		counted := 0
+		if !duplicated {
+			counted = 1
+		}
+		if !covered {
+			stack = append(stack, entry{x, y, counted})
 		}
 		i = j
 	}
-	return count
+	visible := 0
+	for _, e := range stack {
+		visible += e.counted
+	}
+	return visible
+}
+
+func abs(v int) int {
+	if v < 0 {
+		return -v
+	}
+	return v
 }

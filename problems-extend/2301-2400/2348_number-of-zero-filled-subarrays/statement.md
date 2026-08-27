@@ -2,7 +2,8 @@
 
 ## Description
 
-Given an integer array nums, return the number of subarrays filled with 0.
+Given an integer array `nums`, return the number of subarrays filled with
+`0`.
 
 A subarray is a contiguous non-empty sequence of elements within an array.
 
@@ -11,10 +12,10 @@ A subarray is a contiguous non-empty sequence of elements within an array.
 ```text
 Input: nums = [1,3,0,0,2,0,0,4]
 Output: 6
-Explanation:
-There are 4 occurrences of [0] as a subarray.
+Explanation: There are 4 occurrences of [0] as a subarray.
 There are 2 occurrences of [0,0] as a subarray.
-There is no occurrence of a subarray with a size more than 2 filled with 0. Therefore, we return 6.
+There is no occurrence of a subarray with a size more than 2 filled with 0.
+Therefore, we return 6.
 ```
 
 ### Example 2
@@ -22,11 +23,11 @@ There is no occurrence of a subarray with a size more than 2 filled with 0. Ther
 ```text
 Input: nums = [0,0,0,2,0,0]
 Output: 9
-Explanation:
-There are 5 occurrences of [0] as a subarray.
+Explanation: There are 5 occurrences of [0] as a subarray.
 There are 3 occurrences of [0,0] as a subarray.
 There is 1 occurrence of [0,0,0] as a subarray.
-There is no occurrence of a subarray with a size more than 3 filled with 0. Therefore, we return 9.
+There is no occurrence of a subarray with a size more than 3 filled with 0.
+Therefore, we return 9.
 ```
 
 ### Example 3
@@ -46,8 +47,12 @@ Explanation: There is no subarray filled with 0. Therefore, we return 0.
 
 ### Hint 1
 
-For each zero, you can calculate the number of zero-filled subarrays that end on that index, which is the number of consecutive zeros behind the current element + 1.
+For each zero, you can calculate the number of zero-filled subarrays that
+end on that index, which is the number of consecutive zeros behind the
+current element + 1.
 
 ### Hint 2
 
-Maintain the number of consecutive zeros behind the current element, count the number of zero-filled subarrays that end on each index, sum it up to get the answer.
+Maintain the number of consecutive zeros behind the current element, count
+the number of zero-filled subarrays that end on each index, sum it up to
+get the answer.
