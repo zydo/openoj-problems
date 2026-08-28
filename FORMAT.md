@@ -35,7 +35,7 @@ Solutions are authored on top of the generated starters.
 ```json
 {
     "schema_version": 1,
-    "common_version": 1,
+    "common_version": 2,
     "reference_solution": "",
     "id": 1,
     "slug": "two-sum",
@@ -50,8 +50,9 @@ Solutions are authored on top of the generated starters.
 - `id` matches the numeric directory prefix; `slug` and `title` match the
   directory and the statement's `# Title` heading.
 - `common_version` declares the common-library version the bundle was
-  authored against (`common/README.md` is the contract); it may not
-  exceed the checkout's `common/VERSION.json`.
+  authored against (`common/README.md` is the contract; version 2 added
+  `QuadNode`, `NestedInteger`, `NodeWithNext`, `MultiListNode`); it may
+  not exceed the checkout's `common/VERSION.json`.
 - `reference_solution` designates the time-cost baseline: `""` names the
   canonical `solution.<ext>` files, a variant slug names
   `solution_<variant>.<ext>`. It is always the optimal approach — the
@@ -59,7 +60,8 @@ Solutions are authored on top of the generated starters.
   judge runs exactly this one reference alongside the submission when
   scoring the time-cost percentage.
 - `difficulty` is one of `H1`–`H5`; `tags` is a non-empty array of strings.
-- `invocation.type` is `function` or `sql`.
+- `invocation.type` is `function`, `sql`, `design`, `interactive`, or
+  `concurrent`.
 
 ### Function invocation
 
@@ -87,7 +89,15 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 - `kind` is one of `integer` (`bits` 32 or 64), `number` (finite float),
   `boolean`, `string` (UTF-8), `array` (with `items`), `linked_list`,
-  `binary_tree` (each with integer `items`).
+  `binary_tree`, `nary_tree`, `quad_tree`, `nested` (NestedInteger),
+  `next_tree` (parent/next tree), `circular_list`, `doubly_circular`,
+  `multi_list` (LC 430 child chains), `alias_list` (LC 160 intersection,
+  with a non-negative `alias` naming the parameter it splices into),
+  `graph`, `random_list` (each optionally naming a provided `class`), or
+  `struct` (a provided record class with declared `fields`). The node
+  kinds take integer `items` (32-bit throughout the common types) and may
+  omit the implied spec. The wire formats and per-kind serialization
+  invariants are documented in the openoj repo's `docs/CODECS.md`.
 - `entrypoints` override the entry name per language (Go/Rust/TypeScript
   follow their casing conventions; Python/Java/C++/JavaScript use `method`).
 - `comparison` is `exact` (default), `sorted`, `multiset`, or `set`. Anything
@@ -106,6 +116,26 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 The table DDL lives in `invocation.sql.schema`; each case's `dataset` value
 seeds the tables with `INSERT` statements.
+
+### Design and interactive invocations
+
+Design problems declare `class_name`, `constructor.parameters`, and
+`methods`; each case's `input` is an `{"actions": [...], "params": [...]}`
+sequence. Interactive problems declare `parameters`, `provided.oracle`
+(`class`, `construct`, `auxiliary`), and `query_limit`; an out-buffer
+parameter carries `out_buffer.capacity_from`. Both run in every language
+the bundle offers. Full wire contracts, the per-language oracle
+construction table, and the statistical/validator judging modes live in
+the openoj repo's `docs/CODECS.md`.
+
+Classes a problem needs beyond the shared `common/` vocabulary — a
+named graph/list node, a struct record, a design class's helper types, an
+interactive oracle — ship as sources under the bundle's
+`provided/<language>/`. They are problem-set content (see the openoj
+repo's `docs/TRUST-BOUNDARIES.md`), assembled into every submission by
+the judge, and they follow each language's assembly rules (Rust sources
+use fully-qualified paths and no `use` lines; positional construction
+matches declared field/parameter order in every language).
 
 ## cases.json
 

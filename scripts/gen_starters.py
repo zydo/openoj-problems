@@ -5,14 +5,17 @@ Starters are derived code: never edit them by hand — change problem.json and
 re-run this script. The file extension selects the language (py, javascript,
 typescript, java, cpp, go, rust, sql) and the set of generated starters
 defines the languages the problem offers. Function problems generate all seven
-languages; sql a single starter.sql; design (class), interactive (oracle) and
-concurrent (threaded schedule) problems python3 + java only — the typed
-wrappers do not implement the actions/params, oracle or schedule protocols.
+languages; sql a single starter.sql; design (class) and interactive
+(oracle) problems also generate all seven languages, concurrent (threaded
+schedule) problems python3 + java — the judge's typed wrappers implement
+the actions/params and oracle protocols in every language, the schedule
+protocol in two.
 
 Usage:
   gen_starters.py problems/0001-0100/0001_two-sum [ … ]  # default: all
   gen_starters.py --check problems/…                     # diff, write nothing
 """
+
 from __future__ import annotations
 
 import json
@@ -48,11 +51,17 @@ def _uses_structs(invocation: dict) -> set[str]:
     def walk(spec) -> None:
         if not isinstance(spec, dict):
             return
-        if spec.get("kind") == "linked_list":
+        kind = spec.get("kind")
+        if kind == "linked_list":
             found.add("list")
-        if spec.get("kind") == "binary_tree":
+        elif kind == "binary_tree":
             found.add("tree")
+        elif kind in STRUCT_KINDS:
+            found.add(kind)
         walk(spec.get("items"))
+        for field in spec.get("fields") or []:
+            if isinstance(field, dict):
+                walk(field.get("value_type"))
 
     for parameter in invocation.get("parameters", []):
         walk(parameter.get("value_type"))
@@ -60,17 +69,23 @@ def _uses_structs(invocation: dict) -> set[str]:
     return found
 
 
-def _struct_item_type(invocation: dict) -> str:
+def _struct_classes(invocation: dict) -> list[str]:
+    names: list[str] = []
+
+    def walk(spec) -> None:
+        if not isinstance(spec, dict):
+            return
+        if spec.get("kind") == "struct" and spec.get("class") not in names:
+            names.append(spec["class"])
+        walk(spec.get("items"))
+        for field in spec.get("fields") or []:
+            if isinstance(field, dict):
+                walk(field.get("value_type"))
+
     for parameter in invocation.get("parameters", []):
-        spec = parameter.get("value_type")
-        if isinstance(spec, dict) and spec.get("kind") in ("linked_list", "binary_tree"):
-            if spec.get("items", {}).get("bits") == 64:
-                return "i64"
-    spec = invocation.get("return_type")
-    if isinstance(spec, dict) and spec.get("kind") in ("linked_list", "binary_tree"):
-        if spec.get("items", {}).get("bits") == 64:
-            return "i64"
-    return "i32"
+        walk(parameter.get("value_type"))
+    walk(invocation.get("return_type"))
+    return names
 
 
 def _entry(invocation: dict, language: str) -> str:
@@ -111,6 +126,10 @@ def _py_imports(callbacks: bool = False) -> list[str]:
 
 def python_type(spec: dict) -> str:
     kind = _kind(spec)
+    if kind == "struct":
+        return spec["class"]
+    if kind in {"graph", "random_list"}:
+        return _py_optional(_node_class(spec))
     return {
         "integer32": "int",
         "integer64": "int",
@@ -119,11 +138,37 @@ def python_type(spec: dict) -> str:
         "string": "str",
         "linked_list": "ListNode | None" if PYTHON_STYLE == "modern" else "Optional[ListNode]",
         "binary_tree": "TreeNode | None" if PYTHON_STYLE == "modern" else "Optional[TreeNode]",
+        "nary_tree": _py_optional("Node"),
+        "quad_tree": _py_optional("QuadNode"),
+        "nested": "NestedInteger",
+        "next_tree": _py_optional("NodeWithNext"),
+        "circular_list": _py_optional("ListNode"),
+        "doubly_circular": _py_optional("NodeWithNext"),
+        "multi_list": _py_optional("MultiListNode"),
+        "alias_list": _py_optional("ListNode"),
+        "graph": _py_optional("Node"),
+        "random_list": _py_optional("Node"),
     }.get(kind) or ("list[" if PYTHON_STYLE == "modern" else "List[") + f"{python_type(spec['items'])}]"
+
+
+def _py_optional(name: str) -> str:
+    return f"{name} | None" if PYTHON_STYLE == "modern" else f"Optional[{name}]"
+
+
+def _node_class(spec: dict) -> str:
+    """Graph and random-list nodes are the using problem's provided/ class
+    (value_type.class, mirroring the runner's typed.py renderers); legacy
+    manifests fall back to the generic Node."""
+    name = spec.get("class")
+    return name if isinstance(name, str) and name else "Node"
 
 
 def javascript_type(spec: dict) -> str:
     kind = _kind(spec)
+    if kind == "struct":
+        return spec["class"]
+    if kind in {"graph", "random_list"}:
+        return _node_class(spec)
     return {
         "integer32": "number",
         "integer64": "number",
@@ -132,11 +177,25 @@ def javascript_type(spec: dict) -> str:
         "string": "string",
         "linked_list": "ListNode",
         "binary_tree": "TreeNode",
+        "nary_tree": "Node",
+        "quad_tree": "QuadNode",
+        "nested": "NestedInteger",
+        "next_tree": "NodeWithNext",
+        "circular_list": "ListNode",
+        "doubly_circular": "NodeWithNext",
+        "multi_list": "MultiListNode",
+        "alias_list": "ListNode",
+        "graph": "Node",
+        "random_list": "Node",
     }.get(kind) or f"{javascript_type(spec['items'])}[]"
 
 
 def typescript_type(spec: dict) -> str:
     kind = _kind(spec)
+    if kind == "struct":
+        return spec["class"]
+    if kind in {"graph", "random_list"}:
+        return _node_class(spec) + " | null"
     scalar = {
         "integer32": "number",
         "integer64": "number",
@@ -145,6 +204,16 @@ def typescript_type(spec: dict) -> str:
         "string": "string",
         "linked_list": "ListNode | null",
         "binary_tree": "TreeNode | null",
+        "nary_tree": "Node | null",
+        "quad_tree": "QuadNode | null",
+        "nested": "NestedInteger",
+        "next_tree": "NodeWithNext | null",
+        "circular_list": "ListNode | null",
+        "doubly_circular": "NodeWithNext | null",
+        "multi_list": "MultiListNode | null",
+        "alias_list": "ListNode | null",
+        "graph": "Node | null",
+        "random_list": "Node | null",
     }.get(kind)
     if scalar:
         return scalar
@@ -157,13 +226,35 @@ def typescript_type(spec: dict) -> str:
 def _contains_struct(spec: dict) -> bool:
     if not isinstance(spec, dict):
         return False
-    if spec.get("kind") in ("linked_list", "binary_tree"):
-        return True
-    return _contains_struct(spec.get("items"))
+    return spec.get("kind") in STRUCT_KINDS or _contains_struct(spec.get("items"))
+
+
+# Every kind whose values arrive as judge-constructed objects rather than
+# plain JSON scalars. A struct anywhere in an array's item tree switches
+# that Java level to a boxed List (mirrors the harness decoder).
+STRUCT_KINDS = (
+    "linked_list",
+    "binary_tree",
+    "nary_tree",
+    "quad_tree",
+    "nested",
+    "next_tree",
+    "circular_list",
+    "doubly_circular",
+    "multi_list",
+    "alias_list",
+    "graph",
+    "random_list",
+    "struct",
+)
 
 
 def java_type(spec: dict) -> str:
     kind = _kind(spec)
+    if kind == "struct":
+        return spec["class"]
+    if kind in {"graph", "random_list"}:
+        return _node_class(spec)
     scalar = {
         "integer32": "int",
         "integer64": "long",
@@ -172,6 +263,16 @@ def java_type(spec: dict) -> str:
         "string": "String",
         "linked_list": "ListNode",
         "binary_tree": "TreeNode",
+        "nary_tree": "Node",
+        "quad_tree": "QuadNode",
+        "nested": "NestedInteger",
+        "next_tree": "NodeWithNext",
+        "circular_list": "ListNode",
+        "doubly_circular": "NodeWithNext",
+        "multi_list": "MultiListNode",
+        "alias_list": "ListNode",
+        "graph": "Node",
+        "random_list": "Node",
     }.get(kind)
     if scalar:
         return scalar
@@ -184,6 +285,10 @@ def java_type(spec: dict) -> str:
 
 def cpp_type(spec: dict, reference: bool = False) -> str:
     kind = _kind(spec)
+    if kind == "struct":
+        return spec["class"]
+    if kind in {"graph", "random_list"}:
+        return _node_class(spec) + "*"
     base = {
         "integer32": "int",
         "integer64": "long long",
@@ -192,6 +297,16 @@ def cpp_type(spec: dict, reference: bool = False) -> str:
         "string": "string",
         "linked_list": "ListNode*",
         "binary_tree": "TreeNode*",
+        "nary_tree": "Node*",
+        "quad_tree": "QuadNode*",
+        "nested": "NestedInteger",
+        "next_tree": "NodeWithNext*",
+        "circular_list": "ListNode*",
+        "doubly_circular": "NodeWithNext*",
+        "multi_list": "MultiListNode*",
+        "alias_list": "ListNode*",
+        "graph": "Node*",
+        "random_list": "Node*",
     }.get(kind) or f"vector<{cpp_type(spec['items'])}>"
     if reference and kind == "array":
         return base + "&"
@@ -200,6 +315,10 @@ def cpp_type(spec: dict, reference: bool = False) -> str:
 
 def go_type(spec: dict) -> str:
     kind = _kind(spec)
+    if kind == "struct":
+        return spec["class"]
+    if kind in {"graph", "random_list"}:
+        return "*" + _node_class(spec)
     return {
         "integer32": "int",
         "integer64": "int64",
@@ -208,11 +327,29 @@ def go_type(spec: dict) -> str:
         "string": "string",
         "linked_list": "*ListNode",
         "binary_tree": "*TreeNode",
+        "nary_tree": "*Node",
+        "quad_tree": "*QuadNode",
+        "nested": "NestedInteger",
+        "next_tree": "*NodeWithNext",
+        "circular_list": "*ListNode",
+        "doubly_circular": "*NodeWithNext",
+        "multi_list": "*MultiListNode",
+        "alias_list": "*ListNode",
+        "graph": "*Node",
+        "random_list": "*Node",
     }.get(kind) or f"[]{go_type(spec['items'])}"
 
 
 def rust_type(spec: dict) -> str:
     kind = _kind(spec)
+    if kind == "struct":
+        return spec["class"]
+    # Mirrors the runner's typed.py renderers. Kinds whose wire carries
+    # sharing — a next/prev/random pointer two owners reach, or a ring
+    # closed onto its own head — render as Rc<RefCell<>>: Box's single
+    # owner cannot express them. QuadNode trees and NestedInteger stay
+    # fully owned. Short Rc/RefCell names here (the starter gets matching
+    # `use` lines); the judge's wrapper spells them fully qualified.
     return {
         "integer32": "i32",
         "integer64": "i64",
@@ -221,7 +358,37 @@ def rust_type(spec: dict) -> str:
         "string": "String",
         "linked_list": "Option<Box<ListNode>>",
         "binary_tree": "Option<Box<TreeNode>>",
+        "nary_tree": "Option<Box<Node>>",
+        "quad_tree": "Option<Box<QuadNode>>",
+        "nested": "NestedInteger",
+        "next_tree": "Option<Rc<RefCell<NodeWithNext>>>",
+        "circular_list": "Option<Rc<RefCell<SharedListNode>>>",
+        "doubly_circular": "Option<Rc<RefCell<NodeWithNext>>>",
+        "multi_list": "Option<Rc<RefCell<MultiListNode>>>",
+        "alias_list": "Option<Rc<RefCell<SharedListNode>>>",
+        "graph": f"Option<Rc<RefCell<{_node_class(spec)}>>>",
+        "random_list": f"Option<Rc<RefCell<{_node_class(spec)}>>>",
     }.get(kind) or f"Vec<{rust_type(spec['items'])}>"
+
+
+def rust_parameter_type(invocation: dict, spec: dict) -> str:
+    """The starter's Rust type for one parameter: an aliased linked_list
+    renders as the shared-ownership node, since the alias_list splices
+    real nodes between the lists (mirrors the runner's renderer)."""
+    if _kind(spec) != "linked_list":
+        return rust_type(spec)
+    parameters = invocation.get("parameters", [])
+    aliased = set()
+    for parameter in parameters:
+        value_type = parameter.get("value_type") or {}
+        if value_type.get("kind") == "alias_list":
+            aliased.add(value_type.get("alias"))
+    index = next(
+        (i for i, (_, s) in enumerate(_parameters(invocation)) if s is spec or s == spec), None
+    )
+    if index is not None and index in aliased:
+        return "Option<Rc<RefCell<SharedListNode>>>"
+    return rust_type(spec)
 
 
 PY_LIST_NODE = """class ListNode:
@@ -265,6 +432,45 @@ pub struct TreeNode {
 }
 """
 
+# Shared-doc lines for the v2 common types (and the provided/-carried
+# shapes), appended to the classic ListNode/TreeNode block only for
+# problems that use them — classic starters stay byte-identical.
+PY_EXTRA_DOC = {
+    "nary_tree": "#   Node:      .val int, .children list[Node]",
+    "quad_tree": "#   QuadNode:  .val/.isLeaf bool, four quadrant children",
+    "nested": "#   NestedInteger: LC API — isInteger/getInteger/setInteger/add/getList",
+    "next_tree": "#   NodeWithNext:  .val int, .left/.right/.next/.parent NodeWithNext | None",
+    "doubly_circular": "#   NodeWithNext:  .val int, .left (prev) / .right (next) / .parent",
+    "multi_list": "#   MultiListNode: .val int, .prev/.next/.child MultiListNode | None",
+    "graph": "#   Node:      (provided/) .val int, .neighbors list[Node]",
+    "random_list": "#   Node:      (provided/) .val int, .next / .random Node | None",
+}
+
+RUST_EXTRA_DOC = {
+    "nary_tree": "//   Node:      { field val: i32, children: Vec<Option<Box<Node>>> }",
+    "quad_tree": "//   QuadNode:  { val/isLeaf: bool, four quadrant children }",
+    "nested": "//   NestedInteger: LC-style API — is_integer/get_integer/set_integer/add/get_list",
+    "next_tree": "//   NodeWithNext:  { field val: i32, left/right/next/parent }",
+    "doubly_circular": "//   NodeWithNext:  { field val: i32, left (prev) / right (next) / parent }",
+    "multi_list": "//   MultiListNode: { field val: i32, prev/next/child }",
+    "circular_list": "//   SharedListNode: { field val: i32, next: Option<Rc<RefCell<...>>> }",
+    "alias_list": "//   SharedListNode: { field val: i32, next: Option<Rc<RefCell<...>>> }",
+    "graph": "//   Node:      (provided/) { field val: i32, neighbors }",
+    "random_list": "//   Node:      (provided/) { field val: i32, next/random }",
+}
+
+
+def _shared_doc(invocation: dict, base: str, extra: dict[str, str], prefix: str) -> str:
+    """The judge-provided-types comment: the classic block plus one line per
+    v2 type (or provided/ struct) the invocation actually uses."""
+    structs = _uses_structs(invocation)
+    lines = [base.rstrip("\n")]
+    lines.extend(line for kind, line in extra.items() if kind in structs)
+    lines.extend(
+        f"{prefix}   {name}: (provided/) fields per the problem statement" for name in _struct_classes(invocation)
+    )
+    return "\n".join(lines) + "\n"
+
 
 def _parameters(invocation: dict) -> list[tuple[str, dict]]:
     return [(parameter["name"], parameter["value_type"]) for parameter in invocation.get("parameters", [])]
@@ -287,10 +493,8 @@ def generate(invocation: dict, language: str) -> str:
     if language == "python3":
         blocks = _py_imports()
         if structs:
-            blocks.append(PY_SHARED_DOC + "\n\n")
-        signature = ", ".join(
-            [f"self", *(f"{parameter}: {python_type(spec)}" for parameter, spec in parameters)]
-        )
+            blocks.append(_shared_doc(invocation, PY_SHARED_DOC, PY_EXTRA_DOC, "#") + "\n\n")
+        signature = ", ".join([f"self", *(f"{parameter}: {python_type(spec)}" for parameter, spec in parameters)])
         blocks.append(f"class Solution:\n    def {name}({signature}) -> {python_type(return_type)}:\n")
         blocks.append('        raise NotImplementedError("TODO")\n')
         return "".join(blocks)
@@ -308,11 +512,7 @@ def generate(invocation: dict, language: str) -> str:
 
     if language == "typescript":
         signature = ", ".join(f"{parameter}: {typescript_type(spec)}" for parameter, spec in parameters)
-        return (
-            f"function {name}({signature}): {typescript_type(return_type)} {{\n"
-            '    throw new Error("TODO");\n'
-            "}\n"
-        )
+        return f'function {name}({signature}): {typescript_type(return_type)} {{\n    throw new Error("TODO");\n}}\n'
 
     if language == "java":
         chunks = []
@@ -339,14 +539,20 @@ def generate(invocation: dict, language: str) -> str:
 
     if language == "go":
         signature = ", ".join(f"{parameter} {go_type(spec)}" for parameter, spec in parameters)
-        return f"func {name}({signature}) {go_type(return_type)} {{\n    panic(\"TODO\")\n}}\n"
+        return f'func {name}({signature}) {go_type(return_type)} {{\n    panic("TODO")\n}}\n'
 
     if language == "rust":
         chunks = []
-        item = _struct_item_type(invocation)
         if structs:
-            chunks.append(RUST_SHARED_DOC + "\n")
-        signature = ", ".join(f"{parameter}: {rust_type(spec)}" for parameter, spec in parameters)
+            chunks.append(_shared_doc(invocation, RUST_SHARED_DOC, RUST_EXTRA_DOC, "//") + "\n")
+        signature = ", ".join(
+            f"{parameter}: {rust_parameter_type(invocation, spec)}" for parameter, spec in parameters
+        )
+        rendered = signature + " -> " + rust_type(return_type)
+        if "Rc<" in rendered or "RefCell<" in rendered:
+            # Shared-ownership shapes; the judge's assembled common.rs
+            # carries no imports, so the starter brings its own.
+            chunks.append("use std::rc::Rc;\nuse std::cell::RefCell;\n\n")
         chunks.append("impl Solution {\n")
         chunks.append(f"    pub fn {name}({signature}) -> {rust_type(return_type)} {{\n")
         chunks.append('        panic!("TODO")\n')
@@ -383,9 +589,7 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            signature = ", ".join(
-                ["self", *(f"{n}: {python_type(s)}" for n, s in zip(names, specs))]
-            )
+            signature = ", ".join(["self", *(f"{n}: {python_type(s)}" for n, s in zip(names, specs))])
             ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {python_type(returns)}"
             blocks.append(f"\n    def {name}({signature}){ret}:\n")
             blocks.append('        raise NotImplementedError("TODO")\n')
@@ -410,9 +614,7 @@ def _generate_design(invocation: dict, language: str) -> str:
 
     if language == "cpp":
         lines = [f"class {class_name} {{\n  public:\n"]
-        ctor_args = ", ".join(
-            f"{cpp_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs)
-        )
+        ctor_args = ", ".join(f"{cpp_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs))
         lines.append(f"    {class_name}({ctor_args});\n")
         for method in methods:
             name = method["name"]
@@ -428,10 +630,8 @@ def _generate_design(invocation: dict, language: str) -> str:
 
     if language == "go":
         out = ["package main\n\n", f"type {class_name} struct{{}}\n\n"]
-        ctor_args = ", ".join(
-            f"{name} {go_type(spec)}" for name, spec in zip(constructor_names, constructor_specs)
-        )
-        out.append(f"func New{class_name}Typed({ctor_args}) *{class_name} {{\n\tpanic(\"TODO\")\n}}\n")
+        ctor_args = ", ".join(f"{name} {go_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))
+        out.append(f'func New{class_name}Typed({ctor_args}) *{class_name} {{\n\tpanic("TODO")\n}}\n')
         for method in methods:
             name = method["name"]
             go_name = entrypoints.get(f"go.{name}", name)
@@ -440,15 +640,13 @@ def _generate_design(invocation: dict, language: str) -> str:
             returns = method.get("return_type")
             args = ", ".join(f"{n} {go_type(s)}" for n, s in zip(names, specs))
             ret = "" if (returns is None or returns.get("kind") == "void") else f" {go_type(returns)}"
-            out.append(f"\nfunc (design *{class_name}) {go_name}({args}){ret} {{\n\tpanic(\"TODO\")\n}}\n")
+            out.append(f'\nfunc (design *{class_name}) {go_name}({args}){ret} {{\n\tpanic("TODO")\n}}\n')
         return "".join(out)
 
     if language == "rust":
         out = [f"pub struct {class_name};\n\nimpl {class_name} {{\n"]
-        ctor_args = ", ".join(
-            f"{name}: {rust_type(spec)}" for name, spec in zip(constructor_names, constructor_specs)
-        )
-        out.append(f"    pub fn new({ctor_args}) -> Self {{\n        panic!(\"TODO\")\n    }}\n")
+        ctor_args = ", ".join(f"{name}: {rust_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))
+        out.append(f'    pub fn new({ctor_args}) -> Self {{\n        panic!("TODO")\n    }}\n')
         for method in methods:
             name = method["name"]
             rust_name = entrypoints.get(f"rust.{name}", name)
@@ -458,7 +656,9 @@ def _generate_design(invocation: dict, language: str) -> str:
             args = ", ".join(f"{n}: {rust_type(s)}" for n, s in zip(names, specs))
             ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {rust_type(returns)}"
             body = "()" if (returns is None or returns.get("kind") == "void") else "0"
-            out.append(f"\n    pub fn {rust_name}(&mut self{', ' + args if args else ''}){ret} {{\n        panic!(\"TODO\")\n    }}\n")
+            out.append(
+                f'\n    pub fn {rust_name}(&mut self{", " + args if args else ""}){ret} {{\n        panic!("TODO")\n    }}\n'
+            )
         out.append("}\n")
         return "".join(out)
 
@@ -471,7 +671,7 @@ def _generate_design(invocation: dict, language: str) -> str:
         lines = [f"class {class_name} {{\n"]
         lines.append(f"    constructor({ctor_args}) {{\n")
         if not typed:
-            lines.append("        throw new Error(\"TODO\");\n")
+            lines.append('        throw new Error("TODO");\n')
         lines.append("    }\n")
         for method in methods:
             name = method["name"]
@@ -479,15 +679,21 @@ def _generate_design(invocation: dict, language: str) -> str:
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
             args = ", ".join((f"{n}: {typescript_type(s)}" if typed else n) for n, s in zip(names, specs))
-            ret = ("" if (returns is None or returns.get("kind") == "void") else f": {typescript_type(returns)}") if typed else ""
+            ret = (
+                ("" if (returns is None or returns.get("kind") == "void") else f": {typescript_type(returns)}")
+                if typed
+                else ""
+            )
             lines.append(f"\n    {name}({args}){ret} {{\n")
             if not typed:
-                lines.append("        throw new Error(\"TODO\");\n")
+                lines.append('        throw new Error("TODO");\n')
             lines.append("    }\n")
         lines.append("}\n")
         return "".join(lines)
 
     raise ValueError(f"Unsupported language for design starters: {language}")
+
+
 def _generate_concurrent(invocation: dict, language: str) -> str:
     """Concurrency problems: python3 + java only, same class shape as design.
     A parameter of kind "callback" is LeetCode's release callback — the judge
@@ -506,9 +712,7 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
     class_name = invocation["class_name"]
     constructor = invocation.get("constructor", {}).get("parameters", [])
     methods = invocation.get("methods", [])
-    parameters = constructor + [
-        parameter for method in methods for parameter in method.get("parameters", [])
-    ]
+    parameters = constructor + [parameter for method in methods for parameter in method.get("parameters", [])]
     callbacks = any(_kind(parameter["value_type"]) == "callback" for parameter in parameters)
 
     if language == "python3":
@@ -550,11 +754,7 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
 
     def java_signature(specs: list[dict]) -> str:
         return ", ".join(
-            (
-                "Runnable"
-                if _kind(parameter["value_type"]) == "callback"
-                else java_type(parameter["value_type"])
-            )
+            ("Runnable" if _kind(parameter["value_type"]) == "callback" else java_type(parameter["value_type"]))
             + f" {parameter['name']}"
             for parameter in specs
         )
@@ -637,10 +837,7 @@ def _generate_interactive(invocation: dict, language: str) -> str:
     class_name = invocation["class_name"]
     entrypoints = invocation.get("entrypoints") or {}
     method = entrypoints.get(language, invocation["method"])
-    auxiliary = [
-        (parameter_["name"], parameter_["value_type"])
-        for parameter_ in invocation.get("parameters", [])
-    ]
+    auxiliary = [(parameter_["name"], parameter_["value_type"]) for parameter_ in invocation.get("parameters", [])]
     returns = invocation.get("return_type") or {"kind": "integer", "bits": 32}
     is_void = returns.get("kind") == "void"
 
@@ -655,8 +852,15 @@ def _generate_interactive(invocation: dict, language: str) -> str:
         return "".join(blocks)
 
     if language == "java":
+        # An out_buffer parameter is the judge-allocated char[] wire: the
+        # java harness hard-codes the buffer element (the read4 wire), so
+        # the starter's signature names char[] rather than value_type.
         signature = ", ".join(
-            [f"{oracle} {parameter}", *(f"{java_type(spec)} {name}" for name, spec in auxiliary)]
+            [f"{oracle} {parameter}"]
+            + [
+                f"{'char[]' if parameter_.get('out_buffer') is not None else java_type(parameter_['value_type'])} {parameter_['name']}"
+                for parameter_ in invocation.get("parameters", [])
+            ]
         )
         chunks = [f"class {class_name} {{\n"]
         chunks.append(f"    public {'void' if is_void else java_type(returns)} {method}({signature}) {{\n")
@@ -665,8 +869,19 @@ def _generate_interactive(invocation: dict, language: str) -> str:
         return "".join(chunks)
 
     if language == "cpp":
+        # An out_buffer parameter must be a reference: the wrapper captures
+        # the buffer the submission writes into.
+        def cpp_auxiliary(name: str, spec: dict) -> str:
+            reference = "&" if invocation_out_buffers.get(name) else ""
+            return f"{cpp_type(spec, reference=bool(reference))} {name}"
+
+        invocation_out_buffers = {
+            parameter_["name"]: parameter_.get("out_buffer") is not None
+            for parameter_ in invocation.get("parameters", [])
+            if isinstance(parameter_, dict)
+        }
         signature = ", ".join(
-            [f"{oracle}& {parameter}", *(f"{cpp_type(spec)} {name}" for name, spec in auxiliary)]
+            [f"{oracle}& {parameter}", *(cpp_auxiliary(name, spec) for name, spec in auxiliary)]
         )
         blocks = [f"class {oracle};\n\n"]
         blocks.append(f"class {class_name} {{\npublic:\n")
@@ -676,9 +891,7 @@ def _generate_interactive(invocation: dict, language: str) -> str:
 
     if language == "go":
         go_method = entrypoints.get("go", method)
-        signature = ", ".join(
-            [f"{parameter} *{oracle}", *(f"{name} {go_type(spec)}" for name, spec in auxiliary)]
-        )
+        signature = ", ".join([f"{parameter} *{oracle}", *(f"{name} {go_type(spec)}" for name, spec in auxiliary)])
         return (
             "package main\n\n"
             f"type {class_name} struct{{}}\n\n"
@@ -689,8 +902,18 @@ def _generate_interactive(invocation: dict, language: str) -> str:
 
     if language == "rust":
         rust_method = entrypoints.get("rust", method)
+        # An out_buffer parameter is handed over as &mut: the wrapper
+        # captures the buffer the submission writes into.
+        rust_out_buffers = {
+            parameter_["name"]
+            for parameter_ in invocation.get("parameters", [])
+            if isinstance(parameter_, dict) and parameter_.get("out_buffer") is not None
+        }
         signature = ", ".join(
-            [f"{parameter}: &mut {oracle}", *(f"{name}: {rust_type(spec)}" for name, spec in auxiliary)]
+            [f"{parameter}: &mut {oracle}", *(
+                f"{name}: {'&mut ' if name in rust_out_buffers else ''}{rust_type(spec)}"
+                for name, spec in auxiliary
+            )]
         )
         return (
             f"impl {class_name} {{\n"
@@ -701,9 +924,7 @@ def _generate_interactive(invocation: dict, language: str) -> str:
         )
 
     if language in ("javascript", "typescript"):
-        signature = ", ".join(
-            [parameter, *(name for name, _ in auxiliary)]
-        )
+        signature = ", ".join([parameter, *(name for name, _ in auxiliary)])
         typed = ""
         if language == "typescript":
             signature = ", ".join(
@@ -719,6 +940,8 @@ def _generate_interactive(invocation: dict, language: str) -> str:
         )
 
     raise ValueError(f"Unsupported language for interactive starters: {language}")
+
+
 def starter_files(invocation: dict) -> dict[str, str]:
     invocation_type = invocation.get("type", "function")
     if invocation_type == "sql":
@@ -735,8 +958,7 @@ def starter_files(invocation: dict) -> dict[str, str]:
 def main() -> None:
     arguments = sys.argv[1:]
     check_only = "--check" in arguments
-    style = next((argument.split("=", 1)[1] for argument in arguments
-                  if argument.startswith("--style=")), None)
+    style = next((argument.split("=", 1)[1] for argument in arguments if argument.startswith("--style=")), None)
     targets = [Path(argument) for argument in arguments if not argument.startswith("--")]
     root = Path(__file__).resolve().parent.parent
     if not targets:

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "common_version": 2,
+  "reference_solution": "",
+  "id": 133,
+  "slug": "clone-graph",
+  "title": "Clone Graph",
+  "difficulty": "",
+  "tags": [
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cloneGraph",
+    "parameters": [
+      {
+        "name": "node",
+        "codec": "graph",
+        "value_type": {
+          "kind": "graph",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          },
+          "class": "GraphNode"
+        }
+      }
+    ],
+    "return_codec": "graph",
+    "return_type": {
+      "kind": "graph",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      },
+      "class": "GraphNode"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
