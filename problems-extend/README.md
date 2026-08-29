@@ -3,11 +3,11 @@
 The remainder of the lc-crawl corpus beyond bettercode's curated good-value
 set: 3,180 problems (of 4,018 crawled; the 838 good-value originals live in
 `problems-bettercode` and are adapted into `problems-adapt`). Shards
-0001-0100 through 4001-4100. The set is complete: 3,177 bundles on disk,
-and the only unfinished work is the 16 entries of
+0001-0100 through 4001-4100. The set is complete: 3,178 bundles on disk,
+and the only unfinished work is the 15 entries of
 `ROSTER-unfinished.json` — 195 (blocked: the answer is a shell one-liner
-and the judge has no shell language), 3011 (authorable, never assigned),
-and 14 premium-tier problems never curated into bettercode.
+and the judge has no shell language) and 14 premium-tier problems never
+curated into bettercode.
 
 `ROSTER-unfinished.json` is the sole roster record. It supersedes the
 deleted `ROSTER.json` and the six-fleet wave trackers (all 1,260 tracked

@@ -1,5 +1,5 @@
 {
-  "note": "The only unfinished problems-extend work. Consolidated 2026-08-28 from ROSTER.json, ROSTER-remaining-{A..F}.json and ROSTER-BLOCKED.json (all deleted; the six fleets finished 1260/1260 and wave-U landed the 42 unblocked). Coverage: 4002/4018 crawl ids authored (838 bettercode/adapt + 3177 extend, 13 in both). Supersedes those files.",
+  "note": "The only unfinished problems-extend work. Consolidated 2026-08-28 from ROSTER.json, ROSTER-remaining-{A..F}.json and ROSTER-BLOCKED.json (all deleted; the six fleets finished 1260/1260 and wave-U landed the 42 unblocked). Coverage: 4003/4018 crawl ids authored (838 bettercode/adapt + 3178 extend, 13 in both). Supersedes those files.",
   "entries": [
     {
       "id": 195,
@@ -78,12 +78,6 @@
       "slug": "height-of-special-binary-tree",
       "status": "pending",
       "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
-    },
-    {
-      "id": 3011,
-      "slug": "find-if-array-can-be-sorted",
-      "status": "pending",
-      "reason": "authorable: crawl text clean (Premium No), never curated into bettercode nor assigned to a fleet"
     },
     {
       "id": 3263,
