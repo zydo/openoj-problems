@@ -1,5 +1,6 @@
 function largest1BorderedSquare(grid: number[][]): number {
-    const rows = grid.length, cols = grid[0].length;
+    const rows = grid.length,
+        cols = grid[0].length;
     // prefix[i][j] = sum of the grid rectangle [0..i) x [0..j)
     const prefix: number[][] = Array.from({ length: rows + 1 }, () => new Array(cols + 1).fill(0));
     for (let i = 0; i < rows; ++i) {
@@ -14,7 +15,8 @@ function largest1BorderedSquare(grid: number[][]): number {
         for (let c1 = 0; c1 < cols; ++c1) {
             const limit = Math.min(rows - r1, cols - c1);
             for (let side = 1; side <= limit; ++side) {
-                const r2 = r1 + side - 1, c2 = c1 + side - 1;
+                const r2 = r1 + side - 1,
+                    c2 = c1 + side - 1;
                 // Each edge is solid iff its cell sum equals its length.
                 if (
                     rect(r1, c1, r1, c2) === side &&

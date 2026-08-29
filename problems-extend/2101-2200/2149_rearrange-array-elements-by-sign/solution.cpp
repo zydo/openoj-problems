@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> rearrangeArray(vector<int>& nums) {
+  public:
+    vector<int> rearrangeArray(vector<int> &nums) {
         // Each sign keeps its original relative order, so the k-th
         // positive belongs at slot 2k and the k-th negative at 2k + 1 —
         // one scatter pass places every element directly.

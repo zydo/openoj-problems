@@ -3,7 +3,7 @@
 ## Count per value, keep values seen in every array
 
 The statement guarantees that every `nums[i]` holds distinct positive
-integers, so a value appears in *exactly* `nums.length` arrays if and only if
+integers, so a value appears in _exactly_ `nums.length` arrays if and only if
 it is present in every array. Counting how many arrays contain each value
 therefore reduces the intersection to a single predicate: keep the values
 whose count equals the total number of arrays, then sort them ascending for

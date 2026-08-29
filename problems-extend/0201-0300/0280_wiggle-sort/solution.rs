@@ -5,7 +5,11 @@ impl Solution {
         let mut nums = nums;
         for i in 1..nums.len() {
             // Odd i demands nums[i-1] <= nums[i]; even i demands nums[i-1] >= nums[i].
-            let violation = if i % 2 == 1 { nums[i - 1] > nums[i] } else { nums[i - 1] < nums[i] };
+            let violation = if i % 2 == 1 {
+                nums[i - 1] > nums[i]
+            } else {
+                nums[i - 1] < nums[i]
+            };
             if violation {
                 nums.swap(i - 1, i);
             }

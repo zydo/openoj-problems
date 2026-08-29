@@ -11,7 +11,9 @@ class Solution {
         int limit = n - numFriends + 1;
         // Duel for the start of the largest suffix: i is the champion, j the
         // challenger, k the offset at which they currently tie.
-        int i = 0, j = 1, k = 0;
+        int i = 0,
+            j = 1,
+            k = 0;
         while (j + k < n) {
             if (word.charAt(i + k) == word.charAt(j + k)) {
                 k++;

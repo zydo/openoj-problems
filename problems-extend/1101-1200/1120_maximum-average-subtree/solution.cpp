@@ -5,14 +5,17 @@ class Solution {
         // the reversed list settles both subtrees before the node above them.
         vector<TreeNode *> order;
         vector<TreeNode *> stack;
-        if (root != nullptr) stack.push_back(root);
+        if (root != nullptr)
+            stack.push_back(root);
         while (!stack.empty()) {
             TreeNode *node = stack.back();
             stack.pop_back();
             order.push_back(node);
             // Push right first so left is visited first in the listing.
-            if (node->right != nullptr) stack.push_back(node->right);
-            if (node->left != nullptr) stack.push_back(node->left);
+            if (node->right != nullptr)
+                stack.push_back(node->right);
+            if (node->left != nullptr)
+                stack.push_back(node->left);
         }
         // 64-bit sums: 1e4 nodes of value 1e5 reach 1e9, past int range.
         unordered_map<TreeNode *, pair<long long, long long>> aggregate;

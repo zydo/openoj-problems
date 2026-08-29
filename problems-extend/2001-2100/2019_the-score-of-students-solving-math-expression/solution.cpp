@@ -7,20 +7,23 @@ class Solution {
         vector<char> operators(size - 1);
         for (int index = 0; index < size; ++index) {
             numbers[index] = s[index * 2] - '0';
-            if (index + 1 < size) operators[index] = s[index * 2 + 1];
+            if (index + 1 < size)
+                operators[index] = s[index * 2 + 1];
         }
 
         vector<vector<unordered_set<int>>> dp(size, vector<unordered_set<int>>(size));
-        for (int index = 0; index < size; ++index) dp[index][index].insert(numbers[index]);
+        for (int index = 0; index < size; ++index)
+            dp[index][index].insert(numbers[index]);
         for (int length = 2; length <= size; ++length) {
             for (int left = 0; left + length <= size; ++left) {
                 int right = left + length - 1;
                 for (int split = left; split < right; ++split) {
                     for (int first : dp[left][split]) {
                         for (int second : dp[split + 1][right]) {
-                            long long value = operators[split] == '+' ? (long long)first + second
-                                                                      : (long long)first * second;
-                            if (value <= 1000) dp[left][right].insert((int)value);
+                            long long value =
+                                operators[split] == '+' ? (long long)first + second : (long long)first * second;
+                            if (value <= 1000)
+                                dp[left][right].insert((int)value);
                         }
                     }
                 }

@@ -61,7 +61,5 @@ class Solution {
   private:
     // Saturating product: a result above the cap is indistinguishable from
     // the cap itself, so the guard avoids overflowing long long first.
-    static long long mulCap(long long a, long long b, long long cap) {
-        return a > cap / b ? cap : a * b;
-    }
+    static long long mulCap(long long a, long long b, long long cap) { return a > cap / b ? cap : a * b; }
 };

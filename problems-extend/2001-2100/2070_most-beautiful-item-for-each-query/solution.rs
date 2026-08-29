@@ -21,7 +21,11 @@ impl Solution {
                         high = middle;
                     }
                 }
-                if low == 0 { 0 } else { prefix_beauty[low - 1] }
+                if low == 0 {
+                    0
+                } else {
+                    prefix_beauty[low - 1]
+                }
             })
             .collect()
     }

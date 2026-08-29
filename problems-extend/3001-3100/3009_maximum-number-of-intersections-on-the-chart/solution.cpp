@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxIntersectionCount(vector<int>& y) {
+    int maxIntersectionCount(vector<int> &y) {
         // The count only changes when the line passes a vertex height, so
         // testing each compressed height v just above (v + 0.5) and exactly
         // at v suffices. Every segment stamps its half-level range

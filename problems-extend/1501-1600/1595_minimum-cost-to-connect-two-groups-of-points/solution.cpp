@@ -22,7 +22,8 @@ class Solution {
         for (int mask = 0; mask < full; ++mask) {
             int total = 0;
             for (int j = 0; j < size2; ++j)
-                if (!((mask >> j) & 1)) total += minToReach[j];
+                if (!((mask >> j) & 1))
+                    total += minToReach[j];
             dp[mask] = total;
         }
 
@@ -31,7 +32,8 @@ class Solution {
             for (int mask = 0; mask < full; ++mask) {
                 for (int j = 0; j < size2; ++j) {
                     int candidate = cost[i][j] + dp[mask | (1 << j)];
-                    if (candidate < next[mask]) next[mask] = candidate;
+                    if (candidate < next[mask])
+                        next[mask] = candidate;
                 }
             }
             dp = move(next);

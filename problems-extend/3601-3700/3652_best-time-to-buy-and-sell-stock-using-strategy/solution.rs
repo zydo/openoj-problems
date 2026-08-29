@@ -12,8 +12,7 @@ impl Solution {
         for i in 0..n {
             base += strategy[i] as i64 * prices[i] as i64;
             price_prefix[i + 1] = price_prefix[i] + prices[i] as i64;
-            weighted_prefix[i + 1] =
-                weighted_prefix[i] + strategy[i] as i64 * prices[i] as i64;
+            weighted_prefix[i + 1] = weighted_prefix[i] + strategy[i] as i64 * prices[i] as i64;
         }
         // At most one modification, so the untouched plan is always a candidate.
         let mut best = base;

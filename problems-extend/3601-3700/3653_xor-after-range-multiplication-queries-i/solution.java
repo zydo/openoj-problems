@@ -12,12 +12,14 @@ class Solution {
             values[i] = nums[i];
         }
         for (int[] query : queries) {
-            int l = query[0], r = query[1], k = query[2];
+            int l = query[0],
+                r = query[1],
+                k = query[2];
             for (int idx = l; idx <= r; idx += k) {
                 // The product reaches ~10^14 before the first fold, so
                 // the arithmetic stays in long even though results fit
                 // int.
-                values[idx] = values[idx] * query[3] % MOD;
+                values[idx] = (values[idx] * query[3]) % MOD;
             }
         }
         // Every element ends below 2^30, so the XOR fits in an int.

@@ -30,11 +30,11 @@ class RideSharingSystem {
             riders.pollFirst();
         }
         if (riders.isEmpty() || drivers.isEmpty()) {
-            return new int[] {-1, -1};
+            return new int[] { -1, -1 };
         }
         int riderId = riders.pollFirst();
         waiting.remove(riderId);
-        return new int[] {drivers.pollFirst(), riderId};
+        return new int[] { drivers.pollFirst(), riderId };
     }
 
     public void cancelRider(int riderId) {

@@ -1,8 +1,4 @@
-function filterOccupiedIntervals(
-    occupiedIntervals: number[][],
-    freeStart: number,
-    freeEnd: number,
-): number[][] {
+function filterOccupiedIntervals(occupiedIntervals: number[][], freeStart: number, freeEnd: number): number[][] {
     const sorted = [...occupiedIntervals].sort((a, b) => a[0] - b[0]);
     const merged: number[][] = [];
     for (const [start, end] of sorted) {

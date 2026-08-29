@@ -13,11 +13,7 @@ impl Solution {
     }
 
     fn distinct_sorted(source: &[i32], other: &HashSet<i32>) -> Vec<i32> {
-        let mut kept: Vec<i32> = source
-            .iter()
-            .copied()
-            .filter(|value| !other.contains(value))
-            .collect();
+        let mut kept: Vec<i32> = source.iter().copied().filter(|value| !other.contains(value)).collect();
         kept.sort_unstable();
         kept.dedup();
         kept

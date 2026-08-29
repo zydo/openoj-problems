@@ -15,10 +15,10 @@ The finish time of each task is calculated as follows:
 
 - Leaf task: The finish time is `baseTime[i]`.
 - Non-leaf task:
-  - Let `earliest` be the minimum finish time among its children, and
-    `latest` be the maximum finish time among its children.
-  - Let `ownDuration` be `(latest - earliest) + baseTime[i]`.
-  - The finish time of task `i` is `latest + ownDuration`.
+    - Let `earliest` be the minimum finish time among its children, and
+      `latest` be the maximum finish time among its children.
+    - Let `ownDuration` be `(latest - earliest) + baseTime[i]`.
+    - The finish time of task `i` is `latest + ownDuration`.
 
 Return the finish time of the root task `0`.
 

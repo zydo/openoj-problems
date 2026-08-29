@@ -30,4 +30,3 @@ range but comfortably inside 64 bits. The problem is never impossible: a
 single append always closes the length gap.
 
 **Complexity:** `O(n)` time, `O(1)` space.
-

@@ -47,7 +47,7 @@ impl Solution {
             let cntv = total[&v];
             let l = *left.get(&v).unwrap_or(&0);
             let r = cntv - l - 1; // the middle occurrence is on neither side
-            let nl = i as i64 - l;          // non-v elements left of i
+            let nl = i as i64 - l; // non-v elements left of i
             let nr = (n as i64 - 1 - i as i64) - r; // non-v elements right of i
 
             // Per-value sums over w != v, rebuilt from the aggregates. For
@@ -74,8 +74,8 @@ impl Solution {
             let mut val = cm(c2l, c2r); // f = 5
             val += (cm(l, c2r) * nl + cm(c2l, r) * nr) % MOD; // f = 4
             val += cm(c2r, c2(nl)) + cm(cm(l, r), nl * nr) + cm(c2l, c2(nr)); // f = 3
-            // f = 2: one more v on the left (or right), the three non-v
-            // fills pairwise distinct.
+                                                                              // f = 2: one more v on the left (or right), the three non-v
+                                                                              // fills pairwise distinct.
             let g10 = norm(nl * c2(nr) - nl * sum_c2rw - d10);
             val += l * g10 % MOD;
             let g01 = norm(c2(nl) * nr - nr * sum_c2lw - d01);

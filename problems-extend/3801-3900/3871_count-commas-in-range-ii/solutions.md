@@ -10,10 +10,12 @@ with each group spanning `[10^(3k), 10^(3k+3) - 1)`.
 
 Start at 1000, the first number with a comma, and step through the groups one
 at a time. For the group beginning at `lo`, every number up to `hi = lo * 1000
-- 1` carries the same comma count, so the group contributes `commas * (hi - lo
-+ 1)` when the whole group fits below n, or `commas * (n - lo + 1)` when n
-cuts the group short. Clamping `hi` to n before subtracting handles both cases
-in one expression, and the next group starts at `hi + 1`.
+
+- 1`carries the same comma count, so the group contributes`commas * (hi - lo
+
+* 1)`when the whole group fits below n, or`commas * (n - lo + 1)`when n
+cuts the group short. Clamping`hi`to n before subtracting handles both cases
+in one expression, and the next group starts at`hi + 1`.
 
 The loop advances `lo` by a factor of 1000 each pass, so it runs at most six
 times for `n <= 10¹⁵` — the final group holding 10¹⁵ itself, which has five

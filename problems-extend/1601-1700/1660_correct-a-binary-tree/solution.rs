@@ -33,17 +33,29 @@ impl Solution {
             Some(boxed) => boxed,
             None => return None,
         };
-        arena.push(Slot { val: boxed.val, left: None, right: None });
+        arena.push(Slot {
+            val: boxed.val,
+            left: None,
+            right: None,
+        });
         let mut work: Vec<(usize, Box<TreeNode>)> = vec![(0, boxed)];
         while let Some((index, mut node)) = work.pop() {
             if let Some(child) = node.left.take() {
-                arena.push(Slot { val: child.val, left: None, right: None });
+                arena.push(Slot {
+                    val: child.val,
+                    left: None,
+                    right: None,
+                });
                 let child_index = arena.len() - 1;
                 arena[index].left = Some(child_index);
                 work.push((child_index, child));
             }
             if let Some(child) = node.right.take() {
-                arena.push(Slot { val: child.val, left: None, right: None });
+                arena.push(Slot {
+                    val: child.val,
+                    left: None,
+                    right: None,
+                });
                 let child_index = arena.len() - 1;
                 arena[index].right = Some(child_index);
                 work.push((child_index, child));
@@ -92,7 +104,13 @@ impl Solution {
         let links: Vec<(Option<usize>, Option<usize>)> = arena.iter().map(|slot| (slot.left, slot.right)).collect();
         let mut cells: Vec<Option<Box<TreeNode>>> = arena
             .into_iter()
-            .map(|slot| Some(Box::new(TreeNode { val: slot.val, left: None, right: None })))
+            .map(|slot| {
+                Some(Box::new(TreeNode {
+                    val: slot.val,
+                    left: None,
+                    right: None,
+                }))
+            })
             .collect();
         for index in (0..cells.len()).rev() {
             if Some(index) == detached {

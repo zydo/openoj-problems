@@ -1,11 +1,11 @@
-#include <vector>
 #include <unordered_map>
+#include <vector>
 
 using namespace std;
 
 class Solution {
   public:
-    int minLength(vector<int>& nums, int k) {
+    int minLength(vector<int> &nums, int k) {
         // One pass, right end expanding: freq counts each value inside the
         // window and distinctSum tracks the sum of the distinct values
         // present — a value joins the sum when its first copy enters and

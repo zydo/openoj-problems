@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     // Counting sort: tally each price, then sweep prices from cheapest.
     // Buying cheapest-first is optimal, and the tally makes that walk
     // O(max_price) instead of O(n log n).

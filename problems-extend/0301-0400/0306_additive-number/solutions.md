@@ -16,7 +16,7 @@ the third number — a two-term string is never mistaken for a sequence.
 The additions are done as schoolbook string arithmetic — carry the tens,
 emit one digit at a time — and the operands never become machine integers.
 That is also the answer to the statement's follow-up. The `n <= 35` bound
-happens to keep every number that could appear in a *matching* parse within
+happens to keep every number that could appear in a _matching_ parse within
 seventeen digits, comfortably inside a 64-bit integer, but rejected
 candidates for the first two numbers run as long as thirty-three digits, and
 nineteen nines already overflow a `long long` at the moment it would be

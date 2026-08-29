@@ -10,7 +10,11 @@ pub struct MyCircularDeque {
 
 impl MyCircularDeque {
     pub fn new(k: i32) -> Self {
-        MyCircularDeque { buf: vec![0; k as usize], head: 0, count: 0 }
+        MyCircularDeque {
+            buf: vec![0; k as usize],
+            head: 0,
+            count: 0,
+        }
     }
 
     pub fn insertFront(&mut self, value: i32) -> bool {

@@ -10,9 +10,12 @@ class Solution {
         const long long ninf = -(1LL << 62);
         long long d1 = ninf, d2 = ninf, d3 = ninf, d4 = ninf;
         for (int x : b) {
-            if (d3 != ninf) d4 = max(d4, d3 + (long long)a[3] * x);
-            if (d2 != ninf) d3 = max(d3, d2 + (long long)a[2] * x);
-            if (d1 != ninf) d2 = max(d2, d1 + (long long)a[1] * x);
+            if (d3 != ninf)
+                d4 = max(d4, d3 + (long long)a[3] * x);
+            if (d2 != ninf)
+                d3 = max(d3, d2 + (long long)a[2] * x);
+            if (d1 != ninf)
+                d2 = max(d2, d1 + (long long)a[1] * x);
             d1 = max(d1, (long long)a[0] * x);
         }
         return d4;

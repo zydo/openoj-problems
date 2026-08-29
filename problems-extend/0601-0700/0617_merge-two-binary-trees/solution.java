@@ -18,7 +18,7 @@ class Solution {
         if (root1 == null) return root2;
         if (root2 == null) return root1;
         Deque<TreeNode[]> pending = new ArrayDeque<>();
-        pending.push(new TreeNode[] {root1, root2});
+        pending.push(new TreeNode[] { root1, root2 });
         while (!pending.isEmpty()) {
             // One entry settles one overlapping pair: sum the values
             // here, then settle each child slot — both trees fill it and
@@ -31,12 +31,12 @@ class Solution {
             if (node1.left == null) {
                 node1.left = node2.left;
             } else if (node2.left != null) {
-                pending.push(new TreeNode[] {node1.left, node2.left});
+                pending.push(new TreeNode[] { node1.left, node2.left });
             }
             if (node1.right == null) {
                 node1.right = node2.right;
             } else if (node2.right != null) {
-                pending.push(new TreeNode[] {node1.right, node2.right});
+                pending.push(new TreeNode[] { node1.right, node2.right });
             }
         }
         return root1;

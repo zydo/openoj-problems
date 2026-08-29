@@ -8,7 +8,7 @@ class Solution:
         # their joint masks share no bit. Enumerate every row mask, then
         # count mask sequences of length `height` with adjacent masks
         # disjoint, via DP per row.
-        MOD = 10 ** 9 + 7
+        MOD = 10**9 + 7
 
         masks = []
 

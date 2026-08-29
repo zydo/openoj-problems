@@ -2,8 +2,7 @@ from typing import List
 
 
 class Solution:
-    def numOfBurgers(self, tomatoSlices: int,
-                     cheeseSlices: int) -> List[int]:
+    def numOfBurgers(self, tomatoSlices: int, cheeseSlices: int) -> List[int]:
         # Solve the system: 4J + 2S = tomatoes, J + S = cheese. Doubling
         # the cheese equation and subtracting isolates jumbo:
         # 2J = tomatoes - 2*cheese, so J = (tomatoes - 2*cheese) / 2.

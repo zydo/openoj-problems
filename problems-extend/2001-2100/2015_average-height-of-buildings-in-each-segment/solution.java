@@ -30,9 +30,11 @@ class Solution {
                 continue;
             }
             int average = (int) (heightSum / count);
-            if (!street.isEmpty()
-                    && street.get(street.size() - 1)[1] == left
-                    && street.get(street.size() - 1)[2] == average) {
+            if (
+                !street.isEmpty() &&
+                street.get(street.size() - 1)[1] == left &&
+                street.get(street.size() - 1)[2] == average
+            ) {
                 street.get(street.size() - 1)[1] = right;
             } else {
                 street.add(new int[] { left, right, average });

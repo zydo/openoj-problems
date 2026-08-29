@@ -13,7 +13,7 @@ class Solution {
     // builds in one pass and each query binary-searches it with exact
     // integer cross-multiplications. Times reach ~6.25 * 10^14, so every
     // sum and product runs in long long.
-    long long minTime(vector<int>& skill, vector<int>& mana) {
+    long long minTime(vector<int> &skill, vector<int> &mana) {
         int n = skill.size();
         vector<long long> pref(n + 1, 0);
         for (int i = 0; i < n; ++i) {
@@ -26,7 +26,7 @@ class Solution {
             // Pop the top line while it is never strictly above its
             // neighbours: skill >= 1 keeps every slope distinct.
             while (size >= 2 && (hull_s[size - 2] - skill[i]) * (hull_p[size - 1] - hull_p[size - 2]) <=
-                     (hull_s[size - 2] - hull_s[size - 1]) * (pref[i] - hull_p[size - 2])) {
+                                    (hull_s[size - 2] - hull_s[size - 1]) * (pref[i] - hull_p[size - 2])) {
                 --size;
             }
             hull_s[size] = skill[i];

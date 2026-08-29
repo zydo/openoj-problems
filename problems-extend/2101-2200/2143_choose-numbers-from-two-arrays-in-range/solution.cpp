@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int countSubranges(vector<int>& nums1, vector<int>& nums2) {
+  public:
+    int countSubranges(vector<int> &nums1, vector<int> &nums2) {
         const int mod = 1000000007;
         const int offset = 10000;
         const int size = 20001;

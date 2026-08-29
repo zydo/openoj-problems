@@ -12,4 +12,9 @@ FROM
       Employee
   )
 WHERE
-  rnk = (SELECT n FROM Params)
+  rnk = (
+    SELECT
+      n
+    FROM
+      Params
+  )

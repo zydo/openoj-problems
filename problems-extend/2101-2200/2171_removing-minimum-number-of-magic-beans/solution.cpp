@@ -14,11 +14,10 @@ class Solution {
         }
         std::vector<int> ordered(beans);
         std::sort(ordered.begin(), ordered.end());
-        long long best = total;  // keep nothing (degenerate floor)
+        long long best = total; // keep nothing (degenerate floor)
         int n = static_cast<int>(ordered.size());
         for (int index = 0; index < n; ++index) {
-            long long keptTotal =
-                static_cast<long long>(ordered[index]) * (n - index);
+            long long keptTotal = static_cast<long long>(ordered[index]) * (n - index);
             best = std::min(best, total - keptTotal);
         }
         return best;

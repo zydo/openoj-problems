@@ -16,25 +16,30 @@ class Solution {
         int n = (int)s.size(), m = (int)pattern.size();
         vector<int> values;
         values.reserve(m + 1 + n);
-        for (char ch : pattern) values.push_back((unsigned char)ch);
+        for (char ch : pattern)
+            values.push_back((unsigned char)ch);
         values.push_back(-1);
-        for (char ch : s) values.push_back((unsigned char)ch);
+        for (char ch : s)
+            values.push_back((unsigned char)ch);
         vector<int> z = zFunction(values);
         vector<int> rvalues;
         rvalues.reserve(m + 1 + n);
-        for (int i = m - 1; i >= 0; --i) rvalues.push_back((unsigned char)pattern[i]);
+        for (int i = m - 1; i >= 0; --i)
+            rvalues.push_back((unsigned char)pattern[i]);
         rvalues.push_back(-1);
-        for (int i = n - 1; i >= 0; --i) rvalues.push_back((unsigned char)s[i]);
+        for (int i = n - 1; i >= 0; --i)
+            rvalues.push_back((unsigned char)s[i]);
         vector<int> r = zFunction(rvalues);
         for (int i = 0; i + m <= n; ++i) {
             int f = min(z[m + 1 + i], m);
-            if (f >= m || f + min(r[m + 1 + n - i - m], m) >= m - 1) return i;
+            if (f >= m || f + min(r[m + 1 + n - i - m], m) >= m - 1)
+                return i;
         }
         return -1;
     }
 
   private:
-    static vector<int> zFunction(const vector<int>& values) {
+    static vector<int> zFunction(const vector<int> &values) {
         int m = (int)values.size();
         vector<int> z(m, 0);
         z[0] = m;

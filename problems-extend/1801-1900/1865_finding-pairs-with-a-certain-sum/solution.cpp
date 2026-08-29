@@ -8,8 +8,7 @@ class FindSumPairs {
     // entries. The pair count can reach |nums1| * |nums2| = 1e8, hence long
     // long.
   public:
-    FindSumPairs(std::vector<int> &nums1, std::vector<int> &nums2)
-        : nums1(nums1), nums2(nums2) {
+    FindSumPairs(std::vector<int> &nums1, std::vector<int> &nums2) : nums1(nums1), nums2(nums2) {
         for (int v : nums2) {
             freq2[v]++;
         }

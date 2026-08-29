@@ -16,7 +16,12 @@ function findMaxFish(grid: number[][]): number {
             while (stack.length > 0) {
                 const [r, c] = stack.pop()!;
                 total += grid[r][c];
-                for (const [nr, nc] of [[r + 1, c], [r - 1, c], [r, c + 1], [r, c - 1]]) {
+                for (const [nr, nc] of [
+                    [r + 1, c],
+                    [r - 1, c],
+                    [r, c + 1],
+                    [r, c - 1],
+                ]) {
                     if (nr >= 0 && nr < rows && nc >= 0 && nc < columns && grid[nr][nc] > 0 && !visited[nr][nc]) {
                         visited[nr][nc] = true;
                         stack.push([nr, nc]);

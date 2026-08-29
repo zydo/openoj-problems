@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countKConstraintSubstrings(string s, int k) {
         int n = s.size();
         int answer = 0;

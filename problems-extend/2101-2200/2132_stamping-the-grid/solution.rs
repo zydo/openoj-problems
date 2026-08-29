@@ -7,9 +7,8 @@ impl Solution {
         let mut occupied = vec![vec![0; columns + 1]; rows + 1];
         for row in 0..rows {
             for column in 0..columns {
-                occupied[row + 1][column + 1] = grid[row][column] + occupied[row][column + 1]
-                    + occupied[row + 1][column]
-                    - occupied[row][column];
+                occupied[row + 1][column + 1] =
+                    grid[row][column] + occupied[row][column + 1] + occupied[row + 1][column] - occupied[row][column];
             }
         }
 
@@ -19,8 +18,8 @@ impl Solution {
                 let bottom = top + height;
                 for left in 0..=columns - width {
                     let right = left + width;
-                    let total = occupied[bottom][right] - occupied[top][right] - occupied[bottom][left]
-                        + occupied[top][left];
+                    let total =
+                        occupied[bottom][right] - occupied[top][right] - occupied[bottom][left] + occupied[top][left];
                     if total == 0 {
                         difference[top][left] += 1;
                         difference[bottom][left] -= 1;

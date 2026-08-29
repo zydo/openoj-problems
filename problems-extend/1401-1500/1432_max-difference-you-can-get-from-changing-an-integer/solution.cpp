@@ -9,7 +9,7 @@ class Solution {
         std::string big = s;
         for (char digit : s) {
             if (digit != '9') {
-                for (char& c : big) {
+                for (char &c : big) {
                     if (c == digit) {
                         c = '9';
                     }
@@ -23,7 +23,7 @@ class Solution {
         std::string small = s;
         if (s[0] != '1') {
             char from = s[0];
-            for (char& c : small) {
+            for (char &c : small) {
                 if (c == from) {
                     c = '1';
                 }
@@ -31,7 +31,7 @@ class Solution {
         } else {
             for (char digit : s) {
                 if (digit != '0' && digit != '1') {
-                    for (char& c : small) {
+                    for (char &c : small) {
                         if (c == digit) {
                             c = '0';
                         }

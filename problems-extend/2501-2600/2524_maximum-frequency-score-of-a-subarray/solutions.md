@@ -11,7 +11,7 @@ scratch is wasted work; instead the running score is repaired in place
 as the window moves.
 
 The trick is never to touch untouched terms. Keep, next to the window's
-frequency map, each in-window value's *current* power term. When a slide
+frequency map, each in-window value's _current_ power term. When a slide
 brings a value in or out, only that value's term is recomputed at its
 new count and the running score takes the difference — including the
 boundary cases, where a value entering from absent contributes its whole

@@ -18,18 +18,10 @@ impl Solution {
                 }
                 let t = i * n + j;
                 if i + 1 < m {
-                    br[t] = if grid[i + 1][j] == 0 {
-                        (t + n) as i32
-                    } else {
-                        bd[t + n]
-                    };
+                    br[t] = if grid[i + 1][j] == 0 { (t + n) as i32 } else { bd[t + n] };
                 }
                 if j + 1 < n {
-                    bd[t] = if grid[i][j + 1] == 0 {
-                        (t + 1) as i32
-                    } else {
-                        br[t + 1]
-                    };
+                    bd[t] = if grid[i][j + 1] == 0 { (t + 1) as i32 } else { br[t + 1] };
                 }
             }
         }

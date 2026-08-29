@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long maxPairStrength(vector<int>& nums) {
+  public:
+    long long maxPairStrength(vector<int> &nums) {
         // Fewer than two million pairs at n <= 2000, so every distinct
         // index pair is tried directly: g = gcd(a, b), strength =
         // a * b / g^2. The division is exact because g divides both
@@ -21,7 +21,7 @@ public:
         return best;
     }
 
-private:
+  private:
     long long gcd(long long a, long long b) {
         while (b != 0) {
             long long t = a % b;

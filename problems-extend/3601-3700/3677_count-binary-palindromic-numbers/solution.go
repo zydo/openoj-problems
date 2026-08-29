@@ -27,7 +27,7 @@ func countBinaryPalindromes(n int64) int {
 		rev = rev<<1 | x&1
 		x >>= 1
 	}
-	if ((root<<half)|rev) <= n {
+	if ((root << half) | rev) <= n {
 		count++
 	}
 	return int(count)

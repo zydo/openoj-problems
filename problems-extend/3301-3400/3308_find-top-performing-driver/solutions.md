@@ -24,7 +24,7 @@ outer select keeps `rn = 1`. The same shape works without window support
 by keeping the group rows in a derived table and picking, per fuel type,
 the one no other row outranks — identical ordering logic, just spelled as
 a correlated subquery. One subtlety lives in the `ORDER BY`: the
-comparison runs on the *rounded* average, because the statement defines
+comparison runs on the _rounded_ average, because the statement defines
 the score as the rounded value before any ties are considered; ranking on
 the raw mean could order two drivers differently than their displayed
 scores imply.

@@ -7,16 +7,7 @@ impl Solution {
         // search runs in offset coordinates: board (nx, ny) is stored as
         // (nx + 2, ny + 2), so every index is nonnegative.
         let (tx, ty) = (x.abs(), y.abs());
-        const MOVES: [(i32, i32); 8] = [
-            (1, 2),
-            (2, 1),
-            (2, -1),
-            (1, -2),
-            (-1, -2),
-            (-2, -1),
-            (-2, 1),
-            (-1, 2),
-        ];
+        const MOVES: [(i32, i32); 8] = [(1, 2), (2, 1), (2, -1), (1, -2), (-1, -2), (-2, -1), (-2, 1), (-1, 2)];
         let width = (tx + 5) as usize;
         let height = (ty + 5) as usize;
         let mut seen = vec![false; width * height];

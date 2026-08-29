@@ -14,22 +14,25 @@ Your Calculator class should have the following methods:
   updated Calculator.
 - subtract - This method subtracts the given number value from the result and
   returns the updated Calculator.
-- multiply - This method multiplies the result  by the given number value and
-  returns the updated Calculator.
-- divide - This method divides the result by the given number value and returns
-  the updated Calculator. If the passed value is 0, an error "Division by zero
-  is not allowed" should be thrown.
+- multiply - This method multiplies the result by the given number value
+  and returns the updated Calculator.
+- divide - This method divides the result by the given number value and
+  returns the updated Calculator. If the passed value is 0, an error "Division
+  by zero is not allowed" should be thrown.
 - power - This method raises the result to the power of the given number value
   and returns the updated Calculator.
 - getResult - This method returns the result.
 
 Solutions within 10⁻⁵ of the actual result are considered correct.
 
-**Note (OpenOJ):** this problem is offered in JavaScript and TypeScript only —
-LeetCode offers no other languages for it. Your submission defines the
-`Calculator` class and a `Solution.solve(calculatorCase)` adapter. The adapter
-should call `calculatorCase.run(Calculator)` so the judge-provided case driver
-can perform the listed actions in order.
+**Note (OpenOJ):** this problem is offered in JavaScript and TypeScript only
+— LeetCode offers no other languages for it. Your submission defines the
+`Calculator` class and a `Solution.solve(calculatorCase)` adapter. The
+adapter should call `calculatorCase.drive(Calculator)` so the judge-provided
+case driver constructs the calculator from the first value, performs every
+remaining action in order, and records the final `getResult()` value — or
+the thrown error's message when an operation fails; results within 10⁻⁵ of
+the expected value are accepted.
 
 ### Example 1
 

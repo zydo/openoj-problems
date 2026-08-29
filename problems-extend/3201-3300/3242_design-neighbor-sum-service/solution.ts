@@ -24,11 +24,21 @@ class NeighborSum {
     }
 
     adjacentSum(value: number): number {
-        return this.sumAround(value, [[-1, 0], [1, 0], [0, -1], [0, 1]]);
+        return this.sumAround(value, [
+            [-1, 0],
+            [1, 0],
+            [0, -1],
+            [0, 1],
+        ]);
     }
 
     diagonalSum(value: number): number {
-        return this.sumAround(value, [[-1, -1], [-1, 1], [1, -1], [1, 1]]);
+        return this.sumAround(value, [
+            [-1, -1],
+            [-1, 1],
+            [1, -1],
+            [1, 1],
+        ]);
     }
 
     private sumAround(value: number, offsets: number[][]): number {

@@ -3,10 +3,7 @@ use std::collections::HashMap;
 
 impl Solution {
     pub fn before_and_after_puzzles(phrases: Vec<String>) -> Vec<String> {
-        let words: Vec<Vec<&str>> = phrases
-            .iter()
-            .map(|p| p.split(' ').collect())
-            .collect();
+        let words: Vec<Vec<&str>> = phrases.iter().map(|p| p.split(' ').collect()).collect();
         // File every phrase position under its first word: the bucket a
         // predecessor will search by its own last word.
         let mut by_first: HashMap<&str, Vec<usize>> = HashMap::new();

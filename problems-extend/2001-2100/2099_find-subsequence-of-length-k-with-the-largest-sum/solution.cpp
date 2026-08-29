@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> maxSubsequence(vector<int>& nums, int k) {
+  public:
+    vector<int> maxSubsequence(vector<int> &nums, int k) {
         vector<int> indices(nums.size());
         iota(indices.begin(), indices.end(), 0);
         sort(indices.begin(), indices.end(), [&](int left, int right) {

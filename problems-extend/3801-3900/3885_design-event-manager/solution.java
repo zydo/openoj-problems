@@ -9,8 +9,8 @@ class EventManager {
     // no longer matches the live map value. The comparator orders by
     // priority descending, then eventId ascending.
     private final Map<Integer, Integer> priority = new HashMap<>();
-    private final PriorityQueue<int[]> heap = new PriorityQueue<>(
-        (a, b) -> a[0] == b[0] ? Integer.compare(a[1], b[1]) : Integer.compare(b[0], a[0])
+    private final PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) ->
+        a[0] == b[0] ? Integer.compare(a[1], b[1]) : Integer.compare(b[0], a[0])
     );
 
     public EventManager(int[][] events) {

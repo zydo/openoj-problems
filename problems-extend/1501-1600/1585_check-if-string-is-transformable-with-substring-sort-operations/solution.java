@@ -19,7 +19,7 @@ class Solution {
             index += 1;
             while (index <= size) {
                 tree[index] += delta;
-                index += index & (-index);
+                index += index & -index;
             }
         }
 
@@ -27,7 +27,7 @@ class Solution {
             int total = 0;
             while (index > 0) {
                 total += tree[index];
-                index -= index & (-index);
+                index -= index & -index;
             }
             return total;
         }

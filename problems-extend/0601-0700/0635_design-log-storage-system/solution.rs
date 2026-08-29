@@ -9,7 +9,10 @@ pub struct LogSystem {
 
 impl LogSystem {
     pub fn new() -> Self {
-        LogSystem { ids: Vec::new(), timestamps: Vec::new() }
+        LogSystem {
+            ids: Vec::new(),
+            timestamps: Vec::new(),
+        }
     }
 
     pub fn put(&mut self, id: i32, timestamp: String) {

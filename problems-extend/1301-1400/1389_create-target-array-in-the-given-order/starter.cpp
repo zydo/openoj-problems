@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> createTargetArray(vector<int>& nums, vector<int>& index) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> createTargetArray(vector<int> &nums, vector<int> &index) { throw logic_error("TODO"); }
 };

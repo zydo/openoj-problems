@@ -19,15 +19,9 @@ class NeighborSum {
         }
     }
 
-    int adjacentSum(int value) {
-        return sumAround(rowOf[value], colOf[value],
-                        {{-1, 0}, {1, 0}, {0, -1}, {0, 1}});
-    }
+    int adjacentSum(int value) { return sumAround(rowOf[value], colOf[value], {{-1, 0}, {1, 0}, {0, -1}, {0, 1}}); }
 
-    int diagonalSum(int value) {
-        return sumAround(rowOf[value], colOf[value],
-                        {{-1, -1}, {-1, 1}, {1, -1}, {1, 1}});
-    }
+    int diagonalSum(int value) { return sumAround(rowOf[value], colOf[value], {{-1, -1}, {-1, 1}, {1, -1}, {1, 1}}); }
 
   private:
     int sumAround(int r, int c, vector<pair<int, int>> offsets) const {

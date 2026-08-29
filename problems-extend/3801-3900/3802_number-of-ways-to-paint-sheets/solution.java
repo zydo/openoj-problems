@@ -33,9 +33,8 @@ class Solution {
         for (int i = 0; i + 1 < unique; i++) {
             long x = points[i];
             long run = points[i + 1] - x;
-            long ways = numGe(a, x) * numGe(a, n - x)
-                    - numGe(a, Math.max(x, n - x));
-            total = (total + ways % MOD * run) % MOD;
+            long ways = numGe(a, x) * numGe(a, n - x) - numGe(a, Math.max(x, n - x));
+            total = (total + (ways % MOD) * run) % MOD;
         }
         return total;
     }

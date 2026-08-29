@@ -14,7 +14,7 @@ regardless of how many elements exist.
 The subtlety is `append`: a freshly appended value must read back exactly
 as given, even though the running `(mult, add)` pair already reflects
 every prior `addAll`/`multAll` call and will keep evolving afterward. The
-fix is to store the value transformed *backward* through the current map —
+fix is to store the value transformed _backward_ through the current map —
 `stored = (val - add) * mult⁻¹ (mod 10⁹ + 7)` — so that later applying the
 (by-then-different) `(mult, add)` pair to it reproduces `val` at the
 instant it was appended, and correctly picks up every transform applied

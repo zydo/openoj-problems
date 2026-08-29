@@ -17,7 +17,8 @@ class Solution {
                     candidates.insert(value / divisor);
                 }
             }
-            if (value > 1) candidates.insert(value);
+            if (value > 1)
+                candidates.insert(value);
         }
 
         long long bestScore = -4e18;
@@ -36,6 +37,6 @@ class Solution {
             }
         }
         long long answer = ((bestScore % mod + mod) % mod) * bestK % mod;
-        return (int) answer;
+        return (int)answer;
     }
 };

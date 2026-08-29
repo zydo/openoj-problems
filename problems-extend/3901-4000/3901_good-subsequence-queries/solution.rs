@@ -74,8 +74,18 @@ impl Solution {
             if nums[index] % p == 0 {
                 active += 1;
                 for prime in factors((nums[index] / p) as usize, &smallest) {
-                    adjust(prime, index, 1, n, all_xor, &mut counts, &mut covered_xor, &mut histogram,
-                        &mut forbidden, &mut forbidden_distinct);
+                    adjust(
+                        prime,
+                        index,
+                        1,
+                        n,
+                        all_xor,
+                        &mut counts,
+                        &mut covered_xor,
+                        &mut histogram,
+                        &mut forbidden,
+                        &mut forbidden_distinct,
+                    );
                 }
             }
         }
@@ -85,8 +95,18 @@ impl Solution {
             let value = query[1];
             if nums[index] % p == 0 {
                 for prime in factors((nums[index] / p) as usize, &smallest) {
-                    adjust(prime, index, -1, n, all_xor, &mut counts, &mut covered_xor, &mut histogram,
-                        &mut forbidden, &mut forbidden_distinct);
+                    adjust(
+                        prime,
+                        index,
+                        -1,
+                        n,
+                        all_xor,
+                        &mut counts,
+                        &mut covered_xor,
+                        &mut histogram,
+                        &mut forbidden,
+                        &mut forbidden_distinct,
+                    );
                 }
                 active -= 1;
             }
@@ -94,8 +114,18 @@ impl Solution {
             if value % p == 0 {
                 active += 1;
                 for prime in factors((value / p) as usize, &smallest) {
-                    adjust(prime, index, 1, n, all_xor, &mut counts, &mut covered_xor, &mut histogram,
-                        &mut forbidden, &mut forbidden_distinct);
+                    adjust(
+                        prime,
+                        index,
+                        1,
+                        n,
+                        all_xor,
+                        &mut counts,
+                        &mut covered_xor,
+                        &mut histogram,
+                        &mut forbidden,
+                        &mut forbidden_distinct,
+                    );
                 }
             }
             if active > 0

@@ -2,8 +2,8 @@
 #include <vector>
 
 class Solution {
-public:
-    int maxNumberOfApples(std::vector<int>& weight) {
+  public:
+    int maxNumberOfApples(std::vector<int> &weight) {
         // Lightest apples first: any optimal packing can be assumed to
         // consist of them, so a sorted greedy prefix is exactly optimal.
         std::sort(weight.begin(), weight.end());

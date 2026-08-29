@@ -10,9 +10,9 @@ type mvcEntry struct {
 
 type mvcHeap []mvcEntry
 
-func (h mvcHeap) Len() int            { return len(h) }
-func (h mvcHeap) Less(a, b int) bool  { return h[a].dis < h[b].dis }
-func (h mvcHeap) Swap(a, b int)       { h[a], h[b] = h[b], h[a] }
+func (h mvcHeap) Len() int           { return len(h) }
+func (h mvcHeap) Less(a, b int) bool { return h[a].dis < h[b].dis }
+func (h mvcHeap) Swap(a, b int)      { h[a], h[b] = h[b], h[a] }
 func (h *mvcHeap) Push(value interface{}) {
 	*h = append(*h, value.(mvcEntry))
 }

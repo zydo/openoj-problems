@@ -11,7 +11,7 @@ class Solution {
             for (int i = 0; i < word.length(); i++) {
                 total += weights[word.charAt(i) - 'a'];
             }
-            result.append((char) ('z' - total % 26));
+            result.append((char) ('z' - (total % 26)));
         }
         return result.toString();
     }

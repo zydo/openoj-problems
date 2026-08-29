@@ -40,8 +40,7 @@ class Solution:
                 host = by_val.get(tree.val)
                 # A host must be a true leaf other than the final root: the
                 # root's value cannot equal any pending tree's root value.
-                if host is not None and host.left is None and host.right is None \
-                        and host is not root:
+                if host is not None and host.left is None and host.right is None and host is not root:
                     host.left = tree.left
                     host.right = tree.right
                     sub = [tree]

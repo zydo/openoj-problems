@@ -26,7 +26,8 @@ class Solution {
                 // Landing on the top flips a piston downward.
                 events.merge(first, -2, Integer::sum);
                 balance++;
-                if (first < height) { // second landing stays inside period 2h
+                if (first < height) {
+                    // second landing stays inside period 2h
                     events.merge(first + height, 2, Integer::sum);
                 }
             } else {

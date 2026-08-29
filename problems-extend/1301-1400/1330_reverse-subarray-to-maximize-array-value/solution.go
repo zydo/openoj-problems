@@ -8,8 +8,8 @@ func maxValueAfterReverse(nums []int) int {
 		total += abs(nums[i] - nums[i+1])
 	}
 	bestGain := 0
-	big := -(1 << 62)     // max over adjacent-pair minima
-	small := 1 << 62      // min over adjacent-pair maxima
+	big := -(1 << 62) // max over adjacent-pair minima
+	small := 1 << 62  // min over adjacent-pair maxima
 	for i := 0; i+1 < n; i++ {
 		a, b := nums[i], nums[i+1]
 		// reverse [0..i]: the (i, i+1) link becomes (0, i+1)

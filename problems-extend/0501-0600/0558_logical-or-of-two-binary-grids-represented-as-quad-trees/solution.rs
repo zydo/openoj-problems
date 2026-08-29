@@ -1,8 +1,5 @@
 impl Solution {
-    pub fn intersect(
-        quad_tree1: Option<Box<QuadNode>>,
-        quad_tree2: Option<Box<QuadNode>>,
-    ) -> Option<Box<QuadNode>> {
+    pub fn intersect(quad_tree1: Option<Box<QuadNode>>, quad_tree2: Option<Box<QuadNode>>) -> Option<Box<QuadNode>> {
         Self::merge(quad_tree1, quad_tree2)
     }
 

@@ -2,9 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Solution {
+
     public String[] divideString(String s, int k, String fill) {
         StringBuilder padded = new StringBuilder(s);
-        int padding = (k - s.length() % k) % k;
+        int padding = (k - (s.length() % k)) % k;
         for (int count = 0; count < padding; count++) {
             padded.append(fill.charAt(0));
         }

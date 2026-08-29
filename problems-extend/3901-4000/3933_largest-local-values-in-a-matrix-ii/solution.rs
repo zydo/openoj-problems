@@ -29,8 +29,7 @@ impl Solution {
                 let bottom = (row + value).min(rows - 1);
                 let left = column.saturating_sub(value);
                 let right = (column + value).min(columns - 1);
-                let mut greater = prefix[bottom + 1][right + 1] - prefix[top][right + 1]
-                    - prefix[bottom + 1][left]
+                let mut greater = prefix[bottom + 1][right + 1] - prefix[top][right + 1] - prefix[bottom + 1][left]
                     + prefix[top][left];
                 for corner_row in [row as isize - value as isize, row as isize + value as isize] {
                     for corner_column in [column as isize - value as isize, column as isize + value as isize] {

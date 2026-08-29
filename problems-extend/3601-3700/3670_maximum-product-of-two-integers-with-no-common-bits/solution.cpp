@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maxProduct(vector<int>& nums) {
+    long long maxProduct(vector<int> &nums) {
         // Every value fits in 20 bits, so each number doubles as its own
         // bitmask; "no common set bits" means the partner's mask is a
         // subset of this mask's complement within those 20 bits.

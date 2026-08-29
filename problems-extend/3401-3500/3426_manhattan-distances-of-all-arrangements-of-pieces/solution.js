@@ -27,10 +27,9 @@ var distanceSum = function (m, n, k) {
         invFact[i - 1] = (invFact[i] * BigInt(i)) % mod;
     }
 
-    const tri = (dim) => BigInt(dim) * BigInt(dim - 1) * BigInt(dim + 1) / 6n % mod;
-    const pairs = ((BigInt(n) * BigInt(n)) % mod * tri(m)
-        + (BigInt(m) * BigInt(m)) % mod * tri(n)) % mod;
-    const choose = fact[total - 2] * invFact[k - 2] % mod * invFact[total - k] % mod;
+    const tri = (dim) => ((BigInt(dim) * BigInt(dim - 1) * BigInt(dim + 1)) / 6n) % mod;
+    const pairs = (((BigInt(n) * BigInt(n)) % mod) * tri(m) + ((BigInt(m) * BigInt(m)) % mod) * tri(n)) % mod;
+    const choose = (((fact[total - 2] * invFact[k - 2]) % mod) * invFact[total - k]) % mod;
     return Number((pairs * choose) % mod);
 };
 

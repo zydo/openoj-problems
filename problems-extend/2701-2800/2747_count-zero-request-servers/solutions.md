@@ -9,7 +9,7 @@ lets a single sliding window serve them all. Because several entries can name
 the same server inside one window, the window carries a per-server occurrence
 count plus a running total of distinct servers rather than just its length.
 
-The query *indices* (not the queries themselves) are sorted by query value so
+The query _indices_ (not the queries themselves) are sorted by query value so
 answers still land at their original positions. Two pointers bound the window:
 the right pointer advances over logs whose time is at most the current query
 value, then the left pointer drops logs whose time is below `q - x`. Both

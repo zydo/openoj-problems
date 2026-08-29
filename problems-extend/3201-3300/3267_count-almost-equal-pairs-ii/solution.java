@@ -24,7 +24,7 @@ class Solution {
             widest = Math.max(widest, x);
         }
         int w = Integer.toString(widest).length();
-        int m = w * (w - 1) / 2;
+        int m = (w * (w - 1)) / 2;
         int[] pairI = new int[m];
         int[] pairJ = new int[m];
         int t = 0;
@@ -49,13 +49,15 @@ class Solution {
             Set<Integer> states = new HashSet<>();
             states.add(Integer.parseInt(new String(d)));
             for (int e = 0; e < m; e++) {
-                int i = pairI[e], j = pairJ[e];
+                int i = pairI[e],
+                    j = pairJ[e];
                 char tmp = d[i];
                 d[i] = d[j];
                 d[j] = tmp;
                 states.add(Integer.parseInt(new String(d)));
                 for (int f = 0; f < m; f++) {
-                    int k = pairI[f], l = pairJ[f];
+                    int k = pairI[f],
+                        l = pairJ[f];
                     char tmp2 = d[k];
                     d[k] = d[l];
                     d[l] = tmp2;

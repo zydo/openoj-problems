@@ -11,7 +11,8 @@ class Solution {
             boxed[i] = nums[i];
         }
         Arrays.sort(boxed, (a, b) -> {
-            int aa = Math.abs(a), bb = Math.abs(b);
+            int aa = Math.abs(a),
+                bb = Math.abs(b);
             if (aa != bb) {
                 return Integer.compare(aa, bb);
             }

@@ -16,16 +16,16 @@ class Solution {
         int size = sorted.size();
         vector<long long> tree(size + 1, 0);
         auto rank = [&](long long value) {
-            return int(lower_bound(sorted.begin(), sorted.begin() + size, value) -
-                       sorted.begin()) +
-                   1;
+            return int(lower_bound(sorted.begin(), sorted.begin() + size, value) - sorted.begin()) + 1;
         };
         auto update = [&](int i) {
-            for (; i <= size; i += i & -i) tree[i]++;
+            for (; i <= size; i += i & -i)
+                tree[i]++;
         };
-        auto query = [&](int i) {  // how many inserted prefixes have rank <= i
+        auto query = [&](int i) { // how many inserted prefixes have rank <= i
             long long total = 0;
-            for (; i > 0; i -= i & -i) total += tree[i];
+            for (; i > 0; i -= i & -i)
+                total += tree[i];
             return total;
         };
         long long answer = 0;

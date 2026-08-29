@@ -9,9 +9,7 @@ impl Solution {
         // sort by rating desc, then id desc.
         let mut kept: Vec<Vec<i32>> = restaurants
             .into_iter()
-            .filter(|entry| {
-                (vegan_friendly == 0 || entry[2] == 1) && entry[3] <= max_price && entry[4] <= max_distance
-            })
+            .filter(|entry| (vegan_friendly == 0 || entry[2] == 1) && entry[3] <= max_price && entry[4] <= max_distance)
             .collect();
         kept.sort_by(|a, b| match b[1].cmp(&a[1]) {
             std::cmp::Ordering::Equal => b[0].cmp(&a[0]),

@@ -13,7 +13,7 @@ var sumGame = function (num) {
     const n = num.length;
     for (let i = 0; i < n; i++) {
         const ch = num[i];
-        if (ch === '?') {
+        if (ch === "?") {
             if (i < n / 2) {
                 k++;
             } else {

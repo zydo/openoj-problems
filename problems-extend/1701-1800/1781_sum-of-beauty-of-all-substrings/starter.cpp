@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int beautySum(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int beautySum(string s) { throw logic_error("TODO"); }
 };

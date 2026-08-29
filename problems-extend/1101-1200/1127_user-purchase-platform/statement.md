@@ -5,11 +5,11 @@
 Table: `Spending`
 
 | Column Name | Type |
-| ------------ | ---- |
-| user_id      | int  |
-| spend_date   | date |
-| platform     | enum |
-| amount       | int  |
+| ----------- | ---- |
+| user_id     | int  |
+| spend_date  | date |
+| platform    | enum |
+| amount      | int  |
 
 The table logs the history of the spending of users that make purchases from
 an online shopping website that has a desktop and a mobile application.

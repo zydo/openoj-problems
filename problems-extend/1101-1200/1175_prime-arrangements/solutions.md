@@ -4,7 +4,7 @@
 
 Which arrangements are valid? A permutation places the primes somewhere;
 the requirement pins every prime to a prime index. That fixes nothing about
-the *order within* each group — it only partitions the positions: if `n`
+the _order within_ each group — it only partitions the positions: if `n`
 holds `p` primes, the `p` prime numbers may be arranged among the `p` prime
 indices in `p!` ways, and the remaining `n − p` values (1 together with the
 composites — 1 is not prime, so it sits on a non-prime index) fill the

@@ -30,9 +30,7 @@ class Solution {
             dp = next;
         }
         int answer = Integer.MAX_VALUE;
-        for (int a = 0; a < 3; a++)
-            for (int b = 0; b < 3; b++)
-                answer = Math.min(answer, dp[a][b]);
+        for (int a = 0; a < 3; a++) for (int b = 0; b < 3; b++) answer = Math.min(answer, dp[a][b]);
         return answer;
     }
 }

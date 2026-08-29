@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int minOperations(vector<int>& nums, vector<int>& numsDivide) {
+    int minOperations(vector<int> &nums, vector<int> &numsDivide) {
         // An element x can head nums only if it divides every value in
         // numsDivide; one common divisor divides their GCD, so reduce the
         // target once and count the sorted elements below the smallest

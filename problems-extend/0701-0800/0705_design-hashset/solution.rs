@@ -11,7 +11,9 @@ pub struct MyHashSet {
 
 impl MyHashSet {
     pub fn new() -> Self {
-        MyHashSet { buckets: vec![Vec::new(); BUCKETS] }
+        MyHashSet {
+            buckets: vec![Vec::new(); BUCKETS],
+        }
     }
 
     pub fn add(&mut self, key: i32) {

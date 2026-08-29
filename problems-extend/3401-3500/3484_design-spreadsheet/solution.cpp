@@ -12,13 +12,9 @@ class Spreadsheet {
   public:
     Spreadsheet(int rows) {}
 
-    void setCell(string cell, int value) {
-        values_[std::move(cell)] = value;
-    }
+    void setCell(string cell, int value) { values_[std::move(cell)] = value; }
 
-    void resetCell(string cell) {
-        values_[std::move(cell)] = 0;
-    }
+    void resetCell(string cell) { values_[std::move(cell)] = 0; }
 
     int getValue(string formula) {
         for (char &c : formula)

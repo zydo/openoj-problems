@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> sortArray(vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> sortArray(vector<int> &nums) { throw logic_error("TODO"); }
 };

@@ -11,10 +11,14 @@ class Solution {
 
   private:
     static int calcLen(int count) {
-        if (count == 0) return 0;
-        if (count == 1) return 1;
-        if (count < 10) return 2;
-        if (count < 100) return 3;
+        if (count == 0)
+            return 0;
+        if (count == 1)
+            return 1;
+        if (count < 10)
+            return 2;
+        if (count < 100)
+            return 3;
         return 4;
     }
 

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool isCircularSentence(string sentence) {
         // A sentence is circular exactly when every space joins a matching
         // last-to-first pair and the endpoints wrap: sentence[0] is the

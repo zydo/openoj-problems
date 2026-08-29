@@ -9,12 +9,7 @@ class Solution:
         BULK_DIM = 10_000
         BULK_VOLUME = 10**9
         HEAVY_MASS = 100
-        bulky = (
-            length >= BULK_DIM
-            or width >= BULK_DIM
-            or height >= BULK_DIM
-            or length * width * height >= BULK_VOLUME
-        )
+        bulky = length >= BULK_DIM or width >= BULK_DIM or height >= BULK_DIM or length * width * height >= BULK_VOLUME
         heavy = mass >= HEAVY_MASS
         if bulky and heavy:
             return "Both"

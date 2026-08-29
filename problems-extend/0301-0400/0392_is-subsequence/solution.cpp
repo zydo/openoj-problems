@@ -6,11 +6,11 @@ class Solution {
         // never hurts a later one.
         int i = 0;
         for (char ch : t) {
-            if (i < (int) s.size() && ch == s[i]) {
+            if (i < (int)s.size() && ch == s[i]) {
                 i++;
             }
         }
         // All of s was matched in order iff the pointer reached its end.
-        return i == (int) s.size();
+        return i == (int)s.size();
     }
 };

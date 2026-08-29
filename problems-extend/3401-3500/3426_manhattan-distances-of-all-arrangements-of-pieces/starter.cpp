@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int distanceSum(int m, int n, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    int distanceSum(int m, int n, int k) { throw logic_error("TODO"); }
 };

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    TreeNode* recoverTree(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    TreeNode *recoverTree(TreeNode *root) { throw logic_error("TODO"); }
 };

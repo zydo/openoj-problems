@@ -10,7 +10,7 @@ class Solution {
         for (int x = 0; x <= num; x++) {
             int reversed = 0;
             for (int v = x; v > 0; v /= 10) {
-                reversed = reversed * 10 + v % 10;
+                reversed = reversed * 10 + (v % 10);
             }
             if (x + reversed == num) {
                 return true;

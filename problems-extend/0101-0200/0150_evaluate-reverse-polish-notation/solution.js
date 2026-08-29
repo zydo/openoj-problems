@@ -22,7 +22,7 @@ var evalRPN = function (tokens) {
                 // down to -4, so floor the absolute quotient and reapply the
                 // sign instead.
                 const quotient = Math.floor(Math.abs(a) / Math.abs(b));
-                stack.push((a < 0) === (b < 0) ? quotient : -quotient);
+                stack.push(a < 0 === b < 0 ? quotient : -quotient);
             }
         } else {
             stack.push(Number(token));

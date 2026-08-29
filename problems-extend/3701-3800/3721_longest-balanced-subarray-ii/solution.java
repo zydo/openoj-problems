@@ -4,6 +4,7 @@ import java.util.Map;
 class Solution {
 
     private static class SegTree {
+
         private final int[] mn, mx, lazy;
         private final int n;
 
@@ -117,7 +118,8 @@ class Solution {
         // end at or after its first occurrence, via O(log n) range adds.
         SegTree tree = new SegTree(new int[n]);
         for (Map.Entry<Integer, Integer> entry : first.entrySet()) {
-            int v = entry.getKey(), p = entry.getValue();
+            int v = entry.getKey(),
+                p = entry.getValue();
             tree.addRange(p, n - 1, (v & 1) == 1 ? 1 : -1);
         }
         int best = 0;

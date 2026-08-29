@@ -27,8 +27,7 @@ class Solution {
 
                 // Delete the right end, delete the left end, or keep both
                 // matching ends and use the deletion inside.
-                almostNow[left] =
-                    palOne[left] || palOne[left + 1] || (sameEnds && almostTwo[left + 1]);
+                almostNow[left] = palOne[left] || palOne[left + 1] || (sameEnds && almostTwo[left + 1]);
                 if (almostNow[left]) {
                     best = length;
                 }

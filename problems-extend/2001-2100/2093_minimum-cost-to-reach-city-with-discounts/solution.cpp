@@ -1,8 +1,8 @@
 class Solution {
-public:
-    int minimumCost(int n, vector<vector<int>>& highways, int discounts) {
+  public:
+    int minimumCost(int n, vector<vector<int>> &highways, int discounts) {
         vector<vector<pair<int, int>>> graph(n);
-        for (const auto& highway : highways) {
+        for (const auto &highway : highways) {
             graph[highway[0]].push_back({highway[1], highway[2]});
             graph[highway[1]].push_back({highway[0], highway[2]});
         }

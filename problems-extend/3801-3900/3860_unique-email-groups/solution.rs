@@ -14,13 +14,7 @@ impl Solution {
                 None => local,
             };
             let domain = email[at + 1..].to_lowercase();
-            let key = local
-                .chars()
-                .filter(|&c| c != '.')
-                .collect::<String>()
-                .to_lowercase()
-                + "@"
-                + &domain;
+            let key = local.chars().filter(|&c| c != '.').collect::<String>().to_lowercase() + "@" + &domain;
             seen.insert(key);
         }
         seen.len() as i32

@@ -26,8 +26,10 @@ class Solution {
                 TreeNode *node = q.front().first;
                 long long index = q.front().second - base;
                 q.pop();
-                if (node->left != nullptr) q.push({node->left, 2 * index});
-                if (node->right != nullptr) q.push({node->right, 2 * index + 1});
+                if (node->left != nullptr)
+                    q.push({node->left, 2 * index});
+                if (node->right != nullptr)
+                    q.push({node->right, 2 * index + 1});
             }
         }
         return best;

@@ -4,7 +4,7 @@
 
 If the largest integer used is `m`, then among `1..m` exactly `m - ⌊m/d⌋`
 values survive for array one (those not divisible by `divisor1`), the same
-count works for array two, and only values divisible by *neither* divisor —
+count works for array two, and only values divisible by _neither_ divisor —
 that is, all of `1..m` minus those hit by `lcm(divisor1, divisor2)` — are
 free to join either array. So a candidate maximum `m` is feasible exactly
 when each survivor pool covers its own count and the unblocked pool covers

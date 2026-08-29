@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k) {
+    vector<int> maxSumOfThreeSubarrays(vector<int> &nums, int k) {
         // Fixed length k reduces the search to picking starts: window[s] is
         // the sum of nums[s..s+k), and an answer is a triple (i, j, l) with
         // i + k <= j and j + k <= l maximizing window[i] + window[j] +

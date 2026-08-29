@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class Solution {
+
     private int f(String s) {
         // Smallest character of the string, then how often it appears.
         char smallest = s.charAt(0);
@@ -29,7 +30,8 @@ class Solution {
             int p = f(queries[i]);
             // Everything strictly above p forms one sorted suffix; find
             // where it starts.
-            int lo = 0, hi = freqs.length;
+            int lo = 0,
+                hi = freqs.length;
             while (lo < hi) {
                 int mid = (lo + hi) >>> 1;
                 if (freqs[mid] <= p) {

@@ -5,10 +5,6 @@ function findValidElements(nums: number[]): number[] {
     for (let i = nums.length - 2; i >= 0; i--) rightMax[i] = Math.max(rightMax[i + 1], nums[i]);
 
     return nums.filter(
-        (value, i) =>
-            i === 0 ||
-            i === nums.length - 1 ||
-            value > leftMax[i - 1] ||
-            value > rightMax[i + 1],
+        (value, i) => i === 0 || i === nums.length - 1 || value > leftMax[i - 1] || value > rightMax[i + 1],
     );
 }

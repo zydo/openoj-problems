@@ -12,7 +12,8 @@ class Solution {
                 end++;
             }
             // chars[start..end) is one word: reverse it with two pointers.
-            int lo = start, hi = end - 1;
+            int lo = start,
+                hi = end - 1;
             while (lo < hi) {
                 char tmp = chars[lo];
                 chars[lo++] = chars[hi];

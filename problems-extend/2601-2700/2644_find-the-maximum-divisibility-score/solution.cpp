@@ -9,7 +9,8 @@ class Solution {
         for (int divisor : divisors) {
             int score = 0;
             for (int value : nums)
-                if (value % divisor == 0) score++;
+                if (value % divisor == 0)
+                    score++;
             // Strictly larger wins outright; equal scores go to the smaller
             // divisor, which is exactly what `<` checks here.
             if (score > bestScore || (score == bestScore && divisor < bestDivisor)) {

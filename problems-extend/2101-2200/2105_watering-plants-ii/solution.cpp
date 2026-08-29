@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minimumRefill(vector<int>& plants, int capacityA, int capacityB) {
+  public:
+    int minimumRefill(vector<int> &plants, int capacityA, int capacityB) {
         int left = 0;
         int right = plants.size() - 1;
         int remainingA = capacityA;

@@ -4,7 +4,7 @@ class Solution {
         // C++ strings are mutable, so this is the true in-place scan: two
         // pointers walk inward and only vowel positions are ever written.
         const string vowels = "aeiouAEIOU";
-        int lo = 0, hi = (int) s.size() - 1;
+        int lo = 0, hi = (int)s.size() - 1;
         while (lo < hi) {
             // Advance whichever side does not sit on a vowel.
             if (vowels.find(s[lo]) == string::npos) {

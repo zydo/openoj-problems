@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string fractionAddition(string expression) {
-        throw logic_error("TODO");
-    }
+  public:
+    string fractionAddition(string expression) { throw logic_error("TODO"); }
 };

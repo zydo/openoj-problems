@@ -8,12 +8,14 @@ class Solution {
         // exactly once around the known black pixel (x, y).
         auto hasBlackRow = [&](int r) {
             for (const string &cell : image[r])
-                if (cell == "1") return true;
+                if (cell == "1")
+                    return true;
             return false;
         };
         auto hasBlackCol = [&](int c) {
             for (const vector<string> &row : image)
-                if (row[c] == "1") return true;
+                if (row[c] == "1")
+                    return true;
             return false;
         };
         // Each bound is a binary search outward from (x, y): the line through

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool checkValid(vector<vector<int>>& matrix) {
+  public:
+    bool checkValid(vector<vector<int>> &matrix) {
         int size = static_cast<int>(matrix.size());
         for (int index = 0; index < size; ++index) {
             vector<char> rowSeen(size + 1, false);

@@ -47,7 +47,7 @@ Since 2 is the only occupied position, we return [2].
 - `moveFrom.length == moveTo.length`
 - `1 <= nums[i], moveFrom[i], moveTo[i] <= 10⁹`
 - The test cases are generated such that there is at least a marble in
-`moveFrom[i]` at the moment we want to apply the ith move.
+  `moveFrom[i]` at the moment we want to apply the ith move.
 
 ## Hints
 

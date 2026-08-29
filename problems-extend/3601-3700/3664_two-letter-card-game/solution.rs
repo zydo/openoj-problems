@@ -15,9 +15,7 @@ impl Solution {
         if total == 0 {
             return 0;
         }
-        ((total + helpers) / 2)
-            .min(total + helpers - largest)
-            .min(total)
+        ((total + helpers) / 2).min(total + helpers - largest).min(total)
     }
 
     pub fn score(cards: Vec<String>, x: String) -> i32 {
@@ -43,9 +41,7 @@ impl Solution {
         // matching splits that way, so scanning all splits covers everything.
         let mut best = 0;
         for give in 0..=both {
-            best = best.max(
-                Self::best_pairs(&first_only, give) + Self::best_pairs(&second_only, both - give),
-            );
+            best = best.max(Self::best_pairs(&first_only, give) + Self::best_pairs(&second_only, both - give));
         }
         best
     }

@@ -17,7 +17,7 @@ function pathsWithMaxScore(board: string[]): number[] {
     // above and skipped here.
     for (let i = n - 1; i >= 0; --i) {
         for (let j = n - 1; j >= 0; --j) {
-            if (board[i][j] === 'X' || (i === n - 1 && j === n - 1)) {
+            if (board[i][j] === "X" || (i === n - 1 && j === n - 1)) {
                 continue;
             }
             let best = -1;
@@ -36,7 +36,7 @@ function pathsWithMaxScore(board: string[]): number[] {
                 }
             }
             if (best >= 0) {
-                const digit = board[i][j] >= '1' && board[i][j] <= '9' ? Number(board[i][j]) : 0;
+                const digit = board[i][j] >= "1" && board[i][j] <= "9" ? Number(board[i][j]) : 0;
                 score[i][j] = best + digit;
                 ways[i][j] = total % MOD;
             }

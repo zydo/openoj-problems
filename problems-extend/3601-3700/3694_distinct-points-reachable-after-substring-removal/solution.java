@@ -8,7 +8,8 @@ class Solution {
         // Moves add like vectors, so the endpoint left after deleting a
         // window is the full-walk endpoint minus the window's own
         // displacement — only window sums matter, never the re-walk.
-        int tx = 0, ty = 0;
+        int tx = 0,
+            ty = 0;
         for (int i = 0; i < n; i++) {
             tx += dx(s.charAt(i));
             ty += dy(s.charAt(i));
@@ -16,7 +17,8 @@ class Solution {
         // Slide the length-k window, updating its displacement in O(1) per
         // step — drop the outgoing move, pick up the incoming one — and
         // collect the endpoint every deletion produces.
-        int wx = 0, wy = 0;
+        int wx = 0,
+            wy = 0;
         for (int i = 0; i < k; i++) {
             wx += dx(s.charAt(i));
             wy += dy(s.charAt(i));

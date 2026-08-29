@@ -32,6 +32,6 @@ class Solution {
                 }
             }
         }
-        return String.valueOf((char) ('a' + shifts % 26));
+        return String.valueOf((char) ('a' + (shifts % 26)));
     }
 }

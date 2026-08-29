@@ -10,7 +10,7 @@ class Solution {
   private:
     // Ascending start values make each combination ascending and the walk
     // emit lexicographic order directly.
-    void walk(int n, int k, int start, vector<int>& current, vector<vector<int>>& combinations) {
+    void walk(int n, int k, int start, vector<int> &current, vector<vector<int>> &combinations) {
         // A full pick of k numbers is one combination.
         if ((int)current.size() == k) {
             // Copy: current is the shared buffer for the next branch.

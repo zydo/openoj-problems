@@ -15,10 +15,8 @@ impl Solution {
         const INFINITY: u32 = u32::MAX;
         let mut dis = vec![vec![INFINITY; n]; m];
         dis[0][0] = 1;
-        let mut rows: Vec<BinaryHeap<Reverse<(u32, usize)>>> =
-            (0..m).map(|_| BinaryHeap::new()).collect();
-        let mut cols: Vec<BinaryHeap<Reverse<(u32, usize)>>> =
-            (0..n).map(|_| BinaryHeap::new()).collect();
+        let mut rows: Vec<BinaryHeap<Reverse<(u32, usize)>>> = (0..m).map(|_| BinaryHeap::new()).collect();
+        let mut cols: Vec<BinaryHeap<Reverse<(u32, usize)>>> = (0..n).map(|_| BinaryHeap::new()).collect();
         rows[0].push(Reverse((1, 0)));
         cols[0].push(Reverse((1, 0)));
         for i in 0..m {

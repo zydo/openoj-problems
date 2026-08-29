@@ -49,7 +49,7 @@ class Solution {
             idx[c] = c;
         }
         java.util.Arrays.sort(idx, (a, b) -> Long.compare(vals[b], vals[a]));
-        return new int[] {idx[0], idx[1], idx[2]};
+        return new int[] { idx[0], idx[1], idx[2] };
     }
 
     private static int[] top3Int(int[] vals) {
@@ -58,6 +58,6 @@ class Solution {
             idx[c] = c;
         }
         java.util.Arrays.sort(idx, (a, b) -> Integer.compare(vals[b], vals[a]));
-        return new int[] {idx[0], idx[1], idx[2]};
+        return new int[] { idx[0], idx[1], idx[2] };
     }
 }

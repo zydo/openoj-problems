@@ -15,10 +15,8 @@ class Solution {
             }
         }
 
-        Integer[] order = {0, 1, 2, 3, 4};
-        Arrays.sort(
-                order,
-                (a, b) -> counts[a] != counts[b] ? counts[b] - counts[a] : first[a] - first[b]);
+        Integer[] order = { 0, 1, 2, 3, 4 };
+        Arrays.sort(order, (a, b) -> counts[a] != counts[b] ? counts[b] - counts[a] : first[a] - first[b]);
         StringBuilder arranged = new StringBuilder();
         for (int slot : order) {
             arranged.append(String.valueOf(vowels.charAt(slot)).repeat(counts[slot]));

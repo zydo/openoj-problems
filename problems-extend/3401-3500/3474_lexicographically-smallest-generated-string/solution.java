@@ -5,7 +5,8 @@ class Solution {
     public String generateString(String str1, String str2) {
         // 'T' windows pin their characters outright: stamp str2 into each
         // one, refusing the instance when two stamps disagree.
-        int n = str1.length(), m = str2.length();
+        int n = str1.length(),
+            m = str2.length();
         int total = n + m - 1;
         char[] word = new char[total];
         boolean[] covered = new boolean[total];

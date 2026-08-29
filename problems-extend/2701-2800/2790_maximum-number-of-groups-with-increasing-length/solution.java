@@ -41,7 +41,7 @@ class Solution {
 
     private boolean feasible(long[] g, int x) {
         for (int m = 1; m <= x; m++) {
-            if (g[m] < (long) m * (2 * x - m + 1) / 2) {
+            if (g[m] < ((long) m * (2 * x - m + 1)) / 2) {
                 return false;
             }
         }

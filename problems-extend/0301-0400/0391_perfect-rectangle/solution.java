@@ -14,7 +14,10 @@ class Solution {
         int maxB = Integer.MIN_VALUE;
         Set<Long> corners = new HashSet<>();
         for (int[] rectangle : rectangles) {
-            int x = rectangle[0], y = rectangle[1], a = rectangle[2], b = rectangle[3];
+            int x = rectangle[0],
+                y = rectangle[1],
+                a = rectangle[2],
+                b = rectangle[3];
             area += (long) (a - x) * (b - y);
             minX = Math.min(minX, x);
             minY = Math.min(minY, y);
@@ -27,12 +30,14 @@ class Solution {
             toggle(corners, pack(a, y));
             toggle(corners, pack(a, b));
         }
-        return corners.size() == 4
-                && corners.contains(pack(minX, minY))
-                && corners.contains(pack(minX, maxB))
-                && corners.contains(pack(maxA, minY))
-                && corners.contains(pack(maxA, maxB))
-                && area == (long) (maxA - minX) * (maxB - minY);
+        return (
+            corners.size() == 4 &&
+            corners.contains(pack(minX, minY)) &&
+            corners.contains(pack(minX, maxB)) &&
+            corners.contains(pack(maxA, minY)) &&
+            corners.contains(pack(maxA, maxB)) &&
+            area == (long) (maxA - minX) * (maxB - minY)
+        );
     }
 
     private void toggle(Set<Long> corners, long corner) {

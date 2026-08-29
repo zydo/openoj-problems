@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    std::vector<int> processQueries(std::vector<int>& queries, int m) {
+    std::vector<int> processQueries(std::vector<int> &queries, int m) {
         std::vector<int> p;
         p.reserve(m);
         for (int value = 1; value <= m; value++) {

@@ -45,10 +45,8 @@ Output: ["bob,50,1200,mtv"]
 - Each `transactions[i]` takes the form `"{name},{time},{amount},{city}"`
 - Each `{name}` and `{city}` consist of lowercase English letters, and have
   lengths between 1 and 10.
-- Each `{time}` consist of digits, and represent an integer between 0 and
-  1000.
-- Each `{amount}` consist of digits, and represent an integer between 0 and
-  2000.
+- Each `{time}` consist of digits, and represent an integer between 0 and 1000.
+- Each `{amount}` consist of digits, and represent an integer between 0 and 2000.
 
 ## Hints
 

@@ -6,8 +6,7 @@ impl Solution {
         let total_distinct = values.len();
         // A subarray is complete exactly when it holds every distinct value
         // of the whole array: atMost(k) counts it, atMost(k - 1) does not.
-        Self::at_most_distinct(&nums, total_distinct)
-            - Self::at_most_distinct(&nums, total_distinct - 1)
+        Self::at_most_distinct(&nums, total_distinct) - Self::at_most_distinct(&nums, total_distinct - 1)
     }
 
     // Number of subarrays holding at most `limit` distinct values, counted by

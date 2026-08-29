@@ -36,7 +36,7 @@ sort may use up to `O(log n)` stack).
 
 The full order is more than the answer needs. The count is decided entirely
 by which values sit strictly below `sorted[n - k - 1]` — a single threshold
-value — so all that is required is to *learn that value*, not to sort.
+value — so all that is required is to _learn that value_, not to sort.
 Quickselect finds it directly: it keeps a live window `[lo, hi]` promised to
 contain target index `t = n - k - 1`, picks a pivot, partitions the window,
 and keeps only the block still covering `t`. Each round retires the rest of

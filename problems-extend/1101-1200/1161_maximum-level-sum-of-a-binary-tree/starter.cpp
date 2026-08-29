@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxLevelSum(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxLevelSum(TreeNode *root) { throw logic_error("TODO"); }
 };

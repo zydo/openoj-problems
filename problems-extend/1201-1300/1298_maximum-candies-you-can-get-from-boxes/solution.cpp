@@ -3,10 +3,8 @@
 
 class Solution {
   public:
-    long long maxCandies(vector<int> &status, vector<int> &candies,
-                         vector<vector<int>> &keys,
-                         vector<vector<int>> &containedBoxes,
-                         vector<int> &initialBoxes) {
+    long long maxCandies(vector<int> &status, vector<int> &candies, vector<vector<int>> &keys,
+                         vector<vector<int>> &containedBoxes, vector<int> &initialBoxes) {
         // Two waiting rooms: owned-but-locked boxes, and the openable queue.
         int n = status.size();
         vector<bool> lockedHeld(n, false);
@@ -14,12 +12,14 @@ class Solution {
         long long total = 0;
         queue<int> pending;
 
-        for (int b : initialBoxes) acquire(b, status, opened, lockedHeld, pending);
+        for (int b : initialBoxes)
+            acquire(b, status, opened, lockedHeld, pending);
 
         while (!pending.empty()) {
             int b = pending.front();
             pending.pop();
-            if (opened[b]) continue;
+            if (opened[b])
+                continue;
             opened[b] = true;
             total += candies[b];
             for (int k : keys[b]) {
@@ -39,10 +39,10 @@ class Solution {
     }
 
   private:
-    void acquire(int box, vector<int> &status, vector<bool> &opened,
-                 vector<bool> &lockedHeld, queue<int> &pending) {
+    void acquire(int box, vector<int> &status, vector<bool> &opened, vector<bool> &lockedHeld, queue<int> &pending) {
         // Ownership event: an initial box, or one found inside another.
-        if (opened[box] || lockedHeld[box]) return;
+        if (opened[box] || lockedHeld[box])
+            return;
         if (status[box] == 1) {
             pending.push(box);
         } else {

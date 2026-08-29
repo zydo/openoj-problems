@@ -11,7 +11,7 @@ class Solution {
         // The second pass scans in index order for the first slot reading
         // exactly 1 — scanning left to right is what answers "first" — and
         // reaching the end without a hit means -1.
-        for (int i = 0; i < (int) s.size(); ++i) {
+        for (int i = 0; i < (int)s.size(); ++i) {
             if (counts[s[i] - 'a'] == 1) {
                 return i;
             }

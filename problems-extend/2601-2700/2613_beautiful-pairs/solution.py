@@ -31,8 +31,7 @@ class Solution:
                 delta = 1 << 60
                 for a in range(size):
                     for b in range(a + 1, size):
-                        gap = abs(xs[order[a]] - xs[order[b]]) + abs(
-                            ys[order[a]] - ys[order[b]])
+                        gap = abs(xs[order[a]] - xs[order[b]]) + abs(ys[order[a]] - ys[order[b]])
                         delta = min(delta, gap)
                 return delta, sorted(order, key=lambda i: ys[i])
             half = size // 2
@@ -54,10 +53,8 @@ class Solution:
             strip = [i for i in merged if abs(xs[i] - middle) < delta]
             for pos in range(len(strip)):
                 follow = pos + 1
-                while follow < len(strip) and \
-                        ys[strip[follow]] - ys[strip[pos]] < delta:
-                    gap = abs(xs[strip[pos]] - xs[strip[follow]]) + \
-                        abs(ys[strip[pos]] - ys[strip[follow]])
+                while follow < len(strip) and ys[strip[follow]] - ys[strip[pos]] < delta:
+                    gap = abs(xs[strip[pos]] - xs[strip[follow]]) + abs(ys[strip[pos]] - ys[strip[follow]])
                     delta = min(delta, gap)
                     follow += 1
             return delta, merged

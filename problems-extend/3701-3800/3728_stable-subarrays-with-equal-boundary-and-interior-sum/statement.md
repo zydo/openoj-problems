@@ -10,7 +10,7 @@ hold:
 - Its length is at least 3.
 - Its first and last elements are each equal to the sum of all elements
   strictly between them, i.e. `capacity[l] == capacity[r] ==
-  capacity[l + 1] + capacity[l + 2] + ... + capacity[r - 1]`.
+capacity[l + 1] + capacity[l + 2] + ... + capacity[r - 1]`.
 
 Return the number of stable subarrays.
 

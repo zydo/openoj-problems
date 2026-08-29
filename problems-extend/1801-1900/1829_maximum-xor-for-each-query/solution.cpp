@@ -9,7 +9,8 @@ class Solution {
     vector<int> getMaximumXor(vector<int> &nums, int maximumBit) {
         const int mask = (1 << maximumBit) - 1;
         int running = 0;
-        for (int value : nums) running ^= value;
+        for (int value : nums)
+            running ^= value;
         vector<int> answer;
         answer.reserve(nums.size());
         for (int i = (int)nums.size() - 1; i >= 0; i--) {

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long maximumHappinessSum(vector<int>& happiness, int k) {
+  public:
+    long long maximumHappinessSum(vector<int> &happiness, int k) {
         // Every unselected child loses 1 per turn, so the child picked
         // in turn i (0-based) contributes its original value minus i,
         // floored at 0. Values only shrink while waiting, so taking the

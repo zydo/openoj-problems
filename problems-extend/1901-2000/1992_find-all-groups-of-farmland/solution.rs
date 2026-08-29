@@ -25,7 +25,10 @@ impl Solution {
                     max_c = max_c.max(cc);
                     for d in 0..4 {
                         let (nr, nc) = (cr as isize + dr[d], cc as isize + dc[d]);
-                        if 0 <= nr && (nr as usize) < m && 0 <= nc && (nc as usize) < n
+                        if 0 <= nr
+                            && (nr as usize) < m
+                            && 0 <= nc
+                            && (nc as usize) < n
                             && land[nr as usize][nc as usize] == 1
                             && !seen[nr as usize][nc as usize]
                         {

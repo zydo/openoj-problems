@@ -1,10 +1,5 @@
 impl Solution {
-    pub fn max_area(
-        h: i64,
-        w: i64,
-        mut horizontal_cuts: Vec<i64>,
-        mut vertical_cuts: Vec<i64>,
-    ) -> i64 {
+    pub fn max_area(h: i64, w: i64, mut horizontal_cuts: Vec<i64>, mut vertical_cuts: Vec<i64>) -> i64 {
         const MOD: i64 = 1_000_000_007;
         let max_h = widest(h, &mut horizontal_cuts);
         let max_w = widest(w, &mut vertical_cuts);

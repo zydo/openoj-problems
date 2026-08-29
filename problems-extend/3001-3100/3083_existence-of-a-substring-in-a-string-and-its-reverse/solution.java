@@ -14,8 +14,7 @@ class Solution {
         Set<String> seen = new HashSet<>();
         for (int i = 0; i + 1 < s.length(); i++) {
             String pair = s.substring(i, i + 2);
-            if (s.charAt(i) == s.charAt(i + 1)
-                    || seen.contains(s.substring(i + 1, i + 2) + s.substring(i, i + 1))) {
+            if (s.charAt(i) == s.charAt(i + 1) || seen.contains(s.substring(i + 1, i + 2) + s.substring(i, i + 1))) {
                 return true;
             }
             seen.add(pair);

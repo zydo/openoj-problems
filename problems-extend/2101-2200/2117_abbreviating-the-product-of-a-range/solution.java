@@ -18,15 +18,15 @@ class Solution {
                 fives++;
                 remaining /= 5;
             }
-            suffix = suffix * remaining % modulus;
+            suffix = (suffix * remaining) % modulus;
         }
 
         int zeros = Math.min(twos, fives);
         for (int count = zeros; count < twos; count++) {
-            suffix = suffix * 2 % modulus;
+            suffix = (suffix * 2) % modulus;
         }
         for (int count = zeros; count < fives; count++) {
-            suffix = suffix * 5 % modulus;
+            suffix = (suffix * 5) % modulus;
         }
 
         double adjustedLogarithm = logarithm - zeros;

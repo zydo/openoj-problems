@@ -8,4 +8,5 @@ GROUP BY
   name
 ORDER BY
   COUNT(*) DESC
-LIMIT 1
+LIMIT
+  1

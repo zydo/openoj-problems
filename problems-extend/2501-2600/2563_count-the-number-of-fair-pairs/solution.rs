@@ -24,7 +24,6 @@ impl Solution {
         // counts each original pair exactly once.
         let mut arr = nums.clone();
         arr.sort_unstable();
-        Self::count_at_most(&arr, upper as i64)
-            - Self::count_at_most(&arr, lower as i64 - 1)
+        Self::count_at_most(&arr, upper as i64) - Self::count_at_most(&arr, lower as i64 - 1)
     }
 }

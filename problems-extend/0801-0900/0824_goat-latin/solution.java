@@ -19,7 +19,9 @@ class Solution {
             if (i > 0) {
                 out.append(' ');
             }
-            out.append(word).append("ma").append("a".repeat(i + 1));
+            out.append(word)
+                .append("ma")
+                .append("a".repeat(i + 1));
         }
         return out.toString();
     }

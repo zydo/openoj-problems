@@ -1,10 +1,10 @@
 class Solution {
   public:
-    int maxProduct(TreeNode* root) {
+    int maxProduct(TreeNode *root) {
         // Iterative post-order computes every subtree sum; each non-root sum
         // s scores the cut s * (total - s), maximized before the modulo.
-        unordered_map<TreeNode*, long long> sums;
-        vector<pair<TreeNode*, bool>> stack;
+        unordered_map<TreeNode *, long long> sums;
+        vector<pair<TreeNode *, bool>> stack;
         stack.push_back({root, false});
         while (!stack.empty()) {
             auto [cur, done] = stack.back();
@@ -24,7 +24,7 @@ class Solution {
         }
         long long total = sums[root];
         long long best = 0;
-        for (const auto& [node, part] : sums) {
+        for (const auto &[node, part] : sums) {
             if (node != root) {
                 best = max(best, part * (total - part));
             }

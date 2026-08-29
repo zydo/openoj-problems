@@ -61,10 +61,11 @@ class Solution {
                 int sumGe = totals[1] - fenSum.prefix(need - 1);
                 resultList.add(sumGe - (need - 1) * cntGe);
             } else {
-                int index = query[1], color = query[2];
+                int index = query[1],
+                    color = query[2];
                 if (colors[index] == color) continue;
                 colors[index] = color;
-                int[] touched = {(index + n - 1) % n, index};
+                int[] touched = { (index + n - 1) % n, index };
                 for (int e : touched) {
                     boolean isBad = colors[e] == colors[(e + 1) % n];
                     if (isBad == bad[e]) continue;
@@ -85,10 +86,16 @@ class Solution {
     }
 
     private static void insertEdge(
-            java.util.TreeSet<Integer> bads, Fenwick fenCnt, Fenwick fenSum,
-            int[] totals, int n, int e) {
+        java.util.TreeSet<Integer> bads,
+        Fenwick fenCnt,
+        Fenwick fenSum,
+        int[] totals,
+        int n,
+        int e
+    ) {
         if (!bads.isEmpty()) {
-            int p = prevBad(bads, e), nx = nextBad(bads, e);
+            int p = prevBad(bads, e),
+                nx = nextBad(bads, e);
             runsUpdate(fenCnt, fenSum, totals, n, mod(nx - p - 1, n), -1);
             runsUpdate(fenCnt, fenSum, totals, n, mod(e - p - 1, n), 1);
             runsUpdate(fenCnt, fenSum, totals, n, mod(nx - e - 1, n), 1);
@@ -100,11 +107,17 @@ class Solution {
     }
 
     private static void removeEdge(
-            java.util.TreeSet<Integer> bads, Fenwick fenCnt, Fenwick fenSum,
-            int[] totals, int n, int e) {
+        java.util.TreeSet<Integer> bads,
+        Fenwick fenCnt,
+        Fenwick fenSum,
+        int[] totals,
+        int n,
+        int e
+    ) {
         bads.remove(e);
         if (!bads.isEmpty()) {
-            int p = prevBad(bads, e), nx = nextBad(bads, e);
+            int p = prevBad(bads, e),
+                nx = nextBad(bads, e);
             runsUpdate(fenCnt, fenSum, totals, n, mod(e - p - 1, n), -1);
             runsUpdate(fenCnt, fenSum, totals, n, mod(nx - e - 1, n), -1);
             runsUpdate(fenCnt, fenSum, totals, n, mod(nx - p - 1, n), 1);
@@ -127,8 +140,7 @@ class Solution {
         return ((d % n) + n) % n;
     }
 
-    private static void runsUpdate(
-            Fenwick fenCnt, Fenwick fenSum, int[] totals, int n, int length, int delta) {
+    private static void runsUpdate(Fenwick fenCnt, Fenwick fenSum, int[] totals, int n, int length, int delta) {
         if (length > 0) {
             fenCnt.add(length, delta);
             fenSum.add(length, delta * length);

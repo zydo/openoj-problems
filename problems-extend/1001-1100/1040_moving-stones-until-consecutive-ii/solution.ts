@@ -10,10 +10,7 @@ function numMovesStonesII(stones: number[]): number[] {
     // the low side (never touching it) wastes stones[1] - stones[0] of
     // already-occupied span; losing the high side wastes
     // stones[n-1] - stones[n-2]. Take the larger resulting move count.
-    const maxMoves = Math.max(
-        stones[n - 1] - stones[1] - (n - 2),
-        stones[n - 2] - stones[0] - (n - 2),
-    );
+    const maxMoves = Math.max(stones[n - 1] - stones[1] - (n - 2), stones[n - 2] - stones[0] - (n - 2));
 
     // Minimum: slide a window of n consecutive integer values across the
     // sorted positions; a window already holding k stones needs n - k

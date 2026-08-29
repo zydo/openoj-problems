@@ -14,11 +14,11 @@ the stored variables and their values.
 
 Table `Expressions`:
 
-| Column Name  | Type    |
-| ------------ | ------- |
-| left_operand | varchar |
-| operator     | enum    |
-| right_operand| varchar |
+| Column Name   | Type    |
+| ------------- | ------- |
+| left_operand  | varchar |
+| operator      | enum    |
+| right_operand | varchar |
 
 In SQL, `(left_operand, operator, right_operand)` is the primary key for
 this table. This table contains a boolean expression that should be

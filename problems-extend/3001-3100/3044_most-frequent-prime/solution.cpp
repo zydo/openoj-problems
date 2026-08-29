@@ -4,20 +4,20 @@ class Solution {
         // From every cell, march each of the eight directions straight to
         // the matrix edge; a path is fully described by its start and
         // direction.
-        const vector<pair<int, int>> directions = {
-            {0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}};
+        const vector<pair<int, int>> directions = {{0, 1},  {1, 1},   {1, 0},  {1, -1},
+                                                   {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}};
         unordered_map<int, int> counts;
         for (int i = 0; i < (int)mat.size(); ++i) {
             for (int j = 0; j < (int)mat[0].size(); ++j) {
                 for (const auto &[di, dj] : directions) {
                     long long value = mat[i][j];
                     int x = i + di, y = j + dj;
-                    while (x >= 0 && x < (int)mat.size() && y >= 0 &&
-                           y < (int)mat[0].size()) {
+                    while (x >= 0 && x < (int)mat.size() && y >= 0 && y < (int)mat[0].size()) {
                         // Appending one digit materializes the number formed
                         // at this step, so every step tallies on its own.
                         value = value * 10 + mat[x][y];
-                        if (value > 10 && isPrime(value)) ++counts[value];
+                        if (value > 10 && isPrime(value))
+                            ++counts[value];
                         x += di;
                         y += dj;
                     }
@@ -38,9 +38,11 @@ class Solution {
 
   private:
     bool isPrime(long long value) {
-        if (value % 2 == 0) return value == 2;
+        if (value % 2 == 0)
+            return value == 2;
         for (long long factor = 3; factor * factor <= value; factor += 2)
-            if (value % factor == 0) return false;
+            if (value % factor == 0)
+                return false;
         return true;
     }
 };

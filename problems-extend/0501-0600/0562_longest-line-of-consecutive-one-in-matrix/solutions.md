@@ -5,7 +5,7 @@
 A line of ones passing through a cell arrives from exactly one of four
 neighbours per direction: the left (horizontal), the cell above (vertical), the
 upper-left (diagonal), or the upper-right (anti-diagonal). So a single sweep
-can track, for every cell holding a 1, the length of the run of ones *ending*
+can track, for every cell holding a 1, the length of the run of ones _ending_
 at that cell in each of the four directions. A 1 extends the four runs that
 arrive at it by one; a 0 resets all four to zero, because no line can pass
 through it. The answer is the largest value any run ever reaches, and a matrix

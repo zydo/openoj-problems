@@ -19,7 +19,7 @@ class Solution {
         int[] bits = new int[20];
         int k = 0;
         for (int b = 0; b < 20; ++b) {
-            if ((total >> b & 1) != 0) {
+            if (((total >> b) & 1) != 0) {
                 bits[k++] = b;
             }
         }
@@ -33,7 +33,7 @@ class Solution {
         for (int x : nums) {
             int m = 0;
             for (int i = 0; i < k; ++i) {
-                if ((x >> bits[i] & 1) != 0) {
+                if (((x >> bits[i]) & 1) != 0) {
                     m |= 1 << i;
                 }
             }
@@ -51,16 +51,16 @@ class Solution {
         long[] pw = new long[n + 1];
         pw[0] = 1;
         for (int i = 1; i <= n; ++i) {
-            pw[i] = pw[i - 1] * 2 % MOD;
+            pw[i] = (pw[i - 1] * 2) % MOD;
         }
         long ans = 0;
         for (int S = 1; S < 1 << k; ++S) {
-            long term = pw[(int) (h[(full ^ S)])];
+            long term = pw[(int) h[full ^ S]];
             if ((Integer.bitCount(S) & 1) == 0) {
                 term = MOD - term;
             }
             ans = (ans + term) % MOD;
         }
-        return (int) ((ans % MOD + MOD) % MOD);
+        return (int) (((ans % MOD) + MOD) % MOD);
     }
 }

@@ -27,7 +27,7 @@ var maxFixedPoints = function (nums) {
     };
 
     let answer = 0;
-    for (let start = 0; start < candidates.length; ) {
+    for (let start = 0; start < candidates.length;) {
         let end = start;
         const pending = [];
         while (end < candidates.length && candidates[end][0] === candidates[start][0]) {

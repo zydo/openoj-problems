@@ -1,4 +1,5 @@
 class Solution {
+
     public boolean winnerOfGame(String colors) {
         int aliceMoves = 0;
         int bobMoves = 0;

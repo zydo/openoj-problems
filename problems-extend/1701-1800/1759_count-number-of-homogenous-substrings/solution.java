@@ -10,7 +10,7 @@ class Solution {
         char prev = 0;
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            run = (c == prev) ? run + 1 : 1;
+            run = c == prev ? run + 1 : 1;
             prev = c;
             total = (total + run) % MOD;
         }

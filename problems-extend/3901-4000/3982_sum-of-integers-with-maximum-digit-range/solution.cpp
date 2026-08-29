@@ -22,7 +22,8 @@ class Solution {
         }
         long long answer = 0;
         for (int i = 0; i < (int)nums.size(); ++i)
-            if (ranges[i] == maximum) answer += nums[i];
+            if (ranges[i] == maximum)
+                answer += nums[i];
         return answer;
     }
 };

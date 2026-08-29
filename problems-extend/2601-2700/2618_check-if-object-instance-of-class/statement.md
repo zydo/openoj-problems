@@ -82,11 +82,11 @@ In Javascript, inheritance is achieved with the prototype chain.
 
 ### Hint 2
 
-You can get the prototype of an object with the Object.getPrototypeOf(obj) function. Alternatively, you can code obj['__proto__'].
+You can get the prototype of an object with the Object.getPrototypeOf(obj) function. Alternatively, you can code obj['**proto**'].
 
 ### Hint 3
 
-You can compare an object's __proto__ with classFunction.prototype.
+You can compare an object's **proto** with classFunction.prototype.
 
 ### Hint 4
 

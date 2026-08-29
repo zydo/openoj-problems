@@ -33,12 +33,12 @@ func lexSmallest(s string) string {
 		ht2[i+1] = (ht2[i]*b2 + w) % m2
 	}
 	subS := func(l, length int) (int64, int64) {
-		return (hs1[l+length]-hs1[l]*pw1[length]%m1 + m1) % m1,
-			(hs2[l+length]-hs2[l]*pw2[length]%m2 + m2) % m2
+		return (hs1[l+length] - hs1[l]*pw1[length]%m1 + m1) % m1,
+			(hs2[l+length] - hs2[l]*pw2[length]%m2 + m2) % m2
 	}
 	subT := func(l, length int) (int64, int64) {
-		return (ht1[l+length]-ht1[l]*pw1[length]%m1 + m1) % m1,
-			(ht2[l+length]-ht2[l]*pw2[length]%m2 + m2) % m2
+		return (ht1[l+length] - ht1[l]*pw1[length]%m1 + m1) % m1,
+			(ht2[l+length] - ht2[l]*pw2[length]%m2 + m2) % m2
 	}
 	// Hash pair of a candidate's first `length` characters: kind 0 is
 	// reverse(s[:k]) + s[k:] (slices t[:k] then s[k:]), kind 1 is

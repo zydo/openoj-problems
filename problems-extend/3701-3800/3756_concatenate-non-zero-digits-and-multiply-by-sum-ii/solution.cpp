@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    vector<int> sumAndMultiply(string s, vector<vector<int>>& queries) {
+    vector<int> sumAndMultiply(string s, vector<vector<int>> &queries) {
         // Prefix arrays over the NON-ZERO digits: prefVal keeps the value
         // mod M of concatenating them, prefSum their digit sum, prefCnt
         // their count. The compressed substring s[l..r] is the slice of the
@@ -28,7 +28,7 @@ class Solution {
         }
         vector<int> answer;
         answer.reserve(queries.size());
-        for (const auto& query : queries) {
+        for (const auto &query : queries) {
             int l = query[0], r = query[1];
             int k = prefCnt[r + 1] - prefCnt[l];
             // x = the concatenation of the k non-zero digits in s[l..r];

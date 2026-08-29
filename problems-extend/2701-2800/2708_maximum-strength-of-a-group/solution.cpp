@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maxStrength(vector<int>& nums) {
+    long long maxStrength(vector<int> &nums) {
         // Sorting gathers the negatives at the front. Zeros never help (any
         // kept product has magnitude >= 1), and negatives only pay off in
         // even counts, so multiply every nonzero element except — when the
@@ -11,13 +11,15 @@ class Solution {
         int n = nums.size();
         int neg = 0;
         for (int v : nums) {
-            if (v < 0) ++neg;
+            if (v < 0)
+                ++neg;
         }
         int skip = neg % 2 ? neg - 1 : -1;
         long long prod = 1;
         bool kept = false;
         for (int i = 0; i < n; ++i) {
-            if (i == skip || nums[i] == 0) continue;
+            if (i == skip || nums[i] == 0)
+                continue;
             prod *= nums[i];
             kept = true;
         }

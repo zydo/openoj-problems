@@ -15,8 +15,7 @@ impl Solution {
             let mut nxt = vec![0i64; target + 1];
             for (points, slot) in nxt.iter_mut().enumerate() {
                 let max_take = count.min(points / marks);
-                let total: i64 =
-                    (0..=max_take).map(|taken| dp[points - taken * marks]).sum();
+                let total: i64 = (0..=max_take).map(|taken| dp[points - taken * marks]).sum();
                 *slot = total % MOD;
             }
             dp = nxt;

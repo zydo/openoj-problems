@@ -32,10 +32,8 @@ class Solution:
             for j in range(n):
                 if row[j] == 0:
                     continue
-                corner = (i == 0 and j == 0) or (
-                    i == m - 1 and j == n - 1)
-                connect(2 * (i * n + j), 2 * (i * n + j) + 1,
-                        inf if corner else 1)
+                corner = (i == 0 and j == 0) or (i == m - 1 and j == n - 1)
+                connect(2 * (i * n + j), 2 * (i * n + j) + 1, inf if corner else 1)
                 if j + 1 < n and row[j + 1] == 1:
                     connect(2 * (i * n + j) + 1, 2 * (i * n + j + 1), inf)
                 if below is not None and below[j] == 1:

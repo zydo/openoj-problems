@@ -15,7 +15,7 @@ function maximumRows(matrix: number[][], numSelect: number): number {
         masks.push(mask);
     }
     let best = 0;
-    for (let sel = 0; sel < (1 << n); ++sel) {
+    for (let sel = 0; sel < 1 << n; ++sel) {
         let bits = 0;
         for (let t = sel; t !== 0; t >>= 1) {
             bits += t & 1;

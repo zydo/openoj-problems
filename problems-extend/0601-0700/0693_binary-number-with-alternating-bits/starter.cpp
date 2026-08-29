@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool hasAlternatingBits(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool hasAlternatingBits(int n) { throw logic_error("TODO"); }
 };

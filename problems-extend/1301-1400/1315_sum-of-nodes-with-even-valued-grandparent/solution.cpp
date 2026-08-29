@@ -1,11 +1,11 @@
 class Solution {
   public:
-    int sumEvenGrandparent(TreeNode* root) {
+    int sumEvenGrandparent(TreeNode *root) {
         // Each stack entry carries (node, parent value, grandparent value) so
         // the parity test needs no upward links. Explicit stack: the tree may
         // be a 10^4-node chain, beyond any recursion budget.
         struct Entry {
-            TreeNode* node;
+            TreeNode *node;
             int parent;
             int grandparent;
         };

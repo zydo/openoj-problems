@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> findMissingElements(vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> findMissingElements(vector<int> &nums) { throw logic_error("TODO"); }
 };

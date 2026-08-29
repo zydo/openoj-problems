@@ -4,7 +4,9 @@ WITH
       COUNT(*) AS items,
       COALESCE(SUM(square_footage), 0) AS footage,
       COALESCE(
-        CAST(500000 / NULLIF(SUM(square_footage), 0) AS INTEGER),
+        CAST(
+          500000 / NULLIF(SUM(square_footage), 0) AS INTEGER
+        ),
         0
       ) AS rounds
     FROM
@@ -31,8 +33,7 @@ SELECT
   'not_prime' AS item_type,
   COALESCE(
     CAST(
-      (500000 - prime.rounds * prime.footage)
-      / NULLIF(not_prime.footage, 0) AS INTEGER
+      (500000 - prime.rounds * prime.footage) / NULLIF(not_prime.footage, 0) AS INTEGER
     ),
     0
   ) * not_prime.items AS item_count

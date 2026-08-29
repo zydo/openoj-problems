@@ -14,7 +14,7 @@ class Solution {
         int[] ans = new int[n];
         int i = 0;
         long t = 0;
-        int prevDir = -1;   // -1 unused, 0 entering, 1 exiting
+        int prevDir = -1; // -1 unused, 0 entering, 1 exiting
         int done = 0;
         while (done < n) {
             while (i < n && arrival[i] <= t) {
@@ -26,7 +26,7 @@ class Solution {
                 i++;
             }
             if (enterQ.isEmpty() && exitQ.isEmpty()) {
-                t = arrival[i];     // jump the clock; idle breaks any streak
+                t = arrival[i]; // jump the clock; idle breaks any streak
                 prevDir = -1;
                 continue;
             }

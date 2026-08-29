@@ -37,6 +37,6 @@ func divisibleGame(nums []int) int {
 			bestK = k
 		}
 	}
-	answer := ((bestScore%mod+mod)%mod) * int64(bestK) % mod
+	answer := ((bestScore%mod + mod) % mod) * int64(bestK) % mod
 	return int(answer)
 }

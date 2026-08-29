@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    int distinctAverages(vector<int>& nums) {
+    int distinctAverages(vector<int> &nums) {
         // Sort, then pair the i-th smallest with the i-th largest. The
         // average (a + b) / 2 is distinct exactly when the sum a + b is
         // distinct, so track pair sums and never touch floats.

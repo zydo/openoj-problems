@@ -2,9 +2,14 @@ from typing import List
 
 
 class Solution:
-    def topStudents(self, positive_feedback: List[str],
-                    negative_feedback: List[str], report: List[str],
-                    student_id: List[int], k: int) -> List[int]:
+    def topStudents(
+        self,
+        positive_feedback: List[str],
+        negative_feedback: List[str],
+        report: List[str],
+        student_id: List[int],
+        k: int,
+    ) -> List[int]:
         # Membership sets make each report token O(1) to classify: +3 for
         # a positive word, -1 for a negative one, everything else free.
         # Sorting the (-points, id) pairs ascending is exactly the asked

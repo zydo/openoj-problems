@@ -80,7 +80,8 @@ Build components by unioning points that share the same x or the same y.
 
 Each x maps to one component and each y maps to one component. Adding (x0,
 y0) connects at most two distinct components; activated = size(A) + size(B)
-+ 1 (if same component then size(A) + 1).
+
+- 1 (if same component then size(A) + 1).
 
 ### Hint 4
 

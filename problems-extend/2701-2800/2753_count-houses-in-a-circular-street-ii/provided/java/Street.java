@@ -6,6 +6,7 @@ import java.util.List;
  * starter. Constructed from the case state (door states plus the query
  * budget); the agent starts at the first house. */
 public class Street {
+
     private final int[] doors;
     private long budget;
     private int position;

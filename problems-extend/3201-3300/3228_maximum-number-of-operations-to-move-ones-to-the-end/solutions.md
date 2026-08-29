@@ -8,7 +8,7 @@ to be a pure count of pairs, no simulation needed.
 
 ## Count one per one-before-a-zero-block pair
 
-Call a *pair* any combination of a `'1'` and a maximal block of 0's that opens
+Call a _pair_ any combination of a `'1'` and a maximal block of 0's that opens
 strictly to its right in the initial string. Each operation moves one `'1'`
 across one such block, and once a `'1'` has landed past a block's positions it
 stays past them forever — so no pair is ever spent twice, which bounds the

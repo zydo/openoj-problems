@@ -1,7 +1,8 @@
 class Solution {
 
     public int minDeletionSize(String[] strs) {
-        int rows = strs.length, cols = strs[0].length();
+        int rows = strs.length,
+            cols = strs[0].length();
         int[] dp = new int[cols];
         int best = 0;
         for (int j = 0; j < cols; j++) {

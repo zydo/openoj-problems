@@ -7,7 +7,7 @@ so the state worth remembering is just a position: let `dp[i]` be the minimum
 cost to assemble the suffix `target[i:]`, with `dp[len(target)] = 0`. Each
 position extends every word that matches its next characters, taking
 `dp[i + len(word)] + cost`. Two collapses keep that cheap: duplicate words
-reduce to their cheapest occurrence, and per position only *distinct* word
+reduce to their cheapest occurrence, and per position only _distinct_ word
 lengths matter — since total word length is capped, their count never exceeds
 about `sqrt(2 * total)`. Greedy longest-match fails (a pricey long word can
 block two cheap ones), and an unreachable `dp[0]` is the `-1` case.

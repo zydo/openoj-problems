@@ -1,8 +1,8 @@
 class Solution {
-public:
-    int winningPlayerCount(int n, vector<vector<int>>& pick) {
+  public:
+    int winningPlayerCount(int n, vector<vector<int>> &pick) {
         vector<vector<int>> counts(n, vector<int>(11, 0));
-        for (auto& p : pick) {
+        for (auto &p : pick) {
             counts[p[0]][p[1]]++;
         }
 

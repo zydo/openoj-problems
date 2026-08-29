@@ -28,8 +28,7 @@ class VirtualClock {
         };
         const position = this.timers.findIndex(
             (scheduled) =>
-                scheduled.time > timer.time ||
-                (scheduled.time === timer.time && scheduled.sequence > timer.sequence),
+                scheduled.time > timer.time || (scheduled.time === timer.time && scheduled.sequence > timer.sequence),
         );
         if (position === -1) {
             this.timers.push(timer);

@@ -4,8 +4,8 @@ impl Solution {
         let m = m as usize;
         let mut heights = vec![0usize; m];
         let mut best = n * m; // the all-1x1 tiling is always available
-        // Height of each column: the first column whose top is lowest names
-        // the next uncovered cell, so the board state is just m heights.
+                              // Height of each column: the first column whose top is lowest names
+                              // the next uncovered cell, so the board state is just m heights.
         fn backtrack(heights: &mut Vec<usize>, n: usize, m: usize, count: usize, best: &mut usize) {
             if count >= *best {
                 return;

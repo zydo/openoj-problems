@@ -31,7 +31,8 @@ impl Solution {
         let letter = pattern[pi];
         if let Some(&word) = char_to_word.get(&letter) {
             // A char already mapped must reproduce its word exactly.
-            return s[si..].starts_with(word) && Self::match_words(pattern, s, pi + 1, si + word.len(), char_to_word, word_to_char);
+            return s[si..].starts_with(word)
+                && Self::match_words(pattern, s, pi + 1, si + word.len(), char_to_word, word_to_char);
         }
         for end in si + 1..=s.len() {
             let word = &s[si..end];

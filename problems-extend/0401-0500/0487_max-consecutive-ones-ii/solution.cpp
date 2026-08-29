@@ -9,9 +9,11 @@ class Solution {
         // The largest window seen is the answer.
         int best = 0, left = 0, zeros = 0;
         for (int right = 0; right < (int)nums.size(); ++right) {
-            if (nums[right] == 0) zeros++;
+            if (nums[right] == 0)
+                zeros++;
             while (zeros > 1) {
-                if (nums[left] == 0) zeros--;
+                if (nums[left] == 0)
+                    zeros--;
                 left++;
             }
             best = max(best, right - left + 1);

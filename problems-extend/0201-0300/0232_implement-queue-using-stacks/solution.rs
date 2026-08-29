@@ -8,7 +8,10 @@ pub struct MyQueue {
 
 impl MyQueue {
     pub fn new() -> Self {
-        MyQueue { in_stack: Vec::new(), out_stack: Vec::new() }
+        MyQueue {
+            in_stack: Vec::new(),
+            out_stack: Vec::new(),
+        }
     }
 
     pub fn push(&mut self, x: i32) {

@@ -97,7 +97,7 @@ class Solution {
         // walk range, which is the LCA. depth and node stay under 2^17,
         // but the packed key passes 2^32, hence the 64-bit widening.
         int levels = 1;
-        while ((1 << levels) <= walkLength) {
+        while (1 << levels <= walkLength) {
             levels++;
         }
         long[][] table = new long[levels][];

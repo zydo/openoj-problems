@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int islandPerimeter(vector<vector<int>>& grid) {
+  public:
+    int islandPerimeter(vector<vector<int>> &grid) {
         // Every land cell owns four unit edges of boundary; each horizontal
         // or vertical pair of land neighbours hides two of them — one edge on
         // each side of the shared border.
@@ -12,8 +12,10 @@ public:
                     // Looking only up and left visits each adjacent pair
                     // exactly once, so the later cell charges the pair's
                     // full two-edge cost in one place.
-                    if (r > 0 && grid[r - 1][c] == 1) perimeter -= 2;
-                    if (c > 0 && grid[r][c - 1] == 1) perimeter -= 2;
+                    if (r > 0 && grid[r - 1][c] == 1)
+                        perimeter -= 2;
+                    if (c > 0 && grid[r][c - 1] == 1)
+                        perimeter -= 2;
                 }
             }
         }

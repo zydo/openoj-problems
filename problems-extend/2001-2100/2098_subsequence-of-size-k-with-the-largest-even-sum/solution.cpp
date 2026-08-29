@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long largestEvenSum(vector<int>& nums, int k) {
+  public:
+    long long largestEvenSum(vector<int> &nums, int k) {
         sort(nums.begin(), nums.end(), greater<int>());
         long long total = 0;
         int smallestSelected[2] = {-1, -1};

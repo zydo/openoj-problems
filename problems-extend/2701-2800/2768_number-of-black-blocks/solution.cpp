@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     vector<long long> countBlackBlocks(int m, int n, vector<vector<int>> &coordinates) {
         vector<long long> answer(5);
         unordered_map<long long, int> counts;

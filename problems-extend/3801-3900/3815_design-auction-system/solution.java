@@ -44,12 +44,13 @@ class AuctionSystem {
     private void push(int userId, int itemId, int amount) {
         long pair = key(userId, itemId);
         latestSeq.put(pair, ++clock);
-        PriorityQueue<long[]> heap =
-            heaps.computeIfAbsent(itemId, k -> new PriorityQueue<>((a, b) -> {
+        PriorityQueue<long[]> heap = heaps.computeIfAbsent(itemId, k ->
+            new PriorityQueue<>((a, b) -> {
                 if (a[0] != b[0]) return Long.compare(a[0], b[0]);
                 return Long.compare(a[1], b[1]);
-            }));
-        heap.add(new long[] {-amount, -userId, clock});
+            })
+        );
+        heap.add(new long[] { -amount, -userId, clock });
     }
 
     private static long key(int userId, int itemId) {

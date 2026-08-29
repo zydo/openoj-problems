@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maximumAND(vector<int>& nums, int k, int m) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maximumAND(vector<int> &nums, int k, int m) { throw logic_error("TODO"); }
 };

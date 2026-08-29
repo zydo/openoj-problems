@@ -30,8 +30,7 @@ class Solution {
             best = max(best, count.second);
         for (const auto &entry : bucket) {
             auto found = freq.find(entry.first);
-            int total =
-                entry.second + (found == freq.end() ? 0 : found->second);
+            int total = entry.second + (found == freq.end() ? 0 : found->second);
             best = max(best, total);
         }
         return best;

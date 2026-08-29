@@ -14,11 +14,9 @@ class Solution {
         // 2^30, so 2^30 itself can never be present and the scan stops
         // there at the latest.
         Set<Integer> present = new HashSet<>();
-        for (int value : nums)
-            present.add(value);
+        for (int value : nums) present.add(value);
         int power = 1;
-        while (present.contains(power))
-            power <<= 1;
+        while (present.contains(power)) power <<= 1;
         return power;
     }
 }

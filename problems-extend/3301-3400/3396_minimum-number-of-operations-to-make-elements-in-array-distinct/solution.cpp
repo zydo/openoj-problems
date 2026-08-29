@@ -4,7 +4,7 @@ class Solution {
     // nums[j:] for the smallest j whose suffix is duplicate-free. Scanning
     // right-to-left, that j is one past the first value that repeats inside
     // the tail; each operation removes 3 front elements.
-    int minimumOperations(vector<int>& nums) {
+    int minimumOperations(vector<int> &nums) {
         unordered_set<int> seen;
         int j = 0;
         for (int i = (int)nums.size() - 1; i >= 0; --i) {

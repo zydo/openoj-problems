@@ -14,13 +14,13 @@ class Solution {
             for (int c = 0; c < cols; ++c) {
                 boolean onBoundary = r == 0 || r == rows - 1 || c == 0 || c == cols - 1;
                 if (onBoundary && grid[r][c] == 1) {
-                    queue.add(new int[] {r, c});
+                    queue.add(new int[] { r, c });
                     grid[r][c] = 0;
                 }
             }
         }
 
-        int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        int[][] directions = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
         while (!queue.isEmpty()) {
             int[] cell = queue.poll();
             for (int[] direction : directions) {
@@ -28,7 +28,7 @@ class Solution {
                 int nc = cell[1] + direction[1];
                 if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && grid[nr][nc] == 1) {
                     grid[nr][nc] = 0;
-                    queue.add(new int[] {nr, nc});
+                    queue.add(new int[] { nr, nc });
                 }
             }
         }

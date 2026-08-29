@@ -11,20 +11,11 @@ function maxProduct(nums: number[], k: number, limit: number): number {
         Array.from({ length: width }, () => new Set<number>()),
         Array.from({ length: width }, () => new Set<number>()),
     ];
-    let zero = [
-        new Array<boolean>(width).fill(false),
-        new Array<boolean>(width).fill(false),
-    ];
-    let reach = [
-        new Array<boolean>(width).fill(false),
-        new Array<boolean>(width).fill(false),
-    ];
+    let zero = [new Array<boolean>(width).fill(false), new Array<boolean>(width).fill(false)];
+    let reach = [new Array<boolean>(width).fill(false), new Array<boolean>(width).fill(false)];
     for (const x of nums) {
         // Skipping x keeps every current state.
-        const np = [
-            products[0].map((s) => new Set(s)),
-            products[1].map((s) => new Set(s)),
-        ];
+        const np = [products[0].map((s) => new Set(s)), products[1].map((s) => new Set(s))];
         const nz = [zero[0].slice(), zero[1].slice()];
         const nr = [reach[0].slice(), reach[1].slice()];
         for (let p = 0; p < 2; p++) {

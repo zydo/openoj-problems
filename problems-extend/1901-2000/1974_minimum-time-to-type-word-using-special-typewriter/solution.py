@@ -10,7 +10,7 @@ class Solution:
         seconds = len(word)
         pos = 0  # pointer starts on 'a'
         for ch in word:
-            target = ord(ch) - ord('a')
+            target = ord(ch) - ord("a")
             diff = abs(target - pos)
             seconds += min(diff, 26 - diff)
             pos = target

@@ -26,23 +26,13 @@ impl Solution {
         best
     }
 
-    fn dfs(
-        divs: &[i32],
-        best: &mut Vec<i32>,
-        path: &mut Vec<i32>,
-        n: i32,
-        slots: i32,
-        start: usize,
-        prod: i64,
-    ) {
+    fn dfs(divs: &[i32], best: &mut Vec<i32>, path: &mut Vec<i32>, n: i32, slots: i32, start: usize, prod: i64) {
         if slots == 1 {
             // The last factor is forced to carry the product up to n; it
             // completes a nondecreasing split exactly when it reaches the
             // last pick. Both ends of the spread then sit on the path.
             let last = (n as i64 / prod) as i32;
-            if prod * last as i64 == n as i64
-                && (path.is_empty() || last >= path[path.len() - 1])
-            {
+            if prod * last as i64 == n as i64 && (path.is_empty() || last >= path[path.len() - 1]) {
                 let spread = if path.is_empty() {
                     0i64
                 } else {

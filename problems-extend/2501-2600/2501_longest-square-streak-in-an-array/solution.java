@@ -18,9 +18,7 @@ class Solution {
             if (i > 0 && values[i - 1] == value) continue;
             int root = (int) Math.round(Math.sqrt(value));
             Integer previous = length.get(root);
-            int len = previous != null && (long) root * root == value
-                    ? previous + 1
-                    : 1;
+            int len = previous != null && (long) root * root == value ? previous + 1 : 1;
             length.put(value, len);
             longest = Math.max(longest, len);
         }

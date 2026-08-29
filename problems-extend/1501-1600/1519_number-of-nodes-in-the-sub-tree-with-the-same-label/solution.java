@@ -21,7 +21,8 @@ class Solution {
         boolean[] visited = new boolean[n];
         Arrays.fill(parent, -1);
         visited[0] = true;
-        int head = 0, tail = 1;
+        int head = 0,
+            tail = 1;
         while (head < tail) {
             int u = order[head++];
             for (int v : adj.get(u)) {

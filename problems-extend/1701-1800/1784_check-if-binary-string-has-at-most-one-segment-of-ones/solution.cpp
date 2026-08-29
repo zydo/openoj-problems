@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool checkOnesSegment(string s) {
         // A segment is a maximal run of ones; a new one starts wherever
         // a '1' follows a '0'. Bail out as soon as a second starts.

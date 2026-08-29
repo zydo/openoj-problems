@@ -14,7 +14,8 @@ class Solution {
         int score = 0;
         for (int value : nums) {
             total += value;
-            if (total > 0) score++;
+            if (total > 0)
+                score++;
         }
         return score;
     }

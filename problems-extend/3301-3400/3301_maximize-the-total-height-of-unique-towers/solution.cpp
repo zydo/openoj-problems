@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maximumTotalSum(vector<int>& maximumHeight) {
+    long long maximumTotalSum(vector<int> &maximumHeight) {
         // Sorting descending makes the distinctness bound exact position by
         // position: once the previous tower took height prev, no later tower
         // may take anything above prev - 1, so each assigned height is

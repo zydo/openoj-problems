@@ -4,18 +4,20 @@ class Solution {
     // collapses to a set: [1, 1] and [1, 1] share only the value 1.
     // Pairwise set intersections then spell out the edges, and an iterative
     // stack DFS counts the components.
-    int numberOfComponents(vector<vector<int>>& properties, int k) {
+    int numberOfComponents(vector<vector<int>> &properties, int k) {
         int n = properties.size();
         vector<unordered_set<int>> sets(n);
         for (int i = 0; i < n; ++i) {
-            for (int value : properties[i]) sets[i].insert(value);
+            for (int value : properties[i])
+                sets[i].insert(value);
         }
         vector<vector<int>> adjacency(n);
         for (int i = 0; i < n; ++i) {
             for (int j = i + 1; j < n; ++j) {
                 int shared = 0;
                 for (int value : sets[i]) {
-                    if (sets[j].count(value)) ++shared;
+                    if (sets[j].count(value))
+                        ++shared;
                 }
                 if (shared >= k) {
                     adjacency[i].push_back(j);
@@ -27,7 +29,8 @@ class Solution {
         int components = 0;
         vector<int> stack;
         for (int start = 0; start < n; ++start) {
-            if (seen[start]) continue;
+            if (seen[start])
+                continue;
             ++components;
             // Mark on push so a node never enters the stack twice.
             seen[start] = true;

@@ -6,11 +6,7 @@
 // invocations change nothing.
 type CancelFn = () => void;
 
-function cancellable(
-    fn: (...args: any[]) => unknown,
-    args: any[],
-    t: number,
-): CancelFn {
+function cancellable(fn: (...args: any[]) => unknown, args: any[], t: number): CancelFn {
     // The judge's virtual clock hands out numeric handles.
     const timerId: number = setTimeout(() => {
         fn(...args);

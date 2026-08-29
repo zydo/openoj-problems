@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string alphabetBoardPath(string target) {
-        throw logic_error("TODO");
-    }
+  public:
+    string alphabetBoardPath(string target) { throw logic_error("TODO"); }
 };

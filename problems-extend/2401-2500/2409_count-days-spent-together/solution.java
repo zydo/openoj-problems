@@ -1,10 +1,9 @@
 class Solution {
 
-    public int countDaysTogether(
-        String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
+    public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
         // Month lengths of a non-leap year, turned into "days before month
         // m" so any "MM-DD" maps to one day-of-year integer.
-        int[] monthDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int[] monthDays = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         int[] monthStart = new int[12];
         for (int month = 1; month < 12; ++month) {
             monthStart[month] = monthStart[month - 1] + monthDays[month - 1];

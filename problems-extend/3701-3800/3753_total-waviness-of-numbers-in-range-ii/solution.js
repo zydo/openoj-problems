@@ -62,10 +62,7 @@ var totalWaviness = function (num1, num2) {
                                 let nd2;
                                 if (s === 1) {
                                     if (d2 !== NONE) {
-                                        if (
-                                            (d1 > d2 && d1 > x) ||
-                                            (d1 < d2 && d1 < x)
-                                        ) {
+                                        if ((d1 > d2 && d1 > x) || (d1 < d2 && d1 < x)) {
                                             gain = 1;
                                         }
                                     }

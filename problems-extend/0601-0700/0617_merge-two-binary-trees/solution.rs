@@ -1,8 +1,5 @@
 impl Solution {
-    pub fn merge_trees(
-        mut root1: Option<Box<TreeNode>>,
-        mut root2: Option<Box<TreeNode>>,
-    ) -> Option<Box<TreeNode>> {
+    pub fn merge_trees(mut root1: Option<Box<TreeNode>>, mut root2: Option<Box<TreeNode>>) -> Option<Box<TreeNode>> {
         // The merge rule pairs positions: nodes at the same spot in both
         // trees overlap and their values sum, while a spot only one tree
         // fills keeps that node — and everything under it — as is. An

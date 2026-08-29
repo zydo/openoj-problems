@@ -33,12 +33,13 @@ class Solution {
             failing += prefix(bit, lowerBound(values, m, threshold));
             add(bit, lowerBound(values, m, pref[b]));
         }
-        return (long) n * (n + 1) / 2 - failing;
+        return ((long) n * (n + 1)) / 2 - failing;
     }
 
     // Count of values[0..m) strictly less than x.
     private static int lowerBound(long[] values, int m, long x) {
-        int lo = 0, hi = m;
+        int lo = 0,
+            hi = m;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (values[mid] < x) {

@@ -19,7 +19,7 @@ class Solution {
         long[][] ways = new long[n + 1][size];
         ways[n][span] = 1;
         for (int i = n - 1; i >= 0; i--) {
-            int sign = (i % 2 == 0) ? 1 : -1;
+            int sign = i % 2 == 0 ? 1 : -1;
             for (int t = -span; t <= span; t++) {
                 long total = 0;
                 for (int d = 0; d <= 9; d++) {
@@ -35,7 +35,7 @@ class Solution {
         int diff = 0;
         for (int i = 0; i < n; i++) {
             int v = s.charAt(i) - '0';
-            int sign = (i % 2 == 0) ? 1 : -1;
+            int sign = i % 2 == 0 ? 1 : -1;
             // A digit below x's own fixes a smaller prefix forever, so
             // the freed tail counts whenever it can cancel the running
             // difference; x's digit itself keeps the walk tight.

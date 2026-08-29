@@ -5,10 +5,16 @@ impl Solution {
 
     pub fn day_of_the_week(day: i32, month: i32, year: i32) -> String {
         // Anchored: Jan 1 1971 was a Friday, so offset 0 maps to Friday.
-        const NAMES: [&str; 7] = ["Friday", "Saturday", "Sunday", "Monday",
-                                  "Tuesday", "Wednesday", "Thursday"];
-        const MONTH_DAYS: [i32; 12] = [31, 28, 31, 30, 31, 30, 31, 31, 30,
-                                       31, 30, 31];
+        const NAMES: [&str; 7] = [
+            "Friday",
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+        ];
+        const MONTH_DAYS: [i32; 12] = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
         let mut days: i64 = 0;
         for y in 1971..year {

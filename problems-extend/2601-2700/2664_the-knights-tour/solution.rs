@@ -1,16 +1,7 @@
 impl Solution {
     pub fn tour_of_knight(m: i32, n: i32, r: i32, c: i32) -> Vec<Vec<i32>> {
         let (m, n) = (m as usize, n as usize);
-        let moves: [(i32, i32); 8] = [
-            (1, 2),
-            (2, 1),
-            (2, -1),
-            (1, -2),
-            (-1, -2),
-            (-2, -1),
-            (-2, 1),
-            (-1, 2),
-        ];
+        let moves: [(i32, i32); 8] = [(1, 2), (2, 1), (2, -1), (1, -2), (-1, -2), (-2, -1), (-2, 1), (-1, 2)];
         let mut board = vec![vec![-1; n]; m];
         board[r as usize][c as usize] = 0;
         walk(&mut board, m, n, &moves, r, c, 1);
@@ -28,15 +19,7 @@ fn onward(board: &[Vec<i32>], m: usize, n: usize, moves: &[(i32, i32); 8], row: 
         .count()
 }
 
-fn walk(
-    board: &mut [Vec<i32>],
-    m: usize,
-    n: usize,
-    moves: &[(i32, i32); 8],
-    row: i32,
-    col: i32,
-    order: i32,
-) -> bool {
+fn walk(board: &mut [Vec<i32>], m: usize, n: usize, moves: &[(i32, i32); 8], row: i32, col: i32, order: i32) -> bool {
     if order as usize == m * n {
         return true;
     }

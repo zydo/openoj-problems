@@ -16,7 +16,8 @@ class Solution {
             } else {
                 cur = 1;
             }
-            if (cur > 1) best = max(best, cur);
+            if (cur > 1)
+                best = max(best, cur);
         }
         return best;
     }

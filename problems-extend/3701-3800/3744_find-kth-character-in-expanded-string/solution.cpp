@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string kthCharacter(string s, long long k) {
         // A word's letter at offset i (0-based) fills i + 1 consecutive slots
         // of t and a space fills exactly one, so walking s while subtracting

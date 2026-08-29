@@ -19,7 +19,7 @@ func (h countHeap) Less(a, b int) bool {
 	}
 	return h[a].letter < h[b].letter
 }
-func (h countHeap) Swap(a, b int)     { h[a], h[b] = h[b], h[a] }
+func (h countHeap) Swap(a, b int) { h[a], h[b] = h[b], h[a] }
 func (h *countHeap) Push(x interface{}) {
 	*h = append(*h, x.(countItem))
 }

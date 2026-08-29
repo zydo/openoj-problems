@@ -1,10 +1,10 @@
 class Solution {
-public:
+  public:
     // Anchor each point in turn and bucket every later point by the
     // direction from the anchor: on any one line through the anchor all
     // other members share that direction, and the best line is counted
     // in full when the anchor is its earliest point.
-    int maxPoints(vector<vector<int>>& points) {
+    int maxPoints(vector<vector<int>> &points) {
         int best = 1;
         for (int i = 0; i < (int)points.size(); ++i) {
             unordered_map<long long, int> counts;
@@ -25,7 +25,7 @@ public:
                 // multiplier, so packing the pair into one long cannot collide.
                 counts[(long long)dx * 1000000 + dy]++;
             }
-            for (auto& [direction, count] : counts)
+            for (auto &[direction, count] : counts)
                 best = max(best, 1 + count);
         }
         return best;

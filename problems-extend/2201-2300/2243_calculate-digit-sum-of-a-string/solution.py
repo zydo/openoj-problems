@@ -6,7 +6,7 @@ class Solution:
         while len(s) > k:
             groups = []
             for i in range(0, len(s), k):
-                group = s[i:i + k]
+                group = s[i : i + k]
                 groups.append(str(sum(int(c) for c in group)))
             s = "".join(groups)
         return s

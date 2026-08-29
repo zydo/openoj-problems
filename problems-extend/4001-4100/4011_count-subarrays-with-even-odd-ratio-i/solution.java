@@ -10,14 +10,11 @@ class Solution {
             int even = 0;
             int odd = 0;
             for (int right = left; right < n; right++) {
-                if (nums[right] % 2 == 0)
-                    even++;
-                else
-                    odd++;
+                if (nums[right] % 2 == 0) even++;
+                else odd++;
                 // Valid iff y > 0 and x/y <= a/b; with positive denominators
                 // that is exactly b*even <= a*odd.
-                if (odd > 0 && (long) b * even <= (long) a * odd)
-                    total++;
+                if (odd > 0 && (long) b * even <= (long) a * odd) total++;
             }
         }
         return total;

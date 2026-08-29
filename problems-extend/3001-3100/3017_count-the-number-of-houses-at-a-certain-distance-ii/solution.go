@@ -48,7 +48,7 @@ func countOfPairs(n int, x int, y int) []int {
 	// A partner right of y with an in-shortcut house in its left half:
 	// the trip (a - x) + 1 + (b - y) = a + b - x - y + 1 wins exactly
 	// when 2 * a < x + y - 1.
-	leftEnd := (x+y-2) / 2
+	leftEnd := (x + y - 2) / 2
 	if leftEnd >= x {
 		for b := y + 1; b <= n; b++ {
 			addRange(departures, b-leftEnd, b-x)

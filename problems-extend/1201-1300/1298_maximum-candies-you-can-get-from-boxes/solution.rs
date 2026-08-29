@@ -16,13 +16,7 @@ impl Solution {
         let mut queue: VecDeque<usize> = VecDeque::new();
 
         for b in initial_boxes {
-            acquire(
-                b as usize,
-                &status,
-                &opened,
-                &mut locked_held,
-                &mut queue,
-            );
+            acquire(b as usize, &status, &opened, &mut locked_held, &mut queue);
         }
 
         while let Some(b) = queue.pop_front() {
@@ -42,13 +36,7 @@ impl Solution {
                 }
             }
             for c in &contained_boxes[b] {
-                acquire(
-                    *c as usize,
-                    &status,
-                    &opened,
-                    &mut locked_held,
-                    &mut queue,
-                );
+                acquire(*c as usize, &status, &opened, &mut locked_held, &mut queue);
             }
         }
         total
@@ -56,13 +44,7 @@ impl Solution {
 }
 
 // Ownership event: an initial box, or one found inside another.
-fn acquire(
-    box_index: usize,
-    status: &[i32],
-    opened: &[bool],
-    locked_held: &mut [bool],
-    queue: &mut VecDeque<usize>,
-) {
+fn acquire(box_index: usize, status: &[i32], opened: &[bool], locked_held: &mut [bool], queue: &mut VecDeque<usize>) {
     if opened[box_index] || locked_held[box_index] {
         return;
     }

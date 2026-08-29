@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> getSneakyNumbers(vector<int>& nums) {
+    vector<int> getSneakyNumbers(vector<int> &nums) {
         // Values all lie in 0..n-1, so a counter array indexed by value finds
         // the two count-2 entries; the ascending walk emits them in order.
         int n = (int)nums.size() - 2;

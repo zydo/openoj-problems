@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int dietPlanPerformance(vector<int>& calories, int k, int lower, int upper) {
-        throw logic_error("TODO");
-    }
+  public:
+    int dietPlanPerformance(vector<int> &calories, int k, int lower, int upper) { throw logic_error("TODO"); }
 };

@@ -18,7 +18,7 @@ class Solution {
             i = j;
         }
         int best = 0;
-        for (const auto& entry : counts) {
+        for (const auto &entry : counts) {
             best = max(best, entry.second);
         }
         return best;

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxSatisfaction(vector<int>& satisfaction) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxSatisfaction(vector<int> &satisfaction) { throw logic_error("TODO"); }
 };

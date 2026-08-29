@@ -68,10 +68,18 @@ impl Solution {
             // Kind 0 walks the reversed prefix backwards through s; past the
             // boundary both kinds continue with s at the same index.
             if kind == 0 {
-                if i < k { sb[k - 1 - i] } else { sb[i] }
+                if i < k {
+                    sb[k - 1 - i]
+                } else {
+                    sb[i]
+                }
             } else {
                 let head = n - k;
-                if i < head { sb[i] } else { tb[i - head] }
+                if i < head {
+                    sb[i]
+                } else {
+                    tb[i - head]
+                }
             }
         };
         let probe = n.min(16);

@@ -8,12 +8,12 @@ class Solution:
         diff = 0
         k = 0
         for i, ch in enumerate(num):
-            if ch == '?':
+            if ch == "?":
                 if i < len(num) // 2:
                     k += 1
                 else:
                     k -= 1
             else:
-                d = ord(ch) - ord('0')
+                d = ord(ch) - ord("0")
                 diff += d if i < len(num) // 2 else -d
         return 2 * diff + 9 * k != 0

@@ -11,9 +11,7 @@ class Solution {
         std::vector<int> masks;
         std::vector<int> current;
         struct Rec {
-            static void go(int position, int width,
-                           const std::vector<int> &bricks, int mask,
-                           std::vector<int> &masks) {
+            static void go(int position, int width, const std::vector<int> &bricks, int mask, std::vector<int> &masks) {
                 if (position == width) {
                     masks.push_back(mask);
                     return;

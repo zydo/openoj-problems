@@ -14,7 +14,7 @@ class Solution {
     // Ascending candidates make the walk emit lexicographic order directly;
     // the parity test prunes a branch the moment it would place two adjacent
     // elements both odd or both even.
-    void walk(int n, vector<int>& current, vector<bool>& used, vector<vector<int>>& results) {
+    void walk(int n, vector<int> &current, vector<bool> &used, vector<vector<int>> &results) {
         // Every position filled: snapshot the finished permutation.
         if ((int)current.size() == n) {
             // Copy: current is the shared buffer for the next branch.

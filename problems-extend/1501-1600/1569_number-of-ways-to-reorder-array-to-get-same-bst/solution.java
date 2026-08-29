@@ -17,11 +17,11 @@ class Solution {
         invFact = new long[n + 1];
         fact[0] = 1;
         for (int i = 1; i <= n; i++) {
-            fact[i] = fact[i - 1] * i % MOD;
+            fact[i] = (fact[i - 1] * i) % MOD;
         }
         invFact[n] = power(fact[n], MOD - 2);
         for (int i = n; i >= 1; i--) {
-            invFact[i - 1] = invFact[i] * i % MOD;
+            invFact[i - 1] = (invFact[i] * i) % MOD;
         }
 
         List<Integer> boxed = new ArrayList<>(n);
@@ -37,16 +37,16 @@ class Solution {
         base %= MOD;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                result = result * base % MOD;
+                result = (result * base) % MOD;
             }
-            base = base * base % MOD;
+            base = (base * base) % MOD;
             exp >>= 1;
         }
         return result;
     }
 
     private long comb(int a, int b) {
-        return fact[a] * invFact[b] % MOD * invFact[a - b] % MOD;
+        return (((fact[a] * invFact[b]) % MOD) * invFact[a - b]) % MOD;
     }
 
     // ways(arr) counts every reordering of arr (including arr itself) that
@@ -71,6 +71,6 @@ class Solution {
             }
         }
         long c = comb(left.size() + right.size(), left.size());
-        return c * ways(left) % MOD * ways(right) % MOD;
+        return (((c * ways(left)) % MOD) * ways(right)) % MOD;
     }
 }

@@ -9,12 +9,10 @@ function minimumVisitedCells(grid: number[][]): number {
     const m = grid.length;
     const n = grid[0].length;
     const infinity = Number.MAX_SAFE_INTEGER;
-    const dis: number[][] = Array.from({length: m}, () =>
-        new Array<number>(n).fill(infinity),
-    );
+    const dis: number[][] = Array.from({ length: m }, () => new Array<number>(n).fill(infinity));
     dis[0][0] = 1;
-    const rows: number[][][] = Array.from({length: m}, () => []);
-    const cols: number[][][] = Array.from({length: n}, () => []);
+    const rows: number[][][] = Array.from({ length: m }, () => []);
+    const cols: number[][][] = Array.from({ length: n }, () => []);
     const push = (heap: number[][], dis: number, index: number) => {
         heap.push([dis, index]);
         let child = heap.length - 1;
@@ -25,8 +23,7 @@ function minimumVisitedCells(grid: number[][]): number {
             child = parent;
         }
     };
-    const popStale = (heap: number[][], reach: (k: number) => number,
-                      limit: number) => {
+    const popStale = (heap: number[][], reach: (k: number) => number, limit: number) => {
         while (heap.length && reach(heap[0][1]) < limit) {
             heap[0] = heap[heap.length - 1];
             heap.pop();
@@ -35,10 +32,8 @@ function minimumVisitedCells(grid: number[][]): number {
                 const left = parent * 2 + 1;
                 const right = left + 1;
                 let best = parent;
-                if (left < heap.length && heap[left][0] < heap[best][0])
-                    best = left;
-                if (right < heap.length && heap[right][0] < heap[best][0])
-                    best = right;
+                if (left < heap.length && heap[left][0] < heap[best][0]) best = left;
+                if (right < heap.length && heap[right][0] < heap[best][0]) best = right;
                 if (best === parent) break;
                 [heap[parent], heap[best]] = [heap[best], heap[parent]];
                 parent = best;

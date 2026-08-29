@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string largestTimeFromDigits(vector<int>& arr) {
-        throw logic_error("TODO");
-    }
+  public:
+    string largestTimeFromDigits(vector<int> &arr) { throw logic_error("TODO"); }
 };

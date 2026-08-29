@@ -16,7 +16,13 @@ impl ZigzagIterator {
     pub fn new(v1: Vec<i32>, v2: Vec<i32>) -> Self {
         // No copies, no queue: only how far each vector has been served
         // (i1, i2) and whose turn is next (0 for v1, 1 for v2).
-        ZigzagIterator { v1, v2, i1: 0, i2: 0, turn: 0 }
+        ZigzagIterator {
+            v1,
+            v2,
+            i1: 0,
+            i2: 0,
+            turn: 0,
+        }
     }
 
     pub fn next(&mut self) -> i32 {

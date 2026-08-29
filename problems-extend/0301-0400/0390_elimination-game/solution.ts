@@ -6,7 +6,10 @@ function lastRemaining(n: number): number {
     // it): head += step. Each round also doubles the gap and halves the
     // count; when the count reaches 1, head is the last number — for
     // n = 9 the heads run 1, 2, 2, 6, matching the statement's trace.
-    let head = 1, step = 1, remaining = n, leftToRight = true;
+    let head = 1,
+        step = 1,
+        remaining = n,
+        leftToRight = true;
     while (remaining > 1) {
         if (leftToRight || remaining % 2 === 1) {
             head += step;

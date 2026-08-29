@@ -4,7 +4,7 @@ class Solution {
         // Probability-mass DP over the board. board[r][c] is the probability
         // of standing on (r, c) after the moves made so far; one gather sweep
         // advances it by one move, and mass addressed off the board is lost.
-        int[][] moves = {{-2, -1}, {-2, 1}, {-1, -2}, {-1, 2}, {1, -2}, {1, 2}, {2, -1}, {2, 1}};
+        int[][] moves = { { -2, -1 }, { -2, 1 }, { -1, -2 }, { -1, 2 }, { 1, -2 }, { 1, 2 }, { 2, -1 }, { 2, 1 } };
         double[][] board = new double[n][n];
         board[row][column] = 1.0;
         for (int step = 0; step < k; ++step) {

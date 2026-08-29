@@ -19,7 +19,7 @@ session start, session end, session id and session type.
 Write a solution to find the number of streaming sessions for users whose
 first session was as a viewer.
 
-Return the result table ordered by count of streaming sessions,  user_id in
+Return the result table ordered by count of streaming sessions, user_id in
 descending order.
 
 Each testcase supplies its own `dataset`: the DDL seeds the `Sessions`

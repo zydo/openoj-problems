@@ -1,4 +1,5 @@
 class Solution {
+
     public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
         // arrival[i] = minutes until employee i starts spreading the news.
         long[] arrival = new long[n];

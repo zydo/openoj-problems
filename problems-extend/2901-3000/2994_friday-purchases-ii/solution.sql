@@ -1,5 +1,5 @@
 WITH RECURSIVE
-  days(d) AS (
+  days (d) AS (
     SELECT
       DATE('2023-11-01')
     UNION ALL

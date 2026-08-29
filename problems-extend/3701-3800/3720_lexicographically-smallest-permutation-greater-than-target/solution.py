@@ -29,8 +29,4 @@ class Solution:
         # ascending order — the smallest tail this multiset allows.
         freq = bump_freq
         freq[ord(bump_ch) - ord("a")] -= 1
-        return (
-            target[:bump_at]
-            + bump_ch
-            + "".join(chr(ord("a") + d) * freq[d] for d in range(26))
-        )
+        return target[:bump_at] + bump_ch + "".join(chr(ord("a") + d) * freq[d] for d in range(26))

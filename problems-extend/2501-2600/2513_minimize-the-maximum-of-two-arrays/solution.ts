@@ -1,9 +1,4 @@
-function minimizeSet(
-    divisor1: number,
-    divisor2: number,
-    uniqueCnt1: number,
-    uniqueCnt2: number,
-): number {
+function minimizeSet(divisor1: number, divisor2: number, uniqueCnt1: number, uniqueCnt2: number): number {
     // Binary search the smallest feasible maximum m. For a candidate m:
     //   m - floor(m/d1) numbers arr1 can take, m - floor(m/d2) for arr2,
     //   and m - floor(m/lcm) blocked by neither. Every value stays below

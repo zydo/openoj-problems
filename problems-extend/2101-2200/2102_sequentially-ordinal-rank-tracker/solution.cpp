@@ -11,7 +11,7 @@ class SORTracker {
     };
 
     struct PrefixCompare {
-        bool operator()(const Location& left, const Location& right) const {
+        bool operator()(const Location &left, const Location &right) const {
             if (left.score != right.score) {
                 return left.score > right.score;
             }
@@ -20,7 +20,7 @@ class SORTracker {
     };
 
     struct RemainingCompare {
-        bool operator()(const Location& left, const Location& right) const {
+        bool operator()(const Location &left, const Location &right) const {
             if (left.score != right.score) {
                 return left.score < right.score;
             }
@@ -31,7 +31,7 @@ class SORTracker {
     priority_queue<Location, vector<Location>, PrefixCompare> prefix;
     priority_queue<Location, vector<Location>, RemainingCompare> remaining;
 
-public:
+  public:
     SORTracker() = default;
 
     void add(string name, int score) {

@@ -5,7 +5,7 @@
 
 class Solution {
   public:
-    int minValidStrings(vector<string>& words, string target) {
+    int minValidStrings(vector<string> &words, string target) {
         // dp[p] is the minimum number of valid strings forming target[:p];
         // dp[0] is 0 and every other cell starts out unreachable. An
         // Aho-Corasick automaton over words turns one left-to-right scan of
@@ -20,7 +20,7 @@ class Solution {
         // is -1 unless the full length was formed. All values fit an int.
         vector<unordered_map<char, int>> children(1);
         vector<int> fail(1, 0);
-        for (const string& word : words) {
+        for (const string &word : words) {
             int cur = 0;
             for (char ch : word) {
                 auto it = children[cur].find(ch);
@@ -36,13 +36,13 @@ class Solution {
             }
         }
         queue<int> bfs;
-        for (const auto& [ch, v] : children[0]) {
+        for (const auto &[ch, v] : children[0]) {
             bfs.push(v);
         }
         while (!bfs.empty()) {
             int u = bfs.front();
             bfs.pop();
-            for (const auto& [ch, v] : children[u]) {
+            for (const auto &[ch, v] : children[u]) {
                 int f = fail[u];
                 while (f && !children[f].count(ch)) {
                     f = fail[f];
@@ -55,14 +55,15 @@ class Solution {
         }
         vector<int> depth(children.size(), 0);
         for (int u = 0; u < (int)children.size(); u++) {
-            for (const auto& [ch, v] : children[u]) {
+            for (const auto &[ch, v] : children[u]) {
                 depth[v] = depth[u] + 1;
             }
         }
         int n = (int)target.size();
         const int inf = 1 << 30;
         int size = 1;
-        while (size < n + 2) size <<= 1;
+        while (size < n + 2)
+            size <<= 1;
         vector<int> tree(2 * size, inf);
         auto update = [&](int i, int value) {
             i += size;
@@ -74,8 +75,10 @@ class Solution {
         auto query = [&](int lo, int hi) {
             int res = inf;
             for (lo += size, hi += size; lo < hi; lo >>= 1, hi >>= 1) {
-                if (lo & 1) res = min(res, tree[lo++]);
-                if (hi & 1) res = min(res, tree[--hi]);
+                if (lo & 1)
+                    res = min(res, tree[lo++]);
+                if (hi & 1)
+                    res = min(res, tree[--hi]);
             }
             return res;
         };
@@ -92,7 +95,8 @@ class Solution {
                 return -1;
             }
             int lo = j + 1 - depth[cur];
-            if (lo < 0) lo = 0;
+            if (lo < 0)
+                lo = 0;
             int best = query(lo, j + 1);
             if (best != inf) {
                 update(j + 1, best + 1);

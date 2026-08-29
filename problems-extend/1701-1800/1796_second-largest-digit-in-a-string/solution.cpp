@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int secondHighest(string s) {
         // One pass tracking the two largest distinct digits seen: first
         // is the maximum, second the runner-up. A digit equal to an

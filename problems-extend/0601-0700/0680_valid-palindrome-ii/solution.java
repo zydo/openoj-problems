@@ -6,7 +6,8 @@ class Solution {
         // one end of the broken pair, so the answer is whether the stretch
         // without the left char or the stretch without the right char is an
         // exact palindrome. An unbroken walk needs no deletion at all.
-        int lo = 0, hi = s.length() - 1;
+        int lo = 0,
+            hi = s.length() - 1;
         while (lo < hi) {
             if (s.charAt(lo) != s.charAt(hi)) {
                 return isPalindrome(s, lo + 1, hi) || isPalindrome(s, lo, hi - 1);

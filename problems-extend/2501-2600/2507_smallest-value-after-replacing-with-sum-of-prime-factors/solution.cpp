@@ -14,8 +14,10 @@ class Solution {
                     remaining /= d;
                 }
             }
-            if (remaining > 1) total += remaining;
-            if (total >= n) return n;
+            if (remaining > 1)
+                total += remaining;
+            if (total >= n)
+                return n;
             n = total;
         }
     }

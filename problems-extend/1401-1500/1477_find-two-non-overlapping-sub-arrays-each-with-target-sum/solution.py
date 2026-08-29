@@ -6,7 +6,7 @@ INF = float("inf")
 class Solution:
     def minSumOfLengths(self, arr: List[int], target: int) -> int:
         n = len(arr)
-        best = [INF] * n          # best[i]: shortest target-window ending <= i
+        best = [INF] * n  # best[i]: shortest target-window ending <= i
         answer = INF
         best_so_far = INF
         window_sum = 0

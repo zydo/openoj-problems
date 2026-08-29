@@ -5,7 +5,10 @@ struct Fenwick {
 
 impl Fenwick {
     fn new(n: i64) -> Self {
-        Fenwick { n, bit: vec![0; (n + 1) as usize] }
+        Fenwick {
+            n,
+            bit: vec![0; (n + 1) as usize],
+        }
     }
 
     fn add(&mut self, i: i64, delta: i64) {
@@ -38,10 +41,7 @@ impl Solution {
         // Ordered peak positions plus a Fenwick tree holding
         // value[p] = p * (p - prev(p)) for every present peak p.
         let is_peak = |nums: &Vec<i32>, i: i64| -> bool {
-            i > 0
-                && i < n - 1
-                && nums[i as usize] > nums[(i - 1) as usize]
-                && nums[i as usize] > nums[(i + 1) as usize]
+            i > 0 && i < n - 1 && nums[i as usize] > nums[(i - 1) as usize] && nums[i as usize] > nums[(i + 1) as usize]
         };
 
         let mut peaks: std::collections::BTreeSet<i64> = std::collections::BTreeSet::new();

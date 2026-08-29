@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool canBeValid(string s, string locked) {
         if (s.size() % 2 == 1) {
             return false;

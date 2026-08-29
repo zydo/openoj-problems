@@ -7,7 +7,11 @@ impl Solution {
         // "++" left is a loss. A flip never crosses a '-', so the game
         // decomposes into independent '+'-runs: memoize on the sorted lengths
         // of the live runs (>= 2), which alone decide the position.
-        let runs: Vec<u8> = currentState.split('-').filter(|run| !run.is_empty()).map(|run| run.len() as u8).collect();
+        let runs: Vec<u8> = currentState
+            .split('-')
+            .filter(|run| !run.is_empty())
+            .map(|run| run.len() as u8)
+            .collect();
         let mut memo: HashMap<Vec<u8>, bool> = HashMap::new();
         Self::can_win_runs(&runs, &mut memo)
     }

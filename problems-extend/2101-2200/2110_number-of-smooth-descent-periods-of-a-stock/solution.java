@@ -1,4 +1,5 @@
 class Solution {
+
     public long getDescentPeriods(int[] prices) {
         long run = 1;
         long total = 1;

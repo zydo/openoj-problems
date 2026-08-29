@@ -6,7 +6,11 @@
   "slug": "make-sum-divisible-by-p",
   "title": "Make Sum Divisible by P",
   "difficulty": "",
-  "tags": ["Array", "Hash Table", "Prefix Sum"],
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

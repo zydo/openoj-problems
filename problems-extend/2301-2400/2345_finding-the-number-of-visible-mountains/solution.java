@@ -18,26 +18,25 @@ class Solution {
             }
             return Integer.compare(q[1], p[1]);
         });
-        List<int[]> stack = new ArrayList<>();  // {x, y, counted}
+        List<int[]> stack = new ArrayList<>(); // {x, y, counted}
         int i = 0;
         while (i < peaks.length) {
-            int j = i;  // run-length encode equal peaks to detect duplicates
+            int j = i; // run-length encode equal peaks to detect duplicates
             while (j < peaks.length && peaks[j][0] == peaks[i][0] && peaks[j][1] == peaks[i][1]) {
                 ++j;
             }
             boolean duplicated = j - i > 1;
-            int x = peaks[i][0], y = peaks[i][1];
-            while (!stack.isEmpty()
-                    && Math.abs(stack.get(stack.size() - 1)[0] - x)
-                            <= y - stack.get(stack.size() - 1)[1]) {
+            int x = peaks[i][0],
+                y = peaks[i][1];
+            while (
+                !stack.isEmpty() && Math.abs(stack.get(stack.size() - 1)[0] - x) <= y - stack.get(stack.size() - 1)[1]
+            ) {
                 stack.remove(stack.size() - 1);
             }
             boolean covered =
-                    !stack.isEmpty()
-                            && Math.abs(x - stack.get(stack.size() - 1)[0])
-                                    <= stack.get(stack.size() - 1)[1] - y;
+                !stack.isEmpty() && Math.abs(x - stack.get(stack.size() - 1)[0]) <= stack.get(stack.size() - 1)[1] - y;
             if (!covered) {
-                stack.add(new int[] {x, y, duplicated ? 0 : 1});
+                stack.add(new int[] { x, y, duplicated ? 0 : 1 });
             }
             i = j;
         }

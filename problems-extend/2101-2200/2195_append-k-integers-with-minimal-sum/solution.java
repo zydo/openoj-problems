@@ -18,14 +18,14 @@ class Solution {
             long gap = (long) ordered[i] - previous - 1;
             if (gap > 0) {
                 long use = Math.min(gap, (long) k - taken);
-                total += use * (previous + 1) + use * (use - 1) / 2;
+                total += use * (previous + 1) + (use * (use - 1)) / 2;
                 taken += use;
             }
             previous = ordered[i];
         }
         if (taken < k) {
             long use = (long) k - taken;
-            total += use * (previous + 1) + use * (use - 1) / 2;
+            total += use * (previous + 1) + (use * (use - 1)) / 2;
         }
         return total;
     }

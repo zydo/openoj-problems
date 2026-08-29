@@ -16,7 +16,7 @@ class Solution:
         # seeded above and skipped here.
         for i in range(n - 1, -1, -1):
             for j in range(n - 1, -1, -1):
-                if board[i][j] == 'X' or (i == n - 1 and j == n - 1):
+                if board[i][j] == "X" or (i == n - 1 and j == n - 1):
                     continue
                 best = -1
                 total = 0
@@ -30,7 +30,7 @@ class Solution:
                     elif score[ni][nj] == best:
                         total = (total + ways[ni][nj]) % MOD
                 if best >= 0:
-                    digit = ord(board[i][j]) - ord('0') if '1' <= board[i][j] <= '9' else 0
+                    digit = ord(board[i][j]) - ord("0") if "1" <= board[i][j] <= "9" else 0
                     score[i][j] = best + digit
                     ways[i][j] = total % MOD
         if ways[0][0] == 0:

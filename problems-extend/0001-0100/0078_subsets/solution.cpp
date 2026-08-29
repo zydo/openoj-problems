@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> subsets(vector<int>& nums) {
+    vector<vector<int>> subsets(vector<int> &nums) {
         int n = nums.size();
         vector<vector<int>> subsets;
         // Count masks upward from all bits clear ([]) to all bits set (the

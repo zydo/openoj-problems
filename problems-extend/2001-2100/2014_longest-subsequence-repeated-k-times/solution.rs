@@ -19,9 +19,7 @@ impl Solution {
         }
 
         fn search(source: &[u8], repetitions: i32, quotas: &mut [i32; 26], candidate: &mut String, best: &mut String) {
-            if candidate.len() > best.len()
-                || (candidate.len() == best.len() && candidate.as_str() > best.as_str())
-            {
+            if candidate.len() > best.len() || (candidate.len() == best.len() && candidate.as_str() > best.as_str()) {
                 *best = candidate.clone();
             }
 

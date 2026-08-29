@@ -6,7 +6,7 @@ class Solution {
         final int mod = 1000000007;
         long[] dp = new long[n + 1];
         dp[0] = 1;
-        for (long base = 1;; ++base) {
+        for (long base = 1; ; ++base) {
             long power = 1;
             for (int e = 0; e < x; ++e) power *= base;
             if (power > n) break;

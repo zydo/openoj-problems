@@ -2,8 +2,7 @@ from typing import List
 
 
 class Solution:
-    def findMaximalUncoveredRanges(self, n: int,
-                                  ranges: List[List[int]]) -> List[List[int]]:
+    def findMaximalUncoveredRanges(self, n: int, ranges: List[List[int]]) -> List[List[int]]:
         # n can be 10^9, so nothing may touch cells directly. Sorting by
         # start and sweeping a cursor turns every stretch the cursor
         # skips over into one maximal uncovered range.

@@ -15,12 +15,7 @@ class Solution:
 
         for i, char in enumerate(text):
             if char == "-":
-                if (
-                    i > 0
-                    and i + 1 < len(text)
-                    and text[i - 1].islower()
-                    and text[i + 1].islower()
-                ):
+                if i > 0 and i + 1 < len(text) and text[i - 1].islower() and text[i + 1].islower():
                     current.append(char)
                 else:
                     flush()

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int countEffective(vector<int>& nums) {
+    int countEffective(vector<int> &nums) {
         // A removal strictly decreases the OR exactly when it takes away
         // every element carrying at least one set bit of the total. For a
         // non-empty bit set S, the subsequences removing all occurrences of

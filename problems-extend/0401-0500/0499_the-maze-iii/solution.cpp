@@ -7,7 +7,9 @@ class Solution {
         vector<vector<string>> path(m, vector<string>(n));
         // min-heap of (d, instructions, r, c) — tuple order compares
         // distance first, then the instruction string
-        priority_queue<tuple<int, string, int, int>, vector<tuple<int, string, int, int>>, greater<tuple<int, string, int, int>>> heap;
+        priority_queue<tuple<int, string, int, int>, vector<tuple<int, string, int, int>>,
+                       greater<tuple<int, string, int, int>>>
+            heap;
         // Dijkstra over stopping cells, but the hole is a terminal that
         // captures the ball mid-roll. States carry (distance, instructions)
         // and the heap orders by distance first, string second, so the first

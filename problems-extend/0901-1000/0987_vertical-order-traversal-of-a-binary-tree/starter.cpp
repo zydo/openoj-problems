@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<vector<int>> verticalTraversal(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<vector<int>> verticalTraversal(TreeNode *root) { throw logic_error("TODO"); }
 };

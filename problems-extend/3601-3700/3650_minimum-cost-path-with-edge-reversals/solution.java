@@ -15,17 +15,16 @@ class Solution {
             graph[node] = new ArrayList<>();
         }
         for (int[] edge : edges) {
-            graph[edge[0]].add(new int[] {edge[1], edge[2]});
-            graph[edge[1]].add(new int[] {edge[0], 2 * edge[2]});
+            graph[edge[0]].add(new int[] { edge[1], edge[2] });
+            graph[edge[1]].add(new int[] { edge[0], 2 * edge[2] });
         }
 
         // Dijkstra from node 0; weights are positive, so each pop finalizes.
         long[] distances = new long[n];
         Arrays.fill(distances, Long.MAX_VALUE);
         distances[0] = 0;
-        PriorityQueue<long[]> heap =
-                new PriorityQueue<>((left, right) -> Long.compare(left[0], right[0]));
-        heap.offer(new long[] {0, 0});
+        PriorityQueue<long[]> heap = new PriorityQueue<>((left, right) -> Long.compare(left[0], right[0]));
+        heap.offer(new long[] { 0, 0 });
         while (!heap.isEmpty()) {
             long[] top = heap.poll();
             long distance = top[0];
@@ -37,7 +36,7 @@ class Solution {
                 long candidate = distance + next[1];
                 if (candidate < distances[next[0]]) {
                     distances[next[0]] = candidate;
-                    heap.offer(new long[] {candidate, next[0]});
+                    heap.offer(new long[] { candidate, next[0] });
                 }
             }
         }

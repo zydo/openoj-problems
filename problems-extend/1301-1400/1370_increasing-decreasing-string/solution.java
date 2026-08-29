@@ -1,4 +1,5 @@
 class Solution {
+
     public String sortString(String s) {
         int[] counts = new int[26];
         for (int i = 0; i < s.length(); i++) counts[s.charAt(i) - 'a'] += 1;

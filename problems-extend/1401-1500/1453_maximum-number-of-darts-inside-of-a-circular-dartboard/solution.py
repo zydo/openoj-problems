@@ -9,9 +9,7 @@ class Solution:
         eps = 1e-7
 
         def count_at(cx: float, cy: float) -> int:
-            return sum(
-                1 for x, y in darts if (x - cx) ** 2 + (y - cy) ** 2 <= r2 + eps
-            )
+            return sum(1 for x, y in darts if (x - cx) ** 2 + (y - cy) ** 2 <= r2 + eps)
 
         for i in range(n):
             best = max(best, count_at(darts[i][0], darts[i][1]))

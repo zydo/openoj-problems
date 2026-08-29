@@ -60,7 +60,8 @@ function canMouseWin(grid: string[], catJump: number, mouseJump: number): boolea
         const c = base % n;
         const win = label[s];
         if (t === 1) {
-            for (const m2 of mouseBack[m]) { // predecessors: the mouse just moved
+            for (const m2 of mouseBack[m]) {
+                // predecessors: the mouse just moved
                 const p = (m2 * n + c) * 2;
                 if (label[p] === UNKNOWN) {
                     if (win === MOUSE) {
@@ -73,7 +74,8 @@ function canMouseWin(grid: string[], catJump: number, mouseJump: number): boolea
                 }
             }
         } else {
-            for (const c2 of catBack[c]) { // predecessors: the cat just moved
+            for (const c2 of catBack[c]) {
+                // predecessors: the cat just moved
                 const p = (m * n + c2) * 2 + 1;
                 if (label[p] === UNKNOWN) {
                     if (win === CAT) {
@@ -91,7 +93,12 @@ function canMouseWin(grid: string[], catJump: number, mouseJump: number): boolea
 }
 
 function jumpLists(grid: string[], rows: number, cols: number, idx: number[], n: number, jump: number): number[][] {
-    const dirs: [number, number][] = [[0, 1], [0, -1], [1, 0], [-1, 0]];
+    const dirs: [number, number][] = [
+        [0, 1],
+        [0, -1],
+        [1, 0],
+        [-1, 0],
+    ];
     const out: number[][] = Array.from({ length: n }, () => []);
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {

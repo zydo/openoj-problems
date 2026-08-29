@@ -8,7 +8,7 @@ class Solution:
         depth = [0, 0]
         last = 0
         for char in seq:
-            if char == '(':
+            if char == "(":
                 # Open in the shallower group; on a tie reuse the group the
                 # previous '(' joined, so the depth gap never exceeds one.
                 if depth[0] < depth[1]:

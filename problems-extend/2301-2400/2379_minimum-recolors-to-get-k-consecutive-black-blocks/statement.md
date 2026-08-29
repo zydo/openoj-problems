@@ -55,4 +55,3 @@ Iterate through all possible consecutive substrings of k characters.
 
 Find the number of changes for each substring to make all blocks black, and
 return the minimum of these.
-

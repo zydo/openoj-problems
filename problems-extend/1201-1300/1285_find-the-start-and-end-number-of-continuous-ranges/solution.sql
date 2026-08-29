@@ -5,7 +5,10 @@ FROM
   (
     SELECT
       log_id,
-      ROW_NUMBER() OVER (ORDER BY log_id) AS rn
+      ROW_NUMBER() OVER (
+        ORDER BY
+          log_id
+      ) AS rn
     FROM
       Logs
   )

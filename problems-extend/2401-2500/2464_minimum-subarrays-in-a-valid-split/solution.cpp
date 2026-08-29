@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    int validSubarraySplit(vector<int>& nums) {
+    int validSubarraySplit(vector<int> &nums) {
         // dp[i] = fewest subarrays to validly split nums[:i]; dp[0] = 0.
         // The last subarray ends at i - 1, so its start j must satisfy
         // gcd(nums[j], nums[i - 1]) > 1, giving the transition dp[j] + 1.

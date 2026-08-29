@@ -3,7 +3,8 @@ class Solution {
     public boolean validWordAbbreviation(String word, String abbr) {
         // Two indexes walk word and abbr together: a letter must match
         // exactly, a digit run is one skip, and both walks must end together.
-        int i = 0, j = 0;
+        int i = 0,
+            j = 0;
         while (i < word.length() && j < abbr.length()) {
             char c = abbr.charAt(j);
             if (c >= '0' && c <= '9') {

@@ -29,6 +29,6 @@ var watchedVideosByFriends = function (watchedVideos, friends, id, level) {
         }
     }
     return [...counts.entries()]
-        .sort((a, b) => (a[1] !== b[1] ? a[1] - b[1] : (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0)))
+        .sort((a, b) => (a[1] !== b[1] ? a[1] - b[1] : a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
         .map((entry) => entry[0]);
 };

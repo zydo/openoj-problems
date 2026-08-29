@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class Solution {
+
     public int minDayskVariants(int[][] points, int k) {
         // At day t a variant reaches exactly the L1 ball of radius t around
         // its origin, so the answer is min over every lattice point p of the
@@ -9,8 +10,10 @@ class Solution {
         // shrinks every distance, so the minimizer lies inside it. With
         // coordinates bounded by 100 the box has at most 100*100 points and
         // n <= 50, so sorting the n distances per point is cheap.
-        int minX = Integer.MAX_VALUE, maxX = Integer.MIN_VALUE;
-        int minY = Integer.MAX_VALUE, maxY = Integer.MIN_VALUE;
+        int minX = Integer.MAX_VALUE,
+            maxX = Integer.MIN_VALUE;
+        int minY = Integer.MAX_VALUE,
+            maxY = Integer.MIN_VALUE;
         for (int[] p : points) {
             minX = Math.min(minX, p[0]);
             maxX = Math.max(maxX, p[0]);

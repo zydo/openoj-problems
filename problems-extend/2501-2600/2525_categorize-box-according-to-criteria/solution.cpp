@@ -9,12 +9,14 @@ class Solution {
         const long long BULK_VOLUME = 1'000'000'000LL;
         const int HEAVY_MASS = 100;
         long long volume = (long long)length * width * height;
-        bool bulky = length >= BULK_DIM || width >= BULK_DIM || height >= BULK_DIM ||
-                     volume >= BULK_VOLUME;
+        bool bulky = length >= BULK_DIM || width >= BULK_DIM || height >= BULK_DIM || volume >= BULK_VOLUME;
         bool heavy = mass >= HEAVY_MASS;
-        if (bulky && heavy) return "Both";
-        if (bulky) return "Bulky";
-        if (heavy) return "Heavy";
+        if (bulky && heavy)
+            return "Both";
+        if (bulky)
+            return "Bulky";
+        if (heavy)
+            return "Heavy";
         return "Neither";
     }
 };

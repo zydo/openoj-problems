@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool escapeGhosts(vector<vector<int>>& ghosts, vector<int>& target) {
+  public:
+    bool escapeGhosts(vector<vector<int>> &ghosts, vector<int> &target) {
         // Everyone covers one unit per turn on an empty grid, so travel
         // times are Manhattan distances: the runner needs |target| turns,
         // ghost i needs |ghosts[i] - target| turns to camp the target. A
@@ -10,7 +10,7 @@ public:
         // target at turn t, so the triangle inequality would place that
         // ghost within d of the target after all.
         int mine = abs(target[0]) + abs(target[1]);
-        for (const vector<int>& ghost : ghosts) {
+        for (const vector<int> &ghost : ghosts) {
             int theirs = abs(ghost[0] - target[0]) + abs(ghost[1] - target[1]);
             if (theirs <= mine) {
                 return false;

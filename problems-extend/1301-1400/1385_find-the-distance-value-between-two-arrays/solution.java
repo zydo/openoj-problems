@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class Solution {
+
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
         int[] sorted2 = arr2.clone();
         Arrays.sort(sorted2);

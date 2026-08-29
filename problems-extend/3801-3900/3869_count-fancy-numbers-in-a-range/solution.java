@@ -11,14 +11,14 @@ class Solution {
         // decreasing ones from 0..9 with no leading zero. Enumerate every
         // nonempty digit subset once per direction and deduplicate.
         Set<Long> goodSet = new HashSet<>();
-        for (int mask = 1; mask < (1 << 9); mask++) {
+        for (int mask = 1; mask < 1 << 9; mask++) {
             long num = 0;
             for (int d = 1; d <= 9; d++) {
                 if ((mask & (1 << (d - 1))) != 0) num = num * 10 + d;
             }
             goodSet.add(num);
         }
-        for (int mask = 1; mask < (1 << 10); mask++) {
+        for (int mask = 1; mask < 1 << 10; mask++) {
             long num = 0;
             for (int d = 9; d >= 0; d--) {
                 if ((mask & (1 << d)) != 0) num = num * 10 + d;

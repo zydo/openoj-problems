@@ -7,8 +7,7 @@ class Solution {
         // the last character of the last word. Bail out at the first broken
         // junction.
         for (int i = 0; i < sentence.length(); i++) {
-            if (sentence.charAt(i) == ' '
-                    && sentence.charAt(i - 1) != sentence.charAt(i + 1)) {
+            if (sentence.charAt(i) == ' ' && sentence.charAt(i - 1) != sentence.charAt(i + 1)) {
                 return false;
             }
         }

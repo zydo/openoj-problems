@@ -1,11 +1,11 @@
 class Solution {
-public:
-    double calculateTax(vector<vector<int>>& brackets, int income) {
+  public:
+    double calculateTax(vector<vector<int>> &brackets, int income) {
         // Walk the brackets in order; each is taxed on the slice of income
         // between the previous upper bound and min(income, upper).
         long long paid = 0;
         int prev = 0;
-        for (const auto& bracket : brackets) {
+        for (const auto &bracket : brackets) {
             int upper = bracket[0];
             int percent = bracket[1];
             if (income <= upper) {

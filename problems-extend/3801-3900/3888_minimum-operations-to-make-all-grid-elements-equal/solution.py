@@ -16,7 +16,7 @@ class Solution:
             return p[r2 + 1][c2 + 1] - p[r1][c2 + 1] - p[r2 + 1][c1] + p[r1][c1]
 
         fixed_t = None  # T fixed by a boundary cell
-        low_t = None    # lower bound on T from X >= 0 (A == 1 cells)
+        low_t = None  # lower bound on T from X >= 0 (A == 1 cells)
         sum_a = 0
         sum_b = 0
         for i in range(m):

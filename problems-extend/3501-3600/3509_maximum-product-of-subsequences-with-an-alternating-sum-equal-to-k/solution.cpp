@@ -7,11 +7,12 @@ class Solution {
     // containing a zero, even via products above the limit.
     int maxProduct(vector<int> &nums, int k, int limit) {
         int total = 0;
-        for (int v : nums) total += v;
-        if (abs(k) > total) return -1;
+        for (int v : nums)
+            total += v;
+        if (abs(k) > total)
+            return -1;
         int width = 2 * total + 1;
-        vector<vector<unordered_set<int>>> products(
-            2, vector<unordered_set<int>>(width));
+        vector<vector<unordered_set<int>>> products(2, vector<unordered_set<int>>(width));
         vector<vector<bool>> zero(2, vector<bool>(width, false));
         vector<vector<bool>> reach(2, vector<bool>(width, false));
         for (int x : nums) {
@@ -24,7 +25,8 @@ class Solution {
                 for (int i = 0; i < width; i++) {
                     int s = i - total;
                     int ns = s + sign * x;
-                    if (ns < -total || ns > total) continue;
+                    if (ns < -total || ns > total)
+                        continue;
                     int j = ns + total;
                     if (reach[p][i]) {
                         nr[q][j] = true;
@@ -33,7 +35,8 @@ class Solution {
                         } else {
                             for (int prod : products[p][i]) {
                                 int newp = prod * x;
-                                if (newp <= limit) np[q][j].insert(newp);
+                                if (newp <= limit)
+                                    np[q][j].insert(newp);
                             }
                         }
                     }
@@ -47,7 +50,8 @@ class Solution {
                 nr[1][total] = true;
             } else {
                 nr[1][x + total] = true;
-                if (x <= limit) np[1][x + total].insert(x);
+                if (x <= limit)
+                    np[1][x + total].insert(x);
             }
             products = move(np);
             zero = move(nz);
@@ -58,9 +62,11 @@ class Solution {
         if (idx >= 0 && idx < width) {
             for (int p = 0; p < 2; p++) {
                 for (int prod : products[p][idx]) {
-                    if (prod > ans) ans = prod;
+                    if (prod > ans)
+                        ans = prod;
                 }
-                if (zero[p][idx] && ans < 0) ans = 0;
+                if (zero[p][idx] && ans < 0)
+                    ans = 0;
             }
         }
         return ans;

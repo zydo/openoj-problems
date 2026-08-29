@@ -12,7 +12,8 @@ class Solution {
         // rolling rows carry the table. Answers are <= 2*(n+m) <= 4000, so
         // BIG = 1<<29 sentinel arithmetic stays far from overflow.
         final int BIG = 1 << 29;
-        int n = nums1.length, m = nums2.length;
+        int n = nums1.length,
+            m = nums2.length;
         int[] prv0 = new int[m + 1];
         int[] prv1 = new int[m + 1];
         Arrays.fill(prv0, BIG);
@@ -25,20 +26,18 @@ class Solution {
         }
         for (int i = 1; i <= n; i++) {
             int x = nums1[i - 1];
-            int stepX = (i >= 2 && nums1[i - 2] != x) ? 1 : 2;
+            int stepX = i >= 2 && nums1[i - 2] != x ? 1 : 2;
             int[] cur0 = new int[m + 1];
             int[] cur1 = new int[m + 1];
             Arrays.fill(cur0, BIG);
             Arrays.fill(cur1, BIG);
-            cur0[0] = (i == 1) ? 2 - x : prv0[0] + stepX;
+            cur0[0] = i == 1 ? 2 - x : prv0[0] + stepX;
             for (int j = 1; j <= m; j++) {
                 int y = nums2[j - 1];
-                cur0[j] = Math.min(prv0[j] + stepX,
-                        prv1[j] + (y != x ? 1 : 2));
+                cur0[j] = Math.min(prv0[j] + stepX, prv1[j] + (y != x ? 1 : 2));
                 int best = cur0[j - 1] + (x != y ? 1 : 2);
                 if (j >= 2) {
-                    best = Math.min(best,
-                            cur1[j - 1] + (nums2[j - 2] != y ? 1 : 2));
+                    best = Math.min(best, cur1[j - 1] + (nums2[j - 2] != y ? 1 : 2));
                 }
                 cur1[j] = best;
             }

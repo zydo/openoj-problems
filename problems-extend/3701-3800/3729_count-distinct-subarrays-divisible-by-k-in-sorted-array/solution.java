@@ -33,7 +33,7 @@ class Solution {
             long runLength = j - i;
             long step = k / gcd(nums[i], k);
             long repeated = runLength / step;
-            total -= repeated * runLength - step * repeated * (repeated + 1) / 2;
+            total -= repeated * runLength - (step * repeated * (repeated + 1)) / 2;
             i = j;
         }
         return total;

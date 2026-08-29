@@ -32,8 +32,7 @@ var countStableSubarrays = function (nums, queries) {
                 hi = mid;
             }
         }
-        const answer =
-            prefBase[r + 1] - prefBase[l] + prefLeft[lo] - prefLeft[l] - l * (lo - l);
+        const answer = prefBase[r + 1] - prefBase[l] + prefLeft[lo] - prefLeft[l] - l * (lo - l);
         result.push(answer);
     }
     return result;

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long countBadPairs(vector<int>& nums) {
+    long long countBadPairs(vector<int> &nums) {
         // j - i != nums[j] - nums[i] rearranges to nums[j] - j !=
         // nums[i] - i: a pair is good exactly when the shifted values match.
         // Count good pairs per shifted value, subtract from all pairs; pair

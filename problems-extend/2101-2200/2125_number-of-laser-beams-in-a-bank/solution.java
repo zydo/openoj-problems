@@ -1,4 +1,5 @@
 class Solution {
+
     public int numberOfBeams(String[] bank) {
         int beams = 0;
         int previous = 0;

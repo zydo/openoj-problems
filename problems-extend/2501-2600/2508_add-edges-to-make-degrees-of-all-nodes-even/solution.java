@@ -25,20 +25,25 @@ class Solution {
             if ((degree[node] & 1) == 1) odds[cursor++] = node;
         }
         if (oddCount == 2) {
-            int a = odds[0], b = odds[1];
+            int a = odds[0],
+                b = odds[1];
             if (!seen.contains(key(a, b))) return true;
             for (int c = 1; c <= n; ++c) {
-                if (c != a && c != b && !seen.contains(key(a, c))
-                        && !seen.contains(key(b, c))) {
+                if (c != a && c != b && !seen.contains(key(a, c)) && !seen.contains(key(b, c))) {
                     return true;
                 }
             }
             return false;
         }
-        int w = odds[0], x = odds[1], y = odds[2], z = odds[3];
-        return (!seen.contains(key(w, x)) && !seen.contains(key(y, z)))
-                || (!seen.contains(key(w, y)) && !seen.contains(key(x, z)))
-                || (!seen.contains(key(w, z)) && !seen.contains(key(x, y)));
+        int w = odds[0],
+            x = odds[1],
+            y = odds[2],
+            z = odds[3];
+        return (
+            (!seen.contains(key(w, x)) && !seen.contains(key(y, z))) ||
+            (!seen.contains(key(w, y)) && !seen.contains(key(x, z))) ||
+            (!seen.contains(key(w, z)) && !seen.contains(key(x, y)))
+        );
     }
 
     private static long key(int a, int b) {

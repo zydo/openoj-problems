@@ -24,11 +24,7 @@ impl Solution {
             let mut score = i64::MIN;
             let mut current = 0i64;
             for &value in &nums {
-                let transformed = if value % k == 0 {
-                    value as i64
-                } else {
-                    -(value as i64)
-                };
+                let transformed = if value % k == 0 { value as i64 } else { -(value as i64) };
                 current = transformed.max(current + transformed);
                 score = score.max(current);
             }

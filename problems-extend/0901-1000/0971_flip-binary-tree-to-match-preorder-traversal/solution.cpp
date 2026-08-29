@@ -32,8 +32,10 @@ class Solution {
                 left = right;
                 right = swap;
             }
-            if (right != nullptr) pending.push_back(right);
-            if (left != nullptr) pending.push_back(left);
+            if (right != nullptr)
+                pending.push_back(right);
+            if (left != nullptr)
+                pending.push_back(left);
         }
         if (cursor != voyage.size()) {
             return {-1};

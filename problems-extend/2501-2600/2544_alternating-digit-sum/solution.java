@@ -6,7 +6,9 @@ class Solution {
         // wants it on the most significant one. When the digit count is
         // even the accumulated total therefore needs a single final
         // negation.
-        int total = 0, sign = 1, count = 0;
+        int total = 0,
+            sign = 1,
+            count = 0;
         for (int rest = n; rest > 0; rest /= 10) {
             total += sign * (rest % 10);
             sign = -sign;

@@ -6,7 +6,10 @@
   "slug": "count-good-triplets",
   "title": "Count Good Triplets",
   "difficulty": "",
-  "tags": ["Array", "Enumeration"],
+  "tags": [
+    "Array",
+    "Enumeration"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

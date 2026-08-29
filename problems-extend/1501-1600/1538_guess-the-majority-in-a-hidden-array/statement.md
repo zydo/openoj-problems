@@ -10,10 +10,10 @@ Somewhere the judge holds a binary array `nums`, where every entry is
 
 - `query(a, b, c, d)` — compares the four entries at those indices,
   where `0 <= a < b < c < d < length()`, and reports how they split:
-  - `4` if all four entries hold the same value.
-  - `2` if three entries share one value and the fourth holds the
-    other.
-  - `0` if the four entries split evenly, two and two.
+    - `4` if all four entries hold the same value.
+    - `2` if three entries share one value and the fourth holds the
+      other.
+    - `0` if the four entries split evenly, two and two.
 - `length()` — the size of `nums`.
 
 You may call `query` at most `2 * n` times, where `n` is `length()`.

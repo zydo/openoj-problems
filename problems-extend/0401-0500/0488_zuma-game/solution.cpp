@@ -26,9 +26,9 @@ class Solution {
             removed = false;
             string kept;
             int i = 0;
-            while (i < (int) row.size()) {
+            while (i < (int)row.size()) {
                 int j = i;
-                while (j < (int) row.size() && row[j] == row[i]) {
+                while (j < (int)row.size() && row[j] == row[i]) {
                     ++j;
                 }
                 if (j - i < 3) {
@@ -60,12 +60,12 @@ class Solution {
         }
         int best = kImpossible;
         int i = 0;
-        while (i < (int) row.size()) {
+        while (i < (int)row.size()) {
             int j = i;
-            while (j < (int) row.size() && row[j] == row[i]) {
+            while (j < (int)row.size() && row[j] == row[i]) {
                 ++j;
             }
-            int color = (int) kColors.find(row[i]);
+            int color = (int)kColors.find(row[i]);
             if (remaining[color] > 0) {
                 // One canonical gap per run: sliding the ball along the run
                 // it joins produces the identical next row.

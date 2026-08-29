@@ -39,8 +39,8 @@ triples — about `log₁₀³ N` elementary steps — and `O(1)` space.
 ## Digit Walk
 
 One left-to-right sweep over N's digits computes the whole prefix total.
-Live prefixes fall into two groups: *tight* ones still equal to N's prefix,
-and *free* ones already strictly below it. Each group is a table indexed by
+Live prefixes fall into two groups: _tight_ ones still equal to N's prefix,
+and _free_ ones already strictly below it. Each group is a table indexed by
 `(started, last digit, second-last digit)` — started marks whether a nonzero
 leading digit has been placed, so leading zeros never masquerade as digits
 of the number — holding both a count of completions and the waviness those

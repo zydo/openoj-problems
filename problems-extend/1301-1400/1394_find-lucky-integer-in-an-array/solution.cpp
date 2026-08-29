@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int findLucky(vector<int>& arr) {
+    int findLucky(vector<int> &arr) {
         // Values are bounded by 500, so a fixed tally array replaces a hash
         // map. Scanning it downward returns the largest value whose count
         // equals the value itself; -1 survives when none matches.

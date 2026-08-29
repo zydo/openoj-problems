@@ -20,7 +20,7 @@ class Solution {
                 total += num2.charAt(j) - '0';
                 j--;
             }
-            digits.append((char) ('0' + total % 10));
+            digits.append((char) ('0' + (total % 10)));
             carry = total / 10;
         }
         // Digits came out least-significant first; flip before returning.

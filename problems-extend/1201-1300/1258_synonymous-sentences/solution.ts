@@ -30,8 +30,7 @@ function generateSentences(synonyms: string[][], text: string): string[] {
     let sentences: string[] = [""];
     for (const word of text.split(" ")) {
         const options = parent.has(word) ? groups.get(find(word))! : [word];
-        sentences = sentences.flatMap((prefix) =>
-            options.map((option) => prefix + " " + option));
+        sentences = sentences.flatMap((prefix) => options.map((option) => prefix + " " + option));
     }
     return sentences.map((s) => s.slice(1)).sort();
 }

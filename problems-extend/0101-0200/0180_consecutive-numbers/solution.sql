@@ -1,5 +1,5 @@
-SELECT
-  DISTINCT l1.num AS ConsecutiveNums
+SELECT DISTINCT
+  l1.num AS ConsecutiveNums
 FROM
   Logs l1,
   Logs l2,

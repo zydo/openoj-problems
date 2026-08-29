@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
   public:
-    int minCost(vector<int>& nums1, vector<int>& nums2) {
+    int minCost(vector<int> &nums1, vector<int> &nums2) {
         // Within-array swaps are free, so only the frequency of each value
         // in each array matters. Both arrays must end with the same
         // multiset: value v appears (cnt1[v] + cnt2[v]) / 2 times in each,

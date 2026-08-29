@@ -8,8 +8,7 @@ impl Solution {
         let mut prefix = vec![0i32; words.len() + 1];
         for (i, w) in words.iter().enumerate() {
             let bytes = w.as_bytes();
-            prefix[i + 1] = prefix[i]
-                + ((is_vowel(bytes[0]) && is_vowel(bytes[bytes.len() - 1])) as i32);
+            prefix[i + 1] = prefix[i] + ((is_vowel(bytes[0]) && is_vowel(bytes[bytes.len() - 1])) as i32);
         }
         queries
             .iter()

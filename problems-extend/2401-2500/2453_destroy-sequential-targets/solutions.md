@@ -5,7 +5,7 @@
 Two targets can be destroyed by a single seed exactly when their values
 differ by a multiple of `space`: if `seed` destroys `value`, then
 `value - seed = c * space`, so both sit in the same residue class modulo
-`space`. The machine seeded with the *smallest* value of a residue class
+`space`. The machine seeded with the _smallest_ value of a residue class
 reaches every member of that class (each later value is
 `seed + c * space`), so the number of targets a class can contribute is
 its full size, and that maximum is achieved by the class minimum.

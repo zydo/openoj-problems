@@ -19,7 +19,7 @@ func countSequences(nums []int, k int64) int {
 		return 0
 	}
 	target := ((t[0]+40)*41+(t[1]+20))*41 + (t[2] + 20)
-	dp := map[int64]int64{(40*41 + 20) * 41 + 20: 1}
+	dp := map[int64]int64{(40*41+20)*41 + 20: 1}
 	for _, v := range nums {
 		var e [3]int64
 		w := int64(v)

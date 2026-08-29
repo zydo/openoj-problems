@@ -7,9 +7,7 @@ function hasValidPath(grid: string[][]): boolean {
     const n = grid[0].length;
     const start = grid[0][0] === "(" ? 1 : -1;
     if (start < 0) return false;
-    const dp: Set<number>[][] = Array.from({ length: m }, () =>
-        Array.from({ length: n }, () => new Set<number>()),
-    );
+    const dp: Set<number>[][] = Array.from({ length: m }, () => Array.from({ length: n }, () => new Set<number>()));
     dp[0][0].add(start);
     for (let r = 0; r < m; ++r) {
         for (let c = 0; c < n; ++c) {

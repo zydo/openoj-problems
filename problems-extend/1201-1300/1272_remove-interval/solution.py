@@ -2,8 +2,7 @@ from typing import List
 
 
 class Solution:
-    def removeInterval(self, intervals: List[List[int]],
-                       toBeRemoved: List[int]) -> List[List[int]]:
+    def removeInterval(self, intervals: List[List[int]], toBeRemoved: List[int]) -> List[List[int]]:
         # Per interval, three outcomes: disjoint from the removal (keep
         # whole), straddling the left edge (keep head), or straddling the
         # right edge (keep tail); a full cover keeps nothing. An interval

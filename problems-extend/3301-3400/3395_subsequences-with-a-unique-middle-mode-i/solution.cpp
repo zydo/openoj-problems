@@ -6,7 +6,7 @@ class Solution {
     // non-x picks must be pairwise distinct. Per-middle terms stay below
     // ~4 * 10^12, so they are accumulated in a long long and reduced
     // modulo 10^9 + 7 each middle.
-    int subsequencesWithMiddleMode(vector<int>& nums) {
+    int subsequencesWithMiddleMode(vector<int> &nums) {
         const long long MOD = 1000000007LL;
         int n = nums.size();
         unordered_map<int, int> ids;
@@ -58,15 +58,13 @@ class Solution {
                     TL += ru * (c2(ml - cL) - SxL + c2(cL));
                 }
             }
-            long long total = cl * c2(mr) + cl * r * mr + cl * cr
-                + l * ml * r * mr + l * ml * cr + c2(ml) * cr + l * TR + r * TL;
+            long long total =
+                cl * c2(mr) + cl * r * mr + cl * cr + l * ml * r * mr + l * ml * cr + c2(ml) * cr + l * TR + r * TL;
             ans = (ans + total) % MOD;
         }
         return (int)ans;
     }
 
   private:
-    static long long c2(long long t) {
-        return t * (t - 1) / 2;
-    }
+    static long long c2(long long t) { return t * (t - 1) / 2; }
 };

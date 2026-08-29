@@ -10,7 +10,11 @@ class Solution {
         StringBuilder stack = new StringBuilder();
         for (char ch : s.toCharArray()) {
             int top = stack.length() - 1;
-            if (top >= 0 && stack.charAt(top) != ch && Character.toLowerCase(stack.charAt(top)) == Character.toLowerCase(ch)) {
+            if (
+                top >= 0 &&
+                stack.charAt(top) != ch &&
+                Character.toLowerCase(stack.charAt(top)) == Character.toLowerCase(ch)
+            ) {
                 stack.deleteCharAt(top);
             } else {
                 stack.append(ch);

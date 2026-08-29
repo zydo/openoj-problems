@@ -26,4 +26,4 @@ function createBinaryTree(descriptions: number[][]): TreeNode | null {
         }
     }
     return null;
-};
+}

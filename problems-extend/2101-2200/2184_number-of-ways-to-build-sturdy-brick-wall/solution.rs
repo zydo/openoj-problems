@@ -5,8 +5,7 @@ impl Solution {
         // count-map transition per row.
         const MOD: i64 = 1_000_000_007;
         let mut masks: Vec<i32> = Vec::new();
-        fn rec(position: i32, width: i32, bricks: &[i32], mask: i32,
-               masks: &mut Vec<i32>) {
+        fn rec(position: i32, width: i32, bricks: &[i32], mask: i32, masks: &mut Vec<i32>) {
             if position == width {
                 masks.push(mask);
                 return;

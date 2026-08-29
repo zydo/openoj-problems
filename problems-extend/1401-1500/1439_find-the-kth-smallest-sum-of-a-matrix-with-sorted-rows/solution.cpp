@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    int kthSmallest(std::vector<std::vector<int>>& mat, int k) {
+    int kthSmallest(std::vector<std::vector<int>> &mat, int k) {
         int m = (int)mat.size();
         std::vector<int> first(m, 0);
         int base = 0;

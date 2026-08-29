@@ -16,10 +16,10 @@ class DetectSquares:
             if y2 != y or x2 == x:
                 continue
             distance = abs(x2 - x)
-            total += horizontal * self.frequencies.get((x, y + distance), 0) * self.frequencies.get(
-                (x2, y + distance), 0
+            total += (
+                horizontal * self.frequencies.get((x, y + distance), 0) * self.frequencies.get((x2, y + distance), 0)
             )
-            total += horizontal * self.frequencies.get((x, y - distance), 0) * self.frequencies.get(
-                (x2, y - distance), 0
+            total += (
+                horizontal * self.frequencies.get((x, y - distance), 0) * self.frequencies.get((x2, y - distance), 0)
             )
         return total

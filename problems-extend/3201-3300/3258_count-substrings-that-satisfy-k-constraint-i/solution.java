@@ -1,4 +1,5 @@
 class Solution {
+
     public int countKConstraintSubstrings(String s, int k) {
         int n = s.length();
         int answer = 0;

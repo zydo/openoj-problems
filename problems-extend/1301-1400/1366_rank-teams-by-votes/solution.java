@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Solution {
+
     public String rankTeams(String[] votes) {
         boolean[] seen = new boolean[26];
         for (char c : votes[0].toCharArray()) seen[c - 'A'] = true;

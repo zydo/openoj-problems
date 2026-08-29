@@ -6,13 +6,7 @@ impl Solution {
     // invisible but still hide others, so they stay on the stack for their
     // covering effect and are only excluded from the final count.
     pub fn visible_mountains(mut peaks: Vec<Vec<i32>>) -> i32 {
-        peaks.sort_by(|p, q| {
-            if p[0] != q[0] {
-                p[0].cmp(&q[0])
-            } else {
-                q[1].cmp(&p[1])
-            }
-        });
+        peaks.sort_by(|p, q| if p[0] != q[0] { p[0].cmp(&q[0]) } else { q[1].cmp(&p[1]) });
         let mut stack: Vec<(i32, i32, bool)> = Vec::new(); // (x, y, counted)
         let mut i = 0;
         while i < peaks.len() {

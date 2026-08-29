@@ -1,9 +1,9 @@
 class Solution {
-   public:
+  public:
     // Group indices by value; each occurrence list is sorted. Per query,
     // binary-search the list and take the nearer of the two circular
     // neighbors.
-    vector<int> solveQueries(vector<int>& nums, vector<int>& queries) {
+    vector<int> solveQueries(vector<int> &nums, vector<int> &queries) {
         unordered_map<int, vector<int>> pos;
         for (int i = 0; i < (int)nums.size(); i++) {
             pos[nums[i]].push_back(i);
@@ -12,7 +12,7 @@ class Solution {
         vector<int> ans;
         ans.reserve(queries.size());
         for (int q : queries) {
-            vector<int>& p = pos[nums[q]];
+            vector<int> &p = pos[nums[q]];
             if (p.size() == 1) {
                 ans.push_back(-1);
                 continue;

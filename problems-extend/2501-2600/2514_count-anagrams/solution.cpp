@@ -17,15 +17,14 @@ class Solution {
     }
 
   private:
-    static long long wordWays(const string &s, int from, int to,
-                              long long mod) {
+    static long long wordWays(const string &s, int from, int to, long long mod) {
         long long counts[26] = {};
-        for (int i = from; i < to; ++i) ++counts[s[i] - 'a'];
+        for (int i = from; i < to; ++i)
+            ++counts[s[i] - 'a'];
         long long term = factorialMod(to - from, mod);
         for (long long count : counts) {
             if (count > 1) {
-                term = term * modPow(factorialMod((int)count, mod), mod - 2,
-                                     mod) % mod;
+                term = term * modPow(factorialMod((int)count, mod), mod - 2, mod) % mod;
             }
         }
         return term;
@@ -33,7 +32,8 @@ class Solution {
 
     static long long factorialMod(int n, long long mod) {
         long long result = 1;
-        for (int i = 2; i <= n; ++i) result = result * i % mod;
+        for (int i = 2; i <= n; ++i)
+            result = result * i % mod;
         return result;
     }
 
@@ -41,7 +41,8 @@ class Solution {
         long long result = 1;
         base %= mod;
         while (exp > 0) {
-            if (exp & 1) result = result * base % mod;
+            if (exp & 1)
+                result = result * base % mod;
             base = base * base % mod;
             exp >>= 1;
         }

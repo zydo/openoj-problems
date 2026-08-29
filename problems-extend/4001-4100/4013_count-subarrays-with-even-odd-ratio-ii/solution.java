@@ -9,7 +9,7 @@ class Solution {
         // Fenwick cells are 64-bit.
         long[] pref = new long[n + 1];
         for (int i = 0; i < n; i++) {
-            pref[i + 1] = pref[i] + (nums[i] % 2 == 0 ? b : -(long) a);
+            pref[i + 1] = pref[i] + (nums[i] % 2 == 0 ? b : -((long) a));
         }
         // Coordinate-compress the prefix values; duplicates share one slot
         // so that >= comparisons count them all.
@@ -35,7 +35,8 @@ class Solution {
     }
 
     private int rank(long[] sorted, int size, long value) {
-        int lo = 0, hi = size - 1;
+        int lo = 0,
+            hi = size - 1;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (sorted[mid] < value) lo = mid + 1;

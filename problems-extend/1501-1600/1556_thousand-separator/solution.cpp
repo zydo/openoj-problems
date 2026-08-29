@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string thousandSeparator(int n) {
         // Reverse the digit string, cut it into runs of three, join with
         // '.', then reverse back — the chunk boundaries land exactly on

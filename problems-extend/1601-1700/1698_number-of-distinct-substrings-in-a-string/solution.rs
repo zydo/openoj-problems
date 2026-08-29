@@ -24,11 +24,7 @@ impl Solution {
             while p.map_or(false, |px| trans[px][c] == 0) {
                 let px = p.unwrap();
                 trans[px][c] = cur;
-                p = if link[px] < 0 {
-                    None
-                } else {
-                    Some(link[px] as usize)
-                };
+                p = if link[px] < 0 { None } else { Some(link[px] as usize) };
             }
             match p {
                 None => link[cur] = 0,
@@ -49,11 +45,7 @@ impl Solution {
                         while p.map_or(false, |py| trans[py][c] == q) {
                             let py = p.unwrap();
                             trans[py][c] = clone;
-                            p = if link[py] < 0 {
-                                None
-                            } else {
-                                Some(link[py] as usize)
-                            };
+                            p = if link[py] < 0 { None } else { Some(link[py] as usize) };
                         }
                         link[q] = clone as i32;
                         link[cur] = clone as i32;

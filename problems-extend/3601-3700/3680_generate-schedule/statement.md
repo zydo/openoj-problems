@@ -6,9 +6,9 @@ You are given an integer `n` representing `n` teams labeled `0` to `n - 1`.
 Compose a schedule of matches such that:
 
 - Every pair of distinct teams meets exactly twice: once with the first team
-at home and once away.
+  at home and once away.
 - Exactly one match is played per day; the schedule is a list of consecutive
-days, and `schedule[i]` is the match played on day `i`.
+  days, and `schedule[i]` is the match played on day `i`.
 - No team plays on two consecutive days.
 
 Return the schedule as a 2D integer array `schedule`, where `schedule[i][0]`

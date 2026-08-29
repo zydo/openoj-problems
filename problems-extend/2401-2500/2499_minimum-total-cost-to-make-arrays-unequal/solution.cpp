@@ -7,7 +7,7 @@ class Solution {
         long long cost = 0;
         unordered_map<int, int> cnt;
         int chosen = 0;
-        int dom = -1;  // values are >= 1, so -1 can never be a real key
+        int dom = -1; // values are >= 1, so -1 can never be a real key
         for (int i = 0; i < (int)nums1.size(); ++i) {
             if (nums1[i] == nums2[i]) {
                 int c = ++cnt[nums1[i]];

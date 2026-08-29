@@ -9,7 +9,8 @@ var minRemoveToMakeValid = function (s) {
         const ch = s[i];
         if (ch === "(") opens.push(i);
         else if (ch === ")") {
-            if (opens.length > 0) opens.pop(); // matched: both survive
+            if (opens.length > 0)
+                opens.pop(); // matched: both survive
             else keep[i] = false; // orphan close, doomed
         }
     }

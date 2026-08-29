@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minAreaRect(vector<vector<int>>& points) {
+  public:
+    int minAreaRect(vector<vector<int>> &points) {
         // A rectangle with sides parallel to the axes is pinned by two
         // opposite corners: (x1, y1) and (x2, y2) with x1 != x2 and
         // y1 != y2 close one exactly when (x1, y2) and (x2, y1) are also
@@ -10,7 +10,7 @@ public:
         // with two O(1) membership tests deciding whether the rectangle
         // exists.
         unordered_set<long long> seen;
-        for (const vector<int>& point : points) {
+        for (const vector<int> &point : points) {
             seen.insert((long long)point[0] * 40001 + point[1]);
         }
         int n = (int)points.size();

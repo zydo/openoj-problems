@@ -26,7 +26,8 @@ class Solution {
             }
         }
         // Only trailing stars can still match the empty remainder of s.
-        while (pi < m && p[pi] == '*') ++pi;
+        while (pi < m && p[pi] == '*')
+            ++pi;
         return pi == m;
     }
 };

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int minMirrorPairDistance(vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    int minMirrorPairDistance(vector<int> &nums) { throw logic_error("TODO"); }
 };

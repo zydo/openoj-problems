@@ -49,7 +49,7 @@ class Solution {
         // Rebuild dp[i][j] = lcp(word[i:], word[j:]) bottom-up and require
         // an exact match on every stored entry; a fabricated matrix fails
         // here even when its positivity structure looked consistent.
-        int[] below = new int[n + 1];      // row i+1; trailing slot stays 0
+        int[] below = new int[n + 1]; // row i+1; trailing slot stays 0
         int[] code = new int[n];
         for (int i = 0; i < n; ++i) code[i] = word[i];
         for (int i = n - 1; i >= 0; --i) {

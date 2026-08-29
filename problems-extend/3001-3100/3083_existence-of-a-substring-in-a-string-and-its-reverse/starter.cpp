@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool isSubstringPresent(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool isSubstringPresent(string s) { throw logic_error("TODO"); }
 };

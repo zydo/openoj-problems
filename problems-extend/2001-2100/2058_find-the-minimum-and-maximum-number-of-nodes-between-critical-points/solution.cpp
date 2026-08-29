@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     vector<int> nodesBetweenCriticalPoints(ListNode *head) {
         ListNode *previous = head;
         ListNode *current = head->next;
@@ -10,8 +10,8 @@ public:
 
         while (current->next != nullptr) {
             ListNode *following = current->next;
-            if ((current->val > previous->val && current->val > following->val)
-                || (current->val < previous->val && current->val < following->val)) {
+            if ((current->val > previous->val && current->val > following->val) ||
+                (current->val < previous->val && current->val < following->val)) {
                 if (first == -1) {
                     first = index;
                 } else {

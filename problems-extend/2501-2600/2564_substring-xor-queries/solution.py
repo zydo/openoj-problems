@@ -16,7 +16,7 @@ class Solution:
                     # "0xxx" decodes to xxx's value, which the previous,
                     # shorter pass already handled.
                     continue
-                val = int(s[left:left + length], 2)
+                val = int(s[left : left + length], 2)
                 if val not in best:
                     best[val] = [left, left + length - 1]
         return [best.get(first ^ second, [-1, -1]) for first, second in queries]

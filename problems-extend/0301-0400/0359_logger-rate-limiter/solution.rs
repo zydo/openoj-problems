@@ -7,7 +7,9 @@ pub struct Logger {
 
 impl Logger {
     pub fn new() -> Self {
-        Logger { next_allowed: HashMap::new() }
+        Logger {
+            next_allowed: HashMap::new(),
+        }
     }
 
     pub fn shouldPrintMessage(&mut self, timestamp: i32, message: String) -> bool {

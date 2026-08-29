@@ -12,7 +12,7 @@ and is returned unchanged.
 Otherwise, walk the suffix starting at `i` and track the largest value
 seen so far that is still strictly less than `arr[i]`. Because the
 suffix is non-decreasing, scanning it left to right and only updating on
-a strictly larger candidate naturally keeps the *leftmost* occurrence of
+a strictly larger candidate naturally keeps the _leftmost_ occurrence of
 that maximum qualifying value: placing `arr[i]`'s old value at the
 earliest possible position among the tied candidates leaves the largest
 possible value sitting at every position in between, which is what

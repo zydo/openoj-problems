@@ -11,8 +11,7 @@ class Solution {
             double distance = abs(node->val - target);
             // Strictly closer wins; at exactly equal distance the smaller
             // value wins, which settles ties like target 3.5 over 3 and 4.
-            if (distance < bestDistance ||
-                (distance == bestDistance && node->val < best)) {
+            if (distance < bestDistance || (distance == bestDistance && node->val < best)) {
                 best = node->val;
                 bestDistance = distance;
             }

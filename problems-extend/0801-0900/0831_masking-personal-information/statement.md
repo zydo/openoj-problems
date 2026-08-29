@@ -33,10 +33,10 @@ To mask a phone number:
 
 - Remove all separation characters.
 - The masked phone number should have the form:
-  - `"***-***-XXXX"` if the country code has 0 digits.
-  - `"+*-***-***-XXXX"` if the country code has 1 digit.
-  - `"+**-***-***-XXXX"` if the country code has 2 digits.
-  - `"+***-***-***-XXXX"` if the country code has 3 digits.
+    - `"***-***-XXXX"` if the country code has 0 digits.
+    - `"+*-***-***-XXXX"` if the country code has 1 digit.
+    - `"+**-***-***-XXXX"` if the country code has 2 digits.
+    - `"+***-***-***-XXXX"` if the country code has 3 digits.
 - `"XXXX"` is the last 4 digits of the local number.
 
 ### Example 1
@@ -76,10 +76,10 @@ Thus, the resulting masked number is "***-***-7890".
 
 - `s` is either a valid email or a phone number.
 - If `s` is an email:
-  - `8 <= s.length <= 40`
-  - `s` consists of uppercase and lowercase English letters and exactly one
-    `'@'` symbol and `'.'` symbol.
+    - `8 <= s.length <= 40`
+    - `s` consists of uppercase and lowercase English letters and exactly one
+      `'@'` symbol and `'.'` symbol.
 - If `s` is a phone number:
-  - `10 <= s.length <= 20`
-  - `s` consists of digits, spaces, and the symbols `'('`, `')'`, `'-'`, and
-    `'+'`.
+    - `10 <= s.length <= 20`
+    - `s` consists of digits, spaces, and the symbols `'('`, `')'`, `'-'`, and
+      `'+'`.

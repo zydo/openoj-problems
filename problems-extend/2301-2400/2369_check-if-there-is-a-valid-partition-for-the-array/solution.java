@@ -14,8 +14,7 @@ class Solution {
             if (i >= 3) {
                 if (nums[i - 1] == nums[i - 2] && nums[i - 2] == nums[i - 3]) {
                     ok[i] = ok[i] || ok[i - 3];
-                } else if (nums[i - 2] - nums[i - 3] == 1
-                        && nums[i - 1] - nums[i - 2] == 1) {
+                } else if (nums[i - 2] - nums[i - 3] == 1 && nums[i - 1] - nums[i - 2] == 1) {
                     ok[i] = ok[i] || ok[i - 3];
                 }
             }

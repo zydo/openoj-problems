@@ -6,11 +6,11 @@ class Solution {
         // be swept.
         int bestPoints = 0;
         int bestMask = 0;
-        for (int mask = 1; mask < (1 << 12); mask++) {
+        for (int mask = 1; mask < 1 << 12; mask++) {
             int cost = 0;
             int points = 0;
             for (int k = 0; k < 12; k++) {
-                if ((mask >> k & 1) != 0) {
+                if (((mask >> k) & 1) != 0) {
                     cost += aliceArrows[k] + 1;
                     points += k;
                 }
@@ -25,7 +25,7 @@ class Solution {
         int[] bob = new int[12];
         int spent = 0;
         for (int k = 1; k < 12; k++) {
-            if ((bestMask >> k & 1) != 0) {
+            if (((bestMask >> k) & 1) != 0) {
                 bob[k] = aliceArrows[k] + 1;
                 spent += bob[k];
             }

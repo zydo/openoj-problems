@@ -20,7 +20,9 @@ class Solution {
             return new int[] { -1, -1 };
         }
         int k = total / 3;
-        int first = -1, second = -1, third = -1;
+        int first = -1,
+            second = -1,
+            third = -1;
         int seen = 0;
         for (int index = 0; index < arr.length; ++index) {
             if (arr[index] == 1) {

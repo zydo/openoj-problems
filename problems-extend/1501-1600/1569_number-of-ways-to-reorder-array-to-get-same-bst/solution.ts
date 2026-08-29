@@ -48,5 +48,5 @@ function numOfWays(nums: number[]): number {
     };
 
     // The problem excludes the original array from the count.
-    return Number(((ways(nums) - 1n) % MOD + MOD) % MOD);
+    return Number((((ways(nums) - 1n) % MOD) + MOD) % MOD);
 }

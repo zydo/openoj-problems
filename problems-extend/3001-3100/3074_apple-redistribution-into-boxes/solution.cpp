@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minimumBoxes(vector<int>& apple, vector<int>& capacity) {
+  public:
+    int minimumBoxes(vector<int> &apple, vector<int> &capacity) {
         // Packs split freely across boxes, so only the apple total
         // matters, not its division into packs. Filling the largest
         // boxes first makes each selected box cover as much of the

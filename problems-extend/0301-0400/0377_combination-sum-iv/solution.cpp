@@ -10,7 +10,8 @@ class Solution {
         ways[0] = 1; // the empty sequence: exactly one way to build 0
         for (int t = 1; t <= target; ++t) {
             for (int x : nums) {
-                if (x <= t) ways[t] += ways[t - x];
+                if (x <= t)
+                    ways[t] += ways[t - x];
             }
         }
         return (int)ways[target];

@@ -6,9 +6,7 @@
 // resumes exactly where it left off. Pops replay the left-to-right
 // sequence lazily, one yield per next() call.
 function* inorderTraversal(arr: (number | any[])[]): Generator<number> {
-    const frames: { items: (number | any[])[]; cursor: number }[] = [
-        { items: arr, cursor: 0 },
-    ];
+    const frames: { items: (number | any[])[]; cursor: number }[] = [{ items: arr, cursor: 0 }];
     while (frames.length > 0) {
         const frame = frames[frames.length - 1];
         if (frame.cursor >= frame.items.length) {

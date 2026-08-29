@@ -34,6 +34,10 @@ impl Solution {
             dp = ndp;
         }
         let best = (1..=n).map(|j| dp[j][target]).min().unwrap();
-        if best >= inf { -1 } else { best as i32 }
+        if best >= inf {
+            -1
+        } else {
+            best as i32
+        }
     }
 }

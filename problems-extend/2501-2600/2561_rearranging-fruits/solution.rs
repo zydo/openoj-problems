@@ -28,8 +28,7 @@ impl Solution {
                 tickets.push(value as i64);
             }
         }
-        let smallest = (*basket1.iter().min().unwrap())
-            .min(*basket2.iter().min().unwrap()) as i64;
+        let smallest = (*basket1.iter().min().unwrap()).min(*basket2.iter().min().unwrap()) as i64;
         tickets.sort_unstable();
         let half = tickets.len() / 2;
         let mut answer: i64 = 0;

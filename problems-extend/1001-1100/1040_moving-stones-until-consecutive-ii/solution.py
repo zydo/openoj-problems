@@ -28,11 +28,7 @@ class Solution:
                 left += 1
             already_placed = right - left + 1
             cost = n - already_placed
-            if (
-                cost == 1
-                and already_placed == n - 1
-                and stones[right] - stones[left] == n - 2
-            ):
+            if cost == 1 and already_placed == n - 1 and stones[right] - stones[left] == n - 2:
                 # Classic gotcha: n - 1 stones already packed with zero
                 # gaps. The lone outside stone can't jump straight into
                 # the missing slot without still being an endpoint, so it

@@ -4,7 +4,8 @@ class Solution {
         // Rank in arr2 for present values; absent ones share the sentinel
         // rank arr2.size() and then compare by value (ascending at the end).
         unordered_map<int, int> rank;
-        for (int i = 0; i < (int)arr2.size(); ++i) rank[arr2[i]] = i;
+        for (int i = 0; i < (int)arr2.size(); ++i)
+            rank[arr2[i]] = i;
         int tail = (int)arr2.size();
         vector<int> out = arr1;
         auto key = [&](int value) {

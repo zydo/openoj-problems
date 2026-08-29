@@ -23,11 +23,7 @@ class Solution:
 
                 # Delete the right end, delete the left end, or keep both
                 # matching ends and use the deletion inside.
-                almost_now[left] = (
-                    pal_one[left]
-                    or pal_one[left + 1]
-                    or (same_ends and almost_two[left + 1])
-                )
+                almost_now[left] = pal_one[left] or pal_one[left + 1] or (same_ends and almost_two[left + 1])
                 if almost_now[left]:
                     best = length
 

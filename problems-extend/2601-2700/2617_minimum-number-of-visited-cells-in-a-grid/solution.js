@@ -13,10 +13,10 @@ var minimumVisitedCells = function (grid) {
     const m = grid.length;
     const n = grid[0].length;
     const infinity = Number.MAX_SAFE_INTEGER;
-    const dis = Array.from({length: m}, () => new Array(n).fill(infinity));
+    const dis = Array.from({ length: m }, () => new Array(n).fill(infinity));
     dis[0][0] = 1;
-    const rows = Array.from({length: m}, () => []);
-    const cols = Array.from({length: n}, () => []);
+    const rows = Array.from({ length: m }, () => []);
+    const cols = Array.from({ length: n }, () => []);
     const push = (heap, dis, index) => {
         heap.push([dis, index]);
         let child = heap.length - 1;
@@ -36,10 +36,8 @@ var minimumVisitedCells = function (grid) {
                 const left = parent * 2 + 1;
                 const right = left + 1;
                 let best = parent;
-                if (left < heap.length && heap[left][0] < heap[best][0])
-                    best = left;
-                if (right < heap.length && heap[right][0] < heap[best][0])
-                    best = right;
+                if (left < heap.length && heap[left][0] < heap[best][0]) best = left;
+                if (right < heap.length && heap[right][0] < heap[best][0]) best = right;
                 if (best === parent) break;
                 [heap[parent], heap[best]] = [heap[best], heap[parent]];
                 parent = best;
@@ -63,6 +61,7 @@ var minimumVisitedCells = function (grid) {
                 push(cols[j], nearest + 1, i);
             }
         }
-    }    const last = dis[m - 1][n - 1];
+    }
+    const last = dis[m - 1][n - 1];
     return last < infinity ? last : -1;
 };

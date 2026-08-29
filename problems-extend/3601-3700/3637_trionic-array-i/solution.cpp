@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool isTrionic(vector<int>& nums) {
+  public:
+    bool isTrionic(vector<int> &nums) {
         // Walk the leading strictly increasing stretch; any valid cut point
         // p must land exactly where this rise stops, because the mandatory
         // descent out of p is what ends it.

@@ -12,8 +12,7 @@
 // no influence on what is judged; only the settled array is.
 
 type SettleOutcome =
-    | { kind: "fulfilled"; value: unknown; delay: number }
-    | { kind: "rejected"; reason: unknown; delay: number };
+    { kind: "fulfilled"; value: unknown; delay: number } | { kind: "rejected"; reason: unknown; delay: number };
 
 type FnPromise = () => Promise<unknown>;
 
@@ -29,8 +28,7 @@ class SettledClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -68,25 +66,23 @@ class SettledDriver {
         // no-op catch marks every rejection as handled up front, so a
         // submission that forgets its own catch degrades to a wrong answer
         // instead of an unhandledRejection killing the process.
-        this.functions = (functions as SettleOutcome[]).map(
-            (spec): FnPromise => () => {
-                // Live functions under test: calling one returns the ORIGINAL
-                // promise, settling after its spec's delay on the virtual
-                // clock. A defensive no-op catch is attached as a SIDE
-                // handler only (mirroring settled_driver.js) — chaining it
-                // would hand the submission a promise whose rejections are
-                // already swallowed, degrading every rejection to a
-                // fulfillment.
-                const promise = new Promise<unknown>((resolve, reject) => {
-                    this.clock.schedule(spec.delay, () => {
-                        if (spec.kind === "fulfilled") resolve(spec.value);
-                        else reject(spec.reason);
-                    });
+        this.functions = (functions as SettleOutcome[]).map((spec): FnPromise => () => {
+            // Live functions under test: calling one returns the ORIGINAL
+            // promise, settling after its spec's delay on the virtual
+            // clock. A defensive no-op catch is attached as a SIDE
+            // handler only (mirroring settled_driver.js) — chaining it
+            // would hand the submission a promise whose rejections are
+            // already swallowed, degrading every rejection to a
+            // fulfillment.
+            const promise = new Promise<unknown>((resolve, reject) => {
+                this.clock.schedule(spec.delay, () => {
+                    if (spec.kind === "fulfilled") resolve(spec.value);
+                    else reject(spec.reason);
                 });
-                void promise.catch(() => undefined);
-                return promise;
-            },
-        );
+            });
+            void promise.catch(() => undefined);
+            return promise;
+        });
     }
 
     // Hand this case's functions to the submission's promiseAllSettled,
@@ -96,9 +92,7 @@ class SettledDriver {
     // await adopts whatever resolution hops remain (an async submission
     // chain can add several), and an aggregate that rejects — impossible
     // for a correct implementation — surfaces as a clean runtime error.
-    async drive(
-        promiseAllSettled: (functions: FnPromise[]) => Promise<unknown[]>,
-    ): Promise<void> {
+    async drive(promiseAllSettled: (functions: FnPromise[]) => Promise<unknown[]>): Promise<void> {
         const returned = promiseAllSettled(this.functions);
         if (!returned || typeof returned.then !== "function") {
             throw new Error("promiseAllSettled must return a promise");
@@ -116,8 +110,7 @@ class SettledDriver {
             this.settled = await returned;
         } catch (problem) {
             throw new Error(
-                "Returned promise rejected: " +
-                    (problem instanceof Error ? problem.message : String(problem)),
+                "Returned promise rejected: " + (problem instanceof Error ? problem.message : String(problem)),
             );
         }
     }

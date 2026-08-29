@@ -17,7 +17,8 @@ class Solution {
         // total cost H(t) = |t| + internal line cost is convex in t; binary
         // search the integer minimizer
         long bound = total(balance, 0);
-        long lo = -bound, hi = bound;
+        long lo = -bound,
+            hi = bound;
         while (lo < hi) {
             long mid = lo + (hi - lo) / 2;
             if (total(balance, mid) <= total(balance, mid + 1)) {
@@ -68,7 +69,7 @@ class Solution {
                 cost += z - cap;
             }
         }
-        long limit = -(long) balance[n - 1];
+        long limit = -((long) balance[n - 1]);
         while (!heap.isEmpty() && heap.peek() + delta < limit) {
             cost += limit - (heap.poll() + delta);
         }

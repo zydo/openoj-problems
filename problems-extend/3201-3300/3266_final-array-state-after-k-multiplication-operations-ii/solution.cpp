@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {
+  public:
+    vector<int> getFinalState(vector<int> &nums, int k, int multiplier) {
         const long long MOD = 1000000007LL;
         int n = static_cast<int>(nums.size());
         vector<int> result(n);
@@ -11,9 +11,7 @@ public:
             }
             return result;
         }
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>,
-                       greater<pair<long long, int>>>
-            heap;
+        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> heap;
         for (int i = 0; i < n; i++) {
             heap.push({nums[i], i});
         }
@@ -45,8 +43,8 @@ public:
             int rem = static_cast<int>(k % n);
             for (int pos = 0; pos < n; pos++) {
                 long long exponent = q + (pos < rem ? 1 : 0);
-                result[ordered[pos].second] = static_cast<int>(
-                    ordered[pos].first % MOD * modPow(multiplier, exponent, MOD) % MOD);
+                result[ordered[pos].second] =
+                    static_cast<int>(ordered[pos].first % MOD * modPow(multiplier, exponent, MOD) % MOD);
             }
         } else {
             while (!heap.empty()) {
@@ -57,7 +55,7 @@ public:
         return result;
     }
 
-private:
+  private:
     long long modPow(long long base, long long exponent, long long mod) {
         long long result = 1 % mod;
         base %= mod;

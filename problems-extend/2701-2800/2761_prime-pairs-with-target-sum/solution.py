@@ -18,8 +18,4 @@ class Solution:
         # so every pair appears once, and ascending x gives the required
         # order for free. The smallest prime pair sums to 2 + 2 = 4, so any
         # n below that leaves the list empty.
-        return [
-            [x, n - x]
-            for x in range(2, n // 2 + 1)
-            if is_prime[x] and is_prime[n - x]
-        ]
+        return [[x, n - x] for x in range(2, n // 2 + 1) if is_prime[x] and is_prime[n - x]]

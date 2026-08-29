@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string mergeAlternately(string word1, string word2) {
         // One pointer per word: emit alternately while both words still
         // have characters, then append whichever tail remains.

@@ -10,7 +10,7 @@ For example, if you had the code:
 
 ```js
 function f() {
-  console.log('My context is ' + this.ctx);
+    console.log("My context is " + this.ctx);
 }
 f();
 ```
@@ -20,9 +20,9 @@ function:
 
 ```js
 function f() {
-  console.log('My context is ' + this.ctx);
+    console.log("My context is " + this.ctx);
 }
-const boundFunc = f.boundPolyfill({ "ctx": "My Object" })
+const boundFunc = f.boundPolyfill({ ctx: "My Object" });
 boundFunc();
 ```
 

@@ -17,10 +17,7 @@ class Solution:
             left, right = cost[k], cost[n - 1 - k]
             # e[t][c]: best dp[t][b] over b != c — the previous right house
             # must differ from the new right one (adjacency on that side)
-            e = [
-                [min(dp[t][1], dp[t][2]), min(dp[t][0], dp[t][2]), min(dp[t][0], dp[t][1])]
-                for t in range(3)
-            ]
+            e = [[min(dp[t][1], dp[t][2]), min(dp[t][0], dp[t][2]), min(dp[t][0], dp[t][1])] for t in range(3)]
             c0, c1, c2 = e[0]
             d0, d1, d2 = e[1]
             f0, f1, f2 = e[2]

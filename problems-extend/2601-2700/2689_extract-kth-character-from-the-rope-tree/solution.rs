@@ -60,8 +60,7 @@ impl Solution {
             } else if ready {
                 let l = left[nd];
                 let r = right[nd];
-                total[nd] = (if l >= 0 { total[l as usize] } else { 0 })
-                    + (if r >= 0 { total[r as usize] } else { 0 });
+                total[nd] = (if l >= 0 { total[l as usize] } else { 0 }) + (if r >= 0 { total[r as usize] } else { 0 });
             } else {
                 stack.push((nd, true));
                 if right[nd] >= 0 {

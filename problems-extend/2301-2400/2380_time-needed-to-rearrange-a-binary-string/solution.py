@@ -6,7 +6,7 @@ class Solution:
         ans = 0
         zeros = 0
         for c in s:
-            if c == '0':
+            if c == "0":
                 zeros += 1
             elif zeros:
                 ans = max(ans + 1, zeros)

@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int minimumCardPickup(std::vector<int>& cards) {
+    int minimumCardPickup(std::vector<int> &cards) {
         std::unordered_map<int, int> last;
         int best = INT_MAX;
         for (int i = 0; i < static_cast<int>(cards.size()); i++) {

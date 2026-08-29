@@ -5,7 +5,8 @@ class Solution {
 
     public int[][] addPoly(int[][] poly1, int[][] poly2) {
         List<int[]> result = new ArrayList<>();
-        int i = 0, j = 0;
+        int i = 0,
+            j = 0;
         while (i < poly1.length && j < poly2.length) {
             int power1 = poly1[i][0];
             int power2 = poly2[j][0];

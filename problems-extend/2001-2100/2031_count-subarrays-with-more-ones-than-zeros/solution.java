@@ -1,4 +1,5 @@
 class Solution {
+
     public int subarraysWithMoreOnesThanZeroes(int[] nums) {
         final long mod = 1_000_000_007L;
         int size = 2 * nums.length + 3;

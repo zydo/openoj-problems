@@ -1,7 +1,6 @@
 class Solution {
   public:
-    long long interactionCosts(int n, vector<vector<int>> &edges,
-                               vector<int> &group) {
+    long long interactionCosts(int n, vector<vector<int>> &edges, vector<int> &group) {
         vector<vector<int>> adj(n);
         for (auto &e : edges) {
             adj[e[0]].push_back(e[1]);

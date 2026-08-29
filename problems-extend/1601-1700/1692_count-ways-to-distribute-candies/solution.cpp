@@ -22,6 +22,6 @@ class Solution {
             }
             prev = move(cur);
         }
-        return (int) prev[k];
+        return (int)prev[k];
     }
 };

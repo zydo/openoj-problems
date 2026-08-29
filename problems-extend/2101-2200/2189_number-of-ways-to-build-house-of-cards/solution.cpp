@@ -15,8 +15,7 @@ class Solution {
         for (int remaining = 2; remaining <= n; ++remaining) {
             for (int allowed = 1; allowed <= n; ++allowed) {
                 long long total = 0;
-                for (int k = 1; k <= allowed && 3 * k - 1 <= remaining;
-                     ++k) {
+                for (int k = 1; k <= allowed && 3 * k - 1 <= remaining; ++k) {
                     int used = 3 * k - 1;
                     if (used == remaining) {
                         total += 1;
@@ -26,8 +25,7 @@ class Solution {
                 }
                 // Counts for n <= 500 stay near 2.5 * 10^7, far inside
                 // int; the mod only guards intermediate sums.
-                dp[remaining][allowed] =
-                    static_cast<int>(total % 1000000007LL);
+                dp[remaining][allowed] = static_cast<int>(total % 1000000007LL);
             }
         }
         return dp[n][n];

@@ -1,8 +1,8 @@
 class Solution {
-   public:
+  public:
     // Enumerate every (center, k) rhombus by walking its four edges;
     // keep distinct sums and return the three largest.
-    vector<long long> getBiggestThree(vector<vector<int>>& grid) {
+    vector<long long> getBiggestThree(vector<vector<int>> &grid) {
         int m = grid.size();
         int n = grid[0].size();
         set<long long> sums;
@@ -28,7 +28,8 @@ class Solution {
             }
         }
         vector<long long> out(sums.rbegin(), sums.rend());
-        if (out.size() > 3) out.resize(3);
+        if (out.size() > 3)
+            out.resize(3);
         return out;
     }
 };

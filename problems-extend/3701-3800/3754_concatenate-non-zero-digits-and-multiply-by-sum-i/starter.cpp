@@ -1,6 +1,4 @@
 class Solution {
-public:
-    long long sumAndMultiply(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    long long sumAndMultiply(int n) { throw logic_error("TODO"); }
 };

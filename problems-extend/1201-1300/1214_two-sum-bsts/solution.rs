@@ -1,9 +1,5 @@
 impl Solution {
-    pub fn two_sum_bsts(
-        root1: Option<Box<TreeNode>>,
-        root2: Option<Box<TreeNode>>,
-        target: i32,
-    ) -> bool {
+    pub fn two_sum_bsts(root1: Option<Box<TreeNode>>, root2: Option<Box<TreeNode>>, target: i32) -> bool {
         let a = inorder(root1.as_deref());
         let b = inorder(root2.as_deref());
         let mut i = 0usize;

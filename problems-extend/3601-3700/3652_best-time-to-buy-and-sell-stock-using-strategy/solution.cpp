@@ -13,8 +13,7 @@ class Solution {
         for (int i = 0; i < n; ++i) {
             base += (long long)strategy[i] * prices[i];
             pricePrefix[i + 1] = pricePrefix[i] + prices[i];
-            weightedPrefix[i + 1] =
-                weightedPrefix[i] + (long long)strategy[i] * prices[i];
+            weightedPrefix[i + 1] = weightedPrefix[i] + (long long)strategy[i] * prices[i];
         }
         // At most one modification, so the untouched plan is always a candidate.
         long long best = base;

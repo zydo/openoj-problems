@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> vowelStrings(vector<string>& words, vector<vector<int>>& queries) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> vowelStrings(vector<string> &words, vector<vector<int>> &queries) { throw logic_error("TODO"); }
 };

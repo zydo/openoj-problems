@@ -1,6 +1,6 @@
 class Solution {
   public:
-    string replaceWords(vector<string>& dictionary, string sentence) {
+    string replaceWords(vector<string> &dictionary, string sentence) {
         // One set holds every root, so a prefix test is a single hash
         // lookup. No root is longer than 100 letters, so a word longer
         // than that can stop its scan early — prefixes past the cap could

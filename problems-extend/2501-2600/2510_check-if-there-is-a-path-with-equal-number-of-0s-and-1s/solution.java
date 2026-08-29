@@ -43,13 +43,15 @@ class Solution {
     }
 
     private void shift(long[] bits, boolean up, long[] out) {
-        if (up) { // every balance rises by one: shift the set toward MSB
+        if (up) {
+            // every balance rises by one: shift the set toward MSB
             long carry = 0;
             for (int w = 0; w < bits.length; w++) {
                 out[w] = (bits[w] << 1) | carry;
                 carry = bits[w] >>> 63;
             }
-        } else { // every balance falls by one: shift toward LSB
+        } else {
+            // every balance falls by one: shift toward LSB
             long rem = 0;
             for (int w = bits.length - 1; w >= 0; w--) {
                 out[w] = (bits[w] >>> 1) | (rem << 63);

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool digitCount(string num) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool digitCount(string num) { throw logic_error("TODO"); }
 };

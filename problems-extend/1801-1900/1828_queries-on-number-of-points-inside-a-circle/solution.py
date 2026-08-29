@@ -10,10 +10,5 @@ class Solution:
         answer = []
         for xj, yj, rj in queries:
             rr = rj * rj
-            answer.append(
-                sum(
-                    (x - xj) * (x - xj) + (y - yj) * (y - yj) <= rr
-                    for x, y in points
-                )
-            )
+            answer.append(sum((x - xj) * (x - xj) + (y - yj) * (y - yj) <= rr for x, y in points))
         return answer

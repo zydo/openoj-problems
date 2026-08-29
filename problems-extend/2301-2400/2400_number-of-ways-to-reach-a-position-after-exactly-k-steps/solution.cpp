@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int numberOfWays(int startPos, int endPos, int k) {
         // Only the distance matters. With r right and l left steps,
         // r - l = d and r + l = k force d <= k, (k - d) even, and

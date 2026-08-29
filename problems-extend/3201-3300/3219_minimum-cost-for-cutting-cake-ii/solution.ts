@@ -1,9 +1,4 @@
-function minimumCost(
-    m: number,
-    n: number,
-    horizontalCut: number[],
-    verticalCut: number[],
-): number {
+function minimumCost(m: number, n: number, horizontalCut: number[], verticalCut: number[]): number {
     // Each line is priced once per perpendicular strip alive when it is
     // cut, and swapping two adjacent cuts of different families changes
     // the total by (cheaper - more expensive), so an optimal schedule

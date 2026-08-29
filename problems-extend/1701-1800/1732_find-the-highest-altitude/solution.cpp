@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int largestAltitude(vector<int>& gain) {
+  public:
+    int largestAltitude(vector<int> &gain) {
         // The altitude at point i is the prefix sum gain[0] + ... +
         // gain[i-1], with point 0 itself sitting at altitude 0. Walk the
         // trip once carrying the running altitude, and seed the best

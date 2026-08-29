@@ -87,6 +87,7 @@ number of colors with limit >= t.
 ### Hint 2
 
 For a split x, count ordered pairs (i, j) with i != j as num_ge(x) * num_ge(n
+
 - x) - num_ge(max(x, n - x)).
 
 ### Hint 3

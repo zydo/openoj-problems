@@ -7,8 +7,10 @@ class Solution {
         // merging can never help the larger side catch up. Equal blocks
         // retire together and scanning continues inside. Block sums reach
         // 10^5 * 10^6 = 10^11, so they ride in long.
-        int i = 0, j = nums.length - 1;
-        long left = 0, right = 0;
+        int i = 0,
+            j = nums.length - 1;
+        long left = 0,
+            right = 0;
         int ops = 0;
         while (i < j) {
             if (left == 0) {

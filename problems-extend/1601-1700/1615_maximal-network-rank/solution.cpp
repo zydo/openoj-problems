@@ -1,9 +1,9 @@
 class Solution {
-public:
-    int maximalNetworkRank(int n, vector<vector<int>>& roads) {
+  public:
+    int maximalNetworkRank(int n, vector<vector<int>> &roads) {
         vector<int> degree(n, 0);
         set<pair<int, int>> connected;
-        for (auto& road : roads) {
+        for (auto &road : roads) {
             int a = road[0];
             int b = road[1];
             degree[a]++;

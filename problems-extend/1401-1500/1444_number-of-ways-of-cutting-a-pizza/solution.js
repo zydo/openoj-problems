@@ -11,9 +11,7 @@ var ways = function (pizza, k) {
     const apples = Array.from({ length: rows + 1 }, () => new Array(cols + 1).fill(0));
     for (let r = rows - 1; r >= 0; r--) {
         for (let c = cols - 1; c >= 0; c--) {
-            apples[r][c] =
-                apples[r + 1][c] + apples[r][c + 1] - apples[r + 1][c + 1] +
-                (pizza[r][c] === "A" ? 1 : 0);
+            apples[r][c] = apples[r + 1][c] + apples[r][c + 1] - apples[r + 1][c + 1] + (pizza[r][c] === "A" ? 1 : 0);
         }
     }
     const memo = new Map();

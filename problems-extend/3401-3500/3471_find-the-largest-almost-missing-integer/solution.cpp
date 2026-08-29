@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int largestInteger(vector<int>& nums, int k) {
+    int largestInteger(vector<int> &nums, int k) {
         // One counter per possible value (0..50): how many distinct windows
         // of size k contain it.
         vector<int> count(51, 0);

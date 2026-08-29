@@ -8,7 +8,7 @@ You are given an integer array `nums`, an integer `k`, and an integer
 You need to perform `k` operations on `nums`. In each operation:
 
 - Find the minimum value `x` in `nums`. If there are multiple occurrences of
-the minimum value, select the one that appears first.
+  the minimum value, select the one that appears first.
 - Replace the selected minimum value `x` with `x * multiplier`.
 
 After the `k` operations, apply modulo `10⁹ + 7` to every value in `nums`.

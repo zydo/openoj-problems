@@ -13,13 +13,8 @@ class CounterIICase {
             throw new Error("init must be an integer");
         }
         const valid = new Set(["increment", "decrement", "reset"]);
-        if (
-            !Array.isArray(calls) ||
-            calls.some((call) => !valid.has(call))
-        ) {
-            throw new Error(
-                "calls must be a list of \"increment\", \"decrement\" or \"reset\" entries"
-            );
+        if (!Array.isArray(calls) || calls.some((call) => !valid.has(call))) {
+            throw new Error('calls must be a list of "increment", "decrement" or "reset" entries');
         }
         this.init = init;
         this.calls = calls;
@@ -37,9 +32,7 @@ class CounterIICase {
             const method = this.calls[at];
             const value = counter[method]();
             if (typeof value !== "number" || !Number.isInteger(value)) {
-                throw new Error(
-                    "counter methods must return an integer on every call"
-                );
+                throw new Error("counter methods must return an integer on every call");
             }
             this.outputs.push(value);
         }

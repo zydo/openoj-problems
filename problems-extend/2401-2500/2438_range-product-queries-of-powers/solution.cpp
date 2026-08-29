@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> productQueries(int n, vector<vector<int>>& queries) {
+    vector<int> productQueries(int n, vector<vector<int>> &queries) {
         // The minimum set of powers of two summing to n is exactly its set
         // bits (hint 1), so powers is the sorted list of 1 << b for each
         // set bit b. A range product of ascending powers of two is itself
@@ -18,8 +18,7 @@ class Solution {
         vector<int> answers(queries.size());
         for (int q = 0; q < (int)queries.size(); ++q) {
             int lo = queries[q][0], hi = queries[q][1];
-            answers[q] =
-                (int)(pref[hi + 1] * powMod(pref[lo], MOD - 2, MOD) % MOD);
+            answers[q] = (int)(pref[hi + 1] * powMod(pref[lo], MOD - 2, MOD) % MOD);
         }
         return answers;
     }

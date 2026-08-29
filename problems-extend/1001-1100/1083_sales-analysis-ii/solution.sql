@@ -1,5 +1,5 @@
-SELECT
-  DISTINCT buyer_id
+SELECT DISTINCT
+  buyer_id
 FROM
   Sales
 WHERE

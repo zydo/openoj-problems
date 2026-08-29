@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class Solution {
+
     public int maxTwoEvents(int[][] events) {
         Arrays.sort(events, (left, right) -> Integer.compare(left[0], right[0]));
         int[] suffixMaximum = new int[events.length + 1];

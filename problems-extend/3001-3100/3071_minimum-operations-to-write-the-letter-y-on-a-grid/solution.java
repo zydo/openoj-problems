@@ -1,4 +1,5 @@
 class Solution {
+
     public int minimumOperationsToWriteY(int[][] grid) {
         int n = grid.length;
         int mid = n / 2;
@@ -6,9 +7,7 @@ class Solution {
         int[] otherCount = new int[3];
         for (int r = 0; r < n; ++r) {
             for (int c = 0; c < n; ++c) {
-                boolean onY = (r == c && r <= mid)
-                    || (c == n - 1 - r && r <= mid)
-                    || (c == mid && r >= mid);
+                boolean onY = (r == c && r <= mid) || (c == n - 1 - r && r <= mid) || (c == mid && r >= mid);
                 if (onY) {
                     ++yCount[grid[r][c]];
                 } else {

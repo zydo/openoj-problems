@@ -12,9 +12,7 @@ class Solution {
         // the total 2.5 * 10^14, so the sum widens to long long.
         unordered_map<int, int> cnt;
         unordered_map<int, int> bucket;
-        priority_queue<pair<int, int>, vector<pair<int, int>>,
-                       greater<pair<int, int>>>
-            heap;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> heap;
         int topFreq = 0;
         long long total = 0;
         for (int right = 0; right < (int)nums.size(); ++right) {

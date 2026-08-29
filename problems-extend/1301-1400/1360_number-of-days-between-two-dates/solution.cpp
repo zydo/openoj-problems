@@ -10,7 +10,7 @@ class Solution {
         int year = stoi(date.substr(0, 4));
         int month = stoi(date.substr(5, 2));
         int day = stoi(date.substr(8, 2));
-        static const int monthLengths[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        static const int monthLengths[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         int total = 0;
         for (int y = 1971; y < year; ++y) {
             total += isLeap(y) ? 366 : 365;
@@ -24,7 +24,5 @@ class Solution {
         return total + day - 1;
     }
 
-    static bool isLeap(int year) {
-        return year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
-    }
+    static bool isLeap(int year) { return year % 4 == 0 && (year % 100 != 0 || year % 400 == 0); }
 };

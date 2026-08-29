@@ -20,7 +20,11 @@ impl Solution {
                 popped.right = last.take();
                 last = Some(popped);
             }
-            let node = Box::new(TreeNode { val: value, left: last.take(), right: None });
+            let node = Box::new(TreeNode {
+                val: value,
+                left: last.take(),
+                right: None,
+            });
             stack.push(node);
         }
         // The array ends: unwind the surviving spine with the same move —

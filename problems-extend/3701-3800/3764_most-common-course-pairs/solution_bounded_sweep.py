@@ -35,10 +35,7 @@ class Solution:
         # the running champion is the same pair no matter how the hash map
         # yields its entries.
         for (first, second), count in counts.items():
-            if count > best_count or (
-                count == best_count
-                and (best_pair is None or (first, second) < best_pair)
-            ):
+            if count > best_count or (count == best_count and (best_pair is None or (first, second) < best_pair)):
                 best_count = count
                 best_pair = (first, second)
         if best_pair is None:

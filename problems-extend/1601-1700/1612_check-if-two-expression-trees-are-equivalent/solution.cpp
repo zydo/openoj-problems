@@ -13,7 +13,8 @@ class Solution {
     array<int, 26> leafCounts(TreeNode *root) {
         array<int, 26> counts{};
         vector<TreeNode *> stack;
-        if (root != nullptr) stack.push_back(root);
+        if (root != nullptr)
+            stack.push_back(root);
         while (!stack.empty()) {
             TreeNode *node = stack.back();
             stack.pop_back();

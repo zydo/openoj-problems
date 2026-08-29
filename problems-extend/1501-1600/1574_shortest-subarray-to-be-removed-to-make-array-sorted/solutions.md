@@ -13,8 +13,8 @@ removing everything after the prefix (length `n - left - 1`) or
 everything before the suffix (length `right`) are both valid answers,
 which gives an initial upper bound.
 
-The remaining question is whether keeping *part* of the prefix and
-*part* of the suffix beats both of those extremes — that only works
+The remaining question is whether keeping _part_ of the prefix and
+_part_ of the suffix beats both of those extremes — that only works
 when some prefix element is no greater than some suffix element, so the
 two runs can be spliced directly. Walk `i` from `0` to `left` and `j`
 from `right` to `n - 1`. Whenever `arr[i] <= arr[j]`, keeping

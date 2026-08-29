@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     long long countVowels(string word) {
         long long total = 0;
         for (int index = 0; index < static_cast<int>(word.size()); ++index) {
@@ -10,7 +10,7 @@ public:
         return total;
     }
 
-private:
+  private:
     bool isVowel(char character) const {
         return character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u';
     }

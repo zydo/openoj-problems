@@ -6,7 +6,7 @@ class Solution:
         best = None
         for i, ch in enumerate(number):
             if ch == digit:
-                candidate = number[:i] + number[i + 1:]
+                candidate = number[:i] + number[i + 1 :]
                 if best is None or candidate > best:
                     best = candidate
         return best

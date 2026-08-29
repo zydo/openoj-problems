@@ -8,7 +8,8 @@ class Solution {
         // gives run[i] = run[i + m] + 1; the answer is the maximum run.
         // A self-overlapping word such as "aa" cannot chain through the
         // overlap, and scattered matches never tile into one block.
-        int n = sequence.length(), m = word.length();
+        int n = sequence.length(),
+            m = word.length();
         int[] run = new int[n + 1];
         int best = 0;
         for (int i = n - 1; i >= 0; --i) {

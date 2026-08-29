@@ -28,7 +28,7 @@ class NeighborSum {
         int r = rowOf[value];
         int c = colOf[value];
         int total = 0;
-        int[][] offsets = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        int[][] offsets = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
         for (int[] offset : offsets) {
             int nr = r + offset[0];
             int nc = c + offset[1];
@@ -43,7 +43,7 @@ class NeighborSum {
         int r = rowOf[value];
         int c = colOf[value];
         int total = 0;
-        int[][] offsets = {{-1, -1}, {-1, 1}, {1, -1}, {1, 1}};
+        int[][] offsets = { { -1, -1 }, { -1, 1 }, { 1, -1 }, { 1, 1 } };
         for (int[] offset : offsets) {
             int nr = r + offset[0];
             int nc = c + offset[1];

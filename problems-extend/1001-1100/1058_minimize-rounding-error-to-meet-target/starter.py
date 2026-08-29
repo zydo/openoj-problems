@@ -1,3 +1,6 @@
+from typing import List, Optional
+
+
 class Solution:
-    def minimizeError(self, prices: list[str], target: int) -> str:
+    def minimizeError(self, prices: List[str], target: int) -> str:
         raise NotImplementedError("TODO")

@@ -25,7 +25,7 @@ class VideoSharingPlatform:
             return "-1"
         video = self.videos[videoId]
         video[3] += 1
-        return video[0][startMinute:min(endMinute, len(video[0]) - 1) + 1]
+        return video[0][startMinute : min(endMinute, len(video[0]) - 1) + 1]
 
     def like(self, videoId: int):
         if videoId in self.videos:

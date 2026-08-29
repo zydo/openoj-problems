@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<string> reverseString(vector<string>& s) {
+    vector<string> reverseString(vector<string> &s) {
         // Two indexes walk inward from both ends and swap each pair they
         // form: position i trades places with position n-1-i, so every
         // element crosses the middle exactly once and the array is reversed

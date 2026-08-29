@@ -4,7 +4,7 @@
 
 The final result can reach `10^15` characters, so building it is impossible
 in any language here. The key observation is that the kth character does not
-need the whole string: only the *lengths* after each prefix, plus one
+need the whole string: only the _lengths_ after each prefix, plus one
 position that is rewritten as the operations are undone.
 
 The first pass records `length[i]`, the size of the result after processing
@@ -15,7 +15,7 @@ keeps every intermediate inside the range of a 64-bit counter. If `k` is at
 or past the final length, the answer is `'.'` immediately.
 
 The second pass walks `s` backwards carrying `pos`, the position of the
-desired character in the result *at that point*. A `#` means the string was
+desired character in the result _at that point_. A `#` means the string was
 its own duplicate, so a position in the right half folds into the left by
 subtracting the pre-duplication length; a `%` mirrors the position across the
 midpoint; a `*` only removed the tail, so every remaining position is

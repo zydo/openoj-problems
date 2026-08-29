@@ -1,20 +1,21 @@
-WITH posts AS (
-  SELECT DISTINCT
-    sub_id AS post_id
-  FROM
-    Submissions
-  WHERE
-    parent_id IS NULL
-),
-comments AS (
-  SELECT DISTINCT
-    parent_id AS post_id,
-    sub_id AS comment_id
-  FROM
-    Submissions
-  WHERE
-    parent_id IS NOT NULL
-)
+WITH
+  posts AS (
+    SELECT DISTINCT
+      sub_id AS post_id
+    FROM
+      Submissions
+    WHERE
+      parent_id IS NULL
+  ),
+  comments AS (
+    SELECT DISTINCT
+      parent_id AS post_id,
+      sub_id AS comment_id
+    FROM
+      Submissions
+    WHERE
+      parent_id IS NOT NULL
+  )
 SELECT
   p.post_id,
   COUNT(c.comment_id) AS number_of_comments

@@ -37,15 +37,13 @@ impl Solution {
             // n values by the multiplier, which preserves that inequality,
             // so the leftover k operations split into q full rounds plus one
             // extra exponent for the first rem entries of the sorted order.
-            let mut ordered: Vec<(i64, usize)> =
-                heap.into_iter().map(|Reverse(pair)| pair).collect();
+            let mut ordered: Vec<(i64, usize)> = heap.into_iter().map(|Reverse(pair)| pair).collect();
             ordered.sort();
             let q = (k as i64) / (n as i64);
             let rem = (k as usize) % n;
             for (pos, &(value, index)) in ordered.iter().enumerate() {
                 let exponent = q + if pos < rem { 1 } else { 0 };
-                result[index] =
-                    (value % MOD * pow_mod(m, exponent, MOD) % MOD) as i32;
+                result[index] = (value % MOD * pow_mod(m, exponent, MOD) % MOD) as i32;
             }
         } else {
             for Reverse((value, index)) in heap {

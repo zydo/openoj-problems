@@ -10,8 +10,7 @@ impl Solution {
         for letter in 0..26 {
             pairs += count[letter] / 2;
         }
-        let mut halves: Vec<i32> =
-            words.iter().map(|word| (word.len() / 2) as i32).collect();
+        let mut halves: Vec<i32> = words.iter().map(|word| (word.len() / 2) as i32).collect();
         halves.sort_unstable();
         let mut made = 0;
         for half in halves {

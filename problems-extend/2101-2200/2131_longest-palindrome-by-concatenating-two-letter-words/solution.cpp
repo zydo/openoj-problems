@@ -1,9 +1,9 @@
 class Solution {
-public:
-    int longestPalindrome(vector<string>& words) {
+  public:
+    int longestPalindrome(vector<string> &words) {
         int waiting[26][26] = {};
         int length = 0;
-        for (const string& word : words) {
+        for (const string &word : words) {
             int first = word[0] - 'a';
             int second = word[1] - 'a';
             if (waiting[second][first] > 0) {

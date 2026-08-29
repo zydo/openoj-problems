@@ -6,6 +6,7 @@ import java.util.List;
  * the starter. Constructed from the case state (the category assignment
  * plus the query budget); only haveSameCategory reveals it. */
 public class CategoryHandler {
+
     private final int[] category;
     private long budget;
 

@@ -21,16 +21,14 @@ class Solution {
             // row r's window around column c.
             long[] pref = new long[m + 1];
             for (int v = 0; v < m; v++) {
-                pref[v + 1] = grid[r + 1].charAt(v) == '.'
-                        ? (pref[v] + up[v] + same[v]) % MOD
-                        : pref[v];
+                pref[v + 1] = grid[r + 1].charAt(v) == '.' ? (pref[v] + up[v] + same[v]) % MOD : pref[v];
             }
             long[] newUp = new long[m];
             for (int c = 0; c < m; c++) {
                 if (grid[r].charAt(c) != '.') continue;
                 int lo = Math.max(0, c - wUp);
                 int hi = Math.min(m - 1, c + wUp);
-                newUp[c] = ((pref[hi + 1] - pref[lo]) % MOD + MOD) % MOD;
+                newUp[c] = (((pref[hi + 1] - pref[lo]) % MOD) + MOD) % MOD;
             }
             same = slidesOf(grid, newUp, r, d, m);
             up = newUp;
@@ -50,16 +48,14 @@ class Solution {
         final long MOD = 1_000_000_007L;
         long[] pref = new long[m + 1];
         for (int v = 0; v < m; v++) {
-            pref[v + 1] = grid[row].charAt(v) == '.'
-                    ? (pref[v] + upValues[v]) % MOD
-                    : pref[v];
+            pref[v + 1] = grid[row].charAt(v) == '.' ? (pref[v] + upValues[v]) % MOD : pref[v];
         }
         long[] out = new long[m];
         for (int c = 0; c < m; c++) {
             if (grid[row].charAt(c) != '.') continue;
             int lo = Math.max(0, c - d);
             int hi = Math.min(m - 1, c + d);
-            out[c] = ((pref[hi + 1] - pref[lo] - upValues[c]) % MOD + MOD) % MOD;
+            out[c] = (((pref[hi + 1] - pref[lo] - upValues[c]) % MOD) + MOD) % MOD;
         }
         return out;
     }

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool simpleGraphExists(vector<int>& degrees) {
+  public:
+    bool simpleGraphExists(vector<int> &degrees) {
         sort(degrees.rbegin(), degrees.rend());
         int n = degrees.size();
         vector<long long> pre(n + 1, 0);

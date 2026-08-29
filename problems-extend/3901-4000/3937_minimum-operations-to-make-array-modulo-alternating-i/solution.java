@@ -15,9 +15,7 @@ class Solution {
                 for (int i = 0; i < remainders.length; i++) {
                     int target = i % 2 == 0 ? x : y;
                     int current = remainders[i];
-                    total += Math.min(
-                            (target - current + k) % k,
-                            (current - target + k) % k);
+                    total += Math.min((target - current + k) % k, (current - target + k) % k);
                 }
                 answer = Math.min(answer, total);
             }

@@ -15,7 +15,8 @@ var isIsomorphic = function (s, t) {
     const forward = new Map();
     const reverse = new Map();
     for (let index = 0; index < s.length; ++index) {
-        const sChar = s[index], tChar = t[index];
+        const sChar = s[index],
+            tChar = t[index];
         // One branch per contract clause: a source already bound to a
         // different replacement, or a target already claimed by another source.
         if (forward.has(sChar) && forward.get(sChar) !== tChar) return false;

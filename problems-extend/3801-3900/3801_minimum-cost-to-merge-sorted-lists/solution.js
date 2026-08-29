@@ -36,7 +36,7 @@ var minMergeCost = function (lists) {
             const mid = (lo + hi) >> 1;
             let cnt = 0;
             for (let i = 0; i < n; i++) {
-                if (mask >> i & 1) {
+                if ((mask >> i) & 1) {
                     cnt += countAtMost(lists[i], vals[mid]);
                 }
             }

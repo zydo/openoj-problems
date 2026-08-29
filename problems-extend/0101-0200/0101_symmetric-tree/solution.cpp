@@ -14,7 +14,8 @@ class Solution {
     bool isMirror(TreeNode *a, TreeNode *b) {
         // Two missing subtrees match; exactly one missing is a structural
         // mismatch — `a == b` is true only when both are nullptr.
-        if (a == nullptr || b == nullptr) return a == b;
+        if (a == nullptr || b == nullptr)
+            return a == b;
         // Symmetry lives across the center: values agree here, and the
         // OUTER pair (a->left, b->right) and INNER pair (a->right, b->left)
         // must each be mirrors by these same rules.

@@ -66,7 +66,11 @@ impl Solution {
             if !alive[id] {
                 continue;
             }
-            let mut node = Box::new(TreeNode { val: vals[id], left: None, right: None });
+            let mut node = Box::new(TreeNode {
+                val: vals[id],
+                left: None,
+                right: None,
+            });
             if let Some(c) = left[id] {
                 node.left = built[c].take();
             }

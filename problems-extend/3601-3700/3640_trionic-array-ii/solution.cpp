@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maxSumTrionic(vector<int>& nums) {
+    long long maxSumTrionic(vector<int> &nums) {
         // Best sums of subarrays ending at the previous element: s0 inside
         // the first climb (length >= 2), s1 descending after a finished
         // climb, s2 a full trionic mid-final-climb. Unreachable sits on a

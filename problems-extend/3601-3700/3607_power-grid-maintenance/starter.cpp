@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> processQueries(int c, vector<vector<int>>& connections, vector<vector<int>>& queries) {
+  public:
+    vector<int> processQueries(int c, vector<vector<int>> &connections, vector<vector<int>> &queries) {
         throw logic_error("TODO");
     }
 };

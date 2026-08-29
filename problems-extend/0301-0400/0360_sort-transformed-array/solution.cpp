@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> sortTransformedArray(vector<int>& nums, int a, int b, int c) {
+    vector<int> sortTransformedArray(vector<int> &nums, int a, int b, int c) {
         // f(x) = ax^2 + bx + c is a parabola, so its extreme transformed
         // values sit at the two ends of the sorted nums, not in the middle.
         // When a >= 0 the curve opens upward (a == 0 leaves a monotone line,

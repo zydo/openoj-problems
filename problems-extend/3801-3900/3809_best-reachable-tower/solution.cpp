@@ -3,8 +3,7 @@
 
 class Solution {
   public:
-    std::vector<int> bestTower(std::vector<std::vector<int>> &towers,
-                               std::vector<int> &center, int radius) {
+    std::vector<int> bestTower(std::vector<std::vector<int>> &towers, std::vector<int> &center, int radius) {
         int cx = center[0], cy = center[1];
         std::vector<int> best;
         int bestQuality = -1;
@@ -15,9 +14,8 @@ class Solution {
             }
             // Strictly better quality wins; on a quality tie the
             // lexicographically smaller coordinate wins.
-            if (best.empty() || quality > bestQuality
-                || (quality == bestQuality
-                    && (x < best[0] || (x == best[0] && y < best[1])))) {
+            if (best.empty() || quality > bestQuality ||
+                (quality == bestQuality && (x < best[0] || (x == best[0] && y < best[1])))) {
                 best = {x, y};
                 bestQuality = quality;
             }

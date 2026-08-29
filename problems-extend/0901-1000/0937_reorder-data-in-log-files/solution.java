@@ -17,7 +17,7 @@ class Solution {
             if (Character.isDigit(content.charAt(0))) {
                 digit.add(log);
             } else {
-                letter.add(new String[] {content, ident, log});
+                letter.add(new String[] { content, ident, log });
             }
         }
         // Letter-logs order by (content, identifier) — a total order, since

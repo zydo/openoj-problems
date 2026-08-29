@@ -32,8 +32,7 @@ var resultGrid = function (image, threshold) {
     const pref = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
     for (let r = 0; r < m; ++r) {
         for (let c = 0; c < n; ++c) {
-            pref[r + 1][c + 1] =
-                pref[r][c + 1] + pref[r + 1][c] - pref[r][c] + image[r][c];
+            pref[r + 1][c + 1] = pref[r][c + 1] + pref[r + 1][c] - pref[r][c] + image[r][c];
         }
     }
     const sum = Array.from({ length: m }, () => new Array(n).fill(0));
@@ -46,8 +45,7 @@ var resultGrid = function (image, threshold) {
             if (!calmV[i][j] || !calmV[i][j + 1] || !calmV[i][j + 2]) {
                 continue;
             }
-            const total =
-                pref[i + 3][j + 3] - pref[i][j + 3] - pref[i + 3][j] + pref[i][j];
+            const total = pref[i + 3][j + 3] - pref[i][j + 3] - pref[i + 3][j] + pref[i][j];
             const avg = Math.floor(total / 9);
             for (let r = i; r < i + 3; ++r) {
                 for (let c = j; c < j + 3; ++c) {
@@ -60,9 +58,7 @@ var resultGrid = function (image, threshold) {
     const result = Array.from({ length: m }, () => new Array(n));
     for (let r = 0; r < m; ++r) {
         for (let c = 0; c < n; ++c) {
-            result[r][c] = count[r][c]
-                ? Math.floor(sum[r][c] / count[r][c])
-                : image[r][c];
+            result[r][c] = count[r][c] ? Math.floor(sum[r][c] / count[r][c]) : image[r][c];
         }
     }
     return result;

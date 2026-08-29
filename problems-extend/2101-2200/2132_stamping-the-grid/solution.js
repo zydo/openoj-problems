@@ -11,10 +11,7 @@ var possibleToStamp = function (grid, stampHeight, stampWidth) {
     for (let row = 0; row < rows; row++) {
         for (let column = 0; column < columns; column++) {
             occupied[row + 1][column + 1] =
-                grid[row][column] +
-                occupied[row][column + 1] +
-                occupied[row + 1][column] -
-                occupied[row][column];
+                grid[row][column] + occupied[row][column + 1] + occupied[row + 1][column] - occupied[row][column];
         }
     }
 
@@ -23,8 +20,7 @@ var possibleToStamp = function (grid, stampHeight, stampWidth) {
         const bottom = top + stampHeight;
         for (let left = 0; left + stampWidth <= columns; left++) {
             const right = left + stampWidth;
-            const total =
-                occupied[bottom][right] - occupied[top][right] - occupied[bottom][left] + occupied[top][left];
+            const total = occupied[bottom][right] - occupied[top][right] - occupied[bottom][left] + occupied[top][left];
             if (total === 0) {
                 difference[top][left]++;
                 difference[bottom][left]--;

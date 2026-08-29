@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> sortArray(vector<int>& nums) {
+    vector<int> sortArray(vector<int> &nums) {
         // Bottom-up merge sort: no recursion and no library sort. A pass at
         // width w merges every pair of adjacent sorted runs of length w from
         // source into buffer, doubling the sorted-run length each pass; after

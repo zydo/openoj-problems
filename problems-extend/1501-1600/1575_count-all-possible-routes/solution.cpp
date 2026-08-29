@@ -9,8 +9,7 @@ class Solution {
   private:
     static constexpr long long MOD = 1'000'000'007;
 
-    long long routesFrom(vector<int> &locations, int finish, int city, int remaining,
-                          vector<vector<long long>> &memo) {
+    long long routesFrom(vector<int> &locations, int finish, int city, int remaining, vector<vector<long long>> &memo) {
         if (memo[city][remaining] != -1)
             return memo[city][remaining];
         // A route may stop here (only valid when this city is the destination)

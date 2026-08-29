@@ -6,15 +6,16 @@ using namespace std;
 
 class Solution {
   public:
-    vector<int> countWordOccurrences(vector<string> &chunks,
-                                     vector<string> &queries) {
+    vector<int> countWordOccurrences(vector<string> &chunks, vector<string> &queries) {
         string text;
-        for (auto &chunk : chunks) text += chunk;
+        for (auto &chunk : chunks)
+            text += chunk;
         unordered_map<string, int> counts;
         string current;
 
         auto flush = [&]() {
-            if (!current.empty()) ++counts[current];
+            if (!current.empty())
+                ++counts[current];
             current.clear();
         };
 
@@ -37,7 +38,8 @@ class Solution {
 
         vector<int> answer;
         answer.reserve(queries.size());
-        for (auto &query : queries) answer.push_back(counts[query]);
+        for (auto &query : queries)
+            answer.push_back(counts[query]);
         return answer;
     }
 };

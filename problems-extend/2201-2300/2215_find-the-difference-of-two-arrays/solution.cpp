@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> findDifference(vector<int>& nums1, vector<int>& nums2) {
+    vector<vector<int>> findDifference(vector<int> &nums1, vector<int> &nums2) {
         // Set membership answers "present in the other array" in O(1); the
         // surviving distinct values are emitted ascending for judging.
         unordered_set<int> set1(nums1.begin(), nums1.end());
@@ -9,7 +9,7 @@ class Solution {
     }
 
   private:
-    vector<int> distinctSorted(vector<int>& source, unordered_set<int>& other) {
+    vector<int> distinctSorted(vector<int> &source, unordered_set<int> &other) {
         vector<int> kept;
         for (int value : source) {
             if (!other.count(value)) {

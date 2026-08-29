@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int bitwiseComplement(int n) {
         // Grow a run of ones (1 -> 11 -> 111 -> ...) until it's at least as
         // wide as n's own binary representation; XOR-ing with that window

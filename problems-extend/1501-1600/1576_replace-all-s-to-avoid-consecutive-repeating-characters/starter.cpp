@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string modifyString(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    string modifyString(string s) { throw logic_error("TODO"); }
 };

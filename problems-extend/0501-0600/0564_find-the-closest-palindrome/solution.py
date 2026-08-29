@@ -33,9 +33,7 @@ class Solution:
             if candidate_value == value:
                 continue  # n itself never counts
             distance = abs(candidate_value - value)
-            if best is None or distance < best_distance or (
-                distance == best_distance and candidate_value < best_value
-            ):
+            if best is None or distance < best_distance or (distance == best_distance and candidate_value < best_value):
                 best = candidate
                 best_value = candidate_value
                 best_distance = distance

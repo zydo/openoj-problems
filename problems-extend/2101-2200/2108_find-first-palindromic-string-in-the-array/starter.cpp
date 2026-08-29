@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string firstPalindrome(vector<string>& words) {
-        throw logic_error("TODO");
-    }
+  public:
+    string firstPalindrome(vector<string> &words) { throw logic_error("TODO"); }
 };

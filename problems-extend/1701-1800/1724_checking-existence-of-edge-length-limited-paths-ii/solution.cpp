@@ -13,14 +13,13 @@ class DistanceLimitedPathsExist {
     DistanceLimitedPathsExist(int n, vector<vector<int>> edgeList) : n_(n), depth_(n), root_of_(n) {
         // Kruskal: sorting by distance and uniting components turns the
         // accepted edges into one minimum spanning tree per component.
-        sort(edgeList.begin(), edgeList.end(),
-             [](const vector<int>& a, const vector<int>& b) { return a[2] < b[2]; });
+        sort(edgeList.begin(), edgeList.end(), [](const vector<int> &a, const vector<int> &b) { return a[2] < b[2]; });
         vector<int> parent(n);
         for (int node = 0; node < n; node++) {
             parent[node] = node;
         }
         vector<vector<pair<int, int>>> adjacency(n);
-        for (const vector<int>& edge : edgeList) {
+        for (const vector<int> &edge : edgeList) {
             int root_u = find(parent, edge[0]);
             int root_v = find(parent, edge[1]);
             if (root_u != root_v) {
@@ -124,7 +123,7 @@ class DistanceLimitedPathsExist {
     }
 
   private:
-    static int find(vector<int>& parent, int x) {
+    static int find(vector<int> &parent, int x) {
         while (parent[x] != x) {
             parent[x] = parent[parent[x]];
             x = parent[x];

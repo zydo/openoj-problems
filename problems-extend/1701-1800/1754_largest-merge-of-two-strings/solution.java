@@ -5,8 +5,10 @@ class Solution {
         // lexicographically larger — the suffix comparison settles not
         // just differing heads but the tie case.
         StringBuilder out = new StringBuilder();
-        int i = 0, j = 0;
-        int n = word1.length(), m = word2.length();
+        int i = 0,
+            j = 0;
+        int n = word1.length(),
+            m = word2.length();
         while (i < n && j < m) {
             if (word1.substring(i).compareTo(word2.substring(j)) > 0) {
                 out.append(word1.charAt(i));

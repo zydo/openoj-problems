@@ -16,7 +16,7 @@ class Solution {
         }
 
         int[] ans = new int[n - 1];
-        for (int mask = 1; mask < (1 << n); mask++) {
+        for (int mask = 1; mask < 1 << n; mask++) {
             int size = Integer.bitCount(mask);
             if (size < 2) {
                 continue;

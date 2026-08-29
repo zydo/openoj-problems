@@ -7,10 +7,8 @@
 using namespace std;
 
 class Solution {
-public:
-    vector<vector<int>> highestRankedKItems(vector<vector<int>>& grid,
-                                            vector<int>& pricing,
-                                            vector<int>& start,
+  public:
+    vector<vector<int>> highestRankedKItems(vector<vector<int>> &grid, vector<int> &pricing, vector<int> &start,
                                             int k) {
         int rows = static_cast<int>(grid.size());
         int columns = static_cast<int>(grid[0].size());
@@ -31,12 +29,11 @@ public:
                 candidates.push_back({distance[row][column], price, row, column});
             }
 
-            for (const auto& direction : directions) {
+            for (const auto &direction : directions) {
                 int nextRow = row + direction[0];
                 int nextColumn = column + direction[1];
-                if (nextRow >= 0 && nextRow < rows && nextColumn >= 0 &&
-                    nextColumn < columns && grid[nextRow][nextColumn] != 0 &&
-                    distance[nextRow][nextColumn] == -1) {
+                if (nextRow >= 0 && nextRow < rows && nextColumn >= 0 && nextColumn < columns &&
+                    grid[nextRow][nextColumn] != 0 && distance[nextRow][nextColumn] == -1) {
                     distance[nextRow][nextColumn] = distance[row][column] + 1;
                     cells.push({nextRow, nextColumn});
                 }

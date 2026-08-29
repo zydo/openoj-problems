@@ -34,10 +34,7 @@ var minOperations = function (s, k) {
     // hold the unvisited states, so each state enters the queue exactly
     // once even though edges are whole intervals.
     const nextEven = Array.from({ length: Math.floor(n / 2) + 2 }, (_, i) => i);
-    const nextOdd = Array.from(
-        { length: Math.floor((n + 1) / 2) + 1 },
-        (_, i) => i,
-    );
+    const nextOdd = Array.from({ length: Math.floor((n + 1) / 2) + 1 }, (_, i) => i);
     const dist = new Array(n + 1).fill(-1);
     dist[z] = 0;
     const start = z >> 1;

@@ -74,9 +74,7 @@ class SortCase {
     check(solution) {
         const actual = solution.sortBy(this.buildInput(), this.fn);
         this.passed =
-            Array.isArray(actual) &&
-            actual.length === this.answer.length &&
-            this.sameValue(actual, this.answer);
+            Array.isArray(actual) && actual.length === this.answer.length && this.sameValue(actual, this.answer);
     }
 
     // Void-return judging reads this: the wrapper emits it as the case's

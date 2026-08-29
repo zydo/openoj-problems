@@ -1,8 +1,8 @@
 class Solution {
-public:
-    string findSmallestRegion(vector<vector<string>>& regions, string region1, string region2) {
+  public:
+    string findSmallestRegion(vector<vector<string>> &regions, string region1, string region2) {
         unordered_map<string, string> parent;
-        for (const auto& group : regions) {
+        for (const auto &group : regions) {
             for (size_t i = 1; i < group.size(); ++i) {
                 parent[group[i]] = group[0];
             }
@@ -13,7 +13,8 @@ public:
         while (true) {
             chain.insert(node);
             auto it = parent.find(node);
-            if (it == parent.end()) break;
+            if (it == parent.end())
+                break;
             node = it->second;
         }
         // First ancestor of region2 inside that chain is the LCA.

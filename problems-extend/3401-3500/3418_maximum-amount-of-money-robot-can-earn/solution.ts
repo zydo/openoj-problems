@@ -5,11 +5,7 @@ function maximumAmount(coins: number[][]): number {
     const NEG = -1e9;
     const rows = coins.length;
     const cols = coins[0].length;
-    const dp: number[][] = [
-        new Array(cols).fill(NEG),
-        new Array(cols).fill(NEG),
-        new Array(cols).fill(NEG),
-    ];
+    const dp: number[][] = [new Array(cols).fill(NEG), new Array(cols).fill(NEG), new Array(cols).fill(NEG)];
     for (let i = 0; i < rows; ++i) {
         for (let j = 0; j < cols; ++j) {
             const value = coins[i][j];

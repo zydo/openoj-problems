@@ -16,7 +16,7 @@ For each possible digit sum there is a short, sorted list of values in
 one value from that position's group, with the chosen values non-decreasing
 across positions.
 
-The DP therefore keeps a state per *candidate*, not per value. `dp[j]`
+The DP therefore keeps a state per _candidate_, not per value. `dp[j]`
 counts the valid prefixes that end exactly at the j-th candidate of the
 previous position's group. To advance into the next group, build the prefix
 sums of `dp`; for each candidate `v` of the new group, the number of

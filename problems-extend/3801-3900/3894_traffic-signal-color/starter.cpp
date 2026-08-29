@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string trafficSignal(int timer) {
-        throw logic_error("TODO");
-    }
+  public:
+    string trafficSignal(int timer) { throw logic_error("TODO"); }
 };

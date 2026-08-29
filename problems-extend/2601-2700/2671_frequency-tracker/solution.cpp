@@ -19,7 +19,8 @@ class FrequencyTracker {
     void deleteOne(int number) {
         int count = count_of_[number];
         // The structure may not contain it; delete nothing then.
-        if (count == 0) return;
+        if (count == 0)
+            return;
         --count_of_[number];
         --numbers_at_[count];
         if (count > 1) {

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<vector<int>> generate(int numRows) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<vector<int>> generate(int numRows) { throw logic_error("TODO"); }
 };

@@ -5,7 +5,7 @@ class Solution {
             "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
         };
         const char *teens[] = {
-            "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen",
+            "Ten",     "Eleven",  "Twelve",    "Thirteen", "Fourteen",
             "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen",
         };
         const char *tens[] = {

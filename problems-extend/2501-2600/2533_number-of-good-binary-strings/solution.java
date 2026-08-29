@@ -1,7 +1,6 @@
 class Solution {
 
-    public long goodBinaryStrings(int minLength, int maxLength, int oneGroup,
-            int zeroGroup) {
+    public long goodBinaryStrings(int minLength, int maxLength, int oneGroup, int zeroGroup) {
         // dp[i] counts good strings of length i: peel off the final run of
         // equal characters — its size is a positive multiple of oneGroup or
         // zeroGroup, and what remains is any shorter good string (or nothing).

@@ -15,7 +15,7 @@ class Solution {
             }
         }
         int best = 0;
-        for (int sel = 0; sel < (1 << n); ++sel) {
+        for (int sel = 0; sel < 1 << n; ++sel) {
             if (Integer.bitCount(sel) != numSelect) {
                 continue;
             }

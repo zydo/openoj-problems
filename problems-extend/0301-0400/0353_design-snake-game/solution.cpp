@@ -11,8 +11,7 @@
 // set answers the body-collision question in O(1).
 class SnakeGame {
   public:
-    SnakeGame(int width, int height, vector<vector<int>> food)
-        : width(width), height(height), food(std::move(food)) {
+    SnakeGame(int width, int height, vector<vector<int>> food) : width(width), height(height), food(std::move(food)) {
         body.emplace_back(0, 0);
         occupied.insert(0);
     }

@@ -9,7 +9,10 @@ class Solution {
         // the other two pairs fence off the start and goal corners. A
         // circle covering a corner touches both adjacent edges at once.
         int n = circles.length;
-        int top = n, right = n + 1, bottom = n + 2, left = n + 3;
+        int top = n,
+            right = n + 1,
+            bottom = n + 2,
+            left = n + 3;
         int[] parent = new int[n + 4];
         for (int node = 0; node < n + 4; ++node) {
             parent[node] = node;
@@ -41,14 +44,15 @@ class Solution {
                 }
             }
         }
-        return find(parent, left) != find(parent, right)
-                && find(parent, left) != find(parent, bottom)
-                && find(parent, right) != find(parent, top)
-                && find(parent, top) != find(parent, bottom);
+        return (
+            find(parent, left) != find(parent, right) &&
+            find(parent, left) != find(parent, bottom) &&
+            find(parent, right) != find(parent, top) &&
+            find(parent, top) != find(parent, bottom)
+        );
     }
 
-    private boolean meetsEdge(
-            long cx, long cy, long radius, long fixed, boolean vertical, long xCorner, long yCorner) {
+    private boolean meetsEdge(long cx, long cy, long radius, long fixed, boolean vertical, long xCorner, long yCorner) {
         long px = vertical ? fixed : Math.max(0L, Math.min(cx, xCorner));
         long py = vertical ? Math.max(0L, Math.min(cy, yCorner)) : fixed;
         return (cx - px) * (cx - px) + (cy - py) * (cy - py) <= radius * radius;

@@ -9,7 +9,7 @@ the completion date formatted as `YYYY-MM-DD`, and the rating the student
 gave the course, an integer from 1 to 5 supplied as a string. The rows
 arrive in no particular order.
 
-A student is a *top performer* when they completed at least 5 courses and
+A student is a _top performer_ when they completed at least 5 courses and
 the average of their ratings is at least 4. Both bars are judged exactly:
 `4 + 4 + 3 + 3 + 5` averages 3.8 and fails, while `4 + 4 + 4 + 4 + 4`
 averages exactly 4 and passes. For every top performer, order their
@@ -18,7 +18,7 @@ date, break the tie by course name in ascending (lexicographic) order —
 dates sort chronologically because the `YYYY-MM-DD` format orders as
 plain strings do.
 
-Each top performer then contributes one count for every *consecutive*
+Each top performer then contributes one count for every _consecutive_
 pair of courses in that ordering: if their sequence runs A, B, C, they
 add one to pair `(A, B)` and one to pair `(B, C)`. Only adjacent steps
 count — revisiting a course later creates no extra pairs.

@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int arithmeticTriplets(vector<int>& nums, int diff) {
+    int arithmeticTriplets(vector<int> &nums, int diff) {
         // Strictly increasing means every value occurs once, so a triplet is
         // determined by its middle: count elements whose value - diff and
         // value + diff are both present.

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maxArea(int height, vector<int>& positions, string directions) {
+    long long maxArea(int height, vector<int> &positions, string directions) {
         // The total moves each second by (#up - #down); that balance only
         // changes at critical times when a piston lands on an end and turns
         // around. Between critical times the total runs along a straight

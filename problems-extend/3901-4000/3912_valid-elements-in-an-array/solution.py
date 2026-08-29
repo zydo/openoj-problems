@@ -14,8 +14,5 @@ class Solution:
         return [
             value
             for i, value in enumerate(nums)
-            if i == 0
-            or i == len(nums) - 1
-            or value > left_max[i - 1]
-            or value > right_max[i + 1]
+            if i == 0 or i == len(nums) - 1 or value > left_max[i - 1] or value > right_max[i + 1]
         ]

@@ -4,12 +4,12 @@
 
 Table: `Queue`
 
-| Column Name  | Type |
-| ------------ | ---- |
-| person_id    | int  |
-| person_name  | varchar |
-| weight       | int  |
-| turn         | int  |
+| Column Name | Type    |
+| ----------- | ------- |
+| person_id   | int     |
+| person_name | varchar |
+| weight      | int     |
+| turn        | int     |
 
 `person_id` is the column with unique values for this table.
 This table has the information about all people waiting for a bus.

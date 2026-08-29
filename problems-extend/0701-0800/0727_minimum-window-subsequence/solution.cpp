@@ -21,7 +21,8 @@ class Solution {
         // shorter windows leaves the leftmost one among equal-length winners.
         int bestLen = n + 1, bestStart = -1;
         for (int i = 0; i < n; ++i) {
-            if (s1[i] != s2[0]) continue;
+            if (s1[i] != s2[0])
+                continue;
             int pos = i;
             bool ok = true;
             for (int k = 1; k < m; ++k) {
@@ -34,7 +35,8 @@ class Solution {
             if (ok && pos - i + 1 < bestLen) {
                 bestLen = pos - i + 1;
                 bestStart = i;
-                if (bestLen == m) break;  // |s2| is the unavoidable lower bound
+                if (bestLen == m)
+                    break; // |s2| is the unavoidable lower bound
             }
         }
         return bestStart < 0 ? "" : s1.substr(bestStart, bestLen);

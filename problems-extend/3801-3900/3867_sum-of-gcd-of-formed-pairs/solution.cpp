@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long gcdSum(vector<int>& nums) {
+  public:
+    long long gcdSum(vector<int> &nums) {
         // prefixGcd[i] is gcd(nums[i], running max so far). Once built, the
         // sorted list is paired smallest-with-largest, and each pair's gcd
         // is summed — a two-pointer walk from both ends. Widen to long long:
@@ -24,7 +24,7 @@ public:
         return total;
     }
 
-private:
+  private:
     long long gcd(long long a, long long b) {
         while (b != 0) {
             long long t = a % b;

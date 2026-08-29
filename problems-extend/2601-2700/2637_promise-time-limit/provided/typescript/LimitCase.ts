@@ -32,8 +32,7 @@ class LimitClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -59,14 +58,9 @@ class LimitClock {
 const openojLimitClock = new LimitClock();
 // Ambient timer name for submissions (the judge compiles with ES libs
 // only): at run time this resolves to the virtual patched version below.
-declare const setTimeout: (
-    callback: (...args: any[]) => void,
-    delay?: number,
-) => number;
-const openojBuiltinSetTimeout: (
-    callback: (...args: any[]) => void,
-    delay?: number,
-) => unknown = (globalThis as any).setTimeout;
+declare const setTimeout: (callback: (...args: any[]) => void, delay?: number) => number;
+const openojBuiltinSetTimeout: (callback: (...args: any[]) => void, delay?: number) => unknown = (globalThis as any)
+    .setTimeout;
 
 (globalThis as any).setTimeout = function openojVirtualSetTimeout(
     callback: (...args: any[]) => void,
@@ -95,15 +89,11 @@ class LimitCase {
         // Lexical shadowing plus the global patch above both route to the
         // same virtual clock: an inner arrow's bare `setTimeout` resolves
         // to this parameter even without the patch.
-        this.fn = new Function(
-            "setTimeout",
-            "return (" + source + ");",
-        )(function (callback: () => void, delay?: number) {
-            openojLimitClock.scheduleFrom(
-                openojLimitClock.now,
-                Number(delay) || 0,
-                callback,
-            );
+        this.fn = new Function("setTimeout", "return (" + source + ");")(function (
+            callback: () => void,
+            delay?: number,
+        ) {
+            openojLimitClock.scheduleFrom(openojLimitClock.now, Number(delay) || 0, callback);
             return 0;
         }) as (...args: any[]) => any;
     }
@@ -125,12 +115,7 @@ class LimitCase {
     // every scheduled settlement in due-time order with microtask
     // checkpoints between fires, then adopt the returned promise's fate
     // as this case's outcome object.
-    async drive(
-        timeLimit: (
-            fn: (...args: any[]) => any,
-            t: number,
-        ) => (...args: any[]) => unknown,
-    ): Promise<void> {
+    async drive(timeLimit: (fn: (...args: any[]) => any, t: number) => (...args: any[]) => unknown): Promise<void> {
         if (typeof timeLimit !== "function") {
             throw new Error("timeLimit must be a function");
         }

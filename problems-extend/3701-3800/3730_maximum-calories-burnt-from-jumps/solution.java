@@ -11,7 +11,8 @@ class Solution {
         Arrays.sort(s);
         int n = s.length;
         int[] arr = new int[n];
-        int lo = 0, hi = n - 1;
+        int lo = 0,
+            hi = n - 1;
         for (int index = 0; index < n; index++) {
             if (index % 2 == 0) {
                 arr[index] = s[hi--];

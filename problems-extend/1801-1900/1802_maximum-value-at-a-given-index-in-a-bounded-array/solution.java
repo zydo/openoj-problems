@@ -22,8 +22,8 @@ class Solution {
 
     private static long side(long m, long width) {
         if (width >= m) {
-            return m * (m - 1) / 2 + width - (m - 1);
+            return (m * (m - 1)) / 2 + width - (m - 1);
         }
-        return width * m - width * (width + 1) / 2;
+        return width * m - (width * (width + 1)) / 2;
     }
 }

@@ -8,11 +8,11 @@
 // word2 equals the number of ways word2 decrypts into the dictionary.
 class Encrypter {
   public:
-    Encrypter(vector<string>& keys, vector<string>& values, vector<string>& dictionary) {
+    Encrypter(vector<string> &keys, vector<string> &values, vector<string> &dictionary) {
         for (size_t i = 0; i < keys.size(); i++) {
             forward[keys[i][0]] = values[i];
         }
-        for (const string& word : dictionary) {
+        for (const string &word : dictionary) {
             string encrypted = encrypt(word);
             if (!encrypted.empty()) {
                 enc_counts[encrypted]++;

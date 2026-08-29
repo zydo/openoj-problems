@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long maxCaloriesBurnt(vector<int>& heights) {
+  public:
+    long long maxCaloriesBurnt(vector<int> &heights) {
         // Sorted extremes alternate through the routine: the largest
         // remaining height takes each even index (descending), the smallest
         // takes each odd index (ascending), so every edge spans the widest

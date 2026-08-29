@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int sumOfLeftLeaves(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    int sumOfLeftLeaves(TreeNode *root) { throw logic_error("TODO"); }
 };

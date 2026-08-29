@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool isCircularSentence(string sentence) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool isCircularSentence(string sentence) { throw logic_error("TODO"); }
 };

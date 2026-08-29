@@ -9,9 +9,7 @@ class FnCase {
     inputs: any[];
     constructor(values: any[], _queryBudget?: unknown) {
         const [source, obj, inputs] = values;
-        this.fn = new Function("return (" + source + ");")() as unknown as (
-            ...args: any[]
-        ) => any;
+        this.fn = new Function("return (" + source + ");")() as unknown as (...args: any[]) => any;
         this.obj = obj;
         this.inputs = inputs;
     }

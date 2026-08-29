@@ -11,8 +11,7 @@ first `i` elements; then window `i` sums to `prefix[i + 1] -
 prefix[max(0, i - nums[i])]`, because the window always ends exactly at `i`.
 The clamp to 0 is the only irregularity — whenever `nums[i] >= i` the window
 reaches back to the array's start — and `max(0, ...)` absorbs it before the
-lookup. On `nums = [2,3,1]` the three windows sum to 2, 5, and 4, totalling
-11.
+lookup. On `nums = [2,3,1]` the three windows sum to 2, 5, and 4, totalling 11.
 
 Size-wise nothing overflows 32 bits: at most 100 windows, each at most 100
 elements of at most 1000, cap the total at `10^7`. With `n <= 100` a plain

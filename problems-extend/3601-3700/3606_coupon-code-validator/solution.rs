@@ -3,15 +3,10 @@ use std::collections::HashMap;
 impl Solution {
     pub fn validate_coupons(code: Vec<String>, businessLine: Vec<String>, isActive: Vec<bool>) -> Vec<String> {
         // Category rank: electronics < grocery < pharmacy < restaurant.
-        let rank: HashMap<&str, usize> = [
-            ("electronics", 0),
-            ("grocery", 1),
-            ("pharmacy", 2),
-            ("restaurant", 3),
-        ]
-        .iter()
-        .cloned()
-        .collect();
+        let rank: HashMap<&str, usize> = [("electronics", 0), ("grocery", 1), ("pharmacy", 2), ("restaurant", 3)]
+            .iter()
+            .cloned()
+            .collect();
 
         let mut valid: Vec<(usize, String)> = Vec::new();
         for i in 0..code.len() {

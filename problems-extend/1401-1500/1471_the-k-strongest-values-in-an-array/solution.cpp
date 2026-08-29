@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    std::vector<int> getStrongest(std::vector<int>& arr, int k) {
+    std::vector<int> getStrongest(std::vector<int> &arr, int k) {
         std::vector<int> sortedArr = arr;
         std::sort(sortedArr.begin(), sortedArr.end());
         int m = sortedArr[(arr.size() - 1) / 2];

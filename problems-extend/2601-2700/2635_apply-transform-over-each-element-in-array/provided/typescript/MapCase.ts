@@ -9,8 +9,6 @@ class MapCase {
     constructor(values: any[], _queryBudget?: unknown) {
         const [arr, source] = values;
         this.arr = arr;
-        this.fn = new Function("return (" + source + ");")() as unknown as (
-            ...args: any[]
-        ) => any;
+        this.fn = new Function("return (" + source + ");")() as unknown as (...args: any[]) => any;
     }
 }

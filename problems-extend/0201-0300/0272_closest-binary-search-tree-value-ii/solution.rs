@@ -31,8 +31,7 @@ impl Solution {
         for _ in 0..k {
             let take_left = right == n
                 || (left >= 0
-                    && (values[left as usize] as f64 - target).abs()
-                        <= (values[right as usize] as f64 - target).abs());
+                    && (values[left as usize] as f64 - target).abs() <= (values[right as usize] as f64 - target).abs());
             if take_left {
                 result.push(values[left as usize]);
                 left -= 1;

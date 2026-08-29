@@ -6,7 +6,12 @@
   "slug": "number-of-good-leaf-nodes-pairs",
   "title": "Number of Good Leaf Nodes Pairs",
   "difficulty": "",
-  "tags": ["Tree", "Depth-First Search", "Binary Tree", "DP on Trees"],
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

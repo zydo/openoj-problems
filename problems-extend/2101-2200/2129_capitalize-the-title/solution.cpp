@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string capitalizeTitle(string title) {
         int start = 0;
         for (int end = 0; end <= static_cast<int>(title.size()); ++end) {

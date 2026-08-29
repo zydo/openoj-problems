@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def findThePrefixCommonArray(
-        self, A: List[int], B: List[int]
-    ) -> List[int]:
+    def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:
         # One shared walk bumps a frequency counter for each value; because
         # both arrays are permutations, a counter reaching 2 means that value
         # now appears in both prefixes, so each hit raises the running total.

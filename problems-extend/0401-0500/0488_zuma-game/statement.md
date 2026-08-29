@@ -14,8 +14,8 @@ Your goal is to clear all of the balls from the board. On each turn:
   or on either end of the row.
 - If there is a group of three or more consecutive balls of the same color,
   remove the group of balls from the board.
-  - If this removal causes more groups of three or more of the same color to
-    form, then continue removing each group until there are none left.
+    - If this removal causes more groups of three or more of the same color to
+      form, then continue removing each group until there are none left.
 - If there are no more balls on the board, then you win the game.
 - Repeat this process until you either win or do not have any more balls in
   your hand.

@@ -22,7 +22,6 @@ function kBigIndices(nums: number[], k: number): number {
     const reversed = [...nums].reverse();
     const right = smallerCounts(reversed);
     let big = 0;
-    for (let i = 0; i < nums.length; ++i)
-        if (left[i] >= k && right[nums.length - 1 - i] >= k) ++big;
+    for (let i = 0; i < nums.length; ++i) if (left[i] >= k && right[nums.length - 1 - i] >= k) ++big;
     return big;
 }

@@ -4,22 +4,27 @@ SELECT
   COUNT(x.experiment_id) AS num_experiments
 FROM
   (
-    SELECT 'Android' AS platform
+    SELECT
+      'Android' AS platform
     UNION
-    SELECT 'IOS'
+    SELECT
+      'IOS'
     UNION
-    SELECT 'Web'
+    SELECT
+      'Web'
   ) p
   CROSS JOIN (
-    SELECT 'Reading' AS experiment_name
+    SELECT
+      'Reading' AS experiment_name
     UNION
-    SELECT 'Sports'
+    SELECT
+      'Sports'
     UNION
-    SELECT 'Programming'
+    SELECT
+      'Programming'
   ) e
-  LEFT JOIN Experiments x
-    ON x.platform = p.platform
-    AND x.experiment_name = e.experiment_name
+  LEFT JOIN Experiments x ON x.platform = p.platform
+  AND x.experiment_name = e.experiment_name
 GROUP BY
   p.platform,
   e.experiment_name

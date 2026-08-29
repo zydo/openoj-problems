@@ -7,7 +7,8 @@ class Solution {
         // Residues are below 2^30, so products fit in long long before %.
         long long result = 1;
         while (exp > 0) {
-            if (exp & 1) result = result * base % mod;
+            if (exp & 1)
+                result = result * base % mod;
             base = base * base % mod;
             exp >>= 1;
         }
@@ -45,7 +46,8 @@ class Solution {
                     terms[leaving] = lt;
                 }
             }
-            if (i >= k - 1 && score > best) best = score;
+            if (i >= k - 1 && score > best)
+                best = score;
         }
         return (int)best;
     }

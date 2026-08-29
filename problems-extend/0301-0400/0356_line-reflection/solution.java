@@ -6,7 +6,8 @@ class Solution {
     public boolean isReflected(int[][] points) {
         // Reflection swaps the extreme columns, so the only axis that can
         // work is x = (minX + maxX) / 2: pin the sum s = minX + maxX.
-        int minX = points[0][0], maxX = points[0][0];
+        int minX = points[0][0],
+            maxX = points[0][0];
         Set<Long> seen = new HashSet<>();
         for (int[] point : points) {
             minX = Math.min(minX, point[0]);

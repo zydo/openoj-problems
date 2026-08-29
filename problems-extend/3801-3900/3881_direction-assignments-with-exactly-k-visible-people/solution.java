@@ -13,14 +13,14 @@ class Solution {
         long[] invFact = new long[size + 1];
         fact[0] = 1;
         for (int i = 1; i <= size; i++) {
-            fact[i] = fact[i - 1] * i % MOD;
+            fact[i] = (fact[i - 1] * i) % MOD;
         }
         invFact[size] = modPow(fact[size], MOD - 2, MOD);
         for (int i = size; i > 0; i--) {
-            invFact[i - 1] = invFact[i] * i % MOD;
+            invFact[i - 1] = (invFact[i] * i) % MOD;
         }
-        long comb = fact[n - 1] * invFact[k] % MOD * invFact[n - 1 - k] % MOD;
-        return (int) (2 * comb % MOD);
+        long comb = (((fact[n - 1] * invFact[k]) % MOD) * invFact[n - 1 - k]) % MOD;
+        return (int) ((2 * comb) % MOD);
     }
 
     // Fermat inverse via binary exponentiation, all products inside long.
@@ -29,9 +29,9 @@ class Solution {
         base %= mod;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             exp >>= 1;
         }
         return result;

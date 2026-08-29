@@ -4,7 +4,8 @@ class Solution {
         // The product of an m-digit and an n-digit number has at most m + n
         // digits, so accumulate raw digit-pair products into exactly that many
         // cells before carrying anything.
-        int m = num1.length(), n = num2.length();
+        int m = num1.length(),
+            n = num2.length();
         int[] digits = new int[m + n];
         for (int i = m - 1; i >= 0; i--) {
             int d1 = num1.charAt(i) - '0';

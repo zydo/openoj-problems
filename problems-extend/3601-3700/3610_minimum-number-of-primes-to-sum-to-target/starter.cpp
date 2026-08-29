@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int minNumberOfPrimes(int n, int m) {
-        throw logic_error("TODO");
-    }
+  public:
+    int minNumberOfPrimes(int n, int m) { throw logic_error("TODO"); }
 };

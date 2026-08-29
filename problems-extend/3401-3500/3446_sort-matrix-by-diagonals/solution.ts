@@ -19,6 +19,6 @@ function sortMatrix(grid: number[][]): number[][] {
         row.map((_: number, j: number) => {
             const k = i - j + n - 1;
             return diags[k][pos[k]++];
-        })
+        }),
     );
 }

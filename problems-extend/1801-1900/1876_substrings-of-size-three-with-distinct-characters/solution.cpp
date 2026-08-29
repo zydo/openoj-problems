@@ -1,5 +1,5 @@
 class Solution {
-   public:
+  public:
     // A length-3 window is good iff its three characters are pairwise
     // distinct; slide the center and count.
     int countGoodSubstrings(string s) {

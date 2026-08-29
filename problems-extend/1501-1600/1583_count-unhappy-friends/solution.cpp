@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int unhappyFriends(int n, vector<vector<int>>& preferences, vector<vector<int>>& pairs) {
+  public:
+    int unhappyFriends(int n, vector<vector<int>> &preferences, vector<vector<int>> &pairs) {
         // rank[i][j] = how highly friend i ranks friend j (lower = more preferred).
         vector<vector<int>> rank(n, vector<int>(n, 0));
         for (int i = 0; i < n; i++) {
@@ -10,7 +10,7 @@ public:
         }
 
         vector<int> partner(n);
-        for (auto& pair : pairs) {
+        for (auto &pair : pairs) {
             partner[pair[0]] = pair[1];
             partner[pair[1]] = pair[0];
         }

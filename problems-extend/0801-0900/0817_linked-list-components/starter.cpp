@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int numComponents(ListNode* head, vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    int numComponents(ListNode *head, vector<int> &nums) { throw logic_error("TODO"); }
 };

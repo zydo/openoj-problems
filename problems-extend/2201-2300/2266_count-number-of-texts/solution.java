@@ -1,4 +1,5 @@
 class Solution {
+
     public long countTexts(String pressedKeys) {
         final long MOD = 1_000_000_007L;
         int n = pressedKeys.length();
@@ -7,7 +8,7 @@ class Solution {
         int i = 0;
         while (i < n) {
             char ch = pressedKeys.charAt(i);
-            int maxPress = (ch == '7' || ch == '9') ? 4 : 3;
+            int maxPress = ch == '7' || ch == '9' ? 4 : 3;
             int j = i;
             while (j < n && pressedKeys.charAt(j) == ch) {
                 j++;

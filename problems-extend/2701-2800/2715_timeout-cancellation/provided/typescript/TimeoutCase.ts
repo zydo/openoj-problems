@@ -48,13 +48,7 @@ class TimeoutCase {
         this.events = [];
     }
 
-    drive(
-        cancellable: (
-            fn: (...inputs: any[]) => unknown,
-            args: any[],
-            t: number,
-        ) => (...args: any[]) => void,
-    ): void {
+    drive(cancellable: (fn: (...inputs: any[]) => unknown, args: any[], t: number) => (...args: any[]) => void): void {
         const globalObject = globalThis as any;
         const realSetTimeout = globalObject.setTimeout;
         const realClearTimeout = globalObject.clearTimeout;
@@ -117,9 +111,7 @@ class TimeoutCase {
             if (typeof this.fnSource !== "string") {
                 throw new Error("case fn must be a function source string");
             }
-            const compiled = new Function(
-                "return (" + this.fnSource + ");",
-            )() as (...inputs: any[]) => unknown;
+            const compiled = new Function("return (" + this.fnSource + ");")() as (...inputs: any[]) => unknown;
             if (typeof compiled !== "function") {
                 throw new Error("fn must evaluate to a function");
             }

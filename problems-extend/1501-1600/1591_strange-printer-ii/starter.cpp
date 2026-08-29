@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool isPrintable(vector<vector<int>>& targetGrid) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool isPrintable(vector<vector<int>> &targetGrid) { throw logic_error("TODO"); }
 };

@@ -18,7 +18,11 @@ impl Solution {
                 return "ERROR".to_string();
             }
             letters.push(if r <= 1 {
-                if r == 0 { 'O' } else { 'I' }
+                if r == 0 {
+                    'O'
+                } else {
+                    'I'
+                }
             } else {
                 (b'A' + (r as u8) - 10) as char
             });

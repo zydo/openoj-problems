@@ -34,10 +34,10 @@ Could you solve it in `O(n)` time?
 
 ### Hint 1
 
-x^2 + x  will form a parabola.
+x^2 + x will form a parabola.
 
 ### Hint 2
 
-Parameter A in:  A * x^2 + B * x + C dictates the shape of the parabola.
+Parameter A in: A * x^2 + B * x + C dictates the shape of the parabola.
 Positive A means the parabola remains concave (high-low-high), but negative A
 inverts the parabola to be convex (low-high-low).

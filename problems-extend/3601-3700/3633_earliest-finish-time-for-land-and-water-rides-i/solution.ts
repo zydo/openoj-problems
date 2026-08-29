@@ -2,7 +2,7 @@ function earliestFinishTime(
     landStartTime: number[],
     landDuration: number[],
     waterStartTime: number[],
-    waterDuration: number[]
+    waterDuration: number[],
 ): number {
     // Delaying a boarding past an opening never helps, and an earlier first
     // finish never pushes the second boarding later: the second leg starts

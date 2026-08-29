@@ -7,7 +7,9 @@ class Solution {
         // right; when a second 0 slips in, advance the left edge until
         // the earlier 0 drops out and the one-flip budget is restored.
         // The largest window seen is the answer.
-        int best = 0, left = 0, zeros = 0;
+        int best = 0,
+            left = 0,
+            zeros = 0;
         for (int right = 0; right < nums.length; ++right) {
             if (nums[right] == 0) zeros++;
             while (zeros > 1) {

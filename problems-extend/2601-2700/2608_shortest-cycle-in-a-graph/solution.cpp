@@ -29,7 +29,8 @@ class Solution {
                         // Tree edges would double-count one path instead of
                         // closing a ring, so only genuine cross links count.
                         int length = dist[u] + dist[v] + 1;
-                        if (best == -1 || length < best) best = length;
+                        if (best == -1 || length < best)
+                            best = length;
                     }
                 }
             }

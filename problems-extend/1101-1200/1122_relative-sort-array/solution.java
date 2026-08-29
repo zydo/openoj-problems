@@ -14,7 +14,8 @@ class Solution {
         Integer[] boxed = new Integer[arr1.length];
         for (int i = 0; i < arr1.length; ++i) boxed[i] = arr1[i];
         java.util.Arrays.sort(boxed, (a, b) -> {
-            int ka = key(a, rank, tail), kb = key(b, rank, tail);
+            int ka = key(a, rank, tail),
+                kb = key(b, rank, tail);
             return Integer.compare(ka, kb);
         });
         int[] out = new int[arr1.length];

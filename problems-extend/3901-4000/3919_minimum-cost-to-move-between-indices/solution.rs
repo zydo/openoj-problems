@@ -15,18 +15,10 @@ impl Solution {
                 i + 1
             };
             if i > 0 {
-                backward[i - 1] = if closest == i - 1 {
-                    1
-                } else {
-                    nums[i] - nums[i - 1]
-                };
+                backward[i - 1] = if closest == i - 1 { 1 } else { nums[i] - nums[i - 1] };
             }
             if i < n - 1 {
-                forward[i] = if closest == i + 1 {
-                    1
-                } else {
-                    nums[i + 1] - nums[i]
-                };
+                forward[i] = if closest == i + 1 { 1 } else { nums[i + 1] - nums[i] };
             }
         }
 

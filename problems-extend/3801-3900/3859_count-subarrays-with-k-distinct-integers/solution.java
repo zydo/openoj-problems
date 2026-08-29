@@ -5,6 +5,7 @@ import java.util.Map;
 class Solution {
 
     private static class SegmentTree {
+
         private final int size;
         private final int inf;
         private final int[] count;

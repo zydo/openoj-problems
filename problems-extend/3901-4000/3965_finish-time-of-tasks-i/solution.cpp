@@ -7,7 +7,8 @@ class Solution {
   public:
     long long finishTime(int n, vector<vector<int>> &edges, vector<int> &baseTime) {
         vector<vector<int>> children(n);
-        for (auto &edge : edges) children[edge[0]].push_back(edge[1]);
+        for (auto &edge : edges)
+            children[edge[0]].push_back(edge[1]);
         vector<long long> finish(n, 0);
         for (int node = n - 1; node >= 0; --node) {
             if (children[node].empty()) {

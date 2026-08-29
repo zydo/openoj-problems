@@ -4,10 +4,6 @@ impl Solution {
         // order. Compare position-by-position and count every mismatch.
         let mut expected = heights.clone();
         expected.sort();
-        heights
-            .iter()
-            .zip(expected.iter())
-            .filter(|(a, b)| a != b)
-            .count() as i32
+        heights.iter().zip(expected.iter()).filter(|(a, b)| a != b).count() as i32
     }
 }

@@ -11,7 +11,7 @@ class Solution {
         // arrangement of them (s >= 1) and equals its own factorial
         // digit sum. With n <= 10^9, s <= 10 * 9! = 3,628,800, so int
         // arithmetic never overflows.
-        int[] fact = new int[] {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
+        int[] fact = new int[] { 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 };
         char[] digits = Integer.toString(n).toCharArray();
         int s = 0;
         for (char c : digits) {

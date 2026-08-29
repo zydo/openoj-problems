@@ -1,4 +1,5 @@
 class Solution {
+
     public int maxDistance(int[] colors) {
         int last = colors.length - 1;
         int answer = 0;

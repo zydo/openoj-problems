@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxProductDifference(vector<int>& nums) {
+    int maxProductDifference(vector<int> &nums) {
         // Every value is positive, so the difference is maximized by the
         // product of the two largest values minus the product of the two
         // smallest; one streaming pass maintains all four extremes. The

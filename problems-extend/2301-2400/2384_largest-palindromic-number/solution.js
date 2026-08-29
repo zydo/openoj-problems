@@ -20,5 +20,5 @@ var largestPalindromic = function (num) {
         }
     }
     half = half.replace(/^0+/, "");
-    return (half + mid + [...half].reverse().join("")) || "0";
+    return half + mid + [...half].reverse().join("") || "0";
 };

@@ -12,8 +12,7 @@ var vowelStrings = function (words, queries) {
     const prefix = new Array(words.length + 1).fill(0);
     for (let i = 0; i < words.length; ++i) {
         const w = words[i];
-        prefix[i + 1] =
-            prefix[i] + (vowels.has(w[0]) && vowels.has(w[w.length - 1]) ? 1 : 0);
+        prefix[i + 1] = prefix[i] + (vowels.has(w[0]) && vowels.has(w[w.length - 1]) ? 1 : 0);
     }
     return queries.map(([l, r]) => prefix[r + 1] - prefix[l]);
 };

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int countWords(vector<string>& words1, vector<string>& words2) {
-        throw logic_error("TODO");
-    }
+  public:
+    int countWords(vector<string> &words1, vector<string> &words2) { throw logic_error("TODO"); }
 };

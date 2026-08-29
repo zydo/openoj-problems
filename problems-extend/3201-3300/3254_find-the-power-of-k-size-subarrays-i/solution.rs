@@ -7,7 +7,11 @@ impl Solution {
         let mut results = vec![-1; nums.len() - k + 1];
         let mut run = 0usize;
         for i in 0..nums.len() {
-            run = if i > 0 && nums[i] == nums[i - 1] + 1 { run + 1 } else { 0 };
+            run = if i > 0 && nums[i] == nums[i - 1] + 1 {
+                run + 1
+            } else {
+                0
+            };
             if i + 1 >= k && run >= k - 1 {
                 results[i + 1 - k] = nums[i];
             }

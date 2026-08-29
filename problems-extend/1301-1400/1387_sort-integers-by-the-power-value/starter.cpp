@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int getKth(int lo, int hi, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    int getKth(int lo, int hi, int k) { throw logic_error("TODO"); }
 };

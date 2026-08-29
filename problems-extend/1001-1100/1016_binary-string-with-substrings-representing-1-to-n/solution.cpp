@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool queryString(string s, int n) {
         // 10^9 fits in 30 bits, so every i in [1, n] has a short binary
         // form; checking each one as a substring of s directly answers

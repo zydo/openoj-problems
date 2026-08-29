@@ -1,14 +1,13 @@
 class Solution {
-public:
-    vector<string> invalidTransactions(vector<string>& transactions) {
+  public:
+    vector<string> invalidTransactions(vector<string> &transactions) {
         int n = transactions.size();
         vector<array<string, 4>> parsed(n);
         for (int i = 0; i < n; i++) {
             array<string, 4> f;
             int start = 0, slot = 0;
             for (int k = 0; k <= (int)transactions[i].size(); k++) {
-                if (k == (int)transactions[i].size()
-                        || transactions[i][k] == ',') {
+                if (k == (int)transactions[i].size() || transactions[i][k] == ',') {
                     f[slot++] = transactions[i].substr(start, k - start);
                     start = k + 1;
                 }
@@ -25,8 +24,7 @@ public:
                 continue;
             }
             for (int j = 0; j < n; j++) {
-                if (i == j || parsed[j][0] != parsed[i][0]
-                        || parsed[j][3] == parsed[i][3]) {
+                if (i == j || parsed[j][0] != parsed[i][0] || parsed[j][3] == parsed[i][3]) {
                     continue;
                 }
                 if (abs(stoi(parsed[i][1]) - stoi(parsed[j][1])) <= 60) {

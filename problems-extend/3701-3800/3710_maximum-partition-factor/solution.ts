@@ -5,9 +5,7 @@ function maxPartitionFactor(points: number[][]): number {
     if (n === 2) {
         return 0;
     }
-    const dist = points.map((a) =>
-        points.map((b) => Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]))
-    );
+    const dist = points.map((a) => points.map((b) => Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1])));
     // Every pair closer than limit must be split across the two groups --
     // exactly "the conflict graph is bipartite".
     const separable = (limit: number): boolean => {

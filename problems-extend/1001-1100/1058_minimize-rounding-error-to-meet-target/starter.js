@@ -3,6 +3,6 @@
  * @param {number} target
  * @return {string}
  */
-var minimizeError = function(prices, target) {
+var minimizeError = function (prices, target) {
     throw new Error("TODO");
 };

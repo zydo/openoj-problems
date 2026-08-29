@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int dayOfYear(string date) {
-        throw logic_error("TODO");
-    }
+  public:
+    int dayOfYear(string date) { throw logic_error("TODO"); }
 };

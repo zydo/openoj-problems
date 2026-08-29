@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool canDistribute(vector<int>& nums, vector<int>& quantity) {
+  public:
+    bool canDistribute(vector<int> &nums, vector<int> &quantity) {
         // A customer's integers must all be equal, so each customer draws
         // from a single value — and a value with count c serves any group
         // of customers whose quantities sum to at most c, with several
@@ -9,7 +9,8 @@ public:
         // subset DP over customer bitmasks, one frequency value at a
         // time, covers every distribution.
         unordered_map<int, int> counts;
-        for (int value : nums) counts[value]++;
+        for (int value : nums)
+            counts[value]++;
         int m = (int)quantity.size();
         int full = (1 << m) - 1;
         // subsetSums[mask] = total amount ordered by the customers in mask.
@@ -24,14 +25,16 @@ public:
         // customers whose quantity sum fits within its count.
         vector<bool> reachable(1 << m, false);
         reachable[0] = true;
-        for (const auto& item : counts) {
+        for (const auto &item : counts) {
             int count = item.second;
             vector<bool> next = reachable;
             for (int mask = 0; mask <= full; ++mask) {
-                if (!reachable[mask]) continue;
+                if (!reachable[mask])
+                    continue;
                 int available = full ^ mask;
                 for (int submask = available; submask != 0; submask = (submask - 1) & available) {
-                    if (subsetSums[submask] <= count) next[mask | submask] = true;
+                    if (subsetSums[submask] <= count)
+                        next[mask | submask] = true;
                 }
             }
             reachable = next;

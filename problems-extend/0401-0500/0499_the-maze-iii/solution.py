@@ -32,11 +32,7 @@ class Solution:
                 # Roll until the next cell is a wall or border — but
                 # stepping onto the hole ends the roll right there: the
                 # ball drops in instead of rolling on.
-                while (
-                    0 <= nr + dr < m
-                    and 0 <= nc + dc < n
-                    and maze[nr + dr][nc + dc] == 0
-                ):
+                while 0 <= nr + dr < m and 0 <= nc + dc < n and maze[nr + dr][nc + dc] == 0:
                     nr += dr
                     nc += dc
                     steps += 1

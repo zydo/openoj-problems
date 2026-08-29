@@ -2,8 +2,7 @@ from typing import List
 
 
 class Solution:
-    def minimumFinishTime(self, tires: List[List[int]], changeTime: int,
-                          numLaps: int) -> int:
+    def minimumFinishTime(self, tires: List[List[int]], changeTime: int, numLaps: int) -> int:
         # Precompute best[x]: the cheapest time for x consecutive laps on
         # a single tire (any tire, no change). A run never helps once its
         # next lap costs more than resetting to the fastest first lap,

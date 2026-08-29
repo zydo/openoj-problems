@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> findErrorNums(vector<int>& nums) {
+    vector<int> findErrorNums(vector<int> &nums) {
         // The values in nums are the numbers 1..n with one value doubled and
         // one lost, so counting occurrences settles both questions at once:
         // slot v of a count array indexed by value holds 2 for the

@@ -2,14 +2,14 @@
 
 class Solution {
   public:
-    int pseudoPalindromicPaths(TreeNode* root) {
+    int pseudoPalindromicPaths(TreeNode *root) {
         if (root == nullptr) {
             return 0;
         }
         int count = 0;
         // Explicit stack: the tree may be a chain 10^5 deep, too deep for
         // recursion under the small run-time stacks.
-        std::vector<std::pair<TreeNode*, int>> stack;
+        std::vector<std::pair<TreeNode *, int>> stack;
         stack.push_back({root, 1 << (root->val - 1)});
         while (!stack.empty()) {
             auto [node, mask] = stack.back();

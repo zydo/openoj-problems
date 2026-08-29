@@ -12,13 +12,13 @@ class Solution {
         for (int r = 0; r < rows; ++r) {
             for (int c = 0; c < cols; ++c) {
                 int distance = abs(r - rCenter) + abs(c - cCenter);
-                buckets[distance].push_back({ r, c });
+                buckets[distance].push_back({r, c});
             }
         }
         vector<vector<int>> result;
         result.reserve(static_cast<size_t>(rows) * cols);
-        for (auto& bucket : buckets) {
-            for (auto& cell : bucket) {
+        for (auto &bucket : buckets) {
+            for (auto &cell : bucket) {
                 result.push_back(cell);
             }
         }

@@ -10,8 +10,8 @@ Pick a subsequence with indices `0 <= i1 < i2 < ... < im < n` such that:
 - The selected values form a strictly alternating sequence. In other words,
   either:
 
-  - `nums[i1] < nums[i2] > nums[i3] < ...`, or
-  - `nums[i1] > nums[i2] < nums[i3] > ...`
+    - `nums[i1] < nums[i2] > nums[i3] < ...`, or
+    - `nums[i1] > nums[i2] < nums[i3] > ...`
 
 A subsequence of length 1 is also considered strictly alternating. The score
 of a valid subsequence is the sum of its selected values.

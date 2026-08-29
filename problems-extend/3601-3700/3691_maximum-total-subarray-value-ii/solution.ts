@@ -24,10 +24,7 @@ function maxTotalValue(nums: number[], k: number): number {
     const spread = (l: number, r: number): number => {
         const j = logTable[r - l + 1];
         const low = 1 << j;
-        return (
-            Math.max(maxTable[j][l], maxTable[j][r - low + 1]) -
-            Math.min(minTable[j][l], minTable[j][r - low + 1])
-        );
+        return Math.max(maxTable[j][l], maxTable[j][r - low + 1]) - Math.min(minTable[j][l], minTable[j][r - low + 1]);
     };
     // Row l is non-increasing as r shrinks toward l, so the heap merges n
     // sorted rows and always holds each row's largest unseen entry.

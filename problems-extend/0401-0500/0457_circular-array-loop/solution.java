@@ -15,7 +15,7 @@ class Solution {
             while (state[node] == 0) {
                 state[node] = 1;
                 path.add(node);
-                int next = ((node + nums[node]) % n + n) % n;
+                int next = (((node + nums[node]) % n) + n) % n;
                 // A legal loop keeps one direction and more than one node,
                 // so a sign flip or a hop back to self kills this chain.
                 if (nums[next] * nums[node] < 0 || next == node) break;

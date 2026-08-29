@@ -14,7 +14,7 @@ class Solution {
         for (int i = 1; i <= n; i++) {
             long prod = 1;
             for (int j = 0; j < i; j++) {
-                prod = prod * cur % MOD;
+                prod = (prod * cur) % MOD;
                 cur++;
             }
             total = (total + prod) % MOD;

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> rotate(vector<int>& nums, int k) {
+    vector<int> rotate(vector<int> &nums, int k) {
         int n = nums.size();
         // A rotation by n steps is the identity, so any larger k wraps
         // around to k % n — normalize before splitting into blocks.

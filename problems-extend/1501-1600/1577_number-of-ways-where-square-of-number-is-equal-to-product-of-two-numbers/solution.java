@@ -34,7 +34,7 @@ class Solution {
                 long other = target / v;
                 if (other == v) {
                     long c = freq.get(v);
-                    total += c * (c - 1) / 2;
+                    total += (c * (c - 1)) / 2;
                 } else if (freq.containsKey(other)) {
                     total += freq.get(v) * freq.get(other);
                 }

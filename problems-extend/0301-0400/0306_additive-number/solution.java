@@ -39,12 +39,13 @@ class Solution {
         // first, carrying as we go.
         StringBuilder digits = new StringBuilder();
         int carry = 0;
-        int i = a.length() - 1, j = b.length() - 1;
+        int i = a.length() - 1,
+            j = b.length() - 1;
         while (i >= 0 || j >= 0 || carry > 0) {
             int total = carry;
             if (i >= 0) total += a.charAt(i--) - '0';
             if (j >= 0) total += b.charAt(j--) - '0';
-            digits.append((char) ('0' + total % 10));
+            digits.append((char) ('0' + (total % 10)));
             carry = total / 10;
         }
         return digits.reverse().toString();

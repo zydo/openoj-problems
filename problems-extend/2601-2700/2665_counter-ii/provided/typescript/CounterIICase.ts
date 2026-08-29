@@ -6,9 +6,7 @@
 //   counter object with init, invokes the requested method once per entry,
 //   and checks each return is an integer. The recorded list of returns,
 //   read back by verdict(), is the judged answer.
-type CounterFactory = (
-    start: number
-) => { increment: () => number; decrement: () => number; reset: () => number };
+type CounterFactory = (start: number) => { increment: () => number; decrement: () => number; reset: () => number };
 
 class CounterIICase {
     readonly init: number;
@@ -22,9 +20,7 @@ class CounterIICase {
         }
         const valid = new Set(["increment", "decrement", "reset"]);
         if (!Array.isArray(calls) || calls.some((call) => !valid.has(call))) {
-            throw new Error(
-                "calls must be a list of \"increment\", \"decrement\" or \"reset\" entries"
-            );
+            throw new Error('calls must be a list of "increment", "decrement" or "reset" entries');
         }
         this.init = init as number;
         this.calls = calls as string[];
@@ -41,9 +37,7 @@ class CounterIICase {
         for (let at = 0; at < this.calls.length; at++) {
             const value = counter[this.calls[at]]();
             if (typeof value !== "number" || !Number.isInteger(value)) {
-                throw new Error(
-                    "counter methods must return an integer on every call"
-                );
+                throw new Error("counter methods must return an integer on every call");
             }
             this.outputs.push(value);
         }

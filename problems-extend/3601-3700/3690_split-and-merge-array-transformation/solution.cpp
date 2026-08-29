@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minSplitMerge(vector<int>& nums1, vector<int>& nums2) {
+    int minSplitMerge(vector<int> &nums1, vector<int> &nums2) {
         // Every operation costs exactly one layer, so breadth-first search
         // from nums1 reaches nums2 along a shortest operation sequence; the
         // whole state space holds at most n! <= 720 arrays.
@@ -22,16 +22,13 @@ class Solution {
                 // paste it at every slot of the remainder.
                 for (int l = 0; l < n; ++l) {
                     for (int r = l; r < n; ++r) {
-                        vector<int> piece(state.begin() + l,
-                                          state.begin() + r + 1);
+                        vector<int> piece(state.begin() + l, state.begin() + r + 1);
                         vector<int> rest(state.begin(), state.begin() + l);
-                        rest.insert(rest.end(), state.begin() + r + 1,
-                                    state.end());
+                        rest.insert(rest.end(), state.begin() + r + 1, state.end());
                         for (int i = 0; i <= (int)rest.size(); ++i) {
                             vector<int> nxt;
                             nxt.reserve(n);
-                            nxt.insert(nxt.end(), rest.begin(),
-                                       rest.begin() + i);
+                            nxt.insert(nxt.end(), rest.begin(), rest.begin() + i);
                             nxt.insert(nxt.end(), piece.begin(), piece.end());
                             nxt.insert(nxt.end(), rest.begin() + i, rest.end());
                             if (nxt == nums2) {

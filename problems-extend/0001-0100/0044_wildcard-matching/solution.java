@@ -4,8 +4,12 @@ class Solution {
         // Greedy two pointers with one remembered star: every '*' is first
         // matched to the empty run, and a later mismatch backtracks to the
         // most recent star and lets it absorb one more character of s.
-        int n = s.length(), m = p.length();
-        int si = 0, pi = 0, star = -1, restart = 0;
+        int n = s.length(),
+            m = p.length();
+        int si = 0,
+            pi = 0,
+            star = -1,
+            restart = 0;
         while (si < n) {
             if (pi < m && (p.charAt(pi) == '?' || p.charAt(pi) == s.charAt(si))) {
                 ++si;

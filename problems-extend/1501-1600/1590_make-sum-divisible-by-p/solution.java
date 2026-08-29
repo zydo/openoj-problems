@@ -20,7 +20,7 @@ class Solution {
         int best = n;
         for (int index = 0; index < n; ++index) {
             running = (running + nums[index]) % p;
-            int needed = (int) (((running - target) % p + p) % p);
+            int needed = (int) ((((running - target) % p) + p) % p);
             Integer earlier = lastIndex.get(needed);
             // A match spanning the full array (earlier == -1 at the last
             // index) would remove everything, which is disallowed — cap

@@ -113,7 +113,7 @@ func subarrayMajority(nums []int, queries [][]int) []int {
 			// gets its exact range frequency from two binary searches (its
 			// total count also spans the middle blocks, so fringe counts alone
 			// can never prune it).
-			idx := (bl + 1)*k + br - 1
+			idx := (bl+1)*k + br - 1
 			bf, bv = topF[idx], topV[idx]
 			var seen []int
 			for pos := l; pos < (bl+1)*b; pos++ {

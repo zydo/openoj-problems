@@ -35,7 +35,10 @@ impl Solution {
             }
             // Split the column total into the new carry and the digit to emit.
             carry = total / 10;
-            head = Some(Box::new(ListNode { val: total % 10, next: head }));
+            head = Some(Box::new(ListNode {
+                val: total % 10,
+                next: head,
+            }));
         }
         head
     }

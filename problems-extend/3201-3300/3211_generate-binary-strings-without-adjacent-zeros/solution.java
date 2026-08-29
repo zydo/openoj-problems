@@ -21,9 +21,8 @@ class Solution {
             results.add(current.toString());
             return;
         }
-        for (char ch : new char[] {'0', '1'}) {
-            if (ch == '0' && current.length() > 0
-                && current.charAt(current.length() - 1) == '0') {
+        for (char ch : new char[] { '0', '1' }) {
+            if (ch == '0' && current.length() > 0 && current.charAt(current.length() - 1) == '0') {
                 continue; // would create "00" — prune this branch
             }
             current.append(ch);

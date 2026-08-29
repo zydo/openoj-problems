@@ -31,8 +31,7 @@ impl Solution {
                     continue;
                 }
                 let cell = i * n + j;
-                let corner =
-                    (i == 0 && j == 0) || (i == m - 1 && j == n - 1);
+                let corner = (i == 0 && j == 0) || (i == m - 1 && j == n - 1);
                 connect(2 * cell, 2 * cell + 1, if corner { inf } else { 1 });
                 if j + 1 < n && grid[i][j + 1] == 1 {
                     connect(2 * cell + 1, 2 * (cell + 1), inf);

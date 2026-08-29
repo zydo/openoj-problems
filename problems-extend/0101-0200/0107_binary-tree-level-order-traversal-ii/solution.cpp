@@ -15,8 +15,10 @@ class Solution {
                 TreeNode *node = q.front();
                 q.pop();
                 level.push_back(node->val);
-                if (node->left != nullptr) q.push(node->left);
-                if (node->right != nullptr) q.push(node->right);
+                if (node->left != nullptr)
+                    q.push(node->left);
+                if (node->right != nullptr)
+                    q.push(node->right);
             }
             levels.push_back(level);
         }

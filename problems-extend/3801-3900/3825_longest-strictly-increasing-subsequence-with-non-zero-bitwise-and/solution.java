@@ -16,7 +16,7 @@ class Solution {
             int[] tails = new int[nums.length];
             int size = 0;
             for (int x : nums) {
-                if ((x >> b & 1) == 0) {
+                if (((x >> b) & 1) == 0) {
                     continue;
                 }
                 // Strictly increasing: replace the first tail >= x.

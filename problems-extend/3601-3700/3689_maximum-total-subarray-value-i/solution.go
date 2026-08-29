@@ -10,5 +10,5 @@ func maxTotalValue(nums []int, k int) int64 {
 		lo = min(lo, x)
 		hi = max(hi, x)
 	}
-	return (int64(hi)-int64(lo))*int64(k)
+	return (int64(hi) - int64(lo)) * int64(k)
 }

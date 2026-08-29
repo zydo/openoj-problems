@@ -1,6 +1,7 @@
 class Solution:
-    def minNumberOfHours(self, initialEnergy: int, initialExperience: int,
-                         energy: List[int], experience: List[int]) -> int:
+    def minNumberOfHours(
+        self, initialEnergy: int, initialExperience: int, energy: List[int], experience: List[int]
+    ) -> int:
         # Energy only ever drains, so one shortfall computation covers
         # every fight; experience grows after each win, so top up just
         # enough whenever the next opponent is not strictly weaker.

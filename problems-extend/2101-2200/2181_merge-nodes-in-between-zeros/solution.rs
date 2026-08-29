@@ -9,7 +9,10 @@ impl Solution {
         let mut total = 0i64;
         while let Some(current) = node {
             if current.val == 0 {
-                tail.next = Some(Box::new(ListNode { val: total as i32, next: None }));
+                tail.next = Some(Box::new(ListNode {
+                    val: total as i32,
+                    next: None,
+                }));
                 tail = tail.next.as_mut().unwrap();
                 total = 0;
             } else {

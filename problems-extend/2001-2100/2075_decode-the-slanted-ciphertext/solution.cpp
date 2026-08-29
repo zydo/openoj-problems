@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string decodeCiphertext(string encodedText, int rows) {
         if (encodedText.empty()) {
             return "";

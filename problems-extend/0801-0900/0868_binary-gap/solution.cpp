@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int binaryGap(int n) {
         // One pass over the bits, low to high, remembering the index of the
         // most recent 1: each later 1 offers its distance to that index as a

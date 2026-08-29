@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool checkRecord(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool checkRecord(string s) { throw logic_error("TODO"); }
 };

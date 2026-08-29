@@ -26,8 +26,7 @@ class Solution {
     }
 
   private:
-    bool feasible(long long t, const vector<int> &hens,
-                  const vector<int> &grains) {
+    bool feasible(long long t, const vector<int> &hens, const vector<int> &grains) {
         int j = 0;
         for (int h : hens) {
             if (j == (int)grains.size())

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> shortestDistanceAfterQueries(int n, vector<vector<int>>& queries) {
+    vector<int> shortestDistanceAfterQueries(int n, vector<vector<int>> &queries) {
         // Every added road can only shorten paths, so nothing computed for
         // an earlier query stays reusable except the road set itself. Keep
         // an adjacency list, append each new road, then run one unweighted
@@ -11,7 +11,7 @@ class Solution {
             roads[i].push_back(i + 1);
         vector<int> answer;
         answer.reserve(queries.size());
-        for (auto& query : queries) {
+        for (auto &query : queries) {
             roads[query[0]].push_back(query[1]);
             vector<int> dist(n, -1);
             vector<int> queue = {0};

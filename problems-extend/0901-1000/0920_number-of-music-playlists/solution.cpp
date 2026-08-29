@@ -23,6 +23,6 @@ class Solution {
             }
             prev = cur;
         }
-        return (int) prev[n];
+        return (int)prev[n];
     }
 };

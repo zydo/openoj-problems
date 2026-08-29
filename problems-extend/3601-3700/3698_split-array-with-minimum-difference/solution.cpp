@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long splitArray(vector<int>& nums) {
+    long long splitArray(vector<int> &nums) {
         int n = static_cast<int>(nums.size());
         // e ends the longest strictly increasing prefix: a left part
         // nums[0..i] is strictly increasing exactly when i <= e.

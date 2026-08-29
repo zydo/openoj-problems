@@ -15,7 +15,9 @@ impl Solution {
             let prev_done = done;
             none = (value as i64).max(prev_none + value as i64);
             multiply = multiplied.max(prev_none + multiplied).max(prev_multiply + multiplied);
-            divide = (divided as i64).max(prev_none + divided as i64).max(prev_divide + divided as i64);
+            divide = (divided as i64)
+                .max(prev_none + divided as i64)
+                .max(prev_divide + divided as i64);
             done = (prev_multiply + value as i64)
                 .max(prev_divide + value as i64)
                 .max(prev_done + value as i64);

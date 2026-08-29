@@ -9,7 +9,8 @@ class Solution {
         // means even reading every '*' as '(' cannot absorb the ')' just
         // seen — false on the spot. The string is valid exactly when the
         // final range still contains 0.
-        int lo = 0, hi = 0;
+        int lo = 0,
+            hi = 0;
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c == '(') {

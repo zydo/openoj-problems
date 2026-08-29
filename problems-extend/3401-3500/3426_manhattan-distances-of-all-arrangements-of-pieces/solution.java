@@ -16,21 +16,21 @@ class Solution {
         long[] fact = new long[total + 1];
         fact[0] = 1;
         for (int i = 1; i <= total; i++) {
-            fact[i] = fact[i - 1] * i % mod;
+            fact[i] = (fact[i - 1] * i) % mod;
         }
         long[] invFact = new long[total + 1];
         invFact[total] = modPow(fact[total], mod - 2, mod);
         for (int i = total; i > 0; i--) {
-            invFact[i - 1] = invFact[i] * i % mod;
+            invFact[i - 1] = (invFact[i] * i) % mod;
         }
 
-        long pairs = ((long) n * n % mod * tri(m) + (long) m * m % mod * tri(n)) % mod;
-        long choose = fact[total - 2] * invFact[k - 2] % mod * invFact[total - k] % mod;
-        return (int) (pairs * choose % mod);
+        long pairs = ((((long) n * n) % mod) * tri(m) + (((long) m * m) % mod) * tri(n)) % mod;
+        long choose = (((fact[total - 2] * invFact[k - 2]) % mod) * invFact[total - k]) % mod;
+        return (int) ((pairs * choose) % mod);
     }
 
     private static long tri(long dim) {
-        return dim * (dim - 1) * (dim + 1) / 6 % 1_000_000_007L;
+        return ((dim * (dim - 1) * (dim + 1)) / 6) % 1_000_000_007L;
     }
 
     private static long modPow(long base, long exp, long mod) {
@@ -38,9 +38,9 @@ class Solution {
         long b = base % mod;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                result = result * b % mod;
+                result = (result * b) % mod;
             }
-            b = b * b % mod;
+            b = (b * b) % mod;
             exp >>= 1;
         }
         return result;

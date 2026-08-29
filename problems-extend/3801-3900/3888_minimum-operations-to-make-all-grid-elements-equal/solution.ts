@@ -10,7 +10,7 @@ function minOperations(grid: number[][], k: number): number {
     let hasFixed = false;
     let fixedT = 0; // T fixed by a boundary cell
     let hasLow = false;
-    let lowT = 0;   // lower bound on T from X >= 0 (A == 1 cells)
+    let lowT = 0; // lower bound on T from X >= 0 (A == 1 cells)
     let sumA = 0;
     let sumB = 0;
     for (let i = 0; i < m; ++i) {

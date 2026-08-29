@@ -3,6 +3,6 @@
  * @param {number[]} arr2
  * @return {number[]}
  */
-var addNegabinary = function(arr1, arr2) {
+var addNegabinary = function (arr1, arr2) {
     throw new Error("TODO");
 };

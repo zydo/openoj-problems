@@ -1,4 +1,5 @@
 class Solution {
+
     public int[] executeInstructions(int n, int[] startPos, String s) {
         int[] answer = new int[s.length()];
         for (int start = 0; start < s.length(); start++) {

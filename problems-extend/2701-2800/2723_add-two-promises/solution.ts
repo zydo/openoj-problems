@@ -4,10 +4,7 @@
 // right after the slower fulfillment hop. The destructured pair is added
 // in exactly one place, and the returned promise resolves with that sum —
 // its own timing is irrelevant to the problem.
-function addTwoPromises(
-    promise1: Promise<number>,
-    promise2: Promise<number>,
-): Promise<number> {
+function addTwoPromises(promise1: Promise<number>, promise2: Promise<number>): Promise<number> {
     return Promise.all([promise1, promise2]).then(([a, b]) => a + b);
 }
 

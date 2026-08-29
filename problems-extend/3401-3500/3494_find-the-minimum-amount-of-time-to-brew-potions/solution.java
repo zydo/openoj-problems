@@ -26,9 +26,11 @@ class Solution {
         for (int i = 0; i < n; ++i) {
             // Pop the top line while it is never strictly above its
             // neighbours: skill >= 1 keeps every slope distinct.
-            while (size >= 2
-                    && (hullS[size - 2] - skill[i]) * (hullP[size - 1] - hullP[size - 2])
-                            <= (hullS[size - 2] - hullS[size - 1]) * (pref[i] - hullP[size - 2])) {
+            while (
+                size >= 2 &&
+                (hullS[size - 2] - skill[i]) * (hullP[size - 1] - hullP[size - 2]) <=
+                    (hullS[size - 2] - hullS[size - 1]) * (pref[i] - hullP[size - 2])
+            ) {
                 --size;
             }
             hullS[size] = skill[i];

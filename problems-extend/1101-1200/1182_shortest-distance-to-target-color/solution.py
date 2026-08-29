@@ -2,8 +2,7 @@ from typing import List
 
 
 class Solution:
-    def shortestDistanceColor(self, colors: List[int],
-                              queries: List[List[int]]) -> List[int]:
+    def shortestDistanceColor(self, colors: List[int], queries: List[List[int]]) -> List[int]:
         n = len(colors)
         INF = float("inf")
         # dist[i][c]: distance from i to nearest color c (1..3).

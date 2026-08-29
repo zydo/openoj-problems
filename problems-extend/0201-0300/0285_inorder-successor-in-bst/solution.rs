@@ -37,7 +37,11 @@ impl Solution {
         let mut cursor = root.as_mut().unwrap();
         loop {
             let going_left = target < cursor.val;
-            let slot = if going_left { &mut cursor.left } else { &mut cursor.right };
+            let slot = if going_left {
+                &mut cursor.left
+            } else {
+                &mut cursor.right
+            };
             if slot.as_ref().map_or(false, |child| child.val == target) {
                 return slot.take();
             }

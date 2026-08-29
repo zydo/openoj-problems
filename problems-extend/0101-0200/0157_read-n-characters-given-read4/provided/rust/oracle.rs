@@ -24,7 +24,11 @@ impl File {
             }
             _ => panic!("Oracle content must be an array"),
         }
-        File { content: chars, budget, position: 0 }
+        File {
+            content: chars,
+            budget,
+            position: 0,
+        }
     }
 
     pub fn read4(&mut self, buf4: &mut Vec<String>) -> i32 {

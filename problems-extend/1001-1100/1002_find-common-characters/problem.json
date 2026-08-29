@@ -6,7 +6,11 @@
   "slug": "find-common-characters",
   "title": "Find Common Characters",
   "difficulty": "",
-  "tags": ["Array", "Hash Table", "String"],
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",
@@ -15,13 +19,31 @@
       {
         "name": "words",
         "codec": "json",
-        "value_type": { "kind": "array", "items": { "kind": "string" } }
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
       }
     ],
     "return_codec": "json",
-    "return_type": { "kind": "array", "items": { "kind": "string" } },
-    "entrypoints": { "go": "commonChars", "rust": "common_chars", "typescript": "commonChars" },
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "commonChars",
+      "rust": "common_chars",
+      "typescript": "commonChars"
+    },
     "comparison": "exact"
   },
-  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
 }

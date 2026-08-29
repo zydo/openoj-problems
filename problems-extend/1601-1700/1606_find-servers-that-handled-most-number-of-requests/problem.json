@@ -6,28 +6,66 @@
   "slug": "find-servers-that-handled-most-number-of-requests",
   "title": "Find Servers That Handled Most Number of Requests",
   "difficulty": "",
-  "tags": ["Array", "Heap (Priority Queue)", "Simulation", "Ordered Set"],
+  "tags": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation",
+    "Ordered Set"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",
     "method": "busiestServers",
     "parameters": [
-      { "name": "k", "codec": "json", "value_type": { "kind": "integer", "bits": 32 } },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
       {
         "name": "arrival",
         "codec": "json",
-        "value_type": { "kind": "array", "items": { "kind": "integer", "bits": 32 } }
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
       },
       {
         "name": "load",
         "codec": "json",
-        "value_type": { "kind": "array", "items": { "kind": "integer", "bits": 32 } }
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
       }
     ],
     "return_codec": "json",
-    "return_type": { "kind": "array", "items": { "kind": "integer", "bits": 32 } },
-    "entrypoints": { "go": "busiestServers", "rust": "busiest_servers", "typescript": "busiestServers" },
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "busiestServers",
+      "rust": "busiest_servers",
+      "typescript": "busiestServers"
+    },
     "comparison": "sorted"
   },
-  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
 }

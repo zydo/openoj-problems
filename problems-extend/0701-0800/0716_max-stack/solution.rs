@@ -17,7 +17,7 @@ struct Cell {
 }
 
 pub struct MaxStack {
-    cells: Vec<Cell>, // index 0: head sentinel, 1: tail sentinel
+    cells: Vec<Cell>,               // index 0: head sentinel, 1: tail sentinel
     heap: BinaryHeap<(i32, usize)>, // (value, cell index)
 }
 
@@ -25,8 +25,18 @@ impl MaxStack {
     pub fn new() -> Self {
         MaxStack {
             cells: vec![
-                Cell { value: 0, prev: 1, next: 1, alive: false },
-                Cell { value: 0, prev: 0, next: 0, alive: false },
+                Cell {
+                    value: 0,
+                    prev: 1,
+                    next: 1,
+                    alive: false,
+                },
+                Cell {
+                    value: 0,
+                    prev: 0,
+                    next: 0,
+                    alive: false,
+                },
             ],
             heap: BinaryHeap::new(),
         }
@@ -35,7 +45,12 @@ impl MaxStack {
     pub fn push(&mut self, x: i32) {
         let last = self.cells[1].prev;
         let index = self.cells.len();
-        self.cells.push(Cell { value: x, prev: last, next: 1, alive: true });
+        self.cells.push(Cell {
+            value: x,
+            prev: last,
+            next: 1,
+            alive: true,
+        });
         self.cells[last].next = index;
         self.cells[1].prev = index;
         self.heap.push((x, index));

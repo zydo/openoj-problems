@@ -38,6 +38,6 @@ class Calculator {
 
 class Solution {
     solve(calculatorCase) {
-        calculatorCase.run(Calculator);
+        calculatorCase.drive(Calculator);
     }
 }

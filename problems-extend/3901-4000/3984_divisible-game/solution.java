@@ -32,7 +32,7 @@ class Solution {
                 bestK = k;
             }
         }
-        long answer = ((bestScore % modulus + modulus) % modulus) * bestK % modulus;
+        long answer = ((((bestScore % modulus) + modulus) % modulus) * bestK) % modulus;
         return (int) answer;
     }
 }

@@ -22,8 +22,7 @@ class Solution {
                     for (auto [dr, dc] : {pair{1, 0}, pair{-1, 0}, pair{0, 1}, pair{0, -1}}) {
                         int nr = r + dr;
                         int nc = c + dc;
-                        if (nr >= 0 && nr < rows && nc >= 0 && nc < columns &&
-                            grid[nr][nc] > 0 && !visited[nr][nc]) {
+                        if (nr >= 0 && nr < rows && nc >= 0 && nc < columns && grid[nr][nc] > 0 && !visited[nr][nc]) {
                             visited[nr][nc] = true;
                             stack.emplace_back(nr, nc);
                         }

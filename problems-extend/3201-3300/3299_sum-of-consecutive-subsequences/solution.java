@@ -30,7 +30,7 @@ class Solution {
             long nsi = (si + ni * x) % MOD;
             long nd = (cd + 1) % MOD;
             long nsd = (sd + nd * x) % MOD;
-            total = ((total + nsi + nsd - x) % MOD + MOD) % MOD;
+            total = (((total + nsi + nsd - x) % MOD) + MOD) % MOD;
             incCnt.put(x, (incCnt.getOrDefault(x, 0L) + ni) % MOD);
             incSum.put(x, (incSum.getOrDefault(x, 0L) + nsi) % MOD);
             decCnt.put(x, (decCnt.getOrDefault(x, 0L) + nd) % MOD);

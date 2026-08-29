@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string findKthBit(int n, int k) {
         // Peel levels off from n down to 1 instead of building S(n). At each
         // level, k either falls in the S(n-1) copy unchanged, lands exactly

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int arrayPairSum(vector<int>& nums) {
+    int arrayPairSum(vector<int> &nums) {
         // Each pair scores its smaller member, so pairing a small value with
         // anything larger sacrifices exactly that small value — the larger
         // partner is pure loss. The smallest element loses in every pairing,

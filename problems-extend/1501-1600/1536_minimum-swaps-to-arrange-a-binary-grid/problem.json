@@ -6,7 +6,11 @@
   "slug": "minimum-swaps-to-arrange-a-binary-grid",
   "title": "Minimum Swaps to Arrange a Binary Grid",
   "difficulty": "",
-  "tags": ["Array", "Greedy", "Matrix"],
+  "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

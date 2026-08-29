@@ -1,11 +1,6 @@
 use std::collections::HashMap;
 
-fn intern(
-    x: i32,
-    y: i32,
-    points: &mut Vec<(i32, i32)>,
-    index: &mut HashMap<(i32, i32), usize>,
-) -> usize {
+fn intern(x: i32, y: i32, points: &mut Vec<(i32, i32)>, index: &mut HashMap<(i32, i32), usize>) -> usize {
     *index.entry((x, y)).or_insert_with(|| {
         points.push((x, y));
         points.len() - 1
@@ -52,9 +47,7 @@ impl Solution {
                 if used[v] {
                     continue;
                 }
-                let walk = dist[u]
-                    + (points[v].0 - points[u].0).abs()
-                    + (points[v].1 - points[u].1).abs();
+                let walk = dist[u] + (points[v].0 - points[u].0).abs() + (points[v].1 - points[u].1).abs();
                 if walk < dist[v] {
                     dist[v] = walk;
                 }

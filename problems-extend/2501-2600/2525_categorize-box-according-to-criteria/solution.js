@@ -14,10 +14,7 @@ var categorizeBox = function (length, width, height, mass) {
     const BULK_VOLUME = 1e9;
     const HEAVY_MASS = 100;
     const bulky =
-        length >= BULK_DIM ||
-        width >= BULK_DIM ||
-        height >= BULK_DIM ||
-        length * width * height >= BULK_VOLUME;
+        length >= BULK_DIM || width >= BULK_DIM || height >= BULK_DIM || length * width * height >= BULK_VOLUME;
     const heavy = mass >= HEAVY_MASS;
     if (bulky && heavy) return "Both";
     if (bulky) return "Bulky";

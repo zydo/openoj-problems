@@ -24,8 +24,7 @@ var minCost = function (grid, k) {
     // cell. Cells sorted by value descending turn the scan into a running
     // prefix minimum; ties share one prefix because the test is >=.
     const cells = [];
-    for (let i = 0; i < m; ++i)
-        for (let j = 0; j < n; ++j) cells.push([i, j]);
+    for (let i = 0; i < m; ++i) for (let j = 0; j < n; ++j) cells.push([i, j]);
     cells.sort((a, b) => grid[b[0]][b[1]] - grid[a[0]][a[1]]);
     let answer = d[m - 1][n - 1];
     for (let step = 0; step < k; ++step) {
@@ -33,10 +32,7 @@ var minCost = function (grid, k) {
         let run = INF;
         let p = 0;
         for (const [i, j] of cells) {
-            while (
-                p < cells.length &&
-                grid[cells[p][0]][cells[p][1]] >= grid[i][j]
-            ) {
+            while (p < cells.length && grid[cells[p][0]][cells[p][1]] >= grid[i][j]) {
                 const [si, sj] = cells[p];
                 if (d[si][sj] < run) run = d[si][sj];
                 ++p;
@@ -49,10 +45,8 @@ var minCost = function (grid, k) {
             for (let j = 0; j < n; ++j) {
                 let best = seed[i][j];
                 const g = grid[i][j];
-                if (i > 0 && seed[i - 1][j] + g < best)
-                    best = seed[i - 1][j] + g;
-                if (j > 0 && seed[i][j - 1] + g < best)
-                    best = seed[i][j - 1] + g;
+                if (i > 0 && seed[i - 1][j] + g < best) best = seed[i - 1][j] + g;
+                if (j > 0 && seed[i][j - 1] + g < best) best = seed[i][j - 1] + g;
                 seed[i][j] = best;
             }
         }

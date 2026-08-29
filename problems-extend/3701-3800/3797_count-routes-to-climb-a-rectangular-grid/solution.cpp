@@ -8,7 +8,8 @@ class Solution {
         // start); same_: ways standing there after a same-row slide. A slide
         // may not follow another slide, so slides feed only from up.
         vector<long long> up(m);
-        for (int c = 0; c < m; ++c) up[c] = grid[n - 1][c] == '.' ? 1 : 0;
+        for (int c = 0; c < m; ++c)
+            up[c] = grid[n - 1][c] == '.' ? 1 : 0;
 
         auto slides_of = [&](const vector<long long> &up_values, int row) {
             // Prefix sums over the row's up-values; the Euclidean bound for
@@ -22,7 +23,8 @@ class Solution {
             }
             vector<long long> out(m, 0);
             for (int c = 0; c < m; ++c) {
-                if (grid[row][c] != '.') continue;
+                if (grid[row][c] != '.')
+                    continue;
                 int lo = max(0, c - d), hi = min(m - 1, c + d);
                 out[c] = ((pref[hi + 1] - pref[lo] - up_values[c]) % MOD + MOD) % MOD;
             }
@@ -45,7 +47,8 @@ class Solution {
             }
             vector<long long> new_up(m, 0);
             for (int c = 0; c < m; ++c) {
-                if (grid[r][c] != '.') continue;
+                if (grid[r][c] != '.')
+                    continue;
                 int lo = max(0, c - w_up), hi = min(m - 1, c + w_up);
                 new_up[c] = ((pref[hi + 1] - pref[lo]) % MOD + MOD) % MOD;
             }
@@ -54,7 +57,8 @@ class Solution {
         }
         long long ans = 0;
         for (int c = 0; c < m; ++c) {
-            if (grid[0][c] == '.') ans = (ans + up[c] + same_[c]) % MOD;
+            if (grid[0][c] == '.')
+                ans = (ans + up[c] + same_[c]) % MOD;
         }
         return ans;
     }

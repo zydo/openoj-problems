@@ -1,10 +1,7 @@
 use std::collections::HashSet;
 
 impl Solution {
-    pub fn del_nodes(
-        root: Option<Box<TreeNode>>,
-        to_delete: Vec<i32>,
-    ) -> Vec<Option<Box<TreeNode>>> {
+    pub fn del_nodes(root: Option<Box<TreeNode>>, to_delete: Vec<i32>) -> Vec<Option<Box<TreeNode>>> {
         let deleted: HashSet<i32> = to_delete.into_iter().collect();
         let mut forest = Vec::new();
 

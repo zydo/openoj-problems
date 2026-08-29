@@ -22,8 +22,8 @@ class Solution:
                 n = len(state)
                 for l in range(n):
                     for r in range(l, n):
-                        rest = state[:l] + state[r + 1:]
-                        piece = state[l:r + 1]
+                        rest = state[:l] + state[r + 1 :]
+                        piece = state[l : r + 1]
                         for i in range(len(rest) + 1):
                             nxt = rest[:i] + piece + rest[i:]
                             if nxt == goal:

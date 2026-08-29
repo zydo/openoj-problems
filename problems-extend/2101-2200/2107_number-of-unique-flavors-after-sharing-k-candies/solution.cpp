@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int shareCandies(vector<int>& candies, int k) {
+  public:
+    int shareCandies(vector<int> &candies, int k) {
         unordered_map<int, int> counts;
         for (int flavor : candies) {
             ++counts[flavor];

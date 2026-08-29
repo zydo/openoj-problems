@@ -7,7 +7,8 @@ class Solution {
         vector<vector<int>> candidates(n + 1);
         for (int p = 1; p <= n; ++p) {
             for (int v = 1; v <= n; ++v) {
-                if (v % p == 0 || p % v == 0) candidates[p].push_back(v);
+                if (v % p == 0 || p % v == 0)
+                    candidates[p].push_back(v);
             }
         }
         vector<bool> used(n + 1, false);
@@ -16,8 +17,9 @@ class Solution {
 
   private:
     // Every position holds a value: one complete beautiful arrangement.
-    int fill(int pos, int n, vector<vector<int>>& candidates, vector<bool>& used) {
-        if (pos > n) return 1;
+    int fill(int pos, int n, vector<vector<int>> &candidates, vector<bool> &used) {
+        if (pos > n)
+            return 1;
         int total = 0;
         for (int v : candidates[pos]) {
             if (!used[v]) {

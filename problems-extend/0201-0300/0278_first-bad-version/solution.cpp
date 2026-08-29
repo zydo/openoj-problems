@@ -1,7 +1,7 @@
 class VersionControl;
 
 class Solution {
-public:
+  public:
     int firstBadVersion(VersionControl &versionControl, int n) {
         // The predicate flips exactly once along [1, n] — good up to the
         // hidden boundary, bad from it on — so bisect for the first true.

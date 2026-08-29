@@ -5,17 +5,18 @@
 SELECT
   user_id,
   email
-FROM (
-  SELECT
-    user_id,
-    email,
-    substr(email, 1, instr(email, '@') - 1) AS local_part,
-    substr(email, instr(email, '@') + 1) AS rest_part
-  FROM
-    Users
-  WHERE
-    length(email) - length(replace(email, '@', '')) = 1
-)
+FROM
+  (
+    SELECT
+      user_id,
+      email,
+      substr(email, 1, instr(email, '@') - 1) AS local_part,
+      substr(email, instr(email, '@') + 1) AS rest_part
+    FROM
+      Users
+    WHERE
+      length(email) - length(replace(email, '@', '')) = 1
+  )
 WHERE
   length(local_part) > 0
   AND local_part NOT GLOB '*[^a-zA-Z0-9_]*'

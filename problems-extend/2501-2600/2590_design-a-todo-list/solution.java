@@ -8,6 +8,7 @@ class TodoList {
     // every task; the getters scan it for the user's uncompleted tasks
     // and sort the survivors by their unique due date.
     private static final class Task {
+
         final int user;
         final String description;
         final int due;
@@ -26,10 +27,8 @@ class TodoList {
 
     public TodoList() {}
 
-    public int addTask(int userId, String taskDescription, int dueDate,
-            String[] tags) {
-        tasks.add(new Task(userId, taskDescription, dueDate,
-                Arrays.asList(tags)));
+    public int addTask(int userId, String taskDescription, int dueDate, String[] tags) {
+        tasks.add(new Task(userId, taskDescription, dueDate, Arrays.asList(tags)));
         return tasks.size();
     }
 

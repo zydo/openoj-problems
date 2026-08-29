@@ -26,10 +26,7 @@ class ChunkCase {
             throw new Error("drive expects the submission's function");
         }
         const result = chunkFn(this.arr, this.size);
-        if (
-            !Array.isArray(result) ||
-            !result.every((row) => Array.isArray(row))
-        ) {
+        if (!Array.isArray(result) || !result.every((row) => Array.isArray(row))) {
             throw new Error("chunk must return an array of subarrays");
         }
         this.output = result;

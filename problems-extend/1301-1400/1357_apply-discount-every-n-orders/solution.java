@@ -25,7 +25,7 @@ class Cashier {
         }
         ++customers;
         if (customers % n == 0) {
-            return bill * (100 - discount) / 100.0;
+            return (bill * (100 - discount)) / 100.0;
         }
         return bill;
     }

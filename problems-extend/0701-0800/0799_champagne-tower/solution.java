@@ -4,7 +4,7 @@ class Solution {
         // Row-by-row simulation. row[j] is the total champagne glass j of the
         // current row has received; a full glass splits its excess equally
         // between the two glasses below, and rows below query_row never matter.
-        double[] row = {poured};
+        double[] row = { poured };
         for (int i = 0; i < query_row; ++i) {
             double[] next = new double[row.length + 1];
             for (int j = 0; j < row.length; ++j) {

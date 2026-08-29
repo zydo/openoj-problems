@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int subarraysDivByK(vector<int>& nums, int k) {
+  public:
+    int subarraysDivByK(vector<int> &nums, int k) {
         // A subarray's sum is the difference of two prefix sums, and that
         // difference is divisible by k exactly when both prefixes leave the
         // same remainder. An array counting each normalized remainder seen

@@ -10,8 +10,11 @@ class Solution {
         // pattern[0]'s before it. When both pattern letters are equal the
         // same sweep yields k*(k-1)/2 pairs plus a gain of k, which is
         // exactly what one extra copy of that letter adds.
-        char first = pattern.charAt(0), second = pattern.charAt(1);
-        long countFirst = 0, countSecond = 0, pairs = 0;
+        char first = pattern.charAt(0),
+            second = pattern.charAt(1);
+        long countFirst = 0,
+            countSecond = 0,
+            pairs = 0;
         for (int i = 0; i < text.length(); ++i) {
             char ch = text.charAt(i);
             if (ch == second) {

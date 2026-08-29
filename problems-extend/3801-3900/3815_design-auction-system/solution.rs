@@ -41,7 +41,11 @@ pub struct AuctionSystem {
 
 impl AuctionSystem {
     pub fn new() -> Self {
-        AuctionSystem { heaps: HashMap::new(), latest_seq: HashMap::new(), clock: 0 }
+        AuctionSystem {
+            heaps: HashMap::new(),
+            latest_seq: HashMap::new(),
+            clock: 0,
+        }
     }
 
     pub fn addBid(&mut self, userId: i32, itemId: i32, bidAmount: i32) {

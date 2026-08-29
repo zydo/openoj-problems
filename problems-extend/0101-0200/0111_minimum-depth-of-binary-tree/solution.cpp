@@ -4,7 +4,8 @@ class Solution {
         // Loop invariant: `frontier` holds exactly one level's nodes, and
         // every node above them is internal, so the first leaf met in
         // level order sits at the minimum depth.
-        if (root == nullptr) return 0;
+        if (root == nullptr)
+            return 0;
         int depth = 0;
         vector<TreeNode *> frontier;
         frontier.push_back(root);
@@ -17,8 +18,10 @@ class Solution {
                     // visits below the minimum depth, which is the point.
                     return depth;
                 }
-                if (node->left != nullptr) next.push_back(node->left);
-                if (node->right != nullptr) next.push_back(node->right);
+                if (node->left != nullptr)
+                    next.push_back(node->left);
+                if (node->right != nullptr)
+                    next.push_back(node->right);
             }
             frontier = next;
         }

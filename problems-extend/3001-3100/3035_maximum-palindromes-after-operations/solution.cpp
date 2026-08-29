@@ -1,8 +1,8 @@
 class Solution {
-public:
-    int maxPalindromesAfterOperations(vector<string>& words) {
+  public:
+    int maxPalindromesAfterOperations(vector<string> &words) {
         int count[26] = {};
-        for (const string& word : words) {
+        for (const string &word : words) {
             for (const char letter : word) {
                 ++count[letter - 'a'];
             }
@@ -13,7 +13,7 @@ public:
         }
         vector<int> halves;
         halves.reserve(words.size());
-        for (const string& word : words) {
+        for (const string &word : words) {
             halves.push_back(word.size() / 2);
         }
         sort(halves.begin(), halves.end());

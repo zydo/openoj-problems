@@ -11,7 +11,7 @@ class Solution {
         int total = rows * columns;
         List<Integer>[] adjacency = new ArrayList[total];
         List<Integer> leftVertices = new ArrayList<>();
-        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        int[][] directions = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
         for (int row = 0; row < rows; row++) {
             for (int column = 0; column < columns; column++) {
                 if (grid[row][column] == 0 || (row + column) % 2 == 1) continue;
@@ -42,8 +42,21 @@ class Solution {
             if (shortest == infinity) break;
             int[] nextEdge = new int[total];
             for (int vertex : leftVertices) {
-                if (pairLeft[vertex] == -1
-                        && augment(vertex, shortest, adjacency, pairLeft, pairRight, distance, infinity, nextEdge, stack, pathEdges)) {
+                if (
+                    pairLeft[vertex] == -1 &&
+                    augment(
+                        vertex,
+                        shortest,
+                        adjacency,
+                        pairLeft,
+                        pairRight,
+                        distance,
+                        infinity,
+                        nextEdge,
+                        stack,
+                        pathEdges
+                    )
+                ) {
                     matching++;
                 }
             }
@@ -51,8 +64,14 @@ class Solution {
         return matching;
     }
 
-    private int layer(List<Integer> leftVertices, List<Integer>[] adjacency, int[] pairLeft, int[] pairRight,
-            int[] distance, int infinity) {
+    private int layer(
+        List<Integer> leftVertices,
+        List<Integer>[] adjacency,
+        int[] pairLeft,
+        int[] pairRight,
+        int[] distance,
+        int infinity
+    ) {
         ArrayDeque<Integer> queue = new ArrayDeque<>();
         for (int vertex : leftVertices) {
             if (pairLeft[vertex] == -1) {
@@ -76,8 +95,18 @@ class Solution {
         return shortest;
     }
 
-    private boolean augment(int root, int shortest, List<Integer>[] adjacency, int[] pairLeft, int[] pairRight,
-            int[] distance, int infinity, int[] nextEdge, int[] stack, int[] pathEdges) {
+    private boolean augment(
+        int root,
+        int shortest,
+        List<Integer>[] adjacency,
+        int[] pairLeft,
+        int[] pairRight,
+        int[] distance,
+        int infinity,
+        int[] nextEdge,
+        int[] stack,
+        int[] pathEdges
+    ) {
         int size = 1;
         stack[0] = root;
         while (size > 0) {

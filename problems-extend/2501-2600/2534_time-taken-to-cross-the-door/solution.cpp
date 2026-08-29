@@ -10,7 +10,7 @@ class Solution {
         vector<int> ans(n);
         int i = 0;
         long long t = 0;
-        int prev_dir = -1;  // -1 unused, 0 entering, 1 exiting
+        int prev_dir = -1; // -1 unused, 0 entering, 1 exiting
         int done = 0;
         while (done < n) {
             while (i < n && (long long)arrival[i] <= t) {
@@ -21,7 +21,7 @@ class Solution {
                 i++;
             }
             if (enterQ.empty() && exitQ.empty()) {
-                t = arrival[i];     // jump the clock; idle breaks any streak
+                t = arrival[i]; // jump the clock; idle breaks any streak
                 prev_dir = -1;
                 continue;
             }

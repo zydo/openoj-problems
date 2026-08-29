@@ -32,7 +32,7 @@ class Solution {
     int longestBalanced(std::string s) {
         int zeros = std::count(s.begin(), s.end(), '0');
         int ones = s.size() - zeros;
-        return std::max({longestWithDelta(s, 0, s.size()), longestWithDelta(s, 2, 2 * zeros),
-                         longestWithDelta(s, -2, 2 * ones)});
+        return std::max(
+            {longestWithDelta(s, 0, s.size()), longestWithDelta(s, 2, 2 * zeros), longestWithDelta(s, -2, 2 * ones)});
     }
 };

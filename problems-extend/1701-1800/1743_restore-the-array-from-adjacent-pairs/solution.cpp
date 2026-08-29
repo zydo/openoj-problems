@@ -20,7 +20,8 @@ class Solution {
         } else {
             start = INT_MAX;
             for (auto &[value, neighbors] : adj) {
-                if ((int)neighbors.size() == 1) start = min(start, value);
+                if ((int)neighbors.size() == 1)
+                    start = min(start, value);
             }
         }
         // Values live in [-1e5, 1e5], so INT_MAX is a safe "no previous"
@@ -37,7 +38,8 @@ class Solution {
                     break;
                 }
             }
-            if (nxt == INT_MAX) break;
+            if (nxt == INT_MAX)
+                break;
             prev = cur;
             cur = nxt;
         }

@@ -1,9 +1,9 @@
 class Solution {
-   public:
+  public:
     // Stream queries once; per index keep subset-sum reachability of the
     // vals seen so far (0/1 knapsack, one item per query) as a boolean
     // table, and stop updating an index once its target is reachable.
-    int minZeroArray(vector<int>& nums, vector<vector<int>>& queries) {
+    int minZeroArray(vector<int> &nums, vector<vector<int>> &queries) {
         int n = nums.size();
         vector<vector<char>> reach(n);
         vector<char> done(n, 0);
@@ -26,7 +26,7 @@ class Solution {
                 if (done[i] || val > nums[i]) {
                     continue;
                 }
-                vector<char>& row = reach[i];
+                vector<char> &row = reach[i];
                 for (int s = nums[i] - val; s >= 0; s--) {
                     if (row[s]) {
                         row[s + val] = 1;

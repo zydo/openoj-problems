@@ -31,6 +31,7 @@ shapes reach the same rows: a self-join
 HAVING COUNT(*) >= 5` projecting `m.name`, a windowed
 `COUNT(*) OVER (PARTITION BY managerId)` with a filter, or a correlated
 `(SELECT COUNT(*) FROM Employee e WHERE e.managerId = Employee.id)
->= 5` — but the grouped `IN` states the keep-set directly.
+
+> = 5`— but the grouped`IN` states the keep-set directly.
 
 **Complexity:** `O(E)` time, `O(M)` space.

@@ -26,7 +26,8 @@ class Solution {
             if (index == lines.size() - 1 || line.size() == 1) {
                 string text;
                 for (const string &word : line) {
-                    if (!text.empty()) text += ' ';
+                    if (!text.empty())
+                        text += ' ';
                     text += word;
                 }
                 text.append(maxWidth - text.size(), ' ');
@@ -34,7 +35,8 @@ class Solution {
                 continue;
             }
             letters = 0;
-            for (const string &word : line) letters += (int)word.size();
+            for (const string &word : line)
+                letters += (int)word.size();
             int gaps = (int)line.size() - 1;
             int base = (maxWidth - letters) / gaps;
             int extra = (maxWidth - letters) % gaps;

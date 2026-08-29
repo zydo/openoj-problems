@@ -32,9 +32,7 @@ function buildClassTable(classes) {
         }
         function Named() {}
         Object.defineProperty(Named, "name", { value: entry.name });
-        Named.prototype = Object.create(
-            base === null ? Object.prototype : base.prototype
-        );
+        Named.prototype = Object.create(base === null ? Object.prototype : base.prototype);
         Named.prototype.describe = function () {
             return "instance of " + entry.name;
         };

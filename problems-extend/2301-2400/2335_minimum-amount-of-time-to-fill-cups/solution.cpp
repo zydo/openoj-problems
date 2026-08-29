@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int fillCups(vector<int>& amount) {
+    int fillCups(vector<int> &amount) {
         // Pair the two fullest types every second; a lone type is filled one
         // cup at a time. With counts sorted a <= b <= c that schedule ends in
         // max(c, ceil((a + b + c) / 2)) seconds: c because the largest type

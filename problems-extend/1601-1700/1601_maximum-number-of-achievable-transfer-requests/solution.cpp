@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maximumRequests(int n, vector<vector<int>>& requests) {
+  public:
+    int maximumRequests(int n, vector<vector<int>> &requests) {
         int m = requests.size();
         int best = 0;
         for (int mask = 0; mask < (1 << m); mask++) {

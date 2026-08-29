@@ -15,8 +15,10 @@ class Solution {
         PriorityQueue<Long> low = new PriorityQueue<>(Comparator.reverseOrder());
         PriorityQueue<Long> high = new PriorityQueue<>();
         int[] delayed = new int[n];
-        int lowSize = 0, highSize = 0;
-        long lowSum = 0, highSum = 0;
+        int lowSize = 0,
+            highSize = 0;
+        long lowSum = 0,
+            highSum = 0;
         long best = Long.MAX_VALUE;
         for (int i = 0; i < n; i++) {
             if (i >= k) {

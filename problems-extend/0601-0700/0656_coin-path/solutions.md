@@ -18,8 +18,7 @@ therefore always takes the SMALLEST index achieving the minimum continuation:
 every completion behind a smaller next index beats every completion behind a
 larger one. Scanning the window in increasing index order and replacing the
 best only on a strict improvement stores exactly that choice in `next[i]`, and
-the front walk inherits it. On the first example `cost` prefers index 3 (total
-6) over index 2 (total 8), giving `[1,3,5]`; with `maxJump = 1` the `-1` at
+the front walk inherits it. On the first example `cost` prefers index 3 (total 6) over index 2 (total 8), giving `[1,3,5]`; with `maxJump = 1` the `-1` at
 index 4 strands everything left of it, the sentinel survives at index 1, and
 the answer is empty.
 

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int minOperationsMaxProfit(vector<int> &customers, int boardingCost, int runningCost) {
         // Simulate one rotation at a time: consume the next arrivals (once
         // customers is exhausted, no more arrive), board up to four of

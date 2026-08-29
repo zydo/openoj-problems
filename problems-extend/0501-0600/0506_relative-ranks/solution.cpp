@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<string> findRelativeRanks(vector<int>& score) {
+    vector<string> findRelativeRanks(vector<int> &score) {
         // Sorting the athletes, not the array: an index list ordered by
         // descending score carries each athlete's placement back to its
         // original slot, so the answer keeps the input's order.

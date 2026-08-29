@@ -9,10 +9,13 @@ class Solution {
         // period n, so any occurrence of b slides into the first q + 1 copies.
         int q = (m + n - 1) / n;
         string repeated;
-        for (int i = 0; i < q; ++i) repeated += a;
-        if (repeated.find(b) != string::npos) return q;
+        for (int i = 0; i < q; ++i)
+            repeated += a;
+        if (repeated.find(b) != string::npos)
+            return q;
         repeated += a;
-        if (repeated.find(b) != string::npos) return q + 1;
+        if (repeated.find(b) != string::npos)
+            return q + 1;
         return -1;
     }
 };

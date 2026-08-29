@@ -11,7 +11,8 @@ class Solution {
         // by the smallest normalized cell serialization among its eight
         // rotations and reflections, so islands equal under the statement's
         // rule — and only those — produce one identical signature.
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         boolean[][] seen = new boolean[m][n];
         Set<String> shapes = new HashSet<>();
         for (int i = 0; i < m; ++i) {
@@ -25,12 +26,19 @@ class Solution {
                 List<int[]> cells = new ArrayList<>();
                 while (!stack.isEmpty()) {
                     int[] cell = stack.pop();
-                    int r = cell[0], c = cell[1];
+                    int r = cell[0],
+                        c = cell[1];
                     cells.add(cell);
                     int[][] neighbours = { { r - 1, c }, { r + 1, c }, { r, c - 1 }, { r, c + 1 } };
                     for (int[] nb : neighbours) {
-                        if (nb[0] >= 0 && nb[0] < m && nb[1] >= 0 && nb[1] < n
-                                && grid[nb[0]][nb[1]] == 1 && !seen[nb[0]][nb[1]]) {
+                        if (
+                            nb[0] >= 0 &&
+                            nb[0] < m &&
+                            nb[1] >= 0 &&
+                            nb[1] < n &&
+                            grid[nb[0]][nb[1]] == 1 &&
+                            !seen[nb[0]][nb[1]]
+                        ) {
                             seen[nb[0]][nb[1]] = true;
                             stack.push(nb);
                         }
@@ -42,7 +50,8 @@ class Solution {
                     int b = (t & 2) == 0 ? 1 : -1;
                     boolean swap = (t & 4) != 0;
                     List<int[]> moved = new ArrayList<>();
-                    int r0 = Integer.MAX_VALUE, c0 = Integer.MAX_VALUE;
+                    int r0 = Integer.MAX_VALUE,
+                        c0 = Integer.MAX_VALUE;
                     for (int[] cell : cells) {
                         int nr = a * (swap ? cell[1] : cell[0]);
                         int nc = b * (swap ? cell[0] : cell[1]);

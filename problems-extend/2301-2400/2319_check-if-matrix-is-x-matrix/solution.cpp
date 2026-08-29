@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool checkXMatrix(vector<vector<int>>& grid) {
+  public:
+    bool checkXMatrix(vector<vector<int>> &grid) {
         int size = static_cast<int>(grid.size());
         for (int row = 0; row < size; ++row) {
             for (int col = 0; col < size; ++col) {

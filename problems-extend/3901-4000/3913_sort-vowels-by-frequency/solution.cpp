@@ -14,9 +14,8 @@ class Solution {
         }
 
         array<int, 5> order{0, 1, 2, 3, 4};
-        sort(order.begin(), order.end(), [&](int a, int b) {
-            return counts[a] != counts[b] ? counts[a] > counts[b] : first[a] < first[b];
-        });
+        sort(order.begin(), order.end(),
+             [&](int a, int b) { return counts[a] != counts[b] ? counts[a] > counts[b] : first[a] < first[b]; });
         string arranged;
         for (int slot : order)
             arranged.append(counts[slot], vowels[slot]);

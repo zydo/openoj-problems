@@ -28,7 +28,8 @@ class FindElements {
     bool find(int target) {
         unsigned int path = static_cast<unsigned int>(target) + 1u;
         int top = 0;
-        while ((path >> top) > 1u) ++top;
+        while ((path >> top) > 1u)
+            ++top;
         TreeNode *node = root;
         for (int bit = top - 1; bit >= 0 && node != nullptr; --bit) {
             node = ((path >> bit) & 1u) == 1u ? node->right : node->left;

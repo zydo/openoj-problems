@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maximumInvitations(vector<vector<int>>& grid) {
+    int maximumInvitations(vector<vector<int>> &grid) {
         // Maximum bipartite matching: each boy in turn looks for a girl, and
         // when his only choices are taken, an augmenting path asks an earlier
         // boy to reroute — the matched count grows by one exactly when such a
@@ -19,7 +19,7 @@ class Solution {
     }
 
   private:
-    bool invite(vector<vector<int>>& grid, vector<int>& invitations, int boy, vector<bool>& seen) {
+    bool invite(vector<vector<int>> &grid, vector<int> &invitations, int boy, vector<bool> &seen) {
         int n = grid[0].size();
         for (int girl = 0; girl < n; ++girl) {
             if (grid[boy][girl] == 1 && !seen[girl]) {

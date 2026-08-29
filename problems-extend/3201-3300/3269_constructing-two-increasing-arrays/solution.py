@@ -17,9 +17,7 @@ class Solution:
         if m >= 1:
             prv1[1] = 2 - nums2[0]
             for j in range(2, m + 1):
-                prv1[j] = prv1[j - 1] + (
-                    1 if nums2[j - 2] != nums2[j - 1] else 2
-                )
+                prv1[j] = prv1[j - 1] + (1 if nums2[j - 2] != nums2[j - 1] else 2)
         for i in range(1, n + 1):
             x = nums1[i - 1]
             step_x = 1 if i >= 2 and nums1[i - 2] != x else 2

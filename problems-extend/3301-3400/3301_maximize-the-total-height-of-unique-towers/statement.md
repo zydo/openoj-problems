@@ -8,7 +8,7 @@ the maximum height the ith tower can be assigned.
 Your task is to assign a height to each tower so that:
 
 - The height of the ith tower is a positive integer and does not exceed
-`maximumHeight[i]`.
+  `maximumHeight[i]`.
 - No two towers have the same height.
 
 Return the maximum possible total sum of the tower heights. If it's not

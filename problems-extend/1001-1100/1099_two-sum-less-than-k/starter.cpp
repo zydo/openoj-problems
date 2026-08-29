@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int twoSumLessThanK(vector<int>& nums, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    int twoSumLessThanK(vector<int> &nums, int k) { throw logic_error("TODO"); }
 };

@@ -20,7 +20,8 @@ class Solution {
         // Monotonic stack: while digits can still be dropped, pop any smaller
         // digit in front of a larger newcomer, then keep the first t digits.
         int[] stack = new int[nums.length];
-        int top = 0, drop = nums.length - t;
+        int top = 0,
+            drop = nums.length - t;
         for (int num : nums) {
             while (drop > 0 && top > 0 && stack[top - 1] < num) {
                 top--;
@@ -33,7 +34,9 @@ class Solution {
 
     private int[] merge(int[] a, int[] b) {
         int[] merged = new int[a.length + b.length];
-        int i = 0, j = 0, out = 0;
+        int i = 0,
+            j = 0,
+            out = 0;
         while (i < a.length && j < b.length) {
             // Equal heads are decided by comparing the tails that follow.
             if (greater(a, i, b, j)) merged[out++] = a[i++];

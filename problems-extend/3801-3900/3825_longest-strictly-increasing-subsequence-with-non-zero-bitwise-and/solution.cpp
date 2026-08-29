@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
   public:
-    int longestSubsequence(vector<int>& nums) {
+    int longestSubsequence(vector<int> &nums) {
         // Values fit below 2^30 (nums[i] <= 10^9) and the answer is at most
         // nums.size() <= 10^5, so int arithmetic carries everything here.
         // A subsequence ANDs to something non-zero exactly when all of its

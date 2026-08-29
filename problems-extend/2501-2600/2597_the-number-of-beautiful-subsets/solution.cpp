@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int beautifulSubsets(std::vector<int>& nums, int k) {
+    int beautifulSubsets(std::vector<int> &nums, int k) {
         // Sort, then decide each element take-or-skip in index order.
         // Taking nums[i] is legal exactly when no earlier-taken value
         // equals nums[i] - k — the only conflict a sorted order can
@@ -13,8 +13,7 @@ class Solution {
     }
 
   private:
-    int countFrom(const std::vector<int>& nums, int k,
-                  std::unordered_map<int, int> taken, size_t i) {
+    int countFrom(const std::vector<int> &nums, int k, std::unordered_map<int, int> taken, size_t i) {
         if (i == nums.size()) {
             return 1;
         }

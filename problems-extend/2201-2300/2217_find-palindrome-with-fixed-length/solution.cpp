@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<long long> kthPalindrome(vector<int>& queries, int intLength) {
+    vector<long long> kthPalindrome(vector<int> &queries, int intLength) {
         // The kth palindrome is the kth half-number mirrored, so each query
         // is one string construction; past the 9*10^(half-1) supply it is -1.
         const int half = (intLength + 1) / 2;

@@ -33,11 +33,11 @@ Every year, each school announces a minimum score requirement that a
 student needs to apply to it. The school chooses the minimum score
 requirement based on the exam results of all the students:
 
-* They want to ensure that even if every student meeting the requirement
+- They want to ensure that even if every student meeting the requirement
   applies, the school can accept everyone.
-* They also want to maximize the possible number of students that can
+- They also want to maximize the possible number of students that can
   apply.
-* They must use a score that is in the `Exam` table.
+- They must use a score that is in the `Exam` table.
 
 Write a solution to report the minimum score requirement for each school.
 If there are multiple score values satisfying the above conditions, choose

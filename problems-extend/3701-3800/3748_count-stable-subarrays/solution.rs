@@ -24,12 +24,7 @@ impl Solution {
             // it sit past a drop at or after l and count their bare window
             // length; ends from there on count down to left[e].
             let p = left[l..r + 1].partition_point(|&start| start < l) + l;
-            result.push(
-                pref_base[r + 1] - pref_base[l]
-                    + pref_left[p]
-                    - pref_left[l]
-                    - (l * (p - l)) as i64,
-            );
+            result.push(pref_base[r + 1] - pref_base[l] + pref_left[p] - pref_left[l] - (l * (p - l)) as i64);
         }
         result
     }

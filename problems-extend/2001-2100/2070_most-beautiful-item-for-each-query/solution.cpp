@@ -1,9 +1,7 @@
 class Solution {
-public:
-    vector<int> maximumBeauty(vector<vector<int>>& items, vector<int>& queries) {
-        sort(items.begin(), items.end(), [](const auto& left, const auto& right) {
-            return left[0] < right[0];
-        });
+  public:
+    vector<int> maximumBeauty(vector<vector<int>> &items, vector<int> &queries) {
+        sort(items.begin(), items.end(), [](const auto &left, const auto &right) { return left[0] < right[0]; });
 
         vector<int> prefixBeauty(items.size());
         int best = 0;

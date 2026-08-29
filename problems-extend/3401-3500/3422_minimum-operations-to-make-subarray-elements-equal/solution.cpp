@@ -3,8 +3,8 @@
 #include <vector>
 
 class Solution {
-public:
-    long long minOperations(vector<int>& nums, int k) {
+  public:
+    long long minOperations(vector<int> &nums, int k) {
         // Equalizing a window costs sum(|x - t|), minimized at a median t.
         // The window slides over two heap halves around the median; running
         // half-sums make each window's cost O(1). Every element packs to
@@ -13,13 +13,13 @@ public:
         // its true half by one comparison against the low top, and stale
         // copies are dropped only when they surface at a heap top.
         int n = nums.size();
-        priority_queue<long long> low;  // max-heap: lower half of the window
+        priority_queue<long long> low; // max-heap: lower half of the window
         priority_queue<long long, vector<long long>, greater<long long>> high;
         vector<char> delayed(n, 0);
         int lowSize = 0, highSize = 0;
         long long lowSum = 0, highSum = 0;
         long long best = LLONG_MAX;
-        auto prune = [&](auto& heap) {
+        auto prune = [&](auto &heap) {
             while (!heap.empty() && delayed[heap.top() & 131071]) {
                 delayed[heap.top() & 131071] = 0;
                 heap.pop();

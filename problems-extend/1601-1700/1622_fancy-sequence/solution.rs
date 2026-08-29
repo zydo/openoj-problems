@@ -28,7 +28,11 @@ fn mod_pow(mut base: i64, mut exp: i64, modulus: i64) -> i64 {
 
 impl Fancy {
     pub fn new() -> Self {
-        Fancy { mult: 1, add: 0, stored: Vec::new() }
+        Fancy {
+            mult: 1,
+            add: 0,
+            stored: Vec::new(),
+        }
     }
 
     pub fn append(&mut self, val: i32) {

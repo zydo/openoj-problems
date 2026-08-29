@@ -34,11 +34,7 @@ class Excel:
                 references.append(first)
                 continue
             last = self._cell(right)
-            references.extend(
-                (r, c)
-                for r in range(first[0], last[0] + 1)
-                for c in range(first[1], last[1] + 1)
-            )
+            references.extend((r, c) for r in range(first[0], last[0] + 1) for c in range(first[1], last[1] + 1))
         self.formulas[row][ord(column) - ord("A")] = references
         return self._value(row, ord(column) - ord("A"))
 

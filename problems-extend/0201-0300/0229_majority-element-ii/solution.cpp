@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> majorityElement(vector<int>& nums) {
+    vector<int> majorityElement(vector<int> &nums) {
         // Extended Boyer-Moore voting: two candidate slots, two counters. A
         // match raises its slot's counter, a zero counter adopts the current
         // value, and a value matching neither slot spends both counters.
@@ -34,8 +34,10 @@ class Solution {
             }
         }
         vector<int> result;
-        if (total1 > threshold) result.push_back(candidate1);
-        if (candidate2 != candidate1 && total2 > threshold) result.push_back(candidate2);
+        if (total1 > threshold)
+            result.push_back(candidate1);
+        if (candidate2 != candidate1 && total2 > threshold)
+            result.push_back(candidate2);
         // At most two answers survive; sorting pins the ascending order the
         // examples show.
         sort(result.begin(), result.end());

@@ -10,7 +10,7 @@ class Solution {
         // row carries the table; the answer is sum dp[n][*].
         final int MOD = 1_000_000_007;
         int n = s.length();
-        long[] dp = {1};
+        long[] dp = { 1 };
         for (int i = 0; i < n; ++i) {
             int m = dp.length;
             long[] prefix = new long[m + 1];

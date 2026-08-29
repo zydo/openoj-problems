@@ -12,20 +12,35 @@ WHERE
         SELECT
           user_id,
           contest_id - ROW_NUMBER() OVER (
-            PARTITION BY user_id
-            ORDER BY contest_id
+            PARTITION BY
+              user_id
+            ORDER BY
+              contest_id
           ) AS grp
         FROM
           (
-            SELECT contest_id, gold_medal AS user_id FROM Contests
+            SELECT
+              contest_id,
+              gold_medal AS user_id
+            FROM
+              Contests
             UNION
-            SELECT contest_id, silver_medal FROM Contests
+            SELECT
+              contest_id,
+              silver_medal
+            FROM
+              Contests
             UNION
-            SELECT contest_id, bronze_medal FROM Contests
+            SELECT
+              contest_id,
+              bronze_medal
+            FROM
+              Contests
           )
       )
     GROUP BY
-      user_id, grp
+      user_id,
+      grp
     HAVING
       COUNT(*) >= 3
   )

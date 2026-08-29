@@ -29,8 +29,7 @@ class Solution {
                 ++j;
             }
             long long run_length = (long long)(j - i);
-            long long step =
-                (long long)k / std::gcd((long long)nums[i], (long long)k);
+            long long step = (long long)k / std::gcd((long long)nums[i], (long long)k);
             long long repeated = run_length / step;
             total -= repeated * run_length - step * repeated * (repeated + 1) / 2;
             i = j;

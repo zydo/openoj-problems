@@ -7,7 +7,8 @@ class Solution {
         int runningMax = -1;
         for (int i = (int)arr.size() - 1; i >= 0; --i) {
             answer[i] = runningMax;
-            if (arr[i] > runningMax) runningMax = arr[i];
+            if (arr[i] > runningMax)
+                runningMax = arr[i];
         }
         return answer;
     }

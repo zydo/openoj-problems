@@ -7,10 +7,9 @@ impl Solution {
         let masks: Vec<u32> = matrix
             .iter()
             .map(|row| {
-                row.iter().enumerate().fold(
-                    0u32,
-                    |acc, (j, &v)| if v == 1 { acc | (1 << j) } else { acc },
-                )
+                row.iter()
+                    .enumerate()
+                    .fold(0u32, |acc, (j, &v)| if v == 1 { acc | (1 << j) } else { acc })
             })
             .collect();
         let mut best = 0i32;
@@ -18,8 +17,7 @@ impl Solution {
             if sel.count_ones() != num_select as u32 {
                 continue;
             }
-            let covered =
-                masks.iter().filter(|&&row| row & !sel == 0).count() as i32;
+            let covered = masks.iter().filter(|&&row| row & !sel == 0).count() as i32;
             best = best.max(covered);
         }
         best

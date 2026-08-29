@@ -2,7 +2,7 @@
 
 ## Height table, then descend toward the taller side
 
-Call the *height* of a node the depth of the deepest leaf below it. The
+Call the _height_ of a node the depth of the deepest leaf below it. The
 answer is characterized by two facts: the subtree of the answer contains a
 deepest leaf on **both** sides (otherwise the answer is deeper inside the
 taller child), and at that node the two heights tie — because the global

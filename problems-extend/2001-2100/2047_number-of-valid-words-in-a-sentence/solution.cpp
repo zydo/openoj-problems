@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countValidWords(string sentence) {
         istringstream words(sentence);
         string token;
@@ -11,7 +11,7 @@ public:
         return validWords;
     }
 
-private:
+  private:
     bool isValid(const string &token) const {
         int hyphens = 0;
         int punctuation = 0;
@@ -23,8 +23,8 @@ private:
             }
             if (character == '-') {
                 ++hyphens;
-                if (hyphens > 1 || index == 0 || index + 1 == static_cast<int>(token.size())
-                    || !isLetter(token[index - 1]) || !isLetter(token[index + 1])) {
+                if (hyphens > 1 || index == 0 || index + 1 == static_cast<int>(token.size()) ||
+                    !isLetter(token[index - 1]) || !isLetter(token[index + 1])) {
                     return false;
                 }
             } else if (character == '!' || character == '.' || character == ',') {
@@ -40,7 +40,5 @@ private:
         return true;
     }
 
-    bool isLetter(char character) const {
-        return character >= 'a' && character <= 'z';
-    }
+    bool isLetter(char character) const { return character >= 'a' && character <= 'z'; }
 };

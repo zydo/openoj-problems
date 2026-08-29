@@ -2,9 +2,23 @@ SELECT
   ad_id,
   ROUND(
     COALESCE(
-      SUM(CASE WHEN action = 'Clicked' THEN 1 ELSE 0 END) * 100.0 / (
-        SUM(CASE WHEN action = 'Clicked' THEN 1 ELSE 0 END)
-        + SUM(CASE WHEN action = 'Viewed' THEN 1 ELSE 0 END)
+      SUM(
+        CASE
+          WHEN action = 'Clicked' THEN 1
+          ELSE 0
+        END
+      ) * 100.0 / (
+        SUM(
+          CASE
+            WHEN action = 'Clicked' THEN 1
+            ELSE 0
+          END
+        ) + SUM(
+          CASE
+            WHEN action = 'Viewed' THEN 1
+            ELSE 0
+          END
+        )
       ),
       0
     ),

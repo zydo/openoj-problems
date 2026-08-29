@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int checkWays(vector<vector<int>>& pairs) {
+    int checkWays(vector<vector<int>> &pairs) {
         // The pair set of any valid tree is exactly its ancestor pairs, so
         // a node's adjacency names all of its ancestors and all of its
         // descendants at once. The root pairs with every other value, so
@@ -18,7 +18,7 @@ class Solution {
         // parent is forced and exactly one tree exists (1).
         vector<vector<bool>> adj(501, vector<bool>(501, false));
         vector<int> deg(501, 0);
-        for (const auto& pair : pairs) {
+        for (const auto &pair : pairs) {
             int x = pair[0];
             int y = pair[1];
             adj[x][y] = true;

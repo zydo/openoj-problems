@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int smallestRepunitDivByK(int k) {
         // A repunit ends in the digit 1, so it can never be divisible by 2
         // or 5 -- rule those out up front instead of relying on the loop

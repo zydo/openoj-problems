@@ -27,13 +27,10 @@ function isPossibleToCutPath(grid: number[][]): boolean {
         for (let j = 0; j < n; ++j) {
             if (grid[i][j] === 0) continue;
             const cell = i * n + j;
-            const corner =
-                (i === 0 && j === 0) || (i === m - 1 && j === n - 1);
+            const corner = (i === 0 && j === 0) || (i === m - 1 && j === n - 1);
             connect(2 * cell, 2 * cell + 1, corner ? inf : 1);
-            if (j + 1 < n && grid[i][j + 1] === 1)
-                connect(2 * cell + 1, 2 * (cell + 1), inf);
-            if (i + 1 < m && grid[i + 1][j] === 1)
-                connect(2 * cell + 1, 2 * (cell + n), inf);
+            if (j + 1 < n && grid[i][j + 1] === 1) connect(2 * cell + 1, 2 * (cell + 1), inf);
+            if (i + 1 < m && grid[i + 1][j] === 1) connect(2 * cell + 1, 2 * (cell + n), inf);
         }
     }
     const source = 0;

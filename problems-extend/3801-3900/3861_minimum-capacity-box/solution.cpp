@@ -4,7 +4,7 @@ using namespace std;
 
 class Solution {
   public:
-    int minimumIndex(vector<int>& capacity, int itemSize) {
+    int minimumIndex(vector<int> &capacity, int itemSize) {
         // The earliest index wins ties, so only a strictly smaller
         // fitting capacity replaces the current best.
         int bestIndex = -1;

@@ -4,13 +4,13 @@
 
 Table `Orders`:
 
-| Column Name | Type    |
-| ----------- | ------- |
-| order_id    | int     |
-| customer_id | int     |
-| order_date  | date    |
-| item_id     | int     |
-| quantity    | int     |
+| Column Name | Type |
+| ----------- | ---- |
+| order_id    | int  |
+| customer_id | int  |
+| order_date  | date |
+| item_id     | int  |
+| quantity    | int  |
 
 `(order_id, item_id)` is the primary key for this table. This table
 contains information on the orders placed. `order_date` is the date

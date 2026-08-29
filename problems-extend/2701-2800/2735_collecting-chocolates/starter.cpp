@@ -1,6 +1,4 @@
 class Solution {
-public:
-    long long minCost(vector<int>& nums, int x) {
-        throw logic_error("TODO");
-    }
+  public:
+    long long minCost(vector<int> &nums, int x) { throw logic_error("TODO"); }
 };

@@ -1,4 +1,5 @@
 class Solution {
+
     public int countSubranges(int[] nums1, int[] nums2) {
         int mod = 1_000_000_007;
         int offset = 10_000;

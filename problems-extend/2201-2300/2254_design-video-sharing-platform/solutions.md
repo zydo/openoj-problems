@@ -4,7 +4,7 @@
 
 The platform is two structures: a hash map from `videoId` to the video's
 state, and a min-heap of the ids that have been deleted and are therefore
-free to reuse. `upload` must return the *smallest* available id, which is
+free to reuse. `upload` must return the _smallest_ available id, which is
 exactly what a min-heap provides: when the heap is non-empty the smallest
 freed id is popped and reused, and when it is empty every live id is still
 a dense prefix `0..n-1`, so the next id is simply the current map size.

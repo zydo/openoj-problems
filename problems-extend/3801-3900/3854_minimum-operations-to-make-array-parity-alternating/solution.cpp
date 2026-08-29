@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> makeParityAlternating(vector<int>& nums) {
+    vector<int> makeParityAlternating(vector<int> &nums) {
         // Bounds stay within ±10^9 + 1, so they fit int, but the width can
         // reach 2 × 10^9 — computed in long long for headroom and returned
         // as int, which it provably fits.

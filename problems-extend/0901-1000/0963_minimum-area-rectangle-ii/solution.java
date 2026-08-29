@@ -47,7 +47,7 @@ class Solution {
                         best2 = area2;
                     }
                 }
-                bucket.add(new long[] {x1, y1, length2});
+                bucket.add(new long[] { x1, y1, length2 });
             }
         }
         // A lattice rectangle's area is always an integer — perpendicular

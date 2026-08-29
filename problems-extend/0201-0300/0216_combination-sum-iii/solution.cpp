@@ -10,7 +10,7 @@ class Solution {
     }
 
   private:
-    void backtrack(int start, int slots, int remaining, vector<int>& current, vector<vector<int>>& result) {
+    void backtrack(int start, int slots, int remaining, vector<int> &current, vector<vector<int>> &result) {
         if (slots == 0) {
             // k digits chosen: valid only when they sum to n exactly.
             if (remaining == 0)

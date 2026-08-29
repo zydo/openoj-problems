@@ -1,6 +1,6 @@
 class HiddenNumber;
 
 class Solution {
-public:
-    int findNumber(HiddenNumber& hiddenNumber);
+  public:
+    int findNumber(HiddenNumber &hiddenNumber);
 };

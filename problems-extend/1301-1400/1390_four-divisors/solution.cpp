@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int sumFourDivisors(vector<int>& nums) {
+    int sumFourDivisors(vector<int> &nums) {
         // Divisors pair up around the square root, so one scan to isqrt(n)
         // sees them all: each hit contributes d and n/d (collapsed to one
         // when d*d == n). Track count and sum together and add the sum only

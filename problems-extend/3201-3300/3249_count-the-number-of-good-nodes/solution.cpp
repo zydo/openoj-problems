@@ -50,7 +50,8 @@ class Solution {
 
         int ans = 0;
         for (bool g : good)
-            if (g) ++ans;
+            if (g)
+                ++ans;
         return ans;
     }
 };

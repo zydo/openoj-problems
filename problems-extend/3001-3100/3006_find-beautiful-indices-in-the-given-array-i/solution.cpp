@@ -8,7 +8,7 @@ class Solution {
         // each a-occurrence binary-search the sorted b-list for the leftmost
         // entry >= i - k; it qualifies iff that entry also satisfies
         // <= i + k. Ascending a-occurrences keep the answer ascending.
-        auto collect = [&](const string& pattern) {
+        auto collect = [&](const string &pattern) {
             vector<int> found;
             size_t start = s.find(pattern);
             while (start != string::npos) {

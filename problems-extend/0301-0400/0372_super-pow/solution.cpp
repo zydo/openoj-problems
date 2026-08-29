@@ -8,7 +8,8 @@ class Solution {
         // base mod 1337, so every product stays below 1337^2 = 1,787,569,
         // well inside 32-bit range.
         int result = 1;
-        for (int digit : b) result = powmod(result, 10) * powmod(a, digit) % 1337;
+        for (int digit : b)
+            result = powmod(result, 10) * powmod(a, digit) % 1337;
         return result;
     }
 
@@ -17,7 +18,8 @@ class Solution {
         int result = 1;
         base %= 1337;
         while (exponent > 0) {
-            if (exponent & 1) result = result * base % 1337;
+            if (exponent & 1)
+                result = result * base % 1337;
             base = base * base % 1337;
             exponent >>= 1;
         }

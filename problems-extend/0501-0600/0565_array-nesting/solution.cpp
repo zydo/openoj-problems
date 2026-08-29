@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int arrayNesting(vector<int>& nums) {
+    int arrayNesting(vector<int> &nums) {
         // A permutation makes i -> nums[i] a graph where every node has
         // exactly one successor and one predecessor, so the array splits
         // into disjoint cycles; s[k] is exactly the cycle containing k, and

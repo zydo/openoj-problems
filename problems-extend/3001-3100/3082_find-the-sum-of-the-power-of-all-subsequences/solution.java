@@ -27,7 +27,7 @@ class Solution {
         long power = 1;
         for (int j = n; j > 0; j--) {
             total = (total + counts[j][k] * power) % MOD;
-            power = power * 2 % MOD;
+            power = (power * 2) % MOD;
         }
         return (int) total;
     }

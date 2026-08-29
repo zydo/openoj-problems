@@ -19,8 +19,7 @@ them with dashes at the end, exactly as the second hint's while loop suggests.
 The join explains the guarantee the statement points out. Every 3-block comes
 from the loop and every block has length 2 or 3, so no block of length 1 is
 ever produced; and since the tail contributes at most two 2-blocks while the
-loop emits only 3-blocks, the whole output holds at most two blocks of length
-2. One pass strips the input, a second pass groups it, and the output string
+loop emits only 3-blocks, the whole output holds at most two blocks of length 2. One pass strips the input, a second pass groups it, and the output string
 is materialized once by the join — the builder appends are amortized constant,
 and the output is within a small constant of the input's length.
 

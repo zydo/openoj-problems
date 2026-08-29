@@ -11,7 +11,8 @@ class Solution {
         int[] deg = new int[n + 1];
         HashMap<Long, Integer> mult = new HashMap<>();
         for (int[] e : edges) {
-            int u = e[0], v = e[1];
+            int u = e[0],
+                v = e[1];
             deg[u]++;
             deg[v]++;
             long key = u < v ? (long) u * (n + 1) + v : (long) v * (n + 1) + u;
@@ -29,7 +30,8 @@ class Solution {
         int idx = 0;
         for (Map.Entry<Long, Integer> en : mult.entrySet()) {
             long key = en.getKey();
-            int a = (int) (key / (n + 1)), b = (int) (key % (n + 1));
+            int a = (int) (key / (n + 1)),
+                b = (int) (key % (n + 1));
             int s = deg[a] + deg[b];
             sVals[idx] = s;
             tVals[idx++] = s - en.getValue();
@@ -41,7 +43,9 @@ class Solution {
             int k = queries[j];
             // Two pointers over the sorted degrees count every unordered
             // pair whose degree sum is strictly above k.
-            int lo = 0, hi = n - 1, total = 0;
+            int lo = 0,
+                hi = n - 1,
+                total = 0;
             while (lo < hi) {
                 if (d[lo] + d[hi] > k) {
                     total += hi - lo;
@@ -58,7 +62,8 @@ class Solution {
 
     // Index of the first element strictly greater than key.
     private static int upperBound(int[] a, int key) {
-        int lo = 0, hi = a.length;
+        int lo = 0,
+            hi = a.length;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (a[mid] <= key) lo = mid + 1;

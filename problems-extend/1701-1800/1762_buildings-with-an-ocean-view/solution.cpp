@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> findBuildings(vector<int>& heights) {
+  public:
+    vector<int> findBuildings(vector<int> &heights) {
         // A building sees the ocean iff it strictly exceeds the max of
         // everything to its right; sweep inland carrying that max.
         vector<int> out;

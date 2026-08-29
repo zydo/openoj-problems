@@ -8,7 +8,9 @@ class Solution {
         // always trails the read frontier and overwriting in place is
         // safe. Only the indexes and the run count live outside the
         // array, and the final write index is the compressed length.
-        int write = 0, read = 0, n = chars.length;
+        int write = 0,
+            read = 0,
+            n = chars.length;
         while (read < n) {
             String ch = chars[read];
             int runEnd = read;

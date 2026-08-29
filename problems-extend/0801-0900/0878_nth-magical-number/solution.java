@@ -11,14 +11,16 @@ class Solution {
         // valid ceiling. At the bound n = 1e9 with a = b = 4e4 the answer
         // reaches 4e13, so the search runs in long; only the value
         // reduced below 1e9 + 7 is narrowed.
-        long g = a, y = b;
+        long g = a,
+            y = b;
         while (y != 0) {
             long t = g % y;
             g = y;
             y = t;
         }
-        long lcm = (long) a / g * b;
-        long lo = 1, hi = (long) n * Math.min(a, b);
+        long lcm = ((long) a / g) * b;
+        long lo = 1,
+            hi = (long) n * Math.min(a, b);
         while (lo < hi) {
             long mid = lo + (hi - lo) / 2;
             if (mid / a + mid / b - mid / lcm >= n) {

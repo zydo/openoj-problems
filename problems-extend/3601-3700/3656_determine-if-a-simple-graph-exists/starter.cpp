@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool simpleGraphExists(vector<int>& degrees) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool simpleGraphExists(vector<int> &degrees) { throw logic_error("TODO"); }
 };

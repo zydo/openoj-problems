@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int minimumPerimeter(long long neededApples) {
-        throw logic_error("TODO");
-    }
+  public:
+    int minimumPerimeter(long long neededApples) { throw logic_error("TODO"); }
 };

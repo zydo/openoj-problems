@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countLetters(string s) {
         int total = 0;
         int run = 0;

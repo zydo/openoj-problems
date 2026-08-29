@@ -31,9 +31,7 @@ class SortCase {
     constructor([arr, source, answer]: unknown[], budget?: any) {
         void budget;
         this.arr = arr as unknown[];
-        this.fn = new Function("return (" + String(source) + ");")() as (
-            value: any
-        ) => number;
+        this.fn = new Function("return (" + String(source) + ");")() as (value: any) => number;
         this.answer = answer as unknown[];
     }
 
@@ -91,9 +89,7 @@ class SortCase {
     check(solution: SortSolver): void {
         const actual = solution.sortBy(this.buildInput(), this.fn);
         this.passed =
-            Array.isArray(actual) &&
-            actual.length === this.answer.length &&
-            this.sameValue(actual, this.answer);
+            Array.isArray(actual) && actual.length === this.answer.length && this.sameValue(actual, this.answer);
     }
 
     // Void-return judging reads this: the wrapper emits it as the case's

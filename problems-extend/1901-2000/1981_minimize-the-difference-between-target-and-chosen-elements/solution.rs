@@ -2,10 +2,7 @@ impl Solution {
     pub fn minimize_the_difference(mat: Vec<Vec<i32>>, target: i32) -> i32 {
         // Reachable sums as a boolean table: sum s is reachable after the
         // rows processed so far. The largest possible total bounds the table.
-        let max_sum = mat
-            .iter()
-            .map(|row| row.iter().max().unwrap())
-            .sum::<i32>() as usize;
+        let max_sum = mat.iter().map(|row| row.iter().max().unwrap()).sum::<i32>() as usize;
         let mut reachable = vec![false; max_sum + 1];
         reachable[0] = true;
         for row in &mat {

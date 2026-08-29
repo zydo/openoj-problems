@@ -47,8 +47,7 @@ function canMerge(trees: (TreeNode | null)[]): TreeNode | null {
         for (const tree of pending) {
             const host = byVal.get(tree.val);
             // A host must be a true leaf other than the final root.
-            if (host !== undefined && host !== root &&
-                host.left === null && host.right === null) {
+            if (host !== undefined && host !== root && host.left === null && host.right === null) {
                 host.left = tree.left;
                 host.right = tree.right;
                 const sub = [tree];

@@ -8,7 +8,8 @@ class Solution {
         int middle = nums[nums.size() / 2];
         int count = 0;
         for (int value : nums)
-            if (value == middle) ++count;
+            if (value == middle)
+                ++count;
         return count == 1;
     }
 };

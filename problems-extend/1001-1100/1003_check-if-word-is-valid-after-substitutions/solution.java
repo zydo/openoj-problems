@@ -10,7 +10,9 @@ class Solution {
         for (int index = 0; index < s.length(); index++) {
             stack.append(s.charAt(index));
             int top = stack.length();
-            if (top >= 3 && stack.charAt(top - 3) == 'a' && stack.charAt(top - 2) == 'b' && stack.charAt(top - 1) == 'c') {
+            if (
+                top >= 3 && stack.charAt(top - 3) == 'a' && stack.charAt(top - 2) == 'b' && stack.charAt(top - 1) == 'c'
+            ) {
                 stack.setLength(top - 3);
             }
         }

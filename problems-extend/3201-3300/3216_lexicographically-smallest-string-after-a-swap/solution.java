@@ -7,8 +7,7 @@ class Solution {
         // earlier position than any later legal swap could.
         char[] chars = s.toCharArray();
         for (int i = 0; i + 1 < chars.length; i++) {
-            if (chars[i] > chars[i + 1]
-                    && (chars[i] - '0') % 2 == (chars[i + 1] - '0') % 2) {
+            if (chars[i] > chars[i + 1] && (chars[i] - '0') % 2 == (chars[i + 1] - '0') % 2) {
                 // At most one swap is allowed, so stop right after it.
                 char tmp = chars[i];
                 chars[i] = chars[i + 1];

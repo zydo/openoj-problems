@@ -1,12 +1,12 @@
 class Solution {
-public:
+  public:
     long long buildAndEvaluate(string s) {
         text = s;
         pos = 0;
         return parseExpr();
     }
 
-private:
+  private:
     string text;
     int pos;
 

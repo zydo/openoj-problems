@@ -18,7 +18,8 @@ class Solution {
             else
                 score += event[0] - '0';
             // Events after the counter reaches 10 are ignored entirely.
-            if (counter == 10) break;
+            if (counter == 10)
+                break;
         }
         return {score, counter};
     }

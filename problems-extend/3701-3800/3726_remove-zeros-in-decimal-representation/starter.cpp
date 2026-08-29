@@ -1,6 +1,4 @@
 class Solution {
-public:
-    long long removeZeros(long long n) {
-        throw logic_error("TODO");
-    }
+  public:
+    long long removeZeros(long long n) { throw logic_error("TODO"); }
 };

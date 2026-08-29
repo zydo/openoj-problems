@@ -3,7 +3,7 @@
 ## Simulate whole days until a day changes nothing
 
 Each day is computed from a snapshot of the previous day: every interior
-element compares itself against its neighbors in the *old* array and moves
+element compares itself against its neighbors in the _old_ array and moves
 one step toward them — up out of a strict valley, down off a strict peak —
 while the endpoints and every element that is not a strict local extremum
 stay put. Computing the whole day from the old array, rather than updating in

@@ -3,8 +3,8 @@
 #include <vector>
 
 class Solution {
-public:
-    bool findSafeWalk(std::vector<std::vector<int>>& grid, int health) {
+  public:
+    bool findSafeWalk(std::vector<std::vector<int>> &grid, int health) {
         // A path's cost is the number of unsafe cells it enters, and both
         // endpoints are entered — so grid[0][0] charges immediately. The
         // walk is safe iff some path costs at most health - 1.

@@ -19,8 +19,10 @@ class Solution {
                 if (node->val > best) {
                     best = node->val;
                 }
-                if (node->left != nullptr) q.push(node->left);
-                if (node->right != nullptr) q.push(node->right);
+                if (node->left != nullptr)
+                    q.push(node->left);
+                if (node->right != nullptr)
+                    q.push(node->right);
             }
             largest.push_back(best);
         }

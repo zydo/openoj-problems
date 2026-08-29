@@ -6,7 +6,7 @@ class Solution {
         vector<int> depths(1, 0);
         int longest = 0;
         int start = 0;
-        while (start <= (int) input.size()) {
+        while (start <= (int)input.size()) {
             int end = input.find('\n', start);
             if (end == string::npos) {
                 end = input.size();
@@ -18,8 +18,8 @@ class Solution {
             string name = input.substr(start + depth, end - start - depth);
             // The path to this entry is its parent's path, one '/' separator,
             // then the name itself (the root level has no separator).
-            int path = (depth > 0 ? depths[depth - 1] + 1 : 0) + (int) name.size();
-            if (depth < (int) depths.size()) {
+            int path = (depth > 0 ? depths[depth - 1] + 1 : 0) + (int)name.size();
+            if (depth < (int)depths.size()) {
                 depths[depth] = path;
             } else {
                 depths.push_back(path);

@@ -1,11 +1,7 @@
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn most_visited_pattern(
-        username: Vec<String>,
-        timestamp: Vec<i32>,
-        website: Vec<String>,
-    ) -> Vec<String> {
+    pub fn most_visited_pattern(username: Vec<String>, timestamp: Vec<i32>, website: Vec<String>) -> Vec<String> {
         let mut per_user: HashMap<&str, Vec<(i32, &str)>> = HashMap::new();
         for ((user, time), site) in username.iter().zip(timestamp.iter()).zip(website.iter()) {
             per_user.entry(user.as_str()).or_default().push((*time, site.as_str()));

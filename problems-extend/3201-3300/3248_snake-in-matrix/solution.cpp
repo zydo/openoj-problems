@@ -12,7 +12,7 @@ class Solution {
                 ++row;
             } else if (command == "LEFT") {
                 --col;
-            } else {  // "RIGHT"
+            } else { // "RIGHT"
                 ++col;
             }
         }

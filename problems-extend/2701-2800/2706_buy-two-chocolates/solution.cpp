@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    int buyChoco(vector<int>& prices, int money) {
+    int buyChoco(vector<int> &prices, int money) {
         // The cheapest pair is the two smallest prices; one pass tracks
         // them without sorting.
         int first = 101;

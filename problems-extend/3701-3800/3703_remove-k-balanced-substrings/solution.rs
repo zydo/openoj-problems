@@ -10,12 +10,8 @@ impl Solution {
             }
             // A ')' run sitting on a '(' run is a live junction: cancel
             // min(open / k, close / k) whole blocks of k from both sides.
-            while stack.len() > 1
-                && stack[stack.len() - 1].0 == b')'
-                && stack[stack.len() - 2].0 == b'('
-            {
-                let blocks =
-                    (stack[stack.len() - 2].1 / k).min(stack[stack.len() - 1].1 / k);
+            while stack.len() > 1 && stack[stack.len() - 1].0 == b')' && stack[stack.len() - 2].0 == b'(' {
+                let blocks = (stack[stack.len() - 2].1 / k).min(stack[stack.len() - 1].1 / k);
                 if blocks == 0 {
                     break;
                 }

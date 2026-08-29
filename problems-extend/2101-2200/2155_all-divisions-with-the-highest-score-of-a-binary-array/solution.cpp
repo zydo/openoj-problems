@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> maxScoreIndices(vector<int>& nums) {
+    vector<int> maxScoreIndices(vector<int> &nums) {
         // score(i) = zeros in nums[:i] + ones in nums[i:]. Both addends stay
         // as running counters — ones on the right is total_ones minus the
         // ones already passed — so each of the n + 1 division points costs

@@ -4,12 +4,12 @@
 
 Table: `Customer`
 
-| Column Name | Type |
-| ----------- | ---- |
-| customer_id | int |
-| name | varchar |
-| visited_on | date |
-| amount | int |
+| Column Name | Type    |
+| ----------- | ------- |
+| customer_id | int     |
+| name        | varchar |
+| visited_on  | date    |
+| amount      | int     |
 
 In SQL,(customer_id, visited_on) is the primary key for this table.
 This table contains data about customer transactions in a restaurant.

@@ -20,7 +20,8 @@ class Solution {
         while (!heap.empty()) {
             auto [d, u] = heap.top();
             heap.pop();
-            if (d > dist[u]) continue;
+            if (d > dist[u])
+                continue;
             for (auto [v, w] : adj[u]) {
                 if (d + w < dist[v]) {
                     dist[v] = d + w;
@@ -34,10 +35,12 @@ class Solution {
         vector<long long> count(n + 1, 0);
         count[n] = 1;
         for (int u : order) {
-            if (u == n) continue;
+            if (u == n)
+                continue;
             long long total = 0;
             for (auto [v, w] : adj[u]) {
-                if (dist[u] > dist[v]) total += count[v];
+                if (dist[u] > dist[v])
+                    total += count[v];
             }
             count[u] = total % MOD;
         }

@@ -1,7 +1,8 @@
 class Solution {
+
     public long maxScore(int[] nums, int x) {
         final long unseen = -(1L << 60);
-        long[] best = {unseen, unseen};
+        long[] best = { unseen, unseen };
         best[nums[0] % 2] = nums[0];
 
         for (int index = 1; index < nums.length; ++index) {

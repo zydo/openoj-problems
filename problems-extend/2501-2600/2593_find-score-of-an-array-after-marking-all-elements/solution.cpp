@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    long long findScore(std::vector<int>& nums) {
+    long long findScore(std::vector<int> &nums) {
         // Visit candidates in (value, index) order once; the first
         // not-yet-marked visit of each position is exactly the statement's
         // "smallest unmarked, smallest index" pick, and its neighborhood is
@@ -17,7 +17,8 @@ class Solution {
             order[i] = i;
         }
         std::sort(order.begin(), order.end(), [&](int a, int b) {
-            if (nums[a] != nums[b]) return nums[a] < nums[b];
+            if (nums[a] != nums[b])
+                return nums[a] < nums[b];
             return a < b;
         });
         std::vector<char> marked(n, 0);

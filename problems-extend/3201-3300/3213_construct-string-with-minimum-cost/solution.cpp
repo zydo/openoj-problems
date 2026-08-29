@@ -6,7 +6,7 @@
 
 class Solution {
   public:
-    int minimumCost(string target, vector<string>& words, vector<int>& costs) {
+    int minimumCost(string target, vector<string> &words, vector<int> &costs) {
         // Reverse DP over suffixes: dp[i] is the minimum cost to assemble
         // target[i:], dp[n] is 0, and each position extends every word that
         // matches its next characters. Duplicate words collapse to their
@@ -27,8 +27,8 @@ class Solution {
         int n = (int)target.size();
         unordered_map<int, unordered_set<unsigned long long>> buckets;
         int maxLen = 0;
-        for (const auto& entry : best) {
-            const string& word = entry.first;
+        for (const auto &entry : best) {
+            const string &word = entry.first;
             unsigned long long h = 0;
             for (char ch : word) {
                 h = h * 131ULL + (unsigned char)ch;

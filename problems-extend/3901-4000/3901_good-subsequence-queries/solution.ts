@@ -65,8 +65,7 @@ function countGoodSubseq(nums: number[], p: number, queries: number[][]): number
         }
         if (
             active > 0 &&
-            ((active < n && histogram[active] === 0) ||
-                (active === n && histogram[n] === 0 && forbiddenDistinct < n))
+            ((active < n && histogram[active] === 0) || (active === n && histogram[n] === 0 && forbiddenDistinct < n))
         ) {
             answer += 1;
         }

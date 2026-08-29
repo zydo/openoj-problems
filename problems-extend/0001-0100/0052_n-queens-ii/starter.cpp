@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int totalNQueens(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int totalNQueens(int n) { throw logic_error("TODO"); }
 };

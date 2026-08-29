@@ -10,9 +10,7 @@ class LogSystem {
   public:
     LogSystem() {}
 
-    void put(int id, string timestamp) {
-        logs.push_back({id, timestamp});
-    }
+    void put(int id, string timestamp) { logs.push_back({id, timestamp}); }
 
     vector<int> retrieve(string start, string end, string granularity) {
         int width = prefix_width(granularity);

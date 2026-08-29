@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool areAlmostEqual(string s1, string s2) {
         // One swap repairs exactly two positions, and only when their
         // characters are crossed between the two strings.

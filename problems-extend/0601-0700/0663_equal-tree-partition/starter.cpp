@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool checkEqualTree(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool checkEqualTree(TreeNode *root) { throw logic_error("TODO"); }
 };

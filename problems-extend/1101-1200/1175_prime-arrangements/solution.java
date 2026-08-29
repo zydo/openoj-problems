@@ -1,4 +1,5 @@
 class Solution {
+
     public int numPrimeArrangements(int n) {
         final long MOD = 1_000_000_007L;
 
@@ -27,10 +28,10 @@ class Solution {
         // the composites) permutes over the rest. Independent choices.
         long result = 1;
         for (int k = 2; k <= primes; k++) {
-            result = result * k % MOD;
+            result = (result * k) % MOD;
         }
         for (int k = 2; k <= n - primes; k++) {
-            result = result * k % MOD;
+            result = (result * k) % MOD;
         }
         return (int) result;
     }

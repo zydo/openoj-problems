@@ -1,5 +1,5 @@
 class Bank {
-public:
+  public:
     Bank(vector<long long> balance) : balance(move(balance)) {}
 
     bool transfer(int account1, int account2, long long money) {
@@ -27,10 +27,8 @@ public:
         return true;
     }
 
-private:
+  private:
     vector<long long> balance;
 
-    bool valid(int account) const {
-        return account >= 1 && account <= static_cast<int>(balance.size());
-    }
+    bool valid(int account) const { return account >= 1 && account <= static_cast<int>(balance.size()); }
 };

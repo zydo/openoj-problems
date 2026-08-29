@@ -14,7 +14,11 @@ impl LockingTree {
         for node in 1..parent.len() {
             children[parent[node] as usize].push(node as i32);
         }
-        LockingTree { parent, owner, children }
+        LockingTree {
+            parent,
+            owner,
+            children,
+        }
     }
 
     pub fn lock(&mut self, num: i32, user: i32) -> bool {

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countQuadruples(string firstString, string secondString) {
         // Only single-character pairs can be optimal: a longer match
         // shrinks to its two leading characters (same a, smaller j), and

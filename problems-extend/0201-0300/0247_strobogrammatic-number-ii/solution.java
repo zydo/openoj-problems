@@ -22,8 +22,8 @@ class Solution {
         // "00" would put a leading zero on the whole number, so it may
         // wrap only inner layers, never the outermost.
         String[] pairs = outer
-            ? new String[] {"11", "69", "88", "96"}
-            : new String[] {"00", "11", "69", "88", "96"};
+            ? new String[] { "11", "69", "88", "96" }
+            : new String[] { "00", "11", "69", "88", "96" };
         List<String> inners = build(length - 2, false);
         List<String> results = new ArrayList<>();
         // Pairs ascend by their left digit and every wrapped result has

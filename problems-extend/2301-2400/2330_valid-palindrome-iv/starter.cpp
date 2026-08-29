@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool makePalindrome(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool makePalindrome(string s) { throw logic_error("TODO"); }
 };

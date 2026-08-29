@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Solution {
+
     public int minimumCardPickup(int[] cards) {
         Map<Integer, Integer> last = new HashMap<>();
         int best = Integer.MAX_VALUE;

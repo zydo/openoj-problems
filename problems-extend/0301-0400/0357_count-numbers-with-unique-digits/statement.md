@@ -51,4 +51,3 @@ Let f(k) = count of numbers with unique digits with length equals to k.
 
 f(1) = 10, ..., `f(k) = 9 * 9 * 8 * ... (9 - k + 2)` [The first factor is 9
 because a number cannot start with 0].
-

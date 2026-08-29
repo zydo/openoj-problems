@@ -7,13 +7,13 @@ matter how units travel, so the answer is `-1`; otherwise a feasible plan
 always exists. Model a plan as a net flow around the ring: edge `k` carries
 `f_k` signed units from person `k` to person `k+1`, and a schedule with `m`
 moves exists exactly when every person's final balance `balance[k] + f[k-1]
-- f[k]` is non-negative, with cost `sum |f_k|`. Cut the wrap edge between
-person `n-1` and person `0` and let `t` be its signed flow. Substituting
-`u_k = f_k - t` makes every constraint independent of `t`, leaving an inner
-problem on a path — minimize `sum |u_k + t|` subject to `u_0 <= balance[0]`,
+
+- f[k]`is non-negative, with cost`sum |f_k|`. Cut the wrap edge between
+person `n-1`and person`0`and let`t`be its signed flow. Substituting`u_k = f_k - t`makes every constraint independent of`t`, leaving an inner
+problem on a path — minimize `sum |u_k + t|`subject to`u_0 <= balance[0]`,
 `u_k <= u_{k-1} + balance[k]`, and a terminal lower bound — whose value
 `G(t)` is computed by a single left-to-right sweep that keeps the convex
-suffix-min envelope of the DP as a heap of breakpoints (slope trick).
+  suffix-min envelope of the DP as a heap of breakpoints (slope trick).
 
 The sweep maintains a constant plus breakpoints of the rising flank; each
 step shifts breakpoints by `balance[k]`, then folds in the new `|u + t|`

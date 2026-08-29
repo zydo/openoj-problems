@@ -18,11 +18,11 @@ class Solution {
             }
             return x;
         }
-        for (int lo = 10;; lo *= 10) {
+        for (int lo = 10; ; lo *= 10) {
             for (int half = lo; half < lo * 10; half++) {
                 int x = half;
                 for (int t = half / 10; t > 0; t /= 10) {
-                    x = x * 10 + t % 10;
+                    x = x * 10 + (t % 10);
                 }
                 if (x >= n && isPrime(x)) {
                     return x;

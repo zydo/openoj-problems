@@ -8,7 +8,8 @@ class Solution {
         // balance counts '(' minus ')' along the path. A prefix whose balance
         // ever goes negative can never close into a valid string, so those
         // balances are dropped as each move is extended.
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         int start = grid[0][0].equals("(") ? 1 : -1;
         if (start < 0) return false;
         Set<Integer>[][] dp = new HashSet[m][n];

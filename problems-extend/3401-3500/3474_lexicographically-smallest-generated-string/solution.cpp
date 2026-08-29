@@ -11,7 +11,8 @@ class Solution {
             if (str1[i] == 'T') {
                 for (int j = 0; j < m; ++j) {
                     int p = i + j;
-                    if (word[p] != '\0' && word[p] != str2[j]) return "";
+                    if (word[p] != '\0' && word[p] != str2[j])
+                        return "";
                     word[p] = str2[j];
                     covered[p] = 1;
                 }
@@ -19,7 +20,8 @@ class Solution {
         }
         // Every other position takes 'a', the smallest character available.
         for (int p = 0; p < total; ++p) {
-            if (word[p] == '\0') word[p] = 'a';
+            if (word[p] == '\0')
+                word[p] = 'a';
         }
         // Repair 'F' windows left to right: one that accidentally equals
         // str2 must differ somewhere, and bumping its rightmost free slot
@@ -27,8 +29,10 @@ class Solution {
         for (int i = 0; i < n; ++i) {
             if (str1[i] == 'F' && word.compare(i, m, str2) == 0) {
                 int j = i + m - 1;
-                while (j >= i && covered[j]) --j;
-                if (j < i) return ""; // fully pinned window that still matches
+                while (j >= i && covered[j])
+                    --j;
+                if (j < i)
+                    return ""; // fully pinned window that still matches
                 word[j] = 'b';
             }
         }

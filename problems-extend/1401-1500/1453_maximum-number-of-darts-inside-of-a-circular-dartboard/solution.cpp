@@ -3,14 +3,14 @@
 
 class Solution {
   public:
-    int numPoints(std::vector<std::vector<int>>& darts, int r) {
+    int numPoints(std::vector<std::vector<int>> &darts, int r) {
         int n = (int)darts.size();
         int best = 1;
         double r2 = (double)r * r;
         double eps = 1e-7;
         auto countAt = [&](double cx, double cy) {
             int count = 0;
-            for (const std::vector<int>& dart : darts) {
+            for (const std::vector<int> &dart : darts) {
                 double dx = dart[0] - cx;
                 double dy = dart[1] - cy;
                 if (dx * dx + dy * dy <= r2 + eps) {

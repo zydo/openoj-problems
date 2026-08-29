@@ -9,8 +9,7 @@ class Solution {
         int count = 0;
         for (int i = left; i <= right; ++i) {
             String word = words[i];
-            if (vowels.contains(word.charAt(0))
-                    && vowels.contains(word.charAt(word.length() - 1))) {
+            if (vowels.contains(word.charAt(0)) && vowels.contains(word.charAt(word.length() - 1))) {
                 count++;
             }
         }

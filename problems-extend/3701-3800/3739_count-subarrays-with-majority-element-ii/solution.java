@@ -20,18 +20,15 @@ class Solution {
         int size = 2 * n + 1;
         long[] tree = new long[size + 1];
         // Seed the tree with pref[0] = 0, stored at index n + 1.
-        for (int index = n + 1; index <= size; index += index & -index)
-            tree[index]++;
+        for (int index = n + 1; index <= size; index += index & -index) tree[index]++;
         long answer = 0;
         int pref = 0;
         for (int x : nums) {
             pref += x == target ? 1 : -1;
             // Earlier prefixes strictly below pref sit at indices <= pref+n.
-            for (int index = pref + n; index > 0; index &= index - 1)
-                answer += tree[index];
+            for (int index = pref + n; index > 0; index &= index - 1) answer += tree[index];
             // Insert pref at index pref + n + 1.
-            for (int index = pref + n + 1; index <= size; index += index & -index)
-                tree[index]++;
+            for (int index = pref + n + 1; index <= size; index += index & -index) tree[index]++;
         }
         return answer;
     }

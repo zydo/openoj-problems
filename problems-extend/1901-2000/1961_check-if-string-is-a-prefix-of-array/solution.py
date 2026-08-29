@@ -8,7 +8,7 @@ class Solution:
         # consumed by exact word matches it must be one.
         i = 0
         for word in words:
-            if s[i:i + len(word)] != word:
+            if s[i : i + len(word)] != word:
                 return False
             i += len(word)
             if i == len(s):

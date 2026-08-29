@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string kthCharacter(int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    string kthCharacter(int k) { throw logic_error("TODO"); }
 };

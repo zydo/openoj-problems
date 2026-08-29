@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Solution {
+
     public double frogPosition(int n, int[][] edges, int t, int target) {
         if (n == 1) return 1.0;
         List<List<Integer>> neighbors = new ArrayList<>();

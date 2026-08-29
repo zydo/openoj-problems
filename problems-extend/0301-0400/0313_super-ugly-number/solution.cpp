@@ -13,13 +13,16 @@ class Solution {
         vector<long long> candidate(k);
         vector<int> index(k, 0);
         ugly[0] = 1;
-        for (int p = 0; p < k; ++p) candidate[p] = primes[p];
+        for (int p = 0; p < k; ++p)
+            candidate[p] = primes[p];
         for (int i = 1; i < n; ++i) {
             long long next = candidate[0];
-            for (long long value : candidate) next = min(next, value);
+            for (long long value : candidate)
+                next = min(next, value);
             ugly[i] = next;
             for (int p = 0; p < k; ++p) {
-                if (candidate[p] == next) candidate[p] = (long long)primes[p] * ugly[++index[p]];
+                if (candidate[p] == next)
+                    candidate[p] = (long long)primes[p] * ugly[++index[p]];
             }
         }
         return (int)ugly[n - 1];

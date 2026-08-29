@@ -14,9 +14,7 @@ class Solution:
             size = len(word)
             node = 0
             for j in range(size):
-                key = node * 676 + (
-                    (ord(word[j]) - 97) * 26 + (ord(word[size - 1 - j]) - 97)
-                )
+                key = node * 676 + ((ord(word[j]) - 97) * 26 + (ord(word[size - 1 - j]) - 97))
                 nxt = edges.get(key)
                 if nxt is None:
                     nxt = len(counts)

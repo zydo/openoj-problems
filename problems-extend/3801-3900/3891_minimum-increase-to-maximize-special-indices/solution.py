@@ -20,15 +20,11 @@ class Solution:
             # Picking i requires the previous position to be unpicked.
             cur_picked = (not_picked[0] + 1, not_picked[1] + cost)
             # Skipping i keeps whichever previous state is better.
-            if picked[0] > not_picked[0] or (
-                picked[0] == not_picked[0] and picked[1] < not_picked[1]
-            ):
+            if picked[0] > not_picked[0] or (picked[0] == not_picked[0] and picked[1] < not_picked[1]):
                 cur_not_picked = picked
             else:
                 cur_not_picked = not_picked
             not_picked, picked = cur_not_picked, cur_picked
-        if picked[0] > not_picked[0] or (
-            picked[0] == not_picked[0] and picked[1] < not_picked[1]
-        ):
+        if picked[0] > not_picked[0] or (picked[0] == not_picked[0] and picked[1] < not_picked[1]):
             return picked[1]
         return not_picked[1]

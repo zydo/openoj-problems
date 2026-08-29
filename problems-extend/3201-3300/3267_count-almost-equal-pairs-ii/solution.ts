@@ -17,16 +17,15 @@ function countPairs(nums: number[]): number {
     for (const x of nums) widest = Math.max(widest, x);
     const w: number = String(widest).length;
     const pairs: number[][] = [];
-    for (let i = 0; i < w; i++)
-        for (let j = i + 1; j < w; j++) pairs.push([i, j]);
+    for (let i = 0; i < w; i++) for (let j = i + 1; j < w; j++) pairs.push([i, j]);
     const seen = new Map<number, number>();
     let ans = 0;
     for (const x of nums) {
         const s = String(x);
-        const d: string[] = new Array(w).fill('0');
+        const d: string[] = new Array(w).fill("0");
         for (let k = 0; k < s.length; k++) d[w - s.length + k] = s[k];
         const states = new Set<number>();
-        const value = (): number => Number(d.join(''));
+        const value = (): number => Number(d.join(""));
         states.add(value());
         for (const [i, j] of pairs) {
             [d[i], d[j]] = [d[j], d[i]];

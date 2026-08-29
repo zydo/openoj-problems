@@ -63,10 +63,7 @@ var lexSmallest = function (s) {
             }
             const [a1, a2] = subT(n - k, k);
             const [c1, c2] = subS(k, length - k);
-            return [
-                (mul(a1, pw1[length - k], M1) + c1) % M1,
-                (mul(a2, pw2[length - k], M2) + c2) % M2,
-            ];
+            return [(mul(a1, pw1[length - k], M1) + c1) % M1, (mul(a2, pw2[length - k], M2) + c2) % M2];
         }
         const head = n - k;
         if (length <= head) {
@@ -74,10 +71,7 @@ var lexSmallest = function (s) {
         }
         const [a1, a2] = subS(0, head);
         const [c1, c2] = subT(0, length - head);
-        return [
-            (mul(a1, pw1[length - head], M1) + c1) % M1,
-            (mul(a2, pw2[length - head], M2) + c2) % M2,
-        ];
+        return [(mul(a1, pw1[length - head], M1) + c1) % M1, (mul(a2, pw2[length - head], M2) + c2) % M2];
     };
     const charAt = (kind, k, i) => {
         // Kind 0 walks the reversed prefix backwards through s; past the

@@ -16,6 +16,6 @@ class Solution {
             counts.merge(shifted, 1L, Long::sum);
         }
         long n = nums.length;
-        return n * (n - 1) / 2 - good;
+        return (n * (n - 1)) / 2 - good;
     }
 }

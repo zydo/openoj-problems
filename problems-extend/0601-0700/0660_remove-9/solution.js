@@ -12,7 +12,7 @@ var newInteger = function (n) {
     let answer = 0;
     let place = 1;
     while (remaining > 0) {
-        answer += remaining % 9 * place;
+        answer += (remaining % 9) * place;
         remaining = Math.floor(remaining / 9);
         place *= 10;
     }

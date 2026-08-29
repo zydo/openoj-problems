@@ -39,7 +39,7 @@ class Solution {
     private static int mask(int[] cells) {
         int bits = 0;
         for (int value : cells) {
-            bits = bits << 1 | value;
+            bits = (bits << 1) | value;
         }
         return bits;
     }

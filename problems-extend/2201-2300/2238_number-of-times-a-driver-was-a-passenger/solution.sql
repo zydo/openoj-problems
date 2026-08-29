@@ -3,7 +3,6 @@ SELECT
   COUNT(DISTINCT p.ride_id) AS cnt
 FROM
   Rides r
-  LEFT JOIN Rides p
-  ON r.driver_id = p.passenger_id
+  LEFT JOIN Rides p ON r.driver_id = p.passenger_id
 GROUP BY
   r.driver_id

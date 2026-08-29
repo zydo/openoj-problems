@@ -8,8 +8,7 @@ class Solution:
         # query [l, r] costs one subtraction. Counts stay below words
         # length <= 10^5, well inside 32 bits.
         vowels = frozenset("aeiou")
-        marks = [1 if w[0] in vowels and w[-1] in vowels else 0
-                 for w in words]
+        marks = [1 if w[0] in vowels and w[-1] in vowels else 0 for w in words]
         prefix = [0]
         for flag in marks:
             prefix.append(prefix[-1] + flag)

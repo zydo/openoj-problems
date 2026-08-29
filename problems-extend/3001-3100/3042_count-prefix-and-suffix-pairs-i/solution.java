@@ -1,4 +1,5 @@
 class Solution {
+
     public int countPrefixSuffixPairs(String[] words) {
         int total = 0;
         for (int i = 0; i < words.length; ++i) {

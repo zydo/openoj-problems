@@ -14,10 +14,11 @@ class Solution {
             }
             return result;
         }
-        PriorityQueue<long[]> heap = new PriorityQueue<>(
-            (a, b) -> a[0] != b[0] ? Long.compare(a[0], b[0]) : Long.compare(a[1], b[1]));
+        PriorityQueue<long[]> heap = new PriorityQueue<>((a, b) ->
+            a[0] != b[0] ? Long.compare(a[0], b[0]) : Long.compare(a[1], b[1])
+        );
         for (int i = 0; i < n; i++) {
-            heap.offer(new long[] {nums[i], i});
+            heap.offer(new long[] { nums[i], i });
         }
         long top = nums[0];
         for (int value : nums) {
@@ -40,14 +41,13 @@ class Solution {
             // so the leftover k operations split into q full rounds plus one
             // extra exponent for the first rem entries of the sorted order.
             long[][] ordered = heap.toArray(new long[0][]);
-            Arrays.sort(ordered,
-                (a, b) -> a[0] != b[0] ? Long.compare(a[0], b[0]) : Long.compare(a[1], b[1]));
+            Arrays.sort(ordered, (a, b) -> a[0] != b[0] ? Long.compare(a[0], b[0]) : Long.compare(a[1], b[1]));
             long q = k / n;
             int rem = (int) (k % n);
             for (int pos = 0; pos < n; pos++) {
                 long exponent = q + (pos < rem ? 1 : 0);
-                result[(int) ordered[pos][1]] =
-                    (int) (ordered[pos][0] % MOD * powMod(multiplier, exponent, MOD) % MOD);
+                result[(int) ordered[pos][1]] = (int) (((ordered[pos][0] % MOD) * powMod(multiplier, exponent, MOD)) %
+                    MOD);
             }
         } else {
             for (long[] entry : heap) {
@@ -62,9 +62,9 @@ class Solution {
         base %= mod;
         while (exponent > 0) {
             if ((exponent & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             exponent >>= 1;
         }
         return result;

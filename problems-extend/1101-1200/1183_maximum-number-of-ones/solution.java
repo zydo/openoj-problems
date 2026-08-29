@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
 class Solution {
-    public int maximumNumberOfOnes(int width, int height, int sideLength,
-                                   int maxOnes) {
+
+    public int maximumNumberOfOnes(int width, int height, int sideLength, int maxOnes) {
         // Each residue class (r, c) mod sideLength appears in every window
         // exactly once, so the constraint binds classes. Count how many
         // grid cells fall into each class: full blocks plus the leftover

@@ -6,7 +6,10 @@ class Solution {
         // carries a '+', so that final '+' is the one true seam.
         int[] p = parts(num1);
         int[] q = parts(num2);
-        int a = p[0], b = p[1], c = q[0], d = q[1];
+        int a = p[0],
+            b = p[1],
+            c = q[0],
+            d = q[1];
         // Multiply: (a + bi)(c + di) = (ac - bd) + (ad + bc)i.
         int real = a * c - b * d;
         int imag = a * d + b * c;

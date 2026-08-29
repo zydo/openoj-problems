@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long minimumTime(vector<int>& d, vector<int>& r) {
+    long long minimumTime(vector<int> &d, vector<int> &r) {
         // Least common multiple of the two recharge periods; dividing
         // before multiplying keeps the intermediate small.
         long long period = lcm(r[0], r[1]);
@@ -20,8 +20,7 @@ class Solution {
     }
 
   private:
-    bool fits(long long t, long long d0, long long d1, long long p1, long long p2,
-              long long period) {
+    bool fits(long long t, long long d0, long long d1, long long p1, long long p2, long long period) {
         // Hours each drone can work in: all t hours minus its recharge
         // hours (the multiples of its own period).
         long long c1 = t - t / p1;

@@ -23,9 +23,9 @@ value keeps the stack-below parent it received when pushed.
 
 Depths then need no tree at all. A parent is always inserted before its
 children, so walking `order` once and setting `depth[v] = depth[parent[v]]
-+ 1` (root at 1) sees every parent's depth before it is read, and the
-answer is the maximum. Both sweeps are flat loops — no recursion — so the
-`10⁵`-node chains the constraints allow cost `O(n)` time and `O(n)` space
-with no stack-limit risk in any language.
+
+- 1`(root at 1) sees every parent's depth before it is read, and the
+answer is the maximum. Both sweeps are flat loops — no recursion — so the`10⁵`-node chains the constraints allow cost `O(n)`time and`O(n)` space
+  with no stack-limit risk in any language.
 
 **Complexity:** `O(n)` time, `O(n)` space.

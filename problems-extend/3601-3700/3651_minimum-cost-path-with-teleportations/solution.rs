@@ -37,9 +37,7 @@ impl Solution {
             let mut run = inf;
             let mut p = 0usize;
             for &(i, j) in &cells {
-                while p < cells.len()
-                    && grid[cells[p].0][cells[p].1] >= grid[i][j]
-                {
+                while p < cells.len() && grid[cells[p].0][cells[p].1] >= grid[i][j] {
                     let (si, sj) = cells[p];
                     if d[si][sj] < run {
                         run = d[si][sj];

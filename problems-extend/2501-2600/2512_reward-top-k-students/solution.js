@@ -6,8 +6,7 @@
  * @param {number} k
  * @return {number[]}
  */
-var topStudents = function (positive_feedback, negative_feedback, report,
-    student_id, k) {
+var topStudents = function (positive_feedback, negative_feedback, report, student_id, k) {
     // Membership sets make each report token O(1) to classify: +3 for a
     // positive word, -1 for a negative one, everything else free.
     // Sorting the (-points, id) pairs ascending is exactly the asked

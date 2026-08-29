@@ -25,7 +25,11 @@ impl Solution {
                             continue;
                         }
                         let (nr, nc) = (r + dr[d], c + dc[d]);
-                        let nxt = if in_b(nr, nc) { s[1 - j][d][nr as usize][nc as usize] } else { 0 };
+                        let nxt = if in_b(nr, nc) {
+                            s[1 - j][d][nr as usize][nc as usize]
+                        } else {
+                            0
+                        };
                         s[j][d][r as usize][c as usize] = 1 + nxt;
                     }
                 }
@@ -45,7 +49,11 @@ impl Solution {
                         }
                         let (nr, nc) = (r + dr[d], c + dc[d]);
                         let (tr, tc) = (r + dr[cw], c + dc[cw]);
-                        let mut best = if in_b(nr, nc) { mm[1 - j][d][nr as usize][nc as usize] } else { 0 };
+                        let mut best = if in_b(nr, nc) {
+                            mm[1 - j][d][nr as usize][nc as usize]
+                        } else {
+                            0
+                        };
                         if in_b(tr, tc) {
                             best = best.max(s[1 - j][cw][tr as usize][tc as usize]);
                         }

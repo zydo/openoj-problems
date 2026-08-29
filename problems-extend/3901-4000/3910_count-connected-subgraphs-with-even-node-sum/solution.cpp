@@ -18,7 +18,8 @@ class Solution {
                 parity ^= nums[__builtin_ctz(bit)];
                 bits ^= bit;
             }
-            if (parity) continue;
+            if (parity)
+                continue;
 
             int reached = mask & -mask;
             int frontier = reached;
@@ -33,7 +34,8 @@ class Solution {
                 frontier = neighbors & mask & ~reached;
                 reached |= frontier;
             }
-            if (reached == mask) ++answer;
+            if (reached == mask)
+                ++answer;
         }
         return answer;
     }

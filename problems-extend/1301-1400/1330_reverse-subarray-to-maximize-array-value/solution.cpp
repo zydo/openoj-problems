@@ -10,8 +10,8 @@ class Solution {
             total += abs(nums[i] - nums[i + 1]);
         }
         long long bestGain = 0;
-        long long big = LLONG_MIN;  // max over adjacent-pair minima
-        long long small = LLONG_MAX;  // min over adjacent-pair maxima
+        long long big = LLONG_MIN;   // max over adjacent-pair minima
+        long long small = LLONG_MAX; // min over adjacent-pair maxima
         for (int i = 0; i < n - 1; ++i) {
             int a = nums[i];
             int b = nums[i + 1];

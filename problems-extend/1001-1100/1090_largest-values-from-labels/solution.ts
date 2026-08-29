@@ -1,9 +1,4 @@
-function largestValsFromLabels(
-    values: number[],
-    labels: number[],
-    numWanted: number,
-    useLimit: number
-): number {
+function largestValsFromLabels(values: number[], labels: number[], numWanted: number, useLimit: number): number {
     // Greedy: sort items by value descending and take each one while both
     // the per-label cap and the total count allow it.
     const n = values.length;

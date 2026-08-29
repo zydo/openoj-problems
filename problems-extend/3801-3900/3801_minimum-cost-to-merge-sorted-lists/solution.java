@@ -37,7 +37,7 @@ class Solution {
                 int mid = (lo + hi) >>> 1;
                 int cnt = 0;
                 for (int i = 0; i < n; i++) {
-                    if ((mask >> i & 1) == 1) {
+                    if (((mask >> i) & 1) == 1) {
                         cnt += upperBound(lists[i], vals[mid]);
                     }
                 }

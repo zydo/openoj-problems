@@ -15,7 +15,8 @@ class Solution {
         // total; the very first copy needs no attaching operator, so one is
         // deducted at the end. The sentinel marking the carry state
         // unreachable before the first digit keeps the two totals in long.
-        long cost0 = 0, cost1 = 1L << 60;
+        long cost0 = 0,
+            cost1 = 1L << 60;
         int i = 0;
         long t = target;
         while (t > 0) {

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string removeTrailingZeros(string num) {
         // Walk backward from the end while the current digit is '0'; the
         // skipped suffix is exactly the trailing zeros. num represents a

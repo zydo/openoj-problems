@@ -20,9 +20,7 @@ function minOperations(nums: number[], k: number, queries: number[][]): number[]
         const mid = (lo + hi) >> 1;
         build(2 * node, lo, mid);
         build(2 * node + 1, mid + 1, hi);
-        const merged = [...treeVals[2 * node], ...treeVals[2 * node + 1]].sort(
-            (a, b) => a - b
-        );
+        const merged = [...treeVals[2 * node], ...treeVals[2 * node + 1]].sort((a, b) => a - b);
         const pref = [0];
         for (const value of merged) {
             pref.push(pref[pref.length - 1] + value);

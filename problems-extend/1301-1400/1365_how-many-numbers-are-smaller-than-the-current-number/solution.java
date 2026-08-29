@@ -1,4 +1,5 @@
 class SmallerNumbersThanCurrent {
+
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] counts = new int[101];
         for (int v : nums) counts[v] += 1;

@@ -8,7 +8,7 @@ func maximumNumberOfOnes(width int, height int, sideLength int, maxOnes int) int
 	counts := make([]int, sideLength*sideLength)
 	for r := 0; r < sideLength; r++ {
 		for c := 0; c < sideLength; c++ {
-			rows := height/sideLength
+			rows := height / sideLength
 			if height%sideLength > r {
 				rows++
 			}

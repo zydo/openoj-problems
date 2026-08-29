@@ -5,8 +5,7 @@
 // no value compared by magnitude.
 impl Solution {
     pub fn sort_array_by_parity(nums: Vec<i32>) -> Vec<i32> {
-        let (evens, odds): (Vec<i32>, Vec<i32>) =
-            nums.into_iter().partition(|&value| value % 2 == 0);
+        let (evens, odds): (Vec<i32>, Vec<i32>) = nums.into_iter().partition(|&value| value % 2 == 0);
         evens.into_iter().chain(odds).collect()
     }
 }

@@ -8,9 +8,8 @@ class Solution {
         int best = 0;
         for (int r = 0; r + 2 < (int)grid.size(); r++) {
             for (int c = 0; c + 2 < (int)grid[0].size(); c++) {
-                int current = grid[r][c] + grid[r][c + 1] + grid[r][c + 2]
-                        + grid[r + 1][c + 1]
-                        + grid[r + 2][c] + grid[r + 2][c + 1] + grid[r + 2][c + 2];
+                int current = grid[r][c] + grid[r][c + 1] + grid[r][c + 2] + grid[r + 1][c + 1] + grid[r + 2][c] +
+                              grid[r + 2][c + 1] + grid[r + 2][c + 2];
                 if (current > best) {
                     best = current;
                 }

@@ -46,11 +46,7 @@ class EmitterCase {
                 const [eventName, source] = args;
                 const callback = new Function("return (" + source + ");")();
                 const handle = emitter.subscribe(eventName, callback);
-                if (
-                    handle === null ||
-                    typeof handle !== "object" ||
-                    typeof handle.unsubscribe !== "function"
-                ) {
+                if (handle === null || typeof handle !== "object" || typeof handle.unsubscribe !== "function") {
                     throw new Error("subscribe must return an object with an unsubscribe method");
                 }
                 handles.push(handle);
@@ -59,8 +55,7 @@ class EmitterCase {
                 if (emitter === null) {
                     throw new Error("the script must construct the EventEmitter first");
                 }
-                const results =
-                    args.length > 1 ? emitter.emit(args[0], args[1]) : emitter.emit(args[0]);
+                const results = args.length > 1 ? emitter.emit(args[0], args[1]) : emitter.emit(args[0]);
                 if (!Array.isArray(results)) {
                     throw new Error("emit must return an array of callback results");
                 }

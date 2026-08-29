@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int sumEvenGrandparent(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    int sumEvenGrandparent(TreeNode *root) { throw logic_error("TODO"); }
 };

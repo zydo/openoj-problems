@@ -1,6 +1,6 @@
 class Solution {
   public:
-    string tree2str(TreeNode* root) {
+    string tree2str(TreeNode *root) {
         // The answer is a preorder walk written under two paren rules: a node
         // with any child opens a group for it, and a group is dropped only
         // when the child is absent — except that an absent left child beside
@@ -15,7 +15,7 @@ class Solution {
         string result;
         // A frame is a node to write (marker 0) or a literal paren; the node
         // pointer is null exactly when the marker is real.
-        vector<pair<TreeNode*, char>> stack;
+        vector<pair<TreeNode *, char>> stack;
         stack.push_back({root, 0});
         while (!stack.empty()) {
             auto [node, marker] = stack.back();

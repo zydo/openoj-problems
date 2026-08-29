@@ -15,7 +15,12 @@ impl Cashier {
         for (id, price) in products.into_iter().zip(prices.into_iter()) {
             catalog.insert(id, price);
         }
-        Cashier { n, discount, prices: catalog, customers: 0 }
+        Cashier {
+            n,
+            discount,
+            prices: catalog,
+            customers: 0,
+        }
     }
 
     pub fn get_bill(&mut self, product: Vec<i32>, amount: Vec<i32>) -> f64 {

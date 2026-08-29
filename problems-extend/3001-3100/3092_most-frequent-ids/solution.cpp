@@ -15,7 +15,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             int ident = nums[i];
             counts[ident] += freq[i];
-            heap.push({ counts[ident], ident });
+            heap.push({counts[ident], ident});
             while (heap.top().first != counts[heap.top().second]) {
                 heap.pop();
             }

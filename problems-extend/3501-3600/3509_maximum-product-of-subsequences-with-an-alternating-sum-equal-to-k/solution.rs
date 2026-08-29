@@ -12,8 +12,7 @@ impl Solution {
             return -1;
         }
         let width = (2 * total + 1) as usize;
-        let mut products: Vec<Vec<HashSet<i32>>> =
-            vec![vec![HashSet::new(); width]; 2];
+        let mut products: Vec<Vec<HashSet<i32>>> = vec![vec![HashSet::new(); width]; 2];
         let mut zero = vec![vec![false; width]; 2];
         let mut reach = vec![vec![false; width]; 2];
         for &x in &nums {

@@ -7,8 +7,6 @@ impl Solution {
         for &v in &nums {
             count[v as usize] += 1;
         }
-        nums.iter()
-            .filter(|&&v| count[v as usize] == 1)
-            .sum()
+        nums.iter().filter(|&&v| count[v as usize] == 1).sum()
     }
 }

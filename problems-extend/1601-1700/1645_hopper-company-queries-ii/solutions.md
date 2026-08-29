@@ -11,7 +11,7 @@ per iteration while the previous value stays below `12`.
 Each scaffold row drives two correlated scalar subqueries, computed in
 a chained `WITH` so the CASE at the end only has to read named
 columns. `available_drivers` counts `Drivers` rows whose `join_date`
-is strictly before the first day of the *next* calendar month —
+is strictly before the first day of the _next_ calendar month —
 `date('2020-' || printf('%02d', months.month) || '-01', '+1 month')`
 — which is "on or before this month's last day" without hardcoding
 how many days any given month has, and naturally includes drivers who

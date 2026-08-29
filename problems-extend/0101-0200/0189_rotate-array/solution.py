@@ -7,6 +7,7 @@ class Solution:
         # A rotation by n steps is the identity, so any larger k wraps
         # around to k % n — normalize before splitting into blocks.
         k %= n
+
         # Three reversals compose into a right rotation: reversing the
         # whole array trades the two blocks, and reversing each block
         # afterwards restores its internal order.

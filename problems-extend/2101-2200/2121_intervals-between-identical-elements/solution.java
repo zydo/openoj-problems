@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Solution {
+
     public long[] getDistances(int[] arr) {
         long[] answer = new long[arr.length];
         Map<Integer, Long> counts = new HashMap<>();

@@ -4,12 +4,12 @@
 
 Table: `Stocks`
 
-| Column Name   | Type   |
-| ------------- | ------ |
-| stock_name    | varchar|
-| operation     | enum   |
-| operation_day | int    |
-| price         | int    |
+| Column Name   | Type    |
+| ------------- | ------- |
+| stock_name    | varchar |
+| operation     | enum    |
+| operation_day | int     |
+| price         | int     |
 
 `(stock_name, operation_day)` is the primary key (combination of columns with unique values) for this table.
 The `operation` column is an ENUM (category) of type `('Sell', 'Buy')`.

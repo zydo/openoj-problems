@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> pancakeSort(vector<int>& arr) {
+    vector<int> pancakeSort(vector<int> &arr) {
         // The pinned answer is a selection sort from the largest value
         // down. For each size s, the unsorted prefix a[0..s-1] still
         // holds exactly the values 1..s, so the value to place is the
@@ -34,7 +34,7 @@ class Solution {
     }
 
   private:
-    void reversePrefix(vector<int>& a, int k) {
+    void reversePrefix(vector<int> &a, int k) {
         for (int lo = 0, hi = k - 1; lo < hi; ++lo, --hi) {
             swap(a[lo], a[hi]);
         }

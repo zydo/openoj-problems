@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> sortByReflection(vector<int>& nums) {
+    vector<int> sortByReflection(vector<int> &nums) {
         // Reflect every value once — reverse its binary string and parse
         // it back, which drops any leading zeros the reversal produced —
         // then sort on the composite key (reflection, value) so ties break
@@ -19,7 +19,7 @@ class Solution {
         sort(keyed.begin(), keyed.end());
         vector<int> sorted;
         sorted.reserve(nums.size());
-        for (auto& [reflection, value] : keyed) {
+        for (auto &[reflection, value] : keyed) {
             sorted.push_back(value);
         }
         return sorted;

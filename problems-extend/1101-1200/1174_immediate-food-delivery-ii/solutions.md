@@ -2,7 +2,7 @@
 
 ## Filter to first orders, then aggregate the share
 
-The percentage now ranges over *customers*, not rows — each customer
+The percentage now ranges over _customers_, not rows — each customer
 contributes exactly one order to the numerator and the denominator, whatever
 the table's size. So the query is two stages: reduce the table to one row
 per customer, then run the same boolean-sum percentage as a flat scan.

@@ -13,7 +13,7 @@ class CombinationIterator {
             }
             let combo = "";
             for (let i = 0; i < n; i++) {
-                if (mask >> i & 1) {
+                if ((mask >> i) & 1) {
                     combo += characters[i];
                 }
             }

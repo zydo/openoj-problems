@@ -26,8 +26,7 @@ WITH
     FROM
       feb a
       JOIN feb b ON b.user_id = a.user_id
-      AND b.post_date BETWEEN a.post_date
-      AND DATE(a.post_date, '+6 days')
+      AND b.post_date BETWEEN a.post_date AND DATE(a.post_date, '+6 days')
     GROUP BY
       a.user_id,
       a.post_date

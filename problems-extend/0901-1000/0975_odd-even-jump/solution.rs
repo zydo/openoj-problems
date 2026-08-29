@@ -42,7 +42,11 @@ impl Solution {
         let n = arr.len();
         let mut order: Vec<usize> = (0..n).collect();
         order.sort_by(|&a, &b| {
-            let values = if descending { arr[b].cmp(&arr[a]) } else { arr[a].cmp(&arr[b]) };
+            let values = if descending {
+                arr[b].cmp(&arr[a])
+            } else {
+                arr[a].cmp(&arr[b])
+            };
             values.then(a.cmp(&b))
         });
         let mut table = vec![-1; n];

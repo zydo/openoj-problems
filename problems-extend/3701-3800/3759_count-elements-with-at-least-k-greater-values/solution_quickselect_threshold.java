@@ -26,7 +26,9 @@ class Solution {
             // back block, and the pivot's own run sits between them. A
             // run of equals leaves the window together, which is what
             // keeps heavily duplicated inputs fast.
-            int lt = lo, i = lo, gt = hi;
+            int lt = lo,
+                i = lo,
+                gt = hi;
             while (i <= gt) {
                 if (nums[i] < pivot) {
                     tmp = nums[lt];
@@ -52,7 +54,8 @@ class Solution {
         int threshold = nums[target];
         // Elements strictly below the threshold qualify wholesale; the run
         // AT it qualifies only when its strictly-greater count reaches k.
-        int less = 0, equal = 0;
+        int less = 0,
+            equal = 0;
         for (int value : nums) {
             if (value < threshold) less++;
             else if (value == threshold) equal++;

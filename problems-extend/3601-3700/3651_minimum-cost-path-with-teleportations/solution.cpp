@@ -9,9 +9,11 @@ class Solution {
         d[0][0] = 0;
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
-                if (i == 0 && j == 0) continue;
+                if (i == 0 && j == 0)
+                    continue;
                 long long best = i > 0 ? d[i - 1][j] : INF;
-                if (j > 0 && d[i][j - 1] < best) best = d[i][j - 1];
+                if (j > 0 && d[i][j - 1] < best)
+                    best = d[i][j - 1];
                 d[i][j] = best + grid[i][j];
             }
         }
@@ -23,9 +25,9 @@ class Solution {
         vector<pair<int, int>> cells;
         cells.reserve(m * n);
         for (int i = 0; i < m; ++i)
-            for (int j = 0; j < n; ++j) cells.push_back({i, j});
-        sort(cells.begin(), cells.end(), [&grid](const pair<int, int> &a,
-                                                 const pair<int, int> &b) {
+            for (int j = 0; j < n; ++j)
+                cells.push_back({i, j});
+        sort(cells.begin(), cells.end(), [&grid](const pair<int, int> &a, const pair<int, int> &b) {
             return grid[a.first][a.second] > grid[b.first][b.second];
         });
         long long answer = d[m - 1][n - 1];
@@ -34,11 +36,10 @@ class Solution {
             long long run = INF;
             size_t p = 0;
             for (const pair<int, int> &c : cells) {
-                while (p < cells.size() &&
-                       grid[cells[p].first][cells[p].second] >=
-                           grid[c.first][c.second]) {
+                while (p < cells.size() && grid[cells[p].first][cells[p].second] >= grid[c.first][c.second]) {
                     long long cand = d[cells[p].first][cells[p].second];
-                    if (cand < run) run = cand;
+                    if (cand < run)
+                        run = cand;
                     ++p;
                 }
                 seed[c.first][c.second] = run;
@@ -56,7 +57,8 @@ class Solution {
                 }
             }
             d = move(seed);
-            if (d[m - 1][n - 1] < answer) answer = d[m - 1][n - 1];
+            if (d[m - 1][n - 1] < answer)
+                answer = d[m - 1][n - 1];
         }
         return static_cast<int>(answer);
     }

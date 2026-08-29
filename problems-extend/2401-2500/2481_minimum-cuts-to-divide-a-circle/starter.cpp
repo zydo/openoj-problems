@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int numberOfCuts(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int numberOfCuts(int n) { throw logic_error("TODO"); }
 };

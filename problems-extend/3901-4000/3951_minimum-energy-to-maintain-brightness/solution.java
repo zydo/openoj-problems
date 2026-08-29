@@ -1,6 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.ArrayList;
 import java.util.List;
 
 class Solution {
@@ -11,10 +11,9 @@ class Solution {
         List<int[]> merged = new ArrayList<>();
         for (int[] interval : intervals) {
             if (!merged.isEmpty() && interval[0] <= merged.get(merged.size() - 1)[1] + 1) {
-                merged.get(merged.size() - 1)[1] = Math.max(
-                        merged.get(merged.size() - 1)[1], interval[1]);
+                merged.get(merged.size() - 1)[1] = Math.max(merged.get(merged.size() - 1)[1], interval[1]);
             } else {
-                merged.add(new int[] {interval[0], interval[1]});
+                merged.add(new int[] { interval[0], interval[1] });
             }
         }
         long activeTime = 0;

@@ -10,8 +10,8 @@ ending at `i` is a subsequence ending at some earlier `j` with
 `nums[j] < nums[i]`, plus `nums[i]` itself; the strict comparison is the
 whole notion of "increasing", so equal values never extend anything. When
 a predecessor offers a length one beyond the running best, its count
-*replaces* the tally — everything shorter is no longer relevant — and when
-it merely ties the best, its count *adds*: each maximum-length arrival at
+_replaces_ the tally — everything shorter is no longer relevant — and when
+it merely ties the best, its count _adds_: each maximum-length arrival at
 `i` decomposes through exactly one such `j`.
 
 Every position starts as its own length-1 subsequence with count 1, and
@@ -22,7 +22,7 @@ count each, for 2; in `[2, 2, 2, 2, 2]` strictness blocks every extension,
 leaving five length-1 subsequences. The double loop is `n²` pair checks —
 four million at the `n = 2000` ceiling.
 
-One width caution: the statement promises only that the *answer* fits in
+One width caution: the statement promises only that the _answer_ fits in
 32 bits. Counts at positions that never reach the maximum can tower far
 past it — equal-value blocks multiply (five blocks of 396 equal values
 push a dead count to `396⁵ ≈ 9.7 × 10¹²`) — so the fixed-width ports

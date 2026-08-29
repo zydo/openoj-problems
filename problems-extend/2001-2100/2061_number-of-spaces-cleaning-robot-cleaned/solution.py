@@ -21,13 +21,7 @@ class Solution:
             dr, dc = directions[direction]
             next_row = row + dr
             next_col = col + dc
-            if (
-                next_row < 0
-                or next_row >= rows
-                or next_col < 0
-                or next_col >= cols
-                or room[next_row][next_col] == 1
-            ):
+            if next_row < 0 or next_row >= rows or next_col < 0 or next_col >= cols or room[next_row][next_col] == 1:
                 direction = (direction + 1) % 4
             else:
                 row, col = next_row, next_col

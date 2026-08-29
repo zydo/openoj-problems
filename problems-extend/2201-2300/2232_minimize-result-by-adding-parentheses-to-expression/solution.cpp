@@ -16,8 +16,7 @@ class Solution {
                 if (value < best_value) {
                     best_value = value;
                     best_form =
-                        left.substr(0, i) + "(" + left.substr(i) + "+" + right.substr(0, j)
-                        + ")" + right.substr(j);
+                        left.substr(0, i) + "(" + left.substr(i) + "+" + right.substr(0, j) + ")" + right.substr(j);
                 }
             }
         }

@@ -24,9 +24,7 @@ class ImmutableHelper {
                             return shadow[key]; // a value written earlier wins
                         }
                         const value = target[key];
-                        return value !== null && typeof value === "object"
-                            ? proxyFor(value)
-                            : value;
+                        return value !== null && typeof value === "object" ? proxyFor(value) : value;
                     },
                     set(target, key, value) {
                         let shadow = shadows.get(target);

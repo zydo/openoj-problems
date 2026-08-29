@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int minTrioDegree(int n, vector<vector<int>>& edges) {
-        throw logic_error("TODO");
-    }
+  public:
+    int minTrioDegree(int n, vector<vector<int>> &edges) { throw logic_error("TODO"); }
 };

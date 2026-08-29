@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int addRungs(vector<int> &rungs, int dist) {
         // Greedy: bridge each gap with as few rungs as possible, placing
         // each new rung as high as the current position allows. A gap of g

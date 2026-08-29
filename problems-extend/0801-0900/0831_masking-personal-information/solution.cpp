@@ -18,17 +18,20 @@ class Solution {
                 // Position 1 opens the fixed five-asterisk middle; the
                 // name's first and last letters and the whole domain
                 // are the only characters kept.
-                if (i == 1) out += "*****";
+                if (i == 1)
+                    out += "*****";
                 if (i == 0 || i >= at - 1) {
                     char c = s[i];
-                    if (c >= 'A' && c <= 'Z') c += 32;
+                    if (c >= 'A' && c <= 'Z')
+                        c += 32;
                     out += c;
                 }
             }
         } else {
             string digits;
             for (char c : s) {
-                if (c >= '0' && c <= '9') digits += c;
+                if (c >= '0' && c <= '9')
+                    digits += c;
             }
             // Every digit past ten is one masked country-code star.
             if (digits.size() > 10) {

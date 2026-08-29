@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> rightSideView(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> rightSideView(TreeNode *root) { throw logic_error("TODO"); }
 };

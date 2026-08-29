@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int minDiffInBST(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    int minDiffInBST(TreeNode *root) { throw logic_error("TODO"); }
 };

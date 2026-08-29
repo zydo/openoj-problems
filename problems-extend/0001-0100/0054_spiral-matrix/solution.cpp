@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+    vector<int> spiralOrder(vector<vector<int>> &matrix) {
         // Boundary-shrinking walk: emit the ring of the matrix that is left —
         // top row, right column, bottom row, left column — then shrink every
         // boundary inward by one and repeat until every element is emitted.

@@ -6,7 +6,7 @@ The trap in this contract is `flip()`: taken literally it rewrites every
 bit, and with up to `10⁵` calls over a `10⁵`-bit set the naive walk is
 `10¹⁰` bit writes. But flipping twice is the identity, so the entire history
 of flips collapses to a single parity bit. The set therefore stores its
-array in a *storage orientation* together with one boolean `flipped` flag,
+array in a _storage orientation_ together with one boolean `flipped` flag,
 and the effective value of bit `i` is defined as `storage[i] XOR flipped` —
 no mutation ever needs to touch more than one slot to keep that invariant
 true.

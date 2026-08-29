@@ -61,7 +61,7 @@ func (design *Bitset) toString() string {
 	}
 	composition := make([]byte, len(design.bits))
 	for index, bit := range design.bits {
-		composition[index] = '0' + bit^flag
+		composition[index] = '0' + bit ^ flag
 	}
 	return string(composition)
 }

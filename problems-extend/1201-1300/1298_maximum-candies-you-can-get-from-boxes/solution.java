@@ -3,8 +3,7 @@ import java.util.Queue;
 
 class Solution {
 
-    public long maxCandies(int[] status, int[] candies, int[][] keys,
-                           int[][] containedBoxes, int[] initialBoxes) {
+    public long maxCandies(int[] status, int[] candies, int[][] keys, int[][] containedBoxes, int[] initialBoxes) {
         // Two waiting rooms: owned-but-locked boxes, and the openable queue.
         boolean[] lockedHeld = new boolean[status.length];
         boolean[] opened = new boolean[status.length];
@@ -34,8 +33,7 @@ class Solution {
         return total;
     }
 
-    private void acquire(int box, int[] status, boolean[] opened,
-                         boolean[] lockedHeld, Queue<Integer> queue) {
+    private void acquire(int box, int[] status, boolean[] opened, boolean[] lockedHeld, Queue<Integer> queue) {
         // Ownership event: an initial box, or one found inside another.
         if (opened[box] || lockedHeld[box]) return;
         if (status[box] == 1) {

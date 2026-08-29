@@ -3,8 +3,7 @@
 
 class Solution {
   public:
-    long long maxPoints(vector<int> &technique1, vector<int> &technique2,
-                        int k) {
+    long long maxPoints(vector<int> &technique1, vector<int> &technique2, int k) {
         // Taking technique 1 everywhere satisfies any k, so start there and
         // switch tasks to technique 2 in descending order of the gain
         // technique2[i] - technique1[i], never exceeding n - k switches.

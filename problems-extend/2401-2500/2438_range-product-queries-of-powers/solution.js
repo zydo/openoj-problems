@@ -18,18 +18,16 @@ var productQueries = function (n, queries) {
     }
     const pref = [1n];
     for (const v of powers) {
-        pref.push(pref[pref.length - 1] * v % MOD);
+        pref.push((pref[pref.length - 1] * v) % MOD);
     }
-    return queries.map(([lo, hi]) =>
-        Number(pref[hi + 1] * powMod(pref[lo], MOD - 2n, MOD) % MOD)
-    );
+    return queries.map(([lo, hi]) => Number((pref[hi + 1] * powMod(pref[lo], MOD - 2n, MOD)) % MOD));
 };
 
 function powMod(base, exp, mod) {
     let result = 1n;
     while (exp > 0n) {
-        if (exp & 1n) result = result * base % mod;
-        base = base * base % mod;
+        if (exp & 1n) result = (result * base) % mod;
+        base = (base * base) % mod;
         exp >>= 1n;
     }
     return result;

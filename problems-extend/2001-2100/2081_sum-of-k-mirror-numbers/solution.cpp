@@ -27,7 +27,7 @@ class Solution {
         return reversed == original;
     }
 
-public:
+  public:
     long long kMirror(int k, int n) {
         long long total = 0;
         int found = 0;

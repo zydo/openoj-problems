@@ -1,4 +1,5 @@
 class Solution {
+
     public String generateTheString(int n) {
         char[] out = new char[n];
         java.util.Arrays.fill(out, 0, n, 'a');

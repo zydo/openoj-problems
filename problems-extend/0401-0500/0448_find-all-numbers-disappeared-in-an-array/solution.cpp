@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> findDisappearedNumbers(vector<int>& nums) {
+    vector<int> findDisappearedNumbers(vector<int> &nums) {
         // Values in [1, n] let the array index itself be the hash: value v
         // maps to slot v-1, and flipping that slot's sign records "v seen".
         // A value that never appears leaves its slot positive.

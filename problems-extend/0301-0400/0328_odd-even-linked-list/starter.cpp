@@ -1,6 +1,4 @@
 class Solution {
-public:
-    ListNode* oddEvenList(ListNode* head) {
-        throw logic_error("TODO");
-    }
+  public:
+    ListNode *oddEvenList(ListNode *head) { throw logic_error("TODO"); }
 };

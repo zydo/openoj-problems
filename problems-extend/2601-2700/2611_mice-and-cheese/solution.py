@@ -9,7 +9,5 @@ class Solution:
         # optimal — gains may be negative when forced, and taking the top k
         # regardless is exactly what "exactly k" demands.
         total = sum(reward2)
-        gains = sorted(
-            (a - b for a, b in zip(reward1, reward2)), reverse=True
-        )
+        gains = sorted((a - b for a, b in zip(reward1, reward2)), reverse=True)
         return total + sum(gains[:k])

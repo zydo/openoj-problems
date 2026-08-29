@@ -13,7 +13,9 @@ class Solution {
         // the suffix minimum just past it: any such boundary is crossed by
         // an inverted pair, so the component cannot end there.
         int[] ans = new int[n];
-        int segMax = 0, run = 0, written = 0;
+        int segMax = 0,
+            run = 0,
+            written = 0;
         for (int i = 0; i < n; i++) {
             segMax = Math.max(segMax, nums[i]);
             run++;

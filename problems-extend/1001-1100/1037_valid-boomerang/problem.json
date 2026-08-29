@@ -6,7 +6,11 @@
   "slug": "valid-boomerang",
   "title": "Valid Boomerang",
   "difficulty": "",
-  "tags": ["Array", "Math", "Geometry"],
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",
@@ -19,15 +23,28 @@
           "kind": "array",
           "items": {
             "kind": "array",
-            "items": { "kind": "integer", "bits": 32 }
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
           }
         }
       }
     ],
     "return_codec": "json",
-    "return_type": { "kind": "boolean" },
-    "entrypoints": { "go": "isBoomerang", "rust": "is_boomerang", "typescript": "isBoomerang" },
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "isBoomerang",
+      "rust": "is_boomerang",
+      "typescript": "isBoomerang"
+    },
     "comparison": "exact"
   },
-  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
 }

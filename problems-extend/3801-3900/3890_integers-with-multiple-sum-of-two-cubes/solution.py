@@ -8,7 +8,7 @@ class Solution:
         limit = 0
         while (limit + 1) ** 3 <= n:
             limit += 1
-        cubes = [i ** 3 for i in range(limit + 1)]
+        cubes = [i**3 for i in range(limit + 1)]
         counts = {}
         for a in range(1, limit + 1):
             if cubes[a] + cubes[a] > n:

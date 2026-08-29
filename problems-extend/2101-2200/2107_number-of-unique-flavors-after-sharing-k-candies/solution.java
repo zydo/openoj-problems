@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Solution {
+
     public int shareCandies(int[] candies, int k) {
         Map<Integer, Integer> counts = new HashMap<>();
         for (int flavor : candies) {

@@ -13,7 +13,12 @@ pub struct StringIterator {
 
 impl StringIterator {
     pub fn new(compressedString: String) -> Self {
-        StringIterator { s: compressedString, i: 0, ch: b' ', count: 0 }
+        StringIterator {
+            s: compressedString,
+            i: 0,
+            ch: b' ',
+            count: 0,
+        }
     }
 
     // Load the next segment: one letter, then its run of digits.

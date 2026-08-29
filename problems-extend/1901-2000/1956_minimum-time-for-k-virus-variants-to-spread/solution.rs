@@ -18,10 +18,7 @@ impl Solution {
         let mut best = i32::MAX;
         for x in min_x..=max_x {
             for y in min_y..=max_y {
-                let mut dists: Vec<i32> = points
-                    .iter()
-                    .map(|p| (x - p[0]).abs() + (y - p[1]).abs())
-                    .collect();
+                let mut dists: Vec<i32> = points.iter().map(|p| (x - p[0]).abs() + (y - p[1]).abs()).collect();
                 dists.sort();
                 best = best.min(dists[k as usize - 1]);
             }

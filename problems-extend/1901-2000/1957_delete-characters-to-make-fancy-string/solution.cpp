@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string makeFancyString(string s) {
         // Greedy append: keep s[i] unless it would extend a run of three.
         // Runs of a repeated character are independent, so truncating every
@@ -8,7 +8,8 @@ public:
         string res;
         for (char c : s) {
             int n = res.size();
-            if (n >= 2 && res[n - 1] == c && res[n - 2] == c) continue;
+            if (n >= 2 && res[n - 1] == c && res[n - 2] == c)
+                continue;
             res.push_back(c);
         }
         return res;

@@ -14,7 +14,8 @@ class Solution {
             } else {
                 // This digit must open a new piece; fail if it cannot stand
                 // alone either.
-                if (digit > k) return -1;
+                if (digit > k)
+                    return -1;
                 ++pieces;
                 value = digit;
             }

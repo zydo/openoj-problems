@@ -7,9 +7,6 @@ impl Solution {
         let wanted: HashSet<i32> = friends.into_iter().collect();
         // Scanning order left to right makes the kept ids emerge already in
         // finishing order -- no sorting step is needed.
-        order
-            .into_iter()
-            .filter(|racer| wanted.contains(racer))
-            .collect()
+        order.into_iter().filter(|racer| wanted.contains(racer)).collect()
     }
 }

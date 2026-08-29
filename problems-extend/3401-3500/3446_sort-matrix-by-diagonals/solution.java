@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
 class Solution {
 
     // Cells with i - j >= 0 form the bottom-left triangle together with

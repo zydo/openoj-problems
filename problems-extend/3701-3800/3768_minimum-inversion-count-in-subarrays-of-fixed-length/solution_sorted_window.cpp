@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    long long minInversionCount(std::vector<int>& nums, int k) {
+    long long minInversionCount(std::vector<int> &nums, int k) {
         // Keep the current window as a sorted vector. A sorted vector makes
         // the slide's two rank questions direct binary searches: the
         // position an element occupies IS the number of elements smaller

@@ -6,9 +6,7 @@ class TwoSum {
   public:
     TwoSum() = default;
 
-    void add(int number) {
-        ++counts[number];
-    }
+    void add(int number) { ++counts[number]; }
 
     bool find(int value) {
         for (const auto &entry : counts) {

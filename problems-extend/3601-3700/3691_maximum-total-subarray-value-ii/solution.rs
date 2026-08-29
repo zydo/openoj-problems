@@ -25,8 +25,7 @@ impl Solution {
         let spread = |l: usize, r: usize| -> i64 {
             let j = logs[r - l + 1] as usize;
             let low = 1usize << j;
-            (max_table[j][l].max(max_table[j][r - low + 1])
-                - min_table[j][l].min(min_table[j][r - low + 1])) as i64
+            (max_table[j][l].max(max_table[j][r - low + 1]) - min_table[j][l].min(min_table[j][r - low + 1])) as i64
         };
         // Row l is non-increasing as r shrinks toward l, so the heap merges
         // n sorted rows and always holds each row's largest unseen entry.

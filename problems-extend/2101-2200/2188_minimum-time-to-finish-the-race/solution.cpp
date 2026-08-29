@@ -2,8 +2,7 @@
 
 class Solution {
   public:
-    long long minimumFinishTime(std::vector<std::vector<int>> &tires,
-                                int changeTime, int numLaps) {
+    long long minimumFinishTime(std::vector<std::vector<int>> &tires, int changeTime, int numLaps) {
         // Precompute best[x]: the cheapest time for x consecutive laps on
         // a single tire. A run never helps once its next lap costs more
         // than resetting to the fastest first lap; ratios are >= 2 so the
@@ -22,8 +21,7 @@ class Solution {
             for (int x = 1; x <= numLaps; ++x) {
                 total += lap;
                 best[x] = std::min(best[x], total);
-                if (lap >= changeTime + fastestFirst ||
-                    total > INF / ri) {
+                if (lap >= changeTime + fastestFirst || total > INF / ri) {
                     break;
                 }
                 lap *= ri;

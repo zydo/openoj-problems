@@ -31,7 +31,8 @@ class Solution {
                 }
                 curSum[c] = s;
                 curX[c] = x;
-                if (s == 0 && x > 0) ++total;
+                if (s == 0 && x > 0)
+                    ++total;
             }
             prevSum = move(curSum);
             prevX = move(curX);

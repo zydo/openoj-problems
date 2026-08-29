@@ -5,7 +5,9 @@ class Solution {
         // (integer or decimal), optional exponent. seenDigit is scoped to the
         // part being read — the mantissa first, then the exponent after the
         // 'e'/'E' resets it.
-        boolean seenDigit = false, seenDot = false, seenExp = false;
+        boolean seenDigit = false,
+            seenDot = false,
+            seenExp = false;
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c >= '0' && c <= '9') {

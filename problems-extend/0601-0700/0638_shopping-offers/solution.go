@@ -31,7 +31,7 @@ func shoppingOffers(price []int, special [][]int, needs []int) int {
 		if memo[key] != -1 {
 			return memo[key]
 		}
-		best := int(^uint(0) >> 1) / 2
+		best := int(^uint(0)>>1) / 2
 		// Move kind 1: one unit of item i, bought individually.
 		for i := 0; i < n; i++ {
 			if cur[i] > 0 {

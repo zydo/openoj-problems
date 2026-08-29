@@ -7,7 +7,9 @@ class Solution {
         // freq counts occurrences of each value inside the window; dup counts
         // how many values have been seen twice or more.
         Map<Integer, Integer> freq = new HashMap<>();
-        int dup = 0, left = 0, best = 0;
+        int dup = 0,
+            left = 0,
+            best = 0;
         for (int right = 0; right < nums.length; right++) {
             freq.merge(nums[right], 1, Integer::sum);
             if (freq.get(nums[right]) == 2) {

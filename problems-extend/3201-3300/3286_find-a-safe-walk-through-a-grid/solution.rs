@@ -21,9 +21,7 @@ impl Solution {
             if r == m - 1 && c == n - 1 {
                 return true;
             }
-            for (nr, nc) in
-                [(r - 1, c), (r + 1, c), (r, c - 1), (r, c + 1)]
-            {
+            for (nr, nc) in [(r - 1, c), (r + 1, c), (r, c - 1), (r, c + 1)] {
                 if nr < 0 || nr >= m || nc < 0 || nc >= n {
                     continue;
                 }

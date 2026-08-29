@@ -7,6 +7,7 @@ class Solution:
         # 1..n passing accumulated flip counts parent -> child; the tree
         # shape guarantees the parent index v // 2 is already finished.
         from collections import Counter
+
         counts = Counter(queries)
         flips = [0] * (n + 1)
         total = 0

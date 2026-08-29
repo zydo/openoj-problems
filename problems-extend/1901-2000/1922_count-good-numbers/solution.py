@@ -1,6 +1,7 @@
 class Solution:
     def countGoodNumbers(self, n: int) -> int:
         MOD = 1_000_000_007
+
         # Positions split by parity: (n+1)//2 even indices each hold one of
         # the 5 even digits, n//2 odd indices one of the 4 prime digits. The
         # product 5^e * 4^o is folded by iterative square-and-multiply, so n

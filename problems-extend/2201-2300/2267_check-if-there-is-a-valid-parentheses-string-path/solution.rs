@@ -12,9 +12,7 @@ impl Solution {
         if start < 0 {
             return false;
         }
-        let mut dp: Vec<Vec<HashSet<i32>>> = (0..m)
-            .map(|_| (0..n).map(|_| HashSet::new()).collect())
-            .collect();
+        let mut dp: Vec<Vec<HashSet<i32>>> = (0..m).map(|_| (0..n).map(|_| HashSet::new()).collect()).collect();
         dp[0][0].insert(start);
         for r in 0..m {
             for c in 0..n {

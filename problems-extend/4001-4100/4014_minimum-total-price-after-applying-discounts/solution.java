@@ -10,8 +10,7 @@ class Solution {
         long saved = 0;
         int pairs = Math.min(prices.length, discounts.length);
         for (int i = 0; i < pairs; ++i) {
-            saved += (long) prices[prices.length - 1 - i]
-                * discounts[discounts.length - 1 - i];
+            saved += (long) prices[prices.length - 1 - i] * discounts[discounts.length - 1 - i];
         }
         long total = 0;
         for (int price : prices) {

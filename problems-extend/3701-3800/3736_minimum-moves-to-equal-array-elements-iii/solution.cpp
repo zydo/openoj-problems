@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minMoves(vector<int>& nums) {
+    int minMoves(vector<int> &nums) {
         // Only increments exist, so every element must climb to a common
         // target at least as high as the largest value already present;
         // the cheapest such target is that largest value itself.

@@ -27,7 +27,7 @@ func getFolderNames(names []string) []string {
 		nextK[base] = k + 1
 		if idx := lastParen(candidate); idx > 0 && candidate[len(candidate)-1] == ')' && allDigits(candidate[idx+1:len(candidate)-1]) {
 			stem := candidate[:idx]
-			val := parseDigits(candidate[idx+1 : len(candidate)-1]) + 1
+			val := parseDigits(candidate[idx+1:len(candidate)-1]) + 1
 			if cur := nextK[stem]; cur < val {
 				nextK[stem] = val
 			}

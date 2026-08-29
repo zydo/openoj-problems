@@ -16,7 +16,12 @@ pub struct Solution {
 
 impl Solution {
     pub fn new(radius: f64, x_center: f64, y_center: f64) -> Self {
-        Solution { radius, x_center, y_center, state: 0x9E37_79B9_7F4A_7C15 }
+        Solution {
+            radius,
+            x_center,
+            y_center,
+            state: 0x9E37_79B9_7F4A_7C15,
+        }
     }
 
     // xorshift64*: the std-free randomness the design probe shape uses,

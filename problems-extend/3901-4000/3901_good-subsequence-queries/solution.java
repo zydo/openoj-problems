@@ -57,7 +57,8 @@ class Solution {
         }
         int answer = 0;
         for (int[] query : queries) {
-            int index = query[0], value = query[1];
+            int index = query[0],
+                value = query[1];
             if (nums[index] % p == 0) {
                 for (int prime : factors(nums[index] / p, smallest)) adjust(prime, index, -1);
                 --active;
@@ -67,8 +68,10 @@ class Solution {
                 ++active;
                 for (int prime : factors(value / p, smallest)) adjust(prime, index, 1);
             }
-            if (active > 0 && ((active < n && histogram[active] == 0)
-                || (active == n && histogram[n] == 0 && forbiddenDistinct < n))) ++answer;
+            if (
+                active > 0 &&
+                ((active < n && histogram[active] == 0) || (active == n && histogram[n] == 0 && forbiddenDistinct < n))
+            ) ++answer;
         }
         return answer;
     }

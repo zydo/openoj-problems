@@ -10,8 +10,7 @@ function mostPopularCreator(creators: string[], ids: string[], views: number[]):
         const creator = creators[i];
         totals.set(creator, (totals.get(creator) || 0) + views[i]);
         const current = bestView.get(creator);
-        if (current === undefined || views[i] > current
-                || (views[i] === current && ids[i] < bestId.get(creator)!)) {
+        if (current === undefined || views[i] > current || (views[i] === current && ids[i] < bestId.get(creator)!)) {
             bestView.set(creator, views[i]);
             bestId.set(creator, ids[i]);
         }

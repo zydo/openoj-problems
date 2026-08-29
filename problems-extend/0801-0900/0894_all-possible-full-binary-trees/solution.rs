@@ -17,10 +17,7 @@ impl Solution {
 
     // The recursion steps count down by 2, so it nests at most
     // n / 2 + 1 frames deep — 11 at the constraint's n = 20.
-    fn build(
-        count: usize,
-        memo: &mut HashMap<usize, Vec<Option<Box<TreeNode>>>>,
-    ) -> Vec<Option<Box<TreeNode>>> {
+    fn build(count: usize, memo: &mut HashMap<usize, Vec<Option<Box<TreeNode>>>>) -> Vec<Option<Box<TreeNode>>> {
         if count == 1 {
             return vec![Some(Box::new(TreeNode::new(0)))];
         }

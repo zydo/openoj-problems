@@ -4,7 +4,7 @@ class Solution {
         // C++ strings are mutable, so this is the true in-place scan: the
         // word boundaries are located with one pass and only word positions
         // are ever written.
-        int n = (int) s.size();
+        int n = (int)s.size();
         int start = 0;
         while (start < n) {
             int end = start;

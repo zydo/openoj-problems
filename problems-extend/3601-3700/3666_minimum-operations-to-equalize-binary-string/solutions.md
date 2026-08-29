@@ -8,9 +8,10 @@ zeros and `k - i` on current ones; legality caps `i` between
 `max(0, k - (n - z))` and `min(k, z)`. Flipping those changes the count to
 `z' = z + k - 2 * i`, and as `i` sweeps its allowed range every value in
 the single contiguous, same-parity interval `[z + k - 2 * min(k, z), z + k
-- 2 * max(0, k - (n - z))]` is reachable in one step — positions never
+
+- 2 * max(0, k - (n - z))]`is reachable in one step — positions never
 matter, only counts do. The question becomes a shortest-path search on the
-integers `0..n` from the starting count to `0`.
+integers`0..n`from the starting count to`0`.
 
 That search is a plain BFS with unit edges: expand each dequeued count
 into its interval and enqueue every unvisited state of the matching parity

@@ -16,6 +16,6 @@ class Solution {
             i++;
         }
         // After the last consumed letter, finish off its cycle.
-        return answer + (3 - i % 3) % 3;
+        return answer + ((3 - (i % 3)) % 3);
     }
 }

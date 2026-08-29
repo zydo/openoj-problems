@@ -19,7 +19,7 @@ var maxArea = function (height, positions, directions) {
         } else if (positions[i] === height) {
             goingUp = false;
         } else {
-            goingUp = directions[i] === 'U';
+            goingUp = directions[i] === "U";
         }
         const first = goingUp ? height - positions[i] : positions[i];
         if (goingUp) {

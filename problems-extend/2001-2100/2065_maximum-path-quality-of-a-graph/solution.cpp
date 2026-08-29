@@ -1,5 +1,5 @@
 class Solution {
-    vector<int>* values;
+    vector<int> *values;
     vector<vector<pair<int, int>>> graph;
     vector<int> visits;
     int maxTime;
@@ -17,18 +17,17 @@ class Solution {
             }
             bool firstVisit = visits[neighbor] == 0;
             ++visits[neighbor];
-            search(neighbor, nextTime,
-                   quality + (firstVisit ? (*values)[neighbor] : 0));
+            search(neighbor, nextTime, quality + (firstVisit ? (*values)[neighbor] : 0));
             --visits[neighbor];
         }
     }
 
-public:
-    int maximalPathQuality(vector<int>& values, vector<vector<int>>& edges, int maxTime) {
+  public:
+    int maximalPathQuality(vector<int> &values, vector<vector<int>> &edges, int maxTime) {
         this->values = &values;
         this->maxTime = maxTime;
         graph.assign(values.size(), {});
-        for (const auto& edge : edges) {
+        for (const auto &edge : edges) {
             graph[edge[0]].push_back({edge[1], edge[2]});
             graph[edge[1]].push_back({edge[0], edge[2]});
         }

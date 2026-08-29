@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int numDifferentIntegers(string word) {
         // A digit run can be up to 1000 digits long, far beyond any
         // fixed-width integer, so runs are never parsed: each is stripped

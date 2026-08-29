@@ -20,12 +20,20 @@ impl Solution {
         // therefore pairs with the lexicographically best flanks available.
         let mut left = vec![0usize; m];
         for s in 1..m {
-            left[s] = if window[left[s - 1]] >= window[s] { left[s - 1] } else { s };
+            left[s] = if window[left[s - 1]] >= window[s] {
+                left[s - 1]
+            } else {
+                s
+            };
         }
         let mut right = vec![0usize; m];
         right[m - 1] = m - 1;
         for s in (0..m - 1).rev() {
-            right[s] = if window[s] >= window[right[s + 1]] { s } else { right[s + 1] };
+            right[s] = if window[s] >= window[right[s + 1]] {
+                s
+            } else {
+                right[s + 1]
+            };
         }
         // Strict improvement only, so the FIRST middle achieving the maximum
         // survives the sweep — which is the lexicographic rule: with j fixed

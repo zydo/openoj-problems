@@ -15,11 +15,11 @@ var maxDistance = function (s, k) {
             let mis = 0;
             for (const c of s) {
                 let step;
-                if (c === 'N') {
+                if (c === "N") {
                     step = sy;
-                } else if (c === 'S') {
+                } else if (c === "S") {
                     step = -sy;
-                } else if (c === 'E') {
+                } else if (c === "E") {
                     step = sx;
                 } else {
                     step = -sx;

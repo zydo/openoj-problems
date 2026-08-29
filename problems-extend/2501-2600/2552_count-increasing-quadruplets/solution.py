@@ -18,7 +18,7 @@ class Solution:
             less = list(accumulate(diff))  # less[x] = #{i < j : nums[i] < x}
             c = 0
             tot = 0
-            for uk in nums[n - 1:j:-1]:
+            for uk in nums[n - 1 : j : -1]:
                 if uk < vj:
                     tot += less[uk] * c
                 elif uk > vj:

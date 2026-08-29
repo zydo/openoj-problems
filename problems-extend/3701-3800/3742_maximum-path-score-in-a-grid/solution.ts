@@ -12,9 +12,7 @@ function maxPathScore(grid: number[][], k: number): number {
     let dp = Array.from({ length: n }, () => Array(cap + 1).fill(unreachable));
     dp[0][0] = 0;
     for (let i = 0; i < m; i++) {
-        const next = Array.from({ length: n }, () =>
-            Array(cap + 1).fill(unreachable),
-        );
+        const next = Array.from({ length: n }, () => Array(cap + 1).fill(unreachable));
         for (let j = 0; j < n; j++) {
             const charge = grid[i][j] > 0 ? 1 : 0;
             for (let c = charge; c <= cap; c++) {

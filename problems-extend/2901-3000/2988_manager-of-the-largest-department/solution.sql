@@ -16,6 +16,11 @@ FROM
   JOIN Employees e ON e.dep_id = c.dep_id
 WHERE
   e.position = 'Manager'
-  AND c.emp_count = (SELECT MAX(emp_count) FROM counts)
+  AND c.emp_count = (
+    SELECT
+      MAX(emp_count)
+    FROM
+      counts
+  )
 ORDER BY
   c.dep_id

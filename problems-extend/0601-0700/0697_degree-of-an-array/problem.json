@@ -6,7 +6,10 @@
   "slug": "degree-of-an-array",
   "title": "Degree of an Array",
   "difficulty": "",
-  "tags": ["Array", "Hash Table"],
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

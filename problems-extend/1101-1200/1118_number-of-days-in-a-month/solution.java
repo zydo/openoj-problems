@@ -8,6 +8,6 @@ class Solution {
         }
         // April, June, September, November are the short months; the rest,
         // apart from February handled above, are all 31 days.
-        return (month == 4 || month == 6 || month == 9 || month == 11) ? 30 : 31;
+        return month == 4 || month == 6 || month == 9 || month == 11 ? 30 : 31;
     }
 }

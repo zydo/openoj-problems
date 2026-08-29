@@ -10,7 +10,7 @@ Implement the `TodoList` class:
 
 - `TodoList()` Initializes the object.
 - `int addTask(int userId, String taskDescription, int dueDate,
-  List<String> tags)` Adds a task for the user with the ID userId with a
+List<String> tags)` Adds a task for the user with the ID userId with a
   due date equal to dueDate and a list of tags attached to the task. The
   return value is the ID of the task. This ID starts at 1 and is
   sequentially increasing. That is, the first task's id should be 1, the

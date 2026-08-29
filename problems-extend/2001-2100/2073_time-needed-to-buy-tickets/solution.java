@@ -1,4 +1,5 @@
 class Solution {
+
     public int timeRequiredToBuy(int[] tickets, int k) {
         int target = tickets[k];
         int elapsed = 0;

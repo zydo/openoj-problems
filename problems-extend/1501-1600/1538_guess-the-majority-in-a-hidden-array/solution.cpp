@@ -1,8 +1,8 @@
 class ArrayReader;
 
 class Solution {
-public:
-    int guessMajority(ArrayReader& arrayReader) {
+  public:
+    int guessMajority(ArrayReader &arrayReader) {
         int n = arrayReader.length();
         // Compare the fixed trio {0, 1, 2} against every later index.
         // The answer depends only on nums[i], so it takes exactly one
@@ -37,22 +37,27 @@ public:
             int matchIndex = 0;
 
             int countMatch = 0;
-            for (const auto& entry : results) {
-                if (entry.second == matchResult) ++countMatch;
+            for (const auto &entry : results) {
+                if (entry.second == matchResult)
+                    ++countMatch;
             }
             int countDiff = static_cast<int>(results.size()) - countMatch;
             int totalMatch = countMatch + anchorMatch;
             int totalDiff = countDiff + anchorDiff;
 
-            if (totalMatch == totalDiff) return -1;
+            if (totalMatch == totalDiff)
+                return -1;
             if (totalMatch > totalDiff) {
-                if (haveMatchIndex) return matchIndex;
-                for (const auto& entry : results) {
-                    if (entry.second == matchResult) return entry.first;
+                if (haveMatchIndex)
+                    return matchIndex;
+                for (const auto &entry : results) {
+                    if (entry.second == matchResult)
+                        return entry.first;
                 }
             } else {
-                for (const auto& entry : results) {
-                    if (entry.second == diffResult) return entry.first;
+                for (const auto &entry : results) {
+                    if (entry.second == diffResult)
+                        return entry.first;
                 }
             }
             throw std::runtime_error("unreachable");
@@ -92,8 +97,10 @@ public:
 
         int countV = tail + trioMatchesV;
         int countOther = 3 - trioMatchesV;
-        if (countV == countOther) return -1;
-        if (countV > countOther) return vIndex;
+        if (countV == countOther)
+            return -1;
+        if (countV > countOther)
+            return vIndex;
         return otherIndex;
     }
 };

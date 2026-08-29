@@ -20,10 +20,8 @@ function countValidSubsets(parent: number[], nums: number[], k: number): number 
                     const childAny = (dp0[child][r1] + dp1[child][r1]) % modulus;
                     const product0 = Number((BigInt(value0) * BigInt(childAny)) % BigInt(modulus));
                     const product1 = Number((BigInt(value1) * BigInt(dp0[child][r1])) % BigInt(modulus));
-                    merged0[(r0 + r1) % k] =
-                        (merged0[(r0 + r1) % k] + product0) % modulus;
-                    merged1[(r0 + r1) % k] =
-                        (merged1[(r0 + r1) % k] + product1) % modulus;
+                    merged0[(r0 + r1) % k] = (merged0[(r0 + r1) % k] + product0) % modulus;
+                    merged1[(r0 + r1) % k] = (merged1[(r0 + r1) % k] + product1) % modulus;
                 }
             }
             dp0[node] = merged0;

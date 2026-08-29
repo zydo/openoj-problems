@@ -33,9 +33,7 @@ class HelloWorldCase {
         if (typeof createHelloWorld !== "function") {
             throw new Error("drive expects the createHelloWorld function");
         }
-        const sayHello = (
-            createHelloWorld as () => (...args: unknown[]) => unknown
-        )();
+        const sayHello = (createHelloWorld as () => (...args: unknown[]) => unknown)();
         if (typeof sayHello !== "function") {
             throw new Error("createHelloWorld must return a function");
         }

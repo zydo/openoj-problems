@@ -15,8 +15,7 @@ independently.
 
 Return the max difference between `a` and `b`.
 
-Note that neither `a` nor `b` may have any leading zeros, and must not be
-0.
+Note that neither `a` nor `b` may have any leading zeros, and must not be 0.
 
 ### Example 1
 

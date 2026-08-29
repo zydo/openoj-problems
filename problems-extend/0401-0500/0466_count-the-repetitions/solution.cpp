@@ -11,7 +11,7 @@ class Solution {
             for (char ch : s1) {
                 if (ch == s2[cursor]) {
                     cursor++;
-                    if (cursor == (int) s2.size()) {
+                    if (cursor == (int)s2.size()) {
                         cursor = 0;
                         copies++;
                     }

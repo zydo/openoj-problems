@@ -22,7 +22,7 @@ function numberOfSets(n: number, k: number): number {
     }
     const invPick = modPow(fact[pick], mod - 2n, mod);
     const invRest = modPow(fact[total - pick], mod - 2n, mod);
-    return Number(((fact[total] * invPick) % mod) * invRest % mod);
+    return Number((((fact[total] * invPick) % mod) * invRest) % mod);
 }
 
 function modPow(base: bigint, exp: bigint, mod: bigint): bigint {

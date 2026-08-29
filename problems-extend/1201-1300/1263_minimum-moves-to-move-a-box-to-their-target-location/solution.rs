@@ -26,8 +26,7 @@ impl Solution {
         };
         // Flood the player's reachable floor with the box as an obstacle.
         // Uses signed coords so neighbour math stays simple.
-        let reachable = |br: isize, bc: isize, sr: isize, sc: isize,
-                         seen: &mut Vec<Vec<bool>>| {
+        let reachable = |br: isize, bc: isize, sr: isize, sc: isize, seen: &mut Vec<Vec<bool>>| {
             let (m_i, n_i) = (m as isize, n as isize);
             let mut queue = VecDeque::new();
             seen[sr as usize][sc as usize] = true;
@@ -52,9 +51,7 @@ impl Solution {
         // DELTAS[i] the player ends up standing on side i of the new box
         // cell. Each edge is one push, so BFS yields minimal pushes.
         const DELTAS: [(isize, isize); 4] = [(0, -1), (0, 1), (-1, 0), (1, 0)];
-        let key = |br: usize, bc: usize, side: usize| -> u64 {
-            (((br * n + bc) as u64) << 2) | side as u64
-        };
+        let key = |br: usize, bc: usize, side: usize| -> u64 { (((br * n + bc) as u64) << 2) | side as u64 };
         let mut visited: HashSet<u64> = HashSet::new();
         let mut queue: VecDeque<(usize, usize, usize, i32)> = VecDeque::new();
         let mut around = vec![vec![false; n]; m];

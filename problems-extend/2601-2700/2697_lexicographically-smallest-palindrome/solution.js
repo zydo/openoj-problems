@@ -8,8 +8,7 @@ var makeSmallestPalindrome = function (s) {
     const chars = s.split("");
     for (let left = 0, right = s.length - 1; left < right; left++, right--) {
         if (chars[left] !== chars[right]) {
-            const keep =
-                chars[left] < chars[right] ? chars[left] : chars[right];
+            const keep = chars[left] < chars[right] ? chars[left] : chars[right];
             chars[left] = keep;
             chars[right] = keep;
         }

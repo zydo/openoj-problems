@@ -15,7 +15,7 @@ class Solution {
         final int MOD = 1_000_000_007;
         int[] pref = new int[nums[0] + 1];
         for (int v = 0; v <= nums[0]; v++) {
-            pref[v] = v + 1;  // dp[v] = 1 at i = 0
+            pref[v] = v + 1; // dp[v] = 1 at i = 0
         }
         for (int i = 1; i < nums.length; i++) {
             int d = Math.max(0, nums[i] - nums[i - 1]);

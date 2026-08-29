@@ -1,3 +1,5 @@
+from typing import List, Optional
+
 
 # Judge-provided types (not editable here; the judge assembles their
 # definitions into every submission):
@@ -6,5 +8,5 @@
 
 
 class Solution:
-    def findDistance(self, root: TreeNode | None, p: int, q: int) -> int:
+    def findDistance(self, root: Optional[TreeNode], p: int, q: int) -> int:
         raise NotImplementedError("TODO")

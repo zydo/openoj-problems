@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> cheapestJump(vector<int>& coins, int maxJump) {
+    vector<int> cheapestJump(vector<int> &coins, int maxJump) {
         // Suffix costs, built right to left: cost[i] is the cheapest total
         // for the rest of the walk when standing on i, coins[i] included,
         // while UNREACHABLE marks blocked or stranded cells and is never

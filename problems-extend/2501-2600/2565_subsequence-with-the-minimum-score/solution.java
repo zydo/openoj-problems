@@ -17,44 +17,33 @@ class Solution {
         int n = s.length(),
             m = t.length();
         int[] pre = new int[m + 1];
-        for (int i = 0; i <= m; ++i)
-            pre[i] = -1;
+        for (int i = 0; i <= m; ++i) pre[i] = -1;
         int j = 0,
             longestPre = 0;
         for (int i = 1; i <= m; ++i) {
-            while (j < n && s.charAt(j) != t.charAt(i - 1))
-                ++j;
-            if (j == n)
-                break;
+            while (j < n && s.charAt(j) != t.charAt(i - 1)) ++j;
+            if (j == n) break;
             pre[i] = j++;
             longestPre = i;
         }
-        if (longestPre == m)
-            return 0;
+        if (longestPre == m) return 0;
         int[] suf = new int[m + 1];
         j = n - 1;
         int firstSuf = m;
         for (int k = m - 1; k >= 0; --k) {
-            while (j >= 0 && s.charAt(j) != t.charAt(k))
-                --j;
-            if (j < 0)
-                break;
+            while (j >= 0 && s.charAt(j) != t.charAt(k)) --j;
+            if (j < 0) break;
             suf[k] = j--;
             firstSuf = k;
         }
         int ans = m - longestPre;
-        if (firstSuf < ans)
-            ans = firstSuf;
+        if (firstSuf < ans) ans = firstSuf;
         int p = 1;
         for (int i = 0; i <= longestPre; ++i) {
-            if (p < i + 1)
-                p = i + 1;
-            if (p < firstSuf)
-                p = firstSuf;
-            while (p < m && suf[p] <= pre[i])
-                ++p;
-            if (p < m && p - i < ans)
-                ans = p - i;
+            if (p < i + 1) p = i + 1;
+            if (p < firstSuf) p = firstSuf;
+            while (p < m && suf[p] <= pre[i]) ++p;
+            if (p < m && p - i < ans) ans = p - i;
         }
         return ans;
     }

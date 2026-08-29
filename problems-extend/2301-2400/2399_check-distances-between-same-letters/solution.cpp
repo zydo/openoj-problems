@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool checkDistances(string s, vector<int> &distance) {
         // Remember each letter's first index; on the second sighting
         // the letters strictly between number second - first - 1,

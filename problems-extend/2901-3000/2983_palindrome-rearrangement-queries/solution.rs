@@ -1,6 +1,14 @@
 // Appends the inclusive pieces of [lo1, hi1] that avoid [lo2, hi2] to the
 // output vectors; at most two pieces ever fit.
-fn add_pieces<const N: usize>(lo1: i32, hi1: i32, lo2: i32, hi2: i32, lo_out: &mut [i32; N], hi_out: &mut [i32; N], mut count: usize) -> usize {
+fn add_pieces<const N: usize>(
+    lo1: i32,
+    hi1: i32,
+    lo2: i32,
+    hi2: i32,
+    lo_out: &mut [i32; N],
+    hi_out: &mut [i32; N],
+    mut count: usize,
+) -> usize {
     if lo1 > hi1 {
         return count;
     }
@@ -53,9 +61,17 @@ impl Solution {
             let (a, b, c, d) = (query[0], query[1], query[2], query[3]);
             let (m1, m2) = ((n as i32 - 1 - b) as usize, (n as i32 - 1 - a) as usize); // mirror of [a, b]
             let (f1, f2) = ((n as i32 - 1 - d) as usize, (n as i32 - 1 - c) as usize); // mirror of [c, d]
-            // Pairs covered on neither side must already match.
+                                                                                       // Pairs covered on neither side must already match.
             let mut count = add_pieces(0, a - 1, f1 as i32, f2 as i32, &mut fixed_lo, &mut fixed_hi, 0);
-            count = add_pieces(b + 1, half as i32 - 1, f1 as i32, f2 as i32, &mut fixed_lo, &mut fixed_hi, count);
+            count = add_pieces(
+                b + 1,
+                half as i32 - 1,
+                f1 as i32,
+                f2 as i32,
+                &mut fixed_lo,
+                &mut fixed_hi,
+                count,
+            );
             let mut bad = 0_i32;
             for i in 0..count {
                 bad += mismatch[(fixed_hi[i] + 1) as usize] - mismatch[fixed_lo[i] as usize];

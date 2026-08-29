@@ -5,14 +5,15 @@ class Solution {
         // Once every character is a '*', all n * (n + 1) / 2 substrings are
         // valid; if even that total falls short of k, no time ever works.
         // The total passes 32 bits near n = 10^5, hence the widening.
-        long total = (long) n * (n + 1) / 2;
+        long total = ((long) n * (n + 1)) / 2;
         if (total < k) {
             return -1;
         }
         // Each replacement only turns more substrings valid, so activity is
         // monotone in t and the earliest active time admits a binary search.
         // Feasibility at t = n - 1 is guaranteed by the early return above.
-        int lo = 0, hi = n - 1;
+        int lo = 0,
+            hi = n - 1;
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
             if (validCount(order, mid, total) >= k) {
@@ -32,7 +33,8 @@ class Solution {
         for (int i = 0; i <= t; i++) {
             starred[order[i]] = true;
         }
-        long invalid = 0, run = 0;
+        long invalid = 0,
+            run = 0;
         for (boolean flag : starred) {
             if (flag) {
                 run = 0;

@@ -36,7 +36,7 @@ Count the number of characters 'c' in string s, let’s call it m.
 
 ### Hint 2
 
-We can select 2 numbers i and j such that i  are the start and end indices
+We can select 2 numbers i and j such that i are the start and end indices
 of substring. Note that i and j can be the same.
 
 ### Hint 3

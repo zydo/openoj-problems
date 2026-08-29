@@ -9,7 +9,7 @@ multiples of each surviving base `f` are crossed off starting at
 `f * f`. The window itself needs no separate logic — the scan just reads
 flags between `left` and `right`.
 
-The best pair can always be taken from *consecutive* primes of the
+The best pair can always be taken from _consecutive_ primes of the
 window. If a pair has some other prime strictly between its members,
 that interior prime forms adjacent pairs whose gaps are each smaller.
 So one ascending sweep keeps only the previous prime seen; when the gap

@@ -8,7 +8,7 @@ class Solution:
         # occurring at least as often, so only exact-minSize windows count.
         counts = defaultdict(int)
         for start in range(len(s) - minSize + 1):
-            window = s[start:start + minSize]
+            window = s[start : start + minSize]
             if len(set(window)) <= maxLetters:
                 counts[window] += 1
         return max(counts.values()) if counts else 0

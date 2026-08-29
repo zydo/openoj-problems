@@ -12,10 +12,8 @@ class Solution {
         // starting at floor(logout / 15) - 1, so the count is their
         // difference clamped at zero; both operands stay far below any
         // 32-bit bound.
-        int login = Integer.parseInt(loginTime.substring(0, 2)) * 60
-                + Integer.parseInt(loginTime.substring(3));
-        int logout = Integer.parseInt(logoutTime.substring(0, 2)) * 60
-                + Integer.parseInt(logoutTime.substring(3));
+        int login = Integer.parseInt(loginTime.substring(0, 2)) * 60 + Integer.parseInt(loginTime.substring(3));
+        int logout = Integer.parseInt(logoutTime.substring(0, 2)) * 60 + Integer.parseInt(logoutTime.substring(3));
         if (logout <= login) {
             logout += 24 * 60;
         }

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     // Every piece of every split is a substring of length at most
     // n - numFriends + 1, and the largest such substring starts where
     // the lexicographically largest suffix starts, truncated to that cap.

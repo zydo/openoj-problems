@@ -33,8 +33,7 @@ class Solution {
         int pairs = 0;
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
-                if (families.get(i).contains(nums[j])
-                        || families.get(j).contains(nums[i])) {
+                if (families.get(i).contains(nums[j]) || families.get(j).contains(nums[i])) {
                     pairs++;
                 }
             }

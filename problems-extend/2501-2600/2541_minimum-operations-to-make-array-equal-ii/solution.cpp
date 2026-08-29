@@ -12,7 +12,8 @@ class Solution {
         // long-long-safe.
         if (k == 0) {
             for (size_t i = 0; i < nums1.size(); ++i) {
-                if (nums1[i] != nums2[i]) return -1;
+                if (nums1[i] != nums2[i])
+                    return -1;
             }
             return 0;
         }
@@ -21,7 +22,8 @@ class Solution {
             long long diff = (long long)nums2[i] - nums1[i];
             long long magnitude = diff < 0 ? -diff : diff;
             long long kk = k;
-            if (magnitude % kk != 0) return -1;
+            if (magnitude % kk != 0)
+                return -1;
             net += diff;
             mass += magnitude;
         }

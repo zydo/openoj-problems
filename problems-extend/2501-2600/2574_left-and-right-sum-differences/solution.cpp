@@ -16,7 +16,8 @@ class Solution {
         long long left = 0;
         for (int value : nums) {
             long long diff = left - (total - left - value);
-            if (diff < 0) diff = -diff;
+            if (diff < 0)
+                diff = -diff;
             answer.push_back(static_cast<int>(diff));
             left += value;
         }

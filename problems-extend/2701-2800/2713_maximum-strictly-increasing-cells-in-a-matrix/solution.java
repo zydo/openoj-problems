@@ -18,7 +18,7 @@ class Solution {
         int idx = 0;
         for (int r = 0; r < rows; ++r) {
             for (int c = 0; c < cols; ++c) {
-                cells[idx++] = new int[] {mat[r][c], r, c};
+                cells[idx++] = new int[] { mat[r][c], r, c };
             }
         }
         Arrays.sort(cells, (p, q) -> Integer.compare(p[0], q[0]));
@@ -27,7 +27,7 @@ class Solution {
         int best = 0;
         int i = 0;
         while (i < cells.length) {
-            int j = i;  // run-length batch equal values: equal cells never chain
+            int j = i; // run-length batch equal values: equal cells never chain
             while (j < cells.length && cells[j][0] == cells[i][0]) {
                 ++j;
             }
@@ -37,11 +37,13 @@ class Solution {
                 int c = cells[k][2];
                 // one more than the best chain ending at a smaller value
                 int length = Math.max(rowMax[r], colMax[c]) + 1;
-                batch.add(new int[] {length, r, c});
+                batch.add(new int[] { length, r, c });
                 best = Math.max(best, length);
             }
             for (int[] entry : batch) {
-                int length = entry[0], r = entry[1], c = entry[2];
+                int length = entry[0],
+                    r = entry[1],
+                    c = entry[2];
                 if (rowMax[r] < length) {
                     rowMax[r] = length;
                 }

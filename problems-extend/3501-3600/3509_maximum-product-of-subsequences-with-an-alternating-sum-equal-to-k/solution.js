@@ -13,18 +13,12 @@ var maxProduct = function (nums, k, limit) {
     const total = nums.reduce((a, b) => a + b, 0);
     if (Math.abs(k) > total) return -1;
     const width = 2 * total + 1;
-    let products = [
-        Array.from({ length: width }, () => new Set()),
-        Array.from({ length: width }, () => new Set()),
-    ];
+    let products = [Array.from({ length: width }, () => new Set()), Array.from({ length: width }, () => new Set())];
     let zero = [new Array(width).fill(false), new Array(width).fill(false)];
     let reach = [new Array(width).fill(false), new Array(width).fill(false)];
     for (const x of nums) {
         // Skipping x keeps every current state.
-        const np = [
-            products[0].map((s) => new Set(s)),
-            products[1].map((s) => new Set(s)),
-        ];
+        const np = [products[0].map((s) => new Set(s)), products[1].map((s) => new Set(s))];
         const nz = [zero[0].slice(), zero[1].slice()];
         const nr = [reach[0].slice(), reach[1].slice()];
         for (let p = 0; p < 2; p++) {

@@ -29,7 +29,7 @@ var minOperations = function (nums) {
         const half = parseInt(bits.slice(0, halfLen), 2);
         let best = null;
         for (const head of [half - 1, half, half + 1]) {
-            if ((head >> (halfLen - 1)) === 0) {
+            if (head >> (halfLen - 1) === 0) {
                 continue; // would lose its leading one — not a b-bit head
             }
             const d = Math.abs(value - mirror(head, halfLen, length));

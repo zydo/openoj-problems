@@ -1,11 +1,12 @@
 #include <vector>
 
 class Solution {
-public:
-    double frogPosition(int n, std::vector<std::vector<int>>& edges, int t, int target) {
-        if (n == 1) return 1.0;
+  public:
+    double frogPosition(int n, std::vector<std::vector<int>> &edges, int t, int target) {
+        if (n == 1)
+            return 1.0;
         std::vector<std::vector<int>> neighbors(n + 1);
-        for (const auto& e : edges) {
+        for (const auto &e : edges) {
             neighbors[e[0]].push_back(e[1]);
             neighbors[e[1]].push_back(e[0]);
         }
@@ -22,12 +23,14 @@ public:
             int node = queue[head];
             int children = 0;
             for (int nxt : neighbors[node]) {
-                if (!visited[nxt]) children++;
+                if (!visited[nxt])
+                    children++;
             }
             childCount[node] = children;
             if (children > 0) {
                 for (int nxt : neighbors[node]) {
-                    if (visited[nxt]) continue;
+                    if (visited[nxt])
+                        continue;
                     visited[nxt] = true;
                     depth[nxt] = depth[node] + 1;
                     prob[nxt] = prob[node] / children;
@@ -36,8 +39,10 @@ public:
             }
         }
 
-        if (depth[target] == t) return prob[target];
-        if (depth[target] < t && childCount[target] == 0) return prob[target];
+        if (depth[target] == t)
+            return prob[target];
+        if (depth[target] < t && childCount[target] == 0)
+            return prob[target];
         return 0.0;
     }
 };

@@ -10,7 +10,8 @@ class Solution {
             int u = e[0], v = e[1];
             deg[u]++;
             deg[v]++;
-            if (u > v) swap(u, v);
+            if (u > v)
+                swap(u, v);
             mult[{u, v}]++;
         }
         vector<int> d(deg.begin() + 1, deg.end());

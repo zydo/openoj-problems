@@ -18,12 +18,7 @@ class TodoList {
         this.nextId = 1;
     }
 
-    addTask(
-        userId: number,
-        taskDescription: string,
-        dueDate: number,
-        tags: string[],
-    ): number {
+    addTask(userId: number, taskDescription: string, dueDate: number, tags: string[]): number {
         const taskId = this.nextId++;
         this.tasks.set(taskId, {
             user: userId,
@@ -47,11 +42,7 @@ class TodoList {
     getTasksForTag(userId: number, tag: string): string[] {
         const pending = [];
         for (const task of this.tasks.values()) {
-            if (
-                task.user === userId &&
-                !task.done &&
-                task.tags.includes(tag)
-            ) {
+            if (task.user === userId && !task.done && task.tags.includes(tag)) {
                 pending.push(task);
             }
         }

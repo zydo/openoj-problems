@@ -8,7 +8,7 @@ class Solution {
         // set-bit count. Counting the even- and odd-parity elements of
         // each array leaves four parity classes, and the answer sums the
         // three products that pick zero or two odd parities.
-        int[][] arrays = {a, b, c};
+        int[][] arrays = { a, b, c };
         long[] even = new long[3];
         long[] odd = new long[3];
         for (int i = 0; i < 3; i++) {
@@ -20,7 +20,11 @@ class Solution {
                 }
             }
         }
-        return even[0] * even[1] * even[2] + odd[0] * odd[1] * even[2]
-                + odd[0] * even[1] * odd[2] + even[0] * odd[1] * odd[2];
+        return (
+            even[0] * even[1] * even[2] +
+            odd[0] * odd[1] * even[2] +
+            odd[0] * even[1] * odd[2] +
+            even[0] * odd[1] * odd[2]
+        );
     }
 }

@@ -61,7 +61,8 @@ class Solution {
                     if (value[previous] != 0) {
                         continue;
                     }
-                    if (mark == 1) { // the mouse (the mover) wins
+                    if (mark == 1) {
+                        // the mouse (the mover) wins
                         value[previous] = 1;
                         queue[tail++] = previous;
                     } else if (--moves[previous] == 0) {
@@ -69,13 +70,15 @@ class Solution {
                         queue[tail++] = previous;
                     }
                 }
-            } else if (cat != 0) { // no cat move can ever reach the hole
+            } else if (cat != 0) {
+                // no cat move can ever reach the hole
                 for (int node : graph[cat]) {
                     int previous = (mouse * n + node) * 2 + 1;
                     if (value[previous] != 0) {
                         continue;
                     }
-                    if (mark == 2) { // the cat (the mover) wins
+                    if (mark == 2) {
+                        // the cat (the mover) wins
                         value[previous] = 2;
                         queue[tail++] = previous;
                     } else if (--moves[previous] == 0) {

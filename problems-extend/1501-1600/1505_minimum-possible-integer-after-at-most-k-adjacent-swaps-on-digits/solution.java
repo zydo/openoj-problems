@@ -7,14 +7,14 @@ class Solution {
     private int[] tree;
 
     private void update(int i, int delta) {
-        for (; i <= n; i += i & (-i)) {
+        for (; i <= n; i += i & -i) {
             tree[i] += delta;
         }
     }
 
     private int query(int i) {
         int total = 0;
-        for (; i > 0; i -= i & (-i)) {
+        for (; i > 0; i -= i & -i) {
             total += tree[i];
         }
         return total;

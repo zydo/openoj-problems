@@ -12,8 +12,8 @@ The value of the character is defined in the following way:
 
 - If the character is not in the string chars, then its value is its
   corresponding position (1-indexed) in the alphabet.
-  - For example, the value of 'a' is 1, the value of 'b' is 2, and so on.
-    The value of 'z' is 26.
+    - For example, the value of 'a' is 1, the value of 'b' is 2, and so on.
+      The value of 'z' is 26.
 - Otherwise, assuming i is the index where the character occurs in the string
   chars, then its value is vals[i].
 

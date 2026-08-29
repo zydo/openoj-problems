@@ -15,9 +15,7 @@ var countPalindromes = function (s) {
     for (let i = 0; i < n; ++i) digits[i] = s.charCodeAt(i) - 48;
 
     // suff[i][a][b] = number of "ab" subsequences in s[i:]
-    const suff = Array.from({ length: n + 1 }, () =>
-        Array.from({ length: 10 }, () => new Array(10).fill(0)),
-    );
+    const suff = Array.from({ length: n + 1 }, () => Array.from({ length: 10 }, () => new Array(10).fill(0)));
     const cnt = new Array(10).fill(0); // digit counts in the current suffix s[i:]
     for (let i = n - 1; i >= 0; --i) {
         const d = digits[i];

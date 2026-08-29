@@ -1,8 +1,8 @@
 class Solution {
-public:
+  public:
     // E[x][d]: longest subsequence over processed prefixes ending with
     // value x, whose last adjacent difference is >= d (suffix max over d).
-    int longestSubsequence(vector<int>& nums) {
+    int longestSubsequence(vector<int> &nums) {
         const int maxV = 300;
         vector<vector<int>> E(maxV + 1, vector<int>(maxV, 0));
         int ans = 1;
@@ -10,7 +10,7 @@ public:
             // Exact-difference lengths ending here: a predecessor with new
             // difference d must sit at value v-d or v+d, and its own last
             // difference must be >= d — exactly what E[..][d] stores.
-            vector<int>& row = E[v];
+            vector<int> &row = E[v];
             vector<int> lens(maxV);
             for (int d = 0; d < maxV; d++) {
                 int cand = v - d >= 1 ? E[v - d][d] : 0;

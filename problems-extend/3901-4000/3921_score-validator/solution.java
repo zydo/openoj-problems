@@ -16,6 +16,6 @@ class Solution {
             // Events after the counter reaches 10 are ignored entirely.
             if (counter == 10) break;
         }
-        return new int[] {score, counter};
+        return new int[] { score, counter };
     }
 }

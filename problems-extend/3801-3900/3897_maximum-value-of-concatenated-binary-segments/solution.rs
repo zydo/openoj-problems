@@ -11,17 +11,15 @@ impl Solution {
         };
         let mut order: Vec<usize> = (0..nums1.len()).collect();
         order.sort_by(|&left, &right| {
-            category(left)
-                .cmp(&category(right))
-                .then_with(|| {
-                    if category(left) == 1 {
-                        nums1[right]
-                            .cmp(&nums1[left])
-                            .then_with(|| nums0[left].cmp(&nums0[right]))
-                    } else {
-                        std::cmp::Ordering::Equal
-                    }
-                })
+            category(left).cmp(&category(right)).then_with(|| {
+                if category(left) == 1 {
+                    nums1[right]
+                        .cmp(&nums1[left])
+                        .then_with(|| nums0[left].cmp(&nums0[right]))
+                } else {
+                    std::cmp::Ordering::Equal
+                }
+            })
         });
 
         const MODULUS: i64 = 1_000_000_007;

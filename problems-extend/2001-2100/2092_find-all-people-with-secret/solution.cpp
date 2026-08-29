@@ -19,7 +19,8 @@ class Solution {
 
             queue<int> pending;
             for (const auto &[person, _] : graph) {
-                if (knows[person]) pending.push(person);
+                if (knows[person])
+                    pending.push(person);
             }
             while (!pending.empty()) {
                 int person = pending.front();
@@ -36,7 +37,8 @@ class Solution {
 
         vector<int> answer;
         for (int person = 0; person < n; ++person) {
-            if (knows[person]) answer.push_back(person);
+            if (knows[person])
+                answer.push_back(person);
         }
         return answer;
     }

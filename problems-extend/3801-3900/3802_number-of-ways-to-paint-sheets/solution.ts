@@ -17,8 +17,7 @@ function numberOfWays(n: number, limit: number[]): number {
     // Ways for one split length x: ordered pairs of distinct colors whose
     // caps cover x and n - x; the i == j diagonal would need a single cap
     // to cover max(x, n - x). Stays below 10^10, exact in doubles.
-    const ways = (x: number): number =>
-        numGe(x) * numGe(n - x) - numGe(Math.max(x, n - x));
+    const ways = (x: number): number => numGe(x) * numGe(n - x) - numGe(Math.max(x, n - x));
     // ways(x) is a step function whose flips sit at 1, n, the max()
     // switch ceil(n / 2), L + 1 and n - L: one representative per
     // breakpoint run, scaled by the run length, covers 1..n-1.
@@ -34,9 +33,7 @@ function numberOfWays(n: number, limit: number[]): number {
     let total = 0n;
     for (let i = 1; i < ordered.length; i++) {
         const run = ordered[i] - ordered[i - 1];
-        total =
-            (total + BigInt(ways(ordered[i - 1]) % 1000000007) * BigInt(run)) %
-            MOD;
+        total = (total + BigInt(ways(ordered[i - 1]) % 1000000007) * BigInt(run)) % MOD;
     }
     return Number(total);
 }

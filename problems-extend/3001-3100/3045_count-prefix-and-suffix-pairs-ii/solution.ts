@@ -9,10 +9,7 @@ function countPrefixSuffixPairs(words: string[]): number {
         const size = word.length;
         let node = 0;
         for (let j = 0; j < size; j++) {
-            const key =
-                node * 676 +
-                (word.charCodeAt(j) - 97) * 26 +
-                (word.charCodeAt(size - 1 - j) - 97);
+            const key = node * 676 + (word.charCodeAt(j) - 97) * 26 + (word.charCodeAt(size - 1 - j) - 97);
             let next = edges.get(key);
             if (next === undefined) {
                 next = counts.length;

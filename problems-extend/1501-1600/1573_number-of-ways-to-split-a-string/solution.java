@@ -25,7 +25,7 @@ class Solution {
             return 0;
         }
         if (total == 0) {
-            long ways = (long) (n - 1) * (n - 2) / 2;
+            long ways = ((long) (n - 1) * (n - 2)) / 2;
             return (int) (ways % MOD);
         }
         int k = total / 3;

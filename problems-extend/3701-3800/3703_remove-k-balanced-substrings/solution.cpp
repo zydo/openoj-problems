@@ -11,10 +11,8 @@ class Solution {
             }
             // A ')' run sitting on a '(' run is a live junction: cancel
             // min(open / k, close / k) whole blocks of k from both sides.
-            while (stack.size() > 1 && stack.back().first == ')' &&
-                   stack[stack.size() - 2].first == '(') {
-                int blocks =
-                    min(stack[stack.size() - 2].second / k, stack.back().second / k);
+            while (stack.size() > 1 && stack.back().first == ')' && stack[stack.size() - 2].first == '(') {
+                int blocks = min(stack[stack.size() - 2].second / k, stack.back().second / k);
                 if (blocks == 0) {
                     break;
                 }

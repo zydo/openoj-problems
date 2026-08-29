@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     vector<vector<string>> updateBoard(vector<vector<string>> &board, vector<int> &click) {
         // A revealed mine ends the game on the spot: it becomes 'X' and no
         // other cell changes, so return before any flood starts.

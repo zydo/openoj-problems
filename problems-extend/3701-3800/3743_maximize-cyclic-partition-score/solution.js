@@ -14,12 +14,10 @@ var maximumScore = function (nums, k) {
     // Close a pair: the count grows by one.
     const shiftAdd = (states, delta) => {
         const out = fresh();
-        for (let i = 1; i < size; ++i)
-            if (states[i - 1] !== NEG) out[i] = states[i - 1] + delta;
+        for (let i = 1; i < size; ++i) if (states[i - 1] !== NEG) out[i] = states[i - 1] + delta;
         return out;
     };
-    const bump = (states, delta) =>
-        states.map((v) => (v === NEG ? v : v + delta));
+    const bump = (states, delta) => states.map((v) => (v === NEG ? v : v + delta));
     const merge = (a, b) => a.map((v, i) => (v >= b[i] ? v : b[i]));
 
     // Phase 0: closed[j] = j pairs done; op/om = one open pair started with
@@ -43,10 +41,7 @@ var maximumScore = function (nums, k) {
 
         const nOp = merge(op, bump(closed, a));
         const nOm = merge(om, bump(closed, -a));
-        const nClosed = merge(
-            merge(closed, shiftAdd(op, -a)),
-            shiftAdd(om, a),
-        );
+        const nClosed = merge(merge(closed, shiftAdd(op, -a)), shiftAdd(om, a));
 
         let nWp = [...wp];
         let nWm = [...wm];

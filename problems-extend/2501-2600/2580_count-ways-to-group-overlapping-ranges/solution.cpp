@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int countWays(std::vector<std::vector<int>>& ranges) {
+    int countWays(std::vector<std::vector<int>> &ranges) {
         // Sort by start point; overlapping ranges then form contiguous
         // runs, and each maximal run sits in either group freely, so
         // the answer is 2^(runs) mod 1e9+7 by iterative binary

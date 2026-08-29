@@ -19,7 +19,14 @@ impl Solution {
                 block >>= 1;
             }
             let prefix = 32 - block.trailing_zeros();
-            blocks.push(format!("{}.{}.{}.{}/{}", (x >> 24) & 255, (x >> 16) & 255, (x >> 8) & 255, x & 255, prefix));
+            blocks.push(format!(
+                "{}.{}.{}.{}/{}",
+                (x >> 24) & 255,
+                (x >> 16) & 255,
+                (x >> 8) & 255,
+                x & 255,
+                prefix
+            ));
             x += block;
             n -= block;
         }

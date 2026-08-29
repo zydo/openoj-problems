@@ -1,7 +1,7 @@
 class Solution {
-public:
-    TreeNode* flatten(TreeNode* root) {
-        TreeNode* node = root;
+  public:
+    TreeNode *flatten(TreeNode *root) {
+        TreeNode *node = root;
         // Loop invariant: every node already passed hangs on a single right
         // spine — the flattened pre-order prefix, all left pointers null —
         // so `node` is always the next pre-order node awaiting its splice.
@@ -11,7 +11,7 @@ public:
                 // pre-order, so it is the last node visited before the old
                 // right subtree: let it adopt that subtree, then swing the
                 // whole left subtree across to the right.
-                TreeNode* tail = node->left;
+                TreeNode *tail = node->left;
                 while (tail->right != nullptr) {
                     tail = tail->right;
                 }

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int findDerangement(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int findDerangement(int n) { throw logic_error("TODO"); }
 };

@@ -17,7 +17,7 @@ class Solution {
         int total = 0;
         for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
             int group = entry.getKey() + 1;
-            total += (entry.getValue() + group - 1) / group * group;
+            total += ((entry.getValue() + group - 1) / group) * group;
         }
         return total;
     }

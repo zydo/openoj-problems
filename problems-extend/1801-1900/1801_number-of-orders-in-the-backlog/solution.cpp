@@ -16,9 +16,11 @@ class Solution {
                     int take = min(amount, a);
                     amount -= take;
                     a -= take;
-                    if (a > 0) sells.push({p, a});
+                    if (a > 0)
+                        sells.push({p, a});
                 }
-                if (amount > 0) buys.push({price, amount});
+                if (amount > 0)
+                    buys.push({price, amount});
             } else {
                 while (amount > 0 && !buys.empty() && buys.top().first >= price) {
                     auto [p, a] = buys.top();
@@ -26,9 +28,11 @@ class Solution {
                     int take = min(amount, a);
                     amount -= take;
                     a -= take;
-                    if (a > 0) buys.push({p, a});
+                    if (a > 0)
+                        buys.push({p, a});
                 }
-                if (amount > 0) sells.push({price, amount});
+                if (amount > 0)
+                    sells.push({price, amount});
             }
         }
         // Totals reach 1e5 * 1e9 = 1e14, so the sum is accumulated in

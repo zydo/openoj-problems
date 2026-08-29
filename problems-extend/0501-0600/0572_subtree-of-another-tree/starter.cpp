@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool isSubtree(TreeNode* root, TreeNode* subRoot) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool isSubtree(TreeNode *root, TreeNode *subRoot) { throw logic_error("TODO"); }
 };

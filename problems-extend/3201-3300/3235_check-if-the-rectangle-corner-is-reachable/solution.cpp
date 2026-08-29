@@ -34,15 +34,13 @@ class Solution {
                     unite(parent, i, j);
             }
         }
-        return find(parent, left) != find(parent, right) &&
-               find(parent, left) != find(parent, bottom) &&
-               find(parent, right) != find(parent, top) &&
-               find(parent, top) != find(parent, bottom);
+        return find(parent, left) != find(parent, right) && find(parent, left) != find(parent, bottom) &&
+               find(parent, right) != find(parent, top) && find(parent, top) != find(parent, bottom);
     }
 
   private:
-    static bool meetsEdge(long long cx, long long cy, long long radius, long long fixed,
-                          bool vertical, long long xCorner, long long yCorner) {
+    static bool meetsEdge(long long cx, long long cy, long long radius, long long fixed, bool vertical,
+                          long long xCorner, long long yCorner) {
         long long px = vertical ? fixed : max(0LL, min(cx, xCorner));
         long long py = vertical ? max(0LL, min(cy, yCorner)) : fixed;
         return (cx - px) * (cx - px) + (cy - py) * (cy - py) <= radius * radius;
@@ -56,7 +54,5 @@ class Solution {
         return node;
     }
 
-    static void unite(vector<int> &parent, int a, int b) {
-        parent[find(parent, a)] = find(parent, b);
-    }
+    static void unite(vector<int> &parent, int a, int b) { parent[find(parent, a)] = find(parent, b); }
 };

@@ -63,7 +63,9 @@ class Solution {
                 int row = cell[0] + direction[0];
                 int col = cell[1] + direction[1];
                 // Trees and empty cells are both walkable; only 0 is not.
-                if (row < 0 || row >= rows || col < 0 || col >= cols || forest[row][col] == 0 || distance[row][col] >= 0) {
+                if (
+                    row < 0 || row >= rows || col < 0 || col >= cols || forest[row][col] == 0 || distance[row][col] >= 0
+                ) {
                     continue;
                 }
                 if (row == targetRow && col == targetCol) {

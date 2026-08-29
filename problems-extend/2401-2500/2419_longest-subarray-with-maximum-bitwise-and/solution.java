@@ -9,7 +9,8 @@ class Solution {
         // is therefore the longest run of consecutive occurrences of the
         // maximum.
         int target = Arrays.stream(nums).max().getAsInt();
-        int best = 0, run = 0;
+        int best = 0,
+            run = 0;
         for (int num : nums) {
             if (num == target) {
                 best = Math.max(best, ++run);

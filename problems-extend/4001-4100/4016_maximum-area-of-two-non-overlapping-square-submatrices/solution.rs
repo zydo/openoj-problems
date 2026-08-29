@@ -8,8 +8,7 @@ impl Solution {
         let mut prefix = vec![vec![0i32; n + 1]; m + 1];
         for i in 0..m {
             for j in 0..n {
-                prefix[i + 1][j + 1] =
-                    prefix[i + 1][j] + prefix[i][j + 1] - prefix[i][j] + mat[i][j];
+                prefix[i + 1][j + 1] = prefix[i + 1][j] + prefix[i][j + 1] - prefix[i][j] + mat[i][j];
             }
         }
         let mut lo: usize = 0;

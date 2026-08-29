@@ -6,7 +6,8 @@ class Solution {
         // lo (everything still unused is larger), a 'D' with hi — the pinned
         // canonical construction.
         int n = s.length();
-        int lo = 0, hi = n;
+        int lo = 0,
+            hi = n;
         int[] perm = new int[n + 1];
         int k = 0;
         for (int i = 0; i < n; ++i) {

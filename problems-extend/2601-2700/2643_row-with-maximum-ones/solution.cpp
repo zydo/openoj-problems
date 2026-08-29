@@ -11,7 +11,8 @@ class Solution {
         for (size_t row_index = 0; row_index < mat.size(); ++row_index) {
             int count = 0;
             for (int value : mat[row_index]) {
-                if (value == 1) ++count;
+                if (value == 1)
+                    ++count;
             }
             if (count > best_count) {
                 best_count = count;

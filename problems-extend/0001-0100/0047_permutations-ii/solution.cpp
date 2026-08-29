@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> permuteUnique(vector<int>& nums) {
+    vector<vector<int>> permuteUnique(vector<int> &nums) {
         // Sort in place: every position chooses among the remaining values in
         // ascending order, so the finished permutations emerge in
         // lexicographic order.
@@ -15,7 +15,7 @@ class Solution {
     }
 
   private:
-    void backtrack(vector<int>& arr, vector<bool>& used, vector<int>& current, vector<vector<int>>& result) {
+    void backtrack(vector<int> &arr, vector<bool> &used, vector<int> &current, vector<vector<int>> &result) {
         if (current.size() == arr.size()) {
             // Every position filled: snapshot the finished permutation.
             result.push_back(current);

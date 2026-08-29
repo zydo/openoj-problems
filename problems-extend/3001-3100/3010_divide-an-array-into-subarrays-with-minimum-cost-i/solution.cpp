@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimumCost(vector<int>& nums) {
+    int minimumCost(vector<int> &nums) {
         int smallest = min(nums[1], nums[2]);
         int second = max(nums[1], nums[2]);
         for (int index = 3; index < static_cast<int>(nums.size()); index++) {

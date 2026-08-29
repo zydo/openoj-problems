@@ -27,9 +27,7 @@ class ImCase {
     drive(ImmutableHelper) {
         const helper = new ImmutableHelper(this.obj);
         for (const script of this.mutators) {
-            this.results.push(
-                helper.produce((draft) => this.applyScript(draft, script)),
-            );
+            this.results.push(helper.produce((draft) => this.applyScript(draft, script)));
         }
     }
 
@@ -65,13 +63,7 @@ class ImCase {
                 case "mul": {
                     const right = stack.pop();
                     const left = stack.pop();
-                    stack.push(
-                        op.op === "add"
-                            ? left + right
-                            : op.op === "sub"
-                              ? left - right
-                              : left * right,
-                    );
+                    stack.push(op.op === "add" ? left + right : op.op === "sub" ? left - right : left * right);
                     break;
                 }
                 case "set": {

@@ -1,10 +1,5 @@
 impl Solution {
-    pub fn good_binary_strings(
-        min_length: i32,
-        max_length: i32,
-        one_group: i32,
-        zero_group: i32,
-    ) -> i32 {
+    pub fn good_binary_strings(min_length: i32, max_length: i32, one_group: i32, zero_group: i32) -> i32 {
         // dp[i] counts good strings of length i: peel off the final run of
         // equal characters — its size is a positive multiple of oneGroup or
         // zeroGroup, and what remains is any shorter good string (or nothing).

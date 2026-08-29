@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countSubstrings(string s, string t) {
         // same[j] = length of the exact-match run ending at s[i-1], t[j-1].
         // diff[j] = length of the run ending there with exactly one

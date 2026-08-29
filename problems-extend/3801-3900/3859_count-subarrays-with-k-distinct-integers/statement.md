@@ -54,4 +54,4 @@ Use sliding window.
 
 ### Hint 2
 
-Use the reduction: answer = at_most(k) - at_most(k-1). at_most(K) = number of subarrays with  distinct values where every present value appears >= m times.
+Use the reduction: answer = at_most(k) - at_most(k-1). at_most(K) = number of subarrays with distinct values where every present value appears >= m times.

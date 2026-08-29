@@ -3,6 +3,6 @@
  * @param {string[]} words
  * @return {number[][]}
  */
-var indexPairs = function(text, words) {
+var indexPairs = function (text, words) {
     throw new Error("TODO");
 };

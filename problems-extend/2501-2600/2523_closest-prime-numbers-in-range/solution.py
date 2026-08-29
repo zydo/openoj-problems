@@ -23,10 +23,7 @@ class Solution:
         for n in range(left, right + 1):
             if not sieve[n]:
                 continue
-            if (
-                previous != -1
-                and (best_pair[0] == -1 or n - previous < best_pair[1] - best_pair[0])
-            ):
+            if previous != -1 and (best_pair[0] == -1 or n - previous < best_pair[1] - best_pair[0]):
                 best_pair = [previous, n]
             previous = n
         return best_pair

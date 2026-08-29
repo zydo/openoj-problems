@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> fourSum(vector<int>& nums, int target) {
+    vector<vector<int>> fourSum(vector<int> &nums, int target) {
         // Sort in place: every emitted quadruplet is ascending, and the
         // i-then-j scan emits the quadruplets in lexicographic order.
         sort(nums.begin(), nums.end());

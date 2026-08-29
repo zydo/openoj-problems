@@ -7,7 +7,10 @@ pub struct FirstUnique {
 
 impl FirstUnique {
     pub fn new(nums: Vec<i64>) -> Self {
-        let mut design = FirstUnique { counts: HashMap::new(), queue: VecDeque::new() };
+        let mut design = FirstUnique {
+            counts: HashMap::new(),
+            queue: VecDeque::new(),
+        };
         for value in nums {
             design.add(value);
         }

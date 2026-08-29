@@ -5,8 +5,11 @@ class Solution {
         // or the largest value times the two smallest — two negatives whose
         // product is a big positive. Track all five extremes in one pass;
         // no sort needed.
-        int max1 = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE, max3 = Integer.MIN_VALUE;
-        int min1 = Integer.MAX_VALUE, min2 = Integer.MAX_VALUE;
+        int max1 = Integer.MIN_VALUE,
+            max2 = Integer.MIN_VALUE,
+            max3 = Integer.MIN_VALUE;
+        int min1 = Integer.MAX_VALUE,
+            min2 = Integer.MAX_VALUE;
         for (int value : nums) {
             if (value >= max1) {
                 max3 = max2;

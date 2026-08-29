@@ -24,7 +24,7 @@ class Solution {
                 }
                 // Same-age pairs cannot target oneself, so the diagonal
                 // counts count*(count - 1), not count*count.
-                total += (a == b) ? count[a] * (count[b] - 1) : count[a] * count[b];
+                total += a == b ? count[a] * (count[b] - 1) : count[a] * count[b];
             }
         }
         return total;

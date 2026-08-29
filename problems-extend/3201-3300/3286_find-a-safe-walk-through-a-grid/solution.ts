@@ -5,9 +5,7 @@ function findSafeWalk(grid: number[][], health: number): boolean {
     const budget = health - 1;
     const m = grid.length;
     const n = grid[0].length;
-    const dist: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(m * n + 1),
-    );
+    const dist: number[][] = Array.from({ length: m }, () => new Array(n).fill(m * n + 1));
     dist[0][0] = grid[0][0];
     const queue: [number, number][] = [[0, 0]];
     while (queue.length > 0) {

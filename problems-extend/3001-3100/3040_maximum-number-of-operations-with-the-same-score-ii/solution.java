@@ -8,12 +8,12 @@ class Solution {
         int endPair = nums[0] + nums[n - 1];
         int tailPair = nums[n - 2] + nums[n - 1];
         int best = 0;
-        int[] openingScores = {headPair, endPair, tailPair};
+        int[] openingScores = { headPair, endPair, tailPair };
         for (int target : openingScores) {
             // Every operation deletes exactly two elements, so a window keeps
             // its width parity; roll one dp layer per reachable width.
             int[] previous = new int[n + 2];
-            for (int width = 2 + n % 2; width <= n; width += 2) {
+            for (int width = 2 + (n % 2); width <= n; width += 2) {
                 int[] current = new int[n + 2];
                 for (int left = 0; left + width <= n; left++) {
                     int right = left + width - 1;

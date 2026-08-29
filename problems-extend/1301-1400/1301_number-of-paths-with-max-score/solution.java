@@ -14,8 +14,8 @@ class Solution {
         }
         score[n - 1][n - 1] = 0;
         ways[n - 1][n - 1] = 1;
-        int[] di = {1, 0, 1};
-        int[] dj = {0, 1, 1};
+        int[] di = { 1, 0, 1 };
+        int[] dj = { 0, 1, 1 };
         // Sweep bottom-up so every incoming cell (below, right, below-right)
         // is already resolved when a cell is visited. The start square is
         // seeded above and skipped here.
@@ -41,15 +41,15 @@ class Solution {
                 }
                 if (best >= 0) {
                     char cell = board[i].charAt(j);
-                    int digit = (cell >= '1' && cell <= '9') ? cell - '0' : 0;
+                    int digit = cell >= '1' && cell <= '9' ? cell - '0' : 0;
                     score[i][j] = best + digit;
                     ways[i][j] = total % MOD;
                 }
             }
         }
         if (ways[0][0] == 0) {
-            return new int[] {0, 0};
+            return new int[] { 0, 0 };
         }
-        return new int[] {score[0][0], ways[0][0]};
+        return new int[] { score[0][0], ways[0][0] };
     }
 }

@@ -11,14 +11,16 @@ class Solution {
         // suffix[i] = OR of nums[i:], so the OR of every element except i
         // is prefix | suffix in O(1) while i sweeps left to right.
         vector<long long> suffix(n + 1, 0);
-        for (int i = n - 1; i >= 0; --i) suffix[i] = suffix[i + 1] | nums[i];
+        for (int i = n - 1; i >= 0; --i)
+            suffix[i] = suffix[i + 1] | nums[i];
         long long best = 0;
         long long prefix = 0;
         for (int i = 0; i < n; ++i) {
             // The full OR with nums[i] << k swapped in for nums[i].
             long long shifted = static_cast<long long>(nums[i]) << k;
             long long candidate = prefix | shifted | suffix[i + 1];
-            if (candidate > best) best = candidate;
+            if (candidate > best)
+                best = candidate;
             prefix |= nums[i];
         }
         return best;

@@ -14,7 +14,7 @@ class Solution {
         // Every root starts with a 1, so length l carries exactly
         // 2^floor((l - 1) / 2) palindromes, all of them below n. The long
         // parameter keeps n (up to 10^15) positive and in range.
-        long count = 1;  // zero itself
+        long count = 1; // zero itself
         for (int l = 1; l < length; ++l) {
             count += 1L << ((l - 1) / 2);
         }

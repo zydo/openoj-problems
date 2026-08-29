@@ -1,4 +1,5 @@
 class Solution {
+
     public int[] elementInNums(int[] nums, int[][] queries) {
         int length = nums.length;
         int cycle = 2 * length;

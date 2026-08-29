@@ -18,12 +18,12 @@ class Solution {
             int e = r[1];
             if (s > cur) {
                 // Cells [cur, s - 1] meet no covering range.
-                tmp[count++] = new int[] {cur, s - 1};
+                tmp[count++] = new int[] { cur, s - 1 };
             }
             if (e + 1 > cur) cur = e + 1;
         }
         if (cur < n) {
-            tmp[count++] = new int[] {cur, n - 1};
+            tmp[count++] = new int[] { cur, n - 1 };
         }
         return Arrays.copyOf(tmp, count);
     }

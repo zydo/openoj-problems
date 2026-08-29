@@ -14,7 +14,7 @@ fewest lines that cover exactly that subset, built forward from
 be on the next line drawn, so it suffices to branch on how that line
 looks: either it covers `i` alone (needed when `i` is the last point
 left), or it passes through one more uncovered point `j` — and then it
-may as well cover *every* point collinear with the pair, since extra
+may as well cover _every_ point collinear with the pair, since extra
 coverage is free. A cross-product comparison `(j - i) × (k - i) = 0`
 decides collinearity in pure integer arithmetic, dodging slopes and
 division; with coordinates bounded by 100 every product stays far

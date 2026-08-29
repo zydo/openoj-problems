@@ -2,6 +2,7 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 
 class Solution {
+
     private int nonDecreasingCost(int[] values) {
         PriorityQueue<Integer> heap = new PriorityQueue<>(Collections.reverseOrder());
         long cost = 0;

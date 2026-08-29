@@ -26,8 +26,7 @@ class Solution {
         for (int i = 0; i < nums.length; ++i) reversed[i] = nums[nums.length - 1 - i];
         int[] right = smallerCounts(reversed);
         int big = 0;
-        for (int i = 0; i < nums.length; ++i)
-            if (left[i] >= k && right[nums.length - 1 - i] >= k) ++big;
+        for (int i = 0; i < nums.length; ++i) if (left[i] >= k && right[nums.length - 1 - i] >= k) ++big;
         return big;
     }
 }

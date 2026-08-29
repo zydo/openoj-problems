@@ -27,9 +27,11 @@ class Solution {
                 while (!stack.empty()) {
                     auto [u, parent, dist] = stack.back();
                     stack.pop_back();
-                    if (dist == 0) count++;
+                    if (dist == 0)
+                        count++;
                     for (auto &[v, w] : adj[u]) {
-                        if (v != parent) stack.push_back({v, u, (dist + w) % signalSpeed});
+                        if (v != parent)
+                            stack.push_back({v, u, (dist + w) % signalSpeed});
                     }
                 }
                 total += count;

@@ -12,7 +12,7 @@ correlated `NOT EXISTS` probe finds no `Ads` row with the same
 `customer_id` and a `timestamp BETWEEN start_time AND end_time`. Both
 matching conditions are load-bearing — the example's session `5` survives
 because customer `2`'s ads land at `17` and `20`, outside its `2`-`8`
-window, and an ad shown to a *different* customer during your session
+window, and an ad shown to a _different_ customer during your session
 never counts against it (session `1` of a hypothetical cross-customer ad
 would stay ad-free). `BETWEEN` makes both window ends inclusive, which
 the example itself exercises: the ad at time `5` covers session `1`

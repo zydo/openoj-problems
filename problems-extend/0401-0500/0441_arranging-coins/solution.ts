@@ -10,7 +10,7 @@ function arrangeCoins(n: number): number {
     let hi = n;
     while (lo <= hi) {
         const mid = Math.floor((lo + hi) / 2);
-        if (mid * (mid + 1) / 2 <= n) {
+        if ((mid * (mid + 1)) / 2 <= n) {
             lo = mid + 1;
         } else {
             hi = mid - 1;

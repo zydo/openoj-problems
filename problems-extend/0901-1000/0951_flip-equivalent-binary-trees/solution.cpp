@@ -9,8 +9,10 @@ class Solution {
         while (!pending.empty()) {
             auto [a, b] = pending.back();
             pending.pop_back();
-            if (a == nullptr && b == nullptr) continue;
-            if (a == nullptr || b == nullptr || a->val != b->val) return false;
+            if (a == nullptr && b == nullptr)
+                continue;
+            if (a == nullptr || b == nullptr || a->val != b->val)
+                return false;
             if (aligned(a->left, b->left) && aligned(a->right, b->right)) {
                 pending.push_back({a->left, b->left});
                 pending.push_back({a->right, b->right});
@@ -30,7 +32,8 @@ class Solution {
     // only when they coincide, so testing the straight one first and
     // falling back to the swapped one covers every flip choice.
     bool aligned(TreeNode *a, TreeNode *b) {
-        if (a == nullptr || b == nullptr) return a == b;
+        if (a == nullptr || b == nullptr)
+            return a == b;
         return a->val == b->val;
     }
 };

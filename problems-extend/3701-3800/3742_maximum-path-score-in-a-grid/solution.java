@@ -3,7 +3,8 @@ import java.util.Arrays;
 class Solution {
 
     public int maxPathScore(int[][] grid, int k) {
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         // A path starts on a free cell, so it can charge at most m + n - 2
         // times: budget states beyond min(k, m + n - 2) cannot occur.
         int cap = Math.min(k, m + n - 2);

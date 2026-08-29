@@ -25,8 +25,4 @@ class Solution:
 
         left = smaller_counts(nums)
         right = smaller_counts(nums[::-1])[::-1]
-        return sum(
-            1
-            for i in range(len(nums))
-            if left[i] >= k and right[i] >= k
-        )
+        return sum(1 for i in range(len(nums)) if left[i] >= k and right[i] >= k)

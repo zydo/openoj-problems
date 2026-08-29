@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    long long taskSchedulerII(vector<int>& tasks, int space) {
+    long long taskSchedulerII(vector<int> &tasks, int space) {
         // Greedily complete each task on the earliest legal day: breaks only
         // ever help by making a later same-type task legal sooner. Jump the
         // clock to last[type] + space + 1 when the next task is still

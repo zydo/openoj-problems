@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int distanceTraveled(int mainTank, int additionalTank) {
         // The truck burns fuel one liter at a time at 10 km per liter,
         // and every fifth liter burned triggers an immediate transfer

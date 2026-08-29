@@ -26,7 +26,10 @@ impl Solution {
                 heap.push(Reverse(item));
             }
         }
-        let mut survivors: Vec<(i32, &str)> = heap.into_iter().map(|Reverse((count, Reverse(word)))| (count, word)).collect();
+        let mut survivors: Vec<(i32, &str)> = heap
+            .into_iter()
+            .map(|Reverse((count, Reverse(word)))| (count, word))
+            .collect();
         // Survivors are exactly the top k by (higher count, then smaller
         // word); emit them in that order.
         survivors.sort_by(|a, b| b.0.cmp(&a.0).then_with(|| a.1.cmp(&b.1)));

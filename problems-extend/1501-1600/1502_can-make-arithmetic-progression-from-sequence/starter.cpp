@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool canMakeArithmeticProgression(vector<int>& arr) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool canMakeArithmeticProgression(vector<int> &arr) { throw logic_error("TODO"); }
 };

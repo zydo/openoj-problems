@@ -28,7 +28,7 @@ class Solution {
         // Ascending digits, each repeated as often as it was spelled.
         string result;
         for (int d = 0; d < 10; ++d) {
-            result.append(digits[d], (char) ('0' + d));
+            result.append(digits[d], (char)('0' + d));
         }
         return result;
     }

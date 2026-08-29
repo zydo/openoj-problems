@@ -1,10 +1,32 @@
 SELECT
   driver_id,
   driver_name,
-  ROUND(AVG(CASE WHEN m <= 6 THEN eff END), 2) AS first_half_avg,
-  ROUND(AVG(CASE WHEN m >= 7 THEN eff END), 2) AS second_half_avg,
   ROUND(
-    AVG(CASE WHEN m >= 7 THEN eff END) - AVG(CASE WHEN m <= 6 THEN eff END),
+    AVG(
+      CASE
+        WHEN m <= 6 THEN eff
+      END
+    ),
+    2
+  ) AS first_half_avg,
+  ROUND(
+    AVG(
+      CASE
+        WHEN m >= 7 THEN eff
+      END
+    ),
+    2
+  ) AS second_half_avg,
+  ROUND(
+    AVG(
+      CASE
+        WHEN m >= 7 THEN eff
+      END
+    ) - AVG(
+      CASE
+        WHEN m <= 6 THEN eff
+      END
+    ),
     2
   ) AS efficiency_improvement
 FROM

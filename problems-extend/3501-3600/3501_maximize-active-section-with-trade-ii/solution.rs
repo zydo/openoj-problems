@@ -21,9 +21,7 @@ impl Solution {
             }
         }
         let groups = starts.len();
-        let ends: Vec<i32> = (0..groups)
-            .map(|k| (starts[k] + lens[k] as usize - 1) as i32)
-            .collect();
+        let ends: Vec<i32> = (0..groups).map(|k| (starts[k] + lens[k] as usize - 1) as i32).collect();
 
         // Sparse table for range maximum over adjacent sums lens[k]+lens[k+1].
         let size = groups as i64 - 1;

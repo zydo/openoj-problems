@@ -33,8 +33,7 @@ impl Solution {
                 let s2 = src[i + 2];
                 let row_triple = 26 * (i + 3);
                 for ch in 0..26i32 {
-                    let v = (si - ch).abs() + (s1 - ch).abs() + (s2 - ch).abs()
-                        + a[row_triple + ch as usize];
+                    let v = (si - ch).abs() + (s1 - ch).abs() + (s2 - ch).abs() + a[row_triple + ch as usize];
                     if v < best1 {
                         best2 = best1;
                         idx2 = idx1;

@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    long long pickGifts(std::vector<int>& gifts, int k) {
+    long long pickGifts(std::vector<int> &gifts, int k) {
         // Live-maximum simulation: each second the richest pile shrinks
         // to floor(sqrt(value)), which only ever lowers it, so a
         // max-heap replays the process; ties change nothing because any
@@ -15,10 +15,11 @@ class Solution {
         for (int s = 0; s < k; ++s) {
             long long value = heap.top();
             heap.pop();
-            long long root =
-                static_cast<long long>(std::sqrt(static_cast<double>(value)));
-            while (root * root > value) --root;
-            while ((root + 1) * (root + 1) <= value) ++root;
+            long long root = static_cast<long long>(std::sqrt(static_cast<double>(value)));
+            while (root * root > value)
+                --root;
+            while ((root + 1) * (root + 1) <= value)
+                ++root;
             heap.push(root);
         }
         long long total = 0;

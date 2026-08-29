@@ -11,9 +11,9 @@ Now Bob will ask Alice to perform all operations in sequence:
 
 - If `operations[i] == 0`, append a copy of word to itself.
 - If `operations[i] == 1`, generate a new string by changing each character
-in word to its next character in the English alphabet, and append it to the
-original word. For example, performing the operation on `"c"` generates
-`"cd"` and performing the operation on `"zb"` generates `"zbac"`.
+  in word to its next character in the English alphabet, and append it to the
+  original word. For example, performing the operation on `"c"` generates
+  `"cd"` and performing the operation on `"zb"` generates `"zbac"`.
 
 Return the value of the kth character in word after performing all the
 operations.
@@ -52,7 +52,7 @@ Initially, word = "a". Alice performs the four operations as follows:
 - `1 <= operations.length <= 100`
 - `operations[i]` is either `0` or `1`.
 - The input is generated such that word has at least k characters after all
-operations.
+  operations.
 
 ## Hints
 

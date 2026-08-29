@@ -1,7 +1,6 @@
 class Solution {
-public:
-    int dietPlanPerformance(vector<int>& calories, int k, int lower,
-                            int upper) {
+  public:
+    int dietPlanPerformance(vector<int> &calories, int k, int lower, int upper) {
         long long points = 0;
         // Sum the first window once; every later window shares k-1 days
         // with its predecessor.
@@ -17,7 +16,7 @@ public:
         return (int)points;
     }
 
-private:
+  private:
     int score(long long total, int lower, int upper) {
         if (total < lower) {
             return -1;

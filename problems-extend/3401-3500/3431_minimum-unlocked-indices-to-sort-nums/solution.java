@@ -28,7 +28,7 @@ class Solution {
         }
         int total = 0;
         for (int i = 0; i < n; i++) {
-            boolean forced = first2 <= i && i < last1 || first3 <= i && i < last2;
+            boolean forced = (first2 <= i && i < last1) || (first3 <= i && i < last2);
             if (locked[i] == 1 && forced) {
                 total++;
             }

@@ -8,7 +8,12 @@ var hasValidPath = function (grid) {
     // side AND the target opens the opposite side, so a plain BFS from
     // (0,0) over those mutual connections decides reachability.
     const streetSides = { 1: [0, 1], 2: [2, 3], 3: [0, 3], 4: [1, 3], 5: [0, 2], 6: [1, 2] };
-    const step = [[0, -1], [0, 1], [-1, 0], [1, 0]];
+    const step = [
+        [0, -1],
+        [0, 1],
+        [-1, 0],
+        [1, 0],
+    ];
     const opposite = [1, 0, 3, 2];
     const m = grid.length;
     const n = grid[0].length;

@@ -1,11 +1,9 @@
-use std::rc::Rc;
 use std::cell::RefCell;
 use std::collections::HashMap;
+use std::rc::Rc;
 
 impl Solution {
-    pub fn clone_graph(
-        node: Option<Rc<RefCell<GraphNode>>>,
-    ) -> Option<Rc<RefCell<GraphNode>>> {
+    pub fn clone_graph(node: Option<Rc<RefCell<GraphNode>>>) -> Option<Rc<RefCell<GraphNode>>> {
         fn build(
             node: &Rc<RefCell<GraphNode>>,
             clones: &mut HashMap<i32, Rc<RefCell<GraphNode>>>,

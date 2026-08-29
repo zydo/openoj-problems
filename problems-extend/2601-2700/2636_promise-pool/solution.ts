@@ -6,10 +6,7 @@
 // pending counter resolving the aggregate on the quiet pool (nothing
 // running, nothing left to start) also covers the empty-input case: the
 // returned promise resolves before a single await happens.
-function promisePool(
-    functions: (() => Promise<null>)[],
-    n: number,
-): Promise<void> {
+function promisePool(functions: (() => Promise<null>)[], n: number): Promise<void> {
     return new Promise((resolve) => {
         let nextIndex = 0;
         let running = 0;

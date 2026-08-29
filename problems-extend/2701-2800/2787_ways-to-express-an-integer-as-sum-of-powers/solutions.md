@@ -13,7 +13,7 @@ and `dp[0] = 1` seeds the one empty set.
 
 Adding a new power `p` splits every subset into those using it and those not,
 so the update is `dp[t] += dp[t - p]` — provided `dp[t - p]` still holds the
-count from *before* `p` existed. Walking `t` from `n` down to `p` guarantees
+count from _before_ `p` existed. Walking `t` from `n` down to `p` guarantees
 exactly that: each entry is read at its pre-`p` value before being
 overwritten, so no subset can take `p` twice. Iterating `t` upward instead
 would read freshly written entries and silently count multisets — the

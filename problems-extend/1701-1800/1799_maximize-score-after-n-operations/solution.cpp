@@ -20,12 +20,15 @@ class Solution {
             int k = __builtin_popcount(mask) / 2 + 1;
             int base = dp[mask];
             for (int i = 0; i < m; ++i) {
-                if (mask >> i & 1) continue;
+                if (mask >> i & 1)
+                    continue;
                 for (int j = i + 1; j < m; ++j) {
-                    if (mask >> j & 1) continue;
+                    if (mask >> j & 1)
+                        continue;
                     int cand = base + k * g[i][j];
                     int next = mask | 1 << i | 1 << j;
-                    if (cand > dp[next]) dp[next] = cand;
+                    if (cand > dp[next])
+                        dp[next] = cand;
                 }
             }
         }

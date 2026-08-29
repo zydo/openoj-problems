@@ -18,10 +18,9 @@ class Solution {
             string digit;
         };
         TrieNode root;
-        const pair<const char *, const char *> words[10] = {
-                {"zero", "0"}, {"one", "1"}, {"two", "2"}, {"three", "3"},
-                {"four", "4"}, {"five", "5"}, {"six", "6"}, {"seven", "7"},
-                {"eight", "8"}, {"nine", "9"}};
+        const pair<const char *, const char *> words[10] = {{"zero", "0"},  {"one", "1"},  {"two", "2"}, {"three", "3"},
+                                                            {"four", "4"},  {"five", "5"}, {"six", "6"}, {"seven", "7"},
+                                                            {"eight", "8"}, {"nine", "9"}};
         for (const auto &[word, digit] : words) {
             TrieNode *node = &root;
             for (const char *ch = word; *ch != '\0'; ++ch) {

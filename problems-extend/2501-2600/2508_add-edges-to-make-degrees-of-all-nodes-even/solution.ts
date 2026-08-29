@@ -9,8 +9,7 @@ function isPossible(n: number, edges: number[][]): boolean {
         ++degree[v];
         seen.add(Math.min(u, v) * 200001 + Math.max(u, v));
     }
-    const linked = (a: number, b: number): boolean =>
-        seen.has(Math.min(a, b) * 200001 + Math.max(a, b));
+    const linked = (a: number, b: number): boolean => seen.has(Math.min(a, b) * 200001 + Math.max(a, b));
     const odds: number[] = [];
     for (let node = 1; node <= n; ++node) {
         if (degree[node] % 2 === 1) odds.push(node);
@@ -28,9 +27,5 @@ function isPossible(n: number, edges: number[][]): boolean {
         return false;
     }
     const [w, x, y, z] = odds;
-    return (
-        (!linked(w, x) && !linked(y, z)) ||
-        (!linked(w, y) && !linked(x, z)) ||
-        (!linked(w, z) && !linked(x, y))
-    );
+    return (!linked(w, x) && !linked(y, z)) || (!linked(w, y) && !linked(x, z)) || (!linked(w, z) && !linked(x, y));
 }

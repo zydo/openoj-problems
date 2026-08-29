@@ -5,7 +5,7 @@
 
 class Solution {
   public:
-    long long maxMatrixSum(vector<vector<int>>& matrix) {
+    long long maxMatrixSum(vector<vector<int>> &matrix) {
         // Each operation flips two border-adjacent cells, so the parity of
         // the negative count is invariant: an even count makes every value
         // positive, an odd count must leave the smallest-magnitude value
@@ -13,14 +13,16 @@ class Solution {
         long long total = 0;
         int negatives = 0;
         int smallest = INT_MAX;
-        for (const vector<int>& row : matrix) {
+        for (const vector<int> &row : matrix) {
             for (int value : row) {
                 total += abs(value);
-                if (value < 0) ++negatives;
+                if (value < 0)
+                    ++negatives;
                 smallest = min(smallest, abs(value));
             }
         }
-        if (negatives % 2) total -= 2LL * smallest;
+        if (negatives % 2)
+            total -= 2LL * smallest;
         return total;
     }
 };

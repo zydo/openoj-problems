@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int largestValsFromLabels(vector<int>& values, vector<int>& labels, int numWanted, int useLimit) {
+  public:
+    int largestValsFromLabels(vector<int> &values, vector<int> &labels, int numWanted, int useLimit) {
         throw logic_error("TODO");
     }
 };

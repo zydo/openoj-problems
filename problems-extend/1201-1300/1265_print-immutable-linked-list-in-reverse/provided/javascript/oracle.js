@@ -6,9 +6,7 @@
 class ImmutableListNode {
     constructor(construction, budget) {
         const raw = String(construction[0] ?? "");
-        const values = raw.length > 0
-            ? raw.split(",").map((part) => parseInt(part, 10))
-            : [];
+        const values = raw.length > 0 ? raw.split(",").map((part) => parseInt(part, 10)) : [];
         this.value = values.length > 0 ? values[0] : 0;
         this.budget = Number(budget);
         this.printed = [];

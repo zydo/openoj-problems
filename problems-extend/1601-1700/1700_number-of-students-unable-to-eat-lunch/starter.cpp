@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int countStudents(vector<int>& students, vector<int>& sandwiches) {
-        throw logic_error("TODO");
-    }
+  public:
+    int countStudents(vector<int> &students, vector<int> &sandwiches) { throw logic_error("TODO"); }
 };

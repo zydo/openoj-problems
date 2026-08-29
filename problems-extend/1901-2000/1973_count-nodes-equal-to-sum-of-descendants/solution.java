@@ -28,9 +28,7 @@ class Solution {
         int count = 0;
         for (int i = order.size() - 1; i >= 0; i--) {
             TreeNode node = order.get(i);
-            long total = node.val
-                    + subtree.getOrDefault(node.left, 0L)
-                    + subtree.getOrDefault(node.right, 0L);
+            long total = node.val + subtree.getOrDefault(node.left, 0L) + subtree.getOrDefault(node.right, 0L);
             subtree.put(node, total);
             if ((long) node.val == total - node.val) count++;
         }

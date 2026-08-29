@@ -71,5 +71,5 @@ smallest frequency in the answer. Suppose its frequency is x.
 
 Then, for every other character, we will count the number of occurrences
 that will be deleted. Suppose that the current character has y occurrences.
-If y   if y > x + k, we should delete y - x - k of such character.
+If y if y > x + k, we should delete y - x - k of such character.
 Otherwise we don’t need to delete it.

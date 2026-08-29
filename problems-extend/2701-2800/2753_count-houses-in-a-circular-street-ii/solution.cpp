@@ -1,8 +1,8 @@
 class Street;
 
 class Solution {
-public:
-    int houseCount(Street& street, int k) {
+  public:
+    int houseCount(Street &street, int k) {
         // Anchor on an open door first; it becomes the round's beacon.
         while (!street.isDoorOpen()) {
             street.moveRight();

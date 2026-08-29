@@ -10,7 +10,7 @@ class Solution {
         long answer = 0;
         long place = 1;
         while (remaining > 0) {
-            answer += remaining % 9 * place;
+            answer += (remaining % 9) * place;
             remaining /= 9;
             place *= 10;
         }

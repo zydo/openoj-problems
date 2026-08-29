@@ -16,12 +16,12 @@ class Solution {
         long[] fact = new long[n + 1];
         fact[0] = 1;
         for (int i = 1; i <= n; i++) {
-            fact[i] = fact[i - 1] * i % mod;
+            fact[i] = (fact[i - 1] * i) % mod;
         }
         long[] invFact = new long[n + 1];
         invFact[n] = modPow(fact[n], mod - 2, mod);
         for (int i = n; i > 0; i--) {
-            invFact[i - 1] = invFact[i] * i % mod;
+            invFact[i - 1] = (invFact[i] * i) % mod;
         }
         int[] cnt = new int[26];
         for (int i = 0; i < n; i++) {
@@ -29,7 +29,7 @@ class Solution {
         }
         long den = 1;
         for (int k = 0; k < 26; k++) {
-            den = den * invFact[cnt[k]] % mod;
+            den = (den * invFact[cnt[k]]) % mod;
         }
         long ans = 0;
         for (int i = 0; i < n; i++) {
@@ -38,8 +38,8 @@ class Solution {
             for (int a = 0; a < c; a++) {
                 smaller += cnt[a];
             }
-            ans = (ans + fact[n - 1 - i] * den % mod * smaller) % mod;
-            den = den * cnt[c] % mod;
+            ans = (ans + ((fact[n - 1 - i] * den) % mod) * smaller) % mod;
+            den = (den * cnt[c]) % mod;
             cnt[c]--;
         }
         return (int) ans;
@@ -50,9 +50,9 @@ class Solution {
         base %= mod;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             exp >>= 1;
         }
         return result;

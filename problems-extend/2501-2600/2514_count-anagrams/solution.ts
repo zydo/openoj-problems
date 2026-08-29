@@ -19,8 +19,7 @@ function countAnagrams(s: string): number {
         return result;
     };
     // Inverse factorial for one letter count via Fermat's little theorem.
-    const inverseFactorMod = (count: number): bigint =>
-        modPow(factMod(count), MOD - 2n);
+    const inverseFactorMod = (count: number): bigint => modPow(factMod(count), MOD - 2n);
     let answer = 1n;
     for (const word of s.split(" ")) {
         const counts = new Array<number>(26).fill(0);

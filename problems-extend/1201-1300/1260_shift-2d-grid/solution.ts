@@ -1,5 +1,6 @@
 function shiftGrid(grid: number[][], k: number): number[][] {
-    const m = grid.length, n = grid[0].length;
+    const m = grid.length,
+        n = grid[0].length;
     const total = m * n;
     k %= total;
     // One shift = a cyclic right-rotation of the flattened grid.

@@ -16,10 +16,9 @@ class Solution {
         // sum widens to long.
         Map<Integer, Integer> cnt = new HashMap<>();
         Map<Integer, Integer> bucket = new HashMap<>();
-        PriorityQueue<int[]> heap =
-                new PriorityQueue<>((left, right) -> left[0] != right[0]
-                        ? Integer.compare(left[0], right[0])
-                        : Integer.compare(left[1], right[1]));
+        PriorityQueue<int[]> heap = new PriorityQueue<>((left, right) ->
+            left[0] != right[0] ? Integer.compare(left[0], right[0]) : Integer.compare(left[1], right[1])
+        );
         int topFreq = 0;
         long total = 0;
         for (int right = 0; right < nums.length; right++) {
@@ -30,7 +29,7 @@ class Solution {
                 bucket.merge(entering - 1, -1, Integer::sum);
             }
             topFreq = Math.max(topFreq, entering);
-            heap.offer(new int[] {-entering, nums[right]});
+            heap.offer(new int[] { -entering, nums[right] });
             if (right >= k) {
                 // Leave: drop the exiting value one frequency down; only a
                 // one-step fall of the top frequency is ever possible.
@@ -38,7 +37,7 @@ class Solution {
                 bucket.merge(exiting + 1, -1, Integer::sum);
                 if (exiting > 0) {
                     bucket.merge(exiting, 1, Integer::sum);
-                    heap.offer(new int[] {-exiting, nums[right - k]});
+                    heap.offer(new int[] { -exiting, nums[right - k] });
                 }
                 if (bucket.getOrDefault(topFreq, 0) == 0) {
                     topFreq--;

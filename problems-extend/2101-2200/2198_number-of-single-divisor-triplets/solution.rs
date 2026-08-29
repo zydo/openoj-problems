@@ -20,9 +20,7 @@ impl Solution {
                         continue;
                     }
                     let s = (a + b + c) as i64;
-                    let hits = (s % a as i64 == 0) as i64
-                        + (s % b as i64 == 0) as i64
-                        + (s % c as i64 == 0) as i64;
+                    let hits = (s % a as i64 == 0) as i64 + (s % b as i64 == 0) as i64 + (s % c as i64 == 0) as i64;
                     if hits != 1 {
                         continue;
                     }
@@ -30,8 +28,7 @@ impl Solution {
                         let f = freq[a];
                         total += f * (f - 1) * (f - 2);
                     } else if a == b || b == c {
-                        let (twice, once) =
-                            if a == b { (a, c) } else { (b, a) };
+                        let (twice, once) = if a == b { (a, c) } else { (b, a) };
                         let f = freq[twice];
                         total += f * (f - 1) / 2 * freq[once] * 6;
                     } else {

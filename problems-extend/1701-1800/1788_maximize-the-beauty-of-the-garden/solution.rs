@@ -18,10 +18,7 @@ impl Solution {
             if v > 0 {
                 pos += v;
             }
-            seen
-                .entry(v)
-                .and_modify(|best| *best = (*best).min(pos))
-                .or_insert(pos);
+            seen.entry(v).and_modify(|best| *best = (*best).min(pos)).or_insert(pos);
         }
         answer
     }

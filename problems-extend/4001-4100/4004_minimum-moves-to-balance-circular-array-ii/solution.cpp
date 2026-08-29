@@ -4,12 +4,15 @@
 
 class Solution {
   public:
-    long long minMoves(vector<int>& balance) {
+    long long minMoves(vector<int> &balance) {
         int n = balance.size();
         long long sum = 0;
-        for (int x : balance) sum += x;
-        if (sum < 0) return -1;
-        if (n == 1) return 0;
+        for (int x : balance)
+            sum += x;
+        if (sum < 0)
+            return -1;
+        if (n == 1)
+            return 0;
         // total cost H(t) = |t| + internal line cost is convex in t; binary
         // search the integer minimizer
         long long bound = total(balance, 0);
@@ -26,7 +29,7 @@ class Solution {
     }
 
   private:
-    static long long total(const vector<int>& balance, long long t) {
+    static long long total(const vector<int> &balance, long long t) {
         long long inner = lineCost(balance, t);
         return (t < 0 ? -t : t) + inner;
     }
@@ -34,7 +37,7 @@ class Solution {
     // Minimum flow cost on the path 0..n-2 with the wrap edge fixed at
     // signed flow t: sweep positions keeping the convex suffix-min envelope
     // of the DP as a constant plus rising-flank breakpoints.
-    static long long lineCost(const vector<int>& balance, long long t) {
+    static long long lineCost(const vector<int> &balance, long long t) {
         int n = balance.size();
         long long cost = 0;
         long long delta = 0;

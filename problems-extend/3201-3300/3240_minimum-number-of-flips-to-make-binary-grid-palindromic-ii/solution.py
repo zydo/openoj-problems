@@ -11,12 +11,7 @@ class Solution:
         cost = 0
         for i in range(m // 2):
             for j in range(n // 2):
-                ones = (
-                    grid[i][j]
-                    + grid[i][n - 1 - j]
-                    + grid[m - 1 - i][j]
-                    + grid[m - 1 - i][n - 1 - j]
-                )
+                ones = grid[i][j] + grid[i][n - 1 - j] + grid[m - 1 - i][j] + grid[m - 1 - i][n - 1 - j]
                 cost += min(ones, 4 - ones)
         splits = uniforms = 0
         if m % 2 == 1:

@@ -14,7 +14,8 @@ class Solution {
         // 100 = 1,010,100, well inside the int range.
         IntUnaryOperator f = x -> (a * x + b) * x + c;
         int[] result = new int[nums.length];
-        int lo = 0, hi = nums.length - 1;
+        int lo = 0,
+            hi = nums.length - 1;
         int index = a >= 0 ? nums.length - 1 : 0;
         while (lo <= hi) {
             int left = f.applyAsInt(nums[lo]);

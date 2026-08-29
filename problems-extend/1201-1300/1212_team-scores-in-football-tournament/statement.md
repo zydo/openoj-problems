@@ -4,9 +4,9 @@
 
 Table: `Teams`
 
-| Column Name | Type |
-| ----------- | ---- |
-| team_id     | int  |
+| Column Name | Type    |
+| ----------- | ------- |
+| team_id     | int     |
 | team_name   | varchar |
 
 `team_id` is the column with unique values of this table.

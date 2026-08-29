@@ -1,11 +1,11 @@
 class Solution {
-public:
-    vector<int> elementInNums(vector<int>& nums, vector<vector<int>>& queries) {
+  public:
+    vector<int> elementInNums(vector<int> &nums, vector<vector<int>> &queries) {
         int length = static_cast<int>(nums.size());
         int cycle = 2 * length;
         vector<int> answer;
         answer.reserve(queries.size());
-        for (const auto& query : queries) {
+        for (const auto &query : queries) {
             int phase = query[0] % cycle;
             int index = query[1];
             if (phase < length) {

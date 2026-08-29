@@ -6,10 +6,7 @@
 // saved arguments at that instant and opens the next window anchored
 // there — matching the transcript contract on the judge's virtual clock.
 
-function throttle(
-    fn: (...args: any[]) => void,
-    t: number,
-): (...args: any[]) => void {
+function throttle(fn: (...args: any[]) => void, t: number): (...args: any[]) => void {
     let waiting = false;
     let saved: any[] | null = null;
     const onWindowEnd = (): void => {

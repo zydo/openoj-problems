@@ -1,19 +1,23 @@
-WITH ranked AS (
-  SELECT
-    id,
-    company,
-    salary,
-    ROW_NUMBER() OVER (
-      PARTITION BY
-        company
-      ORDER BY
-        salary,
-        id
-    ) AS rn,
-    COUNT(*) OVER (PARTITION BY company) AS cnt
-  FROM
-    Employee
-)
+WITH
+  ranked AS (
+    SELECT
+      id,
+      company,
+      salary,
+      ROW_NUMBER() OVER (
+        PARTITION BY
+          company
+        ORDER BY
+          salary,
+          id
+      ) AS rn,
+      COUNT(*) OVER (
+        PARTITION BY
+          company
+      ) AS cnt
+    FROM
+      Employee
+  )
 SELECT
   id,
   company,

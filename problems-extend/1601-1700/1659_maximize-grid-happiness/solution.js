@@ -24,8 +24,7 @@ var getMaxGridHappiness = function (m, n, introvertsCount, extrovertsCount) {
         [0, -60, -10],
         [0, -10, 40],
     ];
-    const fresh = () =>
-        Array.from({ length: width }, () => Array.from({ length: 7 }, () => new Array(7).fill(-1)));
+    const fresh = () => Array.from({ length: width }, () => Array.from({ length: 7 }, () => new Array(7).fill(-1)));
     let dp = fresh();
     dp[0][introvertsCount][extrovertsCount] = 0;
     for (let cell = 0; cell < m * n; cell += 1) {

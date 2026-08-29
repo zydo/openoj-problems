@@ -18,10 +18,10 @@ class Solution {
 
             long[] nOp = States.merge(st.op, States.bump(st.closed, size, a));
             long[] nOm = States.merge(st.om, States.bump(st.closed, size, -a));
-            long[] nClosed =
-                    States.merge(
-                            States.merge(st.closed, States.shiftAdd(st.op, size, -a)),
-                            States.shiftAdd(st.om, size, a));
+            long[] nClosed = States.merge(
+                States.merge(st.closed, States.shiftAdd(st.op, size, -a)),
+                States.shiftAdd(st.om, size, a)
+            );
 
             long[] nWp = st.wp.clone();
             long[] nWm = st.wm.clone();
@@ -38,10 +38,10 @@ class Solution {
             nWm = States.merge(nWm, States.shiftAdd(st.wmm, size, a));
 
             // The seam close reads the pre-step wp/wm, so it runs last.
-            long[] nFz =
-                    States.merge(
-                            States.merge(st.fz, States.shiftAdd(st.wp, size, -a)),
-                            States.shiftAdd(st.wm, size, a));
+            long[] nFz = States.merge(
+                States.merge(st.fz, States.shiftAdd(st.wp, size, -a)),
+                States.shiftAdd(st.wm, size, a)
+            );
 
             st.closed = nClosed;
             st.op = nOp;
@@ -68,6 +68,7 @@ class Solution {
     // Phase-1 vectors: wp/wm = the seam pair open, started +/-; wXY = seam X
     // and an open middle pair Y; fz = the seam pair has closed.
     private static class States {
+
         long[] closed, op, om, wp, wm, wpp, wpm, wmp, wmm, fz;
         final int size;
 

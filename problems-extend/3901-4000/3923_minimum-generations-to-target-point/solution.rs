@@ -40,6 +40,10 @@ impl Solution {
         }
 
         let answer = best[index(target[0] as usize, target[1] as usize, target[2] as usize)];
-        if answer == inf { -1 } else { answer }
+        if answer == inf {
+            -1
+        } else {
+            answer
+        }
     }
 }

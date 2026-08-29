@@ -6,7 +6,8 @@ class Solution {
         // Sort, then two pointers: advance lo on small sums, retreat hi on
         // large ones, tracking the largest sum below k.
         Arrays.sort(nums);
-        int lo = 0, hi = nums.length - 1;
+        int lo = 0,
+            hi = nums.length - 1;
         int best = -1;
         while (lo < hi) {
             int s = nums[lo] + nums[hi];

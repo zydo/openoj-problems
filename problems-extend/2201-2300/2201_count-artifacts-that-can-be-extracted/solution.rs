@@ -9,12 +9,7 @@ impl Solution {
         }
         let mut extracted = 0;
         for rect in &artifacts {
-            let (r1, c1, r2, c2) = (
-                rect[0] as usize,
-                rect[1] as usize,
-                rect[2] as usize,
-                rect[3] as usize,
-            );
+            let (r1, c1, r2, c2) = (rect[0] as usize, rect[1] as usize, rect[2] as usize, rect[3] as usize);
             let mut complete = true;
             'rect: for r in r1..=r2 {
                 for c in c1..=c2 {

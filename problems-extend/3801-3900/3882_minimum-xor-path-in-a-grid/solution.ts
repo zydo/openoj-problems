@@ -5,7 +5,8 @@ function minCost(grid: number[][]): number {
     const m = grid.length;
     const n = grid[0].length;
     const reach: boolean[][][] = Array.from({ length: m }, () =>
-        Array.from({ length: n }, () => new Array<boolean>(1024).fill(false)));
+        Array.from({ length: n }, () => new Array<boolean>(1024).fill(false)),
+    );
     reach[0][0][grid[0][0]] = true;
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {

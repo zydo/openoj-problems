@@ -1,12 +1,11 @@
 import java.util.Arrays;
 
 class Solution {
+
     public int numberOfPairs(int[][] points) {
         // Integer.compare, not subtraction: coordinates span +-10^9, so a
         // - b overflows int exactly at the extremes.
-        Arrays.sort(points,
-                    (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0])
-                                           : Integer.compare(b[1], a[1]));
+        Arrays.sort(points, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(b[1], a[1]));
         int n = points.length;
         int total = 0;
         for (int i = 0; i < n; i++) {

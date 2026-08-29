@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class GraphNode {
+
     public int val;
     public List<GraphNode> neighbors;
 

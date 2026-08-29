@@ -20,8 +20,7 @@ class Solution {
             dp[0] = prev[0] + (i == 1 ? 0 : waitCost[i - 1][0]) + (i + 1);
             for (int j = 1; j < n; j++) {
                 dp[j] =
-                    Math.min(prev[j] + waitCost[i - 1][j], dp[j - 1] + waitCost[i][j - 1]) +
-                    (long) (i + 1) * (j + 1);
+                    Math.min(prev[j] + waitCost[i - 1][j], dp[j - 1] + waitCost[i][j - 1]) + (long) (i + 1) * (j + 1);
             }
         }
         return dp[n - 1];

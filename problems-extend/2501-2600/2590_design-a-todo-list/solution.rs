@@ -16,16 +16,13 @@ pub struct TodoList {
 
 impl TodoList {
     pub fn new() -> Self {
-        TodoList { tasks: Vec::new(), next_id: 1 }
+        TodoList {
+            tasks: Vec::new(),
+            next_id: 1,
+        }
     }
 
-    pub fn addTask(
-        &mut self,
-        userId: i32,
-        taskDescription: String,
-        dueDate: i32,
-        tags: Vec<String>,
-    ) -> i32 {
+    pub fn addTask(&mut self, userId: i32, taskDescription: String, dueDate: i32, tags: Vec<String>) -> i32 {
         let id = self.next_id;
         self.next_id += 1;
         self.tasks.push(TodoTask {
@@ -72,6 +69,9 @@ impl TodoList {
             .map(|task| (task.due, task.description.as_str()))
             .collect();
         pending.sort_by_key(|&(due, _)| due);
-        pending.into_iter().map(|(_, description)| description.to_string()).collect()
+        pending
+            .into_iter()
+            .map(|(_, description)| description.to_string())
+            .collect()
     }
 }

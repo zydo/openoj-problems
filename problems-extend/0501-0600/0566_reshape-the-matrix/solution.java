@@ -4,7 +4,8 @@ class Solution {
         // A reshape can only permute elements, never create or destroy them,
         // so the target is legal exactly when the areas agree; any mismatch
         // returns the original matrix untouched.
-        int m = mat.length, n = mat[0].length;
+        int m = mat.length,
+            n = mat[0].length;
         if (r * c != m * n) {
             return mat;
         }

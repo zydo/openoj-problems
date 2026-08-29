@@ -4,8 +4,8 @@ from typing import List
 
 class Solution:
     def maxEqualFreq(self, nums: List[int]) -> int:
-        count = Counter()   # value -> occurrences
-        freq = Counter()    # occurrence count -> how many values have it
+        count = Counter()  # value -> occurrences
+        freq = Counter()  # occurrence count -> how many values have it
         best = 0
         for n, value in enumerate(nums, start=1):
             before = count[value]

@@ -34,8 +34,7 @@ impl Solution {
                 d[w - s.len() + k] = c;
             }
             let mut states: HashSet<i32> = HashSet::new();
-            let value =
-                |d: &[u8]| d.iter().fold(0i32, |acc, &c| acc * 10 + (c - b'0') as i32);
+            let value = |d: &[u8]| d.iter().fold(0i32, |acc, &c| acc * 10 + (c - b'0') as i32);
             states.insert(value(&d));
             for &(i, j) in &pairs {
                 d.swap(i, j);

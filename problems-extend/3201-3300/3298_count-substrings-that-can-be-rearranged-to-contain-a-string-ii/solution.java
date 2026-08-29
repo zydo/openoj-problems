@@ -32,9 +32,9 @@ class Solution {
                 }
                 r++;
             }
-            if (missing > 0)
-                // No window starting at l (or any later l) can cover word2.
-                break;
+            if (
+                missing > 0 // No window starting at l (or any later l) can cover word2.
+            ) break;
             total += (long) (n - (r - 1));
             // Drop word1[l] before moving to the next left end.
             int c = word1.charAt(l) - 'a';

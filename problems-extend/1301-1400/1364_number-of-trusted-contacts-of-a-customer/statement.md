@@ -4,11 +4,11 @@
 
 Table: `Customers`
 
-| Column Name | Type |
-| ----------- | ---- |
-| customer_id | int |
+| Column Name   | Type    |
+| ------------- | ------- |
+| customer_id   | int     |
 | customer_name | varchar |
-| email | varchar |
+| email         | varchar |
 
 customer_id is the column with unique values for this table.
 Each row of this table contains the name and the email of a customer of an
@@ -16,10 +16,10 @@ online shop.
 
 Table: `Contacts`
 
-| Column Name | Type |
-| ----------- | ---- |
-| user_id | id |
-| contact_name | varchar |
+| Column Name   | Type    |
+| ------------- | ------- |
+| user_id       | id      |
+| contact_name  | varchar |
 | contact_email | varchar |
 
 `(user_id, contact_email)` is the primary key (combination of columns with
@@ -32,9 +32,9 @@ Table: `Invoices`
 
 | Column Name | Type |
 | ----------- | ---- |
-| invoice_id | int |
-| price | int |
-| user_id | int |
+| invoice_id  | int  |
+| price       | int  |
+| user_id     | int  |
 
 invoice_id is the column with unique values for this table.
 Each row of this table indicates that user_id has an invoice with invoice_id

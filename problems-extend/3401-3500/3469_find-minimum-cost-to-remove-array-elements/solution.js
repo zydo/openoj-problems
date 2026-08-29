@@ -25,9 +25,7 @@ var minCost = function (nums) {
         const a = nums[c];
         const b = nums[n - 2];
         const d = nums[n - 1];
-        rowNm2.push(
-            Math.min(Math.max(a, b) + d, Math.max(a, d) + b, Math.max(b, d) + a)
-        );
+        rowNm2.push(Math.min(Math.max(a, b) + d, Math.max(a, d) + b, Math.max(b, d) + a));
     }
 
     let ring = [rowNm2, rowNm1, rowN];
@@ -40,24 +38,14 @@ var minCost = function (nums) {
         // No leftover: nums[j], nums[j+1], nums[j+2] meet one
         // operation and the survivor becomes the next leftover.
         const row = [
-            Math.min(
-                Math.max(b, nums[j + 2]) + r3[j + 1],
-                Math.max(a, nums[j + 2]) + r3[j + 2],
-                pair + r3[j + 3]
-            ),
+            Math.min(Math.max(b, nums[j + 2]) + r3[j + 1], Math.max(a, nums[j + 2]) + r3[j + 2], pair + r3[j + 3]),
         ];
         // With leftover nums[c]: the front three are nums[c], a, b.
         const k1 = r2[j + 2];
         const k2 = r2[j + 1];
         for (let c = 0; c < j; c++) {
             const v = nums[c];
-            row.push(
-                Math.min(
-                    Math.max(v, a) + k1,
-                    Math.max(v, b) + k2,
-                    pair + r2[c + 1]
-                )
-            );
+            row.push(Math.min(Math.max(v, a) + k1, Math.max(v, b) + k2, pair + r2[c + 1]));
         }
         ring = [row, ring[0], ring[1]];
     }

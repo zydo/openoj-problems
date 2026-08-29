@@ -26,10 +26,7 @@ impl Solution {
                 *c = b'0';
             }
         }
-        let parse = |v: &[u8]| -> i32 {
-            v.iter()
-                .fold(0i32, |acc, &c| acc * 10 + (c - b'0') as i32)
-        };
+        let parse = |v: &[u8]| -> i32 { v.iter().fold(0i32, |acc, &c| acc * 10 + (c - b'0') as i32) };
         parse(&big) - parse(&small)
     }
 }

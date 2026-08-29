@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int numWaterBottles(int numBottles, int numExchange) {
         // Every bottle is drunk exactly once, whether it started full or
         // was obtained by trading in empties. Track how many empties are

@@ -9,8 +9,7 @@ function isItPossible(word1: string, word2: string): boolean {
     for (let k = 0; k < word2.length; k++) {
         c2[word2.charCodeAt(k) - 97]++;
     }
-    const distinct = (c: number[]): number =>
-        c.reduce((acc, v) => acc + (v > 0 ? 1 : 0), 0);
+    const distinct = (c: number[]): number => c.reduce((acc, v) => acc + (v > 0 ? 1 : 0), 0);
     const n1 = distinct(c1);
     const n2 = distinct(c2);
     // Try every ordered pair (a, b): letter a leaves word1 and letter b

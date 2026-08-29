@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     // After sorting, nums[i] is the maximum of exactly those subsequences
     // whose other members come from the i smaller entries: summed over
     // sizes 1..k that is g(i) = sum_{j < k} C(i, j) subsequences, and
@@ -10,7 +10,7 @@ public:
     // one binomial per step from factorial tables. n <= 10^5 keeps those
     // tables small; every residue product stays below ~10^18, inside
     // long long.
-    int minMaxSums(vector<int>& nums, int k) {
+    int minMaxSums(vector<int> &nums, int k) {
         const long long mod = 1'000'000'007LL;
         int n = nums.size();
         sort(nums.begin(), nums.end());
@@ -40,10 +40,10 @@ public:
         for (int i = 0; i < n; i++) {
             total = (total + nums[i] % mod * ((g[i] + g[n - 1 - i]) % mod)) % mod;
         }
-        return (int) total;
+        return (int)total;
     }
 
-private:
+  private:
     static long long modPow(long long base, long long exp, long long mod) {
         long long result = 1;
         long long b = base % mod;

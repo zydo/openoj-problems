@@ -10,7 +10,7 @@ class Solution:
         total = 0
         for start, end, duration in sorted(tasks, key=lambda t: t[1]):
             # Reuse whatever is already on inside this window...
-            need = duration - sum(running[start:end + 1])
+            need = duration - sum(running[start : end + 1])
             # ...then book the remainder at the latest free points.
             point = end
             while need > 0:

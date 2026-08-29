@@ -6,10 +6,10 @@ func removeLeafNodes(root *TreeNode, target int) *TreeNode {
 		return nil
 	}
 	type entry struct {
-		node                   *TreeNode
-		parent                 *TreeNode
-		side                   int
-		expanded               bool
+		node     *TreeNode
+		parent   *TreeNode
+		side     int
+		expanded bool
 	}
 	stack := []entry{{root, nil, 0, false}}
 	for len(stack) > 0 {

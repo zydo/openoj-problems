@@ -21,8 +21,7 @@ impl Solution {
         let mut vals = nums.clone();
         vals.sort();
         vals.dedup();
-        let rank: HashMap<i32, usize> =
-            vals.iter().enumerate().map(|(i, &v)| (v, i + 1)).collect();
+        let rank: HashMap<i32, usize> = vals.iter().enumerate().map(|(i, &v)| (v, i + 1)).collect();
         let m = vals.len();
         let mut tree = vec![0i32; m + 1];
         // The running count reaches k * (k - 1) / 2 — past 2^31 when the

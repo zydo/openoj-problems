@@ -18,7 +18,8 @@ class Solution {
                 if (s + 2 * t <= cap) reachable[s + 2 * t] = true;
             }
         }
-        int best = 0, bestDist = Integer.MAX_VALUE;
+        int best = 0,
+            bestDist = Integer.MAX_VALUE;
         for (int b : baseCosts) {
             for (int s = 0; s <= cap; ++s) {
                 if (!reachable[s]) continue;

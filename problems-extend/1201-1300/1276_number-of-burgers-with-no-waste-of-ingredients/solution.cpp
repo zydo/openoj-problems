@@ -8,8 +8,7 @@ class Solution {
         // 2J = tomatoes - 2*cheese. The pair exists iff that value is a
         // non-negative even integer and the back-solved small count is
         // non-negative too.
-        long long twoJumbo = static_cast<long long>(tomatoSlices) -
-                             2LL * cheeseSlices;
+        long long twoJumbo = static_cast<long long>(tomatoSlices) - 2LL * cheeseSlices;
         if (twoJumbo < 0 || twoJumbo % 2 != 0) {
             return {};
         }

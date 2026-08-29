@@ -10,7 +10,7 @@ class Solution {
         long[][] pb = new long[m + 1][n + 1];
         Long fixedT = null; // T fixed by a boundary cell
         boolean hasLow = false;
-        long lowT = 0;      // lower bound on T from X >= 0 (A == 1 cells)
+        long lowT = 0; // lower bound on T from X >= 0 (A == 1 cells)
         long sumA = 0;
         long sumB = 0;
         for (int i = 0; i < m; i++) {
@@ -23,7 +23,7 @@ class Solution {
                 long b;
                 if (i <= m - k && j <= n - k) {
                     a = 1 - covA;
-                    b = -(long) grid[i][j] - covB;
+                    b = -((long) grid[i][j]) - covB;
                     if (a == 1) {
                         if (!hasLow || -b > lowT) {
                             lowT = -b;

@@ -5,7 +5,8 @@ class Solution {
         // first * 10^digits(last) + last into the running value. This is
         // exactly concat(first, last) without any string round-trip.
         long answer = 0;
-        int left = 0, right = nums.length - 1;
+        int left = 0,
+            right = nums.length - 1;
         while (left < right) {
             // Peel decimal digits off the last element to build the shift
             // factor the concatenation needs.

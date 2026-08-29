@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxCount(std::vector<int>& banned, int n, int maxSum) {
+    int maxCount(std::vector<int> &banned, int n, int maxSum) {
         // Greedy ascending: the cheapest remaining legal integer always
         // leaves at least as much slack as any alternative, so walking
         // 1..n and taking values while the running sum fits is optimal.

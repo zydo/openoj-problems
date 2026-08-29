@@ -2,7 +2,8 @@ class Solution {
 
     public int[][] reconstructMatrix(int upper, int lower, int[] colsum) {
         int n = colsum.length;
-        int twos = 0, ones = 0;
+        int twos = 0,
+            ones = 0;
         for (int s : colsum) {
             if (s == 2) ++twos;
             else if (s == 1) ++ones;
@@ -27,6 +28,6 @@ class Solution {
                 }
             }
         }
-        return new int[][] {top, bottom};
+        return new int[][] { top, bottom };
     }
 }

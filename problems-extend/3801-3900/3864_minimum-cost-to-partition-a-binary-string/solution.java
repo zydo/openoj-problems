@@ -20,8 +20,7 @@ class Solution {
         long best = x == 0 ? flatCost : (long) length * x * encCost;
         if (length % 2 == 0) {
             int half = length / 2;
-            long split = solve(prefix, encCost, flatCost, l, half)
-                    + solve(prefix, encCost, flatCost, l + half, half);
+            long split = solve(prefix, encCost, flatCost, l, half) + solve(prefix, encCost, flatCost, l + half, half);
             if (split < best) {
                 best = split;
             }

@@ -6,7 +6,8 @@ function canConvert(str1: string, str2: string): boolean {
     const mapping = new Map<string, string>();
     const targets = new Set<string>();
     for (let i = 0; i < str1.length; ++i) {
-        const a = str1[i], b = str2[i];
+        const a = str1[i],
+            b = str2[i];
         if (mapping.has(a) && mapping.get(a) !== b) {
             // One source letter would need two different targets.
             return false;

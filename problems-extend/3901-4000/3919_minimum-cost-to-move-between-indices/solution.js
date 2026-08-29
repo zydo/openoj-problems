@@ -29,8 +29,6 @@ var minCost = function (nums, queries) {
     }
 
     return queries.map(([left, right]) =>
-        left <= right
-            ? prefixForward[right] - prefixForward[left]
-            : prefixBackward[left] - prefixBackward[right],
+        left <= right ? prefixForward[right] - prefixForward[left] : prefixBackward[left] - prefixBackward[right],
     );
 };

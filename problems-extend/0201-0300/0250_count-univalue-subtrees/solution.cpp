@@ -19,8 +19,7 @@ class Solution {
         // recursion, and a skipped branch would skip its own subtrees.
         bool left = isUnival(node->left, count);
         bool right = isUnival(node->right, count);
-        bool uni = left && right &&
-                   (node->left == nullptr || node->left->val == node->val) &&
+        bool uni = left && right && (node->left == nullptr || node->left->val == node->val) &&
                    (node->right == nullptr || node->right->val == node->val);
         if (uni) {
             ++count;

@@ -6,9 +6,11 @@ class Solution {
         // that mix both separators on sight — a valid address of either
         // kind can never contain the other kind's separator.
         vector<string> parts = split(queryIP, '.');
-        if (parts.size() == 4 && allIpv4(parts)) return "IPv4";
+        if (parts.size() == 4 && allIpv4(parts))
+            return "IPv4";
         parts = split(queryIP, ':');
-        if (parts.size() == 8 && allIpv6(parts)) return "IPv6";
+        if (parts.size() == 8 && allIpv6(parts))
+            return "IPv6";
         return "Neither";
     }
 
@@ -35,14 +37,18 @@ class Solution {
     // zero), and a value of at most 255.
     bool allIpv4(const vector<string> &parts) {
         for (const string &part : parts) {
-            if (part.empty() || part.size() > 3) return false;
+            if (part.empty() || part.size() > 3)
+                return false;
             int value = 0;
             for (char ch : part) {
-                if (ch < '0' || ch > '9') return false;
+                if (ch < '0' || ch > '9')
+                    return false;
                 value = value * 10 + (ch - '0');
             }
-            if (value > 255) return false;
-            if (part.size() > 1 && part[0] == '0') return false;
+            if (value > 255)
+                return false;
+            if (part.size() > 1 && part[0] == '0')
+                return false;
         }
         return true;
     }
@@ -50,10 +56,12 @@ class Solution {
     // 1-4 characters of hex, either case; leading zeros are allowed.
     bool allIpv6(const vector<string> &parts) {
         for (const string &part : parts) {
-            if (part.empty() || part.size() > 4) return false;
+            if (part.empty() || part.size() > 4)
+                return false;
             for (char ch : part) {
                 bool hex = (ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'f') || (ch >= 'A' && ch <= 'F');
-                if (!hex) return false;
+                if (!hex)
+                    return false;
             }
         }
         return true;

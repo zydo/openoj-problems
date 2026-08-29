@@ -39,7 +39,8 @@ class Solution {
         // after every one of their own descendants has already folded in.
         for (int idx = n - 1; idx >= 0; --idx) {
             int u = order[idx];
-            if (mono[u]) best = max(best, size[u]);
+            if (mono[u])
+                best = max(best, size[u]);
             int p = parent[u];
             if (p != -1) {
                 if (!mono[u] || colors[u] != colors[p])

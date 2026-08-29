@@ -3,7 +3,8 @@ class Solution {
     public int myAtoi(String s) {
         // One left-to-right scan over s implements the statement's four steps
         // in order: whitespace, signedness, conversion, rounding.
-        int i = 0, n = s.length();
+        int i = 0,
+            n = s.length();
         while (i < n && s.charAt(i) == ' ') {
             i++;
         }

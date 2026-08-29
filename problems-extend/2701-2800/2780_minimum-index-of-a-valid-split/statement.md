@@ -2,7 +2,7 @@
 
 ## Description
 
-An element `x` of an integer array `arr` of length `m` is *dominant* if more
+An element `x` of an integer array `arr` of length `m` is _dominant_ if more
 than half the elements of `arr` have a value of `x`.
 
 You are given a 0-indexed integer array `nums` of length `n` with one

@@ -21,8 +21,7 @@ impl Solution {
         } else {
             // Values live in [-1e5, 1e5]; i32::MAX is a safe "no previous"
             // sentinel for the walk below.
-            *adj
-                .iter()
+            *adj.iter()
                 .filter(|(_, neighbors)| neighbors.len() == 1)
                 .map(|(value, _)| value)
                 .min()

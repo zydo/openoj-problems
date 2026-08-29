@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long maxAlternatingSum(vector<int>& nums) {
+  public:
+    long long maxAlternatingSum(vector<int> &nums) {
         // Squares erase signs, so sort the squared magnitudes and put the
         // largest ceil(n / 2) on the plus slots, the rest on minus slots.
         vector<long long> squares;

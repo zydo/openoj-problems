@@ -5,9 +5,11 @@
  */
 var minimumSwap = function (s1, s2) {
     // Each swap fixes two mismatches, so an odd total is impossible.
-    let xy = 0, yx = 0;
+    let xy = 0,
+        yx = 0;
     for (let i = 0; i < s1.length; ++i) {
-        const a = s1[i], b = s2[i];
+        const a = s1[i],
+            b = s2[i];
         if (a === "x" && b === "y") ++xy;
         else if (a === "y" && b === "x") ++yx;
     }

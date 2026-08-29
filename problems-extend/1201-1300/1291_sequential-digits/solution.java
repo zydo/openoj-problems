@@ -13,8 +13,7 @@ class Solution {
         List<Integer> collected = new ArrayList<>();
         for (int length = 2; length <= 9; length++) {
             for (int start = 0; start + length <= 9; start++) {
-                int value = Integer.parseInt(digits.substring(start,
-                                                              start + length));
+                int value = Integer.parseInt(digits.substring(start, start + length));
                 if (value > high) {
                     break;
                 }

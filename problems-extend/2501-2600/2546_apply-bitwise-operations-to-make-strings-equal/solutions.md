@@ -12,7 +12,7 @@ born), and `(1,1) -> (1,0)` (one one dies while its partner survives as
 a `1`). Two structural facts follow. An all-zero string is frozen:
 every pair it offers is `(0,0)`, so no operation can produce the first
 `1`. And a string holding a `1` keeps at least one forever: the only
-move that turns a cell to `0` consumes *two* ones and simultaneously
+move that turns a cell to `0` consumes _two_ ones and simultaneously
 writes `1` into the partner cell, so ones thin out but never vanish.
 
 Those facts are sufficient as well as necessary. Given any position `p`

@@ -67,7 +67,8 @@ and [-1]; neither sums to 10000000000. Therefore, the answer is [].
 ### Hint 1
 
 Start from the all-positive array `[1, 2, ..., n]` and let `S = n * (n +
-1) / 2`. Any valid array's sum lies between `-S` and `S`.
+
+1. / 2`. Any valid array's sum lies between `-S`and`S`.
 
 ### Hint 2
 

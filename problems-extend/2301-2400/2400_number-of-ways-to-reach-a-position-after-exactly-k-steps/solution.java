@@ -15,23 +15,23 @@ class Solution {
         long[] fact = new long[k + 1];
         fact[0] = 1;
         for (int i = 1; i <= k; ++i) {
-            fact[i] = fact[i - 1] * i % MOD;
+            fact[i] = (fact[i - 1] * i) % MOD;
         }
         long[] invFact = new long[k + 1];
         invFact[k] = power(fact[k], MOD - 2, MOD);
         for (int i = k; i >= 1; --i) {
-            invFact[i - 1] = invFact[i] * i % MOD;
+            invFact[i - 1] = (invFact[i] * i) % MOD;
         }
-        return (int) (fact[k] * invFact[(int) right] % MOD * invFact[(int) (k - right)] % MOD);
+        return (int) ((((fact[k] * invFact[(int) right]) % MOD) * invFact[(int) (k - right)]) % MOD);
     }
 
     private long power(long base, long exp, long mod) {
         long result = 1;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             exp >>= 1;
         }
         return result;

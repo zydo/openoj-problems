@@ -5,7 +5,7 @@ class Solution {
         // to the last house holding its type. Track those last indices,
         // then add prefix travel once per type that appears past house 0.
         int minutes = 0;
-        int[] last = {-1, -1, -1};
+        int[] last = { -1, -1, -1 };
         for (int i = 0; i < garbage.length; ++i) {
             minutes += garbage[i].length();
             for (int j = 0; j < garbage[i].length(); ++j) {

@@ -64,8 +64,7 @@ impl Solution {
             ds
         };
 
-        let facs: Vec<(i32, Vec<(i64, i64)>)> =
-            freq.keys().map(|&v| (v, factorize(v as i64))).collect();
+        let facs: Vec<(i32, Vec<(i64, i64)>)> = freq.keys().map(|&v| (v, factorize(v as i64))).collect();
 
         // multipleCount[d] = number of elements divisible by d, folded by
         // frequency over every distinct value's divisor set.
@@ -118,5 +117,9 @@ impl Solution {
 }
 
 fn gcd(a: i64, b: i64) -> i64 {
-    if b == 0 { a } else { gcd(b, a % b) }
+    if b == 0 {
+        a
+    } else {
+        gcd(b, a % b)
+    }
 }

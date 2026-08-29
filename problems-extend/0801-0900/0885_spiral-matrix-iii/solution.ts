@@ -8,7 +8,12 @@ function spiralMatrixIII(rows: number, cols: number, rStart: number, cStart: num
     // walk stops.
     const total = rows * cols;
     const order: number[][] = [[rStart, cStart]];
-    const directions: [number, number][] = [[0, 1], [1, 0], [0, -1], [-1, 0]];
+    const directions: [number, number][] = [
+        [0, 1],
+        [1, 0],
+        [0, -1],
+        [-1, 0],
+    ];
     let r = rStart;
     let c = cStart;
     let d = 0;

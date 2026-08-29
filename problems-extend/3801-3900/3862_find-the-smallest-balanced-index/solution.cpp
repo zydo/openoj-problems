@@ -4,7 +4,7 @@ using namespace std;
 
 class Solution {
   public:
-    int smallestBalancedIndex(vector<int>& nums) {
+    int smallestBalancedIndex(vector<int> &nums) {
         // Suffix products saturate at total + 1: any product above the
         // total sum can never equal a prefix sum, so the sentinel value
         // compares correctly while staying inside a long long.

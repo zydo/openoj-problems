@@ -24,8 +24,9 @@ class Solution {
                 }
             }
             for (int k = j + 2; k < n - 1; ++k) {
-                if (prefix[k] - prefix[j + 1] == prefix[n] - prefix[k + 1]
-                        && seen.contains(prefix[k] - prefix[j + 1])) {
+                if (
+                    prefix[k] - prefix[j + 1] == prefix[n] - prefix[k + 1] && seen.contains(prefix[k] - prefix[j + 1])
+                ) {
                     return true;
                 }
             }

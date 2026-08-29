@@ -5,7 +5,7 @@
 
 class Solution {
   public:
-    int longestSquareStreak(std::vector<int>& nums) {
+    int longestSquareStreak(std::vector<int> &nums) {
         // A sorted streak always steps v -> v*v, so scanning the distinct
         // values ascending makes each value extend at most one chain: the
         // one ending at its integer square root, when that root is itself
@@ -18,10 +18,7 @@ class Solution {
         for (int value : values) {
             int root = (int)(std::sqrt((double)value) + 0.5);
             auto found = length.find(root);
-            int len =
-                (found != length.end() && (long long)root * root == value)
-                    ? found->second + 1
-                    : 1;
+            int len = (found != length.end() && (long long)root * root == value) ? found->second + 1 : 1;
             length[value] = len;
             longest = std::max(longest, len);
         }

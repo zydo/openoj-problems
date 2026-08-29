@@ -44,12 +44,14 @@ class Solution {
         stack.push(new int[] { 0, -1, 0 });
         while (!stack.isEmpty()) {
             int[] frame = stack.pop();
-            int node = frame[0], parent = frame[1];
+            int node = frame[0],
+                parent = frame[1];
             if (frame[2] == 1) {
                 stacks.get(nums[node]).pop();
                 continue;
             }
-            int best = -1, bestDepth = -1;
+            int best = -1,
+                bestDepth = -1;
             for (int w : coprimes.get(nums[node])) {
                 Deque<Integer> candidates = stacks.get(w);
                 if (!candidates.isEmpty()) {

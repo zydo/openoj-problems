@@ -16,7 +16,7 @@ before each one, compute the neighboring cell in the current heading and look
 it up among the obstacles; a hit stops that command immediately with the robot
 still on the adjacent cell, which is exactly the stated blocking rule. This
 unit-by-unit rule also settles the origin note for free — an obstacle only ever
-blocks *entering* a cell, so a robot that starts on the obstacle at (0, 0)
+blocks _entering_ a cell, so a robot that starts on the obstacle at (0, 0)
 walks off it but can never step back in.
 
 The obstacle list becomes a hash set once, before the walk. Where a language

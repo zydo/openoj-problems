@@ -6,7 +6,11 @@
   "slug": "n-repeated-element-in-size-2n-array",
   "title": "N-Repeated Element in Size 2N Array",
   "difficulty": "",
-  "tags": ["Array", "Hash Table", "Pigeonhole Principle"],
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Pigeonhole Principle"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

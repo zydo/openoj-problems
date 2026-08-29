@@ -26,7 +26,7 @@ function mostCommonCoursePair(completions: string[][]): string[] {
         // (date, course) sorts chronologically, name-breaking ties. Plain
         // string comparison is byte order, matching the other languages.
         records.sort((a, b) =>
-            a.date < b.date ? -1 : a.date > b.date ? 1 : a.course < b.course ? -1 : a.course > b.course ? 1 : 0
+            a.date < b.date ? -1 : a.date > b.date ? 1 : a.course < b.course ? -1 : a.course > b.course ? 1 : 0,
         );
         for (let i = 1; i < n; i++) {
             const key = records[i - 1].course + " " + records[i].course;

@@ -6,11 +6,14 @@ class Solution {
         // integers anywhere: rejected candidates can outgrow 64 bits.
         const int n = num.size();
         for (int i = 1; i < n; ++i) {
-            if (!valid(num, 0, i)) continue;
+            if (!valid(num, 0, i))
+                continue;
             // j < n leaves at least one digit for the third number.
             for (int j = i + 1; j < n; ++j) {
-                if (!valid(num, i, j)) continue;
-                if (consumes(num, num.substr(0, i), num.substr(i, j - i), j)) return true;
+                if (!valid(num, i, j))
+                    continue;
+                if (consumes(num, num.substr(0, i), num.substr(i, j - i), j))
+                    return true;
             }
         }
         return false;
@@ -27,7 +30,8 @@ class Solution {
         // digits, so its length is never a choice.
         while (start < (int)num.size()) {
             string total = add(first, second);
-            if (num.compare(start, total.size(), total) != 0) return false;
+            if (num.compare(start, total.size(), total) != 0)
+                return false;
             start += (int)total.size();
             first = move(second);
             second = move(total);
@@ -43,8 +47,10 @@ class Solution {
         int i = a.size() - 1, j = b.size() - 1;
         while (i >= 0 || j >= 0 || carry) {
             int total = carry;
-            if (i >= 0) total += a[i--] - '0';
-            if (j >= 0) total += b[j--] - '0';
+            if (i >= 0)
+                total += a[i--] - '0';
+            if (j >= 0)
+                total += b[j--] - '0';
             digits.push_back('0' + total % 10);
             carry = total / 10;
         }

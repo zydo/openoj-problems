@@ -8,13 +8,7 @@ function getProbability(balls: number[]): number {
 
 // Sum of per-color binomial products over the completions whose two
 // boxes end with equal distinct-color counts.
-function walk(
-    balls: number[],
-    index: number,
-    remaining: number,
-    distinct1: number,
-    distinct2: number,
-): number {
+function walk(balls: number[], index: number, remaining: number, distinct1: number, distinct2: number): number {
     if (index === balls.length) {
         return remaining === 0 && distinct1 === distinct2 ? 1 : 0;
     }
@@ -24,13 +18,7 @@ function walk(
     for (let x = 0; x <= limit; x++) {
         ways +=
             binomial(count, x) *
-            walk(
-                balls,
-                index + 1,
-                remaining - x,
-                distinct1 + (x > 0 ? 1 : 0),
-                distinct2 + (x < count ? 1 : 0),
-            );
+            walk(balls, index + 1, remaining - x, distinct1 + (x > 0 ? 1 : 0), distinct2 + (x < count ? 1 : 0));
     }
     return ways;
 }

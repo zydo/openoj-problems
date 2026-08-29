@@ -19,11 +19,7 @@ impl Solution {
             if r + c == 2 {
                 anti += step;
             }
-            let reach = rows[r]
-                .abs()
-                .max(cols[c].abs())
-                .max(diag.abs())
-                .max(anti.abs());
+            let reach = rows[r].abs().max(cols[c].abs()).max(diag.abs()).max(anti.abs());
             if reach == 3 {
                 return if step == 1 { "A" } else { "B" }.to_string();
             }

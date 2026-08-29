@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     def maxSubarraySum(self, nums: List[int], k: int) -> int:
-        negative_infinity = -10**30
+        negative_infinity = -(10**30)
         none_state = negative_infinity
         multiply = negative_infinity
         divide = negative_infinity

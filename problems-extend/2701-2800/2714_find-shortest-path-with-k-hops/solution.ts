@@ -1,10 +1,4 @@
-function shortestPathWithHops(
-    n: number,
-    edges: number[][],
-    s: number,
-    d: number,
-    k: number,
-): number {
+function shortestPathWithHops(n: number, edges: number[][], s: number, d: number, k: number): number {
     // Dijkstra over states (node, hops used): staying in a layer pays the
     // edge weight, a hop crosses into the next layer for free; node d pops
     // at the minimum over every way of spending at most k free edges.

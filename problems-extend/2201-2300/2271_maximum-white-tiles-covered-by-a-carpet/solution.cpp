@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maximumWhiteTiles(vector<vector<int>>& tiles, int carpetLen) {
+    int maximumWhiteTiles(vector<vector<int>> &tiles, int carpetLen) {
         // Sort by start, then slide a window of intervals whose left ends fall
         // inside the carpet. Aligning the carpet's left edge with a tile start
         // is always optimal, so trying every tile as the first covered one is

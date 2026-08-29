@@ -24,7 +24,7 @@ true the moment the second hit occurs; if the scan reaches the
 second-to-last index without two hits, return false.
 
 This handles `target == 0` the same way as any other target: a run of
-zero-sum boundaries is not special-cased, because only the *first two*
+zero-sum boundaries is not special-cased, because only the _first two_
 hits before the last index matter — extra zero-crossings past that
 point are simply never reached, since the function returns as soon as
 the count reaches two.

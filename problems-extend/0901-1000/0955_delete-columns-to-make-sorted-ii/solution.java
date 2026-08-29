@@ -2,7 +2,8 @@ class Solution {
 
     public int minDeletionSize(String[] strs) {
         int deletions = 0;
-        int rows = strs.length, cols = strs[0].length();
+        int rows = strs.length,
+            cols = strs[0].length();
         // cut[i]: rows i and i + 1 are already strictly ordered on the kept
         // prefix, so later columns no longer constrain that pair.
         boolean[] cut = new boolean[rows - 1];

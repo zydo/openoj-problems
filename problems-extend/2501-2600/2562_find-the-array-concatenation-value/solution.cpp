@@ -20,7 +20,8 @@ class Solution {
             right--;
         }
         // Odd length: the surviving middle element joins the total alone.
-        if (left == right) answer += nums[left];
+        if (left == right)
+            answer += nums[left];
         return answer;
     }
 };

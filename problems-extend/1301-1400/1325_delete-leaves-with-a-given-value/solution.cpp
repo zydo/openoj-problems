@@ -1,6 +1,6 @@
 class Solution {
   public:
-    TreeNode* removeLeafNodes(TreeNode* root, int target) {
+    TreeNode *removeLeafNodes(TreeNode *root, int target) {
         // Post-order prune with an explicit stack (a 3000-node chain would
         // overflow any recursion budget): children are judged before the node
         // itself, so the whole cascade collapses in one pass.
@@ -8,9 +8,9 @@ class Solution {
             return nullptr;
         }
         struct Entry {
-            TreeNode* node;
-            TreeNode* parent;
-            int side;      // 0 = left, 1 = right
+            TreeNode *node;
+            TreeNode *parent;
+            int side; // 0 = left, 1 = right
             bool expanded;
         };
         vector<Entry> stack;
@@ -28,7 +28,7 @@ class Solution {
                 }
                 continue;
             }
-            TreeNode* node = entry.node;
+            TreeNode *node = entry.node;
             if (node->left == nullptr && node->right == nullptr && node->val == target) {
                 if (entry.parent == nullptr) {
                     return nullptr;

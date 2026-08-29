@@ -7,7 +7,7 @@ class Solution {
         // to its predecessor is a repeat of one already consumed, and
         // anything else cannot occur. Name must be fully consumed at the end.
         int i = 0, j = 0;
-        int n = (int) name.size(), m = (int) typed.size();
+        int n = (int)name.size(), m = (int)typed.size();
         while (j < m) {
             if (i < n && name[i] == typed[j]) {
                 ++i;

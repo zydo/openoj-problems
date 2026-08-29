@@ -6,15 +6,7 @@
 // object-valued read. Nested objects and arrays are therefore guarded the
 // moment they are reached, while plain reads, Object.keys, iteration, and
 // non-mutating methods pass straight through to the real target.
-const MUTATING_METHODS = [
-    "pop",
-    "push",
-    "shift",
-    "unshift",
-    "splice",
-    "sort",
-    "reverse",
-];
+const MUTATING_METHODS = ["pop", "push", "shift", "unshift", "splice", "sort", "reverse"];
 
 function wrapReads(value) {
     if (value !== null && typeof value === "object") {

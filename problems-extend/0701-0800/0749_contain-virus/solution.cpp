@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int containVirus(vector<vector<int>>& isInfected) {
+  public:
+    int containVirus(vector<vector<int>> &isInfected) {
         // Nothing here is a choice: each day the region whose frontier (the
         // uninfected cells it would reach tonight) is largest gets walled,
         // every other region infects its frontier, and the answer just
@@ -36,7 +36,7 @@ public:
             walls += regions[best].walls;
             // 2 marks the quarantined region: inert, never spreading again
             // and never part of a later region.
-            for (const auto& cell : regions[best].cells) {
+            for (const auto &cell : regions[best].cells) {
                 grid[cell.first][cell.second] = 2;
             }
             // The night: everyone else infects their frontier at once. A
@@ -53,14 +53,14 @@ public:
         }
     }
 
-private:
+  private:
     struct Region {
         vector<pair<int, int>> cells;
         unordered_set<int> frontier;
         int walls = 0;
     };
 
-    Region measure(vector<vector<int>>& grid, vector<vector<int>>& label, int row, int col, int id) {
+    Region measure(vector<vector<int>> &grid, vector<vector<int>> &label, int row, int col, int id) {
         // Walk one region with an explicit stack, collecting its cells, its
         // frontier (distinct threatened 0-cells, encoded row*cols+col) and
         // its wall count — one wall per region/0-cell shared edge.

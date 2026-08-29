@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> stableMountains(vector<int>& height, int threshold) {
+    vector<int> stableMountains(vector<int> &height, int threshold) {
         // Mountain i is stable exactly when its immediate predecessor is
         // strictly taller than the threshold; one left-to-right pass emits
         // the qualifying indices in ascending order.

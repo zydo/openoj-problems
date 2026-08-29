@@ -15,10 +15,10 @@ class Solution:
             if value > 1:
                 candidates.add(value)
 
-        best_score = -10**30
+        best_score = -(10**30)
         best_k = 0
         for k in candidates:
-            score = -10**30
+            score = -(10**30)
             current = 0
             for value in nums:
                 transformed = value if value % k == 0 else -value

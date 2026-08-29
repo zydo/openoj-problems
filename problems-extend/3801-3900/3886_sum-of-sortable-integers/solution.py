@@ -16,10 +16,7 @@ class Solution:
         divisors.sort()
         total = 0
         for k in divisors:
-            if all(
-                self._is_rotation(nums[start : start + k], ordered[start : start + k])
-                for start in range(0, n, k)
-            ):
+            if all(self._is_rotation(nums[start : start + k], ordered[start : start + k]) for start in range(0, n, k)):
                 total += k
         return total
 

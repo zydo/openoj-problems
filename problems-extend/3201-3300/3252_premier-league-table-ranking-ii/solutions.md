@@ -6,10 +6,11 @@ Each row already carries its finished season, so the points are a pure
 per-row expression — `3 * wins + draws`, with losses worth nothing — and
 no join or aggregation is needed to produce them. The position is
 competition ranking over that expression: `RANK() OVER (ORDER BY 3 * wins
-+ draws DESC)` gives tied totals the same number and lets the next
+
+- draws DESC)`gives tied totals the same number and lets the next
 distinct total skip past every tied team (1, 1, 3). The same pass also
-needs the league size, and `COUNT(*) OVER ()` delivers it on every row,
-saving a separate scan.
+needs the league size, and`COUNT(*) OVER ()` delivers it on every row,
+  saving a separate scan.
 
 The tiers are cuts on the position, not shares of the rows: Tier 1 ends
 at position `⌈0.33 · N⌉` and Tier 2 at `⌈0.66 · N⌉`, computed exactly in

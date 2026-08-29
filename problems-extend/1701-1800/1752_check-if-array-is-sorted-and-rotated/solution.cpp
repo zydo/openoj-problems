@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool check(vector<int>& nums) {
+  public:
+    bool check(vector<int> &nums) {
         // Read the array as a ring: a sorted-then-rotated array
         // descends at most once, at the rotation seam.
         int n = (int)nums.size();

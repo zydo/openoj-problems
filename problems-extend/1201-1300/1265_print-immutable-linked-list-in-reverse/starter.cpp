@@ -1,6 +1,6 @@
 class ImmutableListNode;
 
 class Solution {
-public:
-    void printLinkedListInReverse(ImmutableListNode& head);
+  public:
+    void printLinkedListInReverse(ImmutableListNode &head);
 };

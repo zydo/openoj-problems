@@ -7,7 +7,7 @@ axis-aligned rectangle spanning every cell that holds that color (its
 min/max row and min/max col). If that color were ever stamped, the stamp
 had to cover at least this rectangle, since a stamp is a solid rectangle
 and every cell of it takes on the stamped color at that moment. So a color
-`c` can only be a *valid* stamp if every cell inside `c`'s bounding
+`c` can only be a _valid_ stamp if every cell inside `c`'s bounding
 rectangle ends up, in the final grid, either still showing `c` or showing
 some other color that could only have arrived by being stamped again later,
 on top of `c`.

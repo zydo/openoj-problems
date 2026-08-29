@@ -10,8 +10,8 @@ class Solution {
         // single-term sum n = n. L*(L+1) brushes 2e9 at the bound, so the
         // loop holds its intermediates in a long.
         int count = 0;
-        for (long length = 1; length * (length + 1) / 2 <= n; length++) {
-            if ((n - length * (length - 1) / 2) % length == 0) {
+        for (long length = 1; (length * (length + 1)) / 2 <= n; length++) {
+            if ((n - (length * (length - 1)) / 2) % length == 0) {
                 count++;
             }
         }

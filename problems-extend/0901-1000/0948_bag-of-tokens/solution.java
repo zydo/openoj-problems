@@ -6,8 +6,10 @@ class Solution {
         // An optimal plan buys points with the cheapest tokens and sells the
         // dearest ones for power, so sort and walk two pointers inward.
         Arrays.sort(tokens);
-        int left = 0, right = tokens.length - 1;
-        int score = 0, best = 0;
+        int left = 0,
+            right = tokens.length - 1;
+        int score = 0,
+            best = 0;
         while (left <= right) {
             if (power >= tokens[left]) {
                 // Affordable: buy a point with the cheapest remaining token.

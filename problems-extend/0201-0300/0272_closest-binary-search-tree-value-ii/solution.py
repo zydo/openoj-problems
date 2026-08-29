@@ -31,9 +31,7 @@ class Solution:
         left -= 1
         result = []
         for _ in range(k):
-            if right == len(values) or (
-                left >= 0 and abs(values[left] - target) <= abs(values[right] - target)
-            ):
+            if right == len(values) or (left >= 0 and abs(values[left] - target) <= abs(values[right] - target)):
                 result.append(values[left])
                 left -= 1
             else:

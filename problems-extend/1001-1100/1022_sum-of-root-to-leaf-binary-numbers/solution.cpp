@@ -26,8 +26,10 @@ class Solution {
             } else {
                 // An internal node never sums on its own: its bit only
                 // matters inside the values of the leaves below it.
-                if (node->left != nullptr) pending.push_back({node->left, value});
-                if (node->right != nullptr) pending.push_back({node->right, value});
+                if (node->left != nullptr)
+                    pending.push_back({node->left, value});
+                if (node->right != nullptr)
+                    pending.push_back({node->right, value});
             }
         }
         // The statement guarantees the answer fits a 32-bit integer.

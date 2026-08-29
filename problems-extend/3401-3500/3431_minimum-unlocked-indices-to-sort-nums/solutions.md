@@ -13,7 +13,7 @@ consumes the boundary it happens on.
 Count, for every boundary between positions `i` and `i + 1`, how many 1s must
 still cross it leftward and how many 3s must still cross it rightward to
 reach the sorted arrangement. Both counts compare an initial tally against
-the sorted final one, and the boundary is *forced* — it must be unlocked —
+the sorted final one, and the boundary is _forced_ — it must be unlocked —
 exactly when either count is positive. Working that comparison out collapses
 it to index arithmetic: the forced boundaries for the 1s are precisely those
 from the first 2 up to (but excluding) the last 1, and for the 3s from the

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<vector<int>> reconstructMatrix(int upper, int lower, vector<int>& colsum) {
+  public:
+    vector<vector<int>> reconstructMatrix(int upper, int lower, vector<int> &colsum) {
         const int n = static_cast<int>(colsum.size());
         int twos = static_cast<int>(count(colsum.begin(), colsum.end(), 2));
         int ones = static_cast<int>(count(colsum.begin(), colsum.end(), 1));

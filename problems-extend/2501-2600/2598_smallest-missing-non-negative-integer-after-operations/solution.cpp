@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int findSmallestInteger(std::vector<int>& nums, int value) {
+    int findSmallestInteger(std::vector<int> &nums, int value) {
         // Adding or subtracting value never changes an element's
         // residue mod value, so element x can be retargeted anywhere
         // in its own residue class. Count how many elements land in

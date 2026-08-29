@@ -34,8 +34,7 @@ impl Solution {
             // Bag-2 placements shift a whole row left, trimmed to the legal
             // occupancies. Stage them before the bag-1 pass below touches
             // rows, so both moves read the previous item's states only.
-            let mut shifted: Vec<Vec<u64>> =
-                (0..=w1).map(|a| shift_left(&rows[a], w)).collect();
+            let mut shifted: Vec<Vec<u64>> = (0..=w1).map(|a| shift_left(&rows[a], w)).collect();
             for row in &mut shifted {
                 for k in 0..words {
                     row[k] &= low_mask[k];

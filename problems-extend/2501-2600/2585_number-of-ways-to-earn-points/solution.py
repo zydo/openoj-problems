@@ -8,7 +8,7 @@ class Solution:
         # fresh row — questions of a type are indistinguishable, so only
         # HOW MANY of them are taken matters, and the per-point sum runs
         # over every legal take count q <= min(count, points // marks).
-        mod = 10 ** 9 + 7
+        mod = 10**9 + 7
         dp = [1] + [0] * target
         for count, marks in types:
             nxt = [0] * (target + 1)

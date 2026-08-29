@@ -30,7 +30,10 @@ impl Solution {
             (Self::digits(non_rep), base)
         } else {
             let joined = format!("{non_rep}{rep}");
-            (Self::digits(&joined) - Self::digits(non_rep), base * (10_i64.pow(rep.len() as u32) - 1))
+            (
+                Self::digits(&joined) - Self::digits(non_rep),
+                base * (10_i64.pow(rep.len() as u32) - 1),
+            )
         };
         let mut whole = Self::digits(integer);
         if numerator == denominator {

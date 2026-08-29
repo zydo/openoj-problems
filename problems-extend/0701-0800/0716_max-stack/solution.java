@@ -12,6 +12,7 @@ class MaxStack {
     // peekMax/popMax discard heap tops that name a dead cell: every stale
     // entry is skipped at most once.
     private static class Cell {
+
         int value;
         long seq;
         Cell prev;

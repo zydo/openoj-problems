@@ -51,7 +51,9 @@ class Solution {
                 return true;
             }
             // Swap the halves: the head of a pairs with the tail of b.
-            if (solve(a.substring(0, i), b.substring(n - i), memo) && solve(a.substring(i), b.substring(0, n - i), memo)) {
+            if (
+                solve(a.substring(0, i), b.substring(n - i), memo) && solve(a.substring(i), b.substring(0, n - i), memo)
+            ) {
                 memo.put(key, true);
                 return true;
             }

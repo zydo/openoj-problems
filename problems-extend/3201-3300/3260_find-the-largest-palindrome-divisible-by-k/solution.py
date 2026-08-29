@@ -18,10 +18,7 @@ class Solution:
         base = 1 % k
         for _ in range(n - m):
             base = base * 10 % k
-        weights = [
-            (base * pow_small[m - 1 - j] + (pow_small[j] if 2 * j != n - 1 else 0)) % k
-            for j in range(m)
-        ]
+        weights = [(base * pow_small[m - 1 - j] + (pow_small[j] if 2 * j != n - 1 else 0)) % k for j in range(m)]
         full = (1 << k) - 1
 
         # reachable[j]: residues the free digits at half-positions j.. can

@@ -5,9 +5,8 @@
 
 class Solution {
   public:
-    std::vector<std::vector<std::string>> mostPopularCreator(
-        std::vector<std::string> &creators, std::vector<std::string> &ids,
-        std::vector<int> &views) {
+    std::vector<std::vector<std::string>> mostPopularCreator(std::vector<std::string> &creators,
+                                                             std::vector<std::string> &ids, std::vector<int> &views) {
         // One pass keeps three running values per creator: total views,
         // best single-video view count, and the id achieving it
         // (lexicographically smallest on a tie). Totals reach

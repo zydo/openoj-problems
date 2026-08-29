@@ -16,6 +16,6 @@ function createInfiniteObject() {
             get(target, prop) {
                 return () => prop;
             },
-        }
+        },
     );
 }

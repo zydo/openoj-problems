@@ -17,7 +17,7 @@ class Solution {
         return s;
     }
 
-    vector<int> subarrayMajority(vector<int>& nums, vector<vector<int>>& queries) {
+    vector<int> subarrayMajority(vector<int> &nums, vector<vector<int>> &queries) {
         int n = nums.size();
         // Rank-compress: "smallest value" becomes "smallest rank".
         vector<int> values(nums);
@@ -70,7 +70,7 @@ class Solution {
         vector<int> out;
         out.reserve(queries.size());
         int token = 0;
-        for (const auto& query : queries) {
+        for (const auto &query : queries) {
             int l = query[0], r = query[1], t = query[2];
             int bl = l / b, br = r / b;
             token++;
@@ -119,7 +119,7 @@ class Solution {
                     }
                 }
                 for (int x : seen) {
-                    const vector<int>& list = occ[x];
+                    const vector<int> &list = occ[x];
                     int f = upper_bound(list.begin(), list.end(), r) - lower_bound(list.begin(), list.end(), l);
                     if (f > bf || (f == bf && x < bv)) {
                         bf = f;

@@ -1,7 +1,7 @@
 class Guess;
 
 class Solution {
-public:
+  public:
     int guessNumber(Guess &guess, int n) {
         // The oracle orders [1, n] around the hidden pick — every number
         // above it answers -1, every number below it 1 — so bisect for the

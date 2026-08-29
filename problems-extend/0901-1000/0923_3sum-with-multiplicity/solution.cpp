@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int threeSumMulti(vector<int>& arr, int target) {
+    int threeSumMulti(vector<int> &arr, int target) {
         // Count occurrences of each value, then enumerate value pairs
         // (a, b) with a <= b; the required third value c = target - a - b
         // is accepted only when c >= b, so each unordered value multiset
@@ -16,7 +16,7 @@ class Solution {
         }
         vector<int> values;
         values.reserve(counts.size());
-        for (const auto& entry : counts) {
+        for (const auto &entry : counts) {
             values.push_back(entry.first);
         }
         sort(values.begin(), values.end());

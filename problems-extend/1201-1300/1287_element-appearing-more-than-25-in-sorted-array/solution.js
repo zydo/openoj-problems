@@ -8,8 +8,7 @@ var findSpecialInteger = function (arr) {
     // fit between two consecutive quarter marks). Each candidate is
     // verified by binary-searching its first and last occurrence.
     const n = arr.length;
-    for (const probe of [Math.floor(n / 4), Math.floor(n / 2),
-                         Math.floor(3 * n / 4)]) {
+    for (const probe of [Math.floor(n / 4), Math.floor(n / 2), Math.floor((3 * n) / 4)]) {
         const candidate = arr[probe];
         const lo = lowerBound(arr, candidate);
         const hi = upperBound(arr, candidate);

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> getAverages(vector<int>& nums, int k) {
+  public:
+    vector<int> getAverages(vector<int> &nums, int k) {
         vector<int> averages(nums.size(), -1);
         int width = 2 * k + 1;
         if (width > static_cast<int>(nums.size())) {

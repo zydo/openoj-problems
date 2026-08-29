@@ -23,7 +23,8 @@ class Solution {
                 int beauty = 0;
                 for (int d = 0; d < 50 && rem > 0; ++d) {
                     rem -= cnt[d];
-                    if (rem <= 0) beauty = d - 50;
+                    if (rem <= 0)
+                        beauty = d - 50;
                 }
                 res[i - k + 1] = beauty;
             }

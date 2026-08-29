@@ -16,7 +16,8 @@ class Solution {
     // boundary is left. The limit is a long because target + 1 can be one
     // past the 32-bit maximum.
     private int lowerBound(int[] nums, long limit) {
-        int lo = 0, hi = nums.length;
+        int lo = 0,
+            hi = nums.length;
         while (lo < hi) {
             int mid = (lo + hi) / 2;
             if (nums[mid] < limit) {

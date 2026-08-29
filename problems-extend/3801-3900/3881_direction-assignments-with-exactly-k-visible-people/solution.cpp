@@ -19,8 +19,7 @@ class Solution {
         for (int i = size; i > 0; i--) {
             invFact[i - 1] = invFact[i] * i % MOD;
         }
-        long long comb =
-            fact[n - 1] * invFact[k] % MOD * invFact[n - 1 - k] % MOD;
+        long long comb = fact[n - 1] * invFact[k] % MOD * invFact[n - 1 - k] % MOD;
         return (int)(2 * comb % MOD);
     }
 

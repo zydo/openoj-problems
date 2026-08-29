@@ -15,9 +15,9 @@ var findCrossingTime = function (n, k, time) {
     for (let c = (left.length >> 1) - 1; c >= 0; c--) {
         siftDown(left, c, lessKey);
     }
-    const right = [];   // boxed workers waiting on the right bank
+    const right = []; // boxed workers waiting on the right bank
     const pending = []; // [readyTime, join-side 1=right 0=left, i]
-    let cur = 0;        // instant the bridge becomes free again
+    let cur = 0; // instant the bridge becomes free again
     let sent = 0;
     let delivered = 0;
     let ans = 0;
@@ -38,7 +38,7 @@ var findCrossingTime = function (n, k, time) {
             popHeap(right, lessKey);
             cur += time[i][2];
             delivered++;
-            if (cur > ans) ans = cur;   // the box reaches the left bank here
+            if (cur > ans) ans = cur; // the box reaches the left bank here
             if (delivered === n) break; // the final put never delays anything
             pushHeap(pending, [cur + time[i][3], 0, i], byReady);
         } else if (left.length > 0 && sent < n) {

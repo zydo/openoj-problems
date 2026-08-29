@@ -1,7 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> removeInterval(vector<vector<int>> &intervals,
-                                       vector<int> &toBeRemoved) {
+    vector<vector<int>> removeInterval(vector<vector<int>> &intervals, vector<int> &toBeRemoved) {
         // Per interval, three outcomes: disjoint from the removal (keep
         // whole), straddling the left edge (keep head), or straddling the
         // right edge (keep tail); a full cover keeps nothing. An interval

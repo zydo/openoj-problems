@@ -59,7 +59,11 @@ class Solution {
                     int nd = d + steps;
                     String np = p + letters[dir];
                     // Relax on the (distance, instructions) pair.
-                    if (dist[nr][nc] == -1 || nd < dist[nr][nc] || (nd == dist[nr][nc] && np.compareTo(path[nr][nc]) < 0)) {
+                    if (
+                        dist[nr][nc] == -1 ||
+                        nd < dist[nr][nc] ||
+                        (nd == dist[nr][nc] && np.compareTo(path[nr][nc]) < 0)
+                    ) {
                         dist[nr][nc] = nd;
                         path[nr][nc] = np;
                         heap.add(new Object[] { nd, np, nr, nc });

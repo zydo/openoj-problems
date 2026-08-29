@@ -11,17 +11,16 @@ unchanged.
 
 Return the resulting string.
 
-Vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`.
+Vowels are 'a', 'e', 'i', 'o', and 'u'.
 
 ### Example 1
 
 ```text
 Input: s = "cat and mice"
 Output: "cat dna mice"
-Explanation: The first word "cat" has 1 vowel.
-"and" has 1 vowel, so it is reversed to form "dna".
-"mice" has 2 vowels, so it remains unchanged.
-Thus, the resulting string is "cat dna mice".
+Explanation: The first word "cat" has 1 vowel. "and" has 1 vowel, so
+it is reversed to form "dna". "mice" has 2 vowels, so it remains
+unchanged. Thus, the resulting string is "cat dna mice".
 ```
 
 ### Example 2
@@ -29,10 +28,9 @@ Thus, the resulting string is "cat dna mice".
 ```text
 Input: s = "book is nice"
 Output: "book is ecin"
-Explanation: The first word "book" has 2 vowels.
-"is" has 1 vowel, so it remains unchanged.
-"nice" has 2 vowels, so it is reversed to form "ecin".
-Thus, the resulting string is "book is ecin".
+Explanation: The first word "book" has 2 vowels. "is" has 1 vowel, so
+it remains unchanged. "nice" has 2 vowels, so it is reversed to form
+"ecin". Thus, the resulting string is "book is ecin".
 ```
 
 ### Example 3
@@ -40,9 +38,9 @@ Thus, the resulting string is "book is ecin".
 ```text
 Input: s = "banana healthy"
 Output: "banana healthy"
-Explanation: The first word "banana" has 3 vowels.
-"healthy" has 2 vowels, so it remains unchanged.
-Thus, the resulting string is "banana healthy".
+Explanation: The first word "banana" has 3 vowels. "healthy" has 2
+vowels, so it remains unchanged. Thus, the resulting string is
+"banana healthy".
 ```
 
 ### Constraints

@@ -17,7 +17,10 @@ class Solution {
         if (remaining <= 1) return remaining;
         Integer cached = memo.get(remaining);
         if (cached != null) return cached;
-        int days = Math.min(remaining % 2 + 1 + dp(remaining / 2, memo), remaining % 3 + 1 + dp(remaining / 3, memo));
+        int days = Math.min(
+            (remaining % 2) + 1 + dp(remaining / 2, memo),
+            (remaining % 3) + 1 + dp(remaining / 3, memo)
+        );
         memo.put(remaining, days);
         return days;
     }

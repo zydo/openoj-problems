@@ -1,6 +1,9 @@
 impl Solution {
     pub fn count_valid_words(sentence: String) -> i32 {
-        sentence.split_whitespace().filter(|token| Self::is_valid(token)).count() as i32
+        sentence
+            .split_whitespace()
+            .filter(|token| Self::is_valid(token))
+            .count() as i32
     }
 
     fn is_valid(token: &str) -> bool {

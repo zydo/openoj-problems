@@ -4,8 +4,11 @@ WITH
       COUNT(*) AS n
     FROM
       (
-        SELECT DISTINCT sender_id, send_to_id
-        FROM FriendRequest
+        SELECT DISTINCT
+          sender_id,
+          send_to_id
+        FROM
+          FriendRequest
       )
   ),
   accepts AS (
@@ -13,8 +16,11 @@ WITH
       COUNT(*) AS n
     FROM
       (
-        SELECT DISTINCT requester_id, accepter_id
-        FROM RequestAccepted
+        SELECT DISTINCT
+          requester_id,
+          accepter_id
+        FROM
+          RequestAccepted
       )
   )
 SELECT

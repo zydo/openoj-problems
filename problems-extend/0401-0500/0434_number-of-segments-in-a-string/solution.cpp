@@ -8,7 +8,7 @@ class Solution {
         // One left-to-right pass tests that boundary condition at every
         // position: leading, trailing, and repeated interior spaces never
         // register, and an empty string offers no position at all.
-        for (int i = 0; i < (int) s.size(); ++i) {
+        for (int i = 0; i < (int)s.size(); ++i) {
             if (s[i] != ' ' && (i == 0 || s[i - 1] == ' ')) {
                 ++count;
             }

@@ -32,10 +32,7 @@ impl Solution {
                         cur = Solution::merge(&cur, words[k].as_str());
                     }
                 }
-                if best.is_empty()
-                    || cur.len() < best.len()
-                    || (cur.len() == best.len() && cur < best)
-                {
+                if best.is_empty() || cur.len() < best.len() || (cur.len() == best.len() && cur < best) {
                     best = cur;
                 }
             }

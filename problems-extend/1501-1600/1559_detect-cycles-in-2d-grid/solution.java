@@ -16,9 +16,13 @@ class Solution {
                 stack.push(new int[] { r0, c0, -1, -1 });
                 while (!stack.isEmpty()) {
                     int[] cell = stack.pop();
-                    int x = cell[0], y = cell[1], px = cell[2], py = cell[3];
+                    int x = cell[0],
+                        y = cell[1],
+                        px = cell[2],
+                        py = cell[3];
                     for (int[] d : dirs) {
-                        int nx = x + d[0], ny = y + d[1];
+                        int nx = x + d[0],
+                            ny = y + d[1];
                         if (nx < 0 || nx >= rows || ny < 0 || ny >= cols) continue;
                         if (!grid[nx][ny].equals(grid[x][y])) continue;
                         if (nx == px && ny == py) continue;

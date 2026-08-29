@@ -22,9 +22,6 @@ function tripletCount(a: number[], b: number[], c: number[]): number {
         }
     }
     return (
-        even[0] * even[1] * even[2] +
-        odd[0] * odd[1] * even[2] +
-        odd[0] * even[1] * odd[2] +
-        even[0] * odd[1] * odd[2]
+        even[0] * even[1] * even[2] + odd[0] * odd[1] * even[2] + odd[0] * even[1] * odd[2] + even[0] * odd[1] * odd[2]
     );
 }

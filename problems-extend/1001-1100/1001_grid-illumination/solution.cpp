@@ -1,12 +1,12 @@
 class Solution {
-public:
-    vector<bool> gridIllumination(int n, vector<vector<int>>& lamps, vector<vector<int>>& queries) {
+  public:
+    vector<bool> gridIllumination(int n, vector<vector<int>> &lamps, vector<vector<int>> &queries) {
         unordered_map<int, int> row, col, diag, antiDiag;
         unordered_set<long long> on;
 
         auto encode = [](int x, int y) -> long long { return (long long)x * 2000000000LL + y; };
 
-        for (auto& lamp : lamps) {
+        for (auto &lamp : lamps) {
             int x = lamp[0], y = lamp[1];
             if (!on.insert(encode(x, y)).second) {
                 continue;

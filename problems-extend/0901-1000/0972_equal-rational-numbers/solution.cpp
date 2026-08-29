@@ -18,7 +18,7 @@ class Solution {
   private:
     // The value of one notation as {whole, numerator, denominator}, with
     // the trailing-9s carry already folded into the whole part.
-    array<long long, 3> fraction(const string& x) {
+    array<long long, 3> fraction(const string &x) {
         size_t dot = x.find('.');
         string integer = dot == string::npos ? x : x.substr(0, dot);
         string rest = dot == string::npos ? "" : x.substr(dot + 1);
@@ -43,7 +43,7 @@ class Solution {
         return {whole, numerator, denominator};
     }
 
-    long long digits(const string& s) { return s.empty() ? 0 : stoll(s); }
+    long long digits(const string &s) { return s.empty() ? 0 : stoll(s); }
 
     long long pow10(int exponent) {
         long long value = 1;

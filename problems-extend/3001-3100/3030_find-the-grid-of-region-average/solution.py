@@ -10,21 +10,10 @@ class Solution:
         # calm_h[r][c] means row r is horizontally calm across columns
         # c..c+2, calm_v[r][c] means column c is vertically calm across rows
         # r..r+2, so a window at (i, j) needs three entries of each kind.
-        edge_h = [
-            [abs(a - b) <= threshold for a, b in zip(row, row[1:])]
-            for row in image
-        ]
-        calm_h = [
-            [a and b for a, b in zip(erow, erow[1:])] for erow in edge_h
-        ]
-        edge_v = [
-            [abs(a - b) <= threshold for a, b in zip(top, bot)]
-            for top, bot in zip(image, image[1:])
-        ]
-        calm_v = [
-            [a and b for a, b in zip(e_top, e_bot)]
-            for e_top, e_bot in zip(edge_v, edge_v[1:])
-        ]
+        edge_h = [[abs(a - b) <= threshold for a, b in zip(row, row[1:])] for row in image]
+        calm_h = [[a and b for a, b in zip(erow, erow[1:])] for erow in edge_h]
+        edge_v = [[abs(a - b) <= threshold for a, b in zip(top, bot)] for top, bot in zip(image, image[1:])]
+        calm_v = [[a and b for a, b in zip(e_top, e_bot)] for e_top, e_bot in zip(edge_v, edge_v[1:])]
         # Two-dimensional prefix sums give each window's nine-cell total in
         # constant time: pref[i + 3][j + 3] - pref[i][j + 3] is the sum of
         # rows i..i+2 up to column j + 2, minus the same for rows < i.
@@ -41,10 +30,7 @@ class Solution:
             sr0, sr1, sr2 = sums[i], sums[i + 1], sums[i + 2]
             cr0, cr1, cr2 = counts[i], counts[i + 1], counts[i + 2]
             for j, ok in enumerate(h_top):
-                if not (
-                    ok and h_mid[j] and h_bot[j]
-                    and v_mid[j] and v_mid[j + 1] and v_mid[j + 2]
-                ):
+                if not (ok and h_mid[j] and h_bot[j] and v_mid[j] and v_mid[j + 1] and v_mid[j + 2]):
                     continue
                 avg = (low[j + 3] - low[j] - high[j + 3] + high[j]) // 9
                 # Credit the floored region average to all nine covered pixels.
@@ -67,9 +53,6 @@ class Solution:
                 cr2[j + 1] += 1
                 cr2[j + 2] += 1
         return [
-            [
-                total // count if count else original
-                for total, count, original in zip(srow, crow, irow)
-            ]
+            [total // count if count else original for total, count, original in zip(srow, crow, irow)]
             for srow, crow, irow in zip(sums, counts, image)
         ]

@@ -26,7 +26,12 @@ impl Solution {
         while let Some((boxed, parent, right_side)) = work.pop() {
             if let Some(mut node) = boxed {
                 let at = cells.len();
-                cells.push(Cell { val: node.val, left: None, right: None, parent });
+                cells.push(Cell {
+                    val: node.val,
+                    left: None,
+                    right: None,
+                    parent,
+                });
                 if let Some(p) = parent {
                     if right_side {
                         cells[p].right = Some(at);
@@ -68,13 +73,16 @@ impl Solution {
         // Reassemble the re-hung arena into owned boxes, children first,
         // from the leaf — the walk's starting point is the new root.
         let vals: Vec<i32> = cells.iter().map(|cell| cell.val).collect();
-        let links: Vec<(Option<usize>, Option<usize>)> =
-            cells.iter().map(|cell| (cell.left, cell.right)).collect();
+        let links: Vec<(Option<usize>, Option<usize>)> = cells.iter().map(|cell| (cell.left, cell.right)).collect();
         let mut built: Vec<Option<Box<TreeNode>>> = (0..vals.len()).map(|_| None).collect();
         let mut stack: Vec<(usize, bool)> = vec![(leaf_at, false)];
         while let Some((at, expanded)) = stack.pop() {
             if expanded {
-                let mut node = Box::new(TreeNode { val: vals[at], left: None, right: None });
+                let mut node = Box::new(TreeNode {
+                    val: vals[at],
+                    left: None,
+                    right: None,
+                });
                 if let Some(left) = links[at].0 {
                     node.left = built[left].take();
                 }

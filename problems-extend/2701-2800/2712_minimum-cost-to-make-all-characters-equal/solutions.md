@@ -2,7 +2,7 @@
 
 ## Independent border fixes
 
-Look at what each operation does to one *border* — the gap between
+Look at what each operation does to one _border_ — the gap between
 positions `i - 1` and `i`. Every prefix flip whose index is less than
 `i - 1` or at least `i` moves both neighbors together and leaves their
 relative order untouched; only the prefix flip ending exactly at `i - 1`

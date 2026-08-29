@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int maximizeGreatness(std::vector<int>& nums) {
+    int maximizeGreatness(std::vector<int> &nums) {
         // Sort the array; then scan a second sorted copy of the same
         // multiset with a fast pointer that always offers the smallest not
         // yet committed value strictly greater than the current element.

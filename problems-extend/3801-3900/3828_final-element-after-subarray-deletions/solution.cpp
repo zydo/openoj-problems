@@ -2,8 +2,8 @@
 #include <vector>
 
 class Solution {
-public:
-    int finalElement(vector<int>& nums) {
+  public:
+    int finalElement(vector<int> &nums) {
         // Alice can end the game with her opening move: deleting the
         // contiguous block of length n - 1 that spares one endpoint is
         // always legal (n - 1 < n), so she secures the larger endpoint.

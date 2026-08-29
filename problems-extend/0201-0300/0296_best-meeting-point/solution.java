@@ -7,7 +7,8 @@ class Solution {
         // A row-major sweep collects the row indexes already sorted; a
         // column-major sweep does the same for the column indexes, so
         // neither axis needs an explicit sort.
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         List<Integer> rows = new ArrayList<>();
         List<Integer> cols = new ArrayList<>();
         for (int r = 0; r < m; ++r) {

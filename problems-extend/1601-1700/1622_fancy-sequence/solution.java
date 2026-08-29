@@ -24,7 +24,7 @@ class Fancy {
         // never 0 mod MOD (each multAll factor is 1..100, and MOD is
         // prime), so the modular inverse always exists.
         long inv = modPow(mult, MOD - 2, MOD);
-        long storedVal = Math.floorMod(val - add, MOD) * inv % MOD;
+        long storedVal = (Math.floorMod(val - add, MOD) * inv) % MOD;
         stored.add(storedVal);
     }
 
@@ -49,9 +49,9 @@ class Fancy {
         base %= mod;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             exp >>= 1;
         }
         return result;

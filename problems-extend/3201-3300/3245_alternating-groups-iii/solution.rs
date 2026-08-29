@@ -5,7 +5,10 @@ struct Fenwick {
 
 impl Fenwick {
     fn new(n: i64) -> Self {
-        Fenwick { n, bit: vec![0; (n + 1) as usize] }
+        Fenwick {
+            n,
+            bit: vec![0; (n + 1) as usize],
+        }
     }
 
     fn add(&mut self, i: i64, delta: i64) {
@@ -139,8 +142,7 @@ impl Solution {
                 }
                 colors[index as usize] = color;
                 for e in [(index + n - 1) % n, index] {
-                    let is_bad =
-                        colors[e as usize] == colors[((e + 1) % n) as usize];
+                    let is_bad = colors[e as usize] == colors[((e + 1) % n) as usize];
                     if is_bad == bad[e as usize] {
                         continue;
                     }

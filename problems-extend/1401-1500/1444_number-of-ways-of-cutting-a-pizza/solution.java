@@ -8,16 +8,24 @@ class Solution {
         int[][] apples = new int[rows + 1][cols + 1];
         for (int r = rows - 1; r >= 0; r--) {
             for (int c = cols - 1; c >= 0; c--) {
-                apples[r][c] = apples[r + 1][c] + apples[r][c + 1] - apples[r + 1][c + 1]
-                        + (pizza[r].charAt(c) == 'A' ? 1 : 0);
+                apples[r][c] =
+                    apples[r + 1][c] + apples[r][c + 1] - apples[r + 1][c + 1] + (pizza[r].charAt(c) == 'A' ? 1 : 0);
             }
         }
         long[][][] memo = new long[rows][cols][k];
         return (int) count(apples, memo, 0, 0, k - 1, rows, cols, MOD);
     }
 
-    private long count(int[][] apples, long[][][] memo, int r, int c, int remaining,
-            int rows, int cols, final int MOD) {
+    private long count(
+        int[][] apples,
+        long[][][] memo,
+        int r,
+        int c,
+        int remaining,
+        int rows,
+        int cols,
+        final int MOD
+    ) {
         if (apples[r][c] == 0) {
             return 0;
         }

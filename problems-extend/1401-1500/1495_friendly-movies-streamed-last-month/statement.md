@@ -16,12 +16,12 @@ the id of the program in some channel on the TV.
 
 Table `Content`:
 
-| Column Name   | Type    |
-| ------------- | ------- |
-| content_id    | int     |
-| title         | varchar |
-| Kids_content  | enum    |
-| content_type  | varchar |
+| Column Name  | Type    |
+| ------------ | ------- |
+| content_id   | int     |
+| title        | varchar |
+| Kids_content | enum    |
+| content_type | varchar |
 
 `content_id` is the primary key for this table. `Kids_content` is an
 ENUM (category) of types (`'Y'`, `'N'`) where `'Y'` means is content for

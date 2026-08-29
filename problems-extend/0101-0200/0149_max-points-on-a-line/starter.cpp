@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxPoints(vector<vector<int>>& points) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxPoints(vector<vector<int>> &points) { throw logic_error("TODO"); }
 };

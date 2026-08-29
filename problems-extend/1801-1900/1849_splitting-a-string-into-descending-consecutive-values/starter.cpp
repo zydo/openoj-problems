@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool splitString(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool splitString(string s) { throw logic_error("TODO"); }
 };

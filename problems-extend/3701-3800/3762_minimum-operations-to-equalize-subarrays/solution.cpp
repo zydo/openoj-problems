@@ -19,8 +19,7 @@ class Solution {
         const auto &left = sortedNodes[2 * node];
         const auto &right = sortedNodes[2 * node + 1];
         std::vector<int> merged(left.size() + right.size());
-        std::merge(left.begin(), left.end(), right.begin(), right.end(),
-                   merged.begin());
+        std::merge(left.begin(), left.end(), right.begin(), right.end(), merged.begin());
         std::vector<long long> pref(merged.size() + 1, 0);
         for (size_t i = 0; i < merged.size(); i++) {
             pref[i + 1] = pref[i] + merged[i];
@@ -30,10 +29,9 @@ class Solution {
     }
 
     // Count of values <= x across the decomposition and their total sum.
-    std::pair<long long, long long>
-    countLeSum(const std::vector<const std::vector<int> *> &pieces,
-               const std::vector<const std::vector<long long> *> &prefixes,
-               long long x) const {
+    std::pair<long long, long long> countLeSum(const std::vector<const std::vector<int> *> &pieces,
+                                               const std::vector<const std::vector<long long> *> &prefixes,
+                                               long long x) const {
         long long count = 0, total = 0;
         for (size_t p = 0; p < pieces.size(); p++) {
             const auto &vec = *pieces[p];
@@ -53,9 +51,7 @@ class Solution {
         return {count, total};
     }
 
-    std::vector<long long>
-    minOperations(std::vector<int> &nums, int k,
-                  std::vector<std::vector<int>> &queries) {
+    std::vector<long long> minOperations(std::vector<int> &nums, int k, std::vector<std::vector<int>> &queries) {
         int n = nums.size();
         // Remainder runs: a window is equalizable iff it sits inside one
         // maximal run of equal remainders, i.e. iff l and r share a mark.
@@ -130,9 +126,7 @@ class Solution {
             }
             // Below-median elements climb by their shortfall; above-median
             // ones descend by their excess; equals cost nothing.
-            result[qi] = median * below.first - below.second +
-                         ((grandTotal - at.second) -
-                          median * (size - at.first));
+            result[qi] = median * below.first - below.second + ((grandTotal - at.second) - median * (size - at.first));
         }
         return result;
     }

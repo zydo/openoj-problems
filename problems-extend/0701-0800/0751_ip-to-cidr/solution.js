@@ -25,7 +25,7 @@ var ipToCIDR = function (ip, n) {
             prefix -= 1;
         }
         blocks.push(
-            `${Math.floor(x / 16777216)}.${Math.floor(x / 65536) % 256}.${Math.floor(x / 256) % 256}.${x % 256}/${prefix}`
+            `${Math.floor(x / 16777216)}.${Math.floor(x / 65536) % 256}.${Math.floor(x / 256) % 256}.${x % 256}/${prefix}`,
         );
         x += block;
         n -= block;

@@ -21,9 +21,8 @@ class Solution {
         // Pinned output order: ascending lexicographic by domain name —
         // an explicit comparator, never hash-table order.
         vector<pair<string, int>> items(counts.begin(), counts.end());
-        sort(items.begin(), items.end(), [](const pair<string, int> &a, const pair<string, int> &b) {
-            return a.first < b.first;
-        });
+        sort(items.begin(), items.end(),
+             [](const pair<string, int> &a, const pair<string, int> &b) { return a.first < b.first; });
         vector<string> result;
         result.reserve(items.size());
         for (const auto &[domain, total] : items) {

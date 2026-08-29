@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> minSubsequence(vector<int>& nums) {
+    vector<int> minSubsequence(vector<int> &nums) {
         // The chosen subsequence must sum to more than half the total.
         // Every element is positive, so taking the largest elements first
         // yields the minimum size and, per size, the maximum sum.

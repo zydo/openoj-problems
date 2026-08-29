@@ -1,22 +1,22 @@
+import java.util.Arrays;
+
 class Solution {
 
-    // The first word fixes the target vowel count; every later word
-    // sharing it is reversed, the rest pass through untouched.
     public String reverseWords(String s) {
+        // The first word only fixes the target vowel count; each later
+        // word matching it is reversed in place, everything else (word
+        // order, separators) stays as-is.
         String[] words = s.split(" ");
         int target = countVowels(words[0]);
-        StringBuilder out = new StringBuilder(words[0]);
         for (int i = 1; i < words.length; i++) {
-            out.append(' ');
             if (countVowels(words[i]) == target) {
-                out.append(new StringBuilder(words[i]).reverse());
-            } else {
-                out.append(words[i]);
+                words[i] = new StringBuilder(words[i]).reverse().toString();
             }
         }
-        return out.toString();
+        return String.join(" ", words);
     }
 
+    // Counts a/e/i/o/u occurrences in one word.
     private int countVowels(String word) {
         int count = 0;
         for (int i = 0; i < word.length(); i++) {

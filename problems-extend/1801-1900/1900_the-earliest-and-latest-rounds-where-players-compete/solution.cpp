@@ -1,5 +1,5 @@
 class Solution {
-   public:
+  public:
     // State: ranks i, j of the two stars in a row of m survivors.
     vector<int> earliestAndLatest(int n, int firstPlayer, int secondPlayer) {
         memo_.clear();
@@ -7,14 +7,17 @@ class Solution {
         return {res.first, res.second};
     }
 
-   private:
+  private:
     map<tuple<int, int, int>, pair<int, int>> memo_;
 
     pair<int, int> dp(int i, int j, int m) {
-        if (i + j == m + 1) return {1, 1};
-        if (i > m - j + 1) return dp(m - j + 1, m - i + 1, m);
+        if (i + j == m + 1)
+            return {1, 1};
+        if (i > m - j + 1)
+            return dp(m - j + 1, m - i + 1, m);
         auto it = memo_.find({i, j, m});
-        if (it != memo_.end()) return it->second;
+        if (it != memo_.end())
+            return it->second;
         int half = (m + 1) / 2;
         vector<pair<int, int>> free;
         for (int k = 1; k <= half; k++) {
@@ -34,17 +37,13 @@ class Solution {
                 } else if (j == k || j == back) {
                     survivors.push_back(j);
                 } else {
-                    int idx =
-                        find(free.begin(), free.end(), make_pair(k, back)) -
-                        free.begin();
+                    int idx = find(free.begin(), free.end(), make_pair(k, back)) - free.begin();
                     survivors.push_back(mask >> idx & 1 ? k : back);
                 }
             }
             sort(survivors.begin(), survivors.end());
-            int nf = find(survivors.begin(), survivors.end(), i) -
-                     survivors.begin() + 1;
-            int ns = find(survivors.begin(), survivors.end(), j) -
-                     survivors.begin() + 1;
+            int nf = find(survivors.begin(), survivors.end(), i) - survivors.begin() + 1;
+            int ns = find(survivors.begin(), survivors.end(), j) - survivors.begin() + 1;
             auto sub = dp(nf, ns, survivors.size());
             lo = min(lo, sub.first);
             hi = max(hi, sub.second);

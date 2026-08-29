@@ -35,6 +35,10 @@ impl Solution {
 
         // An unreached target keeps the MAX sentinel.
         let best = distances[n - 1];
-        if best == i64::MAX { -1 } else { best as i32 }
+        if best == i64::MAX {
+            -1
+        } else {
+            best as i32
+        }
     }
 }

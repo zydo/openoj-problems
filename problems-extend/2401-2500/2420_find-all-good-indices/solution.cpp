@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> goodIndices(vector<int>& nums, int k) {
+    vector<int> goodIndices(vector<int> &nums, int k) {
         // Run-length DP: noninc[i] is the longest non-increasing run ending
         // at i; nondec[i] the longest non-decreasing run starting at i.
         // Index i is good exactly when both runs flanking it reach length

@@ -12,11 +12,8 @@ class CounterCase {
         if (!Number.isInteger(n)) {
             throw new Error("n must be an integer");
         }
-        if (
-            !Array.isArray(calls) ||
-            calls.some((call) => call !== "call")
-        ) {
-            throw new Error("calls must be a list of \"call\" entries");
+        if (!Array.isArray(calls) || calls.some((call) => call !== "call")) {
+            throw new Error('calls must be a list of "call" entries');
         }
         this.n = n;
         this.calls = calls;

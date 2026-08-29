@@ -8,7 +8,7 @@ Only November 2019 rows matter, and a `BETWEEN '2019-11-01' AND
 survives by `country_id` gives each country its November average through
 `AVG(weather_state)`.
 
-The classification thresholds apply to the *rounded* average, so the
+The classification thresholds apply to the _rounded_ average, so the
 rounding happens before the comparison: `ROUND(AVG(weather_state))` snaps
 the mean to an integer (half away from zero, matching the reference
 outputs), and a `CASE` expression maps that value onto Cold at 15 or below,

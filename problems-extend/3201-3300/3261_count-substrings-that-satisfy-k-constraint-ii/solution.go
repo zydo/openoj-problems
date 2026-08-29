@@ -35,7 +35,7 @@ func countKConstraintSubstrings(s string, k int, queries [][]int) []int64 {
 		l, r := query[0], query[1]
 		j := next[l]
 		if j > r {
-			m := int64(r-l+1)
+			m := int64(r - l + 1)
 			answer[t] = m * (m + 1) / 2
 		} else {
 			d := int64(j - l)

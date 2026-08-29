@@ -7,9 +7,7 @@ impl Solution {
         let bytes = s.as_bytes();
         let numbers: Vec<i32> = (0..size).map(|index| (bytes[index * 2] - b'0') as i32).collect();
         let operators: Vec<u8> = (0..size - 1).map(|index| bytes[index * 2 + 1]).collect();
-        let mut dp: Vec<Vec<HashSet<i32>>> = (0..size)
-            .map(|_| (0..size).map(|_| HashSet::new()).collect())
-            .collect();
+        let mut dp: Vec<Vec<HashSet<i32>>> = (0..size).map(|_| (0..size).map(|_| HashSet::new()).collect()).collect();
         for index in 0..size {
             dp[index][index].insert(numbers[index]);
         }

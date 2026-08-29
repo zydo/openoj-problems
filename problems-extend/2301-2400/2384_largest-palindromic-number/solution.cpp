@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string largestPalindromic(string num) {
         // Spend each digit's full pairs into the left half, highest
         // digit first; the largest odd-count digit becomes the center.

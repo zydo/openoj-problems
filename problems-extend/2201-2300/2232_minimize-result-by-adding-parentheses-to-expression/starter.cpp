@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string minimizeResult(string expression) {
-        throw logic_error("TODO");
-    }
+  public:
+    string minimizeResult(string expression) { throw logic_error("TODO"); }
 };

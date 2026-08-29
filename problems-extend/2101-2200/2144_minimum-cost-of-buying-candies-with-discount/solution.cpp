@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minimumCost(vector<int>& cost) {
+  public:
+    int minimumCost(vector<int> &cost) {
         vector<int> values = cost;
         sort(values.begin(), values.end(), greater<int>());
         int total = 0;

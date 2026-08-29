@@ -7,8 +7,9 @@ from typing import Optional
 
 
 class Solution:
-    def getTargetCopy(self, original: Optional[TreeNode], cloned: Optional[TreeNode],
-                      target: int) -> Optional[TreeNode]:
+    def getTargetCopy(
+        self, original: Optional[TreeNode], cloned: Optional[TreeNode], target: int
+    ) -> Optional[TreeNode]:
         # Parallel preorder: identical shapes keep every (original, cloned)
         # pair aligned, so the first original node with the target value
         # hands back exactly the matching cloned subtree.

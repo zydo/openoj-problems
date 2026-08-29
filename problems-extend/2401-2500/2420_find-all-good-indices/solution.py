@@ -18,6 +18,4 @@ class Solution:
         for i in range(n - 2, -1, -1):
             if nums[i] <= nums[i + 1]:
                 nondec[i] = nondec[i + 1] + 1
-        return [
-            i for i in range(k, n - k) if noninc[i - 1] >= k and nondec[i + 1] >= k
-        ]
+        return [i for i in range(k, n - k) if noninc[i - 1] >= k and nondec[i + 1] >= k]

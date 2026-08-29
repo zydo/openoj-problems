@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int maximumCount(std::vector<int>& nums) {
+    int maximumCount(std::vector<int> &nums) {
         // In a sorted array the negatives are exactly the prefix ending
         // before the first value >= 0 and the positives are exactly the
         // suffix starting at the first value >= 1. Two lower_bound calls

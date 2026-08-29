@@ -6,10 +6,13 @@ class Solution {
         // climb, s2 a full trionic mid-final-climb. Unreachable sits on a
         // sentinel far below any real sum.
         final long NEG = -(1L << 60);
-        long s0 = NEG, s1 = NEG, s2 = NEG;
+        long s0 = NEG,
+            s1 = NEG,
+            s2 = NEG;
         long best = NEG;
         for (int i = 1; i < nums.length; i++) {
-            long prev = nums[i - 1], x = nums[i];
+            long prev = nums[i - 1],
+                x = nums[i];
             if (x > prev) {
                 // Rising step: the final climb continues or opens from a
                 // finished descent; the first climb extends from itself or

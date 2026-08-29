@@ -1,5 +1,5 @@
 class Solution {
-   public:
+  public:
     // Positive: insert before the first digit < x (else append).
     // Negative: insert before the first digit > x (else append).
     string maxValue(string n, int x) {

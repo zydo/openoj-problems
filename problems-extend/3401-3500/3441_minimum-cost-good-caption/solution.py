@@ -30,10 +30,7 @@ class Solution:
                 s1 = src[i + 1]
                 s2 = src[i + 2]
                 row_triple = 26 * (i + 3)
-                w = [
-                    abs(si - ch) + abs(s1 - ch) + abs(s2 - ch) + A[row_triple + ch]
-                    for ch in range(26)
-                ]
+                w = [abs(si - ch) + abs(s1 - ch) + abs(s2 - ch) + A[row_triple + ch] for ch in range(26)]
                 best1 = best2 = INF
                 idx1 = idx2 = -1
                 for ch in range(26):
@@ -50,9 +47,7 @@ class Solution:
                 idx1 = idx2 = -1
             row = 26 * i
             if idx1 < 0:
-                A[row : row + 26] = [
-                    abs(si - c) + A[row_next + c] for c in range(26)
-                ]
+                A[row : row + 26] = [abs(si - c) + A[row_next + c] for c in range(26)]
             else:
                 A[row : row + 26] = [
                     min(
@@ -69,11 +64,7 @@ class Solution:
             si = src[i]
             if r == 1:
                 # a length-1 run must still reach length 3: needs i, i+1
-                cand = (
-                    abs(si - c) + abs(src[i + 1] - c) + A[26 * (i + 2) + c]
-                    if i + 2 <= n
-                    else INF
-                )
+                cand = abs(si - c) + abs(src[i + 1] - c) + A[26 * (i + 2) + c] if i + 2 <= n else INF
                 chosen = c
             elif r == 2:
                 cand = abs(si - c) + A[26 * (i + 1) + c]

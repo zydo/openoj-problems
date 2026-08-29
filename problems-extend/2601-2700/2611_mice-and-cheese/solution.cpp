@@ -14,7 +14,8 @@ class Solution {
             gains[i] = reward1[i] - reward2[i];
         }
         sort(gains.begin(), gains.end(), greater<int>());
-        for (int i = 0; i < k; ++i) total += gains[i];
+        for (int i = 0; i < k; ++i)
+            total += gains[i];
         return (int)total;
     }
 };

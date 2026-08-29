@@ -6,7 +6,8 @@ var countServers = function (grid) {
     // A server communicates iff its row or its column holds another
     // server — any communicating partner must share one of those lines,
     // so tallies per line settle it without searching the pair graph.
-    const m = grid.length, n = grid[0].length;
+    const m = grid.length,
+        n = grid[0].length;
     const row = new Array(m).fill(0);
     const col = new Array(n).fill(0);
     for (let r = 0; r < m; ++r) {

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int pivotInteger(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int pivotInteger(int n) { throw logic_error("TODO"); }
 };

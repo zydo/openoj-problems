@@ -33,7 +33,7 @@ class Fancy {
         // never 0 mod MOD (each multAll factor is 1..100, and MOD is
         // prime), so the modular inverse always exists.
         const inv = modPow(this.mult, MOD - 2n, MOD);
-        const diff = ((BigInt(val) - this.add) % MOD + MOD) % MOD;
+        const diff = (((BigInt(val) - this.add) % MOD) + MOD) % MOD;
         this.stored.push((diff * inv) % MOD);
     }
 

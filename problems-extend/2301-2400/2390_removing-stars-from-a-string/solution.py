@@ -4,8 +4,8 @@ class Solution:
         # stack of survivors: push letters, pop on stars.
         kept = []
         for c in s:
-            if c == '*':
+            if c == "*":
                 kept.pop()
             else:
                 kept.append(c)
-        return ''.join(kept)
+        return "".join(kept)

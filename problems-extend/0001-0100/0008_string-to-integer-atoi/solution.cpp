@@ -3,7 +3,7 @@ class Solution {
     int myAtoi(string s) {
         // One left-to-right scan over s implements the statement's four steps
         // in order: whitespace, signedness, conversion, rounding.
-        int i = 0, n = (int) s.size();
+        int i = 0, n = (int)s.size();
         while (i < n && s[i] == ' ') {
             i++;
         }
@@ -28,6 +28,6 @@ class Solution {
             total = total * 10 + digit;
             i++;
         }
-        return (int) (sign * total);
+        return (int)(sign * total);
     }
 };

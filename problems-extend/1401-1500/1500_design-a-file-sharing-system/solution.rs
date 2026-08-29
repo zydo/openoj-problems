@@ -10,7 +10,12 @@ pub struct FileSharing {
 
 impl FileSharing {
     pub fn new(m: i32) -> Self {
-        FileSharing { chunks: HashMap::new(), alive: HashSet::new(), freed: BinaryHeap::new(), next_id: 1 }
+        FileSharing {
+            chunks: HashMap::new(),
+            alive: HashSet::new(),
+            freed: BinaryHeap::new(),
+            next_id: 1,
+        }
     }
 
     pub fn join(&mut self, owned_chunks: Vec<i32>) -> i32 {

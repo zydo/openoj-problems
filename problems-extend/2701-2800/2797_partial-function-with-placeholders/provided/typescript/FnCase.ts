@@ -9,9 +9,7 @@ class FnCase {
     restArgs: any[];
     constructor(values: any[], _queryBudget?: unknown) {
         const [source, args, restArgs] = values;
-        this.fn = new Function("return (" + source + ");")() as unknown as (
-            ...args: any[]
-        ) => any;
+        this.fn = new Function("return (" + source + ");")() as unknown as (...args: any[]) => any;
         this.args = args;
         this.restArgs = restArgs;
     }

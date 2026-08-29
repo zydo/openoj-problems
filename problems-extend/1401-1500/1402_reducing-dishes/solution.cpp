@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxSatisfaction(vector<int>& satisfaction) {
+    int maxSatisfaction(vector<int> &satisfaction) {
         // Sort ascending; the chosen set is a suffix of this order. Adding
         // a new value at the front shifts every chosen dish one slot later
         // (gaining running_sum) and contributes value * 1 for its own slot,

@@ -17,8 +17,11 @@ class Solution {
             String creator = creators[i];
             totals.merge(creator, (long) views[i], Long::sum);
             Integer current = bestView.get(creator);
-            if (current == null || views[i] > current
-                    || (views[i] == current && ids[i].compareTo(bestId.get(creator)) < 0)) {
+            if (
+                current == null ||
+                views[i] > current ||
+                (views[i] == current && ids[i].compareTo(bestId.get(creator)) < 0)
+            ) {
                 bestView.put(creator, views[i]);
                 bestId.put(creator, ids[i]);
             }

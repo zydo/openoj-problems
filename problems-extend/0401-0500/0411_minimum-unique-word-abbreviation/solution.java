@@ -80,16 +80,16 @@ class Solution {
         // Keep this letter: masks hit here are satisfied from now on.
         List<Integer> still = new ArrayList<>();
         for (int diff : pending) {
-            if ((diff >> pos & 1) == 0) still.add(diff);
+            if (((diff >> pos) & 1) == 0) still.add(diff);
         }
-        walk(pos + 1, mask | 1 << pos, kept + 1, runs + (openRun ? 1 : 0), false, still);
+        walk(pos + 1, mask | (1 << pos), kept + 1, runs + (openRun ? 1 : 0), false, still);
     }
 
     private String build(int mask) {
         StringBuilder abbr = new StringBuilder();
         int run = 0;
         for (int i = 0; i < m; ++i) {
-            if ((mask >> i & 1) != 0) {
+            if (((mask >> i) & 1) != 0) {
                 if (run > 0) {
                     abbr.append(run);
                     run = 0;

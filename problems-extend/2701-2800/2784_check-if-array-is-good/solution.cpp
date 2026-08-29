@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool isGood(vector<int>& nums) {
+  public:
+    bool isGood(vector<int> &nums) {
         // A permutation of base[m] has maximum m and length m + 1, so the
         // maximum leaves exactly one candidate array to match. Sort a copy
         // of nums and compare it against the literally constructed

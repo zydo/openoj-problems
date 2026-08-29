@@ -6,7 +6,8 @@ class Solution {
     // lo and hi pairs with lo as well, worth hi - lo pairs.
     private long countAtMost(int[] arr, long limit) {
         long total = 0;
-        int lo = 0, hi = arr.length - 1;
+        int lo = 0,
+            hi = arr.length - 1;
         while (lo < hi) {
             if ((long) arr[lo] + arr[hi] <= limit) {
                 total += hi - lo;

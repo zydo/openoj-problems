@@ -1,6 +1,6 @@
 class Solution {
   public:
-    bool canThreePartsEqualSum(vector<int>& arr) {
+    bool canThreePartsEqualSum(vector<int> &arr) {
         // If the total isn't a multiple of 3, no equal three-way split can
         // exist. Otherwise each part must sum to target = total / 3.
         int total = 0;

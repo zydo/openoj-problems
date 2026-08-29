@@ -13,12 +13,11 @@ class Solution {
                 letters.push_back(c);
             }
         }
-        if ((int)letters.size() - (int)digits.size() > 1 ||
-            (int)digits.size() - (int)letters.size() > 1) {
+        if ((int)letters.size() - (int)digits.size() > 1 || (int)digits.size() - (int)letters.size() > 1) {
             return "";
         }
-        std::vector<char>& first = letters.size() >= digits.size() ? letters : digits;
-        std::vector<char>& second = &first == &letters ? digits : letters;
+        std::vector<char> &first = letters.size() >= digits.size() ? letters : digits;
+        std::vector<char> &second = &first == &letters ? digits : letters;
         std::string result;
         result.reserve(s.size());
         for (int i = 0; i < (int)first.size(); i++) {

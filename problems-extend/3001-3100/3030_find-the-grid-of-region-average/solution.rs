@@ -29,8 +29,7 @@ impl Solution {
         let mut pref = vec![vec![0i32; n + 1]; m + 1];
         for r in 0..m {
             for c in 0..n {
-                pref[r + 1][c + 1] =
-                    pref[r][c + 1] + pref[r + 1][c] - pref[r][c] + image[r][c];
+                pref[r + 1][c + 1] = pref[r][c + 1] + pref[r + 1][c] - pref[r][c] + image[r][c];
             }
         }
         let mut sum = vec![vec![0i32; n]; m];
@@ -43,8 +42,7 @@ impl Solution {
                 if !calm_v[i][j] || !calm_v[i][j + 1] || !calm_v[i][j + 2] {
                     continue;
                 }
-                let avg =
-                    (pref[i + 3][j + 3] - pref[i][j + 3] - pref[i + 3][j] + pref[i][j]) / 9;
+                let avg = (pref[i + 3][j + 3] - pref[i][j + 3] - pref[i + 3][j] + pref[i][j]) / 9;
                 for r in i..i + 3 {
                     for c in j..j + 3 {
                         sum[r][c] += avg;

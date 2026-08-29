@@ -1,3 +1,3 @@
 func smallestSubsequence(s string) string {
-    panic("TODO")
+	panic("TODO")
 }

@@ -12,10 +12,7 @@ class DinnerPlates:
     def push(self, val: int) -> None:
         # Discard stale entries: indices past the trimmed end, and stacks
         # already filled to capacity.
-        while self.vacant and (
-            self.vacant[0] >= len(self.stacks)
-            or len(self.stacks[self.vacant[0]]) == self.capacity
-        ):
+        while self.vacant and (self.vacant[0] >= len(self.stacks) or len(self.stacks[self.vacant[0]]) == self.capacity):
             heapq.heappop(self.vacant)
         if self.vacant:
             idx = heapq.heappop(self.vacant)

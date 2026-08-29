@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool winnerOfGame(string colors) {
         int aliceMoves = 0;
         int bobMoves = 0;

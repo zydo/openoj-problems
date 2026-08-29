@@ -24,22 +24,21 @@ class Solution {
             while (r < n && (distinct < 5 || cons < need)) {
                 int v = "aeiou".indexOf(word.charAt(r));
                 if (v >= 0) {
-                    if (have[v]++ == 0)
-                        distinct++;
+                    if (have[v]++ == 0) distinct++;
                 } else {
                     cons++;
                 }
                 r++;
             }
-            if (distinct < 5 || cons < need)
-                // No window starting at l (or any later l) can qualify.
-                break;
+            if (
+                distinct < 5 ||
+                cons < need // No window starting at l (or any later l) can qualify.
+            ) break;
             total += (long) (n - (r - 1));
             // Drop word[l] before moving to the next left end.
             int v = "aeiou".indexOf(word.charAt(l));
             if (v >= 0) {
-                if (--have[v] == 0)
-                    distinct--;
+                if (--have[v] == 0) distinct--;
             } else {
                 cons--;
             }

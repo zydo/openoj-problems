@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string filterCharacters(string s, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    string filterCharacters(string s, int k) { throw logic_error("TODO"); }
 };

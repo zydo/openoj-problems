@@ -6,6 +6,7 @@ class MyLinkedList {
     // (index == length appends, index > length is a no-op, invalid reads
     // return -1, invalid deletes are skipped) live in exactly one place each.
     private static class Cell {
+
         int val;
         Cell next;
     }

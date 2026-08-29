@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def minimumCost(
-        self, start: List[int], target: List[int], specialRoads: List[List[int]]
-    ) -> int:
+    def minimumCost(self, start: List[int], target: List[int], specialRoads: List[List[int]]) -> int:
         # By hint 1 an optimal route only ever stops at road endpoints (plus
         # start and target): any other intermediate point is dominated by
         # walking straight past it. Build that candidate set deduped, join
@@ -22,9 +20,7 @@ class Solution:
 
         start_id = add(start[0], start[1])
         target_id = add(target[0], target[1])
-        roads = [
-            (add(r[0], r[1]), add(r[2], r[3]), r[4]) for r in specialRoads
-        ]
+        roads = [(add(r[0], r[1]), add(r[2], r[3]), r[4]) for r in specialRoads]
         n = len(points)
         inf = 1 << 60
         dist = [inf] * n

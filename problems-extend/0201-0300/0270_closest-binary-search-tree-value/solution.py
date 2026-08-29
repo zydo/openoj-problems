@@ -5,6 +5,7 @@ from typing import Optional
 #   ListNode:  .val int, .next ListNode | None
 #   TreeNode:  .val int, .left / .right TreeNode | None
 
+
 class Solution:
     def closestValue(self, root: Optional[TreeNode], target: float) -> int:
         # One root-to-leaf descent: the search path for target visits the

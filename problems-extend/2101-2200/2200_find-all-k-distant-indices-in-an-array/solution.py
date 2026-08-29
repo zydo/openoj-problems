@@ -1,6 +1,5 @@
 class Solution:
-    def findKDistantIndices(self, nums: list[int], key: int,
-                            k: int) -> list[int]:
+    def findKDistantIndices(self, nums: list[int], key: int, k: int) -> list[int]:
         out: list[int] = []
         next_free = 0
         n = len(nums)

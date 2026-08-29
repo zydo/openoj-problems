@@ -18,8 +18,7 @@ impl Solution {
         for i in (1..=size).rev() {
             inv_fact[i - 1] = inv_fact[i] * (i as i64) % MOD;
         }
-        let comb = fact[(n - 1) as usize] * inv_fact[k as usize] % MOD
-            * inv_fact[(n - 1 - k) as usize] % MOD;
+        let comb = fact[(n - 1) as usize] * inv_fact[k as usize] % MOD * inv_fact[(n - 1 - k) as usize] % MOD;
         (2 * comb % MOD) as i32
     }
 

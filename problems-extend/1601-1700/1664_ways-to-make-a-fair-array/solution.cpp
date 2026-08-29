@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int waysToMakeFair(vector<int>& nums) {
+  public:
+    int waysToMakeFair(vector<int> &nums) {
         // Removing index i leaves every earlier element on its own index
         // and slides every later one down a slot, flipping the suffix's
         // parity: the after-removal even sum is the prefix's even sum

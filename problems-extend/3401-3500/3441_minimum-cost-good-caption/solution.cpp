@@ -19,9 +19,11 @@ class Solution {
         }
         const int INF = 1 << 30;
         vector<int> src(n);
-        for (int i = 0; i < n; ++i) src[i] = caption[i] - 'a';
+        for (int i = 0; i < n; ++i)
+            src[i] = caption[i] - 'a';
         vector<int> A(26 * (n + 4), INF);
-        for (int c = 0; c < 26; ++c) A[26 * n + c] = 0;
+        for (int c = 0; c < 26; ++c)
+            A[26 * n + c] = 0;
         vector<int> m1(n, INF), m2(n, INF), j1(n, -1), j2(n, -1);
         for (int i = n - 1; i >= 0; --i) {
             int si = src[i];
@@ -58,9 +60,7 @@ class Solution {
             int cand;
             if (r == 1) {
                 // a length-1 run must still reach length 3: needs i, i+1
-                cand = i + 2 <= n
-                    ? abs(si - c) + abs(src[i + 1] - c) + A[26 * (i + 2) + c]
-                    : INF;
+                cand = i + 2 <= n ? abs(si - c) + abs(src[i + 1] - c) + A[26 * (i + 2) + c] : INF;
                 chosen = c;
             } else if (r == 2) {
                 cand = abs(si - c) + A[26 * (i + 1) + c];

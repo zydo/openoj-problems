@@ -21,7 +21,10 @@ impl ImmutableListNode {
         let values: Vec<i64> = raw
             .split(',')
             .filter(|part| !part.is_empty())
-            .map(|part| part.parse::<i64>().expect("ImmutableListNode head must contain integers"))
+            .map(|part| {
+                part.parse::<i64>()
+                    .expect("ImmutableListNode head must contain integers")
+            })
             .collect();
         let transcript = std::rc::Rc::new(std::cell::RefCell::new(Vec::new()));
         // Wire the chain from the tail inward using boxed, leaked nodes so
@@ -63,12 +66,6 @@ impl ImmutableListNode {
 
     /// The observable effect: the exact sequence of printed values.
     pub fn verdict(&self) -> OjValue {
-        OjValue::Array(
-            self.transcript
-                .borrow()
-                .iter()
-                .map(|v| OjValue::Int(*v))
-                .collect(),
-        )
+        OjValue::Array(self.transcript.borrow().iter().map(|v| OjValue::Int(*v)).collect())
     }
 }

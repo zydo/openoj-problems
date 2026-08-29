@@ -40,7 +40,7 @@ class Solution {
         int prev = -1;
         for (int i = 0; i < n; ++i) {
             int digit = bound.charAt(i) - '0';
-            for (int choice = (i == 0 ? 1 : 0); choice < digit; ++choice) {
+            for (int choice = i == 0 ? 1 : 0; choice < digit; ++choice) {
                 if (prev < 0 || Math.abs(choice - prev) == 1) {
                     count = (count + ways[n - 1 - i][choice]) % MOD;
                 }

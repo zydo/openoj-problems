@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> findMissingElements(vector<int>& nums) {
+    vector<int> findMissingElements(vector<int> &nums) {
         // Mark presence per value, then sweep the original range [min, max]
         // in increasing order: every unmarked value is missing, and sweeping
         // in order yields the sorted result directly.

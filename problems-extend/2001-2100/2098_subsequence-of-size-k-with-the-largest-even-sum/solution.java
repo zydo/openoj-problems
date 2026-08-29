@@ -1,10 +1,11 @@
 import java.util.Arrays;
 
 class Solution {
+
     public long largestEvenSum(int[] nums, int k) {
         Arrays.sort(nums);
         long total = 0;
-        int[] smallestSelected = {-1, -1};
+        int[] smallestSelected = { -1, -1 };
         for (int index = nums.length - 1; index >= nums.length - k; index--) {
             total += nums[index];
             smallestSelected[nums[index] % 2] = nums[index];
@@ -13,7 +14,7 @@ class Solution {
             return total;
         }
 
-        int[] largestUnselected = {-1, -1};
+        int[] largestUnselected = { -1, -1 };
         for (int index = nums.length - k - 1; index >= 0; index--) {
             int parity = nums[index] % 2;
             if (largestUnselected[parity] == -1) {

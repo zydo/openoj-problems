@@ -4,7 +4,7 @@
 
 The list can only be walked forward — `getNext()` is the single move — and
 values must come out in the opposite order of that walk. That inversion is
-exactly what a call stack does for free: advance to the next node *before*
+exactly what a call stack does for free: advance to the next node _before_
 printing anything, and every node's own `printValue()` naturally fires only
 after everything downstream of it has already printed. The base case is the
 end of the list (`getNext()` returns null), so the recursion reads: if

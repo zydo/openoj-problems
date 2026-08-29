@@ -17,7 +17,8 @@ SELECT
     ORDER BY
       COUNT(*) DESC,
       MAX(t2.transaction_date) DESC
-    LIMIT 1
+    LIMIT
+      1
   ) AS top_category,
   ROUND(COUNT(*) * 10 + SUM(t.amount) / 100.0, 2) AS loyalty_score
 FROM

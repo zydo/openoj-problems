@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countOdds(int low, int high) {
         // The count of odd numbers in [0, n] is (n + 1) / 2; the answer
         // is the difference of that prefix count at high and at low - 1

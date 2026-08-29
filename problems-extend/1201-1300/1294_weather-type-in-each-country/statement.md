@@ -24,8 +24,7 @@ Table: `Weather`
 values) for this table.
 Each row of this table indicates the weather state in a country for one day.
 
-Write a solution to find the type of weather in each country for November
-2019.
+Write a solution to find the type of weather in each country for November 2019.
 
 The type of weather is:
 

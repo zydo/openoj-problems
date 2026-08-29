@@ -7,7 +7,7 @@ fixed `g`, keep only the elements divisible by `g`, in their original
 order, scaled down by `g`; scaling cannot disturb strict increase. A
 subsequence lies in this filtered list exactly when its GCD is a multiple
 of `g`, so counting the strictly increasing subsequences of the filtered
-list yields `cnt[g]`, the number whose GCD is *divisible* by `g`. That
+list yields `cnt[g]`, the number whose GCD is _divisible_ by `g`. That
 count comes from the classic left-to-right recurrence: element `i`
 contributes `1 +` (the total weight of earlier elements of strictly
 smaller value), which coordinate compression turns into prefix sums over

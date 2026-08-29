@@ -8,8 +8,7 @@ var minCost = function (grid) {
     // achieve XOR x.
     const m = grid.length;
     const n = grid[0].length;
-    const reach = Array.from({ length: m }, () =>
-        Array.from({ length: n }, () => new Array(1024).fill(false)));
+    const reach = Array.from({ length: m }, () => Array.from({ length: n }, () => new Array(1024).fill(false)));
     reach[0][0][grid[0][0]] = true;
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {

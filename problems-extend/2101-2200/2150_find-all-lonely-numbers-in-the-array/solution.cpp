@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> findLonely(vector<int>& nums) {
+  public:
+    vector<int> findLonely(vector<int> &nums) {
         // A lonely value appears exactly once and has neither neighbour
         // x - 1 nor x + 1 present; scanning nums in order keeps the
         // output in first-occurrence order.

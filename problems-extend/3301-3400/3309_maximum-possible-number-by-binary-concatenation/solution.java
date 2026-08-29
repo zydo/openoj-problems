@@ -7,9 +7,12 @@ class Solution {
         // concatenate to at most 21 bits, well inside int.
         int best = 0;
         int[][] orders = {
-            {nums[0], nums[1], nums[2]}, {nums[0], nums[2], nums[1]},
-            {nums[1], nums[0], nums[2]}, {nums[1], nums[2], nums[0]},
-            {nums[2], nums[0], nums[1]}, {nums[2], nums[1], nums[0]},
+            { nums[0], nums[1], nums[2] },
+            { nums[0], nums[2], nums[1] },
+            { nums[1], nums[0], nums[2] },
+            { nums[1], nums[2], nums[0] },
+            { nums[2], nums[0], nums[1] },
+            { nums[2], nums[1], nums[0] },
         };
         for (int[] order : orders) {
             int value = 0;

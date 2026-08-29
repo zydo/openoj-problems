@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> maxKDistinct(vector<int>& nums, int k) {
+    vector<int> maxKDistinct(vector<int> &nums, int k) {
         // A duplicate can never be picked twice and never beats an unused
         // value, so only the set of distinct values matters; std::set keeps
         // it sorted ascending.

@@ -11,9 +11,8 @@ class Solution {
         int[] prefix = new int[words.length + 1];
         for (int i = 0; i < words.length; ++i) {
             String w = words[i];
-            prefix[i + 1] = prefix[i]
-                + (vowels.indexOf(w.charAt(0)) >= 0
-                    && vowels.indexOf(w.charAt(w.length() - 1)) >= 0 ? 1 : 0);
+            prefix[i + 1] =
+                prefix[i] + (vowels.indexOf(w.charAt(0)) >= 0 && vowels.indexOf(w.charAt(w.length() - 1)) >= 0 ? 1 : 0);
         }
         int[] ans = new int[queries.length];
         for (int i = 0; i < queries.length; ++i) {

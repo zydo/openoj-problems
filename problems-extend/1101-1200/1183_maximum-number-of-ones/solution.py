@@ -1,6 +1,5 @@
 class Solution:
-    def maximumNumberOfOnes(self, width: int, height: int, sideLength: int,
-                            maxOnes: int) -> int:
+    def maximumNumberOfOnes(self, width: int, height: int, sideLength: int, maxOnes: int) -> int:
         # Each residue class (r, c) mod sideLength appears in every window
         # exactly once, so the constraint binds classes. Count how many
         # grid cells fall into each class: full blocks plus the leftover

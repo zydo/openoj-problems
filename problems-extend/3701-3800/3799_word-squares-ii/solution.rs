@@ -28,12 +28,7 @@ impl Solution {
                         if bottom == top || bottom == left || bottom == right {
                             continue;
                         }
-                        res.push(vec![
-                            top.clone(),
-                            left.clone(),
-                            right.clone(),
-                            bottom.clone(),
-                        ]);
+                        res.push(vec![top.clone(), left.clone(), right.clone(), bottom.clone()]);
                     }
                 }
             }

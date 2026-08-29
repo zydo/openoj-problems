@@ -24,8 +24,7 @@ class Solution {
         int pairs = 0;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if (families[i].count(nums[j]) ||
-                    families[j].count(nums[i])) {
+                if (families[i].count(nums[j]) || families[j].count(nums[i])) {
                     pairs++;
                 }
             }

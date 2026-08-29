@@ -11,7 +11,7 @@ class Solution {
         for (char c : expression) {
             if (c == '{') {
                 stack.push_back(cur);
-                stack.push_back({});  // group union slot
+                stack.push_back({}); // group union slot
                 cur = {""};
             } else if (c == ',') {
                 set<string> &slot = stack.back();
@@ -33,12 +33,14 @@ class Solution {
                 stack.pop_back();
                 set<string> next;
                 for (const auto &a : prev) {
-                    for (const auto &b : group) next.insert(a + b);
+                    for (const auto &b : group)
+                        next.insert(a + b);
                 }
                 cur = move(next);
             } else {
                 set<string> next;
-                for (const auto &w : cur) next.insert(w + c);
+                for (const auto &w : cur)
+                    next.insert(w + c);
                 cur = move(next);
             }
         }

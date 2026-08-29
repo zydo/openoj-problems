@@ -24,8 +24,7 @@ var tictactoe = function (moves) {
         if (r + c === 2) {
             anti += step;
         }
-        const reach = Math.max(Math.abs(rows[r]), Math.abs(cols[c]),
-                               Math.abs(diag), Math.abs(anti));
+        const reach = Math.max(Math.abs(rows[r]), Math.abs(cols[c]), Math.abs(diag), Math.abs(anti));
         if (reach === 3) {
             return step === 1 ? "A" : "B";
         }

@@ -12,7 +12,8 @@ class Solution {
         // totals up to 9 * next1 + 15 * next2, near 24 * MOD, past int
         // range.
         int n = s.length();
-        long next1 = 1, next2 = 1; // dp[i+1], dp[i+2]; the empty suffix is one way
+        long next1 = 1,
+            next2 = 1; // dp[i+1], dp[i+2]; the empty suffix is one way
         for (int i = n - 1; i >= 0; --i) {
             char a = s.charAt(i);
             long cur = 0;

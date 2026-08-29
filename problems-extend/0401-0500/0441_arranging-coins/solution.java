@@ -12,7 +12,7 @@ class Solution {
         long hi = n;
         while (lo <= hi) {
             long mid = (lo + hi) / 2;
-            if (mid * (mid + 1) / 2 <= n) {
+            if ((mid * (mid + 1)) / 2 <= n) {
                 lo = mid + 1;
             } else {
                 hi = mid - 1;

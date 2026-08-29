@@ -6,6 +6,7 @@ import java.util.Set;
 class Solution {
 
     private static final class State {
+
         final int total;
         final int[] indexes;
 

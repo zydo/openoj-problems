@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<long long> getDistances(vector<int>& arr) {
+  public:
+    vector<long long> getDistances(vector<int> &arr) {
         vector<long long> answer(arr.size());
         unordered_map<int, long long> counts;
         unordered_map<int, long long> sums;

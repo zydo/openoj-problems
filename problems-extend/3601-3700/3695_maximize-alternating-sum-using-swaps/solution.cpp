@@ -1,14 +1,13 @@
 class Solution {
   public:
-    long long maxAlternatingSum(vector<int>& nums,
-                                vector<vector<int>>& swaps) {
+    long long maxAlternatingSum(vector<int> &nums, vector<vector<int>> &swaps) {
         // A pair lets its two indices trade values any number of times, so
         // each connected component of the swap graph rearranges freely:
         // merge the pair's endpoints with a union-find.
         int n = nums.size();
         vector<int> parent(n), sz(n, 1);
         iota(parent.begin(), parent.end(), 0);
-        auto find = [](vector<int>& parent, int x) {
+        auto find = [](vector<int> &parent, int x) {
             // Two-pass path compression keeps every later find near O(1).
             int root = x;
             while (parent[root] != root) {
@@ -21,7 +20,7 @@ class Solution {
             }
             return root;
         };
-        for (const vector<int>& pair : swaps) {
+        for (const vector<int> &pair : swaps) {
             int rp = find(parent, pair[0]);
             int rq = find(parent, pair[1]);
             if (rp == rq) {

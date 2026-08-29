@@ -3,6 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Solution {
+
     // State: ranks i, j of the two stars in a row of m survivors.
     private final Map<Long, long[]> memo = new HashMap<>();
 
@@ -13,7 +14,7 @@ class Solution {
 
     private long[] dp(int i, int j, int m) {
         if (i + j == m + 1) {
-            return new long[] {1, 1};
+            return new long[] { 1, 1 };
         }
         if (i > m - j + 1) {
             return dp(m - j + 1, m - i + 1, m);
@@ -35,7 +36,8 @@ class Solution {
                 nfree++;
             }
         }
-        long lo = Integer.MAX_VALUE, hi = 0;
+        long lo = Integer.MAX_VALUE,
+            hi = 0;
         for (int mask = 0; mask < 1 << nfree; mask++) {
             int[] survivors = new int[half];
             int cnt = 0;
@@ -50,7 +52,7 @@ class Solution {
                 } else {
                     int pick = back;
                     for (int t = 0; t < nfree; t++) {
-                        if (freeK[t] == k && (mask >> t & 1) == 1) {
+                        if (freeK[t] == k && ((mask >> t) & 1) == 1) {
                             pick = k;
                         }
                     }
@@ -58,7 +60,8 @@ class Solution {
                 }
             }
             Arrays.sort(survivors, 0, cnt);
-            int nf = 0, ns = 0;
+            int nf = 0,
+                ns = 0;
             for (int t = 0; t < cnt; t++) {
                 if (survivors[t] == i) nf = t + 1;
                 if (survivors[t] == j) ns = t + 1;
@@ -67,7 +70,7 @@ class Solution {
             lo = Math.min(lo, sub[0]);
             hi = Math.max(hi, sub[1]);
         }
-        long[] res = new long[] {lo + 1, hi + 1};
+        long[] res = new long[] { lo + 1, hi + 1 };
         memo.put(key, res);
         return res;
     }

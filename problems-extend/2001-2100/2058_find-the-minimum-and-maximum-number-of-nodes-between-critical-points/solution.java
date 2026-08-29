@@ -1,4 +1,5 @@
 class Solution {
+
     public int[] nodesBetweenCriticalPoints(ListNode head) {
         ListNode previous = head;
         ListNode current = head.next;
@@ -10,8 +11,8 @@ class Solution {
         while (current.next != null) {
             ListNode following = current.next;
             if (
-                (current.val > previous.val && current.val > following.val)
-                    || (current.val < previous.val && current.val < following.val)
+                (current.val > previous.val && current.val > following.val) ||
+                (current.val < previous.val && current.val < following.val)
             ) {
                 if (first == -1) {
                     first = index;
@@ -26,8 +27,8 @@ class Solution {
         }
 
         if (first == last) {
-            return new int[] {-1, -1};
+            return new int[] { -1, -1 };
         }
-        return new int[] {minimumGap, last - first};
+        return new int[] { minimumGap, last - first };
     }
 }

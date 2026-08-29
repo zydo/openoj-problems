@@ -14,8 +14,7 @@ impl Solution {
         let mut count = 0;
         let mut prefix_max = nums[0];
         for i in 0..n {
-            if (i == 0 || nums[i] > prefix_max) && (i == n - 1 || nums[i] < suffix_min[i + 1])
-            {
+            if (i == 0 || nums[i] > prefix_max) && (i == n - 1 || nums[i] < suffix_min[i + 1]) {
                 count += 1;
             }
             if nums[i] > prefix_max {

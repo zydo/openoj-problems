@@ -6,7 +6,7 @@ class Solution:
         # need[j] is the least health that saves the knight from column j of
         # the row being folded; index n is a sentinel wall past the right edge.
         n = len(dungeon[0])
-        need = [10 ** 9] * (n + 1)
+        need = [10**9] * (n + 1)
         need[n - 1] = 1
         for row in reversed(dungeon):
             for j in range(n - 1, -1, -1):

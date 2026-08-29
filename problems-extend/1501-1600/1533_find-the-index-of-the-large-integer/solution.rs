@@ -14,7 +14,11 @@ impl Solution {
             let mid = (l + r) / 2;
             if length % 2 == 0 {
                 let cmp = reader.compare_sub(l, mid, mid + 1, r);
-                return if cmp > 0 { solve(reader, l, mid) } else { solve(reader, mid + 1, r) };
+                return if cmp > 0 {
+                    solve(reader, l, mid)
+                } else {
+                    solve(reader, mid + 1, r)
+                };
             }
             let cmp = reader.compare_sub(l, mid - 1, mid + 1, r);
             if cmp == 0 {

@@ -16,7 +16,8 @@ class Solution {
         } else {
             vector<int> reversed(nums.rbegin(), nums.rend());
             int reversedPosition = find(reversed.begin(), reversed.end(), 0) - reversed.begin();
-            if (!isRotationOfSorted(reversed, reversedPosition)) return -1;
+            if (!isRotationOfSorted(reversed, reversedPosition))
+                return -1;
             targetKind = 1;
             targetShift = reversedPosition;
         }
@@ -32,10 +33,7 @@ class Solution {
             int shift = state % n;
             if (kind == targetKind && shift == targetShift)
                 return distance[kind][shift];
-            int neighbors[2][2] = {
-                {kind, (shift + 1) % n},
-                {1 - kind, (n - shift) % n}
-            };
+            int neighbors[2][2] = {{kind, (shift + 1) % n}, {1 - kind, (n - shift) % n}};
             for (auto &neighbor : neighbors) {
                 int nextKind = neighbor[0], nextShift = neighbor[1];
                 if (distance[nextKind][nextShift] == -1) {
@@ -51,7 +49,8 @@ class Solution {
     bool isRotationOfSorted(vector<int> &values, int start) {
         int n = (int)values.size();
         for (int i = 0; i < n; ++i)
-            if (values[(start + i) % n] != i) return false;
+            if (values[(start + i) % n] != i)
+                return false;
         return true;
     }
 };

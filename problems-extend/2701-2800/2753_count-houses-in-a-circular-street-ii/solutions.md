@@ -39,4 +39,3 @@ million only in pathological all-open streets at `k = 10⁵`, and at most
 1.3 million on this problem's judged data — inside the 4 000 000 budget.
 
 **Complexity:** `O(n log n + k)` time and `O(1)` space.
-

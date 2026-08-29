@@ -13,15 +13,18 @@ impl Solution {
         let mut even_counts: HashMap<i32, i32> = HashMap::new();
         let mut odd_counts: HashMap<i32, i32> = HashMap::new();
         for (index, value) in nums.iter().enumerate() {
-            let counts = if index % 2 == 0 { &mut even_counts } else { &mut odd_counts };
+            let counts = if index % 2 == 0 {
+                &mut even_counts
+            } else {
+                &mut odd_counts
+            };
             *counts.entry(*value).or_insert(0) += 1;
         }
         // Top values per parity plus a fresh fill value worth nothing: the
         // optimal partner need not occur anywhere in nums.
         let fresh_value = *nums.iter().max().unwrap() + 1;
         let candidates = |counts: &HashMap<i32, i32>| -> Vec<(i32, i32)> {
-            let mut ranked: Vec<(i32, i32)> =
-                counts.iter().map(|(&value, &count)| (count, value)).collect();
+            let mut ranked: Vec<(i32, i32)> = counts.iter().map(|(&value, &count)| (count, value)).collect();
             ranked.sort_unstable_by(|a, b| b.0.cmp(&a.0));
             ranked.truncate(2);
             ranked.push((0, fresh_value));

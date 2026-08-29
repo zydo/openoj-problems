@@ -1,12 +1,12 @@
 class Solution {
-public:
-    string evaluate(string s, vector<vector<string>>& knowledge) {
+  public:
+    string evaluate(string s, vector<vector<string>> &knowledge) {
         // One left-to-right pass: a '(' hands control to the matching ')',
         // the enclosed key goes through the map, everything else is copied
         // verbatim. Values are bracket-free, so nothing emitted is ever
         // re-examined.
         unordered_map<string, string> known;
-        for (const auto& pair : knowledge) {
+        for (const auto &pair : knowledge) {
             known[pair[0]] = pair[1];
         }
         string out;

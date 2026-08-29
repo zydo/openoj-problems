@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int sumOfBeauties(vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    int sumOfBeauties(vector<int> &nums) { throw logic_error("TODO"); }
 };

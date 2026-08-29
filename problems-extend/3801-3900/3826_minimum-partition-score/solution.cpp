@@ -37,8 +37,8 @@ class Solution {
     // inequality because value is convex, so the best split point is
     // non-decreasing in i: search [optLo, optHi] only, and recurse with
     // the found point splitting the candidate range.
-    void solve(int lo, int hi, int optLo, int optHi, const vector<long long> &prefix,
-               const vector<long long> &prev, vector<long long> &cur) {
+    void solve(int lo, int hi, int optLo, int optHi, const vector<long long> &prefix, const vector<long long> &prev,
+               vector<long long> &cur) {
         if (lo > hi) {
             return;
         }

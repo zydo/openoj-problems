@@ -6,7 +6,7 @@ class EventManager {
     // max-heap yields the highest priority with the smallest eventId on
     // ties.
     EventManager(vector<vector<int>> events) {
-        for (auto& event : events) {
+        for (auto &event : events) {
             priority_[event[0]] = event[1];
             heap_.push({event[1], -event[0]});
         }

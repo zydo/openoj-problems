@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int findMiddleIndex(vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    int findMiddleIndex(vector<int> &nums) { throw logic_error("TODO"); }
 };

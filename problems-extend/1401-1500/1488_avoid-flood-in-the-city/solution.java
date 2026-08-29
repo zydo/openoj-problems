@@ -20,7 +20,8 @@ class Solution {
                 zeros.add(i);
             } else if (last.containsKey(r)) {
                 int prev = last.get(r);
-                int lo = 0, hi = zeros.size();
+                int lo = 0,
+                    hi = zeros.size();
                 while (lo < hi) {
                     int mid = (lo + hi) >>> 1;
                     if (zeros.get(mid) <= prev) {

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int firstMatchingIndex(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int firstMatchingIndex(string s) { throw logic_error("TODO"); }
 };

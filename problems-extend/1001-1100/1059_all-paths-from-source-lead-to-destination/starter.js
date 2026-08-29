@@ -5,6 +5,6 @@
  * @param {number} destination
  * @return {boolean}
  */
-var leadsToDestination = function(n, edges, source, destination) {
+var leadsToDestination = function (n, edges, source, destination) {
     throw new Error("TODO");
 };

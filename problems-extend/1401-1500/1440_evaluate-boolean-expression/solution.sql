@@ -3,9 +3,12 @@ SELECT
   e.operator AS operator,
   e.right_operand AS right_operand,
   CASE
-    WHEN e.operator = '>' AND lv.value > rv.value THEN 'true'
-    WHEN e.operator = '<' AND lv.value < rv.value THEN 'true'
-    WHEN e.operator = '=' AND lv.value = rv.value THEN 'true'
+    WHEN e.operator = '>'
+    AND lv.value > rv.value THEN 'true'
+    WHEN e.operator = '<'
+    AND lv.value < rv.value THEN 'true'
+    WHEN e.operator = '='
+    AND lv.value = rv.value THEN 'true'
     ELSE 'false'
   END AS value
 FROM

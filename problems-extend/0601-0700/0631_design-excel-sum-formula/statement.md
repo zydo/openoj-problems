@@ -18,13 +18,13 @@ Implement the `Excel` class:
   the value at `mat[row][column]`. This sum formula should exist until this cell
   is overlapped by another value or another sum formula. `numbers[i]` could be on
   the format:
-  - `"ColRow"` that represents a single cell. For example, `"F7"` represents the
-    cell `mat[7]['F']`.
-  - `"ColRow1:ColRow2"` that represents a range of cells. The range will always
-    be a rectangle where `"ColRow1"` represent the position of the top-left
-    cell, and `"ColRow2"` represents the position of the bottom-right cell. For
-    example, `"B3:F7"` represents the cells `mat[i][j]` for `3 <= i <= 7` and
-    `'B' <= j <= 'F'`.
+    - `"ColRow"` that represents a single cell. For example, `"F7"` represents the
+      cell `mat[7]['F']`.
+    - `"ColRow1:ColRow2"` that represents a range of cells. The range will always
+      be a rectangle where `"ColRow1"` represent the position of the top-left
+      cell, and `"ColRow2"` represents the position of the bottom-right cell. For
+      example, `"B3:F7"` represents the cells `mat[i][j]` for `3 <= i <= 7` and
+      `'B' <= j <= 'F'`.
 
 Note: You could assume that there will not be any circular sum reference. For
 example, `mat[1]['A'] == sum(1, "B")` and `mat[1]['B'] == sum(1, "A")`.

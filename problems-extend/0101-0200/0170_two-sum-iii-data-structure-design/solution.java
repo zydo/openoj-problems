@@ -17,8 +17,7 @@ class TwoSum {
         for (Map.Entry<Integer, Integer> entry : counts.entrySet()) {
             int complement = value - entry.getKey();
             // A value that is its own complement needs two stored copies.
-            if (counts.containsKey(complement) && (complement != entry.getKey() || entry.getValue() > 1))
-                return true;
+            if (counts.containsKey(complement) && (complement != entry.getKey() || entry.getValue() > 1)) return true;
         }
         return false;
     }

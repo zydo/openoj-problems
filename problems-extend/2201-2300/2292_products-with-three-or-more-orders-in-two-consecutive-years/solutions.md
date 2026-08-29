@@ -16,7 +16,7 @@ same product whose years differ by exactly one, both counts at least
 three. A self-join states that directly — `yearly a, yearly b` with
 `a.product_id = b.product_id AND b.yr = a.yr + 1 AND a.orders >= 3 AND
 b.orders >= 3`. The explicit `yr + 1` test matters: a window function's
-LEAD would hand back the next year *present in the table*, silently
+LEAD would hand back the next year _present in the table_, silently
 comparing 2020 against 2022 when 2021 had no orders at all, while this
 join finds nothing to pair with and correctly rejects the gap.
 

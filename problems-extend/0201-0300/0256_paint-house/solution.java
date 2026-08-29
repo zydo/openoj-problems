@@ -3,7 +3,9 @@ class Solution {
     public int minCost(int[][] costs) {
         // Cheapest totals that leave house i red, blue, or green; a color
         // may not extend its own ending, which is the adjacency rule.
-        int red = costs[0][0], blue = costs[0][1], green = costs[0][2];
+        int red = costs[0][0],
+            blue = costs[0][1],
+            green = costs[0][2];
         for (int i = 1; i < costs.length; ++i) {
             int[] cost = costs[i];
             // Each next ending is computed from the previous ones before

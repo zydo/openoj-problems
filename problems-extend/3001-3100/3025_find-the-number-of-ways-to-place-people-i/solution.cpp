@@ -5,9 +5,7 @@ class Solution {
         // pair in a fixed order: each anchor's partners come strictly later
         // in the array.
         sort(points.begin(), points.end(),
-             [](const vector<int> &a, const vector<int> &b) {
-                 return a[0] != b[0] ? a[0] < b[0] : a[1] > b[1];
-             });
+             [](const vector<int> &a, const vector<int> &b) { return a[0] != b[0] ? a[0] < b[0] : a[1] > b[1]; });
         int total = 0;
         int n = (int)points.size();
         for (int i = 0; i < n; ++i) {

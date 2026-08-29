@@ -13,7 +13,7 @@ class Solution {
         for (int number = 100; number < 1000; number += 2) {
             int[] needed = new int[10];
             needed[number / 100]++;
-            needed[number / 10 % 10]++;
+            needed[(number / 10) % 10]++;
             needed[number % 10]++;
             boolean possible = true;
             for (int digit = 0; digit < 10; digit++) {

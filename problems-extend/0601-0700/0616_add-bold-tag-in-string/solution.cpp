@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    string addBoldTag(string s, vector<string>& words) {
+    string addBoldTag(string s, vector<string> &words) {
         // Every occurrence of every word paints its half-open interval onto a
         // boolean mask. Painting overlapping AND adjacent intervals onto one
         // mask merges them exactly as the two tag rules demand, so no interval
@@ -12,9 +12,9 @@ class Solution {
         // search again from one past every hit — because a single
         // non-restarting search would consume the overlapping occurrences
         // ("aa" inside "aaa" at both 0 and 1).
-        int n = (int) s.size();
+        int n = (int)s.size();
         vector<bool> bold(n, false);
-        for (const string& word : words) {
+        for (const string &word : words) {
             size_t length = word.size();
             for (size_t start = s.find(word); start != string::npos; start = s.find(word, start + 1)) {
                 fill(bold.begin() + start, bold.begin() + start + length, true);

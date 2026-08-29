@@ -37,9 +37,7 @@ class OrderManagementSystem {
   private:
     static constexpr long long kTypeBit = 1LL << 30;
 
-    static long long keyOf(const string &orderType, int price) {
-        return (orderType == "sell" ? kTypeBit : 0) | price;
-    }
+    static long long keyOf(const string &orderType, int price) { return (orderType == "sell" ? kTypeBit : 0) | price; }
 
     unordered_map<int, long long> orders_;
     unordered_map<long long, unordered_set<int>> buckets_;

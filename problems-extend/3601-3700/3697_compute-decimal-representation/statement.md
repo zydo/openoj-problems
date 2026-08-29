@@ -4,7 +4,7 @@
 
 You are given a positive integer `n`.
 
-A positive integer is a *base-10 component* when it is one digit from `1` to
+A positive integer is a _base-10 component_ when it is one digit from `1` to
 `9` multiplied by a power of ten — its decimal form is a single nonzero digit
 followed only by zeros. So `500`, `30`, and `7` are base-10 components, while
 `537`, `102`, and `11` are not.

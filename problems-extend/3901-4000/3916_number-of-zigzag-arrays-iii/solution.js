@@ -51,7 +51,8 @@ var zigZagArrays = function (n, l, r) {
     for (let value = 1; value <= points; ++value) factorial[value] = (factorial[value - 1] * BigInt(value)) % mod;
     const inverseFactorial = new Array(points + 1).fill(1n);
     inverseFactorial[points] = power(factorial[points], mod - 2n);
-    for (let value = points; value > 0; --value) inverseFactorial[value - 1] = (inverseFactorial[value] * BigInt(value)) % mod;
+    for (let value = points; value > 0; --value)
+        inverseFactorial[value - 1] = (inverseFactorial[value] * BigInt(value)) % mod;
     const prefix = new Array(points + 2).fill(1n);
     const suffix = new Array(points + 2).fill(1n);
     for (let value = 1; value <= points; ++value) prefix[value] = (prefix[value - 1] * (x - BigInt(value))) % mod;
@@ -64,5 +65,5 @@ var zigZagArrays = function (n, l, r) {
         term = (term * inverseFactorial[points - value]) % mod;
         answer = (points - value) % 2 === 0 ? answer + term : answer - term;
     }
-    return Number((answer % mod + mod) % mod);
+    return Number(((answer % mod) + mod) % mod);
 };

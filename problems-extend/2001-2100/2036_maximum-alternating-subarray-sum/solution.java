@@ -1,4 +1,5 @@
 class Solution {
+
     public long maximumAlternatingSubarraySum(int[] nums) {
         long plus = nums[0];
         long minus = 0;

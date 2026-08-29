@@ -3,7 +3,7 @@ class Solution {
     public int maxSumDivThree(int[] nums) {
         // best[r]: greatest prefix sum with sum % 3 == r (-1 = unreachable).
         final int NEG = -1;
-        int[] best = {0, NEG, NEG};
+        int[] best = { 0, NEG, NEG };
         for (int x : nums) {
             int[] candidate = best.clone();
             for (int r = 0; r < 3; ++r) {

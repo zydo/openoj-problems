@@ -17,7 +17,8 @@ class Solution {
                     dp[i][j] = length;
                     // Equal ends straddling the boundary mean both words
                     // contribute at least one character of the palindrome.
-                    if (i < n1 && j >= n1 && length > best) best = length;
+                    if (i < n1 && j >= n1 && length > best)
+                        best = length;
                 } else {
                     dp[i][j] = max(dp[i + 1][j], dp[i][j - 1]);
                 }

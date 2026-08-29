@@ -20,8 +20,6 @@ class Solution:
                 if prefix[i] == prefix[j] - prefix[i + 1]:
                     seen.add(prefix[i])
             for k in range(j + 2, n - 1):
-                if prefix[k] - prefix[j + 1] == prefix[n] - prefix[k + 1] and (
-                    prefix[k] - prefix[j + 1]
-                ) in seen:
+                if prefix[k] - prefix[j + 1] == prefix[n] - prefix[k + 1] and (prefix[k] - prefix[j + 1]) in seen:
                     return True
         return False

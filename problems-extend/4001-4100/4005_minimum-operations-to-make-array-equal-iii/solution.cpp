@@ -85,8 +85,7 @@ class Solution {
                 break;
             }
         }
-        long long best =
-            (capped || !freq.count((int)lcm)) ? n : n - freq[(int)lcm];
+        long long best = (capped || !freq.count((int)lcm)) ? n : n - freq[(int)lcm];
 
         // For a target x > 1 an element equal to x pays 0, one dividing x or
         // divisible by x pays 1, anything else pays 2 (multiply by x, then

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string addBinary(string a, string b) {
-        throw logic_error("TODO");
-    }
+  public:
+    string addBinary(string a, string b) { throw logic_error("TODO"); }
 };

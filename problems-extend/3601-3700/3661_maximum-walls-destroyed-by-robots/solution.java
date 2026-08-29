@@ -27,8 +27,7 @@ class Solution {
             // Facing shots share the gap: when this robot fires left and the
             // previous one fired right, the walls both bullets reach were
             // already counted and must not count twice.
-            long shared = count(walls, leftLo(bots, i),
-                    Math.min((long) bots[i - 1][0] + bots[i - 1][1], pos - 1));
+            long shared = count(walls, leftLo(bots, i), Math.min((long) bots[i - 1][0] + bots[i - 1][1], pos - 1));
             long best = Math.max(prevLeft, prevRight);
             prevLeft = Math.max(prevLeft + hereLeft, prevRight + hereLeft - shared);
             // A rightward shot can never overlap anything already decided.
@@ -47,7 +46,8 @@ class Solution {
 
     private int lowerBound(int[] walls, long value) {
         // First index whose wall is >= value.
-        int lo = 0, hi = walls.length;
+        int lo = 0,
+            hi = walls.length;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (walls[mid] < value) {

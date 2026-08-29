@@ -12,7 +12,7 @@ class ValidWordAbbr {
     ValidWordAbbr(vector<string> dictionary) {
         // A set per abbreviation: listing "deer" twice must leave the
         // group {"deer"} — a word never collides with its own duplicates.
-        for (const string& word : dictionary) {
+        for (const string &word : dictionary) {
             groups[abbrev(word)].insert(word);
         }
     }
@@ -20,16 +20,18 @@ class ValidWordAbbr {
     bool isUnique(string word) {
         auto found = groups.find(abbrev(word));
         // No word with this abbreviation, or every such word is `word`.
-        if (found == groups.end()) return true;
-        const unordered_set<string>& group = found->second;
+        if (found == groups.end())
+            return true;
+        const unordered_set<string> &group = found->second;
         return group.size() == 1 && group.count(word);
     }
 
   private:
-    static string abbrev(const string& word) {
+    static string abbrev(const string &word) {
         // First letter + count of the letters between + last letter; a
         // word of one or two characters is an abbreviation of itself.
-        if (word.size() <= 2) return word;
+        if (word.size() <= 2)
+            return word;
         return word.front() + to_string(word.size() - 2) + word.back();
     }
 

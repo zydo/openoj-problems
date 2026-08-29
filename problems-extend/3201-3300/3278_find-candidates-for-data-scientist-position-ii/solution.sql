@@ -9,7 +9,8 @@ FROM
       candidate_id,
       score,
       ROW_NUMBER() OVER (
-        PARTITION BY project_id
+        PARTITION BY
+          project_id
         ORDER BY
           score DESC,
           candidate_id
@@ -19,10 +20,17 @@ FROM
         SELECT
           p.project_id AS project_id,
           c.candidate_id AS candidate_id,
-          100
-          + 10 * SUM(CASE WHEN c.proficiency > p.importance THEN 1 ELSE 0 END)
-          - 5 * SUM(CASE WHEN c.proficiency < p.importance THEN 1 ELSE 0 END)
-            AS score,
+          100 + 10 * SUM(
+            CASE
+              WHEN c.proficiency > p.importance THEN 1
+              ELSE 0
+            END
+          ) - 5 * SUM(
+            CASE
+              WHEN c.proficiency < p.importance THEN 1
+              ELSE 0
+            END
+          ) AS score,
           COUNT(*) AS matched,
           (
             SELECT

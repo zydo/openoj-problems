@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> sortJumbled(vector<int>& mapping, vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> sortJumbled(vector<int> &mapping, vector<int> &nums) { throw logic_error("TODO"); }
 };

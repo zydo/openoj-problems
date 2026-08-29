@@ -2,8 +2,7 @@
 
 class Solution {
   public:
-    std::vector<int> cycleLengthQueries(int n,
-                                        std::vector<std::vector<int>>& queries) {
+    std::vector<int> cycleLengthQueries(int n, std::vector<std::vector<int>> &queries) {
         // Adding edge (a, b) closes exactly one cycle: the unique tree path
         // between a and b plus the new edge. Walking the deeper endpoint up
         // one parent (v / 2) at a time until both endpoints meet visits
@@ -12,7 +11,7 @@ class Solution {
         // is at most 30 steps.
         std::vector<int> answer;
         answer.reserve(queries.size());
-        for (auto& query : queries) {
+        for (auto &query : queries) {
             int a = query[0];
             int b = query[1];
             int steps = 1;

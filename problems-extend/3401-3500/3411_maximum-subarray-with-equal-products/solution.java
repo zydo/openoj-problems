@@ -4,14 +4,17 @@ class Solution {
     // at most 10: once the running product passes 25200 it can never
     // equal lcm * gcd again, so the inner walk can stop early.
     public int maxLength(int[] nums) {
-        int n = nums.length, ans = 0;
+        int n = nums.length,
+            ans = 0;
         for (int left = 0; left < n; left++) {
-            int prod = 1, g = 0, m = 1;
+            int prod = 1,
+                g = 0,
+                m = 1;
             for (int right = left; right < n; right++) {
                 int x = nums[right];
                 prod *= x;
                 g = gcd(g, x);
-                m = m * x / gcd(m, x);
+                m = (m * x) / gcd(m, x);
                 if (prod == m * g) {
                     ans = Math.max(ans, right - left + 1);
                 } else if (prod > 25200) {

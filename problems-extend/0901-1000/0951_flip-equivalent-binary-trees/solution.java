@@ -12,7 +12,8 @@ class Solution {
         pending.push(new TreeNode[] { root1, root2 });
         while (!pending.isEmpty()) {
             TreeNode[] pair = pending.pop();
-            TreeNode a = pair[0], b = pair[1];
+            TreeNode a = pair[0],
+                b = pair[1];
             if (a == null && b == null) continue;
             if (a == null || b == null || a.val != b.val) return false;
             if (aligned(a.left, b.left) && aligned(a.right, b.right)) {

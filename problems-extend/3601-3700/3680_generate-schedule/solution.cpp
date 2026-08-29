@@ -8,9 +8,8 @@ class Solution {
             return {};
         }
         if (n == 5) {
-            return {{0, 1}, {2, 3}, {0, 4}, {1, 2}, {3, 4}, {0, 2}, {1, 3},
-                    {2, 4}, {0, 3}, {1, 4}, {2, 0}, {3, 1}, {4, 0}, {2, 1},
-                    {4, 3}, {1, 0}, {3, 2}, {4, 1}, {3, 0}, {4, 2}};
+            return {{0, 1}, {2, 3}, {0, 4}, {1, 2}, {3, 4}, {0, 2}, {1, 3}, {2, 4}, {0, 3}, {1, 4},
+                    {2, 0}, {3, 1}, {4, 0}, {2, 1}, {4, 3}, {1, 0}, {3, 2}, {4, 1}, {3, 0}, {4, 2}};
         }
         // Circle method: round r pairs teams at offsets +k and -k around
         // position r on a circle of m teams (even n keeps team n - 1 fixed
@@ -41,8 +40,7 @@ class Solution {
                 for (int i = 0; i < (int)round.size(); ++i) {
                     int home = swap ? round[i][1] : round[i][0];
                     int away = swap ? round[i][0] : round[i][1];
-                    if (home != prevHome && home != prevAway && away != prevHome &&
-                        away != prevAway) {
+                    if (home != prevHome && home != prevAway && away != prevHome && away != prevAway) {
                         first = i;
                         break;
                     }

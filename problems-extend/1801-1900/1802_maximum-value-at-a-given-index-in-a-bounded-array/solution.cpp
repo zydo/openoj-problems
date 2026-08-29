@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     // Binary-search the peak m = nums[index]. Any valid array with that peak
     // has nums[i] >= max(m - |i - index|, 1) everywhere, and the array that
     // sits exactly on those bounds is itself valid, so its sum decides
@@ -22,6 +22,6 @@ public:
                 hi = mid - 1;
             }
         }
-        return (int) lo;
+        return (int)lo;
     }
 };

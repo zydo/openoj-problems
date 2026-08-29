@@ -9,7 +9,7 @@ class Codec {
   public:
     string encode(vector<string> strs) {
         string out;
-        for (const string& word : strs) {
+        for (const string &word : strs) {
             out += to_string(word.size());
             out += ':';
             out += word;

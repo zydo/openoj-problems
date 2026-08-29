@@ -12,6 +12,6 @@ or a negative back-solved `S = cheese - J` (too many tomatoes for the
 cheese). When all three checks pass, `[J, S]` is the answer.
 
 The uniqueness matters: unlike most constructive problems there is no
-search here at all — the checks *are* the algorithm.
+search here at all — the checks _are_ the algorithm.
 
 **Complexity:** `O(1)` time, `O(1)` space.

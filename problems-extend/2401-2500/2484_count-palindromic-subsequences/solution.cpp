@@ -9,23 +9,25 @@ class Solution {
         const int MOD = 1000000007;
         int n = s.size();
         vector<int> digits(n);
-        for (int i = 0; i < n; ++i) digits[i] = s[i] - '0';
+        for (int i = 0; i < n; ++i)
+            digits[i] = s[i] - '0';
 
         // suff[i][a][b] = number of "ab" subsequences in s[i:]
         vector<vector<array<int, 10>>> suff(n + 1, vector<array<int, 10>>(10));
-        vector<int> cnt(10);  // digit counts in the current suffix s[i:]
+        vector<int> cnt(10); // digit counts in the current suffix s[i:]
         for (int i = n - 1; i >= 0; --i) {
             int d = digits[i];
-            for (int a = 0; a < 10; ++a) suff[i][a] = suff[i + 1][a];
+            for (int a = 0; a < 10; ++a)
+                suff[i][a] = suff[i + 1][a];
             for (int b = 0; b < 10; ++b) {
-                suff[i][d][b] += cnt[b];  // pairs (i, j) whose first char is s[i]
+                suff[i][d][b] += cnt[b]; // pairs (i, j) whose first char is s[i]
             }
             cnt[d] += 1;
         }
 
         // left[a][b] = number of "ab" subsequences in s[:k]
         vector<array<int, 10>> left(10);
-        vector<int> lcnt(10);  // digit counts in s[:k]
+        vector<int> lcnt(10); // digit counts in s[:k]
         long long ans = 0;
         for (int k = 0; k < n; ++k) {
             int d = digits[k];
@@ -35,10 +37,10 @@ class Solution {
                 }
             }
             for (int a = 0; a < 10; ++a) {
-                left[a][d] += lcnt[a];  // pairs (p, k) whose second char is s[k]
+                left[a][d] += lcnt[a]; // pairs (p, k) whose second char is s[k]
             }
             lcnt[d] += 1;
         }
-        return (int) ans;
+        return (int)ans;
     }
 };

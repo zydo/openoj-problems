@@ -7,8 +7,8 @@
 // intermediate stays far below 2^53, exact as a double throughout.
 function consecutiveNumbersSum(n: number): number {
     let count = 0;
-    for (let length = 1; length * (length + 1) / 2 <= n; length++) {
-        if ((n - length * (length - 1) / 2) % length === 0) {
+    for (let length = 1; (length * (length + 1)) / 2 <= n; length++) {
+        if ((n - (length * (length - 1)) / 2) % length === 0) {
             count++;
         }
     }

@@ -9,9 +9,9 @@ class Solution {
         long res = 1;
         for (int e = s.length() - k + 1; e > 0; e >>= 1) {
             if ((e & 1) == 1) {
-                res = res * base % MOD;
+                res = (res * base) % MOD;
             }
-            base = base * base % MOD;
+            base = (base * base) % MOD;
         }
         return (int) res;
     }

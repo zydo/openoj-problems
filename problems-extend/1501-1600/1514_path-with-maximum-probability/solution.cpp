@@ -1,7 +1,6 @@
 class Solution {
   public:
-    double maxProbability(int n, vector<vector<int>> &edges, vector<double> &succProb, int start_node,
-                           int end_node) {
+    double maxProbability(int n, vector<vector<int>> &edges, vector<double> &succProb, int start_node, int end_node) {
         vector<vector<pair<int, double>>> adjacency(n);
         for (size_t i = 0; i < edges.size(); ++i) {
             int a = edges[i][0];

@@ -9,10 +9,26 @@ class Solution:
             return []
         if n == 5:
             return [
-                [0, 1], [2, 3], [0, 4], [1, 2], [3, 4],
-                [0, 2], [1, 3], [2, 4], [0, 3], [1, 4],
-                [2, 0], [3, 1], [4, 0], [2, 1], [4, 3],
-                [1, 0], [3, 2], [4, 1], [3, 0], [4, 2],
+                [0, 1],
+                [2, 3],
+                [0, 4],
+                [1, 2],
+                [3, 4],
+                [0, 2],
+                [1, 3],
+                [2, 4],
+                [0, 3],
+                [1, 4],
+                [2, 0],
+                [3, 1],
+                [4, 0],
+                [2, 1],
+                [4, 3],
+                [1, 0],
+                [3, 2],
+                [4, 1],
+                [3, 0],
+                [4, 2],
             ]
         # Circle method: round r pairs teams at offsets +k and -k around
         # position r on a circle of m teams (even n keeps team n - 1 fixed
@@ -35,9 +51,7 @@ class Solution:
             for rnd in rounds:
                 first = 0
                 for i in range(len(rnd)):
-                    home, away = (
-                        (rnd[i][1], rnd[i][0]) if swap else (rnd[i][0], rnd[i][1])
-                    )
+                    home, away = (rnd[i][1], rnd[i][0]) if swap else (rnd[i][0], rnd[i][1])
                     if home != prev_home and home != prev_away and away != prev_home and away != prev_away:
                         first = i
                         break
@@ -46,9 +60,7 @@ class Solution:
                 # then the rest of the round follows in listing order.
                 ordered = [first] + [i for i in range(len(rnd)) if i != first]
                 for i in ordered:
-                    home, away = (
-                        (rnd[i][1], rnd[i][0]) if swap else (rnd[i][0], rnd[i][1])
-                    )
+                    home, away = (rnd[i][1], rnd[i][0]) if swap else (rnd[i][0], rnd[i][1])
                     schedule.append([home, away])
                     prev_home, prev_away = home, away
         return schedule

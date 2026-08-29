@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    bool lemonadeChange(vector<int>& bills) {
+    bool lemonadeChange(vector<int> &bills) {
         // Only two counts ever matter: the $5 bills and the $10 bills on
         // hand. A $5 needs no change, a $10 consumes one $5, and a $20
         // consumes one $10 plus one $5 or three $5s. Handing the $10 first

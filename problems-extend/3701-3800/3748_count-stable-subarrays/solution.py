@@ -22,9 +22,5 @@ class Solution:
             # it sit past a drop at or after l and count their bare window
             # length; ends from there on count down to left[e].
             p = bisect_left(left, l, l, r + 1)
-            result.append(
-                pref_base[r + 1] - pref_base[l]
-                + pref_left[p] - pref_left[l]
-                - l * (p - l)
-            )
+            result.append(pref_base[r + 1] - pref_base[l] + pref_left[p] - pref_left[l] - l * (p - l))
         return result

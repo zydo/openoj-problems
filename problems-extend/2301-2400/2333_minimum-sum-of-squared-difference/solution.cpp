@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long minSumSquareDiff(vector<int>& nums1, vector<int>& nums2, int k1, int k2) {
+    long long minSumSquareDiff(vector<int> &nums1, vector<int> &nums2, int k1, int k2) {
         // Only |nums1[i] - nums2[i]| matters: a +1 on either array moves the
         // difference one step in whichever direction we pick, so k1 and k2
         // pool into one budget spent on absolute differences.

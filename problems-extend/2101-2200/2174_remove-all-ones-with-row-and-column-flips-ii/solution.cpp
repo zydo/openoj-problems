@@ -23,8 +23,7 @@ class Solution {
     }
 
   private:
-    static int solve(int state, int m, int n,
-                     std::unordered_map<int, int> &memo) {
+    static int solve(int state, int m, int n, std::unordered_map<int, int> &memo) {
         if (state == 0) {
             return 0;
         }

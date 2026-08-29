@@ -5,16 +5,22 @@ WITH
       spend,
       transaction_date,
       ROW_NUMBER() OVER (
-        PARTITION BY user_id
-        ORDER BY transaction_date
+        PARTITION BY
+          user_id
+        ORDER BY
+          transaction_date
       ) AS rn,
       LAG(spend, 1) OVER (
-        PARTITION BY user_id
-        ORDER BY transaction_date
+        PARTITION BY
+          user_id
+        ORDER BY
+          transaction_date
       ) AS prev_spend_1,
       LAG(spend, 2) OVER (
-        PARTITION BY user_id
-        ORDER BY transaction_date
+        PARTITION BY
+          user_id
+        ORDER BY
+          transaction_date
       ) AS prev_spend_2
     FROM
       Transactions

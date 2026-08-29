@@ -10,7 +10,8 @@ class Solution {
         boolean[] running = new boolean[2001];
         int total = 0;
         for (int[] task : tasks) {
-            int start = task[0], end = task[1];
+            int start = task[0],
+                end = task[1];
             // Reuse whatever is already on inside this window...
             int need = task[2];
             for (int t = start; t <= end; ++t) {

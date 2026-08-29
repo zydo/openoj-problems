@@ -1,8 +1,8 @@
 class CategoryHandler;
 
 class Solution {
-public:
-    int numberOfCategories(CategoryHandler& categoryHandler, int n) {
+  public:
+    int numberOfCategories(CategoryHandler &categoryHandler, int n) {
         // Keep one representative index per category discovered so far.
         // Same-category is an equivalence relation behind the oracle, so
         // by transitivity element i shares a category with some earlier

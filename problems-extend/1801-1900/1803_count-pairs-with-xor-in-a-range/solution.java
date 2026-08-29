@@ -34,7 +34,8 @@ class Solution {
     // suffix is then strictly smaller) and descends the other child, while a
     // 0 bit only lets the matching child continue.
     private static int countAtMost(int[][] nxt, int[] cnt, int x, int k) {
-        int node = 0, total = 0;
+        int node = 0,
+            total = 0;
         for (int b = 14; b >= 0; --b) {
             int xb = (x >> b) & 1;
             int kb = (k >> b) & 1;

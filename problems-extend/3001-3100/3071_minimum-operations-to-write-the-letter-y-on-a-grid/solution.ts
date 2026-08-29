@@ -5,10 +5,7 @@ function minimumOperationsToWriteY(grid: number[][]): number {
     const otherCount = [0, 0, 0];
     for (let r = 0; r < n; r++) {
         for (let c = 0; c < n; c++) {
-            const onY =
-                (r === c && r <= mid) ||
-                (c === n - 1 - r && r <= mid) ||
-                (c === mid && r >= mid);
+            const onY = (r === c && r <= mid) || (c === n - 1 - r && r <= mid) || (c === mid && r >= mid);
             if (onY) {
                 yCount[grid[r][c]]++;
             } else {

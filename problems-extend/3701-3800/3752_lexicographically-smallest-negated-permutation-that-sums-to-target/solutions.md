@@ -4,13 +4,13 @@
 
 Every candidate array is the all-positive baseline `[1, 2, ..., n]` with some
 subset of its values negated. Negating `x` moves the sum from `S = n * (n +
-1) / 2` down by exactly `2 * x`, so a target is reachable if and only if it
-lies in `[-S, S]` and shares the parity of `S` — outside that window no
+
+1. / 2`down by exactly`2 * x`, so a target is reachable if and only if it
+lies in `[-S, S]`and shares the parity of`S`— outside that window no
 assignment of signs can land there, and an odd gap means every reachable sum
 misses it by a multiple of 2. When either check fails the answer is the
-empty array. Otherwise the required deficit `D = (S - target) / 2` names
-exactly what the negated subset must sum to: choose any subset of
-`{1, ..., n}` whose values add up to `D`, negate precisely those values,
+empty array. Otherwise the required deficit`D = (S - target) / 2`names
+exactly what the negated subset must sum to: choose any subset of`{1, ..., n}`whose values add up to`D`, negate precisely those values,
 and the sum drops by `2 * D`, landing on `target`.
 
 The signs are forced once `D` is fixed; only the arrangement stays free, and

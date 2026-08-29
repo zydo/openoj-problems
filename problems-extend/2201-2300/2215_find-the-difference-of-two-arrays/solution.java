@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-
 class Solution {
 
     public List<List<Integer>> findDifference(int[] nums1, int[] nums2) {

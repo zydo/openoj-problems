@@ -1,12 +1,16 @@
 import "sort"
 
-// The single negative person is the only sink; each positive person is a
-// source whose units cost their circular distance to the sink, so the
-// cheapest sources are drained first.
 func minMoves(balance []int) int64 {
+	// At most one person is negative. With none, nobody moves; with a
+	// negative total, no arrangement can work. Otherwise every unit a
+	// giver releases costs one move per hop of its circular distance
+	// to the negative index, so draining the deficit from the nearest
+	// givers first — cheapest distance, then the next, and so on —
+	// totals the minimum. Moves reach ~1e14, hence int64.
+	n := len(balance)
 	neg := -1
-	for i, v := range balance {
-		if v < 0 {
+	for i := 0; i < n; i++ {
+		if balance[i] < 0 {
 			neg = i
 			break
 		}
@@ -14,40 +18,43 @@ func minMoves(balance []int) int64 {
 	if neg == -1 {
 		return 0
 	}
-	var total int64
+	total := 0
 	for _, v := range balance {
-		total += int64(v)
+		total += v
 	}
 	if total < 0 {
 		return -1
 	}
-	n := len(balance)
-	need := -int64(balance[neg])
-	type source struct {
-		dist  int
-		value int
+	type supply struct {
+		dist   int
+		amount int64
 	}
-	sources := make([]source, 0, n)
-	for i, v := range balance {
-		if i != neg && v > 0 {
-			diff := i - neg
-			if diff < 0 {
-				diff = -diff
+	supplies := []supply{}
+	for i := 0; i < n; i++ {
+		if i != neg && balance[i] > 0 {
+			cw := (i - neg + n) % n
+			ccw := (neg - i + n) % n
+			d := cw
+			if ccw < d {
+				d = ccw
 			}
-			sources = append(sources, source{min(diff, n-diff), v})
+			supplies = append(supplies, supply{d, int64(balance[i])})
 		}
 	}
-	sort.Slice(sources, func(a, b int) bool { return sources[a].dist < sources[b].dist })
+	sort.Slice(supplies, func(p, q int) bool {
+		return supplies[p].dist < supplies[q].dist
+	})
+	need := int64(-balance[neg])
 	var moves int64
-	for _, src := range sources {
+	for _, s := range supplies {
 		if need == 0 {
 			break
 		}
-		take := int64(src.value)
+		take := s.amount
 		if need < take {
 			take = need
 		}
-		moves += take * int64(src.dist)
+		moves += take * int64(s.dist)
 		need -= take
 	}
 	return moves

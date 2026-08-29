@@ -11,7 +11,8 @@ class Solution {
 
     // Stepping numbers in [1, bound], mod MOD; bound "0" gives 0.
     static int countUpTo(const string &bound) {
-        if (bound == "0") return 0;
+        if (bound == "0")
+            return 0;
         int n = bound.size();
         // ways[m][d]: mod-count of ways to append m further digits after a
         // digit d, each differing by exactly 1 from its predecessor.
@@ -20,8 +21,10 @@ class Solution {
         for (int m = 1; m < n; ++m) {
             for (int d = 0; d < 10; ++d) {
                 int total = 0;
-                if (d > 0) total = ways[m - 1][d - 1];
-                if (d < 9) total += ways[m - 1][d + 1];
+                if (d > 0)
+                    total = ways[m - 1][d - 1];
+                if (d < 9)
+                    total += ways[m - 1][d + 1];
                 ways[m][d] = total % MOD;
             }
         }
@@ -63,7 +66,8 @@ class Solution {
         }
         digits[i] -= 1;
         int first = 0;
-        while (first < (int)digits.size() - 1 && digits[first] == '0') ++first;
+        while (first < (int)digits.size() - 1 && digits[first] == '0')
+            ++first;
         return digits.substr(first);
     }
 };

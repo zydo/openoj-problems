@@ -11,7 +11,7 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 long g = gcd(nums[i], nums[j]);
-                long s = (long) nums[i] * nums[j] / (g * g);
+                long s = ((long) nums[i] * nums[j]) / (g * g);
                 if (s > best) {
                     best = s;
                 }

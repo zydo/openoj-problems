@@ -18,8 +18,7 @@ function fairCandySwap(aliceSizes: number[], bobSizes: number[]): number[] {
     let best: [number, number] | null = null;
     for (const size of aliceSizes) {
         const b = size - delta;
-        const better =
-            best === null || size < best[0] || (size === best[0] && b < best[1]);
+        const better = best === null || size < best[0] || (size === best[0] && b < best[1]);
         if (bobBoxes.has(b) && better) {
             best = [size, b];
         }

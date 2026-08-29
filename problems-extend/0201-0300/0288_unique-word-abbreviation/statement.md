@@ -16,8 +16,8 @@ Implement the `ValidWordAbbr` class:
 
 - `ValidWordAbbr(String[] dictionary)` Initializes the object with a dictionary of words.
 - `boolean isUnique(string word)` Returns `true` if either of the following conditions is met (otherwise returns `false`):
-  - There is no word in dictionary whose abbreviation is equal to word's abbreviation.
-  - For any word in dictionary whose abbreviation is equal to word's abbreviation, that word and word are the same.
+    - There is no word in dictionary whose abbreviation is equal to word's abbreviation.
+    - For any word in dictionary whose abbreviation is equal to word's abbreviation, that word and word are the same.
 
 ### Example 1
 

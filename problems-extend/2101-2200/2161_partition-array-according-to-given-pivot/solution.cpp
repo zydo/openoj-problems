@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> pivotArray(vector<int>& nums, int pivot) {
+    vector<int> pivotArray(vector<int> &nums, int pivot) {
         // Stable three-way partition: gather each comparison class in its
         // original order and concatenate, which preserves the relative order
         // inside the less and greater groups by construction.

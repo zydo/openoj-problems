@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string processStr(string s, long long k) {
         // First pass: the length of the result after each prefix. '#' doubles
         // it, '*' drops one (never below zero), a letter adds one, '%' leaves

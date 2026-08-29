@@ -16,11 +16,7 @@ impl Solution {
             } else {
                 directions.as_bytes()[i] == b'U'
             };
-            let first = if going_up {
-                height as i64 - p as i64
-            } else {
-                p as i64
-            };
+            let first = if going_up { height as i64 - p as i64 } else { p as i64 };
             if going_up {
                 // Landing on the top flips a piston downward.
                 *events.entry(first).or_insert(0) -= 2;

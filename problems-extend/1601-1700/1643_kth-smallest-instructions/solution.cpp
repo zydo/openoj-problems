@@ -1,6 +1,6 @@
 class Solution {
-public:
-    string kthSmallestPath(vector<int>& destination, int k) {
+  public:
+    string kthSmallestPath(vector<int> &destination, int k) {
         int row = destination[0];
         int col = destination[1];
         int n = row + col;

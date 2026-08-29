@@ -3,7 +3,7 @@ class Solution {
     public int maximumRequests(int n, int[][] requests) {
         int m = requests.length;
         int best = 0;
-        for (int mask = 0; mask < (1 << m); mask++) {
+        for (int mask = 0; mask < 1 << m; mask++) {
             int popcount = Integer.bitCount(mask);
             if (popcount <= best) {
                 continue;

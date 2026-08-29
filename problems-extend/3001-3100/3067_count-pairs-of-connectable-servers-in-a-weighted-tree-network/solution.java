@@ -8,8 +8,8 @@ class Solution {
         List<List<int[]>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) adj.add(new ArrayList<>());
         for (int[] e : edges) {
-            adj.get(e[0]).add(new int[] {e[1], e[2]});
-            adj.get(e[1]).add(new int[] {e[0], e[2]});
+            adj.get(e[0]).add(new int[] { e[1], e[2] });
+            adj.get(e[1]).add(new int[] { e[0], e[2] });
         }
 
         int[] answer = new int[n];
@@ -26,16 +26,20 @@ class Solution {
         int[] stackP = new int[n];
         int[] stackD = new int[n];
         for (int c = 0; c < n; c++) {
-            int total = 0, squareSum = 0;
+            int total = 0,
+                squareSum = 0;
             for (int[] root : adj.get(c)) {
-                int count = 0, sp = 0;
+                int count = 0,
+                    sp = 0;
                 stackU[sp] = root[0];
                 stackP[sp] = c;
                 stackD[sp] = root[1] % signalSpeed;
                 sp++;
                 while (sp > 0) {
                     sp--;
-                    int u = stackU[sp], parent = stackP[sp], dist = stackD[sp];
+                    int u = stackU[sp],
+                        parent = stackP[sp],
+                        dist = stackD[sp];
                     if (dist == 0) count++;
                     for (int[] vw : adj.get(u)) {
                         if (vw[0] != parent) {

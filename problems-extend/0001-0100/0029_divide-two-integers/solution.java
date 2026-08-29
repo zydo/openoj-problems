@@ -5,11 +5,11 @@ class Solution {
         // Clamped up front per the statement's rule.
         if (dividend == Integer.MIN_VALUE && divisor == -1) return Integer.MAX_VALUE;
         // -2^31 has no positive int counterpart, so widen before magnitudes.
-        long a = dividend < 0 ? -(long) dividend : dividend;
-        long b = divisor < 0 ? -(long) divisor : divisor;
+        long a = dividend < 0 ? -((long) dividend) : dividend;
+        long b = divisor < 0 ? -((long) divisor) : divisor;
         // Magnitudes in, sign out: the quotient of the magnitudes with the
         // sign reapplied truncates toward zero by construction.
-        boolean negative = (dividend < 0) != (divisor < 0);
+        boolean negative = dividend < 0 != divisor < 0;
         long quotient = 0;
         while (a >= b) {
             // Find the largest chunk = b doubled (by addition) that still

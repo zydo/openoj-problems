@@ -2,10 +2,11 @@
 #include <vector>
 
 class Solution {
-public:
+  public:
     std::string sortString(std::string s) {
         std::vector<int> counts(26, 0);
-        for (char ch : s) counts[ch - 'a'] += 1;
+        for (char ch : s)
+            counts[ch - 'a'] += 1;
         int remaining = static_cast<int>(s.size());
         std::string out;
         out.reserve(s.size());

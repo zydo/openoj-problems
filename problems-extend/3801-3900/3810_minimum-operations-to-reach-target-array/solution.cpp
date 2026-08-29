@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
   public:
-    int minOperations(vector<int>& nums, vector<int>& target) {
+    int minOperations(vector<int> &nums, vector<int> &target) {
         // Choosing x rewrites exactly the cells whose current value is x
         // (all maximal x-segments land on their target values), so a
         // mismatched cell keeps its value until an operation names that

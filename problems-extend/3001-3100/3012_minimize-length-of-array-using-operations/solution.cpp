@@ -7,10 +7,9 @@ class Solution {
         // multiple of m, and only merging two copies of m removes one.
         int m = *min_element(nums.begin(), nums.end());
         int count_m = static_cast<int>(count(nums.begin(), nums.end(), m));
-        bool indivisible =
-            any_of(nums.begin(), nums.end(),
-                   [&m](int value) { return value % m != 0; });
-        if (count_m == 1 || indivisible) return 1;
+        bool indivisible = any_of(nums.begin(), nums.end(), [&m](int value) { return value % m != 0; });
+        if (count_m == 1 || indivisible)
+            return 1;
         return (count_m + 1) / 2;
     }
 };

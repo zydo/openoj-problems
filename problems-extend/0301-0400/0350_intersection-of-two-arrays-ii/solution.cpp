@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+    vector<int> intersect(vector<int> &nums1, vector<int> &nums2) {
         // Count how many times each value occurs in nums1, then walk nums2:
         // a value can join the result at most min(count1, count2) times,
         // which the per-value counter enforces by falling to zero.

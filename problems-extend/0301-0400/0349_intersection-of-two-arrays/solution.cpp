@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+    vector<int> intersection(vector<int> &nums1, vector<int> &nums2) {
         // The set does the uniqueness bookkeeping: hashing nums1's values
         // answers "is this value shared?" in O(1) average, and collecting
         // the hits into a second set collapses the duplicates both inputs

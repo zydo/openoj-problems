@@ -29,10 +29,10 @@ class Solution {
             int x = queries[i][0];
             int y = queries[i][1];
             ans[i] =
-                row.getOrDefault(x, 0) > 0
-                    || col.getOrDefault(y, 0) > 0
-                    || diag.getOrDefault(x - y, 0) > 0
-                    || antiDiag.getOrDefault(x + y, 0) > 0;
+                row.getOrDefault(x, 0) > 0 ||
+                col.getOrDefault(y, 0) > 0 ||
+                diag.getOrDefault(x - y, 0) > 0 ||
+                antiDiag.getOrDefault(x + y, 0) > 0;
 
             for (int dx = -1; dx <= 1; dx++) {
                 for (int dy = -1; dy <= 1; dy++) {

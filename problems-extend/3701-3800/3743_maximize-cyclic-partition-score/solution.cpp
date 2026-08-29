@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maximumScore(vector<int>& nums, int k) {
+    long long maximumScore(vector<int> &nums, int k) {
         // Each subarray contributes a +max and a -min mark, so at most
         // min(k, n // 2) opposite pairs exist; a pair's credit is its plus
         // mark minus its minus mark -- exactly one subarray's range.
@@ -9,19 +9,22 @@ class Solution {
         int size = p + 1;
         auto fresh = [&]() { return vector<long long>(size, NEG); };
         // Close a pair: the count grows by one.
-        auto shiftAdd = [&](const vector<long long>& s, long long d) {
+        auto shiftAdd = [&](const vector<long long> &s, long long d) {
             vector<long long> out(size, NEG);
             for (int i = 1; i < size; ++i)
-                if (s[i - 1] > NEG) out[i] = s[i - 1] + d;
+                if (s[i - 1] > NEG)
+                    out[i] = s[i - 1] + d;
             return out;
         };
         auto bump = [&](vector<long long> s, long long d) {
-            for (auto& v : s)
-                if (v > NEG) v += d;
+            for (auto &v : s)
+                if (v > NEG)
+                    v += d;
             return s;
         };
-        auto merge = [](vector<long long> a, const vector<long long>& b) {
-            for (int i = 0; i < (int)a.size(); ++i) a[i] = max(a[i], b[i]);
+        auto merge = [](vector<long long> a, const vector<long long> &b) {
+            for (int i = 0; i < (int)a.size(); ++i)
+                a[i] = max(a[i], b[i]);
             return a;
         };
 
@@ -31,8 +34,7 @@ class Solution {
         closed[0] = 0;
         // Phase 1: wp/wm = the seam pair open, started +/-; wXY = seam X and
         // an open middle pair Y; fz = the seam pair has closed.
-        vector<long long> wp = fresh(), wm = fresh(), wpp = fresh(),
-                          wpm = fresh(), wmp = fresh(), wmm = fresh(),
+        vector<long long> wp = fresh(), wm = fresh(), wpp = fresh(), wpm = fresh(), wmp = fresh(), wmm = fresh(),
                           fz = fresh();
 
         for (int a : nums) {
@@ -40,11 +42,10 @@ class Solution {
 
             vector<long long> nOp = merge(op, bump(closed, a));
             vector<long long> nOm = merge(om, bump(closed, -(long long)a));
-            vector<long long> nClosed =
-                merge(merge(closed, shiftAdd(op, -a)), shiftAdd(om, a));
+            vector<long long> nClosed = merge(merge(closed, shiftAdd(op, -a)), shiftAdd(om, a));
 
             vector<long long> nWp = wp, nWm = wm;
-            nWp[0] = max(nWp[0], pristine + a);  // seam opens at the first mark
+            nWp[0] = max(nWp[0], pristine + a); // seam opens at the first mark
             nWm[0] = max(nWm[0], pristine - a);
             vector<long long> nWpp = merge(wpp, bump(wp, a));
             vector<long long> nWpm = merge(wpm, bump(wp, -a));
@@ -54,8 +55,7 @@ class Solution {
             nWp = merge(nWp, shiftAdd(wpm, a));
             nWm = merge(nWm, shiftAdd(wmp, -a));
             nWm = merge(nWm, shiftAdd(wmm, a));
-            vector<long long> nFz =
-                merge(merge(fz, shiftAdd(wp, -a)), shiftAdd(wm, a));
+            vector<long long> nFz = merge(merge(fz, shiftAdd(wp, -a)), shiftAdd(wm, a));
 
             closed = nClosed;
             op = nOp;
@@ -70,7 +70,8 @@ class Solution {
         }
 
         long long best = 0;
-        for (int i = 0; i < size; ++i) best = max(best, max(closed[i], fz[i]));
+        for (int i = 0; i < size; ++i)
+            best = max(best, max(closed[i], fz[i]));
         return best;
     }
 };

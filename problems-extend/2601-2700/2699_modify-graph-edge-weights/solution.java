@@ -42,9 +42,7 @@ class Solution {
                 boolean backward = distances[v] + weights[index] + reverse[u] == current;
                 if (!forward && !backward) continue;
                 long key =
-                        forward && backward
-                                ? Math.min(distances[u], distances[v])
-                                : forward ? distances[u] : distances[v];
+                    forward && backward ? Math.min(distances[u], distances[v]) : forward ? distances[u] : distances[v];
                 if (key < bestKey) {
                     bestKey = key;
                     bestIndex = index;
@@ -67,15 +65,15 @@ class Solution {
             if (weights[index] <= 0) continue;
             int a = edges[index][0];
             int b = edges[index][1];
-            graph.get(a).add(new int[] {b, index});
-            graph.get(b).add(new int[] {a, index});
+            graph.get(a).add(new int[] { b, index });
+            graph.get(b).add(new int[] { a, index });
         }
 
         long[] distance = new long[n];
         Arrays.fill(distance, Long.MAX_VALUE / 4);
         distance[start] = 0;
         PriorityQueue<long[]> queue = new PriorityQueue<>((left, right) -> Long.compare(left[0], right[0]));
-        queue.add(new long[] {0, start});
+        queue.add(new long[] { 0, start });
         while (!queue.isEmpty()) {
             long[] top = queue.poll();
             long dist = top[0];
@@ -85,7 +83,7 @@ class Solution {
                 long candidate = dist + weights[link[1]];
                 if (candidate < distance[link[0]]) {
                     distance[link[0]] = candidate;
-                    queue.add(new long[] {candidate, link[0]});
+                    queue.add(new long[] { candidate, link[0] });
                 }
             }
         }

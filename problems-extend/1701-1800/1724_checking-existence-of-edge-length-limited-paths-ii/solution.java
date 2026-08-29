@@ -35,8 +35,8 @@ class DistanceLimitedPathsExist {
             int rootV = find(parent, edge[1]);
             if (rootU != rootV) {
                 parent[rootU] = rootV;
-                adjacency[edge[0]].add(new int[] {edge[1], edge[2]});
-                adjacency[edge[1]].add(new int[] {edge[0], edge[2]});
+                adjacency[edge[0]].add(new int[] { edge[1], edge[2] });
+                adjacency[edge[1]].add(new int[] { edge[0], edge[2] });
             }
         }
 

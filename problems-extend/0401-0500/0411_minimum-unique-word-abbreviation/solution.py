@@ -45,9 +45,7 @@ class Solution:
                 parts.append(str(run))
             return "".join(parts)
 
-        def walk(
-            pos: int, mask: int, kept: int, runs: int, open_run: bool, pending: List[int]
-        ) -> None:
+        def walk(pos: int, mask: int, kept: int, runs: int, open_run: bool, pending: List[int]) -> None:
             nonlocal best
             # Cost floor: letters kept, runs closed, the run still open, and
             # the one extra letter a still-unhit word will eventually force.

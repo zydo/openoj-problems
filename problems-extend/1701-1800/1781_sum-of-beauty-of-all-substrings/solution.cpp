@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int beautySum(string s) {
         // For each start, grow the substring one character at a time and
         // read every prefix's beauty straight off a running count array:

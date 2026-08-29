@@ -34,7 +34,11 @@ fn dp(bytes: &[u8], memo: &mut Vec<Vec<i32>>, i: usize, budget: usize) -> i32 {
         return memo[i][budget];
     }
     // Delete bytes[i] outright and move on.
-    let mut best = if budget > 0 { dp(bytes, memo, i + 1, budget - 1) } else { i32::MAX };
+    let mut best = if budget > 0 {
+        dp(bytes, memo, i + 1, budget - 1)
+    } else {
+        i32::MAX
+    };
     // Or keep a run of bytes[i]'s character: scan forward, paying one
     // deletion for every mismatched character folded into the run.
     let mut same: i32 = 0;

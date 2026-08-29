@@ -6,7 +6,7 @@ class Solution {
         // determines both costs.
         int mismatch = 0;
         for (int i = 0; i < s.length(); i++) {
-            if ((s.charAt(i) - '0') != i % 2) {
+            if (s.charAt(i) - '0' != i % 2) {
                 mismatch++;
             }
         }

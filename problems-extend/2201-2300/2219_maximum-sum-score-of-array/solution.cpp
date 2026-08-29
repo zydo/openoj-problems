@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maximumSumScore(vector<int>& nums) {
+    long long maximumSumScore(vector<int> &nums) {
         // The suffix at i is total minus the prefix before it, so one
         // running total plus the array total covers every index in a single
         // pass.

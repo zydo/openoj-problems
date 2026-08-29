@@ -11,11 +11,8 @@ impl Solution {
             .map(|row| {
                 // Answers reach 3 * 10^9, past the 32-bit range, so values
                 // widen to i64 before any summing.
-                let mut cells: Vec<(i64, usize)> = row
-                    .iter()
-                    .enumerate()
-                    .map(|(j, &value)| (value as i64, j))
-                    .collect();
+                let mut cells: Vec<(i64, usize)> =
+                    row.iter().enumerate().map(|(j, &value)| (value as i64, j)).collect();
                 cells.sort_by(|a, b| b.0.cmp(&a.0));
                 cells.truncate(3);
                 cells

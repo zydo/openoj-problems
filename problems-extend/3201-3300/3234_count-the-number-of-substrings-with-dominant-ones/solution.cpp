@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     long long numberOfSubstrings(string s) {
         int n = s.size();
         vector<int> zerosAt;

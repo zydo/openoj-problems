@@ -21,7 +21,12 @@ function uniquePathsIII(grid: number[][]): number {
             }
         }
     }
-    const steps: number[][] = [[-1, 0], [1, 0], [0, -1], [0, 1]];
+    const steps: number[][] = [
+        [-1, 0],
+        [1, 0],
+        [0, -1],
+        [0, 1],
+    ];
 
     function dfs(r: number, c: number, mask: number): number {
         // No square may be walked twice, so meeting the ending square ends

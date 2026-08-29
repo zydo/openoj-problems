@@ -5,7 +5,7 @@
 There are too many integers in `[low, high]` to test one by one, but stepping
 numbers are sparse — a value with more than 10 digits can never appear under
 the constraint, and each prefix fixes its next digit to at most two choices.
-So the algorithm *builds* the answer instead of filtering for it: start a
+So the algorithm _builds_ the answer instead of filtering for it: start a
 queue with the ten one-digit seeds `0..9`, and repeatedly append the digit
 `last - 1` and `last + 1` to a number ending in `last`, discarding the
 out-of-range successors.

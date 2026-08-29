@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int garbageCollection(vector<string> &garbage, vector<int> &travel) {
         // Every unit costs one pickup minute; each truck drives exactly
         // to the last house holding its type. Track those last indices,

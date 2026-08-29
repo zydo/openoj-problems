@@ -9,7 +9,8 @@ class Solution {
         Arrays.sort(nums);
         int closest = nums[0] + nums[1] + nums[2];
         for (int i = 0; i < nums.length - 2; ++i) {
-            int lo = i + 1, hi = nums.length - 1;
+            int lo = i + 1,
+                hi = nums.length - 1;
             while (lo < hi) {
                 int total = nums[i] + nums[lo] + nums[hi];
                 // Distance zero cannot be beaten, so an exact hit returns

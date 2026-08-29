@@ -35,7 +35,7 @@ class Solution:
             for m in range(1, k):
                 if state[m - 1]:
                     gain = 1 if r == 0 else 0
-                    nxt = state[:m - 1] + (state[m - 1] - 1,) + state[m:]
+                    nxt = state[: m - 1] + (state[m - 1] - 1,) + state[m:]
                     cand = gain + dp(nxt, (r + m) % k)
                     if cand > best:
                         best = cand

@@ -31,11 +31,7 @@ class TodoList {
     getTasksForTag(userId, tag) {
         const pending = [];
         for (const task of this.tasks.values()) {
-            if (
-                task.user === userId &&
-                !task.done &&
-                task.tags.includes(tag)
-            ) {
+            if (task.user === userId && !task.done && task.tags.includes(tag)) {
                 pending.push(task);
             }
         }

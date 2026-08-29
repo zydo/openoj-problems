@@ -7,10 +7,12 @@ class Solution {
         int n = (int)words.size();
         int best = -1;
         for (int i = 0; i < n; ++i) {
-            if (words[i] != target) continue;
+            if (words[i] != target)
+                continue;
             int gap = abs(i - startIndex);
             int d = min(gap, n - gap);
-            if (best == -1 || d < best) best = d;
+            if (best == -1 || d < best)
+                best = d;
         }
         return best;
     }

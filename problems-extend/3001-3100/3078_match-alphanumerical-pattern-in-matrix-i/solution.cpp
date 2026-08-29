@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> findPattern(vector<vector<int>>& board, vector<string>& pattern) {
+  public:
+    vector<int> findPattern(vector<vector<int>> &board, vector<string> &pattern) {
         // Corners are scanned row-major, so the first hit already
         // carries the lowest row and then the lowest column. Each
         // candidate is validated by one pass that grows a
@@ -21,9 +21,8 @@ public:
         return {-1, -1};
     }
 
-private:
-    bool matches(const vector<vector<int>>& board, const vector<string>& pattern,
-                 int r, int c) {
+  private:
+    bool matches(const vector<vector<int>> &board, const vector<string> &pattern, int r, int c) {
         unordered_map<char, int> toDigit;
         unordered_map<int, char> toLetter;
         for (int i = 0; i < (int)pattern.size(); ++i) {

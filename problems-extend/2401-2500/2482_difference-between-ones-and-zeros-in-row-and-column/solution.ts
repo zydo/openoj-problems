@@ -13,8 +13,6 @@ function onesMinusZeros(grid: number[][]): number[][] {
         }
     }
     return Array.from({ length: m }, (_, i) =>
-        Array.from({ length: n }, (_, j) =>
-            2 * rowOnes[i] + 2 * colOnes[j] - m - n
-        )
+        Array.from({ length: n }, (_, j) => 2 * rowOnes[i] + 2 * colOnes[j] - m - n),
     );
 }

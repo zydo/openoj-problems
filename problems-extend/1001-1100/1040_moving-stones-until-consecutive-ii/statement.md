@@ -53,5 +53,5 @@ an illegal move.
 
 For the minimum, how many stones are already in place?
 For the maximum, we have to lose either the gap A[1] - A[0] or
-A[N-1] - A[N-2]  (where N = A.length), but every other space can be
+A[N-1] - A[N-2] (where N = A.length), but every other space can be
 occupied.

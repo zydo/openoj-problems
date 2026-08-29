@@ -7,7 +7,8 @@ class Solution {
     // already fresh), so the cell above is snapshotted first.
     public int maximumAmount(int[][] coins) {
         final int NEG = -1_000_000_000;
-        int rows = coins.length, cols = coins[0].length;
+        int rows = coins.length,
+            cols = coins[0].length;
         int[][] dp = new int[3][cols];
         for (int[] layer : dp) {
             Arrays.fill(layer, NEG);
@@ -20,7 +21,9 @@ class Solution {
                     dp[1][0] = dp[2][0] = Math.max(value, 0);
                     continue;
                 }
-                int up0 = dp[0][j], up1 = dp[1][j], up2 = dp[2][j];
+                int up0 = dp[0][j],
+                    up1 = dp[1][j],
+                    up2 = dp[2][j];
                 int left0 = j > 0 ? dp[0][j - 1] : NEG;
                 int left1 = j > 0 ? dp[1][j - 1] : NEG;
                 int left2 = j > 0 ? dp[2][j - 1] : NEG;

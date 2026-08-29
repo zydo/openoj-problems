@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int ways(std::vector<std::string>& pizza, int k) {
+    int ways(std::vector<std::string> &pizza, int k) {
         const long long MOD = 1'000'000'007LL;
         int rows = (int)pizza.size();
         int cols = (int)pizza[0].size();
@@ -11,8 +11,8 @@ class Solution {
         std::vector<std::vector<int>> apples(rows + 1, std::vector<int>(cols + 1, 0));
         for (int r = rows - 1; r >= 0; r--) {
             for (int c = cols - 1; c >= 0; c--) {
-                apples[r][c] = apples[r + 1][c] + apples[r][c + 1] - apples[r + 1][c + 1]
-                             + (pizza[r][c] == 'A' ? 1 : 0);
+                apples[r][c] =
+                    apples[r + 1][c] + apples[r][c + 1] - apples[r + 1][c + 1] + (pizza[r][c] == 'A' ? 1 : 0);
             }
         }
         std::vector<std::vector<std::vector<long long>>> memo(
@@ -21,8 +21,7 @@ class Solution {
     }
 
   private:
-    long long count(std::vector<std::vector<int>>& apples,
-                    std::vector<std::vector<std::vector<long long>>>& memo,
+    long long count(std::vector<std::vector<int>> &apples, std::vector<std::vector<std::vector<long long>>> &memo,
                     int r, int c, int remaining, int rows, int cols, const long long MOD) {
         if (apples[r][c] == 0) {
             return 0;

@@ -32,9 +32,9 @@ class Solution {
         }
         string out;
         out.reserve(s.size());
-        int total = (int) s.size();
+        int total = (int)s.size();
         while (total > 0) {
-            int take = min(k, (int) heap.size());
+            int take = min(k, (int)heap.size());
             // Fewer than k distinct letters while more remain: some window of
             // k consecutive positions would have to repeat a letter, so no
             // arrangement exists.

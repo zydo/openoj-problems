@@ -30,9 +30,7 @@ class MyCircularQueue {
 
     int Front() { return count == 0 ? -1 : buf[head]; }
 
-    int Rear() {
-        return count == 0 ? -1 : buf[(head + count - 1) % buf.size()];
-    }
+    int Rear() { return count == 0 ? -1 : buf[(head + count - 1) % buf.size()]; }
 
     bool isEmpty() { return count == 0; }
 

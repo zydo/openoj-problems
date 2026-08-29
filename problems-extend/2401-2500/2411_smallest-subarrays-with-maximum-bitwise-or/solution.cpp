@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> smallestSubarrays(vector<int>& nums) {
+  public:
+    vector<int> smallestSubarrays(vector<int> &nums) {
         // One pass per bit, right to left: `last` is the nearest index at
         // or after i whose number carries that bit. The OR of nums[i..j]
         // is maximal exactly when j reaches the farthest such index over

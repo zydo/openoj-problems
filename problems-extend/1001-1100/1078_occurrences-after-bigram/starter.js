@@ -4,6 +4,6 @@
  * @param {string} second
  * @return {string[]}
  */
-var findOcurrences = function(text, first, second) {
+var findOcurrences = function (text, first, second) {
     throw new Error("TODO");
 };

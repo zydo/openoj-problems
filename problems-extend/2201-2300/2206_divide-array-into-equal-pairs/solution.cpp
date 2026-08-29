@@ -1,6 +1,6 @@
 class Solution {
   public:
-    bool divideArray(vector<int>& nums) {
+    bool divideArray(vector<int> &nums) {
         // Values are bounded to [1, 500], so a fixed counting table answers
         // "is every value's occurrence count even?" in one pass.
         vector<int> counts(501, 0);

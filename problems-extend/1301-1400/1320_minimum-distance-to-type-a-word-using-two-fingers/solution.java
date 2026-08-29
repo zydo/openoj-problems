@@ -28,6 +28,6 @@ class Solution {
 
     private int dist(int a, int b) {
         if (a == 26 || b == 26) return 0;
-        return Math.abs(a / 6 - b / 6) + Math.abs(a % 6 - b % 6);
+        return Math.abs(a / 6 - b / 6) + Math.abs((a % 6) - (b % 6));
     }
 }

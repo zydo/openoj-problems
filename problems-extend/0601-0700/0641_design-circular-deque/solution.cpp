@@ -51,9 +51,7 @@ class MyCircularDeque {
 
     int getFront() { return count == 0 ? -1 : buf[head]; }
 
-    int getRear() {
-        return count == 0 ? -1 : buf[(head + count - 1) % buf.size()];
-    }
+    int getRear() { return count == 0 ? -1 : buf[(head + count - 1) % buf.size()]; }
 
     bool isEmpty() { return count == 0; }
 

@@ -10,18 +10,21 @@ class Solution {
         const int total = size * size * size;
         const int INF = 1e9;
         vector<int> best(total, INF);
-        for (auto &point : points) best[index(point[0], point[1], point[2], size)] = 0;
+        for (auto &point : points)
+            best[index(point[0], point[1], point[2], size)] = 0;
 
         bool changed = true;
         while (changed) {
             changed = false;
             for (int a = 0; a < total; ++a) {
-                if (best[a] == INF) continue;
+                if (best[a] == INF)
+                    continue;
                 int ax = a / (size * size);
                 int ay = (a / size) % size;
                 int az = a % size;
                 for (int b = a + 1; b < total; ++b) {
-                    if (best[b] == INF) continue;
+                    if (best[b] == INF)
+                        continue;
                     int bx = b / (size * size);
                     int by = (b / size) % size;
                     int bz = b % size;
@@ -43,7 +46,5 @@ class Solution {
     }
 
   private:
-    int index(int x, int y, int z, int size) {
-        return x * size * size + y * size + z;
-    }
+    int index(int x, int y, int z, int size) { return x * size * size + y * size + z; }
 };

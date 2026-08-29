@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool canTransform(string start, string result) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool canTransform(string start, string result) { throw logic_error("TODO"); }
 };

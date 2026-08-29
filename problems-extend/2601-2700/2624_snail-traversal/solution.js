@@ -15,8 +15,7 @@ Object.defineProperty(Array.prototype, "snail", {
         for (let index = 0; index < this.length; index++) {
             const column = Math.floor(index / rowsCount);
             const inColumn = index % rowsCount;
-            const rowNum =
-                column % 2 === 0 ? inColumn : rowsCount - 1 - inColumn;
+            const rowNum = column % 2 === 0 ? inColumn : rowsCount - 1 - inColumn;
             matrix[rowNum][column] = this[index];
         }
         return matrix;

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long maximumAlternatingSubarraySum(vector<int>& nums) {
+  public:
+    long long maximumAlternatingSubarraySum(vector<int> &nums) {
         long long plus = nums[0];
         long long minus = 0;
         bool hasMinus = false;

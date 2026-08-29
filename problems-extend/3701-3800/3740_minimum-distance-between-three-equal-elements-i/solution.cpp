@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimumDistance(vector<int>& nums) {
+    int minimumDistance(vector<int> &nums) {
         // Sorted as a < b < c, a good tuple's distance collapses to
         // (b - a) + (c - b) + (c - a) = 2 * (c - a): only the outermost
         // indices matter, so the tightest triple of a value spans three

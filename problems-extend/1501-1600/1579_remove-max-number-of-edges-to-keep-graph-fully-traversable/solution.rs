@@ -9,7 +9,10 @@ struct EdgeDisjointSet {
 
 impl EdgeDisjointSet {
     fn new(size: usize) -> Self {
-        EdgeDisjointSet { parent: (0..=size).collect(), components: size as i32 }
+        EdgeDisjointSet {
+            parent: (0..=size).collect(),
+            components: size as i32,
+        }
     }
 
     fn find(&mut self, node: usize) -> usize {

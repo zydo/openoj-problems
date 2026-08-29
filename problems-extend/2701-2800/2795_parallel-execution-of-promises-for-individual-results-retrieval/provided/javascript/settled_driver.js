@@ -25,8 +25,7 @@ class SettledClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -98,8 +97,7 @@ class SettledDriver {
             this.settled = await returned;
         } catch (problem) {
             throw new Error(
-                "Returned promise rejected: " +
-                    (problem && problem.message ? problem.message : String(problem)),
+                "Returned promise rejected: " + (problem && problem.message ? problem.message : String(problem)),
             );
         }
     }

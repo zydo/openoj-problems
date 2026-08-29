@@ -11,7 +11,7 @@ class Solution {
         while (word.length() < k) {
             int n = word.length();
             for (int i = 0; i < n; ++i) {
-                word.append((char) ('a' + (word.charAt(i) - 'a' + 1) % 26));
+                word.append((char) ('a' + ((word.charAt(i) - 'a' + 1) % 26)));
             }
         }
         return String.valueOf(word.charAt(k - 1));

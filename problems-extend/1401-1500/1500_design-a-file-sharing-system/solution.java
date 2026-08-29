@@ -14,8 +14,7 @@ class FileSharing {
     private final PriorityQueue<Integer> freed = new PriorityQueue<>();
     private int nextId = 1;
 
-    public FileSharing(int m) {
-    }
+    public FileSharing(int m) {}
 
     public int join(int[] ownedChunks) {
         int uid;

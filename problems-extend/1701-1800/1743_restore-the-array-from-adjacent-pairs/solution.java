@@ -16,7 +16,8 @@ class Solution {
             adj.computeIfAbsent(pair[0], k -> new ArrayList<>()).add(pair[1]);
             adj.computeIfAbsent(pair[1], k -> new ArrayList<>()).add(pair[0]);
         }
-        int a = adjacentPairs[0][0], b = adjacentPairs[0][1];
+        int a = adjacentPairs[0][0],
+            b = adjacentPairs[0][1];
         int start;
         if (adj.get(a).size() == 1) {
             start = a;

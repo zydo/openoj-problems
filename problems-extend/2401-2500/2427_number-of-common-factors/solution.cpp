@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int commonFactors(int a, int b) {
         // A common factor divides both numbers, hence their gcd; every
         // divisor of the gcd divides both. So the answer is the divisor

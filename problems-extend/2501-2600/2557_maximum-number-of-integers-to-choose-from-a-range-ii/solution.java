@@ -52,7 +52,7 @@ class Solution {
     }
 
     private long ladder(long lo, long cnt) {
-        return cnt * (2 * lo + cnt - 1) / 2;
+        return (cnt * (2 * lo + cnt - 1)) / 2;
     }
 
     private long bestPrefix(long lo, long avail, long maxSum) {

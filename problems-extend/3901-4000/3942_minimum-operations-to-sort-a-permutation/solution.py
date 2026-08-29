@@ -11,9 +11,7 @@ class Solution:
         else:
             reversed_nums = nums[::-1]
             reversed_position = reversed_nums.index(0)
-            if not all(
-                reversed_nums[(reversed_position + i) % n] == i for i in range(n)
-            ):
+            if not all(reversed_nums[(reversed_position + i) % n] == i for i in range(n)):
                 return -1
             target = (1, reversed_position)
 

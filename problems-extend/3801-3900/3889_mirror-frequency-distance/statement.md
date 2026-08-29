@@ -11,14 +11,14 @@ of its character set:
 - For letters, the mirror of a character is the letter at the same position
   from the end of the alphabet.
 
-  For example, the mirror of `'a'` is `'z'`, and the mirror of `'b'` is
-  `'y'`, and so on.
+    For example, the mirror of `'a'` is `'z'`, and the mirror of `'b'` is
+    `'y'`, and so on.
 
 - For digits, the mirror of a character is the digit at the same position
   from the end of the range `'0'` to `'9'`.
 
-  For example, the mirror of `'0'` is `'9'`, and the mirror of `'1'` is
-  `'8'`, and so on.
+    For example, the mirror of `'0'` is `'9'`, and the mirror of `'1'` is
+    `'8'`, and so on.
 
 For each unique character `c` in the string:
 

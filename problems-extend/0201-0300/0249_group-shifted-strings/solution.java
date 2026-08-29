@@ -16,7 +16,7 @@ class Solution {
             char first = string.charAt(0);
             StringBuilder builder = new StringBuilder();
             for (int i = 0; i < string.length(); i++) {
-                builder.append((char) ('a' + (string.charAt(i) - first + 26) % 26));
+                builder.append((char) ('a' + ((string.charAt(i) - first + 26) % 26)));
             }
             // computeIfAbsent creates the bucket on first sight of a key, so
             // group membership accumulates automatically: every string lands

@@ -45,11 +45,7 @@ impl Solution {
             if nxt.is_empty() {
                 // The process terminates here and no car may be skipped,
                 // so every live state has served exactly i cars.
-                return if i == 0 {
-                    -1
-                } else {
-                    *states.values().min().unwrap()
-                };
+                return if i == 0 { -1 } else { *states.values().min().unwrap() };
             }
             states = nxt;
         }

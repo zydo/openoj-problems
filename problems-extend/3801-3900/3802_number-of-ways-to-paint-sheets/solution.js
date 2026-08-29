@@ -38,9 +38,7 @@ var numberOfWays = function (n, limit) {
     let total = 0n;
     for (let i = 1; i < ordered.length; i++) {
         const run = ordered[i] - ordered[i - 1];
-        total =
-            (total + BigInt(ways(ordered[i - 1]) % 1000000007) * BigInt(run)) %
-            MOD;
+        total = (total + BigInt(ways(ordered[i - 1]) % 1000000007) * BigInt(run)) % MOD;
     }
     return Number(total);
 };

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int minOperations(string s) {
         // Exactly two alternating targets exist; each position matches
         // one of them, so one mismatch count against the 0101... target

@@ -5,8 +5,7 @@
 // their own parity group.
 impl Solution {
     pub fn sort_array_by_parity_ii(nums: Vec<i32>) -> Vec<i32> {
-        let (mut evens, mut odds): (Vec<i32>, Vec<i32>) =
-            nums.into_iter().partition(|&value| value % 2 == 0);
+        let (mut evens, mut odds): (Vec<i32>, Vec<i32>) = nums.into_iter().partition(|&value| value % 2 == 0);
         evens.sort_unstable();
         odds.sort_unstable();
         let mut answer: Vec<i32> = vec![0; evens.len() + odds.len()];

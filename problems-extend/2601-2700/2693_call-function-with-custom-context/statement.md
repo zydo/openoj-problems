@@ -12,8 +12,8 @@ For example if you had the function:
 
 ```js
 function tax(price, taxRate) {
-  const totalCost = price * (1 + taxRate);
-  console.log(`The cost of ${this.item} is ${totalCost}`);
+    const totalCost = price * (1 + taxRate);
+    console.log(`The cost of ${this.item} is ${totalCost}`);
 }
 ```
 

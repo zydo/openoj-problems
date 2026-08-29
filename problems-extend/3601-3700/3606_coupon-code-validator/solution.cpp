@@ -2,8 +2,7 @@ class Solution {
   public:
     vector<string> validateCoupons(vector<string> &code, vector<string> &businessLine, vector<bool> &isActive) {
         // Category rank: electronics < grocery < pharmacy < restaurant.
-        unordered_map<string, int> rank = {
-            {"electronics", 0}, {"grocery", 1}, {"pharmacy", 2}, {"restaurant", 3}};
+        unordered_map<string, int> rank = {{"electronics", 0}, {"grocery", 1}, {"pharmacy", 2}, {"restaurant", 3}};
         vector<pair<int, string>> valid;
         for (int i = 0; i < (int)code.size(); ++i) {
             if (!isActive[i] || !rank.count(businessLine[i]))

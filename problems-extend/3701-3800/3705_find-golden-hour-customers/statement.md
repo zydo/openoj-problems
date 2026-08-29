@@ -19,10 +19,10 @@ order: `payment_method` is one of `'cash'`, `'card'` or `'app'`,
 `order_rating` scores the order from 1 to 5, where 5 is best, or is NULL
 when the customer did not rate it.
 
-Call an order a *peak-hour order* when its time of day falls in the
+Call an order a _peak-hour order_ when its time of day falls in the
 lunch window from 11:00 inclusive up to 14:00 exclusive, or in the
 evening window from 18:00 inclusive up to 21:00 exclusive; the date part
-never matters. A customer is a *golden hour customer* when all of the
+never matters. A customer is a _golden hour customer_ when all of the
 following hold:
 
 - They made at least 3 orders.

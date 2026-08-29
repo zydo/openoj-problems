@@ -3,9 +3,7 @@ function maxArea(mat: number[][]): number {
     const n = mat[0].length;
     // prefix[i][j] = usable cells in mat[0..i)[0..j): any k-square's fill
     // is then four lookups, so "all ones" is an O(1) test.
-    const prefix: number[][] = Array.from({ length: m + 1 }, () =>
-        new Array<number>(n + 1).fill(0),
-    );
+    const prefix: number[][] = Array.from({ length: m + 1 }, () => new Array<number>(n + 1).fill(0));
     for (let i = 0; i < m; ++i) {
         for (let j = 0; j < n; ++j) {
             prefix[i + 1][j + 1] = prefix[i + 1][j] + prefix[i][j + 1] - prefix[i][j] + mat[i][j];

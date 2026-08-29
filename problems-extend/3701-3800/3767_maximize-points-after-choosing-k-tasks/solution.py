@@ -11,9 +11,7 @@ class Solution:
         # switches, so the answer is the running maximum over those totals.
         total = sum(technique1)
         best = total
-        gains = sorted(
-            (b - a for a, b in zip(technique1, technique2)), reverse=True
-        )
+        gains = sorted((b - a for a, b in zip(technique1, technique2)), reverse=True)
         budget = len(technique1) - k
         for gain in gains:
             if budget == 0 or gain <= 0:

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minDeletion(vector<int>& nums) {
+    int minDeletion(vector<int> &nums) {
         // Build the kept array greedily: an even slot takes anything, an odd
         // slot must differ from its pair, so an equal arrival is the deletion.
         int deletions = 0;

@@ -20,7 +20,9 @@ class Solution {
         }
         int count = 0;
         for (int i = 1; i < compressed.size() - 1; ++i) {
-            int left = compressed.get(i - 1), mid = compressed.get(i), right = compressed.get(i + 1);
+            int left = compressed.get(i - 1),
+                mid = compressed.get(i),
+                right = compressed.get(i + 1);
             if ((mid > left && mid > right) || (mid < left && mid < right)) {
                 count++;
             }

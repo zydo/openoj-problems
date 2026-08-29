@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    long long maxKelements(std::vector<int>& nums, int k) {
+    long long maxKelements(std::vector<int> &nums, int k) {
         // Greedy on the live maximum: picking anything other than the
         // largest element both gains less now and leaves that giant
         // intact, so swapping the order never helps. A max-heap answers

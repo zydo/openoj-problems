@@ -5,8 +5,8 @@ class Solution {
         int steps;
     };
 
-public:
-    int countCombinations(vector<string>& pieces, vector<vector<int>>& positions) {
+  public:
+    int countCombinations(vector<string> &pieces, vector<vector<int>> &positions) {
         vector<vector<Move>> options;
         for (int index = 0; index < static_cast<int>(pieces.size()); ++index) {
             options.push_back(movesFor(pieces[index], positions[index]));
@@ -15,8 +15,8 @@ public:
         return search(0, positions, options, chosen);
     }
 
-private:
-    vector<Move> movesFor(const string& piece, const vector<int>& position) {
+  private:
+    vector<Move> movesFor(const string &piece, const vector<int> &position) {
         vector<pair<int, int>> directions;
         if (piece != "bishop") {
             directions.insert(directions.end(), {{1, 0}, {-1, 0}, {0, 1}, {0, -1}});
@@ -38,13 +38,13 @@ private:
         return moves;
     }
 
-    int search(int index, const vector<vector<int>>& positions, const vector<vector<Move>>& options,
-               vector<Move>& chosen) {
+    int search(int index, const vector<vector<int>> &positions, const vector<vector<Move>> &options,
+               vector<Move> &chosen) {
         if (index == static_cast<int>(options.size())) {
             return 1;
         }
         int total = 0;
-        for (const Move& move : options[index]) {
+        for (const Move &move : options[index]) {
             bool valid = true;
             for (int other = 0; other < index && valid; ++other) {
                 valid = compatible(index, move, other, chosen[other], positions);
@@ -58,8 +58,8 @@ private:
         return total;
     }
 
-    bool compatible(int index, const Move& move, int other, const Move& otherMove,
-                    const vector<vector<int>>& positions) {
+    bool compatible(int index, const Move &move, int other, const Move &otherMove,
+                    const vector<vector<int>> &positions) {
         for (int second = 0; second <= 7; ++second) {
             int row = positions[index][0] + move.dr * min(second, move.steps);
             int column = positions[index][1] + move.dc * min(second, move.steps);

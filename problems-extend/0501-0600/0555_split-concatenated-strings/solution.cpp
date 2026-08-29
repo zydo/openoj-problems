@@ -5,7 +5,7 @@
 
 class Solution {
   public:
-    string splitLoopedString(vector<string>& strs) {
+    string splitLoopedString(vector<string> &strs) {
         // Every string except the breakpoint carrier stands at max(s, s
         // reversed) - fixed slot lengths make per-string maxima optimal.
         // The breakpoint string itself is tried in BOTH orientations at
@@ -27,7 +27,7 @@ class Solution {
             }
             string rev = strs[i];
             reverse(rev.begin(), rev.end());
-            for (const string& t : {strs[i], rev}) {
+            for (const string &t : {strs[i], rev}) {
                 for (size_t k = 0; k < t.size(); ++k) {
                     string cand = t.substr(k) + rest + t.substr(0, k);
                     if (cand > ans) {

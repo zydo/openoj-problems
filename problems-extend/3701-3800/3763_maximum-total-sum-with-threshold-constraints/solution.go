@@ -11,7 +11,7 @@ func (h liveHeap) Less(i, j int) bool {
 	}
 	return h[i][1] < h[j][1]
 }
-func (h liveHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h liveHeap) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
 func (h *liveHeap) Push(x interface{}) { *h = append(*h, x.([2]int)) }
 func (h *liveHeap) Pop() interface{} {
 	old := *h

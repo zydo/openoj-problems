@@ -11,8 +11,7 @@ class Solution {
         // sum of the column maxima, with already-emptied rows skipped.
         size_t width = 0;
         for (vector<int> &row : nums) {
-            sort(row.begin(), row.end(),
-                 [](int a, int b) { return a > b; });
+            sort(row.begin(), row.end(), [](int a, int b) { return a > b; });
             width = max(width, row.size());
         }
         int score = 0;

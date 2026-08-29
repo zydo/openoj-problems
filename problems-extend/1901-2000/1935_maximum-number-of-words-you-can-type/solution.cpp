@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int canBeTypedWords(string text, string brokenLetters) {
         // Broken keys form a boolean table; a word is typable only when
         // none of its letters are marked broken.

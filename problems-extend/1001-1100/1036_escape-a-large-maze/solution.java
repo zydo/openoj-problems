@@ -18,21 +18,23 @@ class Solution {
         // endpoint cannot be trapped, so the fill can stop early instead of
         // exploring the (unmaterializable) rest of the grid.
         long n = blockedSet.size();
-        long maxEnclosedArea = n * (n - 1) / 2;
+        long maxEnclosedArea = (n * (n - 1)) / 2;
 
         // source cannot reach past its own pocket boundary AND target cannot
         // reach past its own pocket boundary -- both must escape their local
         // neighborhood for a path to exist between them.
-        return canEscapeLocally(source, target, blockedSet, maxEnclosedArea)
-            && canEscapeLocally(target, source, blockedSet, maxEnclosedArea);
+        return (
+            canEscapeLocally(source, target, blockedSet, maxEnclosedArea) &&
+            canEscapeLocally(target, source, blockedSet, maxEnclosedArea)
+        );
     }
 
     private boolean canEscapeLocally(int[] start, int[] goal, Set<Long> blockedSet, long maxEnclosedArea) {
         Set<Long> visited = new HashSet<>();
         Deque<int[]> stack = new ArrayDeque<>();
         visited.add(key(start[0], start[1]));
-        stack.push(new int[] {start[0], start[1]});
-        int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        stack.push(new int[] { start[0], start[1] });
+        int[][] directions = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
 
         while (!stack.isEmpty()) {
             if (visited.size() > maxEnclosedArea) {
@@ -53,7 +55,7 @@ class Solution {
                     return true;
                 }
                 visited.add(k);
-                stack.push(new int[] {nx, ny});
+                stack.push(new int[] { nx, ny });
             }
         }
         return false;

@@ -7,7 +7,7 @@ the answer for the prefix `s[0..i-1]` and the second term takes a palindrome
 `s[l..i-1]` of length at least `k` and adds it to the best selection of the
 earlier prefix. The subtlety is which `l` to use when several palindromes end
 at the same index: because `dp` never decreases as the prefix grows, the
-*latest* start is always at least as good as any earlier one. It uses no more
+_latest_ start is always at least as good as any earlier one. It uses no more
 room on the left than an earlier start would, and `dp[l]` is no smaller, so
 one candidate per end index suffices.
 

@@ -11,7 +11,8 @@ class Solution {
             graph[edge[0]].push_back(edge[1]);
             graph[edge[1]].push_back(edge[0]);
         }
-        if (source == destination) return true;
+        if (source == destination)
+            return true;
         vector<bool> visited(n, false);
         visited[source] = true;
         queue<int> pending;
@@ -20,7 +21,8 @@ class Solution {
             int node = pending.front();
             pending.pop();
             for (int neighbor : graph[node]) {
-                if (neighbor == destination) return true;
+                if (neighbor == destination)
+                    return true;
                 if (!visited[neighbor]) {
                     visited[neighbor] = true;
                     pending.push(neighbor);

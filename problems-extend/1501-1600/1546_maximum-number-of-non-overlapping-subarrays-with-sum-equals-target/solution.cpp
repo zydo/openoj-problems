@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maxNonOverlapping(vector<int>& nums, int target) {
+  public:
+    int maxNonOverlapping(vector<int> &nums, int target) {
         // `seen` holds every prefix sum reachable from the start of the
         // current "segment" (the region after the last subarray taken).
         // The moment the running sum minus `target` is in `seen`, a

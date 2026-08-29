@@ -11,8 +11,7 @@ function modeWeight(nums: number[], k: number): number {
     const cnt = new Map<number, number>();
     const bucket = new Map<number, number>();
     const heap: Array<[number, number]> = [];
-    const less = (a: [number, number], b: [number, number]): boolean =>
-        a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1];
+    const less = (a: [number, number], b: [number, number]): boolean => (a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1]);
     const push = (entry: [number, number]): void => {
         heap.push(entry);
         let index = heap.length - 1;

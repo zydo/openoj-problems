@@ -9,7 +9,7 @@ value: for each direction, how many chains seen so far end at an element
 of that value (`inc_cnt` / `dec_cnt`) and the total element-sum carried by
 those chains (`inc_sum` / `dec_sum`). Buckets accumulate across duplicate
 occurrences, which is what makes subsequences — not substrings — fall out
-correctly: when element `x` arrives it extends *every* earlier chain
+correctly: when element `x` arrives it extends _every_ earlier chain
 ending at value `x - 1` (or `x + 1`), regardless of where those chains sit
 in the array, because index order is automatic in a left-to-right scan.
 

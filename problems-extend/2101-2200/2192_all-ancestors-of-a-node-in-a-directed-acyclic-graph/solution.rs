@@ -25,10 +25,7 @@ impl Solution {
                     }
                 }
             }
-            let row: Vec<i32> = (0..n)
-                .filter(|&u| seen[u] && u != start)
-                .map(|u| u as i32)
-                .collect();
+            let row: Vec<i32> = (0..n).filter(|&u| seen[u] && u != start).map(|u| u as i32).collect();
             answer.push(row);
         }
         answer

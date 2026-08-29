@@ -5,8 +5,10 @@ class Solution {
         // letter of start must be the i-th letter of result — L's and R's
         // never cross and never change kind — and each must move legally:
         // an L only ever moves left onto an X, an R only right onto an X.
-        int i = 0, j = 0;
-        int n = start.length(), m = result.length();
+        int i = 0,
+            j = 0;
+        int n = start.length(),
+            m = result.length();
         while (true) {
             while (i < n && start.charAt(i) == 'X') {
                 i++;

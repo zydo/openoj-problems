@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string findLexSmallestString(string s, int a, int b) {
         int n = static_cast<int>(s.size());
         unordered_set<string> seen;

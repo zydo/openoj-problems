@@ -1,8 +1,8 @@
 class Solution {
-public:
-    vector<int> gardenNoAdj(int n, vector<vector<int>>& paths) {
+  public:
+    vector<int> gardenNoAdj(int n, vector<vector<int>> &paths) {
         vector<vector<int>> adj(n + 1);
-        for (auto& path : paths) {
+        for (auto &path : paths) {
             int x = path[0], y = path[1];
             adj[x].push_back(y);
             adj[y].push_back(x);

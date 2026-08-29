@@ -18,7 +18,7 @@ type AnyArgsFn = (...args: any[]) => any;
 class OnceCase {
     fnSource: string;
     calls: unknown[][];
-    verdictValue: {calls: number; value: any}[] | undefined;
+    verdictValue: { calls: number; value: any }[] | undefined;
 
     // The interactive wrapper hands the oracle one array of the manifest's
     // construct values (fn, calls) plus the query budget (unused —
@@ -48,24 +48,20 @@ class OnceCase {
             value = target(...args);
             return value;
         };
-        const wrapped = (
-            onceFn as (target: AnyArgsFn) => AnyArgsFn
-        )(counting);
+        const wrapped = (onceFn as (target: AnyArgsFn) => AnyArgsFn)(counting);
         if (typeof wrapped !== "function") {
             throw new Error("once must return a function");
         }
         for (let at = 0; at < this.calls.length; at++) {
             const out = wrapped(...(this.calls[at] as any[]));
             if (at > 0 && out !== undefined) {
-                throw new Error(
-                    "call " + at + " returned a non-undefined value"
-                );
+                throw new Error("call " + at + " returned a non-undefined value");
             }
         }
-        this.verdictValue = [{calls: realCalls, value: value}];
+        this.verdictValue = [{ calls: realCalls, value: value }];
     }
 
-    verdict(): {calls: number; value: any}[] {
-        return this.verdictValue as {calls: number; value: any}[];
+    verdict(): { calls: number; value: any }[] {
+        return this.verdictValue as { calls: number; value: any }[];
     }
 }

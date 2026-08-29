@@ -9,12 +9,14 @@ class Solution {
         for (int i = (int)queries.size() - 1; i >= 0; i--) {
             int kind = queries[i][0], index = queries[i][1], value = queries[i][2];
             if (kind == 0) {
-                if (seenRows[index]) continue;
+                if (seenRows[index])
+                    continue;
                 seenRows[index] = true;
                 remainingRows--;
                 total += (long long)value * remainingCols;
             } else {
-                if (seenCols[index]) continue;
+                if (seenCols[index])
+                    continue;
                 seenCols[index] = true;
                 remainingCols--;
                 total += (long long)value * remainingRows;

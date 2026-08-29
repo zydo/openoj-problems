@@ -14,7 +14,4 @@ class Solution:
         pref = [1]
         for v in powers:
             pref.append(pref[-1] * v % MOD)
-        return [
-            pref[hi + 1] * pow(pref[lo], MOD - 2, MOD) % MOD
-            for lo, hi in queries
-        ]
+        return [pref[hi + 1] * pow(pref[lo], MOD - 2, MOD) % MOD for lo, hi in queries]

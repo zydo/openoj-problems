@@ -25,7 +25,8 @@ class Solution {
     }
 
   private:
-    void dfs(const vector<int> &divs, vector<int> &best, vector<int> &path, int n, int slots, int start, long long prod) const {
+    void dfs(const vector<int> &divs, vector<int> &best, vector<int> &path, int n, int slots, int start,
+             long long prod) const {
         if (slots == 1) {
             // The last factor is forced to carry the product up to n; it
             // completes a nondecreasing split exactly when it reaches the

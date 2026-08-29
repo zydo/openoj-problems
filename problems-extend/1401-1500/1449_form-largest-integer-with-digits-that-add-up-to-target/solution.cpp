@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    std::string largestNumber(std::vector<int>& cost, int target) {
+    std::string largestNumber(std::vector<int> &cost, int target) {
         std::vector<int> dp(target + 1, -1);
         dp[0] = 0;
         for (int t = 1; t <= target; t++) {

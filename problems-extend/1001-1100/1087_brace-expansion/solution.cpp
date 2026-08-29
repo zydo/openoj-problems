@@ -9,7 +9,8 @@ class Solution {
         while (i < (int)s.size()) {
             if (s[i] == '{') {
                 int j = i;
-                while (s[j] != '}') ++j;
+                while (s[j] != '}')
+                    ++j;
                 vector<string> group;
                 string piece;
                 for (int k = i + 1; k < j; ++k) {

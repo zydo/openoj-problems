@@ -1,15 +1,13 @@
 class Solution {
-public:
-    int minimumOperationsToWriteY(vector<vector<int>>& grid) {
+  public:
+    int minimumOperationsToWriteY(vector<vector<int>> &grid) {
         int n = grid.size();
         int mid = n / 2;
         int yCount[3] = {};
         int otherCount[3] = {};
         for (int r = 0; r < n; ++r) {
             for (int c = 0; c < n; ++c) {
-                bool onY = (r == c && r <= mid)
-                    || (c == n - 1 - r && r <= mid)
-                    || (c == mid && r >= mid);
+                bool onY = (r == c && r <= mid) || (c == n - 1 - r && r <= mid) || (c == mid && r >= mid);
                 if (onY) {
                     ++yCount[grid[r][c]];
                 } else {

@@ -27,10 +27,7 @@ class Solution:
             a, b = odds
             if not linked(a, b):
                 return True
-            return any(
-                c != a and c != b and not linked(a, c) and not linked(b, c)
-                for c in range(1, n + 1)
-            )
+            return any(c != a and c != b and not linked(a, c) and not linked(b, c) for c in range(1, n + 1))
         w, x, y, z = odds
         return (
             (not linked(w, x) and not linked(y, z))

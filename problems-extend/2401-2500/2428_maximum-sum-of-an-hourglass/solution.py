@@ -10,9 +10,13 @@ class Solution:
         for r in range(len(grid) - 2):
             for c in range(len(grid[0]) - 2):
                 current = (
-                    grid[r][c] + grid[r][c + 1] + grid[r][c + 2]
+                    grid[r][c]
+                    + grid[r][c + 1]
+                    + grid[r][c + 2]
                     + grid[r + 1][c + 1]
-                    + grid[r + 2][c] + grid[r + 2][c + 1] + grid[r + 2][c + 2]
+                    + grid[r + 2][c]
+                    + grid[r + 2][c + 1]
+                    + grid[r + 2][c + 2]
                 )
                 if current > best:
                     best = current

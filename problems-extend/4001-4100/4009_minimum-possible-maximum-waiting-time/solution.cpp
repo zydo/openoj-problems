@@ -32,12 +32,10 @@ class Solution {
                 if (f0 >= d) {
                     // Serve car i on dispenser 0; the other dispenser's
                     // clock runs down by r0 while it waits.
-                    relax((((f0 - d) * B + f1) * B + d) * B + max(r1 - r0, 0),
-                          max(worst, r0));
+                    relax((((f0 - d) * B + f1) * B + d) * B + max(r1 - r0, 0), max(worst, r0));
                 }
                 if (f1 >= d) {
-                    relax(((f0 * B + (f1 - d)) * B + max(r0 - r1, 0)) * B + d,
-                          max(worst, r1));
+                    relax(((f0 * B + (f1 - d)) * B + max(r0 - r1, 0)) * B + d, max(worst, r1));
                 }
             }
             if (nxt.empty()) {

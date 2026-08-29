@@ -9,8 +9,7 @@ class Solution {
         final long BULK_VOLUME = 1_000_000_000L;
         final int HEAVY_MASS = 100;
         long volume = (long) length * width * height;
-        boolean bulky = length >= BULK_DIM || width >= BULK_DIM || height >= BULK_DIM
-                || volume >= BULK_VOLUME;
+        boolean bulky = length >= BULK_DIM || width >= BULK_DIM || height >= BULK_DIM || volume >= BULK_VOLUME;
         boolean heavy = mass >= HEAVY_MASS;
         if (bulky && heavy) return "Both";
         if (bulky) return "Bulky";

@@ -36,9 +36,7 @@ class Codec {
         stack.push(new Open(root, true));
         for (int index = 1; index < tokens.length; index++) {
             Open open = stack.pop();
-            TreeNode child = tokens[index].equals("x")
-                ? null
-                : new TreeNode(Integer.parseInt(tokens[index]));
+            TreeNode child = tokens[index].equals("x") ? null : new TreeNode(Integer.parseInt(tokens[index]));
             if (open.wantsLeft) {
                 open.node.left = child;
                 stack.push(new Open(open.node, false));
@@ -51,6 +49,7 @@ class Codec {
     }
 
     private static final class Open {
+
         final TreeNode node;
         final boolean wantsLeft;
 

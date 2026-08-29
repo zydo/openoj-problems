@@ -10,8 +10,8 @@ class Solution {
     }
 
   private:
-    bool match(const string &pattern, const string &s, int pi, int si,
-               unordered_map<char, string> &charToWord, unordered_map<string, char> &wordToChar) {
+    bool match(const string &pattern, const string &s, int pi, int si, unordered_map<char, string> &charToWord,
+               unordered_map<string, char> &wordToChar) {
         if (pi == (int)pattern.size()) {
             // Every char placed: a match only when s is fully consumed.
             return si == (int)s.size();
@@ -31,10 +31,12 @@ class Solution {
         for (int end = si + 1; end <= (int)s.size(); end++) {
             string word = s.substr(si, end - si);
             // Bijection: the word is already another char's image.
-            if (wordToChar.count(word)) continue;
+            if (wordToChar.count(word))
+                continue;
             charToWord[letter] = word;
             wordToChar[word] = letter;
-            if (match(pattern, s, pi + 1, end, charToWord, wordToChar)) return true;
+            if (match(pattern, s, pi + 1, end, charToWord, wordToChar))
+                return true;
             charToWord.erase(letter);
             wordToChar.erase(word);
         }

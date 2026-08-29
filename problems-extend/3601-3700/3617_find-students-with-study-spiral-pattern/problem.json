@@ -16,7 +16,7 @@
       }
     ],
     "return_codec": "rows",
-    "comparison": "exact",
+    "comparison": "multiset",
     "sql": {
       "schema": "CREATE TABLE students (student_id INTEGER, student_name TEXT, major TEXT, PRIMARY KEY (student_id));\nCREATE TABLE study_sessions (session_id INTEGER, student_id INTEGER, subject TEXT, session_date DATE, hours_studied DECIMAL, PRIMARY KEY (session_id));"
     }

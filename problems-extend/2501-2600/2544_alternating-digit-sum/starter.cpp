@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int alternateDigitSum(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int alternateDigitSum(int n) { throw logic_error("TODO"); }
 };

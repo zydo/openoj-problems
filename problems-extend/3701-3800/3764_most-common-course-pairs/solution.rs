@@ -46,11 +46,7 @@ impl Solution {
         }
         match best_pair {
             None => Vec::new(),
-            Some((first, second)) => vec![
-                first.to_string(),
-                second.to_string(),
-                best_count.to_string(),
-            ],
+            Some((first, second)) => vec![first.to_string(), second.to_string(), best_count.to_string()],
         }
     }
 }

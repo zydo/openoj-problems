@@ -9,7 +9,8 @@ class Solution {
         // 32-bit range.
         long a = (long) energyDrinkA[0] + energyDrinkA[1];
         long b = (long) energyDrinkB[0] + energyDrinkB[1];
-        long oldA = energyDrinkA[0], oldB = energyDrinkB[0];
+        long oldA = energyDrinkA[0],
+            oldB = energyDrinkB[0];
         for (int i = 2; i < energyDrinkA.length; i++) {
             long nextA = Math.max(a, oldB) + energyDrinkA[i];
             long nextB = Math.max(b, oldA) + energyDrinkB[i];

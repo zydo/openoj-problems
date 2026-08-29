@@ -32,17 +32,18 @@ class Solution {
     // the same treatment. An exhausted stack means every pair agreed.
     private boolean sameTree(TreeNode a, TreeNode b) {
         Deque<TreeNode[]> pending = new ArrayDeque<>();
-        pending.push(new TreeNode[] {a, b});
+        pending.push(new TreeNode[] { a, b });
         while (!pending.isEmpty()) {
             TreeNode[] pair = pending.pop();
-            TreeNode left = pair[0], right = pair[1];
+            TreeNode left = pair[0],
+                right = pair[1];
             if (left == null || right == null) {
                 if (left != right) return false;
                 continue;
             }
             if (left.val != right.val) return false;
-            pending.push(new TreeNode[] {left.left, right.left});
-            pending.push(new TreeNode[] {left.right, right.right});
+            pending.push(new TreeNode[] { left.left, right.left });
+            pending.push(new TreeNode[] { left.right, right.right });
         }
         return true;
     }

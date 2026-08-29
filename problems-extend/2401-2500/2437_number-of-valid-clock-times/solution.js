@@ -14,20 +14,14 @@ var countTime = function (time) {
 
     let hours = 0;
     for (let h = 0; h < 24; ++h) {
-        if (
-            (hTens === "?" || Math.floor(h / 10) === +hTens) &&
-            (hOnes === "?" || h % 10 === +hOnes)
-        ) {
+        if ((hTens === "?" || Math.floor(h / 10) === +hTens) && (hOnes === "?" || h % 10 === +hOnes)) {
             ++hours;
         }
     }
 
     let minutes = 0;
     for (let m = 0; m < 60; ++m) {
-        if (
-            (mTens === "?" || Math.floor(m / 10) === +mTens) &&
-            (mOnes === "?" || m % 10 === +mOnes)
-        ) {
+        if ((mTens === "?" || Math.floor(m / 10) === +mTens) && (mOnes === "?" || m % 10 === +mOnes)) {
             ++minutes;
         }
     }

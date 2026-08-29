@@ -1,4 +1,5 @@
 class Solution {
+
     public long kMirror(int k, int n) {
         long total = 0;
         int found = 0;
@@ -34,7 +35,7 @@ class Solution {
         long palindrome = prefix;
         long remaining = oddLength ? prefix / 10 : prefix;
         while (remaining > 0) {
-            palindrome = palindrome * 10 + remaining % 10;
+            palindrome = palindrome * 10 + (remaining % 10);
             remaining /= 10;
         }
         return palindrome;
@@ -44,7 +45,7 @@ class Solution {
         long original = value;
         long reversed = 0;
         while (value > 0) {
-            reversed = reversed * base + value % base;
+            reversed = reversed * base + (value % base);
             value /= base;
         }
         return reversed == original;

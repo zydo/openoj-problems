@@ -24,8 +24,7 @@ Output: 41
 
 - `date.length == 10`
 - `date[4] == date[7] == '-'`, and all other `date[i]`'s are digits
-- `date` represents a calendar date between Jan 1st, 1900 and Dec 31st,
-  2019.
+- `date` represents a calendar date between Jan 1st, 1900 and Dec 31st, 2019.
 
 ## Hints
 

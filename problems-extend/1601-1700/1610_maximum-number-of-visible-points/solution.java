@@ -5,11 +5,13 @@ import java.util.List;
 class Solution {
 
     public int visiblePoints(int[][] points, int angle, int[] location) {
-        int posx = location[0], posy = location[1];
+        int posx = location[0],
+            posy = location[1];
         int same = 0;
         List<Double> degrees = new ArrayList<>();
         for (int[] p : points) {
-            int x = p[0], y = p[1];
+            int x = p[0],
+                y = p[1];
             if (x == posx && y == posy) {
                 same++;
             } else {

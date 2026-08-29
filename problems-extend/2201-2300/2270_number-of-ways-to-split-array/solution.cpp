@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int waysToSplitArray(vector<int>& nums) {
+    int waysToSplitArray(vector<int> &nums) {
         // A rolling prefix sum plus the precomputed total decides each split
         // in O(1); the right half is simply total - prefix. Prefix sums reach
         // +/-1e10 here, so they stay long long.

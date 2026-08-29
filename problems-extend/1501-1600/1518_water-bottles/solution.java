@@ -9,7 +9,7 @@ class Solution {
         int empty = numBottles;
         while (empty >= numExchange) {
             int newFull = empty / numExchange;
-            empty = empty % numExchange + newFull;
+            empty = (empty % numExchange) + newFull;
             drunk += newFull;
         }
         return drunk;

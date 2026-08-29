@@ -1,6 +1,5 @@
 import java.util.PriorityQueue;
 
-
 class Solution {
 
     public int maximumProduct(int[] nums, int k) {
@@ -13,7 +12,7 @@ class Solution {
         }
         long product = 1;
         for (long value : heap) {
-            product = product * value % 1_000_000_007;
+            product = (product * value) % 1_000_000_007;
         }
         return (int) product;
     }

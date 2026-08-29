@@ -31,9 +31,7 @@ class PhoneDirectory {
         return -1;
     }
 
-    bool check(int number) {
-        return used.count(number) == 0;
-    }
+    bool check(int number) { return used.count(number) == 0; }
 
     void release(int number) {
         // erase() answers how many members were removed, which makes

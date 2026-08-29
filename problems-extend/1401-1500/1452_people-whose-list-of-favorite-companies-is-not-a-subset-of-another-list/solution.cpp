@@ -3,10 +3,10 @@
 
 class Solution {
   public:
-    std::vector<int> peopleIndexes(std::vector<std::vector<std::string>>& favoriteCompanies) {
+    std::vector<int> peopleIndexes(std::vector<std::vector<std::string>> &favoriteCompanies) {
         std::vector<std::unordered_set<std::string>> sets;
         sets.reserve(favoriteCompanies.size());
-        for (const std::vector<std::string>& companies : favoriteCompanies) {
+        for (const std::vector<std::string> &companies : favoriteCompanies) {
             sets.emplace_back(companies.begin(), companies.end());
         }
         std::vector<int> result;
@@ -17,7 +17,7 @@ class Solution {
                     continue;
                 }
                 bool inside = true;
-                for (const std::string& company : favoriteCompanies[i]) {
+                for (const std::string &company : favoriteCompanies[i]) {
                     if (sets[j].find(company) == sets[j].end()) {
                         inside = false;
                         break;

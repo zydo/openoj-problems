@@ -18,6 +18,6 @@ class Solution {
                 current += width;
             }
         }
-        return new int[] {lines, current};
+        return new int[] { lines, current };
     }
 }

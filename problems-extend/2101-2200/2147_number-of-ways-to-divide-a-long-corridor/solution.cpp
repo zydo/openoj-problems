@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int numberOfWays(string corridor) {
         // Sections pair the seats up in order, so exactly one divider is
         // forced between each finished pair and the next seat — placeable
@@ -19,6 +19,6 @@ public:
                 plants++;
             }
         }
-        return (seats > 0 && seats % 2 == 0) ? (int) ways : 0;
+        return (seats > 0 && seats % 2 == 0) ? (int)ways : 0;
     }
 };

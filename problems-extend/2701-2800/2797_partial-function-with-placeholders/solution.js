@@ -6,11 +6,7 @@ var partial = function (fn, args) {
     return function (...restArgs) {
         const modified = [...args];
         let cursor = 0;
-        for (
-            let i = 0;
-            i < modified.length && cursor < restArgs.length;
-            i++
-        ) {
+        for (let i = 0; i < modified.length && cursor < restArgs.length; i++) {
             if (modified[i] === "_") {
                 modified[i] = restArgs[cursor++];
             }

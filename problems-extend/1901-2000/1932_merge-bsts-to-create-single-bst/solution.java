@@ -62,8 +62,7 @@ class Solution {
             for (TreeNode tree : pending) {
                 TreeNode host = byVal.get(tree.val);
                 // A host must be a true leaf other than the final root.
-                if (host != null && host != root
-                        && host.left == null && host.right == null) {
+                if (host != null && host != root && host.left == null && host.right == null) {
                     host.left = tree.left;
                     host.right = tree.right;
                     Deque<TreeNode> sub = new ArrayDeque<>();

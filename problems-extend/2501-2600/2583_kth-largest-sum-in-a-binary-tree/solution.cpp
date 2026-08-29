@@ -16,13 +16,16 @@ class Solution {
             long long total = 0;
             for (TreeNode *node : level) {
                 total += node->val;
-                if (node->left != nullptr) next.push_back(node->left);
-                if (node->right != nullptr) next.push_back(node->right);
+                if (node->left != nullptr)
+                    next.push_back(node->left);
+                if (node->right != nullptr)
+                    next.push_back(node->right);
             }
             sums.push_back(total);
             level = std::move(next);
         }
-        if ((int)sums.size() < k) return -1LL;
+        if ((int)sums.size() < k)
+            return -1LL;
         std::sort(sums.begin(), sums.end(), std::greater<long long>());
         return sums[k - 1];
     }

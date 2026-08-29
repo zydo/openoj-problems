@@ -11,11 +11,7 @@ function removeSubstring(s: string, k: number): string {
         // A ')' run sitting on a '(' run is a live junction: cancel
         // min(floor(open / k), floor(close / k)) whole blocks of k from
         // both sides.
-        while (
-            stack.length > 1 &&
-            stack[stack.length - 1][0] === ")" &&
-            stack[stack.length - 2][0] === "("
-        ) {
+        while (stack.length > 1 && stack[stack.length - 1][0] === ")" && stack[stack.length - 2][0] === "(") {
             const blocks = Math.min(
                 Math.floor(stack[stack.length - 2][1] / k),
                 Math.floor(stack[stack.length - 1][1] / k),

@@ -11,7 +11,7 @@ class Solution {
                     answer = 1;
                 } else {
                     // residue * factor < (1e9+7) * 1e5 < 2^63 — exact in long.
-                    answer = answer * (i - prev) % MOD;
+                    answer = (answer * (i - prev)) % MOD;
                 }
                 prev = i;
             }

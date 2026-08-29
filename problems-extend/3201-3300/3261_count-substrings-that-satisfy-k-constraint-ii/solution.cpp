@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<long long> countKConstraintSubstrings(string s, int k, vector<vector<int>>& queries) {
+  public:
+    vector<long long> countKConstraintSubstrings(string s, int k, vector<vector<int>> &queries) {
         int n = s.size();
         vector<int> bounds(n);
         int left = 0;
@@ -36,7 +36,7 @@ public:
         }
         vector<long long> answer;
         answer.reserve(queries.size());
-        for (const auto& query : queries) {
+        for (const auto &query : queries) {
             int l = query[0];
             int r = query[1];
             int j = nxt[l];

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int shortestWordDistance(vector<string>& wordsDict, string word1, string word2) {
+    int shortestWordDistance(vector<string> &wordsDict, string word1, string word2) {
         // One pass remembering the most recent position of each word. Here
         // word1 and word2 may be the same word, and that case is the twist.
         bool same = word1 == word2;

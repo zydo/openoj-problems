@@ -32,9 +32,7 @@ class FibCase {
         for (let step = 0; step < this.callCount; step++) {
             const result = iterator.next();
             if (result.done) {
-                throw new Error(
-                    "generator stopped after " + step +
-                    " yields; expected " + this.callCount);
+                throw new Error("generator stopped after " + step + " yields; expected " + this.callCount);
             }
             this.yields.push(result.value);
         }

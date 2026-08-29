@@ -4,11 +4,11 @@
 
 Table: `students`
 
-| Column Name   | Type    |
-| ------------- | ------- |
-| student_id    | int     |
-| student_name  | varchar |
-| major         | varchar |
+| Column Name  | Type    |
+| ------------ | ------- |
+| student_id   | int     |
+| student_name | varchar |
+| major        | varchar |
 
 `student_id` is the unique identifier for this table. Each row contains
 information about a student and their academic major.

@@ -10,7 +10,7 @@ class BrowserHistory:
         self.cur = 0
 
     def visit(self, url: str) -> None:
-        del self.history[self.cur + 1:]
+        del self.history[self.cur + 1 :]
         self.history.append(url)
         self.cur += 1
 

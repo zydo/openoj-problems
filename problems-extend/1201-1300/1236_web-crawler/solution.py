@@ -6,7 +6,7 @@ class Solution:
     def crawl(self, htmlParser: HtmlParser, startUrl: str) -> None:
         def hostname(url: str) -> str:
             # Everything between "http://" and the next "/".
-            rest = url[len("http://"):]
+            rest = url[len("http://") :]
             return rest.split("/", 1)[0]
 
         home = hostname(startUrl)

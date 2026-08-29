@@ -55,4 +55,3 @@ index i?
 
 Can you calculate it for all positions i? How can you use previously
 calculated answers to calculate the answer for the next position?
-

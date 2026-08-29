@@ -1,11 +1,11 @@
 class Solution {
-public:
+  public:
     // Fix the source value v the operation converts into k (x = k - v).
     // A window then nets +1 for each v it captures and -1 for each k it
     // destroys, so the best window for v is the maximum-subarray run of
     // that score — reset to 0 when it dips negative, since choosing
     // x = 0 keeps the untouched baseline.
-    int maxFrequency(vector<int>& nums, int k) {
+    int maxFrequency(vector<int> &nums, int k) {
         int base = 0;
         for (int value : nums) {
             if (value == k) {

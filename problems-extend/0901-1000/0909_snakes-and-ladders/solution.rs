@@ -17,7 +17,11 @@ impl Solution {
         for row_from_bottom in 0..n {
             let row = &board[n - 1 - row_from_bottom];
             for column in 0..n {
-                cells[square] = if row_from_bottom % 2 == 0 { row[column] } else { row[n - 1 - column] };
+                cells[square] = if row_from_bottom % 2 == 0 {
+                    row[column]
+                } else {
+                    row[n - 1 - column]
+                };
                 square += 1;
             }
         }

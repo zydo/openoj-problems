@@ -68,7 +68,9 @@ impl Solution {
                 }
                 ok
             } else {
-                let ch = if pos < rows[row].len() { rows[row][pos] as usize - 'A' as usize } else {
+                let ch = if pos < rows[row].len() {
+                    rows[row][pos] as usize - 'A' as usize
+                } else {
                     return dfs(rows, target, leads, value, used, pos, row + 1, carry);
                 };
                 if value[ch] != -1 {

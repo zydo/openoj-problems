@@ -1,11 +1,7 @@
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn most_popular_creator(
-        creators: Vec<String>,
-        ids: Vec<String>,
-        views: Vec<i32>,
-    ) -> Vec<Vec<String>> {
+    pub fn most_popular_creator(creators: Vec<String>, ids: Vec<String>, views: Vec<i32>) -> Vec<Vec<String>> {
         // One pass keeps three running values per creator: total views,
         // best single-video view count, and the id achieving it
         // (lexicographically smallest on a tie). Totals reach
@@ -16,8 +12,10 @@ impl Solution {
         for (i, creator) in creators.iter().enumerate() {
             *totals.entry(creator.clone()).or_insert(0) += i64::from(views[i]);
             let current = best_view.get(creator).copied();
-            if current.is_none() || views[i] > current.unwrap()
-                || (views[i] == current.unwrap() && ids[i] < best_id[creator]) {
+            if current.is_none()
+                || views[i] > current.unwrap()
+                || (views[i] == current.unwrap() && ids[i] < best_id[creator])
+            {
                 best_view.insert(creator.clone(), views[i]);
                 best_id.insert(creator.clone(), ids[i].clone());
             }

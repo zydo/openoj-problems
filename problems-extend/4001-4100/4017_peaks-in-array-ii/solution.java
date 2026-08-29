@@ -64,7 +64,8 @@ class Solution {
                 long w = fen.rangeSum(a, b);
                 resultList.add((long) r * (b - l) - w + (long) a * (l - qv));
             } else {
-                int idx = q[1], val = q[2];
+                int idx = q[1],
+                    val = q[2];
                 for (int j = Math.max(0, idx - 1); j <= Math.min(n - 1, idx + 1); j++) {
                     if (isPeak(nums, j)) {
                         removePeak(peaks, fen, j);
@@ -108,7 +109,7 @@ class Solution {
         long prevP = prevBoxed == null ? 0 : prevBoxed,
             nextP = nextBoxed == null ? -1 : nextBoxed;
         peaks.remove(x);
-        fen.add(x, -(long) x * (x - prevP));
+        fen.add(x, -((long) x) * (x - prevP));
         if (nextP >= 0) {
             fen.add((int) nextP, nextP * (nextP - prevP) - nextP * (nextP - x));
         }

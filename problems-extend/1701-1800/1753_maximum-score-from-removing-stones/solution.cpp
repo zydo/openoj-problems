@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int maximumScore(int a, int b, int c) {
         // With x <= y <= z the answer is min(x + y, total / 2): the
         // smaller piles limit how often the big one can be paired, and

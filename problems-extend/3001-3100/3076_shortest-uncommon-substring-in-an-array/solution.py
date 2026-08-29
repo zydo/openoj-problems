@@ -14,9 +14,7 @@ class Solution:
             others = "\0".join(x for j, x in enumerate(arr) if j != i)
             best = ""
             for length in range(1, len(s) + 1):
-                candidates = sorted(
-                    {s[a:a + length] for a in range(len(s) - length + 1)}
-                )
+                candidates = sorted({s[a : a + length] for a in range(len(s) - length + 1)})
                 survivors = [c for c in candidates if c not in others]
                 if survivors:
                     best = survivors[0]

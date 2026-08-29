@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minimumMoves(vector<vector<int>>& grid) {
+  public:
+    int minimumMoves(vector<vector<int>> &grid) {
         // State (r, c, horizontal): (r, c) is the upper-left occupied cell;
         // horizontal snakes occupy (r,c) and (r,c+1), vertical (r,c),(r+1,c).
         int n = (int)grid.size();
@@ -11,10 +11,11 @@ public:
         while (!queue_.empty()) {
             auto [r, c, horizontal, moves] = queue_.front();
             queue_.pop();
-            if (r == n - 1 && c == n - 2 && horizontal == 1) return moves;
+            if (r == n - 1 && c == n - 2 && horizontal == 1)
+                return moves;
             if (horizontal == 1) {
                 // Slide right: the new head cell must be empty.
-                if (c + 2 < n && grid[r][c + 2] == 0 && visited.insert((r) * n + (c + 1) * 2 + 1).second) {
+                if (c + 2 < n && grid[r][c + 2] == 0 && visited.insert((r)*n + (c + 1) * 2 + 1).second) {
                     queue_.push({r, c + 1, 1, moves + 1});
                 }
                 // Slide down: both cells of the new row must be empty.

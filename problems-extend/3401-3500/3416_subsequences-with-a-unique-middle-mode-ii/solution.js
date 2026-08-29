@@ -26,8 +26,12 @@ var subsequencesWithMiddleMode = function (nums) {
     // numbers (bounded by n^3 <= 5e15 < 2^53) so every division by 2
     // below happens on a genuine integer.
     const left = new Map();
-    let S1 = 0, S2 = 0, S3 = 0; // sum lw, sum lw^2, sum lw^3
-    let T1 = 0, T2 = 0, T3 = 0; // sum lw*cnt, lw*cnt^2, lw^2*cnt
+    let S1 = 0,
+        S2 = 0,
+        S3 = 0; // sum lw, sum lw^2, sum lw^3
+    let T1 = 0,
+        T2 = 0,
+        T3 = 0; // sum lw*cnt, lw*cnt^2, lw^2*cnt
     let SC2 = 0;
     for (const c of total.values()) {
         SC2 += c * c;
@@ -61,7 +65,8 @@ var subsequencesWithMiddleMode = function (nums) {
         // Count by f, the frequency of v inside the subsequence. With
         // f >= 3 no other value can catch up, so only f = 2 needs the
         // inclusion-exclusion on the three non-v fills.
-        const c2l = c2(l), c2r = c2(r);
+        const c2l = c2(l),
+            c2r = c2(r);
         let val = mul(c2l, c2r); // f = 5
         val += (mul(l, c2r) * NL + mul(c2l, r) * NR) % MOD; // f = 4
         val += mul(c2r, c2(NL)) + mul(mul(l, r), NL * NR) + mul(c2l, c2(NR)); // f = 3

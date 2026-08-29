@@ -9,7 +9,8 @@ class Solution {
         // regular -> express costs expressCost every time. Totals reach
         // ~2e10, so every cost is carried in long, never in int.
         final long INF = 1L << 60;
-        long reg = 0, exp = INF;
+        long reg = 0,
+            exp = INF;
         long[] costs = new long[regular.length];
         for (int i = 0; i < regular.length; i++) {
             long newReg = Math.min(reg, exp) + regular[i];

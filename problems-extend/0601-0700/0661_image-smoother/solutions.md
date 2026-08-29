@@ -12,7 +12,7 @@ in `count`. A corner cell collects 4 values, an edge cell 6, an interior cell
 all 9, and the division `total / count` needs no case analysis.
 
 Writing each average into a fresh matrix is what keeps the filter honest: every
-window then reads the *original* image, never a value that was itself already
+window then reads the _original_ image, never a value that was itself already
 smoothed. Reusing the input in place would mix generations of output and change
 the result, and the statement asks for the smoother applied once to each cell.
 

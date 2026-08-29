@@ -8,7 +8,10 @@ impl Solution {
         let half = s.len() / 2;
         let mut balance = 0i32;
         for (i, byte) in s.bytes().enumerate() {
-            if matches!(byte, b'a' | b'e' | b'i' | b'o' | b'u' | b'A' | b'E' | b'I' | b'O' | b'U') {
+            if matches!(
+                byte,
+                b'a' | b'e' | b'i' | b'o' | b'u' | b'A' | b'E' | b'I' | b'O' | b'U'
+            ) {
                 balance += if i < half { 1 } else { -1 };
             }
         }

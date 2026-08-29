@@ -21,7 +21,6 @@ class Solution:
                     corners.remove(corner)
                 else:
                     corners.add(corner)
-        return (
-            corners == {(min_x, min_y), (min_x, max_b), (max_a, min_y), (max_a, max_b)}
-            and area == (max_a - min_x) * (max_b - min_y)
-        )
+        return corners == {(min_x, min_y), (min_x, max_b), (max_a, min_y), (max_a, max_b)} and area == (
+            max_a - min_x
+        ) * (max_b - min_y)

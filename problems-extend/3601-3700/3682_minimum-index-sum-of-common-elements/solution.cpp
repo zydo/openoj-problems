@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimumSum(vector<int>& nums1, vector<int>& nums2) {
+    int minimumSum(vector<int> &nums1, vector<int> &nums2) {
         // For a shared value the two indices are independent, so its best
         // good pair is its first occurrence in each array: minimizing i and
         // j separately minimizes i + j. Record every value's first index in

@@ -17,8 +17,10 @@ class Solution {
   private:
     // "type" is column 0, "color" column 1, "name" column 2.
     static int columnIndex(const string &ruleKey) {
-        if (ruleKey == "type") return 0;
-        if (ruleKey == "color") return 1;
+        if (ruleKey == "type")
+            return 0;
+        if (ruleKey == "color")
+            return 1;
         return 2;
     }
 };

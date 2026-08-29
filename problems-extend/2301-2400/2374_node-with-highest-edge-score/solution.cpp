@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    int edgeScore(vector<int>& edges) {
+    int edgeScore(vector<int> &edges) {
         // Node edges[i] gains i to its score, so one accumulation pass fills
         // every score; a second pass picks the highest with the smallest
         // index (strict > keeps the earlier node on ties). Scores reach

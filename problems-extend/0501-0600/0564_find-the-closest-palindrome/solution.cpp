@@ -39,8 +39,7 @@ class Solution {
                 continue; // n itself never counts
             }
             long long distance = candidateValue > value ? candidateValue - value : value - candidateValue;
-            if (best.empty() || distance < bestDistance
-                || (distance == bestDistance && candidateValue < bestValue)) {
+            if (best.empty() || distance < bestDistance || (distance == bestDistance && candidateValue < bestValue)) {
                 best = candidate;
                 bestValue = candidateValue;
                 bestDistance = distance;

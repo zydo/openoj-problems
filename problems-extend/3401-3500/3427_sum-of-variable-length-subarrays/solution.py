@@ -11,6 +11,4 @@ class Solution:
         prefix = [0]
         for value in nums:
             prefix.append(prefix[-1] + value)
-        return sum(
-            prefix[i + 1] - prefix[max(0, i - nums[i])] for i in range(len(nums))
-        )
+        return sum(prefix[i + 1] - prefix[max(0, i - nums[i])] for i in range(len(nums)))

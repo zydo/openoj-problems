@@ -34,10 +34,7 @@ var minLargest = function (nums1, nums2) {
             cur0[j] = Math.min(prv0[j] + stepX, prv1[j] + (y !== x ? 1 : 2));
             let best = cur0[j - 1] + (x !== y ? 1 : 2);
             if (j >= 2) {
-                best = Math.min(
-                    best,
-                    cur1[j - 1] + (nums2[j - 2] !== y ? 1 : 2),
-                );
+                best = Math.min(best, cur1[j - 1] + (nums2[j - 2] !== y ? 1 : 2));
             }
             cur1[j] = best;
         }

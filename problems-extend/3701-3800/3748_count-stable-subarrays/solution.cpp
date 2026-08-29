@@ -1,7 +1,6 @@
 class Solution {
   public:
-    vector<long long> countStableSubarrays(vector<int>& nums,
-                                           vector<vector<int>>& queries) {
+    vector<long long> countStableSubarrays(vector<int> &nums, vector<vector<int>> &queries) {
         int n = nums.size();
         // left[i] is the smallest start s such that nums[s..i] reads
         // non-decreasing; it only ever moves right, which the per-query
@@ -16,15 +15,13 @@ class Solution {
         }
         vector<long long> result;
         result.reserve(queries.size());
-        for (const auto& query : queries) {
+        for (const auto &query : queries) {
             int l = query[0], r = query[1];
             // First end whose run reaches back to l or earlier. Ends before
             // it sit past a drop at or after l and count their bare window
             // length; ends from there on count down to left[e].
-            int p = lower_bound(left.begin() + l, left.begin() + r + 1, l) -
-                    left.begin();
-            result.push_back(prefBase[r + 1] - prefBase[l] + prefLeft[p] -
-                             prefLeft[l] - (long long)l * (p - l));
+            int p = lower_bound(left.begin() + l, left.begin() + r + 1, l) - left.begin();
+            result.push_back(prefBase[r + 1] - prefBase[l] + prefLeft[p] - prefLeft[l] - (long long)l * (p - l));
         }
         return result;
     }

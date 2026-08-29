@@ -12,8 +12,7 @@ class Solution {
     }
 
   private:
-    void walk(const string &word, int pos, const string &prefix, int count,
-              vector<string> &results) {
+    void walk(const string &word, int pos, const string &prefix, int count, vector<string> &results) {
         if (pos == static_cast<int>(word.size())) {
             results.push_back(count > 0 ? prefix + to_string(count) : prefix);
             return;

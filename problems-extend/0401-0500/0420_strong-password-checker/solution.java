@@ -5,7 +5,9 @@ class Solution {
 
     public int strongPasswordChecker(String password) {
         int n = password.length();
-        boolean hasLower = false, hasUpper = false, hasDigit = false;
+        boolean hasLower = false,
+            hasUpper = false,
+            hasDigit = false;
         for (int i = 0; i < n; i++) {
             char c = password.charAt(i);
             hasLower |= c >= 'a' && c <= 'z';
@@ -59,6 +61,6 @@ class Solution {
             }
         }
         replace = Math.max(replace - delete / 3, 0);
-        return (n - 20) + Math.max(missing, replace);
+        return n - 20 + Math.max(missing, replace);
     }
 }

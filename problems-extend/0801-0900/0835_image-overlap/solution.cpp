@@ -17,8 +17,10 @@ class Solution {
         vector<pair<int, int>> ones1, ones2;
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
-                if (img1[i][j] == 1) ones1.emplace_back(i, j);
-                if (img2[i][j] == 1) ones2.emplace_back(i, j);
+                if (img1[i][j] == 1)
+                    ones1.emplace_back(i, j);
+                if (img2[i][j] == 1)
+                    ones2.emplace_back(i, j);
             }
         }
         unordered_map<int, int> counts;

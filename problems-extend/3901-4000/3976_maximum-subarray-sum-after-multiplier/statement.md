@@ -9,10 +9,10 @@ following operations:
 
 - Multiply each number in the chosen subarray by `k`.
 - Divide each number in the chosen subarray by `k`.
-  - When dividing a positive number by `k`, use the floor value of the
-    division result.
-  - When dividing a negative number by `k`, use the ceiling value of the
-    division result.
+    - When dividing a positive number by `k`, use the floor value of the
+      division result.
+    - When dividing a negative number by `k`, use the ceiling value of the
+      division result.
 
 Return the maximum possible sum of a non-empty subarray in the resulting
 array.

@@ -5,7 +5,7 @@ class Solution {
         if (k > total) {
             return "";
         }
-        char[] letters = {'a', 'b', 'c'};
+        char[] letters = { 'a', 'b', 'c' };
         StringBuilder result = new StringBuilder();
         int block = total / 3;
         int rank = k - 1;

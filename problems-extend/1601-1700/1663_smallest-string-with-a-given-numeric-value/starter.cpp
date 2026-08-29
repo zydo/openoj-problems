@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string getSmallestString(int n, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    string getSmallestString(int n, int k) { throw logic_error("TODO"); }
 };

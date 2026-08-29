@@ -13,7 +13,7 @@ func maxXor(nums []int, k int) int {
 		child[j] = -1
 	}
 	cnt := make([]int, size)
-	nodes := 1 // next free node id; node 0 is the root
+	nodes := 1             // next free node id; node 0 is the root
 	maxQ := make([]int, n) // indices of max candidates, values decreasing
 	minQ := make([]int, n) // indices of min candidates, values increasing
 	maxHead, maxTail := 0, 0

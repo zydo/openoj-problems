@@ -21,7 +21,10 @@ class Solution {
         boolean tight = true;
         for (int i = count - 1; i >= 0; i--) {
             if (digits[i] > 1) total += (digits[i] - 1) * pow9;
-            if (digits[i] == 0) { tight = false; break; }
+            if (digits[i] == 0) {
+                tight = false;
+                break;
+            }
             pow9 /= 9;
         }
         if (tight) total += 1;

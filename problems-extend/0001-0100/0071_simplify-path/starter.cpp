@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string simplifyPath(string path) {
-        throw logic_error("TODO");
-    }
+  public:
+    string simplifyPath(string path) { throw logic_error("TODO"); }
 };

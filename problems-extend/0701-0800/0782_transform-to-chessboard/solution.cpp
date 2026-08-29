@@ -54,7 +54,5 @@ class Solution {
     }
 
   private:
-    static bool fits(int ones, int half, int ceilHalf) {
-        return ones == half || ones == ceilHalf;
-    }
+    static bool fits(int ones, int half, int ceilHalf) { return ones == half || ones == ceilHalf; }
 };

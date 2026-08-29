@@ -15,9 +15,7 @@ class Solution {
             if (plus != -1) {
                 local = local.substring(0, plus);
             }
-            String key = local.replace(".", "").toLowerCase()
-                    + "@"
-                    + email.substring(at + 1).toLowerCase();
+            String key = local.replace(".", "").toLowerCase() + "@" + email.substring(at + 1).toLowerCase();
             seen.add(key);
         }
         return seen.size();

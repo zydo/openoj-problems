@@ -7,10 +7,13 @@ class Solution {
     public int[] countPoints(int[][] points, int[][] queries) {
         int[] answer = new int[queries.length];
         for (int j = 0; j < queries.length; j++) {
-            int xj = queries[j][0], yj = queries[j][1], rr = queries[j][2] * queries[j][2];
+            int xj = queries[j][0],
+                yj = queries[j][1],
+                rr = queries[j][2] * queries[j][2];
             int count = 0;
             for (int[] p : points) {
-                int dx = p[0] - xj, dy = p[1] - yj;
+                int dx = p[0] - xj,
+                    dy = p[1] - yj;
                 if (dx * dx + dy * dy <= rr) count++;
             }
             answer[j] = count;

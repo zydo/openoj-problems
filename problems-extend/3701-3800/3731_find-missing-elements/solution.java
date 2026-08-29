@@ -4,7 +4,8 @@ class Solution {
         // Mark presence per value, then sweep the original range [min, max]
         // in increasing order: every unmarked value is missing, and sweeping
         // in order yields the sorted result directly.
-        int lo = Integer.MAX_VALUE, hi = Integer.MIN_VALUE;
+        int lo = Integer.MAX_VALUE,
+            hi = Integer.MIN_VALUE;
         for (int value : nums) {
             lo = Math.min(lo, value);
             hi = Math.max(hi, value);

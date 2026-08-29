@@ -29,7 +29,8 @@ class Solution {
             }
             for (int letter = 0; letter < 26; ++letter) {
                 int branch = 1 << letter;
-                if (branch == bit) continue;
+                if (branch == bit)
+                    continue;
                 int mask = unspentMask;
                 int count = unspentCount;
                 if (!(mask & branch)) {
@@ -56,7 +57,7 @@ class Solution {
         for (const auto &state : spent) {
             best = max(best, state.second);
         }
-        return best + 1;  // the final open partition always counts
+        return best + 1; // the final open partition always counts
     }
 
   private:

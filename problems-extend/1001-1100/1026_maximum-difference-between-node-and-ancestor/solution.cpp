@@ -16,8 +16,10 @@ class Solution {
             ans = max({ans, abs(node->val - pathMin), abs(node->val - pathMax)});
             int newMin = min(pathMin, node->val);
             int newMax = max(pathMax, node->val);
-            if (node->left != nullptr) pending.push_back({node->left, newMin, newMax});
-            if (node->right != nullptr) pending.push_back({node->right, newMin, newMax});
+            if (node->left != nullptr)
+                pending.push_back({node->left, newMin, newMax});
+            if (node->right != nullptr)
+                pending.push_back({node->right, newMin, newMax});
         }
         return ans;
     }

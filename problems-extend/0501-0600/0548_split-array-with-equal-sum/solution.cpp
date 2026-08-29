@@ -18,8 +18,7 @@ class Solution {
                 if (prefix[i] == prefix[j] - prefix[i + 1])
                     seen.insert(prefix[i]);
             for (int k = j + 2; k < n - 1; ++k)
-                if (prefix[k] - prefix[j + 1] == prefix[n] - prefix[k + 1] &&
-                    seen.count(prefix[k] - prefix[j + 1]))
+                if (prefix[k] - prefix[j + 1] == prefix[n] - prefix[k + 1] && seen.count(prefix[k] - prefix[j + 1]))
                     return true;
         }
         return false;

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int countElements(vector<int>& nums) {
+  public:
+    int countElements(vector<int> &nums) {
         // An element qualifies exactly when it sits strictly between the
         // array's minimum and maximum: a strictly smaller witness exists
         // iff x > min, a strictly larger one iff x < max.
@@ -12,7 +12,8 @@ public:
         }
         int count = 0;
         for (int x : nums) {
-            if (x > lo && x < hi) count++;
+            if (x > lo && x < hi)
+                count++;
         }
         return count;
     }

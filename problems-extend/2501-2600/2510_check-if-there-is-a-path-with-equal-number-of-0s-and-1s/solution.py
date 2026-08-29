@@ -18,8 +18,7 @@ class Solution:
             for j in range(n):
                 if i == 0 and j == 0:
                     continue
-                reachable = (cols[j] if i > 0 else 0) | (
-                    cols[j - 1] if j > 0 else 0)
+                reachable = (cols[j] if i > 0 else 0) | (cols[j - 1] if j > 0 else 0)
                 if grid[i][j] == 1:
                     cols[j] = reachable << 1
                 else:

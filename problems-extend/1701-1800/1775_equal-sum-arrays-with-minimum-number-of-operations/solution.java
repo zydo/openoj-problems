@@ -6,7 +6,8 @@ class Solution {
         // operation's best gain (v-1 for elements of the larger-sum array,
         // 6-v for the smaller) and spend the largest gains first.
         if (nums1.length > 6 * nums2.length || nums2.length > 6 * nums1.length) return -1;
-        int sum1 = 0, sum2 = 0;
+        int sum1 = 0,
+            sum2 = 0;
         for (int v : nums1) sum1 += v;
         for (int v : nums2) sum2 += v;
         if (sum1 == sum2) return 0;

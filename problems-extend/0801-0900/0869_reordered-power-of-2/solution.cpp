@@ -1,7 +1,7 @@
 #include <array>
 
 class Solution {
-public:
+  public:
     bool reorderedPowerOf2(int n) {
         // Reordering only permutes digits, so the answer is an inventory
         // match: count how many of each digit 0..9 n holds, then walk the

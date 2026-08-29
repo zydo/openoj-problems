@@ -30,8 +30,10 @@ function canMakePalindromeQueries(s: string, queries: number[][]): boolean[] {
     const answer: boolean[] = new Array(queries.length);
     for (let index = 0; index < queries.length; ++index) {
         const [a, b, c, d] = queries[index];
-        const m1 = n - 1 - b, m2 = n - 1 - a; // mirror of [a, b], right half
-        const f1 = n - 1 - d, f2 = n - 1 - c; // mirror of [c, d], left half
+        const m1 = n - 1 - b,
+            m2 = n - 1 - a; // mirror of [a, b], right half
+        const f1 = n - 1 - d,
+            f2 = n - 1 - c; // mirror of [c, d], left half
         // Pairs covered on neither side must already match.
         let bad = 0;
         for (const [lo, hi] of pieces(0, a - 1, f1, f2).concat(pieces(b + 1, half - 1, f1, f2))) {

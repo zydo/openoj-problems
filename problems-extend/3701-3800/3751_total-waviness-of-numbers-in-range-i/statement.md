@@ -8,9 +8,9 @@ You are given two integers `num1` and `num2` that describe the inclusive range
 The **waviness** of a single number counts its peaks and valleys among its
 decimal digits:
 
-- An interior digit (one that has a digit on both sides) is a *peak* if it is
+- An interior digit (one that has a digit on both sides) is a _peak_ if it is
   strictly greater than both of its immediate neighbors.
-- It is a *valley* if it is strictly less than both of its immediate neighbors.
+- It is a _valley_ if it is strictly less than both of its immediate neighbors.
 - A comparison against an equal neighbor never makes a digit a peak or a
   valley, and the first and last digits can never be either.
 

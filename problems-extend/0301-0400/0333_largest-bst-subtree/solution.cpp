@@ -67,8 +67,7 @@ class Solution {
         Report left;
         Report right;
 
-        explicit Frame(TreeNode *node)
-            : node(node), state(0), left(EMPTY), right(EMPTY) {}
+        explicit Frame(TreeNode *node) : node(node), state(0), left(EMPTY), right(EMPTY) {}
     };
 
     // An absent child is an empty BST: size 0, and never a violation at

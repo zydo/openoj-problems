@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long zeroFilledSubarray(vector<int>& nums) {
+    long long zeroFilledSubarray(vector<int> &nums) {
         // Every zero-filled subarray ends at exactly one index, and the ones
         // ending at i are exactly the run of consecutive zeros through i —
         // add the current run length at every zero. Totals reach ~5e9, so

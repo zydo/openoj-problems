@@ -9,7 +9,8 @@ var findDerangement = function (n) {
     // ways), so D(n) = (n - 1) * (D(n - 1) + D(n - 2)). Both running
     // values stay under the modulus, but their sum times (i - 1) reaches
     // ~2e15, which doubles hold exactly below 2^53.
-    let prev = 1, cur = 0; // D(0), D(1)
+    let prev = 1,
+        cur = 0; // D(0), D(1)
     for (let i = 2; i <= n; ++i) {
         const next = ((i - 1) * (cur + prev)) % MOD;
         prev = cur;

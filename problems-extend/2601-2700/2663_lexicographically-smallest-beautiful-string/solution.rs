@@ -18,8 +18,7 @@ impl Solution {
             }
             let original = chars[i];
             for cand in original + 1..limit {
-                let safe =
-                    (i < 1 || chars[i - 1] != cand) && (i < 2 || chars[i - 2] != cand);
+                let safe = (i < 1 || chars[i - 1] != cand) && (i < 2 || chars[i - 2] != cand);
                 if safe {
                     chars[i] = cand;
                     pivot = i as i32;
@@ -34,8 +33,7 @@ impl Solution {
         // which repeats as soon as blocking distance passes ("abcabc...").
         for j in pivot as usize + 1..n {
             for cand in b'a'..limit {
-                let safe =
-                    (j < 1 || chars[j - 1] != cand) && (j < 2 || chars[j - 2] != cand);
+                let safe = (j < 1 || chars[j - 1] != cand) && (j < 2 || chars[j - 2] != cand);
                 if safe {
                     chars[j] = cand;
                     break;

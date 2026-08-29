@@ -9,11 +9,7 @@
 // value in order. The judged verdict is that collected array of strings —
 // the generator object itself never leaves the submission.
 
-type DateRangeFactory = (
-    start: string,
-    end: string,
-    step: number,
-) => Generator<string>;
+type DateRangeFactory = (start: string, end: string, step: number) => Generator<string>;
 
 class GenCase {
     readonly start: string;

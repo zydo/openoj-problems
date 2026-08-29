@@ -9,7 +9,7 @@ than the root produces exactly the two sub-sequences that land in the
 left and right subtrees. For a reordered array to build the identical
 tree, its own split at the same root must contain the same two value
 sets, and — this is the part that limits the count — each sub-sequence
-must keep its *own* original relative order, since permuting the
+must keep its _own_ original relative order, since permuting the
 relative order within one side changes that side's shape even though
 the root stays the same.
 

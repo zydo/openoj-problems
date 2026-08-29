@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     vector<string> wordFrequency(string content) {
         // One counter per distinct word; >> drops leading/trailing
         // separators and never yields an empty word.

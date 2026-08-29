@@ -23,8 +23,7 @@ class Solution {
                     int s = a + b + c;
                     // divisibility is checked per index, so repeated
                     // values contribute one hit per copy
-                    int hits = (s % a == 0 ? 1 : 0) + (s % b == 0 ? 1 : 0)
-                        + (s % c == 0 ? 1 : 0);
+                    int hits = (s % a == 0 ? 1 : 0) + (s % b == 0 ? 1 : 0) + (s % c == 0 ? 1 : 0);
                     if (hits != 1) {
                         continue;
                     }
@@ -32,10 +31,10 @@ class Solution {
                         long f = freq[a];
                         total += f * (f - 1) * (f - 2);
                     } else if (a == b || b == c) {
-                        int twice = (a == b) ? a : b;
-                        int once = (a == b) ? c : a;
+                        int twice = a == b ? a : b;
+                        int once = a == b ? c : a;
                         long f = freq[twice];
-                        total += f * (f - 1) / 2 * freq[once] * 6;
+                        total += ((f * (f - 1)) / 2) * freq[once] * 6;
                     } else {
                         total += (long) freq[a] * freq[b] * freq[c] * 6;
                     }

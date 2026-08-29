@@ -35,8 +35,7 @@ impl Solution {
         for &start in &nodes {
             let mut seen: HashSet<i32> = HashSet::new();
             // (node, sum, phase) — phase 0 enter, 1 exit
-            let mut st: Vec<(*const TreeNode, i32, i32)> =
-                vec![(start, unsafe { (*start).val }, 0)];
+            let mut st: Vec<(*const TreeNode, i32, i32)> = vec![(start, unsafe { (*start).val }, 0)];
             while let Some((node, s, phase)) = st.pop() {
                 if phase == 1 {
                     unsafe {

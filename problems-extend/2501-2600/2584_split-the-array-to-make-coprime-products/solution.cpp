@@ -13,14 +13,16 @@ class Solution {
         // blocks the straddled boundaries; the first open boundary in
         // [0, n - 2] wins.
         int top = 0;
-        for (int value : nums) top = std::max(top, value);
+        for (int value : nums)
+            top = std::max(top, value);
         std::vector<int> spf(top + 1);
-        for (int i = 0; i <= top; ++i) spf[i] = i;
+        for (int i = 0; i <= top; ++i)
+            spf[i] = i;
         for (long long d = 2; d * d <= top; ++d) {
             if (spf[d] == d) {
-                for (long long multiple = d * d; multiple <= top;
-                     multiple += d) {
-                    if (spf[multiple] == multiple) spf[multiple] = d;
+                for (long long multiple = d * d; multiple <= top; multiple += d) {
+                    if (spf[multiple] == multiple)
+                        spf[multiple] = d;
                 }
             }
         }
@@ -32,7 +34,8 @@ class Solution {
                 int prime = spf[value];
                 first.emplace(prime, index);
                 last[prime] = index;
-                while (value % prime == 0) value /= prime;
+                while (value % prime == 0)
+                    value /= prime;
             }
         }
         int n = (int)nums.size();
@@ -48,7 +51,8 @@ class Solution {
         int running = 0;
         for (int i = 0; i < n - 1; ++i) {
             running += blocked[i];
-            if (running == 0) return i;
+            if (running == 0)
+                return i;
         }
         return -1;
     }

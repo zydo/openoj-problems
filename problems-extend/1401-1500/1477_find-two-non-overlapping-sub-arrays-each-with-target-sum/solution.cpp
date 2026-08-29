@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int minSumOfLengths(std::vector<int>& arr, long long target) {
+    int minSumOfLengths(std::vector<int> &arr, long long target) {
         int n = (int)arr.size();
         const int INF = INT_MAX / 2;
         std::vector<int> best(n, INF);

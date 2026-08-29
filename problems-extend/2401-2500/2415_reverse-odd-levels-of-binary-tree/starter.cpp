@@ -1,6 +1,4 @@
 class Solution {
-public:
-    TreeNode* reverseOddLevels(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    TreeNode *reverseOddLevels(TreeNode *root) { throw logic_error("TODO"); }
 };

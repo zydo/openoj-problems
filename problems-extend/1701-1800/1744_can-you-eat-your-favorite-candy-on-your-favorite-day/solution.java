@@ -11,7 +11,9 @@ class Solution {
         for (int i = 0; i < n; ++i) pref[i + 1] = pref[i] + candiesCount[i];
         boolean[] answer = new boolean[queries.length];
         for (int i = 0; i < queries.length; ++i) {
-            int t = queries[i][0], day = queries[i][1], cap = queries[i][2];
+            int t = queries[i][0],
+                day = queries[i][1],
+                cap = queries[i][2];
             long earliest = pref[t] / cap;
             long latest = pref[t] + candiesCount[t] - 1;
             answer[i] = earliest <= day && day <= latest;

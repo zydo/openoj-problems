@@ -24,13 +24,22 @@ class Solution {
         // optimal split.
         int[] best = new int[k];
         int[] path = new int[Math.max(k - 1, 1)];
-        long[] bestSpread = {Long.MAX_VALUE};
+        long[] bestSpread = { Long.MAX_VALUE };
         dfs(divs, best, path, bestSpread, n, k, 0, 0, 1);
         return best;
     }
 
-    private void dfs(List<Integer> divs, int[] best, int[] path, long[] bestSpread,
-            int n, int slots, int depth, int start, long prod) {
+    private void dfs(
+        List<Integer> divs,
+        int[] best,
+        int[] path,
+        long[] bestSpread,
+        int n,
+        int slots,
+        int depth,
+        int start,
+        long prod
+    ) {
         if (slots == 1) {
             // The last factor is forced to carry the product up to n; it
             // completes a nondecreasing split exactly when it reaches the

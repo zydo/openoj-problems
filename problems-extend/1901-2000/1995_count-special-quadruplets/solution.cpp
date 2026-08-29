@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int countQuadruplets(vector<int>& nums) {
+    int countQuadruplets(vector<int> &nums) {
         // The condition rewrites to nums[a] + nums[b] == nums[d] - nums[c].
         // Sweep c left to right, and for each d > c count how many earlier
         // pairs (a, b) with b < c already sum to nums[d] - nums[c]; a map of

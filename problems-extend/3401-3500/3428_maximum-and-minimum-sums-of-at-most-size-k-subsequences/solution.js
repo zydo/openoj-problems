@@ -32,13 +32,13 @@ var minMaxSums = function (nums, k) {
         if (b < 0 || b > a) {
             return 0n;
         }
-        return fact[a] * invFact[b] % mod * invFact[a - b] % mod;
+        return (((fact[a] * invFact[b]) % mod) * invFact[a - b]) % mod;
     };
 
     const g = new Array(n);
     g[0] = 1n;
     for (let i = 1; i < n; i++) {
-        g[i] = ((2n * g[i - 1] - choose(i - 1, k - 1)) % mod + mod) % mod;
+        g[i] = (((2n * g[i - 1] - choose(i - 1, k - 1)) % mod) + mod) % mod;
     }
     let total = 0n;
     for (let i = 0; i < n; i++) {

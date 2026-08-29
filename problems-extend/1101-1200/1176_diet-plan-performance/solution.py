@@ -1,6 +1,5 @@
 class Solution:
-    def dietPlanPerformance(self, calories: List[int], k: int, lower: int,
-                            upper: int) -> int:
+    def dietPlanPerformance(self, calories: List[int], k: int, lower: int, upper: int) -> int:
         points = 0
 
         def score(total: int) -> None:

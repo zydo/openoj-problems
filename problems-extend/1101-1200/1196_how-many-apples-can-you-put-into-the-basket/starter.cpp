@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxNumberOfApples(vector<int>& weight) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxNumberOfApples(vector<int> &weight) { throw logic_error("TODO"); }
 };

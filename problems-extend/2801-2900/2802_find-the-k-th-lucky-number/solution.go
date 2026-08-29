@@ -2,7 +2,7 @@
 // lucky numbers of length len, cumulatively 2^(c + 1) - 2.
 func kthLuckyNumber(k int) string {
 	c := 1
-	for (1 << (c + 1)) - 2 < k {
+	for (1<<(c+1))-2 < k {
 		c++
 	}
 	// Rank of k among the c-digit lucky numbers, made zero-based.

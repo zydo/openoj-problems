@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long minimumCost(int m, int n, vector<int>& horizontalCut, vector<int>& verticalCut) {
+    long long minimumCost(int m, int n, vector<int> &horizontalCut, vector<int> &verticalCut) {
         // Each line is priced once per perpendicular strip alive when it is
         // cut, and swapping two adjacent cuts of different families changes
         // the total by (cheaper - more expensive), so an optimal schedule

@@ -23,7 +23,7 @@ class Solution:
         def top3(vals):
             return sorted((vals[c], c) for c in range(n))[-3:]
 
-        ans = -10**30
+        ans = -(10**30)
         for i in range(1, m - 1):
             for va, ca in top3(top[i - 1]):
                 for vb, cb in top3(board[i]):

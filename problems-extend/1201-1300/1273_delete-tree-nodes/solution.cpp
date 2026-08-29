@@ -2,8 +2,7 @@
 
 class Solution {
   public:
-    int deleteTreeNodes(int nodes, std::vector<int> &parent,
-                        std::vector<int> &value) {
+    int deleteTreeNodes(int nodes, std::vector<int> &parent, std::vector<int> &value) {
         // Fold bottom-up: each node hands its parent its subtree sum and
         // the number of kept nodes below it — but only if its own subtree
         // sum survived as nonzero. A zero-sum subtree contributes nothing

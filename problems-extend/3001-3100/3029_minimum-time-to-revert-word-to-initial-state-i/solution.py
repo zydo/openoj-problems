@@ -6,6 +6,6 @@ class Solution:
         # suffix word[t*k:] equals the prefix it would occupy.
         n = len(word)
         t = 1
-        while t * k < n and word[: n - t * k] != word[t * k:]:
+        while t * k < n and word[: n - t * k] != word[t * k :]:
             t += 1
         return t

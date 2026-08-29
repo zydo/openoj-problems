@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countVowelSubstrings(string word) {
         int total = 0;
         for (int start = 0; start < static_cast<int>(word.size()); ++start) {
@@ -18,21 +18,21 @@ public:
         return total;
     }
 
-private:
+  private:
     int vowelBit(char character) {
         switch (character) {
-            case 'a':
-                return 1;
-            case 'e':
-                return 2;
-            case 'i':
-                return 4;
-            case 'o':
-                return 8;
-            case 'u':
-                return 16;
-            default:
-                return 0;
+        case 'a':
+            return 1;
+        case 'e':
+            return 2;
+        case 'i':
+            return 4;
+        case 'o':
+            return 8;
+        case 'u':
+            return 16;
+        default:
+            return 0;
         }
     }
 };

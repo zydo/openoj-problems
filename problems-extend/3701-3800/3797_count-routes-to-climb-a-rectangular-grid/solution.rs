@@ -8,9 +8,7 @@ impl Solution {
         // up[c]: ways standing on (r, c) after an arrival from below (or the
         // start); same_: ways standing there after a same-row slide. A slide
         // may not follow another slide, so slides feed only from up.
-        let mut up: Vec<i64> = (0..m)
-            .map(|c| if bytes[n - 1][c] == b'.' { 1 } else { 0 })
-            .collect();
+        let mut up: Vec<i64> = (0..m).map(|c| if bytes[n - 1][c] == b'.' { 1 } else { 0 }).collect();
 
         // Prefix sums over the row's up-values; window aggregation for one
         // move kind. Slides use |dc| <= d; up moves use w_up below.

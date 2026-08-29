@@ -23,6 +23,6 @@ var sortMatrix = function (grid) {
         row.map((_, j) => {
             const k = i - j + n - 1;
             return diags[k][pos[k]++];
-        })
+        }),
     );
 };

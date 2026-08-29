@@ -42,7 +42,8 @@ class Solution {
         java.util.HashMap<Integer, Integer> firstInRow = new java.util.HashMap<>();
         java.util.HashMap<Integer, Integer> firstInCol = new java.util.HashMap<>();
         for (int i = 0; i < n; i++) {
-            int x = stones[i][0], y = stones[i][1];
+            int x = stones[i][0],
+                y = stones[i][1];
             Integer r = firstInRow.get(x);
             if (r == null) firstInRow.put(x, i);
             else union(i, r);

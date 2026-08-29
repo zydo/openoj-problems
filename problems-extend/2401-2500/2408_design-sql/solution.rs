@@ -21,7 +21,11 @@ impl SQL {
         for (name, width) in names.into_iter().zip(columns) {
             tables.insert(
                 name,
-                Table { columns: width as usize, rows: BTreeMap::new(), next_id: 1 },
+                Table {
+                    columns: width as usize,
+                    rows: BTreeMap::new(),
+                    next_id: 1,
+                },
             );
         }
         SQL { tables }

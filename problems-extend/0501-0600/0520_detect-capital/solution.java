@@ -15,7 +15,6 @@ class Solution {
         // is the all-caps word, and a lone capital is legal only when it
         // leads the word.
         char first = word.charAt(0);
-        return capitals == 0 || capitals == word.length()
-                || (capitals == 1 && first >= 'A' && first <= 'Z');
+        return capitals == 0 || capitals == word.length() || (capitals == 1 && first >= 'A' && first <= 'Z');
     }
 }

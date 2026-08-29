@@ -3,10 +3,9 @@
 #include <utility>
 #include <vector>
 
-
 class Solution {
   public:
-    bool hasValidPath(vector<vector<int>>& grid) {
+    bool hasValidPath(vector<vector<int>> &grid) {
         // Each street type is the set of sides it opens. A move between
         // neighbouring cells is legal only when the source opens the shared
         // side AND the target opens the opposite side, so a plain BFS from
@@ -17,9 +16,7 @@ class Solution {
         const array<int, 4> opposite = {1, 0, 3, 2};
         int m = grid.size();
         int n = grid[0].size();
-        auto opens = [&](int street, int side) {
-            return sideA[street] == side || sideB[street] == side;
-        };
+        auto opens = [&](int street, int side) { return sideA[street] == side || sideB[street] == side; };
         vector<vector<bool>> visited(m, vector<bool>(n, false));
         queue<pair<int, int>> pending;
         pending.push({0, 0});

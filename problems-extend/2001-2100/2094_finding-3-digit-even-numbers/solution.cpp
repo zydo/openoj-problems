@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> findEvenNumbers(vector<int>& digits) {
+  public:
+    vector<int> findEvenNumbers(vector<int> &digits) {
         array<int, 10> available{};
         for (int digit : digits) {
             available[digit]++;

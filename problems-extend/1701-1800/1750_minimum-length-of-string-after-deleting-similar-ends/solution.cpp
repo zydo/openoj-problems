@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int minimumLength(string s) {
         // While both ends carry the same character, consume its full
         // run on each side in one sweep. The process is forced: shorter

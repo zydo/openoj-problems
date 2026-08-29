@@ -9,7 +9,9 @@ pub struct MagicDictionary {
 
 impl MagicDictionary {
     pub fn new() -> Self {
-        MagicDictionary { buckets: HashMap::new() }
+        MagicDictionary {
+            buckets: HashMap::new(),
+        }
     }
 
     pub fn buildDict(&mut self, dictionary: Vec<String>) {

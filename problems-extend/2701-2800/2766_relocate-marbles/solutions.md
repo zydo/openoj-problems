@@ -4,7 +4,7 @@
 
 Only occupancy matters, so the whole state fits in a set of positions seeded
 from `nums`. Collapsing duplicate starting positions loses nothing: a move
-relocates *all* marbles sitting on `moveFrom[i]` at once, so a position
+relocates _all_ marbles sitting on `moveFrom[i]` at once, so a position
 holding one marble or many behaves identically — it stays occupied until its
 own move empties it, and whatever lands there afterwards reoccupies it.
 

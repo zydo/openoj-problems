@@ -11,11 +11,7 @@ class Solution:
                 continue
             # Non-empty, and every character alphanumeric or underscore.
             if not name or not all(
-                "a" <= ch <= "z"
-                or "A" <= ch <= "Z"
-                or "0" <= ch <= "9"
-                or ch == "_"
-                for ch in name
+                "a" <= ch <= "z" or "A" <= ch <= "Z" or "0" <= ch <= "9" or ch == "_" for ch in name
             ):
                 continue
             valid.append((rank[businessLine[i]], name))

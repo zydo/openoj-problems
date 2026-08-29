@@ -11,7 +11,8 @@ class Solution {
         int users = (int)languages.size();
         vector<vector<bool>> known(users + 1, vector<bool>(n + 1, false));
         for (int user = 1; user <= users; ++user) {
-            for (int language : languages[user - 1]) known[user][language] = true;
+            for (int language : languages[user - 1])
+                known[user][language] = true;
         }
         vector<pair<int, int>> needy;
         for (const vector<int> &pair : friendships) {
@@ -19,7 +20,8 @@ class Solution {
             for (int language = 1; language <= n && !shares; ++language) {
                 shares = known[pair[0]][language] && known[pair[1]][language];
             }
-            if (!shares) needy.emplace_back(pair[0], pair[1]);
+            if (!shares)
+                needy.emplace_back(pair[0], pair[1]);
         }
         int best = users;
         for (int language = 1; language <= n; ++language) {

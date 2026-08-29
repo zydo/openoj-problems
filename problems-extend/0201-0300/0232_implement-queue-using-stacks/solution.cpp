@@ -6,9 +6,7 @@ class MyQueue {
   public:
     MyQueue() = default;
 
-    void push(int x) {
-        in_stack.push(x);
-    }
+    void push(int x) { in_stack.push(x); }
 
     int pop() {
         transfer_if_needed();
@@ -22,9 +20,7 @@ class MyQueue {
         return out_stack.top();
     }
 
-    bool empty() {
-        return in_stack.empty() && out_stack.empty();
-    }
+    bool empty() { return in_stack.empty() && out_stack.empty(); }
 
   private:
     void transfer_if_needed() {

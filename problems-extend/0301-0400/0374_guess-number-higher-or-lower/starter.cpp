@@ -1,6 +1,6 @@
 class Guess;
 
 class Solution {
-public:
-    int guessNumber(Guess& guess, int n);
+  public:
+    int guessNumber(Guess &guess, int n);
 };

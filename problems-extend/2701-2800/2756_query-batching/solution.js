@@ -13,10 +13,7 @@ class QueryBatcher {
 
     async getValue(key) {
         return new Promise((resolve) => {
-            if (
-                this.lastQueryTime === null ||
-                this.clock.now() - this.lastQueryTime >= this.t
-            ) {
+            if (this.lastQueryTime === null || this.clock.now() - this.lastQueryTime >= this.t) {
                 this.dispatch([key], [resolve]);
                 return;
             }
@@ -27,9 +24,12 @@ class QueryBatcher {
                 // One timer, pinned to the absolute window end C + t — not
                 // t from now — so late arrivals inside the window join the
                 // same pending batch instead of pushing the flush out.
-                this.clock.setTimeout(() => {
-                    this.flushPending();
-                }, this.lastQueryTime + this.t - this.clock.now());
+                this.clock.setTimeout(
+                    () => {
+                        this.flushPending();
+                    },
+                    this.lastQueryTime + this.t - this.clock.now(),
+                );
             }
         });
     }

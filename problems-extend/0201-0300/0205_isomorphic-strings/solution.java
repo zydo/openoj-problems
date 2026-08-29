@@ -12,7 +12,8 @@ class Solution {
         Map<Character, Character> forward = new HashMap<>();
         Map<Character, Character> reverse = new HashMap<>();
         for (int index = 0; index < s.length(); ++index) {
-            char sChar = s.charAt(index), tChar = t.charAt(index);
+            char sChar = s.charAt(index),
+                tChar = t.charAt(index);
             // One branch per contract clause: a source already bound to a
             // different replacement, or a target already claimed by another source.
             if (forward.containsKey(sChar) && forward.get(sChar) != tChar) return false;

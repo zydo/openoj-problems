@@ -14,14 +14,14 @@ class Solution:
         ans = [-1] * n
         i = 0
         t = 0
-        prev_dir = -1   # -1 unused, 0 entering, 1 exiting
+        prev_dir = -1  # -1 unused, 0 entering, 1 exiting
         done = 0
         while done < n:
             while i < n and arrival[i] <= t:
                 (exit_q if state[i] == 1 else enter_q).append(i)
                 i += 1
             if len(enter_q) == eh and len(exit_q) == xh:
-                t = arrival[i]      # jump the clock; the idle breaks any streak
+                t = arrival[i]  # jump the clock; the idle breaks any streak
                 prev_dir = -1
                 continue
             has_enter = len(enter_q) > eh

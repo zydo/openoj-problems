@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def countKConstraintSubstrings(
-        self, s: str, k: int, queries: List[List[int]]
-    ) -> List[int]:
+    def countKConstraintSubstrings(self, s: str, k: int, queries: List[List[int]]) -> List[int]:
         n = len(s)
         left = 0
         zeros = ones = 0

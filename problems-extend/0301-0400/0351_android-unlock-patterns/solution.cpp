@@ -15,16 +15,17 @@ class Solution {
         // relation while permuting corners among themselves and edge
         // midpoints among themselves, so three searches (corner 1, edge 2,
         // center 5) cover all nine starting dots.
-        return 4 * walk(1 | 1 << 1, 1, 1, m, n, skip) + 4 * walk(1 | 1 << 2, 2, 1, m, n, skip)
-               + walk(1 | 1 << 5, 5, 1, m, n, skip);
+        return 4 * walk(1 | 1 << 1, 1, 1, m, n, skip) + 4 * walk(1 | 1 << 2, 2, 1, m, n, skip) +
+               walk(1 | 1 << 5, 5, 1, m, n, skip);
     }
 
   private:
     // The prefix built so far already counts as one pattern once it holds m
     // dots; it can keep growing only while under n.
-    int walk(int used, int last, int length, int m, int n, vector<vector<int>>& skip) {
+    int walk(int used, int last, int length, int m, int n, vector<vector<int>> &skip) {
         int total = length >= m ? 1 : 0;
-        if (length == n) return total;
+        if (length == n)
+            return total;
         for (int next = 1; next <= 9; ++next) {
             // `used` always has bit 0 set: a phantom dot standing for "no
             // dot in between", so skip 0 passes the same already-visited

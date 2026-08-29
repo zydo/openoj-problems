@@ -5,10 +5,12 @@ class Solution {
         // per step, so the count array, the number of live letters, and the
         // largest count among them all update in constant time. Counts only
         // rise within one sweep, so the max is exact after each increment.
-        int n = s.length(), best = 0;
+        int n = s.length(),
+            best = 0;
         for (int i = 0; i < n; i++) {
             int[] counts = new int[26];
-            int distinct = 0, top = 0;
+            int distinct = 0,
+                top = 0;
             for (int j = i; j < n; j++) {
                 int c = s.charAt(j) - 'a';
                 if (counts[c] == 0) {

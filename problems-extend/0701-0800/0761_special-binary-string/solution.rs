@@ -17,7 +17,10 @@ impl Solution {
                 // The climb: the outer 1...0 goes on only after the inside
                 // is maximal — "11011000" wraps its maximized inside
                 // "110010" into "11100100".
-                parts.push(format!("1{}0", Solution::make_largest_special(s[start + 1..i].to_string())));
+                parts.push(format!(
+                    "1{}0",
+                    Solution::make_largest_special(s[start + 1..i].to_string())
+                ));
                 start = i + 1;
             }
         }

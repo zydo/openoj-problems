@@ -3,7 +3,8 @@ SELECT
   a.name AS name
 FROM
   (
-    SELECT DISTINCT id
+    SELECT DISTINCT
+      id
     FROM
       (
         SELECT
@@ -12,15 +13,20 @@ FROM
             login_date,
             '-' || (
               ROW_NUMBER() OVER (
-                PARTITION BY id
-                ORDER BY login_date
+                PARTITION BY
+                  id
+                ORDER BY
+                  login_date
               ) - 1
             ) || ' day'
           ) AS streak_anchor
         FROM
           (
-            SELECT DISTINCT id, login_date
-            FROM Logins
+            SELECT DISTINCT
+              id,
+              login_date
+            FROM
+              Logins
           ) distinct_days
       ) streaks
     GROUP BY

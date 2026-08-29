@@ -13,6 +13,6 @@ class Solution {
                 m++;
             }
         }
-        return m * (m + 1) / 2;
+        return (m * (m + 1)) / 2;
     }
 }

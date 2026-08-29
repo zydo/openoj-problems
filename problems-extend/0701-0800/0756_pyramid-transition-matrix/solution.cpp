@@ -9,7 +9,7 @@ class Solution {
         }
         unordered_set<string> rows;
         rows.insert(bottom);
-        int width = (int) bottom.size();
+        int width = (int)bottom.size();
         while (width > 1) {
             unordered_set<string> above;
             for (const string &row : rows) {

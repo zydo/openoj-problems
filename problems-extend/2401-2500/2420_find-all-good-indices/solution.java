@@ -10,7 +10,8 @@ class Solution {
         // covers nums[i+1..i+k]. Two linear sweeps plus one pass over the
         // candidate range replace an O(n*k) window scan.
         int n = nums.length;
-        int[] noninc = new int[n], nondec = new int[n];
+        int[] noninc = new int[n],
+            nondec = new int[n];
         Arrays.fill(noninc, 1);
         Arrays.fill(nondec, 1);
         for (int i = 1; i < n; ++i) {

@@ -11,7 +11,7 @@ least one rating of 2 or lower and one of 4 or higher is exactly a group
 whose minimum is at most 2 and whose maximum is at least 4. The extreme
 count comes from flagging each row: a `CASE` expression pays out 1.0 for
 ratings outside the open middle (2 or lower, or 4 or higher) and 0.0
-otherwise, and averaging those flags *is* extreme-ratings-over-total.
+otherwise, and averaging those flags _is_ extreme-ratings-over-total.
 
 All four admission rules are per-group facts, so they live in `HAVING`,
 not `WHERE`: at least five rows in the group, minimum at most 2, maximum

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int specialArray(vector<int>& nums) {
+  public:
+    int specialArray(vector<int> &nums) {
         // Sort descending: for candidate x = i, the i-th largest element
         // must still be >= i while the next one drops below it (or i is
         // the last position), which is exactly "i elements are >= i".

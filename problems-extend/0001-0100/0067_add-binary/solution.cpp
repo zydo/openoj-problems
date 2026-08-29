@@ -12,8 +12,10 @@ class Solution {
         // "100") with no special cases after the loop.
         while (i >= 0 || j >= 0 || carry) {
             int total = carry;
-            if (i >= 0) total += a[i--] - '0';
-            if (j >= 0) total += b[j--] - '0';
+            if (i >= 0)
+                total += a[i--] - '0';
+            if (j >= 0)
+                total += b[j--] - '0';
             // total is at most 3 (1 + 1 + carry), so its low bit is the
             // result digit and the rest is the next carry. Only single
             // characters are ever converted, never the whole strings, which

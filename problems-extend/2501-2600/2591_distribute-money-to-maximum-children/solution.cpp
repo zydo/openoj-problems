@@ -17,8 +17,7 @@ class Solution {
         for (;;) {
             int leftover = rest - 7 * k;
             int pool = children - k;
-            if ((pool == 0 && leftover == 0)
-                || (pool >= 1 && !(pool == 1 && leftover == 3))) {
+            if ((pool == 0 && leftover == 0) || (pool >= 1 && !(pool == 1 && leftover == 3))) {
                 return k;
             }
             --k;

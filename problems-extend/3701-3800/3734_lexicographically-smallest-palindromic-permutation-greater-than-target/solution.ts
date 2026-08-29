@@ -47,9 +47,7 @@ function lexPalindromicPermutation(s: string, target: string): string {
             wins = mirrored > suffix;
         } else {
             const mid = target.charCodeAt(m) - base;
-            wins =
-                oddLetter > mid ||
-                (oddLetter === mid && mirrored > suffix);
+            wins = oddLetter > mid || (oddLetter === mid && mirrored > suffix);
         }
         if (wins) {
             best = p;
@@ -79,10 +77,7 @@ function lexPalindromicPermutation(s: string, target: string): string {
             cur[ci]--;
         }
         if (bumpAt >= 0) {
-            const parts: string[] = [
-                target.slice(0, bumpAt),
-                String.fromCharCode(base + bumpCh),
-            ];
+            const parts: string[] = [target.slice(0, bumpAt), String.fromCharCode(base + bumpCh)];
             bumpCur[bumpCh]--;
             for (let d = 0; d < 26; d++) {
                 if (bumpCur[d] > 0) {

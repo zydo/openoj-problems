@@ -10,7 +10,8 @@ class Solution {
         PriorityQueue<int[]> sells = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         PriorityQueue<int[]> buys = new PriorityQueue<>((a, b) -> Integer.compare(b[0], a[0]));
         for (int[] order : orders) {
-            int price = order[0], amount = order[1];
+            int price = order[0],
+                amount = order[1];
             if (order[2] == 0) {
                 while (amount > 0 && !sells.isEmpty() && sells.peek()[0] <= price) {
                     int take = Math.min(amount, sells.peek()[1]);

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool canReach(string s, int minJump, int maxJump) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool canReach(string s, int minJump, int maxJump) { throw logic_error("TODO"); }
 };

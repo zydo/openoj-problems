@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minOperations(vector<int>& nums, int k) {
+    int minOperations(vector<int> &nums, int k) {
         // Flipping one bit of any element toggles exactly that bit of the
         // array-wide XOR, so one operation changes the XOR's Hamming
         // distance to k by exactly one: fold nums into a single XOR and

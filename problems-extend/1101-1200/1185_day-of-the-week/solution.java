@@ -1,9 +1,9 @@
 class Solution {
+
     public String dayOfTheWeek(int day, int month, int year) {
         // Anchored: Jan 1 1971 was a Friday, so offset 0 maps to Friday.
-        String[] names = {"Friday", "Saturday", "Sunday", "Monday",
-                "Tuesday", "Wednesday", "Thursday"};
-        int[] monthDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        String[] names = { "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday" };
+        int[] monthDays = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
         int days = 0;
         for (int y = 1971; y < year; y++) {

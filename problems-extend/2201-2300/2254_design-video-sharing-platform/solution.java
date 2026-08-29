@@ -5,6 +5,7 @@ import java.util.PriorityQueue;
 class VideoSharingPlatform {
 
     private static class Video {
+
         String content;
         long likes;
         long dislikes;
@@ -64,9 +65,9 @@ class VideoSharingPlatform {
     public int[] getLikesAndDislikes(int videoId) {
         Video video = videos.get(videoId);
         if (video == null) {
-            return new int[]{-1};
+            return new int[] { -1 };
         }
-        return new int[]{(int) video.likes, (int) video.dislikes};
+        return new int[] { (int) video.likes, (int) video.dislikes };
     }
 
     public int getViews(int videoId) {

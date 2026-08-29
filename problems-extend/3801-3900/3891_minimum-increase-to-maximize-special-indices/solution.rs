@@ -20,13 +20,12 @@ impl Solution {
             let cur_pick_count = not_count + 1;
             let cur_pick_cost = not_cost + cost;
             // Skipping i keeps whichever previous state is better.
-            let (cur_not_count, cur_not_cost) = if pick_count > not_count
-                || (pick_count == not_count && pick_cost < not_cost)
-            {
-                (pick_count, pick_cost)
-            } else {
-                (not_count, not_cost)
-            };
+            let (cur_not_count, cur_not_cost) =
+                if pick_count > not_count || (pick_count == not_count && pick_cost < not_cost) {
+                    (pick_count, pick_cost)
+                } else {
+                    (not_count, not_cost)
+                };
             not_count = cur_not_count;
             not_cost = cur_not_cost;
             pick_count = cur_pick_count;

@@ -30,7 +30,7 @@ class Solution {
         // maximal block set.
         sort(parts.begin(), parts.end(), greater<string>());
         string out;
-        for (const string& part : parts) {
+        for (const string &part : parts) {
             out += part;
         }
         return out;

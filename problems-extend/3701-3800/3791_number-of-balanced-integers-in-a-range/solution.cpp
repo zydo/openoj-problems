@@ -3,9 +3,7 @@
 
 class Solution {
   public:
-    long long countBalanced(long long low, long long high) {
-        return countUpTo(high) - countUpTo(low - 1);
-    }
+    long long countBalanced(long long low, long long high) { return countUpTo(high) - countUpTo(low - 1); }
 
   private:
     long long countUpTo(long long x) {

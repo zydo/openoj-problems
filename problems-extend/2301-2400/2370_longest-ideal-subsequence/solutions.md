@@ -6,7 +6,7 @@ The classic subsequence DP — "longest ideal chain ending at index `i`" —
 would compare `s[i]` against every earlier index, an `O(n²)` sweep. The
 observation that collapses it: two chains that end on the same letter are
 forever interchangeable, because any future letter compatible with one is
-compatible with the other. So only the best chain per ending *letter*
+compatible with the other. So only the best chain per ending _letter_
 matters — 26 numbers instead of `n`.
 
 Processing characters left to right with `best[c]` = the longest ideal

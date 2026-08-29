@@ -9,10 +9,7 @@ class ReduceCase {
     init: number;
     constructor(values: any[], _queryBudget?: unknown) {
         const [fn, nums, init] = values;
-        this.fn = new Function("return (" + fn + ");")() as unknown as (
-            accum: number,
-            curr: number,
-        ) => number;
+        this.fn = new Function("return (" + fn + ");")() as unknown as (accum: number, curr: number) => number;
         this.nums = nums;
         this.init = init;
     }

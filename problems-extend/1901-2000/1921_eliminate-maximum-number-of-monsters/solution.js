@@ -9,9 +9,7 @@ var eliminateMaximum = function (dist, speed) {
     // happens at minute i, so after sorting arrival minutes the answer
     // is the first position where the arrival is not strictly later
     // than the shot.
-    const arrivals = dist
-        .map((d, i) => Math.ceil(d / speed[i]))
-        .sort((a, b) => a - b);
+    const arrivals = dist.map((d, i) => Math.ceil(d / speed[i])).sort((a, b) => a - b);
     for (let i = 0; i < arrivals.length; ++i) {
         if (arrivals[i] <= i) return i;
     }

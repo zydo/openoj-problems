@@ -41,8 +41,8 @@ class Solution {
                 int diff = nums[p + 1] - nums[p - 1];
                 if (diff % 2 == 0) {
                     int d = diff / 2;
-                    int leftLen = (p >= 2 && nums[p - 1] - nums[p - 2] == d) ? left[p - 1] : 1;
-                    int rightLen = (p <= n - 3 && nums[p + 2] - nums[p + 1] == d) ? right[p + 1] : 1;
+                    int leftLen = p >= 2 && nums[p - 1] - nums[p - 2] == d ? left[p - 1] : 1;
+                    int rightLen = p <= n - 3 && nums[p + 2] - nums[p + 1] == d ? right[p + 1] : 1;
                     best = Math.max(best, leftLen + rightLen + 1);
                 }
             }

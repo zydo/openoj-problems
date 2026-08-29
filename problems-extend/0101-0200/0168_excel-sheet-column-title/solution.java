@@ -7,7 +7,7 @@ class Solution {
         while (columnNumber > 0) {
             // Map 1..26 onto 0..25, borrowing one from the next letter up.
             columnNumber--;
-            letters.append((char) ('A' + columnNumber % 26));
+            letters.append((char) ('A' + (columnNumber % 26)));
             columnNumber /= 26;
         }
         // Remainders arrive least-significant letter first.

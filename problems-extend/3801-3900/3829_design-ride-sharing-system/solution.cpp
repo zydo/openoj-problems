@@ -10,9 +10,7 @@ class RideSharingSystem {
         waiting_.insert(riderId);
     }
 
-    void addDriver(int driverId) {
-        drivers_.push_back(driverId);
-    }
+    void addDriver(int driverId) { drivers_.push_back(driverId); }
 
     vector<int> matchDriverWithRider() {
         while (!riders_.empty() && waiting_.count(riders_.front()) == 0)
@@ -27,9 +25,7 @@ class RideSharingSystem {
         return {driverId, riderId};
     }
 
-    void cancelRider(int riderId) {
-        waiting_.erase(riderId);
-    }
+    void cancelRider(int riderId) { waiting_.erase(riderId); }
 
   private:
     deque<int> riders_;

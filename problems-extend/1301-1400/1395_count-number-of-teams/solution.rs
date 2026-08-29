@@ -9,8 +9,7 @@ impl Solution {
         for j in 0..n {
             let less_left = rating[..j].iter().filter(|value| **value < rating[j]).count() as i32;
             let greater_left = j as i32 - less_left;
-            let greater_right =
-                rating[j + 1..].iter().filter(|value| **value > rating[j]).count() as i32;
+            let greater_right = rating[j + 1..].iter().filter(|value| **value > rating[j]).count() as i32;
             let less_right = (n as i32 - 1 - j as i32) - greater_right;
             teams += less_left * greater_right + greater_left * less_right;
         }

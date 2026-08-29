@@ -49,4 +49,3 @@ Are the constraints small enough for brute force?
 
 We can use three loops, each iterating through the array to go through every
 possible triplet. Be sure to not count duplicates.
-

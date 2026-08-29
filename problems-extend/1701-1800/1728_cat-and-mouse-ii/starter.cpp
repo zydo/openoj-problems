@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool canMouseWin(vector<string>& grid, int catJump, int mouseJump) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool canMouseWin(vector<string> &grid, int catJump, int mouseJump) { throw logic_error("TODO"); }
 };

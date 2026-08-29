@@ -18,7 +18,8 @@ class Solution {
 
         int[] count = new int[points.length];
         for (int j = 0; j < points.length; j++) {
-            int x = points[j][0], y = points[j][1];
+            int x = points[j][0],
+                y = points[j][1];
             int total = 0;
             for (int h = y; h <= 100; h++) {
                 List<Integer> lengths = byHeight.get(h);
@@ -30,7 +31,8 @@ class Solution {
     }
 
     private int lowerBound(List<Integer> lengths, int x) {
-        int lo = 0, hi = lengths.size();
+        int lo = 0,
+            hi = lengths.size();
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (lengths.get(mid) >= x) {

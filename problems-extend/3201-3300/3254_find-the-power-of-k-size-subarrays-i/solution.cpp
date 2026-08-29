@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> resultsArray(vector<int>& nums, int k) {
+    vector<int> resultsArray(vector<int> &nums, int k) {
         // run counts the consecutive +1 steps ending at the current index;
         // a size-k window is powered iff its last k - 1 adjacent pairs all
         // stepped up by one, i.e. run reaches k - 1 at the window's end.

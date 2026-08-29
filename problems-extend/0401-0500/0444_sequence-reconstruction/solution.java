@@ -22,7 +22,8 @@ class Solution {
                 }
             }
             for (int j = 0; j + 1 < seq.length; ++j) {
-                int u = pos[seq[j]], v = pos[seq[j + 1]];
+                int u = pos[seq[j]],
+                    v = pos[seq[j + 1]];
                 // A pair running backwards in nums means its sequence never
                 // embeds in nums.
                 if (u >= v) {

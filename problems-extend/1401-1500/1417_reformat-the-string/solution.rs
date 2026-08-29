@@ -13,7 +13,11 @@ impl Solution {
         if diff > 1 || diff < -1 {
             return String::new();
         }
-        let (first, second) = if diff >= 0 { (&letters, &digits) } else { (&digits, &letters) };
+        let (first, second) = if diff >= 0 {
+            (&letters, &digits)
+        } else {
+            (&digits, &letters)
+        };
         let mut result = Vec::with_capacity(s.len());
         for i in 0..first.len() {
             result.push(first[i]);

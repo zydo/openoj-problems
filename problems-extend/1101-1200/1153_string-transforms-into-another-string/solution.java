@@ -12,7 +12,8 @@ class Solution {
         }
         Map<Character, Character> mapping = new HashMap<>();
         for (int i = 0; i < str1.length(); ++i) {
-            char a = str1.charAt(i), b = str2.charAt(i);
+            char a = str1.charAt(i),
+                b = str2.charAt(i);
             Character prior = mapping.get(a);
             if (prior != null && prior != b) {
                 // One source letter would need two different targets.

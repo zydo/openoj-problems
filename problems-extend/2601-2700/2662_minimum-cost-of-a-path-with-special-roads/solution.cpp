@@ -1,7 +1,6 @@
 class Solution {
   public:
-    int minimumCost(vector<int> &start, vector<int> &target,
-                    vector<vector<int>> &specialRoads) {
+    int minimumCost(vector<int> &start, vector<int> &target, vector<vector<int>> &specialRoads) {
         // By hint 1 an optimal route only ever stops at road endpoints (plus
         // start and target): any other intermediate point is dominated by
         // walking straight past it. Build that candidate set deduped, join
@@ -27,8 +26,7 @@ class Solution {
         vector<array<int, 3>> roads;
         roads.reserve(specialRoads.size());
         for (auto &road : specialRoads) {
-            roads.push_back({index[encode(road[0], road[1])],
-                             index[encode(road[2], road[3])], road[4]});
+            roads.push_back({index[encode(road[0], road[1])], index[encode(road[2], road[3])], road[4]});
         }
         const int INF = INT_MAX;
         vector<int> dist(n, INF);
@@ -39,18 +37,22 @@ class Solution {
             // most ~402 candidates the quadratic cost is negligible.
             int u = -1;
             for (int v = 0; v < n; ++v)
-                if (!used[v] && (u == -1 || dist[v] < dist[u])) u = v;
-            if (u == -1 || dist[u] == INF) break;
+                if (!used[v] && (u == -1 || dist[v] < dist[u]))
+                    u = v;
+            if (u == -1 || dist[u] == INF)
+                break;
             used[u] = 1;
             for (int v = 0; v < n; ++v) {
                 if (!used[v]) {
-                    int walk = dist[u] + abs(points[v].first - points[u].first) +
-                               abs(points[v].second - points[u].second);
-                    if (walk < dist[v]) dist[v] = walk;
+                    int walk =
+                        dist[u] + abs(points[v].first - points[u].first) + abs(points[v].second - points[u].second);
+                    if (walk < dist[v])
+                        dist[v] = walk;
                 }
             }
             for (auto &[a, b, cost] : roads) {
-                if (a == u && dist[u] + cost < dist[b]) dist[b] = dist[u] + cost;
+                if (a == u && dist[u] + cost < dist[b])
+                    dist[b] = dist[u] + cost;
             }
         }
         return dist[index[encode(target[0], target[1])]];

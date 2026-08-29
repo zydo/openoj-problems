@@ -15,7 +15,9 @@ class Solution {
             merge(freq, before + 1, 1);
 
             // At most two frequency classes can ever be fixable.
-            int a = -1, b = -1, classes = 0;
+            int a = -1,
+                b = -1,
+                classes = 0;
             for (Map.Entry<Integer, Integer> entry : freq.entrySet()) {
                 if (entry.getValue() == 0) continue;
                 if (classes == 0) a = entry.getKey();
@@ -27,7 +29,11 @@ class Solution {
                 int f = a;
                 if (f == 1 || freq.get(f) == 1) best = n;
             } else if (classes == 2) {
-                if (a > b) { int t = a; a = b; b = t; }
+                if (a > b) {
+                    int t = a;
+                    a = b;
+                    b = t;
+                }
                 if (b == a + 1 && freq.get(b) == 1) best = n;
                 else if (a == 1 && freq.get(a) == 1 && 1 + (long) b * freq.get(b) == n) best = n;
             }

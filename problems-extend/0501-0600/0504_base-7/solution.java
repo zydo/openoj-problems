@@ -12,7 +12,7 @@ class Solution {
         StringBuilder digits = new StringBuilder();
         while (value != 0) {
             // Split off the low base-7 digit, then shift the rest down.
-            digits.append((char) ('0' + value % 7));
+            digits.append((char) ('0' + (value % 7)));
             value /= 7;
         }
         // Digits come out lowest-first, so reverse for the answer.

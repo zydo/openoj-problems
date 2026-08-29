@@ -4,12 +4,12 @@
 
 Table: `Scores`
 
-| Column Name | Type |
-| ----------- | ---- |
-| player_name | varchar |
-| gender | varchar |
-| day | date |
-| score_points | int |
+| Column Name  | Type    |
+| ------------ | ------- |
+| player_name  | varchar |
+| gender       | varchar |
+| day          | date    |
+| score_points | int     |
 
 `(gender, day)` is the primary key (combination of columns with unique values) for this table.
 A competition is held between the female team and the male team.

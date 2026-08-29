@@ -42,10 +42,7 @@ function minimumCost(start: number[], target: number[], specialRoads: number[][]
         used[u] = true;
         for (let v = 0; v < n; v++) {
             if (!used[v]) {
-                const walk =
-                    dist[u] +
-                    Math.abs(points[v][0] - points[u][0]) +
-                    Math.abs(points[v][1] - points[u][1]);
+                const walk = dist[u] + Math.abs(points[v][0] - points[u][0]) + Math.abs(points[v][1] - points[u][1]);
                 if (walk < dist[v]) dist[v] = walk;
             }
         }

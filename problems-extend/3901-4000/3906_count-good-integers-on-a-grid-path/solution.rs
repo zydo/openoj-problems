@@ -25,7 +25,11 @@ impl Solution {
         for position in 0..16 {
             let mut next = vec![vec![0i64; 11]; 2];
             for tight in 0..2 {
-                let limit = if tight == 1 { (digits[position] - b'0') as usize } else { 9 };
+                let limit = if tight == 1 {
+                    (digits[position] - b'0') as usize
+                } else {
+                    9
+                };
                 for previous in 0..=10 {
                     let ways = dp[tight][previous];
                     if ways == 0 {

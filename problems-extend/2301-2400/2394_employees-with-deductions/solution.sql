@@ -6,7 +6,15 @@ WHERE
   needed_hours * 60 > COALESCE(
     (
       SELECT
-        SUM(CAST(CEIL((strftime('%s', out_time) - strftime('%s', in_time)) / 60.0) AS INTEGER))
+        SUM(
+          CAST(
+            CEIL(
+              (
+                strftime('%s', out_time) - strftime('%s', in_time)
+              ) / 60.0
+            ) AS INTEGER
+          )
+        )
       FROM
         Logs
       WHERE

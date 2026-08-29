@@ -9,10 +9,7 @@ impl Solution {
         let mut cost = 0;
         for i in 0..m / 2 {
             for j in 0..n / 2 {
-                let ones = grid[i][j]
-                    + grid[i][n - 1 - j]
-                    + grid[m - 1 - i][j]
-                    + grid[m - 1 - i][n - 1 - j];
+                let ones = grid[i][j] + grid[i][n - 1 - j] + grid[m - 1 - i][j] + grid[m - 1 - i][n - 1 - j];
                 cost += ones.min(4 - ones);
             }
         }

@@ -11,10 +11,7 @@ impl Solution {
                 counts[(b - b'A') as usize][i] += 1;
             }
         }
-        let mut teams: Vec<char> = (0..26)
-            .filter(|&i| seen[i])
-            .map(|i| (b'A' + i as u8) as char)
-            .collect();
+        let mut teams: Vec<char> = (0..26).filter(|&i| seen[i]).map(|i| (b'A' + i as u8) as char).collect();
         teams.sort_by(|&a, &b| {
             let ra = &counts[(a as u8 - b'A') as usize];
             let rb = &counts[(b as u8 - b'A') as usize];

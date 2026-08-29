@@ -19,13 +19,15 @@ class Solution {
     // The value of one notation as {whole, numerator, denominator}, with
     // the trailing-9s carry already folded into the whole part.
     private long[] fraction(String x) {
-        String integer = x, rest = "";
+        String integer = x,
+            rest = "";
         int dot = x.indexOf('.');
         if (dot >= 0) {
             integer = x.substring(0, dot);
             rest = x.substring(dot + 1);
         }
-        String nonRep = rest, rep = "";
+        String nonRep = rest,
+            rep = "";
         int open = rest.indexOf('(');
         if (open >= 0) {
             nonRep = rest.substring(0, open);
@@ -41,7 +43,8 @@ class Solution {
             denominator = base * (pow10(rep.length()) - 1);
         }
         long whole = digits(integer);
-        if (numerator == denominator) { // 0.9(9) carries into the whole part
+        if (numerator == denominator) {
+            // 0.9(9) carries into the whole part
             whole++;
             numerator = 0;
             denominator = 1;

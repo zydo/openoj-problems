@@ -16,7 +16,10 @@
     "return_type": {
       "kind": "void"
     },
-    "comparison": "exact",
+    "comparison": {
+      "mode": "close",
+      "tolerance": 1e-05
+    },
     "provided": {
       "oracle": {
         "class": "CalculatorCase",

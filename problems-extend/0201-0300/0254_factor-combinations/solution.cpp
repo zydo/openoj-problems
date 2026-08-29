@@ -7,8 +7,9 @@ class Solution {
         // Left-to-right growth emits each length group in lexicographic order
         // but interleaves the groups; the pinned display wants fewest factors
         // first, so reassemble by (length, lexicographic).
-        auto byLengthThenLex = [](const vector<int>& a, const vector<int>& b) {
-            if (a.size() != b.size()) return a.size() < b.size();
+        auto byLengthThenLex = [](const vector<int> &a, const vector<int> &b) {
+            if (a.size() != b.size())
+                return a.size() < b.size();
             return a < b;
         };
         sort(combinations.begin(), combinations.end(), byLengthThenLex);
@@ -16,7 +17,7 @@ class Solution {
     }
 
   private:
-    void backtrack(int remaining, int start, vector<int>& current, vector<vector<int>>& combinations) {
+    void backtrack(int remaining, int start, vector<int> &current, vector<vector<int>> &combinations) {
         for (int factor = start; (long long)factor * factor <= remaining; factor++) {
             if (remaining % factor != 0)
                 continue;

@@ -14,8 +14,7 @@ class Solution {
                 int v = grid[i][j];
                 bitset<1024> shifted;
                 for (int x = 0; x < 1024; x++) {
-                    if ((i > 0 && reach[i - 1][j].test(x)) ||
-                        (j > 0 && reach[i][j - 1].test(x))) {
+                    if ((i > 0 && reach[i - 1][j].test(x)) || (j > 0 && reach[i][j - 1].test(x))) {
                         shifted.set(x ^ v);
                     }
                 }

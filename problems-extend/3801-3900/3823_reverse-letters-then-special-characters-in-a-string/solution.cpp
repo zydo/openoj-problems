@@ -6,7 +6,7 @@ class Solution {
         // reversed independently, in place. Each pass walks two pointers
         // inward from the ends, skipping characters outside the class
         // being reversed, and swaps when both sides are on the class.
-        int n = (int) s.size();
+        int n = (int)s.size();
 
         auto is_letter = [](char c) { return c >= 'a' && c <= 'z'; };
 

@@ -14,7 +14,10 @@ impl Solution {
             if take2 > n {
                 continue;
             }
-            let candidate = Self::merge(&Self::max_subsequence(&nums1, take1), &Self::max_subsequence(&nums2, take2));
+            let candidate = Self::merge(
+                &Self::max_subsequence(&nums1, take1),
+                &Self::max_subsequence(&nums2, take2),
+            );
             // Vec comparison is lexicographic, exactly the digit order.
             if candidate > best {
                 best = candidate;

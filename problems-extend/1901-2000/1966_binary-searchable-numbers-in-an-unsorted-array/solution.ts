@@ -12,10 +12,7 @@ function binarySearchableNumbers(nums: number[]): number {
     let count = 0;
     let prefixMax = nums[0];
     for (let i = 0; i < n; ++i) {
-        if (
-            (i === 0 || nums[i] > prefixMax) &&
-            (i === n - 1 || nums[i] < suffixMin[i + 1])
-        ) {
+        if ((i === 0 || nums[i] > prefixMax) && (i === n - 1 || nums[i] < suffixMin[i + 1])) {
             ++count;
         }
         if (nums[i] > prefixMax) prefixMax = nums[i];

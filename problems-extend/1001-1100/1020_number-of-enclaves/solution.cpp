@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int numEnclaves(vector<vector<int>>& grid) {
+  public:
+    int numEnclaves(vector<vector<int>> &grid) {
         int rows = (int)grid.size();
         int cols = (int)grid[0].size();
         // Iterative BFS (explicit queue, not recursion) starting from every
@@ -21,7 +21,7 @@ public:
         while (!q.empty()) {
             auto [r, c] = q.front();
             q.pop();
-            for (auto& direction : directions) {
+            for (auto &direction : directions) {
                 int nr = r + direction[0];
                 int nc = c + direction[1];
                 if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && grid[nr][nc] == 1) {
@@ -34,7 +34,7 @@ public:
         // Whatever land the fill never reached could never walk off the
         // grid: that's exactly the enclosed count.
         int count = 0;
-        for (auto& row : grid) {
+        for (auto &row : grid) {
             for (int cell : row) {
                 count += cell;
             }

@@ -56,9 +56,9 @@ func findCrossingTime(n int, k int, time [][]int) int {
 		*left = append(*left, workerItem{-(time[i][0] + time[i][2]), -i})
 	}
 	heap.Init(left)
-	right := &workerHeap{}   // boxed workers waiting on the right bank
+	right := &workerHeap{}    // boxed workers waiting on the right bank
 	pending := &pendingHeap{} // completions keyed by ready time
-	cur := 0                 // instant the bridge becomes free again
+	cur := 0                  // instant the bridge becomes free again
 	sent := 0
 	delivered := 0
 	ans := 0

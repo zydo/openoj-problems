@@ -25,7 +25,11 @@ impl Solution {
         // Every ordinal suffix (st/nd/rd/th) is exactly two letters, so
         // dropping the last two characters always leaves the bare digits.
         let digits = &day_part[..day_part.len() - 2];
-        let day = if digits.len() == 1 { format!("0{}", digits) } else { digits.to_string() };
+        let day = if digits.len() == 1 {
+            format!("0{}", digits)
+        } else {
+            digits.to_string()
+        };
 
         format!("{}-{}-{}", year, months[month_part], day)
     }

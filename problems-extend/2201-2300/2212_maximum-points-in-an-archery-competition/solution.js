@@ -12,7 +12,7 @@ var maximumBobPoints = function (numArrows, aliceArrows) {
         let cost = 0;
         let points = 0;
         for (let k = 0; k < 12; k++) {
-            if (mask >> k & 1) {
+            if ((mask >> k) & 1) {
                 cost += aliceArrows[k] + 1;
                 points += k;
             }
@@ -27,7 +27,7 @@ var maximumBobPoints = function (numArrows, aliceArrows) {
     const bob = new Array(12).fill(0);
     let spent = 0;
     for (let k = 1; k < 12; k++) {
-        if (bestMask >> k & 1) {
+        if ((bestMask >> k) & 1) {
             bob[k] = aliceArrows[k] + 1;
             spent += bob[k];
         }

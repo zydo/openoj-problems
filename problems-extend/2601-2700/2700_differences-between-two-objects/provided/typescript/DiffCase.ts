@@ -28,12 +28,7 @@ class DiffCase {
             throw new Error("drive expects the objDiff function");
         }
         const result = objDiff(this.obj1, this.obj2);
-        if (
-            result === null ||
-            result === undefined ||
-            typeof result !== "object" ||
-            Array.isArray(result)
-        ) {
+        if (result === null || result === undefined || typeof result !== "object" || Array.isArray(result)) {
             throw new Error("objDiff must return an object");
         }
         this.recorded = result;

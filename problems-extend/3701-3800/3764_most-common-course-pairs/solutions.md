@@ -12,7 +12,7 @@ and the two approaches part ways there.
 
 The tally map hands back its keys unsorted; sorting them once makes the
 choice a linear scan. Walking keys in ascending lexicographic order while
-keeping a candidate only on a *strict* count improvement lands on exactly
+keeping a candidate only on a _strict_ count improvement lands on exactly
 the statement's rule: an equal count can never displace an earlier (smaller)
 key, so among equal counts the smallest first-course name survives, and its
 second-course name breaks any remaining tie because the pairs are sorted

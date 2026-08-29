@@ -6,8 +6,9 @@ class Solution {
         // The sum reaches 1e11, so the accumulation and gap are 64-bit;
         // the answer itself stays below 1.1e9 and fits the int return.
         long long sum = 0;
-        for (int x : nums) sum += x;
-        long long gap = llabs((long long) goal - sum);
-        return (int) ((gap + limit - 1) / limit);
+        for (int x : nums)
+            sum += x;
+        long long gap = llabs((long long)goal - sum);
+        return (int)((gap + limit - 1) / limit);
     }
 };

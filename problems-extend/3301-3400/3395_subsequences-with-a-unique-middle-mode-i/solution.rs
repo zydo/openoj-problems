@@ -68,8 +68,8 @@ impl Solution {
                     tl += ru * (c2(ml - c_l) - sxl + c2(c_l));
                 }
             }
-            let total = cl * c2(mr) + cl * r * mr + cl * cr
-                + l * ml * r * mr + l * ml * cr + c2(ml) * cr + l * tr + r * tl;
+            let total =
+                cl * c2(mr) + cl * r * mr + cl * cr + l * ml * r * mr + l * ml * cr + c2(ml) * cr + l * tr + r * tl;
             ans = (ans + total) % MOD;
         }
         ans as i32

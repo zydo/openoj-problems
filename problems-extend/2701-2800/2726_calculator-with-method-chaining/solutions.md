@@ -1,11 +1,14 @@
 # Solutions — Calculator with Method Chaining
 
+Method chaining only asks that every operation return the calculator
+itself, so a single mutable field plus fluent methods is the whole design.
+
 ## Mutable Accumulator and Fluent Methods
 
 Store the current result in one field of the `Calculator`. Each arithmetic
 method updates that field and returns `this`, so the next method in a chain
-receives the same calculator with the new value. `getResult` simply exposes the
-accumulated value, while `divide` checks its argument before updating and
+receives the same calculator with the new value. `getResult` simply exposes
+the accumulated value, while `divide` checks its argument before updating and
 throws the required error when that argument is zero.
 
 The `Solution.solve` adapter passes the completed class to the judge-provided

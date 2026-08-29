@@ -6,9 +6,11 @@ class Solution {
         int m = matrix.size();
         int n = matrix[0].size();
         bool firstRowZero = false;
-        for (int value : matrix[0]) firstRowZero = firstRowZero || value == 0;
+        for (int value : matrix[0])
+            firstRowZero = firstRowZero || value == 0;
         bool firstColZero = false;
-        for (const auto &row : matrix) firstColZero = firstColZero || row[0] == 0;
+        for (const auto &row : matrix)
+            firstColZero = firstColZero || row[0] == 0;
         // First pass: each interior zero stamps its row and column into the
         // marker zone (the leading cell of its row and of its column).
         for (int i = 1; i < m; ++i) {
@@ -24,21 +26,25 @@ class Solution {
         // readable until both have consumed them.
         for (int i = 1; i < m; ++i) {
             if (matrix[i][0] == 0) {
-                for (int j = 1; j < n; ++j) matrix[i][j] = 0;
+                for (int j = 1; j < n; ++j)
+                    matrix[i][j] = 0;
             }
         }
         for (int j = 1; j < n; ++j) {
             if (matrix[0][j] == 0) {
-                for (int i = 1; i < m; ++i) matrix[i][j] = 0;
+                for (int i = 1; i < m; ++i)
+                    matrix[i][j] = 0;
             }
         }
         // The saved flags apply last, zeroing the marker zone itself — a
         // marker must never be mistaken for an original zero of row 0/col 0.
         if (firstRowZero) {
-            for (int j = 0; j < n; ++j) matrix[0][j] = 0;
+            for (int j = 0; j < n; ++j)
+                matrix[0][j] = 0;
         }
         if (firstColZero) {
-            for (int i = 0; i < m; ++i) matrix[i][0] = 0;
+            for (int i = 0; i < m; ++i)
+                matrix[i][0] = 0;
         }
         // The rewrite happened inside the input allocation; the same matrix,
         // now zeroed, is what the judge compares.

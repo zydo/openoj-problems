@@ -13,8 +13,7 @@ function maxSum(nums: number[], threshold: number[]): number {
             waiting[threshold[i]].push(i);
         }
     }
-    const less = (a: [number, number], b: [number, number]) =>
-        a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1];
+    const less = (a: [number, number], b: [number, number]) => (a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1]);
     let size = live.length;
     const siftDown = () => {
         let index = 0;

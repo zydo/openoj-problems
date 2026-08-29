@@ -1,4 +1,5 @@
 class Solution {
+
     public boolean checkValid(int[][] matrix) {
         int size = matrix.length;
         for (int index = 0; index < size; index++) {

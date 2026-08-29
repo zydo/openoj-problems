@@ -17,11 +17,11 @@ class Solution {
         for (int r = 0; r + pRows <= rows; r++) {
             for (int c = 0; c + pCols <= cols; c++) {
                 if (matches(board, pattern, r, c)) {
-                    return new int[] {r, c};
+                    return new int[] { r, c };
                 }
             }
         }
-        return new int[] {-1, -1};
+        return new int[] { -1, -1 };
     }
 
     private boolean matches(int[][] board, String[] pattern, int r, int c) {

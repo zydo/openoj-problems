@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> minBitwiseArray(vector<int>& nums) {
+    vector<int> minBitwiseArray(vector<int> &nums) {
         // a OR (a + 1) >= a + 1, so any solution for x satisfies a <= x - 1;
         // scanning candidates from 0 up, the first hit is the minimum. The
         // value a OR (a + 1) always ends in a 1 bit, hence odd, and the only

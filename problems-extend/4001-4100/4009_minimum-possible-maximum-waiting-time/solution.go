@@ -19,7 +19,7 @@ func minMaxWaitingTime(demand []int, fuel []int) int {
 				if r0 > w {
 					w = r0
 				}
-				nk := (((f0-d)*B+f1)*B + d)*B + maxInt(r1-r0, 0)
+				nk := (((f0-d)*B+f1)*B+d)*B + maxInt(r1-r0, 0)
 				if v, ok := nxt[nk]; !ok || w < v {
 					nxt[nk] = w
 				}
@@ -29,7 +29,7 @@ func minMaxWaitingTime(demand []int, fuel []int) int {
 				if r1 > w {
 					w = r1
 				}
-				nk := ((f0*B+(f1-d))*B + maxInt(r0-r1, 0))*B + d
+				nk := ((f0*B+(f1-d))*B+maxInt(r0-r1, 0))*B + d
 				if v, ok := nxt[nk]; !ok || w < v {
 					nxt[nk] = w
 				}

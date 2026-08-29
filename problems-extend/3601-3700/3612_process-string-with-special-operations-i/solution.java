@@ -18,7 +18,8 @@ class Solution {
                 // toString() captures the current content before appending,
                 // which is what makes the self-duplication well-defined.
                 result.append(result.toString());
-            } else { // '%'
+            } else {
+                // '%'
                 result.reverse();
             }
         }

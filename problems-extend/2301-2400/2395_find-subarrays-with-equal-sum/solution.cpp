@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool findSubarrays(vector<int> &nums) {
         // Sweep the n-1 length-2 window sums into a set; the first
         // repeat answers true.

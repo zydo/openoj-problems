@@ -27,15 +27,7 @@ impl Solution {
         // inequality because value is convex, so the best split point is
         // non-decreasing in i: search [opt_lo, opt_hi] only, and recurse
         // with the found point splitting the candidate range.
-        fn solve(
-            lo: i32,
-            hi: i32,
-            opt_lo: i32,
-            opt_hi: i32,
-            prefix: &[i64],
-            prev: &[i64],
-            cur: &mut [i64],
-        ) {
+        fn solve(lo: i32, hi: i32, opt_lo: i32, opt_hi: i32, prefix: &[i64], prev: &[i64], cur: &mut [i64]) {
             if lo > hi {
                 return;
             }
@@ -58,8 +50,15 @@ impl Solution {
         }
 
         for j in 2..=k {
-            solve(j as i32, (n - k + j) as i32, (j - 1) as i32, (n - k + j - 1) as i32, &prefix,
-                &prev, &mut cur);
+            solve(
+                j as i32,
+                (n - k + j) as i32,
+                (j - 1) as i32,
+                (n - k + j - 1) as i32,
+                &prefix,
+                &prev,
+                &mut cur,
+            );
             std::mem::swap(&mut prev, &mut cur);
         }
         prev[n]

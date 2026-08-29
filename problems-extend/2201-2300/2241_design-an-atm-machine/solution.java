@@ -1,6 +1,6 @@
 class ATM {
 
-    private static final long[] DENOMS = {20, 50, 100, 200, 500};
+    private static final long[] DENOMS = { 20, 50, 100, 200, 500 };
     private final long[] counts;
 
     public ATM() {
@@ -22,7 +22,7 @@ class ATM {
             remaining -= take * DENOMS[i];
         }
         if (remaining != 0) {
-            return new long[]{-1};
+            return new long[] { -1 };
         }
         for (int i = 0; i < 5; i++) {
             counts[i] -= taken[i];

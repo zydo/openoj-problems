@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int sumOddLengthSubarrays(vector<int>& arr) {
+  public:
+    int sumOddLengthSubarrays(vector<int> &arr) {
         // For each index i, left = i + 1 choices for the subarray's start
         // and right = n - i choices for its end; among those left * right
         // subarrays through i, exactly ceil(left * right / 2) have odd

@@ -13,7 +13,7 @@ func minStable(nums []int, maxC int) int {
 	st[0] = append([]int(nil), nums...)
 	for k := 1; k < LOG; k++ {
 		half := 1 << (k - 1)
-		length := n - (1<<k) + 1
+		length := n - (1 << k) + 1
 		row := make([]int, length)
 		for i := 0; i < length; i++ {
 			row[i] = gcd(st[k-1][i], st[k-1][i+half])

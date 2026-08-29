@@ -36,7 +36,7 @@ class Solution {
         if (found != memo.end()) {
             return found->second;
         }
-        int n = (int) a.size();
+        int n = (int)a.size();
         for (int i = 1; i < n; ++i) {
             // Keep the halves in order: the split of b sits at the same
             // index as the split of a.

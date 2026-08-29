@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int shortestWay(string source, string target) {
-        throw logic_error("TODO");
-    }
+  public:
+    int shortestWay(string source, string target) { throw logic_error("TODO"); }
 };

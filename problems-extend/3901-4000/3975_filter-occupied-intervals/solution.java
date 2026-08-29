@@ -10,10 +10,9 @@ class Solution {
         List<int[]> merged = new ArrayList<>();
         for (int[] interval : occupiedIntervals) {
             if (!merged.isEmpty() && interval[0] <= merged.get(merged.size() - 1)[1] + 1) {
-                merged.get(merged.size() - 1)[1] = Math.max(
-                        merged.get(merged.size() - 1)[1], interval[1]);
+                merged.get(merged.size() - 1)[1] = Math.max(merged.get(merged.size() - 1)[1], interval[1]);
             } else {
-                merged.add(new int[] {interval[0], interval[1]});
+                merged.add(new int[] { interval[0], interval[1] });
             }
         }
 
@@ -22,14 +21,14 @@ class Solution {
             int start = interval[0];
             int end = interval[1];
             if (freeEnd < start || freeStart > end) {
-                answer.add(new int[] {start, end});
+                answer.add(new int[] { start, end });
                 continue;
             }
             if (freeStart > start) {
-                answer.add(new int[] {start, freeStart - 1});
+                answer.add(new int[] { start, freeStart - 1 });
             }
             if (freeEnd < end) {
-                answer.add(new int[] {freeEnd + 1, end});
+                answer.add(new int[] { freeEnd + 1, end });
             }
         }
         return answer.toArray(new int[0][]);

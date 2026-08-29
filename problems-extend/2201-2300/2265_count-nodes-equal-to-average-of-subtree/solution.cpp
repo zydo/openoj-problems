@@ -6,11 +6,11 @@ using namespace std;
 
 class Solution {
   public:
-    int averageOfSubtree(TreeNode* root) {
+    int averageOfSubtree(TreeNode *root) {
         // Iterative post-order: frames carry (node, children pending).
-        vector<pair<TreeNode*, bool>> stack{{root, false}};
-        unordered_map<TreeNode*, long long> sums;
-        unordered_map<TreeNode*, int> sizes;
+        vector<pair<TreeNode *, bool>> stack{{root, false}};
+        unordered_map<TreeNode *, long long> sums;
+        unordered_map<TreeNode *, int> sizes;
         int count = 0;
         while (!stack.empty()) {
             auto [node, visited] = stack.back();

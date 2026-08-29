@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    std::vector<long long> avoidFlood(std::vector<long long>& rains) {
+    std::vector<long long> avoidFlood(std::vector<long long> &rains) {
         int n = (int)rains.size();
         std::vector<int> zeros;
         std::unordered_map<long long, int> last;
@@ -17,9 +17,7 @@ class Solution {
             } else {
                 auto it = last.find(r);
                 if (it != last.end()) {
-                    int pos = (int)(std::upper_bound(zeros.begin(), zeros.end(),
-                                                     it->second) -
-                                    zeros.begin());
+                    int pos = (int)(std::upper_bound(zeros.begin(), zeros.end(), it->second) - zeros.begin());
                     if (pos == (int)zeros.size() || zeros[pos] >= i) {
                         return {};
                     }

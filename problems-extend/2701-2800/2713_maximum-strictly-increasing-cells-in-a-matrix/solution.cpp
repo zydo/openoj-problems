@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int maxIncreasingCells(vector<vector<int>>& mat) {
+    int maxIncreasingCells(vector<vector<int>> &mat) {
         // Chains only ever move to strictly greater values, so sweeping the
         // distinct values in ascending order lets every cell inherit the
         // best chain that already ends in its row or column among smaller
@@ -24,7 +24,7 @@ class Solution {
         int i = 0;
         const int total = static_cast<int>(cells.size());
         while (i < total) {
-            int j = i;  // run-length batch equal values: equal cells never chain
+            int j = i; // run-length batch equal values: equal cells never chain
             while (j < total && cells[j][0] == cells[i][0]) {
                 ++j;
             }
@@ -36,7 +36,7 @@ class Solution {
                 batch.push_back({length, r, c});
                 best = std::max(best, length);
             }
-            for (const array<int, 3>& entry : batch) {
+            for (const array<int, 3> &entry : batch) {
                 if (rowMax[entry[1]] < entry[0]) {
                     rowMax[entry[1]] = entry[0];
                 }

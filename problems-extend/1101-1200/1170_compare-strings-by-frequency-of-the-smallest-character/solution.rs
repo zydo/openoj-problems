@@ -6,10 +6,7 @@ impl Solution {
     }
 
     pub fn num_smaller_by_frequency(queries: Vec<String>, words: Vec<String>) -> Vec<i32> {
-        let mut freqs: Vec<i32> = words
-            .iter()
-            .map(|w| Self::f(w.as_bytes()))
-            .collect();
+        let mut freqs: Vec<i32> = words.iter().map(|w| Self::f(w.as_bytes())).collect();
         freqs.sort();
         queries
             .iter()

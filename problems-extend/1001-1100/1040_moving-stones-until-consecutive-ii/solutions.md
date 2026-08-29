@@ -7,7 +7,7 @@ integers, no move is legal and the answer is `[0, 0]`.
 
 **Maximum.** To stall as long as possible, keep nudging the endpoint
 stone on one side just one slot inward per move, filling every empty
-slot on that side one at a time. The catch is the *other* side: it is
+slot on that side one at a time. The catch is the _other_ side: it is
 never reachable this way, so whichever side we leave untouched, its own
 already-occupied span is wasted. Losing the low side wastes
 `stones[1] - stones[0]` positions of the low gap that can never be
@@ -16,7 +16,7 @@ visited this way, so playing it out from the high side yields
 from the low side yields `stones[n-2] - stones[0] - (n - 2)` moves. The
 maximum is the larger of the two — whichever side wastes fewer stones.
 
-**Minimum.** Slide a window of `n` consecutive integer *values* across
+**Minimum.** Slide a window of `n` consecutive integer _values_ across
 the sorted positions. For the window ending at `stones[r]`, advance the
 left pointer `l` while `stones[r] - stones[l] + 1 > n`; the stones with
 index in `[l, r]` already sit inside a `n`-wide span, so only

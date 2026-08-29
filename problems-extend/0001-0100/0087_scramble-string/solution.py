@@ -30,7 +30,7 @@ class Solution:
                     memo[(a, b)] = True
                     return True
                 # Swap the halves: the head of a pairs with the tail of b.
-                if solve(a[:i], b[n - i:]) and solve(a[i:], b[: n - i]):
+                if solve(a[:i], b[n - i :]) and solve(a[i:], b[: n - i]):
                     memo[(a, b)] = True
                     return True
             memo[(a, b)] = False

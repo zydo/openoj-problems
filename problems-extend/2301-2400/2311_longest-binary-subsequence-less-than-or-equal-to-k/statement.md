@@ -12,8 +12,8 @@ Note:
 - The subsequence can contain leading zeroes.
 - The empty string is considered to be equal to 0.
 - A subsequence is a string that can be derived from another string by
-deleting some or no characters without changing the order of the remaining
-characters.
+  deleting some or no characters without changing the order of the remaining
+  characters.
 
 ### Example 1
 

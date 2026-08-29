@@ -25,11 +25,9 @@ class Solution:
         for i in range(n):
             # Pop the top line while it is never strictly above its
             # neighbours: skill >= 1 keeps every slope distinct.
-            while (
-                len(hull_p) >= 2
-                and (hull_s[-2] - skill[i]) * (hull_p[-1] - hull_p[-2])
-                <= (hull_s[-2] - hull_s[-1]) * (pref[i] - hull_p[-2])
-            ):
+            while len(hull_p) >= 2 and (hull_s[-2] - skill[i]) * (hull_p[-1] - hull_p[-2]) <= (
+                hull_s[-2] - hull_s[-1]
+            ) * (pref[i] - hull_p[-2]):
                 hull_s.pop()
                 hull_p.pop()
             hull_s.append(skill[i])
@@ -44,9 +42,7 @@ class Solution:
             lo, hi = 0, len(hull_s) - 1
             while lo < hi:
                 mid = (lo + hi) // 2
-                if q * (hull_s[mid + 1] - hull_s[mid]) >= p * (
-                    hull_p[mid] - hull_p[mid + 1]
-                ):
+                if q * (hull_s[mid + 1] - hull_s[mid]) >= p * (hull_p[mid] - hull_p[mid + 1]):
                     lo = mid + 1
                 else:
                     hi = mid

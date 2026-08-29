@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int largestSumAfterKNegations(vector<int>& nums, int k) {
+    int largestSumAfterKNegations(vector<int> &nums, int k) {
         // Sort so the most negative values lead, then spend operations on
         // them first — flipping the most negative value always raises the
         // sum by the most. Stop as soon as either k runs out or the walk

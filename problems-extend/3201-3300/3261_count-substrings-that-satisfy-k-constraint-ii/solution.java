@@ -41,10 +41,10 @@ class Solution {
             int j = next[l];
             if (j > r) {
                 long m = r - l + 1;
-                answer[t] = m * (m + 1) / 2;
+                answer[t] = (m * (m + 1)) / 2;
             } else {
                 long d = j - l;
-                answer[t] = pre[r + 1] - pre[j] + d * (d + 1) / 2;
+                answer[t] = pre[r + 1] - pre[j] + (d * (d + 1)) / 2;
             }
         }
         return answer;

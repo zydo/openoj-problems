@@ -1,4 +1,5 @@
 class Solution {
+
     public int countLetters(String s) {
         int total = 0;
         int run = 0;

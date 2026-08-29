@@ -9,7 +9,8 @@ class Solution {
         long[] dp = new long[target + 1];
         dp[0] = 1;
         for (int[] type : types) {
-            int count = type[0], marks = type[1];
+            int count = type[0],
+                marks = type[1];
             long[] nxt = new long[target + 1];
             for (int points = 0; points <= target; ++points) {
                 int maxTake = Math.min(count, points / marks);

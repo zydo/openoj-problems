@@ -1,7 +1,6 @@
 class Solution {
-public:
-    int maxTastiness(vector<int> &price, vector<int> &tastiness, int maxAmount,
-                     int maxCoupons) {
+  public:
+    int maxTastiness(vector<int> &price, vector<int> &tastiness, int maxAmount, int maxCoupons) {
         // dp[a][c] = best tastiness having spent `a` and used `c` coupons.
         // Descending both axes keeps each fruit usable at most once: every
         // update lands at a larger amount or a larger coupon count, which

@@ -1,8 +1,8 @@
 #include <cstdlib>
 
 class Solution {
-public:
-    int maxAdjacentDistance(vector<int>& nums) {
+  public:
+    int maxAdjacentDistance(vector<int> &nums) {
         // One pass over the n circular edges: pair i with (i + 1) % n, so
         // the last iteration compares the last and first elements.
         int ans = 0;

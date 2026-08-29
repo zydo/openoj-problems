@@ -22,7 +22,8 @@ class Solution {
                 int r = dr[d] < 0 ? i : n - 1 - i;
                 for (int c = 0; c < m; ++c) {
                     for (int j = 0; j < 2; ++j) {
-                        if (grid[r][c] != 2 * j) continue;
+                        if (grid[r][c] != 2 * j)
+                            continue;
                         int nr = r + dr[d], nc = c + dc[d];
                         S[j][d][r][c] = 1 + (inB(nr, nc) ? S[1 - j][d][nr][nc] : 0);
                     }
@@ -38,11 +39,13 @@ class Solution {
                 int r = dr[d] < 0 ? i : n - 1 - i;
                 for (int c = 0; c < m; ++c) {
                     for (int j = 0; j < 2; ++j) {
-                        if (grid[r][c] != 2 * j) continue;
+                        if (grid[r][c] != 2 * j)
+                            continue;
                         int nr = r + dr[d], nc = c + dc[d];
                         int tr = r + dr[cw], tc = c + dc[cw];
                         int best = inB(nr, nc) ? M[1 - j][d][nr][nc] : 0;
-                        if (inB(tr, tc)) best = max(best, S[1 - j][cw][tr][tc]);
+                        if (inB(tr, tc))
+                            best = max(best, S[1 - j][cw][tr][tc]);
                         M[j][d][r][c] = 1 + best;
                     }
                 }
@@ -52,11 +55,13 @@ class Solution {
         int ans = 0;
         for (int r = 0; r < n; ++r) {
             for (int c = 0; c < m; ++c) {
-                if (grid[r][c] != 1) continue;
+                if (grid[r][c] != 1)
+                    continue;
                 int best = 0;
                 for (int d = 0; d < 4; ++d) {
                     int nr = r + dr[d], nc = c + dc[d];
-                    if (inB(nr, nc)) best = max(best, M[1][d][nr][nc]);
+                    if (inB(nr, nc))
+                        best = max(best, M[1][d][nr][nc]);
                 }
                 ans = max(ans, 1 + best);
             }

@@ -3,10 +3,7 @@ class Solution {
         caseRunner.check(this);
     }
 
-    createObject(
-        keysArr: unknown[],
-        valuesArr: unknown[],
-    ): Record<string, unknown> {
+    createObject(keysArr: unknown[], valuesArr: unknown[]): Record<string, unknown> {
         // One ascending pass; a pair only writes when its coerced key is
         // not already an OWN property, so the first occurrence of every
         // string wins and later duplicates are skipped outright. The probe

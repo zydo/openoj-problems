@@ -41,14 +41,17 @@ class Solution {
 
     private boolean wins(String cells, char player) {
         int[][] lines = {
-            {0, 1, 2}, {3, 4, 5}, {6, 7, 8},
-            {0, 3, 6}, {1, 4, 7}, {2, 5, 8},
-            {0, 4, 8}, {2, 4, 6}
+            { 0, 1, 2 },
+            { 3, 4, 5 },
+            { 6, 7, 8 },
+            { 0, 3, 6 },
+            { 1, 4, 7 },
+            { 2, 5, 8 },
+            { 0, 4, 8 },
+            { 2, 4, 6 },
         };
         for (int[] line : lines) {
-            if (cells.charAt(line[0]) == player
-                    && cells.charAt(line[1]) == player
-                    && cells.charAt(line[2]) == player) {
+            if (cells.charAt(line[0]) == player && cells.charAt(line[1]) == player && cells.charAt(line[2]) == player) {
                 return true;
             }
         }

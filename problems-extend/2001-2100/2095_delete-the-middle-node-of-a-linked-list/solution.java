@@ -1,4 +1,5 @@
 class Solution {
+
     public ListNode deleteMiddle(ListNode head) {
         ListNode dummy = new ListNode(0, head);
         ListNode slow = dummy;

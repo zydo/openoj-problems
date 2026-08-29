@@ -13,8 +13,7 @@ class Solution {
         // time per machine.
         int n = costs.length;
         long[] machines = new long[n];
-        for (int i = 0; i < n; i++)
-            machines[i] = ((long) costs[i] << 17) | capacity[i];
+        for (int i = 0; i < n; i++) machines[i] = ((long) costs[i] << 17) | capacity[i];
         Arrays.sort(machines);
         int[] sortedCosts = new int[n];
         int[] caps = new int[n];
@@ -35,8 +34,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             int cost = sortedCosts[i];
             int cap = caps[i];
-            if (cost < budget)
-                ans = Math.max(ans, cap);
+            if (cost < budget) ans = Math.max(ans, cap);
             // Largest j with sortedCosts[j] < budget - cost.
             int lo = 0;
             int hi = n;
@@ -46,8 +44,7 @@ class Solution {
                 else hi = mid;
             }
             int t = Math.min(lo - 1, i - 1);
-            if (t >= 0)
-                ans = Math.max(ans, cap + prefMax[t]);
+            if (t >= 0) ans = Math.max(ans, cap + prefMax[t]);
         }
         return ans;
     }

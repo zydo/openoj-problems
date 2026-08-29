@@ -21,16 +21,15 @@ var countPairs = function (nums) {
     for (const x of nums) widest = Math.max(widest, x);
     const w = String(widest).length;
     const pairs = [];
-    for (let i = 0; i < w; i++)
-        for (let j = i + 1; j < w; j++) pairs.push([i, j]);
+    for (let i = 0; i < w; i++) for (let j = i + 1; j < w; j++) pairs.push([i, j]);
     const seen = new Map();
     let ans = 0;
     for (const x of nums) {
         const s = String(x);
-        const d = new Array(w).fill('0');
+        const d = new Array(w).fill("0");
         for (let k = 0; k < s.length; k++) d[w - s.length + k] = s[k];
         const states = new Set();
-        const value = () => Number(d.join(''));
+        const value = () => Number(d.join(""));
         states.add(value());
         for (const [i, j] of pairs) {
             [d[i], d[j]] = [d[j], d[i]];

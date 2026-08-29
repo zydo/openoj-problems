@@ -1,4 +1,5 @@
 class Solution {
+
     public boolean areNumbersAscending(String s) {
         int previous = 0;
 

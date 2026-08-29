@@ -9,15 +9,9 @@ var largestLocal = function (grid) {
     const n = grid.length;
     const rowMax = [];
     for (let i = 0; i < n; ++i) {
-        rowMax.push(
-            Array.from({ length: n - 2 }, (_, j) =>
-                Math.max(grid[i][j], grid[i][j + 1], grid[i][j + 2])
-            )
-        );
+        rowMax.push(Array.from({ length: n - 2 }, (_, j) => Math.max(grid[i][j], grid[i][j + 1], grid[i][j + 2])));
     }
     return Array.from({ length: n - 2 }, (_, i) =>
-        Array.from({ length: n - 2 }, (_, j) =>
-            Math.max(rowMax[i][j], rowMax[i + 1][j], rowMax[i + 2][j])
-        )
+        Array.from({ length: n - 2 }, (_, j) => Math.max(rowMax[i][j], rowMax[i + 1][j], rowMax[i + 2][j])),
     );
 };

@@ -4,6 +4,7 @@ import java.util.Deque;
 import java.util.List;
 
 class Solution {
+
     public int maximumDetonation(int[][] bombs) {
         int count = bombs.length;
         List<List<Integer>> graph = new ArrayList<>();

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> resultsArray(vector<int>& nums, int k) {
+  public:
+    vector<int> resultsArray(vector<int> &nums, int k) {
         int n = static_cast<int>(nums.size());
         vector<int> results(n - k + 1);
         int run = 1;

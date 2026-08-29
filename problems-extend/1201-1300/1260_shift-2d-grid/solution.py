@@ -11,4 +11,4 @@ class Solution:
         shifted = [0] * total
         for p, v in enumerate(flat):
             shifted[(p + k) % total] = v
-        return [shifted[r * n:(r + 1) * n] for r in range(m)]
+        return [shifted[r * n : (r + 1) * n] for r in range(m)]

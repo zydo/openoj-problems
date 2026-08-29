@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int getMaximumGenerated(int n) {
         if (n == 0) {
             return 0;

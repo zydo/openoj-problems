@@ -26,15 +26,11 @@ impl Solution {
                 if !linked(a, b) {
                     return true;
                 }
-                (1..=n).any(|c| {
-                    c != a && c != b && !linked(a, c) && !linked(b, c)
-                })
+                (1..=n).any(|c| c != a && c != b && !linked(a, c) && !linked(b, c))
             }
             4 => {
                 let (w, x, y, z) = (odds[0], odds[1], odds[2], odds[3]);
-                (!linked(w, x) && !linked(y, z))
-                    || (!linked(w, y) && !linked(x, z))
-                    || (!linked(w, z) && !linked(x, y))
+                (!linked(w, x) && !linked(y, z)) || (!linked(w, y) && !linked(x, z)) || (!linked(w, z) && !linked(x, y))
             }
             _ => false,
         }

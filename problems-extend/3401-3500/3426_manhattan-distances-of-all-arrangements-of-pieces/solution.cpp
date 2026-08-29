@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     // Fix an unordered pair of cells: both carry a piece in exactly
     // C(m*n - 2, k - 2) arrangements (place the remaining k - 2 pieces
     // anywhere else), so the answer is (pairwise distance sum over all cell
@@ -24,15 +24,13 @@ public:
             invFact[i - 1] = invFact[i] * i % mod;
         }
 
-        auto tri = [](long long dim) {
-            return dim * (dim - 1) * (dim + 1) / 6 % 1'000'000'007LL;
-        };
+        auto tri = [](long long dim) { return dim * (dim - 1) * (dim + 1) / 6 % 1'000'000'007LL; };
         long long pairs = (1LL * n * n % mod * tri(m) + 1LL * m * m % mod * tri(n)) % mod;
         long long choose = fact[total - 2] * invFact[k - 2] % mod * invFact[total - k] % mod;
-        return (int) (pairs * choose % mod);
+        return (int)(pairs * choose % mod);
     }
 
-private:
+  private:
     static long long modPow(long long base, long long exp, long long mod) {
         long long result = 1;
         long long b = base % mod;

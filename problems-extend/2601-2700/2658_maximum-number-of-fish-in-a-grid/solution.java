@@ -26,8 +26,7 @@ class Solution {
                     for (int[] step : steps) {
                         int nr = cell[0] + step[0];
                         int nc = cell[1] + step[1];
-                        if (nr >= 0 && nr < rows && nc >= 0 && nc < columns
-                                && grid[nr][nc] > 0 && !visited[nr][nc]) {
+                        if (nr >= 0 && nr < rows && nc >= 0 && nc < columns && grid[nr][nc] > 0 && !visited[nr][nc]) {
                             visited[nr][nc] = true;
                             stack.push(new int[] { nr, nc });
                         }

@@ -12,7 +12,8 @@ class Solution {
             degree[x] = 0;
         }
         for (int index = 0; index < edges.length; index++) {
-            int u = edges[index][0], v = edges[index][1];
+            int u = edges[index][0],
+                v = edges[index][1];
             adjacency[u][degree[u] * 2] = v;
             adjacency[u][degree[u] * 2 + 1] = index;
             degree[u]++;
@@ -60,7 +61,7 @@ class Solution {
         }
         // Whatever parity survives at the root cannot be fixed anywhere.
         if (need[0]) {
-            return new int[] {-1};
+            return new int[] { -1 };
         }
         // A final ascending scan emits the chosen indices in order.
         int count = 0;

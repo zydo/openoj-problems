@@ -13,7 +13,7 @@ contain.
 
 Each scaffold row then drives two correlated scalar subqueries.
 `active_drivers` counts `Drivers` rows whose `join_date` is strictly
-before the first day of the *next* calendar month — `date('2020-' ||
+before the first day of the _next_ calendar month — `date('2020-' ||
 printf('%02d', months.month) || '-01', '+1 month')` — which is exactly
 "on or before this month's last day" without needing to know how many
 days that month has, and naturally includes drivers who joined in an

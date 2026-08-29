@@ -15,7 +15,8 @@ class Solution {
         long long answer = 0;
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < i; ++j) {
-                if (nums[j] >= nums[i]) continue;
+                if (nums[j] >= nums[i])
+                    continue;
                 int candidate = lengths[j] + 1;
                 if (candidate > lengths[i]) {
                     lengths[i] = candidate;

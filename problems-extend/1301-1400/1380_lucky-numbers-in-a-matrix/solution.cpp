@@ -2,8 +2,8 @@
 #include <vector>
 
 class Solution {
-public:
-    std::vector<int> luckyNumbers(std::vector<std::vector<int>>& matrix) {
+  public:
+    std::vector<int> luckyNumbers(std::vector<std::vector<int>> &matrix) {
         int m = static_cast<int>(matrix.size()), n = static_cast<int>(matrix[0].size());
         std::vector<int> rowMin(m), colMax(n);
         for (int r = 0; r < m; r++) {
@@ -11,7 +11,8 @@ public:
         }
         for (int c = 0; c < n; c++) {
             int best = matrix[0][c];
-            for (int r = 0; r < m; r++) best = std::max(best, matrix[r][c]);
+            for (int r = 0; r < m; r++)
+                best = std::max(best, matrix[r][c]);
             colMax[c] = best;
         }
         std::vector<int> lucky;

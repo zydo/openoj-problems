@@ -56,8 +56,7 @@ class Solution {
                 total += freq[kernel[node]];
                 freq[kernel[node]] += 1;
                 stack.push_back(node + n);
-                stack.insert(stack.end(), children[node].begin(),
-                             children[node].end());
+                stack.insert(stack.end(), children[node].begin(), children[node].end());
             } else {
                 --freq[kernel[node - n]];
             }

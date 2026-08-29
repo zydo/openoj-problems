@@ -3,7 +3,7 @@
 ## Average per-trip ratios within each half, then subtract
 
 A driver's efficiency for one trip is `distance_km / fuel_consumed`, and the
-statement asks for the *average of those ratios* per half-year — not the
+statement asks for the _average of those ratios_ per half-year — not the
 ratio of the sums. So the query first derives one fact row per trip: joining
 `trips` to `drivers` on `driver_id` keeps only trips that belong to a known
 driver, and alongside the driver key it computes the per-trip ratio and the
@@ -19,7 +19,7 @@ ignores NULLs — so one grouped pass produces both halves' means. The
 `HAVING SUM(m <= 6) > 0 AND SUM(m >= 7) > 0` clause enforces the only
 inclusion rule the statement states: a driver must have at least one trip in
 each half. `efficiency_improvement` is `ROUND` of the difference of the two
-*unrounded* averages — Bob Smith in the example shows why: his displayed
+_unrounded_ averages — Bob Smith in the example shows why: his displayed
 means are 13.33 and 11.24, whose difference is 2.09, but the true means
 differ by 2.0959…, which rounds to the expected 2.10. `first_half_avg` and
 `second_half_avg` are rounded on their own, and the final `ORDER BY`

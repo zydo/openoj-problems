@@ -9,7 +9,7 @@ You are given a positive integer `k`.
 Now Bob will ask Alice to perform the following operation forever:
 
 - Generate a new string by changing each character in `word` to its next
-character in the English alphabet, and append it to the original word.
+  character in the English alphabet, and append it to the original word.
 
 For example, performing the operation on `"c"` generates `"cd"` and
 performing the operation on `"zb"` generates `"zbac"`.

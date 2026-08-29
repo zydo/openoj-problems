@@ -4,8 +4,7 @@ function isWinner(player1: number[], player2: number[]): number {
     const score = (values: number[]): number => {
         let total = 0;
         for (let index = 0; index < values.length; index++) {
-            const doubled =
-                values.slice(Math.max(0, index - 2), index).includes(10);
+            const doubled = values.slice(Math.max(0, index - 2), index).includes(10);
             total += doubled ? 2 * values[index] : values[index];
         }
         return total;

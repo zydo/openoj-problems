@@ -17,7 +17,7 @@ class Solution {
         if (values.size() == 1) {
             return abs(values[0] - 24.0) < 1e-6;
         }
-        int n = (int) values.size();
+        int n = (int)values.size();
         for (int i = 0; i < n; ++i) {
             for (int j = i + 1; j < n; ++j) {
                 double a = values[i];

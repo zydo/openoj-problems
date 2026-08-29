@@ -13,9 +13,9 @@ This table contains the days of failed tasks.
 
 Table: `Succeeded`
 
-| Column Name   | Type |
-| ------------- | ---- |
-| success_date  | date |
+| Column Name  | Type |
+| ------------ | ---- |
+| success_date | date |
 
 `success_date` is the primary key (column with unique values) for this table.
 This table contains the days of succeeded tasks.

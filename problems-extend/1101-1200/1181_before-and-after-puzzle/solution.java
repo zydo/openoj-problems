@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.TreeSet;
 
 class Solution {
+
     public List<String> beforeAndAfterPuzzles(String[] phrases) {
         int n = phrases.length;
         String[][] words = new String[n][];
@@ -15,8 +16,7 @@ class Solution {
         // predecessor will search by its own last word.
         Map<String, List<Integer>> byFirst = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            byFirst.computeIfAbsent(words[i][0], k -> new ArrayList<>())
-                    .add(i);
+            byFirst.computeIfAbsent(words[i][0], k -> new ArrayList<>()).add(i);
         }
         TreeSet<String> results = new TreeSet<>();
         for (int i = 0; i < n; i++) {

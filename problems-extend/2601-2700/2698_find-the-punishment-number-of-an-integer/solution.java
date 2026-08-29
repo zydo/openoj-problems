@@ -6,7 +6,7 @@ class Solution {
             String digits = Integer.toString(i * i);
             int length = digits.length();
             boolean found = false;
-            for (int mask = 0; mask < (1 << (length - 1)); mask++) {
+            for (int mask = 0; mask < 1 << (length - 1); mask++) {
                 int sum = 0;
                 int cur = 0;
                 boolean pruned = false;

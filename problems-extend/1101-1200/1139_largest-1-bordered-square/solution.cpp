@@ -17,8 +17,8 @@ class Solution {
                 for (int side = 1; side <= limit; ++side) {
                     int r2 = r1 + side - 1, c2 = c1 + side - 1;
                     // Each edge is solid iff its cell sum equals its length.
-                    if (rect(r1, c1, r1, c2) == side && rect(r2, c1, r2, c2) == side
-                        && rect(r1, c1, r2, c1) == side && rect(r1, c2, r2, c2) == side) {
+                    if (rect(r1, c1, r1, c2) == side && rect(r2, c1, r2, c2) == side && rect(r1, c1, r2, c1) == side &&
+                        rect(r1, c2, r2, c2) == side) {
                         best = max(best, side * side);
                     }
                 }

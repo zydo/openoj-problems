@@ -8,11 +8,9 @@ modular powers.
 ## Per-Position Contribution
 
 Let `m = r - l + 1` be the number of allowed digits and `S = l + (l+1) + ...
-+ r = (l+r)·m/2` their sum. Across all `m^k` strings, a fixed position `p`
-holds any particular digit `d` in exactly `m^(k-1)` of them — the other
-`k - 1` positions are free — so position `p` contributes
-`10^p · S · m^(k-1)` to the total. Summing over `p = 0..k-1` collapses the
-place weights into the repunit `R(k) = (10^k - 1) / 9`, giving the closed
+
+- r = (l+r)·m/2`their sum. Across all`m^k`strings, a fixed position`p`holds any particular digit`d`in exactly`m^(k-1)`of them — the other`k - 1`positions are free — so position`p`contributes`10^p · S · m^(k-1)`to the total. Summing over`p = 0..k-1`collapses the
+place weights into the repunit`R(k) = (10^k - 1) / 9`, giving the closed
 form `S · m^(k-1) · R(k)`.
 
 Modulo `10⁹ + 7`, the repunit is reduced as `(10^k - 1) · 9⁻¹`: since

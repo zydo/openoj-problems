@@ -1,4 +1,5 @@
 class RandomListNode {
+
     public int val;
     public RandomListNode next;
     public RandomListNode random;

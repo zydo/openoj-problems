@@ -44,9 +44,7 @@ class ThrottleCase {
         this.events = [];
     }
 
-    drive(
-        throttle: (fn: (...inputs: any[]) => void, t: number) => (...args: any[]) => void,
-    ): void {
+    drive(throttle: (fn: (...inputs: any[]) => void, t: number) => (...args: any[]) => void): void {
         const globalObject = globalThis as any;
         const realSetTimeout = globalObject.setTimeout;
         const realClearTimeout = globalObject.clearTimeout;

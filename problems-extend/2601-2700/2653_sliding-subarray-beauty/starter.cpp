@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> getSubarrayBeauty(vector<int>& nums, int k, int x) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> getSubarrayBeauty(vector<int> &nums, int k, int x) { throw logic_error("TODO"); }
 };

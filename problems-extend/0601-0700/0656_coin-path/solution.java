@@ -25,7 +25,8 @@ class Solution {
             if (coins[i] == -1) {
                 continue;
             }
-            int best = UNREACHABLE, bestFrom = -1;
+            int best = UNREACHABLE,
+                bestFrom = -1;
             int limit = Math.min(i + maxJump, n - 1);
             for (int j = i + 1; j <= limit; ++j) {
                 if (cost[j] < best) {

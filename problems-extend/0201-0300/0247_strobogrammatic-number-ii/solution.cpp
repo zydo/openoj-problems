@@ -1,8 +1,6 @@
 class Solution {
   public:
-    vector<string> findStrobogrammatic(int n) {
-        return build(n, true);
-    }
+    vector<string> findStrobogrammatic(int n) { return build(n, true); }
 
   private:
     // A strobogrammatic number of length n is one wrapping pair around one

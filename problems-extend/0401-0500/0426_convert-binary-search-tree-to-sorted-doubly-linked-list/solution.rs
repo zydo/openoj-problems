@@ -1,10 +1,8 @@
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
 
 impl Solution {
-    pub fn tree_to_doubly_list(
-        root: Option<Box<TreeNode>>,
-    ) -> Option<Rc<RefCell<NodeWithNext>>> {
+    pub fn tree_to_doubly_list(root: Option<Box<TreeNode>>) -> Option<Rc<RefCell<NodeWithNext>>> {
         let mut values = Vec::new();
         let mut stack: Vec<&TreeNode> = Vec::new();
         let mut node = root.as_deref();

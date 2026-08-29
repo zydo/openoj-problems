@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    int captureForts(std::vector<int>& forts) {
+    int captureForts(std::vector<int> &forts) {
         // A move is only possible between two non-zero entries separated
         // by enemy forts, and it captures when the two ends differ (your
         // fort 1 -> empty -1 in either direction). One scan remembers the

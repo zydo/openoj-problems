@@ -19,7 +19,7 @@ class Solution {
         string out;
         out.reserve(s.size());
         for (int c : ranked) {
-            out.append(counts[c], (char) c);
+            out.append(counts[c], (char)c);
         }
         return out;
     }

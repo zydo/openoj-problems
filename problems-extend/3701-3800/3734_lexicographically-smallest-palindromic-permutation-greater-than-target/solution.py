@@ -40,9 +40,7 @@ class Solution:
                 wins = mirrored > suffix
             else:
                 mid = ord(target[m]) - ord("a")
-                wins = odd_letter > mid or (
-                    odd_letter == mid and mirrored > suffix
-                )
+                wins = odd_letter > mid or (odd_letter == mid and mirrored > suffix)
             if wins:
                 best = p
         # Candidate 2: the smallest half arrangement strictly greater than p —
@@ -62,9 +60,7 @@ class Solution:
                 cur[ci] -= 1
             if bump_at >= 0:
                 bump_cur[bump_ch] -= 1
-                tail = "".join(
-                    chr(ord("a") + d) * bump_cur[d] for d in range(26)
-                )
+                tail = "".join(chr(ord("a") + d) * bump_cur[d] for d in range(26))
                 best = p[:bump_at] + chr(ord("a") + bump_ch) + tail
         if best is None:
             return ""

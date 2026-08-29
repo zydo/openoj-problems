@@ -6,7 +6,13 @@
   "slug": "camelcase-matching",
   "title": "Camelcase Matching",
   "difficulty": "",
-  "tags": ["Array", "Two Pointers", "String", "Trie", "String Matching"],
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Trie",
+    "String Matching"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",
@@ -15,14 +21,38 @@
       {
         "name": "queries",
         "codec": "json",
-        "value_type": { "kind": "array", "items": { "kind": "string" } }
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
       },
-      { "name": "pattern", "codec": "json", "value_type": { "kind": "string" } }
+      {
+        "name": "pattern",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
     ],
     "return_codec": "json",
-    "return_type": { "kind": "array", "items": { "kind": "boolean" } },
-    "entrypoints": { "go": "camelMatch", "rust": "camel_match", "typescript": "camelMatch" },
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "boolean"
+      }
+    },
+    "entrypoints": {
+      "go": "camelMatch",
+      "rust": "camel_match",
+      "typescript": "camelMatch"
+    },
     "comparison": "exact"
   },
-  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
 }

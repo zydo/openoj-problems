@@ -4,10 +4,10 @@
 
 Table: `Movies`
 
-| Column Name | Type |
-| ----------- | ---- |
-| movie_id | int |
-| title | varchar |
+| Column Name | Type    |
+| ----------- | ------- |
+| movie_id    | int     |
+| title       | varchar |
 
 movie_id is the primary key (column with unique values) for this table.
 title is the name of the movie.
@@ -15,10 +15,10 @@ Each movie has a unique title.
 
 Table: `Users`
 
-| Column Name | Type |
-| ----------- | ---- |
-| user_id | int |
-| name | varchar |
+| Column Name | Type    |
+| ----------- | ------- |
+| user_id     | int     |
+| name        | varchar |
 
 user_id is the primary key (column with unique values) for this table.
 The column 'name' has unique values.
@@ -27,10 +27,10 @@ Table: `MovieRating`
 
 | Column Name | Type |
 | ----------- | ---- |
-| movie_id | int |
-| user_id | int |
-| rating | int |
-| created_at | date |
+| movie_id    | int  |
+| user_id     | int  |
+| rating      | int  |
+| created_at  | date |
 
 `(movie_id, user_id)` is the primary key (combination of columns with unique values) for this table.
 This table contains the rating of a movie by a user in their review.

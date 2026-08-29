@@ -20,8 +20,7 @@ class Solution {
             return key;
         };
 
-        const isByReference = (value) =>
-            value !== null && (typeof value === "object" || typeof value === "function");
+        const isByReference = (value) => value !== null && (typeof value === "object" || typeof value === "function");
 
         const leafMarker = Symbol("complete");
 

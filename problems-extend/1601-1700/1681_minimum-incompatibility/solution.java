@@ -19,10 +19,12 @@ class Solution {
         for (int i = 0; i < n; i++) buckets[i] = new ArrayList<>();
         for (int g = 0; g < total; g++) {
             if (Integer.bitCount(g) != size) continue;
-            int seen = 0, lo = n + 1, hi = 0;
+            int seen = 0,
+                lo = n + 1,
+                hi = 0;
             boolean valid = true;
             for (int i = 0; i < n; i++) {
-                if ((g >> i & 1) == 0) continue;
+                if (((g >> i) & 1) == 0) continue;
                 int vbit = 1 << (nums[i] - 1);
                 if ((seen & vbit) != 0) {
                     valid = false;
@@ -35,7 +37,7 @@ class Solution {
             if (!valid) continue;
             int cost = hi - lo;
             for (int i = 0; i < n; i++) {
-                if ((g >> i & 1) != 0) buckets[i].add(new int[] {g, cost});
+                if (((g >> i) & 1) != 0) buckets[i].add(new int[] { g, cost });
             }
         }
         final int INF = 1_000_000;

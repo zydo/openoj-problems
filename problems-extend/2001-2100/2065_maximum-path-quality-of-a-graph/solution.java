@@ -1,4 +1,5 @@
 class Solution {
+
     private int[] values;
     private int maxTime;
     private java.util.List<int[]>[] graph;
@@ -13,8 +14,8 @@ class Solution {
             graph[node] = new java.util.ArrayList<>();
         }
         for (int[] edge : edges) {
-            graph[edge[0]].add(new int[] {edge[1], edge[2]});
-            graph[edge[1]].add(new int[] {edge[0], edge[2]});
+            graph[edge[0]].add(new int[] { edge[1], edge[2] });
+            graph[edge[1]].add(new int[] { edge[0], edge[2] });
         }
 
         visits = new int[values.length];

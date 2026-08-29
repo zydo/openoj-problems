@@ -14,16 +14,7 @@ impl Solution {
         // Breadth-first reveal from the clicked square, on an explicit queue:
         // a blank region can span every cell of a 50 x 50 board, deeper than
         // a call stack allows.
-        let directions: [(isize, isize); 8] = [
-            (-1, -1),
-            (-1, 0),
-            (-1, 1),
-            (0, -1),
-            (0, 1),
-            (1, -1),
-            (1, 0),
-            (1, 1),
-        ];
+        let directions: [(isize, isize); 8] = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)];
         let mut queue: Vec<(usize, usize)> = vec![(r0, c0)];
         let mut head = 0;
         while head < queue.len() {
@@ -41,7 +32,12 @@ impl Solution {
             for (dr, dc) in directions {
                 let nr = ri + dr;
                 let nc = ci + dc;
-                if nr >= 0 && nr < rows as isize && nc >= 0 && nc < cols as isize && board[nr as usize][nc as usize] == "M" {
+                if nr >= 0
+                    && nr < rows as isize
+                    && nc >= 0
+                    && nc < cols as isize
+                    && board[nr as usize][nc as usize] == "M"
+                {
                     mines += 1;
                 }
             }
@@ -54,7 +50,12 @@ impl Solution {
             for (dr, dc) in directions {
                 let nr = ri + dr;
                 let nc = ci + dc;
-                if nr >= 0 && nr < rows as isize && nc >= 0 && nc < cols as isize && board[nr as usize][nc as usize] == "E" {
+                if nr >= 0
+                    && nr < rows as isize
+                    && nc >= 0
+                    && nc < cols as isize
+                    && board[nr as usize][nc as usize] == "E"
+                {
                     queue.push((nr as usize, nc as usize));
                 }
             }

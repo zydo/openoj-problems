@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     long long minimumCost(string s) {
         // A prefix flip ending at i-1 (cost i) toggles exactly the left side
         // of border i, and a suffix flip starting at i (cost n-i) toggles

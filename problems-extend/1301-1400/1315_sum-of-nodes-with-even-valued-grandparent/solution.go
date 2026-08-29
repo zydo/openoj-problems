@@ -3,8 +3,8 @@ func sumEvenGrandparent(root *TreeNode) int {
 	// parity test needs no upward links. Explicit stack: the tree may be a
 	// 10^4-node chain, beyond any recursion budget.
 	type entry struct {
-		node                     *TreeNode
-		parent, grandparent      int
+		node                *TreeNode
+		parent, grandparent int
 	}
 	none := 1 // odd sentinel: contributes nothing
 	total := 0

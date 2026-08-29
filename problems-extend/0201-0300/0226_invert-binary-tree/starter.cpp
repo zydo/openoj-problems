@@ -1,6 +1,4 @@
 class Solution {
-public:
-    TreeNode* invertTree(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    TreeNode *invertTree(TreeNode *root) { throw logic_error("TODO"); }
 };

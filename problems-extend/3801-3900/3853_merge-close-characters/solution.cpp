@@ -9,9 +9,9 @@ class Solution {
         // the rule.
         string stack;
         for (char c : s) {
-            int lo = max(0, (int) stack.size() - k);
+            int lo = max(0, (int)stack.size() - k);
             bool absorbed = false;
-            for (int j = lo; j < (int) stack.size(); j++) {
+            for (int j = lo; j < (int)stack.size(); j++) {
                 if (stack[j] == c) {
                     absorbed = true;
                     break;

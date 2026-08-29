@@ -37,9 +37,7 @@ impl Solution {
         let mut best_pair: Option<(&str, &str)> = None;
         let mut best_count = -1;
         for (&pair, &count) in counts.iter() {
-            let better = count > best_count
-                || count == best_count
-                    && best_pair.is_some_and(|best| pair < best);
+            let better = count > best_count || count == best_count && best_pair.is_some_and(|best| pair < best);
             if better {
                 best_count = count;
                 best_pair = Some(pair);
@@ -47,11 +45,7 @@ impl Solution {
         }
         match best_pair {
             None => Vec::new(),
-            Some((first, second)) => vec![
-                first.to_string(),
-                second.to_string(),
-                best_count.to_string(),
-            ],
+            Some((first, second)) => vec![first.to_string(), second.to_string(), best_count.to_string()],
         }
     }
 }

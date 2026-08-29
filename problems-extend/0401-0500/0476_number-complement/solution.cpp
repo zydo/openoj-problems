@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int findComplement(int num) {
         // The mask climbs to 2^31 - 1 at the top of the range — the exact
         // ceiling of a signed 32-bit int — so it is built in long long to

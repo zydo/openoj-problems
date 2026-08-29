@@ -77,8 +77,7 @@ class Solution {
                                 int nd1;
                                 int nd2;
                                 if (s == 1) {
-                                    if (d2 != NONE &&
-                                        ((d1 > d2 && d1 > x) || (d1 < d2 && d1 < x))) {
+                                    if (d2 != NONE && ((d1 > d2 && d1 > x) || (d1 < d2 && d1 < x))) {
                                         gain = 1;
                                     }
                                     nd1 = x;

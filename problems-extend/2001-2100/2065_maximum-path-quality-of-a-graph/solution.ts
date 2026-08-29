@@ -1,8 +1,5 @@
 function maximalPathQuality(values: number[], edges: number[][], maxTime: number): number {
-    const graph: Array<Array<[number, number]>> = Array.from(
-        { length: values.length },
-        () => [],
-    );
+    const graph: Array<Array<[number, number]>> = Array.from({ length: values.length }, () => []);
     for (const [left, right, travelTime] of edges) {
         graph[left].push([right, travelTime]);
         graph[right].push([left, travelTime]);

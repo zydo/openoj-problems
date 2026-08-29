@@ -6,7 +6,12 @@
   "slug": "longest-univalue-path",
   "title": "Longest Univalue Path",
   "difficulty": "",
-  "tags": ["Tree", "Depth-First Search", "Binary Tree", "DP on Trees"],
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

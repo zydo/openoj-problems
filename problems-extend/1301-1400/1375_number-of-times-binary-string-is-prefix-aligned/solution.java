@@ -1,4 +1,5 @@
 class Solution {
+
     public int numTimesAllBlue(int[] flips) {
         int rightmost = 0;
         int count = 0;

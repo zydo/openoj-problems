@@ -21,7 +21,11 @@ var superpalindromesInRange = function (left, right) {
         const halfLength = (length + 1) >> 1;
         for (let half = 10 ** (halfLength - 1); half < 10 ** halfLength; half++) {
             const digits = String(half);
-            const mirrored = digits.slice(0, length - halfLength).split("").reverse().join("");
+            const mirrored = digits
+                .slice(0, length - halfLength)
+                .split("")
+                .reverse()
+                .join("");
             const root = BigInt(digits + mirrored);
             const square = root * root;
             // Roots ascend across widths and halves alike, so squares do

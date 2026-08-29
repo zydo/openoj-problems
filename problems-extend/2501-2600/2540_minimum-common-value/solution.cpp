@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    int getCommon(std::vector<int>& nums1, std::vector<int>& nums2) {
+    int getCommon(std::vector<int> &nums1, std::vector<int> &nums2) {
         // Both arrays ascend, so the front runner carrying the smaller
         // value can never match anything ahead on the other side: drop it
         // and repeat. The first tie is necessarily the smallest shared

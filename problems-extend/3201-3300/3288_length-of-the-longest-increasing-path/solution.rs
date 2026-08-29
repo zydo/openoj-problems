@@ -16,13 +16,7 @@ impl Solution {
 }
 
 fn longest_chain(points: &mut Vec<(i32, i32)>) -> i32 {
-    points.sort_unstable_by(|a, b| {
-        if a.0 != b.0 {
-            a.0.cmp(&b.0)
-        } else {
-            b.1.cmp(&a.1)
-        }
-    });
+    points.sort_unstable_by(|a, b| if a.0 != b.0 { a.0.cmp(&b.0) } else { b.1.cmp(&a.1) });
     let mut tails: Vec<i32> = Vec::with_capacity(points.len());
     for (_, y) in points.iter() {
         let slot = tails.partition_point(|tail| *tail < *y);

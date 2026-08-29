@@ -31,7 +31,7 @@ class Solution {
                         if (bottom.equals(top) || bottom.equals(left) || bottom.equals(right)) {
                             continue;
                         }
-                        res.add(new String[] {top, left, right, bottom});
+                        res.add(new String[] { top, left, right, bottom });
                     }
                 }
             }

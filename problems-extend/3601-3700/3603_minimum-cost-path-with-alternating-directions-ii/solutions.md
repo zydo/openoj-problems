@@ -8,7 +8,7 @@ alternation is therefore the same on every path: one wait between each pair
 of consecutive moves, none before the first move (it happens at second 1)
 and none after the last. That decouples the clock from the search — a
 path's total is its entry costs plus the wait cost of every cell it
-*departs*, which is every visited cell except the destination. So the
+_departs_, which is every visited cell except the destination. So the
 state is just the cell: let `dp[i][j]` be the cheapest cost of standing on
 (i, j) with its entry paid and all earlier waits settled.
 

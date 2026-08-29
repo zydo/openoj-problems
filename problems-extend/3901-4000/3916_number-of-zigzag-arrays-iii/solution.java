@@ -35,28 +35,29 @@ class Solution {
         long[] factorial = new long[points + 1];
         long[] inverseFactorial = new long[points + 1];
         factorial[0] = 1;
-        for (int value = 1; value <= points; value++) factorial[value] = factorial[value - 1] * value % MOD;
+        for (int value = 1; value <= points; value++) factorial[value] = (factorial[value - 1] * value) % MOD;
         inverseFactorial[points] = power(factorial[points], MOD - 2);
-        for (int value = points; value > 0; value--) inverseFactorial[value - 1] = inverseFactorial[value] * value % MOD;
+        for (int value = points; value > 0; value--) inverseFactorial[value - 1] =
+            (inverseFactorial[value] * value) % MOD;
         long[] prefix = new long[points + 2];
         long[] suffix = new long[points + 2];
         prefix[0] = suffix[points + 1] = 1;
-        for (int value = 1; value <= points; value++) prefix[value] = prefix[value - 1] * (width - value) % MOD;
-        for (int value = points; value > 0; value--) suffix[value] = suffix[value + 1] * (width - value) % MOD;
+        for (int value = 1; value <= points; value++) prefix[value] = (prefix[value - 1] * (width - value)) % MOD;
+        for (int value = points; value > 0; value--) suffix[value] = (suffix[value + 1] * (width - value)) % MOD;
         long answer = 0;
         for (int value = 1; value <= points; value++) {
-            long term = values[value] * prefix[value - 1] % MOD * suffix[value + 1] % MOD;
-            term = term * inverseFactorial[value - 1] % MOD * inverseFactorial[points - value] % MOD;
+            long term = (((values[value] * prefix[value - 1]) % MOD) * suffix[value + 1]) % MOD;
+            term = (((term * inverseFactorial[value - 1]) % MOD) * inverseFactorial[points - value]) % MOD;
             answer = (points - value) % 2 == 0 ? answer + term : answer - term;
         }
-        return (int) ((answer % MOD + MOD) % MOD);
+        return (int) (((answer % MOD) + MOD) % MOD);
     }
 
     private long power(long base, long exponent) {
         long result = 1;
         while (exponent > 0) {
-            if ((exponent & 1) == 1) result = result * base % MOD;
-            base = base * base % MOD;
+            if ((exponent & 1) == 1) result = (result * base) % MOD;
+            base = (base * base) % MOD;
             exponent >>= 1;
         }
         return result;

@@ -8,9 +8,7 @@ class Solution:
         count = 0
         for value in arr1:
             i = bisect_left(arr2, value)
-            close = (i < len(arr2) and arr2[i] - value <= d) or (
-                i > 0 and value - arr2[i - 1] <= d
-            )
+            close = (i < len(arr2) and arr2[i] - value <= d) or (i > 0 and value - arr2[i - 1] <= d)
             if not close:
                 count += 1
         return count

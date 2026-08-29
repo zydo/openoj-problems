@@ -31,4 +31,5 @@ Jumps, positions, and the limit all stay far below any 32-bit boundary, and
 the search is a queue loop with no recursion.
 
 **Complexity:** `O(L)` time, `O(L)` space, for `L = max(x, max(forbidden))
-+ a + b`.
+
+- a + b`.

@@ -41,11 +41,11 @@ class Solution {
                 long cc = boxed;
                 long term;
                 if (a == b && b == c) {
-                    term = ca * (ca - 1) * (ca - 2) / 6;
+                    term = (ca * (ca - 1) * (ca - 2)) / 6;
                 } else if (a == b) {
-                    term = ca * (ca - 1) / 2 * cc;
+                    term = ((ca * (ca - 1)) / 2) * cc;
                 } else if (b == c) {
-                    term = ca * cb * (cb - 1) / 2;
+                    term = (ca * cb * (cb - 1)) / 2;
                 } else {
                     term = ca * cb * cc;
                 }

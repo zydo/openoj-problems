@@ -11,8 +11,8 @@ var consecutiveNumbersSum = function (n) {
     // alone pins a >= 1. Length 1 always divides — the single-term sum
     // n = n. Every intermediate stays far below 2^53, exact as a double.
     let count = 0;
-    for (let length = 1; length * (length + 1) / 2 <= n; length++) {
-        if ((n - length * (length - 1) / 2) % length === 0) {
+    for (let length = 1; (length * (length + 1)) / 2 <= n; length++) {
+        if ((n - (length * (length - 1)) / 2) % length === 0) {
             count++;
         }
     }

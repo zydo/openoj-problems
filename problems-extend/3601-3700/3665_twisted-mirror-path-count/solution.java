@@ -3,7 +3,8 @@ import java.util.Arrays;
 class Solution {
 
     public int uniquePaths(int[][] grid) {
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         final int MOD = 1_000_000_007;
         // Landing tables for mirror cells: entering a mirror while moving
         // right (br) turns the move down, while moving down (bd) turns it
@@ -19,10 +20,8 @@ class Solution {
             for (int j = n - 1; j >= 0; --j) {
                 if (grid[i][j] == 0) continue;
                 int t = i * n + j;
-                if (i + 1 < m)
-                    br[t] = grid[i + 1][j] == 0 ? t + n : bd[t + n];
-                if (j + 1 < n)
-                    bd[t] = grid[i][j + 1] == 0 ? t + 1 : br[t + 1];
+                if (i + 1 < m) br[t] = grid[i + 1][j] == 0 ? t + n : bd[t + n];
+                if (j + 1 < n) bd[t] = grid[i][j + 1] == 0 ? t + 1 : br[t + 1];
             }
         }
         // dp[k] counts the ways to stand on cell k. Every jump lands in a

@@ -6,7 +6,8 @@ class Solution {
     // flips, all placeable strictly inside the run so runs never merge.
     public int minLength(String s, int numOps) {
         int n = s.length();
-        int lo = 1, hi = n;
+        int lo = 1,
+            hi = n;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (ok(s, numOps, mid)) {
@@ -29,7 +30,8 @@ class Solution {
             }
             return Math.min(alt, n - alt) <= numOps;
         }
-        int flips = 0, run = 1;
+        int flips = 0,
+            run = 1;
         for (int i = 1; i < n; i++) {
             if (s.charAt(i) == s.charAt(i - 1)) {
                 run++;

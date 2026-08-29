@@ -1,10 +1,11 @@
 class Solution {
   public:
-    vector<int> findSubstring(string s, vector<string>& words) {
+    vector<int> findSubstring(string s, vector<string> &words) {
         int wordLength = words[0].size();
         // Required multiset of words; a window matches when its counts equal it.
         unordered_map<string, int> target;
-        for (const string& word : words) target[word]++;
+        for (const string &word : words)
+            target[word]++;
         vector<int> result;
         // One sliding window per alignment offset: a match can only start at a
         // position congruent to some r in 0..wordLength-1 modulo wordLength.

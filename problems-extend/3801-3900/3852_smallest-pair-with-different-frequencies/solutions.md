@@ -17,8 +17,7 @@ distinct values in increasing order and return `[v, y]` at the first `y`
 above `v` whose frequency differs from `freq[v]` — that is the smallest
 qualifying `y`, matching Example 1, where 1 appears twice and the first
 value with another frequency is 3. If the walk exhausts, every value
-shares `freq[v]` and the method returns `[-1, -1]`, as in Examples 2 and
-3. No nested pair enumeration is ever needed.
+shares `freq[v]` and the method returns `[-1, -1]`, as in Examples 2 and 3. No nested pair enumeration is ever needed.
 
 Everything stays tiny: values are bounded by 100 and so are frequencies
 and both returned components, so 32-bit integers carry the whole

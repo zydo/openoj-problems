@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimumOperations(vector<int>& nums) {
+    int minimumOperations(vector<int> &nums) {
         // Greedy two pointers on block sums: the front block (nums[0..i])
         // must end up equal to the back block. While they differ, the
         // smaller side absorbs its next adjacent element — one merge, and

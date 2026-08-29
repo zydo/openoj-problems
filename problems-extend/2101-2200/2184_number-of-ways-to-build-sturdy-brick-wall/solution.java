@@ -39,8 +39,7 @@ class Solution {
         return (int) answer;
     }
 
-    private void buildRows(int position, int width, int[] bricks, int mask,
-            List<Integer> masks) {
+    private void buildRows(int position, int width, int[] bricks, int mask, List<Integer> masks) {
         if (position == width) {
             masks.add(mask);
             return;
@@ -50,7 +49,7 @@ class Solution {
                 continue;
             }
             int next = position + brick;
-            int extra = next < width ? (1 << (next - 1)) : 0;
+            int extra = next < width ? 1 << (next - 1) : 0;
             buildRows(next, width, bricks, mask | extra, masks);
         }
     }

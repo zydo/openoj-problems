@@ -9,7 +9,5 @@ var sortTheStudents = function (score, k) {
     // across the whole matrix, so ties never occur and comparator
     // stability is irrelevant to the outcome. Returns a new array; the
     // input is left untouched.
-    return score
-        .slice()
-        .sort((a, b) => b[k] - a[k]);
+    return score.slice().sort((a, b) => b[k] - a[k]);
 };

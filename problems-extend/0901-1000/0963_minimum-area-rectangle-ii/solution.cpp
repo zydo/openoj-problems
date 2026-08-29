@@ -1,6 +1,6 @@
 class Solution {
-public:
-    double minAreaFreeRect(vector<vector<int>>& points) {
+  public:
+    double minAreaFreeRect(vector<vector<int>> &points) {
         // A quadrilateral is a rectangle exactly when its two diagonals
         // bisect each other (shared midpoint) and have equal length:
         // bisection makes it a parallelogram, and equal diagonals make a
@@ -21,8 +21,8 @@ public:
                 long long dx = x1 - x2, dy = y1 - y2;
                 long long center = (long long)(x1 + x2) * 80001 + (y1 + y2);
                 long long length2 = dx * dx + dy * dy;
-                vector<array<long long, 3>>& bucket = diagonals[center];
-                for (const array<long long, 3>& stored : bucket) {
+                vector<array<long long, 3>> &bucket = diagonals[center];
+                for (const array<long long, 3> &stored : bucket) {
                     if (stored[2] != length2)
                         continue; // shared midpoint, different diagonal length
                     // The stored endpoint r marks one diagonal; its

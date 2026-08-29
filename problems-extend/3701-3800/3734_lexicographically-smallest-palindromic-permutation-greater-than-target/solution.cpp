@@ -51,8 +51,7 @@ class Solution {
                 wins = mirrored > suffix;
             } else {
                 int mid = target[m] - 'a';
-                wins =
-                    oddLetter > mid || (oddLetter == mid && mirrored > suffix);
+                wins = oddLetter > mid || (oddLetter == mid && mirrored > suffix);
             }
             if (wins) {
                 best = p;

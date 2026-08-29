@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string breakPalindrome(string palindrome) {
-        throw logic_error("TODO");
-    }
+  public:
+    string breakPalindrome(string palindrome) { throw logic_error("TODO"); }
 };

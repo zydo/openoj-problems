@@ -12,7 +12,7 @@ class Solution {
         long full = (1L << p) - 1;
         long base = full - 1;
         long exp = (1L << (p - 1)) - 1;
-        return (int) (power(base, exp, MOD) * (full % MOD) % MOD);
+        return (int) ((power(base, exp, MOD) * (full % MOD)) % MOD);
     }
 
     private long power(long base, long exp, long mod) {
@@ -20,8 +20,8 @@ class Solution {
         long result = 1;
         long b = base % mod;
         while (exp > 0) {
-            if ((exp & 1) == 1) result = result * b % mod;
-            b = b * b % mod;
+            if ((exp & 1) == 1) result = (result * b) % mod;
+            b = (b * b) % mod;
             exp >>= 1;
         }
         return result;

@@ -18,7 +18,7 @@ empty. `count` says it outright — `isEmpty` is `count == 0`, `isFull` is
 The reads follow the same two anchors. `Front` is `buf[head]`; `Rear` is
 `buf[(head + count - 1) % k]` — the subtraction-and-modulo that makes `Rear`
 the classic off-by-one trap, since after the ring wraps, the newest element
-sits *before* `head` in array order, exactly what the example shows: with
+sits _before_ `head` in array order, exactly what the example shows: with
 `k = 3`, after `enQueue(1..3)`, `deQueue`, and `enQueue(4)`, the 4 lives in
 slot 0 while `head` points at the 2 in slot 1, and `Rear` must answer 4.
 Failed operations change nothing — `enQueue` on a full ring and `deQueue`

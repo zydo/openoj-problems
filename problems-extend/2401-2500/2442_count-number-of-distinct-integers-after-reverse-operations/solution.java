@@ -15,7 +15,7 @@ class Solution {
             seen.add(value);
             long reversed = 0;
             for (int rest = value; rest > 0; rest /= 10) {
-                reversed = reversed * 10 + rest % 10;
+                reversed = reversed * 10 + (rest % 10);
             }
             seen.add((int) reversed);
         }

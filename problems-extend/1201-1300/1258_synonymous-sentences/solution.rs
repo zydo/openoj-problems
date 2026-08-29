@@ -51,8 +51,7 @@ impl Solution {
             }
             sentences = next;
         }
-        let mut result: Vec<String> =
-            sentences.into_iter().map(|s| s[1..].to_string()).collect();
+        let mut result: Vec<String> = sentences.into_iter().map(|s| s[1..].to_string()).collect();
         result.sort();
         result
     }

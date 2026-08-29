@@ -25,18 +25,18 @@ class Solution {
         long[] fact = new long[top + 1];
         for (int i = 0; i <= top; i++) fact[i] = 1;
         for (int i = 2; i <= top; i++) {
-            fact[i] = fact[i - 1] * i % MOD;
+            fact[i] = (fact[i - 1] * i) % MOD;
         }
         long[] invFact = new long[top + 1];
         invFact[top] = modPow(fact[top], MOD - 2);
         for (int i = top; i > 0; i--) {
-            invFact[i - 1] = invFact[i] * i % MOD;
+            invFact[i - 1] = (invFact[i] * i) % MOD;
         }
         long total = 0;
         for (int m = 1; m <= top; m++) {
             long prod = 1;
             for (int count : present) {
-                prod = prod * (comb(count, m, fact, invFact) + 1) % MOD;
+                prod = (prod * (comb(count, m, fact, invFact) + 1)) % MOD;
             }
             total += prod - 1;
         }
@@ -47,15 +47,15 @@ class Solution {
         if (k > n) {
             return 0;
         }
-        return fact[n] * invFact[k] % MOD * invFact[n - k] % MOD;
+        return (((fact[n] * invFact[k]) % MOD) * invFact[n - k]) % MOD;
     }
 
     private long modPow(long base, long exp) {
         long result = 1;
         base %= MOD;
         while (exp > 0) {
-            if ((exp & 1) == 1) result = result * base % MOD;
-            base = base * base % MOD;
+            if ((exp & 1) == 1) result = (result * base) % MOD;
+            base = (base * base) % MOD;
             exp >>= 1;
         }
         return result;

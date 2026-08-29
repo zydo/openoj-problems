@@ -33,12 +33,8 @@ impl Solution {
         let mut subtree: HashMap<*const TreeNode, i64> = HashMap::new();
         let mut count = 0;
         for node in order.into_iter().rev() {
-            let left = node.left
-                .as_deref()
-                .map_or(0i64, |c| subtree[&(c as *const TreeNode)]);
-            let right = node.right
-                .as_deref()
-                .map_or(0i64, |c| subtree[&(c as *const TreeNode)]);
+            let left = node.left.as_deref().map_or(0i64, |c| subtree[&(c as *const TreeNode)]);
+            let right = node.right.as_deref().map_or(0i64, |c| subtree[&(c as *const TreeNode)]);
             let total = node.val as i64 + left + right;
             subtree.insert(node as *const TreeNode, total);
             if node.val as i64 == total - node.val as i64 {

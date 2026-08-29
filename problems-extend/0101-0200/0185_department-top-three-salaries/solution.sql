@@ -7,7 +7,8 @@ FROM
     SELECT
       *,
       DENSE_RANK() OVER (
-        PARTITION BY departmentId
+        PARTITION BY
+          departmentId
         ORDER BY
           salary DESC
       ) AS rnk

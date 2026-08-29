@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string reverseWords(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    string reverseWords(string s) { throw logic_error("TODO"); }
 };

@@ -6,7 +6,7 @@ class Solution {
         final int MOD = 1_000_000_007;
         long maxH = widest(h, horizontalCuts);
         long maxW = widest(w, verticalCuts);
-        return (int) ((maxH % MOD) * (maxW % MOD) % MOD);
+        return (int) (((maxH % MOD) * (maxW % MOD)) % MOD);
     }
 
     private long widest(int length, int[] cuts) {

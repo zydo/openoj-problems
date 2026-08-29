@@ -8,7 +8,8 @@ class Solution {
         // Prefix sums reach 1e10, so they are held in 64-bit integers.
         int n = candiesCount.size();
         vector<long long> pref(n + 1, 0);
-        for (int i = 0; i < n; ++i) pref[i + 1] = pref[i] + candiesCount[i];
+        for (int i = 0; i < n; ++i)
+            pref[i + 1] = pref[i] + candiesCount[i];
         vector<bool> answer;
         answer.reserve(queries.size());
         for (auto &q : queries) {

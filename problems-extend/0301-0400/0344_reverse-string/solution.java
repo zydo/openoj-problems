@@ -7,7 +7,8 @@ class Solution {
         // when the indexes meet. The swap only trades the two references —
         // no string is ever rebuilt — so the reversal happens in place with
         // O(1) extra memory; the mutated array is the answer.
-        int lo = 0, hi = s.length - 1;
+        int lo = 0,
+            hi = s.length - 1;
         while (lo < hi) {
             String tmp = s[lo];
             s[lo] = s[hi];

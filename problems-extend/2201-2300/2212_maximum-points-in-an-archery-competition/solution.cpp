@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> maximumBobPoints(int numArrows, vector<int>& aliceArrows) {
+    vector<int> maximumBobPoints(int numArrows, vector<int> &aliceArrows) {
         // Winning section k costs aliceArrows[k] + 1 arrows and pays k
         // points, so with only 12 sections every affordable winning set can
         // be swept.

@@ -4,7 +4,7 @@
 
 Each match hands points to both of its teams, and the amount each side earns
 depends on the goal comparison from that side's perspective. The query first
- explodes `Matches` into one row per participating team: the host row awards
+explodes `Matches` into one row per participating team: the host row awards
 3/1/0 by `host_goals` versus `guest_goals`, the guest row by the mirrored
 comparison, and `UNION ALL` keeps them both.
 

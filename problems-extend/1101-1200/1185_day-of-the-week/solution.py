@@ -1,8 +1,7 @@
 class Solution:
     def dayOfTheWeek(self, day: int, month: int, year: int) -> str:
         # Anchored: Jan 1 1971 was a Friday, so offset 0 maps to Friday.
-        names = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday",
-                 "Wednesday", "Thursday"]
+        names = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
         month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
         def is_leap(y: int) -> bool:

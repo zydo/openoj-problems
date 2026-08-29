@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int maxCount(std::vector<int>& banned, int n, long long maxSum) {
+    int maxCount(std::vector<int> &banned, int n, long long maxSum) {
         // Smallest-first greedy computed gap by gap over the sorted,
         // de-duplicated bans: a free run of `avail` candidates starting
         // at `lo` costs avail*(2*lo+avail-1)/2 when swallowed whole. The
@@ -13,11 +13,8 @@ class Solution {
         // 3*10^18, inside the signed 64-bit range; the answer itself is
         // <= sqrt(2*maxSum) <= sqrt(2*10^15) ~ 4.5e7, far below 2^31.
         std::sort(banned.begin(), banned.end());
-        banned.erase(std::unique(banned.begin(), banned.end()),
-                     banned.end());
-        auto ladder = [](long long lo, long long cnt) -> long long {
-            return cnt * (2 * lo + cnt - 1) / 2;
-        };
+        banned.erase(std::unique(banned.begin(), banned.end()), banned.end());
+        auto ladder = [](long long lo, long long cnt) -> long long { return cnt * (2 * lo + cnt - 1) / 2; };
         auto bestPrefix = [&](long long lo, long long avail) -> int {
             long long low = 0;
             long long high = avail;

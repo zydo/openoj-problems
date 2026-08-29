@@ -1,9 +1,5 @@
 impl Solution {
-    pub fn distance_between_bus_stops(
-        distance: Vec<i32>,
-        start: i32,
-        destination: i32,
-    ) -> i32 {
+    pub fn distance_between_bus_stops(distance: Vec<i32>, start: i32, destination: i32) -> i32 {
         // Order the stops: edge i leads from stop i to stop i+1, so the
         // clockwise arc between them uses exactly the entries in between.
         let (lo, hi) = if start <= destination {

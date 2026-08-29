@@ -20,7 +20,7 @@ WITH
     GROUP BY
       customer_id
   ),
-  years(customer_id, yr) AS (
+  years (customer_id, yr) AS (
     SELECT
       customer_id,
       first_yr
@@ -43,17 +43,17 @@ WITH
       COALESCE(t.total, 0) AS total
     FROM
       years y
-      LEFT JOIN yearly t ON y.customer_id = t.customer_id AND y.yr = t.yr
+      LEFT JOIN yearly t ON y.customer_id = t.customer_id
+      AND y.yr = t.yr
   ),
   bad AS (
     SELECT
       f1.customer_id
     FROM
       full f1
-      JOIN full f2
-        ON f1.customer_id = f2.customer_id
-        AND f2.yr = f1.yr + 1
-        AND f2.total <= f1.total
+      JOIN full f2 ON f1.customer_id = f2.customer_id
+      AND f2.yr = f1.yr + 1
+      AND f2.total <= f1.total
   )
 SELECT
   customer_id

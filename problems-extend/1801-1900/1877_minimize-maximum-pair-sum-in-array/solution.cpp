@@ -1,8 +1,8 @@
 class Solution {
-   public:
+  public:
     // Pair sorted extremes: nums[i] with nums[n-1-i]. An exchange
     // argument shows this minimizes the largest pair sum.
-    long long minPairSum(vector<int>& nums) {
+    long long minPairSum(vector<int> &nums) {
         sort(nums.begin(), nums.end());
         int n = nums.size();
         long long best = 0;

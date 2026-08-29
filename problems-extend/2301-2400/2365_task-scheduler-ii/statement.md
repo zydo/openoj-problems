@@ -68,4 +68,3 @@ appropriately.
 Whenever considering whether to complete the next task, if it is not the
 first task of its type, check how many days ago the previous task was
 completed and add an appropriate number of breaks.
-

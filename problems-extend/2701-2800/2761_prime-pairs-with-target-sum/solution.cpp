@@ -19,7 +19,8 @@ class Solution {
         // n below that leaves the list empty.
         vector<vector<int>> pairs;
         for (int x = 2; x <= n / 2; ++x) {
-            if (isPrime[x] && isPrime[n - x]) pairs.push_back({x, n - x});
+            if (isPrime[x] && isPrime[n - x])
+                pairs.push_back({x, n - x});
         }
         return pairs;
     }

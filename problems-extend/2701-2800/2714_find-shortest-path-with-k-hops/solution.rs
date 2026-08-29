@@ -45,7 +45,11 @@ impl Solution {
         best[s][0] = 0;
 
         let mut heap = BinaryHeap::new();
-        heap.push(HeapEntry { dist: 0, node: s, hops: 0 });
+        heap.push(HeapEntry {
+            dist: 0,
+            node: s,
+            hops: 0,
+        });
         while let Some(HeapEntry { dist, node, hops }) = heap.pop() {
             if dist > best[node][hops] {
                 continue;
@@ -57,11 +61,19 @@ impl Solution {
                 let candidate = dist + weight;
                 if candidate < best[neighbor][hops] {
                     best[neighbor][hops] = candidate;
-                    heap.push(HeapEntry { dist: candidate, node: neighbor, hops });
+                    heap.push(HeapEntry {
+                        dist: candidate,
+                        node: neighbor,
+                        hops,
+                    });
                 }
                 if hops < k && dist < best[neighbor][hops + 1] {
                     best[neighbor][hops + 1] = dist;
-                    heap.push(HeapEntry { dist, node: neighbor, hops: hops + 1 });
+                    heap.push(HeapEntry {
+                        dist,
+                        node: neighbor,
+                        hops: hops + 1,
+                    });
                 }
             }
         }

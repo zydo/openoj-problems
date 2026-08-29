@@ -3,7 +3,7 @@
 ## Balance segment tree over right endpoints
 
 Give each value a sign — +1 when odd, −1 when even — and score a window by
-`g`, the sum of signs of its *distinct* values; balanced is exactly `g = 0`.
+`g`, the sum of signs of its _distinct_ values; balanced is exactly `g = 0`.
 Fixing the left end `l` and sweeping the right end `r`, the score `g(l, r)`
 changes only where the arriving value is new to the window: a value
 contributes its sign precisely on the stretch of right ends that starts at
@@ -21,7 +21,7 @@ ends that were still counting this copy — after which entry `r` equals
 Each node stores the minimum and maximum of its segment under pending
 additions, so "does any entry hold zero" is the test `min <= 0 <= max`.
 
-The longest balanced window for left end `l` ends at the *rightmost* zero
+The longest balanced window for left end `l` ends at the _rightmost_ zero
 among entries `r >= l`. A descent finds it: at each node a child can be
 skipped only when its minimum and maximum fail to straddle zero (a subtree
 straddling zero may still hold none — think of a huge padding sentinel next

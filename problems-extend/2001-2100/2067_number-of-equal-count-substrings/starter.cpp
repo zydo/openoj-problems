@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int equalCountSubstrings(string s, int count) {
-        throw logic_error("TODO");
-    }
+  public:
+    int equalCountSubstrings(string s, int count) { throw logic_error("TODO"); }
 };

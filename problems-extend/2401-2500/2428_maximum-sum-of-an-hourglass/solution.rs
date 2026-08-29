@@ -7,9 +7,13 @@ impl Solution {
         let mut best = 0;
         for r in 0..grid.len() - 2 {
             for c in 0..grid[0].len() - 2 {
-                let current = grid[r][c] + grid[r][c + 1] + grid[r][c + 2]
+                let current = grid[r][c]
+                    + grid[r][c + 1]
+                    + grid[r][c + 2]
                     + grid[r + 1][c + 1]
-                    + grid[r + 2][c] + grid[r + 2][c + 1] + grid[r + 2][c + 2];
+                    + grid[r + 2][c]
+                    + grid[r + 2][c + 1]
+                    + grid[r + 2][c + 2];
                 if current > best {
                     best = current;
                 }

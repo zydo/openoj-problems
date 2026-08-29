@@ -23,9 +23,7 @@ var isInterleave = function (s1, s2, s3) {
         for (let j = 1; j <= n; ++j) {
             // The prefix's last letter came from one of the two strings:
             // keep whichever source still has a living reach.
-            dp[i][j] =
-                (dp[i - 1][j] && s1[i - 1] === s3[i + j - 1]) ||
-                (dp[i][j - 1] && s2[j - 1] === s3[i + j - 1]);
+            dp[i][j] = (dp[i - 1][j] && s1[i - 1] === s3[i + j - 1]) || (dp[i][j - 1] && s2[j - 1] === s3[i + j - 1]);
         }
     }
     return dp[m][n];

@@ -20,9 +20,7 @@ class ArrayWrapper {
 
 class Solution {
     solve(wrapperCase: WrapperCase): number {
-        const wrappers = wrapperCase.arrays.map(
-            (nums: number[]): ArrayWrapper => new ArrayWrapper(nums),
-        );
+        const wrappers = wrapperCase.arrays.map((nums: number[]): ArrayWrapper => new ArrayWrapper(nums));
         if (wrapperCase.operation === "String") {
             // The declared return kind covers the additive path; the
             // rendered string flows through `any`, exactly as the landed

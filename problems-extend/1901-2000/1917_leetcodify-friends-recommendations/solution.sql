@@ -1,7 +1,7 @@
 WITH
   common AS (
-    SELECT
-      DISTINCT l1.user_id AS u1,
+    SELECT DISTINCT
+      l1.user_id AS u1,
       l2.user_id AS u2,
       l1.day AS d,
       l1.song_id AS s
@@ -25,8 +25,8 @@ WITH
       COUNT(DISTINCT s) >= 3
   ),
   pairs AS (
-    SELECT
-      DISTINCT q.u1,
+    SELECT DISTINCT
+      q.u1,
       q.u2
     FROM
       qualifying q

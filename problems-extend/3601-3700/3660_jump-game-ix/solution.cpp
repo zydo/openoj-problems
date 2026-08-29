@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> maxValue(vector<int>& nums) {
+    vector<int> maxValue(vector<int> &nums) {
         int n = nums.size();
         // suf[i]: smallest value in nums[i..n-1]; a sentinel past the end
         // lets the last index always close its segment.

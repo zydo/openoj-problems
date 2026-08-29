@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool checkString(string s) {
         bool seenB = false;
         for (char character : s) {

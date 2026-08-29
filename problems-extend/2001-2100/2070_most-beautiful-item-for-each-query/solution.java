@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class Solution {
+
     public int[] maximumBeauty(int[][] items, int[] queries) {
         Arrays.sort(items, (left, right) -> Integer.compare(left[0], right[0]));
         int[] prefixBeauty = new int[items.length];

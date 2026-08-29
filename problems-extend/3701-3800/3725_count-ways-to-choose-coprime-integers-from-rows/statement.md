@@ -6,8 +6,9 @@ You are given an `m x n` matrix `mat` of positive integers.
 
 A selection picks exactly one integer from every row of `mat`. A selection
 is coprime when the greatest common divisor (gcd) of its picked integers is
+
 1. Selections are positional: picking equal integers from different columns
-of the same row counts as different selections.
+   of the same row counts as different selections.
 
 Return the number of coprime selections modulo `10⁹ + 7`.
 

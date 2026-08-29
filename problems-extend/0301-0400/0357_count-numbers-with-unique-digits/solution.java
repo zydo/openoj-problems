@@ -11,7 +11,7 @@ class Solution {
         int run = 1; // f(k) so far, one factor per digit place
         for (int length = 1; length <= Math.min(n, 10); ++length) {
             // place 1 picks 1-9; place k >= 2 finds 11 - k digits still free
-            run *= (length == 1) ? 9 : 11 - length;
+            run *= length == 1 ? 9 : 11 - length;
             total += run;
         }
         return total;

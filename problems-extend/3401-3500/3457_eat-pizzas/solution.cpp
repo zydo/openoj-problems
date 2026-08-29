@@ -1,10 +1,10 @@
 class Solution {
-   public:
+  public:
     // Odd days bank their maximum, so the ceil(d/2) odd days claim the
     // top weights first; each even day then banks the second pizza of a
     // consecutive top pair. The total reaches 5e9, so it accumulates in
     // a long long.
-    long long maxWeight(vector<int>& pizzas) {
+    long long maxWeight(vector<int> &pizzas) {
         sort(pizzas.begin(), pizzas.end());
         int n = pizzas.size();
         int oddDays = (n / 4 + 1) / 2;

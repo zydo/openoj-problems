@@ -8,6 +8,6 @@ class Solution {
         // week deposit (w+1) + ... + (w+r) = r*w + r*(r+1)/2.
         int w = n / 7;
         int r = n % 7;
-        return 7 * w * (w + 1) / 2 + 21 * w + r * w + r * (r + 1) / 2;
+        return (7 * w * (w + 1)) / 2 + 21 * w + r * w + (r * (r + 1)) / 2;
     }
 }

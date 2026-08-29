@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int hammingWeight(long long n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int hammingWeight(long long n) { throw logic_error("TODO"); }
 };

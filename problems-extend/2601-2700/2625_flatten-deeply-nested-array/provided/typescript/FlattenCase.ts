@@ -31,10 +31,7 @@ class FlattenCase {
         if (typeof flatFn !== "function") {
             throw new Error("drive expects the submission's flat function");
         }
-        const result = (flatFn as (arr: JsonNode[], depth: number) => any[])(
-            this.arr,
-            this.n,
-        );
+        const result = (flatFn as (arr: JsonNode[], depth: number) => any[])(this.arr, this.n);
         if (!Array.isArray(result)) {
             throw new Error("flat must return an array");
         }

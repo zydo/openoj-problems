@@ -19,7 +19,7 @@ var closeStrings = function (word1, word2) {
         counts2[c.charCodeAt(0) - 97]++;
     }
     for (let i = 0; i < 26; i++) {
-        if ((counts1[i] > 0) !== (counts2[i] > 0)) {
+        if (counts1[i] > 0 !== counts2[i] > 0) {
             return false;
         }
     }

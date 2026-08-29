@@ -14,8 +14,6 @@ impl Solution {
         let left = minimum_index.min(maximum_index);
         let right = minimum_index.max(maximum_index);
         let length = nums.len();
-        (right + 1)
-            .min(length - left)
-            .min(left + 1 + length - right) as i32
+        (right + 1).min(length - left).min(left + 1 + length - right) as i32
     }
 }

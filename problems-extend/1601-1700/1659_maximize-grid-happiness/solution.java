@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-
 class Solution {
 
     public int getMaxGridHappiness(int m, int n, int introvertsCount, int extrovertsCount) {
@@ -20,7 +19,7 @@ class Solution {
             width *= 3;
         }
         int span = width / 3;
-        int[][] pair = {{0, 0, 0}, {0, -60, -10}, {0, -10, 40}};
+        int[][] pair = { { 0, 0, 0 }, { 0, -60, -10 }, { 0, -10, 40 } };
         int[][][] dp = fresh(width);
         dp[0][introvertsCount][extrovertsCount] = 0;
         for (int cell = 0; cell < m * n; ++cell) {

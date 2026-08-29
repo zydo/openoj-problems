@@ -49,7 +49,8 @@ class MKAverage {
     private long smallestSum(int j) {
         // Descend the count tree to the value holding the j-th smallest
         // element, accumulating the sums of fully covered buckets.
-        int index = 0, taken = 0;
+        int index = 0,
+            taken = 0;
         long total = 0;
         for (int step = 1 << 16; step > 0; step >>= 1) {
             int next = index + step;

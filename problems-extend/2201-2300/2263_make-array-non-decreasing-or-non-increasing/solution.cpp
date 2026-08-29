@@ -2,7 +2,7 @@
 #include <vector>
 
 namespace {
-int non_decreasing_cost(const std::vector<int>& values) {
+int non_decreasing_cost(const std::vector<int> &values) {
     std::priority_queue<int> heap;
     long long cost = 0;
     for (int v : values) {
@@ -15,11 +15,11 @@ int non_decreasing_cost(const std::vector<int>& values) {
     }
     return static_cast<int>(cost);
 }
-}  // namespace
+} // namespace
 
 class Solution {
   public:
-    int convertArray(std::vector<int>& nums) {
+    int convertArray(std::vector<int> &nums) {
         int up = non_decreasing_cost(nums);
         std::vector<int> negated(nums.size());
         for (size_t i = 0; i < nums.size(); i++) {

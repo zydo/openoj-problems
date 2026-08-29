@@ -6,7 +6,7 @@ class Solution:
         # remains, the leftover of the big letter is dropped.
         counts = [0] * 26
         for ch in s:
-            counts[ord(ch) - ord('a')] += 1
+            counts[ord(ch) - ord("a")] += 1
         out = []
         i = 25
         while True:
@@ -15,7 +15,7 @@ class Solution:
             if i < 0:
                 break
             run = min(repeatLimit, counts[i])
-            out.append(chr(ord('a') + i) * run)
+            out.append(chr(ord("a") + i) * run)
             counts[i] -= run
             if counts[i] == 0:
                 continue
@@ -24,6 +24,6 @@ class Solution:
                 j -= 1
             if j < 0:
                 break
-            out.append(chr(ord('a') + j))
+            out.append(chr(ord("a") + j))
             counts[j] -= 1
         return "".join(out)

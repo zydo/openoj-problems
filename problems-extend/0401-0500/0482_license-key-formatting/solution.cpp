@@ -6,10 +6,10 @@ class Solution {
         string key;
         for (char ch : s) {
             if (ch != '-') {
-                key += toupper((unsigned char) ch);
+                key += toupper((unsigned char)ch);
             }
         }
-        int n = (int) key.size();
+        int n = (int)key.size();
         if (n == 0) {
             return "";
         }

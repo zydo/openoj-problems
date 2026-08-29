@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution {
   public:
-    vector<vector<int>> filterOccupiedIntervals(vector<vector<int>> &occupiedIntervals,
-                                                int freeStart, int freeEnd) {
+    vector<vector<int>> filterOccupiedIntervals(vector<vector<int>> &occupiedIntervals, int freeStart, int freeEnd) {
         sort(occupiedIntervals.begin(), occupiedIntervals.end());
         vector<vector<int>> merged;
         for (auto &interval : occupiedIntervals) {
@@ -23,8 +22,10 @@ class Solution {
                 answer.push_back({start, end});
                 continue;
             }
-            if (freeStart > start) answer.push_back({start, freeStart - 1});
-            if (freeEnd < end) answer.push_back({freeEnd + 1, end});
+            if (freeStart > start)
+                answer.push_back({start, freeStart - 1});
+            if (freeEnd < end)
+                answer.push_back({freeEnd + 1, end});
         }
         return answer;
     }

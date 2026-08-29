@@ -6,7 +6,10 @@ impl Solution {
         // leaves the row its first character fixed, and it is kept in its own
         // casing.
         let rows = ["qwertyuiop", "asdfghjkl", "zxcvbnm"];
-        let row_of = |ch: char| rows.iter().position(|letters| letters.contains(ch.to_ascii_lowercase()));
+        let row_of = |ch: char| {
+            rows.iter()
+                .position(|letters| letters.contains(ch.to_ascii_lowercase()))
+        };
         let mut result = Vec::with_capacity(words.len());
         for word in &words {
             let first_row = row_of(word.chars().next().unwrap());

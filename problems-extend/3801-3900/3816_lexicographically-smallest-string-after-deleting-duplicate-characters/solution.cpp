@@ -7,7 +7,7 @@ class Solution {
         // Build the smallest one letter by letter: take the smallest letter
         // whose earliest remaining occurrence still leaves every
         // not-yet-taken letter an occurrence after it.
-        int n = (int) s.size();
+        int n = (int)s.size();
         vector<vector<int>> pos(26);
         for (int i = 0; i < n; i++) {
             pos[s[i] - 'a'].push_back(i);
@@ -37,11 +37,11 @@ class Solution {
             for (int c = 0; c < 26; c++) {
                 vector<int> &lst = pos[c];
                 int j = ptr[c];
-                while (j < (int) lst.size() && lst[j] <= p) {
+                while (j < (int)lst.size() && lst[j] <= p) {
                     j++;
                 }
                 ptr[c] = j;
-                if (j == (int) lst.size()) {
+                if (j == (int)lst.size()) {
                     continue;
                 }
                 // Taking occurrence q must not strand a needed letter.

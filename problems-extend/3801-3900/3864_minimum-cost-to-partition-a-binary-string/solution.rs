@@ -21,8 +21,8 @@ impl Solution {
             };
             if length % 2 == 0 {
                 let half = length / 2;
-                let split = solve(prefix, enc_cost, flat_cost, l, half)
-                    + solve(prefix, enc_cost, flat_cost, l + half, half);
+                let split =
+                    solve(prefix, enc_cost, flat_cost, l, half) + solve(prefix, enc_cost, flat_cost, l + half, half);
                 if split < best {
                     best = split;
                 }

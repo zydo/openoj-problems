@@ -7,7 +7,9 @@ class Solution {
         // weighted value sum (kept in 64 bits — counts reach 1e9).
         long total = 0;
         long totalSum = 0;
-        int first = -1, last = -1, mode = 0;
+        int first = -1,
+            last = -1,
+            mode = 0;
         for (int i = 0; i < count.length; i++) {
             if (count[i] > 0) {
                 if (first == -1) first = i;
@@ -24,7 +26,7 @@ class Solution {
         } else {
             median = (kth(count, total / 2) + kth(count, total / 2 + 1)) / 2.0;
         }
-        return new double[] {first, last, mean, median, mode};
+        return new double[] { first, last, mean, median, mode };
     }
 
     private long kth(int[] count, long k) {

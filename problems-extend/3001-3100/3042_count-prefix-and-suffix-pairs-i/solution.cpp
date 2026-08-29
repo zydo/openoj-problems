@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int countPrefixSuffixPairs(vector<string>& words) {
+  public:
+    int countPrefixSuffixPairs(vector<string> &words) {
         int total = 0;
         for (int i = 0; i < (int)words.size(); ++i) {
             for (int j = i + 1; j < (int)words.size(); ++j) {
@@ -12,8 +12,8 @@ public:
         return total;
     }
 
-private:
-    bool isPrefixAndSuffix(const string& str1, const string& str2) {
+  private:
+    bool isPrefixAndSuffix(const string &str1, const string &str2) {
         int size1 = str1.size();
         int size2 = str2.size();
         if (size1 > size2) {

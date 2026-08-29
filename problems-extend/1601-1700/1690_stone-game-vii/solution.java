@@ -13,8 +13,10 @@ class Solution {
         for (int i = 0; i < n; i++) pre[i + 1] = pre[i] + stones[i];
         int[][] dp = new int[n][n];
         for (int l = n - 2; l >= 0; l--) {
-            long pl = pre[l], pl1 = pre[l + 1];
-            int[] row = dp[l], below = dp[l + 1];
+            long pl = pre[l],
+                pl1 = pre[l + 1];
+            int[] row = dp[l],
+                below = dp[l + 1];
             for (int r = l + 1; r < n; r++) {
                 long a = pre[r + 1] - pl1 - below[r];
                 long b = pre[r] - pl - row[r - 1];

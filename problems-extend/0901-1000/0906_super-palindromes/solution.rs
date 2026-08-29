@@ -14,7 +14,9 @@ impl Solution {
             for half in pow10(half_length - 1)..pow10(half_length) {
                 let digits = half.to_string();
                 let mirrored: String = digits[..length - half_length].chars().rev().collect();
-                let root: i64 = format!("{digits}{mirrored}").parse().expect("root is a decimal integer");
+                let root: i64 = format!("{digits}{mirrored}")
+                    .parse()
+                    .expect("root is a decimal integer");
                 // Every square fits an i64: roots stay below 10^9, so the
                 // widest product is 999,999,999^2 < 10^18, an order of
                 // magnitude inside i64's 9.22 * 10^18 ceiling.

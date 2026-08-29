@@ -1,7 +1,6 @@
 class Solution {
-public:
-    long long minCost(vector<int>& startPos, vector<int>& homePos,
-                      vector<int>& rowCosts, vector<int>& colCosts) {
+  public:
+    long long minCost(vector<int> &startPos, vector<int> &homePos, vector<int> &rowCosts, vector<int> &colCosts) {
         long long total = 0;
         int row = startPos[0];
         while (row != homePos[0]) {

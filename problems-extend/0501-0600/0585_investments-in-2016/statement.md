@@ -56,7 +56,7 @@ policyholders and rounded to two decimal places — as a single row.
 
 ### Hint 1
 
-Both conditions are properties of the whole table, not of any one row, so each becomes a grouped set: GROUP BY tiv_2015 with HAVING COUNT(*) > 1 names the 2015 values that two or more policyholders share, and GROUP BY lat, lon with HAVING COUNT(*) = 1 names the location pairs that belong to exactly one policyholder. Group the location as a pair — lat is only half a city, and two policyholders at the same latitude but different longitudes are still in different cities.
+Both conditions are properties of the whole table, not of any one row, so each becomes a grouped set: GROUP BY tiv_2015 with HAVING COUNT(_) > 1 names the 2015 values that two or more policyholders share, and GROUP BY lat, lon with HAVING COUNT(_) = 1 names the location pairs that belong to exactly one policyholder. Group the location as a pair — lat is only half a city, and two policyholders at the same latitude but different longitudes are still in different cities.
 
 ### Hint 2
 

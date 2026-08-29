@@ -3,11 +3,7 @@
 // stops the entire repeat chain without affecting calls that already ran.
 type CancelFn = () => void;
 
-function cancellable(
-    fn: (...args: any[]) => unknown,
-    args: any[],
-    t: number,
-): CancelFn {
+function cancellable(fn: (...args: any[]) => unknown, args: any[], t: number): CancelFn {
     fn(...args);
     const intervalId: number = setInterval(() => {
         fn(...args);

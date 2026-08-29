@@ -2,7 +2,7 @@
 
 The permutation the statement asks for never names actual letters — it only
 requires that the word repeats its letters in exactly the places the pattern
-does. That structure is captured by a string's *signature*: the sequence of
+does. That structure is captured by a string's _signature_: the sequence of
 first-appearance indices of its letters. The whole problem is one
 normalization pass.
 

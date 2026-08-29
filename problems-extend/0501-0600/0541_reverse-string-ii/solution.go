@@ -6,7 +6,7 @@
 // exactly the first k of them.
 func reverseStr(s string, k int) string {
 	chars := []byte(s)
-	for i := 0; i < len(chars); i += 2*k {
+	for i := 0; i < len(chars); i += 2 * k {
 		end := i + k
 		if end > len(chars) {
 			end = len(chars)

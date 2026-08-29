@@ -17,4 +17,4 @@ function replaceNonCoprimes(nums: number[]): number[] {
         stack.push(current);
     }
     return stack;
-};
+}

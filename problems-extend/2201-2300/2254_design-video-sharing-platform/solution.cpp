@@ -37,7 +37,7 @@ class VideoSharingPlatform {
         if (it == videos.end()) {
             return "-1";
         }
-        Video& video = it->second;
+        Video &video = it->second;
         video.views++;
         int end = min<long long>(endMinute, static_cast<long long>(video.content.size()) - 1);
         return video.content.substr(startMinute, end - startMinute + 1);

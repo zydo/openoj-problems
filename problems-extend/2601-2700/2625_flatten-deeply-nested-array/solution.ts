@@ -5,16 +5,16 @@
 // original order. A sub-array is expanded only while its own depth d is
 // still less than n; anything deeper (or any scalar) lands in the result
 // untouched, which makes n=0 a no-op and survivors ride along whole.
-type Node = number | any[];
+type FlatElement = number | any[];
 
-function flat(arr: Node[], depth: number): Node[] {
-    const result: Node[] = [];
-    const stack: [Node, number][] = [];
+function flat(arr: FlatElement[], depth: number): FlatElement[] {
+    const result: FlatElement[] = [];
+    const stack: [FlatElement, number][] = [];
     for (let index = arr.length - 1; index >= 0; index--) {
         stack.push([arr[index], 0]);
     }
     while (stack.length > 0) {
-        const entry = stack.pop() as [Node, number];
+        const entry = stack.pop() as [FlatElement, number];
         const value = entry[0];
         const at = entry[1];
         if (Array.isArray(value) && at < depth) {

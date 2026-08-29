@@ -10,10 +10,7 @@ class Solution:
         # BFS. Cutting a tree rewrites its cell to 1, which is still
         # walkable, so every leg can search the original forest unchanged.
         trees = sorted(
-            (height, row, col)
-            for row, line in enumerate(forest)
-            for col, height in enumerate(line)
-            if height > 1
+            (height, row, col) for row, line in enumerate(forest) for col, height in enumerate(line) if height > 1
         )
         total = 0
         row = col = 0

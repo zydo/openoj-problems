@@ -6,8 +6,7 @@ impl Solution {
         let mut prefix = vec![vec![0i32; (cols + 1) as usize]; (rows + 1) as usize];
         for i in 0..rows as usize {
             for j in 0..cols as usize {
-                prefix[i + 1][j + 1] =
-                    grid[i][j] + prefix[i][j + 1] + prefix[i + 1][j] - prefix[i][j];
+                prefix[i + 1][j + 1] = grid[i][j] + prefix[i][j + 1] + prefix[i + 1][j] - prefix[i][j];
             }
         }
         let rect = |r1: usize, c1: usize, r2: usize, c2: usize| -> i32 {

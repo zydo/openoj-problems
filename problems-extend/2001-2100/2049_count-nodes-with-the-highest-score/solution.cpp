@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int countHighestScoreNodes(vector<int>& parents) {
+  public:
+    int countHighestScoreNodes(vector<int> &parents) {
         int n = static_cast<int>(parents.size());
         vector<vector<int>> children(n);
         for (int node = 1; node < n; ++node) {

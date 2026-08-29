@@ -52,9 +52,7 @@ var lexPalindromicPermutation = function (s, target) {
             wins = mirrored > suffix;
         } else {
             const mid = target.charCodeAt(m) - base;
-            wins =
-                oddLetter > mid ||
-                (oddLetter === mid && mirrored > suffix);
+            wins = oddLetter > mid || (oddLetter === mid && mirrored > suffix);
         }
         if (wins) {
             best = p;
@@ -84,10 +82,7 @@ var lexPalindromicPermutation = function (s, target) {
             cur[ci]--;
         }
         if (bumpAt >= 0) {
-            const parts = [
-                target.slice(0, bumpAt),
-                String.fromCharCode(base + bumpCh),
-            ];
+            const parts = [target.slice(0, bumpAt), String.fromCharCode(base + bumpCh)];
             bumpCur[bumpCh]--;
             for (let d = 0; d < 26; d++) {
                 if (bumpCur[d] > 0) {

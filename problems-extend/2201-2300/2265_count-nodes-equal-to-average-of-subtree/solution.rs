@@ -13,13 +13,16 @@ impl Solution {
         let mut items: Vec<Item> = Vec::new();
         // Flatten via pre-order using a work stack of owned subtrees plus the
         // parent slot and side to wire back.
-        let mut stack: Vec<(Option<Box<TreeNode>>, usize, u8)> =
-            vec![(root, usize::MAX, 0)];
+        let mut stack: Vec<(Option<Box<TreeNode>>, usize, u8)> = vec![(root, usize::MAX, 0)];
         while let Some((boxed, parent, side)) = stack.pop() {
             match boxed {
                 Some(mut node) => {
                     let idx = items.len();
-                    items.push(Item { val: node.val, left: None, right: None });
+                    items.push(Item {
+                        val: node.val,
+                        left: None,
+                        right: None,
+                    });
                     if parent != usize::MAX {
                         let parent_ref = &mut items[parent];
                         if side == 0 {

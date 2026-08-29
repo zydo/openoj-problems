@@ -8,10 +8,26 @@ impl Solution {
         }
         if n == 5 {
             return vec![
-                vec![0, 1], vec![2, 3], vec![0, 4], vec![1, 2], vec![3, 4],
-                vec![0, 2], vec![1, 3], vec![2, 4], vec![0, 3], vec![1, 4],
-                vec![2, 0], vec![3, 1], vec![4, 0], vec![2, 1], vec![4, 3],
-                vec![1, 0], vec![3, 2], vec![4, 1], vec![3, 0], vec![4, 2],
+                vec![0, 1],
+                vec![2, 3],
+                vec![0, 4],
+                vec![1, 2],
+                vec![3, 4],
+                vec![0, 2],
+                vec![1, 3],
+                vec![2, 4],
+                vec![0, 3],
+                vec![1, 4],
+                vec![2, 0],
+                vec![3, 1],
+                vec![4, 0],
+                vec![2, 1],
+                vec![4, 3],
+                vec![1, 0],
+                vec![3, 2],
+                vec![4, 1],
+                vec![3, 0],
+                vec![4, 2],
             ];
         }
         // Circle method: round r pairs teams at offsets +k and -k around

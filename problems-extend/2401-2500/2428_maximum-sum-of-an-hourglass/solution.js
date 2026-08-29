@@ -11,9 +11,13 @@ var maxSum = function (grid) {
     for (let r = 0; r + 2 < grid.length; r++) {
         for (let c = 0; c + 2 < grid[0].length; c++) {
             const current =
-                grid[r][c] + grid[r][c + 1] + grid[r][c + 2] +
+                grid[r][c] +
+                grid[r][c + 1] +
+                grid[r][c + 2] +
                 grid[r + 1][c + 1] +
-                grid[r + 2][c] + grid[r + 2][c + 1] + grid[r + 2][c + 2];
+                grid[r + 2][c] +
+                grid[r + 2][c + 1] +
+                grid[r + 2][c + 2];
             if (current > best) {
                 best = current;
             }

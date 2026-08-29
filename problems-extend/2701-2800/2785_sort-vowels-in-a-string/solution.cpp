@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string sortVowels(string s) {
         // Consonants never move; only vowel values permute among the vowel
         // slots. Collect the vowels, sort them by ASCII (every uppercase
@@ -29,7 +29,7 @@ public:
         }
         sort(vowels.begin(), vowels.end());
         int i = 0;
-        for (char& c : s) {
+        for (char &c : s) {
             if (isVowel(c)) {
                 c = vowels[i++];
             }

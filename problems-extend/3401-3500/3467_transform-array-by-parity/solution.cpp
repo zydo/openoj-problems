@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> transformArray(vector<int>& nums) {
+    vector<int> transformArray(vector<int> &nums) {
         // After the parity replacement every entry is 0 or 1, so the sorted
         // result is just zeros for the evens followed by ones for the odds.
         int ones = 0;

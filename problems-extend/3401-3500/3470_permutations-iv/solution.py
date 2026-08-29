@@ -32,11 +32,7 @@ class Solution:
                 # leftover values fit that pattern, and 0 otherwise.
                 rest = n - len(result) - 1
                 odd_slots = (rest + 1 - value % 2) // 2
-                ways = (
-                    min(fact[odd] * fact[even], cap)
-                    if odd_slots == odd and rest - odd_slots == even
-                    else 0
-                )
+                ways = min(fact[odd] * fact[even], cap) if odd_slots == odd and rest - odd_slots == even else 0
                 if ways >= k:
                     used[value] = True
                     result.append(value)

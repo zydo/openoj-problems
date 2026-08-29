@@ -38,13 +38,13 @@ func xorAfterQueries(nums []int, queries [][]int) int {
 			// and stops just past the last visited coordinate.
 			buckets[key] = append(buckets[key],
 				event{l / k, int64(v)},
-				event{(r - c) / k + 1, pow(int64(v))})
+				event{(r-c)/k + 1, pow(int64(v))})
 		}
 	}
 	for key, events := range buckets {
 		k, c := key/(b+1), key%(b+1)
 		sort.Slice(events, func(i, j int) bool { return events[i].pos < events[j].pos })
-		span := (n - 1 - c) / k + 1
+		span := (n-1-c)/k + 1
 		acc := int64(1)
 		prev := 0
 		i := 0

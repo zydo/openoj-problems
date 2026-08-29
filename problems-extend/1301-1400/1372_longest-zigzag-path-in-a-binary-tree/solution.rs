@@ -19,7 +19,10 @@ impl Solution {
             rights: Vec<Option<usize>>,
         }
         let mut vals: Vec<i32> = Vec::new();
-        let mut arena = Arena { lefts: Vec::new(), rights: Vec::new() };
+        let mut arena = Arena {
+            lefts: Vec::new(),
+            rights: Vec::new(),
+        };
 
         struct Build<'a> {
             vals: &'a mut Vec<i32>,
@@ -43,14 +46,18 @@ impl Solution {
             }
         }
         if let Some(root_node) = root.as_ref() {
-            Build { vals: &mut vals, arena: &mut arena }.walk(root_node);
+            Build {
+                vals: &mut vals,
+                arena: &mut arena,
+            }
+            .walk(root_node);
         } else {
             return 0;
         }
 
         let n = vals.len();
         // Iterative reverse-preorder post-order: children first, then node.
-        let mut runs_left = vec![0i32; n];  // run arriving moving left
+        let mut runs_left = vec![0i32; n]; // run arriving moving left
         let mut runs_right = vec![0i32; n]; // run arriving moving right
         let mut best = 0;
         let mut stack: Vec<(usize, u8)> = Vec::new();

@@ -21,7 +21,8 @@ class Solution {
             Frame top = stack.back();
             stack.pop_back();
             TreeNode *node = top.node;
-            if (node == nullptr) continue;
+            if (node == nullptr)
+                continue;
             if (!top.revisited) {
                 if (node->left == nullptr && node->right == nullptr) {
                     if (node->val < top.remaining) {

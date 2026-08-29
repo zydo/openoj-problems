@@ -4,7 +4,7 @@ class Solution {
     // back, leaving the queue in the same state — so only the two
     // preference counts matter. Spend them down the stack and stop at
     // the first unwanted sandwich.
-    int countStudents(vector<int>& students, vector<int>& sandwiches) {
+    int countStudents(vector<int> &students, vector<int> &sandwiches) {
         int count[2] = {0, 0};
         for (int preference : students) {
             ++count[preference];

@@ -22,7 +22,9 @@ struct TrieNode {
 
 impl Trie {
     pub fn new() -> Self {
-        Trie { root: TrieNode::default() }
+        Trie {
+            root: TrieNode::default(),
+        }
     }
 
     pub fn insert(&mut self, word: String) {

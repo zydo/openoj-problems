@@ -4,7 +4,7 @@
 
 The condition `j - i != nums[j] - nums[i]` rearranges to
 `nums[i] - i != nums[j] - j`, which changes the picture completely: each
-index carries a single shifted value `nums[i] - i`, and a pair is *good*
+index carries a single shifted value `nums[i] - i`, and a pair is _good_
 exactly when the two shifted values are equal. Since every pair is either
 good or bad, counting the good ones — far easier, because they group by
 shifted value — and subtracting from the total `n(n-1)/2` yields the bad

@@ -1,6 +1,6 @@
 class Solution {
-    public int distanceBetweenBusStops(int[] distance, int start,
-                                       int destination) {
+
+    public int distanceBetweenBusStops(int[] distance, int start, int destination) {
         // Order the stops: edge i leads from stop i to stop i+1, so the
         // clockwise arc between them uses exactly the entries in between.
         int lo = Math.min(start, destination);

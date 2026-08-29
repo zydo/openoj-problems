@@ -20,13 +20,16 @@ class Solution {
         for (int x = 0; x < 10; x++) {
             crt[x % 2][x % 5] = x;
         }
-        int a = 0, b = 0;
+        int a = 0,
+            b = 0;
         for (int j = 0; j <= t; j++) {
             // Lucas mod 2: C(t, j) is odd iff every bit of j is a bit of t.
             int r2 = (j & ~t) == 0 ? 1 : 0;
-            int r5 = 1, tj = t, jj = j;
+            int r5 = 1,
+                tj = t,
+                jj = j;
             while (jj > 0) {
-                r5 = r5 * cm5[tj % 5][jj % 5] % 5;
+                r5 = (r5 * cm5[tj % 5][jj % 5]) % 5;
                 tj /= 5;
                 jj /= 5;
             }

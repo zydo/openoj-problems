@@ -1,5 +1,4 @@
-function kItemsWithMaximumSum(numOnes: number, numZeros: number,
-    numNegOnes: number, k: number): number {
+function kItemsWithMaximumSum(numOnes: number, numZeros: number, numNegOnes: number, k: number): number {
     // Spend the draw budget on the best items first: every +1 you
     // can take, then the 0s (free filler), then pay one point per
     // forced -1. Three ranges of k, three closed-form answers.

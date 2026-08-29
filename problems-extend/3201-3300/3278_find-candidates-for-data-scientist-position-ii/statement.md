@@ -31,11 +31,11 @@ following criteria:
 
 - Candidates must have all the skills required for a project.
 - Calculate a score for each candidate-project pair as follows:
-  - Start with 100 points
-  - Add 10 points for each skill where `proficiency > importance`
-  - Subtract 5 points for each skill where `proficiency < importance`
-  - If the candidate's skill proficiency equal to the project's skill
-    importance, the score remains unchanged
+    - Start with 100 points
+    - Add 10 points for each skill where `proficiency > importance`
+    - Subtract 5 points for each skill where `proficiency < importance`
+    - If the candidate's skill proficiency equal to the project's skill
+      importance, the score remains unchanged
 
 Include only the top candidate (highest score) for each project. If
 there’s a tie, choose the candidate with the lower `candidate_id`. If

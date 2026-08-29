@@ -23,9 +23,7 @@ function minSplitMerge(nums1: number[], nums2: number[]): number {
                     const rest = state.slice(0, l).concat(state.slice(r + 1));
                     const piece = state.slice(l, r + 1);
                     for (let i = 0; i <= rest.length; i++) {
-                        const candidate = rest
-                            .slice(0, i)
-                            .concat(piece, rest.slice(i));
+                        const candidate = rest.slice(0, i).concat(piece, rest.slice(i));
                         const key = candidate.join(",");
                         if (key === goal) {
                             return steps;

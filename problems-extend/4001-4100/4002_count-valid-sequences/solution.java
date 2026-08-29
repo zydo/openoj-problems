@@ -7,12 +7,12 @@ class Solution {
         long[] fact = new long[n + 1];
         fact[0] = 1;
         for (int i = 1; i <= n; i++) {
-            fact[i] = fact[i - 1] * i % MOD;
+            fact[i] = (fact[i - 1] * i) % MOD;
         }
         long[] invFact = new long[n + 1];
         invFact[n] = powmod(fact[n], MOD - 2, MOD);
         for (int i = n; i >= 1; i--) {
-            invFact[i - 1] = invFact[i] * i % MOD;
+            invFact[i - 1] = (invFact[i] * i) % MOD;
         }
         long total = comb(n - 1, k - 1, fact, invFact, MOD);
         // All-odd compositions exist iff n - k is even; substituting each
@@ -20,14 +20,14 @@ class Solution {
         if ((n - k) % 2 == 0) {
             total -= comb((n + k) / 2 - 1, k - 1, fact, invFact, MOD);
         }
-        return (int) ((total % MOD + MOD) % MOD);
+        return (int) (((total % MOD) + MOD) % MOD);
     }
 
     private long comb(int a, int b, long[] fact, long[] invFact, long mod) {
         if (b < 0 || b > a) {
             return 0;
         }
-        return fact[a] * invFact[b] % mod * invFact[a - b] % mod;
+        return (((fact[a] * invFact[b]) % mod) * invFact[a - b]) % mod;
     }
 
     private long powmod(long base, long exp, long mod) {
@@ -35,9 +35,9 @@ class Solution {
         base %= mod;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                r = r * base % mod;
+                r = (r * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             exp >>= 1;
         }
         return r;

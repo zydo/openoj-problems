@@ -4,9 +4,7 @@ using namespace std;
 
 class Solution {
   public:
-    int secondsBetweenTimes(string startTime, string endTime) {
-        return seconds(endTime) - seconds(startTime);
-    }
+    int secondsBetweenTimes(string startTime, string endTime) { return seconds(endTime) - seconds(startTime); }
 
   private:
     int seconds(const string &value) {

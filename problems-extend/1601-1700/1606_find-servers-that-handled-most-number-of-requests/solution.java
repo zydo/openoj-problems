@@ -65,7 +65,7 @@ class Solution {
         int i = server + 1;
         while (i <= k) {
             tree[i] += delta;
-            i += i & (-i);
+            i += i & -i;
         }
     }
 
@@ -74,7 +74,7 @@ class Solution {
         int i = count;
         while (i > 0) {
             sum += tree[i];
-            i -= i & (-i);
+            i -= i & -i;
         }
         return sum;
     }

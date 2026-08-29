@@ -22,13 +22,9 @@ class MyStack {
         return value;
     }
 
-    int top() {
-        return queue.front();
-    }
+    int top() { return queue.front(); }
 
-    bool empty() {
-        return queue.empty();
-    }
+    bool empty() { return queue.empty(); }
 
   private:
     std::queue<int> queue;

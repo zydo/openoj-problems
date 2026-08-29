@@ -16,19 +16,20 @@ class Solution {
         }
         long[] result = new long[queries.length];
         for (int qi = 0; qi < queries.length; qi++) {
-            int l = queries[qi][0], r = queries[qi][1];
+            int l = queries[qi][0],
+                r = queries[qi][1];
             // First end whose run reaches back to l or earlier. Ends before
             // it sit past a drop at or after l and count their bare window
             // length; ends from there on count down to left[e].
             int p = firstAtLeast(left, l, l, r + 1);
-            result[qi] = prefBase[r + 1] - prefBase[l]
-                    + prefLeft[p] - prefLeft[l] - (long) l * (p - l);
+            result[qi] = prefBase[r + 1] - prefBase[l] + prefLeft[p] - prefLeft[l] - (long) l * (p - l);
         }
         return result;
     }
 
     private int firstAtLeast(int[] values, int target, int from, int to) {
-        int lo = from, hi = to;
+        int lo = from,
+            hi = to;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (values[mid] < target) {

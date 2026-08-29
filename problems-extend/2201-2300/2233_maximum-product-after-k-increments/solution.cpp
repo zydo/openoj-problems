@@ -3,9 +3,8 @@
 
 class Solution {
   public:
-    int maximumProduct(vector<int>& nums, int k) {
-        priority_queue<long long, vector<long long>, greater<long long>> heap(
-            nums.begin(), nums.end());
+    int maximumProduct(vector<int> &nums, int k) {
+        priority_queue<long long, vector<long long>, greater<long long>> heap(nums.begin(), nums.end());
         for (int i = 0; i < k; i++) {
             long long smallest = heap.top();
             heap.pop();

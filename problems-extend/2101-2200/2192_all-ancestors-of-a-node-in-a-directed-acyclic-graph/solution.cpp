@@ -3,8 +3,7 @@
 
 class Solution {
   public:
-    std::vector<std::vector<int>> getAncestors(
-        int n, std::vector<std::vector<int>> &edges) {
+    std::vector<std::vector<int>> getAncestors(int n, std::vector<std::vector<int>> &edges) {
         // Reverse every edge; ancestors of v are exactly the nodes
         // reachable from v in the reversed graph.
         std::vector<std::vector<int>> reverseAdj(n);

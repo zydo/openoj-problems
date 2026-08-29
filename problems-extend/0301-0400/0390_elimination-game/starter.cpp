@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int lastRemaining(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int lastRemaining(int n) { throw logic_error("TODO"); }
 };

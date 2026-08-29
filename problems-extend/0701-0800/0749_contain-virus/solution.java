@@ -100,6 +100,7 @@ class Solution {
     }
 
     private static final class Region {
+
         List<int[]> cells = new ArrayList<>();
         Set<Integer> frontier = new HashSet<>();
         int walls;

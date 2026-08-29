@@ -20,9 +20,7 @@ class MyCalendarTwo {
         }
         for (const std::pair<int, int> &event : singles) {
             if (start < event.second && event.first < end) {
-                doubles.emplace_back(
-                    std::max(start, event.first), std::min(end, event.second)
-                );
+                doubles.emplace_back(std::max(start, event.first), std::min(end, event.second));
             }
         }
         singles.emplace_back(start, end);

@@ -9,14 +9,11 @@ function maximumScore(nums: number[], k: number): number {
     // Close a pair: the count grows by one.
     const shiftAdd = (states: number[], delta: number): number[] => {
         const out = fresh();
-        for (let i = 1; i < size; ++i)
-            if (states[i - 1] !== NEG) out[i] = states[i - 1] + delta;
+        for (let i = 1; i < size; ++i) if (states[i - 1] !== NEG) out[i] = states[i - 1] + delta;
         return out;
     };
-    const bump = (states: number[], delta: number): number[] =>
-        states.map((v) => (v === NEG ? v : v + delta));
-    const merge = (a: number[], b: number[]): number[] =>
-        a.map((v, i) => (v >= b[i] ? v : b[i]));
+    const bump = (states: number[], delta: number): number[] => states.map((v) => (v === NEG ? v : v + delta));
+    const merge = (a: number[], b: number[]): number[] => a.map((v, i) => (v >= b[i] ? v : b[i]));
 
     // Phase 0: closed[j] = j pairs done; op/om = one open pair started with
     // a +/- still owing its opposite sign.
@@ -39,10 +36,7 @@ function maximumScore(nums: number[], k: number): number {
 
         const nOp = merge(op, bump(closed, a));
         const nOm = merge(om, bump(closed, -a));
-        const nClosed = merge(
-            merge(closed, shiftAdd(op, -a)),
-            shiftAdd(om, a),
-        );
+        const nClosed = merge(merge(closed, shiftAdd(op, -a)), shiftAdd(om, a));
 
         let nWp: number[] = [...wp];
         let nWm: number[] = [...wm];

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string processStr(string s) {
         // The specials mutate the result built so far: letters append,
         // '*' drops the tail, '#' doubles, '%' reverses. With s capped at
@@ -16,7 +16,7 @@ public:
             } else if (ch == '#') {
                 string doubled = result;
                 result += doubled;
-            } else {  // '%'
+            } else { // '%'
                 reverse(result.begin(), result.end());
             }
         }

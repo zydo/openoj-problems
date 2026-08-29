@@ -30,11 +30,11 @@ impl Solution {
         }
 
         // The answer is the closest marked node; unreachable ones stay at MAX.
-        let best = marked
-            .iter()
-            .map(|&node| distances[node as usize])
-            .min()
-            .unwrap();
-        if best == i64::MAX { -1 } else { best }
+        let best = marked.iter().map(|&node| distances[node as usize]).min().unwrap();
+        if best == i64::MAX {
+            -1
+        } else {
+            best
+        }
     }
 }

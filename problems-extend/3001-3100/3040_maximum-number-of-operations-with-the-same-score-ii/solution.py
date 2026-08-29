@@ -15,14 +15,10 @@ class Solution:
                 offset = width - 1
                 # Delete both end elements -> inner window starts at l + 1.
                 both_ends = [
-                    count + 1 if x + y == target else 0
-                    for x, y, count in zip(nums, nums[offset:], previous[1:])
+                    count + 1 if x + y == target else 0 for x, y, count in zip(nums, nums[offset:], previous[1:])
                 ]
                 # Delete the first two -> next window starts at l + 2.
-                first_two = [
-                    count + 1 if x + y == target else 0
-                    for x, y, count in zip(nums, nums[1:], previous[2:])
-                ]
+                first_two = [count + 1 if x + y == target else 0 for x, y, count in zip(nums, nums[1:], previous[2:])]
                 # Delete the last two -> next window starts at l.
                 last_two = [
                     count + 1 if x + y == target else 0
@@ -31,7 +27,4 @@ class Solution:
                 previous = list(map(max, first_two, last_two, both_ends))
             return previous[0]
 
-        return max(
-            best_for_score(score)
-            for score in {nums[0] + nums[1], nums[0] + nums[-1], nums[-2] + nums[-1]}
-        )
+        return max(best_for_score(score) for score in {nums[0] + nums[1], nums[0] + nums[-1], nums[-2] + nums[-1]})

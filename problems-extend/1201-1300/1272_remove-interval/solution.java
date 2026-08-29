@@ -19,10 +19,10 @@ class Solution {
                 continue;
             }
             if (start < removeStart) {
-                kept.add(new int[] {start, removeStart});
+                kept.add(new int[] { start, removeStart });
             }
             if (end > removeEnd) {
-                kept.add(new int[] {removeEnd, end});
+                kept.add(new int[] { removeEnd, end });
             }
         }
         return kept.toArray(new int[0][]);

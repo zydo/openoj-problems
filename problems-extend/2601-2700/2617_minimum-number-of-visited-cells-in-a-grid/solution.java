@@ -22,36 +22,36 @@ class Solution {
         }
         dis[0][0] = 1;
         List<PriorityQueue<long[]>> rows = new ArrayList<>();
-        List<PriorityQueue<long[]>> cols = new ArrayList<>();        for (int i = 0; i < m; i++) {
+        List<PriorityQueue<long[]>> cols = new ArrayList<>();
+        for (int i = 0; i < m; i++) {
             rows.add(new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0])));
         }
         for (int j = 0; j < n; j++) {
             cols.add(new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0])));
         }
-        rows.get(0).add(new long[] {1, 0});
-        cols.get(0).add(new long[] {1, 0});
+        rows.get(0).add(new long[] { 1, 0 });
+        cols.get(0).add(new long[] { 1, 0 });
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (i == 0 && j == 0) {
                     continue;
                 }
                 PriorityQueue<long[]> rowHeap = rows.get(i);
-                while (!rowHeap.isEmpty()
-                        && grid[i][(int) rowHeap.peek()[1]] + rowHeap.peek()[1] < j) {
+                while (!rowHeap.isEmpty() && grid[i][(int) rowHeap.peek()[1]] + rowHeap.peek()[1] < j) {
                     rowHeap.poll();
                 }
                 PriorityQueue<long[]> colHeap = cols.get(j);
-                while (!colHeap.isEmpty()
-                        && grid[(int) colHeap.peek()[1]][j] + colHeap.peek()[1] < i) {
+                while (!colHeap.isEmpty() && grid[(int) colHeap.peek()[1]][j] + colHeap.peek()[1] < i) {
                     colHeap.poll();
                 }
                 long nearest = Math.min(
-                        rowHeap.isEmpty() ? INFINITY : rowHeap.peek()[0],
-                        colHeap.isEmpty() ? INFINITY : colHeap.peek()[0]);
+                    rowHeap.isEmpty() ? INFINITY : rowHeap.peek()[0],
+                    colHeap.isEmpty() ? INFINITY : colHeap.peek()[0]
+                );
                 if (nearest != INFINITY) {
                     dis[i][j] = (int) (nearest + 1);
-                    rowHeap.add(new long[] {nearest + 1, j});
-                    colHeap.add(new long[] {nearest + 1, i});
+                    rowHeap.add(new long[] { nearest + 1, j });
+                    colHeap.add(new long[] { nearest + 1, i });
                 }
             }
         }

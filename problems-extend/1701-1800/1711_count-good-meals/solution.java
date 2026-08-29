@@ -28,7 +28,7 @@ class Solution {
                 if (mate > value) {
                     total += (long) c * count.getOrDefault(mate, 0);
                 } else if (mate == value) {
-                    total += (long) c * (c - 1) / 2;
+                    total += ((long) c * (c - 1)) / 2;
                 }
             }
         }

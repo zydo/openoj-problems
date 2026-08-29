@@ -8,8 +8,10 @@ class Solution {
         // Extended Boyer-Moore voting: two candidate slots, two counters. A
         // match raises its slot's counter, a zero counter adopts the current
         // value, and a value matching neither slot spends both counters.
-        int candidate1 = 0, count1 = 0;
-        int candidate2 = 0, count2 = 0;
+        int candidate1 = 0,
+            count1 = 0;
+        int candidate2 = 0,
+            count2 = 0;
         for (int value : nums) {
             if (value == candidate1) {
                 ++count1;
@@ -29,7 +31,8 @@ class Solution {
         // The vote only nominates; a verification pass counts each nominee's
         // real occurrences and keeps only those above the floor(n/3) bar.
         int threshold = nums.length / 3;
-        int total1 = 0, total2 = 0;
+        int total1 = 0,
+            total2 = 0;
         for (int value : nums) {
             if (value == candidate1) {
                 ++total1;

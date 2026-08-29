@@ -1,10 +1,4 @@
-function maximumBeauty(
-    flowers: number[],
-    newFlowers: number,
-    target: number,
-    full: number,
-    partial: number
-): number {
+function maximumBeauty(flowers: number[], newFlowers: number, target: number, full: number, partial: number): number {
     // Prefix sums reach ~1e10 and the answer up to ~1e10 — both below 2^53,
     // so plain numbers stay exact throughout.
     flowers.sort((a, b) => a - b);

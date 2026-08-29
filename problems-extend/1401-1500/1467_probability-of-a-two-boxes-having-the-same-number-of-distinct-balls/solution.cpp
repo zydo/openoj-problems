@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    double getProbability(std::vector<int>& balls) {
+    double getProbability(std::vector<int> &balls) {
         int total = 0;
         for (int count : balls) {
             total += count;
@@ -17,17 +17,15 @@ class Solution {
   private:
     // Sum of per-color binomial products over the completions whose two
     // boxes end with equal distinct-color counts.
-    long long walk(std::vector<int>& balls, int index, int remaining, int distinct1, int distinct2) {
+    long long walk(std::vector<int> &balls, int index, int remaining, int distinct1, int distinct2) {
         if (index == (int)balls.size()) {
             return (remaining == 0 && distinct1 == distinct2) ? 1 : 0;
         }
         int count = balls[index];
         long long ways = 0;
         for (int x = 0; x <= std::min(count, remaining); x++) {
-            ways += binomial(count, x)
-                  * walk(balls, index + 1, remaining - x,
-                         distinct1 + (x > 0 ? 1 : 0),
-                         distinct2 + (x < count ? 1 : 0));
+            ways += binomial(count, x) *
+                    walk(balls, index + 1, remaining - x, distinct1 + (x > 0 ? 1 : 0), distinct2 + (x < count ? 1 : 0));
         }
         return ways;
     }

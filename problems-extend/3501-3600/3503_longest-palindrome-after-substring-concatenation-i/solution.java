@@ -1,7 +1,8 @@
 class Solution {
 
     public int longestPalindrome(String s, String t) {
-        int n = s.length(), m = t.length();
+        int n = s.length(),
+            m = t.length();
         // palS[i][j] (palT[i][j]) records whether s[i..j] (t[i..j]) is a
         // palindrome; the tables also give single-string answers, since
         // either substring may be empty. Padding rows keep the below-row in
@@ -11,8 +12,7 @@ class Solution {
         for (int i = n - 1; i >= 0; --i) {
             palS[i][i] = true;
             for (int j = i + 1; j < n; ++j) {
-                palS[i][j] = s.charAt(i) == s.charAt(j)
-                        && (j == i + 1 || palS[i + 1][j - 1]);
+                palS[i][j] = s.charAt(i) == s.charAt(j) && (j == i + 1 || palS[i + 1][j - 1]);
             }
             for (int j = n - 1; j >= i; --j) {
                 if (palS[i][j]) {
@@ -25,8 +25,7 @@ class Solution {
         for (int i = m - 1; i >= 0; --i) {
             palT[i][i] = true;
             for (int j = i + 1; j < m; ++j) {
-                palT[i][j] = t.charAt(i) == t.charAt(j)
-                        && (j == i + 1 || palT[i + 1][j - 1]);
+                palT[i][j] = t.charAt(i) == t.charAt(j) && (j == i + 1 || palT[i + 1][j - 1]);
             }
             for (int j = m - 1; j >= i; --j) {
                 if (palT[i][j]) {

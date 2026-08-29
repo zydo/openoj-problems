@@ -51,7 +51,7 @@
         "value_type": {
           "kind": "integer",
           "bits": 32
-          }
+        }
       },
       {
         "name": "level",

@@ -13,7 +13,10 @@ function findFarmland(land: number[][]): number[][] {
             if (land[r][c] !== 1 || seen[r][c]) continue;
             seen[r][c] = true;
             const q: number[][] = [[r, c]];
-            let minR = r, maxR = r, minC = c, maxC = c;
+            let minR = r,
+                maxR = r,
+                minC = c,
+                maxC = c;
             while (q.length > 0) {
                 const [cr, cc] = q.shift()!;
                 minR = Math.min(minR, cr);
@@ -23,8 +26,7 @@ function findFarmland(land: number[][]): number[][] {
                 for (let d = 0; d < 4; ++d) {
                     const nr = cr + dr[d];
                     const nc = cc + dc[d];
-                    if (0 <= nr && nr < m && 0 <= nc && nc < n &&
-                        land[nr][nc] === 1 && !seen[nr][nc]) {
+                    if (0 <= nr && nr < m && 0 <= nc && nc < n && land[nr][nc] === 1 && !seen[nr][nc]) {
                         seen[nr][nc] = true;
                         q.push([nr, nc]);
                     }

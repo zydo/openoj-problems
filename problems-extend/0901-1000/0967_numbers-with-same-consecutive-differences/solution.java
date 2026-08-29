@@ -6,7 +6,7 @@ class Solution {
         // Seed the queue with the nine legal first digits. A seed is
         // never 0 and growth only appends digits, so no number grown
         // from these seeds can carry a leading zero.
-        int[] queue = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] queue = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         // Grow every prefix by one digit, n - 1 times. A prefix that
         // ends in d can only continue with d - k or d + k — any other
         // next digit would break the consecutive-difference rule at

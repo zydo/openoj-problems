@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string maxSumOfSquares(int num, int sum) {
-        throw logic_error("TODO");
-    }
+  public:
+    string maxSumOfSquares(int num, int sum) { throw logic_error("TODO"); }
 };

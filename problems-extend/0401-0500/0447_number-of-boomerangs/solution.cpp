@@ -9,7 +9,8 @@ class Solution {
             // and no square root ever gets the chance to round.
             unordered_map<long long, int> counts;
             for (int j = 0; j < (int)points.size(); ++j) {
-                if (j == i) continue;
+                if (j == i)
+                    continue;
                 long long dx = points[j][0] - points[i][0];
                 long long dy = points[j][1] - points[i][1];
                 counts[dx * dx + dy * dy]++;

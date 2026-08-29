@@ -4,12 +4,12 @@
 
 Table: `Transactions`
 
-| Column Name     | Type |
-| --------------- | ---- |
-| transaction_id  | int  |
-| customer_id     | int  |
+| Column Name      | Type |
+| ---------------- | ---- |
+| transaction_id   | int  |
+| customer_id      | int  |
 | transaction_date | date |
-| amount          | int  |
+| amount           | int  |
 
 `transaction_id` is the primary key (column with unique values) for this
 table. Each row contains information about transactions that includes

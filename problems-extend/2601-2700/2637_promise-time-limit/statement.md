@@ -118,9 +118,9 @@ The function immediately throws an error.
 You can return a copy of a function with:
 
 function outerFunction(fn) {
-  return function innerFunction(...params) {
-    return fn(...params);
-  };
+return function innerFunction(...params) {
+return fn(...params);
+};
 }
 
 ### Hint 2

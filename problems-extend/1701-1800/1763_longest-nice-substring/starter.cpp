@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string longestNiceSubstring(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    string longestNiceSubstring(string s) { throw logic_error("TODO"); }
 };

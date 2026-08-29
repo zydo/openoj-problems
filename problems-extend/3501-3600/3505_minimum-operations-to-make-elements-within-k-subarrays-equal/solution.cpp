@@ -1,11 +1,11 @@
 class Solution {
-   public:
+  public:
     // Equalizing a window costs sum(|v - t|), minimized when t is a median.
     // A sliding window over a Fenwick tree (compressed values) yields every
     // x-window's cost in O(log n): kth finds the median and prefix count/sum
     // split the window about it. A rolling DP then picks k non-overlapping
     // windows.
-    long long minOperations(vector<int>& nums, int x, int k) {
+    long long minOperations(vector<int> &nums, int x, int k) {
         int n = (int)nums.size();
         vector<int> vals = nums;
         sort(vals.begin(), vals.end());
@@ -18,17 +18,14 @@ class Solution {
         vector<long long> costs(winCount);
         long long total = 0;
         for (int i = 0; i < n; i++) {
-            int idx =
-                (int)(lower_bound(vals.begin(), vals.end(), nums[i]) - vals.begin()) + 1;
+            int idx = (int)(lower_bound(vals.begin(), vals.end(), nums[i]) - vals.begin()) + 1;
             for (int p = idx; p <= m; p += p & -p) {
                 cnt[p]++;
                 sm[p] += nums[i];
             }
             total += nums[i];
             if (i >= x) {
-                int out =
-                    (int)(lower_bound(vals.begin(), vals.end(), nums[i - x]) - vals.begin()) +
-                    1;
+                int out = (int)(lower_bound(vals.begin(), vals.end(), nums[i - x]) - vals.begin()) + 1;
                 for (int p = out; p <= m; p += p & -p) {
                     cnt[p]--;
                     sm[p] -= nums[i - x];
@@ -40,7 +37,8 @@ class Solution {
                 int pos = 0;
                 int acc = 0;
                 int step = 1;
-                while (step << 1 <= m) step <<= 1;
+                while (step << 1 <= m)
+                    step <<= 1;
                 for (; step > 0; step >>= 1) {
                     int nxt = pos + step;
                     if (nxt <= m && acc + cnt[nxt] < kpos) {

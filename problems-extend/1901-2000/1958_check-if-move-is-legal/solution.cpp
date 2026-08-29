@@ -9,14 +9,16 @@ class Solution {
         int dc[8] = {-1, 0, 1, -1, 1, -1, 0, 1};
         for (int d = 0; d < 8; ++d) {
             int r = rMove + dr[d], c = cMove + dc[d];
-            if (r < 0 || r >= 8 || c < 0 || c >= 8 || board[r][c][0] != opposite) continue;
+            if (r < 0 || r >= 8 || c < 0 || c >= 8 || board[r][c][0] != opposite)
+                continue;
             r += dr[d];
             c += dc[d];
             while (r >= 0 && r < 8 && c >= 0 && c < 8 && board[r][c][0] == opposite) {
                 r += dr[d];
                 c += dc[d];
             }
-            if (r >= 0 && r < 8 && c >= 0 && c < 8 && board[r][c][0] == target) return true;
+            if (r >= 0 && r < 8 && c >= 0 && c < 8 && board[r][c][0] == target)
+                return true;
         }
         return false;
     }

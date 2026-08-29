@@ -1,4 +1,5 @@
 class Solution {
+
     public int countPyramids(int[][] grid) {
         return countDirection(grid, false) + countDirection(grid, true);
     }

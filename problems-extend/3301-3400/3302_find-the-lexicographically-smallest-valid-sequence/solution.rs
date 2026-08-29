@@ -32,9 +32,7 @@ impl Solution {
                 ans[filled] = i as i32;
                 filled += 1;
                 j += 1;
-            } else if can_change
-                && (j == m as i64 - 1 || i < last[(j + 1) as usize])
-            {
+            } else if can_change && (j == m as i64 - 1 || i < last[(j + 1) as usize]) {
                 can_change = false;
                 ans[filled] = i as i32;
                 filled += 1;

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxTransactions(vector<int>& transactions) {
+    int maxTransactions(vector<int> &transactions) {
         // Greedy scan with a max-heap of the debits already taken: take every
         // transaction that leaves the balance nonnegative, and when a debit
         // does not fit, refund the largest debit taken earlier if it was

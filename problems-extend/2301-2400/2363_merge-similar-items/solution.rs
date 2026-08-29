@@ -10,9 +10,6 @@ impl Solution {
                 *weights.entry(item[0]).or_insert(0) += item[1];
             }
         }
-        weights
-            .into_iter()
-            .map(|(value, weight)| vec![value, weight])
-            .collect()
+        weights.into_iter().map(|(value, weight)| vec![value, weight]).collect()
     }
 }

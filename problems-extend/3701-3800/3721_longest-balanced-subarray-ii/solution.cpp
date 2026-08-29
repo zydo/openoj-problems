@@ -82,13 +82,9 @@ class SegTree {
         build(1, 0, n - 1, values);
     }
 
-    void addRange(int ql, int qr, int delta) {
-        add(1, 0, n - 1, ql, qr, delta);
-    }
+    void addRange(int ql, int qr, int delta) { add(1, 0, n - 1, ql, qr, delta); }
 
-    int rightmostZero(int ql, int qr) {
-        return rightmost(1, 0, n - 1, ql, qr);
-    }
+    int rightmostZero(int ql, int qr) { return rightmost(1, 0, n - 1, ql, qr); }
 };
 
 class Solution {

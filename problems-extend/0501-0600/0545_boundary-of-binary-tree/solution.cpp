@@ -1,9 +1,7 @@
 class Solution {
   public:
     vector<int> boundaryOfBinaryTree(TreeNode *root) {
-        auto isLeaf = [](TreeNode *node) {
-            return node->left == nullptr && node->right == nullptr;
-        };
+        auto isLeaf = [](TreeNode *node) { return node->left == nullptr && node->right == nullptr; };
 
         // Left boundary: start at the root's left child and keep descending,
         // left child when present and otherwise the right child, stopping

@@ -85,7 +85,7 @@ class Solution {
             freeWav = nFreeWav;
         }
         long grand = 0;
-        for (long[][][] tab : new long[][][][] {tightWav, freeWav}) {
+        for (long[][][] tab : new long[][][][] { tightWav, freeWav }) {
             for (int s = 0; s <= 1; s++) {
                 for (int d1 = 0; d1 <= NONE; d1++) {
                     for (int d2 = 0; d2 <= NONE; d2++) {

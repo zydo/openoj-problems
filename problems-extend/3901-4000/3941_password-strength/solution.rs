@@ -17,10 +17,26 @@ impl Solution {
         }
 
         let mut answer = 0;
-        for present in lower { if present { answer += 1; } }
-        for present in upper { if present { answer += 2; } }
-        for present in digit { if present { answer += 3; } }
-        for present in special { if present { answer += 5; } }
+        for present in lower {
+            if present {
+                answer += 1;
+            }
+        }
+        for present in upper {
+            if present {
+                answer += 2;
+            }
+        }
+        for present in digit {
+            if present {
+                answer += 3;
+            }
+        }
+        for present in special {
+            if present {
+                answer += 5;
+            }
+        }
         answer
     }
 }

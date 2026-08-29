@@ -11,7 +11,7 @@ class Solution {
     }
 
   private:
-    bool dominates(const std::string& x, const std::string& y) {
+    bool dominates(const std::string &x, const std::string &y) {
         for (int i = 0; i < (int)x.size(); i++) {
             if (x[i] < y[i]) {
                 return false;

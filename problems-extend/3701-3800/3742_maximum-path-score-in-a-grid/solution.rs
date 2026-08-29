@@ -32,6 +32,10 @@ impl Solution {
             dp = next;
         }
         let best = *dp[n - 1].iter().max().unwrap();
-        if best >= 0 { best } else { -1 }
+        if best >= 0 {
+            best
+        } else {
+            -1
+        }
     }
 }

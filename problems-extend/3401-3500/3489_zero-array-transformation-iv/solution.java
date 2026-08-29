@@ -23,7 +23,9 @@ class Solution {
             return 0;
         }
         for (int k = 0; k < queries.length; k++) {
-            int l = queries[k][0], r = queries[k][1], val = queries[k][2];
+            int l = queries[k][0],
+                r = queries[k][1],
+                val = queries[k][2];
             for (int i = l; i <= r; i++) {
                 if (done[i] || val > nums[i]) {
                     continue;

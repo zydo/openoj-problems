@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool phonePrefix(vector<string>& numbers) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool phonePrefix(vector<string> &numbers) { throw logic_error("TODO"); }
 };

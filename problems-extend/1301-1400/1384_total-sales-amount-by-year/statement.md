@@ -4,9 +4,9 @@
 
 Table: `Product`
 
-| Column Name | Type |
-| ----------- | ---- |
-| product_id | int |
+| Column Name  | Type    |
+| ------------ | ------- |
+| product_id   | int     |
 | product_name | varchar |
 
 product_id is the primary key (column with unique values) for this table.
@@ -14,12 +14,12 @@ product_name is the name of the product.
 
 Table: `Sales`
 
-| Column Name | Type |
-| ----------- | ---- |
-| product_id | int |
-| period_start | date |
-| period_end | date |
-| average_daily_sales | int |
+| Column Name         | Type |
+| ------------------- | ---- |
+| product_id          | int  |
+| period_start        | date |
+| period_end          | date |
+| average_daily_sales | int  |
 
 product_id is the primary key (column with unique values) for this table.
 period_start and period_end indicate the start and end date of the sales

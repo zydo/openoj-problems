@@ -1,6 +1,9 @@
 SELECT
   p.product_id,
-  ROUND(p.price * (100 - COALESCE(d.discount, 0)) / 100.0, 2) AS final_price,
+  ROUND(
+    p.price * (100 - COALESCE(d.discount, 0)) / 100.0,
+    2
+  ) AS final_price,
   p.category
 FROM
   Products p

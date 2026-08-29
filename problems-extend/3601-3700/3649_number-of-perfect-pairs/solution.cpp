@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long perfectPairs(vector<int>& nums) {
+    long long perfectPairs(vector<int> &nums) {
         // Signs never matter: with x = |a| <= y = |b| a pair is perfect
         // exactly when y <= 2x, so work in sorted absolute values and
         // count, for each i, the later entries within double of a[i].

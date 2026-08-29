@@ -25,10 +25,7 @@ impl Solution {
 
     // Each value has exactly one parent, so assembly visits every node once;
     // reading the immutable adjacency map needs no shared ownership.
-    fn assemble(
-        kids: &HashMap<i32, [Option<i32>; 2]>,
-        value: i32,
-    ) -> Option<Box<TreeNode>> {
+    fn assemble(kids: &HashMap<i32, [Option<i32>; 2]>, value: i32) -> Option<Box<TreeNode>> {
         let mut node = Box::new(TreeNode::new(value));
         if let Some(slot) = kids.get(&value) {
             node.left = slot[0].map(|v| Self::assemble(kids, v)).flatten();

@@ -21,8 +21,7 @@ var toHexspeak = function (num) {
         if (r >= 2 && r <= 9) {
             return "ERROR";
         }
-        letters.push(r <= 1 ? (r === 0 ? "O" : "I")
-                            : String.fromCharCode(65 + r - 10));
+        letters.push(r <= 1 ? (r === 0 ? "O" : "I") : String.fromCharCode(65 + r - 10));
     }
     return letters.join("");
 };

@@ -4,11 +4,11 @@
 
 Table: `Friends`
 
-| Column Name | Type |
-| ----------- | ---- |
-| id | int |
-| name | varchar |
-| activity | varchar |
+| Column Name | Type    |
+| ----------- | ------- |
+| id          | int     |
+| name        | varchar |
+| activity    | varchar |
 
 id is the id of the friend and the primary key for this table in SQL.
 name is the name of the friend.
@@ -16,10 +16,10 @@ activity is the name of the activity which the friend takes part in.
 
 Table: `Activities`
 
-| Column Name | Type |
-| ----------- | ---- |
-| id | int |
-| name | varchar |
+| Column Name | Type    |
+| ----------- | ------- |
+| id          | int     |
+| name        | varchar |
 
 In SQL, id is the primary key for this table.
 name is the name of the activity.

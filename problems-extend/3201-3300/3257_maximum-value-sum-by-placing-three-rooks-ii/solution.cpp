@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    long long maximumValueSum(std::vector<std::vector<int>>& board) {
+    long long maximumValueSum(std::vector<std::vector<int>> &board) {
         // The three rooks occupy three distinct rows; pick the middle row i.
         // top[i][j] is the best cell in column j above row i and bottom[i][j]
         // the best below. A placement takes one column from the top band, one
@@ -16,9 +16,11 @@ class Solution {
         std::vector<std::vector<long long>> bottom(m, std::vector<long long>(n));
         for (int j = 0; j < n; ++j) {
             top[0][j] = board[0][j];
-            for (int i = 1; i < m; ++i) top[i][j] = std::max(top[i - 1][j], (long long)board[i][j]);
+            for (int i = 1; i < m; ++i)
+                top[i][j] = std::max(top[i - 1][j], (long long)board[i][j]);
             bottom[m - 1][j] = board[m - 1][j];
-            for (int i = m - 2; i >= 0; --i) bottom[i][j] = std::max(bottom[i + 1][j], (long long)board[i][j]);
+            for (int i = m - 2; i >= 0; --i)
+                bottom[i][j] = std::max(bottom[i + 1][j], (long long)board[i][j]);
         }
         constexpr long long NEG = -(1LL << 62);
         long long ans = NEG;
@@ -28,9 +30,11 @@ class Solution {
             auto b = top3(bottom[i + 1]);
             for (int ca : t) {
                 for (int cb : mid) {
-                    if (cb == ca) continue;
+                    if (cb == ca)
+                        continue;
                     for (int cc : b) {
-                        if (cc == ca || cc == cb) continue;
+                        if (cc == ca || cc == cb)
+                            continue;
                         ans = std::max(ans, top[i - 1][ca] + board[i][cb] + bottom[i + 1][cc]);
                     }
                 }
@@ -40,8 +44,7 @@ class Solution {
     }
 
   private:
-    template <typename T>
-    static std::vector<int> top3(const std::vector<T>& vals) {
+    template <typename T> static std::vector<int> top3(const std::vector<T> &vals) {
         std::vector<int> idx(vals.size());
         std::iota(idx.begin(), idx.end(), 0);
         std::sort(idx.begin(), idx.end(), [&](int a, int b) { return vals[a] > vals[b]; });

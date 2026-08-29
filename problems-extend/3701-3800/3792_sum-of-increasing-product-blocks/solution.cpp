@@ -19,6 +19,6 @@ class Solution {
             }
             total = (total + prod) % MOD;
         }
-        return (int) total;
+        return (int)total;
     }
 };

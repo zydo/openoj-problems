@@ -1,8 +1,6 @@
 class Solution {
   public:
-    int sumOfLeftLeaves(TreeNode *root) {
-        return collect(root, false);
-    }
+    int sumOfLeftLeaves(TreeNode *root) { return collect(root, false); }
 
   private:
     // Pre-order carrying each node's side: when the walk enters a leaf it

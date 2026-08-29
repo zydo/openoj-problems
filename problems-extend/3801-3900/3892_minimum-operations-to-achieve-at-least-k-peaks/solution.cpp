@@ -7,8 +7,10 @@ class Solution {
         // they keep their original values and making position i a peak costs
         // max(0, max(prev, nxt) + 1 - nums[i]) with original neighbour values.
         int n = (int)nums.size();
-        if (k == 0) return 0;
-        if (k > n / 2) return -1; // a circle admits at most floor(n/2) peaks
+        if (k == 0)
+            return 0;
+        if (k > n / 2)
+            return -1; // a circle admits at most floor(n/2) peaks
         const long long INF = 4000000000000000000LL;
         vector<long long> c(n, 0);
         for (int i = 1; i < n; i++) {
@@ -32,7 +34,8 @@ class Solution {
         vector<long long> notPeak(cap + 1, INF);
         vector<long long> peak(cap + 1, INF);
         notPeak[0] = 0;
-        if (!forceStart && cap >= 1) peak[1] = c[1];
+        if (!forceStart && cap >= 1)
+            peak[1] = c[1];
         for (int i = 2; i < n; i++) {
             vector<long long> newNot(cap + 1);
             vector<long long> newPeak(cap + 1, INF);
@@ -45,11 +48,13 @@ class Solution {
                 long long base = c[i];
                 for (int j = 1; j < cap; j++) {
                     long long v = notPeak[j - 1];
-                    if (v < INF) newPeak[j] = v + base;
+                    if (v < INF)
+                        newPeak[j] = v + base;
                 }
                 if (cap >= 1) {
                     long long v = min(notPeak[cap - 1], notPeak[cap]);
-                    if (v < INF) newPeak[cap] = v + base;
+                    if (v < INF)
+                        newPeak[cap] = v + base;
                 }
             }
             notPeak = move(newNot);

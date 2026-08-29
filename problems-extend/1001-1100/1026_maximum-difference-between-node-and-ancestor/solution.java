@@ -4,6 +4,7 @@ import java.util.Deque;
 class Solution {
 
     private static final class Frame {
+
         final TreeNode node;
         final int pathMin;
         final int pathMax;

@@ -54,8 +54,7 @@ function minOperations(nums: number[]): number {
     // frequency over every distinct value's divisor set.
     const multipleCount = new Map<number, number>();
     for (const [v, f] of freq)
-        for (const d of divisors(facs.get(v)!))
-            multipleCount.set(d, (multipleCount.get(d) ?? 0) + f);
+        for (const d of divisors(facs.get(v)!)) multipleCount.set(d, (multipleCount.get(d) ?? 0) + f);
 
     // A target absent from nums costs at least one operation per element
     // (>= n total), while the lcm costs at most n (every element divides

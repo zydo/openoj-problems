@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool isDecomposable(string s) {
         // A run is a maximal block of equal digits. A run of length L must
         // split into 3-length pieces plus at most one 2-length piece, so

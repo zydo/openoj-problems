@@ -3,6 +3,6 @@
  * @param {string} str2
  * @return {string}
  */
-var gcdOfStrings = function(str1, str2) {
+var gcdOfStrings = function (str1, str2) {
     throw new Error("TODO");
 };

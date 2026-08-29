@@ -51,7 +51,7 @@ contiguous range.
 
 ### Hint 2
 
-Track, for every pair of *ending* indices, the length of the run of exact
+Track, for every pair of _ending_ indices, the length of the run of exact
 matches ending there and the length of the longest run ending there with
 at most one mismatch. Their difference is the count you want to add for
 that ending pair.

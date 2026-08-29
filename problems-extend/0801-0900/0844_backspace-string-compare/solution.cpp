@@ -5,7 +5,7 @@ class Solution {
         // character to its left that survives, and backspacing an empty text
         // leaves it empty. Walk both strings from the end, skip everything
         // that gets deleted, and compare the survivors pairwise.
-        int i = (int) s.size() - 1, j = (int) t.size() - 1;
+        int i = (int)s.size() - 1, j = (int)t.size() - 1;
         while (true) {
             i = settle(s, i);
             j = settle(t, j);
@@ -14,7 +14,8 @@ class Solution {
                 // counts as equal and a lone survivor decides false.
                 return i == j;
             }
-            if (s[i] != t[j]) return false;
+            if (s[i] != t[j])
+                return false;
             --i;
             --j;
         }
@@ -23,12 +24,15 @@ class Solution {
   private:
     // Move index left past deleted characters; return the nearest survivor's
     // index, or -1 when nothing survives.
-    int settle(const string& text, int index) {
+    int settle(const string &text, int index) {
         int skip = 0;
         while (index >= 0) {
-            if (text[index] == '#') ++skip;
-            else if (skip > 0) --skip;
-            else return index;
+            if (text[index] == '#')
+                ++skip;
+            else if (skip > 0)
+                --skip;
+            else
+                return index;
             --index;
         }
         return -1;

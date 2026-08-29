@@ -4,7 +4,8 @@ class Solution {
         // Upper bound over the half-open range [lo, hi): the first index
         // whose letter is strictly greater than target. The wrap below
         // handles the case where no letter qualifies.
-        int lo = 0, hi = letters.length;
+        int lo = 0,
+            hi = letters.length;
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
             if (letters[mid].compareTo(target) <= 0) {

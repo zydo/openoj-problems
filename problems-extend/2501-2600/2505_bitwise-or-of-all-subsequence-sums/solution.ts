@@ -5,8 +5,7 @@ function subsequenceSumOr(nums: number[]): number {
     // truncates to 32 bits — fold values in as two exact 30-bit halves.
     const HALF = 1073741824; // 2^30
     const or64 = (a: number, b: number): number =>
-        (Math.floor(a / HALF) | Math.floor(b / HALF)) * HALF +
-        ((a % HALF) | (b % HALF));
+        (Math.floor(a / HALF) | Math.floor(b / HALF)) * HALF + ((a % HALF) | (b % HALF));
     let ans = 0;
     let pre = 0;
     for (const x of nums) {

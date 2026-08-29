@@ -19,8 +19,7 @@ class Solution {
             if (lo > hi) {
                 return 0;
             }
-            return upper_bound(walls.begin(), walls.end(), hi) -
-                   lower_bound(walls.begin(), walls.end(), lo);
+            return upper_bound(walls.begin(), walls.end(), hi) - lower_bound(walls.begin(), walls.end(), lo);
         };
         // Firing left the bullet stops at the previous robot, firing right
         // at the next one; a wall on the blocker's position survives (only
@@ -50,9 +49,7 @@ class Solution {
             // Facing shots share the gap: when this robot fires left and the
             // previous one fired right, the walls both bullets reach were
             // already counted and must not count twice.
-            long long shared = count(left_lo(i),
-                                     min((long long)bots[i - 1].first + bots[i - 1].second,
-                                         pos - 1));
+            long long shared = count(left_lo(i), min((long long)bots[i - 1].first + bots[i - 1].second, pos - 1));
             long long best = max(prev_left, prev_right);
             prev_left = max(prev_left + here_left, prev_right + here_left - shared);
             // A rightward shot can never overlap anything already decided.

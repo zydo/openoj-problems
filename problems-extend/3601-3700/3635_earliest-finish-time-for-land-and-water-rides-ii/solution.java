@@ -1,7 +1,6 @@
 class Solution {
 
-    public int earliestFinishTime(int[] landStartTime, int[] landDuration, int[] waterStartTime,
-            int[] waterDuration) {
+    public int earliestFinishTime(int[] landStartTime, int[] landDuration, int[] waterStartTime, int[] waterDuration) {
         // Only the moment the first ride ends matters: the second ride then
         // costs max(open, finish) + duration, which never improves when the
         // hand-off gets later. So each order fixes the earliest-finishing

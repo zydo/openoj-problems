@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<string> maxNumOfSubstrings(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<string> maxNumOfSubstrings(string s) { throw logic_error("TODO"); }
 };

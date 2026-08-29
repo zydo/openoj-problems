@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long maxScore(vector<int>& nums, int x) {
+  public:
+    long long maxScore(vector<int> &nums, int x) {
         const long long unseen = -(1LL << 60);
         long long best[2] = {unseen, unseen};
         best[nums[0] % 2] = nums[0];

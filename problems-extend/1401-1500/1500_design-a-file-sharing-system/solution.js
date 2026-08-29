@@ -26,9 +26,7 @@ class FileSharing {
     }
 
     request(userID, chunkID) {
-        const owners = [...this.alive]
-            .filter((uid) => this.chunks.get(uid).has(chunkID))
-            .sort((a, b) => a - b);
+        const owners = [...this.alive].filter((uid) => this.chunks.get(uid).has(chunkID)).sort((a, b) => a - b);
         if (owners.length > 0) {
             this.chunks.get(userID).add(chunkID);
         }

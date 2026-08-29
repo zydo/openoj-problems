@@ -4,7 +4,9 @@ class Solution {
         // Walk both strings from their right ends, adding the way
         // pencil-and-paper binary addition does: one digit from each input
         // plus the carry in, one result digit and a new carry out.
-        int i = a.length() - 1, j = b.length() - 1, carry = 0;
+        int i = a.length() - 1,
+            j = b.length() - 1,
+            carry = 0;
         StringBuilder digits = new StringBuilder();
         // Running while either input has digits left or a carry is pending
         // absorbs both uneven lengths (the shorter input just stops
@@ -18,7 +20,7 @@ class Solution {
             // result digit and the rest is the next carry. Only single
             // characters are ever converted, never the whole strings, which
             // is what the follow-up asks for.
-            digits.append((char) ('0' + total % 2));
+            digits.append((char) ('0' + (total % 2)));
             carry = total / 2;
         }
         // Digits were produced least-significant first; one reverse at the

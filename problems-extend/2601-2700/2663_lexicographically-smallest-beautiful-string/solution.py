@@ -18,10 +18,7 @@ class Solution:
         for i in range(len(chars) - 1, -1, -1):
             for code in range(ord(s[i]) + 1, limit):
                 cand = chr(code)
-                if (
-                    (i < 1 or chars[i - 1] != cand)
-                    and (i < 2 or chars[i - 2] != cand)
-                ):
+                if (i < 1 or chars[i - 1] != cand) and (i < 2 or chars[i - 2] != cand):
                     chars[i] = cand
                     placed = True
                     break
@@ -35,10 +32,7 @@ class Solution:
         for j in range(pivot + 1, len(chars)):
             for code in range(ord("a"), limit):
                 cand = chr(code)
-                if (
-                    (j < 1 or chars[j - 1] != cand)
-                    and (j < 2 or chars[j - 2] != cand)
-                ):
+                if (j < 1 or chars[j - 1] != cand) and (j < 2 or chars[j - 2] != cand):
                     chars[j] = cand
                     break
         return "".join(chars)

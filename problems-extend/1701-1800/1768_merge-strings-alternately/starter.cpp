@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string mergeAlternately(string word1, string word2) {
-        throw logic_error("TODO");
-    }
+  public:
+    string mergeAlternately(string word1, string word2) { throw logic_error("TODO"); }
 };

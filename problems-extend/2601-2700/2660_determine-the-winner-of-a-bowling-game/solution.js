@@ -9,8 +9,7 @@ var isWinner = function (player1, player2) {
     const score = (values) => {
         let total = 0;
         for (let index = 0; index < values.length; index++) {
-            const doubled =
-                values.slice(Math.max(0, index - 2), index).includes(10);
+            const doubled = values.slice(Math.max(0, index - 2), index).includes(10);
             total += doubled ? 2 * values[index] : values[index];
         }
         return total;

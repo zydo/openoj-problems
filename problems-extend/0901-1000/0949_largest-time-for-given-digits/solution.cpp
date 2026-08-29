@@ -1,6 +1,6 @@
 class Solution {
   public:
-    string largestTimeFromDigits(vector<int>& arr) {
+    string largestTimeFromDigits(vector<int> &arr) {
         // Four slots H1 H2 M1 M2 and four digits admit exactly 4! = 24
         // deals. A deal is a real time when the hour stays below 24 and
         // the minute below 60, and comparing survivors as minutes past
@@ -10,9 +10,11 @@ class Solution {
         int best = -1;
         for (int i = 0; i < 4; ++i) {
             for (int j = 0; j < 4; ++j) {
-                if (j == i) continue;
+                if (j == i)
+                    continue;
                 for (int k = 0; k < 4; ++k) {
-                    if (k == i || k == j) continue;
+                    if (k == i || k == j)
+                        continue;
                     int l = 6 - i - j - k;
                     int hour = arr[i] * 10 + arr[j];
                     int minute = arr[k] * 10 + arr[l];

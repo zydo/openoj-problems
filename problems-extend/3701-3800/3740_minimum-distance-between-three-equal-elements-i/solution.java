@@ -16,7 +16,7 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             int[] last = recent.get(nums[i]);
             if (last == null) {
-                last = new int[] {-1, -1};
+                last = new int[] { -1, -1 };
                 recent.put(nums[i], last);
             }
             if (last[0] != -1) {

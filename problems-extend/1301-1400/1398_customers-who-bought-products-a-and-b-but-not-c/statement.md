@@ -4,21 +4,21 @@
 
 Table: `Customers`
 
-| Column Name   | Type   |
-| ------------- | ------ |
-| customer_id   | int    |
-| customer_name | varchar|
+| Column Name   | Type    |
+| ------------- | ------- |
+| customer_id   | int     |
+| customer_name | varchar |
 
 `customer_id` is the column with unique values for this table.
 `customer_name` is the name of the customer.
 
 Table: `Orders`
 
-| Column Name  | Type   |
-| ------------ | ------ |
-| order_id     | int    |
-| customer_id  | int    |
-| product_name | varchar|
+| Column Name  | Type    |
+| ------------ | ------- |
+| order_id     | int     |
+| customer_id  | int     |
+| product_name | varchar |
 
 `order_id` is the column with unique values for this table.
 `customer_id` is the id of the customer who bought the product "product_name".

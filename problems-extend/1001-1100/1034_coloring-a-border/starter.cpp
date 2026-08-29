@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<vector<int>> colorBorder(vector<vector<int>>& grid, int row, int col, int color) {
+  public:
+    vector<vector<int>> colorBorder(vector<vector<int>> &grid, int row, int col, int color) {
         throw logic_error("TODO");
     }
 };

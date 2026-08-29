@@ -9,14 +9,14 @@ are non-empty, choose one of the following options:
 - If `word1` is non-empty, append the first character in `word1` to
   `merge` and delete it from `word1`.
 
-  For example, if `word1 = "abc"` and `merge = "dv"`, then after
-  choosing this operation, `word1 = "bc"` and `merge = "dva"`.
+    For example, if `word1 = "abc"` and `merge = "dv"`, then after
+    choosing this operation, `word1 = "bc"` and `merge = "dva"`.
 
 - If `word2` is non-empty, append the first character in `word2` to
   `merge` and delete it from `word2`.
 
-  For example, if `word2 = "abc"` and `merge = ""`, then after
-  choosing this operation, `word2 = "bc"` and `merge = "a"`.
+    For example, if `word2 = "abc"` and `merge = ""`, then after
+    choosing this operation, `word2 = "bc"` and `merge = "a"`.
 
 Return the lexicographically largest `merge` you can construct.
 

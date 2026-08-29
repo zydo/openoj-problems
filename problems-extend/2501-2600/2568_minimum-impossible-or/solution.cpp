@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minImpossibleOR(vector<int>& nums) {
+    int minImpossibleOR(vector<int> &nums) {
         // The answer is always the first absent power of two, and both
         // directions are forced. Once 1, 2, 4, ..., 2^(k-1) are all
         // present, their disjoint-bit subsequences rebuild every

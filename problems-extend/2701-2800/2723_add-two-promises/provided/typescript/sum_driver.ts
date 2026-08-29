@@ -25,8 +25,7 @@ class SumClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -75,9 +74,7 @@ class SumDriver {
     // await adopts whatever resolution hops remain (an async submission
     // chain can add several), and a returned promise that rejects or
     // resolves with a non-number surfaces as a clean runtime error.
-    async drive(
-        addTwoPromises: (a: Promise<number>, b: Promise<number>) => Promise<unknown>,
-    ): Promise<void> {
+    async drive(addTwoPromises: (a: Promise<number>, b: Promise<number>) => Promise<unknown>): Promise<void> {
         const returned = addTwoPromises(this.promises[0], this.promises[1]);
         if (!returned || typeof returned.then !== "function") {
             throw new Error("addTwoPromises must return a promise");
@@ -99,8 +96,7 @@ class SumDriver {
             this.resolved = sum;
         } catch (problem) {
             throw new Error(
-                "Returned promise rejected: " +
-                    (problem instanceof Error ? problem.message : String(problem)),
+                "Returned promise rejected: " + (problem instanceof Error ? problem.message : String(problem)),
             );
         }
     }

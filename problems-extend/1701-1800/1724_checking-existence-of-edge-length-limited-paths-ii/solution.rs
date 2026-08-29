@@ -76,7 +76,13 @@ impl DistanceLimitedPathsExist {
                 max_edge[j][node] = max_edge[j - 1][node].max(max_edge[j - 1][half]);
             }
         }
-        DistanceLimitedPathsExist { depth, root_of, levels, up, max_edge }
+        DistanceLimitedPathsExist {
+            depth,
+            root_of,
+            levels,
+            up,
+            max_edge,
+        }
     }
 
     pub fn query(&mut self, p: i32, q: i32, limit: i32) -> bool {

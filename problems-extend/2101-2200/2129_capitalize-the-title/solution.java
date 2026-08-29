@@ -1,6 +1,7 @@
 import java.util.Locale;
 
 class Solution {
+
     public String capitalizeTitle(String title) {
         String[] words = title.split(" ");
         for (int index = 0; index < words.length; index++) {

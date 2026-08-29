@@ -20,8 +20,11 @@ class EventManager {
         let index = heap.length - 1;
         while (index > 0) {
             const parent = (index - 1) >> 1;
-            if (heap[parent][0] < heap[index][0] ||
-                (heap[parent][0] === heap[index][0] && heap[parent][1] < heap[index][1])) break;
+            if (
+                heap[parent][0] < heap[index][0] ||
+                (heap[parent][0] === heap[index][0] && heap[parent][1] < heap[index][1])
+            )
+                break;
             [heap[parent], heap[index]] = [heap[index], heap[parent]];
             index = parent;
         }
@@ -38,14 +41,18 @@ class EventManager {
                 const left = 2 * index + 1;
                 const right = 2 * index + 2;
                 let smallest = index;
-                if (left < heap.length &&
+                if (
+                    left < heap.length &&
                     (heap[left][0] < heap[smallest][0] ||
-                     (heap[left][0] === heap[smallest][0] && heap[left][1] < heap[smallest][1]))) {
+                        (heap[left][0] === heap[smallest][0] && heap[left][1] < heap[smallest][1]))
+                ) {
                     smallest = left;
                 }
-                if (right < heap.length &&
+                if (
+                    right < heap.length &&
                     (heap[right][0] < heap[smallest][0] ||
-                     (heap[right][0] === heap[smallest][0] && heap[right][1] < heap[smallest][1]))) {
+                        (heap[right][0] === heap[smallest][0] && heap[right][1] < heap[smallest][1]))
+                ) {
                     smallest = right;
                 }
                 if (smallest === index) break;

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> decrypt(vector<int>& code, int k) {
+  public:
+    vector<int> decrypt(vector<int> &code, int k) {
         int n = code.size();
         vector<int> result(n, 0);
         if (k == 0) {

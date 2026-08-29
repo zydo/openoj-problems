@@ -4,7 +4,7 @@ SELECT
   SUM(
     CASE
       WHEN type = 'Deposit' THEN amount
-      ELSE -amount
+      ELSE - amount
     END
   ) OVER (
     PARTITION BY

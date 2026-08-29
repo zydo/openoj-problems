@@ -17,11 +17,11 @@ is working on the project with project_id.
 
 Table: `Employee`
 
-| Column Name       | Type    |
-| ------------------ | ------- |
-| employee_id         | int     |
-| name                | varchar |
-| experience_years    | int     |
+| Column Name      | Type    |
+| ---------------- | ------- |
+| employee_id      | int     |
+| name             | varchar |
+| experience_years | int     |
 
 employee_id is the primary key (column with unique values) of this
 table.

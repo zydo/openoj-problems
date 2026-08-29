@@ -11,9 +11,11 @@ class Solution {
         for (int t = 0; t < n; ++t) {
             order[t] = t;
         }
-        Arrays.sort(order, (a, b) -> intervals[a][1] != intervals[b][1]
+        Arrays.sort(order, (a, b) ->
+            intervals[a][1] != intervals[b][1]
                 ? Integer.compare(intervals[a][1], intervals[b][1])
-                : Integer.compare(intervals[a][0], intervals[b][0]));
+                : Integer.compare(intervals[a][0], intervals[b][0])
+        );
         int[] rights = new int[n];
         for (int t = 0; t < n; ++t) {
             rights[t] = intervals[order[t]][1];
@@ -47,8 +49,7 @@ class Solution {
                     long candScore = prevScore[j] + weight;
                     int[] candTuple = insert(prevTuple[j], idx);
                     // Score first; on a tie the smaller index tuple wins.
-                    if (candScore > curScore[i]
-                            || (candScore == curScore[i] && less(candTuple, curTuple[i]))) {
+                    if (candScore > curScore[i] || (candScore == curScore[i] && less(candTuple, curTuple[i]))) {
                         curScore[i] = candScore;
                         curTuple[i] = candTuple;
                     }
@@ -79,7 +80,8 @@ class Solution {
 
     // Largest j with rights[j] < left; the array is sorted ascending.
     private int lowerBound(int[] rights, int left) {
-        int lo = 0, hi = rights.length;
+        int lo = 0,
+            hi = rights.length;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (rights[mid] < left) {

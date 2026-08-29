@@ -4,9 +4,9 @@
 
 Table: `Users`
 
-| Column Name | Type |
-| ----------- | ---- |
-| id          | int  |
+| Column Name | Type    |
+| ----------- | ------- |
+| id          | int     |
 | name        | varchar |
 
 `id` is the column with unique values for this table. `name` is the name

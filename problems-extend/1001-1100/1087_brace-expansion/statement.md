@@ -8,7 +8,7 @@ the word has one or more options.
 - If there is one option, the letter is represented as is.
 - If there is more than one option, then curly braces delimit the
   options. For example, `"{a,b,c}"` represents options `["a", "b",
-  "c"]`.
+"c"]`.
 
 For example, if `s = "a{b,c}"`, the first character is always `'a'`, but
 the second character can be `'b'` or `'c'`. The original list is `["ab",

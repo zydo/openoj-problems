@@ -6,7 +6,7 @@ class Solution {
         // never cross and never change kind — and each must move legally:
         // an L only ever moves left onto an X, an R only right onto an X.
         int i = 0, j = 0;
-        int n = (int) start.size(), m = (int) result.size();
+        int n = (int)start.size(), m = (int)result.size();
         while (true) {
             while (i < n && start[i] == 'X') {
                 i++;

@@ -68,7 +68,7 @@ Let dp[i] be the longest suffix of word2 that exists as a subsequence of suffix 
 
 ### Hint 2
 
-If dp[i + 1]  and word1[i] == word2[m - dp[i + 1] - 1],dp[i] =  dp[i + 1] + 1. Otherwise, dp[i] =  dp[i + 1].
+If dp[i + 1] and word1[i] == word2[m - dp[i + 1] - 1],dp[i] = dp[i + 1] + 1. Otherwise, dp[i] = dp[i + 1].
 
 ### Hint 3
 

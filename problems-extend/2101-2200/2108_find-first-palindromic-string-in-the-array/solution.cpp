@@ -8,7 +8,8 @@ class Solution {
                 ++left;
                 --right;
             }
-            if (left >= right) return word;
+            if (left >= right)
+                return word;
         }
         return "";
     }

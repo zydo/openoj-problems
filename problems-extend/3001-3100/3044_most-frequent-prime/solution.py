@@ -5,8 +5,7 @@ class Solution:
     def mostFrequentPrime(self, mat: List[List[int]]) -> int:
         # From every cell, march each of the eight directions straight to the
         # matrix edge; a path is fully described by its start and direction.
-        directions = ((0, 1), (1, 1), (1, 0), (1, -1),
-                      (0, -1), (-1, -1), (-1, 0), (-1, 1))
+        directions = ((0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1), (-1, 0), (-1, 1))
         counts = {}
         for i in range(len(mat)):
             for j in range(len(mat[0])):

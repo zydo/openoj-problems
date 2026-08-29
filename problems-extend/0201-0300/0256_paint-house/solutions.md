@@ -19,8 +19,7 @@ end in any color, the answer is the smallest of the three survivors.
 Taking the cheapest color house by house is not safe, because the cheapest
 continuation depends on which color was just used: in
 `[[5,6,7],[1,100,100]]` opening with red at 5 forces paying 100 next, while
-one extra coin at the first house unlocks the cost-1 paint and finishes at
-7. The dynamic program never makes that blind choice — it carries all three
+one extra coin at the first house unlocks the cost-1 paint and finishes at 7. The dynamic program never makes that blind choice — it carries all three
 endings forward. At the constraint ceiling the answer is at most
 `20 * 100 = 2000`, far inside 32-bit range.
 

@@ -33,7 +33,11 @@ impl Solution {
             .iter()
             .map(|q| {
                 let d = dist[q[0] as usize][q[1] as usize];
-                if d == INF { -1 } else { d }
+                if d == INF {
+                    -1
+                } else {
+                    d
+                }
             })
             .collect()
     }

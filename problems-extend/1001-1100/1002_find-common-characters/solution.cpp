@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<string> commonChars(vector<string>& words) {
+    vector<string> commonChars(vector<string> &words) {
         // Fold every word's 26-length letter-count array into a running
         // element-wise minimum; a letter absent from any single word is
         // pinned to zero from that point on.

@@ -3,7 +3,7 @@ function maxCandies(
     candies: number[],
     keys: number[][],
     containedBoxes: number[][],
-    initialBoxes: number[]
+    initialBoxes: number[],
 ): number {
     // Two waiting rooms: owned-but-locked boxes, and the openable queue.
     const lockedHeld = new Set<number>();

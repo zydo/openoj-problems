@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int countAnagrams(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int countAnagrams(string s) { throw logic_error("TODO"); }
 };

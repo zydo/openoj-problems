@@ -1,6 +1,7 @@
 function reconstructMatrix(upper: number, lower: number, colsum: number[]): number[][] {
     const n = colsum.length;
-    let twos = 0, ones = 0;
+    let twos = 0,
+        ones = 0;
     for (const s of colsum) {
         if (s === 2) ++twos;
         else if (s === 1) ++ones;

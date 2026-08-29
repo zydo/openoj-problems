@@ -6,7 +6,10 @@ class Solution {
         // breaks, so four counters describe every stable subsequence seen so
         // far: trailing even run of length 1 or 2, trailing odd run of 1 or
         // 2. Each update sums at most four residues, so long never overflows.
-        long e1 = 0, e2 = 0, o1 = 0, o2 = 0;
+        long e1 = 0,
+            e2 = 0,
+            o1 = 0,
+            o2 = 0;
         for (int x : nums) {
             if (x % 2 == 0) {
                 // Fresh subsequence, odd-ending extensions (the even run

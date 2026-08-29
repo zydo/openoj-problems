@@ -14,7 +14,8 @@ class Solution {
         // Identical points sit at distance 0, the instant global minimum,
         // so a duplicate is answered directly from earliest occurrences.
         Map<Long, Integer> firstSeen = new HashMap<>();
-        long bestJ = n, bestK = n;
+        long bestJ = n,
+            bestK = n;
         for (int i = 0; i < n; i++) {
             long key = (long) nums1[i] * 100001 + nums2[i];
             Integer j = firstSeen.get(key);
@@ -26,7 +27,7 @@ class Solution {
             }
         }
         if (bestJ < n) {
-            return new int[] {(int) bestJ, (int) bestK};
+            return new int[] { (int) bestJ, (int) bestK };
         }
 
         // Closest pair under Manhattan distance via divide and conquer:
@@ -38,8 +39,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             idx[i] = i;
         }
-        Arrays.sort(idx, (p, q) -> xs[p] != xs[q]
-                ? Integer.compare(xs[p], xs[q]) : Integer.compare(ys[p], ys[q]));
+        Arrays.sort(idx, (p, q) -> xs[p] != xs[q] ? Integer.compare(xs[p], xs[q]) : Integer.compare(ys[p], ys[q]));
         int[] order = new int[n];
         for (int i = 0; i < n; i++) {
             order[i] = idx[i];
@@ -51,7 +51,8 @@ class Solution {
         // each distance-d edge surfaces exactly once from earlier indices.
         Map<Long, List<Integer>> cells = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            long cx = nums1[i] / dist, cy = nums2[i] / dist;
+            long cx = nums1[i] / dist,
+                cy = nums2[i] / dist;
             for (long gx = cx - 1; gx <= cx + 1; gx++) {
                 for (long gy = cy - 1; gy <= cy + 1; gy++) {
                     List<Integer> bucket = cells.get(gx * 200003 + gy);
@@ -59,8 +60,7 @@ class Solution {
                         continue;
                     }
                     for (int j : bucket) {
-                        int gap = Math.abs(nums1[i] - nums1[j])
-                                + Math.abs(nums2[i] - nums2[j]);
+                        int gap = Math.abs(nums1[i] - nums1[j]) + Math.abs(nums2[i] - nums2[j]);
                         if (gap == dist && j < bestJ) {
                             bestJ = j;
                             bestK = i;
@@ -68,10 +68,9 @@ class Solution {
                     }
                 }
             }
-            cells.computeIfAbsent(cx * 200003 + cy, k -> new ArrayList<>())
-                    .add(i);
+            cells.computeIfAbsent(cx * 200003 + cy, k -> new ArrayList<>()).add(i);
         }
-        return new int[] {(int) bestJ, (int) bestK};
+        return new int[] { (int) bestJ, (int) bestK };
     }
 
     private int solve(int[] idx, int[] tmp, int left, int right) {
@@ -79,8 +78,7 @@ class Solution {
             int delta = Integer.MAX_VALUE;
             for (int a = left; a < right; a++) {
                 for (int b = a + 1; b < right; b++) {
-                    delta = Math.min(delta, Math.abs(xs[idx[a]] - xs[idx[b]])
-                            + Math.abs(ys[idx[a]] - ys[idx[b]]));
+                    delta = Math.min(delta, Math.abs(xs[idx[a]] - xs[idx[b]]) + Math.abs(ys[idx[a]] - ys[idx[b]]));
                 }
             }
             bulkSortByY(idx, left, right);
@@ -88,9 +86,10 @@ class Solution {
         }
         int mid = left + (right - left) / 2;
         int middle = xs[idx[mid]];
-        int delta = Math.min(solve(idx, tmp, left, mid),
-                solve(idx, tmp, mid, right));
-        int a = left, b = mid, w = left;
+        int delta = Math.min(solve(idx, tmp, left, mid), solve(idx, tmp, mid, right));
+        int a = left,
+            b = mid,
+            w = left;
         while (a < mid && b < right) {
             tmp[w++] = ys[idx[a]] <= ys[idx[b]] ? idx[a++] : idx[b++];
         }
@@ -108,10 +107,11 @@ class Solution {
             }
         }
         for (int pos = left; pos < length; pos++) {
-            for (int follow = pos + 1; follow < length
-                    && ys[tmp[follow]] - ys[tmp[pos]] < delta; follow++) {
-                delta = Math.min(delta, Math.abs(xs[tmp[pos]] - xs[tmp[follow]])
-                        + Math.abs(ys[tmp[pos]] - ys[tmp[follow]]));
+            for (int follow = pos + 1; follow < length && ys[tmp[follow]] - ys[tmp[pos]] < delta; follow++) {
+                delta = Math.min(
+                    delta,
+                    Math.abs(xs[tmp[pos]] - xs[tmp[follow]]) + Math.abs(ys[tmp[pos]] - ys[tmp[follow]])
+                );
             }
         }
         return delta;

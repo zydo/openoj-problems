@@ -11,7 +11,7 @@ func getRow(rowIndex int) []int {
 		// row[j] is updated, so row[j] += row[j-1] is exactly the
 		// sum-of-the-two-cells-directly-above recurrence.
 		for j := length - 1; j > 0; j-- {
-			row[j] += row[j - 1]
+			row[j] += row[j-1]
 		}
 	}
 	return row

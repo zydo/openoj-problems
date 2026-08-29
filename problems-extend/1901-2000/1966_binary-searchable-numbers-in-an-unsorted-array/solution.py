@@ -16,9 +16,7 @@ class Solution:
         count = 0
         prefix_max = nums[0]
         for i in range(n):
-            if (i == 0 or nums[i] > prefix_max) and (
-                i == n - 1 or nums[i] < suffix_min[i + 1]
-            ):
+            if (i == 0 or nums[i] > prefix_max) and (i == n - 1 or nums[i] < suffix_min[i + 1]):
                 count += 1
             if nums[i] > prefix_max:
                 prefix_max = nums[i]

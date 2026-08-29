@@ -5,8 +5,8 @@ class Solution {
         // run of the opposite color ending in a cell of the move's color.
         char target = color.charAt(0);
         char opposite = target == 'B' ? 'W' : 'B';
-        int[] dr = {-1, -1, -1, 0, 0, 1, 1, 1};
-        int[] dc = {-1, 0, 1, -1, 1, -1, 0, 1};
+        int[] dr = { -1, -1, -1, 0, 0, 1, 1, 1 };
+        int[] dc = { -1, 0, 1, -1, 1, -1, 0, 1 };
         for (int d = 0; d < 8; ++d) {
             int r = rMove + dr[d];
             int c = cMove + dc[d];

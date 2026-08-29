@@ -11,8 +11,8 @@ impl Solution {
             let opposite = ordered[i] as f64;
             let adjacent1 = ordered[(i + 1) % 3] as f64;
             let adjacent2 = ordered[(i + 2) % 3] as f64;
-            let cosine = (adjacent1 * adjacent1 + adjacent2 * adjacent2 - opposite * opposite)
-                / (2.0 * adjacent1 * adjacent2);
+            let cosine =
+                (adjacent1 * adjacent1 + adjacent2 * adjacent2 - opposite * opposite) / (2.0 * adjacent1 * adjacent2);
             let angle = cosine.clamp(-1.0, 1.0).acos().to_degrees();
             result.push((angle * 100000.0).round() / 100000.0);
         }

@@ -3,8 +3,7 @@
 
 class Solution {
   public:
-    long long maximumBeauty(vector<int>& flowers, long long newFlowers, int target, int full,
-                            int partial) {
+    long long maximumBeauty(vector<int> &flowers, long long newFlowers, int target, int full, int partial) {
         sort(flowers.begin(), flowers.end());
         int n = flowers.size();
         vector<long long> prefix(n + 1, 0);
@@ -37,8 +36,7 @@ class Solution {
             long long best_min = low;
             while (low <= high) {
                 long long mid = low + (high - low) / 2;
-                int pos = lower_bound(flowers.begin(), flowers.begin() + rest, static_cast<int>(mid))
-                          - flowers.begin();
+                int pos = lower_bound(flowers.begin(), flowers.begin() + rest, static_cast<int>(mid)) - flowers.begin();
                 long long cost = mid * pos - prefix[pos];
                 if (cost <= budget) {
                     best_min = mid;

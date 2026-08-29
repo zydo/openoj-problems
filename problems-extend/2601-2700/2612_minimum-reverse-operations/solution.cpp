@@ -10,7 +10,8 @@ class Solution {
         }
         auto first = [&](int parity, int pos) {
             vector<int> &par = parent[parity];
-            while (par[pos] != pos) pos = par[pos] = par[par[pos]];
+            while (par[pos] != pos)
+                pos = par[pos] = par[par[pos]];
             return pos;
         };
         auto consume = [&](int position) {
@@ -18,7 +19,8 @@ class Solution {
             parent[position & 1][slot] = slot + 1;
         };
         consume(p);
-        for (int b : banned) consume(b);
+        for (int b : banned)
+            consume(b);
         vector<int> queue;
         queue.reserve(n);
         queue.push_back(p);
@@ -26,7 +28,8 @@ class Solution {
         for (int head = 0; head < (int)queue.size(); head++) {
             int x = queue[head];
             int left = max(0, x - k + 1), right = min(x, n - k);
-            if (left > right) continue;
+            if (left > right)
+                continue;
             int lo = 2 * left + k - 1 - x, hi = 2 * right + k - 1 - x;
             int parity = lo & 1;
             int limit = (int)parent[parity].size() - 1;

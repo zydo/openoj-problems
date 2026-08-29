@@ -17,7 +17,8 @@ class Solution {
         }
         // crt[r2][r5] = the digit x in 0..9 with x % 2 == r2 and x % 5 == r5
         int crt[2][5] = {};
-        for (int x = 0; x < 10; x++) crt[x % 2][x % 5] = x;
+        for (int x = 0; x < 10; x++)
+            crt[x % 2][x % 5] = x;
         int fa = 0, fb = 0;
         for (int j = 0; j <= t; j++) {
             // Lucas mod 2: C(t, j) is odd iff every bit of j is a bit of t.

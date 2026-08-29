@@ -5,7 +5,7 @@ function numSteps(s: string): number {
     // one step (divide by two); an odd digit takes two (add one, then
     // divide). The carry records the overflow pushed left by adding 1.
     for (let i = s.length - 1; i > 0; i--) {
-        const digit = (s[i] === '1' ? 1 : 0) + carry;
+        const digit = (s[i] === "1" ? 1 : 0) + carry;
         if (digit % 2 === 0) {
             steps++;
             carry = Math.floor(digit / 2);

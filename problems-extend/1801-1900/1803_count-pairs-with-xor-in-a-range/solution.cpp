@@ -7,12 +7,14 @@ int countAtMost(vector<int> &nxt, vector<int> &cnt, int x, int k) {
     for (int b = 14; b >= 0; --b) {
         int xb = (x >> b) & 1;
         if ((k >> b) & 1) {
-            if (nxt[2 * node + xb] != -1) total += cnt[nxt[2 * node + xb]];
+            if (nxt[2 * node + xb] != -1)
+                total += cnt[nxt[2 * node + xb]];
             node = nxt[2 * node + 1 - xb];
         } else {
             node = nxt[2 * node + xb];
         }
-        if (node == -1) return total;
+        if (node == -1)
+            return total;
     }
     return total + cnt[node];
 }
@@ -37,7 +39,8 @@ class Solution {
             int node = 0;
             for (int b = 14; b >= 0; --b) {
                 int d = (x >> b) & 1;
-                if (nxt[2 * node + d] == -1) nxt[2 * node + d] = size++;
+                if (nxt[2 * node + d] == -1)
+                    nxt[2 * node + d] = size++;
                 node = nxt[2 * node + d];
                 cnt[node]++;
             }

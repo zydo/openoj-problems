@@ -11,7 +11,7 @@ class Solution {
             }
         }
 
-        int directions[4][2] = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
+        int directions[4][2] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
         int captures = 0;
         for (auto &direction : directions) {
             int row = rookRow + direction[0], col = rookCol + direction[1];
@@ -20,7 +20,8 @@ class Solution {
                 row += direction[0];
                 col += direction[1];
             }
-            if (row >= 0 && row < 8 && col >= 0 && col < 8 && board[row][col] == "p") ++captures;
+            if (row >= 0 && row < 8 && col >= 0 && col < 8 && board[row][col] == "p")
+                ++captures;
         }
         return captures;
     }

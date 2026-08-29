@@ -29,7 +29,7 @@ class Solution {
             }
         }
         int steps = 0;
-        int curEnd = 0;      // with `steps` pieces, target[:curEnd] is formable
+        int curEnd = 0; // with `steps` pieces, target[:curEnd] is formable
         int farthest = 0;
         for (int i = 0; i < n; i++) {
             int r = i + reach[i];
@@ -54,7 +54,8 @@ class Solution {
         int m = values.length;
         int[] z = new int[m];
         z[0] = m;
-        int left = 0, right = 0;
+        int left = 0,
+            right = 0;
         for (int i = 1; i < m; i++) {
             if (i < right) {
                 z[i] = Math.min(right - i, z[i - left]);

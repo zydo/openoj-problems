@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    int minDistance(std::vector<int>& houses, int k) {
+    int minDistance(std::vector<int> &houses, int k) {
         std::sort(houses.begin(), houses.end());
         n = (int)houses.size();
         hs = &houses;
@@ -14,7 +14,7 @@ class Solution {
 
   private:
     int n;
-    std::vector<int>* hs;
+    std::vector<int> *hs;
     std::vector<std::vector<int>> memo;
 
     long long runCost(int i, int j) {

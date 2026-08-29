@@ -11,8 +11,8 @@ class Solution {
         // 64-bit integers (bounded by n^3 <= 1e15) so every division by 2
         // below happens on a genuine integer.
         unordered_map<int, int> left;
-        long long S1 = 0, S2 = 0, S3 = 0;  // sum lw, sum lw^2, sum lw^3
-        long long T1 = 0, T2 = 0, T3 = 0;  // sum lw*cnt, lw*cnt^2, lw^2*cnt
+        long long S1 = 0, S2 = 0, S3 = 0; // sum lw, sum lw^2, sum lw^3
+        long long T1 = 0, T2 = 0, T3 = 0; // sum lw*cnt, lw*cnt^2, lw^2*cnt
         long long SC2 = 0;
         for (auto &[value, c] : total) {
             SC2 += (long long)c * c;
@@ -30,9 +30,9 @@ class Solution {
             int v = nums[i];
             int cntv = total[v];
             int l = left.count(v) ? left[v] : 0;
-            int r = cntv - l - 1;  // the middle occurrence is on neither side
-            long long NL = i - l;              // non-v elements left of i
-            long long NR = (n - 1 - i) - r;    // non-v elements right of i
+            int r = cntv - l - 1;           // the middle occurrence is on neither side
+            long long NL = i - l;           // non-v elements left of i
+            long long NR = (n - 1 - i) - r; // non-v elements right of i
 
             // Per-value sums over w != v, rebuilt from the aggregates. For
             // v itself the moment value cnt - l still contains the middle
@@ -42,7 +42,8 @@ class Solution {
             long long sumRw2 = SC2 - 2 * T1 + S2 - (long long)(r + 1) * (r + 1);
             long long sumRw = (long long)(n - 1 - i) - r;
             long long sumLwRw = (T1 - (long long)l * cntv) - sumLw2;
-            long long sumLwRw2 = (T2 - (long long)l * cntv * cntv) - 2 * (T3 - (long long)l * l * cntv) + (S3 - (long long)l * l * l);
+            long long sumLwRw2 =
+                (T2 - (long long)l * cntv * cntv) - 2 * (T3 - (long long)l * l * cntv) + (S3 - (long long)l * l * l);
             long long sumLw2Rw = (T3 - (long long)l * l * cntv) - (S3 - (long long)l * l * l);
             long long sumC2rw = (sumRw2 - sumRw) / 2;
             long long sumC2lw = (sumLw2 - sumLw) / 2;
@@ -54,9 +55,9 @@ class Solution {
             // f >= 3 no other value can catch up, so only f = 2 needs the
             // inclusion-exclusion on the three non-v fills.
             long long c2l = c2(l), c2r = c2(r);
-            long long val = cm(c2l, c2r);  // f = 5
-            val += (cm(l, c2r) * NL + cm(c2l, r) * NR) % MOD;  // f = 4
-            val += cm(c2r, c2(NL)) + cm(cm(l, r), NL * NR) + cm(c2l, c2(NR));  // f = 3
+            long long val = cm(c2l, c2r);                                     // f = 5
+            val += (cm(l, c2r) * NL + cm(c2l, r) * NR) % MOD;                 // f = 4
+            val += cm(c2r, c2(NL)) + cm(cm(l, r), NL * NR) + cm(c2l, c2(NR)); // f = 3
             // f = 2: one more v on the left (or right), the three non-v
             // fills pairwise distinct.
             long long g10 = norm(NL * c2(NR) - NL * sumC2rw - d10);

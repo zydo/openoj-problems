@@ -8,8 +8,4 @@ class Solution:
         # x - 1 nor x + 1 present; scanning nums in order keeps the
         # output in first-occurrence order.
         count = Counter(nums)
-        return [
-            x
-            for x in nums
-            if count[x] == 1 and x - 1 not in count and x + 1 not in count
-        ]
+        return [x for x in nums if count[x] == 1 and x - 1 not in count and x + 1 not in count]

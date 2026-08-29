@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int scoreDifference(vector<int>& nums) {
+    int scoreDifference(vector<int> &nums) {
         // Totals stay within 1000 * 1000 = 10^6 and the difference within
         // ±10^6, so int arithmetic carries everything without overflow.
         // One pass with a signed turn: +1 while the first player is active,

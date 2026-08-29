@@ -1,8 +1,4 @@
-function validateCoupons(
-    code: string[],
-    businessLine: string[],
-    isActive: boolean[],
-): string[] {
+function validateCoupons(code: string[], businessLine: string[], isActive: boolean[]): string[] {
     // Category rank: electronics < grocery < pharmacy < restaurant.
     const rank = new Map<string, number>([
         ["electronics", 0],
@@ -26,8 +22,7 @@ function codeOk(name: string): boolean {
     if (name.length === 0) return false;
     for (let i = 0; i < name.length; ++i) {
         const c = name.charCodeAt(i);
-        const alnum =
-            (c >= 97 && c <= 122) || (c >= 65 && c <= 90) || (c >= 48 && c <= 57);
+        const alnum = (c >= 97 && c <= 122) || (c >= 65 && c <= 90) || (c >= 48 && c <= 57);
         if (!alnum && c !== 95) return false;
     }
     return true;

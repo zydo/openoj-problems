@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    int maxDotProduct(std::vector<int>& nums1, std::vector<int>& nums2) {
+    int maxDotProduct(std::vector<int> &nums1, std::vector<int> &nums2) {
         int n = (int)nums1.size();
         int m = (int)nums2.size();
         std::vector<std::vector<int>> dp(n + 1, std::vector<int>(m + 1, INT_MIN));

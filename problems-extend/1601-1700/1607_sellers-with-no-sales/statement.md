@@ -14,13 +14,13 @@ of this table contains the information of a customer in the web store.
 
 Table: `Orders`
 
-| Column Name | Type    |
-| ----------- | ------- |
-| order_id    | int     |
-| sale_date   | date    |
-| order_cost  | int     |
-| customer_id | int     |
-| seller_id   | int     |
+| Column Name | Type |
+| ----------- | ---- |
+| order_id    | int  |
+| sale_date   | date |
+| order_cost  | int  |
+| customer_id | int  |
+| seller_id   | int  |
 
 `order_id` is the column with unique values for this table. Each row of
 this table contains information about an order placed in the web store.

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int getSum(vector<int> &nums) {
         // Per-value chain-sum DP over four hash maps keyed by value. For
         // each direction, incCnt/decCnt count the chains seen so far that
@@ -18,13 +18,17 @@ public:
         for (int x : nums) {
             long long ci = 0, si = 0, cd = 0, sd = 0;
             auto itIc = incCnt.find(x - 1);
-            if (itIc != incCnt.end()) ci = itIc->second;
+            if (itIc != incCnt.end())
+                ci = itIc->second;
             auto itIs = incSum.find(x - 1);
-            if (itIs != incSum.end()) si = itIs->second;
+            if (itIs != incSum.end())
+                si = itIs->second;
             auto itDc = decCnt.find(x + 1);
-            if (itDc != decCnt.end()) cd = itDc->second;
+            if (itDc != decCnt.end())
+                cd = itDc->second;
             auto itDs = decSum.find(x + 1);
-            if (itDs != decSum.end()) sd = itDs->second;
+            if (itDs != decSum.end())
+                sd = itDs->second;
             long long ni = (ci + 1) % kMod;
             long long nsi = (si + ni * x) % kMod;
             long long nd = (cd + 1) % kMod;

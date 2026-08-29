@@ -2,8 +2,7 @@
 
 class Solution {
   public:
-    vector<vector<int>> mergeArrays(vector<vector<int>> &nums1,
-                                    vector<vector<int>> &nums2) {
+    vector<vector<int>> mergeArrays(vector<vector<int>> &nums1, vector<vector<int>> &nums2) {
         // Both inputs are sorted by id, so two pointers walk them in
         // lockstep, always emitting the smaller head id next: shared ids
         // merge their values, single-side ids pass through unchanged. The
@@ -24,8 +23,10 @@ class Solution {
             }
         }
         // One tail is empty here; the other carries its remaining rows.
-        for (; i < nums1.size(); ++i) merged.push_back(nums1[i]);
-        for (; j < nums2.size(); ++j) merged.push_back(nums2[j]);
+        for (; i < nums1.size(); ++i)
+            merged.push_back(nums1[i]);
+        for (; j < nums2.size(); ++j)
+            merged.push_back(nums2[j]);
         return merged;
     }
 };

@@ -1,11 +1,11 @@
 class Solution {
   public:
-    vector<int> numMovesStonesII(vector<int>& stones) {
+    vector<int> numMovesStonesII(vector<int> &stones) {
         sort(stones.begin(), stones.end());
         int n = stones.size();
         if (stones[n - 1] - stones[0] == n - 1) {
             // Already n consecutive integers: no legal move exists.
-            return { 0, 0 };
+            return {0, 0};
         }
 
         // Maximum: play it out from whichever side wastes fewer stones.
@@ -35,6 +35,6 @@ class Solution {
             minMoves = min(minMoves, cost);
         }
 
-        return { minMoves, maxMoves };
+        return {minMoves, maxMoves};
     }
 };

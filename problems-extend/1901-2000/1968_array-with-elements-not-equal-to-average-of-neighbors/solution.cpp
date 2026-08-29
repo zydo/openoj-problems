@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    vector<int> rearrangeArray(vector<int>& nums) {
+    vector<int> rearrangeArray(vector<int> &nums) {
         // Sort, then interleave halves: the larger half occupies the even
         // indices, the smaller half the odd ones. Each even-indexed value
         // is then strictly above both (lower-half) neighbors and each

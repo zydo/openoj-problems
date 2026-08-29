@@ -14,14 +14,12 @@ class Solution {
         int[][] dist = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                dist[i][j] =
-                    Math.abs(points[i][0] - points[j][0]) +
-                    Math.abs(points[i][1] - points[j][1]);
+                dist[i][j] = Math.abs(points[i][0] - points[j][0]) + Math.abs(points[i][1] - points[j][1]);
             }
         }
         // The factor of any split is 0 or one of the inter-point distances,
         // so binary search probes those candidate thresholds only.
-        int[] candidates = new int[n * (n - 1) / 2 + 1];
+        int[] candidates = new int[(n * (n - 1)) / 2 + 1];
         candidates[0] = 0;
         int count = 1;
         for (int i = 0; i < n; i++) {
@@ -38,7 +36,8 @@ class Solution {
         }
         // Raising the threshold only adds conflict edges, so feasibility is
         // monotone and the largest separable threshold is the answer.
-        int lo = 0, hi = uniqueCount - 1;
+        int lo = 0,
+            hi = uniqueCount - 1;
         while (lo < hi) {
             int mid = lo + (hi - lo + 1) / 2;
             if (separable(dist, n, candidates[mid])) {

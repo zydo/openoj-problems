@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> minDifference(vector<int>& nums, vector<vector<int>>& queries) {
+    vector<int> minDifference(vector<int> &nums, vector<vector<int>> &queries) {
         // With values capped at 100, a value is either present in a
         // range or not, and 100 prefix-count rows decide that in O(1):
         // row v holds the occurrence count of v over every prefix of
@@ -33,7 +33,8 @@ class Solution {
             for (int v = 1; v <= 100; ++v) {
                 int base = v * (n + 1);
                 if (pre[base + r1] != pre[base + l]) {
-                    if (prev >= 0 && v - prev < best) best = v - prev;
+                    if (prev >= 0 && v - prev < best)
+                        best = v - prev;
                     prev = v;
                 }
             }

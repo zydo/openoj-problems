@@ -9,7 +9,7 @@ one array's values, then for every element of the other array ask "how
 many index pairs from the map's array multiply to my square?" instead of
 enumerating pairs one at a time.
 
-For a fixed value `x`, the target product is `x * x`. Walking the *distinct*
+For a fixed value `x`, the target product is `x * x`. Walking the _distinct_
 values `v` present in the frequency map (sorted ascending) and stopping as
 soon as `v * v` exceeds the target keeps each divisor considered exactly
 once: when `v * v` equals the target, the pairs come from picking two

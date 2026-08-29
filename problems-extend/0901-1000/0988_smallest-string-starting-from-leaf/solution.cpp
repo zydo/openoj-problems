@@ -1,6 +1,6 @@
 class Solution {
   public:
-    string smallestFromLeaf(TreeNode* root) {
+    string smallestFromLeaf(TreeNode *root) {
         // Every root-to-leaf path, read backwards, is one candidate, and
         // the answer is the smallest of them — plain lexicographic order,
         // in which a strict prefix counts as smaller ("ab" < "aba"). One
@@ -18,7 +18,7 @@ class Solution {
         string path; // one character per active frame, root -> node
         // A stack entry is a node to descend into, or an unwind marker;
         // the pointer is null exactly when the entry unwinds.
-        vector<pair<TreeNode*, char>> pending;
+        vector<pair<TreeNode *, char>> pending;
         pending.push_back({root, 0});
         while (!pending.empty()) {
             auto [node, marker] = pending.back();
@@ -37,8 +37,10 @@ class Solution {
                 continue;
             }
             pending.push_back({nullptr, 0}); // unwinds once both subtrees finish
-            if (node->right != nullptr) pending.push_back({node->right, 0});
-            if (node->left != nullptr) pending.push_back({node->left, 0});
+            if (node->right != nullptr)
+                pending.push_back({node->right, 0});
+            if (node->left != nullptr)
+                pending.push_back({node->left, 0});
         }
         return best;
     }

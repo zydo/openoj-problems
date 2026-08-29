@@ -6,7 +6,7 @@ class Solution {
         // cannot fit between two consecutive quarter marks). Each candidate
         // is verified by binary-searching its first and last occurrence.
         int n = arr.length;
-        for (int probe : new int[] {n / 4, n / 2, 3 * n / 4}) {
+        for (int probe : new int[] { n / 4, n / 2, (3 * n) / 4 }) {
             int candidate = arr[probe];
             if (last(arr, candidate) - first(arr, candidate) + 1 > n / 4) {
                 return candidate;

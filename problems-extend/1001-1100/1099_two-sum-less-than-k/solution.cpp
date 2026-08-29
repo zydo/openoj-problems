@@ -9,7 +9,8 @@ class Solution {
         while (lo < hi) {
             int s = nums[lo] + nums[hi];
             if (s < k) {
-                if (s > best) best = s;
+                if (s > best)
+                    best = s;
                 ++lo;
             } else {
                 --hi;

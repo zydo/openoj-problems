@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxDistance(vector<string>& words) {
+    int maxDistance(vector<string> &words) {
         // Starting best at 0 bakes in the sentinel: only a genuinely
         // unequal pair can raise it, so an all-equal array (or a single
         // word, which has no pairs at all) returns 0 untouched.

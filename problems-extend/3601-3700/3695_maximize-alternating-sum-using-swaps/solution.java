@@ -52,7 +52,8 @@ class Solution {
             List<Integer> vals = entry.getValue();
             vals.sort(Comparator.reverseOrder());
             int e = evens.getOrDefault(entry.getKey(), 0);
-            long topE = 0, all = 0;
+            long topE = 0,
+                all = 0;
             for (int j = 0; j < vals.size(); j++) {
                 long v = vals.get(j);
                 all += v;

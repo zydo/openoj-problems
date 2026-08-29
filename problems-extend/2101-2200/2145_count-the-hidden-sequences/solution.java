@@ -1,4 +1,5 @@
 class Solution {
+
     public int numberOfArrays(int[] differences, int lower, int upper) {
         long prefix = 0;
         long minimum = 0;

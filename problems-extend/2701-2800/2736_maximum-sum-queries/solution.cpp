@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     vector<long long> maximumSumQueries(vector<int> &nums1, vector<int> &nums2, vector<vector<int>> &queries) {
         int n = nums1.size();
         vector<pair<int, int>> points(n);
@@ -13,8 +13,7 @@ public:
         for (int i = 0; i < q; i++) {
             order[i] = i;
         }
-        sort(order.begin(), order.end(),
-             [&](int a, int b) { return queries[a][0] > queries[b][0]; });
+        sort(order.begin(), order.end(), [&](int a, int b) { return queries[a][0] > queries[b][0]; });
 
         vector<long long> keys;
         vector<long long> bests;
@@ -40,7 +39,7 @@ public:
         return answer;
     }
 
-private:
+  private:
     void insert(vector<long long> &keys, vector<long long> &bests, long long y, long long total) {
         int pos = lower_bound(keys.begin(), keys.end(), y) - keys.begin();
         if (pos < static_cast<int>(keys.size()) && keys[pos] == y) {

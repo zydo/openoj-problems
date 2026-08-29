@@ -31,10 +31,8 @@ impl Solution {
                     }
                     continue;
                 }
-                let d1 =
-                    n1 as i32 - i32::from(c1[a] == 1) + i32::from(c1[b] == 0);
-                let d2 =
-                    n2 as i32 - i32::from(c2[b] == 1) + i32::from(c2[a] == 0);
+                let d1 = n1 as i32 - i32::from(c1[a] == 1) + i32::from(c1[b] == 0);
+                let d2 = n2 as i32 - i32::from(c2[b] == 1) + i32::from(c2[a] == 0);
                 if d1 == d2 {
                     return true;
                 }

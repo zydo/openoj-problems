@@ -1,5 +1,4 @@
-function minimumFinishTime(tires: number[][], changeTime: number,
-    numLaps: number): number {
+function minimumFinishTime(tires: number[][], changeTime: number, numLaps: number): number {
     // Precompute best[x]: the cheapest time for x consecutive laps on a
     // single tire. A run never helps once its next lap costs more than
     // resetting to the fastest first lap; ratios are >= 2 so the useful

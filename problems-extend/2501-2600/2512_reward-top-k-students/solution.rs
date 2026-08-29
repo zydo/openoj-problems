@@ -13,10 +13,8 @@ impl Solution {
         // free. Sorting the (-points, id) pairs ascending is exactly the
         // asked ranking — highest points first, lower ID breaking ties —
         // so the first k identifiers are the answer.
-        let positives: HashSet<&str> =
-            positive_feedback.iter().map(|w| w.as_str()).collect();
-        let negatives: HashSet<&str> =
-            negative_feedback.iter().map(|w| w.as_str()).collect();
+        let positives: HashSet<&str> = positive_feedback.iter().map(|w| w.as_str()).collect();
+        let negatives: HashSet<&str> = negative_feedback.iter().map(|w| w.as_str()).collect();
         let mut ranked: Vec<(i32, i32)> = Vec::with_capacity(report.len());
         for (text, &sid) in report.iter().zip(student_id.iter()) {
             let mut points = 0;

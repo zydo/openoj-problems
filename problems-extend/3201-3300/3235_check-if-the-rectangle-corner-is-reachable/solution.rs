@@ -6,15 +6,7 @@ fn find(parent: &mut [usize], mut node: usize) -> usize {
     node
 }
 
-fn meets_edge(
-    cx: i64,
-    cy: i64,
-    radius: i64,
-    fixed: i64,
-    vertical: bool,
-    x_corner: i64,
-    y_corner: i64,
-) -> bool {
+fn meets_edge(cx: i64, cy: i64, radius: i64, fixed: i64, vertical: bool, x_corner: i64, y_corner: i64) -> bool {
     // Squared distance from the center to the closest point of the edge
     // segment; integer-exact, so tangency counts as contact.
     let px = if vertical { fixed } else { cx.clamp(0, x_corner) };

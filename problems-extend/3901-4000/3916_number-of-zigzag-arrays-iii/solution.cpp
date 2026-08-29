@@ -27,17 +27,23 @@ class Solution {
                 up.swap(nextUp);
                 down.swap(nextDown);
             }
-            for (int value = 0; value < width; ++value) values[width] = (values[width] + up[value] + down[value]) % mod;
+            for (int value = 0; value < width; ++value)
+                values[width] = (values[width] + up[value] + down[value]) % mod;
         }
         int width = r - l + 1;
-        if (width <= points) return (int)values[width];
+        if (width <= points)
+            return (int)values[width];
         vector<long long> factorial(points + 1, 1), inverseFactorial(points + 1, 1);
-        for (int value = 1; value <= points; ++value) factorial[value] = factorial[value - 1] * value % mod;
+        for (int value = 1; value <= points; ++value)
+            factorial[value] = factorial[value - 1] * value % mod;
         inverseFactorial[points] = power(factorial[points], mod - 2, mod);
-        for (int value = points; value > 0; --value) inverseFactorial[value - 1] = inverseFactorial[value] * value % mod;
+        for (int value = points; value > 0; --value)
+            inverseFactorial[value - 1] = inverseFactorial[value] * value % mod;
         vector<long long> prefix(points + 2, 1), suffix(points + 2, 1);
-        for (int value = 1; value <= points; ++value) prefix[value] = prefix[value - 1] * (width - value) % mod;
-        for (int value = points; value > 0; --value) suffix[value] = suffix[value + 1] * (width - value) % mod;
+        for (int value = 1; value <= points; ++value)
+            prefix[value] = prefix[value - 1] * (width - value) % mod;
+        for (int value = points; value > 0; --value)
+            suffix[value] = suffix[value + 1] * (width - value) % mod;
         long long answer = 0;
         for (int value = 1; value <= points; ++value) {
             long long term = values[value] * prefix[value - 1] % mod * suffix[value + 1] % mod;
@@ -51,7 +57,8 @@ class Solution {
     long long power(long long base, long long exponent, long long mod) {
         long long result = 1;
         while (exponent > 0) {
-            if (exponent & 1) result = result * base % mod;
+            if (exponent & 1)
+                result = result * base % mod;
             base = base * base % mod;
             exponent >>= 1;
         }

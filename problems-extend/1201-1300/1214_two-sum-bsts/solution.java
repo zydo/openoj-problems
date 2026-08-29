@@ -7,7 +7,8 @@ class Solution {
     public boolean twoSumBSTs(TreeNode root1, TreeNode root2, int target) {
         List<Integer> a = inorder(root1);
         List<Integer> b = inorder(root2);
-        int i = 0, j = b.size() - 1;
+        int i = 0,
+            j = b.size() - 1;
         while (i < a.size() && j >= 0) {
             long total = (long) a.get(i) + b.get(j);
             if (total == target) return true;

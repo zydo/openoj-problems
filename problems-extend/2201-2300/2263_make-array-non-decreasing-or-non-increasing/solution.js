@@ -45,8 +45,5 @@ var convertArray = function (nums) {
         return cost;
     };
 
-    return Math.min(
-        nonDecreasingCost(nums),
-        nonDecreasingCost(nums.map((v) => -v))
-    );
+    return Math.min(nonDecreasingCost(nums), nonDecreasingCost(nums.map((v) => -v)));
 };

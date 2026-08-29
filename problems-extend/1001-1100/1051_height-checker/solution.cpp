@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int heightChecker(vector<int>& heights) {
+    int heightChecker(vector<int> &heights) {
         // The expected order is just heights sorted into non-decreasing
         // order. Compare position-by-position and count every mismatch.
         vector<int> expected(heights);

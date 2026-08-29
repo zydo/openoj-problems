@@ -26,8 +26,7 @@ SELECT
   ROUND(r.cnt * 1.0 / p.reaction_cnt, 2) AS reaction_ratio
 FROM
   per_user AS p
-  JOIN per_reaction AS r
-    ON r.user_id = p.user_id
+  JOIN per_reaction AS r ON r.user_id = p.user_id
 WHERE
   p.item_cnt >= 5
   AND r.cnt * 1.0 / p.reaction_cnt >= 0.6

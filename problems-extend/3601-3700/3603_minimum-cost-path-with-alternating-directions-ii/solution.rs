@@ -21,8 +21,7 @@ impl Solution {
             let first = if i == 1 { 0 } else { wait_cost[i - 1][0] as i64 };
             dp[0] = prev[0] + first + i as i64 + 1;
             for j in 1..n {
-                dp[j] = (prev[j] + wait_cost[i - 1][j] as i64)
-                    .min(dp[j - 1] + wait_cost[i][j - 1] as i64)
+                dp[j] = (prev[j] + wait_cost[i - 1][j] as i64).min(dp[j - 1] + wait_cost[i][j - 1] as i64)
                     + (i as i64 + 1) * (j as i64 + 1);
             }
         }

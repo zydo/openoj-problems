@@ -7,7 +7,7 @@ already attacks her. The answer is `1` exactly when the rook shares the
 queen's rank or file, or the bishop's coordinate differences to the queen
 are equal in size (a diagonal) — and in each case the line between them is
 empty. Empty is the subtle part: every square on board is vacant except the
-three pieces, so the *other* white piece is the only possible blocker. The
+three pieces, so the _other_ white piece is the only possible blocker. The
 bishop cancels the rook's attack only if it stands on that same rank or file
 strictly between them; the rook cancels the bishop's attack only if it lies
 on that same diagonal segment strictly between them — a diagonal square like

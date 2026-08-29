@@ -24,9 +24,9 @@ class Solution:
             # A suffixed assignment "stem(k)" can collide later; seed the
             # stem's memory so the next probe for that stem starts past it.
             idx = candidate.rfind("(")
-            if idx > 0 and candidate[-1] == ")" and candidate[idx + 1:-1].isdigit():
+            if idx > 0 and candidate[-1] == ")" and candidate[idx + 1 : -1].isdigit():
                 stem = candidate[:idx]
-                val = int(candidate[idx + 1:-1]) + 1
+                val = int(candidate[idx + 1 : -1]) + 1
                 if stem not in next_k or next_k[stem] < val:
                     next_k[stem] = max(next_k.get(stem, 1), val)
             result.append(candidate)

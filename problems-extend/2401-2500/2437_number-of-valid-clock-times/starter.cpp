@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int countTime(string time) {
-        throw logic_error("TODO");
-    }
+  public:
+    int countTime(string time) { throw logic_error("TODO"); }
 };

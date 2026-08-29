@@ -22,7 +22,8 @@ class Solution {
                 block >>= 1;
             }
             int prefix = 32 - __builtin_ctzll(block);
-            blocks.push_back(to_string(x >> 24) + "." + to_string((x >> 16) & 255) + "." + to_string((x >> 8) & 255) + "." + to_string(x & 255) + "/" + to_string(prefix));
+            blocks.push_back(to_string(x >> 24) + "." + to_string((x >> 16) & 255) + "." + to_string((x >> 8) & 255) +
+                             "." + to_string(x & 255) + "/" + to_string(prefix));
             x += block;
             n -= (int)block;
         }

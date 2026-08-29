@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int numTeams(vector<int>& rating) {
+    int numTeams(vector<int> &rating) {
         // Fix the middle soldier j: a rising team picks any smaller rating
         // on the left and any larger on the right; a falling team mirrors
         // it. Summing the four counts over every j counts each triple

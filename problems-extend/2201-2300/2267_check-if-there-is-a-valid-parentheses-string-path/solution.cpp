@@ -7,7 +7,8 @@ class Solution {
         // balances are dropped as each move is extended.
         int m = grid.size(), n = grid[0].size();
         int start = grid[0][0] == "(" ? 1 : -1;
-        if (start < 0) return false;
+        if (start < 0)
+            return false;
         vector<vector<unordered_set<int>>> dp(m, vector<unordered_set<int>>(n));
         dp[0][0].insert(start);
         for (int r = 0; r < m; ++r) {
@@ -15,11 +16,13 @@ class Solution {
                 for (int balance : dp[r][c]) {
                     if (r + 1 < m) {
                         int nb = balance + (grid[r + 1][c] == "(" ? 1 : -1);
-                        if (nb >= 0) dp[r + 1][c].insert(nb);
+                        if (nb >= 0)
+                            dp[r + 1][c].insert(nb);
                     }
                     if (c + 1 < n) {
                         int nb = balance + (grid[r][c + 1] == "(" ? 1 : -1);
-                        if (nb >= 0) dp[r][c + 1].insert(nb);
+                        if (nb >= 0)
+                            dp[r][c + 1].insert(nb);
                     }
                 }
             }

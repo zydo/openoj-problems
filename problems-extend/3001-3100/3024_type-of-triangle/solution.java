@@ -5,7 +5,9 @@ class Solution {
         // strictly more than the third side. Strictness rejects the
         // degenerate case where the two shorter sides merely equal the
         // longest one: [1, 2, 3] lies flat and gets "none", not a type.
-        int a = nums[0], b = nums[1], c = nums[2];
+        int a = nums[0],
+            b = nums[1],
+            c = nums[2];
         if (a + b <= c || a + c <= b || b + c <= a) {
             return "none";
         }

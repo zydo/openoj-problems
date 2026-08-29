@@ -1,6 +1,6 @@
 class Solution {
   public:
-    bool checkValidGrid(std::vector<std::vector<int>>& grid) {
+    bool checkValidGrid(std::vector<std::vector<int>> &grid) {
         // The configuration is valid exactly when visit 0 sits at the
         // top-left cell and every pair of consecutive visits lands a
         // knight move apart. Map each visit number to its cell, then

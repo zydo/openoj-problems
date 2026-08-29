@@ -23,7 +23,7 @@ function timeTaken(arrival: number[], state: number[]): number[] {
             i++;
         }
         if (enterQ.length === eh && exitQ.length === xh) {
-            t = arrival[i];     // jump the clock; idle breaks any streak
+            t = arrival[i]; // jump the clock; idle breaks any streak
             prevDir = -1;
             continue;
         }

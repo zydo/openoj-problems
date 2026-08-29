@@ -3,7 +3,8 @@ class Solution {
         // C++ division truncates toward zero; buckets need the floor so
         // negative values land in the bucket they belong to.
         long long q = x / w;
-        if (x % w != 0 && x < 0) --q;
+        if (x % w != 0 && x < 0)
+            --q;
         return q;
     }
 
@@ -22,13 +23,16 @@ class Solution {
             }
             long long value = nums[index];
             long long bucket = floorDiv(value, width);
-            if (buckets.count(bucket)) return true;
+            if (buckets.count(bucket))
+                return true;
             // Neighbor buckets can hold values up to 2*valueDiff away, so
             // their occupants need a real distance comparison.
             auto below = buckets.find(bucket - 1);
-            if (below != buckets.end() && value - below->second <= valueDiff) return true;
+            if (below != buckets.end() && value - below->second <= valueDiff)
+                return true;
             auto above = buckets.find(bucket + 1);
-            if (above != buckets.end() && above->second - value <= valueDiff) return true;
+            if (above != buckets.end() && above->second - value <= valueDiff)
+                return true;
             buckets[bucket] = value;
         }
         return false;

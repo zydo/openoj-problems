@@ -18,8 +18,7 @@ class Solution {
             int d = nums[i] - nums[i - 1];
             if (d == direction && d != 0) {
                 ++chain;
-                ending = (ending + static_cast<long long>(chain) * nums[i]) %
-                         kMod;
+                ending = (ending + static_cast<long long>(chain) * nums[i]) % kMod;
             } else if (d == 1 || d == -1) {
                 direction = d;
                 chain = 2;

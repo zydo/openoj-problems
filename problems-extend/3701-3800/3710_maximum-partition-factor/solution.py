@@ -8,23 +8,15 @@ class Solution:
         # factor is 0 by definition.
         if n == 2:
             return 0
-        dist = [
-            [abs(a[0] - b[0]) + abs(a[1] - b[1]) for b in points]
-            for a in points
-        ]
+        dist = [[abs(a[0] - b[0]) + abs(a[1] - b[1]) for b in points] for a in points]
         # The factor of any split is 0 or one of the inter-point distances,
         # so binary search probes those candidate thresholds only.
-        candidates = sorted(
-            {0} | {dist[u][v] for u in range(n) for v in range(u + 1, n)}
-        )
+        candidates = sorted({0} | {dist[u][v] for u in range(n) for v in range(u + 1, n)})
 
         def separable(limit: int) -> bool:
             # Every pair closer than limit must be split across the two
             # groups -- exactly "the conflict graph is bipartite".
-            adj = [
-                [v for v in range(n) if v != u and dist[u][v] < limit]
-                for u in range(n)
-            ]
+            adj = [[v for v in range(n) if v != u and dist[u][v] < limit] for u in range(n)]
             color = [-1] * n
             for start in range(n):
                 if color[start] != -1:

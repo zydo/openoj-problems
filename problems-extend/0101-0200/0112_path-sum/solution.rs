@@ -7,11 +7,7 @@ impl Solution {
         // its whole path in one compare. An empty tree collects no
         // frames at all: it has no root-to-leaf path, so no targetSum —
         // not even 0 — can be matched.
-        let mut stack: Vec<(&TreeNode, i32)> = root
-            .as_deref()
-            .into_iter()
-            .map(|node| (node, targetSum))
-            .collect();
+        let mut stack: Vec<(&TreeNode, i32)> = root.as_deref().into_iter().map(|node| (node, targetSum)).collect();
         while let Some((node, remaining)) = stack.pop() {
             if node.left.is_none() && node.right.is_none() {
                 // The path ends here, so it qualifies exactly when the

@@ -6,19 +6,16 @@
 
 class Solution {
   public:
-    std::vector<int> topStudents(std::vector<std::string>& positive_feedback,
-                                 std::vector<std::string>& negative_feedback,
-                                 std::vector<std::string>& report,
-                                 std::vector<int>& student_id, int k) {
+    std::vector<int> topStudents(std::vector<std::string> &positive_feedback,
+                                 std::vector<std::string> &negative_feedback, std::vector<std::string> &report,
+                                 std::vector<int> &student_id, int k) {
         // Membership sets make each report token O(1) to classify: +3 for
         // a positive word, -1 for a negative one, everything else free.
         // Sorting the (-points, id) pairs ascending is exactly the asked
         // ranking — highest points first, lower ID breaking ties — so the
         // first k identifiers are the answer.
-        std::unordered_set<std::string> positives(positive_feedback.begin(),
-                                                  positive_feedback.end());
-        std::unordered_set<std::string> negatives(negative_feedback.begin(),
-                                                  negative_feedback.end());
+        std::unordered_set<std::string> positives(positive_feedback.begin(), positive_feedback.end());
+        std::unordered_set<std::string> negatives(negative_feedback.begin(), negative_feedback.end());
         std::vector<std::pair<int, int>> ranked;
         ranked.reserve(report.size());
         for (size_t i = 0; i < report.size(); i++) {

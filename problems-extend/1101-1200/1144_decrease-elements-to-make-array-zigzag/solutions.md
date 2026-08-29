@@ -3,7 +3,7 @@
 ## Two greedy patterns, take the cheaper
 
 Since moves only decrease values, the only elements ever worth touching are
-the *valleys* — the ones a pattern requires to be strictly smaller than
+the _valleys_ — the ones a pattern requires to be strictly smaller than
 their neighbors. In the pattern where even indices hold the peaks, the odd
 indices must be valleys, and vice versa. A valley that already sits below
 both neighbors costs nothing; otherwise it must drop to

@@ -5,8 +5,10 @@ class Solution {
         // two baskets is even; an odd count makes equality impossible no
         // matter how fruits are swapped.
         unordered_map<int, long long> diff;
-        for (int x : basket1) ++diff[x];
-        for (int x : basket2) --diff[x];
+        for (int x : basket1)
+            ++diff[x];
+        for (int x : basket2)
+            --diff[x];
         // Every |diff| / 2 surplus copies become relocation tickets. Real
         // swaps always pair one export with one import, so among all pooled
         // tickets only the cheapest half genuinely travels far. A ticket
@@ -16,13 +18,14 @@ class Solution {
         // n * 2 * 10^9 <= 2*10^14, long-long-safe.
         vector<long long> tickets;
         for (auto &[value, delta] : diff) {
-            if (delta % 2 != 0) return -1;
+            if (delta % 2 != 0)
+                return -1;
             long long magnitude = delta < 0 ? -delta : delta;
             for (long long k = 0; k < magnitude / 2; ++k)
                 tickets.push_back(value);
         }
-        long long smallest = min(*min_element(basket1.begin(), basket1.end()),
-                                 *min_element(basket2.begin(), basket2.end()));
+        long long smallest =
+            min(*min_element(basket1.begin(), basket1.end()), *min_element(basket2.begin(), basket2.end()));
         sort(tickets.begin(), tickets.end());
         long long answer = 0;
         size_t half = tickets.size() / 2;

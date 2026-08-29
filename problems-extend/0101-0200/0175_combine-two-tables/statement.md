@@ -4,9 +4,9 @@
 
 Table: `Person`
 
-| Column Name | Type |
-| ----------- | ---- |
-| personId    | int  |
+| Column Name | Type    |
+| ----------- | ------- |
+| personId    | int     |
 | lastName    | varchar |
 | firstName   | varchar |
 
@@ -16,10 +16,10 @@ first and last names.
 
 Table: `Address`
 
-| Column Name | Type |
-| ----------- | ---- |
-| addressId   | int  |
-| personId    | int  |
+| Column Name | Type    |
+| ----------- | ------- |
+| addressId   | int     |
+| personId    | int     |
 | city        | varchar |
 | state       | varchar |
 

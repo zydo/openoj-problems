@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maxSumDivThree(vector<int>& nums) {
+  public:
+    int maxSumDivThree(vector<int> &nums) {
         // best[r]: greatest prefix sum with sum % 3 == r (-1 = unreachable).
         const int NEG = -1;
         array<int, 3> best{0, NEG, NEG};

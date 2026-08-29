@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string removeStars(string s) {
         // A star deletes the most recently kept character, so keep a
         // stack of survivors: push letters, pop on stars.

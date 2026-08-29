@@ -17,8 +17,7 @@ class Solution {
         int[][] maxLocal = new int[n - 2][n - 2];
         for (int i = 0; i + 2 < n; ++i) {
             for (int j = 0; j + 2 < n; ++j) {
-                maxLocal[i][j] =
-                        Math.max(rowMax[i][j], Math.max(rowMax[i + 1][j], rowMax[i + 2][j]));
+                maxLocal[i][j] = Math.max(rowMax[i][j], Math.max(rowMax[i + 1][j], rowMax[i + 2][j]));
             }
         }
         return maxLocal;

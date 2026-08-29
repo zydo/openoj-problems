@@ -32,6 +32,10 @@ impl Solution {
                 kept[p] += kept[node];
             }
         }
-        if sub_sum[0] != 0 { kept[0] } else { 0 }
+        if sub_sum[0] != 0 {
+            kept[0]
+        } else {
+            0
+        }
     }
 }

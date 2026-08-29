@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    bool doesValidArrayExist(vector<int>& derived) {
+    bool doesValidArrayExist(vector<int> &derived) {
         // Each original element enters exactly two derived entries (its own
         // slot and its neighbour's), so folding derived with XOR cancels
         // every pair and lands on 0 exactly when a valid original exists.

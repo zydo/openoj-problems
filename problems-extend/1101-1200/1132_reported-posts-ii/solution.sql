@@ -5,7 +5,9 @@ FROM
     SELECT
       a.action_date,
       100.0 * COUNT(
-        DISTINCT CASE WHEN r.post_id IS NOT NULL THEN a.post_id END
+        DISTINCT CASE
+          WHEN r.post_id IS NOT NULL THEN a.post_id
+        END
       ) / COUNT(DISTINCT a.post_id) AS daily_percent
     FROM
       Actions a

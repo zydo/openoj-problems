@@ -1,36 +1,29 @@
 import "strings"
 
-// The first word fixes the target vowel count; every later word sharing it
-// is reversed, the rest pass through untouched.
 func reverseWords(s string) string {
+	// The first word only fixes the target vowel count; each later word
+	// matching it is reversed in place, everything else (word order,
+	// separators) stays as-is.
 	words := strings.Split(s, " ")
+	countVowels := func(word string) int {
+		count := 0
+		for i := 0; i < len(word); i++ {
+			switch word[i] {
+			case 'a', 'e', 'i', 'o', 'u':
+				count++
+			}
+		}
+		return count
+	}
 	target := countVowels(words[0])
-	out := make([]string, 0, len(words))
-	out = append(out, words[0])
-	for _, w := range words[1:] {
-		if countVowels(w) == target {
-			out = append(out, reverse(w))
-		} else {
-			out = append(out, w)
+	for i := 1; i < len(words); i++ {
+		if countVowels(words[i]) == target {
+			letters := []byte(words[i])
+			for l, r := 0, len(letters)-1; l < r; l, r = l+1, r-1 {
+				letters[l], letters[r] = letters[r], letters[l]
+			}
+			words[i] = string(letters)
 		}
 	}
-	return strings.Join(out, " ")
-}
-
-func countVowels(w string) int {
-	count := 0
-	for _, c := range w {
-		if c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' {
-			count++
-		}
-	}
-	return count
-}
-
-func reverse(w string) string {
-	runes := []rune(w)
-	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
-		runes[i], runes[j] = runes[j], runes[i]
-	}
-	return string(runes)
+	return strings.Join(words, " ")
 }

@@ -26,8 +26,7 @@ class Solution {
         auto spread = [&](int l, int r) {
             int j = lg[r - l + 1];
             int low = 1 << j;
-            return (long long)max(mx[j][l], mx[j][r - low + 1]) -
-                   min(mn[j][l], mn[j][r - low + 1]);
+            return (long long)max(mx[j][l], mx[j][r - low + 1]) - min(mn[j][l], mn[j][r - low + 1]);
         };
         // Row l is non-increasing as r shrinks toward l, so the heap merges
         // n sorted rows and always holds each row's largest unseen entry.

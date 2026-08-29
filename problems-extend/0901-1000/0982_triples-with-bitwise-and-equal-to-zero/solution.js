@@ -25,7 +25,7 @@ var countTriplets = function (nums) {
     }
     let answer = 0;
     for (const x of nums) {
-        answer += f[~x & 0xFFFF];
+        answer += f[~x & 0xffff];
     }
     return answer;
 };

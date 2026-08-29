@@ -1,4 +1,5 @@
 class Solution {
+
     private String s;
     private int pos;
 

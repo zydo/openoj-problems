@@ -3,7 +3,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 class Encrypter {
 
     private final Map<Character, String> forward = new HashMap<>();

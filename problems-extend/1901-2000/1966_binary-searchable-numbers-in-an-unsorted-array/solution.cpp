@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int binarySearchableNumbers(vector<int>& nums) {
+    int binarySearchableNumbers(vector<int> &nums) {
         // A value is guaranteed found iff every element left of it is
         // smaller and every element right of it is larger, so a smaller
         // right pivot or a larger left pivot can never discard it. Compare
@@ -15,8 +15,7 @@ class Solution {
         int count = 0;
         int prefixMax = nums[0];
         for (int i = 0; i < n; ++i) {
-            if ((i == 0 || nums[i] > prefixMax) &&
-                (i == n - 1 || nums[i] < suffixMin[i + 1])) {
+            if ((i == 0 || nums[i] > prefixMax) && (i == n - 1 || nums[i] < suffixMin[i + 1])) {
                 ++count;
             }
             if (nums[i] > prefixMax) {

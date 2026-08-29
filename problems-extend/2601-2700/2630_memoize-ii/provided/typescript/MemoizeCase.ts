@@ -8,11 +8,7 @@ class MemoizeCase {
     buildInputs: () => any[][];
     constructor(values: any[], _queryBudget?: unknown) {
         const [source, getInputs] = values;
-        this.fn = new Function("return (" + source + ");")() as unknown as (
-            ...args: any[]
-        ) => any;
-        this.buildInputs = new Function(
-            "return (" + getInputs + ");"
-        )() as unknown as () => any[][];
+        this.fn = new Function("return (" + source + ");")() as unknown as (...args: any[]) => any;
+        this.buildInputs = new Function("return (" + getInputs + ");")() as unknown as () => any[][];
     }
 }

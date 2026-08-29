@@ -1,7 +1,8 @@
 class Solution {
 
     public int[] bestCoordinate(int[][] towers, int radius) {
-        int bestX = 0, bestY = 0;
+        int bestX = 0,
+            bestY = 0;
         long bestQuality = -1;
 
         for (int x = 0; x <= 50; x++) {

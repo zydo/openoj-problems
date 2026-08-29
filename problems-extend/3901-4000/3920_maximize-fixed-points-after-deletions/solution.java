@@ -10,7 +10,9 @@ class Solution {
         for (int i = 0; i < nums.length; ++i) {
             if (nums[i] <= i) candidates[size++] = new int[] { nums[i], i - nums[i] };
         }
-        Arrays.sort(candidates, 0, size, (a, b) -> a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1]));
+        Arrays.sort(candidates, 0, size, (a, b) ->
+            a[0] != b[0] ? Integer.compare(a[0], b[0]) : Integer.compare(a[1], b[1])
+        );
         int[] bit = new int[nums.length + 1];
         int answer = 0;
         for (int start = 0; start < size; ) {

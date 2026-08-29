@@ -1,17 +1,67 @@
 {
   "public": [
-    { "input": ["leEeetcode"], "expected": "leetcode" },
-    { "input": ["abBAcC"], "expected": "" },
-    { "input": ["s"], "expected": "s" }
+    {
+      "input": [
+        "leEeetcode"
+      ],
+      "expected": "leetcode"
+    },
+    {
+      "input": [
+        "abBAcC"
+      ],
+      "expected": ""
+    },
+    {
+      "input": [
+        "s"
+      ],
+      "expected": "s"
+    }
   ],
   "hidden": [
-    { "input": ["abc"], "expected": "abc" },
-    { "input": ["Z"], "expected": "Z" },
-    { "input": ["aA"], "expected": "" },
-    { "input": ["aXxA"], "expected": "" },
-    { "input": ["aaBB"], "expected": "aaBB" },
-    { "input": ["aXAx"], "expected": "aXAx" },
-    { "input": ["aAxyYXz"], "expected": "z" },
+    {
+      "input": [
+        "abc"
+      ],
+      "expected": "abc"
+    },
+    {
+      "input": [
+        "Z"
+      ],
+      "expected": "Z"
+    },
+    {
+      "input": [
+        "aA"
+      ],
+      "expected": ""
+    },
+    {
+      "input": [
+        "aXxA"
+      ],
+      "expected": ""
+    },
+    {
+      "input": [
+        "aaBB"
+      ],
+      "expected": "aaBB"
+    },
+    {
+      "input": [
+        "aXAx"
+      ],
+      "expected": "aXAx"
+    },
+    {
+      "input": [
+        "aAxyYXz"
+      ],
+      "expected": "z"
+    },
     {
       "input": [
         "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
@@ -24,9 +74,29 @@
       ],
       "expected": ""
     },
-    { "input": ["Programming"], "expected": "Programming" },
-    { "input": ["AbBcCa"], "expected": "" },
-    { "input": ["xaAyYbBz"], "expected": "xz" },
-    { "input": ["zZaA"], "expected": "" }
+    {
+      "input": [
+        "Programming"
+      ],
+      "expected": "Programming"
+    },
+    {
+      "input": [
+        "AbBcCa"
+      ],
+      "expected": ""
+    },
+    {
+      "input": [
+        "xaAyYbBz"
+      ],
+      "expected": "xz"
+    },
+    {
+      "input": [
+        "zZaA"
+      ],
+      "expected": ""
+    }
   ]
 }

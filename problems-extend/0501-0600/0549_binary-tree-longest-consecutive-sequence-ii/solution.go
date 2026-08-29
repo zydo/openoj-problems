@@ -1,9 +1,9 @@
 // The runs topping out at a node — the longest +1-downward and the
 // longest -1-downward — together with that node's value.
 type run struct {
-	inc  int
-	dec  int
-	val  int
+	inc int
+	dec int
+	val int
 }
 
 // An absent child is a run of length 0; a real run always has

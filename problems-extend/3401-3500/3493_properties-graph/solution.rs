@@ -7,10 +7,7 @@ impl Solution {
     // stack DFS counts the components.
     pub fn number_of_components(properties: Vec<Vec<i32>>, k: i32) -> i32 {
         let n = properties.len();
-        let sets: Vec<HashSet<i32>> = properties
-            .iter()
-            .map(|row| row.iter().copied().collect())
-            .collect();
+        let sets: Vec<HashSet<i32>> = properties.iter().map(|row| row.iter().copied().collect()).collect();
         let mut adjacency: Vec<Vec<usize>> = vec![Vec::new(); n];
         for i in 0..n {
             for j in (i + 1)..n {

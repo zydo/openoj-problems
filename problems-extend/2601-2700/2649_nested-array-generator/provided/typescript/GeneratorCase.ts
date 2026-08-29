@@ -32,9 +32,7 @@ class GeneratorCase {
         if (typeof inorderTraversalFn !== "function") {
             throw new Error("drive expects the submission's inorderTraversal function");
         }
-        const generator = (
-            inorderTraversalFn as (arr: JsonNode[]) => Generator<number>
-        )(this.arr);
+        const generator = (inorderTraversalFn as (arr: JsonNode[]) => Generator<number>)(this.arr);
         if (!generator || typeof generator.next !== "function") {
             throw new Error("inorderTraversal must return a generator object");
         }

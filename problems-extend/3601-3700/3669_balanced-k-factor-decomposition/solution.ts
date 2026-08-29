@@ -18,26 +18,15 @@ function minDifference(n: number, k: number): number[] {
     // split.
     let best: number[] = [];
 
-    const dfs = (
-        start: number,
-        slots: number,
-        prod: number,
-        path: number[],
-    ): void => {
+    const dfs = (start: number, slots: number, prod: number, path: number[]): void => {
         if (slots === 1) {
             // The last factor is forced to carry the product up to n; it
             // completes a nondecreasing split exactly when it reaches the
             // last pick. Both ends of the spread then sit on the path.
             const last = Math.floor(n / prod);
-            if (
-                last * prod === n &&
-                (path.length === 0 || last >= path[path.length - 1])
-            ) {
+            if (last * prod === n && (path.length === 0 || last >= path[path.length - 1])) {
                 const spread = path.length === 0 ? 0 : last - path[0];
-                if (
-                    best.length === 0 ||
-                    spread < best[best.length - 1] - best[0]
-                ) {
+                if (best.length === 0 || spread < best[best.length - 1] - best[0]) {
                     best = path.concat([last]);
                 }
             }

@@ -1,4 +1,5 @@
 class Solution {
+
     public long numberOfSubstrings(String s) {
         int n = s.length();
         int[] zerosAt = new int[n];

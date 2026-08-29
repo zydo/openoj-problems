@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    vector<string> removeComments(vector<string>& source) {
+    vector<string> removeComments(vector<string> &source) {
         // Each comment is decided by reading order — line by line, left to
         // right, first marker wins — so one pass with a single flag (inside
         // a block comment) and one buffer for the line under construction is
@@ -14,7 +14,7 @@ class Solution {
         vector<string> result;
         string buffer;
         bool inBlock = false;
-        for (const string& line : source) {
+        for (const string &line : source) {
             size_t i = 0;
             while (i < line.size()) {
                 if (inBlock) {

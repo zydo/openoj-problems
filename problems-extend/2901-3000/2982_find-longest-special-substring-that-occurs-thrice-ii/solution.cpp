@@ -9,13 +9,15 @@ class Solution {
         int i = 0;
         while (i < n) {
             int j = i;
-            while (j < n && s[j] == s[i]) j++;
+            while (j < n && s[j] == s[i])
+                j++;
             runs[s[i] - 'a'].push_back(j - i);
             i = j;
         }
         int best = -1;
         for (auto &rs : runs) {
-            if (rs.empty()) continue;
+            if (rs.empty())
+                continue;
             sort(rs.begin(), rs.end(), greater<int>());
             int f1 = rs[0];
             int f2 = rs.size() > 1 ? rs[1] : 0;
@@ -23,7 +25,8 @@ class Solution {
             // three windows in one run / two + one / one in each;
             // a 0 candidate means this character never reaches three.
             int cand = max({f1 - 2, min(f1 - 1, f2), f3});
-            if (cand >= 1 && cand > best) best = cand;
+            if (cand >= 1 && cand > best)
+                best = cand;
         }
         return best;
     }

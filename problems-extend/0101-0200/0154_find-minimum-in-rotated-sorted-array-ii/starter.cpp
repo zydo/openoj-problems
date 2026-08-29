@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int findMin(vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    int findMin(vector<int> &nums) { throw logic_error("TODO"); }
 };

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    double minPrice(vector<int>& prices, vector<int>& discounts) {
+  public:
+    double minPrice(vector<int> &prices, vector<int> &discounts) {
         // Sort both descending and pair positionally: by the exchange
         // argument, largest discount on largest price maximizes p*d/100.
         sort(prices.begin(), prices.end(), greater<int>());

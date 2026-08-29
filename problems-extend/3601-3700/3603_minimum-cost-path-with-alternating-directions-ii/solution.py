@@ -21,8 +21,5 @@ class Solution:
             # First column: reachable only from above.
             dp[0] = prev[0] + (0 if i == 1 else waitCost[i - 1][0]) + (i + 1)
             for j in range(1, n):
-                dp[j] = (
-                    min(prev[j] + waitCost[i - 1][j], dp[j - 1] + waitCost[i][j - 1])
-                    + (i + 1) * (j + 1)
-                )
+                dp[j] = min(prev[j] + waitCost[i - 1][j], dp[j - 1] + waitCost[i][j - 1]) + (i + 1) * (j + 1)
         return dp[n - 1]

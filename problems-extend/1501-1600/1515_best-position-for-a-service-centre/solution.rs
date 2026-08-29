@@ -20,9 +20,6 @@ impl Solution {
             x = num_x / weight_sum;
             y = num_y / weight_sum;
         }
-        positions
-            .iter()
-            .map(|p| (x - p[0] as f64).hypot(y - p[1] as f64))
-            .sum()
+        positions.iter().map(|p| (x - p[0] as f64).hypot(y - p[1] as f64)).sum()
     }
 }

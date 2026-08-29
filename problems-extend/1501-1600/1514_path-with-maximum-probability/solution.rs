@@ -24,13 +24,7 @@ impl PartialOrd for HeapEntry {
 }
 
 impl Solution {
-    pub fn max_probability(
-        n: i32,
-        edges: Vec<Vec<i32>>,
-        succProb: Vec<f64>,
-        start_node: i32,
-        end_node: i32,
-    ) -> f64 {
+    pub fn max_probability(n: i32, edges: Vec<Vec<i32>>, succProb: Vec<f64>, start_node: i32, end_node: i32) -> f64 {
         let n = n as usize;
         let start_node = start_node as usize;
         let end_node = end_node as usize;
@@ -48,7 +42,10 @@ impl Solution {
         let mut visited = vec![false; n];
 
         let mut heap = BinaryHeap::new();
-        heap.push(HeapEntry { probability: 1.0, node: start_node });
+        heap.push(HeapEntry {
+            probability: 1.0,
+            node: start_node,
+        });
         while let Some(HeapEntry { probability, node }) = heap.pop() {
             if visited[node] {
                 continue;
@@ -61,7 +58,10 @@ impl Solution {
                 let candidate = probability * edge_probability;
                 if candidate > best[neighbor] {
                     best[neighbor] = candidate;
-                    heap.push(HeapEntry { probability: candidate, node: neighbor });
+                    heap.push(HeapEntry {
+                        probability: candidate,
+                        node: neighbor,
+                    });
                 }
             }
         }

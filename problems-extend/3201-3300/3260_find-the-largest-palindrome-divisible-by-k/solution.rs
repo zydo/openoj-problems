@@ -55,8 +55,7 @@ impl Solution {
         for j in 0..m {
             let low = if j == 0 { 1 } else { 0 };
             for d in (low..=9usize).rev() {
-                let rest =
-                    (((need as i32 - d as i32 * weights[j] as i32).rem_euclid(k as i32)) as usize);
+                let rest = (((need as i32 - d as i32 * weights[j] as i32).rem_euclid(k as i32)) as usize);
                 if reachable[j + 1] >> rest & 1 == 1 {
                     need = rest;
                     half[j] = b'0' + d as u8;

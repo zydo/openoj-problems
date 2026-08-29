@@ -8,7 +8,12 @@ var minimumOperations = function (grid) {
     const total = rows * columns;
     const adjacency = Array.from({ length: total }, () => []);
     const leftVertices = [];
-    const directions = [[-1, 0], [1, 0], [0, -1], [0, 1]];
+    const directions = [
+        [-1, 0],
+        [1, 0],
+        [0, -1],
+        [0, 1],
+    ];
     for (let row = 0; row < rows; row++) {
         for (let column = 0; column < columns; column++) {
             if (grid[row][column] === 0 || (row + column) % 2 === 1) continue;

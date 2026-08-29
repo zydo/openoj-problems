@@ -52,6 +52,7 @@ class Solution {
     }
 
     private static final class Frame {
+
         final TreeNode parent;
         final boolean attachLeft;
         final int low;

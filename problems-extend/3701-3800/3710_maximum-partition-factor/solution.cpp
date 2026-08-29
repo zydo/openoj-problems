@@ -10,8 +10,7 @@ class Solution {
         vector<vector<int>> dist(n, vector<int>(n));
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
-                dist[i][j] = abs(points[i][0] - points[j][0]) +
-                             abs(points[i][1] - points[j][1]);
+                dist[i][j] = abs(points[i][0] - points[j][0]) + abs(points[i][1] - points[j][1]);
             }
         }
         // The factor of any split is 0 or one of the inter-point distances,
@@ -24,8 +23,7 @@ class Solution {
             }
         }
         sort(candidates.begin(), candidates.end());
-        candidates.erase(unique(candidates.begin(), candidates.end()),
-                         candidates.end());
+        candidates.erase(unique(candidates.begin(), candidates.end()), candidates.end());
 
         // Raising the threshold only adds conflict edges, so feasibility is
         // monotone and the largest separable threshold is the answer.

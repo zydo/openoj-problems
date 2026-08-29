@@ -4,7 +4,7 @@ class Solution {
     // among each row's top limits[i] values: pool those candidates, sort
     // descending, and sum the first k. The sum may reach
     // 250000 * 10^5 = 2.5e10, so accumulate in a long long.
-    long long maxSum(vector<vector<int>>& grid, vector<int>& limits, int k) {
+    long long maxSum(vector<vector<int>> &grid, vector<int> &limits, int k) {
         vector<int> pool;
         for (int i = 0; i < (int)grid.size(); i++) {
             vector<int> row = grid[i];

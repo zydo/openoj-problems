@@ -39,8 +39,7 @@ class Solution {
                 continue; // n itself never counts
             }
             long distance = Math.abs(candidateValue - value);
-            if (best == null || distance < bestDistance
-                    || (distance == bestDistance && candidateValue < bestValue)) {
+            if (best == null || distance < bestDistance || (distance == bestDistance && candidateValue < bestValue)) {
                 best = candidates[i];
                 bestValue = candidateValue;
                 bestDistance = distance;

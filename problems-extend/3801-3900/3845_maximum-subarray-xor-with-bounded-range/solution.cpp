@@ -14,7 +14,7 @@ class Solution {
         int size = 15 * n + 1;
         vector<int> child(2 * size, -1); // children of node j: child[2j], child[2j+1]
         vector<int> cnt(size, 0);
-        int nodes = 1; // next free node id; node 0 is the root
+        int nodes = 1;       // next free node id; node 0 is the root
         vector<int> maxQ(n); // indices of max candidates, values decreasing
         vector<int> minQ(n); // indices of min candidates, values increasing
         int maxHead = 0, maxTail = 0, minHead = 0, minTail = 0;

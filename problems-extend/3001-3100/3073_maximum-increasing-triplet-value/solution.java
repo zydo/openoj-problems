@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 class Solution {
+
     public int maximumTripletValue(int[] nums) {
         int n = nums.length;
         // Greatest element strictly to the right of each index.

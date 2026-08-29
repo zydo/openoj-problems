@@ -6,9 +6,7 @@ impl Solution {
         let mut other_count = [0_i32; 3];
         for r in 0..n {
             for c in 0..n {
-                let on_y = (r == c && r <= mid)
-                    || (c == n - 1 - r && r <= mid)
-                    || (c == mid && r >= mid);
+                let on_y = (r == c && r <= mid) || (c == n - 1 - r && r <= mid) || (c == mid && r >= mid);
                 if on_y {
                     y_count[usize::try_from(grid[r as usize][c as usize]).unwrap()] += 1;
                 } else {

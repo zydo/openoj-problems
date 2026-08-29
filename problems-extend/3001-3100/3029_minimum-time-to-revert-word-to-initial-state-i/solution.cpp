@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int minimumTimeToInitialState(string word, int k) {
         // After t seconds exactly t*k original characters have been removed
         // from the front; additions only ever land behind the survivors.

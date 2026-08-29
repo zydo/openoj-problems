@@ -9,12 +9,7 @@ function cellKey(x: number, y: number): number {
 // flood-fill from an endpoint ever visits more cells than that, the
 // endpoint cannot be trapped, so the fill can stop early instead of
 // exploring the (unmaterializable) rest of the grid.
-function canEscapeLocally(
-    start: number[],
-    goal: number[],
-    blockedSet: Set<number>,
-    maxEnclosedArea: number,
-): boolean {
+function canEscapeLocally(start: number[], goal: number[], blockedSet: Set<number>, maxEnclosedArea: number): boolean {
     const visited = new Set<number>([cellKey(start[0], start[1])]);
     const stack: [number, number][] = [[start[0], start[1]]];
     const directions: [number, number][] = [

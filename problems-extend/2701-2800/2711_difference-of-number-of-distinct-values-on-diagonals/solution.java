@@ -16,10 +16,10 @@ class Solution {
         int[][] ans = new int[m][n];
         List<int[]> starts = new ArrayList<>();
         for (int r = 0; r < m; ++r) {
-            starts.add(new int[] {r, 0});
+            starts.add(new int[] { r, 0 });
         }
         for (int c = 1; c < n; ++c) {
-            starts.add(new int[] {0, c});
+            starts.add(new int[] { 0, c });
         }
         for (int[] start : starts) {
             Set<Integer> leftAbove = new HashSet<>();

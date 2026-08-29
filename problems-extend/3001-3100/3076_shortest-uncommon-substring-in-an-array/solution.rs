@@ -20,9 +20,7 @@ impl Solution {
             let s = &arr[i];
             let mut best = String::new();
             for length in 1..=s.len() {
-                let candidates: BTreeSet<&str> = (0..=s.len() - length)
-                    .map(|a| &s[a..a + length])
-                    .collect();
+                let candidates: BTreeSet<&str> = (0..=s.len() - length).map(|a| &s[a..a + length]).collect();
                 let mut found = false;
                 for candidate in candidates {
                     if !others.contains(candidate) {

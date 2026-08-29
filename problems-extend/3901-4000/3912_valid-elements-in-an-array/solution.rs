@@ -12,11 +12,7 @@ impl Solution {
         nums.iter()
             .enumerate()
             .filter_map(|(i, &value)| {
-                (i == 0
-                    || i == nums.len() - 1
-                    || value > left_max[i - 1]
-                    || value > right_max[i + 1])
-                    .then_some(value)
+                (i == 0 || i == nums.len() - 1 || value > left_max[i - 1] || value > right_max[i + 1]).then_some(value)
             })
             .collect()
     }

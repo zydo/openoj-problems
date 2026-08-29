@@ -7,8 +7,7 @@ class Solution {
         vector<vector<int>> prefix(m + 1, vector<int>(n + 1, 0));
         for (int i = 0; i < m; ++i)
             for (int j = 0; j < n; ++j)
-                prefix[i + 1][j + 1] =
-                    prefix[i + 1][j] + prefix[i][j + 1] - prefix[i][j] + mat[i][j];
+                prefix[i + 1][j + 1] = prefix[i + 1][j] + prefix[i][j + 1] - prefix[i][j] + mat[i][j];
 
         // Binary search the largest feasible side; area is side squared.
         int lo = 0, hi = min(m, n);
@@ -31,9 +30,7 @@ class Solution {
         int minRow = m + n, minCol = m + n, maxRow = -1, maxCol = -1;
         for (int r = 0; r + k <= m; ++r) {
             for (int c = 0; c + k <= n; ++c) {
-                if (prefix[r + k][c + k] - prefix[r][c + k] - prefix[r + k][c] +
-                        prefix[r][c] ==
-                    k * k) {
+                if (prefix[r + k][c + k] - prefix[r][c + k] - prefix[r + k][c] + prefix[r][c] == k * k) {
                     minRow = min(minRow, r);
                     maxRow = max(maxRow, r);
                     minCol = min(minCol, c);
@@ -41,7 +38,8 @@ class Solution {
                 }
             }
         }
-        if (maxRow < 0) return false;
+        if (maxRow < 0)
+            return false;
         return maxRow - minRow >= k || maxCol - minCol >= k;
     }
 };

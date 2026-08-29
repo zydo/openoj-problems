@@ -37,7 +37,8 @@ class Solution {
         Arrays.fill(dist, -1);
         dist[src] = 0;
         int[] queue = new int[n];
-        int head = 0, tail = 0;
+        int head = 0,
+            tail = 0;
         queue[tail++] = src;
         int far = src;
         while (head < tail) {

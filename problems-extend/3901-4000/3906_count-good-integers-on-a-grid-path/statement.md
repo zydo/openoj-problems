@@ -16,8 +16,8 @@ steps:
 - Starting at the top-left cell (`row = 0`, `column = 0`), apply the 6
   characters of `directions` in order:
 
-  - `'D'` increments the row by 1.
-  - `'R'` increments the column by 1.
+    - `'D'` increments the row by 1.
+    - `'R'` increments the column by 1.
 
 - Record the sequence of digits visited along the path (including the
   starting cell), producing a sequence of length 7.

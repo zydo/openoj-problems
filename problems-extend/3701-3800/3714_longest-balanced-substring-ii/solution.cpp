@@ -25,7 +25,7 @@ class Solution {
                 int z = 3 - x - y;
                 vector<int> first(2 * n + 1, -1);
                 vector<int> stamp(2 * n + 1, -1);
-                stamp[n] = 0;  // difference 0 precedes index 0
+                stamp[n] = 0; // difference 0 precedes index 0
                 first[n] = -1;
                 int version = 0, d = 0;
                 for (int i = 0; i < n; i++) {
@@ -66,8 +66,7 @@ class Solution {
             } else {
                 cc++;
             }
-            long long sig =
-                (long long)(cb - ca + n) * width + (cc - ca + n);
+            long long sig = (long long)(cb - ca + n) * width + (cc - ca + n);
             auto it = sigs.find(sig);
             if (it == sigs.end()) {
                 sigs[sig] = i;

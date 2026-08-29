@@ -29,9 +29,7 @@ class InstanceOfCase {
 // Build the case's declared hierarchy: each entry {name, extends} becomes
 // a fresh constructor whose prototype descends from its base's, so
 // instances gain every method along the declared chain.
-function buildClassTable(
-    classes: { name: string; extends: string | null }[]
-): Map<string, new () => object> {
+function buildClassTable(classes: { name: string; extends: string | null }[]): Map<string, new () => object> {
     const table = new Map<string, new () => object>();
     for (const entry of classes) {
         if (table.has(entry.name)) {
@@ -43,9 +41,7 @@ function buildClassTable(
         }
         function Named(this: any): void {}
         Object.defineProperty(Named, "name", { value: entry.name });
-        Named.prototype = Object.create(
-            base === null ? Object.prototype : base.prototype
-        );
+        Named.prototype = Object.create(base === null ? Object.prototype : base.prototype);
         Named.prototype.describe = function (this: any): string {
             return "instance of " + entry.name;
         };

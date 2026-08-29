@@ -15,8 +15,7 @@ function isThereAPath(grid: number[][]): boolean {
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
             if (i === 0 && j === 0) continue;
-            const reachable = (i > 0 ? cols[j] : 0n) |
-                (j > 0 ? cols[j - 1] : 0n);
+            const reachable = (i > 0 ? cols[j] : 0n) | (j > 0 ? cols[j - 1] : 0n);
             cols[j] = grid[i][j] === 1 ? reachable << 1n : reachable >> 1n;
         }
     }

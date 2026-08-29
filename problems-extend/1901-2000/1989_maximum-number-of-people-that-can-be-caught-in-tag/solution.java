@@ -15,7 +15,9 @@ class Solution {
                 notIt.add(i);
             }
         }
-        int i = 0, j = 0, caught = 0;
+        int i = 0,
+            j = 0,
+            caught = 0;
         while (i < it.size() && j < notIt.size()) {
             int itPos = it.get(i);
             int notPos = notIt.get(j);

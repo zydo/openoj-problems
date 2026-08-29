@@ -17,16 +17,18 @@ class Solution {
             // reachable coordinate (9 * 10^4), so distinct cells never collide.
             blocked.add(obstacle[0] * 200003L + obstacle[1]);
         }
-        int[] dx = {0, 1, 0, -1}; // north, east, south, west
-        int[] dy = {1, 0, -1, 0};
+        int[] dx = { 0, 1, 0, -1 }; // north, east, south, west
+        int[] dy = { 1, 0, -1, 0 };
         int x = 0;
         int y = 0;
         int heading = 0;
         long best = 0;
         for (int command : commands) {
-            if (command == -2) { // turn left
+            if (command == -2) {
+                // turn left
                 heading = (heading + 3) & 3;
-            } else if (command == -1) { // turn right
+            } else if (command == -1) {
+                // turn right
                 heading = (heading + 1) & 3;
             } else {
                 for (int step = 0; step < command; ++step) {

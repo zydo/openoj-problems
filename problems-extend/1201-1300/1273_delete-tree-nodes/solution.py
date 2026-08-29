@@ -2,8 +2,7 @@ from typing import List
 
 
 class Solution:
-    def deleteTreeNodes(self, nodes: int, parent: List[int],
-                        value: List[int]) -> int:
+    def deleteTreeNodes(self, nodes: int, parent: List[int], value: List[int]) -> int:
         # Fold bottom-up: each node hands its parent its subtree sum and
         # the number of kept nodes below it — but only if its own subtree
         # sum survived as nonzero. A zero-sum subtree contributes nothing

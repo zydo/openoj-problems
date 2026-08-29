@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<vector<string>> printTree(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<vector<string>> printTree(TreeNode *root) { throw logic_error("TODO"); }
 };

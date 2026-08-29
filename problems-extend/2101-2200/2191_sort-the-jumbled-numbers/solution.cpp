@@ -3,8 +3,7 @@
 
 class Solution {
   public:
-    std::vector<int> sortJumbled(std::vector<int> &mapping,
-                                 std::vector<int> &nums) {
+    std::vector<int> sortJumbled(std::vector<int> &mapping, std::vector<int> &nums) {
         // Map each number once, then sort decorated pairs (mapped value,
         // original index) so equal keys keep their input order.
         auto mapped = [&mapping](long long value) -> long long {

@@ -6,6 +6,6 @@ class Solution {
         // 1 exists it can never be the last one destroyed. "Contains a
         // 1" is therefore invariant in both directions, and any two
         // strings that agree on it are mutually reachable.
-        return (s.indexOf('1') >= 0) == (target.indexOf('1') >= 0);
+        return s.indexOf('1') >= 0 == target.indexOf('1') >= 0;
     }
 }

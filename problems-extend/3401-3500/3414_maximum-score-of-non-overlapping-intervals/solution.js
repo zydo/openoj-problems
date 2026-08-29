@@ -7,7 +7,9 @@ var maximumWeight = function (intervals) {
     // Sort by right endpoint: every pick set is a chain in this order, and
     // sharing any point (even one boundary) means overlapping, so
     // predecessors must end strictly left of the current left end.
-    const order = intervals.map((_, t) => t).sort((a, b) => intervals[a][1] - intervals[b][1] || intervals[a][0] - intervals[b][0]);
+    const order = intervals
+        .map((_, t) => t)
+        .sort((a, b) => intervals[a][1] - intervals[b][1] || intervals[a][0] - intervals[b][0]);
     const rights = order.map((t) => intervals[t][1]);
 
     const NEG = -(2 ** 62);

@@ -83,11 +83,7 @@ class CacheCase {
                 if (entry.cancelled) {
                     continue;
                 }
-                if (
-                    due === null ||
-                    entry.at < due.at ||
-                    (entry.at === due.at && entry.id < due.id)
-                ) {
+                if (due === null || entry.at < due.at || (entry.at === due.at && entry.id < due.id)) {
                     due = entry;
                 }
             }

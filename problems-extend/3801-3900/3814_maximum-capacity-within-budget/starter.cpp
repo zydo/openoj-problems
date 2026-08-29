@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxCapacity(vector<int>& costs, vector<int>& capacity, int budget) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxCapacity(vector<int> &costs, vector<int> &capacity, int budget) { throw logic_error("TODO"); }
 };

@@ -20,7 +20,12 @@ function minFlips(mat: number[][]): number {
     for (let r = 0; r < m; r++) {
         for (let c = 0; c < n; c++) {
             let mask = 1 << (r * n + c);
-            for (const [dr, dc] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+            for (const [dr, dc] of [
+                [1, 0],
+                [-1, 0],
+                [0, 1],
+                [0, -1],
+            ]) {
                 const nr = r + dr;
                 const nc = c + dc;
                 if (nr >= 0 && nr < m && nc >= 0 && nc < n) {

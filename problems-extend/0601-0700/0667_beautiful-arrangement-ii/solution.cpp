@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     vector<int> constructArray(int n, int k) {
         // The first k+1 slots alternate between the two ends of 1..k+1 —
         // 1, k+1, 2, k, 3, k-1, ... — so their adjacent differences walk

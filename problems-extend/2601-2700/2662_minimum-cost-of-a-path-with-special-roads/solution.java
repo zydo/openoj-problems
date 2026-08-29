@@ -31,8 +31,7 @@ class Solution {
         int[][] roads = new int[specialRoads.length][];
         for (int i = 0; i < specialRoads.length; i++) {
             int[] road = specialRoads[i];
-            roads[i] = new int[] { index.get(key(road[0], road[1])),
-                    index.get(key(road[2], road[3])), road[4] };
+            roads[i] = new int[] { index.get(key(road[0], road[1])), index.get(key(road[2], road[3])), road[4] };
         }
         final int INF = Integer.MAX_VALUE;
         int[] dist = new int[n];
@@ -54,8 +53,10 @@ class Solution {
             used[u] = true;
             for (int v = 0; v < n; v++) {
                 if (!used[v]) {
-                    int walk = dist[u] + Math.abs(points.get(v)[0] - points.get(u)[0])
-                            + Math.abs(points.get(v)[1] - points.get(u)[1]);
+                    int walk =
+                        dist[u] +
+                        Math.abs(points.get(v)[0] - points.get(u)[0]) +
+                        Math.abs(points.get(v)[1] - points.get(u)[1]);
                     if (walk < dist[v]) {
                         dist[v] = walk;
                     }

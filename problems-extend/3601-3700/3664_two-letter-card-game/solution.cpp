@@ -1,11 +1,11 @@
 class Solution {
-public:
-    int score(vector<string>& cards, string x) {
+  public:
+    int score(vector<string> &cards, string x) {
         // A one-sided pool (26 counts, zeros included) plus `helpers`
         // double-x cards: every pair consumes at least one letter card,
         // every pair needs a partner outside the largest class, and only
         // so many pairs fit at all — the tight bound is the smallest.
-        auto bestPairs = [](const int (&counts)[26], int helpers) {
+        auto bestPairs = [](const int(&counts)[26], int helpers) {
             int total = 0;
             int largest = 0;
             for (int count : counts) {
@@ -21,7 +21,7 @@ public:
         int both = 0;
         int firstOnly[26] = {};
         int secondOnly[26] = {};
-        for (const string& card : cards) {
+        for (const string &card : cards) {
             char a = card[0];
             char b = card[1];
             if (a == x[0]) {

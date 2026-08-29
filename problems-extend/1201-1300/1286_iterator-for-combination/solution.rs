@@ -26,7 +26,10 @@ impl CombinationIterator {
             combinations.push(combo);
         }
         combinations.sort();
-        CombinationIterator { combinations, position: 0 }
+        CombinationIterator {
+            combinations,
+            position: 0,
+        }
     }
 
     pub fn next(&mut self) -> String {

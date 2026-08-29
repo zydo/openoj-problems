@@ -3,10 +3,10 @@
 // and the new one in, and returns sum / count — the sum stays an exact
 // integer and only the final step is a division.
 type MovingAverage struct {
-	window  []int
-	total   int
-	head    int
-	count   int
+	window []int
+	total  int
+	head   int
+	count  int
 }
 
 func NewMovingAverageTyped(size int) *MovingAverage {

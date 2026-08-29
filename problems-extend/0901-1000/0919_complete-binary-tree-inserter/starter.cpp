@@ -1,6 +1,6 @@
 class CBTInserter {
   public:
-    CBTInserter(TreeNode* root);
+    CBTInserter(TreeNode *root);
     int insert(int v);
-    TreeNode* get_root();
+    TreeNode *get_root();
 };

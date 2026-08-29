@@ -8,9 +8,7 @@ impl Solution {
         let n = s.len() as i32;
         let ok = |m: i32| -> bool {
             if m == 1 {
-                let alt = (0..s.len())
-                    .filter(|&i| s[i] != b"01"[i % 2])
-                    .count() as i32;
+                let alt = (0..s.len()).filter(|&i| s[i] != b"01"[i % 2]).count() as i32;
                 return alt.min(n - alt) <= num_ops;
             }
             let mut flips = 0;

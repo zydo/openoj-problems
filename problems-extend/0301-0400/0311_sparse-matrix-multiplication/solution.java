@@ -4,7 +4,9 @@ import java.util.List;
 class Solution {
 
     public int[][] multiply(int[][] mat1, int[][] mat2) {
-        int m = mat1.length, k = mat2.length, n = mat2[0].length;
+        int m = mat1.length,
+            k = mat2.length,
+            n = mat2[0].length;
         // For each row of mat2, the (column, value) pairs that are nonzero —
         // the only entries a nonzero mat1 cell can ever pair with.
         List<int[]>[] nonzero2 = new ArrayList[k];

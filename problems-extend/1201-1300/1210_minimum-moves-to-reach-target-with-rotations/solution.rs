@@ -20,24 +20,18 @@ impl Solution {
                     queue.push_back((r, c + 1, 1, moves + 1));
                 }
                 // Slide down: both cells of the new row must be empty.
-                if r + 1 < n && grid[r + 1][c] == 0 && grid[r + 1][c + 1] == 0
-                    && !visited[(r + 1) * n + c * 2 + 1]
-                {
+                if r + 1 < n && grid[r + 1][c] == 0 && grid[r + 1][c + 1] == 0 && !visited[(r + 1) * n + c * 2 + 1] {
                     visited[(r + 1) * n + c * 2 + 1] = true;
                     queue.push_back((r + 1, c, 1, moves + 1));
                 }
                 // Rotate clockwise: the two cells under the snake must be empty.
-                if r + 1 < n && grid[r + 1][c] == 0 && grid[r + 1][c + 1] == 0
-                    && !visited[r * n + c * 2]
-                {
+                if r + 1 < n && grid[r + 1][c] == 0 && grid[r + 1][c + 1] == 0 && !visited[r * n + c * 2] {
                     visited[r * n + c * 2] = true;
                     queue.push_back((r, c, 0, moves + 1));
                 }
             } else {
                 // Slide right: both cells of the new column must be empty.
-                if c + 1 < n && grid[r][c + 1] == 0 && grid[r + 1][c + 1] == 0
-                    && !visited[r * n + (c + 1) * 2]
-                {
+                if c + 1 < n && grid[r][c + 1] == 0 && grid[r + 1][c + 1] == 0 && !visited[r * n + (c + 1) * 2] {
                     visited[r * n + (c + 1) * 2] = true;
                     queue.push_back((r, c + 1, 0, moves + 1));
                 }
@@ -47,9 +41,7 @@ impl Solution {
                     queue.push_back((r + 1, c, 0, moves + 1));
                 }
                 // Rotate counterclockwise: the two cells to the right must be empty.
-                if c + 1 < n && grid[r][c + 1] == 0 && grid[r + 1][c + 1] == 0
-                    && !visited[r * n + c * 2 + 1]
-                {
+                if c + 1 < n && grid[r][c + 1] == 0 && grid[r + 1][c + 1] == 0 && !visited[r * n + c * 2 + 1] {
                     visited[r * n + c * 2 + 1] = true;
                     queue.push_back((r, c, 1, moves + 1));
                 }

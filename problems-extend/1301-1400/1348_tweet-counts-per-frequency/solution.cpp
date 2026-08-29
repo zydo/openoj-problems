@@ -14,7 +14,8 @@ class TweetCounts {
         list.insert(at, time);
     }
 
-    std::vector<int> getTweetCountsPerFrequency(std::string freq, std::string tweetName, long long startTime, long long endTime) {
+    std::vector<int> getTweetCountsPerFrequency(std::string freq, std::string tweetName, long long startTime,
+                                                long long endTime) {
         long long chunk = chunkOf(freq);
         auto it = times_.find(tweetName);
         const std::vector<long long> empty;
@@ -22,7 +23,8 @@ class TweetCounts {
         std::vector<int> buckets;
         for (long long lo = startTime; lo <= endTime; lo += chunk) {
             long long hi = std::min(lo + chunk - 1, endTime);
-            buckets.push_back((int)(std::upper_bound(list.begin(), list.end(), hi) - std::upper_bound(list.begin(), list.end(), lo - 1)));
+            buckets.push_back((int)(std::upper_bound(list.begin(), list.end(), hi) -
+                                    std::upper_bound(list.begin(), list.end(), lo - 1)));
         }
         return buckets;
     }
@@ -31,8 +33,10 @@ class TweetCounts {
     std::unordered_map<std::string, std::vector<long long>> times_;
 
     static long long chunkOf(const std::string &freq) {
-        if (freq == "minute") return 60;
-        if (freq == "hour") return 3600;
+        if (freq == "minute")
+            return 60;
+        if (freq == "hour")
+            return 3600;
         return 86400;
     }
 };

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool judgeCircle(string moves) {
         // Vertical and horizontal movement never interact, so the plane
         // splits into two independent lines: the U/D balance and the L/R

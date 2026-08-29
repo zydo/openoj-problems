@@ -7,7 +7,7 @@ class Solution {
         // stay beautiful among themselves, and an odd-plus-even average is
         // odd, never twice a middle value — until at least n values exist;
         // values above n are then dropped in one sweep.
-        int[] current = {1};
+        int[] current = { 1 };
         while (current.length < n) {
             int[] doubled = new int[current.length * 2];
             for (int i = 0; i < current.length; i++) {

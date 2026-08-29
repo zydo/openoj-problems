@@ -3,9 +3,7 @@ function maxWalls(robots: number[], distance: number[], walls: number[]): number
     // positions once: every reachable set below is then counted with two
     // binary searches instead of a scan. The numeric comparators are
     // load-bearing — the default sort is lexicographic.
-    const bots = robots
-        .map((pos, i): [number, number] => [pos, distance[i]])
-        .sort((a, b) => a[0] - b[0]);
+    const bots = robots.map((pos, i): [number, number] => [pos, distance[i]]).sort((a, b) => a[0] - b[0]);
     walls.sort((a, b) => a - b);
     // First index whose wall is >= value.
     const lowerBound = (arr: number[], value: number): number => {
@@ -34,9 +32,7 @@ function maxWalls(robots: number[], distance: number[], walls: number[]): number
         i === 0 ? bots[i][0] - bots[i][1] : Math.max(bots[i][0] - bots[i][1], bots[i - 1][0] + 1);
     // Firing right the bullet stops at the next robot.
     const rightHi = (i: number): number =>
-        i + 1 === bots.length
-            ? bots[i][0] + bots[i][1]
-            : Math.min(bots[i][0] + bots[i][1], bots[i + 1][0] - 1);
+        i + 1 === bots.length ? bots[i][0] + bots[i][1] : Math.min(bots[i][0] + bots[i][1], bots[i + 1][0] - 1);
     // prevLeft / prevRight: best totals for the robots already decided when
     // the last of them fired left / right.
     let prevLeft = count(leftLo(0), bots[0][0]);
@@ -48,10 +44,7 @@ function maxWalls(robots: number[], distance: number[], walls: number[]): number
         // Facing shots share the gap: when this robot fires left and the
         // previous one fired right, the walls both bullets reach were
         // already counted and must not count twice.
-        const shared = count(
-            leftLo(i),
-            Math.min(bots[i - 1][0] + bots[i - 1][1], pos - 1)
-        );
+        const shared = count(leftLo(i), Math.min(bots[i - 1][0] + bots[i - 1][1], pos - 1));
         const best = Math.max(prevLeft, prevRight);
         prevLeft = Math.max(prevLeft + hereLeft, prevRight + hereLeft - shared);
         // A rightward shot can never overlap anything already decided.

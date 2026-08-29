@@ -11,7 +11,8 @@ class Solution {
             for (int dy = -1; dy <= 1; ++dy) {
                 if (dx == 0 && dy == 0) continue;
                 // First queen on each ray attacks; she also blocks the rest.
-                int x = king[0] + dx, y = king[1] + dy;
+                int x = king[0] + dx,
+                    y = king[1] + dy;
                 while (x >= 0 && x < 8 && y >= 0 && y < 8) {
                     if (board[x][y]) {
                         found.add(new int[] { x, y });

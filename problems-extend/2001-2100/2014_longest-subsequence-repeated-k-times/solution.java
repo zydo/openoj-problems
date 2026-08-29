@@ -22,8 +22,9 @@ class Solution {
     }
 
     private void search(String candidate) {
-        if (candidate.length() > best.length()
-                || (candidate.length() == best.length() && candidate.compareTo(best) > 0)) {
+        if (
+            candidate.length() > best.length() || (candidate.length() == best.length() && candidate.compareTo(best) > 0)
+        ) {
             best = candidate;
         }
 

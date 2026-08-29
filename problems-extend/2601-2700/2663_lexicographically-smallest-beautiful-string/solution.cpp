@@ -21,7 +21,8 @@ class Solution {
                 }
             }
         }
-        if (pivot == -1) return "";
+        if (pivot == -1)
+            return "";
         // Rebuild everything after the pivot with the smallest safe letter,
         // which repeats as soon as blocking distance passes ("abcabc...").
         for (int j = pivot + 1; j < n; ++j) {

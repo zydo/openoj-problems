@@ -5,7 +5,10 @@ FROM
   Student s
 WHERE
   s.student_id IN (
-    SELECT DISTINCT student_id FROM Exam
+    SELECT DISTINCT
+      student_id
+    FROM
+      Exam
   )
   AND s.student_id NOT IN (
     SELECT

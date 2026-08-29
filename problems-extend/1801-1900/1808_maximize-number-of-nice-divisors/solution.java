@@ -35,9 +35,9 @@ class Solution {
         long base = 3;
         while (power > 0) {
             if ((power & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             power >>= 1;
         }
         return (int) result;

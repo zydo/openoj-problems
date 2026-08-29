@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minimumDeletions(vector<int>& nums) {
+  public:
+    int minimumDeletions(vector<int> &nums) {
         int minimumIndex = 0;
         int maximumIndex = 0;
         for (int index = 1; index < static_cast<int>(nums.size()); ++index) {

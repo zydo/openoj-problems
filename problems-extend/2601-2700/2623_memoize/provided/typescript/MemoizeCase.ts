@@ -38,13 +38,11 @@ class MemoizeCase {
             return (a: number, b: number): number => a + b;
         }
         if (this.fnName === "fib") {
-            const fib = (n: number): number =>
-                n <= 1 ? 1 : fib(n - 1) + fib(n - 2);
+            const fib = (n: number): number => (n <= 1 ? 1 : fib(n - 1) + fib(n - 2));
             return fib as MemoTarget;
         }
         if (this.fnName === "factorial") {
-            const factorial = (n: number): number =>
-                n <= 1 ? 1 : n * factorial(n - 1);
+            const factorial = (n: number): number => (n <= 1 ? 1 : n * factorial(n - 1));
             return factorial as MemoTarget;
         }
         throw new Error("Unknown fnName: " + this.fnName);
@@ -61,9 +59,7 @@ class MemoizeCase {
             calls += 1;
             return target(...args);
         };
-        const wrapped = (
-            memoizeFn as (target: MemoTarget) => MemoTarget
-        )(counting);
+        const wrapped = (memoizeFn as (target: MemoTarget) => MemoTarget)(counting);
         if (typeof wrapped !== "function") {
             throw new Error("memoize must return a function");
         }

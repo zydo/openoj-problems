@@ -58,8 +58,11 @@ impl CBTInserter {
         if self.values.is_empty() {
             return None;
         }
-        let mut shells: Vec<Option<Box<TreeNode>>> =
-            self.values.iter().map(|&value| Some(Box::new(TreeNode::new(value)))).collect();
+        let mut shells: Vec<Option<Box<TreeNode>>> = self
+            .values
+            .iter()
+            .map(|&value| Some(Box::new(TreeNode::new(value))))
+            .collect();
         for index in (1..shells.len()).rev() {
             let child = shells[index].take().unwrap();
             if index % 2 == 1 {

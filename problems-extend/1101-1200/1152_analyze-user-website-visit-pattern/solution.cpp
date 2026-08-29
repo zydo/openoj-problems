@@ -9,7 +9,8 @@ class Solution {
         for (auto &[user, visits] : per_user) {
             sort(visits.begin(), visits.end());
             vector<string> sites;
-            for (auto &entry : visits) sites.push_back(website[entry.second]);
+            for (auto &entry : visits)
+                sites.push_back(website[entry.second]);
             for (int i = 0; i < (int)sites.size(); ++i) {
                 for (int j = i + 1; j < (int)sites.size(); ++j) {
                     for (int k = j + 1; k < (int)sites.size(); ++k)

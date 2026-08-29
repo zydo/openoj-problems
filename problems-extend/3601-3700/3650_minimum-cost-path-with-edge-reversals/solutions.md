@@ -5,7 +5,7 @@
 A reversal is fully described by the edge it acts on: standing at node `v`,
 flipping the switch on an incoming edge `u -> v` produces exactly one move,
 `v -> u`, priced `2 * w`. So every input edge `(u, v, w)` contributes a second
-arc `(v, u, 2 * w)` to the search graph, and traversing that arc *is* the
+arc `(v, u, 2 * w)` to the search graph, and traversing that arc _is_ the
 reversal — no per-node switch bookkeeping is needed. The omission is justified
 by the weights: every arc costs at least 1, so an optimal trip never revisits
 a node, enters each node exactly once, and can therefore flip at most one

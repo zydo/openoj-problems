@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int numPrimeArrangements(int n) {
         const long long MOD = 1000000007LL;
 

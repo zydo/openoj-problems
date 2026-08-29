@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 class Solution {
+
     public long countPrefixSuffixPairs(String[] words) {
         // Trie over paired characters (first+last, second+second-last, ...).
         // Node counters stay below 10^5, but the total can reach ~5 * 10^9,
@@ -16,9 +17,7 @@ class Solution {
             int size = word.length();
             int node = 0;
             for (int j = 0; j < size; ++j) {
-                int key = node * 676
-                    + (word.charAt(j) - 'a') * 26
-                    + (word.charAt(size - 1 - j) - 'a');
+                int key = node * 676 + (word.charAt(j) - 'a') * 26 + (word.charAt(size - 1 - j) - 'a');
                 Integer next = edges.get(key);
                 if (next == null) {
                     next = counts.size();

@@ -9,7 +9,7 @@ from the total. A subarray sum is a difference of two prefix sums, so the
 search becomes: for each running prefix remainder `current`, has an
 earlier prefix remainder equal to `(current - target) mod p` been seen
 before, and how close is the closest one? One pass keeps a map from each
-remainder to the *most recent* index it occurred at — unlike a "does a
+remainder to the _most recent_ index it occurred at — unlike a "does a
 multiple exist" question, here the goal is the shortest span, so the
 latest occurrence (not the first) gives the smallest gap.
 

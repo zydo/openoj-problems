@@ -50,6 +50,9 @@ impl Solution {
             return vec![-1];
         }
         // A final ascending scan emits the chosen indices in order.
-        (0..n - 1).filter(|&index| take[index]).map(|index| index as i32).collect()
+        (0..n - 1)
+            .filter(|&index| take[index])
+            .map(|index| index as i32)
+            .collect()
     }
 }

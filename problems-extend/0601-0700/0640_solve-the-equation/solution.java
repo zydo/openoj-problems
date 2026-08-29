@@ -15,11 +15,12 @@ class Solution {
         if (a == 0) {
             return b == 0 ? "Infinite solutions" : "No solution";
         }
-        return "x=" + (b / a);
+        return "x=" + b / a;
     }
 
     private long[] parse(String side, int from, int to) {
-        long a = 0, b = 0;
+        long a = 0,
+            b = 0;
         int i = from;
         while (i < to) {
             long sign = 1;
@@ -42,6 +43,6 @@ class Solution {
                 b += sign * value;
             }
         }
-        return new long[] {a, b};
+        return new long[] { a, b };
     }
 }

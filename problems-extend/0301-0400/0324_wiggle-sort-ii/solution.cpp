@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> wiggleSort(vector<int>& nums) {
+    vector<int> wiggleSort(vector<int> &nums) {
         // Sort a copy, then fill the even slots from the back of the lower
         // half and the odd slots from the back of the upper half: reversing
         // each half keeps median duplicates as far apart as possible.

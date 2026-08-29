@@ -17,9 +17,5 @@ var detectCapitalUse = function (word) {
     // is the all-caps word, and a lone capital is legal only when it
     // leads the word.
     const first = word.charCodeAt(0);
-    return (
-        capitals === 0 ||
-        capitals === word.length ||
-        (capitals === 1 && first >= 65 && first <= 90)
-    );
+    return capitals === 0 || capitals === word.length || (capitals === 1 && first >= 65 && first <= 90);
 };

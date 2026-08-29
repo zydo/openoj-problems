@@ -1,8 +1,8 @@
 class Solution {
-public:
-    int specialNodes(int n, vector<vector<int>>& edges, int x, int y, int z) {
+  public:
+    int specialNodes(int n, vector<vector<int>> &edges, int x, int y, int z) {
         vector<vector<int>> adjacency(n);
-        for (const auto& edge : edges) {
+        for (const auto &edge : edges) {
             adjacency[edge[0]].push_back(edge[1]);
             adjacency[edge[1]].push_back(edge[0]);
         }
@@ -41,11 +41,11 @@ public:
         return answer;
     }
 
-private:
+  private:
     // Every tree edge has unit weight, so a breadth-first search from a
     // target reaches nodes in increasing distance order. The explicit
     // frontier vector keeps a 10^5-node path off the call stack.
-    vector<int> distances(const vector<vector<int>>& adjacency, int source, int n) {
+    vector<int> distances(const vector<vector<int>> &adjacency, int source, int n) {
         vector<int> dist(n, -1);
         dist[source] = 0;
         vector<int> frontier;

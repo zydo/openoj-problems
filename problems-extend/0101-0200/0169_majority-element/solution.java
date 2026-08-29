@@ -8,7 +8,7 @@ class Solution {
         int count = 0;
         for (int value : nums) {
             if (count == 0) candidate = value;
-            count += (value == candidate) ? 1 : -1;
+            count += value == candidate ? 1 : -1;
         }
         // Every cancellation removes one majority and one minority element, and
         // the majority holds more than half the array, so it always survives.

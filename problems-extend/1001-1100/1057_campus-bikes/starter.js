@@ -3,6 +3,6 @@
  * @param {number[][]} bikes
  * @return {number[]}
  */
-var assignBikes = function(workers, bikes) {
+var assignBikes = function (workers, bikes) {
     throw new Error("TODO");
 };

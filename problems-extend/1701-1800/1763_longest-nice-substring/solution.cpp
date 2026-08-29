@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string longestNiceSubstring(string s) {
         // A character missing its case-partner anywhere in the string
         // can never sit inside a nice window: split on every offender

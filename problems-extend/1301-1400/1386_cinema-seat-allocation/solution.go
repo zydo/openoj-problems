@@ -1,6 +1,6 @@
 func maxNumberOfFamilies(n int, reservedSeats [][]int) int {
 	left := 0b0000011110  // seats 2-5
-	right := 0b0111100000  // seats 6-9
+	right := 0b0111100000 // seats 6-9
 	middle := 0b0001111000
 	masks := make(map[int]int)
 	for _, seat := range reservedSeats {

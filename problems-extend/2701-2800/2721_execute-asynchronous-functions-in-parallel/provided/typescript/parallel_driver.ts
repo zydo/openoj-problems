@@ -13,8 +13,7 @@
 // outcome — one resolved array or one first-rejection reason — is.
 
 type SettleSpec =
-    | { kind: "fulfilled"; value: unknown; delay: number }
-    | { kind: "rejected"; reason: unknown; delay: number };
+    { kind: "fulfilled"; value: unknown; delay: number } | { kind: "rejected"; reason: unknown; delay: number };
 
 type FnPromise = () => Promise<unknown>;
 
@@ -30,8 +29,7 @@ class ParallelClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -71,18 +69,16 @@ class ParallelDriver {
         // handling degrades to a wrong answer instead of an
         // unhandledRejection killing the process; chaining it instead would
         // swallow rejections and degrade every one to a fulfillment.
-        this.functions = (functions as SettleSpec[]).map(
-            (spec): FnPromise => () => {
-                const promise = new Promise<unknown>((resolve, reject) => {
-                    this.clock.schedule(spec.delay, () => {
-                        if (spec.kind === "fulfilled") resolve(spec.value);
-                        else reject(spec.reason);
-                    });
+        this.functions = (functions as SettleSpec[]).map((spec): FnPromise => () => {
+            const promise = new Promise<unknown>((resolve, reject) => {
+                this.clock.schedule(spec.delay, () => {
+                    if (spec.kind === "fulfilled") resolve(spec.value);
+                    else reject(spec.reason);
                 });
-                void promise.catch(() => undefined);
-                return promise;
-            },
-        );
+            });
+            void promise.catch(() => undefined);
+            return promise;
+        });
     }
 
     // Hand this case's functions to the submission's promiseAll, pump every

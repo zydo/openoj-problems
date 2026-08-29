@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int countServers(vector<vector<int>>& grid) {
+    int countServers(vector<vector<int>> &grid) {
         // A server communicates iff its row or its column holds another
         // server — any communicating partner must share one of those lines,
         // so tallies per line settle it without searching the pair graph.

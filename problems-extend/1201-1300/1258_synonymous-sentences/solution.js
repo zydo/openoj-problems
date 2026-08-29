@@ -34,9 +34,7 @@ var generateSentences = function (synonyms, text) {
     // Expand position by position.
     let sentences = [""];
     for (const word of text.split(" ")) {
-        const options = parent.has(word)
-            ? groups.get(find(word))
-            : [word];
+        const options = parent.has(word) ? groups.get(find(word)) : [word];
         sentences = sentences.flatMap((prefix) => options.map((option) => prefix + " " + option));
     }
     return sentences.map((s) => s.slice(1)).sort();

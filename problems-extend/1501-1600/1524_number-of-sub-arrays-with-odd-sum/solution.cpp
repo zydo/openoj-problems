@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int numOfSubarrays(vector<int>& arr) {
+    int numOfSubarrays(vector<int> &arr) {
         // `even`/`odd` count prefixes seen so far (including the empty
         // prefix before the array) with even/odd parity; a new odd-parity
         // prefix pairs with every earlier even prefix to make an odd-sum

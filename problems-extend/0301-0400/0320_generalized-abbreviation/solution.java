@@ -13,8 +13,7 @@ class Solution {
         return results.toArray(new String[0]);
     }
 
-    private void walk(
-        String word, int pos, String prefix, int count, List<String> results) {
+    private void walk(String word, int pos, String prefix, int count, List<String> results) {
         if (pos == word.length()) {
             results.add(count > 0 ? prefix + count : prefix);
             return;

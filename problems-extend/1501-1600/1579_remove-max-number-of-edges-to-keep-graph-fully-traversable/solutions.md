@@ -13,7 +13,7 @@ person still can't reach.
 
 The code runs two disjoint-set-union structures, one for Alice and one for
 Bob, both starting from `n` singleton components. It walks `edges` once for
-Type 3 edges, unioning `u` and `v` in *both* structures and counting the
+Type 3 edges, unioning `u` and `v` in _both_ structures and counting the
 edge as used whenever it merges a component in either one. It then walks
 `edges` a second time for Type 1 edges (union only in Alice's structure) and
 Type 2 edges (union only in Bob's), again counting each edge that performs a

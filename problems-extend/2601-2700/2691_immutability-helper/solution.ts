@@ -22,17 +22,11 @@ class ImmutableHelper {
                 const proxy = new Proxy(node, {
                     get(target: any, key: string | symbol) {
                         const shadow = shadows.get(target);
-                        if (
-                            shadow !== undefined &&
-                            typeof key === "string" &&
-                            key in shadow
-                        ) {
+                        if (shadow !== undefined && typeof key === "string" && key in shadow) {
                             return shadow[key]; // a value written earlier wins
                         }
                         const value = target[key];
-                        return value !== null && typeof value === "object"
-                            ? proxyFor(value)
-                            : value;
+                        return value !== null && typeof value === "object" ? proxyFor(value) : value;
                     },
                     set(target: any, key: string | symbol, value: any) {
                         let shadow = shadows.get(target);

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int longestSubarray(vector<int>& nums) {
+    int longestSubarray(vector<int> &nums) {
         // One sweep carrying a run counter: any adjacent pair is a valid
         // Fibonacci array, so runs start at length 2; each later element
         // extends the run when it equals the sum of the two before it and

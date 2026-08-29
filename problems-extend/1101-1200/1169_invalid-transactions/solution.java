@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Solution {
+
     public List<String> invalidTransactions(String[] transactions) {
         int n = transactions.length;
         String[][] parsed = new String[n][];
@@ -18,12 +19,10 @@ class Solution {
                 continue;
             }
             for (int j = 0; j < n; j++) {
-                if (i == j || !parsed[j][0].equals(parsed[i][0])
-                        || parsed[j][3].equals(parsed[i][3])) {
+                if (i == j || !parsed[j][0].equals(parsed[i][0]) || parsed[j][3].equals(parsed[i][3])) {
                     continue;
                 }
-                if (Math.abs(Integer.parseInt(parsed[i][1])
-                        - Integer.parseInt(parsed[j][1])) <= 60) {
+                if (Math.abs(Integer.parseInt(parsed[i][1]) - Integer.parseInt(parsed[j][1])) <= 60) {
                     flags[i] = true;
                     break;
                 }

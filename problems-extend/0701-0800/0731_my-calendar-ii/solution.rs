@@ -11,7 +11,10 @@ pub struct MyCalendarTwo {
 
 impl MyCalendarTwo {
     pub fn new() -> Self {
-        MyCalendarTwo { singles: Vec::new(), doubles: Vec::new() }
+        MyCalendarTwo {
+            singles: Vec::new(),
+            doubles: Vec::new(),
+        }
     }
 
     pub fn book(&mut self, start: i32, end: i32) -> bool {

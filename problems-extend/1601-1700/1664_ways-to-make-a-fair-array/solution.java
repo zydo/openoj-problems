@@ -7,7 +7,10 @@ class Solution {
         // plus the suffix's odd sum, and vice versa for odd. Four running
         // totals (even/odd sums of the visited prefix and of the
         // untouched suffix) test each candidate removal in O(1).
-        long leftEven = 0, leftOdd = 0, rightEven = 0, rightOdd = 0;
+        long leftEven = 0,
+            leftOdd = 0,
+            rightEven = 0,
+            rightOdd = 0;
         for (int i = 0; i < nums.length; i++) {
             if (i % 2 == 0) {
                 rightEven += nums[i];

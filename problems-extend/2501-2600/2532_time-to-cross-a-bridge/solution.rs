@@ -34,9 +34,9 @@ impl Solution {
                 let i = right.pop().unwrap().1 as usize;
                 cur += time[i][2];
                 delivered += 1;
-                ans = ans.max(cur);     // box reaches the left bank here
+                ans = ans.max(cur); // box reaches the left bank here
                 if delivered == n {
-                    break;              // the final put never delays anything
+                    break; // the final put never delays anything
                 }
                 pending.push(Reverse((cur + time[i][3], 0, i)));
             } else if !left.is_empty() && sent < n {

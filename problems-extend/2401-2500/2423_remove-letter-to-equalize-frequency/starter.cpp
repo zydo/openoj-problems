@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool equalFrequency(string word) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool equalFrequency(string word) { throw logic_error("TODO"); }
 };

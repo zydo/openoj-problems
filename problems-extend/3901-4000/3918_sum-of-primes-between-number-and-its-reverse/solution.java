@@ -21,7 +21,7 @@ class Solution {
         int reverse = 0;
         int remaining = n;
         while (remaining > 0) {
-            reverse = reverse * 10 + remaining % 10;
+            reverse = reverse * 10 + (remaining % 10);
             remaining /= 10;
         }
 

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool checkTwoChessboards(string coordinate1, string coordinate2) {
         // A square's color follows the parity of column index plus row
         // number; character-code offsets are even, so raw codes keep it.

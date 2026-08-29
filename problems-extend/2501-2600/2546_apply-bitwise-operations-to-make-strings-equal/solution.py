@@ -9,4 +9,4 @@ class Solution:
         # cell consumes two ones and leaves a third value of 1 behind.
         # So "contains a 1" is invariant in both directions, and any two
         # strings that agree on it are mutually reachable.
-        return ('1' in s) == ('1' in target)
+        return ("1" in s) == ("1" in target)

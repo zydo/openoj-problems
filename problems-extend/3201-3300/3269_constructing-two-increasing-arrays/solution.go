@@ -54,7 +54,7 @@ func minLargest(nums1 []int, nums2 []int) int {
 			cur0[j] = a
 			best := cur0[j-1] + 2
 			if x != y {
-				best = cur0[j - 1] + 1
+				best = cur0[j-1] + 1
 			}
 			if j >= 2 {
 				cand := cur1[j-1] + 2

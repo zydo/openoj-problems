@@ -1,16 +1,15 @@
 function findCrossingTime(n: number, k: number, time: number[][]): number {
     // Priority is static per worker: least efficient = larger left+right,
     // ties to the larger index. Encoded as min-key (-eff, -i).
-    const lessKey = (a: number[], b: number[]) =>
-        a[0] < b[0] || (a[0] === b[0] && a[1] < b[1]);
+    const lessKey = (a: number[], b: number[]) => a[0] < b[0] || (a[0] === b[0] && a[1] < b[1]);
     const lessReady = (a: number[], b: number[]) => a[0] < b[0];
     const left: number[][] = [];
     for (let i = 0; i < k; i++) {
         pushHeap(left, [-(time[i][0] + time[i][2]), -i], lessKey);
     }
-    const right: number[][] = [];   // boxed workers waiting on the right bank
+    const right: number[][] = []; // boxed workers waiting on the right bank
     const pending: number[][] = []; // [readyTime, join-side 1=right 0=left, i]
-    let cur = 0;        // instant the bridge becomes free again
+    let cur = 0; // instant the bridge becomes free again
     let sent = 0;
     let delivered = 0;
     let ans = 0;
@@ -25,7 +24,7 @@ function findCrossingTime(n: number, k: number, time: number[][]): number {
             const i = -popHeap(right, lessKey)[1];
             cur += time[i][2];
             delivered++;
-            if (cur > ans) ans = cur;   // the box reaches the left bank here
+            if (cur > ans) ans = cur; // the box reaches the left bank here
             if (delivered === n) break; // the final put never delays anything
             pushHeap(pending, [cur + time[i][3], 0, i], lessReady);
         } else if (left.length > 0 && sent < n) {

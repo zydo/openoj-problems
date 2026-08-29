@@ -26,7 +26,7 @@ class Solution {
         }
         int complete = 0;
         for (int v = 0; v < n; v++) {
-            if (find(parent, v) == v && edgeCount[v] == size[v] * (size[v] - 1) / 2) {
+            if (find(parent, v) == v && edgeCount[v] == (size[v] * (size[v] - 1)) / 2) {
                 complete++;
             }
         }

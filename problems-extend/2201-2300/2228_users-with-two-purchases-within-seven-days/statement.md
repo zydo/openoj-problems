@@ -4,11 +4,11 @@
 
 Table: `Purchases`
 
-| Column Name  | Type |
-| ------------ | ---- |
-| purchase_id  | int  |
-| user_id      | int  |
-| purchase_date| date |
+| Column Name   | Type |
+| ------------- | ---- |
+| purchase_id   | int  |
+| user_id       | int  |
+| purchase_date | date |
 
 purchase_id contains unique values.
 This table contains logs of the dates that users purchased from a certain

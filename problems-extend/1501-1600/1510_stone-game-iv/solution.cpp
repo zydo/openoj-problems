@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool winnerSquareGame(int n) {
         // wins[i] is true exactly when the player to move, facing a pile of
         // i stones, can force a win with optimal play from both sides.

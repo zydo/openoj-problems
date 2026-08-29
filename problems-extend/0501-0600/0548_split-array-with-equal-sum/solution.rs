@@ -22,8 +22,7 @@ impl Solution {
                 }
             }
             for k in j + 2..n - 1 {
-                if prefix[k] - prefix[j + 1] == prefix[n] - prefix[k + 1]
-                    && seen.contains(&(prefix[k] - prefix[j + 1]))
+                if prefix[k] - prefix[j + 1] == prefix[n] - prefix[k + 1] && seen.contains(&(prefix[k] - prefix[j + 1]))
                 {
                     return true;
                 }

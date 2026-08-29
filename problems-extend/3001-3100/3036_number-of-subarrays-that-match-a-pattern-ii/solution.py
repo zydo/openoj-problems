@@ -9,10 +9,7 @@ class Solution:
         # starting at i matches iff pattern occurs in s at offset i.
         # Counting windows becomes substring search, linear with the KMP
         # failure function.
-        signs = [
-            (later > earlier) - (later < earlier)
-            for earlier, later in zip(nums, nums[1:])
-        ]
+        signs = [(later > earlier) - (later < earlier) for earlier, later in zip(nums, nums[1:])]
         m = len(pattern)
         # failure[k]: longest proper prefix of pattern that is also a
         # suffix of pattern[:k + 1].

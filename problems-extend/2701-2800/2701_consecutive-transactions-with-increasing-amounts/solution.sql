@@ -26,7 +26,7 @@ WITH
       SUM(
         CASE
           WHEN transaction_date = date(prev_date, '+1 day')
-            AND amount > prev_amount THEN 0
+          AND amount > prev_amount THEN 0
           ELSE 1
         END
       ) OVER (

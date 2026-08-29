@@ -8,6 +8,7 @@ class AllOne {
     // One count value and the keys currently held at it, threaded into the
     // doubly-linked bucket list kept in ascending count order.
     private static final class Bucket {
+
         final int count;
         final Set<String> keys = new HashSet<>();
         Bucket prev;
@@ -59,11 +60,11 @@ class AllOne {
 
     public void inc(String key) {
         Bucket old = keyBucket.get(key);
-        Bucket anchor = (old == null) ? head : old;
-        int count = (old == null) ? 1 : old.count + 1;
+        Bucket anchor = old == null ? head : old;
+        int count = old == null ? 1 : old.count + 1;
         // The needed count is exactly one past the anchor's, so only its
         // immediate successor can already hold it.
-        Bucket bucket = (anchor.next.count == count) ? anchor.next : insertAfter(anchor, count);
+        Bucket bucket = anchor.next.count == count ? anchor.next : insertAfter(anchor, count);
         bucket.keys.add(key);
         keyBucket.put(key, bucket);
         if (old != null) {
@@ -78,7 +79,7 @@ class AllOne {
         Bucket old = keyBucket.remove(key); // the statement guarantees presence
         if (old.count > 1) {
             int count = old.count - 1;
-            Bucket bucket = (old.prev.count == count) ? old.prev : insertAfter(old.prev, count);
+            Bucket bucket = old.prev.count == count ? old.prev : insertAfter(old.prev, count);
             bucket.keys.add(key);
             keyBucket.put(key, bucket);
         }
@@ -90,11 +91,11 @@ class AllOne {
 
     public String getMaxKey() {
         Bucket bucket = tail.prev;
-        return (bucket == head) ? "" : pinned(bucket);
+        return bucket == head ? "" : pinned(bucket);
     }
 
     public String getMinKey() {
         Bucket bucket = head.next;
-        return (bucket == tail) ? "" : pinned(bucket);
+        return bucket == tail ? "" : pinned(bucket);
     }
 }

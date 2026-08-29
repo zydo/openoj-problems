@@ -8,7 +8,8 @@ class Solution {
     int minOperations(vector<int> &nums) {
         int n = nums.size();
         int ones = count(nums.begin(), nums.end(), 1);
-        if (ones > 0) return n - ones;
+        if (ones > 0)
+            return n - ones;
         int best = n + 1;
         for (int i = 0; i < n; ++i) {
             int g = 0;

@@ -5,6 +5,7 @@ class Solution {
         java.util.Map<String, String> parent = new java.util.HashMap<>();
 
         class DSU {
+
             String find(String x) {
                 parent.putIfAbsent(x, x);
                 while (!parent.get(x).equals(x)) {
@@ -31,8 +32,9 @@ class Solution {
         java.util.List<String> sentences = new java.util.ArrayList<>();
         sentences.add("");
         for (String word : text.split(" ")) {
-            java.util.List<String> options =
-                parent.containsKey(word) ? groups.get(dsu.find(word)) : java.util.List.of(word);
+            java.util.List<String> options = parent.containsKey(word)
+                ? groups.get(dsu.find(word))
+                : java.util.List.of(word);
             java.util.List<String> next = new java.util.ArrayList<>();
             for (String prefix : sentences) {
                 for (String option : options) {

@@ -30,7 +30,8 @@ fn walk(board: &mut [Vec<String>], word: &[u8], row: usize, col: usize, index: u
     for (delta_row, delta_col) in [(0i64, -1i64), (0, 1), (-1, 0), (1, 0)] {
         let next_row = row as i64 + delta_row;
         let next_col = col as i64 + delta_col;
-        let inside = 0 <= next_row && next_row < board.len() as i64 && 0 <= next_col && next_col < board[0].len() as i64;
+        let inside =
+            0 <= next_row && next_row < board.len() as i64 && 0 <= next_col && next_col < board[0].len() as i64;
         if inside && walk(board, word, next_row as usize, next_col as usize, index + 1) {
             found = true;
             break;

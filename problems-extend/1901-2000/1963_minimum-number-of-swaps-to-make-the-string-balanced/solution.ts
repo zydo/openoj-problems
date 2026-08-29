@@ -6,7 +6,7 @@ function minSwaps(s: string): number {
     let balance = 0;
     let swaps = 0;
     for (const c of s) {
-        if (c === '[') balance++;
+        if (c === "[") balance++;
         else balance--;
         if (balance < 0) {
             swaps++;

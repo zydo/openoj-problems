@@ -12,7 +12,11 @@ impl Solution {
         if sum1 == sum2 {
             return 0;
         }
-        let (big, small) = if sum1 > sum2 { (&nums1, &nums2) } else { (&nums2, &nums1) };
+        let (big, small) = if sum1 > sum2 {
+            (&nums1, &nums2)
+        } else {
+            (&nums2, &nums1)
+        };
         let mut gap = (sum1 - sum2).abs();
         let mut gains = [0i32; 6];
         for &v in big {

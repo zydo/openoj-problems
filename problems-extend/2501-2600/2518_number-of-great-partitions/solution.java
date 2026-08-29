@@ -16,15 +16,14 @@ class Solution {
         long[] ways = new long[k];
         ways[0] = 1;
         for (int value : nums) {
-            for (int s = k - 1; s >= value; --s)
-                ways[s] = (ways[s] + ways[s - value]) % MOD;
+            for (int s = k - 1; s >= value; --s) ways[s] = (ways[s] + ways[s - value]) % MOD;
         }
         // Fewer than 1000 rows below the modulus: summing them is safe.
         long below = 0;
         for (long count : ways) below += count;
         below %= MOD;
         long power = 1;
-        for (int i = 0; i < nums.length; ++i) power = power * 2 % MOD;
-        return (int) ((power - 2 * below % MOD + MOD) % MOD);
+        for (int i = 0; i < nums.length; ++i) power = (power * 2) % MOD;
+        return (int) ((power - ((2 * below) % MOD) + MOD) % MOD);
     }
 }

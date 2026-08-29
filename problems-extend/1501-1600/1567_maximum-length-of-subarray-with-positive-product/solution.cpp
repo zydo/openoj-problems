@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int getMaxLen(vector<int>& nums) {
+  public:
+    int getMaxLen(vector<int> &nums) {
         // `posLen` / `negLen` are the lengths of the longest subarrays
         // ending at the current index whose product is positive / negative.
         // A zero breaks any run, so both reset to 0. A positive value keeps

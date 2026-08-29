@@ -6,9 +6,11 @@ class Solution {
         // consumed by exact word matches it must be one.
         int i = 0;
         for (string &word : words) {
-            if (s.compare(i, word.size(), word) != 0) return false;
+            if (s.compare(i, word.size(), word) != 0)
+                return false;
             i += word.size();
-            if (i == (int)s.size()) return true;
+            if (i == (int)s.size())
+                return true;
         }
         return false;
     }

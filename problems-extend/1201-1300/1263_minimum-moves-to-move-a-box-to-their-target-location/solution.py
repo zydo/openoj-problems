@@ -7,15 +7,15 @@ class Solution:
         m, n = len(grid), len(grid[0])
         for r in range(m):
             for c in range(n):
-                if grid[r][c] == 'B':
+                if grid[r][c] == "B":
                     box = (r, c)
-                elif grid[r][c] == 'S':
+                elif grid[r][c] == "S":
                     player = (r, c)
-                elif grid[r][c] == 'T':
+                elif grid[r][c] == "T":
                     target = (r, c)
 
         def free(r, c):
-            return 0 <= r < m and 0 <= c < n and grid[r][c] != '#'
+            return 0 <= r < m and 0 <= c < n and grid[r][c] != "#"
 
         def reach(box_cell, start):
             """Cells the player can walk to with the box as an obstacle."""

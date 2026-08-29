@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maxDistance(vector<int>& colors) {
+  public:
+    int maxDistance(vector<int> &colors) {
         int last = static_cast<int>(colors.size()) - 1;
         int answer = 0;
         for (int index = 0; index <= last; ++index) {

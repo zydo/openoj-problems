@@ -66,6 +66,6 @@ class Solution {
         for (long x : v) {
             total += x;
         }
-        return (int) (2 * total % MOD);
+        return (int) ((2 * total) % MOD);
     }
 }

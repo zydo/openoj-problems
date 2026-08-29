@@ -9,10 +9,7 @@ impl Solution {
         for word in &words {
             let bytes = word.as_bytes();
             let base = bytes[0] - b'a';
-            let key: Vec<u8> = bytes
-                .iter()
-                .map(|&b| (b - b'a' + 26 - base) % 26 + b'a')
-                .collect();
+            let key: Vec<u8> = bytes.iter().map(|&b| (b - b'a' + 26 - base) % 26 + b'a').collect();
             *counts.entry(key).or_insert(0) += 1;
         }
         // Pairs live inside one class; n <= 10^5 bounds the total by

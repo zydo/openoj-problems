@@ -70,8 +70,7 @@ class Solution {
         Run left;
         Run right;
 
-        explicit Frame(TreeNode *node)
-            : node(node), state(0), left(EMPTY), right(EMPTY) {}
+        explicit Frame(TreeNode *node) : node(node), state(0), left(EMPTY), right(EMPTY) {}
     };
 
     // An absent child is a run of length 0; a real run always has

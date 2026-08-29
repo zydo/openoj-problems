@@ -6,7 +6,9 @@ class Solution {
         // do not exist, so their sentinel costs price step 1 out of long
         // opening jumps.
         final long INF = 1L << 60;
-        long prev1 = 0, prev2 = INF, prev3 = INF;
+        long prev1 = 0,
+            prev2 = INF,
+            prev3 = INF;
         for (int j = 1; j <= n; j++) {
             long land = costs[j - 1];
             // The final hop covered d steps for some d in 1..3, paying the

@@ -37,9 +37,7 @@ class Solution:
             if not internal[nd]:
                 total[nd] = len(word[nd])
             elif ready:
-                total[nd] = (total[left[nd]] if left[nd] >= 0 else 0) + (
-                    total[right[nd]] if right[nd] >= 0 else 0
-                )
+                total[nd] = (total[left[nd]] if left[nd] >= 0 else 0) + (total[right[nd]] if right[nd] >= 0 else 0)
             else:
                 stack.append((nd, True))
                 for child in (right[nd], left[nd]):

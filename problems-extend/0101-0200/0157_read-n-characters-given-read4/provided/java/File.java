@@ -1,6 +1,7 @@
 import java.util.List;
 
 class File {
+
     private final List<String> content;
     private long budget;
     private int position;

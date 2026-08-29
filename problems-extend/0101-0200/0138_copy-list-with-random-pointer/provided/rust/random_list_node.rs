@@ -8,6 +8,10 @@ pub struct RandomListNode {
 
 impl RandomListNode {
     pub fn new(val: i32) -> Self {
-        RandomListNode { val, next: None, random: None }
+        RandomListNode {
+            val,
+            next: None,
+            random: None,
+        }
     }
 }

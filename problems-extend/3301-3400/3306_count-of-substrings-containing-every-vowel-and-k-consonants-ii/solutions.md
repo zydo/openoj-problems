@@ -2,7 +2,7 @@
 
 ## Sliding window over "at least", differenced to "exactly"
 
-Counting windows with *exactly* k consonants directly is awkward because the
+Counting windows with _exactly_ k consonants directly is awkward because the
 predicate is not monotone — adding a character can push the consonant count
 past k and later bring it back. The trick is to count something monotone
 instead: let `atLeast(c)` be the number of windows that contain all five

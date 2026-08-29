@@ -5,16 +5,7 @@ impl Solution {
         // tens word plus ones digit otherwise.
         fn under_thousand(mut value: i32) -> Vec<&'static str> {
             const ONES: [&str; 10] = [
-                "",
-                "One",
-                "Two",
-                "Three",
-                "Four",
-                "Five",
-                "Six",
-                "Seven",
-                "Eight",
-                "Nine",
+                "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
             ];
             const TEENS: [&str; 10] = [
                 "Ten",
@@ -29,16 +20,7 @@ impl Solution {
                 "Nineteen",
             ];
             const TENS: [&str; 10] = [
-                "",
-                "",
-                "Twenty",
-                "Thirty",
-                "Forty",
-                "Fifty",
-                "Sixty",
-                "Seventy",
-                "Eighty",
-                "Ninety",
+                "", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety",
             ];
             let mut group: Vec<&str> = Vec::new();
             if value >= 100 {

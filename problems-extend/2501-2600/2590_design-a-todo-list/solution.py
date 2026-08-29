@@ -15,13 +15,10 @@ class TodoList:
         return [
             task
             for task in self.tasks.values()
-            if task["user"] == userId
-            and not task["done"]
-            and (tag is None or tag in task["tags"])
+            if task["user"] == userId and not task["done"] and (tag is None or tag in task["tags"])
         ]
 
-    def addTask(self, userId: int, taskDescription: str, dueDate: int,
-                tags: List[str]) -> int:
+    def addTask(self, userId: int, taskDescription: str, dueDate: int, tags: List[str]) -> int:
         task_id = self.next_id
         self.next_id += 1
         self.tasks[task_id] = {

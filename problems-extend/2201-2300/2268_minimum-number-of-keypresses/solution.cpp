@@ -5,7 +5,8 @@ class Solution {
         // frequencies: the most frequent 9 are pressed once, the next 9
         // twice, and the remaining 8 three times.
         array<int, 26> freq{};
-        for (char ch : s) freq[ch - 'a']++;
+        for (char ch : s)
+            freq[ch - 'a']++;
         sort(freq.begin(), freq.end(), greater<int>());
         int presses = 0;
         for (int rank = 0; rank < 26; ++rank) {

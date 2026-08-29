@@ -13,8 +13,6 @@ class Solution:
         while True:
             leftover = rest - 7 * k
             pool = children - k
-            if (pool == 0 and leftover == 0) or (
-                pool >= 1 and not (pool == 1 and leftover == 3)
-            ):
+            if (pool == 0 and leftover == 0) or (pool >= 1 and not (pool == 1 and leftover == 3)):
                 return k
             k -= 1

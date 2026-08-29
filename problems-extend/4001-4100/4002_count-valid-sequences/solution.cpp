@@ -23,8 +23,7 @@ class Solution {
     }
 
   private:
-    long long comb(int a, int b, const vector<long long> &fact,
-                   const vector<long long> &invFact, long long mod) {
+    long long comb(int a, int b, const vector<long long> &fact, const vector<long long> &invFact, long long mod) {
         if (b < 0 || b > a) {
             return 0;
         }

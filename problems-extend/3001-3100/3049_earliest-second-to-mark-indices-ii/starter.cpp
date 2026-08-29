@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int earliestSecondToMarkIndices(vector<int>& nums, vector<int>& changeIndices) {
-        throw logic_error("TODO");
-    }
+  public:
+    int earliestSecondToMarkIndices(vector<int> &nums, vector<int> &changeIndices) { throw logic_error("TODO"); }
 };

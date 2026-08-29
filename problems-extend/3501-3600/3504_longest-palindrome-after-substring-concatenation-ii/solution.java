@@ -1,7 +1,8 @@
 class Solution {
 
     public int longestPalindrome(String s, String t) {
-        int n = s.length(), m = t.length();
+        int n = s.length(),
+            m = t.length();
         // p[i] = longest palindrome starting at s[i]; a rolling interval
         // table fills every row bottom-up in O(n^2) time and O(n) space.
         int[] p = new int[n];
@@ -14,8 +15,7 @@ class Solution {
             row[i] = true;
             int best = 1;
             for (int j = i + 1; j < n; ++j) {
-                row[j] = s.charAt(i) == s.charAt(j)
-                        && (j == i + 1 || below[j - 1]);
+                row[j] = s.charAt(i) == s.charAt(j) && (j == i + 1 || below[j - 1]);
                 if (row[j]) {
                     best = j - i + 1;
                 }
@@ -34,8 +34,7 @@ class Solution {
             boolean[] row = new boolean[m + 1];
             row[i] = true;
             for (int j = i + 1; j < m; ++j) {
-                row[j] = t.charAt(i) == t.charAt(j)
-                        && (j == i + 1 || below[j - 1]);
+                row[j] = t.charAt(i) == t.charAt(j) && (j == i + 1 || below[j - 1]);
                 if (row[j]) {
                     q[j] = j - i + 1;
                 }

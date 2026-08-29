@@ -6,7 +6,10 @@ class Solution {
         // consecutive values, then shrink every boundary inward by one and
         // repeat until every cell is written.
         int[][] matrix = new int[n][n];
-        int top = 0, bottom = n - 1, left = 0, right = n - 1;
+        int top = 0,
+            bottom = n - 1,
+            left = 0,
+            right = n - 1;
         int value = 1;
         while (value <= n * n) {
             for (int column = left; column <= right; ++column) {

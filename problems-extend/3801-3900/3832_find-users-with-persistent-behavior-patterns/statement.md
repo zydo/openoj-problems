@@ -19,8 +19,8 @@ following definition:
 
 - A user is considered behaviorally stable if there exists a sequence of
   at least 5 consecutive days such that:
-  - The user performed exactly one action per day during that period.
-  - The action is the same on all those consecutive days.
+    - The user performed exactly one action per day during that period.
+    - The action is the same on all those consecutive days.
 - If a user has multiple qualifying sequences, only consider the sequence
   with the maximum length.
 

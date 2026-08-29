@@ -4,10 +4,10 @@
 
 Table: `Student`
 
-| Column Name   | Type    |
-| ------------- | ------- |
-| student_id    | int     |
-| student_name  | varchar |
+| Column Name  | Type    |
+| ------------ | ------- |
+| student_id   | int     |
+| student_name | varchar |
 
 `student_id` is the primary key (column with unique values) for this
 table. `student_name` is the name of the student.

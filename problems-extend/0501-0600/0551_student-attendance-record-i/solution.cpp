@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool checkRecord(string s) {
         // Both criteria are about totals the record reveals day by day — how
         // many absences have piled up, and how long the current streak of

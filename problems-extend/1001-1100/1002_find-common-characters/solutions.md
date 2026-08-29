@@ -1,7 +1,7 @@
 # Solutions — Find Common Characters
 
 Every string's letter frequencies fit a length-26 array, and a character
-that survives into the answer must occur at least once in *every* word —
+that survives into the answer must occur at least once in _every_ word —
 its final count is the minimum across all of those arrays, position by
 position. Folding the words in one at a time with an element-wise minimum
 leaves, after the last word, exactly the multiset that is common to all of

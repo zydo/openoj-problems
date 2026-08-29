@@ -22,8 +22,9 @@ class Solution {
             if (r + c == 2) {
                 anti += step;
             }
-            if (Math.max(Math.max(Math.abs(rows[r]), Math.abs(cols[c])),
-                         Math.max(Math.abs(diag), Math.abs(anti))) == 3) {
+            if (
+                Math.max(Math.max(Math.abs(rows[r]), Math.abs(cols[c])), Math.max(Math.abs(diag), Math.abs(anti))) == 3
+            ) {
                 return step == 1 ? "A" : "B";
             }
         }

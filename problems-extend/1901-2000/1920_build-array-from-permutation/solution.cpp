@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> buildArray(vector<int>& nums) {
+    vector<int> buildArray(vector<int> &nums) {
         // One pass of nested indexing: nums is a permutation of 0..n-1, so
         // every value is itself a valid index and nums[nums[i]] is in range.
         vector<int> ans;

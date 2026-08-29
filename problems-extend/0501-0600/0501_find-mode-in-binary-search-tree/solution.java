@@ -63,7 +63,7 @@ class Solution {
 
         // Extends the run and returns the streak now standing.
         int widen(int value) {
-            streak = (prev != null && prev == value) ? streak + 1 : 1;
+            streak = prev != null && prev == value ? streak + 1 : 1;
             prev = value;
             if (streak > maxStreak) {
                 maxStreak = streak;

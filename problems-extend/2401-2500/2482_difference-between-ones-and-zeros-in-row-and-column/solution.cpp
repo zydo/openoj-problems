@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> onesMinusZeros(vector<vector<int>>& grid) {
+    vector<vector<int>> onesMinusZeros(vector<vector<int>> &grid) {
         // Precompute each row's and column's one-count once; the zero
         // counts follow as n - onesRow and m - onesCol, collapsing the
         // cell formula to 2*onesRow + 2*onesCol - m - n.

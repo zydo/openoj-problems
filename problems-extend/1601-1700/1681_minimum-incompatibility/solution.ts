@@ -25,7 +25,7 @@ function minimumIncompatibility(nums: number[], k: number): number {
         let hi = 0;
         let valid = true;
         for (let i = 0; i < n; i++) {
-            if (!(g >> i & 1)) continue;
+            if (!((g >> i) & 1)) continue;
             const vbit = 1 << (nums[i] - 1);
             if (seen & vbit) {
                 valid = false;
@@ -37,7 +37,7 @@ function minimumIncompatibility(nums: number[], k: number): number {
         }
         if (!valid) continue;
         for (let i = 0; i < n; i++) {
-            if (g >> i & 1) buckets[i].push([g, hi - lo]);
+            if ((g >> i) & 1) buckets[i].push([g, hi - lo]);
         }
     }
     const INF = 1_000_000;

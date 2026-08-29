@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     // One sweep: an element is good when it strictly beats the neighbors
     // that exist at distance k; a missing neighbor never blocks it.
     int sumOfGoodNumbers(vector<int> &nums, int k) {

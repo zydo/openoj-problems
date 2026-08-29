@@ -15,7 +15,7 @@ sitting at position `i` has enough trailing zeros, nothing needs to move.
 Otherwise, scan downward from `i` for the nearest row with at least
 `n - i - 1` trailing zeros and swap it upward one adjacent pair at a
 time until it reaches position `i`, adding one to the answer per swap.
-Picking the *nearest* qualifying row is what keeps the swap count
+Picking the _nearest_ qualifying row is what keeps the swap count
 minimal: any row with enough trailing zeros would satisfy row `i`'s
 requirement, but a farther one only costs more swaps to bring up, and
 rows already placed above `i` are never disturbed again. If no row from

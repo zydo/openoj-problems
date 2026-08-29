@@ -1,6 +1,6 @@
 class Solution {
   public:
-    bool partitionArray(vector<int>& nums, int k) {
+    bool partitionArray(vector<int> &nums, int k) {
         // Whole groups of exactly k require n to divide evenly, and each
         // occurrence of a value consumes a group of its own, so no value may
         // occur more often than the number of groups.

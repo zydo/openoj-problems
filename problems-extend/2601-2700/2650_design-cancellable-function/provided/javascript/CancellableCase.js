@@ -34,8 +34,7 @@ class CancellableClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -77,15 +76,8 @@ class CancellableCase {
         // Lexical shadowing plus the global patch above both route to the
         // same virtual clock: a bare `setTimeout` inside the case's
         // generator body resolves to this parameter even without the patch.
-        const build = new Function(
-            "setTimeout",
-            "return (" + source + ");",
-        )(function (callback, delay) {
-            openojCancellableClock.scheduleFrom(
-                openojCancellableClock.now,
-                Number(delay) || 0,
-                callback,
-            );
+        const build = new Function("setTimeout", "return (" + source + ");")(function (callback, delay) {
+            openojCancellableClock.scheduleFrom(openojCancellableClock.now, Number(delay) || 0, callback);
             return 0;
         });
         this.generatorFactory = build;

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int largestCombination(vector<int>& candidates) {
+  public:
+    int largestCombination(vector<int> &candidates) {
         array<int, 24> counts{};
         for (int value : candidates) {
             for (int bit = 0; bit < 24; ++bit) {

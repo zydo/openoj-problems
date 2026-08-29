@@ -32,7 +32,8 @@ class Solution {
                 seq.add((int) a);
                 seq.add((int) b);
                 int pos = j;
-                long x = a, y = b;
+                long x = a,
+                    y = b;
                 while (pos < n) {
                     long z = x + y;
                     if (z > limit) {

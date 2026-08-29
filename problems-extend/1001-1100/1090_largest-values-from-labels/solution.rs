@@ -1,12 +1,7 @@
 use std::collections::HashMap;
 
 impl Solution {
-    pub fn largest_vals_from_labels(
-        values: Vec<i32>,
-        labels: Vec<i32>,
-        num_wanted: i32,
-        use_limit: i32,
-    ) -> i32 {
+    pub fn largest_vals_from_labels(values: Vec<i32>, labels: Vec<i32>, num_wanted: i32, use_limit: i32) -> i32 {
         // Greedy: sort items by value descending and take each one while
         // both the per-label cap and the total count allow it.
         let mut items: Vec<(i32, i32)> = values.into_iter().zip(labels).collect();

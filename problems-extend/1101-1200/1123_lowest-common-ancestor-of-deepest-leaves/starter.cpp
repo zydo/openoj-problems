@@ -1,6 +1,4 @@
 class Solution {
-public:
-    TreeNode* lcaDeepestLeaves(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    TreeNode *lcaDeepestLeaves(TreeNode *root) { throw logic_error("TODO"); }
 };

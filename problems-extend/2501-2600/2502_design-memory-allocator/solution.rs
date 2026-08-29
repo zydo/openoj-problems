@@ -7,7 +7,9 @@ pub struct Allocator {
 
 impl Allocator {
     pub fn new(n: i32) -> Self {
-        Allocator { units: vec![0; n as usize] }
+        Allocator {
+            units: vec![0; n as usize],
+        }
     }
 
     pub fn allocate(&mut self, size: i32, mID: i32) -> i32 {

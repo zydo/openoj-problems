@@ -4,7 +4,8 @@ class Solution {
         // Sorted order lets two indexes converge from both ends: the smallest
         // and largest remaining values stand in for every candidate pair, and
         // no extra storage is needed, as the statement demands.
-        int low = 0, high = numbers.length - 1;
+        int low = 0,
+            high = numbers.length - 1;
         while (low < high) {
             int total = numbers[low] + numbers[high];
             if (total == target) {

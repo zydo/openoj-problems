@@ -1,6 +1,4 @@
 class Solution {
-public:
-    long long numberOfWays(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    long long numberOfWays(string s) { throw logic_error("TODO"); }
 };

@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int minStartValue(std::vector<int>& nums) {
+    int minStartValue(std::vector<int> &nums) {
         int minPrefix = 0;
         int prefix = 0;
         for (int x : nums) {

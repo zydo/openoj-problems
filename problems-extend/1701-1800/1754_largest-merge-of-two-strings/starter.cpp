@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string largestMerge(string word1, string word2) {
-        throw logic_error("TODO");
-    }
+  public:
+    string largestMerge(string word1, string word2) { throw logic_error("TODO"); }
 };

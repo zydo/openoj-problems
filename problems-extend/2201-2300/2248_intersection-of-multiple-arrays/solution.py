@@ -4,6 +4,7 @@ from typing import List
 class Solution:
     def intersection(self, nums: List[List[int]]) -> List[int]:
         from collections import Counter
+
         counts = Counter()
         for arr in nums:
             counts.update(arr)

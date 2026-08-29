@@ -23,9 +23,7 @@ class Solution:
 
         def candidates(counts):
             ranked = sorted(counts.items(), key=lambda item: -item[1])[:2]
-            return [(value, count) for value, count in ranked] + [
-                (fresh_value, 0)
-            ]
+            return [(value, count) for value, count in ranked] + [(fresh_value, 0)]
 
         best = n
         for even_value, even_kept in candidates(even_counts):

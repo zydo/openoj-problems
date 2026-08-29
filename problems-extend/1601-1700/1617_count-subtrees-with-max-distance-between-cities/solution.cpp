@@ -1,8 +1,8 @@
 class Solution {
-public:
-    vector<int> countSubtreesForEachDiameter(int n, vector<vector<int>>& edges) {
+  public:
+    vector<int> countSubtreesForEachDiameter(int n, vector<vector<int>> &edges) {
         vector<vector<int>> adj(n + 1);
-        for (auto& e : edges) {
+        for (auto &e : edges) {
             adj[e[0]].push_back(e[1]);
             adj[e[1]].push_back(e[0]);
         }

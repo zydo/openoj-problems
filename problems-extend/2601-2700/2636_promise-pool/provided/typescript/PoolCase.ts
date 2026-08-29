@@ -16,10 +16,7 @@ interface PoolTick {
     callback: () => void;
 }
 
-const openojBuiltinSetTimeout: (
-    callback: (...args: any[]) => void,
-    delay?: number,
-) => unknown = globalThis.setTimeout;
+const openojBuiltinSetTimeout: (callback: (...args: any[]) => void, delay?: number) => unknown = globalThis.setTimeout;
 
 class PoolClock {
     private ticks: PoolTick[] = [];
@@ -34,8 +31,7 @@ class PoolClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -85,7 +81,7 @@ class PoolCase {
             }
             this.starts[index] = this.clock.now;
             return new Promise<null>((resolve) => {
-                this.clock.scheduleAt(this.starts[index] as number + spec.delay, () => {
+                this.clock.scheduleAt((this.starts[index] as number) + spec.delay, () => {
                     this.ends[index] = this.clock.now;
                     resolve(null);
                 });
@@ -100,10 +96,7 @@ class PoolCase {
     // real event loops schedule timers behind microtasks. One await
     // leaks only one microtask step, so each barrier is a genuine
     // macrotask hop through the builtin setTimeout captured above.
-    async drive(promisePool: (
-        functions: (() => Promise<null>)[],
-        n: number,
-    ) => Promise<unknown>): Promise<void> {
+    async drive(promisePool: (functions: (() => Promise<null>)[], n: number) => Promise<unknown>): Promise<void> {
         const returned = promisePool(this.functions, this.limit);
         if (!returned || typeof returned.then !== "function") {
             throw new Error("promisePool must return a promise");
@@ -126,8 +119,7 @@ class PoolCase {
             await returned;
         } catch (problem) {
             throw new Error(
-                "Returned promise rejected: " +
-                    (problem && problem.message ? problem.message : String(problem)),
+                "Returned promise rejected: " + (problem && problem.message ? problem.message : String(problem)),
             );
         }
     }

@@ -58,21 +58,14 @@ impl Solution {
         for r in trees.iter().flatten() {
             recs.insert(
                 r.val,
-                (
-                    r.val,
-                    r.left.as_ref().map(|c| c.val),
-                    r.right.as_ref().map(|c| c.val),
-                ),
+                (r.val, r.left.as_ref().map(|c| c.val), r.right.as_ref().map(|c| c.val)),
             );
         }
         for r in trees.iter().flatten() {
             collect(&mut recs, r);
         }
 
-        let roots: Vec<i32> = trees
-            .iter()
-            .map(|r| r.as_ref().unwrap().val)
-            .collect();
+        let roots: Vec<i32> = trees.iter().map(|r| r.as_ref().unwrap().val).collect();
         let root_val = roots[root_idx];
 
         // Live material: kids maps each reachable node value to its current

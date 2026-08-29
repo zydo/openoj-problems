@@ -37,9 +37,9 @@ The final text becomes "bce_ace_abcace".
 
 - `1 <= replacements.length <= 10`
 - Each element of replacements is a two-element list `[key, value]`, where:
-  - `key` is a single uppercase English letter.
-  - `value` is a non-empty string of at most 8 characters that may contain
-    zero or more placeholders formatted as `%<key>%`.
+    - `key` is a single uppercase English letter.
+    - `value` is a non-empty string of at most 8 characters that may contain
+      zero or more placeholders formatted as `%<key>%`.
 - All replacement keys are unique.
 - The text string is formed by concatenating all key placeholders (formatted
   as `%<key>%`) randomly from the replacements mapping, separated by

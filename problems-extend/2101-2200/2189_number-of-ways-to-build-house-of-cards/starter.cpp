@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int houseOfCards(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int houseOfCards(int n) { throw logic_error("TODO"); }
 };

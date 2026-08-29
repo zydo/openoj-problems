@@ -6,6 +6,7 @@ import java.util.Map;
 // Definition for a binary tree node is provided by the judge.
 
 class Solution {
+
     private record Frame(TreeNode node, boolean visited) {}
 
     public int averageOfSubtree(TreeNode root) {

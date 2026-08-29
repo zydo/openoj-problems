@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int secondsToRemoveOccurrences(string s) {
         // A 1 crosses the run of zeros before it in exactly `zeros`
         // seconds, but cannot start until the previous 1 finished, so

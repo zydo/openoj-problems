@@ -11,7 +11,7 @@ Process the boys one at a time, keeping `invitations[girl]`, the boy currently
 matched to that girl (or `-1`). To seat a new boy, walk his allowed girls: a
 free girl ends the search, and a taken girl recurses into the boy holding her,
 asking him to move to another girl of his own. That recursive reroute is an
-alternating path; if it ends at a free girl the path is *augmenting* — every
+alternating path; if it ends at a free girl the path is _augmenting_ — every
 boy on it gets (re)matched and the total grows by exactly one. A `seen` set
 per top-level attempt keeps each girl from being probed twice, so the search
 for one boy costs at most `O(m·n)`.

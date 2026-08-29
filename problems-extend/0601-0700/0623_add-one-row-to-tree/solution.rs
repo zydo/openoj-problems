@@ -10,7 +10,11 @@ impl Solution {
         if depth == 1 {
             // There is no depth 0 to splice under: the whole original tree
             // slips one level down as a fresh root's left subtree.
-            let fresh = TreeNode { val, left: root, right: None };
+            let fresh = TreeNode {
+                val,
+                left: root,
+                right: None,
+            };
             return Some(Box::new(fresh));
         }
         // The insertion row sits at a fixed depth, so the work is only
@@ -40,9 +44,17 @@ impl Solution {
             // old subtree out and re-hanging it, whole, inside its fresh val
             // node — one level deeper, never rebuilt.
             let old_left = node.left.take();
-            node.left = Some(Box::new(TreeNode { val, left: old_left, right: None }));
+            node.left = Some(Box::new(TreeNode {
+                val,
+                left: old_left,
+                right: None,
+            }));
             let old_right = node.right.take();
-            node.right = Some(Box::new(TreeNode { val, left: None, right: old_right }));
+            node.right = Some(Box::new(TreeNode {
+                val,
+                left: None,
+                right: old_right,
+            }));
         }
         root
     }

@@ -1,3 +1,6 @@
+from typing import List, Optional
+
+
 class Solution:
-    def addNegabinary(self, arr1: list[int], arr2: list[int]) -> list[int]:
+    def addNegabinary(self, arr1: List[int], arr2: List[int]) -> List[int]:
         raise NotImplementedError("TODO")

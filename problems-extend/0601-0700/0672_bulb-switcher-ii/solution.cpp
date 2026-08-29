@@ -14,11 +14,16 @@ class Solution {
         // for n >= 3 at p = 1, 2, 3+ — never more than 8, since only 16
         // parity vectors exist and pressing buttons 1, 2 and 3 together is
         // the identity.
-        if (presses == 0) return 1;
-        if (n == 1) return 2;
-        if (n == 2) return presses == 1 ? 3 : 4;
-        if (presses == 1) return 4;
-        if (presses == 2) return 7;
+        if (presses == 0)
+            return 1;
+        if (n == 1)
+            return 2;
+        if (n == 2)
+            return presses == 1 ? 3 : 4;
+        if (presses == 1)
+            return 4;
+        if (presses == 2)
+            return 7;
         return 8;
     }
 };

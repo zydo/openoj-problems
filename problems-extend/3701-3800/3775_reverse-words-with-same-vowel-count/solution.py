@@ -1,13 +1,18 @@
+from typing import List, Optional
+
+
 class Solution:
     def reverseWords(self, s: str) -> str:
-        # The first word fixes the target vowel count; every later word
-        # sharing it is reversed, the rest pass through untouched.
-        words = s.split()
-        target = sum(c in "aeiou" for c in words[0])
-        out = [words[0]]
-        for w in words[1:]:
-            if sum(c in "aeiou" for c in w) == target:
-                out.append(w[::-1])
-            else:
-                out.append(w)
-        return " ".join(out)
+        # The first word only fixes the target vowel count; each later
+        # word matching it is reversed in place, everything else (word
+        # order, separators) stays as-is.
+        words = s.split(" ")
+
+        def count_vowels(word: str) -> int:
+            return sum(1 for c in word if c in "aeiou")
+
+        target = count_vowels(words[0])
+        for i in range(1, len(words)):
+            if count_vowels(words[i]) == target:
+                words[i] = words[i][::-1]
+        return " ".join(words)

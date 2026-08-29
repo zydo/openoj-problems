@@ -27,9 +27,7 @@ class ComposeCase {
         this.x = x;
         this.callCounts = new Array(functions.length).fill(0);
         this.functions = functions.map((source: string, index: number) => {
-            const inner = new Function("return (" + source + ");")() as unknown as (
-                value: number,
-            ) => number;
+            const inner = new Function("return (" + source + ");")() as unknown as (value: number) => number;
             return (value: number): number => {
                 this.callCounts[index] += 1;
                 return inner(value);
@@ -46,9 +44,7 @@ class ComposeCase {
         const runner = composed as unknown as (value: number) => unknown;
         const value = runner(this.x) as number;
         if (!Number.isInteger(value)) {
-            throw new Error(
-                "composition must return an integer, got " + String(value),
-            );
+            throw new Error("composition must return an integer, got " + String(value));
         }
         this.result = value;
     }
@@ -60,11 +56,7 @@ class ComposeCase {
         for (let index = 0; index < this.callCounts.length; ++index) {
             if (this.callCounts[index] !== 1) {
                 throw new Error(
-                    "function " +
-                        index +
-                        " was called " +
-                        this.callCounts[index] +
-                        " times, expected exactly once",
+                    "function " + index + " was called " + this.callCounts[index] + " times, expected exactly once",
                 );
             }
         }

@@ -1,9 +1,9 @@
 class Solution {
-public:
-    vector<bool> palindromePath(int n, vector<vector<int>>& edges, string s, vector<string>& queries) {
+  public:
+    vector<bool> palindromePath(int n, vector<vector<int>> &edges, string s, vector<string> &queries) {
         // Adjacency as flat per-node arrays: two passes over the edge list.
         vector<int> degree(n, 0);
-        for (const auto& edge : edges) {
+        for (const auto &edge : edges) {
             ++degree[edge[0]];
             ++degree[edge[1]];
         }
@@ -11,7 +11,7 @@ public:
         for (int node = 0; node < n; ++node) {
             adjacency[node].reserve(degree[node]);
         }
-        for (const auto& edge : edges) {
+        for (const auto &edge : edges) {
             adjacency[edge[0]].push_back(edge[1]);
             adjacency[edge[1]].push_back(edge[0]);
         }
@@ -106,9 +106,9 @@ public:
         }
         for (int level = 1; level < levels; ++level) {
             int half = 1 << (level - 1);
-            const vector<long long>& previous = table[level - 1];
+            const vector<long long> &previous = table[level - 1];
             int length = walkLength - (1 << level) + 1;
-            vector<long long>& current = table[level];
+            vector<long long> &current = table[level];
             current.resize(length);
             for (int index = 0; index < length; ++index) {
                 current[index] = min(previous[index], previous[index + half]);
@@ -121,7 +121,7 @@ public:
 
         vector<bool> answer;
         answer.reserve(queries.size());
-        for (const string& query : queries) {
+        for (const string &query : queries) {
             size_t space1 = query.find(' ');
             size_t space2 = query.find(' ', space1 + 1);
             if (query[0] == 'u') {

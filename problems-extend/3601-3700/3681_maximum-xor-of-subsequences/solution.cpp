@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxXorSubsequences(vector<int>& nums) {
+    int maxXorSubsequences(vector<int> &nums) {
         // A subsequence's XOR only depends on which positions it picks, and
         // XOR-ing two achievable values is again achievable, while any
         // achievable z arises as z ^ 0: the answer is the largest XOR any

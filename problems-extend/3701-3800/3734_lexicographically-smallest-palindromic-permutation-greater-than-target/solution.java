@@ -8,7 +8,8 @@ class Solution {
         }
         // Parity law: every count even, or exactly one odd count absorbed by
         // the middle character when n is odd.
-        int odds = 0, oddLetter = -1;
+        int odds = 0,
+            oddLetter = -1;
         for (int d = 0; d < 26; d++) {
             if (freq[d] % 2 == 1) {
                 odds++;
@@ -49,8 +50,7 @@ class Solution {
                 wins = mirrored.compareTo(suffix) > 0;
             } else {
                 int mid = target.charAt(m) - 'a';
-                wins = oddLetter > mid
-                        || (oddLetter == mid && mirrored.compareTo(suffix) > 0);
+                wins = oddLetter > mid || (oddLetter == mid && mirrored.compareTo(suffix) > 0);
             }
             if (wins) {
                 best = p;
@@ -61,7 +61,8 @@ class Solution {
         // a larger still-available letter existed, and fall back to it.
         if (best == null) {
             int[] cur = half.clone();
-            int bumpAt = -1, bumpCh = -1;
+            int bumpAt = -1,
+                bumpCh = -1;
             int[] bumpCur = null;
             for (int i = 0; i < m; i++) {
                 int ci = p.charAt(i) - 'a';

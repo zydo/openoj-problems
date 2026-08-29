@@ -1,8 +1,4 @@
-function processQueries(
-    c: number,
-    connections: number[][],
-    queries: number[][],
-): number[] {
+function processQueries(c: number, connections: number[][], queries: number[][]): number[] {
     // Union-Find assigns every station its fixed grid; an offline station
     // stays in its grid, so connectivity never changes.
     const parent = new Array<number>(c + 1);

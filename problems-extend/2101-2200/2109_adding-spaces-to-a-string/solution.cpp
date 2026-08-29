@@ -1,6 +1,6 @@
 class Solution {
-public:
-    string addSpaces(string s, vector<int>& spaces) {
+  public:
+    string addSpaces(string s, vector<int> &spaces) {
         string result;
         result.reserve(s.size() + spaces.size());
         int spaceIndex = 0;

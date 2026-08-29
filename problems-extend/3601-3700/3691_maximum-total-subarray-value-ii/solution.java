@@ -51,7 +51,9 @@ class Solution {
         // Two overlapping power-of-two windows cover [l, r].
         int j = logTable[r - l + 1];
         int low = 1 << j;
-        return (long) Math.max(maxTable[j][l], maxTable[j][r - low + 1])
-                - Math.min(minTable[j][l], minTable[j][r - low + 1]);
+        return (
+            (long) Math.max(maxTable[j][l], maxTable[j][r - low + 1]) -
+            Math.min(minTable[j][l], minTable[j][r - low + 1])
+        );
     }
 }

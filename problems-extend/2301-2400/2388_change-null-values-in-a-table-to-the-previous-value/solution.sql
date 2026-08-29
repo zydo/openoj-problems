@@ -12,7 +12,8 @@ SELECT
         AND c2.drink IS NOT NULL
       ORDER BY
         c2.id DESC
-      LIMIT 1
+      LIMIT
+        1
     )
   ) AS drink
 FROM

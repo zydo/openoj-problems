@@ -13,15 +13,18 @@ class Solution {
                 int index = odd ? step : frontier.size() - 1 - step;
                 TreeNode *node = frontier[index];
                 TreeNode *required = odd ? node->left : node->right;
-                if (required == nullptr) break;
+                if (required == nullptr)
+                    break;
                 total += node->val;
             }
             answer.push_back(total);
             std::vector<TreeNode *> next;
             next.reserve(2 * frontier.size());
             for (TreeNode *node : frontier) {
-                if (node->left != nullptr) next.push_back(node->left);
-                if (node->right != nullptr) next.push_back(node->right);
+                if (node->left != nullptr)
+                    next.push_back(node->left);
+                if (node->right != nullptr)
+                    next.push_back(node->right);
             }
             frontier = std::move(next);
             odd = !odd;

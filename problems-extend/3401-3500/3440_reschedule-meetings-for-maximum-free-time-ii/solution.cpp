@@ -10,13 +10,17 @@ class Solution {
         int n = (int)startTime.size();
         vector<int> gaps(n + 1, 0);
         gaps[0] = startTime[0];
-        for (int i = 1; i < n; ++i) gaps[i] = startTime[i] - endTime[i - 1];
+        for (int i = 1; i < n; ++i)
+            gaps[i] = startTime[i] - endTime[i - 1];
         gaps[n] = eventTime - endTime[n - 1];
         vector<int> prefix(n + 2, 0), suffix(n + 2, 0);
-        for (int i = 0; i <= n; ++i) prefix[i + 1] = max(prefix[i], gaps[i]);
-        for (int i = n; i >= 0; --i) suffix[i] = max(suffix[i + 1], gaps[i]);
+        for (int i = 0; i <= n; ++i)
+            prefix[i + 1] = max(prefix[i], gaps[i]);
+        for (int i = n; i >= 0; --i)
+            suffix[i] = max(suffix[i + 1], gaps[i]);
         int answer = 0;
-        for (int gap : gaps) answer = max(answer, gap);
+        for (int gap : gaps)
+            answer = max(answer, gap);
         for (int i = 0; i < n; ++i) {
             int duration = endTime[i] - startTime[i];
             // Largest gap outside i's two flanking gaps decides move vs slide.

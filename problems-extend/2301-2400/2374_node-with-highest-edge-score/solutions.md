@@ -14,7 +14,7 @@ of any tie is retained automatically.
 
 One overflow note, which the hints call out: a score can reach
 `1 + 2 + ... + (10⁵ - 1) ≈ 5 × 10⁹`, beyond 32-bit signed range, so
-fixed-width languages accumulate in 64-bit integers. The returned *node
-label* still fits comfortably in 32 bits.
+fixed-width languages accumulate in 64-bit integers. The returned _node
+label_ still fits comfortably in 32 bits.
 
 **Complexity:** `O(n)` time, `O(n)` space.

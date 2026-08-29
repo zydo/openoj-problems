@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxTransactions(vector<int>& transactions) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxTransactions(vector<int> &transactions) { throw logic_error("TODO"); }
 };

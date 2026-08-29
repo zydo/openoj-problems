@@ -8,7 +8,7 @@ class Solution:
         result = []
         for base in range(0, len(s), k):
             total = 0
-            for c in s[base:base + k]:
+            for c in s[base : base + k]:
                 total += ord(c) - ord("a")
             result.append(chr(ord("a") + total % 26))
         return "".join(result)

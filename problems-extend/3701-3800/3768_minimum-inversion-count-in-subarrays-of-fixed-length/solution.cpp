@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    long long minInversionCount(std::vector<int>& nums, int k) {
+    long long minInversionCount(std::vector<int> &nums, int k) {
         // Two neighboring windows share k - 1 elements, so the inversion
         // count updates in O(log n) per slide instead of a recount: the
         // element leaving at the front loses its pairs with smaller

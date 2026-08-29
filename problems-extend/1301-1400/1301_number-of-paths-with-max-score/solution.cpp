@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> pathsWithMaxScore(vector<string>& board) {
+    vector<int> pathsWithMaxScore(vector<string> &board) {
         const int MOD = 1000000007;
         int n = (int)board.size();
         // score[i][j] is the best sum reachable at (i, j) from 'S', and

@@ -1,24 +1,25 @@
-WITH dept AS (
-  SELECT
-    SUBSTR(pay_date, 1, 7) AS pay_month,
-    department_id,
-    AVG(amount) AS dept_average
-  FROM
-    Salary
-    JOIN Employee ON Salary.employee_id = Employee.employee_id
-  GROUP BY
-    pay_month,
-    department_id
-),
-company AS (
-  SELECT
-    SUBSTR(pay_date, 1, 7) AS pay_month,
-    AVG(amount) AS company_average
-  FROM
-    Salary
-  GROUP BY
-    pay_month
-)
+WITH
+  dept AS (
+    SELECT
+      SUBSTR(pay_date, 1, 7) AS pay_month,
+      department_id,
+      AVG(amount) AS dept_average
+    FROM
+      Salary
+      JOIN Employee ON Salary.employee_id = Employee.employee_id
+    GROUP BY
+      pay_month,
+      department_id
+  ),
+  company AS (
+    SELECT
+      SUBSTR(pay_date, 1, 7) AS pay_month,
+      AVG(amount) AS company_average
+    FROM
+      Salary
+    GROUP BY
+      pay_month
+  )
 SELECT
   REPLACE(d.pay_month, '/', '-') AS pay_month,
   d.department_id,

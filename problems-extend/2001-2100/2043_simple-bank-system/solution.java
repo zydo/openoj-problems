@@ -1,4 +1,5 @@
 class Bank {
+
     private final long[] balance;
 
     public Bank(long[] balance) {

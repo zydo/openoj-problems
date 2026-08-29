@@ -11,8 +11,10 @@ class Solution:
                 continue
             # Strictly better quality wins; on a quality tie the
             # lexicographically smaller coordinate wins.
-            if best is None or quality > best_quality or (
-                quality == best_quality and (x < best[0] or (x == best[0] and y < best[1]))
+            if (
+                best is None
+                or quality > best_quality
+                or (quality == best_quality and (x < best[0] or (x == best[0] and y < best[1])))
             ):
                 best = [x, y]
                 best_quality = quality

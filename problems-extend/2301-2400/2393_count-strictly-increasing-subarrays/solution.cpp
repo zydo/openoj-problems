@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     long long countSubarrays(vector<int> &nums) {
         // run counts strictly increasing subarrays ending at the
         // current index: it grows by one while the rise continues,

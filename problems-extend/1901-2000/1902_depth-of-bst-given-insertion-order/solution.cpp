@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxDepthBST(vector<int>& order) {
+    int maxDepthBST(vector<int> &order) {
         // Inverting `order` gives pos[v], and the BST built by inserting
         // in that order is exactly the min-Cartesian tree of pos[1..n]:
         // the root is the first-inserted value and every subtree spans a
@@ -28,8 +28,10 @@ class Solution {
                 last = stack.back();
                 stack.pop_back();
             }
-            if (last) parent[last] = v;
-            if (!stack.empty()) parent[v] = stack.back();
+            if (last)
+                parent[last] = v;
+            if (!stack.empty())
+                parent[v] = stack.back();
             stack.push_back(v);
         }
         vector<int> depth(n + 1, 0);

@@ -1,21 +1,22 @@
 # Solutions — Absolute Difference Between Maximum and Minimum K Elements
 
-Sorting orders the whole array, and once sorted the k smallest elements
-are exactly the first k entries while the k largest are exactly the last
-k. The answer is then a matter of summing the two slices and subtracting.
-Duplicates need no special handling: equal values may straddle the cut,
-but each side still holds exactly k elements whose multiset is the one the
-problem asks about.
+## Sort and take both ends
 
-## Sort, then sum the two slices
+The two quantities live at opposite ends of the sorted order: ascending
+sort puts the `k` smallest elements in the first `k` slots and the `k`
+largest in the last `k`, so one sort exposes both sums at once. A single
+pass over indices `0..k-1` accumulates the bottom-end sum from
+`nums[i]` and the top-end sum from `nums[n-k+i]` simultaneously.
 
-Sort `nums` in nondecreasing order. The sum of the k smallest elements is
-`nums[0] + ... + nums[k-1]` and the sum of the k largest is
-`nums[n-k] + ... + nums[n-1]`, so the answer is the difference of those
-two slice sums. Every element is at most `100` and there are at most
-`100` elements, so each sum fits trivially in a 32-bit integer and the
-language-native type carries the answer directly.
+Every element is positive, so the sum over the `k` largest elements can
+never fall below the sum over the `k` smallest — at worst the two
+selections coincide element-for-element and both sums are equal. The
+absolute value therefore costs nothing: the answer is simply the top-end
+sum minus the bottom-end sum. Sums are bounded by `100 * 100 = 10⁴`, far
+inside 32-bit range.
 
-One sort followed by a constant-time slice sum.
+Any `O(n log n)` comparison sort works here; with `n <= 100` even the
+quadratic approaches clear the limits easily, but the sorted slice is the
+shortest honest expression of "first and last k values" from the hint.
 
-**Complexity:** `O(n log n)` time, `O(1)` extra space (in-place sort).
+**Complexity:** `O(n log n)` time, `O(1)` extra space (beyond the sort).

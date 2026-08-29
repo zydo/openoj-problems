@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxPathLength(vector<vector<int>>& coordinates, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxPathLength(vector<vector<int>> &coordinates, int k) { throw logic_error("TODO"); }
 };

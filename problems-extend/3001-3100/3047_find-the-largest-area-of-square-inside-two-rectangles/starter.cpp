@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long largestSquareArea(vector<vector<int>>& bottomLeft, vector<vector<int>>& topRight) {
+  public:
+    long long largestSquareArea(vector<vector<int>> &bottomLeft, vector<vector<int>> &topRight) {
         throw logic_error("TODO");
     }
 };

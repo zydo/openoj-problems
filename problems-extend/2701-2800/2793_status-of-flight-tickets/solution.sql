@@ -1,14 +1,17 @@
-WITH ranked AS (
-  SELECT
-    passenger_id,
-    flight_id,
-    ROW_NUMBER() OVER (
-      PARTITION BY flight_id
-      ORDER BY booking_time
-    ) AS rn
-  FROM
-    Passengers
-)
+WITH
+  ranked AS (
+    SELECT
+      passenger_id,
+      flight_id,
+      ROW_NUMBER() OVER (
+        PARTITION BY
+          flight_id
+        ORDER BY
+          booking_time
+      ) AS rn
+    FROM
+      Passengers
+  )
 SELECT
   r.passenger_id AS passenger_id,
   CASE

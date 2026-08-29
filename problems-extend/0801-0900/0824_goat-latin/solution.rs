@@ -6,9 +6,7 @@ impl Solution {
     // ends in exactly i 'a's. The vowel test is case-blind: 'I' opens
     // the first example as a vowel.
     pub fn to_goat_latin(sentence: String) -> String {
-        let is_vowel = |c: u8| {
-            matches!(c, b'a' | b'e' | b'i' | b'o' | b'u' | b'A' | b'E' | b'I' | b'O' | b'U')
-        };
+        let is_vowel = |c: u8| matches!(c, b'a' | b'e' | b'i' | b'o' | b'u' | b'A' | b'E' | b'I' | b'O' | b'U');
         let mut parts: Vec<String> = Vec::new();
         for (index, word) in sentence.split(' ').enumerate() {
             let (stem, moved) = if is_vowel(word.as_bytes()[0]) {

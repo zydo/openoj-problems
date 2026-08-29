@@ -1,7 +1,8 @@
 class Solution {
 
     public int minFlips(int[][] grid) {
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         // Reflections in both axes partition the cells into orbits that must
         // end uniform: quadrant quadruples, pairs along the middle row/column
         // of odd dimensions, and the lone center when both are odd. Price
@@ -9,12 +10,12 @@ class Solution {
         int cost = 0;
         for (int i = 0; i < m / 2; ++i) {
             for (int j = 0; j < n / 2; ++j) {
-                int ones = grid[i][j] + grid[i][n - 1 - j] + grid[m - 1 - i][j]
-                        + grid[m - 1 - i][n - 1 - j];
+                int ones = grid[i][j] + grid[i][n - 1 - j] + grid[m - 1 - i][j] + grid[m - 1 - i][n - 1 - j];
                 cost += Math.min(ones, 4 - ones);
             }
         }
-        int splits = 0, uniforms = 0;
+        int splits = 0,
+            uniforms = 0;
         if (m % 2 == 1) {
             for (int j = 0; j < n / 2; ++j) {
                 int ones = grid[m / 2][j] + grid[m / 2][n - 1 - j];

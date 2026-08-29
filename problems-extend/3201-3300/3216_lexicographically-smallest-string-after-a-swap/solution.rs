@@ -7,9 +7,7 @@ impl Solution {
         let mut chars = s.into_bytes();
         let n = chars.len();
         for i in 0..n.saturating_sub(1) {
-            if chars[i] > chars[i + 1]
-                && (chars[i] - b'0') % 2 == (chars[i + 1] - b'0') % 2
-            {
+            if chars[i] > chars[i + 1] && (chars[i] - b'0') % 2 == (chars[i + 1] - b'0') % 2 {
                 // At most one swap is allowed, so stop right after it.
                 chars.swap(i, i + 1);
                 break;

@@ -7,8 +7,12 @@ class Solution {
         // Boundary-shrinking walk: emit the ring of the matrix that is left —
         // top row, right column, bottom row, left column — then shrink every
         // boundary inward by one and repeat until every element is emitted.
-        int rows = matrix.length, columns = matrix[0].length;
-        int top = 0, bottom = rows - 1, left = 0, right = columns - 1;
+        int rows = matrix.length,
+            columns = matrix[0].length;
+        int top = 0,
+            bottom = rows - 1,
+            left = 0,
+            right = columns - 1;
         List<Integer> order = new ArrayList<>();
         while (order.size() < rows * columns) {
             for (int column = left; column <= right; ++column) {

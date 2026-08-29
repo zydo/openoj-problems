@@ -20,7 +20,12 @@ function gridIllumination(n: number, lamps: number[][], queries: number[][]): bo
 
     const ans: boolean[] = [];
     for (const [x, y] of queries) {
-        ans.push((row.get(x) || 0) > 0 || (col.get(y) || 0) > 0 || (diag.get(x - y) || 0) > 0 || (antiDiag.get(x + y) || 0) > 0);
+        ans.push(
+            (row.get(x) || 0) > 0 ||
+                (col.get(y) || 0) > 0 ||
+                (diag.get(x - y) || 0) > 0 ||
+                (antiDiag.get(x + y) || 0) > 0,
+        );
 
         for (let dx = -1; dx <= 1; dx++) {
             for (let dy = -1; dy <= 1; dy++) {

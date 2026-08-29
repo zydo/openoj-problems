@@ -3,9 +3,7 @@ from typing import List
 
 
 class Solution:
-    def maximumSumQueries(
-        self, nums1: List[int], nums2: List[int], queries: List[List[int]]
-    ) -> List[int]:
+    def maximumSumQueries(self, nums1: List[int], nums2: List[int], queries: List[List[int]]) -> List[int]:
         n = len(nums1)
         points = sorted(((nums1[j], nums2[j]) for j in range(n)), key=lambda p: -p[0])
         order = sorted(range(len(queries)), key=lambda k: -queries[k][0])

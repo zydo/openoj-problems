@@ -26,7 +26,12 @@ var uniquePathsIII = function (grid) {
             }
         }
     }
-    const steps = [[-1, 0], [1, 0], [0, -1], [0, 1]];
+    const steps = [
+        [-1, 0],
+        [1, 0],
+        [0, -1],
+        [0, 1],
+    ];
 
     function dfs(r, c, mask) {
         // No square may be walked twice, so meeting the ending square ends

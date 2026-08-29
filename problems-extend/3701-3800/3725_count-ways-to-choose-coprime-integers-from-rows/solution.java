@@ -38,7 +38,7 @@ class Solution {
                 for (int multiple = d; multiple <= top; multiple += d) {
                     count += freq[multiple];
                 }
-                f[d] = f[d] * count % MOD;
+                f[d] = (f[d] * count) % MOD;
             }
             for (int v : row) {
                 freq[v]--;
@@ -48,6 +48,6 @@ class Solution {
         for (int d = 0; d <= top; d++) {
             answer += (long) mu[d] * f[d];
         }
-        return (int) ((answer % MOD + MOD) % MOD);
+        return (int) (((answer % MOD) + MOD) % MOD);
     }
 }

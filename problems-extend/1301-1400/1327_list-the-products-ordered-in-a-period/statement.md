@@ -4,10 +4,10 @@
 
 Table: `Products`
 
-| Column Name | Type |
-| ----------- | ---- |
-| product_id | int |
-| product_name | varchar |
+| Column Name      | Type    |
+| ---------------- | ------- |
+| product_id       | int     |
+| product_name     | varchar |
 | product_category | varchar |
 
 product_id is the primary key (column with unique values) for this table.
@@ -17,9 +17,9 @@ Table: `Orders`
 
 | Column Name | Type |
 | ----------- | ---- |
-| product_id | int |
-| order_date | date |
-| unit | int |
+| product_id  | int  |
+| order_date  | date |
+| unit        | int  |
 
 This table may have duplicate rows.
 product_id is a foreign key (reference column) to the Products table.

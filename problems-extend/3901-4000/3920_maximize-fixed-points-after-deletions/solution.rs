@@ -3,7 +3,9 @@ impl Solution {
         let mut candidates: Vec<(i32, usize)> = nums
             .iter()
             .enumerate()
-            .filter_map(|(index, &value)| (value >= 0 && value as usize <= index).then_some((value, index - value as usize)))
+            .filter_map(|(index, &value)| {
+                (value >= 0 && value as usize <= index).then_some((value, index - value as usize))
+            })
             .collect();
         candidates.sort_unstable();
         let mut bit = vec![0i32; nums.len() + 1];

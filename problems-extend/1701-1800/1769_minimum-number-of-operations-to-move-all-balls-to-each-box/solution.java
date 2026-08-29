@@ -7,7 +7,8 @@ class Solution {
         // step per ball at or left of i — so carry (count, ops) forward.
         int n = boxes.length();
         int[] answer = new int[n];
-        int count = 0, ops = 0;
+        int count = 0,
+            ops = 0;
         for (int i = 0; i < n; i++) {
             answer[i] += ops;
             count += boxes.charAt(i) == '1' ? 1 : 0;

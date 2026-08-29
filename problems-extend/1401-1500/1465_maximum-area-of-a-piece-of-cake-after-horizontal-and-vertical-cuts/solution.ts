@@ -1,9 +1,4 @@
-function maxArea(
-    h: number,
-    w: number,
-    horizontalCuts: number[],
-    verticalCuts: number[],
-): number {
+function maxArea(h: number, w: number, horizontalCuts: number[], verticalCuts: number[]): number {
     const MOD = 1000000007;
     const widest = (length: number, cuts: number[]): number => {
         cuts.sort((a, b) => a - b);

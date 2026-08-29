@@ -20,7 +20,7 @@ class Solution {
             int above = n - leq;
             boolean found = false;
             for (int m = 0, r = k; m <= above && r >= 0; m++, r -= x) {
-                if ((reach[r >>> 6] >>> (r & 63) & 1L) != 0L) {
+                if (((reach[r >>> 6] >>> (r & 63)) & 1L) != 0L) {
                     found = true;
                     break;
                 }

@@ -3,7 +3,8 @@ class Solution {
     public int longestLine(int[][] mat) {
         // Scan row by row; prev[j] holds the four run lengths that end at
         // cell (i - 1, j): horizontal, vertical, diagonal, anti-diagonal.
-        int m = mat.length, n = mat[0].length;
+        int m = mat.length,
+            n = mat[0].length;
         int[][] prev = new int[n][4];
         int best = 0;
         for (int i = 0; i < m; ++i) {

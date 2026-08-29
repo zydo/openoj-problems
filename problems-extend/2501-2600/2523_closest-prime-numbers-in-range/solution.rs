@@ -28,8 +28,7 @@ impl Solution {
             if !sieve[n as usize] {
                 continue;
             }
-            if previous != -1 && (best_pair[0] == -1 || n - previous < best_pair[1] - best_pair[0])
-            {
+            if previous != -1 && (best_pair[0] == -1 || n - previous < best_pair[1] - best_pair[0]) {
                 best_pair[0] = previous;
                 best_pair[1] = n;
             }

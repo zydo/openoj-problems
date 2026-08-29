@@ -77,7 +77,8 @@ Check how many ways you can distribute the balls between the boxes.
 Consider that one way you will use `(x1, x2, x3, ..., xk)` where `xi` is
 the number of balls from colour i. The probability of achieving this way
 randomly is `( (ball1 C x1) * (ball2 C x2) * (ball3 C x3) * ...
-* (ballk C xk)) / (2n C n)`.
+
+- (ballk C xk)) / (2n C n)`.
 
 ### Hint 3
 

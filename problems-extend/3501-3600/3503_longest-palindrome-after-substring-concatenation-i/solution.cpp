@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int longestPalindrome(string s, string t) {
         int n = s.size(), m = t.size();
         // palS[i][j] (palT[i][j]) records whether s[i..j] (t[i..j]) is a

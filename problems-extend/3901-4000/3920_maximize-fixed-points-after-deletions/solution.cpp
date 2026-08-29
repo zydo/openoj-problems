@@ -7,17 +7,20 @@ class Solution {
     int maxFixedPoints(std::vector<int> &nums) {
         std::vector<std::pair<int, int>> candidates;
         for (int i = 0; i < (int)nums.size(); ++i) {
-            if (nums[i] <= i) candidates.push_back({nums[i], i - nums[i]});
+            if (nums[i] <= i)
+                candidates.push_back({nums[i], i - nums[i]});
         }
         std::sort(candidates.begin(), candidates.end());
         std::vector<int> bit(nums.size() + 1, 0);
         auto query = [&](int index) {
             int best = 0;
-            for (++index; index > 0; index -= index & -index) best = std::max(best, bit[index]);
+            for (++index; index > 0; index -= index & -index)
+                best = std::max(best, bit[index]);
             return best;
         };
         auto update = [&](int index, int value) {
-            for (++index; index < (int)bit.size(); index += index & -index) bit[index] = std::max(bit[index], value);
+            for (++index; index < (int)bit.size(); index += index & -index)
+                bit[index] = std::max(bit[index], value);
         };
 
         int answer = 0;
@@ -31,7 +34,8 @@ class Solution {
                 answer = std::max(answer, length);
                 ++end;
             }
-            for (auto [deletionCount, length] : pending) update(deletionCount, length);
+            for (auto [deletionCount, length] : pending)
+                update(deletionCount, length);
             start = end;
         }
         return answer;

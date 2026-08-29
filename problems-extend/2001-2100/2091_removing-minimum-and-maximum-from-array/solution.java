@@ -1,4 +1,5 @@
 class Solution {
+
     public int minimumDeletions(int[] nums) {
         int minimumIndex = 0;
         int maximumIndex = 0;

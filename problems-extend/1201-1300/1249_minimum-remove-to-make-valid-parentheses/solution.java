@@ -9,7 +9,8 @@ class Solution {
             char ch = s.charAt(i);
             if (ch == '(') opens.push(i);
             else if (ch == ')') {
-                if (!opens.isEmpty()) opens.pop(); // matched: both survive
+                if (!opens.isEmpty()) opens.pop();
+                // matched: both survive
                 else keep[i] = false; // orphan close, doomed
             }
         }

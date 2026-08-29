@@ -20,7 +20,7 @@ down to `k = 2` and banks one shift; every earlier operation leaves position
 2 in its first half, and `'a'` advanced once is `'b'`. JavaScript's plain
 `number` stays exact here: `k <= 10¹⁴ < 2⁵³`, each step only halves
 `position`, and the `2 ** index` thresholds are exact powers of two up to
-2¹⁰²³ — only the *lengths* grow astronomically, never an arithmetic
+2¹⁰²³ — only the _lengths_ grow astronomically, never an arithmetic
 operand beyond those bounds.
 
 The backward walk visits each operation at most once, so the cost follows the

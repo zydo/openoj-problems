@@ -2,9 +2,11 @@ class Solution {
 
     public int minimumSwap(String s1, String s2) {
         // Each swap fixes two mismatches, so an odd total is impossible.
-        int xy = 0, yx = 0;
+        int xy = 0,
+            yx = 0;
         for (int i = 0; i < s1.length(); ++i) {
-            char a = s1.charAt(i), b = s2.charAt(i);
+            char a = s1.charAt(i),
+                b = s2.charAt(i);
             if (a == 'x' && b == 'y') ++xy;
             else if (a == 'y' && b == 'x') ++yx;
         }

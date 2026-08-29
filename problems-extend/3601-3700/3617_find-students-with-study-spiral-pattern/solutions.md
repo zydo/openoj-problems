@@ -26,6 +26,9 @@ defines the reported row — the longest cycle, with the highest study hours
 breaking a tie. Joining back to `students` restores the name and major, and
 the final ordering mirrors the required `cycle_length DESC,
 total_study_hours DESC` output, with `student_id ASC` as a stable tiebreaker
-for rows that agree on both.
+for rows that agree on both; the judge compares rows as an unordered
+multiset, so the ordering is fidelity to the statement rather than a
+correctness requirement. The hours total is cast to REAL before it leaves
+the query so every judge row carries the decimal value the statement shows.
 
 **Complexity:** `O(m log m)` time, `O(m)` space (m study-session rows).

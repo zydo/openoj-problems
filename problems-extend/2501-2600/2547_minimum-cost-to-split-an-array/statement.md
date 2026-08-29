@@ -15,8 +15,8 @@ which appear only once are removed.
 The importance value of a subarray is k + trimmed(subarray).length.
 
 - For example, if a subarray is `[1,2,3,3,3,4,4]`, then
-`trimmed([1,2,3,3,3,4,4]) = [3,3,3,4,4]`.The importance value of this
-subarray will be k + 5.
+  `trimmed([1,2,3,3,3,4,4]) = [3,3,3,4,4]`.The importance value of this
+  subarray will be k + 5.
 
 Return the minimum possible cost of a split of nums.
 

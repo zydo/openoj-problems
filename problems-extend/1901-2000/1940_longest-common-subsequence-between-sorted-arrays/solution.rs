@@ -10,8 +10,6 @@ impl Solution {
                 counts[value as usize] += 1;
             }
         }
-        (1..=100)
-            .filter(|&v| counts[v as usize] == arrays.len())
-            .collect()
+        (1..=100).filter(|&v| counts[v as usize] == arrays.len()).collect()
     }
 }

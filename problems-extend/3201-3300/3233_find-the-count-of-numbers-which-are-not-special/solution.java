@@ -37,6 +37,6 @@ class Solution {
                 composite[(int) m] = true;
             }
         }
-        return (r - l + 1) - specials;
+        return r - l + 1 - specials;
     }
 }

@@ -54,16 +54,12 @@ class TwoArrayCase {
     private materialize(entry: WireElement): unknown {
         const [tag, payload] = entry;
         if (tag === "a") {
-            return (payload as WireElement[]).map((child) =>
-                this.materialize(child),
-            );
+            return (payload as WireElement[]).map((child) => this.materialize(child));
         }
         if (tag === "o") {
             const obj: Record<string, unknown> = {};
             for (const key of Object.keys(payload as Record<string, unknown>)) {
-                obj[key] = this.materialize(
-                    (payload as Record<string, unknown>)[key] as WireElement,
-                );
+                obj[key] = this.materialize((payload as Record<string, unknown>)[key] as WireElement);
             }
             return obj;
         }

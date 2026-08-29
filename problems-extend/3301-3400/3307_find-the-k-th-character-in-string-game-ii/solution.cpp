@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    string kthCharacter(long long k, vector<int>& operations) {
+    string kthCharacter(long long k, vector<int> &operations) {
         // The final word can span 2^100 characters, so it is never built.
         // Replay backwards from k: operation i (which doubles the length
         // from 2^i to 2^(i+1)) only touches the position when k sits in its

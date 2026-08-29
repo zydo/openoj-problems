@@ -12,10 +12,7 @@ impl Solution {
             // lexicographically smaller coordinate wins.
             let better = match &best {
                 None => true,
-                Some(b) => {
-                    quality > best_quality
-                        || (quality == best_quality && (x < b[0] || (x == b[0] && y < b[1])))
-                }
+                Some(b) => quality > best_quality || (quality == best_quality && (x < b[0] || (x == b[0] && y < b[1]))),
             };
             if better {
                 best = Some(vec![x, y]);

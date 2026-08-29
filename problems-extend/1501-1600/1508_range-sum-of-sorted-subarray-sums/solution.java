@@ -7,7 +7,7 @@ class Solution {
     public int rangeSum(int[] nums, int n, int left, int right) {
         // Every subarray sum, generated with a running total per start index
         // so each end index adds O(1) work instead of re-summing nums[i..j].
-        int total = n * (n + 1) / 2;
+        int total = (n * (n + 1)) / 2;
         int[] sums = new int[total];
         int index = 0;
         for (int i = 0; i < n; ++i) {

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countPrimeSetBits(int left, int right) {
         // A 0/1 table indexed by set-bit count holds the primality
         // verdict for every count the bound allows: right <= 10^6 fits

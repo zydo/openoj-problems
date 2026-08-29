@@ -27,17 +27,12 @@ class Solution {
             for (int j = 0; j < n; j++) {
                 if (i == 0 && j == 0)
                     continue;
-                while (!rows[i].empty() &&
-                       grid[i][rows[i].top().second] + rows[i].top().second <
-                           j)
+                while (!rows[i].empty() && grid[i][rows[i].top().second] + rows[i].top().second < j)
                     rows[i].pop();
-                while (!cols[j].empty() &&
-                       grid[cols[j].top().second][j] + cols[j].top().second <
-                           i)
+                while (!cols[j].empty() && grid[cols[j].top().second][j] + cols[j].top().second < i)
                     cols[j].pop();
-                long long nearest =
-                    min(rows[i].empty() ? LLONG_MAX : rows[i].top().first,
-                        cols[j].empty() ? LLONG_MAX : cols[j].top().first);
+                long long nearest = min(rows[i].empty() ? LLONG_MAX : rows[i].top().first,
+                                        cols[j].empty() ? LLONG_MAX : cols[j].top().first);
                 if (nearest != LLONG_MAX) {
                     dis[i][j] = nearest + 1;
                     rows[i].push({nearest + 1, j});
@@ -45,8 +40,6 @@ class Solution {
                 }
             }
         }
-        return dis[m - 1][n - 1] == LLONG_MAX
-                   ? -1
-                   : static_cast<int>(dis[m - 1][n - 1]);
+        return dis[m - 1][n - 1] == LLONG_MAX ? -1 : static_cast<int>(dis[m - 1][n - 1]);
     }
 };

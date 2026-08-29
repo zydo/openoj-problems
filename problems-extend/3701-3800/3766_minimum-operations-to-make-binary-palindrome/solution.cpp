@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> minOperations(vector<int>& nums) {
+    vector<int> minOperations(vector<int> &nums) {
         // The definition, read literally: widen the offset d = 0, 1, 2,
         // ... and stop at the first d where either neighbor is a binary
         // palindrome; that first hit costs exactly d operations and no

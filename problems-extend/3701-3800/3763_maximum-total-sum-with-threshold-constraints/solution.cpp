@@ -29,7 +29,8 @@ class Solution {
                     live.push({-nums[i], i});
                 }
             }
-            if (live.empty()) break;
+            if (live.empty())
+                break;
             total += -live.top().first;
             live.pop();
             ++step;

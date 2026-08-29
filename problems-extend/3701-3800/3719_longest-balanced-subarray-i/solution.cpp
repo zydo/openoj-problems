@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int longestBalanced(vector<int>& nums) {
+    int longestBalanced(vector<int> &nums) {
         int n = nums.size(), best = 0;
         // Fix the left endpoint and stretch the right one; the two sets hold
         // the distinct even and odd values of the current window, so equal

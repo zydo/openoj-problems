@@ -4,8 +4,10 @@ class Solution {
         // Both guarantees together make row-major reading order one sorted
         // sequence, so a single bisection over the flattened index space
         // honors the O(log(m * n)) requirement.
-        int m = matrix.length, n = matrix[0].length;
-        int lo = 0, hi = m * n;
+        int m = matrix.length,
+            n = matrix[0].length;
+        int lo = 0,
+            hi = m * n;
         while (lo < hi) {
             int mid = (lo + hi) / 2;
             if (matrix[mid / n][mid % n] < target) {

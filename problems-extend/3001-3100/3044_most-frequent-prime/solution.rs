@@ -6,8 +6,14 @@ impl Solution {
         // the matrix edge; a path is fully described by its start and
         // direction.
         let directions = [
-            (0i32, 1i32), (1, 1), (1, 0), (1, -1),
-            (0, -1), (-1, -1), (-1, 0), (-1, 1),
+            (0i32, 1i32),
+            (1, 1),
+            (1, 0),
+            (1, -1),
+            (0, -1),
+            (-1, -1),
+            (-1, 0),
+            (-1, 1),
         ];
         let m = mat.len() as i32;
         let n = mat[0].len() as i32;

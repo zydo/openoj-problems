@@ -2,7 +2,6 @@ import (
 	"sort"
 )
 
-
 func getKth(lo int, hi int, k int) int {
 	// Memoized path replay: walk each value's Collatz chain, recording
 	// the route until it lands on a value whose power is already known,

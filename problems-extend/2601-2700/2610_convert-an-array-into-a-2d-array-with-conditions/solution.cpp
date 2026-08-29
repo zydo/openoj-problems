@@ -11,7 +11,8 @@ class Solution {
         vector<vector<int>> rows;
         for (int value : nums) {
             int rank = seen[value]++;
-            if (rank == (int)rows.size()) rows.push_back({});
+            if (rank == (int)rows.size())
+                rows.push_back({});
             rows[rank].push_back(value);
         }
         return rows;

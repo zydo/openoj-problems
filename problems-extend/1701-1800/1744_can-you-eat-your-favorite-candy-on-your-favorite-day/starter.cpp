@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<bool> canEat(vector<int>& candiesCount, vector<vector<int>>& queries) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<bool> canEat(vector<int> &candiesCount, vector<vector<int>> &queries) { throw logic_error("TODO"); }
 };

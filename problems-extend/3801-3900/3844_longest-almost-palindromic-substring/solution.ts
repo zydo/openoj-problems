@@ -23,9 +23,7 @@ function almostPalindromic(s: string): number {
             // Delete the right end, delete the left end, or keep both
             // matching ends and use the deletion inside.
             almostNow[left] = Number(
-                palOne[left] !== 0 ||
-                    palOne[left + 1] !== 0 ||
-                    (sameEnds && almostTwo[left + 1] !== 0),
+                palOne[left] !== 0 || palOne[left + 1] !== 0 || (sameEnds && almostTwo[left + 1] !== 0),
             );
             if (almostNow[left]) {
                 best = length;

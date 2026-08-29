@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maximumDetonation(vector<vector<int>>& bombs) {
+  public:
+    int maximumDetonation(vector<vector<int>> &bombs) {
         int count = static_cast<int>(bombs.size());
         vector<vector<int>> graph(count);
         for (int source = 0; source < count; ++source) {

@@ -4,6 +4,6 @@
  * @param {number} q
  * @return {number}
  */
-var findDistance = function(root, p, q) {
+var findDistance = function (root, p, q) {
     throw new Error("TODO");
 };

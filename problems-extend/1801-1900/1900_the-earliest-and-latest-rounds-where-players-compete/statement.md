@@ -15,9 +15,9 @@ current round, the player in the middle automatically advances to the
 next round.
 
 - For example, if the row consists of players `1, 2, 4, 6, 7`
-  - Player `1` competes against player `7`.
-  - Player `2` competes against player `6`.
-  - Player `4` automatically advances to the next round.
+    - Player `1` competes against player `7`.
+    - Player `2` competes against player `6`.
+    - Player `4` automatically advances to the next round.
 
 After each round is over, the winners are lined back up in the row based
 on the original ordering assigned to them initially (ascending order).

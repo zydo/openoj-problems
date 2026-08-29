@@ -47,8 +47,7 @@ impl Solution {
         }
         let mut total = 0;
         for &chess_move in &options[index] {
-            let valid = (0..index)
-                .all(|other| Self::compatible(index, chess_move, other, chosen[other], positions));
+            let valid = (0..index).all(|other| Self::compatible(index, chess_move, other, chosen[other], positions));
             if valid {
                 chosen.push(chess_move);
                 total += Self::search(index + 1, positions, options, chosen);
@@ -58,7 +57,13 @@ impl Solution {
         total
     }
 
-    fn compatible(index: usize, chess_move: ChessMove, other: usize, other_move: ChessMove, positions: &[Vec<i32>]) -> bool {
+    fn compatible(
+        index: usize,
+        chess_move: ChessMove,
+        other: usize,
+        other_move: ChessMove,
+        positions: &[Vec<i32>],
+    ) -> bool {
         for second in 0..=7 {
             let row = positions[index][0] + chess_move.dr * second.min(chess_move.steps);
             let column = positions[index][1] + chess_move.dc * second.min(chess_move.steps);

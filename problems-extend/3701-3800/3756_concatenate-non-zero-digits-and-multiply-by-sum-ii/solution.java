@@ -20,7 +20,7 @@ class Solution {
             prefVal[i + 1] = prefVal[i];
             prefSum[i + 1] = prefSum[i] + d;
             prefCnt[i + 1] = prefCnt[i];
-            pow10[i + 1] = pow10[i] * 10 % MOD;
+            pow10[i + 1] = (pow10[i] * 10) % MOD;
             if (s.charAt(i) != '0') {
                 prefVal[i + 1] = (prefVal[i] * 10 + d) % MOD;
                 prefCnt[i + 1]++;

@@ -22,10 +22,10 @@ class MyCalendarTwo {
         }
         for (int[] event : singles) {
             if (start < event[1] && event[0] < end) {
-                doubles.add(new int[] {Math.max(start, event[0]), Math.min(end, event[1])});
+                doubles.add(new int[] { Math.max(start, event[0]), Math.min(end, event[1]) });
             }
         }
-        singles.add(new int[] {start, end});
+        singles.add(new int[] { start, end });
         return true;
     }
 }

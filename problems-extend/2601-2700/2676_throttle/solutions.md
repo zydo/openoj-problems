@@ -11,7 +11,7 @@ When the timer fires there are only two futures to distinguish. If nothing
 was saved during the window, the wrapper simply goes idle again. Otherwise
 the saved arguments execute at the fire instant — which is where the judge's
 virtual clock pins the transcript row — and a fresh window of t milliseconds
-opens from *that* moment, chaining until a quiet window finally lets the
+opens from _that_ moment, chaining until a quiet window finally lets the
 wrapper rest. One explicit null sentinel matters throughout: an empty
 argument list is a legitimate saved value and must not be confused with
 "nothing stored", so membership relies on identity against null rather than

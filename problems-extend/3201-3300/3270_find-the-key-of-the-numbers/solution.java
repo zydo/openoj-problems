@@ -6,7 +6,7 @@ class Solution {
         // integer result drops any leading zeros by construction.
         int key = 0;
         for (int place = 1000; place > 0; place /= 10) {
-            key = key * 10 + Math.min(num1 / place % 10, Math.min(num2 / place % 10, num3 / place % 10));
+            key = key * 10 + Math.min((num1 / place) % 10, Math.min((num2 / place) % 10, (num3 / place) % 10));
         }
         return key;
     }

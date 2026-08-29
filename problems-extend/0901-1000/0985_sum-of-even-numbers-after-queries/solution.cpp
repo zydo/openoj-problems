@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> sumEvenAfterQueries(vector<int>& nums, vector<vector<int>>& queries) {
+    vector<int> sumEvenAfterQueries(vector<int> &nums, vector<vector<int>> &queries) {
         // Every query rewrites exactly one element, so the even sum can only
         // change through that element: carry it as a running total — subtract
         // the old value when it is even, apply the addition, add the new value
@@ -13,7 +13,7 @@ class Solution {
         }
         vector<int> answer;
         answer.reserve(queries.size());
-        for (const auto& query : queries) {
+        for (const auto &query : queries) {
             int index = query[1];
             int old = nums[index];
             // the old value leaves the total before the addition lands, so a

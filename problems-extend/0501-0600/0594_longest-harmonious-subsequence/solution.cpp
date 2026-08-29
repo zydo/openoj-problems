@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int findLHS(vector<int>& nums) {
+    int findLHS(vector<int> &nums) {
         // Deletion freedom reduces the subsequence to its value multiset:
         // only how often each value occurs matters, never the order. The
         // exactly-1 gap forces a harmonious pick onto the two values v and
@@ -13,7 +13,7 @@ class Solution {
             ++counts[value];
         }
         int best = 0;
-        for (const auto& entry : counts) {
+        for (const auto &entry : counts) {
             auto next = counts.find(entry.first + 1);
             if (next != counts.end()) {
                 best = max(best, entry.second + next->second);

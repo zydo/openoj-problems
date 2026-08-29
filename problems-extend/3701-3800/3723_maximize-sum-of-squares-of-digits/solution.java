@@ -8,7 +8,8 @@ class Solution {
         // The optimal digits are forced — floor(sum / 9) nines plus at most
         // one leftover r — and descending order is the largest arrangement,
         // so lay them out from the left and pad with zeros.
-        int q = sum / 9, r = sum % 9;
+        int q = sum / 9,
+            r = sum % 9;
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < q; i++) {
             result.append('9');

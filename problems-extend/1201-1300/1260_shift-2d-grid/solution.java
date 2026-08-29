@@ -1,7 +1,8 @@
 class Solution {
 
     public int[][] shiftGrid(int[][] grid, int k) {
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         int total = m * n;
         k %= total;
         // One shift = a cyclic right-rotation of the flattened grid.

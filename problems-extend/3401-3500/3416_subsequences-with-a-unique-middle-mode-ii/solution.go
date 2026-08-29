@@ -38,9 +38,9 @@ func subsequencesWithMiddleMode(nums []int) int {
 	for i, v := range nums {
 		cntv := total[v]
 		l := left[v]
-		r := cntv - l - 1 // the middle occurrence is on neither side
-		NL := int64(i - l)             // non-v elements left of i
-		NR := int64(n-1-i) - int64(r)  // non-v elements right of i
+		r := cntv - l - 1             // the middle occurrence is on neither side
+		NL := int64(i - l)            // non-v elements left of i
+		NR := int64(n-1-i) - int64(r) // non-v elements right of i
 
 		// Per-value sums over w != v, rebuilt from the aggregates. For v
 		// itself the moment value cnt - l still contains the middle
@@ -62,8 +62,8 @@ func subsequencesWithMiddleMode(nums []int) int {
 		// f >= 3 no other value can catch up, so only f = 2 needs the
 		// inclusion-exclusion on the three non-v fills.
 		c2l, c2r := c2(int64(l)), c2(int64(r))
-		val := cm(c2l, c2r) // f = 5
-		val += (cm(int64(l), c2r)*NL + cm(c2l, int64(r))*NR) % MOD // f = 4
+		val := cm(c2l, c2r)                                                          // f = 5
+		val += (cm(int64(l), c2r)*NL + cm(c2l, int64(r))*NR) % MOD                   // f = 4
 		val += cm(c2r, c2(NL)) + cm(cm(int64(l), int64(r)), NL*NR) + cm(c2l, c2(NR)) // f = 3
 		// f = 2: one more v on the left (or right), the three non-v fills
 		// pairwise distinct.

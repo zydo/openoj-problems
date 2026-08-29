@@ -8,8 +8,10 @@ type mazeItem struct {
 
 type mazeHeap []mazeItem
 
-func (h mazeHeap) Len() int            { return len(h) }
-func (h mazeHeap) Less(i, j int) bool  { return h[i].d < h[j].d || (h[i].d == h[j].d && h[i].path < h[j].path) }
+func (h mazeHeap) Len() int { return len(h) }
+func (h mazeHeap) Less(i, j int) bool {
+	return h[i].d < h[j].d || (h[i].d == h[j].d && h[i].path < h[j].path)
+}
 func (h mazeHeap) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
 func (h *mazeHeap) Push(x interface{}) { *h = append(*h, x.(mazeItem)) }
 func (h *mazeHeap) Pop() interface{} {

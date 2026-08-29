@@ -17,9 +17,9 @@ and the submission date.
 Write a solution to report:
 
 - the number of tasks that were submitted during the weekend (Saturday,
-Sunday) as `weekend_cnt`, and
+  Sunday) as `weekend_cnt`, and
 - the number of tasks that were submitted during the working days as
-`working_cnt`.
+  `working_cnt`.
 
 Return the result table in any order.
 

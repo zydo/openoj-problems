@@ -15,7 +15,8 @@ class Solution {
             // every later anchor no smaller, so the walk can stop outright.
             if (nums[i] + nums[i + 1] + nums[i + 2] >= target) break;
             int remaining = target - nums[i];
-            int lo = i + 1, hi = nums.length - 1;
+            int lo = i + 1,
+                hi = nums.length - 1;
             while (lo < hi) {
                 if (nums[lo] + nums[hi] < remaining) {
                     // Sorted order pairs this lo with every index up to hi

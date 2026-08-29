@@ -14,7 +14,8 @@ impl Solution {
             } else if ch == b'#' {
                 let doubled = result.clone();
                 result.extend_from_slice(&doubled);
-            } else {  // '%'
+            } else {
+                // '%'
                 result.reverse();
             }
         }

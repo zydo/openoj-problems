@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minChanges(vector<int>& nums, int k) {
+    int minChanges(vector<int> &nums, int k) {
         // Every symmetric pair (nums[i], nums[n-1-i]) must end up exactly d
         // apart for one shared difference d, so the answer is the cheapest
         // per-pair total over all k + 1 candidates. Sorted as lo <= hi, a

@@ -8,7 +8,8 @@ class Solution {
         int n = s.size();
         for (int i = 0; i < n; i++) {
             for (int j = i; j < n; j++) {
-                if (s[j] != s[i]) break;
+                if (s[j] != s[i])
+                    break;
                 counts[s.substr(i, j - i + 1)]++;
             }
         }

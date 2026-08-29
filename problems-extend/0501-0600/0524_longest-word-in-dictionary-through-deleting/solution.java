@@ -16,9 +16,10 @@ class Solution {
             boolean formable = i == word.length();
             // Longer wins; equal lengths go to the lexicographically smaller
             // word. The empty seed makes the no-answer case return "".
-            if (formable
-                    && (word.length() > best.length()
-                            || (word.length() == best.length() && word.compareTo(best) < 0))) {
+            if (
+                formable &&
+                (word.length() > best.length() || (word.length() == best.length() && word.compareTo(best) < 0))
+            ) {
                 best = word;
             }
         }

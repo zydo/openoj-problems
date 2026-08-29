@@ -23,7 +23,7 @@ func minAreaFreeRect(points [][]int) float64 {
 		for j := i + 1; j < n; j++ {
 			x2, y2 := int64(points[j][0]), int64(points[j][1])
 			dx, dy := x1-x2, y1-y2
-			center := (x1+x2)*80001 + (y1+y2)
+			center := (x1+x2)*80001 + (y1 + y2)
 			length2 := dx*dx + dy*dy
 			for _, stored := range diagonals[center] {
 				if stored.length2 != length2 {

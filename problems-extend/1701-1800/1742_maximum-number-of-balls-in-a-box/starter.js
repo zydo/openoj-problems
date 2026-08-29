@@ -3,6 +3,6 @@
  * @param {number} highLimit
  * @return {number}
  */
-var countBalls = function(lowLimit, highLimit) {
+var countBalls = function (lowLimit, highLimit) {
     throw new Error("TODO");
 };

@@ -27,7 +27,5 @@ class Solution:
         sentences = [""]
         for word in text.split(" "):
             options = members(word)
-            sentences = [prefix + " " + option
-                         for prefix in sentences
-                         for option in options]
+            sentences = [prefix + " " + option for prefix in sentences for option in options]
         return sorted(s[1:] for s in sentences)

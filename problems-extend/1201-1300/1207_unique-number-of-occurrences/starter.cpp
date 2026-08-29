@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool uniqueOccurrences(vector<int>& arr) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool uniqueOccurrences(vector<int> &arr) { throw logic_error("TODO"); }
 };

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> findMissingRanges(vector<int>& nums, int lower, int upper) {
+    vector<vector<int>> findMissingRanges(vector<int> &nums, int lower, int upper) {
         vector<vector<int>> ranges;
         // prev trails just behind the elements already visited; seeding it
         // with lower - 1 makes the gap before the first element an ordinary

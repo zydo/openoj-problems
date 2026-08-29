@@ -7,8 +7,11 @@ var maximumProduct = function (nums) {
     // the largest value times the two smallest — two negatives whose
     // product is a big positive. Track all five extremes in one pass; no
     // sort needed.
-    let max1 = -Infinity, max2 = -Infinity, max3 = -Infinity;
-    let min1 = Infinity, min2 = Infinity;
+    let max1 = -Infinity,
+        max2 = -Infinity,
+        max3 = -Infinity;
+    let min1 = Infinity,
+        min2 = Infinity;
     for (const value of nums) {
         if (value >= max1) {
             max3 = max2;

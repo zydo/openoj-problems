@@ -11,8 +11,7 @@ class Solution {
         int best = 0;
         for (int start = 0; start + minSize <= (int)s.size(); ++start) {
             std::string window = s.substr(start, minSize);
-            if ((int)std::unordered_set<char>(window.begin(), window.end()).size()
-                <= maxLetters) {
+            if ((int)std::unordered_set<char>(window.begin(), window.end()).size() <= maxLetters) {
                 best = std::max(best, ++counts[window]);
             }
         }

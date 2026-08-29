@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int compress(vector<string>& chars) {
+    int compress(vector<string> &chars) {
         // Two indexes share one pass: read scans a group of equal
         // characters to its end, write stores the compressed form back
         // into chars itself. A group of k characters compresses to

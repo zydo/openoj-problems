@@ -4,12 +4,12 @@
 
 Table: `UserActivity`
 
-| Column Name        | Type    |
-| ------------------ | ------- |
-| user_id            | int     |
-| activity_date      | date    |
-| activity_type      | varchar |
-| activity_duration  | int     |
+| Column Name       | Type    |
+| ----------------- | ------- |
+| user_id           | int     |
+| activity_date     | date    |
+| activity_type     | varchar |
+| activity_duration | int     |
 
 `(user_id, activity_date, activity_type)` is the unique key for this
 table. `activity_type` is one of (`'free_trial'`, `'paid'`,

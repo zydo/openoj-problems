@@ -43,7 +43,12 @@ impl HtmlParser {
             };
             links[source].push(names[target].clone());
         }
-        HtmlParser { index, links, fetched: std::collections::BTreeSet::new(), budget }
+        HtmlParser {
+            index,
+            links,
+            fetched: std::collections::BTreeSet::new(),
+            budget,
+        }
     }
 
     /// The crawl's observable effect: every page the crawler fetched.

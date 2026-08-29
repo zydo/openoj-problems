@@ -4,7 +4,7 @@
 
 class Solution {
   public:
-    int minimumCost(string target, vector<string>& words, vector<int>& costs) {
+    int minimumCost(string target, vector<string> &words, vector<int> &costs) {
         // Forward DP over prefixes: dp[i] is the minimum cost to assemble
         // target[:i], dp[0] is 0, and every reachable position extends each
         // DISTINCT word matching its next characters. Duplicate words first
@@ -31,8 +31,8 @@ class Solution {
             if (dp[i] == big) {
                 continue;
             }
-            for (const auto& entry : best) {
-                const string& word = entry.first;
+            for (const auto &entry : best) {
+                const string &word = entry.first;
                 int j = i + (int)word.size();
                 if (j > n || dp[i] + entry.second >= dp[j]) {
                     continue;

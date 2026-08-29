@@ -21,8 +21,7 @@ function minimumPairRemoval(nums: number[]): number {
     if (bad === 0) return 0;
     // Explicit binary min-heap on (sum, left, right).
     const heap: number[][] = [];
-    const less = (x: number[], y: number[]) =>
-        x[0] < y[0] || (x[0] === y[0] && x[1] < y[1]);
+    const less = (x: number[], y: number[]) => x[0] < y[0] || (x[0] === y[0] && x[1] < y[1]);
     const push = (e: number[]) => {
         heap.push(e);
         let i = heap.length - 1;

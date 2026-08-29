@@ -35,10 +35,7 @@ class Solution {
             if (kind == targetKind && shift == targetShift) {
                 return distance[kind][shift];
             }
-            int[][] neighbors = {
-                {kind, (shift + 1) % n},
-                {1 - kind, (n - shift) % n}
-            };
+            int[][] neighbors = { { kind, (shift + 1) % n }, { 1 - kind, (n - shift) % n } };
             for (int[] neighbor : neighbors) {
                 int nextKind = neighbor[0];
                 int nextShift = neighbor[1];

@@ -2,9 +2,11 @@ import "container/heap"
 
 type pairHeap [][3]int64
 
-func (h pairHeap) Len() int           { return len(h) }
-func (h pairHeap) Less(i, j int) bool { return h[i][0] < h[j][0] || (h[i][0] == h[j][0] && h[i][1] < h[j][1]) }
-func (h pairHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h pairHeap) Len() int { return len(h) }
+func (h pairHeap) Less(i, j int) bool {
+	return h[i][0] < h[j][0] || (h[i][0] == h[j][0] && h[i][1] < h[j][1])
+}
+func (h pairHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }
 
 func (h *pairHeap) Push(x interface{}) {
 	*h = append(*h, x.([3]int64))

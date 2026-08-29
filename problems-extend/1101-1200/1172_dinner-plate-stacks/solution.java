@@ -34,8 +34,7 @@ class DinnerPlates {
             if (stacks.get(idx).size() < capacity) {
                 vacant.offer(idx);
             }
-        } else if (!stacks.isEmpty()
-                && stacks.get(stacks.size() - 1).size() < capacity) {
+        } else if (!stacks.isEmpty() && stacks.get(stacks.size() - 1).size() < capacity) {
             // No recorded hole left of the tail: tail is leftmost vacant.
             stacks.get(stacks.size() - 1).addLast(val);
         } else {

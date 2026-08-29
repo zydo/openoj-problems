@@ -31,7 +31,10 @@ impl AuthenticationManager {
     pub fn generate(&mut self, tokenId: String, currentTime: i32) {
         let expiry = currentTime + self.time_to_live;
         self.expiry_by_token.insert(tokenId.clone(), expiry);
-        self.queue.push_back(Entry { token_id: tokenId, expiry });
+        self.queue.push_back(Entry {
+            token_id: tokenId,
+            expiry,
+        });
     }
 
     pub fn renew(&mut self, tokenId: String, currentTime: i32) {
@@ -39,7 +42,10 @@ impl AuthenticationManager {
             if expiry > currentTime {
                 let renewed = currentTime + self.time_to_live;
                 self.expiry_by_token.insert(tokenId.clone(), renewed);
-                self.queue.push_back(Entry { token_id: tokenId, expiry: renewed });
+                self.queue.push_back(Entry {
+                    token_id: tokenId,
+                    expiry: renewed,
+                });
             }
         }
     }

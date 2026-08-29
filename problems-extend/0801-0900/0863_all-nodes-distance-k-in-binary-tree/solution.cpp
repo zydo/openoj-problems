@@ -5,20 +5,20 @@
 
 class Solution {
   public:
-    vector<int> distanceK(TreeNode* root, int target, int k) {
+    vector<int> distanceK(TreeNode *root, int target, int k) {
         // Distance k counts edges on paths that may climb through parents as
         // well as descend through children, so the answer can spill out of
         // the target's own subtree — a downward search alone cannot reach
         // it. One breadth-first pass from the root records each node's
         // parent and collects every node, which also locates the node
         // carrying the target value.
-        unordered_map<TreeNode*, TreeNode*> parents;
-        vector<TreeNode*> order;
+        unordered_map<TreeNode *, TreeNode *> parents;
+        vector<TreeNode *> order;
         if (root != nullptr) {
             order.push_back(root);
         }
         for (std::size_t head = 0; head < order.size(); ++head) {
-            TreeNode* node = order[head];
+            TreeNode *node = order[head];
             if (node->left != nullptr) {
                 parents[node->left] = node;
                 order.push_back(node->left);
@@ -28,8 +28,8 @@ class Solution {
                 order.push_back(node->right);
             }
         }
-        TreeNode* start = nullptr;
-        for (TreeNode* node : order) {
+        TreeNode *start = nullptr;
+        for (TreeNode *node : order) {
             if (node->val == target) {
                 start = node;
                 break;
@@ -41,16 +41,16 @@ class Solution {
         // node, so after k steps the frontier holds exactly the nodes at
         // distance k. Sorting the collected values settles the ascending
         // output order the statement pins.
-        vector<TreeNode*> frontier;
+        vector<TreeNode *> frontier;
         frontier.push_back(start);
-        unordered_set<TreeNode*> seen;
+        unordered_set<TreeNode *> seen;
         seen.insert(start);
         for (int step = 0; step < k; ++step) {
-            vector<TreeNode*> reached;
-            for (TreeNode* node : frontier) {
+            vector<TreeNode *> reached;
+            for (TreeNode *node : frontier) {
                 auto entry = parents.find(node);
                 if (entry != parents.end()) {
-                    TreeNode* parent = entry->second;
+                    TreeNode *parent = entry->second;
                     if (seen.insert(parent).second) {
                         reached.push_back(parent);
                     }
@@ -69,7 +69,7 @@ class Solution {
         }
         vector<int> result;
         result.reserve(frontier.size());
-        for (TreeNode* node : frontier) {
+        for (TreeNode *node : frontier) {
             result.push_back(node->val);
         }
         sort(result.begin(), result.end());

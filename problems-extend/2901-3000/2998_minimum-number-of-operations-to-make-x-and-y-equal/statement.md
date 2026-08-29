@@ -11,7 +11,7 @@ In one operation, you can do one of the four following operations:
     Decrement x by 1.
     Increment x by 1.
 
-Return the minimum number of operations required to make  x and y equal.
+Return the minimum number of operations required to make x and y equal.
 
 ### Example 1
 

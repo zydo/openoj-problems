@@ -5,7 +5,7 @@ class Solution {
         // lowers the sum by 2 * x, so target is reachable exactly when it
         // lies in [-S, S] with the same parity as S. S reaches ~5 * 10^9,
         // which overflows int — the deficit math runs in long.
-        long total = (long) n * (n + 1) / 2;
+        long total = ((long) n * (n + 1)) / 2;
         if (target < -total || target > total || (total - target) % 2 != 0) {
             return new int[0];
         }

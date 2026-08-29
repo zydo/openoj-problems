@@ -66,7 +66,11 @@ impl Solution {
     fn measure(grid: &[Vec<i32>], label: &mut [Vec<i32>], row: usize, col: usize, id: i32) -> Region {
         let rows = grid.len() as i32;
         let cols = grid[0].len() as i32;
-        let mut region = Region { cells: Vec::new(), frontier: HashSet::new(), walls: 0 };
+        let mut region = Region {
+            cells: Vec::new(),
+            frontier: HashSet::new(),
+            walls: 0,
+        };
         label[row][col] = id;
         let mut stack = vec![(row, col)];
         let dr = [-1, 1, 0, 0];

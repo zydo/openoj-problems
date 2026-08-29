@@ -8,7 +8,7 @@ minus odd ones. For a window `(l, r]` (the elements strictly after index
 `l`, up to and including `r`), the window's XOR is `pxor[l] XOR pxor[r]`,
 which is zero exactly when the two prefix values match; its even/odd counts
 are `gap[r] - gap[l]`, which tie exactly when those match too. So the window
-is balanced if and only if the *pair* `(pxor, gap)` holds the same value at
+is balanced if and only if the _pair_ `(pxor, gap)` holds the same value at
 both ends, and the longest balanced window ending at `r` starts just after
 the earliest earlier index carrying the same pair.
 
@@ -19,7 +19,7 @@ the running pair is updated with the new element — XOR-ing the value in,
 stepping the gap by +1 for an even element and −1 for an odd one — and if
 the pair has been seen before, `i - first_seen` competes for the answer;
 otherwise the current index becomes that pair's recorded origin. Keeping only
-the *first* occurrence per pair is what maximizes every length the pair can
+the _first_ occurrence per pair is what maximizes every length the pair can
 ever report.
 
 The values themselves never constrain the arithmetic: each element fits in

@@ -51,7 +51,7 @@ var largestPalindrome = function (n, k) {
     for (let j = 0; j < m; j++) {
         const low = j === 0 ? 1 : 0;
         for (let d = 9; d >= low; d--) {
-            const rest = ((((need - d * weights[j]) % k) + k) % k);
+            const rest = (((need - d * weights[j]) % k) + k) % k;
             if ((reachable[j + 1] >> rest) & 1) {
                 need = rest;
                 half[j] = d;

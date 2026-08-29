@@ -1,9 +1,4 @@
-function goodBinaryStrings(
-    minLength: number,
-    maxLength: number,
-    oneGroup: number,
-    zeroGroup: number
-): number {
+function goodBinaryStrings(minLength: number, maxLength: number, oneGroup: number, zeroGroup: number): number {
     // dp[i] counts good strings of length i: peel off the final run of
     // equal characters — its size is a positive multiple of oneGroup or
     // zeroGroup, and what remains is any shorter good string (or nothing).

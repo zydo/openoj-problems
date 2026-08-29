@@ -17,8 +17,10 @@ class Solution {
         stack.push(root);
         while (!stack.isEmpty()) {
             TreeNode node = stack.peek();
-            TreeNode left = node.left, right = node.right;
-            boolean settled = (left == null || heights.containsKey(left)) && (right == null || heights.containsKey(right));
+            TreeNode left = node.left,
+                right = node.right;
+            boolean settled =
+                (left == null || heights.containsKey(left)) && (right == null || heights.containsKey(right));
             if (settled) {
                 stack.pop();
                 int leftHeight = left == null ? 0 : heights.get(left);

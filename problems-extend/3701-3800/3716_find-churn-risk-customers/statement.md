@@ -20,7 +20,7 @@ to a user's subscription: `event_type` is one of `'start'`,
 event is a `'cancel'`; `monthly_amount` is the monthly subscription
 cost in effect after this event, and is 0 on `'cancel'` rows.
 
-A user is a *churn risk customer* when all of the following hold:
+A user is a _churn risk customer_ when all of the following hold:
 
 - Their subscription is currently active — their most recent event is
   not a `'cancel'`.

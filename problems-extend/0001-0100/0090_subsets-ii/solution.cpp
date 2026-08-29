@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+    vector<vector<int>> subsetsWithDup(vector<int> &nums) {
         // Sort in place: each branch chooses among the remaining values in
         // ascending order, so the subsets emerge in the pinned ascending
         // lexicographic order.
@@ -12,7 +12,7 @@ class Solution {
     }
 
   private:
-    void backtrack(vector<int>& arr, int start, vector<int>& current, vector<vector<int>>& subsets) {
+    void backtrack(vector<int> &arr, int start, vector<int> &current, vector<vector<int>> &subsets) {
         // Every node of the walk is itself a subset: the root is [].
         subsets.push_back(current);
         for (int i = start; i < (int)arr.size(); i++) {

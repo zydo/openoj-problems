@@ -1,6 +1,4 @@
 class Solution {
-public:
-    long long minimumTime(vector<int>& d, vector<int>& r) {
-        throw logic_error("TODO");
-    }
+  public:
+    long long minimumTime(vector<int> &d, vector<int> &r) { throw logic_error("TODO"); }
 };

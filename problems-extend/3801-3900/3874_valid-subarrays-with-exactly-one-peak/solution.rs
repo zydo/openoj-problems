@@ -15,7 +15,11 @@ impl Solution {
         let mut total: i64 = 0;
         for (idx, &i) in peaks.iter().enumerate() {
             let prev = if idx > 0 { peaks[idx - 1] as i64 } else { -1 };
-            let nxt = if idx + 1 < peaks.len() { peaks[idx + 1] as i64 } else { n as i64 };
+            let nxt = if idx + 1 < peaks.len() {
+                peaks[idx + 1] as i64
+            } else {
+                n as i64
+            };
             let lo = std::cmp::max(i as i64 - k as i64, prev + 1);
             let hi = std::cmp::min(i as i64 + k as i64, nxt - 1);
             total += (i as i64 - lo + 1) * (hi - i as i64 + 1);

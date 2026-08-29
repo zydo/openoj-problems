@@ -9,8 +9,10 @@ class Solution {
         vector<int> result;
         result.reserve(A.size());
         for (size_t index = 0; index < A.size(); ++index) {
-            if (++seen[A[index]] == 2) common++;
-            if (++seen[B[index]] == 2) common++;
+            if (++seen[A[index]] == 2)
+                common++;
+            if (++seen[B[index]] == 2)
+                common++;
             result.push_back(common);
         }
         return result;

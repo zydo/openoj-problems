@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minMirrorPairDistance(vector<int>& nums) {
+    int minMirrorPairDistance(vector<int> &nums) {
         int best = -1;
         // Most recent index for each reversed value (-1 marks "not seen
         // yet"); a nearer supplier beats a farther one for every future

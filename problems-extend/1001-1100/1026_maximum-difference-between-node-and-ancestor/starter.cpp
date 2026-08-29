@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxAncestorDiff(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxAncestorDiff(TreeNode *root) { throw logic_error("TODO"); }
 };

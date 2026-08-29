@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> maximumSubarrayXor(vector<int>& nums, vector<vector<int>>& queries) {
+    vector<int> maximumSubarrayXor(vector<int> &nums, vector<vector<int>> &queries) {
         // One round of the score process turns an array into its adjacent
         // XORs, so unrolling the rounds gives a Pascal-style recurrence
         // over GF(2): score[l][r] = score[l][r-1] ^ score[l+1][r], seeded
@@ -35,7 +35,7 @@ class Solution {
         }
         vector<int> answer;
         answer.reserve(queries.size());
-        for (auto& query : queries) {
+        for (auto &query : queries) {
             answer.push_back(best_rows[query[0]][query[1] - query[0]]);
         }
         return answer;

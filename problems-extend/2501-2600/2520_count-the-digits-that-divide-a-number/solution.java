@@ -5,8 +5,7 @@ class Solution {
         // against the untouched original. The input guarantees no zero
         // digit, so every divisor test is safe.
         int count = 0;
-        for (int rest = num; rest > 0; rest /= 10)
-            if (num % (rest % 10) == 0) ++count;
+        for (int rest = num; rest > 0; rest /= 10) if (num % (rest % 10) == 0) ++count;
         return count;
     }
 }

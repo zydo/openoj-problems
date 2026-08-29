@@ -12,8 +12,7 @@ impl Solution {
         for r in 0..rows {
             for c in 0..cols {
                 let color = targetGrid[r][c];
-                bbox
-                    .entry(color)
+                bbox.entry(color)
                     .and_modify(|b| {
                         b.0 = b.0.min(r);
                         b.1 = b.1.max(r);

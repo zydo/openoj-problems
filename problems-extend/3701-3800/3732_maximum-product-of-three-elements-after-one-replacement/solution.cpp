@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maxProduct(vector<int>& nums) {
+    long long maxProduct(vector<int> &nums) {
         // One sweep keeps the two largest and the two smallest values. Those
         // four slots always contain the two elements of largest magnitude:
         // absolute values are V-shaped across a sorted array, so both

@@ -20,8 +20,10 @@ class Solution {
             } else {
                 // An internal node never sums on its own: its digit only
                 // matters inside the numbers of the leaves below it.
-                if (node->left != nullptr) pending.push_back({node->left, number});
-                if (node->right != nullptr) pending.push_back({node->right, number});
+                if (node->left != nullptr)
+                    pending.push_back({node->left, number});
+                if (node->right != nullptr)
+                    pending.push_back({node->right, number});
             }
         }
         return total;

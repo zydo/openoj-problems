@@ -22,13 +22,7 @@ function walk(balls, index, remaining, distinct1, distinct2) {
     for (let x = 0; x <= limit; x++) {
         ways +=
             binomial(count, x) *
-            walk(
-                balls,
-                index + 1,
-                remaining - x,
-                distinct1 + (x > 0 ? 1 : 0),
-                distinct2 + (x < count ? 1 : 0),
-            );
+            walk(balls, index + 1, remaining - x, distinct1 + (x > 0 ? 1 : 0), distinct2 + (x < count ? 1 : 0));
     }
     return ways;
 }

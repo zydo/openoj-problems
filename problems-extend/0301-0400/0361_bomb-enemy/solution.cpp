@@ -14,11 +14,14 @@ class Solution {
             for (int j = 0; j < n; j++) {
                 // First cell of a row segment (after a wall or at the left
                 // edge): one scan counts the enemies up to the next wall.
-                if (j == 0 || grid[i][j - 1] == "W") rowHits = countRow(grid, i, j);
+                if (j == 0 || grid[i][j - 1] == "W")
+                    rowHits = countRow(grid, i, j);
                 // Same lazily per column: recount only when the cell above
                 // is a wall or the top edge.
-                if (i == 0 || grid[i - 1][j] == "W") colHits[j] = countCol(grid, i, j);
-                if (grid[i][j] == "0") best = max(best, rowHits + colHits[j]);
+                if (i == 0 || grid[i - 1][j] == "W")
+                    colHits[j] = countCol(grid, i, j);
+                if (grid[i][j] == "0")
+                    best = max(best, rowHits + colHits[j]);
             }
         }
         return best;
@@ -29,7 +32,8 @@ class Solution {
     int countRow(vector<vector<string>> &grid, int i, int j) {
         int hits = 0;
         for (int k = j; k < (int)grid[i].size() && grid[i][k] != "W"; k++)
-            if (grid[i][k] == "E") hits++;
+            if (grid[i][k] == "E")
+                hits++;
         return hits;
     }
 
@@ -37,7 +41,8 @@ class Solution {
     int countCol(vector<vector<string>> &grid, int i, int j) {
         int hits = 0;
         for (int k = i; k < (int)grid.size() && grid[k][j] != "W"; k++)
-            if (grid[k][j] == "E") hits++;
+            if (grid[k][j] == "E")
+                hits++;
         return hits;
     }
 };

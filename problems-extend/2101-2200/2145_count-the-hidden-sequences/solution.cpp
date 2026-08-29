@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int numberOfArrays(vector<int>& differences, int lower, int upper) {
+  public:
+    int numberOfArrays(vector<int> &differences, int lower, int upper) {
         long long prefix = 0;
         long long minimum = 0;
         long long maximum = 0;

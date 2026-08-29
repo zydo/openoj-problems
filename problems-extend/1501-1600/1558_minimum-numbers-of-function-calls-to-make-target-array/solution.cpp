@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minOperations(vector<int>& nums) {
+  public:
+    int minOperations(vector<int> &nums) {
         // Each element's popcount is the number of independent increments
         // it needs; the doublings are shared by the whole array, so only
         // the element with the most bits sets how many doublings are

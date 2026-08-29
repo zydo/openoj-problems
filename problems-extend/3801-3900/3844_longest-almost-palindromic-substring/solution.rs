@@ -24,9 +24,8 @@ impl Solution {
 
                 // Delete the right end, delete the left end, or keep both
                 // matching ends and use the deletion inside.
-                almost_now[left] = (pal_one[left] != 0
-                    || pal_one[left + 1] != 0
-                    || (same_ends && almost_two[left + 1] != 0)) as u8;
+                almost_now[left] =
+                    (pal_one[left] != 0 || pal_one[left + 1] != 0 || (same_ends && almost_two[left + 1] != 0)) as u8;
                 if almost_now[left] != 0 {
                     best = length as i32;
                 }

@@ -7,8 +7,7 @@
 // bit 30.
 function maximumOr(nums: number[], k: number): number {
     const suffix: number[] = new Array(nums.length + 1).fill(0);
-    for (let i = nums.length - 1; i >= 0; --i)
-        suffix[i] = suffix[i + 1] | nums[i];
+    for (let i = nums.length - 1; i >= 0; --i) suffix[i] = suffix[i + 1] | nums[i];
     let best = 0;
     let prefix = 0;
     for (let i = 0; i < nums.length; ++i) {
@@ -18,8 +17,7 @@ function maximumOr(nums: number[], k: number): number {
         // nums[i] * 2^k can pass 2^31, past the bitwise operators' range:
         // split it at bit 30 so only sub-2^30 halves meet the | operator.
         const boosted = nums[i] * 2 ** k;
-        const candidate =
-            Math.floor(boosted / 2 ** 30) * 2 ** 30 + ((boosted % 2 ** 30) | rest);
+        const candidate = Math.floor(boosted / 2 ** 30) * 2 ** 30 + ((boosted % 2 ** 30) | rest);
         if (candidate > best) best = candidate;
         prefix |= nums[i];
     }

@@ -11,9 +11,7 @@ impl Solution {
         for &value in nums.iter() {
             let r = value % space;
             *counts.entry(r).or_insert(0) += 1;
-            mins.entry(r)
-                .and_modify(|m| *m = (*m).min(value))
-                .or_insert(value);
+            mins.entry(r).and_modify(|m| *m = (*m).min(value)).or_insert(value);
         }
         let best = counts.values().copied().max().unwrap();
         counts

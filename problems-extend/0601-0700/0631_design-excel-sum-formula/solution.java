@@ -47,7 +47,7 @@ class Excel {
             int[] last = cell(number.substring(separator + 1));
             for (int r = first[0]; r <= last[0]; r++) {
                 for (int c = first[1]; c <= last[1]; c++) {
-                    references.add(new int[] {r, c});
+                    references.add(new int[] { r, c });
                 }
             }
         }
@@ -57,7 +57,7 @@ class Excel {
 
     // A cell token is one column letter followed by the row number.
     private int[] cell(String token) {
-        return new int[] {Integer.parseInt(token.substring(1)), token.charAt(0) - 'A'};
+        return new int[] { Integer.parseInt(token.substring(1)), token.charAt(0) - 'A' };
     }
 
     private int value(int row, int col) {

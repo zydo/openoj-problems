@@ -21,7 +21,7 @@ var getFinalState = function (nums, k, multiplier) {
     const items = [];
     const push = (item) => {
         items.push(item);
-        for (let child = items.length - 1; child > 0; ) {
+        for (let child = items.length - 1; child > 0;) {
             const parent = (child - 1) >> 1;
             if (!before(items[child], items[parent])) {
                 break;
@@ -35,7 +35,7 @@ var getFinalState = function (nums, k, multiplier) {
         const last = items.pop();
         if (items.length > 0) {
             items[0] = last;
-            for (let parent = 0; ; ) {
+            for (let parent = 0; ;) {
                 const left = parent * 2 + 1;
                 const right = left + 1;
                 let first = parent;
@@ -91,9 +91,7 @@ var getFinalState = function (nums, k, multiplier) {
         // values by the multiplier, which preserves that inequality, so the
         // leftover k operations split into q full rounds plus one extra
         // exponent for the first rem entries of the sorted order.
-        const ordered = [...items].sort((a, b) =>
-            a[0] !== b[0] ? (a[0] < b[0] ? -1 : 1) : a[1] - b[1]
-        );
+        const ordered = [...items].sort((a, b) => (a[0] !== b[0] ? (a[0] < b[0] ? -1 : 1) : a[1] - b[1]));
         const q = Math.floor(k / n);
         const rem = k % n;
         for (let pos = 0; pos < n; pos++) {

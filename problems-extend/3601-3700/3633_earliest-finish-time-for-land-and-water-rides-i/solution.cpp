@@ -1,7 +1,7 @@
 class Solution {
-public:
-    int earliestFinishTime(vector<int>& landStartTime, vector<int>& landDuration,
-                           vector<int>& waterStartTime, vector<int>& waterDuration) {
+  public:
+    int earliestFinishTime(vector<int> &landStartTime, vector<int> &landDuration, vector<int> &waterStartTime,
+                           vector<int> &waterDuration) {
         // Delaying a boarding past an opening never helps, and an earlier
         // first finish never pushes the second boarding later: the second
         // leg starts at max(first finish, second opening). Price both

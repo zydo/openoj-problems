@@ -11,7 +11,7 @@ each group ascending gives, for every grid, the ordered list whose front
 holds the smallest id. Nothing about the queries touches this structure
 again.
 
-Within a component, the check `[1, x]` needs the smallest *online*
+Within a component, the check `[1, x]` needs the smallest _online_
 station. A naive scan is too slow, but the online set only ever shrinks:
 stations go offline and never return. So instead of a balanced tree per
 component, keep one index per component that points at the smallest

@@ -30,11 +30,9 @@ SELECT DISTINCT
   first_last.user_id
 FROM
   first_last
-  JOIN unfolded AS first_call
-    ON first_call.user_id = first_last.user_id
-    AND first_call.call_time = first_last.first_time
-  JOIN unfolded AS last_call
-    ON last_call.user_id = first_last.user_id
-    AND last_call.call_time = first_last.last_time
+  JOIN unfolded AS first_call ON first_call.user_id = first_last.user_id
+  AND first_call.call_time = first_last.first_time
+  JOIN unfolded AS last_call ON last_call.user_id = first_last.user_id
+  AND last_call.call_time = first_last.last_time
 WHERE
   first_call.other_id = last_call.other_id

@@ -46,7 +46,7 @@
     },
     "comparison": {
       "mode": "close",
-      "tolerance": 1e-5
+      "tolerance": 1e-05
     }
   },
   "limits": {

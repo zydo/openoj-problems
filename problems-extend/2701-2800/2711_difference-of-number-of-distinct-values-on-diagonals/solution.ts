@@ -6,9 +6,7 @@ function differenceOfDistinctValues(grid: number[][]): number[][] {
     // right-below and combines the two.
     const m = grid.length;
     const n = grid[0].length;
-    const ans: number[][] = Array.from({ length: m }, () =>
-        new Array(n).fill(0)
-    );
+    const ans: number[][] = Array.from({ length: m }, () => new Array(n).fill(0));
     const starts: number[][] = [];
     for (let r = 0; r < m; ++r) starts.push([r, 0]);
     for (let c = 1; c < n; ++c) starts.push([0, c]);

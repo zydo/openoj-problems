@@ -1,8 +1,6 @@
 class Solution {
   public:
-    TreeNode *sortedArrayToBST(vector<int> &nums) {
-        return build(nums, 0, (int)nums.size() - 1);
-    }
+    TreeNode *sortedArrayToBST(vector<int> &nums) { return build(nums, 0, (int)nums.size() - 1); }
 
   private:
     // Builds the subtree for the closed segment [lo, hi]: root at the

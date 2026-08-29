@@ -11,13 +11,13 @@ package main
 const limit = 100000
 
 type MKAverage struct {
-	m       int
-	k       int
-	counts  []int
-	sums    []int64
-	window  []int
-	head    int
-	size    int
+	m      int
+	k      int
+	counts []int
+	sums   []int64
+	window []int
+	head   int
+	size   int
 }
 
 func NewMKAverageTyped(m int, k int) *MKAverage {

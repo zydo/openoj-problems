@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string largestMerge(string word1, string word2) {
         // Take the next character from whichever REMAINING string is
         // lexicographically larger — the suffix comparison settles not

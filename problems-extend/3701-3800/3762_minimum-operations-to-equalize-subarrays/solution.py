@@ -84,8 +84,5 @@ class Solution:
             grand_total = sum(pref[-1] for pref in piece_pref)
             # Below-median elements climb by their shortfall; above-median
             # ones descend by their excess; equals cost nothing.
-            answers.append(
-                (median * c_below - s_below)
-                + ((grand_total - s_at) - median * (size - c_at))
-            )
+            answers.append((median * c_below - s_below) + ((grand_total - s_at) - median * (size - c_at)))
         return answers

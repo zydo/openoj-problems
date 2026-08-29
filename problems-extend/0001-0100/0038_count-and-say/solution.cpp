@@ -11,7 +11,8 @@ class Solution {
                 // Measure the maximal run starting at index: the group the
                 // encoder must emit as <count><digit>, then skip past it.
                 int run = 1;
-                while (index + run < (int)term.size() && term[index + run] == term[index]) ++run;
+                while (index + run < (int)term.size() && term[index + run] == term[index])
+                    ++run;
                 next += to_string(run);
                 next += term[index];
                 index += run;

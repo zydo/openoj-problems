@@ -21,9 +21,7 @@ var minCost = function (m, n, waitCost) {
         // First column: reachable only from above.
         dp[0] = prev[0] + (i === 1 ? 0 : waitCost[i - 1][0]) + (i + 1);
         for (let j = 1; j < n; j++) {
-            dp[j] =
-                Math.min(prev[j] + waitCost[i - 1][j], dp[j - 1] + waitCost[i][j - 1]) +
-                (i + 1) * (j + 1);
+            dp[j] = Math.min(prev[j] + waitCost[i - 1][j], dp[j - 1] + waitCost[i][j - 1]) + (i + 1) * (j + 1);
         }
     }
     return dp[n - 1];

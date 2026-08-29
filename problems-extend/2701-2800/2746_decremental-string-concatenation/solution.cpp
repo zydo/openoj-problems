@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minimizeConcatenatedLength(vector<string>& words) {
+  public:
+    int minimizeConcatenatedLength(vector<string> &words) {
         // dp[first][last] = shortest length of a concatenation of the words
         // processed so far starting with `first` and ending with `last`.
         const int INF = INT_MAX;
@@ -12,7 +12,7 @@ public:
         }
         dp[words[0].front() - 'a'][words[0].back() - 'a'] = words[0].size();
         for (size_t i = 1; i < words.size(); ++i) {
-            const string& word = words[i];
+            const string &word = words[i];
             int wordFirst = word.front() - 'a';
             int wordLast = word.back() - 'a';
             int length = word.size();

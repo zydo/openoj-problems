@@ -6,7 +6,13 @@ func maximumScore(nums []int, k int) int64 {
 	// mark minus its minus mark -- exactly one subarray's range.
 	size := min(k, len(nums)/2) + 1
 	neg := int64(math.MinInt64 / 4)
-	fresh := func() []int64 { s := make([]int64, size); for i := range s { s[i] = neg }; return s }
+	fresh := func() []int64 {
+		s := make([]int64, size)
+		for i := range s {
+			s[i] = neg
+		}
+		return s
+	}
 	// Close a pair: the count grows by one.
 	shiftAdd := func(s []int64, d int64) []int64 {
 		out := fresh()

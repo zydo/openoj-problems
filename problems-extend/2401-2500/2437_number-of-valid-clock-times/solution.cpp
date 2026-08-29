@@ -12,15 +12,13 @@ class Solution {
 
         int hours = 0;
         for (int h = 0; h < 24; ++h) {
-            if ((hTens == '?' || h / 10 == hTens - '0') &&
-                (hOnes == '?' || h % 10 == hOnes - '0'))
+            if ((hTens == '?' || h / 10 == hTens - '0') && (hOnes == '?' || h % 10 == hOnes - '0'))
                 ++hours;
         }
 
         int minutes = 0;
         for (int m = 0; m < 60; ++m) {
-            if ((mTens == '?' || m / 10 == mTens - '0') &&
-                (mOnes == '?' || m % 10 == mOnes - '0'))
+            if ((mTens == '?' || m / 10 == mTens - '0') && (mOnes == '?' || m % 10 == mOnes - '0'))
                 ++minutes;
         }
 

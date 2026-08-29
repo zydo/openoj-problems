@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int countBeautifulPairs(vector<int>& nums) {
+  public:
+    int countBeautifulPairs(vector<int> &nums) {
         // A pair is beautiful iff the first digit of nums[i] and the last
         // digit of nums[j] are coprime; n <= 100, so test every pair.
         int count = 0;
@@ -18,7 +18,7 @@ public:
         return count;
     }
 
-private:
+  private:
     int gcd(int a, int b) {
         while (b != 0) {
             int t = a % b;

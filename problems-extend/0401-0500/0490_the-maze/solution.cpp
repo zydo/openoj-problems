@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool hasPath(vector<vector<int>>& maze, vector<int>& start, vector<int>& destination) {
+  public:
+    bool hasPath(vector<vector<int>> &maze, vector<int> &start, vector<int> &destination) {
         // The ball begins at rest, so the start cell is itself a stopping
         // position and seeds the queue.
         queue<pair<int, int>> pending;
@@ -31,8 +31,8 @@ public:
         return false;
     }
 
-private:
-    pair<int, int> roll(vector<vector<int>>& maze, int row, int col, int dr, int dc) {
+  private:
+    pair<int, int> roll(vector<vector<int>> &maze, int row, int col, int dr, int dc) {
         // The border acts as a wall, so leaving the grid ends the roll
         // just like a 1 cell does.
         while (true) {

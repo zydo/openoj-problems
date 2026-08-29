@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string parseTernary(string expression) {
-        throw logic_error("TODO");
-    }
+  public:
+    string parseTernary(string expression) { throw logic_error("TODO"); }
 };

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int findLengthOfShortestSubarray(vector<int>& arr) {
-        throw logic_error("TODO");
-    }
+  public:
+    int findLengthOfShortestSubarray(vector<int> &arr) { throw logic_error("TODO"); }
 };

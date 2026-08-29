@@ -1,14 +1,15 @@
-WITH RECURSIVE months (month) AS (
-  SELECT
-    1
-  UNION ALL
-  SELECT
-    month + 1
-  FROM
-    months
-  WHERE
-    month < 12
-)
+WITH RECURSIVE
+  months (month) AS (
+    SELECT
+      1
+    UNION ALL
+    SELECT
+      month + 1
+    FROM
+      months
+    WHERE
+      month < 12
+  )
 SELECT
   months.month AS month,
   (

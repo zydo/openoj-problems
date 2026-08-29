@@ -7,7 +7,7 @@ func restoreIpAddresses(s string) []string {
 		remaining := 4 - len(segments)
 		// What is left must feed 1-3 digits to every remaining segment; at
 		// zero segments left this accepts only a fully consumed string.
-		if remaining > len(s) - start || len(s) - start > 3*remaining {
+		if remaining > len(s)-start || len(s)-start > 3*remaining {
 			return
 		}
 		if remaining == 0 {
@@ -17,17 +17,17 @@ func restoreIpAddresses(s string) []string {
 		// Shorter cuts first: a dot sorts before any digit, so the output
 		// lands in ascending lexicographic order.
 		for length := 1; length <= 3; length++ {
-			if start + length > len(s) {
+			if start+length > len(s) {
 				break
 			}
-			part := s[start : start + length]
+			part := s[start : start+length]
 			// A segment is 0-255 with no leading zero unless it is exactly "0".
 			if len(part) > 1 && part[0] == '0' {
 				continue
 			}
 			value := 0
 			for i := 0; i < len(part); i++ {
-				value = value*10 + int(part[i] - '0')
+				value = value*10 + int(part[i]-'0')
 			}
 			if value > 255 {
 				continue

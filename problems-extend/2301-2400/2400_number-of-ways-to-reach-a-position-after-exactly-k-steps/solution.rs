@@ -31,8 +31,6 @@ impl Solution {
         for i in (1..=k as usize).rev() {
             inv_fact[i - 1] = inv_fact[i] * i as i64 % MOD;
         }
-        (fact[k as usize] * inv_fact[right as usize] % MOD
-            * inv_fact[(k as i64 - right) as usize]
-            % MOD) as i32
+        (fact[k as usize] * inv_fact[right as usize] % MOD * inv_fact[(k as i64 - right) as usize] % MOD) as i32
     }
 }

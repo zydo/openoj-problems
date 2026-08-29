@@ -46,8 +46,7 @@ impl Solution {
                 }
                 if b == a + 1 && freq[&(b as i32)] == 1 {
                     best = n as i32;
-                } else if a == 1 && freq[&(a as i32)] == 1 && 1 + b * freq[&(b as i32)] as i64 == n as i64
-                {
+                } else if a == 1 && freq[&(a as i32)] == 1 && 1 + b * freq[&(b as i32)] as i64 == n as i64 {
                     best = n as i32;
                 }
             }

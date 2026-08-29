@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int differenceOfSum(std::vector<int>& nums) {
+    int differenceOfSum(std::vector<int> &nums) {
         // One pass accumulates both sums at once; every element is at
         // least its own digit sum (equality only for single digits), and
         // the bounds (2000 elements of at most 2000) keep both totals

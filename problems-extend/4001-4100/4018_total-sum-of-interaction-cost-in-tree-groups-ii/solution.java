@@ -6,6 +6,7 @@ import java.util.Map;
 class Solution {
 
     private static class St {
+
         Map<Integer, Integer> m = new HashMap<>();
         long a = 0;
         long b = 0;

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int firstUniqueEven(vector<int>& nums) {
+  public:
+    int firstUniqueEven(vector<int> &nums) {
         // A value qualifies only when it is even and its count in nums is
         // exactly one. Counting all values first turns each "is this the
         // first unique even?" test into a constant-time lookup, so a single

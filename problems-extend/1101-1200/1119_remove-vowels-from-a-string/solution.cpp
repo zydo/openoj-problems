@@ -4,7 +4,8 @@ class Solution {
         string kept;
         kept.reserve(s.size());
         for (char c : s) {
-            if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u') kept.push_back(c);
+            if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u')
+                kept.push_back(c);
         }
         return kept;
     }

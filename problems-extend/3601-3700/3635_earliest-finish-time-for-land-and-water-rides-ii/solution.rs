@@ -9,9 +9,18 @@ impl Solution {
         // costs max(open, finish) + duration, which never improves when the
         // hand-off gets later. So each order fixes the earliest-finishing
         // ride of the first category and scans the other category.
-        let land_finish = landStartTime.iter().zip(&landDuration).map(|(s, d)| s + d).min().unwrap();
-        let water_finish =
-            waterStartTime.iter().zip(&waterDuration).map(|(s, d)| s + d).min().unwrap();
+        let land_finish = landStartTime
+            .iter()
+            .zip(&landDuration)
+            .map(|(s, d)| s + d)
+            .min()
+            .unwrap();
+        let water_finish = waterStartTime
+            .iter()
+            .zip(&waterDuration)
+            .map(|(s, d)| s + d)
+            .min()
+            .unwrap();
         let land_first = waterStartTime
             .iter()
             .zip(&waterDuration)

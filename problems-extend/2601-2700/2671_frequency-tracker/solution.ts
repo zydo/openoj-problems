@@ -27,10 +27,7 @@ class FrequencyTracker {
         this.countOf.set(number, count - 1);
         this.numbersAt.set(count, this.numbersAt.get(count)! - 1);
         if (count > 1) {
-            this.numbersAt.set(
-                count - 1,
-                (this.numbersAt.get(count - 1) ?? 0) + 1
-            );
+            this.numbersAt.set(count - 1, (this.numbersAt.get(count - 1) ?? 0) + 1);
         }
     }
 

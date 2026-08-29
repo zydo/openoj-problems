@@ -23,10 +23,11 @@ Input: startPos = 1, endPos = 2, k = 3
 Output: 3
 Explanation: We can reach position 2 from 1 in exactly 3 steps in three
 ways:
+
 - 1 -> 2 -> 3 -> 2.
 - 1 -> 2 -> 1 -> 2.
 - 1 -> 0 -> 1 -> 2.
-It can be proven that no other way is possible, so we return 3.
+  It can be proven that no other way is possible, so we return 3.
 
 ### Example 2
 

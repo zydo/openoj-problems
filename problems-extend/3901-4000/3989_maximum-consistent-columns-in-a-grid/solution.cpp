@@ -27,7 +27,8 @@ class Solution {
         int answer = 1;
         for (int j = 0; j < cols; ++j) {
             for (int i = 0; i < j; ++i)
-                if (compatible[i][j]) dp[j] = max(dp[j], dp[i] + 1);
+                if (compatible[i][j])
+                    dp[j] = max(dp[j], dp[i] + 1);
             answer = max(answer, dp[j]);
         }
         return answer;

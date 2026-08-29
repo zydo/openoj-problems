@@ -16,7 +16,7 @@ class HitCounter {
             // newest count keeps one entry per distinct timestamp.
             hits.get(hits.size() - 1)[1]++;
         } else {
-            hits.add(new int[] {timestamp, 1});
+            hits.add(new int[] { timestamp, 1 });
         }
     }
 

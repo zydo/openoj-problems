@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string makeGood(string s) {
         // Walk the string once, keeping a stack of characters kept so far.
         // A new character only ever conflicts with the character directly

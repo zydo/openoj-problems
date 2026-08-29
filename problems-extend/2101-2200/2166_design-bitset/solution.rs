@@ -11,7 +11,11 @@ pub struct Bitset {
 
 impl Bitset {
     pub fn new(size: i32) -> Self {
-        Bitset { bits: vec![0; size as usize], flipped: false, ones: 0 }
+        Bitset {
+            bits: vec![0; size as usize],
+            flipped: false,
+            ones: 0,
+        }
     }
 
     pub fn fix(&mut self, idx: i32) {

@@ -4,7 +4,7 @@ class Solution {
         int[] counts = new int[24];
         for (int value : candidates) {
             for (int bit = 0; bit < 24; bit++) {
-                if ((value >> bit & 1) == 1) {
+                if (((value >> bit) & 1) == 1) {
                     counts[bit]++;
                 }
             }

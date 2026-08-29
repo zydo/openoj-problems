@@ -91,6 +91,5 @@ Write your solution as a single `SELECT` query returning four columns —
 by points in descending order and then by team_name in ascending order.
 The position is competition ranking: equal totals take equal positions,
 and the next distinct total skips past every tied team — two co-leaders
-sit at positions 1 and 1 while the best team behind them sits at position
-3. The judge compares result rows as an unordered multiset, so row order
+sit at positions 1 and 1 while the best team behind them sits at position 3. The judge compares result rows as an unordered multiset, so row order
 does not affect correctness — produce the demanded order anyway.

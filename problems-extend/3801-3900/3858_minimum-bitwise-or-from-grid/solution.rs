@@ -5,9 +5,7 @@ impl Solution {
 
         for bit in (0..=16).rev() {
             let candidate = forbidden | (1 << bit);
-            let feasible = grid
-                .iter()
-                .all(|row| row.iter().any(|&value| value & candidate == 0));
+            let feasible = grid.iter().all(|row| row.iter().any(|&value| value & candidate == 0));
             if feasible {
                 forbidden = candidate;
             } else {

@@ -22,6 +22,10 @@ impl Solution {
             }
             best[right] = best_so_far;
         }
-        if answer >= inf { -1 } else { answer }
+        if answer >= inf {
+            -1
+        } else {
+            answer
+        }
     }
 }

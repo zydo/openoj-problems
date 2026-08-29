@@ -1,6 +1,4 @@
 class Solution {
-public:
-    TreeNode* insertIntoMaxTree(TreeNode* root, int val) {
-        throw logic_error("TODO");
-    }
+  public:
+    TreeNode *insertIntoMaxTree(TreeNode *root, int val) { throw logic_error("TODO"); }
 };

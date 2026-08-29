@@ -7,10 +7,7 @@ class Solution {
         // Run each task as late as its window allows: seconds committed at
         // the end of the timeline are inside more upcoming (by end time)
         // windows, so this never steals a second an earlier task needed.
-        std::sort(tasks.begin(), tasks.end(),
-                  [](const vector<int> &a, const vector<int> &b) {
-                      return a[1] < b[1];
-                  });
+        std::sort(tasks.begin(), tasks.end(), [](const vector<int> &a, const vector<int> &b) { return a[1] < b[1]; });
         vector<bool> running(2001, false);
         int total = 0;
         for (const auto &task : tasks) {
@@ -18,7 +15,8 @@ class Solution {
             // Reuse whatever is already on inside this window...
             int need = task[2];
             for (int t = start; t <= end; ++t) {
-                if (running[t]) --need;
+                if (running[t])
+                    --need;
             }
             // ...then book the remainder at the latest free points.
             for (int t = end; need > 0; --t) {

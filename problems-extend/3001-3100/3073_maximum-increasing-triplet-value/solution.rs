@@ -14,9 +14,7 @@ impl Solution {
         distinct.sort_unstable();
         distinct.dedup();
         let size = distinct.len();
-        let rank_of = |value: i32| -> usize {
-            distinct.binary_search(&value).unwrap() + 1
-        };
+        let rank_of = |value: i32| -> usize { distinct.binary_search(&value).unwrap() + 1 };
         let mut tree = vec![0_i32; size + 1];
 
         // Every triplet value nums[i] - nums[j] + nums[k] stays within

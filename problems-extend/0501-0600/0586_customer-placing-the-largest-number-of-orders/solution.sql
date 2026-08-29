@@ -6,4 +6,5 @@ GROUP BY
   customer_number
 ORDER BY
   COUNT(*) DESC
-LIMIT 1
+LIMIT
+  1

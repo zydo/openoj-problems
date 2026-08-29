@@ -1,10 +1,5 @@
 impl Solution {
-    pub fn count_days_together(
-        arriveAlice: String,
-        leaveAlice: String,
-        arriveBob: String,
-        leaveBob: String,
-    ) -> i32 {
+    pub fn count_days_together(arriveAlice: String, leaveAlice: String, arriveBob: String, leaveBob: String) -> i32 {
         // Month lengths of a non-leap year, turned into "days before month
         // m" so any "MM-DD" maps to one day-of-year integer.
         let month_start: [i32; 12] = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];

@@ -1,4 +1,5 @@
 class Solution {
+
     public long buildAndEvaluate(String[] postfix) {
         long[] stack = new long[postfix.length];
         int top = -1;
@@ -18,7 +19,7 @@ class Solution {
                         value = a * b;
                         break;
                     default:
-                        value = a / b;  // Java's / truncates toward zero.
+                        value = a / b; // Java's / truncates toward zero.
                         break;
                 }
                 stack[++top] = value;

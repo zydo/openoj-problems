@@ -1,7 +1,9 @@
 import java.util.PriorityQueue;
 
 class SORTracker {
+
     private static class Location {
+
         String name;
         int score;
 
@@ -15,18 +17,14 @@ class SORTracker {
     private final PriorityQueue<Location> remaining;
 
     public SORTracker() {
-        prefix =
-                new PriorityQueue<>(
-                        (left, right) -> {
-                            int byScore = Integer.compare(left.score, right.score);
-                            return byScore != 0 ? byScore : right.name.compareTo(left.name);
-                        });
-        remaining =
-                new PriorityQueue<>(
-                        (left, right) -> {
-                            int byScore = Integer.compare(right.score, left.score);
-                            return byScore != 0 ? byScore : left.name.compareTo(right.name);
-                        });
+        prefix = new PriorityQueue<>((left, right) -> {
+            int byScore = Integer.compare(left.score, right.score);
+            return byScore != 0 ? byScore : right.name.compareTo(left.name);
+        });
+        remaining = new PriorityQueue<>((left, right) -> {
+            int byScore = Integer.compare(right.score, left.score);
+            return byScore != 0 ? byScore : left.name.compareTo(right.name);
+        });
     }
 
     public void add(String name, int score) {

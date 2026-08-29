@@ -10,9 +10,7 @@ var maxTastiness = function (price, tastiness, maxAmount, maxCoupons) {
     // Descending both axes keeps each fruit usable at most once: every
     // update lands at a larger amount or a larger coupon count, which
     // the descending sweep has already passed.
-    const dp = Array.from({ length: maxAmount + 1 }, () =>
-        new Array(maxCoupons + 1).fill(-1),
-    );
+    const dp = Array.from({ length: maxAmount + 1 }, () => new Array(maxCoupons + 1).fill(-1));
     dp[0][0] = 0;
     for (let i = 0; i < price.length; ++i) {
         const p = price[i];

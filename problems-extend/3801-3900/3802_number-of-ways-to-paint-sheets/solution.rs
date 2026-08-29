@@ -8,8 +8,7 @@ impl Solution {
         // num_ge(t): colors whose limit reaches t — m minus the sorted
         // caps strictly below t. The i == j diagonal of a split needs one
         // cap to cover max(x, n - x).
-        let num_ge =
-            |t: i64| -> i64 { m - a.partition_point(|&v| (v as i64) < t) as i64 };
+        let num_ge = |t: i64| -> i64 { m - a.partition_point(|&v| (v as i64) < t) as i64 };
         // Ways for one split length x: ordered pairs of distinct colors
         // whose caps cover x and n - x. Never exceeds m^2, exact in i64.
         let ways = |x: i64| -> i64 { num_ge(x) * num_ge(n - x) - num_ge(x.max(n - x)) };

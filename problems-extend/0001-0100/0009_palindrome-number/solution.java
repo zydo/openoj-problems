@@ -8,7 +8,7 @@ class Solution {
         // meet: reversing only half never overflows and never builds a string.
         int reversedHalf = 0;
         while (x > reversedHalf) {
-            reversedHalf = reversedHalf * 10 + x % 10;
+            reversedHalf = reversedHalf * 10 + (x % 10);
             x /= 10;
         }
         // Even digit count: the halves match exactly. Odd count: the middle

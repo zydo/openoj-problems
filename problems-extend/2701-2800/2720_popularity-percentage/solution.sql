@@ -20,10 +20,7 @@ WITH
   )
 SELECT
   d.u AS user1,
-  ROUND(
-    100.0 * COUNT(f) / p.users,
-    2
-  ) AS percentage_popularity
+  ROUND(100.0 * COUNT(f) / p.users, 2) AS percentage_popularity
 FROM
   directed d
   CROSS JOIN population p

@@ -9,7 +9,8 @@ class Solution {
         int n = (int)lights.size();
         vector<int> diff(n + 1, 0);
         for (int i = 0; i < n; ++i) {
-            if (lights[i] == 0) continue;
+            if (lights[i] == 0)
+                continue;
             int left = max(0, i - lights[i]);
             int right = min(n - 1, i + lights[i]);
             ++diff[left];
@@ -27,7 +28,8 @@ class Solution {
             if (!covered[i]) {
                 ++answer;
                 int end = min(n - 1, i + 2);
-                for (int j = i; j <= end; ++j) covered[j] = true;
+                for (int j = i; j <= end; ++j)
+                    covered[j] = true;
                 i = end;
             }
         }

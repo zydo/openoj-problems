@@ -12,7 +12,9 @@ pub struct MyHashMap {
 
 impl MyHashMap {
     pub fn new() -> Self {
-        MyHashMap { buckets: vec![Vec::new(); BUCKET_COUNT] }
+        MyHashMap {
+            buckets: vec![Vec::new(); BUCKET_COUNT],
+        }
     }
 
     pub fn put(&mut self, key: i32, value: i32) {

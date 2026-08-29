@@ -13,6 +13,6 @@ class Solution:
             plus = local.find("+")
             if plus != -1:
                 local = local[:plus]
-            key = local.replace(".", "").lower() + "@" + email[at + 1:].lower()
+            key = local.replace(".", "").lower() + "@" + email[at + 1 :].lower()
             seen.add(key)
         return len(seen)

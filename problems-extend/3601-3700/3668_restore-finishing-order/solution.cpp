@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> recoverOrder(vector<int>& order, vector<int>& friends) {
+    vector<int> recoverOrder(vector<int> &order, vector<int> &friends) {
         // The roster is capped at eight ids, so a hash set answers every
         // membership test in O(1) expected time.
         unordered_set<int> wanted(friends.begin(), friends.end());

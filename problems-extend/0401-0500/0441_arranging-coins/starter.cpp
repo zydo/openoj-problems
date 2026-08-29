@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int arrangeCoins(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int arrangeCoins(int n) { throw logic_error("TODO"); }
 };

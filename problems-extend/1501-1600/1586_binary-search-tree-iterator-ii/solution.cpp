@@ -20,18 +20,14 @@ class BSTIterator {
         }
     }
 
-    bool hasNext() {
-        return index + 1 < static_cast<int>(values.size());
-    }
+    bool hasNext() { return index + 1 < static_cast<int>(values.size()); }
 
     int next() {
         index++;
         return values[index];
     }
 
-    bool hasPrev() {
-        return index > 0;
-    }
+    bool hasPrev() { return index > 0; }
 
     int prev() {
         index--;

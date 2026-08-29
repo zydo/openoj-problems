@@ -9,10 +9,7 @@ class Solution:
         for row in range(rows):
             for column in range(columns):
                 occupied[row + 1][column + 1] = (
-                    grid[row][column]
-                    + occupied[row][column + 1]
-                    + occupied[row + 1][column]
-                    - occupied[row][column]
+                    grid[row][column] + occupied[row][column + 1] + occupied[row + 1][column] - occupied[row][column]
                 )
 
         difference = [[0] * (columns + 1) for _ in range(rows + 1)]

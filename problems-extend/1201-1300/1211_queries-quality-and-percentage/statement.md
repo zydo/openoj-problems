@@ -4,12 +4,12 @@
 
 Table: `Queries`
 
-| Column Name | Type |
-| ----------- | ---- |
+| Column Name | Type    |
+| ----------- | ------- |
 | query_name  | varchar |
 | result      | varchar |
-| position    | int  |
-| rating      | int  |
+| position    | int     |
+| rating      | int     |
 
 This table may have duplicate rows.
 This table contains information collected from some queries on a database.

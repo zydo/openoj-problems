@@ -10,7 +10,10 @@ pub struct FrontMiddleBackQueue {
 
 impl FrontMiddleBackQueue {
     pub fn new() -> Self {
-        FrontMiddleBackQueue { front: VecDeque::new(), back: VecDeque::new() }
+        FrontMiddleBackQueue {
+            front: VecDeque::new(),
+            back: VecDeque::new(),
+        }
     }
 
     pub fn pushFront(&mut self, val: i32) {

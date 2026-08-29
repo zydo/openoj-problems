@@ -107,10 +107,7 @@ class JoinCase {
     // Drive the single judged invocation: copy both inputs live, invoke
     // the solution's joinTwoArrays, remember the structural verdict.
     check(solution) {
-        const actual = solution.joinTwoArrays(
-            this.copyTree(this.arr1),
-            this.copyTree(this.arr2)
-        );
+        const actual = solution.joinTwoArrays(this.copyTree(this.arr1), this.copyTree(this.arr2));
         this.passed = this.sameValue(actual, this.answer);
     }
 

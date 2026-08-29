@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    bool primeSubOperation(vector<int>& nums) {
+    bool primeSubOperation(vector<int> &nums) {
         // Sieve once up to max(nums): every usable prime sits below nums[i].
         // Greedy left to right, keeping prev = smallest feasible prefix end —
         // a smaller prefix end never constrains later elements more, so
@@ -24,8 +24,7 @@ class Solution {
             // the largest p <= x - prev - 1 (always < x). Subtracting it then
             // beats leaving x untouched, since the result is smaller yet still
             // above prev.
-            int index = upper_bound(primes.begin(), primes.end(), x - prev - 1) -
-                        primes.begin() - 1;
+            int index = upper_bound(primes.begin(), primes.end(), x - prev - 1) - primes.begin() - 1;
             if (index >= 0) {
                 prev = x - primes[index];
             } else if (x > prev) {

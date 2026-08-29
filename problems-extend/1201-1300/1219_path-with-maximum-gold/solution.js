@@ -10,7 +10,12 @@ var getMaximumGold = function (grid) {
         const gold = grid[r][c];
         grid[r][c] = 0;
         let deepest = 0;
-        for (const [nr, nc] of [[r - 1, c], [r + 1, c], [r, c - 1], [r, c + 1]]) {
+        for (const [nr, nc] of [
+            [r - 1, c],
+            [r + 1, c],
+            [r, c - 1],
+            [r, c + 1],
+        ]) {
             if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && grid[nr][nc] > 0) {
                 deepest = Math.max(deepest, walk(nr, nc));
             }

@@ -6,7 +6,7 @@ class Solution {
     // point's cheapest lane plus one.
     int minSideJumps(vector<int> &obstacles) {
         const int INF = 1000000000;
-        int dp[4] = { INF, 1, 0, 1 }; // lanes indexed 1..3; start on lane 2
+        int dp[4] = {INF, 1, 0, 1}; // lanes indexed 1..3; start on lane 2
         for (int point = 1; point < (int)obstacles.size(); ++point) {
             int blocked = obstacles[point];
             dp[blocked] = INF;

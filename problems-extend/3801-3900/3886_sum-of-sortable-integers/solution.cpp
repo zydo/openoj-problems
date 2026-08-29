@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
   public:
-    int sortableIntegers(vector<int>& nums) {
+    int sortableIntegers(vector<int> &nums) {
         int n = (int)nums.size();
         vector<int> ordered = nums;
         sort(ordered.begin(), ordered.end());
@@ -33,7 +33,7 @@ class Solution {
   private:
     // A sequence is a cyclic rotation of the block exactly when it appears
     // inside `block + block`; a KMP scan answers that in O(k).
-    static bool isRotation(const vector<int>& block, const vector<int>& target) {
+    static bool isRotation(const vector<int> &block, const vector<int> &target) {
         int k = (int)block.size();
         vector<int> text(2 * k);
         for (int i = 0; i < k; ++i) {

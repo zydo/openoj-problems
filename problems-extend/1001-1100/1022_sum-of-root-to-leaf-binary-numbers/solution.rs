@@ -10,11 +10,7 @@ impl Solution {
         // must fit the promised 32-bit answer, so a wide accumulator
         // removes any risk of intermediate overflow while a long prefix
         // is still being walked.
-        let mut stack: Vec<(&TreeNode, i64)> = root
-            .as_deref()
-            .into_iter()
-            .map(|node| (node, 0))
-            .collect();
+        let mut stack: Vec<(&TreeNode, i64)> = root.as_deref().into_iter().map(|node| (node, 0)).collect();
         let mut total: i64 = 0;
         while let Some((node, running)) = stack.pop() {
             let value = running * 2 + node.val as i64;

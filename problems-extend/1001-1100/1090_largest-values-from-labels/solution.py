@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def largestValsFromLabels(
-        self, values: List[int], labels: List[int], numWanted: int, useLimit: int
-    ) -> int:
+    def largestValsFromLabels(self, values: List[int], labels: List[int], numWanted: int, useLimit: int) -> int:
         # Greedy: sort items by value descending and take each one while
         # both the per-label cap and the total count allow it.
         items = sorted(zip(values, labels), key=lambda p: -p[0])

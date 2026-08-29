@@ -10,9 +10,11 @@ class Solution {
         int first = -1, last = -1, mode = 0;
         for (int i = 0; i < 256; ++i) {
             if (count[i] > 0) {
-                if (first == -1) first = i;
+                if (first == -1)
+                    first = i;
                 last = i;
-                if (count[i] > count[mode]) mode = i;
+                if (count[i] > count[mode])
+                    mode = i;
                 total += count[i];
                 total_sum += (long long)i * count[i];
             }
@@ -23,7 +25,8 @@ class Solution {
             long long acc = 0;
             for (int i = 0; i < 256; ++i) {
                 acc += count[i];
-                if (acc >= k) return i;
+                if (acc >= k)
+                    return i;
             }
             return 0;
         };

@@ -4,7 +4,5 @@
 // is irrelevant to the outcome. Returns a new array; the input is left
 // untouched.
 function sortTheStudents(score: number[][], k: number): number[][] {
-    return score
-        .slice()
-        .sort((a, b) => b[k] - a[k]);
+    return score.slice().sort((a, b) => b[k] - a[k]);
 }

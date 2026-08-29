@@ -42,7 +42,8 @@ class Solution {
         }
         // occ[x] lists the sorted positions of rank x, so any range frequency
         // is two binary searches.
-        int[] counts = new int[m], fill = new int[m];
+        int[] counts = new int[m],
+            fill = new int[m];
         for (int x : a) {
             counts[x]++;
         }
@@ -61,10 +62,14 @@ class Solution {
         // the smallest rank attaining it. One sweep per left block grows the
         // window additions-only, so counts never decrease and the mode pair
         // stays O(1) per element.
-        int[] topF = new int[k * k], topV = new int[k * k], cnt = new int[m];
+        int[] topF = new int[k * k],
+            topV = new int[k * k],
+            cnt = new int[m];
         for (int i = 0; i < k; i++) {
             Arrays.fill(cnt, 0);
-            int mf = 0, mv = 0, pos = i * b;
+            int mf = 0,
+                mv = 0,
+                pos = i * b;
             for (int j = i; j < k; j++) {
                 int end = Math.min((j + 1) * b, n);
                 for (; pos < end; pos++) {
@@ -83,12 +88,17 @@ class Solution {
 
         // The overall top element clears any threshold exactly when something
         // does, so every answer is that element's pair checked once.
-        int[] stamp = new int[m], freq = new int[m], seen = new int[2 * b + 2];
+        int[] stamp = new int[m],
+            freq = new int[m],
+            seen = new int[2 * b + 2];
         int[] out = new int[queries.length];
         int token = 0;
         for (int qi = 0; qi < queries.length; qi++) {
-            int l = queries[qi][0], r = queries[qi][1], t = queries[qi][2];
-            int bl = l / b, br = r / b;
+            int l = queries[qi][0],
+                r = queries[qi][1],
+                t = queries[qi][2];
+            int bl = l / b,
+                br = r / b;
             token++;
             int bf, bv;
             if (br - bl <= 1) {
@@ -149,7 +159,8 @@ class Solution {
     }
 
     private int upperBound(int[] list, int target) {
-        int lo = 0, hi = list.length;
+        int lo = 0,
+            hi = list.length;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (list[mid] <= target) {

@@ -4,10 +4,7 @@ impl Solution {
         // apply the digit-sum transform k times. The concatenated value
         // stays a string: 100 letters -> up to 200 digits, far beyond any
         // fixed-width integer.
-        let mut digits: String = s
-            .bytes()
-            .map(|b| (b - b'a' + 1).to_string())
-            .collect();
+        let mut digits: String = s.bytes().map(|b| (b - b'a' + 1).to_string()).collect();
         for _ in 0..k {
             let sum: u32 = digits.bytes().map(|b| (b - b'0') as u32).sum();
             digits = sum.to_string();

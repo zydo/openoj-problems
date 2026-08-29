@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int compareVersion(string version1, string version2) {
-        throw logic_error("TODO");
-    }
+  public:
+    int compareVersion(string version1, string version2) { throw logic_error("TODO"); }
 };

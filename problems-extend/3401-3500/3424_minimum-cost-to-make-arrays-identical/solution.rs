@@ -6,16 +6,16 @@ impl Solution {
         // over permutations. The answer is the cheaper of leaving arr put
         // and paying k plus that matched cost. Sums reach 2 * 10^10 and
         // k itself is up to 2 * 10^10, so everything widens to i64.
-        let direct: i64 = arr
-            .iter()
-            .zip(&brr)
-            .map(|(&a, &b)| (a as i64 - b as i64).abs())
-            .sum();
+        let direct: i64 = arr.iter().zip(&brr).map(|(&a, &b)| (a as i64 - b as i64).abs()).sum();
         let mut sa = arr.clone();
         let mut sb = brr.clone();
         sa.sort();
         sb.sort();
-        let matched = k + sa.iter().zip(&sb).map(|(&a, &b)| (a as i64 - b as i64).abs()).sum::<i64>();
+        let matched = k + sa
+            .iter()
+            .zip(&sb)
+            .map(|(&a, &b)| (a as i64 - b as i64).abs())
+            .sum::<i64>();
         direct.min(matched)
     }
 }

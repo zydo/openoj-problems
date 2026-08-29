@@ -10,7 +10,8 @@ class Solution {
             }
         }
         sort(kept.begin(), kept.end(), [](const vector<int> &a, const vector<int> &b) {
-            if (a[1] != b[1]) return a[1] > b[1];
+            if (a[1] != b[1])
+                return a[1] > b[1];
             return a[0] > b[0];
         });
         vector<int> out;

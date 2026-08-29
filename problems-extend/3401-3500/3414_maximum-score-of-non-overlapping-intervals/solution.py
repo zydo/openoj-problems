@@ -28,9 +28,7 @@ class Solution:
                         pos -= 1
                     arr.insert(pos, idx)
                     # Score first; on a tie the smaller index tuple wins.
-                    if prev_score + weight > best[0] or (
-                        prev_score + weight == best[0] and tuple(arr) < best[1]
-                    ):
+                    if prev_score + weight > best[0] or (prev_score + weight == best[0] and tuple(arr) < best[1]):
                         best = (prev_score + weight, tuple(arr))
                 dp[k][i] = best
 

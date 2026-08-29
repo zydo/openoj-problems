@@ -3,6 +3,6 @@
  * @param {number} k
  * @return {number}
  */
-var kthLargestValue = function(matrix, k) {
+var kthLargestValue = function (matrix, k) {
     throw new Error("TODO");
 };

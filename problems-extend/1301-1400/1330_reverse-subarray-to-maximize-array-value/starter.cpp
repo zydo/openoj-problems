@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int maxValueAfterReverse(vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    int maxValueAfterReverse(vector<int> &nums) { throw logic_error("TODO"); }
 };

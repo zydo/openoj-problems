@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxSumTwoNoOverlap(vector<int>& nums, int firstLen, int secondLen) {
+    int maxSumTwoNoOverlap(vector<int> &nums, int firstLen, int secondLen) {
         int n = static_cast<int>(nums.size());
         vector<int> prefix(n + 1, 0);
         for (int i = 0; i < n; ++i) {
@@ -14,7 +14,7 @@ class Solution {
     }
 
   private:
-    int best(const vector<int>& prefix, int n, int lead, int trail) {
+    int best(const vector<int> &prefix, int n, int lead, int trail) {
         // Sweep every position where the trailing window could end,
         // tracking the best leading window that ends at or before the
         // trailing window's start (so the two never overlap, whether they

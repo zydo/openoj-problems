@@ -25,20 +25,26 @@ impl Solution {
         // and sharing any point (even one boundary) means overlapping, so
         // predecessors must end strictly left of the current left end.
         let mut order: Vec<usize> = (0..n).collect();
-        order.sort_by(|&a, &b| {
-            (intervals[a][1], intervals[a][0]).cmp(&(intervals[b][1], intervals[b][0]))
-        });
+        order.sort_by(|&a, &b| (intervals[a][1], intervals[a][0]).cmp(&(intervals[b][1], intervals[b][0])));
         let rights: Vec<i32> = order.iter().map(|&t| intervals[t][1]).collect();
 
         let neg = -(1i64 << 62);
         // Layer k: over prefix length i, best score picking exactly k of
         // the first i sorted intervals.
-        let empty = State { score: 0, slots: [0; 4], len: 0 };
+        let empty = State {
+            score: 0,
+            slots: [0; 4],
+            len: 0,
+        };
         let mut prev = vec![empty.clone(); n + 1];
         let mut cur = vec![empty.clone(); n + 1];
         let mut best = vec![empty.clone(); 5];
         for k in 1..=4usize {
-            cur[0] = State { score: neg, slots: [0; 4], len: 0 };
+            cur[0] = State {
+                score: neg,
+                slots: [0; 4],
+                len: 0,
+            };
             for i in 1..=n {
                 cur[i] = cur[i - 1].clone();
                 let idx = order[i - 1];
@@ -60,9 +66,7 @@ impl Solution {
                     cand.slots[pos] = idx as i32;
                     cand.len += 1;
                     // Score first; on a tie the smaller index tuple wins.
-                    if cand_score > cur[i].score
-                        || (cand_score == cur[i].score && less_tup(&cand, &cur[i]))
-                    {
+                    if cand_score > cur[i].score || (cand_score == cur[i].score && less_tup(&cand, &cur[i])) {
                         cur[i] = cand;
                     }
                 }

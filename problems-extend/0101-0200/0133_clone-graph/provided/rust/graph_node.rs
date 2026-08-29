@@ -7,6 +7,9 @@ pub struct GraphNode {
 
 impl GraphNode {
     pub fn new(val: i32) -> Self {
-        GraphNode { val, neighbors: Vec::new() }
+        GraphNode {
+            val,
+            neighbors: Vec::new(),
+        }
     }
 }

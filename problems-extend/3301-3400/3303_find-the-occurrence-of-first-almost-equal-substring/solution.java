@@ -10,7 +10,8 @@ class Solution {
         // Z-functions: forward over pattern + sep + s; over the reversals, a
         // prefix of the reversed pattern matching at offset n - 1 - (window
         // end) is exactly a common suffix ending at that window end.
-        int n = s.length(), m = pattern.length();
+        int n = s.length(),
+            m = pattern.length();
         int[] values = new int[m + 1 + n];
         for (int i = 0; i < m; i++) {
             values[i] = pattern.charAt(i);
@@ -40,7 +41,8 @@ class Solution {
         int m = values.length;
         int[] z = new int[m];
         z[0] = m;
-        int left = 0, right = 0;
+        int left = 0,
+            right = 0;
         for (int i = 1; i < m; i++) {
             if (i < right) {
                 z[i] = Math.min(right - i, z[i - left]);

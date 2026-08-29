@@ -11,7 +11,8 @@ var canConvert = function (str1, str2) {
     const mapping = new Map();
     const targets = new Set();
     for (let i = 0; i < str1.length; ++i) {
-        const a = str1[i], b = str2[i];
+        const a = str1[i],
+            b = str2[i];
         if (mapping.has(a) && mapping.get(a) !== b) {
             // One source letter would need two different targets.
             return false;

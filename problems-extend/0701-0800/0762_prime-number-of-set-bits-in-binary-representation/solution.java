@@ -8,7 +8,7 @@ class Solution {
         // bit, the value 1 and every power of two, is not prime — so
         // each candidate costs one popcount plus one table read.
         int[] isPrime = new int[21];
-        for (int p : new int[] {2, 3, 5, 7, 11, 13, 17, 19}) {
+        for (int p : new int[] { 2, 3, 5, 7, 11, 13, 17, 19 }) {
             isPrime[p] = 1;
         }
         int count = 0;

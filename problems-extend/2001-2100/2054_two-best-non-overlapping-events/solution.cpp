@@ -1,9 +1,8 @@
 class Solution {
-public:
+  public:
     int maxTwoEvents(vector<vector<int>> &events) {
-        sort(events.begin(), events.end(), [](const vector<int> &left, const vector<int> &right) {
-            return left[0] < right[0];
-        });
+        sort(events.begin(), events.end(),
+             [](const vector<int> &left, const vector<int> &right) { return left[0] < right[0]; });
         vector<int> suffixMaximum(events.size() + 1);
         for (int index = static_cast<int>(events.size()) - 1; index >= 0; --index) {
             suffixMaximum[index] = max(events[index][2], suffixMaximum[index + 1]);

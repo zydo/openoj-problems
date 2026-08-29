@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     // An operation always consumes one x and one k - x, so the answer
     // depends only on how often each value occurs. For x below its
     // complement the pair count is capped by the scarcer side, giving
@@ -7,13 +7,13 @@ public:
     // complement and pairs with itself count(x) / 2 times. Comparing x
     // with k - x directly, never summing two values, keeps every
     // intermediate inside 32 bits.
-    int maxOperations(vector<int>& nums, int k) {
+    int maxOperations(vector<int> &nums, int k) {
         unordered_map<int, int> count;
         for (int value : nums) {
             ++count[value];
         }
         int ops = 0;
-        for (const auto& [x, c] : count) {
+        for (const auto &[x, c] : count) {
             int complement = k - x;
             if (x < complement) {
                 auto mate = count.find(complement);

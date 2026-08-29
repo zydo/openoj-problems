@@ -5,9 +5,8 @@ class Solution {
         // it descending makes plain greed exact: the largest value that fits
         // is always the symbol the decimal-place rules would pick.
         static const pair<int, const char *> table[] = {
-            {1000, "M"}, {900, "CM"}, {500, "D"}, {400, "CD"}, {100, "C"}, {90, "XC"},
-            {50, "L"},   {40, "XL"},  {10, "X"},  {9, "IX"},   {5, "V"},   {4, "IV"},
-            {1, "I"},
+            {1000, "M"}, {900, "CM"}, {500, "D"}, {400, "CD"}, {100, "C"}, {90, "XC"}, {50, "L"},
+            {40, "XL"},  {10, "X"},   {9, "IX"},  {5, "V"},    {4, "IV"},  {1, "I"},
         };
         string result;
         // Each value is consumed at most three times, so the walk is bounded

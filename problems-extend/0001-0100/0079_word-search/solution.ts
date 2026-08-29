@@ -11,7 +11,12 @@ function exist(board: string[][], word: string): boolean {
         const letter = board[row][col];
         board[row][col] = "#";
         let found = false;
-        for (const [deltaRow, deltaCol] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+        for (const [deltaRow, deltaCol] of [
+            [1, 0],
+            [-1, 0],
+            [0, 1],
+            [0, -1],
+        ]) {
             const nextRow = row + deltaRow;
             const nextCol = col + deltaCol;
             if (nextRow >= 0 && nextRow < rows && nextCol >= 0 && nextCol < cols && walk(nextRow, nextCol, index + 1)) {

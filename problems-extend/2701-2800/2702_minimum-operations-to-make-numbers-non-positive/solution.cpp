@@ -9,8 +9,7 @@ class Solution {
     // iff the required picks fit inside the t operations. The running
     // pick total can pass INT_MAX before the early exit fires, so
     // products and the accumulator stay in 64-bit.
-    bool feasible(const vector<int> &nums, long long t, long long x,
-                  long long y) {
+    bool feasible(const vector<int> &nums, long long t, long long x, long long y) {
         long long base = t * y;
         long long gain = x - y;
         long long used = 0;

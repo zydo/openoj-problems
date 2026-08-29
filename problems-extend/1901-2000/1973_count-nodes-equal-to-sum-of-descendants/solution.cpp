@@ -17,17 +17,19 @@ class Solution {
             TreeNode *node = pending.back();
             pending.pop_back();
             order.push_back(node);
-            if (node->right != nullptr) pending.push_back(node->right);
-            if (node->left != nullptr) pending.push_back(node->left);
+            if (node->right != nullptr)
+                pending.push_back(node->right);
+            if (node->left != nullptr)
+                pending.push_back(node->left);
         }
         std::unordered_map<TreeNode *, long long> subtree;
         int count = 0;
         for (int i = (int)order.size() - 1; i >= 0; --i) {
             TreeNode *node = order[i];
-            long long total =
-                node->val + subtree[node->left] + subtree[node->right];
+            long long total = node->val + subtree[node->left] + subtree[node->right];
             subtree[node] = total;
-            if ((long long)node->val == total - node->val) ++count;
+            if ((long long)node->val == total - node->val)
+                ++count;
         }
         return count;
     }

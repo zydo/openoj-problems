@@ -10,14 +10,8 @@ impl Solution {
 
         // (height, width, is the 3x3 k=4 pattern) per k, tried in order.
         let plain3: [(usize, usize, bool); 2] = [(2, 3, false), (3, 2, false)];
-        let quad: [(usize, usize, bool); 3] =
-            [(2, 4, false), (4, 2, false), (3, 3, true)];
-        let table: [&[(usize, usize, bool)]; 4] = [
-            &[(1, 1, false)],
-            &[(2, 2, false)],
-            &plain3,
-            &quad,
-        ];
+        let quad: [(usize, usize, bool); 3] = [(2, 4, false), (4, 2, false), (3, 3, true)];
+        let table: [&[(usize, usize, bool)]; 4] = [&[(1, 1, false)], &[(2, 2, false)], &plain3, &quad];
         for &(height, width, corners_blocked) in table[k - 1] {
             if height > m || width > n {
                 continue;
@@ -38,10 +32,7 @@ impl Solution {
             for i in height - 1..m {
                 grid[i][n - 1] = b'.';
             }
-            return grid
-                .into_iter()
-                .map(|row| String::from_utf8(row).unwrap())
-                .collect();
+            return grid.into_iter().map(|row| String::from_utf8(row).unwrap()).collect();
         }
         Vec::new()
     }

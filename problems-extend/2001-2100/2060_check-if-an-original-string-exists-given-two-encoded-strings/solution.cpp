@@ -1,18 +1,18 @@
 class Solution {
-public:
+  public:
     bool possiblyEquals(string s1, string s2) {
         unordered_map<long long, char> memo;
         return search(0, 0, 0, s1, s2, memo);
     }
 
-private:
+  private:
     long long stateKey(int i, int j, int difference) {
-        return (static_cast<long long>(i) << 48) | (static_cast<long long>(j) << 32)
-               | static_cast<unsigned int>(difference);
+        return (static_cast<long long>(i) << 48) | (static_cast<long long>(j) << 32) |
+               static_cast<unsigned int>(difference);
     }
 
-    bool search(int i, int j, int difference, const string& s1, const string& s2,
-                unordered_map<long long, char>& memo) {
+    bool search(int i, int j, int difference, const string &s1, const string &s2,
+                unordered_map<long long, char> &memo) {
         long long key = stateKey(i, j, difference);
         auto found = memo.find(key);
         if (found != memo.end()) {
@@ -49,8 +49,8 @@ private:
             answer = search(i, j + 1, difference - 1, s1, s2, memo);
         } else if (difference < 0 && i < static_cast<int>(s1.size()) && isalpha(s1[i])) {
             answer = search(i + 1, j, difference + 1, s1, s2, memo);
-        } else if (difference == 0 && i < static_cast<int>(s1.size()) && j < static_cast<int>(s2.size())
-                   && isalpha(s1[i]) && isalpha(s2[j]) && s1[i] == s2[j]) {
+        } else if (difference == 0 && i < static_cast<int>(s1.size()) && j < static_cast<int>(s2.size()) &&
+                   isalpha(s1[i]) && isalpha(s2[j]) && s1[i] == s2[j]) {
             answer = search(i + 1, j + 1, 0, s1, s2, memo);
         }
         memo[key] = answer ? 2 : 1;

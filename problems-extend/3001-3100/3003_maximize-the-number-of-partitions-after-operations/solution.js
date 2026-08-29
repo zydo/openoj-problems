@@ -74,7 +74,7 @@ var maxPartitionsAfterOperations = function (s, k) {
     for (const count of spent.values()) {
         best = Math.max(best, count);
     }
-    return best + 1;  // the final open partition always counts
+    return best + 1; // the final open partition always counts
 };
 
 function popcount(mask) {

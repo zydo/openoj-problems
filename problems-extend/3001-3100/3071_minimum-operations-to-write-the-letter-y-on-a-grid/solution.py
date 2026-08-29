@@ -9,9 +9,7 @@ class Solution:
         other_count = [0, 0, 0]
         for r in range(n):
             for c in range(n):
-                on_y = (r == c and r <= mid) or (
-                    c == n - 1 - r and r <= mid
-                ) or (c == mid and r >= mid)
+                on_y = (r == c and r <= mid) or (c == n - 1 - r and r <= mid) or (c == mid and r >= mid)
                 if on_y:
                     y_count[grid[r][c]] += 1
                 else:

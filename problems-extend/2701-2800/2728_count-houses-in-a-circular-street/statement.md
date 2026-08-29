@@ -2,6 +2,8 @@
 
 ## Description
 
+This is an **interactive** problem.
+
 You are given an object street of class Street that represents a circular
 street and a positive integer k which represents a maximum bound for the
 number of houses in that street (in other words, the number of houses is less
@@ -21,6 +23,12 @@ The class Street contains the following functions which may help you:
 
 Return ans which represents the number of houses on this street.
 
+**Note (OpenOJ):** the signature is `houseCount(street, k)`; the street
+arrives as the `Street` object handed to your method, with your starting
+position fixed by the input, and every `openDoor`, `closeDoor`,
+`isDoorOpen`, `moveRight`, and `moveLeft` call counts against an ample
+budget of 1 000 000 operations.
+
 ### Example 1
 
 ```text
@@ -35,7 +43,8 @@ The number of houses is less than k, which is 10.
 ```text
 Input: street = [1,0,1,1,0], k = 5
 Output: 5
-Explanation: There are 5 houses, and the doors of the 1st, 3rd, and 4th house (moving in the right direction) are open, and the rest are closed.
+Explanation: There are 5 houses, and the doors of the 1st, 3rd, and 4th
+house (moving in the right direction) are open, and the rest are closed.
 The number of houses is equal to k, which is 5.
 ```
 

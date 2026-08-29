@@ -9,8 +9,7 @@ impl Solution {
         let mut dist = vec![vec![0i32; n]; n];
         for i in 0..n {
             for j in 0..n {
-                dist[i][j] = (points[i][0] - points[j][0]).abs()
-                    + (points[i][1] - points[j][1]).abs();
+                dist[i][j] = (points[i][0] - points[j][0]).abs() + (points[i][1] - points[j][1]).abs();
             }
         }
         // The factor of any split is 0 or one of the inter-point distances,

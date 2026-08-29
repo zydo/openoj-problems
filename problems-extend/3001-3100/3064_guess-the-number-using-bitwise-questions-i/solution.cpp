@@ -1,8 +1,8 @@
 class HiddenNumber;
 
 class Solution {
-public:
-    int findNumber(HiddenNumber& hiddenNumber) {
+  public:
+    int findNumber(HiddenNumber &hiddenNumber) {
         // A single-bit mask shares at most one bit with n, so the reply is
         // 0 or 1: positive means bit i of n itself is set.
         int number = 0;

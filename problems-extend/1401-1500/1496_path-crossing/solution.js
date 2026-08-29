@@ -3,7 +3,8 @@
  * @return {boolean}
  */
 var isPathCrossing = function (path) {
-    let x = 0, y = 0;
+    let x = 0,
+        y = 0;
     const visited = new Set(["0,0"]);
     for (const step of path) {
         if (step === "N") {

@@ -1,4 +1,5 @@
 class Solution {
+
     public int countValidWords(String sentence) {
         int validWords = 0;
         for (String token : sentence.trim().split("\\s+")) {
@@ -21,11 +22,11 @@ class Solution {
             if (character == '-') {
                 hyphens++;
                 if (
-                    hyphens > 1
-                        || index == 0
-                        || index + 1 == token.length()
-                        || !isLetter(token.charAt(index - 1))
-                        || !isLetter(token.charAt(index + 1))
+                    hyphens > 1 ||
+                    index == 0 ||
+                    index + 1 == token.length() ||
+                    !isLetter(token.charAt(index - 1)) ||
+                    !isLetter(token.charAt(index + 1))
                 ) {
                     return false;
                 }

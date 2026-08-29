@@ -13,5 +13,5 @@ class Solution:
         for size, members in buckets.items():
             # A valid grouping exists, so len(members) is a multiple of size.
             for start in range(0, len(members), size):
-                groups.append(members[start:start + size])
+                groups.append(members[start : start + size])
         return groups

@@ -13,7 +13,8 @@ class Solution {
         }
         // Walk the string once, tracking the current row and direction;
         // reverse exactly at the top and bottom rows, where the zigzag turns.
-        int index = 0, step = -1;
+        int index = 0,
+            step = -1;
         for (int i = 0; i < s.length(); i++) {
             rows[index].append(s.charAt(i));
             if (index == 0) {

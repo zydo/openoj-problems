@@ -12,7 +12,8 @@ class Solution {
         rotated.put('8', '8');
         rotated.put('6', '9');
         rotated.put('9', '6');
-        int left = 0, right = num.length() - 1;
+        int left = 0,
+            right = num.length() - 1;
         while (left <= right) {
             // Each digit must be the rotation of the digit standing opposite.
             Character turn = rotated.get(num.charAt(left));

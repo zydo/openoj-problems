@@ -4,8 +4,8 @@
 #include <vector>
 
 class Solution {
-public:
-    vector<int> busiestServers(int k, vector<int>& arrival, vector<int>& load) {
+  public:
+    vector<int> busiestServers(int k, vector<int> &arrival, vector<int> &load) {
         vector<int> tree(k + 1, 0);
         auto update = [&](int server, int delta) {
             int i = server + 1;
@@ -71,7 +71,7 @@ public:
 
             update(server, -1);
             counts[server]++;
-            heap.push({ startTime + load[i], server });
+            heap.push({startTime + load[i], server});
         }
 
         int busiest = *max_element(counts.begin(), counts.end());

@@ -13,6 +13,7 @@ class SQL {
     // walking the row map in key order is therefore also the exp() output
     // order.
     private static final class Table {
+
         final int columns;
         // A TreeMap keeps the row ids ascending for exp() walks.
         final TreeMap<Integer, String[]> rows = new TreeMap<>();

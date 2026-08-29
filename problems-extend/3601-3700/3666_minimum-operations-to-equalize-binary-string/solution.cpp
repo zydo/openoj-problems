@@ -25,7 +25,7 @@ class Solution {
             while (nxt[root] != root) {
                 root = nxt[root];
             }
-            while (nxt[i] != root) {  // path compression
+            while (nxt[i] != root) { // path compression
                 int up = nxt[i];
                 nxt[i] = root;
                 i = up;

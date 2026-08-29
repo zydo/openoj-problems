@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     vector<string> divideString(string s, int k, string fill) {
         int padding = (k - static_cast<int>(s.size()) % k) % k;
         s.append(padding, fill[0]);

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string reformat(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    string reformat(string s) { throw logic_error("TODO"); }
 };

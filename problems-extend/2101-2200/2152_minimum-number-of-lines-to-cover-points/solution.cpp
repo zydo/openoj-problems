@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimumLines(vector<vector<int>>& points) {
+    int minimumLines(vector<vector<int>> &points) {
         // At most 10 points, so the set of covered points fits in a bitmask:
         // dp[covered] = fewest lines covering exactly that subset. In each
         // state the lowest uncovered point i is covered by the next line, so

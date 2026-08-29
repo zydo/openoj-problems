@@ -1,12 +1,12 @@
 class Solution {
   public:
-    int minimumRounds(vector<int>& tasks) {
+    int minimumRounds(vector<int> &tasks) {
         unordered_map<int, int> counts;
         for (int task : tasks) {
             counts[task]++;
         }
         int rounds = 0;
-        for (auto& [level, count] : counts) {
+        for (auto &[level, count] : counts) {
             if (count == 1) {
                 return -1;
             }

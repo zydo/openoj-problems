@@ -54,7 +54,7 @@ class Solution {
                 }
                 // Taking occurrence q must not strand a needed letter.
                 int q = lst.get(j);
-                int lim = (c == d1) ? m2 : m1;
+                int lim = c == d1 ? m2 : m1;
                 if (q < lim) {
                     out.append((char) ('a' + c));
                     p = q;

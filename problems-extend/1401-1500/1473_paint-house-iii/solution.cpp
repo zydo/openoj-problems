@@ -3,11 +3,9 @@
 
 class Solution {
   public:
-    int minCost(std::vector<int>& houses, std::vector<std::vector<int>>& cost,
-                int m, int n, int target) {
+    int minCost(std::vector<int> &houses, std::vector<std::vector<int>> &cost, int m, int n, int target) {
         const long long INF = 1e18;
-        std::vector<std::vector<long long>> dp(
-            n + 1, std::vector<long long>(target + 1, INF));
+        std::vector<std::vector<long long>> dp(n + 1, std::vector<long long>(target + 1, INF));
         if (houses[0] != 0) {
             dp[houses[0]][1] = 0;
         } else {
@@ -16,8 +14,7 @@ class Solution {
             }
         }
         for (int i = 1; i < m; i++) {
-            std::vector<std::vector<long long>> ndp(
-                n + 1, std::vector<long long>(target + 1, INF));
+            std::vector<std::vector<long long>> ndp(n + 1, std::vector<long long>(target + 1, INF));
             for (int j = 1; j <= n; j++) {
                 if (houses[i] != 0 && houses[i] != j) {
                     continue;

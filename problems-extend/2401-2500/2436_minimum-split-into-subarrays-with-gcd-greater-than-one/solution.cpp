@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimumSplits(vector<int>& nums) {
+    int minimumSplits(vector<int> &nums) {
         // A block's gcd only ever shrinks as it absorbs elements, so the
         // greedy is forced: keep extending the open block while its running
         // gcd stays above 1, and cut exactly when the next element would

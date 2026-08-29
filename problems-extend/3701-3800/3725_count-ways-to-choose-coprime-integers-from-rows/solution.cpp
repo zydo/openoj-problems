@@ -1,13 +1,14 @@
 class Solution {
   public:
-    int countCoprime(vector<vector<int>>& mat) {
+    int countCoprime(vector<vector<int>> &mat) {
         // f[d] counts selections whose picks are ALL divisible by d; rows
         // constrain picks independently, so it factors into a product of
         // per-row multiple-counts. Mobius inversion turns those f(d) into
         // the exact gcd-1 count: answer = sum(mu(d) * f(d)).
         int top = 0;
-        for (const vector<int>& row : mat) {
-            for (int v : row) top = max(top, v);
+        for (const vector<int> &row : mat) {
+            for (int v : row)
+                top = max(top, v);
         }
         // mu[j] via the identity "sum of mu over the divisors of j is 1
         // exactly for j == 1": seed mu[1] and subtract down the multiples.
@@ -24,8 +25,9 @@ class Solution {
         const int64_t MOD = 1'000'000'007;
         vector<int64_t> f(top + 1, 1);
         vector<int> freq(top + 1, 0);
-        for (const vector<int>& row : mat) {
-            for (int v : row) ++freq[v];
+        for (const vector<int> &row : mat) {
+            for (int v : row)
+                ++freq[v];
             for (int d = 1; d <= top; ++d) {
                 int count = 0;
                 for (int multiple = d; multiple <= top; multiple += d) {
@@ -33,7 +35,8 @@ class Solution {
                 }
                 f[d] = f[d] * count % MOD;
             }
-            for (int v : row) --freq[v];
+            for (int v : row)
+                --freq[v];
         }
         int64_t answer = 0;
         for (int d = 0; d <= top; ++d) {

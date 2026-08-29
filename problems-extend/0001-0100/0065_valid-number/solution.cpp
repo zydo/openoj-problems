@@ -6,7 +6,7 @@ class Solution {
         // part being read — the mantissa first, then the exponent after the
         // 'e'/'E' resets it.
         bool seenDigit = false, seenDot = false, seenExp = false;
-        for (int i = 0; i < (int) s.size(); i++) {
+        for (int i = 0; i < (int)s.size(); i++) {
             char c = s[i];
             if (c >= '0' && c <= '9') {
                 seenDigit = true;

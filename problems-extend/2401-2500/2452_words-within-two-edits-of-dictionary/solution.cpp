@@ -20,7 +20,8 @@ class Solution {
     static int edits(const string &a, const string &b) {
         int count = 0;
         for (size_t i = 0; i < a.size(); ++i)
-            if (a[i] != b[i]) ++count;
+            if (a[i] != b[i])
+                ++count;
         return count;
     }
 };

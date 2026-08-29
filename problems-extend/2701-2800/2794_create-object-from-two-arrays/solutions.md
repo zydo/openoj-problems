@@ -15,10 +15,10 @@ The membership probe is the whole trick. `key in obj` is wrong because `in`
 walks the prototype chain: an input key like `"toString"` or
 `"constructor"` would look already-present on a fresh `{}` and be dropped
 even though it was never stored. Truthiness (`if (!obj[key])`) is wrong
-twice over — a stored falsey value looks missing, and a falsey *key* such
+twice over — a stored falsey value looks missing, and a falsey _key_ such
 as `0`, `false`, or `""` still deserves a slot after coercion (String("")
 is the perfectly valid empty-string key). `hasOwnProperty` asks exactly the
-right question: has *this object itself* ever written this exact string?
+right question: has _this object itself_ ever written this exact string?
 
 Only keys are coerced; values are copied as-is, so `null` stays `null` and
 an array value survives as an array rather than being stringified into its

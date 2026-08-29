@@ -51,7 +51,7 @@ Output: [0,1,2,3]
 - All strings in `favoriteCompanies[i]` are distinct.
 - All lists of favorite companies are distinct, that is, If we sort
   alphabetically each list then `favoriteCompanies[i] !=
-  favoriteCompanies[j]`.
+favoriteCompanies[j]`.
 - All strings consist of lowercase English letters only.
 
 ## Hints

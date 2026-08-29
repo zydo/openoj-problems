@@ -1,7 +1,8 @@
 class Solution {
   public:
     ListNode *oddEvenList(ListNode *head) {
-        if (head == nullptr) return head;
+        if (head == nullptr)
+            return head;
         // Two tail pointers step a pair at a time: the odd tail absorbs
         // the node after the even tail, the even tail the node after that.
         ListNode *odd = head;

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> rotateElements(vector<int>& nums, int k) {
+    vector<int> rotateElements(vector<int> &nums, int k) {
         // Gather the non-negative values in scan order, compute the effective
         // left shift k % m once, then scatter values[(j + shift) % m] into the
         // j-th originally non-negative slot — negatives are never touched.

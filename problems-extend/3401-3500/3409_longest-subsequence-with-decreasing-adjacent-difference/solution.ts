@@ -2,9 +2,7 @@ function longestSubsequence(nums: number[]): number {
     // E[x][d]: longest subsequence over processed prefixes ending with
     // value x, whose last adjacent difference is >= d (suffix max over d).
     const maxV = 300;
-    const E: number[][] = Array.from({ length: maxV + 1 }, () =>
-        new Array(maxV).fill(0)
-    );
+    const E: number[][] = Array.from({ length: maxV + 1 }, () => new Array(maxV).fill(0));
     let ans = 1;
     for (const v of nums) {
         // Exact-difference lengths ending here: a predecessor with new

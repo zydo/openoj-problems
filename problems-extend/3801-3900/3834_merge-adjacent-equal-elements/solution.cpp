@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<long long> mergeAdjacent(vector<int>& nums) {
+    vector<long long> mergeAdjacent(vector<int> &nums) {
         // Scan left to right keeping a stack of settled elements; when the incoming
         // value equals the top, merge them into their sum and keep cascading left
         // while the new sum equals the new top — the final stack is the answer.

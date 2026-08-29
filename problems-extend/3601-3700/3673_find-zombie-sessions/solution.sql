@@ -1,7 +1,9 @@
 SELECT
   session_id,
   user_id,
-  (strftime('%s', MAX(event_timestamp)) - strftime('%s', MIN(event_timestamp))) / 60 AS session_duration_minutes,
+  (
+    strftime('%s', MAX(event_timestamp)) - strftime('%s', MIN(event_timestamp))
+  ) / 60 AS session_duration_minutes,
   SUM(event_type = 'scroll') AS scroll_count
 FROM
   app_events

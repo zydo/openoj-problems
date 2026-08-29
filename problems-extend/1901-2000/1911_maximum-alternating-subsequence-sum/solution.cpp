@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long maxAlternatingSum(vector<int>& nums) {
+    long long maxAlternatingSum(vector<int> &nums) {
         // Two running optima over subsequences of the prefix: `even` is the
         // best alternating sum whose last picked element sits at an even
         // reindexed position, `odd` the best with one extra odd-position

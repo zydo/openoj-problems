@@ -1,4 +1,5 @@
 class Solution {
+
     public String makeFancyString(String s) {
         // Greedy append: keep s[i] unless it would extend a run of three.
         // Runs of a repeated character are independent, so truncating every

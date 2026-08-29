@@ -15,7 +15,12 @@ var numRookCaptures = function (board) {
     }
 
     let captures = 0;
-    for (const [deltaRow, deltaCol] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+    for (const [deltaRow, deltaCol] of [
+        [1, 0],
+        [-1, 0],
+        [0, 1],
+        [0, -1],
+    ]) {
         let row = rookRow + deltaRow;
         let col = rookCol + deltaCol;
         // Walk while the path is still empty; stop at the first piece or the edge.

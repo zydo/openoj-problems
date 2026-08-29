@@ -6,7 +6,8 @@ class Solution {
         // trip once carrying the running altitude, and seed the best
         // with that starting 0 so a trip that never climbs above its
         // start still reports 0.
-        int altitude = 0, best = 0;
+        int altitude = 0,
+            best = 0;
         for (int g : gain) {
             altitude += g;
             best = Math.max(best, altitude);

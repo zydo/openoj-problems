@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    bool isThereAPath(std::vector<std::vector<int>>& grid) {
+    bool isThereAPath(std::vector<std::vector<int>> &grid) {
         // Monotone moves give cell (i, j) exactly i + j + 1 visited
         // cells, so every balance (#1s - #0s) reachable there lies
         // inside [-(m+n-1), m+n-1] — a window of up to 399 values, one
@@ -38,16 +38,13 @@ class Solution {
     }
 
   private:
-    void setBit(std::vector<uint64_t>& bits, int index) {
-        bits[index >> 6] |= 1ULL << (index & 63);
-    }
+    void setBit(std::vector<uint64_t> &bits, int index) { bits[index >> 6] |= 1ULL << (index & 63); }
 
-    bool getBit(const std::vector<uint64_t>& bits, int index) {
+    bool getBit(const std::vector<uint64_t> &bits, int index) {
         return ((bits[index >> 6] >> (index & 63)) & 1ULL) != 0;
     }
 
-    void shift(const std::vector<uint64_t>& bits, bool up,
-               std::vector<uint64_t>& out) {
+    void shift(const std::vector<uint64_t> &bits, bool up, std::vector<uint64_t> &out) {
         if (up) { // every balance rises by one: shift the set toward MSB
             uint64_t carry = 0;
             for (size_t w = 0; w < bits.size(); w++) {

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes) {
+  public:
+    int maxSatisfied(vector<int> &customers, vector<int> &grumpy, int minutes) {
         int base = 0;
         for (int i = 0; i < (int)customers.size(); i++) {
             if (grumpy[i] == 0) {

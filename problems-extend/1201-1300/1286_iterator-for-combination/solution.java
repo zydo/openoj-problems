@@ -13,13 +13,13 @@ class CombinationIterator {
         // strings by their highest chosen index rather than by first letter,
         // so an explicit sort restores the lexicographic sequence.
         int n = characters.length();
-        for (int mask = 0; mask < (1 << n); mask++) {
+        for (int mask = 0; mask < 1 << n; mask++) {
             if (Integer.bitCount(mask) != combinationLength) {
                 continue;
             }
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < n; i++) {
-                if ((mask >> i & 1) == 1) {
+                if (((mask >> i) & 1) == 1) {
                     sb.append(characters.charAt(i));
                 }
             }

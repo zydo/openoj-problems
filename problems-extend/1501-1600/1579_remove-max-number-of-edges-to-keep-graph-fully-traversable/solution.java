@@ -5,6 +5,7 @@ class Solution {
     // every Type 3 edge is unioned into both copies at once, since it
     // serves both of them for free.
     private static final class DisjointSet {
+
         int[] parent;
         int components;
 
@@ -23,7 +24,8 @@ class Solution {
         }
 
         boolean union(int a, int b) {
-            int rootA = find(a), rootB = find(b);
+            int rootA = find(a),
+                rootB = find(b);
             if (rootA == rootB) return false;
             parent[rootA] = rootB;
             components--;

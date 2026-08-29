@@ -28,17 +28,13 @@ class Solution {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] == 0) continue;
                 int cell = i * n + j;
-                boolean corner =
-                    (i == 0 && j == 0) || (i == m - 1 && j == n - 1);
-                connect(graph, arcsTo, arcsCap, 2 * cell, 2 * cell + 1,
-                        corner ? inf : 1);
+                boolean corner = (i == 0 && j == 0) || (i == m - 1 && j == n - 1);
+                connect(graph, arcsTo, arcsCap, 2 * cell, 2 * cell + 1, corner ? inf : 1);
                 if (j + 1 < n && grid[i][j + 1] == 1) {
-                    connect(graph, arcsTo, arcsCap, 2 * cell + 1,
-                            2 * (cell + 1), inf);
+                    connect(graph, arcsTo, arcsCap, 2 * cell + 1, 2 * (cell + 1), inf);
                 }
                 if (i + 1 < m && grid[i + 1][j] == 1) {
-                    connect(graph, arcsTo, arcsCap, 2 * cell + 1,
-                            2 * (cell + n), inf);
+                    connect(graph, arcsTo, arcsCap, 2 * cell + 1, 2 * (cell + n), inf);
                 }
             }
         }
@@ -78,8 +74,14 @@ class Solution {
         return total < 2;
     }
 
-    private void connect(List<List<Integer>> graph, List<Integer> arcsTo,
-                         List<Integer> arcsCap, int u, int v, int cap) {
+    private void connect(
+        List<List<Integer>> graph,
+        List<Integer> arcsTo,
+        List<Integer> arcsCap,
+        int u,
+        int v,
+        int cap
+    ) {
         graph.get(u).add(arcsTo.size());
         arcsTo.add(v);
         arcsCap.add(cap);

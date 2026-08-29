@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int numSpecial(vector<vector<int>>& mat) {
+  public:
+    int numSpecial(vector<vector<int>> &mat) {
         int m = mat.size();
         int n = mat[0].size();
         vector<int> rowCount(m, 0);

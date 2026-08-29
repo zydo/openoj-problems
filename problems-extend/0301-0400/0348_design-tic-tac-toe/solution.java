@@ -28,8 +28,7 @@ class TicTacToe {
         if (row + col == n - 1) {
             antiDiagonal[player]++;
         }
-        if (rows[player][row] == n || cols[player][col] == n
-                || diagonal[player] == n || antiDiagonal[player] == n) {
+        if (rows[player][row] == n || cols[player][col] == n || diagonal[player] == n || antiDiagonal[player] == n) {
             return player;
         }
         return 0;

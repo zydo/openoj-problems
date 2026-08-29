@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minSwaps(vector<vector<int>>& grid) {
+  public:
+    int minSwaps(vector<vector<int>> &grid) {
         int n = grid.size();
         vector<int> zeros(n);
         for (int i = 0; i < n; i++) {
@@ -29,8 +29,8 @@ public:
         return swaps;
     }
 
-private:
-    int trailingZeros(const vector<int>& row) {
+  private:
+    int trailingZeros(const vector<int> &row) {
         int count = 0;
         for (int i = (int)row.size() - 1; i >= 0; i--) {
             if (row[i] != 0) {

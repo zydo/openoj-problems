@@ -15,6 +15,10 @@ impl Solution {
             rest /= 10;
             count += 1;
         }
-        if count % 2 == 0 { -total } else { total }
+        if count % 2 == 0 {
+            -total
+        } else {
+            total
+        }
     }
 }

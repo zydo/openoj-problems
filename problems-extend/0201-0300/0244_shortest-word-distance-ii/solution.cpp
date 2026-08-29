@@ -17,8 +17,8 @@ class WordDistance {
     }
 
     int shortest(string word1, string word2) {
-        const vector<int>& first = positions.at(word1);
-        const vector<int>& second = positions.at(word2);
+        const vector<int> &first = positions.at(word1);
+        const vector<int> &second = positions.at(word2);
         int best = abs(first[0] - second[0]);
         size_t i = 0;
         size_t j = 0;

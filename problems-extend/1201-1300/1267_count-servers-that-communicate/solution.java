@@ -4,7 +4,8 @@ class Solution {
         // A server communicates iff its row or its column holds another
         // server — any communicating partner must share one of those lines,
         // so tallies per line settle it without searching the pair graph.
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         int[] row = new int[m];
         int[] col = new int[n];
         for (int r = 0; r < m; ++r) {

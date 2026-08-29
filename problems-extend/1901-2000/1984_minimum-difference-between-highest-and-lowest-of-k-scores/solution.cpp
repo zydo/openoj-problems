@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int minimumDifference(vector<int> &nums, int k) {
         // Sort so the k chosen students form a contiguous window; the span
         // of that window is its highest minus lowest score.

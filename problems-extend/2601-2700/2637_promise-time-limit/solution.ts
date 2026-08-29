@@ -6,10 +6,7 @@
 // semantics make the second settlement call a no-op, so no extra
 // bookkeeping is needed to decide the winner — and both handlers route
 // into that single promise's resolve/reject pair.
-function timeLimit(
-    fn: (...args: unknown[]) => unknown,
-    t: number,
-): (...args: unknown[]) => Promise<unknown> {
+function timeLimit(fn: (...args: unknown[]) => unknown, t: number): (...args: unknown[]) => Promise<unknown> {
     return function (...args: unknown[]) {
         return new Promise<unknown>((resolve, reject) => {
             setTimeout(() => reject("Time Limit Exceeded"), t);

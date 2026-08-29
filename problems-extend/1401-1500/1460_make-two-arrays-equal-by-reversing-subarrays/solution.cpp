@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    bool canBeEqual(std::vector<int>& target, std::vector<int>& arr) {
+    bool canBeEqual(std::vector<int> &target, std::vector<int> &arr) {
         std::vector<int> counts(1001, 0);
         for (int value : target) {
             counts[value]++;

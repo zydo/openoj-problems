@@ -6,8 +6,8 @@ Table: `Data`
 
 | Column Name | Type |
 | ----------- | ---- |
-| first_col | int |
-| second_col | int |
+| first_col   | int  |
+| second_col  | int  |
 
 This table may contain duplicate rows.
 

@@ -2,8 +2,7 @@
 
 ## Description
 
-You are given an array `colors`, in which there are three colors: 1, 2 and
-3.
+You are given an array `colors`, in which there are three colors: 1, 2 and 3.
 
 You are also given some queries. Each query consists of two integers `i`
 and `c`, return the shortest distance between the given index `i` and the

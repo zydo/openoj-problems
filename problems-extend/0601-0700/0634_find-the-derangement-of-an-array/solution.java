@@ -8,9 +8,10 @@ class Solution {
         // ways), so D(n) = (n - 1) * (D(n - 1) + D(n - 2)). Both running
         // values stay under the modulus, but their sum times (i - 1)
         // reaches ~2e15, so the pair lives in longs.
-        long prev = 1, cur = 0; // D(0), D(1)
+        long prev = 1,
+            cur = 0; // D(0), D(1)
         for (int i = 2; i <= n; ++i) {
-            long next = (i - 1) * (cur + prev) % MOD;
+            long next = ((i - 1) * (cur + prev)) % MOD;
             prev = cur;
             cur = next;
         }

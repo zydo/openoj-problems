@@ -26,7 +26,8 @@ class Solution {
             Arrays.fill(distance, -1);
             distance[source] = 0;
             int[] queue = new int[n + 1];
-            int head = 0, tail = 0;
+            int head = 0,
+                tail = 0;
             queue[tail++] = source;
             while (head < tail) {
                 int house = queue[head++];

@@ -22,9 +22,12 @@ class Solution {
                 char ch = grid[r][c];
                 if (ch != '#') {
                     idx[r * cols + c] = n++;
-                    if (ch == 'M') mouse0 = idx[r * cols + c];
-                    else if (ch == 'C') cat0 = idx[r * cols + c];
-                    else if (ch == 'F') food = idx[r * cols + c];
+                    if (ch == 'M')
+                        mouse0 = idx[r * cols + c];
+                    else if (ch == 'C')
+                        cat0 = idx[r * cols + c];
+                    else if (ch == 'F')
+                        food = idx[r * cols + c];
                 }
             }
         }
@@ -87,7 +90,8 @@ class Solution {
     }
 
   private:
-    static vector<vector<int>> jumpLists(const vector<string> &grid, int rows, int cols, const vector<int> &idx, int n, int jump) {
+    static vector<vector<int>> jumpLists(const vector<string> &grid, int rows, int cols, const vector<int> &idx, int n,
+                                         int jump) {
         const int dr[4] = {0, 0, 1, -1}, dc[4] = {1, -1, 0, 0};
         vector<vector<int>> out(n);
         for (int r = 0; r < rows; r++) {

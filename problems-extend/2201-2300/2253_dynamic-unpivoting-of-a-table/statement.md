@@ -4,15 +4,15 @@
 
 Table: `Products`
 
-| Column Name | Type    |
-| ----------- | ------- |
-| product_id  | int     |
-| store_name1 | int     |
-| store_name2 | int     |
-| :          | int     |
-| :          | int     |
-| :          | int     |
-| store_namen | int     |
+| Column Name | Type |
+| ----------- | ---- |
+| product_id  | int  |
+| store_name1 | int  |
+| store_name2 | int  |
+| :           | int  |
+| :           | int  |
+| :           | int  |
+| store_namen | int  |
 
 product_id is the primary key for this table.
 Each row in this table indicates the product's price in n different stores.

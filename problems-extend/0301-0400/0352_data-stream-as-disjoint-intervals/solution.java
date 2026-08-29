@@ -35,7 +35,7 @@ class SummaryRanges {
         } else if (touchesRight) {
             intervals.get(index)[0] = value;
         } else {
-            intervals.add(index, new int[] {value, value});
+            intervals.add(index, new int[] { value, value });
         }
     }
 
@@ -43,7 +43,7 @@ class SummaryRanges {
         int[][] summary = new int[intervals.size()][];
         for (int index = 0; index < intervals.size(); ++index) {
             int[] interval = intervals.get(index);
-            summary[index] = new int[] {interval[0], interval[1]};
+            summary[index] = new int[] { interval[0], interval[1] };
         }
         return summary;
     }

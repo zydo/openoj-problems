@@ -28,8 +28,7 @@ impl Solution {
             let mid = (lo + hi) / 2;
             build(2 * node, lo, mid, quot, sorted_nodes, prefix_nodes);
             build(2 * node + 1, mid + 1, hi, quot, sorted_nodes, prefix_nodes);
-            let mut merged =
-                Vec::with_capacity(sorted_nodes[2 * node].len() + sorted_nodes[2 * node + 1].len());
+            let mut merged = Vec::with_capacity(sorted_nodes[2 * node].len() + sorted_nodes[2 * node + 1].len());
             merged.extend_from_slice(&sorted_nodes[2 * node]);
             merged.extend_from_slice(&sorted_nodes[2 * node + 1]);
             merged.sort_unstable();
@@ -87,16 +86,8 @@ impl Solution {
             // Smallest quotient whose inclusive rank reaches the lower
             // median; the decomposition's node set is fixed throughout.
             let need = ((r - l + 2) / 2) as i64;
-            let mut lo = pieces
-                .iter()
-                .map(|p| p.vec[0])
-                .min()
-                .unwrap();
-            let mut hi = pieces
-                .iter()
-                .map(|p| p.vec[p.vec.len() - 1])
-                .max()
-                .unwrap();
+            let mut lo = pieces.iter().map(|p| p.vec[0]).min().unwrap();
+            let mut hi = pieces.iter().map(|p| p.vec[p.vec.len() - 1]).max().unwrap();
             while lo < hi {
                 let mid = lo + (hi - lo) / 2;
                 let (count, _) = count_le_sum(&pieces, mid);
@@ -110,16 +101,10 @@ impl Solution {
             let size = (r - l + 1) as i64;
             let (at_count, at_sum) = count_le_sum(&pieces, median);
             let (below_count, below_sum) = count_le_sum(&pieces, median - 1);
-            let grand_total: i64 = pieces
-                .iter()
-                .map(|p| p.pref[p.pref.len() - 1])
-                .sum();
+            let grand_total: i64 = pieces.iter().map(|p| p.pref[p.pref.len() - 1]).sum();
             // Below-median elements climb by their shortfall; above-median
             // ones descend by their excess; equals cost nothing.
-            result.push(
-                median * below_count - below_sum
-                    + ((grand_total - at_sum) - median * (size - at_count)),
-            );
+            result.push(median * below_count - below_sum + ((grand_total - at_sum) - median * (size - at_count)));
         }
         result
     }

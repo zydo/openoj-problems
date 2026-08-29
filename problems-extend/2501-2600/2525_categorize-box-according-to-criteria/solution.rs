@@ -7,8 +7,7 @@ impl Solution {
         const BULK_VOLUME: i64 = 1_000_000_000;
         const HEAVY_MASS: i32 = 100;
         let volume = length as i64 * width as i64 * height as i64;
-        let bulky =
-            length >= BULK_DIM || width >= BULK_DIM || height >= BULK_DIM || volume >= BULK_VOLUME;
+        let bulky = length >= BULK_DIM || width >= BULK_DIM || height >= BULK_DIM || volume >= BULK_VOLUME;
         let heavy = mass >= HEAVY_MASS;
         if bulky && heavy {
             return "Both".to_string();

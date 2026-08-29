@@ -27,7 +27,7 @@ class Solution:
             if node.right is not None:
                 parent[node.right] = node
                 stack.append(node.right)
-        best = -10**9
+        best = -(10**9)
         for start in nodes:
             seen = set()
             st = [(start, start.val, 0)]  # phase 0 enter, 1 exit

@@ -10,19 +10,20 @@ class Solution {
         final int MOD = 1_000_000_007;
         int[] powers = new int[Integer.bitCount(n)];
         for (int b = 0, i = 0; b < 30; ++b) {
-            if ((n >> b & 1) == 1) {
+            if (((n >> b) & 1) == 1) {
                 powers[i++] = 1 << b;
             }
         }
         long[] pref = new long[powers.length + 1];
         pref[0] = 1;
         for (int i = 0; i < powers.length; ++i) {
-            pref[i + 1] = pref[i] * powers[i] % MOD;
+            pref[i + 1] = (pref[i] * powers[i]) % MOD;
         }
         int[] answers = new int[queries.length];
         for (int q = 0; q < queries.length; ++q) {
-            int lo = queries[q][0], hi = queries[q][1];
-            answers[q] = (int) (pref[hi + 1] * powMod(pref[lo], MOD - 2, MOD) % MOD);
+            int lo = queries[q][0],
+                hi = queries[q][1];
+            answers[q] = (int) ((pref[hi + 1] * powMod(pref[lo], MOD - 2, MOD)) % MOD);
         }
         return answers;
     }
@@ -31,9 +32,9 @@ class Solution {
         long result = 1;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             exp >>= 1;
         }
         return result;

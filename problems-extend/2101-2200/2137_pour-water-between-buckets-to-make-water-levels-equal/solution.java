@@ -1,4 +1,5 @@
 class Solution {
+
     public double equalizeWater(int[] buckets, int loss) {
         double high = 0.0;
         for (int water : buckets) {

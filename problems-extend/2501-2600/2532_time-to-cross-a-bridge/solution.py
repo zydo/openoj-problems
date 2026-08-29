@@ -9,9 +9,9 @@ class Solution:
         eff = [row[0] + row[2] for row in time]
         left = [(-eff[i], -i) for i in range(k)]
         heapq.heapify(left)
-        right = []      # boxed workers waiting on the right bank
-        pending = []    # (readyTime, join-side 1=right 0=left, i)
-        cur = 0         # instant the bridge becomes free again
+        right = []  # boxed workers waiting on the right bank
+        pending = []  # (readyTime, join-side 1=right 0=left, i)
+        cur = 0  # instant the bridge becomes free again
         sent = delivered = 0
         ans = 0
         while delivered < n:
@@ -25,9 +25,9 @@ class Solution:
                 cur += time[i][2]
                 delivered += 1
                 if cur > ans:
-                    ans = cur   # the box reaches the left bank here
+                    ans = cur  # the box reaches the left bank here
                 if delivered == n:
-                    break       # the final put never delays anything
+                    break  # the final put never delays anything
                 heapq.heappush(pending, (cur + time[i][3], 0, i))
             elif left and sent < n:
                 _, ni = heapq.heappop(left)

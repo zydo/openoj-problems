@@ -24,7 +24,7 @@ class Solution {
             for (int j = 0; j < 5; j++) {
                 total += list.get(j);
             }
-            result[i] = new int[] {sid, total / 5};
+            result[i] = new int[] { sid, total / 5 };
         }
         return result;
     }

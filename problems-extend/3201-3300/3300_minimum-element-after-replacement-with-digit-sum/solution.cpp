@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minElement(vector<int>& nums) {
+  public:
+    int minElement(vector<int> &nums) {
         // Replacement acts per element, and a number's digit sum is never
         // larger than the number itself, so the answer is the smallest
         // per-element digit sum.

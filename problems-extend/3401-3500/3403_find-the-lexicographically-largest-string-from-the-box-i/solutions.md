@@ -17,7 +17,7 @@ into the required `numFriends - 1` non-empty parts. So the answer is the
 lexicographically largest substring of `word` whose length is at most
 `n - numFriends + 1`, no enumeration needed.
 
-That maximum is always achieved by a *right-maximal* slice — a substring
+That maximum is always achieved by a _right-maximal_ slice — a substring
 running from its start to the cap or the end of the word — since a
 substring is a prefix of its right-maximal extension and no prefix beats
 its extension. Comparing the capped slice `word[i : i + limit]` for each

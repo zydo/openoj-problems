@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maxAscendingSum(vector<int>& nums) {
+  public:
+    int maxAscendingSum(vector<int> &nums) {
         // One sweep: cur is the sum of the strictly increasing run
         // ending here; extend it while the values strictly rise,
         // restart at the bare element otherwise (equal neighbours

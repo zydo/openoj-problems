@@ -22,23 +22,23 @@ class Solution {
         }
         Map<TreeNode, List<Integer>> smallest = new HashMap<>();
         Deque<Object[]> stack = new ArrayDeque<>();
-        stack.push(new Object[] {root, false});
+        stack.push(new Object[] { root, false });
         while (!stack.isEmpty()) {
             Object[] top = stack.pop();
             TreeNode node = (TreeNode) top[0];
-            if (!(Boolean) top[1]) {
-                stack.push(new Object[] {node, true});
+            if (!((Boolean) top[1])) {
+                stack.push(new Object[] { node, true });
                 if (node.left != null) {
-                    stack.push(new Object[] {node.left, false});
+                    stack.push(new Object[] { node.left, false });
                 }
                 if (node.right != null) {
-                    stack.push(new Object[] {node.right, false});
+                    stack.push(new Object[] { node.right, false });
                 }
                 continue;
             }
             List<Integer> pooled = new ArrayList<>();
             pooled.add(node.val);
-            for (TreeNode child : new TreeNode[] {node.left, node.right}) {
+            for (TreeNode child : new TreeNode[] { node.left, node.right }) {
                 List<Integer> part = smallest.remove(child);
                 if (part != null) {
                     pooled.addAll(part);

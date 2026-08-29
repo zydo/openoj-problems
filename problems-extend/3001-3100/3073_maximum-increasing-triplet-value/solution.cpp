@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maximumTripletValue(vector<int>& nums) {
+  public:
+    int maximumTripletValue(vector<int> &nums) {
         int n = nums.size();
         // Greatest element strictly to the right of each index.
         vector<int> suffix(n);
@@ -17,8 +17,7 @@ public:
         int size = distinct.size();
         vector<int> tree(size + 1, 0);
         auto rankOf = [&distinct](int value) {
-            return int(lower_bound(distinct.begin(), distinct.end(), value)
-                       - distinct.begin()) + 1;
+            return int(lower_bound(distinct.begin(), distinct.end(), value) - distinct.begin()) + 1;
         };
 
         // Every triplet value nums[i] - nums[j] + nums[k] stays within

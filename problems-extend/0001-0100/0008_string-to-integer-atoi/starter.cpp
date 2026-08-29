@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int myAtoi(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int myAtoi(string s) { throw logic_error("TODO"); }
 };

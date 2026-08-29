@@ -6,7 +6,8 @@ class Solution {
         // window's right edge; a right-to-left pass with the running min
         // finds the left edge. Strict < and > keep equal values out.
         int n = nums.length;
-        int start = -1, end = -1;
+        int start = -1,
+            end = -1;
         int runningMax = Integer.MIN_VALUE;
         for (int i = 0; i < n; ++i) {
             if (nums[i] < runningMax) {

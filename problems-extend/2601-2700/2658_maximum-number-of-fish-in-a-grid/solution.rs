@@ -16,16 +16,8 @@ impl Solution {
                 let mut total = 0i32;
                 while let Some((r, c)) = stack.pop() {
                     total += grid[r][c];
-                    for (nr, nc) in [
-                        (r.wrapping_sub(1), c),
-                        (r + 1, c),
-                        (r, c.wrapping_sub(1)),
-                        (r, c + 1),
-                    ] {
-                        if nr < rows && nc < columns
-                            && grid[nr][nc] > 0
-                            && !visited[nr][nc]
-                        {
+                    for (nr, nc) in [(r.wrapping_sub(1), c), (r + 1, c), (r, c.wrapping_sub(1)), (r, c + 1)] {
+                        if nr < rows && nc < columns && grid[nr][nc] > 0 && !visited[nr][nc] {
                             visited[nr][nc] = true;
                             stack.push((nr, nc));
                         }

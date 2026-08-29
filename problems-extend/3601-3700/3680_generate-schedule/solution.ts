@@ -6,10 +6,26 @@ function generateSchedule(n: number): number[][] {
     }
     if (n === 5) {
         return [
-            [0, 1], [2, 3], [0, 4], [1, 2], [3, 4],
-            [0, 2], [1, 3], [2, 4], [0, 3], [1, 4],
-            [2, 0], [3, 1], [4, 0], [2, 1], [4, 3],
-            [1, 0], [3, 2], [4, 1], [3, 0], [4, 2],
+            [0, 1],
+            [2, 3],
+            [0, 4],
+            [1, 2],
+            [3, 4],
+            [0, 2],
+            [1, 3],
+            [2, 4],
+            [0, 3],
+            [1, 4],
+            [2, 0],
+            [3, 1],
+            [4, 0],
+            [2, 1],
+            [4, 3],
+            [1, 0],
+            [3, 2],
+            [4, 1],
+            [3, 0],
+            [4, 2],
         ];
     }
     // Circle method: round r pairs teams at offsets +k and -k around
@@ -41,12 +57,7 @@ function generateSchedule(n: number): number[][] {
             for (let i = 0; i < round.length; ++i) {
                 const home = swap ? round[i][1] : round[i][0];
                 const away = swap ? round[i][0] : round[i][1];
-                if (
-                    home !== prevHome &&
-                    home !== prevAway &&
-                    away !== prevHome &&
-                    away !== prevAway
-                ) {
+                if (home !== prevHome && home !== prevAway && away !== prevHome && away !== prevAway) {
                     first = i;
                     break;
                 }

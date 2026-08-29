@@ -9,6 +9,7 @@ import java.util.List;
  * independent of whatever budget the harness supplies. Solvers see only
  * the public API documented in the starter. */
 public class ArrayReader {
+
     private final int[] nums;
     private long budget;
 

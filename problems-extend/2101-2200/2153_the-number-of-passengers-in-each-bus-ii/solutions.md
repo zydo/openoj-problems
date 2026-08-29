@@ -4,7 +4,7 @@ Capacity is what separates this from a running-count problem: a full bus
 leaves passengers behind, so how many a bus boards depends on how many
 earlier buses failed to clear the queue — a chain the plain per-bus
 arrival count cannot see. The trick is to chase one aggregate instead of
-per-bus decisions: the *total* number boarded so far.
+per-bus decisions: the _total_ number boarded so far.
 
 ## Running minimum of waiting minus cumulative capacity
 

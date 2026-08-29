@@ -26,7 +26,8 @@ class Solution {
                 for (int nxt : adj[node]) {
                     if (dist[nxt] == -1) {
                         dist[nxt] = dist[node] + 1;
-                        if (dist[nxt] > dist[far]) far = nxt;
+                        if (dist[nxt] > dist[far])
+                            far = nxt;
                         queue.push_back(nxt);
                     }
                 }

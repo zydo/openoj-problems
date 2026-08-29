@@ -46,4 +46,3 @@ class LastCase {
         return [this.nums.last(), this.snapshot.last(), [].last()];
     }
 }
-

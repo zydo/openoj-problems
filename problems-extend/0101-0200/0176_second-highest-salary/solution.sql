@@ -3,4 +3,9 @@ SELECT
 FROM
   Employee
 WHERE
-  salary < (SELECT MAX(salary) FROM Employee)
+  salary < (
+    SELECT
+      MAX(salary)
+    FROM
+      Employee
+  )

@@ -52,4 +52,3 @@ a smaller array?
 ### Hint 2
 
 Use dynamic programming to reduce the problem until you have an empty array.
-

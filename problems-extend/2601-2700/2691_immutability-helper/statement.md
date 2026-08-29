@@ -18,10 +18,10 @@ actually be effected.
 For example, a user could write code like this:
 
 ```js
-const originalObj = {"x": 5};
+const originalObj = { x: 5 };
 const helper = new ImmutableHelper(originalObj);
 const newObj = helper.produce((proxy) => {
-  proxy.x = proxy.x + 1;
+    proxy.x = proxy.x + 1;
 });
 console.log(originalObj); // {"x": 5}
 console.log(newObj); // {"x": 6}

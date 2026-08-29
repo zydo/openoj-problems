@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool isUgly(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool isUgly(int n) { throw logic_error("TODO"); }
 };

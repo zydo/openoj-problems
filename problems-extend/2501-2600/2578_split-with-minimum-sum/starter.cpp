@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int splitNum(int num) {
-        throw logic_error("TODO");
-    }
+  public:
+    int splitNum(int num) { throw logic_error("TODO"); }
 };

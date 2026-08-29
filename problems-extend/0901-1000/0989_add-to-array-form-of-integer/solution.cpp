@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> addToArrayForm(vector<int>& num, int k) {
+    vector<int> addToArrayForm(vector<int> &num, int k) {
         // `num` can hold 10^4 digits, far past any fixed-width integer, so
         // the addition runs schoolbook-style: right to left, one digit at a
         // time, with k itself seeding the running carry.

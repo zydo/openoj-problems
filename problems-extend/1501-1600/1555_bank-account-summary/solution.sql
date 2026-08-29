@@ -9,8 +9,20 @@ SELECT
 FROM
   Users u
   LEFT JOIN (
-    SELECT paid_by, SUM(amount) AS total FROM Transactions GROUP BY paid_by
+    SELECT
+      paid_by,
+      SUM(amount) AS total
+    FROM
+      Transactions
+    GROUP BY
+      paid_by
   ) p ON p.paid_by = u.user_id
   LEFT JOIN (
-    SELECT paid_to, SUM(amount) AS total FROM Transactions GROUP BY paid_to
+    SELECT
+      paid_to,
+      SUM(amount) AS total
+    FROM
+      Transactions
+    GROUP BY
+      paid_to
   ) r ON r.paid_to = u.user_id

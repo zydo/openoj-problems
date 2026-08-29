@@ -43,7 +43,10 @@ impl<'a> Parser<'a> {
 
 impl Solution {
     pub fn build_and_evaluate(s: String) -> i64 {
-        let mut parser = Parser { bytes: s.as_bytes(), pos: 0 };
+        let mut parser = Parser {
+            bytes: s.as_bytes(),
+            pos: 0,
+        };
         parser.parse_expr()
     }
 }

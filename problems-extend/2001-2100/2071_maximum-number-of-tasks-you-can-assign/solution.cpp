@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int maxTaskAssign(vector<int> &tasks, vector<int> &workers, int pills, int strength) {
         sort(tasks.begin(), tasks.end());
         sort(workers.begin(), workers.end());
@@ -16,7 +16,7 @@ public:
         return low;
     }
 
-private:
+  private:
     bool feasible(const vector<int> &tasks, const vector<int> &workers, int pills, int strength, int count) const {
         deque<int> available;
         int taskIndex = 0;

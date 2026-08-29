@@ -2,7 +2,8 @@ class Solution {
 
     public boolean isInterleave(String s1, String s2, String s3) {
         // No interleaving can add or drop letters, so settle the length first.
-        int m = s1.length(), n = s2.length();
+        int m = s1.length(),
+            n = s2.length();
         if (m + n != s3.length()) {
             return false;
         }

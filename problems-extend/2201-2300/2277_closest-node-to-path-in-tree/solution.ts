@@ -28,9 +28,7 @@ function closestNode(n: number, edges: number[][], query: number[][]): number[] 
     // up[k][v] is the 2^k-th ancestor of v, or -1 once past the root.
     let LOG = 1;
     while (1 << LOG < n) LOG++;
-    const up: number[][] = Array.from({ length: LOG }, () =>
-        new Array<number>(n).fill(-1),
-    );
+    const up: number[][] = Array.from({ length: LOG }, () => new Array<number>(n).fill(-1));
     up[0] = [...parent];
     for (let k = 1; k < LOG; k++) {
         for (let v = 0; v < n; v++) {

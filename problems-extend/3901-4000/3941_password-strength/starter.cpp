@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int passwordStrength(string password) {
-        throw logic_error("TODO");
-    }
+  public:
+    int passwordStrength(string password) { throw logic_error("TODO"); }
 };

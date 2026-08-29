@@ -20,7 +20,10 @@ pub struct Skiplist {
 impl Skiplist {
     pub fn new() -> Self {
         Skiplist {
-            nodes: vec![SkipNode { val: i32::MIN, next: vec![NIL; MAX_LEVEL] }],
+            nodes: vec![SkipNode {
+                val: i32::MIN,
+                next: vec![NIL; MAX_LEVEL],
+            }],
             rng: 0x9E3779B97F4A7C15,
         }
     }
@@ -44,9 +47,7 @@ impl Skiplist {
         let mut update = vec![NIL; MAX_LEVEL];
         let mut cur = NIL;
         for i in (0..MAX_LEVEL).rev() {
-            while self.nodes[cur].next[i] != NIL
-                && self.nodes[self.nodes[cur].next[i]].val < target
-            {
+            while self.nodes[cur].next[i] != NIL && self.nodes[self.nodes[cur].next[i]].val < target {
                 cur = self.nodes[cur].next[i];
             }
             update[i] = cur;
@@ -57,9 +58,7 @@ impl Skiplist {
     pub fn search(&mut self, target: i32) -> bool {
         let mut cur = NIL;
         for i in (0..MAX_LEVEL).rev() {
-            while self.nodes[cur].next[i] != NIL
-                && self.nodes[self.nodes[cur].next[i]].val < target
-            {
+            while self.nodes[cur].next[i] != NIL && self.nodes[self.nodes[cur].next[i]].val < target {
                 cur = self.nodes[cur].next[i];
             }
         }
@@ -70,7 +69,10 @@ impl Skiplist {
     pub fn add(&mut self, num: i32) {
         let update = self.predecessors(num);
         let level = self.random_level();
-        let mut node = SkipNode { val: num, next: vec![NIL; level] };
+        let mut node = SkipNode {
+            val: num,
+            next: vec![NIL; level],
+        };
         // Splice into each layer the node actually occupies.
         for i in 0..level {
             node.next[i] = self.nodes[update[i]].next[i];

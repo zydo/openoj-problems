@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> getAllElements(TreeNode* root1, TreeNode* root2) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> getAllElements(TreeNode *root1, TreeNode *root2) { throw logic_error("TODO"); }
 };

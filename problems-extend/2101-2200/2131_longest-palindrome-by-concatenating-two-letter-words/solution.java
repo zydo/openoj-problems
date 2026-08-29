@@ -1,4 +1,5 @@
 class Solution {
+
     public int longestPalindrome(String[] words) {
         int[][] waiting = new int[26][26];
         int length = 0;

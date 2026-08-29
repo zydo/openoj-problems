@@ -9,7 +9,7 @@ class Solution {
             counts[d] += 1;
         }
         int total = 0;
-        int[] units = {0, 2, 4, 6, 8};
+        int[] units = { 0, 2, 4, 6, 8 };
         for (int h = 1; h <= 9; h++) {
             for (int t = 0; t <= 9; t++) {
                 for (int u : units) {

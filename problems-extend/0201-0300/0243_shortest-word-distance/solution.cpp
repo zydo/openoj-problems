@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int shortestDistance(vector<string>& wordsDict, string word1, string word2) {
+    int shortestDistance(vector<string> &wordsDict, string word1, string word2) {
         // One pass remembering the most recent position of each word. The
         // statement guarantees word1 != word2, so no element is ever both.
         int index1 = -1;

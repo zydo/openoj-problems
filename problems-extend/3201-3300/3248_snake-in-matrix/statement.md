@@ -41,7 +41,7 @@ moves it back to cell 1.
 - `1 <= commands.length <= 100`
 - `commands` consists only of "UP", "RIGHT", "DOWN", and "LEFT".
 - The input is generated such the snake will not move outside of the
-boundaries.
+  boundaries.
 
 ## Hints
 

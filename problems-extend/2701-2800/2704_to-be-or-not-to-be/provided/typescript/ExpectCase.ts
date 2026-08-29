@@ -21,17 +21,12 @@ class ExpectCase {
     // thunk stays outside the try so a malformed source surfaces as a
     // runtime error rather than a verdict.
     drive(expect: (val: any) => unknown): void {
-        const thunk = new Function("expect", "return (" + this.func + ");")(
-            expect,
-        ) as () => any;
+        const thunk = new Function("expect", "return (" + this.func + ");")(expect) as () => any;
         try {
             this.outcome = { value: thunk() };
         } catch (problem) {
             this.outcome = {
-                error:
-                    problem instanceof Error
-                        ? problem.message
-                        : String(problem),
+                error: problem instanceof Error ? problem.message : String(problem),
             };
         }
     }

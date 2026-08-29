@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string smallestFromLeaf(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    string smallestFromLeaf(TreeNode *root) { throw logic_error("TODO"); }
 };

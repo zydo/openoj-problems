@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    int minValidStrings(vector<string>& words, string target) {
+    int minValidStrings(vector<string> &words, string target) {
         // reach[i] is the largest L with target[i:i+L] a prefix of some word:
         // for each word, one Z-function over word + separator + target yields,
         // at every target offset, how many characters continue to match the
@@ -14,7 +14,7 @@ class Solution {
         // before the boundary trigger fires.
         int n = (int)target.size();
         vector<int> reach(n, 0);
-        for (const string& w : words) {
+        for (const string &w : words) {
             vector<int> values;
             values.reserve(w.size() + 1 + n);
             for (char ch : w) {
@@ -33,7 +33,7 @@ class Solution {
             }
         }
         int steps = 0;
-        int curEnd = 0;      // with `steps` pieces, target[:curEnd] is formable
+        int curEnd = 0; // with `steps` pieces, target[:curEnd] is formable
         int farthest = 0;
         for (int i = 0; i < n; i++) {
             int r = i + reach[i];
@@ -55,7 +55,7 @@ class Solution {
     }
 
   private:
-    static vector<int> zFunction(const vector<int>& values) {
+    static vector<int> zFunction(const vector<int> &values) {
         int m = (int)values.size();
         vector<int> z(m, 0);
         z[0] = m;

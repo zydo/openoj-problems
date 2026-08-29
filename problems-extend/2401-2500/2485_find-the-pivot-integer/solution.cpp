@@ -6,7 +6,7 @@ class Solution {
         // exists exactly when the total sum is a perfect square, and equals
         // its square root. n <= 1000 keeps the square root exact in double.
         int total = n * (n + 1) / 2;
-        int r = (int) sqrt(total);
+        int r = (int)sqrt(total);
         return r * r == total ? r : -1;
     }
 };

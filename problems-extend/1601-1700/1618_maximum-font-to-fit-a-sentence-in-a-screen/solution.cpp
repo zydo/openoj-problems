@@ -1,13 +1,13 @@
 class Solution {
-public:
-    int maxFont(string text, int w, int h, vector<int>& fonts, vector<vector<int>>& widths, vector<int>& heights) {
+  public:
+    int maxFont(string text, int w, int h, vector<int> &fonts, vector<vector<int>> &widths, vector<int> &heights) {
         // Fit is monotonic in the font index (widths/heights only grow), so
         // binary search the boundary between fitting and not fitting.
         auto fits = [&](int index) {
             if (heights[index] > h) {
                 return false;
             }
-            const vector<int>& row = widths[index];
+            const vector<int> &row = widths[index];
             long long total = 0;
             for (char ch : text) {
                 total += row[ch - 'a'];

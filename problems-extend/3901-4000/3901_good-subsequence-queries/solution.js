@@ -71,8 +71,7 @@ var countGoodSubseq = function (nums, p, queries) {
         }
         if (
             active > 0 &&
-            ((active < n && histogram[active] === 0) ||
-                (active === n && histogram[n] === 0 && forbiddenDistinct < n))
+            ((active < n && histogram[active] === 0) || (active === n && histogram[n] === 0 && forbiddenDistinct < n))
         ) {
             answer += 1;
         }

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> getAllElements(TreeNode* root1, TreeNode* root2) {
+    vector<int> getAllElements(TreeNode *root1, TreeNode *root2) {
         // Iterative in-order walks produce two sorted lists (no recursion, so
         // a 5000-node skewed tree cannot overflow the stack), then a merge.
         vector<int> first = inorder(root1);
@@ -22,10 +22,10 @@ class Solution {
     }
 
   private:
-    vector<int> inorder(TreeNode* root) {
+    vector<int> inorder(TreeNode *root) {
         vector<int> values;
-        vector<TreeNode*> stack;
-        TreeNode* node = root;
+        vector<TreeNode *> stack;
+        TreeNode *node = root;
         while (!stack.empty() || node != nullptr) {
             while (node != nullptr) {
                 stack.push_back(node);

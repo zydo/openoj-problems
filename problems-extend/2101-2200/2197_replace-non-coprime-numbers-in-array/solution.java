@@ -17,7 +17,7 @@ class Solution {
                     break;
                 }
                 size--;
-                current = top / g * current;
+                current = (top / g) * current;
             }
             stack[size++] = (int) current;
         }

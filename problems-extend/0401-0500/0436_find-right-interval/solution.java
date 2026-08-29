@@ -19,7 +19,8 @@ class Solution {
             // Smallest slot whose start is >= end; n if none. The kept half
             // always contains that boundary, so the window halves until only
             // the boundary is left.
-            int lo = 0, hi = n;
+            int lo = 0,
+                hi = n;
             while (lo < hi) {
                 int mid = (lo + hi) / 2;
                 if (order[mid][0] < end) {

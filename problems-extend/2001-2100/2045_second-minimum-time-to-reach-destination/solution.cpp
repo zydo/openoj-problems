@@ -1,8 +1,8 @@
 class Solution {
-public:
-    int secondMinimum(int n, vector<vector<int>>& edges, int time, int change) {
+  public:
+    int secondMinimum(int n, vector<vector<int>> &edges, int time, int change) {
         vector<vector<int>> graph(n + 1);
-        for (const vector<int>& edge : edges) {
+        for (const vector<int> &edge : edges) {
             graph[edge[0]].push_back(edge[1]);
             graph[edge[1]].push_back(edge[0]);
         }

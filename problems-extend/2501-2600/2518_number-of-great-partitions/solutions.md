@@ -4,7 +4,7 @@
 
 Directly counting great partitions would mean verifying both group sums
 across all `2^n` assignments, far past any budget. The hint flips the
-view: a partition is *bad* exactly when its first group's sum falls
+view: a partition is _bad_ exactly when its first group's sum falls
 under `k` or its second group's does. Both failure events are counted by
 the same collection — subsets of nums whose sum is already below `k` —
 once attributed to group one and once to group two.

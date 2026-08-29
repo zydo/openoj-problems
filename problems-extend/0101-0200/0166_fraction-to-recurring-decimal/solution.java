@@ -6,12 +6,12 @@ class Solution {
     public String fractionToDecimal(int numerator, int denominator) {
         // -2^31 has no positive int counterpart, so widen before magnitudes;
         // every later intermediate is a remainder below 2^31 times 10.
-        long n = numerator < 0 ? -(long) numerator : numerator;
-        long d = denominator < 0 ? -(long) denominator : denominator;
+        long n = numerator < 0 ? -((long) numerator) : numerator;
+        long d = denominator < 0 ? -((long) denominator) : denominator;
         // Magnitudes in, sign out: "-" is prepended once, and never on a zero
         // result (0 over a negative denominator must not become "-0").
         StringBuilder result = new StringBuilder();
-        if ((numerator < 0) != (denominator < 0) && n != 0) result.append('-');
+        if (numerator < 0 != denominator < 0 && n != 0) result.append('-');
         result.append(n / d);
         long remainder = n % d;
         if (remainder == 0) return result.toString();

@@ -11,7 +11,7 @@ once per matrix entry.
 A single scan fills the tally; a second scan over value indices in ascending
 order finds the first index whose count equals `m`. Walking values in
 ascending order (rather than collecting matches and sorting) is what makes
-the returned element the *smallest* common one for free, and the walk can
+the returned element the _smallest_ common one for free, and the walk can
 stop at the first hit. If no index reaches `m`, the answer is -1.
 
 **Complexity:** `O(m·n + V)` time with `V = 10⁴` the value range, `O(V)`

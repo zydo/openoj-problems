@@ -11,7 +11,7 @@ function lenOfVDiagonal(grid: number[][]): number {
     // Straight tables: S[e][d] holds the longest run starting at each cell
     // going straight in direction d when the cell must equal e (0 or 2).
     const S: number[][][][] = [0, 2].map(() =>
-        Array.from({ length: 4 }, () => Array.from({ length: n }, () => new Array<number>(m).fill(0)))
+        Array.from({ length: 4 }, () => Array.from({ length: n }, () => new Array<number>(m).fill(0))),
     );
     for (let d = 0; d < 4; ++d) {
         // Sweep rows against the direction so the next row is computed.
@@ -32,7 +32,7 @@ function lenOfVDiagonal(grid: number[][]): number {
     // One-turn tables: continue straight in direction d, or make the single
     // clockwise turn and hand over to the straight tables of (d + 1) % 4.
     const M: number[][][][] = [0, 2].map(() =>
-        Array.from({ length: 4 }, () => Array.from({ length: n }, () => new Array<number>(m).fill(0)))
+        Array.from({ length: 4 }, () => Array.from({ length: n }, () => new Array<number>(m).fill(0))),
     );
     for (let d = 0; d < 4; ++d) {
         const cw = (d + 1) % 4;

@@ -11,7 +11,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             int l = 1;
             for (int j = i; j < n; j++) {
-                l = l / gcd(l, nums[j]) * nums[j];
+                l = (l / gcd(l, nums[j])) * nums[j];
                 if (l > k) {
                     break;
                 }

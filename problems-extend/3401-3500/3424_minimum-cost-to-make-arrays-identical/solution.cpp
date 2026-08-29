@@ -3,8 +3,8 @@
 #include <vector>
 
 class Solution {
-public:
-    long long minCost(vector<int>& arr, vector<int>& brr, long long k) {
+  public:
+    long long minCost(vector<int> &arr, vector<int> &brr, long long k) {
         // Splitting into singleton blocks already realizes any
         // permutation, so one paid rearrangement is all Operation 1 can
         // offer; matching sorted to sorted then minimizes sum |a - b|

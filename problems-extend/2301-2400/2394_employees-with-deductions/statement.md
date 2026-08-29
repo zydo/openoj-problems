@@ -96,6 +96,7 @@ Output:
 
 Explanation:
 Employee 1:
+
 - Worked for three sessions:
     - On 2022-10-01, they worked for 8 hours.
     - On 2022-10-06, they worked for 8 hours and 4 minutes.
@@ -103,10 +104,10 @@ Employee 1:
       worked through midnight.
 - Employee 1 worked a total of 20 hours and 5 minutes across sessions and
   will not be deducted.
-Employee 2:
+  Employee 2:
 - Worked for one session:
     - On 2022-10-29, they worked for 11 hours and 59 minutes.
 - Employee 2 did not work their hours and will be deducted.
-Employee 3:
+  Employee 3:
 - Did not work any session.
 - Employee 3 did not work their hours and will be deducted.

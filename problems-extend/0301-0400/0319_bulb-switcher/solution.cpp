@@ -10,7 +10,8 @@ class Solution {
         // one squaring comparison settles any rounding — floor(sqrt(n))
         // without ever truncating a float that landed low.
         int root = (int)std::lround(std::sqrt((double)n));
-        if (root * root > n) root--;
+        if (root * root > n)
+            root--;
         return root;
     }
 };

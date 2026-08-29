@@ -12,7 +12,7 @@ class Solution {
             order[i] = i;
         }
         Arrays.sort(order, (a, b) -> Integer.compare(score[b], score[a]));
-        String[] medals = {"Gold Medal", "Silver Medal", "Bronze Medal"};
+        String[] medals = { "Gold Medal", "Silver Medal", "Bronze Medal" };
         String[] answer = new String[n];
         for (int place = 0; place < n; ++place) {
             answer[order[place]] = place < 3 ? medals[place] : Integer.toString(place + 1);

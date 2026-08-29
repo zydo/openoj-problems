@@ -10,7 +10,8 @@ class Solution {
                 value /= 10;
                 ++digits;
             }
-            if (digits % 2 == 0) ++even;
+            if (digits % 2 == 0)
+                ++even;
         }
         return even;
     }

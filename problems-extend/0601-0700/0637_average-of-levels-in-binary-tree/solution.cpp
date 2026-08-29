@@ -19,8 +19,10 @@ class Solution {
                 TreeNode *node = q.front();
                 q.pop();
                 total += node->val;
-                if (node->left != nullptr) q.push(node->left);
-                if (node->right != nullptr) q.push(node->right);
+                if (node->left != nullptr)
+                    q.push(node->left);
+                if (node->right != nullptr)
+                    q.push(node->right);
             }
             averages.push_back((double)total / remaining);
         }

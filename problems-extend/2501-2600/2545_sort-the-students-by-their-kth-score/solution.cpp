@@ -10,10 +10,7 @@ class Solution {
         // and the descending order is unique. Returns a copy; the input
         // is left untouched.
         vector<vector<int>> rows = score;
-        std::sort(rows.begin(), rows.end(),
-                  [k](const vector<int> &a, const vector<int> &b) {
-                      return a[k] > b[k];
-                  });
+        std::sort(rows.begin(), rows.end(), [k](const vector<int> &a, const vector<int> &b) { return a[k] > b[k]; });
         return rows;
     }
 };

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int countStableSubsequences(vector<int>& nums) {
+    int countStableSubsequences(vector<int> &nums) {
         const long long MOD = 1e9 + 7;
         // Three same-parity elements in a row are the only way a subsequence
         // breaks, so four counters describe every stable subsequence seen so

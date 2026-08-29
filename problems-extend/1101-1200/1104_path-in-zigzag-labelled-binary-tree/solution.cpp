@@ -7,12 +7,14 @@ class Solution {
         // direction between rows. Fill the result from the back so the path
         // comes out root-first without a separate reverse.
         int level = 0;
-        for (int v = label; v > 1; v >>= 1) ++level;
+        for (int v = label; v > 1; v >>= 1)
+            ++level;
         vector<int> result(level + 1, 0);
         int cur = label;
         for (int i = level; i >= 0; --i) {
             result[i] = cur;
-            if (i == 0) break;
+            if (i == 0)
+                break;
             int low = 1 << i;
             int high = (1 << (i + 1)) - 1;
             int position = (i % 2 == 0) ? (cur - low) : (high - cur);

@@ -13,7 +13,7 @@ class Solution {
         for (int bit = 0; bit < 30; ++bit) {
             int last = -1;
             for (int i = n - 1; i >= 0; --i) {
-                if ((nums[i] >> bit & 1) != 0) {
+                if (((nums[i] >> bit) & 1) != 0) {
                     last = i;
                 }
                 if (last != -1 && last - i + 1 > answer[i]) {

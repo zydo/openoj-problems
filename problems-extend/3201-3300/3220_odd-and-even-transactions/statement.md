@@ -4,10 +4,10 @@
 
 Table: `Transactions`
 
-| Column Name     | Type |
+| Column Name      | Type |
 | ---------------- | ---- |
-| transaction_id  | int  |
-| amount          | int  |
+| transaction_id   | int  |
+| amount           | int  |
 | transaction_date | date |
 
 The transactions_id column uniquely identifies each row in this table.
@@ -21,8 +21,8 @@ display as 0.
 Return the result table ordered by transaction_date in ascending order.
 
 Each testcase supplies its own `dataset`: the DDL seeds the `Transactions`
-table with that testcase's rows. A transaction is *odd* when its `amount`
-is odd and *even* when its `amount` is even — parity classifies the amount,
+table with that testcase's rows. A transaction is _odd_ when its `amount`
+is odd and _even_ when its `amount` is even — parity classifies the amount,
 not the `transaction_id` — so a day's `odd_sum` totals its odd amounts and
 its `even_sum` totals its even ones, either side reading 0 when the day has
 no transaction of that kind. Only days present in the table produce a row;

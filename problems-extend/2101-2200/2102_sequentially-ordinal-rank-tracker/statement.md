@@ -8,7 +8,7 @@ You are building a system that tracks the ranking of locations with the system i
 
 - Adding scenic locations, one at a time.
 - Querying the ith best location of all locations already added, where i is the number of times the system has been queried (including the current query).
-  - For example, when the system is queried for the 4th time, it returns the 4th best location of all locations already added.
+    - For example, when the system is queried for the 4th time, it returns the 4th best location of all locations already added.
 
 Note that the test data are generated so that at any time, the number of queries does not exceed the number of locations added to the system.
 

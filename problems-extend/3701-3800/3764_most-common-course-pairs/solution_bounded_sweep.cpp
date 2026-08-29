@@ -7,18 +7,15 @@
 
 class Solution {
   public:
-    std::vector<std::string> mostCommonCoursePair(
-        std::vector<std::vector<std::string>>& completions) {
+    std::vector<std::string> mostCommonCoursePair(std::vector<std::vector<std::string>> &completions) {
         // Group rows per student; every student is judged and sorted
         // independently of the rest.
-        std::unordered_map<std::string, std::vector<std::array<std::string, 3>>>
-            byStudent;
-        for (const auto& row : completions) {
+        std::unordered_map<std::string, std::vector<std::array<std::string, 3>>> byStudent;
+        for (const auto &row : completions) {
             byStudent[row[0]].push_back({row[2], row[1], row[3]});
         }
-        std::unordered_map<std::pair<std::string, std::string>, int, PairHash>
-            counts;
-        for (auto& [student, records] : byStudent) {
+        std::unordered_map<std::pair<std::string, std::string>, int, PairHash> counts;
+        for (auto &[student, records] : byStudent) {
             (void)student;
             // Qualification without floats: sum >= 4 * n is exactly
             // "average >= 4" over integer ratings.
@@ -27,7 +24,7 @@ class Solution {
                 continue;
             }
             int total = 0;
-            for (const auto& record : records) {
+            for (const auto &record : records) {
                 total += std::stoi(record[2]);
             }
             if (total < 4 * n) {
@@ -42,12 +39,10 @@ class Solution {
         // The tuple (-count, first, second) totally orders distinct keys, so
         // the running champion is the same pair no matter how the hash table
         // yields its entries.
-        const std::pair<std::string, std::string>* bestPair = nullptr;
+        const std::pair<std::string, std::string> *bestPair = nullptr;
         int bestCount = -1;
-        for (const auto& [pair, count] : counts) {
-            bool better =
-                count > bestCount ||
-                (count == bestCount && pair < *bestPair);
+        for (const auto &[pair, count] : counts) {
+            bool better = count > bestCount || (count == bestCount && pair < *bestPair);
             if (better) {
                 bestCount = count;
                 bestPair = &pair;
@@ -61,9 +56,8 @@ class Solution {
 
   private:
     struct PairHash {
-        std::size_t operator()(const std::pair<std::string, std::string>& p) const {
-            return std::hash<std::string>()(p.first) ^
-                   (std::hash<std::string>()(p.second) << 1);
+        std::size_t operator()(const std::pair<std::string, std::string> &p) const {
+            return std::hash<std::string>()(p.first) ^ (std::hash<std::string>()(p.second) << 1);
         }
     };
 };

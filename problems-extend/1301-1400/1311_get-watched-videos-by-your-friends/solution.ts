@@ -1,9 +1,4 @@
-function watchedVideosByFriends(
-    watchedVideos: string[][],
-    friends: number[][],
-    id: number,
-    level: number
-): string[] {
+function watchedVideosByFriends(watchedVideos: string[][], friends: number[][], id: number, level: number): string[] {
     // BFS discovers nodes in increasing distance order, so the nodes whose
     // recorded distance equals `level` are exactly the level-k people.
     const n = friends.length;

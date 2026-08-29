@@ -44,11 +44,7 @@ function earliestAndLatest(n: number, firstPlayer: number, secondPlayer: number)
                 }
             }
             survivors.sort((a, b) => a - b);
-            const [subLo, subHi] = dp(
-                survivors.indexOf(i) + 1,
-                survivors.indexOf(j) + 1,
-                survivors.length,
-            );
+            const [subLo, subHi] = dp(survivors.indexOf(i) + 1, survivors.indexOf(j) + 1, survivors.length);
             lo = Math.min(lo, subLo);
             hi = Math.max(hi, subHi);
         }

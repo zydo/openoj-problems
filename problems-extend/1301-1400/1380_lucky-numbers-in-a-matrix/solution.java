@@ -3,8 +3,10 @@ import java.util.Collections;
 import java.util.List;
 
 class Solution {
+
     public List<Integer> luckyNumbers(int[][] matrix) {
-        int m = matrix.length, n = matrix[0].length;
+        int m = matrix.length,
+            n = matrix[0].length;
         int[] rowMin = new int[m];
         for (int r = 0; r < m; r++) {
             int best = Integer.MAX_VALUE;

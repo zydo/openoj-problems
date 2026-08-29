@@ -14,11 +14,7 @@ var minFlips = function (grid) {
     let cost = 0;
     for (let i = 0; i < halfM; ++i) {
         for (let j = 0; j < halfN; ++j) {
-            const ones =
-                grid[i][j] +
-                grid[i][n - 1 - j] +
-                grid[m - 1 - i][j] +
-                grid[m - 1 - i][n - 1 - j];
+            const ones = grid[i][j] + grid[i][n - 1 - j] + grid[m - 1 - i][j] + grid[m - 1 - i][n - 1 - j];
             cost += Math.min(ones, 4 - ones);
         }
     }

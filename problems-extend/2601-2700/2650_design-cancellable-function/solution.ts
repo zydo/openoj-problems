@@ -8,13 +8,10 @@
 // freezes the fate after resolve/reject fires, so cancelling an already
 // finished generator (Example 1) is inert instead of throwing into a done
 // generator.
-function cancellable(
-    generator: Generator,
-): [() => void, Promise<unknown>] {
+function cancellable(generator: Generator): [() => void, Promise<unknown>] {
     // Declared out here so the cancel closure keeps reaching it after the
     // executor's synchronous run assigns it.
-    let step: ((method: "next" | "throw", argument?: unknown) => void) | null =
-        null;
+    let step: ((method: "next" | "throw", argument?: unknown) => void) | null = null;
     const promise = new Promise<unknown>((resolve, reject) => {
         let settled = false;
         // Assigned here, read later by the cancel closure below.
@@ -22,11 +19,7 @@ function cancellable(
             if (settled) return;
             let outcome: IteratorResult<unknown>;
             try {
-                outcome = (
-                    generator[method] as (
-                        argument?: unknown,
-                    ) => IteratorResult<unknown>
-                )(argument);
+                outcome = (generator[method] as (argument?: unknown) => IteratorResult<unknown>)(argument);
             } catch (thrown) {
                 settled = true;
                 reject(thrown);

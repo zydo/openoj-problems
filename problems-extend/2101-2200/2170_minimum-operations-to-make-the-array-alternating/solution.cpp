@@ -20,16 +20,14 @@ class Solution {
             ++counts[nums[index]];
         }
         int freshValue = *max_element(nums.begin(), nums.end()) + 1;
-        auto candidates = [freshValue](
-                              const std::unordered_map<int, int> &counts) {
+        auto candidates = [freshValue](const std::unordered_map<int, int> &counts) {
             // Top values plus a fresh fill value worth nothing: the optimal
             // partner need not occur anywhere in nums.
-            std::vector<std::pair<int, int>> ranked;  // (kept count, value)
+            std::vector<std::pair<int, int>> ranked; // (kept count, value)
             for (const auto &entry : counts) {
                 ranked.push_back({entry.second, entry.first});
             }
-            std::sort(ranked.begin(), ranked.end(),
-                      [](const auto &a, const auto &b) { return a > b; });
+            std::sort(ranked.begin(), ranked.end(), [](const auto &a, const auto &b) { return a > b; });
             if (ranked.size() > 2) {
                 ranked.resize(2);
             }

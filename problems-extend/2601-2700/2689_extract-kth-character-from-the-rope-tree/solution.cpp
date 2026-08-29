@@ -5,7 +5,7 @@
 
 class Solution {
   public:
-    string getKthCharacter(vector<string>& root, int k) {
+    string getKthCharacter(vector<string> &root, int k) {
         // Decode the level order: an entry of digits is an internal node,
         // an entry of letters is a leaf, and "" marks an absent child.
         // Only internal nodes occupy child slots, so only they join the

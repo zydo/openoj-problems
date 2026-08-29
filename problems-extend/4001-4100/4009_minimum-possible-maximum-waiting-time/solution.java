@@ -9,12 +9,13 @@ class Solution {
         // to the smallest maximum waiting time achievable so far.
         final int B = 51;
         Map<Integer, Integer> states = new HashMap<>();
-        states.put(((fuel[0] * B + fuel[1]) * B) * B, 0);
+        states.put((fuel[0] * B + fuel[1]) * B * B, 0);
         for (int i = 0; i < demand.length; i++) {
             int d = demand[i];
             Map<Integer, Integer> nxt = new HashMap<>();
             for (Map.Entry<Integer, Integer> e : states.entrySet()) {
-                int key = e.getKey(), worst = e.getValue();
+                int key = e.getKey(),
+                    worst = e.getValue();
                 int f0 = key / (B * B * B);
                 int f1 = (key / (B * B)) % B;
                 int r0 = (key / B) % B;

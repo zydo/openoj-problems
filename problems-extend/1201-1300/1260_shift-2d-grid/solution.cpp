@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<vector<int>> shiftGrid(vector<vector<int>>& grid, int k) {
+  public:
+    vector<vector<int>> shiftGrid(vector<vector<int>> &grid, int k) {
         const int m = static_cast<int>(grid.size());
         const int n = static_cast<int>(grid[0].size());
         const long long total = static_cast<long long>(m) * n;

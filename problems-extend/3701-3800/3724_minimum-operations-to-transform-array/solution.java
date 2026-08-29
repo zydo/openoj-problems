@@ -14,8 +14,10 @@ class Solution {
         long tail = nums2[n];
         long bestGap = Long.MAX_VALUE;
         for (int i = 0; i < n; i++) {
-            long a = nums1[i], b = nums2[i];
-            long lo = Math.min(a, b), hi = Math.max(a, b);
+            long a = nums1[i],
+                b = nums2[i];
+            long lo = Math.min(a, b),
+                hi = Math.max(a, b);
             long gap = 0;
             if (tail < lo) {
                 gap = lo - tail;

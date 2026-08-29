@@ -4,7 +4,7 @@ class Solution {
         // At most one parent each, exactly one root, and full reachability
         // from that root: together necessary and sufficient.
         vector<int> indegree(n, 0);
-        for (const auto &children : { leftChild, rightChild }) {
+        for (const auto &children : {leftChild, rightChild}) {
             for (int child : children) {
                 if (child != -1) {
                     ++indegree[child];
@@ -32,7 +32,7 @@ class Solution {
         while (!pending.empty()) {
             int node = pending.front();
             pending.pop();
-            for (int child : { leftChild[node], rightChild[node] }) {
+            for (int child : {leftChild[node], rightChild[node]}) {
                 if (child != -1 && !seen[child]) {
                     seen[child] = true;
                     ++visited;

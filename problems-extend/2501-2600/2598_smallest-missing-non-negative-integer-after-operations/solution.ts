@@ -8,7 +8,7 @@ function findSmallestInteger(nums: number[], value: number): number {
     // class is exhausted is the largest achievable MEX.
     const count = new Array<number>(value).fill(0);
     for (const x of nums) {
-        count[(((x % value) + value) % value)]++;
+        count[((x % value) + value) % value]++;
     }
     let mex = 0;
     while (count[mex % value] > 0) {

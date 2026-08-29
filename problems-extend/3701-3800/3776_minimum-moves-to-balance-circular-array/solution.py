@@ -1,29 +1,33 @@
-from typing import List
+from typing import List, Optional
 
 
 class Solution:
     def minMoves(self, balance: List[int]) -> int:
-        # The single negative person is the only sink; each positive person
-        # is a source whose units cost their circular distance to the sink,
-        # so the cheapest sources are drained first.
-        neg = next((i for i, v in enumerate(balance) if v < 0), -1)
+        # At most one person is negative. With none, nobody moves; with a
+        # negative total, no arrangement can work. Otherwise every unit a
+        # giver releases costs one move per hop of its circular distance
+        # to the negative index, so draining the deficit from the nearest
+        # givers first — cheapest distance, then the next, and so on —
+        # totals the minimum.
+        n = len(balance)
+        neg = -1
+        for i, v in enumerate(balance):
+            if v < 0:
+                neg = i
+                break
         if neg == -1:
             return 0
         if sum(balance) < 0:
             return -1
-        n = len(balance)
         need = -balance[neg]
-        sources = []
-        for i, v in enumerate(balance):
-            if i != neg and v > 0:
-                d = min(abs(i - neg), n - abs(i - neg))
-                sources.append((d, v))
-        sources.sort()
+        supplies = sorted(
+            (min((i - neg) % n, (neg - i) % n), balance[i]) for i in range(n) if i != neg and balance[i] > 0
+        )
         moves = 0
-        for d, v in sources:
+        for dist, amount in supplies:
             if need == 0:
                 break
-            take = min(v, need)
-            moves += take * d
+            take = min(amount, need)
+            moves += take * dist
             need -= take
         return moves

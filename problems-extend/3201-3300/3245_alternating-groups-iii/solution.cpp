@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> numberOfAlternatingGroups(vector<int>& colors, vector<vector<int>>& queries) {
+    vector<int> numberOfAlternatingGroups(vector<int> &colors, vector<vector<int>> &queries) {
         // Edge j joins tile j and tile j + 1 circularly and is bad when its two
         // endpoints share a color. A size-k group starting at tile s spans the
         // k - 1 consecutive edges s..s+k-2, so counting size-k groups means
@@ -16,11 +16,11 @@ class Solution {
         vector<int> fenCnt(n + 1, 0), fenSum(n + 1, 0);
         int cntAll = 0, sumAll = 0;
         auto cyc = [&](long long d) { return (int)(((d % n) + n) % n); };
-        auto fenAdd = [&](vector<int>& fen, int length, int delta) {
+        auto fenAdd = [&](vector<int> &fen, int length, int delta) {
             for (int i = length + 1; i <= n; i += i & (-i))
                 fen[i] += delta;
         };
-        auto fenPrefix = [&](vector<int>& fen, int length) {
+        auto fenPrefix = [&](vector<int> &fen, int length) {
             int total = 0;
             for (int i = length + 1; i > 0; i -= i & (-i))
                 total += fen[i];
@@ -73,7 +73,7 @@ class Solution {
 
         vector<int> answer;
         answer.reserve(queries.size());
-        for (auto& query : queries) {
+        for (auto &query : queries) {
             if (query[0] == 1) {
                 if (bads.empty()) {
                     answer.push_back(n);

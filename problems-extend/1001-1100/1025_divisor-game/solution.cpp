@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool divisorGame(int n) {
         // win[i] is true if the player about to move at value i can force
         // a win. Every position only depends on smaller positions already

@@ -6,6 +6,6 @@ class Solution {
         // by 1.80 and adds the 32.00 offset.
         double kelvin = celsius + 273.15;
         double fahrenheit = celsius * 1.80 + 32.00;
-        return new double[] {kelvin, fahrenheit};
+        return new double[] { kelvin, fahrenheit };
     }
 }

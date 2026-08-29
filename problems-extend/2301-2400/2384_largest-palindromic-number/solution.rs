@@ -18,8 +18,7 @@ impl Solution {
                 mid = Some((b'0' + d as u8) as char);
             }
         }
-        let trimmed: String =
-            half.chars().skip_while(|&c| c == '0').collect();
+        let trimmed: String = half.chars().skip_while(|&c| c == '0').collect();
         if trimmed.is_empty() && mid.is_none() {
             return "0".to_string();
         }

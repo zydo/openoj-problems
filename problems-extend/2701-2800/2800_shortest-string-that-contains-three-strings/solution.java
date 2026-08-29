@@ -42,9 +42,11 @@ class Solution {
                         cur = merge(cur, words.get(k));
                     }
                 }
-                if (best.isEmpty()
-                        || cur.length() < best.length()
-                        || (cur.length() == best.length() && cur.compareTo(best) < 0)) {
+                if (
+                    best.isEmpty() ||
+                    cur.length() < best.length() ||
+                    (cur.length() == best.length() && cur.compareTo(best) < 0)
+                ) {
                     best = cur;
                 }
             }

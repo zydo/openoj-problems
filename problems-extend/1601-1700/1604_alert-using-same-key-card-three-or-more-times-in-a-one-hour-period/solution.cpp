@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<string> alertNames(vector<string>& keyName, vector<string>& keyTime) {
+  public:
+    vector<string> alertNames(vector<string> &keyName, vector<string> &keyTime) {
         // Group each worker's swipe times together; comparisons only ever
         // happen within one worker's own history.
         unordered_map<string, vector<int>> timesByName;
@@ -13,7 +13,7 @@ public:
         }
 
         vector<string> alerted;
-        for (auto& [name, times] : timesByName) {
+        for (auto &[name, times] : timesByName) {
             sort(times.begin(), times.end());
             // A window of three consecutive swipes spans at most 60 minutes
             // exactly when the alert condition is met.

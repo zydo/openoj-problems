@@ -77,6 +77,5 @@ returned.
 ```
 
 Write your solution as a single `SELECT` query returning `name` and
-`balance`, one row for every account whose summed `amount` exceeds
-10000. Accounts with no matching rows in `Transactions` have a
+`balance`, one row for every account whose summed `amount` exceeds 10000. Accounts with no matching rows in `Transactions` have a
 balance of 0 and never appear in the result.

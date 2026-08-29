@@ -5,7 +5,7 @@
 Fix a pair of starting indices in `s` and `t` and walk both strings forward
 in lockstep: the running count of mismatched characters can only grow as
 the compared length grows, it never drops back down. That monotonicity
-means, for any fixed pair of *ending* positions, the lengths ending there
+means, for any fixed pair of _ending_ positions, the lengths ending there
 with zero mismatches and the lengths ending there with at most one
 mismatch each form a prefix of lengths — so tracking just the longest such
 run at every ending position is enough to recover the count with exactly

@@ -18,10 +18,13 @@ function numPoints(darts: number[][], r: number): number {
         best = Math.max(best, countAt(x, y));
     }
     for (let i = 0; i < n; i++) {
-        const x1 = darts[i][0], y1 = darts[i][1];
+        const x1 = darts[i][0],
+            y1 = darts[i][1];
         for (let j = i + 1; j < n; j++) {
-            const x2 = darts[j][0], y2 = darts[j][1];
-            const dx = x2 - x1, dy = y2 - y1;
+            const x2 = darts[j][0],
+                y2 = darts[j][1];
+            const dx = x2 - x1,
+                dy = y2 - y1;
             const d2 = dx * dx + dy * dy;
             if (d2 === 0 || d2 > 4 * r2) {
                 continue;
@@ -31,7 +34,8 @@ function numPoints(darts: number[][], r: number): number {
                 h2 = 0;
             }
             const scale = Math.sqrt(h2 / d2);
-            const mx = (x1 + x2) / 2.0, my = (y1 + y2) / 2.0;
+            const mx = (x1 + x2) / 2.0,
+                my = (y1 + y2) / 2.0;
             for (const factor of [1.0, -1.0]) {
                 best = Math.max(best, countAt(mx + factor * scale * -dy, my + factor * scale * dx));
             }

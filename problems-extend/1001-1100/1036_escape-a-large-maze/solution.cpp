@@ -1,10 +1,10 @@
 class Solution {
-public:
+  public:
     static constexpr int GRID_SIZE = 1000000;
 
-    bool isEscapePossible(vector<vector<int>>& blocked, vector<int>& source, vector<int>& target) {
+    bool isEscapePossible(vector<vector<int>> &blocked, vector<int> &source, vector<int> &target) {
         unordered_set<long long> blockedSet;
-        for (auto& cell : blocked) {
+        for (auto &cell : blocked) {
             blockedSet.insert(key(cell[0], cell[1]));
         }
         // With n blocked cells, the largest pocket they can wall off is the
@@ -22,11 +22,11 @@ public:
                canEscapeLocally(target, source, blockedSet, maxEnclosedArea);
     }
 
-private:
+  private:
     long long key(int x, int y) { return (long long)x * GRID_SIZE + y; }
 
-    bool canEscapeLocally(vector<int>& start, vector<int>& goal, unordered_set<long long>& blockedSet,
-                           long long maxEnclosedArea) {
+    bool canEscapeLocally(vector<int> &start, vector<int> &goal, unordered_set<long long> &blockedSet,
+                          long long maxEnclosedArea) {
         unordered_set<long long> visited;
         vector<pair<int, int>> stack;
         visited.insert(key(start[0], start[1]));
@@ -39,7 +39,7 @@ private:
             }
             auto [x, y] = stack.back();
             stack.pop_back();
-            for (auto& direction : directions) {
+            for (auto &direction : directions) {
                 int nx = x + direction[0];
                 int ny = y + direction[1];
                 if (nx < 0 || nx >= GRID_SIZE || ny < 0 || ny >= GRID_SIZE) {

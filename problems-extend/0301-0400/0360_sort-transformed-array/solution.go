@@ -8,7 +8,7 @@
 // the smaller. |f(x)| <= 100*100^2 + 100*100 + 100 = 1,010,100, well
 // inside the int range.
 func sortTransformedArray(nums []int, a int, b int, c int) []int {
-	f := func(x int) int { return (a*x + b)*x + c }
+	f := func(x int) int { return (a*x+b)*x + c }
 	result := make([]int, len(nums))
 	lo, hi := 0, len(nums)-1
 	index, step := 0, 1

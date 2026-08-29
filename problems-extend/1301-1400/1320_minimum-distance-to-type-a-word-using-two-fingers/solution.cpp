@@ -11,13 +11,16 @@ class Solution {
             int step = dist(prev, cur);
             vector<int> nxt(27, INF);
             for (int o = 0; o < 27; ++o) {
-                if (dp[o] == INF) continue;
+                if (dp[o] == INF)
+                    continue;
                 long long cost = dp[o];
                 // Move the finger that just typed; the resting finger stays.
-                if (cost + step < nxt[o]) nxt[o] = (int)(cost + step);
+                if (cost + step < nxt[o])
+                    nxt[o] = (int)(cost + step);
                 // The resting finger types cur; prev becomes the new rest.
                 long long move = cost + dist(o, cur);
-                if (move < nxt[prev]) nxt[prev] = (int)move;
+                if (move < nxt[prev])
+                    nxt[prev] = (int)move;
             }
             dp = nxt;
         }
@@ -26,7 +29,8 @@ class Solution {
 
   private:
     int dist(int a, int b) {
-        if (a == 26 || b == 26) return 0;
+        if (a == 26 || b == 26)
+            return 0;
         return abs(a / 6 - b / 6) + abs(a % 6 - b % 6);
     }
 };

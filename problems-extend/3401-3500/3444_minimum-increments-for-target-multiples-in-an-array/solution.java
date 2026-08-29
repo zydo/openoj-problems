@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-
 class Solution {
 
     // An optimal plan serves each group of targets with a single element
@@ -21,7 +20,7 @@ class Solution {
             int low = mask & -mask;
             long l = lcms[mask ^ low];
             int t = target[Integer.numberOfTrailingZeros(low)];
-            l = l / gcd(l, t) * t;
+            l = (l / gcd(l, t)) * t;
             lcms[mask] = l <= cap ? (int) l : 0;
         }
         boolean[] cand = new boolean[n];
@@ -35,7 +34,7 @@ class Solution {
             Arrays.fill(bestCost, Integer.MAX_VALUE);
             Arrays.fill(bestIdx, -1);
             for (int i = 0; i < n; i++) {
-                int cost = (l - nums[i] % l) % l;
+                int cost = (l - (nums[i] % l)) % l;
                 if (cost >= bestCost[m - 1]) {
                     continue;
                 }
@@ -76,7 +75,7 @@ class Solution {
                     if (l == 0) {
                         continue;
                     }
-                    long cand2 = base + (l - x % l) % l;
+                    long cand2 = base + ((l - (x % l)) % l);
                     if (cand2 < ndp[mask | sub]) {
                         ndp[mask | sub] = cand2;
                     }

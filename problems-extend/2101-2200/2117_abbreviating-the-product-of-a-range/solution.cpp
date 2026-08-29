@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string abbreviateProduct(int left, int right) {
         const long long modulus = 10000000000LL;
         long double logarithm = 0.0L;

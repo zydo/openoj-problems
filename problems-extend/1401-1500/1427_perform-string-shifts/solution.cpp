@@ -3,9 +3,9 @@
 
 class Solution {
   public:
-    std::string stringShift(std::string s, std::vector<std::vector<int>>& shift) {
+    std::string stringShift(std::string s, std::vector<std::vector<int>> &shift) {
         int net = 0;
-        for (const std::vector<int>& operation : shift) {
+        for (const std::vector<int> &operation : shift) {
             net += operation[0] == 0 ? operation[1] : -operation[1];
         }
         int n = (int)s.size();

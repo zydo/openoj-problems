@@ -4,12 +4,12 @@
 
 Table: `UserActivity`
 
-| Column Name | Type |
-| ----------- | ---- |
-| username | varchar |
-| activity | varchar |
-| startDate | Date |
-| endDate | Date |
+| Column Name | Type    |
+| ----------- | ------- |
+| username    | varchar |
+| activity    | varchar |
+| startDate   | Date    |
+| endDate     | Date    |
 
 This table may contain duplicate rows.
 This table contains information about the activity performed by each user in a

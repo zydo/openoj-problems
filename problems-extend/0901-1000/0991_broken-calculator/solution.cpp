@@ -19,6 +19,6 @@ class Solution {
             ops += 1;
         }
         long long total = ops + start - value;
-        return (int) total;
+        return (int)total;
     }
 };

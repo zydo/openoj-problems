@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int alternatingSum(vector<int>& nums) {
+    int alternatingSum(vector<int> &nums) {
         // Even indices add, odd indices subtract: walk the array two
         // positions at a time, adding each even-index element and
         // subtracting the odd-index partner that follows it. A trailing

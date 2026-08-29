@@ -25,12 +25,10 @@ class Solution {
             cur0[0] = (i == 1) ? 2 - x : prv0[0] + stepX;
             for (int j = 1; j <= m; j++) {
                 int y = nums2[j - 1];
-                cur0[j] = min(prv0[j] + stepX,
-                              prv1[j] + (y != x ? 1 : 2));
+                cur0[j] = min(prv0[j] + stepX, prv1[j] + (y != x ? 1 : 2));
                 int best = cur0[j - 1] + (x != y ? 1 : 2);
                 if (j >= 2) {
-                    best = min(best, cur1[j - 1] +
-                                         (nums2[j - 2] != y ? 1 : 2));
+                    best = min(best, cur1[j - 1] + (nums2[j - 2] != y ? 1 : 2));
                 }
                 cur1[j] = best;
             }

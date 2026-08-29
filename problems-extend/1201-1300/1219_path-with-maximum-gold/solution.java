@@ -24,7 +24,8 @@ class Solution {
         int deepest = 0;
         int[][] steps = { { r - 1, c }, { r + 1, c }, { r, c - 1 }, { r, c + 1 } };
         for (int[] step : steps) {
-            int nr = step[0], nc = step[1];
+            int nr = step[0],
+                nc = step[1];
             if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && grid[nr][nc] > 0) {
                 deepest = Math.max(deepest, walk(nr, nc));
             }

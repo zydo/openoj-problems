@@ -1,3 +1,6 @@
+from typing import List, Optional
+
+
 class Solution:
-    def distributeCandies(self, candies: int, num_people: int) -> list[int]:
+    def distributeCandies(self, candies: int, num_people: int) -> List[int]:
         raise NotImplementedError("TODO")

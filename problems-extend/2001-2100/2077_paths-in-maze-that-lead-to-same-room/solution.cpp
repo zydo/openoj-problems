@@ -21,7 +21,8 @@ class Solution {
         for (int u = 1; u <= n; ++u) {
             for (int v : forward[u]) {
                 for (int w : forward[u]) {
-                    if (forward[v].count(w) != 0) ++triangles;
+                    if (forward[v].count(w) != 0)
+                        ++triangles;
                 }
             }
         }

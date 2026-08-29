@@ -10,7 +10,8 @@ class Solution {
         int count = n - 1;
         int[] answer = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {
-            int u = queries[i][0], v = queries[i][1];
+            int u = queries[i][0],
+                v = queries[i][1];
             int j = nxt[u];
             if (j > 0 && j < v) {
                 while (j < v) {

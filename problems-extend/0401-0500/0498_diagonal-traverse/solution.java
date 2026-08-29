@@ -3,7 +3,8 @@ class Solution {
     public int[] findDiagonalOrder(int[][] mat) {
         // Every anti-diagonal is the set of cells with i + j == d; walk the
         // diagonals in increasing d and let d's parity pick the direction.
-        int m = mat.length, n = mat[0].length;
+        int m = mat.length,
+            n = mat[0].length;
         int[] order = new int[m * n];
         int k = 0;
         for (int d = 0; d < m + n - 1; ++d) {

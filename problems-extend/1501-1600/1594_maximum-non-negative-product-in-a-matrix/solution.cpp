@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maxProductPath(vector<vector<int>>& grid) {
+  public:
+    int maxProductPath(vector<vector<int>> &grid) {
         const long long MOD = 1'000'000'007LL;
         int m = grid.size();
         int n = grid[0].size();

@@ -10,7 +10,7 @@ For a chosen split index `i`:
 
 - Let `prefixSum(i)` be the sum of `nums[0] + nums[1] + ... + nums[i]`.
 - Let `suffixMin(i)` be the minimum value among `nums[i + 1], nums[i + 2],
-  ..., nums[n - 1]`.
+..., nums[n - 1]`.
 
 The score of a split at index `i` is defined as:
 

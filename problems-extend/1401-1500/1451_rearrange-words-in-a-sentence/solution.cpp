@@ -14,9 +14,7 @@ class Solution {
         }
         words[0][0] = (char)std::tolower(words[0][0]);
         std::stable_sort(words.begin(), words.end(),
-                         [](const std::string& a, const std::string& b) {
-                             return a.size() < b.size();
-                         });
+                         [](const std::string &a, const std::string &b) { return a.size() < b.size(); });
         std::string first = words[0];
         first[0] = (char)std::toupper(first[0]);
         std::string result = first;

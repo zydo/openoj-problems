@@ -12,7 +12,7 @@ class Solution {
                 return;
             }
         }
-        pool.add(new int[] {mask, count});
+        pool.add(new int[] { mask, count });
     }
 
     public int maxPartitionsAfterOperations(String s, int k) {
@@ -70,6 +70,6 @@ class Solution {
         for (int[] state : spent) {
             best = Math.max(best, state[1]);
         }
-        return best + 1;  // the final open partition always counts
+        return best + 1; // the final open partition always counts
     }
 }

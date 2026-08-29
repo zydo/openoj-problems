@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int longestSubarray(vector<int>& nums) {
+    int longestSubarray(vector<int> &nums) {
         // AND never exceeds any member, so the maximum subarray AND is
         // max(nums), and only subarrays made entirely of that value attain
         // it: adding anything smaller strictly lowers the AND. The answer

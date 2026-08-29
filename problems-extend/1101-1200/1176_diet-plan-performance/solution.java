@@ -1,4 +1,5 @@
 class Solution {
+
     public int dietPlanPerformance(int[] calories, int k, int lower, int upper) {
         long points = 0;
         // Sum the first window once; every later window shares k-1 days

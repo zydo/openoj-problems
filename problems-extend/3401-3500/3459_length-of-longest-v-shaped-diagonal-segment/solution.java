@@ -22,7 +22,7 @@ class Solution {
                         if (grid[r][c] != 2 * j) continue;
                         int nr = r + dr[d];
                         int nc = c + dc[d];
-                        int nxt = (0 <= nr && nr < n && 0 <= nc && nc < m) ? S[1 - j][d][nr][nc] : 0;
+                        int nxt = 0 <= nr && nr < n && 0 <= nc && nc < m ? S[1 - j][d][nr][nc] : 0;
                         S[j][d][r][c] = 1 + nxt;
                     }
                 }
@@ -42,7 +42,7 @@ class Solution {
                         int nc = c + dc[d];
                         int tr = r + dr[cw];
                         int tc = c + dc[cw];
-                        int best = (0 <= nr && nr < n && 0 <= nc && nc < m) ? M[1 - j][d][nr][nc] : 0;
+                        int best = 0 <= nr && nr < n && 0 <= nc && nc < m ? M[1 - j][d][nr][nc] : 0;
                         if (0 <= tr && tr < n && 0 <= tc && tc < m) {
                             best = Math.max(best, S[1 - j][cw][tr][tc]);
                         }

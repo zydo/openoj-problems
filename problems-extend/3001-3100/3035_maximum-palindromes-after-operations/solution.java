@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class Solution {
+
     public int maxPalindromesAfterOperations(String[] words) {
         int[] count = new int[26];
         for (String word : words) {

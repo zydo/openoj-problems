@@ -1,4 +1,5 @@
 class Solution {
+
     public int minimumPerimeter(long neededApples) {
         // A square plot with half-side k covers the integer coordinates
         // [-k,k]^2. Summing |i| + |j| over that box gives

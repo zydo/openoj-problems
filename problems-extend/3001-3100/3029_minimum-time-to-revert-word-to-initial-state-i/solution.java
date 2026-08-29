@@ -7,8 +7,7 @@ class Solution {
         // suffix word[t*k:] equals the prefix it would occupy.
         int n = word.length();
         int t = 1;
-        while (t * k < n && !word.substring(0, n - t * k)
-                .equals(word.substring(t * k))) {
+        while (t * k < n && !word.substring(0, n - t * k).equals(word.substring(t * k))) {
             ++t;
         }
         return t;

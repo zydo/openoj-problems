@@ -8,7 +8,8 @@ class Solution {
         // Java strings are immutable, so the scan runs on a char array — the
         // honest equivalent of the in-place algorithm.
         char[] chars = s.toCharArray();
-        int lo = 0, hi = chars.length - 1;
+        int lo = 0,
+            hi = chars.length - 1;
         while (lo < hi) {
             // Advance whichever side does not sit on a letter.
             if (!isLetter(chars[lo])) {

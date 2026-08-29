@@ -28,14 +28,8 @@ impl Solution {
                 (
                     n.left.is_none() && n.right.is_none(),
                     n.val,
-                    n.left
-                        .as_deref_mut()
-                        .map(|c| c as Ptr)
-                        .unwrap_or(std::ptr::null_mut()),
-                    n.right
-                        .as_deref_mut()
-                        .map(|c| c as Ptr)
-                        .unwrap_or(std::ptr::null_mut()),
+                    n.left.as_deref_mut().map(|c| c as Ptr).unwrap_or(std::ptr::null_mut()),
+                    n.right.as_deref_mut().map(|c| c as Ptr).unwrap_or(std::ptr::null_mut()),
                 )
             };
             if !revisited {

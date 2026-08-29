@@ -25,7 +25,7 @@ class Solution {
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 int mask = 1 << (r * n + c);
-                int[][] deltas = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+                int[][] deltas = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
                 for (int[] d : deltas) {
                     int nr = r + d[0];
                     int nc = c + d[1];

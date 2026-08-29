@@ -6,7 +6,10 @@
   "slug": "grumpy-bookstore-owner",
   "title": "Grumpy Bookstore Owner",
   "difficulty": "",
-  "tags": ["Array", "Sliding Window"],
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

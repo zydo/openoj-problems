@@ -13,10 +13,8 @@ class Solution:
         for creator, video_id, view in zip(creators, ids, views):
             totals[creator] = totals.get(creator, 0) + view
             current = best_view.get(creator)
-            if (current is None or view > current
-                    or (view == current and video_id < best_id[creator])):
+            if current is None or view > current or (view == current and video_id < best_id[creator]):
                 best_view[creator] = view
                 best_id[creator] = video_id
         top = max(totals.values())
-        return sorted([[creator, best_id[creator]] for creator in totals
-                       if totals[creator] == top])
+        return sorted([[creator, best_id[creator]] for creator in totals if totals[creator] == top])

@@ -3,7 +3,9 @@ SELECT
   s.plan_name AS current_plan,
   s.monthly_amount AS current_monthly_amount,
   h.max_historical_amount,
-  CAST(julianday(h.last_date) - julianday(h.first_date) AS INTEGER) AS days_as_subscriber
+  CAST(
+    julianday(h.last_date) - julianday(h.first_date) AS INTEGER
+  ) AS days_as_subscriber
 FROM
   subscription_events s
   JOIN (

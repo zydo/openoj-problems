@@ -3,18 +3,7 @@ import java.util.List;
 
 class Solution {
 
-    private static final String[] ONES = {
-        "",
-        "One",
-        "Two",
-        "Three",
-        "Four",
-        "Five",
-        "Six",
-        "Seven",
-        "Eight",
-        "Nine",
-    };
+    private static final String[] ONES = { "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
     private static final String[] TEENS = {
         "Ten",
         "Eleven",

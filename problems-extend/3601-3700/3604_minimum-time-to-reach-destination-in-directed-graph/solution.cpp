@@ -17,7 +17,8 @@ class Solution {
         while (!heap.empty()) {
             auto [t, u] = heap.top();
             heap.pop();
-            if (t > dist[u]) continue;
+            if (t > dist[u])
+                continue;
             for (auto [v, start, end] : adj[u]) {
                 long long depart = max(t, (long long)start);
                 if (depart <= end) {

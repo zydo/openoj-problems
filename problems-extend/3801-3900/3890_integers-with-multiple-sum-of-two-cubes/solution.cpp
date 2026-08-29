@@ -32,7 +32,7 @@ class Solution {
         }
         // A value is good when at least two distinct pairs form it.
         vector<int> result;
-        for (auto& entry : counts) {
+        for (auto &entry : counts) {
             if (entry.second >= 2) {
                 result.push_back((int)entry.first);
             }

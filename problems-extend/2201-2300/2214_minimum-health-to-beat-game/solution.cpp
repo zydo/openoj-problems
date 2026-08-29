@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long minimumHealth(vector<int>& damage, int armor) {
+    long long minimumHealth(vector<int> &damage, int armor) {
         // Total damage must be survived with health to spare, and the one
         // armor use erases min(armor, worst level) of it.
         long long total = 0;

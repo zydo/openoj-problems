@@ -10,7 +10,13 @@ impl Solution {
             // That node leads a run of equals exactly when the node after
             // it repeats its value; decide before mutating anything.
             let value = tail.next.as_ref().unwrap().val;
-            let starts_run = tail.next.as_ref().unwrap().next.as_ref().map_or(false, |next| next.val == value);
+            let starts_run = tail
+                .next
+                .as_ref()
+                .unwrap()
+                .next
+                .as_ref()
+                .map_or(false, |next| next.val == value);
             if starts_run {
                 // take() pops each Box off the front of tail.next and hands
                 // back the chain that remains, so every copy of the value is

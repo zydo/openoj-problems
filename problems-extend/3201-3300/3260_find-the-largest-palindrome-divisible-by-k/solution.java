@@ -13,11 +13,11 @@ class Solution {
         int[] powSmall = new int[m];
         java.util.Arrays.fill(powSmall, 1 % k);
         for (int j = 1; j < m; j++) {
-            powSmall[j] = powSmall[j - 1] * 10 % k;
+            powSmall[j] = (powSmall[j - 1] * 10) % k;
         }
         int base = 1 % k;
         for (int i = 0; i < n - m; i++) {
-            base = base * 10 % k;
+            base = (base * 10) % k;
         }
         int[] weights = new int[m];
         for (int j = 0; j < m; j++) {
@@ -51,8 +51,8 @@ class Solution {
         for (int j = 0; j < m; j++) {
             int low = j == 0 ? 1 : 0;
             for (int d = 9; d >= low; d--) {
-                int rest = ((need - d * weights[j]) % k + k) % k;
-                if ((reachable[j + 1] >> rest & 1) == 1) {
+                int rest = (((need - d * weights[j]) % k) + k) % k;
+                if (((reachable[j + 1] >> rest) & 1) == 1) {
                     need = rest;
                     half[j] = (char) ('0' + d);
                     break;

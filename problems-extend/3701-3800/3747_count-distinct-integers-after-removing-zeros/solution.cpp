@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     long long countDistinct(long long n) {
         // Count the zero-free integers in [1, n] directly from n's digits,
         // peeled off arithmetically. Every shorter length contributes a
@@ -11,7 +11,8 @@ public:
         // stays below n <= 10^15.
         int digits[16];
         int count = 0;
-        for (long long m = n; m > 0; m /= 10) digits[count++] = (int)(m % 10);
+        for (long long m = n; m > 0; m /= 10)
+            digits[count++] = (int)(m % 10);
         long long total = 0;
         long long pow9 = 1;
         for (int k = 1; k < count; k++) {
@@ -21,11 +22,16 @@ public:
         bool tight = true;
         for (int i = count - 1; i >= 0; i--) {
             long long d = digits[i];
-            if (d > 1) total += (d - 1) * pow9;
-            if (d == 0) { tight = false; break; }
+            if (d > 1)
+                total += (d - 1) * pow9;
+            if (d == 0) {
+                tight = false;
+                break;
+            }
             pow9 /= 9;
         }
-        if (tight) total += 1;
+        if (tight)
+            total += 1;
         return total;
     }
 };

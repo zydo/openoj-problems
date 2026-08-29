@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int countDistinct(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int countDistinct(string s) { throw logic_error("TODO"); }
 };

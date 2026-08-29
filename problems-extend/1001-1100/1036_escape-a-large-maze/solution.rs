@@ -24,12 +24,7 @@ impl Solution {
         x as i64 * GRID_SIZE + y as i64
     }
 
-    fn can_escape_locally(
-        start: &[i32],
-        goal: &[i32],
-        blocked_set: &HashSet<i64>,
-        max_enclosed_area: i64,
-    ) -> bool {
+    fn can_escape_locally(start: &[i32], goal: &[i32], blocked_set: &HashSet<i64>, max_enclosed_area: i64) -> bool {
         let mut visited: HashSet<i64> = HashSet::new();
         visited.insert(Self::key(start[0], start[1]));
         let mut stack: Vec<(i32, i32)> = vec![(start[0], start[1])];

@@ -13,8 +13,7 @@ class Solution {
         int[] queue = new int[n * n];
         int tail = 0;
         int head = 0;
-        outer:
-        for (int i = 0; i < n; ++i) {
+        outer: for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
                 if (grid[i][j] == 1) {
                     seen[i][j] = true;

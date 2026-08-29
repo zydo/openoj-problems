@@ -1,8 +1,6 @@
 class Solution {
   public:
-    vector<TreeNode *> generateTrees(int n) {
-        return build(1, n);
-    }
+    vector<TreeNode *> generateTrees(int n) { return build(1, n); }
 
   private:
     vector<TreeNode *> build(int lo, int hi) {

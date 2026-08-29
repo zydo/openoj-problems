@@ -1,24 +1,25 @@
-WITH awards AS (
-  SELECT
-    host_team AS team_id,
-    CASE
-      WHEN host_goals > guest_goals THEN 3
-      WHEN host_goals = guest_goals THEN 1
-      ELSE 0
-    END AS pts
-  FROM
-    Matches
-  UNION ALL
-  SELECT
-    guest_team AS team_id,
-    CASE
-      WHEN guest_goals > host_goals THEN 3
-      WHEN guest_goals = host_goals THEN 1
-      ELSE 0
-    END AS pts
-  FROM
-    Matches
-)
+WITH
+  awards AS (
+    SELECT
+      host_team AS team_id,
+      CASE
+        WHEN host_goals > guest_goals THEN 3
+        WHEN host_goals = guest_goals THEN 1
+        ELSE 0
+      END AS pts
+    FROM
+      Matches
+    UNION ALL
+    SELECT
+      guest_team AS team_id,
+      CASE
+        WHEN guest_goals > host_goals THEN 3
+        WHEN guest_goals = host_goals THEN 1
+        ELSE 0
+      END AS pts
+    FROM
+      Matches
+  )
 SELECT
   t.team_id,
   t.team_name,

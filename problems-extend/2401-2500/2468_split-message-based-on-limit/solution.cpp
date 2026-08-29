@@ -9,10 +9,12 @@ class Solution {
             digit_len[x] = digit_len[x - 1] + (int)std::to_string(x).size();
         for (int b = 1; b <= n; ++b) {
             int digits_b = (int)std::to_string(b).size();
-            if (2 * digits_b + 3 > limit) break; // widest suffix "<b/b>" won't fit
+            if (2 * digits_b + 3 > limit)
+                break; // widest suffix "<b/b>" won't fit
             // Capacity: sum over a=1..b of (limit - len(str(a)) - digits_b - 3).
             int capacity = b * limit - digit_len[b] - b * digits_b - 3 * b;
-            if (capacity < n) continue;
+            if (capacity < n)
+                continue;
             vector<string> parts;
             int pos = 0;
             for (int a = 1; a <= b; ++a) {

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool areNumbersAscending(string s) {
         istringstream tokens(s);
         string token;

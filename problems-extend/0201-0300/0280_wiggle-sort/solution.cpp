@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> wiggleSort(vector<int>& nums) {
+    vector<int> wiggleSort(vector<int> &nums) {
         // One pass: each pair demands its own relation, and repairing a
         // violated pair with a single swap never re-breaks the pair before it.
         for (int i = 1; i < (int)nums.size(); ++i) {

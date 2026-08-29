@@ -15,8 +15,10 @@ class Solution {
                 TreeNode *node = q.front();
                 q.pop();
                 level.push_back(node->val);
-                if (node->left != nullptr) q.push(node->left);
-                if (node->right != nullptr) q.push(node->right);
+                if (node->left != nullptr)
+                    q.push(node->left);
+                if (node->right != nullptr)
+                    q.push(node->right);
             }
             // A level was collected left to right, so its last value is the
             // one the right side sees.

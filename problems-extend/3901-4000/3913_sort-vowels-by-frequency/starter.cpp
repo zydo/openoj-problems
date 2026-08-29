@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string sortVowels(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    string sortVowels(string s) { throw logic_error("TODO"); }
 };

@@ -10,7 +10,7 @@ class Solution {
         int start = 0;
         for (int i = 0; i <= s.length(); i++) {
             if (i == s.length() || s.charAt(i) == ' ') {
-                answer = answer * wordWays(s, start, i) % MOD;
+                answer = (answer * wordWays(s, start, i)) % MOD;
                 start = i + 1;
             }
         }
@@ -25,7 +25,7 @@ class Solution {
         long term = factorialMod(to - from);
         for (int count : counts) {
             if (count > 1) {
-                term = term * modPow(factorialMod(count), MOD - 2) % MOD;
+                term = (term * modPow(factorialMod(count), MOD - 2)) % MOD;
             }
         }
         return term;
@@ -34,7 +34,7 @@ class Solution {
     private long factorialMod(int n) {
         long result = 1;
         for (int i = 2; i <= n; i++) {
-            result = result * i % MOD;
+            result = (result * i) % MOD;
         }
         return result;
     }
@@ -43,8 +43,8 @@ class Solution {
         long result = 1;
         base %= MOD;
         while (exp > 0) {
-            if ((exp & 1) == 1) result = result * base % MOD;
-            base = base * base % MOD;
+            if ((exp & 1) == 1) result = (result * base) % MOD;
+            base = (base * base) % MOD;
             exp >>= 1;
         }
         return result;

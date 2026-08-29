@@ -16,7 +16,7 @@ class Solution {
                 }
             }
             for (size_t i = 0; i < ones.size(); ++i) {
-                long long base = (long long) ones[i] * n;
+                long long base = (long long)ones[i] * n;
                 for (size_t j = i + 1; j < ones.size(); ++j) {
                     long long key = base + ones[j];
                     int earlier = pairRows[key];
@@ -25,6 +25,6 @@ class Solution {
                 }
             }
         }
-        return (int) total;
+        return (int)total;
     }
 };

@@ -27,8 +27,7 @@ class Solution {
                 anti += step;
             }
             int reach =
-                std::max(std::max(std::abs(rows[r]), std::abs(cols[c])),
-                         std::max(std::abs(diag), std::abs(anti)));
+                std::max(std::max(std::abs(rows[r]), std::abs(cols[c])), std::max(std::abs(diag), std::abs(anti)));
             if (reach == 3) {
                 return step == 1 ? "A" : "B";
             }

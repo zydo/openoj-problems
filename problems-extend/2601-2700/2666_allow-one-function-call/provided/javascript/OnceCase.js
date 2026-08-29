@@ -47,12 +47,10 @@ class OnceCase {
         for (let at = 0; at < this.calls.length; at++) {
             const out = wrapped(...this.calls[at]);
             if (at > 0 && out !== undefined) {
-                throw new Error(
-                    "call " + at + " returned a non-undefined value"
-                );
+                throw new Error("call " + at + " returned a non-undefined value");
             }
         }
-        this.verdictValue = [{calls: realCalls, value: value}];
+        this.verdictValue = [{ calls: realCalls, value: value }];
     }
 
     verdict() {

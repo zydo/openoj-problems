@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long minArraySum(vector<int>& nums, int k) {
+    long long minArraySum(vector<int> &nums, int k) {
         // A block sums to a multiple of k exactly when its endpoint prefix
         // sums share a remainder mod k, and any deletion sequence collapses
         // to disjoint divisible-sum blocks of the original array.

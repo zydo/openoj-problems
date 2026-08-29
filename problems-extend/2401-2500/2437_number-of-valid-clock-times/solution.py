@@ -14,16 +14,12 @@ class Solution:
 
         hours = 0
         for h in range(24):
-            if (h_tens == "?" or h // 10 == int(h_tens)) and (
-                h_ones == "?" or h % 10 == int(h_ones)
-            ):
+            if (h_tens == "?" or h // 10 == int(h_tens)) and (h_ones == "?" or h % 10 == int(h_ones)):
                 hours += 1
 
         minutes = 0
         for m in range(60):
-            if (m_tens == "?" or m // 10 == int(m_tens)) and (
-                m_ones == "?" or m % 10 == int(m_ones)
-            ):
+            if (m_tens == "?" or m // 10 == int(m_tens)) and (m_ones == "?" or m % 10 == int(m_ones)):
                 minutes += 1
 
         return hours * minutes

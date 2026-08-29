@@ -19,7 +19,7 @@ var tupleSameProduct = function (nums) {
     }
     let total = 0;
     for (const count of pairs.values()) {
-        total += (count * (count - 1)) / 2 * 8;
+        total += ((count * (count - 1)) / 2) * 8;
     }
     return total;
 };

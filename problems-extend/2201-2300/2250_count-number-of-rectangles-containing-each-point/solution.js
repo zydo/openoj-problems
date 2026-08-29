@@ -13,7 +13,8 @@ var countRectangles = function (rectangles, points) {
     }
 
     const countAtLeast = (lengths, x) => {
-        let lo = 0, hi = lengths.length;
+        let lo = 0,
+            hi = lengths.length;
         while (lo < hi) {
             const mid = (lo + hi) >> 1;
             if (lengths[mid] >= x) {

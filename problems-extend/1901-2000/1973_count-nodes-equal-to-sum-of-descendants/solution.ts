@@ -22,8 +22,7 @@ function equalToDescendants(root: TreeNode | null): number {
     let count = 0;
     for (let i = order.length - 1; i >= 0; i--) {
         const node = order[i];
-        const total =
-            node.val + (subtree.get(node.left) || 0) + (subtree.get(node.right) || 0);
+        const total = node.val + (subtree.get(node.left) || 0) + (subtree.get(node.right) || 0);
         subtree.set(node, total);
         if (node.val === total - node.val) count++;
     }

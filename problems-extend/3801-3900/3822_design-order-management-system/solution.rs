@@ -24,7 +24,10 @@ fn key(order_type: &str, price: i32) -> u64 {
 
 impl OrderManagementSystem {
     pub fn new() -> Self {
-        OrderManagementSystem { orders: HashMap::new(), buckets: HashMap::new() }
+        OrderManagementSystem {
+            orders: HashMap::new(),
+            buckets: HashMap::new(),
+        }
     }
 
     pub fn addOrder(&mut self, orderId: i32, orderType: String, price: i32) {

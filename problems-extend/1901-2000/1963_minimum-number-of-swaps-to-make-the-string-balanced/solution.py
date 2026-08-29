@@ -10,7 +10,7 @@ class Solution:
         balance = 0
         swaps = 0
         for c in s:
-            if c == '[':
+            if c == "[":
                 balance += 1
             else:
                 balance -= 1

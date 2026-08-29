@@ -14,9 +14,7 @@ impl Solution {
         sorted.sort_unstable();
         sorted.dedup();
         let size = sorted.len();
-        let rank = |value: i64| -> usize {
-            sorted.partition_point(|&x| x < value) + 1
-        };
+        let rank = |value: i64| -> usize { sorted.partition_point(|&x| x < value) + 1 };
         let mut tree = vec![0i64; size + 1];
         let mut answer = 0i64;
         update(&mut tree, size, rank(pref[0]));

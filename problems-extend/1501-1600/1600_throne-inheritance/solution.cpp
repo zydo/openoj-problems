@@ -8,18 +8,14 @@ class ThroneInheritance {
     // An n-ary tree keyed by name: children maps a name to its kids in
     // birth order, and dead holds everyone marked deceased. king is
     // remembered as the traversal root.
-    ThroneInheritance(string kingName) : king(kingName) {
-        children[kingName] = {};
-    }
+    ThroneInheritance(string kingName) : king(kingName) { children[kingName] = {}; }
 
     void birth(string parentName, string childName) {
         children[parentName].push_back(childName);
         children[childName] = {};
     }
 
-    void death(string name) {
-        dead.insert(name);
-    }
+    void death(string name) { dead.insert(name); }
 
     vector<string> getInheritanceOrder() {
         // Iterative pre-order DFS (explicit stack, so depth never risks

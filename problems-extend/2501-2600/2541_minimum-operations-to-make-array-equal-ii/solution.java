@@ -16,7 +16,8 @@ class Solution {
             return 0L;
         }
         long kk = k;
-        long net = 0, mass = 0;
+        long net = 0,
+            mass = 0;
         for (int i = 0; i < nums1.length; ++i) {
             long diff = (long) nums2[i] - nums1[i];
             if (Math.abs(diff) % kk != 0) return -1L;

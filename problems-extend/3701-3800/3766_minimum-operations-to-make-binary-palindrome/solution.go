@@ -21,7 +21,7 @@ func minOperations(nums []int) []int {
 			if value-d >= 1 && palindrome(value-d) {
 				return d
 			}
-			if palindrome(value+d) {
+			if palindrome(value + d) {
 				return d
 			}
 		}

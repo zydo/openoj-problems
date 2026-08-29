@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long countQuadruplets(std::vector<int>& nums) {
+    long long countQuadruplets(std::vector<int> &nums) {
         // For every pair j < k with nums[k] < nums[j], a quadruplet is any
         // i < j with nums[i] < nums[k] plus any l > k with nums[l] > nums[j].
         // Each j rebuilds the less-than row from its predecessor and sweeps
@@ -11,7 +11,8 @@ class Solution {
         long long ans = 0;
         std::vector<int> less(n + 2, 0);
         for (int j = 1; j <= n - 3; ++j) {
-            for (int x = nums[j - 1] + 1; x <= n; ++x) ++less[x];
+            for (int x = nums[j - 1] + 1; x <= n; ++x)
+                ++less[x];
             int vj = nums[j];
             long long tot = 0;
             long long c = 0;

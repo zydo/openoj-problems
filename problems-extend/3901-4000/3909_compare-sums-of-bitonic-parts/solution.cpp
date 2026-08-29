@@ -9,12 +9,15 @@ class Solution {
         int peak = nums[0];
         for (int index = 0; index < (int)nums.size(); ++index) {
             total += nums[index];
-            if (index == 0 || nums[index] > nums[index - 1]) ascending += nums[index];
+            if (index == 0 || nums[index] > nums[index - 1])
+                ascending += nums[index];
             peak = max(peak, nums[index]);
         }
         long long descending = total - ascending + peak;
-        if (ascending > descending) return 0;
-        if (descending > ascending) return 1;
+        if (ascending > descending)
+            return 0;
+        if (descending > ascending)
+            return 1;
         return -1;
     }
 };

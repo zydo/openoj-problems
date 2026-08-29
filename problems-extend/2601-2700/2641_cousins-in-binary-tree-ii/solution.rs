@@ -5,9 +5,7 @@ impl Solution {
     // parent's sibling group ends — then write the cousin sums back group by
     // group. Iterative on purpose: chains can run 10^5 nodes deep, far past
     // comfortable recursion.
-    pub fn replace_value_in_tree(
-        mut root: Option<Box<TreeNode>>,
-    ) -> Option<Box<TreeNode>> {
+    pub fn replace_value_in_tree(mut root: Option<Box<TreeNode>>) -> Option<Box<TreeNode>> {
         let mut row: Vec<&mut TreeNode> = Vec::new();
         if let Some(node) = root.as_deref_mut() {
             node.val = 0;
@@ -36,8 +34,7 @@ impl Solution {
             let mut index = 0usize;
             for end in ends {
                 if end > index {
-                    let pair_sum: i64 =
-                        children[index..end].iter().map(|c| c.val as i64).sum();
+                    let pair_sum: i64 = children[index..end].iter().map(|c| c.val as i64).sum();
                     let new_value = child_sum - pair_sum;
                     for child in children[index..end].iter_mut() {
                         child.val = new_value as i32;

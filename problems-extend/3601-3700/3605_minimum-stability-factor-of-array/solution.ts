@@ -41,7 +41,8 @@ function minStable(nums: number[], maxC: number): number {
         return true;
     };
 
-    let lo = 0, hi = n;
+    let lo = 0,
+        hi = n;
     while (lo < hi) {
         const mid = (lo + hi) >> 1;
         if (feasible(mid)) hi = mid;

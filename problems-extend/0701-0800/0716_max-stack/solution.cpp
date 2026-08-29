@@ -32,9 +32,7 @@ class MaxStack {
         return value;
     }
 
-    int top() {
-        return cells[tail].value;
-    }
+    int top() { return cells[tail].value; }
 
     int peekMax() {
         while (!cells[heap.top().second].alive) {

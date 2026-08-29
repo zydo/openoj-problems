@@ -12,7 +12,12 @@ var highestRankedKItems = function (grid, pricing, start, k) {
     distance[start[0]][start[1]] = 0;
     const queue = [[start[0], start[1]]];
     const candidates = [];
-    const directions = [[-1, 0], [1, 0], [0, -1], [0, 1]];
+    const directions = [
+        [-1, 0],
+        [1, 0],
+        [0, -1],
+        [0, 1],
+    ];
     for (let head = 0; head < queue.length; head++) {
         const [row, column] = queue[head];
         const price = grid[row][column];

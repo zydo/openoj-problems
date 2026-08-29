@@ -7,7 +7,8 @@ class Solution {
             int current = n & 1;
             if (current && previous) {
                 ++pairs;
-                if (pairs > 1) return false;
+                if (pairs > 1)
+                    return false;
             }
             previous = current;
             n >>= 1;

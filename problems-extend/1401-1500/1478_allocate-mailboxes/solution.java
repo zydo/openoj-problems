@@ -18,7 +18,8 @@ class Solution {
 
     private int runCost(int i, int j) {
         int total = 0;
-        int lo = i, hi = j;
+        int lo = i,
+            hi = j;
         while (lo < hi) {
             total += houses[hi] - houses[lo];
             lo++;
@@ -36,12 +37,12 @@ class Solution {
             return memo[i][boxes];
         }
         if (boxes == 1) {
-            return memo[i][boxes] = runCost(i, houses.length - 1);
+            return (memo[i][boxes] = runCost(i, houses.length - 1));
         }
         int best = Integer.MAX_VALUE / 2;
         for (int j = i; j <= houses.length - boxes; j++) {
             best = Math.min(best, runCost(i, j) + dp(j + 1, boxes - 1));
         }
-        return memo[i][boxes] = best;
+        return (memo[i][boxes] = best);
     }
 }

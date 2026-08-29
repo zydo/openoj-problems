@@ -12,13 +12,15 @@ class Solution {
 
   private:
     TreeNode *find(TreeNode *node, int x) {
-        if (node == nullptr || node->val == x) return node;
+        if (node == nullptr || node->val == x)
+            return node;
         TreeNode *hit = find(node->left, x);
         return hit ? hit : find(node->right, x);
     }
 
     int count(TreeNode *node) {
-        if (node == nullptr) return 0;
+        if (node == nullptr)
+            return 0;
         return 1 + count(node->left) + count(node->right);
     }
 };

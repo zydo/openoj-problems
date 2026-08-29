@@ -7,7 +7,7 @@ class Solution {
         // only needs to track the longest run ending at letter c.
         array<int, 26> best{};
         int run = 0;
-        for (int i = 0; i < (int) s.size(); ++i) {
+        for (int i = 0; i < (int)s.size(); ++i) {
             // The run continues when s[i] is the alphabet successor of the
             // previous letter, wrapping z -> a; otherwise it restarts at 1.
             if (i > 0 && (s[i - 1] - 'a' + 1) % 26 == s[i] - 'a') {

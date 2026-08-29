@@ -1,8 +1,8 @@
 #include <vector>
 
 class Solution {
-public:
-    int numOfMinutes(int n, int headID, std::vector<int>& manager, std::vector<int>& informTime) {
+  public:
+    int numOfMinutes(int n, int headID, std::vector<int> &manager, std::vector<int> &informTime) {
         // arrival[i] = minutes until employee i starts spreading the news.
         std::vector<long long> arrival(n, -1);
         arrival[headID] = 0;

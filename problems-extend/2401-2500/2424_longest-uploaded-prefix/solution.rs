@@ -11,7 +11,11 @@ pub struct LUPrefix {
 
 impl LUPrefix {
     pub fn new(n: i32) -> Self {
-        LUPrefix { n, uploaded: vec![false; n as usize + 1], prefix: 0 }
+        LUPrefix {
+            n,
+            uploaded: vec![false; n as usize + 1],
+            prefix: 0,
+        }
     }
 
     pub fn upload(&mut self, video: i32) {

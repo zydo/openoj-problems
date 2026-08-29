@@ -31,7 +31,7 @@ reading session in which someone read a portion of a book;
 
 A book has **polarized opinions** when different readers disagree
 sharply about it: it has received at least one rating of 4 or higher and
-at least one rating of 2 or lower. Call a rating *extreme* when it is 2
+at least one rating of 2 or lower. Call a rating _extreme_ when it is 2
 or lower or 4 or higher — every other rating sits in the middle.
 
 Consider only books with at least 5 reading sessions. For such a book,

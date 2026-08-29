@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int shareCandies(vector<int>& candies, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    int shareCandies(vector<int> &candies, int k) { throw logic_error("TODO"); }
 };

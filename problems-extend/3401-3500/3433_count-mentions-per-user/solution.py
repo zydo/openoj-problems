@@ -8,9 +8,7 @@ class Solution:
         # before any message sharing its timestamp). Each user's return
         # time is the offline timestamp + 60; a message at time t sees
         # the user once that return time has passed.
-        ordered = sorted(
-            events, key=lambda e: (int(e[1]), 0 if e[0] == "OFFLINE" else 1)
-        )
+        ordered = sorted(events, key=lambda e: (int(e[1]), 0 if e[0] == "OFFLINE" else 1))
         mentions = [0] * numberOfUsers
         back_at = [0] * numberOfUsers
         for kind, raw_time, payload in ordered:

@@ -16,9 +16,9 @@ integer matrix part. In other words,
 - The matrices have identical dimensions.
 - If pattern[r][c] is a digit, then part[r][c] must be the same digit.
 - If pattern[r][c] is a letter x:
-  - For every pattern[i][j] == x, part[i][j] must be the same as part[r][c].
-  - For every pattern[i][j] != x, part[i][j] must be different than
-    part[r][c].
+    - For every pattern[i][j] == x, part[i][j] must be the same as part[r][c].
+    - For every pattern[i][j] != x, part[i][j] must be different than
+      part[r][c].
 
 Return an array of length 2 containing the row number and column number of
 the upper-left corner of a submatrix of board which matches pattern. If there

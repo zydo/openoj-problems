@@ -11,7 +11,8 @@ class Solution {
         int[][] g = new int[m][m];
         for (int i = 0; i < m; ++i) {
             for (int j = i + 1; j < m; ++j) {
-                int x = nums[i], y = nums[j];
+                int x = nums[i],
+                    y = nums[j];
                 while (y != 0) {
                     int t = x % y;
                     x = y;
@@ -26,11 +27,11 @@ class Solution {
             int k = Integer.bitCount(mask) / 2 + 1;
             int base = dp[mask];
             for (int i = 0; i < m; ++i) {
-                if ((mask >> i & 1) != 0) continue;
+                if (((mask >> i) & 1) != 0) continue;
                 for (int j = i + 1; j < m; ++j) {
-                    if ((mask >> j & 1) != 0) continue;
+                    if (((mask >> j) & 1) != 0) continue;
                     int cand = base + k * g[i][j];
-                    int next = mask | 1 << i | 1 << j;
+                    int next = mask | (1 << i) | (1 << j);
                     if (cand > dp[next]) dp[next] = cand;
                 }
             }

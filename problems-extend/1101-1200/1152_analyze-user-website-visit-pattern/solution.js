@@ -32,9 +32,7 @@ var mostVisitedPattern = function (username, timestamp, website) {
     for (const [key, users] of patternUsers) {
         const pattern = key.split(SEP);
         const score = users.size;
-        const better =
-            score > bestScore ||
-            (score === bestScore && (best.length === 0 || key < best.join(SEP)));
+        const better = score > bestScore || (score === bestScore && (best.length === 0 || key < best.join(SEP)));
         if (better) {
             bestScore = score;
             best = pattern;

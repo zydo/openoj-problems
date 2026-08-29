@@ -1,19 +1,44 @@
-WITH marked AS (
-  SELECT
-    id,
-    visit_date,
-    people,
-    LAG(id, 2) OVER (ORDER BY id) AS pid2,
-    LAG(people, 2) OVER (ORDER BY id) AS pp2,
-    LAG(id, 1) OVER (ORDER BY id) AS pid1,
-    LAG(people, 1) OVER (ORDER BY id) AS pp1,
-    LEAD(id, 1) OVER (ORDER BY id) AS nid1,
-    LEAD(people, 1) OVER (ORDER BY id) AS np1,
-    LEAD(id, 2) OVER (ORDER BY id) AS nid2,
-    LEAD(people, 2) OVER (ORDER BY id) AS np2
-  FROM
-    Stadium
-)
+WITH
+  marked AS (
+    SELECT
+      id,
+      visit_date,
+      people,
+      LAG(id, 2) OVER (
+        ORDER BY
+          id
+      ) AS pid2,
+      LAG(people, 2) OVER (
+        ORDER BY
+          id
+      ) AS pp2,
+      LAG(id, 1) OVER (
+        ORDER BY
+          id
+      ) AS pid1,
+      LAG(people, 1) OVER (
+        ORDER BY
+          id
+      ) AS pp1,
+      LEAD(id, 1) OVER (
+        ORDER BY
+          id
+      ) AS nid1,
+      LEAD(people, 1) OVER (
+        ORDER BY
+          id
+      ) AS np1,
+      LEAD(id, 2) OVER (
+        ORDER BY
+          id
+      ) AS nid2,
+      LEAD(people, 2) OVER (
+        ORDER BY
+          id
+      ) AS np2
+    FROM
+      Stadium
+  )
 SELECT
   id,
   visit_date,

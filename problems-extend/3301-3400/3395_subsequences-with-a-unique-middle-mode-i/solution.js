@@ -69,14 +69,7 @@ var subsequencesWithMiddleMode = function (nums) {
             }
         }
         const total =
-            cl * c2(mr) +
-            cl * r * mr +
-            cl * cr +
-            l * ml * r * mr +
-            l * ml * cr +
-            c2(ml) * cr +
-            l * TR +
-            r * TL;
+            cl * c2(mr) + cl * r * mr + cl * cr + l * ml * r * mr + l * ml * cr + c2(ml) * cr + l * TR + r * TL;
         ans = (ans + total) % MOD;
     }
     return ans;

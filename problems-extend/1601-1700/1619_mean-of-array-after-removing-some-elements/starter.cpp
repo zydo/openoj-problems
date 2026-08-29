@@ -1,6 +1,4 @@
 class Solution {
-public:
-    double trimMean(vector<int>& arr) {
-        throw logic_error("TODO");
-    }
+  public:
+    double trimMean(vector<int> &arr) { throw logic_error("TODO"); }
 };

@@ -19,9 +19,7 @@ var smallestBeautifulString = function (s, k) {
         const original = chars[i].charCodeAt(0);
         for (let code = original + 1; code < limit; code++) {
             const cand = String.fromCharCode(code);
-            const ok =
-                (i < 1 || chars[i - 1] !== cand) &&
-                (i < 2 || chars[i - 2] !== cand);
+            const ok = (i < 1 || chars[i - 1] !== cand) && (i < 2 || chars[i - 2] !== cand);
             if (ok) {
                 chars[i] = cand;
                 pivot = i;
@@ -35,9 +33,7 @@ var smallestBeautifulString = function (s, k) {
     for (let j = pivot + 1; j < chars.length; j++) {
         for (let code = 97; code < limit; code++) {
             const cand = String.fromCharCode(code);
-            const ok =
-                (j < 1 || chars[j - 1] !== cand) &&
-                (j < 2 || chars[j - 2] !== cand);
+            const ok = (j < 1 || chars[j - 1] !== cand) && (j < 2 || chars[j - 2] !== cand);
             if (ok) {
                 chars[j] = cand;
                 break;

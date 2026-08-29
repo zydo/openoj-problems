@@ -16,7 +16,8 @@ class Solution {
         }
         int total = 0;
         for (int code : nums) {
-            int d = code / 100, p = code / 10 % 10;
+            int d = code / 100,
+                p = (code / 10) % 10;
             int left = (d + 1) * 10 + 2 * p - 1;
             if (tree.containsKey(left) || tree.containsKey(left + 1)) {
                 continue;

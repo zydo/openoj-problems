@@ -1,11 +1,9 @@
-use std::rc::Rc;
 use std::cell::RefCell;
 use std::collections::HashMap;
+use std::rc::Rc;
 
 impl Solution {
-    pub fn copy_random_list(
-        head: Option<Rc<RefCell<RandomListNode>>>,
-    ) -> Option<Rc<RefCell<RandomListNode>>> {
+    pub fn copy_random_list(head: Option<Rc<RefCell<RandomListNode>>>) -> Option<Rc<RefCell<RandomListNode>>> {
         let clones: std::cell::RefCell<HashMap<usize, Rc<RefCell<RandomListNode>>>> =
             std::cell::RefCell::new(HashMap::new());
         // A raw-pointer key: two references to the same input node must

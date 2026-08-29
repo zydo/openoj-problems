@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<vector<int>> addPoly(vector<vector<int>>& poly1, vector<vector<int>>& poly2) {
+  public:
+    vector<vector<int>> addPoly(vector<vector<int>> &poly1, vector<vector<int>> &poly2) {
         vector<vector<int>> result;
         int i = 0, j = 0;
         while (i < (int)poly1.size() && j < (int)poly2.size()) {

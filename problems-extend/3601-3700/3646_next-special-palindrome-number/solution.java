@@ -9,9 +9,11 @@ class Solution {
         long answer = limit;
         for (int mask = 1; mask < 512; mask++) {
             int[] digits = new int[9];
-            int count = 0, odds = 0, total = 0;
+            int count = 0,
+                odds = 0,
+                total = 0;
             for (int d = 1; d <= 9; d++) {
-                if ((mask >> (d - 1) & 1) == 1) {
+                if (((mask >> (d - 1)) & 1) == 1) {
                     digits[count++] = d;
                     odds += d & 1;
                     total += d;

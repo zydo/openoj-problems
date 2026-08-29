@@ -7,9 +7,9 @@ var fallingSquares = function (positions) {
     // boundary, so each square's footprint is a run of compressed cells
     // and touching edges share no cell — exactly the brushing rule.
     // Heights stay well below 2^53: at most 1000 * 10^6 = 10^9.
-    const coords = Array.from(
-        new Set(positions.flatMap((square) => [square[0], square[0] + square[1]])),
-    ).sort((a, b) => a - b);
+    const coords = Array.from(new Set(positions.flatMap((square) => [square[0], square[0] + square[1]]))).sort(
+        (a, b) => a - b,
+    );
     const index = new Map(coords.map((x, i) => [x, i]));
     // heights[k] is the top height over the cell [coords[k], coords[k+1]).
     const heights = new Array(coords.length).fill(0);

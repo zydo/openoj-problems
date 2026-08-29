@@ -8,7 +8,8 @@ class Solution {
         int level = 1;
         while (!frontier.empty()) {
             long long total = 0;
-            for (TreeNode *node : frontier) total += node->val;
+            for (TreeNode *node : frontier)
+                total += node->val;
             // Strict > keeps the SMALLEST level on ties.
             if (total > best_sum) {
                 best_sum = total;
@@ -16,8 +17,10 @@ class Solution {
             }
             vector<TreeNode *> next;
             for (TreeNode *node : frontier) {
-                if (node->left != nullptr) next.push_back(node->left);
-                if (node->right != nullptr) next.push_back(node->right);
+                if (node->left != nullptr)
+                    next.push_back(node->left);
+                if (node->right != nullptr)
+                    next.push_back(node->right);
             }
             frontier = move(next);
             level++;

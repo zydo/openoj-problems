@@ -1,10 +1,8 @@
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
 
 impl Solution {
-    pub fn flatten(
-        head: Option<Rc<RefCell<MultiListNode>>>,
-    ) -> Option<Rc<RefCell<MultiListNode>>> {
+    pub fn flatten(head: Option<Rc<RefCell<MultiListNode>>>) -> Option<Rc<RefCell<MultiListNode>>> {
         let mut current = head.clone();
         while let Some(node) = current {
             let next = node.borrow().next.clone();

@@ -12,13 +12,13 @@ class Solution {
             if (corridor.charAt(i) == 'S') {
                 seats++;
                 if (seats > 2 && seats % 2 == 1) {
-                    ways = ways * (plants + 1) % MOD;
+                    ways = (ways * (plants + 1)) % MOD;
                 }
                 plants = 0;
             } else if (seats >= 2) {
                 plants++;
             }
         }
-        return (seats > 0 && seats % 2 == 0) ? (int) ways : 0;
+        return seats > 0 && seats % 2 == 0 ? (int) ways : 0;
     }
 }

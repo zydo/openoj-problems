@@ -7,7 +7,7 @@ decision at the top-left constrains the whole route — so no local greedy
 choice works. The key observation is the size of the state space: every
 cell value is at most `1023`, a 10-bit number, so the XOR of any path is
 also a value in `0..1023`. That is small enough to track, per cell, the
-*set* of XOR values that some valid path ending at that cell achieves.
+_set_ of XOR values that some valid path ending at that cell achieves.
 
 `reach[i][j][x]` is true exactly when a path from `(0, 0)` to `(i, j)` has
 XOR `x`. The base cell `(0, 0)` only reaches `grid[0][0]`. Every other cell

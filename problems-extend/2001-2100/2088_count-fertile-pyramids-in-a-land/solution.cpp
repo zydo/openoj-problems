@@ -1,11 +1,9 @@
 class Solution {
-public:
-    int countPyramids(vector<vector<int>>& grid) {
-        return countDirection(grid, false) + countDirection(grid, true);
-    }
+  public:
+    int countPyramids(vector<vector<int>> &grid) { return countDirection(grid, false) + countDirection(grid, true); }
 
-private:
-    int countDirection(const vector<vector<int>>& grid, bool forward) {
+  private:
+    int countDirection(const vector<vector<int>> &grid, bool forward) {
         const int rows = static_cast<int>(grid.size());
         const int columns = static_cast<int>(grid[0].size());
         vector<int> towardBase(columns);

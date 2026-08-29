@@ -21,8 +21,10 @@ class Solution {
             if (node->val != root->val) {
                 return false;
             }
-            if (node->left != nullptr) pending.push_back(node->left);
-            if (node->right != nullptr) pending.push_back(node->right);
+            if (node->left != nullptr)
+                pending.push_back(node->left);
+            if (node->right != nullptr)
+                pending.push_back(node->right);
         }
         return true;
     }

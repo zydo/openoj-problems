@@ -1,11 +1,8 @@
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
 
 impl Solution {
-    pub fn inorder_successor(
-        tree: Option<Rc<RefCell<NodeWithNext>>>,
-        node: i32,
-    ) -> Option<Rc<RefCell<NodeWithNext>>> {
+    pub fn inorder_successor(tree: Option<Rc<RefCell<NodeWithNext>>>, node: i32) -> Option<Rc<RefCell<NodeWithNext>>> {
         let mut target: Option<Rc<RefCell<NodeWithNext>>> = None;
         let mut stack: Vec<Rc<RefCell<NodeWithNext>>> = Vec::new();
         if let Some(root) = tree {

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int minimumBuckets(string hamsters) {
         int buckets = 0;
         for (int index = 0; index < static_cast<int>(hamsters.size()); index++) {

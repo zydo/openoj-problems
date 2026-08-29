@@ -15,13 +15,18 @@ class Solution {
         for (int i = n - 1; i >= 0; --i) {
             char a = s[i];
             int64_t cur = 0;
-            if (a == '*') cur = 9 * next1;
-            else if (a != '0') cur = next1;
+            if (a == '*')
+                cur = 9 * next1;
+            else if (a != '0')
+                cur = next1;
             if (i + 1 < n) {
                 char b = s[i + 1];
-                if (a == '*') cur += next2 * (b == '*' ? 15 : b <= '6' ? 2 : 1);
-                else if (a == '1') cur += next2 * (b == '*' ? 9 : 1);
-                else if (a == '2') cur += next2 * (b == '*' ? 6 : b <= '6' ? 1 : 0);
+                if (a == '*')
+                    cur += next2 * (b == '*' ? 15 : b <= '6' ? 2 : 1);
+                else if (a == '1')
+                    cur += next2 * (b == '*' ? 9 : 1);
+                else if (a == '2')
+                    cur += next2 * (b == '*' ? 6 : b <= '6' ? 1 : 0);
             }
             next2 = next1;
             next1 = cur % MOD;

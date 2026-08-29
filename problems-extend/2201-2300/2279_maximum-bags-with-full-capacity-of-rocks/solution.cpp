@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int maximumBags(vector<int>& capacity, vector<int>& rocks, int additionalRocks) {
+  public:
+    int maximumBags(vector<int> &capacity, vector<int> &rocks, int additionalRocks) {
         int n = capacity.size();
         vector<long long> needs(n);
         for (int i = 0; i < n; i++) {

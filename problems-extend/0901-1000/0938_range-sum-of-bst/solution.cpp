@@ -20,13 +20,17 @@ class Solution {
             TreeNode *node = stack.back();
             stack.pop_back();
             if (node->val < low) {
-                if (node->right != nullptr) stack.push_back(node->right);
+                if (node->right != nullptr)
+                    stack.push_back(node->right);
             } else if (node->val > high) {
-                if (node->left != nullptr) stack.push_back(node->left);
+                if (node->left != nullptr)
+                    stack.push_back(node->left);
             } else {
                 total += node->val;
-                if (node->left != nullptr) stack.push_back(node->left);
-                if (node->right != nullptr) stack.push_back(node->right);
+                if (node->left != nullptr)
+                    stack.push_back(node->left);
+                if (node->right != nullptr)
+                    stack.push_back(node->right);
             }
         }
         return total;

@@ -1,8 +1,7 @@
 class Solution {
   public:
-    vector<string> watchedVideosByFriends(
-        vector<vector<string>> &watchedVideos, vector<vector<int>> &friends, int id, int level
-    ) {
+    vector<string> watchedVideosByFriends(vector<vector<string>> &watchedVideos, vector<vector<int>> &friends, int id,
+                                          int level) {
         // BFS discovers nodes in increasing distance order, so the nodes whose
         // recorded distance equals `level` are exactly the level-k people.
         int n = (int)friends.size();

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxFreeTime(int eventTime, int k, vector<int>& startTime, vector<int>& endTime) {
+    int maxFreeTime(int eventTime, int k, vector<int> &startTime, vector<int> &endTime) {
         // A meeting that stays put pins its position, so one continuous free
         // block can only stretch across gaps whose separating meetings are
         // all rescheduled — at most k of them, hence at most k + 1

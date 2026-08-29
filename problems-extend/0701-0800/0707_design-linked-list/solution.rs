@@ -15,7 +15,10 @@ pub struct MyLinkedList {
 
 impl MyLinkedList {
     pub fn new() -> Self {
-        MyLinkedList { head: MyNode { val: 0, next: None }, size: 0 }
+        MyLinkedList {
+            head: MyNode { val: 0, next: None },
+            size: 0,
+        }
     }
 
     // The slot holding the cell at position index, for 0 <= index <= size:

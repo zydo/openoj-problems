@@ -11,7 +11,8 @@ class Solution {
         int commas = 1;
         while (lo <= n) {
             long long hi = lo * 1000 - 1;
-            if (hi > n) hi = n;
+            if (hi > n)
+                hi = n;
             total += (long long)commas * (hi - lo + 1);
             lo = hi + 1;
             commas++;

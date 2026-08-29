@@ -9,8 +9,7 @@ class Solution {
         // the tail. Sums reach ~k^2/2 with k up to 10^8, so long long.
         std::vector<int> ordered(nums);
         std::sort(ordered.begin(), ordered.end());
-        ordered.erase(std::unique(ordered.begin(), ordered.end()),
-                      ordered.end());
+        ordered.erase(std::unique(ordered.begin(), ordered.end()), ordered.end());
         long long total = 0;
         long long taken = 0;
         long long previous = 0;
@@ -18,8 +17,7 @@ class Solution {
             if (taken >= k) {
                 break;
             }
-            long long gap =
-                static_cast<long long>(value) - previous - 1;
+            long long gap = static_cast<long long>(value) - previous - 1;
             if (gap > 0) {
                 long long use = std::min(gap, static_cast<long long>(k) - taken);
                 total += use * (previous + 1) + use * (use - 1) / 2;

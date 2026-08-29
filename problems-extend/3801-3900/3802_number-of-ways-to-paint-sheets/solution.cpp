@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
   public:
-    long long numberOfWays(int n, vector<int>& limit) {
+    long long numberOfWays(int n, vector<int> &limit) {
         const long long MOD = 1'000'000'007;
         int m = (int)limit.size();
         vector<int> a = limit;
@@ -19,8 +19,10 @@ class Solution {
         points.push_back(n);
         points.push_back((n + 1) / 2);
         for (int cap : a) {
-            if (cap + 1 <= n) points.push_back(cap + 1);
-            if (n - cap >= 1) points.push_back(n - cap);
+            if (cap + 1 <= n)
+                points.push_back(cap + 1);
+            if (n - cap >= 1)
+                points.push_back(n - cap);
         }
         sort(points.begin(), points.end());
         points.erase(unique(points.begin(), points.end()), points.end());
@@ -32,8 +34,7 @@ class Solution {
             long long x = points[i];
             long long run = points[i + 1] - x;
             long long wider = max(x, (long long)n - x);
-            long long ways =
-                numGe(a, x) * numGe(a, n - x) - numGe(a, wider);
+            long long ways = numGe(a, x) * numGe(a, n - x) - numGe(a, wider);
             total = (total + ways % MOD * run) % MOD;
         }
         return total;
@@ -42,8 +43,7 @@ class Solution {
   private:
     // Colors whose limit reaches t: m minus the sorted caps below t. The
     // i == j diagonal of a split needs one cap to cover max(x, n - x).
-    long long numGe(vector<int>& a, long long t) {
-        return (long long)a.size() -
-               (lower_bound(a.begin(), a.end(), t) - a.begin());
+    long long numGe(vector<int> &a, long long t) {
+        return (long long)a.size() - (lower_bound(a.begin(), a.end(), t) - a.begin());
     }
 };

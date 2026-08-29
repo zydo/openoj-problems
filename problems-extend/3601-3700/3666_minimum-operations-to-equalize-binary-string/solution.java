@@ -46,7 +46,7 @@ class Solution {
             int low = cur + k - 2 * hi;
             int high = cur + k - 2 * lo;
             int p = (cur + k) & 1;
-            int[] nxt = (p == 0) ? nextEven : nextOdd;
+            int[] nxt = p == 0 ? nextEven : nextOdd;
             int d = dist[cur] + 1;
             int j = find(nxt, low >> 1);
             while (j < nxt.length - 1) {

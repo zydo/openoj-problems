@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    long long totalScore(int hp, vector<int>& damage, vector<int>& requirement) {
+    long long totalScore(int hp, vector<int> &damage, vector<int> &requirement) {
         // pref[i] = total damage of rooms 1..i (pref[0] = 0). Starting at
         // room a+1, room b (b >= a+1) pays a point iff
         // hp - (pref[b] - pref[a]) >= requirement[b], i.e.
@@ -35,9 +35,7 @@ class Solution {
             }
             return total;
         };
-        auto lower = [&](long long x) {
-            return (int)(lower_bound(values.begin(), values.end(), x) - values.begin());
-        };
+        auto lower = [&](long long x) { return (int)(lower_bound(values.begin(), values.end(), x) - values.begin()); };
         add(lower(pref[0]));
         long long failing = 0;
         for (int b = 1; b <= n; b++) {

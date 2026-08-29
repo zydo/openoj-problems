@@ -16,12 +16,9 @@ impl Solution {
             }
             out
         };
-        let bump = |s: Vec<i64>, d: i64| -> Vec<i64> {
-            s.into_iter().map(|v| if v > neg { v + d } else { v }).collect()
-        };
-        let merge = |a: Vec<i64>, b: &Vec<i64>| -> Vec<i64> {
-            a.into_iter().zip(b).map(|(x, y)| x.max(*y)).collect()
-        };
+        let bump =
+            |s: Vec<i64>, d: i64| -> Vec<i64> { s.into_iter().map(|v| if v > neg { v + d } else { v }).collect() };
+        let merge = |a: Vec<i64>, b: &Vec<i64>| -> Vec<i64> { a.into_iter().zip(b).map(|(x, y)| x.max(*y)).collect() };
 
         // Phase 0: closed[j] = j pairs done; op/om = one open pair started
         // with a +/- still owing its opposite sign.

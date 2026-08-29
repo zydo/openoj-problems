@@ -14,7 +14,7 @@ class Solution {
             int y = x;
             int r = 0;
             while (y > 0) {
-                r = r * 10 + y % 10;
+                r = r * 10 + (y % 10);
                 y /= 10;
             }
             int key = x - r;

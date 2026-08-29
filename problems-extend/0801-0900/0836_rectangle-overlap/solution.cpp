@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool isRectangleOverlap(vector<int>& rec1, vector<int>& rec2) {
+  public:
+    bool isRectangleOverlap(vector<int> &rec1, vector<int> &rec2) {
         // A positive-area intersection needs positive width and positive
         // height at the same time. The shared x-span runs from the larger
         // left edge to the smaller right edge, so it is positive exactly

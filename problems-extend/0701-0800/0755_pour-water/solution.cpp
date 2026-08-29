@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> pourWater(vector<int>& heights, int volume, int k) {
+  public:
+    vector<int> pourWater(vector<int> &heights, int volume, int k) {
         // One droplet at a time, on a surface whose levels are terrain plus
         // already-settled water. A droplet probes left first: walk as far as
         // the non-increasing levels allow; if the walk ends strictly below

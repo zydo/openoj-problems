@@ -3,8 +3,7 @@
 
 class Solution {
   public:
-    long long maxPoints(vector<int> &technique1, vector<int> &technique2,
-                        int k) {
+    long long maxPoints(vector<int> &technique1, vector<int> &technique2, int k) {
         // Start from the best-of-both baseline: each task pays its larger
         // value. Tasks where technique 1 already wins count toward the
         // quota for free; every task where technique 2 wins must pay back

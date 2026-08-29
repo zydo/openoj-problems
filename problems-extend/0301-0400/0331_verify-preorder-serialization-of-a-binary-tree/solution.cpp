@@ -12,14 +12,17 @@ class Solution {
         while (i < n) {
             // A token with no open slot has nowhere to live: the tree this
             // string describes was already finished earlier.
-            if (slots == 0) return false;
+            if (slots == 0)
+                return false;
             --slots;
             // Only the first character of a token matters: a valid token is
             // either a number or the one-character '#'.
             bool isNull = preorder[i] == '#';
-            while (i < n && preorder[i] != ',') ++i;
+            while (i < n && preorder[i] != ',')
+                ++i;
             ++i; // step past the comma (harmless past the last token)
-            if (!isNull) slots += 2;
+            if (!isNull)
+                slots += 2;
         }
         return slots == 0;
     }

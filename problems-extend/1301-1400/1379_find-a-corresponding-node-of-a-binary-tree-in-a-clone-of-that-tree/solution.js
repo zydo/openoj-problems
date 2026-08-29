@@ -9,14 +9,14 @@
  * @return {TreeNode}
  */
 var getTargetCopy = function (original, cloned, target) {
-  // Parallel preorder: identical shapes keep every pair aligned.
-  const stack = [[original, cloned]];
-  while (stack.length > 0) {
-    const [origNode, cloneNode] = stack.pop();
-    if (origNode === null) continue;
-    if (origNode.val === target) return cloneNode;
-    stack.push([origNode.left, cloneNode.left]);
-    stack.push([origNode.right, cloneNode.right]);
-  }
-  return null;
+    // Parallel preorder: identical shapes keep every pair aligned.
+    const stack = [[original, cloned]];
+    while (stack.length > 0) {
+        const [origNode, cloneNode] = stack.pop();
+        if (origNode === null) continue;
+        if (origNode.val === target) return cloneNode;
+        stack.push([origNode.left, cloneNode.left]);
+        stack.push([origNode.right, cloneNode.right]);
+    }
+    return null;
 };

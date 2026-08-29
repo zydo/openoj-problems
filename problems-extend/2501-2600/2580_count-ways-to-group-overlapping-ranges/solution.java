@@ -26,9 +26,9 @@ class Solution {
         long base = 2 % mod;
         for (long e = groups; e > 0; e >>= 1) {
             if ((e & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
         }
         return (int) result;
     }

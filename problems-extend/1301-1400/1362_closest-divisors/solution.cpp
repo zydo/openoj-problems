@@ -14,7 +14,7 @@ class Solution {
             while (m % d != 0) {
                 --d;
             }
-            return vector<int>{ (int)d, (int)(m / d) };
+            return vector<int>{(int)d, (int)(m / d)};
         };
         vector<int> a = closest((long long)num + 1);
         vector<int> b = closest((long long)num + 2);

@@ -27,7 +27,7 @@ func minValidStrings(words []string, target string) int {
 		}
 	}
 	steps := 0
-	curEnd := 0    // with `steps` pieces, target[:curEnd] is formable
+	curEnd := 0 // with `steps` pieces, target[:curEnd] is formable
 	farthest := 0
 	for i := 0; i < n; i++ {
 		r := i + reach[i]

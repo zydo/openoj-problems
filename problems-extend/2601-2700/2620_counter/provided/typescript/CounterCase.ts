@@ -19,7 +19,7 @@ class CounterCase {
             throw new Error("n must be an integer");
         }
         if (!Array.isArray(calls) || calls.some((call) => call !== "call")) {
-            throw new Error("calls must be a list of \"call\" entries");
+            throw new Error('calls must be a list of "call" entries');
         }
         this.n = n as number;
         this.calls = calls as string[];

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string largestGoodInteger(string num) {
-        throw logic_error("TODO");
-    }
+  public:
+    string largestGoodInteger(string num) { throw logic_error("TODO"); }
 };

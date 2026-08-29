@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minAbsoluteSumDiff(vector<int>& nums1, vector<int>& nums2) {
+    int minAbsoluteSumDiff(vector<int> &nums1, vector<int> &nums2) {
         // The initial sum is fixed; a replacement at index i can only cut
         // |nums1[i] - nums2[i]| down to the distance from nums2[i] to the
         // nearest value in nums1, so hunt that nearest value in a sorted

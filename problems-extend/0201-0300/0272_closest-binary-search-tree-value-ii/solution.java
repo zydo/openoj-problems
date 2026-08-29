@@ -32,8 +32,10 @@ class Solution {
         left--;
         int[] result = new int[k];
         for (int i = 0; i < k; ++i) {
-            if (right == values.size()
-                || (left >= 0 && Math.abs(values.get(left) - target) <= Math.abs(values.get(right) - target))) {
+            if (
+                right == values.size() ||
+                (left >= 0 && Math.abs(values.get(left) - target) <= Math.abs(values.get(right) - target))
+            ) {
                 result[i] = values.get(left--);
             } else {
                 result[i] = values.get(right++);

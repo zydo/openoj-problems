@@ -9,6 +9,6 @@ class Solution {
         for (int v : nums) {
             if (v > m) m = v;
         }
-        return k * m + k * (k - 1) / 2;
+        return k * m + (k * (k - 1)) / 2;
     }
 }

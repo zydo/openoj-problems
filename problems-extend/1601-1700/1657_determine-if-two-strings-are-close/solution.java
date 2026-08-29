@@ -7,7 +7,8 @@ class Solution {
         // they occur over the same letter set with the same multiset of
         // frequencies — tallied into 26-slot count arrays, presence compared
         // slot by slot, then both arrays sorted and compared as lists.
-        int[] counts1 = new int[26], counts2 = new int[26];
+        int[] counts1 = new int[26],
+            counts2 = new int[26];
         for (int i = 0; i < word1.length(); ++i) {
             counts1[word1.charAt(i) - 'a']++;
         }
@@ -15,7 +16,7 @@ class Solution {
             counts2[word2.charAt(i) - 'a']++;
         }
         for (int i = 0; i < 26; ++i) {
-            if ((counts1[i] > 0) != (counts2[i] > 0)) {
+            if (counts1[i] > 0 != counts2[i] > 0) {
                 return false;
             }
         }

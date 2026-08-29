@@ -29,7 +29,11 @@ impl Solution {
                 continue;
             }
             let d = if !enter_q.is_empty() && !exit_q.is_empty() {
-                if prev_dir != -1 { prev_dir } else { 1 }
+                if prev_dir != -1 {
+                    prev_dir
+                } else {
+                    1
+                }
             } else if !exit_q.is_empty() {
                 1
             } else {

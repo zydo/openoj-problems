@@ -15,11 +15,11 @@ class Solution {
             if (i == 0) break;
             int low = 1 << i;
             int high = (1 << (i + 1)) - 1;
-            int position = (i % 2 == 0) ? (cur - low) : (high - cur);
+            int position = i % 2 == 0 ? cur - low : high - cur;
             int parentPosition = position / 2;
             low = 1 << (i - 1);
             high = (1 << i) - 1;
-            cur = ((i - 1) % 2 == 0) ? (low + parentPosition) : (high - parentPosition);
+            cur = (i - 1) % 2 == 0 ? low + parentPosition : high - parentPosition;
         }
         return result;
     }

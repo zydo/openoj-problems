@@ -8,14 +8,11 @@ impl Solution {
         // collapse (30 -> "03" -> 3). A pair qualifies when either
         // side sits in the other's family; one swap may touch one
         // number only, so both directions are tested.
-        let families: Vec<HashSet<i32>> =
-            nums.iter().map(|&value| family(value)).collect();
+        let families: Vec<HashSet<i32>> = nums.iter().map(|&value| family(value)).collect();
         let mut pairs = 0;
         for i in 0..nums.len() {
             for j in i + 1..nums.len() {
-                if families[i].contains(&nums[j])
-                    || families[j].contains(&nums[i])
-                {
+                if families[i].contains(&nums[j]) || families[j].contains(&nums[i]) {
                     pairs += 1;
                 }
             }

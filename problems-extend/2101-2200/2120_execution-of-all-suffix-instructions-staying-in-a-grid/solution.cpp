@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> executeInstructions(int n, vector<int>& startPos, string s) {
+  public:
+    vector<int> executeInstructions(int n, vector<int> &startPos, string s) {
         vector<int> answer(s.size(), 0);
         for (int start = 0; start < static_cast<int>(s.size()); ++start) {
             int row = startPos[0];

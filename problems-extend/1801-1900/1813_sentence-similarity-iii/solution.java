@@ -14,8 +14,7 @@ class Solution {
             i++;
         }
         int j = 0;
-        while (j < w1.size() - i && j < w2.size() - i
-                && w1.get(w1.size() - 1 - j).equals(w2.get(w2.size() - 1 - j))) {
+        while (j < w1.size() - i && j < w2.size() - i && w1.get(w1.size() - 1 - j).equals(w2.get(w2.size() - 1 - j))) {
             j++;
         }
         return i + j >= Math.min(w1.size(), w2.size());

@@ -9,7 +9,7 @@ plus a map from each remainder to the first index it was seen at. When the
 current remainder already sits in the map at index `j` while the scan is at
 `index`, the elements between them sum to a multiple of `k`, and the answer
 turns on the one remaining rule: the span `index - j` must reach two. Keeping
-the *first* occurrence is what makes that test honest — every later repeat
+the _first_ occurrence is what makes that test honest — every later repeat
 spans less, so overwriting could only turn a good span bad, never the
 reverse. With more prefixes than remainders (`n + 1 > k`) some remainder must
 repeat by pigeonhole, but a repeat alone is not enough: adjacent equal

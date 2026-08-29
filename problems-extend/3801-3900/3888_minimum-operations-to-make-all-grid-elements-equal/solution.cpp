@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
   public:
-    long long minOperations(vector<vector<int>>& grid, int k) {
+    long long minOperations(vector<vector<int>> &grid, int k) {
         int m = (int)grid.size();
         int n = (int)grid[0].size();
         // Every operation count is an affine function A * T + B of the target
@@ -16,7 +16,7 @@ class Solution {
         bool hasFixed = false;
         long long fixedT = 0; // T fixed by a boundary cell
         bool hasLow = false;
-        long long lowT = 0;   // lower bound on T from X >= 0 (A == 1 cells)
+        long long lowT = 0; // lower bound on T from X >= 0 (A == 1 cells)
         long long sumA = 0;
         long long sumB = 0;
         for (int i = 0; i < m; ++i) {
@@ -79,7 +79,7 @@ class Solution {
     }
 
   private:
-    static long long rect(const vector<vector<long long>>& p, int r1, int r2, int c1, int c2) {
+    static long long rect(const vector<vector<long long>> &p, int r1, int r2, int c1, int c2) {
         if (r1 > r2 || c1 > c2) {
             return 0;
         }

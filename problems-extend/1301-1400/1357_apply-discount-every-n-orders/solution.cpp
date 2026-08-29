@@ -5,8 +5,7 @@
 // customer pays bill * (100 - discount) / 100.
 class Cashier {
   public:
-    Cashier(int n, int discount, std::vector<int> products, std::vector<int> prices)
-        : n_(n), discount_(discount) {
+    Cashier(int n, int discount, std::vector<int> products, std::vector<int> prices) : n_(n), discount_(discount) {
         for (std::size_t i = 0; i < products.size(); ++i) {
             prices_[products[i]] = prices[i];
         }

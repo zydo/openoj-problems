@@ -33,8 +33,16 @@ impl Solution {
             // Odd n pins the pattern by its majority value, and the true
             // mismatch count is the even member of each pair.
             (
-                if row_matches % 2 == 0 { row_matches } else { n - row_matches },
-                if col_matches % 2 == 0 { col_matches } else { n - col_matches },
+                if row_matches % 2 == 0 {
+                    row_matches
+                } else {
+                    n - row_matches
+                },
+                if col_matches % 2 == 0 {
+                    col_matches
+                } else {
+                    n - col_matches
+                },
             )
         };
         (row_swaps + col_swaps) / 2

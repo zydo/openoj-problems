@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int closestFair(int n) {
         // A fair integer needs an even digit count with half of the digits
         // odd. When the digit count is odd no fair integer exists with that
@@ -25,7 +25,7 @@ public:
         return stoi("1" + string(half, '0') + string(half - 1, '1'));
     }
 
-private:
+  private:
     static bool isFair(long long x) {
         int odd = 0;
         int length = 0;

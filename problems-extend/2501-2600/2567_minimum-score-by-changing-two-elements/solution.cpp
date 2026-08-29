@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimizeSum(vector<int>& nums) {
+    int minimizeSum(vector<int> &nums) {
         // The two changed slots can always be set equal to each other,
         // which pins the low score at 0 regardless of anything else,
         // so only the span of what remains matters. After sorting
@@ -12,7 +12,6 @@ class Solution {
         // value for free.
         sort(nums.begin(), nums.end());
         int n = nums.size();
-        return min(min(nums[n - 1] - nums[2], nums[n - 2] - nums[1]),
-                   nums[n - 3] - nums[0]);
+        return min(min(nums[n - 1] - nums[2], nums[n - 2] - nums[1]), nums[n - 3] - nums[0]);
     }
 };

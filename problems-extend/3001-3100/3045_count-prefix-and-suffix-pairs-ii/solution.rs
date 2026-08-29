@@ -13,9 +13,7 @@ impl Solution {
             let size = bytes.len();
             let mut node: usize = 0;
             for j in 0..size {
-                let key = (node as u32) * 676
-                    + u32::from(bytes[j] - b'a') * 26
-                    + u32::from(bytes[size - 1 - j] - b'a');
+                let key = (node as u32) * 676 + u32::from(bytes[j] - b'a') * 26 + u32::from(bytes[size - 1 - j] - b'a');
                 let next = match edges.get(&key) {
                     Some(&next) => next,
                     None => {

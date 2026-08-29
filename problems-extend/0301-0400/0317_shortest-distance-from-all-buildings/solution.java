@@ -4,7 +4,8 @@ import java.util.Arrays;
 class Solution {
 
     public int shortestDistance(int[][] grid) {
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length,
+            n = grid[0].length;
         // One BFS per building, not per empty cell: each search floods the
         // empty region once, and every empty cell accumulates its distance
         // from that building plus a count of buildings that reached it.
@@ -31,9 +32,11 @@ class Solution {
                 queue.add(new int[] { br, bc });
                 while (!queue.isEmpty()) {
                     int[] cell = queue.poll();
-                    int r = cell[0], c = cell[1];
+                    int r = cell[0],
+                        c = cell[1];
                     for (int k = 0; k < 4; ++k) {
-                        int nr = r + rowStep[k], nc = c + colStep[k];
+                        int nr = r + rowStep[k],
+                            nc = c + colStep[k];
                         if (nr < 0 || nr >= m || nc < 0 || nc >= n || grid[nr][nc] != 0 || step[nr][nc] >= 0) {
                             continue;
                         }

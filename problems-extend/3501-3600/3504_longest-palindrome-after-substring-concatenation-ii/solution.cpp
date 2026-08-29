@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int longestPalindrome(string s, string t) {
         int n = s.size(), m = t.size();
         // p[i] = longest palindrome starting at s[i]; a rolling interval
@@ -36,10 +36,12 @@ public:
         }
         int best = 0;
         for (int v : p) {
-            if (v > best) best = v;
+            if (v > best)
+                best = v;
         }
         for (int v : q) {
-            if (v > best) best = v;
+            if (v > best)
+                best = v;
         }
         // dp[i][j] = longest palindrome starting with s[i] and ending with
         // t[j]. Each cell needs only dp[i+1][j-1], its neighbour on the

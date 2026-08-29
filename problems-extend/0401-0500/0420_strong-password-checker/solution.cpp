@@ -1,7 +1,7 @@
 class Solution {
   public:
     int strongPasswordChecker(string password) {
-        int n = (int) password.size();
+        int n = (int)password.size();
         bool hasLower = false, hasUpper = false, hasDigit = false;
         for (char c : password) {
             hasLower = hasLower || (c >= 'a' && c <= 'z');

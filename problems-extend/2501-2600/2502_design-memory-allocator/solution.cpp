@@ -12,9 +12,11 @@ class Allocator {
         while (i < (int)units_.size()) {
             if (units_[i] == 0) {
                 int j = i;
-                while (j < (int)units_.size() && units_[j] == 0) ++j;
+                while (j < (int)units_.size() && units_[j] == 0)
+                    ++j;
                 if (j - i >= size) {
-                    for (int k = i; k < i + size; ++k) units_[k] = mID;
+                    for (int k = i; k < i + size; ++k)
+                        units_[k] = mID;
                     return i;
                 }
                 i = j;

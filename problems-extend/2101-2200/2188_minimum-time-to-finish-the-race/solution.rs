@@ -1,9 +1,5 @@
 impl Solution {
-    pub fn minimum_finish_time(
-        tires: Vec<Vec<i32>>,
-        change_time: i32,
-        num_laps: i32,
-    ) -> i64 {
+    pub fn minimum_finish_time(tires: Vec<Vec<i32>>, change_time: i32, num_laps: i32) -> i64 {
         // Precompute best[x]: the cheapest time for x consecutive laps on
         // a single tire. A run never helps once its next lap costs more
         // than resetting to the fastest first lap; ratios are >= 2 so the

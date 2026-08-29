@@ -31,8 +31,7 @@ impl ArrayReader {
             panic!("ArrayReader query budget exhausted");
         }
         self.budget -= 1;
-        let ones =
-            self.nums[a as usize] + self.nums[b as usize] + self.nums[c as usize] + self.nums[d as usize];
+        let ones = self.nums[a as usize] + self.nums[b as usize] + self.nums[c as usize] + self.nums[d as usize];
         if ones == 0 || ones == 4 {
             4
         } else if ones == 1 || ones == 3 {

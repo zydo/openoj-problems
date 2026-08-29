@@ -13,11 +13,13 @@ class Solution {
             if (c == '+') {
                 ++run;
             } else {
-                if (run > 0) runs.push_back(run);
+                if (run > 0)
+                    runs.push_back(run);
                 run = 0;
             }
         }
-        if (run > 0) runs.push_back(run);
+        if (run > 0)
+            runs.push_back(run);
         return canWin(runs, memo);
     }
 
@@ -25,11 +27,13 @@ class Solution {
     bool canWin(vector<int> runs, map<vector<int>, bool> &memo) {
         vector<int> live;
         for (int length : runs) {
-            if (length >= 2) live.push_back(length);
+            if (length >= 2)
+                live.push_back(length);
         }
         sort(live.begin(), live.end());
         auto cached = memo.find(live);
-        if (cached != memo.end()) return cached->second;
+        if (cached != memo.end())
+            return cached->second;
         bool winner = false;
         for (size_t index = 0; index < live.size() && !winner; ++index) {
             int length = live[index];
@@ -39,9 +43,12 @@ class Solution {
             // the mirror split makes the same successor, so half the range.
             for (int i = 0; i <= (length - 2) / 2 && !winner; ++i) {
                 vector<int> next = others;
-                if (i >= 2) next.push_back(i);
-                if (length - 2 - i >= 2) next.push_back(length - 2 - i);
-                if (!canWin(next, memo)) winner = true;
+                if (i >= 2)
+                    next.push_back(i);
+                if (length - 2 - i >= 2)
+                    next.push_back(length - 2 - i);
+                if (!canWin(next, memo))
+                    winner = true;
             }
         }
         memo[live] = winner;

@@ -5,11 +5,7 @@ impl Solution {
         // reward1[i] - reward2[i], so the k swaps with the largest gains are
         // optimal — gains may be negative when forced, and taking the top k
         // regardless is exactly what "exactly k" demands.
-        let mut gains: Vec<i64> = reward1
-            .iter()
-            .zip(&reward2)
-            .map(|(a, b)| (a - b) as i64)
-            .collect();
+        let mut gains: Vec<i64> = reward1.iter().zip(&reward2).map(|(a, b)| (a - b) as i64).collect();
         let total: i64 = reward2.iter().map(|&v| v as i64).sum();
         gains.sort_unstable_by(|a, b| b.cmp(a));
         let taken: i64 = gains.iter().take(k as usize).sum();

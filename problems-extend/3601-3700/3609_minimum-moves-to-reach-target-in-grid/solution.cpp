@@ -6,7 +6,8 @@ class Solution {
     int minMoves(int sx, int sy, int tx, int ty) {
         int moves = 0;
         while (tx != sx || ty != sy) {
-            if (tx < sx || ty < sy) return -1;
+            if (tx < sx || ty < sy)
+                return -1;
             if (tx == ty) {
                 // Equal coordinates can only be reached from an axis; step
                 // onto the axis the source lies on.
@@ -19,14 +20,16 @@ class Solution {
                 }
             } else if (tx > ty) {
                 if (tx / 2 >= ty) {
-                    if (tx % 2) return -1;
+                    if (tx % 2)
+                        return -1;
                     tx /= 2;
                 } else {
                     tx -= ty;
                 }
             } else {
                 if (ty / 2 >= tx) {
-                    if (ty % 2) return -1;
+                    if (ty % 2)
+                        return -1;
                     ty /= 2;
                 } else {
                     ty -= tx;

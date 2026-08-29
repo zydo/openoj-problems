@@ -13,15 +13,14 @@ function numberOfRoutes(grid: string[], d: number): number {
         // same-row move is |dc| <= d (dr = 0).
         const pref: bigint[] = new Array(m + 1).fill(0n);
         for (let v = 0; v < m; ++v) {
-            pref[v + 1] =
-                grid[row][v] === "." ? (pref[v] + upValues[v]) % MOD : pref[v];
+            pref[v + 1] = grid[row][v] === "." ? (pref[v] + upValues[v]) % MOD : pref[v];
         }
         const out: bigint[] = new Array(m).fill(0n);
         for (let c = 0; c < m; ++c) {
             if (grid[row][c] !== ".") continue;
             const lo = Math.max(0, c - d);
             const hi = Math.min(m - 1, c + d);
-            out[c] = ((pref[hi + 1] - pref[lo]) - upValues[c]) % MOD;
+            out[c] = (pref[hi + 1] - pref[lo] - upValues[c]) % MOD;
             if (out[c] < 0n) out[c] += MOD;
         }
         return out;
@@ -36,10 +35,7 @@ function numberOfRoutes(grid: string[], d: number): number {
         // row r's window around column c.
         const pref: bigint[] = new Array(m + 1).fill(0n);
         for (let v = 0; v < m; ++v) {
-            pref[v + 1] =
-                grid[r + 1][v] === "."
-                    ? (pref[v] + up[v] + same_[v]) % MOD
-                    : pref[v];
+            pref[v + 1] = grid[r + 1][v] === "." ? (pref[v] + up[v] + same_[v]) % MOD : pref[v];
         }
         const newUp: bigint[] = new Array(m).fill(0n);
         for (let c = 0; c < m; ++c) {

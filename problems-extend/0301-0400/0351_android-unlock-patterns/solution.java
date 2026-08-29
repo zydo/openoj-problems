@@ -15,9 +15,11 @@ class Solution {
         // relation while permuting corners among themselves and edge
         // midpoints among themselves, so three searches (corner 1, edge 2,
         // center 5) cover all nine starting dots.
-        return 4 * walk(1 | 1 << 1, 1, 1, m, n, skip)
-                + 4 * walk(1 | 1 << 2, 2, 1, m, n, skip)
-                + walk(1 | 1 << 5, 5, 1, m, n, skip);
+        return (
+            4 * walk(1 | (1 << 1), 1, 1, m, n, skip) +
+            4 * walk(1 | (1 << 2), 2, 1, m, n, skip) +
+            walk(1 | (1 << 5), 5, 1, m, n, skip)
+        );
     }
 
     // The prefix built so far already counts as one pattern once it holds m
@@ -29,8 +31,8 @@ class Solution {
             // `used` always has bit 0 set: a phantom dot standing for "no
             // dot in between", so skip 0 passes the same already-visited
             // check as every real blocking dot.
-            if ((used >> next & 1) == 0 && (used >> skip[last][next] & 1) == 1) {
-                total += walk(used | 1 << next, next, length + 1, m, n, skip);
+            if (((used >> next) & 1) == 0 && ((used >> skip[last][next]) & 1) == 1) {
+                total += walk(used | (1 << next), next, length + 1, m, n, skip);
             }
         }
         return total;

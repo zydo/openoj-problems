@@ -9,22 +9,23 @@ class Solution {
         // and the first terminal reached is exactly where the word ends.
         Map<String, Object> root = new java.util.HashMap<>();
         String[][] words = {
-                {"zero", "0"},
-                {"one", "1"},
-                {"two", "2"},
-                {"three", "3"},
-                {"four", "4"},
-                {"five", "5"},
-                {"six", "6"},
-                {"seven", "7"},
-                {"eight", "8"},
-                {"nine", "9"},
+            { "zero", "0" },
+            { "one", "1" },
+            { "two", "2" },
+            { "three", "3" },
+            { "four", "4" },
+            { "five", "5" },
+            { "six", "6" },
+            { "seven", "7" },
+            { "eight", "8" },
+            { "nine", "9" },
         };
         for (String[] entry : words) {
             Map<String, Object> node = root;
             for (char ch : entry[0].toCharArray()) {
-                node = (Map<String, Object>) node.computeIfAbsent(
-                        String.valueOf(ch), key -> new java.util.HashMap<String, Object>());
+                node = (Map<String, Object>) node.computeIfAbsent(String.valueOf(ch), key ->
+                    new java.util.HashMap<String, Object>()
+                );
             }
             node.put("$", entry[1]);
         }

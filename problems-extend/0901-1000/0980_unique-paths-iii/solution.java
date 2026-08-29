@@ -34,7 +34,7 @@ class Solution {
             return mask == full ? 1 : 0;
         }
         int paths = 0;
-        int[][] steps = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        int[][] steps = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
         for (int[] step : steps) {
             int nr = r + step[0];
             int nc = c + step[1];

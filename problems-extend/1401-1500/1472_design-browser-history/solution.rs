@@ -5,7 +5,10 @@ pub struct BrowserHistory {
 
 impl BrowserHistory {
     pub fn new(homepage: String) -> Self {
-        BrowserHistory { history: vec![homepage], cur: 0 }
+        BrowserHistory {
+            history: vec![homepage],
+            cur: 0,
+        }
     }
 
     pub fn visit(&mut self, url: String) {

@@ -1,8 +1,10 @@
 class Solution {
 
     public int compareVersion(String version1, String version2) {
-        int n = version1.length(), m = version2.length();
-        int i = 0, j = 0;
+        int n = version1.length(),
+            m = version2.length();
+        int i = 0,
+            j = 0;
         while (i < n || j < m) {
             // Read the revision at each pointer as a number, so leading zeros
             // vanish into the value instead of poisoning the comparison.

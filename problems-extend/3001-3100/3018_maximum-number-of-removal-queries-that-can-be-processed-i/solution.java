@@ -1,7 +1,8 @@
 class Solution {
 
     public int maximumProcessableQueries(int[] nums, int[] queries) {
-        int n = nums.length, m = queries.length;
+        int n = nums.length,
+            m = queries.length;
         // dp[l][r]: most queries processable while nums[l:r] all survive. The
         // window starts as the whole array and shrinks one index per step; a
         // leaving end either serves the next query in order or was dropped

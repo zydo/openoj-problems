@@ -70,10 +70,8 @@ class Solution:
                 else:
                     b2 = [0] * m
                     b0 = [0] * m
-                cur2 = [1 + (x if x > y else y) if g == 2 else 0
-                        for g, x, y in zip(row, a2, b2)]
-                cur0 = [1 + (x if x > y else y) if g == 0 else 0
-                        for g, x, y in zip(row, a0, b0)]
+                cur2 = [1 + (x if x > y else y) if g == 2 else 0 for g, x, y in zip(row, a2, b2)]
+                cur0 = [1 + (x if x > y else y) if g == 0 else 0 for g, x, y in zip(row, a0, b0)]
                 m2_rows[r] = cur2
                 m0_rows[r] = cur0
                 prev2, prev0 = cur2, cur0

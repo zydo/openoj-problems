@@ -8,7 +8,7 @@ class Solution {
         // move from the previous key.
         int[] row = new int[26];
         int[] col = new int[26];
-        String[] rows = {"qwertyuiop", "asdfghjkl", "zxcvbnm"};
+        String[] rows = { "qwertyuiop", "asdfghjkl", "zxcvbnm" };
         for (int r = 0; r < rows.length; r++) {
             for (int c = 0; c < rows[r].length(); c++) {
                 row[rows[r].charAt(c) - 'a'] = r;

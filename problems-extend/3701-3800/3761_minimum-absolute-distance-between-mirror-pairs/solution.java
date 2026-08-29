@@ -21,7 +21,7 @@ class Solution {
             // zeros drop out on their own (120 -> 21, 100 -> 1).
             int reversedValue = 0;
             for (int value = num; value > 0; value /= 10) {
-                reversedValue = reversedValue * 10 + value % 10;
+                reversedValue = reversedValue * 10 + (value % 10);
             }
             latest.put(reversedValue, index);
         }

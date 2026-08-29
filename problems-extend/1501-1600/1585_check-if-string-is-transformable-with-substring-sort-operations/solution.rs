@@ -9,7 +9,10 @@ struct FenwickTree {
 
 impl FenwickTree {
     fn new(size: usize) -> Self {
-        FenwickTree { size, tree: vec![0; size + 1] }
+        FenwickTree {
+            size,
+            tree: vec![0; size + 1],
+        }
     }
 
     fn add(&mut self, index: usize, delta: i32) {

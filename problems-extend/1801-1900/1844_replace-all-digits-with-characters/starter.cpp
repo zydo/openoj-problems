@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string replaceDigits(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    string replaceDigits(string s) { throw logic_error("TODO"); }
 };

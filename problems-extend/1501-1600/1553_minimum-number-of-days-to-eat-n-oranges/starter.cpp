@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int minDays(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int minDays(int n) { throw logic_error("TODO"); }
 };

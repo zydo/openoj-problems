@@ -9,7 +9,11 @@ pub struct MyCircularQueue {
 
 impl MyCircularQueue {
     pub fn new(k: i32) -> Self {
-        MyCircularQueue { buf: vec![0; k as usize], head: 0, count: 0 }
+        MyCircularQueue {
+            buf: vec![0; k as usize],
+            head: 0,
+            count: 0,
+        }
     }
 
     pub fn enQueue(&mut self, value: i32) -> bool {

@@ -17,9 +17,7 @@ impl Solution {
             let formable = i == target.len();
             // Longer wins; equal lengths go to the lexicographically smaller
             // word. The empty seed makes the no-answer case return "".
-            if formable
-                && (word.len() > best.len() || (word.len() == best.len() && word.as_str() < best))
-            {
+            if formable && (word.len() > best.len() || (word.len() == best.len() && word.as_str() < best)) {
                 best = word;
             }
         }

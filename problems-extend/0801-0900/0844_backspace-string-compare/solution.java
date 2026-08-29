@@ -5,7 +5,8 @@ class Solution {
         // character to its left that survives, and backspacing an empty text
         // leaves it empty. Walk both strings from the end, skip everything
         // that gets deleted, and compare the survivors pairwise.
-        int i = s.length() - 1, j = t.length() - 1;
+        int i = s.length() - 1,
+            j = t.length() - 1;
         while (true) {
             i = settle(s, i);
             j = settle(t, j);

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int sumDivisibleByK(vector<int>& nums, int k) {
+    int sumDivisibleByK(vector<int> &nums, int k) {
         // Qualification is decided per value: drop every element into the
         // bucket of its own value; values are bounded by 100, so the value
         // itself indexes a fixed array of counters.

@@ -1,7 +1,6 @@
 class Solution {
-public:
-    int minNumberOfHours(int initialEnergy, int initialExperience,
-                         vector<int>& energy, vector<int>& experience) {
+  public:
+    int minNumberOfHours(int initialEnergy, int initialExperience, vector<int> &energy, vector<int> &experience) {
         // Energy only ever drains, so one shortfall computation covers
         // every fight; experience grows after each win, so top up just
         // enough whenever the next opponent is not strictly weaker.

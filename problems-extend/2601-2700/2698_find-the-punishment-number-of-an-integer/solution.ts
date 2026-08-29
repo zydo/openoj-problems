@@ -6,7 +6,7 @@ function punishmentNumber(n: number): number {
         const digits = String(i * i);
         const length = digits.length;
         let found = false;
-        for (let mask = 0; mask < (1 << (length - 1)); mask++) {
+        for (let mask = 0; mask < 1 << (length - 1); mask++) {
             let sum = 0;
             let cur = 0;
             let pruned = false;

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int maximumRows(vector<vector<int>> &matrix, int numSelect) {
         // Encode rows as bitmasks; a set of selected columns covers a
         // row exactly when the row's mask is a subset of it. Enumerate

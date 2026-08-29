@@ -6,7 +6,7 @@ Given an array of string `words`, return all strings in `words` that is a
 substring of another word. You can return the answer in any order.
 
 A substring is a contiguous sequence of characters within a string. Only
-a string that appears inside a *different* word of the array counts; a
+a string that appears inside a _different_ word of the array counts; a
 word is never its own witness.
 
 ### Example 1

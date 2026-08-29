@@ -46,8 +46,8 @@ class Solution {
             long r = cntR[x];
             long ml = m - l;
             long mr = n - 1 - m - r;
-            long cl = l * (l - 1) / 2;
-            long cr = r * (r - 1) / 2;
+            long cl = (l * (l - 1)) / 2;
+            long cr = (r * (r - 1)) / 2;
             // pair sums over non-x values only: x contributes cl / cr itself
             long SxL = SL - cl;
             long SxR = SR - cr;
@@ -69,14 +69,14 @@ class Solution {
                     TL += ru * (c2(ml - cL) - SxL + c2(cL));
                 }
             }
-            long total = cl * c2(mr) + cl * r * mr + cl * cr + l * ml * r * mr + l * ml * cr
-                    + c2(ml) * cr + l * TR + r * TL;
+            long total =
+                cl * c2(mr) + cl * r * mr + cl * cr + l * ml * r * mr + l * ml * cr + c2(ml) * cr + l * TR + r * TL;
             ans = (ans + total) % MOD;
         }
         return (int) ans;
     }
 
     private static long c2(long t) {
-        return t * (t - 1) / 2;
+        return (t * (t - 1)) / 2;
     }
 }

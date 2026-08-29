@@ -2,7 +2,7 @@
 #include <vector>
 
 class Solution {
-public:
+  public:
     int nonSpecialCount(int l, int r) {
         // A number is special exactly when it is the square of a prime:
         // p*p has precisely the proper divisors 1 and p, any other number

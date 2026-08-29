@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> shortestDistanceColor(vector<int>& colors, vector<vector<int>>& queries) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> shortestDistanceColor(vector<int> &colors, vector<vector<int>> &queries) { throw logic_error("TODO"); }
 };

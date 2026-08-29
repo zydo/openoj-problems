@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<long long> avoidFlood(vector<long long>& rains) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<long long> avoidFlood(vector<long long> &rains) { throw logic_error("TODO"); }
 };

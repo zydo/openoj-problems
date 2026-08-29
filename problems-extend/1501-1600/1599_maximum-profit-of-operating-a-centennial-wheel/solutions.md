@@ -15,7 +15,7 @@ eventually be carried down.
 
 After each rotation, the running profit is `boarded * boardingCost -
 rotations * runningCost`. The candidate answer is tracked with a
-best-so-far value that starts at `0` and is only replaced on a *strict*
+best-so-far value that starts at `0` and is only replaced on a _strict_
 improvement — a rotation whose profit merely ties the current best never
 overwrites it. Because rotations are processed in increasing order, this
 means ties always resolve to the earliest rotation that reached the

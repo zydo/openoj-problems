@@ -20,7 +20,9 @@ fn is_mirror(a: Option<&TreeNode>, b: Option<&TreeNode>) -> bool {
         (None, None) => true,
         (None, Some(_)) | (Some(_), None) => false,
         (Some(a), Some(b)) => {
-            a.val == b.val && is_mirror(a.left.as_deref(), b.right.as_deref()) && is_mirror(a.right.as_deref(), b.left.as_deref())
+            a.val == b.val
+                && is_mirror(a.left.as_deref(), b.right.as_deref())
+                && is_mirror(a.right.as_deref(), b.left.as_deref())
         }
     }
 }

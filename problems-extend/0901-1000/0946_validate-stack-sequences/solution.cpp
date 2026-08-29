@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool validateStackSequences(vector<int>& pushed, vector<int>& popped) {
+  public:
+    bool validateStackSequences(vector<int> &pushed, vector<int> &popped) {
         // The stack machine has almost no choices. While the top of the
         // working stack differs from the next value popped still wants, the
         // wanted value is either not pushed yet — pushing is the only way it

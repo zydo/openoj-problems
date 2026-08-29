@@ -6,8 +6,7 @@
 // counter row stays unused so the player ids address theirs directly.
 class TicTacToe {
   public:
-    TicTacToe(int n)
-        : n(n), rows(3, vector<int>(n)), cols(3, vector<int>(n)), diagonal(3), antiDiagonal(3) {}
+    TicTacToe(int n) : n(n), rows(3, vector<int>(n)), cols(3, vector<int>(n)), diagonal(3), antiDiagonal(3) {}
 
     int move(int row, int col, int player) {
         // Only the lines through the played square can complete on this
@@ -20,8 +19,7 @@ class TicTacToe {
         if (row + col == n - 1) {
             ++antiDiagonal[player];
         }
-        if (rows[player][row] == n || cols[player][col] == n || diagonal[player] == n
-            || antiDiagonal[player] == n) {
+        if (rows[player][row] == n || cols[player][col] == n || diagonal[player] == n || antiDiagonal[player] == n) {
             return player;
         }
         return 0;

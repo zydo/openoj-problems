@@ -7,11 +7,7 @@ impl Solution {
     // maximum of capacities answers "best partner" in constant time per
     // machine.
     pub fn max_capacity(costs: Vec<i32>, capacity: Vec<i32>, budget: i32) -> i32 {
-        let mut machines: Vec<(i32, i32)> = costs
-            .iter()
-            .zip(capacity.iter())
-            .map(|(&c, &p)| (c, p))
-            .collect();
+        let mut machines: Vec<(i32, i32)> = costs.iter().zip(capacity.iter()).map(|(&c, &p)| (c, p)).collect();
         machines.sort_unstable();
         let n = machines.len();
         let sorted_costs: Vec<i32> = machines.iter().map(|&(c, _)| c).collect();

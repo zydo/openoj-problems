@@ -9,7 +9,7 @@ per-user/per-page count.
 
 The first problem is that `Friendship` stores each undirected friendship
 as a single row, so user `1`'s friends are the `user2_id` values of rows
-where `user1_id = 1` *and* the `user1_id` values of rows where
+where `user1_id = 1` _and_ the `user1_id` values of rows where
 `user2_id = 1`. A subquery therefore emits both orientations — every
 `(user1_id, user2_id)` row plus its mirror — so each user's row lists
 one friend. The mirror rows are deduplicated by `UNION`, which also

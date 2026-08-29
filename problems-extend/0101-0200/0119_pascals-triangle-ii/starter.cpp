@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> getRow(int rowIndex) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> getRow(int rowIndex) { throw logic_error("TODO"); }
 };

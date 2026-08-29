@@ -59,8 +59,15 @@ class Solution:
                     cL = cntL[u]
                     t = ml - cL
                     T_L += ru * (t * (t - 1) // 2 - SL + cL * (cL - 1) // 2)
-            total = (cl * (mr * (mr - 1) // 2) + cl * r * mr + cl * cr
-                     + l * ml * r * mr + l * ml * cr
-                     + (ml * (ml - 1) // 2) * cr + l * T_R + r * T_L)
+            total = (
+                cl * (mr * (mr - 1) // 2)
+                + cl * r * mr
+                + cl * cr
+                + l * ml * r * mr
+                + l * ml * cr
+                + (ml * (ml - 1) // 2) * cr
+                + l * T_R
+                + r * T_L
+            )
             ans = (ans + total) % MOD
         return ans

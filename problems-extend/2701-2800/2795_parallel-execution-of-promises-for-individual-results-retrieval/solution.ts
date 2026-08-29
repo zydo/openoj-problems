@@ -5,13 +5,9 @@
 // index, so settlement order can never shuffle them, and the pending
 // counter resolves the aggregate exactly when the last promise settles —
 // an empty input short-circuits to [] before anything is awaited.
-type SettledObject =
-    | { status: "fulfilled"; value: unknown }
-    | { status: "rejected"; reason: unknown };
+type SettledObject = { status: "fulfilled"; value: unknown } | { status: "rejected"; reason: unknown };
 
-function promiseAllSettled(
-    functions: (() => Promise<unknown>)[],
-): Promise<SettledObject[]> {
+function promiseAllSettled(functions: (() => Promise<unknown>)[]): Promise<SettledObject[]> {
     return new Promise((resolve) => {
         const results = new Array<SettledObject>(functions.length);
         let pending = functions.length;

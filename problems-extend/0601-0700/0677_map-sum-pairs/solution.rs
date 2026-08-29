@@ -18,7 +18,13 @@ pub struct MapSum {
 
 impl MapSum {
     pub fn new() -> Self {
-        MapSum { root: TrieNode { children: HashMap::new(), score: 0 }, values: HashMap::new() }
+        MapSum {
+            root: TrieNode {
+                children: HashMap::new(),
+                score: 0,
+            },
+            values: HashMap::new(),
+        }
     }
 
     pub fn insert(&mut self, key: String, val: i32) {
@@ -26,10 +32,10 @@ impl MapSum {
         self.values.insert(key.clone(), val);
         let mut node = &mut self.root;
         for byte in key.bytes() {
-            node = node
-                .children
-                .entry(byte)
-                .or_insert_with(|| TrieNode { children: HashMap::new(), score: 0 });
+            node = node.children.entry(byte).or_insert_with(|| TrieNode {
+                children: HashMap::new(),
+                score: 0,
+            });
             node.score += delta;
         }
     }

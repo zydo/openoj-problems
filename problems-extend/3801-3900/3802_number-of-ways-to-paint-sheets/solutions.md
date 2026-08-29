@@ -11,14 +11,11 @@ collapses onto a sweep of `O(m)` breakpoints.
 
 Fix a split length `x`. The ordered pairs (first color `i`, second color `j`,
 `i != j`) whose caps admit `x` and `n - x` number `num_ge(x) * num_ge(n - x)
-- num_ge(max(x, n - x))`: all pairs satisfying both caps, minus the `i == j`
-diagonal, which needs a single cap to cover the larger of the two sides.
-`num_ge(t)` — how many colors have `limit >= t` — is one lower-bound search
-on the sorted limit array, so each split costs `O(log m)` to evaluate. As
-`x` runs from 1 to `n - 1`, this per-split count is a step function:
-`num_ge(x)` drops exactly at `L + 1`, `num_ge(n - x)` jumps exactly at
-`n - L`, and the `max(x, n - x)` argument switches at `ceil(n / 2)`. Nothing
-else moves it.
+
+- num_ge(max(x, n - x))`: all pairs satisfying both caps, minus the `i == j`diagonal, which needs a single cap to cover the larger of the two sides.`num_ge(t)`— how many colors have`limit >= t`— is one lower-bound search
+on the sorted limit array, so each split costs`O(log m)`to evaluate. As`x`runs from 1 to`n - 1`, this per-split count is a step function:
+`num_ge(x)`drops exactly at`L + 1`, `num_ge(n - x)`jumps exactly at`n - L`, and the `max(x, n - x)`argument switches at`ceil(n / 2)`. Nothing
+  else moves it.
 
 Collecting `1`, `n`, the switch point, and `L + 1` and `n - L` for every
 limit `L` (clamped into `[1, n]`), then sorting and deduplicating, yields at

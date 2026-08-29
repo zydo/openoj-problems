@@ -18,7 +18,10 @@ class Solution {
         int nodes = 1; // next free node id; node 0 is the root
         int[] maxQ = new int[n]; // indices of max candidates, values decreasing
         int[] minQ = new int[n]; // indices of min candidates, values increasing
-        int maxHead = 0, maxTail = 0, minHead = 0, minTail = 0;
+        int maxHead = 0,
+            maxTail = 0,
+            minHead = 0,
+            minTail = 0;
         int left = 0;
         int best = 0;
         for (int right = 0; right < n; right++) {

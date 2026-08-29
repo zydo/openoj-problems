@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int consecutiveNumbersSum(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int consecutiveNumbersSum(int n) { throw logic_error("TODO"); }
 };

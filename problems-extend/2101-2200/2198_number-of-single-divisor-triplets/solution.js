@@ -23,10 +23,7 @@ var singleDivisorTriplet = function (nums) {
                 const s = a + b + c;
                 // divisibility is checked per index, so repeated
                 // values contribute one hit per copy
-                const hits =
-                    (s % a === 0 ? 1 : 0) +
-                    (s % b === 0 ? 1 : 0) +
-                    (s % c === 0 ? 1 : 0);
+                const hits = (s % a === 0 ? 1 : 0) + (s % b === 0 ? 1 : 0) + (s % c === 0 ? 1 : 0);
                 if (hits !== 1) {
                     continue;
                 }

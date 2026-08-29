@@ -8,7 +8,10 @@ pub struct TextEditor {
 
 impl TextEditor {
     pub fn new() -> Self {
-        TextEditor { left: Vec::new(), right: Vec::new() }
+        TextEditor {
+            left: Vec::new(),
+            right: Vec::new(),
+        }
     }
 
     pub fn addText(&mut self, text: String) {

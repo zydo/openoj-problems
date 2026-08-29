@@ -27,7 +27,8 @@ class Solution {
         // contains it, so hitting a window's rightmost element covers the
         // maximal run of later window starts — the classic fixed-length
         // interval point cover, greedily optimal.
-        int lo = 0, hi = n;
+        int lo = 0,
+            hi = n;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (feasible(mid, maxC)) hi = mid;

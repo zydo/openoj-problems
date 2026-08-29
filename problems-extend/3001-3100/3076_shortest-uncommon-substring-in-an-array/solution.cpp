@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<string> shortestSubstrings(vector<string>& arr) {
+  public:
+    vector<string> shortestSubstrings(vector<string> &arr) {
         // Join every other string into one scan text, NUL-separated so a
         // match can never straddle a boundary; since candidates contain
         // only lowercase letters, one containment test per candidate
@@ -17,14 +17,14 @@ public:
                     others += '\0';
                 }
             }
-            const string& s = arr[i];
+            const string &s = arr[i];
             string best;
             for (int length = 1; length <= (int)s.size() && best.empty(); ++length) {
                 set<string> candidates;
                 for (int a = 0; a + length <= (int)s.size(); ++a) {
                     candidates.insert(s.substr(a, length));
                 }
-                for (const string& candidate : candidates) {
+                for (const string &candidate : candidates) {
                     if (others.find(candidate) == string::npos) {
                         best = candidate;
                         break;

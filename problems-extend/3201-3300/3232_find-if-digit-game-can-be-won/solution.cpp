@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     bool canAliceWin(vector<int> &nums) {
         // Alice must swallow an entire digit class, so the two running
         // totals decide everything: singles beat doubles under one play,

@@ -34,8 +34,5 @@ impl Solution {
 
 // Number of positions in which two equal-length genes differ.
 fn differences(a: &str, b: &str) -> i32 {
-    a.bytes()
-        .zip(b.bytes())
-        .map(|(x, y)| if x != y { 1 } else { 0 })
-        .sum()
+    a.bytes().zip(b.bytes()).map(|(x, y)| if x != y { 1 } else { 0 }).sum()
 }

@@ -11,7 +11,7 @@ class Solution:
         result = []
         for length in range(2, 10):
             for start in range(0, 10 - length):
-                value = int(digits[start:start + length])
+                value = int(digits[start : start + length])
                 if value > high:
                     return result
                 if value >= low:

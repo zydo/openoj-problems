@@ -89,7 +89,7 @@ var palindromePath = function (n, edges, s, queries) {
     // range, so it is built arithmetically — every value stays far below
     // 2^53, where plain numbers are exact.
     let levels = 1;
-    while ((1 << levels) <= walkLength) ++levels;
+    while (1 << levels <= walkLength) ++levels;
     const table = [new Array(walkLength)];
     for (let index = 0; index < walkLength; ++index) {
         table[0][index] = depth[walk[index]] * 131072 + walk[index];

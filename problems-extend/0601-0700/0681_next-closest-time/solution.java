@@ -19,7 +19,8 @@ class Solution {
         }
         int start = ((time.charAt(0) - '0') * 10 + time.charAt(1) - '0') * 60;
         start += (time.charAt(3) - '0') * 10 + time.charAt(4) - '0';
-        int best = start, bestGap = 1440;
+        int best = start,
+            bestGap = 1440;
         for (int i = 0; i < count; i++) {
             for (int j = 0; j < count; j++) {
                 int hour = digits[i] * 10 + digits[j];

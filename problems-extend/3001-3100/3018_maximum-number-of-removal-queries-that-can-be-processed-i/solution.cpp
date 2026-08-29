@@ -15,17 +15,20 @@ class Solution {
                 if (l > 0) {
                     int p = dp[l - 1][r];
                     t = max(t, p);
-                    if (p < m && nums[l - 1] >= queries[p]) t = max(t, p + 1);
+                    if (p < m && nums[l - 1] >= queries[p])
+                        t = max(t, p + 1);
                 }
                 if (r < n) {
                     int p = dp[l][r + 1];
                     t = max(t, p);
-                    if (p < m && nums[r] >= queries[p]) t = max(t, p + 1);
+                    if (p < m && nums[r] >= queries[p])
+                        t = max(t, p + 1);
                 }
                 dp[l][r] = t;
                 // Every survivor block can be op-deleted too, so empty
                 // windows carry the answer.
-                if (span == 0) best = max(best, t);
+                if (span == 0)
+                    best = max(best, t);
             }
         }
         return best;

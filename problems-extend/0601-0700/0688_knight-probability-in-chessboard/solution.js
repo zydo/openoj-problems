@@ -9,7 +9,16 @@ var knightProbability = function (n, k, row, column) {
     // Probability-mass DP over the board. board[r][c] is the probability
     // of standing on (r, c) after the moves made so far; one gather sweep
     // advances it by one move, and mass addressed off the board is lost.
-    const moves = [[-2, -1], [-2, 1], [-1, -2], [-1, 2], [1, -2], [1, 2], [2, -1], [2, 1]];
+    const moves = [
+        [-2, -1],
+        [-2, 1],
+        [-1, -2],
+        [-1, 2],
+        [1, -2],
+        [1, 2],
+        [2, -1],
+        [2, 1],
+    ];
     let board = Array.from({ length: n }, () => new Array(n).fill(0.0));
     board[row][column] = 1.0;
     for (let step = 0; step < k; ++step) {

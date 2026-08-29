@@ -11,9 +11,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             order[i] = i;
         }
-        sort(order.begin(), order.end(), [&](int a, int b) {
-            return nums[a] != nums[b] ? nums[a] < nums[b] : a < b;
-        });
+        sort(order.begin(), order.end(), [&](int a, int b) { return nums[a] != nums[b] ? nums[a] < nums[b] : a < b; });
         vector<bool> marked(n, false);
         long long total = 0;
         for (int num : nums) {

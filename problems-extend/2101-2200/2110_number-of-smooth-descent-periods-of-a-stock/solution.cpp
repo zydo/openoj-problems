@@ -1,6 +1,6 @@
 class Solution {
-public:
-    long long getDescentPeriods(vector<int>& prices) {
+  public:
+    long long getDescentPeriods(vector<int> &prices) {
         long long total = 1;
         long long run = 1;
         for (int index = 1; index < static_cast<int>(prices.size()); ++index) {

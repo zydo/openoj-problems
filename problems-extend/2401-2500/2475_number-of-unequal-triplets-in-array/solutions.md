@@ -2,7 +2,7 @@
 
 ## Count frequencies and multiply
 
-A triplet's three elements are three distinct *positions*; whatever their
+A triplet's three elements are three distinct _positions_; whatever their
 values, those positions can be sorted into exactly one `i < j < k` order.
 So a valid triplet is fully described by choosing one element of each of
 three distinct values, and every such choice yields exactly one counted

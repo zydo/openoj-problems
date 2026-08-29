@@ -5,7 +5,7 @@
 Root a BFS at each vertex in turn. The search lays out a tree of shortest
 distances from that root; every edge then falls into one of two classes.
 A tree edge merely retraces how the search discovered its endpoint, but any
-*cross* edge `(u, v)` — one whose endpoints already knew shorter routes back
+_cross_ edge `(u, v)` — one whose endpoints already knew shorter routes back
 to the root — closes a ring whose length is exactly `dist[u] + dist[v] + 1`:
 walk from the root down to `u`, hop across, and climb back up `v`'s levels.
 

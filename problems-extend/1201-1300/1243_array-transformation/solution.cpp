@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> transformArray(vector<int>& arr) {
+  public:
+    vector<int> transformArray(vector<int> &arr) {
         vector<int> current = arr;
         while (true) {
             // Whole day from a snapshot: neighbors are yesterday's values.
@@ -12,7 +12,8 @@ public:
                     next[i] = current[i] - 1;
                 }
             }
-            if (next == current) return current;
+            if (next == current)
+                return current;
             current = std::move(next);
         }
     }

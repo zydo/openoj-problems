@@ -6,7 +6,7 @@ Two observations collapse the problem. First, once a tree is rooted, a
 path starting at the root is forced to descend (a tree has no way back),
 so the minimum path at any root is always the lone root itself. Second,
 subtracting that constant minimum from the maximum means each root's
-price cancels out of its own cost — what remains is "the largest *arm*",
+price cancels out of its own cost — what remains is "the largest _arm_",
 an oriented vertical path whose starting node is adjacent to the root and
 whose prices alone make up the sum. So the answer is simply the best arm
 over all orientations of the tree, no per-root enumeration needed.

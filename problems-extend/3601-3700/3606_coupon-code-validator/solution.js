@@ -28,8 +28,7 @@ function codeOk(name) {
     if (name.length === 0) return false;
     for (let i = 0; i < name.length; ++i) {
         const c = name.charCodeAt(i);
-        const alnum =
-            (c >= 97 && c <= 122) || (c >= 65 && c <= 90) || (c >= 48 && c <= 57);
+        const alnum = (c >= 97 && c <= 122) || (c >= 65 && c <= 90) || (c >= 48 && c <= 57);
         if (!alnum && c !== 95) return false;
     }
     return true;

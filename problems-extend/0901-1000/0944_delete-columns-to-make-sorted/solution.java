@@ -2,7 +2,8 @@ class Solution {
 
     public int minDeletionSize(String[] strs) {
         int deletions = 0;
-        int rows = strs.length, cols = strs[0].length();
+        int rows = strs.length,
+            cols = strs[0].length();
         for (int j = 0; j < cols; j++) {
             for (int i = 1; i < rows; i++) {
                 // A column is condemned the moment a character drops below

@@ -1,12 +1,12 @@
 class Solution {
-public:
+  public:
     // A group is happy when the donut count before it is 0 mod batchSize,
     // so the ordering matters only through remainders. Remainder-0 groups
     // are always happy, complementary remainders pair into zero-sum
     // blocks, and the memoized DP places what is left. Each remainder
     // class count fits 5 bits (n <= 30), so a packed state key fits
     // comfortably in a long long.
-    int maxHappyGroups(int batchSize, vector<int>& groups) {
+    int maxHappyGroups(int batchSize, vector<int> &groups) {
         int k = batchSize;
         vector<int> freq(k, 0);
         for (int g : groups) {
@@ -33,8 +33,8 @@ public:
         return ans + dp(memo, state, 0, k);
     }
 
-private:
-    int dp(unordered_map<long long, int>& memo, long long state, int r, int k) {
+  private:
+    int dp(unordered_map<long long, int> &memo, long long state, int r, int k) {
         if (state == 0) {
             return 0;
         }

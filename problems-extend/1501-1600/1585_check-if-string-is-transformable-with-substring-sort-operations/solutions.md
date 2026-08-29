@@ -15,7 +15,7 @@ is never worse to hand out the earliest remaining occurrence first: group
 right, popping the earliest unused occurrence of each needed digit.
 
 Popping an occurrence isn't enough by itself — the popped position also
-has to be able to *arrive* at its slot, which is where the blocking rule
+has to be able to _arrive_ at its slot, which is where the blocking rule
 comes in. Maintain one Fenwick tree per digit value, each marking which of
 that digit's original positions in `s` are still unconsumed; a prefix
 query on digit `d`'s tree at position `x` counts how many of its

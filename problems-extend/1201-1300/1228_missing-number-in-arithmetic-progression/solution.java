@@ -5,7 +5,7 @@ class Solution {
         // from arr[0] to arr[-1]; the gap between its Gauss sum and the
         // surviving sum is the removed value.
         int n = arr.length;
-        long full = (long) (arr[0] + arr[arr.length - 1]) * (n + 1) / 2;
+        long full = ((long) (arr[0] + arr[arr.length - 1]) * (n + 1)) / 2;
         long sum = 0;
         for (int value : arr) sum += value;
         return (int) (full - sum);

@@ -15,7 +15,7 @@ scratch would make the whole thing `O(n^3)`; instead, fix `r` and sweep
 `l` downward, growing the window one element at a time against a single
 frequency table. The delta formula is exactly three cases: if the new
 element never appeared it adds nothing (it will eventually be trimmed);
-its *second* appearance adds two, because both that occurrence and the
+its _second_ appearance adds two, because both that occurrence and the
 earlier stray one become duplicates simultaneously; every further copy
 adds one. That keeps each `r`'s sweep linear and the total `O(n²)` —
 for `n = 1000`, roughly a million transitions, comfortably within the

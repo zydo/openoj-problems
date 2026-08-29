@@ -8,7 +8,7 @@ class Solution {
     // dp[l] - runs[l+1], so a monotonic queue of l values keyed by key
     // answers each DP step in constant time while the weight and box
     // limits slide the window forward.
-    int boxDelivering(vector<vector<int>>& boxes, int portsCount, int maxBoxes, int maxWeight) {
+    int boxDelivering(vector<vector<int>> &boxes, int portsCount, int maxBoxes, int maxWeight) {
         int n = boxes.size();
         // running loaded weight reaches 10^5 * 10^5 = 10^10 — 64 bits
         vector<long long> weightPrefix(n + 1);

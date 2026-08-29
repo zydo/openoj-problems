@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {
+  public:
+    vector<int> getFinalState(vector<int> &nums, int k, int multiplier) {
         // The bounds are tiny (n <= 100, k <= 10), so replay the process
         // literally: each operation makes one linear scan for the first
         // occurrence of the minimum — a strict '<' comparison never replaces

@@ -2,7 +2,7 @@ function earliestFinishTime(
     landStartTime: number[],
     landDuration: number[],
     waterStartTime: number[],
-    waterDuration: number[]
+    waterDuration: number[],
 ): number {
     // Only the moment the first ride ends matters: the second ride then costs
     // max(open, finish) + duration, which never improves when the hand-off

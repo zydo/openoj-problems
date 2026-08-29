@@ -7,8 +7,10 @@ class Solution {
         // nums[0..i-2]; an element below it is such a non-local inversion.
         int prefixMax = 0;
         for (int i = 1; i < (int)nums.size(); ++i) {
-            if (nums[i] < prefixMax) return false;
-            if (nums[i - 1] > prefixMax) prefixMax = nums[i - 1];
+            if (nums[i] < prefixMax)
+                return false;
+            if (nums[i - 1] > prefixMax)
+                prefixMax = nums[i - 1];
         }
         return true;
     }

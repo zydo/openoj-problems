@@ -19,7 +19,7 @@ class Solution {
         int head = value >>> (length - halfLen);
         int best = -1;
         for (int h = head - 1; h <= head + 1; h++) {
-            if ((h >> (halfLen - 1)) == 0) {
+            if (h >> (halfLen - 1) == 0) {
                 continue; // would lose its leading one — not a b-bit head
             }
             int d = Math.abs(value - mirror(h, halfLen, length));
@@ -27,7 +27,7 @@ class Solution {
                 best = d;
             }
         }
-        for (int boundary : new int[] {(1 << (length - 1)) - 1, (1 << length) + 1}) {
+        for (int boundary : new int[] { (1 << (length - 1)) - 1, (1 << length) + 1 }) {
             int d = Math.abs(value - boundary);
             if (d < best) {
                 best = d;

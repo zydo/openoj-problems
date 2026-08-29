@@ -35,9 +35,7 @@ class SummaryRanges {
         }
     }
 
-    vector<vector<int>> getIntervals() {
-        return intervals;
-    }
+    vector<vector<int>> getIntervals() { return intervals; }
 
   private:
     vector<vector<int>> intervals;

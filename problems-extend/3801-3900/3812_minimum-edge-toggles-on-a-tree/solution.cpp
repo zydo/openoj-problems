@@ -3,8 +3,7 @@
 
 class Solution {
   public:
-    std::vector<int> minimumFlips(int n, std::vector<std::vector<int>> &edges, std::string start,
-                                  std::string target) {
+    std::vector<int> minimumFlips(int n, std::vector<std::vector<int>> &edges, std::string start, std::string target) {
         std::vector<std::vector<int>> adjacency(n);
         for (int index = 0; index < static_cast<int>(edges.size()); index++) {
             int u = edges[index][0], v = edges[index][1];

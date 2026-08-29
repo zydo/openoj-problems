@@ -10,10 +10,7 @@ class Solution:
         for r in range(rows - 1, -1, -1):
             for c in range(cols - 1, -1, -1):
                 apples[r][c] = (
-                    apples[r + 1][c]
-                    + apples[r][c + 1]
-                    - apples[r + 1][c + 1]
-                    + (1 if pizza[r][c] == "A" else 0)
+                    apples[r + 1][c] + apples[r][c + 1] - apples[r + 1][c + 1] + (1 if pizza[r][c] == "A" else 0)
                 )
 
         memo: Dict[Tuple[int, int, int], int] = {}

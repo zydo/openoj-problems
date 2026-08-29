@@ -7,7 +7,7 @@ One pass over `text` fills a 26-slot frequency table. The word "balloon"
 needs `b`, `a`, and `n` once but `l` and `o` twice, so the number of
 instances each letter supports is its count divided by its demand: `b`
 allows `count[b]` instances, `l` allows `count[l] / 2`, and so on. Every
-instance consumes one share from *every* letter simultaneously, so the
+instance consumes one share from _every_ letter simultaneously, so the
 scarcest letter caps the whole word — the answer is the minimum of those
 five quotients.
 

@@ -21,9 +21,7 @@ function maximumScore(grid: number[][]): number {
 
     for (let t = 1; t < n; t++) {
         const pcol = pre[t - 1];
-        const ndp: number[][] = Array.from({ length: n + 1 }, () =>
-            new Array(n + 1).fill(-Infinity),
-        );
+        const ndp: number[][] = Array.from({ length: n + 1 }, () => new Array(n + 1).fill(-Infinity));
         for (let a = 0; a <= n; a++) {
             const row = dp[a];
             // Credit for choosing h[t] = c is

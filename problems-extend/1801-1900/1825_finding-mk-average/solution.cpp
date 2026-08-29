@@ -27,7 +27,8 @@ class MKAverage {
     }
 
     int calculateMKAverage() {
-        if (size < m) return -1;
+        if (size < m)
+            return -1;
         long long middle = smallestSum(m - k) - smallestSum(k);
         return (int)(middle / (m - 2LL * k));
     }

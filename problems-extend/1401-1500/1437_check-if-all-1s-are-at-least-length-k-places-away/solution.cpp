@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-    bool kLengthApart(std::vector<int>& nums, int k) {
+    bool kLengthApart(std::vector<int> &nums, int k) {
         int previous = -1;
         for (int index = 0; index < (int)nums.size(); index++) {
             if (nums[index] == 1) {

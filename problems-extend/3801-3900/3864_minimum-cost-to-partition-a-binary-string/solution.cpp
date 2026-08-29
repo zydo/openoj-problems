@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     long long minCost(string s, int encCost, int flatCost) {
         // A segment's cost depends only on its length L and its count X of
         // ones: flatCost when X == 0, otherwise L * X * encCost. Because an
@@ -15,7 +15,7 @@ public:
         return solve(encCost, flatCost, 0, n);
     }
 
-private:
+  private:
     vector<int> prefix;
 
     long long solve(int encCost, int flatCost, int l, int length) {
@@ -23,8 +23,7 @@ private:
         long long best = x == 0 ? flatCost : 1LL * length * x * encCost;
         if (length % 2 == 0) {
             int half = length / 2;
-            long long split = solve(encCost, flatCost, l, half)
-                              + solve(encCost, flatCost, l + half, half);
+            long long split = solve(encCost, flatCost, l, half) + solve(encCost, flatCost, l + half, half);
             if (split < best) {
                 best = split;
             }

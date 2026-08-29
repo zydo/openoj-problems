@@ -1,6 +1,6 @@
 class Solution {
-public:
-    bool threeConsecutiveOdds(vector<int>& arr) {
+  public:
+    bool threeConsecutiveOdds(vector<int> &arr) {
         // Track a running streak of consecutive odd values; any even value
         // resets it. Three in a row settles the answer immediately.
         int streak = 0;

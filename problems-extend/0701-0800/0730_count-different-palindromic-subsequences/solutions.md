@@ -2,7 +2,7 @@
 
 ## Begin-and-end-with-character interval DP
 
-Counting *distinct* palindromic subsequences is what makes this hard: the
+Counting _distinct_ palindromic subsequences is what makes this hard: the
 same palindrome arises from many index sets, and any DP that counts index
 sets overcounts. The fix is to partition by outer character — every
 non-empty palindrome has exactly one first character and one last character,

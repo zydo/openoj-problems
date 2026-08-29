@@ -1,6 +1,4 @@
 class Solution {
-public:
-    long long maxStrength(vector<int>& nums) {
-        throw logic_error("TODO");
-    }
+  public:
+    long long maxStrength(vector<int> &nums) { throw logic_error("TODO"); }
 };

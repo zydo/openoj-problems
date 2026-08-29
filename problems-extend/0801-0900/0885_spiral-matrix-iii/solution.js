@@ -15,7 +15,12 @@ var spiralMatrixIII = function (rows, cols, rStart, cStart) {
     // walk stops.
     const total = rows * cols;
     const order = [[rStart, cStart]];
-    const directions = [[0, 1], [1, 0], [0, -1], [-1, 0]];
+    const directions = [
+        [0, 1],
+        [1, 0],
+        [0, -1],
+        [-1, 0],
+    ];
     let r = rStart;
     let c = cStart;
     let d = 0;

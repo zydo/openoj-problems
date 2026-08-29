@@ -47,7 +47,7 @@ class Solution {
                     List<String> lifted = new ArrayList<>();
                     for (String r : frontier) {
                         for (int d = 0; d < 6; d++) {
-                            if ((mask >> d & 1) != 0) {
+                            if (((mask >> d) & 1) != 0) {
                                 lifted.add(r + (char) ('A' + d));
                             }
                         }

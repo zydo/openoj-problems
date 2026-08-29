@@ -6,7 +6,11 @@
   "slug": "maximum-difference-between-node-and-ancestor",
   "title": "Maximum Difference Between Node and Ancestor",
   "difficulty": "",
-  "tags": ["Tree", "Depth-First Search", "Binary Tree"],
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

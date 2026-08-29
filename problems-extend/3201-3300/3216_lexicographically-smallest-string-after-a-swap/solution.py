@@ -7,10 +7,7 @@ class Solution:
             # The first adjacent same-parity descent is the only swap worth
             # making: it lowers an earlier position than any later legal
             # swap could.
-            if (
-                chars[i] > chars[i + 1]
-                and int(chars[i]) % 2 == int(chars[i + 1]) % 2
-            ):
+            if chars[i] > chars[i + 1] and int(chars[i]) % 2 == int(chars[i + 1]) % 2:
                 # At most one swap is allowed, so stop right after it.
                 chars[i], chars[i + 1] = chars[i + 1], chars[i]
                 break

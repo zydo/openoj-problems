@@ -21,7 +21,7 @@ class Solution:
         def dp(i: int, boxes: int) -> int:
             remaining = n - i
             if boxes >= remaining:
-                return 0          # a mailbox per house: zero distance
+                return 0  # a mailbox per house: zero distance
             if boxes == 1:
                 return run_cost(i, n - 1)
             best = float("inf")

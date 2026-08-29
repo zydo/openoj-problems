@@ -15,10 +15,10 @@ Each row of this table indicates the name of the employee whose ID is
 
 Table: `Salaries`
 
-| Column Name | Type    |
-| ----------- | ------- |
-| employee_id | int     |
-| salary      | int     |
+| Column Name | Type |
+| ----------- | ---- |
+| employee_id | int  |
+| salary      | int  |
 
 `employee_id` is the column with unique values for this table.
 Each row of this table indicates the salary of the employee whose ID is

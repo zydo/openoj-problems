@@ -1,10 +1,5 @@
 impl Solution {
-    pub fn maximum_number_of_ones(
-        width: i32,
-        height: i32,
-        side_length: i32,
-        max_ones: i32,
-    ) -> i32 {
+    pub fn maximum_number_of_ones(width: i32, height: i32, side_length: i32, max_ones: i32) -> i32 {
         // Each residue class (r, c) mod sideLength appears in every window
         // exactly once, so the constraint binds classes. Count how many
         // grid cells fall into each class: full blocks plus the leftover

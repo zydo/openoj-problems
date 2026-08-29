@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimumDistance(vector<int>& nums) {
+    int minimumDistance(vector<int> &nums) {
         // The three pairwise gaps of a good tuple telescope to twice the
         // span between its outermost indices, so the closest tuple is the
         // one whose outermost same-value indices are nearest. Every value

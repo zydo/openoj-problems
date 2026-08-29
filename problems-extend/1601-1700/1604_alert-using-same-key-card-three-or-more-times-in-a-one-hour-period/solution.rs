@@ -10,7 +10,10 @@ impl Solution {
             let minutes: i32 = time[3..5].parse().unwrap();
             // Every swipe falls on a single day, so minutes-since-midnight is
             // all the arithmetic needed — no wraparound to handle.
-            times_by_name.entry(name).or_insert_with(Vec::new).push(60 * hours + minutes);
+            times_by_name
+                .entry(name)
+                .or_insert_with(Vec::new)
+                .push(60 * hours + minutes);
         }
 
         let mut alerted = Vec::new();

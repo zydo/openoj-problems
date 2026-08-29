@@ -11,9 +11,7 @@ class Solution {
         // real bind promises — and a symbol can never collide with an
         // existing property (string keys or other symbols), so the
         // temporary slot neither clobbers state nor leaks between calls.
-        Function.prototype.bindPolyfill = function (
-            context: object,
-        ): (...args: any[]) => any {
+        Function.prototype.bindPolyfill = function (context: object): (...args: any[]) => any {
             const fn = this as (...args: any[]) => any;
             const slot = Symbol("bindPolyfill");
             const receiver = context as Record<PropertyKey, unknown>;

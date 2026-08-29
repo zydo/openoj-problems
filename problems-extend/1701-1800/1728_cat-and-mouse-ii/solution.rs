@@ -46,7 +46,11 @@ impl Solution {
             for c in 0..n {
                 for t in 0..2 {
                     let s = (m * n + c) * 2 + t;
-                    degree[s] = if t == 0 { mouse_moves[m].len() } else { cat_moves[c].len() };
+                    degree[s] = if t == 0 {
+                        mouse_moves[m].len()
+                    } else {
+                        cat_moves[c].len()
+                    };
                     if c == food || m == c {
                         label[s] = cat;
                         queue.push_back(s);
@@ -63,7 +67,8 @@ impl Solution {
             let (m, c) = (base / n, base % n);
             let win = label[s];
             if t == 1 {
-                for &m2 in &mouse_back[m] { // predecessors: the mouse just moved
+                for &m2 in &mouse_back[m] {
+                    // predecessors: the mouse just moved
                     let p = (m2 * n + c) * 2;
                     if label[p] == unknown {
                         if win == mouse {
@@ -79,7 +84,8 @@ impl Solution {
                     }
                 }
             } else {
-                for &c2 in &cat_back[c] { // predecessors: the cat just moved
+                for &c2 in &cat_back[c] {
+                    // predecessors: the cat just moved
                     let p = (m * n + c2) * 2 + 1;
                     if label[p] == unknown {
                         if win == cat {

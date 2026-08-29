@@ -1,10 +1,8 @@
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
 
 impl Solution {
-    pub fn connect(
-        root: Option<Rc<RefCell<NodeWithNext>>>,
-    ) -> Option<Rc<RefCell<NodeWithNext>>> {
+    pub fn connect(root: Option<Rc<RefCell<NodeWithNext>>>) -> Option<Rc<RefCell<NodeWithNext>>> {
         let mut level = root.clone();
         while let Some(node) = level {
             let left = node.borrow().left.clone();

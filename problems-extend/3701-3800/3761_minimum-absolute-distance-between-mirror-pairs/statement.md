@@ -8,8 +8,8 @@ A mirror pair is a pair of indices (i, j) such that:
 
 - `0 <= i < j < nums.length`, and
 - `reverse(nums[i]) == nums[j]`, where reverse(x) denotes the integer formed
-by reversing the digits of x. Leading zeros are omitted after reversing, for
-example reverse(120) = 21.
+  by reversing the digits of x. Leading zeros are omitted after reversing, for
+  example reverse(120) = 21.
 
 Return the minimum absolute distance between the indices of any mirror pair.
 The absolute distance between indices i and j is abs(i - j).

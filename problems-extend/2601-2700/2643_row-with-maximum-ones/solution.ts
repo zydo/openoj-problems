@@ -15,4 +15,4 @@ function rowAndMaximumOnes(mat: number[][]): number[] {
         }
     }
     return [bestRow, bestCount];
-};
+}

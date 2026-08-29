@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int sumOfUnique(vector<int>& nums) {
+  public:
+    int sumOfUnique(vector<int> &nums) {
         // An element counts only if it appears exactly once. Values are
         // bounded to 1..100, so a fixed frequency table settles every
         // element in one pass; a second sweep sums the singletons.

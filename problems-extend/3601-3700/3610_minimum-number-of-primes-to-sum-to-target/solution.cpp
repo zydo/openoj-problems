@@ -12,7 +12,8 @@ class Solution {
                     break;
                 }
             }
-            if (isPrime) primes.push_back(value);
+            if (isPrime)
+                primes.push_back(value);
         }
         int inf = n + 1;
         vector<int> dp(n + 1, inf);

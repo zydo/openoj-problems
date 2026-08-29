@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string baseNeg2(int n) {
         // Pull off one digit at a time: the least-significant digit is n
         // reduced modulo 2, forced into {0, 1} since C++'s % truncates

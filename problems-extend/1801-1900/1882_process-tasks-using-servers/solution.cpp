@@ -1,12 +1,10 @@
 class Solution {
-   public:
+  public:
     // free is ordered (weight, index); busy is ordered by release time.
     // Drain finished servers, wait for the earliest if needed, then hand
     // the task to the smallest free server.
-    vector<long long> assignTasks(vector<int>& servers, vector<int>& tasks) {
-        priority_queue<pair<long long, long long>, vector<pair<long long, long long>>,
-                       greater<>>
-            busy;
+    vector<long long> assignTasks(vector<int> &servers, vector<int> &tasks) {
+        priority_queue<pair<long long, long long>, vector<pair<long long, long long>>, greater<>> busy;
         set<pair<long long, long long>> free;
         for (int i = 0; i < (int)servers.size(); i++) {
             free.insert({servers[i], (long long)i});

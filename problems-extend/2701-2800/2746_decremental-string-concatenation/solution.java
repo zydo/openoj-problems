@@ -1,4 +1,5 @@
 class Solution {
+
     public int minimizeConcatenatedLength(String[] words) {
         // dp[first][last] = shortest length of a concatenation of the words
         // processed so far starting with `first` and ending with `last`.
@@ -10,8 +11,7 @@ class Solution {
             }
         }
         String firstWord = words[0];
-        dp[firstWord.charAt(0) - 'a'][firstWord.charAt(firstWord.length() - 1) - 'a'] =
-                firstWord.length();
+        dp[firstWord.charAt(0) - 'a'][firstWord.charAt(firstWord.length() - 1) - 'a'] = firstWord.length();
         for (int i = 1; i < words.length; i++) {
             String word = words[i];
             int wordFirst = word.charAt(0) - 'a';

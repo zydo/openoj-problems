@@ -5,8 +5,7 @@
 
 class Solution {
   public:
-    vector<vector<int>>
-    differenceOfDistinctValues(vector<vector<int>>& grid) {
+    vector<vector<int>> differenceOfDistinctValues(vector<vector<int>> &grid) {
         // Each main diagonal is swept once downward and once upward. The
         // downward pass records, per cell, how many distinct values lie
         // strictly left-above (the running set size before inserting the
@@ -22,7 +21,7 @@ class Solution {
         for (int c = 1; c < n; ++c) {
             starts.emplace_back(0, c);
         }
-        for (auto& [sr, sc] : starts) {
+        for (auto &[sr, sc] : starts) {
             unordered_set<int> left_above;
             int length = 0;
             int r = sr;
@@ -38,8 +37,7 @@ class Solution {
             for (int k = length - 1; k >= 0; --k) {
                 int x = sr + k;
                 int y = sc + k;
-                ans[x][y] =
-                    abs(ans[x][y] - static_cast<int>(right_below.size()));
+                ans[x][y] = abs(ans[x][y] - static_cast<int>(right_below.size()));
                 right_below.insert(grid[x][y]);
             }
         }

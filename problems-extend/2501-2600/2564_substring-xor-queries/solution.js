@@ -25,7 +25,5 @@ var substringXorQueries = function (s, queries) {
             if (!best.has(val)) best.set(val, [left, left + length - 1]);
         }
     }
-    return queries.map(([first, second]) =>
-        best.get(first ^ second) ?? [-1, -1]
-    );
+    return queries.map(([first, second]) => best.get(first ^ second) ?? [-1, -1]);
 };

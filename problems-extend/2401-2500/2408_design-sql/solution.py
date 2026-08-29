@@ -41,7 +41,4 @@ class SQL:
         table = self.tables.get(name)
         if table is None:
             return []
-        return [
-            str(row_id) + "," + ",".join(row)
-            for row_id, row in sorted(table["rows"].items())
-        ]
+        return [str(row_id) + "," + ",".join(row) for row_id, row in sorted(table["rows"].items())]

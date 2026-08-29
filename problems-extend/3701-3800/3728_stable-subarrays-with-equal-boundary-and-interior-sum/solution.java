@@ -21,8 +21,7 @@ class Solution {
         long count = 0;
         for (int r = 2; r < n; r++) {
             int left = r - 2;
-            seen.computeIfAbsent((long) capacity[left], k -> new HashMap<>())
-                    .merge(prefix[left], 1L, Long::sum);
+            seen.computeIfAbsent((long) capacity[left], k -> new HashMap<>()).merge(prefix[left], 1L, Long::sum);
             Map<Long, Long> bucket = seen.get((long) capacity[r]);
             if (bucket != null) {
                 count += bucket.getOrDefault(prefix[r - 1] - capacity[r], 0L);

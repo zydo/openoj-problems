@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maximumTop(vector<int>& nums, int k) {
+    int maximumTop(vector<int> &nums, int k) {
         // Which tops are reachable in exactly k moves is pure move-budget
         // casework; each branch is answered without simulating k moves.
         int n = nums.size();

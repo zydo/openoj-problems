@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int maxOperations(vector<int>& nums) {
+    int maxOperations(vector<int> &nums) {
         // The first operation fixes the score, and its pair is one of three:
         // the two head elements, the two tail elements, or both end elements.
         int n = nums.size();

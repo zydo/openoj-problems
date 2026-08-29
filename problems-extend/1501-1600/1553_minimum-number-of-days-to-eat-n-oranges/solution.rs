@@ -19,8 +19,8 @@ impl Solution {
         if let Some(&days) = memo.get(&remaining) {
             return days;
         }
-        let days = (remaining % 2 + 1 + Self::dp(remaining / 2, memo))
-            .min(remaining % 3 + 1 + Self::dp(remaining / 3, memo));
+        let days =
+            (remaining % 2 + 1 + Self::dp(remaining / 2, memo)).min(remaining % 3 + 1 + Self::dp(remaining / 3, memo));
         memo.insert(remaining, days);
         days
     }

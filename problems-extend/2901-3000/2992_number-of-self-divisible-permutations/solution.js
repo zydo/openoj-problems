@@ -14,7 +14,8 @@ var selfDivisiblePermutationCount = function (n) {
     for (let i = 1; i <= n; ++i) {
         const row = [];
         for (let v = 1; v <= n; ++v) {
-            let a = v, b = i;
+            let a = v,
+                b = i;
             while (b !== 0) {
                 const t = a % b;
                 a = b;

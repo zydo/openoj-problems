@@ -15,7 +15,8 @@ class Solution {
         int[] cnt = new int[n + 1];
         int[] arr = new int[queries.length];
         int distinct = 0;
-        int lo = 0, hi = 0;
+        int lo = 0,
+            hi = 0;
         for (int idx : order) {
             int top = queries[idx];
             int bottom = top - x;

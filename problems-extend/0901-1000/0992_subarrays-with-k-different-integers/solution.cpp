@@ -5,12 +5,10 @@ class Solution {
     // holding at most t distinct values does. Count the subarrays with at
     // most k distinct values, subtract those with at most k - 1, and exactly
     // k is what remains.
-    long long subarraysWithKDistinct(vector<int>& nums, int k) {
-        return atMost(nums, k) - atMost(nums, k - 1);
-    }
+    long long subarraysWithKDistinct(vector<int> &nums, int k) { return atMost(nums, k) - atMost(nums, k - 1); }
 
   private:
-    long long atMost(vector<int>& nums, int limit) {
+    long long atMost(vector<int> &nums, int limit) {
         vector<int> freq(nums.size() + 1, 0); // values lie in [1, n]
         int distinct = 0;
         int left = 0;

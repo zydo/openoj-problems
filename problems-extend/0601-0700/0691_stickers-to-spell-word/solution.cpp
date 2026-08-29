@@ -5,7 +5,7 @@
 
 class Solution {
   public:
-    int minStickers(vector<string>& stickers, string target) {
+    int minStickers(vector<string> &stickers, string target) {
         // BFS over the bitmask of spelled target positions: bit i is set
         // once position i holds a cut letter. From each state, one copy of
         // a sticker spends its letters on the uncovered positions left to
@@ -18,7 +18,7 @@ class Solution {
         int full = (1 << m) - 1;
         vector<int> need(m);
         array<bool, 26> available{};
-        for (const string& word : stickers) {
+        for (const string &word : stickers) {
             for (char letter : word) {
                 available[letter - 'a'] = true;
             }
@@ -31,7 +31,7 @@ class Solution {
         }
         vector<array<int, 26>> stocks;
         stocks.reserve(stickers.size());
-        for (const string& word : stickers) {
+        for (const string &word : stickers) {
             array<int, 26> counts{};
             for (char letter : word) {
                 counts[letter - 'a']++;
@@ -49,7 +49,7 @@ class Solution {
                 return distance[mask];
             }
             int steps = distance[mask] + 1;
-            for (const array<int, 26>& counts : stocks) {
+            for (const array<int, 26> &counts : stocks) {
                 array<int, 26> remaining = counts;
                 int next = mask;
                 for (int i = 0; i < m; ++i) {

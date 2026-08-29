@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> reverseSubarrays(vector<int>& nums, int k) {
+  public:
+    vector<int> reverseSubarrays(vector<int> &nums, int k) {
         // Each block holds m = n / k elements. A two-pointer sweep swaps
         // the ends of a block inward, mirroring the "Two Pointers" tag, and
         // the blocks are visited left to right; the copy keeps the input

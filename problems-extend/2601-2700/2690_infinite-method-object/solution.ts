@@ -10,12 +10,9 @@ class Solution {
 // or "__proto__" — with a function closing over the looked-up name, so
 // calling any method yields that method's own name.
 function createInfiniteObject(): Record<string, () => string> {
-    return new Proxy(
-        {} as Record<string, () => string>,
-        {
-            get(_target, prop: string | symbol) {
-                return () => String(prop);
-            },
-        }
-    );
+    return new Proxy({} as Record<string, () => string>, {
+        get(_target, prop: string | symbol) {
+            return () => String(prop);
+        },
+    });
 }

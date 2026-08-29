@@ -25,10 +25,7 @@ impl Solution {
             if kind == target_kind && shift == target_shift {
                 return distance[kind][shift];
             }
-            let neighbors = [
-                (kind, (shift + 1) % n),
-                (1 - kind, (n - shift) % n),
-            ];
+            let neighbors = [(kind, (shift + 1) % n), (1 - kind, (n - shift) % n)];
             for (next_kind, next_shift) in neighbors {
                 if distance[next_kind][next_shift] == -1 {
                     distance[next_kind][next_shift] = distance[kind][shift] + 1;

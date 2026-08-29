@@ -1,6 +1,6 @@
 class Solution {
   public:
-    string slowestKey(vector<int>& releaseTimes, string keysPressed) {
+    string slowestKey(vector<int> &releaseTimes, string keysPressed) {
         // A single left-to-right scan computes each duration once and keeps
         // the best (longest duration, then lexicographically largest key).
         int bestDuration = releaseTimes[0];

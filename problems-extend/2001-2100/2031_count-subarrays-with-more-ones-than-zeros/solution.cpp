@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int subarraysWithMoreOnesThanZeroes(vector<int>& nums) {
+  public:
+    int subarraysWithMoreOnesThanZeroes(vector<int> &nums) {
         const long long mod = 1000000007LL;
         int size = 2 * static_cast<int>(nums.size()) + 3;
         int offset = static_cast<int>(nums.size()) + 1;
@@ -18,15 +18,15 @@ public:
         return static_cast<int>(answer);
     }
 
-private:
-    void add(vector<int>& bit, int index) {
+  private:
+    void add(vector<int> &bit, int index) {
         while (index < static_cast<int>(bit.size())) {
             ++bit[index];
             index += index & -index;
         }
     }
 
-    int query(const vector<int>& bit, int index) {
+    int query(const vector<int> &bit, int index) {
         int total = 0;
         while (index > 0) {
             total += bit[index];

@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> amountPainted(vector<vector<int>>& paint) {
+    vector<int> amountPainted(vector<vector<int>> &paint) {
         // Canvas of "next possibly-unpainted cell" pointers: painting a cell
         // points it one past itself and find() compresses the skips, so every
         // unit of the painting is walked exactly once across all n days.
@@ -9,7 +9,8 @@ class Solution {
         iota(nxt.begin(), nxt.end(), 0);
         auto find = [&](int cell) {
             int root = cell;
-            while (nxt[root] != root) root = nxt[root];
+            while (nxt[root] != root)
+                root = nxt[root];
             while (nxt[cell] != root) {
                 // path compression
                 int forward = nxt[cell];
@@ -20,7 +21,7 @@ class Solution {
         };
         vector<int> worklog;
         worklog.reserve(paint.size());
-        for (const auto& day : paint) {
+        for (const auto &day : paint) {
             int area = 0;
             int cell = find(day[0]);
             while (cell < day[1]) {

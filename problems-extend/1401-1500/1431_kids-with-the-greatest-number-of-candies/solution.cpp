@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    std::vector<bool> kidsWithCandies(std::vector<int>& candies, int extraCandies) {
+    std::vector<bool> kidsWithCandies(std::vector<int> &candies, int extraCandies) {
         int maximum = *std::max_element(candies.begin(), candies.end());
         std::vector<bool> result;
         result.reserve(candies.size());

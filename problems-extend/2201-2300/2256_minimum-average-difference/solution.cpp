@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int minimumAverageDifference(vector<int>& nums) {
+    int minimumAverageDifference(vector<int> &nums) {
         int n = static_cast<int>(nums.size());
         long long total = 0;
         for (int x : nums) {

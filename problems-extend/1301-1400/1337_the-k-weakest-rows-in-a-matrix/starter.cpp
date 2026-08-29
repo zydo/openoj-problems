@@ -1,6 +1,4 @@
 class Solution {
-public:
-    vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    vector<int> kWeakestRows(vector<vector<int>> &mat, int k) { throw logic_error("TODO"); }
 };

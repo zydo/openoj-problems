@@ -16,16 +16,26 @@ class CustomFunction {
         if (this.budget <= 0) throw new Error("Oracle query budget exhausted");
         this.budget -= 1;
         switch (this.functionId) {
-            case 1: return x + y;
-            case 2: return x * y;
-            case 3: return x * x + y;
-            case 4: return x + y * y;
-            case 5: return x * x + y * y;
-            case 6: return 10 * x + y;
-            case 7: return x * x * x + y * y * y;
-            case 8: return (x + y) * (x + y);
-            case 9: return x * y + x + y;
-            default: throw new Error("Unknown function_id");
+            case 1:
+                return x + y;
+            case 2:
+                return x * y;
+            case 3:
+                return x * x + y;
+            case 4:
+                return x + y * y;
+            case 5:
+                return x * x + y * y;
+            case 6:
+                return 10 * x + y;
+            case 7:
+                return x * x * x + y * y * y;
+            case 8:
+                return (x + y) * (x + y);
+            case 9:
+                return x * y + x + y;
+            default:
+                throw new Error("Unknown function_id");
         }
     }
 }

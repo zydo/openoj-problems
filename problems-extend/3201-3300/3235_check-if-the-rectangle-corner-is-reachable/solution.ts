@@ -1,8 +1,4 @@
-function canReachCorner(
-    xCorner: number,
-    yCorner: number,
-    circles: number[][],
-): boolean {
+function canReachCorner(xCorner: number, yCorner: number, circles: number[][]): boolean {
     // Nodes 0..n-1 are the circles, then the top, right, bottom, and left
     // edges of the rectangle. Touching circles merge into obstacle blobs,
     // and a blob pinned to two edges blocks the corner-to-corner path
@@ -32,15 +28,8 @@ function canReachCorner(
     const unite = (a: number, b: number): void => {
         parent[find(a)] = find(b);
     };
-    const clamp = (value: bigint, high: bigint): bigint =>
-        value < 0n ? 0n : value > high ? high : value;
-    const meetsEdge = (
-        cx: bigint,
-        cy: bigint,
-        r2: bigint,
-        fixed: bigint,
-        vertical: boolean,
-    ): boolean => {
+    const clamp = (value: bigint, high: bigint): bigint => (value < 0n ? 0n : value > high ? high : value);
+    const meetsEdge = (cx: bigint, cy: bigint, r2: bigint, fixed: bigint, vertical: boolean): boolean => {
         const px = vertical ? fixed : clamp(cx, limitX);
         const py = vertical ? clamp(cy, limitY) : fixed;
         return (cx - px) ** 2n + (cy - py) ** 2n <= r2;

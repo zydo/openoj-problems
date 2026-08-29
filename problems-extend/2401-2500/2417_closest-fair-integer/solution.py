@@ -20,7 +20,7 @@ class Solution:
             half = (digits + 1) // 2
             return int("1" + "0" * half + "1" * (half - 1))
         # Even digit count: the next fair integer is close, so scan upward.
-        for k in range(n, 10 ** digits):
+        for k in range(n, 10**digits):
             if is_fair(k):
                 return k
         half = (digits + 2) // 2

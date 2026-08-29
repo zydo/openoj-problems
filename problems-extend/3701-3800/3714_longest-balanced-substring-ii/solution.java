@@ -12,7 +12,7 @@ class Solution {
         // track the longest run of equal neighbors.
         int run = 1;
         for (int i = 1; i < n; i++) {
-            run = (s.charAt(i) == s.charAt(i - 1)) ? run + 1 : 1;
+            run = s.charAt(i) == s.charAt(i - 1) ? run + 1 : 1;
             best = Math.max(best, run);
         }
 
@@ -31,7 +31,8 @@ class Solution {
                 Arrays.fill(stamp, -1);
                 stamp[n] = 0; // difference 0 precedes index 0
                 first[n] = -1;
-                int version = 0, d = 0;
+                int version = 0,
+                    d = 0;
                 for (int i = 0; i < n; i++) {
                     int c = s.charAt(i) - 'a';
                     if (c == z) {
@@ -40,7 +41,7 @@ class Solution {
                         stamp[n] = version;
                         first[n] = i;
                     } else {
-                        d += (c == x) ? 1 : -1;
+                        d += c == x ? 1 : -1;
                         int v = d + n;
                         if (stamp[v] == version) {
                             best = Math.max(best, i - first[v]);
@@ -61,7 +62,9 @@ class Solution {
         Map<Long, Integer> sigs = new HashMap<>();
         long width = 2L * n + 1;
         sigs.put((long) n * width + n, -1);
-        int ca = 0, cb = 0, cc = 0;
+        int ca = 0,
+            cb = 0,
+            cc = 0;
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
             if (ch == 'a') {

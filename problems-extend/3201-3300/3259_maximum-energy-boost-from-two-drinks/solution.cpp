@@ -1,7 +1,6 @@
 class Solution {
   public:
-    long long maxEnergyBoost(vector<int> &energyDrinkA,
-                             vector<int> &energyDrinkB) {
+    long long maxEnergyBoost(vector<int> &energyDrinkA, vector<int> &energyDrinkB) {
         // A plan that drinks A at hour i either drank A at hour i-1 or
         // drank B at hour i-2 and idled through the cleanse hour i-1, so
         // dpA[i] = max(dpA[i-1], dpB[i-2]) + energyDrinkA[i] and

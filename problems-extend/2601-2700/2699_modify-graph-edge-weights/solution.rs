@@ -52,8 +52,7 @@ impl Solution {
             return Vec::new();
         }
 
-        let mut weights: Vec<i64> =
-            untouched.iter().map(|&w| if w > 0 { w } else { 1 }).collect();
+        let mut weights: Vec<i64> = untouched.iter().map(|&w| if w > 0 { w } else { 1 }).collect();
         if dijkstra(&weights, source as usize)[destination as usize] > target as i64 {
             return Vec::new();
         }

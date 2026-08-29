@@ -14,7 +14,7 @@ class Solution {
     }
 
   private:
-    bool fill(vector<int>& result, vector<bool>& used, int n, int pos) {
+    bool fill(vector<int> &result, vector<bool> &used, int n, int pos) {
         if (pos == (int)result.size()) {
             return true;
         }

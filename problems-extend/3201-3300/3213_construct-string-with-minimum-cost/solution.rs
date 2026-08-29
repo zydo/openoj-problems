@@ -34,10 +34,7 @@ impl Solution {
             for &b in word.as_bytes() {
                 h = h.wrapping_mul(131).wrapping_add(b as u64);
             }
-            buckets
-                .entry(word.len())
-                .or_insert_with(HashSet::new)
-                .insert(h);
+            buckets.entry(word.len()).or_insert_with(HashSet::new).insert(h);
             max_len = max_len.max(word.len());
         }
         const BIG: i64 = 1i64 << 62;

@@ -11,7 +11,7 @@ class Solution {
         for (int i = n - 1; i >= 0; --i) {
             total += shifts[i];
             // Shifts are non-negative, so % 26 lands the wrap z -> a exactly.
-            out[i] = (char) ('a' + (out[i] - 'a' + total % 26) % 26);
+            out[i] = (char) ('a' + ((out[i] - 'a' + (total % 26)) % 26));
         }
         return new String(out);
     }

@@ -15,8 +15,7 @@ class Solution {
         // its size and the slices come out even.
         for (auto &[size, members] : buckets) {
             for (int start = 0; start < (int)members.size(); start += size) {
-                groups.emplace_back(members.begin() + start,
-                                    members.begin() + start + size);
+                groups.emplace_back(members.begin() + start, members.begin() + start + size);
             }
         }
         return groups;

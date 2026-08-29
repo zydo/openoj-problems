@@ -14,9 +14,7 @@ function objDiff(obj1: any, obj2: any): Record<string, any> {
         if (value === null || typeof value !== "object") return null;
         return Array.isArray(value) ? "array" : "object";
     };
-    const stack: WorkFrame[] = [
-        { mode: "compare", left: obj1, right: obj2, parent: null, key: null },
-    ];
+    const stack: WorkFrame[] = [{ mode: "compare", left: obj1, right: obj2, parent: null, key: null }];
     while (stack.length > 0) {
         const frame = stack.pop() as WorkFrame;
         if (frame.mode === "collect") {
@@ -42,12 +40,7 @@ function objDiff(obj1: any, obj2: any): Record<string, any> {
         stack.push({ mode: "collect", parent: frame.parent as Record<string, any>, key: frame.key, block });
         if (kind === "object") {
             for (const key of Object.keys(frame.left)) {
-                if (
-                    !Object.prototype.hasOwnProperty.call(
-                        frame.right,
-                        key,
-                    )
-                ) {
+                if (!Object.prototype.hasOwnProperty.call(frame.right, key)) {
                     continue;
                 }
                 stack.push({

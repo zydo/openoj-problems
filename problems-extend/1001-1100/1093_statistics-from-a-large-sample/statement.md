@@ -13,10 +13,10 @@ Calculate the following statistics:
 - `mean`: The average of the sample, calculated as the total sum of all
   elements divided by the total number of elements.
 - `median`:
-  - If the sample has an odd number of elements, then the median is the
-    middle element once the sample is sorted.
-  - If the sample has an even number of elements, then the median is the
-    average of the two middle elements once the sample is sorted.
+    - If the sample has an odd number of elements, then the median is the
+      middle element once the sample is sorted.
+    - If the sample has an even number of elements, then the median is the
+      average of the two middle elements once the sample is sorted.
 - `mode`: The number that appears the most in the sample. It is
   guaranteed to be unique.
 

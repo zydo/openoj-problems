@@ -1,7 +1,7 @@
 class Solution {
-public:
-    int earliestFinishTime(vector<int>& landStartTime, vector<int>& landDuration,
-                           vector<int>& waterStartTime, vector<int>& waterDuration) {
+  public:
+    int earliestFinishTime(vector<int> &landStartTime, vector<int> &landDuration, vector<int> &waterStartTime,
+                           vector<int> &waterDuration) {
         // Only the moment the first ride ends matters: the second ride then
         // costs max(open, finish) + duration, which never improves when the
         // hand-off gets later. So each order fixes the earliest-finishing

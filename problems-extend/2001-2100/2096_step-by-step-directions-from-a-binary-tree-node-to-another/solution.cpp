@@ -1,12 +1,12 @@
 class Solution {
-public:
-    string getDirections(TreeNode* root, int startValue, int destValue) {
+  public:
+    string getDirections(TreeNode *root, int startValue, int destValue) {
         unordered_map<int, int> parent;
         unordered_map<int, char> incoming;
         parent[root->val] = 0;
-        vector<TreeNode*> stack{root};
+        vector<TreeNode *> stack{root};
         while (!stack.empty()) {
-            TreeNode* node = stack.back();
+            TreeNode *node = stack.back();
             stack.pop_back();
             if (node->left != nullptr) {
                 parent[node->left->val] = node->val;

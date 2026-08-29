@@ -5,11 +5,7 @@ impl Solution {
         // first digit: each frame is a node plus `prefix`, the number formed
         // by the digits from the root down to (but excluding) it — appending
         // the node's value extends that number by one digit.
-        let mut stack: Vec<(&TreeNode, i32)> = root
-            .as_deref()
-            .into_iter()
-            .map(|node| (node, 0))
-            .collect();
+        let mut stack: Vec<(&TreeNode, i32)> = root.as_deref().into_iter().map(|node| (node, 0)).collect();
         let mut total = 0;
         while let Some((node, prefix)) = stack.pop() {
             let number = prefix * 10 + node.val;

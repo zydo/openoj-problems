@@ -14,12 +14,12 @@ class Solution {
         // Layer j only needs i in [j, n-k+j]: at least j elements for j
         // blocks, and at least one element per remaining k-j blocks.
         if (k == 1) {
-            return prefix[n] * (prefix[n] + 1) / 2;
+            return (prefix[n] * (prefix[n] + 1)) / 2;
         }
         long[] prev = new long[n + 1];
         long[] cur = new long[n + 1];
         for (int i = 1; i <= n - k + 1; i++) {
-            prev[i] = prefix[i] * (prefix[i] + 1) / 2;
+            prev[i] = (prefix[i] * (prefix[i] + 1)) / 2;
         }
 
         for (int j = 2; j <= k; j++) {
@@ -46,7 +46,7 @@ class Solution {
         long pMid = prefix[mid];
         for (int t = optLo; t <= hiT; t++) {
             long s = pMid - prefix[t];
-            long v = prev[t] + s * (s + 1) / 2;
+            long v = prev[t] + (s * (s + 1)) / 2;
             if (v < best) {
                 best = v;
                 bestT = t;

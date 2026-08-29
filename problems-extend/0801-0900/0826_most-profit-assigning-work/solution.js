@@ -10,9 +10,7 @@ var maxProfitAssignment = function (difficulty, profit, worker) {
     // most their ability. Sort the jobs by difficulty, carry the running
     // profit maximum, and read every worker's earning off a binary
     // search into the sorted difficulties.
-    const jobs = difficulty
-        .map((d, i) => [d, profit[i]])
-        .sort((a, b) => a[0] - b[0]);
+    const jobs = difficulty.map((d, i) => [d, profit[i]]).sort((a, b) => a[0] - b[0]);
     const hardest = [];
     const best = [];
     let top = 0;

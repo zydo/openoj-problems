@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long climbStairs(int n, vector<int>& costs) {
+    long long climbStairs(int n, vector<int> &costs) {
         // prev1/prev2/prev3 are the cheapest ways to stand on the three
         // steps below the current one. Step 0 is free; the steps below it
         // do not exist, so their sentinel costs price step 1 out of long

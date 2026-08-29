@@ -10,9 +10,7 @@ class Solution {
         // independently of the rest.
         Map<String, List<String[]>> byStudent = new HashMap<>();
         for (String[] row : completions) {
-            byStudent
-                .computeIfAbsent(row[0], key -> new ArrayList<>())
-                .add(new String[] {row[2], row[1], row[3]});
+            byStudent.computeIfAbsent(row[0], key -> new ArrayList<>()).add(new String[] { row[2], row[1], row[3] });
         }
         Map<String, Integer> counts = new HashMap<>();
         for (List<String[]> records : byStudent.values()) {
@@ -58,10 +56,6 @@ class Solution {
             return new String[0];
         }
         int split = bestPair.indexOf(' ');
-        return new String[] {
-            bestPair.substring(0, split),
-            bestPair.substring(split + 1),
-            String.valueOf(bestCount),
-        };
+        return new String[] { bestPair.substring(0, split), bestPair.substring(split + 1), String.valueOf(bestCount) };
     }
 }

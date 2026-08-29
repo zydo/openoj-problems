@@ -1,6 +1,4 @@
 class Solution {
-public:
-    long long pickGifts(vector<int>& gifts, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    long long pickGifts(vector<int> &gifts, int k) { throw logic_error("TODO"); }
 };

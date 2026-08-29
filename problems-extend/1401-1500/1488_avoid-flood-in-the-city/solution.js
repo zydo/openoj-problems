@@ -11,7 +11,8 @@ var avoidFlood = function (rains) {
         const r = rains[i];
         if (r === 0) {
             ans[i] = 1;
-            let lo = 0, hi = zeros.length;
+            let lo = 0,
+                hi = zeros.length;
             while (lo < hi) {
                 const mid = (lo + hi) >> 1;
                 if (zeros[mid] <= i) {
@@ -23,7 +24,8 @@ var avoidFlood = function (rains) {
             zeros.splice(lo, 0, i);
         } else if (last.has(r)) {
             const prev = last.get(r);
-            let lo = 0, hi = zeros.length;
+            let lo = 0,
+                hi = zeros.length;
             while (lo < hi) {
                 const mid = (lo + hi) >> 1;
                 if (zeros[mid] <= prev) {

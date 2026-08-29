@@ -31,6 +31,7 @@ class Solution {
     }
 
     private static class MaxTree {
+
         private final int size;
         private final long[] tree;
 

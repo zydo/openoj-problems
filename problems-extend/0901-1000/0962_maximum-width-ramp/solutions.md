@@ -21,11 +21,10 @@ skipped for the same reason: the first copy of a value beats every later copy.
 
 The second pass walks `j` from the right. Whenever the value on top of the
 stack is `<= nums[j]`, that top is popped and `j - top` challenges the answer.
-Popping at the *first* dominating `j` is what makes the scan exhaustive: the
+Popping at the _first_ dominating `j` is what makes the scan exhaustive: the
 remaining candidates `j'` all lie further left, so any ramp this top could
 still form is narrower than the one just recorded. In Example 1 the record
-lows of `[6,0,8,2,1,5]` sit at indices 0 and 1; scanning back, `j = 5` (the
-5) pops the 0 at index 1 for width 4, and the 6 at index 0 is only popped at
+lows of `[6,0,8,2,1,5]` sit at indices 0 and 1; scanning back, `j = 5` (the 5) pops the 0 at index 1 for width 4, and the 6 at index 0 is only popped at
 `j = 2` (width 2) — the answer is 4. A strictly decreasing array never pops
 and answers 0; an all-equal array keeps only index 0 and pops it at the last
 index for width `n - 1`.

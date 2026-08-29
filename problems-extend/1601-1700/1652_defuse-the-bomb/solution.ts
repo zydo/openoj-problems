@@ -12,7 +12,7 @@ function decrypt(code: number[], k: number): number[] {
             }
         } else {
             for (let j = 1; j <= -k; j++) {
-                total += code[((i - j) % n + n) % n];
+                total += code[(((i - j) % n) + n) % n];
             }
         }
         result[i] = total;

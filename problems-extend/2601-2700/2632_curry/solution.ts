@@ -12,10 +12,12 @@ class Solution {
         // can never leak batches into an unrelated chain.
         const curry = (fn: (...args: any[]) => any): any => {
             const arity = fn.length;
-            const collect = (sofar: any[]) => (...batch: any[]): any => {
-                const merged = sofar.concat(batch);
-                return merged.length >= arity ? fn(...merged) : collect(merged);
-            };
+            const collect =
+                (sofar: any[]) =>
+                (...batch: any[]): any => {
+                    const merged = sofar.concat(batch);
+                    return merged.length >= arity ? fn(...merged) : collect(merged);
+                };
             return collect([]);
         };
 

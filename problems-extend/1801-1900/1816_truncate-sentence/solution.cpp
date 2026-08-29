@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     // Cut right after the k-th word: each space closes one word, so the
     // k-th space (when it exists) sits exactly at the cut point.
     string truncateSentence(string s, int k) {

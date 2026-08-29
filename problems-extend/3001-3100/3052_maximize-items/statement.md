@@ -4,11 +4,11 @@
 
 Table: `Inventory`
 
-| Column Name | Type |
-| ----------- | ---- |
-| item_id | int |
-| item_type | varchar |
-| item_category | varchar |
+| Column Name    | Type    |
+| -------------- | ------- |
+| item_id        | int     |
+| item_type      | varchar |
+| item_category  | varchar |
 | square_footage | decimal |
 
 `item_id` is the column of unique values for this table.

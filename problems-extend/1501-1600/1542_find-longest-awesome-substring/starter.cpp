@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int longestAwesome(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int longestAwesome(string s) { throw logic_error("TODO"); }
 };

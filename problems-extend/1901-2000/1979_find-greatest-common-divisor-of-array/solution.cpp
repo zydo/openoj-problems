@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int findGCD(vector<int>& nums) {
+  public:
+    int findGCD(vector<int> &nums) {
         int mn = nums[0];
         int mx = nums[0];
         for (int value : nums) {

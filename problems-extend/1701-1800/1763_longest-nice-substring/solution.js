@@ -9,8 +9,7 @@ var longestNiceSubstring = function (s) {
     if (s.length < 2) {
         return "";
     }
-    const swap = (c) =>
-        c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase();
+    const swap = (c) => (c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase());
     for (let i = 0; i < s.length; i++) {
         if (!s.includes(swap(s[i]))) {
             const left = longestNiceSubstring(s.slice(0, i));

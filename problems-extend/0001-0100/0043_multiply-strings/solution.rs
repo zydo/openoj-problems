@@ -29,9 +29,6 @@ impl Solution {
         while start + 1 < digits.len() && digits[start] == 0 {
             start += 1;
         }
-        digits[start..]
-            .iter()
-            .map(|d| (b'0' + *d as u8) as char)
-            .collect()
+        digits[start..].iter().map(|d| (b'0' + *d as u8) as char).collect()
     }
 }

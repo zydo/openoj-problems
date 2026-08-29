@@ -47,7 +47,7 @@ class Solution {
             int rx = rank.get(nums[right]);
             inversions -= query(tree, ry - 1);
             update(tree, m, ry, -1);
-            inversions += (k - 1) - query(tree, rx);
+            inversions += k - 1 - query(tree, rx);
             update(tree, m, rx, 1);
             best = Math.min(best, inversions);
         }

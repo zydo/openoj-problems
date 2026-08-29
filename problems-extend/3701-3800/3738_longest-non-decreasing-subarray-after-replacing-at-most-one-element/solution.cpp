@@ -1,6 +1,6 @@
 class Solution {
   public:
-    int longestSubarray(vector<int>& nums) {
+    int longestSubarray(vector<int> &nums) {
         int n = nums.size();
         // pref[i] is the longest non-decreasing run ending at i; suff[i]
         // is the longest non-decreasing run starting at i.

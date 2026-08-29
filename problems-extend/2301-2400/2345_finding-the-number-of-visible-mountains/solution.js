@@ -20,15 +20,10 @@ var visibleMountains = function (peaks) {
         const duplicated = j - i > 1;
         const x = peaks[i][0];
         const y = peaks[i][1];
-        while (
-            stack.length > 0 &&
-            Math.abs(stack[stack.length - 1][0] - x) <= y - stack[stack.length - 1][1]
-        ) {
+        while (stack.length > 0 && Math.abs(stack[stack.length - 1][0] - x) <= y - stack[stack.length - 1][1]) {
             stack.pop();
         }
-        const covered =
-            stack.length > 0 &&
-            Math.abs(x - stack[stack.length - 1][0]) <= stack[stack.length - 1][1] - y;
+        const covered = stack.length > 0 && Math.abs(x - stack[stack.length - 1][0]) <= stack[stack.length - 1][1] - y;
         if (!covered) {
             stack.push([x, y, duplicated ? 0 : 1]);
         }

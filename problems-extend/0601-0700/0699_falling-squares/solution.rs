@@ -12,8 +12,7 @@ impl Solution {
             .collect();
         coords.sort();
         coords.dedup();
-        let index: BTreeMap<i32, usize> =
-            coords.iter().enumerate().map(|(i, &x)| (x, i)).collect();
+        let index: BTreeMap<i32, usize> = coords.iter().enumerate().map(|(i, &x)| (x, i)).collect();
         // heights[k] is the top height over the cell [coords[k], coords[k+1]).
         let mut heights = vec![0; coords.len()];
         let mut ans = Vec::with_capacity(positions.len());

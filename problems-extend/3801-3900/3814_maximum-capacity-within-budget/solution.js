@@ -12,9 +12,7 @@ var maxCapacity = function (costs, capacity, budget) {
     // pair is then reachable from its dearer machine with a prefix of
     // cheaper partners, so a prefix maximum of capacities answers "best
     // partner" in constant time per machine.
-    const machines = costs
-        .map((cost, i) => [cost, capacity[i]])
-        .sort((a, b) => a[0] - b[0]);
+    const machines = costs.map((cost, i) => [cost, capacity[i]]).sort((a, b) => a[0] - b[0]);
     const n = machines.length;
     const sortedCosts = machines.map((m) => m[0]);
     const prefMax = new Array(n).fill(0);

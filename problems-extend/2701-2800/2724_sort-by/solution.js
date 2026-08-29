@@ -11,9 +11,7 @@ class Solution {
         // engine sort internals. The undecorate pass gathers the
         // elements the sorted permutation points back to.
         const keys = arr.map((value) => fn(value));
-        const order = arr
-            .map((_, index) => index)
-            .sort((i, j) => keys[i] - keys[j] || i - j);
+        const order = arr.map((_, index) => index).sort((i, j) => keys[i] - keys[j] || i - j);
         return order.map((index) => arr[index]);
     }
 }

@@ -13,7 +13,7 @@ function sumAndMultiply(s: string, queries: number[][]): number[] {
     const mulMod = (a: number, b: number): number => {
         const a1 = Math.floor(a / 32768);
         const a0 = a - a1 * 32768;
-        return ((((a1 * b) % MOD) * 32768 + a0 * b) % MOD + MOD) % MOD;
+        return (((((a1 * b) % MOD) * 32768 + a0 * b) % MOD) + MOD) % MOD;
     };
     const n = s.length;
     const prefVal: number[] = new Array(n + 1).fill(0);

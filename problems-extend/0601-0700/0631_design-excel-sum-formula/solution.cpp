@@ -19,14 +19,12 @@ class Excel {
         formulas[row][col].clear();
     }
 
-    int get(int row, string column) {
-        return value(row, column[0] - 'A');
-    }
+    int get(int row, string column) { return value(row, column[0] - 'A'); }
 
     int sum(int row, string column, vector<string> numbers) {
         int col = column[0] - 'A';
         vector<pair<int, int>> references;
-        for (const string& number : numbers) {
+        for (const string &number : numbers) {
             size_t separator = number.find(':');
             if (separator == string::npos) {
                 references.push_back(cell(number));
@@ -46,19 +44,17 @@ class Excel {
 
   private:
     // A cell token is one column letter followed by the row number.
-    pair<int, int> cell(const string& token) {
-        return {stoi(token.substr(1)), token[0] - 'A'};
-    }
+    pair<int, int> cell(const string &token) { return {stoi(token.substr(1)), token[0] - 'A'}; }
 
     int value(int row, int col) {
-        vector<pair<int, int>>& references = formulas[row][col];
+        vector<pair<int, int>> &references = formulas[row][col];
         if (references.empty()) {
             return values[row][col];
         }
         int total = 0;
         // Recursing into each reference is the whole update story: no
         // propagation, no cache, the chain recomputed on every get.
-        for (const pair<int, int>& reference : references) {
+        for (const pair<int, int> &reference : references) {
             total += value(reference.first, reference.second);
         }
         return total;

@@ -13,11 +13,13 @@ class Solution {
             int yj = 1;
             while (xi + yj <= bound) {
                 seen.insert(xi + yj);
-                if (y == 1) break;
+                if (y == 1)
+                    break;
                 yj *= y;
             }
             // The same cap on the x-ladder itself.
-            if (x == 1) break;
+            if (x == 1)
+                break;
             xi *= x;
         }
         // The set already holds every distinct legal sum; sorting

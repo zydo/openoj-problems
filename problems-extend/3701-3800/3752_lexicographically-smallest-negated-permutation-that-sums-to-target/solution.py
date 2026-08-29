@@ -17,6 +17,4 @@ class Solution:
             if value <= deficit:
                 negated.add(value)
                 deficit -= value
-        return [-v for v in range(n, 0, -1) if v in negated] + [
-            v for v in range(1, n + 1) if v not in negated
-        ]
+        return [-v for v in range(n, 0, -1) if v in negated] + [v for v in range(1, n + 1) if v not in negated]

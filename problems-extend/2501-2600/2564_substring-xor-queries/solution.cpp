@@ -19,7 +19,8 @@ class Solution {
                 int val = 0;
                 for (int k = left; k < left + length; ++k)
                     val = val * 2 + (s[k] - '0');
-                if (!best.count(val)) best[val] = {left, left + length - 1};
+                if (!best.count(val))
+                    best[val] = {left, left + length - 1};
             }
         }
         vector<vector<int>> answer;

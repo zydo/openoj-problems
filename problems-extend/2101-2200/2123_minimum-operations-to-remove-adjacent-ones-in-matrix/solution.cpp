@@ -9,7 +9,8 @@ class Solution {
         const int directions[4][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
         for (int row = 0; row < rows; ++row) {
             for (int column = 0; column < columns; ++column) {
-                if (grid[row][column] == 0 || (row + column) % 2 == 1) continue;
+                if (grid[row][column] == 0 || (row + column) % 2 == 1)
+                    continue;
                 int vertex = row * columns + column;
                 leftVertices.push_back(vertex);
                 for (const auto &direction : directions) {
@@ -31,12 +32,12 @@ class Solution {
         int matching = 0;
         while (true) {
             int shortest = layer(leftVertices, adjacency, pairLeft, pairRight, distance, infinity);
-            if (shortest == infinity) break;
+            if (shortest == infinity)
+                break;
             vector<int> nextEdge(total);
             for (int vertex : leftVertices) {
-                if (pairLeft[vertex] == -1
-                    && augment(vertex, shortest, adjacency, pairLeft, pairRight, distance, infinity, nextEdge, stack,
-                               pathEdges)) {
+                if (pairLeft[vertex] == -1 && augment(vertex, shortest, adjacency, pairLeft, pairRight, distance,
+                                                      infinity, nextEdge, stack, pathEdges)) {
                     ++matching;
                 }
             }
@@ -60,10 +61,12 @@ class Solution {
         while (!pending.empty()) {
             int vertex = pending.front();
             pending.pop();
-            if (distance[vertex] >= shortest) continue;
+            if (distance[vertex] >= shortest)
+                continue;
             for (int neighbor : adjacency[vertex]) {
                 int mate = pairRight[neighbor];
-                if (mate == -1) shortest = distance[vertex] + 1;
+                if (mate == -1)
+                    shortest = distance[vertex] + 1;
                 else if (distance[mate] == infinity) {
                     distance[mate] = distance[vertex] + 1;
                     pending.push(mate);
@@ -74,8 +77,8 @@ class Solution {
     }
 
     bool augment(int root, int shortest, const vector<vector<int>> &adjacency, vector<int> &pairLeft,
-                 vector<int> &pairRight, vector<int> &distance, int infinity, vector<int> &nextEdge,
-                 vector<int> &stack, vector<int> &pathEdges) {
+                 vector<int> &pairRight, vector<int> &distance, int infinity, vector<int> &nextEdge, vector<int> &stack,
+                 vector<int> &pathEdges) {
         int size = 1;
         stack[0] = root;
         while (size > 0) {
@@ -88,7 +91,8 @@ class Solution {
             int neighbor = adjacency[vertex][nextEdge[vertex]++];
             int mate = pairRight[neighbor];
             if (mate == -1) {
-                if (distance[vertex] + 1 != shortest) continue;
+                if (distance[vertex] + 1 != shortest)
+                    continue;
                 pairLeft[vertex] = neighbor;
                 pairRight[neighbor] = vertex;
                 for (int level = size - 2; level >= 0; --level) {

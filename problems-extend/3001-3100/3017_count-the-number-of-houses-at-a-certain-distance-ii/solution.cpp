@@ -19,7 +19,7 @@ class Solution {
         // Difference arrays over distance buckets, holding the improving
         // unordered pairs; they are prefixed into exact per-bucket counts.
         vector<long long> departures(n + 2, 0), arrivals(n + 2, 0);
-        auto add_range = [&](vector<long long>& diff, int low, int high) {
+        auto add_range = [&](vector<long long> &diff, int low, int high) {
             // Range update in difference form, skipped when empty.
             if (low <= high) {
                 ++diff[low];

@@ -3,7 +3,7 @@
 
 class Solution {
   public:
-    bool isPossibleToCutPath(std::vector<std::vector<int>>& grid) {
+    bool isPossibleToCutPath(std::vector<std::vector<int>> &grid) {
         // Only a 1->0 flip can ever help, so the game is decided by
         // vertex cuts of the monotone 1-cell DAG: at most one flip
         // succeeds exactly when fewer than two vertex-disjoint
@@ -32,8 +32,7 @@ class Solution {
                 if (grid[i][j] == 0)
                     continue;
                 int cell = i * n + j;
-                bool corner =
-                    (i == 0 && j == 0) || (i == m - 1 && j == n - 1);
+                bool corner = (i == 0 && j == 0) || (i == m - 1 && j == n - 1);
                 connect(2 * cell, 2 * cell + 1, corner ? inf : 1);
                 if (j + 1 < n && grid[i][j + 1] == 1)
                     connect(2 * cell + 1, 2 * (cell + 1), inf);

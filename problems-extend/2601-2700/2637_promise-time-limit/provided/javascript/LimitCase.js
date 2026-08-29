@@ -28,8 +28,7 @@ class LimitClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -71,16 +70,10 @@ class LimitCase {
         // Lexical shadowing plus the global patch above both route to the
         // same virtual clock: an inner arrow's bare `setTimeout` resolves
         // to this parameter even without the patch.
-        this.fn = new Function("setTimeout", "return (" + source + ");")(
-            function (callback, delay) {
-                openojLimitClock.scheduleFrom(
-                    openojLimitClock.now,
-                    Number(delay) || 0,
-                    callback,
-                );
-                return 0;
-            },
-        );
+        this.fn = new Function("setTimeout", "return (" + source + ");")(function (callback, delay) {
+            openojLimitClock.scheduleFrom(openojLimitClock.now, Number(delay) || 0, callback);
+            return 0;
+        });
         this.outcome = null;
     }
 

@@ -43,9 +43,7 @@ class Solution:
                     right is None or (right[0] and node.val < right[2])
                 )
                 if is_bst:
-                    size = 1 + (left[1] if left is not None else 0) + (
-                        right[1] if right is not None else 0
-                    )
+                    size = 1 + (left[1] if left is not None else 0) + (right[1] if right is not None else 0)
                     if size > best:
                         best = size
                     report = (

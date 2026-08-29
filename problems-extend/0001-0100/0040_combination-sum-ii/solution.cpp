@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+    vector<vector<int>> combinationSum2(vector<int> &candidates, int target) {
         // Sort in place: every emitted combination is ascending, and growing
         // combinations left to right emits them in lexicographic order.
         sort(candidates.begin(), candidates.end());
@@ -13,7 +13,7 @@ class Solution {
     }
 
   private:
-    void backtrack(vector<int>& arr, int start, int remaining, vector<int>& current, vector<vector<int>>& result) {
+    void backtrack(vector<int> &arr, int start, int remaining, vector<int> &current, vector<vector<int>> &result) {
         if (remaining == 0) {
             // Hit the target exactly: snapshot the current path.
             result.push_back(current);

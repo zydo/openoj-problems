@@ -10,6 +10,7 @@ class MapSum {
     // instead of double-counting -- and sum() walks the prefix and returns
     // the node's total, or 0 when the walk falls off the trie.
     private static class Node {
+
         final Map<Character, Node> children = new HashMap<>();
         long score;
     }

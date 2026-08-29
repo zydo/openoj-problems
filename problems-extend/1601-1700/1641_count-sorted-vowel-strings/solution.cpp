@@ -1,7 +1,7 @@
 class Solution {
-public:
+  public:
     int countVowelStrings(int n) {
-        array<int, 5> dp = { 1, 1, 1, 1, 1 };
+        array<int, 5> dp = {1, 1, 1, 1, 1};
         for (int step = 0; step < n - 1; step++) {
             array<int, 5> next{};
             int prefix = 0;

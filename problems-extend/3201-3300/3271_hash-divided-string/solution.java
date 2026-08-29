@@ -13,7 +13,7 @@ class Solution {
             for (int j = base; j < base + k; ++j) {
                 total += s.charAt(j) - 'a';
             }
-            result[base / k] = (char) ('a' + total % 26);
+            result[base / k] = (char) ('a' + (total % 26));
         }
         return new String(result);
     }

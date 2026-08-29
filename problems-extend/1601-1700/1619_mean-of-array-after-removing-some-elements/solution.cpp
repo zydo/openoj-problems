@@ -1,6 +1,6 @@
 class Solution {
-public:
-    double trimMean(vector<int>& arr) {
+  public:
+    double trimMean(vector<int> &arr) {
         vector<int> a = arr;
         sort(a.begin(), a.end());
         int n = a.size();

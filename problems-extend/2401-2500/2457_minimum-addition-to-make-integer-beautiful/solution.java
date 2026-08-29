@@ -10,7 +10,7 @@ class Solution {
         long original = n;
         long base = 10;
         while (digitSum(n) > target) {
-            n = ((n / base) + 1) * base;
+            n = (n / base + 1) * base;
             base *= 10;
         }
         return n - original;

@@ -20,7 +20,7 @@ for each row:
 - `Isosceles`: It's a triangle with 2 sides of equal length.
 - `Scalene`: It's a triangle with 3 sides of differing lengths.
 - `Not A Triangle`: The given values of A, B, and C don't form a
-triangle.
+  triangle.
 
 Return the result table in any order.
 

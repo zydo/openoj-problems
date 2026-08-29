@@ -12,8 +12,7 @@ impl Solution {
         for query in queries.iter() {
             let (index, color) = (query[0] as usize, query[1]);
             let old_color = colors[index];
-            for (j, against) in [(index.wrapping_sub(1), old_color),
-                                 (index + 1, old_color)] {
+            for (j, against) in [(index.wrapping_sub(1), old_color), (index + 1, old_color)] {
                 if j < n && colors[j] != 0 && colors[j] == against {
                     same -= 1;
                 }

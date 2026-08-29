@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> delayedCount(vector<int>& nums, int k) {
+    vector<int> delayedCount(vector<int> &nums, int k) {
         // Sweep i from the right; freq counts occurrences of each value in
         // the window [i + k + 1, n - 1], so stepping i down inserts exactly
         // nums[i + k + 1] and the delayed count is a single lookup.

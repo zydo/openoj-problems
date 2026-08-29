@@ -2,7 +2,7 @@
 
 ## Pairwise substring test
 
-A word belongs in the answer exactly when it appears inside some *other*
+A word belongs in the answer exactly when it appears inside some _other_
 word, so the simplest correct plan is to check every pair: for each word
 `words[i]`, scan the other words `words[j]` and report `words[i]` as soon
 as one `words[j]` contains it. Because the strings are unique, the

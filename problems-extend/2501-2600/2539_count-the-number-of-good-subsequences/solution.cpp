@@ -13,12 +13,15 @@ class Solution {
         // every product and is dropped once per term. Factorial tables
         // modulo 1e9+7, division via Fermat inverses.
         std::vector<int> counts(26, 0);
-        for (char ch : s) ++counts[ch - 'a'];
+        for (char ch : s)
+            ++counts[ch - 'a'];
         std::vector<int> present;
         int top = 0;
         for (int c : counts) {
-            if (c > top) top = c;
-            if (c > 0) present.push_back(c);
+            if (c > top)
+                top = c;
+            if (c > 0)
+                present.push_back(c);
         }
         std::vector<long long> fact(top + 1, 1), invFact(top + 1, 1);
         for (int i = 2; i <= top; ++i) {
@@ -40,9 +43,9 @@ class Solution {
     }
 
   private:
-    static long long comb(int n, int k, const std::vector<long long>& fact,
-                          const std::vector<long long>& invFact) {
-        if (k > n) return 0;
+    static long long comb(int n, int k, const std::vector<long long> &fact, const std::vector<long long> &invFact) {
+        if (k > n)
+            return 0;
         return fact[n] * invFact[k] % kMod * invFact[n - k] % kMod;
     }
 
@@ -50,7 +53,8 @@ class Solution {
         long long result = 1;
         base %= kMod;
         while (exp > 0) {
-            if (exp & 1) result = result * base % kMod;
+            if (exp & 1)
+                result = result * base % kMod;
             base = base * base % kMod;
             exp >>= 1;
         }

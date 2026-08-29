@@ -1,4 +1,5 @@
 class Solution {
+
     public long minCost(int[] startPos, int[] homePos, int[] rowCosts, int[] colCosts) {
         long total = 0;
         int row = startPos[0];

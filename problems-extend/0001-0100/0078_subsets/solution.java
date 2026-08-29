@@ -9,7 +9,7 @@ class Solution {
         List<int[]> subsets = new ArrayList<>();
         // Count masks upward from all bits clear ([]) to all bits set (the
         // whole array): bit i set means nums[i] is in the subset.
-        for (int mask = 0; mask < (1 << n); mask++) {
+        for (int mask = 0; mask < 1 << n; mask++) {
             int[] current = new int[n];
             int size = 0;
             for (int i = 0; i < n; i++) {

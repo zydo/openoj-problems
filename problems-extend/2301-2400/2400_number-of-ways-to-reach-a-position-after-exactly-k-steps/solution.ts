@@ -11,7 +11,7 @@ function numberOfWays(startPos: number, endPos: number, k: number): number {
     const mul = (a: number, b: number): number => {
         const aHi = Math.floor(a / 32768);
         const aLo = a % 32768;
-        return ((((aHi * b) % MOD) * 32768) + aLo * b) % MOD;
+        return (((aHi * b) % MOD) * 32768 + aLo * b) % MOD;
     };
     const d = Math.abs(endPos - startPos);
     if (d > k || (k - d) % 2 !== 0) {

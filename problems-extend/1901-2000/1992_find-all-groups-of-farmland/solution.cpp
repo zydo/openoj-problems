@@ -14,7 +14,8 @@ class Solution {
         int dc[4] = {0, 0, 1, -1};
         for (int r = 0; r < m; ++r) {
             for (int c = 0; c < n; ++c) {
-                if (land[r][c] != 1 || seen[r][c]) continue;
+                if (land[r][c] != 1 || seen[r][c])
+                    continue;
                 seen[r][c] = true;
                 queue<pair<int, int>> q;
                 q.push({r, c});
@@ -28,8 +29,7 @@ class Solution {
                     maxC = max(maxC, cc);
                     for (int d = 0; d < 4; ++d) {
                         int nr = cr + dr[d], nc = cc + dc[d];
-                        if (0 <= nr && nr < m && 0 <= nc && nc < n &&
-                            land[nr][nc] == 1 && !seen[nr][nc]) {
+                        if (0 <= nr && nr < m && 0 <= nc && nc < n && land[nr][nc] == 1 && !seen[nr][nc]) {
                             seen[nr][nc] = true;
                             q.push({nr, nc});
                         }

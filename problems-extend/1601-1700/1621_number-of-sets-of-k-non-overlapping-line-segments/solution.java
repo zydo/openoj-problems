@@ -20,11 +20,11 @@ class Solution {
         long[] fact = new long[total + 1];
         fact[0] = 1;
         for (int i = 1; i <= total; i++) {
-            fact[i] = fact[i - 1] * i % mod;
+            fact[i] = (fact[i - 1] * i) % mod;
         }
         long invPick = modPow(fact[pick], mod - 2, mod);
         long invRest = modPow(fact[total - pick], mod - 2, mod);
-        return (int) (fact[total] * invPick % mod * invRest % mod);
+        return (int) ((((fact[total] * invPick) % mod) * invRest) % mod);
     }
 
     private long modPow(long base, long exp, long mod) {
@@ -32,9 +32,9 @@ class Solution {
         base %= mod;
         while (exp > 0) {
             if ((exp & 1) == 1) {
-                result = result * base % mod;
+                result = (result * base) % mod;
             }
-            base = base * base % mod;
+            base = (base * base) % mod;
             exp >>= 1;
         }
         return result;

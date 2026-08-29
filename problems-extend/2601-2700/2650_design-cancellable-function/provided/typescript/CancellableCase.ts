@@ -38,8 +38,7 @@ class CancellableClock {
         };
         const position = this.ticks.findIndex(
             (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+                scheduled.time > tick.time || (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
         );
         if (position === -1) {
             this.ticks.push(tick);
@@ -65,14 +64,9 @@ class CancellableClock {
 const openojCancellableClock = new CancellableClock();
 // Ambient timer name for submissions (the judge compiles with ES libs
 // only): at run time this resolves to the virtual patched version below.
-declare const setTimeout: (
-    callback: (...args: any[]) => void,
-    delay?: number,
-) => number;
-const openojBuiltinSetTimeout: (
-    callback: (...args: any[]) => void,
-    delay?: number,
-) => unknown = (globalThis as any).setTimeout;
+declare const setTimeout: (callback: (...args: any[]) => void, delay?: number) => number;
+const openojBuiltinSetTimeout: (callback: (...args: any[]) => void, delay?: number) => unknown = (globalThis as any)
+    .setTimeout;
 
 (globalThis as any).setTimeout = function openojVirtualSetTimeout(
     callback: (...args: any[]) => void,
@@ -99,15 +93,11 @@ class CancellableCase {
         // Lexical shadowing plus the global patch above both route to the
         // same virtual clock: a bare `setTimeout` inside the case's
         // generator body resolves to this parameter even without the patch.
-        const build = new Function(
-            "setTimeout",
-            "return (" + source + ");",
-        )(function (callback: (...args: any[]) => void, delay?: number) {
-            openojCancellableClock.scheduleFrom(
-                openojCancellableClock.now,
-                Number(delay) || 0,
-                callback,
-            );
+        const build = new Function("setTimeout", "return (" + source + ");")(function (
+            callback: (...args: any[]) => void,
+            delay?: number,
+        ) {
+            openojCancellableClock.scheduleFrom(openojCancellableClock.now, Number(delay) || 0, callback);
             return 0;
         }) as () => Generator;
         this.generatorFactory = build;
@@ -129,11 +119,7 @@ class CancellableCase {
     // the cancel callback on the virtual clock when requested, pump every
     // scheduled settlement in due-time order with microtask checkpoints
     // between fires, then adopt the returned promise's fate as outcome.
-    async drive(
-        cancellableFn: (
-            generator: Generator,
-        ) => [() => void, Promise<unknown>],
-    ): Promise<void> {
+    async drive(cancellableFn: (generator: Generator) => [() => void, Promise<unknown>]): Promise<void> {
         if (typeof cancellableFn !== "function") {
             throw new Error("drive expects the submission's cancellable function");
         }

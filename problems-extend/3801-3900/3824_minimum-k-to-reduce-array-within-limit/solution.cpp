@@ -33,6 +33,6 @@ class Solution {
             else
                 lo = mid + 1;
         }
-        return (int) lo;
+        return (int)lo;
     }
 };

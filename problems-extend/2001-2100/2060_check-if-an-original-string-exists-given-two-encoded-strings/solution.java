@@ -43,12 +43,14 @@ class Solution {
             answer = search(i, j + 1, difference - 1, s1, s2, memo);
         } else if (difference < 0 && i < s1.length() && Character.isLetter(s1.charAt(i))) {
             answer = search(i + 1, j, difference + 1, s1, s2, memo);
-        } else if (difference == 0
-                && i < s1.length()
-                && j < s2.length()
-                && Character.isLetter(s1.charAt(i))
-                && Character.isLetter(s2.charAt(j))
-                && s1.charAt(i) == s2.charAt(j)) {
+        } else if (
+            difference == 0 &&
+            i < s1.length() &&
+            j < s2.length() &&
+            Character.isLetter(s1.charAt(i)) &&
+            Character.isLetter(s2.charAt(j)) &&
+            s1.charAt(i) == s2.charAt(j)
+        ) {
             answer = search(i + 1, j + 1, 0, s1, s2, memo);
         }
         memo.put(key, answer);

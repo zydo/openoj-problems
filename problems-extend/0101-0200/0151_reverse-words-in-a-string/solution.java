@@ -7,7 +7,9 @@ class Solution {
         // Flip the whole text once: word order reverses, and every word's
         // letters come out backwards. The sweep below puts the letters back.
         reverseRange(chars, 0, chars.length - 1);
-        int n = chars.length, write = 0, read = 0;
+        int n = chars.length,
+            write = 0,
+            read = 0;
         while (read < n) {
             // Skip the run of spaces before the next word.
             while (read < n && chars[read] == ' ') read++;

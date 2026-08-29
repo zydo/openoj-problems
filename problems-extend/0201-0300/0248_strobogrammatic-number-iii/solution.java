@@ -77,6 +77,6 @@ class Solution {
         if (digit == '9') return '6';
         // 0, 1 and 8 rotate to themselves; anything else is not a
         // strobogrammatic digit and fails any equality test.
-        return (digit == '0' || digit == '1' || digit == '8') ? digit : '?';
+        return digit == '0' || digit == '1' || digit == '8' ? digit : '?';
     }
 }

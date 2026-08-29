@@ -1,6 +1,6 @@
 class Solution {
   public:
-    long long minCost(vector<int>& nums) {
+    long long minCost(vector<int> &nums) {
         // Every operation removes two of the three frontmost elements, so
         // what remains is always an untouched suffix plus at most one
         // element left behind in front of it. Row j holds, at index c + 1,
@@ -29,15 +29,14 @@ class Solution {
 
         vector<vector<long long>> ring = {rowNm2, rowNm1, rowN};
         for (int j = n - 3; j >= 0; --j) {
-            const vector<long long>& r2 = ring[1];
-            const vector<long long>& r3 = ring[2];
+            const vector<long long> &r2 = ring[1];
+            const vector<long long> &r3 = ring[2];
             long long a = nums[j], b = nums[j + 1], d = nums[j + 2];
             long long pairCost = max(a, b);
             // No leftover: nums[j], nums[j+1], nums[j+2] meet one
             // operation and the survivor becomes the next leftover.
             vector<long long> row(j + 1);
-            row[0] = min(min(max(b, d) + r3[j + 1], max(a, d) + r3[j + 2]),
-                         pairCost + r3[j + 3]);
+            row[0] = min(min(max(b, d) + r3[j + 1], max(a, d) + r3[j + 2]), pairCost + r3[j + 3]);
             // With leftover nums[c]: the front three are nums[c], a, b.
             long long k1 = r2[j + 2], k2 = r2[j + 1];
             for (int c = 0; c < j; ++c) {

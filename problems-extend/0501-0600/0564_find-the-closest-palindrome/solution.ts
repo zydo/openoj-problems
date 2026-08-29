@@ -19,7 +19,14 @@ function nearestPalindromic(n: string): string {
         if (shifted.length !== half || (shifted === "0" && length > 1)) {
             continue;
         }
-        candidates.push(shifted + shifted.slice(0, length - half).split("").reverse().join(""));
+        candidates.push(
+            shifted +
+                shifted
+                    .slice(0, length - half)
+                    .split("")
+                    .reverse()
+                    .join(""),
+        );
     }
     candidates.push(length === 1 ? "0" : "9".repeat(length - 1));
     candidates.push("1" + "0".repeat(length - 1) + "1");

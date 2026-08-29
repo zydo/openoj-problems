@@ -11,7 +11,10 @@ var minDayskVariants = function (points, k) {
     // distance, so the minimizer lies inside it. With coordinates bounded by
     // 100 the box has at most 100*100 points and n <= 50, so sorting the n
     // distances per point is cheap.
-    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    let minX = Infinity,
+        maxX = -Infinity,
+        minY = Infinity,
+        maxY = -Infinity;
     for (const [x, y] of points) {
         minX = Math.min(minX, x);
         maxX = Math.max(maxX, x);

@@ -25,7 +25,5 @@ class Solution {
     }
 
   private:
-    static long long encode(long long x, long long y) {
-        return ((x + 100000LL) << 32) | (y + 100000LL);
-    }
+    static long long encode(long long x, long long y) { return ((x + 100000LL) << 32) | (y + 100000LL); }
 };

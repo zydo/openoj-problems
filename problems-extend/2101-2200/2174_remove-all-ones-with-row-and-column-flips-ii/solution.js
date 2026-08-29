@@ -24,7 +24,7 @@ var removeOnes = function (grid) {
             }
             let cleared = state;
             for (let j = 0; j < n; ++j) {
-                cleared &= ~(1 << ((cell / n | 0) * n + j));
+                cleared &= ~(1 << (((cell / n) | 0) * n + j));
             }
             for (let i = 0; i < m; ++i) {
                 cleared &= ~(1 << (i * n + (cell % n)));

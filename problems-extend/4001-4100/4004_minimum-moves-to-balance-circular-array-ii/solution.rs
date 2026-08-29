@@ -1,5 +1,5 @@
-use std::collections::BinaryHeap;
 use std::cmp::Reverse;
+use std::collections::BinaryHeap;
 
 impl Solution {
     // Parametric wrap cut: fix the signed flow t across the wrap edge; the

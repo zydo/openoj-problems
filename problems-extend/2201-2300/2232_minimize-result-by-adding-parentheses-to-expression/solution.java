@@ -16,8 +16,13 @@ class Solution {
                 if (value < bestValue) {
                     bestValue = value;
                     bestForm =
-                            left.substring(0, i) + "(" + left.substring(i) + "+"
-                                    + right.substring(0, j) + ")" + right.substring(j);
+                        left.substring(0, i) +
+                        "(" +
+                        left.substring(i) +
+                        "+" +
+                        right.substring(0, j) +
+                        ")" +
+                        right.substring(j);
                 }
             }
         }

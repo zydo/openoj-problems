@@ -1,4 +1,5 @@
 class Solution {
+
     public String largestGoodInteger(String num) {
         String best = "";
         int run = 1;

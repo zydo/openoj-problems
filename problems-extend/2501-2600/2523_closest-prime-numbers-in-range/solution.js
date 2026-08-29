@@ -20,10 +20,7 @@ var closestPrimes = function (left, right) {
     let previous = -1;
     for (let n = left; n <= right; ++n) {
         if (!sieve[n]) continue;
-        if (
-            previous !== -1 &&
-            (bestPair[0] === -1 || n - previous < bestPair[1] - bestPair[0])
-        ) {
+        if (previous !== -1 && (bestPair[0] === -1 || n - previous < bestPair[1] - bestPair[0])) {
             bestPair[0] = previous;
             bestPair[1] = n;
         }

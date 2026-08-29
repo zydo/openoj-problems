@@ -1,6 +1,6 @@
 class Solution {
-public:
-    vector<int> recoverArray(vector<int>& nums) {
+  public:
+    vector<int> recoverArray(vector<int> &nums) {
         vector<int> values = nums;
         sort(values.begin(), values.end());
         int targetLength = values.size() / 2;

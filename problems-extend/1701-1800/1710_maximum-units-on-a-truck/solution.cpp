@@ -1,13 +1,13 @@
 class Solution {
   public:
-    int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {
+    int maximumUnits(vector<vector<int>> &boxTypes, int truckSize) {
         // Every box spends one truck slot regardless of type, so each slot
         // should hold the richest box still available: sort by units per box
         // descending and fill the truck front-to-back.
-        sort(boxTypes.begin(), boxTypes.end(), [](const vector<int>& a, const vector<int>& b) { return a[1] > b[1]; });
+        sort(boxTypes.begin(), boxTypes.end(), [](const vector<int> &a, const vector<int> &b) { return a[1] > b[1]; });
         long long unitsTotal = 0;
         int remaining = truckSize;
-        for (const auto& box : boxTypes) {
+        for (const auto &box : boxTypes) {
             if (remaining == 0) {
                 break;
             }

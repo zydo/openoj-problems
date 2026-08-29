@@ -11,7 +11,13 @@ class Solution {
     }
 
     private boolean match(
-            String pattern, String s, int pi, int si, Map<Character, String> charToWord, Map<String, Character> wordToChar) {
+        String pattern,
+        String s,
+        int pi,
+        int si,
+        Map<Character, String> charToWord,
+        Map<String, Character> wordToChar
+    ) {
         if (pi == pattern.length()) {
             // Every char placed: a match only when s is fully consumed.
             return si == s.length();

@@ -6,7 +6,8 @@ class Solution {
         // where s and goal disagree: exactly two that cross, or none with a
         // repeated letter to trade.
         if (s.length() != goal.length()) return false;
-        int first = -1, second = -1;
+        int first = -1,
+            second = -1;
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) != goal.charAt(i)) {
                 if (first == -1) first = i;

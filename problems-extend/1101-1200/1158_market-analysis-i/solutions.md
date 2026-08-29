@@ -6,7 +6,7 @@ Every user appears in the output exactly once, buyers or not — so the
 driving table is `Users`, left-joined to an aggregate of `Orders`. The
 aggregate pre-filters to the year that matters (`strftime('%Y', order_date)
 = '2019'`, equivalently a date-range predicate) and counts rows per
-`buyer_id`; only *buying* counts, which the grouping key expresses directly
+`buyer_id`; only _buying_ counts, which the grouping key expresses directly
 — selling activity never enters the count.
 
 The join must be **left**: an inner join would silently drop the users who

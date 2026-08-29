@@ -7,7 +7,7 @@ the highest-id bidder on ties, and keep the heap lazy.
 ## Lazy-deletion heaps keyed by (amount, userId)
 
 Deleting an arbitrary element from a heap is awkward, but the contract
-never asks for it by position: `addBid` and `updateBid` both *replace* a
+never asks for it by position: `addBid` and `updateBid` both _replace_ a
 user's entry and `removeBid` retires one, so it suffices to leave the old
 heap entries in place and mark them dead. Each push stamps a unique
 sequence number, and a `latestSeq` map records the newest stamp per

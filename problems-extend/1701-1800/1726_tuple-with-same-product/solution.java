@@ -19,7 +19,7 @@ class Solution {
         }
         int total = 0;
         for (int count : pairs.values()) {
-            total += count * (count - 1) / 2 * 8;
+            total += ((count * (count - 1)) / 2) * 8;
         }
         return total;
     }

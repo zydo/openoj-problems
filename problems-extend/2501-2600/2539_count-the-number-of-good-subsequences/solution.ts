@@ -11,8 +11,8 @@ function countGoodSubsequences(s: string): number {
         let result = 1n;
         base %= MOD;
         while (exp > 0n) {
-            if (exp & 1n) result = result * base % MOD;
-            base = base * base % MOD;
+            if (exp & 1n) result = (result * base) % MOD;
+            base = (base * base) % MOD;
             exp >>= 1n;
         }
         return result;
@@ -24,22 +24,22 @@ function countGoodSubsequences(s: string): number {
     const top = Math.max(...counts);
     const fact: bigint[] = new Array(top + 1).fill(1n);
     for (let i = 2; i <= top; ++i) {
-        fact[i] = fact[i - 1] * BigInt(i) % MOD;
+        fact[i] = (fact[i - 1] * BigInt(i)) % MOD;
     }
     const invFact: bigint[] = new Array(top + 1).fill(1n);
     invFact[top] = modPow(fact[top], MOD - 2n);
     for (let i = top; i > 0; --i) {
-        invFact[i - 1] = invFact[i] * BigInt(i) % MOD;
+        invFact[i - 1] = (invFact[i] * BigInt(i)) % MOD;
     }
     const comb = (n: number, k: number): bigint =>
-        k > n ? 0n : fact[n] * invFact[k] % MOD * invFact[n - k] % MOD;
+        k > n ? 0n : (((fact[n] * invFact[k]) % MOD) * invFact[n - k]) % MOD;
 
     const present: number[] = counts.filter((c) => c > 0);
     let total = 0n;
     for (let m = 1; m <= top; ++m) {
         let prod = 1n;
         for (const count of present) {
-            prod = prod * (comb(count, m) + 1n) % MOD;
+            prod = (prod * (comb(count, m) + 1n)) % MOD;
         }
         total += prod - 1n;
     }

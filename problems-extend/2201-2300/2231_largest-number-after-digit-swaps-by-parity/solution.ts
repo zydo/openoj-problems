@@ -9,8 +9,6 @@ function largestInteger(num: number): number {
     evens.sort((a, b) => Number(b) - Number(a));
     let oddIndex = 0;
     let evenIndex = 0;
-    const out = digits.map((ch) =>
-        Number(ch) % 2 === 1 ? odds[oddIndex++] : evens[evenIndex++]
-    );
+    const out = digits.map((ch) => (Number(ch) % 2 === 1 ? odds[oddIndex++] : evens[evenIndex++]));
     return Number(out.join(""));
 }

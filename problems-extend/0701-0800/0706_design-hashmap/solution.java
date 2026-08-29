@@ -28,7 +28,7 @@ class MyHashMap {
                 return;
             }
         }
-        bucket.add(new int[] {key, value});
+        bucket.add(new int[] { key, value });
     }
 
     public int get(int key) {

@@ -1,6 +1,6 @@
 class Solution {
-public:
-    double equalizeWater(vector<int>& buckets, int loss) {
+  public:
+    double equalizeWater(vector<int> &buckets, int loss) {
         double low = 0.0;
         double high = *max_element(buckets.begin(), buckets.end());
         double retained = (100.0 - loss) / 100.0;

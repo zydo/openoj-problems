@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string truncateSentence(string s, int k) {
-        throw logic_error("TODO");
-    }
+  public:
+    string truncateSentence(string s, int k) { throw logic_error("TODO"); }
 };

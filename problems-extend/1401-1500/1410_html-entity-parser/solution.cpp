@@ -6,8 +6,7 @@ class Solution {
   public:
     std::string entityParser(std::string text) {
         std::unordered_map<std::string, char> entities = {
-            {"&quot;", '"'},  {"&apos;", '\''}, {"&amp;", '&'},
-            {"&gt;", '>'},    {"&lt;", '<'},    {"&frasl;", '/'},
+            {"&quot;", '"'}, {"&apos;", '\''}, {"&amp;", '&'}, {"&gt;", '>'}, {"&lt;", '<'}, {"&frasl;", '/'},
         };
         std::string result;
         result.reserve(text.size());
@@ -16,8 +15,8 @@ class Solution {
         while (i < n) {
             if (text[i] == '&') {
                 bool matched = false;
-                for (const auto& pair : entities) {
-                    const std::string& entity = pair.first;
+                for (const auto &pair : entities) {
+                    const std::string &entity = pair.first;
                     if (text.compare(i, entity.size(), entity) == 0) {
                         result.push_back(pair.second);
                         i += (int)entity.size();

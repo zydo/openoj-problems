@@ -26,19 +26,13 @@ class SleepCase {
     async measure(asyncSleep: SleepFunction): Promise<void> {
         const startedAt = Date.now();
         const pending = asyncSleep(this.millis) as unknown;
-        if (
-            !pending ||
-            typeof pending !== "object" ||
-            typeof (pending as { then?: unknown }).then !== "function"
-        ) {
+        if (!pending || typeof pending !== "object" || typeof (pending as { then?: unknown }).then !== "function") {
             throw new Error("sleep must be asynchronous (return a Promise)");
         }
         await pending;
         const waited = Date.now() - startedAt;
         if (waited < this.millis - EARLY_TOLERANCE_MS) {
-            throw new Error(
-                `sleep(${this.millis}) resolved after only ${waited} ms`
-            );
+            throw new Error(`sleep(${this.millis}) resolved after only ${waited} ms`);
         }
         this.outputs.push(["resolved"]);
     }

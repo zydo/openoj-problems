@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int minOperations(vector<int>& nums) {
+  public:
+    int minOperations(vector<int> &nums) {
         // Sieve of Eratosthenes up to a fixed bound. Every nums[i] is at
         // most 1e5, and the largest prime gap below 1e5 is far smaller
         // than the margin, so the next prime (or next non-prime) after any

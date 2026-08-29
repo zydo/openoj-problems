@@ -18,6 +18,6 @@ class Solution {
             }
             result = (result * (1LL << length) + i) % MOD;
         }
-        return (int) result;
+        return (int)result;
     }
 };

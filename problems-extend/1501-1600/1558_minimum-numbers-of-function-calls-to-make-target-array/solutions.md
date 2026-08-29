@@ -6,7 +6,7 @@ Run the process in reverse, from `nums` back down to all zeros. An odd
 value can only have gotten its last bit from an increment, so undo it by
 subtracting `1`; an even value's last bit came from a double, so undo it
 by dividing by `2` — but a double touches every element of `arr` at
-once, so it can only be undone when *every* current value is even (or
+once, so it can only be undone when _every_ current value is even (or
 already zero). Reading each element's binary representation from the
 least significant bit up, the increments it needs are exactly the number
 of `1` bits it has, and those increments have to land in between

@@ -14,7 +14,8 @@ class Solution {
             int64_t window = 0;
             for (int j = 0; j <= k; ++j) {
                 window += dp[j];
-                if (j >= m) window += MOD - dp[j - m];
+                if (j >= m)
+                    window += MOD - dp[j - m];
                 window %= MOD;
                 next[j] = window;
             }

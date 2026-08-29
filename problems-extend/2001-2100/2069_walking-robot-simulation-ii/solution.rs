@@ -8,7 +8,13 @@ pub struct Robot {
 
 impl Robot {
     pub fn new(width: i32, height: i32) -> Self {
-        Self { width, height, perimeter: 2 * (width + height) - 4, index: 0, moved: false }
+        Self {
+            width,
+            height,
+            perimeter: 2 * (width + height) - 4,
+            index: 0,
+            moved: false,
+        }
     }
 
     pub fn step(&mut self, num: i32) {

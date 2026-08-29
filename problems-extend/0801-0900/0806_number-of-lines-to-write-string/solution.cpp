@@ -1,6 +1,6 @@
 class Solution {
   public:
-    vector<int> numberOfLines(vector<int>& widths, string& s) {
+    vector<int> numberOfLines(vector<int> &widths, string &s) {
         // Only two numbers matter while the letters are written in order:
         // how wide the line being filled already is, and how many lines
         // have been started. A letter joins the current line when it keeps

@@ -24,12 +24,8 @@ class Solution:
                         continue
                     for r1 in range(k):
                         child_any = (dp0[child][r1] + dp1[child][r1]) % modulus
-                        merged0[(r0 + r1) % k] = (
-                            merged0[(r0 + r1) % k] + value0 * child_any
-                        ) % modulus
-                        merged1[(r0 + r1) % k] = (
-                            merged1[(r0 + r1) % k] + value1 * dp0[child][r1]
-                        ) % modulus
+                        merged0[(r0 + r1) % k] = (merged0[(r0 + r1) % k] + value0 * child_any) % modulus
+                        merged1[(r0 + r1) % k] = (merged1[(r0 + r1) % k] + value1 * dp0[child][r1]) % modulus
                 dp0[node] = merged0
                 dp1[node] = merged1
 

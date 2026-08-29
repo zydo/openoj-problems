@@ -23,6 +23,10 @@ impl Solution {
             net += diff;
             mass += magnitude;
         }
-        if net != 0 { -1 } else { mass / (2 * kk) }
+        if net != 0 {
+            -1
+        } else {
+            mass / (2 * kk)
+        }
     }
 }

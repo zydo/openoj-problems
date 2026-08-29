@@ -16,7 +16,8 @@ class Solution {
             int bottom = top + stampHeight;
             for (int left = 0; left + stampWidth <= columns; left++) {
                 int right = left + stampWidth;
-                int total = occupied[bottom][right] - occupied[top][right] - occupied[bottom][left] + occupied[top][left];
+                int total =
+                    occupied[bottom][right] - occupied[top][right] - occupied[bottom][left] + occupied[top][left];
                 if (total == 0) {
                     difference[top][left]++;
                     difference[bottom][left]--;

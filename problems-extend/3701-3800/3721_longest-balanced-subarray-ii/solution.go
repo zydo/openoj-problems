@@ -1,6 +1,6 @@
 type segTree struct {
-	n              int
-	mn, mx, lazy   []int
+	n            int
+	mn, mx, lazy []int
 }
 
 func buildSeg(node, nl, nr int, values []int, t *segTree) {

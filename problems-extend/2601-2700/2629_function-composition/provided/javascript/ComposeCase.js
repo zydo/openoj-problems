@@ -37,28 +37,19 @@ class ComposeCase {
         }
         const value = composed(this.x);
         if (!Number.isInteger(value)) {
-            throw new Error(
-                "composition must return an integer, got " + String(value),
-            );
+            throw new Error("composition must return an integer, got " + String(value));
         }
         this.result = value;
     }
 
     verdict() {
-        if (
-            this.result === undefined &&
-            this.functions.length > 0
-        ) {
+        if (this.result === undefined && this.functions.length > 0) {
             throw new Error("the composed function was never evaluated");
         }
         for (let index = 0; index < this.callCounts.length; ++index) {
             if (this.callCounts[index] !== 1) {
                 throw new Error(
-                    "function " +
-                        index +
-                        " was called " +
-                        this.callCounts[index] +
-                        " times, expected exactly once",
+                    "function " + index + " was called " + this.callCounts[index] + " times, expected exactly once",
                 );
             }
         }

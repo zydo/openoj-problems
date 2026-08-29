@@ -6,7 +6,7 @@ The recovery rule fixes each node's value from its position alone: a left
 child is `2x + 1` (binary: append `1`), a right child is `2x + 2` (append
 `0`... in value terms, `2x + 2`). Read backwards, the bits of `target + 1`
 above the leading one are exactly the moves from the root — so membership of
-`target` can be decided by walking that bit path down the *contaminated* tree,
+`target` can be decided by walking that bit path down the _contaminated_ tree,
 no recovery pass and no hash set needed.
 
 The constructor only has to normalize the root to `0`. Each `find(target)`

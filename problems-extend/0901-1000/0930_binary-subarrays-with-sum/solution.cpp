@@ -1,6 +1,6 @@
 class Solution {
-public:
-    int numSubarraysWithSum(vector<int>& nums, int goal) {
+  public:
+    int numSubarraysWithSum(vector<int> &nums, int goal) {
         // A subarray's sum is the difference of two prefix sums, so the
         // windows ending here with sum goal pair exactly with the earlier
         // prefixes worth prefix - goal. A hash map counting each prefix sum

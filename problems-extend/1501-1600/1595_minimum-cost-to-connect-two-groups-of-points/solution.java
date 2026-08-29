@@ -5,7 +5,8 @@ class Solution {
     private static final int INF = 1_000_000;
 
     public int connectTwoGroups(int[][] cost) {
-        int size1 = cost.length, size2 = cost[0].length;
+        int size1 = cost.length,
+            size2 = cost[0].length;
         int full = 1 << size2;
 
         // minToReach[j]: cheapest single edge that reaches second-group

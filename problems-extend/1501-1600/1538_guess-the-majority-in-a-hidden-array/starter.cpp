@@ -1,6 +1,6 @@
 class ArrayReader;
 
 class Solution {
-public:
-    int guessMajority(ArrayReader& arrayReader);
+  public:
+    int guessMajority(ArrayReader &arrayReader);
 };

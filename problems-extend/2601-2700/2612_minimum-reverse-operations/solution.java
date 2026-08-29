@@ -37,8 +37,11 @@ class Solution {
             int hi = 2 * right + k - 1 - x;
             int parity = lo & 1;
             int step = lo >> 1;
-            for (int slot = first(parent[parity], step); 2 * slot + parity <= hi; slot = first(
-                    parent[parity], slot + 1)) {
+            for (
+                int slot = first(parent[parity], step);
+                2 * slot + parity <= hi;
+                slot = first(parent[parity], slot + 1)
+            ) {
                 int y = 2 * slot + parity;
                 answer[y] = answer[x] + 1;
                 queue[tail++] = y;

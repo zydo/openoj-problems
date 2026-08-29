@@ -19,8 +19,7 @@ class TimeLimitedCache {
     // expired and absent keys both report false and are overwritten.
     set(key: number, value: number, duration: number): boolean {
         const existing = this.entries.get(key);
-        const alive =
-            existing !== undefined && existing.expiresAt > Date.now();
+        const alive = existing !== undefined && existing.expiresAt > Date.now();
         this.entries.set(key, {
             value: value,
             expiresAt: Date.now() + duration,

@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     int countHomogenous(string s) {
         // Each position is charged with the number of homogenous
         // substrings ending there — the current run length — so the

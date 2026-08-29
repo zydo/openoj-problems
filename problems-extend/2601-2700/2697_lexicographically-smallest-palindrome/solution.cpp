@@ -1,5 +1,5 @@
 class Solution {
-public:
+  public:
     string makeSmallestPalindrome(string s) {
         // A mismatched mirror pair needs one rewrite whichever letter wins;
         // keeping the smaller is never worse for any earlier position.

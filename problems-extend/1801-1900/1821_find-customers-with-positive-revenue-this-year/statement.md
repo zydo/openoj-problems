@@ -22,8 +22,7 @@ years.
 
 Note that this revenue can be negative.
 
-Write a solution to report the customers with postive revenue in the year
-2021.
+Write a solution to report the customers with postive revenue in the year 2021.
 
 Return the result table in any order.
 

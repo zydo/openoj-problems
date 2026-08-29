@@ -16,10 +16,14 @@ class Solution {
         // eating, which the 1000-turn rule awards to Cat. Per-cell jump
         // lists (slide up to the limit, stop before the first wall, staying
         // counts) drive both the labeling and its reverse edges.
-        int rows = grid.length, cols = grid[0].length();
+        int rows = grid.length,
+            cols = grid[0].length();
         int[] idx = new int[rows * cols];
         java.util.Arrays.fill(idx, -1);
-        int n = 0, mouse0 = 0, cat0 = 0, food = 0;
+        int n = 0,
+            mouse0 = 0,
+            cat0 = 0,
+            food = 0;
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 char ch = grid[r].charAt(c);
@@ -55,11 +59,14 @@ class Solution {
         }
         while (!queue.isEmpty()) {
             int s = queue.poll();
-            int t = s & 1, m = s >>> 1, c = m % n;
+            int t = s & 1,
+                m = s >>> 1,
+                c = m % n;
             m /= n;
             int win = label[s];
             if (t == 1) {
-                for (int m2 : mouseBack[m]) { // predecessors: the mouse just moved
+                for (int m2 : mouseBack[m]) {
+                    // predecessors: the mouse just moved
                     int p = (m2 * n + c) * 2;
                     if (label[p] == 0) {
                         if (win == 1) {
@@ -72,7 +79,8 @@ class Solution {
                     }
                 }
             } else {
-                for (int c2 : catBack[c]) { // predecessors: the cat just moved
+                for (int c2 : catBack[c]) {
+                    // predecessors: the cat just moved
                     int p = (m * n + c2) * 2 + 1;
                     if (label[p] == 0) {
                         if (win == 2) {
@@ -90,7 +98,8 @@ class Solution {
     }
 
     private static int[][] jumpLists(String[] grid, int rows, int cols, int[] idx, int n, int jump) {
-        int[] dr = {0, 0, 1, -1}, dc = {1, -1, 0, 0};
+        int[] dr = { 0, 0, 1, -1 },
+            dc = { 1, -1, 0, 0 };
         int[][] out = new int[n][];
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
@@ -102,7 +111,8 @@ class Solution {
                 lst.add(i); // staying in place is a move too
                 for (int d = 0; d < 4; d++) {
                     for (int s = 1; s <= jump; s++) {
-                        int rr = r + dr[d] * s, cc = c + dc[d] * s;
+                        int rr = r + dr[d] * s,
+                            cc = c + dc[d] * s;
                         if (rr < 0 || rr >= rows || cc < 0 || cc >= cols || grid[rr].charAt(cc) == '#') {
                             break;
                         }

@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int minimumLength(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int minimumLength(string s) { throw logic_error("TODO"); }
 };

@@ -15,7 +15,7 @@ class Solution {
         constexpr int kMod = 1000000007;
         vector<int> pref(nums[0] + 1);
         for (int v = 0; v <= nums[0]; ++v) {
-            pref[v] = v + 1;  // dp[v] = 1 at i = 0
+            pref[v] = v + 1; // dp[v] = 1 at i = 0
         }
         for (size_t i = 1; i < nums.size(); ++i) {
             int d = max(0, nums[i] - nums[i - 1]);

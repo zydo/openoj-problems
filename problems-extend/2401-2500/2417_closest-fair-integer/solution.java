@@ -29,7 +29,7 @@ class Solution {
         int odd = 0;
         int length = 0;
         while (x > 0) {
-            if (x % 10 % 2 == 1) {
+            if ((x % 10) % 2 == 1) {
                 odd++;
             }
             length++;

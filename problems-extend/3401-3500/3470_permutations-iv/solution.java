@@ -28,13 +28,13 @@ class Solution {
                     continue;
                 }
                 int odd = oddsLeft - (value % 2);
-                int even = evensLeft - (1 - value % 2);
+                int even = evensLeft - (1 - (value % 2));
                 // Once this value lands, the remaining parity pattern is
                 // forced: the slots alternate starting with the opposite
                 // parity, so the count is odd! * even! exactly when the
                 // leftover values fit that pattern, and 0 otherwise.
                 int rest = n - depth - 1;
-                int oddSlots = (rest + 1 - value % 2) / 2;
+                int oddSlots = (rest + 1 - (value % 2)) / 2;
                 long ways = 0;
                 if (oddSlots == odd && rest - oddSlots == even) {
                     ways = mulCap(fact[odd], fact[even], cap);

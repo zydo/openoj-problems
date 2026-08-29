@@ -4,13 +4,13 @@
 
 Table: `Transactions`
 
-| Column Name | Type |
-| ----------- | ---- |
-| id          | int  |
+| Column Name | Type    |
+| ----------- | ------- |
+| id          | int     |
 | country     | varchar |
-| state       | enum |
-| amount      | int  |
-| trans_date  | date |
+| state       | enum    |
+| amount      | int     |
+| trans_date  | date    |
 
 `id` is the column of unique values of this table.
 The table has information about incoming transactions.
