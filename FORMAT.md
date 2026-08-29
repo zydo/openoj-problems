@@ -34,16 +34,16 @@ Solutions are authored on top of the generated starters.
 
 ```json
 {
-  "schema_version": 1,
-  "common_version": 2,
-  "reference_solution": "",
-  "id": 1,
-  "slug": "two-sum",
-  "title": "Two Sum",
-  "difficulty": "H1",
-  "tags": ["Array", "Hash Table"],
-  "invocation": { "...": "see below" },
-  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+    "schema_version": 1,
+    "common_version": 2,
+    "reference_solution": "",
+    "id": 1,
+    "slug": "two-sum",
+    "title": "Two Sum",
+    "difficulty": "H1",
+    "tags": ["Array", "Hash Table"],
+    "invocation": { "...": "see below" },
+    "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
 }
 ```
 
@@ -69,31 +69,31 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 ```json
 {
-  "type": "function",
-  "class_name": "Solution",
-  "method": "twoSum",
-  "parameters": [
-    {
-      "name": "nums",
-      "codec": "json",
-      "value_type": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "twoSum",
+    "parameters": [
+        {
+            "name": "nums",
+            "codec": "json",
+            "value_type": {
+                "kind": "array",
+                "items": { "kind": "integer", "bits": 32 }
+            }
+        },
+        {
+            "name": "target",
+            "codec": "json",
+            "value_type": { "kind": "integer", "bits": 32 }
+        }
+    ],
+    "return_codec": "json",
+    "return_type": {
         "kind": "array",
         "items": { "kind": "integer", "bits": 32 }
-      }
     },
-    {
-      "name": "target",
-      "codec": "json",
-      "value_type": { "kind": "integer", "bits": 32 }
-    }
-  ],
-  "return_codec": "json",
-  "return_type": {
-    "kind": "array",
-    "items": { "kind": "integer", "bits": 32 }
-  },
-  "entrypoints": { "go": "twoSum", "rust": "two_sum", "typescript": "twoSum" },
-  "comparison": "exact"
+    "entrypoints": { "go": "twoSum", "rust": "two_sum", "typescript": "twoSum" },
+    "comparison": "exact"
 }
 ```
 
@@ -103,8 +103,15 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
   `next_tree` (parent/next tree), `circular_list`, `doubly_circular`,
   `multi_list` (LC 430 child chains), `alias_list` (LC 160 intersection,
   with a non-negative `alias` naming the parameter it splices into),
-  `graph`, `random_list` (each optionally naming a provided `class`), or
-  `struct` (a provided record class with declared `fields`). The node
+  `graph`, `random_list` (each optionally naming a provided `class`),
+  `doubly_list` (LC 3263, optional provided `class`), `doubly_list_node`
+  (LC 3294, wire `{"values": [...], "node": v}`, optional provided
+  `class`), `random_tree` (LC 1485, optional provided `class`),
+  `special_tree` (LC 2773 leaf ring on a `TreeNode` display),
+  `nary_tree_nodes` (LC 1506 node-list handover), `nary_tree_ref` (LC
+  1516, value + `alias` naming the `nary_tree` parameter it resolves
+  into), `json` (generic any-shaped value; JavaScript/TypeScript only),
+  or `struct` (a provided record class with declared `fields`). The node
   kinds take integer `items` (32-bit throughout the common types) and may
   omit the implied spec. The wire formats and per-kind serialization
   invariants are documented in the openoj repo's `docs/CODECS.md`.
@@ -117,10 +124,10 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 ```json
 {
-  "type": "sql",
-  "parameters": [{ "name": "dataset", "codec": "sql_setup" }],
-  "return_codec": "rows",
-  "comparison": "set"
+    "type": "sql",
+    "parameters": [{ "name": "dataset", "codec": "sql_setup" }],
+    "return_codec": "rows",
+    "comparison": "set"
 }
 ```
 
@@ -163,8 +170,8 @@ matches declared field/parameter order in every language).
 
 ```json
 {
-  "public": [{ "input": [[2, 7, 11, 15], 9], "expected": [0, 1] }],
-  "hidden": [{ "input": [[3, 2, 4], 6], "expected": [1, 2] }]
+    "public": [{ "input": [[2, 7, 11, 15], 9], "expected": [0, 1] }],
+    "hidden": [{ "input": [[3, 2, 4], 6], "expected": [1, 2] }]
 }
 ```
 
