@@ -1,0 +1,101 @@
+{
+  "note": "The only unfinished problems-extend work. Consolidated 2026-08-28 from ROSTER.json, ROSTER-remaining-{A..F}.json and ROSTER-BLOCKED.json (all deleted; the six fleets finished 1260/1260 and wave-U landed the 42 unblocked). Coverage: 4002/4018 crawl ids authored (838 bettercode/adapt + 3177 extend, 13 in both). Supersedes those files.",
+  "entries": [
+    {
+      "id": 195,
+      "slug": "tenth-line",
+      "status": "blocked",
+      "reason": "shell-language: the answer is a shell one-liner; the judge has no shell executor"
+    },
+    {
+      "id": 1474,
+      "slug": "delete-n-nodes-after-m-nodes-of-a-linked-list",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 1485,
+      "slug": "clone-binary-tree-with-random-pointer",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 1490,
+      "slug": "clone-n-ary-tree",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 1506,
+      "slug": "find-root-of-n-ary-tree",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 1516,
+      "slug": "move-sub-tree-of-n-ary-tree",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 1522,
+      "slug": "diameter-of-n-ary-tree",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 1570,
+      "slug": "dot-product-of-two-sparse-vectors",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 2755,
+      "slug": "deep-merge-of-two-objects",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 2757,
+      "slug": "generate-circular-array-values",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 2758,
+      "slug": "next-day",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 2759,
+      "slug": "convert-json-string-to-object",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 2773,
+      "slug": "height-of-special-binary-tree",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 3011,
+      "slug": "find-if-array-can-be-sorted",
+      "status": "pending",
+      "reason": "authorable: crawl text clean (Premium No), never curated into bettercode nor assigned to a fleet"
+    },
+    {
+      "id": 3263,
+      "slug": "convert-doubly-linked-list-to-array-i",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    },
+    {
+      "id": 3294,
+      "slug": "convert-doubly-linked-list-to-array-ii",
+      "status": "pending",
+      "reason": "premium-tier (crawl Premium: Yes); never curated into bettercode"
+    }
+  ]
+}

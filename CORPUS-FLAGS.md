@@ -14,6 +14,13 @@ crawled originals as-is under ORIGINAL form. The two tracks are separate
 corpora: resolve each entry against its own tree, and never port a
 decision, wording, or wire pin from one track to the other.
 
+**Entries 5–11 are RESOLVED (2026-08-28)**: the judge-contract
+extensions they demanded shipped in the 2026-08-26→28 infra wave, and
+every bundle they name has landed and verified green (probe exemplars
+under `openoj/.localonly/probank/9000-9099/`; wire law in
+`openoj/docs/CODECS.md`). They stay as the historical evidence trail.
+Entries 1–4 and 12 remain open authored-content decisions.
+
 ----------------------------------------------------------------------
 
 ## 1. 0432_rebalance-a-bst — the DSW variant is impossible under exact-shape pinning
@@ -362,11 +369,35 @@ deterministic PRNG (one fixed algorithm, one seed per case) exposed to all seven
 executors, plus a statistical or sequence-pinned comparator. Then 0478 (and any
 future random-output problem) authors against the seeded stream.
 
+## 12. problems-extend 3313 — exact-compare pins one answer where the crawl accepts any valid one
+
+**State**: bundle LANDED (fleet-D drain, 2026-08-27) with this honesty
+flag rather than a fix; user decision pending.
+
+**What happened**: the crawl statement says any pair satisfying the
+marked-distance predicate is acceptable, but the bundle judges
+`comparison: "exact"` and cases.json pins the shipped oracle's specific
+answers. Hidden inputs where multiple pairs tie reject correct
+alternatives — the extend-track twin of entry 1 (any-balanced tree vs
+exact-shape pinning).
+
+**Evidence**: fleet-D blocked notes under `.localonly/` (crawl quote and
+tie inputs); bundle `problems-extend/3301-3400/3313_find-the-last-marked-nodes-in-tree/`.
+
+**Options**: (a) leave as-is — contradiction stands between the verbatim
+crawl prose and the exact comparator; (b) add a judge-side validator
+(`{"mode": "validator", ...}`) checking the predicate, per the
+any-valid-output class; (c) restrict cases to inputs with a unique
+valid answer.
+
 ## Resolution log
 
 - [ ] 1. 0432 — decide drop / any_of / comparator (verify any_of first)
 - [ ] 2. 0527 — case 14 n→7, re-verify bundle
 - [ ] 3. 0236 — reword Hint 3 (optionally normalize canonical tie rule)
 - [ ] 4. 0254 — insert "strictly" in the multiset section
-- [ ] 10. 0339 — unblock only via the nested/json judge-contract extension
-- [ ] 11. 0478 — unblock via a seeded-RNG judge contract
+- [x] 10. 0339 — RESOLVED 2026-08-28: common v2 nested/design contracts
+      shipped; 0339/0341/0364/0385 landed and verified green
+- [x] 11. 0478 — RESOLVED 2026-08-28: distribution/validator comparator
+      shipped; 0478/0519 landed and verified green
+- [ ] 12. 3313 — decide validator vs unique-answer cases
