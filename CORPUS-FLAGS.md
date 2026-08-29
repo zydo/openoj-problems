@@ -371,24 +371,21 @@ future random-output problem) authors against the seeded stream.
 
 ## 12. problems-extend 3313 — exact-compare pins one answer where the crawl accepts any valid one
 
-**State**: bundle LANDED (fleet-D drain, 2026-08-27) with this honesty
-flag rather than a fix; user decision pending.
+**State**: RESOLVED 2026-08-28 — option (b) taken. cases.json expecteds
+now name the judge-side validator `last_marked_nodes` (registry:
+`openoj/api/app/validators.py`; contract: `openoj/docs/CODECS.md`);
+the machine finally enforces the crawl's "choose any one answer".
+Bundle re-gated green x7 under validator judging.
 
 **What happened**: the crawl statement says any pair satisfying the
-marked-distance predicate is acceptable, but the bundle judges
-`comparison: "exact"` and cases.json pins the shipped oracle's specific
-answers. Hidden inputs where multiple pairs tie reject correct
+marked-distance predicate is acceptable, but the bundle judged
+`comparison: "exact"` and cases.json pinned the shipped oracle's specific
+answers. Hidden inputs where multiple pairs tie rejected correct
 alternatives — the extend-track twin of entry 1 (any-balanced tree vs
 exact-shape pinning).
 
 **Evidence**: fleet-D blocked notes under `.localonly/` (crawl quote and
 tie inputs); bundle `problems-extend/3301-3400/3313_find-the-last-marked-nodes-in-tree/`.
-
-**Options**: (a) leave as-is — contradiction stands between the verbatim
-crawl prose and the exact comparator; (b) add a judge-side validator
-(`{"mode": "validator", ...}`) checking the predicate, per the
-any-valid-output class; (c) restrict cases to inputs with a unique
-valid answer.
 
 ## Resolution log
 
@@ -400,4 +397,5 @@ valid answer.
       shipped; 0339/0341/0364/0385 landed and verified green
 - [x] 11. 0478 — RESOLVED 2026-08-28: distribution/validator comparator
       shipped; 0478/0519 landed and verified green
-- [ ] 12. 3313 — decide validator vs unique-answer cases
+- [x] 12. 3313 — RESOLVED 2026-08-28: judge-side `last_marked_nodes`
+      validator shipped; expecteds now validator-mode, re-gated green
