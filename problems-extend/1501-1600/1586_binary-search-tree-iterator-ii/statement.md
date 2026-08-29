@@ -32,6 +32,8 @@ trailing `null`s are dropped.
 
 ### Example 1
 
+![diagram](figures/1586-1.svg)
+
 ```text
 Input:
 ["BSTIterator", "next", "next", "prev", "next", "hasNext", "next", "next", "next", "hasNext", "hasPrev", "prev", "prev"]

@@ -19,6 +19,8 @@ Return the triangular sum of nums.
 
 ### Example 1
 
+![diagram](figures/2221-1.svg)
+
 ```text
 Input: nums = [1,2,3,4,5]
 Output: 8

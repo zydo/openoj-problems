@@ -12,6 +12,8 @@ Given the head of a linked list with even length, return the maximum twin sum of
 
 ### Example 1
 
+![diagram](figures/2130-1.svg)
+
 ```text
 Input: head = [5,4,2,1]
 Output: 6
@@ -22,6 +24,8 @@ Thus, the maximum twin sum of the linked list is 6.
 ```
 
 ### Example 2
+
+![diagram](figures/2130-2.svg)
 
 ```text
 Input: head = [4,2,2,3]
@@ -34,6 +38,8 @@ Thus, the maximum twin sum of the linked list is max(7, 4) = 7.
 ```
 
 ### Example 3
+
+![diagram](figures/2130-3.svg)
 
 ```text
 Input: head = [1,100000]

@@ -17,6 +17,8 @@ Return `true` if it is possible to fit the stamps while following the given rest
 
 ### Example 1
 
+![diagram](figures/2132-1.svg)
+
 ```text
 Input: grid = [[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0]], stampHeight = 4, stampWidth = 3
 Output: true
@@ -24,6 +26,8 @@ Explanation: We have two overlapping stamps (labeled 1 and 2 in the image) that 
 ```
 
 ### Example 2
+
+![diagram](figures/2132-2.svg)
 
 ```text
 Input: grid = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]], stampHeight = 2, stampWidth = 2

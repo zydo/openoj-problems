@@ -14,12 +14,16 @@ changed.
 
 ### Example 1
 
+![diagram](figures/25-1.svg)
+
 ```text
 Input: head = [1,2,3,4,5], k = 2
 Output: [2,1,4,3,5]
 ```
 
 ### Example 2
+
+![diagram](figures/25-2.svg)
 
 ```text
 Input: head = [1,2,3,4,5], k = 3

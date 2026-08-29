@@ -16,6 +16,8 @@ vertex i.
 
 ### Example 1
 
+![diagram](figures/3898-1.svg)
+
 ```text
 Input: matrix = [[0,1,1],[1,0,1],[1,1,0]]
 Output: [2,2,2]
@@ -27,6 +29,8 @@ Thus, the answer is [2, 2, 2].
 ```
 
 ### Example 2
+
+![diagram](figures/3898-2.svg)
 
 ```text
 Input: matrix = [[0,1,0],[1,0,0],[0,0,0]]

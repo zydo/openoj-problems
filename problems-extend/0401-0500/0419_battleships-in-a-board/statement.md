@@ -13,6 +13,8 @@ battleships).
 
 ### Example 1
 
+![diagram](figures/419-1.svg)
+
 ```text
 Input: board = [["X",".",".","X"],[".",".",".","X"],[".",".",".","X"]]
 Output: 2

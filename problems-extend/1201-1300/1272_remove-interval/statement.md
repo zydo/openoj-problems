@@ -19,12 +19,16 @@ answer should be a sorted list of disjoint intervals as described above.
 
 ### Example 1
 
+![diagram](figures/1272-1.svg)
+
 ```text
 Input: intervals = [[0,2],[3,4],[5,7]], toBeRemoved = [1,6]
 Output: [[0,1],[6,7]]
 ```
 
 ### Example 2
+
+![diagram](figures/1272-2.svg)
 
 ```text
 Input: intervals = [[0,5]], toBeRemoved = [2,3]

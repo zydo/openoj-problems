@@ -8,6 +8,10 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples).
 
+![diagram](figures/559-1.svg)
+
+![diagram](figures/559-2.svg)
+
 ### Example 1
 
 ```text

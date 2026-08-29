@@ -26,6 +26,8 @@ Return the maximum number of points you can see.
 
 ### Example 1
 
+![diagram](figures/1610-1.svg)
+
 ```text
 Input: points = [[2,1],[2,2],[3,3]], angle = 90, location = [1,1]
 Output: 3
@@ -44,6 +46,8 @@ view, including the one at your location.
 ```
 
 ### Example 3
+
+![diagram](figures/1610-2.svg)
 
 ```text
 Input: points = [[1,0],[2,1]], angle = 13, location = [1,1]

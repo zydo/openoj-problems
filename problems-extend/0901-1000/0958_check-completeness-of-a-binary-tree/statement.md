@@ -12,6 +12,8 @@ level `h`.
 
 ### Example 1
 
+![diagram](figures/958-1.svg)
+
 ```text
 Input: root = [1,2,3,4,5,6]
 Output: true
@@ -21,6 +23,8 @@ are as far left as possible.
 ```
 
 ### Example 2
+
+![diagram](figures/958-2.svg)
 
 ```text
 Input: root = [1,2,3,4,5,null,7]

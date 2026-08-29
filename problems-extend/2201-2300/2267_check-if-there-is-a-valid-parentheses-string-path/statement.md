@@ -23,6 +23,8 @@ Otherwise, return false.
 
 ### Example 1
 
+![diagram](figures/2267-1.svg)
+
 ```text
 Input: grid = [["(","(","("],[")","(",")"],["(","(",")"],["(","(",")"]]
 Output: true
@@ -33,6 +35,8 @@ Note that there may be other valid parentheses string paths.
 ```
 
 ### Example 2
+
+![diagram](figures/2267-2.svg)
 
 ```text
 Input: grid = [[")",")"],["(","("]]

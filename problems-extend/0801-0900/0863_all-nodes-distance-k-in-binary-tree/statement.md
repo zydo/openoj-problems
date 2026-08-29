@@ -13,6 +13,8 @@ values in ascending order.
 
 ### Example 1
 
+![diagram](figures/863-1.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2
 Output: [1,4,7]

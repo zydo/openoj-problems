@@ -21,6 +21,8 @@ Note that edges may contain cycles.
 
 ### Example 1
 
+![diagram](figures/2359-1.svg)
+
 ```text
 Input: edges = [2,2,3,-1], node1 = 0, node2 = 1
 Output: 2
@@ -31,6 +33,8 @@ we return node 2.
 ```
 
 ### Example 2
+
+![diagram](figures/2359-2.svg)
 
 ```text
 Input: edges = [1,2,-1], node1 = 0, node2 = 2

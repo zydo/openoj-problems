@@ -16,6 +16,8 @@ necessarily be parent-child order.
 
 ### Example 1
 
+![diagram](figures/549-1.svg)
+
 ```text
 Input: root = [1,2,3]
 Output: 2
@@ -23,6 +25,8 @@ Explanation: The longest consecutive path is [1, 2] or [2, 1].
 ```
 
 ### Example 2
+
+![diagram](figures/549-2.svg)
 
 ```text
 Input: root = [2,1,3]

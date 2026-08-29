@@ -14,6 +14,8 @@ A black lonely pixel is a character `'B'` that located at a specific position
 
 ### Example 1
 
+![diagram](figures/533-1.svg)
+
 ```text
 Input: picture = [["W","B","W","B","B","W"],["W","B","W","B","B","W"],["W","B","W","B","B","W"],["W","W","B","W","B","W"]], target = 3
 Output: 6
@@ -24,6 +26,8 @@ Take 'B' at row r = 0 and column c = 1 as an example:
 ```
 
 ### Example 2
+
+![diagram](figures/533-2.svg)
 
 ```text
 Input: picture = [["W","W","B"],["W","W","B"],["W","W","B"]], target = 1

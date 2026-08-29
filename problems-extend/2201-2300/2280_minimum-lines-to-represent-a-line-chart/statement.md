@@ -8,9 +8,13 @@ chart is created from the array by plotting the points on an XY plane with the
 X-axis representing the day and the Y-axis representing the price and
 connecting adjacent points. One such example is shown below:
 
+![diagram](figures/2280-1.svg)
+
 Return the minimum number of lines needed to represent the line chart.
 
 ### Example 1
+
+![diagram](figures/2280-2.svg)
 
 ```text
 Input: stockPrices = [[1,7],[2,6],[3,5],[4,4],[5,4],[6,3],[7,2],[8,1]]
@@ -25,6 +29,8 @@ It can be shown that it is not possible to represent the line chart using less t
 ```
 
 ### Example 2
+
+![diagram](figures/2280-3.svg)
 
 ```text
 Input: stockPrices = [[3,4],[1,2],[7,8],[2,3]]

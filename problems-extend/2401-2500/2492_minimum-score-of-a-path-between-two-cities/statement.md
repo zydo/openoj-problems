@@ -23,6 +23,8 @@ Note:
 
 ### Example 1
 
+![diagram](figures/2492-1.svg)
+
 ```text
 Input: n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]
 Output: 5
@@ -31,6 +33,8 @@ It can be shown that no other path has less score.
 ```
 
 ### Example 2
+
+![diagram](figures/2492-2.svg)
 
 ```text
 Input: n = 4, roads = [[1,2,2],[1,3,4],[3,4,7]]

@@ -6,12 +6,16 @@ Given an array of `points` where `points[i] = [xi, yi]` represents a point on th
 
 ### Example 1
 
+![diagram](figures/149-1.svg)
+
 ```text
 Input: points = [[1,1],[2,2],[3,3]]
 Output: 3
 ```
 
 ### Example 2
+
+![diagram](figures/149-2.svg)
 
 ```text
 Input: points = [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]

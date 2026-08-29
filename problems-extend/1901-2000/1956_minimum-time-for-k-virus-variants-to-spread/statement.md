@@ -17,6 +17,8 @@ contain at least `k` of the unique virus variants.
 
 ### Example 1
 
+![diagram](figures/1956-1.svg)
+
 ```text
 Input: points = [[1,1],[6,1]], k = 2
 Output: 3
@@ -27,6 +29,8 @@ virus variants.
 
 ### Example 2
 
+![diagram](figures/1956-2.svg)
+
 ```text
 Input: points = [[3,3],[1,2],[9,2]], k = 2
 Output: 2
@@ -36,6 +40,8 @@ contain both virus variants.
 ```
 
 ### Example 3
+
+![diagram](figures/1956-3.svg)
 
 ```text
 Input: points = [[3,3],[1,2],[9,2]], k = 3

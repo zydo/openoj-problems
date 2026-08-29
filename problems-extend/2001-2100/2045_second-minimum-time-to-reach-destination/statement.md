@@ -19,6 +19,10 @@ Notes:
 
 ### Example 1
 
+![diagram](figures/2045-1.svg)
+
+![diagram](figures/2045-2.svg)
+
 ```text
 Input: n = 5, edges = [[1,2],[1,3],[1,4],[3,4],[4,5]], time = 3, change = 5
 Output: 13
@@ -38,6 +42,8 @@ Hence the second minimum time is 13 minutes.
 ```
 
 ### Example 2
+
+![diagram](figures/2045-3.svg)
 
 ```text
 Input: n = 2, edges = [[1,2]], time = 3, change = 2

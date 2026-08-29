@@ -17,6 +17,8 @@ Return the difference matrix `diff`.
 
 ### Example 1
 
+![diagram](figures/2482-1.svg)
+
 ```text
 Input: grid = [[0,1,1],[1,0,1],[0,0,1]]
 Output: [[0,0,4],[0,0,4],[-2,-2,2]]
@@ -33,6 +35,8 @@ Explanation:
 ```
 
 ### Example 2
+
+![diagram](figures/2482-2.svg)
 
 ```text
 Input: grid = [[1,1,1],[1,1,1]]

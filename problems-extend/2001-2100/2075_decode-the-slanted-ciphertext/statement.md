@@ -8,11 +8,17 @@ originalText is placed first in a top-left to bottom-right manner.
 
 The blue cells are filled first, followed by the red cells, then the yellow cells, and so on, until we reach the end of originalText. The arrow indicates the order in which the cells are filled. All empty cells are filled with ' '. The number of columns is chosen such that the rightmost column will not be empty after filling in originalText.
 
+![diagram](figures/2075-1.svg)
+
 encodedText is then formed by appending all characters of the matrix in a row-wise fashion.
 
 The characters in the blue cells are appended first to encodedText, then the red cells, and so on, and finally the yellow cells. The arrow indicates the order in which the cells are accessed.
 
+![diagram](figures/2075-2.svg)
+
 For example, if originalText = "cipher" and rows = 3, then we encode it in the following manner:
+
+![diagram](figures/2075-3.svg)
 
 The blue arrows depict how originalText is placed in the matrix, and the red arrows denote the order in which encodedText is formed. In the above example, encodedText = "ch ie pr".
 
@@ -30,6 +36,8 @@ Explanation: This is the same example described in the problem description.
 
 ### Example 2
 
+![diagram](figures/2075-4.svg)
+
 ```text
 Input: encodedText = "iveo    eed   l te   olc", rows = 4
 Output: "i love leetcode"
@@ -38,6 +46,8 @@ The blue arrows show how we can find originalText from encodedText.
 ```
 
 ### Example 3
+
+![diagram](figures/2075-5.svg)
 
 ```text
 Input: encodedText = "coding", rows = 1

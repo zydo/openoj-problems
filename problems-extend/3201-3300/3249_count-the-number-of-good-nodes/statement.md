@@ -17,6 +17,8 @@ of its descendants.
 
 ### Example 1
 
+![diagram](figures/3249-1.svg)
+
 ```text
 Input: edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]
 Output: 7
@@ -24,6 +26,8 @@ Explanation: All of the nodes of the given tree are good.
 ```
 
 ### Example 2
+
+![diagram](figures/3249-2.svg)
 
 ```text
 Input: edges = [[0,1],[1,2],[2,3],[3,4],[0,5],[1,6],[2,7],[3,8]]
@@ -33,6 +37,8 @@ Explanation: There are 6 good nodes in the given tree: nodes 3, 4, 5,
 ```
 
 ### Example 3
+
+![diagram](figures/3249-3.svg)
 
 ```text
 Input: edges = [[0,1],[1,2],[1,3],[1,4],[0,5],[5,6],[6,7],[7,8],[0,9],

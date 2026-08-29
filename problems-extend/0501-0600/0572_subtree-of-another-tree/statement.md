@@ -12,12 +12,16 @@ considered as a subtree of itself.
 
 ### Example 1
 
+![diagram](figures/572-1.svg)
+
 ```text
 Input: root = [3,4,5,1,2], subRoot = [4,1,2]
 Output: true
 ```
 
 ### Example 2
+
+![diagram](figures/572-2.svg)
 
 ```text
 Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]

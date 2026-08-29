@@ -14,6 +14,8 @@ person to him is maximized. Return that maximum distance to the closest person.
 
 ### Example 1
 
+![diagram](figures/849-1.svg)
+
 ```text
 Input: seats = [1,0,0,0,1,0,1]
 Output: 2

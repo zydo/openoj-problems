@@ -42,6 +42,8 @@ orders from the input. Since this number can be large, return it modulo
 
 ### Example 1
 
+![diagram](figures/1801-1.svg)
+
 ```text
 Input: orders = [[10,5,0],[15,2,1],[25,1,1],[30,4,0]]
 Output: 6
@@ -65,6 +67,8 @@ with price 30. So the total number of orders in the backlog is 6.
 ```
 
 ### Example 2
+
+![diagram](figures/1801-2.svg)
 
 ```text
 Input: orders = [[7,1000000000,1],[15,3,0],[5,999999995,0],[5,1,1]]

@@ -29,6 +29,8 @@ The test cases are generated such that:
 
 ### Example 1
 
+![diagram](figures/2201-1.svg)
+
 ```text
 Input: n = 2, artifacts = [[0,0,0,0],[0,1,1,1]], dig = [[0,0],[0,1]]
 Output: 1
@@ -42,6 +44,8 @@ Thus, we return 1.
 ```
 
 ### Example 2
+
+![diagram](figures/2201-2.svg)
 
 ```text
 Input: n = 2, artifacts = [[0,0,0,0],[0,1,1,1]], dig = [[0,0],[0,1],[1,1]]

@@ -18,6 +18,8 @@ draw. Since this number can be huge, return it modulo `10⁹ + 7`.
 
 ### Example 1
 
+![diagram](figures/1621-1.svg)
+
 ```text
 Input: n = 4, k = 2
 Output: 5

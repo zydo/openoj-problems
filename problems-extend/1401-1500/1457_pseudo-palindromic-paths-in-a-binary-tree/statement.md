@@ -11,6 +11,8 @@ leaf nodes.
 
 ### Example 1
 
+![diagram](figures/1457-1.svg)
+
 ```text
 Input: root = [2,3,1,3,1,null,1]
 Output: 2
@@ -23,6 +25,8 @@ path [2,1,1] can be rearranged in [1,2,1] (palindrome).
 ```
 
 ### Example 2
+
+![diagram](figures/1457-2.svg)
 
 ```text
 Input: root = [2,1,1,1,3,null,null,null,null,null,1]

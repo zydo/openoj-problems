@@ -9,10 +9,12 @@ an initially empty tree, one at a time, in the order they appear.
 Count the number of ways to reorder `nums` into a different sequence
 that builds the exact same BST shape when inserted the same way, and
 return that count modulo `10^9 + 7`. The original order of `nums`
-itself is not counted — only the *other* orderings that reproduce the
+itself is not counted — only the _other_ orderings that reproduce the
 same tree.
 
 ### Example 1
+
+![diagram](figures/1569-1.svg)
 
 ```text
 Input: nums = [2,1,3]
@@ -24,6 +26,8 @@ No other reordering matches, so there is exactly 1 other way.
 ```
 
 ### Example 2
+
+![diagram](figures/1569-2.svg)
 
 ```text
 Input: nums = [3,4,5,1,2]
@@ -38,6 +42,8 @@ Explanation: The following 5 reorderings all build the same BST as
 ```
 
 ### Example 3
+
+![diagram](figures/1569-3.svg)
 
 ```text
 Input: nums = [1,2,3]

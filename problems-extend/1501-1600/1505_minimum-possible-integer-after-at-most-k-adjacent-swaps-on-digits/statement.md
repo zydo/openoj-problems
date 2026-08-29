@@ -10,6 +10,8 @@ Return the minimum integer you can obtain, also as a string.
 
 ### Example 1
 
+![diagram](figures/1505-1.svg)
+
 ```text
 Input: num = "4321", k = 4
 Output: "1342"

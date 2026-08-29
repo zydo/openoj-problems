@@ -13,14 +13,16 @@ unlock pattern if both of the following are true:
   through the center of any other dot, the other dot must have previously
   appeared in the sequence. No jumps through the center non-selected dots are
   allowed.
-  - For example, connecting dots 2 and 9 without dots 5 or 6 appearing
-    beforehand is valid because the line from dot 2 to dot 9 does not pass
-    through the center of either dot 5 or 6.
-  - However, connecting dots 1 and 3 without dot 2 appearing beforehand is
-    invalid because the line from dot 1 to dot 3 passes through the center of
-    dot 2.
+    - For example, connecting dots 2 and 9 without dots 5 or 6 appearing
+      beforehand is valid because the line from dot 2 to dot 9 does not pass
+      through the center of either dot 5 or 6.
+    - However, connecting dots 1 and 3 without dot 2 appearing beforehand is
+      invalid because the line from dot 1 to dot 3 passes through the center of
+      dot 2.
 
 Here are some example valid and invalid unlock patterns:
+
+![diagram](figures/351-1.svg)
 
 - The 1st pattern [4,1,3,6] is invalid because the line connecting dots 1 and
   3 pass through dot 2, but dot 2 did not previously appear in the sequence.

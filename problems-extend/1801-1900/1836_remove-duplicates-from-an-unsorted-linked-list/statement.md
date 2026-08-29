@@ -9,6 +9,8 @@ Return the linked list after the deletions.
 
 ### Example 1
 
+![diagram](figures/1836-1.svg)
+
 ```text
 Input: head = [1,2,3,2]
 Output: [1,3]
@@ -17,6 +19,8 @@ Explanation: 2 appears twice in the linked list, so all 2's should be deleted. A
 
 ### Example 2
 
+![diagram](figures/1836-2.svg)
+
 ```text
 Input: head = [2,1,1,2]
 Output: []
@@ -24,6 +28,8 @@ Explanation: 2 and 1 both appear twice. All the elements should be deleted.
 ```
 
 ### Example 3
+
+![diagram](figures/1836-3.svg)
 
 ```text
 Input: head = [3,2,2,1,3,2,4]

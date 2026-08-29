@@ -23,6 +23,8 @@ the delay has passed, the throttled function fn should be called with the
 latest arguments provided during the delay period, and it should also create
 another delay period of 80ms + t.
 
+![diagram](figures/2676-1.svg)
+
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. It is also judged on a
 deterministic virtual clock instead of real timers: your submission declares

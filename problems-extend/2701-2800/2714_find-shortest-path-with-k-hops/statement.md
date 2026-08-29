@@ -17,6 +17,8 @@ condition.
 
 ### Example 1
 
+![diagram](figures/2714-1.svg)
+
 ```text
 Input: n = 4, edges = [[0,1,4],[0,2,2],[2,3,6]], s = 1, d = 3, k = 2
 Output: 2
@@ -25,6 +27,8 @@ Explanation: In this example there is only one path from node 1 (the green node)
 
 ### Example 2
 
+![diagram](figures/2714-2.svg)
+
 ```text
 Input: n = 7, edges = [[3,1,9],[3,2,4],[4,0,9],[0,5,6],[3,6,2],[6,0,4],[1,2,4]], s = 4, d = 1, k = 2
 Output: 6
@@ -32,6 +36,8 @@ Explanation: In this example there are 2 paths from node 4 (the green node) to n
 ```
 
 ### Example 3
+
+![diagram](figures/2714-3.svg)
 
 ```text
 Input: n = 5, edges = [[0,4,2],[0,1,3],[0,2,1],[2,1,4],[1,3,4],[3,4,7]], s = 2, d = 3, k = 1

@@ -2,6 +2,8 @@
 
 ## Description
 
+![diagram](figures/3274-1.svg)
+
 You are given two strings, `coordinate1` and `coordinate2`, representing
 the coordinates of a square on an 8 x 8 chessboard. The board carries the
 standard alternating coloring: starting from black `"a1"`, every step to

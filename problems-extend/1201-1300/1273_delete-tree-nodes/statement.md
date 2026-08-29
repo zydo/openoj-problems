@@ -14,6 +14,8 @@ Return the number of the remaining nodes in the tree.
 
 ### Example 1
 
+![diagram](figures/1273-1.svg)
+
 ```text
 Input: nodes = 7, parent = [-1,0,0,1,2,2,2],
 value = [1,-2,4,0,-2,-1,-1]

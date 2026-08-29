@@ -19,6 +19,8 @@ not possible to choose two such squares, return 0.
 
 ### Example 1
 
+![diagram](figures/4016-1.svg)
+
 ```text
 Input: mat = [[1,1,1,0],[1,1,1,1],[0,0,1,1]]
 Output: 4
@@ -31,6 +33,8 @@ Thus, the answer is 4.
 
 ### Example 2
 
+![diagram](figures/4016-2.svg)
+
 ```text
 Input: mat = [[0,1],[1,0]]
 Output: 1
@@ -42,6 +46,8 @@ Thus, the answer is 1.
 ```
 
 ### Example 3
+
+![diagram](figures/4016-3.svg)
 
 ```text
 Input: mat = [[0,0],[0,1]]

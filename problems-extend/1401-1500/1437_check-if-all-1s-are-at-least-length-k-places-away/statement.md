@@ -11,6 +11,8 @@ least `k`: adjacent indices differ by `k + 1` or more.
 
 ### Example 1
 
+![diagram](figures/1437-1.svg)
+
 ```text
 Input: nums = [1,0,0,0,1,0,0,1], k = 2
 Output: true
@@ -18,6 +20,8 @@ Explanation: Each of the 1s are at least 2 places away from each other.
 ```
 
 ### Example 2
+
+![diagram](figures/1437-2.svg)
 
 ```text
 Input: nums = [1,0,0,1,0,1], k = 2

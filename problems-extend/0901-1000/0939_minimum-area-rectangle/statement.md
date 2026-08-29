@@ -15,6 +15,8 @@ If there is not any such rectangle, return `0`.
 
 ### Example 1
 
+![diagram](figures/939-1.svg)
+
 ```text
 Input: points = [[1,1],[1,3],[3,1],[3,3],[2,2]]
 Output: 4
@@ -24,6 +26,8 @@ inside it and closes nothing.
 ```
 
 ### Example 2
+
+![diagram](figures/939-2.svg)
 
 ```text
 Input: points = [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]

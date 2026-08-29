@@ -12,6 +12,8 @@ The testcases are generated so that the answer will be less than or equal to 2 *
 
 ### Example 1
 
+![diagram](figures/63-1.svg)
+
 ```text
 Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
 Output: 2
@@ -22,6 +24,8 @@ There are two ways to reach the bottom-right corner:
 ```
 
 ### Example 2
+
+![diagram](figures/63-2.svg)
 
 ```text
 Input: obstacleGrid = [[0,1],[0,0]]

@@ -37,6 +37,8 @@ play optimally, otherwise return `false`.
 
 ### Example 1
 
+![diagram](figures/1728-1.svg)
+
 ```text
 Input: grid = ["####F","#C...","M...."], catJump = 1, mouseJump = 2
 Output: true
@@ -45,6 +47,8 @@ before Mouse.
 ```
 
 ### Example 2
+
+![diagram](figures/1728-2.svg)
 
 ```text
 Input: grid = ["M.C...F"], catJump = 1, mouseJump = 4

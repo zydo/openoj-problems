@@ -11,6 +11,8 @@ will build.
 
 ### Example 1
 
+![diagram](figures/441-1.svg)
+
 ```text
 Input: n = 5
 Output: 2
@@ -18,6 +20,8 @@ Explanation: Because the 3rd row is incomplete, we return 2.
 ```
 
 ### Example 2
+
+![diagram](figures/441-2.svg)
 
 ```text
 Input: n = 8

@@ -10,12 +10,16 @@ Return the maximum possible sum of the values of all shared cells.
 
 ### Example 1
 
+![diagram](figures/3938-1.svg)
+
 ```text
 Input: grid = [[1,2,0,-3],[1,-2,1,0],[-4,2,-1,3],[3,-3,3,-2],[-1,-5,0,1]]
 Output: 4
 ```
 
 ### Example 2
+
+![diagram](figures/3938-2.svg)
 
 ```text
 Input: grid = [[4,-2,-3],[-1,-3,-1],[-4,2,-1]]

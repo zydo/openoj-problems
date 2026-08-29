@@ -22,6 +22,8 @@ Note:
 
 ### Example 1
 
+![diagram](figures/2673-1.svg)
+
 ```text
 Input: n = 7, cost = [1,5,2,2,3,3,1]
 Output: 6
@@ -35,6 +37,8 @@ It can be shown that this is the minimum answer we can achieve.
 ```
 
 ### Example 2
+
+![diagram](figures/2673-2.svg)
 
 ```text
 Input: n = 3, cost = [5,3,3]

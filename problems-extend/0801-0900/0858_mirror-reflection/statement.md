@@ -16,6 +16,8 @@ The test cases are guaranteed so that the ray will meet a receptor eventually.
 
 ### Example 1
 
+![diagram](figures/858-1.svg)
+
 ```text
 Input: p = 2, q = 1
 Output: 2

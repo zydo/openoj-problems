@@ -15,6 +15,8 @@ from the root.
 
 ### Example 1
 
+![diagram](figures/2583-1.svg)
+
 ```text
 Input: root = [5,8,9,2,1,3,7,4,6], k = 2
 Output: 13
@@ -27,6 +29,8 @@ The 2nd largest level sum is 13.
 ```
 
 ### Example 2
+
+![diagram](figures/2583-2.svg)
 
 ```text
 Input: root = [1,2,null,3], k = 1

@@ -6,6 +6,8 @@ One way to serialize a binary tree is to use preorder traversal. When we
 encounter a non-null node, we record the node's value. If it is a null node,
 we record using a sentinel value such as `'#'`.
 
+![diagram](figures/331-1.svg)
+
 For example, the binary tree whose root `9` has left child `3` with the leaf
 children `4` and `1`, and right child `2` with only a right child `6`, can be
 serialized to the string `"9,3,4,#,#,1,#,#,2,#,6,#,#"`, where `'#'` represents

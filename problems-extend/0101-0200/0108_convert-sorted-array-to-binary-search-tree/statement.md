@@ -12,6 +12,8 @@ elements before the middle become the left subtree, the elements after it the ri
 
 ### Example 1
 
+![diagram](figures/108-1.svg)
+
 ```text
 Input: nums = [-10,-3,0,5,9]
 Output: [0,-3,9,-10,null,5]
@@ -20,7 +22,11 @@ second of its two middles) with -10 under it; the right segment [5,9] takes 9 as
 under it.
 ```
 
+![diagram](figures/108-2.svg)
+
 ### Example 2
+
+![diagram](figures/108-3.svg)
 
 ```text
 Input: nums = [1,3]

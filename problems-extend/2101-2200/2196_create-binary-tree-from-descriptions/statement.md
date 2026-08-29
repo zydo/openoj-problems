@@ -16,6 +16,8 @@ The test cases will be generated such that the binary tree is valid.
 
 ### Example 1
 
+![diagram](figures/2196-1.svg)
+
 ```text
 Input: descriptions = [[20,15,1],[20,17,0],[50,20,1],[50,80,0],[80,19,1]]
 Output: [50,20,80,15,17,19]
@@ -24,6 +26,8 @@ parent.
 ```
 
 ### Example 2
+
+![diagram](figures/2196-2.svg)
 
 ```text
 Input: descriptions = [[1,2,1],[2,3,0],[3,4,1]]

@@ -13,6 +13,8 @@ a node to its parent in the path.
 
 ### Example 1
 
+![diagram](figures/298-1.svg)
+
 ```text
 Input: root = [1,null,3,2,4,null,null,null,5]
 Output: 3
@@ -20,6 +22,8 @@ Explanation: Longest consecutive sequence path is 3-4-5, so return 3.
 ```
 
 ### Example 2
+
+![diagram](figures/298-2.svg)
 
 ```text
 Input: root = [2,null,3,2,null,1]

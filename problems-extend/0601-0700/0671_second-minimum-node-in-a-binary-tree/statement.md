@@ -15,6 +15,8 @@ If no such second minimum value exists, output `-1` instead.
 
 ### Example 1
 
+![diagram](figures/671-1.svg)
+
 ```text
 Input: root = [2,2,5,null,null,5,7]
 Output: 5
@@ -22,6 +24,8 @@ Explanation: The smallest value is 2, the second smallest value is 5.
 ```
 
 ### Example 2
+
+![diagram](figures/671-2.svg)
 
 ```text
 Input: root = [2,2,2]

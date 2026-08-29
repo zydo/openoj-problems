@@ -15,6 +15,8 @@ amount of new area that you painted on the `i`th day.
 
 ### Example 1
 
+![diagram](figures/2158-1.svg)
+
 ```text
 Input: paint = [[1,4],[4,7],[5,8]]
 Output: [3,3,1]
@@ -30,6 +32,8 @@ The amount of new area painted on day 2 is 8 - 7 = 1.
 
 ### Example 2
 
+![diagram](figures/2158-2.svg)
+
 ```text
 Input: paint = [[1,4],[5,8],[4,7]]
 Output: [3,3,1]
@@ -44,6 +48,8 @@ The amount of new area painted on day 2 is 5 - 4 = 1.
 ```
 
 ### Example 3
+
+![diagram](figures/2158-3.svg)
 
 ```text
 Input: paint = [[1,5],[2,4]]

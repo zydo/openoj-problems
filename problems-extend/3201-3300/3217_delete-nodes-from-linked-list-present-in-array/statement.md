@@ -8,6 +8,8 @@ the linked list that have a value that exists in `nums`.
 
 ### Example 1
 
+![diagram](figures/3217-1.svg)
+
 ```text
 Input: nums = [1,2,3], head = [1,2,3,4,5]
 Output: [4,5]
@@ -16,6 +18,8 @@ Explanation: Remove the nodes with values 1, 2, and 3.
 
 ### Example 2
 
+![diagram](figures/3217-2.svg)
+
 ```text
 Input: nums = [1], head = [1,2,1,2,1,2]
 Output: [2,2,2]
@@ -23,6 +27,8 @@ Explanation: Remove the nodes with value 1.
 ```
 
 ### Example 3
+
+![diagram](figures/3217-3.svg)
 
 ```text
 Input: nums = [5], head = [1,2,3,4]
@@ -38,7 +44,7 @@ Explanation: No node has value 5.
 - The number of nodes in the given list is in the range `[1, 10⁵]`.
 - `1 <= Node.val <= 10⁵`
 - The input is generated such that there is at least one node in the
-linked list that has a value not present in `nums`.
+  linked list that has a value not present in `nums`.
 
 ## Hints
 

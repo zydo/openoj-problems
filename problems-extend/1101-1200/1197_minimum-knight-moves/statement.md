@@ -8,6 +8,8 @@ you have a knight at square `[0, 0]`.
 A knight has 8 possible moves it can make. Each move is two squares in a
 cardinal direction, then one square in an orthogonal direction.
 
+![diagram](figures/1197-1.svg)
+
 Return the minimum number of steps needed to move the knight to the square
 `[x, y]`. It is guaranteed the answer exists.
 

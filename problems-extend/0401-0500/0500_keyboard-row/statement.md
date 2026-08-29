@@ -14,6 +14,8 @@ In the American keyboard:
 - the second row consists of the characters `"asdfghjkl"`, and
 - the third row consists of the characters `"zxcvbnm"`.
 
+![diagram](figures/500-1.svg)
+
 The words in the answer appear in the same order as in `words`.
 
 ### Example 1

@@ -33,6 +33,8 @@ ascending order. The result format is in the following table.
 
 ### Example 1
 
+![diagram](figures/1459-1.svg)
+
 ```text
 Input:
 Points

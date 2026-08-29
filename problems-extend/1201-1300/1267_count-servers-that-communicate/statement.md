@@ -11,6 +11,8 @@ Return the number of servers that communicate with any other server.
 
 ### Example 1
 
+![diagram](figures/1267-1.svg)
+
 ```text
 Input: grid = [[1,0],[0,1]]
 Output: 0
@@ -18,6 +20,8 @@ Explanation: No servers can communicate with others.
 ```
 
 ### Example 2
+
+![diagram](figures/1267-2.svg)
 
 ```text
 Input: grid = [[1,0],[1,1]]
@@ -27,6 +31,8 @@ server.
 ```
 
 ### Example 3
+
+![diagram](figures/1267-3.svg)
 
 ```text
 Input: grid = [[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]

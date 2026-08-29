@@ -23,6 +23,8 @@ are processed at level `i + 1`.
 
 ### Example 1
 
+![diagram](figures/3902-1.svg)
+
 ```text
 Input: root = [5,2,8,1,null,9,6]
 Output: [5,8,0]
@@ -36,6 +38,8 @@ Thus, ans = [5, 8, 0].
 ```
 
 ### Example 2
+
+![diagram](figures/3902-2.svg)
 
 ```text
 Input: root = [1,2,3,4,5,null,7]

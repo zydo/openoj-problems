@@ -23,6 +23,8 @@ buf4[] is a destination, not a source. The results from read4 will be copied to 
 
 Below is a high-level example of how read4 works:
 
+![diagram](figures/158-1.svg)
+
 ```text
 File file("abcde"); // File is "abcde", initially file pointer (fp) points to 'a'
 char[] buf4 = new char[4]; // Create buffer with enough space to store characters

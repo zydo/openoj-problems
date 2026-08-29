@@ -14,6 +14,8 @@ Find the values `l` and `r` (with `0 <= l, r < arr.length`) that make
 `|func(arr, l, r) - target|` as small as possible, and return that
 minimum possible value.
 
+![diagram](figures/1521-1.svg)
+
 ### Example 1
 
 ```text

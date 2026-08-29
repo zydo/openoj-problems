@@ -27,6 +27,12 @@ serializes them; a returned `null` root serializes as `[]`.
 
 ### Example 1
 
+![diagram](figures/1932-1.svg)
+
+![diagram](figures/1932-2.svg)
+
+![diagram](figures/1932-3.svg)
+
 ```text
 Input: trees = [[2,1],[3,2,5],[5,4]]
 Output: [3,2,5,1,null,4]
@@ -40,6 +46,10 @@ The resulting tree, shown above, is a valid BST, so return its root.
 
 ### Example 2
 
+![diagram](figures/1932-4.svg)
+
+![diagram](figures/1932-5.svg)
+
 ```text
 Input: trees = [[5,3,8],[3,2,6]]
 Output: []
@@ -50,6 +60,8 @@ The resulting tree is shown above. This is the only valid operation that can be 
 ```
 
 ### Example 3
+
+![diagram](figures/1932-6.svg)
 
 ```text
 Input: trees = [[5,4],[3]]

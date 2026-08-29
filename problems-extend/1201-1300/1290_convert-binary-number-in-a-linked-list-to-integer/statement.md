@@ -12,6 +12,8 @@ The most significant bit is at the head of the linked list.
 
 ### Example 1
 
+![diagram](figures/1290-1.svg)
+
 ```text
 Input: head = [1,0,1]
 Output: 5

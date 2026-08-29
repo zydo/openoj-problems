@@ -18,6 +18,10 @@ otherwise return `false`.
 
 ### Example 1
 
+![diagram](figures/1559-1.svg)
+
+![diagram](figures/1559-2.svg)
+
 ```text
 Input: grid = [["a","a","a","a"],["a","b","b","a"],["a","b","b","a"],["a","a","a","a"]]
 Output: true
@@ -27,6 +31,10 @@ inner 2x2 block of "b" cells — either one is a valid cycle.
 
 ### Example 2
 
+![diagram](figures/1559-3.svg)
+
+![diagram](figures/1559-4.svg)
+
 ```text
 Input: grid = [["c","c","c","a"],["c","d","c","c"],["c","c","e","c"],["f","c","c","c"]]
 Output: true
@@ -35,6 +43,8 @@ Explanation: The "c" cells form a ring that encircles the interior "d" and
 ```
 
 ### Example 3
+
+![diagram](figures/1559-5.svg)
 
 ```text
 Input: grid = [["a","b","b"],["b","z","b"],["b","b","a"]]

@@ -16,6 +16,8 @@ You must write an algorithm with less than `O(mn)` runtime complexity.
 
 ### Example 1
 
+![diagram](figures/302-1.svg)
+
 ```text
 Input: image = [["0","0","1","0"],["0","1","1","0"],["0","1","0","0"]], x = 0, y = 2
 Output: 6

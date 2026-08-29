@@ -15,6 +15,8 @@ Note that
   integer `i` for which `nums[i][i]` = `val` or an `i` for which
   `nums[i][nums.length - i - 1]` = `val`.
 
+![diagram](figures/2614-1.svg)
+
 ### Example 1
 
 ```text

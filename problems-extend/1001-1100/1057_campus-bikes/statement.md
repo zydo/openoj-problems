@@ -28,6 +28,8 @@ Manhattan(p1, p2) = |p1.x - p2.x| + |p1.y - p2.y|.
 
 ### Example 1
 
+![diagram](figures/1057-1.svg)
+
 ```text
 Input: workers = [[0,0],[2,1]], bikes = [[1,2],[3,3]]
 Output: [1,0]
@@ -36,6 +38,8 @@ and Worker 0 is assigned Bike 1. So the output is [1, 0].
 ```
 
 ### Example 2
+
+![diagram](figures/1057-2.svg)
 
 ```text
 Input: workers = [[0,0],[1,1],[2,0]], bikes = [[1,0],[2,2],[2,1]]

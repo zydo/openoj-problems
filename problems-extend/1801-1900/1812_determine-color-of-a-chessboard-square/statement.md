@@ -5,6 +5,8 @@
 You are given `coordinates`, a string that represents the coordinates of
 a square of the chessboard. Below is a chessboard for your reference.
 
+![diagram](figures/1812-1.svg)
+
 Return `true` if the square is white, and `false` if the square is
 black.
 

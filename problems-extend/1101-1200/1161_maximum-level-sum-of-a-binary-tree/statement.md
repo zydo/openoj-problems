@@ -10,6 +10,8 @@ at level `x` is maximal.
 
 ### Example 1
 
+![diagram](figures/1161-1.svg)
+
 ```text
 Input: root = [1,7,0,7,-8,null,null]
 Output: 2

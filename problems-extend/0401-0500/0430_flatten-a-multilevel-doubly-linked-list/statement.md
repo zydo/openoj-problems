@@ -12,6 +12,8 @@ How the multilevel linked list is represented in test cases:
 
 We use the multilevel linked list from Example 1 below:
 
+![diagram](figures/430-1.svg)
+
 ```text
  1---2---3---4---5---6--NULL
          |
@@ -60,7 +62,11 @@ After flattening the multilevel linked list it becomes:
 1-2-3-7-8-11-12-9-10-4-5-6--NULL
 ```
 
+![diagram](figures/430-2.svg)
+
 ### Example 2
+
+![diagram](figures/430-3.svg)
 
 ```text
 Input: head = [{"values": [1,2], "children": [{"values": [3], "children": [null]},null]}]
@@ -69,6 +75,8 @@ Explanation: The multilevel linked list in the input is shown.
 After flattening the multilevel linked list it becomes:
 1-3-2--NULL
 ```
+
+![diagram](figures/430-4.svg)
 
 ### Example 3
 

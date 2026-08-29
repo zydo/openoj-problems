@@ -17,6 +17,8 @@ answer will be accepted if it differs from the correct answer by at most
 
 ### Example 1
 
+![diagram](figures/1514-1.svg)
+
 ```text
 Input: n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start_node = 0, end_node = 2
 Output: 0.25000
@@ -26,12 +28,16 @@ a probability of success 0.2 and the other 0.5 * 0.5 = 0.25.
 
 ### Example 2
 
+![diagram](figures/1514-2.svg)
+
 ```text
 Input: n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.3], start_node = 0, end_node = 2
 Output: 0.30000
 ```
 
 ### Example 3
+
+![diagram](figures/1514-3.svg)
 
 ```text
 Input: n = 3, edges = [[0,1]], succProb = [0.5], start_node = 0, end_node = 2

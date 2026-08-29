@@ -20,6 +20,8 @@ Implement the Robot class:
 
 ### Example 1
 
+![diagram](figures/2069-1.svg)
+
 ```text
 Input
 ["Robot", "step", "step", "getPos", "getDir", "step", "step", "step", "getPos", "getDir"]

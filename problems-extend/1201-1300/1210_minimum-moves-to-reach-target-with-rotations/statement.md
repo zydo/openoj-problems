@@ -22,9 +22,15 @@ In one move the snake can:
 
 Return the minimum number of moves to reach the target.
 
+![diagram](figures/1210-1.svg)
+
+![diagram](figures/1210-2.svg)
+
 If there is no way to reach the target, return `-1`.
 
 ### Example 1
+
+![diagram](figures/1210-3.svg)
 
 ```text
 Input: grid = [[0,0,0,0,0,1],

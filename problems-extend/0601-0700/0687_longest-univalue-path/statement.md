@@ -11,6 +11,8 @@ edges between them.
 
 ### Example 1
 
+![diagram](figures/687-1.svg)
+
 ```text
 Input: root = [5,4,5,1,1,null,5]
 Output: 2
@@ -19,6 +21,8 @@ spine — two edges.
 ```
 
 ### Example 2
+
+![diagram](figures/687-2.svg)
 
 ```text
 Input: root = [1,4,5,4,4,null,5]

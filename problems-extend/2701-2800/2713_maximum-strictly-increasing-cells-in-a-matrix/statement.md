@@ -19,6 +19,8 @@ visited.
 
 ### Example 1
 
+![diagram](figures/2713-1.svg)
+
 ```text
 Input: mat = [[3,1],[3,4]]
 Output: 2
@@ -29,6 +31,8 @@ matter where we start from, so the answer is 2.
 
 ### Example 2
 
+![diagram](figures/2713-2.svg)
+
 ```text
 Input: mat = [[1,1],[1,1]]
 Output: 1
@@ -37,6 +41,8 @@ visit one cell in this example.
 ```
 
 ### Example 3
+
+![diagram](figures/2713-3.svg)
 
 ```text
 Input: mat = [[3,1,6],[-9,5,7]]

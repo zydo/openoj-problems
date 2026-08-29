@@ -16,6 +16,8 @@ such node.
 
 ### Example 1
 
+![diagram](figures/1602-1.svg)
+
 ```text
 Input: root = [1,2,3,null,4,5,6], u = 4
 Output: [5]
@@ -25,6 +27,8 @@ of 4 is 5.
 ```
 
 ### Example 2
+
+![diagram](figures/1602-2.svg)
 
 ```text
 Input: root = [3,null,4,2], u = 2

@@ -31,6 +31,8 @@ order is acceptable.
 
 ### Example 1
 
+![diagram](figures/1628-1.svg)
+
 ```text
 Input: postfix = ["3","4","+","2","*","7","/"]
 Output: 2
@@ -38,6 +40,8 @@ Explanation: This is the expression ((3+4)*2)/7 = 14/7 = 2.
 ```
 
 ### Example 2
+
+![diagram](figures/1628-2.svg)
 
 ```text
 Input: postfix = ["4","5","2","7","+","-","*"]

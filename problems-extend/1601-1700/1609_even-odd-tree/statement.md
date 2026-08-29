@@ -18,6 +18,8 @@ Even-Odd, otherwise return `false`.
 
 ### Example 1
 
+![diagram](figures/1609-1.svg)
+
 ```text
 Input: root = [1,10,4,3,null,7,9,12,8,6,null,null,2]
 Output: true
@@ -33,6 +35,8 @@ Even-Odd.
 
 ### Example 2
 
+![diagram](figures/1609-2.svg)
+
 ```text
 Input: root = [5,4,2,3,3,7]
 Output: false
@@ -45,6 +49,8 @@ tree is not Even-Odd.
 ```
 
 ### Example 3
+
+![diagram](figures/1609-3.svg)
 
 ```text
 Input: root = [5,9,1,3,5,7]

@@ -8,6 +8,8 @@ it is possible to make `mat` equal to `target` by rotating `mat` in
 
 ### Example 1
 
+![diagram](figures/1886-1.svg)
+
 ```text
 Input: mat = [[0,1],[1,0]], target = [[1,0],[0,1]]
 Output: true
@@ -17,6 +19,8 @@ target.
 
 ### Example 2
 
+![diagram](figures/1886-2.svg)
+
 ```text
 Input: mat = [[0,1],[1,1]], target = [[1,0],[0,1]]
 Output: false
@@ -25,6 +29,8 @@ mat.
 ```
 
 ### Example 3
+
+![diagram](figures/1886-3.svg)
 
 ```text
 Input: mat = [[0,0,0],[0,1,0],[1,1,1]],

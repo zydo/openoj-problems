@@ -14,6 +14,8 @@ Return the step-by-step directions of the shortest path from node `s` to node `t
 
 ### Example 1
 
+![diagram](figures/2096-1.svg)
+
 ```text
 Input: root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6
 Output: "UURL"
@@ -21,6 +23,8 @@ Explanation: The shortest path is: 3 → 1 → 5 → 2 → 6.
 ```
 
 ### Example 2
+
+![diagram](figures/2096-2.svg)
 
 ```text
 Input: root = [2,1], startValue = 2, destValue = 1

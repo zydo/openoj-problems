@@ -11,6 +11,8 @@ Given a 2D character matrix `grid`, where `grid[i][j]` is either `'X'`,
 
 ### Example 1
 
+![diagram](figures/3212-1.svg)
+
 ```text
 Input: grid = [["X","Y","."],["Y",".","."]]
 Output: 3

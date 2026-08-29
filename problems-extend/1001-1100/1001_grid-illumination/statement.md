@@ -24,6 +24,12 @@ cell in the `jth` query was illuminated, or `false` if it was not.
 
 ### Example 1
 
+![diagram](figures/1001-1.svg)
+
+![diagram](figures/1001-2.svg)
+
+![diagram](figures/1001-3.svg)
+
 ```text
 Input: n = 5, lamps = [[0,0],[4,4]], queries = [[1,1],[1,0]]
 Output: [true,false]

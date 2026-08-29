@@ -27,6 +27,8 @@ You may assume that the borders of the maze are all walls (see examples).
 
 ### Example 1
 
+![diagram](figures/499-1.svg)
+
 ```text
 Input: maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [0,1]
 Output: "lul"
@@ -37,6 +39,8 @@ Both ways have shortest distance 6, but the first way is lexicographically small
 ```
 
 ### Example 2
+
+![diagram](figures/499-2.svg)
 
 ```text
 Input: maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], ball = [4,3], hole = [3,0]

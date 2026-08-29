@@ -8,6 +8,8 @@ On LeetCode the function returns nothing and the judge inspects the mutated tree
 
 ### Example 1
 
+![diagram](figures/99-1.svg)
+
 ```text
 Input: root = [1,3,null,null,2]
 Output: [3,1,null,null,2]
@@ -15,6 +17,8 @@ Explanation: 3 cannot be a left child of 1 because 3 > 1. Swapping 1 and 3 makes
 ```
 
 ### Example 2
+
+![diagram](figures/99-2.svg)
 
 ```text
 Input: root = [3,1,4,null,null,2]

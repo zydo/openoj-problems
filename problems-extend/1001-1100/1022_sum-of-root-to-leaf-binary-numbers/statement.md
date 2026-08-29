@@ -16,6 +16,8 @@ The test cases are generated so that the answer fits in a 32-bits integer.
 
 ### Example 1
 
+![diagram](figures/1022-1.svg)
+
 ```text
 Input: root = [1,0,1,0,1,0,1]
 Output: 22

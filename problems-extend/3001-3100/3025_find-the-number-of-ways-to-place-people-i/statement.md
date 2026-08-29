@@ -15,6 +15,8 @@ Return the count.
 
 ### Example 1
 
+![diagram](figures/3025-1.svg)
+
 ```text
 Input: points = [[1,1],[2,2],[3,3]]
 Output: 0
@@ -23,6 +25,8 @@ upper left side of B.
 ```
 
 ### Example 2
+
+![diagram](figures/3025-2.svg)
 
 ```text
 Input: points = [[6,2],[4,4],[2,6]]
@@ -38,6 +42,8 @@ Explanation:
 ```
 
 ### Example 3
+
+![diagram](figures/3025-3.svg)
 
 ```text
 Input: points = [[3,1],[1,3],[1,1]]

@@ -15,6 +15,8 @@ Return the generated matrix.
 
 ### Example 1
 
+![diagram](figures/2326-1.svg)
+
 ```text
 Input: m = 3, n = 5, head = [3,0,2,6,8,1,7,9,4,2,5,5,0]
 Output: [[3,0,2,6,8],[5,0,-1,-1,1],[5,2,4,9,7]]
@@ -23,6 +25,8 @@ Note that the remaining spaces in the matrix are filled with -1.
 ```
 
 ### Example 2
+
+![diagram](figures/2326-2.svg)
 
 ```text
 Input: m = 1, n = 4, head = [0,1,2]

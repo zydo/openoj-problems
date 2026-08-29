@@ -22,6 +22,8 @@ edges.
 Return the minimum integer threshold such that at least one valid path exists
 from `source` to `target`. If no such path exists, return `-1`.
 
+![diagram](figures/3924-1.svg)
+
 ### Example 1
 
 ```text
@@ -43,6 +45,8 @@ Explanation:
 
 ### Example 2
 
+![diagram](figures/3924-2.svg)
+
 ```text
 Input: n = 6, edges = [[0,1,3],[1,2,4],[3,4,5],[4,5,6]], source = 0, target = 4, k = 1
 Output: -1
@@ -52,6 +56,8 @@ Explanation:
 ```
 
 ### Example 3
+
+![diagram](figures/3924-3.svg)
 
 ```text
 Input: n = 4, edges = [[0,1,2],[1,2,2],[2,3,2],[3,0,2]], source = 0, target = 0, k = 0

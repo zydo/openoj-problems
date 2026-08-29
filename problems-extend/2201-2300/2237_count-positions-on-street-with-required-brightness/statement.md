@@ -23,6 +23,8 @@ have a brightness of at least `requirement[i]`.
 
 ### Example 1
 
+![diagram](figures/2237-1.svg)
+
 ```
 Input: n = 5, lights = [[0,1],[2,1],[3,2]], requirement = [0,2,1,4,1]
 Output: 4

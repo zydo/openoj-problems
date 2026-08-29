@@ -14,6 +14,8 @@ Return the number of distinct islands.
 
 ### Example 1
 
+![diagram](figures/711-1.svg)
+
 ```text
 Input: grid = [[1,1,0,0,0],[1,0,0,0,0],[0,0,0,0,1],[0,0,0,1,1]]
 Output: 1
@@ -23,6 +25,8 @@ same shapes.
 ```
 
 ### Example 2
+
+![diagram](figures/711-2.svg)
 
 ```text
 Input: grid = [[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]

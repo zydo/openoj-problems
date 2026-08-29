@@ -12,6 +12,8 @@ not possible, return `-1`.
 
 ### Example 1
 
+![diagram](figures/2033-1.svg)
+
 ```text
 Input: grid = [[2,4],[6,8]], x = 2
 Output: 4
@@ -24,6 +26,8 @@ A total of 4 operations were used.
 
 ### Example 2
 
+![diagram](figures/2033-2.svg)
+
 ```text
 Input: grid = [[1,5],[2,3]], x = 1
 Output: 5
@@ -31,6 +35,8 @@ Explanation: We can make every element equal to 3.
 ```
 
 ### Example 3
+
+![diagram](figures/2033-3.svg)
 
 ```text
 Input: grid = [[1,2],[3,4]], x = 2

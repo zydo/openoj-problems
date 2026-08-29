@@ -18,7 +18,7 @@ S[node] recursively as follows:
 
 - If node is some leaf node, `S[node] = node.val`,
 - Otherwise if node is some internal node, `S[node] =
-  concat(S[node.left], S[node.right])` and `S[node].length = node.len`.
+concat(S[node.left], S[node.right])` and `S[node].length = node.len`.
 
 Return k-th character of the string S[root].
 
@@ -45,6 +45,8 @@ You can see that S[root] = concat(concat("g", "rta"), "abcpoe") =
 equal to "b".
 ```
 
+![diagram](figures/2689-1.svg)
+
 ### Example 2
 
 ```text
@@ -57,6 +59,8 @@ You can see that S[root] = concat(concat("abc", "efg"), concat("hij",
 it, is equal to "c".
 ```
 
+![diagram](figures/2689-2.svg)
+
 ### Example 3
 
 ```text
@@ -67,6 +71,8 @@ represents node.len, and a string on leaf nodes that represents node.val.
 You can see that S[root] = "ropetree". So S[root][7], which represents 8th
 character of it, is equal to "e".
 ```
+
+![diagram](figures/2689-3.svg)
 
 ### Constraints
 

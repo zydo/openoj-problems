@@ -22,6 +22,8 @@ as a subtree of itself.
 
 ### Example 1
 
+![diagram](figures/2005-1.svg)
+
 ```text
 Input: n = 3
 Output: true
@@ -35,6 +37,8 @@ Return true because Alice wins.
 
 ### Example 2
 
+![diagram](figures/2005-2.svg)
+
 ```text
 Input: n = 1
 Output: false
@@ -44,6 +48,8 @@ Return false because Alice loses.
 ```
 
 ### Example 3
+
+![diagram](figures/2005-3.svg)
 
 ```text
 Input: n = 2

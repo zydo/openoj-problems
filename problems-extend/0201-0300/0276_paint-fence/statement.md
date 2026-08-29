@@ -13,6 +13,8 @@ the fence.
 
 ### Example 1
 
+![diagram](figures/276-1.svg)
+
 ```text
 Input: n = 3, k = 2
 Output: 6

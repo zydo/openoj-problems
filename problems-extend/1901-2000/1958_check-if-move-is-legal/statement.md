@@ -16,12 +16,16 @@ A good line is a line of three or more cells (including the endpoints) where
 the endpoints of the line are one color, and the remaining cells in the middle
 are the opposite color (no cells in the line are free).
 
+![diagram](figures/1958-1.svg)
+
 Given two integers `rMove` and `cMove` and a character `color` representing
 the color you are playing as (white or black), return `true` if changing cell
 `(rMove, cMove)` to color `color` is a legal move, or `false` if it is not
 legal.
 
 ### Example 1
+
+![diagram](figures/1958-2.svg)
 
 ```text
 Input: board = [[".",".",".","B",".",".",".","."],[".",".",".","W",".",".",".","."],[".",".",".","W",".",".",".","."],[".",".",".","W",".",".",".","."],["W","B","B",".","W","W","W","B"],[".",".",".","B",".",".",".","."],[".",".",".","B",".",".",".","."],[".",".",".","W",".",".",".","."]], rMove = 4, cMove = 3, color = "B"
@@ -31,6 +35,8 @@ black respectively, and cell (rMove, cMove) is marked with an 'X'.
 ```
 
 ### Example 2
+
+![diagram](figures/1958-3.svg)
 
 ```text
 Input: board = [[".",".",".",".",".",".",".","."],[".","B",".",".","W",".",".","."],[".",".","W",".",".",".",".","."],[".",".",".","W","B",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".","B","W",".","."],[".",".",".",".",".",".","W","."],[".",".",".",".",".",".",".","B"]], rMove = 4, cMove = 4, color = "W"

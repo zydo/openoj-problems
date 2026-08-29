@@ -16,6 +16,8 @@ A leaf of a node is a node that has no children.
 
 ### Example 1
 
+![diagram](figures/988-1.svg)
+
 ```text
 Input: root = [0,1,2,3,4,3,4]
 Output: "dba"
@@ -23,12 +25,16 @@ Output: "dba"
 
 ### Example 2
 
+![diagram](figures/988-2.svg)
+
 ```text
 Input: root = [25,1,3,1,3,0,2]
 Output: "adz"
 ```
 
 ### Example 3
+
+![diagram](figures/988-3.svg)
 
 ```text
 Input: root = [2,2,1,null,1,0,null,0]

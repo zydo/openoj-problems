@@ -14,6 +14,8 @@ The average of `x` elements is the sum of the `x` elements divided by `x`, using
 
 ### Example 1
 
+![diagram](figures/2090-1.svg)
+
 ```text
 Input: nums = [7,4,3,9,1,8,5,2,6], k = 3
 Output: [-1,-1,-1,5,4,4,-1,-1,-1]

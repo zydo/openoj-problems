@@ -13,6 +13,8 @@ Return the number of distinct islands.
 
 ### Example 1
 
+![diagram](figures/694-1.svg)
+
 ```text
 Input: grid = [[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]
 Output: 1
@@ -21,6 +23,8 @@ translated to equal the first.
 ```
 
 ### Example 2
+
+![diagram](figures/694-2.svg)
 
 ```text
 Input: grid = [[1,1,0,1,1],[1,0,0,0,0],[0,0,0,0,1],[1,1,0,1,1]]

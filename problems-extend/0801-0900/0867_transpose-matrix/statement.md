@@ -12,6 +12,8 @@ input appears at row `j`, column `i` of the transpose. Equivalently, row `i`
 of the input becomes column `i` of the result — so an `m x n` input yields an
 `n x m` output.
 
+![diagram](figures/867-1.svg)
+
 ### Example 1
 
 ```text

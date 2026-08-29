@@ -11,6 +11,8 @@ The rule is similar if the node does not have a right child.
 
 ### Example 1
 
+![diagram](figures/563-1.svg)
+
 ```text
 Input: root = [1,2,3]
 Output: 1
@@ -23,6 +25,8 @@ Sum of every tilt : 0 + 0 + 1 = 1
 ```
 
 ### Example 2
+
+![diagram](figures/563-2.svg)
 
 ```text
 Input: root = [4,2,9,3,5,null,7]
@@ -41,6 +45,8 @@ Sum of every tilt : 0 + 0 + 0 + 2 + 7 + 6 = 15
 ```
 
 ### Example 3
+
+![diagram](figures/563-3.svg)
 
 ```text
 Input: root = [21,7,14,1,1,2,2,3,3]

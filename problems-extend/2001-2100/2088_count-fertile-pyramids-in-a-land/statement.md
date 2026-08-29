@@ -14,9 +14,13 @@ An inverse pyramidal plot of land can be defined as a set of cells with similar 
 - The number of cells in the set has to be greater than 1 and all cells must be fertile.
 - The apex of an inverse pyramid is the bottommost cell of the inverse pyramid. The height of an inverse pyramid is the number of rows it covers. Let (r, c) be the apex of the pyramid, and its height be h. Then, the plot comprises of cells (i, j) where r - h + 1 <= i <= r and c - (r - i) <= j <= c + (r - i).
 
+![diagram](figures/2088-1.svg)
+
 Given a 0-indexed m x n binary matrix grid representing the farmland, return the total number of pyramidal and inverse pyramidal plots that can be found in grid.
 
 ### Example 1
+
+![diagram](figures/2088-2.svg)
 
 ```text
 Input: grid = [[0,1,1,0],[1,1,1,1]]
@@ -28,6 +32,8 @@ Hence total number of pyramidal and inverse pyramidal plots is 2 + 0 = 2.
 
 ### Example 2
 
+![diagram](figures/2088-3.svg)
+
 ```text
 Input: grid = [[1,1,1],[1,1,1]]
 Output: 2
@@ -36,6 +42,8 @@ Hence the total number of plots is 1 + 1 = 2.
 ```
 
 ### Example 3
+
+![diagram](figures/2088-4.svg)
 
 ```text
 Input: grid = [[1,1,1,1,0],[1,1,1,1,1],[1,1,1,1,1],[0,1,0,0,1]]

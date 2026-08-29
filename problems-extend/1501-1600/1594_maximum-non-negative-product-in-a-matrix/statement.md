@@ -17,6 +17,8 @@ determined.
 
 ### Example 1
 
+![diagram](figures/1594-1.svg)
+
 ```text
 Input: grid = [[-1,-2,-3],[-2,-3,-3],[-3,-3,-2]]
 Output: -1
@@ -26,6 +28,8 @@ so the answer is -1.
 
 ### Example 2
 
+![diagram](figures/1594-2.svg)
+
 ```text
 Input: grid = [[1,-2,1],[1,-2,1],[3,-4,1]]
 Output: 8
@@ -34,6 +38,8 @@ non-negative product.
 ```
 
 ### Example 3
+
+![diagram](figures/1594-3.svg)
 
 ```text
 Input: grid = [[1,3],[0,-4]]

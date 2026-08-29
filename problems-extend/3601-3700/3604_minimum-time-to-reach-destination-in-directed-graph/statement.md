@@ -20,6 +20,8 @@ return -1.
 
 ### Example 1
 
+![diagram](figures/3604-1.svg)
+
 ```text
 Input: n = 3, edges = [[0,1,0,1],[1,2,2,5]]
 Output: 3
@@ -33,6 +35,8 @@ Hence, the minimum time to reach node 2 is 3.
 
 ### Example 2
 
+![diagram](figures/3604-2.svg)
+
 ```text
 Input: n = 4, edges = [[0,1,0,3],[1,3,7,8],[0,2,1,5],[2,3,4,7]]
 Output: 5
@@ -45,6 +49,8 @@ Hence, the minimum time to reach node 3 is 5.
 ```
 
 ### Example 3
+
+![diagram](figures/3604-3.svg)
 
 ```text
 Input: n = 3, edges = [[1,0,1,3],[1,2,3,5]]

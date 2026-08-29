@@ -7,12 +7,16 @@ or `false` otherwise.
 
 ### Example 1
 
+![diagram](figures/234-1.svg)
+
 ```text
 Input: head = [1,2,2,1]
 Output: true
 ```
 
 ### Example 2
+
+![diagram](figures/234-2.svg)
 
 ```text
 Input: head = [1,2]

@@ -19,6 +19,8 @@ Return the probability that after `t` seconds the frog is on the vertex
 
 ### Example 1
 
+![diagram](figures/1377-1.svg)
+
 ```text
 Input: n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 2, target = 4
 Output: 0.16666666666666666
@@ -29,6 +31,8 @@ is 1/3 * 1/2 = 1/6 = 0.16666666666666666.
 ```
 
 ### Example 2
+
+![diagram](figures/1377-2.svg)
 
 ```text
 Input: n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 1, target = 7

@@ -28,6 +28,8 @@ tree.
 
 ### Example 1
 
+![diagram](figures/2322-1.svg)
+
 ```text
 Input: nums = [1,5,5,4,11], edges = [[0,1],[1,2],[1,3],[3,4]]
 Output: 9
@@ -40,6 +42,8 @@ It can be shown that no other pair of removals will obtain a smaller score than 
 ```
 
 ### Example 2
+
+![diagram](figures/2322-2.svg)
 
 ```text
 Input: nums = [5,5,2,4,4,2], edges = [[0,1],[1,2],[5,2],[4,3],[1,3]]

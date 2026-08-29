@@ -23,6 +23,8 @@ above.
 
 ### Example 1
 
+![diagram](figures/1861-1.svg)
+
 ```text
 Input: boxGrid = [["#",".","#"]]
 Output: [["."],
@@ -31,6 +33,8 @@ Output: [["."],
 ```
 
 ### Example 2
+
+![diagram](figures/1861-2.svg)
 
 ```text
 Input: boxGrid = [["#",".","*","."],
@@ -42,6 +46,8 @@ Output: [["#","."],
 ```
 
 ### Example 3
+
+![diagram](figures/1861-3.svg)
 
 ```text
 Input: boxGrid = [["#","#","*",".","*","."],

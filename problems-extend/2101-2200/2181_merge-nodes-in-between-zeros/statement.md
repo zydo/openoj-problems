@@ -14,6 +14,8 @@ Return the head of the modified linked list.
 
 ### Example 1
 
+![diagram](figures/2181-1.svg)
+
 ```text
 Input: head = [0,3,1,0,4,5,2,0]
 Output: [4,11]
@@ -24,6 +26,8 @@ The modified list contains
 ```
 
 ### Example 2
+
+![diagram](figures/2181-2.svg)
 
 ```text
 Input: head = [0,1,0,3,0,2,2,0]

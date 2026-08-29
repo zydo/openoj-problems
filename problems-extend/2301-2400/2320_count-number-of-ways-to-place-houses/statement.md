@@ -28,6 +28,8 @@ Possible arrangements:
 
 ### Example 2
 
+![diagram](figures/2320-1.svg)
+
 ```text
 Input: n = 2
 Output: 9

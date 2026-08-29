@@ -33,6 +33,8 @@ Implement the `SnakeGame` class:
 
 ### Example 1
 
+![diagram](figures/353-1.svg)
+
 ```text
 Input:
 ["SnakeGame", "move", "move", "move", "move", "move", "move"]

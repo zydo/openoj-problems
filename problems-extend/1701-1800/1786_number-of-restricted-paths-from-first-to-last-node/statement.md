@@ -22,6 +22,8 @@ may be too large, return it modulo `10⁹ + 7`.
 
 ### Example 1
 
+![diagram](figures/1786-1.svg)
+
 ```text
 Input: n = 5, edges = [[1,2,3],[1,3,3],[2,3,1],[1,4,2],[5,2,2],[3,5,1],[5,4,10]]
 Output: 3
@@ -32,6 +34,8 @@ Explanation: The three restricted paths are:
 ```
 
 ### Example 2
+
+![diagram](figures/1786-2.svg)
 
 ```text
 Input: n = 7, edges = [[1,3,1],[4,1,2],[7,3,4],[2,5,3],[5,6,1],[6,7,2],[7,5,3],[2,6,4]]

@@ -19,6 +19,8 @@ descendants.
 
 ### Example 1
 
+![diagram](figures/1519-1.svg)
+
 ```text
 Input: n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], labels = "abaedcd"
 Output: [2,1,1,1,1,1,1]
@@ -31,6 +33,8 @@ have different labels, so the answer for node 1 is just 1 — itself.
 
 ### Example 2
 
+![diagram](figures/1519-2.svg)
+
 ```text
 Input: n = 4, edges = [[0,1],[1,2],[0,3]], labels = "bbbb"
 Output: [4,2,1,1]
@@ -42,6 +46,8 @@ is 2. The subtree of node 0 contains nodes 0, 1, 2, and 3, all labeled
 ```
 
 ### Example 3
+
+![diagram](figures/1519-3.svg)
 
 ```text
 Input: n = 5, edges = [[0,1],[0,2],[1,3],[0,4]], labels = "aabab"

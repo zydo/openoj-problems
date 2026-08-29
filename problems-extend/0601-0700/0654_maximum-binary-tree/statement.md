@@ -15,6 +15,8 @@ Return the maximum binary tree built from `nums`.
 
 ### Example 1
 
+![diagram](figures/654-1.svg)
+
 ```text
 Input: nums = [3,2,1,6,0,5]
 Output: [6,3,5,null,2,0,null,null,1]
@@ -31,6 +33,8 @@ Explanation: The recursive calls are as follow:
 ```
 
 ### Example 2
+
+![diagram](figures/654-2.svg)
 
 ```text
 Input: nums = [3,2,1]

@@ -15,6 +15,8 @@ minimum number of days needed to turn `grid` into a disconnected grid.
 
 ### Example 1
 
+![diagram](figures/1568-1.svg)
+
 ```text
 Input: grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]
 Output: 2
@@ -25,6 +27,8 @@ so two days suffice — and one is not enough.
 ```
 
 ### Example 2
+
+![diagram](figures/1568-2.svg)
 
 ```text
 Input: grid = [[1,1]]

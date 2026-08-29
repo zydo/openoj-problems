@@ -18,6 +18,8 @@ set of edges.
 
 ### Example 1
 
+![diagram](figures/2192-1.svg)
+
 ```text
 Input: n = 8, edges = [[0,3],[0,4],[1,3],[2,4],[2,7],[3,5],[3,6],
 [3,7],[4,6]]
@@ -32,6 +34,8 @@ Explanation:
 ```
 
 ### Example 2
+
+![diagram](figures/2192-2.svg)
 
 ```text
 Input: n = 5, edges = [[0,1],[0,2],[0,3],[0,4],[1,2],[1,3],[1,4],

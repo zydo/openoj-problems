@@ -13,6 +13,8 @@ The distance is calculated using Manhattan Distance, where
 
 ### Example 1
 
+![diagram](figures/296-1.svg)
+
 ```text
 Input: grid = [[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]
 Output: 6

@@ -31,6 +31,8 @@ is never positive at any point, return `-1`.
 
 ### Example 1
 
+![diagram](figures/1599-1.svg)
+
 ```text
 Input: customers = [8,3], boardingCost = 5, runningCost = 6
 Output: 3

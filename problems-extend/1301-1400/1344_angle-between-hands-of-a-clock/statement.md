@@ -8,6 +8,8 @@ Answers within 10-5 of the actual value will be accepted as correct.
 
 ### Example 1
 
+![diagram](figures/1344-1.svg)
+
 ```text
 Input: hour = 12, minutes = 30
 Output: 165
@@ -15,12 +17,16 @@ Output: 165
 
 ### Example 2
 
+![diagram](figures/1344-2.svg)
+
 ```text
 Input: hour = 3, minutes = 30
 Output: 75
 ```
 
 ### Example 3
+
+![diagram](figures/1344-3.svg)
 
 ```text
 Input: hour = 3, minutes = 15

@@ -8,6 +8,8 @@ values of those leaves form a leaf value sequence.
 For example, the tree `[3,5,1,6,2,9,8,null,null,7,4]` has the leaf value
 sequence `(6, 7, 4, 9, 8)`.
 
+![diagram](figures/872-1.svg)
+
 Two binary trees are considered leaf-similar if their leaf value sequence
 is the same.
 
@@ -16,12 +18,16 @@ and `root2` are leaf-similar.
 
 ### Example 1
 
+![diagram](figures/872-2.svg)
+
 ```text
 Input: root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]
 Output: true
 ```
 
 ### Example 2
+
+![diagram](figures/872-3.svg)
 
 ```text
 Input: root1 = [1,2,3], root2 = [1,3,2]

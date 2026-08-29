@@ -17,6 +17,8 @@ Return the sum of integers in the matrix after all queries are applied.
 
 ### Example 1
 
+![diagram](figures/2718-1.svg)
+
 ```text
 Input: n = 3, queries = [[0,0,1],[1,2,2],[0,2,3],[1,0,4]]
 Output: 23
@@ -24,6 +26,8 @@ Explanation: The image above describes the matrix after each query. The sum of t
 ```
 
 ### Example 2
+
+![diagram](figures/2718-2.svg)
 
 ```text
 Input: n = 3, queries = [[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]

@@ -17,6 +17,8 @@ edge score, return the node with the smallest index.
 
 ### Example 1
 
+![diagram](figures/2374-1.svg)
+
 ```text
 Input: edges = [1,0,0,0,0,7,7,5]
 Output: 7
@@ -31,6 +33,8 @@ Node 7 has the highest edge score so return 7.
 ```
 
 ### Example 2
+
+![diagram](figures/2374-2.svg)
 
 ```text
 Input: edges = [2,0,0,2]
@@ -64,4 +68,3 @@ How does the edge score for node edges[i] change? It increases by i.
 ### Hint 3
 
 The edge score may not fit within a standard 32-bit integer.
-

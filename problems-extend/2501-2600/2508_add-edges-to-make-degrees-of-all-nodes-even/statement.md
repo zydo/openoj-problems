@@ -17,6 +17,8 @@ The degree of a node is the number of edges connected to it.
 
 ### Example 1
 
+![diagram](figures/2508-1.svg)
+
 ```text
 Input: n = 5, edges = [[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]
 Output: true
@@ -26,6 +28,8 @@ Every node in the resulting graph is connected to an even number of edges.
 
 ### Example 2
 
+![diagram](figures/2508-2.svg)
+
 ```text
 Input: n = 4, edges = [[1,2],[3,4]]
 Output: true
@@ -33,6 +37,8 @@ Explanation: The above diagram shows a valid way of adding two edges.
 ```
 
 ### Example 3
+
+![diagram](figures/2508-3.svg)
 
 ```text
 Input: n = 4, edges = [[1,2],[1,3],[1,4]]

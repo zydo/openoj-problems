@@ -24,6 +24,8 @@ Return the maximum possible height of the tallest building.
 
 ### Example 1
 
+![diagram](figures/1840-1.svg)
+
 ```text
 Input: n = 5, restrictions = [[2,1],[4,1]]
 Output: 2
@@ -33,6 +35,8 @@ We can build the buildings with heights [0,1,2,1,2], and the tallest building ha
 
 ### Example 2
 
+![diagram](figures/1840-2.svg)
+
 ```text
 Input: n = 6, restrictions = []
 Output: 5
@@ -41,6 +45,8 @@ We can build the buildings with heights [0,1,2,3,4,5], and the tallest building 
 ```
 
 ### Example 3
+
+![diagram](figures/1840-3.svg)
 
 ```text
 Input: n = 10, restrictions = [[5,3],[2,5],[7,4],[10,3]]

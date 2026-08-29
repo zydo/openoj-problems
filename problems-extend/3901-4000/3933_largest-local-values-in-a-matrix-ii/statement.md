@@ -13,6 +13,8 @@ A non-zero cell `(row, col)` checks the cells near it as follows:
 - Ignore the cells where both the row distance and column distance are exactly
   `x`.
 
+![diagram](figures/3933-1.svg)
+
 The cell `(row, col)` is a local maximum if it is non-zero and no considered
 cell has a value greater than `x`.
 

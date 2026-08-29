@@ -6,6 +6,8 @@ Given an integer `rowIndex`, return the `rowIndex`th (0-indexed) row of the Pasc
 
 In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
 
+![diagram](figures/119-1.svg)
+
 ### Example 1
 
 ```text

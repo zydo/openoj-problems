@@ -15,12 +15,16 @@ Return the 2D grid after applying the shift operation `k` times.
 
 ### Example 1
 
+![diagram](figures/1260-1.svg)
+
 ```text
 Input: grid = [[1,2,3],[4,5,6],[7,8,9]], k = 1
 Output: [[9,1,2],[3,4,5],[6,7,8]]
 ```
 
 ### Example 2
+
+![diagram](figures/1260-2.svg)
 
 ```text
 Input: grid = [[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], k = 4

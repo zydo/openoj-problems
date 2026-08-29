@@ -17,6 +17,8 @@ A dart lying exactly on the dartboard's boundary counts as inside.
 
 ### Example 1
 
+![diagram](figures/1453-1.svg)
+
 ```text
 Input: darts = [[-2,0],[2,0],[0,2],[0,-2]], r = 2
 Output: 4
@@ -25,6 +27,8 @@ contain all points.
 ```
 
 ### Example 2
+
+![diagram](figures/1453-2.svg)
 
 ```text
 Input: darts = [[-3,0],[3,0],[2,6],[5,4],[0,9],[7,8]], r = 5

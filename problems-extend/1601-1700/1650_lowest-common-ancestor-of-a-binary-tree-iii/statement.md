@@ -26,6 +26,8 @@ walk `p` and `q` up toward the root exactly as the original does with
 
 ### Example 1
 
+![diagram](figures/1650-1.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
 Output: 3
@@ -33,6 +35,8 @@ Explanation: The LCA of the nodes valued 5 and 1 is the node valued 3.
 ```
 
 ### Example 2
+
+![diagram](figures/1650-2.svg)
 
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4

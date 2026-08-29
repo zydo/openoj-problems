@@ -26,6 +26,8 @@ trailing `null`s are dropped.
 
 ### Example 1
 
+![diagram](figures/919-1.svg)
+
 ```text
 Input
 ["CBTInserter", "insert", "insert", "get_root"]

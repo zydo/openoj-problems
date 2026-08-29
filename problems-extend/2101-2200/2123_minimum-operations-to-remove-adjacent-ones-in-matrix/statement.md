@@ -10,6 +10,8 @@ Return the minimum number of operations to make grid well-isolated.
 
 ### Example 1
 
+![diagram](figures/2123-1.svg)
+
 ```text
 Input: grid = [[1,1,0],[0,1,1],[1,1,1]]
 Output: 3
@@ -19,6 +21,8 @@ After, no more 1's are 4-directionally connected and grid is well-isolated.
 
 ### Example 2
 
+![diagram](figures/2123-2.svg)
+
 ```text
 Input: grid = [[0,0,0],[0,0,0],[0,0,0]]
 Output: 0
@@ -27,6 +31,8 @@ No operations were done so return 0.
 ```
 
 ### Example 3
+
+![diagram](figures/2123-3.svg)
 
 ```text
 Input: grid = [[0,1],[1,0]]

@@ -14,6 +14,8 @@ number of water bottles you can drink.
 
 ### Example 1
 
+![diagram](figures/1518-1.svg)
+
 ```text
 Input: numBottles = 9, numExchange = 3
 Output: 13
@@ -22,6 +24,8 @@ Number of water bottles you can drink: 9 + 3 + 1 = 13.
 ```
 
 ### Example 2
+
+![diagram](figures/1518-2.svg)
 
 ```text
 Input: numBottles = 15, numExchange = 4

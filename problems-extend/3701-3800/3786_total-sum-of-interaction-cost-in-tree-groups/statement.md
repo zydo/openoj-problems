@@ -20,6 +20,8 @@ pairs `(u, v)` with `u != v` such that `group[u] == group[v]`.
 
 ### Example 1
 
+![diagram](figures/3786-1.svg)
+
 ```text
 Input: n = 3, edges = [[0,1],[1,2]], group = [1,1,1]
 Output: 4
@@ -44,6 +46,8 @@ Therefore, the total interaction cost is 2.
 ```
 
 ### Example 3
+
+![diagram](figures/3786-2.svg)
 
 ```text
 Input: n = 4, edges = [[0,1],[0,2],[0,3]], group = [1,1,4,4]

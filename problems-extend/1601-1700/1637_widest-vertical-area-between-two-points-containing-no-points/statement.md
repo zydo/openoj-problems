@@ -15,6 +15,8 @@ be inside it.
 
 ### Example 1
 
+![diagram](figures/1637-1.svg)
+
 ```text
 Input: points = [[8,7],[9,9],[7,4],[9,7]]
 Output: 1

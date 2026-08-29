@@ -28,6 +28,14 @@ considered to be next to each other.
 
 ### Example 1
 
+![diagram](figures/3245-1.svg)
+
+![diagram](figures/3245-2.svg)
+
+![diagram](figures/3245-3.svg)
+
+![diagram](figures/3245-4.svg)
+
 ```text
 Input: colors = [0,1,1,0,1], queries = [[2,1,0],[1,4]]
 Output: [2]
@@ -36,6 +44,12 @@ Second query: Count of the alternating groups with size 4:
 ```
 
 ### Example 2
+
+![diagram](figures/3245-5.svg)
+
+![diagram](figures/3245-6.svg)
+
+![diagram](figures/3245-7.svg)
 
 ```text
 Input: colors = [0,0,1,0,1,1], queries = [[1,3],[2,3,0],[1,5]]

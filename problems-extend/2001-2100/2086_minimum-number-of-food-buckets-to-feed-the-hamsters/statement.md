@@ -13,6 +13,8 @@ Return the minimum number of food buckets you should place at empty indices to f
 
 ### Example 1
 
+![diagram](figures/2086-1.svg)
+
 ```text
 Input: hamsters = "H..H"
 Output: 2
@@ -22,6 +24,8 @@ It can be shown that if we place only one food bucket, one of the hamsters will 
 
 ### Example 2
 
+![diagram](figures/2086-2.svg)
+
 ```text
 Input: hamsters = ".H.H."
 Output: 1
@@ -29,6 +33,8 @@ Explanation: We place one food bucket at index 2.
 ```
 
 ### Example 3
+
+![diagram](figures/2086-3.svg)
 
 ```text
 Input: hamsters = ".HHH."

@@ -10,6 +10,8 @@ Return the shuffled string.
 
 ### Example 1
 
+![diagram](figures/1528-1.svg)
+
 ```text
 Input: s = "codeleet", indices = [4,5,6,7,0,2,1,3]
 Output: "leetcode"

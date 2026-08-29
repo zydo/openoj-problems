@@ -15,6 +15,8 @@ bottom-right cell (m - 1, n - 1). If there is no valid path, return -1.
 
 ### Example 1
 
+![diagram](figures/2617-1.svg)
+
 ```text
 Input: grid = [[3,4,2,1],[4,2,3,1],[2,1,0,0],[2,4,0,0]]
 Output: 4
@@ -24,6 +26,8 @@ cells.
 
 ### Example 2
 
+![diagram](figures/2617-2.svg)
+
 ```text
 Input: grid = [[3,4,2,1],[4,2,1,1],[2,1,1,0],[3,4,1,0]]
 Output: 3
@@ -32,6 +36,8 @@ cells.
 ```
 
 ### Example 3
+
+![diagram](figures/2617-3.svg)
 
 ```text
 Input: grid = [[2,1,0],[1,0,0]]

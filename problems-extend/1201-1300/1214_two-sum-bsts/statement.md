@@ -8,6 +8,8 @@ second tree whose values sum up to a given integer `target`.
 
 ### Example 1
 
+![diagram](figures/1214-1.svg)
+
 ```text
 Input: root1 = [2,1,4], root2 = [1,0,3], target = 5
 Output: true
@@ -15,6 +17,8 @@ Explanation: 2 and 3 sum up to 5.
 ```
 
 ### Example 2
+
+![diagram](figures/1214-2.svg)
 
 ```text
 Input: root1 = [0,-10,10], root2 = [5,1,7,0,2], target = 18

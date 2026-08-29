@@ -10,6 +10,8 @@ Return `true` if it is possible to remove all `1`'s from `grid` using any number
 
 ### Example 1
 
+![diagram](figures/2128-1.svg)
+
 ```text
 Input: grid = [[0,1,0],[1,0,1],[0,1,0]]
 Output: true
@@ -20,6 +22,8 @@ Explanation: One possible way to remove all 1's from grid is to:
 
 ### Example 2
 
+![diagram](figures/2128-2.svg)
+
 ```text
 Input: grid = [[1,1,0],[0,0,0],[0,0,0]]
 Output: false
@@ -27,6 +31,8 @@ Explanation: It is impossible to remove all 1's from grid.
 ```
 
 ### Example 3
+
+![diagram](figures/2128-3.svg)
 
 ```text
 Input: grid = [[0]]

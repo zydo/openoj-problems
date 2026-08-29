@@ -23,6 +23,8 @@ distribute the candies. As the answer may be too large, return it modulo
 
 ### Example 1
 
+![diagram](figures/1692-1.svg)
+
 ```text
 Input: n = 3, k = 2
 Output: 3

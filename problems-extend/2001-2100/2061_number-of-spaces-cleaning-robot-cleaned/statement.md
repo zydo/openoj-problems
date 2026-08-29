@@ -10,6 +10,8 @@ Return the number of clean spaces in the room if the robot runs indefinitely.
 
 ### Example 1
 
+![diagram](figures/2061-1.svg)
+
 ```text
 Input: room = [[0,0,0],[1,1,0],[0,0,0]]
 Output: 7
@@ -23,6 +25,8 @@ The robot has cleaned all 7 empty spaces, so return 7.
 ```
 
 ### Example 2
+
+![diagram](figures/2061-2.svg)
 
 ```text
 Input: room = [[0,1,0],[1,0,0],[0,0,0]]

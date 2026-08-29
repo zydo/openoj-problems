@@ -7,6 +7,8 @@ search trees) which has exactly `n` nodes of unique values from `1` to `n`.
 
 ### Example 1
 
+![diagram](figures/96-1.svg)
+
 ```text
 Input: n = 3
 Output: 5

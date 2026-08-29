@@ -13,6 +13,8 @@ Return the number of islands with a total value divisible by `k`.
 
 ### Example 1
 
+![diagram](figures/3619-1.svg)
+
 ```text
 Input: grid = [[0,2,1,0,0],[0,5,0,0,5],[0,0,1,0,0],[0,1,4,7,0],[0,2,0,0,8]], k = 5
 Output: 2
@@ -22,6 +24,8 @@ red do not.
 ```
 
 ### Example 2
+
+![diagram](figures/3619-2.svg)
 
 ```text
 Input: grid = [[3,0,3,0], [0,3,0,3], [3,0,3,0]], k = 3

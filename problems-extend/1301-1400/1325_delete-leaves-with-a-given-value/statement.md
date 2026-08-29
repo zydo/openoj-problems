@@ -8,6 +8,8 @@ Note that once you delete a leaf node with value target, if its parent node beco
 
 ### Example 1
 
+![diagram](figures/1325-1.svg)
+
 ```text
 Input: root = [1,2,3,2,null,2,4], target = 2
 Output: [1,null,3,null,4]
@@ -17,12 +19,16 @@ After removing, new nodes become leaf nodes with value (target = 2) (Picture in 
 
 ### Example 2
 
+![diagram](figures/1325-2.svg)
+
 ```text
 Input: root = [1,3,3,3,2], target = 3
 Output: [1,3,null,null,2]
 ```
 
 ### Example 3
+
+![diagram](figures/1325-3.svg)
 
 ```text
 Input: root = [1,2,null,2,null,2], target = 2

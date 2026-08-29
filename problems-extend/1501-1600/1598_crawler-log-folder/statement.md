@@ -24,6 +24,8 @@ folder after the change-folder operations.
 
 ### Example 1
 
+![diagram](figures/1598-1.svg)
+
 ```text
 Input: logs = ["d1/","d2/","../","d21/","./"]
 Output: 2
@@ -31,6 +33,8 @@ Explanation: Use the "../" operation 2 times to go back to the main folder.
 ```
 
 ### Example 2
+
+![diagram](figures/1598-2.svg)
 
 ```text
 Input: logs = ["d1/","d2/","./","d3/","../","d31/"]

@@ -18,6 +18,8 @@ It is guaranteed that the given array represents a valid connected binary tree.
 
 ### Example 1
 
+![diagram](figures/666-1.svg)
+
 ```text
 Input: nums = [113,215,221]
 Output: 12
@@ -26,6 +28,8 @@ The path sum is (3 + 5) + (3 + 1) = 12.
 ```
 
 ### Example 2
+
+![diagram](figures/666-2.svg)
 
 ```text
 Input: nums = [113,221]

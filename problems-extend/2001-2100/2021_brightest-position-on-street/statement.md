@@ -16,6 +16,8 @@ multiple brightest positions, return the smallest one.
 
 ### Example 1
 
+![diagram](figures/2021-1.svg)
+
 ```text
 Input: lights = [[-3,2],[1,2],[3,3]]
 Output: -1

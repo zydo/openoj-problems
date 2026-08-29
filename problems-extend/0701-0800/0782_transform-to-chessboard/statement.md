@@ -13,6 +13,8 @@ adjacent.
 
 ### Example 1
 
+![diagram](figures/782-1.svg)
+
 ```text
 Input: board = [[0,1,1,0],[0,1,1,0],[1,0,0,1],[1,0,0,1]]
 Output: 2
@@ -22,6 +24,8 @@ move swaps the second and third row.
 
 ### Example 2
 
+![diagram](figures/782-2.svg)
+
 ```text
 Input: board = [[0,1],[1,0]]
 Output: 0
@@ -30,6 +34,8 @@ valid chessboard.
 ```
 
 ### Example 3
+
+![diagram](figures/782-3.svg)
 
 ```text
 Input: board = [[1,0],[1,0]]

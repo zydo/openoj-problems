@@ -17,6 +17,8 @@ Return `true` if such a path exists, and `false` otherwise.
 
 ### Example 1
 
+![diagram](figures/3235-1.svg)
+
 ```text
 Input: xCorner = 3, yCorner = 4, circles = [[2,1,1]]
 Output: true
@@ -24,6 +26,8 @@ Explanation: The black curve shows a possible path between (0, 0) and (3, 4).
 ```
 
 ### Example 2
+
+![diagram](figures/3235-2.svg)
 
 ```text
 Input: xCorner = 3, yCorner = 3, circles = [[1,1,2]]
@@ -33,6 +37,8 @@ Explanation: No path exists from (0, 0) to (3, 3).
 
 ### Example 3
 
+![diagram](figures/3235-3.svg)
+
 ```text
 Input: xCorner = 3, yCorner = 3, circles = [[2,1,1],[1,2,1]]
 Output: false
@@ -40,6 +46,8 @@ Explanation: No path exists from (0, 0) to (3, 3).
 ```
 
 ### Example 4
+
+![diagram](figures/3235-4.svg)
 
 ```text
 Input: xCorner = 4, yCorner = 4, circles = [[5,5,1]]

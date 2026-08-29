@@ -14,6 +14,8 @@ path always ends in the last row.
 
 ### Example 1
 
+![diagram](figures/931-1.svg)
+
 ```text
 Input: matrix = [[2,1,3],[6,5,4],[7,8,9]]
 Output: 13
@@ -23,6 +25,8 @@ path [1,5,7] steps straight down, then down-left. Both sum to 13.
 ```
 
 ### Example 2
+
+![diagram](figures/931-2.svg)
 
 ```text
 Input: matrix = [[-19,57],[-40,-5]]

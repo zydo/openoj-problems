@@ -13,6 +13,8 @@ otherwise.
 
 ### Example 1
 
+![diagram](figures/1496-1.svg)
+
 ```text
 Input: path = "NES"
 Output: false
@@ -20,6 +22,8 @@ Explanation: The path never visits the same point twice.
 ```
 
 ### Example 2
+
+![diagram](figures/1496-2.svg)
 
 ```text
 Input: path = "NESWW"

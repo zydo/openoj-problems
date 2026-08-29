@@ -13,6 +13,8 @@ Return the number of bulbs that are on after `n` rounds.
 
 ### Example 1
 
+![diagram](figures/319-1.svg)
+
 ```text
 Input: n = 3
 Output: 1

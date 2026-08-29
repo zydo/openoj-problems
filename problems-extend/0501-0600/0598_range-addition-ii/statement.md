@@ -11,6 +11,8 @@ all the operations.
 
 ### Example 1
 
+![diagram](figures/598-1.svg)
+
 ```text
 Input: m = 3, n = 3, ops = [[2,2],[3,3]]
 Output: 4

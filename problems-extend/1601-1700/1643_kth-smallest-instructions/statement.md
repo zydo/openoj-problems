@@ -20,6 +20,8 @@ Among all valid instruction strings, ranked in lexicographic order
 
 ### Example 1
 
+![diagram](figures/1643-1.svg)
+
 ```text
 Input: destination = [2, 3], k = 1
 Output: "HHHVV"
@@ -31,6 +33,8 @@ order, are:
 
 ### Example 2
 
+![diagram](figures/1643-2.svg)
+
 ```text
 Input: destination = [2, 3], k = 2
 Output: "HHVHV"
@@ -39,6 +43,8 @@ instruction string is "HHVHV".
 ```
 
 ### Example 3
+
+![diagram](figures/1643-3.svg)
 
 ```text
 Input: destination = [2, 3], k = 3

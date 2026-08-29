@@ -17,6 +17,8 @@ rectangle stamps could have produced this exact grid, and return `true` or
 
 ### Example 1
 
+![diagram](figures/1591-1.svg)
+
 ```text
 Input: targetGrid = [[1,1,1,1],[1,2,2,1],[1,2,2,1],[1,1,1,1]]
 Output: true
@@ -26,6 +28,8 @@ overwrites, leaving exactly this grid.
 ```
 
 ### Example 2
+
+![diagram](figures/1591-2.svg)
 
 ```text
 Input: targetGrid = [[1,1,1,1],[1,1,3,3],[1,1,3,4],[5,5,1,4]]

@@ -27,6 +27,8 @@ before the other actions.
 
 ### Example 1
 
+![diagram](figures/1797-1.svg)
+
 ```text
 Input:
 ["AuthenticationManager", "renew", "generate", "countUnexpiredTokens", "generate", "renew", "renew", "countUnexpiredTokens"]

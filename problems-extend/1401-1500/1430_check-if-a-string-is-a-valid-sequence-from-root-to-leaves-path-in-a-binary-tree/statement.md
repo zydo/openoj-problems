@@ -16,6 +16,8 @@ last node is a leaf.
 
 ### Example 1
 
+![diagram](figures/1430-1.svg)
+
 ```text
 Input: root = [0,1,0,0,1,0,null,null,1,0,0], arr = [0,1,0,1]
 Output: true
@@ -29,6 +31,8 @@ Other valid sequences are:
 
 ### Example 2
 
+![diagram](figures/1430-2.svg)
+
 ```text
 Input: root = [0,1,0,0,1,0,null,null,1,0,0], arr = [0,0,1]
 Output: false
@@ -37,6 +41,8 @@ even a sequence.
 ```
 
 ### Example 3
+
+![diagram](figures/1430-3.svg)
 
 ```text
 Input: root = [0,1,0,0,1,0,null,null,1,0,0], arr = [0,1,1]

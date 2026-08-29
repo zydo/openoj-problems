@@ -13,6 +13,8 @@ Input: head = [1,2,3,4]
 Output: [2,1,4,3]
 ```
 
+![diagram](figures/24-1.svg)
+
 ### Example 2
 
 ```text

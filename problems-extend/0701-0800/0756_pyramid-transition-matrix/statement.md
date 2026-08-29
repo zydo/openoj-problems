@@ -25,6 +25,8 @@ appears in `allowed`, or `false` otherwise.
 
 ### Example 1
 
+![diagram](figures/756-1.svg)
+
 ```text
 Input: bottom = "BCD", allowed = ["BCC","CDE","CEA","FFF"]
 Output: true
@@ -34,6 +36,8 @@ and then "A" on top. The three triangular patterns in the pyramid are
 ```
 
 ### Example 2
+
+![diagram](figures/756-2.svg)
 
 ```text
 Input: bottom = "AAAA", allowed = ["AAB","AAC","BCD","BBE","DEF"]

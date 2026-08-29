@@ -31,6 +31,8 @@ connectivity.
 
 ### Example 1
 
+![diagram](figures/3607-1.svg)
+
 ```text
 Input: c = 5, connections = [[1,2],[2,3],[3,4],[4,5]], queries = [[1,3],[2,1],[1,1],[2,2],[1,2]]
 Output: [3,2,3]

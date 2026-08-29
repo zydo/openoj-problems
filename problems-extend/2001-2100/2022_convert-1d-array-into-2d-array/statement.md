@@ -16,6 +16,8 @@ empty 2D array if it is impossible.
 
 ### Example 1
 
+![diagram](figures/2022-1.svg)
+
 ```text
 Input: original = [1,2,3,4], m = 2, n = 2
 Output: [[1,2],[3,4]]

@@ -21,6 +21,8 @@ stopped moving.
 
 ### Example 1
 
+![diagram](figures/688-1.svg)
+
 ```text
 Input: n = 3, k = 2, row = 0, column = 0
 Output: 0.06250

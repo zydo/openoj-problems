@@ -19,6 +19,8 @@ Return the earliest second starting from which the network becomes idle.
 
 ### Example 1
 
+![diagram](figures/2039-1.svg)
+
 ```text
 Input: edges = [[0,1],[1,2]], patience = [0,2,1]
 Output: 8
@@ -47,6 +49,8 @@ This is the time when the network becomes idle.
 ```
 
 ### Example 2
+
+![diagram](figures/2039-2.svg)
 
 ```text
 Input: edges = [[0,1],[0,2],[1,2]], patience = [0,10,10]

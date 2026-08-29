@@ -31,6 +31,8 @@ for the most requests handled, return all of them.
 
 ### Example 1
 
+![diagram](figures/1606-1.svg)
+
 ```text
 Input: k = 3, arrival = [1,2,3,4,5], load = [5,2,3,3,3]
 Output: [1]

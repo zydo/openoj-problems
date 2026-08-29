@@ -26,6 +26,8 @@ total cost to buy apples starting from shop `i`.
 
 ### Example 1
 
+![diagram](figures/3928-1.svg)
+
 ```text
 Input: n = 2, prices = [8,3], roads = [[0,1,1,2]]
 Output: [6,3]
@@ -33,12 +35,16 @@ Output: [6,3]
 
 ### Example 2
 
+![diagram](figures/3928-2.svg)
+
 ```text
 Input: n = 3, prices = [9,4,6], roads = [[0,1,1,3],[1,2,4,2]]
 Output: [8,4,6]
 ```
 
 ### Example 3
+
+![diagram](figures/3928-3.svg)
 
 ```text
 Input: n = 3, prices = [10,11,1], roads = [[0,2,1,3],[1,2,3,4],[0,1,5,2]]

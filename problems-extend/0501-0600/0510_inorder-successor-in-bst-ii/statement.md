@@ -27,6 +27,8 @@ value; no in-order successor returns `[]`.
 
 ### Example 1
 
+![diagram](figures/510-1.svg)
+
 ```text
 Input: tree = [2,1,3], node = 1
 Output: [2, null, 1]
@@ -34,6 +36,8 @@ Explanation: 1's in-order successor node is 2. Note that both the node and the r
 ```
 
 ### Example 2
+
+![diagram](figures/510-2.svg)
 
 ```text
 Input: tree = [5,3,6,2,4,null,null,1], node = 6

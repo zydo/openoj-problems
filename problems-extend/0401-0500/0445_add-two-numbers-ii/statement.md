@@ -12,6 +12,8 @@ number `0` itself.
 
 ### Example 1
 
+![diagram](figures/445-1.svg)
+
 ```text
 Input: l1 = [7,2,4,3], l2 = [5,6,4]
 Output: [7,8,0,7]

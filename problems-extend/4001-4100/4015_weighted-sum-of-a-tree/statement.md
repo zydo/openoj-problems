@@ -23,6 +23,8 @@ The height of the tree is the maximum depth among all nodes in the tree.
 
 ### Example 1
 
+![diagram](figures/4015-1.svg)
+
 ```text
 Input: parent = [-1,0,0,0,2,2], nums = [5,2,3,1,4,6]
 Output: 37
@@ -40,6 +42,8 @@ The sum of all node weights is 15 + 4 + 6 + 2 + 4 + 6 = 37.
 ```
 
 ### Example 2
+
+![diagram](figures/4015-2.svg)
 
 ```text
 Input: parent = [-1,0,1,2], nums = [1,2,3,4]

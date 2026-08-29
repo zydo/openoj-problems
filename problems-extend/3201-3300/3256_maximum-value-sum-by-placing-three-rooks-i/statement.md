@@ -12,6 +12,8 @@ Return the maximum sum of the cell values on which the rooks are placed.
 
 ### Example 1
 
+![diagram](figures/3256-1.svg)
+
 ```text
 Input: board = [[-3,1,1,1],[-3,1,-3,1],[-3,2,1,1]]
 Output: 4

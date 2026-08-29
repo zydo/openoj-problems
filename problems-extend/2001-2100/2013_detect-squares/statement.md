@@ -23,6 +23,8 @@ Implement the `DetectSquares` class:
 
 ### Example 1
 
+![diagram](figures/2013-1.svg)
+
 ```text
 Input:
 ["DetectSquares", "add", "add", "add", "count", "count", "add", "count"]

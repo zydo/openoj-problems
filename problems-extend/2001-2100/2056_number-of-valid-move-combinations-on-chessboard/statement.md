@@ -22,6 +22,8 @@ Notes:
 
 ### Example 1
 
+![diagram](figures/2056-1.svg)
+
 ```text
 Input: pieces = ["rook"], positions = [[1,1]]
 Output: 15
@@ -29,12 +31,16 @@ Output: 15
 
 ### Example 2
 
+![diagram](figures/2056-2.svg)
+
 ```text
 Input: pieces = ["queen"], positions = [[1,1]]
 Output: 22
 ```
 
 ### Example 3
+
+![diagram](figures/2056-3.svg)
 
 ```text
 Input: pieces = ["bishop"], positions = [[4,3]]

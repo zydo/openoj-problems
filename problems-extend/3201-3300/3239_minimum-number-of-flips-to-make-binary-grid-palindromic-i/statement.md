@@ -15,6 +15,8 @@ all rows palindromic or all columns palindromic.
 
 ### Example 1
 
+![diagram](figures/3239-1.svg)
+
 ```text
 Input: grid = [[1,0,0],[0,0,0],[0,0,1]]
 Output: 2
@@ -23,6 +25,8 @@ palindromic.
 ```
 
 ### Example 2
+
+![diagram](figures/3239-2.svg)
 
 ```text
 Input: grid = [[0,1],[0,1],[0,0]]

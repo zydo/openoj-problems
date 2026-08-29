@@ -5,6 +5,8 @@
 Suppose we have a file system that stores both files and directories. An
 example of one system is represented in the following picture:
 
+![diagram](figures/388-1.svg)
+
 Here, we have `dir` as the only directory in the root. `dir` contains two
 subdirectories, `subdir1` and `subdir2`. `subdir1` contains a file
 `file1.ext` and subdirectory `subsubdir1`. `subdir2` contains a
@@ -43,6 +45,8 @@ and no file or directory name has length 0.
 
 ### Example 1
 
+![diagram](figures/388-2.svg)
+
 ```text
 Input: input = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"
 Output: 20
@@ -51,6 +55,8 @@ Explanation: We have only one file, and the absolute path is
 ```
 
 ### Example 2
+
+![diagram](figures/388-3.svg)
 
 ```text
 Input: input = "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"

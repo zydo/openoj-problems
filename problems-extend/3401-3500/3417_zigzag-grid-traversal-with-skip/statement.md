@@ -23,6 +23,8 @@ cells visited during the zigzag traversal with skips.
 
 ### Example 1
 
+![diagram](figures/3417-1.svg)
+
 ```text
 Input: grid = [[1,2],[3,4]]
 Output: [1,4]
@@ -30,12 +32,16 @@ Output: [1,4]
 
 ### Example 2
 
+![diagram](figures/3417-2.svg)
+
 ```text
 Input: grid = [[2,1],[2,1],[2,1]]
 Output: [2,1,2]
 ```
 
 ### Example 3
+
+![diagram](figures/3417-3.svg)
 
 ```text
 Input: grid = [[1,2,3],[4,5,6],[7,8,9]]

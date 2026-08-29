@@ -17,6 +17,8 @@ to the ith query.
 
 ### Example 1
 
+![diagram](figures/2277-1.svg)
+
 ```text
 Input: n = 7, edges = [[0,1],[0,2],[0,3],[1,4],[2,5],[2,6]], query = [[5,3,4],[5,3,6]]
 Output: [0,2]
@@ -30,6 +32,8 @@ Node 2 is the node on the path closest to node 6, so the answer to the second qu
 
 ### Example 2
 
+![diagram](figures/2277-2.svg)
+
 ```text
 Input: n = 3, edges = [[0,1],[1,2]], query = [[0,1,2]]
 Output: [1]
@@ -40,6 +44,8 @@ Node 1 is the node on the path closest to node 2, so the answer to the first que
 ```
 
 ### Example 3
+
+![diagram](figures/2277-3.svg)
 
 ```text
 Input: n = 3, edges = [[0,1],[1,2]], query = [[0,0,0]]

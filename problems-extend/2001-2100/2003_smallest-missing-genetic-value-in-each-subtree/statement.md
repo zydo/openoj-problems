@@ -18,6 +18,8 @@ nodes.
 
 ### Example 1
 
+![diagram](figures/2003-1.svg)
+
 ```text
 Input: parents = [-1,0,0,2], nums = [1,2,3,4]
 Output: [5,1,1,1]
@@ -29,6 +31,8 @@ Explanation: The answer for each subtree is calculated as follows:
 ```
 
 ### Example 2
+
+![diagram](figures/2003-2.svg)
 
 ```text
 Input: parents = [-1,0,1,0,3,3], nums = [5,4,6,2,1,3]

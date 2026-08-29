@@ -16,8 +16,8 @@ A valid path is a sequence of free cells that:
 - Starts at the top-left cell `(0, 0)`.
 - Ends at the bottom-right cell `(m - 1, n - 1)`, where `m` and `n` are the dimensions of your constructed grid.
 - Moves only:
-  - Right, from `(i, j)` to `(i, j + 1)`, or
-  - Down, from `(i, j)` to `(i + 1, j)`.
+    - Right, from `(i, j)` to `(i, j + 1)`, or
+    - Down, from `(i, j)` to `(i + 1, j)`.
 
 Return any grid such that there are exactly `k` valid paths from the top-left cell to the bottom-right cell. If no such grid exists, return an empty array.
 
@@ -31,6 +31,8 @@ Explanation: The grid contains exactly 2 valid paths from (0, 0) to (2, 2):
 (0, 0) → (0, 1) → (1, 1) → (2, 1) → (2, 2)
 ```
 
+![diagram](figures/3990-1.svg)
+
 ### Example 2
 
 ```text
@@ -41,6 +43,8 @@ Explanation: The grid contains exactly 3 valid paths from (0, 0) to (2, 2):
 (0, 0) → (0, 1) → (1, 1) → (1, 2) → (2, 2)
 (0, 0) → (0, 1) → (1, 1) → (2, 1) → (2, 2)
 ```
+
+![diagram](figures/3990-2.svg)
 
 ### Constraints
 

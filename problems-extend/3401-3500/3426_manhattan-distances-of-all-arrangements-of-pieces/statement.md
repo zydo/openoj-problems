@@ -18,6 +18,10 @@ The Manhattan Distance between two cells (xi, yi) and (xj, yj) is
 
 ### Example 1
 
+![diagram](figures/3426-1.svg)
+
+![diagram](figures/3426-2.svg)
+
 ```text
 Input: m = 2, n = 2, k = 2
 Output: 8
@@ -29,6 +33,8 @@ total Manhattan distance across all valid arrangements is 1 + 1 + 1 + 1 + 2 +
 ```
 
 ### Example 2
+
+![diagram](figures/3426-3.svg)
 
 ```text
 Input: m = 1, n = 4, k = 3

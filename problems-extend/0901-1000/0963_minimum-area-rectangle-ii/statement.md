@@ -14,6 +14,8 @@ Answers within `10⁻⁵` of the actual answer will be accepted.
 
 ### Example 1
 
+![diagram](figures/963-1.svg)
+
 ```text
 Input: points = [[1,2],[2,1],[1,0],[0,1]]
 Output: 2.00000
@@ -23,6 +25,8 @@ with an area of 2. Its sides sit at 45 degrees to the axes.
 
 ### Example 2
 
+![diagram](figures/963-2.svg)
+
 ```text
 Input: points = [[0,1],[2,1],[1,1],[1,0],[2,0]]
 Output: 1.00000
@@ -31,6 +35,8 @@ with an area of 1.
 ```
 
 ### Example 3
+
+![diagram](figures/963-3.svg)
 
 ```text
 Input: points = [[0,3],[1,2],[3,1],[1,3],[2,1]]

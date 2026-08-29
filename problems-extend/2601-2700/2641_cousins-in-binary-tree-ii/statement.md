@@ -15,6 +15,8 @@ root node to it.
 
 ### Example 1
 
+![diagram](figures/2641-1.svg)
+
 ```text
 Input: root = [5,4,9,1,10,null,7]
 Output: [0,0,0,7,7,null,11]
@@ -28,6 +30,8 @@ Explanation: The diagram above shows the initial binary tree and the binary tree
 ```
 
 ### Example 2
+
+![diagram](figures/2641-2.svg)
 
 ```text
 Input: root = [3,1,2]

@@ -10,6 +10,8 @@ Answers within `10⁻⁵` of the actual answer will be accepted.
 
 ### Example 1
 
+![diagram](figures/812-1.svg)
+
 ```text
 Input: points = [[0,0],[0,1],[1,0],[0,2],[2,0]]
 Output: 2.00000

@@ -18,6 +18,8 @@ the graph has no connected trios.
 
 ### Example 1
 
+![diagram](figures/1761-1.svg)
+
 ```text
 Input: n = 6, edges = [[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]
 Output: 3
@@ -26,6 +28,8 @@ form its degree are bolded in the figure above.
 ```
 
 ### Example 2
+
+![diagram](figures/1761-2.svg)
 
 ```text
 Input: n = 7, edges = [[1,3],[4,1],[4,3],[2,5],[5,6],[6,7],[7,5],[2,6]]

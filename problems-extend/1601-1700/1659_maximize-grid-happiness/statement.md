@@ -24,6 +24,8 @@ maximum possible grid happiness.
 
 ### Example 1
 
+![diagram](figures/1659-1.svg)
+
 ```text
 Input: m = 2, n = 3, introvertsCount = 1, extrovertsCount = 2
 Output: 240

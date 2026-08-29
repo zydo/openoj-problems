@@ -9,6 +9,8 @@ Answers within `10⁻⁵` of the actual answer will be accepted.
 
 ### Example 1
 
+![diagram](figures/637-1.svg)
+
 ```text
 Input: root = [3,9,20,null,null,15,7]
 Output: [3.00000,14.50000,11.00000]
@@ -17,6 +19,8 @@ and on level 2 is 11. Hence return [3, 14.5, 11].
 ```
 
 ### Example 2
+
+![diagram](figures/637-2.svg)
 
 ```text
 Input: root = [3,9,20,15,7]

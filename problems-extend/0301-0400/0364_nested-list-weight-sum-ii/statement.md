@@ -15,6 +15,8 @@ Return the sum of each integer in `nestedList` multiplied by its weight.
 
 ### Example 1
 
+![diagram](figures/364-1.svg)
+
 ```text
 Input: nestedList = [[1,1],2,[1,1]]
 Output: 8
@@ -23,6 +25,8 @@ Explanation: Four 1's with a weight of 1, one 2 with a weight of 2.
 ```
 
 ### Example 2
+
+![diagram](figures/364-2.svg)
 
 ```text
 Input: nestedList = [1,[4,[6]]]

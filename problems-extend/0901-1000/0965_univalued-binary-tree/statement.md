@@ -9,6 +9,8 @@ uni-valued, or `false` otherwise.
 
 ### Example 1
 
+![diagram](figures/965-1.svg)
+
 ```text
 Input: root = [1,1,1,1,1,null,1]
 Output: true
@@ -16,6 +18,8 @@ Explanation: Every node of the tree carries the value 1.
 ```
 
 ### Example 2
+
+![diagram](figures/965-2.svg)
 
 ```text
 Input: root = [2,2,2,5,2]

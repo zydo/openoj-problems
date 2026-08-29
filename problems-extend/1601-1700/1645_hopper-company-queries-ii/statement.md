@@ -50,6 +50,8 @@ working_percentage = (# drivers that accepted at least one ride during the month
                       / (# available drivers during the month) * 100.0
 ```
 
+![diagram](figures/1645-1.svg)
+
 A driver counts as **available** for a month once their `join_date`
 falls on or before that month's last day of 2020, regardless of how
 long ago they joined (even in an earlier year); a driver whose

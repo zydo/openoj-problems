@@ -24,6 +24,8 @@ column at the top, or `-1` if the ball gets stuck in the box.
 
 ### Example 1
 
+![diagram](figures/1706-1.svg)
+
 ```text
 Input: grid = [[1,1,1,-1,-1],[1,1,1,-1,-1],[-1,-1,-1,1,1],[1,1,1,1,-1],[-1,-1,-1,-1,-1]]
 Output: [1,-1,-1,-1,-1]

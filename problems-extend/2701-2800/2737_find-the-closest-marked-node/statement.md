@@ -15,6 +15,8 @@ Return an integer denoting the minimum distance from `s` to any node in
 
 ### Example 1
 
+![diagram](figures/2737-1.svg)
+
 ```text
 Input: n = 4, edges = [[0,1,1],[1,2,3],[2,3,2],[0,3,4]], s = 0, marked = [2,3]
 Output: 4
@@ -25,6 +27,8 @@ The minimum of them is 4.
 
 ### Example 2
 
+![diagram](figures/2737-2.svg)
+
 ```text
 Input: n = 5, edges = [[0,1,2],[0,2,4],[1,3,1],[2,3,3],[3,4,2]], s = 1, marked = [0,4]
 Output: 3
@@ -34,6 +38,8 @@ So the answer is 3.
 ```
 
 ### Example 3
+
+![diagram](figures/2737-3.svg)
 
 ```text
 Input: n = 4, edges = [[0,1,1],[1,2,3],[2,3,2]], s = 3, marked = [0,1]

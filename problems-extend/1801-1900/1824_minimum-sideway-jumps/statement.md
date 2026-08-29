@@ -31,6 +31,8 @@ Note: There will be no obstacles on points 0 and n.
 
 ### Example 1
 
+![diagram](figures/1824-1.svg)
+
 ```text
 Input: obstacles = [0,1,2,3,0]
 Output: 2
@@ -42,6 +44,8 @@ shown at point 2).
 
 ### Example 2
 
+![diagram](figures/1824-2.svg)
+
 ```text
 Input: obstacles = [0,1,1,3,3,0]
 Output: 0
@@ -49,6 +53,8 @@ Explanation: There are no obstacles on lane 2. No side jumps are required.
 ```
 
 ### Example 3
+
+![diagram](figures/1824-3.svg)
 
 ```text
 Input: obstacles = [0,2,1,0,3,0]

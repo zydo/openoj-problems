@@ -16,6 +16,8 @@ valid paths.
 
 ### Example 1
 
+![diagram](figures/3879-1.svg)
+
 ```text
 Input: root = [2,2,1]
 Output: 3
@@ -25,6 +27,8 @@ The maximum-sum valid path is 2 → 1, with a sum = 2 + 1 = 3.
 
 ### Example 2
 
+![diagram](figures/3879-2.svg)
+
 ```text
 Input: root = [1,-2,5,null,null,3,5]
 Output: 9
@@ -33,6 +37,8 @@ The maximum-sum valid path is 1 → 5 → 3, with a sum = 1 + 5 + 3 = 9.
 ```
 
 ### Example 3
+
+![diagram](figures/3879-3.svg)
 
 ```text
 Input: root = [4,6,6,null,null,null,9]

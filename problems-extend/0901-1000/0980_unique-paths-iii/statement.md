@@ -14,6 +14,8 @@ ending square, that walk over every non-obstacle square exactly once.
 
 ### Example 1
 
+![diagram](figures/980-1.svg)
+
 ```text
 Input: grid = [[1,0,0,0],[0,0,0,0],[0,0,2,-1]]
 Output: 2
@@ -23,6 +25,8 @@ Explanation: We have the following two paths:
 ```
 
 ### Example 2
+
+![diagram](figures/980-2.svg)
 
 ```text
 Input: grid = [[1,0,0,0],[0,0,0,0],[0,0,0,2]]
@@ -35,6 +39,8 @@ Explanation: We have the following four paths:
 ```
 
 ### Example 3
+
+![diagram](figures/980-3.svg)
 
 ```text
 Input: grid = [[0,1],[2,0]]

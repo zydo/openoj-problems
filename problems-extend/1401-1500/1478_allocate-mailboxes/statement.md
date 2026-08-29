@@ -13,6 +13,8 @@ The test cases are generated so that the answer fits in a 32-bit integer.
 
 ### Example 1
 
+![diagram](figures/1478-1.svg)
+
 ```text
 Input: houses = [1,4,8,10,20], k = 3
 Output: 5
@@ -22,6 +24,8 @@ total distance from each house to its nearest mailbox is
 ```
 
 ### Example 2
+
+![diagram](figures/1478-2.svg)
 
 ```text
 Input: houses = [2,3,5,12,18], k = 2

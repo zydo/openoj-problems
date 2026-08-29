@@ -21,6 +21,8 @@ Note that `x` and `y` can be equal.
 
 ### Example 1
 
+![diagram](figures/3017-1.svg)
+
 ```text
 Input: n = 3, x = 1, y = 3
 Output: [6,0,0]
@@ -35,6 +37,8 @@ Explanation: Let's look at each pair of houses:
 
 ### Example 2
 
+![diagram](figures/3017-2.svg)
+
 ```text
 Input: n = 5, x = 2, y = 4
 Output: [10,8,2,0,0]
@@ -46,6 +50,8 @@ Explanation: For each distance k the pairs are:
 ```
 
 ### Example 3
+
+![diagram](figures/3017-3.svg)
 
 ```text
 Input: n = 4, x = 1, y = 1

@@ -24,6 +24,8 @@ weights.
 
 ### Example 1
 
+![diagram](figures/2699-1.svg)
+
 ```text
 Input: n = 5, edges = [[4,1,-1],[2,0,-1],[0,3,-1],[4,3,-1]], source = 0, destination = 1, target = 5
 Output: [[4,1,1],[2,0,1],[0,3,3],[4,3,1]]
@@ -32,6 +34,8 @@ making the distance from 0 to 1 equal to 5.
 ```
 
 ### Example 2
+
+![diagram](figures/2699-2.svg)
 
 ```text
 Input: n = 3, edges = [[0,1,-1],[0,2,5]], source = 0, destination = 2, target = 6
@@ -42,6 +46,8 @@ So, an empty array is returned.
 ```
 
 ### Example 3
+
+![diagram](figures/2699-3.svg)
 
 ```text
 Input: n = 4, edges = [[1,0,4],[1,2,3],[2,3,5],[0,3,-1]], source = 0, destination = 2, target = 6

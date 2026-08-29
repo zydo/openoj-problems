@@ -17,6 +17,8 @@ order.
 
 ### Example 1
 
+![diagram](figures/1560-1.svg)
+
 ```text
 Input: n = 4, rounds = [1,3,1,2]
 Output: [1,2]

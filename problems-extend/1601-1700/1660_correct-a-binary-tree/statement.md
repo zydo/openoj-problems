@@ -13,15 +13,17 @@ Custom testing:
 
 The test input is read as 3 lines:
 
-	TreeNode root
-	int fromNode (not available to correctBinaryTree)
-	int toNode (not available to correctBinaryTree)
+    TreeNode root
+    int fromNode (not available to correctBinaryTree)
+    int toNode (not available to correctBinaryTree)
 
 After the binary tree rooted at `root` is parsed, the `TreeNode` with value of
 `fromNode` will have its right child pointer pointing to the `TreeNode` with a
 value of `toNode`. Then, `root` is passed to `correctBinaryTree`.
 
 ### Example 1
+
+![diagram](figures/1660-1.svg)
 
 ```text
 Input: root = [1,2,3], fromNode = 2, toNode = 3
@@ -30,6 +32,8 @@ Explanation: The node with value 2 is invalid, so remove it.
 ```
 
 ### Example 2
+
+![diagram](figures/1660-2.svg)
 
 ```text
 Input: root = [8,3,1,7,null,9,4,2,null,null,null,5,6], fromNode = 7, toNode = 4

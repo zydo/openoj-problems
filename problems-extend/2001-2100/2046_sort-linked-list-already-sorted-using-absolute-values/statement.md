@@ -6,6 +6,8 @@ Given the head of a singly linked list that is sorted in non-decreasing order us
 
 ### Example 1
 
+![diagram](figures/2046-1.svg)
+
 ```text
 Input: head = [0,2,-5,5,10,-10]
 Output: [-10,-5,0,2,5,10]
@@ -15,6 +17,8 @@ The list sorted in non-descending order using the actual values is [-10,-5,0,2,5
 ```
 
 ### Example 2
+
+![diagram](figures/2046-2.svg)
 
 ```text
 Input: head = [0,1,2]

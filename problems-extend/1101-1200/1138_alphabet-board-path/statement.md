@@ -8,6 +8,8 @@ character `board[0][0]`.
 Here, `board = ["abcde", "fghij", "klmno", "pqrst", "uvwxy", "z"]`, as shown
 in the diagram below.
 
+![diagram](figures/1138-1.svg)
+
 ```text
 a  b  c  d  e
 f  g  h  i  j

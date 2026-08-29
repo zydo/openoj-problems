@@ -17,6 +17,8 @@ number, return this modulo `10⁹ + 7`.
 
 ### Example 1
 
+![diagram](figures/1465-1.svg)
+
 ```text
 Input: h = 5, w = 4, horizontalCuts = [1,2,4], verticalCuts = [1,3]
 Output: 4
@@ -26,6 +28,8 @@ green piece of cake has the maximum area.
 ```
 
 ### Example 2
+
+![diagram](figures/1465-2.svg)
 
 ```text
 Input: h = 5, w = 4, horizontalCuts = [3,1], verticalCuts = [1]

@@ -10,6 +10,8 @@ The distance between the ith and jth houses is abs(i - j), where abs(x) is the a
 
 ### Example 1
 
+![diagram](figures/2078-1.svg)
+
 ```text
 Input: colors = [1,1,1,6,1,1,1]
 Output: 3
@@ -20,6 +22,8 @@ Note that houses 3 and 6 can also produce the optimal answer.
 ```
 
 ### Example 2
+
+![diagram](figures/2078-2.svg)
 
 ```text
 Input: colors = [1,8,3,8,3]

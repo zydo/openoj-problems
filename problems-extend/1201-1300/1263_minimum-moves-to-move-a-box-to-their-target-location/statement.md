@@ -26,6 +26,8 @@ no way to reach the target, return `-1`.
 
 ### Example 1
 
+![diagram](figures/1263-1.svg)
+
 ```text
 Input: grid = [["#","#","#","#","#","#"],
                ["#","T","#","#","#","#"],

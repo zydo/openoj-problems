@@ -15,6 +15,8 @@ value of `a - b`.
 
 ### Example 1
 
+![diagram](figures/1981-1.svg)
+
 ```text
 Input: mat = [[1,2,3],[4,5,6],[7,8,9]], target = 13
 Output: 0
@@ -27,6 +29,8 @@ The sum of the chosen elements is 13, which equals the target, so the absolute d
 
 ### Example 2
 
+![diagram](figures/1981-2.svg)
+
 ```text
 Input: mat = [[1],[2],[3]], target = 100
 Output: 94
@@ -38,6 +42,8 @@ The sum of the chosen elements is 6, and the absolute difference is 94.
 ```
 
 ### Example 3
+
+![diagram](figures/1981-3.svg)
 
 ```text
 Input: mat = [[1,2,9,8,7]], target = 6

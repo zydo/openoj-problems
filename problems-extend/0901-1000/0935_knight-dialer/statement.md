@@ -6,14 +6,18 @@ The chess knight has a unique movement, it may move two squares vertically
 and one square horizontally, or two squares horizontally and one square
 vertically (with both forming the shape of an L).
 
+![diagram](figures/935-1.svg)
+
 We have a chess knight and a phone pad as shown below. The knight can only
 stand on a numeric cell, never on `*` or `#`.
 
-| 1 | 2 | 3 |
-| - | - | - |
-| 4 | 5 | 6 |
-| 7 | 8 | 9 |
-| * | 0 | # |
+| 1   | 2   | 3   |
+| --- | --- | --- |
+| 4   | 5   | 6   |
+| 7   | 8   | 9   |
+| *   | 0   | #   |
+
+![diagram](figures/935-2.svg)
 
 Given an integer `n`, return how many distinct phone numbers of length `n`
 we can dial.

@@ -18,6 +18,8 @@ Note: `a + b` is the concatenation of strings `a` and `b`.
 
 ### Example 1
 
+![diagram](figures/97-1.svg)
+
 ```text
 Input: s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"
 Output: true

@@ -11,6 +11,8 @@ of all lonely nodes in the tree. Return the list in any order.
 
 ### Example 1
 
+![diagram](figures/1469-1.svg)
+
 ```text
 Input: root = [1,2,3,null,4]
 Output: [4]
@@ -20,6 +22,8 @@ and is not lonely. Nodes 2 and 3 have the same parent and are not lonely.
 
 ### Example 2
 
+![diagram](figures/1469-2.svg)
+
 ```text
 Input: root = [7,1,4,6,null,5,3,null,null,null,null,null,2]
 Output: [6,2]
@@ -28,6 +32,8 @@ order doesn't matter, [2,6] is also an acceptable answer.
 ```
 
 ### Example 3
+
+![diagram](figures/1469-3.svg)
 
 ```text
 Input: root = [11,99,88,77,null,null,66,55,null,null,44,33,null,null,22]

@@ -16,6 +16,8 @@ Return the answer after performing the operations described above.
 
 ### Example 1
 
+![diagram](figures/2500-1.svg)
+
 ```text
 Input: grid = [[1,2,4],[3,3,1]]
 Output: 8
@@ -27,6 +29,8 @@ The final answer = 4 + 3 + 1 = 8.
 ```
 
 ### Example 2
+
+![diagram](figures/2500-2.svg)
 
 ```text
 Input: grid = [[10]]

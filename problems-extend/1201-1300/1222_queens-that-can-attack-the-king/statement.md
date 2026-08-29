@@ -15,6 +15,8 @@ You may return the answer in **any order**.
 
 ### Example 1
 
+![diagram](figures/1222-1.svg)
+
 ```text
 Input: queens = [[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]], king = [0,0]
 Output: [[0,1],[1,0],[3,3]]
@@ -22,6 +24,8 @@ Explanation: The diagram shows the three queens that can directly attack the kin
 ```
 
 ### Example 2
+
+![diagram](figures/1222-2.svg)
 
 ```text
 Input: queens = [[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]], king = [3,3]

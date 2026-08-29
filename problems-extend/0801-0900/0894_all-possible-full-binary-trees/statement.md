@@ -21,6 +21,8 @@ the answer is an empty list.
 
 ### Example 1
 
+![diagram](figures/894-1.svg)
+
 ```text
 Input: n = 7
 Output: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]

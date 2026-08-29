@@ -2,6 +2,8 @@
 
 ## Description
 
+![diagram](figures/3027-1.svg)
+
 You are given a 2D array points of size n x 2 representing integer
 coordinates of some points on a 2D-plane, where points[i] = [xi, yi].
 
@@ -35,6 +37,8 @@ corners (1, 1), (1, 3), (3, 1), and (3, 3), because:
 
 ### Example 1
 
+![diagram](figures/3027-2.svg)
+
 ```text
 Input: points = [[1,1],[2,2],[3,3]]
 Output: 0
@@ -42,6 +46,8 @@ Explanation: There is no way to place Alice and Bob such that Alice can build a 
 ```
 
 ### Example 2
+
+![diagram](figures/3027-3.svg)
 
 ```text
 Input: points = [[6,2],[4,4],[2,6]]
@@ -53,6 +59,8 @@ You cannot place Alice at (2, 6) and Bob at (6, 2) because the person at (4, 4) 
 ```
 
 ### Example 3
+
+![diagram](figures/3027-4.svg)
 
 ```text
 Input: points = [[3,1],[1,3],[1,1]]
@@ -79,7 +87,7 @@ Sort the points by x-coordinate in non-decreasing order and break the tie by sor
 
 ### Hint 2
 
-Now consider two points upper-left corner points[i] and lower-right corner points[j], such that i  and points[i][0]  and points[i][1] >= points[j][1].
+Now consider two points upper-left corner points[i] and lower-right corner points[j], such that i and points[i][0] and points[i][1] >= points[j][1].
 
 ### Hint 3
 

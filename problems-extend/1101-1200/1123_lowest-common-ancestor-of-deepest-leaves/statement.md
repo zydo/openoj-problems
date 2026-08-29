@@ -15,6 +15,8 @@ Recall that:
 
 ### Example 1
 
+![diagram](figures/1123-1.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4]
 Output: [2,7,4]

@@ -21,6 +21,8 @@ written as `\\` inside `grid`.
 
 ### Example 1
 
+![diagram](figures/959-1.svg)
+
 ```text
 Input: grid = [" /", "/ "]
 Output: 2
@@ -28,12 +30,16 @@ Output: 2
 
 ### Example 2
 
+![diagram](figures/959-2.svg)
+
 ```text
 Input: grid = [" /", "  "]
 Output: 1
 ```
 
 ### Example 3
+
+![diagram](figures/959-3.svg)
 
 ```text
 Input: grid = ["/\\", "\\/"]

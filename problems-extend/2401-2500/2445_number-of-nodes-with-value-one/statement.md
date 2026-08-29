@@ -26,6 +26,8 @@ Note that:
 
 ### Example 1
 
+![diagram](figures/2445-1.svg)
+
 ```text
 Input: n = 5 , queries = [1,2,5]
 Output: 3
@@ -34,6 +36,8 @@ After processing the queries, there are three red nodes (nodes with value 1): 1,
 ```
 
 ### Example 2
+
+![diagram](figures/2445-2.svg)
 
 ```text
 Input: n = 3, queries = [2,3,3]

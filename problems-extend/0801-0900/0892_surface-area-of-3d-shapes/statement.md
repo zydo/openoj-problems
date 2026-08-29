@@ -15,6 +15,8 @@ Note: the bottom face of each shape counts toward its surface area.
 
 ### Example 1
 
+![diagram](figures/892-1.svg)
+
 ```text
 Input: grid = [[1,2],[3,4]]
 Output: 34
@@ -26,6 +28,8 @@ and 11 for the four towers — so the vertical faces add 26, for a total of
 
 ### Example 2
 
+![diagram](figures/892-2.svg)
+
 ```text
 Input: grid = [[1,1,1],[1,0,1],[1,1,1]]
 Output: 32
@@ -35,6 +39,8 @@ for 16 + 12 + 4 = 32.
 ```
 
 ### Example 3
+
+![diagram](figures/892-3.svg)
 
 ```text
 Input: grid = [[2,2,2],[2,1,2],[2,2,2]]

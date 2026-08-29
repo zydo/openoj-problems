@@ -26,6 +26,8 @@ A leaf node is a node that has zero children.
 
 ### Example 1
 
+![diagram](figures/2331-1.svg)
+
 ```text
 Input: root = [2,1,3,null,null,0,1]
 Output: true

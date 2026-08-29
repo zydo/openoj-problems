@@ -16,6 +16,8 @@ Note: The merging process must start from the root nodes of both trees.
 
 ### Example 1
 
+![diagram](figures/617-1.svg)
+
 ```text
 Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
 Output: [3,4,5,5,4,null,7]

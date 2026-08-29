@@ -29,6 +29,8 @@ Note that a stop can be counted as reached from either route.
 
 ### Example 1
 
+![diagram](figures/2361-1.svg)
+
 ```text
 Input: regular = [1,6,9,5], express = [5,2,3,10], expressCost = 8
 Output: [1,7,14,19]
@@ -43,6 +45,8 @@ minimum cost.
 ```
 
 ### Example 2
+
+![diagram](figures/2361-2.svg)
 
 ```text
 Input: regular = [11,5,13], express = [7,10,6], expressCost = 3

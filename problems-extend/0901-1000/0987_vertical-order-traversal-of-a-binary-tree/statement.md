@@ -18,6 +18,8 @@ Return the vertical order traversal of the binary tree.
 
 ### Example 1
 
+![diagram](figures/987-1.svg)
+
 ```text
 Input: root = [3,9,20,null,null,15,7]
 Output: [[9],[3,15],[20],[7]]
@@ -29,6 +31,8 @@ Column 2: Only node 7 is in this column.
 ```
 
 ### Example 2
+
+![diagram](figures/987-2.svg)
 
 ```text
 Input: root = [1,2,3,4,5,6,7]
@@ -44,6 +48,8 @@ Column 2: Only node 7 is in this column.
 ```
 
 ### Example 3
+
+![diagram](figures/987-3.svg)
 
 ```text
 Input: root = [1,2,3,4,6,5,7]

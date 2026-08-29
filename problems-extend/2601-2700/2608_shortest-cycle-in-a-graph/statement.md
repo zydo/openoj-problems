@@ -16,6 +16,8 @@ the path is used only once.
 
 ### Example 1
 
+![diagram](figures/2608-1.svg)
+
 ```text
 Input: n = 7, edges = [[0,1],[1,2],[2,0],[3,4],[4,5],[5,6],[6,3]]
 Output: 3
@@ -23,6 +25,8 @@ Explanation: The cycle with the smallest length is : 0 -> 1 -> 2 -> 0
 ```
 
 ### Example 2
+
+![diagram](figures/2608-2.svg)
 
 ```text
 Input: n = 4, edges = [[0,1],[0,2]]

@@ -22,12 +22,16 @@ occurs last in the given 2D-array.
 
 ### Example 1
 
+![diagram](figures/685-1.svg)
+
 ```text
 Input: edges = [[1,2],[1,3],[2,3]]
 Output: [2,3]
 ```
 
 ### Example 2
+
+![diagram](figures/685-2.svg)
 
 ```text
 Input: edges = [[1,2],[2,3],[3,4],[4,1],[1,5]]

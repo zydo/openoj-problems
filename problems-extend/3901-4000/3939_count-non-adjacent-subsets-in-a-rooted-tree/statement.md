@@ -22,6 +22,8 @@ Return the number of valid subsets modulo `10⁹ + 7`.
 
 ### Example 1
 
+![diagram](figures/3939-1.svg)
+
 ```text
 Input: parent = [-1,0,1], nums = [1,2,3], k = 3
 Output: 1
@@ -31,6 +33,8 @@ Explanation:
 ```
 
 ### Example 2
+
+![diagram](figures/3939-2.svg)
 
 ```text
 Input: parent = [-1,0,0,0], nums = [2,1,2,1], k = 3
@@ -51,7 +55,7 @@ Explanation:
 - `1 <= n <= 1000`
 - `parent[0] == -1`
 - For all `1 <= i < n`:
-  - `0 <= parent[i] < i`
+    - `0 <= parent[i] < i`
 - `1 <= nums[i] <= 10⁹`
 - `1 <= k <= 100`
 - `parent` describes a valid rooted tree.

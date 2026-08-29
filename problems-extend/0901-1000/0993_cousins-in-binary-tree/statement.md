@@ -15,6 +15,8 @@ each depth `k` node are at the depth `k + 1`.
 
 ### Example 1
 
+![diagram](figures/993-1.svg)
+
 ```text
 Input: root = [1,2,3,4], x = 4, y = 3
 Output: false
@@ -24,6 +26,8 @@ Explanation: The node with value 4 sits at depth 2 while the node with value
 
 ### Example 2
 
+![diagram](figures/993-2.svg)
+
 ```text
 Input: root = [1,2,3,null,4,null,5], x = 5, y = 4
 Output: true
@@ -32,6 +36,8 @@ parents are different nodes (3 and 2).
 ```
 
 ### Example 3
+
+![diagram](figures/993-3.svg)
 
 ```text
 Input: root = [1,2,3,null,4], x = 2, y = 3

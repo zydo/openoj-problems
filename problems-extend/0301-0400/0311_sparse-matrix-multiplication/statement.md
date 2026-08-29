@@ -9,6 +9,8 @@ You may assume that multiplication is always possible.
 
 ### Example 1
 
+![diagram](figures/311-1.svg)
+
 ```text
 Input: mat1 = [[1,0,0],[-1,0,3]], mat2 = [[7,0,0],[0,0,0],[0,0,1]]
 Output: [[7,0,0],[-7,0,3]]

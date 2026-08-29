@@ -10,6 +10,8 @@ read the same string, where `0 <= k < max(numRows, numColumns)`.
 
 ### Example 1
 
+![diagram](figures/422-1.svg)
+
 ```text
 Input: words = ["abcd","bnrt","crmy","dtye"]
 Output: true
@@ -22,6 +24,8 @@ Therefore, it is a valid word square.
 
 ### Example 2
 
+![diagram](figures/422-2.svg)
+
 ```text
 Input: words = ["abcd","bnrt","crm","dt"]
 Output: true
@@ -33,6 +37,8 @@ Therefore, it is a valid word square.
 ```
 
 ### Example 3
+
+![diagram](figures/422-3.svg)
 
 ```text
 Input: words = ["ball","area","read","lady"]

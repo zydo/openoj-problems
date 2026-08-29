@@ -13,6 +13,8 @@ computed modulo `10⁹ + 7`.
 
 ### Example 1
 
+![diagram](figures/1411-1.svg)
+
 ```text
 Input: n = 1
 Output: 12

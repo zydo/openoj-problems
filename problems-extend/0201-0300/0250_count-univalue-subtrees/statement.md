@@ -8,6 +8,8 @@ A uni-value subtree means all nodes of the subtree have the same value.
 
 ### Example 1
 
+![diagram](figures/250-1.svg)
+
 ```text
 Input: root = [5,1,5,5,5,null,5]
 Output: 4

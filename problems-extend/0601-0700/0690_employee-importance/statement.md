@@ -18,6 +18,8 @@ subordinates.
 
 ### Example 1
 
+![diagram](figures/690-1.svg)
+
 ```text
 Input: employees = [[1,5,[2,3]],[2,3,[]],[3,3,[]]], id = 1
 Output: 11
@@ -27,6 +29,8 @@ Thus, the total importance value of employee 1 is 5 + 3 + 3 = 11.
 ```
 
 ### Example 2
+
+![diagram](figures/690-2.svg)
 
 ```text
 Input: employees = [[1,2,[5]],[5,-3,[]]], id = 5

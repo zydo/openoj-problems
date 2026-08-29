@@ -22,6 +22,12 @@ the world will become fully infected, return the number of walls used.
 
 ### Example 1
 
+![diagram](figures/749-1.svg)
+
+![diagram](figures/749-2.svg)
+
+![diagram](figures/749-3.svg)
+
 ```text
 Input: isInfected = [[0,1,0,0,0,0,0,1],[0,1,0,0,0,0,0,1],[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0]]
 Output: 10
@@ -29,6 +35,8 @@ Explanation: There are 2 contaminated regions. On the first day, add 5 walls to 
 ```
 
 ### Example 2
+
+![diagram](figures/749-4.svg)
 
 ```text
 Input: isInfected = [[1,1,1],[1,0,1],[1,1,1]]

@@ -10,6 +10,8 @@ For n = 1, 2, 3, 4, and 5, the middle nodes are 0, 1, 1, 2, and 2, respectively.
 
 ### Example 1
 
+![diagram](figures/2095-1.svg)
+
 ```text
 Input: head = [1,3,4,7,1,2,6]
 Output: [1,3,4,1,2,6]
@@ -20,6 +22,8 @@ We return the new list after removing this node.
 
 ### Example 2
 
+![diagram](figures/2095-2.svg)
+
 ```text
 Input: head = [1,2,3,4]
 Output: [1,2,4]
@@ -28,6 +32,8 @@ For n = 4, node 2 with value 3 is the middle node.
 ```
 
 ### Example 3
+
+![diagram](figures/2095-3.svg)
 
 ```text
 Input: head = [2,1]

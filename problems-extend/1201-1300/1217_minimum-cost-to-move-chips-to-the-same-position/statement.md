@@ -14,6 +14,8 @@ Return the minimum cost needed to move all the chips to the same position.
 
 ### Example 1
 
+![diagram](figures/1217-1.svg)
+
 ```text
 Input: position = [1,2,3]
 Output: 1
@@ -23,6 +25,8 @@ Total cost is 1.
 ```
 
 ### Example 2
+
+![diagram](figures/1217-2.svg)
 
 ```text
 Input: position = [2,2,2,3,3]

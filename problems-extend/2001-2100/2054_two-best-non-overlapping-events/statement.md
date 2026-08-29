@@ -10,6 +10,8 @@ Note that the start time and end time is inclusive: that is, you cannot attend t
 
 ### Example 1
 
+![diagram](figures/2054-1.svg)
+
 ```text
 Input: events = [[1,3,2],[4,5,2],[2,4,3]]
 Output: 4
@@ -18,6 +20,8 @@ Explanation: Choose the green events, 0 and 1 for a sum of 2 + 2 = 4.
 
 ### Example 2
 
+![diagram](figures/2054-2.svg)
+
 ```text
 Input: events = [[1,3,2],[4,5,2],[1,5,5]]
 Output: 5
@@ -25,6 +29,8 @@ Explanation: Choose event 2 for a sum of 5.
 ```
 
 ### Example 3
+
+![diagram](figures/2054-3.svg)
 
 ```text
 Input: events = [[1,5,3],[1,5,1],[6,6,5]]

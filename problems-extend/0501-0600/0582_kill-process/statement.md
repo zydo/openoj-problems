@@ -19,6 +19,8 @@ children listed in the order their IDs appear in `pid`.
 
 ### Example 1
 
+![diagram](figures/582-1.svg)
+
 ```text
 Input: pid = [1,3,10,5], ppid = [3,0,5,3], kill = 5
 Output: [5,10]

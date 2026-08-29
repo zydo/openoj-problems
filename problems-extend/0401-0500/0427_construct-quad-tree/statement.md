@@ -38,6 +38,8 @@ steps:
   the photo.
 - Recurse for each of the children with the proper sub-grid.
 
+![diagram](figures/427-1.svg)
+
 If you want to know more about the Quad-Tree, you can refer to the wiki.
 
 Quad-Tree format:
@@ -56,6 +58,8 @@ as 0.
 
 ### Example 1
 
+![diagram](figures/427-2.svg)
+
 ```text
 Input: grid = [[0,1],[1,0]]
 Output: [[0,1],[1,0],[1,1],[1,1],[1,0]]
@@ -63,7 +67,11 @@ Explanation: The explanation of this example is shown below:
 Notice that 0 represents False and 1 represents True in the photo representing the Quad-Tree.
 ```
 
+![diagram](figures/427-3.svg)
+
 ### Example 2
+
+![diagram](figures/427-4.svg)
 
 ```text
 Input: grid = [[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0]]
@@ -73,6 +81,8 @@ The topLeft, bottomLeft and bottomRight each has the same value.
 The topRight have different values so we divide it into 4 sub-grids where each has the same value.
 Explanation is shown in the photo below:
 ```
+
+![diagram](figures/427-5.svg)
 
 ### Constraints
 

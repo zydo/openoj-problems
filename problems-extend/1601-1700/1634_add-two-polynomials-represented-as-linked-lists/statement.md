@@ -23,7 +23,11 @@ order described above — and the sum must be returned in the identical
 by power, with any power whose combined coefficient becomes `0` left out
 entirely.
 
+![diagram](figures/1634-1.svg)
+
 ### Example 1
+
+![diagram](figures/1634-2.svg)
 
 ```text
 Input: poly1 = [[1,1]], poly2 = [[0,1]]

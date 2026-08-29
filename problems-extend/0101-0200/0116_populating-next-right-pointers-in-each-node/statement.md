@@ -23,6 +23,8 @@ tree serializes level by level through the populated `next` pointers, with
 
 ### Example 1
 
+![diagram](figures/116-1.svg)
+
 ```text
 Input: root = [1,2,3,4,5,6,7]
 Output: [1, null, 2, 3, null, 4, 5, 6, 7]

@@ -53,6 +53,8 @@ the bridge.
 
 ### Example 2
 
+![diagram](figures/2532-1.svg)
+
 ```text
 Input: n = 3, k = 2, time = [[1,5,1,8],[10,10,10,10]]
 Output: 37

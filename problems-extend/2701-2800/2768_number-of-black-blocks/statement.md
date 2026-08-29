@@ -12,6 +12,8 @@ Return a 0-indexed integer array arr of size 5 such that arr[i] is the number of
 
 ### Example 1
 
+![diagram](figures/2768-1.svg)
+
 ```text
 Input: m = 3, n = 3, coordinates = [[0,0]]
 Output: [3,1,0,0,0]
@@ -19,6 +21,8 @@ Explanation: There is only 1 block with one black cell, and it is the block star
 ```
 
 ### Example 2
+
+![diagram](figures/2768-2.svg)
 
 ```text
 Input: m = 3, n = 3, coordinates = [[0,0],[1,1],[0,2]]

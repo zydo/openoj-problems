@@ -6,12 +6,16 @@ Given two binary search trees root1 and root2, return a list containing all the 
 
 ### Example 1
 
+![diagram](figures/1305-1.svg)
+
 ```text
 Input: root1 = [2,1,4], root2 = [1,0,3]
 Output: [0,1,1,2,3,4]
 ```
 
 ### Example 2
+
+![diagram](figures/1305-2.svg)
 
 ```text
 Input: root1 = [1,null,8], root2 = [8,1]

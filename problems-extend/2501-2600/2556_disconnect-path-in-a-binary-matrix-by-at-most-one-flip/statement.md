@@ -17,6 +17,8 @@ Note that flipping a cell changes its value from 0 to 1 or from 1 to 0.
 
 ### Example 1
 
+![diagram](figures/2556-1.svg)
+
 ```text
 Input: grid = [[1,1,1],[1,0,0],[1,1,1]]
 Output: true
@@ -25,6 +27,8 @@ no path from (0, 0) to (2, 2) in the resulting grid.
 ```
 
 ### Example 2
+
+![diagram](figures/2556-2.svg)
 
 ```text
 Input: grid = [[1,1,1],[1,0,1],[1,1,1]]

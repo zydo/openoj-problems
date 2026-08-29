@@ -28,6 +28,8 @@ report its value.
 
 ### Example 1
 
+![diagram](figures/1597-1.svg)
+
 ```text
 Input: s = "3*4-2*5"
 Output: 2
@@ -35,6 +37,12 @@ Explanation: 3*4 is 12 and 2*5 is 10, so the expression is 12-10 = 2.
 ```
 
 ### Example 2
+
+![diagram](figures/1597-2.svg)
+
+![diagram](figures/1597-3.svg)
+
+![diagram](figures/1597-4.svg)
 
 ```text
 Input: s = "2-3/(5*2)+1"

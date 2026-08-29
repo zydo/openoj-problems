@@ -6,6 +6,8 @@ Given an `m x n` matrix, return all elements of the matrix in spiral order.
 
 ### Example 1
 
+![diagram](figures/54-1.svg)
+
 ```text
 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
 Output: [1,2,3,6,9,8,7,4,5]
@@ -13,6 +15,8 @@ Explanation: The traversal winds clockwise from the top-left corner: right along
 ```
 
 ### Example 2
+
+![diagram](figures/54-2.svg)
 
 ```text
 Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]

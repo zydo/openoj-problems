@@ -13,12 +13,16 @@ where its row is long enough.
 
 ### Example 1
 
+![diagram](figures/1424-1.svg)
+
 ```text
 Input: nums = [[1,2,3],[4,5,6],[7,8,9]]
 Output: [1,4,2,7,5,3,8,6,9]
 ```
 
 ### Example 2
+
+![diagram](figures/1424-2.svg)
 
 ```text
 Input: nums = [[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]

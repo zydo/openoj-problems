@@ -6,12 +6,16 @@ Given the `head` of a sorted linked list, delete all nodes that have duplicate n
 
 ### Example 1
 
+![diagram](figures/82-1.svg)
+
 ```text
 Input: head = [1,2,3,3,4,4,5]
 Output: [1,2,5]
 ```
 
 ### Example 2
+
+![diagram](figures/82-2.svg)
 
 ```text
 Input: head = [1,1,1,2,3]

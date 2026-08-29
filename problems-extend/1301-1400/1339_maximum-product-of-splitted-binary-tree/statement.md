@@ -10,6 +10,8 @@ Note that you need to maximize the answer before taking the mod and not after ta
 
 ### Example 1
 
+![diagram](figures/1339-1.svg)
+
 ```text
 Input: root = [1,2,3,4,5,6]
 Output: 110
@@ -17,6 +19,8 @@ Explanation: Remove the red edge and get 2 binary trees with sum 11 and 10. Thei
 ```
 
 ### Example 2
+
+![diagram](figures/1339-2.svg)
 
 ```text
 Input: root = [1,null,2,3,4,null,null,5,6]

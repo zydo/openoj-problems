@@ -18,6 +18,8 @@ for the left child, and finally, we do it for the right child.
 
 ### Example 1
 
+![diagram](figures/2764-1.svg)
+
 ```text
 Input: nodes = [[0,-1],[1,0],[2,0],[3,2],[4,2]]
 Output: true
@@ -26,6 +28,8 @@ We can show that this is the preorder traversal of the tree, first we visit node
 ```
 
 ### Example 2
+
+![diagram](figures/2764-2.svg)
 
 ```text
 Input: nodes = [[0,-1],[1,0],[2,0],[3,1],[4,1]]

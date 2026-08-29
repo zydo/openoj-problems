@@ -17,6 +17,8 @@ Return the maximum number of moves that you can perform.
 
 ### Example 1
 
+![diagram](figures/2684-1.svg)
+
 ```text
 Input: grid = [[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]
 Output: 3
@@ -28,6 +30,8 @@ It can be shown that it is the maximum number of moves that can be made.
 ```
 
 ### Example 2
+
+![diagram](figures/2684-2.svg)
 
 ```text
 Input: grid = [[3,2,4],[2,1,9],[1,1,7]]

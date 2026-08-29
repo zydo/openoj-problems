@@ -14,6 +14,8 @@ least one circle.
 
 ### Example 1
 
+![diagram](figures/2249-1.svg)
+
 ```text
 Input: circles = [[2,2,1]]
 Output: 5
@@ -25,6 +27,8 @@ Hence, the number of lattice points present inside at least one circle is 5.
 ```
 
 ### Example 2
+
+![diagram](figures/2249-2.svg)
 
 ```text
 Input: circles = [[2,2,2],[3,4,1]]

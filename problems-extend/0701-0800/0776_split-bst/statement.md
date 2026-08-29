@@ -19,6 +19,8 @@ empty subtree is rendered as `[]`.
 
 ### Example 1
 
+![diagram](figures/776-1.svg)
+
 ```text
 Input: root = [4,2,6,1,3,5,7], target = 2
 Output: [[2,1],[4,3,6,null,null,5,7]]

@@ -17,6 +17,8 @@ level-order form; an empty array `[]` means there is no in-order successor.
 
 ### Example 1
 
+![diagram](figures/285-1.svg)
+
 ```text
 Input: root = [2,1,3], p = 1
 Output: [2,1,3]
@@ -25,6 +27,8 @@ return value is of TreeNode type.
 ```
 
 ### Example 2
+
+![diagram](figures/285-2.svg)
 
 ```text
 Input: root = [5,3,6,2,4,null,null,1], p = 6

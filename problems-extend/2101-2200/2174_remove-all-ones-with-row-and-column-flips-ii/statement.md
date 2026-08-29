@@ -18,6 +18,8 @@ Return the minimum number of operations needed to remove all 1's from
 
 ### Example 1
 
+![diagram](figures/2174-1.svg)
+
 ```text
 Input: grid = [[1,1,1],[1,1,1],[0,1,0]]
 Output: 2
@@ -29,6 +31,8 @@ zero.
 ```
 
 ### Example 2
+
+![diagram](figures/2174-2.svg)
 
 ```text
 Input: grid = [[0,1,0],[1,0,1],[0,1,0]]
@@ -43,6 +47,8 @@ grid[1][1] != 1.
 ```
 
 ### Example 3
+
+![diagram](figures/2174-3.svg)
 
 ```text
 Input: grid = [[0,0],[0,0]]

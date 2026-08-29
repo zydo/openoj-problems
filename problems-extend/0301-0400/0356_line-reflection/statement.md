@@ -13,6 +13,8 @@ Note that there can be repeated points.
 
 ### Example 1
 
+![diagram](figures/356-1.svg)
+
 ```text
 Input: points = [[1,1],[-1,1]]
 Output: true
@@ -20,6 +22,8 @@ Explanation: We can choose the line x = 0.
 ```
 
 ### Example 2
+
+![diagram](figures/356-2.svg)
 
 ```text
 Input: points = [[1,1],[-1,-1]]

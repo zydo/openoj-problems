@@ -15,6 +15,8 @@ Note:
 
 ### Example 1
 
+![diagram](figures/36-1.svg)
+
 ```text
 Input: board =
 [["5","3",".",".","7",".",".",".","."]

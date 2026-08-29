@@ -6,6 +6,8 @@ A binary watch has 4 LEDs on the top to represent the hours (0-11), and 6 LEDs o
 
 For example, the below binary watch reads "4:51".
 
+![diagram](figures/401-1.svg)
+
 ```text
 Hours:    8  4  2  1         0 1 0 0
 Minutes: 32 16  8  4  2  1   1 1 0 0 1 1

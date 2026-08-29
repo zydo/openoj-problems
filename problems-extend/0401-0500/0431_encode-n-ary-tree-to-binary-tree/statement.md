@@ -8,6 +8,8 @@ Nary-Tree input serialization is represented in their level order traversal, eac
 
 For example, you may encode the following 3-ary tree to a binary tree in this way:
 
+![diagram](figures/431-1.svg)
+
 ```text
 Input: root = [1,null,3,2,4,null,5,6]
 ```

@@ -9,10 +9,14 @@ If one or more of the surrounding cells of a cell is not present, we do not
 consider it in the average (i.e., the average of the four cells in the red
 smoother).
 
+![diagram](figures/661-1.svg)
+
 Given an m x n integer matrix img representing the grayscale of an image,
 return the image after applying the smoother on each cell of it.
 
 ### Example 1
+
+![diagram](figures/661-2.svg)
 
 ```text
 Input: img = [[1,1,1],[1,0,1],[1,1,1]]
@@ -24,6 +28,8 @@ For the point (1,1): floor(8/9) = floor(0.88888889) = 0
 ```
 
 ### Example 2
+
+![diagram](figures/661-3.svg)
 
 ```text
 Input: img = [[100,200,100],[200,50,200],[100,200,100]]

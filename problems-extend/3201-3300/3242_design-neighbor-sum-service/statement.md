@@ -15,7 +15,11 @@ Implement the `NeighborSum` class:
   neighbors of `value`, that is either to the top-left, top-right,
   bottom-left, or bottom-right of `value` in `grid`.
 
+![diagram](figures/3242-1.svg)
+
 ### Example 1
+
+![diagram](figures/3242-2.svg)
 
 ```text
 Input:
@@ -30,6 +34,8 @@ The diagonal neighbor of 8 is 4.
 ```
 
 ### Example 2
+
+![diagram](figures/3242-3.svg)
 
 ```text
 Input:

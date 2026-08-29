@@ -8,6 +8,8 @@ Given an integer `n`, return the number of distinct solutions to the n-queens pu
 
 ### Example 1
 
+![diagram](figures/52-1.svg)
+
 ```text
 Input: n = 4
 Output: 2

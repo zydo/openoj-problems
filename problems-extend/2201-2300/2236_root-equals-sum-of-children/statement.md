@@ -10,6 +10,8 @@ two children, or false otherwise.
 
 ### Example 1
 
+![diagram](figures/2236-1.svg)
+
 ```text
 Input: root = [10,4,6]
 Output: true
@@ -18,6 +20,8 @@ Explanation: The values of the root, its left child, and its right child are 10,
 ```
 
 ### Example 2
+
+![diagram](figures/2236-2.svg)
 
 ```text
 Input: root = [5,3,1]

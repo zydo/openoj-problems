@@ -17,6 +17,8 @@ Return the minimum total cost to travel from node `0` to node `n - 1`, or
 
 ### Example 1
 
+![diagram](figures/3650-1.svg)
+
 ```text
 Input: n = 4, edges = [[0,1,3],[3,1,1],[2,3,4],[0,2,2]]
 Output: 5

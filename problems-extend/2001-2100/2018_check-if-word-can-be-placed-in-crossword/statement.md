@@ -23,6 +23,8 @@ Given a string `word`, return `true` if `word` can be placed in `board`, or
 
 ### Example 1
 
+![diagram](figures/2018-1.svg)
+
 ```text
 Input: board = [["#", " ", "#"], [" ", " ", "#"], ["#", "c", " "]], word = "abc"
 Output: true
@@ -31,6 +33,8 @@ Explanation: The word "abc" can be placed as shown above (top to bottom).
 
 ### Example 2
 
+![diagram](figures/2018-2.svg)
+
 ```text
 Input: board = [[" ", "#", "a"], [" ", "#", "c"], [" ", "#", "a"]], word = "ac"
 Output: false
@@ -38,6 +42,8 @@ Explanation: It is impossible to place the word because there will always be a s
 ```
 
 ### Example 3
+
+![diagram](figures/2018-3.svg)
 
 ```text
 Input: board = [["#", " ", "#"], [" ", " ", "#"], ["#", " ", "c"]], word = "ca"

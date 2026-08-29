@@ -11,6 +11,8 @@ Return the minimum number of operations needed to make all columns of
 
 ### Example 1
 
+![diagram](figures/3402-1.svg)
+
 ```text
 Input: grid = [[3,2],[1,3],[3,4],[0,1]]
 Output: 15
@@ -22,6 +24,8 @@ grid[3][1].
 ```
 
 ### Example 2
+
+![diagram](figures/3402-2.svg)
 
 ```text
 Input: grid = [[3,2,1],[2,1,0],[1,2,3]]

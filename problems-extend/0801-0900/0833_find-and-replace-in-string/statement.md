@@ -33,6 +33,8 @@ A substring is a contiguous sequence of characters in a string.
 
 ### Example 1
 
+![diagram](figures/833-1.svg)
+
 ```text
 Input: s = "abcd", indices = [0, 2], sources = ["a", "cd"], targets = ["eee", "ffff"]
 Output: "eeebffff"
@@ -42,6 +44,8 @@ Explanation:
 ```
 
 ### Example 2
+
+![diagram](figures/833-2.svg)
 
 ```text
 Input: s = "abcd", indices = [0, 2], sources = ["ab", "ec"], targets = ["eee", "ffff"]

@@ -13,12 +13,16 @@ change depending on the given bounds.
 
 ### Example 1
 
+![diagram](figures/669-1.svg)
+
 ```text
 Input: root = [1,0,2], low = 1, high = 2
 Output: [1,null,2]
 ```
 
 ### Example 2
+
+![diagram](figures/669-2.svg)
 
 ```text
 Input: root = [3,0,4,null,2,null,null,1], low = 1, high = 3

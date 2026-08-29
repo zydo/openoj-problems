@@ -15,6 +15,8 @@ Return the number of rods that have all three colors of rings on them.
 
 ### Example 1
 
+![diagram](figures/2103-1.svg)
+
 ```text
 Input: rings = "B0B6G0R6R0R6G9"
 Output: 1
@@ -26,6 +28,8 @@ Thus, the number of rods with all three colors is 1.
 ```
 
 ### Example 2
+
+![diagram](figures/2103-2.svg)
 
 ```text
 Input: rings = "B0R0G0R9R0B0G0"

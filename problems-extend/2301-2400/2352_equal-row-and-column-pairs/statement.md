@@ -10,6 +10,8 @@ in the same order (i.e., an equal array).
 
 ### Example 1
 
+![diagram](figures/2352-1.svg)
+
 ```text
 Input: grid = [[3,2,1],[1,7,6],[2,7,7]]
 Output: 1
@@ -18,6 +20,8 @@ Explanation: There is 1 equal row and column pair:
 ```
 
 ### Example 2
+
+![diagram](figures/2352-2.svg)
 
 ```text
 Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]

@@ -16,6 +16,8 @@ valid, or `-1` if no sequence of swaps can make it valid.
 
 ### Example 1
 
+![diagram](figures/1536-1.svg)
+
 ```text
 Input: grid = [[0,0,1],[1,1,0],[1,0,0]]
 Output: 3
@@ -29,6 +31,8 @@ sequence makes the grid valid.
 
 ### Example 2
 
+![diagram](figures/1536-2.svg)
+
 ```text
 Input: grid = [[0,1,1,0],[0,1,1,0],[0,1,1,0],[0,1,1,0]]
 Output: -1
@@ -37,6 +41,8 @@ and it never becomes valid.
 ```
 
 ### Example 3
+
+![diagram](figures/1536-3.svg)
 
 ```text
 Input: grid = [[1,0,0],[1,1,0],[1,1,1]]

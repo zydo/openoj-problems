@@ -8,6 +8,8 @@ Two binary trees are considered the same if they are structurally identical, and
 
 ### Example 1
 
+![diagram](figures/100-1.svg)
+
 ```text
 Input: p = [1,2,3], q = [1,2,3]
 Output: true
@@ -15,12 +17,16 @@ Output: true
 
 ### Example 2
 
+![diagram](figures/100-2.svg)
+
 ```text
 Input: p = [1,2], q = [1,null,2]
 Output: false
 ```
 
 ### Example 3
+
+![diagram](figures/100-3.svg)
 
 ```text
 Input: p = [1,2,1], q = [1,1,2]

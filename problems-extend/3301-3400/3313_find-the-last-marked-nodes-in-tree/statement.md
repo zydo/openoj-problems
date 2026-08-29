@@ -16,6 +16,8 @@ answers for any node `i`, you can choose any one answer.
 
 ### Example 1
 
+![diagram](figures/3313-1.svg)
+
 ```text
 Input: edges = [[0,1],[0,2]]
 Output: [2,2,1]
@@ -30,6 +32,8 @@ Node 1 is marked last.
 
 ### Example 2
 
+![diagram](figures/3313-2.svg)
+
 ```text
 Input: edges = [[0,1]]
 Output: [1,0]
@@ -39,6 +43,8 @@ For i = 1, the nodes are marked in the sequence: [1] -> [0,1].
 ```
 
 ### Example 3
+
+![diagram](figures/3313-3.svg)
 
 ```text
 Input: edges = [[0,1],[0,2],[2,3],[2,4]]

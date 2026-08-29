@@ -11,12 +11,16 @@ point until it hits the wall since it is too strong to be destroyed.
 
 ### Example 1
 
+![diagram](figures/361-1.svg)
+
 ```text
 Input: grid = [["0","E","0","0"],["E","0","W","E"],["0","E","0","0"]]
 Output: 3
 ```
 
 ### Example 2
+
+![diagram](figures/361-2.svg)
 
 ```text
 Input: grid = [["W","W","W"],["0","0","0"],["E","E","E"]]

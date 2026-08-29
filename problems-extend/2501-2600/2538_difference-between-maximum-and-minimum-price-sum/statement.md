@@ -21,6 +21,8 @@ Return the maximum possible cost amongst all possible root choices.
 
 ### Example 1
 
+![diagram](figures/2538-1.svg)
+
 ```text
 Input: n = 6, edges = [[0,1],[1,2],[1,3],[3,4],[3,5]], price = [9,8,7,6,10,5]
 Output: 24
@@ -31,6 +33,8 @@ The difference between the maximum and minimum price sum is 24. It can be proved
 ```
 
 ### Example 2
+
+![diagram](figures/2538-2.svg)
 
 ```text
 Input: n = 3, edges = [[0,1],[1,2]], price = [1,1,1]

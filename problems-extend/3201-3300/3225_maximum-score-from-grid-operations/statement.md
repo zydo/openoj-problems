@@ -14,6 +14,8 @@ Return the maximum score that can be achieved after some number of operations.
 
 ### Example 1
 
+![diagram](figures/3225-1.svg)
+
 ```text
 Input: grid = [[0,0,0,0,0],[0,0,3,0,0],[0,1,0,0,0],[5,0,0,3,0],[0,0,0,0,2]]
 Output: 11
@@ -21,6 +23,8 @@ Explanation: In the first operation, we color all cells in column 1 down to row 
 ```
 
 ### Example 2
+
+![diagram](figures/3225-2.svg)
 
 ```text
 Input: grid = [[10,9,0,0,15],[7,1,0,8,0],[5,20,0,11,0],[0,0,0,1,2],[8,12,1,10,3]]

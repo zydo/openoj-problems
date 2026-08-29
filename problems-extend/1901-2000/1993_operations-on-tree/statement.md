@@ -18,9 +18,9 @@ The data structure should support the following functions:
 - `upgrade` locks the given node for the given user and unlocks all of
   its descendants regardless of who locked it. You may only upgrade a
   node if all 3 conditions are true:
-  - The node is unlocked,
-  - It has at least one locked descendant (by any user), and
-  - It does not have any locked ancestors.
+    - The node is unlocked,
+    - It has at least one locked descendant (by any user), and
+    - It does not have any locked ancestors.
 
 Implement the `LockingTree` class:
 
@@ -37,6 +37,8 @@ Implement the `LockingTree` class:
   it is possible, the node `num` will be upgraded.
 
 ### Example 1
+
+![diagram](figures/1993-1.svg)
 
 ```text
 Input:

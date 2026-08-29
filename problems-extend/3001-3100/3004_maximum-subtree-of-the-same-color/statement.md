@@ -14,6 +14,8 @@ same color.
 
 Return the size of such subtree with the maximum number of nodes possible.
 
+![diagram](figures/3004-1.svg)
+
 ### Example 1
 
 ```text
@@ -26,6 +28,8 @@ of 1. Hence, we return 1.
 ```
 
 ### Example 2
+
+![diagram](figures/3004-2.svg)
 
 ```text
 Input: edges = [[0,1],[0,2],[0,3]], colors = [1,1,1,1]

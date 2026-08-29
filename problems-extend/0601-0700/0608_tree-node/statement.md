@@ -30,6 +30,8 @@ format is in the following example.
 
 ### Example 1
 
+![diagram](figures/608-1.svg)
+
 ```text
 Input: Tree table from the dataset below.
 Output:
@@ -44,6 +46,8 @@ child nodes 2 and 3. Node 2 is an inner node because it has parent node 1
 and child nodes 4 and 5. Nodes 3, 4, and 5 are leaf nodes because they have
 parent nodes and no child nodes of their own.
 ```
+
+![diagram](figures/608-2.svg)
 
 Write your solution as a single `SELECT` query returning two columns —
 `id` and `type` — with one row for every node in the `Tree` table.

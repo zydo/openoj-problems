@@ -13,6 +13,8 @@ the two trees are flip equivalent or `false` otherwise.
 
 ### Example 1
 
+![diagram](figures/951-1.svg)
+
 ```text
 Input: root1 = [1,2,3,4,5,6,null,null,null,7,8], root2 = [1,3,2,null,6,4,5,null,null,null,null,8,7]
 Output: true

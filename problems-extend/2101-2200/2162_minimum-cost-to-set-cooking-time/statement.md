@@ -33,6 +33,8 @@ Remember that one minute consists of 60 seconds.
 
 ### Example 1
 
+![diagram](figures/2162-1.svg)
+
 ```text
 Input: startAt = 1, moveCost = 2, pushCost = 1, targetSeconds = 600
 Output: 6
@@ -49,6 +51,8 @@ Explanation: The following are the possible ways to set the cooking time.
 ```
 
 ### Example 2
+
+![diagram](figures/2162-2.svg)
 
 ```text
 Input: startAt = 0, moveCost = 1, pushCost = 2, targetSeconds = 76

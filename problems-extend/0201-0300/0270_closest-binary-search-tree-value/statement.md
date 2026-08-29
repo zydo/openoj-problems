@@ -8,6 +8,8 @@ print the smallest.
 
 ### Example 1
 
+![diagram](figures/270-1.svg)
+
 ```text
 Input: root = [4,2,5,1,3], target = 3.714286
 Output: 4

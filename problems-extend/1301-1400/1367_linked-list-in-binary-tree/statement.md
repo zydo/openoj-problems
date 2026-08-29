@@ -13,6 +13,8 @@ downwards.
 
 ### Example 1
 
+![diagram](figures/1367-1.svg)
+
 ```text
 Input: head = [4,2,8], root = [1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]
 Output: true
@@ -20,6 +22,8 @@ Explanation: Nodes in the third row form a subpath in the binary tree: 4 -> 2 ->
 ```
 
 ### Example 2
+
+![diagram](figures/1367-2.svg)
 
 ```text
 Input: head = [1,4,2,6], root = [1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]

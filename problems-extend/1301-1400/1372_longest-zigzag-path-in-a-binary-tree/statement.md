@@ -19,6 +19,8 @@ Return the longest ZigZag path contained in that tree.
 
 ### Example 1
 
+![diagram](figures/1372-1.svg)
+
 ```text
 Input: root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1]
 Output: 3
@@ -26,6 +28,8 @@ Explanation: The longest ZigZag path goes right -> left -> right.
 ```
 
 ### Example 2
+
+![diagram](figures/1372-2.svg)
 
 ```text
 Input: root = [1,1,1,null,1,null,null,1,1,null,1]

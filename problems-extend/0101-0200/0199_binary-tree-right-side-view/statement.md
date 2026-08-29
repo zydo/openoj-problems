@@ -12,12 +12,16 @@ Input: root = [1,2,3,null,5,null,4]
 Output: [1,3,4]
 ```
 
+![diagram](figures/199-1.svg)
+
 ### Example 2
 
 ```text
 Input: root = [1,2,3,4,null,null,null,5]
 Output: [1,3,4,5]
 ```
+
+![diagram](figures/199-2.svg)
 
 ### Example 3
 

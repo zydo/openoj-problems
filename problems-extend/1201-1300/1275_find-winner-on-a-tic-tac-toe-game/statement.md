@@ -26,6 +26,8 @@ tic tac toe), the grid is initially empty, and A will play first.
 
 ### Example 1
 
+![diagram](figures/1275-1.svg)
+
 ```text
 Input: moves = [[0,0],[2,0],[1,1],[2,1],[2,2]]
 Output: "A"
@@ -34,6 +36,8 @@ Explanation: A wins, they always play first.
 
 ### Example 2
 
+![diagram](figures/1275-2.svg)
+
 ```text
 Input: moves = [[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]
 Output: "B"
@@ -41,6 +45,8 @@ Explanation: B wins.
 ```
 
 ### Example 3
+
+![diagram](figures/1275-3.svg)
 
 ```text
 Input: moves = [[0,0],[1,1],[2,0],[1,0],[1,2],[2,1],[0,1],[0,2],[2,2]]

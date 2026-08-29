@@ -6,10 +6,10 @@ Given a binary tree with the following rules:
 
 - `root.val == 0`
 - For any tree node:
-  - If `treeNode.val` has a value `x` and `treeNode.left != null`, then
-    `treeNode.left.val == 2 * x + 1`.
-  - If `treeNode.val` has a value `x` and `treeNode.right != null`, then
-    `treeNode.right.val == 2 * x + 2`.
+    - If `treeNode.val` has a value `x` and `treeNode.left != null`, then
+      `treeNode.left.val == 2 * x + 1`.
+    - If `treeNode.val` has a value `x` and `treeNode.right != null`, then
+      `treeNode.right.val == 2 * x + 2`.
 
 Now the binary tree is contaminated, which means all `treeNode.val` have been
 changed to `-1`.
@@ -23,6 +23,8 @@ Implement the `FindElements` class:
 
 ### Example 1
 
+![diagram](figures/1261-1.svg)
+
 ```text
 Input:
 ["FindElements","find","find"]
@@ -34,6 +36,8 @@ findElements.find(2); // return True
 ```
 
 ### Example 2
+
+![diagram](figures/1261-2.svg)
 
 ```text
 Input:
@@ -47,6 +51,8 @@ findElements.find(5); // return False
 ```
 
 ### Example 3
+
+![diagram](figures/1261-3.svg)
 
 ```text
 Input:

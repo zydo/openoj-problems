@@ -21,6 +21,8 @@ Given an integer `n`, return `true` if it is a confusing number, or
 
 ### Example 1
 
+![diagram](figures/1056-1.svg)
+
 ```text
 Input: n = 6
 Output: true
@@ -29,6 +31,8 @@ Explanation: We get 9 after rotating 6, 9 is a valid number, and 9 != 6.
 
 ### Example 2
 
+![diagram](figures/1056-2.svg)
+
 ```text
 Input: n = 89
 Output: true
@@ -36,6 +40,8 @@ Explanation: We get 68 after rotating 89, 68 is a valid number and 68 != 89.
 ```
 
 ### Example 3
+
+![diagram](figures/1056-3.svg)
 
 ```text
 Input: n = 11

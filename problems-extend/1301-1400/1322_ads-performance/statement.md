@@ -6,9 +6,9 @@ Table: `Ads`
 
 | Column Name | Type |
 | ----------- | ---- |
-| ad_id | int |
-| user_id | int |
-| action | enum |
+| ad_id       | int  |
+| user_id     | int  |
+| action      | enum |
 
 `(ad_id, user_id)` is the primary key (combination of columns with unique values) for this table.
 Each row of this table contains the ID of an Ad, the ID of a user, and the action taken by this user regarding this Ad.
@@ -19,6 +19,8 @@ A company is running Ads and wants to calculate the performance of each Ad.
 Performance of the Ad is measured using Click-Through Rate (CTR) where:
 
 `ctr = (Clicked count) / (Clicked count + Viewed count) * 100`
+
+![diagram](figures/1322-1.svg)
 
 Write a solution to find the ctr of each Ad. Round ctr to two decimal points.
 

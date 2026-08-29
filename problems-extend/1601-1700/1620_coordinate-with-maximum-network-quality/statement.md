@@ -28,6 +28,8 @@ when `x1 == x2` and `y1 < y2`.
 
 ### Example 1
 
+![diagram](figures/1620-1.svg)
+
 ```text
 Input: towers = [[1,2,5],[2,1,7],[3,1,9]], radius = 2
 Output: [2,1]

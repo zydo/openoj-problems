@@ -16,6 +16,8 @@ depth-first traversal of the tree visits them.
 
 ### Example 1
 
+![diagram](figures/366-1.svg)
+
 ```text
 Input: root = [1,2,3,4,5]
 Output: [[4,5,3],[2],[1]]

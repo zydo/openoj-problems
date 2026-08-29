@@ -8,6 +8,8 @@ all, return null.
 
 For example, the following two linked lists begin to intersect at node c1:
 
+![diagram](figures/160-1.svg)
+
 The test cases are generated such that there are no cycles anywhere in the
 entire linked structure.
 
@@ -34,6 +36,8 @@ intersected node, then your solution will be accepted.
 
 ### Example 1
 
+![diagram](figures/160-2.svg)
+
 ```text
 Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
 Output: Intersected at '8'
@@ -44,6 +48,8 @@ From the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,
 
 ### Example 2
 
+![diagram](figures/160-3.svg)
+
 ```text
 Input: intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
 Output: Intersected at '2'
@@ -52,6 +58,8 @@ From the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,
 ```
 
 ### Example 3
+
+![diagram](figures/160-4.svg)
 
 ```text
 Input: intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2

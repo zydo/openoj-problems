@@ -7,9 +7,9 @@ There is an `m x n` cake that needs to be cut into `1 x 1` pieces.
 You are given integers `m`, `n`, and two arrays:
 
 - `horizontalCut` of size `m - 1`, where `horizontalCut[i]` represents the
-cost to cut along the horizontal line `i`.
+  cost to cut along the horizontal line `i`.
 - `verticalCut` of size `n - 1`, where `verticalCut[j]` represents the cost
-to cut along the vertical line `j`.
+  to cut along the vertical line `j`.
 
 In one operation, you can choose any piece of cake that is not yet a
 `1 x 1` square and perform one of the following cuts:
@@ -25,6 +25,8 @@ change.
 Return the minimum total cost to cut the entire cake into `1 x 1` pieces.
 
 ### Example 1
+
+![diagram](figures/3219-1.svg)
 
 ```text
 Input: m = 3, n = 2, horizontalCut = [1,3], verticalCut = [5]

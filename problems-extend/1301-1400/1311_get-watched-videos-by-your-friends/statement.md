@@ -8,6 +8,8 @@ Level 1 of videos are all watched videos by your friends, level 2 of videos are 
 
 ### Example 1
 
+![diagram](figures/1311-1.svg)
+
 ```text
 Input: watchedVideos = [["A","B"],["C"],["B","C"],["D"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1
 Output: ["B","C"]
@@ -21,6 +23,8 @@ C -> 2
 ```
 
 ### Example 2
+
+![diagram](figures/1311-2.svg)
 
 ```text
 Input: watchedVideos = [["A","B"],["C"],["B","C"],["D"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2

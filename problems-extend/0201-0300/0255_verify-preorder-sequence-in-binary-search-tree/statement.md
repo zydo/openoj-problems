@@ -7,6 +7,8 @@ correct preorder traversal sequence of a binary search tree.
 
 ### Example 1
 
+![diagram](figures/255-1.svg)
+
 ```text
 Input: preorder = [5,2,1,3,6]
 Output: true

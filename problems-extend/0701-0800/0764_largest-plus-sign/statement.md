@@ -18,6 +18,8 @@ checked for `1`'s.
 
 ### Example 1
 
+![diagram](figures/764-1.svg)
+
 ```text
 Input: n = 5, mines = [[4,2]]
 Output: 2
@@ -25,6 +27,8 @@ Explanation: The largest plus sign can only be of order 2.
 ```
 
 ### Example 2
+
+![diagram](figures/764-2.svg)
 
 ```text
 Input: n = 1, mines = [[0,0]]

@@ -7,6 +7,8 @@ Flip operation consists of change any single bit 1 to 0 or change the bit 0 to 1
 
 ### Example 1
 
+![diagram](figures/1318-1.svg)
+
 ```text
 Input: a = 2, b = 6, c = 5
 Output: 3

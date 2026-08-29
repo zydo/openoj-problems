@@ -10,9 +10,13 @@ You can turn a binary tree upside down with the following steps:
 - The original root becomes the new right child.
 - The original right child becomes the new left child.
 
+![diagram](figures/156-1.svg)
+
 The mentioned steps are done level by level. It is guaranteed that every right node has a sibling (a left node with the same parent) and has no children.
 
 ### Example 1
+
+![diagram](figures/156-2.svg)
 
 ```text
 Input: root = [1,2,3,4,5]

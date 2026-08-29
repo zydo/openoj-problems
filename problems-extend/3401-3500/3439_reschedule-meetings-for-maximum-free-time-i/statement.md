@@ -22,6 +22,8 @@ Note that the meetings can not be rescheduled to a time outside the event.
 
 ### Example 1
 
+![diagram](figures/3439-1.svg)
+
 ```text
 Input: eventTime = 5, k = 1, startTime = [1,3], endTime = [2,5]
 Output: 2
@@ -30,6 +32,8 @@ during the time [0, 2].
 ```
 
 ### Example 2
+
+![diagram](figures/3439-2.svg)
 
 ```text
 Input: eventTime = 10, k = 1, startTime = [0,2,9], endTime = [1,4,10]

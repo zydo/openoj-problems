@@ -13,6 +13,8 @@ stops.
 
 ### Example 1
 
+![diagram](figures/1184-1.svg)
+
 ```text
 Input: distance = [1,2,3,4], start = 0, destination = 1
 Output: 1
@@ -21,6 +23,8 @@ Explanation: Distance between 0 and 1 is 1 or 9, minimum is 1.
 
 ### Example 2
 
+![diagram](figures/1184-2.svg)
+
 ```text
 Input: distance = [1,2,3,4], start = 0, destination = 2
 Output: 3
@@ -28,6 +32,8 @@ Explanation: Distance between 0 and 2 is 3 or 7, minimum is 3.
 ```
 
 ### Example 3
+
+![diagram](figures/1184-3.svg)
 
 ```text
 Input: distance = [1,2,3,4], start = 0, destination = 3

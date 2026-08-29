@@ -18,12 +18,16 @@ the new reshaped matrix; Otherwise, output the original matrix.
 
 ### Example 1
 
+![diagram](figures/566-1.svg)
+
 ```text
 Input: mat = [[1,2],[3,4]], r = 1, c = 4
 Output: [[1,2,3,4]]
 ```
 
 ### Example 2
+
+![diagram](figures/566-2.svg)
 
 ```text
 Input: mat = [[1,2],[3,4]], r = 2, c = 4

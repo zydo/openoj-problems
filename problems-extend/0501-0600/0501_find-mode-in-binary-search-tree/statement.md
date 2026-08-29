@@ -21,6 +21,8 @@ Assume a BST is defined as follows:
 
 ### Example 1
 
+![diagram](figures/501-1.svg)
+
 ```text
 Input: root = [1,null,2,2]
 Output: [2]

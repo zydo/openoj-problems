@@ -8,14 +8,20 @@ integers, and an integer k.
 The matrix is composed of several layers, which is shown in the below image,
 where each color is its own layer:
 
+![diagram](figures/1914-1.svg)
+
 A cyclic rotation of the matrix is done by cyclically rotating each layer in
 the matrix. To cyclically rotate a layer once, each element in the layer will
 take the place of the adjacent element in the counter-clockwise direction. An
 example rotation is shown below:
 
+![diagram](figures/1914-2.svg)
+
 Return the matrix after applying k cyclic rotations to it.
 
 ### Example 1
+
+![diagram](figures/1914-3.svg)
 
 ```text
 Input: grid = [[40,10],[30,20]], k = 1
@@ -24,6 +30,12 @@ Explanation: The figures above represent the grid at every state.
 ```
 
 ### Example 2
+
+![diagram](figures/1914-4.svg)
+
+![diagram](figures/1914-5.svg)
+
+![diagram](figures/1914-6.svg)
 
 ```text
 Input: grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], k = 2

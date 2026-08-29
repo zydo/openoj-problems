@@ -19,6 +19,8 @@ them.
 
 ### Example 1
 
+![diagram](figures/885-1.svg)
+
 ```text
 Input: rows = 1, cols = 4, rStart = 0, cStart = 0
 Output: [[0,0],[0,1],[0,2],[0,3]]
@@ -26,6 +28,8 @@ Explanation: The single row is the whole grid. The first east run records [0,1];
 ```
 
 ### Example 2
+
+![diagram](figures/885-2.svg)
 
 ```text
 Input: rows = 5, cols = 6, rStart = 1, cStart = 4

@@ -15,6 +15,8 @@ color.
 
 ### Example 1
 
+![diagram](figures/1578-1.svg)
+
 ```text
 Input: colors = "abaac", neededTime = [1,2,3,4,5]
 Output: 3
@@ -25,6 +27,8 @@ color. Total time = 3.
 
 ### Example 2
 
+![diagram](figures/1578-2.svg)
+
 ```text
 Input: colors = "abc", neededTime = [1,2,3]
 Output: 0
@@ -33,6 +37,8 @@ any balloons.
 ```
 
 ### Example 3
+
+![diagram](figures/1578-3.svg)
 
 ```text
 Input: colors = "aabaa", neededTime = [1,2,3,4,1]

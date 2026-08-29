@@ -6,19 +6,19 @@ Table: `Visits`
 
 | Column Name | Type |
 | ----------- | ---- |
-| user_id | int |
-| visit_date | date |
+| user_id     | int  |
+| visit_date  | date |
 
 `(user_id, visit_date)` is the primary key (combination of columns with unique values) for this table.
 Each row of this table indicates that user_id has visited the bank in visit_date.
 
 Table: `Transactions`
 
-| Column Name | Type |
-| ----------- | ---- |
-| user_id | int |
+| Column Name      | Type |
+| ---------------- | ---- |
+| user_id          | int  |
 | transaction_date | date |
-| amount | int |
+| amount           | int  |
 
 This table may contain duplicates rows.
 Each row of this table indicates that user_id has done a transaction of amount in transaction_date.
@@ -40,6 +40,8 @@ Return the result table ordered by transactions_count.
 The result format is in the following example.
 
 ### Example 1
+
+![diagram](figures/1336-1.svg)
 
 ```text
 Input:

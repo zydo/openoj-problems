@@ -14,6 +14,8 @@ smallest value is the answer.
 
 ### Example 1
 
+![diagram](figures/742-1.svg)
+
 ```text
 Input: root = [1,3,2], k = 1
 Output: 2
@@ -23,6 +25,8 @@ smaller value, 2, is the answer.
 
 ### Example 2
 
+![diagram](figures/742-2.svg)
+
 ```text
 Input: root = [1], k = 1
 Output: 1
@@ -31,6 +35,8 @@ zero edges away.
 ```
 
 ### Example 3
+
+![diagram](figures/742-3.svg)
 
 ```text
 Input: root = [1,2,3,4,null,null,null,5,null,6], k = 2

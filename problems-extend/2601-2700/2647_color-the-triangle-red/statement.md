@@ -10,6 +10,8 @@ triangles.
 The triangles in the ith row are also 1-indexed with coordinates from
 `(i, 1)` to `(i, 2i - 1)`.
 
+![diagram](figures/2647-1.svg)
+
 Two triangles are neighbors if they share a side. For example:
 
 - Triangles `(1,1)` and `(2,2)` are neighbors
@@ -35,6 +37,8 @@ there are multiple valid solutions, return any.
 
 ### Example 1
 
+![diagram](figures/2647-2.svg)
+
 ```text
 Input: n = 3
 Output: [[1,1],[2,1],[2,3],[3,1],[3,5]]
@@ -49,6 +53,8 @@ will not make all triangles red.
 ```
 
 ### Example 2
+
+![diagram](figures/2647-3.svg)
 
 ```text
 Input: n = 2

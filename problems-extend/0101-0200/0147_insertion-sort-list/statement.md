@@ -18,7 +18,11 @@ partially sorted list (black) initially contains only the first element in the
 list. One element (red) is removed from the input data and inserted in-place
 into the sorted list with each iteration.
 
+![diagram](figures/147-1.svg)
+
 ### Example 1
+
+![diagram](figures/147-2.svg)
 
 ```text
 Input: head = [4,2,1,3]
@@ -26,6 +30,8 @@ Output: [1,2,3,4]
 ```
 
 ### Example 2
+
+![diagram](figures/147-3.svg)
 
 ```text
 Input: head = [-1,5,3,4,0]

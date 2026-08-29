@@ -12,11 +12,17 @@ On this wire the tree crosses as a level-order array of values, and the returned
 
 ### Example 1
 
+![diagram](figures/426-1.svg)
+
 ```text
 Input: root = [4,2,5,1,3]
 Output: [1,2,3,4,5]
 Explanation: The solid line indicates the successor relationship, while the dashed line means the predecessor relationship.
 ```
+
+![diagram](figures/426-2.svg)
+
+![diagram](figures/426-3.svg)
 
 ### Example 2
 

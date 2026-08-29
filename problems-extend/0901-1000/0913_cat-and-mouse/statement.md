@@ -30,6 +30,8 @@ Given the `graph`, and assuming both players play optimally, return:
 
 ### Example 1
 
+![diagram](figures/913-1.svg)
+
 ```text
 Input: graph = [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]
 Output: 0
@@ -40,6 +42,8 @@ Cat's reach. Best play therefore repeats a position and the game is a draw.
 ```
 
 ### Example 2
+
+![diagram](figures/913-2.svg)
 
 ```text
 Input: graph = [[1,3],[0],[3],[0,2]]

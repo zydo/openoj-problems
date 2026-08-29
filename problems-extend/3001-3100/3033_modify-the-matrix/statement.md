@@ -11,6 +11,8 @@ Return the matrix answer.
 
 ### Example 1
 
+![diagram](figures/3033-1.svg)
+
 ```text
 Input: matrix = [[1,2,-1],[4,-1,6],[7,8,9]]
 Output: [[1,2,9],[4,8,6],[7,8,9]]
@@ -20,6 +22,8 @@ Explanation: The diagram above shows the elements that are changed (in blue).
 ```
 
 ### Example 2
+
+![diagram](figures/3033-2.svg)
 
 ```text
 Input: matrix = [[3,-1],[5,2]]

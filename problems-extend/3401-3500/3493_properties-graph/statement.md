@@ -17,6 +17,8 @@ Return the number of connected components in the resulting graph.
 
 ### Example 1
 
+![diagram](figures/3493-1.svg)
+
 ```text
 Input: properties = [[1,2],[1,1],[3,4],[4,5],[5,6],[7,7]], k = 1
 Output: 3
@@ -24,6 +26,8 @@ Explanation: The graph formed has 3 connected components:
 ```
 
 ### Example 2
+
+![diagram](figures/3493-2.svg)
 
 ```text
 Input: properties = [[1,2,3],[2,3,4],[4,3,5]], k = 2

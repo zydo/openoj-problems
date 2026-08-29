@@ -14,6 +14,8 @@ completely painted in `mat`.
 
 ### Example 1
 
+![diagram](figures/2661-1.svg)
+
 ```text
 Input: arr = [1,3,4,2], mat = [[1,4],[2,3]]
 Output: 2
@@ -21,6 +23,8 @@ Explanation: The moves are shown in order, and both the first row and second col
 ```
 
 ### Example 2
+
+![diagram](figures/2661-2.svg)
 
 ```text
 Input: arr = [2,8,7,4,1,3,5,6,9], mat = [[3,2,5],[1,4,6],[8,7,9]]

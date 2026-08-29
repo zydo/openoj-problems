@@ -7,12 +7,12 @@ the following rules:
 
 - Alice first shoots `numArrows` arrows and then Bob shoots `numArrows` arrows.
 - The points are then calculated as follows:
-  - The target has integer scoring sections ranging from `0` to `11` inclusive.
-  - For each section of the target with score `k` (in between `0` to `11`),
-    say Alice and Bob have shot `ak` and `bk` arrows on that section
-    respectively. If `ak >= bk`, then Alice takes `k` points. If `ak < bk`,
-    then Bob takes `k` points.
-  - However, if `ak == bk == 0`, then nobody takes `k` points.
+    - The target has integer scoring sections ranging from `0` to `11` inclusive.
+    - For each section of the target with score `k` (in between `0` to `11`),
+      say Alice and Bob have shot `ak` and `bk` arrows on that section
+      respectively. If `ak >= bk`, then Alice takes `k` points. If `ak < bk`,
+      then Bob takes `k` points.
+    - However, if `ak == bk == 0`, then nobody takes `k` points.
 
 For example, if Alice and Bob both shot 2 arrows on the section with score 11,
 then Alice takes 11 points. On the other hand, if Alice shot 0 arrows on the
@@ -36,6 +36,8 @@ among equally scoring choices, win the set of sections whose bitmask
 
 ### Example 1
 
+![diagram](figures/2212-1.svg)
+
 ```text
 Input: numArrows = 9, aliceArrows = [1,1,0,1,0,0,2,1,0,1,2,0]
 Output: [0,0,0,0,1,1,0,0,1,2,3,1]
@@ -44,6 +46,8 @@ It can be shown that Bob cannot obtain a score higher than 47 points.
 ```
 
 ### Example 2
+
+![diagram](figures/2212-2.svg)
 
 ```text
 Input: numArrows = 3, aliceArrows = [0,0,1,0,0,0,0,0,0,0,0,2]

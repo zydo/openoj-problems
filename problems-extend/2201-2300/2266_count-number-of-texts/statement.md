@@ -11,6 +11,8 @@ in order:
 - `6` maps to `m`, `n`, `o`; `7` maps to `p`, `q`, `r`, `s`
 - `8` maps to `t`, `u`, `v`; `9` maps to `w`, `x`, `y`, `z`
 
+![diagram](figures/2266-1.svg)
+
 In order to add a letter, Alice has to press the key of the corresponding
 digit `i` times, where `i` is the position of the letter in the key.
 

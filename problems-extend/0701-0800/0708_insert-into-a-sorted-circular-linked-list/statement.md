@@ -18,11 +18,15 @@ you should return the originally given node.
 
 ### Example 1
 
+![diagram](figures/708-1.svg)
+
 ```text
 Input: head = [3,4,1], insertVal = 2
 Output: [3,4,1,2]
 Explanation: In the figure above, there is a sorted circular list of three elements. You are given a reference to the node with value 3, and we need to insert 2 into the list. The new node should be inserted between node 1 and node 3. After the insertion, the list should look like this, and we should still return node 3.
 ```
+
+![diagram](figures/708-2.svg)
 
 ### Example 2
 

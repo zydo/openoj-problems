@@ -13,6 +13,8 @@ Return `true` if such a graph exists, or `false` otherwise.
 
 ### Example 1
 
+![diagram](figures/3656-1.svg)
+
 ```text
 Input: degrees = [3,1,2,2]
 Output: true

@@ -37,6 +37,8 @@ A half-open segment `[a, b)` is the section of the number line between points
 
 ### Example 1
 
+![diagram](figures/2015-1.svg)
+
 ```text
 Input: buildings = [[1,4,2],[3,9,4]]
 Output: [[1,3,2],[3,4,3],[4,9,4]]

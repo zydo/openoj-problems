@@ -7,6 +7,8 @@ nodes' values. (i.e., from left to right, level by level from leaf to root).
 
 ### Example 1
 
+![diagram](figures/107-1.svg)
+
 ```text
 Input: root = [3,9,20,null,null,15,7]
 Output: [[15,7],[9,20],[3]]

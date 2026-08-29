@@ -24,6 +24,10 @@ Return the maximum number of boxes you can put into the warehouse.
 
 ### Example 1
 
+![diagram](figures/1580-1.svg)
+
+![diagram](figures/1580-2.svg)
+
 ```text
 Input: boxes = [1,2,2,3,4], warehouse = [3,4,1,2]
 Output: 4
@@ -37,6 +41,10 @@ where.
 ```
 
 ### Example 2
+
+![diagram](figures/1580-3.svg)
+
+![diagram](figures/1580-4.svg)
 
 ```text
 Input: boxes = [3,5,5,2], warehouse = [2,1,3,4,5]

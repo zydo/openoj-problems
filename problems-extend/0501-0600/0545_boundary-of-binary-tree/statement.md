@@ -27,6 +27,8 @@ Given the `root` of a binary tree, return the values of its boundary.
 
 ### Example 1
 
+![diagram](figures/545-1.svg)
+
 ```text
 Input: root = [1,null,2,3,4]
 Output: [1,3,4,2]
@@ -38,6 +40,8 @@ to right are [3,4]. Concatenating everything results in [1] + [] + [3,4] +
 ```
 
 ### Example 2
+
+![diagram](figures/545-2.svg)
 
 ```text
 Input: root = [1,2,3,4,5,6,null,null,null,7,8,9,10]

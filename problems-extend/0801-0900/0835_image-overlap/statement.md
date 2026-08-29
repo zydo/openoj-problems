@@ -16,6 +16,12 @@ Return the largest possible overlap.
 
 ### Example 1
 
+![diagram](figures/835-1.svg)
+
+![diagram](figures/835-2.svg)
+
+![diagram](figures/835-3.svg)
+
 ```text
 Input: img1 = [[1,1,0],[0,1,0],[0,1,0]], img2 = [[0,0,0],[0,1,1],[0,0,1]]
 Output: 3

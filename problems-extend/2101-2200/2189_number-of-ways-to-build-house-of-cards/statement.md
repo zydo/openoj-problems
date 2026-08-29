@@ -25,6 +25,8 @@ of the previous row's horizontal cards.
 
 ### Example 1
 
+![diagram](figures/2189-1.svg)
+
 ```text
 Input: n = 16
 Output: 2
@@ -35,6 +37,8 @@ cards) over a four-triangle row (11 cards).
 
 ### Example 2
 
+![diagram](figures/2189-2.svg)
+
 ```text
 Input: n = 2
 Output: 1
@@ -42,6 +46,8 @@ Explanation: The only valid house is a single row holding one triangle.
 ```
 
 ### Example 3
+
+![diagram](figures/2189-3.svg)
 
 ```text
 Input: n = 4

@@ -5,7 +5,7 @@
 Given the `root` of a perfect binary tree, reverse the node values at each
 odd level of the tree.
 
-	For example, suppose the node values at level 3 are [2,1,3,4,7,11,29,18], then it should become [18,29,11,7,4,3,1,2].
+    For example, suppose the node values at level 3 are [2,1,3,4,7,11,29,18], then it should become [18,29,11,7,4,3,1,2].
 
 Return the root of the reversed tree.
 
@@ -17,6 +17,8 @@ root node.
 
 ### Example 1
 
+![diagram](figures/2415-1.svg)
+
 ```text
 Input: root = [2,3,5,8,13,21,34]
 Output: [2,5,3,8,13,21,34]
@@ -26,6 +28,8 @@ The nodes at level 1 are 3, 5 respectively, which are reversed and become 5, 3.
 ```
 
 ### Example 2
+
+![diagram](figures/2415-2.svg)
 
 ```text
 Input: root = [7,13,11]

@@ -17,6 +17,8 @@ Implement the `DistanceLimitedPathsExist` class:
 
 ### Example 1
 
+![diagram](figures/1724-1.svg)
+
 ```text
 Input:
 ["DistanceLimitedPathsExist", "query", "query", "query", "query"]

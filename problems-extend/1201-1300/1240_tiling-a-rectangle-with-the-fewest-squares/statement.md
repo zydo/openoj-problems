@@ -7,6 +7,8 @@ squares that tile the rectangle.
 
 ### Example 1
 
+![diagram](figures/1240-1.svg)
+
 ```text
 Input: n = 2, m = 3
 Output: 3
@@ -15,12 +17,16 @@ Explanation: 3 squares are necessary to cover the rectangle: 2 squares of 1x1 an
 
 ### Example 2
 
+![diagram](figures/1240-2.svg)
+
 ```text
 Input: n = 5, m = 8
 Output: 5
 ```
 
 ### Example 3
+
+![diagram](figures/1240-3.svg)
 
 ```text
 Input: n = 11, m = 13

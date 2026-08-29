@@ -24,6 +24,8 @@ containing a single element equal to `-1`.
 
 ### Example 1
 
+![diagram](figures/3812-1.svg)
+
 ```text
 Input: n = 3, edges = [[0,1],[1,2]], start = "010", target = "100"
 Output: [0]
@@ -32,6 +34,8 @@ changes from "010" to "100", matching the target.
 ```
 
 ### Example 2
+
+![diagram](figures/3812-2.svg)
 
 ```text
 Input: n = 7, edges = [[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]], start = "0011000", target = "0010001"
@@ -46,6 +50,8 @@ the target.
 ```
 
 ### Example 3
+
+![diagram](figures/3812-3.svg)
 
 ```text
 Input: n = 2, edges = [[0,1]], start = "00", target = "01"

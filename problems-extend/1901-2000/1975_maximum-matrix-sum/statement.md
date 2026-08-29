@@ -14,6 +14,8 @@ maximum sum of the matrix's elements using the operation mentioned above.
 
 ### Example 1
 
+![diagram](figures/1975-1.svg)
+
 ```text
 Input: matrix = [[1,-1],[-1,1]]
 Output: 4
@@ -23,6 +25,8 @@ Explanation: We can follow the following steps to reach sum equals 4:
 ```
 
 ### Example 2
+
+![diagram](figures/1975-2.svg)
 
 ```text
 Input: matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]

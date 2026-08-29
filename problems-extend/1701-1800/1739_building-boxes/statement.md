@@ -17,6 +17,8 @@ the floor.
 
 ### Example 1
 
+![diagram](figures/1739-1.svg)
+
 ```text
 Input: n = 3
 Output: 3
@@ -27,6 +29,8 @@ boxes sit on the floor in the corner.
 
 ### Example 2
 
+![diagram](figures/1739-2.svg)
+
 ```text
 Input: n = 4
 Output: 3
@@ -36,6 +40,8 @@ sides now each touch a box or a wall.
 ```
 
 ### Example 3
+
+![diagram](figures/1739-3.svg)
 
 ```text
 Input: n = 10

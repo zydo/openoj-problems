@@ -14,6 +14,8 @@ descendants of that node.
 
 ### Example 1
 
+![diagram](figures/865-1.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4]
 Output: [2,7,4]

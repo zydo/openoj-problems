@@ -15,6 +15,8 @@ A string is palindromic if it reads the same forward and backward.
 
 ### Example 1
 
+![diagram](figures/2002-1.svg)
+
 ```text
 Input: s = "leetcodecom"
 Output: 9

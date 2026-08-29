@@ -7,12 +7,16 @@ once. Return the linked list sorted as well.
 
 ### Example 1
 
+![diagram](figures/83-1.svg)
+
 ```text
 Input: head = [1,1,2]
 Output: [1,2]
 ```
 
 ### Example 2
+
+![diagram](figures/83-2.svg)
 
 ```text
 Input: head = [1,1,2,3,3]

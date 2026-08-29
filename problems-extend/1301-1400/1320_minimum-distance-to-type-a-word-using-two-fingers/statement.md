@@ -2,6 +2,8 @@
 
 ## Description
 
+![diagram](figures/1320-1.svg)
+
 You have a keyboard layout as shown above in the X-Y plane, where each English uppercase letter is located at some coordinate.
 
 - For example, the letter 'A' is located at coordinate (0, 0), the letter 'B' is located at (0, 1), the letter 'P' is located at (2, 3) and the letter 'Z' is located at (4, 1).

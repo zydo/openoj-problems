@@ -19,6 +19,8 @@ colsCount = 4, the desired output matrix is shown below. Note that
 iterating the matrix following the arrows corresponds to the order of
 numbers in the original array.
 
+![diagram](figures/2624-1.svg)
+
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission still
 enhances `Array` as described — add `snail(rowsCount, colsCount)` to

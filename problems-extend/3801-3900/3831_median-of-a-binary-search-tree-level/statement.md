@@ -17,6 +17,8 @@ after sorting).
 
 ### Example 1
 
+![diagram](figures/3831-1.svg)
+
 ```text
 Input: root = [4,null,5,null,7], level = 2
 Output: 7
@@ -24,6 +26,8 @@ Explanation: The nodes at level = 2 are [7]. The median value is 7.
 ```
 
 ### Example 2
+
+![diagram](figures/3831-2.svg)
 
 ```text
 Input: root = [6,3,8], level = 1
@@ -33,6 +37,8 @@ median values, so the larger one 8 is the answer.
 ```
 
 ### Example 3
+
+![diagram](figures/3831-3.svg)
 
 ```text
 Input: root = [2,1], level = 2

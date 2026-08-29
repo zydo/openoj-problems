@@ -15,10 +15,14 @@ determined by the input tree and `val`.
 
 ### Example 1
 
+![diagram](figures/701-1.svg)
+
 ```text
 Input: root = [4,2,7,1,3], val = 5
 Output: [4,2,7,1,3,5]
 ```
+
+![diagram](figures/701-2.svg)
 
 ### Example 2
 

@@ -22,6 +22,8 @@ cannot be made fully traversable by both Alice and Bob.
 
 ### Example 1
 
+![diagram](figures/1579-1.svg)
+
 ```text
 Input: n = 4, edges = [[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]
 Output: 2
@@ -32,6 +34,8 @@ breaks that, so 2 is the maximum.
 
 ### Example 2
 
+![diagram](figures/1579-2.svg)
+
 ```text
 Input: n = 4, edges = [[3,1,2],[3,2,3],[1,1,4],[2,1,4]]
 Output: 0
@@ -40,6 +44,8 @@ traversable by both Alice and Bob, so no edge can be removed.
 ```
 
 ### Example 3
+
+![diagram](figures/1579-3.svg)
 
 ```text
 Input: n = 4, edges = [[3,2,3],[1,1,2],[2,3,4]]

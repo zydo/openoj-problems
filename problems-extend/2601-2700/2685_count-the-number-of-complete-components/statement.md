@@ -18,6 +18,8 @@ every pair of its vertices.
 
 ### Example 1
 
+![diagram](figures/2685-1.svg)
+
 ```text
 Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4]]
 Output: 3
@@ -26,6 +28,8 @@ of this graph are complete.
 ```
 
 ### Example 2
+
+![diagram](figures/2685-2.svg)
 
 ```text
 Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]

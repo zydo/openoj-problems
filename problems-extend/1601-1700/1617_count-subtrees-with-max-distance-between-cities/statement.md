@@ -25,6 +25,8 @@ number of subtrees whose maximum distance between two cities equals
 
 ### Example 1
 
+![diagram](figures/1617-1.svg)
+
 ```text
 Input: n = 4, edges = [[1,2],[2,3],[2,4]]
 Output: [3,4,0]

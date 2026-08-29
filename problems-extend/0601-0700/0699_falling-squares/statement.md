@@ -23,6 +23,8 @@ after dropping the `ith` square.
 
 ### Example 1
 
+![diagram](figures/699-1.svg)
+
 ```text
 Input: positions = [[1,2],[2,3],[6,1]]
 Output: [2,5,5]

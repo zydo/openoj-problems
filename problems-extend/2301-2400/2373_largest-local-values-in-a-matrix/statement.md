@@ -16,6 +16,8 @@ Return the generated matrix.
 
 ### Example 1
 
+![diagram](figures/2373-1.svg)
+
 ```text
 Input: grid = [[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]
 Output: [[9,9],[8,6]]
@@ -26,6 +28,8 @@ value of a contiguous 3 x 3 matrix in grid.
 ```
 
 ### Example 2
+
+![diagram](figures/2373-2.svg)
 
 ```text
 Input: grid = [[1,1,1,1,1],[1,1,1,1,1],[1,1,2,1,1],[1,1,1,1,1],[1,1,1,1,1]]
@@ -50,4 +54,3 @@ Use nested loops to run through all possible 3 x 3 windows in the matrix.
 
 For each 3 x 3 window, iterate through the values to get the maximum value
 within the window.
-

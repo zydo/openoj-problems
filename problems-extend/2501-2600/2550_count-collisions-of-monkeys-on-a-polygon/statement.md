@@ -7,6 +7,8 @@ labeled from 0 to n - 1 in a clockwise direction, and each vertex has
 exactly one monkey. The following figure shows a convex polygon of 6
 vertices.
 
+![diagram](figures/2550-1.svg)
+
 Simultaneously, each monkey moves to a neighboring vertex. A collision
 happens if at least two monkeys reside on the same vertex after the
 movement or intersect on an edge.

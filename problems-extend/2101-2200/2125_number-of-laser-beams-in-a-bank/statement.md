@@ -15,6 +15,8 @@ Return the total number of laser beams in the bank.
 
 ### Example 1
 
+![diagram](figures/2125-1.svg)
+
 ```text
 Input: bank = ["011001","000000","010100","001000"]
 Output: 8
@@ -32,6 +34,8 @@ This is because the 2nd row contains security devices, which breaks the second c
 ```
 
 ### Example 2
+
+![diagram](figures/2125-2.svg)
 
 ```text
 Input: bank = ["000","111","000"]

@@ -24,6 +24,8 @@ to change after rescheduling one meeting.
 
 ### Example 1
 
+![diagram](figures/3440-1.svg)
+
 ```text
 Input: eventTime = 5, startTime = [1,3], endTime = [2,5]
 Output: 2
@@ -33,6 +35,8 @@ during the time [0, 2].
 
 ### Example 2
 
+![diagram](figures/3440-2.svg)
+
 ```text
 Input: eventTime = 10, startTime = [0,7,9], endTime = [1,8,10]
 Output: 7
@@ -41,6 +45,8 @@ during the time [0, 7].
 ```
 
 ### Example 3
+
+![diagram](figures/3440-3.svg)
 
 ```text
 Input: eventTime = 10, startTime = [0,3,7,9], endTime = [1,4,8,10]

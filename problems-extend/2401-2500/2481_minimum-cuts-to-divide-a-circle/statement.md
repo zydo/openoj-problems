@@ -9,10 +9,14 @@ A valid cut in a circle can be:
 - A cut that is represented by a straight line that touches one point on
   the edge of the circle and its center.
 
+![diagram](figures/2481-1.svg)
+
 Given the integer `n`, return the minimum number of cuts needed to divide
 a circle into `n` equal slices.
 
 ### Example 1
+
+![diagram](figures/2481-2.svg)
 
 ```text
 Input: n = 4
@@ -22,6 +26,8 @@ the middle divides it into 4 equal slices.
 ```
 
 ### Example 2
+
+![diagram](figures/2481-3.svg)
 
 ```text
 Input: n = 3

@@ -21,6 +21,8 @@ large, return it modulo `10⁹ + 7`. If there is no way, return `0`.
 
 ### Example 1
 
+![diagram](figures/2147-1.svg)
+
 ```text
 Input: corridor = "SSPPSPS"
 Output: 3
@@ -29,6 +31,8 @@ Note that in each of the ways, each section has exactly two seats.
 ```
 
 ### Example 2
+
+![diagram](figures/2147-2.svg)
 
 ```text
 Input: corridor = "PPSPSP"
@@ -39,6 +43,8 @@ Installing any would create some section that does not have exactly two seats.
 ```
 
 ### Example 3
+
+![diagram](figures/2147-3.svg)
 
 ```text
 Input: corridor = "S"

@@ -12,6 +12,8 @@ the linked list such that every node's value belongs to `nums`.
 
 ### Example 1
 
+![diagram](figures/817-1.svg)
+
 ```text
 Input: head = [0,1,2,3], nums = [0,1,3]
 Output: 2
@@ -20,6 +22,8 @@ components.
 ```
 
 ### Example 2
+
+![diagram](figures/817-2.svg)
 
 ```text
 Input: head = [0,1,2,3,4], nums = [0,3,1,4]

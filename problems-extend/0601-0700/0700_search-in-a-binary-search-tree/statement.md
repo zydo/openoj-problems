@@ -9,12 +9,16 @@ subtree rooted with that node. If such a node does not exist, return `null`.
 
 ### Example 1
 
+![diagram](figures/700-1.svg)
+
 ```text
 Input: root = [4,2,7,1,3], val = 2
 Output: [2,1,3]
 ```
 
 ### Example 2
+
+![diagram](figures/700-2.svg)
 
 ```text
 Input: root = [4,2,7,1,3], val = 5

@@ -24,6 +24,8 @@ there is no such ancestor.
 
 ### Example 1
 
+![diagram](figures/1766-1.svg)
+
 ```text
 Input: nums = [2,3,3,2], edges = [[0,1],[1,2],[1,3]]
 Output: [-1,0,0,1]
@@ -39,6 +41,8 @@ Explanation:
 ```
 
 ### Example 2
+
+![diagram](figures/1766-2.svg)
 
 ```text
 Input: nums = [5,6,10,2,3,6,15], edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]]

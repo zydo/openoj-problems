@@ -23,6 +23,8 @@ Return the minimum cost of a path for the frog.
 
 ### Example 1
 
+![diagram](figures/2498-1.svg)
+
 ```text
 Input: stones = [0,2,5,6,7]
 Output: 5
@@ -32,6 +34,8 @@ Since it is not possible to achieve a cost of less than 5, we return it.
 ```
 
 ### Example 2
+
+![diagram](figures/2498-2.svg)
 
 ```text
 Input: stones = [0,3,9]

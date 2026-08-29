@@ -19,6 +19,8 @@ Return `true` if and only if all roads from `source` lead to
 
 ### Example 1
 
+![diagram](figures/1059-1.svg)
+
 ```text
 Input: n = 3, edges = [[0,1],[0,2]], source = 0, destination = 2
 Output: false
@@ -27,6 +29,8 @@ Explanation: It is possible to reach and get stuck on both node 1 and node 2.
 
 ### Example 2
 
+![diagram](figures/1059-2.svg)
+
 ```text
 Input: n = 4, edges = [[0,1],[0,3],[1,2],[2,1]], source = 0, destination = 3
 Output: false
@@ -34,6 +38,8 @@ Explanation: We have two possibilities: to end at node 3, or to loop over node 1
 ```
 
 ### Example 3
+
+![diagram](figures/1059-3.svg)
 
 ```text
 Input: n = 4, edges = [[0,1],[0,2],[1,3],[2,3]], source = 0, destination = 3

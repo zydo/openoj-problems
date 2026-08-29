@@ -8,12 +8,16 @@ the original tree.
 
 ### Example 1
 
+![diagram](figures/663-1.svg)
+
 ```text
 Input: root = [5,10,10,null,null,2,3]
 Output: true
 ```
 
 ### Example 2
+
+![diagram](figures/663-2.svg)
 
 ```text
 Input: root = [1,2,10,null,null,2,20]

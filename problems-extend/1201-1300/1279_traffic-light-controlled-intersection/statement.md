@@ -7,6 +7,8 @@ from North to South in direction 1 and from South to North in direction 2. Secon
 road is road B where cars travel from West to East in direction 3 and from East to
 West in direction 4.
 
+![diagram](figures/1279-1.svg)
+
 There is a traffic light located on each road before the intersection. A traffic
 light can either be green or red.
 

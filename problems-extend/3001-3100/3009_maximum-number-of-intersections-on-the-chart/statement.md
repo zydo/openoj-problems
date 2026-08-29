@@ -12,6 +12,8 @@ points of intersection of the line with the chart.
 
 ### Example 1
 
+![diagram](figures/3009-1.svg)
+
 ```text
 Input: y = [1,2,1,2,1,3,2]
 Output: 5
@@ -23,6 +25,8 @@ points. So the answer would be 5.
 ```
 
 ### Example 2
+
+![diagram](figures/3009-2.svg)
 
 ```text
 Input: y = [2,1,3,4,5]

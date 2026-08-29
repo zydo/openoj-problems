@@ -18,6 +18,8 @@ otherwise.
 
 ### Example 1
 
+![diagram](figures/1971-1.svg)
+
 ```text
 Input: n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2
 Output: true
@@ -27,6 +29,8 @@ Explanation: There are two paths from vertex 0 to vertex 2:
 ```
 
 ### Example 2
+
+![diagram](figures/1971-2.svg)
 
 ```text
 Input: n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5

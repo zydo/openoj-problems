@@ -22,8 +22,10 @@ direction until the end of the matrix is reached.
 
 - For example, in the below diagram the diagonal is highlighted using the
   cell with indices (2, 3) colored gray:
-  - Red-colored cells are left and above the cell.
-  - Blue-colored cells are right and below the cell.
+    - Red-colored cells are left and above the cell.
+    - Blue-colored cells are right and below the cell.
+
+![diagram](figures/2711-1.svg)
 
 Return the matrix answer.
 

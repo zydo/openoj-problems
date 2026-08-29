@@ -12,6 +12,8 @@ Given the list of bombs, return the maximum number of bombs that can be detonate
 
 ### Example 1
 
+![diagram](figures/2101-1.svg)
+
 ```text
 Input: bombs = [[2,1,3],[6,1,4]]
 Output: 2
@@ -23,6 +25,8 @@ So the maximum bombs that can be detonated is max(1, 2) = 2.
 
 ### Example 2
 
+![diagram](figures/2101-2.svg)
+
 ```text
 Input: bombs = [[1,1,5],[10,10,5]]
 Output: 1
@@ -31,6 +35,8 @@ Detonating either bomb will not detonate the other bomb, so the maximum number o
 ```
 
 ### Example 3
+
+![diagram](figures/2101-3.svg)
 
 ```text
 Input: bombs = [[1,2,3],[2,3,1],[3,4,2],[4,5,3],[5,6,4]]

@@ -18,10 +18,14 @@ the same length, "differs" simply counts the positions `i` where
 `ans`, and consecutive entries may repeat by crossing the same road back
 and forth.
 
+![diagram](figures/1548-1.svg)
+
 Return `ans`. If several paths tie for the fewest differing positions,
 return any one of them.
 
 ### Example 1
+
+![diagram](figures/1548-2.svg)
 
 ```text
 Input: n = 5, roads = [[0,2],[0,3],[1,2],[1,3],[1,4],[2,4]],
@@ -35,6 +39,8 @@ everywhere except index 2.
 
 ### Example 2
 
+![diagram](figures/1548-3.svg)
+
 ```text
 Input: n = 2, roads = [[0,1]], names = ["ATX","SEA"],
        targetPath = ["AAA","BBB","CCC","DDD","EEE","FFF","GGG","HHH"]
@@ -45,6 +51,8 @@ positions; every such walk is an accepted answer.
 ```
 
 ### Example 3
+
+![diagram](figures/1548-4.svg)
 
 ```text
 Input: n = 6, roads = [[0,1],[1,2],[2,3],[3,4],[4,5]],

@@ -32,6 +32,8 @@ An ancestor of a node is any node on the path from the root to that node
 
 ### Example 1
 
+![diagram](figures/1719-1.svg)
+
 ```text
 Input: pairs = [[1,2],[2,3]]
 Output: 1
@@ -40,6 +42,8 @@ with 1 and 3 as its children.
 ```
 
 ### Example 2
+
+![diagram](figures/1719-2.svg)
 
 ```text
 Input: pairs = [[1,2],[2,3],[1,3]]

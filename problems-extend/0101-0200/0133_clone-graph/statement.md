@@ -30,6 +30,8 @@ copy of the given node as a reference to the cloned graph.
 
 ### Example 1
 
+![diagram](figures/133-1.svg)
+
 ```text
 Input: adjList = [[2,4],[1,3],[2,4],[1,3]]
 Output: [[2,4],[1,3],[2,4],[1,3]]
@@ -41,6 +43,8 @@ Explanation: There are 4 nodes in the graph.
 ```
 
 ### Example 2
+
+![diagram](figures/133-2.svg)
 
 ```text
 Input: adjList = [[]]

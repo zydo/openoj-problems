@@ -13,6 +13,8 @@ return true if grid is an X-Matrix. Otherwise, return false.
 
 ### Example 1
 
+![diagram](figures/2319-1.svg)
+
 ```text
 Input: grid = [[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]]
 Output: true
@@ -22,6 +24,8 @@ Thus, grid is an X-Matrix.
 ```
 
 ### Example 2
+
+![diagram](figures/2319-2.svg)
 
 ```text
 Input: grid = [[5,7,0],[0,3,1],[0,5,0]]

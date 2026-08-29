@@ -40,6 +40,8 @@ Concatenating all the chunks returned:
 The resulting order is the same as the order above.
 ```
 
+![diagram](figures/1656-1.svg)
+
 ### Constraints
 
 - `1 <= n <= 1000`

@@ -7,6 +7,8 @@ has `Node.val == val`, and return the new head.
 
 ### Example 1
 
+![diagram](figures/203-1.svg)
+
 ```text
 Input: head = [1,2,6,3,4,5,6], val = 6
 Output: [1,2,3,4,5]

@@ -11,6 +11,8 @@ On LeetCode the function returns nothing and the judge inspects the mutated tree
 
 ### Example 1
 
+![diagram](figures/114-1.svg)
+
 ```text
 Input: root = [1,2,5,3,4,null,6]
 Output: [1,null,2,null,3,null,4,null,5,null,6]

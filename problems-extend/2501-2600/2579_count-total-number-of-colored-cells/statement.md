@@ -13,6 +13,8 @@ the following routine for n minutes:
 Below is a pictorial representation of the state of the grid after
 minutes 1, 2, and 3.
 
+![diagram](figures/2579-1.svg)
+
 Return the number of colored cells at the end of n minutes.
 
 ### Example 1

@@ -10,7 +10,11 @@ Remove the nodes of `list1` from the `a`th node to the `b`th node, and put
 
 Build the result list and return its head.
 
+![diagram](figures/1669-1.svg)
+
 ### Example 1
+
+![diagram](figures/1669-2.svg)
 
 ```text
 Input: list1 = [10,1,13,6,9,5], a = 3, b = 4, list2 = [1000000,1000001,1000002]
@@ -20,6 +24,8 @@ place, keeping the nodes before and after them.
 ```
 
 ### Example 2
+
+![diagram](figures/1669-3.svg)
 
 ```text
 Input: list1 = [0,1,2,3,4,5,6], a = 2, b = 5, list2 = [1000000,1000001,1000002,1000003,1000004]

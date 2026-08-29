@@ -9,12 +9,16 @@ and the right subtrees of every node differ in height by no more than 1.
 
 ### Example 1
 
+![diagram](figures/110-1.svg)
+
 ```text
 Input: root = [3,9,20,null,null,15,7]
 Output: true
 ```
 
 ### Example 2
+
+![diagram](figures/110-2.svg)
 
 ```text
 Input: root = [1,2,2,3,3,null,null,4,4]

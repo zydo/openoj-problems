@@ -35,6 +35,8 @@ is not possible to reach the square, return `-1`.
 
 ### Example 1
 
+![diagram](figures/909-1.svg)
+
 ```text
 Input: board =
 [[-1,-1,-1,-1,-1,-1]

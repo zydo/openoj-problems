@@ -12,6 +12,8 @@ Return `true` if so, or `false` otherwise.
 
 ### Example 1
 
+![diagram](figures/2042-1.svg)
+
 ```text
 Input: s = "1 box has 3 blue 4 red 6 green and 12 yellow marbles"
 Output: true
@@ -28,6 +30,8 @@ Explanation: The numbers in s are: 5, 5. They are not strictly increasing.
 ```
 
 ### Example 3
+
+![diagram](figures/2042-2.svg)
 
 ```text
 Input: s = "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"

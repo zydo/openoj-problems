@@ -26,6 +26,8 @@ example.
 
 ### Example 1
 
+![diagram](figures/3061-1.svg)
+
 ```text
 Input:
 Heights table:

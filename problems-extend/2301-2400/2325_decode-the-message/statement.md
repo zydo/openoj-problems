@@ -21,6 +21,8 @@ Return the decoded `message`.
 
 ### Example 1
 
+![diagram](figures/2325-1.svg)
+
 ```text
 Input: key = "the quick brown fox jumps over the lazy dog", message = "vkbs bs t suepuv"
 Output: "this is a secret"
@@ -29,6 +31,8 @@ It is obtained by taking the first appearance of each letter in "the quick brown
 ```
 
 ### Example 2
+
+![diagram](figures/2325-2.svg)
 
 ```text
 Input: key = "eljuxhpwnyrdgtqkviszcfmabo", message = "zwx hnfx lqantp mnoeius ycgk vcnjrdb"

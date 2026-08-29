@@ -18,6 +18,8 @@ Note: A subtree must include all of its descendants.
 
 ### Example 1
 
+![diagram](figures/333-1.svg)
+
 ```text
 Input: root = [10,5,15,1,8,null,7]
 Output: 3

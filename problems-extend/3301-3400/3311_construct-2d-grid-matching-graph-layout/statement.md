@@ -23,6 +23,8 @@ Explanation: The grid is:
 2 0
 ```
 
+![diagram](figures/3311-1.svg)
+
 ### Example 2
 
 ```text
@@ -31,6 +33,8 @@ Output: [[4,2,3,1,0]]
 Explanation: The grid is:
 4 2 3 1 0
 ```
+
+![diagram](figures/3311-2.svg)
 
 ### Example 3
 
@@ -42,6 +46,8 @@ Explanation: The grid is:
 7 4 2
 1 0 5
 ```
+
+![diagram](figures/3311-3.svg)
 
 ### Constraints
 

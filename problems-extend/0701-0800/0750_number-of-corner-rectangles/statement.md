@@ -13,6 +13,8 @@ must be distinct.
 
 ### Example 1
 
+![diagram](figures/750-1.svg)
+
 ```text
 Input: grid = [[1,0,0,1,0],[0,0,1,0,1],[0,0,0,1,0],[1,0,1,0,1]]
 Output: 1
@@ -22,6 +24,8 @@ grid[1][4], grid[3][2], and grid[3][4].
 
 ### Example 2
 
+![diagram](figures/750-2.svg)
+
 ```text
 Input: grid = [[1,1,1],[1,1,1],[1,1,1]]
 Output: 9
@@ -30,6 +34,8 @@ and one 3x3 rectangle.
 ```
 
 ### Example 3
+
+![diagram](figures/750-3.svg)
 
 ```text
 Input: grid = [[1,1,1,1]]

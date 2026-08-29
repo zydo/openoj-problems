@@ -12,6 +12,8 @@ Return the minimum number of straight lines needed to cover all the points.
 
 ### Example 1
 
+![diagram](figures/2152-1.svg)
+
 ```text
 Input: points = [[0,1],[2,3],[4,5],[4,3]]
 Output: 2
@@ -21,6 +23,8 @@ Explanation: The minimum number of straight lines needed is two. One possible so
 ```
 
 ### Example 2
+
+![diagram](figures/2152-2.svg)
 
 ```text
 Input: points = [[0,2],[-2,-2],[1,4]]

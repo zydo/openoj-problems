@@ -11,6 +11,8 @@ of moves. Otherwise, return `false`.
 Note: A valid knight move consists of moving two squares in one direction and
 one square perpendicular to it.
 
+![diagram](figures/3996-1.svg)
+
 ### Example 1
 
 ```text

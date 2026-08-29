@@ -18,6 +18,8 @@ infrastructure.
 
 ### Example 1
 
+![diagram](figures/1615-1.svg)
+
 ```text
 Input: n = 4, roads = [[0,1],[0,3],[1,2],[1,3]]
 Output: 4
@@ -26,6 +28,8 @@ connected to either 0 or 1. The road between 0 and 1 is counted once.
 ```
 
 ### Example 2
+
+![diagram](figures/1615-2.svg)
 
 ```text
 Input: n = 5, roads = [[0,1],[0,3],[1,2],[1,3],[2,3],[2,4]]

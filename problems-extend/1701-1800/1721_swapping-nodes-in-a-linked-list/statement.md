@@ -9,6 +9,8 @@ from the beginning and the `k`th node from the end (the list is 1-indexed).
 
 ### Example 1
 
+![diagram](figures/1721-1.svg)
+
 ```text
 Input: head = [1,2,3,4,5], k = 2
 Output: [1,4,3,2,5]

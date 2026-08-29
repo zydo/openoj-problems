@@ -17,6 +17,8 @@ Return the cheapest total price for which the two groups can be connected.
 
 ### Example 1
 
+![diagram](figures/1595-1.svg)
+
 ```text
 Input: cost = [[15,96],[36,2]]
 Output: 17
@@ -26,6 +28,8 @@ Explanation: Link point 0 of the first group to point 0 of the second group
 ```
 
 ### Example 2
+
+![diagram](figures/1595-2.svg)
 
 ```text
 Input: cost = [[1,3,5],[4,1,1],[1,5,3]]

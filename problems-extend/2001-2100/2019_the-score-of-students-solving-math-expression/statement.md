@@ -23,6 +23,8 @@ Return the sum of the students' points.
 
 ### Example 1
 
+![diagram](figures/2019-1.svg)
+
 ```text
 Input: s = "7+3*1*2", answers = [20,13,42]
 Output: 7

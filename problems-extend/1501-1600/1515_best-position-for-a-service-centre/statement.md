@@ -15,9 +15,13 @@ In other words, choose a centre position `[xcentre, ycentre]` that minimizes
 the sum, over every customer `i`, of the distance between `[xcentre,
 ycentre]` and `[xi, yi]`.
 
+![diagram](figures/1515-1.svg)
+
 Answers within `10⁻⁵` of the actual value will be accepted.
 
 ### Example 1
+
+![diagram](figures/1515-2.svg)
 
 ```text
 Input: positions = [[0,1],[1,0],[1,2],[2,1]]
@@ -28,6 +32,8 @@ possible.
 ```
 
 ### Example 2
+
+![diagram](figures/1515-3.svg)
 
 ```text
 Input: positions = [[1,1],[3,3]]

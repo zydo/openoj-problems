@@ -21,6 +21,8 @@ Return the maximum number of requests that can be achieved together.
 
 ### Example 1
 
+![diagram](figures/1601-1.svg)
+
 ```text
 Input: n = 5, requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]
 Output: 5
@@ -32,6 +34,8 @@ Every building's arrivals equal its departures, so all 5 of these requests are s
 ```
 
 ### Example 2
+
+![diagram](figures/1601-2.svg)
 
 ```text
 Input: n = 3, requests = [[0,0],[1,2],[2,1]]

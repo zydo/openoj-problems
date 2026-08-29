@@ -13,6 +13,12 @@ Note: while a magic square can only contain the numbers from `1` to `9`,
 
 ### Example 1
 
+![diagram](figures/840-1.svg)
+
+![diagram](figures/840-2.svg)
+
+![diagram](figures/840-3.svg)
+
 ```text
 Input: grid = [[4,3,8,4],[9,5,1,9],[2,7,6,2]]
 Output: 1

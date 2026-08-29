@@ -16,6 +16,8 @@ divisible by 4.
 
 ### Example 1
 
+![diagram](figures/3240-1.svg)
+
 ```text
 Input: grid = [[1,0,0],[0,1,0],[0,0,1]]
 Output: 3
@@ -23,12 +25,16 @@ Output: 3
 
 ### Example 2
 
+![diagram](figures/3240-2.svg)
+
 ```text
 Input: grid = [[0,1],[0,1],[0,0]]
 Output: 2
 ```
 
 ### Example 3
+
+![diagram](figures/3240-3.svg)
 
 ```text
 Input: grid = [[1],[1]]

@@ -17,6 +17,8 @@ the values optimally.
 
 ### Example 1
 
+![diagram](figures/2285-1.svg)
+
 ```text
 Input: n = 5, roads = [[0,1],[1,2],[2,3],[0,2],[1,3],[2,4]]
 Output: 43
@@ -32,6 +34,8 @@ It can be shown that we cannot obtain a greater total importance than 43.
 ```
 
 ### Example 2
+
+![diagram](figures/2285-2.svg)
 
 ```text
 Input: n = 5, roads = [[0,3],[2,4],[1,3]]

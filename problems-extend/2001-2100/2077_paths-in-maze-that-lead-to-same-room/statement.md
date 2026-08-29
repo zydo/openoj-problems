@@ -14,6 +14,8 @@ Return the confusion score of the maze.
 
 ### Example 1
 
+![diagram](figures/2077-1.svg)
+
 ```text
 Input: n = 5, corridors = [[1,2],[5,2],[4,1],[2,4],[3,1],[3,4]]
 Output: 2
@@ -25,6 +27,8 @@ Thus, there are two different cycles of length 3.
 ```
 
 ### Example 2
+
+![diagram](figures/2077-2.svg)
 
 ```text
 Input: n = 4, corridors = [[1,2],[3,4]]

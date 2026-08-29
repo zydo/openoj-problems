@@ -6,6 +6,8 @@ Given a string containing digits from `2`-`9` inclusive, return all possible let
 
 A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
+![diagram](figures/17-1.svg)
+
 ```text
 2 abc    3 def
 4 ghi    5 jkl    6 mno

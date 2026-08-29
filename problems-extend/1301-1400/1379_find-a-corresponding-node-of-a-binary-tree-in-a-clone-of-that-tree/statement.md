@@ -19,6 +19,8 @@ at the corresponding node (serialized in level order).
 
 ### Example 1
 
+![diagram](figures/1379-1.svg)
+
 ```text
 Input: tree = [7,4,3,null,null,6,19], target = 3
 Output: [3,6,19]
@@ -28,12 +30,16 @@ with value 3.
 
 ### Example 2
 
+![diagram](figures/1379-2.svg)
+
 ```text
 Input: tree = [7], target = 7
 Output: [7]
 ```
 
 ### Example 3
+
+![diagram](figures/1379-3.svg)
 
 ```text
 Input: tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4

@@ -23,6 +23,8 @@ Return the k highest-ranked items within the price range sorted by their rank (h
 
 ### Example 1
 
+![diagram](figures/2146-1.svg)
+
 ```text
 Input: grid = [[1,2,0,1],[1,3,0,1],[0,2,5,1]], pricing = [2,5], start = [0,0], k = 3
 Output: [[0,1],[1,1],[2,1]]
@@ -38,6 +40,8 @@ Thus, the 3 highest ranked items in the price range are (0,1), (1,1), and (2,1).
 
 ### Example 2
 
+![diagram](figures/2146-2.svg)
+
 ```text
 Input: grid = [[1,2,0,1],[1,3,3,1],[0,2,5,1]], pricing = [2,3], start = [2,3], k = 2
 Output: [[2,1],[1,2]]
@@ -52,6 +56,8 @@ Thus, the 2 highest ranked items in the price range are (2,1) and (1,2).
 ```
 
 ### Example 3
+
+![diagram](figures/2146-3.svg)
 
 ```text
 Input: grid = [[1,1,1],[0,0,1],[2,3,4]], pricing = [2,3], start = [0,0], k = 3

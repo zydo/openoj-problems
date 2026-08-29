@@ -12,6 +12,8 @@ A leaf is a node with no children.
 
 ### Example 1
 
+![diagram](figures/113-1.svg)
+
 ```text
 Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
 Output: [[5,4,11,2],[5,8,4,5]]
@@ -21,6 +23,8 @@ Explanation: There are two paths whose sum equals targetSum:
 ```
 
 ### Example 2
+
+![diagram](figures/113-2.svg)
 
 ```text
 Input: root = [1,2,3], targetSum = 5

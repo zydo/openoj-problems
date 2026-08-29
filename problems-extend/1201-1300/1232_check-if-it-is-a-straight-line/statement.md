@@ -8,12 +8,16 @@ straight line in the XY plane.
 
 ### Example 1
 
+![diagram](figures/1232-1.svg)
+
 ```text
 Input: coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]
 Output: true
 ```
 
 ### Example 2
+
+![diagram](figures/1232-2.svg)
 
 ```text
 Input: coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]

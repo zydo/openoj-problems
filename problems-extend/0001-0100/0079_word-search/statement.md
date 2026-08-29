@@ -8,6 +8,8 @@ The word can be constructed from letters of sequentially adjacent cells, where a
 
 ### Example 1
 
+![diagram](figures/79-1.svg)
+
 ```text
 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
 Output: true
@@ -15,12 +17,16 @@ Output: true
 
 ### Example 2
 
+![diagram](figures/79-2.svg)
+
 ```text
 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"
 Output: true
 ```
 
 ### Example 3
+
+![diagram](figures/79-3.svg)
 
 ```text
 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"

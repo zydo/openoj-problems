@@ -15,6 +15,8 @@ Return the highest possible score you can achieve.
 
 ### Example 1
 
+![diagram](figures/861-1.svg)
+
 ```text
 Input: grid = [[0,0,1,1],[1,0,1,0],[1,1,0,0]]
 Output: 39

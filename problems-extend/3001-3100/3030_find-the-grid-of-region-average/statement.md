@@ -25,6 +25,8 @@ Return the grid result.
 
 ### Example 1
 
+![diagram](figures/3030-1.svg)
+
 ```text
 Input: image = [[5,6,7,10],[8,9,10,10],[11,12,13,10]], threshold = 3
 Output: [[9,9,9,9],[9,9,9,9],[9,9,9,9]]
@@ -34,6 +36,8 @@ Please note that the rounded-down values are used when calculating the average o
 ```
 
 ### Example 2
+
+![diagram](figures/3030-2.svg)
 
 ```text
 Input: image = [[10,20,30],[15,25,35],[20,30,40],[25,35,45]], threshold = 12

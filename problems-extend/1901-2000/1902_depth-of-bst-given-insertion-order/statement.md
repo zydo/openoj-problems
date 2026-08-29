@@ -27,6 +27,8 @@ root node down to the farthest leaf node.
 
 ### Example 1
 
+![diagram](figures/1902-1.svg)
+
 ```text
 Input: order = [2,1,4,3]
 Output: 3
@@ -35,6 +37,8 @@ Explanation: The binary search tree has a depth of 3 with path 2->3->4.
 
 ### Example 2
 
+![diagram](figures/1902-2.svg)
+
 ```text
 Input: order = [2,1,3,4]
 Output: 3
@@ -42,6 +46,8 @@ Explanation: The binary search tree has a depth of 3 with path 2->3->4.
 ```
 
 ### Example 3
+
+![diagram](figures/1902-3.svg)
 
 ```text
 Input: order = [1,2,3,4]

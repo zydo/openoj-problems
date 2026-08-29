@@ -16,6 +16,8 @@ A zero matrix is a matrix with all cells equal to 0.
 
 ### Example 1
 
+![diagram](figures/1284-1.svg)
+
 ```text
 Input: mat = [[0,0],[0,1]]
 Output: 3

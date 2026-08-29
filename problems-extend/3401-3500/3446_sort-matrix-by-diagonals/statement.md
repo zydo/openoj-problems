@@ -12,6 +12,8 @@ matrix such that:
 
 ### Example 1
 
+![diagram](figures/3446-1.svg)
+
 ```text
 Input: grid = [[1,7,3],[9,8,2],[4,5,6]]
 Output: [[8,2,3],[9,6,7],[4,5,1]]
@@ -31,6 +33,8 @@ non-decreasing order:
 ```
 
 ### Example 2
+
+![diagram](figures/3446-2.svg)
 
 ```text
 Input: grid = [[0,1],[1,2]]

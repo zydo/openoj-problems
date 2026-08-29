@@ -10,6 +10,8 @@ an equal number of 0's and 1's. Otherwise return false.
 
 ### Example 1
 
+![diagram](figures/2510-1.svg)
+
 ```text
 Input: grid = [[0,1,0,0],[0,1,0,0],[1,0,1,0]]
 Output: true
@@ -17,6 +19,8 @@ Explanation: The path colored in blue in the above diagram is a valid path becau
 ```
 
 ### Example 2
+
+![diagram](figures/2510-2.svg)
 
 ```text
 Input: grid = [[1,1,0],[0,0,1],[1,0,0]]

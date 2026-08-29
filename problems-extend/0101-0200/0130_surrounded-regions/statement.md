@@ -20,6 +20,8 @@ Output: [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]
 Explanation: The bottom region is not captured because it is on the edge of the board and cannot be surrounded.
 ```
 
+![diagram](figures/130-1.svg)
+
 ### Example 2
 
 ```text

@@ -13,6 +13,8 @@ Return `true` if your path crosses itself, or `false` if it does not.
 
 ### Example 1
 
+![diagram](figures/335-1.svg)
+
 ```text
 Input: distance = [2,1,1,2]
 Output: true
@@ -21,6 +23,8 @@ Explanation: The path crosses itself at the point (0, 1).
 
 ### Example 2
 
+![diagram](figures/335-2.svg)
+
 ```text
 Input: distance = [1,2,3,4]
 Output: false
@@ -28,6 +32,8 @@ Explanation: The path does not cross itself at any point.
 ```
 
 ### Example 3
+
+![diagram](figures/335-3.svg)
 
 ```text
 Input: distance = [1,1,1,2,1]

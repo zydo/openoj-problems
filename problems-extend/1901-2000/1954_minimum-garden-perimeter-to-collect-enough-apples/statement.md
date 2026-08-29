@@ -19,6 +19,8 @@ The value of `|x|` is defined as:
 
 ### Example 1
 
+![diagram](figures/1954-1.svg)
+
 ```text
 Input: neededApples = 1
 Output: 8

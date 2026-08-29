@@ -14,6 +14,8 @@ first.
 
 ### Example 1
 
+![diagram](figures/272-1.svg)
+
 ```text
 Input: root = [4,2,5,1,3], target = 3.714286, k = 2
 Output: [4,3]

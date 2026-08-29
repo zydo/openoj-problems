@@ -16,6 +16,8 @@ the island.
 
 ### Example 1
 
+![diagram](figures/463-1.svg)
+
 ```text
 Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 Output: 16

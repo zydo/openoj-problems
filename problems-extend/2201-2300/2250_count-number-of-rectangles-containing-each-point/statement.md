@@ -19,6 +19,8 @@ also considered to be contained by that rectangle.
 
 ### Example 1
 
+![diagram](figures/2250-1.svg)
+
 ```
 Input: rectangles = [[1,2],[2,3],[2,5]], points = [[2,1],[1,4]]
 Output: [2,1]
@@ -32,6 +34,8 @@ Therefore, we return [2, 1].
 ```
 
 ### Example 2
+
+![diagram](figures/2250-2.svg)
 
 ```
 Input: rectangles = [[1,1],[2,2],[3,3]], points = [[1,3],[1,1]]

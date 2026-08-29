@@ -23,6 +23,8 @@ array. You may return the answer in any order.
 
 ### Example 1
 
+![diagram](figures/1992-1.svg)
+
 ```text
 Input: land = [[1,0,0],[0,1,1],[0,1,1]]
 Output: [[0,0,0,0],[1,1,2,2]]
@@ -33,6 +35,8 @@ The second group has a top left corner at land[1][1] and a bottom right corner a
 
 ### Example 2
 
+![diagram](figures/1992-2.svg)
+
 ```text
 Input: land = [[1,1],[1,1]]
 Output: [[0,0,1,1]]
@@ -41,6 +45,8 @@ The first group has a top left corner at land[0][0] and a bottom right corner at
 ```
 
 ### Example 3
+
+![diagram](figures/1992-3.svg)
 
 ```text
 Input: land = [[0]]

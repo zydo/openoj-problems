@@ -21,6 +21,8 @@ mapped in cannot be changed.
 
 ### Example 1
 
+![diagram](figures/2268-1.svg)
+
 ```text
 Input: s = "apple"
 Output: 5
@@ -34,6 +36,8 @@ A total of 5 button presses are needed, so return 5.
 ```
 
 ### Example 2
+
+![diagram](figures/2268-2.svg)
 
 ```text
 Input: s = "abcdefghijkl"

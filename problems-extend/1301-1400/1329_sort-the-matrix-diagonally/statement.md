@@ -8,6 +8,8 @@ Given an m x n matrix mat of integers, sort each matrix diagonal in ascending or
 
 ### Example 1
 
+![diagram](figures/1329-1.svg)
+
 ```text
 Input: mat = [[3,3,1,1],[2,2,1,2],[1,1,1,2]]
 Output: [[1,1,1,1],[1,2,2,2],[1,2,3,3]]

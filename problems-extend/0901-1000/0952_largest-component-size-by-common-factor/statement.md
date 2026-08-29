@@ -11,6 +11,8 @@ Return the size of the largest connected component in this graph.
 
 ### Example 1
 
+![diagram](figures/952-1.svg)
+
 ```text
 Input: nums = [4,6,15,35]
 Output: 4
@@ -21,6 +23,8 @@ into a single component.
 
 ### Example 2
 
+![diagram](figures/952-2.svg)
+
 ```text
 Input: nums = [20,50,9,63]
 Output: 2
@@ -30,6 +34,8 @@ component holds 2 nodes.
 ```
 
 ### Example 3
+
+![diagram](figures/952-3.svg)
 
 ```text
 Input: nums = [2,3,6,7,4,12,21,39]

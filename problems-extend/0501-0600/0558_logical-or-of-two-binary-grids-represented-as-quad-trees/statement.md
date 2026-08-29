@@ -44,6 +44,8 @@ steps:
   the photo.
 - Recurse for each of the children with the proper sub-grid.
 
+![diagram](figures/558-1.svg)
+
 If you want to know more about the Quad-Tree, you can refer to the wiki.
 
 Quad-Tree format:
@@ -61,6 +63,10 @@ as 0.
 
 ### Example 1
 
+![diagram](figures/558-2.svg)
+
+![diagram](figures/558-3.svg)
+
 ```text
 Input: quadTree1 = [[0,1],[1,1],[1,1],[1,0],[1,0]], quadTree2 = [[0,1],[1,1],[0,1],[1,1],[1,0],null,null,null,null,[1,0],[1,0],[1,1],[1,1]]
 Output: [[0,0],[1,1],[1,1],[1,1],[1,0]]
@@ -68,6 +74,8 @@ Explanation: quadTree1 and quadTree2 are shown above. You can see the binary mat
 If we apply logical bitwise OR on the two binary matrices we get the binary matrix below which is represented by the result Quad-Tree.
 Notice that the binary matrices shown are only for illustration, you don't have to construct the binary matrix to get the result tree.
 ```
+
+![diagram](figures/558-4.svg)
 
 ### Example 2
 

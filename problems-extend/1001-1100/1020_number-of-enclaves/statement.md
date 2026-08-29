@@ -13,6 +13,8 @@ boundary of the grid in any number of moves.
 
 ### Example 1
 
+![diagram](figures/1020-1.svg)
+
 ```text
 Input: grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]
 Output: 3
@@ -21,6 +23,8 @@ not enclosed because its on the boundary.
 ```
 
 ### Example 2
+
+![diagram](figures/1020-2.svg)
 
 ```text
 Input: grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]

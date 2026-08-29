@@ -19,7 +19,11 @@ one square horizontally, or two squares horizontally and one square
 vertically. The figure below illustrates all the possible eight moves of a
 knight from some cell.
 
+![diagram](figures/2596-1.svg)
+
 ### Example 1
+
+![diagram](figures/2596-2.svg)
 
 ```text
 Input: grid = [[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]
@@ -28,6 +32,8 @@ Explanation: The above diagram represents the grid. It can be shown that it is a
 ```
 
 ### Example 2
+
+![diagram](figures/2596-3.svg)
 
 ```text
 Input: grid = [[0,3,6],[5,8,1],[2,7,4]]

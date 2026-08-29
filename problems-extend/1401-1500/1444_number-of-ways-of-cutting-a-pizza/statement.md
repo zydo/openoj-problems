@@ -19,6 +19,8 @@ return this modulo `10⁹ + 7`.
 
 ### Example 1
 
+![diagram](figures/1444-1.svg)
+
 ```text
 Input: pizza = ["A..","AAA","..."], k = 3
 Output: 3

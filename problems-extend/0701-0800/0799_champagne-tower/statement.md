@@ -20,6 +20,8 @@ two glasses are full, for 3 full glasses in total. After four cups of
 champagne are poured, the third row has its middle glass half full and its
 two outside glasses a quarter full.
 
+![diagram](figures/799-1.svg)
+
 Now after pouring a non-negative amount of champagne, return how full the
 `j`-th glass in the `i`-th row is (both `i` and `j` are 0-indexed).
 

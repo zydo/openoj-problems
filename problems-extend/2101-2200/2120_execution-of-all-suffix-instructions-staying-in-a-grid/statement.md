@@ -15,6 +15,8 @@ Return an array answer of length m where answer[i] is the number of instructions
 
 ### Example 1
 
+![diagram](figures/2120-1.svg)
+
 ```text
 Input: n = 3, startPos = [0,1], s = "RRDDLU"
 Output: [1,5,4,3,1,0]
@@ -29,6 +31,8 @@ Explanation: Starting from startPos and beginning execution from the ith instruc
 
 ### Example 2
 
+![diagram](figures/2120-2.svg)
+
 ```text
 Input: n = 2, startPos = [1,1], s = "LURD"
 Output: [4,1,0,0]
@@ -40,6 +44,8 @@ Explanation:
 ```
 
 ### Example 3
+
+![diagram](figures/2120-3.svg)
 
 ```text
 Input: n = 1, startPos = [0,0], s = "LRUD"

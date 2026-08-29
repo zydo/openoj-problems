@@ -13,12 +13,16 @@ vertex, and that edges otherwise don't intersect each other.
 
 ### Example 1
 
+![diagram](figures/469-1.svg)
+
 ```text
 Input: points = [[0,0],[0,5],[5,5],[5,0]]
 Output: true
 ```
 
 ### Example 2
+
+![diagram](figures/469-2.svg)
 
 ```text
 Input: points = [[0,0],[0,10],[10,10],[10,0],[5,5]]

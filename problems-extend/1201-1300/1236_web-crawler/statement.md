@@ -21,6 +21,8 @@ specified. For example, the urls `http://leetcode.com/problems` and
 `http://example.org/test` and `http://example.com/abc` are not under the same
 hostname.
 
+![diagram](figures/1236-1.svg)
+
 The `HtmlParser` interface is defined as such:
 
 ```text
@@ -40,6 +42,8 @@ For example, `"http://news.yahoo.com"`, and `"http://news.yahoo.com/"` are
 different urls.
 
 ### Example 1
+
+![diagram](figures/1236-2.svg)
 
 ```text
 Input:
@@ -61,6 +65,8 @@ Output: [
 ```
 
 ### Example 2
+
+![diagram](figures/1236-3.svg)
 
 ```text
 Input:

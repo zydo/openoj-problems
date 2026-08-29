@@ -10,6 +10,8 @@ where the same row and same column don't have any other black pixels.
 
 ### Example 1
 
+![diagram](figures/531-1.svg)
+
 ```text
 Input: picture = [["W","W","B"],["W","B","W"],["B","W","W"]]
 Output: 3
@@ -17,6 +19,8 @@ Explanation: All the three 'B's are black lonely pixels.
 ```
 
 ### Example 2
+
+![diagram](figures/531-2.svg)
 
 ```text
 Input: picture = [["B","B","B"],["B","B","W"],["B","B","B"]]

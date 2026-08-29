@@ -23,6 +23,8 @@ Here are the rules of Tic-Tac-Toe:
 
 ### Example 1
 
+![diagram](figures/794-1.svg)
+
 ```text
 Input: board = ["O  ","   ","   "]
 Output: false
@@ -31,6 +33,8 @@ Explanation: The first player always plays "X".
 
 ### Example 2
 
+![diagram](figures/794-2.svg)
+
 ```text
 Input: board = ["XOX"," X ","   "]
 Output: false
@@ -38,6 +42,8 @@ Explanation: Players take turns making moves.
 ```
 
 ### Example 3
+
+![diagram](figures/794-3.svg)
 
 ```text
 Input: board = ["XOX","O O","XOX"]

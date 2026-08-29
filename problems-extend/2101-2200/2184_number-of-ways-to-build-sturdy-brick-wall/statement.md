@@ -17,6 +17,8 @@ very large, return it modulo `10^9 + 7`.
 
 ### Example 1
 
+![diagram](figures/2184-1.svg)
+
 ```text
 Input: height = 2, width = 3, bricks = [1,2]
 Output: 2

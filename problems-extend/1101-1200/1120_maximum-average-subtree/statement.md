@@ -13,6 +13,8 @@ of nodes.
 
 ### Example 1
 
+![diagram](figures/1120-1.svg)
+
 ```text
 Input: root = [5,6,1]
 Output: 6.00000

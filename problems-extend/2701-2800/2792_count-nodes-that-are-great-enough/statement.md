@@ -15,6 +15,8 @@ of u.
 
 ### Example 1
 
+![diagram](figures/2792-1.svg)
+
 ```text
 Input: root = [7,6,5,4,3,2,1], k = 2
 Output: 3
@@ -27,6 +29,8 @@ It can be shown that other nodes are not great enough.
 
 ### Example 2
 
+![diagram](figures/2792-2.svg)
+
 ```text
 Input: root = [1,2,3], k = 1
 Output: 0
@@ -37,6 +41,8 @@ The values in the subtree of node 3: {3}. Since node.val == 3, there are no node
 ```
 
 ### Example 3
+
+![diagram](figures/2792-3.svg)
 
 ```text
 Input: root = [3,2,2], k = 2

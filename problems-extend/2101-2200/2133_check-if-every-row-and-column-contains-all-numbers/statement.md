@@ -8,6 +8,8 @@ Given an n x n integer matrix matrix, return true if the matrix is valid. Otherw
 
 ### Example 1
 
+![diagram](figures/2133-1.svg)
+
 ```text
 Input: matrix = [[1,2,3],[3,1,2],[2,3,1]]
 Output: true
@@ -16,6 +18,8 @@ Hence, we return true.
 ```
 
 ### Example 2
+
+![diagram](figures/2133-2.svg)
 
 ```text
 Input: matrix = [[1,1,1],[1,2,3],[1,2,3]]

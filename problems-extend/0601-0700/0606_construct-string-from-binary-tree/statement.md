@@ -33,6 +33,8 @@ right child to reflect the tree's structure accurately.
 
 ### Example 1
 
+![diagram](figures/606-1.svg)
+
 ```text
 Input: root = [1,2,3,4]
 Output: "1(2(4))(3)"
@@ -41,6 +43,8 @@ all the empty parenthesis pairs. And it will be "1(2(4))(3)".
 ```
 
 ### Example 2
+
+![diagram](figures/606-2.svg)
 
 ```text
 Input: root = [1,2,3,null,4]

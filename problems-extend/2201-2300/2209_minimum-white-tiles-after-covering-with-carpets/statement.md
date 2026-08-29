@@ -18,6 +18,8 @@ Return the minimum number of white tiles still visible.
 
 ### Example 1
 
+![diagram](figures/2209-1.svg)
+
 ```text
 Input: floor = "10110101", numCarpets = 2, carpetLen = 2
 Output: 2
@@ -28,6 +30,8 @@ white tiles visible.
 ```
 
 ### Example 2
+
+![diagram](figures/2209-2.svg)
 
 ```text
 Input: floor = "11111", numCarpets = 2, carpetLen = 3

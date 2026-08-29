@@ -16,6 +16,8 @@ integer.
 
 ### Example 1
 
+![diagram](figures/662-1.svg)
+
 ```text
 Input: root = [1,3,2,5,3,null,9]
 Output: 4
@@ -24,6 +26,8 @@ Explanation: The maximum width exists in the third level with length 4 (5,3,null
 
 ### Example 2
 
+![diagram](figures/662-2.svg)
+
 ```text
 Input: root = [1,3,2,5,null,null,9,6,null,7]
 Output: 7
@@ -31,6 +35,8 @@ Explanation: The maximum width exists in the fourth level with length 7 (6,null,
 ```
 
 ### Example 3
+
+![diagram](figures/662-3.svg)
 
 ```text
 Input: root = [1,3,2,5]

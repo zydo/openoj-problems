@@ -14,6 +14,8 @@ Given a linked list `head`, return an array of length `2` containing `[minDistan
 
 ### Example 1
 
+![diagram](figures/2058-1.svg)
+
 ```text
 Input: head = [3,1]
 Output: [-1,-1]
@@ -21,6 +23,8 @@ Explanation: There are no critical points in [3,1].
 ```
 
 ### Example 2
+
+![diagram](figures/2058-2.svg)
 
 ```text
 Input: head = [5,3,1,2,5,1,2]
@@ -34,6 +38,8 @@ The maximum distance is between the third and the sixth node. maxDistance = 6 - 
 ```
 
 ### Example 3
+
+![diagram](figures/2058-3.svg)
 
 ```text
 Input: head = [1,3,2,2,3,2,2,2,7]

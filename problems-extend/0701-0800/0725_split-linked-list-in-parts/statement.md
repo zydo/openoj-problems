@@ -18,6 +18,8 @@ sequence of its values and an empty part as `[]`.
 
 ### Example 1
 
+![diagram](figures/725-1.svg)
+
 ```text
 Input: head = [1,2,3], k = 5
 Output: [[1],[2],[3],[],[]]
@@ -26,6 +28,8 @@ are empty.
 ```
 
 ### Example 2
+
+![diagram](figures/725-2.svg)
 
 ```text
 Input: head = [1,2,3,4,5,6,7,8,9,10], k = 3

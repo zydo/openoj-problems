@@ -8,6 +8,8 @@ integers `voyage`, the desired preorder traversal of the tree.
 
 Any node in the tree can be flipped by swapping its left and right subtrees.
 
+![diagram](figures/971-1.svg)
+
 Flip the smallest number of nodes so that the preorder traversal of the tree
 matches `voyage`, and return the values of the flipped nodes in the order they
 appear in the preorder traversal of the resulting tree. If it is impossible
@@ -15,6 +17,8 @@ to flip the nodes so that the preorder traversal matches `voyage`, return
 `[-1]`.
 
 ### Example 1
+
+![diagram](figures/971-2.svg)
 
 ```text
 Input: root = [1,2], voyage = [2,1]
@@ -25,6 +29,8 @@ voyage.
 
 ### Example 2
 
+![diagram](figures/971-3.svg)
+
 ```text
 Input: root = [1,2,3], voyage = [1,3,2]
 Output: [1]
@@ -33,6 +39,8 @@ matches voyage.
 ```
 
 ### Example 3
+
+![diagram](figures/971-4.svg)
 
 ```text
 Input: root = [1,2,3], voyage = [1,2,3]

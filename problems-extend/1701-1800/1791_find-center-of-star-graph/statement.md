@@ -12,6 +12,8 @@ center of the given star graph.
 
 ### Example 1
 
+![diagram](figures/1791-1.svg)
+
 ```text
 Input: edges = [[1,2],[2,3],[4,2]]
 Output: 2

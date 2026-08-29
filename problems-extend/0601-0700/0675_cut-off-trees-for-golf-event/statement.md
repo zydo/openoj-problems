@@ -18,6 +18,8 @@ Note: The input is generated such that no two trees have the same height, and th
 
 ### Example 1
 
+![diagram](figures/675-1.svg)
+
 ```text
 Input: forest = [[1,2,3],[0,0,4],[7,6,5]]
 Output: 6
@@ -25,6 +27,8 @@ Explanation: Following the path above allows you to cut off the trees from short
 ```
 
 ### Example 2
+
+![diagram](figures/675-2.svg)
 
 ```text
 Input: forest = [[1,2,3],[0,0,0],[7,6,5]]

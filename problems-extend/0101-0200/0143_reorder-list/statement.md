@@ -16,12 +16,16 @@ On LeetCode the function returns nothing and the judge inspects the mutated list
 
 ### Example 1
 
+![diagram](figures/143-1.svg)
+
 ```text
 Input: head = [1,2,3,4]
 Output: [1,4,2,3]
 ```
 
 ### Example 2
+
+![diagram](figures/143-2.svg)
 
 ```text
 Input: head = [1,2,3,4,5]

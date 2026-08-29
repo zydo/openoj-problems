@@ -10,6 +10,8 @@ Return the minimum total cost to go from city 0 to city n - 1, or -1 if it is no
 
 ### Example 1
 
+![diagram](figures/2093-1.svg)
+
 ```text
 Input: n = 5, highways = [[0,1,4],[2,1,3],[1,4,11],[3,2,3],[3,4,2]], discounts = 1
 Output: 9
@@ -20,6 +22,8 @@ The minimum cost to go from 0 to 4 is 4 + 5 = 9.
 ```
 
 ### Example 2
+
+![diagram](figures/2093-2.svg)
 
 ```text
 Input: n = 4, highways = [[1,3,17],[1,2,7],[3,2,5],[0,1,6],[3,0,20]], discounts = 20
@@ -32,6 +36,8 @@ The minimum cost to go from 0 to 3 is 3 + 3 + 2 = 8.
 ```
 
 ### Example 3
+
+![diagram](figures/2093-3.svg)
 
 ```text
 Input: n = 4, highways = [[0,1,3],[2,3,2]], discounts = 0

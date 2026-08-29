@@ -19,6 +19,8 @@ the friends and the meeting point.
 
 ### Example 1
 
+![diagram](figures/317-1.svg)
+
 ```text
 Input: grid = [[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]
 Output: 7

@@ -10,6 +10,8 @@ A subtree of a node `node` is `node` plus every node that is a descendant of
 
 ### Example 1
 
+![diagram](figures/814-1.svg)
+
 ```text
 Input: root = [1,null,0,0,1]
 Output: [1,null,0,null,1]
@@ -19,12 +21,16 @@ in it, so it is the only node removed.
 
 ### Example 2
 
+![diagram](figures/814-2.svg)
+
 ```text
 Input: root = [1,0,1,0,0,0,1]
 Output: [1,null,1,null,1]
 ```
 
 ### Example 3
+
+![diagram](figures/814-3.svg)
 
 ```text
 Input: root = [1,1,0,1,1,0,1,0]

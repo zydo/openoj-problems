@@ -22,6 +22,8 @@ value); an empty array `[]` means there is no LCA, i.e. `null`.
 
 ### Example 1
 
+![diagram](figures/1644-1.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
 Output: [3,5,1,6,2,0,8,null,null,7,4]
@@ -32,6 +34,8 @@ subtree.
 
 ### Example 2
 
+![diagram](figures/1644-2.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
 Output: [5,6,2,null,null,7,4]
@@ -41,6 +45,8 @@ subtree rooted there.
 ```
 
 ### Example 3
+
+![diagram](figures/1644-3.svg)
 
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 10

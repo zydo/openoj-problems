@@ -17,6 +17,8 @@ Note that node `0` will not be a restricted node.
 
 ### Example 1
 
+![diagram](figures/2368-1.svg)
+
 ```text
 Input: n = 7, edges = [[0,1],[1,2],[3,1],[4,0],[0,5],[5,6]], restricted = [4,5]
 Output: 4
@@ -26,6 +28,8 @@ without visiting a restricted node.
 ```
 
 ### Example 2
+
+![diagram](figures/2368-2.svg)
 
 ```text
 Input: n = 7, edges = [[0,1],[0,2],[0,5],[0,4],[3,2],[6,5]], restricted = [4,2,1]
@@ -61,4 +65,3 @@ not revisit nodes that have been visited.
 ### Hint 3
 
 Keep count of how many nodes are visited in total.
-

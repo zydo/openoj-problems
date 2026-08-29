@@ -28,6 +28,8 @@ grid given that in one operation you can change the value at any cell to 0,
 
 ### Example 1
 
+![diagram](figures/3071-1.svg)
+
 ```text
 Input: grid = [[1,2,2],[1,1,0],[0,1,0]]
 Output: 3
@@ -40,6 +42,8 @@ on the grid.
 ```
 
 ### Example 2
+
+![diagram](figures/3071-2.svg)
 
 ```text
 Input: grid = [[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]

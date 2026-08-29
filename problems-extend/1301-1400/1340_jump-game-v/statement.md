@@ -15,6 +15,8 @@ Notice that you can not jump outside of the array at any time.
 
 ### Example 1
 
+![diagram](figures/1340-1.svg)
+
 ```text
 Input: arr = [6,4,14,6,8,13,9,7,10,6,12], d = 2
 Output: 4

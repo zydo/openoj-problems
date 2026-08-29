@@ -11,6 +11,8 @@ rectangular region.
 
 ### Example 1
 
+![diagram](figures/391-1.svg)
+
 ```text
 Input: rectangles = [[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
 Output: true
@@ -20,6 +22,8 @@ region.
 
 ### Example 2
 
+![diagram](figures/391-2.svg)
+
 ```text
 Input: rectangles = [[1,1,2,3],[1,3,2,4],[3,1,4,2],[3,2,4,4]]
 Output: false
@@ -27,6 +31,8 @@ Explanation: Because there is a gap between the two rectangular regions.
 ```
 
 ### Example 3
+
+![diagram](figures/391-3.svg)
 
 ```text
 Input: rectangles = [[1,1,3,3],[3,1,4,2],[1,3,2,4],[2,2,4,4]]

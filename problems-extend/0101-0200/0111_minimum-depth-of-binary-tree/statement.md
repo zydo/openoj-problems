@@ -11,6 +11,8 @@ Note: A leaf is a node with no children.
 
 ### Example 1
 
+![diagram](figures/111-1.svg)
+
 ```text
 Input: root = [3,9,20,null,null,15,7]
 Output: 2

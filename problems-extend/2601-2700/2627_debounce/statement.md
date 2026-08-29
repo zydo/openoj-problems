@@ -19,6 +19,8 @@ would be executed at 150ms.
 If instead t = 35ms, The 1st call would be cancelled, the 2nd would be
 executed at 95ms, and the 3rd would be executed at 135ms.
 
+![diagram](figures/2627-1.svg)
+
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. It is also judged on a
 deterministic virtual clock instead of real timers: your submission

@@ -10,6 +10,8 @@ to the other.
 
 ### Example 1
 
+![diagram](figures/1740-1.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 0
 Output: 3
@@ -18,6 +20,8 @@ Explanation: There are 3 edges between 5 and 0: 5-3-1-0.
 
 ### Example 2
 
+![diagram](figures/1740-2.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 7
 Output: 2
@@ -25,6 +29,8 @@ Explanation: There are 2 edges between 5 and 7: 5-2-7.
 ```
 
 ### Example 3
+
+![diagram](figures/1740-3.svg)
 
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 5

@@ -10,6 +10,8 @@ On LeetCode the tied values may come back in any order; this judge compares arra
 
 ### Example 1
 
+![diagram](figures/508-1.svg)
+
 ```text
 Input: root = [5,2,-3]
 Output: [-3,2,4]
@@ -19,6 +21,8 @@ judge's exact comparison pins them to ascending order.
 ```
 
 ### Example 2
+
+![diagram](figures/508-2.svg)
 
 ```text
 Input: root = [5,2,-5]

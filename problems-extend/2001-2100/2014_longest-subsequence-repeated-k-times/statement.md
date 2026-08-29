@@ -22,6 +22,8 @@ is no such subsequence, return an empty string.
 
 ### Example 1
 
+![diagram](figures/2014-1.svg)
+
 ```text
 Input: s = "letsleetcode", k = 2
 Output: "let"

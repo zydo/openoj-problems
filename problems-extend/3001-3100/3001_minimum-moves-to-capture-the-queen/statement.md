@@ -25,6 +25,8 @@ Note that:
 
 ### Example 1
 
+![diagram](figures/3001-1.svg)
+
 ```text
 Input: a = 1, b = 1, c = 8, d = 8, e = 2, f = 3
 Output: 2
@@ -33,6 +35,8 @@ It is impossible to capture the black queen in less than two moves since it is n
 ```
 
 ### Example 2
+
+![diagram](figures/3001-2.svg)
 
 ```text
 Input: a = 5, b = 3, c = 3, d = 4, e = 5, f = 2

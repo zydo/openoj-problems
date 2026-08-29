@@ -11,6 +11,8 @@ elements in row `i` and column `j` are `0` (rows and columns are
 
 ### Example 1
 
+![diagram](figures/1582-1.svg)
+
 ```text
 Input: mat = [[1,0,0],[0,0,1],[1,0,0]]
 Output: 1
@@ -19,6 +21,8 @@ other elements in row 1 and column 2 are 0.
 ```
 
 ### Example 2
+
+![diagram](figures/1582-2.svg)
 
 ```text
 Input: mat = [[1,0,0],[0,1,0],[0,0,1]]

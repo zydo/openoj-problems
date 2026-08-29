@@ -14,6 +14,8 @@ Return `true` if you can reach the final cell with a health value of 1 or more, 
 
 ### Example 1
 
+![diagram](figures/3286-1.svg)
+
 ```text
 Input: grid = [[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]], health = 1
 Output: true
@@ -22,6 +24,8 @@ Explanation: The final cell can be reached safely by walking along the gray cell
 
 ### Example 2
 
+![diagram](figures/3286-2.svg)
+
 ```text
 Input: grid = [[0,1,1,0,0,0],[1,0,1,0,0,0],[0,1,1,1,0,1],[0,0,1,0,1,0]], health = 3
 Output: false
@@ -29,6 +33,8 @@ Explanation: A minimum of 4 health points is needed to reach the final cell safe
 ```
 
 ### Example 3
+
+![diagram](figures/3286-3.svg)
 
 ```text
 Input: grid = [[1,1,1],[1,0,1],[1,1,1]], health = 5

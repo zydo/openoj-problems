@@ -12,6 +12,8 @@ side's list following the same rule recursively.
 
 ### Example 1
 
+![diagram](figures/95-1.svg)
+
 ```text
 Input: n = 3
 Output: [[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]

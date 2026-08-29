@@ -26,6 +26,8 @@ Note that there can be multiple edges between the same two nodes.
 
 ### Example 1
 
+![diagram](figures/1782-1.svg)
+
 ```text
 Input: n = 4, edges = [[1,2],[2,4],[1,3],[2,3],[2,1]], queries = [2,3]
 Output: [6,5]

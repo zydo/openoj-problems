@@ -21,6 +21,8 @@ Return the constructed matrix `res`.
 
 ### Example 1
 
+![diagram](figures/655-1.svg)
+
 ```text
 Input: root = [1,2]
 Output:
@@ -29,6 +31,8 @@ Output:
 ```
 
 ### Example 2
+
+![diagram](figures/655-2.svg)
 
 ```text
 Input: root = [1,2,3,null,4]

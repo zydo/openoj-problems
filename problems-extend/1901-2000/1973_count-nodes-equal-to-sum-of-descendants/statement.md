@@ -11,6 +11,8 @@ descendants.
 
 ### Example 1
 
+![diagram](figures/1973-1.svg)
+
 ```text
 Input: root = [10,3,4,2,1]
 Output: 2
@@ -21,6 +23,8 @@ For the node with value 3: The sum of its descendants is 2+1 = 3.
 
 ### Example 2
 
+![diagram](figures/1973-2.svg)
+
 ```text
 Input: root = [2,3,null,2,null]
 Output: 0
@@ -29,6 +33,8 @@ No node has a value that is equal to the sum of its descendants.
 ```
 
 ### Example 3
+
+![diagram](figures/1973-3.svg)
 
 ```text
 Input: root = [0]

@@ -16,6 +16,8 @@ Return an array answer, where answer[j] is the answer to the jth query.
 
 ### Example 1
 
+![diagram](figures/1828-1.svg)
+
 ```text
 Input: points = [[1,3],[3,3],[5,3],[2,2]], queries = [[2,3,1],[4,3,1],[1,1,2]]
 Output: [3,2,2]
@@ -24,6 +26,8 @@ queries[0] is the green circle, queries[1] is the red circle, and queries[2] is 
 ```
 
 ### Example 2
+
+![diagram](figures/1828-2.svg)
 
 ```text
 Input: points = [[1,1],[2,2],[3,3],[4,4],[5,5]], queries = [[1,2,2],[2,2,2],[4,3,2],[4,3,3]]

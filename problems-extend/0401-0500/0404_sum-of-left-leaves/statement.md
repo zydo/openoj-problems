@@ -9,6 +9,8 @@ of another node.
 
 ### Example 1
 
+![diagram](figures/404-1.svg)
+
 ```text
 Input: root = [3,9,20,null,null,15,7]
 Output: 24

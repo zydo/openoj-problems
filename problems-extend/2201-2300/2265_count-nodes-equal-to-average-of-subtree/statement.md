@@ -13,6 +13,8 @@ Note:
 
 ### Example 1
 
+![diagram](figures/2265-1.svg)
+
 ```
 Input: root = [4,8,5,0,1,null,6]
 Output: 5
@@ -20,6 +22,8 @@ Explanation: For the node with value 4: The average of its subtree is (4 + 8 + 5
 ```
 
 ### Example 2
+
+![diagram](figures/2265-2.svg)
 
 ```
 Input: root = [1]

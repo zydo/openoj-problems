@@ -23,6 +23,8 @@ by the second robot.
 
 ### Example 1
 
+![diagram](figures/2017-1.svg)
+
 ```text
 Input: grid = [[2,5,4],[1,5,1]]
 Output: 4
@@ -33,6 +35,8 @@ The second robot will collect 0 + 0 + 4 + 0 = 4 points.
 
 ### Example 2
 
+![diagram](figures/2017-2.svg)
+
 ```text
 Input: grid = [[3,3,1],[8,5,2]]
 Output: 4
@@ -42,6 +46,8 @@ The second robot will collect 0 + 3 + 1 + 0 = 4 points.
 ```
 
 ### Example 3
+
+![diagram](figures/2017-3.svg)
 
 ```text
 Input: grid = [[1,3,1,15],[1,3,3,1]]

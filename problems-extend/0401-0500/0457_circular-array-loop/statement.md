@@ -19,6 +19,8 @@ Return `true` if there is a cycle in `nums`, or `false` otherwise.
 
 ### Example 1
 
+![diagram](figures/457-1.svg)
+
 ```text
 Input: nums = [2,-1,1,2,2]
 Output: true
@@ -28,6 +30,8 @@ We can see the cycle 0 --> 2 --> 3 --> 0 --> ..., and all of its nodes are white
 
 ### Example 2
 
+![diagram](figures/457-2.svg)
+
 ```text
 Input: nums = [-1,-2,-3,-4,-5,6]
 Output: false
@@ -36,6 +40,8 @@ The only cycle is of size 1, so we return false.
 ```
 
 ### Example 3
+
+![diagram](figures/457-3.svg)
 
 ```text
 Input: nums = [1,-1,5,1,4]

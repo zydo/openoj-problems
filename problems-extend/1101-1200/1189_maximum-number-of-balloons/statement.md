@@ -10,12 +10,16 @@ number of instances that can be formed.
 
 ### Example 1
 
+![diagram](figures/1189-1.svg)
+
 ```text
 Input: text = "nlaebolko"
 Output: 1
 ```
 
 ### Example 2
+
+![diagram](figures/1189-2.svg)
 
 ```text
 Input: text = "loonbalxballpoon"

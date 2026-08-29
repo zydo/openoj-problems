@@ -21,6 +21,8 @@ Two values `val1` and `val2` are coprime if `gcd(val1, val2) == 1` where
 
 ### Example 1
 
+![diagram](figures/2584-1.svg)
+
 ```text
 Input: nums = [4,7,8,15,3,5]
 Output: 2
@@ -30,6 +32,8 @@ The only valid split is at index 2.
 ```
 
 ### Example 2
+
+![diagram](figures/2584-2.svg)
 
 ```text
 Input: nums = [4,7,15,8,3,5]

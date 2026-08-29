@@ -17,6 +17,8 @@ Return true if you can make s a valid parentheses string. Otherwise, return fals
 
 ### Example 1
 
+![diagram](figures/2116-1.svg)
+
 ```text
 Input: s = "))()))", locked = "010100"
 Output: true

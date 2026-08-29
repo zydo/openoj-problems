@@ -25,6 +25,8 @@ and then by rows.
 
 ### Example 1
 
+![diagram](figures/2194-1.svg)
+
 ```text
 Input: s = "K1:L2"
 Output: ["K1","K2","L1","L2"]
@@ -34,6 +36,8 @@ column first and then by row.
 ```
 
 ### Example 2
+
+![diagram](figures/2194-2.svg)
 
 ```text
 Input: s = "A1:F1"

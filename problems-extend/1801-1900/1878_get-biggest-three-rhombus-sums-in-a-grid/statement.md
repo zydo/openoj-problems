@@ -15,7 +15,11 @@ rhombus sum is that cell's value alone.
 Return the biggest three distinct rhombus sums in the grid in descending
 order. If there are less than three distinct values, return all of them.
 
+![diagram](figures/1878-1.svg)
+
 ### Example 1
+
+![diagram](figures/1878-2.svg)
 
 ```text
 Input: grid = [[3,4,5,1,3],[3,3,4,2,3],[20,30,200,40,10],
@@ -29,6 +33,8 @@ of the rotated squares drawn around the center of the grid:
 ```
 
 ### Example 2
+
+![diagram](figures/1878-3.svg)
 
 ```text
 Input: grid = [[1,2,3],[4,5,6],[7,8,9]]

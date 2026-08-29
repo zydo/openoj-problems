@@ -19,6 +19,8 @@ On LeetCode you are handed only the node to delete — not the head — and the 
 
 ### Example 1
 
+![diagram](figures/237-1.svg)
+
 ```text
 Input: head = [4,5,1,9], node = 5
 Output: [4,1,9]
@@ -26,6 +28,8 @@ Explanation: You are given the second node with value 5, the linked list should 
 ```
 
 ### Example 2
+
+![diagram](figures/237-2.svg)
 
 ```text
 Input: head = [4,5,1,9], node = 1

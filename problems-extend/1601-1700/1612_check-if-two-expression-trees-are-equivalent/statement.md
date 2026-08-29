@@ -33,6 +33,8 @@ Output: true
 
 ### Example 2
 
+![diagram](figures/1612-1.svg)
+
 ```text
 Input: root1 = [-1,0,-1,null,null,1,2], root2 = [-1,-1,0,1,2]
 Output: true
@@ -41,6 +43,8 @@ evaluate to the same sum for every assignment of a, b, c.
 ```
 
 ### Example 3
+
+![diagram](figures/1612-2.svg)
 
 ```text
 Input: root1 = [-1,0,-1,null,null,1,2], root2 = [-1,-1,0,1,3]

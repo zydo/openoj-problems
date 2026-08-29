@@ -12,6 +12,8 @@ The game proceeds as follows:
 - In each turn, a player must choose either one of the lane and pick one flower from that side.
 - At the end of the turn, if there are no flowers left at all in either lane, the current player captures their opponent and wins the game.
 
+![diagram](figures/3021-1.svg)
+
 Given two integers, n and m, the task is to compute the number of possible
 pairs (x, y) that satisfy the conditions:
 

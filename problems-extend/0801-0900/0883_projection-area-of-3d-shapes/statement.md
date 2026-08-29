@@ -15,6 +15,8 @@ Return the total area of all three projections.
 
 ### Example 1
 
+![diagram](figures/883-1.svg)
+
 ```text
 Input: grid = [[1,2],[3,4]]
 Output: 17

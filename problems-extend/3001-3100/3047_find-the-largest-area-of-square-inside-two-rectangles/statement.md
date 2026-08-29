@@ -13,6 +13,8 @@ does not exist.
 
 ### Example 1
 
+![diagram](figures/3047-1.svg)
+
 ```text
 Input: bottomLeft = [[1,1],[2,2],[3,1]], topRight = [[3,3],[4,4],[6,6]]
 Output: 1
@@ -24,6 +26,8 @@ of two rectangles.
 ```
 
 ### Example 2
+
+![diagram](figures/3047-2.svg)
 
 ```text
 Input: bottomLeft = [[1,1],[1,3],[1,5]], topRight = [[5,5],[5,7],[5,9]]
@@ -37,6 +41,8 @@ region of two rectangles.
 
 ### Example 3
 
+![diagram](figures/3047-3.svg)
+
 ```text
 Input: bottomLeft = [[1,1],[2,2],[1,2]], topRight = [[3,3],[4,4],[3,4]]
 Output: 1
@@ -47,6 +53,8 @@ than 2 rectangles.
 ```
 
 ### Example 4
+
+![diagram](figures/3047-4.svg)
 
 ```text
 Input: bottomLeft = [[1,1],[3,3],[3,1]], topRight = [[2,2],[4,4],[4,2]]

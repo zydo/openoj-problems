@@ -8,6 +8,8 @@ Given the `head` of a singly linked list and two integers `left` and `right` whe
 
 ### Example 1
 
+![diagram](figures/92-1.svg)
+
 ```text
 Input: head = [1,2,3,4,5], left = 2, right = 4
 Output: [1,4,3,2,5]

@@ -16,6 +16,8 @@ Return the number of visible mountains.
 
 ### Example 1
 
+![diagram](figures/2345-1.svg)
+
 ```text
 Input: peaks = [[2,2],[6,3],[5,4]]
 Output: 2
@@ -30,6 +32,8 @@ There are 2 mountains that are visible.
 ```
 
 ### Example 2
+
+![diagram](figures/2345-2.svg)
 
 ```text
 Input: peaks = [[1,3],[1,3]]

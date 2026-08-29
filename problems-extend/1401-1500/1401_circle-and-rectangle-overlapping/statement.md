@@ -13,6 +13,8 @@ to the circle and the rectangle at the same time.
 
 ### Example 1
 
+![diagram](figures/1401-1.svg)
+
 ```text
 Input: radius = 1, xCenter = 0, yCenter = 0, x1 = 1, y1 = -1, x2 = 3, y2 = 1
 Output: true
@@ -27,6 +29,8 @@ Output: false
 ```
 
 ### Example 3
+
+![diagram](figures/1401-2.svg)
 
 ```text
 Input: radius = 1, xCenter = 0, yCenter = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1

@@ -8,12 +8,16 @@ there exist two elements in the BST such that their sum is equal to `k`, or
 
 ### Example 1
 
+![diagram](figures/653-1.svg)
+
 ```text
 Input: root = [5,3,6,2,4,null,7], k = 9
 Output: true
 ```
 
 ### Example 2
+
+![diagram](figures/653-2.svg)
 
 ```text
 Input: root = [5,3,6,2,4,null,7], k = 28

@@ -19,6 +19,8 @@ num -> encoded
   7 -> "000"
 ```
 
+![diagram](figures/1256-1.svg)
+
 ### Example 1
 
 ```text

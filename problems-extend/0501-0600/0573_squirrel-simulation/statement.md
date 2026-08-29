@@ -19,6 +19,8 @@ The distance is the number of moves.
 
 ### Example 1
 
+![diagram](figures/573-1.svg)
+
 ```text
 Input: height = 5, width = 7, tree = [2,2], squirrel = [4,4], nuts = [[3,0], [2,5]]
 Output: 12
@@ -26,6 +28,8 @@ Explanation: The squirrel should go to the nut at [2, 5] first to achieve a mini
 ```
 
 ### Example 2
+
+![diagram](figures/573-2.svg)
 
 ```text
 Input: height = 1, width = 3, tree = [0,1], squirrel = [0,0], nuts = [[0,2]]

@@ -13,6 +13,8 @@ You can return the vertices in any order.
 
 ### Example 1
 
+![diagram](figures/1557-1.svg)
+
 ```text
 Input: n = 6, edges = [[0,1],[0,2],[2,5],[3,4],[4,2]]
 Output: [0,3]
@@ -22,6 +24,8 @@ output [0,3].
 ```
 
 ### Example 2
+
+![diagram](figures/1557-2.svg)
 
 ```text
 Input: n = 5, edges = [[0,1],[2,1],[3,1],[1,4],[2,4]]

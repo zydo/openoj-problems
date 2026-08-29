@@ -10,6 +10,8 @@ You may repeatedly apply either of these two operations, in any order:
 - **Increment**: choose a single index `i` and add `1` to `arr[i]`.
 - **Double**: simultaneously multiply every element of `arr` by `2`.
 
+![diagram](figures/1558-1.svg)
+
 Return the minimum total number of operations needed to turn `arr` into
 `nums`.
 

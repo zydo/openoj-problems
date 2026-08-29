@@ -15,6 +15,8 @@ exists.
 
 ### Example 1
 
+![diagram](figures/536-1.svg)
+
 ```text
 Input: s = "4(2(3)(1))(6(5))"
 Output: [4,2,6,3,1,5]

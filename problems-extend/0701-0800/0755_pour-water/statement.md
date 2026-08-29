@@ -31,6 +31,16 @@ plus any water in that column.
 
 ### Example 1
 
+![diagram](figures/755-1.svg)
+
+![diagram](figures/755-2.svg)
+
+![diagram](figures/755-3.svg)
+
+![diagram](figures/755-4.svg)
+
+![diagram](figures/755-5.svg)
+
 ```text
 Input: heights = [2,1,1,2,1,2,2], volume = 4, k = 3
 Output: [2,2,2,3,2,2,2]

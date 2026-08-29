@@ -22,6 +22,8 @@ Note: It is invalid to change the direction during the move.
 
 ### Example 1
 
+![diagram](figures/3044-1.svg)
+
 ```text
 Input: mat = [[1,1],[9,9],[1,1]]
 Output: 19

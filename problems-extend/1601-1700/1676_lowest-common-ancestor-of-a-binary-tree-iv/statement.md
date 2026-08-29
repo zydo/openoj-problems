@@ -21,6 +21,8 @@ value.
 
 ### Example 1
 
+![diagram](figures/1676-1.svg)
+
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], nodes = [4,7]
 Output: 2
@@ -28,6 +30,8 @@ Explanation: The lowest common ancestor of nodes 4 and 7 is node 2.
 ```
 
 ### Example 2
+
+![diagram](figures/1676-2.svg)
 
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], nodes = [1]
@@ -37,6 +41,8 @@ itself.
 ```
 
 ### Example 3
+
+![diagram](figures/1676-3.svg)
 
 ```text
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], nodes = [7,6,2,4]

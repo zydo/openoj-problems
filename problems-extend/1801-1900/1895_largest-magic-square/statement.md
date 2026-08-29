@@ -12,6 +12,8 @@ Given an `m x n` integer grid, return the size (i.e., the side length
 
 ### Example 1
 
+![diagram](figures/1895-1.svg)
+
 ```text
 Input: grid = [[7,1,4,5,6],[2,5,1,6,4],[1,5,4,3,2],[1,2,7,3,4]]
 Output: 3
@@ -24,6 +26,8 @@ equal to 12.
 ```
 
 ### Example 2
+
+![diagram](figures/1895-2.svg)
 
 ```text
 Input: grid = [[5,1,3,1],[9,3,3,1],[1,3,3,8]]

@@ -16,6 +16,8 @@ matrix after applying the increment to all locations in `indices`.
 
 ### Example 1
 
+![diagram](figures/1252-1.svg)
+
 ```text
 Input: m = 2, n = 3, indices = [[0,1],[1,1]]
 Output: 6
@@ -23,6 +25,8 @@ Explanation: Initial matrix = [[0,0,0],[0,0,0]]. After applying the first increm
 ```
 
 ### Example 2
+
+![diagram](figures/1252-2.svg)
 
 ```text
 Input: m = 2, n = 2, indices = [[1,1],[0,0]]

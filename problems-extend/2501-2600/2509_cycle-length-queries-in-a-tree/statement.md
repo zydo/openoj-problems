@@ -29,6 +29,8 @@ ith query.
 
 ### Example 1
 
+![diagram](figures/2509-1.svg)
+
 ```text
 Input: n = 3, queries = [[5,3],[4,7],[2,3]]
 Output: [4,5,3]
@@ -39,6 +41,8 @@ Explanation: The diagrams above show the tree of 2³ - 1 nodes. Nodes colored in
 ```
 
 ### Example 2
+
+![diagram](figures/2509-2.svg)
 
 ```text
 Input: n = 2, queries = [[1,2]]

@@ -10,6 +10,8 @@ Return the number of nodes that have the highest score.
 
 ### Example 1
 
+![diagram](figures/2049-1.svg)
+
 ```text
 Input: parents = [-1,2,0,2,0]
 Output: 3
@@ -23,6 +25,8 @@ The highest score is 4, and three nodes (node 1, node 3, and node 4) have the hi
 ```
 
 ### Example 2
+
+![diagram](figures/2049-2.svg)
 
 ```text
 Input: parents = [-1,2,0]

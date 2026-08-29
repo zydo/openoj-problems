@@ -16,6 +16,8 @@ Reverse the nodes in each group with an even length, and return the head of the 
 
 ### Example 1
 
+![diagram](figures/2074-1.svg)
+
 ```text
 Input: head = [5,2,6,3,9,1,7,3,8,4]
 Output: [5,6,2,3,9,1,4,8,3,7]
@@ -28,6 +30,8 @@ Explanation:
 
 ### Example 2
 
+![diagram](figures/2074-2.svg)
+
 ```text
 Input: head = [1,1,0,6]
 Output: [1,0,1,6]
@@ -38,6 +42,8 @@ Explanation:
 ```
 
 ### Example 3
+
+![diagram](figures/2074-3.svg)
 
 ```text
 Input: head = [1,1,0,6,5]

@@ -21,6 +21,12 @@ from city 0 to city `n - 1` after processing the first `i + 1` queries.
 
 ### Example 1
 
+![diagram](figures/3244-1.svg)
+
+![diagram](figures/3244-2.svg)
+
+![diagram](figures/3244-3.svg)
+
 ```text
 Input: n = 5, queries = [[2,4],[0,2],[0,4]]
 Output: [3,2,1]
@@ -30,6 +36,10 @@ After the addition of the road from 0 to 4, the length of the shortest path from
 ```
 
 ### Example 2
+
+![diagram](figures/3244-4.svg)
+
+![diagram](figures/3244-5.svg)
 
 ```text
 Input: n = 4, queries = [[0,3],[0,2]]

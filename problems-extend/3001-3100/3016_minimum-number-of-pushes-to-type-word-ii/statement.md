@@ -20,7 +20,11 @@ the keys.
 An example mapping of letters to keys on a telephone keypad is given below.
 Note that `1`, `*`, `#`, and `0` do not map to any letters.
 
+![diagram](figures/3016-1.svg)
+
 ### Example 1
+
+![diagram](figures/3016-2.svg)
 
 ```text
 Input: word = "abcde"
@@ -37,6 +41,8 @@ It can be shown that no other mapping can provide a lower cost.
 
 ### Example 2
 
+![diagram](figures/3016-3.svg)
+
 ```text
 Input: word = "xyzxyzxyzxyz"
 Output: 12
@@ -50,6 +56,8 @@ Note that the key 9 is not mapped to any letter: it is not necessary to map lett
 ```
 
 ### Example 3
+
+![diagram](figures/3016-4.svg)
 
 ```text
 Input: word = "aabbccddeeffgghhiiiiii"

@@ -11,12 +11,16 @@ On LeetCode the function returns nothing and the judge inspects the mutated matr
 
 ### Example 1
 
+![diagram](figures/73-1.svg)
+
 ```text
 Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
 Output: [[1,0,1],[0,0,0],[1,0,1]]
 ```
 
 ### Example 2
+
+![diagram](figures/73-2.svg)
 
 ```text
 Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
