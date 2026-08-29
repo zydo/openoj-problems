@@ -28,19 +28,19 @@ complete specification.
 5. Check locally before pushing — CI is the last-step guardian, not the
    first:
 
-    ```bash
-    python3 scripts/check.py --skip-runtime                    # static
-    python3 scripts/check.py --problems=<your-keys>            # + runtime
-    ```
+   ```bash
+   python3 scripts/check.py --skip-runtime                    # static
+   python3 scripts/check.py --problems=<your-keys>            # + runtime
+   ```
 
-    The runtime tier needs a running OpenOJ serving this repository, e.g.
-    from an openoj checkout:
+   The runtime tier needs a running OpenOJ serving this repository, e.g.
+   from an openoj checkout:
 
-    ```bash
-    OPENOJ_PROBLEMS_PATH=$PWD/problems OPENOJ_PROBLEMS=/problems \
-      docker compose up -d --build api web runner
-    python3 scripts/check.py --problems=all --api http://localhost:8080
-    ```
+   ```bash
+   OPENOJ_PROBLEMS_PATH=$PWD/problems OPENOJ_PROBLEMS=/problems \
+     docker compose up -d --build api web runner
+   python3 scripts/check.py --problems=all --api http://localhost:8080
+   ```
 
 ## CI
 

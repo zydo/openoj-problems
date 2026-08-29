@@ -12,126 +12,130 @@
 //   side of the race settles.
 
 class LimitClock {
-    constructor() {
-        this.ticks = [];
-        this.sequence = 0;
-        this.now = 0;
-    }
+  constructor() {
+    this.ticks = [];
+    this.sequence = 0;
+    this.now = 0;
+  }
 
-    // Absolute-time scheduling relative to a base keeps relative
-    // setTimeout semantics for code arming timers at later ticks.
-    scheduleFrom(base, delay, callback) {
-        const tick = {
-            time: Math.max(0, base + Math.max(0, delay)),
-            sequence: this.sequence++,
-            callback,
-        };
-        const position = this.ticks.findIndex(
-            (scheduled) =>
-                scheduled.time > tick.time ||
-                (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
-        );
-        if (position === -1) {
-            this.ticks.push(tick);
-        } else {
-            this.ticks.splice(position, 0, tick);
-        }
+  // Absolute-time scheduling relative to a base keeps relative
+  // setTimeout semantics for code arming timers at later ticks.
+  scheduleFrom(base, delay, callback) {
+    const tick = {
+      time: Math.max(0, base + Math.max(0, delay)),
+      sequence: this.sequence++,
+      callback,
+    };
+    const position = this.ticks.findIndex(
+      (scheduled) =>
+        scheduled.time > tick.time ||
+        (scheduled.time === tick.time && scheduled.sequence > tick.sequence),
+    );
+    if (position === -1) {
+      this.ticks.push(tick);
+    } else {
+      this.ticks.splice(position, 0, tick);
     }
+  }
 
-    get size() {
-        return this.ticks.length;
-    }
+  get size() {
+    return this.ticks.length;
+  }
 
-    // Fire the earliest due tick; the driver interleaves these fires with
-    // microtask checkpoints so settlement cascades fully drain between
-    // them.
-    fireNext() {
-        const tick = this.ticks.shift();
-        this.now = tick.time;
-        tick.callback();
-    }
+  // Fire the earliest due tick; the driver interleaves these fires with
+  // microtask checkpoints so settlement cascades fully drain between
+  // them.
+  fireNext() {
+    const tick = this.ticks.shift();
+    this.now = tick.time;
+    tick.callback();
+  }
 }
 
 const openojLimitClock = new LimitClock();
 const openojBuiltinSetTimeout = globalThis.setTimeout;
 globalThis.setTimeout = function openojVirtualSetTimeout(callback, delay) {
-    void openojBuiltinSetTimeout;
-    openojLimitClock.scheduleFrom(openojLimitClock.now, Number(delay) || 0, callback);
-    return 0;
+  void openojBuiltinSetTimeout;
+  openojLimitClock.scheduleFrom(
+    openojLimitClock.now,
+    Number(delay) || 0,
+    callback,
+  );
+  return 0;
 };
 
 class LimitCase {
-    // The interactive wrapper hands the oracle one array of the manifest's
-    // construct values ([source, inputs, t]) plus the query budget
-    // (unused — the driver schedules a bounded number of ticks by design).
-    constructor([source, inputs, t], budget) {
-        void budget;
-        this.inputs = inputs;
-        this.t = t;
-        // Lexical shadowing plus the global patch above both route to the
-        // same virtual clock: an inner arrow's bare `setTimeout` resolves
-        // to this parameter even without the patch.
-        this.fn = new Function("setTimeout", "return (" + source + ");")(
-            function (callback, delay) {
-                openojLimitClock.scheduleFrom(
-                    openojLimitClock.now,
-                    Number(delay) || 0,
-                    callback,
-                );
-                return 0;
-            },
+  // The interactive wrapper hands the oracle one array of the manifest's
+  // construct values ([source, inputs, t]) plus the query budget
+  // (unused — the driver schedules a bounded number of ticks by design).
+  constructor([source, inputs, t], budget) {
+    void budget;
+    this.inputs = inputs;
+    this.t = t;
+    // Lexical shadowing plus the global patch above both route to the
+    // same virtual clock: an inner arrow's bare `setTimeout` resolves
+    // to this parameter even without the patch.
+    this.fn = new Function("setTimeout", "return (" + source + ");")(
+      function (callback, delay) {
+        openojLimitClock.scheduleFrom(
+          openojLimitClock.now,
+          Number(delay) || 0,
+          callback,
         );
-        this.outcome = null;
-    }
+        return 0;
+      },
+    );
+    this.outcome = null;
+  }
 
-    // Hand the case's fn and limit to the submission's timeLimit, call
-    // the resulting limited function once with this case's inputs, pump
-    // every scheduled settlement in due-time order with microtask
-    // checkpoints between fires, then adopt the returned promise's fate
-    // as this case's outcome object.
-    async drive(timeLimit) {
-        if (typeof timeLimit !== "function") {
-            throw new Error("timeLimit must be a function");
-        }
-        const limited = timeLimit(this.fn, this.t);
-        if (typeof limited !== "function") {
-            throw new Error("timeLimit(fn, t) must return a function");
-        }
-        const returned = limited(...this.inputs);
-        if (!returned || typeof returned.then !== "function") {
-            throw new Error("the time limited call must return a promise");
-        }
-        // Drain reactions queued by synchronous execution FIRST: an
-        // already-settled fn must claim the race before any due tick
-        // fires, exactly as real microtasks precede real timers.
-        await null;
-        let fired = 0;
-        while (this.clockSize() > 0) {
-            if (++fired > 100000) {
-                throw new Error("Virtual tick cap exceeded");
-            }
-            openojLimitClock.fireNext();
-            await null;
-        }
-        await null;
-        try {
-            const value = await returned;
-            this.outcome = { resolved: value === undefined ? null : value };
-        } catch (reason) {
-            this.outcome = { rejected: reason === undefined ? null : reason };
-        }
+  // Hand the case's fn and limit to the submission's timeLimit, call
+  // the resulting limited function once with this case's inputs, pump
+  // every scheduled settlement in due-time order with microtask
+  // checkpoints between fires, then adopt the returned promise's fate
+  // as this case's outcome object.
+  async drive(timeLimit) {
+    if (typeof timeLimit !== "function") {
+      throw new Error("timeLimit must be a function");
     }
+    const limited = timeLimit(this.fn, this.t);
+    if (typeof limited !== "function") {
+      throw new Error("timeLimit(fn, t) must return a function");
+    }
+    const returned = limited(...this.inputs);
+    if (!returned || typeof returned.then !== "function") {
+      throw new Error("the time limited call must return a promise");
+    }
+    // Drain reactions queued by synchronous execution FIRST: an
+    // already-settled fn must claim the race before any due tick
+    // fires, exactly as real microtasks precede real timers.
+    await null;
+    let fired = 0;
+    while (this.clockSize() > 0) {
+      if (++fired > 100000) {
+        throw new Error("Virtual tick cap exceeded");
+      }
+      openojLimitClock.fireNext();
+      await null;
+    }
+    await null;
+    try {
+      const value = await returned;
+      this.outcome = { resolved: value === undefined ? null : value };
+    } catch (reason) {
+      this.outcome = { rejected: reason === undefined ? null : reason };
+    }
+  }
 
-    clockSize() {
-        return openojLimitClock.size;
-    }
+  clockSize() {
+    return openojLimitClock.size;
+  }
 
-    verdict() {
-        if (this.outcome === null) {
-            throw new Error("Returned promise never settled");
-        }
-        return this.outcome;
+  verdict() {
+    if (this.outcome === null) {
+      throw new Error("Returned promise never settled");
     }
+    return this.outcome;
+  }
 }
 
 // timeLimit(fn, t) hands back a wrapper that captures t; each call to
@@ -143,38 +147,59 @@ class LimitCase {
 // bookkeeping is needed to decide the winner — and both handlers route
 // into that single promise's resolve/reject pair.
 function timeLimit(fn, t) {
-    return function (...args) {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => reject("Time Limit Exceeded"), t);
-            fn(...args).then(resolve, reject);
-        });
-    };
+  return function (...args) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => reject("Time Limit Exceeded"), t);
+      fn(...args).then(resolve, reject);
+    });
+  };
 }
 
 class Solution {
-    run(limitCase) {
-        return limitCase.drive(timeLimit);
-    }
+  run(limitCase) {
+    return limitCase.drive(timeLimit);
+  }
 }
 
 const __origFire = LimitClock.prototype.fireNext;
-LimitClock.prototype.fireNext = function() {
-    console.error("fire@", this.ticks[0] && this.ticks[0].time,
-                  "remaining:", this.ticks.map(t=>t.time).join(","));
-    return __origFire.call(this);
+LimitClock.prototype.fireNext = function () {
+  console.error(
+    "fire@",
+    this.ticks[0] && this.ticks[0].time,
+    "remaining:",
+    this.ticks.map((t) => t.time).join(","),
+  );
+  return __origFire.call(this);
 };
 (async () => {
-    const lc = new LimitCase(["async (n) => {\n  await new Promise(res => setTimeout(res, 100));\n  return n * n;\n}", [5], 150], 1000000);
-    console.error("t passed:", lc.t, "inputs:", JSON.stringify(lc.inputs));
-    const s = new Solution();
-    // instrument the wrapper's returned promise
-    const limited = timeLimit(lc.fn, lc.t);
-    const pr = limited(...lc.inputs);
-    pr.then(v=>console.error("limited RESOLVED", v), e=>console.error("limited REJECTED", e));
-    // replicate drive body manually:
+  const lc = new LimitCase(
+    [
+      "async (n) => {\n  await new Promise(res => setTimeout(res, 100));\n  return n * n;\n}",
+      [5],
+      150,
+    ],
+    1000000,
+  );
+  console.error("t passed:", lc.t, "inputs:", JSON.stringify(lc.inputs));
+  const s = new Solution();
+  // instrument the wrapper's returned promise
+  const limited = timeLimit(lc.fn, lc.t);
+  const pr = limited(...lc.inputs);
+  pr.then(
+    (v) => console.error("limited RESOLVED", v),
+    (e) => console.error("limited REJECTED", e),
+  );
+  // replicate drive body manually:
+  await null;
+  while (openojLimitClock.size > 0) {
+    openojLimitClock.fireNext();
     await null;
-    while (openojLimitClock.size > 0) { openojLimitClock.fireNext(); await null; }
-    await null;
-    try { const v = await pr; console.error("final resolved:", v); }
-    catch(r) { console.error("final rejected:", r); }
+  }
+  await null;
+  try {
+    const v = await pr;
+    console.error("final resolved:", v);
+  } catch (r) {
+    console.error("final rejected:", r);
+  }
 })();

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Can any vine-then-compress (DSW) formulation reproduce the midpoint-rebuild
 tree that this bundle's cases pin as the exact expected output?"""
+
 import math
 
 
@@ -179,8 +180,14 @@ def report(name, fn):
         if ser(got) != ser(T(n)):
             bad.append(n)
     case_bad = [n for n in CASE_NS if n in bad]
-    verdict = "MATCH-ALL" if not bad else f"mismatch n={bad[:8]}{'...' if len(bad) > 8 else ''}"
-    print(f"{name:24s} case-sizes ok: {'YES' if not case_bad else 'NO ' + str(case_bad):10s} {verdict} {err or ''}")
+    verdict = (
+        "MATCH-ALL"
+        if not bad
+        else f"mismatch n={bad[:8]}{'...' if len(bad) > 8 else ''}"
+    )
+    print(
+        f"{name:24s} case-sizes ok: {'YES' if not case_bad else 'NO ' + str(case_bad):10s} {verdict} {err or ''}"
+    )
 
 
 report("std DSW (asc/left)", lambda n: dsw(n))

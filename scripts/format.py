@@ -20,6 +20,7 @@ Usage:
 --check  lists files that are not formatted and exits 1 (CI mode).
 --tolerant skips a language when its tool is missing instead of failing.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -36,7 +37,7 @@ def _load_formatters():
     runner_dir = os.environ.get("OPENOJ_RUNNER_DIR")
     if runner_dir:
         candidates.append(Path(runner_dir))
-    here = Path(__file__).resolve().parent          # in-image: /runner
+    here = Path(__file__).resolve().parent  # in-image: /runner
     candidates.append(here)
     candidates.append(ROOT.parent / "openoj" / "runner")  # sibling checkout
     for directory in candidates:
@@ -66,9 +67,18 @@ if _extra_bin.is_dir():
     os.environ["PATH"] = f"{_extra_bin}{os.pathsep}{os.environ.get('PATH', '')}"
 
 EXTENSION_LANGUAGE = {
-    "py": "python3", "go": "go", "rust": "rust", "rs": "rust", "cpp": "cpp",
-    "js": "javascript", "ts": "typescript", "java": "java",
-    "sql": "sql", "json": "json", "md": "markdown",
+    "py": "python3",
+    "go": "go",
+    "rust": "rust",
+    "rs": "rust",
+    "cpp": "cpp",
+    "js": "javascript",
+    "ts": "typescript",
+    "java": "java",
+    "sql": "sql",
+    "sh": "shell",
+    "json": "json",
+    "md": "markdown",
 }
 
 _missing: set[str] = set()
@@ -87,7 +97,10 @@ def format_content(extension: str, content: str, tolerant: bool = True) -> str:
             raise
         if extension not in _missing:
             _missing.add(extension)
-            print(f"warning: {error} — leaving .{extension} files unformatted", file=sys.stderr)
+            print(
+                f"warning: {error} — leaving .{extension} files unformatted",
+                file=sys.stderr,
+            )
         return content
 
 
@@ -105,9 +118,15 @@ FORMATTABLE = set(EXTENSION_LANGUAGE)
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="report unformatted files, change nothing")
-    parser.add_argument("--tolerant", action="store_true", help="skip missing tools instead of failing")
-    parser.add_argument("targets", nargs="*", help="bundles or files (default: everything)")
+    parser.add_argument(
+        "--check", action="store_true", help="report unformatted files, change nothing"
+    )
+    parser.add_argument(
+        "--tolerant", action="store_true", help="skip missing tools instead of failing"
+    )
+    parser.add_argument(
+        "targets", nargs="*", help="bundles or files (default: everything)"
+    )
     arguments = parser.parse_args()
 
     unformatted = []
@@ -121,7 +140,9 @@ def main() -> None:
             if extension not in FORMATTABLE:
                 continue
             content = path.read_text(encoding="utf-8")
-            new_content = format_content(extension, content, tolerant=arguments.tolerant)
+            new_content = format_content(
+                extension, content, tolerant=arguments.tolerant
+            )
             if new_content != content:
                 if arguments.check:
                     unformatted.append(path.relative_to(ROOT))
@@ -134,7 +155,10 @@ def main() -> None:
             print(f"UNFORMATTED {path}")
         print(f"format check: {len(unformatted)} unformatted files")
         raise SystemExit(1 if unformatted else 0)
-    print(f"formatted {formatted_count} files" + (f" (skipped: {sorted(_missing)})" if _missing else ""))
+    print(
+        f"formatted {formatted_count} files"
+        + (f" (skipped: {sorted(_missing)})" if _missing else "")
+    )
 
 
 if __name__ == "__main__":

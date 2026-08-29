@@ -34,16 +34,16 @@ Solutions are authored on top of the generated starters.
 
 ```json
 {
-    "schema_version": 1,
-    "common_version": 2,
-    "reference_solution": "",
-    "id": 1,
-    "slug": "two-sum",
-    "title": "Two Sum",
-    "difficulty": "H1",
-    "tags": ["Array", "Hash Table"],
-    "invocation": { "...": "see below" },
-    "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+  "schema_version": 1,
+  "common_version": 2,
+  "reference_solution": "",
+  "id": 1,
+  "slug": "two-sum",
+  "title": "Two Sum",
+  "difficulty": "H1",
+  "tags": ["Array", "Hash Table"],
+  "invocation": { "...": "see below" },
+  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
 }
 ```
 
@@ -60,8 +60,8 @@ Solutions are authored on top of the generated starters.
   judge runs exactly this one reference alongside the submission when
   scoring the time-cost percentage.
 - `difficulty` is one of `H1`–`H5`; `tags` is a non-empty array of strings.
-- `invocation.type` is `function`, `sql`, `design`, `interactive`, or
-  `concurrent`.
+- `invocation.type` is `function`, `sql`, `shell`, `design`, `interactive`,
+  or `concurrent`.
 
 ### Function invocation
 
@@ -69,21 +69,31 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 ```json
 {
-    "type": "function",
-    "class_name": "Solution",
-    "method": "twoSum",
-    "parameters": [
-        {
-            "name": "nums",
-            "codec": "json",
-            "value_type": { "kind": "array", "items": { "kind": "integer", "bits": 32 } }
-        },
-        { "name": "target", "codec": "json", "value_type": { "kind": "integer", "bits": 32 } }
-    ],
-    "return_codec": "json",
-    "return_type": { "kind": "array", "items": { "kind": "integer", "bits": 32 } },
-    "entrypoints": { "go": "twoSum", "rust": "two_sum", "typescript": "twoSum" },
-    "comparison": "exact"
+  "type": "function",
+  "class_name": "Solution",
+  "method": "twoSum",
+  "parameters": [
+    {
+      "name": "nums",
+      "codec": "json",
+      "value_type": {
+        "kind": "array",
+        "items": { "kind": "integer", "bits": 32 }
+      }
+    },
+    {
+      "name": "target",
+      "codec": "json",
+      "value_type": { "kind": "integer", "bits": 32 }
+    }
+  ],
+  "return_codec": "json",
+  "return_type": {
+    "kind": "array",
+    "items": { "kind": "integer", "bits": 32 }
+  },
+  "entrypoints": { "go": "twoSum", "rust": "two_sum", "typescript": "twoSum" },
+  "comparison": "exact"
 }
 ```
 
@@ -107,15 +117,27 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 ```json
 {
-    "type": "sql",
-    "parameters": [{ "name": "dataset", "codec": "sql_setup" }],
-    "return_codec": "rows",
-    "comparison": "set"
+  "type": "sql",
+  "parameters": [{ "name": "dataset", "codec": "sql_setup" }],
+  "return_codec": "rows",
+  "comparison": "set"
 }
 ```
 
 The table DDL lives in `invocation.sql.schema`; each case's `dataset` value
 seeds the tables with `INSERT` statements.
+
+### Shell invocation
+
+```json
+{ "type": "shell", "comparison": "exact" }
+```
+
+The submission is a bash script; each case's input is the raw file text
+fed on stdin, and the script's stdout (trailing newlines stripped) is the
+expected value — stored without its trailing newline. Starters are
+`starter.sh` only, solutions `solution*.sh`; wire details live in the
+openoj repo's `docs/CODECS.md`.
 
 ### Design and interactive invocations
 
@@ -141,8 +163,8 @@ matches declared field/parameter order in every language).
 
 ```json
 {
-    "public": [{ "input": [[2, 7, 11, 15], 9], "expected": [0, 1] }],
-    "hidden": [{ "input": [[3, 2, 4], 6], "expected": [1, 2] }]
+  "public": [{ "input": [[2, 7, 11, 15], 9], "expected": [0, 1] }],
+  "hidden": [{ "input": [[3, 2, 4], 6], "expected": [1, 2] }]
 }
 ```
 
@@ -198,18 +220,18 @@ all format through that single module, so output is byte-identical
 everywhere. This repo deliberately carries no formatter pins or
 `node_modules` of its own.
 
-| Files          | Formatter                                 | Language key in formatters.py |
-| -------------- | ----------------------------------------- | ------------------------------ |
-| `*.py`         | `ruff format` (line length 120)          | `python3`                      |
-| `*.go`         | `gofmt`                                   | `go`                           |
-| `*.rs`         | `rustfmt --edition 2021` (width 120)     | `rust`                         |
-| `*.cpp`        | `clang-format` (LLVM style, indent 4)    | `cpp`                          |
-| `*.js`         | `prettier`                                | `javascript`                   |
-| `*.ts`         | `prettier`                                | `typescript`                   |
-| `*.java`       | `prettier` + `prettier-plugin-java`       | `java`                         |
-| `*.sql`        | `sql-formatter` (sqlite dialect)          | `sql`                          |
-| `*.json`       | canonical 2-space JSON + trailing newline | `json`                         |
-| `*.md`         | `prettier` (`proseWrap: preserve`)        | `markdown`                     |
+| Files    | Formatter                                 | Language key in formatters.py |
+| -------- | ----------------------------------------- | ----------------------------- |
+| `*.py`   | `ruff format` (line length 120)           | `python3`                     |
+| `*.go`   | `gofmt`                                   | `go`                          |
+| `*.rs`   | `rustfmt --edition 2021` (width 120)      | `rust`                        |
+| `*.cpp`  | `clang-format` (LLVM style, indent 4)     | `cpp`                         |
+| `*.js`   | `prettier`                                | `javascript`                  |
+| `*.ts`   | `prettier`                                | `typescript`                  |
+| `*.java` | `prettier` + `prettier-plugin-java`       | `java`                        |
+| `*.sql`  | `sql-formatter` (sqlite dialect)          | `sql`                         |
+| `*.json` | canonical 2-space JSON + trailing newline | `json`                        |
+| `*.md`   | `prettier` (`proseWrap: preserve`)        | `markdown`                    |
 
 Tool versions are pinned in the runner image's Dockerfile (the same build
 the editor's Format button runs on). Run `python3 scripts/format.py` to

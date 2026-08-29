@@ -21,7 +21,7 @@ under `openoj/.localonly/probank/9000-9099/`; wire law in
 `openoj/docs/CODECS.md`). They stay as the historical evidence trail.
 Entries 1–4 and 12 remain open authored-content decisions.
 
-----------------------------------------------------------------------
+---
 
 ## 1. 0432_rebalance-a-bst — the DSW variant is impossible under exact-shape pinning
 
@@ -33,6 +33,7 @@ rebalancing as the second solution. The authoring agent proved it cannot
 pass this bundle as judged, and correctly wrote nothing.
 
 **Evidence** (full analysis preserved at `scripts/dsw_shape_study.py`):
+
 - `problem.json` sets `comparison: "exact"`; each case in `cases.json`
   pins one expected tree, and every expected is exactly the shipped
   solution's in-order-flatten + `(lo+hi)//2` midpoint-rebuild output.
@@ -54,6 +55,7 @@ pass this bundle as judged, and correctly wrote nothing.
   is inherent to the algorithm family, not a coding slip.
 
 **Options**:
+
 - (a) Leave 0432 variant-less. Zero cost; current state.
 - (b) Sanction `any_of` expected lists in `cases.json` (list the DSW
   tree as an accepted alternative), making the judge honor the
@@ -68,7 +70,7 @@ pass this bundle as judged, and correctly wrote nothing.
 
 **Recommendation**: (b), gated on the `any_of` verification.
 
-----------------------------------------------------------------------
+---
 
 ## 2. 0527_longest-shared-segment — hidden case 14 violates the stated value bound
 
@@ -89,6 +91,7 @@ solutions.md prose documents this honestly. It is defensive code
 papering over an invalid case.
 
 **Options**:
+
 - (a) Fix the case: `n` 6 → 7 (values and expected unchanged in
   intent). Then re-run
   `verify_solution.py problems/0501-0600/0527_longest-shared-segment`
@@ -102,7 +105,7 @@ papering over an invalid case.
 
 **Recommendation**: (a) — one number plus a verification run.
 
-----------------------------------------------------------------------
+---
 
 ## 3. 0236_merge-contact-records — Hint 3 is falsified by its own hidden cases
 
@@ -115,6 +118,7 @@ Hidden cases 10 and 13 deliberately merge accounts with DIFFERENT names
 and the pinned expecteds print the LATER record's name.
 
 **How each solution picks the name**:
+
 - The canonical's choice is a union-find mechanical artifact:
   `owner[root]`, where the root depends on union order.
 - The DFS variant reverse-engineered the observable rule — "the last
@@ -128,6 +132,7 @@ such an input). If a future case of that shape is added and expecteds
 are regenerated from the canonical, the DFS variant would fail it.
 
 **Options**:
+
 - (a) Reword Hint 3 to state the actual rule: "a merged record carries
   the name of the most recently read account that joins it". One
   sentence; makes docs and corpus consistent.
@@ -139,7 +144,7 @@ are regenerated from the canonical, the DFS variant would fail it.
 **Recommendation**: (a) now; (b) opportunistically if the canonical is
 ever touched again.
 
-----------------------------------------------------------------------
+---
 
 ## 4. 0254_maximum-sortable-blocks — one falsifiable sentence in the existing section
 
@@ -166,7 +171,7 @@ minima **strictly** is not enough here". Pure editorial, zero risk.
 noted here only because the byte-identical rule during the wave
 correctly kept agents out of old section bodies.
 
-----------------------------------------------------------------------
+---
 
 ## 5. problems-extend 0116/0117/0138/0426/0430/0510 — pointer-wired nodes inexpressible under the judge contract
 
@@ -387,6 +392,33 @@ exact-shape pinning).
 **Evidence**: fleet-D blocked notes under `.localonly/` (crawl quote and
 tie inputs); bundle `problems-extend/3301-3400/3313_find-the-last-marked-nodes-in-tree/`.
 
+## 13. extend subset-language bundles vs the all-seven starter law in gen_starters/check
+
+**State**: OPEN 2026-08-28 — corpus ruled correct; tooling law needs a
+decision. Nothing was edited; the finding is recorded for that decision.
+
+**What happened**: `scripts/gen_starters.py --check` (and check.py's
+static tier, same `starter_files()` expectation) requires design and
+interactive bundles to carry all seven starters, failing
+`missing starter.<ext>` otherwise. The extend corpus deliberately scopes
+its JavaScript-family problems to the crawl's wire family: 62 interactive
+bundles (2601-2700 / 2701-2800 / 2801-2900 ranges) plus 2624 (function)
+carry js+ts only, and 3037 carries java+py only. The judge derives the
+languages a bundle offers from the starters present, so production serves
+exactly the authored set and every such bundle gates green (judge tier);
+only the blanket all-seven static expectation flags them. The adapt tree
+has no subset bundles, so the conflict never surfaced before extend.
+
+**Evidence**: starter-set census by invocation type (2026-08-28):
+adapt — 775 function / 48 design / 9 interactive all seven, 4 sql, 2
+concurrent py+java; extend — 2664 function + 92 design + 16 interactive
+all seven, 336 sql, 6 concurrent py+java, 62 interactive js+ts, 2624
+function js+ts, 3037 interactive java+py. Resolution options: (a) teach
+gen_starters/check the subset law (offered = starters present, with a
+starter↔solution symmetry requirement), or (b) author the missing
+languages for the 64 bundles ( contradicts the crawl wire family these
+bundles encode).
+
 ## Resolution log
 
 - [ ] 1. 0432 — decide drop / any_of / comparator (verify any_of first)
@@ -399,3 +431,5 @@ tie inputs); bundle `problems-extend/3301-3400/3313_find-the-last-marked-nodes-i
       shipped; 0478/0519 landed and verified green
 - [x] 12. 3313 — RESOLVED 2026-08-28: judge-side `last_marked_nodes`
       validator shipped; expecteds now validator-mode, re-gated green
+- [ ] 13. subset-language bundles — pick (a) subset-aware starter check
+      or (b) author the missing languages
