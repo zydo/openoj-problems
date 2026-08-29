@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="15">
-  <rect width="100%" height="100%" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-11 0 442 520" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="15">
+  <rect x="-11" y="0" width="442" height="520" fill="#ffffff"/>
   <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c0392b"/></marker></defs>
   <g fill="none" stroke="#1a2026"><path d="M30 20H390V470H30Z M120 20V470 M210 20V470 M300 20V470 M30 110H390 M30 200H390 M30 290H390 M30 380H390"/></g>
   <g fill="#1a2026" text-anchor="middle" font-size="19" font-weight="600">

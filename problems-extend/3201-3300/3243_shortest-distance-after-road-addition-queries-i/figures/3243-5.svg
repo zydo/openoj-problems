@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 190" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
-<rect width="100%" height="100%" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -38.25 690 228.25" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+<rect x="0" y="-38.25" width="690" height="228.25" fill="#ffffff"/>
 <line x1="112" y1="90" x2="178" y2="90" stroke="#1a2026" stroke-width="3"/><path d="M183,90 L167,82 L167,98 Z" fill="#1a2026"/>
 <line x1="247" y1="90" x2="313" y2="90" stroke="#1a2026" stroke-width="3"/><path d="M318,90 L302,82 L302,98 Z" fill="#1a2026"/>
 <line x1="382" y1="90" x2="448" y2="90" stroke="#1a2026" stroke-width="3"/><path d="M453,90 L437,82 L437,98 Z" fill="#1a2026"/>

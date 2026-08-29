@@ -16,6 +16,8 @@ Note that any room can contain threats or power-ups, even the first room the kni
 
 ### Example 1
 
+![diagram](figures/174-1.svg)
+
 ```text
 Input: dungeon = [[-2,-3,3],[-5,-10,1],[10,30,-5]]
 Output: 7

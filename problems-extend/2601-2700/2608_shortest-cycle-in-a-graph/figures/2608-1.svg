@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
-  <rect width="100%" height="100%" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.86 0 431.86 240" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14">
+  <rect x="-11.86" y="0" width="431.86" height="240" fill="#ffffff"/>
   <g fill="none" stroke="#1a2026" stroke-width="2">
     <path d="M55 188 L102 74 L182 174 Z"/>
     <path d="M245 56 L350 62 L390 164 L290 148 Z"/>

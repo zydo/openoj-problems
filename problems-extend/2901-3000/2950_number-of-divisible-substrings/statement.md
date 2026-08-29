@@ -5,15 +5,7 @@
 Each character of the English alphabet has been mapped to a digit as shown
 below.
 
-- `a`, `b` map to `1`
-- `c`, `d`, `e` map to `2`
-- `f`, `g`, `h` map to `3`
-- `i`, `j`, `k` map to `4`
-- `l`, `m`, `n` map to `5`
-- `o`, `p`, `q` map to `6`
-- `r`, `s`, `t`, `u` map to `7`
-- `v`, `w`, `x` map to `8`
-- `y`, `z` map to `9`
+![diagram](figures/2950-1.svg)
 
 A string is divisible if the sum of the mapped values of its characters is
 divisible by its length.
@@ -24,8 +16,6 @@ A substring is a contiguous non-empty sequence of characters within a
 string.
 
 ### Example 1
-
-![diagram](figures/2950-1.svg)
 
 ```text
 Substring  Mapped      Sum  Length  Divisible?

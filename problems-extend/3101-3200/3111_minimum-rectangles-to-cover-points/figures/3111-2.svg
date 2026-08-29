@@ -16,9 +16,9 @@
 <text x="42" y="157" text-anchor="end" fill="#1a2026">4</text>
 <text x="42" y="95" text-anchor="end" fill="#1a2026">5</text>
 <text x="42" y="33" text-anchor="end" fill="#1a2026">6</text>
-<rect x="55" y="28" width="128" height="372" fill="#d9dde2" fill-opacity=".35" stroke="#1a2026" stroke-width="2"/>
-<rect x="248" y="28" width="128" height="372" fill="#d9dde2" fill-opacity=".35" stroke="#1a2026" stroke-width="2"/>
-<rect x="440" y="28" width="64" height="372" fill="#d9dde2" fill-opacity=".35" stroke="#1a2026" stroke-width="2"/>
+<rect x="55" y="276" width="128" height="124" fill="#d9dde2" fill-opacity=".35" stroke="#1a2026" stroke-width="2"/>
+<rect x="248" y="95" width="128" height="305" fill="#d9dde2" fill-opacity=".35" stroke="#1a2026" stroke-width="2"/>
+<rect x="440" y="28" width="8" height="372" fill="#d9dde2" fill-opacity=".35" stroke="#1a2026" stroke-width="2"/>
 <circle cx="55" cy="400" r="7" fill="#1a2026"/>
 <text x="45" y="391" text-anchor="end" fill="#5c6b76" font-size="13">(0,0)</text>
 <circle cx="119" cy="338" r="7" fill="#1a2026"/>
