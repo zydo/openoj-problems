@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2890,
+  "slug": "reshape-data-melt",
+  "title": "Reshape Data: Melt",
+  "difficulty": "",
+  "tags": [],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE report (row_position INTEGER, product VARCHAR, quarter_1 INTEGER, quarter_2 INTEGER, quarter_3 INTEGER, quarter_4 INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 3119,
+  "slug": "maximum-number-of-potholes-that-can-be-fixed",
+  "title": "Maximum Number of Potholes That Can Be Fixed",
+  "difficulty": "",
+  "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxPotholes",
+    "parameters": [
+      {
+        "name": "road",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "budget",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "maxPotholes",
+      "rust": "max_potholes",
+      "typescript": "maxPotholes"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

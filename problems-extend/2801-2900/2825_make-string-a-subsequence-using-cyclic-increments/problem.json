@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2825,
+  "slug": "make-string-a-subsequence-using-cyclic-increments",
+  "title": "Make String a Subsequence Using Cyclic Increments",
+  "difficulty": "",
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canMakeSubsequence",
+    "parameters": [
+      {
+        "name": "str1",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "str2",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "canMakeSubsequence",
+      "rust": "can_make_subsequence",
+      "typescript": "canMakeSubsequence"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2888,
+  "slug": "reshape-data-concatenate",
+  "title": "Reshape Data: Concatenate",
+  "difficulty": "",
+  "tags": [],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE df1 (student_id INTEGER, name VARCHAR, age INTEGER); CREATE TABLE df2 (student_id INTEGER, name VARCHAR, age INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

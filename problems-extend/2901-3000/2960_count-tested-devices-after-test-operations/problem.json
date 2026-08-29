@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2960,
+  "slug": "count-tested-devices-after-test-operations",
+  "title": "Count Tested Devices After Test Operations",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Simulation",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countTestedDevices",
+    "parameters": [
+      {
+        "name": "batteryPercentages",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countTestedDevices",
+      "rust": "count_tested_devices",
+      "typescript": "countTestedDevices"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

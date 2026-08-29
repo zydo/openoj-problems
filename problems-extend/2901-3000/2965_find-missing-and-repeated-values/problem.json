@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 2965,
+  "slug": "find-missing-and-repeated-values",
+  "title": "Find Missing and Repeated Values",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "findMissingAndRepeatedValues",
+    "parameters": [
+      {
+        "name": "grid",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "findMissingAndRepeatedValues",
+      "rust": "find_missing_and_repeated_values",
+      "typescript": "findMissingAndRepeatedValues"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

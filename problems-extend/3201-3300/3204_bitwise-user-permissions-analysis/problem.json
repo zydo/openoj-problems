@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "common_version": 1,
+  "reference_solution": "",
+  "id": 3204,
+  "slug": "bitwise-user-permissions-analysis",
+  "title": "Bitwise User Permissions Analysis",
+  "difficulty": "",
+  "tags": [
+    "Database"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE user_permissions (user_id INTEGER PRIMARY KEY, permissions INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
