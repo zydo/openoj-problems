@@ -3,7 +3,7 @@
   "common_version": 1,
   "reference_solution": "",
   "id": 3743,
-  "slug": "cyclic-partition",
+  "slug": "maximize-cyclic-partition-score",
   "title": "Maximize Cyclic Partition Score",
   "difficulty": "",
   "tags": [

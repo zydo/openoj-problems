@@ -3,7 +3,7 @@
   "common_version": 2,
   "reference_solution": "",
   "id": 426,
-  "slug": "convert-bst-to-sorted-doubly-linked-list",
+  "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
   "title": "Convert Binary Search Tree to Sorted Doubly Linked List",
   "difficulty": "",
   "tags": [
