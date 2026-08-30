@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1452,
   "slug": "people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list",

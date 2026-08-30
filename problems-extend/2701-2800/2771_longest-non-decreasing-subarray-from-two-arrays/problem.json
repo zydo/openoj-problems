@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2771,
   "slug": "longest-non-decreasing-subarray-from-two-arrays",

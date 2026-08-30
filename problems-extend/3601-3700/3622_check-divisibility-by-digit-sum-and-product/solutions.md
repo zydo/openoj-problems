@@ -1,5 +1,7 @@
 # Solutions — Check Divisibility by Digit Sum and Product
 
+## One-Pass Digit Aggregation
+
 Peel the digits of `n` once with repeated division by ten, folding them
 into two accumulators as they come off: a running digit sum and a running
 digit product. The divisor is then simply `sum + product`, and `n` is

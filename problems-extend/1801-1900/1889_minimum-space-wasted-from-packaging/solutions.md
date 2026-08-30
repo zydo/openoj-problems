@@ -1,3 +1,5 @@
+# Solutions — Minimum Space Wasted From Packaging
+
 For a fixed supplier the assignment is forced — each package takes its
 smallest fitting box, because waste is `sum(box sizes) - sum(package
 sizes)` and the package sum is fixed. So scoring one supplier means

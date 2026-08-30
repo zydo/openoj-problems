@@ -1,5 +1,7 @@
 # Solutions — Find The Original Array of Prefix Xor
 
+## Adjacent Prefix XOR
+
 The prefix relation `pref[i] = arr[0] ^ ... ^ arr[i]` and its neighbor
 `pref[i-1] = arr[0] ^ ... ^ arr[i-1]` differ by exactly the term
 `arr[i]`, so xoring the two equations collapses every shared prefix and

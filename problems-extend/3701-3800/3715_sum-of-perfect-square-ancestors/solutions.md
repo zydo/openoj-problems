@@ -1,5 +1,7 @@
 # Solutions — Sum of Perfect Square Ancestors
 
+## Square-Free Kernels with Tree Aggregation
+
 Multiplying two integers yields a perfect square precisely when they share
 the same square-free kernel: strip every prime's even powers and whatever
 remains must coincide. Let `M = max(nums)`. A smallest-prime-factor sieve up

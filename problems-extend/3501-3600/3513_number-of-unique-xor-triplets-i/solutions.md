@@ -1,5 +1,7 @@
 # Solutions — Number of Unique XOR Triplets I
 
+## Bit-Length Construction
+
 The values are exactly `1..n`, so only `n` matters. Let `b` be the bit
 length of `n`, so `2^(b-1) <= n < 2^b`. Every element is below `2^b`, and
 XOR-ing values below `2^b` never leaves that range — no triplet can

@@ -1,5 +1,7 @@
 # Solutions — Range Product Queries of Powers
 
+## Set-Bit Products and Modular Prefixes
+
 The minimum number of powers of two summing to `n` is achieved by exactly
 one multiset — the set bits of `n` (hint 1). Greedy from the largest power
 down: each set bit is forced, since removing any of them leaves a gap no

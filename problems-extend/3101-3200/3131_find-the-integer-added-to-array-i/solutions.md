@@ -1,5 +1,7 @@
 # Solutions — Find the Integer Added to Array I
 
+## Difference of Minima
+
 Adding one constant `x` to every element of `nums1` shifts the whole set of
 values rigidly, so whatever holds for one element holds for every element —
 including the minimum. The smallest value of `nums1` must land exactly on

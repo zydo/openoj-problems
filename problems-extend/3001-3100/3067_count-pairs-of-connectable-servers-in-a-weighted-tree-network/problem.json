@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3067,
   "slug": "count-pairs-of-connectable-servers-in-a-weighted-tree-network",

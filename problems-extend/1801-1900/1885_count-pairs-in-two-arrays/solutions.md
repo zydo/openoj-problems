@@ -1,3 +1,5 @@
+# Solutions — Count Pairs in Two Arrays
+
 The condition `nums1[i] + nums1[j] > nums2[i] + nums2[j]` rearranges to
 `d[i] + d[j] > 0` where `d[k] = nums1[k] - nums2[k]` — a single array
 and one inequality, which sorting turns into counting.

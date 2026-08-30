@@ -1,5 +1,7 @@
 # Solutions — Count the Number of Good Subsequences
 
+## Count by Shared Frequency
+
 Every good subsequence is identified by the frequency `m` shared by all
 its present letters, which suggests summing over `m` directly, as hints 1
 and 2 outline. For a fixed `m`, each of the 26 letters independently

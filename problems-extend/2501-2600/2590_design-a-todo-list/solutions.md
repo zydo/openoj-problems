@@ -1,5 +1,7 @@
 # Solutions — Design a Todo List
 
+## Indexed Task Store
+
 Every added task gets its sequentially assigned id and is appended once
 to a single store (a vector indexed by `id − 1`); the record carries its
 owner, description, due date, tag list, and completion flag.

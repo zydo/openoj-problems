@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 2,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2773,
   "slug": "height-of-special-binary-tree",

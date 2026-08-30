@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "sorted_window",
   "id": 3768,
   "slug": "minimum-inversion-count-in-subarrays-of-fixed-length",

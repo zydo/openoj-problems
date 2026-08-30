@@ -1,5 +1,7 @@
 # Solutions — Number of Subarrays With GCD Equal to K
 
+## Incremental GCD Enumeration
+
 Fix the left endpoint `i` and extend the right endpoint `j` one element
 at a time, carrying the gcd of `nums[i..j]` (hint 2). The carried value
 is monotone: appending an element can only lower a gcd, never raise it,

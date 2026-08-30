@@ -1,13 +1,6 @@
 use std::collections::HashMap;
 use std::collections::VecDeque;
 
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
-
 impl Solution {
     pub fn minimum_operations(root: Option<Box<TreeNode>>) -> i32 {
         let root = match root {

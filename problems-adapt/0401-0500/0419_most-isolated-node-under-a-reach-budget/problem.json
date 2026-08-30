@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "dijkstra_every_node",
   "id": 419,
   "slug": "most-isolated-node-under-a-reach-budget",

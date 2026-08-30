@@ -1,5 +1,7 @@
 # Solutions — Minimum Number of Operations to Make All Array Elements Equal to 1
 
+## GCD Subarray Search
+
 Two regimes split the work. If the array already contains any 1, every
 other element is one operation away from done — replace the neighbor of
 a 1 with `gcd(x, 1) = 1` — and no operation can eliminate two elements

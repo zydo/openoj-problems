@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 596,
   "slug": "classes-with-at-least-5-students",

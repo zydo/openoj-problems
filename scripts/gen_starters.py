@@ -643,8 +643,8 @@ def generate(invocation: dict, language: str) -> str:
         return_rendered = rust_return_type(invocation, return_type)
         rendered = signature + " -> " + return_rendered
         if "Rc<" in rendered or "RefCell<" in rendered:
-            # Shared-ownership shapes; the judge's assembled common.rs
-            # carries no imports, so the starter brings its own.
+            # Shared-ownership shapes; the bundle's own provided/rust/
+            # source carries no imports, so the starter brings its own.
             chunks.append("use std::rc::Rc;\nuse std::cell::RefCell;\n\n")
         chunks.append("impl Solution {\n")
         chunks.append(f"    pub fn {name}({signature}) -> {return_rendered} {{\n")
@@ -669,12 +669,37 @@ def _generate_design(invocation: dict, language: str) -> str:
     constructor_names = [p["name"] for p in constructor]
     constructor_specs = [p.get("value_type") for p in constructor]
 
+    def param_type(spec) -> str:
+        """A design method parameter of kind "instance" is another live
+        object of the design class itself ({"$ref": handle} on the wire,
+        LC 1570's dotProduct(vec)); it renders as the class in every
+        language, with the language's own reference shape."""
+        if isinstance(spec, dict) and spec.get("kind") == "instance":
+            return {
+                "python3": class_name,
+                "java": class_name,
+                "cpp": f"{class_name}&",
+                "go": f"*{class_name}",
+                "rust": f"&mut {class_name}",
+                "typescript": class_name,
+            }[language]
+        renderers = {
+            "python3": python_type,
+            "java": java_type,
+            "cpp": cpp_type,
+            "go": go_type,
+            "rust": rust_type,
+            "typescript": typescript_type,
+            "javascript": typescript_type,
+        }
+        return renderers[language](spec)
+
     if language == "python3":
         blocks = list(_py_imports())
         ctor_signature = ", ".join(
             [
                 "self",
-                *(f"{name}: {python_type(spec)}" for name, spec in zip(constructor_names, constructor_specs)),
+                *(f"{name}: {param_type(spec)}" for name, spec in zip(constructor_names, constructor_specs)),
             ]
         )
         blocks.append(f"class {class_name}:\n")
@@ -685,7 +710,7 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            signature = ", ".join(["self", *(f"{n}: {python_type(s)}" for n, s in zip(names, specs))])
+            signature = ", ".join(["self", *(f"{n}: {param_type(s)}" for n, s in zip(names, specs))])
             ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {python_type(returns)}"
             blocks.append(f"\n    def {name}({signature}){ret}:\n")
             blocks.append('        raise NotImplementedError("TODO")\n')
@@ -693,7 +718,7 @@ def _generate_design(invocation: dict, language: str) -> str:
 
     if language == "java":
         ctor_signature = ", ".join(
-            f"{java_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs)
+            f"{param_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs)
         )
         chunks = [f"class {class_name} {{\n"]
         chunks.append(f"    public {class_name}({ctor_signature}) {{\n    }}\n")
@@ -703,14 +728,14 @@ def _generate_design(invocation: dict, language: str) -> str:
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
             ret = "void" if (returns is None or returns.get("kind") == "void") else java_type(returns)
-            signature = ", ".join(f"{java_type(s)} {n}" for n, s in zip(names, specs))
+            signature = ", ".join(f"{param_type(s)} {n}" for n, s in zip(names, specs))
             chunks.append(f"\n    public {ret} {name}({signature}) {{\n    }}\n")
         chunks.append("}\n")
         return "".join(chunks)
 
     if language == "cpp":
         lines = [f"class {class_name} {{\n  public:\n"]
-        ctor_args = ", ".join(f"{cpp_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs))
+        ctor_args = ", ".join(f"{param_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs))
         lines.append(f"    {class_name}({ctor_args});\n")
         for method in methods:
             name = method["name"]
@@ -719,14 +744,14 @@ def _generate_design(invocation: dict, language: str) -> str:
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
             ret = "void" if (returns is None or returns.get("kind") == "void") else cpp_type(returns)
-            args = ", ".join(f"{cpp_type(s)} {n}" for n, s in zip(names, specs))
+            args = ", ".join(f"{param_type(s)} {n}" for n, s in zip(names, specs))
             lines.append(f"    {ret} {cpp_name}({args});\n")
         lines.append("};\n")
         return "".join(lines)
 
     if language == "go":
         out = ["package main\n\n", f"type {class_name} struct{{}}\n\n"]
-        ctor_args = ", ".join(f"{name} {go_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))
+        ctor_args = ", ".join(f"{name} {param_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))
         out.append(f'func New{class_name}Typed({ctor_args}) *{class_name} {{\n\tpanic("TODO")\n}}\n')
         for method in methods:
             name = method["name"]
@@ -734,14 +759,14 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            args = ", ".join(f"{n} {go_type(s)}" for n, s in zip(names, specs))
+            args = ", ".join(f"{n} {param_type(s)}" for n, s in zip(names, specs))
             ret = "" if (returns is None or returns.get("kind") == "void") else f" {go_type(returns)}"
             out.append(f'\nfunc (design *{class_name}) {go_name}({args}){ret} {{\n\tpanic("TODO")\n}}\n')
         return "".join(out)
 
     if language == "rust":
         out = [f"pub struct {class_name};\n\nimpl {class_name} {{\n"]
-        ctor_args = ", ".join(f"{name}: {rust_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))
+        ctor_args = ", ".join(f"{name}: {param_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))
         out.append(f'    pub fn new({ctor_args}) -> Self {{\n        panic!("TODO")\n    }}\n')
         for method in methods:
             name = method["name"]
@@ -749,9 +774,8 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            args = ", ".join(f"{n}: {rust_type(s)}" for n, s in zip(names, specs))
+            args = ", ".join(f"{n}: {param_type(s)}" for n, s in zip(names, specs))
             ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {rust_type(returns)}"
-            body = "()" if (returns is None or returns.get("kind") == "void") else "0"
             out.append(
                 f'\n    pub fn {rust_name}(&mut self{", " + args if args else ""}){ret} {{\n        panic!("TODO")\n    }}\n'
             )
@@ -761,7 +785,7 @@ def _generate_design(invocation: dict, language: str) -> str:
     if language in ("javascript", "typescript"):
         typed = language == "typescript"
         ctor_args = ", ".join(
-            (f"{name}: {typescript_type(spec)}" if typed else name)
+            (f"{name}: {param_type(spec)}" if typed else name)
             for name, spec in zip(constructor_names, constructor_specs)
         )
         lines = [f"class {class_name} {{\n"]
@@ -774,7 +798,7 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            args = ", ".join((f"{n}: {typescript_type(s)}" if typed else n) for n, s in zip(names, specs))
+            args = ", ".join((f"{n}: {param_type(s)}" if typed else n) for n, s in zip(names, specs))
             ret = (
                 ("" if (returns is None or returns.get("kind") == "void") else f": {typescript_type(returns)}")
                 if typed
@@ -1110,7 +1134,22 @@ def main() -> None:
     failures = 0
     for bundle in targets:
         problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
-        expected = starter_files(problem["invocation"])
+        generated = starter_files(problem["invocation"])
+        extension_language = {extension: key for key, extension in EXTENSIONS.items()}
+        present_languages = {
+            extension_language[path.name[len("starter.") :]]
+            for path in bundle.glob("starter.*")
+            if path.name[len("starter.") :] in extension_language
+            and extension_language[path.name[len("starter.") :]] in generated
+        }
+        # Existing starters define the languages an authored bundle offers
+        # (FORMAT.md). A brand-new bundle with none still gets the invocation's
+        # complete default set.
+        expected = (
+            {language: generated[language] for language in generated if language in present_languages}
+            if present_languages
+            else generated
+        )
         for language, content in expected.items():
             # post-generation formatting with the pinned toolchain (see
             # FORMAT.md); tolerant so generation works without every tool
@@ -1123,13 +1162,17 @@ def main() -> None:
                     print(f"STALE {path}")
             else:
                 path.write_text(content, encoding="utf-8")
-        # remove generated starters that no longer belong (language removed)
+        # Remove starters that the invocation cannot generate. Languages absent
+        # from an existing bundle are intentionally unoffered, not stale.
         for stale in bundle.glob("starter.*"):
-            language = {extension: key for key, extension in EXTENSIONS.items()}.get(stale.name[len("starter.") :])
-            if language is None or language not in expected:
-                if not check_only:
+            language = extension_language.get(stale.name[len("starter.") :])
+            if language is None or language not in generated:
+                if check_only:
+                    failures += 1
+                    print(f"STALE {stale}")
+                else:
                     stale.unlink()
-                print(f"REMOVED {stale}")
+                    print(f"REMOVED {stale}")
         if not check_only:
             print(f"OK   {bundle.name}: {len(expected)} starters")
     raise SystemExit(1 if failures else 0)

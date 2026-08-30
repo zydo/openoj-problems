@@ -1,5 +1,7 @@
 # Solutions — Count Odd Letters from Number
 
+## Construct and Count Character Parity
+
 The construction is purely mechanical: ten digit words cover every digit,
 so the string `s` is just the concatenation of `words[digit]` for each
 digit of `n` in order. With `s` in hand the odd-frequency question is a

@@ -1,5 +1,7 @@
 # Solutions — Number of Nodes With Value One
 
+## Ancestor-Flip Parity
+
 Flips commute — every flip toggles the same fixed set of nodes, so the
 final value of a node depends only on how many times it was covered,
 never on the order. A query on `v` covers exactly the nodes of `v`'s

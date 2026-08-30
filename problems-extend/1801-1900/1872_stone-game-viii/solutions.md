@@ -1,3 +1,5 @@
+# Solutions — Stone Game VIII
+
 Simulating the game state by state explodes: each turn may take any
 prefix of length greater than one, and the row itself changes as merges
 happen. The key structural observation is that the row after any number

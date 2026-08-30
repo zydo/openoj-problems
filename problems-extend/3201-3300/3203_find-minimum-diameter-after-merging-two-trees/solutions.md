@@ -1,5 +1,7 @@
 # Solutions — Find Minimum Diameter After Merging Two Trees
 
+## Tree Diameters and Centers
+
 Call the two diameters `d1` and `d2`. Whatever nodes an added edge picks,
 the merged tree's longest path is one of three things: a longest path that
 stayed inside tree 1 (`d1`), one that stayed inside tree 2 (`d2`), or a

@@ -1,5 +1,7 @@
 # Solutions — Generate Fibonacci Sequence
 
+## Iterative Fibonacci Generator
+
 The generator is an unbounded loop that yields and then slides a two-value
 window forward. It starts by yielding the defined first pair — 0, then 1 —
 because the recurrence `Xn = Xn-1 + Xn-2` only needs two seeds; every

@@ -1,5 +1,7 @@
 # Solutions — Find the Substring With Maximum Cost
 
+## Kadane's Algorithm with Character Costs
+
 Every character's value can be resolved before the scan: untouched letters
 keep their alphabet position (1 for `a` through 26 for `z`), while entries of
 `chars` override with their `vals[i]`. After that mapping the task collapses

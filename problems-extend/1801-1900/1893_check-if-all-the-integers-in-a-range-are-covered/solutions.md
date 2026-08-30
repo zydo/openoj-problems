@@ -1,3 +1,5 @@
+# Solutions — Check if All the Integers in a Range Are Covered
+
 Checking each of up to 50 query points against all 50 ranges already
 fits the constraints, but the same question — "which points are
 covered?" — has a linear-time answer that scales: sweep a difference

@@ -1,5 +1,7 @@
 # Solutions — Path Existence Queries in a Graph I
 
+## Component Labels from Consecutive Gaps
+
 Because `nums` is sorted, the edges have a segment property: whenever nodes
 i and j (i < j) are adjacent — |nums[i] - nums[j]| <= maxDiff — every
 consecutive pair k, k+1 between them is adjacent too, since its gap is at

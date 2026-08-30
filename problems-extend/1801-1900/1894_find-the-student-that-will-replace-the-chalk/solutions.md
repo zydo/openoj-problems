@@ -1,3 +1,5 @@
+# Solutions — Find the Student that Will Replace the Chalk
+
 One full pass through the class consumes `sum(chalk)` pieces, so whole
 rounds can be collapsed arithmetically instead of simulated; what
 remains is a single scan to find the first student the leftover chalk

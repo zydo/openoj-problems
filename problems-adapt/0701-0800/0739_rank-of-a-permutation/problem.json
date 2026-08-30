@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "lehmer_merge",
   "id": 739,
   "slug": "rank-of-a-permutation",

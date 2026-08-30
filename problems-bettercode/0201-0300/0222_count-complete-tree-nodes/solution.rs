@@ -1,10 +1,3 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
-
 impl Solution {
     fn depth(mut node: Option<&TreeNode>, left: bool) -> i32 {
         // Walk one spine (all-left or all-right) to measure its depth.

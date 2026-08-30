@@ -1,5 +1,7 @@
 # Solutions — Minimum Positive Sum Subarray
 
+## Prefix-Sum Window Enumeration
+
 Every candidate window can be enumerated directly: for each start index,
 try each length from `l` through `r` and keep the smallest positive total.
 Prefix sums make that enumeration cheap — `prefix[i]` holds the sum of the

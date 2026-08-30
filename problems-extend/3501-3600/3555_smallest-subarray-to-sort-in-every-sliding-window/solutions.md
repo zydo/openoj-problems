@@ -1,5 +1,7 @@
 # Solutions — Smallest Subarray to Sort in Every Sliding Window
 
+## Window Scans with Prefix and Suffix Extrema
+
 Each window is solved independently (hint 1) with the classic boundary pair
 of the "shortest unsorted continuous subarray" problem. Scanning the window
 left to right with a running maximum pinpoints `right`: the last position

@@ -1,5 +1,7 @@
 # Solutions — Split the Array to Make Coprime Products
 
+## Last Prime-Factor Occurrences
+
 The two products can never be formed directly: with `n` up to `10⁴`
 elements of up to `10⁶`, each side reaches thousands of digits, so
 coprimality is decided structurally instead. `gcd(P, Q) == 1` holds

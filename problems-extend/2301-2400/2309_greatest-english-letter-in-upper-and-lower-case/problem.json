@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2309,
   "slug": "greatest-english-letter-in-upper-and-lower-case",

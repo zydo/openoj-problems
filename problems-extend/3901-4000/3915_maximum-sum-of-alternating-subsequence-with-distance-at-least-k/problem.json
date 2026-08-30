@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3915,
   "slug": "maximum-sum-of-alternating-subsequence-with-distance-at-least-k",

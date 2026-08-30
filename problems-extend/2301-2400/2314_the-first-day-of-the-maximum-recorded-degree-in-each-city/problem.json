@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2314,
   "slug": "the-first-day-of-the-maximum-recorded-degree-in-each-city",

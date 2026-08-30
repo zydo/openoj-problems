@@ -1,3 +1,5 @@
+# Solutions — Longer Contiguous Segments of Ones than Zeros
+
 The naive reading of this problem checks every segment of equal
 characters explicitly, which is quadratic in the string length and easy
 to get wrong at the boundaries where a segment is absent. A single pass

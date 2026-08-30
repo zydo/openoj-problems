@@ -1,5 +1,7 @@
 # Solutions — Find the Last Marked Nodes in Tree
 
+## Tree Diameter Endpoints
+
 The marking process is breadth-first search in disguise: each second marks
 exactly the next BFS layer out from the initial node, so the last marked
 nodes for a start `i` are precisely the farthest nodes from `i`. A classic

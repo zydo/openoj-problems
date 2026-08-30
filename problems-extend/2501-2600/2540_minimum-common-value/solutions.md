@@ -1,5 +1,7 @@
 # Solutions — Minimum Common Value
 
+## Two-Pointer Intersection
+
 The sorted precondition is the whole problem. Walk both arrays with one
 pointer each: whenever the two front values differ, the smaller one can
 never be matched later — everything still ahead of it on the other side

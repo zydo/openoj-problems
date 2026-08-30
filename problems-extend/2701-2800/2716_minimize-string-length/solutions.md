@@ -1,5 +1,7 @@
 # Solutions — Minimize String Length
 
+## Distinct-Character Set
+
 Both operations only ever delete an occurrence of a letter while another
 occurrence of that same letter survives: the chosen index i keeps its
 character c, and one of its neighbors carrying c is removed. So no sequence

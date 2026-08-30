@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 95,
   "slug": "unique-binary-search-trees-ii",
@@ -48,6 +47,6 @@
   "limits": {
     "time_ms": 1500,
     "memory_mb": 256,
-    "output_kb": 64
+    "output_kb": 128
   }
 }

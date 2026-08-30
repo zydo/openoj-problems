@@ -1,5 +1,7 @@
 # Solutions — Count Prefix and Suffix Pairs II
 
+## Paired-Character Trie
+
 The quadratic pairwise scan of the easy version cannot survive 10⁵ words, so
 the counting moves into a trie built while sweeping the array once.
 

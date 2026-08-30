@@ -1,5 +1,7 @@
 # Solutions — Partition Array to Minimize XOR
 
+## Partition Dynamic Programming over Prefix XOR
+
 The only structure that matters is prefix XOR: with
 `pre[i] = nums[0] ⊕ … ⊕ nums[i-1]`, the XOR of any subarray
 `nums[l..r-1]` is `pre[r] ⊕ pre[l]`, so every candidate partition is just

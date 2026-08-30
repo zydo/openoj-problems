@@ -8,8 +8,10 @@ The default set is `problems/` — our independently authored bank
 (838 problems, statements and APIs written from functional
 specifications; see [MAPPING.md](problems/MAPPING.md) for its
 provenance). `problems-bettercode/` archives the LeetCode-derived
-originals it was built from, curated by BETTERCODE.md. Each problem is
-one directory sharded into id-range subdirectories of 100
+originals it was built from, curated by BETTERCODE.md. The archive retains
+its legacy schema-1 manifests, but each bundle owns its wire structures under
+`provided/<language>/`, just like the live bank. Each problem is one directory
+sharded into id-range subdirectories of 100
 (`problems/0001-0100/0001_pair-sum/`) — carrying its statement,
 machine schema, testcase corpus, generated starters, and recommended
 solutions in every offered language. See [FORMAT.md](FORMAT.md) for the
@@ -28,19 +30,19 @@ complete specification.
 5. Check locally before pushing — CI is the last-step guardian, not the
    first:
 
-   ```bash
-   python3 scripts/check.py --skip-runtime                    # static
-   python3 scripts/check.py --problems=<your-keys>            # + runtime
-   ```
+    ```bash
+    python3 scripts/check.py --skip-runtime                    # static
+    python3 scripts/check.py --problems=<your-keys>            # + runtime
+    ```
 
-   The runtime tier needs a running OpenOJ serving this repository, e.g.
-   from an openoj checkout:
+    The runtime tier needs a running OpenOJ serving this repository, e.g.
+    from an openoj checkout:
 
-   ```bash
-   OPENOJ_PROBLEMS_PATH=$PWD/problems OPENOJ_PROBLEMS=/problems \
-     docker compose up -d --build api web runner
-   python3 scripts/check.py --problems=all --api http://localhost:8080
-   ```
+    ```bash
+    OPENOJ_PROBLEMS_PATH=$PWD/problems OPENOJ_PROBLEMS=/problems \
+      docker compose up -d --build api web runner
+    python3 scripts/check.py --problems=all --api http://localhost:8080
+    ```
 
 ## CI
 

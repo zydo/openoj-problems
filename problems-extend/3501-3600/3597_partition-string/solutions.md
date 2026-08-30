@@ -1,5 +1,7 @@
 # Solutions — Partition String
 
+## Greedy Novel-Segment Construction
+
 The procedure admits no choices — at every index the current segment grows
 until it is brand new, then it is emitted — so the task is a direct
 simulation, and the only design decision is the structure that answers

@@ -1,5 +1,7 @@
 # Solutions — Count Number of Trapezoids I
 
+## Count Pairs per Horizontal Line
+
 Two points form a horizontal side exactly when they share a
 y-coordinate, and a horizontal trapezoid is nothing more than two points
 picked from one horizontal line plus two picked from another: the two

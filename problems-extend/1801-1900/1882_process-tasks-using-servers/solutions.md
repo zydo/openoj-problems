@@ -1,3 +1,5 @@
+# Solutions — Process Tasks Using Servers
+
 ## Two heaps: free and busy
 
 Keep a min-heap `free` of available servers keyed by `(weight, index)`,

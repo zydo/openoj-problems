@@ -1,5 +1,7 @@
 # Solutions — Count Zero Request Servers
 
+## Offline Sliding Window
+
 A log matters to a query only through its time: query `q` counts every server
 that logged at least one request inside the inclusive interval
 `[q - x, q]`. Once the logs are sorted by time, each query's hits form a

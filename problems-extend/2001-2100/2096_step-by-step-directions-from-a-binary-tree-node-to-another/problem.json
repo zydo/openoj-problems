@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2096,
   "slug": "step-by-step-directions-from-a-binary-tree-node-to-another",

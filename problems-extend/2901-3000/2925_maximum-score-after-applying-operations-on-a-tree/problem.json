@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2925,
   "slug": "maximum-score-after-applying-operations-on-a-tree",

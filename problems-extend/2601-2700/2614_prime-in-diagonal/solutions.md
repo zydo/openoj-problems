@@ -1,5 +1,7 @@
 # Solutions — Prime In Diagonal
 
+## Diagonal Scan with Primality Testing
+
 Only cells on the two diagonals can ever be returned, so the whole matrix
 matters only through 2n values: for each row index `i` those are
 `nums[i][i]` and `nums[i][n-1-i]`. Walking both legs in one loop and keeping

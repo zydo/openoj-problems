@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1558,
   "slug": "minimum-numbers-of-function-calls-to-make-target-array",

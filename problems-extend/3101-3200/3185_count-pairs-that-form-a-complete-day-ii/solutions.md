@@ -1,5 +1,7 @@
 # Solutions — Count Pairs That Form a Complete Day II
 
+## Complementary Remainder Counts
+
 Only residues modulo 24 decide whether a pair completes a day, and there
 are just twenty-four classes — so a complete-day count never needs to look
 at indices at all once values have been reduced. Sweep left to right

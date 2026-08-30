@@ -1,5 +1,7 @@
 # Solutions — Find Consistently Improving Employees
 
+## Window-Rank Recent Reviews
+
 The whole contract lives in each employee's three most recent rows of
 `performance_reviews`, so the first pass ranks reviews per employee with
 `ROW_NUMBER() OVER (PARTITION BY employee_id ORDER BY review_date DESC)` —

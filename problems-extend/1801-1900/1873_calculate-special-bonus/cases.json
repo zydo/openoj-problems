@@ -345,6 +345,67 @@
           920
         ]
       ]
+    },
+    {
+      "input": [
+        "INSERT INTO Employees (employee_id, name, salary) VALUES\n(9, 'Kannon', 7700),\n(8, 'Juan', 6100),\n(7, 'Addilyn', 7400),\n(3, 'Michael', 3800),\n(2, 'Meir', 3000);"
+      ],
+      "expected": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          7,
+          7400
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          7700
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Employees (employee_id, name, salary) VALUES\n(6, 'Cal', 300),\n(4, 'Bob', 200),\n(2, 'Amy', 100);"
+      ],
+      "expected": [
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Employees (employee_id, name, salary) VALUES\n(3, 'Mia', 700),\n(1, 'Mark', 500);"
+      ],
+      "expected": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
     }
   ]
 }

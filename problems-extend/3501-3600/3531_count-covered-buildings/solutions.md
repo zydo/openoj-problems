@@ -1,5 +1,7 @@
 # Solutions — Count Covered Buildings
 
+## Row and Column Extrema
+
 Directions are one-dimensional facts per line: a building at `[x, y]` has a
 neighbor to its left exactly when some other building shares the same x with
 a smaller y, i.e. when y is strictly inside the range of y values taken on

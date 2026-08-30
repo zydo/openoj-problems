@@ -1,5 +1,7 @@
 # Solutions — Maximum Number of Integers to Choose From a Range II
 
+## Greedy Smallest Available Values
+
 Taking the smallest available integer first is always safe: swapping any
 chosen number for a smaller unchosen one frees budget without losing
 count, so an optimal answer is exactly a prefix of the sorted allowed

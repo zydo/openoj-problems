@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3201,
   "slug": "find-the-maximum-length-of-valid-subsequence-i",

@@ -1,5 +1,7 @@
 # Solutions — Form Smallest Number From Two Digit Arrays
 
+## Common Digit or Ordered Pair
+
 A one-digit answer exists exactly when the two arrays share a digit, and any
 single shared digit beats every two-digit number, so the smallest common digit
 settles that case outright. The presence test is a hash set (or a 10-slot

@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1519,
   "slug": "number-of-nodes-in-the-sub-tree-with-the-same-label",

@@ -1,5 +1,7 @@
 # Solutions — Split With Minimum Sum
 
+## Sorted Alternating Digits
+
 The concatenation condition only pins down the digit multiset — the two
 parts can use the digits in any order and with leading zeros. So the
 task is really: deal every digit of num to one of two piles, then order

@@ -1,5 +1,7 @@
 # Solutions — Remove Letter To Equalize Frequency
 
+## Try Each Letter Removal
+
 Only the 26 letter counts matter, so the whole decision fits a fixed-size
 frequency array. The removal candidate is always "one occurrence of some
 present letter" — which specific index is irrelevant, since equal letters

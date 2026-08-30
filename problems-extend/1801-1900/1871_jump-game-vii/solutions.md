@@ -1,3 +1,5 @@
+# Solutions — Jump Game VII
+
 Treating this as a plain reachability problem and searching from each
 position over its whole jump interval is quadratic in the worst case: a
 string of all zeros with a wide window makes every position open the

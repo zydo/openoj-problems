@@ -1,5 +1,7 @@
 # Solutions — Minimum Array End
 
+## Embed Sequence Bits into Zero Positions
+
 Every element's AND with the others must keep every bit of `x`, so each
 element must be a bitwise superset of `x` — no element can clear any bit `x`
 holds. Conversely, if all elements are supersets of `x`, the AND keeps at

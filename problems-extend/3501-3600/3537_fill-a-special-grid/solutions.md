@@ -1,5 +1,7 @@
 # Solutions — Fill a Special Grid
 
+## Recursive Quadrant Filling
+
 The conditions fix one exact value for every cell. The top-right quadrant
 holds the smallest `4^(n-1)` numbers, the bottom-right the next batch, then
 the bottom-left, and the top-left the largest — and each quadrant is itself

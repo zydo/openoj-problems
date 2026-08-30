@@ -1,3 +1,5 @@
+# Solutions — Merge Triplets to Form Target Triplet
+
 The max-merge operation only ever increases coordinates, so any triplet
 that already exceeds `target` in some coordinate is poison — merging it
 in can never be undone. What remains is a pure coverage question.

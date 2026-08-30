@@ -1,5 +1,7 @@
 # Solutions — Sum of Largest Prime Substrings
 
+## Enumerate and Test Prime Substrings
+
 A length-10 string has at most 55 substrings, so the candidate set is tiny:
 every substring is parsed to its integer value — leading zeros disappear in
 the parse, which is exactly the note's rule — and the values go into a hash

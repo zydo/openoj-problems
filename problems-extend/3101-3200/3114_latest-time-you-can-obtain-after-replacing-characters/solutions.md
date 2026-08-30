@@ -1,5 +1,7 @@
 # Solutions — Latest Time You Can Obtain After Replacing Characters
 
+## Descending Time Enumeration
+
 The `"?"` seats are wildcards and every other seat is pinned, so a time is
 obtainable exactly when none of its five characters contradicts `s`. There
 are only `12 * 60 = 720` legal 12-hour times, so the direct route the hint

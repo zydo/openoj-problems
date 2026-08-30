@@ -1,3 +1,5 @@
+# Solutions — Minimum Skips to Arrive at Meeting On Time
+
 Working in fractional hours invites precision bugs, and searching skip
 subsets is exponential. Both go away with one DP over integer units of
 `dist * speed`: keep `dp[j]`, the smallest accumulated travel time

@@ -1,5 +1,7 @@
 # Solutions — Zero Array Transformation III
 
+## Greedy Coverage with a Max-Heap
+
 Because each kept query decrements every index of its range by at most 1
 and the amounts are chosen per index independently, a set of remaining
 queries succeeds exactly when every index `i` is covered at least

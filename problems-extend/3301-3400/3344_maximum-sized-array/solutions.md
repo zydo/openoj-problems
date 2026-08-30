@@ -1,5 +1,7 @@
 # Solutions — Maximum Sized Array
 
+## Separable Closed-Form Sum
+
 The triple sum factors cleanly. Every element is `i * (j OR k)`, so the
 total is the sum of `i` over the first axis times the sum of `j OR k` over
 all index pairs: `f(n) = M(n) * T(n)`, with `M(n) = n(n-1)/2` and `T(n)`

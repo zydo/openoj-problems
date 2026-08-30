@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "min_sacrifice",
   "id": 3767,
   "slug": "maximize-points-after-choosing-k-tasks",

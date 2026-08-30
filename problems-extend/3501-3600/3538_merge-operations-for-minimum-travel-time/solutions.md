@@ -1,5 +1,7 @@
 # Solutions — Merge Operations for Minimum Travel Time
 
+## Partition Dynamic Programming
+
 A merge never changes which sign survives a run: removing a block of signs
 folds their times, in order, into the first kept sign to the right, so a
 final configuration is fully described by the set of surviving signs. If

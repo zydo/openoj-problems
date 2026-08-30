@@ -86,6 +86,17 @@
           "O'Malley"
         ]
       ]
+    },
+    {
+      "input": [
+        "INSERT INTO Customers VALUES\n(3,'Moustafa','Egypt'),\n(2,'Jonathan','Peru'),\n(1,'Winston','USA');\nINSERT INTO Product VALUES\n(40,'LC Keychain',2),\n(30,'LC Book',45),\n(20,'LC T-Shirt',10),\n(10,'LC Phone',300);\nINSERT INTO Orders VALUES\n(9,3,30,'2020-05-08',3),\n(7,3,30,'2020-06-25',2),\n(6,3,20,'2020-06-24',2),\n(5,2,40,'2020-07-01',10),\n(4,2,10,'2020-06-15',2),\n(3,1,30,'2020-07-08',2),\n(2,1,20,'2020-07-01',1),\n(1,1,10,'2020-06-10',1);"
+      ],
+      "expected": [
+        [
+          1,
+          "Winston"
+        ]
+      ]
     }
   ]
 }

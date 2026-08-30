@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1016,
   "slug": "binary-string-with-substrings-representing-1-to-n",

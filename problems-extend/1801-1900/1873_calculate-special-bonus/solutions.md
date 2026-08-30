@@ -1,3 +1,5 @@
+# Solutions — Calculate Special Bonus
+
 The bonus rule is a single conditional over two columns, so the whole
 task is one projection: compute `salary` or `0` per row with a `CASE`
 expression, then order by the key.

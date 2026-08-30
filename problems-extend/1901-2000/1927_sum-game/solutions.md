@@ -1,5 +1,7 @@
 # Solutions — Sum Game
 
+## Half-Sum Difference Game
+
 Only the difference between the half-sums ever matters. Let `diff` be the left
 digit sum minus the right digit sum over the fixed digits, and let `k` be
 (question marks on the left) − (question marks on the right). Watch the

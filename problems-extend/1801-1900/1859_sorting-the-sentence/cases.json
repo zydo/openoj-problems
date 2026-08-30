@@ -31,6 +31,36 @@
         "Iota9 beta2 theta8 Alpha1 Eta7 zeta6 delta4 Epsilon5 Gamma3"
       ],
       "expected": "Alpha beta Gamma delta Epsilon zeta Eta theta Iota"
+    },
+    {
+      "input": [
+        "single1"
+      ],
+      "expected": "single"
+    },
+    {
+      "input": [
+        "world2 hello1"
+      ],
+      "expected": "hello world"
+    },
+    {
+      "input": [
+        "three3 one1 two2"
+      ],
+      "expected": "one two three"
+    },
+    {
+      "input": [
+        "d4 b2 e5 a1 c3"
+      ],
+      "expected": "a b c d e"
+    },
+    {
+      "input": [
+        "test4 a2 is3 This1"
+      ],
+      "expected": "This a is test"
     }
   ]
 }

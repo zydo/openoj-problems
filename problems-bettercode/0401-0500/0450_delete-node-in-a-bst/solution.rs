@@ -1,10 +1,3 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
-
 impl Solution {
     pub fn delete_node(root: Option<Box<TreeNode>>, key: i32) -> Option<Box<TreeNode>> {
         fn delete(node: Option<Box<TreeNode>>, key: i32) -> Option<Box<TreeNode>> {

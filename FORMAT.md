@@ -34,8 +34,7 @@ Solutions are authored on top of the generated starters.
 
 ```json
 {
-    "schema_version": 1,
-    "common_version": 2,
+    "schema_version": 2,
     "reference_solution": "",
     "id": 1,
     "slug": "two-sum",
@@ -49,10 +48,6 @@ Solutions are authored on top of the generated starters.
 
 - `id` matches the numeric directory prefix; `slug` and `title` match the
   directory and the statement's `# Title` heading.
-- `common_version` declares the common-library version the bundle was
-  authored against (`common/README.md` is the contract; version 2 added
-  `QuadNode`, `NestedInteger`, `NodeWithNext`, `MultiListNode`); it may
-  not exceed the checkout's `common/VERSION.json`.
 - `reference_solution` designates the time-cost baseline: `""` names the
   canonical `solution.<ext>` files, a variant slug names
   `solution_<variant>.<ext>`. It is always the optimal approach — the
@@ -157,10 +152,15 @@ the bundle offers. Full wire contracts, the per-language oracle
 construction table, and the statistical/validator judging modes live in
 the openoj repo's `docs/CODECS.md`.
 
-Classes a problem needs beyond the shared `common/` vocabulary — a
-named graph/list node, a struct record, a design class's helper types, an
-interactive oracle — ship as sources under the bundle's
-`provided/<language>/`. They are problem-set content (see the openoj
+Every class a problem's wire needs — `ListNode`, `TreeNode`, and the
+rest of the openoj repo's `docs/CODECS.md` wire→class table, a named
+graph/list node, a struct record, a design class's helper types, an
+interactive oracle — ships as source under the bundle's own
+`provided/<language>/`. There is no shared library: the judge holds no
+predefined data structures of its own, so every bundle is
+self-contained. Copy a well-known type's shape from a sibling bundle
+using the same kind — never hand-invent one, never share a definition
+across bundles. These sources are problem-set content (see the openoj
 repo's `docs/TRUST-BOUNDARIES.md`), assembled into every submission by
 the judge, and they follow each language's assembly rules (Rust sources
 use fully-qualified paths and no `use` lines; positional construction
@@ -181,7 +181,9 @@ the statement's examples and are shown in the problem pane; `hidden` cases
 are everything else. **The grouping is display-only — all case data is public
 by design.** This is a self-hosted, self-motivated learning framework:
 nothing is secret. Every `expected` value must be produced by running a
-reference solution, never hand-computed.
+reference solution, never hand-computed. A bundle normally has at least ten
+cases across the two display groups. A smaller suite is valid when it exhausts
+a finite single-integer input domain.
 
 ## statement.md
 

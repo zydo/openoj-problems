@@ -1,5 +1,7 @@
 # Solutions — Shortest Distance to Target String in a Circular Array
 
+## Circular Distance Scan
+
 Walking one direction around the ring from `startIndex` to a match at
 index `i` takes `d = |i − startIndex|` steps; walking the other way takes
 exactly `n − d`. The two directions never interleave — any step sequence

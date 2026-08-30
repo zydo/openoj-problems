@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3083,
   "slug": "existence-of-a-substring-in-a-string-and-its-reverse",

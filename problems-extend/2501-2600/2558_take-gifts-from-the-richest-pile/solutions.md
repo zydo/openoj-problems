@@ -1,5 +1,7 @@
 # Solutions — Take Gifts From the Richest Pile
 
+## Max-Heap Simulation
+
 The process is a straight simulation, and `floor(sqrt(v))` only ever
 shrinks a pile of size ≥ 1, so the only question is doing it cheaply.
 Fetching the current maximum dominates: a max-heap answers it — and takes

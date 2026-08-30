@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "rolling",
   "id": 98,
   "slug": "product-of-the-rest",

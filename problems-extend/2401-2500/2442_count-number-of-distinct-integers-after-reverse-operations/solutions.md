@@ -1,5 +1,7 @@
 # Solutions — Count Number of Distinct Integers After Reverse Operations
 
+## Values and Reversals Set
+
 The operation never rewrites the array — it only appends one reversal per
 original — so the final multiset is exactly "the originals" plus "the
 reversals", and its distinct values are the union of the two sets. That

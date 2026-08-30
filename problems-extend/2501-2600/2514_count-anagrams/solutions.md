@@ -1,5 +1,7 @@
 # Solutions — Count Anagrams
 
+## Multinomial Counting
+
 Anagrams of `s` are chosen word by word: permuting one word of `s` never
 interacts with the choices made for any other word, since each output word
 must be a permutation of exactly its input counterpart. So the total count

@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2060,
   "slug": "check-if-an-original-string-exists-given-two-encoded-strings",

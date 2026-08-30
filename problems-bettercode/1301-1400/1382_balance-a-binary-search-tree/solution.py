@@ -1,13 +1,6 @@
 from typing import List, Optional
 
 
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
 class Solution:
     def balanceBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         # phase 1: iterative in-order walk flattens the BST into sorted

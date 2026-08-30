@@ -1,5 +1,7 @@
 # Solutions — Number of Integers With Popcount-Depth Equal to K I
 
+## Digit Dynamic Programming by Popcount Target
+
 The depth chain of any `x ≥ 2` is one step longer than the depth chain of
 its own popcount: `x → popcount(x) → …`, so grouping the answer by
 popcount reduces the whole range to a small table. Precompute `depth[j]`

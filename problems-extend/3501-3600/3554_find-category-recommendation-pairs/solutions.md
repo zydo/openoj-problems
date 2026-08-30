@@ -1,5 +1,7 @@
 # Solutions — Find Category Recommendation Pairs
 
+## Co-Purchase Category Self-Join
+
 The grain of the question is the (customer, category) relationship, so the
 query builds it first: `ProductPurchases` joins `ProductInfo` on
 `product_id` to translate every purchase row into a (user, category) pair,

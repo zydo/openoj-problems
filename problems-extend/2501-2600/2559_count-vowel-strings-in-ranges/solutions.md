@@ -1,5 +1,7 @@
 # Solutions — Count Vowel Strings in Ranges
 
+## Vowel-String Prefix Sums
+
 Mark each string once — it counts exactly when its first and last
 characters are both vowels, a property independent of everything between
 them and of any query. Those marks feed a prefix-sum array whose entry

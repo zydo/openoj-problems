@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3879,
   "slug": "maximum-distinct-path-sum-in-a-binary-tree",

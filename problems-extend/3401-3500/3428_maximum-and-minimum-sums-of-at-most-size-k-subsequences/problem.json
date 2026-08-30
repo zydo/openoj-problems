@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3428,
   "slug": "maximum-and-minimum-sums-of-at-most-size-k-subsequences",

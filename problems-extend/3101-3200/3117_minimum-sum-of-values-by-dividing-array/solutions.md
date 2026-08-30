@@ -1,5 +1,7 @@
 # Solutions — Minimum Sum of Values by Dividing Array
 
+## Segment-AND Dynamic Programming
+
 Dynamic programming over the target list gives the backbone: after round
 `j`, `g[k]` holds the cheapest way to split the first `k` elements into
 exactly `j` segments matching `andValues[:j]`. A segment ending at `r` with

@@ -1,5 +1,7 @@
 # Solutions — Nested Array Generator
 
+## Explicit-Stack Depth-First Generator
+
 A generator function can simply recurse with `yield*`, and on LeetCode
 that is safe. OpenOJ's runner pins every submission to a shallow call
 stack, so instead the traversal keeps an explicit stack of frames, where

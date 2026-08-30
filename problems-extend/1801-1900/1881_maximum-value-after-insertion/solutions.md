@@ -1,3 +1,5 @@
+# Solutions — Maximum Value after Insertion
+
 Comparing all `len(n) + 1` insertion candidates numerically is quadratic
 in the string length once big-integer parsing is involved. Greedy
 reasoning removes the comparison entirely: the first position where

@@ -1,5 +1,7 @@
 # Solutions — Maximum Prime Difference
 
+## First and Last Prime Indices
+
 The maximum distance between any two prime-bearing indices is always
 `last - first`, where `first` and `last` are the earliest and latest indices
 whose value is prime: extending the index range can only help, so the two

@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "trie_top_three",
   "id": 403,
   "slug": "autocomplete-suggestions",

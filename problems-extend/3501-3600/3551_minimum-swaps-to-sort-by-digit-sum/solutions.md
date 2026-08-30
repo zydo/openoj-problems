@@ -1,5 +1,7 @@
 # Solutions — Minimum Swaps to Sort by Digit Sum
 
+## Permutation-Cycle Swaps
+
 The target order is fixed by the key `(digit sum, value)` — the value
 tiebreak is what makes the order total, since equal digit sums must end
 up in increasing value order. Any rearrangement of distinct elements into

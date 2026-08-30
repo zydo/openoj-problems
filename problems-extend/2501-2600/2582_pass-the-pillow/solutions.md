@@ -1,5 +1,7 @@
 # Solutions — Pass the Pillow
 
+## Folded Period Arithmetic
+
 The pillow's motion is periodic with period `2 * (n - 1)` seconds: after
 one traversal it sits at person `n`, after two it is back at person 1,
 and every later second repeats that pattern. So `time` splits into a

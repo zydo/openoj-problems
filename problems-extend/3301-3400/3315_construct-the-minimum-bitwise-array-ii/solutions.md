@@ -1,5 +1,7 @@
 # Solutions — Construct the Minimum Bitwise Array II
 
+## Trailing-Ones Bit Construction
+
 The impossibility case has a one-line shape: `a OR (a + 1)` always ends in a
 set low bit (`a + 1` flips the trailing zero-run of `a` up, and OR-ing `a`
 back in keeps at least that final 1), so the value is always odd — among

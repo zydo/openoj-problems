@@ -1,3 +1,5 @@
+# Solutions — Reduction Operations to Make the Array Elements Equal
+
 Simulating the operations one at a time is quadratic or worse, but the
 total is easy to see from the sorted order: every element must be
 lowered through each distinct value strictly below it exactly once, and

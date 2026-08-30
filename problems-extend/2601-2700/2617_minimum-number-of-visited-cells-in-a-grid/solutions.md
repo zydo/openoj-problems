@@ -1,5 +1,7 @@
 # Solutions — Minimum Number of Visited Cells in a Grid
 
+## Row and Column Reachability Heaps
+
 Every move goes strictly right or down, so the grid is a DAG whose
 topological order is simply a row-major scan: when a cell is reached, no
 future cell can ever feed back into it and its distance is final. Scanning

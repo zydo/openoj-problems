@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "inorder_iterative",
   "id": 94,
   "slug": "select-kth-smallest-in-a-search-tree",

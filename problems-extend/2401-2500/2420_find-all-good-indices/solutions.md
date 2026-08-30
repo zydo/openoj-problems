@@ -1,5 +1,7 @@
 # Solutions — Find All Good Indices
 
+## Monotone-Run Prefix Counts
+
 Checking one index by scanning both of its windows costs `O(k)`, so the
 per-index brute force is `O(n·k)` — up to `10¹⁰` at the constraints, far
 too slow. The two conditions are monotone-run questions, and run lengths

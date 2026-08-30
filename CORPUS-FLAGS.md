@@ -394,8 +394,9 @@ tie inputs); bundle `problems-extend/3301-3400/3313_find-the-last-marked-nodes-i
 
 ## 13. extend subset-language bundles vs the all-seven starter law in gen_starters/check
 
-**State**: OPEN 2026-08-28 — corpus ruled correct; tooling law needs a
-decision. Nothing was edited; the finding is recorded for that decision.
+**State**: RESOLVED 2026-08-29 — tooling now follows the documented
+starter-defined offered-language law while retaining strict starter/solution and
+variant-set symmetry.
 
 **What happened**: `scripts/gen_starters.py --check` (and check.py's
 static tier, same `starter_files()` expectation) requires design and
@@ -419,6 +420,38 @@ starter↔solution symmetry requirement), or (b) author the missing
 languages for the 64 bundles ( contradicts the crawl wire family these
 bundles encode).
 
+## 14. 0095_unique-binary-search-trees-ii — n=8 exceeds the old output limit
+
+**State**: RESOLVED 2026-08-29 — the bundle output limit is 128 KiB and the
+previously omitted `n = 8` boundary case is covered.
+
+**What happened**: the statement permits `1 <= n <= 8`, but the original cases
+stopped at `n = 7`. The `n = 8` result contains all 1,430 unique BSTs; its
+canonical compact JSON encoding is 65,781 bytes, 245 bytes above the bundle's
+old 64 KiB output limit. Python correctly rejected that valid return before the
+judge could compare it. The limit, not the algorithm or expected value, was the
+contradiction.
+
+**Evidence**: the new expected value is generated independently by enumerating
+every root split and serializing each tree in level order. All 1,430 trees fit
+under 128 KiB, and the complete `n = 1..8` domain is now represented.
+
+## 15. 3437_permutations-iii — n=10 exceeds the old output limit
+
+**State**: RESOLVED 2026-08-29 — the bundle output limit is 1 MiB and the
+previously omitted `n = 10` boundary case is covered.
+
+**What happened**: the statement permits `1 <= n <= 10`, but the original
+cases stopped at `n = 9`. The `n = 10` result contains 28,800 alternating-parity
+permutations; its canonical compact JSON encoding is 662,401 bytes, far above
+the bundle's old 64 KiB output limit. Python correctly rejected that valid
+return before comparison.
+
+**Evidence**: the new expected value is generated independently by enumerating
+all permutations of `1..10` and retaining exactly those whose adjacent values
+have opposite parity. The 28,800-result encoding fits under the new 1 MiB
+limit, and the complete `n = 1..10` domain is represented.
+
 ## Resolution log
 
 - [ ] 1. 0432 — decide drop / any_of / comparator (verify any_of first)
@@ -431,5 +464,10 @@ bundles encode).
       shipped; 0478/0519 landed and verified green
 - [x] 12. 3313 — RESOLVED 2026-08-28: judge-side `last_marked_nodes`
       validator shipped; expecteds now validator-mode, re-gated green
-- [ ] 13. subset-language bundles — pick (a) subset-aware starter check
-      or (b) author the missing languages
+- [x] 13. subset-language bundles — RESOLVED 2026-08-29: generator and
+      checker validate exactly the languages selected by existing starters;
+      new bundles still receive the invocation's complete default set
+- [x] 14. 0095 — RESOLVED 2026-08-29: raised output limit to 128 KiB and
+      added the independently generated `n = 8` boundary case
+- [x] 15. 3437 — RESOLVED 2026-08-29: raised output limit to 1 MiB and
+      added the independently generated `n = 10` boundary case

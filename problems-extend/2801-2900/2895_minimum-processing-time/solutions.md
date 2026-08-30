@@ -1,5 +1,7 @@
 # Solutions — Minimum Processing Time
 
+## Opposite-Order Greedy Pairing
+
 Only the last task a processor finishes matters, so the makespan of an
 assignment is the largest processorTime + task pair among its matches, and
 the goal is to arrange the four-way grouping to minimize that largest pair.

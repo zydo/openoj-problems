@@ -1,5 +1,7 @@
 # Solutions — Multiply Two Polynomials
 
+## Fast Fourier Transform Convolution
+
 The product coefficient `result[i]` is the convolution sum
 `Σ poly1[j] * poly2[i - j]`; computing those directly is `O(n * m)` —
 `2.5 * 10⁹` products at the constraint limits — so the product is

@@ -1,5 +1,7 @@
 # Solutions — Find the Maximum Number of Fruits Collected
 
+## Fixed Diagonal and Two Boundary Dynamic Programs
+
 The first child's moves always advance both coordinates, so after `n − 1`
 moves it lands on `(n − 1, n − 1)` only one way — straight down the main
 diagonal — and its harvest is simply the diagonal sum. The other two

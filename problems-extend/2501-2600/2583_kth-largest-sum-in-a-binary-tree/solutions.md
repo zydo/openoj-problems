@@ -1,5 +1,7 @@
 # Solutions — Kth Largest Sum in a Binary Tree
 
+## Level-Order Sums and Selection
+
 The level of a node is exactly its distance from the root, so grouping
 nodes by breadth-first order groups them by level: every node dequeued
 between two batch boundaries shares one distance, and its children queue

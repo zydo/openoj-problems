@@ -1,5 +1,7 @@
 # Solutions — Find the Maximum Length of Valid Subsequence I
 
+## Parity-State Dynamic Programming
+
 Working modulo 2 collapses every element to its parity, and the validity
 condition says the sum of each adjacent pair lands on one fixed residue.
 Fixing what that residue does to the shape: sums must be constantly even

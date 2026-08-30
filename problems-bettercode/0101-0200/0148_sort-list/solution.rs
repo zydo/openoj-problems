@@ -1,9 +1,3 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
 impl Solution {
     // Merge by relinking: keep the smaller front node and recurse on the
     // remainder; <= takes from the first half on ties, keeping it stable.

@@ -1,5 +1,7 @@
 # Solutions — Grid Teleportation Traversal
 
+## Zero-One BFS with Portal Expansion
+
 Treat every portal of a letter as one big super-node, exactly as hint 1
 suggests: stepping on any cell with letter `L` makes all other `L`-cells
 reachable at zero cost, but only the first time — afterwards the letter is

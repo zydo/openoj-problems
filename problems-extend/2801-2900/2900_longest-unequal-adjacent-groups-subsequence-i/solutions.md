@@ -1,5 +1,7 @@
 # Solutions — Longest Unequal Adjacent Groups Subsequence I
 
+## One Word per Group Run
+
 groups is binary, so an alternating subsequence never uses two elements of
 the same group in a row — within any maximal run of equal group values at
 most one element can be kept, and keeping the run's first element can never

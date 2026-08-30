@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1647,
   "slug": "minimum-deletions-to-make-character-frequencies-unique",

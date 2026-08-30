@@ -1,3 +1,5 @@
+# Solutions — Cutting Ribbons
+
 Testing every candidate length linearly is too slow — lengths run to
 `10^5` and each test scans all ribbons. The feasibility predicate is
 monotone (if length `x` yields `k` pieces, so does any shorter length),

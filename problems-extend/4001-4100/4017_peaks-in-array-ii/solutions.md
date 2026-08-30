@@ -1,5 +1,7 @@
 # Solutions — Peaks in Array II
 
+## Peak Gaps and Range Counting
+
 Count each peak subarray through its leftmost interior peak. If the peaks
 strictly inside `[l, r]` are `a = p1 < p2 < ... < pt = b`, a subarray whose
 leftmost peak is `pi` starts at any `i'` from `max(l, prev(pi))` through

@@ -1,5 +1,7 @@
 # Solutions — Count the Number of Vowel Strings in Range
 
+## Direct Range Scan
+
 A word in `words` counts exactly when its first and last characters are
 both vowels; nothing about its interior or length matters (a one-letter
 vowel satisfies both ends at once). The answer is therefore a single scan

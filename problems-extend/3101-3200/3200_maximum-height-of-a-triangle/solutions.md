@@ -1,5 +1,7 @@
 # Solutions — Maximum Height of a Triangle
 
+## Simulate Both Starting Colors
+
 The triangle is filled contiguously from the top: row `k` needs exactly `k`
 balls, all one color, and every row must differ in color from its two
 neighbors. The color pattern is therefore forced once the top row's color

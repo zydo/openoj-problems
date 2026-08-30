@@ -1,5 +1,7 @@
 # Solutions — Disconnect Path in a Binary Matrix by at Most One Flip
 
+## Erase One Path and Search Again
+
 A flip can only help if it removes connectivity, and removing means
 turning a `1` into a `0` — creating extra `1` cells only ever adds paths,
 because movement follows live cells. So the whole game is about the

@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3442,
   "slug": "maximum-difference-between-even-and-odd-frequency-i",

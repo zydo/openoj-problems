@@ -1,5 +1,7 @@
 # Solutions — Maximum Sum With Exactly K Elements
 
+## Greedy Arithmetic Progression
+
 Greedy first principles: on every operation the score gains exactly the
 value taken, so taking a larger element now is never worse — it scores
 more immediately and returns `m + 1` to the array, dominating any smaller

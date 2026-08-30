@@ -1,5 +1,7 @@
 # Solutions — Color the Triangle Red
 
+## Four-Row Construction
+
 The construction follows the hint's "four rows at a time, going bottom
 up" shape directly. Rows are grouped into bands of four counted from the
 bottom; whatever remains at the top (`n % 4` rows, the tip) is seeded on

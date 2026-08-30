@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "prefix_palindrome",
   "id": 3766,
   "slug": "minimum-operations-to-make-binary-palindrome",

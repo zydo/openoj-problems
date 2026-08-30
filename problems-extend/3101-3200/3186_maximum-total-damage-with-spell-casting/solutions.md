@@ -1,5 +1,7 @@
 # Solutions — Maximum Total Damage With Spell Casting
 
+## Aggregated Delete-and-Earn Dynamic Programming
+
 The restriction ties a spell's fallout to its damage value, so every copy
 of one value lives or dies together: casting any single damage-`x` spell
 makes the remaining damage-`x` spells illegal anyway, while taking all of

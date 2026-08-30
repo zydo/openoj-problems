@@ -1,10 +1,3 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
-
 impl Solution {
     pub fn max_path_sum(root: Option<Box<TreeNode>>) -> i32 {
         // A path must contain at least one node, so start at -inf, not 0.

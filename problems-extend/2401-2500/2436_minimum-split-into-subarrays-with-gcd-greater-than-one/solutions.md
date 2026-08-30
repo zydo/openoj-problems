@@ -1,5 +1,7 @@
 # Solutions — Minimum Split Into Subarrays With GCD Greater Than One
 
+## Greedy GCD Segments
+
 A subarray's gcd can only decrease as the subarray grows (hint 2), and it
 decreases toward whatever the newest element contributes. That monotone
 shrinkage makes the split greedy: while the open block's running gcd is

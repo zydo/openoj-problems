@@ -1,5 +1,7 @@
 # Solutions — Count Stable Subarrays
 
+## Count Within Nondecreasing Runs
+
 A subarray is stable exactly when it reads non-decreasing, so stability is a
 property of runs: cut `nums` into its maximal non-decreasing segments and no
 stable subarray ever crosses a boundary between two of them. For one end

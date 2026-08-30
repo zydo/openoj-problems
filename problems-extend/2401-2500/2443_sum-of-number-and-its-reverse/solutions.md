@@ -1,5 +1,7 @@
 # Solutions — Sum of Number and Its Reverse
 
+## Exhaustive Reverse Search
+
 The candidate set is closed and small: if `num = x + rev(x)`, then `x`
 cannot exceed `num` (the reverse is non-negative), so checking every `x`
 in `[0, num]` is a complete search — at most `100001` trials at the

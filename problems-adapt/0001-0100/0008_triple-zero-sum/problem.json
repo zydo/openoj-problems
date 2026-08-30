@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "sort_two_pointer",
   "id": 8,
   "slug": "triple-zero-sum",

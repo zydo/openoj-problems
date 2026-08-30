@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3106,
   "slug": "lexicographically-smallest-string-after-operations-with-constraint",

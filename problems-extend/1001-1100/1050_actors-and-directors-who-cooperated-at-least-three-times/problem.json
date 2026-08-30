@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1050,
   "slug": "actors-and-directors-who-cooperated-at-least-three-times",

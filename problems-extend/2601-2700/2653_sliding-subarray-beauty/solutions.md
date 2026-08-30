@@ -1,5 +1,7 @@
 # Solutions — Sliding Subarray Beauty
 
+## Sliding Frequency Table
+
 Only negative values can ever be a beauty: when a window holds fewer
 than x negatives the answer is defined to be 0, so positive values and
 zeros contribute nothing except occupying space. Every element is bounded

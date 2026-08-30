@@ -1,5 +1,7 @@
 # Solutions — Count Prefix and Suffix Pairs I
 
+## Pairwise Prefix-and-Suffix Checks
+
 With at most 50 words of at most 10 characters each, every pair can be
 examined directly; no indexing structure is needed.
 

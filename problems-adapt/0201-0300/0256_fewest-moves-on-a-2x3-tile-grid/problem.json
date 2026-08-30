@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 256,
   "slug": "fewest-moves-on-a-2x3-tile-grid",

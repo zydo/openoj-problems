@@ -1,5 +1,7 @@
 # Solutions — Longest Common Prefix Between Adjacent Strings After Removals
 
+## Prefix and Suffix Adjacent-LCP Maxima
+
 Removing `words[i]` barely disturbs the adjacency structure: every
 adjacent pair of the original array survives except the two that touched
 `i`, and exactly one new pair — `(i-1, i+1)` — appears. So

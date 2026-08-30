@@ -1,10 +1,3 @@
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
-
 impl Solution {
     pub fn min_camera_cover(root: Option<Box<TreeNode>>) -> i32 {
         // States: 0 = uncovered, 1 = has a camera, 2 = covered.

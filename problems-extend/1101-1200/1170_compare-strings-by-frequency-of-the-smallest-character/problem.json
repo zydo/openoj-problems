@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1170,
   "slug": "compare-strings-by-frequency-of-the-smallest-character",

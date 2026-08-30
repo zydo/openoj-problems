@@ -1,5 +1,7 @@
 # Solutions — Minimum Additions to Make Valid String
 
+## Repeating-Pattern Greedy Scan
+
 A valid string is the pattern `abc` repeated some number of times, so
 imagine a second pointer stepping through that repeating pattern slot by
 slot while a first pointer walks `word`. Every time the two pointers look

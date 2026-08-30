@@ -1,5 +1,7 @@
 # Solutions — Smallest Index With Digit Sum Equal to Index
 
+## Direct Digit-Sum Scan
+
 The condition is checked per position independently — the digit sum of
 `nums[i]` against the constant `i` — and the statement asks for the
 smallest qualifying index, so a single left-to-right scan that returns on

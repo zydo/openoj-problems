@@ -1,5 +1,7 @@
 # Solutions — Maximum Product of Two Digits
 
+## Track the Two Largest Digits
+
 Every digit of `n` is non-negative, so among all pairs of digits the largest
 product is always the one formed by the two largest digits: swapping either
 member of the top pair for a smaller digit can only shrink the product. The

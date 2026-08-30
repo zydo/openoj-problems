@@ -1,5 +1,7 @@
 # Solutions — Calculate Delayed Arrival Time
 
+## Modulo-24 Arithmetic
+
 The 24-hour clock wraps exactly once here — `arrivalTime` stays below 24
 and `delayedTime` can push the sum to at most `23 + 24 = 47` — and that
 wrap is precisely what the modulo operator computes. Adding the two times

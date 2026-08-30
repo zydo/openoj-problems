@@ -1,5 +1,7 @@
 # Solutions — Minimum Time to Complete All Tasks
 
+## Latest-Time Greedy Scheduling
+
 Process the tasks in ascending order of `end` and satisfy each one by
 running it as late as possible. Booking a second at time `t` can only
 help future tasks whose windows contain `t`, and windows processed later

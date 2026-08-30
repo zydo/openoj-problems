@@ -1,5 +1,7 @@
 # Solutions — Determine if Two Events Have Conflict
 
+## Interval Overlap in Minutes
+
 Each `"HH:MM"` timestamp names one minute of the day, so the clean move
 (hint 1) is to parse it into that minute count — `HH * 60 + MM` — after
 which every event is just an inclusive integer interval `[start, end]`.

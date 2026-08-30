@@ -1,5 +1,7 @@
 # Solutions — Number of Ways to Earn Points
 
+## Bounded Knapsack Dynamic Programming
+
 This is a bounded knapsack: score plays the capacity role, each question
 type is one item group worth `marksi` points per unit with at most
 `counti` copies available, and the answer is the number of ways to fill

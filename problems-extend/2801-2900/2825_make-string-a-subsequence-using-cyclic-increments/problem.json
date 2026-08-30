@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2825,
   "slug": "make-string-a-subsequence-using-cyclic-increments",

@@ -1,5 +1,7 @@
 # Solutions — Minimum Right Shifts to Sort the Array
 
+## Count Rotation Breaks
+
 Sorting nums with right shifts alone is possible exactly when nums is a
 rotation of its sorted order, and with distinct elements that shape has a
 local signature: walking the circular array, the values must ascend

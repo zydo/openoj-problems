@@ -1,5 +1,7 @@
 # Solutions — Number of Valid Clock Times
 
+## Independent Field Counting
+
 The hour field and the minute field never constrain each other: whatever
 digits the minutes take, the set of legal hours is unchanged, and vice
 versa. So the count of valid full times is exactly

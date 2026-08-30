@@ -1,5 +1,7 @@
 # Solutions — Phone Number Prefix
 
+## Sort and Check Adjacent Numbers
+
 Sorting brings every prefix relationship to the surface between
 neighbors. If `x` is a prefix of `y`, then `x` sorts before `y`, and
 any string landing between them in sorted order must also start with

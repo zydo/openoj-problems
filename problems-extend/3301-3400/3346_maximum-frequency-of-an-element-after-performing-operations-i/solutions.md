@@ -1,5 +1,7 @@
 # Solutions — Maximum Frequency of an Element After Performing Operations I
 
+## Sweep Target Intervals
+
 Pick a target value `v`: every element inside `[v - k, v + k]` can be
 brought to `v`, the ones already equal to `v` for free and every other one
 for a single operation. Because `numOperations <= n`, operations left over

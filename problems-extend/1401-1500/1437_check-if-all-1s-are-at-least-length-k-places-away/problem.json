@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1437,
   "slug": "check-if-all-1s-are-at-least-length-k-places-away",

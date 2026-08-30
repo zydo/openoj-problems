@@ -1,3 +1,5 @@
+# Solutions — Check if Word Equals Summation of Two Words
+
 The definition maps each word to an integer by concatenating decimal
 digits, so the direct route builds that digit string per word and parses
 it. The same integer falls out of a tiny positional fold: each letter's

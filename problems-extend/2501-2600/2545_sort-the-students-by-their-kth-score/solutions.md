@@ -1,5 +1,7 @@
 # Solutions — Sort the Students by Their Kth Score
 
+## Sort Rows by One Column
+
 The problem reduces to one comparison-based sort of the rows: each
 student's rank depends only on their single entry in column `k`, so the
 comparison key for a row is a constant-time index into it. Sorting rows

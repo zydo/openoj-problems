@@ -1,5 +1,7 @@
 # Solutions — Find Maximal Uncovered Ranges
 
+## Sort and Merge Covered Ranges
+
 The array length n can be 10⁹, so every approach that paints cells or
 sweeps positions is hopeless; the answer, however, is carved entirely
 from range endpoints. Sorting the given ranges by start makes their union

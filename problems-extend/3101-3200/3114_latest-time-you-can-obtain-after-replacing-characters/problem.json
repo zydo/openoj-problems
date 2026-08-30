@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3114,
   "slug": "latest-time-you-can-obtain-after-replacing-characters",

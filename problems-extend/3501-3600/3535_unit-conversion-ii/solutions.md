@@ -1,5 +1,7 @@
 # Solutions — Unit Conversion II
 
+## Tree Propagation of Conversion Rates
+
 The conversion edges form a tree rooted at unit 0, because the statement
 guarantees every unit is uniquely reachable from unit 0 through forward or
 backward conversions. For each unit `u` define `fromRoot[u]` as the number

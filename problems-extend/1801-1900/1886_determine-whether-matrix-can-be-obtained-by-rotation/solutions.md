@@ -1,3 +1,5 @@
+# Solutions — Determine Whether Matrix Can Be Obtained By Rotation
+
 Four 90-degree rotations return any matrix to its start, so the search
 space is exactly four candidates — no cleverness is needed beyond
 applying the rotation formula and comparing.

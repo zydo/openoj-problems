@@ -1,5 +1,7 @@
 # Solutions — Rearrange Array to Maximize Prefix Score
 
+## Descending Prefix Sums
+
 Sorting in decreasing order is optimal because it maximizes every prefix
 sum at once: for any arrangement, the set of elements appearing before
 position `k` has sum at most that of the `k` largest elements, which is

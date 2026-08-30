@@ -1,3 +1,5 @@
+# Solutions — Minimize Product Sum of Two Arrays
+
 Checking arrangements one at a time is factorial, and even a local-swap
 search has no obvious stopping point. The rearrangement inequality
 settles it globally: for two sorted sequences, the sum of products is

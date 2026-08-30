@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3627,
   "slug": "maximum-median-sum-of-subsequences-of-size-3",

@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1455,
   "slug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",

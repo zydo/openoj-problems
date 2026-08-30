@@ -5,12 +5,6 @@ from typing import List, Optional
 sys.setrecursionlimit(10_000)
 
 
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # A missing head or a last node is already reversed: it is its own

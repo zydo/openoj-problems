@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1989,
   "slug": "maximum-number-of-people-that-can-be-caught-in-tag",

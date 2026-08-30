@@ -1,5 +1,7 @@
 # Solutions — Minimum Jumps to Reach Home
 
+## Breadth-First Search with Direction State
+
 Treat the line as a graph: every node is a pair `(position, back)`, where
 `back` records that the jump just made went backward. That one bit carries
 the "never twice in a row" rule — from a node with `back` set, the only

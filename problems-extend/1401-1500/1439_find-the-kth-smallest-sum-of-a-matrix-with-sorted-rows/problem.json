@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1439,
   "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",

@@ -49,6 +49,18 @@
         "x1"
       ],
       "expected": "xy"
+    },
+    {
+      "input": [
+        "a0c0e0"
+      ],
+      "expected": "aaccee"
+    },
+    {
+      "input": [
+        "a9a8a7a6"
+      ],
+      "expected": "ajaiahag"
     }
   ]
 }

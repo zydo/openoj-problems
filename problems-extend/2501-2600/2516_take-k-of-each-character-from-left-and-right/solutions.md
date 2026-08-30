@@ -1,5 +1,7 @@
 # Solutions — Take K of Each Character From Left and Right
 
+## Longest Keepable Sliding Window
+
 Taking from the two ends is the mirror image of keeping one contiguous
 middle: if the kept stretch runs from index `l` to `r`, the minutes spent
 are exactly `l + (n − 1 − r) + ... ` — in other words, every split into

@@ -1,5 +1,7 @@
 # Solutions — Find Maximum Removals From Source String
 
+## Subsequence Dynamic Programming with Removal Rewards
+
 Walk `source` left to right while carrying one number per pattern prefix
 length: the most removals achievable so far having matched exactly that many
 characters of `pattern`. Each position of `source` offers three moves, and

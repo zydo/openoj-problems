@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2814,
   "slug": "minimum-time-takes-to-reach-destination-without-drowning",

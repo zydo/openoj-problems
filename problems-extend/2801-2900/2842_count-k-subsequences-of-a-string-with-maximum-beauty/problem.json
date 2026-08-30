@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2842,
   "slug": "count-k-subsequences-of-a-string-with-maximum-beauty",

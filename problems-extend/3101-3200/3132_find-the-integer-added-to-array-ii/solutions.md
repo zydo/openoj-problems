@@ -1,5 +1,7 @@
 # Solutions — Find the Integer Added to Array II
 
+## Try the Three Smallest Shifts
+
 Whatever two elements end up removed, adding `x` rigidly shifts every
 survivor, so sorted order is preserved under the shift: the kept elements of
 `nums1`, plus `x`, must equal `nums2` element-for-element when both are

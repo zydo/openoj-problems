@@ -1,3 +1,5 @@
+# Solutions — Minimize Maximum Pair Sum in Array
+
 Trying to decide pairs locally has no safe greedy order until the array
 is sorted: the largest element must be paired with something, and its
 partner choice alone can dominate the answer. Sorting turns the question

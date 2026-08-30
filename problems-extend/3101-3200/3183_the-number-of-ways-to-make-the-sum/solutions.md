@@ -1,5 +1,7 @@
 # Solutions — The Number of Ways to Make the Sum
 
+## Enumerate the Scarce Coin Count
+
 Only the value-4 coin is scarce; every other denomination is unlimited,
 and the statement caps it at two indistinguishable copies. Splitting any
 target by how many six-coins it uses collapses the unbounded part of the

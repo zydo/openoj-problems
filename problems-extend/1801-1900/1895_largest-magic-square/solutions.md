@@ -1,3 +1,5 @@
+# Solutions — Largest Magic Square
+
 A square is magic when every row, column, and both diagonals share one
 sum. Re-summing each candidate's lines cell by cell repeats the same
 work across overlapping windows; prefix sums answer any line-sum

@@ -1,5 +1,7 @@
 # Solutions — Path Existence Queries in a Graph II
 
+## Component Jumps and Binary Lifting
+
 Sort the node ids by value and work in that order. Two structural facts
 make the queries cheap. First, components are contiguous segments: a node's
 neighbors are exactly the sorted positions whose values lie within maxDiff,

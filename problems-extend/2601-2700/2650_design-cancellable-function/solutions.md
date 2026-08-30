@@ -1,5 +1,7 @@
 # Solutions — Design Cancellable Function
 
+## Promise Stepper with Cancellation Race
+
 `cancellable` returns a promise whose executor starts one recursive
 stepper. The stepper advances the generator with `next()`; every yielded
 promise gets two continuations — its fulfillment resumes the generator via

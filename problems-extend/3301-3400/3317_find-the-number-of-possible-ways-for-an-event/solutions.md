@@ -1,5 +1,7 @@
 # Solutions — Find the Number of Possible Ways for an Event
 
+## Stirling Dynamic Programming and Stage Weights
+
 Count by the shape of the assignment instead of the performers' order. Let
 `dp[j]` be the number of ways the first `i` performers can occupy exactly
 `j` of the `x` stages as `j` nonempty bands — which stages those are

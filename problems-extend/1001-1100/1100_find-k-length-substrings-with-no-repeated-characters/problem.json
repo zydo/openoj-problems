@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 1100,
   "slug": "find-k-length-substrings-with-no-repeated-characters",

@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "bounded_sweep",
   "id": 3764,
   "slug": "most-common-course-pairs",

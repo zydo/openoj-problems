@@ -1,3 +1,5 @@
+# Solutions — Group Employees of the Same Salary
+
 The grouping rule has two parts that must be computed before any row can
 be output: which salaries appear at least twice, and the dense rank of
 those salaries among themselves. A single query over a salary-level

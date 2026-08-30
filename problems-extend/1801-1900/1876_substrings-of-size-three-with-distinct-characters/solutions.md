@@ -1,3 +1,5 @@
+# Solutions — Substrings of Size Three with Distinct Characters
+
 Building each length-three substring and testing it with a set is
 perfectly workable at this size, but the window is so short that the
 distinctness test collapses to three pairwise comparisons — no set or

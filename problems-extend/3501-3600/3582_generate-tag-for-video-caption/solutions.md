@@ -1,5 +1,7 @@
 # Solutions — Generate Tag for Video Caption
 
+## Normalize Words into Camel Case
+
 The three actions run in order. Splitting the caption on runs of spaces
 yields the words; joining them camelCase-style means the first word is
 written fully lowercase while every later word keeps a single capital —

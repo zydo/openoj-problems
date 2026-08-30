@@ -1,5 +1,7 @@
 # Solutions — Minimum Operations to Collect Elements
 
+## Reverse Suffix Scan
+
 Operations only ever remove the current last element, so after `t`
 operations the collection is exactly the suffix of `nums` of length `t`,
 and the question reduces to the shortest suffix that contains every value

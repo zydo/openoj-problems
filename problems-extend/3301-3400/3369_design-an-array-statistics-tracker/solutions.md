@@ -1,5 +1,7 @@
 # Solutions — Design an Array Statistics Tracker
 
+## Queues, Heaps, and Frequency Counts
+
 Each statistic gets a structure it can maintain incrementally. The mean
 comes from a running sum over the values, adjusted by each add and
 remove. The median comes from two heaps that split the live values into

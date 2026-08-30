@@ -1,5 +1,7 @@
 # Solutions — Minimum Array Sum
 
+## Two-Resource Dynamic Programming
+
 Process the array from right to left with a DP over the operations left:
 `dp[a][b]` is the smallest achievable sum of the yet-unprocessed suffix
 when `a` halving operations and `b` subtraction operations remain. Each

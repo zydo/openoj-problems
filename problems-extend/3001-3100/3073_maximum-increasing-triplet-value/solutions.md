@@ -1,5 +1,7 @@
 # Solutions — Maximum Increasing Triplet Value
 
+## Prefix and Suffix Maxima
+
 The value `nums[i] - nums[j] + nums[k]` splits by the middle index: for a
 fixed `j` it is maximized by the largest legal partner on each side, so one
 sweep collecting both partners beats enumerating triplets.

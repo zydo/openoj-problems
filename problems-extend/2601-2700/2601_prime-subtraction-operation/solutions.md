@@ -1,5 +1,7 @@
 # Solutions — Prime Subtraction Operation
 
+## Greedy Prime Subtraction
+
 Think of scanning `nums` left to right while maintaining `prev`, the smallest
 value the processed prefix can end on. A smaller prefix end is never worse for
 the rest of the array: every later element only needs to exceed `prev`, so

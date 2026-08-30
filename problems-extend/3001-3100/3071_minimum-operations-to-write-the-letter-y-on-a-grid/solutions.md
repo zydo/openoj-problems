@@ -1,5 +1,7 @@
 # Solutions — Minimum Operations to Write the Letter Y on a Grid
 
+## Count Y and Background Colors
+
 Only two facts about the grid matter: how many Y cells hold each value and how
 many non-Y cells hold each value, so one counting pass replaces any search.
 

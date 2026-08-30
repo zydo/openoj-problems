@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "two_pass_dp",
   "id": 201,
   "slug": "nearest-zero-distances",

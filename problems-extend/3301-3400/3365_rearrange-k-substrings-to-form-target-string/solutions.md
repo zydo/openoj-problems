@@ -1,5 +1,7 @@
 # Solutions — Rearrange K Substrings to Form Target String
 
+## Chunk Multiset Comparison
+
 Splitting `s` into `k` equal chunks and reordering them can produce `t`
 exactly when `s`'s chunk sequence, viewed as a multiset, equals `t`'s
 chunk sequence viewed the same way: the concatenation order is free, so

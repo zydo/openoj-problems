@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "bottom_up",
   "id": 17,
   "slug": "summands-to-a-target",

@@ -1,5 +1,7 @@
 # Solutions — Count Special Triplets
 
+## Left and Right Frequency Counts
+
 Anchor the triplet on its middle index `j`: the conditions
 `nums[i] == nums[j] * 2` and `nums[k] == nums[j] * 2` only mention `j`'s
 value, so with `v = nums[j]` the index `j` contributes exactly

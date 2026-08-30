@@ -1,5 +1,7 @@
 # Solutions — Throttle
 
+## Trailing-Call Throttle State Machine
+
 A throttled wrapper keeps two closure variables: a flag saying whether a
 window is open and a saved-latest-arguments slot for calls that landed
 inside it. The first invocation executes `fn` on the spot and arms exactly

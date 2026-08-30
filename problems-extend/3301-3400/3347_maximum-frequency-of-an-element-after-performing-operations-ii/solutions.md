@@ -1,5 +1,7 @@
 # Solutions — Maximum Frequency of an Element After Performing Operations II
 
+## Event Sweep over Reachable Values
+
 The scoring rule per target value `v` is the heart of it: every element in
 `[v - k, v + k]` can be brought to `v`, elements already equal to `v` for
 free and each other one for exactly one operation, and since

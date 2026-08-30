@@ -1,5 +1,7 @@
 # Solutions — Find the Divisibility Array of a String
 
+## Rolling Prefix Remainder
+
 Prefix "998244353" is only nine digits long, but at `n = 10⁵` a prefix
 is a number with up to `10⁵` digits — no fixed-width integer can hold
 one, and re-parsing each of the `n` prefixes from scratch would be

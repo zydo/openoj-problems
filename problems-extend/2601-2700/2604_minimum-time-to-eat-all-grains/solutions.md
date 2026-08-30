@@ -1,5 +1,7 @@
 # Solutions — Minimum Time to Eat All Grains
 
+## Binary Search with Greedy Feasibility
+
 Binary search the answer: if the hens can finish within `t` seconds they can
 finish within any larger budget too, so feasibility is monotone in `t` and the
 minimum feasible integer can be bisected over `[0, 2 · 10⁹]`. To test a

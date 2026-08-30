@@ -1,5 +1,7 @@
 # Solutions — Count Ways to Group Overlapping Ranges
 
+## Merge Overlap Components
+
 "Must share a group with every range it touches" is an equivalence
 closure: overlapping is symmetric, and the relation forced onto ranges
 is the transitive closure of it, so the valid groupings are exactly the

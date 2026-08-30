@@ -1,5 +1,7 @@
 # Solutions — Find the Maximum Length of Valid Subsequence II
 
+## Remainder-Pair Dynamic Programming
+
 The definition hands the subsequence one hidden constant: some residue
 `val` in `[0, k)` that every adjacent pair's sum must land on. Fixing
 `val` turns membership into a chain rule — an element with residue `r`

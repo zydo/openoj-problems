@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3175,
   "slug": "find-the-first-player-to-win-k-games-in-a-row",

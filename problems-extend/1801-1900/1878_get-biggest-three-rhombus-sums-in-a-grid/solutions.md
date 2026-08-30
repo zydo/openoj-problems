@@ -1,3 +1,5 @@
+# Solutions — Get Biggest Three Rhombus Sums in a Grid
+
 There is no shortcut to the answer's structure — the biggest three
 distinct sums can sit anywhere — but the grid is tiny (at most 50x50),
 so enumerating every rhombus directly and keeping a best-three set is

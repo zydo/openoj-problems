@@ -1,5 +1,7 @@
 # Solutions — Equal Sum Grid Partition II
 
+## Prefix Sums and Boundary Exception Checks
+
 There are only `m - 1` horizontal and `n - 1` vertical cuts, and both
 sections of any cut are rectangular slabs aligned to the grid edges. Equal
 sums make the cut valid outright; otherwise the difference can be closed

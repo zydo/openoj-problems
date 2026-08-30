@@ -1,5 +1,7 @@
 # Solutions — Merge Operations to Turn Array Into a Palindrome
 
+## Two-Pointer Block Sums
+
 Merging never changes the total sum, and a merged palindrome is a
 partition of the array into consecutive blocks whose block sums read the
 same forwards and backwards; each merge shrinks the element count by one,

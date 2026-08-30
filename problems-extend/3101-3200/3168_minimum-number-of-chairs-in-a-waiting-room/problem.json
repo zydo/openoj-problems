@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3168,
   "slug": "minimum-number-of-chairs-in-a-waiting-room",

@@ -1,5 +1,7 @@
 # Solutions — Largest Positive Integer That Exists With Its Negative
 
+## Hash Set of Signed Values
+
 A positive `k` qualifies exactly when `-k` also appears somewhere in `nums`,
 so the whole problem reduces to membership tests: which of the values seen
 so far can be looked up in constant time. One pass builds a set from every

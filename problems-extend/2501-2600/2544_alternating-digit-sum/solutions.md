@@ -1,5 +1,7 @@
 # Solutions — Alternating Digit Sum
 
+## Reverse Digit Scan with Sign Correction
+
 Reading the digits from the low end makes extraction cheap — `n % 10`
 yields the last digit and `⌊n / 10⌋` shifts the rest down — but it also
 anchors the `+` sign at the least significant digit, whereas the

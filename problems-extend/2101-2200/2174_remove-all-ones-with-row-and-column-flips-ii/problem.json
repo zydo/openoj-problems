@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 2174,
   "slug": "remove-all-ones-with-row-and-column-flips-ii",

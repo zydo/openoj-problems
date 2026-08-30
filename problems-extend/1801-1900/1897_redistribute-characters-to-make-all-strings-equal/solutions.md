@@ -1,3 +1,5 @@
+# Solutions — Redistribute Characters to Make All Strings Equal
+
 Moving characters between strings can rearrange letters arbitrarily, so
 the actual positions never matter — only whether the pooled multiset of
 characters splits into equal shares.

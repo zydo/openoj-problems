@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "",
   "id": 3018,
   "slug": "maximum-number-of-removal-queries-that-can-be-processed-i",

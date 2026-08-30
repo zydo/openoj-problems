@@ -1,5 +1,7 @@
 # Solutions — Count Total Number of Colored Cells
 
+## Diamond-Layer Formula
+
 Minute one plants a single cell, and each later minute adds the ring of
 cells touching the current diamond at distance one — so after minute n
 the blue region is a perfect diamond of Chebyshev radius n−1 around the

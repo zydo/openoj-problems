@@ -1,5 +1,7 @@
 # Solutions — Smallest Divisible Digit Product I
 
+## Incremental Digit-Product Search
+
 The search space above `n` is tiny, so the honest approach is to walk it
 directly: test `n`, and while the product of its digits is not divisible by
 `t`, move to the next integer. The digit product is computed by peeling —

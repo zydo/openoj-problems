@@ -1,5 +1,7 @@
 # Solutions — Find the Maximum Divisibility Score
 
+## Direct Divisibility Counting
+
 The statement hands us the scoring rule directly, so the simplest correct
 mechanism is also fast enough here: for every divisor `divisors[i]`, walk
 all of `nums` once and count how many entries it divides evenly. With both

@@ -1,5 +1,7 @@
 # Solutions — Minimum Time to Visit Disappearing Nodes
 
+## Dijkstra with Disappearance Deadlines
+
 Shortest paths from the single source `0` solve everything except the
 disappearance rule, and that rule is purely a per-node deadline: arriving at
 or after `disappear[i]` means node `i` was never visited at all. Because a

@@ -1,6 +1,5 @@
 {
-  "schema_version": 1,
-  "common_version": 1,
+  "schema_version": 2,
   "reference_solution": "last_index_jump",
   "id": 3,
   "slug": "longest-duplicate-free-substring",

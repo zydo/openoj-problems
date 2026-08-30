@@ -1,5 +1,7 @@
 # Solutions — Shift Distance Between Two Strings
 
+## Precomputed Circular Shift Costs
+
 Positions of `s` never interact — an operation always targets one index —
 so the total cost decomposes into one independent subproblem per index:
 turn character `s[i]` into `t[i]` as cheaply as possible, then sum. Each

@@ -1,6 +1,6 @@
 # problems-extend — the ORIGINAL-form corpus
 
-3,179 bundles, one per crawl problem not covered by the bettercode
+3,193 bundles, one per crawl problem not covered by the bettercode
 adapt set: statements verbatim from `~/code/lc-crawl` (restored
 superscripts, nothing invented), cases from structurally different
 oracle cross-checks, and the canonical solution in every language the
@@ -14,16 +14,15 @@ id zero-padded to 4 digits. Whole-set consistency is checked by
 `openoj/.localonly/verify_corpus.py` (coverage, slug parity, shard
 placement, file shape) — run it after any tree surgery.
 
-## Unauthored ids (2)
+## Unauthored ids (0)
 
-The roster file was removed in the 2026-08-28 cleanup; the set below is
-what `verify_corpus.py` derives, and this list is its human-readable
-copy. When one is authored, delete its line and re-run the verifier.
-Both remain unauthored by design pending new judge contracts: 1570
-(two-class interactive) and 2757 (generator semantics).
-
-- 1570 dot-product-of-two-sparse-vectors
-- 2757 generate-circular-array-values
+The roster file was removed in the 2026-08-28 cleanup; this section is
+the human-readable copy of what `verify_corpus.py` derives — run it
+after any tree surgery. Coverage is complete: all 4,018 crawl problems
+are authored. The last two landed 2026-08-30: 1570 via the judge's
+multi-instance design contract (`{"new": handle}` actions, `"on"`
+dispatch, `{"$ref": handle}` instance arguments), and 2757 as a JS/TS
+interactive bundle with a provided `CycleCase` generator driver.
 
 Suspect a corpus/judge-data contradiction? Do not edit frozen
 `cases.json` — record it in `../CORPUS-FLAGS.md` with evidence.
