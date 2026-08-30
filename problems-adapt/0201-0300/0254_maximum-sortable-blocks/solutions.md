@@ -14,7 +14,8 @@ A cut after position `k` survives the sorting step only if the entries in
 `arr[0..k]` are, as a multiset, the same entries that occupy `sorted(arr)[0..k]`.
 Anything else means some value has to cross the cut, and sorting inside a block
 can never move it. Because entries repeat, comparing running maxima against
-running minima is not enough here — the test has to be multiset equality.
+running minima strictly is not enough here — the test has to be multiset
+equality.
 
 So take a sorted copy as the target and sweep the two arrays side by side with a
 per-value counter. At each position, bump the counter for the original entry and

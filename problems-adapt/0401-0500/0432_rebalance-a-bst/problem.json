@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "mirror_dsw",
   "id": 432,
   "slug": "rebalance-a-bst",
   "title": "Rebalance a BST",

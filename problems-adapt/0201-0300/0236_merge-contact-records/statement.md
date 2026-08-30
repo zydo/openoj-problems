@@ -70,6 +70,7 @@ entry's cluster with whichever clusters those addresses already sat in.
 
 ### Hint 3
 
-Alongside each cluster keep the name any of its entries carried — they all
-agree. Then a second pass in reading order both fixes the output order and
+Alongside each cluster keep a name: a merged record carries the name of the
+most recently read account that joins it, so the name updates on every
+union. Then a second pass in reading order both fixes the output order and
 collects each cluster's addresses for sorting.
