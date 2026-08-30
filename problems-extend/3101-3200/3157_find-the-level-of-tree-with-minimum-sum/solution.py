@@ -1,5 +1,4 @@
-# Judge-provided types (not editable here; the judge assembles their
-# definitions into every submission):
+# Bundle-provided types (assembled with this submission):
 #   TreeNode:  .val int, .left / .right TreeNode | None
 
 

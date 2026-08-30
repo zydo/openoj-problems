@@ -1,5 +1,4 @@
-// Judge-provided types (not editable here; the judge assembles their
-// definitions into every submission):
+// Bundle-provided types (assembled with this submission):
 //   ListNode:  { field val: i32, next: Option<Box<ListNode>> }
 //   TreeNode:  { field val: i32, left/right: Option<Box<TreeNode>> }
 //   Node:      (provided/) { field val: i32, neighbors }

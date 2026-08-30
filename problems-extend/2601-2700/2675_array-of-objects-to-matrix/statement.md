@@ -23,7 +23,7 @@ The columns in the matrix should be in lexographically ascending order.
 only — LeetCode offers no other languages for it. Your submission declares
 `function toMatrix(arr)` with the behavior above; the generated `class
 Solution` keeps its `run(matrixCase)` method, whose body hands your function
-to the judge-provided driver: `matrixCase.drive(toMatrix)`. The driver calls
+to the bundle-provided driver: `matrixCase.drive(toMatrix)`. The driver calls
 your function once with the case's array `.arr`; whatever matrix comes back
 is recorded by the driver as the judged output shown as Output below. Arrays
 count as objects too, keyed by their indices as strings; only scalars

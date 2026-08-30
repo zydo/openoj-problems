@@ -11,7 +11,7 @@ receives the same calculator with the new value. `getResult` simply exposes
 the accumulated value, while `divide` checks its argument before updating and
 throws the required error when that argument is zero.
 
-The `Solution.solve` adapter passes the completed class to the judge-provided
+The `Solution.solve` adapter passes the completed class to the bundle-provided
 case driver. The driver constructs the calculator from the first value and
 performs the action script sequentially, which exercises the same fluent API
 shown in the examples without changing the calculator implementation.

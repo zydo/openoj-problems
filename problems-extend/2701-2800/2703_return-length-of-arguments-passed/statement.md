@@ -8,7 +8,7 @@ to it.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(argsCase)`, where `argsCase` is a
-judge-provided `ArgsCase` carrying `.args`, the JSON array of values this
+bundle-provided `ArgsCase` carrying `.args`, the JSON array of values this
 case passes to your function. Define `argumentsLength` so it can accept any
 number of arguments, then return the result of calling it spread over that
 array — `argumentsLength(...argsCase.args)` — which must be exactly the

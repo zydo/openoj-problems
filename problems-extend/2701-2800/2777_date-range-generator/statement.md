@@ -15,7 +15,7 @@ All yielded dates must be in the string format YYYY-MM-DD.
 only. Your submission defines a generator function
 `dateRangeGenerator(start, end, step)` that yields one date string per
 step, and declares a class `Solution` whose `run(genCase)` hands that
-function to the judge-provided case carrier:
+function to the bundle-provided case carrier:
 `genCase.drive(dateRangeGenerator)`. The driver calls the generator with
 this case's `start`, `end`, and `step`, advances the returned generator by
 repeated `.next()` calls until it reports done, and the judge compares the

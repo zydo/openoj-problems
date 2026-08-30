@@ -21,7 +21,7 @@ Please solve it without lodash's _.groupBy function.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript only —
 LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `groupBy(groupCase)`, where `groupCase` is a
-judge-provided `GroupCase` carrying `.fn`, the callable built from the case's
+bundle-provided `GroupCase` carrying `.fn`, the callable built from the case's
 function source, and `.array`, the array to group. Enhance
 `Array.prototype` with `groupBy`, then return the value of invoking
 `groupCase.array.groupBy(groupCase.fn)`. Each value list keeps its items in

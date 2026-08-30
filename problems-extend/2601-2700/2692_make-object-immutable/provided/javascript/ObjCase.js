@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   ObjCase exposes the problem's one judged invocation: .obj is the
 //   case's JSON value and .fn is the case's arrow-function source, which

@@ -12,7 +12,7 @@ You may assume the object or array is the output of JSON.parse.
 
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Each case stores `obj`
-as raw JSON text; the judge-provided case carrier runs that text through
+as raw JSON text; the bundle-provided case carrier runs that text through
 JSON.parse exactly as quoted above, so your code receives a genuine
 JavaScript object or array. Declare `function isEmpty(obj)` plus a class
 `Solution` whose `isEmpty` method returns

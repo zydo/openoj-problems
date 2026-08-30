@@ -25,7 +25,7 @@ Try to implement it without using the built-in array methods.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(forEachCase)`, where `forEachCase`
-is a judge-provided `ForEachCase` carrying `.arr`, the JSON array under
+is a bundle-provided `ForEachCase` carrying `.arr`, the JSON array under
 test; `.fn`, the callable built from the case's callback source; and
 `.context`, the context object from the Input. Enhance `Array.prototype`
 with `forEach(callback, context)` exactly as described — arrow callbacks in

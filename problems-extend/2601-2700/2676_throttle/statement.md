@@ -29,7 +29,7 @@ another delay period of 80ms + t.
 only — LeetCode offers no other languages for it. It is also judged on a
 deterministic virtual clock instead of real timers: your submission declares
 `function throttle(fn, t)` plus a class Solution whose `run` method hands
-your function to the judge-provided driver: `throttleCase.drive(throttle)`.
+your function to the bundle-provided driver: `throttleCase.drive(throttle)`.
 During `drive` the driver replaces the global `setTimeout`/`clearTimeout`
 with virtual-clock equivalents — it replays the case's calls at their
 recorded times in order, flushes any timer whose deadline has been reached

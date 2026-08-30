@@ -15,7 +15,7 @@ elements of the modified args passed as separate arguments.
 only — LeetCode offers no other languages for it. Your submission implements
 `var partial = function(fn, args) { ... }`, which returns the `partialFn`
 described above, and declares `class Solution` with the method
-`runPartial(fnCase)`, where `fnCase` is a judge-provided `FnCase` carrying
+`runPartial(fnCase)`, where `fnCase` is a bundle-provided `FnCase` carrying
 `.fn`, the callable built from the case's function source; `.args`, the
 prefilled argument list; and `.restArgs`, the argument list of the single
 observed invocation. Build `partialFn` from your `partial(fn, args)`, invoke

@@ -43,7 +43,7 @@ to the original object will result in a wrong answer.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `run(imCase)`, where `imCase` is a
-judge-provided `ImCase` carrying `.obj`, the immutable object under test,
+bundle-provided `ImCase` carrying `.obj`, the immutable object under test,
 and `.mutators`, the list of mutation scripts to apply. Declare
 `class ImmutableHelper` as well, then call `imCase.drive(ImmutableHelper)`:
 the driver constructs the helper on `imCase.obj` and calls `produce` once

@@ -20,7 +20,7 @@ Please solve it without the built-in Array.flat method.
 only — LeetCode offers no other languages for it. Your submission declares
 `function flat(arr, depth)` with the behavior above; the generated `class
 Solution` keeps its `run(flattenCase)` method, whose body hands your
-function to the judge-provided driver: `flattenCase.drive(flat)`. The
+function to the bundle-provided driver: `flattenCase.drive(flat)`. The
 driver calls your function once with the case's nested array `.arr` and
 depth `.n`; whatever array comes back is recorded by the driver as the
 judged output shown as Output below. Depth counting follows the statement:

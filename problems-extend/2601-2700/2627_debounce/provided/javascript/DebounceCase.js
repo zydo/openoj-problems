@@ -1,4 +1,4 @@
-// Judge-provided driver for 2627 debounce. Assembled into every
+// bundle-provided driver for 2627 debounce. Assembled into every
 // submission by the judge ahead of the submitted code; never editable in
 // the editor. This file is the hidden implementation — solvers see only
 // the public API documented in the statement.

@@ -24,7 +24,7 @@ the flag also stops the stepper from calling `generator.throw` on a
 finished generator when cancel arrives late (Example 1's no-op case).
 
 On OpenOJ the whole timeline runs on a virtual clock captured by the
-judge-provided driver, so both the generator internals' timers and the
+bundle-provided driver, so both the generator internals' timers and the
 scheduled cancel arm against one deterministic schedule; only relative
 settlement order matters for the outcome.
 

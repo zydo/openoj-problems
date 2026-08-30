@@ -34,15 +34,15 @@ Solutions are authored on top of the generated starters.
 
 ```json
 {
-    "schema_version": 2,
-    "reference_solution": "",
-    "id": 1,
-    "slug": "two-sum",
-    "title": "Two Sum",
-    "difficulty": "H1",
-    "tags": ["Array", "Hash Table"],
-    "invocation": { "...": "see below" },
-    "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1,
+  "slug": "two-sum",
+  "title": "Two Sum",
+  "difficulty": "H1",
+  "tags": ["Array", "Hash Table"],
+  "invocation": { "...": "see below" },
+  "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
 }
 ```
 
@@ -64,31 +64,31 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 ```json
 {
-    "type": "function",
-    "class_name": "Solution",
-    "method": "twoSum",
-    "parameters": [
-        {
-            "name": "nums",
-            "codec": "json",
-            "value_type": {
-                "kind": "array",
-                "items": { "kind": "integer", "bits": 32 }
-            }
-        },
-        {
-            "name": "target",
-            "codec": "json",
-            "value_type": { "kind": "integer", "bits": 32 }
-        }
-    ],
-    "return_codec": "json",
-    "return_type": {
+  "type": "function",
+  "class_name": "Solution",
+  "method": "twoSum",
+  "parameters": [
+    {
+      "name": "nums",
+      "codec": "json",
+      "value_type": {
         "kind": "array",
         "items": { "kind": "integer", "bits": 32 }
+      }
     },
-    "entrypoints": { "go": "twoSum", "rust": "two_sum", "typescript": "twoSum" },
-    "comparison": "exact"
+    {
+      "name": "target",
+      "codec": "json",
+      "value_type": { "kind": "integer", "bits": 32 }
+    }
+  ],
+  "return_codec": "json",
+  "return_type": {
+    "kind": "array",
+    "items": { "kind": "integer", "bits": 32 }
+  },
+  "entrypoints": { "go": "twoSum", "rust": "two_sum", "typescript": "twoSum" },
+  "comparison": "exact"
 }
 ```
 
@@ -107,9 +107,10 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
   1516, value + `alias` naming the `nary_tree` parameter it resolves
   into), `json` (generic any-shaped value; JavaScript/TypeScript only),
   or `struct` (a provided record class with declared `fields`). The node
-  kinds take integer `items` (32-bit throughout the common types) and may
-  omit the implied spec. The wire formats and per-kind serialization
-  invariants are documented in the openoj repo's `docs/CODECS.md`.
+  kinds take integer `items` (32-bit by convention across these node
+  types) and may omit the implied spec. The wire formats and per-kind
+  serialization invariants are documented in the openoj repo's
+  `docs/CODECS.md`.
 - `entrypoints` override the entry name per language (Go/Rust/TypeScript
   follow their casing conventions; Python/Java/C++/JavaScript use `method`).
 - `comparison` is `exact` (default), `sorted`, `multiset`, or `set`. Anything
@@ -119,10 +120,10 @@ LeetCode-style, with a neutral `value_type` tree shared by every language:
 
 ```json
 {
-    "type": "sql",
-    "parameters": [{ "name": "dataset", "codec": "sql_setup" }],
-    "return_codec": "rows",
-    "comparison": "set"
+  "type": "sql",
+  "parameters": [{ "name": "dataset", "codec": "sql_setup" }],
+  "return_codec": "rows",
+  "comparison": "set"
 }
 ```
 
@@ -170,8 +171,8 @@ matches declared field/parameter order in every language).
 
 ```json
 {
-    "public": [{ "input": [[2, 7, 11, 15], 9], "expected": [0, 1] }],
-    "hidden": [{ "input": [[3, 2, 4], 6], "expected": [1, 2] }]
+  "public": [{ "input": [[2, 7, 11, 15], 9], "expected": [0, 1] }],
+  "hidden": [{ "input": [[3, 2, 4], 6], "expected": [1, 2] }]
 }
 ```
 

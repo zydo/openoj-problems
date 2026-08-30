@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   ReduceCase exposes the problem's one judged invocation: .fn is the
 //   reducer built from the case's function source, .nums is the integer

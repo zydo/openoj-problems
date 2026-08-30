@@ -23,7 +23,7 @@ Please solve it without using lodash's _.isEqual() function
 
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Each case stores its two
-values as raw JSON text; the judge-provided case carrier runs that text
+values as raw JSON text; the bundle-provided case carrier runs that text
 through JSON.parse exactly as quoted above, so your code receives genuine
 JavaScript values. Declare `function deepEqual(o1, o2)` plus a class
 Solution whose `deepEqual` method hands your function to the carrier:

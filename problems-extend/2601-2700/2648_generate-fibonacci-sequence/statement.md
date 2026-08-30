@@ -12,7 +12,7 @@ The first few numbers of the series are 0, 1, 1, 2, 3, 5, 8, 13.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only. Your submission defines a generator function `fibGenerator()` that
 yields the sequence, and declares a class `Solution` whose `run(fibCase)`
-hands that function to the judge-provided case carrier:
+hands that function to the bundle-provided case carrier:
 `fibCase.drive(fibGenerator)`. The driver calls `fibGenerator()`, steps
 the returned generator exactly this case's `callCount` times via repeated
 `.next()` calls, and the judge compares the array of collected `.value`

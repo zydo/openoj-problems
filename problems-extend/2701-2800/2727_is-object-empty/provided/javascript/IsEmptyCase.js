@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   IsEmptyCase exposes .obj as the genuine JavaScript value produced by
 //   JSON.parse of the case's raw text, exactly as the statement promises.

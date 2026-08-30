@@ -13,7 +13,7 @@ undefined.
 only — LeetCode offers no other languages for it. Your submission declares
 `function once(fn)` with the behavior above; the generated `class
 Solution` keeps its `run(onceCase)` method, whose body hands your function
-to the judge-provided driver: `onceCase.drive(once)`. The driver builds
+to the bundle-provided driver: `onceCase.drive(once)`. The driver builds
 the case's underlying function from its source string, wraps it in a call
 counting shim, then replays the case's `calls` rows through your wrapper —
 each row's arguments pass through in order, and any row after the first

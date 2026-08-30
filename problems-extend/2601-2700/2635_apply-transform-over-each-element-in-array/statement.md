@@ -13,7 +13,7 @@ Please solve it without the built-in Array.map method.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(mapCase)`, where `mapCase` is a
-judge-provided `MapCase` carrying `.arr`, the integer array under test,
+bundle-provided `MapCase` carrying `.arr`, the integer array under test,
 and `.fn`, the callable built from the case's function source. Walk the
 array with your own loop and build a new array whose entry at index i is
 `fn(arr[i], i)`, always passing both arguments positionally; every

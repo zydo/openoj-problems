@@ -29,7 +29,7 @@ Please solve this without using the built-in Function.call method.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `callWithContext(callCase)`, where
-`callCase` is a judge-provided `CallCase` carrying `.fn`, the callable
+`callCase` is a bundle-provided `CallCase` carrying `.fn`, the callable
 built from the case's function source; `.obj`, the context target (the
 first callPolyfill argument); and `.inputs`, the additional arguments for
 that single call. Enhance `Function.prototype` with `callPolyfill`, then

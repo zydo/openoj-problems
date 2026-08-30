@@ -12,7 +12,7 @@ Please solve it without using the built-in JSON.stringify method.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript only —
 LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `stringifyValue(jsonCase)`, where `jsonCase`
-is a judge-provided `JsonCase` carrying `.object`, the live decoded value to
+is a bundle-provided `JsonCase` carrying `.object`, the live decoded value to
 serialize, with property order exactly as listed in the case data. Return the
 JSON text as a string; every judged value stays well inside JavaScript's
 exact-number range, and all case strings contain only alphanumeric

@@ -14,7 +14,7 @@ Please solve it without using lodash's _.chunk function.
 only — LeetCode offers no other languages for it. Your submission declares
 `function chunk(arr, size)` with the behavior above; the generated `class
 Solution` keeps its `run(chunkCase)` method, whose body hands your function
-to the judge-provided driver: `chunkCase.drive(chunk)`. The driver calls
+to the bundle-provided driver: `chunkCase.drive(chunk)`. The driver calls
 your function once with the case's `.arr` and `.size`; whatever array of
 subarrays comes back is recorded by the driver as the judged output shown
 as Output below.

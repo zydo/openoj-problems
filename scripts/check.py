@@ -146,6 +146,22 @@ def check_bundle(bundle: Path) -> list[Failure]:
     if problem["id"] != int(matched.group(1)) or problem["slug"] != matched.group(2):
         fail("directory name must match problem.json id and slug")
 
+    # Interactive bundles must own their oracle: invocation.provided.oracle
+    # names the bundle-local class the judge assembles from provided/
+    # (docs/CODECS.md) — the judge holds no oracle definitions of its own,
+    # so there is no fallback to fall back to.
+    invocation = problem.get("invocation") or {}
+    if isinstance(invocation, dict) and invocation.get("type") == "interactive":
+        provided_oracle = (invocation.get("provided") or {}).get("oracle")
+        if not isinstance(provided_oracle, dict):
+            fail("interactive invocation needs invocation.provided.oracle")
+        else:
+            oracle_class = provided_oracle.get("class")
+            if not isinstance(oracle_class, str) or not oracle_class:
+                fail("invocation.provided.oracle.class must be a non-empty string")
+            if not isinstance(provided_oracle.get("construct"), list):
+                fail("invocation.provided.oracle.construct must be a list")
+
     # statement grammar
     headings = _headings(statement)
     top = [entry for entry in headings if entry[0] <= 2]
@@ -266,13 +282,20 @@ def check_bundle(bundle: Path) -> list[Failure]:
     # assembles with every submission (see docs/CODECS.md); one flat
     # directory per language, e.g. provided/python/oracle.py.
     provided_dir = bundle / "provided"
-    if provided_dir.is_dir():
+    if provided_dir.is_symlink():
+        fail("provided must be a real directory, not a symlink")
+    elif provided_dir.is_dir():
         for language_dir in provided_dir.iterdir():
-            if not language_dir.is_dir():
+            if language_dir.is_symlink():
+                fail(f"provided/{language_dir.name} must be a real directory, not a symlink")
+            elif not language_dir.is_dir():
                 fail(f"unexpected file provided/{language_dir.name} (one flat directory per language)")
-            for source in language_dir.iterdir():
-                if not source.is_file():
-                    fail(f"unexpected directory provided/{language_dir.name}/{source.name}")
+            else:
+                for source in language_dir.iterdir():
+                    if source.is_symlink():
+                        fail(f"provided/{language_dir.name}/{source.name} must be a real file, not a symlink")
+                    elif not source.is_file():
+                        fail(f"unexpected directory provided/{language_dir.name}/{source.name}")
         allowed.add("provided")
     # solutions.md: optional per-variant Solutions-tab guide (## sections)
     solutions_guide = bundle / "solutions.md"
@@ -324,8 +347,30 @@ def bundle_dirs(root: Path) -> list[Path]:
     return bundles
 
 
+def repo_root_failures() -> list[Failure]:
+    """Reject a reintroduced bank-root shared library.
+
+    Every well-known data structure and oracle is bundle-owned under
+    `provided/<language>/` (FORMAT.md, docs/CODECS.md in the openoj repo);
+    there is deliberately no repo-root `common/` or `shared/` source tree
+    for a future change to accidentally resurrect.
+    """
+    failures = []
+    for name in ("common", "shared"):
+        candidate = ROOT / name
+        if candidate.exists():
+            failures.append(
+                Failure(
+                    "<repo root>",
+                    f"'{name}/' must not exist at the repo root — every well-known "
+                    "structure and oracle is bundle-owned under provided/<language>/",
+                )
+            )
+    return failures
+
+
 def static_tier() -> tuple[list[Failure], dict[str, dict]]:
-    failures: list[Failure] = []
+    failures: list[Failure] = list(repo_root_failures())
     catalog: dict[str, dict] = {}
     bundles = bundle_dirs(PROBLEMS)
     seen_ids: dict[int, str] = {}

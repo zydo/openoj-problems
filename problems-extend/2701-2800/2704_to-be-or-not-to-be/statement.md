@@ -14,7 +14,7 @@ functions.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 the function expect(val) plus a class Solution whose run(expectCase) hands
-that function to the judge-provided case carrier:
+that function to the bundle-provided case carrier:
 `expectCase.drive(expect)`. Each case's func is a thunk source such as
 `() => expect(5).toBe(5)`; the driver evaluates it with your expect in
 scope, runs it, and records the outcome — `{"value": true}` when the thunk

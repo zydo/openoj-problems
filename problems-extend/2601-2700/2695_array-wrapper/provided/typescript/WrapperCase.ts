@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   WrapperCase exposes the problem's one judged invocation: .arrays
 //   holds the constructor argument of each ArrayWrapper instance under

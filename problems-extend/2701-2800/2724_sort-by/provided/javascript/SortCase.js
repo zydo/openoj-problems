@@ -1,4 +1,4 @@
-// Judge-provided case runner for 2724 sort-by. Assembled into every
+// bundle-provided case runner for 2724 sort-by. Assembled into every
 // submission by the judge ahead of the submitted code; never editable
 // in the editor. Solvers see only the public API documented in the
 // statement: check(solution) and verdict().

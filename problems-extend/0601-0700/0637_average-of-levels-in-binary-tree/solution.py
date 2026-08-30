@@ -1,8 +1,7 @@
 from typing import List, Optional
 from collections import deque
 
-# Judge-provided types (not editable here; the judge assembles their
-# definitions into every submission):
+# Bundle-provided types (assembled with this submission):
 #   ListNode:  .val int, .next ListNode | None
 #   TreeNode:  .val int, .left / .right TreeNode | None
 

@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   ExpectCase exposes the problem's one judged invocation: .func is the
 //   case's thunk source — an arrow function of the submission's global

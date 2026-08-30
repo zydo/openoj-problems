@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   InstanceOfCase exposes the problem's one judged invocation: .obj is
 //   the value handed to checkIfInstanceOf as its first argument and .cls

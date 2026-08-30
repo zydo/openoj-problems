@@ -1,7 +1,6 @@
 #include <vector>
 
-// Judge-provided types (not editable here; the judge assembles their
-// definitions into every submission):
+// Bundle-provided types (assembled with this submission):
 //   ListNode:  { int val; ListNode* next; }
 //   TreeNode:  { int val; TreeNode* left; TreeNode* right; }
 

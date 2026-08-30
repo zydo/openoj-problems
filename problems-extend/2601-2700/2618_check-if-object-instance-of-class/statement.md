@@ -12,7 +12,7 @@ function. For example, the value or the class could be undefined.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(instanceOfCase)`, where
-`instanceOfCase` is a judge-provided `InstanceOfCase` carrying `.obj`, the
+`instanceOfCase` is a bundle-provided `InstanceOfCase` carrying `.obj`, the
 value handed to `checkIfInstanceOf` as its first argument, and `.cls`, the
 class handed over as its second. Both arrive as live JavaScript values,
 materialized by the judge from declarative descriptors: `{"kind":

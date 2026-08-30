@@ -36,7 +36,7 @@ Please solve it without the built-in Function.bind method.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `bindWithContext(fnCase)`, where `fnCase`
-is a judge-provided `FnCase` carrying `.fn`, the callable built from the
+is a bundle-provided `FnCase` carrying `.fn`, the callable built from the
 case's function source; `.obj`, the binding target; and `.inputs`, the
 argument list of the single observed invocation. Enhance
 `Function.prototype` with `bindPolyfill`, then return the result of

@@ -19,7 +19,7 @@ Please solve it without the built-in Array.filter method.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(filterCase)`, where `filterCase`
-is a judge-provided `FilterCase` carrying `.arr`, the integer array under
+is a bundle-provided `FilterCase` carrying `.arr`, the integer array under
 test, and `.fn`, the callable built from the case's function source. Walk
 the array with your own loop, call `fn(arr[i], i)` for every index i, and
 return a new array holding only the elements whose call result is truthy

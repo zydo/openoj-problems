@@ -25,7 +25,7 @@ Please solve it without using the built-in Promise.all function.
 only, and its timing runs on a deterministic virtual clock instead of real
 timers. Your submission defines `promiseAll(functions)` and declares a
 class `Solution` whose `run(driver)` hands that function to the
-judge-provided driver: `return driver.drive(promiseAll)`. The driver turns
+bundle-provided driver: `return driver.drive(promiseAll)`. The driver turns
 this case's specs into live functions that return real promises, each
 settling after its stated delay on the virtual clock, calls your
 promiseAll with them, and awaits the returned promise: when every function

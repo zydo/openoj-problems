@@ -22,7 +22,7 @@ You may assume that both objects are the output of JSON.parse.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(diffCase)`, where `diffCase` is a
-judge-provided `DiffCase` carrying `.obj1` and `.obj2`, the two deeply
+bundle-provided `DiffCase` carrying `.obj1` and `.obj2`, the two deeply
 nested structures under comparison. Implement `objDiff(obj1, obj2)` per
 the rules above, then invoke `diffCase.drive(objDiff)` once — `drive`
 calls your function with the case's pair and records whatever it returns;

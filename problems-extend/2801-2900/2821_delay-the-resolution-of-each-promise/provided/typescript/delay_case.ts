@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   DelayCase exposes this problem's one judged invocation: .fns are the
 //   callables built from the case's function sources (each returns a

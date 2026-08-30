@@ -23,7 +23,7 @@ factorial.
 only — LeetCode offers no other languages for it. Your submission declares
 `function memoize(fn)` with the behavior above; the generated `class
 Solution` keeps its `run(memoizeCase)` method, whose body hands your
-function to the judge-provided driver: `memoizeCase.drive(memoize)`. The
+function to the bundle-provided driver: `memoizeCase.drive(memoize)`. The
 driver builds the underlying function named by the case's `fnName`
 (counting every real call it receives), then replays the case's
 `actions`/`values` script against your memoized wrapper — `call` rows pass

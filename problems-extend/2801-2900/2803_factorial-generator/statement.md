@@ -13,7 +13,7 @@ The factorial of 0 is defined as 1.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only. Your submission defines a generator function `factorial(n)` that
 yields one factorial per step, and declares a class `Solution` whose
-`run(genCase)` hands that function to the judge-provided case carrier:
+`run(genCase)` hands that function to the bundle-provided case carrier:
 `genCase.drive(factorial)`. The driver calls the generator with this
 case's `n`, advances the returned generator by repeated `.next()` calls
 until it reports done, and the judge compares the array of collected

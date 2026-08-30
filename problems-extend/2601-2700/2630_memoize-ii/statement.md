@@ -13,7 +13,7 @@ accepts. Inputs are considered identical if they are === to each other.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript only —
 LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `runMemoized(memoizeCase)`, where
-`memoizeCase` is a judge-provided `MemoizeCase` carrying `.source`, the source
+`memoizeCase` is a bundle-provided `MemoizeCase` carrying `.source`, the source
 text of the tested function `fn`, and `.getInputs`, the source text of a
 zero-argument function that returns the array of argument lists the memoized
 version must replay. Inside `runMemoized` you provide the real deliverable —

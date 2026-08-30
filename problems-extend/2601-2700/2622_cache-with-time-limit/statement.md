@@ -20,7 +20,7 @@ The class has three public methods:
 only — LeetCode offers no other languages for it. Your submission declares
 `class TimeLimitedCache` with the three methods above; the generated
 `class Solution` keeps its `run(cacheCase)` method, whose body hands your
-class to the judge-provided driver: `cacheCase.drive(TimeLimitedCache)`.
+class to the bundle-provided driver: `cacheCase.drive(TimeLimitedCache)`.
 The driver replays the case's `actions`/`values` script alongside its
 per-action `timeDelays`, where `timeDelays[i]` is the elapsed time in
 milliseconds from the replay's start at which action i executes (the

@@ -11,7 +11,7 @@ only, and its timing runs on a deterministic virtual clock instead of real
 timers. Your submission defines `addTwoPromises(promise1, promise2)` — a
 function taking the two input promises and returning a new promise that
 resolves with their sum — and declares a class `Solution` whose
-`run(driver)` hands that function to the judge-provided driver:
+`run(driver)` hands that function to the bundle-provided driver:
 `return driver.drive(addTwoPromises)`. The driver turns this case's two
 specs into real promises — each resolving with its stated value once its
 stated delay elapses on the virtual clock — calls your addTwoPromises with

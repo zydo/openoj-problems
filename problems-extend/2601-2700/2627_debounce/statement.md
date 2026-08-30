@@ -25,7 +25,7 @@ executed at 95ms, and the 3rd would be executed at 135ms.
 only — LeetCode offers no other languages for it. It is also judged on a
 deterministic virtual clock instead of real timers: your submission
 declares `function debounce(fn, t)` plus a class Solution whose `run`
-method hands your function to the judge-provided driver:
+method hands your function to the bundle-provided driver:
 `debounceCase.drive(debounce)`. During `drive` the driver replaces the
 global `setTimeout`/`clearTimeout` with virtual-clock equivalents — it
 replays the case's calls at their recorded times in order, flushes any

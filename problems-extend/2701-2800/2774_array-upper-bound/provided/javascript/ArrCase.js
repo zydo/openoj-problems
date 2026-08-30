@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   ArrCase exposes the problem's one judged invocation: .nums is the
 //   sorted array under test and .target is the value whose last index

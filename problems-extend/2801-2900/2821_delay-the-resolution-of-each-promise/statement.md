@@ -19,7 +19,7 @@ delayed promises.
 
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only, and its timing runs on a deterministic virtual clock instead of
-real timers — the judge-provided `DelayCase` carries `.fns`, the
+real timers — the bundle-provided `DelayCase` carries `.fns`, the
 callables built from the case's function sources (each returns a
 promise), plus `.ms`, and both the function internals and your
 implementation arm their delays against the same virtual clock because

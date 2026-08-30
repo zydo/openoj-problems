@@ -24,7 +24,7 @@ Try to implement it without using the built-in method Promise.allSettled().
 only, and its timing runs on a deterministic virtual clock instead of real
 timers. Your submission defines `promiseAllSettled(functions)` and declares
 a class `Solution` whose `run(driver)` hands that function to the
-judge-provided driver: `return driver.drive(promiseAllSettled)`. The driver
+bundle-provided driver: `return driver.drive(promiseAllSettled)`. The driver
 turns this case's specs into live functions that return real promises, each
 settling after its stated delay on the virtual clock, calls your
 promiseAllSettled with them, awaits the returned promise, and the judge

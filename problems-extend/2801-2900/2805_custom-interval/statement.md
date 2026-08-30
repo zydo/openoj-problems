@@ -30,7 +30,7 @@ deterministic virtual clock instead of real timers: your submission
 declares `function customInterval(fn, delay, period)` returning a number
 id and `function customClearInterval(id)` stopping the repetition tied to
 that id, plus a class Solution whose `run` method hands both to the
-judge-provided driver: `intervalCase.drive(customInterval,
+bundle-provided driver: `intervalCase.drive(customInterval,
 customClearInterval)`. During `drive` the driver replaces the global
 `setTimeout`/`clearTimeout` with virtual-clock equivalents, supplies its
 own recording fn (every actual execution of fn appends the virtual

@@ -10,7 +10,7 @@ string.repeat.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(strCase)`, where `strCase` is a
-judge-provided `StrCase` carrying `.str`, the string under test, and
+bundle-provided `StrCase` carrying `.str`, the string under test, and
 `.times`, the count replicate(x) must return it repeated by. Enhance
 `String.prototype` with `replicate`, then return the result of calling
 `String.prototype.replicate.call(strCase.str, strCase.times)` — `.str`

@@ -16,7 +16,7 @@ encounters.
 only — LeetCode offers no other languages for it. Your submission declares
 `function* inorderTraversal(arr)` at top level; the generated `class
 Solution` keeps its `run(generatorCase)` method, whose body hands your
-generator function to the judge-provided driver:
+generator function to the bundle-provided driver:
 `generatorCase.drive(inorderTraversal)`. The driver calls your function
 once with the case's nested array `.arr`, then repeatedly calls `.next()`
 on the returned generator object until it reports `done`, recording every

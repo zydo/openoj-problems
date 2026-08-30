@@ -39,7 +39,7 @@ would have resolved 5.
 
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it — and its timing runs on
-a deterministic virtual clock instead of real timers. The judge-provided
+a deterministic virtual clock instead of real timers. The bundle-provided
 `CancellableCase` carries `.source`, the case's `generatorFunction` source
 (it arms its internal promise delays against the same virtual clock,
 because `setTimeout` itself is captured by the harness), plus

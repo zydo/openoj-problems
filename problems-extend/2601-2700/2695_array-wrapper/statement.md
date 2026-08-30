@@ -13,7 +13,7 @@ constructor. This class should have two features:
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(wrapperCase)`, where `wrapperCase`
-is a judge-provided `WrapperCase` carrying `.arrays`, the constructor
+is a bundle-provided `WrapperCase` carrying `.arrays`, the constructor
 arguments for the ArrayWrapper instance(s) under test, and `.operation`,
 either `"Add"` or `"String"`. Implement ArrayWrapper exactly as described —
 addition behavior via valueOf, string conversion via toString — then apply

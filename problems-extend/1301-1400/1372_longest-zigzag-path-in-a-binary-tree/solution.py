@@ -1,7 +1,7 @@
 from typing import Optional
 
 
-# Judge-provided type (not editable here; the judge assembles its definition
+# bundle-provided type (not editable here; the judge assembles its definition
 # into every submission):
 #   TreeNode:  .val int, .left / .right TreeNode | None
 

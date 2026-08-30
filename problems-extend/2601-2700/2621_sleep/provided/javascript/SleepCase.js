@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   SleepCase carries one case's duration (.millis). measure() is called
 //   by the submission with its async sleep — the driver times the awaited

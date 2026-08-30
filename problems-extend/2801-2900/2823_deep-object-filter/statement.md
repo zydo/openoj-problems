@@ -17,7 +17,7 @@ that there is no valid data left in the `filteredObject`.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 the function `deepFilter(obj, fn)` plus a class `Solution` whose
-`solve(deepCase)` hands that function to the judge-provided case carrier:
+`solve(deepCase)` hands that function to the bundle-provided case carrier:
 `deepCase.drive(deepFilter)`. Each case carries a JSON value `obj` and a
 function source `fn`; the driver builds the callable from that source,
 calls your `deepFilter` with `(obj, fn)` once, and records the answer —

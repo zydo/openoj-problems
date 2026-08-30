@@ -19,7 +19,7 @@ Please solve it without using the built-in Array.reduce method.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `function reduce(nums, fn, init)` plus a class Solution whose `reduce`
-method hands your function to the judge-provided case carrier:
+method hands your function to the bundle-provided case carrier:
 `reduceCase.nums`, `reduceCase.fn` and `reduceCase.init` are the case's
 inputs (fn built from its source text), so the method's job is to return
 `reduce(reduceCase.nums, reduceCase.fn, reduceCase.init)`. That returned

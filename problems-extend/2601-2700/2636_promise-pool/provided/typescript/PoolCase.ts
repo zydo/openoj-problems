@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   PoolCase turns this case's function specs into live promise-returning
 //   functions on a deterministic virtual clock — calling functions[i]()

@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   DiffCase exposes one judged comparison: .obj1 and .obj2 are the two
 //   deeply nested structures under test; drive(objDiff) invokes the

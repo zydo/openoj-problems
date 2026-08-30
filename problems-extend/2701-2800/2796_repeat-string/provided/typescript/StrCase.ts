@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   StrCase exposes the problem's one judged invocation: .str is the
 //   string under test and .times is the count replicate(x) must return

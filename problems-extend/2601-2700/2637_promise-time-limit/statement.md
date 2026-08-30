@@ -15,7 +15,7 @@ The time limited function should follow these rules:
 
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only, and its timing runs on a deterministic virtual clock instead of real
-timers — the judge-provided `LimitCase` carries `.fn`, the callable built
+timers — the bundle-provided `LimitCase` carries `.fn`, the callable built
 from the case's function source, plus `.inputs` and `.t`, and both the fn
 internals and your implementation arm their delays against the same
 virtual clock because `setTimeout` itself is captured by the harness.

@@ -1,7 +1,7 @@
 #include <unordered_map>
 #include <vector>
 
-// Judge-provided type (not editable here; the judge assembles its definition
+// bundle-provided type (not editable here; the judge assembles its definition
 // into every submission):
 //   TreeNode:  { int val; TreeNode* left; TreeNode* right; }
 

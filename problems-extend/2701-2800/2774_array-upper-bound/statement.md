@@ -10,7 +10,7 @@ duplicates. If the target number is not found in the array, return -1.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `solve(arrCase)`, where `arrCase` is a
-judge-provided `ArrCase` carrying `.nums`, the sorted array under test, and
+bundle-provided `ArrCase` carrying `.nums`, the sorted array under test, and
 `.target`, the value whose last occurrence must be reported. Enhance
 `Array.prototype` with `upperBound`, then return the result of calling
 `arrCase.nums.upperBound(arrCase.target)` — the last index of `target`, or

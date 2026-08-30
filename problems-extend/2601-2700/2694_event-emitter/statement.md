@@ -29,7 +29,7 @@ Your EventEmitter class should have the following two methods:
 LeetCode offers no other languages for it. Your submission declares
 `class EventEmitter` with the two methods above; the generated
 `class Solution` keeps its `run(emitterCase)` method, whose body hands your
-class to the judge-provided driver: `emitterCase.drive(EventEmitter)`. The
+class to the bundle-provided driver: `emitterCase.drive(EventEmitter)`. The
 driver replays the case's `actions`/`values` script — it constructs your
 class at the `EventEmitter` action, builds each callback from its function
 source, requires `subscribe` to return an object with an `unsubscribe`

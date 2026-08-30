@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   CalculatorCase carries one case's operation script: .actions is the
 //   action list ("Calculator" first, "getResult" last) and .values holds

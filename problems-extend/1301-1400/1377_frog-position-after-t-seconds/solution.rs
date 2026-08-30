@@ -1,4 +1,4 @@
-// Judge-provided type: none beyond plain vectors; n up to 100 keeps an arena
+// No bundle-provided type is needed beyond plain vectors; n up to 100 keeps an arena
 // decomposition unnecessary — a simple parent-marked BFS suffices.
 
 impl Solution {

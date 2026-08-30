@@ -21,7 +21,7 @@ passed into the function (Ex: gen.next(-3)).
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only. Your submission defines a generator function
 `cycleGenerator(arr, startIndex)`, and declares a class `Solution` whose
-`run(cycleCase)` hands that function to the judge-provided case carrier:
+`run(cycleCase)` hands that function to the bundle-provided case carrier:
 `cycleCase.drive(cycleGenerator)`. The driver calls
 `cycleGenerator(arr, startIndex)`, takes the first parameterless
 `next()` (which must yield `arr[startIndex]`), then resumes the

@@ -1,4 +1,4 @@
-// Judge-provided type (not editable here; the judge assembles its definition
+// bundle-provided type (not editable here; the judge assembles its definition
 // into every submission):
 //   TreeNode:  { field val: i32, left/right: Option<Box<TreeNode>> }
 

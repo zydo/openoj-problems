@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   LimitCase exposes this problem's one judged invocation: .fn is the
 //   callable built from the case's function source, .inputs are the

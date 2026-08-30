@@ -9,7 +9,7 @@ subsequent time it is called (n, n + 1, n + 2, etc).
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `run(counterCase)`, where `counterCase`
-is a judge-provided `CounterCase` carrying `.n`, the integer above, and
+is a bundle-provided `CounterCase` carrying `.n`, the integer above, and
 `.calls`, one `"call"` entry per invocation to replay. Define
 `createCounter(n)` at top level exactly as the signature above suggests,
 then hand it over by calling `counterCase.drive(createCounter)` — the

@@ -22,7 +22,7 @@ provided args as arguments.
 only — LeetCode offers no other languages for it. It is also judged on a
 deterministic virtual clock instead of real timers: your submission
 declares `function cancellable(fn, args, t)` plus a class Solution whose
-`run` method hands your function to the judge-provided driver:
+`run` method hands your function to the bundle-provided driver:
 `timeoutCase.drive(cancellable)`. During `drive` the driver replaces the
 global `setTimeout`/`clearTimeout` with virtual-clock equivalents,
 constructs your `cancellable(fn, args, t)` (fn records the transcript:

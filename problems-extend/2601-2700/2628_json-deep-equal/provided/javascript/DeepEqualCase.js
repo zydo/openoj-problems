@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   DeepEqualCase exposes the problem's one judged invocation: .o1 and
 //   .o2 are genuine JavaScript values produced by JSON.parse of the

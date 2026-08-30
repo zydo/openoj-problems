@@ -10,7 +10,7 @@ further `.next()` computes `a + b` into a temporary, shifts `a = b`,
 recursion and no memo table.
 
 Because the sequence is infinite, nothing in the generator decides when
-to stop: termination is purely the caller's concern. The judge-provided
+to stop: termination is purely the caller's concern. The bundle-provided
 carrier steps the generator exactly `callCount` times (zero times leaves
 an empty list for `callCount = 0`) and compares those collected numbers.
 The domain stays inside exact machine arithmetic: the largest value any

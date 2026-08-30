@@ -2,8 +2,7 @@ from collections import deque
 from typing import Optional
 
 
-# Judge-provided types (not editable here; the judge assembles their
-# definitions into every submission):
+# Bundle-provided types (assembled with this submission):
 #   Node: .val int, .children list[Node]
 
 

@@ -28,7 +28,7 @@ Solutions within 10⁻⁵ of the actual result are considered correct.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript only
 — LeetCode offers no other languages for it. Your submission defines the
 `Calculator` class and a `Solution.solve(calculatorCase)` adapter. The
-adapter should call `calculatorCase.drive(Calculator)` so the judge-provided
+adapter should call `calculatorCase.drive(Calculator)` so the bundle-provided
 case driver constructs the calculator from the first value, performs every
 remaining action in order, and records the final `getResult()` value — or
 the thrown error's message when an operation fails; results within 10⁻⁵ of

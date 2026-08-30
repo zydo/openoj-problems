@@ -11,7 +11,7 @@ acceptable.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `run(sleepCase)`, where `sleepCase` is a
-judge-provided `SleepCase` carrying `.millis`, the integer above. Define
+bundle-provided `SleepCase` carrying `.millis`, the integer above. Define
 `async function sleep(millis)` at top level exactly as the signature above
 suggests — it must return a Promise that settles no earlier than millis
 milliseconds after the call; what it resolves with is never inspected.

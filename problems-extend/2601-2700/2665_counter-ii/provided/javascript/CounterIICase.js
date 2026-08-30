@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   CounterIICase carries one case's script: .init is the starting integer
 //   and .calls holds one method name per required invocation. drive() is

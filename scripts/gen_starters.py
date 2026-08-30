@@ -466,51 +466,20 @@ def rust_return_type(invocation: dict, spec: dict) -> str:
     return rust_type(spec)
 
 
-PY_LIST_NODE = """class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-"""
-
-PY_SHARED_DOC = """
-# Judge-provided types (not editable here; the judge assembles their
-# definitions into every submission):
+PY_PROVIDED_DOC = """
+# Bundle-provided types (assembled with this submission):
 #   ListNode:  .val int, .next ListNode | None
 #   TreeNode:  .val int, .left / .right TreeNode | None
 """
 
-RUST_SHARED_DOC = """// Judge-provided types (not editable here; the judge assembles their
-// definitions into every submission):
+RUST_PROVIDED_DOC = """// Bundle-provided types (assembled with this submission):
 //   ListNode:  { field val: i32, next: Option<Box<ListNode>> }
 //   TreeNode:  { field val: i32, left/right: Option<Box<TreeNode>> }
 """
 
-PY_TREE_NODE = """class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-"""
-
-RUST_LIST_NODE = """#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: {item},
-    pub next: Option<Box<ListNode>>,
-}
-"""
-
-RUST_TREE_NODE = """#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct TreeNode {
-    pub val: {item},
-    pub left: Option<Box<TreeNode>>,
-    pub right: Option<Box<TreeNode>>,
-}
-"""
-
-# Shared-doc lines for the v2 common types (and the provided/-carried
-# shapes), appended to the classic ListNode/TreeNode block only for
-# problems that use them — classic starters stay byte-identical.
-PY_EXTRA_DOC = {
+# Documentation lines for additional bundle-provided shapes, appended to
+# the classic ListNode/TreeNode block only when a problem uses them.
+PY_EXTRA_PROVIDED_DOC = {
     "nary_tree": "#   Node:      .val int, .children list[Node]",
     "quad_tree": "#   QuadNode:  .val/.isLeaf bool, four quadrant children",
     "nested": "#   NestedInteger: LC API — isInteger/getInteger/setInteger/add/getList",
@@ -527,7 +496,7 @@ PY_EXTRA_DOC = {
     "nary_tree_ref": "#   Node:      .val int, .children list[Node]; the parameter is a node inside the aliased tree",
 }
 
-RUST_EXTRA_DOC = {
+RUST_EXTRA_PROVIDED_DOC = {
     "nary_tree": "//   Node:      { field val: i32, children: Vec<Option<Box<Node>>> }",
     "quad_tree": "//   QuadNode:  { val/isLeaf: bool, four quadrant children }",
     "nested": "//   NestedInteger: LC-style API — is_integer/get_integer/set_integer/add/get_list",
@@ -547,9 +516,8 @@ RUST_EXTRA_DOC = {
 }
 
 
-def _shared_doc(invocation: dict, base: str, extra: dict[str, str], prefix: str) -> str:
-    """The judge-provided-types comment: the classic block plus one line per
-    v2 type (or provided/ struct) the invocation actually uses."""
+def _provided_doc(invocation: dict, base: str, extra: dict[str, str], prefix: str) -> str:
+    """Document each bundle-provided type used by the invocation."""
     structs = _uses_structs(invocation)
     lines = [base.rstrip("\n")]
     lines.extend(line for kind, line in extra.items() if kind in structs)
@@ -582,7 +550,7 @@ def generate(invocation: dict, language: str) -> str:
     if language == "python3":
         blocks = _py_imports()
         if structs:
-            blocks.append(_shared_doc(invocation, PY_SHARED_DOC, PY_EXTRA_DOC, "#") + "\n\n")
+            blocks.append(_provided_doc(invocation, PY_PROVIDED_DOC, PY_EXTRA_PROVIDED_DOC, "#") + "\n\n")
         signature = ", ".join(
             [
                 f"self",
@@ -638,7 +606,7 @@ def generate(invocation: dict, language: str) -> str:
     if language == "rust":
         chunks = []
         if structs:
-            chunks.append(_shared_doc(invocation, RUST_SHARED_DOC, RUST_EXTRA_DOC, "//") + "\n")
+            chunks.append(_provided_doc(invocation, RUST_PROVIDED_DOC, RUST_EXTRA_PROVIDED_DOC, "//") + "\n")
         signature = ", ".join(f"{parameter}: {rust_parameter_type(invocation, spec)}" for parameter, spec in parameters)
         return_rendered = rust_return_type(invocation, return_type)
         rendered = signature + " -> " + return_rendered
@@ -894,66 +862,24 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
     return "".join(chunks)
 
 
-# Interactive oracle table (fallback when the invocation carries no
-# provided.oracle manifest): with bundle-carried oracles both languages
-# reference the bare class name — the provided source is assembled into
-# the python namespace / compiled in the same java package as the
-# submission.
-# "parameter" names the oracle argument; oracles whose LeetCode signature
-# takes extra data (wordlist / target / pattern) declare it in
-# invocation["parameters"], rendered after the oracle argument.
-INTERACTIVE_ORACLES = {
-    "GridMaster": {"python": "GridMaster", "java": "GridMaster", "parameter": "master"},
-    "Robot": {"python": "Robot", "java": "Robot", "parameter": "robot"},
-    "Master": {"python": "Master", "java": "Master", "parameter": "master"},
-    "MountainArray": {
-        "python": "MountainArray",
-        "java": "MountainArray",
-        "parameter": "mountainArr",
-    },
-    "BinaryMatrix": {
-        "python": "BinaryMatrix",
-        "java": "BinaryMatrix",
-        "parameter": "binaryMatrix",
-    },
-    "ArrayReader": {
-        "python": "ArrayReader",
-        "java": "ArrayReader",
-        "parameter": "reader",
-    },
-    "SequenceReader": {
-        "python": "SequenceReader",
-        "java": "SequenceReader",
-        "parameter": "reader",
-    },
-    "InfiniteStream": {
-        "python": "InfiniteStream",
-        "java": "InfiniteStream",
-        "parameter": "stream",
-    },
-    "Sea": {"python": "Sea", "java": "Sea", "parameter": "sea"},
-}
-
-
 def _generate_interactive(invocation: dict, language: str) -> str:
     """Interactive problems: the solution method receives an oracle object
     (the problem's provided/ sources, assembled by the judge), plus any
     auxiliary arguments declared in invocation["parameters"]. All seven
-    languages. The oracle type comes from invocation.provided.oracle
-    (the manifest) when present, with INTERACTIVE_ORACLES as the legacy
-    fallback; per-language method names come from entrypoints. Schema:
+    languages. The oracle type and parameter come from the required,
+    bundle-owned invocation.provided.oracle declaration; per-language method
+    names come from entrypoints. Schema:
     {"type": "interactive", "class_name", "method", "entrypoints"?,
     "oracle", "oracle_methods": [...], "parameters": [...auxiliary...],
     "return_type", "query_limit"?}. A void method declares
     {"kind": "void"} and is judged by the oracle's verdict()."""
     provided = (invocation.get("provided") or {}).get("oracle")
-    oracle = invocation.get("oracle") or (provided or {}).get("class")
-    if provided:
-        parameter = (provided.get("parameter") or oracle[0].lower() + oracle[1:]).lstrip("_") or "oracle"
-    elif oracle in INTERACTIVE_ORACLES:
-        parameter = INTERACTIVE_ORACLES[oracle]["parameter"]
-    else:
-        raise ValueError(f"Unsupported interactive oracle: {oracle}")
+    if not isinstance(provided, dict):
+        raise ValueError("Interactive problems must declare invocation.provided.oracle")
+    oracle = provided.get("class")
+    if not isinstance(oracle, str) or not oracle:
+        raise ValueError("invocation.provided.oracle.class must be a non-empty string")
+    parameter = (provided.get("parameter") or oracle[0].lower() + oracle[1:]).lstrip("_") or "oracle"
     class_name = invocation["class_name"]
     entrypoints = invocation.get("entrypoints") or {}
     method = entrypoints.get(language, invocation["method"])

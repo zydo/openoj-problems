@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   LastCase carries one case's array (.nums, the JSON.parse output the
 //   statement speaks of). collect() is called by solve() AFTER the

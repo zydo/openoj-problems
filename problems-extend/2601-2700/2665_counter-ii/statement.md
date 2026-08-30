@@ -14,7 +14,7 @@ reset() sets the current value to init and then returns it.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript only —
 LeetCode offers no other languages for it. Your submission declares `class
 Solution` with the method `run(counterCase)`, where `counterCase` is a
-judge-provided `CounterIICase` carrying `.init`, the integer above, and
+bundle-provided `CounterIICase` carrying `.init`, the integer above, and
 `.calls`, one `"increment"` / `"decrement"` / `"reset"` entry per invocation
 to replay. Define `createCounter(init)` at top level exactly as the signature
 above suggests, then hand it over by calling `counterCase.drive(createCounter)`

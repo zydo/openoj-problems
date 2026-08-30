@@ -12,7 +12,7 @@ For example, if you execute obj.abc123(), it will return "abc123".
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript
 only — LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `callMethod(methodCase)`, where
-`methodCase` is a judge-provided `MethodCase` carrying `.method`, the name
+`methodCase` is a bundle-provided `MethodCase` carrying `.method`, the name
 of the method under test. Declare `createInfiniteObject()` as well, then
 return the result of calling the method named by `methodCase.method` on an
 object from `createInfiniteObject()` — the method's own name.

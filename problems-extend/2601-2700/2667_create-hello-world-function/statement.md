@@ -9,7 +9,7 @@ always returns "Hello World".
 only — LeetCode offers no other languages for it. Your submission declares
 `function createHelloWorld()` with the behavior above; the generated
 `class Solution` keeps its `run(helloWorldCase)` method, whose body hands
-your factory to the judge-provided driver:
+your factory to the bundle-provided driver:
 `helloWorldCase.drive(createHelloWorld)`. The driver calls your factory
 once per case, then replays the case's `calls` rows through the returned
 function — each row holds one call's arguments (never more than ten) and

@@ -1,4 +1,4 @@
-// Judge-provided case carrier for this problem (not editable here; the
+// bundle-provided case carrier for this problem (not editable here; the
 // judge assembles this source into every submission):
 //   CurryCase exposes the problem's one judged invocation: .fn is the
 //   callable built from the case's function source, and .inputs holds the

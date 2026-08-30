@@ -16,7 +16,7 @@ return the same value as the original.
 **Note (OpenOJ):** this problem is offered in JavaScript and TypeScript only —
 LeetCode offers no other languages for it. Your submission declares
 `class Solution` with the method `applyCurried(curryCase)`, where `curryCase`
-is a judge-provided `CurryCase` carrying `.fn`, the callable built from the
+is a bundle-provided `CurryCase` carrying `.fn`, the callable built from the
 case's function source, and `.inputs`, the ordered argument batches. Inside
 `applyCurried` you provide the real deliverable — a local `curry(fn)` — then
 drive it: start from `curry(curryCase.fn)` and replace the current stage with
