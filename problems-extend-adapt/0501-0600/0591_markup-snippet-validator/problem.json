@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 591,
+  "slug": "markup-snippet-validator",
+  "title": "Markup Snippet Validator",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "validateMarkup",
+    "parameters": [
+      {
+        "name": "code",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "validateMarkup",
+      "rust": "validate_markup",
+      "typescript": "validateMarkup"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

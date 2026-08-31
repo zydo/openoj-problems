@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 362,
+  "slug": "recent-event-counter",
+  "title": "Recent Event Counter",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "RecentEventCounter",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "recordEvent",
+        "parameters": [
+          {
+            "name": "timestamp",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "countRecent",
+        "parameters": [
+          {
+            "name": "timestamp",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

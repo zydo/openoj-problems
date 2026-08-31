@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 708,
+  "slug": "threading-a-value-into-a-sorted-ring",
+  "title": "Threading a Value into a Sorted Ring",
+  "difficulty": "H3",
+  "tags": [
+    "Linked List"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "threadValue",
+    "parameters": [
+      {
+        "name": "head",
+        "codec": "circular_list",
+        "value_type": {
+          "kind": "circular_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "insertVal",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "circular_list",
+    "return_type": {
+      "kind": "circular_list",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "threadValue",
+      "rust": "thread_value",
+      "typescript": "threadValue"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

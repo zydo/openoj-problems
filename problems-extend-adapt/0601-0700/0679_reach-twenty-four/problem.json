@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 679,
+  "slug": "reach-twenty-four",
+  "title": "Reach Twenty-Four",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Math",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canReachTwentyFour",
+    "parameters": [
+      {
+        "name": "cards",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "canReachTwentyFour",
+      "rust": "can_reach_twenty_four",
+      "typescript": "canReachTwentyFour"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

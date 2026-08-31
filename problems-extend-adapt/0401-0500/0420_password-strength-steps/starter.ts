@@ -1,0 +1,3 @@
+function strengthFixSteps(password: string): number {
+    throw new Error("TODO");
+}

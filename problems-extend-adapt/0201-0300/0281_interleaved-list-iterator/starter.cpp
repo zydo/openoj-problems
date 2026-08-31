@@ -1,0 +1,6 @@
+class InterleavingIterator {
+  public:
+    InterleavingIterator(vector<int> v1, vector<int> v2);
+    int next();
+    bool hasNext();
+};

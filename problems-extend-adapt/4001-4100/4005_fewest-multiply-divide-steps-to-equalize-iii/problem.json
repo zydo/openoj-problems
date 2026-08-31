@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 4005,
+  "slug": "fewest-multiply-divide-steps-to-equalize-iii",
+  "title": "Fewest Multiply-Divide Steps to Equalize III",
+  "difficulty": "H4",
+  "tags": [
+    "Math",
+    "Number Theory",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestEqualizeSteps",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestEqualizeSteps",
+      "rust": "fewest_equalize_steps",
+      "typescript": "fewestEqualizeSteps"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,3 @@
+function multiplyComplexNumbers(num1: string, num2: string): string {
+    throw new Error("TODO");
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 281,
+  "slug": "interleaved-list-iterator",
+  "title": "Interleaved List Iterator",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Design",
+    "Queue",
+    "Iterator"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "InterleavingIterator",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "v1",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        },
+        {
+          "name": "v2",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "next",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "hasNext",
+        "parameters": [],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 241,
+  "slug": "expression-grouping-values",
+  "title": "Expression Grouping Values",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "String",
+    "Divide and Conquer",
+    "Recursion"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "groupingValues",
+    "parameters": [
+      {
+        "name": "expression",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 64
+      }
+    },
+    "entrypoints": {
+      "go": "groupingValues",
+      "rust": "grouping_values",
+      "typescript": "groupingValues"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

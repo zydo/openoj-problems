@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 726,
+  "slug": "molecular-formula-tally",
+  "title": "Molecular Formula Tally",
+  "difficulty": "H4",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "tallyAtoms",
+    "parameters": [
+      {
+        "name": "formula",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "tallyAtoms",
+      "rust": "tally_atoms",
+      "typescript": "tallyAtoms"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

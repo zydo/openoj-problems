@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 364,
+  "slug": "bottom-weighted-nested-sum-ii",
+  "title": "Bottom-Weighted Nested Sum II",
+  "difficulty": "H3",
+  "tags": [
+    "Stack",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "sumFromBottom",
+    "parameters": [
+      {
+        "name": "nestedList",
+        "codec": "nested",
+        "value_type": {
+          "kind": "nested",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "sumFromBottom",
+      "rust": "sum_from_bottom",
+      "typescript": "sumFromBottom"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

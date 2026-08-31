@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 607,
+  "slug": "uncommitted-vendors",
+  "title": "Uncommitted Vendors",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Representatives (rep_id INTEGER, full_name TEXT, base_pay INTEGER, bonus_rate INTEGER, started_on DATE);\nCREATE TABLE Clients (client_id INTEGER, client_name TEXT, municipality TEXT);\nCREATE TABLE Purchases (purchase_id INTEGER, purchased_on DATE, client_id INTEGER, rep_id INTEGER, total INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

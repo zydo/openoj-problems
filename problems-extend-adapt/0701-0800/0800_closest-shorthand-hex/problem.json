@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 800,
+  "slug": "closest-shorthand-hex",
+  "title": "Closest Shorthand Hex",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "String",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "closestShorthandHex",
+    "parameters": [
+      {
+        "name": "color",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "closestShorthandHex",
+      "rust": "closest_shorthand_hex",
+      "typescript": "closestShorthandHex"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

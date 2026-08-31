@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 430,
+  "slug": "unroll-multilevel-linked-list",
+  "title": "Unroll Multilevel Linked List",
+  "difficulty": "H3",
+  "tags": [
+    "Linked List",
+    "Depth-First Search",
+    "Doubly-Linked List"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "unrollList",
+    "parameters": [
+      {
+        "name": "head",
+        "codec": "multi_list",
+        "value_type": {
+          "kind": "multi_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "multi_list",
+    "return_type": {
+      "kind": "multi_list",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "comparison": "exact",
+    "entrypoints": {
+      "go": "unrollList",
+      "rust": "unroll_list",
+      "typescript": "unrollList"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

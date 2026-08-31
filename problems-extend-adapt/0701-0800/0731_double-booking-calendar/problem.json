@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 731,
+  "slug": "double-booking-calendar",
+  "title": "Double-Booking Calendar",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "DoubleBookCalendar",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "book",
+        "parameters": [
+          {
+            "name": "start",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "end",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

@@ -1,0 +1,3 @@
+function matrixProduct(mat1: number[][], mat2: number[][]): number[][] {
+    throw new Error("TODO");
+}

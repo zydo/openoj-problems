@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 379,
+  "slug": "number-pool-directory",
+  "title": "Number Pool Directory",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Queue"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "NumberPool",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "maxNumbers",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "acquire",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "isAvailable",
+        "parameters": [
+          {
+            "name": "number",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      },
+      {
+        "name": "returnNumber",
+        "parameters": [
+          {
+            "name": "number",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 510,
+  "slug": "ordered-successor-ii",
+  "title": "Ordered Successor II",
+  "difficulty": "H3",
+  "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "orderedSuccessor",
+    "parameters": [
+      {
+        "name": "tree",
+        "codec": "next_tree",
+        "value_type": {
+          "kind": "next_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "node",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "next_tree",
+    "return_type": {
+      "kind": "next_tree",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "comparison": "exact",
+    "entrypoints": {
+      "go": "orderedSuccessor",
+      "rust": "ordered_successor",
+      "typescript": "orderedSuccessor"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

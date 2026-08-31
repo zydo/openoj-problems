@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 432,
+  "slug": "frequency-extremes-registry",
+  "title": "Frequency Extremes Registry",
+  "difficulty": "H4",
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Doubly-Linked List"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "FrequencyExtremes",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "increment",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "decrement",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "maximumKey",
+        "parameters": [],
+        "return_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "minimumKey",
+        "parameters": [],
+        "return_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

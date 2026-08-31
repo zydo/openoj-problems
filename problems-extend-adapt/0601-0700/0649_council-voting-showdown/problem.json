@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 649,
+  "slug": "council-voting-showdown",
+  "title": "Council Voting Showdown",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Greedy",
+    "Queue"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "predictFactionVictory",
+    "parameters": [
+      {
+        "name": "council",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "predictFactionVictory",
+      "rust": "predict_faction_victory",
+      "typescript": "predictFactionVictory"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

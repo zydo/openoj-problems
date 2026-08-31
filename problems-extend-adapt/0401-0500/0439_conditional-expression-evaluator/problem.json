@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 439,
+  "slug": "conditional-expression-evaluator",
+  "title": "Conditional Expression Evaluator",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "evaluateConditional",
+    "parameters": [
+      {
+        "name": "expression",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "evaluateConditional",
+      "rust": "evaluate_conditional",
+      "typescript": "evaluateConditional"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

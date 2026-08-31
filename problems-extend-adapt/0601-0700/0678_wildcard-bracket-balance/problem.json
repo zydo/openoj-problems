@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 678,
+  "slug": "wildcard-bracket-balance",
+  "title": "Wildcard Bracket Balance",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Greedy",
+    "Bracket Sequences"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "isWildcardBalanced",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "isWildcardBalanced",
+      "rust": "is_wildcard_balanced",
+      "typescript": "isWildcardBalanced"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 706,
+  "slug": "custom-hash-map",
+  "title": "Custom Hash Map",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Hash Function"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "CustomHashMap",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "put",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "value",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "get",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "remove",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer"
+            }
+          }
+        ]
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

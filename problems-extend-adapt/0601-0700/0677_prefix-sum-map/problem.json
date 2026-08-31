@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 677,
+  "slug": "prefix-sum-map",
+  "title": "Prefix Sum Map",
+  "difficulty": "H3",
+  "tags": [
+    "Design",
+    "Trie",
+    "Hash Table",
+    "String"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "PrefixSumMap",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "put",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "val",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "prefixSum",
+        "parameters": [
+          {
+            "name": "prefix",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

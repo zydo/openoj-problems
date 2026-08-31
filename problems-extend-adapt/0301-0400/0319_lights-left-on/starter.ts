@@ -1,0 +1,3 @@
+function countLitBulbs(n: number): number {
+    throw new Error("TODO");
+}

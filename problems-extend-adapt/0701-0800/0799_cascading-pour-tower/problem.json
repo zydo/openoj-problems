@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 799,
+  "slug": "cascading-pour-tower",
+  "title": "Cascading Pour Tower",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cascadingPourTower",
+    "parameters": [
+      {
+        "name": "poured",
+        "codec": "json",
+        "value_type": {
+          "kind": "number"
+        }
+      },
+      {
+        "name": "query_row",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "query_glass",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "number"
+    },
+    "entrypoints": {
+      "go": "cascadingPourTower",
+      "rust": "cascading_pour_tower",
+      "typescript": "cascadingPourTower"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

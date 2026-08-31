@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 449,
+  "slug": "tree-codec",
+  "title": "Tree Codec",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Design"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "TreeCodec",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "encode",
+        "parameters": [
+          {
+            "name": "root",
+            "codec": "tree_node",
+            "value_type": {
+              "kind": "binary_tree",
+              "items": {
+                "kind": "integer",
+                "bits": 32
+              }
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "decode",
+        "parameters": [
+          {
+            "name": "data",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_codec": "tree_node",
+        "return_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 522,
+  "slug": "longest-distinguishing-subsequence-ii",
+  "title": "Longest Distinguishing Subsequence II",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestDistinguishingLength",
+    "parameters": [
+      {
+        "name": "strs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestDistinguishingLength",
+      "rust": "longest_distinguishing_length",
+      "typescript": "longestDistinguishingLength"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 294,
+  "slug": "flip-duel-ii",
+  "title": "Flip Duel II",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Backtracking",
+    "Game Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canWinFlipDuel",
+    "parameters": [
+      {
+        "name": "currentState",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "canWinFlipDuel",
+      "rust": "can_win_flip_duel",
+      "typescript": "canWinFlipDuel"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

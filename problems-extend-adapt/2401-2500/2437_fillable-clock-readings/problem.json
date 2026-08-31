@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2437,
+  "slug": "fillable-clock-readings",
+  "title": "Fillable Clock Readings",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countFillableReadings",
+    "parameters": [
+      {
+        "name": "time",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countFillableReadings",
+      "rust": "count_fillable_readings",
+      "typescript": "countFillableReadings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

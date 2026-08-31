@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2469,
+  "slug": "convert-a-celsius-reading",
+  "title": "Convert a Celsius Reading",
+  "difficulty": "H1",
+  "tags": [
+    "Math"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "convertCelsiusReading",
+    "parameters": [
+      {
+        "name": "celsius",
+        "codec": "json",
+        "value_type": {
+          "kind": "number"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "number"
+      }
+    },
+    "entrypoints": {
+      "go": "convertCelsiusReading",
+      "rust": "convert_celsius_reading",
+      "typescript": "convertCelsiusReading"
+    },
+    "comparison": {
+      "mode": "close",
+      "tolerance": 1e-05
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

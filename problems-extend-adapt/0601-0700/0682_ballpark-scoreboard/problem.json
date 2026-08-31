@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 682,
+  "slug": "ballpark-scoreboard",
+  "title": "Ballpark Scoreboard",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Stack",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "tallyBallparkScore",
+    "parameters": [
+      {
+        "name": "operations",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "tallyBallparkScore",
+      "rust": "tally_ballpark_score",
+      "typescript": "tallyBallparkScore"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

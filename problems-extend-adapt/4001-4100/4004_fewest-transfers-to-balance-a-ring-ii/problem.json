@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 4004,
+  "slug": "fewest-transfers-to-balance-a-ring-ii",
+  "title": "Fewest Transfers to Balance a Ring II",
+  "difficulty": "H5",
+  "tags": [
+    "Greedy",
+    "Heap (Priority Queue)",
+    "Binary Search",
+    "Math"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestTransfers",
+    "parameters": [
+      {
+        "name": "balance",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "fewestTransfers",
+      "rust": "fewest_transfers",
+      "typescript": "fewestTransfers"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

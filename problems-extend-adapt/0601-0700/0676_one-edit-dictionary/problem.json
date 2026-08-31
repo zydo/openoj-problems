@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 676,
+  "slug": "one-edit-dictionary",
+  "title": "One-Edit Dictionary",
+  "difficulty": "H3",
+  "tags": [
+    "Design",
+    "Trie",
+    "String"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "OneEditDictionary",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "loadWords",
+        "parameters": [
+          {
+            "name": "dictionary",
+            "codec": "json",
+            "value_type": {
+              "kind": "array",
+              "items": {
+                "kind": "string"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "matchesOneEdit",
+        "parameters": [
+          {
+            "name": "searchWord",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

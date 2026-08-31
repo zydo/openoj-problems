@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 558,
+  "slug": "quad-tree-grid-union",
+  "title": "Quad-Tree Grid Union",
+  "difficulty": "H3",
+  "tags": [
+    "Divide and Conquer",
+    "Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "gridUnion",
+    "parameters": [
+      {
+        "name": "quadTree1",
+        "codec": "quad_tree",
+        "value_type": {
+          "kind": "quad_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "quadTree2",
+        "codec": "quad_tree",
+        "value_type": {
+          "kind": "quad_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "quad_tree",
+    "return_type": {
+      "kind": "quad_tree",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "gridUnion",
+      "rust": "grid_union",
+      "typescript": "gridUnion"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

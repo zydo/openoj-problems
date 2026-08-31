@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 776,
+  "slug": "bst-threshold-partition",
+  "title": "BST Threshold Partition",
+  "difficulty": "H3",
+  "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Recursion",
+    "Binary Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "splitTreeByThreshold",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "tree_node_array",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "binary_tree",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "splitTreeByThreshold",
+      "rust": "split_tree_by_threshold",
+      "typescript": "splitTreeByThreshold"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

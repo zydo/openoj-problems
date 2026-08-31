@@ -1,0 +1,3 @@
+func closestXorNumber(num1 int, num2 int) int {
+	panic("TODO")
+}

@@ -1,0 +1,3 @@
+function cascadingPourTower(poured: number, query_row: number, query_glass: number): number {
+    throw new Error("TODO");
+}

@@ -1,0 +1,12 @@
+class QueueStack {
+
+    public QueueStack() {}
+
+    public void push(int x) {}
+
+    public int pop() {}
+
+    public int top() {}
+
+    public boolean empty() {}
+}

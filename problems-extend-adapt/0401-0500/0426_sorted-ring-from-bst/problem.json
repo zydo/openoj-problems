@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 426,
+  "slug": "sorted-ring-from-bst",
+  "title": "Sorted Ring From BST",
+  "difficulty": "H3",
+  "tags": [
+    "Binary Search Tree",
+    "Depth-First Search",
+    "Doubly-Linked List"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bstToSortedRing",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "doubly_circular",
+    "return_type": {
+      "kind": "doubly_circular",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "comparison": "exact",
+    "entrypoints": {
+      "go": "bstToSortedRing",
+      "rust": "bst_to_sorted_ring",
+      "typescript": "bstToSortedRing"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

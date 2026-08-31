@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 604,
+  "slug": "run-length-cursor",
+  "title": "Run-Length Cursor",
+  "difficulty": "H2",
+  "tags": [
+    "Design",
+    "String"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "RunLengthCursor",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "compressedString",
+          "codec": "json",
+          "value_type": {
+            "kind": "string"
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "nextChar",
+        "parameters": [],
+        "return_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "hasMore",
+        "parameters": [],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
