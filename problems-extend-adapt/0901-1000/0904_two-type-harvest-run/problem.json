@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 904,
+  "slug": "two-type-harvest-run",
+  "title": "Two-Type Harvest Run",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Sliding Window",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestTwoFruitRun",
+    "parameters": [
+      {
+        "name": "fruits",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestTwoFruitRun",
+      "rust": "longest_two_fruit_run",
+      "typescript": "longestTwoFruitRun"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

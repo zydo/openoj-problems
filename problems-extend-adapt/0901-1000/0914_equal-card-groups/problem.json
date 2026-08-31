@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 914,
+  "slug": "equal-card-groups",
+  "title": "Equal Card Groups",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greatest Common Divisor"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canFormEqualGroups",
+    "parameters": [
+      {
+        "name": "deck",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "canFormEqualGroups",
+      "rust": "can_form_equal_groups",
+      "typescript": "canFormEqualGroups"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
