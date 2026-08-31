@@ -718,7 +718,13 @@
       "at": "2026-08-29T06:33:32Z",
       "kind": "5-hour-pool",
       "note": "Figwork fleet batches 41/42 died on 429 [1308] Usage limit reached for 5 hour (reset 2026-08-29 14:24:21 local). Consumption-driven: NO step-down (target stays 5). Batch-42 refs verified landed (coordinator finalized its results); batch-41 figures all on disk, insert step pending. Resume batch-41 + launch premium batches 47/48 after reset."
+    },
+    {
+      "at": "2026-08-30T22:02:00-07:00",
+      "kind": "quota-window-exhausted",
+      "agents_lost": 10,
+      "note": "Shard 0601-0700 adaptation workers hit the shared per-agent session limit together; reset reported as 2026-08-31 01:30 America/Los_Angeles. Consumption-driven: no concurrency step-down. Existing agents were resumed with their saved contexts after quota recovery; no duplicate replacements were launched."
     }
   ],
-  "pool_resets_at": "2026-08-19T02:39:31-07:00"
+  "pool_resets_at": "2026-08-31T01:30:00-07:00"
 }
