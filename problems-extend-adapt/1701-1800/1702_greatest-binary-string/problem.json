@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1702,
+  "slug": "greatest-binary-string",
+  "title": "Greatest Binary String",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "greatestBinaryString",
+    "parameters": [
+      {
+        "name": "binary",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "greatestBinaryString",
+      "rust": "greatest_binary_string",
+      "typescript": "greatestBinaryString"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

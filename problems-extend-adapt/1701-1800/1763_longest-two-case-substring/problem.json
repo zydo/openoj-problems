@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1763,
+  "slug": "longest-two-case-substring",
+  "title": "Longest Two-Case Substring",
+  "difficulty": "H2",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Divide and Conquer"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestTwoCaseSubstring",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "longestTwoCaseSubstring",
+      "rust": "longest_two_case_substring",
+      "typescript": "longestTwoCaseSubstring"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

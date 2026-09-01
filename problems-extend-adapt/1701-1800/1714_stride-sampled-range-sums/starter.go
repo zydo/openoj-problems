@@ -1,0 +1,3 @@
+func stridedRangeSums(nums []int, queries [][]int) []int {
+	panic("TODO")
+}

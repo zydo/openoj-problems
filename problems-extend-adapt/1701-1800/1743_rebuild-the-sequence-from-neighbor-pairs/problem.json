@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1743,
+  "slug": "rebuild-the-sequence-from-neighbor-pairs",
+  "title": "Rebuild the Sequence from Neighbor Pairs",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "rebuildSequence",
+    "parameters": [
+      {
+        "name": "pairs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "rebuildSequence",
+      "rust": "rebuild_sequence",
+      "typescript": "rebuildSequence"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

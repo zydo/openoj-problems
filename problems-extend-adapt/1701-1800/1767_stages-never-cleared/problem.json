@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1767,
+  "slug": "stages-never-cleared",
+  "title": "Stages Never Cleared",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Pipelines (pipeline_id INTEGER PRIMARY KEY, stage_count INTEGER); CREATE TABLE Cleared (pipeline_id INTEGER, stage_id INTEGER, PRIMARY KEY (pipeline_id, stage_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

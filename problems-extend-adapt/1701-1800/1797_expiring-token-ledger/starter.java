@@ -1,0 +1,10 @@
+class TokenLedger {
+
+    public TokenLedger(int timeToLive) {}
+
+    public void generate(String tokenId, int currentTime) {}
+
+    public void renew(String tokenId, int currentTime) {}
+
+    public int countUnexpiredTokens(int currentTime) {}
+}

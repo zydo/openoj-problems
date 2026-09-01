@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1794,
+  "slug": "counting-the-tightest-letter-matches",
+  "title": "Counting the Tightest Letter Matches",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countTightestPairs",
+    "parameters": [
+      {
+        "name": "firstString",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "secondString",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countTightestPairs",
+      "rust": "count_tightest_pairs",
+      "typescript": "countTightestPairs"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
