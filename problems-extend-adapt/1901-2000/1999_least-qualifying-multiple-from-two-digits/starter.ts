@@ -1,0 +1,3 @@
+function leastQualifyingMultiple(k: number, digit1: number, digit2: number): number {
+    throw new Error("TODO");
+}

@@ -1,0 +1,10 @@
+class LockableTree {
+
+    public LockableTree(int[] parent) {}
+
+    public boolean lock(int num, int user) {}
+
+    public boolean unlock(int num, int user) {}
+
+    public boolean upgrade(int num, int user) {}
+}

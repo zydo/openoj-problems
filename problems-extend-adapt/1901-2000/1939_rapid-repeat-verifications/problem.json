@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1939,
+  "slug": "rapid-repeat-verifications",
+  "title": "Rapid Repeat Verifications",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "set",
+    "sql": {
+      "schema": "CREATE TABLE Registrations (member_id INTEGER PRIMARY KEY, joined_at DATETIME); CREATE TABLE Verifications (member_id INTEGER, sent_at DATETIME, outcome VARCHAR, PRIMARY KEY (member_id, sent_at));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

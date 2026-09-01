@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1919,
+  "slug": "buddies-with-shared-streams",
+  "title": "Buddies with Shared Streams",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Streams (listener_id INTEGER, track_id INTEGER, day DATE); CREATE TABLE Buddies (buddy1_id INTEGER, buddy2_id INTEGER, PRIMARY KEY (buddy1_id, buddy2_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
