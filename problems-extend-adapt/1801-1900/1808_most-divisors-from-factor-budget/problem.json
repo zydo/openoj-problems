@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1808,
+  "slug": "most-divisors-from-factor-budget",
+  "title": "Most Divisors From a Factor Budget",
+  "difficulty": "H4",
+  "tags": [
+    "Math",
+    "Number Theory",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxDivisorCount",
+    "parameters": [
+      {
+        "name": "primeFactors",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "maxDivisorCount",
+      "rust": "max_divisor_count",
+      "typescript": "maxDivisorCount"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

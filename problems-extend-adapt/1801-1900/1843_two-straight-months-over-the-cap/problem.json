@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1843,
+  "slug": "two-straight-months-over-the-cap",
+  "title": "Two Straight Months Over The Cap",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Wallets (wallet_id INTEGER, income_cap INTEGER, PRIMARY KEY (wallet_id)); CREATE TABLE Movements (movement_id INTEGER, wallet_id INTEGER, kind TEXT, amount INTEGER, day DATETIME, PRIMARY KEY (movement_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

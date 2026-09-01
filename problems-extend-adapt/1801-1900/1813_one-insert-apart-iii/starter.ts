@@ -1,0 +1,3 @@
+function oneInsertApart(sentence1: string, sentence2: string): boolean {
+    throw new Error("TODO");
+}

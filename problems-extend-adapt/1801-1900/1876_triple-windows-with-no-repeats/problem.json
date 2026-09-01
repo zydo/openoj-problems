@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1876,
+  "slug": "triple-windows-with-no-repeats",
+  "title": "Triple Windows With No Repeats",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Sliding Window",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countRepeatFreeWindows",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countRepeatFreeWindows",
+      "rust": "count_repeat_free_windows",
+      "typescript": "countRepeatFreeWindows"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

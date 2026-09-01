@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1813,
+  "slug": "one-insert-apart-iii",
+  "title": "One Insert Apart III",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "oneInsertApart",
+    "parameters": [
+      {
+        "name": "sentence1",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "sentence2",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "oneInsertApart",
+      "rust": "one_insert_apart",
+      "typescript": "oneInsertApart"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

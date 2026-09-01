@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1899,
+  "slug": "blending-triplets-toward-the-goal",
+  "title": "Blending Triplets Toward the Goal",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "blendReachesGoal",
+    "parameters": [
+      {
+        "name": "triplets",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "limitations": [],
+    "entrypoints": {
+      "go": "blendReachesGoal",
+      "rust": "blend_reaches_goal",
+      "typescript": "blendReachesGoal"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

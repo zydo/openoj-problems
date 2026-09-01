@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1882,
+  "slug": "dispatch-jobs-across-machines",
+  "title": "Dispatch Jobs Across Machines",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Heap (Priority Queue)"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "dispatchJobs",
+    "parameters": [
+      {
+        "name": "machines",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "jobs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 64
+      }
+    },
+    "entrypoints": {
+      "go": "dispatchJobs",
+      "rust": "dispatch_jobs",
+      "typescript": "dispatchJobs"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

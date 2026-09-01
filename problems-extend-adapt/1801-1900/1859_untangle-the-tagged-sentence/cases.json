@@ -1,0 +1,72 @@
+{
+  "public": [
+    {
+      "input": [
+        "river4 Quiet2 a3 flows1"
+      ],
+      "expected": "flows Quiet a river"
+    },
+    {
+      "input": [
+        "believe3 We1 can2"
+      ],
+      "expected": "We can believe"
+    },
+    {
+      "input": [
+        "reads5 She2 every3 night1 book4"
+      ],
+      "expected": "night She every book reads"
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "a1"
+      ],
+      "expected": "a"
+    },
+    {
+      "input": [
+        "Z9 x8 c7 v6 b5 n4 m3 q2 w1"
+      ],
+      "expected": "w q m n b v c x Z"
+    },
+    {
+      "input": [
+        "Iota9 beta2 theta8 Alpha1 Eta7 zeta6 delta4 Epsilon5 Gamma3"
+      ],
+      "expected": "Alpha beta Gamma delta Epsilon zeta Eta theta Iota"
+    },
+    {
+      "input": [
+        "single1"
+      ],
+      "expected": "single"
+    },
+    {
+      "input": [
+        "world2 hello1"
+      ],
+      "expected": "hello world"
+    },
+    {
+      "input": [
+        "three3 one1 two2"
+      ],
+      "expected": "one two three"
+    },
+    {
+      "input": [
+        "d4 b2 e5 a1 c3"
+      ],
+      "expected": "a b c d e"
+    },
+    {
+      "input": [
+        "test4 a2 is3 This1"
+      ],
+      "expected": "This a is test"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1846,
+  "slug": "largest-value-in-a-rebuilt-array",
+  "title": "Largest Value in a Rebuilt Array",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "largestRebuiltValue",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "entrypoints": {
+      "go": "largestRebuiltValue",
+      "rust": "largest_rebuilt_value",
+      "typescript": "largestRebuiltValue"
+    },
+    "comparison": "exact",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    }
+  },
+  "limits": {
+    "time_ms": 2000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1809,
+  "slug": "impression-free-streams",
+  "title": "Impression-Free Streams",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Stream (stream_id INTEGER, viewer_id INTEGER, start_at INTEGER, end_at INTEGER, PRIMARY KEY (stream_id)); CREATE TABLE Impressions (impression_id INTEGER, viewer_id INTEGER, shown_at INTEGER, PRIMARY KEY (impression_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

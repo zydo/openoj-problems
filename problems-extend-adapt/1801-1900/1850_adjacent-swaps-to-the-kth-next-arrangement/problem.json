@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1850,
+  "slug": "adjacent-swaps-to-the-kth-next-arrangement",
+  "title": "Adjacent Swaps to the Kth Next Arrangement",
+  "difficulty": "H3",
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "swapsToKthArrangement",
+    "parameters": [
+      {
+        "name": "num",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "swapsToKthArrangement",
+      "rust": "swaps_to_kth_arrangement",
+      "typescript": "swapsToKthArrangement"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 2000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

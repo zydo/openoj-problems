@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1867,
+  "slug": "lopsided-purchases",
+  "title": "Lopsided Purchases",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "sorted",
+    "sql": {
+      "schema": "CREATE TABLE Purchases (purchase_id INTEGER, item_id INTEGER, units INTEGER, PRIMARY KEY (purchase_id, item_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

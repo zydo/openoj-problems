@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1858,
+  "slug": "longest-prefix-complete-word",
+  "title": "Longest Prefix-Complete Word",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Trie",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestPrefixCompleteWord",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "longestPrefixCompleteWord",
+      "rust": "longest_prefix_complete_word",
+      "typescript": "longestPrefixCompleteWord"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 2000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
