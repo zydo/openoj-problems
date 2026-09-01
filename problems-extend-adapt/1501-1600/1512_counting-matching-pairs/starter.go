@@ -1,0 +1,3 @@
+func countMatchingPairs(nums []int) int64 {
+	panic("TODO")
+}

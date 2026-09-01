@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1523,
+  "slug": "odds-in-closed-range",
+  "title": "Odds in a Closed Range",
+  "difficulty": "H2",
+  "tags": [
+    "Math"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "oddCount",
+    "parameters": [
+      {
+        "name": "low",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "high",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "oddCount",
+      "rust": "odd_count",
+      "typescript": "oddCount"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

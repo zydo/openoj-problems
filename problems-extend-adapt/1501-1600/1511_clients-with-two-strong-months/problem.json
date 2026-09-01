@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1511,
+  "slug": "clients-with-two-strong-months",
+  "title": "Clients With Two Strong Months",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Clients (client_id INTEGER, name VARCHAR, country VARCHAR);\nCREATE TABLE Merch (sku INTEGER, label VARCHAR, price INTEGER);\nCREATE TABLE Invoices (invoice_id INTEGER, client_id INTEGER, sku INTEGER, invoice_date DATE, quantity INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

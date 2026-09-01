@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1543,
+  "slug": "clean-up-the-scan-log",
+  "title": "Clean Up the Scan Log",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Scans (scan_id INTEGER, item_name TEXT, scan_date DATE);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

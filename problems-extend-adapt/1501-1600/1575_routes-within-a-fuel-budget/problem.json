@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1575,
+  "slug": "routes-within-a-fuel-budget",
+  "title": "Routes Within a Fuel Budget",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countBudgetedRoutes",
+    "parameters": [
+      {
+        "name": "locations",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "start",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "finish",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "fuel",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countBudgetedRoutes",
+      "rust": "count_budgeted_routes",
+      "typescript": "countBudgetedRoutes"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1567,
+  "slug": "longest-positive-product-run",
+  "title": "Longest Positive-Product Run",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestPosRun",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestPosRun",
+      "rust": "longest_pos_run",
+      "typescript": "longestPosRun"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1566,
+  "slug": "blocks-echoed-back-to-back",
+  "title": "Blocks Echoed Back to Back",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "hasEchoBlock",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "m",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "hasEchoBlock",
+      "rust": "has_echo_block",
+      "typescript": "hasEchoBlock"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

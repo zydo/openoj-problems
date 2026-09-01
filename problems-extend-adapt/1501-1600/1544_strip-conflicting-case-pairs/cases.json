@@ -1,0 +1,102 @@
+{
+  "public": [
+    {
+      "input": [
+        "aBbcDd"
+      ],
+      "expected": "ac"
+    },
+    {
+      "input": [
+        "xXyYz"
+      ],
+      "expected": "z"
+    },
+    {
+      "input": [
+        "Pq"
+      ],
+      "expected": "Pq"
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "abc"
+      ],
+      "expected": "abc"
+    },
+    {
+      "input": [
+        "Z"
+      ],
+      "expected": "Z"
+    },
+    {
+      "input": [
+        "aA"
+      ],
+      "expected": ""
+    },
+    {
+      "input": [
+        "aXxA"
+      ],
+      "expected": ""
+    },
+    {
+      "input": [
+        "aaBB"
+      ],
+      "expected": "aaBB"
+    },
+    {
+      "input": [
+        "aXAx"
+      ],
+      "expected": "aXAx"
+    },
+    {
+      "input": [
+        "aAxyYXz"
+      ],
+      "expected": "z"
+    },
+    {
+      "input": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "expected": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "input": [
+        "xXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxX"
+      ],
+      "expected": ""
+    },
+    {
+      "input": [
+        "Programming"
+      ],
+      "expected": "Programming"
+    },
+    {
+      "input": [
+        "AbBcCa"
+      ],
+      "expected": ""
+    },
+    {
+      "input": [
+        "xaAyYbBz"
+      ],
+      "expected": "xz"
+    },
+    {
+      "input": [
+        "zZaA"
+      ],
+      "expected": ""
+    }
+  ]
+}

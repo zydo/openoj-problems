@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1592,
+  "slug": "even-out-spaces-between-words",
+  "title": "Even Out the Spaces Between Words",
+  "difficulty": "H2",
+  "tags": [
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "spreadSpaces",
+    "parameters": [
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "spreadSpaces",
+      "rust": "spread_spaces",
+      "typescript": "spreadSpaces"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

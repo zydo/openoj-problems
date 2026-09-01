@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1521,
+  "slug": "closest-subarray-and",
+  "title": "Closest Subarray AND",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "closestAnd",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "closestAnd",
+      "rust": "closest_and",
+      "typescript": "closestAnd"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

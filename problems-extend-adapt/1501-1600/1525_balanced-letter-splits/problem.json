@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1525,
+  "slug": "balanced-letter-splits",
+  "title": "Balanced-Letter Splits",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countBalancedSplits",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countBalancedSplits",
+      "rust": "count_balanced_splits",
+      "typescript": "countBalancedSplits"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

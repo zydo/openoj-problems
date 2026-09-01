@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1598,
+  "slug": "steps-back-to-the-main-folder",
+  "title": "Steps Back to the Main Folder",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "String",
+    "Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stepsToMainFolder",
+    "parameters": [
+      {
+        "name": "logs",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "stepsToMainFolder",
+      "rust": "steps_to_main_folder",
+      "typescript": "stepsToMainFolder"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

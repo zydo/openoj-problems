@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1593,
+  "slug": "cut-into-most-distinct-pieces",
+  "title": "Cut Into the Most Distinct Pieces",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxDistinctCut",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "maxDistinctCut",
+      "rust": "max_distinct_cut",
+      "typescript": "maxDistinctCut"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

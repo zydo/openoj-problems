@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1586,
+  "slug": "cursor-over-a-search-tree",
+  "title": "Cursor Over A Search Tree",
+  "difficulty": "H3",
+  "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Design",
+    "Binary Tree",
+    "Iterator"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "TreeCursor",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "root",
+          "codec": "tree_node",
+          "value_type": {
+            "kind": "binary_tree",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "hasNext",
+        "parameters": [],
+        "return_type": {
+          "kind": "boolean"
+        }
+      },
+      {
+        "name": "next",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "hasPrev",
+        "parameters": [],
+        "return_type": {
+          "kind": "boolean"
+        }
+      },
+      {
+        "name": "prev",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 2048
+  }
+}

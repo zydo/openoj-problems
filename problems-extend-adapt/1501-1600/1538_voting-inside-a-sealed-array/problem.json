@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1538,
+  "slug": "voting-inside-a-sealed-array",
+  "title": "Voting Inside A Sealed Array",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Interactive"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "callMajority",
+    "oracle": "SealedBag",
+    "oracle_methods": [
+      {
+        "name": "query",
+        "parameters": [
+          {
+            "name": "a",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "b",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "c",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "d",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "length",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "query_limit": 200000,
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "SealedBag",
+        "construct": [
+          "nums"
+        ],
+        "auxiliary": [],
+        "parameter": "sealedBag"
+      }
+    },
+    "entrypoints": {
+      "go": "callMajority",
+      "rust": "call_majority",
+      "cpp": "callMajority",
+      "javascript": "callMajority",
+      "typescript": "callMajority"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1570,
+  "slug": "sparse-vectors-dot-product",
+  "title": "Sparse Vectors' Dot Product",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "CompactVector",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "nums",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "dotAgainst",
+        "parameters": [
+          {
+            "name": "vec",
+            "codec": "json",
+            "value_type": {
+              "kind": "instance"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

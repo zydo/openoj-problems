@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1599,
+  "slug": "rotations-to-peak-gondola-profit",
+  "title": "Rotations to Peak Gondola Profit",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "peakProfitRotations",
+    "parameters": [
+      {
+        "name": "customers",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "boardingCost",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "runningCost",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "peakProfitRotations",
+      "rust": "peak_profit_rotations",
+      "typescript": "peakProfitRotations"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

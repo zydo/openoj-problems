@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1549,
+  "slug": "each-lots-latest-bids",
+  "title": "Each Lot's Latest Bids",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Buyers (buyer_id INTEGER, name VARCHAR);\nCREATE TABLE Bids (bid_id INTEGER, bid_date DATE, buyer_id INTEGER, lot_id INTEGER);\nCREATE TABLE Lots (lot_id INTEGER, lot_name VARCHAR, estimate INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

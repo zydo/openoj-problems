@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1501,
+  "slug": "territories-worth-backing",
+  "title": "Territories Worth Backing",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Subscribers (id INTEGER, name TEXT, phone TEXT);\nCREATE TABLE Territories (name TEXT, dialing TEXT);\nCREATE TABLE Dials (dialer_id INTEGER, receiver_id INTEGER, minutes INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

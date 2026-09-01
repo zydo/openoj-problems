@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1555,
+  "slug": "account-balances-after-transfers",
+  "title": "Account Balances After Transfers",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Accounts (account_id INTEGER, holder_name VARCHAR, opening_balance INTEGER);\nCREATE TABLE Transfers (transfer_id INTEGER, payer_id INTEGER, payee_id INTEGER, amount INTEGER, posted_on DATE);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "public": [
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(1,'Noor','MIGRAINE IBS'),\n(2,'Owen','DIAB100'),\n(3,'Petra','ACNE DIAB150 RHINITIS'),\n(4,'Quill','DIAB200 FLU'),\n(5,'Rhea','PREDIAB1'),\n(6,'Sami','');"
+      ],
+      "expected": [
+        [
+          2,
+          "Owen",
+          "DIAB100"
+        ],
+        [
+          3,
+          "Petra",
+          "ACNE DIAB150 RHINITIS"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(7,'Tala','DIAB1'),\n(8,'Ugo','FLU XDIAB199'),\n(9,'Vic','COLD DIAB1'),\n(10,'Wren','DIAB11 SEASONAL');"
+      ],
+      "expected": [
+        [
+          7,
+          "Tala",
+          "DIAB1"
+        ],
+        [
+          9,
+          "Vic",
+          "COLD DIAB1"
+        ],
+        [
+          10,
+          "Wren",
+          "DIAB11 SEASONAL"
+        ]
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(1,'Amy','DIAB1'),\n(2,'Ben','DIAB1XYZ'),\n(3,'Cara','DIAB0');"
+      ],
+      "expected": [
+        [
+          1,
+          "Amy",
+          "DIAB1"
+        ],
+        [
+          2,
+          "Ben",
+          "DIAB1XYZ"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(1,'Amy','XDIAB1'),\n(2,'Ben','FLU ADIAB100'),\n(3,'Cara','FLU DIAB1'),\n(4,'Dana','FLU DIAB100 COUGH');"
+      ],
+      "expected": [
+        [
+          3,
+          "Cara",
+          "FLU DIAB1"
+        ],
+        [
+          4,
+          "Dana",
+          "FLU DIAB100 COUGH"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(1,'Amy','ACNE MYOP MISC1'),\n(2,'Ben','FLU COUGH DIAB199'),\n(3,'Cara','DIAB1 DIAB2 FLU');"
+      ],
+      "expected": [
+        [
+          2,
+          "Ben",
+          "FLU COUGH DIAB199"
+        ],
+        [
+          3,
+          "Cara",
+          "DIAB1 DIAB2 FLU"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(1,'Amy','FLU COUGH'),\n(2,'Ben','ACNE'),\n(3,'Cara','DIAB201');"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(1,'Amy',''),\n(2,'Ben','DIAB100');"
+      ],
+      "expected": [
+        [
+          2,
+          "Ben",
+          "DIAB100"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(5,'Alain','DIAB201'),\n(4,'George','ACNE DIAB100'),\n(3,'Bob','DIAB100 MYOP'),\n(2,'Alice',''),\n(1,'Daniel','YFEV COUGH');"
+      ],
+      "expected": [
+        [
+          3,
+          "Bob",
+          "DIAB100 MYOP"
+        ],
+        [
+          4,
+          "George",
+          "ACNE DIAB100"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(3,'Cara','DIAB0'),\n(2,'Ben','DIAB1XYZ'),\n(1,'Amy','DIAB1');"
+      ],
+      "expected": [
+        [
+          1,
+          "Amy",
+          "DIAB1"
+        ],
+        [
+          2,
+          "Ben",
+          "DIAB1XYZ"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(4,'Dana','FLU DIAB100 COUGH'),\n(3,'Cara','FLU DIAB1'),\n(2,'Ben','FLU ADIAB100'),\n(1,'Amy','XDIAB1');"
+      ],
+      "expected": [
+        [
+          3,
+          "Cara",
+          "FLU DIAB1"
+        ],
+        [
+          4,
+          "Dana",
+          "FLU DIAB100 COUGH"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(3,'Cara','DIAB1 DIAB2 FLU'),\n(2,'Ben','FLU COUGH DIAB199'),\n(1,'Amy','ACNE MYOP MISC1');"
+      ],
+      "expected": [
+        [
+          2,
+          "Ben",
+          "FLU COUGH DIAB199"
+        ],
+        [
+          3,
+          "Cara",
+          "DIAB1 DIAB2 FLU"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Charts VALUES\n(3,'Cara','DIAB201'),\n(2,'Ben','ACNE'),\n(1,'Amy','FLU COUGH');"
+      ],
+      "expected": []
+    }
+  ]
+}

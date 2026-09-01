@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1574,
+  "slug": "smallest-removal-to-sort-the-array",
+  "title": "Smallest Removal to Sort the Array",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestRemovalLength",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "smallestRemovalLength",
+      "rust": "smallest_removal_length",
+      "typescript": "smallestRemovalLength"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

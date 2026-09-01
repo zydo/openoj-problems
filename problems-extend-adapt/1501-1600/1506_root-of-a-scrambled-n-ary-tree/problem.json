@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1506,
+  "slug": "root-of-a-scrambled-n-ary-tree",
+  "title": "Root Of A Scrambled N-ary Tree",
+  "difficulty": "H2",
+  "tags": [
+    "Hash Table",
+    "Bit Manipulation",
+    "Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "locateRoot",
+    "parameters": [
+      {
+        "name": "tree",
+        "codec": "nary_tree_nodes",
+        "value_type": {
+          "kind": "nary_tree_nodes",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          },
+          "class": "SharedNode"
+        }
+      }
+    ],
+    "return_codec": "nary_tree",
+    "return_type": {
+      "kind": "nary_tree",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      },
+      "class": "SharedNode"
+    },
+    "entrypoints": {
+      "go": "locateRoot",
+      "rust": "locate_root",
+      "typescript": "locateRoot"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

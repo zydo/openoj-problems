@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1510,
+  "slug": "square-takeaway-game-iv",
+  "title": "Square Takeaway Game IV",
+  "difficulty": "H4",
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Game Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "firstPlayerWins",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "firstPlayerWins",
+      "rust": "first_player_wins",
+      "typescript": "firstPlayerWins"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

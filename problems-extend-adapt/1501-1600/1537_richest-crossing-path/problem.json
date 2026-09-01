@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1537,
+  "slug": "richest-crossing-path",
+  "title": "The Richest Crossing Path",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "richestCrossing",
+    "parameters": [
+      {
+        "name": "nums1",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "nums2",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "richestCrossing",
+      "rust": "richest_crossing",
+      "typescript": "richestCrossing"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

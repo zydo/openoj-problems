@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1553,
+  "slug": "clearing-the-orange-pile",
+  "title": "Clearing the Orange Pile",
+  "difficulty": "H4",
+  "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "daysToClear",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "daysToClear",
+      "rust": "days_to_clear",
+      "typescript": "daysToClear"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
