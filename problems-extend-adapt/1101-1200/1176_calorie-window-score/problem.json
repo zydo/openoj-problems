@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1176,
+  "slug": "calorie-window-score",
+  "title": "Calorie Window Score",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "calorieWindowScore",
+    "parameters": [
+      {
+        "name": "calories",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "lower",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "upper",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "calorieWindowScore",
+      "rust": "calorie_window_score",
+      "typescript": "calorieWindowScore"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

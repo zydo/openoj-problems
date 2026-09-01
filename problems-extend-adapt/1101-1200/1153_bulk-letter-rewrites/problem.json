@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1153,
+  "slug": "bulk-letter-rewrites",
+  "title": "Bulk Letter Rewrites",
+  "difficulty": "H4",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Graph Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canBulkRewrite",
+    "parameters": [
+      {
+        "name": "str1",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "str2",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "canBulkRewrite",
+      "rust": "can_bulk_rewrite",
+      "typescript": "canBulkRewrite"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

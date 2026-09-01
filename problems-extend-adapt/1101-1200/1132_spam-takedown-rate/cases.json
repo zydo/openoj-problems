@@ -1,0 +1,146 @@
+{
+  "public": [
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(10,100,'2021-03-01','view',NULL),\n(10,100,'2021-03-01','report','spam'),\n(11,200,'2021-03-01','report','spam'),\n(11,200,'2021-03-02','report','spam'),\n(12,300,'2021-03-02','report','harassment'),\n(13,400,'2021-03-03','report','spam'),\n(13,400,'2021-03-04','like',NULL);\nINSERT INTO Takedowns VALUES\n(100,'2021-03-20'),\n(400,'2021-03-25');"
+      ],
+      "expected": [
+        [
+          50.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(7,50,'2020-11-05','report','spam'),\n(8,50,'2020-11-05','report','spam'),\n(9,60,'2020-11-05','report','racism'),\n(9,70,'2020-11-06','report','spam');\nINSERT INTO Takedowns VALUES\n(50,'2020-11-30'),\n(70,'2020-12-01');"
+      ],
+      "expected": [
+        [
+          100.0
+        ]
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,1,'2019-07-01','view',NULL);\nINSERT INTO Takedowns VALUES\n(1,'2019-07-02');"
+      ],
+      "expected": [
+        [
+          null
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,1,'2019-07-01','report','spam'),\n(2,2,'2019-07-01','report','spam');\nINSERT INTO Takedowns VALUES\n(1,'2019-07-05'),\n(2,'2019-07-05');"
+      ],
+      "expected": [
+        [
+          100.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,1,'2019-07-01','report','spam'),\n(2,2,'2019-07-01','report','spam');\n"
+      ],
+      "expected": [
+        [
+          0.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,1,'2019-07-01','report','spam'),\n(2,2,'2019-07-01','report','racism');\nINSERT INTO Takedowns VALUES\n(1,'2019-07-02'),\n(2,'2019-07-02');"
+      ],
+      "expected": [
+        [
+          100.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,1,'2019-07-01','report','spam'),\n(2,2,'2019-07-01','report','spam'),\n(3,3,'2019-07-01','report','spam');\nINSERT INTO Takedowns VALUES\n(1,'2019-07-02');"
+      ],
+      "expected": [
+        [
+          33.33
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,1,'2019-07-01','report','spam'),\n(2,2,'2019-07-01','report','spam'),\n(3,3,'2019-07-02','report','spam');\nINSERT INTO Takedowns VALUES\n(1,'2019-07-09'),\n(3,'2019-07-09');"
+      ],
+      "expected": [
+        [
+          75.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,7,'2019-07-01','report','spam'),\n(2,7,'2019-07-01','report','spam'),\n(3,7,'2019-07-01','report','spam'),\n(4,8,'2019-07-01','report','spam');\nINSERT INTO Takedowns VALUES\n(7,'2019-07-05');"
+      ],
+      "expected": [
+        [
+          50.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,1,'2019-07-01','report','spam'),\n(1,1,'2019-07-02','report','spam'),\n(2,2,'2019-07-01','report','spam');\nINSERT INTO Takedowns VALUES\n(1,'2019-07-03');"
+      ],
+      "expected": [
+        [
+          75.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "\n"
+      ],
+      "expected": [
+        [
+          null
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(100,1,'2019-07-01','report','spam'),\n(100,1,'2019-07-01','view',NULL),\n(101,2,'2019-07-01','report','spam'),\n(101,2,'2019-07-01','view',NULL),\n(102,3,'2019-07-01','report','spam'),\n(102,3,'2019-07-01','view',NULL),\n(103,4,'2019-07-01','report','spam'),\n(103,4,'2019-07-01','view',NULL),\n(100,5,'2019-07-02','report','spam'),\n(100,5,'2019-07-02','view',NULL),\n(101,6,'2019-07-02','report','spam'),\n(101,6,'2019-07-02','view',NULL),\n(102,7,'2019-07-02','report','spam'),\n(102,7,'2019-07-02','view',NULL),\n(103,8,'2019-07-02','report','spam'),\n(103,8,'2019-07-02','view',NULL),\n(100,9,'2019-07-03','report','spam'),\n(100,9,'2019-07-03','view',NULL),\n(101,10,'2019-07-03','report','spam'),\n(101,10,'2019-07-03','view',NULL),\n(102,11,'2019-07-03','report','spam'),\n(102,11,'2019-07-03','view',NULL),\n(103,12,'2019-07-03','report','spam'),\n(103,12,'2019-07-03','view',NULL),\n(100,13,'2019-07-04','report','spam'),\n(100,13,'2019-07-04','view',NULL),\n(101,14,'2019-07-04','report','spam'),\n(101,14,'2019-07-04','view',NULL),\n(102,15,'2019-07-04','report','spam'),\n(102,15,'2019-07-04','view',NULL),\n(103,16,'2019-07-04','report','spam'),\n(103,16,'2019-07-04','view',NULL),\n(100,17,'2019-07-05','report','spam'),\n(100,17,'2019-07-05','view',NULL),\n(101,18,'2019-07-05','report','spam'),\n(101,18,'2019-07-05','view',NULL),\n(102,19,'2019-07-05','report','spam'),\n(102,19,'2019-07-05','view',NULL),\n(103,20,'2019-07-05','report','spam'),\n(103,20,'2019-07-05','view',NULL),\n(100,21,'2019-07-06','report','spam'),\n(100,21,'2019-07-06','view',NULL),\n(101,22,'2019-07-06','report','spam'),\n(101,22,'2019-07-06','view',NULL),\n(102,23,'2019-07-06','report','spam'),\n(102,23,'2019-07-06','view',NULL),\n(103,24,'2019-07-06','report','spam'),\n(103,24,'2019-07-06','view',NULL),\n(100,25,'2019-07-07','report','spam'),\n(100,25,'2019-07-07','view',NULL),\n(101,26,'2019-07-07','report','spam'),\n(101,26,'2019-07-07','view',NULL),\n(102,27,'2019-07-07','report','spam'),\n(102,27,'2019-07-07','view',NULL),\n(103,28,'2019-07-07','report','spam'),\n(103,28,'2019-07-07','view',NULL),\n(100,29,'2019-07-08','report','spam'),\n(100,29,'2019-07-08','view',NULL),\n(101,30,'2019-07-08','report','spam'),\n(101,30,'2019-07-08','view',NULL),\n(102,31,'2019-07-08','report','spam'),\n(102,31,'2019-07-08','view',NULL),\n(103,32,'2019-07-08','report','spam'),\n(103,32,'2019-07-08','view',NULL);\nINSERT INTO Takedowns VALUES\n(2,'2019-07-20'),\n(7,'2019-07-20'),\n(9,'2019-07-20'),\n(12,'2019-07-20'),\n(14,'2019-07-20'),\n(19,'2019-07-20'),\n(21,'2019-07-20'),\n(24,'2019-07-20'),\n(26,'2019-07-20'),\n(31,'2019-07-20');"
+      ],
+      "expected": [
+        [
+          31.25
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,1,'2019-07-01','report','racism'),\n(2,2,'2019-07-01','report','racism'),\n(3,3,'2019-07-02','report','spam'),\n(4,4,'2019-07-02','report','spam');\nINSERT INTO Takedowns VALUES\n(1,'2019-07-05'),\n(3,'2019-07-05');"
+      ],
+      "expected": [
+        [
+          50.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Interactions VALUES\n(1,10,'2019-07-01','report','spam'),\n(1,11,'2019-07-01','report','spam'),\n(1,20,'2019-07-02','report','spam'),\n(1,21,'2019-07-02','report','spam'),\n(1,30,'2019-07-03','report','spam'),\n(1,31,'2019-07-03','report','spam');\nINSERT INTO Takedowns VALUES\n(10,'2019-07-10'),\n(11,'2019-07-10'),\n(20,'2019-07-10'),\n(21,'2019-07-10'),\n(30,'2019-07-10'),\n(31,'2019-07-10');"
+      ],
+      "expected": [
+        [
+          100.0
+        ]
+      ]
+    }
+  ]
+}

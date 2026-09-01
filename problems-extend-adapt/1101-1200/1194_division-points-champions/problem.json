@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1194,
+  "slug": "division-points-champions",
+  "title": "Division Points Champions",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "set",
+    "sql": {
+      "schema": "CREATE TABLE Racers (racer_id INTEGER, division_id INTEGER, PRIMARY KEY (racer_id));\nCREATE TABLE Races (race_id INTEGER, first_racer INTEGER, second_racer INTEGER, first_points INTEGER, second_points INTEGER, PRIMARY KEY (race_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1181,
+  "slug": "chained-phrase-merges",
+  "title": "Chained Phrase Merges",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Hash Table",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "chainedPhraseMerges",
+    "parameters": [
+      {
+        "name": "phrases",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "chainedPhraseMerges",
+      "rust": "chained_phrase_merges",
+      "typescript": "chainedPhraseMerges"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 4096
+  }
+}

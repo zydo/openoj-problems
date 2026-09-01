@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1169,
+  "slug": "flagging-suspicious-transactions",
+  "title": "Flagging Suspicious Transactions",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "flaggedTransactions",
+    "parameters": [
+      {
+        "name": "transactions",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "flaggedTransactions",
+      "rust": "flagged_transactions",
+      "typescript": "flaggedTransactions"
+    },
+    "comparison": "multiset"
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 4096
+  }
+}

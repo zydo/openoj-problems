@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1127,
+  "slug": "daily-totals-by-platform",
+  "title": "Daily Totals by Platform",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "set",
+    "sql": {
+      "schema": "CREATE TABLE Charges (shopper_id INTEGER, spend_date DATE, platform VARCHAR, amount INTEGER, PRIMARY KEY (shopper_id, spend_date, platform));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

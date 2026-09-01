@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1119,
+  "slug": "strip-the-vowels",
+  "title": "Strip the Vowels",
+  "difficulty": "H2",
+  "tags": [
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stripVowels",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "stripVowels",
+      "rust": "strip_vowels",
+      "typescript": "stripVowels"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

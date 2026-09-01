@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1128,
+  "slug": "counting-matching-domino-pairs",
+  "title": "Counting Matching Domino Pairs",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countMatchingDominoPairs",
+    "parameters": [
+      {
+        "name": "dominoes",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countMatchingDominoPairs",
+      "rust": "count_matching_domino_pairs",
+      "typescript": "countMatchingDominoPairs"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

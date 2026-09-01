@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1111,
+  "slug": "split-brackets-two-shallow-groups",
+  "title": "Split Brackets into Two Shallow Groups",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "shallowSplit",
+    "parameters": [
+      {
+        "name": "seq",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "shallowSplit",
+      "rust": "shallow_split",
+      "typescript": "shallowSplit"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

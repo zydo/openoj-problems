@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1104,
+  "slug": "zigzag-tree-ancestors",
+  "title": "Zigzag Tree Ancestors",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Tree",
+    "Binary Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "zigzagAncestors",
+    "parameters": [
+      {
+        "name": "label",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "zigzagAncestors",
+      "rust": "zigzag_ancestors",
+      "typescript": "zigzagAncestors"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

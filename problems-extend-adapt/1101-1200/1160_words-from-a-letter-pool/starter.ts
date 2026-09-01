@@ -1,0 +1,3 @@
+function formableLengthSum(words: string[], chars: string): number {
+    throw new Error("TODO");
+}

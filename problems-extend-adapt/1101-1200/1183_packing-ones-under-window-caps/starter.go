@@ -1,0 +1,3 @@
+func packMaxOnes(width int, height int, sideLength int, maxOnes int) int {
+	panic("TODO")
+}

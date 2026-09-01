@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1115,
+  "slug": "tick-tock-alternation",
+  "title": "Tick-Tock Alternation",
+  "difficulty": "H3",
+  "tags": [
+    "Concurrency"
+  ],
+  "invocation": {
+    "type": "concurrent",
+    "class_name": "TickTockPair",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "n",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "tick",
+        "parameters": [
+          {
+            "name": "emitTick",
+            "codec": "json",
+            "value_type": {
+              "kind": "callback"
+            }
+          }
+        ]
+      },
+      {
+        "name": "tock",
+        "parameters": [
+          {
+            "name": "emitTock",
+            "codec": "json",
+            "value_type": {
+              "kind": "callback"
+            }
+          }
+        ]
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 4000,
+    "memory_mb": 256,
+    "output_kb": 64,
+    "threads": 4
+  }
+}

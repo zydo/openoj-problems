@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1131,
+  "slug": "widest-pair-distance",
+  "title": "Widest Pair Distance",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "widestPairDistance",
+    "parameters": [
+      {
+        "name": "arr1",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "arr2",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "widestPairDistance",
+      "rust": "widest_pair_distance",
+      "typescript": "widestPairDistance"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

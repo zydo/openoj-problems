@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1108,
+  "slug": "neutralize-an-ip-address",
+  "title": "Neutralize an IP Address",
+  "difficulty": "H2",
+  "tags": [
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "neutralizeAddress",
+    "parameters": [
+      {
+        "name": "address",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "neutralizeAddress",
+      "rust": "neutralize_address",
+      "typescript": "neutralizeAddress"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
