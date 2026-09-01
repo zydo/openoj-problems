@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1684,
+  "slug": "count-words-within-a-permitted-alphabet",
+  "title": "Count Words Within a Permitted Alphabet",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countWordsInAlphabet",
+    "parameters": [
+      {
+        "name": "allowed",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countWordsInAlphabet",
+      "rust": "count_words_in_alphabet",
+      "typescript": "countWordsInAlphabet"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

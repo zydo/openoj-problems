@@ -1,0 +1,256 @@
+{
+  "public": [
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(1,'Ana'),\n(2,'Boris');\nINSERT INTO OfficeB VALUES\n(5,'Cem'),\n(2,'Dara');\nINSERT INTO OfficeC VALUES\n(7,'Ewa'),\n(2,'Femi');"
+      ],
+      "expected": [
+        [
+          "Ana",
+          "Cem",
+          "Ewa"
+        ],
+        [
+          "Ana",
+          "Cem",
+          "Femi"
+        ],
+        [
+          "Ana",
+          "Dara",
+          "Ewa"
+        ],
+        [
+          "Boris",
+          "Cem",
+          "Ewa"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(1,'Lena'),\n(2,'Mark');\nINSERT INTO OfficeB VALUES\n(3,'Lena');\nINSERT INTO OfficeC VALUES\n(4,'Nia'),\n(5,'Mark');"
+      ],
+      "expected": [
+        [
+          "Mark",
+          "Lena",
+          "Nia"
+        ]
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(1,'Amy');\nINSERT INTO OfficeB VALUES\n(2,'Ben');\nINSERT INTO OfficeC VALUES\n(3,'Cara');"
+      ],
+      "expected": [
+        [
+          "Amy",
+          "Ben",
+          "Cara"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(1,'A1'),\n(2,'A2');\nINSERT INTO OfficeB VALUES\n(3,'B1'),\n(4,'B2');\nINSERT INTO OfficeC VALUES\n(5,'C1'),\n(6,'C2');"
+      ],
+      "expected": [
+        [
+          "A1",
+          "B1",
+          "C1"
+        ],
+        [
+          "A1",
+          "B1",
+          "C2"
+        ],
+        [
+          "A1",
+          "B2",
+          "C1"
+        ],
+        [
+          "A1",
+          "B2",
+          "C2"
+        ],
+        [
+          "A2",
+          "B1",
+          "C1"
+        ],
+        [
+          "A2",
+          "B1",
+          "C2"
+        ],
+        [
+          "A2",
+          "B2",
+          "C1"
+        ],
+        [
+          "A2",
+          "B2",
+          "C2"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(1,'X'),\n(2,'Y');\nINSERT INTO OfficeB VALUES\n(3,'Z');"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(1,'Alpha'),\n(2,'Beta'),\n(3,'Gamma');\nINSERT INTO OfficeB VALUES\n(4,'Delta');\nINSERT INTO OfficeC VALUES\n(5,'Epsilon'),\n(2,'Beta');"
+      ],
+      "expected": [
+        [
+          "Alpha",
+          "Delta",
+          "Epsilon"
+        ],
+        [
+          "Alpha",
+          "Delta",
+          "Beta"
+        ],
+        [
+          "Beta",
+          "Delta",
+          "Epsilon"
+        ],
+        [
+          "Gamma",
+          "Delta",
+          "Epsilon"
+        ],
+        [
+          "Gamma",
+          "Delta",
+          "Beta"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(1,'Sam');\nINSERT INTO OfficeB VALUES\n(2,'Sam');\nINSERT INTO OfficeC VALUES\n(3,'Pat');"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        ""
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(2,'Bob'),\n(1,'Alice');\nINSERT INTO OfficeB VALUES\n(3,'Tom');\nINSERT INTO OfficeC VALUES\n(10,'Alice'),\n(2,'Jerry'),\n(3,'Tom');"
+      ],
+      "expected": [
+        [
+          "Alice",
+          "Tom",
+          "Jerry"
+        ],
+        [
+          "Bob",
+          "Tom",
+          "Alice"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(2,'A2'),\n(1,'A1');\nINSERT INTO OfficeB VALUES\n(4,'B2'),\n(3,'B1');\nINSERT INTO OfficeC VALUES\n(6,'C2'),\n(5,'C1');"
+      ],
+      "expected": [
+        [
+          "A1",
+          "B1",
+          "C1"
+        ],
+        [
+          "A1",
+          "B1",
+          "C2"
+        ],
+        [
+          "A1",
+          "B2",
+          "C1"
+        ],
+        [
+          "A1",
+          "B2",
+          "C2"
+        ],
+        [
+          "A2",
+          "B1",
+          "C1"
+        ],
+        [
+          "A2",
+          "B1",
+          "C2"
+        ],
+        [
+          "A2",
+          "B2",
+          "C1"
+        ],
+        [
+          "A2",
+          "B2",
+          "C2"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(2,'Y'),\n(1,'X');\nINSERT INTO OfficeB VALUES\n(3,'Z');"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO OfficeA VALUES\n(3,'Gamma'),\n(2,'Beta'),\n(1,'Alpha');\nINSERT INTO OfficeB VALUES\n(4,'Delta');\nINSERT INTO OfficeC VALUES\n(2,'Beta'),\n(5,'Epsilon');"
+      ],
+      "expected": [
+        [
+          "Alpha",
+          "Delta",
+          "Epsilon"
+        ],
+        [
+          "Alpha",
+          "Delta",
+          "Beta"
+        ],
+        [
+          "Beta",
+          "Delta",
+          "Epsilon"
+        ],
+        [
+          "Gamma",
+          "Delta",
+          "Epsilon"
+        ],
+        [
+          "Gamma",
+          "Delta",
+          "Beta"
+        ]
+      ]
+    }
+  ]
+}

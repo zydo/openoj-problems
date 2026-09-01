@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1622,
+  "slug": "running-transforms-on-a-sequence",
+  "title": "Running Transforms On A Sequence",
+  "difficulty": "H4",
+  "tags": [
+    "Math",
+    "Design",
+    "Segment Tree",
+    "Data Stream"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "AffineSequence",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "append",
+        "parameters": [
+          {
+            "name": "val",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "shiftAll",
+        "parameters": [
+          {
+            "name": "inc",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "scaleAll",
+        "parameters": [
+          {
+            "name": "m",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "getIndex",
+        "parameters": [
+          {
+            "name": "idx",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1670,
+  "slug": "deque-with-a-middle-gate",
+  "title": "Deque With A Middle Gate",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Linked List",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "MidGateQueue",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "pushFront",
+        "parameters": [
+          {
+            "name": "val",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "pushMiddle",
+        "parameters": [
+          {
+            "name": "val",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "pushBack",
+        "parameters": [
+          {
+            "name": "val",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "popFront",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "popMiddle",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "popBack",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

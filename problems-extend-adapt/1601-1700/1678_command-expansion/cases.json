@@ -1,0 +1,126 @@
+{
+  "public": [
+    {
+      "input": [
+        "(al)(al)G"
+      ],
+      "expected": "alalG"
+    },
+    {
+      "input": [
+        "G(al)()G()"
+      ],
+      "expected": "GaloGo"
+    },
+    {
+      "input": [
+        "()(al)()(al)"
+      ],
+      "expected": "oaloal"
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "G"
+      ],
+      "expected": "G"
+    },
+    {
+      "input": [
+        "()"
+      ],
+      "expected": "o"
+    },
+    {
+      "input": [
+        "(al)"
+      ],
+      "expected": "al"
+    },
+    {
+      "input": [
+        "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+      ],
+      "expected": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+    },
+    {
+      "input": [
+        "()()()()()()()()()()()()()()()()()()()()()()()()()"
+      ],
+      "expected": "ooooooooooooooooooooooooo"
+    },
+    {
+      "input": [
+        "()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()"
+      ],
+      "expected": "oooooooooooooooooooooooooooooooooooooooooooooooooo"
+    },
+    {
+      "input": [
+        "(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)(al)"
+      ],
+      "expected": "alalalalalalalalalalalalalalalalalalalalalalalalal"
+    },
+    {
+      "input": [
+        "(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G(al)G"
+      ],
+      "expected": "alGalGalGalGalGalGalGalGalGalGalGalGalGalGalGalGalGalGalGalG"
+    },
+    {
+      "input": [
+        "G(al)()G(al)()"
+      ],
+      "expected": "GaloGalo"
+    },
+    {
+      "input": [
+        "(al)()G(al)()G"
+      ],
+      "expected": "aloGaloG"
+    },
+    {
+      "input": [
+        "G(al)()"
+      ],
+      "expected": "Galo"
+    },
+    {
+      "input": [
+        "()(al)G"
+      ],
+      "expected": "oalG"
+    },
+    {
+      "input": [
+        "G()()(al)"
+      ],
+      "expected": "Gooal"
+    },
+    {
+      "input": [
+        "(al)G()"
+      ],
+      "expected": "alGo"
+    },
+    {
+      "input": [
+        "G()()G"
+      ],
+      "expected": "GooG"
+    },
+    {
+      "input": [
+        "()G(al)"
+      ],
+      "expected": "oGal"
+    },
+    {
+      "input": [
+        "G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)G()(al)()"
+      ],
+      "expected": "GoalGoalGoalGoalGoalGoalGoalGoalGoalGoalGoalGoalGoalGoalo"
+    }
+  ]
+}

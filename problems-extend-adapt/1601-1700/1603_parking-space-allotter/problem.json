@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1603,
+  "slug": "parking-space-allotter",
+  "title": "Parking Space Allotter",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Design",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "ParkingAllotter",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "big",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        },
+        {
+          "name": "medium",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        },
+        {
+          "name": "small",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "addCar",
+        "parameters": [
+          {
+            "name": "carType",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

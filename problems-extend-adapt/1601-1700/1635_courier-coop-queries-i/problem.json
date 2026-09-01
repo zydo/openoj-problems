@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1635,
+  "slug": "courier-coop-queries-i",
+  "title": "Courier Co-op Queries I",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Couriers (courier_id INTEGER, join_date DATE);\nCREATE TABLE Requests (request_id INTEGER, customer_id INTEGER, requested_at DATE);\nCREATE TABLE AcceptedRequests (request_id INTEGER, courier_id INTEGER, distance_km INTEGER, duration_min INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

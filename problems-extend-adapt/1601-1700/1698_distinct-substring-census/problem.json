@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1698,
+  "slug": "distinct-substring-census",
+  "title": "Distinct Substring Census",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Trie",
+    "Rolling Hash",
+    "Suffix Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countUniqueSubstrings",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countUniqueSubstrings",
+      "rust": "count_unique_substrings",
+      "typescript": "countUniqueSubstrings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

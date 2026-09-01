@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1607,
+  "slug": "tutors-without-2020-lessons",
+  "title": "Tutors Without 2020 Lessons",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Learner (learner_id INTEGER, learner_name VARCHAR);\nCREATE TABLE Lessons (lesson_id INTEGER, lesson_date DATE, lesson_fee INTEGER, learner_id INTEGER, tutor_id INTEGER);\nCREATE TABLE Tutor (tutor_id INTEGER, tutor_name VARCHAR);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

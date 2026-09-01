@@ -1,0 +1,118 @@
+{
+  "public": [
+    {
+      "input": [
+        "abc",
+        "abd"
+      ],
+      "expected": 9
+    },
+    {
+      "input": [
+        "aaa",
+        "aa"
+      ],
+      "expected": 0
+    },
+    {
+      "input": [
+        "abcd",
+        "dcba"
+      ],
+      "expected": 16
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "a",
+        "b"
+      ],
+      "expected": 1
+    },
+    {
+      "input": [
+        "a",
+        "a"
+      ],
+      "expected": 0
+    },
+    {
+      "input": [
+        "aaaa",
+        "aaaa"
+      ],
+      "expected": 0
+    },
+    {
+      "input": [
+        "abab",
+        "abab"
+      ],
+      "expected": 8
+    },
+    {
+      "input": [
+        "abc",
+        "xyz"
+      ],
+      "expected": 9
+    },
+    {
+      "input": [
+        "aabbccddeeff",
+        "aabbccddeeff"
+      ],
+      "expected": 150
+    },
+    {
+      "input": [
+        "abcdefgh",
+        "abcpefgh"
+      ],
+      "expected": 76
+    },
+    {
+      "input": [
+        "aaaaaaaaaa",
+        "aaaaaaaaab"
+      ],
+      "expected": 55
+    },
+    {
+      "input": [
+        "xyzxyzxyz",
+        "xyzxyzxyx"
+      ],
+      "expected": 71
+    },
+    {
+      "input": [
+        "zvcssrppezukuzudugeisbwyimzhumciaguqgfvkfcrtowxlevupoaxbhdxuhmziqlbyfodntrzfghdzbgaqujehpskodzbnqcym",
+        "sdwbimqjypbtyobbozdudicdrpkenzmforbqjtqdyjobepsiytyhlbspqamnoqlxtelbzgojlharxlxzypbxliimsxdknbymmimy"
+      ],
+      "expected": 10381
+    },
+    {
+      "input": [
+        "q",
+        "cbabaqcqcbcbacbcaqbbcqbccqbaqqbaqcqaabqcabaacqbqbabbaaaqccqqabbcqcqqbqbaacqabqacacqaccacccqbqcabbcbb"
+      ],
+      "expected": 76
+    },
+    {
+      "input": [
+        "aaaaa",
+        "aaaba"
+      ],
+      "expected": 24
+    },
+    {
+      "input": [
+        "abcabcabc",
+        "abcabdabc"
+      ],
+      "expected": 96
+    }
+  ]
+}
