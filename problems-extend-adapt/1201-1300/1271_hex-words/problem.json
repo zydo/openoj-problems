@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1271,
+  "slug": "hex-words",
+  "title": "Hex Words",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "toHexWord",
+    "parameters": [
+      {
+        "name": "num",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "toHexWord",
+      "rust": "to_hex_word",
+      "typescript": "toHexWord"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

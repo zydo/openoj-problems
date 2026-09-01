@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1286,
+  "slug": "lexicographic-combination-stream",
+  "title": "Lexicographic Combination Stream",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Design",
+    "Iterator"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "CombinationStream",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "letters",
+          "codec": "json",
+          "value_type": {
+            "kind": "string"
+          }
+        },
+        {
+          "name": "length",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "next",
+        "parameters": [],
+        "return_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "hasNext",
+        "parameters": [],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

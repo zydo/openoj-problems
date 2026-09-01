@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1233,
+  "slug": "prune-nested-folders",
+  "title": "Prune Nested Folders",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "String",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "pruneNestedFolders",
+    "parameters": [
+      {
+        "name": "folder",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "pruneNestedFolders",
+      "rust": "prune_nested_folders",
+      "typescript": "pruneNestedFolders"
+    },
+    "comparison": "set"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

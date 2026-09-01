@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1265,
+  "slug": "print-a-sealed-list-in-reverse",
+  "title": "Print a Sealed List in Reverse",
+  "difficulty": "H3",
+  "tags": [
+    "Linked List",
+    "Recursion",
+    "Interactive"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "emitListInReverse",
+    "oracle": "SealedListNode",
+    "oracle_methods": [
+      {
+        "name": "emitValue",
+        "parameters": [],
+        "return_type": {
+          "kind": "void"
+        }
+      },
+      {
+        "name": "successor",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "query_limit": 5000,
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "SealedListNode",
+        "construct": [
+          "head"
+        ],
+        "auxiliary": [],
+        "parameter": "sealedListNode"
+      }
+    },
+    "entrypoints": {
+      "go": "emitListInReverse",
+      "rust": "emit_list_in_reverse",
+      "cpp": "emitListInReverse",
+      "javascript": "emitListInReverse",
+      "typescript": "emitListInReverse"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

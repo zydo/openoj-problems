@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1227,
+  "slug": "last-boarders-own-seat",
+  "title": "Last Boarder's Own Seat",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Brainteaser",
+    "Probability and Statistics"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "lastOwnSeatProbability",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "number"
+    },
+    "entrypoints": {
+      "go": "lastOwnSeatProbability",
+      "rust": "last_own_seat_probability",
+      "typescript": "lastOwnSeatProbability"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

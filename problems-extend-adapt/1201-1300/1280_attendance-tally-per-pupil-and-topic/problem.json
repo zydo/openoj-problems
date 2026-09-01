@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1280,
+  "slug": "attendance-tally-per-pupil-and-topic",
+  "title": "Attendance Tally per Pupil and Topic",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Pupils (pupil_id INTEGER PRIMARY KEY, pupil_name VARCHAR); CREATE TABLE Topics (topic_name VARCHAR PRIMARY KEY); CREATE TABLE Sittings (pupil_id INTEGER, topic_name VARCHAR);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

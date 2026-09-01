@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1294,
+  "slug": "november-conditions-by-nation",
+  "title": "November Conditions by Nation",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "set",
+    "sql": {
+      "schema": "CREATE TABLE Nations (nation_id INTEGER PRIMARY KEY, nation_name VARCHAR); CREATE TABLE Conditions (nation_id INTEGER, condition_level INTEGER, condition_day DATE, PRIMARY KEY (nation_id, condition_day));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

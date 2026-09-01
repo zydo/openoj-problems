@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1258,
+  "slug": "synonym-swaps-in-a-sentence",
+  "title": "Synonym Swaps in a Sentence",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Union-Find"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "swappedSentences",
+    "parameters": [
+      {
+        "name": "synonyms",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      },
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "swappedSentences",
+      "rust": "swapped_sentences",
+      "typescript": "swappedSentences"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

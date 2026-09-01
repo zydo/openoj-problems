@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1264,
+  "slug": "friend-shelf-picks",
+  "title": "Friend-Shelf Picks",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "set",
+    "sql": {
+      "schema": "CREATE TABLE Buddies (buddy_a INTEGER, buddy_b INTEGER, PRIMARY KEY (buddy_a, buddy_b)); CREATE TABLE Shelved (reader_id INTEGER, book_id INTEGER, PRIMARY KEY (reader_id, book_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

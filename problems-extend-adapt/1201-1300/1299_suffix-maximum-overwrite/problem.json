@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1299,
+  "slug": "suffix-maximum-overwrite",
+  "title": "Suffix Maximum Overwrite",
+  "difficulty": "H2",
+  "tags": [
+    "Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "overwriteWithRightMax",
+    "parameters": [
+      {
+        "name": "arr",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "overwriteWithRightMax",
+      "rust": "overwrite_with_right_max",
+      "typescript": "overwriteWithRightMax"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

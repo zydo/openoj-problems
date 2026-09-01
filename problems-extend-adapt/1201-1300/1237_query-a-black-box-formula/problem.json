@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1237,
+  "slug": "query-a-black-box-formula",
+  "title": "Query a Black-Box Formula",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Two Pointers",
+    "Interactive"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "collectPairs",
+    "oracle": "HiddenFormula",
+    "oracle_methods": [
+      {
+        "name": "evaluate",
+        "parameters": [
+          {
+            "name": "x",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "y",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "z",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "collectPairs",
+      "rust": "collect_pairs"
+    },
+    "query_limit": 2000000,
+    "comparison": "sorted",
+    "provided": {
+      "oracle": {
+        "class": "HiddenFormula",
+        "parameter": "hiddenFormula",
+        "construct": [
+          "function_id"
+        ],
+        "auxiliary": [
+          "z"
+        ]
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

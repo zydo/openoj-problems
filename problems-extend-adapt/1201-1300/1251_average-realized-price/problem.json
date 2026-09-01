@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1251,
+  "slug": "average-realized-price",
+  "title": "Average Realized Price",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "set",
+    "sql": {
+      "schema": "CREATE TABLE Tariffs (item_id INTEGER, from_date DATE, to_date DATE, unit_price INTEGER, PRIMARY KEY (item_id, from_date, to_date)); CREATE TABLE Sales (item_id INTEGER, sold_on DATE, quantity INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
