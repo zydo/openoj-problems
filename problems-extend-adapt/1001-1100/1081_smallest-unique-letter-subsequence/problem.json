@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1081,
+  "slug": "smallest-unique-letter-subsequence",
+  "title": "Smallest Unique-Letter Subsequence",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "uniqueLetterSubsequence",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "uniqueLetterSubsequence",
+      "rust": "unique_letter_subsequence",
+      "typescript": "uniqueLetterSubsequence"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

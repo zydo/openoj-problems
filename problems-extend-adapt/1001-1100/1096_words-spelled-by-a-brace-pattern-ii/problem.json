@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1096,
+  "slug": "words-spelled-by-a-brace-pattern-ii",
+  "title": "Words Spelled by a Brace Pattern II",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Stack",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bracePatternWords",
+    "parameters": [
+      {
+        "name": "expression",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "bracePatternWords",
+      "rust": "brace_pattern_words",
+      "typescript": "bracePatternWords"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "public": [
+    {
+      "input": [
+        [
+          "NetworkPoint",
+          "NetworkFlow",
+          "netPoint",
+          "NodePath"
+        ],
+        "NP"
+      ],
+      "expected": [
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "input": [
+        [
+          "VersionControl",
+          "ViewCounter",
+          "vectorField"
+        ],
+        "VC"
+      ],
+      "expected": [
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "input": [
+        [
+          "HomePage",
+          "Home",
+          "HomeScreenPage",
+          "ScreenHome"
+        ],
+        "Home"
+      ],
+      "expected": [
+        false,
+        true,
+        false,
+        false
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        [
+          "FB"
+        ],
+        "FB"
+      ],
+      "expected": [
+        true
+      ]
+    },
+    {
+      "input": [
+        [
+          "aFB"
+        ],
+        "FB"
+      ],
+      "expected": [
+        true
+      ]
+    },
+    {
+      "input": [
+        [
+          "FaB"
+        ],
+        "FB"
+      ],
+      "expected": [
+        true
+      ]
+    },
+    {
+      "input": [
+        [
+          "FBa"
+        ],
+        "FB"
+      ],
+      "expected": [
+        true
+      ]
+    },
+    {
+      "input": [
+        [
+          "Foo"
+        ],
+        "FB"
+      ],
+      "expected": [
+        false
+      ]
+    },
+    {
+      "input": [
+        [
+          "FBX"
+        ],
+        "FB"
+      ],
+      "expected": [
+        false
+      ]
+    },
+    {
+      "input": [
+        [
+          "abc"
+        ],
+        ""
+      ],
+      "expected": [
+        true
+      ]
+    },
+    {
+      "input": [
+        [
+          "aBc"
+        ],
+        ""
+      ],
+      "expected": [
+        false
+      ]
+    },
+    {
+      "input": [
+        [
+          ""
+        ],
+        ""
+      ],
+      "expected": [
+        true
+      ]
+    },
+    {
+      "input": [
+        [
+          ""
+        ],
+        "F"
+      ],
+      "expected": [
+        false
+      ]
+    },
+    {
+      "input": [
+        [
+          "BF"
+        ],
+        "FB"
+      ],
+      "expected": [
+        false
+      ]
+    },
+    {
+      "input": [
+        [
+          "Alpha",
+          "Beta",
+          "AlphaBeta",
+          "alpha"
+        ],
+        "AB"
+      ],
+      "expected": [
+        false,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "input": [
+        [
+          "ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE"
+        ],
+        "ABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDEABCDE"
+      ],
+      "expected": [
+        true
+      ]
+    },
+    {
+      "input": [
+        [
+          "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxAyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyB"
+        ],
+        "AB"
+      ],
+      "expected": [
+        true
+      ]
+    }
+  ]
+}

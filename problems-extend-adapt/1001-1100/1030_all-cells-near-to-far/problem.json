@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1030,
+  "slug": "all-cells-near-to-far",
+  "title": "All Cells Near to Far",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cellsNearToFar",
+    "parameters": [
+      {
+        "name": "rows",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "cols",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "rCenter",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "cCenter",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "cellsNearToFar",
+      "rust": "cells_near_to_far",
+      "typescript": "cellsNearToFar"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

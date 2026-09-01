@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1069,
+  "slug": "order-log-ii",
+  "title": "Order Log II",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Orders (order_id INTEGER, item_id INTEGER, order_year INTEGER, units INTEGER, unit_price INTEGER, PRIMARY KEY (order_id, order_year)); CREATE TABLE Items (item_id INTEGER PRIMARY KEY, item_name VARCHAR);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

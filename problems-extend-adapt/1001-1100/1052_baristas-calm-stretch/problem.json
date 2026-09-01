@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1052,
+  "slug": "baristas-calm-stretch",
+  "title": "The Barista's Calm Stretch",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxHappyCustomers",
+    "parameters": [
+      {
+        "name": "customers",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "grumpy",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "minutes",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "maxHappyCustomers",
+      "rust": "max_happy_customers",
+      "typescript": "maxHappyCustomers"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

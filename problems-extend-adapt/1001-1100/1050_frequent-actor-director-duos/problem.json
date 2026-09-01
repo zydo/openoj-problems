@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1050,
+  "slug": "frequent-actor-director-duos",
+  "title": "Frequent Actor-Director Duos",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "set",
+    "sql": {
+      "schema": "CREATE TABLE TeamUp (actor_id INTEGER, director_id INTEGER, event_time INTEGER PRIMARY KEY);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

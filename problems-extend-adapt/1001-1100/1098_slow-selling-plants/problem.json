@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1098,
+  "slug": "slow-selling-plants",
+  "title": "Slow-Selling Plants",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "set",
+    "sql": {
+      "schema": "CREATE TABLE Plants (plant_id INTEGER PRIMARY KEY, name VARCHAR, listed_on DATE); CREATE TABLE Shipments (shipment_id INTEGER PRIMARY KEY, plant_id INTEGER, quantity INTEGER, shipped_on DATE);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

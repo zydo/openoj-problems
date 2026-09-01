@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1087,
+  "slug": "words-from-letter-options",
+  "title": "Words From Letter Options",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Backtracking",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "enumerateWords",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "enumerateWords",
+      "rust": "enumerate_words",
+      "typescript": "enumerateWords"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

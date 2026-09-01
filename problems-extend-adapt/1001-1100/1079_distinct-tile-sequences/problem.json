@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1079,
+  "slug": "distinct-tile-sequences",
+  "title": "Distinct Tile Sequences",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Backtracking",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countTileSequences",
+    "parameters": [
+      {
+        "name": "tiles",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countTileSequences",
+      "rust": "count_tile_sequences",
+      "typescript": "countTileSequences"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

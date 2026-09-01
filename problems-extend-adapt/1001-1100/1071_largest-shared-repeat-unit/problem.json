@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1071,
+  "slug": "largest-shared-repeat-unit",
+  "title": "Largest Shared Repeat Unit",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "sharedRepeatUnit",
+    "parameters": [
+      {
+        "name": "str1",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "str2",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "sharedRepeatUnit",
+      "rust": "shared_repeat_unit",
+      "typescript": "sharedRepeatUnit"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

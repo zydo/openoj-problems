@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1031,
+  "slug": "best-sum-of-two-disjoint-windows",
+  "title": "Best Sum of Two Disjoint Windows",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bestTwoWindowSum",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "firstLen",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "secondLen",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "bestTwoWindowSum",
+      "rust": "best_two_window_sum",
+      "typescript": "bestTwoWindowSum"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

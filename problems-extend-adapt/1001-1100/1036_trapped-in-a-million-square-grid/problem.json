@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1036,
+  "slug": "trapped-in-a-million-square-grid",
+  "title": "Trapped in a Million-Square Grid",
+  "difficulty": "H4",
+  "tags": [
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "canEscapeHugeMaze",
+    "parameters": [
+      {
+        "name": "blocked",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "source",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "canEscapeHugeMaze",
+      "rust": "can_escape_huge_maze",
+      "typescript": "canEscapeHugeMaze"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

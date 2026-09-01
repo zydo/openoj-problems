@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1065,
+  "slug": "substring-match-spans",
+  "title": "Substring Match Spans",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Array",
+    "Trie"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "matchSpans",
+    "parameters": [
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "matchSpans",
+      "rust": "match_spans",
+      "typescript": "matchSpans"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

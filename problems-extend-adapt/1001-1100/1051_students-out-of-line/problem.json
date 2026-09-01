@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1051,
+  "slug": "students-out-of-line",
+  "title": "Students Out of Line",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countOutOfPlace",
+    "parameters": [
+      {
+        "name": "heights",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countOutOfPlace",
+      "rust": "count_out_of_place",
+      "typescript": "countOutOfPlace"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

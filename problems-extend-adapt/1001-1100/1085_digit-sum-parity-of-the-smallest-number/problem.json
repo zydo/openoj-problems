@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1085,
+  "slug": "digit-sum-parity-of-the-smallest-number",
+  "title": "Digit-Sum Parity of the Smallest Number",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "digitSumParity",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "digitSumParity",
+      "rust": "digit_sum_parity",
+      "typescript": "digitSumParity"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

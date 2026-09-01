@@ -1,0 +1,3 @@
+function assignFlowerTypes(n: number, paths: number[][]): number[] {
+    throw new Error("TODO");
+}
