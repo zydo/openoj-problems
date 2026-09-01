@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1341,
+  "slug": "top-reviewer-and-best-film",
+  "title": "Top Reviewer and Best Film",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Films (film_id INTEGER PRIMARY KEY, title TEXT);\nCREATE TABLE Viewers (viewer_id INTEGER PRIMARY KEY, name TEXT);\nCREATE TABLE Reviews (film_id INTEGER, viewer_id INTEGER, rating INTEGER, reviewed_on DATE);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

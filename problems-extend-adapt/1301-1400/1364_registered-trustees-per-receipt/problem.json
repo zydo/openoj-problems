@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1364,
+  "slug": "registered-trustees-per-receipt",
+  "title": "Registered Trustees per Receipt",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Shoppers (shopper_id INTEGER PRIMARY KEY, shopper_name TEXT, email TEXT);\nCREATE TABLE Trustees (owner_id INTEGER, trustee_name TEXT, trustee_email TEXT, PRIMARY KEY (owner_id, trustee_email));\nCREATE TABLE Receipts (receipt_id INTEGER PRIMARY KEY, price INTEGER, owner_id INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

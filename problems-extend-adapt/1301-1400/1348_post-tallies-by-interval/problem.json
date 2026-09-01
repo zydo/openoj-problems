@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1348,
+  "slug": "post-tallies-by-interval",
+  "title": "Post Tallies By Interval",
+  "difficulty": "H4",
+  "tags": [
+    "Design",
+    "Hash Table",
+    "Binary Search",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "PostTally",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "recordPost",
+        "parameters": [
+          {
+            "name": "name",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "time",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 64
+            }
+          }
+        ]
+      },
+      {
+        "name": "countsPerInterval",
+        "parameters": [
+          {
+            "name": "span",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "name",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "startTime",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 64
+            }
+          },
+          {
+            "name": "endTime",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 64
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "entrypoints": {
+      "rust.recordPost": "record_post",
+      "rust.countsPerInterval": "counts_per_interval"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

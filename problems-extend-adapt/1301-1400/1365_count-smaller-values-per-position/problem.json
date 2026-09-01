@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1365,
+  "slug": "count-smaller-values-per-position",
+  "title": "Count Smaller Values Per Position",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "RankTally",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "smallerCounts",
+        "parameters": [
+          {
+            "name": "nums",
+            "codec": "json",
+            "value_type": {
+              "kind": "array",
+              "items": {
+                "kind": "integer",
+                "bits": 32
+              }
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "entrypoints": {
+      "rust.smallerCounts": "smaller_counts"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

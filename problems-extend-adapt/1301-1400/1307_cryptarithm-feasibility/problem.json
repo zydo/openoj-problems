@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1307,
+  "slug": "cryptarithm-feasibility",
+  "title": "Cryptarithm Feasibility",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "hasDigitSolution",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      },
+      {
+        "name": "result",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "hasDigitSolution",
+      "rust": "has_digit_solution",
+      "typescript": "hasDigitSolution"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

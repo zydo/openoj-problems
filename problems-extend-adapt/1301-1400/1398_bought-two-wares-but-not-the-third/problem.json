@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1398,
+  "slug": "bought-two-wares-but-not-the-third",
+  "title": "Bought Two Wares but Not the Third",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Patrons (patron_id INTEGER PRIMARY KEY, patron_name TEXT); CREATE TABLE Baskets (basket_id INTEGER PRIMARY KEY, patron_id INTEGER, ware_name TEXT);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

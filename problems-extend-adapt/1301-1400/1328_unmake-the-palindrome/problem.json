@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1328,
+  "slug": "unmake-the-palindrome",
+  "title": "Unmake the Palindrome",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "unmakePalindrome",
+    "parameters": [
+      {
+        "name": "palindrome",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "unmakePalindrome",
+      "rust": "unmake_palindrome",
+      "typescript": "unmakePalindrome"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
