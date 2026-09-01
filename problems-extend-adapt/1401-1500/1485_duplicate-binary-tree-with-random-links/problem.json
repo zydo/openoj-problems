@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1485,
+  "slug": "duplicate-binary-tree-with-random-links",
+  "title": "Duplicate a Binary Tree With Random Links",
+  "difficulty": "H2",
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "duplicateRandomLinkedTree",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "random_tree",
+        "value_type": {
+          "kind": "random_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          },
+          "class": "RandomTreeNode"
+        }
+      }
+    ],
+    "return_codec": "random_tree",
+    "return_type": {
+      "kind": "random_tree",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      },
+      "class": "RandomTreeNode"
+    },
+    "entrypoints": {
+      "go": "duplicateRandomLinkedTree",
+      "rust": "duplicate_random_linked_tree",
+      "typescript": "duplicateRandomLinkedTree"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,5 @@
+impl Solution {
+    pub fn xor_strided_progression(n: i32, start: i32) -> i32 {
+        panic!("TODO")
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1449,
+  "slug": "biggest-number-on-an-exact-budget",
+  "title": "Biggest Number on an Exact Budget",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "biggestOnBudget",
+    "parameters": [
+      {
+        "name": "cost",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "target",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "biggestOnBudget",
+      "rust": "biggest_on_budget",
+      "typescript": "biggestOnBudget"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

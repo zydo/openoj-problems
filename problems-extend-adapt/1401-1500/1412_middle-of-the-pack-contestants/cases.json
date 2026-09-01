@@ -1,0 +1,154 @@
+{
+  "public": [
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ines'),\n(2,'Ravi'),\n(3,'Wen'),\n(4,'Zola'),\n(5,'Pavel'),\n(6,'Greta');\nINSERT INTO Heats VALUES\n(11,1,64),\n(11,2,71),\n(11,3,88),\n(11,4,59),\n(11,5,70),\n(12,1,90),\n(12,4,85),\n(12,2,77),\n(12,3,80),\n(12,5,83);"
+      ],
+      "expected": [
+        [
+          5,
+          "Pavel"
+        ]
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal');\nINSERT INTO Heats VALUES\n(10,1,50);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal');\nINSERT INTO Heats VALUES\n(10,1,50),\n(10,2,50),\n(10,3,70);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal');\nINSERT INTO Heats VALUES\n(10,1,50),\n(10,2,60),\n(10,3,60);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal');\nINSERT INTO Heats VALUES\n(10,1,50),\n(10,2,50),\n(10,3,50);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal');"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Solo');\nINSERT INTO Heats VALUES\n(10,1,100);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal'),\n(4,'Dot');\nINSERT INTO Heats VALUES\n(10,1,10),\n(10,2,20),\n(10,3,30),\n(20,2,40),\n(20,4,50);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal');\nINSERT INTO Heats VALUES\n(10,1,10),\n(10,2,20),\n(10,3,30),\n(20,3,10),\n(20,2,20),\n(20,1,30);"
+      ],
+      "expected": [
+        [
+          2,
+          "Ben"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal'),\n(4,'Dot');\nINSERT INTO Heats VALUES\n(10,1,5),\n(10,2,6),\n(20,3,7),\n(20,4,8);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben');\nINSERT INTO Heats VALUES\n(10,1,50),\n(10,2,50);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'S1'),\n(2,'S2'),\n(3,'S3'),\n(4,'S4'),\n(5,'S5'),\n(6,'S6'),\n(7,'S7'),\n(8,'S8');\nINSERT INTO Heats VALUES\n(10,1,10),\n(10,2,20),\n(10,3,30),\n(10,4,40),\n(10,5,50),\n(20,5,10),\n(20,6,20),\n(20,7,30),\n(20,8,40);"
+      ],
+      "expected": [
+        [
+          2,
+          "S2"
+        ],
+        [
+          3,
+          "S3"
+        ],
+        [
+          4,
+          "S4"
+        ],
+        [
+          6,
+          "S6"
+        ],
+        [
+          7,
+          "S7"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(2,'Bea'),\n(1,'Abe'),\n(3,'Cy');\nINSERT INTO Heats VALUES\n(10,3,10),\n(10,1,20),\n(10,2,30);"
+      ],
+      "expected": [
+        [
+          1,
+          "Abe"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'A');"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal');\nINSERT INTO Heats VALUES\n(10,1,0),\n(10,2,100),\n(10,3,50);"
+      ],
+      "expected": [
+        [
+          3,
+          "Cal"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal'),\n(4,'Dot');\nINSERT INTO Heats VALUES\n(10,1,10),\n(10,2,20),\n(10,3,30),\n(20,4,10);"
+      ],
+      "expected": [
+        [
+          2,
+          "Ben"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Contestants VALUES\n(1,'Ann'),\n(2,'Ben'),\n(3,'Cal'),\n(4,'Dot'),\n(5,'Eve');\nINSERT INTO Heats VALUES\n(10,1,5),\n(10,2,15),\n(10,3,25),\n(20,2,5),\n(20,3,15),\n(20,4,25),\n(30,3,5),\n(30,4,15),\n(30,5,25);"
+      ],
+      "expected": []
+    }
+  ]
+}

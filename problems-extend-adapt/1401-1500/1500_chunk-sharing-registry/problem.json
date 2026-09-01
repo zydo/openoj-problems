@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1500,
+  "slug": "chunk-sharing-registry",
+  "title": "Chunk Sharing Registry",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "Design"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "ChunkRegistry",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "chunks",
+          "codec": "json",
+          "value_type": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "join",
+        "parameters": [
+          {
+            "name": "ownedChunks",
+            "codec": "json",
+            "value_type": {
+              "kind": "array",
+              "items": {
+                "kind": "integer",
+                "bits": 32
+              }
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "leave",
+        "parameters": [
+          {
+            "name": "userID",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "request",
+        "parameters": [
+          {
+            "name": "userID",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "chunkID",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "comparison": "exact",
+    "entrypoints": {
+      "rust.join": "join",
+      "rust.leave": "leave",
+      "rust.request": "request"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

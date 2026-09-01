@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1429,
+  "slug": "first-singleton-in-the-queue",
+  "title": "First Singleton In The Queue",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "SingletonQueue",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "nums",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 64
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "showSingleton",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      },
+      {
+        "name": "add",
+        "parameters": [
+          {
+            "name": "value",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 64
+            }
+          }
+        ]
+      }
+    ],
+    "comparison": "exact",
+    "entrypoints": {
+      "rust.showSingleton": "show_first_unique"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

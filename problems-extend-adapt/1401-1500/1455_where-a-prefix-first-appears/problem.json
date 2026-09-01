@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1455,
+  "slug": "where-a-prefix-first-appears",
+  "title": "Where a Prefix First Appears",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "String Matching"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "firstPrefixMatch",
+    "parameters": [
+      {
+        "name": "sentence",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "searchWord",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "firstPrefixMatch",
+      "rust": "first_prefix_match",
+      "typescript": "firstPrefixMatch"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

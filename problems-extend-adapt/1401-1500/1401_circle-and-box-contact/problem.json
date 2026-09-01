@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1401,
+  "slug": "circle-and-box-contact",
+  "title": "Circle and Box Contact",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "touchesBox",
+    "parameters": [
+      {
+        "name": "radius",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "xCenter",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "yCenter",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "x1",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "y1",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "x2",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "y2",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "touchesBox",
+      "rust": "touches_box",
+      "typescript": "touchesBox"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

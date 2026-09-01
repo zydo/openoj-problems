@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1479,
+  "slug": "category-sales-by-weekday",
+  "title": "Category Sales by Weekday",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Transactions (transaction_id INTEGER, buyer_id INTEGER, sale_date DATE, ware_id INTEGER, quantity INTEGER, PRIMARY KEY (transaction_id, ware_id));\nCREATE TABLE Wares (ware_id INTEGER PRIMARY KEY, ware_name TEXT, ware_category TEXT);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

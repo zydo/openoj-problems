@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1495,
+  "slug": "family-features-aired-in-june",
+  "title": "Family Features Aired in June",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Showings (shown_at DATETIME, title_id INTEGER, station TEXT, PRIMARY KEY (shown_at, title_id));\nCREATE TABLE Library (title_id INTEGER PRIMARY KEY, name TEXT, for_kids TEXT, kind TEXT);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

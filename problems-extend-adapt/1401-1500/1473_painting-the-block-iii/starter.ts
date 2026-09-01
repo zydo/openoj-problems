@@ -1,0 +1,3 @@
+function lowestPaintCost(houses: number[], cost: number[][], m: number, n: number, target: number): number {
+    throw new Error("TODO");
+}
