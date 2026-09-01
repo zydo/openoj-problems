@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 990,
+  "slug": "consistent-equality-claims",
+  "title": "Consistent Equality Claims",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "String",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "consistentEqualityClaims",
+    "parameters": [
+      {
+        "name": "equations",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "consistentEqualityClaims",
+      "rust": "consistent_equality_claims",
+      "typescript": "consistentEqualityClaims"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

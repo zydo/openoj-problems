@@ -1,4 +1,4 @@
-# Solutions — DI String Match
+# Solutions — Pattern Permutation
 
 ## Two pointers from both ends
 

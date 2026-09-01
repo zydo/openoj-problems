@@ -1,32 +1,44 @@
-# Long Pressed Name
+# Held-Key Transcript
 
 ## Description
 
-Your friend is typing his name on a keyboard. Sometimes, when typing a
-character `c`, the key might get long pressed, and the character will be
-typed one or more times instead of once.
+A keyboard logs one character per registered keystroke. While typing, a key
+can be held down a moment too long, and then that single keystroke registers
+as two or more consecutive copies of its character instead of one.
 
-You examine the typed characters of the keyboard. Return `true` if it is
-possible that it was your friend's `name`, with some characters (possibly
-none) being long pressed.
+You are given the intended word `name` and the transcript `typed`. Return
+`true` if `typed` could be the transcript produced by typing `name` when
+some keystrokes — possibly none — were held long enough to register extra
+copies, and `false` otherwise.
 
 ### Example 1
 
 ```text
-Input: name = "alex", typed = "aaleex"
+Input: name = "noor", typed = "nooor"
 Output: true
-Explanation: 'a' and 'e' in 'alex' were long pressed.
+Explanation: The first `o` registered three times; holding that one key
+turns `noor` into `nooor`.
 ```
 
 ### Example 2
 
 ```text
-Input: name = "saeed", typed = "ssaaedd"
+Input: name = "zoe", typed = "zzoea"
 Output: false
-Explanation: 'e' must have been pressed twice, but it was not in the typed output.
+Explanation: The trailing `a` matches nothing — a held key repeats a
+character that was typed, it never contributes a new one.
+```
+
+### Example 3
+
+```text
+Input: name = "mira", typed = "mra"
+Output: false
+Explanation: The `i` never registered at all. Held keys only duplicate
+characters, so a keystroke that was skipped leaves the word unrecoverable.
 ```
 
 ### Constraints
 
 - `1 <= name.length, typed.length <= 1000`
-- `name` and `typed` consist of only lowercase English letters.
+- `name` and `typed` consist only of lowercase English letters.

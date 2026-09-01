@@ -1,4 +1,4 @@
-# Solutions — Flip String to Monotone Increasing
+# Solutions — Rising Binary Repair
 
 A monotone increasing string is a run of 0's closed off by a run of 1's, so
 the target the flips must produce is picked by a single decision: where the
@@ -24,11 +24,11 @@ The two options are the boundary choice in miniature: keeping the '0' extends
 the 0-run with every earlier 1 already paid for, flipping it moves the
 boundary past this position. So `flips` is exactly the minimum, over
 boundaries inside the prefix, of 1's before the boundary plus 0's after it —
-and once the sweep ends, that is the full minimum. For `s = "00110"` the
-trailing '0' meets `ones = 2` with `flips = 0` and settles at 1, flipping the
-last digit into the example's `00111`; `"010110"` ends the same race at 2,
-buying either `011111` or `000111`; and `"00011000"` prefers `00000000`,
-again for 2. The answer never exceeds `s.length`, so a 32-bit integer
-carries it everywhere.
+and once the sweep ends, that is the full minimum. For `s = "0101"` the
+first '0' stays free because `ones` is still 0, and only the later stray '0'
+costs a flip; `"11000"` ends the same race at 2, paying for the two leading
+1's rather than the three trailing 0's; and `"0000"` never leaves 0, since
+keeping a `0` is always legal while no `1` has gone by. The answer never
+exceeds `s.length`, so a 32-bit integer carries it everywhere.
 
 **Complexity:** `O(n)` time, `O(1)` space.

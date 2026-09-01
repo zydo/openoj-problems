@@ -1,57 +1,53 @@
-# Three Equal Parts
+# Equal Binary Triple
 
 ## Description
 
-You are given an array `arr` consisting of only zeros and ones. Divide the
-array into three non-empty parts such that all of these parts represent the
-same binary value.
+You are given an array `arr` of `0`s and `1`s. Cut it into three non-empty
+contiguous pieces that all read as the same binary number.
 
-If it is possible, return `[i, j]` with `i + 1 < j`, such that:
+A cut is described by a pair `[i, j]` with `i + 1 < j`:
 
-- `arr[0], arr[1], ..., arr[i]` is the first part,
-- `arr[i + 1], arr[i + 2], ..., arr[j - 1]` is the second part, and
-- `arr[j], arr[j + 1], ..., arr[arr.length - 1]` is the third part.
-- All three parts have equal binary values.
+- the first piece is `arr[0..i]`,
+- the second piece is `arr[i+1..j-1]`,
+- the third piece is `arr[j..end]`.
 
-If it is not possible, return `[-1, -1]`.
+Each piece is read as a whole in base 2 — `[1,1,0]` is 6, not 3 — and pieces
+may carry leading zeros, so `[0,1,1]` and `[1,1]` read as the same number.
 
-Note that the entire part is used when considering what binary value it
-represents. For example, `[1,1,0]` represents 6 in decimal, not 3. Also,
-leading zeros are allowed, so `[0,1,1]` and `[1,1]` represent the same value.
+Return a working `[i, j]`, or `[-1, -1]` when no cut exists.
 
-More than one pair can work only when every element of `arr` is 0. For
-deterministic judging, return the pair with the smallest `i` and, among
-those, the smallest `j`.
+A tie can only arise when every element of `arr` is `0`; to keep judging
+deterministic, return the `[i, j]` with the smallest `i`, breaking remaining
+ties by the smallest `j`.
 
 ### Example 1
 
 ```text
-Input: arr = [1,0,1,0,1]
-Output: [0,3]
-Explanation: The three parts are [1], [0,1], and [0,1]. Each represents the
-binary value 1.
+Input: arr = [1,1,0,1,1,0,1,1]
+Output: [1,5]
+Explanation: The pieces are [1,1], [0,1,1], and [0,1,1]. The leading zero of
+a piece does not change its value, so all three read as 3.
 ```
 
 ### Example 2
 
 ```text
-Input: arr = [1,1,0,1,1]
+Input: arr = [1,1,1,0]
 Output: [-1,-1]
-Explanation: The array holds four 1s. Three equal parts would repeat one
-binary value three times, so the total number of 1s would have to be
-divisible by 3 — and four is not.
+Explanation: Whatever the cut, one piece ends in the trailing `0` while
+another ends in `1`, so no three pieces can agree.
 ```
 
 ### Example 3
 
 ```text
-Input: arr = [1,1,0,0,1]
+Input: arr = [0,0,0,0]
 Output: [0,2]
-Explanation: The three parts are [1], [1], and [0,0,1]. Each represents the
-binary value 1; the leading zeros in the third part do not change its value.
+Explanation: Every cut works because all pieces read as 0, and the
+deterministic rule keeps the smallest `i` and then the smallest `j`.
 ```
 
 ### Constraints
 
 - `3 <= arr.length <= 3 * 10⁴`
-- `arr[i]` is either `0` or `1`.
+- Every element of `arr` is `0` or `1`.

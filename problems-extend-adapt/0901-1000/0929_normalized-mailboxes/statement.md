@@ -1,44 +1,48 @@
-# Unique Email Addresses
+# Normalized Mailboxes
 
 ## Description
 
-Every valid email consists of a local name and a domain name, separated by
-the '@' sign. Besides lowercase letters, an email may contain one or more
-'.' or '+'.
+Every address on a mail service splits at the single `'@'` into a local part
+and a domain part. The service delivers mail by a canonical form built from
+an address with two rewrite rules, both applying only to the local part:
 
-For example, in "alice@leetcode.com", "alice" is the local name and
-"leetcode.com" is the domain name.
+- every `'.'` in the local part is discarded;
+- everything in the local part from the first `'+'` onward is discarded,
+  the `'+'` included.
 
-If you add periods '.' between some characters in the local name part of an
-email address, mail sent there will be forwarded to the same address
-without dots in the local name. This rule does not apply to domain names:
-"alice.z@leetcode.com" and "alicez@leetcode.com" forward to the same
-address.
+The domain part is taken literally — no rule ever touches it, so dots there
+genuinely distinguish addresses. Both rules can occur in the same address,
+and a `'.'` that lands in a discarded plus-tail simply disappears with the
+tail.
 
-If you add a plus '+' in the local name, everything after the first plus
-sign will be ignored. This allows certain emails to be filtered, and this
-rule does not apply to domain names either: "m.y+name@email.com" forwards
-to "my@email.com".
-
-It is possible to use both rules at the same time.
-
-Given an array of strings `emails`, where we send one email to each
-`emails[i]`, return the number of different addresses that actually
-receive mail.
+You are given an array `emails`; one message is sent to each address in it.
+Return how many distinct canonical mailboxes actually receive a message.
 
 ### Example 1
 
 ```text
-Input: emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
+Input: emails = ["a.b+c@x.com","ab@x.com","ab@xx.com"]
 Output: 2
-Explanation: "testemail@leetcode.com" and "testemail@lee.tcode.com" actually receive mail.
+Explanation: The first two collapse to `ab@x.com`; the third targets the
+different domain `xx.com`.
 ```
 
 ### Example 2
 
 ```text
-Input: emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
-Output: 3
+Input: emails = ["u+first.o@k.com","u+x@k.com","u@k.com"]
+Output: 1
+Explanation: All three deliver to the single mailbox `u@k.com` — whatever
+follows the first `+` is dropped wholesale.
+```
+
+### Example 3
+
+```text
+Input: emails = ["t@aa.com","t@a.a.com"]
+Output: 2
+Explanation: The dot inside the second domain is real, so the two addresses
+reach different mailboxes.
 ```
 
 ### Constraints
@@ -47,7 +51,7 @@ Output: 3
 - `1 <= emails[i].length <= 100`
 - `emails[i]` consists of lowercase English letters, `'+'`, `'.'` and `'@'`.
 - Each `emails[i]` contains exactly one `'@'` character.
-- All local and domain names are non-empty.
-- Local names do not start with a `'+'` character.
-- Domain names end with the ".com" suffix.
-- Domain names contain at least one character before the ".com" suffix.
+- All local and domain parts are non-empty.
+- Local parts never begin with a `'+'` character.
+- Domain parts end with the `".com"` suffix.
+- Domain parts contain at least one character before the `".com"` suffix.

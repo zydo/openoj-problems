@@ -13,9 +13,10 @@ discarded. Each column is judged independently of all others.
 ### Example 1
 
 ```text
-Input: strs = ["az","by","cx"]
+Input: strs = ["az","bz","cz"]
 Output: 0
-Explanation: Both columns increase from top to bottom, so neither is discarded.
+Explanation: The first column runs a, b, c and the second repeats z three
+times; nothing ever drops, so no column is discarded.
 ```
 
 ### Example 2

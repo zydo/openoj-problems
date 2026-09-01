@@ -1,4 +1,4 @@
-# Solutions — Stamping The Sequence
+# Solutions — Stamp Reconstruction
 
 Building `target` forwards from a blank canvas buries the choice of each
 early stamp under everything stamped after it, but read backwards the puzzle

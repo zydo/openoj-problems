@@ -2,24 +2,30 @@
   "public": [
     {
       "input": [
-        "abc",
-        "ababc"
+        "ab",
+        "abab"
       ],
       "expected": [
-        0,
-        2
+        2,
+        0
       ]
     },
     {
       "input": [
-        "abca",
-        "aabcaca"
+        "aba",
+        "ababa"
       ],
       "expected": [
-        3,
-        0,
-        1
+        2,
+        0
       ]
+    },
+    {
+      "input": [
+        "ab",
+        "aa"
+      ],
+      "expected": []
     }
   ],
   "hidden": [

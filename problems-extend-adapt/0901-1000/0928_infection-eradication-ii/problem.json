@@ -4,10 +4,8 @@
   "id": 928,
   "slug": "infection-eradication-ii",
   "title": "Infection Eradication II",
-  "difficulty": "",
+  "difficulty": "H4",
   "tags": [
-    "Array",
-    "Hash Table",
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

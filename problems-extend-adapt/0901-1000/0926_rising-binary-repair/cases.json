@@ -2,21 +2,21 @@
   "public": [
     {
       "input": [
-        "00110"
+        "11000"
+      ],
+      "expected": 2
+    },
+    {
+      "input": [
+        "0101"
       ],
       "expected": 1
     },
     {
       "input": [
-        "010110"
+        "0000"
       ],
-      "expected": 2
-    },
-    {
-      "input": [
-        "00011000"
-      ],
-      "expected": 2
+      "expected": 0
     }
   ],
   "hidden": [

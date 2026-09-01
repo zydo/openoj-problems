@@ -9,8 +9,7 @@
     "Hash Table",
     "Depth-First Search",
     "Union-Find",
-    "Graph Theory",
-    "Bipartite Graph"
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

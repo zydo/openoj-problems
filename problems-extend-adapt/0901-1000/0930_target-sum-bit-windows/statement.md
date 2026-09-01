@@ -1,47 +1,55 @@
-# Binary Subarrays With Sum
+# Target-Sum Bit Windows
 
 ## Description
 
-Given a binary array `nums` and an integer `goal`, return the number of
-non-empty subarrays with a sum equal to `goal`.
-
-A subarray is a contiguous part of the array.
+You are given a binary array `nums` and an integer `goal`. Count the
+non-empty windows — contiguous runs of elements — whose entries add up to
+exactly `goal`.
 
 ### Example 1
 
 ```text
-Input: nums = [1,0,1,0,1], goal = 2
-Output: 4
-Explanation: The 4 subarrays with a sum of 2 are [1,0,1], [1,0,1,0],
-[0,1,0,1], and [1,0,1].
+Input: nums = [0,1,1,0,1], goal = 2
+Output: 5
+Explanation: The windows summing to 2 are [0,1,1], [0,1,1,0], [1,1],
+[1,1,0], and [1,0,1].
 ```
 
 ### Example 2
 
 ```text
-Input: nums = [0,0,0,0,0], goal = 0
-Output: 15
+Input: nums = [1,1,0,0,1], goal = 3
+Output: 1
+Explanation: Only the full array sums to 3.
+```
+
+### Example 3
+
+```text
+Input: nums = [0,0,0], goal = 0
+Output: 6
+Explanation: Zeros add nothing, so every one of the 6 windows qualifies.
 ```
 
 ### Constraints
 
 - `1 <= nums.length <= 3 * 10⁴`
-- `nums[i]` is either `0` or `1`.
+- Every element of `nums` is `0` or `1`.
 - `0 <= goal <= nums.length`
 
 ## Hints
 
 ### Hint 1
 
-Can you transform the problem into finding two prefix sums whose difference
-equals `goal`?
+A window's sum can be written as one running total minus another. Which
+two?
 
 ### Hint 2
 
-While iterating through the array, keep track of how many times each prefix
-sum has appeared so far.
+Sweep the array once, and for each running total remember how many times
+that value has already appeared.
 
 ### Hint 3
 
-If the current prefix sum is `curr`, how many previous prefix sums equal to
-`curr - goal` exist?
+Standing at a running total of `curr`, every earlier position whose running
+total was `curr - goal` closes exactly one qualifying window ending here.

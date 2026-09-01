@@ -1,40 +1,42 @@
-# Flip String to Monotone Increasing
+# Rising Binary Repair
 
 ## Description
 
-A binary string is monotone increasing if it consists of some number of 0's
-(possibly none), followed by some number of 1's (also possibly none).
+A binary string is called rising when all of its `0`s come before all of its
+`1`s — a block of `0`s (possibly empty) followed by a block of `1`s (also
+possibly empty).
 
-You are given a binary string `s`. You can flip `s[i]`, changing it from 0 to
-1 or from 1 to 0.
+You are given a binary string `s`. In one move you may pick any position and
+flip its bit, turning a `0` into a `1` or a `1` into a `0`.
 
-Return the minimum number of flips to make `s` monotone increasing.
+Return the fewest flips needed to turn `s` into a rising string.
 
 ### Example 1
 
 ```text
-Input: s = "00110"
-Output: 1
-Explanation: We flip the last digit to get 00111.
+Input: s = "11000"
+Output: 2
+Explanation: Flipping the two leading `1`s yields `00000`. The alternative
+of turning the three `0`s into `1`s costs more.
 ```
 
 ### Example 2
 
 ```text
-Input: s = "010110"
-Output: 2
-Explanation: We flip to get 011111, or alternatively 000111.
+Input: s = "0101"
+Output: 1
+Explanation: Flipping the `0` in the third position produces `0111`.
 ```
 
 ### Example 3
 
 ```text
-Input: s = "00011000"
-Output: 2
-Explanation: We flip to get 00000000.
+Input: s = "0000"
+Output: 0
+Explanation: The string is already rising, so nothing has to change.
 ```
 
 ### Constraints
 
 - `1 <= s.length <= 10⁵`
-- `s[i]` is either '0' or '1'.
+- `s` consists only of the characters `'0'` and `'1'`.

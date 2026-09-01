@@ -1,4 +1,4 @@
-# Solutions — Three Equal Parts
+# Solutions — Equal Binary Triple
 
 ## Count the 1s and align both cuts to the last third
 

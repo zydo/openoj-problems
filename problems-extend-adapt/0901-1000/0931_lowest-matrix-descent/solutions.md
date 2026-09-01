@@ -1,4 +1,4 @@
-# Solutions — Minimum Falling Path Sum
+# Solutions — Lowest Matrix Descent
 
 ## Rolling-row dynamic programming
 

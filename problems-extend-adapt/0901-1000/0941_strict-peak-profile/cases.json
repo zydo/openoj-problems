@@ -3,32 +3,35 @@
     {
       "input": [
         [
-          2,
-          1
-        ]
-      ],
-      "expected": false
-    },
-    {
-      "input": [
-        [
-          3,
+          1,
+          4,
+          7,
           5,
-          5
-        ]
-      ],
-      "expected": false
-    },
-    {
-      "input": [
-        [
-          0,
-          3,
-          2,
-          1
+          2
         ]
       ],
       "expected": true
+    },
+    {
+      "input": [
+        [
+          2,
+          6,
+          9
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "input": [
+        [
+          1,
+          5,
+          5,
+          2
+        ]
+      ],
+      "expected": false
     }
   ],
   "hidden": [

@@ -3,9 +3,9 @@
     {
       "input": [
         [
-          "test.email+alex@leetcode.com",
-          "test.e.mail+bob.cathy@leetcode.com",
-          "testemail+david@lee.tcode.com"
+          "a.b+c@x.com",
+          "ab@x.com",
+          "ab@xx.com"
         ]
       ],
       "expected": 2
@@ -13,12 +13,21 @@
     {
       "input": [
         [
-          "a@leetcode.com",
-          "b@leetcode.com",
-          "c@leetcode.com"
+          "u+first.o@k.com",
+          "u+x@k.com",
+          "u@k.com"
         ]
       ],
-      "expected": 3
+      "expected": 1
+    },
+    {
+      "input": [
+        [
+          "t@aa.com",
+          "t@a.a.com"
+        ]
+      ],
+      "expected": 2
     }
   ],
   "hidden": [

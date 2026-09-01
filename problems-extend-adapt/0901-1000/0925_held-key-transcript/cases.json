@@ -2,15 +2,22 @@
   "public": [
     {
       "input": [
-        "alex",
-        "aaleex"
+        "noor",
+        "nooor"
       ],
       "expected": true
     },
     {
       "input": [
-        "saeed",
-        "ssaaedd"
+        "zoe",
+        "zzoea"
+      ],
+      "expected": false
+    },
+    {
+      "input": [
+        "mira",
+        "mra"
       ],
       "expected": false
     }

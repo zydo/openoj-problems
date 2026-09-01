@@ -1,4 +1,4 @@
-# Solutions — Bag of Tokens
+# Solutions — Token Power Trades
 
 Every face-up trades power for a point; every face-down trades a point for
 power. The whole game is deciding which tokens to buy points with and which

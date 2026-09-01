@@ -1,4 +1,4 @@
-# Solutions — Flip Equivalent Binary Trees
+# Solutions — Swap-Equivalent Trees
 
 ## One stack of node pairs
 

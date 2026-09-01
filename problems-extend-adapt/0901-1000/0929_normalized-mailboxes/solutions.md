@@ -1,4 +1,4 @@
-# Solutions — Unique Email Addresses
+# Solutions — Normalized Mailboxes
 
 Two rewriting rules, both confined to the local name, decide which addresses
 coincide: dots there vanish, and everything from the first '+' onward is

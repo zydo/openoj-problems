@@ -1,50 +1,49 @@
-# Valid Mountain Array
+# Strict Peak Profile
 
 ## Description
 
-Given an integer array `arr`, return `true` if and only if it is a valid
-mountain array.
+Decide whether a row of numbers rises to exactly one summit and then falls
+all the way back down, with nothing but strict steps on both sides. The
+array `arr` qualifies — call it a strict peak profile — exactly when:
 
-Recall that `arr` is a mountain array if and only if:
+- it holds at least three values, so a summit can sit strictly inside;
+- the values climb strictly to a single peak element — each one larger
+  than the value before it — and then fall strictly after it — each one
+  smaller than the value before it — through to the last element.
 
-- `arr.length >= 3`
-- There exists some `i` with `0 < i < arr.length - 1` such that:
-    - `arr[0] < arr[1] < ... < arr[i - 1] < arr[i]`
-    - `arr[i] > arr[i + 1] > ... > arr[arr.length - 1]`
-
-In words, the values climb strictly up to a single peak and then fall
-strictly down to the very end. The peak cannot sit at either end of the
-array, equal neighbors are forbidden on both slopes, and once the descent
-begins it may never rise again.
+The summit may not be the first or the last element: a profile that only
+ever climbs or only ever falls does not qualify. Equal side-by-side values
+are forbidden everywhere, and once the way down starts the values may
+never tick back up. Return `true` when `arr` forms such a profile and
+`false` otherwise.
 
 ![diagram](figures/941-1.svg)
 
 ### Example 1
 
 ```text
-Input: arr = [2,1]
-Output: false
-Explanation: The array has only two elements, and a mountain needs at least
-three to place a peak strictly inside it.
+Input: arr = [1,4,7,5,2]
+Output: true
+Explanation: The values climb 1 < 4 < 7 up to the summit 7 at index 2,
+then fall strictly 7 > 5 > 2 through the end.
 ```
 
 ### Example 2
 
 ```text
-Input: arr = [3,5,5]
+Input: arr = [2,6,9]
 Output: false
-Explanation: The values climb to the 5 at index 1, but the following 5 is
-equal rather than smaller, so the array never strictly descends from its
-top.
+Explanation: The values only ever climb; there is no descending leg after
+a peak, since the largest value sits at the very end.
 ```
 
 ### Example 3
 
 ```text
-Input: arr = [0,3,2,1]
-Output: true
-Explanation: The values strictly climb 0 < 3 to the peak 3 at index 1, then
-strictly fall 3 > 2 > 1 all the way to the end.
+Input: arr = [1,5,5,2]
+Output: false
+Explanation: The climb reaches 5 but then meets an equal 5 rather than a
+strictly smaller value, so the way down never strictly begins.
 ```
 
 ### Constraints
@@ -52,11 +51,10 @@ strictly fall 3 > 2 > 1 all the way to the end.
 - `1 <= arr.length <= 10⁴`
 - `0 <= arr[i] <= 10⁴`
 
-## Hints
-
 ### Hint 1
 
-Walk from the left while the values strictly increase. The index where that
-climb stops is the only place a peak could be; from there the values must
-strictly decrease to the very end — no plateau, and no second rise after
-the descent starts.
+March from the left end for as long as each value beats the one before it.
+Wherever that climb halts is the only candidate summit; from there every
+remaining value must be strictly smaller than its predecessor, straight to
+the end. If the halt lands on the first or last index, or any later step
+fails to drop, the answer is `false`.

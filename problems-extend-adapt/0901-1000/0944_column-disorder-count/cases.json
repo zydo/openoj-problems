@@ -3,18 +3,9 @@
     {
       "input": [
         [
-          "cba",
-          "daf",
-          "ghi"
-        ]
-      ],
-      "expected": 1
-    },
-    {
-      "input": [
-        [
-          "a",
-          "b"
+          "az",
+          "bz",
+          "cz"
         ]
       ],
       "expected": 0
@@ -22,12 +13,12 @@
     {
       "input": [
         [
-          "zyx",
-          "wvu",
-          "tsr"
+          "abz",
+          "aay",
+          "acx"
         ]
       ],
-      "expected": 3
+      "expected": 2
     }
   ],
   "hidden": [

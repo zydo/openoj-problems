@@ -1,4 +1,4 @@
-# Solutions — Long Pressed Name
+# Solutions — Held-Key Transcript
 
 A long press never introduces a new character and never reorders the typed
 ones — it only stretches a character of `name` into a run of copies of
@@ -22,9 +22,10 @@ Conversely, everything the scan accepts is a genuine transcription. The
 matched pairs line the i-th run of `typed` up with the i-th run of `name`,
 and every skipped repetition merely lengthens the run its matched character
 sits in, so run by run the characters agree and the typed run is at least as
-long — precisely some characters (possibly none) being long pressed. For
-`name = "saeed"` the `e` run of `"ssaaedd"` falls short of two, and the scan
-rejects it as soon as the second `d` matches nothing. Both pointers only move
+long — precisely some keystrokes (possibly none) being held long enough to
+register extra copies. For `name = "mira"` the scan rejects `"mra"` as soon
+as the `r` matches neither the wanted `i` nor its own predecessor. Both
+pointers only move
 forward, so each character is touched once and nothing beyond the two indices
 is kept.
 

@@ -1,4 +1,4 @@
-# Solutions — Delete Columns to Make Sorted
+# Solutions — Column Disorder Count
 
 The grid hides a decomposition: sortedness is not a property of the grid
 as a whole but of each column alone. A column survives exactly when no

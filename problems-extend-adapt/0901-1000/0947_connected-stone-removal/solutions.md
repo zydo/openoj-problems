@@ -1,4 +1,4 @@
-# Solutions — Most Stones Removed with Same Row or Column
+# Solutions — Connected Stone Removal
 
 ## Union-find over rows and columns
 

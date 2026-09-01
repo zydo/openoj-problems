@@ -1,6 +1,6 @@
 class LevelOrderTreeInserter {
   public:
-    LevelOrderTreeInserter(TreeNode* root);
+    LevelOrderTreeInserter(TreeNode *root);
     int insert(int v);
-    TreeNode* treeRoot();
+    TreeNode *treeRoot();
 };
