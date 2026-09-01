@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1628,
+  "slug": "value-of-a-postfix-expression-tree",
+  "title": "Value of a Postfix Expression Tree",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Stack",
+    "Tree",
+    "Design"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "evaluatePostfixTree",
+    "parameters": [
+      {
+        "name": "postfix",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "evaluatePostfixTree",
+      "rust": "evaluate_postfix_tree",
+      "typescript": "evaluatePostfixTree"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

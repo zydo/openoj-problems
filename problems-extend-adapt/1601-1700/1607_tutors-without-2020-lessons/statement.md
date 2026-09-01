@@ -17,13 +17,13 @@ records one learner who can book lessons on the platform.
 
 Table: `Lessons`
 
-| Column Name | Type    |
-| ----------- | ------- |
-| lesson_id   | int     |
-| lesson_date | date    |
-| lesson_fee  | int     |
-| learner_id  | int     |
-| tutor_id    | int     |
+| Column Name | Type |
+| ----------- | ---- |
+| lesson_id   | int  |
+| lesson_date | date |
+| lesson_fee  | int  |
+| learner_id  | int  |
+| tutor_id    | int  |
 
 `lesson_id` is the column with unique values for this table. Each row
 records one booked lesson: the fee charged, the learner who booked it,

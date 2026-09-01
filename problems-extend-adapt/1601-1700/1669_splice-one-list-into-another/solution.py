@@ -2,9 +2,7 @@ from typing import Optional
 
 
 class Solution:
-    def spliceInto(
-        self, list1: Optional[ListNode], a: int, b: int, list2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+    def spliceInto(self, list1: Optional[ListNode], a: int, b: int, list2: Optional[ListNode]) -> Optional[ListNode]:
         # The splice needs two landmarks on list1 and one on list2. The
         # (a-1)th node — the last node that keeps its place in front of the
         # removed stretch — is found first, with the (b+1)th node — the

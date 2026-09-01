@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1660,
+  "slug": "prune-the-defective-node",
+  "title": "Prune the Defective Node",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "pruneDefectiveNode",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "fromNode",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "toNode",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "tree_node",
+    "return_type": {
+      "kind": "binary_tree",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "pruneDefectiveNode",
+      "rust": "prune_defective_node",
+      "typescript": "pruneDefectiveNode"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

@@ -8,11 +8,11 @@ starts and one when it ends.
 
 Table: `Jobs`
 
-| Column Name | Type |
-| ----------- | ---- |
-| machine_id  | int  |
-| job_id      | int  |
-| phase       | enum |
+| Column Name | Type  |
+| ----------- | ----- |
+| machine_id  | int   |
+| job_id      | int   |
+| phase       | enum  |
 | moment      | float |
 
 `(machine_id, job_id, phase)` is the primary key (a combination of

@@ -7,9 +7,9 @@ data: who is registered, and who voted for what.
 
 Table: `Listeners`
 
-| Column Name  | Type    |
-| ------------ | ------- |
-| listener_id  | int     |
+| Column Name   | Type    |
+| ------------- | ------- |
+| listener_id   | int     |
 | listener_name | varchar |
 
 `listener_id` is the column with unique values for this table. Each

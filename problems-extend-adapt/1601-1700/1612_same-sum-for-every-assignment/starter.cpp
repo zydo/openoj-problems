@@ -1,6 +1,4 @@
 class Solution {
-public:
-    bool sumsAgree(TreeNode* root1, TreeNode* root2) {
-        throw logic_error("TODO");
-    }
+  public:
+    bool sumsAgree(TreeNode *root1, TreeNode *root2) { throw logic_error("TODO"); }
 };

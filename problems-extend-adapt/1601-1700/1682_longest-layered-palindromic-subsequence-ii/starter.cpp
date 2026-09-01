@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int longestLayeredPalindrome(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int longestLayeredPalindrome(string s) { throw logic_error("TODO"); }
 };

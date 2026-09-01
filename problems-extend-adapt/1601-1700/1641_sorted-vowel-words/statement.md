@@ -3,7 +3,7 @@
 ## Description
 
 A word here is built only from the five lowercase vowels `'a'`, `'e'`,
-`'i'`, `'o'`, `'u'`, and it is called *in alphabetical order* when no
+`'i'`, `'o'`, `'u'`, and it is called _in alphabetical order_ when no
 letter ever drops going left to right — each letter matches or follows
 the one before it.
 

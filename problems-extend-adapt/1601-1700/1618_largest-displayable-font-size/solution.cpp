@@ -1,6 +1,7 @@
 class Solution {
   public:
-    int largestFittingFont(string text, int w, int h, vector<int> &fonts, vector<vector<int>> &widths, vector<int> &heights) {
+    int largestFittingFont(string text, int w, int h, vector<int> &fonts, vector<vector<int>> &widths,
+                           vector<int> &heights) {
         // Fit is monotonic in the font index (widths/heights only grow), so
         // binary search the boundary between fitting and not fitting.
         auto fits = [&](int index) {

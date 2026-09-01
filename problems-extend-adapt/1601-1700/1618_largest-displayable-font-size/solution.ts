@@ -1,4 +1,11 @@
-function largestFittingFont(text: string, w: number, h: number, fonts: number[], widths: number[][], heights: number[]): number {
+function largestFittingFont(
+    text: string,
+    w: number,
+    h: number,
+    fonts: number[],
+    widths: number[][],
+    heights: number[],
+): number {
     // Fit is monotonic in the font index (widths/heights only grow), so
     // binary search the boundary between fitting and not fitting.
     const fits = (index: number): boolean => {

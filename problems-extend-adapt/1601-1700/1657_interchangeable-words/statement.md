@@ -69,7 +69,7 @@ inventory matters.
 ### Hint 2
 
 Move 2 means the actual counts are free too, as long as the multiset of
-counts can be matched up; what neither move can change is *which*
+counts can be matched up; what neither move can change is _which_
 letters appear at all.
 
 ### Hint 3

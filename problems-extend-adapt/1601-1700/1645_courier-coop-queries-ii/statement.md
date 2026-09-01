@@ -32,12 +32,12 @@ accepted.
 
 Table: `AcceptedRequests`
 
-| Column Name | Type |
-| ----------- | ---- |
-| request_id  | int  |
-| courier_id  | int  |
-| distance_km | int  |
-| duration_min | int |
+| Column Name  | Type |
+| ------------ | ---- |
+| request_id   | int  |
+| courier_id   | int  |
+| distance_km  | int  |
+| duration_min | int  |
 
 `request_id` is the column with unique values for this table. Each row
 records details of a request that a courier accepted. Every accepted
