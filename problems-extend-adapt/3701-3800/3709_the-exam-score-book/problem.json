@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3709,
+  "slug": "the-exam-score-book",
+  "title": "The Exam Score Book",
+  "difficulty": "H3",
+  "tags": [
+    "Design",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "ScoreBook",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "record",
+        "parameters": [
+          {
+            "name": "time",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "score",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "windowTotal",
+        "parameters": [
+          {
+            "name": "startTime",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "endTime",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      }
+    ],
+    "comparison": "exact",
+    "entrypoints": {
+      "rust.windowTotal": "window_total"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}
