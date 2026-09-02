@@ -1,0 +1,3 @@
+func countRegularRuns(minLength int, maxLength int, oneGroup int, zeroGroup int) int {
+	panic("TODO")
+}

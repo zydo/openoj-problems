@@ -1,0 +1,3 @@
+function digitValueGap(nums: number[]): number {
+    throw new Error("TODO");
+}

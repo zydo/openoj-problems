@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2571,
+  "slug": "fewest-power-of-two-steps-to-zero",
+  "title": "Fewest Power-of-Two Steps to Zero",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestStepsToZero",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestStepsToZero",
+      "rust": "fewest_steps_to_zero",
+      "typescript": "fewestStepsToZero"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

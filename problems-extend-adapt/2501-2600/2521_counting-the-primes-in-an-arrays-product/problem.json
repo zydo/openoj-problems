@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2521,
+  "slug": "counting-the-primes-in-an-arrays-product",
+  "title": "Counting the Primes in an Array's Product",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory",
+    "Prime Factorization"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countProductPrimes",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countProductPrimes",
+      "rust": "count_product_primes",
+      "typescript": "countProductPrimes"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2539,
+  "slug": "subsequences-at-a-shared-frequency",
+  "title": "Subsequences at a Shared Frequency",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Combinatorics",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countSharedFrequency",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countSharedFrequency",
+      "rust": "count_shared_frequency",
+      "typescript": "countSharedFrequency"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,3 @@
+function tallyVowelWords(words: string[], left: number, right: number): number {
+    throw new Error("TODO");
+}
