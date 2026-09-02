@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2147,
+  "slug": "hallway-dividers-between-seat-pairs",
+  "title": "Hallway Dividers Between Seat Pairs",
+  "difficulty": "H4",
+  "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countDividerPlacements",
+    "parameters": [
+      {
+        "name": "corridor",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countDividerPlacements",
+      "rust": "count_divider_placements",
+      "typescript": "countDividerPlacements"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

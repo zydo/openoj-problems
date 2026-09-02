@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2168,
+  "slug": "distinct-substrings-with-balanced-digit-counts",
+  "title": "Distinct Substrings With Balanced Digit Counts",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Hash Table",
+    "Rolling Hash",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countBalancedSubstrings",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countBalancedSubstrings",
+      "rust": "count_balanced_substrings",
+      "typescript": "countBalancedSubstrings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

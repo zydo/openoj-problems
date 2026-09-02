@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2158,
+  "slug": "fresh-paint-laid-down-each-day",
+  "title": "Fresh Paint Laid Down Each Day",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Union Find"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "dailyFreshPaint",
+    "parameters": [
+      {
+        "name": "paint",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "dailyFreshPaint",
+      "rust": "daily_fresh_paint",
+      "typescript": "dailyFreshPaint"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

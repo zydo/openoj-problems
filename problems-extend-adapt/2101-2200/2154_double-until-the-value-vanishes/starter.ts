@@ -1,0 +1,3 @@
+function doubleUntilAbsent(nums: number[], original: number): number {
+    throw new Error("TODO");
+}
