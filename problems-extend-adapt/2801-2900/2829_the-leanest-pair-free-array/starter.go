@@ -1,0 +1,3 @@
+func leanestSum(n int, k int) int {
+	panic("TODO")
+}

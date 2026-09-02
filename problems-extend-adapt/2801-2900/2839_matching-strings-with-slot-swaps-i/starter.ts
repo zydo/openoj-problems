@@ -1,0 +1,3 @@
+function canMatchBySwaps(s1: string, s2: string): boolean {
+    throw new Error("TODO");
+}

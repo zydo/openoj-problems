@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2889,
+  "slug": "the-month-by-city-temperature-grid",
+  "title": "The Month-By-City Temperature Grid",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Readings (city_name TEXT, month_name TEXT, temp INTEGER);",
+      "headers": true,
+      "dynamic_columns": true
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

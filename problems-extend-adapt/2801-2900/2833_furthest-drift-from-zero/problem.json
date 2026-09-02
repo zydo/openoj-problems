@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2833,
+  "slug": "furthest-drift-from-zero",
+  "title": "Furthest Drift From Zero",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "furthestDrift",
+    "parameters": [
+      {
+        "name": "moves",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "furthestDrift",
+      "rust": "furthest_drift",
+      "typescript": "furthestDrift"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

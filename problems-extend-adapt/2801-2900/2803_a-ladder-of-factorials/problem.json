@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2803,
+  "slug": "a-ladder-of-factorials",
+  "title": "A Ladder Of Factorials",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "FactCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "FactCase",
+        "construct": [
+          "n"
+        ],
+        "auxiliary": [],
+        "parameter": "factCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

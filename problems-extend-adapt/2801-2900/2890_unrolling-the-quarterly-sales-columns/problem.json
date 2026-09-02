@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2890,
+  "slug": "unrolling-the-quarterly-sales-columns",
+  "title": "Unrolling The Quarterly Sales Columns",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE QuarterlySales (row_no INTEGER, product_name VARCHAR, quarter_1 INTEGER, quarter_2 INTEGER, quarter_3 INTEGER, quarter_4 INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

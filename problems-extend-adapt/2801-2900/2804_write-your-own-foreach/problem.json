@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2804,
+  "slug": "write-your-own-foreach",
+  "title": "Write Your Own ForEach",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript",
+    "Array"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "EachCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "EachCase",
+        "construct": [
+          "arr",
+          "source",
+          "context"
+        ],
+        "auxiliary": [],
+        "parameter": "eachCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

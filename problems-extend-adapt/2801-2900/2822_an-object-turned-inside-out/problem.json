@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2822,
+  "slug": "an-object-turned-inside-out",
+  "title": "An Object Turned Inside Out",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "FlipCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "FlipCase",
+        "construct": [
+          "spec",
+          "answer"
+        ],
+        "auxiliary": [],
+        "parameter": "flipCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

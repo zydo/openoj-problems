@@ -1,0 +1,3 @@
+func claimableCoins(heroes []int, monsters []int, coins []int) []int64 {
+	panic("TODO")
+}
