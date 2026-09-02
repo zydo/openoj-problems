@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2368,
+  "slug": "unblocked-nodes-in-a-tree",
+  "title": "Unblocked Nodes in a Tree",
+  "difficulty": "H2",
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countUnblockedNodes",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      },
+      {
+        "name": "restricted",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countUnblockedNodes",
+      "rust": "count_unblocked_nodes",
+      "typescript": "countUnblockedNodes"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

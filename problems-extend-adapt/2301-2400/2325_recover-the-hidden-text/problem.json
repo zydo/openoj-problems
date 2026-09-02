@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2325,
+  "slug": "recover-the-hidden-text",
+  "title": "Recover the Hidden Text",
+  "difficulty": "H2",
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "recoverMessage",
+    "parameters": [
+      {
+        "name": "key",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "message",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "recoverMessage",
+      "rust": "recover_message",
+      "typescript": "recoverMessage"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

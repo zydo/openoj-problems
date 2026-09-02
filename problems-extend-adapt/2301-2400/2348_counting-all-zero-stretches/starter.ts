@@ -1,0 +1,3 @@
+function countZeroRuns(nums: number[]): number {
+    throw new Error("TODO");
+}

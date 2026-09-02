@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2390,
+  "slug": "erase-on-every-star",
+  "title": "Erase on Every Star",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "eraseOnEveryStar",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "eraseOnEveryStar",
+      "rust": "erase_on_every_star",
+      "typescript": "eraseOnEveryStar"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 128
+  }
+}

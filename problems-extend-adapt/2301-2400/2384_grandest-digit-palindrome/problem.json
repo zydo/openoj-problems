@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2384,
+  "slug": "grandest-digit-palindrome",
+  "title": "Grandest Digit Palindrome",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "grandestDigitPalindrome",
+    "parameters": [
+      {
+        "name": "num",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "grandestDigitPalindrome",
+      "rust": "grandest_digit_palindrome",
+      "typescript": "grandestDigitPalindrome"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 128
+  }
+}

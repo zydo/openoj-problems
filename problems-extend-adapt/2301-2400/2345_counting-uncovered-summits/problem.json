@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2345,
+  "slug": "counting-uncovered-summits",
+  "title": "Counting Uncovered Summits",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "uncoveredSummits",
+    "parameters": [
+      {
+        "name": "peaks",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "uncoveredSummits",
+      "rust": "uncovered_summits",
+      "typescript": "uncoveredSummits"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

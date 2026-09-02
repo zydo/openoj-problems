@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2306,
+  "slug": "branding-by-initial-swaps",
+  "title": "Branding By Initial Swaps",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countBrandNames",
+    "parameters": [
+      {
+        "name": "ideas",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "countBrandNames",
+      "rust": "count_brand_names",
+      "typescript": "countBrandNames"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2396,
+  "slug": "palindromic-in-every-base",
+  "title": "Palindromic In Every Base",
+  "difficulty": "H1",
+  "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "palindromicInEveryBase",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "palindromicInEveryBase",
+      "rust": "palindromic_in_every_base",
+      "typescript": "palindromicInEveryBase"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

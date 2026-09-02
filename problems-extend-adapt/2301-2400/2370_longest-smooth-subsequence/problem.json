@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2370,
+  "slug": "longest-smooth-subsequence",
+  "title": "Longest Smooth Subsequence",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestSmoothChain",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestSmoothChain",
+      "rust": "longest_smooth_chain",
+      "typescript": "longestSmoothChain"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

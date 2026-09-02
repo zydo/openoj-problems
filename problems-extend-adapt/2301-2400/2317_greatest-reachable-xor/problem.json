@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2317,
+  "slug": "greatest-reachable-xor",
+  "title": "Greatest Reachable XOR",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "greatestReachableXor",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "greatestReachableXor",
+      "rust": "greatest_reachable_xor",
+      "typescript": "greatestReachableXor"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

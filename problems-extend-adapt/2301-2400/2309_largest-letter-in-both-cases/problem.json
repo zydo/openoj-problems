@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2309,
+  "slug": "largest-letter-in-both-cases",
+  "title": "Largest Letter In Both Cases",
+  "difficulty": "H2",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "bestDualCaseLetter",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "bestDualCaseLetter",
+      "rust": "best_dual_case_letter",
+      "typescript": "bestDualCaseLetter"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

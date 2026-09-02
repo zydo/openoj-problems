@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2336,
+  "slug": "the-bottomless-number-pool",
+  "title": "The Bottomless Number Pool",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "NumberPool",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "popSmallest",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "addBack",
+        "parameters": [
+          {
+            "name": "num",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}
