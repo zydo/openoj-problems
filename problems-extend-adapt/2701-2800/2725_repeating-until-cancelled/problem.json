@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2725,
+  "slug": "repeating-until-cancelled",
+  "title": "Repeating Until Cancelled",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "TickerCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "TickerCase",
+        "construct": [
+          "fn",
+          "args",
+          "t",
+          "cancelTimeMs"
+        ],
+        "auxiliary": [],
+        "parameter": "tickerCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

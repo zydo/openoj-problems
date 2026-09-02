@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2759,
+  "slug": "a-bare-bones-json-parser",
+  "title": "A Bare-Bones JSON Parser",
+  "difficulty": "H4",
+  "tags": [
+    "Expression Parsing",
+    "Recursion",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "parseJson",
+    "parameters": [
+      {
+        "name": "str",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "json"
+    },
+    "comparison": "exact",
+    "entrypoints": {
+      "go": "parseJson",
+      "rust": "parse_json",
+      "typescript": "parseJson"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

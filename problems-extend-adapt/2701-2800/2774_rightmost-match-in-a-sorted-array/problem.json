@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2774,
+  "slug": "rightmost-match-in-a-sorted-array",
+  "title": "Rightmost Match In A Sorted Array",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript",
+    "Array",
+    "Binary Search"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "SortedCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "SortedCase",
+        "construct": [
+          "nums",
+          "target"
+        ],
+        "auxiliary": [],
+        "parameter": "sortedCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

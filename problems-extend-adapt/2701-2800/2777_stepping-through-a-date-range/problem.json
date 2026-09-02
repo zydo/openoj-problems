@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2777,
+  "slug": "stepping-through-a-date-range",
+  "title": "Stepping Through A Date Range",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "Math",
+    "String"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "DateStepCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "DateStepCase",
+        "construct": [
+          "start",
+          "end",
+          "step"
+        ],
+        "auxiliary": [],
+        "parameter": "dateStepCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2703,
+  "slug": "how-many-arguments-came-in",
+  "title": "How Many Arguments Came In",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "CallArgsCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "CallArgsCase",
+        "construct": [
+          "args"
+        ],
+        "auxiliary": [],
+        "parameter": "callArgsCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

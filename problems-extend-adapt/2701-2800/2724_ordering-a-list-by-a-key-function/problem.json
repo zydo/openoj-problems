@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2724,
+  "slug": "ordering-a-list-by-a-key-function",
+  "title": "Ordering A List By A Key Function",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript",
+    "Array",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "OrderCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "OrderCase",
+        "construct": [
+          "arr",
+          "source",
+          "answer"
+        ],
+        "auxiliary": [],
+        "parameter": "orderCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

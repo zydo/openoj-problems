@@ -1,0 +1,270 @@
+{
+  "public": [
+    {
+      "input": {
+        "func": "() => checkThat(\"lead\").sameAs(\"lead\")"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(0).sameAs(false)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(7).notSameAs(9)"
+      },
+      "expected": {
+        "value": true
+      }
+    }
+  ],
+  "hidden": [
+    {
+      "input": {
+        "func": "() => checkThat(42).sameAs(42)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(5).sameAs(6)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(5).notSameAs(6)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(5).notSameAs(5)"
+      },
+      "expected": {
+        "error": "Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(\"5\").sameAs(5)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(true).sameAs(1)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(false).sameAs(0)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(true).sameAs(\"true\")"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(0).sameAs(\"\")"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(0).sameAs(null)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(null).sameAs(undefined)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(null).notSameAs(undefined)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(\"abc\").sameAs(\"abc\")"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(\"abc\").sameAs(\"ABC\")"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(\"\").sameAs(\"\")"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(\"\").notSameAs(\" \")"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(true).sameAs(true)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(null).sameAs(null)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(undefined).sameAs(undefined)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(-2.75).sameAs(-2.75)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(Infinity).sameAs(Infinity)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(9007199254740991).sameAs(9007199254740991)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(NaN).sameAs(NaN)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(NaN).notSameAs(NaN)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(0).sameAs(-0)"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(0).notSameAs(-0)"
+      },
+      "expected": {
+        "error": "Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat(0.1 + 0.2).sameAs(0.3)"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat({}).sameAs({})"
+      },
+      "expected": {
+        "error": "Not Equal"
+      }
+    },
+    {
+      "input": {
+        "func": "() => checkThat([1, 2]).notSameAs([1, 2])"
+      },
+      "expected": {
+        "value": true
+      }
+    },
+    {
+      "input": {
+        "func": "() => { const shared = { x: 1 }; return checkThat(shared).sameAs(shared); }"
+      },
+      "expected": {
+        "value": true
+      }
+    }
+  ]
+}

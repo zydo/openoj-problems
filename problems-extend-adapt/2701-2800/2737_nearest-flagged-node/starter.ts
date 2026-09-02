@@ -1,0 +1,3 @@
+function nearestFlaggedNode(n: number, edges: number[][], s: number, marked: number[]): number {
+    throw new Error("TODO");
+}

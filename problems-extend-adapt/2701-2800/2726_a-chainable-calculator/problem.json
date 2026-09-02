@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2726,
+  "slug": "a-chainable-calculator",
+  "title": "A Chainable Calculator",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript",
+    "Math",
+    "Design"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "ReplayCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": {
+      "mode": "close",
+      "tolerance": 1e-05
+    },
+    "provided": {
+      "oracle": {
+        "class": "ReplayCase",
+        "construct": [
+          "actions",
+          "values"
+        ],
+        "auxiliary": [],
+        "parameter": "replayCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

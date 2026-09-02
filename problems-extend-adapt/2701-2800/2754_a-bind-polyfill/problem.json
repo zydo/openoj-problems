@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2754,
+  "slug": "a-bind-polyfill",
+  "title": "A Bind Polyfill",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "bindWithContext",
+    "oracle": "BindCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "BindCase",
+        "construct": [
+          "source",
+          "obj",
+          "inputs"
+        ],
+        "auxiliary": [],
+        "parameter": "bindCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

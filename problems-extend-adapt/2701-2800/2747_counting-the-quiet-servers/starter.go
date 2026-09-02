@@ -1,0 +1,3 @@
+func countQuietServers(n int, logs [][]int, x int, queries []int) []int {
+	panic("TODO")
+}

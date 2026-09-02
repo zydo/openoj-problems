@@ -1,0 +1,3 @@
+function pickDisjointRows(grid: number[][]): number[] {
+    throw new Error("TODO");
+}

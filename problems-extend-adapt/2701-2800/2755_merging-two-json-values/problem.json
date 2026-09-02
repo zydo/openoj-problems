@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2755,
+  "slug": "merging-two-json-values",
+  "title": "Merging Two JSON Values",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "Recursion"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "deepCombine",
+    "parameters": [
+      {
+        "name": "obj1",
+        "codec": "json",
+        "value_type": {
+          "kind": "json"
+        }
+      },
+      {
+        "name": "obj2",
+        "codec": "json",
+        "value_type": {
+          "kind": "json"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "json"
+    },
+    "entrypoints": {
+      "typescript": "deepCombine"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

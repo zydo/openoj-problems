@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2704,
+  "slug": "a-tiny-assertion-helper",
+  "title": "A Tiny Assertion Helper",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "AssertionCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "AssertionCase",
+        "construct": [
+          "func"
+        ],
+        "auxiliary": [],
+        "parameter": "assertionCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

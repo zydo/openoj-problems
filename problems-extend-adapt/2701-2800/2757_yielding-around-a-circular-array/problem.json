@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2757,
+  "slug": "yielding-around-a-circular-array",
+  "title": "Yielding Around A Circular Array",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "Array",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "RingWalkCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "RingWalkCase",
+        "construct": [
+          "arr",
+          "startIndex",
+          "steps"
+        ],
+        "auxiliary": [],
+        "parameter": "ringWalkCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
