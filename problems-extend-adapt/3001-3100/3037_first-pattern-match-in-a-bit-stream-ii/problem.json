@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3037,
+  "slug": "first-pattern-match-in-a-bit-stream-ii",
+  "title": "First Pattern Match in a Bit Stream II",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "String Matching",
+    "Interactive"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "findPattern",
+    "oracle": "BitStream",
+    "oracle_methods": [
+      {
+        "name": "next",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "pattern",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "query_limit": 1000000,
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "BitStream",
+        "construct": [
+          "bits"
+        ],
+        "auxiliary": [
+          "pattern"
+        ],
+        "parameter": "bitStream"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

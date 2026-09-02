@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3081,
+  "slug": "spending-blanks-on-rarest-letters",
+  "title": "Spending Blanks On Rarest Letters",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fillWithRarestLetters",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "fillWithRarestLetters",
+      "rust": "fill_with_rarest_letters",
+      "typescript": "fillWithRarestLetters"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

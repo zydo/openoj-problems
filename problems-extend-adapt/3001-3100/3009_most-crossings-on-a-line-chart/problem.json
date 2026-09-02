@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3009,
+  "slug": "most-crossings-on-a-line-chart",
+  "title": "Most Crossings On A Line Chart",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Math",
+    "Sweep Line"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "mostCrossings",
+    "parameters": [
+      {
+        "name": "y",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "mostCrossings",
+      "rust": "most_crossings",
+      "typescript": "mostCrossings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

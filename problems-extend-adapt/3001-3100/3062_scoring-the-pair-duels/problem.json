@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3062,
+  "slug": "scoring-the-pair-duels",
+  "title": "Scoring The Pair Duels",
+  "difficulty": "H2",
+  "tags": [
+    "Linked List"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "pairDuelWinner",
+    "parameters": [
+      {
+        "name": "head",
+        "codec": "list_node",
+        "value_type": {
+          "kind": "linked_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "pairDuelWinner",
+      "rust": "pair_duel_winner",
+      "typescript": "pairDuelWinner"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

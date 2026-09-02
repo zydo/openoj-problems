@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3073,
+  "slug": "the-widest-rising-triplet",
+  "title": "The Widest Rising Triplet",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Ordered Set"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "widestRisingTriplet",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "widestRisingTriplet",
+      "rust": "widest_rising_triplet",
+      "typescript": "widestRisingTriplet"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

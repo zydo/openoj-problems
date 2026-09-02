@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3031,
+  "slug": "seconds-to-restore-the-word-ii",
+  "title": "Seconds To Restore The Word II",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "String Matching"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "secondsToRestore",
+    "parameters": [
+      {
+        "name": "word",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "secondsToRestore",
+      "rust": "seconds_to_restore",
+      "typescript": "secondsToRestore"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

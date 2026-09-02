@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3064,
+  "slug": "interrogating-a-number-by-its-bits",
+  "title": "Interrogating a Number by Its Bits",
+  "difficulty": "H3",
+  "tags": [
+    "Bit Manipulation",
+    "Interactive"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "findNumber",
+    "oracle": "MaskedNumber",
+    "oracle_methods": [
+      {
+        "name": "commonSetBits",
+        "parameters": [
+          {
+            "name": "num",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "query_limit": 1000000,
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "MaskedNumber",
+        "construct": [
+          "n"
+        ],
+        "auxiliary": [],
+        "parameter": "maskedNumber"
+      }
+    },
+    "entrypoints": {
+      "go": "findNumber",
+      "rust": "find_number",
+      "cpp": "findNumber",
+      "javascript": "findNumber",
+      "typescript": "findNumber"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

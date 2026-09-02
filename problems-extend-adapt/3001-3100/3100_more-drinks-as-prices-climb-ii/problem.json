@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3100,
+  "slug": "more-drinks-as-prices-climb-ii",
+  "title": "More Drinks as Prices Climb II",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "mostDrinksAsPricesClimb",
+    "parameters": [
+      {
+        "name": "numBottles",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "numExchange",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "mostDrinksAsPricesClimb",
+      "rust": "most_drinks_as_prices_climb",
+      "typescript": "mostDrinksAsPricesClimb"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

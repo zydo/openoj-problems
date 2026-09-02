@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3016,
+  "slug": "fewest-keypresses-to-spell-a-word-ii",
+  "title": "Fewest Keypresses To Spell A Word II",
+  "difficulty": "H3",
+  "tags": [
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestKeypresses",
+    "parameters": [
+      {
+        "name": "word",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestKeypresses",
+      "rust": "fewest_keypresses",
+      "typescript": "fewestKeypresses"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

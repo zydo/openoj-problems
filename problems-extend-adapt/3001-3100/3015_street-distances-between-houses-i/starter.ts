@@ -1,0 +1,3 @@
+function distanceTally(n: number, x: number, y: number): number[] {
+    throw new Error("TODO");
+}
