@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 195,
+  "slug": "a-files-tenth-line",
+  "title": "A File's Tenth Line",
+  "difficulty": "H1",
+  "tags": [
+    "Shell"
+  ],
+  "invocation": {
+    "type": "shell",
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 157,
+  "slug": "copying-chars-through-a-window",
+  "title": "Copying Chars Through A Window",
+  "difficulty": "",
+  "tags": [
+    "Array",
+    "Simulation",
+    "Interactive"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "read",
+    "oracle": "CharSource",
+    "oracle_methods": [
+      {
+        "name": "read4",
+        "parameters": [
+          {
+            "name": "buf4",
+            "codec": "json"
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "buf",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        },
+        "out_buffer": {
+          "capacity_from": "n"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "query_limit": 1000000,
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "CharSource",
+        "construct": [
+          "content"
+        ],
+        "auxiliary": [
+          "n"
+        ],
+        "parameter": "charSource"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
