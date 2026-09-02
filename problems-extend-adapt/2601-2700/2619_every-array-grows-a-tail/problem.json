@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2619,
+  "slug": "every-array-grows-a-tail",
+  "title": "Every Array Grows A Tail",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "TailProbe",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "TailProbe",
+        "construct": [
+          "nums"
+        ],
+        "auxiliary": [],
+        "parameter": "tailProbe"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

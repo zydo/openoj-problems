@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2627,
+  "slug": "waiting-for-the-calls-to-settle",
+  "title": "Waiting For The Calls To Settle",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "QuietWindowCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "QuietWindowCase",
+        "construct": [
+          "t",
+          "calls"
+        ],
+        "auxiliary": [],
+        "parameter": "quietWindowCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

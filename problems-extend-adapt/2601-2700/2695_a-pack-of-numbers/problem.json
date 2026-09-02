@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2695,
+  "slug": "a-pack-of-numbers",
+  "title": "A Pack Of Numbers",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "PackCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "PackCase",
+        "construct": [
+          "arrays",
+          "operation"
+        ],
+        "auxiliary": [],
+        "parameter": "packCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

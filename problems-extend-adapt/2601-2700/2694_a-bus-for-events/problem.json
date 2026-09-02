@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2694,
+  "slug": "a-bus-for-events",
+  "title": "A Bus For Events",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "BusCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "BusCase",
+        "construct": [
+          "actions",
+          "values"
+        ],
+        "auxiliary": [],
+        "parameter": "busCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

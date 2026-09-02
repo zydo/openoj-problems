@@ -1,0 +1,3 @@
+function gcdStepsToAllOnes(nums: number[]): number {
+    throw new Error("TODO");
+}

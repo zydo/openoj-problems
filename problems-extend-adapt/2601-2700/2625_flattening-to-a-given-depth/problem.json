@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2625,
+  "slug": "flattening-to-a-given-depth",
+  "title": "Flattening To A Given Depth",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Stack",
+    "Depth-First Search"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "FlattenToDepthCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "FlattenToDepthCase",
+        "construct": [
+          "arr",
+          "n"
+        ],
+        "auxiliary": [],
+        "parameter": "flattenToDepthCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 2048
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2677,
+  "slug": "dealing-the-array-into-hands",
+  "title": "Dealing The Array Into Hands",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "DealProbe",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "DealProbe",
+        "construct": [
+          "arr",
+          "size"
+        ],
+        "auxiliary": [],
+        "parameter": "dealProbe"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

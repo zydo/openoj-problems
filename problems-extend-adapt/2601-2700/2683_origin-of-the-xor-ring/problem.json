@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2683,
+  "slug": "origin-of-the-xor-ring",
+  "title": "Origin of the XOR Ring",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "hasBinaryOrigin",
+    "parameters": [
+      {
+        "name": "derived",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "hasBinaryOrigin",
+      "rust": "has_binary_origin",
+      "typescript": "hasBinaryOrigin"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

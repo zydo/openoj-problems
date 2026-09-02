@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2654,
+  "slug": "fewest-gcd-steps-to-an-all-ones-array",
+  "title": "Fewest Gcd Steps to an All-Ones Array",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Number Theory",
+    "Greatest Common Divisor"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "gcdStepsToAllOnes",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "gcdStepsToAllOnes",
+      "rust": "gcd_steps_to_all_ones",
+      "typescript": "gcdStepsToAllOnes"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

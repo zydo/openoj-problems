@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2634,
+  "slug": "hand-written-array-filter",
+  "title": "Hand-Written Array Filter",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript",
+    "Array"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "PickCase",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "PickCase",
+        "construct": [
+          "arr",
+          "source"
+        ],
+        "auxiliary": [],
+        "parameter": "pickCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

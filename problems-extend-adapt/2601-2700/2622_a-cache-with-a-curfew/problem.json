@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2622,
+  "slug": "a-cache-with-a-curfew",
+  "title": "A Cache With A Curfew",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "CacheProbe",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "CacheProbe",
+        "construct": [
+          "actions",
+          "values",
+          "timeDelays"
+        ],
+        "auxiliary": [],
+        "parameter": "cacheProbe"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

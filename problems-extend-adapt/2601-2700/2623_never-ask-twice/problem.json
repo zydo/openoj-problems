@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2623,
+  "slug": "never-ask-twice",
+  "title": "Never Ask Twice",
+  "difficulty": "H3",
+  "tags": [
+    "Memoization",
+    "Hash Table",
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "MemoProbe",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "MemoProbe",
+        "construct": [
+          "fnName",
+          "actions",
+          "values"
+        ],
+        "auxiliary": [],
+        "parameter": "memoProbe"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

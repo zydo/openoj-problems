@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2674,
+  "slug": "cut-a-ring-in-half",
+  "title": "Cut a Ring in Half",
+  "difficulty": "H3",
+  "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cutRingInHalf",
+    "parameters": [
+      {
+        "name": "list",
+        "codec": "circular_list",
+        "value_type": {
+          "kind": "circular_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "circular_list_array",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "circular_list",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "cutRingInHalf",
+      "rust": "cut_ring_in_half",
+      "typescript": "cutRingInHalf"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

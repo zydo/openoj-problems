@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2700,
+  "slug": "a-diff-of-two-json-trees",
+  "title": "A Diff Of Two JSON Trees",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "Depth-First Search"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "solve",
+    "oracle": "TreeDiffCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "TreeDiffCase",
+        "construct": [
+          "obj1",
+          "obj2"
+        ],
+        "auxiliary": [],
+        "parameter": "treeDiffCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

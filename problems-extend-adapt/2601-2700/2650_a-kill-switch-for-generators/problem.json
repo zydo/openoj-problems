@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2650,
+  "slug": "a-kill-switch-for-generators",
+  "title": "A Kill Switch For Generators",
+  "difficulty": "H4",
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "AbortCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "AbortCase",
+        "construct": [
+          "source",
+          "cancelledAt"
+        ],
+        "auxiliary": [],
+        "parameter": "abortCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

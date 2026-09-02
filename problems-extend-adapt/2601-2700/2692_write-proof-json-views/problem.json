@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2692,
+  "slug": "write-proof-json-views",
+  "title": "Write-Proof JSON Views",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "WriteProofCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "WriteProofCase",
+        "construct": [
+          "obj",
+          "fn"
+        ],
+        "auxiliary": [],
+        "parameter": "writeProofCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

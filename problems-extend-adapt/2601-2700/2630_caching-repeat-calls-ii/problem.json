@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2630,
+  "slug": "caching-repeat-calls-ii",
+  "title": "Caching Repeat Calls II",
+  "difficulty": "H4",
+  "tags": [
+    "JavaScript",
+    "Hash Table",
+    "Tree"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "runMemoized",
+    "oracle": "ReplayCacheCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "ReplayCacheCase",
+        "construct": [
+          "source",
+          "getInputs"
+        ],
+        "auxiliary": [],
+        "parameter": "replayCacheCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

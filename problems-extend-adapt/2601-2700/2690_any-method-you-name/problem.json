@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2690,
+  "slug": "any-method-you-name",
+  "title": "Any Method You Name",
+  "difficulty": "H2",
+  "tags": [
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "callMethod",
+    "oracle": "AnyMethodProbe",
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "AnyMethodProbe",
+        "construct": [
+          "method"
+        ],
+        "auxiliary": [],
+        "parameter": "anyMethodProbe"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2633,
+  "slug": "hand-rolled-json-writer",
+  "title": "Hand-Rolled JSON Writer",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "String",
+    "Depth-First Search"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "stringifyValue",
+    "oracle": "ValueCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "ValueCase",
+        "construct": [
+          "object"
+        ],
+        "auxiliary": [],
+        "parameter": "valueCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

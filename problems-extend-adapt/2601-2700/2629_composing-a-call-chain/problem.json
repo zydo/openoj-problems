@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2629,
+  "slug": "composing-a-call-chain",
+  "title": "Composing A Call Chain",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "CallChainCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "CallChainCase",
+        "construct": [
+          "functions",
+          "x"
+        ],
+        "auxiliary": [],
+        "parameter": "callChainCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

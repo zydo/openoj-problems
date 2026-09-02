@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2626,
+  "slug": "folding-an-array-from-the-left",
+  "title": "Folding An Array From The Left",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "JavaScript"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "reduce",
+    "oracle": "FoldLeftCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "FoldLeftCase",
+        "construct": [
+          "fn",
+          "nums",
+          "init"
+        ],
+        "auxiliary": [],
+        "parameter": "foldLeftCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

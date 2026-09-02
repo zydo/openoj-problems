@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2636,
+  "slug": "at-most-n-at-once",
+  "title": "At Most N At Once",
+  "difficulty": "H3",
+  "tags": [
+    "JavaScript",
+    "Queue",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "run",
+    "oracle": "TickCase",
+    "oracle_methods": [],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "void"
+    },
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "TickCase",
+        "construct": [
+          "functions",
+          "n"
+        ],
+        "auxiliary": [],
+        "parameter": "tickCase"
+      }
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
