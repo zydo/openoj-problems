@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3144,
+  "slug": "fewest-balanced-pieces",
+  "title": "Fewest Balanced Pieces",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestBalancedPieces",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestBalancedPieces",
+      "rust": "fewest_balanced_pieces",
+      "typescript": "fewestBalancedPieces"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3182,
+  "slug": "honor-roll",
+  "title": "The Honor Roll",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Cadets (cadet_id INTEGER, name VARCHAR, track VARCHAR);\nCREATE TABLE Modules (module_id INTEGER, name VARCHAR, units INTEGER, track VARCHAR);\nCREATE TABLE Registrations (cadet_id INTEGER, module_id INTEGER, term VARCHAR, grade VARCHAR);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
