@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3242,
+  "slug": "neighbor-sums-on-a-numbered-grid",
+  "title": "Neighbor Sums On A Numbered Grid",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "NeighborTotals",
+    "constructor": {
+      "parameters": [
+        {
+          "name": "grid",
+          "codec": "json",
+          "value_type": {
+            "kind": "array",
+            "items": {
+              "kind": "array",
+              "items": {
+                "kind": "integer",
+                "bits": 32
+              }
+            }
+          }
+        }
+      ]
+    },
+    "methods": [
+      {
+        "name": "sideSum",
+        "parameters": [
+          {
+            "name": "value",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "cornerSum",
+        "parameters": [
+          {
+            "name": "value",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact",
+    "entrypoints": {
+      "rust.sideSum": "side_sum",
+      "rust.cornerSum": "corner_sum"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
