@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3822,
+  "slug": "the-order-book",
+  "title": "The Order Book",
+  "difficulty": "H3",
+  "tags": [
+    "Design",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "OrderBook",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "addOrder",
+        "parameters": [
+          {
+            "name": "orderId",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "orderType",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "price",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "modifyOrder",
+        "parameters": [
+          {
+            "name": "orderId",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          },
+          {
+            "name": "newPrice",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "cancelOrder",
+        "parameters": [
+          {
+            "name": "orderId",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ]
+      },
+      {
+        "name": "getOrdersAtPrice",
+        "parameters": [
+          {
+            "name": "orderType",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          },
+          {
+            "name": "price",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
