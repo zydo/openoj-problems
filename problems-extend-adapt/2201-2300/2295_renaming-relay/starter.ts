@@ -1,0 +1,3 @@
+function renamingRelay(nums: number[], operations: number[][]): number[] {
+    throw new Error("TODO");
+}

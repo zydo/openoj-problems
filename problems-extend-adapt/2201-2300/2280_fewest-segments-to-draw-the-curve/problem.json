@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2280,
+  "slug": "fewest-segments-to-draw-the-curve",
+  "title": "Fewest Segments to Draw the Curve",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "fewestSegments",
+    "parameters": [
+      {
+        "name": "stockPrices",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "fewestSegments",
+      "rust": "fewest_segments",
+      "typescript": "fewestSegments"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2296,
+  "slug": "a-text-workbench",
+  "title": "A Text Workbench",
+  "difficulty": "H3",
+  "tags": [
+    "Linked List",
+    "String",
+    "Stack",
+    "Design",
+    "Simulation",
+    "Doubly-Linked List"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "TextBench",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "addText",
+        "parameters": [
+          {
+            "name": "text",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "deleteText",
+        "parameters": [
+          {
+            "name": "k",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "cursorLeft",
+        "parameters": [
+          {
+            "name": "k",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "cursorRight",
+        "parameters": [
+          {
+            "name": "k",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

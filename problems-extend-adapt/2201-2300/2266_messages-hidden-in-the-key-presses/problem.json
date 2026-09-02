@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2266,
+  "slug": "messages-hidden-in-the-key-presses",
+  "title": "Messages Hidden in the Key Presses",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countPossibleMessages",
+    "parameters": [
+      {
+        "name": "pressedKeys",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "countPossibleMessages",
+      "rust": "count_possible_messages",
+      "typescript": "countPossibleMessages"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

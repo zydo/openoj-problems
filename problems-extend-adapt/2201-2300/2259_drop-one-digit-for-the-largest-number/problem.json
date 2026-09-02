@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2259,
+  "slug": "drop-one-digit-for-the-largest-number",
+  "title": "Drop One Digit for the Largest Number",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Greedy",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "largestAfterDrop",
+    "parameters": [
+      {
+        "name": "number",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "digit",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "largestAfterDrop",
+      "rust": "largest_after_drop",
+      "typescript": "largestAfterDrop"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

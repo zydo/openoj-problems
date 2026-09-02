@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2268,
+  "slug": "minimum-keypad-presses",
+  "title": "Minimum Keypad Presses",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "leastKeypresses",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "leastKeypresses",
+      "rust": "least_keypresses",
+      "typescript": "leastKeypresses"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

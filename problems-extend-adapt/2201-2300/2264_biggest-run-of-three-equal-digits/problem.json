@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2264,
+  "slug": "biggest-run-of-three-equal-digits",
+  "title": "Biggest Run of Three Equal Digits",
+  "difficulty": "H2",
+  "tags": [
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "largestTripletRun",
+    "parameters": [
+      {
+        "name": "num",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "largestTripletRun",
+      "rust": "largest_triplet_run",
+      "typescript": "largestTripletRun"
+    }
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,3 @@
+function brightEnoughSpots(n: number, lights: number[][], requirement: number[]): number {
+    throw new Error("TODO");
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2253,
+  "slug": "flattening-the-price-grid-into-rows",
+  "title": "Flattening the Price Grid Into Rows",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "",
+      "headers": true,
+      "dynamic_columns": true
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
