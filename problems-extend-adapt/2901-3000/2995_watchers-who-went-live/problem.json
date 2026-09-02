@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2995,
+  "slug": "watchers-who-went-live",
+  "title": "Watchers Who Went Live",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE StreamLog (member_id INTEGER, started_at DATETIME, ended_at DATETIME, log_id INTEGER, session_kind VARCHAR, PRIMARY KEY (log_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

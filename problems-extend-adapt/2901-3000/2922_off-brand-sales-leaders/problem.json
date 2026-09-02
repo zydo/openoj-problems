@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2922,
+  "slug": "off-brand-sales-leaders",
+  "title": "Off-Brand Sales Leaders",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Sellers (seller_id INTEGER PRIMARY KEY, joined_on DATE, preferred_brand VARCHAR); CREATE TABLE Listings (listing_id INTEGER PRIMARY KEY, listing_brand VARCHAR); CREATE TABLE Sales (sale_id INTEGER PRIMARY KEY, sale_date DATE, listing_id INTEGER, seller_id INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

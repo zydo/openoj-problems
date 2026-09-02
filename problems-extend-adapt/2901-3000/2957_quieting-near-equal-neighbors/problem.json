@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2957,
+  "slug": "quieting-near-equal-neighbors",
+  "title": "Quieting Near-Equal Neighbors",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "quietNearEqualNeighbors",
+    "parameters": [
+      {
+        "name": "word",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "quietNearEqualNeighbors",
+      "rust": "quiet_near_equal_neighbors",
+      "typescript": "quietNearEqualNeighbors"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

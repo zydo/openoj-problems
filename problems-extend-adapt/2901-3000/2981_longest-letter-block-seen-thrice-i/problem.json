@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2981,
+  "slug": "longest-letter-block-seen-thrice-i",
+  "title": "Longest Letter Block Seen Thrice I",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestBlockSeenThrice",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestBlockSeenThrice",
+      "rust": "longest_block_seen_thrice",
+      "typescript": "longestBlockSeenThrice"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

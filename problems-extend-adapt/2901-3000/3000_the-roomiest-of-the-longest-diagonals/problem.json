@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3000,
+  "slug": "the-roomiest-of-the-longest-diagonals",
+  "title": "The Roomiest Of The Longest Diagonals",
+  "difficulty": "H2",
+  "tags": [
+    "Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "areaOfLongestReach",
+    "parameters": [
+      {
+        "name": "dimensions",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "areaOfLongestReach",
+      "rust": "area_of_longest_reach",
+      "typescript": "areaOfLongestReach"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

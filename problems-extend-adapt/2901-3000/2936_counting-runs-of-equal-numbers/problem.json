@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2936,
+  "slug": "counting-runs-of-equal-numbers",
+  "title": "Counting Runs of Equal Numbers",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Interactive"
+  ],
+  "invocation": {
+    "type": "interactive",
+    "class_name": "Solution",
+    "method": "countBlocks",
+    "oracle": "VastArray",
+    "oracle_methods": [
+      {
+        "name": "at",
+        "parameters": [
+          {
+            "name": "index",
+            "codec": "json",
+            "value_type": {
+              "kind": "integer",
+              "bits": 64
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "size",
+        "parameters": [],
+        "return_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      }
+    ],
+    "parameters": [],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "query_limit": 500000000,
+    "comparison": "exact",
+    "provided": {
+      "oracle": {
+        "class": "VastArray",
+        "construct": [
+          "blocks"
+        ],
+        "auxiliary": [],
+        "parameter": "vastArray"
+      }
+    },
+    "entrypoints": {
+      "go": "countBlocks",
+      "rust": "count_blocks",
+      "cpp": "countBlocks",
+      "javascript": "countBlocks",
+      "typescript": "countBlocks"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
