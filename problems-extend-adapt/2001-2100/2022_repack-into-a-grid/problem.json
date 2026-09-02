@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2022,
+  "slug": "repack-into-a-grid",
+  "title": "Repack into a Grid",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "repackIntoGrid",
+    "parameters": [
+      {
+        "name": "original",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "m",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "repackIntoGrid",
+      "rust": "repack_into_grid",
+      "typescript": "repackIntoGrid"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

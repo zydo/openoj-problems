@@ -1,0 +1,10 @@
+class Rover {
+
+    public Rover(int width, int height) {}
+
+    public void step(int num) {}
+
+    public int[] getPos() {}
+
+    public String getDir() {}
+}

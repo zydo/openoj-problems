@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2038,
+  "slug": "picking-off-middle-pieces",
+  "title": "Picking Off Middle Pieces",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Greedy",
+    "Game Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "middlePieceWinner",
+    "parameters": [
+      {
+        "name": "colors",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "middlePieceWinner",
+      "rust": "middle_piece_winner",
+      "typescript": "middlePieceWinner"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

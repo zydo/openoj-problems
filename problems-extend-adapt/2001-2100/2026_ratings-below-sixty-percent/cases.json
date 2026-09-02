@@ -1,0 +1,181 @@
+{
+  "public": [
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(5,311,189),\n(9,479,723),\n(2,55,45),\n(7,761,241),\n(12,29,71);"
+      ],
+      "expected": [
+        [
+          2
+        ],
+        [
+          9
+        ],
+        [
+          12
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(3,3,2),\n(6,1,3),\n(8,2,0);"
+      ],
+      "expected": [
+        [
+          6
+        ]
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(1,2,2);"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(1,3,2);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(1,4,2);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(1,0,5);"
+      ],
+      "expected": [
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(1,5,0);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(10,1,9),\n(2,9,1),\n(7,3,2),\n(1,5,5);"
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          10
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(41,599,401);"
+      ],
+      "expected": [
+        [
+          41
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(42,600,400);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(43,601,399);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(99,300000,200000),\n(98,299999,200001),\n(97,300001,199999);"
+      ],
+      "expected": [
+        [
+          98
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(8,1,1),\n(3,2,8),\n(20,7,3),\n(15,59,41),\n(1,60,40);"
+      ],
+      "expected": [
+        [
+          3
+        ],
+        [
+          8
+        ],
+        [
+          15
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles SELECT NULL, NULL, NULL WHERE 0;"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(9,0,1),\n(4,1,2),\n(12,2,3),\n(2,59,41);"
+      ],
+      "expected": [
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          9
+        ],
+        [
+          12
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(9,1,0),\n(4,2,1),\n(12,3,2),\n(2,60,40);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO Puzzles VALUES\n(30,119999,80001),\n(3,120000,80000),\n(21,120001,79999),\n(14,6,5),\n(7,5,4),\n(1,8,7);"
+      ],
+      "expected": [
+        [
+          1
+        ],
+        [
+          7
+        ],
+        [
+          14
+        ],
+        [
+          30
+        ]
+      ]
+    }
+  ]
+}

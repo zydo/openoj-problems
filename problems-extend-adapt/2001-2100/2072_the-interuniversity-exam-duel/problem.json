@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2072,
+  "slug": "the-interuniversity-exam-duel",
+  "title": "The Interuniversity Exam Duel",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE NewYorkEntrants (entrant_id INTEGER PRIMARY KEY, points INTEGER); CREATE TABLE CaliforniaEntrants (entrant_id INTEGER PRIMARY KEY, points INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

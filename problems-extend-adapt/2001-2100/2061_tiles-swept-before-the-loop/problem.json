@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2061,
+  "slug": "tiles-swept-before-the-loop",
+  "title": "Tiles Swept Before the Loop",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "sweptTileCount",
+    "parameters": [
+      {
+        "name": "room",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "sweptTileCount",
+      "rust": "swept_tile_count",
+      "typescript": "sweptTileCount"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

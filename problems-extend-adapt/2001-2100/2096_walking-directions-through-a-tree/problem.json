@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2096,
+  "slug": "walking-directions-through-a-tree",
+  "title": "Walking Directions Through a Tree",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Lowest Common Ancestor"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "treeDirections",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "startValue",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "destValue",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "treeDirections",
+      "rust": "tree_directions",
+      "typescript": "treeDirections"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

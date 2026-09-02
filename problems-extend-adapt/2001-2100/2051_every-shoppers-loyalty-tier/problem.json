@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2051,
+  "slug": "every-shoppers-loyalty-tier",
+  "title": "Every Shopper's Loyalty Tier",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Shoppers (shopper_id INTEGER, shopper_name VARCHAR);\nCREATE TABLE Trips (trip_id INTEGER, shopper_id INTEGER, trip_date DATE);\nCREATE TABLE Orders (trip_id INTEGER, order_total INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

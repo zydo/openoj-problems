@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2075,
+  "slug": "unscramble-the-diagonal-cipher",
+  "title": "Unscramble the Diagonal Cipher",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "undoDiagonalCipher",
+    "parameters": [
+      {
+        "name": "encodedText",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "rows",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "undoDiagonalCipher",
+      "rust": "undo_diagonal_cipher",
+      "typescript": "undoDiagonalCipher"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2013,
+  "slug": "counting-corner-squares",
+  "title": "Counting Corner Squares",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "SquareCounter",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "add",
+        "parameters": [
+          {
+            "name": "point",
+            "codec": "json",
+            "value_type": {
+              "kind": "array",
+              "items": {
+                "kind": "integer",
+                "bits": 32
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "count",
+        "parameters": [
+          {
+            "name": "point",
+            "codec": "json",
+            "value_type": {
+              "kind": "array",
+              "items": {
+                "kind": "integer",
+                "bits": 32
+              }
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

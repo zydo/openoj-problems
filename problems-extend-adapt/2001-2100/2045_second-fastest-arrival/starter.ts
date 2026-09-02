@@ -1,0 +1,3 @@
+function secondFastestArrival(n: number, edges: number[][], time: number, change: number): number {
+    throw new Error("TODO");
+}
