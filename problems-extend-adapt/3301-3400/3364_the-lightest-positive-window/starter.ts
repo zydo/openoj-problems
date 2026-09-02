@@ -1,0 +1,3 @@
+function lightestPositiveWindow(nums: number[], l: number, r: number): number {
+    throw new Error("TODO");
+}

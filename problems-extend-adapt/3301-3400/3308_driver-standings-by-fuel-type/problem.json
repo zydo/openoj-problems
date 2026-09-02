@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3308,
+  "slug": "driver-standings-by-fuel-type",
+  "title": "Driver Standings By Fuel Type",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Captains (captain_id INTEGER, captain_name TEXT, age INTEGER, experience INTEGER, incidents INTEGER);\nCREATE TABLE Fleet (car_id INTEGER, captain_id INTEGER, model TEXT, engine_type TEXT, mileage INTEGER);\nCREATE TABLE Rides (ride_id INTEGER, car_id INTEGER, miles INTEGER, minutes INTEGER, stars INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

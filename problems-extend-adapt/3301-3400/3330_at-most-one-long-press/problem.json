@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3330,
+  "slug": "at-most-one-long-press",
+  "title": "At Most One Long Press",
+  "difficulty": "H2",
+  "tags": [
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countIntendedStrings",
+    "parameters": [
+      {
+        "name": "word",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countIntendedStrings",
+      "rust": "count_intended_strings",
+      "typescript": "countIntendedStrings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

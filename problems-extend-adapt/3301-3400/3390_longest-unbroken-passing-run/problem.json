@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3390,
+  "slug": "longest-unbroken-passing-run",
+  "title": "Longest Unbroken Passing Run",
+  "difficulty": "H4",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE roster (player_id INTEGER PRIMARY KEY, club VARCHAR); CREATE TABLE pass_log (from_player INTEGER, clock VARCHAR, to_player INTEGER, UNIQUE (from_player, clock));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

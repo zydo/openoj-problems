@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3377,
+  "slug": "the-prime-free-digit-walk",
+  "title": "The Prime-Free Digit Walk",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Graph Theory",
+    "Number Theory",
+    "Shortest Path"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "primeFreeWalkCost",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "m",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "primeFreeWalkCost",
+      "rust": "prime_free_walk_cost",
+      "typescript": "primeFreeWalkCost"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

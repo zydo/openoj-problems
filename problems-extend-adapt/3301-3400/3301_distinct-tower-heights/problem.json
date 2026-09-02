@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3301,
+  "slug": "distinct-tower-heights",
+  "title": "Distinct Tower Heights",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxDistinctHeightSum",
+    "parameters": [
+      {
+        "name": "maximumHeight",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "maxDistinctHeightSum",
+      "rust": "max_distinct_height_sum",
+      "typescript": "maxDistinctHeightSum"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
