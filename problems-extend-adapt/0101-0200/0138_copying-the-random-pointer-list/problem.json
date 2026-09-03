@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 138,
+  "slug": "copying-the-random-pointer-list",
+  "title": "Copying The Random-Pointer List",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "deepCopyRandomList",
+    "parameters": [
+      {
+        "name": "head",
+        "codec": "random_list",
+        "value_type": {
+          "kind": "random_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          },
+          "class": "RandomListNode"
+        }
+      }
+    ],
+    "return_codec": "random_list",
+    "return_type": {
+      "kind": "random_list",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      },
+      "class": "RandomListNode"
+    },
+    "comparison": "exact",
+    "entrypoints": {
+      "go": "deepCopyRandomList",
+      "rust": "deep_copy_random_list",
+      "typescript": "deepCopyRandomList"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

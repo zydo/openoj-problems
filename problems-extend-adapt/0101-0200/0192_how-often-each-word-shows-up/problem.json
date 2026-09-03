@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 192,
+  "slug": "how-often-each-word-shows-up",
+  "title": "How Often Each Word Shows Up",
+  "difficulty": "H3",
+  "tags": [
+    "Shell"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countEachWord",
+    "parameters": [
+      {
+        "name": "content",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "countEachWord",
+      "rust": "count_each_word",
+      "typescript": "countEachWord"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

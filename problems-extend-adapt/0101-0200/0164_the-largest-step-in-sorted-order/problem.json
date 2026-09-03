@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 164,
+  "slug": "the-largest-step-in-sorted-order",
+  "title": "The Largest Step In Sorted Order",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Sorting",
+    "Bucket Sort"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "largestSortedStep",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "largestSortedStep",
+      "rust": "largest_sorted_step",
+      "typescript": "largestSortedStep"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

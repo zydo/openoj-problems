@@ -1,0 +1,202 @@
+{
+  "public": [
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'team score'),\n(2,'hawks 21'),\n(3,'owls 30'),\n(4,'finches 27');"
+      ],
+      "expected": [
+        [
+          "team hawks owls finches"
+        ],
+        [
+          "score 21 30 27"
+        ]
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'a b c d');"
+      ],
+      "expected": [
+        [
+          "a"
+        ],
+        [
+          "b"
+        ],
+        [
+          "c"
+        ],
+        [
+          "d"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'a'),\n(2,'b'),\n(3,'c');"
+      ],
+      "expected": [
+        [
+          "a b c"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'solo');"
+      ],
+      "expected": [
+        [
+          "solo"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'x y z'),\n(2,'y z x'),\n(3,'z x y');"
+      ],
+      "expected": [
+        [
+          "x y z"
+        ],
+        [
+          "y z x"
+        ],
+        [
+          "z x y"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'a a'),\n(2,'a a');"
+      ],
+      "expected": [
+        [
+          "a a"
+        ],
+        [
+          "a a"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'1 2 3 4'),\n(2,'5 6 7 8');"
+      ],
+      "expected": [
+        [
+          "1 5"
+        ],
+        [
+          "2 6"
+        ],
+        [
+          "3 7"
+        ],
+        [
+          "4 8"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'name age'),\n(2,'alice 21'),\n(3,'ryan 30'),\n(4,'bob 41');"
+      ],
+      "expected": [
+        [
+          "name alice ryan bob"
+        ],
+        [
+          "age 21 30 41"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'a1 b1 c1 d1 e1'),\n(2,'a2 b2 c2 d2 e2'),\n(3,'a3 b3 c3 d3 e3'),\n(4,'a4 b4 c4 d4 e4'),\n(5,'a5 b5 c5 d5 e5');"
+      ],
+      "expected": [
+        [
+          "a1 a2 a3 a4 a5"
+        ],
+        [
+          "b1 b2 b3 b4 b5"
+        ],
+        [
+          "c1 c2 c3 c4 c5"
+        ],
+        [
+          "d1 d2 d3 d4 d5"
+        ],
+        [
+          "e1 e2 e3 e4 e5"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'10 20 30'),\n(2,'40 50 60'),\n(3,'70 80 90');"
+      ],
+      "expected": [
+        [
+          "10 40 70"
+        ],
+        [
+          "20 50 80"
+        ],
+        [
+          "30 60 90"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'id 7 x'),\n(2,'42 y 0'),\n(3,'z 9 w');"
+      ],
+      "expected": [
+        [
+          "id 42 z"
+        ],
+        [
+          "7 y 9"
+        ],
+        [
+          "x 0 w"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'ab cd'),\n(2,'e f');"
+      ],
+      "expected": [
+        [
+          "ab e"
+        ],
+        [
+          "cd f"
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO Document VALUES\n(1,'r1'),\n(2,'r2'),\n(3,'r3'),\n(4,'r4'),\n(5,'r5'),\n(6,'r6');"
+      ],
+      "expected": [
+        [
+          "r1 r2 r3 r4 r5 r6"
+        ]
+      ]
+    },
+    {
+      "input": [
+        ""
+      ],
+      "expected": []
+    }
+  ]
+}

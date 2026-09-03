@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 133,
+  "slug": "deep-copy-of-a-graph",
+  "title": "Deep Copy Of A Graph",
+  "difficulty": "H3",
+  "tags": [
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "deepCopyGraph",
+    "parameters": [
+      {
+        "name": "node",
+        "codec": "graph",
+        "value_type": {
+          "kind": "graph",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          },
+          "class": "GraphNode"
+        }
+      }
+    ],
+    "return_codec": "graph",
+    "return_type": {
+      "kind": "graph",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      },
+      "class": "GraphNode"
+    },
+    "comparison": "exact",
+    "entrypoints": {
+      "go": "deepCopyGraph",
+      "rust": "deep_copy_graph",
+      "typescript": "deepCopyGraph"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

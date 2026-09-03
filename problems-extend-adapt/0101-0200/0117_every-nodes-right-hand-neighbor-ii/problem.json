@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 117,
+  "slug": "every-nodes-right-hand-neighbor-ii",
+  "title": "Every Node's Right-Hand Neighbor II",
+  "difficulty": "H3",
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "linkRightNeighbor",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "next_tree",
+        "value_type": {
+          "kind": "next_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "next_tree",
+    "return_type": {
+      "kind": "next_tree",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "comparison": "exact",
+    "entrypoints": {
+      "go": "linkRightNeighbor",
+      "rust": "link_right_neighbor",
+      "typescript": "linkRightNeighbor"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
