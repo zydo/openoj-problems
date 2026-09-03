@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3828,
+  "slug": "the-endpoint-alice-spares",
+  "title": "The Endpoint Alice Spares",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Game Theory",
+    "Math"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "survivingEndpoint",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "survivingEndpoint",
+      "rust": "surviving_endpoint",
+      "typescript": "survivingEndpoint"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

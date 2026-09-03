@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3876,
+  "slug": "rebuilding-to-one-parity-ii",
+  "title": "Rebuilding to One Parity II",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "oneParityRebuild",
+    "parameters": [
+      {
+        "name": "nums1",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "oneParityRebuild",
+      "rust": "one_parity_rebuild",
+      "typescript": "oneParityRebuild"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3861,
+  "slug": "smallest-bin-that-fits",
+  "title": "The Smallest Bin That Fits",
+  "difficulty": "H2",
+  "tags": [
+    "Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestFittingBin",
+    "parameters": [
+      {
+        "name": "capacity",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "itemSize",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "smallestFittingBin",
+      "rust": "smallest_fitting_bin",
+      "typescript": "smallestFittingBin"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,3 @@
+func nthWithKSetBits(n int64, k int) int64 {
+	panic("TODO")
+}

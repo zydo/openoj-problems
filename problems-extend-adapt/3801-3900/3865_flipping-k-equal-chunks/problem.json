@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3865,
+  "slug": "flipping-k-equal-chunks",
+  "title": "Flipping k Equal Chunks",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "flipEqualChunks",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "flipEqualChunks",
+      "rust": "flip_equal_chunks",
+      "typescript": "flipEqualChunks"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

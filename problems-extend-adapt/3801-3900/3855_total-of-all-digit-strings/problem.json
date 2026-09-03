@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3855,
+  "slug": "total-of-all-digit-strings",
+  "title": "Total of All Digit Strings",
+  "difficulty": "H4",
+  "tags": [
+    "Math",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "totalDigitStrings",
+    "parameters": [
+      {
+        "name": "l",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "r",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "totalDigitStrings",
+      "rust": "total_digit_strings",
+      "typescript": "totalDigitStrings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

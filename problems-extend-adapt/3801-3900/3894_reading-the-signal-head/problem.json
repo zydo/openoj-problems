@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3894,
+  "slug": "reading-the-signal-head",
+  "title": "Reading The Signal Head",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "signalState",
+    "parameters": [
+      {
+        "name": "timer",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "signalState",
+      "rust": "signal_state",
+      "typescript": "signalState"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

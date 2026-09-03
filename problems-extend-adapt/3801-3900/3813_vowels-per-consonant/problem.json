@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3813,
+  "slug": "vowels-per-consonant",
+  "title": "Vowels Per Consonant",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "Simulation"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "vowelsPerConsonant",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "vowelsPerConsonant",
+      "rust": "vowels_per_consonant",
+      "typescript": "vowelsPerConsonant"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

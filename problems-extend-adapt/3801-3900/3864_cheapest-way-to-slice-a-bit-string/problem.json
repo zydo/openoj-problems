@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3864,
+  "slug": "cheapest-way-to-slice-a-bit-string",
+  "title": "The Cheapest Way To Slice A Bit String",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Divide and Conquer",
+    "Prefix Sum"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cheapestSliceCost",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "encCost",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "flatCost",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "cheapestSliceCost",
+      "rust": "cheapest_slice_cost",
+      "typescript": "cheapestSliceCost"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3817,
+  "slug": "positions-that-spell-their-index",
+  "title": "Positions That Spell Their Index",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "selfSpelledIndices",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "selfSpelledIndices",
+      "rust": "self_spelled_indices",
+      "typescript": "selfSpelledIndices"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 256
+  }
+}

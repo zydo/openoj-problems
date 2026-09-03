@@ -1,0 +1,3 @@
+function rearrangeablePath(n: number, edges: number[][], s: string, queries: string[]): boolean[] {
+    throw new Error("TODO");
+}

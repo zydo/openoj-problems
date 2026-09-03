@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3899,
+  "slug": "measuring-a-triangles-corners",
+  "title": "Measuring A Triangle's Corners",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "anglesFromSides",
+    "parameters": [
+      {
+        "name": "sides",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "number"
+      }
+    },
+    "entrypoints": {
+      "go": "anglesFromSides",
+      "rust": "angles_from_sides",
+      "typescript": "anglesFromSides"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

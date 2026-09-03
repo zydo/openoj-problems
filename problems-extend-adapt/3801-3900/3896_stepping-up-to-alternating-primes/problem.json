@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3896,
+  "slug": "stepping-up-to-alternating-primes",
+  "title": "Stepping Up To Alternating Primes",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minStepsToAlternate",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "minStepsToAlternate",
+      "rust": "min_steps_to_alternate",
+      "typescript": "minStepsToAlternate"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

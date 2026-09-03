@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3844,
+  "slug": "longest-substring-one-deletion-from-a-palindrome",
+  "title": "The Longest Substring One Deletion From a Palindrome",
+  "difficulty": "H3",
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "longestOneAwayPalindrome",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "longestOneAwayPalindrome",
+      "rust": "longest_one_away_palindrome",
+      "typescript": "longestOneAwayPalindrome"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

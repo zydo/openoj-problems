@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3835,
+  "slug": "tallying-subarrays-priced-within-budget",
+  "title": "Tallying Subarrays Priced Within Budget",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Queue",
+    "Monotonic Queue"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "affordableWindows",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 64
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "affordableWindows",
+      "rust": "affordable_windows",
+      "typescript": "affordableWindows"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

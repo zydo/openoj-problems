@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3856,
+  "slug": "drop-the-vowel-tail",
+  "title": "Drop the Vowel Tail",
+  "difficulty": "H2",
+  "tags": [
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "dropVowelTail",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "dropVowelTail",
+      "rust": "drop_vowel_tail",
+      "typescript": "dropVowelTail"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
