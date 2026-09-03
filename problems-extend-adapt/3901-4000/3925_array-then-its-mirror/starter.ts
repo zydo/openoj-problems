@@ -1,0 +1,3 @@
+function arrayWithMirror(nums: number[]): number[] {
+    throw new Error("TODO");
+}

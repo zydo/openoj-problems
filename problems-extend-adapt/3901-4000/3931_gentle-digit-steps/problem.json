@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3931,
+  "slug": "gentle-digit-steps",
+  "title": "Gentle Digit Steps",
+  "difficulty": "H2",
+  "tags": [
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "gentleDigitSteps",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "gentleDigitSteps",
+      "rust": "gentle_digit_steps",
+      "typescript": "gentleDigitSteps"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3962,
+  "slug": "richest-window-after-k-trades",
+  "title": "Richest Window After K Trades",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Greedy",
+    "Ordered Set",
+    "Sliding Window"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "richestWindowSum",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "richestWindowSum",
+      "rust": "richest_window_sum",
+      "typescript": "richestWindowSum"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

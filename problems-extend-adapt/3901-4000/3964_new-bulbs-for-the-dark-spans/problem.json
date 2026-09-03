@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3964,
+  "slug": "new-bulbs-for-the-dark-spans",
+  "title": "New Bulbs For The Dark Spans",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Greedy",
+    "Difference Array"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minNewBulbs",
+    "parameters": [
+      {
+        "name": "lights",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "minNewBulbs",
+      "rust": "min_new_bulbs",
+      "typescript": "minNewBulbs"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

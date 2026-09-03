@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3955,
+  "slug": "lonely-ones-under-a-budget",
+  "title": "Lonely Ones Under A Budget",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stringsOfBudgetedOnes",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "stringsOfBudgetedOnes",
+      "rust": "strings_of_budgeted_ones",
+      "typescript": "stringsOfBudgetedOnes"
+    },
+    "comparison": "set"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

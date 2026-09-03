@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3999,
+  "slug": "word-groups-by-even-odd-rotation",
+  "title": "Word Groups By Even-Odd Rotation",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "evenOddRotationGroups",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "evenOddRotationGroups",
+      "rust": "even_odd_rotation_groups",
+      "typescript": "evenOddRotationGroups"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

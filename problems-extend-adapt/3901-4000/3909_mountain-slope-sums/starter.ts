@@ -1,0 +1,3 @@
+function compareSlopeSums(nums: number[]): number {
+    throw new Error("TODO");
+}

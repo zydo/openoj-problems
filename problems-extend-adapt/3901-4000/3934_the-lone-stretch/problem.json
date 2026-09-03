@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3934,
+  "slug": "the-lone-stretch",
+  "title": "The Lone Stretch",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Rolling Hash"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "shortestLoneStretch",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "shortestLoneStretch",
+      "rust": "shortest_lone_stretch",
+      "typescript": "shortestLoneStretch"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 5000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

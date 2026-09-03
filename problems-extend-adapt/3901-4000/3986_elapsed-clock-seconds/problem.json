@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3986,
+  "slug": "elapsed-clock-seconds",
+  "title": "Elapsed Clock Seconds",
+  "difficulty": "H2",
+  "tags": [
+    "Math",
+    "String"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "elapsedClockSeconds",
+    "parameters": [
+      {
+        "name": "startTime",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "endTime",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "elapsedClockSeconds",
+      "rust": "elapsed_clock_seconds",
+      "typescript": "elapsedClockSeconds"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
