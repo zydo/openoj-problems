@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3722,
+  "slug": "the-smallest-string-one-reversal-can-make",
+  "title": "The Smallest String One Reversal Can Make",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestAfterOneReversal",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "smallestAfterOneReversal",
+      "rust": "smallest_after_one_reversal",
+      "typescript": "smallestAfterOneReversal"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "reference_solution": "quickselect_threshold",
+  "id": 3759,
+  "slug": "beaten-by-at-least-k-others",
+  "title": "Beaten By At Least K Others",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Quickselect"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countBeatenElements",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "k",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countBeatenElements",
+      "rust": "count_beaten_elements",
+      "typescript": "countBeatenElements"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "trie",
+  "id": 3758,
+  "slug": "reading-digit-words-from-a-letter-stream",
+  "title": "Reading Digit Words From A Letter Stream",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Trie"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "readDigitWords",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "readDigitWords",
+      "rust": "read_digit_words",
+      "typescript": "readDigitWords"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

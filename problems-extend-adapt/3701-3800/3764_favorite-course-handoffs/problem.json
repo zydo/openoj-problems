@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "reference_solution": "bounded_sweep",
+  "id": 3764,
+  "slug": "favorite-course-handoffs",
+  "title": "Favorite Course Handoffs",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "topCourseHandoff",
+    "parameters": [
+      {
+        "name": "completions",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "string"
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "topCourseHandoff",
+      "rust": "top_course_handoff",
+      "typescript": "topCourseHandoff"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3732,
+  "slug": "one-rewrite-then-the-best-triple",
+  "title": "One Rewrite, Then The Best Triple",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "topTripleAfterRewrite",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "topTripleAfterRewrite",
+      "rust": "top_triple_after_rewrite",
+      "typescript": "topTripleAfterRewrite"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
