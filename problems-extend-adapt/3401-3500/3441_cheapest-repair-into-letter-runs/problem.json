@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3441,
+  "slug": "cheapest-repair-into-letter-runs",
+  "title": "Cheapest Repair Into Letter Runs",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "cheapestRunRepair",
+    "parameters": [
+      {
+        "name": "caption",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "cheapestRunRepair",
+      "rust": "cheapest_run_repair",
+      "typescript": "cheapestRunRepair"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3491,
+  "slug": "a-prefix-free-call-list",
+  "title": "A Prefix-Free Call List",
+  "difficulty": "H2",
+  "tags": [
+    "Array",
+    "String",
+    "Trie",
+    "Sorting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "noPrefixClash",
+    "parameters": [
+      {
+        "name": "numbers",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "boolean"
+    },
+    "entrypoints": {
+      "go": "noPrefixClash",
+      "rust": "no_prefix_clash",
+      "typescript": "noPrefixClash"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

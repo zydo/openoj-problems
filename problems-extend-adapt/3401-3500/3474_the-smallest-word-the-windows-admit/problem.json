@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3474,
+  "slug": "the-smallest-word-the-windows-admit",
+  "title": "The Smallest Word The Windows Admit",
+  "difficulty": "H4",
+  "tags": [
+    "String",
+    "Greedy",
+    "String Matching"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestAdmittedWord",
+    "parameters": [
+      {
+        "name": "str1",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "str2",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "smallestAdmittedWord",
+      "rust": "smallest_admitted_word",
+      "typescript": "smallestAdmittedWord"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

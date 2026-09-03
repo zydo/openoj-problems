@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3442,
+  "slug": "widest-gap-between-odd-and-even-counts",
+  "title": "Widest Gap Between Odd And Even Counts",
+  "difficulty": "H2",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "widestParityGap",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "widestParityGap",
+      "rust": "widest_parity_gap",
+      "typescript": "widestParityGap"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
