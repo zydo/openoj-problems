@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 28,
+  "slug": "where-the-needle-first-sits",
+  "title": "Where the Needle First Sits",
+  "difficulty": "H2",
+  "tags": [
+    "String",
+    "String Matching",
+    "Knuth–Morris–Pratt Algorithm"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "earliestMatch",
+    "parameters": [
+      {
+        "name": "haystack",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "needle",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "earliestMatch",
+      "rust": "earliest_match",
+      "typescript": "earliestMatch"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

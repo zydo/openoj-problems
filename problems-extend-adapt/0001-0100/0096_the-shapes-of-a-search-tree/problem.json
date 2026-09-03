@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 96,
+  "slug": "the-shapes-of-a-search-tree",
+  "title": "The Shapes Of A Search Tree",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Binary Search Tree"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countShapes",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countShapes",
+      "rust": "count_shapes",
+      "typescript": "countShapes"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

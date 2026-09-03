@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 17,
+  "slug": "keypad-letter-spells",
+  "title": "Keypad Letter Spells",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "keypadSpells",
+    "parameters": [
+      {
+        "name": "digits",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "string"
+      }
+    },
+    "entrypoints": {
+      "go": "keypadSpells",
+      "rust": "keypad_spells",
+      "typescript": "keypadSpells"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
