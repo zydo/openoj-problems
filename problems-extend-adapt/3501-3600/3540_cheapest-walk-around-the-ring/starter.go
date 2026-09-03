@@ -1,0 +1,3 @@
+func ringWalkTime(forward []int, backward []int, queries []int) int64 {
+	panic("TODO")
+}

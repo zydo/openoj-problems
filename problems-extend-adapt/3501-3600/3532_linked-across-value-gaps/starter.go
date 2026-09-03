@@ -1,0 +1,3 @@
+func reachablePairs(n int, nums []int, maxDiff int, queries [][]int) []bool {
+	panic("TODO")
+}

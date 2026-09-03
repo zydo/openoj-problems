@@ -1,0 +1,3 @@
+func quickestDrive(l int, n int, k int, position []int, time []int) int {
+	panic("TODO")
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3577,
+  "slug": "counting-valid-unlock-orders",
+  "title": "Counting Valid Unlock Orders",
+  "difficulty": "H3",
+  "tags": [
+    "Array",
+    "Math",
+    "Combinatorics"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "countUnlockOrders",
+    "parameters": [
+      {
+        "name": "complexity",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "countUnlockOrders",
+      "rust": "count_unlock_orders",
+      "typescript": "countUnlockOrders"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

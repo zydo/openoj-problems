@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3570,
+  "slug": "every-copy-checked-out",
+  "title": "Every Copy Checked Out",
+  "difficulty": "H2",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE book_shelf (volume_id INTEGER, title TEXT, author TEXT, genre TEXT, published_in INTEGER, copies_owned INTEGER);\nCREATE TABLE checkouts (checkout_id INTEGER, volume_id INTEGER, reader_name TEXT, taken_on DATE, brought_back DATE);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}
