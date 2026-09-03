@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3626,
+  "slug": "nurseries-with-lopsided-stock",
+  "title": "Nurseries With Lopsided Stock",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE nurseries (nursery_id INTEGER, nursery_name TEXT, city TEXT);\nCREATE TABLE stock (stock_id INTEGER, nursery_id INTEGER, plant_name TEXT, quantity INTEGER, price REAL);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

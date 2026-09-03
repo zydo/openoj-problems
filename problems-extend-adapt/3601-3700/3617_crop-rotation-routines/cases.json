@@ -1,0 +1,246 @@
+{
+  "public": [
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(3,'Hana Ito','Riverbend'),\n(4,'Marco Diaz','Stonebridge'),\n(5,'Nell Okafor','Riverbend'),\n(6,'Pavel Novak','Hillcrest');\nINSERT INTO plantings VALUES\n(501,3,'Kale','2024-10-01',2.5),\n(502,3,'Beans','2024-10-02',3.0),\n(503,3,'Corn','2024-10-03',2.0),\n(504,3,'Kale','2024-10-04',2.5),\n(505,3,'Beans','2024-10-05',3.0),\n(506,3,'Corn','2024-10-06',2.0),\n(507,4,'Wheat','2024-10-01',5.0),\n(508,4,'Beets','2024-10-02',2.5),\n(509,4,'Garlic','2024-10-03',3.0),\n(510,4,'Lentils','2024-10-04',2.0),\n(511,4,'Wheat','2024-10-05',5.0),\n(512,4,'Beets','2024-10-06',2.5),\n(513,4,'Garlic','2024-10-07',3.0),\n(514,4,'Lentils','2024-10-08',2.0),\n(515,5,'Squash','2024-10-01',2.0),\n(516,5,'Okra','2024-10-02',2.5),\n(517,5,'Squash','2024-10-03',2.0),\n(518,5,'Okra','2024-10-04',2.5),\n(519,6,'Barley','2024-10-01',3.0),\n(520,6,'Oats','2024-10-05',2.5);"
+      ],
+      "expected": [
+        [
+          4,
+          "Marco Diaz",
+          "Stonebridge",
+          4,
+          25.0
+        ],
+        [
+          3,
+          "Hana Ito",
+          "Riverbend",
+          3,
+          15.0
+        ]
+      ]
+    }
+  ],
+  "hidden": [
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Ana Cruz','Biology');\nINSERT INTO plantings VALUES\n(1,1,'Botany','2024-01-01',1.5),\n(2,1,'Zoology','2024-01-02',2.0),\n(3,1,'Ecology','2024-01-03',1.0),\n(4,1,'Botany','2024-01-04',1.5),\n(5,1,'Zoology','2024-01-05',2.0),\n(6,1,'Ecology','2024-01-06',1.0);"
+      ],
+      "expected": [
+        [
+          1,
+          "Ana Cruz",
+          "Biology",
+          3,
+          9.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Ben Kwan','Physics');\nINSERT INTO plantings VALUES\n(1,1,'Mechanics','2024-02-01',2.0),\n(2,1,'Waves','2024-02-03',2.0),\n(3,1,'Thermo','2024-02-05',2.0),\n(4,1,'Mechanics','2024-02-07',2.0),\n(5,1,'Waves','2024-02-09',2.0),\n(6,1,'Thermo','2024-02-11',2.0);"
+      ],
+      "expected": [
+        [
+          1,
+          "Ben Kwan",
+          "Physics",
+          3,
+          12.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Cara Diaz','Chemistry');\nINSERT INTO plantings VALUES\n(1,1,'Organic','2024-03-01',1.0),\n(2,1,'Inorganic','2024-03-02',1.0),\n(3,1,'Analytical','2024-03-03',1.0),\n(4,1,'Organic','2024-03-04',1.0),\n(5,1,'Inorganic','2024-03-05',1.0),\n(6,1,'Analytical','2024-03-06',1.0),\n(7,1,'Organic','2024-03-09',1.0),\n(8,1,'Inorganic','2024-03-10',1.0),\n(9,1,'Organic','2024-03-11',1.0),\n(10,1,'Inorganic','2024-03-12',1.0);"
+      ],
+      "expected": [
+        [
+          1,
+          "Cara Diaz",
+          "Chemistry",
+          3,
+          6.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Dan Okafor','Economics');\nINSERT INTO plantings VALUES\n(1,1,'Micro','2024-04-01',2.0),\n(2,1,'Macro','2024-04-02',2.0),\n(3,1,'Stats','2024-04-03',2.0),\n(4,1,'Micro','2024-04-04',2.0),\n(5,1,'Macro','2024-04-05',2.0),\n(6,1,'Stats','2024-04-06',2.0),\n(7,1,'Micro','2024-04-11',2.5),\n(8,1,'Macro','2024-04-12',2.5),\n(9,1,'Stats','2024-04-13',2.5),\n(10,1,'Econometrics','2024-04-14',2.5),\n(11,1,'Micro','2024-04-15',2.5),\n(12,1,'Macro','2024-04-16',2.5),\n(13,1,'Stats','2024-04-17',2.5),\n(14,1,'Econometrics','2024-04-18',2.5);"
+      ],
+      "expected": [
+        [
+          1,
+          "Dan Okafor",
+          "Economics",
+          4,
+          20.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Eli Frost','History');\nINSERT INTO plantings VALUES\n(1,1,'Ancient','2024-05-01',1.0),\n(2,1,'Medieval','2024-05-02',2.0),\n(3,1,'Modern','2024-05-03',3.0),\n(4,1,'Ancient','2024-05-04',1.0),\n(5,1,'Medieval','2024-05-05',2.0),\n(6,1,'Modern','2024-05-06',3.0),\n(7,1,'Ancient','2024-05-20',2.0),\n(8,1,'Medieval','2024-05-21',2.0),\n(9,1,'Modern','2024-05-22',2.0),\n(10,1,'Ancient','2024-05-23',2.0),\n(11,1,'Medieval','2024-05-24',2.0),\n(12,1,'Modern','2024-05-25',2.0);"
+      ],
+      "expected": [
+        [
+          1,
+          "Eli Frost",
+          "History",
+          3,
+          12.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Fay Gill','Music');\nINSERT INTO plantings VALUES\n(1,1,'Piano','2024-06-01',1.0),\n(2,1,'Violin','2024-06-02',1.0),\n(3,1,'Piano','2024-06-03',1.0),\n(4,1,'Violin','2024-06-04',1.0),\n(5,1,'Piano','2024-06-05',1.0),\n(6,1,'Violin','2024-06-06',1.0);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Gus Hale','Art');\nINSERT INTO plantings VALUES\n(1,1,'Painting','2024-07-01',1.0),\n(2,1,'Sculpture','2024-07-02',1.0),\n(3,1,'Drawing','2024-07-03',1.0),\n(4,1,'Painting','2024-07-04',1.0),\n(5,1,'Sculpture','2024-07-05',1.0);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Hana Ito','Linguistics');\nINSERT INTO plantings VALUES\n(1,1,'Phonetics','2024-08-01',1.0),\n(2,1,'Syntax','2024-08-02',1.0),\n(3,1,'Semantics','2024-08-03',1.0),\n(4,1,'Pragmatics','2024-08-04',1.0),\n(5,1,'Morphology','2024-08-05',1.0),\n(6,1,'Phonetics','2024-08-06',1.0);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Iris Jha','Math');\nINSERT INTO plantings VALUES\n(1,1,'Algebra','2024-09-01',1.5),\n(2,1,'Algebra','2024-09-02',1.5),\n(3,1,'Algebra','2024-09-03',1.5),\n(4,1,'Algebra','2024-09-04',1.5),\n(5,1,'Algebra','2024-09-05',1.5),\n(6,1,'Algebra','2024-09-06',1.5);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Jan Kim','Philosophy'),\n(2,'Ken Li','Sociology');\nINSERT INTO plantings VALUES\n(1,1,'Logic','2024-10-01',1.0),\n(2,1,'Ethics','2024-10-02',1.0),\n(3,1,'Logic','2024-10-03',1.0),\n(4,1,'Ethics','2024-10-04',1.0),\n(5,2,'Theory','2024-10-01',1.0),\n(6,2,'Research','2024-10-02',1.0),\n(7,2,'Policy','2024-10-03',1.0),\n(8,2,'Theory','2024-10-04',1.0),\n(9,2,'Research','2024-10-05',1.0);"
+      ],
+      "expected": []
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Lev Munn','Astronomy'),\n(2,'Mia Noor','Geology'),\n(3,'Nik Osei','Botany');\nINSERT INTO plantings VALUES\n(1,1,'Stars','2024-11-01',3.0),\n(2,1,'Planets','2024-11-02',3.0),\n(3,1,'Galaxies','2024-11-03',3.0),\n(4,1,'Nebulae','2024-11-04',3.0),\n(5,1,'Stars','2024-11-05',3.0),\n(6,1,'Planets','2024-11-06',3.0),\n(7,1,'Galaxies','2024-11-07',3.0),\n(8,1,'Nebulae','2024-11-08',3.0),\n(9,2,'Rocks','2024-11-01',3.0),\n(10,2,'Minerals','2024-11-02',2.0),\n(11,2,'Fossils','2024-11-03',2.0),\n(12,2,'Rocks','2024-11-04',3.0),\n(13,2,'Minerals','2024-11-05',2.0),\n(14,2,'Fossils','2024-11-06',2.0),\n(15,3,'Algae','2024-11-01',1.0),\n(16,3,'Moss','2024-11-02',2.0),\n(17,3,'Ferns','2024-11-03',2.0),\n(18,3,'Algae','2024-11-04',1.0),\n(19,3,'Moss','2024-11-05',2.0),\n(20,3,'Ferns','2024-11-06',2.0);"
+      ],
+      "expected": [
+        [
+          1,
+          "Lev Munn",
+          "Astronomy",
+          4,
+          24.0
+        ],
+        [
+          2,
+          "Mia Noor",
+          "Geology",
+          3,
+          14.0
+        ],
+        [
+          3,
+          "Nik Osei",
+          "Botany",
+          3,
+          10.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Ola Pena','Computer Science');\nINSERT INTO plantings VALUES\n(1,1,'Algorithms','2024-12-01',1.0),\n(2,1,'Databases','2024-12-01',1.0),\n(3,1,'Networks','2024-12-02',1.0),\n(4,1,'Algorithms','2024-12-03',1.0),\n(5,1,'Databases','2024-12-03',1.0),\n(6,1,'Networks','2024-12-04',1.0);"
+      ],
+      "expected": [
+        [
+          1,
+          "Ola Pena",
+          "Computer Science",
+          3,
+          6.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(7,'Rae Quinn','Engineering'),\n(3,'Sam Reyes','Engineering');\nINSERT INTO plantings VALUES\n(1,7,'Circuits','2024-01-01',2.0),\n(2,7,'Signals','2024-01-02',2.0),\n(3,7,'Systems','2024-01-03',2.0),\n(4,7,'Circuits','2024-01-04',2.0),\n(5,7,'Signals','2024-01-05',2.0),\n(6,7,'Systems','2024-01-06',2.0),\n(7,3,'Circuits','2024-01-01',2.0),\n(8,3,'Signals','2024-01-02',2.0),\n(9,3,'Systems','2024-01-03',2.0),\n(10,3,'Circuits','2024-01-04',2.0),\n(11,3,'Signals','2024-01-05',2.0),\n(12,3,'Systems','2024-01-06',2.0);"
+      ],
+      "expected": [
+        [
+          3,
+          "Sam Reyes",
+          "Engineering",
+          3,
+          12.0
+        ],
+        [
+          7,
+          "Rae Quinn",
+          "Engineering",
+          3,
+          12.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Tia Sone','Biology'),\n(2,'Uma Tang','Physics');\nINSERT INTO plantings VALUES\n(1,2,'Optics','2024-02-01',1.0),\n(2,2,'Acoustics','2024-02-02',1.0),\n(3,2,'Fluids','2024-02-03',1.0),\n(4,2,'Optics','2024-02-04',1.0),\n(5,2,'Acoustics','2024-02-05',1.0),\n(6,2,'Fluids','2024-02-06',1.0);"
+      ],
+      "expected": [
+        [
+          2,
+          "Uma Tang",
+          "Physics",
+          3,
+          6.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Vic Ueda','Psychology');\nINSERT INTO plantings VALUES\n(1,1,'Cognition','2024-03-01',1.0),\n(2,1,'Behavior','2024-03-02',1.0),\n(3,1,'Perception','2024-03-03',1.0),\n(4,1,'Emotion','2024-03-04',1.0),\n(5,1,'Development','2024-03-05',1.0),\n(6,1,'Cognition','2024-03-06',1.0),\n(7,1,'Behavior','2024-03-07',1.0),\n(8,1,'Perception','2024-03-08',1.0),\n(9,1,'Emotion','2024-03-09',1.0),\n(10,1,'Development','2024-03-10',1.0);"
+      ],
+      "expected": [
+        [
+          1,
+          "Vic Ueda",
+          "Psychology",
+          5,
+          10.0
+        ]
+      ]
+    },
+    {
+      "input": [
+        "INSERT INTO growers VALUES\n(1,'Wes Vale','Math'),\n(2,'Xin Wu','Chemistry'),\n(3,'Yara Zhou','History'),\n(4,'Zoe And','Art'),\n(5,'Abe Brock','Music'),\n(6,'Bev Cole','Physics');\nINSERT INTO plantings VALUES\n(1,1,'Algebra','2024-04-01',2.0),\n(2,1,'Geometry','2024-04-02',2.0),\n(3,1,'Calculus','2024-04-03',2.0),\n(4,1,'Algebra','2024-04-04',2.0),\n(5,1,'Geometry','2024-04-05',2.0),\n(6,1,'Calculus','2024-04-06',2.0),\n(7,2,'Organic','2024-04-01',1.0),\n(8,2,'Physical','2024-04-02',1.0),\n(9,2,'Organic','2024-04-03',1.0),\n(10,2,'Physical','2024-04-04',1.0),\n(11,2,'Organic','2024-04-05',1.0),\n(12,2,'Physical','2024-04-06',1.0),\n(13,3,'Ancient','2024-04-01',1.5),\n(14,3,'Medieval','2024-04-02',2.0),\n(15,3,'Modern','2024-04-03',2.0),\n(16,3,'Ancient','2024-04-04',1.5),\n(17,3,'Medieval','2024-04-05',2.0),\n(18,3,'Modern','2024-04-06',2.0),\n(19,3,'Ancient','2024-04-10',1.0),\n(20,3,'Modern','2024-04-11',1.0),\n(21,4,'Painting','2024-04-01',1.0),\n(22,4,'Drawing','2024-04-02',1.0),\n(23,4,'Sculpture','2024-04-03',1.0),\n(24,6,'Optics','2024-04-01',1.0),\n(25,6,'Mechanics','2024-04-03',1.0),\n(26,6,'Thermo','2024-04-05',1.0),\n(27,6,'Optics','2024-04-07',1.0),\n(28,6,'Mechanics','2024-04-09',1.0),\n(29,6,'Thermo','2024-04-11',1.0);"
+      ],
+      "expected": [
+        [
+          1,
+          "Wes Vale",
+          "Math",
+          3,
+          12.0
+        ],
+        [
+          3,
+          "Yara Zhou",
+          "History",
+          3,
+          11.0
+        ],
+        [
+          6,
+          "Bev Cole",
+          "Physics",
+          3,
+          6.0
+        ]
+      ]
+    }
+  ]
+}

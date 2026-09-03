@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3601,
+  "slug": "half-year-fuel-economy-swings",
+  "title": "Half-Year Fuel Economy Swings",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE couriers (courier_id INTEGER, courier_name TEXT);\nCREATE TABLE deliveries (delivery_id INTEGER, courier_id INTEGER, delivery_date TEXT, km_driven REAL, fuel_used REAL);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3642,
+  "slug": "films-with-splintered-audiences",
+  "title": "Films With Splintered Audiences",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE films (film_id INTEGER, title TEXT, director TEXT, genre TEXT, runtime INTEGER);\nCREATE TABLE viewings (viewing_id INTEGER, film_id INTEGER, viewer_name TEXT, minutes_watched INTEGER, viewing_rating INTEGER);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

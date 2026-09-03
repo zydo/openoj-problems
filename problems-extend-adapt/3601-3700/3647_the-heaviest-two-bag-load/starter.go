@@ -1,0 +1,3 @@
+func heaviestTwoBagLoad(weights []int, w1 int, w2 int) int {
+	panic("TODO")
+}
