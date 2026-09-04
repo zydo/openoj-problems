@@ -12,7 +12,7 @@ file has carried).
 ### 3983_nesting-with-one-wildcard (3901-4000): reference is a heuristic that the frozen data never exposes
 
 `3983_nesting-with-one-wildcard` (adapted from source
-`3901-4000/3983_subsequence-after-one-replacement`): the stated semantics
+`problems-originals/3901-4000/3983_subsequence-after-one-replacement`): the stated semantics
 are "replace any one character with any letter, is target then a
 subsequence?", but the reference solution in every language implements a
 rightmost-greedy suffix match, which is not exact (counterexample:

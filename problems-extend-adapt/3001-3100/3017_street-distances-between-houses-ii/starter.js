@@ -1,9 +1,0 @@
-/**
- * @param {number} n
- * @param {number} x
- * @param {number} y
- * @return {number[]}
- */
-var distanceTally = function (n, x, y) {
-    throw new Error("TODO");
-};

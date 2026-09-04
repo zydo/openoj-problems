@@ -1,3 +1,0 @@
-function maxBinaryAlignment(img1: number[][], img2: number[][]): number {
-    throw new Error("TODO");
-}

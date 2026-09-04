@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": 126,
+  "slug": "word-ladder-ii",
+  "title": "Word Ladder II",
+  "difficulty": "H4",
+  "tags": [
+    "Graph",
+    "BFS",
+    "Backtracking"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "findLadders",
+    "parameters": [
+      {
+        "name": "beginWord",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "endWord",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "wordList",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "array",
+      "items": {
+        "kind": "array",
+        "items": {
+          "kind": "string"
+        }
+      }
+    },
+    "entrypoints": {
+      "go": "findLadders",
+      "rust": "find_ladders",
+      "typescript": "findLadders"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

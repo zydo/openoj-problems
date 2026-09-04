@@ -1,0 +1,3 @@
+function countRegularRuns(minLength: number, maxLength: number, oneGroup: number, zeroGroup: number): number {
+    throw new Error("TODO");
+}

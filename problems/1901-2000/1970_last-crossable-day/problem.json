@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "reference_solution": "reverse_union_find",
+  "id": 1970,
+  "slug": "last-crossable-day",
+  "title": "Last Crossable Day",
+  "difficulty": "H3",
+  "tags": [
+    "Binary Search",
+    "Breadth-First Search",
+    "Union Find",
+    "Matrix"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "lastCrossableDay",
+    "parameters": [
+      {
+        "name": "row",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "col",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "cells",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "lastCrossableDay",
+      "rust": "last_crossable_day",
+      "typescript": "lastCrossableDay"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

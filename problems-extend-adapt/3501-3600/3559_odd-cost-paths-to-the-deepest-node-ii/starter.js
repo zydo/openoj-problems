@@ -1,8 +1,0 @@
-/**
- * @param {number[][]} edges
- * @param {number[][]} queries
- * @return {number[]}
- */
-var countOddWeightings = function (edges, queries) {
-    throw new Error("TODO");
-};

@@ -120,12 +120,27 @@ def _entry(invocation: dict, language: str) -> str:
 
 # The Python style starters are emitted in. "legacy" keeps the
 # LeetCode-era annotations (typing.List, typing.Optional) that the
-# problems-extend-adapt tree was authored with; "modern" uses PEP
-# 585/604 (list[int], X | None) and drops the typing import unless
-# something genuinely needs it. problems-adapt (and the problems
-# symlink, and problems-bettercode) generate modern; only
-# problems-extend-adapt stays legacy.
+# extend-derived bundles were authored with; "modern" uses PEP 585/604
+# (list[int], X | None) and drops the typing import unless something
+# genuinely needs it. Provenance decides: the bettercode-derived slugs
+# (the adapter set in problems/MAPPING.json) are modern; everything
+# extend-derived stays legacy — including the thirteen bundles whose
+# ids also exist in the bettercode set.
 PYTHON_STYLE = "legacy"
+
+_modern_slugs: set[str] | None = None
+
+
+def is_modern_python_slug(slug: str) -> bool:
+    """True for bettercode-derived bundles (modern starters). The adapter
+    set comes from problems/MAPPING.json, so the predicate works on the
+    merged tree and after any future ledger update."""
+    global _modern_slugs
+    if _modern_slugs is None:
+        mapping_path = Path(__file__).resolve().parent.parent / "problems" / "MAPPING.json"
+        mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
+        _modern_slugs = {row["adapted"].split("_", 1)[1] for row in mapping.values()}
+    return slug in _modern_slugs
 
 
 def set_python_style(style: str) -> None:
@@ -1054,16 +1069,17 @@ def main() -> None:
         # bundle dirs flat or inside the 100-id shards
         targets = sorted(
             child if (child / "problem.json").is_file() else sub
-            for tree in ("problems", "problems-extend-adapt")
+            for tree in ("problems",)
             for child in root.glob(f"{tree}/*")
+            if child.is_dir()
             for sub in ([child] if (child / "problem.json").is_file() else sorted(child.iterdir()))
             if sub.is_dir() and (sub / "problem.json").is_file()
         )
     failures = 0
     for bundle in targets:
-        # Style follows the bundle's tree unless --style is given: only
-        # problems-extend-adapt keeps the legacy annotations.
-        set_python_style(style or ("legacy" if "problems-extend-adapt" in bundle.parts else "modern"))
+        # Style follows the bundle's provenance unless --style is given:
+        # bettercode-derived slugs are modern, extend-derived ones legacy.
+        set_python_style(style or ("legacy" if not is_modern_python_slug(bundle.name.split("_", 1)[1]) else "modern"))
         problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
         generated = starter_files(problem["invocation"])
         extension_language = {extension: key for key, extension in EXTENSIONS.items()}

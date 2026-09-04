@@ -1,3 +1,0 @@
-function affordableUpgrades(count: number[], upgrade: number[], sell: number[], money: number[]): number[] {
-    throw new Error("TODO");
-}

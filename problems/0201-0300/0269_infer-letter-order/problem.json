@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 269,
+  "slug": "infer-letter-order",
+  "title": "Infer Letter Order",
+  "difficulty": "H3",
+  "tags": [
+    "Graph",
+    "Topological Sort",
+    "String",
+    "BFS"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "inferLetterOrder",
+    "parameters": [
+      {
+        "name": "words",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "string"
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "inferLetterOrder",
+      "rust": "infer_letter_order",
+      "typescript": "inferLetterOrder"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 837,
+  "slug": "bounded-final-score-probability",
+  "title": "Bounded Final Score Probability",
+  "difficulty": "H3",
+  "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Probability"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "boundedFinalScoreProbability",
+    "parameters": [
+      {
+        "name": "scoreLimit",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "stopScore",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "drawMaximum",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "number"
+    },
+    "entrypoints": {
+      "go": "boundedFinalScoreProbability",
+      "rust": "bounded_final_score_probability",
+      "typescript": "boundedFinalScoreProbability"
+    },
+    "comparison": "close"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

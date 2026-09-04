@@ -1,0 +1,3 @@
+function countSnackCarts(total: number, cost1: number, cost2: number): number {
+    throw new Error("TODO");
+}

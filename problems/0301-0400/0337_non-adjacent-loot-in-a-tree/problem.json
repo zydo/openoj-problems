@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "reference_solution": "postorder_pairs",
+  "id": 337,
+  "slug": "non-adjacent-loot-in-a-tree",
+  "title": "Non-Adjacent Loot in a Tree",
+  "difficulty": "H2",
+  "tags": [
+    "Tree DP",
+    "Binary Tree",
+    "DFS"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "maxNonAdjacentLoot",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "maxNonAdjacentLoot",
+      "rust": "max_non_adjacent_loot",
+      "typescript": "maxNonAdjacentLoot"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

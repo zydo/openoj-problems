@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "reference_solution": "fee_greedy",
+  "id": 714,
+  "slug": "stock-trading-with-fees",
+  "title": "Stock Trading With Fees",
+  "difficulty": "H3",
+  "tags": [
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stockTradingWithFees",
+    "parameters": [
+      {
+        "name": "prices",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "fee",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "stockTradingWithFees",
+      "rust": "stock_trading_with_fees",
+      "typescript": "stockTradingWithFees"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

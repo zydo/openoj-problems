@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 432,
+  "slug": "constant-time-frequency-extremes",
+  "title": "Constant-Time Frequency Extremes",
+  "difficulty": "H4",
+  "tags": [
+    "Hash Table",
+    "Doubly Linked List"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "FrequencyExtremes",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "increase",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "decrease",
+        "parameters": [
+          {
+            "name": "key",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "highestKey",
+        "parameters": [],
+        "return_type": {
+          "kind": "string"
+        }
+      },
+      {
+        "name": "lowestKey",
+        "parameters": [],
+        "return_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 1024
+  }
+}

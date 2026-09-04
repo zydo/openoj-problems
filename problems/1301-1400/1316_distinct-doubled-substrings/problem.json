@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1316,
+  "slug": "distinct-doubled-substrings",
+  "title": "Distinct Doubled Substrings",
+  "difficulty": "H3",
+  "tags": [
+    "String",
+    "Rolling Hash",
+    "Hash Set"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "distinctDoubledSubstrings",
+    "parameters": [
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "distinctDoubledSubstrings",
+      "rust": "distinct_doubled_substrings",
+      "typescript": "distinctDoubledSubstrings"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 4000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

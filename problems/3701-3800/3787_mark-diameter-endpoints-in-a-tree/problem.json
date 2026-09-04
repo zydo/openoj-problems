@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "reference_solution": "rerooting_dp",
+  "id": 3787,
+  "slug": "mark-diameter-endpoints-in-a-tree",
+  "title": "Mark Diameter Endpoints in a Tree",
+  "difficulty": "H2",
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Depth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "markDiameterEnds",
+    "parameters": [
+      {
+        "name": "n",
+        "codec": "json",
+        "value_type": {
+          "kind": "integer",
+          "bits": 32
+        }
+      },
+      {
+        "name": "edges",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "array",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "markDiameterEnds",
+      "rust": "mark_diameter_ends",
+      "typescript": "markDiameterEnds"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

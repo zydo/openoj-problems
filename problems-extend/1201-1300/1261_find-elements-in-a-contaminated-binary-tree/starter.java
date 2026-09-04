@@ -1,6 +1,0 @@
-class FindElements {
-
-    public FindElements(TreeNode root) {}
-
-    public boolean find(int target) {}
-}

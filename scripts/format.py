@@ -112,12 +112,9 @@ def format_content(extension: str, content: str, tolerant: bool = True) -> str:
 def _targets(arguments: list[str]) -> list[Path]:
     if arguments:
         return [Path(argument).resolve() for argument in arguments]
-    # default: every formattable file across both adapted trees (the
-    # problems symlink resolves into problems-adapt; extend-adapt is a
-    # sibling tree, not under the symlink).
+    # default: every formattable file in the merged served tree.
     files: list[Path] = [ROOT / "FORMAT.md"]
-    for tree in ("problems", "problems-extend-adapt"):
-        files += sorted((ROOT / tree).rglob("*"))
+    files += sorted((ROOT / "problems").rglob("*"))
     return [path for path in files if path.is_file()]
 
 

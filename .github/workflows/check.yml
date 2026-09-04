@@ -3,7 +3,9 @@ name: Check problems
 # Runs inside the published runner image (the same build that powers the
 # editor's Format button and the openoj CLI), so the toolchain is the
 # pinned one by construction: format check + static bundle checks on
-# every push/PR, plus the full judge sweep on demand and weekly.
+# every push/PR over the merged served tree, plus the bettercode-derived
+# judge sweep on demand and weekly (extend-derived bundles are judged
+# out-of-band via openoj's .localonly/verify_solution.py).
 
 on:
   push:
@@ -11,7 +13,7 @@ on:
   pull_request:
   workflow_dispatch:
   schedule:
-    - cron: "17 5 * * 1"  # weekly, off the :00 marks
+    - cron: "17 5 * * 1" # weekly, off the :00 marks
 
 permissions:
   contents: read
@@ -24,14 +26,10 @@ jobs:
       options: --user 0:0
     steps:
       - uses: actions/checkout@v5
-      - name: Format check (every formattable file)
+      - name: Format check
         run: openoj format --check problems
       - name: Bundle static checks
         run: python3 scripts/check.py --tree problems --skip-runtime
-      - name: Format check (extend-adapt tree)
-        run: openoj format --check problems-extend-adapt
-      - name: Bundle static checks (extend-adapt tree)
-        run: python3 scripts/check.py --tree problems-extend-adapt --skip-runtime
 
   judge:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
@@ -42,14 +40,70 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: ["0001-0100", "0101-0200", "0201-0300", "0301-0400", "0401-0500", "0501-0600", "0601-0700", "0701-0800", "0801-0900"]
+        shard:
+          [
+            "0001-0100",
+            "0101-0200",
+            "0201-0300",
+            "0301-0400",
+            "0401-0500",
+            "0501-0600",
+            "0601-0700",
+            "0701-0800",
+            "0801-0900",
+            "0901-1000",
+            "1001-1100",
+            "1101-1200",
+            "1201-1300",
+            "1301-1400",
+            "1401-1500",
+            "1501-1600",
+            "1601-1700",
+            "1701-1800",
+            "1801-1900",
+            "1901-2000",
+            "2001-2100",
+            "2101-2200",
+            "2201-2300",
+            "2301-2400",
+            "2401-2500",
+            "2501-2600",
+            "2601-2700",
+            "2701-2800",
+            "2801-2900",
+            "2901-3000",
+            "3001-3100",
+            "3101-3200",
+            "3201-3300",
+            "3301-3400",
+            "3401-3500",
+            "3501-3600",
+            "3601-3700",
+            "3701-3800",
+            "3801-3900",
+            "3901-4000",
+            "4001-4100",
+          ]
     steps:
       - uses: actions/checkout@v5
-      - name: Judge every bundle in ${{ matrix.shard }}
+      - name: Judge bettercode-derived bundles in ${{ matrix.shard }}
         run: |
           set -e
+          bundles=$(python3 - << 'PYEOF'
+          import json
+          mapping = json.load(open("problems/MAPPING.json"))
+          shard = "${{ matrix.shard }}"
+          low = int(shard.split("-")[0])
+          for source, row in mapping.items():
+              source_id = int(source.split("_", 1)[0])
+              if (source_id - 1) // 100 * 100 + 1 == low:
+                  print(f"problems/{shard}/{row['adapted']}")
+          PYEOF
+          )
+          count=$(printf '%s\n' "$bundles" | grep -c . || true)
+          echo "judging $count bundles in ${{ matrix.shard }}"
           failures=0
-          for bundle in problems/${{ matrix.shard }}/*/; do
+          for bundle in $bundles; do
             if ! openoj judge "$bundle"; then failures=$((failures + 1)); fi
           done
           echo "bundles with failures in ${{ matrix.shard }}: $failures"

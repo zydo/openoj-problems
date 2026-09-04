@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "reference_solution": "trie",
+  "id": 208,
+  "slug": "prefix-tree",
+  "title": "Prefix Tree",
+  "difficulty": "H3",
+  "tags": [
+    "Prefix Tree",
+    "Hash Table"
+  ],
+  "invocation": {
+    "type": "design",
+    "class_name": "PrefixTree",
+    "constructor": {
+      "parameters": []
+    },
+    "methods": [
+      {
+        "name": "insert",
+        "parameters": [
+          {
+            "name": "word",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ]
+      },
+      {
+        "name": "search",
+        "parameters": [
+          {
+            "name": "word",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      },
+      {
+        "name": "hasPrefix",
+        "parameters": [
+          {
+            "name": "prefix",
+            "codec": "json",
+            "value_type": {
+              "kind": "string"
+            }
+          }
+        ],
+        "return_type": {
+          "kind": "boolean"
+        }
+      }
+    ],
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 512
+  }
+}

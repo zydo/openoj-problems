@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 767,
+  "slug": "separate-repeated-symbols",
+  "title": "Separate Repeated Symbols",
+  "difficulty": "H2",
+  "tags": [
+    "Greedy",
+    "Heap",
+    "String",
+    "Counting"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "separateRepeatedSymbols",
+    "parameters": [
+      {
+        "name": "text",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "separateRepeatedSymbols",
+      "rust": "separate_repeated_symbols",
+      "typescript": "separateRepeatedSymbols"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

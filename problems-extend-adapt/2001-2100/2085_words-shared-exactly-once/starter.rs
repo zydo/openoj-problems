@@ -1,5 +1,0 @@
-impl Solution {
-    pub fn count_shared_singles(words1: Vec<String>, words2: Vec<String>) -> i32 {
-        panic!("TODO")
-    }
-}

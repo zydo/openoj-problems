@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3482,
+  "slug": "reporting-tree-rollup",
+  "title": "Reporting Tree Rollup",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL",
+    "Recursive CTE"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Staff (staff_id INTEGER, staff_name TEXT, supervisor_id INTEGER, salary INTEGER, department TEXT);"
+    }
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

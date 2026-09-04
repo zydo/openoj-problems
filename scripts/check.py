@@ -22,7 +22,7 @@ passed as --api, default http://localhost:8080):
 Usage:
   check.py --problems=all [--skip-runtime] [--api http://localhost:8080]
   check.py --problems=0001_two-sum,0002_add-two-numbers
-  check.py --tree problems-extend-adapt --skip-runtime   # static tier over a tree
+  check.py --tree problems --skip-runtime                # static tier over a tree
   check.py --runtime-only --problems=…            # CI runtime job (static
                                                   # tier runs separately in
                                                   # the formatter container)
@@ -244,11 +244,11 @@ def check_bundle(bundle: Path) -> list[Failure]:
                 fail(f"only {len(all_cases)} total cases (need >= 10 or exhaustive finite integer domain)")
 
     # starters: regenerate from problem.json and compare byte-for-byte.
-    # Python style follows the tree: the extend-adapt tree keeps the
-    # legacy annotations; every other tree (problems-adapt, the problems
-    # symlink, problems-bettercode) is modernized.
+    # Python style follows provenance: the bettercode-derived slugs (the
+    # adapter set in problems/MAPPING.json) are modernized; everything
+    # extend-derived keeps the legacy annotations.
     gen_starters.set_python_style(
-        "legacy" if "problems-extend-adapt" in bundle.parts else "modern"
+        "modern" if gen_starters.is_modern_python_slug(problem["slug"]) else "legacy"
     )
     try:
         generated = gen_starters.starter_files(problem["invocation"])
@@ -395,7 +395,7 @@ def static_tier() -> tuple[list[Failure], dict[str, dict]]:
     failures: list[Failure] = list(repo_root_failures())
     catalog: dict[str, dict] = {}
     bundles = bundle_dirs(PROBLEMS)
-    seen_ids: dict[int, str] = {}
+    seen_ids: dict[int, tuple[str, dict]] = {}
     seen_slugs: dict[str, str] = {}
     for bundle in bundles:
         for failure in check_bundle(bundle):
@@ -403,14 +403,24 @@ def static_tier() -> tuple[list[Failure], dict[str, dict]]:
         try:
             problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
             if problem.get("id") in seen_ids:
-                failures.append(
-                    Failure(
-                        bundle.name,
-                        f"duplicate id {problem['id']} (also {seen_ids[problem['id']]})",
+                first_name, first = seen_ids[problem["id"]]
+                # Thirteen source problems exist in both corpora and were
+                # adapted twice; a shared id is legitimate exactly when the
+                # two bundles come from different provenances.
+                if gen_starters.is_modern_python_slug(problem["slug"]) == gen_starters.is_modern_python_slug(first["slug"]):
+                    failures.append(
+                        Failure(
+                            bundle.name,
+                            f"duplicate id {problem['id']} (also {first_name})",
+                        )
                     )
-                )
+                else:
+                    print(
+                        f"note: id {problem['id']} is shared across subsets "
+                        f"({first_name}, {bundle.name})"
+                    )
             else:
-                seen_ids[problem["id"]] = bundle.name
+                seen_ids[problem["id"]] = (bundle.name, problem)
             if problem.get("slug") in seen_slugs:
                 failures.append(
                     Failure(

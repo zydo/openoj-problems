@@ -1,4 +1,0 @@
-class Solution {
-  public:
-    int tightestSplitScore(vector<int> &nums, vector<vector<int>> &edges) { throw logic_error("TODO"); }
-};

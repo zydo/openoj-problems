@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1811,
+  "slug": "scouting-shortlist",
+  "title": "Scouting Shortlist",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "multiset",
+    "sql": {
+      "schema": "CREATE TABLE Matches (match_id INTEGER, champion INTEGER, runner_up INTEGER, third_place INTEGER, PRIMARY KEY (match_id)); CREATE TABLE Players (player_id INTEGER, email TEXT, handle TEXT, PRIMARY KEY (player_id));"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

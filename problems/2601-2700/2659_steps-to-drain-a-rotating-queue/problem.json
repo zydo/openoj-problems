@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 2659,
+  "slug": "steps-to-drain-a-rotating-queue",
+  "title": "Steps to Drain a Rotating Queue",
+  "difficulty": "H4",
+  "tags": [
+    "Array",
+    "Sorting",
+    "Fenwick Tree",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "stepsToDrainQueue",
+    "parameters": [
+      {
+        "name": "nums",
+        "codec": "json",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 64
+    },
+    "entrypoints": {
+      "go": "stepsToDrainQueue",
+      "rust": "steps_to_drain_queue",
+      "typescript": "stepsToDrainQueue"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

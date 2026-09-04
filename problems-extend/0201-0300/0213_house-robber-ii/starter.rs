@@ -1,5 +1,0 @@
-impl Solution {
-    pub fn rob(nums: Vec<i32>) -> i64 {
-        panic!("TODO")
-    }
-}

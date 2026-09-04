@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "reference_solution": "iterative",
+  "id": 21,
+  "slug": "splice-two-sorted-lists",
+  "title": "Splice Two Sorted Lists",
+  "difficulty": "H1",
+  "tags": [
+    "Linked List",
+    "Recursion"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "spliceTwoSortedLists",
+    "parameters": [
+      {
+        "name": "first",
+        "codec": "list_node",
+        "value_type": {
+          "kind": "linked_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      },
+      {
+        "name": "second",
+        "codec": "list_node",
+        "value_type": {
+          "kind": "linked_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "list_node",
+    "return_type": {
+      "kind": "linked_list",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "spliceTwoSortedLists",
+      "rust": "splice_two_sorted_lists",
+      "typescript": "spliceTwoSortedLists"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3563,
+  "slug": "smallest-string-after-pair-deletions",
+  "title": "Smallest String After Pair Deletions",
+  "difficulty": "H4",
+  "tags": [
+    "Interval DP",
+    "Dynamic Programming"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "smallestAfterPairDeletions",
+    "parameters": [
+      {
+        "name": "s",
+        "codec": "json",
+        "value_type": {
+          "kind": "string"
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "string"
+    },
+    "entrypoints": {
+      "go": "smallestAfterPairDeletions",
+      "rust": "smallest_after_pair_deletions",
+      "typescript": "smallestAfterPairDeletions"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

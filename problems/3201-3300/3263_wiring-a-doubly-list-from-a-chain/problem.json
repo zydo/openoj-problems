@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 3263,
+  "slug": "wiring-a-doubly-list-from-a-chain",
+  "title": "Wiring A Doubly List From A Chain",
+  "difficulty": "H1",
+  "tags": [
+    "Array",
+    "Linked List",
+    "Doubly-Linked List"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "wireDoublyList",
+    "parameters": [
+      {
+        "name": "head",
+        "codec": "list_node",
+        "value_type": {
+          "kind": "linked_list",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "doubly_list",
+    "return_type": {
+      "kind": "doubly_list",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      },
+      "class": "DoublyListNode"
+    },
+    "entrypoints": {
+      "go": "wireDoublyList",
+      "rust": "wire_doubly_list",
+      "typescript": "wireDoublyList"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

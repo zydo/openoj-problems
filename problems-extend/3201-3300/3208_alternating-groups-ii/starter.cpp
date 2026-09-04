@@ -1,4 +1,0 @@
-class Solution {
-  public:
-    int numberOfAlternatingGroups(vector<int> &colors, int k) { throw logic_error("TODO"); }
-};

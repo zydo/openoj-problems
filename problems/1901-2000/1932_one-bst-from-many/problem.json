@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1932,
+  "slug": "one-bst-from-many",
+  "title": "One BST From Many",
+  "difficulty": "H4",
+  "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Hash Table",
+    "Depth-First Search"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "assembleBST",
+    "parameters": [
+      {
+        "name": "trees",
+        "codec": "tree_node_array",
+        "value_type": {
+          "kind": "array",
+          "items": {
+            "kind": "binary_tree",
+            "items": {
+              "kind": "integer",
+              "bits": 32
+            }
+          }
+        }
+      }
+    ],
+    "return_codec": "tree_node",
+    "return_type": {
+      "kind": "binary_tree",
+      "items": {
+        "kind": "integer",
+        "bits": 32
+      }
+    },
+    "entrypoints": {
+      "go": "assembleBST",
+      "rust": "assemble_bst",
+      "typescript": "assembleBST"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 3000,
+    "memory_mb": 256,
+    "output_kb": 2048
+  }
+}

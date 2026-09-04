@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 968,
+  "slug": "minimum-tree-monitors",
+  "title": "Minimum Tree Monitors",
+  "difficulty": "H3",
+  "tags": [
+    "Tree DP",
+    "Dynamic Programming",
+    "Tree",
+    "Binary Tree",
+    "Greedy"
+  ],
+  "invocation": {
+    "type": "function",
+    "class_name": "Solution",
+    "method": "minimumTreeMonitors",
+    "parameters": [
+      {
+        "name": "root",
+        "codec": "tree_node",
+        "value_type": {
+          "kind": "binary_tree",
+          "items": {
+            "kind": "integer",
+            "bits": 32
+          }
+        }
+      }
+    ],
+    "return_codec": "json",
+    "return_type": {
+      "kind": "integer",
+      "bits": 32
+    },
+    "entrypoints": {
+      "go": "minimumTreeMonitors",
+      "rust": "minimum_tree_monitors",
+      "typescript": "minimumTreeMonitors"
+    },
+    "comparison": "exact"
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

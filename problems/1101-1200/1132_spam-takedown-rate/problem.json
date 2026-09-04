@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "reference_solution": "",
+  "id": 1132,
+  "slug": "spam-takedown-rate",
+  "title": "Spam Takedown Rate",
+  "difficulty": "H3",
+  "tags": [
+    "Database",
+    "SQL"
+  ],
+  "invocation": {
+    "type": "sql",
+    "parameters": [
+      {
+        "name": "dataset",
+        "codec": "sql_setup"
+      }
+    ],
+    "return_codec": "rows",
+    "comparison": "exact",
+    "sql": {
+      "schema": "CREATE TABLE Interactions (user_id INTEGER, post_id INTEGER, event_date DATE, action VARCHAR, detail VARCHAR);\nCREATE TABLE Takedowns (post_id INTEGER PRIMARY KEY, takedown_date DATE);"
+    }
+  },
+  "limits": {
+    "time_ms": 1500,
+    "memory_mb": 256,
+    "output_kb": 64
+  }
+}

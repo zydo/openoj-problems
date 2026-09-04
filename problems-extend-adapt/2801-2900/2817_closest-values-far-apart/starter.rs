@@ -1,5 +1,0 @@
-impl Solution {
-    pub fn closest_apart(nums: Vec<i32>, x: i32) -> i32 {
-        panic!("TODO")
-    }
-}
