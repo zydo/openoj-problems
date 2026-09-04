@@ -14,6 +14,7 @@
     "Prefix Sum",
     "Li Chao Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

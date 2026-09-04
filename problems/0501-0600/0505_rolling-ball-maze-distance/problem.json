@@ -24,6 +24,7 @@
     "Heuristic Search",
     "A* Search"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -15,6 +15,7 @@
     "Dynamic Programming",
     "Simulation"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

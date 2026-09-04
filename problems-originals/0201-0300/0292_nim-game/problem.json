@@ -21,6 +21,7 @@
     "Nim Game",
     "Impartial Game"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

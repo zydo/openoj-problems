@@ -12,6 +12,7 @@
     "String",
     "Design"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "UndergroundSystem",

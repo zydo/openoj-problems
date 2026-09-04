@@ -13,6 +13,7 @@
     "Array",
     "Design"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

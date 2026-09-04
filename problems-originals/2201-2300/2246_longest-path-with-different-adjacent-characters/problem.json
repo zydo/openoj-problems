@@ -17,6 +17,7 @@
     "Graph Theory",
     "Topological Sort"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

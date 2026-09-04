@@ -16,6 +16,7 @@
     "Two Pointers",
     "Floyd's Cycle Finding Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

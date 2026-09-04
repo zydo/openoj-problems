@@ -19,6 +19,7 @@
     "Number Theory",
     "Fermat's Little Theorem"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "Fancy",

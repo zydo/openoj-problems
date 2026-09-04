@@ -23,6 +23,7 @@
     "Quickselect",
     "K-D Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

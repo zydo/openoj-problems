@@ -13,6 +13,7 @@
     "Binary Search",
     "Divide and Conquer"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

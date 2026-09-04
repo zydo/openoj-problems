@@ -21,6 +21,7 @@
     "Ordered Set",
     "Treap"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -19,6 +19,7 @@
     "Monotonic Queue",
     "Range Minimum/Maximum Query"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

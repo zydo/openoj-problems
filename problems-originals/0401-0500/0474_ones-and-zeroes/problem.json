@@ -16,6 +16,7 @@
     "Knapsack Problem",
     "0-1 Knapsack"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

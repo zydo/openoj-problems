@@ -17,6 +17,7 @@
     "Dynamic Programming",
     "Number Theory"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

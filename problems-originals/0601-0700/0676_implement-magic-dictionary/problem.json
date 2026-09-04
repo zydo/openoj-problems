@@ -19,6 +19,7 @@
     "Design",
     "Trie"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "MagicDictionary",

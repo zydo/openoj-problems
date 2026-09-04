@@ -17,6 +17,7 @@
     "Dynamic Programming",
     "Probability and Statistics"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

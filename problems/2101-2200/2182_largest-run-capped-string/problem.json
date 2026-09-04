@@ -17,6 +17,7 @@
     "Heap (Priority Queue)",
     "Counting"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -17,6 +17,7 @@
     "Counting",
     "Iterator"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "EncodedRunIterator",

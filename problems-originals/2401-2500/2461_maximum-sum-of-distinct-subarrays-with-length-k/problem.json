@@ -14,6 +14,7 @@
     "Hash Table",
     "Sliding Window"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

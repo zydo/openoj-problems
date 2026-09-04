@@ -23,6 +23,7 @@
     "Heap (Priority Queue)",
     "Minimum Spanning Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "DistanceLimitedPathsExist",

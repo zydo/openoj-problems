@@ -20,6 +20,7 @@
     "Greatest Common Divisor",
     "Extended Euclidean Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

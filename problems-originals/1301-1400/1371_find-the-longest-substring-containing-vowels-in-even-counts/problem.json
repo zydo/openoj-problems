@@ -16,6 +16,7 @@
     "Bit Manipulation",
     "Prefix Sum"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

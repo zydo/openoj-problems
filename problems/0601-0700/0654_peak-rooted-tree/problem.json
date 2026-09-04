@@ -20,6 +20,7 @@
     "Binary Tree",
     "Cartesian Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

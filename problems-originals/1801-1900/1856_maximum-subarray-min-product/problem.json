@@ -16,6 +16,7 @@
     "Prefix Sum",
     "Cartesian Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

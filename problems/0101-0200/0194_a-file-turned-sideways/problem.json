@@ -12,6 +12,7 @@
   "topics": [
     "Shell"
   ],
+  "type": "Database",
   "invocation": {
     "type": "sql",
     "parameters": [

@@ -15,6 +15,7 @@
     "Design",
     "Iterator"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "RunLengthCursor",

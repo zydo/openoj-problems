@@ -13,6 +13,7 @@
     "Binary Indexed Tree",
     "Segment Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "BookMyShow",

@@ -17,6 +17,7 @@
     "Z Algorithm",
     "Knuth–Morris–Pratt Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

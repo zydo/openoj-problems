@@ -17,6 +17,7 @@
     "Binary Search",
     "Interactive"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

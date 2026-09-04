@@ -11,6 +11,7 @@
     "Depth-First Search",
     "Math"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

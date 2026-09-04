@@ -11,6 +11,7 @@
   "topics": [
     "Shell"
   ],
+  "type": "Shell",
   "invocation": {
     "type": "shell",
     "comparison": "exact"

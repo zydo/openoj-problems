@@ -31,6 +31,7 @@
     "Binary Tree",
     "Fermat's Little Theorem"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

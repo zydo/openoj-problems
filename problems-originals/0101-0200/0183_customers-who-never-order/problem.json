@@ -11,6 +11,7 @@
   "topics": [
     "Database"
   ],
+  "type": "Database",
   "invocation": {
     "type": "sql",
     "parameters": [

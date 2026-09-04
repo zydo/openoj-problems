@@ -12,6 +12,7 @@
     "Database",
     "Polygons"
   ],
+  "type": "Database",
   "invocation": {
     "type": "sql",
     "parameters": [

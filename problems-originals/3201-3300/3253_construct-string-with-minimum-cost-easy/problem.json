@@ -11,6 +11,7 @@
     "Dynamic Programming",
     "String Matching"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

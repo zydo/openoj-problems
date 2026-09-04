@@ -19,6 +19,7 @@
     "Geometry",
     "Sweep Line"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

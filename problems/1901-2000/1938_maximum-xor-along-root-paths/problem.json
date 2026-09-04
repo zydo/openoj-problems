@@ -18,6 +18,7 @@
     "Depth-First Search",
     "Trie"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

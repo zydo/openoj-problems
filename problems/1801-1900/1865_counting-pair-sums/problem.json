@@ -15,6 +15,7 @@
     "Hash Table",
     "Design"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "PairSums",

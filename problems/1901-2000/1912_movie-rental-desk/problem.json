@@ -17,6 +17,7 @@
     "Heap (Priority Queue)",
     "Ordered Set"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "MovieRentalDesk",

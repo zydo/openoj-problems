@@ -16,6 +16,7 @@
     "Bit Manipulation",
     "Union-Find"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

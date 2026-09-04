@@ -16,6 +16,7 @@
     "Queue",
     "Data Stream"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "RideQueue",

@@ -17,6 +17,7 @@
     "Breadth-First Search",
     "Sorting"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

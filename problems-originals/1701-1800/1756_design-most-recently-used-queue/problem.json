@@ -27,6 +27,7 @@
     "Treap",
     "Splay Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "MRUQueue",

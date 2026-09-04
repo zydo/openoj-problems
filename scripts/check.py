@@ -130,6 +130,7 @@ def check_bundle(bundle: Path) -> list[Failure]:
         "difficulty",
         "tags",
         "topics",
+        "type",
         "invocation",
         "limits",
     }
@@ -157,6 +158,8 @@ def check_bundle(bundle: Path) -> list[Failure]:
         or not all(isinstance(topic, str) and topic for topic in problem["topics"])
     ):
         fail("topics must be a non-empty array of non-empty strings")
+    if problem["type"] not in {"Algorithms", "Database", "Shell"}:
+        fail("type must be one of Algorithms, Database, Shell")
     if problem["schema_version"] != 2:
         fail("unsupported schema_version")
     designated = problem["reference_solution"]

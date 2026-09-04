@@ -10,6 +10,7 @@
     "Design",
     "Hash Table"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

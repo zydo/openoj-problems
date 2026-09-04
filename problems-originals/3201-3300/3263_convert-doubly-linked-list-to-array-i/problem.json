@@ -15,6 +15,7 @@
     "Linked List",
     "Doubly-Linked List"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

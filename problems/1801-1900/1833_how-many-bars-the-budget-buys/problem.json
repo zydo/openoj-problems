@@ -17,6 +17,7 @@
     "Sorting",
     "Counting Sort"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

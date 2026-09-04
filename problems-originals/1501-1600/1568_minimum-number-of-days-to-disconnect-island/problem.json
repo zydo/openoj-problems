@@ -21,6 +21,7 @@
     "Strongly Connected Component",
     "Articulation Point"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

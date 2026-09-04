@@ -15,6 +15,7 @@
     "Data Stream",
     "Prefix Sum"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "SuffixProducts",

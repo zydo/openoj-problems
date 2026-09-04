@@ -17,6 +17,7 @@
     "Graph Theory",
     "Ordered Set"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

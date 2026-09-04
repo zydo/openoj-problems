@@ -18,6 +18,7 @@
     "Sorting",
     "Heap (Priority Queue)"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

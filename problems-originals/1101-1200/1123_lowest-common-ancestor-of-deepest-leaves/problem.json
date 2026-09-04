@@ -25,6 +25,7 @@
     "Lowest Common Ancestor",
     "DP on Trees"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -42,6 +42,7 @@ Solutions are authored on top of the generated starters.
   "difficulty": "H1",
   "tags": ["Array", "Hash Table"],
   "topics": ["Array", "Hash Table"],
+  "type": "Algorithms",
   "invocation": { "...": "see below" },
   "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
 }
@@ -61,6 +62,8 @@ Solutions are authored on top of the generated starters.
 - `topics` is a non-empty array naming the techniques the problem tests,
   from the upstream crawl's LeetCode topic vocabulary; it classifies the
   bank for browsing and is not consumed by the judge.
+- `type` is one of `Algorithms` (programming-language bundles),
+  `Database` (SQL), or `Shell`, mirroring `invocation.type`.
 - `invocation.type` is `function`, `sql`, `shell`, `design`, `interactive`,
   or `concurrent`.
 

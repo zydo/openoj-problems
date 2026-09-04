@@ -15,6 +15,7 @@
     "Tree",
     "Depth-First Search"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

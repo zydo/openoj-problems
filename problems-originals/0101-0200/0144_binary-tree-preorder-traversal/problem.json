@@ -17,6 +17,7 @@
     "Depth-First Search",
     "Binary Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

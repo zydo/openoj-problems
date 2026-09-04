@@ -17,6 +17,7 @@
     "Sieve Theory",
     "Prime Number Sieve"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

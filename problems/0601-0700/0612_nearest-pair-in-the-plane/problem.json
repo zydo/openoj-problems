@@ -13,6 +13,7 @@
     "Database",
     "Nearest Pair of Points"
   ],
+  "type": "Database",
   "invocation": {
     "type": "sql",
     "parameters": [

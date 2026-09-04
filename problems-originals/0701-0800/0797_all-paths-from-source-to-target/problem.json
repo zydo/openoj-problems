@@ -16,6 +16,7 @@
     "Graph Theory",
     "Directed Acyclic Graph"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

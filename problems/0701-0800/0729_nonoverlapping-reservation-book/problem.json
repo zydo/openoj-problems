@@ -16,6 +16,7 @@
     "Segment Tree",
     "Ordered Set"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "ReservationBook",

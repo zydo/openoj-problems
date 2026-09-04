@@ -19,6 +19,7 @@
     "Doubly-Linked List",
     "Ordered Set"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "MaxStack",

@@ -16,6 +16,7 @@
     "Binary Lifting",
     "Lowest Common Ancestor"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

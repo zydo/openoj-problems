@@ -19,6 +19,7 @@
     "Hash Function",
     "Z Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

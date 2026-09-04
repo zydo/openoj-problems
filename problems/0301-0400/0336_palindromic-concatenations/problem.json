@@ -17,6 +17,7 @@
     "Trie",
     "Hash Function"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

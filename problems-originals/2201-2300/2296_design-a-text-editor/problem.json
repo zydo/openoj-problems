@@ -21,6 +21,7 @@
     "Simulation",
     "Doubly-Linked List"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "TextEditor",

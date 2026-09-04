@@ -18,6 +18,7 @@
     "Breadth-First Search",
     "Union-Find"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

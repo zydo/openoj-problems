@@ -17,6 +17,7 @@
     "Sqrt Decomposition",
     "Boyer–Moore Majority Vote Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "MajorityChecker",

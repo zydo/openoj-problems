@@ -29,6 +29,7 @@
     "Game Theory",
     "Zero-Sum Game"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

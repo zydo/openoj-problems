@@ -11,6 +11,7 @@
   "topics": [
     "Concurrency"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "concurrent",
     "class_name": "FooBar",

@@ -19,6 +19,7 @@
     "Queue",
     "Iterator"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "NestedSequenceIterator",

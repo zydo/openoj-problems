@@ -15,6 +15,7 @@
     "Dynamic Programming",
     "Sqrt Decomposition"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

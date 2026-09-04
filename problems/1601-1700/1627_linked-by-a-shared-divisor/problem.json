@@ -17,6 +17,7 @@
     "Union-Find",
     "Number Theory"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -16,6 +16,7 @@
     "Algorithm X",
     "Dancing Links"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

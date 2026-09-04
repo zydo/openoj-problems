@@ -21,6 +21,7 @@
     "Counting",
     "Enumeration"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

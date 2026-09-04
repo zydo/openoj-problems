@@ -16,6 +16,7 @@
     "Heap (Priority Queue)",
     "Shortest Path"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

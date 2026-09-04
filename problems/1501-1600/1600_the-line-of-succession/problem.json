@@ -16,6 +16,7 @@
     "Depth-First Search",
     "Design"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "SuccessionOrder",

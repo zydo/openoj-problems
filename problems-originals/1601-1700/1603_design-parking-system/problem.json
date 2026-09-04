@@ -15,6 +15,7 @@
     "Simulation",
     "Counting"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "ParkingSystem",

@@ -19,6 +19,7 @@
     "Breadth-First Search",
     "Memoization"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

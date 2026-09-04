@@ -17,6 +17,7 @@
     "Interactive",
     "Boyer–Moore Majority Vote Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

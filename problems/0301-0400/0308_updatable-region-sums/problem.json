@@ -18,6 +18,7 @@
     "Matrix",
     "Sqrt Decomposition"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "UpdatableRegions",

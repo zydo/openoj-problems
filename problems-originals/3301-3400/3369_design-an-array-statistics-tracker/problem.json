@@ -23,6 +23,7 @@
     "Data Stream",
     "Ordered Set"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "StatisticsTracker",

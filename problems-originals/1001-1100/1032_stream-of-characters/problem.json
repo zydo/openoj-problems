@@ -15,6 +15,7 @@
     "Data Stream",
     "Aho–Corasick Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "StreamChecker",

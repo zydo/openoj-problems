@@ -19,6 +19,7 @@
     "Design",
     "Linear Algebra"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "SparseVector",

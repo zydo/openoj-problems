@@ -19,6 +19,7 @@
     "Design",
     "Matrix"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "Spreadsheet",

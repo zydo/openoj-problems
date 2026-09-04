@@ -21,6 +21,7 @@
     "Knuth–Morris–Pratt Algorithm",
     "Boyer–Moore String-Search Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

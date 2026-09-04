@@ -17,6 +17,7 @@
     "Design",
     "Ordered Set"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "LogSystem",

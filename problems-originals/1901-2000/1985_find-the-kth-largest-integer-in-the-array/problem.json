@@ -21,6 +21,7 @@
     "Heap (Priority Queue)",
     "Quickselect"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

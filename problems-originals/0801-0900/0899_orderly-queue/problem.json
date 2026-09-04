@@ -17,6 +17,7 @@
     "Sorting",
     "Lexicographically Minimal String Rotation"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

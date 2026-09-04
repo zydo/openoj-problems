@@ -15,6 +15,7 @@
     "Euclidean Algorithm",
     "Greatest Common Divisor"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -15,6 +15,7 @@
     "Binary Search",
     "Newton's Method"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -12,6 +12,7 @@
     "Design",
     "Heap (Priority Queue)"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "SeatPool",

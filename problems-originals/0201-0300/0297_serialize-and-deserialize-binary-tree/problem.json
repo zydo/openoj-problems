@@ -17,6 +17,7 @@
     "Design",
     "Binary Tree"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "Codec",

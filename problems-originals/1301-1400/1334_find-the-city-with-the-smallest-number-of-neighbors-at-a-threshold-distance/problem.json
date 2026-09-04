@@ -17,6 +17,7 @@
     "Bellman–Ford Algorithm",
     "Floyd–Warshall Algorithm"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

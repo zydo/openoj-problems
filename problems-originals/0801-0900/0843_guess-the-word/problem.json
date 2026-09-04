@@ -16,6 +16,7 @@
     "Interactive",
     "Game Theory"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

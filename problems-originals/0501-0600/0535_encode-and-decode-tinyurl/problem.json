@@ -17,6 +17,7 @@
     "Design",
     "Hash Function"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "Codec",

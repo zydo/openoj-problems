@@ -19,6 +19,7 @@
     "Least Common Multiple",
     "Inclusion-Exclusion Principle"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

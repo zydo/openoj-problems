@@ -20,6 +20,7 @@
     "Monotonic Stack",
     "Monotonic Queue"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

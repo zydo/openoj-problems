@@ -10,6 +10,7 @@
     "Two Pointers",
     "Dynamic Programming"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

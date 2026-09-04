@@ -16,6 +16,7 @@
     "Heap (Priority Queue)",
     "Matrix"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

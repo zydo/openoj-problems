@@ -19,6 +19,7 @@
     "Graph Theory",
     "Geometry"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -17,6 +17,7 @@
     "Matrix",
     "Flow Network"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

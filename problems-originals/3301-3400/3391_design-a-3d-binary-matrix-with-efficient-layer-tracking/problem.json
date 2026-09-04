@@ -21,6 +21,7 @@
     "Matrix",
     "Ordered Set"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "Matrix3D",

@@ -17,6 +17,7 @@
     "Rejection Sampling",
     "Randomized"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "Solution",

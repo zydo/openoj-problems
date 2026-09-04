@@ -17,6 +17,7 @@
     "Euler's Totient Function",
     "Euler's Theorem"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

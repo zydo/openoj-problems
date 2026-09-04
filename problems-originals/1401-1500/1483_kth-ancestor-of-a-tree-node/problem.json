@@ -18,6 +18,7 @@
     "Design",
     "Binary Lifting"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "design",
     "class_name": "TreeAncestor",

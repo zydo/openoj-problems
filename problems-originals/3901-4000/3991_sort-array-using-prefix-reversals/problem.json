@@ -10,6 +10,7 @@
     "Breadth-First Search",
     "Array"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -10,6 +10,7 @@
   "topics": [
     "Concurrency"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "concurrent",
     "class_name": "H2O",

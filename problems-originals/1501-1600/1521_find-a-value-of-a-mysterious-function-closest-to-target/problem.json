@@ -19,6 +19,7 @@
     "Segment Tree",
     "Sparse Table"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",

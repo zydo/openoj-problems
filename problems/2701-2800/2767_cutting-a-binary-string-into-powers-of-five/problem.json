@@ -15,6 +15,7 @@
     "Dynamic Programming",
     "Backtracking"
   ],
+  "type": "Algorithms",
   "invocation": {
     "type": "function",
     "class_name": "Solution",
