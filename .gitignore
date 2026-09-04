@@ -1,7 +1,9 @@
+.DS_Store
 __pycache__/
 *.pyc
 node_modules/
-.DS_Store
 localonly/
 .localonly/
 .compat/
+.pytest_cache/
+.ruff_cache/

@@ -1048,67 +1048,67 @@
       "action": "resume with context"
     },
     {
-      "ts": "2026-09-04 05:25 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 05:25 PDT",
       "agent": "S1 (3901-3907)",
       "shard": "3901-4000",
-      "action": "logged; resume-with-context immediately; target stays 4 (floor)"
+      "action": "logged; resume-with-context immediately; target stays 4 (floor)",
+      "kind": "1302_per_minute"
     },
     {
-      "ts": "2026-09-04 05:38 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 05:38 PDT",
       "agent": "verify-runner 3801-3900",
       "shard": "3801-3900",
-      "action": "logged; resumed with context at chunk 3 (240 OK so far, 0 fail)"
+      "action": "logged; resumed with context at chunk 3 (240 OK so far, 0 fail)",
+      "kind": "1302_per_minute"
     },
     {
-      "ts": "2026-09-04 05:42 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 05:42 PDT",
       "agent": "S1 (3901-3907)",
       "shard": "3901-4000",
-      "action": "second 1302 for S1 (3rd in ~15 min incl. verify-runner); resumed with context; holding new dispatches until cluster passes"
+      "action": "second 1302 for S1 (3rd in ~15 min incl. verify-runner); resumed with context; holding new dispatches until cluster passes",
+      "kind": "1302_per_minute"
     },
     {
-      "ts": "2026-09-04 05:47 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 05:47 PDT",
       "agent": "S5 (3926-3931)",
       "shard": "3901-4000",
-      "action": "4th 1302 in ~20 min; resumed with context (mid first-bundle expecteds)"
+      "action": "4th 1302 in ~20 min; resumed with context (mid first-bundle expecteds)",
+      "kind": "1302_per_minute"
     },
     {
-      "ts": "2026-09-04 05:52 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 05:52 PDT",
       "agent": "S4 + S3",
       "shard": "3901-4000",
-      "action": "wave hit every in-flight agent (6th+7th 1302 in ~25 min); both resumed with context; target pinned at floor 4, no new dispatches until quiet"
+      "action": "wave hit every in-flight agent (6th+7th 1302 in ~25 min); both resumed with context; target pinned at floor 4, no new dispatches until quiet",
+      "kind": "1302_per_minute"
     },
     {
-      "ts": "2026-09-04 05:56 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 05:56 PDT",
       "agent": "S4 (3920-3925)",
       "shard": "3901-4000",
-      "action": "resumed with context; 3920 green, 3921 mid-gates"
+      "action": "resumed with context; 3920 green, 3921 mid-gates",
+      "kind": "1302_per_minute"
     },
     {
-      "ts": "2026-09-04 06:06 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 06:06 PDT",
       "agent": "S5 (3926-3931)",
       "shard": "3901-4000",
-      "action": "another transient 1302; resumed with context (post-rename, pre-statement)"
+      "action": "another transient 1302; resumed with context (post-rename, pre-statement)",
+      "kind": "1302_per_minute"
     },
     {
-      "ts": "2026-09-04 06:12 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 06:12 PDT",
       "agent": "S7 (3938-3943)",
       "shard": "3901-4000",
-      "action": "another transient 1302 (all four S-batches hit at least once); resumed with context, nothing landed yet"
+      "action": "another transient 1302 (all four S-batches hit at least once); resumed with context, nothing landed yet",
+      "kind": "1302_per_minute"
     },
     {
-      "ts": "2026-09-04 06:53 PDT",
-      "class": "1302_per_minute",
+      "ts": "2026-09-03 06:53 PDT",
       "agent": "S11 + S12",
       "shard": "3901-4000",
-      "action": "two transient 1302s; both resumed with context mid-bundle"
+      "action": "two transient 1302s; both resumed with context mid-bundle",
+      "kind": "1302_per_minute"
     }
   ],
   "pool_resets_at": "2026-09-01T02:24:24-07:00",
