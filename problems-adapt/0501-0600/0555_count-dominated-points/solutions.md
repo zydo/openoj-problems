@@ -9,7 +9,7 @@ point's, so the current point is dominated precisely when one of the visited
 points also has a strictly larger `y`. One running maximum of `y` therefore
 answers the question for every point — no pairwise scanning needed.
 
-Equal `x` is the sole trap, because domination requires `x` to be *strictly*
+Equal `x` is the sole trap, because domination requires `x` to be _strictly_
 larger and equal-`x` points cannot dominate one another. Sorting each
 equal-`x` group by `y` ascending dissolves it: when the sweep reaches a
 point, the running maximum of `y` was set either by a strictly larger-`x`

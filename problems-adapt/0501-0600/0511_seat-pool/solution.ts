@@ -28,7 +28,7 @@ class SeatPool {
     private pushMin(seat: number): void {
         const heap = this.returned;
         heap.push(seat);
-        for (let child = heap.length - 1; child > 0; ) {
+        for (let child = heap.length - 1; child > 0;) {
             const parent = (child - 1) >> 1;
             if (heap[parent] <= heap[child]) {
                 break;
@@ -44,7 +44,7 @@ class SeatPool {
         const last = heap.pop() as number;
         if (heap.length > 0) {
             heap[0] = last;
-            for (let parent = 0; ; ) {
+            for (let parent = 0; ;) {
                 const left = parent * 2 + 1;
                 const right = left + 1;
                 let smallest = parent;

@@ -5,9 +5,7 @@ class InOrderTreeIterator {
     // Push the left spine of the root: the stack top is the smallest
     // unvisited node and the stack holds exactly one root-to-node path
     // (O(h) memory).
-    InOrderTreeIterator(TreeNode *root) {
-        pushSpine(root);
-    }
+    InOrderTreeIterator(TreeNode *root) { pushSpine(root); }
 
     int next() {
         TreeNode *node = stack.back();
@@ -18,9 +16,7 @@ class InOrderTreeIterator {
         return node->val;
     }
 
-    bool hasNext() {
-        return !stack.empty();
-    }
+    bool hasNext() { return !stack.empty(); }
 
   private:
     // Everything on this path is smaller than what lies below it, so the

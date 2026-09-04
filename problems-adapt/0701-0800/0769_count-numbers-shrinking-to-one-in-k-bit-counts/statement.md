@@ -6,12 +6,12 @@ The binary string `s` spells out a number `n` (most significant digit
 first, no leading zeros), and the integer `k` bounds how many bit counts
 you may spend.
 
-One *bit count* replaces a number by the count of `1`s in its binary
+One _bit count_ replaces a number by the count of `1`s in its binary
 form. For instance, `13` is `"1101"` in binary, so one bit count shrinks
 it to `3`; `3` is `"11"`, so another shrinks it to `2`; and `2` is
 `"10"`, so a third leaves `1`.
 
-A positive integer *shrinks to one within `k` bit counts* when at most
+A positive integer _shrinks to one within `k` bit counts_ when at most
 `k` of them, applied one after another, bring it down to `1`.
 
 Return how many positive integers strictly below `n` shrink to one

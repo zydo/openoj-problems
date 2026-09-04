@@ -39,7 +39,7 @@ for a tree that is one long chain.
 ## Iterative Stack
 
 This one consumes `preorder` in a plain loop, one value at a time, and
-keeps the *spine*: the chain of already-built nodes whose left sides may
+keeps the _spine_: the chain of already-built nodes whose left sides may
 still be growing and whose right child is still pending. A cursor into
 `inorder` marks the next entry awaiting its turn — and since inorder lists
 left subtree, root, right, a spine top equal to `inorder[cursor]` means

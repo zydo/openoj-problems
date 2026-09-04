@@ -7,7 +7,10 @@ pub struct TransitLog {
 
 impl TransitLog {
     pub fn new() -> Self {
-        TransitLog { checkins: HashMap::new(), totals: HashMap::new() }
+        TransitLog {
+            checkins: HashMap::new(),
+            totals: HashMap::new(),
+        }
     }
 
     pub fn tapIn(&mut self, id: i32, stop: String, t: i32) {

@@ -29,7 +29,8 @@ class NewsBoard {
             if (timeline == posts.end()) {
                 continue;
             }
-            for (int index = std::max(0, (int)timeline->second.size() - 10); index < (int)timeline->second.size(); index++) {
+            for (int index = std::max(0, (int)timeline->second.size() - 10); index < (int)timeline->second.size();
+                 index++) {
                 heap.push(timeline->second[index]);
                 if ((int)heap.size() > 10) {
                     heap.pop();
@@ -44,9 +45,7 @@ class NewsBoard {
         return feed;
     }
 
-    void follow(int followerId, int followeeId) {
-        following[followerId].insert(followeeId);
-    }
+    void follow(int followerId, int followeeId) { following[followerId].insert(followeeId); }
 
     void unfollow(int followerId, int followeeId) {
         auto found = following.find(followerId);

@@ -24,7 +24,7 @@ Stepping the example `[[6,2],[5,3],[5,4],[4,5]]` right to left:
 3. `i = 2` and `i = 1`: both cooldowns also jump past the end, so each keeps
    its own 5 points — `dp[2] = dp[1] = 5`.
 4. `i = 0`: skipping is worth `dp[1] = 5`; solving gives `6 + dp[0 + 2 + 1] =
-   6 + 4 = 10`, so `dp[0] = 10`.
+6 + 4 = 10`, so `dp[0] = 10`.
 
 One reverse pass fills the table in constant work per question, and the only
 storage is the single 1-D array — the post-cooldown landing spot is a plain

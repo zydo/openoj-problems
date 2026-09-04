@@ -3,7 +3,7 @@
 ## Binary search on the value range with a staircase count
 
 The grid offers no position order that lists its values, so the search runs
-over *values* instead: everything of interest lies between `grid[0][0]` and
+over _values_ instead: everything of interest lies between `grid[0][0]` and
 `grid[n-1][n-1]`. The count of entries at most `x` never decreases as `x`
 grows, which makes it a valid bisection predicate — the loop keeps the
 smallest value whose count reaches `k`, and that value is the answer. It is

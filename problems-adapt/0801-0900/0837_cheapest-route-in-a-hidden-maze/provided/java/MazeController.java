@@ -9,6 +9,7 @@ import java.util.List;
  * documented in the starter. Constructed from the case state: the grid,
  * the start cell, the goal cell, then the query budget. */
 public class MazeController {
+
     private static final String U = "U";
     private static final String D = "D";
     private static final String L = "L";
@@ -63,11 +64,16 @@ public class MazeController {
 
     private int[] delta(String direction) {
         switch (direction) {
-            case U: return new int[] {-1, 0};
-            case D: return new int[] {1, 0};
-            case L: return new int[] {0, -1};
-            case R: return new int[] {0, 1};
-            default: throw new IllegalArgumentException("Direction must be one of U, D, L, R");
+            case U:
+                return new int[] { -1, 0 };
+            case D:
+                return new int[] { 1, 0 };
+            case L:
+                return new int[] { 0, -1 };
+            case R:
+                return new int[] { 0, 1 };
+            default:
+                throw new IllegalArgumentException("Direction must be one of U, D, L, R");
         }
     }
 

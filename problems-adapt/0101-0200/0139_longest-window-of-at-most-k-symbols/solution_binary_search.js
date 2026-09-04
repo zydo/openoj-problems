@@ -37,7 +37,8 @@ var longestKSymbolWindow = function (s, k) {
     };
     // A substring of a valid window is valid too, so feasibility is
     // monotone in the length — binary search for the longest feasible.
-    let lo = 0, hi = s.length;
+    let lo = 0,
+        hi = s.length;
     while (lo < hi) {
         const mid = lo + ((hi - lo + 1) >> 1);
         if (feasible(mid)) {

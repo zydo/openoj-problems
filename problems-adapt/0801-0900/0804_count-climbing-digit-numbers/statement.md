@@ -6,7 +6,7 @@ You are given two integers `l` and `r`, each written as a decimal string, and
 a base `b` from `2` to `10`.
 
 Write each integer in base `b` and read its digits from most significant to
-least significant. The number *climbs* when no digit is smaller than the digit
+least significant. The number _climbs_ when no digit is smaller than the digit
 before it.
 
 Return how many integers between `l` and `r`, inclusive, climb in base `b`.

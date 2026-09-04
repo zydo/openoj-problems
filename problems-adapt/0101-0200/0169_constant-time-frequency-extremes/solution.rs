@@ -48,7 +48,12 @@ impl FrequencyExtremes {
     }
 
     fn new_node(&mut self, key: String) -> usize {
-        let node = FreqNode { key, prev: NIL, next: NIL, bucket: NIL };
+        let node = FreqNode {
+            key,
+            prev: NIL,
+            next: NIL,
+            bucket: NIL,
+        };
         match self.free_nodes.pop() {
             Some(index) => {
                 self.node_slab[index] = node;
@@ -66,7 +71,13 @@ impl FrequencyExtremes {
         let tail = self.new_node(String::new());
         self.node_slab[head].next = tail;
         self.node_slab[tail].prev = head;
-        let bucket = FreqBucket { count, head, tail, prev: NIL, next: NIL };
+        let bucket = FreqBucket {
+            count,
+            head,
+            tail,
+            prev: NIL,
+            next: NIL,
+        };
         match self.free_buckets.pop() {
             Some(index) => {
                 self.bucket_slab[index] = bucket;

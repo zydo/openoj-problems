@@ -5,7 +5,7 @@
 Each queried value is really a question about `nums`, so one left-to-right
 sweep of `nums` can settle the entire query list. The sweep carries a stack
 of values that have not yet met a greater one; whenever the arriving value
-exceeds the stack top, it is — by the stack's own discipline — the *first*
+exceeds the stack top, it is — by the stack's own discipline — the _first_
 greater value to the right of everything it pops, since any closer, larger
 value would have popped those entries earlier. Each popped value writes
 `next_greater[value] = current` into a map, and the arriving value then takes

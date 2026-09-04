@@ -11,7 +11,7 @@ Implement the `RecencyCache` class:
 - `int get(int key)` — return the stored value for `key`, or `-1` if the cache
   does not hold it.
 - `void put(int key, int value)` — store `value` under `key`, replacing any
-  value already there. If storing a *new* key would exceed `capacity`, first
+  value already there. If storing a _new_ key would exceed `capacity`, first
   discard the least recently touched key.
 
 Both `get` and `put` count as touching a key, including a `put` that merely

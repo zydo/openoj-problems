@@ -6,7 +6,7 @@ Root the tree at node `0` and view each node's degree cap `k` as a
 budget to be split between the edge reaching its parent and the edges
 reaching its children. The DP therefore computes, for every node `u`,
 two numbers over its subtree: `g[u]`, the best retained weight when the
-parent edge is *not* counted against `u`, and `f[u]`, the best when it
+parent edge is _not_ counted against `u`, and `f[u]`, the best when it
 is — the second case has one slot fewer, so at most `k - 1` child edges
 may stay.
 

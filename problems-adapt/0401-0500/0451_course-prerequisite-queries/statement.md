@@ -8,7 +8,7 @@ course `a` has to be finished before course `b` may begin.
 
 Rules chain. If one rule places `x` ahead of `y` and another places `y` ahead
 of `z`, then `x` is forced ahead of `z` as well, even though no single entry
-says so. Call one course a *prerequisite* of another whenever some chain of
+says so. Call one course a _prerequisite_ of another whenever some chain of
 rules forces that order.
 
 Every entry `[u, v]` of `queries` asks one yes-or-no question: is `u` a

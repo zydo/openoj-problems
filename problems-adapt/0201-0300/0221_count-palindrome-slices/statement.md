@@ -2,7 +2,7 @@
 
 ## Description
 
-A *slice* of `s` is any run of consecutive characters taken from it. A slice is
+A _slice_ of `s` is any run of consecutive characters taken from it. A slice is
 a **palindrome** when reversing it leaves the text unchanged.
 
 Return how many slices of `s` are palindromes. Slices are counted by where they

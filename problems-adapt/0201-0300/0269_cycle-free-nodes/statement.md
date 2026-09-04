@@ -58,7 +58,7 @@ and everything else has to earn the label through its successors.
 
 ### Hint 2
 
-A node deserves the label once *all* of its out-neighbors have it. That is a
+A node deserves the label once _all_ of its out-neighbors have it. That is a
 counting condition, so keep a per-node tally of out-edges not yet accounted
 for, and build the edge-reversed adjacency list so you can find the nodes whose
 tally to decrement.

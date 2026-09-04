@@ -10,7 +10,10 @@ pub struct JobBoard {
 
 impl JobBoard {
     pub fn new(jobs: Vec<Vec<i32>>) -> Self {
-        let mut board = JobBoard { records: HashMap::new(), heap: BinaryHeap::new() };
+        let mut board = JobBoard {
+            records: HashMap::new(),
+            heap: BinaryHeap::new(),
+        };
         for job in &jobs {
             let (user_id, job_id, priority) = (job[0], job[1], job[2]);
             board.records.insert(job_id, (priority, user_id));

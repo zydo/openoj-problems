@@ -59,6 +59,6 @@ then be read off the run list without touching the string again.
 ### Hint 3
 
 Both moves are capped by supply: lengthening a run by one needs a spare
-matching character *outside* that run, and joining two runs around a
+matching character _outside_ that run, and joining two runs around a
 one-character gap gains an extra character only if a third copy of the
 character lives beyond those two runs.

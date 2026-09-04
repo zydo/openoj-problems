@@ -10,7 +10,7 @@ length end there. Five numbers summarize a whole layer of the construction.
 ![The allowed-successor graph on a, e, i, o, u; each arrow is a legal adjacency.](figures/solution-vowel-graph.svg)
 
 All five entries begin at 1, standing for the five one-letter strings. A
-transition then reads the table *before* writing it: strings of the next
+transition then reads the table _before_ writing it: strings of the next
 length ending in `a` come from old strings ending in `e`, `i`, or `u`;
 those ending in `e` from old `a` or `i`; `i` from `e` or `o`; `o` only from
 `i`; and `u` from `i` or `o`. Binding the five new values in one

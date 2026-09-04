@@ -2,7 +2,7 @@
 
 ## Description
 
-Pack `words` into a single string called the *store*, whose last character is
+Pack `words` into a single string called the _store_, whose last character is
 `'#'`. A word can be read out of the store at position `p` when the characters
 running from `p` up to the first `'#'` at or after `p` spell that word exactly.
 Every entry of `words` has to be readable somewhere; two equal entries are
@@ -53,7 +53,7 @@ whenever some other stored word finishes with it.
 
 ### Hint 2
 
-Throw away every word that is a *proper* suffix of another word — proper
+Throw away every word that is a _proper_ suffix of another word — proper
 matters, or two identical words would delete each other. Whatever is left pays
 its own length plus one character for the `'#'` that closes it.
 

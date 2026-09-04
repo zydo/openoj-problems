@@ -13,7 +13,7 @@ are already two `"H"` and one `"O"`.
 Second a **completion** requirement: molecule `k + 1` may not open until
 molecule `k` has closed. Permits alone cannot promise this. Suppose a
 hydrogen thread emitted and returned its permit immediately — a hydrogen
-thread of the *next* molecule could take that permit and emit before this
+thread of the _next_ molecule could take that permit and emit before this
 molecule's oxygen ever did, and one group would straddle the boundary the
 judge cuts on. So the three threads part together: a barrier that trips on
 three arrivals holds each of them until all three atoms are in the log, and
@@ -21,7 +21,7 @@ only then does each thread hand back its permit. The barrier is cyclic — it
 resets when it trips — so one object serves every molecule.
 
 Both methods therefore run the same four steps — acquire, emit, wait at the
-barrier, release — and the step order *is* the correctness argument. Since a
+barrier, release — and the step order _is_ the correctness argument. Since a
 permit is released strictly after the barrier trips, no thread of the next
 molecule can emit before all three atoms of the current one have, which is
 precisely "every consecutive group of three holds two `H` and one `O`".

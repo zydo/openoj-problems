@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution:
     def carpoolFuel(self, roads: list[list[int]], seats: int) -> int:
         n = len(roads) + 1

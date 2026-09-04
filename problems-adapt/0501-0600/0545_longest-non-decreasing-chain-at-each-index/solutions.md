@@ -13,7 +13,7 @@ search needs.
 
 Equal neighbors are the one twist, and `bisect_right` is the whole answer to
 it: the search targets the first tail strictly greater than the arrival, so
-a value equal to an existing tail *extends* that chain instead of replacing
+a value equal to an existing tail _extends_ that chain instead of replacing
 it. An arrival larger than every tail lands past the end and grows the table
 by one, starting a new longest chain; otherwise it overwrites the first tail
 it can improve, restoring the minimal-ending invariant. Either way, the

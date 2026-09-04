@@ -2,7 +2,7 @@
 
 ## Description
 
-Call a positive integer *five-smooth* when no prime above 5 divides it — that
+Call a positive integer _five-smooth_ when no prime above 5 divides it — that
 is, when its prime factors are drawn only from `2`, `3` and `5`. The number `1`
 qualifies: nothing divides it, so nothing above 5 does.
 

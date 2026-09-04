@@ -11,7 +11,7 @@ graph over masks — count the components, then take the largest.
 
 Repeated words would multiply nodes without adding edges, so the first pass
 counts masks with a `Counter` and lays down one union-find node per
-*distinct* mask, seeded with that mask's multiplicity. Duplicates therefore
+_distinct_ mask, seeded with that mask's multiplicity. Duplicates therefore
 merge into their component for free, courtesy of the swap-for-itself move —
 example 3's two "uv"s — and no bookkeeping for them remains.
 

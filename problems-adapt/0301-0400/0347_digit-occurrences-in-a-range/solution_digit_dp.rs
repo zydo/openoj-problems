@@ -41,7 +41,14 @@ impl Solution {
         let mut completions: i64 = 0;
         let mut occurrences: i64 = 0;
         for digit in 0..=max_digit {
-            let inner = Self::solve(digits, d, pos + 1, tight && digit == max_digit, started || digit > 0, memo);
+            let inner = Self::solve(
+                digits,
+                d,
+                pos + 1,
+                tight && digit == max_digit,
+                started || digit > 0,
+                memo,
+            );
             completions += inner.0;
             occurrences += inner.1;
             // Placing d here shows d in every completion below, unless it is

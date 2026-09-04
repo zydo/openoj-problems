@@ -56,8 +56,7 @@ so far can ever forbid a letter later: whether `x` has been spent, and how many
 
 ### Hint 2
 
-That is six situations in all — two choices for the first fact, three (0, 1 or
-2) for the second. Rather than track strings, track *how many* strings sit in
+That is six situations in all — two choices for the first fact, three (0, 1 or 2) for the second. Rather than track strings, track _how many_ strings sit in
 each of the six situations at each length.
 
 ### Hint 3

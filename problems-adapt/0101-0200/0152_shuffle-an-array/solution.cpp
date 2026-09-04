@@ -10,9 +10,7 @@ class Solution {
     // exactly equally likely, and reset() is a plain copy.
     explicit Solution(std::vector<int> nums) : original(std::move(nums)) {}
 
-    std::vector<int> reset() {
-        return original;
-    }
+    std::vector<int> reset() { return original; }
 
     std::vector<int> shuffle() {
         std::vector<int> array = original;

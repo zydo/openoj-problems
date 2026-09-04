@@ -9,7 +9,7 @@ class MinHeap<T> {
     push(item: T): void {
         const items = this.items;
         items.push(item);
-        for (let child = items.length - 1; child > 0; ) {
+        for (let child = items.length - 1; child > 0;) {
             const parent = (child - 1) >> 1;
             if (!this.before(items[child], items[parent])) {
                 break;
@@ -25,7 +25,7 @@ class MinHeap<T> {
         const last = items.pop() as T;
         if (items.length > 0) {
             items[0] = last;
-            for (let parent = 0; ; ) {
+            for (let parent = 0; ;) {
                 const left = parent * 2 + 1;
                 const right = left + 1;
                 let first = parent;
@@ -56,7 +56,7 @@ class MovieRentalDesk {
     private unrented = new Map<number, MinHeap<ShelfEntry>>(); // movie -> shelf
     private unrentedToken = new Map<number, number>(); // copy -> live shelf token
     private rented: MinHeap<RentedEntry> = new MinHeap((a, b) =>
-        a[0] !== b[0] ? a[0] < b[0] : a[1] !== b[1] ? a[1] < b[1] : a[2] < b[2]
+        a[0] !== b[0] ? a[0] < b[0] : a[1] !== b[1] ? a[1] < b[1] : a[2] < b[2],
     );
     private rentedToken = new Map<number, number>(); // copy -> live rented token
     private serial = 0;

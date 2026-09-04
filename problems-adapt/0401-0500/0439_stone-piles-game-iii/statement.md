@@ -59,7 +59,7 @@ opponent's, over the suffix that starts at pile `i`.
 
 From pile `i` the mover may swallow piles `i..j` for `j` in `i, i+1, i+2`.
 Earning `take` for those, the opponent then realizes a margin of `dp[j+1]`
-*against* the mover, so the candidate is `take - dp[j+1]`; `dp[i]` is the
+_against_ the mover, so the candidate is `take - dp[j+1]`; `dp[i]` is the
 maximum of the three.
 
 ### Hint 3

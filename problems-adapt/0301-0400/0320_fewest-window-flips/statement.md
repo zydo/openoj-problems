@@ -2,8 +2,8 @@
 
 ## Description
 
-`nums` holds only zeros and ones, and `k` is a positive length. One *window
-flip* picks `k` neighbouring positions of `nums` and inverts all of them at
+`nums` holds only zeros and ones, and `k` is a positive length. One _window
+flip_ picks `k` neighbouring positions of `nums` and inverts all of them at
 once — each `0` there turns into a `1` and each `1` into a `0`. The window has
 to lie entirely inside the array.
 
@@ -58,7 +58,7 @@ sweep never has a real choice to make.
 ### Hint 2
 
 Rewriting `k` entries per flip is too slow. What a position actually needs is
-the *parity* of the flips whose windows still cover it: its current value is
+the _parity_ of the flips whose windows still cover it: its current value is
 `nums[i]` XOR that parity.
 
 ### Hint 3

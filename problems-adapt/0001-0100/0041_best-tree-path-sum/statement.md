@@ -58,7 +58,7 @@ Split the problem by that node: what does a path turning at `v` look like?
 
 It is `v` plus something descending from `v` into the left, plus something
 descending into the right — either of which may be empty. So for each node,
-compute the best sum of a downward path that *starts* at it and uses at most
+compute the best sum of a downward path that _starts_ at it and uses at most
 one child.
 
 ### Hint 3

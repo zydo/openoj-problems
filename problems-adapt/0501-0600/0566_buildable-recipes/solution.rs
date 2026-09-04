@@ -1,5 +1,9 @@
 impl Solution {
-    pub fn buildable_recipes(recipes: Vec<String>, ingredients: Vec<Vec<String>>, supplies: Vec<String>) -> Vec<String> {
+    pub fn buildable_recipes(
+        recipes: Vec<String>,
+        ingredients: Vec<Vec<String>>,
+        supplies: Vec<String>,
+    ) -> Vec<String> {
         let have: std::collections::HashSet<&String> = supplies.iter().collect();
         let mut index: std::collections::HashMap<&String, usize> = std::collections::HashMap::new();
         for (i, name) in recipes.iter().enumerate() {

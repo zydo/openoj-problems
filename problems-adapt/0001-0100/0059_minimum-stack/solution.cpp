@@ -18,9 +18,7 @@ class MinimumStack {
         entries.pop_back();
     }
 
-    int top() {
-        return entries.back().value;
-    }
+    int top() { return entries.back().value; }
 
     int minimum() {
         // The top pair alone answers both queries in O(1).

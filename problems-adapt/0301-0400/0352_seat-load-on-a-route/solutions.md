@@ -10,7 +10,7 @@ one accumulation pass: add the deltas in mark order and compare the running
 load against `capacity`.
 
 Marks stay within 0…1000, which is why a fixed 1001-slot array works and no
-event sorting is needed: scanning the slots by index *is* travelling the
+event sorting is needed: scanning the slots by index _is_ travelling the
 route. The placement of each negative delta carries the one semantic that
 matters: an alighting lands on the group's `end` mark itself, so while
 accumulating, seats released at a mark are credited ahead of any boarding

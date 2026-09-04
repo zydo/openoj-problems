@@ -9,12 +9,19 @@ pub struct PlayerRatings {
 
 impl PlayerRatings {
     pub fn new(players: Vec<String>, teams: Vec<String>, scores: Vec<i32>) -> Self {
-        let mut ratings = PlayerRatings { info: HashMap::new(), by_team: HashMap::new() };
+        let mut ratings = PlayerRatings {
+            info: HashMap::new(),
+            by_team: HashMap::new(),
+        };
         for ((player, team), rating) in players.into_iter().zip(teams).zip(scores) {
             ratings.info.insert(player.clone(), (team.clone(), rating));
             // The min of (-rating, name) is exactly the required winner:
             // highest rating first, ties to the smaller name.
-            ratings.by_team.entry(team).or_default().push(Reverse((-rating, player)));
+            ratings
+                .by_team
+                .entry(team)
+                .or_default()
+                .push(Reverse((-rating, player)));
         }
         ratings
     }

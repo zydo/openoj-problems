@@ -11,7 +11,7 @@ carry the token also tells you where `2^(j+1)` moves carry it, by doing one
 
 The code builds two tables for each `j < bit_length(k)`: `up[j][x]`, the cell
 holding the token after `2^j` moves starting from `x`, and `sm[j][x]`, the
-sum of the indices that *receive* the token during those moves. Level `0` is
+sum of the indices that _receive_ the token during those moves. Level `0` is
 `receiver[x]` in both roles, and each higher level splices two lower jumps:
 the landing cell follows `up[j-1]` twice, while the sums add
 `sm[j-1][x] + sm[j-1][up[j-1][x]]`, since the second jump's contributions

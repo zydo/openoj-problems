@@ -1,4 +1,10 @@
-function minimumLimitedRouteCost(nodeCount: number, links: number[][], source: number, target: number, maxIntermediates: number): number {
+function minimumLimitedRouteCost(
+    nodeCount: number,
+    links: number[][],
+    source: number,
+    target: number,
+    maxIntermediates: number,
+): number {
     const INF = Infinity;
     // After r full rounds, dist[v] is the cheapest cost using at
     // most r edges; maxIntermediates internal nodes allow maxIntermediates+1 links, so run maxIntermediates+1 rounds.

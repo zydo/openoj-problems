@@ -19,7 +19,8 @@ var countBoundedSums = function (nums, lower, upper) {
     const tree = new Int32Array(m + 1);
     // Number of ranks at most bound.
     const uptoRank = (bound) => {
-        let lo = 0, hi = m;
+        let lo = 0,
+            hi = m;
         while (lo < hi) {
             const mid = (lo + hi) >> 1;
             if (ranks[mid] <= bound) {

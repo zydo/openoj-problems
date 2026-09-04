@@ -48,21 +48,21 @@ class CoverageLedger {
     std::vector<int> ends;
 
     /** First index with values[index] >= target (bisect_left). */
-    static int lowerBound(const std::vector<int>& values, int target) {
+    static int lowerBound(const std::vector<int> &values, int target) {
         return int(std::lower_bound(values.begin(), values.end(), target) - values.begin());
     }
 
     /** First index with values[index] > target (bisect_right). */
-    static int upperBound(const std::vector<int>& values, int target) {
+    static int upperBound(const std::vector<int> &values, int target) {
         return int(std::upper_bound(values.begin(), values.end(), target) - values.begin());
     }
 
-    static void splice(std::vector<int>& values, int from, int to, int value) {
+    static void splice(std::vector<int> &values, int from, int to, int value) {
         values.erase(values.begin() + from, values.begin() + to);
         values.insert(values.begin() + from, value);
     }
 
-    static void replace(std::vector<int>& values, int from, int to, const std::vector<int>& replacement) {
+    static void replace(std::vector<int> &values, int from, int to, const std::vector<int> &replacement) {
         values.erase(values.begin() + from, values.begin() + to);
         values.insert(values.begin() + from, replacement.begin(), replacement.end());
     }

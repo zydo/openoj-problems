@@ -1,4 +1,6 @@
 from math import isqrt
+
+
 class Solution:
     def secondsToLevel(self, mountainHeight: int, workerTimes: list[int]) -> int:
         def units(wt, t):

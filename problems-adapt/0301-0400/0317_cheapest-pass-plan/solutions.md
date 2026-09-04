@@ -12,7 +12,7 @@ inherits `dp[d - 1]` unchanged. A riding day `d` must lie inside some pass, and
 that pass is one of three lengths, so the recurrence branches three ways.
 
 The step that makes the recurrence finite is noticing that a covering pass can
-always be slid until it *ends* on day `d`. Sliding it later would push its
+always be slid until it _ends_ on day `d`. Sliding it later would push its
 start past `d` and stop covering `d`; sliding it earlier only shrinks the set
 of days behind `d` that it happens to catch, and `dp` never decreases, so that
 cannot help. With the end pinned, a pass of length `u` occupies exactly the

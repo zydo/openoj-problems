@@ -6,11 +6,11 @@ The percentile of an alert only means something next to its own region's
 alerts, so the window partitions by `region`; within each partition,
 ordering by `risk_score DESC` puts the riskiest alert of the region at
 percentile 0. `PERCENT_RANK()` evaluates to `(rank - 1) / (partition rows
-- 1)`, so for a region of `k` rows the leading row scores 0, the next
-`1 / (k - 1)`, and so on — a region keeps its top row or rows according to
-how many land strictly below 0.05. Alert IDs are unique, but scores are
-not: a tie at the top shares one rank, so a tied group crosses the cut
-together instead of being sliced apart.
+
+- 1)`, so for a region of `k`rows the leading row scores 0, the next`1 / (k - 1)`, and so on — a region keeps its top row or rows according to
+  how many land strictly below 0.05. Alert IDs are unique, but scores are
+  not: a tie at the top shares one rank, so a tied group crosses the cut
+  together instead of being sliced apart.
 
 A window function's value cannot feed the `WHERE` of the same `SELECT`
 that computes it, so the ranking happens in a subquery and the filter

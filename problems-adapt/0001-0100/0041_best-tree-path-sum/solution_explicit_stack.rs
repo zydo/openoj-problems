@@ -34,8 +34,16 @@ impl Solution {
                     // Both subtrees finished: right's gain sits above left's
                     // on the gain stack (left ran first). Missing children
                     // left nothing to pop.
-                    let right_gain = if node.right.is_some() { Some(gains.pop().unwrap()) } else { None };
-                    let left_gain = if node.left.is_some() { Some(gains.pop().unwrap()) } else { None };
+                    let right_gain = if node.right.is_some() {
+                        Some(gains.pop().unwrap())
+                    } else {
+                        None
+                    };
+                    let left_gain = if node.left.is_some() {
+                        Some(gains.pop().unwrap())
+                    } else {
+                        None
+                    };
                     // Clamp each side at 0: a negative branch is better left
                     // unvisited.
                     let down_left = left_gain.unwrap_or(0).max(0);

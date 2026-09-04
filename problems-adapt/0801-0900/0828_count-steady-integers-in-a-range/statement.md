@@ -2,7 +2,7 @@
 
 ## Description
 
-Call an integer *steady* when each pair of neighboring digits in its decimal
+Call an integer _steady_ when each pair of neighboring digits in its decimal
 writing differs by at most `k` — with `k = 2`, the number `242` is steady
 (2 next to 4, 4 next to 2) while `249` is not (4 next to 9). The difference
 between two digit values `x` and `y` means `abs(x - y)`.

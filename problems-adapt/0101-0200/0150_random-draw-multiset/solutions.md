@@ -5,7 +5,7 @@
 One occurrence per value was the luxury of the set version; here a value may
 sit in many slots at once, so the map side of the classic pairing generalizes:
 the container keeps `values`, a plain array holding one entry per occurrence,
-and `indices`, a hash map from each value to the *sorted list of slots* where
+and `indices`, a hash map from each value to the _sorted list of slots_ where
 its copies sit. Presence is "does the list exist", the leftmost copy is
 `positions[0]`, and the array still fronts the report: `draw` answers
 `values[0]`.
@@ -17,7 +17,8 @@ all.
 
 `remove` takes the leftmost slot `i` of the value and heals the array in the
 usual constant-time way: the final entry is copied onto slot `i` and the last
-slot is dropped. Two bookkeeping paths follow from *which* value moved.
+slot is dropped. Two bookkeeping paths follow from _which_ value moved.
+
 - A different value moved: its list swaps the final slot for slot `i`, both
   maintained in sorted order by construction (the final slot is the largest
   anywhere, slot `i` was just vacated below the removed value's own copies).

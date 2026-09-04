@@ -2,7 +2,7 @@
 
 ## Description
 
-A *slice* of `s` is a run of consecutive characters. Report how long the longest
+A _slice_ of `s` is a run of consecutive characters. Report how long the longest
 slice can be while still starting at two or more distinct positions of `s`.
 
 The two starting positions are otherwise unrestricted, so the appearances are
@@ -44,8 +44,8 @@ Explanation: "issi" begins at positions 1 and 4.
 
 ### Hint 1
 
-Turn the question into a yes-or-no one: *is there any slice of length `L` that
-occurs twice?* Trim a character off the end of both appearances and you have the
+Turn the question into a yes-or-no one: _is there any slice of length `L` that
+occurs twice?_ Trim a character off the end of both appearances and you have the
 same fact for `L - 1`, so the lengths that answer yes are exactly `0` through
 the answer.
 

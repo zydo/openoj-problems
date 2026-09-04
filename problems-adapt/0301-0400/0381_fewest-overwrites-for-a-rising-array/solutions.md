@@ -15,7 +15,7 @@ alone costs 0, while replacing it with any pool entry below `values[0]` costs
 At each later position every state `(last, ops)` forks two ways: keep
 `values[i]` when it strictly exceeds `last`, at no cost, or overwrite it with
 the smallest pool entry strictly greater than `last` (found with
-`bisect_right`) for one extra move. Taking the *smallest* fitting entry is
+`bisect_right`) for one extra move. Taking the _smallest_ fitting entry is
 always safe because it constrains the positions still to come the least.
 
 Example 2 shows why both forks must survive: with `values = [5,9,7,8]` and

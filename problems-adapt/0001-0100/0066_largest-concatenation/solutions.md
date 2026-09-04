@@ -20,7 +20,7 @@ strictly larger reading — so in a sorted string no such swap exists, and any
 other arrangement differs from it by adjacent swaps that never gain ground.
 
 One case sits outside the ordering argument. All entries are non-negative, so
-a `0` block sorts behind everything nonzero; if the joined string *begins*
+a `0` block sorts behind everything nonzero; if the joined string _begins_
 with `0`, no nonzero block was present at all and the true value is zero, so
 `[0,0,0]` answers `"0"` rather than `"000"`. Each comparison touches at most
 10 digits per side (entries are bounded by `10⁹`), so comparisons cost a small

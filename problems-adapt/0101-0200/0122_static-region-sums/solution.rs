@@ -25,7 +25,8 @@ impl StaticRegions {
         // The same inclusion-exclusion in reverse: the strips above and
         // left of the query cancel, leaving the rectangle in O(1).
         let prefix = &self.prefix;
-        prefix[(bottom + 1) as usize][(right + 1) as usize] - prefix[top as usize][(right + 1) as usize]
+        prefix[(bottom + 1) as usize][(right + 1) as usize]
+            - prefix[top as usize][(right + 1) as usize]
             - prefix[(bottom + 1) as usize][left as usize]
             + prefix[top as usize][left as usize]
     }

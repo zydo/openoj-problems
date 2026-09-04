@@ -2,17 +2,17 @@
   "public": [
     {
       "input": [
-      "cab",
-      "abd"
+        "cab",
+        "abd"
       ],
       "expected": 2
     },
     {
       "input": [
-      "stone",
-      "tones"
+        "stone",
+        "tones"
       ],
-    "expected": 2
+      "expected": 2
     }
   ],
   "hidden": [

@@ -10,7 +10,7 @@ inequality covering both choices of the final symbol at once, because
 whichever symbol is the minority is the one the budget pays for.
 
 That condition is exactly what a two-pointer sweep maintains. The right end
-advances one position at a time; whenever *both* counts exceed `k` — the
+advances one position at a time; whenever _both_ counts exceed `k` — the
 same as the minority count exceeding it — the left end advances until the
 window is valid again. The largest window length seen anywhere during the
 sweep is the answer.

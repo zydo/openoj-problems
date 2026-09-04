@@ -2,7 +2,7 @@
 
 ## Hash-Map of Histories with Binary Search
 
-Two independent questions hide inside a read: *which* key, and *when*. Handling
+Two independent questions hide inside a read: _which_ key, and _when_. Handling
 them with two separate structures keeps each one cheap.
 
 The "which" half is a plain hash map from key to that key's own record of

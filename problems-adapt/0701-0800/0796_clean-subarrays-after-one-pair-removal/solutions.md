@@ -11,7 +11,7 @@ down to `1`, bucketing each pair at its smaller element, activates pairs in
 exactly the order the sweep needs, and `b1` can be maintained alongside its
 runner-up `b2`.
 
-Deleting a pair pays off only where it is the *unique* holder of `b1`: there the
+Deleting a pair pays off only where it is the _unique_ holder of `b1`: there the
 bound softens to `b2`, admitting `b2 - b1` further subarrays. So the sweep banks
 `cnt[b1] += b2 - b1` at each position and the best deletion is the fullest
 bucket. Keying by the value `b1` rather than by pair identity is safe because of

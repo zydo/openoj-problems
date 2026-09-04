@@ -1,4 +1,6 @@
 from bisect import bisect_left, bisect_right
+
+
 class CoverageLedger:
     """Tracked set as canonical disjoint intervals (parallel starts/ends).
 

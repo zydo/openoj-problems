@@ -27,7 +27,7 @@ class RandomDrawMultiset {
         if (found == indices.end() || found->second.empty()) {
             return false;
         }
-        std::set<int>& positions = found->second;
+        std::set<int> &positions = found->second;
         int index = *positions.begin(); // leftmost occurrence
         int last = (int)values.size() - 1;
         if (values[last] == val) {
@@ -37,7 +37,7 @@ class RandomDrawMultiset {
         } else {
             int moved = values[last];
             values[index] = moved;
-            std::set<int>& others = indices.find(moved)->second;
+            std::set<int> &others = indices.find(moved)->second;
             others.erase(last);
             others.insert(index);
             positions.erase(index);
@@ -49,9 +49,7 @@ class RandomDrawMultiset {
         return true;
     }
 
-    int draw() {
-        return values[0];
-    }
+    int draw() { return values[0]; }
 
   private:
     std::vector<int> values;

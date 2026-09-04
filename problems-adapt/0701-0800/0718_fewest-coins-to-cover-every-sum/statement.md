@@ -3,7 +3,7 @@
 ## Description
 
 You are given an integer array `coins` — the values of the coins in your
-pile — and an integer `target`. A value `x` is *reachable* when some subset
+pile — and an integer `target`. A value `x` is _reachable_ when some subset
 of the pile's coins sums to exactly `x`.
 
 Adding coins is allowed: each addition is one coin of any positive integer

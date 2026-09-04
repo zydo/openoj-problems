@@ -13,7 +13,7 @@ slots, and the empty tree needs no special form at all.
 ## Breadth-First Encoding With Gap Markers
 
 Whatever text you emit, the tree is recoverable only from a rendering that
-accounts for *absent* children, not just present ones. The encoding chosen
+accounts for _absent_ children, not just present ones. The encoding chosen
 here gives every child slot of every real node one token — its value, or
 `#` when the slot is empty — and skips nothing else: a marker has no
 children, so it opens no further slots. That is why even a trimmed token

@@ -10,10 +10,12 @@ wherever it is available so that generation (gen_starters), checking
 byte-identically. There is deliberately no local toolchain here anymore.
 
 Loader order:
-  1. an in-image `formatters.py` next to the runner (when this script
-     runs inside the openoj image);
-  2. `$OPENOJ_RUNNER_DIR/formatters.py` (a checkout of the openoj repo);
-  3. a sibling `../openoj/runner/formatters.py` checkout.
+  1. `$OPENOJ_RUNNER_DIR/formatters.py` (an explicit openoj checkout);
+  2. this script's own directory (when it runs from the image's
+     own /runner checkout);
+  3. the image's `/runner/formatters.py` (a problem checkout mounted
+     into the openoj image — CI and local docker runs);
+  4. a sibling `../openoj/runner/formatters.py` checkout.
 
 Usage:
   format.py [--check] [--tolerant] [<bundle-or-file> ...]   # default: all
@@ -37,8 +39,11 @@ def _load_formatters():
     runner_dir = os.environ.get("OPENOJ_RUNNER_DIR")
     if runner_dir:
         candidates.append(Path(runner_dir))
-    here = Path(__file__).resolve().parent  # in-image: /runner
+    here = Path(__file__).resolve().parent  # this checkout's loader dir
     candidates.append(here)
+    # Inside the image a checkout is usually mounted somewhere else (CI,
+    # docker runs); the image carries its own formatters at /runner.
+    candidates.append(Path("/runner"))
     candidates.append(ROOT.parent / "openoj" / "runner")  # sibling checkout
     for directory in candidates:
         module_path = directory / "formatters.py"

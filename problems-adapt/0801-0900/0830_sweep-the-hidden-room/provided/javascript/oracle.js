@@ -24,13 +24,7 @@ class Sweeper {
         ]; // up, right, down, left
         const nr = this.row + directions[this.face][0];
         const nc = this.col + directions[this.face][1];
-        if (
-            nr < 0 ||
-            nr >= this.room.length ||
-            nc < 0 ||
-            nc >= this.room[nr].length ||
-            this.room[nr][nc] === 0
-        ) {
+        if (nr < 0 || nr >= this.room.length || nc < 0 || nc >= this.room[nr].length || this.room[nr][nc] === 0) {
             return false; // wall or blocked cell: stays in place
         }
         this.row = nr;

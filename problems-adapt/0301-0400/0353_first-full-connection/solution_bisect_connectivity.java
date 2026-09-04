@@ -14,7 +14,8 @@ class Solution {
         if (!connected(sorted, n, m)) {
             return -1;
         }
-        int lo = 1, hi = m;
+        int lo = 1,
+            hi = m;
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
             if (connected(sorted, n, mid)) {

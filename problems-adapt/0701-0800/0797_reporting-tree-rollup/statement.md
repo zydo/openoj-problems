@@ -4,13 +4,13 @@
 
 Table: `Staff`
 
-| Column Name  | Type    |
-| ------------ | ------- |
-| staff_id     | int     |
-| staff_name   | varchar |
-| supervisor_id| int     |
-| salary       | int     |
-| department   | varchar |
+| Column Name   | Type    |
+| ------------- | ------- |
+| staff_id      | int     |
+| staff_name    | varchar |
+| supervisor_id | int     |
+| salary        | int     |
+| department    | varchar |
 
 `staff_id` is the unique key. `supervisor_id` is NULL for the person at the
 top of the reporting tree.

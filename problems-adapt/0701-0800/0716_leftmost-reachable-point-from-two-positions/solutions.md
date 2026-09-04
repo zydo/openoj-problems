@@ -19,7 +19,7 @@ misses the query range or whose subtree maximum sits at or below the
 threshold — no answer can live there — and otherwise recurse into the left
 child first, falling through to the right child only when the left fails.
 Trying the left child first makes the first leaf reached the leftmost
-qualifying index automatically, so the descent order *is* the answer's
+qualifying index automatically, so the descent order _is_ the answer's
 position rule.
 
 Each query walks the two boundary paths of its range; every failed detour is

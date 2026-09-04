@@ -19,7 +19,10 @@ impl Solution {
             }
             Self::unite(&mut parent, &mut weight, &mut size, &pair[0], &pair[1], value);
         }
-        queries.iter().map(|q| Self::query(&mut parent, &mut weight, &q[0], &q[1])).collect()
+        queries
+            .iter()
+            .map(|q| Self::query(&mut parent, &mut weight, &q[0], &q[1]))
+            .collect()
     }
 
     fn find(parent: &mut HashMap<String, String>, weight: &mut HashMap<String, f64>, x: &str) -> (String, f64) {

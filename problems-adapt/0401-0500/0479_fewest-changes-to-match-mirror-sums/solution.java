@@ -7,7 +7,8 @@ class Solution {
         int[] diff = new int[2 * limit + 2];
         for (int i = 0; i < n / 2; i++) {
             int j = n - 1 - i;
-            int a = nums[i], b = nums[j];
+            int a = nums[i],
+                b = nums[j];
             int lo = Math.min(a, b),
                 hi = Math.max(a, b);
             // Base cost 2 everywhere; −1 across [lo+1, hi+limit], the sums

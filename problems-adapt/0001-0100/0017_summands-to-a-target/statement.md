@@ -7,7 +7,7 @@ integer `target`. Report every way of adding candidates together to reach
 exactly `target`, where each candidate may be taken as many times as you like —
 zero times, once, or twenty times.
 
-What separates one way from another is *how many copies of each candidate* it
+What separates one way from another is _how many copies of each candidate_ it
 uses; the order the summands are written in carries no meaning. Return the ways
 as a list, in whatever order you find them.
 

@@ -2,23 +2,23 @@
   "public": [
     {
       "input": [
-      "bacaacb",
-      "aac"
+        "bacaacb",
+        "aac"
       ],
       "expected": [
-      1,
-      2,
-      3
+        1,
+        2,
+        3
       ]
     },
     {
       "input": [
-      "zzxyyxz",
-      "xyz"
+        "zzxyyxz",
+        "xyz"
       ],
       "expected": [
-      1,
-      4
+        1,
+        4
       ]
     }
   ],

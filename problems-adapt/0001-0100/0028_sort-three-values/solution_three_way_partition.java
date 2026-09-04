@@ -7,7 +7,9 @@ class Solution {
         //   [mid, high] unexamined
         //   (high, end) settled 2s
         // Each step examines nums[mid] and shrinks the unexamined band.
-        int low = 0, mid = 0, high = nums.length - 1;
+        int low = 0,
+            mid = 0,
+            high = nums.length - 1;
         while (mid <= high) {
             int value = nums[mid];
             if (value == 0) {

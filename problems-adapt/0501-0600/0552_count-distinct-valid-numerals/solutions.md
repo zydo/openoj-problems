@@ -4,7 +4,7 @@
 
 Distinctness makes brute enumeration hopeless but also makes the counting
 easy: two subsequences are interchangeable when they spell the same string,
-so the only thing worth tracking is *how many distinct values are reachable*,
+so the only thing worth tracking is _how many distinct values are reachable_,
 split by final digit. Keep `end0` and `end1` — the numbers of distinct valid
 values ending in `0` and in `1` among the prefix consumed so far, both modulo
 `10^9 + 7`. Since a value of length two or more must begin with `1`, `end0`

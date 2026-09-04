@@ -11,7 +11,7 @@ top now and letting its later copy supply it can only make the prefix smaller
 — nothing is lost and the front of the string strictly improves.
 
 Two bookkeeping structures make each such decision safe and constant-time.
-A `count` map holds, for every letter, how many occurrences remain *after*
+A `count` map holds, for every letter, how many occurrences remain _after_
 the current position, decremented as the scan consumes characters; the pop
 test `count[stack[-1]] > 0` is then exactly "is discarding the top
 reversible?". An `in_stack` set enforces the exactly-once rule: a letter

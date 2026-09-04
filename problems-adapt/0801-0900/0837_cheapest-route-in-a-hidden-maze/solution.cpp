@@ -9,8 +9,8 @@
 class MazeController;
 
 class Solution {
-public:
-    int findCheapestRoute(MazeController& maze) {
+  public:
+    int findCheapestRoute(MazeController &maze) {
         // Iterative DFS keeps the walker physically on the DFS tree: move to
         // a child when pushing, move back when popping. Each discovered cell
         // records the toll move() reported on entering it.
@@ -20,11 +20,11 @@ public:
         int goalR = 0, goalC = 0;
 
         std::vector<std::array<int, 3>> stack; // r, c, next direction index
-        std::vector<int> parentDirs; // direction index taken from the parent
+        std::vector<int> parentDirs;           // direction index taken from the parent
         stack.push_back({0, 0, 0});
         parentDirs.push_back(-1);
         while (!stack.empty()) {
-            std::array<int, 3>& frame = stack.back();
+            std::array<int, 3> &frame = stack.back();
             int r = frame[0], c = frame[1], idx = frame[2];
             bool pushed = false;
             while (idx < 4) {
@@ -62,9 +62,9 @@ public:
         // heap entries, relax neighbours with the entered cell's toll.
         const long long INF = std::numeric_limits<long long>::max();
         std::unordered_map<long long, long long> dist;
-        std::priority_queue<std::pair<long long, long long>,
-                            std::vector<std::pair<long long, long long>>,
-                            std::greater<std::pair<long long, long long>>> heap;
+        std::priority_queue<std::pair<long long, long long>, std::vector<std::pair<long long, long long>>,
+                            std::greater<std::pair<long long, long long>>>
+            heap;
         dist[key(0, 0)] = 0;
         heap.push({0, key(0, 0)});
         while (!heap.empty()) {
@@ -92,14 +92,12 @@ public:
         return answer == dist.end() ? -1 : static_cast<int>(answer->second);
     }
 
-private:
+  private:
     static constexpr char DIRS[5] = "UDLR";
     static constexpr int DR[4] = {-1, 1, 0, 0};
     static constexpr int DC[4] = {0, 0, -1, 1};
     static constexpr char BACK[5] = "DURL";
     static constexpr int OFFSET = 200; // relative coords stay within +/-99
 
-    static long long key(int r, int c) {
-        return (static_cast<long long>(r + OFFSET) << 16) | (c + OFFSET);
-    }
+    static long long key(int r, int c) { return (static_cast<long long>(r + OFFSET) << 16) | (c + OFFSET); }
 };

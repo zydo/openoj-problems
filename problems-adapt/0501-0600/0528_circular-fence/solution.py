@@ -1,4 +1,6 @@
 import math
+
+
 class Solution:
     def fenceCircle(self, positions: list[list[int]]) -> list[float]:
         # Translate by the first tree before converting to floats: small

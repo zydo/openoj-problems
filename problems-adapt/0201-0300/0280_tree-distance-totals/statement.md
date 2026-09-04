@@ -8,7 +8,7 @@ link between node `u` and node `v`. Exactly one path joins any two nodes, and
 the distance between them is how many links that path uses.
 
 Pick a node and add up its distance to every other node — that is the node's
-*total*. Return all `n` totals, position `i` holding the total for node `i`.
+_total_. Return all `n` totals, position `i` holding the total for node `i`.
 
 ### Example 1
 

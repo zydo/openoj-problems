@@ -1,8 +1,6 @@
 class Solution {
   public:
-    int countBalancedMultiples(int low, int high, int k) {
-        return (int)(countUpTo(high, k) - countUpTo(low - 1, k));
-    }
+    int countBalancedMultiples(int low, int high, int k) { return (int)(countUpTo(high, k) - countUpTo(low - 1, k)); }
 
   private:
     // Digit DP tracking everything the two conditions need: balance (odd

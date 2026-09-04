@@ -11,8 +11,7 @@ class Solution {
     }
 
   private:
-    int take(TreeNode *node, unordered_map<TreeNode *, int> &takeMap,
-             unordered_map<TreeNode *, int> &skipMap) {
+    int take(TreeNode *node, unordered_map<TreeNode *, int> &takeMap, unordered_map<TreeNode *, int> &skipMap) {
         if (node == nullptr) {
             return 0;
         }
@@ -21,14 +20,12 @@ class Solution {
             return cached->second;
         }
         // Taking this node bars both children outright.
-        int best = node->val + skip(node->left, takeMap, skipMap) +
-                   skip(node->right, takeMap, skipMap);
+        int best = node->val + skip(node->left, takeMap, skipMap) + skip(node->right, takeMap, skipMap);
         takeMap[node] = best;
         return best;
     }
 
-    int skip(TreeNode *node, unordered_map<TreeNode *, int> &takeMap,
-             unordered_map<TreeNode *, int> &skipMap) {
+    int skip(TreeNode *node, unordered_map<TreeNode *, int> &takeMap, unordered_map<TreeNode *, int> &skipMap) {
         if (node == nullptr) {
             return 0;
         }
@@ -37,10 +34,8 @@ class Solution {
             return cached->second;
         }
         // Each child keeps its better option.
-        int best = max(take(node->left, takeMap, skipMap),
-                       skip(node->left, takeMap, skipMap)) +
-                   max(take(node->right, takeMap, skipMap),
-                       skip(node->right, takeMap, skipMap));
+        int best = max(take(node->left, takeMap, skipMap), skip(node->left, takeMap, skipMap)) +
+                   max(take(node->right, takeMap, skipMap), skip(node->right, takeMap, skipMap));
         skipMap[node] = best;
         return best;
     }

@@ -9,7 +9,7 @@ class PriceHeap {
     push(item: number[]): void {
         const items = this.items;
         items.push(item);
-        for (let child = items.length - 1; child > 0; ) {
+        for (let child = items.length - 1; child > 0;) {
             const parent = (child - 1) >> 1;
             if (!this.before(items[child], items[parent])) {
                 break;
@@ -25,7 +25,7 @@ class PriceHeap {
         const last = items.pop() as number[];
         if (items.length > 0) {
             items[0] = last;
-            for (let parent = 0; ; ) {
+            for (let parent = 0; ;) {
                 const left = parent * 2 + 1;
                 const right = left + 1;
                 let first = parent;

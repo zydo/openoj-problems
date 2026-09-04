@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution:
     def farthestHamming(self, nums: list[int], m: int) -> list[int]:
         # HD(x, y) + HD(~x, y) = m, so max distance from x = m - minDist(~x).

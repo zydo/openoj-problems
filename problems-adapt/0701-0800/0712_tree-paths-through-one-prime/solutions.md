@@ -2,7 +2,7 @@
 
 ## Sieve plus apex-counting tree DP
 
-Primality is a property of node *labels*, so a single sieve of Eratosthenes
+Primality is a property of node _labels_, so a single sieve of Eratosthenes
 over `1..n` decides it for every node at once — no per-node factorization
 anywhere. What remains is counting the paths whose prime tally is exactly
 one.

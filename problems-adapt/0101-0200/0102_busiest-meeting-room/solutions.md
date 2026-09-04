@@ -10,7 +10,7 @@ pops first, room number breaking end-time ties.
 
 For each meeting `[s, e)`, first return every busy room whose end time has
 passed `s` to the `free` heap. Emptying all simultaneous openings into `free`
-*before* allocating is what makes the lowest-numbered among them win. If a room
+_before_ allocating is what makes the lowest-numbered among them win. If a room
 is free, take the smallest number and schedule `[s, e)`. Otherwise the meeting
 waits for the earliest-opening room: pop it and reschedule with the duration
 preserved — new end `old_end + (e - s)`.

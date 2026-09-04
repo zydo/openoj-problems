@@ -36,8 +36,9 @@ class Solution {
             return cached;
         }
         // Each child keeps its better option.
-        int best = Math.max(take(node.left, takeMap, skipMap), skip(node.left, takeMap, skipMap)) +
-                   Math.max(take(node.right, takeMap, skipMap), skip(node.right, takeMap, skipMap));
+        int best =
+            Math.max(take(node.left, takeMap, skipMap), skip(node.left, takeMap, skipMap)) +
+            Math.max(take(node.right, takeMap, skipMap), skip(node.right, takeMap, skipMap));
         skipMap.put(node, best);
         return best;
     }

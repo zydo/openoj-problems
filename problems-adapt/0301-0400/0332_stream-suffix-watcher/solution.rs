@@ -7,12 +7,15 @@ struct TrieNode {
 
 pub struct SuffixWatcher {
     nodes: Vec<TrieNode>, // arena; index 0 is the root
-    trail: Vec<usize>, // trie nodes the live attempts sit on
+    trail: Vec<usize>,    // trie nodes the live attempts sit on
 }
 
 impl SuffixWatcher {
     pub fn new(words: Vec<String>) -> Self {
-        let mut nodes = vec![TrieNode { children: HashMap::new(), word: false }];
+        let mut nodes = vec![TrieNode {
+            children: HashMap::new(),
+            word: false,
+        }];
         for word in words {
             let mut node = 0;
             for &letter in word.as_bytes() {
@@ -20,7 +23,10 @@ impl SuffixWatcher {
                     Some(&next) => next,
                     None => {
                         let next = nodes.len();
-                        nodes.push(TrieNode { children: HashMap::new(), word: false });
+                        nodes.push(TrieNode {
+                            children: HashMap::new(),
+                            word: false,
+                        });
                         nodes[node].children.insert(letter, next);
                         next
                     }
@@ -36,7 +42,8 @@ impl SuffixWatcher {
         let letter = letter.as_bytes()[0];
         let mut advanced = Vec::with_capacity(self.trail.len());
         let mut hit = false;
-        for &node in &self.trail { // index 0 is always the root
+        for &node in &self.trail {
+            // index 0 is always the root
             if let Some(&child) = self.nodes[node].children.get(&letter) {
                 advanced.push(child);
                 hit = hit || self.nodes[child].word;

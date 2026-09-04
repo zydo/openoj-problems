@@ -48,7 +48,7 @@ class NewsBoard {
             }
         }
         // Newest first: sort descending by (time, id).
-        kept.sort((a, b) => (a[0] - b[0]) || (a[1] - b[1]));
+        kept.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
         kept.reverse();
         return kept.map(([, id]) => id);
     }

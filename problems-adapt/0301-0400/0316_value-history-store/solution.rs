@@ -7,7 +7,10 @@ pub struct HistoryStore {
 
 impl HistoryStore {
     pub fn new() -> Self {
-        HistoryStore { values: HashMap::new(), stamps: HashMap::new() }
+        HistoryStore {
+            values: HashMap::new(),
+            stamps: HashMap::new(),
+        }
     }
 
     pub fn set(&mut self, key: String, value: String, timestamp: i32) {

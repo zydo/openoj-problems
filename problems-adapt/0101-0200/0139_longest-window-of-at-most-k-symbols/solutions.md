@@ -17,7 +17,7 @@ so the answer is complete after one pass.
 
 Turn the question inside out: instead of asking, for every right edge, how
 far left the window can reach, ask — for a candidate length `L` — whether
-*any* stretch of `L` consecutive symbols stays within the budget. The
+_any_ stretch of `L` consecutive symbols stays within the budget. The
 predicate is honest work but easy: sweep the string once with a map of
 multiplicities, letting the left edge of a fixed-size window trail `L`
 steps behind the right edge, and declare the length feasible the moment

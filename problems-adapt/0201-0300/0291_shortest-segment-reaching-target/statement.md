@@ -2,7 +2,7 @@
 
 ## Description
 
-A *segment* of `nums` is a run of one or more entries sitting next to each
+A _segment_ of `nums` is a run of one or more entries sitting next to each
 other. Given `nums` and an integer `target`, report how few entries a segment
 can hold while still summing to `target` or more. Report `-1` when no segment
 manages it at all.

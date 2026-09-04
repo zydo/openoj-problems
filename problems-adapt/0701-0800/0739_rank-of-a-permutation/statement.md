@@ -61,6 +61,6 @@ values shrinks as you walk into the array.
 
 ### Hint 3
 
-At each step what matters is how many *not-yet-spent* values are smaller
+At each step what matters is how many _not-yet-spent_ values are smaller
 than the one being placed; a structure that counts a prefix of values and
 supports removals prices each position in logarithmic time.

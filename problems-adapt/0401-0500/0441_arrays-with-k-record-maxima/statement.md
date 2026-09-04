@@ -3,8 +3,8 @@
 ## Description
 
 Scan an array of positive integers left to right, keeping a running maximum.
-The first element opens the scan; after that, an element is a *record* when it
-is strictly larger than everything before it. The *record count* of the array
+The first element opens the scan; after that, an element is a _record_ when it
+is strictly larger than everything before it. The _record count_ of the array
 is the number of records: `[2, 5, 5, 7]` has record count 3 (`2`, then `5`,
 then `7`), while `[4, 4, 4]` has record count 1.
 

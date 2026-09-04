@@ -10,7 +10,8 @@ var fewestChanges = function (nums, limit) {
     const diff = new Array(2 * limit + 2).fill(0);
     for (let i = 0; i < n >> 1; i++) {
         const j = n - 1 - i;
-        const a = nums[i], b = nums[j];
+        const a = nums[i],
+            b = nums[j];
         const lo = Math.min(a, b),
             hi = Math.max(a, b);
         // Base cost 2 everywhere; −1 across [lo+1, hi+limit], the sums one

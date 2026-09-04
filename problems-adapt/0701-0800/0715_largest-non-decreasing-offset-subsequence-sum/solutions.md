@@ -4,7 +4,7 @@
 
 The inequality `nums[j] - nums[i] >= j - i` hides a simpler object. Move the
 indices to the value side and it reads `nums[j] - j >= nums[i] - i`: calling
-`b[x] = nums[x] - x` the *offset* of position `x`, an admissible subsequence
+`b[x] = nums[x] - x` the _offset_ of position `x`, an admissible subsequence
 is precisely one whose offsets never decrease. In Example 1 the offsets are
 `[2, 3, 1, 4, 4]`; the kept indices `0, 1, 3, 4` walk `2, 3, 4, 4`, while
 index `2`'s offset of `1` would break the order after `3`.

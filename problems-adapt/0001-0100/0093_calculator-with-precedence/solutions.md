@@ -4,7 +4,7 @@
 
 `*` and `/` bind tighter than `+` and `-`, so the expression is secretly a
 plain sum: collect each maximal run of `*` and `/` into a single term, then add
-the terms. The reading that makes this easy is to *defer* the additions — scan
+the terms. The reading that makes this easy is to _defer_ the additions — scan
 left to right assembling the current number, and when an operator (or the end
 of the text) arrives, apply the operator that came **before** the number. A
 stack collects the terms as they finish; the answer is the stack's sum.

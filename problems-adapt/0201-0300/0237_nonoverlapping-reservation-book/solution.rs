@@ -8,14 +8,17 @@ pub struct ReservationBook {
 
 impl ReservationBook {
     pub fn new() -> Self {
-        ReservationBook { starts: Vec::new(), ends: Vec::new() }
+        ReservationBook {
+            starts: Vec::new(),
+            ends: Vec::new(),
+        }
     }
 
     pub fn reserveSlot(&mut self, start: i32, end: i32) -> bool {
         // bisect_right: first index whose start exceeds `start`.
         let position = self.starts.partition_point(|&value| value <= start);
         let index = position as isize - 1; // last reservation with start <= start
-        // Half-open intervals: strict tests mean touching endpoints coexist.
+                                           // Half-open intervals: strict tests mean touching endpoints coexist.
         if index >= 0 && self.ends[index as usize] > start {
             return false;
         }

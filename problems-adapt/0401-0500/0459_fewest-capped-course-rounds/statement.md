@@ -79,5 +79,5 @@ before anything reads it.
 
 Adding one more eligible course to a round can never delay a later course, so
 an optimal schedule always fills a round to `min(k, eligible)`. When more than
-`k` are eligible you still must choose *which* `k`, so enumerate the
+`k` are eligible you still must choose _which_ `k`, so enumerate the
 `k`-subsets — but never a smaller round.

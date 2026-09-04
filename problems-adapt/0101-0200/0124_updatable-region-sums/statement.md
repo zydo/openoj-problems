@@ -76,7 +76,7 @@ Can both operations run in `O(log m · log n)` time on an `m × n` grid?
 ### Hint 1
 
 Corner-anchored totals answer any rectangle in four lookups, but rewriting one
-cell invalidates most of that table at once. Look for totals over *pieces* of
+cell invalidates most of that table at once. Look for totals over _pieces_ of
 the grid instead — few enough pieces per question to stay fast, and few enough
 pieces containing any one cell to keep a write cheap.
 
@@ -94,5 +94,5 @@ Peeling the low bit off the row index, and off the column index inside each
 step, enumerates disjoint rectangles that exactly tile a corner-anchored
 region; adding it back enumerates the slots a written cell belongs to. An
 arbitrary rectangle is then four corner-anchored totals combined by inclusion
-and exclusion, and a write should propagate the *difference* it makes, so keep
+and exclusion, and a write should propagate the _difference_ it makes, so keep
 the current cell contents beside the slots to know what that difference is.

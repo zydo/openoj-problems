@@ -1,7 +1,6 @@
 impl Solution {
     pub fn most_value_in_k_cells(runs: Vec<Vec<i32>>, k: i32) -> i64 {
-        let mut segments: Vec<(i64, i64, i64)> =
-            runs.iter().map(|c| (c[0] as i64, c[1] as i64, c[2] as i64)).collect();
+        let mut segments: Vec<(i64, i64, i64)> = runs.iter().map(|c| (c[0] as i64, c[1] as i64, c[2] as i64)).collect();
         segments.sort_by(|a, b| a.0.cmp(&b.0)); // stable
         let n = segments.len();
         let lefts: Vec<i64> = segments.iter().map(|s| s.0).collect();

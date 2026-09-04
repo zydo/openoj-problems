@@ -7,7 +7,7 @@ lists the nodes that carry a mark, and the parallel arrays `edgeFrom`
 and `edgeTo` describe the directed edges already in place: for each
 index `i`, an edge runs from `edgeFrom[i]` to `edgeTo[i]`.
 
-A node is *covered* when it is marked, or when a path of one or more
+A node is _covered_ when it is marked, or when a path of one or more
 edges leads to it from some marked node.
 
 Return the fewest new directed edges needed so that every node is

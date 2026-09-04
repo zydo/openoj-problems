@@ -2,12 +2,12 @@ package main
 
 // One cache entry, living in the LRU list of its frequency bucket.
 type cacheNode struct {
-	key   int
-	value int
-	freq  int
+	key    int
+	value  int
+	freq   int
 	bucket *freqBucket
-	prev  *cacheNode
-	next  *cacheNode
+	prev   *cacheNode
+	next   *cacheNode
 }
 
 // One frequency: an LRU list of nodes (head side = least recent) plus

@@ -4,7 +4,7 @@
 
 You are given three integers `n`, `m`, and `k`.
 
-Position `i` of a length-`n` sequence is an *immediate repeat* when
+Position `i` of a length-`n` sequence is an _immediate repeat_ when
 `1 <= i < n` and the entry at `i` equals the entry just before it. Count the
 sequences `arr` of length `n` such that:
 
@@ -57,7 +57,7 @@ entry is defined by a single comparison with its predecessor.
 ### Hint 2
 
 Each of the `n - 1` later entries is either a copy of the one before it (1
-option) or a different value (`m - 1` options). Choosing *which* `k` of them
+option) or a different value (`m - 1` options). Choosing _which_ `k` of them
 are the copies fixes everything else.
 
 ### Hint 3

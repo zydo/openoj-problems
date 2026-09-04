@@ -2,7 +2,7 @@
 
 ## Description
 
-Call a subarray *minimum-led* when its first entry is no bigger than any entry
+Call a subarray _minimum-led_ when its first entry is no bigger than any entry
 it contains — that is, the run opens on one of its own smallest values. A
 subarray here is a contiguous, non-empty stretch of `nums`.
 

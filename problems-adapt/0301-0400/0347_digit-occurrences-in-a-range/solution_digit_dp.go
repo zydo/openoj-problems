@@ -14,7 +14,7 @@ type dpState struct {
 
 func countUpTo(d int, n int64) int64 {
 	if n <= 0 {
-		return 0;
+		return 0
 	}
 	s := strconv.FormatInt(n, 10)
 	digits := make([]int, len(s))

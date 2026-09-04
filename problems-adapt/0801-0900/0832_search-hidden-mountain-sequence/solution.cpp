@@ -1,8 +1,8 @@
 class MountainReader;
 
 class Solution {
-public:
-    int findInMountain(MountainReader& reader, int target) {
+  public:
+    int findInMountain(MountainReader &reader, int target) {
         int n = reader.length();
 
         // Peak: the last index still on the rising slope — get(mid - 1) <

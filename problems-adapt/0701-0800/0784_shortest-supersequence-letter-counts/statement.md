@@ -2,9 +2,9 @@
 
 ## Description
 
-You are given an array of strings `words`. A *supersequence* of `words` is a
+You are given an array of strings `words`. A _supersequence_ of `words` is a
 string in which every entry of `words` appears as a subsequence — its letters
-occur in order, not necessarily side by side. A supersequence is *shortest*
+occur in order, not necessarily side by side. A supersequence is _shortest_
 if none is shorter.
 
 Two supersequences that use the same number of each letter are rearrangements

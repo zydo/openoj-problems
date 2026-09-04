@@ -2,7 +2,7 @@ class SuffixWatcher {
   public:
     SuffixWatcher(vector<string> words) {
         nodes.emplace_back(); // the root: index 0
-        for (const string& word : words) {
+        for (const string &word : words) {
             int node = 0;
             for (char letter : word) {
                 int child;

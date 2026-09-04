@@ -6,8 +6,7 @@ function cappedSubmatrixSum(matrix: number[][], k: number): number {
     const prefix: number[][] = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
     for (let r = 1; r <= m; r++) {
         for (let c = 1; c <= n; c++) {
-            prefix[r][c] = prefix[r - 1][c] + prefix[r][c - 1]
-                - prefix[r - 1][c - 1] + matrix[r - 1][c - 1];
+            prefix[r][c] = prefix[r - 1][c] + prefix[r][c - 1] - prefix[r - 1][c - 1] + matrix[r - 1][c - 1];
         }
     }
     // Walk every block by its four corner coordinates and keep the largest

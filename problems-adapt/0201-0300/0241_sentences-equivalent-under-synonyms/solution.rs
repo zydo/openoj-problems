@@ -1,9 +1,5 @@
 impl Solution {
-    pub fn sentences_equivalent(
-        wordsA: Vec<String>,
-        wordsB: Vec<String>,
-        synonyms: Vec<Vec<String>>,
-    ) -> bool {
+    pub fn sentences_equivalent(wordsA: Vec<String>, wordsB: Vec<String>, synonyms: Vec<Vec<String>>) -> bool {
         // Different lengths can never be similar.
         if wordsA.len() != wordsB.len() {
             return false;

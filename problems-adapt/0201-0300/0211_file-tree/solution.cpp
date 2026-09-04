@@ -32,7 +32,7 @@ std::vector<std::string> splitPath(const std::string &path) {
     return parts;
 }
 
-}  // namespace
+} // namespace
 
 class FileTree {
   public:

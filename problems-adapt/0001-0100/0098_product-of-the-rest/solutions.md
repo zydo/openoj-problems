@@ -35,7 +35,7 @@ zero, again with no special case. What this costs is memory: two arrays of
 Same identity, no helper arrays. Notice that `pre[i]` is consumed at cell `i`
 and never looked at again — a value with a lifetime that short does not need an
 array, only a variable. The forward pass therefore writes the current left
-accumulator into `answer[i]` *first* and multiplies `nums[i]` into it
+accumulator into `answer[i]` _first_ and multiplies `nums[i]` into it
 afterwards, which is what makes the stored value the product strictly ahead of
 `i` rather than including it.
 

@@ -3,7 +3,7 @@
 ## Description
 
 You are given the `head` of a linked list of integers. A **stretch** is any
-run of consecutive nodes; a stretch is *cancelling* when its values add up
+run of consecutive nodes; a stretch is _cancelling_ when its values add up
 to `0`.
 
 Repeatedly remove cancelling stretches — each removal splices out that whole

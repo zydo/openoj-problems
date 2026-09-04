@@ -5,7 +5,10 @@ struct TrieNode {
 
 impl TrieNode {
     fn empty() -> Self {
-        TrieNode { children: Default::default(), end: false }
+        TrieNode {
+            children: Default::default(),
+            end: false,
+        }
     }
 }
 
@@ -15,7 +18,9 @@ pub struct WordMatcher {
 
 impl WordMatcher {
     pub fn new() -> Self {
-        WordMatcher { root: Box::new(TrieNode::empty()) }
+        WordMatcher {
+            root: Box::new(TrieNode::empty()),
+        }
     }
 
     pub fn add(&mut self, word: String) {

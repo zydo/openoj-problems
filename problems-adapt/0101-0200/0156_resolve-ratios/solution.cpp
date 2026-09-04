@@ -1,7 +1,7 @@
 class Solution {
   public:
     vector<double> resolveRatios(vector<vector<string>> &pairs, vector<double> &ratios,
-                                vector<vector<string>> &queries) {
+                                 vector<vector<string>> &queries) {
         // node -> adjacency list of (neighbor, weight) in insertion order;
         // re-adding an edge overwrites its weight in place (like Python dict).
         unordered_map<string, vector<pair<string, double>>> graph;

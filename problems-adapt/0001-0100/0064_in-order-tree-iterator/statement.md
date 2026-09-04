@@ -57,7 +57,7 @@ Explanation: The tree is a left-leaning chain — 40, then 30, then 20, then
 
 ### Follow-up
 
-Can `next()` run in `O(1)` *amortized* time while the iterator keeps only
+Can `next()` run in `O(1)` _amortized_ time while the iterator keeps only
 `O(h)` memory, `h` being the tree's height?
 
 ## Hints

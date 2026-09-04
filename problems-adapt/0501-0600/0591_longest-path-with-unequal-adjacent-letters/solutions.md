@@ -10,7 +10,7 @@ where `first` and `second` are the two biggest usable chains hanging off `u`.
 That decomposition is why a single bottom-up sweep computing `down` finds the
 optimum without ever tracing a path end to end.
 
-Whether a child's chain is *usable* at `u` depends on the letters: a child `v`
+Whether a child's chain is _usable_ at `u` depends on the letters: a child `v`
 offers `down[v]` when `s[v]` and `s[u]` differ, and offers nothing when they
 match, since the joining edge would sit between two equal letters. Each node
 scans its children once, maintaining the two largest offers in `first` and

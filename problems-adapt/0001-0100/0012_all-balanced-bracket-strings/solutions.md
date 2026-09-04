@@ -3,7 +3,7 @@
 ## Backtracking on prefix validity
 
 The wasteful reading of this task is "generate, then test". The efficient one
-is to notice that balance is a property of *prefixes*: a string is balanced
+is to notice that balance is a property of _prefixes_: a string is balanced
 exactly when no prefix has more closers than openers and the totals match at
 the end. So a prefix that is already ruined can never be repaired, and a prefix
 that is still intact is worth extending. Growing the string character by

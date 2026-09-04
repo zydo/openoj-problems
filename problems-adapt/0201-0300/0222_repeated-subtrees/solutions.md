@@ -4,7 +4,7 @@
 
 Testing subtrees against each other directly would mean comparing every pair,
 and there are up to 5000 of them. The way out is to describe each subtree by a
-string so faithful that string equality *is* subtree equality, then let a hash
+string so faithful that string equality _is_ subtree equality, then let a hash
 map do the matching.
 
 A node's description is its value followed by the descriptions of its left and

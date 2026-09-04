@@ -3,7 +3,7 @@ class WordMatcher {
     WordMatcher() : rootNode(new Node()) {}
 
     void add(string word) {
-        Node* node = rootNode;
+        Node *node = rootNode;
         for (char letter : word) {
             int slot = letter - 'a';
             if (node->children[slot] == nullptr) {
@@ -23,12 +23,12 @@ class WordMatcher {
     // One trie node: 26 child slots indexed by c - 'a' plus a whole-word
     // terminator flag.
     struct Node {
-        Node* children[26] = {};
+        Node *children[26] = {};
         bool end = false;
     };
 
     // A letter descends its single slot; a dot tries every non-empty slot.
-    bool match(Node* node, int index) const {
+    bool match(Node *node, int index) const {
         if (node == nullptr) {
             return false;
         }
@@ -37,7 +37,7 @@ class WordMatcher {
         }
         char letter = query[index];
         if (letter == '.') {
-            for (Node* child : node->children) {
+            for (Node *child : node->children) {
                 if (match(child, index + 1)) {
                     return true;
                 }
@@ -47,6 +47,6 @@ class WordMatcher {
         return match(node->children[letter - 'a'], index + 1);
     }
 
-    Node* rootNode;
+    Node *rootNode;
     string query;
 };

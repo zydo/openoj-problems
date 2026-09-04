@@ -14,7 +14,7 @@ class Solution {
         // portion of the spine inorder has already finished.
         Deque<TreeNode> spine = new ArrayDeque<>();
         spine.push(root);
-        int cursor = 0;  // next inorder entry awaiting its turn
+        int cursor = 0; // next inorder entry awaiting its turn
         for (int i = 1; i < preorder.length; i++) {
             int value = preorder[i];
             if (spine.peek().val != inorder[cursor]) {

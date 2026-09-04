@@ -5,7 +5,7 @@
 Three of the four operations are free on any array-backed stack; the fourth
 is the whole problem. Holding one cached smallest value breaks the first time
 a `pop` removes it, and rescanning the stack is linear. What survives every
-sequence of operations is a *history* of minima — each one valid for the
+sequence of operations is a _history_ of minima — each one valid for the
 stack exactly as it stood at one moment.
 
 So each entry stores two numbers: the value pushed, and the smallest value in

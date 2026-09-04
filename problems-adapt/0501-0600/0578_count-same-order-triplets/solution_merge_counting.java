@@ -38,7 +38,9 @@ class Solution {
         mergeSort(a, order, smallerAfter, lo, mid);
         mergeSort(a, order, smallerAfter, mid, hi);
         int[] left = Arrays.copyOfRange(order, lo, mid);
-        int i = 0, j = mid, k = lo;
+        int i = 0,
+            j = mid,
+            k = lo;
         while (i < left.length && j < hi) {
             if (a[left[i]] < a[order[j]]) {
                 smallerAfter[left[i]] += j - mid; // right-half values already placed below it

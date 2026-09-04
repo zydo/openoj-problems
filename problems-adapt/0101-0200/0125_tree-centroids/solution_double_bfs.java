@@ -31,10 +31,11 @@ class Solution {
         // The minimal-height roots are the path's middle: one node when the
         // diameter has an even number of edges, two adjacent middles when odd.
         if (d % 2 == 0) {
-            return new int[] {path[d / 2]};
+            return new int[] { path[d / 2] };
         }
-        int a = path[d / 2], b = path[d / 2 + 1];
-        return a < b ? new int[] {a, b} : new int[] {b, a};
+        int a = path[d / 2],
+            b = path[d / 2 + 1];
+        return a < b ? new int[] { a, b } : new int[] { b, a };
     }
 
     // One BFS from src: fills dist and parent, returns the farthest node

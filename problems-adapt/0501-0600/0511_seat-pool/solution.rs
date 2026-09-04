@@ -10,13 +10,21 @@ pub struct SeatPool {
 
 impl SeatPool {
     pub fn new(_n: i32) -> Self {
-        SeatPool { next_seat: 1, returned: BinaryHeap::new() }
+        SeatPool {
+            next_seat: 1,
+            returned: BinaryHeap::new(),
+        }
     }
 
     pub fn reserve(&mut self) -> i32 {
         // Prefer the smallest returned seat; the top is always < next_seat,
         // so the two sources of free seats never overlap.
-        if self.returned.peek().map(|&Reverse(top)| top < self.next_seat).unwrap_or(false) {
+        if self
+            .returned
+            .peek()
+            .map(|&Reverse(top)| top < self.next_seat)
+            .unwrap_or(false)
+        {
             return self.returned.pop().map(|Reverse(seat)| seat).unwrap();
         }
         // No outstanding returns: the next fresh seat is simply next_seat.

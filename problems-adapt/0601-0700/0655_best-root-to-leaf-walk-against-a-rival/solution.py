@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution:
     def bestWalkIncome(self, edges: list[list[int]], bob: int, amount: list[int]) -> int:
         n = len(amount)

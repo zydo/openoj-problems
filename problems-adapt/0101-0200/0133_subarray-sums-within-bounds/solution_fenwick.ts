@@ -13,7 +13,8 @@ function countBoundedSums(nums: number[], lower: number, upper: number): number 
     const tree = new Int32Array(m + 1);
     // Number of ranks at most bound.
     const uptoRank = (bound: number): number => {
-        let lo = 0, hi = m;
+        let lo = 0,
+            hi = m;
         while (lo < hi) {
             const mid = (lo + hi) >> 1;
             if (ranks[mid] <= bound) {

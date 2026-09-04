@@ -15,7 +15,7 @@ Taking it pays `profit[i]` on top of the best schedule that had already
 finished when job `i` begins — and finding that schedule is where the
 ordering pays off: with the jobs sorted by end time, their end times form a
 sorted array, and the number of them at or before job `i`'s start comes
-from a binary search. Searching *at or before* rather than strictly before
+from a binary search. Searching _at or before_ rather than strictly before
 encodes the touching rule from the statement — a span ending at `X` and one
 starting at `X` do not collide, as Example 1's [2,4) and [4,7) show.
 

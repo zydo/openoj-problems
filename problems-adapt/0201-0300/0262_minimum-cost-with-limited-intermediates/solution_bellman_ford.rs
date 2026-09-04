@@ -1,5 +1,11 @@
 impl Solution {
-    pub fn minimum_limited_route_cost(nodeCount: i32, links: Vec<Vec<i32>>, source: i32, target: i32, maxIntermediates: i32) -> i32 {
+    pub fn minimum_limited_route_cost(
+        nodeCount: i32,
+        links: Vec<Vec<i32>>,
+        source: i32,
+        target: i32,
+        maxIntermediates: i32,
+    ) -> i32 {
         let nodeCount = nodeCount as usize;
         let source = source as usize;
         let target = target as usize;

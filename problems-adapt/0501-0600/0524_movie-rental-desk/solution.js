@@ -11,7 +11,7 @@ class MinHeap {
     push(item) {
         const items = this.items;
         items.push(item);
-        for (let child = items.length - 1; child > 0; ) {
+        for (let child = items.length - 1; child > 0;) {
             const parent = (child - 1) >> 1;
             if (!this.before(items[child], items[parent])) {
                 break;
@@ -27,7 +27,7 @@ class MinHeap {
         const last = items.pop();
         if (items.length > 0) {
             items[0] = last;
-            for (let parent = 0; ; ) {
+            for (let parent = 0; ;) {
                 const left = parent * 2 + 1;
                 const right = left + 1;
                 let first = parent;
@@ -53,7 +53,7 @@ class MovieRentalDesk {
         this.price = new Map(); // (shop, movie) -> price
         this.unrented = new Map(); // movie -> heap of [price, shop, token]
         this.unrentedToken = new Map(); // copy -> live shelf token
-        this.rented = new MinHeap((a, b) => a[0] !== b[0] ? a[0] < b[0] : a[1] !== b[1] ? a[1] < b[1] : a[2] < b[2]);
+        this.rented = new MinHeap((a, b) => (a[0] !== b[0] ? a[0] < b[0] : a[1] !== b[1] ? a[1] < b[1] : a[2] < b[2]));
         this.rentedToken = new Map(); // copy -> live rented token
         this.serial = 0;
         for (const [shop, movie, price] of entries) {
@@ -63,7 +63,7 @@ class MovieRentalDesk {
             this.unrentedToken.set(copy, this.serial);
             let shelf = this.unrented.get(movie);
             if (!shelf) {
-                shelf = new MinHeap((a, b) => a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1]);
+                shelf = new MinHeap((a, b) => (a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1]));
                 this.unrented.set(movie, shelf);
             }
             shelf.push([price, shop, this.serial]);
@@ -110,7 +110,7 @@ class MovieRentalDesk {
         this.unrentedToken.set(copy, this.serial);
         let shelf = this.unrented.get(movie);
         if (!shelf) {
-            shelf = new MinHeap((a, b) => a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1]);
+            shelf = new MinHeap((a, b) => (a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1]));
             this.unrented.set(movie, shelf);
         }
         shelf.push([this.price.get(copy), shop, this.serial]);

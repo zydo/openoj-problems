@@ -26,7 +26,11 @@ impl RandomDrawWithExclusions {
                 free += 1;
             }
         }
-        RandomDrawWithExclusions { size: size as u64, mapping, state: 0x9E3779B97F4A7C15 }
+        RandomDrawWithExclusions {
+            size: size as u64,
+            mapping,
+            state: 0x9E3779B97F4A7C15,
+        }
     }
 
     pub fn pick(&mut self) -> i32 {

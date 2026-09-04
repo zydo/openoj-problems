@@ -37,9 +37,7 @@ class Solution {
                 hi = Math.min(c, n - 1 - c);
             while (lo < hi) {
                 int mid = (lo + hi + 1) / 2;
-                if (
-                    isPal(n, c - mid, c + mid, pre1, pre2, rpre1, rpre2, pow1, pow2, MOD1, MOD2)
-                ) {
+                if (isPal(n, c - mid, c + mid, pre1, pre2, rpre1, rpre2, pow1, pow2, MOD1, MOD2)) {
                     lo = mid;
                 } else {
                     hi = mid - 1;
@@ -113,10 +111,10 @@ class Solution {
         long MOD2
     ) {
         int length = r - l + 1;
-        long f1 = ((pre1[r + 1] - pre1[l] * pow1[length]) % MOD1 + MOD1) % MOD1;
-        long g1 = ((rpre1[n - l] - rpre1[n - 1 - r] * pow1[length]) % MOD1 + MOD1) % MOD1;
-        long f2 = ((pre2[r + 1] - pre2[l] * pow2[length]) % MOD2 + MOD2) % MOD2;
-        long g2 = ((rpre2[n - l] - rpre2[n - 1 - r] * pow2[length]) % MOD2 + MOD2) % MOD2;
+        long f1 = (((pre1[r + 1] - pre1[l] * pow1[length]) % MOD1) + MOD1) % MOD1;
+        long g1 = (((rpre1[n - l] - rpre1[n - 1 - r] * pow1[length]) % MOD1) + MOD1) % MOD1;
+        long f2 = (((pre2[r + 1] - pre2[l] * pow2[length]) % MOD2) + MOD2) % MOD2;
+        long g2 = (((rpre2[n - l] - rpre2[n - 1 - r] * pow2[length]) % MOD2) + MOD2) % MOD2;
         return f1 == g1 && f2 == g2;
     }
 }

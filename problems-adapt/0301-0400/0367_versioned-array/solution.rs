@@ -7,7 +7,10 @@ pub struct VersionedArray {
 
 impl VersionedArray {
     pub fn new(length: i32) -> Self {
-        VersionedArray { current: 0, history: HashMap::new() }
+        VersionedArray {
+            current: 0,
+            history: HashMap::new(),
+        }
     }
 
     pub fn set(&mut self, index: i32, val: i32) {

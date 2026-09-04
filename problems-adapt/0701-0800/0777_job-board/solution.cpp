@@ -8,7 +8,7 @@
 class JobBoard {
   public:
     JobBoard(std::vector<std::vector<int>> jobs) {
-        for (const std::vector<int>& job : jobs) {
+        for (const std::vector<int> &job : jobs) {
             records[job[1]] = {job[2], job[0]};
             heap.push({-job[2], -job[1], job[0]});
         }
@@ -25,9 +25,7 @@ class JobBoard {
         heap.push({-newPriority, -jobId, userId});
     }
 
-    void withdraw(int jobId) {
-        records.erase(jobId);
-    }
+    void withdraw(int jobId) { records.erase(jobId); }
 
     int runTop() {
         while (!heap.empty()) {
@@ -50,5 +48,6 @@ class JobBoard {
     // Min-order over (-priority, -jobId, userId): the top is the highest
     // priority, tie-broken by the highest jobId.
     std::priority_queue<std::tuple<int, int, int>, std::vector<std::tuple<int, int, int>>,
-                        std::greater<std::tuple<int, int, int>>> heap;
+                        std::greater<std::tuple<int, int, int>>>
+        heap;
 };

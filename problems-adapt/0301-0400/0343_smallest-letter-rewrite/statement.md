@@ -66,5 +66,5 @@ representative per group.
 
 Choose the representative deliberately: when two groups merge, let the
 alphabetically earlier of the two representatives survive. Then the
-representative of a letter's group *is* its replacement, and one pass over
+representative of a letter's group _is_ its replacement, and one pass over
 `text` finishes the job.

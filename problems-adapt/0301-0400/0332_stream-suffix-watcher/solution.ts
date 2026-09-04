@@ -25,7 +25,8 @@ class SuffixWatcher {
     feed(letter: string): boolean {
         const advanced: TrieNode[] = [];
         let hit = false;
-        for (const node of this.nodes) { // index 0 is always the root
+        for (const node of this.nodes) {
+            // index 0 is always the root
             const child = node[letter] as TrieNode | undefined;
             if (child !== undefined) {
                 advanced.push(child);

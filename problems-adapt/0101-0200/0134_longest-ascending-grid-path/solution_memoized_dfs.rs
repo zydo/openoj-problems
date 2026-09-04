@@ -40,7 +40,10 @@ impl Solution {
                     let nj = j as isize + dj[k];
                     stack.last_mut().unwrap().2 += 1;
                     // Only strictly larger neighbours continue the walk.
-                    if ni >= 0 && (ni as usize) < m && nj >= 0 && (nj as usize) < n
+                    if ni >= 0
+                        && (ni as usize) < m
+                        && nj >= 0
+                        && (nj as usize) < n
                         && matrix[ni as usize][nj as usize] > matrix[i][j]
                     {
                         let (ni, nj) = (ni as usize, nj as usize);

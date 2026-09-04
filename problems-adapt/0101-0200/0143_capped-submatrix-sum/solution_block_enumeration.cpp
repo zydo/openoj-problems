@@ -8,8 +8,7 @@ class Solution {
         vector<vector<int>> prefix(m + 1, vector<int>(n + 1, 0));
         for (int r = 1; r <= m; r++) {
             for (int c = 1; c <= n; c++) {
-                prefix[r][c] = prefix[r - 1][c] + prefix[r][c - 1]
-                             - prefix[r - 1][c - 1] + matrix[r - 1][c - 1];
+                prefix[r][c] = prefix[r - 1][c] + prefix[r][c - 1] - prefix[r - 1][c - 1] + matrix[r - 1][c - 1];
             }
         }
         // Walk every block by its four corner coordinates and keep the

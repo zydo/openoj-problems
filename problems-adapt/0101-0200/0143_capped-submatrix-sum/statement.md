@@ -2,7 +2,7 @@
 
 ## Description
 
-`matrix` has `m` rows and `n` columns of integers, and `k` is a cap. A *block*
+`matrix` has `m` rows and `n` columns of integers, and `k` is a cap. A _block_
 is any set of cells picked out by a range of consecutive rows and a range of
 consecutive columns; its value is the sum of the cells inside it.
 
@@ -71,7 +71,7 @@ over the array, so the collapsing is nearly free.
 
 In the collapsed array, a stretch's total is one running sum minus an earlier
 one. To make the difference as large as possible without passing `k`, you want
-the *smallest* earlier running sum that is still at least `current - k`.
+the _smallest_ earlier running sum that is still at least `current - k`.
 
 ### Hint 4
 

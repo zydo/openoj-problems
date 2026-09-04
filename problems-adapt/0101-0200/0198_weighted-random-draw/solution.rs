@@ -14,7 +14,10 @@ impl Solution {
         for weight in weights {
             prefix.push(*prefix.last().unwrap() + weight as i64);
         }
-        Solution { prefix, random: 0x9E3779B97F4A7C15 }
+        Solution {
+            prefix,
+            random: 0x9E3779B97F4A7C15,
+        }
     }
 
     fn next_u64(&mut self) -> u64 {

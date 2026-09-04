@@ -30,7 +30,7 @@ function disjointPalindromeProduct(s: string): number {
     const mulmod = (x: number, y: number, m: number): number => {
         const xHi = Math.floor(x / 65536);
         const xLo = x % 65536;
-        return ((((xHi * y) % m) * 65536) % m + ((xLo * y) % m)) % m;
+        return (((((xHi * y) % m) * 65536) % m) + ((xLo * y) % m)) % m;
     };
 
     // s[l..r] is a palindrome iff its forward hash equals the forward hash

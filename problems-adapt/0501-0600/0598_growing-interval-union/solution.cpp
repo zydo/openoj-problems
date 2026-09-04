@@ -24,11 +24,9 @@ class IntervalUnion {
         intervals.emplace(newLeft, newRight);
     }
 
-    int size() {
-        return (int)covered;
-    }
+    int size() { return (int)covered; }
 
   private:
-    std::map<int, int> intervals;  // start -> end
+    std::map<int, int> intervals; // start -> end
     long long covered = 0;
 };

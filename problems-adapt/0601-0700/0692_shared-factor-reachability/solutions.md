@@ -5,7 +5,7 @@
 Neighbourhood is exactly shared prime factors, so the positions form one
 family iff they all land in a single union-find component. Wiring every
 neighbour pair directly is quadratic, but each prime can act as a hub that
-chains its positions together: unioning a position with the *previous*
+chains its positions together: unioning a position with the _previous_
 position that claimed the same prime preserves connectivity with linearly
 many unions, since consecutive links along the chain already make a prime's
 positions mutually reachable.

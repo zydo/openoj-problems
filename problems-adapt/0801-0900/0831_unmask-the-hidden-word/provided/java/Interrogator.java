@@ -4,6 +4,7 @@
  * documented in the starter. Constructed from the case state: the
  * wordlist and the secret word, then the guess budget. */
 public class Interrogator {
+
     private final String secret;
     private long budget;
     private boolean found;

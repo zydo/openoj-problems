@@ -2,8 +2,8 @@
 
 ## Description
 
-Call any run of one or more neighbouring entries of `nums` a *window*, and call
-the biggest entry inside a window its *peak*. Report how many windows have a
+Call any run of one or more neighbouring entries of `nums` a _window_, and call
+the biggest entry inside a window its _peak_. Report how many windows have a
 peak that is at least `left` and at most `right`.
 
 A window is fixed by where it begins and where it ends, so two windows carrying

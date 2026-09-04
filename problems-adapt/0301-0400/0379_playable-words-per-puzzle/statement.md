@@ -5,7 +5,7 @@
 A puzzle is a string of seven **distinct** lowercase letters, and its first
 letter is the puzzle's **key letter**.
 
-A word is *playable* against a puzzle when:
+A word is _playable_ against a puzzle when:
 
 - the word uses the puzzle's key letter, and
 - every letter the word uses is one of the puzzle's seven letters.

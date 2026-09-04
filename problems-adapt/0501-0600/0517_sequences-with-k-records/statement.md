@@ -47,7 +47,7 @@ reduced modulo 10^9 + 7.
 ### Hint 1
 
 Let `f(i, j)` count the rows of `{1, …, i}` with `j` records. To build a
-recurrence, single out one value and ask where it stands — the *smallest*
+recurrence, single out one value and ask where it stands — the _smallest_
 is the one whose position is easiest to reason about.
 
 ### Hint 2

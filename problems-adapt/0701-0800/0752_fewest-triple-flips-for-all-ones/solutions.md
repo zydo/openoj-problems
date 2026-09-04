@@ -20,7 +20,7 @@ the answer is `-1`.
 ![[1,1,0,1,1,0] through its two forced flips: the flip at 2 leaves a fresh 0 at 3, and the flip at 3 finishes the array.](figures/solution-greedy-flips.svg)
 
 The flipped zero at position 3 in the figure is the whole story of why this
-cost can be spread out: one operation can *create* work for later positions.
+cost can be spread out: one operation can _create_ work for later positions.
 It cannot create cheaper work, though. Every flip the sweep counts was forced
 at the moment it was taken, so no sequence of operations can pay less, and the
 sweep achieves the bound exactly. An all-ones input pays `0`; an all-zeros

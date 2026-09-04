@@ -4,7 +4,7 @@
 
 `grid` is a square matrix with `n` rows and `n` columns whose entries are `0` and
 `1`. Call a maximal set of `1` cells that reach one another by steps up, down,
-left or right an *island*, and call its cell count its size.
+left or right an _island_, and call its cell count its size.
 
 You may turn one `0` entry into a `1`, or decline to change anything. Return the
 size of the biggest island the matrix can hold once you have decided.

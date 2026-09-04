@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution:
     def cheapestPickSum(self, costs: list[int], k: int, window: int) -> int:
         n = len(costs)

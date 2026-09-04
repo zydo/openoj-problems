@@ -1,4 +1,6 @@
 from bisect import bisect_right
+
+
 class Solution:
     def fewestRemovals(self, nums: list[int]) -> int:
         # Each removal takes out one strictly increasing subsequence, so a

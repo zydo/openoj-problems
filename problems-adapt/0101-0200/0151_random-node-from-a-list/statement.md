@@ -14,7 +14,7 @@ Implement the `Solution` class:
 
 Because the judge passes plain arrays, the list arrives in wire form as a
 single argument: `head`, the node values in order. Position `i` of that
-array *is* the `i`-th node; there is nothing to chain up.
+array _is_ the `i`-th node; there is nothing to chain up.
 
 ### How the draw is judged
 
@@ -73,7 +73,7 @@ only a couple of variables besides the candidate itself?
 
 ### Hint 1
 
-Uniformity over *nodes* does not care how the nodes are wired together; a
+Uniformity over _nodes_ does not care how the nodes are wired together; a
 walk that visits one node per step in a fixed order is interchangeable with
 the sequence of values it visits. Reduce the problem to sampling one slot of
 that sequence uniformly.

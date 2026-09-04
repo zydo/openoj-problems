@@ -16,7 +16,12 @@ pub struct FrequencyCache {
 
 impl FrequencyCache {
     pub fn new(capacity: i32) -> Self {
-        FrequencyCache { capacity: capacity as usize, nodes: HashMap::new(), order: BTreeMap::new(), clock: 0 }
+        FrequencyCache {
+            capacity: capacity as usize,
+            nodes: HashMap::new(),
+            order: BTreeMap::new(),
+            clock: 0,
+        }
     }
 
     // A use moves the entry one frequency up at a fresh tick.

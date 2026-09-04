@@ -3,7 +3,7 @@
 ## Subsets over letter masks
 
 A join is legal exactly when its letters are all distinct, so a candidate is
-summarized by *which* of the 26 letters it contains — never by their order
+summarized by _which_ of the 26 letters it contains — never by their order
 or grouping. That collapses every string to a 26-bit mask: two strings
 coexist in a join precisely when their masks have no bit in common, and the
 length of a join is the popcount of its mask. Once the masks exist, the
@@ -15,7 +15,7 @@ no placement can repair a duplicate it brings by itself. The search is then
 a depth-first walk over the list with a start index that only moves forward:
 each call records the popcount of the mask carried so far as a candidate,
 then offers every later string whose mask is disjoint from it. The forward
-index enumerates every *set* of strings exactly once rather than every
+index enumerates every _set_ of strings exactly once rather than every
 ordering — the popcount cannot tell orderings apart, so nothing is lost by
 skipping them.
 

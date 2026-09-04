@@ -46,8 +46,8 @@ inputs like `"aa"` need no special casing.
 
 Manacher's algorithm supplies the raw material in one pass: for each center
 `c`, the radius `d1[c]` of the longest odd palindrome around `c`. Recording,
-per index, the longest palindrome that *ends* there and the longest that
-*starts* there is a direct transcription of those radii. The subtle step is
+per index, the longest palindrome that _ends_ there and the longest that
+_starts_ there is a direct transcription of those radii. The subtle step is
 propagation: a palindrome of length `m` ending at index `e` implies one of
 length `m - 2` ending at `e - 1` (drop the outermost pair; the center is
 unchanged and the length stays odd), so a right-to-left sweep of

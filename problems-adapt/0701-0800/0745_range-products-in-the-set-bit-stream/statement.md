@@ -5,13 +5,13 @@
 Every positive integer is a sum of powers of two. Write each one as the list
 of those powers, smallest first — this decomposition is unique:
 
-| num | binary   | powers        |
-| --- | -------- | ------------- |
-| 2   | 00010    | [2]           |
-| 5   | 00101    | [1,4]         |
-| 6   | 00110    | [2,4]         |
-| 11  | 01011    | [1,2,8]       |
-| 21  | 10101    | [1,4,16]      |
+| num | binary | powers   |
+| --- | ------ | -------- |
+| 2   | 00010  | [2]      |
+| 5   | 00101  | [1,4]    |
+| 6   | 00110  | [2,4]    |
+| 11  | 01011  | [1,2,8]  |
+| 21  | 10101  | [1,4,16] |
 
 Now read the lists for 1, 2, 3, ... in order and concatenate them into one
 infinite stream, which begins
@@ -61,7 +61,7 @@ and 256 % 7 = 4. Position 15 alone holds 2, and 2 % 3 = 2.
 
 Every stream element is a power of two, so any range product is 2 raised to
 the sum of the exponents involved. What is still missing is a way to total
-those exponents over a stream *prefix*.
+those exponents over a stream _prefix_.
 
 ### Hint 2
 

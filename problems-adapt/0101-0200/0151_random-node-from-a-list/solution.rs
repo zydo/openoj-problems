@@ -8,7 +8,10 @@ pub struct Solution {
 
 impl Solution {
     pub fn new(head: Vec<i32>) -> Self {
-        Solution { values: head, random: 0x9E3779B97F4A7C15 }
+        Solution {
+            values: head,
+            random: 0x9E3779B97F4A7C15,
+        }
     }
 
     fn next_u64(&mut self) -> u64 {

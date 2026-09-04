@@ -9,7 +9,9 @@ impl Graph {
     pub fn new(n: i32, edges: Vec<Vec<i32>>) -> Self {
         // Edges are only appended, never removed or reweighted, so a
         // plain adjacency list never needs invalidating or rebuilding.
-        let mut graph = Graph { adjacency: vec![Vec::new(); n as usize] };
+        let mut graph = Graph {
+            adjacency: vec![Vec::new(); n as usize],
+        };
         for edge in &edges {
             graph.adjacency[edge[0] as usize].push((edge[1] as usize, edge[2] as i64));
         }

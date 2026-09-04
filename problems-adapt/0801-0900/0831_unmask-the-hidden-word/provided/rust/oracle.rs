@@ -34,11 +34,7 @@ impl Interrogator {
         if word == self.secret {
             self.found = true;
         }
-        self.secret
-            .bytes()
-            .zip(word.bytes())
-            .filter(|(a, b)| a == b)
-            .count() as i32
+        self.secret.bytes().zip(word.bytes()).filter(|(a, b)| a == b).count() as i32
     }
 
     pub fn verdict(&self) -> OjValue {

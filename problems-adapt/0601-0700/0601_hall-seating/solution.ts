@@ -57,14 +57,11 @@ class HallSeating {
             return this.sums[node];
         }
         const mid = (lo + hi) >>> 1;
-        return this.rangeSum(2 * node, lo, mid, left, right)
-            + this.rangeSum(2 * node + 1, mid + 1, hi, left, right);
+        return this.rangeSum(2 * node, lo, mid, left, right) + this.rangeSum(2 * node + 1, mid + 1, hi, left, right);
     }
 
     // Smallest index in [left, right] with remaining >= k, or -1.
-    private firstAtLeast(
-        node: number, lo: number, hi: number, left: number, right: number, k: number,
-    ): number {
+    private firstAtLeast(node: number, lo: number, hi: number, left: number, right: number, k: number): number {
         if (right < lo || hi < left || this.maxs[node] < k) {
             return -1;
         }

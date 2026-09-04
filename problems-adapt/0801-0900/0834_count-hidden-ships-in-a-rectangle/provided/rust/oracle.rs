@@ -39,10 +39,7 @@ impl Ocean {
         }
         self.budget -= 1;
         self.ships.iter().any(|ship| {
-            ship[0] >= bottom_left[0]
-                && ship[0] <= top_right[0]
-                && ship[1] >= bottom_left[1]
-                && ship[1] <= top_right[1]
+            ship[0] >= bottom_left[0] && ship[0] <= top_right[0] && ship[1] >= bottom_left[1] && ship[1] <= top_right[1]
         })
     }
 }

@@ -59,7 +59,7 @@ only 1, nums2 high) with position 3 also reaches 24, and no pair does better.
 ### Hint 1
 
 The second factor is a minimum, and minima are awkward to maximize directly.
-Enumerate instead: which position *supplies* the minimum?
+Enumerate instead: which position _supplies_ the minimum?
 
 ### Hint 2
 

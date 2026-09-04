@@ -17,10 +17,12 @@ type shelfEntry struct {
 
 type shelfHeap []shelfEntry
 
-func (h shelfHeap) Len() int           { return len(h) }
-func (h shelfHeap) Less(i, j int) bool { return h[i].price < h[j].price || (h[i].price == h[j].price && h[i].shop < h[j].shop) }
-func (h shelfHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
-func (h *shelfHeap) Push(x any)        { *h = append(*h, x.(shelfEntry)) }
+func (h shelfHeap) Len() int { return len(h) }
+func (h shelfHeap) Less(i, j int) bool {
+	return h[i].price < h[j].price || (h[i].price == h[j].price && h[i].shop < h[j].shop)
+}
+func (h shelfHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }
+func (h *shelfHeap) Push(x any)   { *h = append(*h, x.(shelfEntry)) }
 func (h *shelfHeap) Pop() any {
 	old := *h
 	item := old[len(old)-1]

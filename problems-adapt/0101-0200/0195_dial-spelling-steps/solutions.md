@@ -2,8 +2,8 @@
 
 ## Stage-by-Stage Dynamic Programming over Alignments
 
-The only thing that carries from one key character to the next is *where the
-dial is pointing* — the history of how it got there is spent. That makes the
+The only thing that carries from one key character to the next is _where the
+dial is pointing_ — the history of how it got there is spent. That makes the
 dial position the entire state, and since a press is only legal when the
 marked position already holds the wanted letter, the reachable states after
 spelling `key[:t]` are exactly the ring indices carrying `key[t-1]`. So the

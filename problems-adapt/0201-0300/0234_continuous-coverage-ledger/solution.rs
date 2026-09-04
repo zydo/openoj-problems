@@ -32,7 +32,10 @@ fn replace(values: &mut Vec<i32>, from: usize, to: usize, replacement: &[i32]) {
 
 impl CoverageLedger {
     pub fn new() -> Self {
-        CoverageLedger { starts: Vec::new(), ends: Vec::new() }
+        CoverageLedger {
+            starts: Vec::new(),
+            ends: Vec::new(),
+        }
     }
 
     pub fn addSpan(&mut self, start: i32, end: i32) {

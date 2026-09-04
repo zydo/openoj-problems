@@ -58,7 +58,7 @@ after that is irrelevant. One disagreement, one fact.
 ### Hint 2
 
 If the left word runs out while still agreeing, nothing is decided — but
-if the *right* word runs out first, the left word sits before its own
+if the _right_ word runs out first, the left word sits before its own
 prefix, and no ordering of letters can rescue that. Answer `""` on the
 spot.
 

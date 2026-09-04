@@ -2,7 +2,7 @@
 
 ## Description
 
-A value in `nums` is the *majority element* when it occupies strictly more
+A value in `nums` is the _majority element_ when it occupies strictly more
 than half of the array's positions — that is, it turns up more than `n / 2`
 times, with any fractional part discarded.
 

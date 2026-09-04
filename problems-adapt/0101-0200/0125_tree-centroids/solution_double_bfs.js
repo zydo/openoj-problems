@@ -49,6 +49,7 @@ var treeCentroids = function (n, edges) {
     if (d % 2 === 0) {
         return [path[d / 2]];
     }
-    const a = path[(d - 1) / 2], b = path[(d + 1) / 2];
+    const a = path[(d - 1) / 2],
+        b = path[(d + 1) / 2];
     return a < b ? [a, b] : [b, a];
 };

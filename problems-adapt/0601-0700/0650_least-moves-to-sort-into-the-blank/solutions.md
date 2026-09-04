@@ -21,8 +21,7 @@ as well.
 
 Take the third example `[2,3,0,1,5,4]` with the blank-last goal. The item in
 cell 0 (item 2) belongs in cell 1, the item in cell 1 belongs in cell 2, cell
-2 holds the blank, the blank belongs in cell 5, and the item in cell 5 (item
-4) belongs in cell 3, whose item 1 closes the loop back to cell 0: one cycle
+2 holds the blank, the blank belongs in cell 5, and the item in cell 5 (item 4) belongs in cell 3, whose item 1 closes the loop back to cell 0: one cycle
 of five cells owning the blank, priced `5 - 1 = 4`. Item 5 in cell 4 is a free
 fixed point, so this goal totals 4 — the optimum. Under the blank-first goal
 the same row decomposes into one blank cycle `[0,2]` plus two blank-free

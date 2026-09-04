@@ -13,7 +13,7 @@ revisits a value at index `k`, the stretch between that first occurrence and
 later revisit measures the longest stretch available from it.
 
 The map needs one seed, `0 -> -1`, standing for the empty prefix: a span
-that starts at index 0 is bookended by the difference value 0 *before* any
+that starts at index 0 is bookended by the difference value 0 _before_ any
 element, and recording it at −1 makes its length come out as
 `k - (-1) = k + 1` directly. Identical arrays keep the difference pinned at
 0 throughout, so the answer is the whole length — Example 1's three-ones

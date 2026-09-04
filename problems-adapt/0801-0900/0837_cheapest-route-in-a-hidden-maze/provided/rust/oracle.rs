@@ -45,7 +45,14 @@ impl MazeController {
         };
         let (row, col) = cell_of(&construction[1]);
         let (goal_row, goal_col) = cell_of(&construction[2]);
-        MazeController { cost, row, col, goal_row, goal_col, budget }
+        MazeController {
+            cost,
+            row,
+            col,
+            goal_row,
+            goal_col,
+            budget,
+        }
     }
 
     fn spend(&mut self) {

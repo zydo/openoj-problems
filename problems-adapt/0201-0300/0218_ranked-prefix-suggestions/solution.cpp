@@ -34,7 +34,7 @@ class PrefixSuggester {
         std::vector<std::pair<std::string, int>> matches;
         std::string prefix = typed;
         collect(current, prefix, matches);
-        std::sort(matches.begin(), matches.end(), [](const auto& a, const auto& b) {
+        std::sort(matches.begin(), matches.end(), [](const auto &a, const auto &b) {
             if (a.second != b.second) {
                 return a.second > b.second; // hotter first
             }
@@ -49,14 +49,14 @@ class PrefixSuggester {
 
   private:
     struct Node {
-        std::map<char, Node*> children; // byte order equals character order
+        std::map<char, Node *> children; // byte order equals character order
         int hotness = 0;
     };
 
-    Node* insert(const std::string& sentence, int extra) {
-        Node* node = root;
+    Node *insert(const std::string &sentence, int extra) {
+        Node *node = root;
         for (char byte : sentence) {
-            Node*& child = node->children[byte];
+            Node *&child = node->children[byte];
             if (child == nullptr) {
                 child = new Node();
             }
@@ -66,18 +66,18 @@ class PrefixSuggester {
         return node;
     }
 
-    void collect(Node* node, std::string& prefix, std::vector<std::pair<std::string, int>>& matches) {
+    void collect(Node *node, std::string &prefix, std::vector<std::pair<std::string, int>> &matches) {
         if (node->hotness > 0) {
             matches.emplace_back(prefix, node->hotness);
         }
-        for (auto& [byte, child] : node->children) {
+        for (auto &[byte, child] : node->children) {
             prefix.push_back(byte);
             collect(child, prefix, matches);
             prefix.pop_back();
         }
     }
 
-    Node* root = new Node();
-    Node* current = nullptr;
+    Node *root = new Node();
+    Node *current = nullptr;
     std::string typed;
 };

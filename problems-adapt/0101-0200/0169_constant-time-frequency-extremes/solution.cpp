@@ -8,9 +8,9 @@ class FrequencyExtremes {
     // One key entry, living in the node list of its count bucket.
     struct Node {
         std::string key;
-        Node* prev = nullptr;
-        Node* next = nullptr;
-        Bucket* bucket = nullptr;
+        Node *prev = nullptr;
+        Node *next = nullptr;
+        Bucket *bucket = nullptr;
     };
 
     // One count value: the keys currently at that count, threaded on a
@@ -19,8 +19,8 @@ class FrequencyExtremes {
         int count;
         Node head; // sentinel before the first key
         Node tail; // sentinel after the last key
-        Bucket* prev = nullptr;
-        Bucket* next = nullptr;
+        Bucket *prev = nullptr;
+        Bucket *next = nullptr;
 
         explicit Bucket(int count) : count(count) {
             head.next = &tail;
@@ -35,11 +35,11 @@ class FrequencyExtremes {
     }
 
     ~FrequencyExtremes() {
-        Bucket* bucket = first.next;
+        Bucket *bucket = first.next;
         while (bucket != &last) {
-            Bucket* nextBucket = bucket->next;
-            for (Node* node = bucket->head.next; node != &bucket->tail;) {
-                Node* nextNode = node->next;
+            Bucket *nextBucket = bucket->next;
+            for (Node *node = bucket->head.next; node != &bucket->tail;) {
+                Node *nextNode = node->next;
                 delete node;
                 node = nextNode;
             }
@@ -48,16 +48,16 @@ class FrequencyExtremes {
         }
     }
 
-    FrequencyExtremes(const FrequencyExtremes&) = delete;
-    FrequencyExtremes& operator=(const FrequencyExtremes&) = delete;
+    FrequencyExtremes(const FrequencyExtremes &) = delete;
+    FrequencyExtremes &operator=(const FrequencyExtremes &) = delete;
 
     void increase(std::string key) {
         auto found = nodes.find(key);
         if (found == nodes.end()) {
-            Node* node = new Node();
+            Node *node = new Node();
             node->key = std::move(key);
             nodes.emplace(node->key, node);
-            Bucket* target = first.next->count == 1 ? first.next : insertBucketAfter(&first, 1);
+            Bucket *target = first.next->count == 1 ? first.next : insertBucketAfter(&first, 1);
             pushNode(target, node);
             return;
         }
@@ -65,9 +65,9 @@ class FrequencyExtremes {
     }
 
     void decrease(std::string key) {
-        Node* node = nodes.at(key);
+        Node *node = nodes.at(key);
         if (node->bucket->count == 1) {
-            Bucket* bucket = node->bucket;
+            Bucket *bucket = node->bucket;
             unlinkNode(node);
             if (bucket->head.next == &bucket->tail) {
                 unlinkBucket(bucket);
@@ -81,23 +81,23 @@ class FrequencyExtremes {
     }
 
     std::string highestKey() {
-        Bucket* bucket = last.prev;
+        Bucket *bucket = last.prev;
         return bucket == &first ? std::string() : bucket->head.next->key;
     }
 
     std::string lowestKey() {
-        Bucket* bucket = first.next;
+        Bucket *bucket = first.next;
         return bucket == &last ? std::string() : bucket->head.next->key;
     }
 
   private:
-    void unlinkNode(Node* node) {
+    void unlinkNode(Node *node) {
         node->prev->next = node->next;
         node->next->prev = node->prev;
     }
 
-    void pushNode(Bucket* bucket, Node* node) {
-        Node* tail = bucket->tail.prev;
+    void pushNode(Bucket *bucket, Node *node) {
+        Node *tail = bucket->tail.prev;
         node->prev = tail;
         node->next = &bucket->tail;
         tail->next = node;
@@ -105,14 +105,14 @@ class FrequencyExtremes {
         node->bucket = bucket;
     }
 
-    void unlinkBucket(Bucket* bucket) {
+    void unlinkBucket(Bucket *bucket) {
         bucket->prev->next = bucket->next;
         bucket->next->prev = bucket->prev;
     }
 
-    Bucket* insertBucketAfter(Bucket* anchor, int count) {
-        Bucket* bucket = new Bucket(count);
-        Bucket* following = anchor->next;
+    Bucket *insertBucketAfter(Bucket *anchor, int count) {
+        Bucket *bucket = new Bucket(count);
+        Bucket *following = anchor->next;
         bucket->prev = anchor;
         bucket->next = following;
         anchor->next = bucket;
@@ -122,12 +122,11 @@ class FrequencyExtremes {
 
     // Counts change by one, so the target bucket is always the neighbour on
     // that side — or a new bucket created exactly there.
-    void move(Node* node, int target, bool up) {
-        Bucket* old = node->bucket;
+    void move(Node *node, int target, bool up) {
+        Bucket *old = node->bucket;
         unlinkNode(node);
-        Bucket* neighbour = up ? old->next : old->prev;
-        Bucket* bucket =
-            neighbour->count == target ? neighbour : insertBucketAfter(up ? old : neighbour, target);
+        Bucket *neighbour = up ? old->next : old->prev;
+        Bucket *bucket = neighbour->count == target ? neighbour : insertBucketAfter(up ? old : neighbour, target);
         pushNode(bucket, node);
         if (old->head.next == &old->tail) {
             unlinkBucket(old);
@@ -135,7 +134,7 @@ class FrequencyExtremes {
         }
     }
 
-    std::unordered_map<std::string, Node*> nodes;
+    std::unordered_map<std::string, Node *> nodes;
     Bucket first{0}; // sentinel before the lowest count
     Bucket last{0};  // sentinel after the highest count
 };

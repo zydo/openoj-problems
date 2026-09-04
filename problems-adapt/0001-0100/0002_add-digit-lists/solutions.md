@@ -17,7 +17,7 @@ both lists end keeps the loop alive for one more node — which is how `5 + 5`
 produces `[0, 1]`. `divmod(total, 10)` splits each column total into the new
 carry and the digit to append.
 
-When the loop exits, both inputs are exhausted *and* the carry is zero, so
+When the loop exits, both inputs are exhausted _and_ the carry is zero, so
 `dummy.next` is the finished sum. It has at most `max(m, n) + 1` nodes, the
 extra one being that final carry.
 

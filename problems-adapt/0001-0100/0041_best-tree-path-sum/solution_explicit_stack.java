@@ -5,6 +5,7 @@ class Solution {
 
     // One explicit post-order frame: the node plus how far its descent is.
     private static class Frame {
+
         TreeNode node;
         int phase;
 

@@ -4,7 +4,7 @@
 
 You are given an integer array `nums`.
 
-Call a subsequence *stepping* when each pair of adjacent elements in it
+Call a subsequence _stepping_ when each pair of adjacent elements in it
 differs by exactly 1 — that is, every element after the first is one more
 or one less than the element before it. A subsequence of one element
 counts as stepping.

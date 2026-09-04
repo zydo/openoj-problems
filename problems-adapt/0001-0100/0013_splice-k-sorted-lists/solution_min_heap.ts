@@ -6,8 +6,7 @@ function spliceKSortedLists(lists: (ListNode | null)[]): ListNode | null {
     const heap: Entry[] = [];
     // The position both breaks value ties (earlier list wins) and keeps the
     // ordering from ever looking at the nodes themselves.
-    const earlier = (a: Entry, b: Entry): boolean =>
-        a.val !== b.val ? a.val < b.val : a.position < b.position;
+    const earlier = (a: Entry, b: Entry): boolean => (a.val !== b.val ? a.val < b.val : a.position < b.position);
     const swap = (i: number, j: number): void => {
         const held = heap[i]!;
         heap[i] = heap[j]!;

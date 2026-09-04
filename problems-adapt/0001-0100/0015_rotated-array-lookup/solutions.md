@@ -42,6 +42,7 @@ run's span of 10 to 20, so the plain search runs over the front run
 Two binary searches, and the state is a few index variables either way.
 
 **Complexity:** `O(log n)` time, `O(1)` space.
+
 ## Single Pass Binary Search
 
 Halving works whenever you can prove one side cannot hold the answer. A single
@@ -74,4 +75,3 @@ Every iteration discards half the window and the state is a few index
 variables.
 
 **Complexity:** `O(log n)` time, `O(1)` space.
-

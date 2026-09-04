@@ -9,9 +9,9 @@ class FrequencyCache {
         int key = -1;
         int value = -1;
         int freq = 1;
-        Node* prev = nullptr;
-        Node* next = nullptr;
-        Bucket* bucket = nullptr;
+        Node *prev = nullptr;
+        Node *next = nullptr;
+        Bucket *bucket = nullptr;
     };
 
     // One frequency: an LRU list of nodes (head side = least recent)
@@ -21,8 +21,8 @@ class FrequencyCache {
         int freq;
         Node head; // sentinel before the least recent node
         Node tail; // sentinel after the most recent node
-        Bucket* prev = nullptr;
-        Bucket* next = nullptr;
+        Bucket *prev = nullptr;
+        Bucket *next = nullptr;
 
         explicit Bucket(int freq) : freq(freq) {
             head.next = &tail;
@@ -53,8 +53,8 @@ class FrequencyCache {
             return;
         }
         if ((int)nodes.size() == capacity) {
-            Bucket* victimBucket = first->next;
-            Node* victim = victimBucket->head.next;
+            Bucket *victimBucket = first->next;
+            Node *victim = victimBucket->head.next;
             unlinkNode(victim);
             nodes.erase(victim->key);
             delete victim;
@@ -63,28 +63,28 @@ class FrequencyCache {
                 delete victimBucket;
             }
         }
-        Node* created = new Node();
+        Node *created = new Node();
         created->key = key;
         created->value = value;
         nodes[key] = created;
-        Bucket* firstBucket = first->next;
-        Bucket* target = firstBucket->freq == 1 ? firstBucket : bucketAfter(first, 1);
+        Bucket *firstBucket = first->next;
+        Bucket *target = firstBucket->freq == 1 ? firstBucket : bucketAfter(first, 1);
         pushNode(target, created);
     }
 
   private:
     int capacity;
-    std::unordered_map<int, Node*> nodes;
-    Bucket* first = new Bucket(0); // sentinel before the lowest frequency
-    Bucket* last = new Bucket(0);  // sentinel after the highest frequency
+    std::unordered_map<int, Node *> nodes;
+    Bucket *first = new Bucket(0); // sentinel before the lowest frequency
+    Bucket *last = new Bucket(0);  // sentinel after the highest frequency
 
-    void unlinkNode(Node* node) {
+    void unlinkNode(Node *node) {
         node->prev->next = node->next;
         node->next->prev = node->prev;
     }
 
-    void pushNode(Bucket* bucket, Node* node) {
-        Node* tail = bucket->tail.prev;
+    void pushNode(Bucket *bucket, Node *node) {
+        Node *tail = bucket->tail.prev;
         node->prev = tail;
         node->next = &bucket->tail;
         tail->next = node;
@@ -92,32 +92,32 @@ class FrequencyCache {
         node->bucket = bucket;
     }
 
-    void unlinkBucket(Bucket* bucket) {
+    void unlinkBucket(Bucket *bucket) {
         bucket->prev->next = bucket->next;
         bucket->next->prev = bucket->prev;
     }
 
-    void addBucketAfter(Bucket* anchor, Bucket* bucket) {
-        Bucket* following = anchor->next;
+    void addBucketAfter(Bucket *anchor, Bucket *bucket) {
+        Bucket *following = anchor->next;
         bucket->prev = anchor;
         bucket->next = following;
         anchor->next = bucket;
         following->prev = bucket;
     }
 
-    Bucket* bucketAfter(Bucket* anchor, int freq) {
-        Bucket* bucket = new Bucket(freq);
+    Bucket *bucketAfter(Bucket *anchor, int freq) {
+        Bucket *bucket = new Bucket(freq);
         addBucketAfter(anchor, bucket);
         return bucket;
     }
 
     // A use moves the node to the bucket one frequency up, creating
     // that bucket exactly where it belongs if it is missing.
-    void bump(Node* node) {
-        Bucket* old = node->bucket;
-        Bucket* following = old->next;
+    void bump(Node *node) {
+        Bucket *old = node->bucket;
+        Bucket *following = old->next;
         unlinkNode(node);
-        Bucket* target = following->freq == node->freq + 1 ? following : bucketAfter(old, node->freq + 1);
+        Bucket *target = following->freq == node->freq + 1 ? following : bucketAfter(old, node->freq + 1);
         node->freq += 1;
         pushNode(target, node);
         if (old->head.next == &old->tail) {

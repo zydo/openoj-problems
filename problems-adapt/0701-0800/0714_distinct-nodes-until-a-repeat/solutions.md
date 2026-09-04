@@ -2,7 +2,7 @@
 
 ## Functional-graph walking in one pass per piece
 
-One outgoing edge per node makes this a *functional graph*: every walk is
+One outgoing edge per node makes this a _functional graph_: every walk is
 deterministic, so it runs through some tail of fresh nodes and then loops a
 cycle forever. The first repeat happens exactly when the walk closes the
 cycle, which means the count for a start `x` is `tail(x) + cycle(x)` — the
@@ -17,7 +17,7 @@ untouched, on the current walk, or resolved — and starts are skipped once
 resolved. From an unresolved start, follow edges while nodes are untouched,
 marking and recording them in walk order. The walk ends two ways:
 
-- It lands on a node of the *current* walk: a new cycle just closed. The
+- It lands on a node of the _current_ walk: a new cycle just closed. The
   recorded position of that node splits the walk into tail and cycle.
   Cycle members get the cycle length; each tail node gets the cycle length
   plus its distance to the cycle's entry.

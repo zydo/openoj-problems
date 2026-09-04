@@ -22,7 +22,11 @@ impl BitStream {
                 _ => panic!("BitStream bits must be integers"),
             }
         }
-        BitStream { bits, position: 0, budget }
+        BitStream {
+            bits,
+            position: 0,
+            budget,
+        }
     }
 
     pub fn next(&mut self) -> i32 {

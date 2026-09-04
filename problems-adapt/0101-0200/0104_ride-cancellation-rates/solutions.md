@@ -14,7 +14,7 @@ nothing outside the window can surface later.
 One row per surviving ride means one `GROUP BY ride_date` row per day that
 had traffic. The aggregation avoids maintaining two counts: the `CASE`
 expression hands out 1 for anything not `completed` and 0 otherwise, and
-`AVG` over those flags *is* cancelled-over-total, since both
+`AVG` over those flags _is_ cancelled-over-total, since both
 `cancelled_by_client` and `cancelled_by_driver` fall on the 1 side.
 `ROUND(..., 2)` finishes the output; the query never needs a `HAVING`,
 because a group exists only where rows existed.

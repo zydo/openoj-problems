@@ -53,7 +53,7 @@ denied that memory, so the ordering has to pay for the search instead.
 ### Hint 2
 
 Consider the pair made of the very first and the very last value. If their sum
-misses the target, one of the two can be ruled out of *every* pair — work out
+misses the target, one of the two can be ruled out of _every_ pair — work out
 which one, and in which direction the miss points.
 
 ### Hint 3

@@ -59,7 +59,7 @@ in a list as you descend.
 ### Hint 2
 
 The moment the list ends at node `n - 1` you are holding a finished route.
-Append a *copy* of it to the answer — the working list keeps changing — and
+Append a _copy_ of it to the answer — the working list keeps changing — and
 stop extending that branch.
 
 ### Hint 3

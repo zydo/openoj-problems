@@ -8,7 +8,7 @@ per-square contributions — a non-decreasing function of `y` that starts at 0
 and reaches the total. The balance height is therefore findable by bisection:
 keep an interval `[lo, hi]` covering every candidate (from 0 to the highest
 square top), test the midpoint, and keep the half that still contains the
-smallest qualifying height. Directing the search at the *smallest* such
+smallest qualifying height. Directing the search at the _smallest_ such
 height matters when the below-area flatlines — Example 2's plateau between
 heights 2 and 3 must return 2, not 3.
 

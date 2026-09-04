@@ -52,7 +52,7 @@ can resist it.
 
 ### Hint 1
 
-At any moment the only thing that matters about the past is *which* foes are
+At any moment the only thing that matters about the past is _which_ foes are
 already defeated — the gain follows from the count, and energy always restarts
 at zero.
 

@@ -8,7 +8,10 @@ pub struct RunningMedian {
 
 impl RunningMedian {
     pub fn new() -> Self {
-        RunningMedian { low: BinaryHeap::new(), high: BinaryHeap::new() }
+        RunningMedian {
+            low: BinaryHeap::new(),
+            high: BinaryHeap::new(),
+        }
     }
 
     pub fn add(&mut self, num: i32) {

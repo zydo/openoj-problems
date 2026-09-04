@@ -5,7 +5,7 @@
 The naive reading of the task — for each open cell, hunt for its closest
 source — repeats an enormous amount of work, since neighbouring cells
 rediscover the same routes. Turning the search around removes the repetition
-entirely: drop *every* source into the queue at the start and let a single
+entirely: drop _every_ source into the queue at the start and let a single
 breadth-first sweep flow outward across the grid. BFS uncovers cells in order
 of increasing distance, so the moment a cell is first reached, it has been
 reached along a shortest route from whichever source got there first. One

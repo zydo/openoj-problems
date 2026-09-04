@@ -48,7 +48,7 @@ Explanation: Entries may be negative: the pick 5 + (-7) sums to -2.
 ### Hint 1
 
 Work row by row. For each column, the best descent ending there takes that
-cell plus the best descent ending in some *other* column of the row above.
+cell plus the best descent ending in some _other_ column of the row above.
 
 ### Hint 2
 

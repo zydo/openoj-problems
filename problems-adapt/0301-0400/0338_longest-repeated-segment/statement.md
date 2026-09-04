@@ -2,7 +2,7 @@
 
 ## Description
 
-A *segment* of `s` is a block of consecutive characters cut out of it. Call a
+A _segment_ of `s` is a block of consecutive characters cut out of it. Call a
 segment **repeated** when `s` holds it at two or more different starting
 positions. Those positions are unrestricted: two occurrences of the same
 segment are free to sit on top of each other.

@@ -3,7 +3,7 @@
 ## Dynamic programming over endings, one tally per gap
 
 Progressions cannot be enumerated one by one — a thousand elements hide
-exponentially many subsequences — but they can be *counted* by where they
+exponentially many subsequences — but they can be _counted_ by where they
 end. Keep, for each index `i`, a dictionary `dp[i]` that maps a gap `d` to
 the number of progressions of length two or more ending at `nums[i]` with
 that gap. Pairs are the atoms: any two elements fix a gap, and everything

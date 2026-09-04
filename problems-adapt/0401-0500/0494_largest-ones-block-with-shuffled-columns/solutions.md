@@ -3,7 +3,7 @@
 ## Consecutive-Ones Heights with Per-Row Sorting
 
 Whole columns may be shuffled, so an all-ones block is pinned down only by
-*which* columns it spans, never by where they happen to stand. Fix the bottom
+_which_ columns it spans, never by where they happen to stand. Fix the bottom
 row of a candidate block: the right move is to gather the columns whose run of
 consecutive ones reaching that row is longest and let the shuffle set them
 shoulder to shoulder. Each row therefore poses the same histogram question —

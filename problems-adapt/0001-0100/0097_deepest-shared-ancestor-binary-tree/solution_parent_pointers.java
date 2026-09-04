@@ -15,7 +15,7 @@ class Solution {
         stack.push(root);
         while (!stack.isEmpty()) {
             TreeNode node = stack.pop();
-            for (TreeNode child : new TreeNode[] {node.left, node.right}) {
+            for (TreeNode child : new TreeNode[] { node.left, node.right }) {
                 if (child != null) {
                     parent.put(child.val, node.val);
                     stack.push(child);

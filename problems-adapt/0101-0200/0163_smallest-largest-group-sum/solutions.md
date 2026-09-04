@@ -6,7 +6,7 @@ Eight entries at most and eight groups at most: the space of assignments
 is small enough to walk outright. Hand the entries out one by one,
 trying every group as the destination of the current entry. The state is
 the vector of group sums together with the running maximum; once the
-last entry is placed, that maximum *is* the cost of the grouping at this
+last entry is placed, that maximum _is_ the cost of the grouping at this
 leaf, and the answer is the cheapest leaf reached.
 
 Two cuts keep the tree small. Bound pruning: the running maximum never

@@ -54,7 +54,8 @@ var lowestSumPairs = function (nums1, nums2, k) {
         const a = nums1[i];
         const target = threshold - a;
         // First and one-past-last index of target in the sorted nums2.
-        let loJ = 0, hiJ = nums2.length;
+        let loJ = 0,
+            hiJ = nums2.length;
         while (loJ < hiJ) {
             const mid = (loJ + hiJ) >> 1;
             if (nums2[mid] < target) loJ = mid + 1;

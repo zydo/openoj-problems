@@ -12,7 +12,7 @@ Implement the `RangeMajority` class:
   immutable array `arr`.
 - `int query(int left, int right, int threshold)` — return a value that
   occurs at least `threshold` times among the elements `arr[left],
-  arr[left+1], ..., arr[right]`, or `-1` if no value does.
+arr[left+1], ..., arr[right]`, or `-1` if no value does.
 
 Every query satisfies `2 * threshold > right - left + 1`, so a qualifying
 value would hold strictly more than half the stretch — which also means at
@@ -73,7 +73,7 @@ these pairs proposes the candidate of any stretch from `O(log n)` nodes.
 
 ### Hint 3
 
-The survivor of the vote is only a *proposal* — with no strict majority in
+The survivor of the vote is only a _proposal_ — with no strict majority in
 the stretch it is an arbitrary value. Verify it before answering: record
 each value's positions in order, and count its occurrences in
 `[left, right]` as the difference of two binary searches.

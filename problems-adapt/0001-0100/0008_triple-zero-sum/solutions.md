@@ -37,6 +37,7 @@ operations, so the sweep is quadratic overall — the same bill as the
 two-pointer walk, paid in hashing instead of sorting.
 
 **Complexity:** `O(n²)` time, `O(n)` space beyond the triples it collects.
+
 ## Sort Two Pointer
 
 Sort a private copy of the array first, then pin the smallest value of a
@@ -61,4 +62,3 @@ Sorting costs `O(n log n)`; each of the `n` pinned positions then runs one
 linear sweep, and those sweeps dominate.
 
 **Complexity:** `O(n²)` time, `O(n)` space.
-

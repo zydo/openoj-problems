@@ -1,4 +1,6 @@
 from bisect import bisect_left
+
+
 class Solution:
     def bestValue(self, events: list[list[int]], k: int) -> int:
         # Sorted by end day, any compatible set read by finish time is a

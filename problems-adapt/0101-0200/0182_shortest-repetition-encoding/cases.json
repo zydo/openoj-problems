@@ -2,21 +2,21 @@
   "public": [
     {
       "input": [
-      "bbbb"
+        "bbbb"
       ],
-    "expected": "bbbb"
+      "expected": "bbbb"
     },
     {
       "input": [
-      "xyzxyzxyz"
+        "xyzxyzxyz"
       ],
-    "expected": "3[xyz]"
+      "expected": "3[xyz]"
     },
     {
       "input": [
-      "abababababab"
+        "abababababab"
       ],
-    "expected": "6[ab]"
+      "expected": "6[ab]"
     }
   ],
   "hidden": [

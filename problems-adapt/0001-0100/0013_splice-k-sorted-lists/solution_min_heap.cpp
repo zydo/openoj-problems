@@ -9,7 +9,8 @@ class Solution {
     // "Greater" comparison turns priority_queue's max-heap into a min-heap.
     struct Later {
         bool operator()(const Entry &a, const Entry &b) const {
-            if (a.val != b.val) return a.val > b.val;
+            if (a.val != b.val)
+                return a.val > b.val;
             return a.position > b.position;
         }
     };

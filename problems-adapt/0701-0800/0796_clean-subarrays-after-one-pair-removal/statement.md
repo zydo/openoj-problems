@@ -7,7 +7,7 @@ through `n` in increasing order. You are also given a list of pairs
 `forbiddenPairs`, where `forbiddenPairs[i] = [a, b]` declares the values `a` and
 `b` incompatible.
 
-Call a contiguous subarray *clean* when, for every pair still under
+Call a contiguous subarray _clean_ when, for every pair still under
 consideration, the subarray does not hold both members of that pair.
 
 Exactly one pair must be dropped from `forbiddenPairs`. Return the largest

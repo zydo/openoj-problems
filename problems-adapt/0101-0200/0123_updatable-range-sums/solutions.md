@@ -5,7 +5,7 @@
 Neither obvious layout survives a mixed workload. Keeping the entries as they
 are makes `setValue` a single store but forces `rangeSum` to walk the stretch;
 keeping running totals inverts the cost, since one write invalidates every
-total from that position onward. The way out is to store totals of *pieces*
+total from that position onward. The way out is to store totals of _pieces_
 chosen so that both a prefix and a single position are covered by only a
 handful of them.
 

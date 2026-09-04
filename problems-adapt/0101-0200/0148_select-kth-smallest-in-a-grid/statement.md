@@ -60,7 +60,7 @@ entirely optional.
 ### Hint 1
 
 No ordering of the cells lists the values in order, so stop searching cell
-positions. The answer is a *value*, and it lies between the top-left and the
+positions. The answer is a _value_, and it lies between the top-left and the
 bottom-right corner.
 
 ### Hint 2

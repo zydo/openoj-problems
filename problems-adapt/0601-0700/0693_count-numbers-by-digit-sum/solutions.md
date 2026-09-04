@@ -10,8 +10,8 @@ never empty. Both evaluations run the same routine, and the difference is
 reduced modulo `10⁹ + 7`.
 
 `f(s)` runs backwards over the `m` digits of `s`. The state pairs a flag —
-*hugging*, meaning the digits chosen so far match the bound's prefix
-exactly, versus *free* — with the accumulated digit sum, which is capped at
+_hugging_, meaning the digits chosen so far match the bound's prefix
+exactly, versus _free_ — with the accumulated digit sum, which is capped at
 `max_sum`: sums only grow, so a branch already past the cap can never climb
 back into the window, and the digit loop breaks as soon as `sm + d` exceeds
 it. After the final position a state scores 1 exactly when the accumulated

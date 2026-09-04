@@ -18,7 +18,8 @@ class SuffixWatcher {
     feed(letter) {
         const advanced = [];
         let hit = false;
-        for (const node of this.nodes) { // index 0 is always the root
+        for (const node of this.nodes) {
+            // index 0 is always the root
             const child = node[letter];
             if (child !== undefined) {
                 advanced.push(child);

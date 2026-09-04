@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution:
     def minimumSupplyStops(self, destination: int, initialRange: int, supplies: list[list[int]]) -> int:
         # Greedy: drive as far as possible; when short of the destination,

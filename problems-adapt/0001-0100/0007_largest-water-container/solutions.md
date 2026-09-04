@@ -8,7 +8,7 @@ from the widest pair there is, one pointer at each end, then move one pointer
 inward at a time, keeping the best volume seen.
 
 The whole method rests on one observation. Any move shrinks the width, so a
-later pair can only win by reaching a higher level. Move the *taller* wall
+later pair can only win by reaching a higher level. Move the _taller_ wall
 inward and the level is still capped by the shorter wall, which has not
 changed — width fell, level did not rise, so every such pair is worse than the
 one just measured. The taller wall may still pay off later; the shorter one

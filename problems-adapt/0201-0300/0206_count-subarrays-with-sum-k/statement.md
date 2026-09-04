@@ -2,7 +2,7 @@
 
 ## Description
 
-You are handed an integer array `nums` and an integer `k`. A *slice* is any
+You are handed an integer array `nums` and an integer `k`. A _slice_ is any
 non-empty run of adjacent entries. Report how many distinct slices — counted by
 their position, not by their contents — add up to exactly `k`.
 

@@ -8,7 +8,7 @@ does not.
 
 The matrix is sorted twice over: reading any row from left to right the values
 increase, and reading any column from top to bottom they increase as well. The
-matrix is *not* sorted as a whole — a value can be smaller than one that sits
+matrix is _not_ sorted as a whole — a value can be smaller than one that sits
 above and to the right of it.
 
 ### Example 1

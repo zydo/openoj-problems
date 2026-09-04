@@ -12,7 +12,7 @@ and `j` ones.
 The strings are folded in one at a time against a single `(m+1) × (n+1)`
 table, both axes walked downward from their caps. During a string's pass the
 code binds `row = dp[i]` and `prev = dp[i - zeros]`, so the candidate
-`prev[j - ones] + 1` always consults the table as it stood *before* this
+`prev[j - ones] + 1` always consults the table as it stood _before_ this
 string was considered: `i` only decreases, so row `i - zeros` has not yet
 been rewritten within the pass. That downward walk is what makes the item
 0/1 — no string can exploit a state that already contains it — while the

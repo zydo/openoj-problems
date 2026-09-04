@@ -4,7 +4,7 @@
 
 One traversal answers for one node, so `n` traversals answer for all of them at
 a cost of `O(n^2)` — hopeless at thirty thousand nodes. The way out is to solve
-node `0` honestly and then *derive* every other answer from a neighbour's,
+node `0` honestly and then _derive_ every other answer from a neighbour's,
 paying constant time per edge. Node `0` becomes the root, and a queue-driven
 sweep records each node's parent together with an order in which parents always
 precede their children; using a queue rather than recursion keeps a long

@@ -25,7 +25,11 @@ impl Solution {
             .duration_since(UNIX_EPOCH)
             .map(|elapsed| elapsed.as_nanos() as u64)
             .unwrap_or(0x2545_F491_4F6C_DD1D);
-        Solution { rects: compact, prefix, state: nanos ^ ((std::process::id() as u64) << 32) | 1 }
+        Solution {
+            rects: compact,
+            prefix,
+            state: nanos ^ ((std::process::id() as u64) << 32) | 1,
+        }
     }
 
     fn next_u64(&mut self) -> u64 {

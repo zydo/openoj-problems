@@ -6,7 +6,7 @@ Recounting after every update means one full grid scan per entry of
 `positions`, which is the obvious plan and the one to refuse. The alternative
 carries a single number forward over a union-find (disjoint set) structure
 indexed by flattened cell id `r * n + c`: filling a cell creates one island,
-and every *distinct* island that cell touches edge-to-edge then disappears
+and every _distinct_ island that cell touches edge-to-edge then disappears
 into the merge.
 
 Each update begins with the `land` flags. A cell already land leaves
@@ -16,7 +16,7 @@ cell is marked, the count rises by one, and its four edge neighbours are
 considered in turn: the root of each land neighbour is compared with the new
 cell's root, and a difference means two islands just became one, so the sets
 are unioned and the count falls back by one. Two neighbours sitting on the
-*same* island are why roots rather than neighbour counts are compared: after
+_same_ island are why roots rather than neighbour counts are compared: after
 the first merge, the second `find` returns the root just created, the roots
 match, and no second decrement is taken.
 

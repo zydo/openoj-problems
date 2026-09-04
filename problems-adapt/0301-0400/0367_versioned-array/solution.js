@@ -29,7 +29,8 @@ class VersionedArray {
         }
         let low = 0;
         let high = entries.length;
-        while (low < high) { // rightmost entry at or before commit_id
+        while (low < high) {
+            // rightmost entry at or before commit_id
             const mid = (low + high) >>> 1;
             if (entries[mid][0] <= commit_id) {
                 low = mid + 1;

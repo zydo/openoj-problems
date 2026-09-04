@@ -10,7 +10,7 @@ each character of `s`, and how each character changed it.
 One forward scan supplies that. Start at length 0; a letter raises the length
 by 1, a digit `d` multiplies it by `d`. Fixed-width languages should saturate
 this running length at some ceiling well above `10^9` — the true value can
-overflow 64 bits even though the *final* length is promised not to — and
+overflow 64 bits even though the _final_ length is promised not to — and
 Python simply lets the integers grow.
 
 The reverse scan then peels the construction apart while carrying `k` with it.

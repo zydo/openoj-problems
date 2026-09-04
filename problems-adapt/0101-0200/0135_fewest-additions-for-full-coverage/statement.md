@@ -3,7 +3,7 @@
 ## Description
 
 The array `nums` holds positive integers in non-decreasing order. Call a total
-*reachable* when some subset of the array's entries adds up to exactly that
+_reachable_ when some subset of the array's entries adds up to exactly that
 total.
 
 You may insert extra positive integers into `nums`, choosing each one freely;

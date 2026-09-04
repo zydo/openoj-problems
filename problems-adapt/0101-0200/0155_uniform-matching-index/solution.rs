@@ -8,8 +8,13 @@ struct SplitMix64 {
 
 impl SplitMix64 {
     fn from_clock() -> Self {
-        let nanos = SystemTime::now().duration_since(UNIX_EPOCH).map(|d| d.as_nanos() as u64).unwrap_or(0x9E3779B97F4A7C15);
-        SplitMix64 { state: nanos ^ 0x9E3779B97F4A7C15 }
+        let nanos = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .map(|d| d.as_nanos() as u64)
+            .unwrap_or(0x9E3779B97F4A7C15);
+        SplitMix64 {
+            state: nanos ^ 0x9E3779B97F4A7C15,
+        }
     }
 
     fn next(&mut self) -> u64 {
@@ -40,7 +45,10 @@ impl IndexSampler {
         for (index, &value) in nums.iter().enumerate() {
             positions.entry(value).or_default().push(index as i32);
         }
-        IndexSampler { positions, random: SplitMix64::from_clock() }
+        IndexSampler {
+            positions,
+            random: SplitMix64::from_clock(),
+        }
     }
 
     pub fn drawIndex(&mut self, target: i32) -> i32 {

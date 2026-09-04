@@ -6,8 +6,8 @@
 class MazeController;
 
 class Solution {
-public:
-    int findShortestRoute(MazeController& maze) {
+  public:
+    int findShortestRoute(MazeController &maze) {
         // Iterative DFS keeps the walker physically on the DFS tree: move to
         // a child when pushing, move back when popping. Each reachable cell
         // is entered exactly once and probed with isTarget().
@@ -16,11 +16,11 @@ public:
         long long targetKey = maze.isTarget() ? key(0, 0) : -1;
 
         std::vector<std::array<int, 3>> stack; // r, c, next direction index
-        std::vector<int> parentDirs; // direction index taken from the parent
+        std::vector<int> parentDirs;           // direction index taken from the parent
         stack.push_back({0, 0, 0});
         parentDirs.push_back(-1);
         while (!stack.empty()) {
-            std::array<int, 3>& frame = stack.back();
+            std::array<int, 3> &frame = stack.back();
             int r = frame[0], c = frame[1], idx = frame[2];
             bool pushed = false;
             while (idx < 4) {
@@ -72,14 +72,12 @@ public:
         return dist[targetKey];
     }
 
-private:
+  private:
     static constexpr char DIRS[5] = "UDLR";
     static constexpr int DR[4] = {-1, 1, 0, 0};
     static constexpr int DC[4] = {0, 0, -1, 1};
     static constexpr char BACK[5] = "DURL";
     static constexpr int OFFSET = 512; // relative coords stay within +/-499
 
-    static long long key(int r, int c) {
-        return (static_cast<long long>(r + OFFSET) << 16) | (c + OFFSET);
-    }
+    static long long key(int r, int c) { return (static_cast<long long>(r + OFFSET) << 16) | (c + OFFSET); }
 };

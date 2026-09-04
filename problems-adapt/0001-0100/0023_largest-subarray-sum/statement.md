@@ -2,7 +2,7 @@
 
 ## Description
 
-A *block* of `nums` is a run of one or more consecutive entries. Every block
+A _block_ of `nums` is a run of one or more consecutive entries. Every block
 has a sum; return the largest sum any block of `nums` achieves.
 
 A block must contain at least one entry, so when every entry is negative the

@@ -2,7 +2,7 @@
 
 ## Description
 
-A non-negative integer is *sparse* when the ones in its binary representation
+A non-negative integer is _sparse_ when the ones in its binary representation
 never stand next to each other — reading it as a bit string, `11` never
 appears.
 

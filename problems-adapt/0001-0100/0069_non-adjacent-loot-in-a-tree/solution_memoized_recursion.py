@@ -27,9 +27,7 @@ class Solution:
                 return 0
             if node not in skip_map:
                 # Each child keeps its better option.
-                skip_map[node] = max(take(node.left), skip(node.left)) + max(
-                    take(node.right), skip(node.right)
-                )
+                skip_map[node] = max(take(node.left), skip(node.left)) + max(take(node.right), skip(node.right))
             return skip_map[node]
 
         return max(take(root), skip(root))

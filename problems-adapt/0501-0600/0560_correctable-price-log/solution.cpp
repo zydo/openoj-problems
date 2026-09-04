@@ -16,9 +16,7 @@ class PriceLog {
         minHeap.push({price, timestamp});
     }
 
-    int latest() {
-        return priceAt[latestTimestamp];
-    }
+    int latest() { return priceAt[latestTimestamp]; }
 
     int highest() {
         // An entry is garbage exactly when its timestamp now maps to a
@@ -49,6 +47,7 @@ class PriceLog {
     // Twin lazy heaps over (price, timestamp): entries are pushed on
     // record and never removed; stale ones are discarded only at the top.
     std::priority_queue<std::pair<int, int>> maxHeap;
-    std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<std::pair<int, int>>> minHeap;
+    std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<std::pair<int, int>>>
+        minHeap;
     int latestTimestamp = 0;
 };

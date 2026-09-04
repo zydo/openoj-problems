@@ -13,7 +13,7 @@ selection possible. Fix a candidate longest side — the largest value that
 will appear in the selection. Every smaller value added to the selection
 strictly helps the inequality (it joins the "others" side while leaving
 the maximum unchanged), so the best selection around a given longest side
-is simply *all* values up to and including it. That collapses the search
+is simply _all_ values up to and including it. That collapses the search
 to one scan: sort ascending, and try the candidates from the top.
 
 The scan carries `total`, the sum of everything still under
@@ -21,7 +21,7 @@ consideration. For the current largest candidate `nums[i]`, either
 `total - nums[i] > nums[i]` — the selection closes, and since every
 candidate after it yields a smaller sum, `total` is the answer — or the
 candidate is hopeless: every polygon containing it would need the smaller
-values to outweigh it, and even taking *all* of them is not enough. A
+values to outweigh it, and even taking _all_ of them is not enough. A
 hopeless candidate is subtracted from `total` and the scan steps down.
 Stopping at index 2 keeps at least three sides in play; if no prefix that
 long ever closes, the answer is `-1` (Example 3, where 100 outweighs

@@ -6,7 +6,7 @@ You are given a tree with `n` nodes numbered `0` to `n - 1`, described by the
 array `edges` of length `n - 1`, where `edges[i] = [ai, bi]` joins nodes `ai`
 and `bi`.
 
-A *diameter* is a simple path with as many edges as any path in the tree; a
+A _diameter_ is a simple path with as many edges as any path in the tree; a
 tree can have several diameters. The ends of a path are its first and last
 nodes.
 

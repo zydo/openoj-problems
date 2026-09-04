@@ -7,8 +7,7 @@ bottom-right corner is the cell `(i, j)`. A 0 cell closes no square, so its
 value is 0. Otherwise the square can only be as deep as the three
 already-computed neighbors allow — the cell above, the cell to the left, and
 the diagonal above-left — and the value is one plus the smallest of the
-three. Cells on the top row or left column have no room to spread and cap at
-1.
+three. Cells on the top row or left column have no room to spread and cap at 1.
 
 Why summing the table counts every square exactly once: an all-ones square
 of side `k` is pinned down by its bottom-right corner, and the corner's

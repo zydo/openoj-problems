@@ -47,7 +47,7 @@ as length 1.
 One point deserves care: `tails` is usually not itself a climbing subsequence
 of the input. Only its length is honest. Overwrites can splice together endings
 that no single chain realizes, and that is fine, because the invariant being
-maintained is *existence* — for every slot `k`, some ascending chain of length
+maintained is _existence_ — for every slot `k`, some ascending chain of length
 `k + 1` ends at `tails[k]` — and the answer reads off the length alone. Trace
 `[6, 1, 3, 9, 4, 2, 11]`:
 

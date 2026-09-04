@@ -48,7 +48,7 @@ negative, so the least bad single element wins.
 
 ### Hint 1
 
-Process the array left to right, and think about picks that *end* at each
+Process the array left to right, and think about picks that _end_ at each
 position: what is the best sum of a legal pick whose last chosen position is
 `i`?
 

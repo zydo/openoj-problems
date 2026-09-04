@@ -3,7 +3,7 @@
 ## Description
 
 You are given a string `s` of lowercase letters and round brackets. Call the
-string *balanced* when, reading left to right, every closing bracket has a
+string _balanced_ when, reading left to right, every closing bracket has a
 still-open bracket to close and no bracket is left open at the end — letters
 count for nothing.
 

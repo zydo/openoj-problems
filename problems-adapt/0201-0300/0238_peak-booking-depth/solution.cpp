@@ -13,7 +13,7 @@ class BookingDepth {
         // events active at that moment, so its peak is the deepest overlap
         // seen. Changes at one instant merge, so an interval closing where
         // another opens is never counted twice.
-        for (const auto& [time, change] : delta) {
+        for (const auto &[time, change] : delta) {
             active += change;
             if (active > best) {
                 best = active;

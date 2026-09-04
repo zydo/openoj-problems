@@ -58,7 +58,7 @@ the count forward instead.
 
 ### Hint 2
 
-Filling a cell creates one new island, and every *distinct* island it touches
+Filling a cell creates one new island, and every _distinct_ island it touches
 edge-to-edge then merges away. A cell that is already land leaves the count
 exactly as it was.
 

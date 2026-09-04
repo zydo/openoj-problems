@@ -4,7 +4,7 @@
 
 You are given two positive integers `l` and `r`.
 
-Call an integer *qualified* when the product of its decimal digits is a multiple
+Call an integer _qualified_ when the product of its decimal digits is a multiple
 of the sum of its decimal digits. Count the qualified integers `x` with
 `l <= x <= r`, and return the count.
 

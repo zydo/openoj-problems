@@ -67,7 +67,8 @@ class Solution {
     }
 
     private int upperBound(long[] ranks, long bound) {
-        int lo = 0, hi = ranks.length;
+        int lo = 0,
+            hi = ranks.length;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (ranks[mid] <= bound) {

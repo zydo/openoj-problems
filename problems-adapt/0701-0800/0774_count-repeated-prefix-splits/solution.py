@@ -1,4 +1,6 @@
 from array import array
+
+
 class Solution:
     def repeatedPrefixSplits(self, nums: list[int]) -> int:
         n = len(nums)

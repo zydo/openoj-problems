@@ -4,7 +4,7 @@
 
 Sorting `nums` first costs nothing — a subsequence is an index set, and
 the tightness of a set depends only on its values. Once sorted, the
-closest pair inside a chosen set is always a pair of *consecutive* chosen
+closest pair inside a chosen set is always a pair of _consecutive_ chosen
 elements, so the tightness is the smallest gap between neighbors in the
 chosen run. For a threshold `d`, let `f(d)` count the length-`k` sets
 whose consecutive gaps are all at least `d`; those are exactly the sets

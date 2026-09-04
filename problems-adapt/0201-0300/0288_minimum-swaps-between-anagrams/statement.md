@@ -28,7 +28,7 @@ Explanation: Moving the final character to the front requires five swaps when ea
 - `1 <= startText.length <= 20`
 - `targetText.length == startText.length`
 - Both strings use only lowercase letters from `{'a', 'b', 'c', 'd', 'e',
-  'f'}`.
+'f'}`.
 - `targetText` is an anagram of `startText`.
 
 ## Hints

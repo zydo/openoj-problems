@@ -7,7 +7,10 @@ impl TrieNode {
     fn new() -> Self {
         // One trie node: 26 child slots indexed by c - 'a' plus a
         // whole-word terminator flag; nodes appear lazily on insert.
-        TrieNode { children: Default::default(), end: false }
+        TrieNode {
+            children: Default::default(),
+            end: false,
+        }
     }
 }
 

@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution:
     def longestRunWithBoundedSpread(self, nums: list[int], limit: int) -> int:
         maxq = deque()  # indices, values decreasing

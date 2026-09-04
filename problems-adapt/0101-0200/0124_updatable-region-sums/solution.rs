@@ -15,7 +15,10 @@ impl UpdatableRegions {
         let mut regions = UpdatableRegions {
             m,
             n,
-            matrix: matrix.into_iter().map(|row| row.into_iter().map(|v| v as i64).collect()).collect(),
+            matrix: matrix
+                .into_iter()
+                .map(|row| row.into_iter().map(|v| v as i64).collect())
+                .collect(),
             tree: vec![vec![0i64; n + 1]; m + 1],
         };
         // O(m*n) build: each source row becomes a 1D Fenwick row in one
@@ -66,7 +69,8 @@ impl UpdatableRegions {
 
     pub fn regionSum(&mut self, top: i32, left: i32, bottom: i32, right: i32) -> i64 {
         // Inclusion-exclusion over four top-left-anchored prefix rectangles.
-        self.prefix(bottom as usize + 1, right as usize + 1) - self.prefix(top as usize, right as usize + 1)
+        self.prefix(bottom as usize + 1, right as usize + 1)
+            - self.prefix(top as usize, right as usize + 1)
             - self.prefix(bottom as usize + 1, left as usize)
             + self.prefix(top as usize, left as usize)
     }

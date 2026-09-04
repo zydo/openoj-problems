@@ -6,7 +6,7 @@ A window qualifies when its peak clears `left` and stays under `right`. That is
 two conditions on one derived quantity, and derived quantities are hard to
 maintain incrementally. Drop one side: let `under(B)` be the number of windows
 whose peak never exceeds `B`. A peak lands in the band exactly when it is at
-most `right` and *not* at most `left - 1`, so the answer is
+most `right` and _not_ at most `left - 1`, so the answer is
 `under(right) - under(left - 1)` and only one helper has to be written.
 
 `under(B)` is a single left-to-right walk. Carry `run`, the number of
@@ -20,7 +20,7 @@ nothing is missed.
 
 Two details make the subtraction safe. With `left` equal to `0` the second
 ceiling is `-1`, which no entry can meet, so the subtracted tally is zero rather
-than something wrong. And an entry smaller than `left` is *not* excluded on its
+than something wrong. And an entry smaller than `left` is _not_ excluded on its
 own — it happily sits inside a window whose peak is supplied by a larger
 neighbour, which is why the streak keeps running through it.
 

@@ -14,13 +14,9 @@ class PrefixTree {
         }
     }
 
-    bool search(std::string word) {
-        return words.count(word) > 0;
-    }
+    bool search(std::string word) { return words.count(word) > 0; }
 
-    bool hasPrefix(std::string prefix) {
-        return prefixes.count(prefix) > 0;
-    }
+    bool hasPrefix(std::string prefix) { return prefixes.count(prefix) > 0; }
 
   private:
     // One set of whole words, one set of every beginning of every word;

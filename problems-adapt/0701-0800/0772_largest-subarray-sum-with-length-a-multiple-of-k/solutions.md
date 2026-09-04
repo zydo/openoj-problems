@@ -13,7 +13,7 @@ value minus the smallest earlier value.
 One sweep answers all classes at once. Walk the prefix indices `0`
 through `n`, keeping `min_pref[r]` for the least prefix sum already
 seen at an index congruent to `r`. At each index, form the candidate
-`prefix[i] - min_pref[i % k]` *before* refreshing the bucket —
+`prefix[i] - min_pref[i % k]` _before_ refreshing the bucket —
 comparing first guarantees the paired prefix is strictly earlier, so no
 empty stretch is ever scored — and keep the best candidate seen. Each
 class's first index finds its bucket empty and simply seeds it, which

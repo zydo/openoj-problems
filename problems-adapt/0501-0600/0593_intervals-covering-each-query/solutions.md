@@ -5,7 +5,7 @@
 The window `[start, end]` covers `t` exactly when `start <= t <= end`, so the
 count at `t` factors into two independent one-sided counts: how many windows
 have `start <= t`, minus how many have `end < t`. Each is a binary search once
-the values are sorted — and the two sides can be sorted *separately*, because
+the values are sorted — and the two sides can be sorted _separately_, because
 no query ever needs to know which start belongs to which end, only the two
 totals.
 
@@ -13,7 +13,7 @@ The boundary conventions carry the whole argument. Over sorted `starts`,
 `bisect_right(starts, t)` returns the number of starts at most `t` — a window
 opening exactly at `t` is included, as it should be. Over sorted `ends`,
 `bisect_left(ends, t)` returns the number of ends strictly below `t`, so a
-window whose closing instant is exactly `t` is *not* subtracted and correctly
+window whose closing instant is exactly `t` is _not_ subtracted and correctly
 remains counted as open. The choice of `bisect_left` versus `bisect_right` is
 precisely the difference between the two inclusivities; everything else is a
 subtraction.

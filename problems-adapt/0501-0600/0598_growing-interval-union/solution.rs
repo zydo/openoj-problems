@@ -9,7 +9,10 @@ pub struct IntervalUnion {
 
 impl IntervalUnion {
     pub fn new() -> Self {
-        IntervalUnion { intervals: BTreeMap::new(), covered: 0 }
+        IntervalUnion {
+            intervals: BTreeMap::new(),
+            covered: 0,
+        }
     }
 
     pub fn add(&mut self, left: i32, right: i32) {
@@ -17,7 +20,11 @@ impl IntervalUnion {
         // Merge every stored range that reaches the newcomer: with the
         // family disjoint, all of them start at or before `right`.
         loop {
-            let candidate = self.intervals.range(..=right).next_back().map(|(&start, &end)| (start, end));
+            let candidate = self
+                .intervals
+                .range(..=right)
+                .next_back()
+                .map(|(&start, &end)| (start, end));
             match candidate {
                 Some((start, end)) if end >= new_left => {
                     self.covered -= (end - start + 1) as i64;

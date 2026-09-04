@@ -6,7 +6,7 @@ Draw a graph on the values: an edge joins two values differing by at most
 `limit`. Two facts govern everything. First, values in different connected
 pieces can never occupy each other's slots — every legal swap stays inside a
 piece, so the multiset of each piece is permanently tied to its set of
-positions. Second, inside one piece *any* rearrangement is realizable:
+positions. Second, inside one piece _any_ rearrangement is realizable:
 values bubble along chains of overlapping swaps, so the piece's values and
 its positions may be paired up however you like. Example 1's values split
 as `1,3,4` versus `7,9` (the gap `7 - 4 = 3` exceeds the limit of `2`), and

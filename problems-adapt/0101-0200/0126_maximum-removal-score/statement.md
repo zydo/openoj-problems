@@ -6,7 +6,7 @@ You are given an integer array `nums`, and you must take every entry out of it,
 one entry per step, in whatever order you like. Removing an entry scores the
 product of three numbers: the entry itself, whatever now sits immediately to
 its left, and whatever now sits immediately to its right. The neighbours are
-the ones present *at that moment*, so each removal closes a gap and changes
+the ones present _at that moment_, so each removal closes a gap and changes
 what the next one is worth. When a removal happens at the very start or the
 very end of what is left, the missing side counts as a `1`.
 

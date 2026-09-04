@@ -9,7 +9,7 @@ edges admissible under a cap of `L` are exactly those weighing under
 structure incrementally is precisely what union-find does well, so no
 per-query path search is ever needed.
 
-Sort `edgeList` by weight, sort the query *indices* by cap, and sweep
+Sort `edgeList` by weight, sort the query _indices_ by cap, and sweep
 the queries smallest-cap first while advancing one pointer over the
 sorted edges: before a query is answered, every edge weighing strictly
 less than its cap is merged into the disjoint-set forest (with path

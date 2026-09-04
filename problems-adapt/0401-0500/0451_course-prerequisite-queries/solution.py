@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution:
     def coursePrerequisiteQueries(
         self, courseCount: int, prerequisites: list[list[int]], queries: list[list[int]]

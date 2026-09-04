@@ -35,7 +35,11 @@ impl Solution {
         let mut heap: BinaryHeap<Entry> = BinaryHeap::new();
         for (position, head) in lists.into_iter().enumerate() {
             if let Some(node) = head {
-                heap.push(Entry { val: node.val, position, node });
+                heap.push(Entry {
+                    val: node.val,
+                    position,
+                    node,
+                });
             }
         }
         // Dummy head: every attachment happens the same way and the real
@@ -52,7 +56,11 @@ impl Solution {
             // The node's own list continues through its successor, which
             // re-enters the heap as that list's new single entry.
             if let Some(next_node) = next {
-                heap.push(Entry { val: next_node.val, position: entry.position, node: next_node });
+                heap.push(Entry {
+                    val: next_node.val,
+                    position: entry.position,
+                    node: next_node,
+                });
             }
         }
         // Every list ran dry inside the loop (each attached node's tail was

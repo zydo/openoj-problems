@@ -6,7 +6,8 @@ class Solution {
     public int longestKSymbolWindow(String s, int k) {
         // A substring of a valid window is valid too, so feasibility is
         // monotone in the length — binary search for the longest feasible.
-        int lo = 0, hi = s.length();
+        int lo = 0,
+            hi = s.length();
         while (lo < hi) {
             int mid = lo + (hi - lo + 1) / 2;
             if (feasible(s, k, mid)) {

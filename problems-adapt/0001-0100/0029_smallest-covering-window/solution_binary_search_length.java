@@ -12,8 +12,10 @@ class Solution {
         // L sits inside a covering window of length L + 1, so "some window
         // of length L covers t" is false below the answer and true from it
         // upward. Binary search for the smallest surviving length.
-        int lo = t.length(), hi = s.length();
-        int bestStart = -1, bestLen = -1;
+        int lo = t.length(),
+            hi = s.length();
+        int bestStart = -1,
+            bestLen = -1;
         while (lo <= hi) {
             int mid = (lo + hi) >>> 1;
             int start = covers(s, quota, kinds, mid);

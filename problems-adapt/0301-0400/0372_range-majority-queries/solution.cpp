@@ -5,8 +5,7 @@
 
 class RangeMajority {
   public:
-    RangeMajority(std::vector<int> arr)
-        : n((int)arr.size()), candidateOf(4 * n, 0), surplusOf(4 * n, 0) {
+    RangeMajority(std::vector<int> arr) : n((int)arr.size()), candidateOf(4 * n, 0), surplusOf(4 * n, 0) {
         build(1, 0, n - 1, arr);
         for (int i = 0; i < n; i++) {
             positions[arr[i]].push_back(i);
@@ -19,7 +18,7 @@ class RangeMajority {
         if (found == positions.end()) {
             return -1;
         }
-        const std::vector<int>& occurrences = found->second;
+        const std::vector<int> &occurrences = found->second;
         int count = (int)(lowerBound(occurrences, right + 1) - lowerBound(occurrences, left));
         return count >= threshold ? candidate : -1;
     }
@@ -30,7 +29,7 @@ class RangeMajority {
     std::vector<int> surplusOf;
     std::unordered_map<int, std::vector<int>> positions;
 
-    void build(int node, int lo, int hi, const std::vector<int>& arr) {
+    void build(int node, int lo, int hi, const std::vector<int> &arr) {
         if (lo == hi) {
             candidateOf[node] = arr[lo];
             surplusOf[node] = 1;
@@ -39,9 +38,8 @@ class RangeMajority {
         int mid = lo + (hi - lo) / 2;
         build(2 * node, lo, mid, arr);
         build(2 * node + 1, mid + 1, hi, arr);
-        std::pair<int, int> merged = merge(
-            {candidateOf[2 * node], surplusOf[2 * node]},
-            {candidateOf[2 * node + 1], surplusOf[2 * node + 1]});
+        std::pair<int, int> merged =
+            merge({candidateOf[2 * node], surplusOf[2 * node]}, {candidateOf[2 * node + 1], surplusOf[2 * node + 1]});
         candidateOf[node] = merged.first;
         surplusOf[node] = merged.second;
     }
@@ -73,7 +71,7 @@ class RangeMajority {
         return merge(fold(2 * node, lo, mid, left, right), fold(2 * node + 1, mid + 1, hi, left, right));
     }
 
-    static int lowerBound(const std::vector<int>& values, int target) {
+    static int lowerBound(const std::vector<int> &values, int target) {
         return (int)(std::lower_bound(values.begin(), values.end(), target) - values.begin());
     }
 };

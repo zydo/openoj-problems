@@ -18,7 +18,7 @@ is empty. Each position raises `j` by at most one and every fallback strictly
 lowers it, which caps the total fallback work at the total growth, hence
 linear overall.
 
-Because `pi[n - 1]` is a *proper* border, it can never equal `n`, and the
+Because `pi[n - 1]` is a _proper_ border, it can never equal `n`, and the
 "other than `s` itself" rule enforces itself. Overlap comes free as well: for
 `"abcabcabc"` the table ends at 6, six being both a prefix length and the
 tail's length, with the two copies sharing their middle three characters. A

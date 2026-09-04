@@ -2,17 +2,17 @@
   "public": [
     {
       "input": [
-      "bbbaaacccx",
+        "bbbaaacccx",
         3
       ],
-    "expected": 9
+      "expected": 9
     },
     {
       "input": [
-      "aabccddeee",
+        "aabccddeee",
         2
       ],
-    "expected": 7
+      "expected": 7
     }
   ],
   "hidden": [

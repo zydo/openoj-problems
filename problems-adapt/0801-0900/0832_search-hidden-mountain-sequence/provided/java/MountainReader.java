@@ -6,6 +6,7 @@ import java.util.List;
  * documented in the starter. Constructed from the case state: the
  * sequence's values, then the query budget. */
 public class MountainReader {
+
     private final int[] mountain;
     private long budget;
 

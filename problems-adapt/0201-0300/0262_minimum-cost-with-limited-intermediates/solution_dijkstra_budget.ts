@@ -1,4 +1,10 @@
-function minimumLimitedRouteCost(nodeCount: number, links: number[][], source: number, target: number, maxIntermediates: number): number {
+function minimumLimitedRouteCost(
+    nodeCount: number,
+    links: number[][],
+    source: number,
+    target: number,
+    maxIntermediates: number,
+): number {
     const graph: number[][][] = Array.from({ length: nodeCount }, () => []);
     for (const [f, t, weight] of links) {
         graph[f].push([t, weight]);

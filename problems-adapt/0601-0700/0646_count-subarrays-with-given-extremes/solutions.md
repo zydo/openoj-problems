@@ -19,7 +19,7 @@ it over every `i` charges each run to exactly one right end.
 
 ![The array 2, 4, 6, 3, 9, 6 with marker positions per right end: at i = 2 and i = 3 the lone legal start is index 0, bracketed between last_bad and the earlier extreme marker; the out-of-range 9 then sets last_bad and zeroes both later terms, totalling 2.](figures/solution-marker-sweep.svg)
 
-The subtle point is why only the *latest* occurrences matter. Extending the
+The subtle point is why only the _latest_ occurrences matter. Extending the
 window rightward only moves markers forward, and a start that includes the
 latest `lo` and the latest `hi` automatically includes every earlier
 occurrence of both. The `max(0, ...)` clamp covers prefixes where one extreme

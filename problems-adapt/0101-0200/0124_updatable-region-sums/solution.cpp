@@ -13,7 +13,7 @@ class UpdatableRegions {
         // pass, every finished block pushed into its parent column.
         for (int i = 1; i <= m; i++) {
             std::vector<long long> row(n + 1, 0);
-            const std::vector<int>& source = this->matrix[i - 1];
+            const std::vector<int> &source = this->matrix[i - 1];
             for (int j = 1; j <= n; j++) {
                 row[j] += source[j - 1];
                 int parent = j + (j & -j);
@@ -23,13 +23,13 @@ class UpdatableRegions {
             }
             // The finished row is added into its own tree slot, then pushed
             // whole into the parent row's slot.
-            std::vector<long long>& treeRow = tree[i];
+            std::vector<long long> &treeRow = tree[i];
             for (int j = 1; j <= n; j++) {
                 treeRow[j] += row[j];
             }
             int parentRow = i + (i & -i);
             if (parentRow <= m) {
-                std::vector<long long>& target = tree[parentRow];
+                std::vector<long long> &target = tree[parentRow];
                 for (int j = 1; j <= n; j++) {
                     target[j] += treeRow[j];
                 }
@@ -52,8 +52,7 @@ class UpdatableRegions {
 
     long long regionSum(int top, int left, int bottom, int right) {
         // Inclusion-exclusion over four top-left-anchored prefix rectangles.
-        return prefix(bottom + 1, right + 1) - prefix(top, right + 1) - prefix(bottom + 1, left) +
-               prefix(top, left);
+        return prefix(bottom + 1, right + 1) - prefix(top, right + 1) - prefix(bottom + 1, left) + prefix(top, left);
     }
 
   private:

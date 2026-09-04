@@ -5,7 +5,7 @@
 You are given an integer array `nums`, indexed from `0`.
 
 Delete zero or more elements to leave a subsequence. The subsequence is
-*admissible* when, walking its remaining elements left to right, each value
+_admissible_ when, walking its remaining elements left to right, each value
 rises by at least as much as its position did: if `i` and `j` are
 consecutive kept indices with `i < j`, then `nums[j] - nums[i] >= j - i`.
 
@@ -61,7 +61,7 @@ whose last kept index is exactly `x`. The final answer is the maximum
 
 Move the indices across: `nums[j] - nums[i] >= j - i` is the same as
 `nums[j] - j >= nums[i] - i`. An admissible subsequence is exactly one
-whose *offsets* `nums[x] - x` never decrease.
+whose _offsets_ `nums[x] - x` never decrease.
 
 ### Hint 3
 

@@ -2,7 +2,7 @@
 
 ## Monotonic Stack Jump Graph + DAG DP
 
-Read the two rules as a statement about *runs*. The first says the values
+Read the two rules as a statement about _runs_. The first says the values
 strictly between `i` and its target are all below `nums[i]`, so the target has to
 be the very first index to the right that is not below `nums[i]`; the second says
 none of them is below `nums[i]`, so that target has to be the first index to the

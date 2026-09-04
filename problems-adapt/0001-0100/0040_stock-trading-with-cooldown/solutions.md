@@ -11,7 +11,7 @@ any purchase is impossible — while `sold` and `rest` open at 0.
 The rules of the problem sit inside three transitions. Selling is
 `sold = hold + price`. Buying is `hold = max(hold, rest - price)`: keep the
 share, or pay today's price out of the rest wealth — and because `rest` is
-refreshed only after `hold` reads it, the purchase is funded by *yesterday's*
+refreshed only after `hold` reads it, the purchase is funded by _yesterday's_
 rest. The cooldown is the third line: `rest = max(rest, prev_sold)`, where
 `prev_sold` was stashed before any update. Resting may absorb only a sale
 made the day before, so a sale on day `i` cannot finance a purchase on day

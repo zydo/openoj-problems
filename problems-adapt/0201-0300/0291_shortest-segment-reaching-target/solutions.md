@@ -16,12 +16,12 @@ answering that query fast is the entire problem.
 
 Two observations shrink the set of left ends worth remembering.
 
-The first is about *retirement*. If `j` satisfies the threshold at the current
+The first is about _retirement_. If `j` satisfies the threshold at the current
 `i`, record the length `i - j` and then throw `j` away. It cannot help again:
 any later right end pairs with the same `j` to give a strictly longer segment,
 and a longer segment can never beat the one just recorded.
 
-The second is about *domination*. Suppose `j < i` and `p[j] >= p[i]`. Then for
+The second is about _domination_. Suppose `j < i` and `p[j] >= p[i]`. Then for
 every future right end, `i` is both nearer (shorter segment) and no harder to
 satisfy (smaller-or-equal prefix). Index `j` is useless from now on.
 

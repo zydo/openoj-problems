@@ -11,7 +11,11 @@ pub struct NewsBoard {
 
 impl NewsBoard {
     pub fn new() -> Self {
-        NewsBoard { posts: HashMap::new(), following: HashMap::new(), clock: 0 }
+        NewsBoard {
+            posts: HashMap::new(),
+            following: HashMap::new(),
+            clock: 0,
+        }
     }
 
     pub fn postMessage(&mut self, userId: i32, messageId: i32) {

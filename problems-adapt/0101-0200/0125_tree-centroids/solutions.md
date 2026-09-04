@@ -22,7 +22,7 @@ process closes in on the centre.
 Concretely: build the adjacency lists and a degree count per node, seed a
 queue with everything of degree 1, and loop while more than two nodes
 survive. Each round drains exactly one layer — the loop runs `len(leaves)`
-times, so leaves that become leaves *during* the round wait for the next
+times, so leaves that become leaves _during_ the round wait for the next
 one — and every drained leaf lowers each neighbour's degree by one, feeding
 the queue when a neighbour thereby reaches degree 1. A drained leaf's own
 degree is never zeroed, which is harmless because it is never looked at
@@ -42,7 +42,7 @@ edge is touched a constant number of times across all rounds.
 ## Double BFS
 
 Name the diameter, then split it. In a tree, the node farthest from any
-arbitrary start is always one *end* of a longest path — every step away
+arbitrary start is always one _end_ of a longest path — every step away
 from the start can only be extended, never shorted, along the unique
 routes — so a first BFS from node `0` lands on one end `u`, and a second
 BFS from `u`, which records each discovered node's parent, lands on the

@@ -2,7 +2,7 @@
 
 ## Description
 
-A letter is a *singleton* of a string when it occurs in that string exactly once.
+A letter is a _singleton_ of a string when it occurs in that string exactly once.
 Write `singletons(t)` for how many letters are singletons of `t`; for example
 `singletons("PROGRAM")` is 5, because only `R` occurs more than once.
 

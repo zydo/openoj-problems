@@ -3,7 +3,7 @@
 Both attacks lean on the same fact: two appearances of one segment are two
 suffixes of `s` that open with the same run of characters, however much those
 appearances overlap. The suffix array makes the fact concrete — stand every
-suffix in sorted order and the deepest agreement between neighbors *is* the
+suffix in sorted order and the deepest agreement between neighbors _is_ the
 answer, read off by one linear scan with no randomness anywhere. The hash
 bisection stays cheaper by never ordering anything at all: it asks only
 whether some width repeats, halves the search on the monotone answer, and
@@ -16,14 +16,14 @@ longest one hiding in `s` is the deepest prefix any two suffixes share.
 Sorting the suffixes makes that depth easy to read off: suffixes opening with
 the same run cannot be separated in the order by a suffix that opens
 differently, so the deepest shared prefix is always realized by some pair of
-*adjacent* suffixes. The answer is therefore the maximum LCP across
+_adjacent_ suffixes. The answer is therefore the maximum LCP across
 neighboring pairs of the sorted order, and the code slices that window out of
 `s` at the end — or returns the empty string when every neighboring pair
 disagrees from the first character on.
 
 The sort never compares the suffixes themselves. Every suffix starts ranked
 by its first letter, and each pass re-sorts them by the pair
-*(`rank[i]`, `rank[i + k]`)*, where the second entry is the rank the suffix
+_(`rank[i]`, `rank[i + k]`)_, where the second entry is the rank the suffix
 `k` steps later already holds, a below-everything sentinel stands in past the
 end of `s` — so a suffix that is a strict prefix of a longer one ranks below
 it — and the pair is packed into one integer key so an ordinary comparison
@@ -52,7 +52,7 @@ Everything rests on one monotone fact: trimming a character off both
 appearances of a repeated segment leaves a shorter repeated segment. The widths
 that admit a repeat therefore form an unbroken range `1 .. answer`, and the
 largest of them can be found by bisection instead of by trying every width.
-Each probe asks one question — *is there a repeated segment exactly this wide?*
+Each probe asks one question — _is there a repeated segment exactly this wide?_
 — and answers with the starting position of one, or `-1`. The search keeps the
 widest success it has seen along with its position, and slices that window out
 of `s` at the end; a probe of width 0 is never allowed to succeed, so a string

@@ -27,12 +27,12 @@ Scaling a five-smooth number by 2, 3 or 5 leaves it five-smooth, so every term
 after the 1 comes from an earlier term times one of those three. The sequence is
 therefore `{1} ∪ {2·U} ∪ {3·U} ∪ {5·U}` — a three-way merge of sorted lists,
 each derived from the sequence being built. That structure is why nothing has to
-be *tested*; the terms are produced directly, in order.
+be _tested_; the terms are produced directly, in order.
 
 The array fills left to right under three cursors `i2`, `i3`, `i5`. Each round
 takes `smooth[i2]*2`, `smooth[i3]*3`, `smooth[i5]*5` as candidates — the
 smallest unconsumed entry of each virtual list — and emits their minimum. Then
-*every* cursor whose candidate matched the minimum advances, not merely one:
+_every_ cursor whose candidate matched the minimum advances, not merely one:
 24 is both `2·12` and `3·8`, and stepping all matching cursors is what emits it
 once. Watch the first few terms of the `n = 15` run:
 

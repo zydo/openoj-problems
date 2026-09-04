@@ -44,7 +44,7 @@ class PacketBuffer {
         if (found == timestamps.end()) {
             return 0;
         }
-        const std::vector<int>& times = found->second;
+        const std::vector<int> &times = found->second;
         // adds arrive with non-decreasing timestamps, so each log is sorted
         // for free and the live entries are the suffix [head, size)
         int head = heads[destination];
@@ -54,11 +54,9 @@ class PacketBuffer {
     }
 
   private:
-    static long long pairKey(int source, int destination) {
-        return source * 200001LL + destination;
-    }
+    static long long pairKey(int source, int destination) { return source * 200001LL + destination; }
 
-    static int lowerBound(const std::vector<int>& times, int from, int to, int target) {
+    static int lowerBound(const std::vector<int> &times, int from, int to, int target) {
         while (from < to) {
             int middle = (from + to) / 2;
             if (times[middle] < target) {
@@ -70,7 +68,7 @@ class PacketBuffer {
         return from;
     }
 
-    static int upperBound(const std::vector<int>& times, int from, int to, int target) {
+    static int upperBound(const std::vector<int> &times, int from, int to, int target) {
         while (from < to) {
             int middle = (from + to) / 2;
             if (times[middle] <= target) {

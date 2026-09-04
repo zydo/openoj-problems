@@ -1,8 +1,8 @@
 class SequenceReader;
 
 class Solution {
-public:
-    int findInSequence(SequenceReader& reader, int target) {
+  public:
+    int findInSequence(SequenceReader &reader, int target) {
         // Exponential probe: find the smallest power-of-two index whose
         // value reaches the target (or the out-of-range sentinel, which is
         // larger than any real element).

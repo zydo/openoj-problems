@@ -5,7 +5,7 @@
 With an odd number of entries the median is one of the matrix's own values —
 the `(m * n) / 2 + 1`-th smallest — so it can be returned exactly instead of
 averaged. Sorting everything to find it inspects all `m * n` cells, which the
-statement rules out. The substitute: search over *values*. The median is the
+statement rules out. The substitute: search over _values_. The median is the
 smallest candidate `x` such that at least `need = (m * n) / 2 + 1` entries are
 `<= x`, so bisect that property over the span from the smallest row head to
 the largest row tail.

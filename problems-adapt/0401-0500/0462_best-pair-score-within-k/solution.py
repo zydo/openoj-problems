@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution:
     def bestPairScore(self, points: list[list[int]], k: int) -> int:
         # x is sorted increasing, so for i < j the equation value is

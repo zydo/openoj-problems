@@ -19,7 +19,7 @@ When `lo` passes `hi` the window is empty. The promise then says `target` was
 never in the array, so the answer is `-1`. Nothing else needs a special case:
 an array of one entry, a target below everything or above everything, a match
 at either end — each is just the same loop run to its natural stop. Values are
-distinct, so a match is *the* match and its position can be returned on the
+distinct, so a match is _the_ match and its position can be returned on the
 spot.
 
 Example 2 shows the miss: with `nums = [-8,-3,1,4,6,10,15]` and `target = 7`

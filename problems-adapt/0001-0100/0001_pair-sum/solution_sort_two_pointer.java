@@ -13,7 +13,8 @@ class Solution {
         // Converging pointers over that order. A too-small total can only be
         // raised by advancing low; a too-large one only lowered by retreating
         // high -- each step retires one position as a possible member.
-        int low = 0, high = order.length - 1;
+        int low = 0,
+            high = order.length - 1;
         while (low < high) {
             int total = nums[order[low]] + nums[order[high]];
             if (total == target) {

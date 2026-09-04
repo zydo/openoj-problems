@@ -8,7 +8,11 @@ pub struct RecencyCache {
 
 impl RecencyCache {
     pub fn new(capacity: i32) -> Self {
-        RecencyCache { capacity: capacity as usize, nodes: HashMap::new(), order: Vec::new() }
+        RecencyCache {
+            capacity: capacity as usize,
+            nodes: HashMap::new(),
+            order: Vec::new(),
+        }
     }
 
     fn touch(&mut self, key: i32) {

@@ -93,7 +93,7 @@ these values passes equally.
 
 What needs protecting is small — the stored values and their count — so
 one mutual-exclusion lock held across each whole operation is enough for
-safety. What a plain lock cannot express is the *waiting*: a reader
+safety. What a plain lock cannot express is the _waiting_: a reader
 holding the lock on an empty buffer must hand the lock back while it
 sleeps, or no writer could ever get in to fill the buffer.
 
@@ -103,7 +103,7 @@ A condition variable supplies exactly that gesture: a thread that waits
 on one puts the lock down and parks in a single motion, and a later
 wake-up hands the lock back before the wait ends. A writer waits while
 the count equals `capacity`; a reader waits while the count is zero. And
-after changing the buffer, signal the condition the *other* side sleeps
+after changing the buffer, signal the condition the _other_ side sleeps
 on — an insertion is what makes the buffer non-empty, a removal is what
 makes it non-full.
 

@@ -9,10 +9,14 @@ class Solution {
     private static int letterBits(char ch) {
         // Two bits per letter: A=0, C=1, G=2, T=3.
         switch (ch) {
-        case 'C': return 1;
-        case 'G': return 2;
-        case 'T': return 3;
-        default: return 0;
+            case 'C':
+                return 1;
+            case 'G':
+                return 2;
+            case 'T':
+                return 3;
+            default:
+                return 0;
         }
     }
 

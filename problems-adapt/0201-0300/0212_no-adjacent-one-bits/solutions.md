@@ -4,7 +4,7 @@
 
 With `n` as large as 10⁹ there is no question of testing integers one by one.
 Every integer below `n` agrees with `n` in binary up to some bit and then
-falls behind at that bit, so the count decomposes by *where* the fall happens.
+falls behind at that bit, so the count decomposes by _where_ the fall happens.
 The method reads `n`'s bits left to right; at each bit where `n` carries a 1,
 every integer that matches the prefix so far but takes 0 there is already
 below `n`, and its remaining low bits are unconstrained apart from the no-`11`

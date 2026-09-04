@@ -59,7 +59,7 @@ subsequence by `g` entrywise leaves a collection with gcd 1.
 ### Hint 3
 
 Adding entries can never raise a gcd, so if any all-multiples-of-`g`
-subsequence works, the subsequence keeping *every* multiple of `g` present in
+subsequence works, the subsequence keeping _every_ multiple of `g` present in
 the array works too.
 
 ### Hint 4

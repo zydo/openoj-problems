@@ -40,10 +40,15 @@ impl Solution {
             return cached;
         }
         // Each child keeps its better option.
-        let best = Self::take(node.left.as_deref(), take_map, skip_map)
-            .max(Self::skip(node.left.as_deref(), take_map, skip_map))
-            + Self::take(node.right.as_deref(), take_map, skip_map)
-                .max(Self::skip(node.right.as_deref(), take_map, skip_map));
+        let best = Self::take(node.left.as_deref(), take_map, skip_map).max(Self::skip(
+            node.left.as_deref(),
+            take_map,
+            skip_map,
+        )) + Self::take(node.right.as_deref(), take_map, skip_map).max(Self::skip(
+            node.right.as_deref(),
+            take_map,
+            skip_map,
+        ));
         skip_map.insert(Self::key(node), best);
         best
     }
@@ -55,7 +60,10 @@ impl Solution {
         // tables make sure each question is settled once per node.
         let mut take_map: HashMap<usize, i32> = HashMap::new();
         let mut skip_map: HashMap<usize, i32> = HashMap::new();
-        Self::take(root.as_deref(), &mut take_map, &mut skip_map)
-            .max(Self::skip(root.as_deref(), &mut take_map, &mut skip_map))
+        Self::take(root.as_deref(), &mut take_map, &mut skip_map).max(Self::skip(
+            root.as_deref(),
+            &mut take_map,
+            &mut skip_map,
+        ))
     }
 }

@@ -1,4 +1,6 @@
 from bisect import bisect_right
+
+
 class Solution:
     def canonicalWinningPermutation(self, available: list[int], opponents: list[int]) -> list[int]:
         # Greedy: for each opponents[i] (left to right) assign the smallest unused

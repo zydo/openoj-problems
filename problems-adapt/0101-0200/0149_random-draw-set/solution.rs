@@ -40,7 +40,11 @@ pub struct RandomDrawSet {
 
 impl RandomDrawSet {
     pub fn new() -> Self {
-        RandomDrawSet { values: Vec::new(), index: HashMap::new(), random: Rng::new() }
+        RandomDrawSet {
+            values: Vec::new(),
+            index: HashMap::new(),
+            random: Rng::new(),
+        }
     }
 
     pub fn insert(&mut self, val: i32) -> bool {

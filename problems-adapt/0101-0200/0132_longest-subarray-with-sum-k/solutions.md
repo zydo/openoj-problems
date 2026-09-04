@@ -20,7 +20,7 @@ new machinery, exactly the division a merge sort performs.
 
 A crossing subarray is a suffix of the left half glued to a prefix of the
 right. Scan the left half from the midline outward, accumulating suffix
-totals into a map from total to the *longest* suffix carrying it — scanning
+totals into a map from total to the _longest_ suffix carrying it — scanning
 away from the mid and overwriting keeps the longest, the mirrored twin of
 the first-occurrence rule below. Then scan the right half outward from the
 midline, accumulating prefix totals; a prefix summing to `s` needs a left
@@ -46,7 +46,7 @@ The whole question collapses into one sweep that, at each position, asks
 whether the complementary total has been passed already — and how far back.
 
 A running accumulator `acc` replaces any stored prefix array, and a map
-`first` holds the *earliest* index at which each total value has occurred,
+`first` holds the _earliest_ index at which each total value has occurred,
 seeded with `{0: -1}` so a slice starting at index 0 is discovered the
 moment `acc` itself reaches `k`. Keeping only the first occurrence is the
 maximizing choice: among all legal left cut points with the same total, the

@@ -46,7 +46,7 @@ Explanation: Begin on the free step 1 and hop in twos across the other free step
 
 ### Hint 1
 
-Work backwards. How much must you pay if you are *already* standing on step
+Work backwards. How much must you pay if you are _already_ standing on step
 `i`, with every climb ahead of you?
 
 ### Hint 2

@@ -1,4 +1,6 @@
 from bisect import bisect_right
+
+
 class ReservationBook:
     """Accepted reservations as parallel sorted starts/ends arrays.
 

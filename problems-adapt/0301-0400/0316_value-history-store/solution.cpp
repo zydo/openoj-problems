@@ -16,7 +16,7 @@ class HistoryStore {
         if (found == stamps.end()) {
             return "";
         }
-        const std::vector<int>& history = found->second;
+        const std::vector<int> &history = found->second;
         int low = 0;
         int high = (int)history.size();
         while (low < high) {

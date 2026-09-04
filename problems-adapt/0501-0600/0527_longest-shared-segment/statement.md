@@ -7,7 +7,7 @@ You are given an integer `n` and a 2D integer array `paths`, where each
 value may appear several times in one sequence, but never in two adjacent
 positions.
 
-A *segment* of a sequence is a contiguous run of one or more of its entries.
+A _segment_ of a sequence is a contiguous run of one or more of its entries.
 Return the length of the longest segment that occurs somewhere inside every
 sequence in `paths`, or `0` if the sequences share no segment at all.
 

@@ -4,7 +4,7 @@ class AncestorFinder {
 
     constructor(n: number, parent: number[]) {
         let levels = 1;
-        while ((1 << levels) <= n) {
+        while (1 << levels <= n) {
             levels++;
         }
         this.levels = levels;

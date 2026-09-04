@@ -24,8 +24,7 @@ reduction keeping the difference non-negative).
 
 A self-jump — `j = i - 1` — needs no special case: the formula collapses
 to `f[i - 1] + 2`, which is exactly one visit, one bounce within the cell,
-one step right. The anchor is `f[0] = 0`, since cell 0 is occupied on day
-0.
+one step right. The anchor is `f[0] = 0`, since cell 0 is occupied on day 0.
 
 Concretely, for `nextVisit = [0,0,1,2]`: `f[1] = 2·0 - 0 + 2 = 2` (the
 walker needs the two passes over cell 0 before stepping into cell 1 on day

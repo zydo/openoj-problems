@@ -2,7 +2,9 @@ import heapq
 
 
 class Solution:
-    def minimumLimitedRouteCost(self, nodeCount: int, links: list[list[int]], source: int, target: int, maxIntermediates: int) -> int:
+    def minimumLimitedRouteCost(
+        self, nodeCount: int, links: list[list[int]], source: int, target: int, maxIntermediates: int
+    ) -> int:
         graph = [[] for _ in range(nodeCount)]
         for f, t, weight in links:
             graph[f].append((t, weight))

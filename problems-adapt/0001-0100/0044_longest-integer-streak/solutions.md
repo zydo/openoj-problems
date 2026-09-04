@@ -33,7 +33,7 @@ is the natural shape whenever the input must be ordered anyway.
 
 ## Hash Set Streak
 
-The chains we are measuring are a property of the *set* of values, not of their
+The chains we are measuring are a property of the _set_ of values, not of their
 positions, and duplicates are irrelevant to them. So the first move is to pour
 `nums` into a hash set: repeats collapse, and "is `x` here?" becomes a constant
 time question.

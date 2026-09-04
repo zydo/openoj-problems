@@ -99,9 +99,7 @@ impl Sweeper {
         OjValue::Array(
             self.cleaned
                 .iter()
-                .map(|(row, col)| {
-                    OjValue::Array(vec![OjValue::Int(*row as i64), OjValue::Int(*col as i64)])
-                })
+                .map(|(row, col)| OjValue::Array(vec![OjValue::Int(*row as i64), OjValue::Int(*col as i64)]))
                 .collect(),
         )
     }

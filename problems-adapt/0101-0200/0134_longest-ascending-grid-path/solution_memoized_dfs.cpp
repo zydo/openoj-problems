@@ -35,16 +35,14 @@ class Solution {
                         best = max(best, memo[i][j]);
                         if (!stack.empty()) {
                             auto &parent = stack.back();
-                            memo[parent[0]][parent[1]] =
-                                max(memo[parent[0]][parent[1]], memo[i][j] + 1);
+                            memo[parent[0]][parent[1]] = max(memo[parent[0]][parent[1]], memo[i][j] + 1);
                         }
                         continue;
                     }
                     int ni = i + di[k], nj = j + dj[k];
                     frame[2]++;
                     // Only strictly larger neighbours continue the walk.
-                    if (ni >= 0 && ni < m && nj >= 0 && nj < n &&
-                        matrix[ni][nj] > matrix[i][j]) {
+                    if (ni >= 0 && ni < m && nj >= 0 && nj < n && matrix[ni][nj] > matrix[i][j]) {
                         if (memo[ni][nj] == 0) {
                             stack.push_back({ni, nj, 0});
                         } else {

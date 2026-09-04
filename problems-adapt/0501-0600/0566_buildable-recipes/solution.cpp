@@ -1,7 +1,7 @@
 class Solution {
   public:
     vector<string> buildableRecipes(vector<string> &recipes, vector<vector<string>> &ingredients,
-                                  vector<string> &supplies) {
+                                    vector<string> &supplies) {
         unordered_set<string> have(supplies.begin(), supplies.end());
         unordered_map<string, int> index;
         for (int i = 0; i < (int)recipes.size(); i++) {

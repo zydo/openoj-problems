@@ -26,7 +26,7 @@ class RangeMajority {
         this.build(2 * node + 1, mid + 1, hi, arr);
         const merged = RangeMajority.merge(
             [this.candidateOf[2 * node], this.surplusOf[2 * node]],
-            [this.candidateOf[2 * node + 1], this.surplusOf[2 * node + 1]]
+            [this.candidateOf[2 * node + 1], this.surplusOf[2 * node + 1]],
         );
         this.candidateOf[node] = merged[0];
         this.surplusOf[node] = merged[1];
@@ -53,8 +53,7 @@ class RangeMajority {
         if (!occurrences) {
             return -1;
         }
-        const count = RangeMajority.lowerBound(occurrences, right + 1)
-            - RangeMajority.lowerBound(occurrences, left);
+        const count = RangeMajority.lowerBound(occurrences, right + 1) - RangeMajority.lowerBound(occurrences, left);
         return count >= threshold ? candidate : -1;
     }
 
@@ -71,7 +70,7 @@ class RangeMajority {
         }
         return RangeMajority.merge(
             this.fold(2 * node, lo, mid, left, right),
-            this.fold(2 * node + 1, mid + 1, hi, left, right)
+            this.fold(2 * node + 1, mid + 1, hi, left, right),
         );
     }
 

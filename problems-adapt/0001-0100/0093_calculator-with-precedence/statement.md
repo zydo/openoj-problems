@@ -65,7 +65,7 @@ the additions while a `*` or `/` might still extend the current term.
 ### Hint 2
 
 Keep the finished terms somewhere. When a number finishes reading, the
-operator that came *before* it says what to do: `+` adds the number as a new
+operator that came _before_ it says what to do: `+` adds the number as a new
 term, `-` adds it negated, and `*` or `/` folds it into the term already
 waiting.
 

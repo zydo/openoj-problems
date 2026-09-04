@@ -11,10 +11,10 @@ transition `dp[i] = max(1 + dp[i + L])` over every legal block length.
 
 Testing all candidate blocks naively would be cubic, so block equality is
 decided through a longest-common-prefix table: `lcp(j, k) = lcp(j + 1, k + 1)
-+ 1` when `s[j] == s[k]`, else 0. Then `s[i : i + L] == s[i + L : i + 2L]`
-holds exactly when `lcp(i, i + L) >= L`. The recurrence only ever looks one
+
+- 1`when`s[j] == s[k]`, else 0. Then `s[i : i + L] == s[i + L : i + 2L]`holds exactly when`lcp(i, i + L) >= L`. The recurrence only ever looks one
 row down, so the table is filled row by row for decreasing `i`, keeping two
-rows (`cur` and `next_row`) — `O(n)` memory for an `O(n^2)`-sized table.
+rows (`cur`and`next_row`) — `O(n)`memory for an`O(n^2)`-sized table.
 
 Each row is finished just before its `dp[i]` is computed, so the block-length
 loop reads `cur[i + L]` from the freshly built row while the `dp[i + L]`

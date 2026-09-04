@@ -6,11 +6,11 @@ You are given a tree with `n` nodes labelled `0` to `n - 1`, described by its
 `n - 1` edges, where `edges[i] = [a_i, b_i]` joins `a_i` and `b_i` in both
 directions.
 
-Root the tree at whichever node you like. The *height* of that rooted tree is
+Root the tree at whichever node you like. The _height_ of that rooted tree is
 the number of edges on the longest downward path from the root to a leaf.
 
 Some roots make the height as small as it can be. Return the labels of all of
-them, in any order. (These nodes are the tree's *centroids* — the name for the
+them, in any order. (These nodes are the tree's _centroids_ — the name for the
 middle of a tree, of which there are always one or two.)
 
 ### Example 1

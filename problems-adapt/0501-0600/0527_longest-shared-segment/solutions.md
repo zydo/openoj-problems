@@ -24,7 +24,7 @@ same-sequence pair halts the same way. With `k` sequences the text gains
 
 Sorting the suffixes then turns the hunt into a window problem. Suffixes
 sharing a prefix occupy one contiguous block of the sorted order, so the
-deepest segment present in *every* sequence is realized by some window of
+deepest segment present in _every_ sequence is realized by some window of
 the suffix array that contains at least one suffix of each sequence — and
 the prefix common to a whole window is the minimum adjacent LCP inside it.
 The answer is the deepest such window. Two pointers sweep the array once,
@@ -35,7 +35,7 @@ suffix enters and leaves the window once, so the sweep is linear.
 
 The sort never compares the suffixes themselves. Every suffix starts ranked
 by its first symbol, and each pass re-sorts them by the pair
-*(`rank[i]`, `rank[i + k]`)* — the second entry being the rank the suffix
+_(`rank[i]`, `rank[i + k]`)_ — the second entry being the rank the suffix
 `k` steps later already holds, with a below-everything sentinel standing in
 past the end — packed into one integer key so an ordinary comparison sort
 applies; the key stays below the square of the text length, inside 64-bit

@@ -8,8 +8,7 @@ one entry with the total sum, and the total strictly grows, so the maximum
 entry of any reachable state must be the one written last. Undoing a move
 therefore takes the current maximum `largest` and restores it to
 `largest - rest`, with `rest` the sum of the other `n - 1` entries; the
-target is reachable exactly when this un-mixing grinds every entry down to
-1.
+target is reachable exactly when this un-mixing grinds every entry down to 1.
 
 A max-heap (kept as negated values) hands out the maximum while a running
 `total` mirrors the current sum, so each undo costs `O(log n)`. Success is

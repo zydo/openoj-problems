@@ -6,7 +6,11 @@ struct TrieNode {
 
 impl TrieNode {
     fn new() -> Self {
-        TrieNode { children: Default::default(), word: None, top: Vec::new() }
+        TrieNode {
+            children: Default::default(),
+            word: None,
+            top: Vec::new(),
+        }
     }
 }
 

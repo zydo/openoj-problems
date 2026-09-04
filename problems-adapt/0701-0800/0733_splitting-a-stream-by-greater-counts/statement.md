@@ -11,9 +11,9 @@ steps:
 - Step 1 sends `nums[0]` to `first`; step 2 sends `nums[1]` to `second`.
 - Each later step `i` compares `above(first, nums[i])` against
   `above(second, nums[i])`:
-  - the larger count receives `nums[i]`;
-  - on a tie, the shorter list receives it;
-  - if the lists also tie in length, `first` receives it.
+    - the larger count receives `nums[i]`;
+    - on a tie, the shorter list receives it;
+    - if the lists also tie in length, `first` receives it.
 
 Return the concatenation of `first` and `second`, in that order.
 

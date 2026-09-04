@@ -5,10 +5,10 @@
 Why forward reasoning fails here: a room deep in the grid that hands back a
 large amount can make absorbing heavy early losses worthwhile, so no local
 rule about keeping the total high survives contact with the whole grid. What
-*is* stable is the question "how much must the start be for this room?", and
+_is_ stable is the question "how much must the start be for this room?", and
 that question answers itself from the far corner inwards.
 
-Define `need[i][j]` as the least the running total can be when *entering*
+Define `need[i][j]` as the least the running total can be when _entering_
 `(i, j)` such that some right/down continuation from there stays at 1 or above
 all the way to the corner. The continuation from `(i, j)` goes to one of two
 rooms, and the cheaper to satisfy is the better choice, so
@@ -18,7 +18,7 @@ a total of exactly 0 is already fatal, so even a room whose arithmetic lands
 there demands a 1.
 
 Two boundary details finish it. A border of infinities keeps the recurrence
-from ever stepping outside the grid. And the seed is placed *after* the
+from ever stepping outside the grid. And the seed is placed _after_ the
 corner: `need[m][n-1] = 1`, meaning departure from the bottom-right room costs
 nothing but the total must still be at least 1 on the way out — which makes
 the corner's own entry value come out as `max(1, 1 - grid[m-1][n-1])`, the

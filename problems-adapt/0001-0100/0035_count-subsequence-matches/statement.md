@@ -3,7 +3,7 @@
 ## Description
 
 Deleting some characters of a string — possibly none — and leaving the rest in
-place yields a *subsequence*. Two subsequences are considered different when
+place yields a _subsequence_. Two subsequences are considered different when
 they are drawn from different positions, even if the letters they spell are
 the same.
 

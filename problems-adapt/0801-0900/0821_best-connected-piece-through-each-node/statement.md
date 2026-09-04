@@ -10,7 +10,7 @@ Every node carries a mark or the absence of one: `marked[i]` is `1` when node
 `i` is marked and `0` otherwise.
 
 The score of a node set is its count of marked nodes minus its count of
-unmarked ones. A *piece* is a set of nodes together with some of the tree's
+unmarked ones. A _piece_ is a set of nodes together with some of the tree's
 edges; the piece is connected when its nodes can reach one another using only
 its own edges.
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Call a string *doubled* when it is some string written twice in a row: it
+Call a string _doubled_ when it is some string written twice in a row: it
 reads as `a + a` for some non-empty string `a`, so its length is even and
 its two halves are identical.
 

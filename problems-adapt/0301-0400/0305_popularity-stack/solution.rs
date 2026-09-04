@@ -8,7 +8,11 @@ pub struct PopularityStack {
 
 impl PopularityStack {
     pub fn new() -> Self {
-        PopularityStack { freq: HashMap::new(), groups: Vec::new(), maxfreq: 0 }
+        PopularityStack {
+            freq: HashMap::new(),
+            groups: Vec::new(),
+            maxfreq: 0,
+        }
     }
 
     pub fn push(&mut self, val: i32) {

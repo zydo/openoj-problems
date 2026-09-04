@@ -9,13 +9,13 @@ class TreeCodec {
     // solution's own choice — the judge only requires that
     // deserialize(serialize(root)) rebuilds the same tree. Both directions
     // are iterative, so deep trees are safe.
-    std::string serialize(TreeNode* root) {
+    std::string serialize(TreeNode *root) {
         std::vector<std::string> tokens;
-        std::vector<TreeNode*> queue{root};
+        std::vector<TreeNode *> queue{root};
         // The queue holds nulls too: a null emits a marker and enqueues
         // nothing, so every child slot gets exactly one token.
         for (size_t head = 0; head < queue.size(); head++) {
-            TreeNode* node = queue[head];
+            TreeNode *node = queue[head];
             if (node == nullptr) {
                 tokens.push_back("#");
                 continue;
@@ -40,7 +40,7 @@ class TreeCodec {
         return data;
     }
 
-    TreeNode* deserialize(std::string data) {
+    TreeNode *deserialize(std::string data) {
         if (data.empty()) {
             return nullptr;
         }
@@ -55,22 +55,22 @@ class TreeCodec {
             tokens.push_back(data.substr(start, comma - start));
             start = comma + 1;
         }
-        TreeNode* root = new TreeNode(std::stoi(tokens[0]));
-        std::vector<TreeNode*> queue{root};
+        TreeNode *root = new TreeNode(std::stoi(tokens[0]));
+        std::vector<TreeNode *> queue{root};
         size_t index = 1;
         // Consume tokens as child slots in queue order; a marker fills the
         // slot without adding a node to the queue.
         for (size_t head = 0; head < queue.size() && index < tokens.size(); head++) {
-            TreeNode* node = queue[head];
+            TreeNode *node = queue[head];
             if (index < tokens.size()) {
-                const std::string& token = tokens[index++];
+                const std::string &token = tokens[index++];
                 if (token != "#") {
                     node->left = new TreeNode(std::stoi(token));
                     queue.push_back(node->left);
                 }
             }
             if (index < tokens.size()) {
-                const std::string& token = tokens[index++];
+                const std::string &token = tokens[index++];
                 if (token != "#") {
                     node->right = new TreeNode(std::stoi(token));
                     queue.push_back(node->right);

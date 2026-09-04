@@ -2,14 +2,13 @@
 
 ## Bitmask dynamic programming over the served set
 
-The two sides are lopsided: never more than 10 students, but locker ids run to
-40. So the state should track students, not lockers — a subset of students
+The two sides are lopsided: never more than 10 students, but locker ids run to 40. So the state should track students, not lockers — a subset of students
 needs at most `2^10` states, while the lockers can simply be processed one at a
 time. Let `dp[mask]` count the ways to have served exactly the students whose
 bits are set in `mask`, using only the lockers already processed.
 
 Sweep the ids from 1 to 40. For each locker, the new table starts as a copy of
-the old one — the copy *is* the option of nobody taking this locker — and then
+the old one — the copy _is_ the option of nobody taking this locker — and then
 every nonzero `dp[mask]` is added into the entry `mask | bit` for each student
 who accepts this locker and is not yet in `mask`. Because the additions read
 the old table while writing the copy, a locker is handed out at most once per

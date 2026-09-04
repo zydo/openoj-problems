@@ -3,8 +3,8 @@
 ## Interval DP on the Score Difference
 
 Carrying two separate score totals is wasted effort; only their gap ever
-matters. Let `diff(i, j)` be the largest value of *mover's final score minus
-opponent's final score* attainable on the stretch `nums[i..j]`. The mover
+matters. Let `diff(i, j)` be the largest value of _mover's final score minus
+opponent's final score_ attainable on the stretch `nums[i..j]`. The mover
 lifts one of the two ends, credits it, and then stands on the receiving end
 of whatever gap the opponent earns on the remainder, so
 `diff(i, j) = max(nums[i] - diff(i + 1, j), nums[j] - diff(i, j - 1))`.

@@ -2,7 +2,7 @@
 
 ## Description
 
-A binary tree is *complete* when its levels are filled level by level, left to
+A binary tree is _complete_ when its levels are filled level by level, left to
 right: every level holds as many nodes as it can, except perhaps the last, and
 whatever the last level holds sits flush against the left.
 

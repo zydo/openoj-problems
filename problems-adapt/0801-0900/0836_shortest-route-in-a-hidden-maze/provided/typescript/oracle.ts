@@ -59,12 +59,6 @@ class MazeController {
     }
 
     private enterable(row: number, col: number): boolean {
-        return (
-            row >= 0 &&
-            row < this.cost.length &&
-            col >= 0 &&
-            col < this.cost[row].length &&
-            this.cost[row][col] > 0
-        );
+        return row >= 0 && row < this.cost.length && col >= 0 && col < this.cost[row].length && this.cost[row][col] > 0;
     }
 }

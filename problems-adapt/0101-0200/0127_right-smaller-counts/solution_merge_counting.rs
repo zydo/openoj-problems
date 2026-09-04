@@ -13,7 +13,8 @@ impl Solution {
             let left: Vec<usize> = order[lo..mid].to_vec();
             let (mut i, mut j, mut k) = (0, mid, lo);
             while i < left.len() && j < hi {
-                if nums[left[i]] <= nums[order[j]] { // equal: the left element places first, uncounted
+                if nums[left[i]] <= nums[order[j]] {
+                    // equal: the left element places first, uncounted
                     result[left[i]] += (j - mid) as i32; // right-half values already placed below it
                     order[k] = left[i];
                     i += 1;

@@ -1,4 +1,5 @@
 import sys
+
 # A chain of the 2000 allowed nodes makes the recursion this deep, past
 # CPython's default limit.
 sys.setrecursionlimit(10_000)

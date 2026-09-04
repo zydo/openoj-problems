@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution:
     def minimumProportionalGroupCost(self, units: list[int], minimumPayments: list[int], groupCount: int) -> float:
         # Sort workers by minimumPayments/units ratio. For each worker as the one paid

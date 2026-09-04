@@ -2,7 +2,7 @@
 
 ## Description
 
-A *run* is any stretch of consecutive entries cut out of an array. Two arrays
+A _run_ is any stretch of consecutive entries cut out of an array. Two arrays
 `first` and `second` share a run when the same values, in the same order and
 with nothing skipped, can be cut out of each of them.
 

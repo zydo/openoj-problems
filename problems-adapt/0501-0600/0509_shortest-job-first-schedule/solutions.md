@@ -13,7 +13,7 @@ The loop runs until every job has been enqueued and the heap is drained. An
 empty heap means the processor is idle; instead of stepping the clock, it
 jumps to the next job's readiness time (the `max` clamp keeps the clock from
 running backwards). Crucially, everything available at the current instant is
-pushed *before* the pop: letting all simultaneous contenders into the heap at
+pushed _before_ the pop: letting all simultaneous contenders into the heap at
 once is what makes the index tie-break decide correctly.
 
 The popped winner joins the answer, and the clock advances by exactly that

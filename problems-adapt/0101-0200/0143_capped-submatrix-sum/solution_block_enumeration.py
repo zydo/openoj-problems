@@ -8,12 +8,7 @@ class Solution:
         for r in range(1, m + 1):
             row = matrix[r - 1]
             for c in range(1, n + 1):
-                prefix[r][c] = (
-                    prefix[r - 1][c]
-                    + prefix[r][c - 1]
-                    - prefix[r - 1][c - 1]
-                    + row[c - 1]
-                )
+                prefix[r][c] = prefix[r - 1][c] + prefix[r][c - 1] - prefix[r - 1][c - 1] + row[c - 1]
         best = None
         # Walk every block by its four corner coordinates and keep the
         # largest total that respects the cap.

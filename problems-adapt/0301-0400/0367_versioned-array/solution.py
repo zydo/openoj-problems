@@ -1,4 +1,6 @@
 from bisect import bisect_right
+
+
 class VersionedArray:
     """Per-index history of (commit_id, val); versions are virtual counters.
 

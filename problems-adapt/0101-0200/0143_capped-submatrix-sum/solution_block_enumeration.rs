@@ -7,9 +7,7 @@ impl Solution {
         let mut prefix: Vec<Vec<i32>> = vec![vec![0; n + 1]; m + 1];
         for r in 1..=m {
             for c in 1..=n {
-                prefix[r][c] = prefix[r - 1][c] + prefix[r][c - 1]
-                    - prefix[r - 1][c - 1]
-                    + matrix[r - 1][c - 1];
+                prefix[r][c] = prefix[r - 1][c] + prefix[r][c - 1] - prefix[r - 1][c - 1] + matrix[r - 1][c - 1];
             }
         }
         // Walk every block by its four corner coordinates and keep the

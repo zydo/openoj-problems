@@ -1,8 +1,6 @@
 impl Solution {
     pub fn unmask_word(interrogator: &mut Interrogator, wordlist: Vec<String>) {
-        let matches = |a: &str, b: &str| -> usize {
-            a.bytes().zip(b.bytes()).filter(|(x, y)| x == y).count()
-        };
+        let matches = |a: &str, b: &str| -> usize { a.bytes().zip(b.bytes()).filter(|(x, y)| x == y).count() };
         let mut candidates = wordlist;
         while !candidates.is_empty() {
             // Pick the word whose worst-case surviving group is smallest:

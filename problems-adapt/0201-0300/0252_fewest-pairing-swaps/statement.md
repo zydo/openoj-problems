@@ -3,13 +3,13 @@
 ## Description
 
 `line` lists the numbers `0` through `2n - 1`, each exactly once, in some order.
-Two numbers are *partners* when they differ only in whether they are even or
+Two numbers are _partners_ when they differ only in whether they are even or
 odd and are otherwise consecutive: `0` with `1`, `2` with `3`, and so on up to
 `2n - 2` with `2n - 1`.
 
-Read the array as `n` back-to-back *slots* of width two — indices `0` and `1`
+Read the array as `n` back-to-back _slots_ of width two — indices `0` and `1`
 form the first slot, indices `2` and `3` the second, and so on. A slot is
-*settled* when the two numbers standing in it are partners.
+_settled_ when the two numbers standing in it are partners.
 
 One move exchanges the numbers held at any two indices, neighbouring or far
 apart. Return the least number of moves after which every slot is settled.

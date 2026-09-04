@@ -85,7 +85,7 @@ time, with `n = nums.length`?
 The two operations pull in opposite directions. Storing the raw entries makes
 a write instant and a query linear; storing running totals makes a query
 instant and a write linear. Neither extreme survives `5 * 10⁴` mixed calls at
-this size, so store totals of *pieces* instead of totals of everything.
+this size, so store totals of _pieces_ instead of totals of everything.
 
 ### Hint 2
 
@@ -100,6 +100,6 @@ fall out of the lowest set bit: the block recorded at slot `i` spans
 Peeling the lowest set bit off a counter (`i -= i & (-i)`) enumerates exactly
 the blocks that tile a prefix; adding it back (`i += i & (-i)`) enumerates the
 blocks a written position sits inside. Then a stretch total is one prefix
-total minus another, and a write is best applied as a *difference* — keep the
+total minus another, and a write is best applied as a _difference_ — keep the
 current entries alongside the blocks so you know how much each write moved
 its position by.

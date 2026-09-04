@@ -7,7 +7,10 @@ struct TrieNode {
 
 impl TrieNode {
     fn new() -> Self {
-        TrieNode { children: HashMap::new(), hotness: 0 }
+        TrieNode {
+            children: HashMap::new(),
+            hotness: 0,
+        }
     }
 }
 
@@ -18,7 +21,10 @@ pub struct PrefixSuggester {
 
 impl PrefixSuggester {
     pub fn new(sentences: Vec<String>, times: Vec<i32>) -> Self {
-        let mut suggester = PrefixSuggester { root: TrieNode::new(), typed: String::new() };
+        let mut suggester = PrefixSuggester {
+            root: TrieNode::new(),
+            typed: String::new(),
+        };
         for (sentence, time) in sentences.into_iter().zip(times.into_iter()) {
             suggester.insert(&sentence, time);
         }
@@ -46,11 +52,7 @@ impl PrefixSuggester {
         collect(node, &mut prefix, &mut matches);
         // Hotter first, then the lexicographically smaller sentence.
         matches.sort_by(|a, b| b.1.cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
-        matches
-            .into_iter()
-            .take(3)
-            .map(|(sentence, _)| sentence)
-            .collect()
+        matches.into_iter().take(3).map(|(sentence, _)| sentence).collect()
     }
 
     fn insert(&mut self, sentence: &str, extra: i32) {

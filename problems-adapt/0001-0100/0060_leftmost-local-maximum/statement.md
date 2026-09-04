@@ -2,7 +2,7 @@
 
 ## Description
 
-An entry of `nums` is a *local maximum* when it is strictly greater than each
+An entry of `nums` is a _local maximum_ when it is strictly greater than each
 of its neighbours. The two end entries have only one neighbour, so meeting the
 definition there means beating that one entry.
 
@@ -47,7 +47,7 @@ first entry qualifies through its lone neighbour.
 
 ### Hint 1
 
-A qualifying index beats the entry before it *and* the entry after it. What
+A qualifying index beats the entry before it _and_ the entry after it. What
 does the array look like at and before the first index that beats its
 right-hand neighbour?
 

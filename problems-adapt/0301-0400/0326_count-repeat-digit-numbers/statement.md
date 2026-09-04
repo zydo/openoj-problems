@@ -2,7 +2,7 @@
 
 ## Description
 
-Call an integer *repeat-digit* when some digit shows up more than once in its
+Call an integer _repeat-digit_ when some digit shows up more than once in its
 decimal form: `44` and `303` are repeat-digit, while `12` and `907` are not.
 
 Given a positive integer `n`, return how many of the integers `1, 2, ..., n` are

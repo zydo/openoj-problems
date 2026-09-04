@@ -1,9 +1,11 @@
 class Solution {
   public:
-    int minimumLimitedRouteCost(int nodeCount, vector<vector<int>> &links, int source, int target, int maxIntermediates) {
+    int minimumLimitedRouteCost(int nodeCount, vector<vector<int>> &links, int source, int target,
+                                int maxIntermediates) {
         const int INF = INT_MAX / 2;
         // After r full rounds, dist[v] is the cheapest cost using at
-        // most r edges; maxIntermediates internal nodes allow maxIntermediates+1 links, so run maxIntermediates+1 rounds.
+        // most r edges; maxIntermediates internal nodes allow maxIntermediates+1 links, so run maxIntermediates+1
+        // rounds.
         vector<int> dist(nodeCount, INF);
         dist[source] = 0;
         for (int i = 0; i < maxIntermediates + 1; i++) {

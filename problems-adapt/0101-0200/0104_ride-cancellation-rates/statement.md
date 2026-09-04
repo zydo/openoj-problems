@@ -92,5 +92,5 @@ everything else into 0 lets one aggregate produce the share directly.
 ### Hint 3
 
 Average those 0/1 flags and round to two decimals. Restrict `ride_date` to
-the three-day window *before* grouping; groups form only for days that have
+the three-day window _before_ grouping; groups form only for days that have
 rows, so days with no qualifying rides stay absent without extra filtering.

@@ -6,7 +6,7 @@ You are given an integer array `nums` and a non-negative integer `k`.
 
 Call a position `i` (with `0 <= i <= len - 2`) a **break** of a sequence when
 its neighbors there hold different values — `seq[i] != seq[i + 1]`. The
-sequence is *smooth enough* when breaks occur at no more than `k` of its
+sequence is _smooth enough_ when breaks occur at no more than `k` of its
 positions.
 
 Return the length of the longest subsequence of `nums` that is smooth enough.

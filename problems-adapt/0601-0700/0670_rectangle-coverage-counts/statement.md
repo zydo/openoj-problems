@@ -54,7 +54,7 @@ on the center for 2, one lands on the corner for 1.
 ### Hint 1
 
 Touching every cell of every rectangle as you go is what makes the naive
-approach slow. What if the rectangles were only *recorded* cheaply, with the
+approach slow. What if the rectangles were only _recorded_ cheaply, with the
 actual additions deferred to one final pass?
 
 ### Hint 2

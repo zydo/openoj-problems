@@ -9,13 +9,13 @@ overall best. For one pair, map `high` to `+1`, `low` to `-1`, every other
 letter to `0`; the best substring sum of that mapped array — restricted to
 substrings containing at least one `low` — is the pair's best spread. The
 restriction is the whole subtlety: the spread is defined over letters
-*present* in the substring, and a run of nothing but `high`s contributes 0,
+_present_ in the substring, and a run of nothing but `high`s contributes 0,
 not its length.
 
 That makes Kadane's scan carry a companion value. `diff` is the best subarray
 sum ending at the current letter, allowed to lack a `low` and clamped at `0`
 whenever it would dip negative; `diff_with_low` is the best sum ending here
-that is *guaranteed* to include a `low`. Reading a `high` bumps both. Reading
+that is _guaranteed_ to include a `low`. Reading a `high` bumps both. Reading
 a `low`, a live companion becomes `max(diff_with_low - 1, diff)` — either
 stretch the previous best-with-low across this `-1`, or bolt on the entire
 low-free prefix ending here, never worse than starting over — while the first

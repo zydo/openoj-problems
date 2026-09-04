@@ -10,7 +10,7 @@ equally clean restatement — in a rooted tree the subtree at `u` overlaps the
 subtree at `v` precisely when one of `u`, `v` is an ancestor of the other. So
 the goal is the maximum XOR of subtree sums over all ancestor-free node pairs.
 
-Ancestor-free pairs are caught by *when* they meet. Keep one DFS and, beside
+Ancestor-free pairs are caught by _when_ they meet. Keep one DFS and, beside
 it, a binary trie holding the sums of subtrees that have already been closed
 out — popped off the stack in full. The instant node `v` is entered, nothing
 inside `v`'s subtree has been added, and none of `v`'s ancestors have finished

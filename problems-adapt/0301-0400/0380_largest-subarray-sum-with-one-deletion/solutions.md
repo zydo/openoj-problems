@@ -12,7 +12,7 @@ When index `i` arrives, the one-deletion state can come from only two places.
 Either the crossing-out already lies to the left and the stretch simply
 absorbs `arr[i]` (`one_del + arr[i]`), or the crossing-out happens exactly
 here — `arr[i]` is dropped and the stretch becomes the untouched stretch that
-ended at `i - 1`, which is the *pre-update* `no_del`. That ordering is the
+ended at `i - 1`, which is the _pre-update_ `no_del`. That ordering is the
 one subtle line: compute `one_del` first, before `no_del` is extended by
 `arr[i]`. The untouched state itself updates the ordinary way,
 `max(no_del + arr[i], arr[i])`, restarting whenever a fresh element beats any

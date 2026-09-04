@@ -33,7 +33,8 @@ class Solution {
             for (size_t i = 0; i < shared; ++i) {
                 int pa = position[a[i]];
                 int pb = position[b[i]];
-                if (pa != pb) return pa < pb;
+                if (pa != pb)
+                    return pa < pb;
             }
             return a.size() < b.size();
         });

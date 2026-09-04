@@ -8,7 +8,7 @@ obstacle must be cleared there, zero for an open cell. Under these
 weights the cheapest path from `(0, 0)` to `(m-1, n-1)` is exactly the
 fewest obstacles a route clears. And because no weight exceeds one,
 Dijkstra folds into 0-1 BFS: a relaxation of weight 0 pushes to the
-*front* of a deque and a relaxation of weight 1 to the *back*. The
+_front_ of a deque and a relaxation of weight 1 to the _back_. The
 deque's distances therefore never decrease, so each cell popping off
 the front is final — the priority queue is never missed.
 

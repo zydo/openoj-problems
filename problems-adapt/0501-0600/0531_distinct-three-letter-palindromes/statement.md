@@ -59,5 +59,5 @@ between them. Its first and last occurrence are the pair to inspect.
 ### Hint 3
 
 Every letter found strictly between the first and last occurrence of `x`
-serves as a middle — and only the *set* of such letters matters, since each
+serves as a middle — and only the _set_ of such letters matters, since each
 palindrome counts once.

@@ -55,7 +55,7 @@ unused.
 ### Hint 1
 
 Trying every tying is a factorial number of possibilities, but notice what
-actually distinguishes one half-finished tying from another: only *which*
+actually distinguishes one half-finished tying from another: only _which_
 anchors have been taken, never the order they were taken in.
 
 ### Hint 2

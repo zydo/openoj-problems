@@ -18,7 +18,7 @@ class PopularityStack {
     }
 
     int pop() {
-        std::vector<int>& top = groups[maxfreq - 1];
+        std::vector<int> &top = groups[maxfreq - 1];
         int val = top.back();
         top.pop_back();
         freq[val] = maxfreq - 1;

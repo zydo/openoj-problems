@@ -21,8 +21,7 @@ class SpreadSeating {
                 continue; // stale entry
             }
             live.erase({top.l, top.r});
-            occupied.insert(
-                std::lower_bound(occupied.begin(), occupied.end(), top.spot), top.spot);
+            occupied.insert(std::lower_bound(occupied.begin(), occupied.end(), top.spot), top.spot);
             addSegment(top.l, top.spot);
             addSegment(top.spot, top.r);
             return top.spot;
@@ -56,7 +55,7 @@ class SpreadSeating {
     // Ranks segments for the max-heap: the top has the largest distance
     // and, on ties, the lower seat number.
     struct Worse {
-        bool operator()(const Segment& a, const Segment& b) const {
+        bool operator()(const Segment &a, const Segment &b) const {
             if (a.dist != b.dist) {
                 return a.dist < b.dist;
             }

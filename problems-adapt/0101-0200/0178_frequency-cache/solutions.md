@@ -2,8 +2,8 @@
 
 ## Count buckets on a linked list, an LRU list inside each bucket
 
-This cache keeps two orderings alive at once: the use count decides *which
-group* a key belongs to, and the use order decides *who leaves first* within
+This cache keeps two orderings alive at once: the use count decides _which
+group_ a key belongs to, and the use order decides _who leaves first_ within
 a group. The `FrequencyCache` gives each ordering its own linked structure.
 The outer doubly linked list holds **count buckets in increasing count
 order**, so the first real bucket is always the lowest count present. Each

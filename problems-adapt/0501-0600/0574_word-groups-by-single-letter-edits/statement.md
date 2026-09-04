@@ -73,7 +73,7 @@ fits in 26 bits. What do the three moves become as bit operations?
 ### Hint 3
 
 Comparing every pair of words is quadratic. From one word's mask, can you
-*generate* every mask a single move could reach, then check which of those
+_generate_ every mask a single move could reach, then check which of those
 exist in the input?
 
 ### Hint 4

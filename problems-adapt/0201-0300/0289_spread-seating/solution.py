@@ -1,5 +1,7 @@
 import heapq
 from bisect import bisect_left, insort
+
+
 class SpreadSeating:
     """Max-heap of free-gap segments between occupied seats, lazily deleted.
 

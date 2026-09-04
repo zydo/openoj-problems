@@ -17,7 +17,7 @@ func (h headHeap) Less(i, j int) bool {
 	}
 	return h[i].position < h[j].position
 }
-func (h headHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }
+func (h headHeap) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
 func (h *headHeap) Push(x interface{}) { *h = append(*h, x.(entry)) }
 func (h *headHeap) Pop() interface{} {
 	old := *h

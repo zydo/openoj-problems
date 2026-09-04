@@ -42,7 +42,9 @@ class Solution {
         // step settles every LCP within 2n character comparisons.
         int[] posOf = new int[n];
         for (int p = 0; p < n; p++) posOf[sa[p]] = p;
-        int bestLength = 0, bestStart = 0, h = 0;
+        int bestLength = 0,
+            bestStart = 0,
+            h = 0;
         for (int i = 0; i < n; i++) {
             if (posOf[i] > 0) {
                 int j = sa[posOf[i] - 1];

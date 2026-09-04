@@ -9,8 +9,8 @@ class Solution {
         // and whose right child is still pending. Preorder's next value is
         // either the spine top's left child, or the right child of whatever
         // portion of the spine inorder has already finished.
-        vector<TreeNode *> spine = { root };
-        size_t cursor = 0;  // next inorder entry awaiting its turn
+        vector<TreeNode *> spine = {root};
+        size_t cursor = 0; // next inorder entry awaiting its turn
         for (size_t i = 1; i < preorder.size(); ++i) {
             int value = preorder[i];
             if (spine.back()->val != inorder[cursor]) {

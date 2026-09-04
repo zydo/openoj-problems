@@ -24,7 +24,7 @@ The trace for `"ztzz"` shows both jumps:
 1. `i = 0, j = 1`: 'z' < 't' is false — 'z' > 't', so the challenger loses
    and `j` skips to `2`.
 2. `i = 0, j = 2`: 'z' = 'z' grows the shared prefix to `k = 1`; then
-   't' < 'z', so the challenger *wins*: suffixes `0..0+1` die, `i` moves to
+   't' < 'z', so the challenger _wins_: suffixes `0..0+1` die, `i` moves to
    `max(2, 2) = 2`, `j` to `3`.
 3. 'z' = 'z' grows `k` again and `j + k` exits the string. The survivor
    `s[2:] = "zz"` is the answer.

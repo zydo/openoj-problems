@@ -5,6 +5,7 @@ class Solution {
 
     // Heap entry: value, input position (tie-break), and the head itself.
     private static class Entry {
+
         int val;
         int position;
         ListNode node;

@@ -2,8 +2,7 @@
 
 class HallSeating {
   public:
-    HallSeating(int n, int m)
-        : n(n), m(m), remaining(n, m), sums(4 * n, 0), maxs(4 * n, 0) {
+    HallSeating(int n, int m) : n(n), m(m), remaining(n, m), sums(4 * n, 0), maxs(4 * n, 0) {
         if (n > 0) {
             build(1, 0, n - 1);
         }
@@ -76,8 +75,7 @@ class HallSeating {
             return sums[node];
         }
         int mid = (lo + hi) / 2;
-        return rangeSum(2 * node, lo, mid, left, right)
-             + rangeSum(2 * node + 1, mid + 1, hi, left, right);
+        return rangeSum(2 * node, lo, mid, left, right) + rangeSum(2 * node + 1, mid + 1, hi, left, right);
     }
 
     // Smallest index in [left, right] with remaining >= k, or -1.

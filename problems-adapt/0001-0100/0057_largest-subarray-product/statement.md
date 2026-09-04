@@ -2,7 +2,7 @@
 
 ## Description
 
-A *block* of `nums` is a run of one or more consecutive entries. Multiply the
+A _block_ of `nums` is a run of one or more consecutive entries. Multiply the
 entries of a block together and you get its product; return the largest product
 any block of `nums` achieves.
 
@@ -53,7 +53,7 @@ into the worst.
 
 ### Hint 2
 
-That failure is also the fix. Carry *two* running values, the largest and the
+That failure is also the fix. Carry _two_ running values, the largest and the
 smallest product of a block ending at the current entry, since a negative entry
 converts one into the other.
 

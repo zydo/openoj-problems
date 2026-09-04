@@ -8,7 +8,7 @@ class AncestorFinder {
         }
         up.resize(levels);
         for (int j = 1; j < levels; j++) {
-            const std::vector<int>& previous = up[j - 1];
+            const std::vector<int> &previous = up[j - 1];
             up[j].assign(n, -1);
             for (int v = 0; v < n; v++) {
                 int middle = previous[v];

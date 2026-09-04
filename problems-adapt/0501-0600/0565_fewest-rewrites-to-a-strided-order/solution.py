@@ -1,4 +1,6 @@
 from bisect import bisect_right
+
+
 class Solution:
     def fewestRewrites(self, arr: list[int], k: int) -> int:
         def longest_nondecreasing(seq):

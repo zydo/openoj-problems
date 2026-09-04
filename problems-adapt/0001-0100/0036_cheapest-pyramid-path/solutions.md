@@ -31,6 +31,7 @@ the other direction — sums are compared, never assumed positive.
 
 **Complexity:** `O(n²)` time, `O(n)` space — one pass per cell, the two rows
 are the only state.
+
 ## bottom_up
 
 Starting at the base eliminates every boundary case. Let `dp[i]` be the
@@ -59,4 +60,3 @@ Every one of the `n(n+1)/2` cells is folded exactly once and the rolling array
 never exceeds one row.
 
 **Complexity:** `O(n²)` time, `O(n)` space, for `n` rows.
-

@@ -6,7 +6,7 @@ Listing subsequences is hopeless, so reverse the question: for each candidate
 `g` from 1 to the maximum element, decide whether some subsequence has gcd
 exactly `g`. The load-bearing fact is monotonicity — extra entries hold the
 gcd in place or drag it down. Among all subsequences built from multiples of
-`g`, the smallest gcd belongs to the subsequence that keeps *every* multiple
+`g`, the smallest gcd belongs to the subsequence that keeps _every_ multiple
 of `g` in the array. Hence `g` is attainable precisely when the gcd of all
 present multiples of `g` equals `g`: that full set is a witness when it holds,
 and when the gcd sinks below `g`, no thinner selection of multiples can pull

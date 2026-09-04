@@ -1,6 +1,7 @@
 class Solution {
   public:
-    int minimumLimitedRouteCost(int nodeCount, vector<vector<int>> &links, int source, int target, int maxIntermediates) {
+    int minimumLimitedRouteCost(int nodeCount, vector<vector<int>> &links, int source, int target,
+                                int maxIntermediates) {
         vector<vector<pair<int, int>>> graph(nodeCount);
         for (const auto &link : links) {
             graph[link[0]].push_back({link[1], link[2]});

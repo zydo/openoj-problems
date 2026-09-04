@@ -58,8 +58,8 @@ func NewCoverageLedgerTyped() *CoverageLedger {
 }
 
 func (design *CoverageLedger) addSpan(start int, end int) {
-	i := lowerBound(design.ends, start)  // first interval ending at/after start
-	j := upperBound(design.starts, end)  // first interval starting after end
+	i := lowerBound(design.ends, start) // first interval ending at/after start
+	j := upperBound(design.starts, end) // first interval starting after end
 	if i < j {
 		if design.starts[i] < start {
 			start = design.starts[i]

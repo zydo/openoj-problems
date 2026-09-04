@@ -2,7 +2,8 @@ function longestAscendingPath(matrix: number[][]): number {
     if (matrix.length === 0 || matrix[0].length === 0) {
         return 0;
     }
-    const m = matrix.length, n = matrix[0].length;
+    const m = matrix.length,
+        n = matrix[0].length;
     // memo[i][j] = longest ascending walk starting at (i, j); 0 means
     // "not computed yet".
     const memo: number[][] = Array.from({ length: m }, () => new Array(n).fill(0));
@@ -20,7 +21,9 @@ function longestAscendingPath(matrix: number[][]): number {
             const stack: number[][] = [[si, sj, 0]];
             while (stack.length > 0) {
                 const frame = stack[stack.length - 1];
-                const i = frame[0], j = frame[1], k = frame[2];
+                const i = frame[0],
+                    j = frame[1],
+                    k = frame[2];
                 if (k === 0) {
                     // First visit: the cell on its own is a walk of 1.
                     memo[i][j] = 1;
@@ -37,7 +40,8 @@ function longestAscendingPath(matrix: number[][]): number {
                     }
                     continue;
                 }
-                const ni = i + di[k], nj = j + dj[k];
+                const ni = i + di[k],
+                    nj = j + dj[k];
                 frame[2]++;
                 // Only strictly larger neighbours continue the walk.
                 if (ni >= 0 && ni < m && nj >= 0 && nj < n && matrix[ni][nj] > matrix[i][j]) {

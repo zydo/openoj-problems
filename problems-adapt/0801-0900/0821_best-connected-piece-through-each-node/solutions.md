@@ -24,6 +24,7 @@ from double-counting: the parent-side piece must leave out the very subtree
 `c` is about to become the root of. On Example 2 the center node 1 gathers
 branches 0, 3, and 4 (weights +1, +1, +1 around its own -1) for a score of 2,
 while node 2 pairs its own -1 with a parent-side piece worth 2 for a total of
+
 1. Both sweeps run on an explicit stack, so trees 10^5 deep are safe.
 
 **Complexity:** `O(n)` time, `O(n)` space.

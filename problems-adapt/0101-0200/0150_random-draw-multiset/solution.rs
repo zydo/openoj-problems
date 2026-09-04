@@ -10,7 +10,10 @@ pub struct RandomDrawMultiset {
 
 impl RandomDrawMultiset {
     pub fn new() -> Self {
-        RandomDrawMultiset { values: Vec::new(), indices: HashMap::new() }
+        RandomDrawMultiset {
+            values: Vec::new(),
+            indices: HashMap::new(),
+        }
     }
 
     pub fn insert(&mut self, val: i32) -> bool {

@@ -5,7 +5,7 @@
 Sorting all `n` values at construction would answer both methods instantly
 and cost `O(n)` memory even if the caller asks for two values and stops. The
 follow-up's `O(h)` bound rules that out and points at the structural fact
-worth exploiting: in a binary search tree, *smallest unvisited value* is
+worth exploiting: in a binary search tree, _smallest unvisited value_ is
 always the first node of some left spine.
 
 The iterator therefore keeps a stack holding exactly one root-to-node path —

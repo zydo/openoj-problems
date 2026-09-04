@@ -1,6 +1,10 @@
 impl Solution {
     pub fn minimum_proportional_group_cost(units: Vec<i32>, minimumPayments: Vec<i32>, groupCount: i32) -> f64 {
-        let mut workers: Vec<(i32, i32)> = minimumPayments.iter().zip(units.iter()).map(|(&w, &q)| (w, q)).collect();
+        let mut workers: Vec<(i32, i32)> = minimumPayments
+            .iter()
+            .zip(units.iter())
+            .map(|(&w, &q)| (w, q))
+            .collect();
         workers.sort_by(|a, b| {
             (a.0 as f64 / a.1 as f64)
                 .partial_cmp(&(b.0 as f64 / b.1 as f64))

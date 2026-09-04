@@ -1,4 +1,6 @@
 from bisect import bisect_left
+
+
 class HistoryStore:
     """Per-key parallel (values, timestamps) lists, binary-searched on get.
 

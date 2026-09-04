@@ -7,7 +7,7 @@ class VersionedArray {
     VersionedArray(int length) {}
 
     void set(int index, int val) {
-        std::vector<std::pair<int, int>>& entries = history[index];
+        std::vector<std::pair<int, int>> &entries = history[index];
         if (!entries.empty() && entries.back().first == current) {
             entries.back().second = val; // a second write in the same version
         } else {
@@ -15,16 +15,14 @@ class VersionedArray {
         }
     }
 
-    int commit() {
-        return current++;
-    }
+    int commit() { return current++; }
 
     int get(int index, int commit_id) {
         auto found = history.find(index);
         if (found == history.end()) {
             return 0; // never written
         }
-        const std::vector<std::pair<int, int>>& entries = found->second;
+        const std::vector<std::pair<int, int>> &entries = found->second;
         int low = 0;
         int high = (int)entries.size();
         while (low < high) { // rightmost entry at or before commit_id

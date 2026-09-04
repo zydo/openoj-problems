@@ -24,7 +24,7 @@ index `0` on the very first iteration. A single-entry array has no neighbours
 at all and returns `0` immediately; the fallback return after the loop is
 unreachable, because with no equal adjacencies some index always qualifies.
 
-The deliberate choice here is linearity. Halving the interval finds *a*
+The deliberate choice here is linearity. Halving the interval finds _a_
 qualifying index in `O(log n)` probes, but which one it lands on depends on
 where the probes happen to fall, so it cannot be trusted to produce the
 earliest — and this problem's judging compares the index exactly. A pass that

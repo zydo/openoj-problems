@@ -4,7 +4,7 @@
 
 Tracking runs while they split apart means a data structure that shards blocks
 on demand. Turn the timeline around and the awkward operation disappears: play
-the removals backwards over an initially empty array and each step *restores*
+the removals backwards over an initially empty array and each step _restores_
 one element, so blocks only ever grow and fuse. Restore the positions in the
 reverse of `removeQueries` order, note the largest block total after each
 restoration, and reverse the notes at the end to line them up with the

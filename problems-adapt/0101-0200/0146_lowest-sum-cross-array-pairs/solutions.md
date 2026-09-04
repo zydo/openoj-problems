@@ -3,10 +3,10 @@
 Both solutions must emit the `k` smallest pairs `(nums1[i], nums2[j])` in
 order, ties going to the earlier `nums1` index — the lexicographically
 first `k` triples `(sum, i, j)`. Neither materializes the Cartesian
-product. One works *around* it: it never pops anything, but finds the
+product. One works _around_ it: it never pops anything, but finds the
 value of the `k`-th smallest sum directly by binary search on the number
 line, counts pairs against each candidate in linear time, and then
-harvests the chosen sums by position. The other works *inside* the
+harvests the chosen sums by position. The other works _inside_ the
 product: it merges the sorted rows of the pair matrix through a min-heap,
 discovering the answers one pop at a time.
 

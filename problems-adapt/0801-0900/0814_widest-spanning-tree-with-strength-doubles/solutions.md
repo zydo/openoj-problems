@@ -14,7 +14,7 @@ so does one whose endpoints are already joined — three required edges around a
 triangle, say, close a cycle no spanning tree may hold, which is exactly how
 the all-required example answers `-1`. Ordinary edges at strength `x` or more
 then join without cost, and finally ordinary edges that clear `x` only by
-doubling (`s < x <= 2s`) are unioned one at a time, each *successful* union
+doubling (`s < x <= 2s`) are unioned one at a time, each _successful_ union
 spending one of the `k` upgrades; a candidate that would need more than `k`
 is rejected. The candidate stands exactly when all `n` nodes share one root.
 

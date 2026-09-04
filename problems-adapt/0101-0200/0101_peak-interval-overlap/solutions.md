@@ -4,7 +4,7 @@
 
 Visit the intervals in start order and every arrival becomes one small
 decision: either some earlier interval has already finished by now, or none
-has. Which one finished is beside the point — only the *earliest* end among
+has. Which one finished is beside the point — only the _earliest_ end among
 the running intervals decides when the running count next drops, and a min-heap
 of end times keeps exactly that value on top.
 

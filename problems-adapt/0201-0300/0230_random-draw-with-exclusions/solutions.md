@@ -4,12 +4,12 @@
 
 Count the survivors first: `n - b` of them, writing `b` for the number of
 barred values. A uniform draw over `[0, n - b)` therefore produces the right
-number of outcomes; what it does not yet produce is the right *set*, because
+number of outcomes; what it does not yet produce is the right _set_, because
 some positions below `n - b` are barred themselves. The constructor repairs
 that once and for all. For each barred position `v < n - b` it chooses a
 survivor from the tail `[n - b, n)` and records the pair. The tail always has
 enough to give: it spans `b` positions, the barred values number `b` in total,
-and every barred value living below the cut is one that is *not* occupying the
+and every barred value living below the cut is one that is _not_ occupying the
 tail — so survivors up there outnumber the positions needing a stand-in.
 
 `pick` is then one random draw over the short range plus one map lookup, which
@@ -28,8 +28,7 @@ when it is not.
 
 **Judged scale.** A frequency bucket only becomes meaningful after roughly
 1400 expected observations, so the statistical cases keep the survivor count
-near 200 or below, with `n` up to about `2 * 10⁴` and draw counts up to
-300000. They include barred sets packed at the bottom of the range, where
+near 200 or below, with `n` up to about `2 * 10⁴` and draw counts up to 300000. They include barred sets packed at the bottom of the range, where
 every one of them needs a stand-in; packed at the top, where none does; and
 dense sets that leave only a couple of survivors. The `10⁹` ceiling in the
 constraints is beyond any enumerable table, which is precisely why the

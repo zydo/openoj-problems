@@ -63,6 +63,6 @@ the least value that obeys the left-hand rule.
 
 ### Hint 3
 
-Now sweep back the other way for the right-hand rule, but *raise* weights
+Now sweep back the other way for the right-hand rule, but _raise_ weights
 rather than assign them: keeping the larger of the old and the new value means
 the return sweep can never undo the first one's work. Sum the array.

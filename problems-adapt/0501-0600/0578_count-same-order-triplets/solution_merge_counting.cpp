@@ -12,7 +12,7 @@ class Solution {
         }
 
         vector<int> smaller_after(n, 0); // per index: later nums1 values that precede it in nums2
-        vector<int> order(n); // merge-sort workspace of indexes, ordered by nums2 position
+        vector<int> order(n);            // merge-sort workspace of indexes, ordered by nums2 position
         iota(order.begin(), order.end(), 0);
         auto merge_sort = [&](auto &&self, int lo, int hi) {
             if (hi - lo < 2) {

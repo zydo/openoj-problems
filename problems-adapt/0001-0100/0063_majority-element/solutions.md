@@ -47,7 +47,7 @@ sign, spread, order — matters to it.
 ## Boyer-Moore Voting
 
 The premise gives more than it seems: the answer holds over half the
-positions, so *all other values together* hold fewer. Picture striking out
+positions, so _all other values together_ hold fewer. Picture striking out
 pairs — one occurrence of the answer against one occurrence of anything else,
 chosen in any order. The other values run out first, so at least one
 occurrence of the answer survives unpaired. That argument never names a

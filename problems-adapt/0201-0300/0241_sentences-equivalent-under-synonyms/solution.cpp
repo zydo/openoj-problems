@@ -1,7 +1,6 @@
 class Solution {
   public:
-    bool sentencesEquivalent(vector<string> &wordsA, vector<string> &wordsB,
-                                vector<vector<string>> &synonyms) {
+    bool sentencesEquivalent(vector<string> &wordsA, vector<string> &wordsB, vector<vector<string>> &synonyms) {
         // Different lengths can never be similar.
         if (wordsA.size() != wordsB.size())
             return false;

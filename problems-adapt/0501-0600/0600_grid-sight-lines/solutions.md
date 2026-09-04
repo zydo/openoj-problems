@@ -18,7 +18,7 @@ the in-between people were all just popped as strictly shorter than `x`.
 Then comes the detail equal heights force: the count credits a `>=` top,
 but the cleanup that follows pops entries `<= x`, so an equal-height
 neighbour is counted once and then removed from view — nobody further
-back can be seen *through* them.
+back can be seen _through_ them.
 
 In the row `[3, 6, 2, 7, 5]` the sweep reaches the 6 with `[7]` left on
 the stack: nothing pops, the 7 is counted alongside the popped 2, and

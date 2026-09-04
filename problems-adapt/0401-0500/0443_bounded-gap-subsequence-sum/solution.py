@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution:
     def boundedGapSubsequenceSum(self, nums: list[int], k: int) -> int:
         n = len(nums)

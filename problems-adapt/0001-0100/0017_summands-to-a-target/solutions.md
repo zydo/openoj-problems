@@ -59,7 +59,7 @@ Then one pass per candidate — the array-order guarantee that replaced the
 start index — walks amounts ascending and, at each `t`, appends `value` to a
 copy of every way in `table[t - value]`.
 
-Two rules of that loop do the backtracking's work. Ascending amounts *within*
+Two rules of that loop do the backtracking's work. Ascending amounts _within_
 a pass let a way already containing this candidate be extended by it again —
 `table[4]` gains `[2]` and later `[2,2]` gains from `table[2]` — which is the
 unlimited reuse. And the candidate-outer order pins each multiset to a single

@@ -48,7 +48,7 @@ class PrefixSuggester {
         }
         const matches: [string, number][] = [];
         this.collect(this.current, this.typed.join(""), matches);
-        matches.sort((a, b) => (b[1] - a[1]) || (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+        matches.sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
         return matches.slice(0, 3).map(([sentence]) => sentence);
     }
 

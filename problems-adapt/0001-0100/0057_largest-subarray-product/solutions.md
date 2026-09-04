@@ -5,7 +5,7 @@
 The sum version of this problem needs one running value; the product version
 needs two, and the reason is sign. Multiplication by a negative entry inverts
 comparisons, so the best block ending at the next position may well be the
-*worst* block ending at this one, stretched by one. Discard the worst and you
+_worst_ block ending at this one, stretched by one. Discard the worst and you
 lose the answer.
 
 So the sweep keeps `cur_max` and `cur_min`, the extreme products among blocks

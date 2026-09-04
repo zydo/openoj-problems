@@ -1,4 +1,6 @@
 from itertools import combinations
+
+
 class Solution:
     def fewestCappedCourseRounds(self, n: int, precedence: list[list[int]], k: int) -> int:
         # prereq[i] = bitmask of courses that must precede course i.

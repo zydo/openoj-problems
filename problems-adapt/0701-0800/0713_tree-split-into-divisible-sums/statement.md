@@ -8,7 +8,7 @@ An undirected tree has `n` nodes labeled `0` to `n - 1`, given by the array
 integer `k`. The total of all values is a multiple of `k`.
 
 You may delete any set of tree edges — possibly none. A deletion set is
-*admissible* when every connected component left behind has a node-value sum
+_admissible_ when every connected component left behind has a node-value sum
 divisible by `k`.
 
 Return the largest number of components an admissible deletion set can leave.

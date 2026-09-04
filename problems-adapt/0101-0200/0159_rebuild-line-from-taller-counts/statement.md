@@ -62,7 +62,7 @@ position.
 
 That invisibility says which end to work from. Handle people in decreasing order
 of height: at the moment you place someone, every person already placed reaches
-their height, so their count *is* the index they must sit at among those already
+their height, so their count _is_ the index they must sit at among those already
 placed. Slot them in there and move on.
 
 ### Hint 3

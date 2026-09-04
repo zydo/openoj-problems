@@ -25,7 +25,7 @@ class Solution {
                 // still unserved — workers are interchangeable — so only
                 // submasks holding that bit are distinct choices.
                 long best = total;
-                for (int sub = rest;; sub = (sub - 1) & rest) {
+                for (int sub = rest; ; sub = (sub - 1) & rest) {
                     // The newcomer carries sub; everything else was already
                     // solved on one fewer worker. The worse side of the pair
                     // is the finished assignment's maximum load.

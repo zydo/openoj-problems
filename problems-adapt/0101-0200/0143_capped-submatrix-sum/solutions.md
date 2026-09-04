@@ -5,7 +5,7 @@ last column. The cap — "largest total not exceeding `k`", with negative
 values in play — is what forbids any clever maximum-subarray shortcut, so
 both solutions end up considering blocks by their coordinates. They part
 ways on how much of that consideration they make explicit. The honest one
-builds a two-dimensional prefix table and then visits *every* block,
+builds a two-dimensional prefix table and then visits _every_ block,
 reading each total in constant time from four table corners — no insight
 about rows or columns, just complete coverage. The clever one enumerates
 only the row pairs, collapses each band to a one-dimensional array, and

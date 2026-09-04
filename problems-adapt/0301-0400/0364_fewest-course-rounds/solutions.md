@@ -6,7 +6,7 @@ Give every course a depth: zero when nothing precedes it, otherwise one past the
 
 Two arrays carry the state. `adjacency[a]` lists the courses that `a` unlocks, and `indegree[b]` counts how many prerequisites `b` is still waiting on; both are filled by one pass over `precedence`. Every course whose count is already zero seeds the queue — that is the opening round.
 
-The outer loop is where the layering happens. Record how many entries the queue holds right now, then pop exactly that many: those are the courses of the current round, and any successor whose count falls to zero while they are popped belongs to the *next* round, not this one. Reading the length up front is the whole trick; popping until the queue empties would count courses instead of rounds. One increment of the round counter per outer pass gives the schedule length.
+The outer loop is where the layering happens. Record how many entries the queue holds right now, then pop exactly that many: those are the courses of the current round, and any successor whose count falls to zero while they are popped belongs to the _next_ round, not this one. Reading the length up front is the whole trick; popping until the queue empties would count courses instead of rounds. One increment of the round counter per outer pass gives the schedule length.
 
 A cycle never lets its members reach zero, so they are never enqueued, the queue runs dry early, and the tally of popped courses stops short of `n`. That shortfall is the signal to return `-1`. Otherwise every course was popped once and the round counter is the answer.
 

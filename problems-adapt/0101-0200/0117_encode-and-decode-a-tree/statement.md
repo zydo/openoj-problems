@@ -62,7 +62,7 @@ trees whose lower levels are mostly empty?
 ### Hint 1
 
 A rendering pins the tree down only if it also says where children are
-*missing*. Reserve a marker token for an empty child slot and give every
+_missing_. Reserve a marker token for an empty child slot and give every
 child position of every real node exactly one token; the missing positions
 of marker tokens themselves cost nothing, since a marker has no children to
 describe.

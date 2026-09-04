@@ -1,4 +1,10 @@
-function leastRewriteCost(source: string, target: string, original: string[], changed: string[], cost: number[]): number {
+function leastRewriteCost(
+    source: string,
+    target: string,
+    original: string[],
+    changed: string[],
+    cost: number[],
+): number {
     // A conversion rule is a directed edge in the 26-letter cost graph;
     // the cheapest a->b conversion is the shortest path a->b.
     const INF = Infinity;

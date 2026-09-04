@@ -1,4 +1,6 @@
 import heapq
+
+
 class Solution:
     def reachableCellsPerQuery(self, grid: list[list[int]], queries: list[int]) -> list[int]:
         m, n = len(grid), len(grid[0])

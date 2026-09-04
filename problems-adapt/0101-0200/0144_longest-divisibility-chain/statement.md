@@ -3,7 +3,7 @@
 ## Description
 
 `nums` holds distinct positive integers. Choose as many of them as you can
-subject to one rule: any two chosen values must be *compatible*, meaning one of
+subject to one rule: any two chosen values must be _compatible_, meaning one of
 the two is a multiple of the other. Return the values you chose.
 
 Written out, for every pair `x`, `y` taken from your answer, at least one of

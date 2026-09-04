@@ -44,10 +44,11 @@ impl MovieRentalDesk {
             desk.price.insert((shop, movie), price);
             desk.serial += 1;
             desk.unrented_token.insert((shop, movie), desk.serial);
-            desk.unrented
-                .entry(movie)
-                .or_default()
-                .push(Reverse(ShelfEntry { price, shop, token: desk.serial }));
+            desk.unrented.entry(movie).or_default().push(Reverse(ShelfEntry {
+                price,
+                shop,
+                token: desk.serial,
+            }));
         }
         desk
     }
@@ -58,11 +59,11 @@ impl MovieRentalDesk {
         if let Some(shelf) = self.unrented.get_mut(&movie) {
             while let Some(Reverse(entry)) = shelf.pop() {
                 if result.len() == 5 {
-                    kept.push(Reverse(entry));  // untouched: put it back below
+                    kept.push(Reverse(entry)); // untouched: put it back below
                     break;
                 }
                 if self.unrented_token.get(&(entry.shop, movie)) != Some(&entry.token) {
-                    continue;  // stale entry from a rent/handBack cycle
+                    continue; // stale entry from a rent/handBack cycle
                 }
                 result.push(entry.shop);
                 kept.push(Reverse(entry));
@@ -79,7 +80,12 @@ impl MovieRentalDesk {
         self.serial += 1;
         self.rented_token.insert((shop, movie), self.serial);
         let price = self.price[&(shop, movie)];
-        self.rented.push(Reverse(RentedEntry { price, shop, movie, token: self.serial }));
+        self.rented.push(Reverse(RentedEntry {
+            price,
+            shop,
+            movie,
+            token: self.serial,
+        }));
     }
 
     pub fn handBack(&mut self, shop: i32, movie: i32) {
@@ -87,10 +93,11 @@ impl MovieRentalDesk {
         self.serial += 1;
         self.unrented_token.insert((shop, movie), self.serial);
         let price = self.price[&(shop, movie)];
-        self.unrented
-            .entry(movie)
-            .or_default()
-            .push(Reverse(ShelfEntry { price, shop, token: self.serial }));
+        self.unrented.entry(movie).or_default().push(Reverse(ShelfEntry {
+            price,
+            shop,
+            token: self.serial,
+        }));
     }
 
     pub fn report(&mut self) -> Vec<Vec<i32>> {

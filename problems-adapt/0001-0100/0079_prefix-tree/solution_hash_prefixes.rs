@@ -9,7 +9,10 @@ pub struct PrefixTree {
 
 impl PrefixTree {
     pub fn new() -> Self {
-        PrefixTree { words: HashSet::new(), prefixes: HashSet::new() }
+        PrefixTree {
+            words: HashSet::new(),
+            prefixes: HashSet::new(),
+        }
     }
 
     pub fn insert(&mut self, word: String) {

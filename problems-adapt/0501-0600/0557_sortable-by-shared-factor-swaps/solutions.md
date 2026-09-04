@@ -15,7 +15,7 @@ Factoring everything naively would be slow, so a sieve first records the
 smallest prime factor `spf[v]` of every `v` up to the bound `M = 100001`;
 splitting a value into its distinct primes is then a few divisions. The
 forest uses path halving, keeping finds near-constant amortized. Indexing
-the structure by *value* rather than position is what makes repeated values
+the structure by _value_ rather than position is what makes repeated values
 share their component for free, wherever they sit.
 
 With components in hand, the verdict is a position-by-position comparison

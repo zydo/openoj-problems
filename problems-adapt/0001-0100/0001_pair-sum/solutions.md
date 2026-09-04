@@ -42,7 +42,7 @@ keyed by value answers it in expected constant time, so the quadratic scan
 collapses to one sweep.
 
 The code walks `nums` with `enumerate`. At each position it computes the
-complement and looks it up in `seen` *before* recording the current value. That
+complement and looks it up in `seen` _before_ recording the current value. That
 order is what enforces the no-self-pairing rule: the current position is not in
 the map yet when its own complement is checked, so it cannot match itself, and
 the two positions returned are necessarily different.

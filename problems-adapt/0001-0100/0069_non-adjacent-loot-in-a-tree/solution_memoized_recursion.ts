@@ -28,9 +28,7 @@ function maxNonAdjacentLoot(root: TreeNode | null): number {
             return skipMap.get(node)!;
         }
         // Each child keeps its better option.
-        const best =
-            Math.max(take(node.left), skip(node.left)) +
-            Math.max(take(node.right), skip(node.right));
+        const best = Math.max(take(node.left), skip(node.left)) + Math.max(take(node.right), skip(node.right));
         skipMap.set(node, best);
         return best;
     };

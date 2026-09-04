@@ -16,8 +16,7 @@ every legal partner gives
 `ways[i] = Σ_j ways[j] · ways[i-1-j]`, anchored by `ways[0] = 1` — an
 empty arc admits exactly one arrangement, the empty one. This is the
 Catalan recurrence in the wild; `ways[i]` is the `i`-th Catalan number,
-which is why six people already reach five layouts and eighteen reach
-4862.
+which is why six people already reach five layouts and eighteen reach 4862.
 
 ![Six people on a circle: person 1's chord to person 2 leaves one arc, a chord to person 4 splits two and two.](figures/solution-handshake-split.svg)
 

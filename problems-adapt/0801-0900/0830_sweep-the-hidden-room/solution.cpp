@@ -1,8 +1,8 @@
 class Sweeper;
 
 class Solution {
-public:
-    void sweepRoom(Sweeper& sweeper) {
+  public:
+    void sweepRoom(Sweeper &sweeper) {
         const int dirs[4][2] = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}}; // up, right, down, left
         std::set<std::pair<int, int>> visited;
         visited.insert({0, 0});

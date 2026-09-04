@@ -17,7 +17,7 @@ Scanning the window naively is quadratic, but the window
 `[ceil(i/2), i]` only slides forward as `i` grows, which is exactly the
 shape a monotonic deque serves. Sweep `i` upward: push `i` as a fresh
 candidate with value `dp[i - 1] + prices[i]`, first popping from the back
-every stored candidate whose value is at least as large (it is older *and*
+every stored candidate whose value is at least as large (it is older _and_
 no cheaper, so it can never win a future minimum); then pop from the front
 any candidate whose index has slipped below `ceil(i/2)`; the front now
 holds the window minimum, and `dp[i]` takes it directly.

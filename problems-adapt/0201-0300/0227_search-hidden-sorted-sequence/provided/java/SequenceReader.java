@@ -7,6 +7,7 @@ import java.util.List;
  * an unambiguous out-of-range sentinel. Solvers see only the public API
  * documented in the starter. */
 public class SequenceReader {
+
     public static final int SENTINEL = Integer.MAX_VALUE;
     private final int[] arr;
     private long budget;

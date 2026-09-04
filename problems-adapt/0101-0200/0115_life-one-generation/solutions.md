@@ -1,7 +1,7 @@
 # Solutions — Life, One Generation
 
 Both variants turn on the same difficulty: a cell's next state must be decided
-from the *old* states of its neighbours, yet the answer has to end up in the
+from the _old_ states of its neighbours, yet the answer has to end up in the
 same board. Each walks every cell, counts live neighbours among the eight
 surroundings with bounds checks (off-board cells are dead), applies the
 survival test — alive with 2 or 3 live neighbours stays alive — and the birth

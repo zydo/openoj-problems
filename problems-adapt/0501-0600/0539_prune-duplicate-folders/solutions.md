@@ -18,7 +18,7 @@ post-order in which each child owns a signature before its parent looks for
 one. A `sig_counts` tally records how many nodes carry each signature, and
 marking follows one rule: a node with at least one child whose signature
 occurs twice or more is a duplicate, and its whole subtree is marked.
-Leaf folders are exempt by design — the definition demands a *non-empty*
+Leaf folders are exempt by design — the definition demands a _non-empty_
 matching set of subfolders — which is why the test requires
 `node["children"]` to be non-empty. Identical leaves still vanish in
 Example 1, but only because their parents were marked, never on their own

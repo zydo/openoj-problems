@@ -13,7 +13,7 @@ into a frequency table over the handful of values that survive.
 The heart is a 0/1-knapsack over masks. Let `dp[mask]` count the ways to
 pick positions whose product uses exactly the prime set `mask`. Process one
 value at a time — say it has frequency `f` and prime mask `m` — sweeping
-existing states in *decreasing* mask order so the value cannot be picked
+existing states in _decreasing_ mask order so the value cannot be picked
 twice within one choice. A state `prev` with `prev & m == 0` (no shared
 prime) flows into `prev | m`, weighted by `f`: each of the `f`
 interchangeable copies is its own pick. The value 1 has an empty mask and

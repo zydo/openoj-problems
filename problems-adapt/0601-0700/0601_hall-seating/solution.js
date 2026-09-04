@@ -51,8 +51,7 @@ class HallSeating {
             return this.sums[node];
         }
         const mid = (lo + hi) >>> 1;
-        return this.rangeSum(2 * node, lo, mid, left, right)
-            + this.rangeSum(2 * node + 1, mid + 1, hi, left, right);
+        return this.rangeSum(2 * node, lo, mid, left, right) + this.rangeSum(2 * node + 1, mid + 1, hi, left, right);
     }
 
     // Smallest index in [left, right] with remaining >= k, or -1.

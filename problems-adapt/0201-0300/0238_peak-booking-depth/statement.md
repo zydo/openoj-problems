@@ -5,7 +5,7 @@
 A reservation occupies the half-open span `[start, end)`: it holds every
 instant from `start` onwards but lets go of `end` itself. Reservations are
 never turned away — they simply pile up, and at any instant some number of
-them are live at once. The *depth* of a calendar is the largest such number
+them are live at once. The _depth_ of a calendar is the largest such number
 over all instants.
 
 Implement the `BookingDepth` class:

@@ -53,7 +53,7 @@ Explanation: The distinct valid numerals are "0", "1", "10", "11", "101",
 
 Subsequences taken from different positions can spell the very same string.
 What matters about a subsequence here is only the numeral it spells, so ask
-how many distinct *values* are reachable.
+how many distinct _values_ are reachable.
 
 ### Hint 2
 

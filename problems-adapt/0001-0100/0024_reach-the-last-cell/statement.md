@@ -47,7 +47,7 @@ Explanation: The first cell is also the last, so no move is needed.
 ### Hint 1
 
 Listing move sequences explodes combinatorially, but the question you actually
-need answered at each cell is smaller: *can I stand here at all?*
+need answered at each cell is smaller: _can I stand here at all?_
 
 ### Hint 2
 

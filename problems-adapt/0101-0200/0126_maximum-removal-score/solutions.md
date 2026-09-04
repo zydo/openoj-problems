@@ -31,8 +31,8 @@ Take Example 1, `nums = [4,2,7,3]`, padded to `[1,4,2,7,3,1]` (positions `0` to
 `5`):
 
 1. Width one, a lone entry between its padded neighbours: `best[0][2] = 1·4·2 =
-   8`, `best[1][3] = 4·2·7 = 56`, `best[2][4] = 2·7·3 = 42`, `best[3][5] =
-   7·3·1 = 21`.
+8`, `best[1][3] = 4·2·7 = 56`, `best[2][4] = 2·7·3 = 42`, `best[3][5] =
+7·3·1 = 21`.
 2. Width two: `best[0][3]` picks 2 last (`1·2·7 + best[0][2] = 14 + 8 = 22`) or
    4 last (`1·4·7 + best[1][3] = 28 + 56 = 84`) — 84 wins. Likewise
    `best[1][4] = 4·7·3 + best[1][3] = 84 + 56 = 140` with 7 last, and

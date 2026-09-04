@@ -5,7 +5,7 @@
 Read the input as the root of a search tree: the children of a string are all
 the strings reached by deleting one bracket, letters being untouchable. A
 level-order walk meets strings grouped by how many characters they have lost,
-so the shallowest level holding anything balanced holds *exactly* the answers —
+so the shallowest level holding anything balanced holds _exactly_ the answers —
 the depth does the minimality proof, and no deletion count has to be computed
 in advance.
 

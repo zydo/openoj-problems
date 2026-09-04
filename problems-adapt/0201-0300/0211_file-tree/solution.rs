@@ -11,7 +11,11 @@ struct FileNode {
 
 impl FileNode {
     fn directory() -> Self {
-        FileNode { children: BTreeMap::new(), content: String::new(), file: false }
+        FileNode {
+            children: BTreeMap::new(),
+            content: String::new(),
+            file: false,
+        }
     }
 }
 
@@ -25,7 +29,9 @@ fn split_path(path: &str) -> Vec<&str> {
 
 impl FileTree {
     pub fn new() -> Self {
-        FileTree { root: FileNode::directory() }
+        FileTree {
+            root: FileNode::directory(),
+        }
     }
 
     pub fn ls(&mut self, path: String) -> Vec<String> {
@@ -45,7 +51,10 @@ impl FileTree {
         let mut node = &mut self.root;
         for part in split_path(&path) {
             // Inserting each missing component also creates the middle dirs.
-            node = node.children.entry(part.to_string()).or_insert_with(FileNode::directory);
+            node = node
+                .children
+                .entry(part.to_string())
+                .or_insert_with(FileNode::directory);
         }
     }
 
@@ -59,7 +68,11 @@ impl FileTree {
         let file = node
             .children
             .entry(parts[parts.len() - 1].to_string())
-            .or_insert_with(|| FileNode { children: BTreeMap::new(), content: String::new(), file: true });
+            .or_insert_with(|| FileNode {
+                children: BTreeMap::new(),
+                content: String::new(),
+                file: true,
+            });
         file.file = true;
         file.content.push_str(&content);
     }

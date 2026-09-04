@@ -1,5 +1,7 @@
 class Solution:
-    def minimumLimitedRouteCost(self, nodeCount: int, links: list[list[int]], source: int, target: int, maxIntermediates: int) -> int:
+    def minimumLimitedRouteCost(
+        self, nodeCount: int, links: list[list[int]], source: int, target: int, maxIntermediates: int
+    ) -> int:
         INF = float("inf")
         # After r full rounds, dist[v] is the cheapest cost using at
         # most r edges; maxIntermediates internal nodes allow maxIntermediates+1 links, so run maxIntermediates+1 rounds.

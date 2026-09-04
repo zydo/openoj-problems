@@ -25,7 +25,7 @@ class Solution {
                 j--;
             }
             for (int jj = 0; jj <= j; jj++) {
-                below.add(new long[] {(long) nums1[i] + nums2[jj], i, jj});
+                below.add(new long[] { (long) nums1[i] + nums2[jj], i, jj });
             }
         }
         below.sort((a, b) -> {
@@ -35,7 +35,7 @@ class Solution {
         });
         List<int[]> pairs = new ArrayList<>();
         for (long[] e : below) {
-            pairs.add(new int[] {nums1[(int) e[1]], nums2[(int) e[2]]});
+            pairs.add(new int[] { nums1[(int) e[1]], nums2[(int) e[2]] });
         }
         // Top up with pairs exactly at the threshold, in (i, j) order —
         // the required tie-break among equal sums.
@@ -45,7 +45,7 @@ class Solution {
             int loJ = lowerBound(nums2, target);
             int hiJ = lowerBound(nums2, target + 1);
             for (int jj = loJ; jj < hiJ && needed > 0; jj++) {
-                pairs.add(new int[] {nums1[i], nums2[jj]});
+                pairs.add(new int[] { nums1[i], nums2[jj] });
                 needed--;
             }
         }
@@ -73,7 +73,8 @@ class Solution {
     }
 
     private int lowerBound(int[] values, long target) {
-        int lo = 0, hi = values.length;
+        int lo = 0,
+            hi = values.length;
         while (lo < hi) {
             int mid = (lo + hi) >>> 1;
             if (values[mid] < target) {

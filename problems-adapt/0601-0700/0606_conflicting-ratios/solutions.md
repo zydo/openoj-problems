@@ -17,7 +17,7 @@ both directions: `x`'s adjacency gains `(y, 1 / r)`, `y`'s gains
 `(x, r)`, so every entry carries the factor neighbor-over-name. A
 component the constraints leave consistent admits a full assignment of
 values, and fixing one name as the root — value 1 — pins down all the
-rest: `v / root` is the product of factors along *any* path, because
+rest: `v / root` is the product of factors along _any_ path, because
 with every cycle multiplying to 1 the route cannot matter. The code
 computes exactly that labelling: a plain queue seeded with an unvisited
 root carrying `1.0`, spreading ratios breadth-first, each dequeue

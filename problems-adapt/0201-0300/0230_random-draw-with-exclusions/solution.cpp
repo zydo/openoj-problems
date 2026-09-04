@@ -10,8 +10,7 @@ class RandomDrawWithExclusions {
     // the upper part [n - b, n). pick() then makes exactly one random call
     // over the compressed range and follows the remap — uniform over
     // exactly the allowed values.
-    RandomDrawWithExclusions(int n, std::vector<int> excluded)
-        : generator(std::random_device{}()) {
+    RandomDrawWithExclusions(int n, std::vector<int> excluded) : generator(std::random_device{}()) {
         std::unordered_set<int> blocked(excluded.begin(), excluded.end());
         size = (long long)n - (long long)blocked.size();
         long long free = size; // scans [size, n) for values that are not excluded

@@ -4,7 +4,7 @@
 
 Searching over cut positions directly means comparing arrangements of `k`
 cuts, of which there are exponentially many. The profitable reversal is to
-search over the *score* `t` and ask a yes/no question instead: can `nums`
+search over the _score_ `t` and ask a yes/no question instead: can `nums`
 be cut into `k + 1` pieces whose sums are all at least `t`? That predicate
 is monotone — lower it and every piece that cleared the old bar still clears
 the new one — so the wanted score is the largest passing `t`, and binary

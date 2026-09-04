@@ -44,11 +44,9 @@ struct RentedWorse {
 };
 
 // One physical copy — the movie at a shop — packed into a single key.
-long long pack(int shop, int movie) {
-    return shop * 100001LL + movie;
-}
+long long pack(int shop, int movie) { return shop * 100001LL + movie; }
 
-}  // namespace
+} // namespace
 
 class MovieRentalDesk {
   public:
@@ -77,7 +75,7 @@ class MovieRentalDesk {
             shelf.pop();
             auto live = unrentedToken_.find(pack(top.shop, movie));
             if (live == unrentedToken_.end() || live->second != top.token) {
-                continue;  // stale entry from a rent/handBack cycle
+                continue; // stale entry from a rent/handBack cycle
             }
             result.push_back(top.shop);
             kept.push_back(top);

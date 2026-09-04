@@ -41,8 +41,7 @@ impl Solution {
             // An earlier prefix e qualifies when lower <= p - e <= upper,
             // i.e. e lies in [p - upper, p - lower]; both bounds come off
             // the tree as rank-prefix counts.
-            count += (count_at_most(p - lower, &ranks, &tree)
-                - count_at_most(p - upper - 1, &ranks, &tree)) as i64;
+            count += (count_at_most(p - lower, &ranks, &tree) - count_at_most(p - upper - 1, &ranks, &tree)) as i64;
             // Insert only after querying, so a prefix never pairs itself.
             add(p, &ranks, &mut tree, m);
         }

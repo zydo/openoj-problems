@@ -44,7 +44,11 @@ impl SpreadSeating {
         let index = self.occupied.partition_point(|&seat| seat < p);
         self.occupied.remove(index);
         let previous = if index > 0 { self.occupied[index - 1] } else { -1 };
-        let next = if index < self.occupied.len() { self.occupied[index] } else { self.n };
+        let next = if index < self.occupied.len() {
+            self.occupied[index]
+        } else {
+            self.n
+        };
         self.live.remove(&(previous, p));
         self.live.remove(&(p, next));
         if !self.occupied.is_empty() && next - previous >= 2 {

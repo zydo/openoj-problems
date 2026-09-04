@@ -12,7 +12,7 @@ the first non-positive value ends the scan; and taking zero edges is always
 permitted, which is why the running answer is seeded with `max(vals)` rather
 than 0 — an all-negative graph must stay negative, as the lone `-8` node shows.
 
-The pass over the input builds adjacency lists that hold neighbor *values*
+The pass over the input builds adjacency lists that hold neighbor _values_
 directly, so the greedy never looks nodes up again. Each list is sorted in
 descending order, its helpful prefix of length at most `k` is added to the
 node's own value, and the largest total across all centers wins.

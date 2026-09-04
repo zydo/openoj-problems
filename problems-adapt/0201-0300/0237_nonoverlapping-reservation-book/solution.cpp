@@ -16,7 +16,7 @@ class ReservationBook {
                 high = mid;
             }
         }
-        int index = low - 1;  // last reservation with start <= start
+        int index = low - 1; // last reservation with start <= start
         // Half-open intervals: strict tests mean touching endpoints coexist.
         if (index >= 0 && ends[index] > start) {
             return false;

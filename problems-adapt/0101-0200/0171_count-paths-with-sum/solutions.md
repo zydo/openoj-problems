@@ -28,7 +28,7 @@ common downward chain. Withdrawing on the way out keeps the tally equal to
 exactly the ancestors of wherever the traversal currently is — precisely the set
 of legal upper ends.
 
-Two details keep it honest. The node registers its own total *after* its lookup,
+Two details keep it honest. The node registers its own total _after_ its lookup,
 so it never pairs with itself unless the target is `0`, which is the correct
 answer for a one-node chain of value `0`. And with a thousand nodes worth `10⁹`
 each, the running totals do not fit in 32 bits, so they are accumulated in a

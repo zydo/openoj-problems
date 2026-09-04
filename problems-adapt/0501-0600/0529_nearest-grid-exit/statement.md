@@ -7,7 +7,7 @@ walled (`'+'`), together with the `entrance` you start on, given as
 `[entrancerow, entrancecol]`.
 
 Each step moves one cell up, down, left, or right. You may not enter a
-walled cell or leave the grid. An *exit* is any open cell on the grid's
+walled cell or leave the grid. An _exit_ is any open cell on the grid's
 border; the entrance itself does not count, even when it sits on the border.
 
 Return the fewest number of steps needed to walk from the entrance to some

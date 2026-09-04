@@ -8,9 +8,9 @@ You are given an undirected tree rooted at node `0`, with `n` nodes numbered
 `lengthi`. The array `nums` gives the value sitting at each node: `nums[i]`
 is the value at node `i`.
 
-A *descent* is a path that starts at some node and follows edges downward to
+A _descent_ is a path that starts at some node and follows edges downward to
 one of its descendants; it may consist of a single node. A descent is
-*duplicate-free* when no value appears at two of its nodes.
+_duplicate-free_ when no value appears at two of its nodes.
 
 Among all duplicate-free descents, let `L` be the greatest total edge length.
 Return `[L, m]`, where `m` is the fewest nodes any duplicate-free descent of

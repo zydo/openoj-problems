@@ -14,7 +14,7 @@ relinks it at the fresh end: four pointer writes, no matter how large the cache
 is. `put` on a key already present does the same move and overwrites the value.
 `put` on a new key inserts a node at the fresh end, after making room if the map
 has reached `capacity` — the node just before the tail sentinel is the stalest,
-and the key stored *in that node* is what tells the map which entry to forget.
+and the key stored _in that node_ is what tells the map which entry to forget.
 That is why nodes carry their own key: the list hands back a node, and the map
 needs a key.
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-`words` holds distinct lowercase strings. Call one of them *compound* when its
+`words` holds distinct lowercase strings. Call one of them _compound_ when its
 letters can be produced by writing two or more entries of `words` one after
 another with nothing left over. Entries may be reused as often as you like, and
 since at least two are required, every piece is strictly shorter than the string

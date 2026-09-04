@@ -35,10 +35,7 @@ class Solution:
             # An earlier prefix e qualifies when lower <= p - e <= upper,
             # i.e. e lies in [p - upper, p - lower]; both bounds come off
             # the tree as rank-prefix counts.
-            count += (
-                count_upto(bisect_right(ranks, p - lower))
-                - count_upto(bisect_left(ranks, p - upper))
-            )
+            count += count_upto(bisect_right(ranks, p - lower)) - count_upto(bisect_left(ranks, p - upper))
             # Insert only after querying, so a prefix never pairs itself.
             add(bisect_left(ranks, p) + 1)
         return count

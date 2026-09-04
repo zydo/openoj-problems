@@ -33,7 +33,8 @@ class Solution {
 
     // First index whose value is >= wanted.
     private int lowerBound(int[] values, int wanted) {
-        int low = 0, high = values.length;
+        int low = 0,
+            high = values.length;
         while (low < high) {
             int mid = (low + high) >>> 1;
             if (values[mid] < wanted) {
@@ -47,7 +48,8 @@ class Solution {
 
     // First index whose value is > wanted.
     private int upperBound(int[] values, int wanted) {
-        int low = 0, high = values.length;
+        int low = 0,
+            high = values.length;
         while (low < high) {
             int mid = (low + high) >>> 1;
             if (values[mid] <= wanted) {

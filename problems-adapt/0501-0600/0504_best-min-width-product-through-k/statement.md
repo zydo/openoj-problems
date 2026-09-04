@@ -9,7 +9,7 @@ define its product as
 
 `min(nums[i], ..., nums[j]) * (j - i + 1)`,
 
-the smallest value it contains times its width. A window is *through k* when
+the smallest value it contains times its width. A window is _through k_ when
 `i <= k <= j`.
 
 Return the largest product of any window through `k`.

@@ -5,7 +5,7 @@
 Both requests want the opposite thing from the stored data. Raw cells make a
 write free and a question cost the rectangle's area; corner-anchored totals
 make a question four lookups and a write an `O(m · n)` rebuild. The Fenwick
-compromise stores totals of overlapping *pieces*, chosen so that any
+compromise stores totals of overlapping _pieces_, chosen so that any
 corner-anchored region is the union of few pieces and any single cell lies in
 few pieces. In one dimension the pieces are blocks of power-of-two length; in
 two dimensions the same idea is applied along both axes at once.

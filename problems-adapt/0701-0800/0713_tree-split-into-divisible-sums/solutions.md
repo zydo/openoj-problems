@@ -7,7 +7,7 @@ subtree's sum first becomes a multiple of `k`, cut the edge joining it to its
 parent. This greedy choice is safe for an exchange reason: the grand total is
 a multiple of `k` by assumption, so removing a multiple-of-`k` subtree leaves
 a multiple-of-`k` remainder — both sides stay admissible — while a subtree
-whose sum is *not* a multiple can never be separated from its parent in any
+whose sum is _not_ a multiple can never be separated from its parent in any
 admissible split, since every component must stand on its own. Cutting every
 divisible subtree therefore forecloses nothing and adds a component each
 time.

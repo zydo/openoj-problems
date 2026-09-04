@@ -85,7 +85,7 @@ right mix.
 ### Hint 2
 
 Quotas alone leak. A hydrogen thread that emits and hands back its permit at
-once lets the *next* molecule's hydrogen start before this molecule's oxygen
+once lets the _next_ molecule's hydrogen start before this molecule's oxygen
 has emitted — splitting a group across the boundary. The three threads must
 depart together, and a three-party barrier that resets after each trip
 does exactly that.

@@ -52,7 +52,7 @@ The score is 12 + 6 - 1 + 15 + 35 = 67. The -2 in the middle is never touched.
 
 ### Hint 1
 
-Deleting the end that pays more *right now* is not always right — a later,
+Deleting the end that pays more _right now_ is not always right — a later,
 possibly negative weight can make the other end worth waiting for.
 
 ### Hint 2

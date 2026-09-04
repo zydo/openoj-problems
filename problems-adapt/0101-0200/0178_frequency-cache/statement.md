@@ -3,7 +3,7 @@
 ## Description
 
 Build a fixed-size key-value store that, when it runs out of room, discards
-the key that has been *used least often* — and among keys used equally
+the key that has been _used least often_ — and among keys used equally
 often, the one used longest ago.
 
 Implement the `FrequencyCache` class:
@@ -12,7 +12,7 @@ Implement the `FrequencyCache` class:
 - `int get(int key)` — return the stored value for `key`, or `-1` if the
   cache does not hold it.
 - `void put(int key, int value)` — store `value` under `key`, replacing any
-  value already there. If storing a *new* key would exceed `capacity`, first
+  value already there. If storing a _new_ key would exceed `capacity`, first
   discard the victim described above.
 
 Every key carries a use counter. A fresh insert sets it to `1`, and each
@@ -113,4 +113,3 @@ Fresh inserts land in the count-one group, starting it at the front when
 needed; eviction removes the oldest member of the first group. Route hits,
 value replacements, and new inserts through the same bump routine and the
 three operations collapse into one code path.
-

@@ -63,14 +63,11 @@ impl HallSeating {
             return self.sums[node];
         }
         let mid = (lo + hi) / 2;
-        self.rangeSum(2 * node, lo, mid, left, right)
-            + self.rangeSum(2 * node + 1, mid + 1, hi, left, right)
+        self.rangeSum(2 * node, lo, mid, left, right) + self.rangeSum(2 * node + 1, mid + 1, hi, left, right)
     }
 
     // Smallest index in [left, right] with remaining >= k, or None.
-    fn firstAtLeast(
-        &self, node: usize, lo: usize, hi: usize, left: usize, right: usize, k: i32,
-    ) -> Option<usize> {
+    fn firstAtLeast(&self, node: usize, lo: usize, hi: usize, left: usize, right: usize, k: i32) -> Option<usize> {
         if right < lo || hi < left || self.maxs[node] < k {
             return None;
         }

@@ -5,7 +5,7 @@
 Ask what round a particular cell is reached in and the answer is its distance,
 in edge steps, to the closest already-reached cell — a shortest-path number on
 an unweighted grid. The whole problem asks for the largest of those numbers, so
-one breadth-first search that starts from *all* the `2` cells at once settles
+one breadth-first search that starts from _all_ the `2` cells at once settles
 every cell in a single pass. The opening scan therefore does two jobs: it
 pushes each `2` cell into the queue stamped `0`, and it tallies how many `1`
 cells exist so that unreachable ones can be spotted afterwards.

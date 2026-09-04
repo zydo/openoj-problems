@@ -6,7 +6,11 @@ pub struct BottomBoostStack {
 
 impl BottomBoostStack {
     pub fn new(max_size: i32) -> Self {
-        BottomBoostStack { values: Vec::new(), pending: Vec::new(), max_size: max_size as usize }
+        BottomBoostStack {
+            values: Vec::new(),
+            pending: Vec::new(),
+            max_size: max_size as usize,
+        }
     }
 
     pub fn push(&mut self, x: i32) {

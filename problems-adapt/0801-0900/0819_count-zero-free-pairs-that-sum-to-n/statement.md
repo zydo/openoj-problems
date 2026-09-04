@@ -2,7 +2,7 @@
 
 ## Description
 
-A positive integer is *zero-free* when the digit `0` appears nowhere in its
+A positive integer is _zero-free_ when the digit `0` appears nowhere in its
 decimal representation: `7`, `24`, and `915` are zero-free, while `30`, `406`,
 and `1002` are not.
 
