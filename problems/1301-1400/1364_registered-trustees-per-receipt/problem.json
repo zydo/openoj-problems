@@ -4,10 +4,13 @@
   "id": 1364,
   "slug": "registered-trustees-per-receipt",
   "title": "Registered Trustees per Receipt",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

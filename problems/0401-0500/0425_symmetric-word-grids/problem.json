@@ -4,8 +4,14 @@
   "id": 425,
   "slug": "symmetric-word-grids",
   "title": "Symmetric Word Grids",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Backtracking",
+    "Trie"
+  ],
+  "topics": [
+    "Array",
+    "String",
     "Backtracking",
     "Trie"
   ],

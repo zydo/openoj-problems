@@ -4,10 +4,15 @@
   "id": 3354,
   "slug": "walks-that-empty-the-row",
   "title": "Walks That Empty The Row",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Simulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

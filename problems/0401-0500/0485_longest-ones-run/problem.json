@@ -4,8 +4,11 @@
   "id": 485,
   "slug": "longest-ones-run",
   "title": "Longest Ones Run",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

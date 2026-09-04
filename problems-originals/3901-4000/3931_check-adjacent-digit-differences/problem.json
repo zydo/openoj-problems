@@ -4,8 +4,11 @@
   "id": 3931,
   "slug": "check-adjacent-digit-differences",
   "title": "Check Adjacent Digit Differences",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

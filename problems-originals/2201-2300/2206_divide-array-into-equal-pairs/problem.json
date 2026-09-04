@@ -4,8 +4,14 @@
   "id": 2206,
   "slug": "divide-array-into-equal-pairs",
   "title": "Divide Array Into Equal Pairs",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

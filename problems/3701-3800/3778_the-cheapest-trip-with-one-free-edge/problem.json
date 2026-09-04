@@ -4,10 +4,14 @@
   "id": 3778,
   "slug": "the-cheapest-trip-with-one-free-edge",
   "title": "The Cheapest Trip With One Free Edge",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Heap",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Graph Theory",
     "Shortest Path"
   ],
   "invocation": {

@@ -4,10 +4,16 @@
   "id": 459,
   "slug": "repeated-block-pattern",
   "title": "Repeated-Block Pattern",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "String Matching"
+  ],
+  "topics": [
+    "String",
+    "String Matching",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm"
   ],
   "invocation": {
     "type": "function",

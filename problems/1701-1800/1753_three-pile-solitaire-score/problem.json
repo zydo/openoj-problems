@@ -4,10 +4,15 @@
   "id": 1753,
   "slug": "three-pile-solitaire-score",
   "title": "Three-Pile Solitaire Score",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Greedy"
+  ],
+  "topics": [
+    "Math",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 3392,
   "slug": "count-subarrays-of-length-three-with-a-condition",
   "title": "Count Subarrays of Length Three With a Condition",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

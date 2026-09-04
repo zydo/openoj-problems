@@ -3,11 +3,20 @@
   "id": 862,
   "slug": "shortest-subarray-with-sum-at-least-k",
   "title": "Shortest Subarray with Sum at Least K",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Prefix Sum",
     "Monotonic Queue",
     "Deque"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Prefix Sum",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

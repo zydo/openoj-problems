@@ -4,8 +4,12 @@
   "id": 1672,
   "slug": "richest-customer-wealth",
   "title": "Richest Customer Wealth",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

@@ -3,11 +3,17 @@
   "id": 2313,
   "slug": "minimum-flips-in-binary-tree-to-get-result",
   "title": "Minimum Flips in Binary Tree to Get Result",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Binary Tree",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

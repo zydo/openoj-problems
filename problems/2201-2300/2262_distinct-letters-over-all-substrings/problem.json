@@ -4,8 +4,13 @@
   "id": 2262,
   "slug": "distinct-letters-over-all-substrings",
   "title": "Distinct Letters Over All Substrings",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming"

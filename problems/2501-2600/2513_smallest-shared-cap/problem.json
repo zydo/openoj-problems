@@ -4,11 +4,18 @@
   "id": 2513,
   "slug": "smallest-shared-cap",
   "title": "Smallest Shared Cap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Binary Search",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Binary Search",
+    "Number Theory",
+    "Least Common Multiple",
+    "Inclusion-Exclusion Principle"
   ],
   "invocation": {
     "type": "function",

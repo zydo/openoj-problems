@@ -4,11 +4,16 @@
   "id": 4002,
   "slug": "count-even-product-compositions",
   "title": "Count Even-Product Compositions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Combinatorics",
     "Number Theory"
+  ],
+  "topics": [
+    "Combinatorics",
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

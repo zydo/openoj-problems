@@ -4,12 +4,18 @@
   "id": 502,
   "slug": "most-capital-from-k-projects",
   "title": "Most Capital From k Projects",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

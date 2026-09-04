@@ -4,8 +4,12 @@
   "id": 1528,
   "slug": "rebuild-a-scattered-string",
   "title": "Rebuild a Scattered String",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

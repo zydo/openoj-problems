@@ -4,8 +4,11 @@
   "id": 2754,
   "slug": "bind-function-to-context",
   "title": "Bind Function to Context",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

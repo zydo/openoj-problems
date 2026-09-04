@@ -4,8 +4,12 @@
   "id": 2535,
   "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
   "title": "Difference Between Element Sum and Digit Sum of an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

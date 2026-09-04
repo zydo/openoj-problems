@@ -4,8 +4,11 @@
   "id": 1303,
   "slug": "find-the-team-size",
   "title": "Find the Team Size",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

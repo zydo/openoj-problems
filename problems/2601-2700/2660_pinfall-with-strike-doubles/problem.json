@@ -4,8 +4,12 @@
   "id": 2660,
   "slug": "pinfall-with-strike-doubles",
   "title": "Pinfall With Strike Doubles",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

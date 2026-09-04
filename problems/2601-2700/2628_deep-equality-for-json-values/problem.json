@@ -4,10 +4,13 @@
   "id": 2628,
   "slug": "deep-equality-for-json-values",
   "title": "Deep Equality For JSON Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Recursion"
   ],
   "invocation": {
     "type": "interactive",

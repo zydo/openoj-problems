@@ -4,8 +4,11 @@
   "id": 201,
   "slug": "common-prefix-bits",
   "title": "Common Prefix Bits",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

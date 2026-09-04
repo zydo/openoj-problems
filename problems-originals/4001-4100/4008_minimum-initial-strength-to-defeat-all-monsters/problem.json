@@ -4,8 +4,14 @@
   "id": 4008,
   "slug": "minimum-initial-strength-to-defeat-all-monsters",
   "title": "Minimum Initial Strength to Defeat All Monsters",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Array",
+    "Prefix Sum",
+    "Binary Search",
+    "Greedy"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

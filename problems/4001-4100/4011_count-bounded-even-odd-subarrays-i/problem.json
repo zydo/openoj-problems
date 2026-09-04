@@ -4,10 +4,14 @@
   "id": 4011,
   "slug": "count-bounded-even-odd-subarrays-i",
   "title": "Count Bounded Even-Odd Subarrays I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Math",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

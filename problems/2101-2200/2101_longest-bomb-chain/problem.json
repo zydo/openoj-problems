@@ -4,8 +4,16 @@
   "id": 2101,
   "slug": "longest-bomb-chain",
   "title": "Longest Bomb Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Depth-First Search",
     "Breadth-First Search",
     "Graph Theory",

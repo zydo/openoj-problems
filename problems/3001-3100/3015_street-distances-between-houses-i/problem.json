@@ -4,10 +4,15 @@
   "id": 3015,
   "slug": "street-distances-between-houses-i",
   "title": "Street Distances Between Houses I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph Theory",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Breadth-First Search",
+    "Graph Theory",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

@@ -4,9 +4,16 @@
   "id": 2968,
   "slug": "the-most-elements-k-tweaks-can-unify",
   "title": "The Most Elements k Tweaks Can Unify",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
     "Sliding Window",
     "Sorting",
     "Prefix Sum"

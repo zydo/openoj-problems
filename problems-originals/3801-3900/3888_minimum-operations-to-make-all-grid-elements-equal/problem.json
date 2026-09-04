@@ -4,8 +4,14 @@
   "id": 3888,
   "slug": "minimum-operations-to-make-all-grid-elements-equal",
   "title": "Minimum Operations to Make All Grid Elements Equal",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Matrix",

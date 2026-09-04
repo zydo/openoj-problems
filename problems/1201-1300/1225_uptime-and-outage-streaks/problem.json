@@ -4,10 +4,13 @@
   "id": 1225,
   "slug": "uptime-and-outage-streaks",
   "title": "Uptime and Outage Streaks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

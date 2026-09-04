@@ -4,8 +4,14 @@
   "id": 853,
   "slug": "arrival-groups-without-passing",
   "title": "Arrival Groups Without Passing",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Sorting",

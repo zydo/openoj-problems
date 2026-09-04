@@ -4,10 +4,16 @@
   "id": 2015,
   "slug": "street-height-profile",
   "title": "Street Height Profile",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Prefix Sum"
   ],
   "invocation": {

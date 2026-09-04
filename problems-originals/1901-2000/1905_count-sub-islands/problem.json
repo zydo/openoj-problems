@@ -3,13 +3,20 @@
   "id": 1905,
   "slug": "count-sub-islands",
   "title": "Count Sub Islands",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Matrix",
     "Depth-First Search",
     "Breadth-First Search",
     "Union Find"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

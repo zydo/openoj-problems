@@ -4,8 +4,14 @@
   "id": 1833,
   "slug": "how-many-bars-the-budget-buys",
   "title": "How Many Bars the Budget Buys",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

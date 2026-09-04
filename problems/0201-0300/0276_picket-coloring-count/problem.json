@@ -4,10 +4,13 @@
   "id": 276,
   "slug": "picket-coloring-count",
   "title": "Picket Coloring Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Math"
+  ],
+  "topics": [
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

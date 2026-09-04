@@ -4,8 +4,13 @@
   "id": 3467,
   "slug": "transform-array-by-parity",
   "title": "Transform Array by Parity",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Counting"

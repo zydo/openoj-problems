@@ -3,12 +3,18 @@
   "id": 1230,
   "slug": "toss-strange-coins",
   "title": "Toss Strange Coins",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
     "Probability"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Probability and Statistics"
   ],
   "invocation": {
     "type": "function",

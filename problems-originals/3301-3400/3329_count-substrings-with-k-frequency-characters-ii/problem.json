@@ -4,8 +4,13 @@
   "id": 3329,
   "slug": "count-substrings-with-k-frequency-characters-ii",
   "title": "Count Substrings With K-Frequency Characters II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

@@ -4,11 +4,21 @@
   "id": 1686,
   "slug": "stone-draft-with-rival-values",
   "title": "Stone Draft with Rival Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Sorting",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Minimax",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Game Theory",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

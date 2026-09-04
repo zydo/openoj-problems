@@ -4,8 +4,14 @@
   "id": 49,
   "slug": "group-words-by-letters",
   "title": "Group Words By Letters",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

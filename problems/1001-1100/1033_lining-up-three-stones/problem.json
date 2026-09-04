@@ -4,8 +4,12 @@
   "id": 1033,
   "slug": "lining-up-three-stones",
   "title": "Lining Up Three Stones",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "topics": [
     "Math",
     "Brainteaser"
   ],

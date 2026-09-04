@@ -4,8 +4,13 @@
   "id": 3509,
   "slug": "maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k",
   "title": "Maximum Product of Subsequences With an Alternating Sum Equal to K",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

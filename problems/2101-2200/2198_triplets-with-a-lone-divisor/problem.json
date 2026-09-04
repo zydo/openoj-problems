@@ -4,8 +4,13 @@
   "id": 2198,
   "slug": "triplets-with-a-lone-divisor",
   "title": "Triplets With A Lone Divisor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Counting",
     "Enumeration"

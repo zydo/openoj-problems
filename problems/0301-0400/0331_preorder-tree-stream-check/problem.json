@@ -4,9 +4,15 @@
   "id": 331,
   "slug": "preorder-tree-stream-check",
   "title": "Preorder Tree Stream Check",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
+    "String",
+    "Stack",
     "Tree",
     "Binary Tree"
   ],

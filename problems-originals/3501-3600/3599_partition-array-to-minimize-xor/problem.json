@@ -4,8 +4,14 @@
   "id": 3599,
   "slug": "partition-array-to-minimize-xor",
   "title": "Partition Array to Minimize XOR",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

@@ -4,8 +4,11 @@
   "id": 868,
   "slug": "binary-gap",
   "title": "Binary Gap",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

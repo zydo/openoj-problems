@@ -3,7 +3,7 @@
   "id": 399,
   "slug": "evaluate-division",
   "title": "Evaluate Division",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
@@ -11,6 +11,17 @@
     "Breadth-First Search",
     "Union-Find",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Shortest Path",
+    "Bellman–Ford Algorithm",
+    "Floyd–Warshall Algorithm"
   ],
   "invocation": {
     "type": "function",

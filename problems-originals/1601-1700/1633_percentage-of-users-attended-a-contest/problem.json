@@ -4,8 +4,11 @@
   "id": 1633,
   "slug": "percentage-of-users-attended-a-contest",
   "title": "Percentage of Users Attended a Contest",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

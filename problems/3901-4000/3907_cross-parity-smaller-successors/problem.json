@@ -4,10 +4,15 @@
   "id": 3907,
   "slug": "cross-parity-smaller-successors",
   "title": "Cross-Parity Smaller Successors",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Indexed Tree"
+  ],
+  "topics": [
+    "Binary Indexed Tree",
+    "Divide and Conquer",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 2557,
   "slug": "maximum-number-of-integers-to-choose-from-a-range-ii",
   "title": "Maximum Number of Integers to Choose From a Range II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

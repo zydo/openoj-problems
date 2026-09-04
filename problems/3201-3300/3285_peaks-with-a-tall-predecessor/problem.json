@@ -4,8 +4,11 @@
   "id": 3285,
   "slug": "peaks-with-a-tall-predecessor",
   "title": "Peaks With A Tall Predecessor",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

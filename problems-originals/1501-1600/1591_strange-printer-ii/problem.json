@@ -4,8 +4,15 @@
   "id": 1591,
   "slug": "strange-printer-ii",
   "title": "Strange Printer II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Graph Theory",
+    "Topological Sort",
+    "Matrix",
+    "Directed Acyclic Graph"
+  ],
+  "topics": [
     "Array",
     "Graph Theory",
     "Topological Sort",

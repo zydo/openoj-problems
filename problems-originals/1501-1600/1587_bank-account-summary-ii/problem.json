@@ -4,8 +4,11 @@
   "id": 1587,
   "slug": "bank-account-summary-ii",
   "title": "Bank Account Summary II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

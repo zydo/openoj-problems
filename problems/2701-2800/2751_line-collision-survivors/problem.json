@@ -4,8 +4,14 @@
   "id": 2751,
   "slug": "line-collision-survivors",
   "title": "Line Collision Survivors",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Sorting",

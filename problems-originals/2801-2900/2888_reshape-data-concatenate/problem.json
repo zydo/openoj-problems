@@ -4,8 +4,11 @@
   "id": 2888,
   "slug": "reshape-data-concatenate",
   "title": "Reshape Data: Concatenate",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

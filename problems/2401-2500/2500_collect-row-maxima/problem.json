@@ -4,11 +4,18 @@
   "id": 2500,
   "slug": "collect-row-maxima",
   "title": "Collect Row Maxima",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Sorting",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

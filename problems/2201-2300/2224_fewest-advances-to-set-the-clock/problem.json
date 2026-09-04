@@ -4,8 +4,12 @@
   "id": 2224,
   "slug": "fewest-advances-to-set-the-clock",
   "title": "Fewest Advances to Set the Clock",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

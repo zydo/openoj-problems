@@ -4,8 +4,12 @@
   "id": 2455,
   "slug": "average-of-even-multiples-of-three",
   "title": "Average of Even Multiples of Three",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

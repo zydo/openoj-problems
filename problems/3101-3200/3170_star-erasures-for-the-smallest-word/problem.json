@@ -4,11 +4,18 @@
   "id": 3170,
   "slug": "star-erasures-for-the-smallest-word",
   "title": "Star Erasures For The Smallest Word",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Stack",
     "Greedy"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

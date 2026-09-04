@@ -4,8 +4,12 @@
   "id": 2896,
   "slug": "aligning-two-bit-strings",
   "title": "Aligning Two Bit Strings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

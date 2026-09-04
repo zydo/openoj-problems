@@ -4,8 +4,12 @@
   "id": 2232,
   "slug": "wrap-the-sum-shrink-the-value",
   "title": "Wrap the Sum, Shrink the Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

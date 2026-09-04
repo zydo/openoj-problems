@@ -4,8 +4,13 @@
   "id": 982,
   "slug": "triples-with-no-common-bits",
   "title": "Triples With No Common Bits",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation"

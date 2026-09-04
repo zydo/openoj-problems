@@ -4,8 +4,14 @@
   "id": 3878,
   "slug": "count-good-subarrays",
   "title": "Count Good Subarrays",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Stack",
+    "Bit Manipulation",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Bit Manipulation",

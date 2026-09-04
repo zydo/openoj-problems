@@ -4,8 +4,12 @@
   "id": 643,
   "slug": "maximum-average-subarray-i",
   "title": "Maximum Average Subarray I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

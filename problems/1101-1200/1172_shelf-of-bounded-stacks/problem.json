@@ -4,8 +4,14 @@
   "id": 1172,
   "slug": "shelf-of-bounded-stacks",
   "title": "Shelf of Bounded Stacks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Stack",
+    "Design",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Hash Table",
     "Stack",
     "Design",
     "Heap (Priority Queue)"

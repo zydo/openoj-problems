@@ -3,9 +3,17 @@
   "id": 1032,
   "slug": "stream-of-characters",
   "title": "Stream of Characters",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Design",
+    "Trie",
+    "Data Stream",
+    "Aho–Corasick Algorithm"
   ],
   "invocation": {
     "type": "design",

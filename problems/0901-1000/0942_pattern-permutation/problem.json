@@ -4,8 +4,14 @@
   "id": 942,
   "slug": "pattern-permutation",
   "title": "Pattern Permutation",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "String",

@@ -4,12 +4,19 @@
   "id": 3672,
   "slug": "mode-score-of-every-window",
   "title": "Mode Score of Every Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Sliding Window",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Counting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

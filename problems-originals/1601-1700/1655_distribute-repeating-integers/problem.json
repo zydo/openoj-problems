@@ -4,8 +4,17 @@
   "id": 1655,
   "slug": "distribute-repeating-integers",
   "title": "Distribute Repeating Integers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Counting",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

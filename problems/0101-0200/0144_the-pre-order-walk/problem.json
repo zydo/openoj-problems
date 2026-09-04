@@ -4,8 +4,14 @@
   "id": 144,
   "slug": "the-pre-order-walk",
   "title": "The Pre-Order Walk",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search",

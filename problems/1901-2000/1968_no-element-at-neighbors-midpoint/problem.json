@@ -4,8 +4,13 @@
   "id": 1968,
   "slug": "no-element-at-neighbors-midpoint",
   "title": "No Element at Its Neighbors' Midpoint",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

@@ -3,11 +3,20 @@
   "id": 204,
   "slug": "count-primes",
   "title": "Count Primes",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Enumeration",
+    "Number Theory",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 1085,
   "slug": "digit-sum-parity-of-the-smallest-number",
   "title": "Digit-Sum Parity of the Smallest Number",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

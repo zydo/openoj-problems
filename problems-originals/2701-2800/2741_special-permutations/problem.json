@@ -3,8 +3,14 @@
   "id": 2741,
   "slug": "special-permutations",
   "title": "Special Permutations",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

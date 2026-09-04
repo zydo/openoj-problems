@@ -4,12 +4,19 @@
   "id": 1030,
   "slug": "all-cells-near-to-far",
   "title": "All Cells Near to Far",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math",
     "Geometry",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

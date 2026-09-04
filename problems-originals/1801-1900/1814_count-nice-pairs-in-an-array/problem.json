@@ -4,8 +4,14 @@
   "id": 1814,
   "slug": "count-nice-pairs-in-an-array",
   "title": "Count Nice Pairs in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

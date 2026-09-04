@@ -4,8 +4,11 @@
   "id": 1780,
   "slug": "distinct-powers-of-three",
   "title": "Distinct Powers of Three",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

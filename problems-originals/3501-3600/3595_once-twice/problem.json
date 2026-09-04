@@ -3,8 +3,12 @@
   "id": 3595,
   "slug": "once-twice",
   "title": "Once Twice",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
     "Bit Manipulation"
   ],
   "invocation": {

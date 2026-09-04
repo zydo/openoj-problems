@@ -4,8 +4,12 @@
   "id": 479,
   "slug": "greatest-palindromic-product",
   "title": "Greatest Palindromic Product",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

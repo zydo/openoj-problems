@@ -4,8 +4,13 @@
   "id": 3127,
   "slug": "make-a-square-with-the-same-color",
   "title": "Make a Square with the Same Color",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Enumeration"

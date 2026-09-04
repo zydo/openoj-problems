@@ -4,8 +4,14 @@
   "id": 3256,
   "slug": "maximum-value-sum-by-placing-three-rooks-i",
   "title": "Maximum Value Sum by Placing Three Rooks I",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix",

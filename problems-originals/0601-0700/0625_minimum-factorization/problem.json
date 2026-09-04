@@ -4,8 +4,13 @@
   "id": 625,
   "slug": "minimum-factorization",
   "title": "Minimum Factorization",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy",
+    "Prime Factorization"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Prime Factorization"

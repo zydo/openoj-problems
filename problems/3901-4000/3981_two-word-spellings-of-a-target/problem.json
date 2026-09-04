@@ -4,10 +4,14 @@
   "id": 3981,
   "slug": "two-word-spellings-of-a-target",
   "title": "Two-Word Spellings Of A Target",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "String"
   ],
   "invocation": {
     "type": "function",

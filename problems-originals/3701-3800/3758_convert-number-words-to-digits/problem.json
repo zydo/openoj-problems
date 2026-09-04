@@ -4,8 +4,12 @@
   "id": 3758,
   "slug": "convert-number-words-to-digits",
   "title": "Convert Number Words to Digits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Trie"
+  ],
+  "topics": [
     "String",
     "Trie"
   ],

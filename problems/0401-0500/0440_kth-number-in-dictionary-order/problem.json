@@ -4,10 +4,13 @@
   "id": 440,
   "slug": "kth-number-in-dictionary-order",
   "title": "Kth Number in Dictionary Order",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Tree"
+  ],
+  "topics": [
+    "Trie"
   ],
   "invocation": {
     "type": "function",

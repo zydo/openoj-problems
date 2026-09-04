@@ -4,8 +4,13 @@
   "id": 2022,
   "slug": "convert-1d-array-into-2d-array",
   "title": "Convert 1D Array Into 2D Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

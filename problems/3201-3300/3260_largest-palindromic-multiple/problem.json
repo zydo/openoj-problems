@@ -4,10 +4,17 @@
   "id": 3260,
   "slug": "largest-palindromic-multiple",
   "title": "Largest Palindromic Multiple",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "String",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming",
     "Greedy",
     "Number Theory"
   ],

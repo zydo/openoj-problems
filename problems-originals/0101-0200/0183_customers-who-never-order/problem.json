@@ -4,8 +4,11 @@
   "id": 183,
   "slug": "customers-who-never-order",
   "title": "Customers Who Never Order",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

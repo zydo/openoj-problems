@@ -4,8 +4,15 @@
   "id": 2268,
   "slug": "minimum-keypad-presses",
   "title": "Minimum Keypad Presses",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Greedy",
     "Sorting",

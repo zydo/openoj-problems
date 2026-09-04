@@ -4,8 +4,13 @@
   "id": 1256,
   "slug": "secret-number-encoding",
   "title": "Secret Number Encoding",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Bit Manipulation"

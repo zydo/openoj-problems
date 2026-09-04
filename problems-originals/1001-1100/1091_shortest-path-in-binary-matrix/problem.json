@@ -3,12 +3,17 @@
   "id": 1091,
   "slug": "shortest-path-in-binary-matrix",
   "title": "Shortest Path in Binary Matrix",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "BFS",
     "Matrix",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

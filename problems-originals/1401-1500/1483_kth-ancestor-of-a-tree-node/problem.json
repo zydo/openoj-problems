@@ -3,10 +3,20 @@
   "id": 1483,
   "slug": "kth-ancestor-of-a-tree-node",
   "title": "Kth Ancestor of a Tree Node",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Lifting"
   ],
   "invocation": {
     "type": "design",

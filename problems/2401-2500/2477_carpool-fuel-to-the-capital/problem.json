@@ -4,11 +4,17 @@
   "id": 2477,
   "slug": "carpool-fuel-to-the-capital",
   "title": "Carpool Fuel to the Capital",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Greedy"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

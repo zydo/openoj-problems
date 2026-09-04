@@ -4,8 +4,15 @@
   "id": 2249,
   "slug": "count-lattice-points-inside-a-circle",
   "title": "Count Lattice Points Inside a Circle",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

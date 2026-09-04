@@ -4,8 +4,13 @@
   "id": 1739,
   "slug": "boxes-piled-into-a-corner",
   "title": "Boxes Piled into a Corner",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Binary Search",
     "Greedy"

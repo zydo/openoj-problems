@@ -4,8 +4,12 @@
   "id": 2733,
   "slug": "neither-the-floor-nor-the-ceiling",
   "title": "Neither The Floor Nor The Ceiling",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

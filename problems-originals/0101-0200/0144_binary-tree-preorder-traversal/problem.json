@@ -4,8 +4,14 @@
   "id": 144,
   "slug": "binary-tree-preorder-traversal",
   "title": "Binary Tree Preorder Traversal",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search",

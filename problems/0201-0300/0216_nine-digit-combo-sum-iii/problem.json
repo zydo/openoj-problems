@@ -4,8 +4,12 @@
   "id": 216,
   "slug": "nine-digit-combo-sum-iii",
   "title": "Nine-Digit Combo Sum III",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Backtracking"
   ],

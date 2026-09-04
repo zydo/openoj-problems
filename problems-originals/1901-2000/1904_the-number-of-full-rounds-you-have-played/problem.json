@@ -4,8 +4,12 @@
   "id": 1904,
   "slug": "the-number-of-full-rounds-you-have-played",
   "title": "The Number of Full Rounds You Have Played",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

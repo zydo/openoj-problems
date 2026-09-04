@@ -3,11 +3,19 @@
   "id": 2577,
   "slug": "minimum-time-to-visit-a-cell-in-a-grid",
   "title": "Minimum Time to Visit a Cell In a Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Shortest Path",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

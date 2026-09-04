@@ -4,8 +4,11 @@
   "id": 1800,
   "slug": "maximum-ascending-subarray-sum",
   "title": "Maximum Ascending Subarray Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

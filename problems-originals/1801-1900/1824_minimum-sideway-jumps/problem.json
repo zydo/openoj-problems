@@ -4,8 +4,13 @@
   "id": 1824,
   "slug": "minimum-sideway-jumps",
   "title": "Minimum Sideway Jumps",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

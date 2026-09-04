@@ -4,8 +4,11 @@
   "id": 1837,
   "slug": "sum-of-digits-in-base-k",
   "title": "Sum of Digits in Base K",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

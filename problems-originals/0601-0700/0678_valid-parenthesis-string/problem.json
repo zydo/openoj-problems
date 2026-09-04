@@ -4,8 +4,15 @@
   "id": 678,
   "slug": "valid-parenthesis-string",
   "title": "Valid Parenthesis String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Stack",

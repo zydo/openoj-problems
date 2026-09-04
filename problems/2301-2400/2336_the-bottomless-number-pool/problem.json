@@ -4,8 +4,14 @@
   "id": 2336,
   "slug": "the-bottomless-number-pool",
   "title": "The Bottomless Number Pool",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Heap (Priority Queue)",

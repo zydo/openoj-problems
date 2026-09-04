@@ -4,10 +4,18 @@
   "id": 2852,
   "slug": "isolation-score-of-the-grid",
   "title": "Isolation Score Of The Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Depth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

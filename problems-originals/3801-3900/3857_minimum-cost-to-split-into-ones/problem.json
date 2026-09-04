@@ -4,8 +4,12 @@
   "id": 3857,
   "slug": "minimum-cost-to-split-into-ones",
   "title": "Minimum Cost to Split into Ones",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

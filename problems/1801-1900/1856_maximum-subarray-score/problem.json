@@ -4,11 +4,18 @@
   "id": 1856,
   "slug": "maximum-subarray-score",
   "title": "Maximum Subarray Score",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Monotonic Stack",
     "Prefix Sum",
     "Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Monotonic Stack",
+    "Prefix Sum",
+    "Cartesian Tree"
   ],
   "invocation": {
     "type": "function",

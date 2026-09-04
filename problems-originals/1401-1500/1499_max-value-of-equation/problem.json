@@ -3,11 +3,18 @@
   "id": 1499,
   "slug": "max-value-of-equation",
   "title": "Max Value of Equation",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Queue",
     "Sliding Window",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

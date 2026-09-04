@@ -3,10 +3,16 @@
   "id": 355,
   "slug": "design-twitter",
   "title": "Design Twitter",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "design",

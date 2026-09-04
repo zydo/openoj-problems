@@ -4,8 +4,13 @@
   "id": 555,
   "slug": "split-concatenated-strings",
   "title": "Split Concatenated Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "String",
     "Greedy"

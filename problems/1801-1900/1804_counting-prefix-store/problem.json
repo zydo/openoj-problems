@@ -4,8 +4,14 @@
   "id": 1804,
   "slug": "counting-prefix-store",
   "title": "Counting Prefix Store",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Design",

@@ -4,8 +4,15 @@
   "id": 3016,
   "slug": "fewest-keypresses-to-spell-a-word-ii",
   "title": "Fewest Keypresses To Spell A Word II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
     "Greedy",
     "Sorting",
     "Counting"

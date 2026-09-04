@@ -4,12 +4,22 @@
   "id": 2617,
   "slug": "fewest-cells-crossed",
   "title": "Fewest Cells Crossed",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Heap (Priority Queue)",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Breadth-First Search",
+    "Union-Find",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

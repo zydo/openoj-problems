@@ -4,8 +4,15 @@
   "id": 3389,
   "slug": "leveling-out-the-letter-counts",
   "title": "Leveling Out The Letter Counts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Dynamic Programming",
     "Counting",

@@ -4,9 +4,14 @@
   "id": 3010,
   "slug": "cheapest-three-way-split",
   "title": "Cheapest Three-Way Split",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
     "Enumeration"
   ],
   "invocation": {

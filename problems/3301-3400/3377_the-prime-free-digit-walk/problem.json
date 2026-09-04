@@ -4,10 +4,17 @@
   "id": 3377,
   "slug": "the-prime-free-digit-walk",
   "title": "The Prime-Free Digit Walk",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Graph Theory",
+    "Number Theory",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Math",
+    "Graph Theory",
+    "Heap (Priority Queue)",
     "Number Theory",
     "Shortest Path"
   ],

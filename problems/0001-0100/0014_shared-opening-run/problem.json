@@ -4,10 +4,15 @@
   "id": 14,
   "slug": "shared-opening-run",
   "title": "Shared Opening Run",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

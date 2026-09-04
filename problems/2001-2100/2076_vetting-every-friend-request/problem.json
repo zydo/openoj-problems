@@ -4,8 +4,12 @@
   "id": 2076,
   "slug": "vetting-every-friend-request",
   "title": "Vetting Every Friend Request",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Union-Find",
     "Graph Theory"
   ],

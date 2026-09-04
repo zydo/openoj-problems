@@ -4,8 +4,13 @@
   "id": 3104,
   "slug": "find-longest-self-contained-substring",
   "title": "Find Longest Self-Contained Substring",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sorting"

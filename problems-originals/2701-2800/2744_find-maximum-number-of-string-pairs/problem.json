@@ -4,8 +4,14 @@
   "id": 2744,
   "slug": "find-maximum-number-of-string-pairs",
   "title": "Find Maximum Number of String Pairs",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

@@ -4,8 +4,14 @@
   "id": 2009,
   "slug": "minimum-number-of-operations-to-make-array-continuous",
   "title": "Minimum Number of Operations to Make Array Continuous",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

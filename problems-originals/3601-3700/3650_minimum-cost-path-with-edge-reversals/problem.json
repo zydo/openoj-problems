@@ -4,8 +4,13 @@
   "id": 3650,
   "slug": "minimum-cost-path-with-edge-reversals",
   "title": "Minimum Cost Path with Edge Reversals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"

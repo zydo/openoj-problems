@@ -4,8 +4,12 @@
   "id": 119,
   "slug": "pascals-triangle-ii",
   "title": "Pascal's Triangle II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

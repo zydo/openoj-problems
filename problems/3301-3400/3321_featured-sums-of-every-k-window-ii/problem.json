@@ -4,8 +4,14 @@
   "id": 3321,
   "slug": "featured-sums-of-every-k-window-ii",
   "title": "Featured Sums Of Every K-Window II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

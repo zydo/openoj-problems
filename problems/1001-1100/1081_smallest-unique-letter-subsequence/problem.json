@@ -4,8 +4,14 @@
   "id": 1081,
   "slug": "smallest-unique-letter-subsequence",
   "title": "Smallest Unique-Letter Subsequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Greedy",

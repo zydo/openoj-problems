@@ -4,8 +4,11 @@
   "id": 1374,
   "slug": "string-of-odd-frequency-letters",
   "title": "A String of Odd-Frequency Letters",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

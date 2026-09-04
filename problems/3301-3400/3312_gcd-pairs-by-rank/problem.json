@@ -4,12 +4,24 @@
   "id": 3312,
   "slug": "gcd-pairs-by-rank",
   "title": "GCD Pairs By Rank",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Number Theory",
     "Counting",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Binary Search",
+    "Combinatorics",
+    "Counting",
+    "Number Theory",
+    "Prefix Sum",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

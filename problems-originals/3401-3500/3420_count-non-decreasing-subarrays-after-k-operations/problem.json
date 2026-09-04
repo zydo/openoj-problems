@@ -3,10 +3,19 @@
   "id": 3420,
   "slug": "count-non-decreasing-subarrays-after-k-operations",
   "title": "Count Non-Decreasing Subarrays After K Operations",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Stack",
+    "Sliding Window",
+    "Monotonic Stack",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Segment Tree",
+    "Queue",
     "Sliding Window",
     "Monotonic Stack",
     "Monotonic Queue"

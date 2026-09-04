@@ -4,8 +4,13 @@
   "id": 500,
   "slug": "single-row-typing",
   "title": "Single-Row Typing",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

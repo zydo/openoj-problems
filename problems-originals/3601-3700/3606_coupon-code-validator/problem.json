@@ -4,8 +4,14 @@
   "id": 3606,
   "slug": "coupon-code-validator",
   "title": "Coupon Code Validator",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

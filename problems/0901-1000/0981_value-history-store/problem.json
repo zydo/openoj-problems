@@ -4,10 +4,16 @@
   "id": 981,
   "slug": "value-history-store",
   "title": "Value History Store",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Design"
   ],
   "invocation": {
     "type": "design",

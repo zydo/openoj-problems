@@ -4,8 +4,13 @@
   "id": 3217,
   "slug": "delete-nodes-from-linked-list-present-in-array",
   "title": "Delete Nodes From Linked List Present in Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Linked List"

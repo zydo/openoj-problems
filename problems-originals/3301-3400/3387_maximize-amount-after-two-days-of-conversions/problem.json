@@ -4,8 +4,15 @@
   "id": 3387,
   "slug": "maximize-amount-after-two-days-of-conversions",
   "title": "Maximize Amount After Two Days of Conversions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "String",
     "Depth-First Search",

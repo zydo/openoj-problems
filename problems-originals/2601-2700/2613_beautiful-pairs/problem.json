@@ -4,8 +4,16 @@
   "id": 2613,
   "slug": "beautiful-pairs",
   "title": "Beautiful Pairs",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Divide and Conquer",
+    "Geometry",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Divide and Conquer",

@@ -4,8 +4,12 @@
   "id": 2600,
   "slug": "k-items-with-the-maximum-sum",
   "title": "K Items With the Maximum Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

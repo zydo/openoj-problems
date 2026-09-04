@@ -4,8 +4,13 @@
   "id": 2161,
   "slug": "partition-array-according-to-given-pivot",
   "title": "Partition Array According to Given Pivot",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Simulation"

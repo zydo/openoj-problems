@@ -4,8 +4,12 @@
   "id": 3215,
   "slug": "count-triplets-with-even-xor-set-bits-ii",
   "title": "Count Triplets with Even XOR Set Bits II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

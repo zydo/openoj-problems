@@ -4,8 +4,16 @@
   "id": 2197,
   "slug": "replace-non-coprime-numbers-in-array",
   "title": "Replace Non-Coprime Numbers in Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Stack",
+    "Number Theory",
+    "Least Common Multiple",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Stack",

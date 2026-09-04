@@ -4,8 +4,12 @@
   "id": 1663,
   "slug": "smallest-string-with-a-given-numeric-value",
   "title": "Smallest String With A Given Numeric Value",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

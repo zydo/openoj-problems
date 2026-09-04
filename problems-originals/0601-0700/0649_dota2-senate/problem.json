@@ -4,8 +4,13 @@
   "id": 649,
   "slug": "dota2-senate",
   "title": "Dota2 Senate",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Queue"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Queue"

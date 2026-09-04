@@ -4,8 +4,12 @@
   "id": 2040,
   "slug": "kth-smallest-pair-product",
   "title": "Kth Smallest Pair Product",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search"
+  ],
+  "topics": [
+    "Array",
     "Binary Search"
   ],
   "invocation": {

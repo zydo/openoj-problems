@@ -4,12 +4,22 @@
   "id": 2945,
   "slug": "the-longest-steady-array",
   "title": "The Longest Steady Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Stack",
+    "Queue",
+    "Monotonic Stack",
+    "Prefix Sum",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

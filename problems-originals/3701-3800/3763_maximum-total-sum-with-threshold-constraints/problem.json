@@ -4,8 +4,14 @@
   "id": 3763,
   "slug": "maximum-total-sum-with-threshold-constraints",
   "title": "Maximum Total Sum with Threshold Constraints",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

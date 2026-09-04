@@ -3,8 +3,13 @@
   "id": 3273,
   "slug": "minimum-amount-of-damage-dealt-to-bob",
   "title": "Minimum Amount of Damage Dealt to Bob",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Greedy",
     "Sorting"
   ],

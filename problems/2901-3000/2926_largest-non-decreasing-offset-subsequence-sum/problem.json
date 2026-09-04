@@ -4,10 +4,17 @@
   "id": 2926,
   "slug": "largest-non-decreasing-offset-subsequence-sum",
   "title": "Largest Non-Decreasing-Offset Subsequence Sum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

@@ -3,11 +3,14 @@
   "id": 3482,
   "slug": "analyze-organization-hierarchy",
   "title": "Analyze Organization Hierarchy",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL",
     "Recursive CTE"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

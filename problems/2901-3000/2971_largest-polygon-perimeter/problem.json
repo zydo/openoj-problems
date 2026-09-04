@@ -4,11 +4,18 @@
   "id": 2971,
   "slug": "largest-polygon-perimeter",
   "title": "Largest Polygon Perimeter",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Prefix Sum",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

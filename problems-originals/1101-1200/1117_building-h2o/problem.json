@@ -3,8 +3,11 @@
   "id": 1117,
   "slug": "building-h2o",
   "title": "Building H2O",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

@@ -3,11 +3,16 @@
   "id": 2111,
   "slug": "minimum-operations-to-make-the-array-k-increasing",
   "title": "Minimum Operations to Make the Array K-Increasing",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

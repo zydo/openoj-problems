@@ -4,11 +4,18 @@
   "id": 1058,
   "slug": "cheapest-rounding-to-hit-the-target",
   "title": "Cheapest Rounding To Hit The Target",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Math",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "String",
+    "Greedy",
     "Sorting"
   ],
   "invocation": {

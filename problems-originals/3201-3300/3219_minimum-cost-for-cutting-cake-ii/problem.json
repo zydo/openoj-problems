@@ -4,8 +4,13 @@
   "id": 3219,
   "slug": "minimum-cost-for-cutting-cake-ii",
   "title": "Minimum Cost for Cutting Cake II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

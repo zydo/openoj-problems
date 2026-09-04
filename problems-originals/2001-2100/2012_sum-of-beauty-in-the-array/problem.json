@@ -4,8 +4,11 @@
   "id": 2012,
   "slug": "sum-of-beauty-in-the-array",
   "title": "Sum of Beauty in the Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

@@ -4,8 +4,16 @@
   "id": 2005,
   "slug": "subtree-removal-game-with-fibonacci-tree",
   "title": "Subtree Removal Game with Fibonacci Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Binary Tree",
+    "Game Theory",
+    "Sprague–Grundy Theorem"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Tree",

@@ -4,8 +4,12 @@
   "id": 2919,
   "slug": "minimum-increment-operations-to-make-array-beautiful",
   "title": "Minimum Increment Operations to Make Array Beautiful",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

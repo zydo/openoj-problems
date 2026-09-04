@@ -4,8 +4,12 @@
   "id": 1047,
   "slug": "cancel-adjacent-twin-letters",
   "title": "Cancel Adjacent Twin Letters",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

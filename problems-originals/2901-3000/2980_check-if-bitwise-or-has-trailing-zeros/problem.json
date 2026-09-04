@@ -4,8 +4,12 @@
   "id": 2980,
   "slug": "check-if-bitwise-or-has-trailing-zeros",
   "title": "Check if Bitwise OR Has Trailing Zeros",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

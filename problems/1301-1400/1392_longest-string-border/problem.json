@@ -4,11 +4,19 @@
   "id": 1392,
   "slug": "longest-string-border",
   "title": "Longest String Border",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "String Matching",
     "Knuth-Morris-Pratt"
+  ],
+  "topics": [
+    "String",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm"
   ],
   "invocation": {
     "type": "function",

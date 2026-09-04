@@ -4,9 +4,16 @@
   "id": 1248,
   "slug": "count-subarrays-with-k-odd-numbers",
   "title": "Count Subarrays With K Odd Numbers",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Math",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Math",
     "Sliding Window",
     "Prefix Sum"

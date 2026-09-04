@@ -4,8 +4,13 @@
   "id": 1433,
   "slug": "check-if-a-string-can-break-another-string",
   "title": "Check If a String Can Break Another String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Sorting"

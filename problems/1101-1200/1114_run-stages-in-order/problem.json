@@ -4,8 +4,11 @@
   "id": 1114,
   "slug": "run-stages-in-order",
   "title": "Run Stages in Order",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

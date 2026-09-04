@@ -4,8 +4,14 @@
   "id": 3416,
   "slug": "subsequences-with-a-unique-middle-mode-ii",
   "title": "Subsequences with a Unique Middle Mode II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

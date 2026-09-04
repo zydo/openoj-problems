@@ -3,11 +3,19 @@
   "id": 943,
   "slug": "find-the-shortest-superstring",
   "title": "Find the Shortest Superstring",
-  "difficulty": "H5",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Bitmask"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask",
+    "Hamiltonian Path"
   ],
   "invocation": {
     "type": "function",

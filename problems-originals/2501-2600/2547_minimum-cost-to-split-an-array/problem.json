@@ -4,8 +4,14 @@
   "id": 2547,
   "slug": "minimum-cost-to-split-an-array",
   "title": "Minimum Cost to Split an Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

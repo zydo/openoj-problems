@@ -3,11 +3,17 @@
   "id": 1964,
   "slug": "find-the-longest-valid-obstacle-course-at-each-position",
   "title": "Find the Longest Valid Obstacle Course at Each Position",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Binary Indexed Tree",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

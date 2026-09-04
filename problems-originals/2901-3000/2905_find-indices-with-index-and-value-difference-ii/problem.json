@@ -4,8 +4,12 @@
   "id": 2905,
   "slug": "find-indices-with-index-and-value-difference-ii",
   "title": "Find Indices With Index and Value Difference II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

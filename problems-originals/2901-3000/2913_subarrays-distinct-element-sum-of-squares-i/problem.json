@@ -4,8 +4,13 @@
   "id": 2913,
   "slug": "subarrays-distinct-element-sum-of-squares-i",
   "title": "Subarrays Distinct Element Sum of Squares I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Segment Tree"

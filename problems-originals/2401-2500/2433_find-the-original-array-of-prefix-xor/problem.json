@@ -4,8 +4,12 @@
   "id": 2433,
   "slug": "find-the-original-array-of-prefix-xor",
   "title": "Find The Original Array of Prefix Xor",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

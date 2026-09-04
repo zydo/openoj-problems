@@ -4,8 +4,14 @@
   "id": 3523,
   "slug": "make-array-non-decreasing",
   "title": "Make Array Non-decreasing",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Greedy",

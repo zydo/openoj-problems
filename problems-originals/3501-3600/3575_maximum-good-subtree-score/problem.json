@@ -3,11 +3,19 @@
   "id": 3575,
   "slug": "maximum-good-subtree-score",
   "title": "Maximum Good Subtree Score",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree DP",
     "Bitmask DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

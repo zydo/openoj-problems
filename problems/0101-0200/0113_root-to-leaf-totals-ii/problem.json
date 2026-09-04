@@ -4,8 +4,14 @@
   "id": 113,
   "slug": "root-to-leaf-totals-ii",
   "title": "Root-To-Leaf Totals II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Backtracking",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Backtracking",
     "Tree",
     "Depth-First Search",

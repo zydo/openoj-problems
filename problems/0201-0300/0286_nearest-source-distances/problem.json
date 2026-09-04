@@ -4,8 +4,13 @@
   "id": 286,
   "slug": "nearest-source-distances",
   "title": "Nearest Source Distances",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

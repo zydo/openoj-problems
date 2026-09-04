@@ -4,8 +4,11 @@
   "id": 2314,
   "slug": "the-first-day-of-the-maximum-recorded-degree-in-each-city",
   "title": "The First Day of the Maximum Recorded Degree in Each City",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

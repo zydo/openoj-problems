@@ -4,10 +4,13 @@
   "id": 3150,
   "slug": "posts-over-the-limits-ii",
   "title": "Posts Over the Limits II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

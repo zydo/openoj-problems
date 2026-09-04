@@ -4,9 +4,16 @@
   "id": 379,
   "slug": "number-pool-directory",
   "title": "Number Pool Directory",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
+    "Design",
+    "Queue"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Linked List",
     "Design",
     "Queue"
   ],

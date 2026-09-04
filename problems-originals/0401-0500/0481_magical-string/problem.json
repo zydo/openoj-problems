@@ -4,8 +4,12 @@
   "id": 481,
   "slug": "magical-string",
   "title": "Magical String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

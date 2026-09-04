@@ -4,8 +4,12 @@
   "id": 1864,
   "slug": "fewest-swaps-to-alternate-bits",
   "title": "Fewest Swaps to Alternate Bits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

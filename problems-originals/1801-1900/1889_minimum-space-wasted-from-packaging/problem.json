@@ -4,8 +4,14 @@
   "id": 1889,
   "slug": "minimum-space-wasted-from-packaging",
   "title": "Minimum Space Wasted From Packaging",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting",

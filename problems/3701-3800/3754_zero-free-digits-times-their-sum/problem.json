@@ -4,8 +4,11 @@
   "id": 3754,
   "slug": "zero-free-digits-times-their-sum",
   "title": "Zero-Free Digits Times Their Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

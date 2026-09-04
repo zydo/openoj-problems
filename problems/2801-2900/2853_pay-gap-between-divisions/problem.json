@@ -4,10 +4,13 @@
   "id": 2853,
   "slug": "pay-gap-between-divisions",
   "title": "Pay Gap Between Divisions",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

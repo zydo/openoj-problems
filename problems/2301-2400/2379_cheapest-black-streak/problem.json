@@ -4,8 +4,12 @@
   "id": 2379,
   "slug": "cheapest-black-streak",
   "title": "Cheapest Black Streak",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

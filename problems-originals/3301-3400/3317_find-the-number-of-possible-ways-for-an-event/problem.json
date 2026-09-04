@@ -4,8 +4,13 @@
   "id": 3317,
   "slug": "find-the-number-of-possible-ways-for-an-event",
   "title": "Find the Number of Possible Ways for an Event",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Combinatorics"

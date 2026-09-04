@@ -4,8 +4,14 @@
   "id": 112,
   "slug": "path-sum",
   "title": "Path Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

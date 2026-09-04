@@ -4,8 +4,15 @@
   "id": 1036,
   "slug": "escape-a-large-maze",
   "title": "Escape a Large Maze",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Bidirectional Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Depth-First Search",

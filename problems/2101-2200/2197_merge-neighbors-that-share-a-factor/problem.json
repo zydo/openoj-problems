@@ -4,12 +4,20 @@
   "id": 2197,
   "slug": "merge-neighbors-that-share-a-factor",
   "title": "Merge Neighbors That Share A Factor",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Stack",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Stack",
+    "Number Theory",
+    "Least Common Multiple",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

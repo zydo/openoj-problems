@@ -4,8 +4,13 @@
   "id": 3742,
   "slug": "maximum-path-score-in-a-grid",
   "title": "Maximum Path Score in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

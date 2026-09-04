@@ -3,9 +3,15 @@
   "id": 1095,
   "slug": "find-in-mountain-array",
   "title": "Find in Mountain Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Interactive",
+    "Ternary Search"
   ],
   "invocation": {
     "type": "interactive",

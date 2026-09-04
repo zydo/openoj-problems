@@ -4,8 +4,11 @@
   "id": 476,
   "slug": "number-complement",
   "title": "Number Complement",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

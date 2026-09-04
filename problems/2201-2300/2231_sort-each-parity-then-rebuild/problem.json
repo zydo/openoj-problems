@@ -4,8 +4,12 @@
   "id": 2231,
   "slug": "sort-each-parity-then-rebuild",
   "title": "Sort Each Parity, Then Rebuild",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Sorting",
     "Heap (Priority Queue)"
   ],

@@ -3,10 +3,15 @@
   "id": 2845,
   "slug": "count-of-interesting-subarrays",
   "title": "Count of Interesting Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Prefix Sum",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

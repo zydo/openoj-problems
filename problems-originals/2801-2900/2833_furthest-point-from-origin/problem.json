@@ -4,8 +4,12 @@
   "id": 2833,
   "slug": "furthest-point-from-origin",
   "title": "Furthest Point From Origin",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Counting"
   ],

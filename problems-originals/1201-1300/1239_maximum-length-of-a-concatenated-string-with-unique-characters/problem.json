@@ -3,8 +3,14 @@
   "id": 1239,
   "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
   "title": "Maximum Length of a Concatenated String with Unique Characters",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

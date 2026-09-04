@@ -4,8 +4,12 @@
   "id": 2518,
   "slug": "number-of-great-partitions",
   "title": "Number of Great Partitions",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

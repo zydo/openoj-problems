@@ -4,8 +4,13 @@
   "id": 1742,
   "slug": "busiest-digit-sum-locker",
   "title": "Busiest Digit-Sum Locker",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "Counting"

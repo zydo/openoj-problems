@@ -4,11 +4,18 @@
   "id": 2048,
   "slug": "next-self-counting-number",
   "title": "Next Self-Counting Number",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Enumeration",
     "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Backtracking",
+    "Counting",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

@@ -4,9 +4,13 @@
   "id": 2827,
   "slug": "balanced-digit-multiples-in-a-range",
   "title": "Balanced-Digit Multiples in a Range",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
     "Dynamic Programming"
   ],
   "invocation": {

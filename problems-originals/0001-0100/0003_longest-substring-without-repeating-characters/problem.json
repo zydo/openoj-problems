@@ -3,8 +3,13 @@
   "id": 3,
   "slug": "longest-substring-without-repeating-characters",
   "title": "Longest Substring Without Repeating Characters",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

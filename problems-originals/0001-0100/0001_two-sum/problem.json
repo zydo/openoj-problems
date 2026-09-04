@@ -3,8 +3,12 @@
   "id": 1,
   "slug": "two-sum",
   "title": "Two Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

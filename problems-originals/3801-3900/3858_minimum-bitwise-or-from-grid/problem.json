@@ -4,8 +4,14 @@
   "id": 3858,
   "slug": "minimum-bitwise-or-from-grid",
   "title": "Minimum Bitwise OR From Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation",

@@ -4,8 +4,13 @@
   "id": 3177,
   "slug": "longest-subsequence-with-at-most-k-breaks",
   "title": "Longest Subsequence With at Most K Breaks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Dynamic Programming"
   ],
   "invocation": {

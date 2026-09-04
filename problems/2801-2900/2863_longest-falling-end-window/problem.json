@@ -4,10 +4,16 @@
   "id": 2863,
   "slug": "longest-falling-end-window",
   "title": "Longest Falling-End Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

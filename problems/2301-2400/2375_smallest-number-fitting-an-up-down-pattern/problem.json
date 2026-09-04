@@ -4,8 +4,14 @@
   "id": 2375,
   "slug": "smallest-number-fitting-an-up-down-pattern",
   "title": "Smallest Number Fitting an Up-Down Pattern",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking",
+    "Stack",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Backtracking",
     "Stack",

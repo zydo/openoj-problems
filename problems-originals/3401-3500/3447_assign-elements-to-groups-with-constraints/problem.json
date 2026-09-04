@@ -4,8 +4,12 @@
   "id": 3447,
   "slug": "assign-elements-to-groups-with-constraints",
   "title": "Assign Elements to Groups with Constraints",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

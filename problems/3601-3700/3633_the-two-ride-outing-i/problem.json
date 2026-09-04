@@ -4,11 +4,18 @@
   "id": 3633,
   "slug": "the-two-ride-outing-i",
   "title": "The Two-Ride Outing I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Greedy",
     "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 3207,
   "slug": "attack-or-absorb",
   "title": "Attack Or Absorb For The Most Points",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

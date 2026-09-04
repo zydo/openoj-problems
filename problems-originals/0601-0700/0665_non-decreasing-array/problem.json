@@ -4,8 +4,11 @@
   "id": 665,
   "slug": "non-decreasing-array",
   "title": "Non-decreasing Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

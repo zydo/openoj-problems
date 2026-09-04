@@ -4,10 +4,13 @@
   "id": 3188,
   "slug": "honor-roll-ii",
   "title": "The Honor Roll II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

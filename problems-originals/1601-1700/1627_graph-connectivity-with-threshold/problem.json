@@ -3,11 +3,17 @@
   "id": 1627,
   "slug": "graph-connectivity-with-threshold",
   "title": "Graph Connectivity With Threshold",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Union Find",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Union-Find",
     "Number Theory"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 726,
   "slug": "number-of-atoms",
   "title": "Number of Atoms",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Stack",

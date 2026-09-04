@@ -4,8 +4,14 @@
   "id": 3685,
   "slug": "subsequence-sum-after-capping-elements",
   "title": "Subsequence Sum After Capping Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Dynamic Programming",

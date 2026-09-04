@@ -4,8 +4,12 @@
   "id": 2640,
   "slug": "find-the-score-of-all-prefixes-of-an-array",
   "title": "Find the Score of All Prefixes of an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

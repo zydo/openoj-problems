@@ -4,8 +4,13 @@
   "id": 3273,
   "slug": "least-damage-taken-finishing-all-enemies",
   "title": "Least Damage Taken Finishing All Enemies",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Greedy",
     "Sorting"
   ],

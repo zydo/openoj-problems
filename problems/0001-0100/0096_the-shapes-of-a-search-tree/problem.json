@@ -4,12 +4,19 @@
   "id": 96,
   "slug": "the-shapes-of-a-search-tree",
   "title": "The Shapes Of A Search Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Dynamic Programming",
     "Tree",
     "Binary Search Tree"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

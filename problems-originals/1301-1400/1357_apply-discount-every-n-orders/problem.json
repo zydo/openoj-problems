@@ -4,8 +4,13 @@
   "id": 1357,
   "slug": "apply-discount-every-n-orders",
   "title": "Apply Discount Every n Orders",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design"

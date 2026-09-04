@@ -4,8 +4,13 @@
   "id": 1260,
   "slug": "shift-2d-grid",
   "title": "Shift 2D Grid",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

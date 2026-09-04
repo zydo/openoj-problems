@@ -4,10 +4,15 @@
   "id": 1359,
   "slug": "counting-start-before-finish-sequences",
   "title": "Counting Start-Before-Finish Sequences",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
   ],
   "invocation": {
     "type": "function",

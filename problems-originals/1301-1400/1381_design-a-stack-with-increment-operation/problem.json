@@ -3,9 +3,14 @@
   "id": 1381,
   "slug": "design-a-stack-with-increment-operation",
   "title": "Design a Stack With Increment Operation",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Design"
   ],
   "invocation": {
     "type": "design",

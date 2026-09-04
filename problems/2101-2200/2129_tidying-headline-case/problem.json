@@ -4,8 +4,11 @@
   "id": 2129,
   "slug": "tidying-headline-case",
   "title": "Tidying Headline Case",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

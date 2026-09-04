@@ -4,8 +4,12 @@
   "id": 3596,
   "slug": "a-grid-walk-that-doubles-back",
   "title": "A Grid Walk That Doubles Back",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "topics": [
     "Math",
     "Brainteaser"
   ],

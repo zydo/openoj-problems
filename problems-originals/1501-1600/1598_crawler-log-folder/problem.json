@@ -4,8 +4,13 @@
   "id": 1598,
   "slug": "crawler-log-folder",
   "title": "Crawler Log Folder",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "Array",
     "String",
     "Stack"

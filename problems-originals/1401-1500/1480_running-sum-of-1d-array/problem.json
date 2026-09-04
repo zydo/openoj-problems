@@ -4,8 +4,12 @@
   "id": 1480,
   "slug": "running-sum-of-1d-array",
   "title": "Running Sum of 1d Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

@@ -4,8 +4,14 @@
   "id": 2128,
   "slug": "zeroing-the-grid-with-line-flips",
   "title": "Zeroing the Grid With Line Flips",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation",

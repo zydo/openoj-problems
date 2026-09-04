@@ -4,8 +4,12 @@
   "id": 3096,
   "slug": "the-shortest-winning-stint",
   "title": "The Shortest Winning Stint",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

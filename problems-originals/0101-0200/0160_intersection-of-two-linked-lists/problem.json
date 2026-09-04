@@ -4,8 +4,13 @@
   "id": 160,
   "slug": "intersection-of-two-linked-lists",
   "title": "Intersection of Two Linked Lists",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Linked List",
+    "Two Pointers"
+  ],
+  "topics": [
     "Hash Table",
     "Linked List",
     "Two Pointers"

@@ -4,11 +4,16 @@
   "id": 1310,
   "slug": "range-xor-queries",
   "title": "Range XOR Queries",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Prefix Sum",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

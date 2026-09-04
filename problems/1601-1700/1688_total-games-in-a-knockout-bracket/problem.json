@@ -4,8 +4,12 @@
   "id": 1688,
   "slug": "total-games-in-a-knockout-bracket",
   "title": "Total Games in a Knockout Bracket",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

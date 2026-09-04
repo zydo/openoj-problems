@@ -4,8 +4,11 @@
   "id": 3118,
   "slug": "friday-purchase-iii",
   "title": "Friday Purchase III",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

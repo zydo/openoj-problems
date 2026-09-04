@@ -4,8 +4,14 @@
   "id": 1478,
   "slug": "mailbox-placement-cost",
   "title": "Mailbox Placement Cost",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

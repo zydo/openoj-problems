@@ -4,11 +4,16 @@
   "id": 4010,
   "slug": "best-pair-value-after-removing-the-gcd",
   "title": "Best Pair Value After Removing the GCD",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Number Theory",
+    "Math",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

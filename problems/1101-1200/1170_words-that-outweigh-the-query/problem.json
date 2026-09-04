@@ -4,12 +4,19 @@
   "id": 1170,
   "slug": "words-that-outweigh-the-query",
   "title": "Words That Outweigh the Query",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Sorting",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

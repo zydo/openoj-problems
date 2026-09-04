@@ -4,8 +4,12 @@
   "id": 3862,
   "slug": "left-sum-meets-right-product",
   "title": "Where The Left Sum Meets The Right Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

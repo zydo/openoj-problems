@@ -3,8 +3,14 @@
   "id": 3367,
   "slug": "maximize-sum-of-weights-after-edge-removals",
   "title": "Maximize Sum of Weights after Edge Removals",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Sorting"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Tree",
     "Depth-First Search",

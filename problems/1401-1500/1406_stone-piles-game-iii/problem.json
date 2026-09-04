@@ -4,11 +4,19 @@
   "id": 1406,
   "slug": "stone-piles-game-iii",
   "title": "Stone Piles Game III",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Minimax",
+    "Game Theory",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

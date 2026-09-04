@@ -3,11 +3,19 @@
   "id": 2476,
   "slug": "closest-nodes-queries-in-a-binary-search-tree",
   "title": "Closest Nodes Queries in a Binary Search Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search Tree",
     "Binary Search",
     "Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

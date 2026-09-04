@@ -3,8 +3,12 @@
   "id": 283,
   "slug": "move-zeroes",
   "title": "Move Zeroes",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

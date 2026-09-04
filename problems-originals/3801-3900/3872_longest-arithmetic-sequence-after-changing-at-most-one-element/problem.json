@@ -4,8 +4,12 @@
   "id": 3872,
   "slug": "longest-arithmetic-sequence-after-changing-at-most-one-element",
   "title": "Longest Arithmetic Sequence After Changing At Most One Element",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

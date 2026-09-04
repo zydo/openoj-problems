@@ -4,8 +4,12 @@
   "id": 764,
   "slug": "biggest-cross-formation",
   "title": "Biggest Cross Formation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

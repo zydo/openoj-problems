@@ -4,8 +4,13 @@
   "id": 1145,
   "slug": "binary-tree-coloring-game",
   "title": "Binary Tree Coloring Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

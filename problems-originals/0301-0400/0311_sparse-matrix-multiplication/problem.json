@@ -4,8 +4,14 @@
   "id": 311,
   "slug": "sparse-matrix-multiplication",
   "title": "Sparse Matrix Multiplication",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Linear Algebra"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix",

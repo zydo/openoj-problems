@@ -3,10 +3,15 @@
   "id": 56,
   "slug": "merge-intervals",
   "title": "Merge Intervals",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Quicksort"
   ],
   "invocation": {
     "type": "function",

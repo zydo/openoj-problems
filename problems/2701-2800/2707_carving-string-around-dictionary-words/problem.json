@@ -4,11 +4,18 @@
   "id": 2707,
   "slug": "carving-string-around-dictionary-words",
   "title": "Carving A String Around Dictionary Words",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 2752,
   "slug": "customers-with-maximum-number-of-transactions-on-consecutive-days",
   "title": "Customers with Maximum Number of Transactions on Consecutive Days",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

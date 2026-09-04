@@ -4,8 +4,14 @@
   "id": 2332,
   "slug": "latest-boarding-minute",
   "title": "Latest Boarding Minute",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

@@ -4,9 +4,16 @@
   "id": 2131,
   "slug": "longest-palindrome-from-two-letter-tiles",
   "title": "Longest Palindrome From Two-Letter Tiles",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
     "Greedy",
     "Counting"
   ],

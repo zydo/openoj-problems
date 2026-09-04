@@ -4,8 +4,14 @@
   "id": 1213,
   "slug": "intersection-of-three-sorted-arrays",
   "title": "Intersection of Three Sorted Arrays",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

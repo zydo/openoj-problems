@@ -4,8 +4,11 @@
   "id": 2619,
   "slug": "array-prototype-last",
   "title": "Array Prototype Last",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

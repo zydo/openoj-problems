@@ -4,12 +4,20 @@
   "id": 2977,
   "slug": "cheapest-string-rewrite-ii",
   "title": "Cheapest String Rewrite II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Shortest Path",
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Trie",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

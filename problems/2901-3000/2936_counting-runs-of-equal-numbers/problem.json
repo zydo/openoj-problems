@@ -4,8 +4,13 @@
   "id": 2936,
   "slug": "counting-runs-of-equal-numbers",
   "title": "Counting Runs of Equal Numbers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Interactive"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Interactive"

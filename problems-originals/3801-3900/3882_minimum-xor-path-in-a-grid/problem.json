@@ -4,8 +4,14 @@
   "id": 3882,
   "slug": "minimum-xor-path-in-a-grid",
   "title": "Minimum XOR Path in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

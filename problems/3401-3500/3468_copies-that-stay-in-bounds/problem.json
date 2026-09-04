@@ -4,8 +4,12 @@
   "id": 3468,
   "slug": "copies-that-stay-in-bounds",
   "title": "Copies That Stay In Bounds",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

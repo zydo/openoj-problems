@@ -4,11 +4,17 @@
   "id": 3815,
   "slug": "the-bidding-board",
   "title": "The Bidding Board",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Hash Table",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

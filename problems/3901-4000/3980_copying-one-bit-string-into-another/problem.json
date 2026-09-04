@@ -4,10 +4,15 @@
   "id": 3980,
   "slug": "copying-one-bit-string-into-another",
   "title": "Copying One Bit String Into Another",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Greedy"
+  ],
+  "topics": [
+    "String",
+    "Greedy",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

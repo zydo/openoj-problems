@@ -4,11 +4,15 @@
   "id": 1312,
   "slug": "fewest-insertions-to-reach-a-palindrome",
   "title": "Fewest Insertions to Reach a Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Interval DP",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 174,
   "slug": "dungeon-game-crawl",
   "title": "Dungeon Game",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

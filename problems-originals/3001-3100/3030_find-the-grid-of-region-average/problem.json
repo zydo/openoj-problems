@@ -4,8 +4,12 @@
   "id": 3030,
   "slug": "find-the-grid-of-region-average",
   "title": "Find the Grid of Region Average",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

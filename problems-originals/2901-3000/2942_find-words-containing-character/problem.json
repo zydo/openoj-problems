@@ -4,8 +4,12 @@
   "id": 2942,
   "slug": "find-words-containing-character",
   "title": "Find Words Containing Character",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

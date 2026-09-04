@@ -4,10 +4,16 @@
   "id": 2588,
   "slug": "subarrays-whose-xor-vanishes",
   "title": "Subarrays Whose XOR Vanishes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
     "Prefix Sum"
   ],
   "invocation": {

@@ -4,12 +4,21 @@
   "id": 3715,
   "slug": "ancestors-on-square-terms",
   "title": "Ancestors On Square Terms",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Number Theory",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Tree",
+    "Depth-First Search",
+    "Counting",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

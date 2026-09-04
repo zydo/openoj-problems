@@ -4,8 +4,12 @@
   "id": 991,
   "slug": "broken-calculator",
   "title": "Broken Calculator",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

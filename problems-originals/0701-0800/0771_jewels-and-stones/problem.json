@@ -4,8 +4,12 @@
   "id": 771,
   "slug": "jewels-and-stones",
   "title": "Jewels and Stones",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

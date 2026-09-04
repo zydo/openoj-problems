@@ -3,8 +3,14 @@
   "id": 1727,
   "slug": "largest-submatrix-with-rearrangements",
   "title": "Largest Submatrix With Rearrangements",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

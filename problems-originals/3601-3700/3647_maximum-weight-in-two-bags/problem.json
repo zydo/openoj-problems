@@ -4,8 +4,12 @@
   "id": 3647,
   "slug": "maximum-weight-in-two-bags",
   "title": "Maximum Weight in Two Bags",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

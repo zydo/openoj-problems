@@ -4,10 +4,15 @@
   "id": 1035,
   "slug": "most-non-crossing-matches",
   "title": "Most Non-Crossing Matches",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
   ],
   "invocation": {
     "type": "function",

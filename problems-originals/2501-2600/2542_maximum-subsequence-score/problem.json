@@ -3,11 +3,17 @@
   "id": 2542,
   "slug": "maximum-subsequence-score",
   "title": "Maximum Subsequence Score",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

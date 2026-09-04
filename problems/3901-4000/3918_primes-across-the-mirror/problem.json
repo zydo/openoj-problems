@@ -4,8 +4,12 @@
   "id": 3918,
   "slug": "primes-across-the-mirror",
   "title": "Primes Across The Mirror",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Number Theory"
   ],

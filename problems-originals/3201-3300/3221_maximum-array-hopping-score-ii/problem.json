@@ -4,8 +4,14 @@
   "id": 3221,
   "slug": "maximum-array-hopping-score-ii",
   "title": "Maximum Array Hopping Score II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Greedy",

@@ -4,11 +4,17 @@
   "id": 2858,
   "slug": "reversals-to-reach-every-node",
   "title": "Reversals to Reach Every Node",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS",
     "Tree DP"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

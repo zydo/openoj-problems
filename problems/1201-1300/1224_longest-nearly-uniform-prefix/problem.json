@@ -4,8 +4,12 @@
   "id": 1224,
   "slug": "longest-nearly-uniform-prefix",
   "title": "Longest Nearly-Uniform Prefix",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

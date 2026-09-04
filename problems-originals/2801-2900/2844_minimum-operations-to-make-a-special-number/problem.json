@@ -4,8 +4,14 @@
   "id": 2844,
   "slug": "minimum-operations-to-make-a-special-number",
   "title": "Minimum Operations to Make a Special Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Greedy",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy",

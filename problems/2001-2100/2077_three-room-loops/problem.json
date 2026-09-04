@@ -4,8 +4,11 @@
   "id": 2077,
   "slug": "three-room-loops",
   "title": "Three-Room Loops",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory"
+  ],
+  "topics": [
     "Graph Theory"
   ],
   "invocation": {

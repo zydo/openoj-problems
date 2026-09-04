@@ -4,8 +4,15 @@
   "id": 3977,
   "slug": "minimum-time-to-reach-target-with-limited-power",
   "title": "Minimum Time to Reach Target With Limited Power",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Graph Theory",

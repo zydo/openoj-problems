@@ -4,10 +4,16 @@
   "id": 3566,
   "slug": "two-halves-of-one-product",
   "title": "Two Halves Of One Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Recursion",
     "Enumeration"
   ],
   "invocation": {

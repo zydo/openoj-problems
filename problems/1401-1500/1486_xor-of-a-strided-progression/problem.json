@@ -4,8 +4,12 @@
   "id": 1486,
   "slug": "xor-of-a-strided-progression",
   "title": "XOR of a Strided Progression",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

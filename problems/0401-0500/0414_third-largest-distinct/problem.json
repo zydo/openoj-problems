@@ -4,8 +4,12 @@
   "id": 414,
   "slug": "third-largest-distinct",
   "title": "Third Largest Distinct",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

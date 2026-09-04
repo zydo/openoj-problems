@@ -4,8 +4,12 @@
   "id": 97,
   "slug": "interleaving-string",
   "title": "Interleaving String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

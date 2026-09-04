@@ -4,8 +4,14 @@
   "id": 2043,
   "slug": "simple-bank-system",
   "title": "Simple Bank System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

@@ -4,8 +4,12 @@
   "id": 1320,
   "slug": "minimum-distance-to-type-a-word-using-two-fingers",
   "title": "Minimum Distance to Type a Word Using Two Fingers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

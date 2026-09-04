@@ -4,8 +4,12 @@
   "id": 3700,
   "slug": "number-of-zigzag-arrays-ii",
   "title": "Number of ZigZag Arrays II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

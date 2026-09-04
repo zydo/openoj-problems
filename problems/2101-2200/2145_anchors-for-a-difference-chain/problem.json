@@ -4,8 +4,12 @@
   "id": 2145,
   "slug": "anchors-for-a-difference-chain",
   "title": "Anchors for a Difference Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

@@ -3,10 +3,16 @@
   "id": 1235,
   "slug": "maximum-profit-in-job-scheduling",
   "title": "Maximum Profit in Job Scheduling",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Sorting"
   ],
   "invocation": {

@@ -4,12 +4,20 @@
   "id": 464,
   "slug": "force-a-win",
   "title": "Force A Win",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "Memory",
     "Memoization",
     "Dynamic Programming",
+    "Game Theory",
+    "Bitmask"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization",
     "Game Theory",
     "Bitmask"
   ],

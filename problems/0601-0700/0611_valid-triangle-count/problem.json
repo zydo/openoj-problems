@@ -4,11 +4,18 @@
   "id": 611,
   "slug": "valid-triangle-count",
   "title": "Valid Triangle Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

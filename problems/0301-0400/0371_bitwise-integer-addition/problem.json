@@ -4,8 +4,12 @@
   "id": 371,
   "slug": "bitwise-integer-addition",
   "title": "Bitwise Integer Addition",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

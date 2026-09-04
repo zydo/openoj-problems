@@ -3,10 +3,17 @@
   "id": 2440,
   "slug": "create-components-with-same-value",
   "title": "Create Components With Same Value",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Tree",
+    "Depth-First Search",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

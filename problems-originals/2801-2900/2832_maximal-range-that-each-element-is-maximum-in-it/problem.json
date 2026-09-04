@@ -3,8 +3,13 @@
   "id": 2832,
   "slug": "maximal-range-that-each-element-is-maximum-in-it",
   "title": "Maximal Range That Each Element Is Maximum in It",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

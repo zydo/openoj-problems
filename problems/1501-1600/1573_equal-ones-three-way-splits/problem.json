@@ -4,8 +4,12 @@
   "id": 1573,
   "slug": "equal-ones-three-way-splits",
   "title": "Equal-Ones Three-Way Splits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

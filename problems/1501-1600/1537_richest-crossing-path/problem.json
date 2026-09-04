@@ -4,8 +4,14 @@
   "id": 1537,
   "slug": "richest-crossing-path",
   "title": "The Richest Crossing Path",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Dynamic Programming",

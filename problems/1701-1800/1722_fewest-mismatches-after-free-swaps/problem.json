@@ -4,10 +4,15 @@
   "id": 1722,
   "slug": "fewest-mismatches-after-free-swaps",
   "title": "Fewest Mismatches After Free Swaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 3167,
   "slug": "canonical-letter-counts",
   "title": "Canonical Letter Counts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sorting",

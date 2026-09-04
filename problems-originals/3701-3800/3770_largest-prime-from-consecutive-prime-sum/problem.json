@@ -4,8 +4,13 @@
   "id": 3770,
   "slug": "largest-prime-from-consecutive-prime-sum",
   "title": "Largest Prime from Consecutive Prime Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Number Theory"

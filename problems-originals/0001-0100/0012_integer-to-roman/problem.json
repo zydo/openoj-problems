@@ -4,8 +4,13 @@
   "id": 12,
   "slug": "integer-to-roman",
   "title": "Integer to Roman",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String"

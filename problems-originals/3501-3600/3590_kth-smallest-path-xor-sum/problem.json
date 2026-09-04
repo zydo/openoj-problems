@@ -4,8 +4,14 @@
   "id": 3590,
   "slug": "kth-smallest-path-xor-sum",
   "title": "Kth Smallest Path XOR Sum",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Depth-First Search",

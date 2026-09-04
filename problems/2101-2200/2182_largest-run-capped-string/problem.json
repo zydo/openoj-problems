@@ -4,10 +4,17 @@
   "id": 2182,
   "slug": "largest-run-capped-string",
   "title": "Largest Run-Capped String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Greedy",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)",
     "Counting"
   ],
   "invocation": {

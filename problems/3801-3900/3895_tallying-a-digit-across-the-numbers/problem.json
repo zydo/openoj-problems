@@ -4,8 +4,12 @@
   "id": 3895,
   "slug": "tallying-a-digit-across-the-numbers",
   "title": "Tallying A Digit Across The Numbers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

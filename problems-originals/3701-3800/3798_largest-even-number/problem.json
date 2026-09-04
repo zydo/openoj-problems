@@ -4,8 +4,11 @@
   "id": 3798,
   "slug": "largest-even-number",
   "title": "Largest Even Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

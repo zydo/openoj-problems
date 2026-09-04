@@ -4,11 +4,18 @@
   "id": 2049,
   "slug": "tied-for-the-best-split-score",
   "title": "Tied for the Best Split Score",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

@@ -3,9 +3,15 @@
   "id": 879,
   "slug": "profitable-schemes",
   "title": "Profitable Schemes",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

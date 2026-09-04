@@ -4,8 +4,15 @@
   "id": 2523,
   "slug": "closest-prime-numbers-in-range",
   "title": "Closest Prime Numbers in Range",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Number Theory",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
+  ],
+  "topics": [
     "Math",
     "Number Theory",
     "Primality Test",

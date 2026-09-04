@@ -4,8 +4,12 @@
   "id": 3718,
   "slug": "smallest-missing-multiple-of-k",
   "title": "Smallest Missing Multiple of K",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

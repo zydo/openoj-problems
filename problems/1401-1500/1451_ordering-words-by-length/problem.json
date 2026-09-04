@@ -4,8 +4,12 @@
   "id": 1451,
   "slug": "ordering-words-by-length",
   "title": "Ordering Words by Length",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Sorting"
   ],

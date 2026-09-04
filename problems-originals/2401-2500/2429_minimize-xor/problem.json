@@ -4,8 +4,12 @@
   "id": 2429,
   "slug": "minimize-xor",
   "title": "Minimize XOR",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Greedy",
     "Bit Manipulation"
   ],

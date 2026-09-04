@@ -4,8 +4,15 @@
   "id": 3377,
   "slug": "digit-operations-to-make-two-integers-equal",
   "title": "Digit Operations to Make Two Integers Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Number Theory",
+    "Shortest Path"
+  ],
+  "topics": [
     "Math",
     "Graph Theory",
     "Heap (Priority Queue)",

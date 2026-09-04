@@ -4,11 +4,16 @@
   "id": 2461,
   "slug": "largest-repeat-free-window-sum",
   "title": "Largest Repeat-Free Window Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Hash Table",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

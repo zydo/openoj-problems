@@ -4,8 +4,12 @@
   "id": 1708,
   "slug": "largest-fixed-window",
   "title": "Largest Fixed Window",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

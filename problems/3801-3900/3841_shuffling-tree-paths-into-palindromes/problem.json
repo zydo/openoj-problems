@@ -4,12 +4,21 @@
   "id": 3841,
   "slug": "shuffling-tree-paths-into-palindromes",
   "title": "Shuffling Tree Paths Into Palindromes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Segment Tree",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Divide and Conquer",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

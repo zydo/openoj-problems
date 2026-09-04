@@ -4,8 +4,15 @@
   "id": 1684,
   "slug": "count-words-within-a-permitted-alphabet",
   "title": "Count Words Within a Permitted Alphabet",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "String",
     "Bit Manipulation",
     "Counting"

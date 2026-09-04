@@ -4,8 +4,11 @@
   "id": 1078,
   "slug": "occurrences-after-bigram",
   "title": "Occurrences After Bigram",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

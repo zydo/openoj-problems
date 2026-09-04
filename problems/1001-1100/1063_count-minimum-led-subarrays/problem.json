@@ -4,8 +4,13 @@
   "id": 1063,
   "slug": "count-minimum-led-subarrays",
   "title": "Count Minimum-Led Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

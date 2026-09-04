@@ -4,8 +4,14 @@
   "id": 1605,
   "slug": "find-valid-matrix-given-row-and-column-sums",
   "title": "Find Valid Matrix Given Row and Column Sums",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix",
+    "Flow Network"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix",

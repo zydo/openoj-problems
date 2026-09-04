@@ -4,12 +4,21 @@
   "id": 3956,
   "slug": "best-total-from-up-to-m-windows-i",
   "title": "Best Total From Up To M Windows I",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Sliding Window",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

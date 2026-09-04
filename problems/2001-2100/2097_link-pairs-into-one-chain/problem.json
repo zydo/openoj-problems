@@ -4,11 +4,19 @@
   "id": 2097,
   "slug": "link-pairs-into-one-chain",
   "title": "Link Pairs Into One Chain",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "DFS",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Graph Theory",
+    "Eulerian Circuit",
+    "Eulerian Path",
+    "Semi-Eulerian Graph"
   ],
   "invocation": {
     "type": "function",

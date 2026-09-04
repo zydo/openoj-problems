@@ -3,10 +3,16 @@
   "id": 3171,
   "slug": "find-subarray-with-bitwise-or-closest-to-k",
   "title": "Find Subarray With Bitwise OR Closest to K",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Bit Manipulation",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

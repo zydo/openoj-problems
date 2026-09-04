@@ -3,10 +3,15 @@
   "id": 1326,
   "slug": "minimum-number-of-taps-to-open-to-water-a-garden",
   "title": "Minimum Number of Taps to Open to Water a Garden",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

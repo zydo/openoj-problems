@@ -4,8 +4,14 @@
   "id": 2781,
   "slug": "longest-forbidden-free-substring",
   "title": "Longest Forbidden-Free Substring",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

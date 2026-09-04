@@ -4,10 +4,13 @@
   "id": 1965,
   "slug": "items-with-incomplete-details",
   "title": "Items With Incomplete Details",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

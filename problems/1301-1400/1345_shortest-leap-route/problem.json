@@ -4,11 +4,16 @@
   "id": 1345,
   "slug": "shortest-leap-route",
   "title": "Shortest Leap Route",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "BFS",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 441,
   "slug": "staircase-coin-builder",
   "title": "Staircase Coin Builder",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

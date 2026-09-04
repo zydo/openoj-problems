@@ -4,8 +4,12 @@
   "id": 1935,
   "slug": "maximum-number-of-words-you-can-type",
   "title": "Maximum Number of Words You Can Type",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

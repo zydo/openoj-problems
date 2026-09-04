@@ -4,8 +4,13 @@
   "id": 4001,
   "slug": "aggregate-two-time-series",
   "title": "Aggregate Two Time Series",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -3,12 +3,20 @@
   "id": 1461,
   "slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
   "title": "Check If a String Contains All Binary Codes of Size K",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
     "Rolling Hash",
     "Sliding Window"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Rolling Hash",
+    "Hash Function",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

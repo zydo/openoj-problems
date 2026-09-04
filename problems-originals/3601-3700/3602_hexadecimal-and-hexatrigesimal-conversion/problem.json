@@ -4,8 +4,12 @@
   "id": 3602,
   "slug": "hexadecimal-and-hexatrigesimal-conversion",
   "title": "Hexadecimal and Hexatrigesimal Conversion",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

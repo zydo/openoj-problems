@@ -4,8 +4,12 @@
   "id": 2515,
   "slug": "nearest-word-on-the-ring",
   "title": "Nearest Word On The Ring",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

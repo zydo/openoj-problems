@@ -3,11 +3,17 @@
   "id": 1319,
   "slug": "number-of-operations-to-make-network-connected",
   "title": "Number of Operations to Make Network Connected",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Union Find",
     "DFS"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

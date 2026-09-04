@@ -4,10 +4,15 @@
   "id": 3125,
   "slug": "largest-range-start-with-zero-and",
   "title": "Largest Range Start With Zero AND",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "Math"
+  ],
+  "topics": [
+    "String",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 54,
   "slug": "spiral-matrix",
   "title": "Spiral Matrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

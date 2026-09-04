@@ -4,8 +4,12 @@
   "id": 34,
   "slug": "span-of-the-matching-run",
   "title": "Span Of The Matching Run",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

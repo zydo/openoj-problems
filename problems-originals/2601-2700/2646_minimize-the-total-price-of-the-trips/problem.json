@@ -3,12 +3,19 @@
   "id": 2646,
   "slug": "minimize-the-total-price-of-the-trips",
   "title": "Minimize the Total Price of the Trips",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "DFS",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

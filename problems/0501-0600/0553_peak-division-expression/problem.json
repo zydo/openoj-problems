@@ -4,11 +4,16 @@
   "id": 553,
   "slug": "peak-division-expression",
   "title": "Peak Division Expression",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

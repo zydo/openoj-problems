@@ -4,8 +4,13 @@
   "id": 2763,
   "slug": "ragged-gaps-across-every-subarray",
   "title": "Ragged Gaps Across Every Subarray",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

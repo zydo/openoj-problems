@@ -4,8 +4,11 @@
   "id": 1118,
   "slug": "days-in-a-calendar-month",
   "title": "Days in a Calendar Month",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 1427,
   "slug": "net-string-rotation",
   "title": "Net String Rotation",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String"

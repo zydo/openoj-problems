@@ -4,8 +4,13 @@
   "id": 2605,
   "slug": "a-digit-from-each-side",
   "title": "A Digit From Each Side",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

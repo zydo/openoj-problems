@@ -4,11 +4,16 @@
   "id": 1834,
   "slug": "shortest-job-first-schedule",
   "title": "Shortest Job First Schedule",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

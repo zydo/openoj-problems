@@ -4,8 +4,14 @@
   "id": 475,
   "slug": "heaters",
   "title": "Heaters",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

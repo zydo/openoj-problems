@@ -4,11 +4,17 @@
   "id": 1042,
   "slug": "flower-types-for-every-garden",
   "title": "Flower Types for Every Garden",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph Theory",
     "Graph Coloring",
     "Greedy"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Graph Coloring"
   ],
   "invocation": {
     "type": "function",

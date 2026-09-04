@@ -4,8 +4,13 @@
   "id": 903,
   "slug": "valid-permutations-for-di-sequence",
   "title": "Valid Permutations for DI Sequence",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Prefix Sum"

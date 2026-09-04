@@ -4,8 +4,15 @@
   "id": 1681,
   "slug": "minimum-incompatibility",
   "title": "Minimum Incompatibility",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

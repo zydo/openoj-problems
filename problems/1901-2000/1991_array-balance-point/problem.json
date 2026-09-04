@@ -4,8 +4,12 @@
   "id": 1991,
   "slug": "array-balance-point",
   "title": "Array Balance Point",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

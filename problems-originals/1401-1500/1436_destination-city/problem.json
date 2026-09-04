@@ -4,8 +4,13 @@
   "id": 1436,
   "slug": "destination-city",
   "title": "Destination City",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

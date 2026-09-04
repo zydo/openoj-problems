@@ -4,8 +4,12 @@
   "id": 3216,
   "slug": "smallest-digits-after-one-swap",
   "title": "Smallest Digits After One Swap",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

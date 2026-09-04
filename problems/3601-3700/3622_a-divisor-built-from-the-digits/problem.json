@@ -4,8 +4,11 @@
   "id": 3622,
   "slug": "a-divisor-built-from-the-digits",
   "title": "A Divisor Built From the Digits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

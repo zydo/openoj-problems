@@ -4,8 +4,12 @@
   "id": 1243,
   "slug": "settling-peaks-and-valleys",
   "title": "Settling Peaks and Valleys",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

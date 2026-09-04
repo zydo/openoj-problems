@@ -4,8 +4,13 @@
   "id": 1399,
   "slug": "count-largest-group",
   "title": "Count Largest Group",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "Counting"

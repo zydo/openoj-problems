@@ -4,8 +4,12 @@
   "id": 1271,
   "slug": "hexspeak",
   "title": "Hexspeak",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

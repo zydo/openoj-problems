@@ -4,11 +4,18 @@
   "id": 3619,
   "slug": "island-totals-divisible-by-k",
   "title": "Island Totals Divisible by K",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "Breadth-First Search",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

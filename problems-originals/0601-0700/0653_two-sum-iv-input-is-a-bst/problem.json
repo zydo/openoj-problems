@@ -4,8 +4,17 @@
   "id": 653,
   "slug": "two-sum-iv-input-is-a-bst",
   "title": "Two Sum IV - Input is a BST",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Hash Table",
     "Two Pointers",
     "Tree",

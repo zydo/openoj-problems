@@ -4,10 +4,13 @@
   "id": 2839,
   "slug": "matching-strings-with-slot-swaps-i",
   "title": "Matching Strings With Slot Swaps I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Sorting"
+  ],
+  "topics": [
+    "String"
   ],
   "invocation": {
     "type": "function",

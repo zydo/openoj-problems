@@ -4,8 +4,13 @@
   "id": 2018,
   "slug": "slot-the-word",
   "title": "Slot the Word",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Enumeration"

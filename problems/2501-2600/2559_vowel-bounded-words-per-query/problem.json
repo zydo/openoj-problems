@@ -4,8 +4,13 @@
   "id": 2559,
   "slug": "vowel-bounded-words-per-query",
   "title": "Vowel-Bounded Words per Query",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

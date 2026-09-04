@@ -4,8 +4,14 @@
   "id": 285,
   "slug": "inorder-successor-in-bst",
   "title": "Inorder Successor in BST",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Search Tree",

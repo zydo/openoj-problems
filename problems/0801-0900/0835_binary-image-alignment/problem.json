@@ -4,8 +4,12 @@
   "id": 835,
   "slug": "binary-image-alignment",
   "title": "Binary Image Alignment",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

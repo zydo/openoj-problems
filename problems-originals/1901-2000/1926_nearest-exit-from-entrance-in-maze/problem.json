@@ -3,12 +3,17 @@
   "id": 1926,
   "slug": "nearest-exit-from-entrance-in-maze",
   "title": "Nearest Exit from Entrance in Maze",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Breadth-First Search",
     "Matrix",
     "Queue"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

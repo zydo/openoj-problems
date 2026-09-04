@@ -4,8 +4,14 @@
   "id": 622,
   "slug": "design-circular-queue",
   "title": "Design Circular Queue",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Linked List",
+    "Design",
+    "Queue"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Design",

@@ -4,8 +4,13 @@
   "id": 1969,
   "slug": "smallest-product-bit-swaps-can-leave",
   "title": "The Smallest Product Bit Swaps Can Leave",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Recursion"

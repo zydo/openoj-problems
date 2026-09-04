@@ -4,8 +4,12 @@
   "id": 1323,
   "slug": "flip-a-six-to-nine",
   "title": "Flip a Six to Nine",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

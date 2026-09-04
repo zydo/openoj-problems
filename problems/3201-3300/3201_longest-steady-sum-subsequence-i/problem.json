@@ -4,8 +4,12 @@
   "id": 3201,
   "slug": "longest-steady-sum-subsequence-i",
   "title": "Longest Steady-Sum Subsequence I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

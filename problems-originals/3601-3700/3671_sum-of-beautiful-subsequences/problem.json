@@ -4,8 +4,14 @@
   "id": 3671,
   "slug": "sum-of-beautiful-subsequences",
   "title": "Sum of Beautiful Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Indexed Tree",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Indexed Tree",

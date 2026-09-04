@@ -4,8 +4,13 @@
   "id": 3295,
   "slug": "spam-screening",
   "title": "Spam Screening",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

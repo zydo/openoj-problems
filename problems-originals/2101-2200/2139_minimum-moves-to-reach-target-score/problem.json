@@ -4,8 +4,12 @@
   "id": 2139,
   "slug": "minimum-moves-to-reach-target-score",
   "title": "Minimum Moves to Reach Target Score",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

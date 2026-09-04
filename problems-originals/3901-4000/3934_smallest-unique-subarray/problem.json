@@ -4,8 +4,16 @@
   "id": 3934,
   "slug": "smallest-unique-subarray",
   "title": "Smallest Unique Subarray",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

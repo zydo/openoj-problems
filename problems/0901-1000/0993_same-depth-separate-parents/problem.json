@@ -4,10 +4,16 @@
   "id": 993,
   "slug": "same-depth-separate-parents",
   "title": "Same Depth, Separate Parents",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
     "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Binary Tree"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 1226,
   "slug": "the-dining-philosophers",
   "title": "The Dining Philosophers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

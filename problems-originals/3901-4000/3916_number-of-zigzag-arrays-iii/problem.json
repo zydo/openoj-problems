@@ -4,8 +4,13 @@
   "id": 3916,
   "slug": "number-of-zigzag-arrays-iii",
   "title": "Number of ZigZag Arrays III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Prefix Sum"

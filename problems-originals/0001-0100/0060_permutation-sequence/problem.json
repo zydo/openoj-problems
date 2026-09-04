@@ -4,8 +4,12 @@
   "id": 60,
   "slug": "permutation-sequence",
   "title": "Permutation Sequence",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Recursion"
   ],

@@ -4,8 +4,16 @@
   "id": 2014,
   "slug": "longest-subsequence-repeated-k-times",
   "title": "Longest Subsequence Repeated k Times",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Backtracking",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
     "Hash Table",
     "Two Pointers",
     "String",

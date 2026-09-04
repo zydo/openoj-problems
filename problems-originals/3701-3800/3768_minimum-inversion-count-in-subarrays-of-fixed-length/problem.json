@@ -4,8 +4,13 @@
   "id": 3768,
   "slug": "minimum-inversion-count-in-subarrays-of-fixed-length",
   "title": "Minimum Inversion Count in Subarrays of Fixed Length",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Segment Tree",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Segment Tree",
     "Sliding Window"

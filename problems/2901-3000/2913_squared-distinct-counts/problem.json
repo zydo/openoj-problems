@@ -4,10 +4,15 @@
   "id": 2913,
   "slug": "squared-distinct-counts",
   "title": "Squared Distinct Counts I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 1805,
   "slug": "number-of-different-integers-in-a-string",
   "title": "Number of Different Integers in a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

@@ -4,10 +4,16 @@
   "id": 4008,
   "slug": "least-starting-power-to-clear-the-monsters",
   "title": "Least Starting Power to Clear the Monsters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Prefix Sum",
+    "Binary Search",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

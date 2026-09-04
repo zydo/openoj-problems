@@ -4,8 +4,11 @@
   "id": 1527,
   "slug": "patients-with-a-condition",
   "title": "Patients With a Condition",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

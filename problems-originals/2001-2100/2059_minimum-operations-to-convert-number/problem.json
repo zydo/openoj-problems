@@ -4,8 +4,12 @@
   "id": 2059,
   "slug": "minimum-operations-to-convert-number",
   "title": "Minimum Operations to Convert Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search"
   ],

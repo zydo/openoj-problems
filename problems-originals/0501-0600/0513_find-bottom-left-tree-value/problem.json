@@ -4,8 +4,14 @@
   "id": 513,
   "slug": "find-bottom-left-tree-value",
   "title": "Find Bottom Left Tree Value",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

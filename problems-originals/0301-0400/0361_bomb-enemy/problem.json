@@ -4,8 +4,13 @@
   "id": 361,
   "slug": "bomb-enemy",
   "title": "Bomb Enemy",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

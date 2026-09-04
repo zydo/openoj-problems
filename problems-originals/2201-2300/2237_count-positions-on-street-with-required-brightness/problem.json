@@ -4,8 +4,12 @@
   "id": 2237,
   "slug": "count-positions-on-street-with-required-brightness",
   "title": "Count Positions on Street With Required Brightness",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

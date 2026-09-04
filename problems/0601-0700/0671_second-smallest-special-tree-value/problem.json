@@ -4,8 +4,13 @@
   "id": 671,
   "slug": "second-smallest-special-tree-value",
   "title": "Second Smallest Value in a Special Tree",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

@@ -4,9 +4,13 @@
   "id": 2695,
   "slug": "a-pack-of-numbers",
   "title": "A Pack Of Numbers",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
+    "Design"
+  ],
+  "topics": [
+    "Array",
     "Design"
   ],
   "invocation": {

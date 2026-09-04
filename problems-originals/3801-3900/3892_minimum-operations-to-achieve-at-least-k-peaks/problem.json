@@ -4,8 +4,12 @@
   "id": 3892,
   "slug": "minimum-operations-to-achieve-at-least-k-peaks",
   "title": "Minimum Operations to Achieve At Least K Peaks",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

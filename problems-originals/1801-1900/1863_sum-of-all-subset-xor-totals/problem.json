@@ -4,12 +4,20 @@
   "id": 1863,
   "slug": "sum-of-all-subset-xor-totals",
   "title": "Sum of All Subset XOR Totals",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math",
     "Backtracking",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Backtracking",
+    "Bit Manipulation",
+    "Combinatorics",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

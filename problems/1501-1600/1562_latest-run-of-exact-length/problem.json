@@ -4,10 +4,16 @@
   "id": 1562,
   "slug": "latest-run-of-exact-length",
   "title": "Latest Run of Exact Length",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
     "Simulation"
   ],
   "invocation": {

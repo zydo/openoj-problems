@@ -3,11 +3,16 @@
   "id": 53,
   "slug": "maximum-subarray",
   "title": "Maximum Subarray",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

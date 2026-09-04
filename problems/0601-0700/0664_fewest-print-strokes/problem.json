@@ -4,8 +4,12 @@
   "id": 664,
   "slug": "fewest-print-strokes",
   "title": "Fewest Print Strokes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

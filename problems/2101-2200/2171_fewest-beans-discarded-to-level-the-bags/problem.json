@@ -4,11 +4,18 @@
   "id": 2171,
   "slug": "fewest-beans-discarded-to-level-the-bags",
   "title": "Fewest Beans Discarded to Level the Bags",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Enumeration",
     "Prefix Sum"
   ],
   "invocation": {

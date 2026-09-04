@@ -4,8 +4,12 @@
   "id": 1516,
   "slug": "transplanting-a-subtree",
   "title": "Transplanting a Subtree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search"
   ],

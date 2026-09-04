@@ -4,8 +4,12 @@
   "id": 3249,
   "slug": "evenly-split-nodes",
   "title": "Evenly Split Nodes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search"
   ],

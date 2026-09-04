@@ -4,12 +4,21 @@
   "id": 2507,
   "slug": "smallest-factor-sum-fixed-point",
   "title": "Smallest Factor-Sum Fixed Point",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Simulation",
     "Number Theory",
     "Prime Factorization"
+  ],
+  "topics": [
+    "Math",
+    "Simulation",
+    "Number Theory",
+    "Prime Factorization",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
   ],
   "invocation": {
     "type": "function",

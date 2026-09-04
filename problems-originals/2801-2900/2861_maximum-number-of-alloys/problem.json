@@ -4,8 +4,12 @@
   "id": 2861,
   "slug": "maximum-number-of-alloys",
   "title": "Maximum Number of Alloys",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

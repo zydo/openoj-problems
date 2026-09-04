@@ -4,8 +4,11 @@
   "id": 1784,
   "slug": "single-run-of-ones",
   "title": "A Single Run of Ones",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 296,
   "slug": "best-meeting-point",
   "title": "Best Meeting Point",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting",

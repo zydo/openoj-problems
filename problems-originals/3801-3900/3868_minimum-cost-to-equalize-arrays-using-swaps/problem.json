@@ -4,8 +4,14 @@
   "id": 3868,
   "slug": "minimum-cost-to-equalize-arrays-using-swaps",
   "title": "Minimum Cost to Equalize Arrays Using Swaps",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

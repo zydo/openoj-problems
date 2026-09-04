@@ -4,8 +4,12 @@
   "id": 3881,
   "slug": "exactly-k-sightings-from-the-post",
   "title": "Exactly K Sightings From the Post",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Combinatorics"
   ],

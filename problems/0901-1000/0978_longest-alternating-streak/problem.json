@@ -4,8 +4,13 @@
   "id": 978,
   "slug": "longest-alternating-streak",
   "title": "Longest Alternating Streak",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sliding Window"

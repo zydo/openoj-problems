@@ -4,8 +4,12 @@
   "id": 2330,
   "slug": "fixable-palindrome-iv",
   "title": "Fixable Palindrome IV",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

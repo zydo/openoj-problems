@@ -4,8 +4,13 @@
   "id": 1153,
   "slug": "string-transforms-into-another-string",
   "title": "String Transforms Into Another String",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Graph Theory"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Graph Theory"

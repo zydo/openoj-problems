@@ -4,8 +4,11 @@
   "id": 1667,
   "slug": "fix-names-in-a-table",
   "title": "Fix Names in a Table",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

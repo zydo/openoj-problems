@@ -4,8 +4,12 @@
   "id": 3824,
   "slug": "the-smallest-affordable-step",
   "title": "The Smallest Affordable Step",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

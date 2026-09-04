@@ -4,8 +4,13 @@
   "id": 2186,
   "slug": "minimum-number-of-steps-to-make-two-strings-anagram-ii",
   "title": "Minimum Number of Steps to Make Two Strings Anagram II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

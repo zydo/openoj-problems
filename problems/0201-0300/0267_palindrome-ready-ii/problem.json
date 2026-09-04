@@ -4,8 +4,13 @@
   "id": 267,
   "slug": "palindrome-ready-ii",
   "title": "Palindrome Ready II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Backtracking"

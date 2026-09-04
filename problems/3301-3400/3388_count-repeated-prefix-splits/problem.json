@@ -4,8 +4,12 @@
   "id": 3388,
   "slug": "count-repeated-prefix-splits",
   "title": "Count Repeated-Prefix Splits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

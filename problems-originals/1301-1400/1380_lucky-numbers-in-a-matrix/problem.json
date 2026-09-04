@@ -4,8 +4,12 @@
   "id": 1380,
   "slug": "lucky-numbers-in-a-matrix",
   "title": "Lucky Numbers in a Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

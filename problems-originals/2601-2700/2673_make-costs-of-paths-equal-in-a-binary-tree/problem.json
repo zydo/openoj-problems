@@ -4,8 +4,15 @@
   "id": 2673,
   "slug": "make-costs-of-paths-equal-in-a-binary-tree",
   "title": "Make Costs of Paths Equal in a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy",

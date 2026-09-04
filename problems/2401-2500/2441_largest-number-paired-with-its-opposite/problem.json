@@ -4,10 +4,16 @@
   "id": 2441,
   "slug": "largest-number-paired-with-its-opposite",
   "title": "Largest Number Paired With Its Opposite",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,9 +4,15 @@
   "id": 3890,
   "slug": "cube-sums-reached-two-ways",
   "title": "Cube Sums Reached Two Ways",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
+    "Hash Table",
+    "Sorting",
     "Counting",
     "Enumeration"
   ],

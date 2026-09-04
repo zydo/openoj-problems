@@ -4,8 +4,13 @@
   "id": 1598,
   "slug": "steps-back-to-the-main-folder",
   "title": "Steps Back to the Main Folder",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "Array",
     "String",
     "Stack"

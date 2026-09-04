@@ -3,10 +3,18 @@
   "id": 2297,
   "slug": "jump-game-viii",
   "title": "Jump Game VIII",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Monotonic Stack",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Graph Theory",
+    "Monotonic Stack",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

@@ -3,8 +3,12 @@
   "id": 330,
   "slug": "patching-array",
   "title": "Patching Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
     "Greedy"
   ],
   "invocation": {

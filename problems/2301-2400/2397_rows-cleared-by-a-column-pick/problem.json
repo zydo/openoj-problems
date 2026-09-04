@@ -4,8 +4,15 @@
   "id": 2397,
   "slug": "rows-cleared-by-a-column-pick",
   "title": "Rows Cleared by a Column Pick",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Backtracking",
     "Bit Manipulation",
     "Matrix",
     "Enumeration"

@@ -4,10 +4,17 @@
   "id": 2094,
   "slug": "even-numbers-from-digits",
   "title": "Even Numbers From Digits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Recursion",
+    "Sorting",
     "Enumeration"
   ],
   "invocation": {

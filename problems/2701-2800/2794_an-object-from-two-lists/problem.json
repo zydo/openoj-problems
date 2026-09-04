@@ -4,9 +4,13 @@
   "id": 2794,
   "slug": "an-object-from-two-lists",
   "title": "An Object From Two Lists",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table"
   ],
   "invocation": {
     "type": "interactive",

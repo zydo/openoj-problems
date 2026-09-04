@@ -3,8 +3,13 @@
   "id": 3026,
   "slug": "maximum-good-subarray-sum",
   "title": "Maximum Good Subarray Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

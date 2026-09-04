@@ -4,8 +4,14 @@
   "id": 1478,
   "slug": "allocate-mailboxes",
   "title": "Allocate Mailboxes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

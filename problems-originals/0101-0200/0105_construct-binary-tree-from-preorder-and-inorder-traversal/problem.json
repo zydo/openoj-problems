@@ -3,12 +3,19 @@
   "id": 105,
   "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
   "title": "Construct Binary Tree from Preorder and Inorder Traversal",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "Array",
     "Divide and Conquer",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

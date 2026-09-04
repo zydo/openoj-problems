@@ -4,9 +4,14 @@
   "id": 3551,
   "slug": "fewest-swaps-for-digit-sum-order",
   "title": "Fewest Swaps For Digit-Sum Order",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Sorting"
   ],
   "invocation": {

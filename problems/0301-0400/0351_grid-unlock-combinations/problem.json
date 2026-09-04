@@ -4,11 +4,17 @@
   "id": 351,
   "slug": "grid-unlock-combinations",
   "title": "Grid Unlock Combinations",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Backtracking",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,20 @@
   "id": 2343,
   "slug": "kth-smallest-after-a-trim",
   "title": "Kth Smallest After a Trim",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Radix Sort",
+    "Quickselect"
   ],
   "invocation": {
     "type": "function",

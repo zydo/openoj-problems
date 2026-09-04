@@ -4,8 +4,13 @@
   "id": 2254,
   "slug": "design-video-sharing-platform",
   "title": "Design Video Sharing Platform",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Heap (Priority Queue)"

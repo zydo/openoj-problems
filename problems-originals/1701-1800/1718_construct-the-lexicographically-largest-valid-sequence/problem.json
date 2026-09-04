@@ -4,8 +4,12 @@
   "id": 1718,
   "slug": "construct-the-lexicographically-largest-valid-sequence",
   "title": "Construct the Lexicographically Largest Valid Sequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Backtracking"
   ],

@@ -4,11 +4,22 @@
   "id": 773,
   "slug": "fewest-moves-on-a-2x3-tile-grid",
   "title": "Fewest Moves on a 2x3 Tile Grid",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Breadth-First Search",
     "Matrix",
     "Hash Set"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Breadth-First Search",
+    "Memoization",
+    "Matrix",
+    "Heuristic Search",
+    "Bidirectional Search",
+    "A* Search"
   ],
   "invocation": {
     "type": "function",

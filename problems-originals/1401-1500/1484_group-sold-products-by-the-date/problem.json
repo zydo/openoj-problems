@@ -4,8 +4,11 @@
   "id": 1484,
   "slug": "group-sold-products-by-the-date",
   "title": "Group Sold Products By The Date",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

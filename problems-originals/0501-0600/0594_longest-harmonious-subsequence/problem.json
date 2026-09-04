@@ -4,8 +4,15 @@
   "id": 594,
   "slug": "longest-harmonious-subsequence",
   "title": "Longest Harmonious Subsequence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

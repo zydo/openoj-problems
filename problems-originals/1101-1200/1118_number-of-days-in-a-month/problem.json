@@ -4,8 +4,11 @@
   "id": 1118,
   "slug": "number-of-days-in-a-month",
   "title": "Number of Days in a Month",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

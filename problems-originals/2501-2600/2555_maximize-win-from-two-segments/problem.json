@@ -4,8 +4,13 @@
   "id": 2555,
   "slug": "maximize-win-from-two-segments",
   "title": "Maximize Win From Two Segments",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sliding Window"

@@ -4,11 +4,19 @@
   "id": 333,
   "slug": "maximum-ordered-subtree",
   "title": "Maximum Ordered Subtree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Search Tree",
+    "DP on Trees"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree",
     "DP on Trees"
   ],
   "invocation": {

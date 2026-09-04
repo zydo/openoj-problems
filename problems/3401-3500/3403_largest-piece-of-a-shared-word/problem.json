@@ -4,8 +4,13 @@
   "id": 3403,
   "slug": "largest-piece-of-a-shared-word",
   "title": "Largest Piece Of A Shared Word",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Enumeration"

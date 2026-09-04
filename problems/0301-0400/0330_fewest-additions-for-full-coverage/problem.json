@@ -4,8 +4,12 @@
   "id": 330,
   "slug": "fewest-additions-for-full-coverage",
   "title": "Fewest Additions For Full Coverage",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
     "Greedy"
   ],
   "invocation": {

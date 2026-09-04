@@ -4,8 +4,13 @@
   "id": 3837,
   "slug": "delayed-count-of-equal-elements",
   "title": "Delayed Count of Equal Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

@@ -4,11 +4,19 @@
   "id": 3539,
   "slug": "product-sum-of-bit-counting-sequences",
   "title": "Product Sum Of Bit-Counting Sequences",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bit Manipulation",
     "Combinatorics"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Combinatorics",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

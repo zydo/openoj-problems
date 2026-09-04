@@ -4,8 +4,15 @@
   "id": 526,
   "slug": "beautiful-arrangement",
   "title": "Beautiful Arrangement",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Backtracking",

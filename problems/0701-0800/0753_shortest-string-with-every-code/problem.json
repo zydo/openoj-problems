@@ -4,11 +4,19 @@
   "id": 753,
   "slug": "shortest-string-with-every-code",
   "title": "Shortest String With Every Code",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "DFS",
     "Backtracking"
+  ],
+  "topics": [
+    "String",
+    "Depth-First Search",
+    "Graph Theory",
+    "Eulerian Circuit",
+    "Eulerian Path",
+    "Eulerian Graph"
   ],
   "invocation": {
     "type": "function",

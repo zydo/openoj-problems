@@ -4,8 +4,13 @@
   "id": 3184,
   "slug": "count-pairs-that-form-a-complete-day-i",
   "title": "Count Pairs That Form a Complete Day I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

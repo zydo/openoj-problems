@@ -4,11 +4,17 @@
   "id": 713,
   "slug": "product-bounded-segment-count",
   "title": "Product-Bounded Segment Count",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

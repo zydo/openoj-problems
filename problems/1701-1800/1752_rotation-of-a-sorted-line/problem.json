@@ -4,8 +4,11 @@
   "id": 1752,
   "slug": "rotation-of-a-sorted-line",
   "title": "Rotation of a Sorted Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

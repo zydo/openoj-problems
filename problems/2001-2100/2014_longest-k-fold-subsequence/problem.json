@@ -4,10 +4,18 @@
   "id": 2014,
   "slug": "longest-k-fold-subsequence",
   "title": "Longest k-Fold Subsequence",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Backtracking",
+    "Enumeration"
+  ],
+  "topics": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Backtracking",
+    "Counting",
     "Enumeration"
   ],
   "invocation": {

@@ -4,8 +4,15 @@
   "id": 2092,
   "slug": "spreading-a-whisper-at-meetings",
   "title": "Spreading a Whisper at Meetings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Sorting"
+  ],
+  "topics": [
+    "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",
     "Graph Theory",

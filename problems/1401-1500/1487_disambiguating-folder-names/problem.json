@@ -4,8 +4,13 @@
   "id": 1487,
   "slug": "disambiguating-folder-names",
   "title": "Disambiguating Folder Names",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

@@ -3,12 +3,18 @@
   "id": 502,
   "slug": "ipo",
   "title": "IPO",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

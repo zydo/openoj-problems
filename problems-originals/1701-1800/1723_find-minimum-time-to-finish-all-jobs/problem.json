@@ -3,12 +3,19 @@
   "id": 1723,
   "slug": "find-minimum-time-to-finish-all-jobs",
   "title": "Find Minimum Time to Finish All Jobs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Backtracking",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

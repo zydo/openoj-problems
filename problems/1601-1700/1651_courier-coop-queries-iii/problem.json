@@ -4,10 +4,13 @@
   "id": 1651,
   "slug": "courier-coop-queries-iii",
   "title": "Courier Co-op Queries III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

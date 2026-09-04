@@ -4,8 +4,14 @@
   "id": 1183,
   "slug": "maximum-number-of-ones",
   "title": "Maximum Number of Ones",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Sorting",

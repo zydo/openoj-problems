@@ -4,8 +4,11 @@
   "id": 674,
   "slug": "longest-increasing-run",
   "title": "Longest Increasing Run",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

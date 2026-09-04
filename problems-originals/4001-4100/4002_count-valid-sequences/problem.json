@@ -4,8 +4,13 @@
   "id": 4002,
   "slug": "count-valid-sequences",
   "title": "Count Valid Sequences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Combinatorics",
+    "Math",
+    "Dynamic Programming"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

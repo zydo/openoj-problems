@@ -4,8 +4,14 @@
   "id": 1199,
   "slug": "cheapest-build-schedule",
   "title": "Cheapest Build Schedule",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

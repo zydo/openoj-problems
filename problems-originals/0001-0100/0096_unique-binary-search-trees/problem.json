@@ -4,8 +4,15 @@
   "id": 96,
   "slug": "unique-binary-search-trees",
   "title": "Unique Binary Search Trees",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Tree",

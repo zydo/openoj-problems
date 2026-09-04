@@ -4,8 +4,12 @@
   "id": 1583,
   "slug": "restless-friends-after-pairing",
   "title": "Restless Friends After Pairing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

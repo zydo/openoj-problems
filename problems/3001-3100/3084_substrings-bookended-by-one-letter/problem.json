@@ -4,8 +4,13 @@
   "id": 3084,
   "slug": "substrings-bookended-by-one-letter",
   "title": "Substrings Bookended By One Letter",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Math",
     "String",
     "Counting"

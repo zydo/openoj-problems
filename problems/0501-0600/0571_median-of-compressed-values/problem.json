@@ -4,10 +4,13 @@
   "id": 571,
   "slug": "median-of-compressed-values",
   "title": "Median of Compressed Values",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

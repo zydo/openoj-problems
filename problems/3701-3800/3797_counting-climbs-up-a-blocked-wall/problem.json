@@ -4,8 +4,14 @@
   "id": 3797,
   "slug": "counting-climbs-up-a-blocked-wall",
   "title": "Counting Climbs Up A Blocked Wall",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix",

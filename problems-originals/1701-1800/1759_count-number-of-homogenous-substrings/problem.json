@@ -4,8 +4,12 @@
   "id": 1759,
   "slug": "count-number-of-homogenous-substrings",
   "title": "Count Number of Homogenous Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

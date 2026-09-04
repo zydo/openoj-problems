@@ -4,8 +4,11 @@
   "id": 3156,
   "slug": "employee-task-duration-and-concurrent-tasks",
   "title": "Employee Task Duration and Concurrent Tasks",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

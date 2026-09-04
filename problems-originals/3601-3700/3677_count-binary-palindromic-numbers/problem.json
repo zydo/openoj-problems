@@ -4,8 +4,12 @@
   "id": 3677,
   "slug": "count-binary-palindromic-numbers",
   "title": "Count Binary Palindromic Numbers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

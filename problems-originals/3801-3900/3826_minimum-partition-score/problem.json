@@ -4,8 +4,16 @@
   "id": 3826,
   "slug": "minimum-partition-score",
   "title": "Minimum Partition Score",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Queue",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Dynamic Programming",

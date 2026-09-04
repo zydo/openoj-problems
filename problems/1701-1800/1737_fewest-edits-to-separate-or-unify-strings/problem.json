@@ -4,8 +4,14 @@
   "id": 1737,
   "slug": "fewest-edits-to-separate-or-unify-strings",
   "title": "Fewest Edits to Separate or Unify Strings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Counting",
     "Prefix Sum"

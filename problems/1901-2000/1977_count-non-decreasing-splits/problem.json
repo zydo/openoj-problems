@@ -4,10 +4,15 @@
   "id": 1977,
   "slug": "count-non-decreasing-splits",
   "title": "Count Non-Decreasing Splits",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

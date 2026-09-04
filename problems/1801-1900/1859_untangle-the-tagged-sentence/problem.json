@@ -4,10 +4,15 @@
   "id": 1859,
   "slug": "untangle-the-tagged-sentence",
   "title": "Untangle the Tagged Sentence",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Sorting"
+  ],
+  "topics": [
+    "String",
+    "Sorting",
+    "Bubble Sort"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,13 @@
   "id": 2668,
   "slug": "the-newest-payroll-record",
   "title": "The Newest Payroll Record",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -3,8 +3,13 @@
   "id": 318,
   "slug": "maximum-product-of-word-lengths",
   "title": "Maximum Product of Word Lengths",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Bit Manipulation"

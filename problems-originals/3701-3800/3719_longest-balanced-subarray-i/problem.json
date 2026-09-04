@@ -4,8 +4,15 @@
   "id": 3719,
   "slug": "longest-balanced-subarray-i",
   "title": "Longest Balanced Subarray I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Segment Tree",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Divide and Conquer",

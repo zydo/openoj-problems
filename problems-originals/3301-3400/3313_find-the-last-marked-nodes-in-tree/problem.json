@@ -4,8 +4,12 @@
   "id": 3313,
   "slug": "find-the-last-marked-nodes-in-tree",
   "title": "Find the Last Marked Nodes in Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search"
   ],

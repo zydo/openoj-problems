@@ -4,8 +4,12 @@
   "id": 2643,
   "slug": "densest-row-of-ones",
   "title": "Densest Row of Ones",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

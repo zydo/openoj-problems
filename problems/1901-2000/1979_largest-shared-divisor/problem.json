@@ -4,11 +4,18 @@
   "id": 1979,
   "slug": "largest-shared-divisor",
   "title": "Largest Shared Divisor",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Number Theory",
     "Euclidean Algorithm"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

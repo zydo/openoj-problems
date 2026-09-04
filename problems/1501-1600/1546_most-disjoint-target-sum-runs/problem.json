@@ -4,8 +4,14 @@
   "id": 1546,
   "slug": "most-disjoint-target-sum-runs",
   "title": "Most Disjoint Target-Sum Runs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

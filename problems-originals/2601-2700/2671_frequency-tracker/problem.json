@@ -4,8 +4,12 @@
   "id": 2671,
   "slug": "frequency-tracker",
   "title": "Frequency Tracker",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design"
+  ],
+  "topics": [
     "Hash Table",
     "Design"
   ],

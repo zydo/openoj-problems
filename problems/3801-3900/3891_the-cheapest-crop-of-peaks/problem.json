@@ -4,11 +4,17 @@
   "id": 3891,
   "slug": "the-cheapest-crop-of-peaks",
   "title": "The Cheapest Crop of Peaks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 528,
   "slug": "weighted-random-draw",
   "title": "Weighted Random Draw",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Binary Search",
+    "Prefix Sum",
+    "Randomized"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Binary Search",
     "Prefix Sum",
     "Randomized"

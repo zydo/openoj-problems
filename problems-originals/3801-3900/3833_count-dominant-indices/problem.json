@@ -4,8 +4,12 @@
   "id": 3833,
   "slug": "count-dominant-indices",
   "title": "Count Dominant Indices",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

@@ -4,8 +4,13 @@
   "id": 1387,
   "slug": "sort-integers-by-the-power-value",
   "title": "Sort Integers by The Power Value",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Memoization",
+    "Sorting"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Memoization",
     "Sorting"

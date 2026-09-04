@@ -4,8 +4,12 @@
   "id": 2348,
   "slug": "counting-all-zero-stretches",
   "title": "Counting All-Zero Stretches",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

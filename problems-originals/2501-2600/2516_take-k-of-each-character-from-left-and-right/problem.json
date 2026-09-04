@@ -4,8 +4,13 @@
   "id": 2516,
   "slug": "take-k-of-each-character-from-left-and-right",
   "title": "Take K of Each Character From Left and Right",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

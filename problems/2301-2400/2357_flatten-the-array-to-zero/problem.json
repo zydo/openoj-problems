@@ -4,11 +4,19 @@
   "id": 2357,
   "slug": "flatten-the-array-to-zero",
   "title": "Flatten the Array to Zero",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

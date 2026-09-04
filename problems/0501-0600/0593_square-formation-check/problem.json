@@ -4,8 +4,12 @@
   "id": 593,
   "slug": "square-formation-check",
   "title": "Square Formation Check",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

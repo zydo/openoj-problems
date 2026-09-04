@@ -4,8 +4,12 @@
   "id": 3693,
   "slug": "climbing-stairs-ii",
   "title": "Climbing Stairs II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

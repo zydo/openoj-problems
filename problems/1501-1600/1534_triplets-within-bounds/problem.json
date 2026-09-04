@@ -4,8 +4,12 @@
   "id": 1534,
   "slug": "triplets-within-bounds",
   "title": "Triplets Within Bounds",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

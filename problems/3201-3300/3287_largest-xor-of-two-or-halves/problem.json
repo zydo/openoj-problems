@@ -4,8 +4,13 @@
   "id": 3287,
   "slug": "largest-xor-of-two-or-halves",
   "title": "Largest XOR of Two OR Halves",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation"

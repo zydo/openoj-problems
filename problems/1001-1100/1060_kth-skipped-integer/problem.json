@@ -4,8 +4,12 @@
   "id": 1060,
   "slug": "kth-skipped-integer",
   "title": "Kth Skipped Integer",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

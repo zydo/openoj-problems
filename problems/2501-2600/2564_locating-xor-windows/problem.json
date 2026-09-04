@@ -4,8 +4,14 @@
   "id": 2564,
   "slug": "locating-xor-windows",
   "title": "Locating XOR Windows",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

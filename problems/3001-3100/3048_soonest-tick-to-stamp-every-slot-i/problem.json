@@ -4,8 +4,12 @@
   "id": 3048,
   "slug": "soonest-tick-to-stamp-every-slot-i",
   "title": "Soonest Tick To Stamp Every Slot I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

@@ -3,11 +3,19 @@
   "id": 839,
   "slug": "similar-string-groups",
   "title": "Similar String Groups",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Graph",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

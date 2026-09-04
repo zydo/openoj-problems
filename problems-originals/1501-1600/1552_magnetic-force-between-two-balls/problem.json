@@ -3,8 +3,13 @@
   "id": 1552,
   "slug": "magnetic-force-between-two-balls",
   "title": "Magnetic Force Between Two Balls",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

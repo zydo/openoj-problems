@@ -4,8 +4,13 @@
   "id": 1037,
   "slug": "valid-boomerang",
   "title": "Valid Boomerang",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

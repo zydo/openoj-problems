@@ -4,8 +4,12 @@
   "id": 1206,
   "slug": "design-skiplist",
   "title": "Design Skiplist",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Linked List",
+    "Design"
+  ],
+  "topics": [
     "Linked List",
     "Design"
   ],

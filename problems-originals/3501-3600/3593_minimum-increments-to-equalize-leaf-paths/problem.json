@@ -4,8 +4,14 @@
   "id": 3593,
   "slug": "minimum-increments-to-equalize-leaf-paths",
   "title": "Minimum Increments to Equalize Leaf Paths",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Tree",

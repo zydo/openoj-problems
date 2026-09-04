@@ -4,12 +4,19 @@
   "id": 947,
   "slug": "connected-stone-removal",
   "title": "Connected Stone Removal",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Depth-First Search",
     "Union-Find",
     "Graph Theory"
+  ],
+  "topics": [
+    "Hash Table",
+    "Depth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Bipartite Graph"
   ],
   "invocation": {
     "type": "function",

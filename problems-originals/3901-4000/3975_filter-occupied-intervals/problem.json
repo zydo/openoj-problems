@@ -4,8 +4,12 @@
   "id": 3975,
   "slug": "filter-occupied-intervals",
   "title": "Filter Occupied Intervals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

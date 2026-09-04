@@ -4,11 +4,17 @@
   "id": 2442,
   "slug": "distinct-values-after-digit-reversal",
   "title": "Distinct Values After Digit Reversal",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

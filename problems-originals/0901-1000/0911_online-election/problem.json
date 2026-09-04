@@ -4,8 +4,14 @@
   "id": 911,
   "slug": "online-election",
   "title": "Online Election",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

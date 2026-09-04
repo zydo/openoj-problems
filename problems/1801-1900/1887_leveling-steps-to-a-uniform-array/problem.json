@@ -4,8 +4,12 @@
   "id": 1887,
   "slug": "leveling-steps-to-a-uniform-array",
   "title": "Leveling Steps to a Uniform Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

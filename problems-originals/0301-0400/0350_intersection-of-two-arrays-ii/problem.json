@@ -4,8 +4,15 @@
   "id": 350,
   "slug": "intersection-of-two-arrays-ii",
   "title": "Intersection of Two Arrays II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

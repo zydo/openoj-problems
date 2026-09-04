@@ -4,9 +4,15 @@
   "id": 457,
   "slug": "consistent-direction-cycle",
   "title": "Consistent-Direction Cycle",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Two Pointers",
+    "Floyd's Cycle Finding Algorithm"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Two Pointers",
     "Floyd's Cycle Finding Algorithm"
   ],

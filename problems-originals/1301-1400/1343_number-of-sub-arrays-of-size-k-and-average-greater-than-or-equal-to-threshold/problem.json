@@ -4,8 +4,12 @@
   "id": 1343,
   "slug": "number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold",
   "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

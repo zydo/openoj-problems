@@ -4,8 +4,14 @@
   "id": 3225,
   "slug": "white-neighbors-of-painted-columns",
   "title": "White Neighbors Of Painted Columns",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix",

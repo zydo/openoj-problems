@@ -3,8 +3,13 @@
   "id": 1423,
   "slug": "maximum-points-you-can-obtain-from-cards",
   "title": "Maximum Points You Can Obtain from Cards",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Sliding Window",
     "Prefix Sum"

@@ -4,12 +4,19 @@
   "id": 410,
   "slug": "smallest-largest-split-sum",
   "title": "Smallest Largest Split Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Dynamic Programming",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

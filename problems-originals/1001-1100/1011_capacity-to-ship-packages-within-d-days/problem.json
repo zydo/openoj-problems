@@ -3,10 +3,14 @@
   "id": 1011,
   "slug": "capacity-to-ship-packages-within-d-days",
   "title": "Capacity To Ship Packages Within D Days",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

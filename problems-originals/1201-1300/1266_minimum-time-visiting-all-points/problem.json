@@ -4,8 +4,13 @@
   "id": 1266,
   "slug": "minimum-time-visiting-all-points",
   "title": "Minimum Time Visiting All Points",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

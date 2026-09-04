@@ -4,8 +4,11 @@
   "id": 1596,
   "slug": "the-most-frequently-ordered-products-for-each-customer",
   "title": "The Most Frequently Ordered Products for Each Customer",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

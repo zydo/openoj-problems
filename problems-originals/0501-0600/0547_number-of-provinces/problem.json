@@ -3,12 +3,18 @@
   "id": 547,
   "slug": "number-of-provinces",
   "title": "Number of Provinces",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Union-Find",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

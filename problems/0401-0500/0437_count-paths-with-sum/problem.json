@@ -4,8 +4,13 @@
   "id": 437,
   "slug": "count-paths-with-sum",
   "title": "Count Paths With Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

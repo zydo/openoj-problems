@@ -4,11 +4,18 @@
   "id": 1561,
   "slug": "second-best-of-each-triple",
   "title": "Second-Best of Each Triple",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Game Theory"
   ],
   "invocation": {
     "type": "function",

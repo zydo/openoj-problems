@@ -3,11 +3,18 @@
   "id": 732,
   "slug": "my-calendar-iii",
   "title": "My Calendar III",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Balanced BST",
     "Difference Array"
+  ],
+  "topics": [
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Prefix Sum",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

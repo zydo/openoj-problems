@@ -4,8 +4,13 @@
   "id": 3041,
   "slug": "maximize-consecutive-elements-in-an-array-after-modification",
   "title": "Maximize Consecutive Elements in an Array After Modification",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sorting"

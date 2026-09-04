@@ -4,8 +4,11 @@
   "id": 1272,
   "slug": "cut-from-sorted-intervals",
   "title": "Cut From Sorted Intervals",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

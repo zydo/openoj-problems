@@ -4,8 +4,12 @@
   "id": 3753,
   "slug": "total-waviness-of-numbers-in-range-ii",
   "title": "Total Waviness of Numbers in Range II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

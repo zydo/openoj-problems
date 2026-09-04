@@ -3,11 +3,17 @@
   "id": 264,
   "slug": "ugly-number-ii",
   "title": "Ugly Number II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Two Pointers",
     "Heap"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

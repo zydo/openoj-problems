@@ -4,8 +4,13 @@
   "id": 3558,
   "slug": "number-of-ways-to-assign-edge-weights-i",
   "title": "Number of Ways to Assign Edge Weights I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Math",
     "Tree",
     "Depth-First Search"

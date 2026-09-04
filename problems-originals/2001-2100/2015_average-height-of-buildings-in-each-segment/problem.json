@@ -4,8 +4,14 @@
   "id": 2015,
   "slug": "average-height-of-buildings-in-each-segment",
   "title": "Average Height of Buildings in Each Segment",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)",

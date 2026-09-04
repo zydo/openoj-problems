@@ -4,8 +4,14 @@
   "id": 3767,
   "slug": "maximize-points-after-choosing-k-tasks",
   "title": "Maximize Points After Choosing K Tasks",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

@@ -4,8 +4,13 @@
   "id": 2799,
   "slug": "subarrays-that-collect-every-value",
   "title": "Subarrays That Collect Every Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

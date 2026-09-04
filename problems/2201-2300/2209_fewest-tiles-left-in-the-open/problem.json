@@ -4,8 +4,13 @@
   "id": 2209,
   "slug": "fewest-tiles-left-in-the-open",
   "title": "Fewest Tiles Left in the Open",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Prefix Sum"

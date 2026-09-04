@@ -4,8 +4,12 @@
   "id": 125,
   "slug": "valid-palindrome",
   "title": "Valid Palindrome",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

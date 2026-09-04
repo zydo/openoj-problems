@@ -4,8 +4,16 @@
   "id": 1825,
   "slug": "finding-mk-average",
   "title": "Finding MK Average",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Design",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set",
+    "Treap"
+  ],
+  "topics": [
     "Design",
     "Queue",
     "Heap (Priority Queue)",

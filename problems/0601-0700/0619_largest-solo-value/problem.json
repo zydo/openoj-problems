@@ -4,10 +4,13 @@
   "id": 619,
   "slug": "largest-solo-value",
   "title": "Largest Solo Value",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

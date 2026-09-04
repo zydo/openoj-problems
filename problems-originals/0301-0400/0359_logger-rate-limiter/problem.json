@@ -4,8 +4,13 @@
   "id": 359,
   "slug": "logger-rate-limiter",
   "title": "Logger Rate Limiter",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Data Stream"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Data Stream"

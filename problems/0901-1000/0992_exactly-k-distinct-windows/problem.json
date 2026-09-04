@@ -4,8 +4,14 @@
   "id": 992,
   "slug": "exactly-k-distinct-windows",
   "title": "Exactly-K Distinct Windows",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

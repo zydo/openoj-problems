@@ -4,8 +4,12 @@
   "id": 2484,
   "slug": "count-palindromic-subsequences",
   "title": "Count Palindromic Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

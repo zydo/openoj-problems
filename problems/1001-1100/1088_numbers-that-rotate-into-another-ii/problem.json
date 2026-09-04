@@ -4,8 +4,12 @@
   "id": 1088,
   "slug": "numbers-that-rotate-into-another-ii",
   "title": "Numbers That Rotate Into Another II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Backtracking"
+  ],
+  "topics": [
     "Math",
     "Backtracking"
   ],

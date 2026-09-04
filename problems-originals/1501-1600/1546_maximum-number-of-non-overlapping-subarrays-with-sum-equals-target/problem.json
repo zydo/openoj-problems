@@ -4,8 +4,14 @@
   "id": 1546,
   "slug": "maximum-number-of-non-overlapping-subarrays-with-sum-equals-target",
   "title": "Maximum Number of Non-Overlapping Subarrays With Sum Equals Target",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

@@ -4,8 +4,13 @@
   "id": 17,
   "slug": "letter-combinations-of-a-phone-number",
   "title": "Letter Combinations of a Phone Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Backtracking"

@@ -4,11 +4,17 @@
   "id": 1262,
   "slug": "largest-total-divisible-by-three",
   "title": "Largest Total Divisible by Three",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

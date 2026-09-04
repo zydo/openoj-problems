@@ -4,8 +4,13 @@
   "id": 1253,
   "slug": "rebuild-two-row-binary-grid",
   "title": "Rebuild a Two-Row Binary Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix"

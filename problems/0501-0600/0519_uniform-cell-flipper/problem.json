@@ -4,12 +4,18 @@
   "id": 519,
   "slug": "uniform-cell-flipper",
   "title": "Uniform Cell Flipper",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Math",
     "Randomized",
     "Design"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Reservoir Sampling",
+    "Randomized"
   ],
   "invocation": {
     "type": "design",

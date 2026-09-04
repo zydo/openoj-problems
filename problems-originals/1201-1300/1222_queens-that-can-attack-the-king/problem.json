@@ -4,8 +4,13 @@
   "id": 1222,
   "slug": "queens-that-can-attack-the-king",
   "title": "Queens That Can Attack the King",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

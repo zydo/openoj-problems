@@ -4,11 +4,16 @@
   "id": 1101,
   "slug": "first-full-connection",
   "title": "First Full Connection",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Sorting",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

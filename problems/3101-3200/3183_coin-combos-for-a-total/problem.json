@@ -4,11 +4,18 @@
   "id": 3183,
   "slug": "coin-combos-for-a-total",
   "title": "Coin Combos For A Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Math",
     "Combinatorics"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "Sieve Theory",
+    "Mixed Knapsack"
   ],
   "invocation": {
     "type": "function",

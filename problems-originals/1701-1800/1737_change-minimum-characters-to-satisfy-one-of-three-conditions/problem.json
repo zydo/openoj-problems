@@ -4,8 +4,14 @@
   "id": 1737,
   "slug": "change-minimum-characters-to-satisfy-one-of-three-conditions",
   "title": "Change Minimum Characters to Satisfy One of Three Conditions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting",

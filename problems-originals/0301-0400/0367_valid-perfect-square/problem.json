@@ -4,8 +4,12 @@
   "id": 367,
   "slug": "valid-perfect-square",
   "title": "Valid Perfect Square",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

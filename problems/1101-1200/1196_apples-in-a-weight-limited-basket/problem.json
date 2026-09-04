@@ -4,8 +4,13 @@
   "id": 1196,
   "slug": "apples-in-a-weight-limited-basket",
   "title": "Apples in a Weight-Limited Basket",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

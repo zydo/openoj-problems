@@ -4,11 +4,16 @@
   "id": 2630,
   "slug": "caching-repeat-calls-ii",
   "title": "Caching Repeat Calls II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "JavaScript",
     "Hash Table",
     "Tree"
+  ],
+  "topics": [
+    "Design",
+    "Hash Table",
+    "Recursion"
   ],
   "invocation": {
     "type": "interactive",

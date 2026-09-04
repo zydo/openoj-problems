@@ -4,8 +4,14 @@
   "id": 2472,
   "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
   "title": "Maximum Number of Non-overlapping Palindrome Substrings",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming",

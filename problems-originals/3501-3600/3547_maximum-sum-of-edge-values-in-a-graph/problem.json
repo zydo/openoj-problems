@@ -4,8 +4,13 @@
   "id": 3547,
   "slug": "maximum-sum-of-edge-values-in-a-graph",
   "title": "Maximum Sum of Edge Values in a Graph",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Greedy",
+    "Graph Theory"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Graph Theory"

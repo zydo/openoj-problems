@@ -3,11 +3,18 @@
   "id": 3241,
   "slug": "time-taken-to-mark-all-nodes",
   "title": "Time Taken to Mark All Nodes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

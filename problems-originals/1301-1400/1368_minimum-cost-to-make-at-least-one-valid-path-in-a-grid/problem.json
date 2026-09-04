@@ -3,11 +3,21 @@
   "id": 1368,
   "slug": "minimum-cost-to-make-at-least-one-valid-path-in-a-grid",
   "title": "Minimum Cost to Make at Least One Valid Path in a Grid",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Breadth-First Search",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path",
+    "0-1 BFS",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

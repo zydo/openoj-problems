@@ -4,13 +4,25 @@
   "id": 505,
   "slug": "rolling-ball-maze-distance",
   "title": "Rolling Ball Maze Distance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Breadth-First Search",
     "Heap",
     "Shortest Path",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path",
+    "Dijkstra's Algorithm",
+    "Heuristic Search",
+    "A* Search"
   ],
   "invocation": {
     "type": "function",

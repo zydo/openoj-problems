@@ -4,8 +4,12 @@
   "id": 2433,
   "slug": "reverse-prefix-xor",
   "title": "Reverse Prefix XOR",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

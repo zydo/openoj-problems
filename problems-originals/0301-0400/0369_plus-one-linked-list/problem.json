@@ -4,8 +4,12 @@
   "id": 369,
   "slug": "plus-one-linked-list",
   "title": "Plus One Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Math"
+  ],
+  "topics": [
     "Linked List",
     "Math"
   ],

@@ -4,8 +4,14 @@
   "id": 1601,
   "slug": "maximum-number-of-achievable-transfer-requests",
   "title": "Maximum Number of Achievable Transfer Requests",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation",

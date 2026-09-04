@@ -4,8 +4,12 @@
   "id": 3738,
   "slug": "longest-non-dropping-run-with-one-rewrite",
   "title": "Longest Non-Dropping Run With One Rewrite",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

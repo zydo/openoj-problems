@@ -3,10 +3,18 @@
   "id": 658,
   "slug": "find-k-closest-elements",
   "title": "Find K Closest Elements",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sliding Window",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

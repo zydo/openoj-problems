@@ -4,12 +4,20 @@
   "id": 3117,
   "slug": "cheapest-partition-with-given-ands",
   "title": "Cheapest Partition With Given ANDs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",
     "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Segment Tree",
+    "Queue"
   ],
   "invocation": {
     "type": "function",

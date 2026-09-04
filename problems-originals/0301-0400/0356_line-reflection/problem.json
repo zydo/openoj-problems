@@ -4,8 +4,13 @@
   "id": 356,
   "slug": "line-reflection",
   "title": "Line Reflection",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math"

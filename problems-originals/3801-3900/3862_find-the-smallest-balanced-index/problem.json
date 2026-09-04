@@ -4,8 +4,12 @@
   "id": 3862,
   "slug": "find-the-smallest-balanced-index",
   "title": "Find the Smallest Balanced Index",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

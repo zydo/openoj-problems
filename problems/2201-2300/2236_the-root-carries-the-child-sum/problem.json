@@ -4,8 +4,12 @@
   "id": 2236,
   "slug": "the-root-carries-the-child-sum",
   "title": "The Root Carries the Child Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Tree"
   ],

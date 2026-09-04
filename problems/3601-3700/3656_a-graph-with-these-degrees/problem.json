@@ -4,9 +4,16 @@
   "id": 3656,
   "slug": "a-graph-with-these-degrees",
   "title": "A Graph With These Degrees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Graph Theory",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
     "Graph Theory",
     "Sorting",
     "Prefix Sum"

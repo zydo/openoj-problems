@@ -4,8 +4,15 @@
   "id": 106,
   "slug": "rebuild-the-tree-from-two-traversals",
   "title": "Rebuild The Tree From Two Traversals",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Divide and Conquer",

@@ -4,8 +4,12 @@
   "id": 1925,
   "slug": "counting-right-triangle-triples",
   "title": "Counting Right-Triangle Triples",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

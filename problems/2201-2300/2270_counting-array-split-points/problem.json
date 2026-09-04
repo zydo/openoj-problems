@@ -4,8 +4,12 @@
   "id": 2270,
   "slug": "counting-array-split-points",
   "title": "Counting Array Split Points",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

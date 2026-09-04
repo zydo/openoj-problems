@@ -4,8 +4,13 @@
   "id": 2871,
   "slug": "split-array-into-maximum-number-of-subarrays",
   "title": "Split Array Into Maximum Number of Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation"

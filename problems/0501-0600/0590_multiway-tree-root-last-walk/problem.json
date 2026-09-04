@@ -4,8 +4,13 @@
   "id": 590,
   "slug": "multiway-tree-root-last-walk",
   "title": "Multiway Tree Root-Last Walk",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search"

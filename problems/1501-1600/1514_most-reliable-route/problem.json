@@ -4,8 +4,15 @@
   "id": 1514,
   "slug": "most-reliable-route",
   "title": "Most Reliable Route",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
+  ],
+  "topics": [
+    "Array",
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path",

@@ -4,8 +4,12 @@
   "id": 2076,
   "slug": "process-restricted-friend-requests",
   "title": "Process Restricted Friend Requests",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Union-Find",
     "Graph Theory"
   ],

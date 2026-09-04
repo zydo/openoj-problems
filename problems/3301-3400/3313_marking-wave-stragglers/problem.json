@@ -4,8 +4,12 @@
   "id": 3313,
   "slug": "marking-wave-stragglers",
   "title": "The Marking Wave's Stragglers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search"
   ],

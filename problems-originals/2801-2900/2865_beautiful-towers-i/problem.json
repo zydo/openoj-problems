@@ -4,8 +4,13 @@
   "id": 2865,
   "slug": "beautiful-towers-i",
   "title": "Beautiful Towers I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

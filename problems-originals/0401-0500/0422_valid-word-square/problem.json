@@ -4,8 +4,12 @@
   "id": 422,
   "slug": "valid-word-square",
   "title": "Valid Word Square",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

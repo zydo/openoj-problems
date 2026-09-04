@@ -4,11 +4,19 @@
   "id": 2005,
   "slug": "fibonacci-tree-pruning-game",
   "title": "Fibonacci Tree Pruning Game",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Game Theory",
     "Tree"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Binary Tree",
+    "Game Theory",
+    "Sprague–Grundy Theorem"
   ],
   "invocation": {
     "type": "function",

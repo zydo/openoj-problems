@@ -4,8 +4,14 @@
   "id": 3938,
   "slug": "maximum-path-intersection-sum-in-a-grid",
   "title": "Maximum Path Intersection Sum in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix",

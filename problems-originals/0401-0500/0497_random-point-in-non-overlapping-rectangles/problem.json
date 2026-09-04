@@ -3,11 +3,20 @@
   "id": 497,
   "slug": "random-point-in-non-overlapping-rectangles",
   "title": "Random Point in Non-overlapping Rectangles",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Randomized",
     "Prefix Sum",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Reservoir Sampling",
+    "Prefix Sum",
+    "Ordered Set",
+    "Randomized"
   ],
   "invocation": {
     "type": "design",

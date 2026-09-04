@@ -4,8 +4,12 @@
   "id": 2217,
   "slug": "fixed-width-palindrome-lookup",
   "title": "Fixed-Width Palindrome Lookup",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

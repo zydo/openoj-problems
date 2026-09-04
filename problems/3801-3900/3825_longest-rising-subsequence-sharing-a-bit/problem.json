@@ -4,11 +4,17 @@
   "id": 3825,
   "slug": "longest-rising-subsequence-sharing-a-bit",
   "title": "Longest Rising Subsequence Sharing A Bit",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Bit Manipulation",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

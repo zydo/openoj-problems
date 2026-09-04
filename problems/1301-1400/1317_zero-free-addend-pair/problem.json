@@ -4,8 +4,11 @@
   "id": 1317,
   "slug": "zero-free-addend-pair",
   "title": "Zero-Free Addend Pair",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

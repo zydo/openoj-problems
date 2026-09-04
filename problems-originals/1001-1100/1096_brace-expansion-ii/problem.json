@@ -4,8 +4,16 @@
   "id": 1096,
   "slug": "brace-expansion-ii",
   "title": "Brace Expansion II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Stack",
+    "Breadth-First Search",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Backtracking",

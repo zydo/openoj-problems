@@ -4,8 +4,13 @@
   "id": 2451,
   "slug": "odd-string-difference",
   "title": "Odd String Difference",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

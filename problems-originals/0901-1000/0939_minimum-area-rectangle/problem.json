@@ -4,8 +4,15 @@
   "id": 939,
   "slug": "minimum-area-rectangle",
   "title": "Minimum Area Rectangle",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

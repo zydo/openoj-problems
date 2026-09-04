@@ -4,8 +4,12 @@
   "id": 1999,
   "slug": "least-qualifying-multiple-from-two-digits",
   "title": "Least Qualifying Multiple From Two Digits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

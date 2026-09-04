@@ -4,10 +4,15 @@
   "id": 1024,
   "slug": "fewest-segments-to-cover-a-range",
   "title": "Fewest Segments to Cover a Range",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

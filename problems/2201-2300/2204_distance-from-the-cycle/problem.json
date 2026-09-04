@@ -4,11 +4,17 @@
   "id": 2204,
   "slug": "distance-from-the-cycle",
   "title": "Distance From the Cycle",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "BFS",
     "DFS"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort"
   ],
   "invocation": {
     "type": "function",

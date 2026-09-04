@@ -3,8 +3,15 @@
   "id": 3425,
   "slug": "longest-special-path",
   "title": "Longest Special Path",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

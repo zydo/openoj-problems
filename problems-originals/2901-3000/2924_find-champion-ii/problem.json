@@ -4,8 +4,11 @@
   "id": 2924,
   "slug": "find-champion-ii",
   "title": "Find Champion II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory"
+  ],
+  "topics": [
     "Graph Theory"
   ],
   "invocation": {

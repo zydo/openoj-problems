@@ -4,8 +4,12 @@
   "id": 3234,
   "slug": "count-the-number-of-substrings-with-dominant-ones",
   "title": "Count the Number of Substrings With Dominant Ones",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

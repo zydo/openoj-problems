@@ -4,8 +4,11 @@
   "id": 3270,
   "slug": "find-the-key-of-the-numbers",
   "title": "Find the Key of the Numbers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

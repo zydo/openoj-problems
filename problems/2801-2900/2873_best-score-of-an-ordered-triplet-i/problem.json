@@ -4,8 +4,12 @@
   "id": 2873,
   "slug": "best-score-of-an-ordered-triplet-i",
   "title": "Best Score Of An Ordered Triplet I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

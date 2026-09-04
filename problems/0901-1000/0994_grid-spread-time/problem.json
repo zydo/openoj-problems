@@ -4,8 +4,13 @@
   "id": 994,
   "slug": "grid-spread-time",
   "title": "Grid Spread Time",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

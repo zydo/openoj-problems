@@ -4,8 +4,13 @@
   "id": 2911,
   "slug": "splitting-into-k-semi-palindromes",
   "title": "Splitting Into K Semi-Palindromes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming"

@@ -4,10 +4,15 @@
   "id": 715,
   "slug": "continuous-coverage-ledger",
   "title": "Continuous Coverage Ledger",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Balanced BST",
     "Segment Tree"
+  ],
+  "topics": [
+    "Design",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

@@ -4,8 +4,11 @@
   "id": 1056,
   "slug": "confusing-number",
   "title": "Confusing Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

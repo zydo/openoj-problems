@@ -4,8 +4,13 @@
   "id": 2341,
   "slug": "maximum-number-of-pairs-in-array",
   "title": "Maximum Number of Pairs in Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

@@ -4,8 +4,14 @@
   "id": 2499,
   "slug": "minimum-total-cost-to-make-arrays-unequal",
   "title": "Minimum Total Cost to Make Arrays Unequal",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

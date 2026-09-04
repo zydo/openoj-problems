@@ -4,8 +4,12 @@
   "id": 3723,
   "slug": "the-digit-square-champion",
   "title": "The Digit-Square Champion",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

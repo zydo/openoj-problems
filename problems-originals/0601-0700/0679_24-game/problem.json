@@ -4,8 +4,13 @@
   "id": 679,
   "slug": "24-game",
   "title": "24 Game",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Backtracking"

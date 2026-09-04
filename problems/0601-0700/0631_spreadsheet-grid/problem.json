@@ -4,13 +4,22 @@
   "id": 631,
   "slug": "spreadsheet-grid",
   "title": "Spreadsheet Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Design",
     "Graph",
     "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Graph Theory",
+    "Design",
+    "Topological Sort",
+    "Matrix"
   ],
   "invocation": {
     "type": "design",

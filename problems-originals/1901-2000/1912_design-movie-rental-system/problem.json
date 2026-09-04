@@ -3,11 +3,18 @@
   "id": 1912,
   "slug": "design-movie-rental-system",
   "title": "Design Movie Rental System",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Hash Table",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

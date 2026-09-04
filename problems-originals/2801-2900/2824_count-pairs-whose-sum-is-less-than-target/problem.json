@@ -4,8 +4,14 @@
   "id": 2824,
   "slug": "count-pairs-whose-sum-is-less-than-target",
   "title": "Count Pairs Whose Sum is Less than Target",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

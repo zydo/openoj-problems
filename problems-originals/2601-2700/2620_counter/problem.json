@@ -4,8 +4,11 @@
   "id": 2620,
   "slug": "counter",
   "title": "Counter",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

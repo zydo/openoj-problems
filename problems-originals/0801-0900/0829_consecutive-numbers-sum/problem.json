@@ -4,8 +4,12 @@
   "id": 829,
   "slug": "consecutive-numbers-sum",
   "title": "Consecutive Numbers Sum",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

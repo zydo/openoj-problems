@@ -4,8 +4,13 @@
   "id": 1893,
   "slug": "complete-interval-coverage",
   "title": "Complete Interval Coverage",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

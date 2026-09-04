@@ -4,8 +4,11 @@
   "id": 1934,
   "slug": "confirmation-rate",
   "title": "Confirmation Rate",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

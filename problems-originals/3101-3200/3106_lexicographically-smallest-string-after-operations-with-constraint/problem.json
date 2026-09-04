@@ -4,8 +4,12 @@
   "id": 3106,
   "slug": "lexicographically-smallest-string-after-operations-with-constraint",
   "title": "Lexicographically Smallest String After Operations With Constraint",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

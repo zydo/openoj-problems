@@ -4,10 +4,13 @@
   "id": 2880,
   "slug": "a-lookup-by-member-number",
   "title": "A Lookup By Member Number",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

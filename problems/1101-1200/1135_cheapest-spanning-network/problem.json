@@ -4,13 +4,19 @@
   "id": 1135,
   "slug": "cheapest-spanning-network",
   "title": "Cheapest Spanning Network",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Union Find",
     "Minimum Spanning Tree",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Union-Find",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Minimum Spanning Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 1079,
   "slug": "letter-tile-possibilities",
   "title": "Letter Tile Possibilities",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Backtracking",

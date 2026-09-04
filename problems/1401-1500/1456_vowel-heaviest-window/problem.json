@@ -4,8 +4,12 @@
   "id": 1456,
   "slug": "vowel-heaviest-window",
   "title": "Vowel-Heaviest Window",
-  "difficulty": "H1",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

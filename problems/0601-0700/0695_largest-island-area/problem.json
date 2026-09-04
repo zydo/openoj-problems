@@ -4,10 +4,17 @@
   "id": 695,
   "slug": "largest-island-area",
   "title": "Largest Island Area",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

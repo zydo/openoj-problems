@@ -4,8 +4,12 @@
   "id": 1518,
   "slug": "water-bottles",
   "title": "Water Bottles",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

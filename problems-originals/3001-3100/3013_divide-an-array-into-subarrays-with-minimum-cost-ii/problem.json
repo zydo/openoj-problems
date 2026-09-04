@@ -3,12 +3,18 @@
   "id": 3013,
   "slug": "divide-an-array-into-subarrays-with-minimum-cost-ii",
   "title": "Divide an Array Into Subarrays With Minimum Cost II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Sliding Window",
     "Heap",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2121,
   "slug": "intervals-between-identical-elements",
   "title": "Intervals Between Identical Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

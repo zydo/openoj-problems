@@ -4,8 +4,13 @@
   "id": 3174,
   "slug": "clear-digits",
   "title": "Clear Digits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

@@ -4,8 +4,14 @@
   "id": 3288,
   "slug": "length-of-the-longest-increasing-path",
   "title": "Length of the Longest Increasing Path",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Longest Increasing Subsequence"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting",

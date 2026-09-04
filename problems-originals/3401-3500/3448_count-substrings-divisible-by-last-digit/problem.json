@@ -3,10 +3,14 @@
   "id": 3448,
   "slug": "count-substrings-divisible-by-last-digit",
   "title": "Count Substrings Divisible By Last Digit",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Number Theory"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

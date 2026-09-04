@@ -4,8 +4,15 @@
   "id": 1766,
   "slug": "tree-of-coprimes",
   "title": "Tree of Coprimes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Tree",
+    "Depth-First Search",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Tree",

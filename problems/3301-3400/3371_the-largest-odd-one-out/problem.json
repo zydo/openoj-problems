@@ -4,11 +4,17 @@
   "id": 3371,
   "slug": "the-largest-odd-one-out",
   "title": "The Largest Odd One Out",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Counting",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

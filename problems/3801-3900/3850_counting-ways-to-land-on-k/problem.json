@@ -4,10 +4,17 @@
   "id": 3850,
   "slug": "counting-ways-to-land-on-k",
   "title": "Counting Ways To Land On K",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Memoization",
     "Number Theory"
   ],
   "invocation": {

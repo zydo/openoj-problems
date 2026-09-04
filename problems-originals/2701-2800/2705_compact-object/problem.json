@@ -4,8 +4,11 @@
   "id": 2705,
   "slug": "compact-object",
   "title": "Compact Object",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Recursion"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

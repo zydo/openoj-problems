@@ -4,8 +4,14 @@
   "id": 2403,
   "slug": "fewest-days-to-defeat-all-foes",
   "title": "Fewest Days to Defeat All Foes",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

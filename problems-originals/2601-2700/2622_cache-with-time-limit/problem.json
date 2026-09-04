@@ -4,8 +4,12 @@
   "id": 2622,
   "slug": "cache-with-time-limit",
   "title": "Cache With Time Limit",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Design",
+    "Hash Table"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

@@ -4,8 +4,13 @@
   "id": 3070,
   "slug": "count-anchored-submatrices-within-a-budget",
   "title": "Count Anchored Submatrices Within a Budget",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Matrix",
     "Prefix Sum"
   ],

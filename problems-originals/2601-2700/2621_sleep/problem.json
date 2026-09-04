@@ -4,8 +4,11 @@
   "id": 2621,
   "slug": "sleep",
   "title": "Sleep",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

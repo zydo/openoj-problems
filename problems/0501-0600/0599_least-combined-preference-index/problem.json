@@ -4,8 +4,13 @@
   "id": 599,
   "slug": "least-combined-preference-index",
   "title": "Least Combined Preference Index",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

@@ -4,8 +4,12 @@
   "id": 1899,
   "slug": "blending-triplets-toward-the-goal",
   "title": "Blending Triplets Toward the Goal",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

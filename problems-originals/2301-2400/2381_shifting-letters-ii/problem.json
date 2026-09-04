@@ -3,8 +3,13 @@
   "id": 2381,
   "slug": "shifting-letters-ii",
   "title": "Shifting Letters II",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

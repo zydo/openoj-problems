@@ -4,8 +4,16 @@
   "id": 1348,
   "slug": "tweet-counts-per-frequency",
   "title": "Tweet Counts Per Frequency",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Design",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Binary Search",

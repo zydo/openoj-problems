@@ -4,8 +4,12 @@
   "id": 2899,
   "slug": "looking-back-through-recents",
   "title": "Looking Back Through Recents",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -3,11 +3,18 @@
   "id": 1986,
   "slug": "minimum-number-of-work-sessions-to-finish-the-tasks",
   "title": "Minimum Number of Work Sessions to Finish the Tasks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Bit Manipulation",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

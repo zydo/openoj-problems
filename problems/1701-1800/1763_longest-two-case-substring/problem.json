@@ -4,11 +4,18 @@
   "id": 1763,
   "slug": "longest-two-case-substring",
   "title": "Longest Two-Case Substring",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Hash Table",
     "String",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Divide and Conquer",
+    "Bit Manipulation",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

@@ -4,12 +4,23 @@
   "id": 2123,
   "slug": "fewest-flips-to-isolate-ones",
   "title": "Fewest Flips to Isolate the Ones",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Matrix",
     "Graph Theory",
     "Flow Network"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Graph Theory",
+    "Matrix",
+    "Edmonds–Karp Algorithm",
+    "MPM Algorithm",
+    "Push-Relabel Algorithm",
+    "Flow Network",
+    "Dinic's Algorithm"
   ],
   "invocation": {
     "type": "function",

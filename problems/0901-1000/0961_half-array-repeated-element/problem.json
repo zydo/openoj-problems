@@ -4,8 +4,13 @@
   "id": 961,
   "slug": "half-array-repeated-element",
   "title": "Half-Array Repeated Element",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Pigeonhole Principle"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Pigeonhole Principle"

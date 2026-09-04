@@ -4,8 +4,12 @@
   "id": 755,
   "slug": "droplet-landing",
   "title": "Droplet Landing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

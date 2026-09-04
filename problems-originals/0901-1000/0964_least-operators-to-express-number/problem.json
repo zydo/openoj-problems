@@ -4,8 +4,13 @@
   "id": 964,
   "slug": "least-operators-to-express-number",
   "title": "Least Operators to Express Number",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Memoization"

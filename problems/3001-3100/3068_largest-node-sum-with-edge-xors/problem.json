@@ -4,12 +4,20 @@
   "id": 3068,
   "slug": "largest-node-sum-with-edge-xors",
   "title": "Largest Node Sum With Edge XORs",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "Bit Manipulation",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation",
+    "Tree",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

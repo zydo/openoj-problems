@@ -4,8 +4,13 @@
   "id": 3333,
   "slug": "count-intended-strings-of-length-at-least-k",
   "title": "Count Intended Strings of Length at Least K",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Prefix Sum"

@@ -4,10 +4,16 @@
   "id": 1679,
   "slug": "most-removable-target-pairs",
   "title": "Most Removable Target Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

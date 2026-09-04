@@ -4,8 +4,13 @@
   "id": 1330,
   "slug": "best-zigzag-after-one-reversal",
   "title": "Best Zigzag After One Reversal",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

@@ -4,11 +4,15 @@
   "id": 3164,
   "slug": "counting-divisible-pairs-ii",
   "title": "Counting Divisible Pairs II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table"
   ],
   "invocation": {
     "type": "function",

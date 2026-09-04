@@ -3,11 +3,17 @@
   "id": 84,
   "slug": "largest-rectangle-in-histogram",
   "title": "Largest Rectangle in Histogram",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Stack",
     "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Monotonic Stack",
+    "Range Minimum/Maximum Query"
   ],
   "invocation": {
     "type": "function",

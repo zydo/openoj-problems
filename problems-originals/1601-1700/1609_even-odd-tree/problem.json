@@ -4,8 +4,13 @@
   "id": 1609,
   "slug": "even-odd-tree",
   "title": "Even Odd Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

@@ -4,8 +4,14 @@
   "id": 2974,
   "slug": "minimum-number-game",
   "title": "Minimum Number Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)",

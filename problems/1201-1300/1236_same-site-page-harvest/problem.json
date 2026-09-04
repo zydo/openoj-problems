@@ -4,12 +4,18 @@
   "id": 1236,
   "slug": "same-site-page-harvest",
   "title": "Same-Site Page Harvest",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Graph Theory",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

@@ -4,9 +4,16 @@
   "id": 3629,
   "slug": "exit-through-the-prime-portals",
   "title": "Exit Through The Prime Portals",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Breadth-First Search",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
     "Breadth-First Search",
     "Number Theory"
   ],

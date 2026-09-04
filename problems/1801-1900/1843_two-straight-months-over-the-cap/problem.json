@@ -4,10 +4,13 @@
   "id": 1843,
   "slug": "two-straight-months-over-the-cap",
   "title": "Two Straight Months Over The Cap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

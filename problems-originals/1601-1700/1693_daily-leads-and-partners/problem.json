@@ -4,8 +4,11 @@
   "id": 1693,
   "slug": "daily-leads-and-partners",
   "title": "Daily Leads and Partners",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

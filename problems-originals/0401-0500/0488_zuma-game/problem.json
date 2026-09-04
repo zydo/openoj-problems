@@ -4,8 +4,15 @@
   "id": 488,
   "slug": "zuma-game",
   "title": "Zuma Game",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Breadth-First Search",
+    "Memoization"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Stack",

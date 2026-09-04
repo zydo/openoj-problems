@@ -4,8 +4,11 @@
   "id": 1933,
   "slug": "one-pair-among-triples",
   "title": "One Pair Among Triples",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

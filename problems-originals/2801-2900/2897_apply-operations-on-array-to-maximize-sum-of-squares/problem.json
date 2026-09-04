@@ -4,8 +4,14 @@
   "id": 2897,
   "slug": "apply-operations-on-array-to-maximize-sum-of-squares",
   "title": "Apply Operations on Array to Maximize Sum of Squares",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

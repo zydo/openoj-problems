@@ -4,8 +4,13 @@
   "id": 2222,
   "slug": "number-of-ways-to-select-buildings",
   "title": "Number of Ways to Select Buildings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Prefix Sum"

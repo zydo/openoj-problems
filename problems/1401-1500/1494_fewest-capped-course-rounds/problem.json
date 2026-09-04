@@ -4,11 +4,18 @@
   "id": 1494,
   "slug": "fewest-capped-course-rounds",
   "title": "Fewest Capped Course Rounds",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Topological Sort"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Bitmask",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

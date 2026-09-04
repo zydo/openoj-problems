@@ -4,10 +4,16 @@
   "id": 844,
   "slug": "edited-text-equality",
   "title": "Edited Text Equality",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Two Pointers",
     "String",
+    "Simulation"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Stack",
     "Simulation"
   ],
   "invocation": {

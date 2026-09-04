@@ -4,8 +4,13 @@
   "id": 1714,
   "slug": "sum-of-special-evenly-spaced-elements-in-array",
   "title": "Sum Of Special Evenly-Spaced Elements In Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sqrt Decomposition"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sqrt Decomposition"

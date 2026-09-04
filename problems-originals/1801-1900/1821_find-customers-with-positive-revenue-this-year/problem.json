@@ -4,8 +4,11 @@
   "id": 1821,
   "slug": "find-customers-with-positive-revenue-this-year",
   "title": "Find Customers With Positive Revenue this Year",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

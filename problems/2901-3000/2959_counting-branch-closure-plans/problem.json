@@ -4,9 +4,16 @@
   "id": 2959,
   "slug": "counting-branch-closure-plans",
   "title": "Counting Branch-Closure Plans",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Bit Manipulation",
+    "Enumeration",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Bit Manipulation",
+    "Graph Theory",
+    "Heap (Priority Queue)",
     "Enumeration",
     "Shortest Path"
   ],

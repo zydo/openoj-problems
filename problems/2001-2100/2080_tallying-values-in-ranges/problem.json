@@ -4,12 +4,19 @@
   "id": 2080,
   "slug": "tallying-values-in-ranges",
   "title": "Tallying Values In Ranges",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Binary Search",
     "Design"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "design",

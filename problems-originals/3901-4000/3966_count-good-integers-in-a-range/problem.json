@@ -3,10 +3,15 @@
   "id": 3966,
   "slug": "count-good-integers-in-a-range",
   "title": "Count Good Integers in a Range",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Math",
+    "String"
   ],
   "invocation": {
     "type": "function",

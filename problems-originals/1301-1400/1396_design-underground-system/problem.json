@@ -3,9 +3,14 @@
   "id": 1396,
   "slug": "design-underground-system",
   "title": "Design Underground System",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design"
   ],
   "invocation": {
     "type": "design",

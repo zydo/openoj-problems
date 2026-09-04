@@ -4,8 +4,12 @@
   "id": 260,
   "slug": "two-lone-elements",
   "title": "Two Lone Elements",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
     "Bit Manipulation"
   ],
   "invocation": {

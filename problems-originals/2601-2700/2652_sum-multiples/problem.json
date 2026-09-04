@@ -4,8 +4,11 @@
   "id": 2652,
   "slug": "sum-multiples",
   "title": "Sum Multiples",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

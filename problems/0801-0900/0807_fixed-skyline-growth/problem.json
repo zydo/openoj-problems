@@ -4,8 +4,13 @@
   "id": 807,
   "slug": "fixed-skyline-growth",
   "title": "Fixed Skyline Growth",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix"

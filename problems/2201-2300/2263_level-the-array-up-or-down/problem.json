@@ -4,8 +4,14 @@
   "id": 2263,
   "slug": "level-the-array-up-or-down",
   "title": "Level the Array Up or Down",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy",

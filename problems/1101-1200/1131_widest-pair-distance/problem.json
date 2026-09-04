@@ -4,8 +4,12 @@
   "id": 1131,
   "slug": "widest-pair-distance",
   "title": "Widest Pair Distance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

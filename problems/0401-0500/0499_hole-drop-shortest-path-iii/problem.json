@@ -4,12 +4,25 @@
   "id": 499,
   "slug": "hole-drop-shortest-path-iii",
   "title": "Hole-Drop Shortest Path III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path",
+    "Dijkstra's Algorithm",
+    "Heuristic Search",
+    "A* Search"
   ],
   "invocation": {
     "type": "function",

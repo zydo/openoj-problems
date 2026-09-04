@@ -4,10 +4,15 @@
   "id": 1326,
   "slug": "fewest-stations-to-cover-a-segment",
   "title": "Fewest Stations to Cover a Segment",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

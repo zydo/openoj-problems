@@ -4,11 +4,17 @@
   "id": 389,
   "slug": "added-letter-locator",
   "title": "Added Letter Locator",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Hash Table",
     "String",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

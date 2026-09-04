@@ -4,8 +4,14 @@
   "id": 3244,
   "slug": "shortest-distance-after-road-addition-queries-ii",
   "title": "Shortest Distance After Road Addition Queries II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Graph Theory",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Graph Theory",

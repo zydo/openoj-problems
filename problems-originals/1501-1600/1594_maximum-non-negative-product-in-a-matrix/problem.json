@@ -4,8 +4,13 @@
   "id": 1594,
   "slug": "maximum-non-negative-product-in-a-matrix",
   "title": "Maximum Non Negative Product in a Matrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

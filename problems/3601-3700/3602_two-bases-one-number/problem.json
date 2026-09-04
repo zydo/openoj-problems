@@ -4,8 +4,12 @@
   "id": 3602,
   "slug": "two-bases-one-number",
   "title": "Two Bases, One Number",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

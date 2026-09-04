@@ -4,10 +4,19 @@
   "id": 2127,
   "slug": "round-table-favorites",
   "title": "Round Table Favorites",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Kosaraju's Algorithm",
+    "Tarjan's SCC Algorithm"
   ],
   "invocation": {
     "type": "function",

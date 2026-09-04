@@ -4,8 +4,17 @@
   "id": 2920,
   "slug": "maximum-points-after-collecting-coins-from-all-nodes",
   "title": "Maximum Points After Collecting Coins From All Nodes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Memoization",
+    "DP on Trees"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

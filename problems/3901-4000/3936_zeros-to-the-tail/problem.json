@@ -4,8 +4,12 @@
   "id": 3936,
   "slug": "zeros-to-the-tail",
   "title": "Zeros To The Tail",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

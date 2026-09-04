@@ -4,8 +4,12 @@
   "id": 3697,
   "slug": "place-value-pieces",
   "title": "Place-Value Pieces",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

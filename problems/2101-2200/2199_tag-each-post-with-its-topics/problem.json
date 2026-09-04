@@ -4,10 +4,13 @@
   "id": 2199,
   "slug": "tag-each-post-with-its-topics",
   "title": "Tag Each Post With Its Topics",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

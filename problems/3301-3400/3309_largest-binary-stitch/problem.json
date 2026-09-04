@@ -4,8 +4,13 @@
   "id": 3309,
   "slug": "largest-binary-stitch",
   "title": "The Largest Binary Stitch",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Enumeration"

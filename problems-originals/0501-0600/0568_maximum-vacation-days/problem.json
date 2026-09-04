@@ -4,8 +4,13 @@
   "id": 568,
   "slug": "maximum-vacation-days",
   "title": "Maximum Vacation Days",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

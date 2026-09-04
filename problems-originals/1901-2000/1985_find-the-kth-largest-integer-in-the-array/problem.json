@@ -4,8 +4,16 @@
   "id": 1985,
   "slug": "find-the-kth-largest-integer-in-the-array",
   "title": "Find the Kth Largest Integer in the Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Quickselect"
+  ],
+  "topics": [
     "Array",
     "String",
     "Divide and Conquer",

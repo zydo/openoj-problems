@@ -4,8 +4,14 @@
   "id": 1302,
   "slug": "deepest-leaves-sum",
   "title": "Deepest Leaves Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

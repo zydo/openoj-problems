@@ -4,8 +4,15 @@
   "id": 2333,
   "slug": "minimum-sum-of-squared-difference",
   "title": "Minimum Sum of Squared Difference",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

@@ -4,8 +4,14 @@
   "id": 681,
   "slug": "next-closest-time",
   "title": "Next Closest Time",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Enumeration"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Backtracking",

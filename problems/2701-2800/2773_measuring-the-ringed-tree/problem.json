@@ -4,11 +4,17 @@
   "id": 2773,
   "slug": "measuring-the-ringed-tree",
   "title": "Measuring The Ringed Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Binary Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

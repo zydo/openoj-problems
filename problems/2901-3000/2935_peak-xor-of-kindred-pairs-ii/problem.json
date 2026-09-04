@@ -4,9 +4,16 @@
   "id": 2935,
   "slug": "peak-xor-of-kindred-pairs-ii",
   "title": "Peak XOR Of Kindred Pairs II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Bit Manipulation",
+    "Trie",
+    "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Bit Manipulation",
     "Trie",
     "Sliding Window"

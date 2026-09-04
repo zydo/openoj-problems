@@ -4,11 +4,19 @@
   "id": 3376,
   "slug": "charging-through-every-lock-i",
   "title": "Charging Through Every Lock I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Breadth-First Search",
     "Bitmask"
   ],
   "invocation": {

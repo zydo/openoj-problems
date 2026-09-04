@@ -4,10 +4,16 @@
   "id": 2364,
   "slug": "pairs-with-mismatched-gaps",
   "title": "Pairs With Mismatched Gaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
     "Counting"
   ],
   "invocation": {

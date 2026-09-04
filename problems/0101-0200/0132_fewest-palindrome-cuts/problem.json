@@ -4,8 +4,12 @@
   "id": 132,
   "slug": "fewest-palindrome-cuts",
   "title": "Fewest Palindrome Cuts",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

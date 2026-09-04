@@ -3,9 +3,17 @@
   "id": 1819,
   "slug": "number-of-different-subsequences-gcds",
   "title": "Number of Different Subsequences GCDs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Counting",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

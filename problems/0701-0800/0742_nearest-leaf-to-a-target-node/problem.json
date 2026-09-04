@@ -4,8 +4,14 @@
   "id": 742,
   "slug": "nearest-leaf-to-a-target-node",
   "title": "Nearest Leaf to a Target Node",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

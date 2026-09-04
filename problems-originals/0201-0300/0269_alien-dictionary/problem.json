@@ -3,12 +3,21 @@
   "id": 269,
   "slug": "alien-dictionary",
   "title": "Alien Dictionary",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Topological Sort",
     "String",
     "BFS"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

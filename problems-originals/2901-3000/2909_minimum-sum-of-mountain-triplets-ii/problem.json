@@ -4,8 +4,12 @@
   "id": 2909,
   "slug": "minimum-sum-of-mountain-triplets-ii",
   "title": "Minimum Sum of Mountain Triplets II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

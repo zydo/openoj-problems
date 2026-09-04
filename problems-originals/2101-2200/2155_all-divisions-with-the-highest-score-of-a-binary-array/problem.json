@@ -4,8 +4,11 @@
   "id": 2155,
   "slug": "all-divisions-with-the-highest-score-of-a-binary-array",
   "title": "All Divisions With the Highest Score of a Binary Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

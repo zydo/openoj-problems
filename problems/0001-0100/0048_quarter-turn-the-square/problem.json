@@ -4,8 +4,13 @@
   "id": 48,
   "slug": "quarter-turn-the-square",
   "title": "Quarter-Turn The Square",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Matrix"

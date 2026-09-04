@@ -4,8 +4,13 @@
   "id": 3446,
   "slug": "each-diagonal-in-its-own-order",
   "title": "Each Diagonal In Its Own Order",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Matrix"

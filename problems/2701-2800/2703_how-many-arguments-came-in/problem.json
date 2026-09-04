@@ -4,9 +4,12 @@
   "id": 2703,
   "slug": "how-many-arguments-came-in",
   "title": "How Many Arguments Came In",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

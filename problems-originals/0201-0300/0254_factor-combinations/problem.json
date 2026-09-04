@@ -4,8 +4,12 @@
   "id": 254,
   "slug": "factor-combinations",
   "title": "Factor Combinations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Backtracking",
+    "Prime Factorization"
+  ],
+  "topics": [
     "Backtracking",
     "Prime Factorization"
   ],

@@ -4,8 +4,14 @@
   "id": 1386,
   "slug": "cinema-seat-allocation",
   "title": "Cinema Seat Allocation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

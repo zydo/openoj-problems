@@ -4,8 +4,12 @@
   "id": 2770,
   "slug": "maximum-number-of-jumps-to-reach-the-last-index",
   "title": "Maximum Number of Jumps to Reach the Last Index",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -4,8 +4,13 @@
   "id": 3652,
   "slug": "best-time-to-buy-and-sell-stock-using-strategy",
   "title": "Best Time to Buy and Sell Stock using Strategy",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Sliding Window",
     "Prefix Sum"

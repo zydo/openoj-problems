@@ -4,11 +4,17 @@
   "id": 311,
   "slug": "mostly-zero-matrix-product",
   "title": "Mostly-Zero Matrix Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Linear Algebra"
   ],
   "invocation": {
     "type": "function",

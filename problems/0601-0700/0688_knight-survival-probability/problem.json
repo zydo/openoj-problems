@@ -4,8 +4,11 @@
   "id": 688,
   "slug": "knight-survival-probability",
   "title": "Knight Survival Probability",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 809,
   "slug": "expressive-words",
   "title": "Expressive Words",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "String"

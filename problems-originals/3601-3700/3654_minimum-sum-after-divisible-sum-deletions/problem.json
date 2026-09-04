@@ -4,8 +4,14 @@
   "id": 3654,
   "slug": "minimum-sum-after-divisible-sum-deletions",
   "title": "Minimum Sum After Divisible Sum Deletions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

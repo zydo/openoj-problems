@@ -4,10 +4,17 @@
   "id": 2002,
   "slug": "palindrome-pair-product",
   "title": "Palindrome Pair Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming",
+    "Bitmask"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
     "Bitmask"
   ],
   "invocation": {

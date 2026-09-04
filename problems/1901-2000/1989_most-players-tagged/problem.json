@@ -4,8 +4,13 @@
   "id": 1989,
   "slug": "most-players-tagged",
   "title": "Most Players Tagged",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy"

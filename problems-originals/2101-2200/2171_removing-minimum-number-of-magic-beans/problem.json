@@ -4,8 +4,15 @@
   "id": 2171,
   "slug": "removing-minimum-number-of-magic-beans",
   "title": "Removing Minimum Number of Magic Beans",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

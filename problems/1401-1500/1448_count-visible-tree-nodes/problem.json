@@ -4,10 +4,16 @@
   "id": 1448,
   "slug": "count-visible-tree-nodes",
   "title": "Count Visible Tree Nodes",
-  "difficulty": "H1",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

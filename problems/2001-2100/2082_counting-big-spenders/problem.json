@@ -4,10 +4,13 @@
   "id": 2082,
   "slug": "counting-big-spenders",
   "title": "Counting Big Spenders",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,11 +4,17 @@
   "id": 1233,
   "slug": "prune-nested-folders",
   "title": "Prune Nested Folders",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

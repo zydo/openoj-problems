@@ -4,8 +4,13 @@
   "id": 791,
   "slug": "priority-rank-sort",
   "title": "Priority Rank Sort",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sorting"

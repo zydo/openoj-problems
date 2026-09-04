@@ -4,8 +4,11 @@
   "id": 1291,
   "slug": "sequential-digits",
   "title": "Sequential Digits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Enumeration"
+  ],
+  "topics": [
     "Enumeration"
   ],
   "invocation": {

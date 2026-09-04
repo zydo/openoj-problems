@@ -4,8 +4,11 @@
   "id": 1669,
   "slug": "splice-one-list-into-another",
   "title": "Splice One List Into Another",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

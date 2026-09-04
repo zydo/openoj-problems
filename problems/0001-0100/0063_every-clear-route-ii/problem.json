@@ -4,8 +4,13 @@
   "id": 63,
   "slug": "every-clear-route-ii",
   "title": "Every Clear Route II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

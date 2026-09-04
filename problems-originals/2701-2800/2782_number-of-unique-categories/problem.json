@@ -4,8 +4,13 @@
   "id": 2782,
   "slug": "number-of-unique-categories",
   "title": "Number of Unique Categories",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Union-Find",
+    "Interactive",
+    "Counting"
+  ],
+  "topics": [
     "Union-Find",
     "Interactive",
     "Counting"

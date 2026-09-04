@@ -4,12 +4,20 @@
   "id": 3529,
   "slug": "cells-covered-in-both-directions",
   "title": "Cells Covered In Both Directions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "String Matching",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Rolling Hash",
+    "String Matching",
+    "Matrix",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

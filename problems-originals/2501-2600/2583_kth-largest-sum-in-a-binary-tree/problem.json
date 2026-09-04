@@ -4,8 +4,14 @@
   "id": 2583,
   "slug": "kth-largest-sum-in-a-binary-tree",
   "title": "Kth Largest Sum in a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Sorting",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Sorting",

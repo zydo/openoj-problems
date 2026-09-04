@@ -4,8 +4,12 @@
   "id": 3450,
   "slug": "the-most-crowded-bench",
   "title": "The Most Crowded Bench",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

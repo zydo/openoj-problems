@@ -4,8 +4,14 @@
   "id": 949,
   "slug": "largest-time-for-given-digits",
   "title": "Largest Time for Given Digits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

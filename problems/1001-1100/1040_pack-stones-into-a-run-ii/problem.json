@@ -4,8 +4,14 @@
   "id": 1040,
   "slug": "pack-stones-into-a-run-ii",
   "title": "Pack the Stones Into a Run II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sliding Window",

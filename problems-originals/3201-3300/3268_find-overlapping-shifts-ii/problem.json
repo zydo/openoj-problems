@@ -4,8 +4,11 @@
   "id": 3268,
   "slug": "find-overlapping-shifts-ii",
   "title": "Find Overlapping Shifts II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

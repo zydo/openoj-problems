@@ -4,8 +4,11 @@
   "id": 1431,
   "slug": "kids-with-the-greatest-number-of-candies",
   "title": "Kids With the Greatest Number of Candies",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

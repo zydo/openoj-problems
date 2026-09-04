@@ -4,8 +4,12 @@
   "id": 1401,
   "slug": "circle-and-rectangle-overlapping",
   "title": "Circle and Rectangle Overlapping",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

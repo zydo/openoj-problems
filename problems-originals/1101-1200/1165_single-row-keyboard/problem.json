@@ -4,8 +4,12 @@
   "id": 1165,
   "slug": "single-row-keyboard",
   "title": "Single-Row Keyboard",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

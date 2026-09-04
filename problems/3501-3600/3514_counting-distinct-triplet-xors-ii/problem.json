@@ -4,9 +4,15 @@
   "id": 3514,
   "slug": "counting-distinct-triplet-xors-ii",
   "title": "Counting Distinct Triplet XORs II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Bit Manipulation",
     "Enumeration"
   ],

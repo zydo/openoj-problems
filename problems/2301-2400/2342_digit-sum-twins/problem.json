@@ -4,10 +4,16 @@
   "id": 2342,
   "slug": "digit-sum-twins",
   "title": "Digit-Sum Twins",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

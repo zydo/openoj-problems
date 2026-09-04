@@ -4,8 +4,14 @@
   "id": 3112,
   "slug": "minimum-time-to-visit-disappearing-nodes",
   "title": "Minimum Time to Visit Disappearing Nodes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Array",
     "Graph Theory",
     "Heap (Priority Queue)",

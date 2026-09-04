@@ -4,11 +4,17 @@
   "id": 3004,
   "slug": "the-largest-monochrome-subtree",
   "title": "The Largest Monochrome Subtree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

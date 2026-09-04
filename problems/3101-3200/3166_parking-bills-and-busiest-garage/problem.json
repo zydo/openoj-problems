@@ -4,10 +4,13 @@
   "id": 3166,
   "slug": "parking-bills-and-busiest-garage",
   "title": "Parking Bills and Busiest Garage",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

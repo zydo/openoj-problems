@@ -4,8 +4,14 @@
   "id": 3926,
   "slug": "whole-word-tally",
   "title": "Whole Word Tally",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

@@ -3,9 +3,15 @@
   "id": 3544,
   "slug": "subtree-inversion-sum",
   "title": "Subtree Inversion Sum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree DP",
+    "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
     "Depth-First Search"
   ],
   "invocation": {

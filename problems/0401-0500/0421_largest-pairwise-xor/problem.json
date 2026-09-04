@@ -4,8 +4,14 @@
   "id": 421,
   "slug": "largest-pairwise-xor",
   "title": "Largest Pairwise XOR",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

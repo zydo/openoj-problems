@@ -4,8 +4,12 @@
   "id": 61,
   "slug": "carry-the-tail-to-the-front",
   "title": "Carry The Tail To The Front",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "topics": [
     "Linked List",
     "Two Pointers"
   ],

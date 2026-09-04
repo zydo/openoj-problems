@@ -4,11 +4,17 @@
   "id": 3732,
   "slug": "one-rewrite-then-the-best-triple",
   "title": "One Rewrite, Then The Best Triple",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

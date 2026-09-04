@@ -4,10 +4,15 @@
   "id": 1493,
   "slug": "longest-run-of-ones-after-one-deletion",
   "title": "Longest Run of Ones After One Deletion",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

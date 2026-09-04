@@ -4,8 +4,17 @@
   "id": 2736,
   "slug": "maximum-sum-queries",
   "title": "Maximum Sum Queries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Stack",

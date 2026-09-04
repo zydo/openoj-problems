@@ -3,10 +3,15 @@
   "id": 2163,
   "slug": "minimum-difference-in-sums-after-removal-of-elements",
   "title": "Minimum Difference in Sums After Removal of Elements",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 3275,
   "slug": "the-kth-closest-obstacle-so-far",
   "title": "The Kth Closest Obstacle So Far",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Heap (Priority Queue)"
   ],

@@ -4,8 +4,12 @@
   "id": 1411,
   "slug": "ways-to-color-a-3-column-grid",
   "title": "Ways to Color a 3-Column Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Graph Coloring"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Graph Coloring"
   ],

@@ -4,9 +4,14 @@
   "id": 2178,
   "slug": "most-distinct-evens-in-a-split",
   "title": "Most Distinct Evens in a Split",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
+    "Greedy"
+  ],
+  "topics": [
+    "Math",
+    "Backtracking",
     "Greedy"
   ],
   "invocation": {

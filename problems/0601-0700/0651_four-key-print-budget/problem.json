@@ -4,8 +4,12 @@
   "id": 651,
   "slug": "four-key-print-budget",
   "title": "Four-Key Print Budget",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

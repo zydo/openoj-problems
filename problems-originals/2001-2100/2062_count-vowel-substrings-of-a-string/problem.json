@@ -4,8 +4,12 @@
   "id": 2062,
   "slug": "count-vowel-substrings-of-a-string",
   "title": "Count Vowel Substrings of a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

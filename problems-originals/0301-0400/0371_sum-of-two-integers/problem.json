@@ -4,8 +4,12 @@
   "id": 371,
   "slug": "sum-of-two-integers",
   "title": "Sum of Two Integers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

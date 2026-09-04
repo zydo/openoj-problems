@@ -4,10 +4,15 @@
   "id": 4003,
   "slug": "cheapest-parity-ruled-grid-walk",
   "title": "Cheapest Parity-Ruled Grid Walk",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Shortest Path"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Matrix",
+    "Math"
   ],
   "invocation": {
     "type": "function",

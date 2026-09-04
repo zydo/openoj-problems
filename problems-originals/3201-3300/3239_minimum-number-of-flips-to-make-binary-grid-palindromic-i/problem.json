@@ -4,8 +4,13 @@
   "id": 3239,
   "slug": "minimum-number-of-flips-to-make-binary-grid-palindromic-i",
   "title": "Minimum Number of Flips to Make Binary Grid Palindromic I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Matrix"

@@ -4,8 +4,12 @@
   "id": 454,
   "slug": "quadruple-zero-sums",
   "title": "Quadruple Zero Sums",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

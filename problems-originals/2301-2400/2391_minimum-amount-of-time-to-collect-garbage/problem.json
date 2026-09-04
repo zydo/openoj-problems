@@ -4,8 +4,13 @@
   "id": 2391,
   "slug": "minimum-amount-of-time-to-collect-garbage",
   "title": "Minimum Amount of Time to Collect Garbage",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

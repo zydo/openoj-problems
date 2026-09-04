@@ -4,11 +4,16 @@
   "id": 4009,
   "slug": "smallest-worst-case-refuel-wait",
   "title": "Smallest Worst-Case Refuel Wait",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Greedy",
     "Simulation"
+  ],
+  "topics": [
+    "Greedy",
+    "Math",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

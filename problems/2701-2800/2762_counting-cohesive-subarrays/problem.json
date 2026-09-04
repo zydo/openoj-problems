@@ -4,10 +4,18 @@
   "id": 2762,
   "slug": "counting-cohesive-subarrays",
   "title": "Counting Cohesive Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Ordered Set",
     "Monotonic Queue"
   ],
   "invocation": {

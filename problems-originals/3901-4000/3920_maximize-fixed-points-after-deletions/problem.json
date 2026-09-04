@@ -4,8 +4,13 @@
   "id": 3920,
   "slug": "maximize-fixed-points-after-deletions",
   "title": "Maximize Fixed Points After Deletions",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

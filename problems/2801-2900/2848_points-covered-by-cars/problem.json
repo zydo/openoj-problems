@@ -4,10 +4,15 @@
   "id": 2848,
   "slug": "points-covered-by-cars",
   "title": "Points Covered By Cars",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

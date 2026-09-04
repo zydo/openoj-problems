@@ -4,8 +4,14 @@
   "id": 3806,
   "slug": "maximum-bitwise-and-after-increment-operations",
   "title": "Maximum Bitwise AND After Increment Operations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation",

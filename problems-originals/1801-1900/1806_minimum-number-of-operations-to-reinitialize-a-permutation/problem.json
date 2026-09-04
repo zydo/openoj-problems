@@ -4,8 +4,13 @@
   "id": 1806,
   "slug": "minimum-number-of-operations-to-reinitialize-a-permutation",
   "title": "Minimum Number of Operations to Reinitialize a Permutation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Simulation"

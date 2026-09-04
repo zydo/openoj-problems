@@ -4,8 +4,11 @@
   "id": 520,
   "slug": "capitalization-check",
   "title": "Capitalization Check",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

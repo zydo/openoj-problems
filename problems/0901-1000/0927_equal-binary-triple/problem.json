@@ -4,8 +4,12 @@
   "id": 927,
   "slug": "equal-binary-triple",
   "title": "Equal Binary Triple",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -4,8 +4,15 @@
   "id": 956,
   "slug": "tallest-billboard",
   "title": "Tallest Billboard",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Meet in the Middle",
+    "Knapsack Problem",
+    "0-1 Knapsack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Meet in the Middle",

@@ -4,8 +4,15 @@
   "id": 532,
   "slug": "k-diff-pairs-in-an-array",
   "title": "K-diff Pairs in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

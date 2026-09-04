@@ -4,8 +4,15 @@
   "id": 3969,
   "slug": "valid-subarrays-with-matching-sum-digits-i",
   "title": "Valid Subarrays With Matching Sum Digits I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

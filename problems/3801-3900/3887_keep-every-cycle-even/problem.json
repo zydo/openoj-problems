@@ -4,10 +4,14 @@
   "id": 3887,
   "slug": "keep-every-cycle-even",
   "title": "Keep Every Cycle Even",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

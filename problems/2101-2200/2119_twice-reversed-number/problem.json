@@ -4,8 +4,11 @@
   "id": 2119,
   "slug": "twice-reversed-number",
   "title": "Twice-Reversed Number",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

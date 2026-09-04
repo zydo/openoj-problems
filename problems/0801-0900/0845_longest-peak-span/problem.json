@@ -4,10 +4,16 @@
   "id": 845,
   "slug": "longest-peak-span",
   "title": "Longest Peak Span",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

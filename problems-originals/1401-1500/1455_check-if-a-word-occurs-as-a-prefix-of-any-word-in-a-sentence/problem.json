@@ -4,8 +4,13 @@
   "id": 1455,
   "slug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
   "title": "Check If a Word Occurs As a Prefix of Any Word in a Sentence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String",
+    "String Matching"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "String Matching"

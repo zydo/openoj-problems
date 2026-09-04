@@ -4,8 +4,11 @@
   "id": 3421,
   "slug": "find-students-who-improved",
   "title": "Find Students Who Improved",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

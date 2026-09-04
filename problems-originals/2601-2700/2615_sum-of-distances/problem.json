@@ -3,8 +3,13 @@
   "id": 2615,
   "slug": "sum-of-distances",
   "title": "Sum of Distances",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

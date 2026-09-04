@@ -4,10 +4,14 @@
   "id": 3448,
   "slug": "last-digit-divisible-substrings",
   "title": "Last-Digit Divisible Substrings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Number Theory"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

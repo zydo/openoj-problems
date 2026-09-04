@@ -4,8 +4,12 @@
   "id": 3836,
   "slug": "maximum-score-using-exactly-k-pairs",
   "title": "Maximum Score Using Exactly K Pairs",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

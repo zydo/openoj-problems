@@ -4,8 +4,12 @@
   "id": 2943,
   "slug": "the-biggest-square-gap",
   "title": "The Biggest Square Gap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

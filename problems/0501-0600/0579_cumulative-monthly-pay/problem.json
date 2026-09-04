@@ -4,10 +4,13 @@
   "id": 579,
   "slug": "cumulative-monthly-pay",
   "title": "Cumulative Monthly Pay",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

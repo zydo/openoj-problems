@@ -4,11 +4,16 @@
   "id": 1962,
   "slug": "smallest-total-after-k-halvings",
   "title": "Smallest Total After K Halvings",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Heap",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

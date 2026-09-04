@@ -4,10 +4,16 @@
   "id": 3750,
   "slug": "fewest-flips-to-bit-reverse",
   "title": "Fewest Flips To Bit-Reverse",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Two Pointers",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Math",
+    "Two Pointers",
+    "String",
     "Bit Manipulation"
   ],
   "invocation": {

@@ -4,11 +4,18 @@
   "id": 279,
   "slug": "fewest-square-summands",
   "title": "Fewest Square Summands",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Math",
     "BFS"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Breadth-First Search",
+    "Knapsack Problem",
+    "Complete Knapsack"
   ],
   "invocation": {
     "type": "function",

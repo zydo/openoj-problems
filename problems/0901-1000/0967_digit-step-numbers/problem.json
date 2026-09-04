@@ -4,8 +4,12 @@
   "id": 967,
   "slug": "digit-step-numbers",
   "title": "Digit-Step Numbers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Backtracking",
     "Breadth-First Search"
   ],

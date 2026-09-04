@@ -4,10 +4,13 @@
   "id": 2688,
   "slug": "back-within-a-week",
   "title": "Back Within A Week",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

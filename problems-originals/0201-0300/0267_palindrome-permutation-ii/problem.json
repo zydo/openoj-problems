@@ -4,8 +4,13 @@
   "id": 267,
   "slug": "palindrome-permutation-ii",
   "title": "Palindrome Permutation II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Backtracking"

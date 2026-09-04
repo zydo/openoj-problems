@@ -4,8 +4,13 @@
   "id": 13,
   "slug": "roman-to-integer",
   "title": "Roman to Integer",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String"

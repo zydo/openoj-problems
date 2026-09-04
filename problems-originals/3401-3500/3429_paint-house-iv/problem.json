@@ -4,8 +4,12 @@
   "id": 3429,
   "slug": "paint-house-iv",
   "title": "Paint House IV",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

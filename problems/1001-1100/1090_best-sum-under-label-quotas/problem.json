@@ -4,12 +4,19 @@
   "id": 1090,
   "slug": "best-sum-under-label-quotas",
   "title": "Best Sum Under Label Quotas",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

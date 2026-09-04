@@ -3,11 +3,20 @@
   "id": 3620,
   "slug": "network-recovery-pathways",
   "title": "Network Recovery Pathways",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Binary Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Heap (Priority Queue)",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

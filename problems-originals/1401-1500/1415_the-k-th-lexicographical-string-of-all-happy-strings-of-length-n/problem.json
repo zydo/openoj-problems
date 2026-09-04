@@ -4,8 +4,12 @@
   "id": 1415,
   "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
   "title": "The k-th Lexicographical String of All Happy Strings of Length n",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "String",
     "Backtracking"
   ],

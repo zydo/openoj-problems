@@ -4,8 +4,12 @@
   "id": 2825,
   "slug": "shifting-into-a-subsequence",
   "title": "Shifting Into A Subsequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

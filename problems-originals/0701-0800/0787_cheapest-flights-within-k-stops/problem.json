@@ -3,11 +3,19 @@
   "id": 787,
   "slug": "cheapest-flights-within-k-stops",
   "title": "Cheapest Flights Within K Stops",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Shortest Path",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

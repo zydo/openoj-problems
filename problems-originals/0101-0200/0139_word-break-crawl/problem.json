@@ -4,8 +4,17 @@
   "id": 139,
   "slug": "word-break-crawl",
   "title": "Word Break",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Trie",
+    "Memoization",
+    "Brute-Force Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

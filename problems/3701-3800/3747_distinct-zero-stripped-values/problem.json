@@ -4,8 +4,12 @@
   "id": 3747,
   "slug": "distinct-zero-stripped-values",
   "title": "Distinct Zero-Stripped Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

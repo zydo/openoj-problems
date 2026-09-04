@@ -4,8 +4,12 @@
   "id": 3190,
   "slug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
   "title": "Find Minimum Operations to Make All Elements Divisible by Three",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

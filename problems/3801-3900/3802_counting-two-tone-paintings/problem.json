@@ -4,12 +4,16 @@
   "id": 3802,
   "slug": "counting-two-tone-paintings",
   "title": "Counting Two-Tone Paintings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Sorting",
     "Binary Search"
+  ],
+  "topics": [
+    "Math",
+    "Combinatorics"
   ],
   "invocation": {
     "type": "function",

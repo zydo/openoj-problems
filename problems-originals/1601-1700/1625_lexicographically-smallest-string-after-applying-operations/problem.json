@@ -4,8 +4,14 @@
   "id": 1625,
   "slug": "lexicographically-smallest-string-after-applying-operations",
   "title": "Lexicographically Smallest String After Applying Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Depth-First Search",
     "Breadth-First Search",

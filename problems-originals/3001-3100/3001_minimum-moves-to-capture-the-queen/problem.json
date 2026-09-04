@@ -4,8 +4,12 @@
   "id": 3001,
   "slug": "minimum-moves-to-capture-the-queen",
   "title": "Minimum Moves to Capture The Queen",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

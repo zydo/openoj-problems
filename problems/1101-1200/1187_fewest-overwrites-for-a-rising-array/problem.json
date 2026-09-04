@@ -4,12 +4,19 @@
   "id": 1187,
   "slug": "fewest-overwrites-for-a-rising-array",
   "title": "Fewest Overwrites for a Rising Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Dynamic Programming",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

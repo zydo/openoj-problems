@@ -4,8 +4,14 @@
   "id": 1980,
   "slug": "find-unique-binary-string",
   "title": "Find Unique Binary String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

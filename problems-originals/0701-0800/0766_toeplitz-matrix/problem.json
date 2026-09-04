@@ -4,8 +4,12 @@
   "id": 766,
   "slug": "toeplitz-matrix",
   "title": "Toeplitz Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

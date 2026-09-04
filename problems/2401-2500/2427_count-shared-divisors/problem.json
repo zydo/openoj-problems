@@ -4,10 +4,17 @@
   "id": 2427,
   "slug": "count-shared-divisors",
   "title": "Count Shared Divisors",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Number Theory",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
+    "Math",
+    "Enumeration",
+    "Number Theory",
+    "Euclidean Algorithm",
     "Greatest Common Divisor"
   ],
   "invocation": {

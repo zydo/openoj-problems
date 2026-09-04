@@ -4,8 +4,13 @@
   "id": 599,
   "slug": "minimum-index-sum-of-two-lists",
   "title": "Minimum Index Sum of Two Lists",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

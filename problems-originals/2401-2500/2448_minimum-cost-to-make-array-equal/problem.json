@@ -3,8 +3,15 @@
   "id": 2448,
   "slug": "minimum-cost-to-make-array-equal",
   "title": "Minimum Cost to Make Array Equal",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

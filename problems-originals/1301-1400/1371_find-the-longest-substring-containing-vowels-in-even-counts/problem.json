@@ -3,12 +3,18 @@
   "id": 1371,
   "slug": "find-the-longest-substring-containing-vowels-in-even-counts",
   "title": "Find the Longest Substring Containing Vowels in Even Counts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "String",
     "Prefix Sum",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

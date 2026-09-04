@@ -3,11 +3,16 @@
   "id": 1497,
   "slug": "check-if-array-pairs-are-divisible-by-k",
   "title": "Check If Array Pairs Are Divisible by k",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

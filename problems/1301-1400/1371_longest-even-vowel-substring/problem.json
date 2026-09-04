@@ -4,12 +4,18 @@
   "id": 1371,
   "slug": "longest-even-vowel-substring",
   "title": "Longest Even-Vowel Substring",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "String",
     "Prefix Sum",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

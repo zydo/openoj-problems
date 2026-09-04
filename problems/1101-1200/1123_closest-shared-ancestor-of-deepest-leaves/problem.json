@@ -4,12 +4,22 @@
   "id": 1123,
   "slug": "closest-shared-ancestor-of-deepest-leaves",
   "title": "Closest Shared Ancestor of the Deepest Leaves",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",
     "Lowest Common Ancestor"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

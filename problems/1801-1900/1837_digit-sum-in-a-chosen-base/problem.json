@@ -4,8 +4,11 @@
   "id": 1837,
   "slug": "digit-sum-in-a-chosen-base",
   "title": "Digit Sum In A Chosen Base",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

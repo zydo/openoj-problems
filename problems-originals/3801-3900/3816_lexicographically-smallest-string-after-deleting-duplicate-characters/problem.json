@@ -4,8 +4,15 @@
   "id": 3816,
   "slug": "lexicographically-smallest-string-after-deleting-duplicate-characters",
   "title": "Lexicographically Smallest String After Deleting Duplicate Characters",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Stack",

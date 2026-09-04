@@ -4,8 +4,18 @@
   "id": 2424,
   "slug": "longest-uploaded-prefix",
   "title": "Longest Uploaded Prefix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Binary Search",
+    "Union-Find",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "Binary Search",
     "Union-Find",

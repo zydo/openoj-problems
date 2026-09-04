@@ -4,8 +4,15 @@
   "id": 1170,
   "slug": "compare-strings-by-frequency-of-the-smallest-character",
   "title": "Compare Strings by Frequency of the Smallest Character",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

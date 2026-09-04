@@ -4,8 +4,12 @@
   "id": 2582,
   "slug": "the-traveling-pillow",
   "title": "The Traveling Pillow",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

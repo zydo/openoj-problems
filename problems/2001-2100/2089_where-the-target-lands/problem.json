@@ -4,8 +4,13 @@
   "id": 2089,
   "slug": "where-the-target-lands",
   "title": "Where the Target Lands",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

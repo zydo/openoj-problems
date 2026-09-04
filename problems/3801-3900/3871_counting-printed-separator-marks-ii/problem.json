@@ -4,8 +4,11 @@
   "id": 3871,
   "slug": "counting-printed-separator-marks-ii",
   "title": "Counting Printed Separator Marks II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

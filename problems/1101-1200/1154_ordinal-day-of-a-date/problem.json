@@ -4,8 +4,12 @@
   "id": 1154,
   "slug": "ordinal-day-of-a-date",
   "title": "Ordinal Day of a Date",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

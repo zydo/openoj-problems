@@ -4,10 +4,14 @@
   "id": 3447,
   "slug": "each-group-takes-its-first-divisor",
   "title": "Each Group Takes Its First Divisor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Number Theory",
+    "Hash Table"
+  ],
+  "topics": [
+    "Array",
     "Hash Table"
   ],
   "invocation": {

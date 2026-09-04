@@ -4,8 +4,12 @@
   "id": 344,
   "slug": "character-array-reversal",
   "title": "Character Array Reversal",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

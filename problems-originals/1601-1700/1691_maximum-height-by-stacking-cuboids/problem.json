@@ -3,11 +3,16 @@
   "id": 1691,
   "slug": "maximum-height-by-stacking-cuboids",
   "title": "Maximum Height by Stacking Cuboids",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Sorting",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

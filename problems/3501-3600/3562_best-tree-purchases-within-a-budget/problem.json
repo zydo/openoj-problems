@@ -4,10 +4,16 @@
   "id": 3562,
   "slug": "best-tree-purchases-within-a-budget",
   "title": "Best Tree Purchases Within a Budget",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

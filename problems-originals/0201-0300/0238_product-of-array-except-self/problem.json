@@ -3,8 +3,12 @@
   "id": 238,
   "slug": "product-of-array-except-self",
   "title": "Product of Array Except Self",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

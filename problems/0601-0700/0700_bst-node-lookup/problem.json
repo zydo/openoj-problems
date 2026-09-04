@@ -4,8 +4,13 @@
   "id": 700,
   "slug": "bst-node-lookup",
   "title": "BST Node Lookup",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Search Tree",
     "Binary Tree"

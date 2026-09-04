@@ -4,8 +4,12 @@
   "id": 661,
   "slug": "image-smoother",
   "title": "Image Smoother",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

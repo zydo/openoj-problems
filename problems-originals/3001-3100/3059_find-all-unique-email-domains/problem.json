@@ -4,8 +4,11 @@
   "id": 3059,
   "slug": "find-all-unique-email-domains",
   "title": "Find All Unique Email Domains",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

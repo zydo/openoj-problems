@@ -4,8 +4,13 @@
   "id": 299,
   "slug": "secret-number-hint",
   "title": "Secret Number Hint",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

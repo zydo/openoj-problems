@@ -3,10 +3,18 @@
   "id": 3116,
   "slug": "kth-smallest-amount-with-single-denomination-combination",
   "title": "Kth Smallest Amount With Single Denomination Combination",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Number Theory",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Bit Manipulation",
+    "Combinatorics",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

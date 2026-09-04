@@ -4,8 +4,12 @@
   "id": 730,
   "slug": "count-different-palindromic-subsequences",
   "title": "Count Different Palindromic Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

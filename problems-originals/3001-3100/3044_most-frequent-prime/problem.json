@@ -4,8 +4,20 @@
   "id": 3044,
   "slug": "most-frequent-prime",
   "title": "Most Frequent Prime",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Matrix",
+    "Counting",
+    "Enumeration",
+    "Number Theory",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

@@ -4,9 +4,12 @@
   "id": 2797,
   "slug": "preloading-a-functions-arguments",
   "title": "Preloading A Function's Arguments",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

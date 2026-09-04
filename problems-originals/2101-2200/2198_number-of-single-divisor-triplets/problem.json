@@ -4,8 +4,13 @@
   "id": 2198,
   "slug": "number-of-single-divisor-triplets",
   "title": "Number of Single Divisor Triplets",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Counting",
     "Enumeration"

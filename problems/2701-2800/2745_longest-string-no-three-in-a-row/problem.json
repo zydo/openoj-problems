@@ -4,9 +4,15 @@
   "id": 2745,
   "slug": "longest-string-no-three-in-a-row",
   "title": "The Longest String With No Three In A Row",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
+    "Greedy",
+    "Brainteaser"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
     "Greedy",
     "Brainteaser"
   ],

@@ -4,8 +4,13 @@
   "id": 3995,
   "slug": "minimum-cost-to-convert-string-iii",
   "title": "Minimum Cost to Convert String III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "String",
+    "Shortest Path",
+    "Dynamic Programming"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

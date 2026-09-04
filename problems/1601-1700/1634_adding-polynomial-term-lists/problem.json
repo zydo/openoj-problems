@@ -4,8 +4,13 @@
   "id": 1634,
   "slug": "adding-polynomial-term-lists",
   "title": "Adding Polynomial Term Lists",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Two Pointers"
+  ],
+  "topics": [
+    "Linked List",
     "Math",
     "Two Pointers"
   ],

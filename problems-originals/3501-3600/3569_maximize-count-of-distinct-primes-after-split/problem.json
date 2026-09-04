@@ -4,8 +4,16 @@
   "id": 3569,
   "slug": "maximize-count-of-distinct-primes-after-split",
   "title": "Maximize Count of Distinct Primes After Split",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Segment Tree",
+    "Number Theory",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

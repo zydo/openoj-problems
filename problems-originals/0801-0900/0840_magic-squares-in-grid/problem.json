@@ -4,8 +4,14 @@
   "id": 840,
   "slug": "magic-squares-in-grid",
   "title": "Magic Squares In Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

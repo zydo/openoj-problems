@@ -4,8 +4,12 @@
   "id": 2483,
   "slug": "cheapest-closing-hour",
   "title": "Cheapest Closing Hour",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Prefix Sum"
   ],

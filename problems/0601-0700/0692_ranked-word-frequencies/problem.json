@@ -4,11 +4,21 @@
   "id": 692,
   "slug": "ranked-word-frequencies",
   "title": "Ranked Word Frequencies",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Heap (Priority Queue)",
     "Sorting",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
     "Counting"
   ],
   "invocation": {

@@ -3,11 +3,19 @@
   "id": 1632,
   "slug": "rank-transform-of-a-matrix",
   "title": "Rank Transform of a Matrix",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Sorting",
     "Greedy",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
+    "Graph Theory",
+    "Topological Sort",
+    "Sorting",
     "Matrix"
   ],
   "invocation": {

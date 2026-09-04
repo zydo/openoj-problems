@@ -3,8 +3,12 @@
   "id": 2140,
   "slug": "solving-questions-with-brainpower",
   "title": "Solving Questions With Brainpower",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

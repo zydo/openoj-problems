@@ -4,8 +4,11 @@
   "id": 3863,
   "slug": "fewest-substring-sorts-to-alphabetize",
   "title": "Fewest Substring Sorts To Alphabetize",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

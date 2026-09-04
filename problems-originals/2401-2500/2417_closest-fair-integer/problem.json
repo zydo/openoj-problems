@@ -4,8 +4,12 @@
   "id": 2417,
   "slug": "closest-fair-integer",
   "title": "Closest Fair Integer",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

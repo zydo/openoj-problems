@@ -4,10 +4,15 @@
   "id": 1866,
   "slug": "sequences-with-k-records",
   "title": "Sequences With K Records",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
   ],
   "invocation": {
     "type": "function",

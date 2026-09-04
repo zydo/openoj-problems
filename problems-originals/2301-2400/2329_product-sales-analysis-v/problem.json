@@ -4,8 +4,11 @@
   "id": 2329,
   "slug": "product-sales-analysis-v",
   "title": "Product Sales Analysis V",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

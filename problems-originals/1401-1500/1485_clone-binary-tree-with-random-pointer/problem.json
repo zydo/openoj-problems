@@ -4,8 +4,15 @@
   "id": 1485,
   "slug": "clone-binary-tree-with-random-pointer",
   "title": "Clone Binary Tree With Random Pointer",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

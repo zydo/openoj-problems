@@ -4,8 +4,14 @@
   "id": 3780,
   "slug": "maximum-sum-of-three-numbers-divisible-by-three",
   "title": "Maximum Sum of Three Numbers Divisible by Three",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

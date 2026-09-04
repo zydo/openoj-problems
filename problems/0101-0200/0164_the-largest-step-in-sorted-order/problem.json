@@ -4,11 +4,18 @@
   "id": 164,
   "slug": "the-largest-step-in-sorted-order",
   "title": "The Largest Step In Sorted Order",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Bucket Sort"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Bucket Sort",
+    "Radix Sort",
+    "Pigeonhole Principle"
   ],
   "invocation": {
     "type": "function",

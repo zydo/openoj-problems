@@ -4,8 +4,12 @@
   "id": 2656,
   "slug": "maximum-sum-with-exactly-k-elements",
   "title": "Maximum Sum With Exactly K Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

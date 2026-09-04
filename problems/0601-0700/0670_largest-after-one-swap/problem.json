@@ -4,8 +4,12 @@
   "id": 670,
   "slug": "largest-after-one-swap",
   "title": "Largest Value After One Swap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

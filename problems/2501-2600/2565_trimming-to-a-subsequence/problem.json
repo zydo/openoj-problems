@@ -4,8 +4,13 @@
   "id": 2565,
   "slug": "trimming-to-a-subsequence",
   "title": "Trimming to a Subsequence",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Binary Search"

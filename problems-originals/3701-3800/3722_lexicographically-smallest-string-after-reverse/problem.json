@@ -4,8 +4,13 @@
   "id": 3722,
   "slug": "lexicographically-smallest-string-after-reverse",
   "title": "Lexicographically Smallest String After Reverse",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "Binary Search",
+    "Enumeration"
+  ],
+  "topics": [
     "Two Pointers",
     "Binary Search",
     "Enumeration"

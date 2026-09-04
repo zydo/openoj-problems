@@ -4,8 +4,14 @@
   "id": 2286,
   "slug": "hall-seating",
   "title": "Hall Seating",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Segment Tree"
+  ],
+  "topics": [
+    "Binary Search",
+    "Design",
+    "Binary Indexed Tree",
     "Segment Tree"
   ],
   "invocation": {

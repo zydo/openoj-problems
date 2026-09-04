@@ -4,8 +4,12 @@
   "id": 3499,
   "slug": "maximize-active-section-with-trade-i",
   "title": "Maximize Active Section with Trade I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

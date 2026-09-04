@@ -3,8 +3,13 @@
   "id": 1277,
   "slug": "count-square-submatrices-with-all-ones",
   "title": "Count Square Submatrices with All Ones",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Matrix"
   ],

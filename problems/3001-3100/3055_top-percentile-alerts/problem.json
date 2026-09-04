@@ -4,11 +4,14 @@
   "id": 3055,
   "slug": "top-percentile-alerts",
   "title": "Top Percentile Alerts",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL",
     "Window Function"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

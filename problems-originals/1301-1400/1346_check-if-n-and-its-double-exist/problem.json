@@ -4,8 +4,15 @@
   "id": 1346,
   "slug": "check-if-n-and-its-double-exist",
   "title": "Check If N and Its Double Exist",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

@@ -4,8 +4,12 @@
   "id": 1332,
   "slug": "remove-palindromic-subsequences",
   "title": "Remove Palindromic Subsequences",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

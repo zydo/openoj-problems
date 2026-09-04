@@ -4,8 +4,14 @@
   "id": 428,
   "slug": "n-ary-tree-serializer",
   "title": "N-ary Tree Serializer",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "String",
     "Tree",
     "Depth-First Search",

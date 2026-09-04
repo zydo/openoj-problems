@@ -4,8 +4,13 @@
   "id": 3669,
   "slug": "leveling-the-factors",
   "title": "Leveling The Factors",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Backtracking",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Backtracking",
     "Number Theory"

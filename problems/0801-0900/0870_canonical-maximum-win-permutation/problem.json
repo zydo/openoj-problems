@@ -4,11 +4,17 @@
   "id": 870,
   "slug": "canonical-maximum-win-permutation",
   "title": "Canonical Maximum-Win Permutation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Greedy",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

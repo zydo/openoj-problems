@@ -4,8 +4,14 @@
   "id": 1898,
   "slug": "most-deletions-a-subsequence-survives",
   "title": "Most Deletions a Subsequence Survives",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "String",

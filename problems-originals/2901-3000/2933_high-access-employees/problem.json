@@ -4,8 +4,14 @@
   "id": 2933,
   "slug": "high-access-employees",
   "title": "High-Access Employees",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

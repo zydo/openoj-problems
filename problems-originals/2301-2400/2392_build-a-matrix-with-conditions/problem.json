@@ -3,10 +3,17 @@
   "id": 2392,
   "slug": "build-a-matrix-with-conditions",
   "title": "Build a Matrix With Conditions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Topological Sort",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Graph Theory",
+    "Topological Sort",
+    "Matrix",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

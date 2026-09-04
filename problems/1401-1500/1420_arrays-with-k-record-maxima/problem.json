@@ -4,8 +4,12 @@
   "id": 1420,
   "slug": "arrays-with-k-record-maxima",
   "title": "Arrays With K Record Maxima",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Prefix Sum"
   ],

@@ -4,8 +4,13 @@
   "id": 2241,
   "slug": "design-an-atm-machine",
   "title": "Design an ATM Machine",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Design"

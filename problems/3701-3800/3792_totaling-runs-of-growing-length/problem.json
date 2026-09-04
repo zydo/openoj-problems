@@ -4,8 +4,12 @@
   "id": 3792,
   "slug": "totaling-runs-of-growing-length",
   "title": "Totaling Runs Of Growing Length",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

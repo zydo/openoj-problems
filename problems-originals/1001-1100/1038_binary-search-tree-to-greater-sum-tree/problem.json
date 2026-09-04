@@ -3,11 +3,17 @@
   "id": 1038,
   "slug": "binary-search-tree-to-greater-sum-tree",
   "title": "Binary Search Tree to Greater Sum Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "Binary Search Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

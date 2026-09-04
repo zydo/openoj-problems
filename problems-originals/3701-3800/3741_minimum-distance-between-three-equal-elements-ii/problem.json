@@ -4,8 +4,12 @@
   "id": 3741,
   "slug": "minimum-distance-between-three-equal-elements-ii",
   "title": "Minimum Distance Between Three Equal Elements II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

@@ -4,12 +4,18 @@
   "id": 543,
   "slug": "widest-tree-path",
   "title": "Widest Tree Path",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
     "Binary Tree",
     "Depth-First Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

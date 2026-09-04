@@ -4,8 +4,15 @@
   "id": 2538,
   "slug": "difference-between-maximum-and-minimum-price-sum",
   "title": "Difference Between Maximum and Minimum Price Sum",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "DP on Trees"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Tree",

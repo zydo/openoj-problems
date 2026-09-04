@@ -4,8 +4,12 @@
   "id": 1922,
   "slug": "count-good-numbers",
   "title": "Count Good Numbers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Recursion"
   ],

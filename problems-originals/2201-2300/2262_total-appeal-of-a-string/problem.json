@@ -3,8 +3,13 @@
   "id": 2262,
   "slug": "total-appeal-of-a-string",
   "title": "Total Appeal of A String",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming"

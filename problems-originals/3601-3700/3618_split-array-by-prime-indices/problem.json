@@ -4,8 +4,13 @@
   "id": 3618,
   "slug": "split-array-by-prime-indices",
   "title": "Split Array by Prime Indices",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Number Theory"

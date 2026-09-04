@@ -4,8 +4,11 @@
   "id": 185,
   "slug": "department-top-three-salaries",
   "title": "Department Top Three Salaries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

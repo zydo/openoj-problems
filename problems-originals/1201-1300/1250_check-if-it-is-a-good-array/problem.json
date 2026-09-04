@@ -4,8 +4,17 @@
   "id": 1250,
   "slug": "check-if-it-is-a-good-array",
   "title": "Check If It Is a Good Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Number Theory",
+    "Bézout's Lemma",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor",
+    "Extended Euclidean Algorithm"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Number Theory",

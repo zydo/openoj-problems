@@ -4,8 +4,13 @@
   "id": 3098,
   "slug": "sum-of-subsequence-tightness",
   "title": "Sum of Subsequence Tightness",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sorting"

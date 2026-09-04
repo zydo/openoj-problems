@@ -4,8 +4,12 @@
   "id": 2361,
   "slug": "two-track-fare-table",
   "title": "Two-Track Fare Table",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

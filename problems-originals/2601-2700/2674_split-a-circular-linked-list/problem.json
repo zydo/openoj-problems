@@ -4,8 +4,12 @@
   "id": 2674,
   "slug": "split-a-circular-linked-list",
   "title": "Split a Circular Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "topics": [
     "Linked List",
     "Two Pointers"
   ],

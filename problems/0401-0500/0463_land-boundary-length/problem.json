@@ -4,9 +4,15 @@
   "id": 463,
   "slug": "land-boundary-length",
   "title": "Land Boundary Length",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Matrix"
   ],
   "invocation": {

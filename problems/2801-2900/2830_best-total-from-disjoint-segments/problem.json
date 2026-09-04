@@ -4,8 +4,15 @@
   "id": 2830,
   "slug": "best-total-from-disjoint-segments",
   "title": "Best Total from Disjoint Segments",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

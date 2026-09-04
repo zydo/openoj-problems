@@ -3,8 +3,13 @@
   "id": 2435,
   "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
   "title": "Paths in Matrix Whose Sum Is Divisible by K",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

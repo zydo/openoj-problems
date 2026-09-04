@@ -4,8 +4,11 @@
   "id": 1446,
   "slug": "longest-uniform-run",
   "title": "Longest Uniform Run",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

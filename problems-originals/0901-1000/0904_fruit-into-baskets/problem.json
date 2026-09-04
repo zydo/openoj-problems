@@ -4,8 +4,13 @@
   "id": 904,
   "slug": "fruit-into-baskets",
   "title": "Fruit Into Baskets",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

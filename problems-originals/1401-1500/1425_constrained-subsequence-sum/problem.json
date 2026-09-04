@@ -3,11 +3,19 @@
   "id": 1425,
   "slug": "constrained-subsequence-sum",
   "title": "Constrained Subsequence Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Monotonic Queue",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

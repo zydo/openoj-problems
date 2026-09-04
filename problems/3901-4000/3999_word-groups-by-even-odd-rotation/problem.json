@@ -4,10 +4,15 @@
   "id": 3999,
   "slug": "word-groups-by-even-odd-rotation",
   "title": "Word Groups By Even-Odd Rotation",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "String",
+    "Hash Table",
+    "Math"
   ],
   "invocation": {
     "type": "function",

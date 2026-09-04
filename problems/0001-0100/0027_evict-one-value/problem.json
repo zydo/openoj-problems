@@ -4,8 +4,12 @@
   "id": 27,
   "slug": "evict-one-value",
   "title": "Evict One Value",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

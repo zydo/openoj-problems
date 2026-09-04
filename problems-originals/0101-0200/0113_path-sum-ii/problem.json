@@ -4,8 +4,14 @@
   "id": 113,
   "slug": "path-sum-ii",
   "title": "Path Sum II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Backtracking",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Backtracking",
     "Tree",
     "Depth-First Search",

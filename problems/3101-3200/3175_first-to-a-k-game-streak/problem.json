@@ -4,8 +4,12 @@
   "id": 3175,
   "slug": "first-to-a-k-game-streak",
   "title": "First To A K-Game Streak",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

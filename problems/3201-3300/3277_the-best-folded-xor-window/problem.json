@@ -4,8 +4,12 @@
   "id": 3277,
   "slug": "the-best-folded-xor-window",
   "title": "The Best Folded-XOR Window",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

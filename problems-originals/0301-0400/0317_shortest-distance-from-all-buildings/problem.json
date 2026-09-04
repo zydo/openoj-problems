@@ -4,8 +4,13 @@
   "id": 317,
   "slug": "shortest-distance-from-all-buildings",
   "title": "Shortest Distance from All Buildings",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

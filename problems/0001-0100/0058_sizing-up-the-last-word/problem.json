@@ -4,8 +4,11 @@
   "id": 58,
   "slug": "sizing-up-the-last-word",
   "title": "Sizing Up The Last Word",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 2263,
   "slug": "make-array-non-decreasing-or-non-increasing",
   "title": "Make Array Non-decreasing or Non-increasing",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy",

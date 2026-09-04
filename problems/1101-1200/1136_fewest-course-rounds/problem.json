@@ -4,12 +4,17 @@
   "id": 1136,
   "slug": "fewest-course-rounds",
   "title": "Fewest Course Rounds",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Topological Sort",
     "Graph",
     "BFS",
     "DFS"
+  ],
+  "topics": [
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

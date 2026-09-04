@@ -4,8 +4,13 @@
   "id": 852,
   "slug": "peak-index-in-a-mountain-array",
   "title": "Peak Index in a Mountain Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Ternary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Ternary Search"

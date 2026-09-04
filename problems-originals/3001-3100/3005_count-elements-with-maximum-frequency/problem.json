@@ -4,8 +4,13 @@
   "id": 3005,
   "slug": "count-elements-with-maximum-frequency",
   "title": "Count Elements With Maximum Frequency",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

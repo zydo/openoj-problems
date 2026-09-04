@@ -4,8 +4,13 @@
   "id": 3821,
   "slug": "climbing-the-k-one-bit-ladder",
   "title": "Climbing The K One-Bit Ladder",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Combinatorics"

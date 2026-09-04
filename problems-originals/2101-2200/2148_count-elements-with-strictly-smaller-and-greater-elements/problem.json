@@ -4,8 +4,13 @@
   "id": 2148,
   "slug": "count-elements-with-strictly-smaller-and-greater-elements",
   "title": "Count Elements With Strictly Smaller and Greater Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Counting"

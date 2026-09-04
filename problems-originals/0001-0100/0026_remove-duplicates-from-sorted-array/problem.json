@@ -4,8 +4,12 @@
   "id": 26,
   "slug": "remove-duplicates-from-sorted-array",
   "title": "Remove Duplicates from Sorted Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

@@ -4,8 +4,13 @@
   "id": 1545,
   "slug": "find-kth-bit-in-nth-binary-string",
   "title": "Find Kth Bit in Nth Binary String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Recursion",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Recursion",
     "Simulation"

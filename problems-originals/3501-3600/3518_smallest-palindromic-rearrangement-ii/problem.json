@@ -4,8 +4,15 @@
   "id": 3518,
   "slug": "smallest-palindromic-rearrangement-ii",
   "title": "Smallest Palindromic Rearrangement II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

@@ -4,8 +4,14 @@
   "id": 950,
   "slug": "reverse-reveal-deck",
   "title": "Reverse Reveal Deck",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Queue",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Sorting",

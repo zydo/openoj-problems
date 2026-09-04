@@ -4,8 +4,13 @@
   "id": 231,
   "slug": "power-of-two",
   "title": "Power of Two",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Recursion"

@@ -4,11 +4,19 @@
   "id": 1960,
   "slug": "disjoint-palindrome-product",
   "title": "Disjoint Palindrome Product",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Two Pointers",
     "Manacher"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Rolling Hash",
+    "Hash Function",
+    "Manacher",
+    "Palindromic Tree"
   ],
   "invocation": {
     "type": "function",

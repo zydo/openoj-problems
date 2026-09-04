@@ -4,8 +4,14 @@
   "id": 351,
   "slug": "android-unlock-patterns",
   "title": "Android Unlock Patterns",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Backtracking",
     "Bit Manipulation",

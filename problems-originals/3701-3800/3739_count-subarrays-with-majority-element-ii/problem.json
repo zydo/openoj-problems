@@ -4,8 +4,16 @@
   "id": 3739,
   "slug": "count-subarrays-with-majority-element-ii",
   "title": "Count Subarrays With Majority Element II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Segment Tree",
+    "Merge Sort",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Divide and Conquer",

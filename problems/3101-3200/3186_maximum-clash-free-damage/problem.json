@@ -4,12 +4,21 @@
   "id": 3186,
   "slug": "maximum-clash-free-damage",
   "title": "Maximum Clash-Free Damage",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Dynamic Programming",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

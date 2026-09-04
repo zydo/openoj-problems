@@ -4,8 +4,13 @@
   "id": 2684,
   "slug": "longest-ascent-across-a-grid",
   "title": "Longest Ascent Across A Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

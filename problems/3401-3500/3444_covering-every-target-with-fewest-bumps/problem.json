@@ -4,12 +4,20 @@
   "id": 3444,
   "slug": "covering-every-target-with-fewest-bumps",
   "title": "Covering Every Target With Fewest Bumps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Number Theory",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,15 @@
   "id": 1790,
   "slug": "a-single-swap-apart",
   "title": "A Single Swap Apart",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

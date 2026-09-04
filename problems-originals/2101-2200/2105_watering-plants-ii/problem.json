@@ -4,8 +4,13 @@
   "id": 2105,
   "slug": "watering-plants-ii",
   "title": "Watering Plants II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Simulation"

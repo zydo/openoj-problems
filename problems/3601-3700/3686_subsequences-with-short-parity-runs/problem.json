@@ -4,8 +4,12 @@
   "id": 3686,
   "slug": "subsequences-with-short-parity-runs",
   "title": "Subsequences With Short Parity Runs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -4,8 +4,13 @@
   "id": 2279,
   "slug": "most-containers-filled-with-spare-units",
   "title": "Most Containers Filled With Spare Units",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

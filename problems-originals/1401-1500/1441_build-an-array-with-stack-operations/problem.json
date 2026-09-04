@@ -4,8 +4,13 @@
   "id": 1441,
   "slug": "build-an-array-with-stack-operations",
   "title": "Build an Array With Stack Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Simulation"

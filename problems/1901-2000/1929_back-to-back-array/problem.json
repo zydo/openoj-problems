@@ -4,8 +4,12 @@
   "id": 1929,
   "slug": "back-to-back-array",
   "title": "Back-to-Back Array",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

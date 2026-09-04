@@ -4,8 +4,13 @@
   "id": 2470,
   "slug": "number-of-subarrays-with-lcm-equal-to-k",
   "title": "Number of Subarrays With LCM Equal to K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Number Theory"

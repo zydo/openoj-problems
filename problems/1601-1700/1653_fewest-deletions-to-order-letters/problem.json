@@ -4,10 +4,15 @@
   "id": 1653,
   "slug": "fewest-deletions-to-order-letters",
   "title": "Fewest Deletions to Order the Letters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Stack"
   ],
   "invocation": {
     "type": "function",

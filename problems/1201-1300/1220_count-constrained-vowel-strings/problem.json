@@ -4,8 +4,11 @@
   "id": 1220,
   "slug": "count-constrained-vowel-strings",
   "title": "Count Constrained Vowel Strings",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

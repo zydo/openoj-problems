@@ -4,9 +4,15 @@
   "id": 3952,
   "slug": "shifting-tokens-for-a-richer-sum",
   "title": "Shifting Tokens For A Richer Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

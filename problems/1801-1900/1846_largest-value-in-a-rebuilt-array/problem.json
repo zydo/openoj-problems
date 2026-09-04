@@ -4,8 +4,13 @@
   "id": 1846,
   "slug": "largest-value-in-a-rebuilt-array",
   "title": "Largest Value in a Rebuilt Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

@@ -4,10 +4,13 @@
   "id": 627,
   "slug": "swap-roster-gender",
   "title": "Swap Roster Gender",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

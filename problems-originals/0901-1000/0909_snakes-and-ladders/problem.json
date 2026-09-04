@@ -4,8 +4,13 @@
   "id": 909,
   "slug": "snakes-and-ladders",
   "title": "Snakes and Ladders",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

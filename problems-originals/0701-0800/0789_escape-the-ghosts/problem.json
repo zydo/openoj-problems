@@ -4,8 +4,12 @@
   "id": 789,
   "slug": "escape-the-ghosts",
   "title": "Escape The Ghosts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

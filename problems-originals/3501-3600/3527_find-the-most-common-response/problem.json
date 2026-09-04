@@ -4,8 +4,14 @@
   "id": 3527,
   "slug": "find-the-most-common-response",
   "title": "Find the Most Common Response",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

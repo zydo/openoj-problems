@@ -4,10 +4,14 @@
   "id": 2177,
   "slug": "consecutive-triple-sum",
   "title": "Consecutive Triple Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

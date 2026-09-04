@@ -4,11 +4,19 @@
   "id": 2528,
   "slug": "largest-minimum-city-power",
   "title": "Largest Minimum City Power",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Greedy",
     "Difference Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

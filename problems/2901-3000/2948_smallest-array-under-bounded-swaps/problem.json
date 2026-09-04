@@ -4,8 +4,13 @@
   "id": 2948,
   "slug": "smallest-array-under-bounded-swaps",
   "title": "Smallest Array Under Bounded Swaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Union-Find",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Union-Find",
     "Sorting"
   ],

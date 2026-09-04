@@ -4,8 +4,11 @@
   "id": 3708,
   "slug": "longest-fibonacci-subarray",
   "title": "Longest Fibonacci Subarray",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

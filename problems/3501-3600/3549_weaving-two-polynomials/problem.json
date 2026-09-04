@@ -4,8 +4,12 @@
   "id": 3549,
   "slug": "weaving-two-polynomials",
   "title": "Weaving Two Polynomials",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

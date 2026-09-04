@@ -4,8 +4,11 @@
   "id": 1056,
   "slug": "number-that-rotates-into-another",
   "title": "Number That Rotates Into Another",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

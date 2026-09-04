@@ -3,9 +3,14 @@
   "id": 2276,
   "slug": "count-integers-in-intervals",
   "title": "Count Integers in Intervals",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Balanced BST"
+  ],
+  "topics": [
+    "Design",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

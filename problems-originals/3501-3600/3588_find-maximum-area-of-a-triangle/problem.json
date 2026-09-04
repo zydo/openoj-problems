@@ -4,8 +4,16 @@
   "id": 3588,
   "slug": "find-maximum-area-of-a-triangle",
   "title": "Find Maximum Area of a Triangle",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy",
+    "Geometry",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

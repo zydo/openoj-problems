@@ -4,8 +4,15 @@
   "id": 3762,
   "slug": "minimum-operations-to-equalize-subarrays",
   "title": "Minimum Operations to Equalize Subarrays",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Segment Tree",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

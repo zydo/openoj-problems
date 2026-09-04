@@ -4,8 +4,12 @@
   "id": 1929,
   "slug": "concatenation-of-array",
   "title": "Concatenation of Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

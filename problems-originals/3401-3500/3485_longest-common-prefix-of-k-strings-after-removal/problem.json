@@ -3,10 +3,15 @@
   "id": 3485,
   "slug": "longest-common-prefix-of-k-strings-after-removal",
   "title": "Longest Common Prefix of K Strings After Removal",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

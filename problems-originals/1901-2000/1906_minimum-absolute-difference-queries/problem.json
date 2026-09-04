@@ -4,8 +4,12 @@
   "id": 1906,
   "slug": "minimum-absolute-difference-queries",
   "title": "Minimum Absolute Difference Queries",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

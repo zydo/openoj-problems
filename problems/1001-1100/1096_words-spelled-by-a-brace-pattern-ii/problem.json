@@ -4,11 +4,19 @@
   "id": 1096,
   "slug": "words-spelled-by-a-brace-pattern-ii",
   "title": "Words Spelled by a Brace Pattern II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Stack",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Stack",
+    "Breadth-First Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

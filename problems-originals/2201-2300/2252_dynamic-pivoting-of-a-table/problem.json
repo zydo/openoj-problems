@@ -4,8 +4,11 @@
   "id": 2252,
   "slug": "dynamic-pivoting-of-a-table",
   "title": "Dynamic Pivoting of a Table",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

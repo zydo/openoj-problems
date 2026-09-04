@@ -3,11 +3,16 @@
   "id": 1300,
   "slug": "sum-of-mutated-array-closest-to-target",
   "title": "Sum of Mutated Array Closest to Target",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Sorting",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

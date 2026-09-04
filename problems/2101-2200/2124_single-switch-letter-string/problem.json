@@ -4,8 +4,11 @@
   "id": 2124,
   "slug": "single-switch-letter-string",
   "title": "Single-Switch Letter String",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

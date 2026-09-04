@@ -4,8 +4,12 @@
   "id": 1936,
   "slug": "filling-ladder-gaps",
   "title": "Filling Ladder Gaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

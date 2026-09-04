@@ -4,10 +4,13 @@
   "id": 1251,
   "slug": "average-realized-price",
   "title": "Average Realized Price",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

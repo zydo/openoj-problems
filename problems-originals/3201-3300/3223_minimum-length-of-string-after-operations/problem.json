@@ -4,8 +4,13 @@
   "id": 3223,
   "slug": "minimum-length-of-string-after-operations",
   "title": "Minimum Length of String After Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

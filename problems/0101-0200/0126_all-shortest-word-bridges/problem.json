@@ -4,11 +4,18 @@
   "id": 126,
   "slug": "all-shortest-word-bridges",
   "title": "All Shortest Word Bridges",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "BFS",
     "Backtracking"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Breadth-First Search",
+    "Bidirectional Search"
   ],
   "invocation": {
     "type": "function",

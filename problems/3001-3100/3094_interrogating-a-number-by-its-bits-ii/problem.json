@@ -4,8 +4,12 @@
   "id": 3094,
   "slug": "interrogating-a-number-by-its-bits-ii",
   "title": "Interrogating a Number by Its Bits II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation",
+    "Interactive"
+  ],
+  "topics": [
     "Bit Manipulation",
     "Interactive"
   ],

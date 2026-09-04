@@ -4,8 +4,13 @@
   "id": 2714,
   "slug": "cheapest-route-with-free-hops",
   "title": "Cheapest Route with Free Hops",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"

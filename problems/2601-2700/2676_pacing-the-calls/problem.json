@@ -4,9 +4,13 @@
   "id": 2676,
   "slug": "pacing-the-calls",
   "title": "Pacing The Calls",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Concurrency",
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

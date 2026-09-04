@@ -4,8 +4,12 @@
   "id": 2678,
   "slug": "number-of-senior-citizens",
   "title": "Number of Senior Citizens",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

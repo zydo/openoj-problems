@@ -4,8 +4,11 @@
   "id": 1437,
   "slug": "check-if-all-1s-are-at-least-length-k-places-away",
   "title": "Check If All 1's Are at Least Length K Places Away",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

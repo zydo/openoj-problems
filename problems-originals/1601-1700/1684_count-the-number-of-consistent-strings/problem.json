@@ -4,8 +4,15 @@
   "id": 1684,
   "slug": "count-the-number-of-consistent-strings",
   "title": "Count the Number of Consistent Strings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

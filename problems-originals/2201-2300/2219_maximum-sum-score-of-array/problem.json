@@ -4,8 +4,12 @@
   "id": 2219,
   "slug": "maximum-sum-score-of-array",
   "title": "Maximum Sum Score of Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

@@ -4,8 +4,12 @@
   "id": 1320,
   "slug": "two-finger-typing-cost",
   "title": "Two-Finger Typing Cost",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

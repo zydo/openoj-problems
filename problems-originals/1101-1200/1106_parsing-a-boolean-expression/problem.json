@@ -3,8 +3,13 @@
   "id": 1106,
   "slug": "parsing-a-boolean-expression",
   "title": "Parsing A Boolean Expression",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Recursion"

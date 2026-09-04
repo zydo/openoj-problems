@@ -4,8 +4,15 @@
   "id": 988,
   "slug": "smallest-string-starting-from-leaf",
   "title": "Smallest String Starting From Leaf",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "String",
     "Backtracking",
     "Tree",

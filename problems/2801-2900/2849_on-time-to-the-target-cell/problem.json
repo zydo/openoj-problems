@@ -4,8 +4,11 @@
   "id": 2849,
   "slug": "on-time-to-the-target-cell",
   "title": "On Time To The Target Cell",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

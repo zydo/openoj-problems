@@ -4,8 +4,13 @@
   "id": 2107,
   "slug": "number-of-unique-flavors-after-sharing-k-candies",
   "title": "Number of Unique Flavors After Sharing K Candies",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

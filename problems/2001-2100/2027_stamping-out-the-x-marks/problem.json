@@ -4,8 +4,12 @@
   "id": 2027,
   "slug": "stamping-out-the-x-marks",
   "title": "Stamping Out the X Marks",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

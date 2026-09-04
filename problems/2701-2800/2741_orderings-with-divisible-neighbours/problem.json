@@ -4,8 +4,14 @@
   "id": 2741,
   "slug": "orderings-with-divisible-neighbours",
   "title": "Orderings with Divisible Neighbours",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

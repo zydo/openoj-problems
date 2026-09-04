@@ -4,10 +4,14 @@
   "id": 2649,
   "slug": "a-generator-that-flattens",
   "title": "A Generator That Flattens",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Depth-First Search",
+    "Recursion"
+  ],
+  "topics": [
+    "Array",
     "Recursion"
   ],
   "invocation": {

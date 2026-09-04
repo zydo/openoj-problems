@@ -4,8 +4,12 @@
   "id": 3038,
   "slug": "removing-pairs-at-one-score-i",
   "title": "Removing Pairs At One Score I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

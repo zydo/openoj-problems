@@ -4,8 +4,12 @@
   "id": 483,
   "slug": "least-all-ones-base",
   "title": "Least All-Ones Base",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

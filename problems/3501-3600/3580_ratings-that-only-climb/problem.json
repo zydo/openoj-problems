@@ -4,10 +4,13 @@
   "id": 3580,
   "slug": "ratings-that-only-climb",
   "title": "Ratings That Only Climb",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

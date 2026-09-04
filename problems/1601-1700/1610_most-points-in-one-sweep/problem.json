@@ -4,8 +4,15 @@
   "id": 1610,
   "slug": "most-points-in-one-sweep",
   "title": "Most Points In One Sweep",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Geometry",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Geometry",
     "Sliding Window",
     "Sorting"

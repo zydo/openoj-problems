@@ -4,8 +4,14 @@
   "id": 1548,
   "slug": "the-most-similar-path-in-a-graph",
   "title": "The Most Similar Path in a Graph",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming",

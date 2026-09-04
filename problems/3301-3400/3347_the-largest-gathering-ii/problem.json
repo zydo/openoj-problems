@@ -4,11 +4,18 @@
   "id": 3347,
   "slug": "the-largest-gathering-ii",
   "title": "The Largest Gathering II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

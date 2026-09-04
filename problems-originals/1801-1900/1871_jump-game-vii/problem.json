@@ -4,8 +4,14 @@
   "id": 1871,
   "slug": "jump-game-vii",
   "title": "Jump Game VII",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Sliding Window",

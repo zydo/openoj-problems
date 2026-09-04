@@ -4,9 +4,17 @@
   "id": 1267,
   "slug": "servers-on-shared-lines",
   "title": "Servers on Shared Lines",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Matrix",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Matrix",
     "Counting"
   ],

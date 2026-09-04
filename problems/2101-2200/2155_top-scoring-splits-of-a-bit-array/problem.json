@@ -4,10 +4,13 @@
   "id": 2155,
   "slug": "top-scoring-splits-of-a-bit-array",
   "title": "Top-Scoring Splits of a Bit Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array"
   ],
   "invocation": {
     "type": "function",

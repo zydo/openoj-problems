@@ -3,11 +3,18 @@
   "id": 3486,
   "slug": "longest-special-path-ii",
   "title": "Longest Special Path II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 858,
   "slug": "mirror-reflection",
   "title": "Mirror Reflection",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Geometry",
+    "Number Theory",
+    "Least Common Multiple",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Math",
     "Geometry",
     "Number Theory",

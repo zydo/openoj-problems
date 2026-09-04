@@ -4,10 +4,14 @@
   "id": 2803,
   "slug": "a-ladder-of-factorials",
   "title": "A Ladder Of Factorials",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "JavaScript"
+  ],
+  "topics": [
+    "Design",
+    "Math"
   ],
   "invocation": {
     "type": "interactive",

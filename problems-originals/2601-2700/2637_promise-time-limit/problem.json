@@ -4,8 +4,11 @@
   "id": 2637,
   "slug": "promise-time-limit",
   "title": "Promise Time Limit",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

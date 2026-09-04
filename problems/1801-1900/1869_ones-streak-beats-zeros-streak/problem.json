@@ -4,8 +4,11 @@
   "id": 1869,
   "slug": "ones-streak-beats-zeros-streak",
   "title": "Ones Streak Beats Zeros Streak",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

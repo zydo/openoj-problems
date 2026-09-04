@@ -4,8 +4,13 @@
   "id": 1215,
   "slug": "stepping-numbers",
   "title": "Stepping Numbers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Math",
     "Backtracking",
     "Breadth-First Search"

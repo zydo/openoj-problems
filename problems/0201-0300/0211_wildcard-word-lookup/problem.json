@@ -4,10 +4,16 @@
   "id": 211,
   "slug": "wildcard-word-lookup",
   "title": "Wildcard Word Lookup",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Trie",
     "Backtracking"
+  ],
+  "topics": [
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie"
   ],
   "invocation": {
     "type": "design",

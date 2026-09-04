@@ -4,8 +4,12 @@
   "id": 3129,
   "slug": "run-limited-binary-arrays-i",
   "title": "Run-Limited Binary Arrays I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Prefix Sum"
   ],

@@ -4,8 +4,12 @@
   "id": 3489,
   "slug": "the-fewest-queries-to-zero-iv",
   "title": "The Fewest Queries To Zero IV",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

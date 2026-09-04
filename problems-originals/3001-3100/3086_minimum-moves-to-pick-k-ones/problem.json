@@ -3,12 +3,18 @@
   "id": 3086,
   "slug": "minimum-moves-to-pick-k-ones",
   "title": "Minimum Moves to Pick K Ones",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Prefix Sum",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

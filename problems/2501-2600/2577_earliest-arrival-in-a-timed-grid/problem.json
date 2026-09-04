@@ -4,11 +4,19 @@
   "id": 2577,
   "slug": "earliest-arrival-in-a-timed-grid",
   "title": "Earliest Arrival in a Timed Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Shortest Path",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

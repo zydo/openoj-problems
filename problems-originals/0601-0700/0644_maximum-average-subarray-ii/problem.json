@@ -3,8 +3,13 @@
   "id": 644,
   "slug": "maximum-average-subarray-ii",
   "title": "Maximum Average Subarray II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Binary Search",
     "Prefix Sum"
   ],

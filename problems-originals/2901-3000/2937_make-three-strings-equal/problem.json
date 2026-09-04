@@ -4,8 +4,11 @@
   "id": 2937,
   "slug": "make-three-strings-equal",
   "title": "Make Three Strings Equal",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

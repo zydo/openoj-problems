@@ -4,8 +4,14 @@
   "id": 2172,
   "slug": "maximum-slot-and-sum",
   "title": "Maximum Slot AND Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

@@ -4,8 +4,17 @@
   "id": 810,
   "slug": "chalkboard-xor-game",
   "title": "Chalkboard XOR Game",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Brainteaser",
+    "Game Theory",
+    "Zero-Sum Game",
+    "Impartial Game"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation",

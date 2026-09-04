@@ -4,11 +4,19 @@
   "id": 943,
   "slug": "shortest-merged-string",
   "title": "Shortest Merged String",
-  "difficulty": "H5",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Bitmask"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask",
+    "Hamiltonian Path"
   ],
   "invocation": {
     "type": "function",

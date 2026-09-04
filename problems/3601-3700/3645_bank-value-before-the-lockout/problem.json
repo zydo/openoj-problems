@@ -4,11 +4,18 @@
   "id": 3645,
   "slug": "bank-value-before-the-lockout",
   "title": "Bank Value Before The Lockout",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

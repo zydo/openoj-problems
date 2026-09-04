@@ -4,11 +4,18 @@
   "id": 2679,
   "slug": "score-from-row-maxima",
   "title": "Score From Row Maxima",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

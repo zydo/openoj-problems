@@ -4,10 +4,15 @@
   "id": 4006,
   "slug": "count-alternating-ready-prefixes",
   "title": "Count Alternating-Ready Prefixes",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Simulation"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

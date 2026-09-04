@@ -4,10 +4,16 @@
   "id": 1538,
   "slug": "voting-inside-a-sealed-array",
   "title": "Voting Inside A Sealed Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Interactive"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Interactive",
+    "Boyer–Moore Majority Vote Algorithm"
   ],
   "invocation": {
     "type": "interactive",

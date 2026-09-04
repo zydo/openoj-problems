@@ -4,8 +4,14 @@
   "id": 2489,
   "slug": "count-exact-ratio-substrings",
   "title": "Count Exact-Ratio Substrings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

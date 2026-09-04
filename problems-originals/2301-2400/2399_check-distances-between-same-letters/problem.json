@@ -4,8 +4,13 @@
   "id": 2399,
   "slug": "check-distances-between-same-letters",
   "title": "Check Distances Between Same Letters",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

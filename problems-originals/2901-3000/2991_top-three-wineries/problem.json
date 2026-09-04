@@ -4,8 +4,11 @@
   "id": 2991,
   "slug": "top-three-wineries",
   "title": "Top Three Wineries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

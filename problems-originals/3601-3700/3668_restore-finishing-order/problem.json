@@ -4,8 +4,12 @@
   "id": 3668,
   "slug": "restore-finishing-order",
   "title": "Restore Finishing Order",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

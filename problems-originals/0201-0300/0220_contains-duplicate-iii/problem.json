@@ -4,8 +4,15 @@
   "id": 220,
   "slug": "contains-duplicate-iii",
   "title": "Contains Duplicate III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Sliding Window",
+    "Sorting",
+    "Bucket Sort",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Sliding Window",
     "Sorting",

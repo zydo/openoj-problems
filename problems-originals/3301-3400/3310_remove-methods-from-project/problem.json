@@ -4,8 +4,13 @@
   "id": 3310,
   "slug": "remove-methods-from-project",
   "title": "Remove Methods From Project",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search",
     "Graph Theory"

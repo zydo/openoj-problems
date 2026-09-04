@@ -4,8 +4,13 @@
   "id": 633,
   "slug": "sum-of-two-squares",
   "title": "Sum of Two Squares",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Two Pointers",
     "Binary Search"

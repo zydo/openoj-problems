@@ -4,10 +4,15 @@
   "id": 2000,
   "slug": "flip-up-to-the-first-mark",
   "title": "Flip Up To the First Mark",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Two Pointers"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Stack"
   ],
   "invocation": {
     "type": "function",

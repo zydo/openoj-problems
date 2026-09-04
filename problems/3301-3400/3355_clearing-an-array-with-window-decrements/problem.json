@@ -4,9 +4,13 @@
   "id": 3355,
   "slug": "clearing-an-array-with-window-decrements",
   "title": "Clearing an Array with Window Decrements",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array"
+  ],
+  "topics": [
+    "Array",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

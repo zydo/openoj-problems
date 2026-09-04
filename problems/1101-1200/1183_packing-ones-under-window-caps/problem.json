@@ -4,11 +4,17 @@
   "id": 1183,
   "slug": "packing-ones-under-window-caps",
   "title": "Packing Ones Under Window Caps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

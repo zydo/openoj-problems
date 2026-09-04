@@ -4,9 +4,15 @@
   "id": 3359,
   "slug": "counting-tidy-submatrices",
   "title": "Counting Tidy Submatrices",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Matrix",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
     "Matrix",
     "Monotonic Stack"
   ],

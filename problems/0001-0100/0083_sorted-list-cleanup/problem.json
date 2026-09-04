@@ -4,8 +4,11 @@
   "id": 83,
   "slug": "sorted-list-cleanup",
   "title": "Sorted List Cleanup",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

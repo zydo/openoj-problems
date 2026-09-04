@@ -4,8 +4,12 @@
   "id": 657,
   "slug": "grid-walk-homecoming",
   "title": "Grid Walk Homecoming",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

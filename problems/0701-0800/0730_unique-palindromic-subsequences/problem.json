@@ -4,8 +4,12 @@
   "id": 730,
   "slug": "unique-palindromic-subsequences",
   "title": "Unique Palindromic Subsequences",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

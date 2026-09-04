@@ -3,10 +3,16 @@
   "id": 981,
   "slug": "time-based-key-value-store",
   "title": "Time Based Key-Value Store",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Design"
   ],
   "invocation": {
     "type": "design",

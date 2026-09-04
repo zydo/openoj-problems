@@ -4,11 +4,17 @@
   "id": 143,
   "slug": "fold-the-list-around-its-middle",
   "title": "Fold The List Around Its Middle",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Two Pointers",
     "Stack"
+  ],
+  "topics": [
+    "Linked List",
+    "Two Pointers",
+    "Stack",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

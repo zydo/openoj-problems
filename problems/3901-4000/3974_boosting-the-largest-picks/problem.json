@@ -4,8 +4,13 @@
   "id": 3974,
   "slug": "boosting-the-largest-picks",
   "title": "Boosting The Largest Picks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

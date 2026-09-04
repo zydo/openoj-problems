@@ -4,8 +4,14 @@
   "id": 921,
   "slug": "minimum-add-to-make-parentheses-valid",
   "title": "Minimum Add to Make Parentheses Valid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Greedy",

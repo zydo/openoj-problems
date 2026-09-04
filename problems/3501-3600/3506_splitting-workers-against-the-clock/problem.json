@@ -4,12 +4,18 @@
   "id": 3506,
   "slug": "splitting-workers-against-the-clock",
   "title": "Splitting Workers Against The Clock",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Binary Search",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

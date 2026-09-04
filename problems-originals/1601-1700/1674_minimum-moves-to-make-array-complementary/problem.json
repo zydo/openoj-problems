@@ -3,9 +3,14 @@
   "id": 1674,
   "slug": "minimum-moves-to-make-array-complementary",
   "title": "Minimum Moves to Make Array Complementary",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Prefix Sum"
   ],
   "invocation": {

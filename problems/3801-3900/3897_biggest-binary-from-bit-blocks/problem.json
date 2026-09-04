@@ -4,8 +4,13 @@
   "id": 3897,
   "slug": "biggest-binary-from-bit-blocks",
   "title": "The Biggest Binary From Bit Blocks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

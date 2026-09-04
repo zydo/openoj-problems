@@ -4,10 +4,13 @@
   "id": 1729,
   "slug": "watchers-per-repo",
   "title": "Counting Watchers per Repo",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

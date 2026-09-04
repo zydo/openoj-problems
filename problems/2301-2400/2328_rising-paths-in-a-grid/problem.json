@@ -4,11 +4,21 @@
   "id": 2328,
   "slug": "rising-paths-in-a-grid",
   "title": "Rising Paths in a Grid",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Depth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
     "Matrix"
   ],
   "invocation": {

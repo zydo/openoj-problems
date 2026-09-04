@@ -4,10 +4,14 @@
   "id": 60,
   "slug": "the-kth-ordering",
   "title": "The Kth Ordering",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "String"
+  ],
+  "topics": [
+    "Math",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

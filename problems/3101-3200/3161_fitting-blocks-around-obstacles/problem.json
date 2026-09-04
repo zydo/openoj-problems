@@ -4,11 +4,18 @@
   "id": 3161,
   "slug": "fitting-blocks-around-obstacles",
   "title": "Fitting Blocks Around Obstacles",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Binary Indexed Tree",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

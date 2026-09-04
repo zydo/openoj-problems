@@ -3,10 +3,16 @@
   "id": 300,
   "slug": "longest-increasing-subsequence",
   "title": "Longest Increasing Subsequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

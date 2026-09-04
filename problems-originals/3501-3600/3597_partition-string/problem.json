@@ -4,8 +4,14 @@
   "id": 3597,
   "slug": "partition-string",
   "title": "Partition String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Trie",
+    "Simulation"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Trie",

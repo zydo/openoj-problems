@@ -4,12 +4,18 @@
   "id": 567,
   "slug": "contains-an-anagram",
   "title": "Contains An Anagram",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Sliding Window",
     "Hash Table",
     "Two Pointers"
+  ],
+  "topics": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

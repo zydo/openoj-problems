@@ -4,8 +4,13 @@
   "id": 566,
   "slug": "matrix-reflow",
   "title": "Matrix Reflow",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

@@ -4,8 +4,14 @@
   "id": 2465,
   "slug": "distinct-pair-midpoints",
   "title": "Distinct Pair Midpoints",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

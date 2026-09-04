@@ -4,8 +4,11 @@
   "id": 1474,
   "slug": "prune-a-linked-list-in-keep-drop-cycles",
   "title": "Prune a Linked List in Keep-Drop Cycles",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

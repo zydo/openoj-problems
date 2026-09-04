@@ -3,8 +3,12 @@
   "id": 1067,
   "slug": "digit-count-in-range",
   "title": "Digit Count in Range",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

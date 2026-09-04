@@ -4,8 +4,14 @@
   "id": 2384,
   "slug": "largest-palindromic-number",
   "title": "Largest Palindromic Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

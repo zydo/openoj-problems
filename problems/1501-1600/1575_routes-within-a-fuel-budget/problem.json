@@ -4,8 +4,13 @@
   "id": 1575,
   "slug": "routes-within-a-fuel-budget",
   "title": "Routes Within a Fuel Budget",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Memoization"

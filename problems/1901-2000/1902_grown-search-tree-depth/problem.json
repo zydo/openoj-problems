@@ -4,11 +4,18 @@
   "id": 1902,
   "slug": "grown-search-tree-depth",
   "title": "Depth of a Grown Search Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search Tree",
     "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

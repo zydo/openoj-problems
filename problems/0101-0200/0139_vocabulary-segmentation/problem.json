@@ -4,11 +4,20 @@
   "id": 139,
   "slug": "vocabulary-segmentation",
   "title": "Vocabulary Segmentation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Trie",
+    "Memoization",
+    "Brute-Force Search"
   ],
   "invocation": {
     "type": "function",

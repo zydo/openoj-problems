@@ -4,8 +4,14 @@
   "id": 3433,
   "slug": "count-mentions-per-user",
   "title": "Count Mentions Per User",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting",

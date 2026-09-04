@@ -4,8 +4,12 @@
   "id": 3959,
   "slug": "check-good-integer",
   "title": "Check Good Integer",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Math",
+    "String"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

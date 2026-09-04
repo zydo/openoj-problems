@@ -4,8 +4,13 @@
   "id": 2000,
   "slug": "reverse-prefix-of-word",
   "title": "Reverse Prefix of Word",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Stack"

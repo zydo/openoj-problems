@@ -4,8 +4,15 @@
   "id": 716,
   "slug": "max-stack",
   "title": "Max Stack",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Linked List",
+    "Stack",
+    "Design",
+    "Doubly-Linked List",
+    "Ordered Set"
+  ],
+  "topics": [
     "Linked List",
     "Stack",
     "Design",

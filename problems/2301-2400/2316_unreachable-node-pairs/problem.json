@@ -4,12 +4,18 @@
   "id": 2316,
   "slug": "unreachable-node-pairs",
   "title": "Unreachable Node Pairs",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Depth-First Search",
     "Breadth-First Search",
     "Union Find",
     "Graph"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 320,
   "slug": "generalized-abbreviation",
   "title": "Generalized Abbreviation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "String",
     "Backtracking",
     "Bit Manipulation"

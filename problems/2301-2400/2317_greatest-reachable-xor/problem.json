@@ -4,8 +4,13 @@
   "id": 2317,
   "slug": "greatest-reachable-xor",
   "title": "Greatest Reachable XOR",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation"

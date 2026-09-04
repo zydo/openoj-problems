@@ -4,8 +4,14 @@
   "id": 1307,
   "slug": "verbal-arithmetic-puzzle",
   "title": "Verbal Arithmetic Puzzle",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String",

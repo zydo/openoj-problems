@@ -4,8 +4,15 @@
   "id": 3568,
   "slug": "minimum-moves-to-clean-the-classroom",
   "title": "Minimum Moves to Clean the Classroom",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

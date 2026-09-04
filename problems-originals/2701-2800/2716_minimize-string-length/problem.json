@@ -4,8 +4,12 @@
   "id": 2716,
   "slug": "minimize-string-length",
   "title": "Minimize String Length",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

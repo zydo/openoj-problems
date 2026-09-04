@@ -4,10 +4,13 @@
   "id": 1988,
   "slug": "admission-floor-for-each-campus",
   "title": "Admission Floor for Each Campus",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

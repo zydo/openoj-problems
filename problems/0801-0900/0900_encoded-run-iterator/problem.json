@@ -4,8 +4,14 @@
   "id": 900,
   "slug": "encoded-run-iterator",
   "title": "Encoded Run Iterator",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Design",
+    "Counting",
+    "Iterator"
+  ],
+  "topics": [
     "Array",
     "Design",
     "Counting",

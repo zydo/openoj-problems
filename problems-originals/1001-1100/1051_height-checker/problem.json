@@ -4,8 +4,14 @@
   "id": 1051,
   "slug": "height-checker",
   "title": "Height Checker",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Counting Sort",
+    "Bubble Sort"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Counting Sort",

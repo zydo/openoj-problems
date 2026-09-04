@@ -4,8 +4,14 @@
   "id": 833,
   "slug": "find-and-replace-in-string",
   "title": "Find And Replace in String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

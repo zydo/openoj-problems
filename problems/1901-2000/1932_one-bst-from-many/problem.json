@@ -4,12 +4,20 @@
   "id": 1932,
   "slug": "one-bst-from-many",
   "title": "One BST From Many",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Binary Search Tree",
     "Hash Table",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

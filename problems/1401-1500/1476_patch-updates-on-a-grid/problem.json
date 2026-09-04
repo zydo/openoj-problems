@@ -4,8 +4,13 @@
   "id": 1476,
   "slug": "patch-updates-on-a-grid",
   "title": "Patch Updates On A Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Design",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Design",
     "Matrix"

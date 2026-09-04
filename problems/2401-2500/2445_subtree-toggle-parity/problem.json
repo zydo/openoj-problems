@@ -4,10 +4,17 @@
   "id": 2445,
   "slug": "subtree-toggle-parity",
   "title": "Subtree Toggle Parity",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Binary Tree"
   ],
   "invocation": {

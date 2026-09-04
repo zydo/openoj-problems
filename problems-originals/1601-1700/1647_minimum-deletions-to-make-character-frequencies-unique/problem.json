@@ -4,8 +4,14 @@
   "id": 1647,
   "slug": "minimum-deletions-to-make-character-frequencies-unique",
   "title": "Minimum Deletions to Make Character Frequencies Unique",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

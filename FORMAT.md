@@ -41,6 +41,7 @@ Solutions are authored on top of the generated starters.
   "title": "Two Sum",
   "difficulty": "H1",
   "tags": ["Array", "Hash Table"],
+  "topics": ["Array", "Hash Table"],
   "invocation": { "...": "see below" },
   "limits": { "time_ms": 1500, "memory_mb": 256, "output_kb": 64 }
 }
@@ -54,7 +55,12 @@ Solutions are authored on top of the generated starters.
   section the worst-to-best `solutions.md` ordering ends with — and the
   judge runs exactly this one reference alongside the submission when
   scoring the time-cost percentage.
-- `difficulty` is one of `H1`–`H5`; `tags` is a non-empty array of strings.
+- `difficulty` is the original source difficulty — one of `Easy`,
+  `Medium`, `Hard`, mirrored from the upstream crawl catalog (never a
+  re-evaluation); `tags` is a non-empty array of strings.
+- `topics` is a non-empty array naming the techniques the problem tests,
+  from the upstream crawl's LeetCode topic vocabulary; it classifies the
+  bank for browsing and is not consumed by the judge.
 - `invocation.type` is `function`, `sql`, `shell`, `design`, `interactive`,
   or `concurrent`.
 

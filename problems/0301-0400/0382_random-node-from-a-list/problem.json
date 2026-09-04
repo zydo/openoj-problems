@@ -4,10 +4,16 @@
   "id": 382,
   "slug": "random-node-from-a-list",
   "title": "Random Node from a List",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Reservoir Sampling",
     "Linked List"
+  ],
+  "topics": [
+    "Linked List",
+    "Math",
+    "Reservoir Sampling",
+    "Randomized"
   ],
   "invocation": {
     "type": "design",

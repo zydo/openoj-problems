@@ -4,8 +4,13 @@
   "id": 2061,
   "slug": "number-of-spaces-cleaning-robot-cleaned",
   "title": "Number of Spaces Cleaning Robot Cleaned",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

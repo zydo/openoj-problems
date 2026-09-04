@@ -4,8 +4,13 @@
   "id": 2028,
   "slug": "find-missing-observations",
   "title": "Find Missing Observations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Simulation"

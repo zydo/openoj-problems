@@ -4,8 +4,13 @@
   "id": 1301,
   "slug": "top-scoring-board-walks",
   "title": "Top-Scoring Board Walks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

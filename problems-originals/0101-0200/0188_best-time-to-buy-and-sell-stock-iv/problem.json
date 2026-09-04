@@ -3,8 +3,12 @@
   "id": 188,
   "slug": "best-time-to-buy-and-sell-stock-iv",
   "title": "Best Time to Buy and Sell Stock IV",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

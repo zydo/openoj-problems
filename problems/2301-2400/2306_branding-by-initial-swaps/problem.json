@@ -4,10 +4,17 @@
   "id": 2306,
   "slug": "branding-by-initial-swaps",
   "title": "Branding By Initial Swaps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
     "Enumeration"
   ],
   "invocation": {

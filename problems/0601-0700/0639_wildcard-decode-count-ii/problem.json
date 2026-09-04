@@ -4,8 +4,12 @@
   "id": 639,
   "slug": "wildcard-decode-count-ii",
   "title": "Wildcard Decode Count II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

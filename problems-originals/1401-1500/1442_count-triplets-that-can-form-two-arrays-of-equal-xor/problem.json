@@ -3,11 +3,18 @@
   "id": 1442,
   "slug": "count-triplets-that-can-form-two-arrays-of-equal-xor",
   "title": "Count Triplets That Can Form Two Arrays of Equal XOR",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Bit Manipulation",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Bit Manipulation",
     "Prefix Sum"
   ],
   "invocation": {

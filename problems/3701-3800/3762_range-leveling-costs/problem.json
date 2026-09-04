@@ -4,12 +4,19 @@
   "id": 3762,
   "slug": "range-leveling-costs",
   "title": "Range Leveling Costs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Binary Search",
     "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Segment Tree",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

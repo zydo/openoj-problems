@@ -4,8 +4,11 @@
   "id": 1957,
   "slug": "delete-characters-to-make-fancy-string",
   "title": "Delete Characters to Make Fancy String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

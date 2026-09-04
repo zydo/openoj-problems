@@ -4,9 +4,15 @@
   "id": 1656,
   "slug": "sequenced-chunk-reader",
   "title": "Sequenced Chunk Reader",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Design",
+    "Data Stream"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Design",
     "Data Stream"
   ],

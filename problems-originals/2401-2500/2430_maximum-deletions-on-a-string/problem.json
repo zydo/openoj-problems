@@ -3,10 +3,17 @@
   "id": 2430,
   "slug": "maximum-deletions-on-a-string",
   "title": "Maximum Deletions on a String",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Rolling Hash"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

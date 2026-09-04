@@ -4,8 +4,14 @@
   "id": 3939,
   "slug": "independent-subsets-on-a-family-tree",
   "title": "Independent Subsets On A Family Tree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Tree",
     "Depth-First Search"

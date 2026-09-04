@@ -4,8 +4,15 @@
   "id": 1774,
   "slug": "closest-dessert-cost",
   "title": "Closest Dessert Cost",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Knapsack Problem",
+    "Mixed Knapsack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Backtracking",

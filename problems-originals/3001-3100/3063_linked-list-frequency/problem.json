@@ -4,8 +4,13 @@
   "id": 3063,
   "slug": "linked-list-frequency",
   "title": "Linked List Frequency",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Linked List",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Linked List",
     "Counting"

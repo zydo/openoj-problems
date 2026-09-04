@@ -4,10 +4,17 @@
   "id": 858,
   "slug": "reflected-beam-receiver",
   "title": "Reflected Beam Receiver",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Geometry",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
+    "Math",
+    "Geometry",
+    "Number Theory",
+    "Least Common Multiple",
     "Greatest Common Divisor"
   ],
   "invocation": {

@@ -4,13 +4,22 @@
   "id": 486,
   "slug": "end-picking-game-winner",
   "title": "End-Picking Game Winner",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
     "Recursion",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Recursion",
+    "Minimax",
+    "Game Theory",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

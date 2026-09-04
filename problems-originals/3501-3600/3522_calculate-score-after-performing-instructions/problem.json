@@ -4,8 +4,14 @@
   "id": 3522,
   "slug": "calculate-score-after-performing-instructions",
   "title": "Calculate Score After Performing Instructions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

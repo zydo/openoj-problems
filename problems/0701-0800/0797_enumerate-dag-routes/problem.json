@@ -4,11 +4,18 @@
   "id": 797,
   "slug": "enumerate-dag-routes",
   "title": "Enumerate DAG Routes",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "DFS",
     "Backtracking"
+  ],
+  "topics": [
+    "Backtracking",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

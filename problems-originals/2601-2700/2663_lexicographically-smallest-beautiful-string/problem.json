@@ -4,8 +4,12 @@
   "id": 2663,
   "slug": "lexicographically-smallest-beautiful-string",
   "title": "Lexicographically Smallest Beautiful String",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

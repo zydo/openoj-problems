@@ -4,8 +4,13 @@
   "id": 1306,
   "slug": "zero-target-hops-iii",
   "title": "Zero-Target Hops III",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search"

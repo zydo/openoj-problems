@@ -4,8 +4,12 @@
   "id": 3550,
   "slug": "when-digits-sum-to-position",
   "title": "When Digits Sum to the Position",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -3,11 +3,18 @@
   "id": 3553,
   "slug": "minimum-weighted-subgraph-with-the-required-paths-ii",
   "title": "Minimum Weighted Subgraph With the Required Paths II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

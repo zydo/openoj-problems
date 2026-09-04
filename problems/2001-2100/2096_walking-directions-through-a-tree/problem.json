@@ -4,11 +4,19 @@
   "id": 2096,
   "slug": "walking-directions-through-a-tree",
   "title": "Walking Directions Through a Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Tree",
     "Depth-First Search",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
     "Lowest Common Ancestor"
   ],
   "invocation": {

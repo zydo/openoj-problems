@@ -4,10 +4,16 @@
   "id": 3031,
   "slug": "seconds-to-restore-the-word-ii",
   "title": "Seconds To Restore The Word II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "String Matching"
+  ],
+  "topics": [
+    "String",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

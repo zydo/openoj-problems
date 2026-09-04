@@ -4,8 +4,14 @@
   "id": 3972,
   "slug": "subarray-totals-framed-by-a-digit-ii",
   "title": "Subarray Totals Framed By A Digit II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

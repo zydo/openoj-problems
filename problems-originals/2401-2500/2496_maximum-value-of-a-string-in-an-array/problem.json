@@ -4,8 +4,12 @@
   "id": 2496,
   "slug": "maximum-value-of-a-string-in-an-array",
   "title": "Maximum Value of a String in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

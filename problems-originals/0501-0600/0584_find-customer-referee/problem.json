@@ -4,8 +4,11 @@
   "id": 584,
   "slug": "find-customer-referee",
   "title": "Find Customer Referee",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

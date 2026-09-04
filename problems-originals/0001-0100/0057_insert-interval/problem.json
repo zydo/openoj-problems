@@ -4,8 +4,11 @@
   "id": 57,
   "slug": "insert-interval",
   "title": "Insert Interval",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

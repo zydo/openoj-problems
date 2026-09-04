@@ -4,8 +4,12 @@
   "id": 2429,
   "slug": "closest-xor-number",
   "title": "Closest Xor Number",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Greedy",
     "Bit Manipulation"
   ],

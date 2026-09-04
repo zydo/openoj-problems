@@ -4,8 +4,13 @@
   "id": 2562,
   "slug": "find-the-array-concatenation-value",
   "title": "Find the Array Concatenation Value",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Simulation"

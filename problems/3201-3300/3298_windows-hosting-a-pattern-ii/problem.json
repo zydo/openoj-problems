@@ -4,8 +4,13 @@
   "id": 3298,
   "slug": "windows-hosting-a-pattern-ii",
   "title": "Windows That Can Host A Pattern II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

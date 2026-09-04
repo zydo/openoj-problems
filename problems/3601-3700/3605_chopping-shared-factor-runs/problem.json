@@ -4,11 +4,19 @@
   "id": 3605,
   "slug": "chopping-shared-factor-runs",
   "title": "Chopping Shared-Factor Runs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Segment Tree",
     "Number Theory"
   ],
   "invocation": {

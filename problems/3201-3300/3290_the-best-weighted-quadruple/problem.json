@@ -4,8 +4,12 @@
   "id": 3290,
   "slug": "the-best-weighted-quadruple",
   "title": "The Best Weighted Quadruple",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

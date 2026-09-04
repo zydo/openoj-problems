@@ -4,8 +4,12 @@
   "id": 1007,
   "slug": "fewest-flips-for-a-matching-row",
   "title": "Fewest Flips for a Matching Row",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

@@ -3,11 +3,21 @@
   "id": 1998,
   "slug": "gcd-sort-of-an-array",
   "title": "GCD Sort of an Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Number Theory",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Union-Find",
+    "Sorting",
+    "Number Theory",
+    "Prime Factorization",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

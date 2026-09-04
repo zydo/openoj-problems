@@ -4,8 +4,11 @@
   "id": 725,
   "slug": "split-linked-list-in-parts",
   "title": "Split Linked List in Parts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

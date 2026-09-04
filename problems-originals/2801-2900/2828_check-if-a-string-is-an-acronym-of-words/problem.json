@@ -4,8 +4,12 @@
   "id": 2828,
   "slug": "check-if-a-string-is-an-acronym-of-words",
   "title": "Check if a String Is an Acronym of Words",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

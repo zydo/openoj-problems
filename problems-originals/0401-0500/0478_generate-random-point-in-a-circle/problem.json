@@ -4,8 +4,14 @@
   "id": 478,
   "slug": "generate-random-point-in-a-circle",
   "title": "Generate Random Point in a Circle",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Geometry",
+    "Rejection Sampling",
+    "Randomized"
+  ],
+  "topics": [
     "Math",
     "Geometry",
     "Rejection Sampling",

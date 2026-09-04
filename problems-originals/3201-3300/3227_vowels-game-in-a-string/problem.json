@@ -4,8 +4,14 @@
   "id": 3227,
   "slug": "vowels-game-in-a-string",
   "title": "Vowels Game in a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Brainteaser",
+    "Game Theory"
+  ],
+  "topics": [
     "Math",
     "String",
     "Brainteaser",

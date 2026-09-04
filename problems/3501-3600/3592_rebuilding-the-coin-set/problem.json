@@ -4,8 +4,12 @@
   "id": 3592,
   "slug": "rebuilding-the-coin-set",
   "title": "Rebuilding The Coin Set",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

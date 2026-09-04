@@ -4,8 +4,14 @@
   "id": 3153,
   "slug": "sum-of-digit-differences-of-all-pairs",
   "title": "Sum of Digit Differences of All Pairs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

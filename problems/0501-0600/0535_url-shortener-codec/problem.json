@@ -4,11 +4,17 @@
   "id": 535,
   "slug": "url-shortener-codec",
   "title": "URL Shortener Codec",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
     "Design"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Hash Function"
   ],
   "invocation": {
     "type": "design",

@@ -4,8 +4,14 @@
   "id": 3755,
   "slug": "longest-zero-xor-balanced-run",
   "title": "Longest Zero-XOR Balanced Run",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

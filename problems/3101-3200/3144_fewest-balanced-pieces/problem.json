@@ -4,8 +4,14 @@
   "id": 3144,
   "slug": "fewest-balanced-pieces",
   "title": "Fewest Balanced Pieces",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming",

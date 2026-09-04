@@ -4,8 +4,15 @@
   "id": 1065,
   "slug": "index-pairs-of-a-string",
   "title": "Index Pairs of a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Trie",
+    "Sorting",
+    "Aho–Corasick Algorithm"
+  ],
+  "topics": [
     "Array",
     "String",
     "Trie",

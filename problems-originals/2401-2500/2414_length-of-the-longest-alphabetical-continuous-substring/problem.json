@@ -4,8 +4,11 @@
   "id": 2414,
   "slug": "length-of-the-longest-alphabetical-continuous-substring",
   "title": "Length of the Longest Alphabetical Continuous Substring",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

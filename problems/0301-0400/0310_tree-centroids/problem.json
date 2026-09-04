@@ -4,11 +4,17 @@
   "id": 310,
   "slug": "tree-centroids",
   "title": "Tree Centroids",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Topological Sort",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort"
   ],
   "invocation": {
     "type": "function",

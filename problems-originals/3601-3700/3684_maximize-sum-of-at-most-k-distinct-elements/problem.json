@@ -4,8 +4,14 @@
   "id": 3684,
   "slug": "maximize-sum-of-at-most-k-distinct-elements",
   "title": "Maximize Sum of At Most K Distinct Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

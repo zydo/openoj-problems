@@ -4,8 +4,12 @@
   "id": 3469,
   "slug": "cheapest-way-to-empty-the-array",
   "title": "Cheapest Way To Empty The Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

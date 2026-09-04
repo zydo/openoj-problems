@@ -4,8 +4,13 @@
   "id": 1903,
   "slug": "largest-odd-number-in-string",
   "title": "Largest Odd Number in String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy"

@@ -4,10 +4,16 @@
   "id": 1004,
   "slug": "longest-ones-run-after-k-flips",
   "title": "Longest Ones Run After K Flips",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

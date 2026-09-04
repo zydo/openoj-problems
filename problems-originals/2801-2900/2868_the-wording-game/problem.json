@@ -4,8 +4,16 @@
   "id": 2868,
   "slug": "the-wording-game",
   "title": "The Wording Game",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "String",
+    "Greedy",
+    "Game Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers",

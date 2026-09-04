@@ -4,10 +4,16 @@
   "id": 3523,
   "slug": "largest-sorted-collapse",
   "title": "Largest Sorted Collapse",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

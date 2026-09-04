@@ -4,8 +4,12 @@
   "id": 3796,
   "slug": "the-tallest-reach-under-step-caps",
   "title": "The Tallest Reach Under Step Caps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

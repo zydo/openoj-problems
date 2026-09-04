@@ -4,9 +4,15 @@
   "id": 2418,
   "slug": "arrange-people-by-height",
   "title": "Arrange People by Height",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
     "Sorting"
   ],
   "invocation": {

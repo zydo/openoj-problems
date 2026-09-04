@@ -3,10 +3,15 @@
   "id": 2218,
   "slug": "maximum-value-of-k-coins-from-piles",
   "title": "Maximum Value of K Coins From Piles",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

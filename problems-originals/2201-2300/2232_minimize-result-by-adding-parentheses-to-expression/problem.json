@@ -4,8 +4,12 @@
   "id": 2232,
   "slug": "minimize-result-by-adding-parentheses-to-expression",
   "title": "Minimize Result by Adding Parentheses to Expression",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

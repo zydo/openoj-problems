@@ -4,8 +4,13 @@
   "id": 3734,
   "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
   "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Enumeration"

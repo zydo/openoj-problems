@@ -4,8 +4,12 @@
   "id": 926,
   "slug": "flip-string-to-monotone-increasing",
   "title": "Flip String to Monotone Increasing",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

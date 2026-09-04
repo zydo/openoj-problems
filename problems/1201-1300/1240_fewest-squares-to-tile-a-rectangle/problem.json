@@ -4,8 +4,11 @@
   "id": 1240,
   "slug": "fewest-squares-to-tile-a-rectangle",
   "title": "Fewest Squares to Tile a Rectangle",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Backtracking"
+  ],
+  "topics": [
     "Backtracking"
   ],
   "invocation": {

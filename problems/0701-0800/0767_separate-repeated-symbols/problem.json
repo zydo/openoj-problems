@@ -4,11 +4,19 @@
   "id": 767,
   "slug": "separate-repeated-symbols",
   "title": "Separate Repeated Symbols",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Heap",
     "String",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Counting"
   ],
   "invocation": {

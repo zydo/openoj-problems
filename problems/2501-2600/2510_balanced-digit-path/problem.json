@@ -4,8 +4,13 @@
   "id": 2510,
   "slug": "balanced-digit-path",
   "title": "Balanced Digit Path",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

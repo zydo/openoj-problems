@@ -4,8 +4,13 @@
   "id": 3432,
   "slug": "count-partitions-with-even-sum-difference",
   "title": "Count Partitions with Even Sum Difference",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Prefix Sum"

@@ -4,9 +4,15 @@
   "id": 2272,
   "slug": "widest-letter-spread-in-a-substring",
   "title": "Widest Letter Spread in a Substring",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

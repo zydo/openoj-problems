@@ -4,8 +4,12 @@
   "id": 516,
   "slug": "longest-scattered-palindrome",
   "title": "Longest Scattered Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

@@ -4,8 +4,15 @@
   "id": 3850,
   "slug": "count-sequences-to-k",
   "title": "Count Sequences to K",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Memoization",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

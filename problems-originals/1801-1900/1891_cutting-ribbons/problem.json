@@ -4,8 +4,12 @@
   "id": 1891,
   "slug": "cutting-ribbons",
   "title": "Cutting Ribbons",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

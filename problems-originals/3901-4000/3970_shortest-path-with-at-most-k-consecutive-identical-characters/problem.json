@@ -4,8 +4,14 @@
   "id": 3970,
   "slug": "shortest-path-with-at-most-k-consecutive-identical-characters",
   "title": "Shortest Path With At Most K Consecutive Identical Characters",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "String",
     "Graph Theory",
     "Heap (Priority Queue)",

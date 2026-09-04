@@ -4,12 +4,18 @@
   "id": 298,
   "slug": "longest-rising-tree-chain",
   "title": "Longest Rising Tree Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,18 @@
   "id": 229,
   "slug": "dominant-values-ii",
   "title": "Dominant Values II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Counting",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting",
+    "Boyer–Moore Majority Vote Algorithm"
   ],
   "invocation": {
     "type": "function",

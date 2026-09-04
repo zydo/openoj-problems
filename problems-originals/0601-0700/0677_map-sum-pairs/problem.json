@@ -4,8 +4,14 @@
   "id": 677,
   "slug": "map-sum-pairs",
   "title": "Map Sum Pairs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Design",

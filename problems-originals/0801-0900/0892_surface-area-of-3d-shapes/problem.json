@@ -4,8 +4,14 @@
   "id": 892,
   "slug": "surface-area-of-3d-shapes",
   "title": "Surface Area of 3D Shapes",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

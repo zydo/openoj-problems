@@ -3,10 +3,14 @@
   "id": 746,
   "slug": "min-cost-climbing-stairs",
   "title": "Min Cost Climbing Stairs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

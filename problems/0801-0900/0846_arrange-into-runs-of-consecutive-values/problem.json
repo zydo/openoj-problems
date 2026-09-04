@@ -4,8 +4,14 @@
   "id": 846,
   "slug": "arrange-into-runs-of-consecutive-values",
   "title": "Arrange Into Runs of Consecutive Values",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

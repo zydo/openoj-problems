@@ -4,8 +4,13 @@
   "id": 1021,
   "slug": "remove-outermost-parentheses",
   "title": "Remove Outermost Parentheses",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Bracket Sequences"

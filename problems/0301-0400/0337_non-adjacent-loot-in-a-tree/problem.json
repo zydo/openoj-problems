@@ -4,11 +4,18 @@
   "id": 337,
   "slug": "non-adjacent-loot-in-a-tree",
   "title": "Non-Adjacent Loot in a Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree DP",
     "Binary Tree",
     "DFS"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

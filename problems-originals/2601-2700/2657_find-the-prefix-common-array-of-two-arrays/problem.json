@@ -4,8 +4,13 @@
   "id": 2657,
   "slug": "find-the-prefix-common-array-of-two-arrays",
   "title": "Find the Prefix Common Array of Two Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation"

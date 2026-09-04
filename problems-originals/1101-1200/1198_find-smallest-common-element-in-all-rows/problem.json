@@ -4,8 +4,15 @@
   "id": 1198,
   "slug": "find-smallest-common-element-in-all-rows",
   "title": "Find Smallest Common Element in All Rows",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Matrix",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

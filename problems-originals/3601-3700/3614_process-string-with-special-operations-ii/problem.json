@@ -4,8 +4,12 @@
   "id": 3614,
   "slug": "process-string-with-special-operations-ii",
   "title": "Process String with Special Operations II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

@@ -4,8 +4,11 @@
   "id": 717,
   "slug": "1-bit-and-2-bit-characters",
   "title": "1-bit and 2-bit Characters",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

@@ -4,10 +4,13 @@
   "id": 2339,
   "slug": "round-robin-fixture-list",
   "title": "Round Robin Fixture List",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

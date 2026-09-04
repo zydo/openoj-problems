@@ -4,8 +4,12 @@
   "id": 3596,
   "slug": "minimum-cost-path-with-alternating-directions-i",
   "title": "Minimum Cost Path with Alternating Directions I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "topics": [
     "Math",
     "Brainteaser"
   ],

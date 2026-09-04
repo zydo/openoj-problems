@@ -4,11 +4,19 @@
   "id": 3035,
   "slug": "rearranging-words-into-palindromes",
   "title": "Rearranging Words Into Palindromes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Greedy",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
     "Counting"
   ],
   "invocation": {

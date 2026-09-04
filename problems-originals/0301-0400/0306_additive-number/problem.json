@@ -4,8 +4,12 @@
   "id": 306,
   "slug": "additive-number",
   "title": "Additive Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "String",
     "Backtracking"
   ],

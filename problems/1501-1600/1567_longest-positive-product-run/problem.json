@@ -4,8 +4,13 @@
   "id": 1567,
   "slug": "longest-positive-product-run",
   "title": "Longest Positive-Product Run",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

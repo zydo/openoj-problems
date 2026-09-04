@@ -4,8 +4,11 @@
   "id": 193,
   "slug": "valid-phone-numbers",
   "title": "Valid Phone Numbers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Shell"
+  ],
+  "topics": [
     "Shell"
   ],
   "invocation": {

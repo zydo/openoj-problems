@@ -4,10 +4,14 @@
   "id": 2717,
   "slug": "permutation-bookends",
   "title": "Permutation Bookends",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

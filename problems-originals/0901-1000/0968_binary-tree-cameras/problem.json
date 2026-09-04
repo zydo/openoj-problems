@@ -3,13 +3,20 @@
   "id": 968,
   "slug": "binary-tree-cameras",
   "title": "Binary Tree Cameras",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree DP",
     "Dynamic Programming",
     "Tree",
     "Binary Tree",
     "Greedy"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

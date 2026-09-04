@@ -4,8 +4,11 @@
   "id": 2937,
   "slug": "trimming-three-strings-to-agree",
   "title": "Trimming Three Strings To Agree",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,11 +4,19 @@
   "id": 1382,
   "slug": "rebalance-a-bst",
   "title": "Rebalance a BST",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "BST",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Divide and Conquer",
+    "Greedy",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

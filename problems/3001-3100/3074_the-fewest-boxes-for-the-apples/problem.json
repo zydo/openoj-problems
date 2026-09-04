@@ -4,8 +4,13 @@
   "id": 3074,
   "slug": "the-fewest-boxes-for-the-apples",
   "title": "The Fewest Boxes for the Apples",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

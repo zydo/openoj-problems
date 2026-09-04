@@ -4,8 +4,14 @@
   "id": 2349,
   "slug": "design-a-number-container-system",
   "title": "Design a Number Container System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Heap (Priority Queue)",

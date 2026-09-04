@@ -4,10 +4,15 @@
   "id": 2816,
   "slug": "twice-the-linked-list-number",
   "title": "Twice The Linked-List Number",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Math"
+  ],
+  "topics": [
+    "Linked List",
+    "Math",
+    "Stack"
   ],
   "invocation": {
     "type": "function",

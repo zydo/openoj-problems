@@ -4,8 +4,13 @@
   "id": 1733,
   "slug": "minimum-number-of-people-to-teach",
   "title": "Minimum Number of People to Teach",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy"

@@ -4,11 +4,19 @@
   "id": 3037,
   "slug": "first-pattern-match-in-a-bit-stream-ii",
   "title": "First Pattern Match in a Bit Stream II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String Matching",
     "Interactive"
+  ],
+  "topics": [
+    "Array",
+    "Sliding Window",
+    "Rolling Hash",
+    "String Matching",
+    "Interactive",
+    "Hash Function"
   ],
   "invocation": {
     "type": "interactive",

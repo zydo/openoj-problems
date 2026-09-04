@@ -4,8 +4,11 @@
   "id": 2666,
   "slug": "allow-one-function-call",
   "title": "Allow One Function Call",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

@@ -4,10 +4,15 @@
   "id": 415,
   "slug": "digit-string-sum",
   "title": "Digit-String Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "String"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

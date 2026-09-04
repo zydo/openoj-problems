@@ -4,8 +4,14 @@
   "id": 3180,
   "slug": "growing-the-prize-pot-i",
   "title": "Growing The Prize Pot I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

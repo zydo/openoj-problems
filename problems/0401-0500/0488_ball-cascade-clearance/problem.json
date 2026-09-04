@@ -4,10 +4,17 @@
   "id": 488,
   "slug": "ball-cascade-clearance",
   "title": "Ball Cascade Clearance",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Breadth-First Search",
     "Memoization"
   ],
   "invocation": {

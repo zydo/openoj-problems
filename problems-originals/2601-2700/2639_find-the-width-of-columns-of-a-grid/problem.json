@@ -4,8 +4,12 @@
   "id": 2639,
   "slug": "find-the-width-of-columns-of-a-grid",
   "title": "Find the Width of Columns of a Grid",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

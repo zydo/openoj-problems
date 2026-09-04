@@ -3,8 +3,14 @@
   "id": 2781,
   "slug": "length-of-the-longest-valid-substring",
   "title": "Length of the Longest Valid Substring",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

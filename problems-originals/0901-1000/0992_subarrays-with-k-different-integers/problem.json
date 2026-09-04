@@ -4,8 +4,14 @@
   "id": 992,
   "slug": "subarrays-with-k-different-integers",
   "title": "Subarrays with K Different Integers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

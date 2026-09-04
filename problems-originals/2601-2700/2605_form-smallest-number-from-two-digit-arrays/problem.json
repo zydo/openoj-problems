@@ -4,8 +4,13 @@
   "id": 2605,
   "slug": "form-smallest-number-from-two-digit-arrays",
   "title": "Form Smallest Number From Two Digit Arrays",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

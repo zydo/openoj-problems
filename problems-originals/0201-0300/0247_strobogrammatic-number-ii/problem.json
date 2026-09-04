@@ -4,8 +4,13 @@
   "id": 247,
   "slug": "strobogrammatic-number-ii",
   "title": "Strobogrammatic Number II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Recursion"
+  ],
+  "topics": [
     "Array",
     "String",
     "Recursion"

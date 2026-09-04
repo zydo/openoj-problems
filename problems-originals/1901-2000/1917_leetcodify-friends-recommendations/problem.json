@@ -4,8 +4,11 @@
   "id": 1917,
   "slug": "leetcodify-friends-recommendations",
   "title": "Leetcodify Friends Recommendations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

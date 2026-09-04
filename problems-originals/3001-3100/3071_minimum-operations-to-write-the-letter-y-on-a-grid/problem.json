@@ -4,8 +4,14 @@
   "id": 3071,
   "slug": "minimum-operations-to-write-the-letter-y-on-a-grid",
   "title": "Minimum Operations to Write the Letter Y on a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix",

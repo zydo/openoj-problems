@@ -4,11 +4,17 @@
   "id": 3221,
   "slug": "hopping-to-the-top-score-ii",
   "title": "Hopping To The Top Score II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

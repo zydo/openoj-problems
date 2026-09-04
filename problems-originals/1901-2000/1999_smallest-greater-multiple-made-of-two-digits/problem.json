@@ -4,8 +4,12 @@
   "id": 1999,
   "slug": "smallest-greater-multiple-made-of-two-digits",
   "title": "Smallest Greater Multiple Made of Two Digits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

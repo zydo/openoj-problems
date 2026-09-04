@@ -4,11 +4,23 @@
   "id": 1595,
   "slug": "cheapest-cross-links-for-two-point-groups",
   "title": "Cheapest Cross-Links for Two Point Groups",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bit Manipulation",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Matrix",
+    "Bitmask",
+    "Bipartite Graph",
+    "Successive Shortest Path Algorithm",
+    "Matching (Graph)",
+    "Minimum-Cost Flow",
+    "Flow Network"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3243,
   "slug": "shortest-distance-after-road-addition-queries-i",
   "title": "Shortest Distance After Road Addition Queries I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Graph Theory"

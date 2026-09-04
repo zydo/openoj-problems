@@ -3,12 +3,19 @@
   "id": 1177,
   "slug": "can-make-palindrome-from-substring",
   "title": "Can Make Palindrome from Substring",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Prefix Sum",
     "Bit Manipulation",
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

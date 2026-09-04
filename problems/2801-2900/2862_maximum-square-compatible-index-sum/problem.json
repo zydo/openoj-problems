@@ -4,10 +4,15 @@
   "id": 2862,
   "slug": "maximum-square-compatible-index-sum",
   "title": "Maximum Square-Compatible Index Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Number Theory",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

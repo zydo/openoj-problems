@@ -4,11 +4,17 @@
   "id": 1383,
   "slug": "weakest-link-team-score",
   "title": "Weakest-Link Team Score",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

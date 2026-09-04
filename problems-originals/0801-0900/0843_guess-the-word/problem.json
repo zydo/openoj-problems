@@ -3,10 +3,18 @@
   "id": 843,
   "slug": "guess-the-word",
   "title": "Guess the Word",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Randomized",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "String",
+    "Minimax",
+    "Interactive",
+    "Game Theory"
   ],
   "invocation": {
     "type": "interactive",

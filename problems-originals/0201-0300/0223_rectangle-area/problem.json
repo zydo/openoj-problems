@@ -4,8 +4,12 @@
   "id": 223,
   "slug": "rectangle-area",
   "title": "Rectangle Area",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

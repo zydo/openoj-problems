@@ -4,10 +4,17 @@
   "id": 3568,
   "slug": "the-litter-sweep",
   "title": "The Litter Sweep",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Breadth-First Search",
     "Bit Manipulation",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Breadth-First Search",
     "Matrix"
   ],
   "invocation": {

@@ -4,11 +4,15 @@
   "id": 206,
   "slug": "reverse-whole-list",
   "title": "Reverse Whole List",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Linked List",
     "Recursion",
     "Two Pointers"
+  ],
+  "topics": [
+    "Linked List",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

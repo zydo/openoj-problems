@@ -3,8 +3,13 @@
   "id": 437,
   "slug": "path-sum-iii",
   "title": "Path Sum III",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

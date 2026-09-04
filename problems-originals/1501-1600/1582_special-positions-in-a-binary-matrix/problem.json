@@ -4,8 +4,12 @@
   "id": 1582,
   "slug": "special-positions-in-a-binary-matrix",
   "title": "Special Positions in a Binary Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

@@ -4,8 +4,12 @@
   "id": 2374,
   "slug": "most-cited-node",
   "title": "Most Cited Node",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Graph Theory"
+  ],
+  "topics": [
     "Hash Table",
     "Graph Theory"
   ],

@@ -4,12 +4,19 @@
   "id": 894,
   "slug": "enumerate-full-binary-trees",
   "title": "Enumerate Full Binary Trees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Tree",
     "Recursion",
     "Memoization"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Recursion",
+    "Memoization",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

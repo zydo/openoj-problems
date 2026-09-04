@@ -4,8 +4,15 @@
   "id": 1447,
   "slug": "simplified-fractions",
   "title": "Simplified Fractions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Math",
     "String",
     "Number Theory",

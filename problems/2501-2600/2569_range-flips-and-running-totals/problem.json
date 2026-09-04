@@ -4,10 +4,14 @@
   "id": 2569,
   "slug": "range-flips-and-running-totals",
   "title": "Range Flips and Running Totals",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

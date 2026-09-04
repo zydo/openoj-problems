@@ -4,8 +4,12 @@
   "id": 2240,
   "slug": "snack-runs-on-a-budget",
   "title": "Snack Runs on a Budget",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

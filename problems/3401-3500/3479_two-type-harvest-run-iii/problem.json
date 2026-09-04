@@ -4,11 +4,17 @@
   "id": 3479,
   "slug": "two-type-harvest-run-iii",
   "title": "Two-Type Harvest Run III",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

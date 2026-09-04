@@ -4,11 +4,19 @@
   "id": 341,
   "slug": "nested-sequence-iterator",
   "title": "Nested Sequence Iterator",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Stack",
     "Depth-First Search",
     "Design",
+    "Iterator"
+  ],
+  "topics": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Design",
+    "Queue",
     "Iterator"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 723,
   "slug": "candy-crush",
   "title": "Candy Crush",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Matrix",

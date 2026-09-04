@@ -3,10 +3,19 @@
   "id": 2876,
   "slug": "count-visited-nodes-in-a-directed-graph",
   "title": "Count Visited Nodes in a Directed Graph",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "DFS"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
+    "Kosaraju's Algorithm",
+    "Tarjan's SCC Algorithm"
   ],
   "invocation": {
     "type": "function",

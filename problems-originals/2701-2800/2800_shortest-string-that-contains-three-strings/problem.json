@@ -4,8 +4,13 @@
   "id": 2800,
   "slug": "shortest-string-that-contains-three-strings",
   "title": "Shortest String That Contains Three Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Enumeration"

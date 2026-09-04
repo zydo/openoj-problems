@@ -4,8 +4,13 @@
   "id": 3449,
   "slug": "lift-the-lowest-cell-score",
   "title": "Lift the Lowest Cell Score",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
     "Binary Search",
     "Greedy"
   ],

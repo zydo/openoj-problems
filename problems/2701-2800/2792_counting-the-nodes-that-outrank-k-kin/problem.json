@@ -4,8 +4,14 @@
   "id": 2792,
   "slug": "counting-the-nodes-that-outrank-k-kin",
   "title": "Counting The Nodes That Outrank K Kin",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Divide and Conquer",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Divide and Conquer",
     "Tree",
     "Depth-First Search",

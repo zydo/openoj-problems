@@ -4,10 +4,15 @@
   "id": 357,
   "slug": "count-distinct-digit-numbers",
   "title": "Count Distinct-Digit Numbers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Backtracking"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2331,
   "slug": "evaluate-boolean-binary-tree",
   "title": "Evaluate Boolean Binary Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

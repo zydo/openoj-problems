@@ -4,8 +4,13 @@
   "id": 2229,
   "slug": "check-if-an-array-is-consecutive",
   "title": "Check if an Array Is Consecutive",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

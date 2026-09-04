@@ -4,8 +4,11 @@
   "id": 1318,
   "slug": "fewest-flips-to-match-an-or",
   "title": "Fewest Flips to Match an OR",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

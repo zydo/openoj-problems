@@ -4,8 +4,12 @@
   "id": 1773,
   "slug": "count-items-matching-a-rule",
   "title": "Count Items Matching a Rule",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

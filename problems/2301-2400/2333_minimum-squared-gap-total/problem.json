@@ -4,10 +4,17 @@
   "id": 2333,
   "slug": "minimum-squared-gap-total",
   "title": "Minimum Squared Gap Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3176,
   "slug": "find-the-maximum-length-of-a-good-subsequence-i",
   "title": "Find the Maximum Length of a Good Subsequence I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

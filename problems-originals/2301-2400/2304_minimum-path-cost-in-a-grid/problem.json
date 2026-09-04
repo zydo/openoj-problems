@@ -4,8 +4,13 @@
   "id": 2304,
   "slug": "minimum-path-cost-in-a-grid",
   "title": "Minimum Path Cost in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

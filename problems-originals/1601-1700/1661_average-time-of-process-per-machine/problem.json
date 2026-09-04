@@ -4,8 +4,11 @@
   "id": 1661,
   "slug": "average-time-of-process-per-machine",
   "title": "Average Time of Process per Machine",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

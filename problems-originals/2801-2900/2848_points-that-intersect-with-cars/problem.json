@@ -4,8 +4,13 @@
   "id": 2848,
   "slug": "points-that-intersect-with-cars",
   "title": "Points That Intersect With Cars",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

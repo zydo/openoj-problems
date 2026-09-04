@@ -4,8 +4,13 @@
   "id": 932,
   "slug": "average-free-ordering",
   "title": "Average-Free Ordering",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Divide and Conquer"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Divide and Conquer"

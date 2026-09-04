@@ -4,8 +4,14 @@
   "id": 756,
   "slug": "pyramid-block-stacking",
   "title": "Pyramid Block Stacking",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Backtracking",

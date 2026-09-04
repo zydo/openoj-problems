@@ -3,11 +3,17 @@
   "id": 1498,
   "slug": "number-of-subsequences-that-satisfy-the-given-sum-condition",
   "title": "Number of Subsequences That Satisfy the Given Sum Condition",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Two Pointers",
     "Sorting",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

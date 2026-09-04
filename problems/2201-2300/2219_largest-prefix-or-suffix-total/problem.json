@@ -4,8 +4,12 @@
   "id": 2219,
   "slug": "largest-prefix-or-suffix-total",
   "title": "Largest Prefix or Suffix Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

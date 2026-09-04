@@ -4,8 +4,12 @@
   "id": 3668,
   "slug": "friends-at-the-finish-line",
   "title": "Friends At The Finish Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

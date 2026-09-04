@@ -4,8 +4,12 @@
   "id": 1572,
   "slug": "matrix-diagonal-sum",
   "title": "Matrix Diagonal Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

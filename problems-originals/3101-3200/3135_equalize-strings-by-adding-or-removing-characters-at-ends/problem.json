@@ -4,8 +4,15 @@
   "id": 3135,
   "slug": "equalize-strings-by-adding-or-removing-characters-at-ends",
   "title": "Equalize Strings by Adding or Removing Characters at Ends",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Hash Function"
+  ],
+  "topics": [
     "String",
     "Binary Search",
     "Dynamic Programming",

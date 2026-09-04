@@ -4,10 +4,14 @@
   "id": 1046,
   "slug": "greedy-stone-smashing",
   "title": "Greedy Stone Smashing",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

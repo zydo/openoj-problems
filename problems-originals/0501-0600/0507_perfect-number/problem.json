@@ -4,8 +4,11 @@
   "id": 507,
   "slug": "perfect-number",
   "title": "Perfect Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

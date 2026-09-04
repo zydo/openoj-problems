@@ -4,10 +4,17 @@
   "id": 686,
   "slug": "minimum-repeats-to-cover",
   "title": "Minimum Repeats to Cover",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "String Matching"
+  ],
+  "topics": [
+    "String",
+    "String Matching",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm",
+    "Boyer–Moore String-Search Algorithm"
   ],
   "invocation": {
     "type": "function",

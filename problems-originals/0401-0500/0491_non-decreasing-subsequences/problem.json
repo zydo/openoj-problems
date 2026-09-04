@@ -4,8 +4,14 @@
   "id": 491,
   "slug": "non-decreasing-subsequences",
   "title": "Non-decreasing Subsequences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Backtracking",

@@ -4,11 +4,18 @@
   "id": 3154,
   "slug": "ways-up-a-doubling-staircase",
   "title": "Ways Up A Doubling Staircase",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Combinatorics",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization",
+    "Combinatorics"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 1398,
   "slug": "customers-who-bought-products-a-and-b-but-not-c",
   "title": "Customers Who Bought Products A and B but Not C",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

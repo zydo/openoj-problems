@@ -4,8 +4,11 @@
   "id": 3856,
   "slug": "trim-trailing-vowels",
   "title": "Trim Trailing Vowels",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

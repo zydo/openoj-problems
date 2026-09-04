@@ -4,8 +4,13 @@
   "id": 1080,
   "slug": "insufficient-nodes-in-root-to-leaf-paths",
   "title": "Insufficient Nodes in Root to Leaf Paths",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

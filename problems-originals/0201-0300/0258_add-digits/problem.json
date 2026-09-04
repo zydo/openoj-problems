@@ -4,8 +4,13 @@
   "id": 258,
   "slug": "add-digits",
   "title": "Add Digits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Simulation",
     "Number Theory"

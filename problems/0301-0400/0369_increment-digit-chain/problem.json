@@ -4,8 +4,12 @@
   "id": 369,
   "slug": "increment-digit-chain",
   "title": "Increment Digit Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Math"
+  ],
+  "topics": [
     "Linked List",
     "Math"
   ],

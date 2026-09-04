@@ -4,11 +4,21 @@
   "id": 2031,
   "slug": "tallying-one-heavy-runs",
   "title": "Tallying One-Heavy Runs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Indexed Tree",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

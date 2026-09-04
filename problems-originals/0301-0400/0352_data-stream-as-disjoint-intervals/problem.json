@@ -4,10 +4,18 @@
   "id": 352,
   "slug": "data-stream-as-disjoint-intervals",
   "title": "Data Stream as Disjoint Intervals",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Design",
+    "Ordered Set"
+  ],
+  "topics": [
+    "Hash Table",
+    "Binary Search",
+    "Union-Find",
+    "Design",
+    "Data Stream",
     "Ordered Set"
   ],
   "invocation": {

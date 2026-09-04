@@ -3,10 +3,15 @@
   "id": 3519,
   "slug": "count-numbers-with-non-decreasing-digits",
   "title": "Count Numbers with Non-Decreasing Digits",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP",
     "Combinatorics"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

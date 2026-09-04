@@ -4,8 +4,12 @@
   "id": 2997,
   "slug": "minimum-number-of-operations-to-make-array-xor-equal-to-k",
   "title": "Minimum Number of Operations to Make Array XOR Equal to K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

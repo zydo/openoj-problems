@@ -3,11 +3,17 @@
   "id": 3181,
   "slug": "maximum-total-reward-using-operations-ii",
   "title": "Maximum Total Reward Using Operations II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,17 @@
   "id": 1626,
   "slug": "top-scoring-conflict-free-squad",
   "title": "Top-Scoring Conflict-Free Squad",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

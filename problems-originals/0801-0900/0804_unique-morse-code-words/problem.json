@@ -4,8 +4,13 @@
   "id": 804,
   "slug": "unique-morse-code-words",
   "title": "Unique Morse Code Words",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

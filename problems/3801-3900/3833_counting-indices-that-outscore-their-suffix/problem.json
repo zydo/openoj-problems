@@ -4,8 +4,12 @@
   "id": 3833,
   "slug": "counting-indices-that-outscore-their-suffix",
   "title": "Counting Indices That Outscore Their Suffix",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

@@ -4,8 +4,12 @@
   "id": 1419,
   "slug": "smallest-frog-chorus",
   "title": "Smallest Frog Chorus",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Counting"
   ],

@@ -4,8 +4,13 @@
   "id": 418,
   "slug": "sentence-screen-fitting",
   "title": "Sentence Screen Fitting",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming"

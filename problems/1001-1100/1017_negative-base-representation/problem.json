@@ -4,8 +4,11 @@
   "id": 1017,
   "slug": "negative-base-representation",
   "title": "Negative-Base Representation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

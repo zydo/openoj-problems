@@ -4,10 +4,13 @@
   "id": 2820,
   "slug": "counting-split-ballots",
   "title": "Counting Split Ballots",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

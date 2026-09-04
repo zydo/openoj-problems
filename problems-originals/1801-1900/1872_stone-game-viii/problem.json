@@ -4,12 +4,21 @@
   "id": 1872,
   "slug": "stone-game-viii",
   "title": "Stone Game VIII",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Minimax",
+    "Prefix Sum",
+    "Game Theory",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

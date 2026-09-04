@@ -4,8 +4,14 @@
   "id": 99,
   "slug": "swap-back-the-bst-keys",
   "title": "Swap Back The BST Keys",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Search Tree",

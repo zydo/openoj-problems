@@ -4,8 +4,12 @@
   "id": 3584,
   "slug": "maximum-product-of-first-and-last-elements-of-a-subsequence",
   "title": "Maximum Product of First and Last Elements of a Subsequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

@@ -4,12 +4,20 @@
   "id": 1670,
   "slug": "deque-with-a-middle-gate",
   "title": "Deque With A Middle Gate",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Linked List",
     "Design",
     "Queue",
+    "Data Stream"
+  ],
+  "topics": [
+    "Array",
+    "Linked List",
+    "Design",
+    "Queue",
+    "Doubly-Linked List",
     "Data Stream"
   ],
   "invocation": {

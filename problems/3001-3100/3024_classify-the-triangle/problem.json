@@ -4,10 +4,16 @@
   "id": 3024,
   "slug": "classify-the-triangle",
   "title": "Classify The Triangle",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

@@ -3,11 +3,16 @@
   "id": 3040,
   "slug": "maximum-number-of-operations-with-the-same-score-ii",
   "title": "Maximum Number of Operations With the Same Score II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Interval DP"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

@@ -4,9 +4,16 @@
   "id": 348,
   "slug": "grid-victory-tracker",
   "title": "Grid Victory Tracker",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Design",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Design",
     "Matrix",
     "Simulation"

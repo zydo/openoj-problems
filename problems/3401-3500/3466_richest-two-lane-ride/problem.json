@@ -4,8 +4,12 @@
   "id": 3466,
   "slug": "richest-two-lane-ride",
   "title": "Richest Two-Lane Ride",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

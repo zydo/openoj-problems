@@ -4,8 +4,13 @@
   "id": 3212,
   "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
   "title": "Count Submatrices With Equal Frequency of X and Y",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

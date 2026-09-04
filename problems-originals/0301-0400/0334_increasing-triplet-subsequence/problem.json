@@ -4,8 +4,13 @@
   "id": 334,
   "slug": "increasing-triplet-subsequence",
   "title": "Increasing Triplet Subsequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Longest Increasing Subsequence"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Longest Increasing Subsequence"

@@ -4,8 +4,12 @@
   "id": 91,
   "slug": "counting-the-letter-readings",
   "title": "Counting The Letter Readings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

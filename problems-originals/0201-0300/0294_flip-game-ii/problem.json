@@ -4,8 +4,18 @@
   "id": 294,
   "slug": "flip-game-ii",
   "title": "Flip Game II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Memoization",
+    "Minimax",
+    "Game Theory",
+    "Sprague–Grundy Theorem",
+    "Impartial Game"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Backtracking",

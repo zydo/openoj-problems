@@ -4,8 +4,13 @@
   "id": 815,
   "slug": "fewest-transit-lines",
   "title": "Fewest Transit Lines",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Breadth-First Search"

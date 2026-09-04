@@ -4,8 +4,13 @@
   "id": 2207,
   "slug": "maximize-number-of-subsequences-in-a-string",
   "title": "Maximize Number of Subsequences in a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Prefix Sum"

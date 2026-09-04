@@ -4,8 +4,11 @@
   "id": 1869,
   "slug": "longer-contiguous-segments-of-ones-than-zeros",
   "title": "Longer Contiguous Segments of Ones than Zeros",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

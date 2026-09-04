@@ -3,8 +3,16 @@
   "id": 2454,
   "slug": "next-greater-element-iv",
   "title": "Next Greater Element IV",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Monotonic Stack"
   ],
   "invocation": {

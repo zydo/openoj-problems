@@ -4,8 +4,15 @@
   "id": 2501,
   "slug": "longest-square-streak-in-an-array",
   "title": "Longest Square Streak in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

@@ -4,10 +4,13 @@
   "id": 1571,
   "slug": "depot-storage-volume",
   "title": "Depot Storage Volume",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

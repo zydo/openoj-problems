@@ -4,13 +4,21 @@
   "id": 3435,
   "slug": "shortest-supersequence-letter-counts",
   "title": "Shortest Supersequence Letter Counts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
     "Bit Manipulation",
     "Graph Theory",
     "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Topological Sort",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

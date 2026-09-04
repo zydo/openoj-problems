@@ -4,12 +4,19 @@
   "id": 3799,
   "slug": "word-lattices-ii",
   "title": "Word Lattices II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Backtracking",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Sorting",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

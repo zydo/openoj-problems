@@ -4,8 +4,12 @@
   "id": 2730,
   "slug": "find-the-longest-semi-repetitive-substring",
   "title": "Find the Longest Semi-Repetitive Substring",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

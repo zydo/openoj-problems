@@ -4,8 +4,11 @@
   "id": 619,
   "slug": "biggest-single-number",
   "title": "Biggest Single Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

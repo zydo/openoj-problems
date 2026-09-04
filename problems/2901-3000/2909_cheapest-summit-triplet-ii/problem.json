@@ -4,8 +4,12 @@
   "id": 2909,
   "slug": "cheapest-summit-triplet-ii",
   "title": "Cheapest Summit Triplet II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

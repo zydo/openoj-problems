@@ -4,8 +4,17 @@
   "id": 2507,
   "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
   "title": "Smallest Value After Replacing With Sum of Prime Factors",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Simulation",
+    "Number Theory",
+    "Prime Factorization",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
+  ],
+  "topics": [
     "Math",
     "Simulation",
     "Number Theory",

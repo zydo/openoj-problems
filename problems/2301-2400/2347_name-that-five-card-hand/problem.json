@@ -4,8 +4,13 @@
   "id": 2347,
   "slug": "name-that-five-card-hand",
   "title": "Name That Five-Card Hand",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

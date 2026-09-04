@@ -4,12 +4,22 @@
   "id": 711,
   "slug": "unique-island-shapes-ii",
   "title": "Unique Island Shapes II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Depth-First Search",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Sorting",
+    "Matrix",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

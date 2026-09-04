@@ -4,8 +4,14 @@
   "id": 2543,
   "slug": "check-if-point-is-reachable",
   "title": "Check if Point Is Reachable",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Math",
     "Number Theory",
     "Euclidean Algorithm",

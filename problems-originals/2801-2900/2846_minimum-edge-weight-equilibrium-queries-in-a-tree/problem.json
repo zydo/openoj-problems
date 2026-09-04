@@ -4,8 +4,15 @@
   "id": 2846,
   "slug": "minimum-edge-weight-equilibrium-queries-in-a-tree",
   "title": "Minimum Edge Weight Equilibrium Queries in a Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

@@ -4,8 +4,13 @@
   "id": 3835,
   "slug": "tallying-subarrays-priced-within-budget",
   "title": "Tallying Subarrays Priced Within Budget",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Queue",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Monotonic Queue"

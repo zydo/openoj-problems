@@ -4,8 +4,11 @@
   "id": 1431,
   "slug": "handing-out-the-extra-candy",
   "title": "Handing Out the Extra Candy",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

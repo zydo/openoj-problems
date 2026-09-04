@@ -4,8 +4,13 @@
   "id": 1189,
   "slug": "letter-supply-for-balloon",
   "title": "Letter Supply for Balloon",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

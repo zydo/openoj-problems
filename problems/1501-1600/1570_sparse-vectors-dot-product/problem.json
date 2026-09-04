@@ -4,12 +4,19 @@
   "id": 1570,
   "slug": "sparse-vectors-dot-product",
   "title": "Sparse Vectors' Dot Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Design",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Design",
+    "Linear Algebra"
   ],
   "invocation": {
     "type": "design",

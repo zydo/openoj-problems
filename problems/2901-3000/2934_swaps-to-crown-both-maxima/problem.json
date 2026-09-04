@@ -4,11 +4,15 @@
   "id": 2934,
   "slug": "swaps-to-crown-both-maxima",
   "title": "Swaps To Crown Both Maxima",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Enumeration",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

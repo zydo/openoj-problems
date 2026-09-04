@@ -4,8 +4,15 @@
   "id": 592,
   "slug": "fraction-addition-and-subtraction",
   "title": "Fraction Addition and Subtraction",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Simulation",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Math",
     "String",
     "Simulation",

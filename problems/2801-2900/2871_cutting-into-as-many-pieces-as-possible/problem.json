@@ -4,8 +4,13 @@
   "id": 2871,
   "slug": "cutting-into-as-many-pieces-as-possible",
   "title": "Cutting Into As Many Pieces As Possible",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation"

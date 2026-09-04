@@ -4,8 +4,11 @@
   "id": 2693,
   "slug": "call-function-with-custom-context",
   "title": "Call Function with Custom Context",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

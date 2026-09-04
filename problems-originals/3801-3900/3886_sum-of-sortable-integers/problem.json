@@ -4,8 +4,14 @@
   "id": 3886,
   "slug": "sum-of-sortable-integers",
   "title": "Sum of Sortable Integers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting",

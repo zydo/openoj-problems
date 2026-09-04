@@ -3,10 +3,18 @@
   "id": 718,
   "slug": "maximum-length-of-repeated-subarray",
   "title": "Maximum Length of Repeated Subarray",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Rolling Hash",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

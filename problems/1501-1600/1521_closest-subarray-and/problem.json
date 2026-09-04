@@ -4,10 +4,17 @@
   "id": 1521,
   "slug": "closest-subarray-and",
   "title": "Closest Subarray AND",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Segment Tree",
+    "Sparse Table"
   ],
   "invocation": {
     "type": "function",

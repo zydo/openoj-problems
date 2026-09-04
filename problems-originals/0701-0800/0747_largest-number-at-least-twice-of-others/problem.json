@@ -4,8 +4,12 @@
   "id": 747,
   "slug": "largest-number-at-least-twice-of-others",
   "title": "Largest Number At Least Twice of Others",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

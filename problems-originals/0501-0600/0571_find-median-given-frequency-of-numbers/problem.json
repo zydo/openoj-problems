@@ -4,8 +4,11 @@
   "id": 571,
   "slug": "find-median-given-frequency-of-numbers",
   "title": "Find Median Given Frequency of Numbers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

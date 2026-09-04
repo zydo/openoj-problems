@@ -4,8 +4,14 @@
   "id": 3343,
   "slug": "balanced-rearrangement-counts",
   "title": "Balanced Rearrangement Counts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming",

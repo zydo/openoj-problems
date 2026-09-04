@@ -4,8 +4,14 @@
   "id": 2170,
   "slug": "fewest-rewrites-to-alternate-the-array",
   "title": "Fewest Rewrites to Alternate the Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

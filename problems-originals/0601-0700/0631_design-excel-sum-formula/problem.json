@@ -4,8 +4,17 @@
   "id": 631,
   "slug": "design-excel-sum-formula",
   "title": "Design Excel Sum Formula",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Graph Theory",
+    "Design",
+    "Topological Sort",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

@@ -4,12 +4,20 @@
   "id": 3588,
   "slug": "largest-flat-sided-triangle",
   "title": "Largest Flat-Sided Triangle",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy",
+    "Geometry",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

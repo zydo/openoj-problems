@@ -4,8 +4,11 @@
   "id": 192,
   "slug": "how-often-each-word-shows-up",
   "title": "How Often Each Word Shows Up",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Shell"
+  ],
+  "topics": [
     "Shell"
   ],
   "invocation": {

@@ -4,12 +4,20 @@
   "id": 976,
   "slug": "biggest-stick-triangle",
   "title": "Biggest Stick Triangle",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Quicksort",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

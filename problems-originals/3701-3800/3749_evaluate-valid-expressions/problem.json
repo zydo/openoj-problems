@@ -3,10 +3,17 @@
   "id": 3749,
   "slug": "evaluate-valid-expressions",
   "title": "Evaluate Valid Expressions",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Expression Parsing",
     "Recursion",
+    "Stack"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Divide and Conquer",
     "Stack"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 290,
   "slug": "word-pattern",
   "title": "Word Pattern",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

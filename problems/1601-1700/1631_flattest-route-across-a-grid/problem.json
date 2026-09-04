@@ -4,7 +4,7 @@
   "id": 1631,
   "slug": "flattest-route-across-a-grid",
   "title": "Flattest Route Across a Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
@@ -12,6 +12,16 @@
     "Union Find",
     "Heap",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

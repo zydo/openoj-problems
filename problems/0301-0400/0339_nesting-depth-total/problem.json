@@ -4,8 +4,12 @@
   "id": 339,
   "slug": "nesting-depth-total",
   "title": "Nesting Depth Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search"
   ],

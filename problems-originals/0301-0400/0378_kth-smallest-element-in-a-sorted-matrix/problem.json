@@ -3,12 +3,19 @@
   "id": 378,
   "slug": "kth-smallest-element-in-a-sorted-matrix",
   "title": "Kth Smallest Element in a Sorted Matrix",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Matrix",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

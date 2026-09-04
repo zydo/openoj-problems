@@ -4,8 +4,11 @@
   "id": 2628,
   "slug": "json-deep-equal",
   "title": "JSON Deep Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Recursion"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

@@ -4,11 +4,18 @@
   "id": 1617,
   "slug": "subtree-census-by-diameter",
   "title": "Subtree Census by Diameter",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Bitmask",
     "Enumeration"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Enumeration",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

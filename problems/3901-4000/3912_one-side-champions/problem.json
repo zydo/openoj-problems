@@ -4,8 +4,11 @@
   "id": 3912,
   "slug": "one-side-champions",
   "title": "One-Side Champions",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

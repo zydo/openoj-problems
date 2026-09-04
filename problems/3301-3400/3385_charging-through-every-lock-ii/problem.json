@@ -4,9 +4,14 @@
   "id": 3385,
   "slug": "charging-through-every-lock-ii",
   "title": "Charging Through Every Lock II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
     "Graph Theory"
   ],
   "invocation": {

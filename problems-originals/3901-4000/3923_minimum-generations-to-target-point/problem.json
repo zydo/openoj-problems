@@ -4,8 +4,13 @@
   "id": 3923,
   "slug": "minimum-generations-to-target-point",
   "title": "Minimum Generations to Target Point",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

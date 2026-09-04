@@ -3,11 +3,18 @@
   "id": 494,
   "slug": "target-sum",
   "title": "Target Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

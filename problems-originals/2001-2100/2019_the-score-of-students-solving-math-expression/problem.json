@@ -4,8 +4,17 @@
   "id": 2019,
   "slug": "the-score-of-students-solving-math-expression",
   "title": "The Score of Students Solving Math Expression",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Memoization"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

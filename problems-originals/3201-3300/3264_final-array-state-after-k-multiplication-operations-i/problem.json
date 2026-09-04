@@ -4,8 +4,14 @@
   "id": 3264,
   "slug": "final-array-state-after-k-multiplication-operations-i",
   "title": "Final Array State After K Multiplication Operations I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Heap (Priority Queue)",

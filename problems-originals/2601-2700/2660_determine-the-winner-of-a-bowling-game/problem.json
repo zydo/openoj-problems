@@ -4,8 +4,12 @@
   "id": 2660,
   "slug": "determine-the-winner-of-a-bowling-game",
   "title": "Determine the Winner of a Bowling Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

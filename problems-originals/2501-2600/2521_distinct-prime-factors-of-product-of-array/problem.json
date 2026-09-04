@@ -4,8 +4,20 @@
   "id": 2521,
   "slug": "distinct-prime-factors-of-product-of-array",
   "title": "Distinct Prime Factors of Product of Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Number Theory",
+    "Prime Factorization",
+    "Euclidean Algorithm",
+    "Primality Test",
+    "Greatest Common Divisor",
+    "Sieve Theory",
+    "Prime Number Sieve"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

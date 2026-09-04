@@ -4,8 +4,13 @@
   "id": 874,
   "slug": "grid-rover-extent",
   "title": "Grid Rover Extent",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

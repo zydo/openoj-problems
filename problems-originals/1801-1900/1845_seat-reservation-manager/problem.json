@@ -3,9 +3,13 @@
   "id": 1845,
   "slug": "seat-reservation-manager",
   "title": "Seat Reservation Manager",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Heap"
+  ],
+  "topics": [
+    "Design",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "design",

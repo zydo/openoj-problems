@@ -4,8 +4,11 @@
   "id": 2984,
   "slug": "find-peak-calling-hours-for-each-city",
   "title": "Find Peak Calling Hours for Each City",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 1791,
   "slug": "find-center-of-star-graph",
   "title": "Find Center of Star Graph",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Graph Theory"
+  ],
+  "topics": [
     "Graph Theory"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 249,
   "slug": "group-shifted-strings",
   "title": "Group Shifted Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

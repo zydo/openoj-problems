@@ -4,8 +4,12 @@
   "id": 3976,
   "slug": "one-rescale-for-the-best-stretch",
   "title": "One Rescale For The Best Stretch",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

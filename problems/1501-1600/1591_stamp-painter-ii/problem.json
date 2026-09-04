@@ -4,11 +4,18 @@
   "id": 1591,
   "slug": "stamp-painter-ii",
   "title": "Stamp Painter II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Graph Theory",
     "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "Graph Theory",
+    "Topological Sort",
+    "Matrix",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 1711,
   "slug": "power-of-two-pairings",
   "title": "Power-of-Two Pairings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

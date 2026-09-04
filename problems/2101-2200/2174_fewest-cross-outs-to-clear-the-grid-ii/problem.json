@@ -4,8 +4,14 @@
   "id": 2174,
   "slug": "fewest-cross-outs-to-clear-the-grid-ii",
   "title": "Fewest Cross-Outs to Clear the Grid II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Breadth-First Search",

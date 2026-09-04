@@ -4,10 +4,17 @@
   "id": 2430,
   "slug": "longest-deletion-sequence",
   "title": "Longest Deletion Sequence",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Rolling Hash"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

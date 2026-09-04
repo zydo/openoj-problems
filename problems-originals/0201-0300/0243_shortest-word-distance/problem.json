@@ -4,8 +4,12 @@
   "id": 243,
   "slug": "shortest-word-distance",
   "title": "Shortest Word Distance",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

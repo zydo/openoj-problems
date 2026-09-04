@@ -4,8 +4,12 @@
   "id": 3639,
   "slug": "minimum-time-to-activate-string",
   "title": "Minimum Time to Activate String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

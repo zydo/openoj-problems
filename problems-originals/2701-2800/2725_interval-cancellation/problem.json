@@ -4,8 +4,11 @@
   "id": 2725,
   "slug": "interval-cancellation",
   "title": "Interval Cancellation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

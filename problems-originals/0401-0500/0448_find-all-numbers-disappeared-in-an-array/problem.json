@@ -4,8 +4,12 @@
   "id": 448,
   "slug": "find-all-numbers-disappeared-in-an-array",
   "title": "Find All Numbers Disappeared in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

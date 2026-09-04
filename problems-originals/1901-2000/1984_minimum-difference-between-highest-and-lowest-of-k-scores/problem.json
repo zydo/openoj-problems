@@ -4,8 +4,13 @@
   "id": 1984,
   "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
   "title": "Minimum Difference Between Highest and Lowest of K Scores",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sliding Window",
     "Sorting"

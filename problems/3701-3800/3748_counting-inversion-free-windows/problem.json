@@ -4,8 +4,13 @@
   "id": 3748,
   "slug": "counting-inversion-free-windows",
   "title": "Counting Inversion-Free Windows",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Prefix Sum"

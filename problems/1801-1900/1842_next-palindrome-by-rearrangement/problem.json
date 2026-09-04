@@ -4,8 +4,12 @@
   "id": 1842,
   "slug": "next-palindrome-by-rearrangement",
   "title": "Next Palindrome By Rearrangement",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

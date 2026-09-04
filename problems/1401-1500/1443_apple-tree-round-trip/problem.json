@@ -4,11 +4,18 @@
   "id": 1443,
   "slug": "apple-tree-round-trip",
   "title": "Apple Tree Round Trip",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

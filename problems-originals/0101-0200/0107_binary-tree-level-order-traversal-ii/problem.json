@@ -4,8 +4,13 @@
   "id": 107,
   "slug": "binary-tree-level-order-traversal-ii",
   "title": "Binary Tree Level Order Traversal II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

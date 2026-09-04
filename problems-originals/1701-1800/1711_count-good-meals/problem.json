@@ -4,8 +4,12 @@
   "id": 1711,
   "slug": "count-good-meals",
   "title": "Count Good Meals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

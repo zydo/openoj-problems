@@ -4,8 +4,12 @@
   "id": 1702,
   "slug": "greatest-binary-string",
   "title": "Greatest Binary String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

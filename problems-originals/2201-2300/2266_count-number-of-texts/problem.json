@@ -4,8 +4,14 @@
   "id": 2266,
   "slug": "count-number-of-texts",
   "title": "Count Number of Texts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

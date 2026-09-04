@@ -4,11 +4,16 @@
   "id": 808,
   "slug": "probability-of-emptying-first",
   "title": "Probability of Emptying First",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Dynamic Programming",
     "Probability"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Probability and Statistics"
   ],
   "invocation": {
     "type": "function",

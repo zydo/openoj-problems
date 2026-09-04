@@ -4,8 +4,12 @@
   "id": 309,
   "slug": "stock-trading-with-cooldown",
   "title": "Stock Trading With Cooldown",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

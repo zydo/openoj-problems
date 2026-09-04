@@ -4,11 +4,16 @@
   "id": 1163,
   "slug": "lexicographically-largest-substring",
   "title": "Lexicographically Largest Substring",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Two Pointers",
     "Suffix Array"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Lyndon Factorization"
   ],
   "invocation": {
     "type": "function",

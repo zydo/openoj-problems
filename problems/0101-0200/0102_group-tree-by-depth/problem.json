@@ -4,11 +4,16 @@
   "id": 102,
   "slug": "group-tree-by-depth",
   "title": "Group Tree By Depth",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "Breadth-First Search",
     "Tree"
+  ],
+  "topics": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

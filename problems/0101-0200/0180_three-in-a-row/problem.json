@@ -4,10 +4,13 @@
   "id": 180,
   "slug": "three-in-a-row",
   "title": "Three In A Row",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

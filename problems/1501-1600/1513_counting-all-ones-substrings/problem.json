@@ -4,8 +4,12 @@
   "id": 1513,
   "slug": "counting-all-ones-substrings",
   "title": "Counting All-Ones Substrings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

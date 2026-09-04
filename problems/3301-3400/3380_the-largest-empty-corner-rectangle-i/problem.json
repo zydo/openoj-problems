@@ -4,11 +4,20 @@
   "id": 3380,
   "slug": "the-largest-empty-corner-rectangle-i",
   "title": "The Largest Empty Corner Rectangle I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Geometry",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Geometry",
+    "Sorting",
     "Enumeration"
   ],
   "invocation": {

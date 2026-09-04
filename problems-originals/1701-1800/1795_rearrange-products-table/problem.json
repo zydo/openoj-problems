@@ -4,8 +4,11 @@
   "id": 1795,
   "slug": "rearrange-products-table",
   "title": "Rearrange Products Table",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 1553,
   "slug": "minimum-number-of-days-to-eat-n-oranges",
   "title": "Minimum Number of Days to Eat N Oranges",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Memoization"
   ],

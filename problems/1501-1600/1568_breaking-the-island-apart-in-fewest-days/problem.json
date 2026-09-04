@@ -4,11 +4,19 @@
   "id": 1568,
   "slug": "breaking-the-island-apart-in-fewest-days",
   "title": "Breaking the Island Apart in Fewest Days",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Depth-First Search",
     "Breadth-First Search",
     "Matrix",
+    "Articulation Point"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Strongly Connected Component",
     "Articulation Point"
   ],
   "invocation": {

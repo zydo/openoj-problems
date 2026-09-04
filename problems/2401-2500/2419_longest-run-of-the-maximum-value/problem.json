@@ -4,8 +4,13 @@
   "id": 2419,
   "slug": "longest-run-of-the-maximum-value",
   "title": "Longest Run of the Maximum Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Brainteaser"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Brainteaser"

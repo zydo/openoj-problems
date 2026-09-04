@@ -4,11 +4,17 @@
   "id": 1319,
   "slug": "fewest-reroutes-to-connect-the-graph",
   "title": "Fewest Reroutes to Connect the Graph",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Union Find",
     "DFS"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

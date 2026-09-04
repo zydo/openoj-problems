@@ -4,11 +4,19 @@
   "id": 3493,
   "slug": "rows-joined-by-shared-values",
   "title": "Rows Joined By Shared Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Depth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Graph Theory"
   ],
   "invocation": {

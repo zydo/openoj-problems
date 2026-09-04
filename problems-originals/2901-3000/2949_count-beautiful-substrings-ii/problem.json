@@ -4,8 +4,15 @@
   "id": 2949,
   "slug": "count-beautiful-substrings-ii",
   "title": "Count Beautiful Substrings II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Number Theory",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

@@ -4,10 +4,17 @@
   "id": 380,
   "slug": "random-draw-set",
   "title": "Random Draw Set",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Design",
+    "Randomized"
   ],
   "invocation": {
     "type": "design",

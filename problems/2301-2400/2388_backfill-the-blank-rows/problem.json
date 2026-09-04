@@ -4,10 +4,13 @@
   "id": 2388,
   "slug": "backfill-the-blank-rows",
   "title": "Backfill the Blank Rows",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

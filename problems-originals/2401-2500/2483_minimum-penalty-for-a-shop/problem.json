@@ -3,8 +3,12 @@
   "id": 2483,
   "slug": "minimum-penalty-for-a-shop",
   "title": "Minimum Penalty for a Shop",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Prefix Sum"
   ],

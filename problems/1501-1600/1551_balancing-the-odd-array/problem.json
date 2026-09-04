@@ -4,8 +4,11 @@
   "id": 1551,
   "slug": "balancing-the-odd-array",
   "title": "Balancing the Odd Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

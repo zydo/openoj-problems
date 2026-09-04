@@ -4,8 +4,13 @@
   "id": 866,
   "slug": "prime-palindrome",
   "title": "Prime Palindrome",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Number Theory",
+    "Primality Test"
+  ],
+  "topics": [
     "Math",
     "Number Theory",
     "Primality Test"

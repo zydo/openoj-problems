@@ -3,8 +3,13 @@
   "id": 450,
   "slug": "delete-node-in-a-bst",
   "title": "Delete Node in a BST",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Search Tree",
     "Binary Tree"

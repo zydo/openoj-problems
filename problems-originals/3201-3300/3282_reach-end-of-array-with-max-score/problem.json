@@ -4,8 +4,12 @@
   "id": 3282,
   "slug": "reach-end-of-array-with-max-score",
   "title": "Reach End of Array With Max Score",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

@@ -4,8 +4,16 @@
   "id": 1690,
   "slug": "stone-game-vii",
   "title": "Stone Game VII",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Minimax",
+    "Game Theory",
+    "Zero-Sum Game"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

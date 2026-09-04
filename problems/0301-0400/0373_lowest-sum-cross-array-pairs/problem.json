@@ -4,8 +4,12 @@
   "id": 373,
   "slug": "lowest-sum-cross-array-pairs",
   "title": "Lowest-Sum Cross-Array Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Heap (Priority Queue)"
   ],

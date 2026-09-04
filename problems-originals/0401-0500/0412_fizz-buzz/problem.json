@@ -4,8 +4,13 @@
   "id": 412,
   "slug": "fizz-buzz",
   "title": "Fizz Buzz",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Simulation"

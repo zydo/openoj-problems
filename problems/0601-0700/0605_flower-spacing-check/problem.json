@@ -4,8 +4,12 @@
   "id": 605,
   "slug": "flower-spacing-check",
   "title": "Flower Spacing Check",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

@@ -4,8 +4,13 @@
   "id": 1006,
   "slug": "awkward-factorial",
   "title": "Awkward Factorial",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Stack",
     "Simulation"

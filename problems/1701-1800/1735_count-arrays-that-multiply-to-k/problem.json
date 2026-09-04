@@ -4,11 +4,20 @@
   "id": 1735,
   "slug": "count-arrays-that-multiply-to-k",
   "title": "Count Arrays That Multiply to k",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Number Theory",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics",
+    "Number Theory",
+    "Prime Factorization",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 3326,
   "slug": "dividing-down-to-a-sorted-array",
   "title": "Dividing Down To A Sorted Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

@@ -4,10 +4,15 @@
   "id": 3982,
   "slug": "the-widest-digit-span-takes-all",
   "title": "The Widest Digit Span Takes All",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math"
+  ],
+  "topics": [
+    "Math",
+    "Array",
+    "String"
   ],
   "invocation": {
     "type": "function",

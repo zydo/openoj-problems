@@ -4,11 +4,18 @@
   "id": 2554,
   "slug": "most-integers-within-a-budget-i",
   "title": "Most Integers Within a Budget I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

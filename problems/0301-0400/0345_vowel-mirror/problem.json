@@ -4,8 +4,12 @@
   "id": 345,
   "slug": "vowel-mirror",
   "title": "Vowel Mirror",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

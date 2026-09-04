@@ -4,8 +4,14 @@
   "id": 1490,
   "slug": "clone-n-ary-tree",
   "title": "Clone N-ary Tree",
-  "difficulty": "H1",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

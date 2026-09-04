@@ -4,8 +4,12 @@
   "id": 822,
   "slug": "card-value-elimination",
   "title": "Card Value Elimination",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

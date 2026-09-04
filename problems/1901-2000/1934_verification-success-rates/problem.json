@@ -4,10 +4,13 @@
   "id": 1934,
   "slug": "verification-success-rates",
   "title": "Verification Success Rates",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

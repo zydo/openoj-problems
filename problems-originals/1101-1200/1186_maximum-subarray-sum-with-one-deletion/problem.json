@@ -3,10 +3,14 @@
   "id": 1186,
   "slug": "maximum-subarray-sum-with-one-deletion",
   "title": "Maximum Subarray Sum with One Deletion",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

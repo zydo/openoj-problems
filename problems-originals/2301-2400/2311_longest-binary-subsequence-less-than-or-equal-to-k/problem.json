@@ -4,8 +4,14 @@
   "id": 2311,
   "slug": "longest-binary-subsequence-less-than-or-equal-to-k",
   "title": "Longest Binary Subsequence Less Than or Equal to K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Memoization"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Greedy",

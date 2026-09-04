@@ -4,8 +4,12 @@
   "id": 1822,
   "slug": "sign-of-the-product-of-an-array",
   "title": "Sign of the Product of an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

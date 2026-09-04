@@ -4,8 +4,11 @@
   "id": 1939,
   "slug": "users-that-actively-request-confirmation-messages",
   "title": "Users That Actively Request Confirmation Messages",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,9 +4,15 @@
   "id": 3667,
   "slug": "order-by-magnitude",
   "title": "Order By Magnitude",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Two Pointers",
     "Sorting"
   ],
   "invocation": {

@@ -4,11 +4,16 @@
   "id": 10,
   "slug": "dot-star-pattern-matching",
   "title": "Dot-Star Pattern Matching",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Expression Parsing"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

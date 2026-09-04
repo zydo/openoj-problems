@@ -4,12 +4,18 @@
   "id": 2106,
   "slug": "fruit-harvest-within-a-step-budget",
   "title": "Fruit Harvest Within a Step Budget",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Prefix Sum",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

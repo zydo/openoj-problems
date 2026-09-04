@@ -4,10 +4,13 @@
   "id": 1127,
   "slug": "daily-totals-by-platform",
   "title": "Daily Totals by Platform",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

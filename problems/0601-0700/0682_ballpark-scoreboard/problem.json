@@ -4,8 +4,13 @@
   "id": 682,
   "slug": "ballpark-scoreboard",
   "title": "Ballpark Scoreboard",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Simulation"

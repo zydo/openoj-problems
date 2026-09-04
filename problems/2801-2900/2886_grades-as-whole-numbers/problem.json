@@ -4,10 +4,13 @@
   "id": 2886,
   "slug": "grades-as-whole-numbers",
   "title": "Grades As Whole Numbers",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

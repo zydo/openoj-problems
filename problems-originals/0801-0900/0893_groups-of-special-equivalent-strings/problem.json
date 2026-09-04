@@ -4,8 +4,14 @@
   "id": 893,
   "slug": "groups-of-special-equivalent-strings",
   "title": "Groups of Special-Equivalent Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

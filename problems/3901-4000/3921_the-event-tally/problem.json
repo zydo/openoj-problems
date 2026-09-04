@@ -4,8 +4,13 @@
   "id": 3921,
   "slug": "the-event-tally",
   "title": "The Event Tally",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Simulation"

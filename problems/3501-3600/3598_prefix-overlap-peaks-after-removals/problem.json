@@ -4,8 +4,12 @@
   "id": 3598,
   "slug": "prefix-overlap-peaks-after-removals",
   "title": "Prefix Overlap Peaks After Removals",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

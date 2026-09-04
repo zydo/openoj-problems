@@ -4,8 +4,13 @@
   "id": 318,
   "slug": "largest-disjoint-word-product",
   "title": "Largest Disjoint Word Product",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Bit Manipulation"

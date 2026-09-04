@@ -3,10 +3,14 @@
   "id": 1987,
   "slug": "number-of-unique-good-subsequences",
   "title": "Number of Unique Good Subsequences",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

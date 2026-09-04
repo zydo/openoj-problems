@@ -4,8 +4,11 @@
   "id": 194,
   "slug": "transpose-file",
   "title": "Transpose File",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Shell"
+  ],
+  "topics": [
     "Shell"
   ],
   "invocation": {

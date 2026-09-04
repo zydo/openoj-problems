@@ -4,8 +4,12 @@
   "id": 3853,
   "slug": "merge-close-characters",
   "title": "Merge Close Characters",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

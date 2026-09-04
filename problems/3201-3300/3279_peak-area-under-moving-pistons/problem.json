@@ -4,11 +4,19 @@
   "id": 3279,
   "slug": "peak-area-under-moving-pistons",
   "title": "Peak Area Under Moving Pistons",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Simulation",
     "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Simulation",
+    "Counting",
     "Prefix Sum"
   ],
   "invocation": {

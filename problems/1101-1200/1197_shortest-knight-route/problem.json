@@ -4,9 +4,15 @@
   "id": 1197,
   "slug": "shortest-knight-route",
   "title": "Shortest Knight Route",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Breadth-First Search",
+    "Heuristic Search",
+    "Bidirectional Search",
+    "A* Search"
   ],
   "invocation": {
     "type": "function",

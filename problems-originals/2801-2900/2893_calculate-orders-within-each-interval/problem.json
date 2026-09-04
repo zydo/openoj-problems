@@ -4,8 +4,11 @@
   "id": 2893,
   "slug": "calculate-orders-within-each-interval",
   "title": "Calculate Orders Within Each Interval",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

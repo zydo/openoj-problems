@@ -4,8 +4,12 @@
   "id": 1883,
   "slug": "minimum-skips-to-arrive-at-meeting-on-time",
   "title": "Minimum Skips to Arrive at Meeting On Time",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

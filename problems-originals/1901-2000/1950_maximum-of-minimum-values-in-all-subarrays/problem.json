@@ -3,11 +3,17 @@
   "id": 1950,
   "slug": "maximum-of-minimum-values-in-all-subarrays",
   "title": "Maximum of Minimum Values in All Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Stack",
     "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Monotonic Stack",
+    "Cartesian Tree"
   ],
   "invocation": {
     "type": "function",

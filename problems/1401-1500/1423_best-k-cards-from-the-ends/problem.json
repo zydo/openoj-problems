@@ -4,8 +4,13 @@
   "id": 1423,
   "slug": "best-k-cards-from-the-ends",
   "title": "Best K Cards From The Ends",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Sliding Window",
     "Prefix Sum"

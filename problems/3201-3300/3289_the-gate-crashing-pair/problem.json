@@ -4,8 +4,13 @@
   "id": 3289,
   "slug": "the-gate-crashing-pair",
   "title": "The Gate-Crashing Pair",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math"

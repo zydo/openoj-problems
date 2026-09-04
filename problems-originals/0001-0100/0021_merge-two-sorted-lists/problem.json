@@ -3,8 +3,12 @@
   "id": 21,
   "slug": "merge-two-sorted-lists",
   "title": "Merge Two Sorted Lists",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List",
+    "Recursion"
+  ],
+  "topics": [
     "Linked List",
     "Recursion"
   ],

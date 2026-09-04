@@ -4,11 +4,16 @@
   "id": 249,
   "slug": "alphabet-shift-clusters",
   "title": "Alphabet Shift Clusters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,13 @@
   "id": 2072,
   "slug": "the-interuniversity-exam-duel",
   "title": "The Interuniversity Exam Duel",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

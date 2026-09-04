@@ -4,8 +4,11 @@
   "id": 1890,
   "slug": "the-latest-login-in-2020",
   "title": "The Latest Login in 2020",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

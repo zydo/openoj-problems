@@ -4,8 +4,13 @@
   "id": 1340,
   "slug": "jump-game-v",
   "title": "Jump Game V",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sorting"

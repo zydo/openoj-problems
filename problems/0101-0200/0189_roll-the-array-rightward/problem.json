@@ -4,8 +4,13 @@
   "id": 189,
   "slug": "roll-the-array-rightward",
   "title": "Roll The Array Rightward",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers"

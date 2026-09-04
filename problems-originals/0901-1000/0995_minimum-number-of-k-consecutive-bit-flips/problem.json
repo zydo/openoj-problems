@@ -3,12 +3,20 @@
   "id": 995,
   "slug": "minimum-number-of-k-consecutive-bit-flips",
   "title": "Minimum Number of K Consecutive Bit Flips",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Difference Array",
     "Queue",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Brute-Force Search"
   ],
   "invocation": {
     "type": "function",

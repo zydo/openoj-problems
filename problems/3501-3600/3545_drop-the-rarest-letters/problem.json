@@ -4,11 +4,18 @@
   "id": 3545,
   "slug": "drop-the-rarest-letters",
   "title": "Drop the Rarest Letters",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Hash Table",
     "String",
     "Greedy",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
     "Counting"
   ],
   "invocation": {

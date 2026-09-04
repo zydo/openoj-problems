@@ -4,8 +4,14 @@
   "id": 1227,
   "slug": "last-boarders-own-seat",
   "title": "Last Boarder's Own Seat",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Brainteaser",
+    "Probability and Statistics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Brainteaser",

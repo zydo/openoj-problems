@@ -4,8 +4,15 @@
   "id": 2013,
   "slug": "detect-squares",
   "title": "Detect Squares",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Counting",
+    "Data Stream"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

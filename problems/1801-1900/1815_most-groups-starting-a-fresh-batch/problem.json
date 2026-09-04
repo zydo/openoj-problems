@@ -4,11 +4,18 @@
   "id": 1815,
   "slug": "most-groups-starting-a-fresh-batch",
   "title": "Most Groups Starting a Fresh Batch",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Memoization"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

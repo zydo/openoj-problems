@@ -4,8 +4,14 @@
   "id": 990,
   "slug": "satisfiability-of-equality-equations",
   "title": "Satisfiability of Equality Equations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "String",
     "Union-Find",

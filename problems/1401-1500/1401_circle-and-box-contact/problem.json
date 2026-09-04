@@ -4,8 +4,12 @@
   "id": 1401,
   "slug": "circle-and-box-contact",
   "title": "Circle and Box Contact",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

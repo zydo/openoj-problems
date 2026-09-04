@@ -3,11 +3,20 @@
   "id": 1923,
   "slug": "longest-common-subpath",
   "title": "Longest Common Subpath",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Rolling Hash"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function",
+    "Suffix Automaton",
+    "Suffix Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 1327,
   "slug": "list-the-products-ordered-in-a-period",
   "title": "List the Products Ordered in a Period",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

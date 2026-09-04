@@ -3,10 +3,17 @@
   "id": 646,
   "slug": "maximum-length-of-pair-chain",
   "title": "Maximum Length of Pair Chain",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

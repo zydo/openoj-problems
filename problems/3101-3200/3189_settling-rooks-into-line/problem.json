@@ -4,11 +4,17 @@
   "id": 3189,
   "slug": "settling-rooks-into-line",
   "title": "Settling Rooks Into Line",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
   ],
   "invocation": {
     "type": "function",

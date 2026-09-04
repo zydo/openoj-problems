@@ -4,8 +4,12 @@
   "id": 1328,
   "slug": "unmake-the-palindrome",
   "title": "Unmake the Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

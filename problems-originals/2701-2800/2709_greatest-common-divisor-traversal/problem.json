@@ -3,11 +3,20 @@
   "id": 2709,
   "slug": "greatest-common-divisor-traversal",
   "title": "Greatest Common Divisor Traversal",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Graph",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Union-Find",
+    "Number Theory",
+    "Prime Factorization",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

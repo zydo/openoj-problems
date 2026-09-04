@@ -4,11 +4,16 @@
   "id": 4016,
   "slug": "largest-pair-of-disjoint-square-blocks",
   "title": "Largest Pair of Disjoint Square Blocks",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Matrix",
     "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Matrix",
     "Prefix Sum"
   ],
   "invocation": {

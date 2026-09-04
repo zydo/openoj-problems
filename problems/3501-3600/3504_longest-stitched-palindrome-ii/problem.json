@@ -4,8 +4,13 @@
   "id": 3504,
   "slug": "longest-stitched-palindrome-ii",
   "title": "Longest Stitched Palindrome II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Two Pointers",
     "String",
     "Dynamic Programming"
   ],

@@ -4,8 +4,11 @@
   "id": 3060,
   "slug": "user-activities-within-time-bounds",
   "title": "User Activities within Time Bounds",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

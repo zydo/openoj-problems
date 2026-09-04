@@ -4,11 +4,19 @@
   "id": 2514,
   "slug": "sentence-shuffle-count",
   "title": "Sentence Shuffle Count",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "String",
     "Combinatorics"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

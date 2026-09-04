@@ -4,8 +4,13 @@
   "id": 1325,
   "slug": "prune-target-leaves",
   "title": "Prune Target Leaves",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

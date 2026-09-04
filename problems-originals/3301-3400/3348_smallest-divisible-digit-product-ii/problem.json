@@ -4,8 +4,15 @@
   "id": 3348,
   "slug": "smallest-divisible-digit-product-ii",
   "title": "Smallest Divisible Digit Product II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Backtracking",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "String",
     "Backtracking",

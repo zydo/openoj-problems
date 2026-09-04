@@ -4,8 +4,12 @@
   "id": 3687,
   "slug": "tiered-overdue-charges",
   "title": "Tiered Overdue Charges",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

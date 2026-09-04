@@ -4,8 +4,18 @@
   "id": 865,
   "slug": "smallest-subtree-with-all-the-deepest-nodes",
   "title": "Smallest Subtree with all the Deepest Nodes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor",
+    "DP on Trees"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

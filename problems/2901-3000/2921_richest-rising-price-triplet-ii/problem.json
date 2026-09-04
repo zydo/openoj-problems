@@ -4,8 +4,13 @@
   "id": 2921,
   "slug": "richest-rising-price-triplet-ii",
   "title": "Richest Rising-Price Triplet II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Binary Indexed Tree",
     "Segment Tree"

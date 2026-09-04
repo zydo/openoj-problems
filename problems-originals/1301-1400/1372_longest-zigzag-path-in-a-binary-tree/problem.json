@@ -4,12 +4,19 @@
   "id": 1372,
   "slug": "longest-zigzag-path-in-a-binary-tree",
   "title": "Longest ZigZag Path in a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Tree",
     "Depth-First Search",
     "Binary Tree"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

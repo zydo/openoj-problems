@@ -4,8 +4,14 @@
   "id": 3443,
   "slug": "maximum-manhattan-distance-after-k-changes",
   "title": "Maximum Manhattan Distance After K Changes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

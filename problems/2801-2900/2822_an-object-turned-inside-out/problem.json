@@ -4,9 +4,13 @@
   "id": 2822,
   "slug": "an-object-turned-inside-out",
   "title": "An Object Turned Inside Out",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
+    "Hash Table"
+  ],
+  "topics": [
+    "Array",
     "Hash Table"
   ],
   "invocation": {

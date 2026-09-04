@@ -4,8 +4,15 @@
   "id": 2513,
   "slug": "minimize-the-maximum-of-two-arrays",
   "title": "Minimize the Maximum of Two Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search",
+    "Number Theory",
+    "Least Common Multiple",
+    "Inclusion-Exclusion Principle"
+  ],
+  "topics": [
     "Math",
     "Binary Search",
     "Number Theory",

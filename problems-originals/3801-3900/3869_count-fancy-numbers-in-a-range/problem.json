@@ -4,8 +4,12 @@
   "id": 3869,
   "slug": "count-fancy-numbers-in-a-range",
   "title": "Count Fancy Numbers in a Range",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

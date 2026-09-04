@@ -4,8 +4,11 @@
   "id": 3270,
   "slug": "the-smallest-digit-key",
   "title": "The Smallest-Digit Key",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

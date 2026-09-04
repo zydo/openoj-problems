@@ -4,8 +4,13 @@
   "id": 3176,
   "slug": "longest-k-switch-subsequence-i",
   "title": "Longest K-Switch Subsequence I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

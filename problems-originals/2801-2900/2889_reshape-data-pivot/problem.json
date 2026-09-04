@@ -4,8 +4,11 @@
   "id": 2889,
   "slug": "reshape-data-pivot",
   "title": "Reshape Data: Pivot",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

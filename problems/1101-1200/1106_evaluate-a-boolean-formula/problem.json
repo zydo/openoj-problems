@@ -4,8 +4,13 @@
   "id": 1106,
   "slug": "evaluate-a-boolean-formula",
   "title": "Evaluate a Boolean Formula",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Recursion"

@@ -4,8 +4,11 @@
   "id": 2821,
   "slug": "delay-the-resolution-of-each-promise",
   "title": "Delay the Resolution of Each Promise",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

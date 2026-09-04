@@ -4,11 +4,15 @@
   "id": 1171,
   "slug": "dropping-zero-sum-stretches-in-a-linked-list",
   "title": "Dropping Zero-Sum Stretches in a Linked List",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Hash Table",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
+    "Linked List"
   ],
   "invocation": {
     "type": "function",

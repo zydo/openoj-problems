@@ -4,8 +4,13 @@
   "id": 2895,
   "slug": "the-quad-core-finish-line",
   "title": "The Quad-Core Finish Line",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

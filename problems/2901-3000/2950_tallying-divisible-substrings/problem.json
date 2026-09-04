@@ -4,8 +4,14 @@
   "id": 2950,
   "slug": "tallying-divisible-substrings",
   "title": "Tallying Divisible Substrings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Counting",
     "Prefix Sum"

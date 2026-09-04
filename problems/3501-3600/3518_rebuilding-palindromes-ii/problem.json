@@ -4,11 +4,18 @@
   "id": 3518,
   "slug": "rebuilding-palindromes-ii",
   "title": "Rebuilding Palindromes II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Math",
     "Combinatorics"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

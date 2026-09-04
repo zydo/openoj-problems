@@ -4,8 +4,13 @@
   "id": 3954,
   "slug": "sum-of-compatible-numbers-in-range-i",
   "title": "Sum of Compatible Numbers in Range I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Bit Manipulation",
     "Enumeration"

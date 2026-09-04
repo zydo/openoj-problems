@@ -4,8 +4,13 @@
   "id": 734,
   "slug": "sentence-similarity",
   "title": "Sentence Similarity",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

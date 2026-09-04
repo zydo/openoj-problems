@@ -4,11 +4,18 @@
   "id": 3831,
   "slug": "the-median-value-on-one-tree-level",
   "title": "The Median Value On One Tree Level",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Binary Search Tree",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

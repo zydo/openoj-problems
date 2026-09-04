@@ -4,8 +4,15 @@
   "id": 1763,
   "slug": "longest-nice-substring",
   "title": "Longest Nice Substring",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Divide and Conquer",
+    "Bit Manipulation",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Divide and Conquer",

@@ -4,12 +4,19 @@
   "id": 3757,
   "slug": "subsequences-that-weaken-the-strength",
   "title": "Subsequences That Weaken the Strength",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Bit Manipulation",
     "Combinatorics",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Combinatorics"
   ],
   "invocation": {
     "type": "function",

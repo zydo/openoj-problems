@@ -4,8 +4,12 @@
   "id": 3168,
   "slug": "minimum-number-of-chairs-in-a-waiting-room",
   "title": "Minimum Number of Chairs in a Waiting Room",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

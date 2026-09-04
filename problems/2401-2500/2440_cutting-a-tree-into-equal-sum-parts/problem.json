@@ -4,10 +4,17 @@
   "id": 2440,
   "slug": "cutting-a-tree-into-equal-sum-parts",
   "title": "Cutting a Tree Into Equal-Sum Parts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Tree",
+    "Depth-First Search",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

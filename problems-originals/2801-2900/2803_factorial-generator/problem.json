@@ -4,8 +4,12 @@
   "id": 2803,
   "slug": "factorial-generator",
   "title": "Factorial Generator",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design",
+    "Math"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

@@ -4,8 +4,13 @@
   "id": 3442,
   "slug": "widest-gap-between-odd-and-even-counts",
   "title": "Widest Gap Between Odd And Even Counts",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

@@ -4,8 +4,12 @@
   "id": 1997,
   "slug": "first-day-in-every-cell",
   "title": "First Day in Every Cell",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

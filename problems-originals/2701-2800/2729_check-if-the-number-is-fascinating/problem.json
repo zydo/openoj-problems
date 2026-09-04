@@ -4,8 +4,12 @@
   "id": 2729,
   "slug": "check-if-the-number-is-fascinating",
   "title": "Check if The Number is Fascinating",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Hash Table",
     "Math"
   ],

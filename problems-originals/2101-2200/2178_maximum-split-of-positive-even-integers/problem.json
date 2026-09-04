@@ -4,8 +4,13 @@
   "id": 2178,
   "slug": "maximum-split-of-positive-even-integers",
   "title": "Maximum Split of Positive Even Integers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Backtracking",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Backtracking",
     "Greedy"

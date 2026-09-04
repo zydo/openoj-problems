@@ -4,8 +4,17 @@
   "id": 2368,
   "slug": "reachable-nodes-with-restrictions",
   "title": "Reachable Nodes With Restrictions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

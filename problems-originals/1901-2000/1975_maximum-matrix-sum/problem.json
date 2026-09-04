@@ -4,8 +4,13 @@
   "id": 1975,
   "slug": "maximum-matrix-sum",
   "title": "Maximum Matrix Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix"

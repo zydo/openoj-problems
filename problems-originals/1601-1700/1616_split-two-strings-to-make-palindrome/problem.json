@@ -4,8 +4,12 @@
   "id": 1616,
   "slug": "split-two-strings-to-make-palindrome",
   "title": "Split Two Strings to Make Palindrome",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

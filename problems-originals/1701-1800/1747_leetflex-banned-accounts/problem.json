@@ -4,8 +4,11 @@
   "id": 1747,
   "slug": "leetflex-banned-accounts",
   "title": "Leetflex Banned Accounts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 888,
   "slug": "fair-candy-swap",
   "title": "Fair Candy Swap",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

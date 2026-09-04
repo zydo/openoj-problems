@@ -4,11 +4,16 @@
   "id": 53,
   "slug": "largest-subarray-sum",
   "title": "Largest Subarray Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

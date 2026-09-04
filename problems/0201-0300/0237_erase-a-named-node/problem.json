@@ -4,8 +4,11 @@
   "id": 237,
   "slug": "erase-a-named-node",
   "title": "Erase a Named Node",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

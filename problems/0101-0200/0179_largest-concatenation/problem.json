@@ -4,10 +4,16 @@
   "id": 179,
   "slug": "largest-concatenation",
   "title": "Largest Concatenation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

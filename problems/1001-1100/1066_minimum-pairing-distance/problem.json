@@ -4,12 +4,25 @@
   "id": 1066,
   "slug": "minimum-pairing-distance",
   "title": "Minimum Pairing Distance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Backtracking",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask",
+    "Hungarian Algorithm",
+    "Bipartite Graph",
+    "Successive Shortest Path Algorithm",
+    "Matching (Graph)",
+    "Minimum-Cost Flow",
+    "Flow Network"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 2983,
   "slug": "palindrome-rearrangement-queries",
   "title": "Palindrome Rearrangement Queries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

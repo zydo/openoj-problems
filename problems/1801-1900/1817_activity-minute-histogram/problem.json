@@ -4,8 +4,12 @@
   "id": 1817,
   "slug": "activity-minute-histogram",
   "title": "Activity Minute Histogram",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

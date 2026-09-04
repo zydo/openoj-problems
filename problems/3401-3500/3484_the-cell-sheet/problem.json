@@ -4,11 +4,18 @@
   "id": 3484,
   "slug": "the-cell-sheet",
   "title": "The Cell Sheet",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
     "Design"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Matrix"
   ],
   "invocation": {
     "type": "design",

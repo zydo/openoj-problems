@@ -4,8 +4,13 @@
   "id": 2295,
   "slug": "replace-elements-in-an-array",
   "title": "Replace Elements in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

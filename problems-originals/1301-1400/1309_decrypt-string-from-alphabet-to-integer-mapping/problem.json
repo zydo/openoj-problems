@@ -4,8 +4,11 @@
   "id": 1309,
   "slug": "decrypt-string-from-alphabet-to-integer-mapping",
   "title": "Decrypt String from Alphabet to Integer Mapping",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

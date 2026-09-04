@@ -4,8 +4,18 @@
   "id": 913,
   "slug": "cat-and-mouse",
   "title": "Cat and Mouse",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
+    "Minimax",
+    "Game Theory",
+    "Zero-Sum Game"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Graph Theory",

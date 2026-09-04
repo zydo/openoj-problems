@@ -4,8 +4,14 @@
   "id": 100,
   "slug": "do-the-two-trees-match",
   "title": "Do The Two Trees Match?",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

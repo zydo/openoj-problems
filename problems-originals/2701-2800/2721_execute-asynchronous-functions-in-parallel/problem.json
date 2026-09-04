@@ -4,8 +4,11 @@
   "id": 2721,
   "slug": "execute-asynchronous-functions-in-parallel",
   "title": "Execute Asynchronous Functions in Parallel",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

@@ -4,8 +4,12 @@
   "id": 2951,
   "slug": "scanning-for-summits",
   "title": "Scanning for Summits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

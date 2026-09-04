@@ -4,9 +4,16 @@
   "id": 362,
   "slug": "recent-event-counter",
   "title": "Recent Event Counter",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
     "Design",
     "Queue",
     "Data Stream"

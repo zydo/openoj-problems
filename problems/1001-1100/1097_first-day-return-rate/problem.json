@@ -4,10 +4,13 @@
   "id": 1097,
   "slug": "first-day-return-rate",
   "title": "First-Day Return Rate",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

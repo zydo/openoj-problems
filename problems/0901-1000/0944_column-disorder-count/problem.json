@@ -4,8 +4,13 @@
   "id": 944,
   "slug": "column-disorder-count",
   "title": "Column Disorder Count",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Longest Increasing Subsequence"
+  ],
+  "topics": [
     "Array",
     "String",
     "Longest Increasing Subsequence"

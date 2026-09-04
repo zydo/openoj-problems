@@ -3,11 +3,18 @@
   "id": 148,
   "slug": "sort-list",
   "title": "Sort List",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Divide and Conquer",
     "Sorting"
+  ],
+  "topics": [
+    "Linked List",
+    "Two Pointers",
+    "Divide and Conquer",
+    "Sorting",
+    "Merge Sort"
   ],
   "invocation": {
     "type": "function",

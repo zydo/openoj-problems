@@ -4,8 +4,13 @@
   "id": 3010,
   "slug": "divide-an-array-into-subarrays-with-minimum-cost-i",
   "title": "Divide an Array Into Subarrays With Minimum Cost I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Enumeration"

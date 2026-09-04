@@ -4,8 +4,12 @@
   "id": 2702,
   "slug": "fewest-rounds-to-zero-out",
   "title": "Fewest Rounds To Zero Out The Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

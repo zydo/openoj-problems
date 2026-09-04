@@ -4,8 +4,14 @@
   "id": 3189,
   "slug": "minimum-moves-to-get-a-peaceful-board",
   "title": "Minimum Moves to Get a Peaceful Board",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

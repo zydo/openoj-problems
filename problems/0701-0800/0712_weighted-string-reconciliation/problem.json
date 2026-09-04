@@ -4,10 +4,15 @@
   "id": 712,
   "slug": "weighted-string-reconciliation",
   "title": "Weighted String Reconciliation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
   ],
   "invocation": {
     "type": "function",

@@ -3,11 +3,18 @@
   "id": 588,
   "slug": "design-in-memory-file-system",
   "title": "Design In-Memory File System",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Tree",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie",
+    "Sorting"
   ],
   "invocation": {
     "type": "design",

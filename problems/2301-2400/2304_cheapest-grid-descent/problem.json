@@ -4,8 +4,13 @@
   "id": 2304,
   "slug": "cheapest-grid-descent",
   "title": "Cheapest Grid Descent",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

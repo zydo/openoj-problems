@@ -4,8 +4,13 @@
   "id": 158,
   "slug": "read-n-characters-given-read4-ii-call-multiple-times",
   "title": "Read N Characters Given read4 II - Call Multiple Times",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Simulation",
+    "Interactive"
+  ],
+  "topics": [
     "Array",
     "Simulation",
     "Interactive"

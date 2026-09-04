@@ -4,8 +4,11 @@
   "id": 1709,
   "slug": "biggest-window-between-visits",
   "title": "Biggest Window Between Visits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

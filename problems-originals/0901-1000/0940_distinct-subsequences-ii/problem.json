@@ -3,10 +3,14 @@
   "id": 940,
   "slug": "distinct-subsequences-ii",
   "title": "Distinct Subsequences II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 2774,
   "slug": "array-upper-bound",
   "title": "Array Upper Bound",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array",
+    "Binary Search"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

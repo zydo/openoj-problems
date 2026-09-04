@@ -4,8 +4,12 @@
   "id": 1817,
   "slug": "finding-the-users-active-minutes",
   "title": "Finding the Users Active Minutes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

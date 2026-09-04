@@ -4,10 +4,13 @@
   "id": 1193,
   "slug": "monthly-payments-i",
   "title": "Monthly Payments I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

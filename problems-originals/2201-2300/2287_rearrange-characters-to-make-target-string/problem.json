@@ -4,8 +4,13 @@
   "id": 2287,
   "slug": "rearrange-characters-to-make-target-string",
   "title": "Rearrange Characters to Make Target String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

@@ -4,8 +4,14 @@
   "id": 2281,
   "slug": "sum-of-min-times-sum-over-all-subarrays",
   "title": "Sum of Min Times Sum Over All Subarrays",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Monotonic Stack",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
     "Monotonic Stack",
     "Prefix Sum"
   ],

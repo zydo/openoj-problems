@@ -4,8 +4,15 @@
   "id": 2589,
   "slug": "minimum-time-to-complete-all-tasks",
   "title": "Minimum Time to Complete All Tasks",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Stack",

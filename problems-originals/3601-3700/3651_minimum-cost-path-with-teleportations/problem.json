@@ -4,8 +4,13 @@
   "id": 3651,
   "slug": "minimum-cost-path-with-teleportations",
   "title": "Minimum Cost Path with Teleportations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

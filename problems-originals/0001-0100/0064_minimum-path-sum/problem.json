@@ -4,8 +4,13 @@
   "id": 64,
   "slug": "minimum-path-sum",
   "title": "Minimum Path Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

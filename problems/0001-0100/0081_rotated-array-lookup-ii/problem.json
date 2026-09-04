@@ -4,8 +4,12 @@
   "id": 81,
   "slug": "rotated-array-lookup-ii",
   "title": "Rotated Array Lookup II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

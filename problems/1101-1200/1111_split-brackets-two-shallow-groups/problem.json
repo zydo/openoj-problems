@@ -4,8 +4,13 @@
   "id": 1111,
   "slug": "split-brackets-two-shallow-groups",
   "title": "Split Brackets into Two Shallow Groups",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Bracket Sequences"

@@ -4,8 +4,11 @@
   "id": 2194,
   "slug": "cells-in-a-range-on-an-excel-sheet",
   "title": "Cells in a Range on an Excel Sheet",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

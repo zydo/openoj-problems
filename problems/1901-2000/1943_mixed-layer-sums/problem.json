@@ -4,9 +4,15 @@
   "id": 1943,
   "slug": "mixed-layer-sums",
   "title": "Mixed Layer Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Sorting",
     "Prefix Sum"
   ],

@@ -4,12 +4,19 @@
   "id": 2249,
   "slug": "grid-points-the-circles-cover",
   "title": "Grid Points the Circles Cover",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Geometry",
     "Enumeration",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

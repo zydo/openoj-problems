@@ -4,8 +4,13 @@
   "id": 800,
   "slug": "closest-shorthand-hex",
   "title": "Closest Shorthand Hex",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "String",
     "Enumeration"

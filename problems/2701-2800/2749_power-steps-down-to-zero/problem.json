@@ -4,8 +4,13 @@
   "id": 2749,
   "slug": "power-steps-down-to-zero",
   "title": "Power Steps Down To Zero",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation",
+    "Brainteaser",
+    "Enumeration"
+  ],
+  "topics": [
     "Bit Manipulation",
     "Brainteaser",
     "Enumeration"

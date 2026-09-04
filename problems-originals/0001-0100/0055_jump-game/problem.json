@@ -3,9 +3,14 @@
   "id": 55,
   "slug": "jump-game",
   "title": "Jump Game",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

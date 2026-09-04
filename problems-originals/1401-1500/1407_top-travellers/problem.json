@@ -4,8 +4,11 @@
   "id": 1407,
   "slug": "top-travellers",
   "title": "Top Travellers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

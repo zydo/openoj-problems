@@ -4,11 +4,18 @@
   "id": 212,
   "slug": "find-grid-words",
   "title": "Find Grid Words",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Backtracking",
     "DFS",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Trie",
     "Matrix"
   ],
   "invocation": {

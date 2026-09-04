@@ -4,9 +4,14 @@
   "id": 423,
   "slug": "digit-words-recovery",
   "title": "Digit Words Recovery",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
+    "String"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
     "String"
   ],
   "invocation": {

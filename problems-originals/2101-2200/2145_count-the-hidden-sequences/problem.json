@@ -4,8 +4,12 @@
   "id": 2145,
   "slug": "count-the-hidden-sequences",
   "title": "Count the Hidden Sequences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

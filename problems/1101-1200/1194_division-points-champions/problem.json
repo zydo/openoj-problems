@@ -4,10 +4,13 @@
   "id": 1194,
   "slug": "division-points-champions",
   "title": "Division Points Champions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

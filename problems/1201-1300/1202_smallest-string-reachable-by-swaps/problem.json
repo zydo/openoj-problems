@@ -4,10 +4,19 @@
   "id": 1202,
   "slug": "smallest-string-reachable-by-swaps",
   "title": "Smallest String Reachable by Swaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "String",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Sorting"
   ],
   "invocation": {

@@ -4,9 +4,14 @@
   "id": 2396,
   "slug": "palindromic-in-every-base",
   "title": "Palindromic In Every Base",
-  "difficulty": "H1",
+  "difficulty": "Medium",
   "tags": [
     "Math",
+    "Brainteaser"
+  ],
+  "topics": [
+    "Math",
+    "Two Pointers",
     "Brainteaser"
   ],
   "invocation": {

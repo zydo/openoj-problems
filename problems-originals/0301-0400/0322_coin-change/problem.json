@@ -3,10 +3,17 @@
   "id": 322,
   "slug": "coin-change",
   "title": "Coin Change",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Breadth-First Search",
+    "Knapsack Problem",
+    "Complete Knapsack"
   ],
   "invocation": {
     "type": "function",

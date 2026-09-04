@@ -4,12 +4,22 @@
   "id": 327,
   "slug": "subarray-sums-within-bounds",
   "title": "Subarray Sums Within Bounds",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Divide and Conquer",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set",
+    "Treap"
   ],
   "invocation": {
     "type": "function",

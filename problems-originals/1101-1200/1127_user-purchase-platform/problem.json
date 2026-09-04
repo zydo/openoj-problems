@@ -4,8 +4,11 @@
   "id": 1127,
   "slug": "user-purchase-platform",
   "title": "User Purchase Platform",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

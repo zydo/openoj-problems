@@ -4,8 +4,13 @@
   "id": 2100,
   "slug": "find-good-days-to-rob-the-bank",
   "title": "Find Good Days to Rob the Bank",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

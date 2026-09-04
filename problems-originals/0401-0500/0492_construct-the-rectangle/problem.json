@@ -4,8 +4,11 @@
   "id": 492,
   "slug": "construct-the-rectangle",
   "title": "Construct the Rectangle",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

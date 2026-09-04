@@ -4,8 +4,13 @@
   "id": 1347,
   "slug": "anagram-repair-steps",
   "title": "Anagram Repair Steps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

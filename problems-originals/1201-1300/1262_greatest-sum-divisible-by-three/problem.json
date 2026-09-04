@@ -4,8 +4,14 @@
   "id": 1262,
   "slug": "greatest-sum-divisible-by-three",
   "title": "Greatest Sum Divisible by Three",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy",

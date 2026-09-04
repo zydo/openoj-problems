@@ -4,8 +4,13 @@
   "id": 1995,
   "slug": "triple-sums-landing-on-a-later-term",
   "title": "Triple Sums Landing on a Later Term",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

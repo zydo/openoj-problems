@@ -4,8 +4,14 @@
   "id": 2116,
   "slug": "can-the-bracket-string-be-balanced",
   "title": "Can the Bracket String Be Balanced",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Greedy",

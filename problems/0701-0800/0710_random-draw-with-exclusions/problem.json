@@ -4,9 +4,17 @@
   "id": 710,
   "slug": "random-draw-with-exclusions",
   "title": "Random Draw With Exclusions",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
+    "Randomized"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Binary Search",
+    "Sorting",
     "Randomized"
   ],
   "invocation": {

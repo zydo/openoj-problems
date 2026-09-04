@@ -4,8 +4,12 @@
   "id": 3269,
   "slug": "constructing-two-increasing-arrays",
   "title": "Constructing Two Increasing Arrays",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

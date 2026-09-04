@@ -3,10 +3,15 @@
   "id": 3405,
   "slug": "count-the-number-of-arrays-with-k-matching-adjacent-elements",
   "title": "Count the Number of Arrays with K Matching Adjacent Elements",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Combinatorics",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

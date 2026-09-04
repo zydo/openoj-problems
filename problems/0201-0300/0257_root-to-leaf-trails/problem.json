@@ -4,12 +4,19 @@
   "id": 257,
   "slug": "root-to-leaf-trails",
   "title": "Root-to-Leaf Trails",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Backtracking",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Backtracking",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

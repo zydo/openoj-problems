@@ -3,8 +3,14 @@
   "id": 496,
   "slug": "next-greater-element-i",
   "title": "Next Greater Element I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Stack",

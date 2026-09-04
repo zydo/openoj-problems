@@ -4,11 +4,19 @@
   "id": 1054,
   "slug": "keep-identical-barcodes-apart",
   "title": "Keep Identical Barcodes Apart",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Counting"
   ],
   "invocation": {

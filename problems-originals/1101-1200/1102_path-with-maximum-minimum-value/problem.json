@@ -3,13 +3,23 @@
   "id": 1102,
   "slug": "path-with-maximum-minimum-value",
   "title": "Path With Maximum Minimum Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Breadth-First Search",
     "Union-Find",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 3716,
   "slug": "find-churn-risk-customers",
   "title": "Find Churn Risk Customers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

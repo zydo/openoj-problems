@@ -4,10 +4,16 @@
   "id": 1885,
   "slug": "pairs-with-a-positive-lead",
   "title": "Pairs with a Positive Lead",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
     "Sorting"
   ],
   "invocation": {

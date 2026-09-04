@@ -4,8 +4,14 @@
   "id": 936,
   "slug": "stamping-the-sequence",
   "title": "Stamping The Sequence",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Queue"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Greedy",

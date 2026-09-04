@@ -4,8 +4,11 @@
   "id": 1195,
   "slug": "fizz-buzz-across-threads",
   "title": "Fizz Buzz Across Threads",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

@@ -3,11 +3,19 @@
   "id": 1438,
   "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
   "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Monotonic Queue",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Ordered Set",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

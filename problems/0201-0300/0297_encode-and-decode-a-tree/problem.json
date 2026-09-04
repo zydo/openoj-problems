@@ -4,11 +4,19 @@
   "id": 297,
   "slug": "encode-and-decode-a-tree",
   "title": "Encode and Decode a Tree",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Breadth-First Search",
     "Depth-First Search"
+  ],
+  "topics": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "design",

@@ -4,8 +4,11 @@
   "id": 1523,
   "slug": "odds-in-closed-range",
   "title": "Odds in a Closed Range",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

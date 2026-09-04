@@ -4,8 +4,14 @@
   "id": 1367,
   "slug": "linked-list-in-binary-tree",
   "title": "Linked List in Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Linked List",
     "Tree",
     "Depth-First Search",

@@ -4,8 +4,12 @@
   "id": 2808,
   "slug": "ticks-to-make-the-ring-uniform",
   "title": "Ticks To Make The Ring Uniform",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

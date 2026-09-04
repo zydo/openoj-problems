@@ -4,8 +4,13 @@
   "id": 3511,
   "slug": "make-a-positive-array",
   "title": "Make a Positive Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Prefix Sum"

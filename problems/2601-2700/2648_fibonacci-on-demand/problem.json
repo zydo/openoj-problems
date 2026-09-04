@@ -4,10 +4,14 @@
   "id": 2648,
   "slug": "fibonacci-on-demand",
   "title": "Fibonacci On Demand",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "JavaScript"
+  ],
+  "topics": [
+    "Design",
+    "Math"
   ],
   "invocation": {
     "type": "interactive",

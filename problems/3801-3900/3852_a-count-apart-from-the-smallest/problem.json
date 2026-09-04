@@ -4,8 +4,13 @@
   "id": 3852,
   "slug": "a-count-apart-from-the-smallest",
   "title": "A Count Apart From The Smallest",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

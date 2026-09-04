@@ -4,10 +4,16 @@
   "id": 1751,
   "slug": "best-value-from-at-most-k-events",
   "title": "Best Value From at Most k Events",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Sorting"
   ],
   "invocation": {

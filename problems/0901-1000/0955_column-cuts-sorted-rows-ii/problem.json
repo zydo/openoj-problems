@@ -4,8 +4,13 @@
   "id": 955,
   "slug": "column-cuts-sorted-rows-ii",
   "title": "Column Cuts for Sorted Rows II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "String",
     "Greedy"

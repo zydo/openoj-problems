@@ -4,8 +4,12 @@
   "id": 1573,
   "slug": "number-of-ways-to-split-a-string",
   "title": "Number of Ways to Split a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

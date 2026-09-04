@@ -4,8 +4,12 @@
   "id": 3142,
   "slug": "the-steady-column-grid",
   "title": "The Steady-Column Grid",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

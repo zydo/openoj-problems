@@ -4,8 +4,12 @@
   "id": 2457,
   "slug": "tidy-the-digit-sum",
   "title": "Tidy the Digit Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

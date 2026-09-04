@@ -4,8 +4,14 @@
   "id": 685,
   "slug": "redundant-connection-ii",
   "title": "Redundant Connection II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

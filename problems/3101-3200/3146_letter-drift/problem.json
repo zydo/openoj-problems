@@ -4,8 +4,12 @@
   "id": 3146,
   "slug": "letter-drift",
   "title": "Letter Drift",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

@@ -4,8 +4,14 @@
   "id": 1034,
   "slug": "coloring-a-border",
   "title": "Coloring A Border",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

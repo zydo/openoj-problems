@@ -4,8 +4,13 @@
   "id": 2422,
   "slug": "merge-operations-to-turn-array-into-a-palindrome",
   "title": "Merge Operations to Turn Array Into a Palindrome",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy"

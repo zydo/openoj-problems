@@ -4,8 +4,11 @@
   "id": 3339,
   "slug": "even-pair-array-counts",
   "title": "Even-Pair Array Counts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

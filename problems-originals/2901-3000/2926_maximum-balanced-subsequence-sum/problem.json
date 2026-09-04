@@ -3,10 +3,17 @@
   "id": 2926,
   "slug": "maximum-balanced-subsequence-sum",
   "title": "Maximum Balanced Subsequence Sum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

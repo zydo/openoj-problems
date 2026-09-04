@@ -4,8 +4,12 @@
   "id": 2114,
   "slug": "maximum-number-of-words-found-in-sentences",
   "title": "Maximum Number of Words Found in Sentences",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

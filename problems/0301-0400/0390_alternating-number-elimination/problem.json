@@ -4,8 +4,12 @@
   "id": 390,
   "slug": "alternating-number-elimination",
   "title": "Alternating Number Elimination",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Recursion"
   ],

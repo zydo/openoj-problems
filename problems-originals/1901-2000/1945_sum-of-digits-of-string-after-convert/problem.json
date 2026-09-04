@@ -4,8 +4,12 @@
   "id": 1945,
   "slug": "sum-of-digits-of-string-after-convert",
   "title": "Sum of Digits of String After Convert",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

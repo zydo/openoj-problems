@@ -4,8 +4,12 @@
   "id": 650,
   "slug": "2-keys-keyboard",
   "title": "2 Keys Keyboard",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

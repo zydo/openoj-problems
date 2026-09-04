@@ -4,11 +4,15 @@
   "id": 3987,
   "slug": "the-rising-price-of-refills",
   "title": "The Rising Price Of Refills",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Greedy"
+  ],
+  "topics": [
+    "Greedy",
+    "Math"
   ],
   "invocation": {
     "type": "function",

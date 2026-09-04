@@ -4,8 +4,14 @@
   "id": 2611,
   "slug": "mice-and-cheese",
   "title": "Mice and Cheese",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

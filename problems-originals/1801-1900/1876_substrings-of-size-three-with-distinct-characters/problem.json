@@ -4,8 +4,14 @@
   "id": 1876,
   "slug": "substrings-of-size-three-with-distinct-characters",
   "title": "Substrings of Size Three with Distinct Characters",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window",

@@ -4,8 +4,13 @@
   "id": 2545,
   "slug": "sort-the-students-by-their-kth-score",
   "title": "Sort the Students by Their Kth Score",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Matrix"

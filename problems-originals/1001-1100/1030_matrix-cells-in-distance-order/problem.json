@@ -4,8 +4,15 @@
   "id": 1030,
   "slug": "matrix-cells-in-distance-order",
   "title": "Matrix Cells in Distance Order",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

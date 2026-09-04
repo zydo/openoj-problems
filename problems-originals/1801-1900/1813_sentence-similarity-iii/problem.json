@@ -4,8 +4,13 @@
   "id": 1813,
   "slug": "sentence-similarity-iii",
   "title": "Sentence Similarity III",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "String"

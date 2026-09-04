@@ -4,8 +4,14 @@
   "id": 3785,
   "slug": "swapping-past-the-banned-values",
   "title": "Swapping Past The Banned Values",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

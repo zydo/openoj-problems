@@ -4,11 +4,16 @@
   "id": 1300,
   "slug": "best-clip-level-for-a-target-sum",
   "title": "Best Clip Level for a Target Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Sorting",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -3,8 +3,13 @@
   "id": 2,
   "slug": "add-two-numbers",
   "title": "Add Two Numbers",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Linked List",
     "Math",
     "Recursion"

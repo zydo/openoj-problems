@@ -4,8 +4,11 @@
   "id": 172,
   "slug": "factorial-trailing-zeroes",
   "title": "Factorial Trailing Zeroes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

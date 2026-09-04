@@ -4,8 +4,14 @@
   "id": 2056,
   "slug": "number-of-valid-move-combinations-on-chessboard",
   "title": "Number of Valid Move Combinations On Chessboard",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

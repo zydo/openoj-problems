@@ -4,8 +4,13 @@
   "id": 1221,
   "slug": "split-a-string-in-balanced-strings",
   "title": "Split a String in Balanced Strings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Counting"

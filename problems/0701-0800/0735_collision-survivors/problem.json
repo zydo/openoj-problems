@@ -4,9 +4,14 @@
   "id": 735,
   "slug": "collision-survivors",
   "title": "Collision Survivors",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

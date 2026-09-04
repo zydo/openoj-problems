@@ -4,11 +4,18 @@
   "id": 3851,
   "slug": "keeping-requests-under-the-rate-cap",
   "title": "Keeping Requests Under The Rate Cap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sliding Window",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

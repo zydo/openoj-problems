@@ -3,10 +3,17 @@
   "id": 3615,
   "slug": "longest-palindromic-path-in-graph",
   "title": "Longest Palindromic Path in Graph",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Dynamic Programming",
+    "Bitmask"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Graph Theory",
     "Bitmask"
   ],
   "invocation": {

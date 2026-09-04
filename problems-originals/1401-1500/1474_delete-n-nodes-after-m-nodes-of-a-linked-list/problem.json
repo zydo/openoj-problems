@@ -4,8 +4,11 @@
   "id": 1474,
   "slug": "delete-n-nodes-after-m-nodes-of-a-linked-list",
   "title": "Delete N Nodes After M Nodes of a Linked List",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

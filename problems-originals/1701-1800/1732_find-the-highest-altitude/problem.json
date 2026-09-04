@@ -4,8 +4,12 @@
   "id": 1732,
   "slug": "find-the-highest-altitude",
   "title": "Find the Highest Altitude",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

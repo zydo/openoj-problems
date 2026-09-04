@@ -4,8 +4,14 @@
   "id": 1152,
   "slug": "analyze-user-website-visit-pattern",
   "title": "Analyze User Website Visit Pattern",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

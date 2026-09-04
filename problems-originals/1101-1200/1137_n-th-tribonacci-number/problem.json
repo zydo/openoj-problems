@@ -4,8 +4,13 @@
   "id": 1137,
   "slug": "n-th-tribonacci-number",
   "title": "N-th Tribonacci Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Memoization"

@@ -4,8 +4,11 @@
   "id": 1272,
   "slug": "remove-interval",
   "title": "Remove Interval",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

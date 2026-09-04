@@ -4,10 +4,17 @@
   "id": 75,
   "slug": "sort-three-values",
   "title": "Sort Three Values",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Sorting",
+    "Quicksort",
+    "Bubble Sort"
   ],
   "invocation": {
     "type": "function",

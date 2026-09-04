@@ -4,8 +4,12 @@
   "id": 1785,
   "slug": "minimum-elements-to-add-to-form-a-given-sum",
   "title": "Minimum Elements to Add to Form a Given Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

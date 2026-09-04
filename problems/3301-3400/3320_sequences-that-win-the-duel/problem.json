@@ -4,8 +4,12 @@
   "id": 3320,
   "slug": "sequences-that-win-the-duel",
   "title": "Sequences That Win The Duel",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

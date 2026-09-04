@@ -4,8 +4,12 @@
   "id": 3914,
   "slug": "filling-the-valleys",
   "title": "Filling The Valleys",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

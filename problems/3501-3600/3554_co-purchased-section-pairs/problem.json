@@ -4,10 +4,13 @@
   "id": 3554,
   "slug": "co-purchased-section-pairs",
   "title": "Co-Purchased Section Pairs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

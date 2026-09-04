@@ -4,8 +4,12 @@
   "id": 991,
   "slug": "faulty-doubling-keypad",
   "title": "Faulty Doubling Keypad",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

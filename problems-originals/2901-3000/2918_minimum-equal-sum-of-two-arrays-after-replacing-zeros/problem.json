@@ -4,8 +4,12 @@
   "id": 2918,
   "slug": "minimum-equal-sum-of-two-arrays-after-replacing-zeros",
   "title": "Minimum Equal Sum of Two Arrays After Replacing Zeros",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

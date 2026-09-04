@@ -4,12 +4,21 @@
   "id": 3481,
   "slug": "unrolling-the-placeholder-chain",
   "title": "Unrolling The Placeholder Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
     "Graph Theory",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort"
   ],
   "invocation": {
     "type": "function",

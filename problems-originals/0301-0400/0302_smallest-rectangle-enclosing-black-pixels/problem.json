@@ -4,8 +4,15 @@
   "id": 302,
   "slug": "smallest-rectangle-enclosing-black-pixels",
   "title": "Smallest Rectangle Enclosing Black Pixels",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Depth-First Search",

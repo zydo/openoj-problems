@@ -4,8 +4,12 @@
   "id": 1954,
   "slug": "smallest-harvest-plot",
   "title": "Smallest Harvest Plot",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

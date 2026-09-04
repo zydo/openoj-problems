@@ -4,8 +4,12 @@
   "id": 3789,
   "slug": "the-cheapest-way-to-cover-two-quotas",
   "title": "The Cheapest Way To Cover Two Quotas",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

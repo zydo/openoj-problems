@@ -4,8 +4,13 @@
   "id": 122,
   "slug": "the-stock-trading-unlimited-sales-ii",
   "title": "The Stock Trading, Unlimited Sales II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

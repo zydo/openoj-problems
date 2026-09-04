@@ -4,8 +4,14 @@
   "id": 2604,
   "slug": "gathering-every-grain",
   "title": "Gathering Every Grain",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

@@ -4,10 +4,16 @@
   "id": 1597,
   "slug": "value-of-an-infix-expression",
   "title": "Value of an Infix Expression",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Stack",
+    "Binary Tree"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Tree",
     "Binary Tree"
   ],
   "invocation": {

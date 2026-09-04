@@ -4,11 +4,19 @@
   "id": 1970,
   "slug": "last-crossable-day",
   "title": "Last Crossable Day",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Breadth-First Search",
     "Union Find",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

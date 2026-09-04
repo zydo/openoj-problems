@@ -4,12 +4,20 @@
   "id": 149,
   "slug": "the-most-points-on-one-line",
   "title": "The Most Points On One Line",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

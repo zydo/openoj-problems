@@ -4,8 +4,12 @@
   "id": 87,
   "slug": "scramble-string",
   "title": "Scramble String",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

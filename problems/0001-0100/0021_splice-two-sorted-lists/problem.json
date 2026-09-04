@@ -4,8 +4,12 @@
   "id": 21,
   "slug": "splice-two-sorted-lists",
   "title": "Splice Two Sorted Lists",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List",
+    "Recursion"
+  ],
+  "topics": [
     "Linked List",
     "Recursion"
   ],

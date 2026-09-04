@@ -4,8 +4,15 @@
   "id": 666,
   "slug": "encoded-path-sum-iv",
   "title": "Encoded Path Sum IV",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

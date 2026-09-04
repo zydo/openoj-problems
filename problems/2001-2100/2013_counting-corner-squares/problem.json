@@ -4,12 +4,19 @@
   "id": 2013,
   "slug": "counting-corner-squares",
   "title": "Counting Corner Squares",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Design",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Counting",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

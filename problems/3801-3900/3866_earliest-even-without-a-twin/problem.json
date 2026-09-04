@@ -4,8 +4,13 @@
   "id": 3866,
   "slug": "earliest-even-without-a-twin",
   "title": "The Earliest Even Without A Twin",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

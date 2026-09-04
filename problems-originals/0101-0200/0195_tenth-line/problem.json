@@ -4,8 +4,11 @@
   "id": 195,
   "slug": "tenth-line",
   "title": "Tenth Line",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Shell"
+  ],
+  "topics": [
     "Shell"
   ],
   "invocation": {

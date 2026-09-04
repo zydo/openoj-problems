@@ -4,8 +4,13 @@
   "id": 3474,
   "slug": "lexicographically-smallest-generated-string",
   "title": "Lexicographically Smallest Generated String",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy",
+    "String Matching"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "String Matching"

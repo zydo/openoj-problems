@@ -4,12 +4,21 @@
   "id": 1584,
   "slug": "least-wiring-to-connect-all-points",
   "title": "Least Wiring to Connect All Points",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Union Find",
     "Graph",
     "Minimum Spanning Tree"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
+    "Graph Theory",
+    "Minimum Spanning Tree",
+    "Prim's Algorithm",
+    "Kruskal's Algorithm",
+    "Borůvka's Algorithm"
   ],
   "invocation": {
     "type": "function",

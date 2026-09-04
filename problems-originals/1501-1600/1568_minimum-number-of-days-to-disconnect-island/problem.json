@@ -4,8 +4,16 @@
   "id": 1568,
   "slug": "minimum-number-of-days-to-disconnect-island",
   "title": "Minimum Number of Days to Disconnect Island",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Strongly Connected Component",
+    "Articulation Point"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

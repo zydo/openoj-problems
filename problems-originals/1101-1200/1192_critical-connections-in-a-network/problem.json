@@ -3,10 +3,16 @@
   "id": 1192,
   "slug": "critical-connections-in-a-network",
   "title": "Critical Connections in a Network",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Depth-First Search",
+    "Bridge (Graph)"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Graph Theory",
+    "Biconnected Component",
     "Bridge (Graph)"
   ],
   "invocation": {

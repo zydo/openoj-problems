@@ -4,11 +4,20 @@
   "id": 1510,
   "slug": "square-takeaway-game-iv",
   "title": "Square Takeaway Game IV",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Dynamic Programming",
     "Game Theory"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Minimax",
+    "Game Theory",
+    "Nim Game",
+    "Sprague–Grundy Theorem",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 755,
   "slug": "pour-water",
   "title": "Pour Water",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

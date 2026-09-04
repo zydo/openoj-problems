@@ -4,8 +4,16 @@
   "id": 2357,
   "slug": "make-array-zero-by-subtracting-equal-amounts",
   "title": "Make Array Zero by Subtracting Equal Amounts",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

@@ -4,8 +4,16 @@
   "id": 3376,
   "slug": "minimum-time-to-break-locks-i",
   "title": "Minimum Time to Break Locks I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Backtracking",

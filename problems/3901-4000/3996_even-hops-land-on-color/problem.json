@@ -4,8 +4,12 @@
   "id": 3996,
   "slug": "even-hops-land-on-color",
   "title": "Even Hops Land On Color",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Math",
     "Breadth-First Search"
   ],

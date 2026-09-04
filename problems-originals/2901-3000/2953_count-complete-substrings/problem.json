@@ -4,8 +4,13 @@
   "id": 2953,
   "slug": "count-complete-substrings",
   "title": "Count Complete Substrings",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

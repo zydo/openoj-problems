@@ -4,8 +4,13 @@
   "id": 1603,
   "slug": "design-parking-system",
   "title": "Design Parking System",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Design",
+    "Simulation",
+    "Counting"
+  ],
+  "topics": [
     "Design",
     "Simulation",
     "Counting"

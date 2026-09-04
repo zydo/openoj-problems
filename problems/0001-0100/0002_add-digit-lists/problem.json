@@ -4,8 +4,13 @@
   "id": 2,
   "slug": "add-digit-lists",
   "title": "Add Digit Lists",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Linked List",
     "Math",
     "Recursion"

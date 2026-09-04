@@ -4,8 +4,13 @@
   "id": 271,
   "slug": "string-list-packing",
   "title": "String List Packing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "String",
     "Design"

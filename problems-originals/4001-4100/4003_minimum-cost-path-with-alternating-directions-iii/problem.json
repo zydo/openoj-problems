@@ -3,10 +3,15 @@
   "id": 4003,
   "slug": "minimum-cost-path-with-alternating-directions-iii",
   "title": "Minimum Cost Path with Alternating Directions III",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Shortest Path"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Matrix",
+    "Math"
   ],
   "invocation": {
     "type": "function",

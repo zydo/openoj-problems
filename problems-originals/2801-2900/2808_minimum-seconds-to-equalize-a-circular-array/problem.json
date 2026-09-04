@@ -4,8 +4,12 @@
   "id": 2808,
   "slug": "minimum-seconds-to-equalize-a-circular-array",
   "title": "Minimum Seconds to Equalize a Circular Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

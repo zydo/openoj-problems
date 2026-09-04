@@ -4,10 +4,19 @@
   "id": 1740,
   "slug": "edges-between-two-tree-values",
   "title": "Edges Between Two Tree Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
     "Lowest Common Ancestor"
   ],
   "invocation": {

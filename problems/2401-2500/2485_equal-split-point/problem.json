@@ -4,8 +4,12 @@
   "id": 2485,
   "slug": "equal-split-point",
   "title": "Equal Split Point",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Math",
     "Prefix Sum"
   ],

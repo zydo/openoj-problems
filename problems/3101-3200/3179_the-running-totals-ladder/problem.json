@@ -4,11 +4,18 @@
   "id": 3179,
   "slug": "the-running-totals-ladder",
   "title": "The Running Totals Ladder",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Prefix Sum",
     "Combinatorics"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Simulation",
+    "Combinatorics",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3148,
   "slug": "steepest-climb-in-a-matrix",
   "title": "The Steepest Climb In A Matrix",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

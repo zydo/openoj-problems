@@ -4,10 +4,17 @@
   "id": 2932,
   "slug": "kindred-pair-xor-i",
   "title": "Kindred Pair XOR I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Trie",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

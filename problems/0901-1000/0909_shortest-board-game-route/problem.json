@@ -4,8 +4,13 @@
   "id": 909,
   "slug": "shortest-board-game-route",
   "title": "Shortest Board-Game Route",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

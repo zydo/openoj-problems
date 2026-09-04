@@ -4,10 +4,13 @@
   "id": 1484,
   "slug": "daily-market-vendors",
   "title": "Daily Market Vendors",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

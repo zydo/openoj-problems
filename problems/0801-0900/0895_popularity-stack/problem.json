@@ -4,10 +4,16 @@
   "id": 895,
   "slug": "popularity-stack",
   "title": "Popularity Stack",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Stack",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Stack",
+    "Design",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

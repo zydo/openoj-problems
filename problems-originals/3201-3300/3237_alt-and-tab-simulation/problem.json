@@ -4,8 +4,13 @@
   "id": 3237,
   "slug": "alt-and-tab-simulation",
   "title": "Alt and Tab Simulation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

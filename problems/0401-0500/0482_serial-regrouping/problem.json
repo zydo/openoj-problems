@@ -4,8 +4,11 @@
   "id": 482,
   "slug": "serial-regrouping",
   "title": "Serial Regrouping",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

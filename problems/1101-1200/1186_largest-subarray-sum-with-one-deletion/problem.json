@@ -4,10 +4,14 @@
   "id": 1186,
   "slug": "largest-subarray-sum-with-one-deletion",
   "title": "Largest Subarray Sum with One Deletion",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

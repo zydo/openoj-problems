@@ -3,11 +3,19 @@
   "id": 297,
   "slug": "serialize-and-deserialize-binary-tree",
   "title": "Serialize and Deserialize Binary Tree",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Breadth-First Search",
     "Depth-First Search"
+  ],
+  "topics": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "design",

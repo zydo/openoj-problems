@@ -4,8 +4,12 @@
   "id": 2036,
   "slug": "largest-zigzag-subarray-sum",
   "title": "Largest Zigzag Subarray Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

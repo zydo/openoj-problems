@@ -4,8 +4,13 @@
   "id": 3665,
   "slug": "mirror-maze-routes",
   "title": "Mirror Maze Routes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

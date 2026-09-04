@@ -4,10 +4,18 @@
   "id": 169,
   "slug": "the-majority-element",
   "title": "The Majority Element",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Sorting",
+    "Counting",
+    "Boyer–Moore Majority Vote Algorithm"
   ],
   "invocation": {
     "type": "function",

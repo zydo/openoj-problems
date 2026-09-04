@@ -4,8 +4,13 @@
   "id": 761,
   "slug": "special-binary-string",
   "title": "Special Binary String",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Divide and Conquer",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Divide and Conquer",
     "Sorting"

@@ -4,8 +4,12 @@
   "id": 1491,
   "slug": "average-salary-excluding-the-minimum-and-maximum-salary",
   "title": "Average Salary Excluding the Minimum and Maximum Salary",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

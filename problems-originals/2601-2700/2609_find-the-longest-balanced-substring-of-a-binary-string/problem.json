@@ -4,8 +4,11 @@
   "id": 2609,
   "slug": "find-the-longest-balanced-substring-of-a-binary-string",
   "title": "Find the Longest Balanced Substring of a Binary String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,10 +4,17 @@
   "id": 170,
   "slug": "the-pair-store",
   "title": "The Pair Store",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Design",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Design",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

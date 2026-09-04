@@ -4,8 +4,11 @@
   "id": 674,
   "slug": "longest-continuous-increasing-subsequence",
   "title": "Longest Continuous Increasing Subsequence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

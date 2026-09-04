@@ -4,8 +4,17 @@
   "id": 3910,
   "slug": "count-connected-subgraphs-with-even-node-sum",
   "title": "Count Connected Subgraphs with Even Node Sum",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Depth-First Search",

@@ -4,11 +4,19 @@
   "id": 314,
   "slug": "tree-column-sweep",
   "title": "Tree Column Sweep",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Tree",
     "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Sorting",
     "Binary Tree"
   ],
   "invocation": {

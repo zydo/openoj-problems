@@ -4,8 +4,14 @@
   "id": 3404,
   "slug": "count-special-subsequences",
   "title": "Count Special Subsequences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

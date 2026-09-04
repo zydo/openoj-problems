@@ -4,8 +4,12 @@
   "id": 29,
   "slug": "long-division-by-hand",
   "title": "Long Division by Hand",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

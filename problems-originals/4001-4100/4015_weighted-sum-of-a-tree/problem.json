@@ -4,8 +4,13 @@
   "id": 4015,
   "slug": "weighted-sum-of-a-tree",
   "title": "Weighted Sum of a Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Math"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

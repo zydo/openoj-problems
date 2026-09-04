@@ -4,8 +4,12 @@
   "id": 3904,
   "slug": "smallest-stable-index-ii",
   "title": "Smallest Stable Index II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

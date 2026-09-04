@@ -4,8 +4,15 @@
   "id": 720,
   "slug": "longest-word-in-dictionary",
   "title": "Longest Word in Dictionary",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

@@ -4,8 +4,12 @@
   "id": 3399,
   "slug": "smallest-substring-with-identical-characters-ii",
   "title": "Smallest Substring With Identical Characters II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Binary Search"
+  ],
+  "topics": [
     "String",
     "Binary Search"
   ],

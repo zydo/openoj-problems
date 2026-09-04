@@ -4,10 +4,13 @@
   "id": 3368,
   "slug": "capitalize-each-word",
   "title": "Capitalize Each Word",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

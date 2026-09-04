@@ -4,8 +4,14 @@
   "id": 2132,
   "slug": "stamping-the-grid",
   "title": "Stamping the Grid",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix",

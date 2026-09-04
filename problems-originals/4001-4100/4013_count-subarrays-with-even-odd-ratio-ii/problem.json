@@ -4,8 +4,13 @@
   "id": 4013,
   "slug": "count-subarrays-with-even-odd-ratio-ii",
   "title": "Count Subarrays With Even Odd Ratio II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Prefix Sum",
+    "Binary Indexed Tree",
+    "Binary Search"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

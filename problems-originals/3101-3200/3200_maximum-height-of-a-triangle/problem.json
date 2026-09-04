@@ -4,8 +4,12 @@
   "id": 3200,
   "slug": "maximum-height-of-a-triangle",
   "title": "Maximum Height of a Triangle",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

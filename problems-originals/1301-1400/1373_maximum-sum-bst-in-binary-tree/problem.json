@@ -3,11 +3,19 @@
   "id": 1373,
   "slug": "maximum-sum-bst-in-binary-tree",
   "title": "Maximum Sum BST in Binary Tree",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Search Tree"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

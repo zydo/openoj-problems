@@ -4,8 +4,12 @@
   "id": 1553,
   "slug": "clearing-the-orange-pile",
   "title": "Clearing the Orange Pile",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Memoization"
   ],

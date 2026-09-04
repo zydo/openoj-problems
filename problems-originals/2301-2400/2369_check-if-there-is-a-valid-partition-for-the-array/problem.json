@@ -4,8 +4,12 @@
   "id": 2369,
   "slug": "check-if-there-is-a-valid-partition-for-the-array",
   "title": "Check if There is a Valid Partition For The Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

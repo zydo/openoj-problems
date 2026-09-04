@@ -4,11 +4,17 @@
   "id": 397,
   "slug": "reduce-integer-to-one",
   "title": "Reduce Integer to One",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Greedy",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

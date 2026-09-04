@@ -3,12 +3,22 @@
   "id": 2290,
   "slug": "minimum-obstacle-removal-to-reach-corner",
   "title": "Minimum Obstacle Removal to Reach Corner",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Breadth First Search",
     "Matrix",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path",
+    "0-1 BFS",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

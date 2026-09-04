@@ -4,8 +4,13 @@
   "id": 3967,
   "slug": "finish-time-of-tasks-ii",
   "title": "Finish Time of Tasks II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Dynamic Programming"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

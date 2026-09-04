@@ -4,8 +4,15 @@
   "id": 3532,
   "slug": "path-existence-queries-in-a-graph-i",
   "title": "Path Existence Queries in a Graph I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

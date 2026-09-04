@@ -4,8 +4,12 @@
   "id": 2200,
   "slug": "find-all-k-distant-indices-in-an-array",
   "title": "Find All K-Distant Indices in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

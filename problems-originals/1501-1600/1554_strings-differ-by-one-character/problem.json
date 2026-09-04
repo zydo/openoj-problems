@@ -4,8 +4,14 @@
   "id": 1554,
   "slug": "strings-differ-by-one-character",
   "title": "Strings Differ by One Character",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Rolling Hash",
+    "Hash Function"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Rolling Hash",

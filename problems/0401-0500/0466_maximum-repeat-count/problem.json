@@ -4,8 +4,13 @@
   "id": 466,
   "slug": "maximum-repeat-count",
   "title": "Maximum Repeat Count",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Two Pointers",
     "String",
     "Dynamic Programming"
   ],

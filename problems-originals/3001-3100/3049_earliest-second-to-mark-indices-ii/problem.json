@@ -3,11 +3,17 @@
   "id": 3049,
   "slug": "earliest-second-to-mark-indices-ii",
   "title": "Earliest Second to Mark Indices II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 2954,
   "slug": "count-the-number-of-infection-sequences",
   "title": "Count the Number of Infection Sequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Combinatorics",
+    "Fermat's Little Theorem"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Combinatorics",

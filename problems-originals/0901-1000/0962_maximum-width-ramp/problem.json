@@ -4,8 +4,14 @@
   "id": 962,
   "slug": "maximum-width-ramp",
   "title": "Maximum Width Ramp",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Stack",

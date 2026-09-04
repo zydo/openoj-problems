@@ -4,8 +4,12 @@
   "id": 3173,
   "slug": "bitwise-or-of-adjacent-elements",
   "title": "Bitwise OR of Adjacent Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

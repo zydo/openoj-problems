@@ -4,9 +4,14 @@
   "id": 3746,
   "slug": "shaving-off-balanced-pieces",
   "title": "Shaving Off Balanced Pieces",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Counting"
+  ],
+  "topics": [
+    "String",
+    "Stack",
     "Counting"
   ],
   "invocation": {

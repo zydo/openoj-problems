@@ -4,8 +4,13 @@
   "id": 2283,
   "slug": "check-if-number-has-equal-digit-count-and-digit-value",
   "title": "Check if Number Has Equal Digit Count and Digit Value",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

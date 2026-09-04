@@ -4,8 +4,11 @@
   "id": 2544,
   "slug": "alternating-digit-sum",
   "title": "Alternating Digit Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

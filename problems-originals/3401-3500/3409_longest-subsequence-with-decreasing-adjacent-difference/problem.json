@@ -4,8 +4,12 @@
   "id": 3409,
   "slug": "longest-subsequence-with-decreasing-adjacent-difference",
   "title": "Longest Subsequence With Decreasing Adjacent Difference",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

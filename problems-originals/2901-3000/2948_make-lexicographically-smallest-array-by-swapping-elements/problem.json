@@ -3,8 +3,13 @@
   "id": 2948,
   "slug": "make-lexicographically-smallest-array-by-swapping-elements",
   "title": "Make Lexicographically Smallest Array by Swapping Elements",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Union-Find",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Union-Find",
     "Sorting"
   ],

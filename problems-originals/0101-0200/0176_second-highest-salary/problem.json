@@ -4,8 +4,11 @@
   "id": 176,
   "slug": "second-highest-salary",
   "title": "Second Highest Salary",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

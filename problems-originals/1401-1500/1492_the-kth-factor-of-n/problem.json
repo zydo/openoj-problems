@@ -4,8 +4,13 @@
   "id": 1492,
   "slug": "the-kth-factor-of-n",
   "title": "The kth Factor of n",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Number Theory",
+    "Prime Factorization"
+  ],
+  "topics": [
     "Math",
     "Number Theory",
     "Prime Factorization"

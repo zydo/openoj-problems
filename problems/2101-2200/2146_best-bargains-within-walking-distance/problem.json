@@ -4,11 +4,18 @@
   "id": 2146,
   "slug": "best-bargains-within-walking-distance",
   "title": "Best Bargains Within Walking Distance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Breadth-First Search",
     "Sorting",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Matrix"
   ],
   "invocation": {

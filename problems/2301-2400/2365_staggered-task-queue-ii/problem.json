@@ -4,8 +4,13 @@
   "id": 2365,
   "slug": "staggered-task-queue-ii",
   "title": "Staggered Task Queue II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

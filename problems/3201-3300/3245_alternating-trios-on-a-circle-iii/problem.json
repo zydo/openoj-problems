@@ -4,8 +4,13 @@
   "id": 3245,
   "slug": "alternating-trios-on-a-circle-iii",
   "title": "Alternating Trios On A Circle III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Binary Indexed Tree",
     "Ordered Set"

@@ -4,8 +4,14 @@
   "id": 2549,
   "slug": "count-distinct-numbers-on-board",
   "title": "Count Distinct Numbers on Board",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

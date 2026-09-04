@@ -4,8 +4,14 @@
   "id": 100,
   "slug": "same-tree",
   "title": "Same Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

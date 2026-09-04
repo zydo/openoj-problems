@@ -4,10 +4,13 @@
   "id": 1211,
   "slug": "dish-appeal-and-poor-ratings",
   "title": "Dish Appeal and Poor Ratings",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

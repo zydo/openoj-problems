@@ -4,8 +4,12 @@
   "id": 403,
   "slug": "hops-across-stones",
   "title": "Hops Across Stones",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

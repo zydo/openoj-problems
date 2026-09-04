@@ -4,8 +4,12 @@
   "id": 3201,
   "slug": "find-the-maximum-length-of-valid-subsequence-i",
   "title": "Find the Maximum Length of Valid Subsequence I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

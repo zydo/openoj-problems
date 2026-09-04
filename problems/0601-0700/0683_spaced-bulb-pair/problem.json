@@ -4,10 +4,20 @@
   "id": 683,
   "slug": "spaced-bulb-pair",
   "title": "Spaced Bulb Pair",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Sliding Window",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Ordered Set",
     "Monotonic Queue"
   ],
   "invocation": {

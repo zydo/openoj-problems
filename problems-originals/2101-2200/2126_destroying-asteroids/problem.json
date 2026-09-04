@@ -4,8 +4,13 @@
   "id": 2126,
   "slug": "destroying-asteroids",
   "title": "Destroying Asteroids",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

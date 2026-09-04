@@ -4,8 +4,13 @@
   "id": 3364,
   "slug": "minimum-positive-sum-subarray",
   "title": "Minimum Positive Sum Subarray",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Sliding Window",
     "Prefix Sum"

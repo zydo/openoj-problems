@@ -4,10 +4,13 @@
   "id": 3052,
   "slug": "stocking-the-warehouse",
   "title": "Stocking The Warehouse",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -3,11 +3,18 @@
   "id": 279,
   "slug": "perfect-squares",
   "title": "Perfect Squares",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Math",
     "BFS"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Breadth-First Search",
+    "Knapsack Problem",
+    "Complete Knapsack"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 937,
   "slug": "reorder-data-in-log-files",
   "title": "Reorder Data in Log Files",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "String",
     "Sorting"

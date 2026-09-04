@@ -3,8 +3,12 @@
   "id": 1060,
   "slug": "missing-element-in-sorted-array",
   "title": "Missing Element in Sorted Array",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

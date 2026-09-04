@@ -4,8 +4,14 @@
   "id": 2761,
   "slug": "prime-pairs-with-target-sum",
   "title": "Prime Pairs With Target Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Enumeration",

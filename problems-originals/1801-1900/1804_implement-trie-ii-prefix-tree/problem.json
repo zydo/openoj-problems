@@ -4,8 +4,14 @@
   "id": 1804,
   "slug": "implement-trie-ii-prefix-tree",
   "title": "Implement Trie II (Prefix Tree)",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Design",

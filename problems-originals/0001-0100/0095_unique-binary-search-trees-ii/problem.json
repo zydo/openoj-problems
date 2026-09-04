@@ -4,8 +4,15 @@
   "id": 95,
   "slug": "unique-binary-search-trees-ii",
   "title": "Unique Binary Search Trees II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Backtracking",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Backtracking",
     "Tree",

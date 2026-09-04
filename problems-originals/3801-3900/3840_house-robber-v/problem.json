@@ -4,8 +4,12 @@
   "id": 3840,
   "slug": "house-robber-v",
   "title": "House Robber V",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

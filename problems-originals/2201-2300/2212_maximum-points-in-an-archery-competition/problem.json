@@ -4,8 +4,14 @@
   "id": 2212,
   "slug": "maximum-points-in-an-archery-competition",
   "title": "Maximum Points in an Archery Competition",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation",

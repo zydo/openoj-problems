@@ -4,10 +4,16 @@
   "id": 3459,
   "slug": "longest-bent-diagonal-trail",
   "title": "Longest Bent Diagonal Trail",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization",
     "Matrix"
   ],
   "invocation": {

@@ -4,10 +4,17 @@
   "id": 2944,
   "slug": "the-frugal-fruit-haul",
   "title": "The Frugal Fruit Haul",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Heap (Priority Queue)",
     "Monotonic Queue"
   ],
   "invocation": {

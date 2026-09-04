@@ -4,8 +4,13 @@
   "id": 13,
   "slug": "read-the-roman-numeral",
   "title": "Read The Roman Numeral",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String"

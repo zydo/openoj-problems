@@ -4,10 +4,15 @@
   "id": 2996,
   "slug": "first-gap-above-consecutive-prefix-sum",
   "title": "First Gap Above The Consecutive Prefix Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

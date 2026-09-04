@@ -4,8 +4,12 @@
   "id": 2138,
   "slug": "cut-the-string-into-k-sized-chunks",
   "title": "Cut the String into k-Sized Chunks",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

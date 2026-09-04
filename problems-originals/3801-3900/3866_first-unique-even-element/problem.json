@@ -4,8 +4,13 @@
   "id": 3866,
   "slug": "first-unique-even-element",
   "title": "First Unique Even Element",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

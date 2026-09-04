@@ -4,10 +4,17 @@
   "id": 480,
   "slug": "rolling-window-medians",
   "title": "Rolling Window Medians",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Treap"
   ],
   "invocation": {
     "type": "function",

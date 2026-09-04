@@ -4,8 +4,13 @@
   "id": 2381,
   "slug": "shift-letters-over-ranges",
   "title": "Shift Letters Over Ranges",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

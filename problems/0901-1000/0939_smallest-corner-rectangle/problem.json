@@ -4,12 +4,19 @@
   "id": 939,
   "slug": "smallest-corner-rectangle",
   "title": "Smallest Corner Rectangle",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

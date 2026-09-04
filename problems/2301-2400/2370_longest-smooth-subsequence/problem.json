@@ -4,8 +4,13 @@
   "id": 2370,
   "slug": "longest-smooth-subsequence",
   "title": "Longest Smooth Subsequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Dynamic Programming"
   ],

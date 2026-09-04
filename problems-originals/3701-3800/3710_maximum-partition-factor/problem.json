@@ -4,8 +4,16 @@
   "id": 3710,
   "slug": "maximum-partition-factor",
   "title": "Maximum Partition Factor",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Depth-First Search",

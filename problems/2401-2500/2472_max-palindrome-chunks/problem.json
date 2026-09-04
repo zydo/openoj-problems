@@ -4,8 +4,14 @@
   "id": 2472,
   "slug": "max-palindrome-chunks",
   "title": "Max Palindrome Chunks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming",

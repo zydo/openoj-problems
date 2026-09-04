@@ -4,8 +4,12 @@
   "id": 1616,
   "slug": "cross-split-palindrome",
   "title": "Cross-Split Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

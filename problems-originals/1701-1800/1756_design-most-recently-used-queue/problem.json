@@ -4,8 +4,19 @@
   "id": 1756,
   "slug": "design-most-recently-used-queue",
   "title": "Design Most Recently Used Queue",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Linked List",
+    "Divide and Conquer",
+    "Design",
+    "Simulation",
+    "Doubly-Linked List",
+    "Sqrt Decomposition",
+    "Treap",
+    "Splay Tree"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Divide and Conquer",

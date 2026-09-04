@@ -4,8 +4,13 @@
   "id": 3332,
   "slug": "maximum-points-tourist-can-earn",
   "title": "Maximum Points Tourist Can Earn",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

@@ -4,8 +4,11 @@
   "id": 434,
   "slug": "count-text-segments",
   "title": "Count Text Segments",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 278,
   "slug": "first-bad-version",
   "title": "First Bad Version",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Binary Search",
+    "Interactive"
+  ],
+  "topics": [
     "Binary Search",
     "Interactive"
   ],

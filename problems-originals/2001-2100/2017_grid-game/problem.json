@@ -4,8 +4,13 @@
   "id": 2017,
   "slug": "grid-game",
   "title": "Grid Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

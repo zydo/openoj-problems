@@ -4,8 +4,13 @@
   "id": 103,
   "slug": "read-the-levels-in-a-zigzag",
   "title": "Read The Levels In A Zigzag",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

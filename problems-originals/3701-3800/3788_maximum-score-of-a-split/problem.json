@@ -4,8 +4,12 @@
   "id": 3788,
   "slug": "maximum-score-of-a-split",
   "title": "Maximum Score of a Split",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

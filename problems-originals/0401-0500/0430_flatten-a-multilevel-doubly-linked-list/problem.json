@@ -4,8 +4,13 @@
   "id": 430,
   "slug": "flatten-a-multilevel-doubly-linked-list",
   "title": "Flatten a Multilevel Doubly Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Depth-First Search",
+    "Doubly-Linked List"
+  ],
+  "topics": [
     "Linked List",
     "Depth-First Search",
     "Doubly-Linked List"

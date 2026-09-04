@@ -4,10 +4,17 @@
   "id": 2616,
   "slug": "smallest-widest-pair-gap",
   "title": "Smallest Widest Pair Gap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Greedy",
     "Sorting"
   ],

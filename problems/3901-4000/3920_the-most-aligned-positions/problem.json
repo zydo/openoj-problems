@@ -4,8 +4,13 @@
   "id": 3920,
   "slug": "the-most-aligned-positions",
   "title": "The Most Aligned Positions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

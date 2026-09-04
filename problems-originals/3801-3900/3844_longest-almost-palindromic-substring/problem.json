@@ -4,8 +4,13 @@
   "id": 3844,
   "slug": "longest-almost-palindromic-substring",
   "title": "Longest Almost-Palindromic Substring",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming"

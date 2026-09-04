@@ -4,11 +4,18 @@
   "id": 1952,
   "slug": "prime-square-test",
   "title": "Prime Square Test",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Number Theory",
     "Prime Factorization"
+  ],
+  "topics": [
+    "Math",
+    "Enumeration",
+    "Number Theory",
+    "Prime Factorization",
+    "Sieve Theory"
   ],
   "invocation": {
     "type": "function",

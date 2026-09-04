@@ -4,8 +4,14 @@
   "id": 2585,
   "slug": "hitting-the-point-total",
   "title": "Hitting the Point Total",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "Multiple Knapsack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Knapsack Problem",

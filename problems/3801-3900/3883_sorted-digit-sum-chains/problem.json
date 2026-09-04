@@ -4,8 +4,13 @@
   "id": 3883,
   "slug": "sorted-digit-sum-chains",
   "title": "Sorted Digit-Sum Chains",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

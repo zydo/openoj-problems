@@ -4,8 +4,12 @@
   "id": 2770,
   "slug": "packing-in-the-most-leaps",
   "title": "Packing In The Most Leaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

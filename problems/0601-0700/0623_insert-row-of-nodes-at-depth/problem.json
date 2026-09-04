@@ -4,8 +4,14 @@
   "id": 623,
   "slug": "insert-row-of-nodes-at-depth",
   "title": "Insert Row of Nodes at Depth",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

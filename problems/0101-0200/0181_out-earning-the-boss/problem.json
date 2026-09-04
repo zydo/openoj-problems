@@ -4,10 +4,13 @@
   "id": 181,
   "slug": "out-earning-the-boss",
   "title": "Out-Earning The Boss",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

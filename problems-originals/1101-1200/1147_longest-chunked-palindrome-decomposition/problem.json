@@ -3,12 +3,20 @@
   "id": 1147,
   "slug": "longest-chunked-palindrome-decomposition",
   "title": "Longest Chunked Palindrome Decomposition",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Two Pointers",
     "String",
     "Recursion"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Rolling Hash",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

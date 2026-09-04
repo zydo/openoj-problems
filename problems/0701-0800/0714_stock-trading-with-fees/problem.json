@@ -4,8 +4,13 @@
   "id": 714,
   "slug": "stock-trading-with-fees",
   "title": "Stock Trading With Fees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Greedy"
   ],

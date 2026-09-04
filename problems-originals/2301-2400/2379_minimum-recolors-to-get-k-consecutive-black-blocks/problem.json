@@ -4,8 +4,12 @@
   "id": 2379,
   "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
   "title": "Minimum Recolors to Get K Consecutive Black Blocks",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

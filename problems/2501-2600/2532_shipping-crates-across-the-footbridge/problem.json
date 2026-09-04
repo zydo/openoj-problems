@@ -4,8 +4,13 @@
   "id": 2532,
   "slug": "shipping-crates-across-the-footbridge",
   "title": "Shipping Crates Across the Footbridge",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Heap (Priority Queue)",
     "Simulation"

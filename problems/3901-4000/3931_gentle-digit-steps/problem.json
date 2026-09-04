@@ -4,8 +4,11 @@
   "id": 3931,
   "slug": "gentle-digit-steps",
   "title": "Gentle Digit Steps",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

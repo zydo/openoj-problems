@@ -4,11 +4,18 @@
   "id": 1477,
   "slug": "two-separate-windows-summing-to-target",
   "title": "Two Separate Windows Summing to Target",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

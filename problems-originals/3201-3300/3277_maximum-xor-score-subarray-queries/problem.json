@@ -4,8 +4,12 @@
   "id": 3277,
   "slug": "maximum-xor-score-subarray-queries",
   "title": "Maximum XOR Score Subarray Queries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

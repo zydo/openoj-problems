@@ -3,8 +3,13 @@
   "id": 438,
   "slug": "find-all-anagrams-in-a-string",
   "title": "Find All Anagrams in a String",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

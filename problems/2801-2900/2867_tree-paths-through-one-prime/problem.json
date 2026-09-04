@@ -4,11 +4,21 @@
   "id": 2867,
   "slug": "tree-paths-through-one-prime",
   "title": "Tree Paths Through Exactly One Prime",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Number Theory",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
   ],
   "invocation": {
     "type": "function",

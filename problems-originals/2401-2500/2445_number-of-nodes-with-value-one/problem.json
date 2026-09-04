@@ -4,8 +4,15 @@
   "id": 2445,
   "slug": "number-of-nodes-with-value-one",
   "title": "Number of Nodes With Value One",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Depth-First Search",

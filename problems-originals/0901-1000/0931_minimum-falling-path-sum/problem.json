@@ -4,8 +4,13 @@
   "id": 931,
   "slug": "minimum-falling-path-sum",
   "title": "Minimum Falling Path Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

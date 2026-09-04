@@ -4,8 +4,12 @@
   "id": 2437,
   "slug": "number-of-valid-clock-times",
   "title": "Number of Valid Clock Times",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

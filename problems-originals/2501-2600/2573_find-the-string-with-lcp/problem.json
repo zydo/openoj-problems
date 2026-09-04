@@ -4,8 +4,16 @@
   "id": 2573,
   "slug": "find-the-string-with-lcp",
   "title": "Find the String with LCP",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Union-Find",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming",

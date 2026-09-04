@@ -4,10 +4,13 @@
   "id": 2988,
   "slug": "who-manages-the-largest-unit",
   "title": "Who Manages the Largest Unit",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

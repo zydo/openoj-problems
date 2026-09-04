@@ -3,10 +3,14 @@
   "id": 2167,
   "slug": "minimum-time-to-remove-all-cars-containing-illegal-goods",
   "title": "Minimum Time to Remove All Cars Containing Illegal Goods",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 2057,
   "slug": "first-digit-matched-index",
   "title": "First Digit-Matched Index",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

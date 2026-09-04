@@ -4,8 +4,11 @@
   "id": 665,
   "slug": "one-fix-monotonic-array",
   "title": "One-Fix Monotonic Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

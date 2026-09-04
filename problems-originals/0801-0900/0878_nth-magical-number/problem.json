@@ -4,8 +4,14 @@
   "id": 878,
   "slug": "nth-magical-number",
   "title": "Nth Magical Number",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Binary Search",
+    "Least Common Multiple",
+    "Inclusion-Exclusion Principle"
+  ],
+  "topics": [
     "Math",
     "Binary Search",
     "Least Common Multiple",

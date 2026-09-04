@@ -4,8 +4,12 @@
   "id": 3848,
   "slug": "check-digitorial-permutation",
   "title": "Check Digitorial Permutation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Math",
     "Counting"
   ],

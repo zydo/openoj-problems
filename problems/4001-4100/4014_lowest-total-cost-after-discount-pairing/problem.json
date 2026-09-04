@@ -4,11 +4,16 @@
   "id": 4014,
   "slug": "lowest-total-cost-after-discount-pairing",
   "title": "Lowest Total Cost After Discount Pairing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Greedy",
+    "Sorting",
+    "Math"
   ],
   "invocation": {
     "type": "function",

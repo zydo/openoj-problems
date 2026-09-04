@@ -4,8 +4,12 @@
   "id": 3986,
   "slug": "number-of-elapsed-seconds-between-two-times",
   "title": "Number of Elapsed Seconds Between Two Times",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Math",
+    "String"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

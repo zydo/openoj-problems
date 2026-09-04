@@ -4,8 +4,13 @@
   "id": 3835,
   "slug": "count-subarrays-with-cost-less-than-or-equal-to-k",
   "title": "Count Subarrays With Cost Less Than or Equal to K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Queue",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Monotonic Queue"

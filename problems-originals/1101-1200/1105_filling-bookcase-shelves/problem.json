@@ -3,8 +3,12 @@
   "id": 1105,
   "slug": "filling-bookcase-shelves",
   "title": "Filling Bookcase Shelves",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

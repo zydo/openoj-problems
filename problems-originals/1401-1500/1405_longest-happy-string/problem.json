@@ -3,11 +3,16 @@
   "id": 1405,
   "slug": "longest-happy-string",
   "title": "Longest Happy String",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

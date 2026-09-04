@@ -4,8 +4,14 @@
   "id": 3628,
   "slug": "maximum-number-of-subsequences-after-one-inserting",
   "title": "Maximum Number of Subsequences After One Inserting",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Greedy",

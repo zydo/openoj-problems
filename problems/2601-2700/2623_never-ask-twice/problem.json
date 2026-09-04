@@ -4,11 +4,15 @@
   "id": 2623,
   "slug": "never-ask-twice",
   "title": "Never Ask Twice",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Memoization",
     "Hash Table",
     "JavaScript"
+  ],
+  "topics": [
+    "Design",
+    "Hash Table"
   ],
   "invocation": {
     "type": "interactive",

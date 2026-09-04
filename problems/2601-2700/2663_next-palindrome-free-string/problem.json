@@ -4,8 +4,12 @@
   "id": 2663,
   "slug": "next-palindrome-free-string",
   "title": "Next Palindrome-Free String",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

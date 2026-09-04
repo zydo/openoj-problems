@@ -4,12 +4,21 @@
   "id": 3369,
   "slug": "the-rolling-number-ledger",
   "title": "The Rolling Number Ledger",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Design",
     "Heap (Priority Queue)",
     "Queue",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

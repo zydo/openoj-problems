@@ -4,8 +4,12 @@
   "id": 1664,
   "slug": "ways-to-make-a-fair-array",
   "title": "Ways to Make a Fair Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

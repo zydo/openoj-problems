@@ -3,10 +3,18 @@
   "id": 698,
   "slug": "partition-to-k-equal-sum-subsets",
   "title": "Partition to K Equal Sum Subsets",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Backtracking",
     "Bitmask DP"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

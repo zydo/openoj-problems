@@ -4,8 +4,13 @@
   "id": 3915,
   "slug": "maximum-sum-of-alternating-subsequence-with-distance-at-least-k",
   "title": "Maximum Sum of Alternating Subsequence With Distance at Least K",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Segment Tree"

@@ -4,8 +4,14 @@
   "id": 3842,
   "slug": "toggle-light-bulbs",
   "title": "Toggle Light Bulbs",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

@@ -4,8 +4,13 @@
   "id": 3843,
   "slug": "first-element-with-unique-frequency",
   "title": "First Element with Unique Frequency",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

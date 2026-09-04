@@ -4,10 +4,13 @@
   "id": 3798,
   "slug": "trim-to-the-last-even-digit",
   "title": "Trim To The Last Even Digit",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Greedy"
+  ],
+  "topics": [
+    "String"
   ],
   "invocation": {
     "type": "function",

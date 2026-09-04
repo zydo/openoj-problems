@@ -4,9 +4,16 @@
   "id": 869,
   "slug": "power-of-two-digit-shuffle",
   "title": "Power-of-Two Digit Shuffle",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Sorting",
     "Counting",
     "Enumeration"
   ],

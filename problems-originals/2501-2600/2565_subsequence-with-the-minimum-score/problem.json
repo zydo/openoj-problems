@@ -4,8 +4,13 @@
   "id": 2565,
   "slug": "subsequence-with-the-minimum-score",
   "title": "Subsequence With the Minimum Score",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Binary Search"

@@ -3,8 +3,11 @@
   "id": 552,
   "slug": "student-attendance-record-ii",
   "title": "Student Attendance Record II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

@@ -4,10 +4,14 @@
   "id": 3231,
   "slug": "fewest-rising-subsequences-to-clear-an-array",
   "title": "Fewest Rising Subsequences to Clear an Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

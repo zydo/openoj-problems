@@ -4,10 +4,13 @@
   "id": 1767,
   "slug": "stages-never-cleared",
   "title": "Stages Never Cleared",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,10 +4,16 @@
   "id": 2206,
   "slug": "pair-up-matching-values",
   "title": "Pair Up Matching Values",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
     "Counting"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 3760,
   "slug": "maximum-substrings-with-distinct-start",
   "title": "Maximum Substrings With Distinct Start",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

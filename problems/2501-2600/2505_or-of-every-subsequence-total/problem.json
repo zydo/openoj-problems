@@ -4,10 +4,17 @@
   "id": 2505,
   "slug": "or-of-every-subsequence-total",
   "title": "OR of Every Subsequence Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Brainteaser",
     "Prefix Sum"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 3968,
   "slug": "maximum-manhattan-distance-after-all-moves",
   "title": "Maximum Manhattan Distance After All Moves",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Math",
     "String",
     "Counting"

@@ -4,10 +4,13 @@
   "id": 2175,
   "slug": "rank-swings-after-the-points-update",
   "title": "Rank Swings After The Points Update",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

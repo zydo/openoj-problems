@@ -3,9 +3,15 @@
   "id": 2355,
   "slug": "maximum-number-of-books-you-can-take",
   "title": "Maximum Number of Books You Can Take",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
     "Monotonic Stack"
   ],
   "invocation": {

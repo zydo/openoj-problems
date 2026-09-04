@@ -3,11 +3,16 @@
   "id": 1163,
   "slug": "last-substring-in-lexicographical-order",
   "title": "Last Substring in Lexicographical Order",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Two Pointers",
     "Suffix Array"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Lyndon Factorization"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,13 @@
   "id": 2619,
   "slug": "every-array-grows-a-tail",
   "title": "Every Array Grows A Tail",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "JavaScript"
+  ],
+  "topics": [
+    "Array"
   ],
   "invocation": {
     "type": "interactive",

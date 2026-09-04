@@ -4,11 +4,19 @@
   "id": 2973,
   "slug": "a-coin-pile-for-every-subtree",
   "title": "A Coin Pile for Every Subtree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Dynamic Programming",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

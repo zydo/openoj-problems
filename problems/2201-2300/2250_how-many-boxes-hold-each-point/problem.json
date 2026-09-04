@@ -4,11 +4,18 @@
   "id": 2250,
   "slug": "how-many-boxes-hold-each-point",
   "title": "How Many Boxes Hold Each Point",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Binary Indexed Tree",
     "Sorting"
   ],
   "invocation": {

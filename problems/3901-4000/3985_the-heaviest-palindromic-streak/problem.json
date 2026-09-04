@@ -4,10 +4,14 @@
   "id": 3985,
   "slug": "the-heaviest-palindromic-streak",
   "title": "The Heaviest Palindromic Streak",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Two Pointers",
     "Dynamic Programming"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 699,
   "slug": "stacked-square-drops",
   "title": "Stacked Square Drops",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Segment Tree",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Segment Tree",
     "Ordered Set"

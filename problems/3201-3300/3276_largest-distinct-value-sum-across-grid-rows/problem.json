@@ -4,12 +4,19 @@
   "id": 3276,
   "slug": "largest-distinct-value-sum-across-grid-rows",
   "title": "Largest Distinct-Value Sum Across Grid Rows",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Matrix",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

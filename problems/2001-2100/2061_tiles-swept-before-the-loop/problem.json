@@ -4,8 +4,13 @@
   "id": 2061,
   "slug": "tiles-swept-before-the-loop",
   "title": "Tiles Swept Before the Loop",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

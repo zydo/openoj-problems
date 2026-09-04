@@ -4,9 +4,15 @@
   "id": 3132,
   "slug": "shift-amount-between-arrays-ii",
   "title": "Shift Amount Between Arrays II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
     "Sorting",
     "Enumeration"
   ],

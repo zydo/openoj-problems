@@ -4,8 +4,11 @@
   "id": 1195,
   "slug": "fizz-buzz-multithreaded",
   "title": "Fizz Buzz Multithreaded",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

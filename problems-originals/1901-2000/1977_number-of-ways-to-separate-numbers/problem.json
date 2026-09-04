@@ -3,10 +3,15 @@
   "id": 1977,
   "slug": "number-of-ways-to-separate-numbers",
   "title": "Number of Ways to Separate Numbers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

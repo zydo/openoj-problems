@@ -4,10 +4,13 @@
   "id": 1113,
   "slug": "yesterdays-post-reports",
   "title": "Yesterday's Post Reports",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

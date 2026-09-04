@@ -4,8 +4,12 @@
   "id": 3940,
   "slug": "limit-occurrences-in-sorted-array",
   "title": "Limit Occurrences in Sorted Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

@@ -4,8 +4,12 @@
   "id": 1176,
   "slug": "diet-plan-performance",
   "title": "Diet Plan Performance",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

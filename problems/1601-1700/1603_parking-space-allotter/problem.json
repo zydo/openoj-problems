@@ -4,11 +4,16 @@
   "id": 1603,
   "slug": "parking-space-allotter",
   "title": "Parking Space Allotter",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Design",
     "Simulation"
+  ],
+  "topics": [
+    "Design",
+    "Simulation",
+    "Counting"
   ],
   "invocation": {
     "type": "design",

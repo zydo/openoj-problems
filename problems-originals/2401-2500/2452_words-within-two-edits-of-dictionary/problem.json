@@ -4,8 +4,13 @@
   "id": 2452,
   "slug": "words-within-two-edits-of-dictionary",
   "title": "Words Within Two Edits of Dictionary",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "String",
     "Trie"

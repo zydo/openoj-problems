@@ -4,8 +4,15 @@
   "id": 2981,
   "slug": "find-longest-special-substring-that-occurs-thrice-i",
   "title": "Find Longest Special Substring That Occurs Thrice I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Sliding Window",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Binary Search",

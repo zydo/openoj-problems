@@ -4,10 +4,17 @@
   "id": 322,
   "slug": "fewest-coins-to-make-change",
   "title": "Fewest Coins To Make Change",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Breadth-First Search",
+    "Knapsack Problem",
+    "Complete Knapsack"
   ],
   "invocation": {
     "type": "function",

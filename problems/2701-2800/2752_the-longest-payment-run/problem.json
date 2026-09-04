@@ -4,10 +4,13 @@
   "id": 2752,
   "slug": "the-longest-payment-run",
   "title": "The Longest Payment Run",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

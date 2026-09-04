@@ -4,12 +4,20 @@
   "id": 1993,
   "slug": "lockable-tree",
   "title": "The Lockable Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Tree",
     "Design",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design"
   ],
   "invocation": {
     "type": "design",

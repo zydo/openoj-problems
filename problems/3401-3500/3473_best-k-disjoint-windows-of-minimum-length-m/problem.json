@@ -4,8 +4,13 @@
   "id": 3473,
   "slug": "best-k-disjoint-windows-of-minimum-length-m",
   "title": "Best k Disjoint Windows of Minimum Length m",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Prefix Sum"
   ],

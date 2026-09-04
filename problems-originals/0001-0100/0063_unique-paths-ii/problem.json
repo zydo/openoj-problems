@@ -4,8 +4,13 @@
   "id": 63,
   "slug": "unique-paths-ii",
   "title": "Unique Paths II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

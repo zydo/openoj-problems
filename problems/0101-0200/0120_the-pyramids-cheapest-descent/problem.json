@@ -4,8 +4,12 @@
   "id": 120,
   "slug": "the-pyramids-cheapest-descent",
   "title": "The Pyramid's Cheapest Descent",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

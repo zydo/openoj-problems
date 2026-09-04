@@ -3,11 +3,14 @@
   "id": 3055,
   "slug": "top-percentile-fraud",
   "title": "Top Percentile Fraud",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL",
     "Window Function"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

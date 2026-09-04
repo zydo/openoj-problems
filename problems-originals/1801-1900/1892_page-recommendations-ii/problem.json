@@ -4,8 +4,11 @@
   "id": 1892,
   "slug": "page-recommendations-ii",
   "title": "Page Recommendations II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

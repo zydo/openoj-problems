@@ -4,8 +4,14 @@
   "id": 2411,
   "slug": "smallest-subarrays-with-maximum-bitwise-or",
   "title": "Smallest Subarrays With Maximum Bitwise OR",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Bit Manipulation",

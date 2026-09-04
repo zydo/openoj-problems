@@ -4,10 +4,17 @@
   "id": 729,
   "slug": "nonoverlapping-reservation-book",
   "title": "Nonoverlapping Reservation Book",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Balanced BST",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

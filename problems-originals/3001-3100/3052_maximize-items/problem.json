@@ -4,8 +4,11 @@
   "id": 3052,
   "slug": "maximize-items",
   "title": "Maximize Items",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,11 +4,19 @@
   "id": 2436,
   "slug": "fewest-gcd-safe-blocks",
   "title": "Fewest GCD-Safe Blocks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Greedy",
+    "Number Theory",
+    "Euclidean Algorithm"
   ],
   "invocation": {
     "type": "function",

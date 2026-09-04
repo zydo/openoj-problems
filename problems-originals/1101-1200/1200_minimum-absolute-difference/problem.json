@@ -4,8 +4,12 @@
   "id": 1200,
   "slug": "minimum-absolute-difference",
   "title": "Minimum Absolute Difference",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

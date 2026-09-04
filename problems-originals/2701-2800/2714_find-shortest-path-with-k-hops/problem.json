@@ -4,8 +4,13 @@
   "id": 2714,
   "slug": "find-shortest-path-with-k-hops",
   "title": "Find Shortest Path with K Hops",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"

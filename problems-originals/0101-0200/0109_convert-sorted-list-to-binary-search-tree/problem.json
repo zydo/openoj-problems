@@ -3,12 +3,19 @@
   "id": 109,
   "slug": "convert-sorted-list-to-binary-search-tree",
   "title": "Convert Sorted List to Binary Search Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Binary Search Tree",
     "Divide And Conquer",
     "Two Pointers"
+  ],
+  "topics": [
+    "Linked List",
+    "Divide and Conquer",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

@@ -3,11 +3,16 @@
   "id": 1792,
   "slug": "maximum-average-pass-ratio",
   "title": "Maximum Average Pass Ratio",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

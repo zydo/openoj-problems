@@ -4,10 +4,13 @@
   "id": 2308,
   "slug": "alternate-rows-by-gender",
   "title": "Alternate Rows by Gender",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

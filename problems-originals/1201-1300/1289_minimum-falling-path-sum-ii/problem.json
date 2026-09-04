@@ -3,8 +3,13 @@
   "id": 1289,
   "slug": "minimum-falling-path-sum-ii",
   "title": "Minimum Falling Path Sum II",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Matrix"
   ],

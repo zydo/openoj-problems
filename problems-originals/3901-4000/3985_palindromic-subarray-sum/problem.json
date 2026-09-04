@@ -4,8 +4,12 @@
   "id": 3985,
   "slug": "palindromic-subarray-sum",
   "title": "Palindromic Subarray Sum",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Two Pointers",
+    "Dynamic Programming"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

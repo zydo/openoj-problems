@@ -3,11 +3,20 @@
   "id": 1879,
   "slug": "minimum-xor-sum-of-two-arrays",
   "title": "Minimum XOR Sum of Two Arrays",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask",
+    "Hungarian Algorithm",
+    "Bipartite Graph",
+    "Successive Shortest Path Algorithm"
   ],
   "invocation": {
     "type": "function",

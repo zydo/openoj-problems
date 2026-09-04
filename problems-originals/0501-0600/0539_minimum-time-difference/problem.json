@@ -4,8 +4,14 @@
   "id": 539,
   "slug": "minimum-time-difference",
   "title": "Minimum Time Difference",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String",

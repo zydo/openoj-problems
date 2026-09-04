@@ -4,11 +4,20 @@
   "id": 2708,
   "slug": "maximum-subset-product",
   "title": "Maximum Subset Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Greedy",
+    "Bit Manipulation",
+    "Sorting",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 7,
   "slug": "reverse-integer",
   "title": "Reverse Integer",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

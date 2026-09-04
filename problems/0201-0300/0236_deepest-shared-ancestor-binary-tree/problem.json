@@ -4,11 +4,18 @@
   "id": 236,
   "slug": "deepest-shared-ancestor-binary-tree",
   "title": "Deepest Shared Ancestor, Binary Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "DFS",
     "Recursion"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor"
   ],
   "invocation": {
     "type": "function",

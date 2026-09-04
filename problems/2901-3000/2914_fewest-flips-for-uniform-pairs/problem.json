@@ -4,10 +4,13 @@
   "id": 2914,
   "slug": "fewest-flips-for-uniform-pairs",
   "title": "Fewest Flips For Uniform Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Greedy"
+  ],
+  "topics": [
+    "String"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 2943,
   "slug": "maximize-area-of-square-hole-in-grid",
   "title": "Maximize Area of Square Hole in Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

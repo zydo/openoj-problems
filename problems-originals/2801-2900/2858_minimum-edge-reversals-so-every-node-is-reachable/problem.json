@@ -3,11 +3,17 @@
   "id": 2858,
   "slug": "minimum-edge-reversals-so-every-node-is-reachable",
   "title": "Minimum Edge Reversals So Every Node Is Reachable",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS",
     "Tree DP"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

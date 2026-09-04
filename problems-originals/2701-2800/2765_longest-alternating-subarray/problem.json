@@ -4,8 +4,12 @@
   "id": 2765,
   "slug": "longest-alternating-subarray",
   "title": "Longest Alternating Subarray",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

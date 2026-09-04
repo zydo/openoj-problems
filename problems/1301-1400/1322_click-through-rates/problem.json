@@ -4,10 +4,13 @@
   "id": 1322,
   "slug": "click-through-rates",
   "title": "Click-Through Rates",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

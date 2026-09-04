@@ -4,8 +4,14 @@
   "id": 3574,
   "slug": "the-greatest-common-window",
   "title": "The Greatest Common Window",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Enumeration",

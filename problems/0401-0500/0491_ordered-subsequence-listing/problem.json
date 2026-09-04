@@ -4,11 +4,17 @@
   "id": 491,
   "slug": "ordered-subsequence-listing",
   "title": "Ordered Subsequence Listing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Backtracking",
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 3324,
   "slug": "every-string-on-the-typing-path",
   "title": "Every String On The Typing Path",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

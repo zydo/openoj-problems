@@ -4,8 +4,14 @@
   "id": 2863,
   "slug": "maximum-length-of-semi-decreasing-subarrays",
   "title": "Maximum Length of Semi-Decreasing Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Sorting",

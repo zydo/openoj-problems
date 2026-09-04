@@ -4,10 +4,16 @@
   "id": 3709,
   "slug": "the-exam-score-book",
   "title": "The Exam Score Book",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Design",
     "Prefix Sum"
   ],
   "invocation": {

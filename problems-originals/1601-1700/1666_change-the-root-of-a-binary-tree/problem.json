@@ -4,8 +4,13 @@
   "id": 1666,
   "slug": "change-the-root-of-a-binary-tree",
   "title": "Change the Root of a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

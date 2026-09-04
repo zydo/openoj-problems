@@ -4,8 +4,12 @@
   "id": 796,
   "slug": "rotate-string",
   "title": "Rotate String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "String Matching"
+  ],
+  "topics": [
     "String",
     "String Matching"
   ],

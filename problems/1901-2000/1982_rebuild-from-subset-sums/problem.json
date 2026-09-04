@@ -4,11 +4,17 @@
   "id": 1982,
   "slug": "rebuild-from-subset-sums",
   "title": "Rebuild From Subset Sums",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Divide and Conquer",
     "Recursion",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

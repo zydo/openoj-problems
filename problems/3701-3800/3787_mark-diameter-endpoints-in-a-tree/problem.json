@@ -4,11 +4,16 @@
   "id": 3787,
   "slug": "mark-diameter-endpoints-in-a-tree",
   "title": "Mark Diameter Endpoints in a Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Breadth-First Search",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

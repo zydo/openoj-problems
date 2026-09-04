@@ -4,8 +4,14 @@
   "id": 2351,
   "slug": "first-letter-to-appear-twice",
   "title": "First Letter to Appear Twice",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Bit Manipulation",

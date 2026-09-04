@@ -4,8 +4,14 @@
   "id": 3815,
   "slug": "design-auction-system",
   "title": "Design Auction System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Heap (Priority Queue)",

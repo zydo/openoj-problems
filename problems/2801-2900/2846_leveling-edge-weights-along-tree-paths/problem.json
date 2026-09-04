@@ -4,11 +4,18 @@
   "id": 2846,
   "slug": "leveling-edge-weights-along-tree-paths",
   "title": "Leveling Edge Weights Along Tree Paths",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,17 @@
   "id": 1681,
   "slug": "grouping-with-least-spread",
   "title": "Grouping Numbers with the Least Spread",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Bitmask"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Bit Manipulation",
     "Bitmask"
   ],
   "invocation": {

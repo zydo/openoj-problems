@@ -4,8 +4,12 @@
   "id": 3779,
   "slug": "trimming-duplicates-three-at-a-time",
   "title": "Trimming Duplicates Three At A Time",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

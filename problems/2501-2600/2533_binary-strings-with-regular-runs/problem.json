@@ -4,10 +4,13 @@
   "id": 2533,
   "slug": "binary-strings-with-regular-runs",
   "title": "Binary Strings with Regular Runs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Combinatorics"
+  ],
+  "topics": [
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

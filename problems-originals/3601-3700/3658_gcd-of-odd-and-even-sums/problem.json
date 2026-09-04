@@ -4,8 +4,12 @@
   "id": 3658,
   "slug": "gcd-of-odd-and-even-sums",
   "title": "GCD of Odd and Even Sums",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Number Theory"
   ],

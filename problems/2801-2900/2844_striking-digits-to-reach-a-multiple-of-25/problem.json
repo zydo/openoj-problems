@@ -4,11 +4,17 @@
   "id": 2844,
   "slug": "striking-digits-to-reach-a-multiple-of-25",
   "title": "Striking Digits To Reach A Multiple Of 25",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "String",
     "Greedy"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Greedy",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

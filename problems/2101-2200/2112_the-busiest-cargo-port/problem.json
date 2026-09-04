@@ -4,10 +4,13 @@
   "id": 2112,
   "slug": "the-busiest-cargo-port",
   "title": "The Busiest Cargo Port",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

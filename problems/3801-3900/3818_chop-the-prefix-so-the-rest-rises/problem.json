@@ -4,8 +4,11 @@
   "id": 3818,
   "slug": "chop-the-prefix-so-the-rest-rises",
   "title": "Chop The Prefix So The Rest Rises",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

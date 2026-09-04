@@ -4,8 +4,14 @@
   "id": 145,
   "slug": "the-post-order-walk",
   "title": "The Post-Order Walk",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search",

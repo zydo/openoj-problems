@@ -3,10 +3,14 @@
   "id": 1259,
   "slug": "handshakes-that-dont-cross",
   "title": "Handshakes That Don't Cross",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Combinatorics"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

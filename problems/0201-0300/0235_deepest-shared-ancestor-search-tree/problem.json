@@ -4,11 +4,19 @@
   "id": 235,
   "slug": "deepest-shared-ancestor-search-tree",
   "title": "Deepest Shared Ancestor, Search Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search Tree",
     "Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor"
   ],
   "invocation": {
     "type": "function",

@@ -3,11 +3,16 @@
   "id": 1345,
   "slug": "jump-game-iv",
   "title": "Jump Game IV",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "BFS",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
   ],
   "invocation": {
     "type": "function",

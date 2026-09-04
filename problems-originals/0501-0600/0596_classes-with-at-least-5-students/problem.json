@@ -4,8 +4,11 @@
   "id": 596,
   "slug": "classes-with-at-least-5-students",
   "title": "Classes With at Least 5 Students",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

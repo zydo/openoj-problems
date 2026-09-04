@@ -4,11 +4,19 @@
   "id": 1690,
   "slug": "two-end-takeaway-game-vii",
   "title": "Two-End Takeaway Game VII",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Minimax",
+    "Game Theory",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

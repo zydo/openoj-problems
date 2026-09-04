@@ -4,8 +4,12 @@
   "id": 1771,
   "slug": "longest-joined-palindrome",
   "title": "Longest Joined Palindrome",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

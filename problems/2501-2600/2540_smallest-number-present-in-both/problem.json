@@ -4,11 +4,17 @@
   "id": 2540,
   "slug": "smallest-number-present-in-both",
   "title": "Smallest Number Present in Both",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

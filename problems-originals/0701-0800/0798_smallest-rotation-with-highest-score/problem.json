@@ -4,8 +4,12 @@
   "id": 798,
   "slug": "smallest-rotation-with-highest-score",
   "title": "Smallest Rotation with Highest Score",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

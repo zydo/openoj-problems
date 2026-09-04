@@ -4,8 +4,12 @@
   "id": 2789,
   "slug": "the-biggest-number-left-standing",
   "title": "The Biggest Number Left Standing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

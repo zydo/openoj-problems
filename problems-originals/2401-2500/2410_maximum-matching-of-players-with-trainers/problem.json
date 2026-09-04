@@ -3,10 +3,16 @@
   "id": 2410,
   "slug": "maximum-matching-of-players-with-trainers",
   "title": "Maximum Matching of Players With Trainers",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
     "Sorting"
   ],
   "invocation": {

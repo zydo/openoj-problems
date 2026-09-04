@@ -4,8 +4,12 @@
   "id": 4017,
   "slug": "peaks-in-array-ii",
   "title": "Peaks in Array II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Segment Tree",
+    "Array"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

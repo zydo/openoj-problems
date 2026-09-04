@@ -4,10 +4,13 @@
   "id": 2474,
   "slug": "annual-spending-trend",
   "title": "Annual Spending Trend",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

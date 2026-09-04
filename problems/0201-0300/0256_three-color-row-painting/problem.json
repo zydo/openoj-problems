@@ -4,8 +4,12 @@
   "id": 256,
   "slug": "three-color-row-painting",
   "title": "Three-Color Row Painting",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

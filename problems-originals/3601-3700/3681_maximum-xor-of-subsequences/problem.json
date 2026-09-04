@@ -4,8 +4,14 @@
   "id": 3681,
   "slug": "maximum-xor-of-subsequences",
   "title": "Maximum XOR of Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

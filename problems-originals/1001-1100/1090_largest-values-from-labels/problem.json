@@ -4,8 +4,15 @@
   "id": 1090,
   "slug": "largest-values-from-labels",
   "title": "Largest Values From Labels",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

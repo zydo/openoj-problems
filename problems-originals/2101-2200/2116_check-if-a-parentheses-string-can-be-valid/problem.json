@@ -4,8 +4,14 @@
   "id": 2116,
   "slug": "check-if-a-parentheses-string-can-be-valid",
   "title": "Check if a Parentheses String Can Be Valid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Greedy",

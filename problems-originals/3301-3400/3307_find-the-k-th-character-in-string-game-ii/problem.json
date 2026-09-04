@@ -4,8 +4,13 @@
   "id": 3307,
   "slug": "find-the-k-th-character-in-string-game-ii",
   "title": "Find the K-th Character in String Game II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Recursion"

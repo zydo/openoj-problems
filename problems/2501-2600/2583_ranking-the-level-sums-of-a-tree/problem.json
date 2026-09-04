@@ -4,8 +4,14 @@
   "id": 2583,
   "slug": "ranking-the-level-sums-of-a-tree",
   "title": "Ranking the Level Sums of a Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Sorting",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Sorting",

@@ -4,8 +4,12 @@
   "id": 1925,
   "slug": "count-square-sum-triples",
   "title": "Count Square Sum Triples",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

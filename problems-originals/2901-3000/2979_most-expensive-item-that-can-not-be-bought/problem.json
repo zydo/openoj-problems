@@ -4,8 +4,13 @@
   "id": 2979,
   "slug": "most-expensive-item-that-can-not-be-bought",
   "title": "Most Expensive Item That Can Not Be Bought",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Number Theory"

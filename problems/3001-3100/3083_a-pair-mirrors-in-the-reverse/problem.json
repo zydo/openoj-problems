@@ -4,8 +4,12 @@
   "id": 3083,
   "slug": "a-pair-mirrors-in-the-reverse",
   "title": "A Pair Mirrors In The Reverse",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

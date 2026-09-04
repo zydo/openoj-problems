@@ -3,8 +3,14 @@
   "id": 417,
   "slug": "pacific-atlantic-water-flow",
   "title": "Pacific Atlantic Water Flow",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

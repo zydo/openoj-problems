@@ -3,11 +3,17 @@
   "id": 857,
   "slug": "minimum-cost-to-hire-k-workers",
   "title": "Minimum Cost to Hire K Workers",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Sorting",
     "Heap",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2911,
   "slug": "minimum-changes-to-make-k-semi-palindromes",
   "title": "Minimum Changes to Make K Semi-palindromes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming"

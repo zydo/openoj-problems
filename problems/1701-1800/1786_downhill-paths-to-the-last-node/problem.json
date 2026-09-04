@@ -4,12 +4,20 @@
   "id": 1786,
   "slug": "downhill-paths-to-the-last-node",
   "title": "Downhill Paths to the Last Node",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

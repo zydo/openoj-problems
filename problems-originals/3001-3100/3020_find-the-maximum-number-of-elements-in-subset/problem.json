@@ -4,8 +4,13 @@
   "id": 3020,
   "slug": "find-the-maximum-number-of-elements-in-subset",
   "title": "Find the Maximum Number of Elements in Subset",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

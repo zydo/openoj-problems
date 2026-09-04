@@ -3,10 +3,17 @@
   "id": 3191,
   "slug": "minimum-operations-to-make-binary-array-elements-equal-to-one-i",
   "title": "Minimum Operations to Make Binary Array Elements Equal to One I",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

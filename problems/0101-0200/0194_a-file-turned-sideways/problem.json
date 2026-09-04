@@ -4,10 +4,13 @@
   "id": 194,
   "slug": "a-file-turned-sideways",
   "title": "A File Turned Sideways",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Shell"
   ],
   "invocation": {
     "type": "sql",

@@ -3,12 +3,18 @@
   "id": 316,
   "slug": "remove-duplicate-letters",
   "title": "Remove Duplicate Letters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Monotonic Stack",
     "Greedy",
     "Hash Table"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

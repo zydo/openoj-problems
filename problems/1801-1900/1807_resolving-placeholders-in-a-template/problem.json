@@ -4,8 +4,13 @@
   "id": 1807,
   "slug": "resolving-placeholders-in-a-template",
   "title": "Resolving Placeholders in a Template",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

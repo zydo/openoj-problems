@@ -4,8 +4,11 @@
   "id": 3791,
   "slug": "number-of-balanced-integers-in-a-range",
   "title": "Number of Balanced Integers in a Range",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

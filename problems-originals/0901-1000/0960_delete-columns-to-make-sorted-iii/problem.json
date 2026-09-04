@@ -4,8 +4,13 @@
   "id": 960,
   "slug": "delete-columns-to-make-sorted-iii",
   "title": "Delete Columns to Make Sorted III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming"

@@ -4,8 +4,13 @@
   "id": 1852,
   "slug": "unique-values-in-every-window",
   "title": "Unique Values in Every Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

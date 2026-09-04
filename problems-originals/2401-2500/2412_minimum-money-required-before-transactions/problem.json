@@ -3,8 +3,13 @@
   "id": 2412,
   "slug": "minimum-money-required-before-transactions",
   "title": "Minimum Money Required Before Transactions",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

@@ -4,8 +4,11 @@
   "id": 3683,
   "slug": "first-task-off-the-clock",
   "title": "First Task Off The Clock",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

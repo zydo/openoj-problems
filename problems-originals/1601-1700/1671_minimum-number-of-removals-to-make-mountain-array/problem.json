@@ -3,10 +3,16 @@
   "id": 1671,
   "slug": "minimum-number-of-removals-to-make-mountain-array",
   "title": "Minimum Number of Removals to Make Mountain Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

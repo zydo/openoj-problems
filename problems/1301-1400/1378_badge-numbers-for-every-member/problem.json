@@ -4,10 +4,13 @@
   "id": 1378,
   "slug": "badge-numbers-for-every-member",
   "title": "Badge Numbers for Every Member",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

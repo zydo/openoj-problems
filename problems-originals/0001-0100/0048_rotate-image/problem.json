@@ -4,8 +4,13 @@
   "id": 48,
   "slug": "rotate-image",
   "title": "Rotate Image",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Matrix"

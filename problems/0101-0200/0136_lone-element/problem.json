@@ -4,8 +4,12 @@
   "id": 136,
   "slug": "lone-element",
   "title": "Lone Element",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

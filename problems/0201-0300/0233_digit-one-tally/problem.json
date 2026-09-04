@@ -4,10 +4,15 @@
   "id": 233,
   "slug": "digit-one-tally",
   "title": "Digit One Tally",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

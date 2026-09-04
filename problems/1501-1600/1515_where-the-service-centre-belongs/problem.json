@@ -4,11 +4,17 @@
   "id": 1515,
   "slug": "where-the-service-centre-belongs",
   "title": "Where the Service Centre Belongs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Randomized"
   ],
   "invocation": {
     "type": "function",

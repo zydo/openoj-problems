@@ -4,10 +4,16 @@
   "id": 635,
   "slug": "timestamp-log",
   "title": "Timestamp Log",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Design"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

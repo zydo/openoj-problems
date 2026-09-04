@@ -4,8 +4,13 @@
   "id": 1006,
   "slug": "clumsy-factorial",
   "title": "Clumsy Factorial",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Stack",
     "Simulation"

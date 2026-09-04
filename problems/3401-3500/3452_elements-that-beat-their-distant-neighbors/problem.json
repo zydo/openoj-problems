@@ -4,8 +4,11 @@
   "id": 3452,
   "slug": "elements-that-beat-their-distant-neighbors",
   "title": "Elements That Beat Their Distant Neighbors",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

@@ -4,10 +4,15 @@
   "id": 1190,
   "slug": "reverse-every-bracketed-segment",
   "title": "Reverse Every Bracketed Segment",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Stack"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
   ],
   "invocation": {
     "type": "function",

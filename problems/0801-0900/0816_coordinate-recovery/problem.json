@@ -4,8 +4,13 @@
   "id": 816,
   "slug": "coordinate-recovery",
   "title": "Coordinate Recovery",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Backtracking",
     "Enumeration"

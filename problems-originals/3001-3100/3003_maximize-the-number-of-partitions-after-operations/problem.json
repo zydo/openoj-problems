@@ -4,8 +4,14 @@
   "id": 3003,
   "slug": "maximize-the-number-of-partitions-after-operations",
   "title": "Maximize the Number of Partitions After Operations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Bit Manipulation",

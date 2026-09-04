@@ -4,12 +4,19 @@
   "id": 1622,
   "slug": "running-transforms-on-a-sequence",
   "title": "Running Transforms On A Sequence",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Design",
     "Segment Tree",
     "Data Stream"
+  ],
+  "topics": [
+    "Math",
+    "Design",
+    "Segment Tree",
+    "Number Theory",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "design",

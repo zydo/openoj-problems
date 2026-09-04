@@ -3,10 +3,19 @@
   "id": 2818,
   "slug": "apply-operations-to-maximize-score",
   "title": "Apply Operations to Maximize Score",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Stack",
     "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack",
     "Number Theory"
   ],
   "invocation": {

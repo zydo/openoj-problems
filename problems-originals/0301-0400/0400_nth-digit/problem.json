@@ -4,8 +4,12 @@
   "id": 400,
   "slug": "nth-digit",
   "title": "Nth Digit",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

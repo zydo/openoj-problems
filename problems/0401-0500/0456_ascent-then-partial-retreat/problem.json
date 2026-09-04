@@ -4,8 +4,15 @@
   "id": 456,
   "slug": "ascent-then-partial-retreat",
   "title": "Ascent Then Partial Retreat",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Monotonic Stack",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Stack",

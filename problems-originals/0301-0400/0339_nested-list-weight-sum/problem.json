@@ -4,8 +4,12 @@
   "id": 339,
   "slug": "nested-list-weight-sum",
   "title": "Nested List Weight Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search"
   ],

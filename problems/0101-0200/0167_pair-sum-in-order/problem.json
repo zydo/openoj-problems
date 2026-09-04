@@ -4,10 +4,15 @@
   "id": 167,
   "slug": "pair-sum-in-order",
   "title": "Pair Sum In Order",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

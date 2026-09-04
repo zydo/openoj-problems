@@ -4,8 +4,13 @@
   "id": 3618,
   "slug": "prime-slots-against-the-rest",
   "title": "Prime Slots Against The Rest",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Number Theory"

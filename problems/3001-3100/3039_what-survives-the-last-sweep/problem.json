@@ -4,10 +4,16 @@
   "id": 3039,
   "slug": "what-survives-the-last-sweep",
   "title": "What Survives The Last Sweep",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
     "Counting"
   ],
   "invocation": {

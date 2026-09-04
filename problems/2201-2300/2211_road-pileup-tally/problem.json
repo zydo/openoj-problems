@@ -4,11 +4,16 @@
   "id": 2211,
   "slug": "road-pileup-tally",
   "title": "Road Pileup Tally",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Simulation",
     "Two Pointers"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

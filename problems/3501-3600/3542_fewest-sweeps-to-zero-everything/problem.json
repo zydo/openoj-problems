@@ -4,9 +4,16 @@
   "id": 3542,
   "slug": "fewest-sweeps-to-zero-everything",
   "title": "Fewest Sweeps To Zero Everything",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Stack",
     "Greedy",
     "Monotonic Stack"

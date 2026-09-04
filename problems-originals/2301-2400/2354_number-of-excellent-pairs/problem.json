@@ -3,10 +3,16 @@
   "id": 2354,
   "slug": "number-of-excellent-pairs",
   "title": "Number of Excellent Pairs",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
     "Bit Manipulation"
   ],
   "invocation": {

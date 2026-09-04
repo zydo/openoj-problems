@@ -4,8 +4,12 @@
   "id": 2694,
   "slug": "event-emitter",
   "title": "Event Emitter",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Design",
+    "Hash Table"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

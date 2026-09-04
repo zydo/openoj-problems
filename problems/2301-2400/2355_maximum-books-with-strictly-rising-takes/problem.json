@@ -4,9 +4,15 @@
   "id": 2355,
   "slug": "maximum-books-with-strictly-rising-takes",
   "title": "Maximum Books With Strictly Rising Takes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
     "Monotonic Stack"
   ],
   "invocation": {

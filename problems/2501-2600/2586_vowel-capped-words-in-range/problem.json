@@ -4,8 +4,13 @@
   "id": 2586,
   "slug": "vowel-capped-words-in-range",
   "title": "Vowel-Capped Words in Range",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "String",
     "Counting"

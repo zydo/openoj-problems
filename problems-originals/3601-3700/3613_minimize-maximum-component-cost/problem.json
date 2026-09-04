@@ -3,11 +3,17 @@
   "id": 3613,
   "slug": "minimize-maximum-component-cost",
   "title": "Minimize Maximum Component Cost",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Minimum Spanning Tree",
     "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Binary Search",
+    "Union-Find",
+    "Graph Theory",
     "Sorting"
   ],
   "invocation": {

@@ -4,11 +4,17 @@
   "id": 2851,
   "slug": "count-rotation-sequences",
   "title": "Count Rotation Sequences",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "KMP",
     "Matrix Exponentiation",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "String Matching"
   ],
   "invocation": {
     "type": "function",

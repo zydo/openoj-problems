@@ -4,10 +4,13 @@
   "id": 2278,
   "slug": "share-of-a-string-held-by-a-letter",
   "title": "Share of a String Held by a Letter",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Counting"
+  ],
+  "topics": [
+    "String"
   ],
   "invocation": {
     "type": "function",

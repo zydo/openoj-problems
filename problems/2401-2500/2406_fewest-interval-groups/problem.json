@@ -4,11 +4,19 @@
   "id": 2406,
   "slug": "fewest-interval-groups",
   "title": "Fewest Interval Groups",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

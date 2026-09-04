@@ -4,8 +4,12 @@
   "id": 751,
   "slug": "address-block-partition",
   "title": "Address Block Partition",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "String",
     "Bit Manipulation"
   ],

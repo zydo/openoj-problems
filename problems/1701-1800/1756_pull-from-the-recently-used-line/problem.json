@@ -4,12 +4,23 @@
   "id": 1756,
   "slug": "pull-from-the-recently-used-line",
   "title": "Pull From The Recently Used Line",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Design",
     "Segment Tree",
     "Data Stream"
+  ],
+  "topics": [
+    "Array",
+    "Linked List",
+    "Divide and Conquer",
+    "Design",
+    "Simulation",
+    "Doubly-Linked List",
+    "Sqrt Decomposition",
+    "Treap",
+    "Splay Tree"
   ],
   "invocation": {
     "type": "design",

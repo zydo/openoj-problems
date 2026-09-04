@@ -4,12 +4,20 @@
   "id": 1147,
   "slug": "most-pieces-in-a-mirrored-split",
   "title": "Most Pieces in a Mirrored Split",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Two Pointers",
     "String",
     "Recursion"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Rolling Hash",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

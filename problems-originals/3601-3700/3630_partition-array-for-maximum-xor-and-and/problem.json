@@ -4,8 +4,15 @@
   "id": 3630,
   "slug": "partition-array-for-maximum-xor-and-and",
   "title": "Partition Array for Maximum XOR and AND",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

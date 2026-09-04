@@ -4,10 +4,14 @@
   "id": 746,
   "slug": "cheapest-stair-climb",
   "title": "Cheapest Stair Climb",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

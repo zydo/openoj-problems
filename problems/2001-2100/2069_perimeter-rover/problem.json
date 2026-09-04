@@ -4,8 +4,12 @@
   "id": 2069,
   "slug": "perimeter-rover",
   "title": "Perimeter Rover",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Design",
+    "Simulation"
+  ],
+  "topics": [
     "Design",
     "Simulation"
   ],

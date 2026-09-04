@@ -4,10 +4,14 @@
   "id": 2103,
   "slug": "rods-with-every-color",
   "title": "Rods With Every Color",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Hash Table",
+    "String"
   ],
   "invocation": {
     "type": "function",

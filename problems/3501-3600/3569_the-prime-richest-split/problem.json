@@ -4,12 +4,20 @@
   "id": 3569,
   "slug": "the-prime-richest-split",
   "title": "The Prime-Richest Split",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Segment Tree",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Segment Tree",
+    "Number Theory",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

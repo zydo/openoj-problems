@@ -4,10 +4,16 @@
   "id": 2543,
   "slug": "reaching-the-target-point-on-a-grid",
   "title": "Reaching the Target Point on a Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Number Theory",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
+    "Math",
+    "Number Theory",
+    "Euclidean Algorithm",
     "Greatest Common Divisor"
   ],
   "invocation": {

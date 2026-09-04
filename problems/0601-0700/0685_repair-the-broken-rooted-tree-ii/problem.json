@@ -4,8 +4,14 @@
   "id": 685,
   "slug": "repair-the-broken-rooted-tree-ii",
   "title": "Repair the Broken Rooted Tree II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

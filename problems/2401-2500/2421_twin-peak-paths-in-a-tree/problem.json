@@ -4,11 +4,19 @@
   "id": 2421,
   "slug": "twin-peak-paths-in-a-tree",
   "title": "Twin-Peak Paths in a Tree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Union-Find",
     "Graph",
     "Tree",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Union-Find",
+    "Graph Theory",
     "Sorting"
   ],
   "invocation": {

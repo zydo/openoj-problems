@@ -4,11 +4,18 @@
   "id": 2581,
   "slug": "plausible-roots-of-a-tree",
   "title": "Plausible Roots of a Tree",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

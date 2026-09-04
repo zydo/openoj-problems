@@ -4,10 +4,16 @@
   "id": 259,
   "slug": "triplet-sum-below-target",
   "title": "Triplet Sum Below Target",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
     "Sorting"
   ],
   "invocation": {

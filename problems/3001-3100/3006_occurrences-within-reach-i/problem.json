@@ -4,11 +4,22 @@
   "id": 3006,
   "slug": "occurrences-within-reach-i",
   "title": "Occurrences Within Reach I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "String Matching",
     "Binary Search"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm",
+    "Boyer–Moore String-Search Algorithm"
   ],
   "invocation": {
     "type": "function",

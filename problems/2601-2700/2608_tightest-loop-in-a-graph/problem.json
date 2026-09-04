@@ -4,8 +4,12 @@
   "id": 2608,
   "slug": "tightest-loop-in-a-graph",
   "title": "Tightest Loop in a Graph",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Breadth-First Search",
     "Graph Theory"
   ],

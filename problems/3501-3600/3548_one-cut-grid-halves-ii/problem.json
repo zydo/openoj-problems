@@ -4,11 +4,18 @@
   "id": 3548,
   "slug": "one-cut-grid-halves-ii",
   "title": "One-Cut Grid Halves II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Enumeration",
     "Prefix Sum"
   ],
   "invocation": {

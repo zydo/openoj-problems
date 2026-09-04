@@ -4,8 +4,13 @@
   "id": 2952,
   "slug": "fewest-coins-to-cover-every-sum",
   "title": "Fewest Coins to Cover Every Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

@@ -4,8 +4,14 @@
   "id": 899,
   "slug": "smallest-reachable-queue",
   "title": "Smallest Reachable Queue",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Sorting",
+    "Lexicographically Minimal String Rotation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Sorting",

@@ -4,10 +4,15 @@
   "id": 305,
   "slug": "count-grid-islands-land-updates",
   "title": "Count Grid Islands, Land Updates",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

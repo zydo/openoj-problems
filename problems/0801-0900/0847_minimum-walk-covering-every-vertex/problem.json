@@ -4,11 +4,18 @@
   "id": 847,
   "slug": "minimum-walk-covering-every-vertex",
   "title": "Minimum Walk Covering Every Vertex",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Graph",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

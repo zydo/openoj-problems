@@ -4,8 +4,14 @@
   "id": 3681,
   "slug": "the-greatest-combined-xor",
   "title": "The Greatest Combined Xor",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

@@ -4,8 +4,12 @@
   "id": 3631,
   "slug": "rank-alerts-by-impact-and-reach",
   "title": "Rank Alerts By Impact And Reach",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

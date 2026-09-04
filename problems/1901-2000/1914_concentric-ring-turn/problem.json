@@ -4,8 +4,13 @@
   "id": 1914,
   "slug": "concentric-ring-turn",
   "title": "Concentric Ring Turn",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

@@ -4,12 +4,21 @@
   "id": 810,
   "slug": "xor-erasure-duel",
   "title": "XOR Erasure Duel",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Bit Manipulation",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Brainteaser",
+    "Game Theory",
+    "Zero-Sum Game",
+    "Impartial Game"
   ],
   "invocation": {
     "type": "function",

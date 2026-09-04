@@ -4,8 +4,13 @@
   "id": 466,
   "slug": "count-the-repetitions",
   "title": "Count The Repetitions",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming"

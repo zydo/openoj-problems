@@ -4,12 +4,18 @@
   "id": 1365,
   "slug": "count-smaller-values-per-position",
   "title": "Count Smaller Values Per Position",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Sorting",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting Sort"
   ],
   "invocation": {
     "type": "design",

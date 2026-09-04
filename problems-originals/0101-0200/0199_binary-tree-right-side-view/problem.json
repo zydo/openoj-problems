@@ -4,8 +4,14 @@
   "id": 199,
   "slug": "binary-tree-right-side-view",
   "title": "Binary Tree Right Side View",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

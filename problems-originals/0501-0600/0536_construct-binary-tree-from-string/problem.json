@@ -4,8 +4,15 @@
   "id": 536,
   "slug": "construct-binary-tree-from-string",
   "title": "Construct Binary Tree from String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Tree",

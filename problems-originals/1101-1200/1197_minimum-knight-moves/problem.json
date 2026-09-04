@@ -4,9 +4,15 @@
   "id": 1197,
   "slug": "minimum-knight-moves",
   "title": "Minimum Knight Moves",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Breadth-First Search",
+    "Heuristic Search",
+    "Bidirectional Search",
+    "A* Search"
   ],
   "invocation": {
     "type": "function",

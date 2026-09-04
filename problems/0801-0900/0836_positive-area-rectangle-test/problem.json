@@ -4,8 +4,12 @@
   "id": 836,
   "slug": "positive-area-rectangle-test",
   "title": "Positive Area Rectangle Test",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

@@ -4,8 +4,15 @@
   "id": 1023,
   "slug": "camelcase-matching",
   "title": "Camelcase Matching",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Trie",
+    "String Matching"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "String",

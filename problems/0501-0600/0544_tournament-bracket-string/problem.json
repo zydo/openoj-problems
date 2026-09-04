@@ -4,8 +4,13 @@
   "id": 544,
   "slug": "tournament-bracket-string",
   "title": "Tournament Bracket String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Recursion",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Recursion",
     "Simulation"

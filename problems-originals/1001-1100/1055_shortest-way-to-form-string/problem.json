@@ -4,8 +4,14 @@
   "id": 1055,
   "slug": "shortest-way-to-form-string",
   "title": "Shortest Way to Form String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Binary Search",

@@ -4,8 +4,14 @@
   "id": 811,
   "slug": "subdomain-visit-count",
   "title": "Subdomain Visit Count",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

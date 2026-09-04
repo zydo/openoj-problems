@@ -3,12 +3,18 @@
   "id": 1928,
   "slug": "minimum-cost-to-reach-destination-in-time",
   "title": "Minimum Cost to Reach Destination in Time",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Graph",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 2859,
   "slug": "summing-entries-at-k-bit-positions",
   "title": "Summing Entries At K-Bit Positions",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

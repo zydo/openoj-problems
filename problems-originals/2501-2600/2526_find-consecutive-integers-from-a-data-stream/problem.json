@@ -4,8 +4,15 @@
   "id": 2526,
   "slug": "find-consecutive-integers-from-a-data-stream",
   "title": "Find Consecutive Integers from a Data Stream",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Counting",
+    "Data Stream"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Queue",

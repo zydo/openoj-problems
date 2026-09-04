@@ -4,8 +4,14 @@
   "id": 2900,
   "slug": "longest-unequal-adjacent-groups-subsequence-i",
   "title": "Longest Unequal Adjacent Groups Subsequence I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming",

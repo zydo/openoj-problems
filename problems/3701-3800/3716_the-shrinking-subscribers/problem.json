@@ -4,10 +4,13 @@
   "id": 3716,
   "slug": "the-shrinking-subscribers",
   "title": "The Shrinking Subscribers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,8 +4,14 @@
   "id": 2819,
   "slug": "bobs-share-of-the-chocolate-bill",
   "title": "Bob's Share Of The Chocolate Bill",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting",

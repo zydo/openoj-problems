@@ -4,8 +4,12 @@
   "id": 3880,
   "slug": "minimum-absolute-difference-between-two-values",
   "title": "Minimum Absolute Difference Between Two Values",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

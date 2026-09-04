@@ -4,8 +4,12 @@
   "id": 3675,
   "slug": "minimum-operations-to-transform-string",
   "title": "Minimum Operations to Transform String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

@@ -4,8 +4,14 @@
   "id": 3948,
   "slug": "lexicographically-maximum-mex-array",
   "title": "Lexicographically Maximum MEX Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Queue"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

@@ -4,8 +4,13 @@
   "id": 284,
   "slug": "peeking-iterator",
   "title": "Peeking Iterator",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Design",
+    "Iterator"
+  ],
+  "topics": [
     "Array",
     "Design",
     "Iterator"

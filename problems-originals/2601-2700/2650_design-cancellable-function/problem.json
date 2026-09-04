@@ -4,8 +4,12 @@
   "id": 2650,
   "slug": "design-cancellable-function",
   "title": "Design Cancellable Function",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Concurrency",
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

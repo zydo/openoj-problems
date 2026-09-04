@@ -4,8 +4,15 @@
   "id": 770,
   "slug": "polynomial-expression-simplifier-iv",
   "title": "Polynomial Expression Simplifier IV",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

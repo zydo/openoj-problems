@@ -4,8 +4,11 @@
   "id": 2994,
   "slug": "friday-purchases-ii",
   "title": "Friday Purchases II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

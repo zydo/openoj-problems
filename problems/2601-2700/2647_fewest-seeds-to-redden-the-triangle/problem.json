@@ -4,8 +4,12 @@
   "id": 2647,
   "slug": "fewest-seeds-to-redden-the-triangle",
   "title": "Fewest Seeds to Redden the Triangle",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

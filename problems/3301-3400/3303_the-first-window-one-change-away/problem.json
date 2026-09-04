@@ -4,8 +4,13 @@
   "id": 3303,
   "slug": "the-first-window-one-change-away",
   "title": "The First Window One Change Away",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "String Matching",
+    "Knuth–Morris–Pratt Algorithm"
+  ],
+  "topics": [
     "String",
     "String Matching",
     "Knuth–Morris–Pratt Algorithm"

@@ -4,12 +4,19 @@
   "id": 1723,
   "slug": "smallest-maximum-workload",
   "title": "Smallest Maximum Workload",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Backtracking",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

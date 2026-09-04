@@ -4,11 +4,16 @@
   "id": 1424,
   "slug": "ragged-diagonal-sweep-ii",
   "title": "Ragged Diagonal Sweep II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

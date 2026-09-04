@@ -4,10 +4,15 @@
   "id": 1705,
   "slug": "most-apples-before-rot",
   "title": "Most Apples Before Rot",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

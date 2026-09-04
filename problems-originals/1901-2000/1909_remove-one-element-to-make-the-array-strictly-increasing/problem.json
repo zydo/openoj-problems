@@ -4,8 +4,11 @@
   "id": 1909,
   "slug": "remove-one-element-to-make-the-array-strictly-increasing",
   "title": "Remove One Element to Make the Array Strictly Increasing",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

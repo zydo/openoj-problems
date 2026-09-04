@@ -4,8 +4,11 @@
   "id": 3110,
   "slug": "adjacent-letter-spread",
   "title": "Adjacent Letter Spread",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

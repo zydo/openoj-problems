@@ -4,8 +4,11 @@
   "id": 1299,
   "slug": "replace-elements-with-greatest-element-on-right-side",
   "title": "Replace Elements with Greatest Element on Right Side",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

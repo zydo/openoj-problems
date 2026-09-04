@@ -4,8 +4,14 @@
   "id": 641,
   "slug": "design-circular-deque",
   "title": "Design Circular Deque",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Linked List",
+    "Design",
+    "Queue"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Design",

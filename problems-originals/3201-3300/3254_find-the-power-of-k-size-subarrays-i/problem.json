@@ -4,8 +4,12 @@
   "id": 3254,
   "slug": "find-the-power-of-k-size-subarrays-i",
   "title": "Find the Power of K-Size Subarrays I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

@@ -4,10 +4,13 @@
   "id": 2004,
   "slug": "recruiting-under-a-salary-cap",
   "title": "Recruiting Under a Salary Cap",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

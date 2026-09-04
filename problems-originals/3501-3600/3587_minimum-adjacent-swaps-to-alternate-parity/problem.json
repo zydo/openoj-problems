@@ -4,8 +4,12 @@
   "id": 3587,
   "slug": "minimum-adjacent-swaps-to-alternate-parity",
   "title": "Minimum Adjacent Swaps to Alternate Parity",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

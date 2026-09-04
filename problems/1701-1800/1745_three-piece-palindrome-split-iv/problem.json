@@ -4,8 +4,12 @@
   "id": 1745,
   "slug": "three-piece-palindrome-split-iv",
   "title": "Three-Piece Palindrome Split IV",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

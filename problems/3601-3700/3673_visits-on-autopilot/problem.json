@@ -4,10 +4,13 @@
   "id": 3673,
   "slug": "visits-on-autopilot",
   "title": "Visits On Autopilot",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

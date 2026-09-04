@@ -4,8 +4,14 @@
   "id": 883,
   "slug": "projection-area-of-3d-shapes",
   "title": "Projection Area of 3D Shapes",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

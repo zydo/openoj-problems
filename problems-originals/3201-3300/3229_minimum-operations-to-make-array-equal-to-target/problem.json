@@ -3,11 +3,18 @@
   "id": 3229,
   "slug": "minimum-operations-to-make-array-equal-to-target",
   "title": "Minimum Operations to Make Array Equal to Target",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Difference Array",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

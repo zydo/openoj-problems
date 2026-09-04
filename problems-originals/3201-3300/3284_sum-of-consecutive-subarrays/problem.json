@@ -4,8 +4,13 @@
   "id": 3284,
   "slug": "sum-of-consecutive-subarrays",
   "title": "Sum of Consecutive Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Dynamic Programming"

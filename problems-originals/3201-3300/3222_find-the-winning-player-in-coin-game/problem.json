@@ -4,8 +4,13 @@
   "id": 3222,
   "slug": "find-the-winning-player-in-coin-game",
   "title": "Find the Winning Player in Coin Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation",
+    "Game Theory"
+  ],
+  "topics": [
     "Math",
     "Simulation",
     "Game Theory"

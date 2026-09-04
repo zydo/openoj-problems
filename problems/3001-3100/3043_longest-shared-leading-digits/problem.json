@@ -4,10 +4,16 @@
   "id": 3043,
   "slug": "longest-shared-leading-digits",
   "title": "Longest Shared Leading Digits",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Trie",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

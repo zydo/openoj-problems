@@ -4,8 +4,12 @@
   "id": 3693,
   "slug": "jumps-priced-by-distance-ii",
   "title": "Jumps Priced By Distance II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

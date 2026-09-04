@@ -4,8 +4,12 @@
   "id": 696,
   "slug": "balanced-run-substrings",
   "title": "Balanced Run Substrings",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

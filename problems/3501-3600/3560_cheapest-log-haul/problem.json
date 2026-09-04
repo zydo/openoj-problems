@@ -4,8 +4,11 @@
   "id": 3560,
   "slug": "cheapest-log-haul",
   "title": "Cheapest Log Haul",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

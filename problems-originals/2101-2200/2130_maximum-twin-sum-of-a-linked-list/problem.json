@@ -4,8 +4,13 @@
   "id": 2130,
   "slug": "maximum-twin-sum-of-a-linked-list",
   "title": "Maximum Twin Sum of a Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Two Pointers",
+    "Stack"
+  ],
+  "topics": [
     "Linked List",
     "Two Pointers",
     "Stack"

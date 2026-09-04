@@ -4,10 +4,13 @@
   "id": 1699,
   "slug": "flights-between-two-cities",
   "title": "Flights Between Two Cities",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

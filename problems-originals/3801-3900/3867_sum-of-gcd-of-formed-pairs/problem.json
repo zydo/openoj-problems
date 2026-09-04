@@ -4,8 +4,16 @@
   "id": 3867,
   "slug": "sum-of-gcd-of-formed-pairs",
   "title": "Sum of GCD of Formed Pairs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Sorting",
+    "Simulation",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers",

@@ -4,11 +4,16 @@
   "id": 1466,
   "slug": "flip-roads-to-reach-the-hub",
   "title": "Flip Roads to Reach the Hub",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "DFS",
     "Graph"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

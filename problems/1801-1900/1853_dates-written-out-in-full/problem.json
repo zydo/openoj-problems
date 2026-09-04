@@ -4,10 +4,13 @@
   "id": 1853,
   "slug": "dates-written-out-in-full",
   "title": "Dates Written Out In Full",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

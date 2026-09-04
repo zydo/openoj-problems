@@ -4,8 +4,15 @@
   "id": 2385,
   "slug": "amount-of-time-for-binary-tree-to-be-infected",
   "title": "Amount of Time for Binary Tree to Be Infected",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

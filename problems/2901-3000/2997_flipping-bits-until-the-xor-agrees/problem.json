@@ -4,8 +4,12 @@
   "id": 2997,
   "slug": "flipping-bits-until-the-xor-agrees",
   "title": "Flipping Bits Until The Xor Agrees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

@@ -4,8 +4,12 @@
   "id": 87,
   "slug": "stirred-strings",
   "title": "Stirred Strings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

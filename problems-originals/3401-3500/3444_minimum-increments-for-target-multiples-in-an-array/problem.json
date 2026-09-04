@@ -4,8 +4,16 @@
   "id": 3444,
   "slug": "minimum-increments-for-target-multiples-in-an-array",
   "title": "Minimum Increments for Target Multiples in an Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Number Theory",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

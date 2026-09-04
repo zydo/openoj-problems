@@ -4,8 +4,14 @@
   "id": 993,
   "slug": "cousins-in-binary-tree",
   "title": "Cousins in Binary Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

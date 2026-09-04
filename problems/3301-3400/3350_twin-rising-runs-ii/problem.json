@@ -4,8 +4,12 @@
   "id": 3350,
   "slug": "twin-rising-runs-ii",
   "title": "Twin Rising Runs II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

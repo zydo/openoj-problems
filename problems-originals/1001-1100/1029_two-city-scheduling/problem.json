@@ -3,10 +3,17 @@
   "id": 1029,
   "slug": "two-city-scheduling",
   "title": "Two City Scheduling",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Hungarian Algorithm",
+    "Successive Shortest Path Algorithm"
   ],
   "invocation": {
     "type": "function",

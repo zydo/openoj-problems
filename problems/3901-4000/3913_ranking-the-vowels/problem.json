@@ -4,8 +4,13 @@
   "id": 3913,
   "slug": "ranking-the-vowels",
   "title": "Ranking The Vowels",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Sorting",
     "Counting"

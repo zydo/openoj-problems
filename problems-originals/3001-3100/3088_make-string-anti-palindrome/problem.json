@@ -4,8 +4,14 @@
   "id": 3088,
   "slug": "make-string-anti-palindrome",
   "title": "Make String Anti-palindrome",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Sorting",

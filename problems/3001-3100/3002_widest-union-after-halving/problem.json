@@ -4,8 +4,13 @@
   "id": 3002,
   "slug": "widest-union-after-halving",
   "title": "Widest Union After Halving Both Arrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy"

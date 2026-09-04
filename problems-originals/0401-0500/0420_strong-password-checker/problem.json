@@ -4,8 +4,13 @@
   "id": 420,
   "slug": "strong-password-checker",
   "title": "Strong Password Checker",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Heap (Priority Queue)"

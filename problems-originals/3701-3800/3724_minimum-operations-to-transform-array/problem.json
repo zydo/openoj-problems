@@ -4,8 +4,12 @@
   "id": 3724,
   "slug": "minimum-operations-to-transform-array",
   "title": "Minimum Operations to Transform Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

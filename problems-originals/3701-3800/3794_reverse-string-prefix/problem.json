@@ -4,8 +4,12 @@
   "id": 3794,
   "slug": "reverse-string-prefix",
   "title": "Reverse String Prefix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

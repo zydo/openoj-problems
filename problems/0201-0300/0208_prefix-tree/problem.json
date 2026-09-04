@@ -4,10 +4,16 @@
   "id": 208,
   "slug": "prefix-tree",
   "title": "Prefix Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Prefix Tree",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
   ],
   "invocation": {
     "type": "design",

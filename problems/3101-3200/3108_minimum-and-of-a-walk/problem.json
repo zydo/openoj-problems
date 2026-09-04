@@ -4,11 +4,17 @@
   "id": 3108,
   "slug": "minimum-and-of-a-walk",
   "title": "Minimum AND of a Walk",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Union-Find",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 1729,
   "slug": "find-followers-count",
   "title": "Find Followers Count",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

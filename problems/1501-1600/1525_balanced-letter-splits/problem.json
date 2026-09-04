@@ -4,10 +4,17 @@
   "id": 1525,
   "slug": "balanced-letter-splits",
   "title": "Balanced-Letter Splits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
     "Prefix Sum"
   ],
   "invocation": {

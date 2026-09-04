@@ -4,8 +4,12 @@
   "id": 3813,
   "slug": "vowels-per-consonant",
   "title": "Vowels Per Consonant",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

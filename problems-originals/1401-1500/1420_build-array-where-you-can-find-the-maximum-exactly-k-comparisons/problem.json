@@ -3,8 +3,12 @@
   "id": 1420,
   "slug": "build-array-where-you-can-find-the-maximum-exactly-k-comparisons",
   "title": "Build Array Where You Can Find The Maximum Exactly K Comparisons",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Prefix Sum"
   ],

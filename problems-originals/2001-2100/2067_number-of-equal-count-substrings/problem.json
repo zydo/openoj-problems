@@ -4,8 +4,14 @@
   "id": 2067,
   "slug": "number-of-equal-count-substrings",
   "title": "Number of Equal Count Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window",

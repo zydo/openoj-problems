@@ -3,10 +3,14 @@
   "id": 2569,
   "slug": "handling-sum-queries-after-update",
   "title": "Handling Sum Queries After Update",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 1375,
   "slug": "moments-lit-set-is-a-prefix",
   "title": "Moments the Lit Set Is a Prefix",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

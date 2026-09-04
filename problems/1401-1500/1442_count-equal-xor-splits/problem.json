@@ -4,11 +4,18 @@
   "id": 1442,
   "slug": "count-equal-xor-splits",
   "title": "Count Equal-XOR Splits",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Bit Manipulation",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Bit Manipulation",
     "Prefix Sum"
   ],
   "invocation": {

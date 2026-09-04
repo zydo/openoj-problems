@@ -4,8 +4,12 @@
   "id": 3790,
   "slug": "smallest-all-ones-multiple",
   "title": "Smallest All-Ones Multiple",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Hash Table",
     "Math"
   ],

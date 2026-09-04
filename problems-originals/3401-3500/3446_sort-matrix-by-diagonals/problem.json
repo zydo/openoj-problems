@@ -4,8 +4,13 @@
   "id": 3446,
   "slug": "sort-matrix-by-diagonals",
   "title": "Sort Matrix by Diagonals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Matrix"

@@ -4,8 +4,16 @@
   "id": 3559,
   "slug": "number-of-ways-to-assign-edge-weights-ii",
   "title": "Number of Ways to Assign Edge Weights II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

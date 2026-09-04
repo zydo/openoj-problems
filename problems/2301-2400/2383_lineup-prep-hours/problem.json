@@ -4,8 +4,12 @@
   "id": 2383,
   "slug": "lineup-prep-hours",
   "title": "Lineup Prep Hours",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

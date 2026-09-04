@@ -4,8 +4,13 @@
   "id": 3982,
   "slug": "sum-of-integers-with-maximum-digit-range",
   "title": "Sum of Integers with Maximum Digit Range",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Math",
+    "Array",
+    "String"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

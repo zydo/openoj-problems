@@ -4,8 +4,15 @@
   "id": 527,
   "slug": "word-abbreviation",
   "title": "Word Abbreviation",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Greedy",
+    "Trie",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "String",
     "Greedy",

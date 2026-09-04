@@ -4,8 +4,14 @@
   "id": 2441,
   "slug": "largest-positive-integer-that-exists-with-its-negative",
   "title": "Largest Positive Integer That Exists With Its Negative",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

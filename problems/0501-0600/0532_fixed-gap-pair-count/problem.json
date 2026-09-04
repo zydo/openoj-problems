@@ -4,11 +4,18 @@
   "id": 532,
   "slug": "fixed-gap-pair-count",
   "title": "Fixed-Gap Pair Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

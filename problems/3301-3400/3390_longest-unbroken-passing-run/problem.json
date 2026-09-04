@@ -4,10 +4,13 @@
   "id": 3390,
   "slug": "longest-unbroken-passing-run",
   "title": "Longest Unbroken Passing Run",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

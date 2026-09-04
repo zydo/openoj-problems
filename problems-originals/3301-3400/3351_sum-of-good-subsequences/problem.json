@@ -3,8 +3,13 @@
   "id": 3351,
   "slug": "sum-of-good-subsequences",
   "title": "Sum of Good Subsequences",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

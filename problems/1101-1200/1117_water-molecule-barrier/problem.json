@@ -4,8 +4,11 @@
   "id": 1117,
   "slug": "water-molecule-barrier",
   "title": "Water Molecule Barrier",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

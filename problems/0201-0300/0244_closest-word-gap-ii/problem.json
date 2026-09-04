@@ -4,8 +4,15 @@
   "id": 244,
   "slug": "closest-word-gap-ii",
   "title": "Closest Word Gap II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

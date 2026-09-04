@@ -4,8 +4,12 @@
   "id": 2734,
   "slug": "lexicographically-smallest-string-after-substring-operation",
   "title": "Lexicographically Smallest String After Substring Operation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

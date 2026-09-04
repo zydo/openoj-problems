@@ -4,9 +4,15 @@
   "id": 962,
   "slug": "widest-non-decreasing-span",
   "title": "Widest Non-Decreasing Span",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
     "Stack",
     "Monotonic Stack"
   ],

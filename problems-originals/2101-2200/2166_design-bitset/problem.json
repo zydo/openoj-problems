@@ -4,8 +4,14 @@
   "id": 2166,
   "slug": "design-bitset",
   "title": "Design Bitset",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

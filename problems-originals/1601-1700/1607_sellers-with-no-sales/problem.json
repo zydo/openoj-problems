@@ -4,8 +4,11 @@
   "id": 1607,
   "slug": "sellers-with-no-sales",
   "title": "Sellers With No Sales",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

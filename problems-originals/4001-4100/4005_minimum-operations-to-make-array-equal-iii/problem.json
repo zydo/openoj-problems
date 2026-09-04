@@ -4,8 +4,12 @@
   "id": 4005,
   "slug": "minimum-operations-to-make-array-equal-iii",
   "title": "Minimum Operations to Make Array Equal III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Number Theory",
+    "Math"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

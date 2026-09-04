@@ -4,8 +4,14 @@
   "id": 515,
   "slug": "find-largest-value-in-each-tree-row",
   "title": "Find Largest Value in Each Tree Row",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

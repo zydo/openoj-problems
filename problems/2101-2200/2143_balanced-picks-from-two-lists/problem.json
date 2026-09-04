@@ -4,8 +4,12 @@
   "id": 2143,
   "slug": "balanced-picks-from-two-lists",
   "title": "Balanced Picks from Two Lists",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

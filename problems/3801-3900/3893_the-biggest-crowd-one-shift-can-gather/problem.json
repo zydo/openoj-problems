@@ -4,11 +4,16 @@
   "id": 3893,
   "slug": "the-biggest-crowd-one-shift-can-gather",
   "title": "The Biggest Crowd One Shift Can Gather",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Sorting"
+  ],
+  "topics": [
+    "Sorting",
+    "Two Pointers",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2558,
   "slug": "raiding-the-richest-pile",
   "title": "Raiding the Richest Pile",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Heap (Priority Queue)",
     "Simulation"

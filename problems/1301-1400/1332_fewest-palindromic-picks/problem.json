@@ -4,8 +4,12 @@
   "id": 1332,
   "slug": "fewest-palindromic-picks",
   "title": "Fewest Palindromic Picks",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

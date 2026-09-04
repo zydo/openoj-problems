@@ -4,11 +4,19 @@
   "id": 2297,
   "slug": "cheapest-hop-chain-viii",
   "title": "Cheapest Hop Chain VIII",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Graph Theory",
+    "Monotonic Stack",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

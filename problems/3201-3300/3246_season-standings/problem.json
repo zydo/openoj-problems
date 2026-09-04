@@ -4,10 +4,13 @@
   "id": 3246,
   "slug": "season-standings",
   "title": "Season Standings",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

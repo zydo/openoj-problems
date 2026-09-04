@@ -4,8 +4,11 @@
   "id": 3390,
   "slug": "longest-team-pass-streak",
   "title": "Longest Team Pass Streak",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

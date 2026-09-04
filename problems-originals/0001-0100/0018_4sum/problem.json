@@ -4,8 +4,13 @@
   "id": 18,
   "slug": "4sum",
   "title": "4Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Sorting"

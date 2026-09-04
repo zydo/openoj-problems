@@ -4,8 +4,15 @@
   "id": 2002,
   "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
   "title": "Maximum Product of the Length of Two Palindromic Subsequences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Backtracking",

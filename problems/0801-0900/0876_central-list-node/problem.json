@@ -4,8 +4,12 @@
   "id": 876,
   "slug": "central-list-node",
   "title": "Central List Node",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "topics": [
     "Linked List",
     "Two Pointers"
   ],

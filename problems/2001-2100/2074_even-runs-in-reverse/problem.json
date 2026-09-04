@@ -4,8 +4,11 @@
   "id": 2074,
   "slug": "even-runs-in-reverse",
   "title": "Even Runs in Reverse",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 273,
   "slug": "integer-to-english-words",
   "title": "Integer to English Words",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "String",
     "Recursion"

@@ -4,8 +4,12 @@
   "id": 2591,
   "slug": "distribute-money-to-maximum-children",
   "title": "Distribute Money to Maximum Children",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

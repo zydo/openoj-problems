@@ -4,8 +4,14 @@
   "id": 398,
   "slug": "uniform-matching-index",
   "title": "Uniform Matching Index",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Reservoir Sampling",
+    "Randomized"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
     "Reservoir Sampling",
     "Randomized"
   ],

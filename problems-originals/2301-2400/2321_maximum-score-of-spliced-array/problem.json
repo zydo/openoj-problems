@@ -4,8 +4,12 @@
   "id": 2321,
   "slug": "maximum-score-of-spliced-array",
   "title": "Maximum Score Of Spliced Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

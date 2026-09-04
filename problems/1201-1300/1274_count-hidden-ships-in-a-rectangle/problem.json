@@ -4,9 +4,14 @@
   "id": 1274,
   "slug": "count-hidden-ships-in-a-rectangle",
   "title": "Count Hidden Ships in a Rectangle",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

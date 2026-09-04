@@ -4,10 +4,13 @@
   "id": 1527,
   "slug": "charts-with-a-diabetes-code",
   "title": "Charts With a Diabetes Code",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

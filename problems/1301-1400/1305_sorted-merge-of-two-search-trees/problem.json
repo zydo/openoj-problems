@@ -4,12 +4,19 @@
   "id": 1305,
   "slug": "sorted-merge-of-two-search-trees",
   "title": "Sorted Merge of Two Search Trees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Binary Search Tree",
     "Depth-First Search",
     "Sorting"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Sorting",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

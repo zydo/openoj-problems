@@ -4,10 +4,13 @@
   "id": 2238,
   "slug": "times-each-courier-was-a-recipient",
   "title": "Times Each Courier Was a Recipient",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

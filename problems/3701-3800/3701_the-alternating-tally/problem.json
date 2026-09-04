@@ -4,8 +4,12 @@
   "id": 3701,
   "slug": "the-alternating-tally",
   "title": "The Alternating Tally",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

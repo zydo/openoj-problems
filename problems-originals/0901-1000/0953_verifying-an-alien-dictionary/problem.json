@@ -4,8 +4,13 @@
   "id": 953,
   "slug": "verifying-an-alien-dictionary",
   "title": "Verifying an Alien Dictionary",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

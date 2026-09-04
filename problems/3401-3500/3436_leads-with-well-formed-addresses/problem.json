@@ -4,10 +4,13 @@
   "id": 3436,
   "slug": "leads-with-well-formed-addresses",
   "title": "Leads With Well-Formed Addresses",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

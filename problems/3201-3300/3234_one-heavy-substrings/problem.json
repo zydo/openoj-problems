@@ -4,8 +4,12 @@
   "id": 3234,
   "slug": "one-heavy-substrings",
   "title": "One-Heavy Substrings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

@@ -3,11 +3,19 @@
   "id": 632,
   "slug": "smallest-range-covering-elements-from-k-lists",
   "title": "Smallest Range Covering Elements from K Lists",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Sorting",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sliding Window",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

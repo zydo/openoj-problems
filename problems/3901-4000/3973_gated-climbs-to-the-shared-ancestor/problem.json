@@ -4,11 +4,19 @@
   "id": 3973,
   "slug": "gated-climbs-to-the-shared-ancestor",
   "title": "Gated Climbs To The Shared Ancestor",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Dynamic Programming",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

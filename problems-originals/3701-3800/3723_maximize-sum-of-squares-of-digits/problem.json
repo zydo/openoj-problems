@@ -4,8 +4,12 @@
   "id": 3723,
   "slug": "maximize-sum-of-squares-of-digits",
   "title": "Maximize Sum of Squares of Digits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

@@ -4,8 +4,14 @@
   "id": 469,
   "slug": "convex-polygon",
   "title": "Convex Polygon",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Polygons"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

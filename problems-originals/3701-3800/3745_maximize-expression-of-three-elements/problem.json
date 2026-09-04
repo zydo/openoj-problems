@@ -4,8 +4,14 @@
   "id": 3745,
   "slug": "maximize-expression-of-three-elements",
   "title": "Maximize Expression of Three Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

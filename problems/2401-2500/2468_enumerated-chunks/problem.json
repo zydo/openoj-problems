@@ -4,8 +4,12 @@
   "id": 2468,
   "slug": "enumerated-chunks",
   "title": "Enumerated Chunks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

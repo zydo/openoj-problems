@@ -4,8 +4,11 @@
   "id": 2239,
   "slug": "find-closest-number-to-zero",
   "title": "Find Closest Number to Zero",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

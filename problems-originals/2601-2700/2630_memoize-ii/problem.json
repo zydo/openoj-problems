@@ -4,8 +4,13 @@
   "id": 2630,
   "slug": "memoize-ii",
   "title": "Memoize II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Design",
+    "Hash Table",
+    "Recursion"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

@@ -4,8 +4,11 @@
   "id": 602,
   "slug": "friend-requests-ii-who-has-the-most-friends",
   "title": "Friend Requests II: Who Has the Most Friends",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

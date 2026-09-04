@@ -4,8 +4,12 @@
   "id": 3399,
   "slug": "taming-the-longest-run-ii",
   "title": "Taming The Longest Run II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Binary Search"
+  ],
+  "topics": [
     "String",
     "Binary Search"
   ],

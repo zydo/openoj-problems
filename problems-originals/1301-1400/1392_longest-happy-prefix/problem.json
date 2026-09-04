@@ -3,11 +3,19 @@
   "id": 1392,
   "slug": "longest-happy-prefix",
   "title": "Longest Happy Prefix",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "String Matching",
     "Knuth-Morris-Pratt"
+  ],
+  "topics": [
+    "String",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm"
   ],
   "invocation": {
     "type": "function",

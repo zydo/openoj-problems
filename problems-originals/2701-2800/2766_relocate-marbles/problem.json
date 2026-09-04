@@ -4,8 +4,14 @@
   "id": 2766,
   "slug": "relocate-marbles",
   "title": "Relocate Marbles",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

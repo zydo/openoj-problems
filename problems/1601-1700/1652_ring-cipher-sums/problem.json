@@ -4,8 +4,12 @@
   "id": 1652,
   "slug": "ring-cipher-sums",
   "title": "Ring Cipher Sums",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

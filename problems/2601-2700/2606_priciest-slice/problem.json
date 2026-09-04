@@ -4,8 +4,14 @@
   "id": 2606,
   "slug": "priciest-slice",
   "title": "Priciest Slice",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

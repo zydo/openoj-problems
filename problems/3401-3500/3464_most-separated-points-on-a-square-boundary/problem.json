@@ -4,11 +4,18 @@
   "id": 3464,
   "slug": "most-separated-points-on-a-square-boundary",
   "title": "Most Separated Points on a Square Boundary",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Geometry",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Geometry",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

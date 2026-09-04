@@ -4,8 +4,14 @@
   "id": 2345,
   "slug": "counting-uncovered-summits",
   "title": "Counting Uncovered Summits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Sorting",

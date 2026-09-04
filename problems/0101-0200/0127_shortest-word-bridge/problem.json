@@ -4,11 +4,17 @@
   "id": 127,
   "slug": "shortest-word-bridge",
   "title": "Shortest Word Bridge",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "BFS",
     "Shortest Path"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search",
+    "Bidirectional Search"
   ],
   "invocation": {
     "type": "function",

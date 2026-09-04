@@ -4,10 +4,15 @@
   "id": 392,
   "slug": "ordered-character-selection",
   "title": "Ordered Character Selection",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Two Pointers",
     "String"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

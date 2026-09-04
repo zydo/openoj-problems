@@ -4,11 +4,20 @@
   "id": 1316,
   "slug": "distinct-doubled-substrings",
   "title": "Distinct Doubled Substrings",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Rolling Hash",
     "Hash Set"
+  ],
+  "topics": [
+    "String",
+    "Trie",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function",
+    "Suffix Automaton",
+    "Suffix Tree"
   ],
   "invocation": {
     "type": "function",

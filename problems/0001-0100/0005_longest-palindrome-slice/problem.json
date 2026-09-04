@@ -4,11 +4,17 @@
   "id": 5,
   "slug": "longest-palindrome-slice",
   "title": "Longest Palindrome Slice",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming",
     "Two Pointers"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Manacher"
   ],
   "invocation": {
     "type": "function",

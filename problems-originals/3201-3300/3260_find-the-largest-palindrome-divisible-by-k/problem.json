@@ -4,8 +4,15 @@
   "id": 3260,
   "slug": "find-the-largest-palindrome-divisible-by-k",
   "title": "Find the Largest Palindrome Divisible by K",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming",

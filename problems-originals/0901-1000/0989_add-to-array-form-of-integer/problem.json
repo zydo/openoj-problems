@@ -4,8 +4,12 @@
   "id": 989,
   "slug": "add-to-array-form-of-integer",
   "title": "Add to Array-Form of Integer",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -4,8 +4,13 @@
   "id": 3248,
   "slug": "a-crawlers-final-cell",
   "title": "A Crawler's Final Cell",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Simulation"

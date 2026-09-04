@@ -3,8 +3,12 @@
   "id": 2318,
   "slug": "number-of-distinct-roll-sequences",
   "title": "Number of Distinct Roll Sequences",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Memoization"
   ],

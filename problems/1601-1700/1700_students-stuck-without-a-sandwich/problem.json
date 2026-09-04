@@ -4,8 +4,14 @@
   "id": 1700,
   "slug": "students-stuck-without-a-sandwich",
   "title": "Students Stuck Without a Sandwich",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Stack",
+    "Queue",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Queue",

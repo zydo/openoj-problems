@@ -4,11 +4,17 @@
   "id": 1449,
   "slug": "biggest-number-on-an-exact-budget",
   "title": "Biggest Number on an Exact Budget",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Knapsack Problem"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "Complete Knapsack"
   ],
   "invocation": {
     "type": "function",

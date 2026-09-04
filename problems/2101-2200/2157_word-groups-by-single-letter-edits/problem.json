@@ -4,11 +4,18 @@
   "id": 2157,
   "slug": "word-groups-by-single-letter-edits",
   "title": "Word Groups By Single-Letter Edits",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Union-Find",
     "Bit Manipulation",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

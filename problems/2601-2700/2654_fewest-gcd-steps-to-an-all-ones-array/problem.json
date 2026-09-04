@@ -4,10 +4,17 @@
   "id": 2654,
   "slug": "fewest-gcd-steps-to-an-all-ones-array",
   "title": "Fewest Gcd Steps to an All-Ones Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Number Theory",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Number Theory",
+    "Euclidean Algorithm",
     "Greatest Common Divisor"
   ],
   "invocation": {

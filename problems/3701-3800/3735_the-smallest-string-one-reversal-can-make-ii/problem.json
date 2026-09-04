@@ -4,11 +4,18 @@
   "id": 3735,
   "slug": "the-smallest-string-one-reversal-can-make-ii",
   "title": "The Smallest String One Reversal Can Make II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Binary Search",
     "Rolling Hash"
+  ],
+  "topics": [
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

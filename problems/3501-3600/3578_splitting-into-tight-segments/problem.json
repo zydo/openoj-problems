@@ -4,11 +4,19 @@
   "id": 3578,
   "slug": "splitting-into-tight-segments",
   "title": "Splitting Into Tight Segments",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Sliding Window",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
     "Monotonic Queue"
   ],
   "invocation": {

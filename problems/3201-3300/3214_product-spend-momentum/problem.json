@@ -4,10 +4,13 @@
   "id": 3214,
   "slug": "product-spend-momentum",
   "title": "Product Spend Momentum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

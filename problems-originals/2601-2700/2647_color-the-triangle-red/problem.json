@@ -4,8 +4,12 @@
   "id": 2647,
   "slug": "color-the-triangle-red",
   "title": "Color the Triangle Red",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

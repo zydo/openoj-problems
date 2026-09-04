@@ -4,8 +4,11 @@
   "id": 2278,
   "slug": "percentage-of-letter-in-string",
   "title": "Percentage of Letter in String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

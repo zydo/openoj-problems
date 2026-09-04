@@ -4,11 +4,18 @@
   "id": 3461,
   "slug": "fold-digits-down-to-two",
   "title": "Fold Digits Down To Two",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "String",
     "Simulation"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Simulation",
+    "Combinatorics",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 3809,
   "slug": "best-reachable-tower",
   "title": "Best Reachable Tower",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

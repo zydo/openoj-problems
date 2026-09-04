@@ -4,8 +4,14 @@
   "id": 1638,
   "slug": "count-substrings-that-differ-by-one-character",
   "title": "Count Substrings That Differ by One Character",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Enumeration"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming",

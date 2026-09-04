@@ -4,10 +4,16 @@
   "id": 1930,
   "slug": "distinct-three-letter-palindromes",
   "title": "Distinct Three-Letter Palindromes",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
     "Prefix Sum"
   ],
   "invocation": {

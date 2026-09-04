@@ -4,8 +4,14 @@
   "id": 360,
   "slug": "quadratic-array-ordering",
   "title": "Quadratic Array Ordering",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers",

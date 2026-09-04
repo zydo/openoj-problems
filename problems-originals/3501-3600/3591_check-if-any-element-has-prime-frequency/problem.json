@@ -4,8 +4,15 @@
   "id": 3591,
   "slug": "check-if-any-element-has-prime-frequency",
   "title": "Check if Any Element Has Prime Frequency",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

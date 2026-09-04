@@ -4,8 +4,14 @@
   "id": 3443,
   "slug": "the-furthest-drift-from-the-origin",
   "title": "The Furthest Drift From The Origin",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

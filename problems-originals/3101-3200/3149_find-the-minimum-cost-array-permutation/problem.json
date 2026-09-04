@@ -3,10 +3,16 @@
   "id": 3149,
   "slug": "find-the-minimum-cost-array-permutation",
   "title": "Find the Minimum Cost Array Permutation",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Bitmask DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

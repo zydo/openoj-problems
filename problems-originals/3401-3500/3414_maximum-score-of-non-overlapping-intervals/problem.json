@@ -4,8 +4,14 @@
   "id": 3414,
   "slug": "maximum-score-of-non-overlapping-intervals",
   "title": "Maximum Score of Non-overlapping Intervals",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Dynamic Programming",

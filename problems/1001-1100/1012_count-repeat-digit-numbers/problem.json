@@ -4,8 +4,12 @@
   "id": 1012,
   "slug": "count-repeat-digit-numbers",
   "title": "Count Repeat-Digit Numbers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

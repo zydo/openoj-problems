@@ -4,8 +4,14 @@
   "id": 2093,
   "slug": "cheapest-route-with-toll-vouchers",
   "title": "Cheapest Route with Toll Vouchers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
+  ],
+  "topics": [
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path",

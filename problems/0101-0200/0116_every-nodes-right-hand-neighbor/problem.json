@@ -4,9 +4,16 @@
   "id": 116,
   "slug": "every-nodes-right-hand-neighbor",
   "title": "Every Node's Right-Hand Neighbor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Linked List",
+    "Tree",
+    "Depth-First Search",
     "Breadth-First Search",
     "Binary Tree"
   ],

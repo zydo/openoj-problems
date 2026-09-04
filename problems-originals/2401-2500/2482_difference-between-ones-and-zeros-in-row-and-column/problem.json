@@ -4,8 +4,13 @@
   "id": 2482,
   "slug": "difference-between-ones-and-zeros-in-row-and-column",
   "title": "Difference Between Ones and Zeros in Row and Column",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

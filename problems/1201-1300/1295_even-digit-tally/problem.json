@@ -4,8 +4,12 @@
   "id": 1295,
   "slug": "even-digit-tally",
   "title": "Even-Digit Tally",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -4,8 +4,12 @@
   "id": 3073,
   "slug": "maximum-increasing-triplet-value",
   "title": "Maximum Increasing Triplet Value",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Ordered Set"
   ],

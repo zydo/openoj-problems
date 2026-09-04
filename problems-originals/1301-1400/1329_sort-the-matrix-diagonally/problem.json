@@ -4,8 +4,13 @@
   "id": 1329,
   "slug": "sort-the-matrix-diagonally",
   "title": "Sort the Matrix Diagonally",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Matrix"

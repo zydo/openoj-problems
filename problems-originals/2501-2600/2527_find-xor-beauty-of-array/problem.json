@@ -4,8 +4,13 @@
   "id": 2527,
   "slug": "find-xor-beauty-of-array",
   "title": "Find Xor-Beauty of Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation"

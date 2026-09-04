@@ -4,8 +4,12 @@
   "id": 3460,
   "slug": "longest-shared-opening-with-one-skip",
   "title": "Longest Shared Opening With One Skip",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

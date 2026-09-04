@@ -4,11 +4,17 @@
   "id": 323,
   "slug": "count-graph-components",
   "title": "Count Graph Components",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Graph",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

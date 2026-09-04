@@ -4,8 +4,14 @@
   "id": 2685,
   "slug": "fully-wired-cliques",
   "title": "Fully Wired Cliques",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
     "Union-Find",
     "Graph Theory"
   ],

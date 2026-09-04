@@ -4,8 +4,11 @@
   "id": 2793,
   "slug": "status-of-flight-tickets",
   "title": "Status of Flight Tickets",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

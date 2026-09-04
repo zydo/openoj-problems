@@ -4,8 +4,14 @@
   "id": 3654,
   "slug": "trimming-out-multiples-of-k",
   "title": "Trimming Out Multiples Of K",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

@@ -4,8 +4,12 @@
   "id": 3789,
   "slug": "minimum-cost-to-acquire-required-items",
   "title": "Minimum Cost to Acquire Required Items",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

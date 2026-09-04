@@ -4,10 +4,16 @@
   "id": 3480,
   "slug": "clean-subarrays-after-one-pair-removal",
   "title": "Clean Subarrays After One Pair Removal",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Segment Tree",
+    "Enumeration",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

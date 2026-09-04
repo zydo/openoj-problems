@@ -4,8 +4,13 @@
   "id": 813,
   "slug": "maximum-contiguous-mean-score",
   "title": "Maximum Contiguous Mean Score",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

@@ -4,8 +4,13 @@
   "id": 1959,
   "slug": "least-slack-with-k-resizes",
   "title": "Least Slack With K Resizes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

@@ -4,8 +4,11 @@
   "id": 2723,
   "slug": "add-two-promises",
   "title": "Add Two Promises",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

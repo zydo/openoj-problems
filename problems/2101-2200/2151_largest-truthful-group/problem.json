@@ -4,8 +4,14 @@
   "id": 2151,
   "slug": "largest-truthful-group",
   "title": "Largest Truthful Group",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation",

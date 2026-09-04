@@ -4,8 +4,11 @@
   "id": 1957,
   "slug": "no-three-in-a-row",
   "title": "No Three In A Row",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

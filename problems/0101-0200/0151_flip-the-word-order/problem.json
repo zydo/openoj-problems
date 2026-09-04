@@ -4,8 +4,12 @@
   "id": 151,
   "slug": "flip-the-word-order",
   "title": "Flip The Word Order",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

@@ -4,8 +4,13 @@
   "id": 47,
   "slug": "permutations-ii",
   "title": "Permutations II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Sorting"

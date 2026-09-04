@@ -3,9 +3,13 @@
   "id": 1246,
   "slug": "palindrome-removal",
   "title": "Palindrome Removal",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

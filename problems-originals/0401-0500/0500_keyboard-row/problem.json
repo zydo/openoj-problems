@@ -4,8 +4,13 @@
   "id": 500,
   "slug": "keyboard-row",
   "title": "Keyboard Row",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

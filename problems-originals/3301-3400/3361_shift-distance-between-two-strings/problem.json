@@ -4,8 +4,13 @@
   "id": 3361,
   "slug": "shift-distance-between-two-strings",
   "title": "Shift Distance Between Two Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

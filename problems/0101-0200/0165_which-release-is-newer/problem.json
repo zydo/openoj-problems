@@ -4,8 +4,12 @@
   "id": 165,
   "slug": "which-release-is-newer",
   "title": "Which Release Is Newer",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

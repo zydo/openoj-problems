@@ -4,8 +4,12 @@
   "id": 3857,
   "slug": "breaking-a-number-down-to-units",
   "title": "Breaking a Number Down to Units",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

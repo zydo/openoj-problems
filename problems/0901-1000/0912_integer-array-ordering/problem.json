@@ -4,12 +4,22 @@
   "id": 912,
   "slug": "integer-array-ordering",
   "title": "Integer Array Ordering",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Divide and Conquer",
     "Merge Sort",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Merge Sort",
+    "Bucket Sort",
+    "Radix Sort",
+    "Counting Sort"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,16 @@
   "id": 3391,
   "slug": "design-a-3d-binary-matrix-with-efficient-layer-tracking",
   "title": "Design a 3D Binary Matrix with Efficient Layer Tracking",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

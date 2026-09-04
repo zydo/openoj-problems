@@ -4,8 +4,13 @@
   "id": 2570,
   "slug": "merge-two-2d-arrays-by-summing-values",
   "title": "Merge Two 2D Arrays by Summing Values",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers"

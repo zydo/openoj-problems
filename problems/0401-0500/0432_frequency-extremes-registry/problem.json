@@ -4,9 +4,15 @@
   "id": 432,
   "slug": "frequency-extremes-registry",
   "title": "Frequency Extremes Registry",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
+    "Design",
+    "Doubly-Linked List"
+  ],
+  "topics": [
+    "Hash Table",
+    "Linked List",
     "Design",
     "Doubly-Linked List"
   ],

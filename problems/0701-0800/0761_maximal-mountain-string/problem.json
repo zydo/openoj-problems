@@ -4,8 +4,13 @@
   "id": 761,
   "slug": "maximal-mountain-string",
   "title": "Maximal Mountain String",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Divide and Conquer",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Divide and Conquer",
     "Sorting"

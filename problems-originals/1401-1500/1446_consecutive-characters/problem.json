@@ -4,8 +4,11 @@
   "id": 1446,
   "slug": "consecutive-characters",
   "title": "Consecutive Characters",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

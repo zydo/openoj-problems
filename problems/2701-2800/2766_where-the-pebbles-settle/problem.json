@@ -4,8 +4,14 @@
   "id": 2766,
   "slug": "where-the-pebbles-settle",
   "title": "Where The Pebbles Settle",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

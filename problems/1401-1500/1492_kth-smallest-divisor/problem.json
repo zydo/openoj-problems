@@ -4,10 +4,15 @@
   "id": 1492,
   "slug": "kth-smallest-divisor",
   "title": "Kth Smallest Divisor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Number Theory",
+    "Prime Factorization"
   ],
   "invocation": {
     "type": "function",

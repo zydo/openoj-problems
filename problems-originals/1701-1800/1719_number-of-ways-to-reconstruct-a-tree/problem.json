@@ -4,8 +4,15 @@
   "id": 1719,
   "slug": "number-of-ways-to-reconstruct-a-tree",
   "title": "Number Of Ways To Reconstruct A Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Graph Theory",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

@@ -4,8 +4,14 @@
   "id": 2055,
   "slug": "plates-between-candles",
   "title": "Plates Between Candles",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Binary Search",

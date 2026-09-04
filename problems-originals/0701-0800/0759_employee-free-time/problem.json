@@ -3,11 +3,17 @@
   "id": 759,
   "slug": "employee-free-time",
   "title": "Employee Free Time",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Sweep Line",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

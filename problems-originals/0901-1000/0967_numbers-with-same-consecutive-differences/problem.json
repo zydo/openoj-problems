@@ -4,8 +4,12 @@
   "id": 967,
   "slug": "numbers-with-same-consecutive-differences",
   "title": "Numbers With Same Consecutive Differences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Backtracking",
     "Breadth-First Search"
   ],

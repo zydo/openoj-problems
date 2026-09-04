@@ -4,8 +4,11 @@
   "id": 551,
   "slug": "student-attendance-record-i",
   "title": "Student Attendance Record I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 760,
   "slug": "locate-shuffled-positions",
   "title": "Locate Shuffled Positions",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

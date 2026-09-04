@@ -4,10 +4,13 @@
   "id": 1421,
   "slug": "parcel-value-lookups",
   "title": "Parcel Value Lookups",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

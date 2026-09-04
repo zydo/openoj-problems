@@ -4,8 +4,13 @@
   "id": 2017,
   "slug": "grid-duel",
   "title": "Grid Duel",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

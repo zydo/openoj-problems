@@ -4,11 +4,17 @@
   "id": 3049,
   "slug": "earliest-time-to-finalize-every-counter",
   "title": "Earliest Time to Finalize Every Counter",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

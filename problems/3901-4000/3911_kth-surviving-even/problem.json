@@ -4,8 +4,12 @@
   "id": 3911,
   "slug": "kth-surviving-even",
   "title": "K-th Surviving Even",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

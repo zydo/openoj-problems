@@ -4,9 +4,13 @@
   "id": 1845,
   "slug": "seat-pool",
   "title": "Seat Pool",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Heap"
+  ],
+  "topics": [
+    "Design",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "design",

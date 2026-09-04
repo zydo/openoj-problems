@@ -4,8 +4,11 @@
   "id": 1134,
   "slug": "digit-power-sum",
   "title": "Digit Power Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

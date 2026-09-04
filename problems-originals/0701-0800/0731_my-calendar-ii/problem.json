@@ -4,8 +4,16 @@
   "id": 731,
   "slug": "my-calendar-ii",
   "title": "My Calendar II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Design",

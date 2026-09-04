@@ -4,8 +4,15 @@
   "id": 3720,
   "slug": "lexicographically-smallest-permutation-greater-than-target",
   "title": "Lexicographically Smallest Permutation Greater Than Target",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

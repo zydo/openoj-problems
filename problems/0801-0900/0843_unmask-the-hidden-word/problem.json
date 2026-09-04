@@ -4,10 +4,18 @@
   "id": 843,
   "slug": "unmask-the-hidden-word",
   "title": "Unmask the Hidden Word",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Randomized",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "String",
+    "Minimax",
+    "Interactive",
+    "Game Theory"
   ],
   "invocation": {
     "type": "interactive",

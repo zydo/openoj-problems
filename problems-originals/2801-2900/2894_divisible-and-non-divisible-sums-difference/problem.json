@@ -4,8 +4,11 @@
   "id": 2894,
   "slug": "divisible-and-non-divisible-sums-difference",
   "title": "Divisible and Non-divisible Sums Difference",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

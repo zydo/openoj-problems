@@ -4,8 +4,14 @@
   "id": 3901,
   "slug": "exact-gcd-subsequence-checks",
   "title": "Exact GCD Subsequence Checks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Segment Tree",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Segment Tree",

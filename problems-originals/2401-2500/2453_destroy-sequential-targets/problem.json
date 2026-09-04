@@ -4,8 +4,13 @@
   "id": 2453,
   "slug": "destroy-sequential-targets",
   "title": "Destroy Sequential Targets",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

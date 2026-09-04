@@ -3,10 +3,21 @@
   "id": 2035,
   "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
   "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Meet in the Middle",
     "Bitmask DP"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Meet in the Middle",
+    "Sorting",
+    "Ordered Set",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

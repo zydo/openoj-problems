@@ -3,9 +3,14 @@
   "id": 227,
   "slug": "basic-calculator-ii",
   "title": "Basic Calculator II",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Expression Parsing",
+    "Stack"
+  ],
+  "topics": [
+    "Math",
+    "String",
     "Stack"
   ],
   "invocation": {

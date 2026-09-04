@@ -4,8 +4,13 @@
   "id": 2133,
   "slug": "is-the-grid-a-latin-square",
   "title": "Is the Grid a Latin Square",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix"

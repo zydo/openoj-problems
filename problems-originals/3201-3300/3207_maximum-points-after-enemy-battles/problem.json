@@ -4,8 +4,12 @@
   "id": 3207,
   "slug": "maximum-points-after-enemy-battles",
   "title": "Maximum Points After Enemy Battles",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

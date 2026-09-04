@@ -4,8 +4,13 @@
   "id": 1408,
   "slug": "string-matching-in-an-array",
   "title": "String Matching in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "String Matching"
+  ],
+  "topics": [
     "Array",
     "String",
     "String Matching"

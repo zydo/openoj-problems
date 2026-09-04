@@ -4,10 +4,15 @@
   "id": 3405,
   "slug": "count-sequences-with-k-immediate-repeats",
   "title": "Count Sequences With K Immediate Repeats",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Combinatorics",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

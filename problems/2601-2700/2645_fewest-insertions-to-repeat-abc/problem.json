@@ -4,9 +4,15 @@
   "id": 2645,
   "slug": "fewest-insertions-to-repeat-abc",
   "title": "Fewest Insertions to Repeat abc",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Greedy"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
     "Greedy"
   ],
   "invocation": {

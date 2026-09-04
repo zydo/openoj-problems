@@ -4,9 +4,14 @@
   "id": 303,
   "slug": "static-range-sums",
   "title": "Static Range Sums",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Design",
     "Prefix Sum"
   ],
   "invocation": {

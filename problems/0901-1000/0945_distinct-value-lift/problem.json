@@ -4,8 +4,14 @@
   "id": 945,
   "slug": "distinct-value-lift",
   "title": "Distinct Value Lift",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

@@ -4,8 +4,13 @@
   "id": 62,
   "slug": "count-grid-paths",
   "title": "Count Grid Paths",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
+    "Math",
     "Dynamic Programming",
     "Combinatorics"
   ],

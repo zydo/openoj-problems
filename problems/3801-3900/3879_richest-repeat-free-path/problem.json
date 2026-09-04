@@ -4,8 +4,14 @@
   "id": 3879,
   "slug": "richest-repeat-free-path",
   "title": "Richest Repeat-Free Path",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

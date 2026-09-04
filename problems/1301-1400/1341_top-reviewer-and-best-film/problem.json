@@ -4,10 +4,13 @@
   "id": 1341,
   "slug": "top-reviewer-and-best-film",
   "title": "Top Reviewer and Best Film",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

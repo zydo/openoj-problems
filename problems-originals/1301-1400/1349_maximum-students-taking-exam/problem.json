@@ -3,11 +3,28 @@
   "id": 1349,
   "slug": "maximum-students-taking-exam",
   "title": "Maximum Students Taking Exam",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Matrix",
+    "Bitmask",
+    "Maximum Flow",
+    "Maximum Matching",
+    "Bipartite Graph",
+    "Edmonds–Karp Algorithm",
+    "MPM Algorithm",
+    "Push-Relabel Algorithm",
+    "Minimum Cut",
+    "Matching (Graph)",
+    "Flow Network",
+    "Dinic's Algorithm"
   ],
   "invocation": {
     "type": "function",

@@ -4,12 +4,20 @@
   "id": 987,
   "slug": "binary-tree-column-groups",
   "title": "Binary Tree Column Groups",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Sorting",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Sorting",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

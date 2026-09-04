@@ -4,8 +4,12 @@
   "id": 3471,
   "slug": "find-the-largest-almost-missing-integer",
   "title": "Find the Largest Almost Missing Integer",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

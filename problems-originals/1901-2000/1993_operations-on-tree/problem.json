@@ -4,8 +4,16 @@
   "id": 1993,
   "slug": "operations-on-tree",
   "title": "Operations on Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

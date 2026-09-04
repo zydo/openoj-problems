@@ -4,8 +4,11 @@
   "id": 6,
   "slug": "read-the-rails",
   "title": "Read The Rails",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,12 +4,17 @@
   "id": 1091,
   "slug": "shortest-grid-crossing",
   "title": "Shortest Grid Crossing",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "BFS",
     "Matrix",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

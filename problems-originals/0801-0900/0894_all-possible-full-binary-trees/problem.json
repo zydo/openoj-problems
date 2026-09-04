@@ -4,8 +4,15 @@
   "id": 894,
   "slug": "all-possible-full-binary-trees",
   "title": "All Possible Full Binary Trees",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Recursion",
+    "Memoization",
+    "Binary Tree"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Tree",
     "Recursion",

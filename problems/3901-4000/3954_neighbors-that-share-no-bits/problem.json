@@ -4,8 +4,13 @@
   "id": 3954,
   "slug": "neighbors-that-share-no-bits",
   "title": "Neighbors That Share No Bits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
+    "Dynamic Programming",
     "Bit Manipulation",
     "Enumeration"
   ],

@@ -4,8 +4,11 @@
   "id": 2924,
   "slug": "the-unbeaten-team-ii",
   "title": "The Unbeaten Team II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory"
+  ],
+  "topics": [
     "Graph Theory"
   ],
   "invocation": {

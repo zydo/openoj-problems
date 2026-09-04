@@ -3,8 +3,13 @@
   "id": 2952,
   "slug": "minimum-number-of-coins-to-be-added",
   "title": "Minimum Number of Coins to be Added",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

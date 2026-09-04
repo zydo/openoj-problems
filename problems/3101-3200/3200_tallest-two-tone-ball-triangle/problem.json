@@ -4,9 +4,13 @@
   "id": 3200,
   "slug": "tallest-two-tone-ball-triangle",
   "title": "Tallest Two-Tone Ball Triangle",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
     "Enumeration"
   ],
   "invocation": {

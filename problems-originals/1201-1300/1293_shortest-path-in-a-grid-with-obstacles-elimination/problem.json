@@ -3,10 +3,15 @@
   "id": 1293,
   "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
   "title": "Shortest Path in a Grid with Obstacles Elimination",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Shortest Path",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
     "Matrix"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 1240,
   "slug": "tiling-a-rectangle-with-the-fewest-squares",
   "title": "Tiling a Rectangle with the Fewest Squares",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Backtracking"
+  ],
+  "topics": [
     "Backtracking"
   ],
   "invocation": {

@@ -4,10 +4,13 @@
   "id": 1972,
   "slug": "same-day-call-bookends",
   "title": "Same-Day Call Bookends",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

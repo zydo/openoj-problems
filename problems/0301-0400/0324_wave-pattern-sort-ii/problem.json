@@ -4,11 +4,18 @@
   "id": 324,
   "slug": "wave-pattern-sort-ii",
   "title": "Wave Pattern Sort II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Greedy",
+    "Sorting",
+    "Quickselect"
   ],
   "invocation": {
     "type": "function",

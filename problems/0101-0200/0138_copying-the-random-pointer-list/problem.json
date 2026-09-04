@@ -4,8 +4,12 @@
   "id": 138,
   "slug": "copying-the-random-pointer-list",
   "title": "Copying The Random-Pointer List",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "topics": [
     "Hash Table",
     "Linked List"
   ],

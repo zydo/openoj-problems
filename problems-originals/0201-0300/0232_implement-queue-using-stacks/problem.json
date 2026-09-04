@@ -4,8 +4,13 @@
   "id": 232,
   "slug": "implement-queue-using-stacks",
   "title": "Implement Queue using Stacks",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Stack",
+    "Design",
+    "Queue"
+  ],
+  "topics": [
     "Stack",
     "Design",
     "Queue"

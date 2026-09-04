@@ -4,8 +4,11 @@
   "id": 3423,
   "slug": "maximum-difference-between-adjacent-elements-in-a-circular-array",
   "title": "Maximum Difference Between Adjacent Elements in a Circular Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

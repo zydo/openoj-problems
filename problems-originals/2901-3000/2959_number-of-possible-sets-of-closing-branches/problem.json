@@ -4,8 +4,15 @@
   "id": 2959,
   "slug": "number-of-possible-sets-of-closing-branches",
   "title": "Number of Possible Sets of Closing Branches",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Bit Manipulation",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Enumeration",
+    "Shortest Path"
+  ],
+  "topics": [
     "Bit Manipulation",
     "Graph Theory",
     "Heap (Priority Queue)",

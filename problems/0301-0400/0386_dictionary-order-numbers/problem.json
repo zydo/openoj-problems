@@ -4,8 +4,12 @@
   "id": 386,
   "slug": "dictionary-order-numbers",
   "title": "Dictionary-Order Numbers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Trie"
+  ],
+  "topics": [
     "Depth-First Search",
     "Trie"
   ],

@@ -4,12 +4,21 @@
   "id": 2992,
   "slug": "counting-coprime-arrangements",
   "title": "Counting Coprime Arrangements",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Dynamic Programming",
     "Bitmask",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Number Theory",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,17 @@
   "id": 3613,
   "slug": "lowest-component-cost-after-splitting",
   "title": "Lowest Component Cost After Splitting",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Minimum Spanning Tree",
     "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Binary Search",
+    "Union-Find",
+    "Graph Theory",
     "Sorting"
   ],
   "invocation": {

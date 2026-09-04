@@ -4,8 +4,12 @@
   "id": 2898,
   "slug": "maximum-linear-stock-score",
   "title": "Maximum Linear Stock Score",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

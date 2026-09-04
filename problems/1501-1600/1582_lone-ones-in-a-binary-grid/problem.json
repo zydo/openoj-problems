@@ -4,8 +4,12 @@
   "id": 1582,
   "slug": "lone-ones-in-a-binary-grid",
   "title": "Lone Ones in a Binary Grid",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

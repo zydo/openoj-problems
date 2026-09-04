@@ -4,8 +4,15 @@
   "id": 3170,
   "slug": "lexicographically-minimum-string-after-removing-stars",
   "title": "Lexicographically Minimum String After Removing Stars",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Stack",

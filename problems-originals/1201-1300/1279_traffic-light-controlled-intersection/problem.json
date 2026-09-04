@@ -4,8 +4,11 @@
   "id": 1279,
   "slug": "traffic-light-controlled-intersection",
   "title": "Traffic Light Controlled Intersection",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

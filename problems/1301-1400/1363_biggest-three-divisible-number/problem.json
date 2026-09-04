@@ -4,10 +4,17 @@
   "id": 1363,
   "slug": "biggest-three-divisible-number",
   "title": "Biggest Three-Divisible Number",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
     "Greedy",
     "Sorting"
   ],

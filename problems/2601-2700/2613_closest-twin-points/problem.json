@@ -4,12 +4,20 @@
   "id": 2613,
   "slug": "closest-twin-points",
   "title": "Closest Twin Points",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Divide and Conquer",
     "Geometry",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Divide and Conquer",
+    "Geometry",
+    "Sorting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

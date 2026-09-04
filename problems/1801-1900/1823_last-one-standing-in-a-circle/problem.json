@@ -4,8 +4,15 @@
   "id": 1823,
   "slug": "last-one-standing-in-a-circle",
   "title": "Last One Standing In A Circle",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Recursion",
+    "Queue",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Recursion",

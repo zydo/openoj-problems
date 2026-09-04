@@ -4,8 +4,12 @@
   "id": 1881,
   "slug": "maximum-value-after-insertion",
   "title": "Maximum Value after Insertion",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

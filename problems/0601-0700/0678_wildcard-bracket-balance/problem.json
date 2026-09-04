@@ -4,9 +4,16 @@
   "id": 678,
   "slug": "wildcard-bracket-balance",
   "title": "Wildcard Bracket Balance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Greedy",
+    "Bracket Sequences"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
     "Greedy",
     "Bracket Sequences"
   ],

@@ -3,11 +3,19 @@
   "id": 2572,
   "slug": "count-the-number-of-square-free-subsets",
   "title": "Count the Number of Square-Free Subsets",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Number Theory",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

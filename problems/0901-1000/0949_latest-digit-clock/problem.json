@@ -4,8 +4,14 @@
   "id": 949,
   "slug": "latest-digit-clock",
   "title": "Latest Digit Clock",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

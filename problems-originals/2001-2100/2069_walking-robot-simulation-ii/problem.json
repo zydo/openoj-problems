@@ -4,8 +4,12 @@
   "id": 2069,
   "slug": "walking-robot-simulation-ii",
   "title": "Walking Robot Simulation II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Design",
+    "Simulation"
+  ],
+  "topics": [
     "Design",
     "Simulation"
   ],

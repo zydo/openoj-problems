@@ -4,8 +4,13 @@
   "id": 3692,
   "slug": "the-winning-frequency-group",
   "title": "The Winning Frequency Group",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

@@ -4,8 +4,12 @@
   "id": 2443,
   "slug": "sum-of-number-and-its-reverse",
   "title": "Sum of Number and Its Reverse",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

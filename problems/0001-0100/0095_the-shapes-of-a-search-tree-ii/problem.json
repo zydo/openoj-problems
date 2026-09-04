@@ -4,11 +4,18 @@
   "id": 95,
   "slug": "the-shapes-of-a-search-tree-ii",
   "title": "The Shapes Of A Search Tree II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Backtracking",
     "Tree",
     "Binary Search Tree"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Backtracking",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,14 @@
   "id": 940,
   "slug": "count-unique-nonempty-subsequences",
   "title": "Count Unique Nonempty Subsequences",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

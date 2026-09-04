@@ -4,8 +4,14 @@
   "id": 1099,
   "slug": "two-sum-less-than-k",
   "title": "Two Sum Less Than K",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

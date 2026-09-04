@@ -4,8 +4,13 @@
   "id": 2222,
   "slug": "alternating-triple-selections",
   "title": "Alternating Triple Selections",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Prefix Sum"

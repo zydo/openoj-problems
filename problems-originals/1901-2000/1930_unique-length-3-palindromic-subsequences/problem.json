@@ -3,10 +3,16 @@
   "id": 1930,
   "slug": "unique-length-3-palindromic-subsequences",
   "title": "Unique Length-3 Palindromic Subsequences",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
     "Prefix Sum"
   ],
   "invocation": {

@@ -4,10 +4,13 @@
   "id": 1098,
   "slug": "slow-selling-plants",
   "title": "Slow-Selling Plants",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

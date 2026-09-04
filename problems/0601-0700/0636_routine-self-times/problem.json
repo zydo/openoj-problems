@@ -4,8 +4,12 @@
   "id": 636,
   "slug": "routine-self-times",
   "title": "Routine Self Times",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Stack"
+  ],
+  "topics": [
+    "Array",
     "Stack"
   ],
   "invocation": {

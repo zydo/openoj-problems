@@ -4,8 +4,14 @@
   "id": 2517,
   "slug": "largest-minimum-price-gap",
   "title": "Largest Minimum Price Gap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Binary Search",
     "Greedy",
     "Sorting"

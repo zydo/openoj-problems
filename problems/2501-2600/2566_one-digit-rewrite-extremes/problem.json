@@ -4,8 +4,12 @@
   "id": 2566,
   "slug": "one-digit-rewrite-extremes",
   "title": "One-Digit Rewrite Extremes",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

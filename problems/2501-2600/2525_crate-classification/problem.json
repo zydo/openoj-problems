@@ -4,8 +4,11 @@
   "id": 2525,
   "slug": "crate-classification",
   "title": "Crate Classification",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

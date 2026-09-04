@@ -3,10 +3,17 @@
   "id": 768,
   "slug": "max-chunks-to-make-sorted-ii",
   "title": "Max Chunks To Make Sorted II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Stack",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

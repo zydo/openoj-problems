@@ -4,9 +4,15 @@
   "id": 435,
   "slug": "minimum-interval-removals",
   "title": "Minimum Interval Removals",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Greedy",
     "Sorting"
   ],

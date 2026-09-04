@@ -3,7 +3,7 @@
   "id": 973,
   "slug": "k-closest-points-to-origin",
   "title": "K Closest Points to Origin",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
@@ -12,6 +12,16 @@
     "Sorting",
     "Heap",
     "Quickselect"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Divide and Conquer",
+    "Geometry",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Quickselect",
+    "K-D Tree"
   ],
   "invocation": {
     "type": "function",

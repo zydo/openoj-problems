@@ -4,8 +4,14 @@
   "id": 3034,
   "slug": "number-of-subarrays-that-match-a-pattern-i",
   "title": "Number of Subarrays That Match a Pattern I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "Rolling Hash",
     "String Matching",

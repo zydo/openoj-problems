@@ -4,10 +4,16 @@
   "id": 2055,
   "slug": "plates-flanked-by-candles",
   "title": "Plates Flanked by Candles",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Binary Search",
     "Prefix Sum"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 2044,
   "slug": "count-number-of-maximum-bitwise-or-subsets",
   "title": "Count Number of Maximum Bitwise-OR Subsets",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation",

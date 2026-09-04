@@ -4,8 +4,13 @@
   "id": 3786,
   "slug": "total-sum-of-interaction-cost-in-tree-groups",
   "title": "Total Sum of Interaction Cost in Tree Groups",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Depth-First Search"

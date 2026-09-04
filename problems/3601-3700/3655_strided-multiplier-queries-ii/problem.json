@@ -4,8 +4,13 @@
   "id": 3655,
   "slug": "strided-multiplier-queries-ii",
   "title": "Strided Multiplier Queries II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Prefix Sum"

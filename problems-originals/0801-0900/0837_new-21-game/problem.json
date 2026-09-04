@@ -3,12 +3,18 @@
   "id": 837,
   "slug": "new-21-game",
   "title": "New 21 Game",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Dynamic Programming",
     "Sliding Window",
     "Probability"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Probability and Statistics"
   ],
   "invocation": {
     "type": "function",

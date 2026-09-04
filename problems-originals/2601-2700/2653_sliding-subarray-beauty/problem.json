@@ -4,8 +4,13 @@
   "id": 2653,
   "slug": "sliding-subarray-beauty",
   "title": "Sliding Subarray Beauty",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

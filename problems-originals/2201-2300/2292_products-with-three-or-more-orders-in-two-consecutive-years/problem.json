@@ -4,8 +4,11 @@
   "id": 2292,
   "slug": "products-with-three-or-more-orders-in-two-consecutive-years",
   "title": "Products With Three or More Orders in Two Consecutive Years",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

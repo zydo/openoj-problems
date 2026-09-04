@@ -4,8 +4,14 @@
   "id": 2342,
   "slug": "max-sum-of-a-pair-with-equal-sum-of-digits",
   "title": "Max Sum of a Pair With Equal Sum of Digits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

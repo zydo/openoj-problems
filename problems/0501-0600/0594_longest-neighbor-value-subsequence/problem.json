@@ -4,8 +4,15 @@
   "id": 594,
   "slug": "longest-neighbor-value-subsequence",
   "title": "Longest Neighbor-Value Subsequence",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

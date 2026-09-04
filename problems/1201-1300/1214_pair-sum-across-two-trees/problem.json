@@ -4,12 +4,21 @@
   "id": 1214,
   "slug": "pair-sum-across-two-trees",
   "title": "Pair Sum Across Two Trees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search Tree",
     "Two Pointers",
     "Depth-First Search",
     "Tree"
+  ],
+  "topics": [
+    "Two Pointers",
+    "Binary Search",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

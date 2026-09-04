@@ -4,8 +4,14 @@
   "id": 2444,
   "slug": "count-subarrays-with-given-extremes",
   "title": "Count Subarrays With Given Extremes",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Sliding Window",

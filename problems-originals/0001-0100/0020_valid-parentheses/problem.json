@@ -3,10 +3,15 @@
   "id": 20,
   "slug": "valid-parentheses",
   "title": "Valid Parentheses",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Stack"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
   ],
   "invocation": {
     "type": "function",

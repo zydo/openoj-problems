@@ -4,8 +4,18 @@
   "id": 2029,
   "slug": "stone-game-ix",
   "title": "Stone Game IX",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Minimax",
+    "Counting",
+    "Game Theory",
+    "Nim Game",
+    "Zero-Sum Game"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

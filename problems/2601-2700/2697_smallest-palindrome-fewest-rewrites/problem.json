@@ -4,8 +4,13 @@
   "id": 2697,
   "slug": "smallest-palindrome-fewest-rewrites",
   "title": "Smallest Palindrome, Fewest Rewrites",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Greedy"

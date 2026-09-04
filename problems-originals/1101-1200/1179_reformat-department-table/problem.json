@@ -4,8 +4,11 @@
   "id": 1179,
   "slug": "reformat-department-table",
   "title": "Reformat Department Table",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

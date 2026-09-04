@@ -4,8 +4,12 @@
   "id": 1836,
   "slug": "drop-every-repeated-value",
   "title": "Drop Every Repeated Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "topics": [
     "Hash Table",
     "Linked List"
   ],

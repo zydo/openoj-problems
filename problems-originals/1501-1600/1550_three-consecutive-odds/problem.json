@@ -4,8 +4,11 @@
   "id": 1550,
   "slug": "three-consecutive-odds",
   "title": "Three Consecutive Odds",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

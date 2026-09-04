@@ -4,8 +4,12 @@
   "id": 4011,
   "slug": "count-subarrays-with-even-odd-ratio-i",
   "title": "Count Subarrays With Even Odd Ratio I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Math",
+    "Prefix Sum"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

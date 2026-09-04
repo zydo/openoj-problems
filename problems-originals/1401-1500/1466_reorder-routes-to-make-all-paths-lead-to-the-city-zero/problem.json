@@ -3,11 +3,16 @@
   "id": 1466,
   "slug": "reorder-routes-to-make-all-paths-lead-to-the-city-zero",
   "title": "Reorder Routes to Make All Paths Lead to the City Zero",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "DFS",
     "Graph"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

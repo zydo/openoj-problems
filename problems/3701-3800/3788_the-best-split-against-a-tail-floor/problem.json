@@ -4,8 +4,12 @@
   "id": 3788,
   "slug": "the-best-split-against-a-tail-floor",
   "title": "The Best Split Against A Tail Floor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

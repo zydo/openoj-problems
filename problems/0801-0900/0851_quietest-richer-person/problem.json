@@ -4,11 +4,18 @@
   "id": 851,
   "slug": "quietest-richer-person",
   "title": "Quietest Richer Person",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Depth-First Search",
     "Graph Theory",
     "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

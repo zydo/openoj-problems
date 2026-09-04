@@ -4,8 +4,13 @@
   "id": 376,
   "slug": "wiggle-subsequence",
   "title": "Wiggle Subsequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

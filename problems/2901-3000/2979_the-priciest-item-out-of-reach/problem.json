@@ -4,8 +4,13 @@
   "id": 2979,
   "slug": "the-priciest-item-out-of-reach",
   "title": "The Priciest Item Out of Reach",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Number Theory"

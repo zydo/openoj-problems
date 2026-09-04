@@ -3,8 +3,12 @@
   "id": 1456,
   "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
   "title": "Maximum Number of Vowels in a Substring of Given Length",
-  "difficulty": "H1",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

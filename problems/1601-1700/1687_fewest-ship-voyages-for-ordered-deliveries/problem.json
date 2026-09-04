@@ -4,10 +4,19 @@
   "id": 1687,
   "slug": "fewest-ship-voyages-for-ordered-deliveries",
   "title": "Fewest Ship Voyages for Ordered Deliveries",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Segment Tree",
+    "Queue",
+    "Heap (Priority Queue)",
     "Prefix Sum",
     "Monotonic Queue"
   ],

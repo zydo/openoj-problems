@@ -4,8 +4,12 @@
   "id": 213,
   "slug": "circular-heist-ii",
   "title": "Circular Heist II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

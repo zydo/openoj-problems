@@ -4,10 +4,13 @@
   "id": 1112,
   "slug": "best-mark-per-student",
   "title": "Best Mark Per Student",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

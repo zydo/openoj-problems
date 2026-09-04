@@ -4,10 +4,17 @@
   "id": 350,
   "slug": "common-values-ii",
   "title": "Common Values II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

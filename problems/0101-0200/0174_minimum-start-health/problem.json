@@ -4,10 +4,15 @@
   "id": 174,
   "slug": "minimum-start-health",
   "title": "Minimum Start Health",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

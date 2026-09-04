@@ -4,8 +4,12 @@
   "id": 1539,
   "slug": "kth-missing-positive-number",
   "title": "Kth Missing Positive Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

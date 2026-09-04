@@ -4,8 +4,13 @@
   "id": 3424,
   "slug": "minimum-cost-to-make-arrays-identical",
   "title": "Minimum Cost to Make Arrays Identical",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

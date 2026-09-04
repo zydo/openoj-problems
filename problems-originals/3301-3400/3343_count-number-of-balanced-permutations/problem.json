@@ -4,8 +4,14 @@
   "id": 3343,
   "slug": "count-number-of-balanced-permutations",
   "title": "Count Number of Balanced Permutations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming",

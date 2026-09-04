@@ -4,8 +4,12 @@
   "id": 1891,
   "slug": "ribbon-rationing",
   "title": "Ribbon Rationing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

@@ -4,8 +4,12 @@
   "id": 798,
   "slug": "peak-rotation-index",
   "title": "Peak Rotation Index",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

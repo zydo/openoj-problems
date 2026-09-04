@@ -4,8 +4,11 @@
   "id": 65,
   "slug": "does-it-read-as-a-number",
   "title": "Does It Read As A Number",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

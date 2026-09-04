@@ -4,8 +4,11 @@
   "id": 3353,
   "slug": "minimum-total-operations",
   "title": "Minimum Total Operations",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

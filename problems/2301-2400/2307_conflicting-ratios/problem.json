@@ -4,13 +4,20 @@
   "id": 2307,
   "slug": "conflicting-ratios",
   "title": "Conflicting Ratios",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
     "Depth First Search",
     "Union Find",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

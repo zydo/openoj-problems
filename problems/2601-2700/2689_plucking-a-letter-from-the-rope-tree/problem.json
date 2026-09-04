@@ -4,8 +4,13 @@
   "id": 2689,
   "slug": "plucking-a-letter-from-the-rope-tree",
   "title": "Plucking A Letter From The Rope Tree",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

@@ -4,10 +4,14 @@
   "id": 1922,
   "slug": "even-slots-prime-slots",
   "title": "Even Slots and Prime Slots",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

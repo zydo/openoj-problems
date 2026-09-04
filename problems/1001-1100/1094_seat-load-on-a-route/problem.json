@@ -4,12 +4,19 @@
   "id": 1094,
   "slug": "seat-load-on-a-route",
   "title": "Seat Load on a Route",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array",
     "Prefix Sum",
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

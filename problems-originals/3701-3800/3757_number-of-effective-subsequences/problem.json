@@ -4,8 +4,15 @@
   "id": 3757,
   "slug": "number-of-effective-subsequences",
   "title": "Number of Effective Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Combinatorics"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

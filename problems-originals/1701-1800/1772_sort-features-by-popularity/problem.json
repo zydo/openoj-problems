@@ -4,8 +4,14 @@
   "id": 1772,
   "slug": "sort-features-by-popularity",
   "title": "Sort Features by Popularity",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

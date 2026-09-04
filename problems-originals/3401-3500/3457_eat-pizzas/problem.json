@@ -4,8 +4,13 @@
   "id": 3457,
   "slug": "eat-pizzas",
   "title": "Eat Pizzas!",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

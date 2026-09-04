@@ -3,8 +3,13 @@
   "id": 1314,
   "slug": "matrix-block-sum",
   "title": "Matrix Block Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Matrix",
     "Prefix Sum"
   ],

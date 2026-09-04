@@ -4,8 +4,12 @@
   "id": 2580,
   "slug": "count-ways-to-group-overlapping-ranges",
   "title": "Count Ways to Group Overlapping Ranges",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

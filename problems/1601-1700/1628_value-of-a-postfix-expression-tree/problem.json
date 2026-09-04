@@ -4,12 +4,20 @@
   "id": 1628,
   "slug": "value-of-a-postfix-expression-tree",
   "title": "Value of a Postfix Expression Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Stack",
     "Tree",
     "Design"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,16 @@
   "id": 2875,
   "slug": "shortest-sum-window-in-the-endless-array",
   "title": "Shortest Sum Window In The Endless Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
     "Prefix Sum"
   ],
   "invocation": {

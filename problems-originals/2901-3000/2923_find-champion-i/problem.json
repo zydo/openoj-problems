@@ -4,8 +4,12 @@
   "id": 2923,
   "slug": "find-champion-i",
   "title": "Find Champion I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

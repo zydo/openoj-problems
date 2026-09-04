@@ -4,8 +4,12 @@
   "id": 2075,
   "slug": "decode-the-slanted-ciphertext",
   "title": "Decode the Slanted Ciphertext",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

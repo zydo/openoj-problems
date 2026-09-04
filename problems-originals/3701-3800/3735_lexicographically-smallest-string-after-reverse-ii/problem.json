@@ -4,8 +4,15 @@
   "id": 3735,
   "slug": "lexicographically-smallest-string-after-reverse-ii",
   "title": "Lexicographically Smallest String After Reverse II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function"
+  ],
+  "topics": [
     "String",
     "Binary Search",
     "Rolling Hash",

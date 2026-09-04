@@ -4,11 +4,18 @@
   "id": 732,
   "slug": "peak-booking-depth",
   "title": "Peak Booking Depth",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Balanced BST",
     "Difference Array"
+  ],
+  "topics": [
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Prefix Sum",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

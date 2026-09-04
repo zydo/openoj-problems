@@ -4,11 +4,17 @@
   "id": 1086,
   "slug": "best-five-scores-per-student",
   "title": "Best Five Scores Per Student",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

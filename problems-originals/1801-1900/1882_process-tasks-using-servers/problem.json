@@ -4,9 +4,13 @@
   "id": 1882,
   "slug": "process-tasks-using-servers",
   "title": "Process Tasks Using Servers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

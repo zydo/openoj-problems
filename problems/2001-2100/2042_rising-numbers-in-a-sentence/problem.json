@@ -4,8 +4,11 @@
   "id": 2042,
   "slug": "rising-numbers-in-a-sentence",
   "title": "Rising Numbers in a Sentence",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

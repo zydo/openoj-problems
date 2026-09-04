@@ -4,8 +4,12 @@
   "id": 707,
   "slug": "design-linked-list",
   "title": "Design Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Design"
+  ],
+  "topics": [
     "Linked List",
     "Design"
   ],

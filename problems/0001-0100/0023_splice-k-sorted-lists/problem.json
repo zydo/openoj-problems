@@ -4,11 +4,18 @@
   "id": 23,
   "slug": "splice-k-sorted-lists",
   "title": "Splice K Sorted Lists",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Linked List",
     "Heap (Priority Queue)",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Linked List",
+    "Divide and Conquer",
+    "Heap (Priority Queue)",
+    "Merge Sort",
+    "Tournament Sort"
   ],
   "invocation": {
     "type": "function",

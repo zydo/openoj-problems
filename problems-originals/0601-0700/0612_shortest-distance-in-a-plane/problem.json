@@ -4,9 +4,13 @@
   "id": 612,
   "slug": "shortest-distance-in-a-plane",
   "title": "Shortest Distance in a Plane",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
     "Database"
+  ],
+  "topics": [
+    "Database",
+    "Nearest Pair of Points"
   ],
   "invocation": {
     "type": "sql",

@@ -4,8 +4,15 @@
   "id": 676,
   "slug": "implement-magic-dictionary",
   "title": "Implement Magic Dictionary",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Depth-First Search",

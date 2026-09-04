@@ -4,8 +4,12 @@
   "id": 2643,
   "slug": "row-with-maximum-ones",
   "title": "Row With Maximum Ones",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

@@ -4,8 +4,14 @@
   "id": 104,
   "slug": "maximum-depth-of-binary-tree",
   "title": "Maximum Depth of Binary Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

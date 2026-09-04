@@ -4,8 +4,12 @@
   "id": 1018,
   "slug": "binary-prefix-divisible-by-5",
   "title": "Binary Prefix Divisible By 5",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

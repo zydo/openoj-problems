@@ -3,10 +3,16 @@
   "id": 208,
   "slug": "implement-trie-prefix-tree",
   "title": "Implement Trie (Prefix Tree)",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Trie",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
   ],
   "invocation": {
     "type": "design",

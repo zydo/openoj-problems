@@ -3,11 +3,17 @@
   "id": 3108,
   "slug": "minimum-cost-walk-in-weighted-graph",
   "title": "Minimum Cost Walk in Weighted Graph",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Union-Find",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

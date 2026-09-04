@@ -4,8 +4,12 @@
   "id": 835,
   "slug": "image-overlap",
   "title": "Image Overlap",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

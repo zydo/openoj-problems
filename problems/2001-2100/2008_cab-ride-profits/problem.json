@@ -4,9 +4,16 @@
   "id": 2008,
   "slug": "cab-ride-profits",
   "title": "Cab Ride Profits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
     "Dynamic Programming",
     "Sorting"
   ],

@@ -4,13 +4,17 @@
   "id": 3764,
   "slug": "most-common-course-pairs",
   "title": "Most Common Course Pairs",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "String",
     "Sorting",
     "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 192,
   "slug": "word-frequency",
   "title": "Word Frequency",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Shell"
+  ],
+  "topics": [
     "Shell"
   ],
   "invocation": {

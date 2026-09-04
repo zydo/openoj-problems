@@ -4,8 +4,13 @@
   "id": 3916,
   "slug": "switchback-arrays-iii",
   "title": "Switchback Arrays III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Prefix Sum"

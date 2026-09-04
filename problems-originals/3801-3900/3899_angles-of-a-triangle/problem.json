@@ -4,8 +4,13 @@
   "id": 3899,
   "slug": "angles-of-a-triangle",
   "title": "Angles of a Triangle",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

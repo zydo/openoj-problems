@@ -3,8 +3,14 @@
   "id": 2403,
   "slug": "minimum-time-to-kill-all-monsters",
   "title": "Minimum Time to Kill All Monsters",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

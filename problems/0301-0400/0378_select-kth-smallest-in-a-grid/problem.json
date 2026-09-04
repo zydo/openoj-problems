@@ -4,12 +4,19 @@
   "id": 378,
   "slug": "select-kth-smallest-in-a-grid",
   "title": "Select Kth Smallest in a Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Matrix",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

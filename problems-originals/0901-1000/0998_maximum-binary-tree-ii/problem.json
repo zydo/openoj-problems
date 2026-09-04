@@ -4,8 +4,12 @@
   "id": 998,
   "slug": "maximum-binary-tree-ii",
   "title": "Maximum Binary Tree II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Tree"
   ],

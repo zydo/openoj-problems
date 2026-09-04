@@ -4,10 +4,16 @@
   "id": 1428,
   "slug": "first-column-containing-a-one",
   "title": "First Column Containing a One",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Matrix",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

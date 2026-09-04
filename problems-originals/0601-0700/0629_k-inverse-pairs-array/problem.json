@@ -4,8 +4,11 @@
   "id": 629,
   "slug": "k-inverse-pairs-array",
   "title": "K Inverse Pairs Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

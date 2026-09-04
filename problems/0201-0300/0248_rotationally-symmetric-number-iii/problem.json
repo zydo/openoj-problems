@@ -4,11 +4,16 @@
   "id": 248,
   "slug": "rotationally-symmetric-number-iii",
   "title": "Rotationally Symmetric Number III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "String",
     "Combinatorics"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

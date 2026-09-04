@@ -4,8 +4,13 @@
   "id": 628,
   "slug": "maximum-product-of-three-numbers",
   "title": "Maximum Product of Three Numbers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting"

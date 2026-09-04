@@ -4,8 +4,12 @@
   "id": 2778,
   "slug": "sum-of-squares-of-special-elements",
   "title": "Sum of Squares of Special Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

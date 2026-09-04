@@ -4,8 +4,12 @@
   "id": 2810,
   "slug": "typing-with-a-reversing-key",
   "title": "Typing With A Reversing Key",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

@@ -4,11 +4,18 @@
   "id": 1485,
   "slug": "duplicate-binary-tree-with-random-links",
   "title": "Duplicate a Binary Tree With Random Links",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

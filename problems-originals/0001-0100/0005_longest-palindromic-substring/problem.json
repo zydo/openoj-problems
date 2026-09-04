@@ -3,11 +3,17 @@
   "id": 5,
   "slug": "longest-palindromic-substring",
   "title": "Longest Palindromic Substring",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming",
     "Two Pointers"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Manacher"
   ],
   "invocation": {
     "type": "function",

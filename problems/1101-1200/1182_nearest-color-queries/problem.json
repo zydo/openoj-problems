@@ -4,9 +4,14 @@
   "id": 1182,
   "slug": "nearest-color-queries",
   "title": "Nearest Color Queries",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
     "Dynamic Programming"
   ],
   "invocation": {

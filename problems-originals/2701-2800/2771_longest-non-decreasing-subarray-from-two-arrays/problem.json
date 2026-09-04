@@ -4,8 +4,12 @@
   "id": 2771,
   "slug": "longest-non-decreasing-subarray-from-two-arrays",
   "title": "Longest Non-decreasing Subarray From Two Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

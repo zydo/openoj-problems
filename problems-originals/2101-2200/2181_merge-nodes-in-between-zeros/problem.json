@@ -4,8 +4,12 @@
   "id": 2181,
   "slug": "merge-nodes-in-between-zeros",
   "title": "Merge Nodes in Between Zeros",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Simulation"
+  ],
+  "topics": [
     "Linked List",
     "Simulation"
   ],

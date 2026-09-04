@@ -4,8 +4,12 @@
   "id": 1529,
   "slug": "minimum-suffix-flips",
   "title": "Minimum Suffix Flips",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

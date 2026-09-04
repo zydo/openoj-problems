@@ -4,8 +4,14 @@
   "id": 2310,
   "slug": "sum-of-numbers-with-units-digit-k",
   "title": "Sum of Numbers With Units Digit K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Greedy",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Greedy",

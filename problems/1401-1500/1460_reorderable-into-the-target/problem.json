@@ -4,8 +4,13 @@
   "id": 1460,
   "slug": "reorderable-into-the-target",
   "title": "Reorderable Into The Target",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

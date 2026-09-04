@@ -4,8 +4,14 @@
   "id": 1643,
   "slug": "kth-smallest-instructions",
   "title": "Kth Smallest Instructions",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

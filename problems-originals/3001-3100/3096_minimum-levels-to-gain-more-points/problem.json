@@ -4,8 +4,12 @@
   "id": 3096,
   "slug": "minimum-levels-to-gain-more-points",
   "title": "Minimum Levels to Gain More Points",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

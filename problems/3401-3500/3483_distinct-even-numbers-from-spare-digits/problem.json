@@ -4,9 +4,15 @@
   "id": 3483,
   "slug": "distinct-even-numbers-from-spare-digits",
   "title": "Distinct Even Numbers From Spare Digits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Recursion",
     "Enumeration"
   ],
   "invocation": {

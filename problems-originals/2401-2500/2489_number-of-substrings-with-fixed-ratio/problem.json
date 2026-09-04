@@ -4,8 +4,14 @@
   "id": 2489,
   "slug": "number-of-substrings-with-fixed-ratio",
   "title": "Number of Substrings With Fixed Ratio",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

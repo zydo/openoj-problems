@@ -4,8 +4,13 @@
   "id": 45,
   "slug": "jump-game-ii",
   "title": "Jump Game II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

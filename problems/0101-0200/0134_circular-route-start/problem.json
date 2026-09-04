@@ -4,8 +4,12 @@
   "id": 134,
   "slug": "circular-route-start",
   "title": "Circular Route Start",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

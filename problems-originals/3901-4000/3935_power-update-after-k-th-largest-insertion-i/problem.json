@@ -4,8 +4,16 @@
   "id": 3935,
   "slug": "power-update-after-k-th-largest-insertion-i",
   "title": "Power Update After K-th Largest Insertion I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Segment Tree",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

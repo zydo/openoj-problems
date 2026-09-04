@@ -3,10 +3,14 @@
   "id": 489,
   "slug": "robot-room-cleaner",
   "title": "Robot Room Cleaner",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "DFS",
     "Backtracking"
+  ],
+  "topics": [
+    "Backtracking",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

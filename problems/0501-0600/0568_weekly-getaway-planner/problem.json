@@ -4,8 +4,13 @@
   "id": 568,
   "slug": "weekly-getaway-planner",
   "title": "Weekly Getaway Planner",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

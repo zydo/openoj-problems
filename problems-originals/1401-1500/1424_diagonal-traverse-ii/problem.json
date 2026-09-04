@@ -4,8 +4,13 @@
   "id": 1424,
   "slug": "diagonal-traverse-ii",
   "title": "Diagonal Traverse II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)"

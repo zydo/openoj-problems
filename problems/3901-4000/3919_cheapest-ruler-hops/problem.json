@@ -4,8 +4,13 @@
   "id": 3919,
   "slug": "cheapest-ruler-hops",
   "title": "Cheapest Ruler Hops",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Prefix Sum"

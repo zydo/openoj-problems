@@ -4,8 +4,12 @@
   "id": 2450,
   "slug": "distinct-window-flip-outcomes",
   "title": "Distinct Window-Flip Outcomes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

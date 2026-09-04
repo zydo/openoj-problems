@@ -4,8 +4,13 @@
   "id": 3325,
   "slug": "counting-k-heavy-substrings-i",
   "title": "Counting K-Heavy Substrings I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

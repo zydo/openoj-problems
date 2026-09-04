@@ -4,8 +4,12 @@
   "id": 27,
   "slug": "remove-element",
   "title": "Remove Element",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

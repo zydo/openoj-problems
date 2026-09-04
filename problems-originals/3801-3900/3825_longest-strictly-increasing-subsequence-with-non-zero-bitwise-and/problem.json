@@ -4,8 +4,14 @@
   "id": 3825,
   "slug": "longest-strictly-increasing-subsequence-with-non-zero-bitwise-and",
   "title": "Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Bit Manipulation",

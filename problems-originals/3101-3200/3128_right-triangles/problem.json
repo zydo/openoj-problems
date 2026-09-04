@@ -4,8 +4,15 @@
   "id": 3128,
   "slug": "right-triangles",
   "title": "Right Triangles",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

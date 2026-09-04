@@ -4,8 +4,15 @@
   "id": 2045,
   "slug": "second-minimum-time-to-reach-destination",
   "title": "Second Minimum Time to Reach Destination",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Breadth-First Search",
+    "Graph Theory",
+    "Shortest Path",
+    "Dijkstra's Algorithm",
+    "K Shortest Path"
+  ],
+  "topics": [
     "Breadth-First Search",
     "Graph Theory",
     "Shortest Path",

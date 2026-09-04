@@ -4,8 +4,12 @@
   "id": 2103,
   "slug": "rings-and-rods",
   "title": "Rings and Rods",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

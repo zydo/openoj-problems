@@ -4,8 +4,15 @@
   "id": 2025,
   "slug": "maximum-number-of-ways-to-partition-an-array",
   "title": "Maximum Number of Ways to Partition an Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting",

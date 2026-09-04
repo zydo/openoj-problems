@@ -4,8 +4,15 @@
   "id": 3656,
   "slug": "determine-if-a-simple-graph-exists",
   "title": "Determine if a Simple Graph Exists",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Graph Theory",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Graph Theory",

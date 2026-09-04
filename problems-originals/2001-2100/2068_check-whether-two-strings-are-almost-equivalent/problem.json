@@ -4,8 +4,13 @@
   "id": 2068,
   "slug": "check-whether-two-strings-are-almost-equivalent",
   "title": "Check Whether Two Strings are Almost Equivalent",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

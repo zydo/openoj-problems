@@ -4,8 +4,12 @@
   "id": 1209,
   "slug": "collapse-every-run-of-k-equal-letters",
   "title": "Collapse Every Run of k Equal Letters",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

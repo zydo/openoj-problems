@@ -3,11 +3,17 @@
   "id": 871,
   "slug": "minimum-number-of-refueling-stops",
   "title": "Minimum Number of Refueling Stops",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Heap",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

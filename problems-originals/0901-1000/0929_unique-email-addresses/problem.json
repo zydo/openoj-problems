@@ -4,8 +4,13 @@
   "id": 929,
   "slug": "unique-email-addresses",
   "title": "Unique Email Addresses",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

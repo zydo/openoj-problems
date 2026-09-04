@@ -3,8 +3,15 @@
   "id": 85,
   "slug": "maximal-rectangle",
   "title": "Maximal Rectangle",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Matrix",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Stack",

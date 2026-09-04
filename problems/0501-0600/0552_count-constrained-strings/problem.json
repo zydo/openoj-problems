@@ -4,8 +4,11 @@
   "id": 552,
   "slug": "count-constrained-strings",
   "title": "Count Constrained Strings",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

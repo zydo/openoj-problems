@@ -4,8 +4,11 @@
   "id": 1378,
   "slug": "replace-employee-id-with-the-unique-identifier",
   "title": "Replace Employee ID With The Unique Identifier",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

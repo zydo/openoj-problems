@@ -4,8 +4,12 @@
   "id": 2610,
   "slug": "fewest-rows-of-distinct-values",
   "title": "Fewest Rows of Distinct Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

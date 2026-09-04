@@ -4,8 +4,13 @@
   "id": 1133,
   "slug": "largest-unique-number",
   "title": "Largest Unique Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

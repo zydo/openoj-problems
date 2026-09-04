@@ -4,12 +4,21 @@
   "id": 449,
   "slug": "tree-codec",
   "title": "Tree Codec",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Tree",
     "Depth-First Search",
     "Design"
+  ],
+  "topics": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "design",

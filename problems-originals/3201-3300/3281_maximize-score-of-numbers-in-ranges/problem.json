@@ -3,8 +3,14 @@
   "id": 3281,
   "slug": "maximize-score-of-numbers-in-ranges",
   "title": "Maximize Score of Numbers in Ranges",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

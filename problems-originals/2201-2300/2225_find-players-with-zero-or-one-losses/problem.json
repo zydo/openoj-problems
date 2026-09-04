@@ -4,8 +4,14 @@
   "id": 2225,
   "slug": "find-players-with-zero-or-one-losses",
   "title": "Find Players With Zero or One Losses",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

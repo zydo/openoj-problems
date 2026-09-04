@@ -4,11 +4,17 @@
   "id": 2313,
   "slug": "leaf-flips-to-reach-a-root-value",
   "title": "Leaf Flips to Reach a Root Value",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Binary Tree",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

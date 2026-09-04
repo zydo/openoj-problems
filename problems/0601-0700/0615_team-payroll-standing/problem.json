@@ -4,10 +4,13 @@
   "id": 615,
   "slug": "team-payroll-standing",
   "title": "Team Payroll Standing",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

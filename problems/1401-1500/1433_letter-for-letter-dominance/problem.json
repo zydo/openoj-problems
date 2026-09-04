@@ -4,8 +4,13 @@
   "id": 1433,
   "slug": "letter-for-letter-dominance",
   "title": "Letter-for-Letter Dominance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Sorting"

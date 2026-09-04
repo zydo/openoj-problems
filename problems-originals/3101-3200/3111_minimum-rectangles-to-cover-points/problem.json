@@ -4,8 +4,13 @@
   "id": 3111,
   "slug": "minimum-rectangles-to-cover-points",
   "title": "Minimum Rectangles to Cover Points",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

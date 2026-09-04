@@ -4,8 +4,12 @@
   "id": 2318,
   "slug": "coprime-roll-sequences",
   "title": "Coprime Roll Sequences",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Memoization"
   ],

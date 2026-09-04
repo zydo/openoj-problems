@@ -4,8 +4,16 @@
   "id": 2813,
   "slug": "best-k-picks-for-profit-and-variety",
   "title": "Best k Picks for Profit and Variety",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Stack",
     "Greedy",
     "Sorting",
     "Heap (Priority Queue)"

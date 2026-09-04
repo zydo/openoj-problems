@@ -4,8 +4,14 @@
   "id": 819,
   "slug": "most-common-word",
   "title": "Most Common Word",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

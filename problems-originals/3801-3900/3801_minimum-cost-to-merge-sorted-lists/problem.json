@@ -4,8 +4,15 @@
   "id": 3801,
   "slug": "minimum-cost-to-merge-sorted-lists",
   "title": "Minimum Cost to Merge Sorted Lists",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

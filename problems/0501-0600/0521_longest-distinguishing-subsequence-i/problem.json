@@ -4,8 +4,11 @@
   "id": 521,
   "slug": "longest-distinguishing-subsequence-i",
   "title": "Longest Distinguishing Subsequence I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

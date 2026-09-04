@@ -4,10 +4,15 @@
   "id": 964,
   "slug": "cheapest-x-power-sum",
   "title": "Cheapest x-Power Sum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

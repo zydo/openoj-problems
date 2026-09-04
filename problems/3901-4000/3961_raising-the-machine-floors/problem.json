@@ -4,11 +4,15 @@
   "id": 3961,
   "slug": "raising-the-machine-floors",
   "title": "Raising The Machine Floors",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Greedy",
+    "Math"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,17 @@
   "id": 3481,
   "slug": "apply-substitutions",
   "title": "Apply Substitutions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

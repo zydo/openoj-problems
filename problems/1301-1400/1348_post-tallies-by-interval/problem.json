@@ -4,12 +4,20 @@
   "id": 1348,
   "slug": "post-tallies-by-interval",
   "title": "Post Tallies By Interval",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Hash Table",
     "Binary Search",
     "Sorting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Design",
+    "Sorting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

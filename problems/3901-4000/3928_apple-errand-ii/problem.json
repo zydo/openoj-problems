@@ -4,8 +4,14 @@
   "id": 3928,
   "slug": "apple-errand-ii",
   "title": "The Apple Errand II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Array",
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"

@@ -4,8 +4,13 @@
   "id": 817,
   "slug": "linked-list-components",
   "title": "Linked List Components",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Linked List"

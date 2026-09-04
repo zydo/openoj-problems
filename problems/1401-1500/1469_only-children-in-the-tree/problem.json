@@ -4,10 +4,16 @@
   "id": 1469,
   "slug": "only-children-in-the-tree",
   "title": "Only Children In The Tree",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
     "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Binary Tree"
   ],
   "invocation": {

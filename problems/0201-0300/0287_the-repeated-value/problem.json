@@ -4,11 +4,19 @@
   "id": 287,
   "slug": "the-repeated-value",
   "title": "The Repeated Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Two Pointers",
     "Binary Search",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Bit Manipulation",
+    "Pigeonhole Principle",
+    "Floyd's Cycle Finding Algorithm"
   ],
   "invocation": {
     "type": "function",

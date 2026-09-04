@@ -3,11 +3,19 @@
   "id": 1268,
   "slug": "search-suggestions-system",
   "title": "Search Suggestions System",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Trie",
     "Sorting",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Trie",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

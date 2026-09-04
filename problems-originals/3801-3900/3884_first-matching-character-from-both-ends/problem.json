@@ -4,8 +4,12 @@
   "id": 3884,
   "slug": "first-matching-character-from-both-ends",
   "title": "First Matching Character From Both Ends",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

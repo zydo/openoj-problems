@@ -4,10 +4,13 @@
   "id": 1141,
   "slug": "app-usage-i",
   "title": "App Usage I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

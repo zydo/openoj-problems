@@ -4,8 +4,13 @@
   "id": 1340,
   "slug": "downhill-hop-chain-v",
   "title": "Downhill Hop Chain V",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sorting"

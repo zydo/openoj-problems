@@ -4,8 +4,15 @@
   "id": 79,
   "slug": "word-search",
   "title": "Word Search",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Depth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

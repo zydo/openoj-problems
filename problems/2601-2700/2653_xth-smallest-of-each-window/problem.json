@@ -4,8 +4,13 @@
   "id": 2653,
   "slug": "xth-smallest-of-each-window",
   "title": "Xth Smallest of Each Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

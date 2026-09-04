@@ -4,8 +4,13 @@
   "id": 17,
   "slug": "keypad-letter-spells",
   "title": "Keypad Letter Spells",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Backtracking"
   ],

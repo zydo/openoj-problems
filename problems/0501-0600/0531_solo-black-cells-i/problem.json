@@ -4,8 +4,13 @@
   "id": 531,
   "slug": "solo-black-cells-i",
   "title": "Solo Black Cells I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix"

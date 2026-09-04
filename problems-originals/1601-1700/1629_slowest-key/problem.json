@@ -4,8 +4,12 @@
   "id": 1629,
   "slug": "slowest-key",
   "title": "Slowest Key",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

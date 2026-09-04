@@ -4,8 +4,13 @@
   "id": 2185,
   "slug": "counting-words-with-a-given-prefix",
   "title": "Counting Words With a Given Prefix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "String Matching"
+  ],
+  "topics": [
     "Array",
     "String",
     "String Matching"

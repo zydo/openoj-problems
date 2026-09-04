@@ -4,8 +4,12 @@
   "id": 2091,
   "slug": "removing-minimum-and-maximum-from-array",
   "title": "Removing Minimum and Maximum From Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

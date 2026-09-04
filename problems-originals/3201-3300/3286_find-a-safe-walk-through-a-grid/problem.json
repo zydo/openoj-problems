@@ -4,8 +4,16 @@
   "id": 3286,
   "slug": "find-a-safe-walk-through-a-grid",
   "title": "Find a Safe Walk Through a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Graph Theory",

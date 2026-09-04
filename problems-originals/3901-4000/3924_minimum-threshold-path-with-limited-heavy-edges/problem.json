@@ -4,8 +4,13 @@
   "id": 3924,
   "slug": "minimum-threshold-path-with-limited-heavy-edges",
   "title": "Minimum Threshold Path With Limited Heavy Edges",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Binary Search",
     "Breadth-First Search",
     "Graph Theory"

@@ -4,8 +4,14 @@
   "id": 2946,
   "slug": "a-matrix-untouched-by-the-shifts",
   "title": "A Matrix Untouched By The Shifts",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Matrix",

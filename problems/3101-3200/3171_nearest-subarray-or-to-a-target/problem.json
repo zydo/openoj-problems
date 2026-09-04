@@ -4,10 +4,16 @@
   "id": 3171,
   "slug": "nearest-subarray-or-to-a-target",
   "title": "Nearest Subarray OR to a Target",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Bit Manipulation",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

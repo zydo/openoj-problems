@@ -4,8 +4,11 @@
   "id": 3809,
   "slug": "strongest-beacon-in-reach",
   "title": "Strongest Beacon In Reach",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

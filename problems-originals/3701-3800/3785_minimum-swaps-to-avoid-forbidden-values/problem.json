@@ -4,8 +4,14 @@
   "id": 3785,
   "slug": "minimum-swaps-to-avoid-forbidden-values",
   "title": "Minimum Swaps to Avoid Forbidden Values",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

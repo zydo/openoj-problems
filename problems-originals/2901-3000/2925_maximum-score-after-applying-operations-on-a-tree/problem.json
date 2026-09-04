@@ -4,8 +4,14 @@
   "id": 2925,
   "slug": "maximum-score-after-applying-operations-on-a-tree",
   "title": "Maximum Score After Applying Operations on a Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "DP on Trees"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Tree",
     "Depth-First Search",

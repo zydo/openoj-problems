@@ -4,8 +4,13 @@
   "id": 701,
   "slug": "insert-into-a-binary-search-tree",
   "title": "Insert into a Binary Search Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Search Tree",
     "Binary Tree"

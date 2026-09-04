@@ -4,8 +4,14 @@
   "id": 3858,
   "slug": "smallest-or-with-one-pick-per-row",
   "title": "Smallest OR With One Pick Per Row",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation",

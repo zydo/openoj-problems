@@ -3,10 +3,17 @@
   "id": 2439,
   "slug": "minimize-maximum-of-array",
   "title": "Minimize Maximum of Array",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy",
     "Prefix Sum"
   ],
   "invocation": {

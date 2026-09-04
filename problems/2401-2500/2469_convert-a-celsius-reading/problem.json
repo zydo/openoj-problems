@@ -4,8 +4,11 @@
   "id": 2469,
   "slug": "convert-a-celsius-reading",
   "title": "Convert a Celsius Reading",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

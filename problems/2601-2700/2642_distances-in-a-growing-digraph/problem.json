@@ -4,11 +4,17 @@
   "id": 2642,
   "slug": "distances-in-a-growing-digraph",
   "title": "Distances in a Growing Digraph",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Shortest Path",
     "Heap"
+  ],
+  "topics": [
+    "Graph Theory",
+    "Design",
+    "Heap (Priority Queue)",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "design",

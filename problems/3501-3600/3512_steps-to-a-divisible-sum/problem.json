@@ -4,8 +4,12 @@
   "id": 3512,
   "slug": "steps-to-a-divisible-sum",
   "title": "Steps to a Divisible Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

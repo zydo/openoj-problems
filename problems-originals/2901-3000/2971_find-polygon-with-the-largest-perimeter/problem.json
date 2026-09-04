@@ -3,11 +3,18 @@
   "id": 2971,
   "slug": "find-polygon-with-the-largest-perimeter",
   "title": "Find Polygon With the Largest Perimeter",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Prefix Sum",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

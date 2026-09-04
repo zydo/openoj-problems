@@ -4,8 +4,14 @@
   "id": 1365,
   "slug": "how-many-numbers-are-smaller-than-the-current-number",
   "title": "How Many Numbers Are Smaller Than the Current Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

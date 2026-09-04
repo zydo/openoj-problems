@@ -4,8 +4,12 @@
   "id": 3945,
   "slug": "weighted-digit-tally",
   "title": "The Weighted Digit Tally",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Hash Table",
     "Math"
   ],

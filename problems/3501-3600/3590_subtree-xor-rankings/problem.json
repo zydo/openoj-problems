@@ -4,8 +4,14 @@
   "id": 3590,
   "slug": "subtree-xor-rankings",
   "title": "Subtree XOR Rankings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Depth-First Search",

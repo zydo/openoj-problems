@@ -4,11 +4,19 @@
   "id": 1632,
   "slug": "rank-every-matrix-entry",
   "title": "Rank Every Matrix Entry",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Sorting",
     "Greedy",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
+    "Graph Theory",
+    "Topological Sort",
+    "Sorting",
     "Matrix"
   ],
   "invocation": {

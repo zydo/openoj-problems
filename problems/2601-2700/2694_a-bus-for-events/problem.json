@@ -4,10 +4,14 @@
   "id": 2694,
   "slug": "a-bus-for-events",
   "title": "A Bus For Events",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Design"
+  ],
+  "topics": [
+    "Design",
+    "Hash Table"
   ],
   "invocation": {
     "type": "interactive",

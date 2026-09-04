@@ -4,8 +4,13 @@
   "id": 392,
   "slug": "is-subsequence",
   "title": "Is Subsequence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming"

@@ -4,8 +4,12 @@
   "id": 3017,
   "slug": "street-distances-between-houses-ii",
   "title": "Street Distances Between Houses II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Graph Theory",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Graph Theory",
     "Prefix Sum"
   ],

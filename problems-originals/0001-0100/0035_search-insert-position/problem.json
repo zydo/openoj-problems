@@ -4,8 +4,12 @@
   "id": 35,
   "slug": "search-insert-position",
   "title": "Search Insert Position",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

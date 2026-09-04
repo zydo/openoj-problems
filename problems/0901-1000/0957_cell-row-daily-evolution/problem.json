@@ -4,11 +4,18 @@
   "id": 957,
   "slug": "cell-row-daily-evolution",
   "title": "Cell Row Daily Evolution",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Bit Manipulation",
+    "Floyd's Cycle Finding Algorithm"
   ],
   "invocation": {
     "type": "function",

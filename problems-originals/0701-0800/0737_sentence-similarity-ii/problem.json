@@ -3,10 +3,18 @@
   "id": 737,
   "slug": "sentence-similarity-ii",
   "title": "Sentence Similarity II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

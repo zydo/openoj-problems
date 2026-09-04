@@ -4,11 +4,18 @@
   "id": 2135,
   "slug": "targets-from-adding-one-letter",
   "title": "Targets From Adding One Letter",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "Hash Table",
     "String",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
     "Sorting"
   ],
   "invocation": {

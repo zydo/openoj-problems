@@ -4,8 +4,15 @@
   "id": 2306,
   "slug": "naming-a-company",
   "title": "Naming a Company",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

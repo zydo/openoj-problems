@@ -4,9 +4,14 @@
   "id": 419,
   "slug": "warship-grid-count",
   "title": "Warship Grid Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
     "Matrix"
   ],
   "invocation": {

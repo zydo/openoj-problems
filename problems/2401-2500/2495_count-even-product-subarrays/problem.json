@@ -4,10 +4,15 @@
   "id": 2495,
   "slug": "count-even-product-subarrays",
   "title": "Count Even-Product Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

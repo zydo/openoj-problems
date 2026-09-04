@@ -4,8 +4,13 @@
   "id": 3400,
   "slug": "maximum-number-of-matching-indices-after-right-shifts",
   "title": "Maximum Number of Matching Indices After Right Shifts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Simulation"

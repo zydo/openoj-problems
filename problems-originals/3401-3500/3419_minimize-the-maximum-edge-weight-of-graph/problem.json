@@ -3,12 +3,19 @@
   "id": 3419,
   "slug": "minimize-the-maximum-edge-weight-of-graph",
   "title": "Minimize the Maximum Edge Weight of Graph",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Binary Search",
     "Breadth-First Search",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

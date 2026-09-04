@@ -4,8 +4,12 @@
   "id": 1579,
   "slug": "prune-most-edges-from-a-two-traveler-graph",
   "title": "Prune the Most Edges From a Two-Traveler Graph",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Union-Find",
     "Graph Theory"
   ],

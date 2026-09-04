@@ -4,8 +4,11 @@
   "id": 3386,
   "slug": "button-with-longest-push-time",
   "title": "Button with Longest Push Time",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

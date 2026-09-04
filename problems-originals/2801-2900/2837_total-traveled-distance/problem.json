@@ -4,8 +4,11 @@
   "id": 2837,
   "slug": "total-traveled-distance",
   "title": "Total Traveled Distance",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

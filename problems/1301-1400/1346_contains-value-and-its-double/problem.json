@@ -4,10 +4,17 @@
   "id": 1346,
   "slug": "contains-value-and-its-double",
   "title": "Contains a Value and Its Double",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

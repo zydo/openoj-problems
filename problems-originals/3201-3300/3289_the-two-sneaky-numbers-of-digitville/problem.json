@@ -4,8 +4,13 @@
   "id": 3289,
   "slug": "the-two-sneaky-numbers-of-digitville",
   "title": "The Two Sneaky Numbers of Digitville",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math"

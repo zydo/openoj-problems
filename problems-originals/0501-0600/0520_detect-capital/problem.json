@@ -4,8 +4,11 @@
   "id": 520,
   "slug": "detect-capital",
   "title": "Detect Capital",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

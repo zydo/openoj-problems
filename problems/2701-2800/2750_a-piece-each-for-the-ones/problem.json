@@ -4,11 +4,16 @@
   "id": 2750,
   "slug": "a-piece-each-for-the-ones",
   "title": "A Piece Each For The Ones",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

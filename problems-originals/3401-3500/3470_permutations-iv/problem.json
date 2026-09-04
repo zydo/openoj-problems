@@ -4,8 +4,14 @@
   "id": 3470,
   "slug": "permutations-iv",
   "title": "Permutations IV",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Combinatorics",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Combinatorics",

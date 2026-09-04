@@ -4,8 +4,12 @@
   "id": 3496,
   "slug": "peeling-pairs-for-the-best-score",
   "title": "Peeling Pairs For The Best Score",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

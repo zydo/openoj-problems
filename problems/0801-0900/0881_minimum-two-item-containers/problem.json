@@ -4,12 +4,19 @@
   "id": 881,
   "slug": "minimum-two-item-containers",
   "title": "Minimum Two-Item Containers",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Timsort"
   ],
   "invocation": {
     "type": "function",

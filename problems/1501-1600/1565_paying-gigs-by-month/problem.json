@@ -4,10 +4,13 @@
   "id": 1565,
   "slug": "paying-gigs-by-month",
   "title": "Paying Gigs by Month",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

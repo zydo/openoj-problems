@@ -4,11 +4,18 @@
   "id": 1036,
   "slug": "trapped-in-a-million-square-grid",
   "title": "Trapped in a Million-Square Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Bidirectional Search"
   ],
   "invocation": {
     "type": "function",

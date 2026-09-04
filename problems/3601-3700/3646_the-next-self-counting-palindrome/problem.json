@@ -4,8 +4,12 @@
   "id": 3646,
   "slug": "the-next-self-counting-palindrome",
   "title": "The Next Self-Counting Palindrome",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Backtracking",
     "Bit Manipulation"
   ],

@@ -4,8 +4,14 @@
   "id": 3888,
   "slug": "raising-squares-to-level-the-grid",
   "title": "Raising Squares to Level the Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Matrix",

@@ -4,8 +4,14 @@
   "id": 1239,
   "slug": "longest-duplicate-free-concatenation",
   "title": "Longest Duplicate-Free Concatenation",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

@@ -4,11 +4,18 @@
   "id": 2523,
   "slug": "nearest-prime-pair-in-range",
   "title": "Nearest Prime Pair in a Range",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Number Theory",
     "Primality Test"
+  ],
+  "topics": [
+    "Math",
+    "Number Theory",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
   ],
   "invocation": {
     "type": "function",

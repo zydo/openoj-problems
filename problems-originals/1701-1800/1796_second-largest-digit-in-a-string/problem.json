@@ -4,8 +4,12 @@
   "id": 1796,
   "slug": "second-largest-digit-in-a-string",
   "title": "Second Largest Digit in a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

@@ -4,10 +4,13 @@
   "id": 2700,
   "slug": "a-diff-of-two-json-trees",
   "title": "A Diff Of Two JSON Trees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Recursion"
   ],
   "invocation": {
     "type": "interactive",

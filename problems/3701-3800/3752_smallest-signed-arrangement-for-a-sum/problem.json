@@ -4,11 +4,18 @@
   "id": 3752,
   "slug": "smallest-signed-arrangement-for-a-sum",
   "title": "Smallest Signed Arrangement For A Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

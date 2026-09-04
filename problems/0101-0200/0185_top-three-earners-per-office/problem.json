@@ -4,10 +4,13 @@
   "id": 185,
   "slug": "top-three-earners-per-office",
   "title": "Top Three Earners Per Office",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

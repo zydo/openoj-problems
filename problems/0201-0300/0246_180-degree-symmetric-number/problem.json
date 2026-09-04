@@ -4,8 +4,13 @@
   "id": 246,
   "slug": "180-degree-symmetric-number",
   "title": "180-Degree Symmetric Number",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "Two Pointers",
     "String"

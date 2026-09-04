@@ -4,8 +4,14 @@
   "id": 3732,
   "slug": "maximum-product-of-three-elements-after-one-replacement",
   "title": "Maximum Product of Three Elements After One Replacement",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

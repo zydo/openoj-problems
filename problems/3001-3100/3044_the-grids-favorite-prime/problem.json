@@ -4,12 +4,24 @@
   "id": 3044,
   "slug": "the-grids-favorite-prime",
   "title": "The Grid's Favorite Prime",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Matrix",
     "Enumeration",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Matrix",
+    "Counting",
+    "Enumeration",
+    "Number Theory",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
   ],
   "invocation": {
     "type": "function",

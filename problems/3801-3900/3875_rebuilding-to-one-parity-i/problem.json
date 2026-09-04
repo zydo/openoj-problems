@@ -4,8 +4,12 @@
   "id": 3875,
   "slug": "rebuilding-to-one-parity-i",
   "title": "Rebuilding to One Parity I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

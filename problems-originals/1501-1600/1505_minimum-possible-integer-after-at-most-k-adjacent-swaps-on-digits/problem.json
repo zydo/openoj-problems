@@ -4,8 +4,14 @@
   "id": 1505,
   "slug": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
   "title": "Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Binary Indexed Tree",

@@ -4,11 +4,19 @@
   "id": 2812,
   "slug": "safest-route-across-a-hazard-grid",
   "title": "Safest Route Across a Hazard Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Heap (Priority Queue)",
     "Matrix"
   ],
   "invocation": {

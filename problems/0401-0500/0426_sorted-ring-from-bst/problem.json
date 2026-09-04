@@ -4,10 +4,19 @@
   "id": 426,
   "slug": "sorted-ring-from-bst",
   "title": "Sorted Ring From BST",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search Tree",
     "Depth-First Search",
+    "Doubly-Linked List"
+  ],
+  "topics": [
+    "Linked List",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree",
     "Doubly-Linked List"
   ],
   "invocation": {

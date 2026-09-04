@@ -4,11 +4,20 @@
   "id": 642,
   "slug": "ranked-prefix-suggestions",
   "title": "Ranked Prefix Suggestions",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

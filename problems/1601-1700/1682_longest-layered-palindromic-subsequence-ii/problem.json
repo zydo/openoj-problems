@@ -4,8 +4,12 @@
   "id": 1682,
   "slug": "longest-layered-palindromic-subsequence-ii",
   "title": "Longest Layered Palindromic Subsequence II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

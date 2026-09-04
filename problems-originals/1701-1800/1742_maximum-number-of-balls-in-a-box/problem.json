@@ -4,8 +4,13 @@
   "id": 1742,
   "slug": "maximum-number-of-balls-in-a-box",
   "title": "Maximum Number of Balls in a Box",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "Counting"

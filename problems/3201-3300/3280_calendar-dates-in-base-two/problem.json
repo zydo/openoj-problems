@@ -4,8 +4,12 @@
   "id": 3280,
   "slug": "calendar-dates-in-base-two",
   "title": "Calendar Dates In Base Two",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

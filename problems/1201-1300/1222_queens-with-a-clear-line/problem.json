@@ -4,8 +4,13 @@
   "id": 1222,
   "slug": "queens-with-a-clear-line",
   "title": "Queens With a Clear Line",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

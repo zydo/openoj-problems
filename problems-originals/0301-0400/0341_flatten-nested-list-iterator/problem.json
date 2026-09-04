@@ -4,8 +4,16 @@
   "id": 341,
   "slug": "flatten-nested-list-iterator",
   "title": "Flatten Nested List Iterator",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Design",
+    "Queue",
+    "Iterator"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search",

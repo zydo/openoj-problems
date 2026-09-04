@@ -3,12 +3,17 @@
   "id": 3807,
   "slug": "minimum-cost-to-repair-edges-to-traverse-a-graph",
   "title": "Minimum Cost to Repair Edges to Traverse a Graph",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "BFS",
     "Shortest Path",
     "Graph"
+  ],
+  "topics": [
+    "Binary Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

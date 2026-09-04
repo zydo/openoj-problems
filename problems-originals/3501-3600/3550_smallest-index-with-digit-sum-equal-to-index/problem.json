@@ -4,8 +4,12 @@
   "id": 3550,
   "slug": "smallest-index-with-digit-sum-equal-to-index",
   "title": "Smallest Index With Digit Sum Equal to Index",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

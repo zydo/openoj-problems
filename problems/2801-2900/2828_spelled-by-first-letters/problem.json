@@ -4,8 +4,12 @@
   "id": 2828,
   "slug": "spelled-by-first-letters",
   "title": "Spelled By First Letters",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

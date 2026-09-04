@@ -4,8 +4,12 @@
   "id": 3813,
   "slug": "vowel-consonant-score",
   "title": "Vowel-Consonant Score",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

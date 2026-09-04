@@ -4,8 +4,12 @@
   "id": 1473,
   "slug": "paint-house-iii",
   "title": "Paint House III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

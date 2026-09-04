@@ -4,8 +4,13 @@
   "id": 3284,
   "slug": "totaling-the-stepwise-stretches",
   "title": "Totaling The Stepwise Stretches",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Dynamic Programming"

@@ -4,8 +4,16 @@
   "id": 924,
   "slug": "infection-quarantine-choice",
   "title": "Infection Quarantine Choice",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

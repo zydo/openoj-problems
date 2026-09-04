@@ -4,8 +4,13 @@
   "id": 3305,
   "slug": "vowel-complete-windows-i",
   "title": "Vowel-Complete Windows I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

@@ -4,10 +4,16 @@
   "id": 2213,
   "slug": "longest-uniform-run-after-each-edit",
   "title": "Longest Uniform Run After Each Edit",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

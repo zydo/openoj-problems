@@ -4,8 +4,12 @@
   "id": 3274,
   "slug": "matching-square-colors",
   "title": "Matching Square Colors",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

@@ -4,8 +4,16 @@
   "id": 149,
   "slug": "max-points-on-a-line",
   "title": "Max Points on a Line",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

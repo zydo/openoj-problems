@@ -4,8 +4,12 @@
   "id": 3208,
   "slug": "alternating-trios-on-a-circle-ii",
   "title": "Alternating Trios On A Circle II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

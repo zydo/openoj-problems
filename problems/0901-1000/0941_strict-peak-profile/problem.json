@@ -4,10 +4,13 @@
   "id": 941,
   "slug": "strict-peak-profile",
   "title": "Strict Peak Profile",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array"
   ],
   "invocation": {
     "type": "function",

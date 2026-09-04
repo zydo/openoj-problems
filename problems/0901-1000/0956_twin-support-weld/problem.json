@@ -4,11 +4,18 @@
   "id": 956,
   "slug": "twin-support-weld",
   "title": "Twin Support Weld",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Knapsack Problem"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Meet in the Middle",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

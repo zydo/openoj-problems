@@ -4,10 +4,17 @@
   "id": 1146,
   "slug": "versioned-array",
   "title": "Versioned Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Persistent Data Structure"
   ],
   "invocation": {
     "type": "design",

@@ -4,10 +4,16 @@
   "id": 3209,
   "slug": "counting-and-k-subarrays",
   "title": "Counting And-K Subarrays",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

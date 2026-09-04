@@ -4,10 +4,17 @@
   "id": 3535,
   "slug": "base-unit-equivalents-ii",
   "title": "Base Unit Equivalents II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Depth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Graph Theory"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 3936,
   "slug": "minimum-swaps-to-move-zeros-to-end",
   "title": "Minimum Swaps to Move Zeros to End",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

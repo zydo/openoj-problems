@@ -4,10 +4,13 @@
   "id": 1747,
   "slug": "signed-in-twice-at-once",
   "title": "Signed In Twice at Once",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

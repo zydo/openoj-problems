@@ -4,9 +4,16 @@
   "id": 1284,
   "slug": "fewest-flips-to-a-blank-grid",
   "title": "Fewest Flips to a Blank Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Bit Manipulation",
     "Breadth-First Search",
     "Matrix"

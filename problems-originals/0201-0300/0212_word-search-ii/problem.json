@@ -3,11 +3,18 @@
   "id": 212,
   "slug": "word-search-ii",
   "title": "Word Search II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Backtracking",
     "DFS",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Trie",
     "Matrix"
   ],
   "invocation": {

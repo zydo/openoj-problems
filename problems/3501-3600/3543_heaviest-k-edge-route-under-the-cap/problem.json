@@ -4,8 +4,13 @@
   "id": 3543,
   "slug": "heaviest-k-edge-route-under-the-cap",
   "title": "Heaviest K-Edge Route Under The Cap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Hash Table",
     "Dynamic Programming",
     "Graph Theory"
   ],

@@ -4,8 +4,12 @@
   "id": 3875,
   "slug": "construct-uniform-parity-array-i",
   "title": "Construct Uniform Parity Array I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

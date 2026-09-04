@@ -4,8 +4,14 @@
   "id": 372,
   "slug": "super-pow",
   "title": "Super Pow",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Divide and Conquer",
+    "Euler's Totient Function",
+    "Euler's Theorem"
+  ],
+  "topics": [
     "Math",
     "Divide and Conquer",
     "Euler's Totient Function",

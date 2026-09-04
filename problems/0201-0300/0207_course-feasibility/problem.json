@@ -4,11 +4,18 @@
   "id": 207,
   "slug": "course-feasibility",
   "title": "Course Feasibility",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Topological Sort",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

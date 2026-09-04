@@ -3,11 +3,16 @@
   "id": 2488,
   "slug": "count-subarrays-with-median-k",
   "title": "Count Subarrays With Median K",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Prefix Sum",
     "Hash Table",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

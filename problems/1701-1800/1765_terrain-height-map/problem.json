@@ -4,8 +4,13 @@
   "id": 1765,
   "slug": "terrain-height-map",
   "title": "Terrain Height Map",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

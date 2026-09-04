@@ -4,8 +4,13 @@
   "id": 3771,
   "slug": "total-score-of-dungeon-runs",
   "title": "Total Score of Dungeon Runs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Prefix Sum"

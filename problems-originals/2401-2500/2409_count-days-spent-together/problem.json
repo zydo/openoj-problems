@@ -4,8 +4,12 @@
   "id": 2409,
   "slug": "count-days-spent-together",
   "title": "Count Days Spent Together",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

@@ -3,10 +3,17 @@
   "id": 1776,
   "slug": "car-fleet-ii",
   "title": "Car Fleet II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Stack",
     "Stack"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Stack",
+    "Heap (Priority Queue)",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

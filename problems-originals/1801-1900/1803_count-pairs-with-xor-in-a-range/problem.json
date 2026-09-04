@@ -3,10 +3,15 @@
   "id": 1803,
   "slug": "count-pairs-with-xor-in-a-range",
   "title": "Count Pairs With XOR in a Range",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

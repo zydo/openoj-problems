@@ -4,8 +4,14 @@
   "id": 3929,
   "slug": "minimum-partition-score-ii",
   "title": "Minimum Partition Score II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Dynamic Programming",

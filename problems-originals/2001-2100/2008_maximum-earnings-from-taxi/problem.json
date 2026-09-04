@@ -4,8 +4,15 @@
   "id": 2008,
   "slug": "maximum-earnings-from-taxi",
   "title": "Maximum Earnings From Taxi",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

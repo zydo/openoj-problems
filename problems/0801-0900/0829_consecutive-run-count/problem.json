@@ -4,8 +4,12 @@
   "id": 829,
   "slug": "consecutive-run-count",
   "title": "Consecutive Run Count",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

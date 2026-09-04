@@ -4,8 +4,14 @@
   "id": 1286,
   "slug": "iterator-for-combination",
   "title": "Iterator for Combination",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking",
+    "Design",
+    "Iterator"
+  ],
+  "topics": [
     "String",
     "Backtracking",
     "Design",

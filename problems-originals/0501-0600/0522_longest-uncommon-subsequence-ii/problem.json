@@ -4,8 +4,15 @@
   "id": 522,
   "slug": "longest-uncommon-subsequence-ii",
   "title": "Longest Uncommon Subsequence II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

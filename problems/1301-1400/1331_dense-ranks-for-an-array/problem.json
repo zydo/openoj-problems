@@ -4,8 +4,13 @@
   "id": 1331,
   "slug": "dense-ranks-for-an-array",
   "title": "Dense Ranks For An Array",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

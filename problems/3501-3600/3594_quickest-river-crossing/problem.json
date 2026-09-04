@@ -4,12 +4,20 @@
   "id": 3594,
   "slug": "quickest-river-crossing",
   "title": "Quickest River Crossing",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Bitmask",
     "Heap (Priority Queue)",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

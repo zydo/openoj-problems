@@ -4,10 +4,13 @@
   "id": 1555,
   "slug": "account-balances-after-transfers",
   "title": "Account Balances After Transfers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

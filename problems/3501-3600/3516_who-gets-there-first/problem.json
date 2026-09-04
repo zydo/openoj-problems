@@ -4,8 +4,11 @@
   "id": 3516,
   "slug": "who-gets-there-first",
   "title": "Who Gets There First",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

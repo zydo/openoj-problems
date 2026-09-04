@@ -4,10 +4,13 @@
   "id": 92,
   "slug": "reverse-whole-list-ii",
   "title": "Reverse Whole List II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Two Pointers"
+  ],
+  "topics": [
+    "Linked List"
   ],
   "invocation": {
     "type": "function",

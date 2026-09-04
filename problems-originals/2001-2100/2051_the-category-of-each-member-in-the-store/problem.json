@@ -4,8 +4,11 @@
   "id": 2051,
   "slug": "the-category-of-each-member-in-the-store",
   "title": "The Category of Each Member in the Store",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

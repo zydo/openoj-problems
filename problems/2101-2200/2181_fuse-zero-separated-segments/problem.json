@@ -4,8 +4,12 @@
   "id": 2181,
   "slug": "fuse-zero-separated-segments",
   "title": "Fuse Zero-Separated Segments",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Simulation"
+  ],
+  "topics": [
     "Linked List",
     "Simulation"
   ],

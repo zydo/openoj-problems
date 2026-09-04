@@ -4,8 +4,12 @@
   "id": 2079,
   "slug": "watering-plants",
   "title": "Watering Plants",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -4,12 +4,19 @@
   "id": 2681,
   "slug": "sum-of-subset-scores",
   "title": "Sum of Subset Scores",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Sorting",
     "Prefix Sum",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Sorting",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

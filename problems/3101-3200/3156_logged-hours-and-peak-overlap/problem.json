@@ -4,10 +4,13 @@
   "id": 3156,
   "slug": "logged-hours-and-peak-overlap",
   "title": "Logged Hours and Peak Overlap",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

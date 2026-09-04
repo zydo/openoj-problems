@@ -4,8 +4,13 @@
   "id": 3194,
   "slug": "minimum-average-of-smallest-and-largest-elements",
   "title": "Minimum Average of Smallest and Largest Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Sorting"

@@ -4,8 +4,13 @@
   "id": 1753,
   "slug": "maximum-score-from-removing-stones",
   "title": "Maximum Score From Removing Stones",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Heap (Priority Queue)"

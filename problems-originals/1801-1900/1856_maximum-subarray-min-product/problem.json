@@ -3,11 +3,18 @@
   "id": 1856,
   "slug": "maximum-subarray-min-product",
   "title": "Maximum Subarray Min-Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Monotonic Stack",
     "Prefix Sum",
     "Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Monotonic Stack",
+    "Prefix Sum",
+    "Cartesian Tree"
   ],
   "invocation": {
     "type": "function",

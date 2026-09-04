@@ -4,8 +4,13 @@
   "id": 3727,
   "slug": "the-best-square-alternation",
   "title": "The Best Square Alternation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

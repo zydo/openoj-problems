@@ -4,8 +4,12 @@
   "id": 1620,
   "slug": "strongest-signal-point",
   "title": "Strongest Signal Point",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

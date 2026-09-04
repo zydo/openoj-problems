@@ -4,8 +4,12 @@
   "id": 1721,
   "slug": "mirrored-list-swap",
   "title": "Mirrored List Swap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "topics": [
     "Linked List",
     "Two Pointers"
   ],

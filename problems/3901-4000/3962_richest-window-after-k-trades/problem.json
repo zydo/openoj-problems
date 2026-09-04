@@ -4,12 +4,16 @@
   "id": 3962,
   "slug": "richest-window-after-k-trades",
   "title": "Richest Window After K Trades",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Greedy",
     "Ordered Set",
     "Sliding Window"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 2965,
   "slug": "find-missing-and-repeated-values",
   "title": "Find Missing and Repeated Values",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

@@ -4,8 +4,12 @@
   "id": 1974,
   "slug": "minimum-time-to-type-word-using-special-typewriter",
   "title": "Minimum Time to Type Word Using Special Typewriter",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

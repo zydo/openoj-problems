@@ -4,8 +4,13 @@
   "id": 1465,
   "slug": "maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
   "title": "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

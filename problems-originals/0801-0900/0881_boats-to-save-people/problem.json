@@ -3,12 +3,19 @@
   "id": 881,
   "slug": "boats-to-save-people",
   "title": "Boats to Save People",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Timsort"
   ],
   "invocation": {
     "type": "function",

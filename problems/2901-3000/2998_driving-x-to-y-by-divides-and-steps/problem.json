@@ -4,10 +4,15 @@
   "id": 2998,
   "slug": "driving-x-to-y-by-divides-and-steps",
   "title": "Driving X To Y By Divides And Steps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Breadth-First Search",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

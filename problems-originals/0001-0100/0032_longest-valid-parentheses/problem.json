@@ -3,11 +3,17 @@
   "id": 32,
   "slug": "longest-valid-parentheses",
   "title": "Longest Valid Parentheses",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Stack",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Bracket Sequences"
   ],
   "invocation": {
     "type": "function",

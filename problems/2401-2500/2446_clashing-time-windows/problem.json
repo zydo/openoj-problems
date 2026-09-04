@@ -4,8 +4,12 @@
   "id": 2446,
   "slug": "clashing-time-windows",
   "title": "Clashing Time Windows",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

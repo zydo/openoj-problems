@@ -4,8 +4,12 @@
   "id": 2078,
   "slug": "farthest-mismatched-houses",
   "title": "Farthest Mismatched Houses",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

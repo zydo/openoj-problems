@@ -4,10 +4,14 @@
   "id": 25,
   "slug": "reverse-in-groups-of-k",
   "title": "Reverse in Groups of k",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Linked List",
     "Two Pointers"
+  ],
+  "topics": [
+    "Linked List",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

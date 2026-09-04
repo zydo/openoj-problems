@@ -4,9 +4,15 @@
   "id": 1275,
   "slug": "tic-tac-toe-verdict",
   "title": "Tic-Tac-Toe Verdict",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Matrix",
     "Simulation"
   ],

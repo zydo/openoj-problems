@@ -4,8 +4,15 @@
   "id": 1570,
   "slug": "dot-product-of-two-sparse-vectors",
   "title": "Dot Product of Two Sparse Vectors",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Design",
+    "Linear Algebra"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

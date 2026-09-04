@@ -4,8 +4,14 @@
   "id": 519,
   "slug": "random-flip-matrix",
   "title": "Random Flip Matrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "Reservoir Sampling",
+    "Randomized"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "Reservoir Sampling",

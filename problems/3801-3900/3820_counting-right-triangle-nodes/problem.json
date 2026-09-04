@@ -4,8 +4,12 @@
   "id": 3820,
   "slug": "counting-right-triangle-nodes",
   "title": "Counting Right-Triangle Nodes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search"
   ],

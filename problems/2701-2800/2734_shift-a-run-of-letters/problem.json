@@ -4,8 +4,12 @@
   "id": 2734,
   "slug": "shift-a-run-of-letters",
   "title": "Shift A Run Of Letters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

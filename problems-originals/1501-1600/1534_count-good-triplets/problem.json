@@ -4,8 +4,12 @@
   "id": 1534,
   "slug": "count-good-triplets",
   "title": "Count Good Triplets",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

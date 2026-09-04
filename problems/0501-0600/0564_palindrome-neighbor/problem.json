@@ -4,8 +4,12 @@
   "id": 564,
   "slug": "palindrome-neighbor",
   "title": "Palindrome Neighbor",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

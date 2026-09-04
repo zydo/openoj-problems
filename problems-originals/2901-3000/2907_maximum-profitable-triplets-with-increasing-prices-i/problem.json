@@ -4,8 +4,13 @@
   "id": 2907,
   "slug": "maximum-profitable-triplets-with-increasing-prices-i",
   "title": "Maximum Profitable Triplets With Increasing Prices I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Binary Indexed Tree",
     "Segment Tree"

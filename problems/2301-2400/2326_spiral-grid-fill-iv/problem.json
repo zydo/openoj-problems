@@ -4,8 +4,14 @@
   "id": 2326,
   "slug": "spiral-grid-fill-iv",
   "title": "Spiral Grid Fill IV",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Linked List",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Matrix",

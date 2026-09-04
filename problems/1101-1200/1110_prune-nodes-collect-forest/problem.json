@@ -4,8 +4,15 @@
   "id": 1110,
   "slug": "prune-nodes-collect-forest",
   "title": "Prune Nodes and Collect the Forest",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Array",
     "Hash Table",
     "Tree",
     "Depth-First Search",

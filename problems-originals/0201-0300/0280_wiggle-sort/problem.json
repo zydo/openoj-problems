@@ -4,8 +4,13 @@
   "id": 280,
   "slug": "wiggle-sort",
   "title": "Wiggle Sort",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

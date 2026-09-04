@@ -4,12 +4,22 @@
   "id": 187,
   "slug": "repeated-ten-letter-windows",
   "title": "Repeated Ten-Letter Windows",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
     "Bit Manipulation",
     "Rolling Hash"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Sliding Window",
+    "Rolling Hash",
+    "Hash Function",
+    "Z Algorithm",
+    "Boyer–Moore String-Search Algorithm"
   ],
   "invocation": {
     "type": "function",

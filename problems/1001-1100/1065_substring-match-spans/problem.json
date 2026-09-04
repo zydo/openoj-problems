@@ -4,11 +4,18 @@
   "id": 1065,
   "slug": "substring-match-spans",
   "title": "Substring Match Spans",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Array",
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Trie",
+    "Sorting",
+    "Aho–Corasick Algorithm"
   ],
   "invocation": {
     "type": "function",

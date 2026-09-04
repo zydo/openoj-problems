@@ -4,8 +4,11 @@
   "id": 1965,
   "slug": "employees-with-missing-information",
   "title": "Employees With Missing Information",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

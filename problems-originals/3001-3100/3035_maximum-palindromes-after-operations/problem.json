@@ -4,8 +4,16 @@
   "id": 3035,
   "slug": "maximum-palindromes-after-operations",
   "title": "Maximum Palindromes After Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

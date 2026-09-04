@@ -4,8 +4,18 @@
   "id": 692,
   "slug": "top-k-frequent-words",
   "title": "Top K Frequent Words",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

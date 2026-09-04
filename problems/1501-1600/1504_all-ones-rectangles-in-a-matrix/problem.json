@@ -4,10 +4,17 @@
   "id": 1504,
   "slug": "all-ones-rectangles-in-a-matrix",
   "title": "All-Ones Rectangles in a Matrix",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "Dynamic Programming",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Matrix",
     "Monotonic Stack"
   ],
   "invocation": {

@@ -4,11 +4,18 @@
   "id": 3383,
   "slug": "fewest-edges-to-reach-every-node-from-a-source",
   "title": "Fewest Edges to Reach Every Node from a Source",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Graph",
     "Depth-First Search",
+    "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
     "Topological Sort"
   ],
   "invocation": {

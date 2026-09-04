@@ -4,8 +4,14 @@
   "id": 509,
   "slug": "fibonacci-number",
   "title": "Fibonacci Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Recursion",
+    "Memoization"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Recursion",

@@ -4,8 +4,12 @@
   "id": 2511,
   "slug": "longest-capturing-march",
   "title": "Longest Capturing March",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

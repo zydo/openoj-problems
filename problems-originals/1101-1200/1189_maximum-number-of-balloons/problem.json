@@ -4,8 +4,13 @@
   "id": 1189,
   "slug": "maximum-number-of-balloons",
   "title": "Maximum Number of Balloons",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

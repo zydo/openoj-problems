@@ -4,8 +4,12 @@
   "id": 2431,
   "slug": "peak-tastiness-basket",
   "title": "Peak Tastiness Basket",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

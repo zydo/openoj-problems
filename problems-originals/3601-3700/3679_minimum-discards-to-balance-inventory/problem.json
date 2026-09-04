@@ -4,8 +4,15 @@
   "id": 3679,
   "slug": "minimum-discards-to-balance-inventory",
   "title": "Minimum Discards to Balance Inventory",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Simulation",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

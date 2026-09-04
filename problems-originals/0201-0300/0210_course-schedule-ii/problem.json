@@ -3,11 +3,17 @@
   "id": 210,
   "slug": "course-schedule-ii",
   "title": "Course Schedule II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Topological Sort",
     "BFS"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort"
   ],
   "invocation": {
     "type": "function",

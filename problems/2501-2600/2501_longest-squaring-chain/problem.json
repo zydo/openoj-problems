@@ -4,10 +4,17 @@
   "id": 2501,
   "slug": "longest-squaring-chain",
   "title": "Longest Squaring Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
     "Dynamic Programming",
     "Sorting"
   ],

@@ -4,8 +4,13 @@
   "id": 3224,
   "slug": "equalizing-mirrored-pair-gaps",
   "title": "Equalizing Mirrored Pair Gaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

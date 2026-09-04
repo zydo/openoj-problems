@@ -4,10 +4,13 @@
   "id": 2837,
   "slug": "distance-per-rider",
   "title": "Distance Per Rider",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

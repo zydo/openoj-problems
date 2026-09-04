@@ -4,8 +4,12 @@
   "id": 3702,
   "slug": "longest-subsequence-keeping-xor-alive",
   "title": "Longest Subsequence Keeping XOR Alive",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

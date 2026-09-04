@@ -4,8 +4,12 @@
   "id": 3280,
   "slug": "convert-date-to-binary",
   "title": "Convert Date to Binary",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

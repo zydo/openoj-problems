@@ -4,9 +4,16 @@
   "id": 1526,
   "slug": "fewest-raises-to-build-a-profile",
   "title": "Fewest Raises to Build a Profile",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Difference Array",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
     "Greedy",
     "Monotonic Stack"
   ],

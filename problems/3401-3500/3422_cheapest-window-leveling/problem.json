@@ -4,9 +4,16 @@
   "id": 3422,
   "slug": "cheapest-window-leveling",
   "title": "Cheapest Window Leveling",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sliding Window",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
     "Sliding Window",
     "Heap (Priority Queue)"
   ],

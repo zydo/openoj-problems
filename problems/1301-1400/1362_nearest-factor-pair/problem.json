@@ -4,8 +4,12 @@
   "id": 1362,
   "slug": "nearest-factor-pair",
   "title": "Nearest Factor Pair",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Prime Factorization"
+  ],
+  "topics": [
     "Math",
     "Prime Factorization"
   ],

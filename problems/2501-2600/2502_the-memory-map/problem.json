@@ -4,8 +4,14 @@
   "id": 2502,
   "slug": "the-memory-map",
   "title": "The Memory Map",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

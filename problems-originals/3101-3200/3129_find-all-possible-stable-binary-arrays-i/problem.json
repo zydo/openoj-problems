@@ -4,8 +4,12 @@
   "id": 3129,
   "slug": "find-all-possible-stable-binary-arrays-i",
   "title": "Find All Possible Stable Binary Arrays I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Prefix Sum"
   ],

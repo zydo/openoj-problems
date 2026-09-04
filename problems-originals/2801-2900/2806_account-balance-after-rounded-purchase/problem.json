@@ -4,8 +4,11 @@
   "id": 2806,
   "slug": "account-balance-after-rounded-purchase",
   "title": "Account Balance After Rounded Purchase",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

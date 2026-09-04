@@ -4,8 +4,13 @@
   "id": 3804,
   "slug": "number-of-centered-subarrays",
   "title": "Number of Centered Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

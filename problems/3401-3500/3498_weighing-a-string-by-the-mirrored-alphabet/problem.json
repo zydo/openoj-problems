@@ -4,8 +4,12 @@
   "id": 3498,
   "slug": "weighing-a-string-by-the-mirrored-alphabet",
   "title": "Weighing A String By The Mirrored Alphabet",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

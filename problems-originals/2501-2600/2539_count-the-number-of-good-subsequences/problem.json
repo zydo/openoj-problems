@@ -4,8 +4,15 @@
   "id": 2539,
   "slug": "count-the-number-of-good-subsequences",
   "title": "Count the Number of Good Subsequences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

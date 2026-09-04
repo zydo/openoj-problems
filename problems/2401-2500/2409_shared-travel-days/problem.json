@@ -4,8 +4,12 @@
   "id": 2409,
   "slug": "shared-travel-days",
   "title": "Shared Travel Days",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

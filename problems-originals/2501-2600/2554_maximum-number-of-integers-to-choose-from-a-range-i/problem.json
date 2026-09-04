@@ -4,8 +4,15 @@
   "id": 2554,
   "slug": "maximum-number-of-integers-to-choose-from-a-range-i",
   "title": "Maximum Number of Integers to Choose From a Range I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

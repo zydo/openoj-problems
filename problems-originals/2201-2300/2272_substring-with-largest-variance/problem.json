@@ -3,9 +3,15 @@
   "id": 2272,
   "slug": "substring-with-largest-variance",
   "title": "Substring With Largest Variance",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

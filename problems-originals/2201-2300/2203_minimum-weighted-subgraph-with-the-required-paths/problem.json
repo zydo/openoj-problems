@@ -3,9 +3,14 @@
   "id": 2203,
   "slug": "minimum-weighted-subgraph-with-the-required-paths",
   "title": "Minimum Weighted Subgraph With the Required Paths",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
     "Shortest Path"
   ],
   "invocation": {

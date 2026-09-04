@@ -3,8 +3,14 @@
   "id": 2141,
   "slug": "maximum-running-time-of-n-computers",
   "title": "Maximum Running Time of N Computers",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

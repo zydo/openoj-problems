@@ -4,8 +4,14 @@
   "id": 1160,
   "slug": "words-from-a-letter-pool",
   "title": "Words From a Letter Pool",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

@@ -4,11 +4,20 @@
   "id": 1250,
   "slug": "reaching-one-integer-combinations",
   "title": "Reaching One with Integer Combinations",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Number Theory",
+    "Bézout's Lemma",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor",
+    "Extended Euclidean Algorithm"
   ],
   "invocation": {
     "type": "function",

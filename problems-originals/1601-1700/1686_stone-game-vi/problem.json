@@ -3,11 +3,21 @@
   "id": 1686,
   "slug": "stone-game-vi",
   "title": "Stone Game VI",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Sorting",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Minimax",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Game Theory",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

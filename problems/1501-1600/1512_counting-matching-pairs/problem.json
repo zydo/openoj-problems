@@ -4,8 +4,14 @@
   "id": 1512,
   "slug": "counting-matching-pairs",
   "title": "Counting Matching Pairs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

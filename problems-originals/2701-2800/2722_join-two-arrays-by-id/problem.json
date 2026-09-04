@@ -4,8 +4,13 @@
   "id": 2722,
   "slug": "join-two-arrays-by-id",
   "title": "Join Two Arrays by ID",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

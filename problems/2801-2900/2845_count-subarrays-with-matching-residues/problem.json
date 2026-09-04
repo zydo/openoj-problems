@@ -4,10 +4,15 @@
   "id": 2845,
   "slug": "count-subarrays-with-matching-residues",
   "title": "Count Subarrays with Matching Residues",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Prefix Sum",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 2224,
   "slug": "minimum-number-of-operations-to-convert-time",
   "title": "Minimum Number of Operations to Convert Time",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

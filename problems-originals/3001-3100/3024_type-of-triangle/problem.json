@@ -4,8 +4,14 @@
   "id": 3024,
   "slug": "type-of-triangle",
   "title": "Type of Triangle",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Polygons"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting",

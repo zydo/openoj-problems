@@ -4,8 +4,13 @@
   "id": 1921,
   "slug": "eliminate-maximum-number-of-monsters",
   "title": "Eliminate Maximum Number of Monsters",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

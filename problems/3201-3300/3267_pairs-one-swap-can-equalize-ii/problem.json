@@ -4,10 +4,17 @@
   "id": 3267,
   "slug": "pairs-one-swap-can-equalize-ii",
   "title": "Pairs One Swap Can Equalize II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting",
     "Enumeration"
   ],
   "invocation": {

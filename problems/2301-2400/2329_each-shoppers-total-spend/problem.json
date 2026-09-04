@@ -4,10 +4,13 @@
   "id": 2329,
   "slug": "each-shoppers-total-spend",
   "title": "Each Shopper's Total Spend",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,8 +4,13 @@
   "id": 2294,
   "slug": "partition-array-such-that-maximum-difference-is-k",
   "title": "Partition Array Such That Maximum Difference Is K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

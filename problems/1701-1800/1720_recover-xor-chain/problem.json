@@ -4,8 +4,12 @@
   "id": 1720,
   "slug": "recover-xor-chain",
   "title": "Recover the XOR Chain",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

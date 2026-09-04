@@ -3,12 +3,18 @@
   "id": 2316,
   "slug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
   "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Depth-First Search",
     "Breadth-First Search",
     "Union Find",
     "Graph"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

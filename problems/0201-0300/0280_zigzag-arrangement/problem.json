@@ -4,8 +4,13 @@
   "id": 280,
   "slug": "zigzag-arrangement",
   "title": "Zigzag Arrangement",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

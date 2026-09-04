@@ -3,8 +3,12 @@
   "id": 3193,
   "slug": "count-the-number-of-inversions",
   "title": "Count the Number of Inversions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

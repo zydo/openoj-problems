@@ -4,8 +4,12 @@
   "id": 429,
   "slug": "n-ary-tree-level-order-traversal",
   "title": "N-ary Tree Level Order Traversal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search"
   ],

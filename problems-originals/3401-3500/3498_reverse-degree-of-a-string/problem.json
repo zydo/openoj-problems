@@ -4,8 +4,12 @@
   "id": 3498,
   "slug": "reverse-degree-of-a-string",
   "title": "Reverse Degree of a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

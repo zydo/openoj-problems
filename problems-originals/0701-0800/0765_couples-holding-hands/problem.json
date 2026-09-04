@@ -3,10 +3,17 @@
   "id": 765,
   "slug": "couples-holding-hands",
   "title": "Couples Holding Hands",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Union Find"
+  ],
+  "topics": [
+    "Greedy",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

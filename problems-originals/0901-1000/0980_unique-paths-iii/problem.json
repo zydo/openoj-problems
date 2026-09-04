@@ -4,8 +4,15 @@
   "id": 980,
   "slug": "unique-paths-iii",
   "title": "Unique Paths III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Matrix",
+    "Hamiltonian Path"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation",

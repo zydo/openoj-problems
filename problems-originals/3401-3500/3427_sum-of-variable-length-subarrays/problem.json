@@ -4,8 +4,12 @@
   "id": 3427,
   "slug": "sum-of-variable-length-subarrays",
   "title": "Sum of Variable Length Subarrays",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

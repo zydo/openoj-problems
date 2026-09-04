@@ -4,8 +4,13 @@
   "id": 150,
   "slug": "evaluate-the-postfix-expression",
   "title": "Evaluate The Postfix Expression",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Stack"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Stack"

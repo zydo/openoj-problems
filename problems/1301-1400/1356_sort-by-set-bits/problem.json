@@ -4,8 +4,14 @@
   "id": 1356,
   "slug": "sort-by-set-bits",
   "title": "Sort by Set Bits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Sorting",

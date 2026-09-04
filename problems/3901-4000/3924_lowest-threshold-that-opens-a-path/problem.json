@@ -4,8 +4,13 @@
   "id": 3924,
   "slug": "lowest-threshold-that-opens-a-path",
   "title": "The Lowest Threshold That Opens A Path",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Binary Search",
     "Breadth-First Search",
     "Graph Theory"

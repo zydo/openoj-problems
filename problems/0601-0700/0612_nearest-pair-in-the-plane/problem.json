@@ -4,10 +4,14 @@
   "id": 612,
   "slug": "nearest-pair-in-the-plane",
   "title": "Nearest Pair in the Plane",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database",
+    "Nearest Pair of Points"
   ],
   "invocation": {
     "type": "sql",

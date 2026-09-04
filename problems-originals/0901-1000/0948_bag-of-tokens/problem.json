@@ -4,8 +4,14 @@
   "id": 948,
   "slug": "bag-of-tokens",
   "title": "Bag of Tokens",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy",

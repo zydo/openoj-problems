@@ -4,8 +4,12 @@
   "id": 1067,
   "slug": "digit-occurrences-in-a-range",
   "title": "Digit Occurrences in a Range",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

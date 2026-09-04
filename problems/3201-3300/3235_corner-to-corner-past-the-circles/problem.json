@@ -4,11 +4,19 @@
   "id": 3235,
   "slug": "corner-to-corner-past-the-circles",
   "title": "Corner To Corner Past The Circles",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Geometry",
     "Union-Find",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Geometry"
   ],
   "invocation": {
     "type": "function",

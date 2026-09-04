@@ -4,8 +4,14 @@
   "id": 2132,
   "slug": "blanketing-the-grid-with-stamps",
   "title": "Blanketing the Grid With Stamps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix",

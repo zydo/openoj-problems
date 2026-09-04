@@ -4,8 +4,13 @@
   "id": 3026,
   "slug": "best-subarray-sum-with-endpoints-k-apart",
   "title": "Best Subarray Sum With Endpoints k Apart",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

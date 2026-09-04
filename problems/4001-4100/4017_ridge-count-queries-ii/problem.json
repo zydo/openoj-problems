@@ -4,11 +4,15 @@
   "id": 4017,
   "slug": "ridge-count-queries-ii",
   "title": "Ridge Count Queries II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Fenwick Tree",
     "Binary Search"
+  ],
+  "topics": [
+    "Segment Tree",
+    "Array"
   ],
   "invocation": {
     "type": "function",

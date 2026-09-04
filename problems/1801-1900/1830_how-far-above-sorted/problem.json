@@ -4,12 +4,20 @@
   "id": 1830,
   "slug": "how-far-above-sorted",
   "title": "How Far Above Sorted",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Math",
     "Combinatorics",
     "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,17 @@
   "id": 3369,
   "slug": "design-an-array-statistics-tracker",
   "title": "Design an Array Statistics Tracker",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "Binary Search",
     "Design",

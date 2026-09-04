@@ -4,8 +4,14 @@
   "id": 1175,
   "slug": "prime-arrangements",
   "title": "Prime Arrangements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Primality Test",
+    "Sieve Theory",
+    "Prime Number Sieve"
+  ],
+  "topics": [
     "Math",
     "Primality Test",
     "Sieve Theory",

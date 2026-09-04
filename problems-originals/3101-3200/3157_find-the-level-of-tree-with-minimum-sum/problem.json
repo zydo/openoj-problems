@@ -4,8 +4,14 @@
   "id": 3157,
   "slug": "find-the-level-of-tree-with-minimum-sum",
   "title": "Find the Level of Tree with Minimum Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

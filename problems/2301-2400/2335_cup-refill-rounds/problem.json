@@ -4,11 +4,17 @@
   "id": 2335,
   "slug": "cup-refill-rounds",
   "title": "Cup Refill Rounds",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

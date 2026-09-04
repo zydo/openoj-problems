@@ -4,8 +4,13 @@
   "id": 1975,
   "slug": "richest-possible-grid",
   "title": "Richest Possible Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix"

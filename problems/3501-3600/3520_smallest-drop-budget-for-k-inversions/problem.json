@@ -4,11 +4,19 @@
   "id": 3520,
   "slug": "smallest-drop-budget-for-k-inversions",
   "title": "Smallest Drop Budget For K Inversions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Binary Indexed Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort"
   ],
   "invocation": {
     "type": "function",

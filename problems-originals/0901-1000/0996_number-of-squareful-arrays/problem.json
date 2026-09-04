@@ -4,8 +4,17 @@
   "id": 996,
   "slug": "number-of-squareful-arrays",
   "title": "Number of Squareful Arrays",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

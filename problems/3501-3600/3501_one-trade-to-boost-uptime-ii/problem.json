@@ -4,8 +4,14 @@
   "id": 3501,
   "slug": "one-trade-to-boost-uptime-ii",
   "title": "One Trade To Boost Uptime II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Binary Search",
+    "Segment Tree"
+  ],
+  "topics": [
+    "Array",
     "String",
     "Binary Search",
     "Segment Tree"

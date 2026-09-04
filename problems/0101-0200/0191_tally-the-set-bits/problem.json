@@ -4,8 +4,12 @@
   "id": 191,
   "slug": "tally-the-set-bits",
   "title": "Tally The Set Bits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Divide and Conquer",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Divide and Conquer",
     "Bit Manipulation"
   ],

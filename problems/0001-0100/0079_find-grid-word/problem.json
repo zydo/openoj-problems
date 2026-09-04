@@ -4,9 +4,16 @@
   "id": 79,
   "slug": "find-grid-word",
   "title": "Find Grid Word",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Backtracking",
+    "Depth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "String",
     "Backtracking",
     "Depth-First Search",
     "Matrix"

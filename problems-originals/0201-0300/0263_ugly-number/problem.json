@@ -4,8 +4,11 @@
   "id": 263,
   "slug": "ugly-number",
   "title": "Ugly Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

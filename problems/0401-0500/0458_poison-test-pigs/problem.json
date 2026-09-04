@@ -4,8 +4,13 @@
   "id": 458,
   "slug": "poison-test-pigs",
   "title": "Poison-Testing Pigs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Combinatorics"

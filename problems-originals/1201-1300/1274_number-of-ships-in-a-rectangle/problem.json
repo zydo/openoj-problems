@@ -3,9 +3,14 @@
   "id": 1274,
   "slug": "number-of-ships-in-a-rectangle",
   "title": "Number of Ships in a Rectangle",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

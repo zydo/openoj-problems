@@ -4,10 +4,18 @@
   "id": 3953,
   "slug": "paying-to-isolate-a-coprime-value",
   "title": "Paying To Isolate A Coprime Value",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics",
+    "Enumeration",
     "Number Theory"
   ],
   "invocation": {

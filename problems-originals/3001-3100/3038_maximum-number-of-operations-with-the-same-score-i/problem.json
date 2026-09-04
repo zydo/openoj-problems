@@ -4,8 +4,12 @@
   "id": 3038,
   "slug": "maximum-number-of-operations-with-the-same-score-i",
   "title": "Maximum Number of Operations With the Same Score I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

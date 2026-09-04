@@ -4,8 +4,13 @@
   "id": 2910,
   "slug": "minimum-number-of-groups-to-create-a-valid-assignment",
   "title": "Minimum Number of Groups to Create a Valid Assignment",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy"

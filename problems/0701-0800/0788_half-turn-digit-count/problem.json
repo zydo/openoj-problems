@@ -4,8 +4,12 @@
   "id": 788,
   "slug": "half-turn-digit-count",
   "title": "Half-Turn Digit Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

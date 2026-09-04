@@ -4,12 +4,19 @@
   "id": 3242,
   "slug": "neighbor-sums-on-a-numbered-grid",
   "title": "Neighbor Sums On A Numbered Grid",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Design",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Matrix",
+    "Simulation"
   ],
   "invocation": {
     "type": "design",

@@ -4,8 +4,13 @@
   "id": 679,
   "slug": "reach-twenty-four",
   "title": "Reach Twenty-Four",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Backtracking"

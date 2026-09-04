@@ -4,8 +4,11 @@
   "id": 8,
   "slug": "string-to-integer-atoi",
   "title": "String to Integer (atoi)",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

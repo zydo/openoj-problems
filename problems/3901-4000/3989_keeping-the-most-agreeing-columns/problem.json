@@ -4,11 +4,16 @@
   "id": 3989,
   "slug": "keeping-the-most-agreeing-columns",
   "title": "Keeping The Most Agreeing Columns",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Matrix"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Bitmask",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,14 @@
   "id": 123,
   "slug": "stock-trading-two-sales",
   "title": "Stock Trading, Two Sales",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 288,
   "slug": "unique-word-abbreviation",
   "title": "Unique Word Abbreviation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

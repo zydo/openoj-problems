@@ -4,10 +4,16 @@
   "id": 1099,
   "slug": "pair-sum-under-the-ceiling",
   "title": "Pair Sum Under the Ceiling",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
     "Sorting"
   ],
   "invocation": {

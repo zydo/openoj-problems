@@ -3,10 +3,16 @@
   "id": 1428,
   "slug": "leftmost-column-with-at-least-a-one",
   "title": "Leftmost Column with at Least a One",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Matrix",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

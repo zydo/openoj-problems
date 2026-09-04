@@ -4,8 +4,12 @@
   "id": 1746,
   "slug": "maximum-subarray-sum-after-one-operation",
   "title": "Maximum Subarray Sum After One Operation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

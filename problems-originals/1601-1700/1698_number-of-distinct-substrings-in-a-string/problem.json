@@ -4,8 +4,15 @@
   "id": 1698,
   "slug": "number-of-distinct-substrings-in-a-string",
   "title": "Number of Distinct Substrings in a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Trie",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function"
+  ],
+  "topics": [
     "String",
     "Trie",
     "Rolling Hash",

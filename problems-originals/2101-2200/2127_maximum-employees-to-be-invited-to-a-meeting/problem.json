@@ -3,10 +3,19 @@
   "id": 2127,
   "slug": "maximum-employees-to-be-invited-to-a-meeting",
   "title": "Maximum Employees to Be Invited to a Meeting",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Kosaraju's Algorithm",
+    "Tarjan's SCC Algorithm"
   ],
   "invocation": {
     "type": "function",

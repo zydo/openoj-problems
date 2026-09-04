@@ -4,8 +4,11 @@
   "id": 3330,
   "slug": "at-most-one-long-press",
   "title": "At Most One Long Press",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

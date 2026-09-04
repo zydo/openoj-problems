@@ -4,8 +4,12 @@
   "id": 2217,
   "slug": "find-palindrome-with-fixed-length",
   "title": "Find Palindrome With Fixed Length",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

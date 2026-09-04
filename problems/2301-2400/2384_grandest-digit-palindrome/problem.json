@@ -4,8 +4,14 @@
   "id": 2384,
   "slug": "grandest-digit-palindrome",
   "title": "Grandest Digit Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

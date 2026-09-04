@@ -4,8 +4,12 @@
   "id": 2691,
   "slug": "immutability-helper",
   "title": "Immutability Helper",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Design",
+    "Recursion"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

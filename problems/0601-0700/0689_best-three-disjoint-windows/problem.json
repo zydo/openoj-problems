@@ -4,8 +4,14 @@
   "id": 689,
   "slug": "best-three-disjoint-windows",
   "title": "Best Three Disjoint Windows",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sliding Window",

@@ -4,10 +4,13 @@
   "id": 1917,
   "slug": "suggest-buddies-from-shared-streams",
   "title": "Suggest Buddies from Shared Streams",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

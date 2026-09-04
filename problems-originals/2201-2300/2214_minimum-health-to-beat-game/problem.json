@@ -4,8 +4,12 @@
   "id": 2214,
   "slug": "minimum-health-to-beat-game",
   "title": "Minimum Health to Beat Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

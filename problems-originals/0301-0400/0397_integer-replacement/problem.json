@@ -4,8 +4,14 @@
   "id": 397,
   "slug": "integer-replacement",
   "title": "Integer Replacement",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation",
+    "Memoization"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Greedy",
     "Bit Manipulation",

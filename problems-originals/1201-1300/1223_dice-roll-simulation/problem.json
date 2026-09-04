@@ -3,8 +3,12 @@
   "id": 1223,
   "slug": "dice-roll-simulation",
   "title": "Dice Roll Simulation",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

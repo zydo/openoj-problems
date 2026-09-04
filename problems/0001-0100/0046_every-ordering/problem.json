@@ -4,8 +4,12 @@
   "id": 46,
   "slug": "every-ordering",
   "title": "Every Ordering",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Backtracking"
   ],

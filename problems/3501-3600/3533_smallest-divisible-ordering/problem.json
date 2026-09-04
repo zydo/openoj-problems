@@ -4,10 +4,16 @@
   "id": 3533,
   "slug": "smallest-divisible-ordering",
   "title": "Smallest Divisible Ordering",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Bitmask DP",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

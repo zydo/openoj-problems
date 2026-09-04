@@ -4,12 +4,18 @@
   "id": 677,
   "slug": "prefix-sum-map",
   "title": "Prefix Sum Map",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Trie",
     "Hash Table",
     "String"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
   ],
   "invocation": {
     "type": "design",

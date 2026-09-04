@@ -4,8 +4,14 @@
   "id": 1562,
   "slug": "find-latest-group-of-size-m",
   "title": "Find Latest Group of Size M",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

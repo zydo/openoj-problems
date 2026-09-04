@@ -4,8 +4,11 @@
   "id": 1009,
   "slug": "complement-of-base-10-integer",
   "title": "Complement of Base 10 Integer",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

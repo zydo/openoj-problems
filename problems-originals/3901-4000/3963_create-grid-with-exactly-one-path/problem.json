@@ -4,8 +4,13 @@
   "id": 3963,
   "slug": "create-grid-with-exactly-one-path",
   "title": "Create Grid With Exactly One Path",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Math",
+    "Greedy",
+    "Matrix"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

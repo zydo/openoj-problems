@@ -4,9 +4,15 @@
   "id": 2560,
   "slug": "non-adjacent-loot-under-a-cap",
   "title": "Non-Adjacent Loot Under a Cap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

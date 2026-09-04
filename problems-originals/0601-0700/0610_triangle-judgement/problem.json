@@ -4,8 +4,11 @@
   "id": 610,
   "slug": "triangle-judgement",
   "title": "Triangle Judgement",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

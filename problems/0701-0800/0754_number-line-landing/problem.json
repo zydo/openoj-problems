@@ -4,8 +4,12 @@
   "id": 754,
   "slug": "number-line-landing",
   "title": "Number Line Landing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

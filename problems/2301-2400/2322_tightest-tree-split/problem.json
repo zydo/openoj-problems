@@ -4,8 +4,14 @@
   "id": 2322,
   "slug": "tightest-tree-split",
   "title": "Tightest Tree Split",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Tree",

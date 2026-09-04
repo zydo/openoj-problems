@@ -4,8 +4,13 @@
   "id": 1668,
   "slug": "longest-back-to-back-word-tiling",
   "title": "Longest Back-to-Back Word Tiling",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "String Matching"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "String Matching"

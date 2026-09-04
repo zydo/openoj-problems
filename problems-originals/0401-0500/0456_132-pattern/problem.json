@@ -3,8 +3,15 @@
   "id": 456,
   "slug": "132-pattern",
   "title": "132 Pattern",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Monotonic Stack",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Stack",

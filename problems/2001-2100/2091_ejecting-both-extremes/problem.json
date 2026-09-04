@@ -4,8 +4,12 @@
   "id": 2091,
   "slug": "ejecting-both-extremes",
   "title": "Ejecting Both Extremes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

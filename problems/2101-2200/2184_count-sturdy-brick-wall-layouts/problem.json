@@ -4,8 +4,14 @@
   "id": 2184,
   "slug": "count-sturdy-brick-wall-layouts",
   "title": "Count Sturdy Brick Wall Layouts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Bit Manipulation",
     "Bitmask"

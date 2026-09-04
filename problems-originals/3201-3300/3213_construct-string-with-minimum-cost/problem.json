@@ -4,8 +4,14 @@
   "id": 3213,
   "slug": "construct-string-with-minimum-cost",
   "title": "Construct String with Minimum Cost",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Suffix Array"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming",

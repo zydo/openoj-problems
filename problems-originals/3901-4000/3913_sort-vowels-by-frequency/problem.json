@@ -4,8 +4,13 @@
   "id": 3913,
   "slug": "sort-vowels-by-frequency",
   "title": "Sort Vowels by Frequency",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Sorting",
     "Counting"

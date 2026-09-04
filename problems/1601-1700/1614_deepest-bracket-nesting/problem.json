@@ -4,8 +4,13 @@
   "id": 1614,
   "slug": "deepest-bracket-nesting",
   "title": "Deepest Bracket Nesting",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Bracket Sequences"

@@ -4,11 +4,17 @@
   "id": 3076,
   "slug": "the-shortest-substring-no-other-string-shares",
   "title": "The Shortest Substring No Other String Shares",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

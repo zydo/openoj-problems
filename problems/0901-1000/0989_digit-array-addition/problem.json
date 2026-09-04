@@ -4,8 +4,12 @@
   "id": 989,
   "slug": "digit-array-addition",
   "title": "Digit-Array Addition",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -3,8 +3,13 @@
   "id": 286,
   "slug": "walls-and-gates",
   "title": "Walls and Gates",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

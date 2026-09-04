@@ -4,8 +4,14 @@
   "id": 3621,
   "slug": "number-of-integers-with-popcount-depth-equal-to-k-i",
   "title": "Number of Integers With Popcount-Depth Equal to K I",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Bit Manipulation",

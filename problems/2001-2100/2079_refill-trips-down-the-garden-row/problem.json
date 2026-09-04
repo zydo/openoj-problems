@@ -4,8 +4,12 @@
   "id": 2079,
   "slug": "refill-trips-down-the-garden-row",
   "title": "Refill Trips Down the Garden Row",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

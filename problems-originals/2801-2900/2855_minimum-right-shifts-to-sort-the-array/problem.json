@@ -4,8 +4,11 @@
   "id": 2855,
   "slug": "minimum-right-shifts-to-sort-the-array",
   "title": "Minimum Right Shifts to Sort the Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

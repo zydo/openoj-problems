@@ -4,8 +4,13 @@
   "id": 2283,
   "slug": "self-describing-digit-string",
   "title": "Self-Describing Digit String",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

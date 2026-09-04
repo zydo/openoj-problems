@@ -4,10 +4,13 @@
   "id": 3236,
   "slug": "reporting-lines-from-the-top",
   "title": "Reporting Lines From The Top",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

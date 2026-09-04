@@ -4,8 +4,14 @@
   "id": 3078,
   "slug": "matching-a-letter-digit-template-in-a-grid-i",
   "title": "Matching a Letter-Digit Template in a Grid I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

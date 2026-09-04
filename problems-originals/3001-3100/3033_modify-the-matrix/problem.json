@@ -4,8 +4,12 @@
   "id": 3033,
   "slug": "modify-the-matrix",
   "title": "Modify the Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

@@ -4,8 +4,13 @@
   "id": 3538,
   "slug": "folding-signs-for-the-quickest-drive",
   "title": "Folding Signs For The Quickest Drive",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

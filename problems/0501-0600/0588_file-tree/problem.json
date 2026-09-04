@@ -4,11 +4,18 @@
   "id": 588,
   "slug": "file-tree",
   "title": "File Tree",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Tree",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie",
+    "Sorting"
   ],
   "invocation": {
     "type": "design",

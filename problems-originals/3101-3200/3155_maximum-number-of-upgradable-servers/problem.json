@@ -4,8 +4,13 @@
   "id": 3155,
   "slug": "maximum-number-of-upgradable-servers",
   "title": "Maximum Number of Upgradable Servers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search"

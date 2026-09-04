@@ -4,8 +4,13 @@
   "id": 3852,
   "slug": "smallest-pair-with-different-frequencies",
   "title": "Smallest Pair With Different Frequencies",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

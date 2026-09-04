@@ -4,8 +4,15 @@
   "id": 716,
   "slug": "stack-with-max-tracking",
   "title": "Stack With Max Tracking",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Linked List",
+    "Stack",
+    "Design",
+    "Doubly-Linked List",
+    "Ordered Set"
+  ],
+  "topics": [
     "Linked List",
     "Stack",
     "Design",

@@ -4,11 +4,17 @@
   "id": 2242,
   "slug": "highest-four-node-path-score",
   "title": "Highest Four-Node Path Score",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Graph",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Graph Theory",
+    "Sorting",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

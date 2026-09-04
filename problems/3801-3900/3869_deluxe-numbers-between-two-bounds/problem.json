@@ -4,8 +4,12 @@
   "id": 3869,
   "slug": "deluxe-numbers-between-two-bounds",
   "title": "Counting Deluxe Numbers Between Two Bounds",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

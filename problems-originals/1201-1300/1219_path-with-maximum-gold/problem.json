@@ -4,8 +4,13 @@
   "id": 1219,
   "slug": "path-with-maximum-gold",
   "title": "Path with Maximum Gold",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Matrix"

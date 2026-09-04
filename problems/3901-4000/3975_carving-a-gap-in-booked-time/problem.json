@@ -4,8 +4,12 @@
   "id": 3975,
   "slug": "carving-a-gap-in-booked-time",
   "title": "Carving A Gap In Booked Time",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

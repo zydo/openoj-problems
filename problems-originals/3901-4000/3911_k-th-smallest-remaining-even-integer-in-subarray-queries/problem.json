@@ -4,8 +4,12 @@
   "id": 3911,
   "slug": "k-th-smallest-remaining-even-integer-in-subarray-queries",
   "title": "K-th Smallest Remaining Even Integer in Subarray Queries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

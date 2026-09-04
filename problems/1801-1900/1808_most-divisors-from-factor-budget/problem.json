@@ -4,11 +4,16 @@
   "id": 1808,
   "slug": "most-divisors-from-factor-budget",
   "title": "Most Divisors From a Factor Budget",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Number Theory",
     "Greedy"
+  ],
+  "topics": [
+    "Math",
+    "Recursion",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 1403,
   "slug": "outweighing-subsequence",
   "title": "Outweighing Subsequence",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

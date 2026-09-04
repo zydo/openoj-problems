@@ -4,11 +4,17 @@
   "id": 1353,
   "slug": "most-tasks-done-one-per-day",
   "title": "Most Tasks Done, One Per Day",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

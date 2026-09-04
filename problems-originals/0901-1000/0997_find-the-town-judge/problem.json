@@ -4,8 +4,13 @@
   "id": 997,
   "slug": "find-the-town-judge",
   "title": "Find the Town Judge",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Graph Theory"

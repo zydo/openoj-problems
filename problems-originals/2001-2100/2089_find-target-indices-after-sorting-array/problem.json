@@ -4,8 +4,13 @@
   "id": 2089,
   "slug": "find-target-indices-after-sorting-array",
   "title": "Find Target Indices After Sorting Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

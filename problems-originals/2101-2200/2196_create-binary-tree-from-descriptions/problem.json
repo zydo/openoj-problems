@@ -4,8 +4,14 @@
   "id": 2196,
   "slug": "create-binary-tree-from-descriptions",
   "title": "Create Binary Tree From Descriptions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

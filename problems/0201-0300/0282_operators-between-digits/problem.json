@@ -4,11 +4,16 @@
   "id": 282,
   "slug": "operators-between-digits",
   "title": "Operators Between Digits",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Backtracking",
     "Math",
     "String"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Backtracking"
   ],
   "invocation": {
     "type": "function",

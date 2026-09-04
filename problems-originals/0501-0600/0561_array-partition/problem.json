@@ -4,8 +4,14 @@
   "id": 561,
   "slug": "array-partition",
   "title": "Array Partition",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

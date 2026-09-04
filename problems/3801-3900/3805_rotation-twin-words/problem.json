@@ -4,12 +4,19 @@
   "id": 3805,
   "slug": "rotation-twin-words",
   "title": "Rotation-Twin Words",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "String",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "String",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

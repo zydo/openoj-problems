@@ -4,8 +4,12 @@
   "id": 2143,
   "slug": "choose-numbers-from-two-arrays-in-range",
   "title": "Choose Numbers From Two Arrays in Range",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

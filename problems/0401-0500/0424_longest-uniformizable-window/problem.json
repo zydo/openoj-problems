@@ -4,8 +4,13 @@
   "id": 424,
   "slug": "longest-uniformizable-window",
   "title": "Longest Uniformizable Window",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

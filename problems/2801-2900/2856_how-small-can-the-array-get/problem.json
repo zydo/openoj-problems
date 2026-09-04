@@ -4,9 +4,17 @@
   "id": 2856,
   "slug": "how-small-can-the-array-get",
   "title": "How Small Can The Array Get",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
     "Greedy",
     "Counting"
   ],

@@ -4,8 +4,12 @@
   "id": 2481,
   "slug": "equal-circle-slices",
   "title": "Equal Circle Slices",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

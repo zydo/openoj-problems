@@ -4,8 +4,16 @@
   "id": 928,
   "slug": "infection-eradication-ii",
   "title": "Infection Eradication II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

@@ -4,8 +4,12 @@
   "id": 3576,
   "slug": "evening-out-the-sign-array",
   "title": "Evening Out The Sign Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

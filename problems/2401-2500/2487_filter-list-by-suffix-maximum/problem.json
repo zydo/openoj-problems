@@ -4,8 +4,14 @@
   "id": 2487,
   "slug": "filter-list-by-suffix-maximum",
   "title": "Filter List by Suffix Maximum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Stack",
+    "Recursion",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Linked List",
     "Stack",
     "Recursion",

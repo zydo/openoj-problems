@@ -3,11 +3,16 @@
   "id": 808,
   "slug": "soup-servings",
   "title": "Soup Servings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Dynamic Programming",
     "Probability"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Probability and Statistics"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 672,
   "slug": "four-button-light-switch-ii",
   "title": "Four-Button Light Switch II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Depth-First Search",

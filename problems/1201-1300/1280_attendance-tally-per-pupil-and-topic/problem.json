@@ -4,10 +4,13 @@
   "id": 1280,
   "slug": "attendance-tally-per-pupil-and-topic",
   "title": "Attendance Tally per Pupil and Topic",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

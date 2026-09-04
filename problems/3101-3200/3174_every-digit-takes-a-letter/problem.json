@@ -4,8 +4,13 @@
   "id": 3174,
   "slug": "every-digit-takes-a-letter",
   "title": "Every Digit Takes A Letter",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

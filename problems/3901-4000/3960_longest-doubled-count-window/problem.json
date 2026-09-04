@@ -4,11 +4,16 @@
   "id": 3960,
   "slug": "longest-doubled-count-window",
   "title": "Longest Doubled-Count Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Sliding Window"
+  ],
+  "topics": [
+    "Hash Table",
+    "Sliding Window",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,20 @@
   "id": 2519,
   "slug": "positions-with-k-smaller-values-on-each-side",
   "title": "Positions With K Smaller Values on Each Side",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Indexed Tree",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

@@ -3,9 +3,14 @@
   "id": 735,
   "slug": "asteroid-collision",
   "title": "Asteroid Collision",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

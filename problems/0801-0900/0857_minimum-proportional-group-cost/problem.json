@@ -4,11 +4,17 @@
   "id": 857,
   "slug": "minimum-proportional-group-cost",
   "title": "Minimum Proportional Group Cost",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Sorting",
     "Heap",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

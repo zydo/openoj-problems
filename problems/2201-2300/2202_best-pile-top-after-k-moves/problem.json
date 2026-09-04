@@ -4,8 +4,12 @@
   "id": 2202,
   "slug": "best-pile-top-after-k-moves",
   "title": "Best Pile Top After K Moves",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

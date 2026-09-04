@@ -4,8 +4,12 @@
   "id": 1629,
   "slug": "longest-held-key",
   "title": "Longest-Held Key",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

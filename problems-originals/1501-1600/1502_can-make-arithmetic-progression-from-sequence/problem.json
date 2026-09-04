@@ -4,8 +4,12 @@
   "id": 1502,
   "slug": "can-make-arithmetic-progression-from-sequence",
   "title": "Can Make Arithmetic Progression From Sequence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

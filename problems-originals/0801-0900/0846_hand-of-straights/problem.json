@@ -3,8 +3,14 @@
   "id": 846,
   "slug": "hand-of-straights",
   "title": "Hand of Straights",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

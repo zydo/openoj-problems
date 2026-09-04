@@ -4,8 +4,13 @@
   "id": 3517,
   "slug": "smallest-palindromic-rearrangement-i",
   "title": "Smallest Palindromic Rearrangement I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "String",
     "Sorting",
     "Counting Sort"

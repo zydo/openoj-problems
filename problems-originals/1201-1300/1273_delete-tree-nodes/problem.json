@@ -4,8 +4,15 @@
   "id": 1273,
   "slug": "delete-tree-nodes",
   "title": "Delete Tree Nodes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "DP on Trees"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Depth-First Search",

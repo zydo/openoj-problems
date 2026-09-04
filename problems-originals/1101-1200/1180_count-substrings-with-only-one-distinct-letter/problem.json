@@ -4,8 +4,12 @@
   "id": 1180,
   "slug": "count-substrings-with-only-one-distinct-letter",
   "title": "Count Substrings with Only One Distinct Letter",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

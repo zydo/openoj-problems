@@ -4,10 +4,13 @@
   "id": 1398,
   "slug": "bought-two-wares-but-not-the-third",
   "title": "Bought Two Wares but Not the Third",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

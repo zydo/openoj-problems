@@ -4,8 +4,12 @@
   "id": 1304,
   "slug": "distinct-integers-that-cancel-to-zero",
   "title": "Distinct Integers That Cancel to Zero",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

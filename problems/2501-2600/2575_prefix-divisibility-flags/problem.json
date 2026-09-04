@@ -4,8 +4,13 @@
   "id": 2575,
   "slug": "prefix-divisibility-flags",
   "title": "Prefix Divisibility Flags",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String"

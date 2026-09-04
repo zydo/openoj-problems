@@ -4,8 +4,13 @@
   "id": 566,
   "slug": "reshape-the-matrix",
   "title": "Reshape the Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

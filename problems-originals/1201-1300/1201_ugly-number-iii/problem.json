@@ -3,10 +3,20 @@
   "id": 1201,
   "slug": "ugly-number-iii",
   "title": "Ugly Number III",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Binary Search",
+    "Combinatorics",
+    "Number Theory",
+    "Least Common Multiple",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor",
+    "Inclusion-Exclusion Principle"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 2511,
   "slug": "maximum-enemy-forts-that-can-be-captured",
   "title": "Maximum Enemy Forts That Can Be Captured",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

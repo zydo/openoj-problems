@@ -4,8 +4,11 @@
   "id": 1479,
   "slug": "sales-by-day-of-the-week",
   "title": "Sales by Day of the Week",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

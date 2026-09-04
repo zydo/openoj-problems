@@ -4,8 +4,14 @@
   "id": 285,
   "slug": "next-greater-bst-node",
   "title": "Next Greater BST Node",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Search Tree",

@@ -4,8 +4,11 @@
   "id": 2890,
   "slug": "reshape-data-melt",
   "title": "Reshape Data: Melt",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

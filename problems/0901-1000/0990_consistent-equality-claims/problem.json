@@ -4,8 +4,14 @@
   "id": 990,
   "slug": "consistent-equality-claims",
   "title": "Consistent Equality Claims",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "String",
     "Union-Find",

@@ -4,11 +4,18 @@
   "id": 3969,
   "slug": "subarray-totals-framed-by-a-digit",
   "title": "Subarray Totals Framed By A Digit",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Enumeration",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Enumeration",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

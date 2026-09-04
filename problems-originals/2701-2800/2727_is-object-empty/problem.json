@@ -4,8 +4,11 @@
   "id": 2727,
   "slug": "is-object-empty",
   "title": "Is Object Empty",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

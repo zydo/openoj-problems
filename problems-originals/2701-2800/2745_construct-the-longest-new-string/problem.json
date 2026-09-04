@@ -4,8 +4,14 @@
   "id": 2745,
   "slug": "construct-the-longest-new-string",
   "title": "Construct the Longest New String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Greedy",
+    "Brainteaser"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Greedy",

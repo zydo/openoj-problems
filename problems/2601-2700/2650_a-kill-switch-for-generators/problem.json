@@ -4,9 +4,13 @@
   "id": 2650,
   "slug": "a-kill-switch-for-generators",
   "title": "A Kill Switch For Generators",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "JavaScript",
+    "Design"
+  ],
+  "topics": [
+    "Concurrency",
     "Design"
   ],
   "invocation": {

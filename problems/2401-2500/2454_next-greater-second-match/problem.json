@@ -4,8 +4,16 @@
   "id": 2454,
   "slug": "next-greater-second-match",
   "title": "Next Greater, Second Match",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Monotonic Stack"
   ],
   "invocation": {

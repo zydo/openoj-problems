@@ -3,10 +3,15 @@
   "id": 1866,
   "slug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
   "title": "Number of Ways to Rearrange Sticks With K Sticks Visible",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
   ],
   "invocation": {
     "type": "function",

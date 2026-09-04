@@ -4,8 +4,13 @@
   "id": 2664,
   "slug": "the-knights-tour",
   "title": "The Knight’s Tour",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Matrix"

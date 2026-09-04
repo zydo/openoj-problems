@@ -4,8 +4,13 @@
   "id": 2809,
   "slug": "zeroing-down-to-the-budget",
   "title": "Zeroing Down To The Budget",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sorting"

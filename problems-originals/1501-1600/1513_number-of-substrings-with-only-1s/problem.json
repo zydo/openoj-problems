@@ -4,8 +4,12 @@
   "id": 1513,
   "slug": "number-of-substrings-with-only-1s",
   "title": "Number of Substrings With Only 1s",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

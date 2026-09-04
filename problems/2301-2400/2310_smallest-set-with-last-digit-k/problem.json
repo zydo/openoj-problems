@@ -4,9 +4,15 @@
   "id": 2310,
   "slug": "smallest-set-with-last-digit-k",
   "title": "Smallest Set With Last Digit K",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
+    "Greedy",
+    "Enumeration"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
     "Greedy",
     "Enumeration"
   ],

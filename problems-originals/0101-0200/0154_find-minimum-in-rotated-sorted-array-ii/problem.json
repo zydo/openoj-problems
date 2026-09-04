@@ -4,8 +4,12 @@
   "id": 154,
   "slug": "find-minimum-in-rotated-sorted-array-ii",
   "title": "Find Minimum in Rotated Sorted Array II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

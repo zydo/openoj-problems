@@ -4,8 +4,12 @@
   "id": 2626,
   "slug": "array-reduce-transformation",
   "title": "Array Reduce Transformation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array",
+    "Simulation"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

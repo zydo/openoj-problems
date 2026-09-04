@@ -4,11 +4,17 @@
   "id": 444,
   "slug": "unique-reconstructed-order",
   "title": "Unique Reconstructed Order",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Graph Theory",
     "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

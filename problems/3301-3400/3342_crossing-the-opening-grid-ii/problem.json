@@ -4,8 +4,15 @@
   "id": 3342,
   "slug": "crossing-the-opening-grid-ii",
   "title": "Crossing The Opening Grid II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Array",
     "Graph Theory",
     "Heap (Priority Queue)",
     "Matrix",

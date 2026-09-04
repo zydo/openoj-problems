@@ -4,8 +4,12 @@
   "id": 2164,
   "slug": "sort-each-parity-its-own-way",
   "title": "Sort Each Parity Its Own Way",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

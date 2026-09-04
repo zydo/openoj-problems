@@ -4,9 +4,12 @@
   "id": 2715,
   "slug": "cancelling-a-deferred-call",
   "title": "Cancelling A Deferred Call",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Concurrency"
   ],
   "invocation": {
     "type": "interactive",

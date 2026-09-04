@@ -4,8 +4,13 @@
   "id": 150,
   "slug": "evaluate-reverse-polish-notation",
   "title": "Evaluate Reverse Polish Notation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Stack"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Stack"

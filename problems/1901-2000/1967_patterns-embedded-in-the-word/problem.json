@@ -4,10 +4,14 @@
   "id": 1967,
   "slug": "patterns-embedded-in-the-word",
   "title": "Patterns Embedded in the Word",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "String"
   ],
   "invocation": {
     "type": "function",

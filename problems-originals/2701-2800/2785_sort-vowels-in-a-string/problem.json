@@ -4,8 +4,12 @@
   "id": 2785,
   "slug": "sort-vowels-in-a-string",
   "title": "Sort Vowels in a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Sorting"
   ],

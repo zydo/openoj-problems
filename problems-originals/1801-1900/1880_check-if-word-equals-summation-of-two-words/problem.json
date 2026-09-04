@@ -4,8 +4,11 @@
   "id": 1880,
   "slug": "check-if-word-equals-summation-of-two-words",
   "title": "Check if Word Equals Summation of Two Words",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

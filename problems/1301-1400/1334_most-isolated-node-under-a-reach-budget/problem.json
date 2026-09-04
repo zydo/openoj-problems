@@ -4,11 +4,19 @@
   "id": 1334,
   "slug": "most-isolated-node-under-a-reach-budget",
   "title": "Most Isolated Node Under a Reach Budget",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Shortest Path",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Graph Theory",
+    "Shortest Path",
+    "Dijkstra's Algorithm",
+    "Bellman–Ford Algorithm",
+    "Floyd–Warshall Algorithm"
   ],
   "invocation": {
     "type": "function",

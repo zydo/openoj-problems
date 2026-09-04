@@ -4,8 +4,13 @@
   "id": 932,
   "slug": "beautiful-array",
   "title": "Beautiful Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Divide and Conquer"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Divide and Conquer"

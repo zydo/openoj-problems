@@ -4,12 +4,20 @@
   "id": 1838,
   "slug": "highest-reachable-frequency",
   "title": "Highest Reachable Frequency",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Binary Search",
     "Prefix Sum",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

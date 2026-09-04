@@ -4,10 +4,13 @@
   "id": 293,
   "slug": "sign-flip-moves",
   "title": "Sign Flip Moves",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Simulation"
+  ],
+  "topics": [
+    "String"
   ],
   "invocation": {
     "type": "function",

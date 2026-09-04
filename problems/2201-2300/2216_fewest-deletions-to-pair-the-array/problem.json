@@ -4,9 +4,14 @@
   "id": 2216,
   "slug": "fewest-deletions-to-pair-the-array",
   "title": "Fewest Deletions to Pair the Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
     "Greedy"
   ],
   "invocation": {

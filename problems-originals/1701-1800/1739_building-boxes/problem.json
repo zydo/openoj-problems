@@ -4,8 +4,13 @@
   "id": 1739,
   "slug": "building-boxes",
   "title": "Building Boxes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Binary Search",
     "Greedy"

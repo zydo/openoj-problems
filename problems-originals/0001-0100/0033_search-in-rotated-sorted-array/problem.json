@@ -3,8 +3,12 @@
   "id": 33,
   "slug": "search-in-rotated-sorted-array",
   "title": "Search in Rotated Sorted Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

@@ -4,8 +4,12 @@
   "id": 1033,
   "slug": "moving-stones-until-consecutive",
   "title": "Moving Stones Until Consecutive",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "topics": [
     "Math",
     "Brainteaser"
   ],

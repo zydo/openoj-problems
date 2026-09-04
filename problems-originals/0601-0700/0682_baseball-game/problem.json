@@ -4,8 +4,13 @@
   "id": 682,
   "slug": "baseball-game",
   "title": "Baseball Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Simulation"

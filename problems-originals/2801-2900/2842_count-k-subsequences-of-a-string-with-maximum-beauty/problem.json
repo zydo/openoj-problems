@@ -4,8 +4,17 @@
   "id": 2842,
   "slug": "count-k-subsequences-of-a-string-with-maximum-beauty",
   "title": "Count K-Subsequences of a String With Maximum Beauty",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Combinatorics",
+    "Fermat's Little Theorem"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

@@ -4,8 +4,14 @@
   "id": 3623,
   "slug": "count-number-of-trapezoids-i",
   "title": "Count Number of Trapezoids I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

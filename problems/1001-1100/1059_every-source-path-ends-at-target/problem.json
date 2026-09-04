@@ -4,11 +4,17 @@
   "id": 1059,
   "slug": "every-source-path-ends-at-target",
   "title": "Every Source Path Ends at the Target",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph Theory",
     "Depth-First Search",
     "Topological Sort"
+  ],
+  "topics": [
+    "Graph Theory",
+    "Topological Sort",
+    "Kosaraju's Algorithm",
+    "Tarjan's SCC Algorithm"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 3203,
   "slug": "tightest-joined-span",
   "title": "The Tightest Joined Span",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

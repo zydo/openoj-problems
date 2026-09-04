@@ -4,9 +4,15 @@
   "id": 1385,
   "slug": "values-far-from-the-other-array",
   "title": "Values Far From the Other Array",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
     "Binary Search",
     "Sorting"
   ],

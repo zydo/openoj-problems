@@ -3,11 +3,16 @@
   "id": 340,
   "slug": "longest-substring-with-at-most-k-distinct-characters",
   "title": "Longest Substring with At Most K Distinct Characters",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Hash Table",
     "Two Pointers"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

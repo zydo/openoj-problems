@@ -4,8 +4,13 @@
   "id": 3652,
   "slug": "rewriting-one-trading-window",
   "title": "Rewriting One Trading Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Sliding Window",
     "Prefix Sum"

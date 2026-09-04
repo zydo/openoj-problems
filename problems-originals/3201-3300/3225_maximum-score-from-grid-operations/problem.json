@@ -4,8 +4,14 @@
   "id": 3225,
   "slug": "maximum-score-from-grid-operations",
   "title": "Maximum Score From Grid Operations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix",

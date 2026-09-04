@@ -4,8 +4,13 @@
   "id": 545,
   "slug": "boundary-of-binary-tree",
   "title": "Boundary of Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

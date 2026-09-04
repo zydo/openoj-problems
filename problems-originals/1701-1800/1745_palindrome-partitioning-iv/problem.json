@@ -4,8 +4,12 @@
   "id": 1745,
   "slug": "palindrome-partitioning-iv",
   "title": "Palindrome Partitioning IV",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

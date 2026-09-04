@@ -4,8 +4,13 @@
   "id": 748,
   "slug": "shortest-completing-word",
   "title": "Shortest Completing Word",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

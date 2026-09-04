@@ -4,8 +4,12 @@
   "id": 2191,
   "slug": "sort-under-a-digit-cipher",
   "title": "Sort Under a Digit Cipher",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

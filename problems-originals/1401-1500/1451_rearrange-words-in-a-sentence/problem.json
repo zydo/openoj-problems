@@ -4,8 +4,12 @@
   "id": 1451,
   "slug": "rearrange-words-in-a-sentence",
   "title": "Rearrange Words in a Sentence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Sorting"
   ],

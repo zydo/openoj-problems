@@ -4,10 +4,16 @@
   "id": 1430,
   "slug": "matching-a-root-to-leaf-digit-path",
   "title": "Matching a Root-to-Leaf Digit Path",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Binary Tree"
   ],
   "invocation": {

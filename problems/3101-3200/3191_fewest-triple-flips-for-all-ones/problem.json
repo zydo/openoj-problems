@@ -4,10 +4,17 @@
   "id": 3191,
   "slug": "fewest-triple-flips-for-all-ones",
   "title": "Fewest Triple Flips for All Ones",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

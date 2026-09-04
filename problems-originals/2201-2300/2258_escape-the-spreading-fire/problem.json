@@ -3,10 +3,16 @@
   "id": 2258,
   "slug": "escape-the-spreading-fire",
   "title": "Escape the Spreading Fire",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

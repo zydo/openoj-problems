@@ -4,11 +4,15 @@
   "id": 554,
   "slug": "fewest-bricks-split",
   "title": "Fewest Bricks Split",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table"
   ],
   "invocation": {
     "type": "function",

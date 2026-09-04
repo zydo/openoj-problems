@@ -4,8 +4,11 @@
   "id": 1933,
   "slug": "check-if-string-is-decomposable-into-value-equal-substrings",
   "title": "Check if String Is Decomposable Into Value-Equal Substrings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 3694,
   "slug": "distinct-points-reachable-after-substring-removal",
   "title": "Distinct Points Reachable After Substring Removal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window",

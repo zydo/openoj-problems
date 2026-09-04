@@ -4,8 +4,13 @@
   "id": 2559,
   "slug": "count-vowel-strings-in-ranges",
   "title": "Count Vowel Strings in Ranges",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

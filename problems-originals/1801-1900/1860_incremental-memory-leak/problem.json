@@ -4,8 +4,12 @@
   "id": 1860,
   "slug": "incremental-memory-leak",
   "title": "Incremental Memory Leak",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

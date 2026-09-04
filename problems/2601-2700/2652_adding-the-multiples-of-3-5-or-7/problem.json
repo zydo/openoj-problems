@@ -4,8 +4,11 @@
   "id": 2652,
   "slug": "adding-the-multiples-of-3-5-or-7",
   "title": "Adding the Multiples of 3, 5, or 7",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

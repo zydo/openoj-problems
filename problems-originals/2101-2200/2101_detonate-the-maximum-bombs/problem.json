@@ -4,8 +4,16 @@
   "id": 2101,
   "slug": "detonate-the-maximum-bombs",
   "title": "Detonate the Maximum Bombs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Depth-First Search",

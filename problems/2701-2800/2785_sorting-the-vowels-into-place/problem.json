@@ -4,8 +4,12 @@
   "id": 2785,
   "slug": "sorting-the-vowels-into-place",
   "title": "Sorting The Vowels Into Place",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Sorting"
   ],

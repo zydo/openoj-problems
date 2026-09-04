@@ -4,11 +4,17 @@
   "id": 1797,
   "slug": "expiring-token-ledger",
   "title": "Expiring Token Ledger",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Design",
     "Ordered Set"
+  ],
+  "topics": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Doubly-Linked List"
   ],
   "invocation": {
     "type": "design",

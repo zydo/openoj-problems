@@ -4,8 +4,12 @@
   "id": 1646,
   "slug": "grown-array-maximum",
   "title": "Grown Array Maximum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

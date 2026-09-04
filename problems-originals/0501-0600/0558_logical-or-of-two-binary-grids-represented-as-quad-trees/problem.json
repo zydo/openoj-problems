@@ -4,8 +4,12 @@
   "id": 558,
   "slug": "logical-or-of-two-binary-grids-represented-as-quad-trees",
   "title": "Logical OR of Two Binary Grids Represented as Quad-Trees",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Divide and Conquer",
+    "Tree"
+  ],
+  "topics": [
     "Divide and Conquer",
     "Tree"
   ],

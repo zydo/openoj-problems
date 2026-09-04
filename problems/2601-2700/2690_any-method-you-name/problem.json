@@ -4,9 +4,12 @@
   "id": 2690,
   "slug": "any-method-you-name",
   "title": "Any Method You Name",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

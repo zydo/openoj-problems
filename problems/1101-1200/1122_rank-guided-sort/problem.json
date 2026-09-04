@@ -4,12 +4,20 @@
   "id": 1122,
   "slug": "rank-guided-sort",
   "title": "Rank-Guided Sort",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Sorting",
     "Counting Sort"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting Sort",
+    "Quicksort",
+    "Bubble Sort"
   ],
   "invocation": {
     "type": "function",

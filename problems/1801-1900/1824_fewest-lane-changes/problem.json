@@ -4,10 +4,15 @@
   "id": 1824,
   "slug": "fewest-lane-changes",
   "title": "Fewest Lane Changes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

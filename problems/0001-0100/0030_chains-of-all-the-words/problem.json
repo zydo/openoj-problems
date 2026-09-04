@@ -4,8 +4,13 @@
   "id": 30,
   "slug": "chains-of-all-the-words",
   "title": "Chains of All the Words",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

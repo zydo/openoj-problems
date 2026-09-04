@@ -4,8 +4,14 @@
   "id": 1034,
   "slug": "outline-a-color-region",
   "title": "Outline a Color Region",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

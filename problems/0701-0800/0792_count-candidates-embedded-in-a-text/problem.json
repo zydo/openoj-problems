@@ -4,12 +4,21 @@
   "id": 792,
   "slug": "count-candidates-embedded-in-a-text",
   "title": "Count Candidates Embedded in a Text",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
     "Trie",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Dynamic Programming",
+    "Trie",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

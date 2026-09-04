@@ -4,8 +4,12 @@
   "id": 479,
   "slug": "largest-palindrome-product",
   "title": "Largest Palindrome Product",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

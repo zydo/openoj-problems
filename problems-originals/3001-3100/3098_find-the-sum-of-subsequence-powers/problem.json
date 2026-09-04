@@ -3,8 +3,13 @@
   "id": 3098,
   "slug": "find-the-sum-of-subsequence-powers",
   "title": "Find the Sum of Subsequence Powers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sorting"

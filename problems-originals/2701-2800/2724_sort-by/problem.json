@@ -4,8 +4,12 @@
   "id": 2724,
   "slug": "sort-by",
   "title": "Sort By",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array",
+    "Sorting"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

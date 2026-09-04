@@ -4,8 +4,13 @@
   "id": 3873,
   "slug": "maximum-points-activated-with-one-addition",
   "title": "Maximum Points Activated with One Addition",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Union-Find"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Union-Find"

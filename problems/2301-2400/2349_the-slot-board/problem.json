@@ -4,8 +4,14 @@
   "id": 2349,
   "slug": "the-slot-board",
   "title": "The Slot Board",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Heap (Priority Queue)",

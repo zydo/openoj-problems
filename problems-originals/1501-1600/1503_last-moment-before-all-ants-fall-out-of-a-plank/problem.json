@@ -3,9 +3,14 @@
   "id": 1503,
   "slug": "last-moment-before-all-ants-fall-out-of-a-plank",
   "title": "Last Moment Before All Ants Fall Out of a Plank",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Brainteaser",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

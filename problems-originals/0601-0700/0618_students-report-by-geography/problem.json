@@ -4,8 +4,11 @@
   "id": 618,
   "slug": "students-report-by-geography",
   "title": "Students Report By Geography",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 2906,
   "slug": "construct-product-matrix",
   "title": "Construct Product Matrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

@@ -4,11 +4,18 @@
   "id": 2003,
   "slug": "smallest-absent-gene-per-subtree",
   "title": "Smallest Absent Gene Per Subtree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

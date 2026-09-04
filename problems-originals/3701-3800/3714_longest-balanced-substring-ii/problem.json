@@ -4,8 +4,13 @@
   "id": 3714,
   "slug": "longest-balanced-substring-ii",
   "title": "Longest Balanced Substring II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Prefix Sum"

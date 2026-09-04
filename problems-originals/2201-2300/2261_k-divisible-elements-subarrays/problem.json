@@ -3,12 +3,20 @@
   "id": 2261,
   "slug": "k-divisible-elements-subarrays",
   "title": "K Divisible Elements Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Trie",
     "Rolling Hash",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Trie",
+    "Rolling Hash",
+    "Hash Function",
     "Enumeration"
   ],
   "invocation": {

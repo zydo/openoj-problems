@@ -4,8 +4,12 @@
   "id": 3271,
   "slug": "folding-chunks-into-letters",
   "title": "Folding Chunks Into Letters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

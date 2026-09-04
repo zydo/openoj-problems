@@ -4,8 +4,13 @@
   "id": 2768,
   "slug": "counting-tiles-by-their-dark-cells",
   "title": "Counting Tiles By Their Dark Cells",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

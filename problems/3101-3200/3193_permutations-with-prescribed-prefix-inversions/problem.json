@@ -4,8 +4,12 @@
   "id": 3193,
   "slug": "permutations-with-prescribed-prefix-inversions",
   "title": "Permutations with Prescribed Prefix Inversions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

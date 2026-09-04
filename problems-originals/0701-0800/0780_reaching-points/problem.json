@@ -3,9 +3,14 @@
   "id": 780,
   "slug": "reaching-points",
   "title": "Reaching Points",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

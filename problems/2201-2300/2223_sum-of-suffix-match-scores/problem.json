@@ -4,10 +4,20 @@
   "id": 2223,
   "slug": "sum-of-suffix-match-scores",
   "title": "Sum of Suffix Match Scores",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Z Algorithm"
+  ],
+  "topics": [
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "String Matching",
+    "Hash Function",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm"
   ],
   "invocation": {
     "type": "function",

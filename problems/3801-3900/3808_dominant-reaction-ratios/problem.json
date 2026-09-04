@@ -4,10 +4,13 @@
   "id": 3808,
   "slug": "dominant-reaction-ratios",
   "title": "Dominant Reaction Ratios",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

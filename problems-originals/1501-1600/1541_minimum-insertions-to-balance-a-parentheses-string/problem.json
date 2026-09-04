@@ -4,8 +4,14 @@
   "id": 1541,
   "slug": "minimum-insertions-to-balance-a-parentheses-string",
   "title": "Minimum Insertions to Balance a Parentheses String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Greedy",

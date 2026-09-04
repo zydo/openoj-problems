@@ -4,8 +4,12 @@
   "id": 3819,
   "slug": "rotate-non-negative-elements",
   "title": "Rotate Non Negative Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

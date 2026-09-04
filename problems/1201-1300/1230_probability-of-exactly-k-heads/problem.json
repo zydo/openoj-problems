@@ -4,12 +4,18 @@
   "id": 1230,
   "slug": "probability-of-exactly-k-heads",
   "title": "Probability of Exactly K Heads",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
     "Probability"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Probability and Statistics"
   ],
   "invocation": {
     "type": "function",

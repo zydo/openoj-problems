@@ -4,8 +4,15 @@
   "id": 114,
   "slug": "the-preorder-chain-rewrite",
   "title": "The Preorder Chain Rewrite",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Linked List",
+    "Stack",
     "Tree",
     "Depth-First Search",
     "Binary Tree"

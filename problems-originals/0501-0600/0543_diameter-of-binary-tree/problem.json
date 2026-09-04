@@ -3,12 +3,18 @@
   "id": 543,
   "slug": "diameter-of-binary-tree",
   "title": "Diameter of Binary Tree",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
     "Binary Tree",
     "Depth-First Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

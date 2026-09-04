@@ -3,11 +3,16 @@
   "id": 3145,
   "slug": "find-products-of-elements-of-big-array",
   "title": "Find Products of Elements of Big Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Bit Manipulation",
     "Digit DP"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

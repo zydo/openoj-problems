@@ -4,8 +4,12 @@
   "id": 1560,
   "slug": "busiest-sectors-of-the-loop",
   "title": "Busiest Sectors of the Loop",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

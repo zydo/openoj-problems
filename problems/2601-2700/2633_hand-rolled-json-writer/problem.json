@@ -4,11 +4,15 @@
   "id": 2633,
   "slug": "hand-rolled-json-writer",
   "title": "Hand-Rolled JSON Writer",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "String",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Recursion",
+    "String"
   ],
   "invocation": {
     "type": "interactive",

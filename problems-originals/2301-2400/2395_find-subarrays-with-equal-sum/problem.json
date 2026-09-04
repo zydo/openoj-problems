@@ -4,8 +4,12 @@
   "id": 2395,
   "slug": "find-subarrays-with-equal-sum",
   "title": "Find Subarrays With Equal Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

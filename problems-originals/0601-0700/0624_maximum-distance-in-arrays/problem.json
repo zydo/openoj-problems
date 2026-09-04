@@ -4,8 +4,12 @@
   "id": 624,
   "slug": "maximum-distance-in-arrays",
   "title": "Maximum Distance in Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

@@ -4,8 +4,16 @@
   "id": 472,
   "slug": "compound-words",
   "title": "Compound Words",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Trie",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming",

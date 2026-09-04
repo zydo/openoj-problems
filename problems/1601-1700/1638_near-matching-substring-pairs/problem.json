@@ -4,10 +4,16 @@
   "id": 1638,
   "slug": "near-matching-substring-pairs",
   "title": "Near-Matching Substring Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

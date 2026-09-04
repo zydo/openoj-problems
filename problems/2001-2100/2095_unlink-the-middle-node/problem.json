@@ -4,8 +4,12 @@
   "id": 2095,
   "slug": "unlink-the-middle-node",
   "title": "Unlink the Middle Node",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "topics": [
     "Linked List",
     "Two Pointers"
   ],

@@ -4,11 +4,17 @@
   "id": 2598,
   "slug": "the-highest-reachable-mex",
   "title": "The Highest Reachable MEX",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

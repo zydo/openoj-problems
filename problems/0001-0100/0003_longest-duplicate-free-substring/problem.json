@@ -4,8 +4,13 @@
   "id": 3,
   "slug": "longest-duplicate-free-substring",
   "title": "Longest Duplicate-Free Substring",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

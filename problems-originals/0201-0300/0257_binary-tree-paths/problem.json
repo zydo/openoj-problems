@@ -4,8 +4,15 @@
   "id": 257,
   "slug": "binary-tree-paths",
   "title": "Binary Tree Paths",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Backtracking",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "String",
     "Backtracking",
     "Tree",

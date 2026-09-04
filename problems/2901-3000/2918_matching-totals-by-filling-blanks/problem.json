@@ -4,8 +4,12 @@
   "id": 2918,
   "slug": "matching-totals-by-filling-blanks",
   "title": "Matching Totals By Filling Blanks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

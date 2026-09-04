@@ -4,8 +4,15 @@
   "id": 3218,
   "slug": "cheapest-cuts-to-unit-cells",
   "title": "Cheapest Cuts to Unit Cells",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
     "Greedy",
     "Sorting"
   ],

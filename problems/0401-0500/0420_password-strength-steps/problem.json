@@ -4,10 +4,15 @@
   "id": 420,
   "slug": "password-strength-steps",
   "title": "Password Strength Steps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Greedy"
+  ],
+  "topics": [
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

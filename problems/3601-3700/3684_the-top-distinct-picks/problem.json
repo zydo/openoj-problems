@@ -4,8 +4,14 @@
   "id": 3684,
   "slug": "the-top-distinct-picks",
   "title": "The Top Distinct Picks",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

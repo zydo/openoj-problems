@@ -4,8 +4,14 @@
   "id": 3167,
   "slug": "better-compression-of-string",
   "title": "Better Compression of String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sorting",

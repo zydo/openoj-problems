@@ -4,8 +4,15 @@
   "id": 2001,
   "slug": "number-of-pairs-of-interchangeable-rectangles",
   "title": "Number of Pairs of Interchangeable Rectangles",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

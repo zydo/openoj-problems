@@ -4,8 +4,15 @@
   "id": 3930,
   "slug": "compounding-power-stream-ii",
   "title": "The Compounding Power Stream II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Segment Tree",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

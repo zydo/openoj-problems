@@ -4,10 +4,13 @@
   "id": 2205,
   "slug": "shoppers-in-the-discount-window",
   "title": "Shoppers in the Discount Window",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

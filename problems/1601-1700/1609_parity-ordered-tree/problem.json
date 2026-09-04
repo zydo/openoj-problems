@@ -4,8 +4,13 @@
   "id": 1609,
   "slug": "parity-ordered-tree",
   "title": "Parity-Ordered Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

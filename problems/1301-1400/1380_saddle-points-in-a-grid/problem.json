@@ -4,8 +4,12 @@
   "id": 1380,
   "slug": "saddle-points-in-a-grid",
   "title": "Saddle Points in a Grid",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

@@ -4,12 +4,21 @@
   "id": 654,
   "slug": "peak-rooted-tree",
   "title": "Peak-Rooted Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Stack",
     "Monotonic Stack",
     "Binary Tree"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Stack",
+    "Tree",
+    "Monotonic Stack",
+    "Binary Tree",
+    "Cartesian Tree"
   ],
   "invocation": {
     "type": "function",

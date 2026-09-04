@@ -4,8 +4,13 @@
   "id": 3889,
   "slug": "mirror-frequency-distance",
   "title": "Mirror Frequency Distance",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

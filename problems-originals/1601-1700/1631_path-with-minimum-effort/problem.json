@@ -3,7 +3,7 @@
   "id": 1631,
   "slug": "path-with-minimum-effort",
   "title": "Path With Minimum Effort",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
@@ -11,6 +11,16 @@
     "Union Find",
     "Heap",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

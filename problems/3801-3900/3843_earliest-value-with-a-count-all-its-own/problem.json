@@ -4,8 +4,13 @@
   "id": 3843,
   "slug": "earliest-value-with-a-count-all-its-own",
   "title": "Earliest Value With a Count All Its Own",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

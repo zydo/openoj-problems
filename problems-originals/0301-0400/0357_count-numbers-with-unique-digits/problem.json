@@ -4,8 +4,13 @@
   "id": 357,
   "slug": "count-numbers-with-unique-digits",
   "title": "Count Numbers with Unique Digits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Backtracking"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Backtracking"

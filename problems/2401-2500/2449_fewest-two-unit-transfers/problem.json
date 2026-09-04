@@ -4,8 +4,13 @@
   "id": 2449,
   "slug": "fewest-two-unit-transfers",
   "title": "Fewest Two-Unit Transfers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

@@ -4,8 +4,12 @@
   "id": 1749,
   "slug": "largest-subarray-swing",
   "title": "Largest Subarray Swing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

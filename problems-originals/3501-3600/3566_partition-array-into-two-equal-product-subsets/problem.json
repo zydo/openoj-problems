@@ -4,8 +4,14 @@
   "id": 3566,
   "slug": "partition-array-into-two-equal-product-subsets",
   "title": "Partition Array into Two Equal Product Subsets",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Recursion",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Recursion",

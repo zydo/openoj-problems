@@ -4,8 +4,12 @@
   "id": 1342,
   "slug": "halving-countdown",
   "title": "Halving Countdown",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

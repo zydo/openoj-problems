@@ -4,10 +4,18 @@
   "id": 581,
   "slug": "minimum-reorder-window",
   "title": "Minimum Reorder Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Stack",
+    "Greedy",
     "Sorting",
     "Monotonic Stack"
   ],

@@ -4,8 +4,12 @@
   "id": 1064,
   "slug": "fixed-point",
   "title": "Fixed Point",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

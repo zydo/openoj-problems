@@ -4,8 +4,12 @@
   "id": 3549,
   "slug": "multiply-two-polynomials",
   "title": "Multiply Two Polynomials",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

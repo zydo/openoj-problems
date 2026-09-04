@@ -3,11 +3,18 @@
   "id": 2050,
   "slug": "parallel-courses-iii",
   "title": "Parallel Courses III",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Topological Sort",
     "Dynamic Programming",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

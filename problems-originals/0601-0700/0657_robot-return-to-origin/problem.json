@@ -4,8 +4,12 @@
   "id": 657,
   "slug": "robot-return-to-origin",
   "title": "Robot Return to Origin",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

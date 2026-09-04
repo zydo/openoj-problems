@@ -4,8 +4,11 @@
   "id": 693,
   "slug": "binary-number-with-alternating-bits",
   "title": "Binary Number with Alternating Bits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

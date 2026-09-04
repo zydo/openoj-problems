@@ -4,9 +4,15 @@
   "id": 2970,
   "slug": "cuts-that-leave-a-rising-array-i",
   "title": "Cuts That Leave a Rising Array I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
     "Enumeration"
   ],
   "invocation": {

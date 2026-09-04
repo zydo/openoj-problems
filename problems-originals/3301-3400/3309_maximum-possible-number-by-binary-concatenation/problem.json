@@ -4,8 +4,13 @@
   "id": 3309,
   "slug": "maximum-possible-number-by-binary-concatenation",
   "title": "Maximum Possible Number by Binary Concatenation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Enumeration"

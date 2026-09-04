@@ -4,8 +4,13 @@
   "id": 1840,
   "slug": "tallest-possible-skyline",
   "title": "Tallest Possible Skyline",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting"

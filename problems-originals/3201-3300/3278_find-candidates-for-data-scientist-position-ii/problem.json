@@ -4,8 +4,11 @@
   "id": 3278,
   "slug": "find-candidates-for-data-scientist-position-ii",
   "title": "Find Candidates for Data Scientist Position II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

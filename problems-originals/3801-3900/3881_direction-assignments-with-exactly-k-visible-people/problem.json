@@ -4,8 +4,12 @@
   "id": 3881,
   "slug": "direction-assignments-with-exactly-k-visible-people",
   "title": "Direction Assignments with Exactly K Visible People",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Combinatorics"
   ],

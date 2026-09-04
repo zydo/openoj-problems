@@ -4,8 +4,13 @@
   "id": 2826,
   "slug": "sorting-three-groups",
   "title": "Sorting Three Groups",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Dynamic Programming"

@@ -4,8 +4,14 @@
   "id": 2963,
   "slug": "count-the-number-of-good-partitions",
   "title": "Count the Number of Good Partitions",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

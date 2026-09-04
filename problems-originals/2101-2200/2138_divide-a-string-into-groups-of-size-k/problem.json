@@ -4,8 +4,12 @@
   "id": 2138,
   "slug": "divide-a-string-into-groups-of-size-k",
   "title": "Divide a String Into Groups of Size k",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

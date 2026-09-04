@@ -4,8 +4,11 @@
   "id": 3917,
   "slug": "count-indices-with-opposite-parity",
   "title": "Count Indices With Opposite Parity",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

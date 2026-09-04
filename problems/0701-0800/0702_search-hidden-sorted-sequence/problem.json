@@ -4,10 +4,15 @@
   "id": 702,
   "slug": "search-hidden-sorted-sequence",
   "title": "Search a Hidden Sorted Sequence",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

@@ -4,8 +4,13 @@
   "id": 3748,
   "slug": "count-stable-subarrays",
   "title": "Count Stable Subarrays",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Prefix Sum"

@@ -4,8 +4,14 @@
   "id": 463,
   "slug": "island-perimeter",
   "title": "Island Perimeter",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

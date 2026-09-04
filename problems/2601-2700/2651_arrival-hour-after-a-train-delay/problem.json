@@ -4,8 +4,11 @@
   "id": 2651,
   "slug": "arrival-hour-after-a-train-delay",
   "title": "Arrival Hour After a Train Delay",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

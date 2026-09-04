@@ -4,8 +4,15 @@
   "id": 2552,
   "slug": "count-increasing-quadruplets",
   "title": "Count Increasing Quadruplets",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Binary Indexed Tree",

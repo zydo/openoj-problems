@@ -4,10 +4,13 @@
   "id": 608,
   "slug": "hierarchy-node-roles",
   "title": "Hierarchy Node Roles",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

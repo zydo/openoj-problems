@@ -4,12 +4,19 @@
   "id": 2168,
   "slug": "distinct-substrings-with-balanced-digit-counts",
   "title": "Distinct Substrings With Balanced Digit Counts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
     "Rolling Hash",
     "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Rolling Hash",
+    "Counting",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

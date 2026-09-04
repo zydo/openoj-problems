@@ -4,8 +4,16 @@
   "id": 3605,
   "slug": "minimum-stability-factor-of-array",
   "title": "Minimum Stability Factor of Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Segment Tree",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

@@ -4,8 +4,12 @@
   "id": 1410,
   "slug": "character-entity-decoder",
   "title": "Character Entity Decoder",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

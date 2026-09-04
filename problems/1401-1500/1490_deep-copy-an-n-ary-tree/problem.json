@@ -4,8 +4,14 @@
   "id": 1490,
   "slug": "deep-copy-an-n-ary-tree",
   "title": "Deep-Copy an N-ary Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

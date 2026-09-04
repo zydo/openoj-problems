@@ -4,12 +4,24 @@
   "id": 1916,
   "slug": "count-dependency-tree-orderings",
   "title": "Count Dependency Tree Orderings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Dynamic Programming",
     "Combinatorics",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Combinatorics",
+    "DP on Trees",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

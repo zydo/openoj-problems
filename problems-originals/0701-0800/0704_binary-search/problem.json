@@ -3,8 +3,12 @@
   "id": 704,
   "slug": "binary-search",
   "title": "Binary Search",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

@@ -4,8 +4,12 @@
   "id": 2833,
   "slug": "furthest-drift-from-zero",
   "title": "Furthest Drift From Zero",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Counting"
   ],

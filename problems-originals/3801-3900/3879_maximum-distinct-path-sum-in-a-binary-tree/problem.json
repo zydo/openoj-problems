@@ -4,8 +4,14 @@
   "id": 3879,
   "slug": "maximum-distinct-path-sum-in-a-binary-tree",
   "title": "Maximum Distinct Path Sum in a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

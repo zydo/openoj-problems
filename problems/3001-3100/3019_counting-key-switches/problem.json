@@ -4,10 +4,13 @@
   "id": 3019,
   "slug": "counting-key-switches",
   "title": "Counting Key Switches",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Counting"
+  ],
+  "topics": [
+    "String"
   ],
   "invocation": {
     "type": "function",

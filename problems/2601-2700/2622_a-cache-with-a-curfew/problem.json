@@ -4,10 +4,14 @@
   "id": 2622,
   "slug": "a-cache-with-a-curfew",
   "title": "A Cache With A Curfew",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "JavaScript"
+  ],
+  "topics": [
+    "Design",
+    "Hash Table"
   ],
   "invocation": {
     "type": "interactive",

@@ -4,8 +4,14 @@
   "id": 3621,
   "slug": "integers-at-popcount-depth-k-i",
   "title": "Integers at Popcount Depth K I",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Bit Manipulation",

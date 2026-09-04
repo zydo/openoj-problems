@@ -4,8 +4,13 @@
   "id": 537,
   "slug": "complex-number-product",
   "title": "Complex Number Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Simulation"

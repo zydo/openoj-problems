@@ -4,8 +4,13 @@
   "id": 2807,
   "slug": "insert-greatest-common-divisors-in-linked-list",
   "title": "Insert Greatest Common Divisors in Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Linked List",
     "Math",
     "Number Theory"

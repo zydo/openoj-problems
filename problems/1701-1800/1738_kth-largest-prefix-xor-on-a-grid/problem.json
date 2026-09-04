@@ -4,12 +4,22 @@
   "id": 1738,
   "slug": "kth-largest-prefix-xor-on-a-grid",
   "title": "Kth Largest Prefix XOR on a Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "Bit Manipulation",
     "Prefix Sum",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Bit Manipulation",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Prefix Sum",
+    "Quickselect"
   ],
   "invocation": {
     "type": "function",

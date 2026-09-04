@@ -4,8 +4,11 @@
   "id": 1313,
   "slug": "expand-frequency-pairs",
   "title": "Expand Frequency Pairs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

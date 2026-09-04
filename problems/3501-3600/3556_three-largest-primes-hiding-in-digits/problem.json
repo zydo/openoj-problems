@@ -4,10 +4,17 @@
   "id": 3556,
   "slug": "three-largest-primes-hiding-in-digits",
   "title": "Three Largest Primes Hiding In Digits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "String",
+    "Number Theory"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Sorting",
     "Number Theory"
   ],
   "invocation": {

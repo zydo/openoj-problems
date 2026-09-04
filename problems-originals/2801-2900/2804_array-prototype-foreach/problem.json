@@ -4,8 +4,11 @@
   "id": 2804,
   "slug": "array-prototype-foreach",
   "title": "Array Prototype ForEach",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

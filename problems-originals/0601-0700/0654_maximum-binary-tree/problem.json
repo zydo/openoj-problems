@@ -4,8 +4,17 @@
   "id": 654,
   "slug": "maximum-binary-tree",
   "title": "Maximum Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Stack",
+    "Tree",
+    "Monotonic Stack",
+    "Binary Tree",
+    "Cartesian Tree"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Stack",

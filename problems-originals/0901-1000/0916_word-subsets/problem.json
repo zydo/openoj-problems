@@ -4,8 +4,13 @@
   "id": 916,
   "slug": "word-subsets",
   "title": "Word Subsets",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

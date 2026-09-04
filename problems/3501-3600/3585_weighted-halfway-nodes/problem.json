@@ -4,12 +4,20 @@
   "id": 3585,
   "slug": "weighted-halfway-nodes",
   "title": "Weighted Halfway Nodes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Lowest Common Ancestor",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

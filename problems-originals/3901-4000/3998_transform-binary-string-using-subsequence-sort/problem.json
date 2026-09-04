@@ -4,8 +4,13 @@
   "id": 3998,
   "slug": "transform-binary-string-using-subsequence-sort",
   "title": "Transform Binary String Using Subsequence Sort",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "String",
+    "Greedy",
+    "Counting"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

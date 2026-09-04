@@ -4,11 +4,16 @@
   "id": 904,
   "slug": "two-type-harvest-run",
   "title": "Two-Type Harvest Run",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

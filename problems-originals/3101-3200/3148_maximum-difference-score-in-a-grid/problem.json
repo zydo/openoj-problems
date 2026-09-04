@@ -4,8 +4,13 @@
   "id": 3148,
   "slug": "maximum-difference-score-in-a-grid",
   "title": "Maximum Difference Score in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

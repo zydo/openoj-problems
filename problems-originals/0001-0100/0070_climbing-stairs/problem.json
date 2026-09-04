@@ -4,8 +4,13 @@
   "id": 70,
   "slug": "climbing-stairs",
   "title": "Climbing Stairs",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Memoization"

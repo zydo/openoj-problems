@@ -4,8 +4,14 @@
   "id": 1601,
   "slug": "largest-balanced-transfer-set",
   "title": "Largest Balanced Transfer Set",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation",

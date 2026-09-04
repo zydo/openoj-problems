@@ -4,8 +4,13 @@
   "id": 2495,
   "slug": "number-of-subarrays-having-even-product",
   "title": "Number of Subarrays Having Even Product",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming"

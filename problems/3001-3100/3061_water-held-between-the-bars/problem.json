@@ -4,10 +4,13 @@
   "id": 3061,
   "slug": "water-held-between-the-bars",
   "title": "Water Held Between the Bars",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

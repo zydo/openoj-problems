@@ -4,8 +4,12 @@
   "id": 668,
   "slug": "product-grid-order-statistic",
   "title": "Product Grid Order Statistic",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search"
+  ],
+  "topics": [
+    "Math",
     "Binary Search"
   ],
   "invocation": {

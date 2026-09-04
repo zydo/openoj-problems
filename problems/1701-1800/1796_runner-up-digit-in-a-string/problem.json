@@ -4,8 +4,12 @@
   "id": 1796,
   "slug": "runner-up-digit-in-a-string",
   "title": "Runner-Up Digit In A String",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

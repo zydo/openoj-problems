@@ -4,8 +4,11 @@
   "id": 3099,
   "slug": "divisible-by-its-own-digit-sum",
   "title": "Divisible By Its Own Digit Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

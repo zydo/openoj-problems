@@ -4,12 +4,22 @@
   "id": 3378,
   "slug": "groups-under-the-lcm-ceiling",
   "title": "Groups Under The LCM Ceiling",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Union-Find",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Union-Find",
+    "Number Theory",
+    "Least Common Multiple",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

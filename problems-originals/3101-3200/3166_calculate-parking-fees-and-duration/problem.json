@@ -4,8 +4,11 @@
   "id": 3166,
   "slug": "calculate-parking-fees-and-duration",
   "title": "Calculate Parking Fees and Duration",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 25,
   "slug": "reverse-nodes-in-k-group",
   "title": "Reverse Nodes in k-Group",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Linked List",
+    "Recursion"
+  ],
+  "topics": [
     "Linked List",
     "Recursion"
   ],

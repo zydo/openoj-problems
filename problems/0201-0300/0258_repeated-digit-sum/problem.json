@@ -4,8 +4,13 @@
   "id": 258,
   "slug": "repeated-digit-sum",
   "title": "Repeated Digit Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Simulation",
     "Number Theory"

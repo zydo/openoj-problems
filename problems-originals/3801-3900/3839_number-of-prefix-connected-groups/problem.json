@@ -4,8 +4,14 @@
   "id": 3839,
   "slug": "number-of-prefix-connected-groups",
   "title": "Number of Prefix Connected Groups",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

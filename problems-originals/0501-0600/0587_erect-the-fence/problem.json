@@ -3,10 +3,17 @@
   "id": 587,
   "slug": "erect-the-fence",
   "title": "Erect the Fence",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Geometry",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Convex Hull",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

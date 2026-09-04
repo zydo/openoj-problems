@@ -4,8 +4,11 @@
   "id": 2805,
   "slug": "custom-interval",
   "title": "Custom Interval",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

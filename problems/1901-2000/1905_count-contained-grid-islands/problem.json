@@ -4,13 +4,20 @@
   "id": 1905,
   "slug": "count-contained-grid-islands",
   "title": "Count Contained Grid Islands",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Matrix",
     "Depth-First Search",
     "Breadth-First Search",
     "Union Find"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

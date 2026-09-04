@@ -4,8 +4,12 @@
   "id": 1906,
   "slug": "smallest-value-gap-in-ranges",
   "title": "Smallest Value Gap in Ranges",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

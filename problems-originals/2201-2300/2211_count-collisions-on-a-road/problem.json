@@ -4,8 +4,13 @@
   "id": 2211,
   "slug": "count-collisions-on-a-road",
   "title": "Count Collisions on a Road",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

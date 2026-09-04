@@ -3,9 +3,16 @@
   "id": 295,
   "slug": "find-median-from-data-stream",
   "title": "Find Median from Data Stream",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap"
+  ],
+  "topics": [
+    "Two Pointers",
+    "Design",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

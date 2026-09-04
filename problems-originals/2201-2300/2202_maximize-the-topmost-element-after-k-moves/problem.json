@@ -4,8 +4,12 @@
   "id": 2202,
   "slug": "maximize-the-topmost-element-after-k-moves",
   "title": "Maximize the Topmost Element After K Moves",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

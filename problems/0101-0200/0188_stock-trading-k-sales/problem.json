@@ -4,8 +4,12 @@
   "id": 188,
   "slug": "stock-trading-k-sales",
   "title": "Stock Trading, K Sales",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

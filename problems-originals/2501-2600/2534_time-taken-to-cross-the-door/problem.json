@@ -4,8 +4,13 @@
   "id": 2534,
   "slug": "time-taken-to-cross-the-door",
   "title": "Time Taken to Cross the Door",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Queue",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Simulation"

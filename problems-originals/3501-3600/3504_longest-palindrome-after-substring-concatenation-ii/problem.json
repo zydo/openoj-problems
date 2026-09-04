@@ -4,8 +4,13 @@
   "id": 3504,
   "slug": "longest-palindrome-after-substring-concatenation-ii",
   "title": "Longest Palindrome After Substring Concatenation II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming"

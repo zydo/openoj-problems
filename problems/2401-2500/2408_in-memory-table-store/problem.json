@@ -4,8 +4,14 @@
   "id": 2408,
   "slug": "in-memory-table-store",
   "title": "In-Memory Table Store",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

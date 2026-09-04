@@ -4,10 +4,16 @@
   "id": 484,
   "slug": "least-signature-permutation",
   "title": "Least Signature Permutation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Stack",
     "Greedy"
   ],
   "invocation": {

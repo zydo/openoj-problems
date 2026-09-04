@@ -4,8 +4,11 @@
   "id": 3502,
   "slug": "minimum-cost-to-reach-every-position",
   "title": "Minimum Cost to Reach Every Position",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

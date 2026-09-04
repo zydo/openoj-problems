@@ -4,8 +4,12 @@
   "id": 2718,
   "slug": "sum-of-matrix-after-queries",
   "title": "Sum of Matrix After Queries",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

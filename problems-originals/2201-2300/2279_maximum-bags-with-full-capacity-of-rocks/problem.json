@@ -4,8 +4,13 @@
   "id": 2279,
   "slug": "maximum-bags-with-full-capacity-of-rocks",
   "title": "Maximum Bags With Full Capacity of Rocks",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

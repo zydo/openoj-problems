@@ -4,8 +4,15 @@
   "id": 3477,
   "slug": "fruits-into-baskets-ii",
   "title": "Fruits Into Baskets II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Segment Tree",
+    "Simulation",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Segment Tree",

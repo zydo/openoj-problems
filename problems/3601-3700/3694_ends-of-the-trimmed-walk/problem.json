@@ -4,8 +4,14 @@
   "id": 3694,
   "slug": "ends-of-the-trimmed-walk",
   "title": "Ends Of The Trimmed Walk",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window",

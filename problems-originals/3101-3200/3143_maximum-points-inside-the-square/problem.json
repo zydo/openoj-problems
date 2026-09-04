@@ -4,8 +4,15 @@
   "id": 3143,
   "slug": "maximum-points-inside-the-square",
   "title": "Maximum Points Inside the Square",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

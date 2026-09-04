@@ -4,8 +4,16 @@
   "id": 2850,
   "slug": "minimum-moves-to-spread-stones-over-grid",
   "title": "Minimum Moves to Spread Stones Over Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Matrix",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Backtracking",

@@ -4,8 +4,20 @@
   "id": 1595,
   "slug": "minimum-cost-to-connect-two-groups-of-points",
   "title": "Minimum Cost to Connect Two Groups of Points",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Matrix",
+    "Bitmask",
+    "Bipartite Graph",
+    "Successive Shortest Path Algorithm",
+    "Matching (Graph)",
+    "Minimum-Cost Flow",
+    "Flow Network"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

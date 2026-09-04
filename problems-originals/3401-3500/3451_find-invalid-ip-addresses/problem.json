@@ -4,8 +4,11 @@
   "id": 3451,
   "slug": "find-invalid-ip-addresses",
   "title": "Find Invalid IP Addresses",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

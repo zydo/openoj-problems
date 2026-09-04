@@ -4,8 +4,13 @@
   "id": 3565,
   "slug": "sequential-grid-path-cover",
   "title": "Sequential Grid Path Cover",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Recursion",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Recursion",
     "Matrix"

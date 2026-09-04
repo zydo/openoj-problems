@@ -4,8 +4,12 @@
   "id": 3360,
   "slug": "stone-removal-game",
   "title": "Stone Removal Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

@@ -4,8 +4,14 @@
   "id": 1966,
   "slug": "binary-searchable-numbers-in-an-unsorted-array",
   "title": "Binary Searchable Numbers in an Unsorted Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Stack",

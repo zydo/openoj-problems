@@ -4,8 +4,14 @@
   "id": 3781,
   "slug": "maximum-score-after-binary-swaps",
   "title": "Maximum Score After Binary Swaps",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "String",
     "Greedy",

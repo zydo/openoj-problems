@@ -4,8 +4,14 @@
   "id": 2125,
   "slug": "number-of-laser-beams-in-a-bank",
   "title": "Number of Laser Beams in a Bank",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String",

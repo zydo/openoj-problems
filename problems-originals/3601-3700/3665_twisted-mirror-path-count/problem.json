@@ -4,8 +4,13 @@
   "id": 3665,
   "slug": "twisted-mirror-path-count",
   "title": "Twisted Mirror Path Count",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

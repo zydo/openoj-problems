@@ -4,8 +4,14 @@
   "id": 3663,
   "slug": "find-the-least-frequent-digit",
   "title": "Find The Least Frequent Digit",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

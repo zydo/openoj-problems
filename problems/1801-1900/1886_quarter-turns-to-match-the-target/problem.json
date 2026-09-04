@@ -4,8 +4,12 @@
   "id": 1886,
   "slug": "quarter-turns-to-match-the-target",
   "title": "Quarter Turns to Match the Target",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

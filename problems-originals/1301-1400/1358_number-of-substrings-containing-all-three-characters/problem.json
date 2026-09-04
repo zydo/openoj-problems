@@ -3,11 +3,16 @@
   "id": 1358,
   "slug": "number-of-substrings-containing-all-three-characters",
   "title": "Number of Substrings Containing All Three Characters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Sliding Window",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

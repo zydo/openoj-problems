@@ -4,11 +4,15 @@
   "id": 1278,
   "slug": "fewest-rewrites-into-k-palindromes",
   "title": "Fewest Rewrites into k Palindromes",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

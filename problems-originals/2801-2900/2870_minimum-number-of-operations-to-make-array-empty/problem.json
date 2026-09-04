@@ -4,8 +4,14 @@
   "id": 2870,
   "slug": "minimum-number-of-operations-to-make-array-empty",
   "title": "Minimum Number of Operations to Make Array Empty",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

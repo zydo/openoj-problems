@@ -4,8 +4,12 @@
   "id": 738,
   "slug": "monotone-increasing-digits",
   "title": "Monotone Increasing Digits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

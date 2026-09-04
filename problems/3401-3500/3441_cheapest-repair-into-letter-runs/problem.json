@@ -4,8 +4,12 @@
   "id": 3441,
   "slug": "cheapest-repair-into-letter-runs",
   "title": "Cheapest Repair Into Letter Runs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

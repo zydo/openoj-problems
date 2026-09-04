@@ -4,10 +4,13 @@
   "id": 1978,
   "slug": "stranded-reports-of-departed-managers",
   "title": "Stranded Reports of Departed Managers",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

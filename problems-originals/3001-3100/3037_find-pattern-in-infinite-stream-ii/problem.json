@@ -4,8 +4,16 @@
   "id": 3037,
   "slug": "find-pattern-in-infinite-stream-ii",
   "title": "Find Pattern in Infinite Stream II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Sliding Window",
+    "Rolling Hash",
+    "String Matching",
+    "Interactive",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "Sliding Window",
     "Rolling Hash",

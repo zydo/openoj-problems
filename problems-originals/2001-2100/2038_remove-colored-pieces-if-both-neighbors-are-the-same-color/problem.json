@@ -4,8 +4,14 @@
   "id": 2038,
   "slug": "remove-colored-pieces-if-both-neighbors-are-the-same-color",
   "title": "Remove Colored Pieces if Both Neighbors are the Same Color",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Greedy",
+    "Game Theory"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy",

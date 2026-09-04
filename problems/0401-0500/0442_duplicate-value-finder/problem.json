@@ -4,10 +4,15 @@
   "id": 442,
   "slug": "duplicate-value-finder",
   "title": "Duplicate Value Finder",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

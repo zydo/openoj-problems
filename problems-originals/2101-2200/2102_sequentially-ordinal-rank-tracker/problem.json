@@ -4,8 +4,14 @@
   "id": 2102,
   "slug": "sequentially-ordinal-rank-tracker",
   "title": "Sequentially Ordinal Rank Tracker",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Design",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
+  ],
+  "topics": [
     "Design",
     "Heap (Priority Queue)",
     "Data Stream",

@@ -4,8 +4,13 @@
   "id": 634,
   "slug": "count-derangements",
   "title": "Count Derangements",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Combinatorics"

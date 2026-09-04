@@ -4,9 +4,15 @@
   "id": 3264,
   "slug": "scaling-the-smallest-slot",
   "title": "Scaling The Smallest Slot",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Heap (Priority Queue)",
     "Simulation"
   ],
   "invocation": {

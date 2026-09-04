@@ -3,11 +3,19 @@
   "id": 169,
   "slug": "majority-element",
   "title": "Majority Element",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Sorting",
+    "Counting",
+    "Boyer–Moore Majority Vote Algorithm"
   ],
   "invocation": {
     "type": "function",

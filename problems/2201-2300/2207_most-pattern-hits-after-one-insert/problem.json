@@ -4,8 +4,13 @@
   "id": 2207,
   "slug": "most-pattern-hits-after-one-insert",
   "title": "Most Pattern Hits After One Insert",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Prefix Sum"

@@ -4,8 +4,12 @@
   "id": 3945,
   "slug": "digit-frequency-score",
   "title": "Digit Frequency Score",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Hash Table",
     "Math"
   ],

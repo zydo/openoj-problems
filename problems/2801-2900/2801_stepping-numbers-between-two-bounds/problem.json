@@ -4,8 +4,12 @@
   "id": 2801,
   "slug": "stepping-numbers-between-two-bounds",
   "title": "Stepping Numbers Between Two Bounds",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

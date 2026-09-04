@@ -4,8 +4,12 @@
   "id": 1228,
   "slug": "skipped-sequence-term",
   "title": "Skipped Sequence Term",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

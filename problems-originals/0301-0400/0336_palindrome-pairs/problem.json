@@ -3,11 +3,18 @@
   "id": 336,
   "slug": "palindrome-pairs",
   "title": "Palindrome Pairs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Hash Table",
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

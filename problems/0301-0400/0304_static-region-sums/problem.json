@@ -4,8 +4,14 @@
   "id": 304,
   "slug": "static-region-sums",
   "title": "Static Region Sums",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Design",
     "Matrix",
     "Prefix Sum"
   ],

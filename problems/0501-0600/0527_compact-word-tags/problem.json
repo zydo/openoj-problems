@@ -4,12 +4,19 @@
   "id": 527,
   "slug": "compact-word-tags",
   "title": "Compact Word Tags",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
     "Greedy",
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Greedy",
+    "Trie",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

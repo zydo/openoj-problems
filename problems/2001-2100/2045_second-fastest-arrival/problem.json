@@ -4,11 +4,18 @@
   "id": 2045,
   "slug": "second-fastest-arrival",
   "title": "Second-Fastest Arrival",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Breadth-First Search",
     "Graph Theory",
     "Shortest Path"
+  ],
+  "topics": [
+    "Breadth-First Search",
+    "Graph Theory",
+    "Shortest Path",
+    "Dijkstra's Algorithm",
+    "K Shortest Path"
   ],
   "invocation": {
     "type": "function",

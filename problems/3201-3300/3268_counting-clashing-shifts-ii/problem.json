@@ -4,10 +4,13 @@
   "id": 3268,
   "slug": "counting-clashing-shifts-ii",
   "title": "Counting Clashing Shifts II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

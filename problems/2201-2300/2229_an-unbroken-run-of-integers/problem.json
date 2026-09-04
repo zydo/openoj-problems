@@ -4,8 +4,13 @@
   "id": 2229,
   "slug": "an-unbroken-run-of-integers",
   "title": "An Unbroken Run of Integers",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

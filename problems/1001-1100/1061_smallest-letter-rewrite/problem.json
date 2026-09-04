@@ -4,11 +4,15 @@
   "id": 1061,
   "slug": "smallest-letter-rewrite",
   "title": "Smallest Letter Rewrite",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Union Find",
     "Graph"
+  ],
+  "topics": [
+    "String",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

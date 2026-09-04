@@ -4,8 +4,12 @@
   "id": 2917,
   "slug": "bitwise-quorum-or",
   "title": "Bitwise Quorum OR",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

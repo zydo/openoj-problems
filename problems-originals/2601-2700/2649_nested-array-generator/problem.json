@@ -4,8 +4,12 @@
   "id": 2649,
   "slug": "nested-array-generator",
   "title": "Nested Array Generator",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Array",
+    "Recursion"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

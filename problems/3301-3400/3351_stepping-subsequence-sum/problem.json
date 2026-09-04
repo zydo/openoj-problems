@@ -4,8 +4,13 @@
   "id": 3351,
   "slug": "stepping-subsequence-sum",
   "title": "Stepping Subsequence Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

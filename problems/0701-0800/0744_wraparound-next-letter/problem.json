@@ -4,8 +4,12 @@
   "id": 744,
   "slug": "wraparound-next-letter",
   "title": "Wraparound Next Letter",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

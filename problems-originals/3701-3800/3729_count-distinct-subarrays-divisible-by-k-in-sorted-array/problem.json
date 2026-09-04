@@ -4,8 +4,13 @@
   "id": 3729,
   "slug": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
   "title": "Count Distinct Subarrays Divisible by K in Sorted Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

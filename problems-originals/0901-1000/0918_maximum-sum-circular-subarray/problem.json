@@ -3,12 +3,19 @@
   "id": 918,
   "slug": "maximum-sum-circular-subarray",
   "title": "Maximum Sum Circular Subarray",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Greedy",
     "Array",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Queue",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

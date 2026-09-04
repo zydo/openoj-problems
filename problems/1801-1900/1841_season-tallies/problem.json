@@ -4,10 +4,13 @@
   "id": 1841,
   "slug": "season-tallies",
   "title": "Season Tallies",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

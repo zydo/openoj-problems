@@ -4,8 +4,12 @@
   "id": 367,
   "slug": "exact-square-check",
   "title": "Exact Square Check",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

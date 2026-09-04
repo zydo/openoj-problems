@@ -4,8 +4,15 @@
   "id": 1525,
   "slug": "number-of-good-ways-to-split-a-string",
   "title": "Number of Good Ways to Split a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming",

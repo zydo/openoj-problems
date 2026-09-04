@@ -4,8 +4,12 @@
   "id": 751,
   "slug": "ip-to-cidr",
   "title": "IP to CIDR",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "String",
     "Bit Manipulation"
   ],

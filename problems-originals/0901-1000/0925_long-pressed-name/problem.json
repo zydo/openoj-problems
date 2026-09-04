@@ -4,8 +4,12 @@
   "id": 925,
   "slug": "long-pressed-name",
   "title": "Long Pressed Name",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

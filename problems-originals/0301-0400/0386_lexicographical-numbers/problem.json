@@ -4,8 +4,12 @@
   "id": 386,
   "slug": "lexicographical-numbers",
   "title": "Lexicographical Numbers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Trie"
+  ],
+  "topics": [
     "Depth-First Search",
     "Trie"
   ],

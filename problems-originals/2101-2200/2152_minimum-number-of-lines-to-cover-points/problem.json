@@ -4,8 +4,18 @@
   "id": 2152,
   "slug": "minimum-number-of-lines-to-cover-points",
   "title": "Minimum Number of Lines to Cover Points",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Geometry",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

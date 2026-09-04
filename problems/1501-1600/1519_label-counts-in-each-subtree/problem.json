@@ -4,12 +4,20 @@
   "id": 1519,
   "slug": "label-counts-in-each-subtree",
   "title": "Label Counts in Each Subtree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",
     "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Counting",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2545,
   "slug": "ranking-the-class-by-one-exam",
   "title": "Ranking the Class by One Exam",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Matrix"

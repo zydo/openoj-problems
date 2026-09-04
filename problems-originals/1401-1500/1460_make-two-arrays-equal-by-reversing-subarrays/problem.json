@@ -4,8 +4,13 @@
   "id": 1460,
   "slug": "make-two-arrays-equal-by-reversing-subarrays",
   "title": "Make Two Arrays Equal by Reversing Subarrays",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

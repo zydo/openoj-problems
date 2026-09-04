@@ -4,8 +4,14 @@
   "id": 2764,
   "slug": "telling-a-real-preorder-from-a-fake",
   "title": "Telling A Real Preorder From A Fake",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search",

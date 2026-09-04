@@ -4,8 +4,12 @@
   "id": 245,
   "slug": "closest-word-gap-iii",
   "title": "Closest Word Gap III",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

@@ -4,8 +4,13 @@
   "id": 2835,
   "slug": "minimum-operations-to-form-subsequence-with-target-sum",
   "title": "Minimum Operations to Form Subsequence With Target Sum",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation"

@@ -4,8 +4,12 @@
   "id": 2036,
   "slug": "maximum-alternating-subarray-sum",
   "title": "Maximum Alternating Subarray Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

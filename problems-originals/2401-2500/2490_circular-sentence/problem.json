@@ -4,8 +4,11 @@
   "id": 2490,
   "slug": "circular-sentence",
   "title": "Circular Sentence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

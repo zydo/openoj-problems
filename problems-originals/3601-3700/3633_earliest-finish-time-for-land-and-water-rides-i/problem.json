@@ -4,8 +4,15 @@
   "id": 3633,
   "slug": "earliest-finish-time-for-land-and-water-rides-i",
   "title": "Earliest Finish Time for Land and Water Rides I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

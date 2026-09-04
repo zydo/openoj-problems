@@ -4,8 +4,12 @@
   "id": 2162,
   "slug": "cheapest-way-to-enter-a-cooking-time",
   "title": "Cheapest Way to Enter a Cooking Time",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

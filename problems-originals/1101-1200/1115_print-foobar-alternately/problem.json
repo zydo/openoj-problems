@@ -4,8 +4,11 @@
   "id": 1115,
   "slug": "print-foobar-alternately",
   "title": "Print FooBar Alternately",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

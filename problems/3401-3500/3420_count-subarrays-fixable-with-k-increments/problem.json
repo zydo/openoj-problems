@@ -4,10 +4,19 @@
   "id": 3420,
   "slug": "count-subarrays-fixable-with-k-increments",
   "title": "Count Subarrays Fixable With K Increments",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Stack",
+    "Sliding Window",
+    "Monotonic Stack",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Segment Tree",
+    "Queue",
     "Sliding Window",
     "Monotonic Stack",
     "Monotonic Queue"

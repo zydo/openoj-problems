@@ -4,8 +4,14 @@
   "id": 2747,
   "slug": "count-zero-request-servers",
   "title": "Count Zero Request Servers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

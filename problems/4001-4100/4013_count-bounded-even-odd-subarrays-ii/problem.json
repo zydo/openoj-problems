@@ -4,11 +4,16 @@
   "id": 4013,
   "slug": "count-bounded-even-odd-subarrays-ii",
   "title": "Count Bounded Even-Odd Subarrays II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Indexed Tree",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Prefix Sum",
+    "Binary Indexed Tree",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

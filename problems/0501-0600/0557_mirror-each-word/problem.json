@@ -4,8 +4,12 @@
   "id": 557,
   "slug": "mirror-each-word",
   "title": "Mirror Each Word",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

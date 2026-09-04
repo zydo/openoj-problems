@@ -3,10 +3,15 @@
   "id": 838,
   "slug": "push-dominoes",
   "title": "Push Dominoes",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Two Pointers",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
     "Dynamic Programming"
   ],
   "invocation": {

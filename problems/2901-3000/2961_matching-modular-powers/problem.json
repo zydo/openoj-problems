@@ -4,8 +4,13 @@
   "id": 2961,
   "slug": "matching-modular-powers",
   "title": "Matching Modular Powers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Simulation"

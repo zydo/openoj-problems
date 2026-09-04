@@ -3,11 +3,18 @@
   "id": 2458,
   "slug": "height-of-binary-tree-after-subtree-removal-queries",
   "title": "Height of Binary Tree After Subtree Removal Queries",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Tree",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

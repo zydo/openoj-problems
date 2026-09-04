@@ -4,8 +4,13 @@
   "id": 1564,
   "slug": "fitting-boxes-into-rooms-i",
   "title": "Fitting Boxes Into Rooms I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

@@ -4,8 +4,12 @@
   "id": 2899,
   "slug": "last-visited-integers",
   "title": "Last Visited Integers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

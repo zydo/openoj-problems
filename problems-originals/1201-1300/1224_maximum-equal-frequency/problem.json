@@ -4,8 +4,12 @@
   "id": 1224,
   "slug": "maximum-equal-frequency",
   "title": "Maximum Equal Frequency",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

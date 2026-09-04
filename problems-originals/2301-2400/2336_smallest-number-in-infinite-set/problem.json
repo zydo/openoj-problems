@@ -4,8 +4,14 @@
   "id": 2336,
   "slug": "smallest-number-in-infinite-set",
   "title": "Smallest Number in Infinite Set",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Heap (Priority Queue)",

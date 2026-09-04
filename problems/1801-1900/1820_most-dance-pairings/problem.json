@@ -4,12 +4,27 @@
   "id": 1820,
   "slug": "most-dance-pairings",
   "title": "Most Dance Pairings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph Theory",
     "Depth-First Search",
     "Matching (Graph)",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Graph Theory",
+    "Matrix",
+    "Maximum Flow",
+    "Maximum Matching",
+    "Bipartite Graph",
+    "Edmonds–Karp Algorithm",
+    "MPM Algorithm",
+    "Push-Relabel Algorithm",
+    "Matching (Graph)",
+    "Flow Network",
+    "Dinic's Algorithm"
   ],
   "invocation": {
     "type": "function",

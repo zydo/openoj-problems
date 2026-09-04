@@ -4,8 +4,12 @@
   "id": 2060,
   "slug": "check-if-an-original-string-exists-given-two-encoded-strings",
   "title": "Check if an Original String Exists Given Two Encoded Strings",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

@@ -4,10 +4,13 @@
   "id": 1783,
   "slug": "circuit-champions",
   "title": "Circuit Champions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,8 +4,17 @@
   "id": 1740,
   "slug": "find-distance-in-a-binary-tree",
   "title": "Find Distance in a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

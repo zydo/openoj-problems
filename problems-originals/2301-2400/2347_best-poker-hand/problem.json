@@ -4,8 +4,13 @@
   "id": 2347,
   "slug": "best-poker-hand",
   "title": "Best Poker Hand",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

@@ -4,8 +4,15 @@
   "id": 897,
   "slug": "increasing-order-search-tree",
   "title": "Increasing Order Search Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search",

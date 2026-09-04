@@ -4,8 +4,14 @@
   "id": 675,
   "slug": "cut-off-trees-for-golf-event",
   "title": "Cut Off Trees for Golf Event",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Heap (Priority Queue)",

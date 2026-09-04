@@ -4,8 +4,14 @@
   "id": 1605,
   "slug": "rebuild-matrix-from-margins",
   "title": "Rebuild Matrix From Margins",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix",
+    "Flow Network"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix",

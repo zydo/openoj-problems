@@ -4,12 +4,21 @@
   "id": 653,
   "slug": "bst-pair-sum",
   "title": "BST Pair Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Hash Table",
     "Tree",
     "Depth-First Search",
     "Binary Search Tree"
+  ],
+  "topics": [
+    "Hash Table",
+    "Two Pointers",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

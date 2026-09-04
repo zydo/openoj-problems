@@ -4,8 +4,14 @@
   "id": 3806,
   "slug": "maximum-shared-bits-after-top-ups",
   "title": "Maximum Shared Bits After Top-Ups",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation",

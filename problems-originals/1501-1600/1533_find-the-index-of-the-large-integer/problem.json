@@ -4,8 +4,13 @@
   "id": 1533,
   "slug": "find-the-index-of-the-large-integer",
   "title": "Find the Index of the Large Integer",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Interactive"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Interactive"

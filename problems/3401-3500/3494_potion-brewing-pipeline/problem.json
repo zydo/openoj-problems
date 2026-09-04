@@ -4,8 +4,13 @@
   "id": 3494,
   "slug": "potion-brewing-pipeline",
   "title": "The Potion Brewing Pipeline",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Simulation",
     "Prefix Sum"

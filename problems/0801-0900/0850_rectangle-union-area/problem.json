@@ -4,10 +4,16 @@
   "id": 850,
   "slug": "rectangle-union-area",
   "title": "Rectangle Union Area",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Segment Tree",
+    "Sweep Line",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

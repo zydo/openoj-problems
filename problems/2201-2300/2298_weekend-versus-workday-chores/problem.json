@@ -4,10 +4,13 @@
   "id": 2298,
   "slug": "weekend-versus-workday-chores",
   "title": "Weekend Versus Workday Chores",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

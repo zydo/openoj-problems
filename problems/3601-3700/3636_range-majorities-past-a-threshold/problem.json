@@ -4,11 +4,19 @@
   "id": 3636,
   "slug": "range-majorities-past-a-threshold",
   "title": "Range Majorities Past A Threshold",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Divide and Conquer",
+    "Counting",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

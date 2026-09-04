@@ -4,8 +4,15 @@
   "id": 3799,
   "slug": "word-squares-ii",
   "title": "Word Squares II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

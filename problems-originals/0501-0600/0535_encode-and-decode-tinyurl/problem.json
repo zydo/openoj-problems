@@ -4,8 +4,14 @@
   "id": 535,
   "slug": "encode-and-decode-tinyurl",
   "title": "Encode and Decode TinyURL",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Hash Function"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Design",

@@ -4,8 +4,12 @@
   "id": 2739,
   "slug": "truck-range-on-two-tanks",
   "title": "Truck Range On Two Tanks",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

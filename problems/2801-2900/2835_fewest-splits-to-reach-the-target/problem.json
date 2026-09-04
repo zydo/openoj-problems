@@ -4,8 +4,13 @@
   "id": 2835,
   "slug": "fewest-splits-to-reach-the-target",
   "title": "Fewest Splits To Reach The Target",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation"

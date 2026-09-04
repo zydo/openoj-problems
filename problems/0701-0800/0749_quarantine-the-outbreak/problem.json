@@ -4,10 +4,17 @@
   "id": 749,
   "slug": "quarantine-the-outbreak",
   "title": "Quarantine the Outbreak",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Depth-First Search",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Matrix",
     "Simulation"
   ],

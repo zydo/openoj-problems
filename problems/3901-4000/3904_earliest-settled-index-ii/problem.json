@@ -4,8 +4,12 @@
   "id": 3904,
   "slug": "earliest-settled-index-ii",
   "title": "Earliest Settled Index II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

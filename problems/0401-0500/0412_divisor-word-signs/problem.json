@@ -4,8 +4,13 @@
   "id": 412,
   "slug": "divisor-word-signs",
   "title": "Divisor Word Signs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Simulation"

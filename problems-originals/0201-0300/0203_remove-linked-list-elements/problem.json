@@ -4,8 +4,12 @@
   "id": 203,
   "slug": "remove-linked-list-elements",
   "title": "Remove Linked List Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List",
+    "Recursion"
+  ],
+  "topics": [
     "Linked List",
     "Recursion"
   ],

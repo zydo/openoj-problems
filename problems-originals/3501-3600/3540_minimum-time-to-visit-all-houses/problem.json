@@ -4,8 +4,12 @@
   "id": 3540,
   "slug": "minimum-time-to-visit-all-houses",
   "title": "Minimum Time to Visit All Houses",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

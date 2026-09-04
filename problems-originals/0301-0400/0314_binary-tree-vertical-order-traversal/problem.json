@@ -4,8 +4,16 @@
   "id": 314,
   "slug": "binary-tree-vertical-order-traversal",
   "title": "Binary Tree Vertical Order Traversal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Sorting",
+    "Binary Tree"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

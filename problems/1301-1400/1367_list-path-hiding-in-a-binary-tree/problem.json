@@ -4,8 +4,14 @@
   "id": 1367,
   "slug": "list-path-hiding-in-a-binary-tree",
   "title": "List Path Hiding in a Binary Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Linked List",
     "Tree",
     "Depth-First Search",

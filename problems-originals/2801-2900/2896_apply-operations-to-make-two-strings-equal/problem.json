@@ -4,8 +4,12 @@
   "id": 2896,
   "slug": "apply-operations-to-make-two-strings-equal",
   "title": "Apply Operations to Make Two Strings Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

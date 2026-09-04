@@ -4,8 +4,13 @@
   "id": 3761,
   "slug": "minimum-absolute-distance-between-mirror-pairs",
   "title": "Minimum Absolute Distance Between Mirror Pairs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math"

@@ -4,8 +4,14 @@
   "id": 1775,
   "slug": "equal-sum-arrays-with-minimum-number-of-operations",
   "title": "Equal Sum Arrays With Minimum Number of Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

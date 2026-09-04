@@ -3,8 +3,14 @@
   "id": 2517,
   "slug": "maximum-tastiness-of-candy-basket",
   "title": "Maximum Tastiness of Candy Basket",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Binary Search",
     "Greedy",
     "Sorting"

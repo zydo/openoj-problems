@@ -4,8 +4,12 @@
   "id": 564,
   "slug": "find-the-closest-palindrome",
   "title": "Find the Closest Palindrome",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

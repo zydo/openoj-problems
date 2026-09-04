@@ -4,9 +4,15 @@
   "id": 1027,
   "slug": "longest-constant-step-subsequence",
   "title": "Longest Constant-Step Subsequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
     "Dynamic Programming"
   ],
   "invocation": {

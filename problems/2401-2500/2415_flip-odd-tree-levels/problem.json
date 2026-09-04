@@ -4,9 +4,15 @@
   "id": 2415,
   "slug": "flip-odd-tree-levels",
   "title": "Flip Odd Tree Levels",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
     "Breadth-First Search",
     "Binary Tree"
   ],

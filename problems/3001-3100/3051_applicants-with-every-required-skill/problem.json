@@ -4,10 +4,13 @@
   "id": 3051,
   "slug": "applicants-with-every-required-skill",
   "title": "Applicants With Every Required Skill",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

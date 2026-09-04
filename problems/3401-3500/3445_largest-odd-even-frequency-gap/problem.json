@@ -4,11 +4,17 @@
   "id": 3445,
   "slug": "largest-odd-even-frequency-gap",
   "title": "Largest Odd-Even Frequency Gap",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "String",
     "Sliding Window"
+  ],
+  "topics": [
+    "String",
+    "Sliding Window",
+    "Enumeration",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

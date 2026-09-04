@@ -4,10 +4,13 @@
   "id": 1867,
   "slug": "lopsided-purchases",
   "title": "Lopsided Purchases",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

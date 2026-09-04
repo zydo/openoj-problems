@@ -4,8 +4,13 @@
   "id": 3765,
   "slug": "complete-prime-number",
   "title": "Complete Prime Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Enumeration",
     "Number Theory"

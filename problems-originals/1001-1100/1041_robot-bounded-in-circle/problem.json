@@ -3,9 +3,14 @@
   "id": 1041,
   "slug": "robot-bounded-in-circle",
   "title": "Robot Bounded In Circle",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Math",
+    "Simulation"
+  ],
+  "topics": [
+    "Math",
+    "String",
     "Simulation"
   ],
   "invocation": {

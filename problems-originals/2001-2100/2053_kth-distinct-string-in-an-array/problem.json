@@ -4,8 +4,14 @@
   "id": 2053,
   "slug": "kth-distinct-string-in-an-array",
   "title": "Kth Distinct String in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

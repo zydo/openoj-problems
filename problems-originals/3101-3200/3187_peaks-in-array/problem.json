@@ -3,8 +3,13 @@
   "id": 3187,
   "slug": "peaks-in-array",
   "title": "Peaks in Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Binary Indexed Tree",
     "Segment Tree"

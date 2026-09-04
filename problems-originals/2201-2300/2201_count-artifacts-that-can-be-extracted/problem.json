@@ -4,8 +4,13 @@
   "id": 2201,
   "slug": "count-artifacts-that-can-be-extracted",
   "title": "Count Artifacts That Can Be Extracted",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

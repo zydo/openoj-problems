@@ -4,8 +4,13 @@
   "id": 1654,
   "slug": "minimum-jumps-to-reach-home",
   "title": "Minimum Jumps to Reach Home",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Breadth-First Search"

@@ -4,8 +4,14 @@
   "id": 900,
   "slug": "rle-iterator",
   "title": "RLE Iterator",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Design",
+    "Counting",
+    "Iterator"
+  ],
+  "topics": [
     "Array",
     "Design",
     "Counting",

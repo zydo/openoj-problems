@@ -4,8 +4,12 @@
   "id": 2934,
   "slug": "minimum-operations-to-maximize-last-elements-in-arrays",
   "title": "Minimum Operations to Maximize Last Elements in Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

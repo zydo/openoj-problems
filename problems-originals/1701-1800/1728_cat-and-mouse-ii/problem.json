@@ -4,8 +4,20 @@
   "id": 1728,
   "slug": "cat-and-mouse-ii",
   "title": "Cat and Mouse II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
+    "Minimax",
+    "Matrix",
+    "Game Theory",
+    "Zero-Sum Game"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

@@ -4,11 +4,19 @@
   "id": 1438,
   "slug": "longest-run-with-bounded-spread",
   "title": "Longest Run With Bounded Spread",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Monotonic Queue",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Ordered Set",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

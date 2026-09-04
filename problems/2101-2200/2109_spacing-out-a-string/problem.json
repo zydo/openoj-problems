@@ -4,11 +4,17 @@
   "id": 2109,
   "slug": "spacing-out-a-string",
   "title": "Spacing Out a String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

@@ -3,8 +3,14 @@
   "id": 2434,
   "slug": "using-a-robot-to-print-the-lexicographically-smallest-string",
   "title": "Using a Robot to Print the Lexicographically Smallest String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Stack",

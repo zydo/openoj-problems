@@ -4,8 +4,14 @@
   "id": 2102,
   "slug": "querying-the-ranked-stream",
   "title": "Querying The Ranked Stream",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Design",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
+  ],
+  "topics": [
     "Design",
     "Heap (Priority Queue)",
     "Data Stream",

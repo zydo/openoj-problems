@@ -3,8 +3,14 @@
   "id": 823,
   "slug": "binary-trees-with-factors",
   "title": "Binary Trees With Factors",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

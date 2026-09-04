@@ -4,8 +4,12 @@
   "id": 1881,
   "slug": "one-digit-for-the-largest-value",
   "title": "One Digit For The Largest Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

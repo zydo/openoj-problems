@@ -4,11 +4,18 @@
   "id": 3462,
   "slug": "best-picks-under-row-caps",
   "title": "Best Picks Under Row Caps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Matrix"
   ],
   "invocation": {

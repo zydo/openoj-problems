@@ -4,8 +4,15 @@
   "id": 455,
   "slug": "assign-cookies",
   "title": "Assign Cookies",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Quicksort"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy",

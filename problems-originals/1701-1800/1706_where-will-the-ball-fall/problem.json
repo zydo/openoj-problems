@@ -4,8 +4,13 @@
   "id": 1706,
   "slug": "where-will-the-ball-fall",
   "title": "Where Will the Ball Fall",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

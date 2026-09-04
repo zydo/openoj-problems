@@ -4,9 +4,15 @@
   "id": 910,
   "slug": "minimized-span-ii",
   "title": "Minimized Span II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Greedy",
     "Sorting"
   ],

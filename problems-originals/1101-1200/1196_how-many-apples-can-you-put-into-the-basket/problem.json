@@ -4,8 +4,13 @@
   "id": 1196,
   "slug": "how-many-apples-can-you-put-into-the-basket",
   "title": "How Many Apples Can You Put into the Basket",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

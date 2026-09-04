@@ -3,8 +3,12 @@
   "id": 1870,
   "slug": "minimum-speed-to-arrive-on-time",
   "title": "Minimum Speed to Arrive on Time",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

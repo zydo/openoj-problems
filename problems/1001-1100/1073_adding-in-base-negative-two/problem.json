@@ -4,8 +4,12 @@
   "id": 1073,
   "slug": "adding-in-base-negative-two",
   "title": "Adding in Base Negative Two",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -4,8 +4,13 @@
   "id": 2532,
   "slug": "time-to-cross-a-bridge",
   "title": "Time to Cross a Bridge",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Heap (Priority Queue)",
     "Simulation"

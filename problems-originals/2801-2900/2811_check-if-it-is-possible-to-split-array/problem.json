@@ -4,8 +4,13 @@
   "id": 2811,
   "slug": "check-if-it-is-possible-to-split-array",
   "title": "Check if it is Possible to Split Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

@@ -4,8 +4,17 @@
   "id": 3186,
   "slug": "maximum-total-damage-with-spell-casting",
   "title": "Maximum Total Damage With Spell Casting",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

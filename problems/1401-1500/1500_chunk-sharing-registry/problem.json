@@ -4,10 +4,17 @@
   "id": 1500,
   "slug": "chunk-sharing-registry",
   "title": "Chunk Sharing Registry",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Design"
+  ],
+  "topics": [
+    "Hash Table",
+    "Design",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

@@ -4,8 +4,12 @@
   "id": 1954,
   "slug": "minimum-garden-perimeter-to-collect-enough-apples",
   "title": "Minimum Garden Perimeter to Collect Enough Apples",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

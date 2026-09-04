@@ -4,11 +4,17 @@
   "id": 2285,
   "slug": "peak-prestige-of-the-road-network",
   "title": "Peak Prestige of the Road Network",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Graph Theory",
     "Sorting"
+  ],
+  "topics": [
+    "Greedy",
+    "Graph Theory",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

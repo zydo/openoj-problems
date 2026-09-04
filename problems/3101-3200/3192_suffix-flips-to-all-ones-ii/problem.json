@@ -4,9 +4,14 @@
   "id": 3192,
   "slug": "suffix-flips-to-all-ones-ii",
   "title": "Suffix Flips To All Ones II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

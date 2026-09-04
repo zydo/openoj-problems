@@ -4,8 +4,12 @@
   "id": 2656,
   "slug": "repeated-peak-harvest",
   "title": "Repeated Peak Harvest",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

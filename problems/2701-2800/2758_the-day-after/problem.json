@@ -4,8 +4,12 @@
   "id": 2758,
   "slug": "the-day-after",
   "title": "The Day After",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

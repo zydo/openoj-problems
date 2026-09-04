@@ -4,8 +4,12 @@
   "id": 1416,
   "slug": "restore-the-array",
   "title": "Restore The Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

@@ -4,10 +4,13 @@
   "id": 607,
   "slug": "uncommitted-vendors",
   "title": "Uncommitted Vendors",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

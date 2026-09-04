@@ -4,8 +4,14 @@
   "id": 2345,
   "slug": "finding-the-number-of-visible-mountains",
   "title": "Finding the Number of Visible Mountains",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Sorting",

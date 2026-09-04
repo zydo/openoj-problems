@@ -3,10 +3,16 @@
   "id": 2976,
   "slug": "minimum-cost-to-convert-string-i",
   "title": "Minimum Cost to Convert String I",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Shortest Path",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Graph Theory",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

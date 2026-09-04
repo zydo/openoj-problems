@@ -4,8 +4,15 @@
   "id": 2838,
   "slug": "maximum-coins-heroes-can-collect",
   "title": "Maximum Coins Heroes Can Collect",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

@@ -4,8 +4,11 @@
   "id": 3089,
   "slug": "find-bursty-behavior",
   "title": "Find Bursty Behavior",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

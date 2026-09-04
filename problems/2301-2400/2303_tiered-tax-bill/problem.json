@@ -4,8 +4,12 @@
   "id": 2303,
   "slug": "tiered-tax-bill",
   "title": "Tiered Tax Bill",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -4,11 +4,19 @@
   "id": 3081,
   "slug": "spending-blanks-on-rarest-letters",
   "title": "Spending Blanks On Rarest Letters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Greedy",
     "Sorting",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Counting"
   ],
   "invocation": {

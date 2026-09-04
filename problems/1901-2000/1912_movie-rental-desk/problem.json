@@ -4,11 +4,18 @@
   "id": 1912,
   "slug": "movie-rental-desk",
   "title": "Movie Rental Desk",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Hash Table",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

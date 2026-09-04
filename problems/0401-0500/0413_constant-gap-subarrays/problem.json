@@ -4,8 +4,13 @@
   "id": 413,
   "slug": "constant-gap-subarrays",
   "title": "Constant-Gap Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sliding Window"

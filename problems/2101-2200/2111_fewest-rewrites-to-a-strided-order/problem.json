@@ -4,11 +4,16 @@
   "id": 2111,
   "slug": "fewest-rewrites-to-a-strided-order",
   "title": "Fewest Rewrites to a Strided Order",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

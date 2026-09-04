@@ -4,8 +4,14 @@
   "id": 672,
   "slug": "bulb-switcher-ii",
   "title": "Bulb Switcher II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Depth-First Search",

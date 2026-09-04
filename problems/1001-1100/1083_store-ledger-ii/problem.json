@@ -4,10 +4,13 @@
   "id": 1083,
   "slug": "store-ledger-ii",
   "title": "Store Ledger II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

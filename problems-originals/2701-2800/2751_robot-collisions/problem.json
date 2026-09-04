@@ -3,8 +3,14 @@
   "id": 2751,
   "slug": "robot-collisions",
   "title": "Robot Collisions",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Sorting",

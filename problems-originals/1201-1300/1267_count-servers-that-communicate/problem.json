@@ -4,8 +4,16 @@
   "id": 1267,
   "slug": "count-servers-that-communicate",
   "title": "Count Servers that Communicate",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

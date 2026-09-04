@@ -4,10 +4,15 @@
   "id": 3432,
   "slug": "counting-even-gap-splits",
   "title": "Counting Even-Gap Splits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 1855,
   "slug": "widest-valid-pair-span",
   "title": "Widest Valid Pair Span",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search"

@@ -4,8 +4,12 @@
   "id": 984,
   "slug": "two-letter-string-without-triples",
   "title": "Two-Letter String Without Triples",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

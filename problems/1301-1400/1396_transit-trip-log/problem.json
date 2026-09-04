@@ -4,9 +4,14 @@
   "id": 1396,
   "slug": "transit-trip-log",
   "title": "Transit Trip Log",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design"
   ],
   "invocation": {
     "type": "design",

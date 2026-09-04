@@ -4,8 +4,14 @@
   "id": 2244,
   "slug": "minimum-rounds-to-complete-all-tasks",
   "title": "Minimum Rounds to Complete All Tasks",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

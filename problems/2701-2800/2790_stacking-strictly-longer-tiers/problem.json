@@ -4,9 +4,16 @@
   "id": 2790,
   "slug": "stacking-strictly-longer-tiers",
   "title": "Stacking Strictly Longer Tiers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Binary Search",
     "Greedy",
     "Sorting"

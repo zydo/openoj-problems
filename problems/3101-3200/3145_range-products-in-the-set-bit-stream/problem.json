@@ -4,11 +4,16 @@
   "id": 3145,
   "slug": "range-products-in-the-set-bit-stream",
   "title": "Range Products in the Set-Bit Stream",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Bit Manipulation",
     "Digit DP"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

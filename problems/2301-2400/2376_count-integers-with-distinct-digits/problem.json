@@ -4,8 +4,12 @@
   "id": 2376,
   "slug": "count-integers-with-distinct-digits",
   "title": "Count Integers With Distinct Digits",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

@@ -4,8 +4,13 @@
   "id": 157,
   "slug": "copying-chars-through-a-window",
   "title": "Copying Chars Through A Window",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation",
+    "Interactive"
+  ],
+  "topics": [
     "Array",
     "Simulation",
     "Interactive"

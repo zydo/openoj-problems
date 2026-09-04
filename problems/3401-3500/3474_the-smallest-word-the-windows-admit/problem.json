@@ -4,8 +4,13 @@
   "id": 3474,
   "slug": "the-smallest-word-the-windows-admit",
   "title": "The Smallest Word The Windows Admit",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy",
+    "String Matching"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "String Matching"

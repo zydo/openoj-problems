@@ -4,8 +4,11 @@
   "id": 2490,
   "slug": "looping-sentence",
   "title": "Looping Sentence",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

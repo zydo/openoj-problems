@@ -4,11 +4,20 @@
   "id": 1434,
   "slug": "count-locker-assignments",
   "title": "Count Locker Assignments",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask",
+    "Bipartite Graph",
+    "Matching (Graph)",
+    "Perfect Matching"
   ],
   "invocation": {
     "type": "function",

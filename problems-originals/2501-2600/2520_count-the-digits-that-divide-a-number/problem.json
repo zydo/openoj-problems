@@ -4,8 +4,11 @@
   "id": 2520,
   "slug": "count-the-digits-that-divide-a-number",
   "title": "Count the Digits That Divide a Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

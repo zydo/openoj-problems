@@ -4,8 +4,15 @@
   "id": 348,
   "slug": "design-tic-tac-toe",
   "title": "Design Tic-Tac-Toe",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

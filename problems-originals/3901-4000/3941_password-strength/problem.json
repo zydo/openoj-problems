@@ -4,8 +4,12 @@
   "id": 3941,
   "slug": "password-strength",
   "title": "Password Strength",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

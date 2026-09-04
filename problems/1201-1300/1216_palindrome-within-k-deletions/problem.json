@@ -4,11 +4,15 @@
   "id": 1216,
   "slug": "palindrome-within-k-deletions",
   "title": "Palindrome Within k Deletions",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Interval Dp",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

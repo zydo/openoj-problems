@@ -4,8 +4,14 @@
   "id": 411,
   "slug": "minimum-unique-word-abbreviation",
   "title": "Minimum Unique Word Abbreviation",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

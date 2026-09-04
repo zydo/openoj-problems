@@ -3,8 +3,13 @@
   "id": 2312,
   "slug": "selling-pieces-of-wood",
   "title": "Selling Pieces of Wood",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Memoization"

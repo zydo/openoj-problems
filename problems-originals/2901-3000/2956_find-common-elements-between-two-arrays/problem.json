@@ -4,8 +4,12 @@
   "id": 2956,
   "slug": "find-common-elements-between-two-arrays",
   "title": "Find Common Elements Between Two Arrays",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

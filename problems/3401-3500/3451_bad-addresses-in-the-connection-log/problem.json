@@ -4,10 +4,13 @@
   "id": 3451,
   "slug": "bad-addresses-in-the-connection-log",
   "title": "Bad Addresses In The Connection Log",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

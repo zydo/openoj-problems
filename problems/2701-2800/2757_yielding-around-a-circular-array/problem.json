@@ -4,10 +4,15 @@
   "id": 2757,
   "slug": "yielding-around-a-circular-array",
   "title": "Yielding Around A Circular Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Array",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Design",
     "Simulation"
   ],
   "invocation": {

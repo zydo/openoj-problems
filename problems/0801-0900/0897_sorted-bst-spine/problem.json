@@ -4,12 +4,19 @@
   "id": 897,
   "slug": "sorted-bst-spine",
   "title": "Sorted BST Spine",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Stack",
     "Tree",
     "Depth-First Search",
     "Binary Search Tree"
+  ],
+  "topics": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

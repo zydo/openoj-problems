@@ -4,8 +4,12 @@
   "id": 1486,
   "slug": "xor-operation-in-an-array",
   "title": "XOR Operation in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

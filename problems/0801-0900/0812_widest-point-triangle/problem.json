@@ -4,11 +4,17 @@
   "id": 812,
   "slug": "widest-point-triangle",
   "title": "Widest Point Triangle",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2857,
   "slug": "pairs-at-an-exact-xor-distance",
   "title": "Pairs At An Exact XOR Distance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation"

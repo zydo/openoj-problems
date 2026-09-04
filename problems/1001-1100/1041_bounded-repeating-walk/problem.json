@@ -4,9 +4,14 @@
   "id": 1041,
   "slug": "bounded-repeating-walk",
   "title": "Bounded Repeating Walk",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Math",
+    "Simulation"
+  ],
+  "topics": [
+    "Math",
+    "String",
     "Simulation"
   ],
   "invocation": {

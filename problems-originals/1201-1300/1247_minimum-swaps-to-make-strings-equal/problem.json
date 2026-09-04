@@ -4,8 +4,13 @@
   "id": 1247,
   "slug": "minimum-swaps-to-make-strings-equal",
   "title": "Minimum Swaps to Make Strings Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy"

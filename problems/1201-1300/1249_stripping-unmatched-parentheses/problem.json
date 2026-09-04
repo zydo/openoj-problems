@@ -4,8 +4,12 @@
   "id": 1249,
   "slug": "stripping-unmatched-parentheses",
   "title": "Stripping Unmatched Parentheses",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

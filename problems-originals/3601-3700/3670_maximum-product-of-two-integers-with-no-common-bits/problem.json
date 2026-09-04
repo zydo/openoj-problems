@@ -4,8 +4,13 @@
   "id": 3670,
   "slug": "maximum-product-of-two-integers-with-no-common-bits",
   "title": "Maximum Product of Two Integers With No Common Bits",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation"

@@ -4,12 +4,21 @@
   "id": 255,
   "slug": "bst-preorder-check",
   "title": "BST Preorder Check",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Stack",
     "Binary Search Tree",
     "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Tree",
+    "Binary Search Tree",
+    "Recursion",
+    "Monotonic Stack",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

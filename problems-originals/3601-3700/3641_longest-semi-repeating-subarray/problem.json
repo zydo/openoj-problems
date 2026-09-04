@@ -4,8 +4,13 @@
   "id": 3641,
   "slug": "longest-semi-repeating-subarray",
   "title": "Longest Semi-Repeating Subarray",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

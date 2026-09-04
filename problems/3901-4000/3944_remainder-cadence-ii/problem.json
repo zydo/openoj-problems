@@ -4,8 +4,12 @@
   "id": 3944,
   "slug": "remainder-cadence-ii",
   "title": "Remainder Cadence II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

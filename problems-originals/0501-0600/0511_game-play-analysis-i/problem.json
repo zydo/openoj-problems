@@ -4,8 +4,11 @@
   "id": 511,
   "slug": "game-play-analysis-i",
   "title": "Game Play Analysis I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -3,8 +3,13 @@
   "id": 3473,
   "slug": "sum-of-k-subarrays-with-length-at-least-m",
   "title": "Sum of K Subarrays With Length at Least M",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Prefix Sum"
   ],

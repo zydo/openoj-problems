@@ -4,11 +4,20 @@
   "id": 3109,
   "slug": "rank-of-a-permutation",
   "title": "Rank of a Permutation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Combinatorics",
     "Divide and Conquer",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

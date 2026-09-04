@@ -4,8 +4,11 @@
   "id": 276,
   "slug": "paint-fence",
   "title": "Paint Fence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

@@ -4,8 +4,15 @@
   "id": 2790,
   "slug": "maximum-number-of-groups-with-increasing-length",
   "title": "Maximum Number of Groups With Increasing Length",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

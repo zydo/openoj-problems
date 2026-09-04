@@ -4,8 +4,11 @@
   "id": 709,
   "slug": "case-fold-a-string",
   "title": "Case-Fold a String",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 1037,
   "slug": "bent-point-triple",
   "title": "Bent Point Triple",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

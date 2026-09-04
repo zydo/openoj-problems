@@ -4,10 +4,16 @@
   "id": 1600,
   "slug": "the-line-of-succession",
   "title": "The Line Of Succession",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Tree",
+    "Design"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
     "Design"
   ],
   "invocation": {

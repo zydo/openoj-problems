@@ -4,8 +4,15 @@
   "id": 1429,
   "slug": "first-singleton-in-the-queue",
   "title": "First Singleton In The Queue",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "topics": [
+    "Array",
     "Hash Table",
     "Design",
     "Queue",

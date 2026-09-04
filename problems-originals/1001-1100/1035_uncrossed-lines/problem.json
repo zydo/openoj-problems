@@ -3,10 +3,15 @@
   "id": 1035,
   "slug": "uncrossed-lines",
   "title": "Uncrossed Lines",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
   ],
   "invocation": {
     "type": "function",

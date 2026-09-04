@@ -4,8 +4,12 @@
   "id": 3396,
   "slug": "minimum-number-of-operations-to-make-elements-in-array-distinct",
   "title": "Minimum Number of Operations to Make Elements in Array Distinct",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

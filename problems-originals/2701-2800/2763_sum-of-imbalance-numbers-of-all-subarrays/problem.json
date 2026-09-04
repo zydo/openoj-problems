@@ -4,8 +4,13 @@
   "id": 2763,
   "slug": "sum-of-imbalance-numbers-of-all-subarrays",
   "title": "Sum of Imbalance Numbers of All Subarrays",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

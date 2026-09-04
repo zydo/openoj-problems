@@ -4,8 +4,13 @@
   "id": 2390,
   "slug": "erase-on-every-star",
   "title": "Erase on Every Star",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

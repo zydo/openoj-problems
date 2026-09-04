@@ -4,8 +4,13 @@
   "id": 498,
   "slug": "diagonal-traverse",
   "title": "Diagonal Traverse",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

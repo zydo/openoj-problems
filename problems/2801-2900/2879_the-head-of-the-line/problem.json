@@ -4,10 +4,13 @@
   "id": 2879,
   "slug": "the-head-of-the-line",
   "title": "The Head Of The Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

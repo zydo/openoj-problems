@@ -4,8 +4,11 @@
   "id": 1281,
   "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
   "title": "Subtract the Product and Sum of Digits of an Integer",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 2153,
   "slug": "the-number-of-passengers-in-each-bus-ii",
   "title": "The Number of Passengers in Each Bus II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

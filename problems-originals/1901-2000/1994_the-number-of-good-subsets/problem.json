@@ -3,11 +3,22 @@
   "id": 1994,
   "slug": "the-number-of-good-subsets",
   "title": "The Number of Good Subsets",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Counting",
+    "Number Theory",
+    "Bitmask",
+    "Sieve Theory"
   ],
   "invocation": {
     "type": "function",

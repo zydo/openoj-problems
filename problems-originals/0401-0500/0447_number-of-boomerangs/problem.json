@@ -4,8 +4,13 @@
   "id": 447,
   "slug": "number-of-boomerangs",
   "title": "Number of Boomerangs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math"

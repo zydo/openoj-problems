@@ -4,10 +4,15 @@
   "id": 898,
   "slug": "distinct-or-results-of-contiguous-segments",
   "title": "Distinct OR Results of Contiguous Segments",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "Hash Set"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

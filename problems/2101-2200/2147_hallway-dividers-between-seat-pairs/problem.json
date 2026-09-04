@@ -4,8 +4,13 @@
   "id": 2147,
   "slug": "hallway-dividers-between-seat-pairs",
   "title": "Hallway Dividers Between Seat Pairs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming"

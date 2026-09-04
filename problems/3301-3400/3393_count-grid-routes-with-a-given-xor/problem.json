@@ -4,10 +4,16 @@
   "id": 3393,
   "slug": "count-grid-routes-with-a-given-xor",
   "title": "Count Grid Routes With a Given Xor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

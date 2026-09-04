@@ -3,11 +3,18 @@
   "id": 834,
   "slug": "sum-of-distances-in-tree",
   "title": "Sum of Distances in Tree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

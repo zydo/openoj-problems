@@ -4,8 +4,14 @@
   "id": 3581,
   "slug": "count-odd-letters-from-number",
   "title": "Count Odd Letters from Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Simulation",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Simulation",

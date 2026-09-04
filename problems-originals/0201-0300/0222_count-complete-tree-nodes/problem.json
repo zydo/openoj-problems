@@ -3,11 +3,17 @@
   "id": 222,
   "slug": "count-complete-tree-nodes",
   "title": "Count Complete Tree Nodes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Tree",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Binary Search",
+    "Bit Manipulation",
+    "Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

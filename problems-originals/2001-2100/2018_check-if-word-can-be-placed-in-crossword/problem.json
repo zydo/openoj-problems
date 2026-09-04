@@ -4,8 +4,13 @@
   "id": 2018,
   "slug": "check-if-word-can-be-placed-in-crossword",
   "title": "Check if Word Can Be Placed In Crossword",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Enumeration"

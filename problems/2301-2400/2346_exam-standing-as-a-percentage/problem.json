@@ -4,10 +4,13 @@
   "id": 2346,
   "slug": "exam-standing-as-a-percentage",
   "title": "Exam Standing as a Percentage",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

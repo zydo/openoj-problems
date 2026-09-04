@@ -4,8 +4,15 @@
   "id": 3154,
   "slug": "find-number-of-ways-to-reach-the-k-th-stair",
   "title": "Find Number of Ways to Reach the K-th Stair",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Bit Manipulation",

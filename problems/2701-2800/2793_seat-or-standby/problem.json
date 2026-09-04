@@ -4,10 +4,13 @@
   "id": 2793,
   "slug": "seat-or-standby",
   "title": "Seat Or Standby",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

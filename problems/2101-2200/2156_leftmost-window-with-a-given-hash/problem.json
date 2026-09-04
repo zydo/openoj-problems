@@ -4,8 +4,14 @@
   "id": 2156,
   "slug": "leftmost-window-with-a-given-hash",
   "title": "Leftmost Window With a Given Hash",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Sliding Window",
+    "Rolling Hash",
+    "Hash Function"
+  ],
+  "topics": [
     "String",
     "Sliding Window",
     "Rolling Hash",

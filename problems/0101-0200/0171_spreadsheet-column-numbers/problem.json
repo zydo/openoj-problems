@@ -4,8 +4,12 @@
   "id": 171,
   "slug": "spreadsheet-column-numbers",
   "title": "Spreadsheet Column Numbers",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

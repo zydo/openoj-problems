@@ -4,8 +4,12 @@
   "id": 1014,
   "slug": "best-pair-score-with-distance-penalty",
   "title": "Best Pair Score With Distance Penalty",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -4,11 +4,17 @@
   "id": 2024,
   "slug": "longest-uniform-run-after-k-flips",
   "title": "Longest Uniform Run After k Flips",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Sliding Window",
     "Two Pointers"
+  ],
+  "topics": [
+    "String",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

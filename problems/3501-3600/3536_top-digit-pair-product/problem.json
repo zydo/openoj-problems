@@ -4,8 +4,12 @@
   "id": 3536,
   "slug": "top-digit-pair-product",
   "title": "Top Digit Pair Product",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Sorting"
+  ],
+  "topics": [
     "Math",
     "Sorting"
   ],

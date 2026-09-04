@@ -4,9 +4,15 @@
   "id": 1659,
   "slug": "happiest-seating-chart",
   "title": "Happiest Seating Chart",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
+    "Bitmask"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization",
     "Bitmask"
   ],
   "invocation": {

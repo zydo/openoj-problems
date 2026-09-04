@@ -4,10 +4,15 @@
   "id": 3485,
   "slug": "longest-shared-prefix-after-each-deletion",
   "title": "Longest Shared Prefix After Each Deletion",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

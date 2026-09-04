@@ -4,8 +4,12 @@
   "id": 1900,
   "slug": "the-earliest-and-latest-rounds-where-players-compete",
   "title": "The Earliest and Latest Rounds Where Players Compete",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Memoization"
   ],

@@ -4,8 +4,12 @@
   "id": 2484,
   "slug": "count-palindrome-quintets",
   "title": "Count Palindrome Quintets",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

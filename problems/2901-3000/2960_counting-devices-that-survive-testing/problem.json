@@ -4,8 +4,13 @@
   "id": 2960,
   "slug": "counting-devices-that-survive-testing",
   "title": "Counting Devices That Survive Testing",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Simulation",
     "Counting"

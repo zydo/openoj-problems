@@ -4,8 +4,13 @@
   "id": 1914,
   "slug": "cyclically-rotating-a-grid",
   "title": "Cyclically Rotating a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

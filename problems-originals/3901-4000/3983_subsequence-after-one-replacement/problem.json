@@ -4,8 +4,13 @@
   "id": 3983,
   "slug": "subsequence-after-one-replacement",
   "title": "Subsequence After One Replacement",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "String",
+    "Two Pointers",
+    "Greedy"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

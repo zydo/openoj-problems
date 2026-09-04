@@ -3,10 +3,17 @@
   "id": 465,
   "slug": "optimal-account-balancing",
   "title": "Optimal Account Balancing",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Backtracking",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

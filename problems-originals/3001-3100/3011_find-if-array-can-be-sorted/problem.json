@@ -4,8 +4,13 @@
   "id": 3011,
   "slug": "find-if-array-can-be-sorted",
   "title": "Find if Array Can Be Sorted",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Sorting"

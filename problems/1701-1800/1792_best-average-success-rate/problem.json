@@ -4,11 +4,16 @@
   "id": 1792,
   "slug": "best-average-success-rate",
   "title": "Best Average Success Rate",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

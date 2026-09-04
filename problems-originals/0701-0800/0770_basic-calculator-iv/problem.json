@@ -4,8 +4,15 @@
   "id": 770,
   "slug": "basic-calculator-iv",
   "title": "Basic Calculator IV",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

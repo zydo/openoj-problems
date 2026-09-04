@@ -3,10 +3,16 @@
   "id": 1039,
   "slug": "minimum-score-triangulation-of-polygon",
   "title": "Minimum Score Triangulation of Polygon",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Triangulation",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

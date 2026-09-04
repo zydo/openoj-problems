@@ -4,8 +4,11 @@
   "id": 3062,
   "slug": "scoring-the-pair-duels",
   "title": "Scoring The Pair Duels",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

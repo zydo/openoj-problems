@@ -4,8 +4,14 @@
   "id": 954,
   "slug": "array-of-doubled-pairs",
   "title": "Array of Doubled Pairs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

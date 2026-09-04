@@ -4,8 +4,11 @@
   "id": 3061,
   "slug": "calculate-trapping-rain-water",
   "title": "Calculate Trapping Rain Water",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

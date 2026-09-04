@@ -4,8 +4,14 @@
   "id": 3311,
   "slug": "construct-2d-grid-matching-graph-layout",
   "title": "Construct 2D Grid Matching Graph Layout",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Graph Theory",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Graph Theory",

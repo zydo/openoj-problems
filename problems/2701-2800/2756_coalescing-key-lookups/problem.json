@@ -4,9 +4,13 @@
   "id": 2756,
   "slug": "coalescing-key-lookups",
   "title": "Coalescing Key Lookups",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "JavaScript",
+    "Design"
+  ],
+  "topics": [
+    "Concurrency",
     "Design"
   ],
   "invocation": {

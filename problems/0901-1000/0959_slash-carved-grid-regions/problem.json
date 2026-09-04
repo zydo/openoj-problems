@@ -4,12 +4,21 @@
   "id": 959,
   "slug": "slash-carved-grid-regions",
   "title": "Slash-Carved Grid Regions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Depth-First Search",
     "Union-Find",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix",
+    "Planar Graph"
   ],
   "invocation": {
     "type": "function",

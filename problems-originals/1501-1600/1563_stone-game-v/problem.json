@@ -4,8 +4,14 @@
   "id": 1563,
   "slug": "stone-game-v",
   "title": "Stone Game V",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Game Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

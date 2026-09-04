@@ -4,8 +4,13 @@
   "id": 961,
   "slug": "n-repeated-element-in-size-2n-array",
   "title": "N-Repeated Element in Size 2N Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Pigeonhole Principle"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Pigeonhole Principle"

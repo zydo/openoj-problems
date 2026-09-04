@@ -4,8 +4,12 @@
   "id": 216,
   "slug": "combination-sum-iii",
   "title": "Combination Sum III",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Backtracking"
   ],

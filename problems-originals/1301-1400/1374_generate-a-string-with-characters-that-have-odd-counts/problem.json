@@ -4,8 +4,11 @@
   "id": 1374,
   "slug": "generate-a-string-with-characters-that-have-odd-counts",
   "title": "Generate a String With Characters That Have Odd Counts",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

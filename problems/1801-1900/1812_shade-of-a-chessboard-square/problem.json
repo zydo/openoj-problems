@@ -4,8 +4,12 @@
   "id": 1812,
   "slug": "shade-of-a-chessboard-square",
   "title": "Shade of a Chessboard Square",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

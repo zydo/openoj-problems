@@ -4,8 +4,12 @@
   "id": 1,
   "slug": "pair-sum",
   "title": "Pair Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

@@ -4,8 +4,12 @@
   "id": 3146,
   "slug": "permutation-difference-between-two-strings",
   "title": "Permutation Difference between Two Strings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

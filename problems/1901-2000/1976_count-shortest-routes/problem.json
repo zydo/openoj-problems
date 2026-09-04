@@ -4,12 +4,19 @@
   "id": 1976,
   "slug": "count-shortest-routes",
   "title": "Count Shortest Routes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Shortest Path",
     "Heap",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

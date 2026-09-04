@@ -3,11 +3,16 @@
   "id": 1834,
   "slug": "single-threaded-cpu",
   "title": "Single-Threaded CPU",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

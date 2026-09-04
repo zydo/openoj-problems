@@ -4,11 +4,15 @@
   "id": 3991,
   "slug": "a-fixed-menu-of-prefix-flips",
   "title": "A Fixed Menu Of Prefix Flips",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Breadth-First Search",
     "Enumeration"
+  ],
+  "topics": [
+    "Breadth-First Search",
+    "Array"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 1904,
   "slug": "full-rounds-in-a-game-session",
   "title": "Full Rounds in a Game Session",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

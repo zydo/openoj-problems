@@ -4,11 +4,18 @@
   "id": 2538,
   "slug": "rooting-for-the-widest-price-spread",
   "title": "Rooting for the Widest Price Spread",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

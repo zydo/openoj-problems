@@ -4,12 +4,20 @@
   "id": 1793,
   "slug": "best-min-width-product-through-k",
   "title": "Best Min-Width Product Through K",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Two Pointers",
     "Stack",
     "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Stack",
+    "Monotonic Stack",
+    "Cartesian Tree"
   ],
   "invocation": {
     "type": "function",

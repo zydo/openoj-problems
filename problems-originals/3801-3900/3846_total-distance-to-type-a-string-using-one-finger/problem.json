@@ -4,8 +4,12 @@
   "id": 3846,
   "slug": "total-distance-to-type-a-string-using-one-finger",
   "title": "Total Distance to Type a String Using One Finger",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

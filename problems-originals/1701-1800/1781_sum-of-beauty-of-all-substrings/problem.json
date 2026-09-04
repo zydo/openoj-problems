@@ -4,8 +4,13 @@
   "id": 1781,
   "slug": "sum-of-beauty-of-all-substrings",
   "title": "Sum of Beauty of All Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

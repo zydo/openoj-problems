@@ -4,8 +4,15 @@
   "id": 130,
   "slug": "surrounded-regions",
   "title": "Surrounded Regions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

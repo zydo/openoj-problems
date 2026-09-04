@@ -4,8 +4,15 @@
   "id": 379,
   "slug": "design-phone-directory",
   "title": "Design Phone Directory",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Queue"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Linked List",

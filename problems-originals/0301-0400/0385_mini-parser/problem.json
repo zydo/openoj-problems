@@ -4,8 +4,13 @@
   "id": 385,
   "slug": "mini-parser",
   "title": "Mini Parser",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Depth-First Search"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Depth-First Search"

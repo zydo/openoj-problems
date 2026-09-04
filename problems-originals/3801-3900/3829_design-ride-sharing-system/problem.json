@@ -4,8 +4,14 @@
   "id": 3829,
   "slug": "design-ride-sharing-system",
   "title": "Design Ride Sharing System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Queue",

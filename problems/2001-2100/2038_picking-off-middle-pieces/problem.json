@@ -4,8 +4,14 @@
   "id": 2038,
   "slug": "picking-off-middle-pieces",
   "title": "Picking Off Middle Pieces",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Game Theory"
+  ],
+  "topics": [
+    "Math",
     "String",
     "Greedy",
     "Game Theory"

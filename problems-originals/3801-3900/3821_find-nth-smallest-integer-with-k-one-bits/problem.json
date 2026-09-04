@@ -4,8 +4,13 @@
   "id": 3821,
   "slug": "find-nth-smallest-integer-with-k-one-bits",
   "title": "Find Nth Smallest Integer With K One Bits",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Combinatorics"

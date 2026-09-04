@@ -4,10 +4,13 @@
   "id": 2142,
   "slug": "riders-carried-by-each-ferry-i",
   "title": "Riders Carried by Each Ferry I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

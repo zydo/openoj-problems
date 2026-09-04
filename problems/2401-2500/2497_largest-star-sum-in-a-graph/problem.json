@@ -4,13 +4,20 @@
   "id": 2497,
   "slug": "largest-star-sum-in-a-graph",
   "title": "Largest Star Sum in a Graph",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Graph",
     "Sorting",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Graph Theory",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

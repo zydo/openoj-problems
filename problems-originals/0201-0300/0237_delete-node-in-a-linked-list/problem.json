@@ -4,8 +4,11 @@
   "id": 237,
   "slug": "delete-node-in-a-linked-list",
   "title": "Delete Node in a Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

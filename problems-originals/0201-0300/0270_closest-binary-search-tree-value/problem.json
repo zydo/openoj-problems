@@ -4,8 +4,15 @@
   "id": 270,
   "slug": "closest-binary-search-tree-value",
   "title": "Closest Binary Search Tree Value",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Binary Search",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Binary Search",
     "Tree",
     "Depth-First Search",

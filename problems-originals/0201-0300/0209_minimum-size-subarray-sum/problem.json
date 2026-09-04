@@ -3,11 +3,17 @@
   "id": 209,
   "slug": "minimum-size-subarray-sum",
   "title": "Minimum Size Subarray Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window",
     "Two Pointers",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
     "Prefix Sum"
   ],
   "invocation": {

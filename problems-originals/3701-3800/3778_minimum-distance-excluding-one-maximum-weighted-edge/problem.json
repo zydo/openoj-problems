@@ -4,8 +4,12 @@
   "id": 3778,
   "slug": "minimum-distance-excluding-one-maximum-weighted-edge",
   "title": "Minimum Distance Excluding One Maximum Weighted Edge",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Graph Theory",
+    "Shortest Path"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

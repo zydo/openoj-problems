@@ -4,8 +4,12 @@
   "id": 3426,
   "slug": "how-far-apart-the-pieces-sit",
   "title": "How Far Apart The Pieces Sit",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Combinatorics"
   ],

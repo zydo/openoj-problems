@@ -4,9 +4,14 @@
   "id": 217,
   "slug": "any-repeated-value",
   "title": "Any Repeated Value",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,16 @@
   "id": 3327,
   "slug": "check-if-dfs-strings-are-palindromes",
   "title": "Check if DFS Strings Are Palindromes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

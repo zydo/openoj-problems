@@ -4,8 +4,13 @@
   "id": 3830,
   "slug": "longest-alternating-subarray-after-removing-at-most-one-element",
   "title": "Longest Alternating Subarray After Removing At Most One Element",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Enumeration"

@@ -4,8 +4,14 @@
   "id": 3414,
   "slug": "picking-disjoint-weighted-intervals",
   "title": "Picking Disjoint Weighted Intervals",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Dynamic Programming",

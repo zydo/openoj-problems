@@ -4,8 +4,11 @@
   "id": 1069,
   "slug": "product-sales-analysis-ii",
   "title": "Product Sales Analysis II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

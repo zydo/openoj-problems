@@ -4,8 +4,12 @@
   "id": 3677,
   "slug": "how-many-numbers-mirror-in-binary",
   "title": "How Many Numbers Mirror in Binary",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

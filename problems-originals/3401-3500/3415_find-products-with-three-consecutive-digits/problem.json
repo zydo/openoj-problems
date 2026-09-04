@@ -4,8 +4,11 @@
   "id": 3415,
   "slug": "find-products-with-three-consecutive-digits",
   "title": "Find Products with Three Consecutive Digits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

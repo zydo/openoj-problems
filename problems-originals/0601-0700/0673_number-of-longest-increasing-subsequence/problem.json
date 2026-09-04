@@ -4,8 +4,15 @@
   "id": 673,
   "slug": "number-of-longest-increasing-subsequence",
   "title": "Number of Longest Increasing Subsequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Longest Increasing Subsequence"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Binary Indexed Tree",

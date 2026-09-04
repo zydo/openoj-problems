@@ -4,11 +4,16 @@
   "id": 2471,
   "slug": "least-swaps-to-sort-each-tree-level",
   "title": "Least Swaps to Sort Each Tree Level",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "Breadth-First Search",
     "Sorting"
+  ],
+  "topics": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 3808,
   "slug": "find-emotionally-consistent-users",
   "title": "Find Emotionally Consistent Users",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

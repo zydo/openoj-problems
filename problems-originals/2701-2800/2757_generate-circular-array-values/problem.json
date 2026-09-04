@@ -4,8 +4,13 @@
   "id": 2757,
   "slug": "generate-circular-array-values",
   "title": "Generate Circular Array Values",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Array",
+    "Design",
+    "Simulation"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

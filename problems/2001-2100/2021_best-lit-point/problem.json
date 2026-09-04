@@ -4,11 +4,17 @@
   "id": 2021,
   "slug": "best-lit-point",
   "title": "Best-Lit Point",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Prefix Sum",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

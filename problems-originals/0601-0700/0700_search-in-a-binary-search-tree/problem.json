@@ -4,8 +4,13 @@
   "id": 700,
   "slug": "search-in-a-binary-search-tree",
   "title": "Search in a Binary Search Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Search Tree",
     "Binary Tree"

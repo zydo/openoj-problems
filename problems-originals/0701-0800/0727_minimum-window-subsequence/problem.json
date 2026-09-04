@@ -4,8 +4,13 @@
   "id": 727,
   "slug": "minimum-window-subsequence",
   "title": "Minimum Window Subsequence",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Sliding Window"

@@ -4,8 +4,13 @@
   "id": 3158,
   "slug": "xor-of-the-doubled-values",
   "title": "XOR Of The Doubled Values",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation"

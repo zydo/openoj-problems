@@ -4,9 +4,15 @@
   "id": 1095,
   "slug": "search-hidden-mountain-sequence",
   "title": "Search a Hidden Mountain Sequence",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Interactive",
+    "Ternary Search"
   ],
   "invocation": {
     "type": "interactive",

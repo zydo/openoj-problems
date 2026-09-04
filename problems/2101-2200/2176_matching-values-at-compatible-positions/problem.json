@@ -4,8 +4,11 @@
   "id": 2176,
   "slug": "matching-values-at-compatible-positions",
   "title": "Matching Values at Compatible Positions",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

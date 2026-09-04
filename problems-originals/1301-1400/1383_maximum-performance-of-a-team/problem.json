@@ -3,11 +3,17 @@
   "id": 1383,
   "slug": "maximum-performance-of-a-team",
   "title": "Maximum Performance of a Team",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

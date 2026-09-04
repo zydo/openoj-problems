@@ -4,8 +4,12 @@
   "id": 238,
   "slug": "product-of-the-rest",
   "title": "Product Of The Rest",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

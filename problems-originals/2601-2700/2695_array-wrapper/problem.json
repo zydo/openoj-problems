@@ -4,8 +4,12 @@
   "id": 2695,
   "slug": "array-wrapper",
   "title": "Array Wrapper",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array",
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

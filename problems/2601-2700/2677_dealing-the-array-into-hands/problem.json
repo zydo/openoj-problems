@@ -4,9 +4,12 @@
   "id": 2677,
   "slug": "dealing-the-array-into-hands",
   "title": "Dealing The Array Into Hands",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Array"
   ],
   "invocation": {
     "type": "interactive",

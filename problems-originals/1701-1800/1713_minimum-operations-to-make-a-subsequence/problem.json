@@ -3,10 +3,17 @@
   "id": 1713,
   "slug": "minimum-operations-to-make-a-subsequence",
   "title": "Minimum Operations to Make a Subsequence",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Greedy",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

@@ -3,8 +3,13 @@
   "id": 1730,
   "slug": "shortest-path-to-get-food",
   "title": "Shortest Path to Get Food",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

@@ -4,8 +4,12 @@
   "id": 3993,
   "slug": "maximum-value-of-an-alternating-sequence",
   "title": "Maximum Value of an Alternating Sequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Math",
+    "Greedy"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -4,8 +4,13 @@
   "id": 1022,
   "slug": "root-to-leaf-binary-values",
   "title": "Root-to-Leaf Binary Values",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

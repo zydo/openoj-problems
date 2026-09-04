@@ -4,9 +4,14 @@
   "id": 3751,
   "slug": "summing-digit-bends-in-range-i",
   "title": "Summing Digit Bends In A Range I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
+    "Enumeration"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
     "Enumeration"
   ],
   "invocation": {

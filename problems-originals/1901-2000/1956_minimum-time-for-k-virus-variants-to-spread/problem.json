@@ -4,8 +4,17 @@
   "id": 1956,
   "slug": "minimum-time-for-k-virus-variants-to-spread",
   "title": "Minimum Time For K Virus Variants to Spread",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Geometry",
+    "Sliding Window",
+    "Enumeration",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

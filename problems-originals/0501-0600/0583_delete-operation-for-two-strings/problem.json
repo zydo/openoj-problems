@@ -3,10 +3,15 @@
   "id": 583,
   "slug": "delete-operation-for-two-strings",
   "title": "Delete Operation for Two Strings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
   ],
   "invocation": {
     "type": "function",

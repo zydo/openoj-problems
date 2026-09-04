@@ -4,8 +4,12 @@
   "id": 2582,
   "slug": "pass-the-pillow",
   "title": "Pass the Pillow",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

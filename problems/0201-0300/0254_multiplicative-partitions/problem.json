@@ -4,11 +4,15 @@
   "id": 254,
   "slug": "multiplicative-partitions",
   "title": "Multiplicative Partitions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Backtracking",
     "Math",
     "Recursion"
+  ],
+  "topics": [
+    "Backtracking",
+    "Prime Factorization"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2257,
   "slug": "blind-spots-on-the-grid",
   "title": "Blind Spots on the Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

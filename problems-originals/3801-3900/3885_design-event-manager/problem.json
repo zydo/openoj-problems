@@ -4,8 +4,15 @@
   "id": 3885,
   "slug": "design-event-manager",
   "title": "Design Event Manager",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

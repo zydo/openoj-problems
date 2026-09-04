@@ -4,8 +4,14 @@
   "id": 640,
   "slug": "solve-the-equation",
   "title": "Solve the Equation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Simulation",
+    "Linear Algebra"
+  ],
+  "topics": [
     "Math",
     "String",
     "Simulation",

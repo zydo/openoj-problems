@@ -4,8 +4,15 @@
   "id": 3161,
   "slug": "block-placement-queries",
   "title": "Block Placement Queries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Binary Indexed Tree",

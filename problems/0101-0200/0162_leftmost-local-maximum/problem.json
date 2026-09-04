@@ -4,8 +4,12 @@
   "id": 162,
   "slug": "leftmost-local-maximum",
   "title": "Leftmost Local Maximum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

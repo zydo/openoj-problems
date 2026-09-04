@@ -4,12 +4,19 @@
   "id": 1698,
   "slug": "distinct-substring-census",
   "title": "Distinct Substring Census",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Trie",
     "Rolling Hash",
     "Suffix Array"
+  ],
+  "topics": [
+    "String",
+    "Trie",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

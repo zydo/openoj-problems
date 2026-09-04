@@ -4,8 +4,13 @@
   "id": 1266,
   "slug": "checkpoint-tour-time",
   "title": "Checkpoint Tour Time",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

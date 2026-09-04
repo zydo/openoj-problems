@@ -4,8 +4,13 @@
   "id": 1865,
   "slug": "finding-pairs-with-a-certain-sum",
   "title": "Finding Pairs With a Certain Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design"

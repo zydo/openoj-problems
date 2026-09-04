@@ -4,8 +4,13 @@
   "id": 1828,
   "slug": "queries-on-number-of-points-inside-a-circle",
   "title": "Queries on Number of Points Inside a Circle",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

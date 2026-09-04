@@ -4,8 +4,12 @@
   "id": 2733,
   "slug": "neither-minimum-nor-maximum",
   "title": "Neither Minimum nor Maximum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

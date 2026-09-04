@@ -4,8 +4,12 @@
   "id": 2670,
   "slug": "find-the-distinct-difference-array",
   "title": "Find the Distinct Difference Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

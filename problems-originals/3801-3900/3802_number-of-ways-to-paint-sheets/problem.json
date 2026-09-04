@@ -4,8 +4,12 @@
   "id": 3802,
   "slug": "number-of-ways-to-paint-sheets",
   "title": "Number of Ways to Paint Sheets",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Math",
+    "Combinatorics"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

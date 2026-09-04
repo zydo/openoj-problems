@@ -4,8 +4,12 @@
   "id": 121,
   "slug": "best-time-to-buy-and-sell-stock-crawl",
   "title": "Best Time to Buy and Sell Stock",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

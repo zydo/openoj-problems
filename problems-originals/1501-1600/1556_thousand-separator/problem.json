@@ -4,8 +4,11 @@
   "id": 1556,
   "slug": "thousand-separator",
   "title": "Thousand Separator",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

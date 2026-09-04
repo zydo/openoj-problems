@@ -4,8 +4,12 @@
   "id": 2825,
   "slug": "make-string-a-subsequence-using-cyclic-increments",
   "title": "Make String a Subsequence Using Cyclic Increments",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

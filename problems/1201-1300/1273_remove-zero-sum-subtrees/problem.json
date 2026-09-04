@@ -4,11 +4,18 @@
   "id": 1273,
   "slug": "remove-zero-sum-subtrees",
   "title": "Remove Zero-Sum Subtrees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Tree",
     "Depth-First Search",
+    "DP on Trees"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
     "DP on Trees"
   ],
   "invocation": {

@@ -4,11 +4,17 @@
   "id": 3404,
   "slug": "counting-well-spaced-matching-quartets",
   "title": "Counting Well-Spaced Matching Quartets",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

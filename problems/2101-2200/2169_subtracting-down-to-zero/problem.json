@@ -4,8 +4,12 @@
   "id": 2169,
   "slug": "subtracting-down-to-zero",
   "title": "Subtracting Down to Zero",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

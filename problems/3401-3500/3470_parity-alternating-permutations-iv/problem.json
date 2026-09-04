@@ -4,8 +4,14 @@
   "id": 3470,
   "slug": "parity-alternating-permutations-iv",
   "title": "Parity-Alternating Permutations IV",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Combinatorics",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Combinatorics",

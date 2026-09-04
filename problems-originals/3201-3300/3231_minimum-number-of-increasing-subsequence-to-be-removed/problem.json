@@ -3,10 +3,14 @@
   "id": 3231,
   "slug": "minimum-number-of-increasing-subsequence-to-be-removed",
   "title": "Minimum Number of Increasing Subsequence to Be Removed",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

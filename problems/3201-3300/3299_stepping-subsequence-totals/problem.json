@@ -4,8 +4,13 @@
   "id": 3299,
   "slug": "stepping-subsequence-totals",
   "title": "Stepping Subsequence Totals",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

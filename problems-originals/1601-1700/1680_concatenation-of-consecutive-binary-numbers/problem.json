@@ -4,8 +4,13 @@
   "id": 1680,
   "slug": "concatenation-of-consecutive-binary-numbers",
   "title": "Concatenation of Consecutive Binary Numbers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Simulation"

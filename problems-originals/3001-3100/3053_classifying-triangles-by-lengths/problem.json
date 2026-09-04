@@ -4,9 +4,13 @@
   "id": 3053,
   "slug": "classifying-triangles-by-lengths",
   "title": "Classifying Triangles by Lengths",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
     "Database"
+  ],
+  "topics": [
+    "Database",
+    "Polygons"
   ],
   "invocation": {
     "type": "sql",

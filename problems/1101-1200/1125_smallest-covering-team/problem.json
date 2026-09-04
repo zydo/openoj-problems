@@ -4,8 +4,14 @@
   "id": 1125,
   "slug": "smallest-covering-team",
   "title": "Smallest Covering Team",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

@@ -4,10 +4,14 @@
   "id": 1011,
   "slug": "smallest-largest-daily-load",
   "title": "Smallest Largest Daily Load",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

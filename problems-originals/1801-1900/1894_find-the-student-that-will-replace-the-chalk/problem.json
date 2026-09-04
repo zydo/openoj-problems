@@ -4,8 +4,14 @@
   "id": 1894,
   "slug": "find-the-student-that-will-replace-the-chalk",
   "title": "Find the Student that Will Replace the Chalk",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Simulation",

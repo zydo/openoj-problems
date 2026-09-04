@@ -4,11 +4,17 @@
   "id": 2363,
   "slug": "combine-item-weights",
   "title": "Combine Item Weights",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

@@ -4,12 +4,20 @@
   "id": 241,
   "slug": "expression-grouping-values",
   "title": "Expression Grouping Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "String",
     "Divide and Conquer",
     "Recursion"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Recursion",
+    "Memoization",
+    "Bracket Sequences"
   ],
   "invocation": {
     "type": "function",

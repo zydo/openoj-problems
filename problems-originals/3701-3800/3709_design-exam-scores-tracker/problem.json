@@ -4,8 +4,14 @@
   "id": 3709,
   "slug": "design-exam-scores-tracker",
   "title": "Design Exam Scores Tracker",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Design",

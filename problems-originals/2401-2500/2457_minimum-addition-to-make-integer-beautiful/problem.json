@@ -4,8 +4,12 @@
   "id": 2457,
   "slug": "minimum-addition-to-make-integer-beautiful",
   "title": "Minimum Addition to Make Integer Beautiful",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

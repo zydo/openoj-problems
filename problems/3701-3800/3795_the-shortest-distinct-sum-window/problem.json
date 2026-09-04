@@ -4,8 +4,13 @@
   "id": 3795,
   "slug": "the-shortest-distinct-sum-window",
   "title": "The Shortest Distinct-Sum Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

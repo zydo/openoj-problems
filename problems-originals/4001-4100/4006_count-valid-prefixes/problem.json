@@ -4,8 +4,13 @@
   "id": 4006,
   "slug": "count-valid-prefixes",
   "title": "Count Valid Prefixes",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Math",
+    "String",
+    "Counting"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

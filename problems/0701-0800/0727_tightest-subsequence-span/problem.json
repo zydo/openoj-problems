@@ -4,8 +4,13 @@
   "id": 727,
   "slug": "tightest-subsequence-span",
   "title": "Tightest Subsequence Span",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Sliding Window"

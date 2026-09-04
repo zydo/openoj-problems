@@ -4,10 +4,19 @@
   "id": 1157,
   "slug": "range-majority-queries",
   "title": "Range Majority Queries",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sqrt Decomposition",
+    "Boyer–Moore Majority Vote Algorithm"
   ],
   "invocation": {
     "type": "design",

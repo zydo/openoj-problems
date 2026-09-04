@@ -3,10 +3,16 @@
   "id": 1004,
   "slug": "max-consecutive-ones-iii",
   "title": "Max Consecutive Ones III",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

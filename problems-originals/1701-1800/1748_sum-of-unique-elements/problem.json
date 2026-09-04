@@ -4,8 +4,13 @@
   "id": 1748,
   "slug": "sum-of-unique-elements",
   "title": "Sum of Unique Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

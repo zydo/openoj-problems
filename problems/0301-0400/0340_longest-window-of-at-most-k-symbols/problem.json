@@ -4,11 +4,16 @@
   "id": 340,
   "slug": "longest-window-of-at-most-k-symbols",
   "title": "Longest Window of At Most K Symbols",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Hash Table",
     "Two Pointers"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

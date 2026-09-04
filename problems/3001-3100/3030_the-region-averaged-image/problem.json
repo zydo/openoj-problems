@@ -4,8 +4,12 @@
   "id": 3030,
   "slug": "the-region-averaged-image",
   "title": "The Region-Averaged Image",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

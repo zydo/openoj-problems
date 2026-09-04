@@ -3,11 +3,17 @@
   "id": 3454,
   "slug": "separate-squares-ii",
   "title": "Separate Squares II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Geometry",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Segment Tree",
+    "Sweep Line"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3980,
   "slug": "minimum-operations-to-transform-binary-string",
   "title": "Minimum Operations to Transform Binary String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "String",
+    "Greedy",
+    "Dynamic Programming"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

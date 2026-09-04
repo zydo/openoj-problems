@@ -4,10 +4,13 @@
   "id": 1241,
   "slug": "replies-per-topic",
   "title": "Replies per Topic",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

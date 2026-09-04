@@ -4,11 +4,18 @@
   "id": 474,
   "slug": "most-strings-within-bit-budgets",
   "title": "Most Strings Within Bit Budgets",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

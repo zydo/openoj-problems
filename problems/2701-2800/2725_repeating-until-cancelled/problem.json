@@ -4,9 +4,12 @@
   "id": 2725,
   "slug": "repeating-until-cancelled",
   "title": "Repeating Until Cancelled",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Concurrency"
   ],
   "invocation": {
     "type": "interactive",

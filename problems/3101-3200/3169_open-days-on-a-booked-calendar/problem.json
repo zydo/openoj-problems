@@ -4,8 +4,12 @@
   "id": 3169,
   "slug": "open-days-on-a-booked-calendar",
   "title": "Open Days On A Booked Calendar",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

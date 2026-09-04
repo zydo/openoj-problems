@@ -4,8 +4,13 @@
   "id": 1331,
   "slug": "rank-transform-of-an-array",
   "title": "Rank Transform of an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

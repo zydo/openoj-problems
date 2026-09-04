@@ -4,8 +4,14 @@
   "id": 2915,
   "slug": "length-of-the-longest-subsequence-that-sums-to-target",
   "title": "Length of the Longest Subsequence That Sums to Target",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Knapsack Problem",

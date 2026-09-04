@@ -4,12 +4,20 @@
   "id": 3362,
   "slug": "queries-to-spare-while-zeroing",
   "title": "Queries To Spare While Zeroing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

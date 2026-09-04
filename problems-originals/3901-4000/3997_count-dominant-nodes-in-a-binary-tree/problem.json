@@ -4,8 +4,13 @@
   "id": 3997,
   "slug": "count-dominant-nodes-in-a-binary-tree",
   "title": "Count Dominant Nodes in a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Tree",
+    "Binary Tree",
+    "Depth-First Search"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

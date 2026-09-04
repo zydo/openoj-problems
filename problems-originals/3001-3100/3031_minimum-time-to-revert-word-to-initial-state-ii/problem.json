@@ -4,8 +4,14 @@
   "id": 3031,
   "slug": "minimum-time-to-revert-word-to-initial-state-ii",
   "title": "Minimum Time to Revert Word to Initial State II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "topics": [
     "String",
     "Rolling Hash",
     "String Matching",

@@ -4,8 +4,13 @@
   "id": 232,
   "slug": "queue-built-from-stacks",
   "title": "Queue Built From Stacks",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Stack",
+    "Design",
+    "Queue"
+  ],
+  "topics": [
     "Stack",
     "Design",
     "Queue"

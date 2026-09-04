@@ -4,8 +4,12 @@
   "id": 842,
   "slug": "split-array-into-fibonacci-sequence",
   "title": "Split Array into Fibonacci Sequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "String",
     "Backtracking"
   ],

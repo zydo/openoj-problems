@@ -4,8 +4,12 @@
   "id": 2843,
   "slug": "count-symmetric-integers",
   "title": "Count Symmetric Integers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

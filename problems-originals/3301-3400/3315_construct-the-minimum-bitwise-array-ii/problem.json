@@ -4,8 +4,12 @@
   "id": 3315,
   "slug": "construct-the-minimum-bitwise-array-ii",
   "title": "Construct the Minimum Bitwise Array II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

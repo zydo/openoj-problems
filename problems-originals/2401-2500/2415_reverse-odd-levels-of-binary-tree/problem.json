@@ -4,8 +4,14 @@
   "id": 2415,
   "slug": "reverse-odd-levels-of-binary-tree",
   "title": "Reverse Odd Levels of Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

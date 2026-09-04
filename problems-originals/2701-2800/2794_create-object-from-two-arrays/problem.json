@@ -4,8 +4,12 @@
   "id": 2794,
   "slug": "create-object-from-two-arrays",
   "title": "Create Object from Two Arrays",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array",
+    "Hash Table"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

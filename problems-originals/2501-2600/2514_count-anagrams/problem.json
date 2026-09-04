@@ -4,8 +4,16 @@
   "id": 2514,
   "slug": "count-anagrams",
   "title": "Count Anagrams",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting",
+    "Fermat's Little Theorem"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

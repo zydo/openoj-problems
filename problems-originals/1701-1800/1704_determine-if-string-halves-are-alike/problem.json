@@ -4,8 +4,12 @@
   "id": 1704,
   "slug": "determine-if-string-halves-are-alike",
   "title": "Determine if String Halves Are Alike",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Counting"
   ],

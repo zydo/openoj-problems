@@ -3,9 +3,15 @@
   "id": 1924,
   "slug": "erect-the-fence-ii",
   "title": "Erect the Fence II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Minimum Enclosing Circle"
   ],
   "invocation": {
     "type": "function",

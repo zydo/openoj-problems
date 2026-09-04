@@ -4,8 +4,13 @@
   "id": 1298,
   "slug": "candy-harvest-from-boxes",
   "title": "Candy Harvest From Sealed Boxes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Graph Theory"

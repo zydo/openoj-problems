@@ -4,8 +4,18 @@
   "id": 683,
   "slug": "k-empty-slots",
   "title": "K Empty Slots",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Ordered Set",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Binary Indexed Tree",
     "Segment Tree",

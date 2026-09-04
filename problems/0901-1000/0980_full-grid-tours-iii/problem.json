@@ -4,12 +4,19 @@
   "id": 980,
   "slug": "full-grid-tours-iii",
   "title": "Full Grid Tours III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Backtracking",
     "Bit Manipulation",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Matrix",
+    "Hamiltonian Path"
   ],
   "invocation": {
     "type": "function",

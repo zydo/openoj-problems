@@ -4,8 +4,13 @@
   "id": 1969,
   "slug": "minimum-non-zero-product-of-the-array-elements",
   "title": "Minimum Non-Zero Product of the Array Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Recursion"

@@ -4,8 +4,11 @@
   "id": 627,
   "slug": "swap-sex-of-employees",
   "title": "Swap Sex of Employees",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

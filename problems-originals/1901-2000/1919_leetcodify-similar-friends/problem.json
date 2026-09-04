@@ -4,8 +4,11 @@
   "id": 1919,
   "slug": "leetcodify-similar-friends",
   "title": "Leetcodify Similar Friends",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

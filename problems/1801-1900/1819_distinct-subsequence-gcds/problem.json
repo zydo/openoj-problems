@@ -4,9 +4,17 @@
   "id": 1819,
   "slug": "distinct-subsequence-gcds",
   "title": "Distinct Subsequence GCDs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Counting",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

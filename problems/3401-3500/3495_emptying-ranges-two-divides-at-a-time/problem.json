@@ -4,8 +4,13 @@
   "id": 3495,
   "slug": "emptying-ranges-two-divides-at-a-time",
   "title": "Emptying Ranges Two Divides At A Time",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation"

@@ -4,8 +4,13 @@
   "id": 2160,
   "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
   "title": "Minimum Sum of Four Digit Number After Splitting Digits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Sorting"

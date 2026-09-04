@@ -4,8 +4,13 @@
   "id": 1983,
   "slug": "longest-equal-sum-span",
   "title": "Longest Equal-Sum Span",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

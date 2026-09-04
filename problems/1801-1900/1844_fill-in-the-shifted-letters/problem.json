@@ -4,8 +4,11 @@
   "id": 1844,
   "slug": "fill-in-the-shifted-letters",
   "title": "Fill In the Shifted Letters",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

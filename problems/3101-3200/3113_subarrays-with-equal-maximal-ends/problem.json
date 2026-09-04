@@ -4,10 +4,16 @@
   "id": 3113,
   "slug": "subarrays-with-equal-maximal-ends",
   "title": "Subarrays with Equal Maximal Ends",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Stack",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

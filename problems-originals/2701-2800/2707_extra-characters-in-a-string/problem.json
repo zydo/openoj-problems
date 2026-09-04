@@ -4,8 +4,15 @@
   "id": 2707,
   "slug": "extra-characters-in-a-string",
   "title": "Extra Characters in a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

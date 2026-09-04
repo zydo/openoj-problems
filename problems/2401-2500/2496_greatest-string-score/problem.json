@@ -4,8 +4,12 @@
   "id": 2496,
   "slug": "greatest-string-score",
   "title": "Greatest String Score",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

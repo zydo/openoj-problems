@@ -4,8 +4,14 @@
   "id": 3577,
   "slug": "count-the-number-of-computer-unlocking-permutations",
   "title": "Count the Number of Computer Unlocking Permutations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Brainteaser",
+    "Combinatorics"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Brainteaser",

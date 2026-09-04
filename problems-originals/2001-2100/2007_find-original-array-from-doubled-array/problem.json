@@ -4,8 +4,14 @@
   "id": 2007,
   "slug": "find-original-array-from-doubled-array",
   "title": "Find Original Array From Doubled Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

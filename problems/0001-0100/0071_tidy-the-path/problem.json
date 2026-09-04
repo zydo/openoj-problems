@@ -4,8 +4,12 @@
   "id": 71,
   "slug": "tidy-the-path",
   "title": "Tidy The Path",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

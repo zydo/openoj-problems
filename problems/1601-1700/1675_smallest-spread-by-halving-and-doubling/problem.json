@@ -4,11 +4,17 @@
   "id": 1675,
   "slug": "smallest-spread-by-halving-and-doubling",
   "title": "Smallest Spread by Halving and Doubling",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Greedy",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,18 @@
   "id": 3241,
   "slug": "marking-spread-times-on-a-tree",
   "title": "Marking Spread Times on a Tree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

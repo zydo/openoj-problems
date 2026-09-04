@@ -4,8 +4,13 @@
   "id": 388,
   "slug": "longest-absolute-file-path",
   "title": "Longest Absolute File Path",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Depth-First Search"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Depth-First Search"

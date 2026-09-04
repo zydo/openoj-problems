@@ -4,11 +4,17 @@
   "id": 641,
   "slug": "ring-deque",
   "title": "Ring Deque",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Design",
     "Linked List",
+    "Queue"
+  ],
+  "topics": [
+    "Array",
+    "Linked List",
+    "Design",
     "Queue"
   ],
   "invocation": {

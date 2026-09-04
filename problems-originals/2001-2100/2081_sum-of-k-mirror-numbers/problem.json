@@ -4,8 +4,12 @@
   "id": 2081,
   "slug": "sum-of-k-mirror-numbers",
   "title": "Sum of k-Mirror Numbers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

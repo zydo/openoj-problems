@@ -4,8 +4,15 @@
   "id": 431,
   "slug": "encode-n-ary-tree-to-binary-tree",
   "title": "Encode N-ary Tree to Binary Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

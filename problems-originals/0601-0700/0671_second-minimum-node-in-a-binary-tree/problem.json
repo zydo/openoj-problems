@@ -4,8 +4,13 @@
   "id": 671,
   "slug": "second-minimum-node-in-a-binary-tree",
   "title": "Second Minimum Node In a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

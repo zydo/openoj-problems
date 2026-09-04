@@ -4,8 +4,14 @@
   "id": 2352,
   "slug": "identical-rows-and-columns",
   "title": "Identical Rows and Columns",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix",

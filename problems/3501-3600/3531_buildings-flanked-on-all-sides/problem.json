@@ -4,10 +4,15 @@
   "id": 3531,
   "slug": "buildings-flanked-on-all-sides",
   "title": "Buildings Flanked On All Sides",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

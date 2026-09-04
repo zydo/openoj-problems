@@ -4,8 +4,15 @@
   "id": 321,
   "slug": "create-maximum-number",
   "title": "Create Maximum Number",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Stack",

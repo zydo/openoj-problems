@@ -4,8 +4,12 @@
   "id": 3083,
   "slug": "existence-of-a-substring-in-a-string-and-its-reverse",
   "title": "Existence of a Substring in a String and Its Reverse",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

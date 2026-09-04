@@ -4,8 +4,13 @@
   "id": 1464,
   "slug": "largest-adjusted-pair-product",
   "title": "Largest Adjusted Pair Product",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)"

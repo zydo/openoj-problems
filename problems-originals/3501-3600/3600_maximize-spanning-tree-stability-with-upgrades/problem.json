@@ -3,11 +3,18 @@
   "id": 3600,
   "slug": "maximize-spanning-tree-stability-with-upgrades",
   "title": "Maximize Spanning Tree Stability with Upgrades",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Minimum Spanning Tree",
     "Binary Search",
     "Union Find"
+  ],
+  "topics": [
+    "Binary Search",
+    "Greedy",
+    "Union-Find",
+    "Graph Theory",
+    "Minimum Spanning Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,18 @@
   "id": 3023,
   "slug": "first-pattern-match-in-a-bit-stream",
   "title": "First Pattern Match in a Bit Stream",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "KMP"
+  ],
+  "topics": [
+    "Array",
+    "Sliding Window",
+    "Rolling Hash",
+    "String Matching",
+    "Interactive",
+    "Hash Function"
   ],
   "invocation": {
     "type": "interactive",

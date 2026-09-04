@@ -4,8 +4,14 @@
   "id": 2273,
   "slug": "find-resultant-array-after-removing-anagrams",
   "title": "Find Resultant Array After Removing Anagrams",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

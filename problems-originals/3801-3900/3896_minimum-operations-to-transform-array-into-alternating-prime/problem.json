@@ -4,8 +4,16 @@
   "id": 3896,
   "slug": "minimum-operations-to-transform-array-into-alternating-prime",
   "title": "Minimum Operations to Transform Array into Alternating Prime",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers",

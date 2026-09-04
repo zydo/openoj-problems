@@ -4,8 +4,12 @@
   "id": 3644,
   "slug": "maximum-k-to-sort-a-permutation",
   "title": "Maximum K to Sort a Permutation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

@@ -4,8 +4,16 @@
   "id": 3589,
   "slug": "count-prime-gap-balanced-subarrays",
   "title": "Count Prime-Gap Balanced Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Queue",
+    "Sliding Window",
+    "Number Theory",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Queue",

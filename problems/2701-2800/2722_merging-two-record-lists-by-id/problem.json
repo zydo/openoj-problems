@@ -4,11 +4,16 @@
   "id": 2722,
   "slug": "merging-two-record-lists-by-id",
   "title": "Merging Two Record Lists By Id",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
   ],
   "invocation": {
     "type": "interactive",

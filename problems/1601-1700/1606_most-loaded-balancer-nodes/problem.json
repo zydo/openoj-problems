@@ -4,8 +4,14 @@
   "id": 1606,
   "slug": "most-loaded-balancer-nodes",
   "title": "Most-Loaded Balancer Nodes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Heap (Priority Queue)",
     "Simulation",

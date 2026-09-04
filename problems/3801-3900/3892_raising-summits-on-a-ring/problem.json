@@ -4,8 +4,12 @@
   "id": 3892,
   "slug": "raising-summits-on-a-ring",
   "title": "Raising Summits on a Ring",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

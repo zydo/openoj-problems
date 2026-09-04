@@ -4,8 +4,12 @@
   "id": 796,
   "slug": "cyclic-shift-match",
   "title": "Cyclic Shift Match",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "String Matching"
+  ],
+  "topics": [
     "String",
     "String Matching"
   ],

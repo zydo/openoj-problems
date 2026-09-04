@@ -4,8 +4,13 @@
   "id": 405,
   "slug": "convert-a-number-to-hexadecimal",
   "title": "Convert a Number to Hexadecimal",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Bit Manipulation"

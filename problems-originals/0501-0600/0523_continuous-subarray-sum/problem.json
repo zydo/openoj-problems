@@ -4,8 +4,15 @@
   "id": 523,
   "slug": "continuous-subarray-sum",
   "title": "Continuous Subarray Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Prefix Sum",
+    "Pigeonhole Principle"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

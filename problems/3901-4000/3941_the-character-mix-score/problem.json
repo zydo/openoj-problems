@@ -4,8 +4,12 @@
   "id": 3941,
   "slug": "the-character-mix-score",
   "title": "The Character Mix Score",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

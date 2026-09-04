@@ -4,8 +4,12 @@
   "id": 2243,
   "slug": "the-settling-digit-string",
   "title": "The Settling Digit String",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

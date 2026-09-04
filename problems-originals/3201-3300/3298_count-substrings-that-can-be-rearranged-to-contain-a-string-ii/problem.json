@@ -4,8 +4,13 @@
   "id": 3298,
   "slug": "count-substrings-that-can-be-rearranged-to-contain-a-string-ii",
   "title": "Count Substrings That Can Be Rearranged to Contain a String II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

@@ -4,8 +4,12 @@
   "id": 2829,
   "slug": "the-leanest-pair-free-array",
   "title": "The Leanest Pair-Free Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

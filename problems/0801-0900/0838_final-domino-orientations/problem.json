@@ -4,10 +4,15 @@
   "id": 838,
   "slug": "final-domino-orientations",
   "title": "Final Domino Orientations",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Two Pointers",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
     "Dynamic Programming"
   ],
   "invocation": {

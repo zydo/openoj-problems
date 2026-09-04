@@ -3,10 +3,15 @@
   "id": 1000,
   "slug": "minimum-cost-to-merge-stones",
   "title": "Minimum Cost to Merge Stones",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

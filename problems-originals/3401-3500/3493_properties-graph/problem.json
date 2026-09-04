@@ -4,8 +4,16 @@
   "id": 3493,
   "slug": "properties-graph",
   "title": "Properties Graph",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Depth-First Search",

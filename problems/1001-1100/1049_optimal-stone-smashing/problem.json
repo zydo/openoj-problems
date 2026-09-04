@@ -4,9 +4,15 @@
   "id": 1049,
   "slug": "optimal-stone-smashing",
   "title": "Optimal Stone Smashing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

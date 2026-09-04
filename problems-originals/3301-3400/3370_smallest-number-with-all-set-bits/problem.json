@@ -4,8 +4,12 @@
   "id": 3370,
   "slug": "smallest-number-with-all-set-bits",
   "title": "Smallest Number With All Set Bits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

@@ -4,8 +4,12 @@
   "id": 3741,
   "slug": "the-tightest-equal-value-triple-ii",
   "title": "The Tightest Equal-Value Triple II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

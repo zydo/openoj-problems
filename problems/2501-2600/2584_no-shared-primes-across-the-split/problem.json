@@ -4,10 +4,17 @@
   "id": 2584,
   "slug": "no-shared-primes-across-the-split",
   "title": "No Shared Primes Across the Split",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
+    "Number Theory",
+    "Prime Factorization"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
     "Number Theory",
     "Prime Factorization"
   ],

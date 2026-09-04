@@ -4,8 +4,11 @@
   "id": 585,
   "slug": "investments-in-2016",
   "title": "Investments in 2016",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

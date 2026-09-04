@@ -4,10 +4,13 @@
   "id": 1393,
   "slug": "realized-gains-per-asset",
   "title": "Realized Gains per Asset",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

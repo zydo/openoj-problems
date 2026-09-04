@@ -4,8 +4,13 @@
   "id": 2287,
   "slug": "how-many-copies-can-you-spell",
   "title": "How Many Copies Can You Spell?",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

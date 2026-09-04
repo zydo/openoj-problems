@@ -4,11 +4,15 @@
   "id": 1931,
   "slug": "count-proper-grid-colorings",
   "title": "Count Proper Grid Colorings",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask Dp",
     "Matrix Exponentiation"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Graph Coloring"
   ],
   "invocation": {
     "type": "function",

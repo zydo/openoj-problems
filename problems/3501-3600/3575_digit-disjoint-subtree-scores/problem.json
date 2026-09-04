@@ -4,11 +4,19 @@
   "id": 3575,
   "slug": "digit-disjoint-subtree-scores",
   "title": "Digit-Disjoint Subtree Scores",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree DP",
     "Bitmask DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

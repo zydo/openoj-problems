@@ -4,10 +4,13 @@
   "id": 262,
   "slug": "ride-cancellation-rates",
   "title": "Ride Cancellation Rates",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

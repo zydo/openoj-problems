@@ -4,12 +4,22 @@
   "id": 1062,
   "slug": "longest-duplicated-slice",
   "title": "Longest Duplicated Slice",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Binary Search",
     "Dynamic Programming",
     "Rolling Hash"
+  ],
+  "topics": [
+    "String",
+    "Binary Search",
+    "Dynamic Programming",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function",
+    "Suffix Automaton",
+    "Suffix Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2404,
   "slug": "most-frequent-even-element",
   "title": "Most Frequent Even Element",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

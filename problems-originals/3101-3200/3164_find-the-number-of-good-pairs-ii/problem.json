@@ -4,8 +4,12 @@
   "id": 3164,
   "slug": "find-the-number-of-good-pairs-ii",
   "title": "Find the Number of Good Pairs II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

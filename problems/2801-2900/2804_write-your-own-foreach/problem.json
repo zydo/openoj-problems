@@ -4,9 +4,12 @@
   "id": 2804,
   "slug": "write-your-own-foreach",
   "title": "Write Your Own ForEach",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

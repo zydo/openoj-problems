@@ -4,8 +4,11 @@
   "id": 551,
   "slug": "perfect-attendance-log-i",
   "title": "Perfect Attendance Log I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

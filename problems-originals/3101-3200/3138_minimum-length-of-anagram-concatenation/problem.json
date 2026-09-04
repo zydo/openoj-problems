@@ -4,8 +4,13 @@
   "id": 3138,
   "slug": "minimum-length-of-anagram-concatenation",
   "title": "Minimum Length of Anagram Concatenation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

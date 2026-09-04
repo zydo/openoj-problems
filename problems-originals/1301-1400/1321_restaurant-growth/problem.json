@@ -4,8 +4,11 @@
   "id": 1321,
   "slug": "restaurant-growth",
   "title": "Restaurant Growth",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

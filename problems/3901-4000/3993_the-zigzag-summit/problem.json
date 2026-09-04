@@ -4,8 +4,12 @@
   "id": 3993,
   "slug": "the-zigzag-summit",
   "title": "The Zigzag Summit",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

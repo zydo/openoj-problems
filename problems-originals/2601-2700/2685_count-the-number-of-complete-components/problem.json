@@ -4,8 +4,14 @@
   "id": 2685,
   "slug": "count-the-number-of-complete-components",
   "title": "Count the Number of Complete Components",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

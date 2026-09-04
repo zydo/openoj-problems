@@ -4,8 +4,12 @@
   "id": 1089,
   "slug": "duplicate-zeros",
   "title": "Duplicate Zeros",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

@@ -4,8 +4,13 @@
   "id": 74,
   "slug": "search-a-2d-matrix",
   "title": "Search a 2D Matrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Matrix"

@@ -4,8 +4,14 @@
   "id": 1059,
   "slug": "all-paths-from-source-lead-to-destination",
   "title": "All Paths from Source Lead to Destination",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Topological Sort",
+    "Kosaraju's Algorithm",
+    "Tarjan's SCC Algorithm"
+  ],
+  "topics": [
     "Graph Theory",
     "Topological Sort",
     "Kosaraju's Algorithm",

@@ -4,10 +4,13 @@
   "id": 3617,
   "slug": "crop-rotation-routines",
   "title": "Crop Rotation Routines",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

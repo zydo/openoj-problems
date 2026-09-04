@@ -3,11 +3,19 @@
   "id": 753,
   "slug": "cracking-the-safe",
   "title": "Cracking the Safe",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "DFS",
     "Backtracking"
+  ],
+  "topics": [
+    "String",
+    "Depth-First Search",
+    "Graph Theory",
+    "Eulerian Circuit",
+    "Eulerian Path",
+    "Eulerian Graph"
   ],
   "invocation": {
     "type": "function",

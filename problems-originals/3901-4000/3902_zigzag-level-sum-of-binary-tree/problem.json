@@ -4,8 +4,13 @@
   "id": 3902,
   "slug": "zigzag-level-sum-of-binary-tree",
   "title": "Zigzag Level Sum of Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

@@ -4,11 +4,17 @@
   "id": 3092,
   "slug": "peak-count-after-every-step",
   "title": "Peak Count After Every Step",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

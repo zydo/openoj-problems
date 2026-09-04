@@ -4,8 +4,12 @@
   "id": 3018,
   "slug": "serving-the-most-end-queries-i",
   "title": "Serving The Most End Queries I",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

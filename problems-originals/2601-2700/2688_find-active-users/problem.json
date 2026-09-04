@@ -4,8 +4,11 @@
   "id": 2688,
   "slug": "find-active-users",
   "title": "Find Active Users",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

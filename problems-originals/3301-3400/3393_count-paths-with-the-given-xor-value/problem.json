@@ -3,10 +3,16 @@
   "id": 3393,
   "slug": "count-paths-with-the-given-xor-value",
   "title": "Count Paths With the Given XOR Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

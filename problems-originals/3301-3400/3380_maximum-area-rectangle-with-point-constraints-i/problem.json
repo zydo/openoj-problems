@@ -4,8 +4,17 @@
   "id": 3380,
   "slug": "maximum-area-rectangle-with-point-constraints-i",
   "title": "Maximum Area Rectangle With Point Constraints I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Geometry",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Indexed Tree",

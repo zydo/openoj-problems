@@ -4,8 +4,13 @@
   "id": 1995,
   "slug": "count-special-quadruplets",
   "title": "Count Special Quadruplets",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

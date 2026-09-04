@@ -4,8 +4,14 @@
   "id": 1618,
   "slug": "maximum-font-to-fit-a-sentence-in-a-screen",
   "title": "Maximum Font to Fit a Sentence in a Screen",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Interactive"
+  ],
+  "topics": [
     "Array",
     "String",
     "Binary Search",

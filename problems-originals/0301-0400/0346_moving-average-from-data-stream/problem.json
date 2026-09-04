@@ -4,8 +4,14 @@
   "id": 346,
   "slug": "moving-average-from-data-stream",
   "title": "Moving Average from Data Stream",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "topics": [
     "Array",
     "Design",
     "Queue",

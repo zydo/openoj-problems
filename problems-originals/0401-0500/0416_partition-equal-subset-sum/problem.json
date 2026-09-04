@@ -3,10 +3,16 @@
   "id": 416,
   "slug": "partition-equal-subset-sum",
   "title": "Partition Equal Subset Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

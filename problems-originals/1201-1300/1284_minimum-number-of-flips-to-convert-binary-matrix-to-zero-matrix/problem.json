@@ -4,8 +4,15 @@
   "id": 1284,
   "slug": "minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix",
   "title": "Minimum Number of Flips to Convert Binary Matrix to Zero Matrix",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

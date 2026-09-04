@@ -4,8 +4,13 @@
   "id": 3294,
   "slug": "unrolling-a-doubly-list-from-any-node",
   "title": "Unrolling A Doubly List From Any Node",
-  "difficulty": "H1",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Linked List",
+    "Doubly-Linked List"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Doubly-Linked List"

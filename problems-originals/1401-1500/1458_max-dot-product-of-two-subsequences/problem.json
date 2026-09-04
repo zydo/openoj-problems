@@ -4,8 +4,13 @@
   "id": 1458,
   "slug": "max-dot-product-of-two-subsequences",
   "title": "Max Dot Product of Two Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Longest Common Subsequence"

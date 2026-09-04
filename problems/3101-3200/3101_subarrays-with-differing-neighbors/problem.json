@@ -4,10 +4,14 @@
   "id": 3101,
   "slug": "subarrays-with-differing-neighbors",
   "title": "Subarrays With Differing Neighbors",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Math"
   ],
   "invocation": {
     "type": "function",

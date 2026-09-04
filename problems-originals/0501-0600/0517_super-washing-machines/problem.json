@@ -4,8 +4,12 @@
   "id": 517,
   "slug": "super-washing-machines",
   "title": "Super Washing Machines",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

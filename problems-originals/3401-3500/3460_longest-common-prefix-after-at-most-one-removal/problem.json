@@ -4,8 +4,12 @@
   "id": 3460,
   "slug": "longest-common-prefix-after-at-most-one-removal",
   "title": "Longest Common Prefix After at Most One Removal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

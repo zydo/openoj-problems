@@ -4,8 +4,13 @@
   "id": 2400,
   "slug": "step-orders-that-land-on-target",
   "title": "Step Orders That Land on Target",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Combinatorics"

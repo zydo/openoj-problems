@@ -4,8 +4,13 @@
   "id": 506,
   "slug": "relative-ranks",
   "title": "Relative Ranks",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)"

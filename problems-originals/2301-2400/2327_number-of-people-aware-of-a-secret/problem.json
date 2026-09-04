@@ -3,8 +3,13 @@
   "id": 2327,
   "slug": "number-of-people-aware-of-a-secret",
   "title": "Number of People Aware of a Secret",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Queue",
+    "Simulation"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Queue",
     "Simulation"

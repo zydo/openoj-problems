@@ -4,8 +4,12 @@
   "id": 1689,
   "slug": "fewest-zero-one-summands-making-a-number",
   "title": "Fewest Zero-One Summands Making a Number",
-  "difficulty": "H1",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

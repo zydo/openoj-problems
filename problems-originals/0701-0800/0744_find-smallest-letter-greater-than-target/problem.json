@@ -4,8 +4,12 @@
   "id": 744,
   "slug": "find-smallest-letter-greater-than-target",
   "title": "Find Smallest Letter Greater Than Target",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

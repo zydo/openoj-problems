@@ -4,8 +4,12 @@
   "id": 1018,
   "slug": "prefix-divisibility-by-five",
   "title": "Prefix Divisibility By Five",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

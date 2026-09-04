@@ -4,8 +4,12 @@
   "id": 2740,
   "slug": "find-the-value-of-the-partition",
   "title": "Find the Value of the Partition",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

@@ -4,8 +4,11 @@
   "id": 468,
   "slug": "validate-ip-address",
   "title": "Validate IP Address",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

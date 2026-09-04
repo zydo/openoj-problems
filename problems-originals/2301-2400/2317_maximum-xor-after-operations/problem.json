@@ -4,8 +4,13 @@
   "id": 2317,
   "slug": "maximum-xor-after-operations",
   "title": "Maximum XOR After Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation"

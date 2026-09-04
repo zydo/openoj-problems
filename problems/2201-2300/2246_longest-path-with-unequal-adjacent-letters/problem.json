@@ -4,11 +4,19 @@
   "id": 2246,
   "slug": "longest-path-with-unequal-adjacent-letters",
   "title": "Longest Path With Unequal Adjacent Letters",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,21 @@
   "id": 1810,
   "slug": "cheapest-route-in-a-hidden-maze",
   "title": "Cheapest Route in a Hidden Maze",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "DFS",
     "Shortest Path",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Interactive",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "interactive",

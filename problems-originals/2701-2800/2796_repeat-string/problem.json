@@ -4,8 +4,11 @@
   "id": 2796,
   "slug": "repeat-string",
   "title": "Repeat String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "String"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

@@ -3,8 +3,14 @@
   "id": 425,
   "slug": "word-squares",
   "title": "Word Squares",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Backtracking",
+    "Trie"
+  ],
+  "topics": [
+    "Array",
+    "String",
     "Backtracking",
     "Trie"
   ],

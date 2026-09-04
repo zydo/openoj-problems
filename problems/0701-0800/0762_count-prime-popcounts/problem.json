@@ -4,8 +4,13 @@
   "id": 762,
   "slug": "count-prime-popcounts",
   "title": "Count Prime Popcounts",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Primality Test"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Primality Test"

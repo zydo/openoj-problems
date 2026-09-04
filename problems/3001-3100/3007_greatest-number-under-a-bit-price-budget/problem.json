@@ -4,10 +4,16 @@
   "id": 3007,
   "slug": "greatest-number-under-a-bit-price-budget",
   "title": "Greatest Number Under a Bit-Price Budget",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Digit DP",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Math",
+    "Binary Search",
+    "Dynamic Programming",
     "Bit Manipulation"
   ],
   "invocation": {

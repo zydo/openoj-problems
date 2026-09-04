@@ -4,8 +4,13 @@
   "id": 3898,
   "slug": "counting-the-edges-at-every-vertex",
   "title": "Counting The Edges At Every Vertex",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Graph Theory",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Graph Theory",
     "Matrix"

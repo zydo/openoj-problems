@@ -4,8 +4,13 @@
   "id": 3893,
   "slug": "maximum-team-size-with-overlapping-intervals",
   "title": "Maximum Team Size with Overlapping Intervals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Sorting",
+    "Two Pointers",
+    "Greedy"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

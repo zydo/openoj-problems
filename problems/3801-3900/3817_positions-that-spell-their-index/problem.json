@@ -4,8 +4,12 @@
   "id": 3817,
   "slug": "positions-that-spell-their-index",
   "title": "Positions That Spell Their Index",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

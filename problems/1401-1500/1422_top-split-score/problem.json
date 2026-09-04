@@ -4,8 +4,12 @@
   "id": 1422,
   "slug": "top-split-score",
   "title": "Top Split Score",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Prefix Sum"
   ],

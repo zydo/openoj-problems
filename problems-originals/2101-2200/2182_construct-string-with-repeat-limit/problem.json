@@ -4,8 +4,15 @@
   "id": 2182,
   "slug": "construct-string-with-repeat-limit",
   "title": "Construct String With Repeat Limit",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

@@ -4,8 +4,12 @@
   "id": 93,
   "slug": "placing-the-three-dots",
   "title": "Placing The Three Dots",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "String",
     "Backtracking"
   ],

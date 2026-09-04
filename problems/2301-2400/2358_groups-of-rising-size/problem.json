@@ -4,10 +4,16 @@
   "id": 2358,
   "slug": "groups-of-rising-size",
   "title": "Groups of Rising Size",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
     "Greedy"
   ],
   "invocation": {

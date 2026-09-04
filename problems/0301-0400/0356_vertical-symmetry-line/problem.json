@@ -4,8 +4,13 @@
   "id": 356,
   "slug": "vertical-symmetry-line",
   "title": "Vertical Symmetry Line",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math"

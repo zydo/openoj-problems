@@ -4,8 +4,15 @@
   "id": 2427,
   "slug": "number-of-common-factors",
   "title": "Number of Common Factors",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Enumeration",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Math",
     "Enumeration",
     "Number Theory",

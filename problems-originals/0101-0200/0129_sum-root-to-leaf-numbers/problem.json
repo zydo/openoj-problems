@@ -4,8 +4,13 @@
   "id": 129,
   "slug": "sum-root-to-leaf-numbers",
   "title": "Sum Root to Leaf Numbers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

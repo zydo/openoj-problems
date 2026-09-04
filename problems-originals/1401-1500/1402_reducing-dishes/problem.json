@@ -4,8 +4,14 @@
   "id": 1402,
   "slug": "reducing-dishes",
   "title": "Reducing Dishes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy",

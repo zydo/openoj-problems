@@ -4,8 +4,14 @@
   "id": 3076,
   "slug": "shortest-uncommon-substring-in-an-array",
   "title": "Shortest Uncommon Substring in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

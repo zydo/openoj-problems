@@ -4,10 +4,15 @@
   "id": 2028,
   "slug": "filling-in-the-lost-rolls",
   "title": "Filling In the Lost Rolls",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

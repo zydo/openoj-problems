@@ -4,8 +4,13 @@
   "id": 1217,
   "slug": "minimum-cost-to-move-chips-to-the-same-position",
   "title": "Minimum Cost to Move Chips to The Same Position",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

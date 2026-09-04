@@ -4,8 +4,17 @@
   "id": 1687,
   "slug": "delivering-boxes-from-storage-to-ports",
   "title": "Delivering Boxes from Storage to Ports",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Segment Tree",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Segment Tree",

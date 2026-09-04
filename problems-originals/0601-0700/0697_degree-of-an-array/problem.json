@@ -4,8 +4,12 @@
   "id": 697,
   "slug": "degree-of-an-array",
   "title": "Degree of an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

@@ -4,8 +4,16 @@
   "id": 1258,
   "slug": "synonymous-sentences",
   "title": "Synonymous Sentences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Sort",
+    "Union-Find"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

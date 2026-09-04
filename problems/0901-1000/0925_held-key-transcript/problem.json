@@ -4,8 +4,12 @@
   "id": 925,
   "slug": "held-key-transcript",
   "title": "Held-Key Transcript",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

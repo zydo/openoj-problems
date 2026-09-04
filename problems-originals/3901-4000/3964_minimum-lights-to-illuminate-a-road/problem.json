@@ -4,8 +4,13 @@
   "id": 3964,
   "slug": "minimum-lights-to-illuminate-a-road",
   "title": "Minimum Lights to Illuminate a Road",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Greedy",
+    "Sorting",
+    "Array"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

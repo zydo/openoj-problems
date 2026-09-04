@@ -4,8 +4,13 @@
   "id": 1850,
   "slug": "adjacent-swaps-to-the-kth-next-arrangement",
   "title": "Adjacent Swaps to the Kth Next Arrangement",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Greedy"

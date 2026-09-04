@@ -3,8 +3,13 @@
   "id": 1685,
   "slug": "sum-of-absolute-differences-in-a-sorted-array",
   "title": "Sum of Absolute Differences in a Sorted Array",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Prefix Sum"

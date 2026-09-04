@@ -4,8 +4,14 @@
   "id": 1263,
   "slug": "minimum-moves-to-move-a-box-to-their-target-location",
   "title": "Minimum Moves to Move a Box to Their Target Location",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Heap (Priority Queue)",

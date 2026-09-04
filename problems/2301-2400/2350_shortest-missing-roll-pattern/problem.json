@@ -4,8 +4,13 @@
   "id": 2350,
   "slug": "shortest-missing-roll-pattern",
   "title": "Shortest Missing Roll Pattern",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy"

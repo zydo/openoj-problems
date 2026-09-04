@@ -4,8 +4,14 @@
   "id": 3092,
   "slug": "most-frequent-ids",
   "title": "Most Frequent IDs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Heap (Priority Queue)",

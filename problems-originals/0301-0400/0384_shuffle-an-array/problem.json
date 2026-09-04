@@ -3,8 +3,14 @@
   "id": 384,
   "slug": "shuffle-an-array",
   "title": "Shuffle an Array",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Randomized"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Design",
     "Randomized"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 1927,
   "slug": "half-sum-duel",
   "title": "Half-Sum Duel",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Greedy",
+    "Game Theory"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy",

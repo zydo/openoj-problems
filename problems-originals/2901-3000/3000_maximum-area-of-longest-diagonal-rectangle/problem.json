@@ -4,8 +4,11 @@
   "id": 3000,
   "slug": "maximum-area-of-longest-diagonal-rectangle",
   "title": "Maximum Area of Longest Diagonal Rectangle",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

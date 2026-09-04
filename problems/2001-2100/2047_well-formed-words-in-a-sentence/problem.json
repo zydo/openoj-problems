@@ -4,8 +4,11 @@
   "id": 2047,
   "slug": "well-formed-words-in-a-sentence",
   "title": "Well-Formed Words in a Sentence",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

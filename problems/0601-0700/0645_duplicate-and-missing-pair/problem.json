@@ -4,8 +4,14 @@
   "id": 645,
   "slug": "duplicate-and-missing-pair",
   "title": "Duplicate and Missing Pair",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

@@ -4,12 +4,20 @@
   "id": 975,
   "slug": "alternating-jump-starts",
   "title": "Alternating Jump Starts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Monotonic Stack",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

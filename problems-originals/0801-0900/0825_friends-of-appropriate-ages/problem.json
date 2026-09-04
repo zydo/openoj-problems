@@ -4,8 +4,14 @@
   "id": 825,
   "slug": "friends-of-appropriate-ages",
   "title": "Friends Of Appropriate Ages",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

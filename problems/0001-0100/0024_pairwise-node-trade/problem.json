@@ -4,10 +4,14 @@
   "id": 24,
   "slug": "pairwise-node-trade",
   "title": "Pairwise Node Trade",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Two Pointers"
+  ],
+  "topics": [
+    "Linked List",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

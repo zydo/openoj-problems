@@ -3,10 +3,15 @@
   "id": 4,
   "slug": "median-of-two-sorted-arrays",
   "title": "Median of Two Sorted Arrays",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer"
   ],
   "invocation": {
     "type": "function",

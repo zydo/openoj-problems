@@ -4,8 +4,13 @@
   "id": 89,
   "slug": "gray-code",
   "title": "Gray Code",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Backtracking",
     "Bit Manipulation"

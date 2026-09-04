@@ -3,10 +3,15 @@
   "id": 2478,
   "slug": "number-of-beautiful-partitions",
   "title": "Number of Beautiful Partitions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Interval DP"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

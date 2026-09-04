@@ -4,8 +4,14 @@
   "id": 259,
   "slug": "3sum-smaller",
   "title": "3Sum Smaller",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

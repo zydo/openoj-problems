@@ -4,8 +4,13 @@
   "id": 90,
   "slug": "subsets-ii",
   "title": "Subsets II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation"

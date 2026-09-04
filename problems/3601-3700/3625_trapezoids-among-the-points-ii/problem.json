@@ -4,8 +4,14 @@
   "id": 3625,
   "slug": "trapezoids-among-the-points-ii",
   "title": "Trapezoids Among the Points II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

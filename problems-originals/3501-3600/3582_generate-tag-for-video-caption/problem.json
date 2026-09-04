@@ -4,8 +4,12 @@
   "id": 3582,
   "slug": "generate-tag-for-video-caption",
   "title": "Generate Tag for Video Caption",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

@@ -4,8 +4,12 @@
   "id": 401,
   "slug": "led-clock-faces",
   "title": "Led Clock Faces",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Backtracking",
     "Bit Manipulation"
   ],

@@ -4,8 +4,11 @@
   "id": 1155,
   "slug": "count-bounded-sequences-with-a-given-sum",
   "title": "Count Bounded Sequences With a Given Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

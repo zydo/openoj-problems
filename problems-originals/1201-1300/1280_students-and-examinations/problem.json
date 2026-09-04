@@ -4,8 +4,11 @@
   "id": 1280,
   "slug": "students-and-examinations",
   "title": "Students and Examinations",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

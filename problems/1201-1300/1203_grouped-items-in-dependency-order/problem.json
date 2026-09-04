@@ -4,10 +4,17 @@
   "id": 1203,
   "slug": "grouped-items-in-dependency-order",
   "title": "Grouped Items in Dependency Order",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Topological Sort",
     "Graph"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

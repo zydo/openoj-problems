@@ -4,9 +4,13 @@
   "id": 2759,
   "slug": "a-bare-bones-json-parser",
   "title": "A Bare-Bones JSON Parser",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Expression Parsing",
+    "Recursion",
+    "String"
+  ],
+  "topics": [
     "Recursion",
     "String"
   ],

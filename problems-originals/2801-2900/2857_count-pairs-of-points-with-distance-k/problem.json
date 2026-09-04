@@ -4,8 +4,13 @@
   "id": 2857,
   "slug": "count-pairs-of-points-with-distance-k",
   "title": "Count Pairs of Points With Distance k",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation"

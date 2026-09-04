@@ -4,8 +4,13 @@
   "id": 2428,
   "slug": "maximum-sum-of-an-hourglass",
   "title": "Maximum Sum of an Hourglass",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

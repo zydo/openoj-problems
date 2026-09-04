@@ -4,11 +4,15 @@
   "id": 2625,
   "slug": "flattening-to-a-given-depth",
   "title": "Flattening To A Given Depth",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Stack",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Recursion"
   ],
   "invocation": {
     "type": "interactive",

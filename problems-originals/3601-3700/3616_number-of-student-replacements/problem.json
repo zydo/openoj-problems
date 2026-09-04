@@ -4,8 +4,12 @@
   "id": 3616,
   "slug": "number-of-student-replacements",
   "title": "Number of Student Replacements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

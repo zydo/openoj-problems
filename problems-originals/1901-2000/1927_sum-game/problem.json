@@ -4,8 +4,14 @@
   "id": 1927,
   "slug": "sum-game",
   "title": "Sum Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Greedy",
+    "Game Theory"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy",

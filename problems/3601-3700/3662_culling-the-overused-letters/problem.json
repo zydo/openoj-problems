@@ -4,8 +4,13 @@
   "id": 3662,
   "slug": "culling-the-overused-letters",
   "title": "Culling The Overused Letters",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

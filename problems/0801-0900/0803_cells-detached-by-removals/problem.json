@@ -4,10 +4,15 @@
   "id": 803,
   "slug": "cells-detached-by-removals",
   "title": "Cells Detached By Removals",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Union Find",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

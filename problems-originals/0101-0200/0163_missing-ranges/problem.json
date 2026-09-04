@@ -4,8 +4,11 @@
   "id": 163,
   "slug": "missing-ranges",
   "title": "Missing Ranges",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

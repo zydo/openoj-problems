@@ -4,8 +4,13 @@
   "id": 3690,
   "slug": "cut-and-paste-rebuild",
   "title": "Cut And Paste Rebuild",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Breadth-First Search"

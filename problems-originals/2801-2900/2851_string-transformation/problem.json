@@ -3,11 +3,17 @@
   "id": 2851,
   "slug": "string-transformation",
   "title": "String Transformation",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "KMP",
     "Matrix Exponentiation",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "String Matching"
   ],
   "invocation": {
     "type": "function",

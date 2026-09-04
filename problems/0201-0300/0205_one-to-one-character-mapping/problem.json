@@ -4,8 +4,12 @@
   "id": 205,
   "slug": "one-to-one-character-mapping",
   "title": "One-To-One Character Mapping",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

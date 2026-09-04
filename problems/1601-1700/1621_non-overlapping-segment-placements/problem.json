@@ -4,11 +4,17 @@
   "id": 1621,
   "slug": "non-overlapping-segment-placements",
   "title": "Non-Overlapping Segment Placements",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Combinatorics",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

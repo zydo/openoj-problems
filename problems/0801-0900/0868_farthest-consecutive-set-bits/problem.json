@@ -4,8 +4,11 @@
   "id": 868,
   "slug": "farthest-consecutive-set-bits",
   "title": "Farthest Consecutive Set Bits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

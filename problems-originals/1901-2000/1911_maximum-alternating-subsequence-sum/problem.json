@@ -4,8 +4,12 @@
   "id": 1911,
   "slug": "maximum-alternating-subsequence-sum",
   "title": "Maximum Alternating Subsequence Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

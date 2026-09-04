@@ -4,8 +4,12 @@
   "id": 483,
   "slug": "smallest-good-base",
   "title": "Smallest Good Base",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

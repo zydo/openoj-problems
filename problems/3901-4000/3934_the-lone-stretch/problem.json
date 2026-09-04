@@ -4,12 +4,20 @@
   "id": 3934,
   "slug": "the-lone-stretch",
   "title": "The Lone Stretch",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Binary Search",
     "Rolling Hash"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

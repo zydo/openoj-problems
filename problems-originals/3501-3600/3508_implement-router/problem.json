@@ -3,11 +3,19 @@
   "id": 3508,
   "slug": "implement-router",
   "title": "Implement Router",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Queue",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Queue",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

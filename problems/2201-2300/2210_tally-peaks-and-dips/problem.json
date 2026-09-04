@@ -4,8 +4,11 @@
   "id": 2210,
   "slug": "tally-peaks-and-dips",
   "title": "Tally Peaks and Dips",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

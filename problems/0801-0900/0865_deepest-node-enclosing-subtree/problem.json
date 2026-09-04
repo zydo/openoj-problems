@@ -4,11 +4,21 @@
   "id": 865,
   "slug": "deepest-node-enclosing-subtree",
   "title": "Deepest-Node Enclosing Subtree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",
+    "DP on Trees"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor",
     "DP on Trees"
   ],
   "invocation": {

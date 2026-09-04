@@ -4,11 +4,17 @@
   "id": 202,
   "slug": "happy-number",
   "title": "Happy Number",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Hash Table",
     "Math",
     "Two Pointers"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Two Pointers",
+    "Floyd's Cycle Finding Algorithm"
   ],
   "invocation": {
     "type": "function",

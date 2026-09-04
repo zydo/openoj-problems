@@ -4,8 +4,16 @@
   "id": 292,
   "slug": "nim-game",
   "title": "Nim Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Brainteaser",
+    "Minimax",
+    "Game Theory",
+    "Nim Game",
+    "Impartial Game"
+  ],
+  "topics": [
     "Math",
     "Brainteaser",
     "Minimax",

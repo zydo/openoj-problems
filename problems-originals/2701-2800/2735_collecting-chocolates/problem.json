@@ -4,8 +4,12 @@
   "id": 2735,
   "slug": "collecting-chocolates",
   "title": "Collecting Chocolates",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

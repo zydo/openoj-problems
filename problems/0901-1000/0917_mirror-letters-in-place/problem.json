@@ -4,8 +4,12 @@
   "id": 917,
   "slug": "mirror-letters-in-place",
   "title": "Mirror Letters in Place",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

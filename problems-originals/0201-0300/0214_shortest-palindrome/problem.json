@@ -3,10 +3,19 @@
   "id": 214,
   "slug": "shortest-palindrome",
   "title": "Shortest Palindrome",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "KMP",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function",
+    "Manacher",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm"
   ],
   "invocation": {
     "type": "function",

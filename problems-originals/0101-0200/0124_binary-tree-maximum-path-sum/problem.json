@@ -3,11 +3,18 @@
   "id": 124,
   "slug": "binary-tree-maximum-path-sum",
   "title": "Binary Tree Maximum Path Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Binary Tree",
     "Depth-First Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

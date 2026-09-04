@@ -4,8 +4,13 @@
   "id": 3999,
   "slug": "minimum-number-of-string-groups-through-transformations",
   "title": "Minimum Number of String Groups Through Transformations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "String",
+    "Hash Table",
+    "Math"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

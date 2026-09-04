@@ -4,11 +4,17 @@
   "id": 1038,
   "slug": "search-tree-suffix-sums",
   "title": "Search Tree Suffix Sums",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "Binary Search Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

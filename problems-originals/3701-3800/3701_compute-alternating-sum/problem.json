@@ -4,8 +4,12 @@
   "id": 3701,
   "slug": "compute-alternating-sum",
   "title": "Compute Alternating Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

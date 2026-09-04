@@ -4,8 +4,14 @@
   "id": 781,
   "slug": "rabbits-in-forest",
   "title": "Rabbits in Forest",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

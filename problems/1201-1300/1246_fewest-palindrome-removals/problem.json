@@ -4,9 +4,13 @@
   "id": 1246,
   "slug": "fewest-palindrome-removals",
   "title": "Fewest Palindrome Removals",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

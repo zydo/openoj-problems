@@ -3,10 +3,18 @@
   "id": 2371,
   "slug": "minimize-maximum-value-in-a-grid",
   "title": "Minimize Maximum Value in a Grid",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Union Find",
+    "Graph Theory",
+    "Topological Sort",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
     "Graph Theory",
     "Topological Sort",
     "Sorting",

@@ -4,8 +4,11 @@
   "id": 3958,
   "slug": "minimum-cost-to-split-into-ones-ii",
   "title": "Minimum Cost to Split into Ones II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

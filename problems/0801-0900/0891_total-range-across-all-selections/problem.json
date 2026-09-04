@@ -4,10 +4,15 @@
   "id": 891,
   "slug": "total-range-across-all-selections",
   "title": "Total Range Across All Selections",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Sorting",
     "Combinatorics"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

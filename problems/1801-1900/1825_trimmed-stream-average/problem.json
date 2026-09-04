@@ -4,12 +4,20 @@
   "id": 1825,
   "slug": "trimmed-stream-average",
   "title": "Trimmed Stream Average",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Design",
     "Data Stream",
     "Ordered Set",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Design",
+    "Queue",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set",
+    "Treap"
   ],
   "invocation": {
     "type": "design",

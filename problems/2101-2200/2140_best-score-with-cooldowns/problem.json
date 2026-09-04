@@ -4,8 +4,12 @@
   "id": 2140,
   "slug": "best-score-with-cooldowns",
   "title": "Best Score With Cooldowns",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

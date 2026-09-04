@@ -4,10 +4,14 @@
   "id": 1191,
   "slug": "largest-subarray-sum-in-the-repeated-array",
   "title": "Largest Subarray Sum in the Repeated Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

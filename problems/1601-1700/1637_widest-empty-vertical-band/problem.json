@@ -4,8 +4,12 @@
   "id": 1637,
   "slug": "widest-empty-vertical-band",
   "title": "Widest Empty Vertical Band",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

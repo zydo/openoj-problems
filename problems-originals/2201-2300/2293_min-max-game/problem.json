@@ -4,8 +4,12 @@
   "id": 2293,
   "slug": "min-max-game",
   "title": "Min Max Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

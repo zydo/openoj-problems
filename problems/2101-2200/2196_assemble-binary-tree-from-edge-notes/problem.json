@@ -4,8 +4,14 @@
   "id": 2196,
   "slug": "assemble-binary-tree-from-edge-notes",
   "title": "Assemble A Binary Tree From Edge Notes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

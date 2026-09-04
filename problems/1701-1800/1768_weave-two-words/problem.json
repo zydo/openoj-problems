@@ -4,8 +4,12 @@
   "id": 1768,
   "slug": "weave-two-words",
   "title": "Weave Two Words",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

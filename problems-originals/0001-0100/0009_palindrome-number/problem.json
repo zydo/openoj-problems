@@ -4,8 +4,11 @@
   "id": 9,
   "slug": "palindrome-number",
   "title": "Palindrome Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

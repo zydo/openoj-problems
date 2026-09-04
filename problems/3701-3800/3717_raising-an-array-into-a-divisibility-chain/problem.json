@@ -4,8 +4,12 @@
   "id": 3717,
   "slug": "raising-an-array-into-a-divisibility-chain",
   "title": "Raising An Array Into A Divisibility Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

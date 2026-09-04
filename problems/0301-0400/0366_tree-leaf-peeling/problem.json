@@ -4,8 +4,14 @@
   "id": 366,
   "slug": "tree-leaf-peeling",
   "title": "Tree Leaf Peeling",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",

@@ -4,8 +4,13 @@
   "id": 219,
   "slug": "contains-duplicate-ii",
   "title": "Contains Duplicate II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

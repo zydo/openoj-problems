@@ -4,8 +4,11 @@
   "id": 2690,
   "slug": "infinite-method-object",
   "title": "Infinite Method Object",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

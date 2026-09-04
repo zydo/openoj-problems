@@ -4,9 +4,12 @@
   "id": 2665,
   "slug": "tally-counter-ii",
   "title": "Tally Counter II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
+    "Design"
+  ],
+  "topics": [
     "Design"
   ],
   "invocation": {

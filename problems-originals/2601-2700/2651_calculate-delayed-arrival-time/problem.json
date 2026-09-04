@@ -4,8 +4,11 @@
   "id": 2651,
   "slug": "calculate-delayed-arrival-time",
   "title": "Calculate Delayed Arrival Time",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

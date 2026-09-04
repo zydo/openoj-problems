@@ -4,8 +4,12 @@
   "id": 3573,
   "slug": "stock-trading-with-short-selling",
   "title": "Stock Trading With Short Selling",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

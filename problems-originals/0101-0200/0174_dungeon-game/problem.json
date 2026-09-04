@@ -3,10 +3,15 @@
   "id": 174,
   "slug": "dungeon-game",
   "title": "Dungeon Game",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

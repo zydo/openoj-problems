@@ -4,10 +4,13 @@
   "id": 196,
   "slug": "one-copy-of-each-address",
   "title": "One Copy Of Each Address",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

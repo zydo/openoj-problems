@@ -4,8 +4,12 @@
   "id": 3168,
   "slug": "seating-the-waiting-room",
   "title": "Seating The Waiting Room",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

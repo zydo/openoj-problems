@@ -4,8 +4,14 @@
   "id": 1577,
   "slug": "square-equals-product-triplets",
   "title": "Square-Equals-Product Triplets",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

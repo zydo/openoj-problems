@@ -3,11 +3,21 @@
   "id": 1489,
   "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
   "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Minimum Spanning Tree",
     "Union Find"
+  ],
+  "topics": [
+    "Union-Find",
+    "Graph Theory",
+    "Sorting",
+    "Minimum Spanning Tree",
+    "Strongly Connected Component",
+    "Prim's Algorithm",
+    "Kruskal's Algorithm",
+    "Borůvka's Algorithm"
   ],
   "invocation": {
     "type": "function",

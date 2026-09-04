@@ -4,8 +4,13 @@
   "id": 2269,
   "slug": "find-the-k-beauty-of-a-number",
   "title": "Find the K-Beauty of a Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Math",
     "String",
     "Sliding Window"

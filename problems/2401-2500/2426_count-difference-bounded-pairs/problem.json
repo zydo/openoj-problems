@@ -4,12 +4,21 @@
   "id": 2426,
   "slug": "count-difference-bounded-pairs",
   "title": "Count Difference-Bounded Pairs",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Divide and Conquer",
     "Binary Indexed Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

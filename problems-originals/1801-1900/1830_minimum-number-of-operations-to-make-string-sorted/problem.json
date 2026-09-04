@@ -4,8 +4,16 @@
   "id": 1830,
   "slug": "minimum-number-of-operations-to-make-string-sorted",
   "title": "Minimum Number of Operations to Make String Sorted",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting",
+    "Fermat's Little Theorem"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

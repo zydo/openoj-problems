@@ -4,9 +4,14 @@
   "id": 3152,
   "slug": "alternating-parities-ii",
   "title": "Alternating Parities II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
     "Prefix Sum"
   ],
   "invocation": {

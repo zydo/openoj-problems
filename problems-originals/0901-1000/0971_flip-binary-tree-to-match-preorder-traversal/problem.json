@@ -4,8 +4,13 @@
   "id": 971,
   "slug": "flip-binary-tree-to-match-preorder-traversal",
   "title": "Flip Binary Tree To Match Preorder Traversal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

@@ -4,8 +4,12 @@
   "id": 2361,
   "slug": "minimum-costs-using-the-train-line",
   "title": "Minimum Costs Using the Train Line",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -4,11 +4,18 @@
   "id": 2192,
   "slug": "upstream-nodes-in-a-dag",
   "title": "Upstream Nodes in a DAG",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Depth-First Search",
     "Breadth-First Search",
     "Graph Theory",
+    "Directed Acyclic Graph"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort",
     "Directed Acyclic Graph"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 2187,
   "slug": "minimum-minutes-to-finish-the-jobs",
   "title": "Minimum Minutes to Finish the Jobs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

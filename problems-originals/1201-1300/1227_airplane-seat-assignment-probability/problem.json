@@ -4,8 +4,14 @@
   "id": 1227,
   "slug": "airplane-seat-assignment-probability",
   "title": "Airplane Seat Assignment Probability",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Brainteaser",
+    "Probability and Statistics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Brainteaser",

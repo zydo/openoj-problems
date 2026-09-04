@@ -4,9 +4,15 @@
   "id": 1402,
   "slug": "dishes-worth-cooking",
   "title": "Dishes Worth Cooking",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Greedy",
     "Sorting"
   ],

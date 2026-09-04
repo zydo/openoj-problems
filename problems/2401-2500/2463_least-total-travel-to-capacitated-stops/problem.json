@@ -4,8 +4,13 @@
   "id": 2463,
   "slug": "least-total-travel-to-capacitated-stops",
   "title": "Least Total Travel to Capacitated Stops",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Sorting"
   ],

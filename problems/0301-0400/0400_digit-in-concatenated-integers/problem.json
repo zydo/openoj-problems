@@ -4,8 +4,12 @@
   "id": 400,
   "slug": "digit-in-concatenated-integers",
   "title": "Digit in Concatenated Integers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

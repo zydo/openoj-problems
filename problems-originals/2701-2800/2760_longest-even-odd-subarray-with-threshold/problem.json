@@ -4,8 +4,12 @@
   "id": 2760,
   "slug": "longest-even-odd-subarray-with-threshold",
   "title": "Longest Even Odd Subarray With Threshold",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

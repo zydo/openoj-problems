@@ -3,11 +3,17 @@
   "id": 2247,
   "slug": "maximum-cost-of-trip-with-k-highways",
   "title": "Maximum Cost of Trip With K Highways",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bit Manipulation",
     "Graph",
+    "Bitmask"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Graph Theory",
     "Bitmask"
   ],
   "invocation": {

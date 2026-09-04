@@ -4,8 +4,12 @@
   "id": 2270,
   "slug": "number-of-ways-to-split-array",
   "title": "Number of Ways to Split Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

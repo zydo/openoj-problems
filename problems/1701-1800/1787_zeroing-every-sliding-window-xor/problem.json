@@ -4,12 +4,19 @@
   "id": 1787,
   "slug": "zeroing-every-sliding-window-xor",
   "title": "Zeroing Every Sliding Window's XOR",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Dynamic Programming",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

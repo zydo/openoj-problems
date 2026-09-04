@@ -4,10 +4,16 @@
   "id": 1671,
   "slug": "minimum-deletions-for-a-peak-array",
   "title": "Minimum Deletions for a Peak Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

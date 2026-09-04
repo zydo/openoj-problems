@@ -4,8 +4,13 @@
   "id": 2814,
   "slug": "outrun-the-flood",
   "title": "Outrun The Flood",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

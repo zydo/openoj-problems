@@ -4,8 +4,11 @@
   "id": 1276,
   "slug": "number-of-burgers-with-no-waste-of-ingredients",
   "title": "Number of Burgers with No Waste of Ingredients",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

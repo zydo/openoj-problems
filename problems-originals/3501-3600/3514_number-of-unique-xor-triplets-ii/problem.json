@@ -4,8 +4,14 @@
   "id": 3514,
   "slug": "number-of-unique-xor-triplets-ii",
   "title": "Number of Unique XOR Triplets II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation",

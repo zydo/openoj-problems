@@ -4,8 +4,13 @@
   "id": 2428,
   "slug": "peak-hourglass-total",
   "title": "Peak Hourglass Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

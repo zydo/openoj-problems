@@ -4,8 +4,11 @@
   "id": 1615,
   "slug": "busiest-pair-of-hubs",
   "title": "Busiest Pair Of Hubs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory"
+  ],
+  "topics": [
     "Graph Theory"
   ],
   "invocation": {

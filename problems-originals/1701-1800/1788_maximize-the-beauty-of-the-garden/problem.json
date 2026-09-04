@@ -4,8 +4,14 @@
   "id": 1788,
   "slug": "maximize-the-beauty-of-the-garden",
   "title": "Maximize the Beauty of the Garden",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

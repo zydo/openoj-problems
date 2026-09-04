@@ -4,8 +4,11 @@
   "id": 2346,
   "slug": "compute-the-rank-as-a-percentage",
   "title": "Compute the Rank as a Percentage",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

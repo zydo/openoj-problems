@@ -4,8 +4,13 @@
   "id": 2393,
   "slug": "counting-the-ascending-stretches",
   "title": "Counting the Ascending Stretches",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming"

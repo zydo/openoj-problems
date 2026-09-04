@@ -4,8 +4,12 @@
   "id": 3178,
   "slug": "k-passes-down-the-line",
   "title": "K Passes Down The Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

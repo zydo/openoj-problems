@@ -4,8 +4,14 @@
   "id": 910,
   "slug": "smallest-range-ii",
   "title": "Smallest Range II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

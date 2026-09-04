@@ -4,11 +4,17 @@
   "id": 3772,
   "slug": "best-connected-piece-through-each-node",
   "title": "Best Connected Piece Through Each Node",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

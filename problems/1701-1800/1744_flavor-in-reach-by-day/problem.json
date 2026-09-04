@@ -4,8 +4,12 @@
   "id": 1744,
   "slug": "flavor-in-reach-by-day",
   "title": "Flavor in Reach by Day",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

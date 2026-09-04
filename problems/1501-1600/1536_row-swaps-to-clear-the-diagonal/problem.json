@@ -4,8 +4,13 @@
   "id": 1536,
   "slug": "row-swaps-to-clear-the-diagonal",
   "title": "Row Swaps to Clear the Diagonal",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix"

@@ -4,8 +4,14 @@
   "id": 1409,
   "slug": "queries-on-a-permutation-with-key",
   "title": "Queries on a Permutation With Key",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Simulation",
+    "Sqrt Decomposition"
+  ],
+  "topics": [
     "Array",
     "Binary Indexed Tree",
     "Simulation",

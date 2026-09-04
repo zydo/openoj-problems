@@ -4,8 +4,15 @@
   "id": 1979,
   "slug": "find-greatest-common-divisor-of-array",
   "title": "Find Greatest Common Divisor of Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Number Theory",

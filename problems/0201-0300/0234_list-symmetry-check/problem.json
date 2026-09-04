@@ -4,10 +4,16 @@
   "id": 234,
   "slug": "list-symmetry-check",
   "title": "List Symmetry Check",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Linked List",
     "Two Pointers"
+  ],
+  "topics": [
+    "Linked List",
+    "Two Pointers",
+    "Stack",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

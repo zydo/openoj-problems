@@ -4,8 +4,11 @@
   "id": 521,
   "slug": "longest-uncommon-subsequence-i",
   "title": "Longest Uncommon Subsequence I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

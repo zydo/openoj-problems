@@ -4,8 +4,12 @@
   "id": 31,
   "slug": "next-permutation",
   "title": "Next Permutation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

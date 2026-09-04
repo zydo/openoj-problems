@@ -3,12 +3,21 @@
   "id": 2183,
   "slug": "count-array-pairs-divisible-by-k",
   "title": "Count Array Pairs Divisible by K",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

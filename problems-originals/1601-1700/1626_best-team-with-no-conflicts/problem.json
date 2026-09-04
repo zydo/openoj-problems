@@ -4,8 +4,14 @@
   "id": 1626,
   "slug": "best-team-with-no-conflicts",
   "title": "Best Team With No Conflicts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting",
+    "Longest Increasing Subsequence"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sorting",

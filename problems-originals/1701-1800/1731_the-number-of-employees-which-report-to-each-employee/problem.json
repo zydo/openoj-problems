@@ -4,8 +4,11 @@
   "id": 1731,
   "slug": "the-number-of-employees-which-report-to-each-employee",
   "title": "The Number of Employees Which Report to Each Employee",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

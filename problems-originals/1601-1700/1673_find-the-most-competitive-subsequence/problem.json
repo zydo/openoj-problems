@@ -3,11 +3,17 @@
   "id": 1673,
   "slug": "find-the-most-competitive-subsequence",
   "title": "Find the Most Competitive Subsequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Monotonic Stack",
     "Stack",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

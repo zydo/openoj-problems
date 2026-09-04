@@ -4,8 +4,14 @@
   "id": 2037,
   "slug": "minimum-number-of-moves-to-seat-everyone",
   "title": "Minimum Number of Moves to Seat Everyone",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

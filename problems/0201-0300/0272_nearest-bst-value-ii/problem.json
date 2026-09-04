@@ -4,12 +4,21 @@
   "id": 272,
   "slug": "nearest-bst-value-ii",
   "title": "Nearest BST Value II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Two Pointers",
     "Stack",
     "Tree",
     "Binary Search Tree"
+  ],
+  "topics": [
+    "Two Pointers",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Heap (Priority Queue)",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

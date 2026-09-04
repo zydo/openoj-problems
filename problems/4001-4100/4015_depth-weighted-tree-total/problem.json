@@ -4,11 +4,16 @@
   "id": 4015,
   "slug": "depth-weighted-tree-total",
   "title": "Depth-Weighted Tree Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Breadth-First Search",
     "Array"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Math"
   ],
   "invocation": {
     "type": "function",

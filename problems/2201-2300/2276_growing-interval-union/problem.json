@@ -4,9 +4,14 @@
   "id": 2276,
   "slug": "growing-interval-union",
   "title": "Growing Interval Union",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Balanced BST"
+  ],
+  "topics": [
+    "Design",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

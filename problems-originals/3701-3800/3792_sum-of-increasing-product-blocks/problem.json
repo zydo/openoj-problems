@@ -4,8 +4,12 @@
   "id": 3792,
   "slug": "sum-of-increasing-product-blocks",
   "title": "Sum of Increasing Product Blocks",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

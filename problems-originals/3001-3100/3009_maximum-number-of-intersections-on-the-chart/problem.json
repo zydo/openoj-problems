@@ -4,8 +4,17 @@
   "id": 3009,
   "slug": "maximum-number-of-intersections-on-the-chart",
   "title": "Maximum Number of Intersections on the Chart",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Binary Indexed Tree",
+    "Geometry",
+    "Sweep Line",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

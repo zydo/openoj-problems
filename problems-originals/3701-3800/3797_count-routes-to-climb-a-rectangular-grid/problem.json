@@ -4,8 +4,14 @@
   "id": 3797,
   "slug": "count-routes-to-climb-a-rectangular-grid",
   "title": "Count Routes to Climb a Rectangular Grid",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix",

@@ -4,8 +4,11 @@
   "id": 2074,
   "slug": "reverse-nodes-in-even-length-groups",
   "title": "Reverse Nodes in Even Length Groups",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 3131,
   "slug": "shift-amount-between-arrays-i",
   "title": "Shift Amount Between Arrays I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

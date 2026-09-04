@@ -4,8 +4,12 @@
   "id": 2786,
   "slug": "visit-array-positions-to-maximize-score",
   "title": "Visit Array Positions to Maximize Score",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

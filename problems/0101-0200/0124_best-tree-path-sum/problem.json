@@ -4,11 +4,18 @@
   "id": 124,
   "slug": "best-tree-path-sum",
   "title": "Best Tree Path Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Binary Tree",
     "Depth-First Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

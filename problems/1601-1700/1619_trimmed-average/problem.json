@@ -4,8 +4,12 @@
   "id": 1619,
   "slug": "trimmed-average",
   "title": "Trimmed Average",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

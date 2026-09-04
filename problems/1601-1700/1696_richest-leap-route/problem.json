@@ -4,9 +4,16 @@
   "id": 1696,
   "slug": "richest-leap-route",
   "title": "Richest Leap Route",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Heap (Priority Queue)",
     "Monotonic Queue"
   ],
   "invocation": {

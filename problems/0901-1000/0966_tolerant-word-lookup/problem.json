@@ -4,8 +4,13 @@
   "id": 966,
   "slug": "tolerant-word-lookup",
   "title": "Tolerant Word Lookup",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

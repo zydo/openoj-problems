@@ -4,8 +4,13 @@
   "id": 1476,
   "slug": "subrectangle-queries",
   "title": "Subrectangle Queries",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Design",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Design",
     "Matrix"

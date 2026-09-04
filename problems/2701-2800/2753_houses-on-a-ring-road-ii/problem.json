@@ -4,10 +4,14 @@
   "id": 2753,
   "slug": "houses-on-a-ring-road-ii",
   "title": "Houses On A Ring Road II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Interactive"
+  ],
+  "topics": [
+    "Interactive",
+    "Math"
   ],
   "invocation": {
     "type": "interactive",

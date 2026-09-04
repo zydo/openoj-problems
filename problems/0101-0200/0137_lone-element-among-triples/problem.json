@@ -4,8 +4,12 @@
   "id": 137,
   "slug": "lone-element-among-triples",
   "title": "Lone Element Among Triples",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
     "Bit Manipulation"
   ],
   "invocation": {

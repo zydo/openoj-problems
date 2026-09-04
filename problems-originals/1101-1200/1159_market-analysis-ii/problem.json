@@ -4,8 +4,11 @@
   "id": 1159,
   "slug": "market-analysis-ii",
   "title": "Market Analysis II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

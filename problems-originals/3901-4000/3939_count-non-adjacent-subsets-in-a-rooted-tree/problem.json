@@ -4,8 +4,14 @@
   "id": 3939,
   "slug": "count-non-adjacent-subsets-in-a-rooted-tree",
   "title": "Count Non Adjacent Subsets in a Rooted Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Tree",

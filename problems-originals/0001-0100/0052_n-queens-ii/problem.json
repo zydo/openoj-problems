@@ -4,8 +4,12 @@
   "id": 52,
   "slug": "n-queens-ii",
   "title": "N-Queens II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Backtracking",
+    "Algorithm X"
+  ],
+  "topics": [
     "Backtracking",
     "Algorithm X"
   ],

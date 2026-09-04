@@ -4,8 +4,14 @@
   "id": 2056,
   "slug": "collision-free-move-combinations",
   "title": "Collision-Free Move Combinations",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

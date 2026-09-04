@@ -3,8 +3,13 @@
   "id": 2104,
   "slug": "sum-of-subarray-ranges",
   "title": "Sum of Subarray Ranges",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

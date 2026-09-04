@@ -4,8 +4,12 @@
   "id": 319,
   "slug": "bulb-switcher",
   "title": "Bulb Switcher",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "topics": [
     "Math",
     "Brainteaser"
   ],

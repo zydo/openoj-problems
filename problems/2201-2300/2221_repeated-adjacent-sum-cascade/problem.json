@@ -4,11 +4,18 @@
   "id": 2221,
   "slug": "repeated-adjacent-sum-cascade",
   "title": "Repeated Adjacent-Sum Cascade",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Simulation",
+    "Combinatorics",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

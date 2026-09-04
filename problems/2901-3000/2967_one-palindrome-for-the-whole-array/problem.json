@@ -4,12 +4,19 @@
   "id": 2967,
   "slug": "one-palindrome-for-the-whole-array",
   "title": "One Palindrome for the Whole Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Binary Search",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

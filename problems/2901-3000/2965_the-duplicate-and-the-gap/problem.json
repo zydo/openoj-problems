@@ -4,10 +4,16 @@
   "id": 2965,
   "slug": "the-duplicate-and-the-gap",
   "title": "The Duplicate And The Gap",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
     "Matrix"
   ],
   "invocation": {

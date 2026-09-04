@@ -4,8 +4,11 @@
   "id": 1907,
   "slug": "count-salary-categories",
   "title": "Count Salary Categories",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

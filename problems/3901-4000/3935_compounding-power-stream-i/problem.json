@@ -4,12 +4,20 @@
   "id": 3935,
   "slug": "compounding-power-stream-i",
   "title": "The Compounding Power Stream I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Indexed Tree",
     "Math",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Segment Tree",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

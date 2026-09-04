@@ -4,8 +4,15 @@
   "id": 832,
   "slug": "flipping-an-image",
   "title": "Flipping an Image",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Bit Manipulation",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Bit Manipulation",

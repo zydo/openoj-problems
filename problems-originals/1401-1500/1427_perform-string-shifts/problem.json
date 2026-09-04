@@ -4,8 +4,13 @@
   "id": 1427,
   "slug": "perform-string-shifts",
   "title": "Perform String Shifts",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String"

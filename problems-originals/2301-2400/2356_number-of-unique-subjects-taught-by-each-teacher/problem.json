@@ -4,8 +4,11 @@
   "id": 2356,
   "slug": "number-of-unique-subjects-taught-by-each-teacher",
   "title": "Number of Unique Subjects Taught by Each Teacher",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

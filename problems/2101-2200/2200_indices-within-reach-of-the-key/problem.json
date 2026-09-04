@@ -4,8 +4,12 @@
   "id": 2200,
   "slug": "indices-within-reach-of-the-key",
   "title": "Indices Within Reach Of The Key",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

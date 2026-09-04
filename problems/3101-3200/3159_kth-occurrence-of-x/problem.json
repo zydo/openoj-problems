@@ -4,8 +4,12 @@
   "id": 3159,
   "slug": "kth-occurrence-of-x",
   "title": "The Kth Occurrence of X",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

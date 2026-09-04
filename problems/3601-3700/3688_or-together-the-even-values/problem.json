@@ -4,8 +4,13 @@
   "id": 3688,
   "slug": "or-together-the-even-values",
   "title": "Or Together The Even Values",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Simulation"

@@ -4,11 +4,19 @@
   "id": 3508,
   "slug": "design-a-packet-buffer",
   "title": "Design a Packet Buffer",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Queue",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Queue",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

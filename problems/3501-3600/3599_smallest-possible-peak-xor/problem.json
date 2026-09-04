@@ -4,8 +4,14 @@
   "id": 3599,
   "slug": "smallest-possible-peak-xor",
   "title": "The Smallest Possible Peak XOR",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

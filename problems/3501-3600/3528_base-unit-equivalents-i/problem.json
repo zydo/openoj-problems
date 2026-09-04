@@ -4,8 +4,13 @@
   "id": 3528,
   "slug": "base-unit-equivalents-i",
   "title": "Base Unit Equivalents I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search",
     "Graph Theory"

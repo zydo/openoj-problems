@@ -3,11 +3,17 @@
   "id": 2242,
   "slug": "maximum-score-of-a-node-sequence",
   "title": "Maximum Score of a Node Sequence",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Graph",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Graph Theory",
+    "Sorting",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

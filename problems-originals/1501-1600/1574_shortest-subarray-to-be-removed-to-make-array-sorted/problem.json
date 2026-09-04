@@ -4,8 +4,15 @@
   "id": 1574,
   "slug": "shortest-subarray-to-be-removed-to-make-array-sorted",
   "title": "Shortest Subarray to be Removed to Make Array Sorted",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

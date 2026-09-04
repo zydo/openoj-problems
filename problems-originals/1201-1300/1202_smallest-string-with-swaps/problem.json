@@ -3,10 +3,19 @@
   "id": 1202,
   "slug": "smallest-string-with-swaps",
   "title": "Smallest String With Swaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "String",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Sorting"
   ],
   "invocation": {

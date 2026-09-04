@@ -4,8 +4,11 @@
   "id": 2042,
   "slug": "check-if-numbers-are-ascending-in-a-sentence",
   "title": "Check if Numbers Are Ascending in a Sentence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

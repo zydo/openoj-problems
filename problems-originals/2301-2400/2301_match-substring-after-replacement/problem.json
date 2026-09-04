@@ -4,8 +4,14 @@
   "id": 2301,
   "slug": "match-substring-after-replacement",
   "title": "Match Substring After Replacement",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "String Matching"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

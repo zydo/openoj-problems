@@ -4,8 +4,13 @@
   "id": 59,
   "slug": "walk-the-spiral-ii",
   "title": "Walk The Spiral II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

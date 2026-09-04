@@ -4,9 +4,15 @@
   "id": 1625,
   "slug": "smallest-reachable-digit-string",
   "title": "Smallest Reachable Digit String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Breadth-First Search",
+    "Enumeration"
+  ],
+  "topics": [
+    "String",
+    "Depth-First Search",
     "Breadth-First Search",
     "Enumeration"
   ],

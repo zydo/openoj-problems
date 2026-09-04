@@ -4,11 +4,17 @@
   "id": 2311,
   "slug": "longest-subsequence-worth-at-most-k",
   "title": "Longest Subsequence Worth At Most K",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Greedy",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 1210,
   "slug": "minimum-moves-to-reach-target-with-rotations",
   "title": "Minimum Moves to Reach Target with Rotations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

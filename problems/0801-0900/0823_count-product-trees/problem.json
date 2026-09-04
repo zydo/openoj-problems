@@ -4,8 +4,14 @@
   "id": 823,
   "slug": "count-product-trees",
   "title": "Count Product Trees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

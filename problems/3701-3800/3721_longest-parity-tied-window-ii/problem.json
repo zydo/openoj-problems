@@ -4,9 +4,16 @@
   "id": 3721,
   "slug": "longest-parity-tied-window-ii",
   "title": "Longest Parity-Tied Window II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Segment Tree",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
     "Segment Tree",
     "Prefix Sum"
   ],

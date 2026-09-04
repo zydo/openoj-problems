@@ -3,11 +3,15 @@
   "id": 774,
   "slug": "minimize-max-distance-to-gas-station",
   "title": "Minimize Max Distance to Gas Station",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 1040,
   "slug": "moving-stones-until-consecutive-ii",
   "title": "Moving Stones Until Consecutive II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sliding Window",

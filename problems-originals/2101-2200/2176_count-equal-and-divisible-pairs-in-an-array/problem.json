@@ -4,8 +4,11 @@
   "id": 2176,
   "slug": "count-equal-and-divisible-pairs-in-an-array",
   "title": "Count Equal and Divisible Pairs in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

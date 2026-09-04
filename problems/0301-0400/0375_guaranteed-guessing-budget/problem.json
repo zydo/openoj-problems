@@ -4,11 +4,17 @@
   "id": 375,
   "slug": "guaranteed-guessing-budget",
   "title": "Guaranteed Guessing Budget",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Game Theory",
     "Interval DP"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Minimax",
+    "Game Theory"
   ],
   "invocation": {
     "type": "function",

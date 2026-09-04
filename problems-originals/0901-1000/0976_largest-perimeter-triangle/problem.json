@@ -4,8 +4,16 @@
   "id": 976,
   "slug": "largest-perimeter-triangle",
   "title": "Largest Perimeter Triangle",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Quicksort",
+    "Polygons"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

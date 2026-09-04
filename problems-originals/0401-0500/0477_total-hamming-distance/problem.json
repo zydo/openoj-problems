@@ -4,8 +4,13 @@
   "id": 477,
   "slug": "total-hamming-distance",
   "title": "Total Hamming Distance",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation"

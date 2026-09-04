@@ -4,8 +4,13 @@
   "id": 334,
   "slug": "ascending-triple-detector",
   "title": "Ascending Triple Detector",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Longest Increasing Subsequence"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Longest Increasing Subsequence"

@@ -4,8 +4,12 @@
   "id": 2923,
   "slug": "the-unbeaten-team-i",
   "title": "The Unbeaten Team I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

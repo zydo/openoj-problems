@@ -4,8 +4,12 @@
   "id": 541,
   "slug": "segmented-string-reversal-ii",
   "title": "Segmented String Reversal II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

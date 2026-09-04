@@ -4,8 +4,12 @@
   "id": 2675,
   "slug": "array-of-objects-to-matrix",
   "title": "Array of Objects to Matrix",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Array",
+    "Recursion"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

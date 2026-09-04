@@ -4,11 +4,18 @@
   "id": 354,
   "slug": "longest-chain-of-nested-pairs",
   "title": "Longest Chain of Nested Pairs",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

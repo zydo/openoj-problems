@@ -4,8 +4,11 @@
   "id": 3150,
   "slug": "invalid-tweets-ii",
   "title": "Invalid Tweets II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

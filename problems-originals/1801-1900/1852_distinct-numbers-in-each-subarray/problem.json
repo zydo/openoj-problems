@@ -4,8 +4,13 @@
   "id": 1852,
   "slug": "distinct-numbers-in-each-subarray",
   "title": "Distinct Numbers in Each Subarray",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

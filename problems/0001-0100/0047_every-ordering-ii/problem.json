@@ -4,8 +4,13 @@
   "id": 47,
   "slug": "every-ordering-ii",
   "title": "Every Ordering II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Sorting"

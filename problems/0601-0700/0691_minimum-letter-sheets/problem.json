@@ -4,12 +4,22 @@
   "id": 691,
   "slug": "minimum-letter-sheets",
   "title": "Minimum Letter Sheets",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Bitmask",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

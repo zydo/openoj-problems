@@ -3,8 +3,13 @@
   "id": 2536,
   "slug": "increment-submatrices-by-one",
   "title": "Increment Submatrices by One",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

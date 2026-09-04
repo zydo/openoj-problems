@@ -4,8 +4,13 @@
   "id": 1903,
   "slug": "largest-odd-prefix",
   "title": "Largest Odd Prefix",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy"

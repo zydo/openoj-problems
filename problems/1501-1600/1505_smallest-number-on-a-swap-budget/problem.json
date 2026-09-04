@@ -4,8 +4,14 @@
   "id": 1505,
   "slug": "smallest-number-on-a-swap-budget",
   "title": "Smallest Number On A Swap Budget",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Binary Indexed Tree",

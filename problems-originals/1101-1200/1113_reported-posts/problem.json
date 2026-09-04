@@ -4,8 +4,11 @@
   "id": 1113,
   "slug": "reported-posts",
   "title": "Reported Posts",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

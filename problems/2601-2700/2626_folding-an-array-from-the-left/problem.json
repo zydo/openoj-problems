@@ -4,10 +4,14 @@
   "id": 2626,
   "slug": "folding-an-array-from-the-left",
   "title": "Folding An Array From The Left",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "JavaScript"
+  ],
+  "topics": [
+    "Array",
+    "Simulation"
   ],
   "invocation": {
     "type": "interactive",

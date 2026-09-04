@@ -4,8 +4,12 @@
   "id": 2742,
   "slug": "two-painters-minimum-bill",
   "title": "Two Painters, Minimum Bill",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

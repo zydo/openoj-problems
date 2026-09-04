@@ -4,8 +4,12 @@
   "id": 1150,
   "slug": "dominant-value-in-a-sorted-array",
   "title": "Dominant Value in a Sorted Array",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

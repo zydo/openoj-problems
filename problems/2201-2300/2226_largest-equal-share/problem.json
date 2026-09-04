@@ -4,8 +4,12 @@
   "id": 2226,
   "slug": "largest-equal-share",
   "title": "Largest Equal Share",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

@@ -4,8 +4,12 @@
   "id": 3274,
   "slug": "check-if-two-chessboard-squares-have-the-same-color",
   "title": "Check if Two Chessboard Squares Have the Same Color",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

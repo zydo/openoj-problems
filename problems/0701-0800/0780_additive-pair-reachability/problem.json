@@ -4,9 +4,14 @@
   "id": 780,
   "slug": "additive-pair-reachability",
   "title": "Additive Pair Reachability",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

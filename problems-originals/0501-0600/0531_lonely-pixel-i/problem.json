@@ -4,8 +4,13 @@
   "id": 531,
   "slug": "lonely-pixel-i",
   "title": "Lonely Pixel I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix"

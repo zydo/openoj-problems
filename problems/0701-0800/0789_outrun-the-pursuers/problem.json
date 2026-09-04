@@ -4,8 +4,12 @@
   "id": 789,
   "slug": "outrun-the-pursuers",
   "title": "Outrun the Pursuers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

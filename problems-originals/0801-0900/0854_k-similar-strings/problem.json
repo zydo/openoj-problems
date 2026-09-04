@@ -3,10 +3,15 @@
   "id": 854,
   "slug": "k-similar-strings",
   "title": "K-Similar Strings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "String"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search"
   ],
   "invocation": {
     "type": "function",

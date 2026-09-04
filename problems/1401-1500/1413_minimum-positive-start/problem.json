@@ -4,8 +4,12 @@
   "id": 1413,
   "slug": "minimum-positive-start",
   "title": "Minimum Positive Start",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

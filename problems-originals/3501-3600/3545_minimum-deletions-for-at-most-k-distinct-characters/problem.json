@@ -4,8 +4,15 @@
   "id": 3545,
   "slug": "minimum-deletions-for-at-most-k-distinct-characters",
   "title": "Minimum Deletions for At Most K Distinct Characters",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

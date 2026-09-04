@@ -4,8 +4,12 @@
   "id": 2413,
   "slug": "least-common-even-multiple",
   "title": "Least Common Even Multiple",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Number Theory"
   ],

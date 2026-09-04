@@ -4,8 +4,11 @@
   "id": 1350,
   "slug": "students-with-invalid-departments",
   "title": "Students With Invalid Departments",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

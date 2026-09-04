@@ -4,8 +4,15 @@
   "id": 769,
   "slug": "sortable-chunk-count",
   "title": "Sortable Chunk Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Greedy",

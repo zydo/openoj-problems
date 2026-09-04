@@ -3,8 +3,13 @@
   "id": 3449,
   "slug": "maximize-the-minimum-game-score",
   "title": "Maximize the Minimum Game Score",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
     "Binary Search",
     "Greedy"
   ],

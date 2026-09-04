@@ -4,8 +4,12 @@
   "id": 2340,
   "slug": "minimum-adjacent-swaps-to-make-a-valid-array",
   "title": "Minimum Adjacent Swaps to Make a Valid Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

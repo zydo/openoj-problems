@@ -4,8 +4,11 @@
   "id": 2882,
   "slug": "drop-duplicate-rows",
   "title": "Drop Duplicate Rows",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

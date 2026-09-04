@@ -4,8 +4,14 @@
   "id": 2680,
   "slug": "maximum-or",
   "title": "Maximum OR",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation",

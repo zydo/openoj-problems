@@ -4,8 +4,12 @@
   "id": 1955,
   "slug": "count-three-block-subsequences",
   "title": "Count Three-Block Subsequences",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

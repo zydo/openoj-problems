@@ -4,8 +4,13 @@
   "id": 2699,
   "slug": "modify-graph-edge-weights",
   "title": "Modify Graph Edge Weights",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"

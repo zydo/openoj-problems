@@ -4,8 +4,12 @@
   "id": 35,
   "slug": "where-the-new-value-lands",
   "title": "Where The New Value Lands",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

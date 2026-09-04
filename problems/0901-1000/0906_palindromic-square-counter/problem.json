@@ -4,8 +4,13 @@
   "id": 906,
   "slug": "palindromic-square-counter",
   "title": "Palindromic Square Counter",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "String",
     "Enumeration"

@@ -4,8 +4,14 @@
   "id": 1233,
   "slug": "remove-sub-folders-from-the-filesystem",
   "title": "Remove Sub-Folders from the Filesystem",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "String",
     "Depth-First Search",

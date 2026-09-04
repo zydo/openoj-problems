@@ -4,8 +4,14 @@
   "id": 1971,
   "slug": "route-between-two-vertices",
   "title": "Route Between Two Vertices",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

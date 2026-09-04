@@ -4,8 +4,16 @@
   "id": 2762,
   "slug": "continuous-subarrays",
   "title": "Continuous Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Ordered Set",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Sliding Window",

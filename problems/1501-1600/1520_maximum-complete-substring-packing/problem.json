@@ -4,8 +4,14 @@
   "id": 1520,
   "slug": "maximum-complete-substring-packing",
   "title": "Maximum Complete Substring Packing",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

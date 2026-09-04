@@ -4,8 +4,11 @@
   "id": 434,
   "slug": "number-of-segments-in-a-string",
   "title": "Number of Segments in a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

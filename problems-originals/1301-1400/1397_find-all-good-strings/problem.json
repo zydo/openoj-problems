@@ -3,8 +3,13 @@
   "id": 1397,
   "slug": "find-all-good-strings",
   "title": "Find All Good Strings",
-  "difficulty": "H5",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "String Matching"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "String Matching"

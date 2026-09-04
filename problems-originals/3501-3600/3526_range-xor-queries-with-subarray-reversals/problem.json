@@ -3,9 +3,15 @@
   "id": 3526,
   "slug": "range-xor-queries-with-subarray-reversals",
   "title": "Range XOR Queries with Subarray Reversals",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Balanced BST"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3873,
   "slug": "one-placement-to-spark-the-most-points",
   "title": "One Placement to Spark the Most Points",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Union-Find"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Union-Find"

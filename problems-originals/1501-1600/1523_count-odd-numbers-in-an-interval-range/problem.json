@@ -4,8 +4,11 @@
   "id": 1523,
   "slug": "count-odd-numbers-in-an-interval-range",
   "title": "Count Odd Numbers in an Interval Range",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

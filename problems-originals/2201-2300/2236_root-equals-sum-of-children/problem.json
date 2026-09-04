@@ -4,8 +4,12 @@
   "id": 2236,
   "slug": "root-equals-sum-of-children",
   "title": "Root Equals Sum of Children",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Tree"
   ],

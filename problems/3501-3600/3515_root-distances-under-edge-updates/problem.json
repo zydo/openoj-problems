@@ -4,11 +4,18 @@
   "id": 3515,
   "slug": "root-distances-under-edge-updates",
   "title": "Root Distances Under Edge Updates",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Binary Indexed Tree",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

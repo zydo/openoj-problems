@@ -4,11 +4,17 @@
   "id": 1818,
   "slug": "smallest-cumulative-gap",
   "title": "Smallest Cumulative Gap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

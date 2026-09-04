@@ -4,8 +4,15 @@
   "id": 1612,
   "slug": "check-if-two-expression-trees-are-equivalent",
   "title": "Check If Two Expression Trees are Equivalent",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

@@ -4,8 +4,14 @@
   "id": 1166,
   "slug": "design-file-system",
   "title": "Design File System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Design",

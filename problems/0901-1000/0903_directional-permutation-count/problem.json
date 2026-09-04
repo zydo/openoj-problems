@@ -4,11 +4,16 @@
   "id": 903,
   "slug": "directional-permutation-count",
   "title": "Directional Permutation Count",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 2255,
   "slug": "words-at-the-strings-front",
   "title": "Words at the String's Front",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

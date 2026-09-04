@@ -4,9 +4,12 @@
   "id": 2795,
   "slug": "one-settled-report-per-promise",
   "title": "One Settled Report Per Promise",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Concurrency"
   ],
   "invocation": {
     "type": "interactive",

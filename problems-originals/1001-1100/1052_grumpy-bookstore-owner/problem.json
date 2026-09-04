@@ -4,8 +4,12 @@
   "id": 1052,
   "slug": "grumpy-bookstore-owner",
   "title": "Grumpy Bookstore Owner",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

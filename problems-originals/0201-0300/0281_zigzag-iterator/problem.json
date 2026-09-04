@@ -4,8 +4,14 @@
   "id": 281,
   "slug": "zigzag-iterator",
   "title": "Zigzag Iterator",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Design",
+    "Queue",
+    "Iterator"
+  ],
+  "topics": [
     "Array",
     "Design",
     "Queue",

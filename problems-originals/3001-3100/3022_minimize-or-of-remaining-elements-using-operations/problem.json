@@ -4,8 +4,13 @@
   "id": 3022,
   "slug": "minimize-or-of-remaining-elements-using-operations",
   "title": "Minimize OR of Remaining Elements Using Operations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation"

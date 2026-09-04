@@ -4,10 +4,17 @@
   "id": 827,
   "slug": "largest-island-after-one-flip",
   "title": "Largest Island After One Flip",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Depth-First Search",
+    "Union-Find",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Union-Find",
     "Matrix"
   ],

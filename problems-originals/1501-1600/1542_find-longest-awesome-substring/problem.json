@@ -4,8 +4,13 @@
   "id": 1542,
   "slug": "find-longest-awesome-substring",
   "title": "Find Longest Awesome Substring",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Bit Manipulation"

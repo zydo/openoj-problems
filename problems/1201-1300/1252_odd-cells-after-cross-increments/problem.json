@@ -4,8 +4,13 @@
   "id": 1252,
   "slug": "odd-cells-after-cross-increments",
   "title": "Odd Cells After Cross Increments",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Simulation"

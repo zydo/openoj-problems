@@ -4,8 +4,13 @@
   "id": 4001,
   "slug": "combine-two-value-timelines",
   "title": "Combine Two Value Timelines",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Simulation"

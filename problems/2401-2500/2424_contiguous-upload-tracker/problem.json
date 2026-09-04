@@ -4,10 +4,20 @@
   "id": 2424,
   "slug": "contiguous-upload-tracker",
   "title": "Contiguous Upload Tracker",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Design"
+  ],
+  "topics": [
+    "Hash Table",
+    "Binary Search",
+    "Union-Find",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

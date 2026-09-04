@@ -4,8 +4,11 @@
   "id": 693,
   "slug": "binary-zigzag-number",
   "title": "Binary Zigzag Number",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

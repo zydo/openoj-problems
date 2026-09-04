@@ -4,8 +4,13 @@
   "id": 4010,
   "slug": "maximize-pair-strength-using-gcd",
   "title": "Maximize Pair Strength Using GCD",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Number Theory",
+    "Math",
+    "Counting"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

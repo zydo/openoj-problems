@@ -4,8 +4,11 @@
   "id": 3950,
   "slug": "exactly-one-consecutive-set-bits-pair",
   "title": "Exactly One Consecutive Set Bits Pair",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

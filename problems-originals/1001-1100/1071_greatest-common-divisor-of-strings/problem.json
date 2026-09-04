@@ -4,8 +4,14 @@
   "id": 1071,
   "slug": "greatest-common-divisor-of-strings",
   "title": "Greatest Common Divisor of Strings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Math",
     "String",
     "Euclidean Algorithm",

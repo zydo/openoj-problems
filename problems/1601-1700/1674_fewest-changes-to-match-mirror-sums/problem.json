@@ -4,9 +4,14 @@
   "id": 1674,
   "slug": "fewest-changes-to-match-mirror-sums",
   "title": "Fewest Changes to Match Mirror Sums",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Prefix Sum"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 1832,
   "slug": "check-if-the-sentence-is-pangram",
   "title": "Check if the Sentence Is Pangram",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

@@ -4,11 +4,18 @@
   "id": 2556,
   "slug": "severing-the-route-with-one-flip",
   "title": "Severing the Route with One Flip",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Matrix",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

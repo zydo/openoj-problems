@@ -4,8 +4,12 @@
   "id": 2081,
   "slug": "two-base-palindrome-sums",
   "title": "Two-Base Palindrome Sums",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

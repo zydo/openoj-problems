@@ -4,8 +4,11 @@
   "id": 1375,
   "slug": "number-of-times-binary-string-is-prefix-aligned",
   "title": "Number of Times Binary String Is Prefix Aligned",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

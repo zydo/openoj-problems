@@ -3,10 +3,16 @@
   "id": 850,
   "slug": "rectangle-area-ii",
   "title": "Rectangle Area II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Segment Tree",
+    "Sweep Line",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

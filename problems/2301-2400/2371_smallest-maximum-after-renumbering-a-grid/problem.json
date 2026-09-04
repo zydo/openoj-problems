@@ -4,10 +4,18 @@
   "id": 2371,
   "slug": "smallest-maximum-after-renumbering-a-grid",
   "title": "Smallest Maximum After Renumbering a Grid",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Union Find",
+    "Graph Theory",
+    "Topological Sort",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
     "Graph Theory",
     "Topological Sort",
     "Sorting",

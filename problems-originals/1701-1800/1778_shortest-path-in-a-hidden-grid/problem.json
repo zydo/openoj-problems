@@ -3,10 +3,17 @@
   "id": 1778,
   "slug": "shortest-path-in-a-hidden-grid",
   "title": "Shortest Path in a Hidden Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "DFS",
     "BFS"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

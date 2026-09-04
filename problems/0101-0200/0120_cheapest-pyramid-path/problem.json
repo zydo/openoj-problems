@@ -4,8 +4,12 @@
   "id": 120,
   "slug": "cheapest-pyramid-path",
   "title": "Cheapest Pyramid Path",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

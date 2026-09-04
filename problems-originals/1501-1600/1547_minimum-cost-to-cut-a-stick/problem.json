@@ -3,10 +3,15 @@
   "id": 1547,
   "slug": "minimum-cost-to-cut-a-stick",
   "title": "Minimum Cost to Cut a Stick",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 951,
   "slug": "flip-equivalent-binary-trees",
   "title": "Flip Equivalent Binary Trees",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

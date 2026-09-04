@@ -4,10 +4,13 @@
   "id": 2720,
   "slug": "share-of-the-network",
   "title": "Share Of The Network",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

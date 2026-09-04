@@ -4,8 +4,15 @@
   "id": 2389,
   "slug": "longest-subsequence-with-limited-sum",
   "title": "Longest Subsequence With Limited Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

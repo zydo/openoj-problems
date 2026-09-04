@@ -4,8 +4,11 @@
   "id": 831,
   "slug": "personal-data-redactor",
   "title": "Personal Data Redactor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

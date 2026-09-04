@@ -4,10 +4,16 @@
   "id": 3500,
   "slug": "cheapest-array-partition-with-index-fees",
   "title": "Cheapest Array Partition With Index Fees",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum",
+    "Li Chao Tree"
   ],
   "invocation": {
     "type": "function",

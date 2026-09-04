@@ -3,12 +3,18 @@
   "id": 979,
   "slug": "distribute-coins-in-binary-tree",
   "title": "Distribute Coins in Binary Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree DP",
     "Tree",
     "Binary Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

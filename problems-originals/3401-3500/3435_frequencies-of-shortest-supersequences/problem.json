@@ -3,13 +3,21 @@
   "id": 3435,
   "slug": "frequencies-of-shortest-supersequences",
   "title": "Frequencies of Shortest Supersequences",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
     "Bit Manipulation",
     "Graph Theory",
     "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Topological Sort",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,13 @@
   "id": 1435,
   "slug": "episode-length-histogram",
   "title": "Episode Length Histogram",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

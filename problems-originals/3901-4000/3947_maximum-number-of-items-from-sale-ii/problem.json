@@ -4,8 +4,14 @@
   "id": 3947,
   "slug": "maximum-number-of-items-from-sale-ii",
   "title": "Maximum Number of Items From Sale II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

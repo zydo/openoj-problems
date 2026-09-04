@@ -4,8 +4,14 @@
   "id": 3624,
   "slug": "number-of-integers-with-popcount-depth-equal-to-k-ii",
   "title": "Number of Integers With Popcount-Depth Equal to K II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Binary Indexed Tree",

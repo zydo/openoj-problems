@@ -4,8 +4,12 @@
   "id": 1531,
   "slug": "string-compression-ii",
   "title": "String Compression II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

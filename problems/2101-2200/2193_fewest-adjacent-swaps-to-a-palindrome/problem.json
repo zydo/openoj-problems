@@ -4,11 +4,17 @@
   "id": 2193,
   "slug": "fewest-adjacent-swaps-to-a-palindrome",
   "title": "Fewest Adjacent Swaps to a Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Greedy",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Greedy",
+    "Binary Indexed Tree"
   ],
   "invocation": {
     "type": "function",

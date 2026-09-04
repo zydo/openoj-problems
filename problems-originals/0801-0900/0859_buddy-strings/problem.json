@@ -4,8 +4,12 @@
   "id": 859,
   "slug": "buddy-strings",
   "title": "Buddy Strings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

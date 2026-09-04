@@ -4,8 +4,12 @@
   "id": 1007,
   "slug": "minimum-domino-rotations-for-equal-row",
   "title": "Minimum Domino Rotations For Equal Row",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

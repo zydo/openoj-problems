@@ -4,8 +4,12 @@
   "id": 3017,
   "slug": "count-the-number-of-houses-at-a-certain-distance-ii",
   "title": "Count the Number of Houses at a Certain Distance II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Graph Theory",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Graph Theory",
     "Prefix Sum"
   ],

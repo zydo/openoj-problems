@@ -4,8 +4,12 @@
   "id": 1362,
   "slug": "closest-divisors",
   "title": "Closest Divisors",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Prime Factorization"
+  ],
+  "topics": [
     "Math",
     "Prime Factorization"
   ],

@@ -4,8 +4,14 @@
   "id": 3430,
   "slug": "sum-of-extremes-over-short-subarrays",
   "title": "Sum of Extremes Over Short Subarrays",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Stack",

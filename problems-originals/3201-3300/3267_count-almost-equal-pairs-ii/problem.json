@@ -4,8 +4,15 @@
   "id": 3267,
   "slug": "count-almost-equal-pairs-ii",
   "title": "Count Almost Equal Pairs II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

@@ -4,8 +4,15 @@
   "id": 690,
   "slug": "employee-importance",
   "title": "Employee Importance",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

@@ -4,10 +4,13 @@
   "id": 1159,
   "slug": "swap-shop-ii",
   "title": "Swap Shop II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

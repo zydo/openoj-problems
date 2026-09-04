@@ -4,8 +4,12 @@
   "id": 3345,
   "slug": "smallest-divisible-digit-product-i",
   "title": "Smallest Divisible Digit Product I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

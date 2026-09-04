@@ -4,8 +4,13 @@
   "id": 415,
   "slug": "add-strings",
   "title": "Add Strings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Simulation"

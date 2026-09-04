@@ -4,8 +4,13 @@
   "id": 1588,
   "slug": "sum-of-all-odd-length-subarrays",
   "title": "Sum of All Odd Length Subarrays",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Prefix Sum"

@@ -4,8 +4,14 @@
   "id": 2267,
   "slug": "balanced-bracket-grid-path",
   "title": "Balanced Bracket Grid Path",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix",

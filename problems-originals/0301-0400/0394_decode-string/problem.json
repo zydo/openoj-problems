@@ -3,8 +3,13 @@
   "id": 394,
   "slug": "decode-string",
   "title": "Decode String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Recursion"

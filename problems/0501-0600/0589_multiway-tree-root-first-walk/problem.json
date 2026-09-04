@@ -4,8 +4,13 @@
   "id": 589,
   "slug": "multiway-tree-root-first-walk",
   "title": "Multiway Tree Root-First Walk",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search"

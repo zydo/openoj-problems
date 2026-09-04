@@ -3,11 +3,18 @@
   "id": 1658,
   "slug": "minimum-operations-to-reduce-x-to-zero",
   "title": "Minimum Operations to Reduce X to Zero",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Prefix Sum",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

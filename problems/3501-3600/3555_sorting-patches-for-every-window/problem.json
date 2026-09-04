@@ -4,11 +4,19 @@
   "id": 3555,
   "slug": "sorting-patches-for-every-window",
   "title": "Sorting Patches For Every Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

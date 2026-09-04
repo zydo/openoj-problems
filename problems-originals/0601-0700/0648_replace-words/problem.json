@@ -4,8 +4,14 @@
   "id": 648,
   "slug": "replace-words",
   "title": "Replace Words",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

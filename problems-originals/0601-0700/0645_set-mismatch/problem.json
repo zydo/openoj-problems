@@ -4,8 +4,14 @@
   "id": 645,
   "slug": "set-mismatch",
   "title": "Set Mismatch",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

@@ -4,10 +4,16 @@
   "id": 681,
   "slug": "closest-achievable-time",
   "title": "Closest Achievable Time",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
+    "Enumeration"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Backtracking",
     "Enumeration"
   ],
   "invocation": {

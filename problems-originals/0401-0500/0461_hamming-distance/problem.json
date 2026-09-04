@@ -4,8 +4,11 @@
   "id": 461,
   "slug": "hamming-distance",
   "title": "Hamming Distance",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

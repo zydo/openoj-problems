@@ -3,11 +3,19 @@
   "id": 3410,
   "slug": "maximize-subarray-sum-after-removing-all-occurrences-of-one-element",
   "title": "Maximize Subarray Sum After Removing All Occurrences of One Element",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Segment Tree",
     "Prefix Sum"
   ],
   "invocation": {

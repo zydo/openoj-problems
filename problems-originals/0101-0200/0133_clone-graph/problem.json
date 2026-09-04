@@ -4,8 +4,14 @@
   "id": 133,
   "slug": "clone-graph",
   "title": "Clone Graph",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Hash Table",
     "Depth-First Search",
     "Breadth-First Search",

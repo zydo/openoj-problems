@@ -4,9 +4,14 @@
   "id": 3877,
   "slug": "fewest-deletions-for-a-target-xor",
   "title": "Fewest Deletions for a Target XOR",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Meet in the Middle",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Bit Manipulation"
   ],
   "invocation": {

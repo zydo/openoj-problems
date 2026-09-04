@@ -4,8 +4,13 @@
   "id": 1588,
   "slug": "summing-the-odd-sized-windows",
   "title": "Summing the Odd-Sized Windows",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Prefix Sum"

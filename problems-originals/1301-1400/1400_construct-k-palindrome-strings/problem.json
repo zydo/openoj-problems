@@ -4,8 +4,14 @@
   "id": 1400,
   "slug": "construct-k-palindrome-strings",
   "title": "Construct K Palindrome Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

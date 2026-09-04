@@ -4,8 +4,12 @@
   "id": 93,
   "slug": "restore-ip-addresses",
   "title": "Restore IP Addresses",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "String",
     "Backtracking"
   ],

@@ -4,11 +4,19 @@
   "id": 1361,
   "slug": "single-well-formed-tree",
   "title": "Single Well-Formed Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Binary Tree",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

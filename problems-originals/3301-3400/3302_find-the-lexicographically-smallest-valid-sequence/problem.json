@@ -4,8 +4,14 @@
   "id": 3302,
   "slug": "find-the-lexicographically-smallest-valid-sequence",
   "title": "Find the Lexicographically Smallest Valid Sequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming",

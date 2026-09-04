@@ -3,11 +3,20 @@
   "id": 1434,
   "slug": "number-of-ways-to-wear-different-hats-to-each-other",
   "title": "Number of Ways to Wear Different Hats to Each Other",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask",
+    "Bipartite Graph",
+    "Matching (Graph)",
+    "Perfect Matching"
   ],
   "invocation": {
     "type": "function",

@@ -3,11 +3,16 @@
   "id": 647,
   "slug": "palindromic-substrings",
   "title": "Palindromic Substrings",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "String",
     "Manacher"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,18 @@
   "id": 2838,
   "slug": "spoils-each-hero-can-claim",
   "title": "Spoils Each Hero Can Claim",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting",
     "Prefix Sum"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 849,
   "slug": "furthest-open-seat",
   "title": "Furthest Open Seat",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

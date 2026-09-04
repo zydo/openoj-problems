@@ -3,12 +3,18 @@
   "id": 763,
   "slug": "partition-labels",
   "title": "Partition Labels",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Two Pointers",
     "Hash Table",
     "String"
+  ],
+  "topics": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

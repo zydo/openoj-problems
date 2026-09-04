@@ -3,8 +3,11 @@
   "id": 790,
   "slug": "domino-and-tromino-tiling",
   "title": "Domino and Tromino Tiling",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

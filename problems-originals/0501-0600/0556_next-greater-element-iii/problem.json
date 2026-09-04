@@ -4,8 +4,13 @@
   "id": 556,
   "slug": "next-greater-element-iii",
   "title": "Next Greater Element III",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Math",
     "Two Pointers",
     "String"

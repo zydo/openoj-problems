@@ -3,8 +3,14 @@
   "id": 1074,
   "slug": "number-of-submatrices-that-sum-to-target",
   "title": "Number of Submatrices That Sum to Target",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix",

@@ -4,11 +4,15 @@
   "id": 1354,
   "slug": "reachable-by-replacing-with-the-sum",
   "title": "Reachable by Replacing With the Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Heap",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

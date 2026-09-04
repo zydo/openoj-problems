@@ -4,8 +4,11 @@
   "id": 1677,
   "slug": "products-worth-over-invoices",
   "title": "Product's Worth Over Invoices",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

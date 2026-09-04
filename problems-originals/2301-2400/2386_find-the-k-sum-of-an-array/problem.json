@@ -3,11 +3,16 @@
   "id": 2386,
   "slug": "find-the-k-sum-of-an-array",
   "title": "Find the K-Sum of an Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

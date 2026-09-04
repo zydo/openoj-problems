@@ -4,8 +4,13 @@
   "id": 2930,
   "slug": "number-of-strings-which-can-be-rearranged-to-contain-substring",
   "title": "Number of Strings Which Can Be Rearranged to Contain Substring",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Combinatorics"

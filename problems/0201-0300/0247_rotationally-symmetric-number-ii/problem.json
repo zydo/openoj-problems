@@ -4,11 +4,16 @@
   "id": 247,
   "slug": "rotationally-symmetric-number-ii",
   "title": "Rotationally Symmetric Number II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Recursion",
     "String",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

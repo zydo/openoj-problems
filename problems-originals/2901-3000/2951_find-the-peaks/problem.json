@@ -4,8 +4,12 @@
   "id": 2951,
   "slug": "find-the-peaks",
   "title": "Find the Peaks",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

@@ -3,13 +3,20 @@
   "id": 2307,
   "slug": "check-for-contradictions-in-equations",
   "title": "Check for Contradictions in Equations",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
     "Depth First Search",
     "Union Find",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

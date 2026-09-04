@@ -4,8 +4,12 @@
   "id": 794,
   "slug": "reachable-grid-state",
   "title": "Reachable Grid State",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

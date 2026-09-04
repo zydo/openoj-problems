@@ -4,8 +4,12 @@
   "id": 573,
   "slug": "nut-gathering-route",
   "title": "Nut Gathering Route",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

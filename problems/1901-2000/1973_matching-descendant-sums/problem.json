@@ -4,8 +4,13 @@
   "id": 1973,
   "slug": "matching-descendant-sums",
   "title": "Matching Descendant Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

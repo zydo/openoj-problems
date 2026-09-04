@@ -4,8 +4,12 @@
   "id": 161,
   "slug": "one-edit-distance",
   "title": "One Edit Distance",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

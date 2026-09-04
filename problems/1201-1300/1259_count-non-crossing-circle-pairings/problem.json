@@ -4,10 +4,14 @@
   "id": 1259,
   "slug": "count-non-crossing-circle-pairings",
   "title": "Count Non-Crossing Circle Pairings",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Combinatorics"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

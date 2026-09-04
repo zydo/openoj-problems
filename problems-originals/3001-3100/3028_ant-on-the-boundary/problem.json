@@ -4,8 +4,13 @@
   "id": 3028,
   "slug": "ant-on-the-boundary",
   "title": "Ant on the Boundary",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Simulation",
     "Prefix Sum"

@@ -4,10 +4,13 @@
   "id": 596,
   "slug": "courses-with-five-or-more-enrollees",
   "title": "Courses With Five or More Enrollees",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

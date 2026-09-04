@@ -4,9 +4,16 @@
   "id": 2748,
   "slug": "counting-coprime-digit-pairs",
   "title": "Counting Coprime Digit Pairs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Math",
     "Counting",
     "Number Theory"

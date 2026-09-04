@@ -4,8 +4,13 @@
   "id": 757,
   "slug": "fewest-points-hitting-every-range-twice",
   "title": "Fewest Points Hitting Every Range Twice",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

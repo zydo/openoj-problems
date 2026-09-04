@@ -4,8 +4,13 @@
   "id": 3989,
   "slug": "maximum-consistent-columns-in-a-grid",
   "title": "Maximum Consistent Columns in a Grid",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Dynamic Programming",
+    "Bitmask",
+    "Binary Search"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -4,8 +4,12 @@
   "id": 481,
   "slug": "self-describing-run-ones",
   "title": "Self-Describing Run Ones",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

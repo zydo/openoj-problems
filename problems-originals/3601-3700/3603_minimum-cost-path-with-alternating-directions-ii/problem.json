@@ -4,8 +4,13 @@
   "id": 3603,
   "slug": "minimum-cost-path-with-alternating-directions-ii",
   "title": "Minimum Cost Path with Alternating Directions II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

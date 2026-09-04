@@ -4,8 +4,11 @@
   "id": 1281,
   "slug": "digit-product-minus-digit-sum",
   "title": "Digit Product Minus Digit Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

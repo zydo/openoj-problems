@@ -3,8 +3,13 @@
   "id": 2136,
   "slug": "earliest-possible-day-of-full-bloom",
   "title": "Earliest Possible Day of Full Bloom",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

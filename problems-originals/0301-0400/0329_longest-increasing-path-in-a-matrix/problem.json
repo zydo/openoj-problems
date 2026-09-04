@@ -3,11 +3,22 @@
   "id": 329,
   "slug": "longest-increasing-path-in-a-matrix",
   "title": "Longest Increasing Path in a Matrix",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Depth-First Search",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
+    "Matrix",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

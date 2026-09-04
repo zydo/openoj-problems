@@ -4,12 +4,22 @@
   "id": 2290,
   "slug": "cheapest-corner-to-corner-route",
   "title": "Cheapest Corner-to-Corner Route",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Breadth First Search",
     "Matrix",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path",
+    "0-1 BFS",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

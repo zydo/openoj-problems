@@ -4,8 +4,13 @@
   "id": 335,
   "slug": "self-crossing",
   "title": "Self Crossing",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

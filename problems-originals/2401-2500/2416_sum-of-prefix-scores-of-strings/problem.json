@@ -3,8 +3,14 @@
   "id": 2416,
   "slug": "sum-of-prefix-scores-of-strings",
   "title": "Sum of Prefix Scores of Strings",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Trie",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "String",
     "Trie",

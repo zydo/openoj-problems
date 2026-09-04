@@ -3,8 +3,12 @@
   "id": 338,
   "slug": "counting-bits",
   "title": "Counting Bits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Bit Manipulation"
   ],

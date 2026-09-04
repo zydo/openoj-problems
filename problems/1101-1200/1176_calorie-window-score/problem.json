@@ -4,8 +4,12 @@
   "id": 1176,
   "slug": "calorie-window-score",
   "title": "Calorie Window Score",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

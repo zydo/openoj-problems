@@ -4,8 +4,13 @@
   "id": 3525,
   "slug": "product-remainder-tallies-ii",
   "title": "Product Remainder Tallies II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Segment Tree"

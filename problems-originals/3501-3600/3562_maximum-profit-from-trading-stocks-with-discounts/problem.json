@@ -3,10 +3,16 @@
   "id": 3562,
   "slug": "maximum-profit-from-trading-stocks-with-discounts",
   "title": "Maximum Profit from Trading Stocks with Discounts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

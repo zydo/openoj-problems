@@ -4,8 +4,13 @@
   "id": 3907,
   "slug": "count-smaller-elements-with-opposite-parity",
   "title": "Count Smaller Elements With Opposite Parity",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Binary Indexed Tree",
+    "Divide and Conquer",
+    "Binary Search"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

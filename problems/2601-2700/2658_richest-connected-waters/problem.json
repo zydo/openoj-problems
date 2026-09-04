@@ -4,11 +4,18 @@
   "id": 2658,
   "slug": "richest-connected-waters",
   "title": "Richest Connected Waters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

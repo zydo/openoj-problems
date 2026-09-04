@@ -4,8 +4,12 @@
   "id": 1531,
   "slug": "trim-before-encoding-ii",
   "title": "Trim Before Encoding II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

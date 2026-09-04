@@ -4,8 +4,11 @@
   "id": 507,
   "slug": "perfect-number-test",
   "title": "Perfect Number Test",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

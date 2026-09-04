@@ -4,12 +4,21 @@
   "id": 2234,
   "slug": "gardens-to-the-brim-rest-balanced",
   "title": "Gardens to the Brim, the Rest Balanced",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Greedy",
     "Binary Search",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Enumeration",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

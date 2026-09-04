@@ -4,8 +4,12 @@
   "id": 2904,
   "slug": "the-tidiest-substring-with-k-ones",
   "title": "The Tidiest Substring With K Ones",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

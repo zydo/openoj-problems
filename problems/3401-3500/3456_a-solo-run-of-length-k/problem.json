@@ -4,8 +4,11 @@
   "id": 3456,
   "slug": "a-solo-run-of-length-k",
   "title": "A Solo Run Of Length K",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 3373,
   "slug": "maximize-the-number-of-target-nodes-after-connecting-trees-ii",
   "title": "Maximize the Number of Target Nodes After Connecting Trees II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"

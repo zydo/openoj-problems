@@ -4,8 +4,11 @@
   "id": 728,
   "slug": "digit-divisor-numbers",
   "title": "Digit Divisor Numbers",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

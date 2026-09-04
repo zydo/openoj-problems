@@ -4,8 +4,14 @@
   "id": 101,
   "slug": "does-the-tree-mirror-itself",
   "title": "Does The Tree Mirror Itself?",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

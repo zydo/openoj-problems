@@ -4,11 +4,18 @@
   "id": 3720,
   "slug": "smallest-rearrangement-beating-the-target",
   "title": "Smallest Rearrangement Beating The Target",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Greedy",
     "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

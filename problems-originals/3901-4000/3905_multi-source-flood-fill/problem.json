@@ -3,10 +3,15 @@
   "id": 3905,
   "slug": "multi-source-flood-fill",
   "title": "Multi Source Flood Fill",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "BFS"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 750,
   "slug": "number-of-corner-rectangles",
   "title": "Number of Corner Rectangles",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

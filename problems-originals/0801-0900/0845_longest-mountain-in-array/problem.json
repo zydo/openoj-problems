@@ -4,8 +4,14 @@
   "id": 845,
   "slug": "longest-mountain-in-array",
   "title": "Longest Mountain in Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Dynamic Programming",

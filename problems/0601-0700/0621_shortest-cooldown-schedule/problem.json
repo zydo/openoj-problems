@@ -4,11 +4,19 @@
   "id": 621,
   "slug": "shortest-cooldown-schedule",
   "title": "Shortest Cooldown Schedule",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 1432,
   "slug": "max-difference-you-can-get-from-changing-an-integer",
   "title": "Max Difference You Can Get From Changing an Integer",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

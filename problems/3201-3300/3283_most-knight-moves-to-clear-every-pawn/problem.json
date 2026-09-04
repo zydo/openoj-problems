@@ -4,12 +4,20 @@
   "id": 3283,
   "slug": "most-knight-moves-to-clear-every-pawn",
   "title": "Most Knight Moves to Clear Every Pawn",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Breadth-First Search",
     "Bit Manipulation",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Game Theory",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

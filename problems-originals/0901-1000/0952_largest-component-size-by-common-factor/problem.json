@@ -4,8 +4,16 @@
   "id": 952,
   "slug": "largest-component-size-by-common-factor",
   "title": "Largest Component Size by Common Factor",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Union-Find",
+    "Number Theory",
+    "Prime Factorization"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

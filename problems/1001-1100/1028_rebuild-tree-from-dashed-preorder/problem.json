@@ -4,8 +4,14 @@
   "id": 1028,
   "slug": "rebuild-tree-from-dashed-preorder",
   "title": "Rebuild a Tree From Its Dashed Preorder",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "String",
     "Tree",
     "Depth-First Search",

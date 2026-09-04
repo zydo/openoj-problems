@@ -3,10 +3,13 @@
   "id": 440,
   "slug": "k-th-smallest-in-lexicographical-order",
   "title": "K-th Smallest in Lexicographical Order",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Tree"
+  ],
+  "topics": [
+    "Trie"
   ],
   "invocation": {
     "type": "function",

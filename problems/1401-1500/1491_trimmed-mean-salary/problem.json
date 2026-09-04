@@ -4,8 +4,12 @@
   "id": 1491,
   "slug": "trimmed-mean-salary",
   "title": "Trimmed Mean Salary",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

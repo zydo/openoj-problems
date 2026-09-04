@@ -4,8 +4,13 @@
   "id": 3531,
   "slug": "count-covered-buildings",
   "title": "Count Covered Buildings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

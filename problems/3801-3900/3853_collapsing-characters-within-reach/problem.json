@@ -4,8 +4,12 @@
   "id": 3853,
   "slug": "collapsing-characters-within-reach",
   "title": "Collapsing Characters Within Reach",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

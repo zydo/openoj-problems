@@ -3,8 +3,13 @@
   "id": 813,
   "slug": "largest-sum-of-averages",
   "title": "Largest Sum of Averages",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

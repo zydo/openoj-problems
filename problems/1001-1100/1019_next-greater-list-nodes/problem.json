@@ -4,8 +4,14 @@
   "id": 1019,
   "slug": "next-greater-list-nodes",
   "title": "Next Greater, List Nodes",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
     "Linked List",
     "Stack",
     "Monotonic Stack"

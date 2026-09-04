@@ -4,8 +4,12 @@
   "id": 2670,
   "slug": "distinct-gap-array",
   "title": "Distinct Gap Array",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

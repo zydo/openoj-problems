@@ -3,8 +3,14 @@
   "id": 3352,
   "slug": "count-k-reducible-numbers-less-than-n",
   "title": "Count K-Reducible Numbers Less Than N",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming",

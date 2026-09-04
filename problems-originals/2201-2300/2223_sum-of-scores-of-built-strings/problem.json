@@ -3,10 +3,20 @@
   "id": 2223,
   "slug": "sum-of-scores-of-built-strings",
   "title": "Sum of Scores of Built Strings",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Z Algorithm"
+  ],
+  "topics": [
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "String Matching",
+    "Hash Function",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm"
   ],
   "invocation": {
     "type": "function",

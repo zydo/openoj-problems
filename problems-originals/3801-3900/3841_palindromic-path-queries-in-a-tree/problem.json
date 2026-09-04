@@ -4,8 +4,17 @@
   "id": 3841,
   "slug": "palindromic-path-queries-in-a-tree",
   "title": "Palindromic Path Queries in a Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Divide and Conquer",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "String",
     "Divide and Conquer",

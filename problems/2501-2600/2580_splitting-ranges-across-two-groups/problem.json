@@ -4,8 +4,12 @@
   "id": 2580,
   "slug": "splitting-ranges-across-two-groups",
   "title": "Splitting Ranges Across Two Groups",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

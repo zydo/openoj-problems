@@ -4,8 +4,13 @@
   "id": 3228,
   "slug": "maximum-number-of-operations-to-move-ones-to-the-end",
   "title": "Maximum Number of Operations to Move Ones to the End",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Counting"

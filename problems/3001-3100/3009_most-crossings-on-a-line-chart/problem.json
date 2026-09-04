@@ -4,11 +4,20 @@
   "id": 3009,
   "slug": "most-crossings-on-a-line-chart",
   "title": "Most Crossings On A Line Chart",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Sweep Line"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Binary Indexed Tree",
+    "Geometry",
+    "Sweep Line",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

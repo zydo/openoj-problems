@@ -4,8 +4,13 @@
   "id": 2160,
   "slug": "two-numbers-from-four-digits",
   "title": "Two Numbers From Four Digits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Sorting"

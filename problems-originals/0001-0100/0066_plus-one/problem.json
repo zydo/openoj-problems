@@ -4,8 +4,12 @@
   "id": 66,
   "slug": "plus-one",
   "title": "Plus One",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

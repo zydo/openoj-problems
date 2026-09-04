@@ -4,9 +4,16 @@
   "id": 2596,
   "slug": "the-knights-round-trip",
   "title": "The Knight's Round Trip",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Matrix",
     "Simulation"
   ],

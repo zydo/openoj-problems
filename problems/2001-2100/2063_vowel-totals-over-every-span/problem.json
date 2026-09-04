@@ -4,10 +4,16 @@
   "id": 2063,
   "slug": "vowel-totals-over-every-span",
   "title": "Vowel Totals Over Every Span",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "String",
+    "Combinatorics"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming",
     "Combinatorics"
   ],
   "invocation": {

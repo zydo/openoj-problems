@@ -4,8 +4,12 @@
   "id": 3350,
   "slug": "adjacent-increasing-subarrays-detection-ii",
   "title": "Adjacent Increasing Subarrays Detection II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

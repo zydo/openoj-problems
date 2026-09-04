@@ -3,11 +3,19 @@
   "id": 268,
   "slug": "missing-number",
   "title": "Missing Number",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Bit Manipulation",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Binary Search",
+    "Bit Manipulation",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

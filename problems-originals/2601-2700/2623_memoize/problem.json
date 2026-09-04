@@ -4,8 +4,12 @@
   "id": 2623,
   "slug": "memoize",
   "title": "Memoize",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Design",
+    "Hash Table"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

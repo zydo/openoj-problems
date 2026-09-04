@@ -3,11 +3,19 @@
   "id": 307,
   "slug": "range-sum-query-mutable",
   "title": "Range Sum Query - Mutable",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Segment Tree",
     "Fenwick Tree",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sqrt Decomposition"
   ],
   "invocation": {
     "type": "design",

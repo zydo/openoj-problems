@@ -4,8 +4,13 @@
   "id": 2711,
   "slug": "difference-of-number-of-distinct-values-on-diagonals",
   "title": "Difference of Number of Distinct Values on Diagonals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix"

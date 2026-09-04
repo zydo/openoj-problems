@@ -4,11 +4,18 @@
   "id": 2539,
   "slug": "subsequences-at-a-shared-frequency",
   "title": "Subsequences at a Shared Frequency",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Combinatorics",
     "String"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,16 @@
   "id": 1670,
   "slug": "design-front-middle-back-queue",
   "title": "Design Front Middle Back Queue",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Linked List",
+    "Design",
+    "Queue",
+    "Doubly-Linked List",
+    "Data Stream"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Design",

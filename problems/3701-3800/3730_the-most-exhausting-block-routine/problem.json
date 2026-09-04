@@ -4,8 +4,14 @@
   "id": 3730,
   "slug": "the-most-exhausting-block-routine",
   "title": "The Most Exhausting Block Routine",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy",

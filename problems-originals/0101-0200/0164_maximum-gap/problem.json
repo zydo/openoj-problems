@@ -4,8 +4,15 @@
   "id": 164,
   "slug": "maximum-gap",
   "title": "Maximum Gap",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Bucket Sort",
+    "Radix Sort",
+    "Pigeonhole Principle"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Bucket Sort",

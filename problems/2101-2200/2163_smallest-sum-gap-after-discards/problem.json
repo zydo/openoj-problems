@@ -4,10 +4,15 @@
   "id": 2163,
   "slug": "smallest-sum-gap-after-discards",
   "title": "Smallest Sum Gap After Discards",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

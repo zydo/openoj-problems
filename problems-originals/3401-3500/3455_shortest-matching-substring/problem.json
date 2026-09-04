@@ -3,10 +3,16 @@
   "id": 3455,
   "slug": "shortest-matching-substring",
   "title": "Shortest Matching Substring",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Z Algorithm"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "String Matching"
   ],
   "invocation": {
     "type": "function",

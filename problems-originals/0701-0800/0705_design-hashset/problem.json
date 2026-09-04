@@ -4,8 +4,15 @@
   "id": 705,
   "slug": "design-hashset",
   "title": "Design HashSet",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Linked List",

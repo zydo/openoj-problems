@@ -4,10 +4,13 @@
   "id": 3642,
   "slug": "films-with-splintered-audiences",
   "title": "Films With Splintered Audiences",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

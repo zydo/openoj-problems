@@ -4,8 +4,14 @@
   "id": 2970,
   "slug": "count-the-number-of-incremovable-subarrays-i",
   "title": "Count the Number of Incremovable Subarrays I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

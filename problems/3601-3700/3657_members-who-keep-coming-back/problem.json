@@ -4,10 +4,13 @@
   "id": 3657,
   "slug": "members-who-keep-coming-back",
   "title": "Members Who Keep Coming Back",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

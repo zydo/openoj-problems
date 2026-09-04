@@ -4,10 +4,15 @@
   "id": 3253,
   "slug": "cheapest-string-assembly-ii",
   "title": "Cheapest String Assembly II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "String Matching"
   ],
   "invocation": {
     "type": "function",

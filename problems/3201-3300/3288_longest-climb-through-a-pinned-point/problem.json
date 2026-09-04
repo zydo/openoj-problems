@@ -4,8 +4,14 @@
   "id": 3288,
   "slug": "longest-climb-through-a-pinned-point",
   "title": "Longest Climb Through A Pinned Point",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Longest Increasing Subsequence"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting",

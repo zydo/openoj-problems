@@ -4,8 +4,11 @@
   "id": 790,
   "slug": "two-row-strip-tilings",
   "title": "Two-Row Strip Tilings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

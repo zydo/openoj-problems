@@ -4,12 +4,19 @@
   "id": 220,
   "slug": "near-duplicate-in-range-iii",
   "title": "Near Duplicate in Range III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Sliding Window",
     "Bucket Sort"
+  ],
+  "topics": [
+    "Array",
+    "Sliding Window",
+    "Sorting",
+    "Bucket Sort",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

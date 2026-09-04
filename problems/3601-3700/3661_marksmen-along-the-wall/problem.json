@@ -4,8 +4,14 @@
   "id": 3661,
   "slug": "marksmen-along-the-wall",
   "title": "Marksmen Along The Wall",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Dynamic Programming",

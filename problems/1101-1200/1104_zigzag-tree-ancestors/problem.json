@@ -4,8 +4,13 @@
   "id": 1104,
   "slug": "zigzag-tree-ancestors",
   "title": "Zigzag Tree Ancestors",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Math",
     "Tree",
     "Binary Tree"

@@ -4,8 +4,12 @@
   "id": 650,
   "slug": "copy-paste-minimum-steps",
   "title": "Copy-Paste Minimum Steps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

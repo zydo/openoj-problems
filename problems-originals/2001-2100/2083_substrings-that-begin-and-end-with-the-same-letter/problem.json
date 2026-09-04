@@ -4,8 +4,15 @@
   "id": 2083,
   "slug": "substrings-that-begin-and-end-with-the-same-letter",
   "title": "Substrings That Begin and End With the Same Letter",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

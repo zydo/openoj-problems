@@ -4,8 +4,13 @@
   "id": 274,
   "slug": "h-index",
   "title": "H-Index",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Counting Sort"

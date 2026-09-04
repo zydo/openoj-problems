@@ -4,8 +4,16 @@
   "id": 3594,
   "slug": "minimum-time-to-transport-all-individuals",
   "title": "Minimum Time to Transport All Individuals",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Graph Theory",

@@ -3,10 +3,15 @@
   "id": 891,
   "slug": "sum-of-subsequence-widths",
   "title": "Sum of Subsequence Widths",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Sorting",
     "Combinatorics"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,16 @@
   "id": 3766,
   "slug": "steps-to-nearest-binary-palindrome",
   "title": "Steps To The Nearest Binary Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
     "Bit Manipulation"
   ],
   "invocation": {

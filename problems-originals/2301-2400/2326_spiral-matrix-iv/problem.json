@@ -4,8 +4,14 @@
   "id": 2326,
   "slug": "spiral-matrix-iv",
   "title": "Spiral Matrix IV",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Linked List",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Matrix",

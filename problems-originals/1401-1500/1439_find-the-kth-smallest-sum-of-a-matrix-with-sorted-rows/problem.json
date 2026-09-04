@@ -4,8 +4,14 @@
   "id": 1439,
   "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
   "title": "Find the Kth Smallest Sum of a Matrix With Sorted Rows",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Heap (Priority Queue)",

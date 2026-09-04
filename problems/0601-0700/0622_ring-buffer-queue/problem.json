@@ -4,9 +4,15 @@
   "id": 622,
   "slug": "ring-buffer-queue",
   "title": "Ring Buffer Queue",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Design",
+    "Queue"
+  ],
+  "topics": [
+    "Array",
+    "Linked List",
     "Design",
     "Queue"
   ],

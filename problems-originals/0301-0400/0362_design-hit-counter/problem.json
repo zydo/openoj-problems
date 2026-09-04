@@ -4,8 +4,15 @@
   "id": 362,
   "slug": "design-hit-counter",
   "title": "Design Hit Counter",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Design",

@@ -4,8 +4,13 @@
   "id": 284,
   "slug": "lookahead-iterator",
   "title": "Lookahead Iterator",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Design",
+    "Iterator"
+  ],
+  "topics": [
     "Array",
     "Design",
     "Iterator"

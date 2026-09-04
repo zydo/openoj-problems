@@ -4,8 +4,12 @@
   "id": 40,
   "slug": "sum-picks-ii",
   "title": "Sum Picks II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Backtracking"
   ],

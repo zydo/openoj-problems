@@ -4,8 +4,15 @@
   "id": 3805,
   "slug": "count-caesar-cipher-pairs",
   "title": "Count Caesar Cipher Pairs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

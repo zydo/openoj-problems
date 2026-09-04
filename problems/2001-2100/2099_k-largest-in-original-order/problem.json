@@ -4,10 +4,16 @@
   "id": 2099,
   "slug": "k-largest-in-original-order",
   "title": "K Largest in Original Order",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 1237,
   "slug": "find-positive-integer-solution-for-a-given-equation",
   "title": "Find Positive Integer Solution for a Given Equation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Two Pointers",
+    "Binary Search",
+    "Interactive"
+  ],
+  "topics": [
     "Math",
     "Two Pointers",
     "Binary Search",

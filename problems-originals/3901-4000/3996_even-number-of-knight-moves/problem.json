@@ -4,8 +4,12 @@
   "id": 3996,
   "slug": "even-number-of-knight-moves",
   "title": "Even Number of Knight Moves",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Math",
+    "Breadth-First Search"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

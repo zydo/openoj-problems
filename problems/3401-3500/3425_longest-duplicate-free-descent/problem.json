@@ -4,8 +4,15 @@
   "id": 3425,
   "slug": "longest-duplicate-free-descent",
   "title": "Longest Duplicate-Free Descent",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

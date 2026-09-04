@@ -4,8 +4,11 @@
   "id": 2480,
   "slug": "form-a-chemical-bond",
   "title": "Form a Chemical Bond",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 2023,
   "slug": "number-of-pairs-of-strings-with-concatenation-equal-to-target",
   "title": "Number of Pairs of Strings With Concatenation Equal to Target",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

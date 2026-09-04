@@ -4,8 +4,11 @@
   "id": 2887,
   "slug": "fill-missing-data",
   "title": "Fill Missing Data",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

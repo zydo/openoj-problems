@@ -4,8 +4,12 @@
   "id": 3753,
   "slug": "summing-digit-bends-in-range-ii",
   "title": "Summing Digit Bends In A Range II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

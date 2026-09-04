@@ -4,10 +4,15 @@
   "id": 2782,
   "slug": "counting-the-distinct-kinds",
   "title": "Counting The Distinct Kinds",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Interactive",
     "Union-Find",
+    "Counting"
+  ],
+  "topics": [
+    "Union-Find",
+    "Interactive",
     "Counting"
   ],
   "invocation": {

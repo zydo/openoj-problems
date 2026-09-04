@@ -4,8 +4,15 @@
   "id": 3428,
   "slug": "maximum-and-minimum-sums-of-at-most-size-k-subsequences",
   "title": "Maximum and Minimum Sums of at Most Size K Subsequences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Sorting",
+    "Combinatorics"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

@@ -4,9 +4,13 @@
   "id": 2724,
   "slug": "ordering-a-list-by-a-key-function",
   "title": "Ordering A List By A Key Function",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

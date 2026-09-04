@@ -4,8 +4,12 @@
   "id": 794,
   "slug": "valid-tic-tac-toe-state",
   "title": "Valid Tic-Tac-Toe State",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

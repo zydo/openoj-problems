@@ -4,8 +4,13 @@
   "id": 1253,
   "slug": "reconstruct-a-2-row-binary-matrix",
   "title": "Reconstruct a 2-Row Binary Matrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix"

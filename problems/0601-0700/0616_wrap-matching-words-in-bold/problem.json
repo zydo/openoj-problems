@@ -4,11 +4,19 @@
   "id": 616,
   "slug": "wrap-matching-words-in-bold",
   "title": "Wrap Matching Words in Bold",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "String Matching"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "String Matching",
+    "Aho–Corasick Algorithm"
   ],
   "invocation": {
     "type": "function",

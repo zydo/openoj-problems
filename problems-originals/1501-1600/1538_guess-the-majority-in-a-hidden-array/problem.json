@@ -4,8 +4,14 @@
   "id": 1538,
   "slug": "guess-the-majority-in-a-hidden-array",
   "title": "Guess the Majority in a Hidden Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Interactive",
+    "Boyer–Moore Majority Vote Algorithm"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Interactive",

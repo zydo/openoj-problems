@@ -4,8 +4,13 @@
   "id": 2939,
   "slug": "maximum-xor-product",
   "title": "Maximum Xor Product",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Bit Manipulation"

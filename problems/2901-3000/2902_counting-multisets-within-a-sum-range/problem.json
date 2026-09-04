@@ -4,12 +4,20 @@
   "id": 2902,
   "slug": "counting-multisets-within-a-sum-range",
   "title": "Counting Multisets Within A Sum Range",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Sliding Window",
     "Knapsack Problem"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Knapsack Problem",
+    "Multiple Knapsack"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 523,
   "slug": "multiple-of-k-subarray",
   "title": "Multiple-of-K Subarray",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Prefix Sum",
+    "Pigeonhole Principle"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

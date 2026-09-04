@@ -4,8 +4,12 @@
   "id": 3987,
   "slug": "minimum-total-cost-to-process-all-elements",
   "title": "Minimum Total Cost to Process All Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Greedy",
+    "Math"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -4,8 +4,14 @@
   "id": 2464,
   "slug": "minimum-subarrays-in-a-valid-split",
   "title": "Minimum Subarrays in a Valid Split",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

@@ -4,8 +4,15 @@
   "id": 1366,
   "slug": "rank-teams-by-votes",
   "title": "Rank Teams by Votes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

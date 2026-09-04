@@ -3,11 +3,17 @@
   "id": 2477,
   "slug": "minimum-fuel-cost-to-report-to-the-capital",
   "title": "Minimum Fuel Cost to Report to the Capital",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Greedy"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 1437,
   "slug": "enough-zeros-between-the-ones",
   "title": "Enough Zeros Between the Ones",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

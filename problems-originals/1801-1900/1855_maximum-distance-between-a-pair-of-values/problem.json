@@ -4,8 +4,13 @@
   "id": 1855,
   "slug": "maximum-distance-between-a-pair-of-values",
   "title": "Maximum Distance Between a Pair of Values",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search"

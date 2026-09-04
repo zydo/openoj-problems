@@ -4,8 +4,14 @@
   "id": 389,
   "slug": "find-the-difference",
   "title": "Find the Difference",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Bit Manipulation",

@@ -4,8 +4,14 @@
   "id": 3695,
   "slug": "largest-alternating-total-from-swaps",
   "title": "Largest Alternating Total From Swaps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Union-Find",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Union-Find",

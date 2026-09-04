@@ -4,8 +4,13 @@
   "id": 2696,
   "slug": "peeling-pairs-off-a-string",
   "title": "Peeling Pairs Off A String",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

@@ -4,8 +4,13 @@
   "id": 2399,
   "slug": "well-spaced-letter-pairs",
   "title": "Well-Spaced Letter Pairs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

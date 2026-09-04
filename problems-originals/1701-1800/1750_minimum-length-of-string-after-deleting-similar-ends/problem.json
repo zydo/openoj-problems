@@ -4,8 +4,12 @@
   "id": 1750,
   "slug": "minimum-length-of-string-after-deleting-similar-ends",
   "title": "Minimum Length of String After Deleting Similar Ends",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

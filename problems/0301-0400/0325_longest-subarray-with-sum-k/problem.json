@@ -4,10 +4,15 @@
   "id": 325,
   "slug": "longest-subarray-with-sum-k",
   "title": "Longest Subarray With Sum k",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Prefix Sum",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

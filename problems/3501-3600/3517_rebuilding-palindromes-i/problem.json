@@ -4,8 +4,13 @@
   "id": 3517,
   "slug": "rebuilding-palindromes-i",
   "title": "Rebuilding Palindromes I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "String",
     "Sorting",
     "Counting Sort"

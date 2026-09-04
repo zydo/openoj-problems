@@ -4,9 +4,12 @@
   "id": 935,
   "slug": "knight-keypad-paths",
   "title": "Knight Keypad Paths",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

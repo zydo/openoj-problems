@@ -4,8 +4,12 @@
   "id": 3640,
   "slug": "trionic-array-ii",
   "title": "Trionic Array II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

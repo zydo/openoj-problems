@@ -4,8 +4,12 @@
   "id": 2550,
   "slug": "count-collisions-of-monkeys-on-a-polygon",
   "title": "Count Collisions of Monkeys on a Polygon",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Recursion"
   ],

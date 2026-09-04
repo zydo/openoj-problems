@@ -4,8 +4,13 @@
   "id": 122,
   "slug": "best-time-to-buy-and-sell-stock-ii",
   "title": "Best Time to Buy and Sell Stock II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

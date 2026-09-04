@@ -4,9 +4,16 @@
   "id": 3927,
   "slug": "divisor-ladder-pull-down",
   "title": "The Divisor Ladder Pull-Down",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Math",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Math",
     "Greedy",
     "Number Theory"

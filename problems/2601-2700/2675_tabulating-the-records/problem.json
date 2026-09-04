@@ -4,9 +4,13 @@
   "id": 2675,
   "slug": "tabulating-the-records",
   "title": "Tabulating The Records",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Array",
+    "Recursion"
   ],
   "invocation": {
     "type": "interactive",

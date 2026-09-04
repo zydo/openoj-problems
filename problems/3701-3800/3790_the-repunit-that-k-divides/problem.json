@@ -4,8 +4,12 @@
   "id": 3790,
   "slug": "the-repunit-that-k-divides",
   "title": "The Repunit That k Divides",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Hash Table",
     "Math"
   ],

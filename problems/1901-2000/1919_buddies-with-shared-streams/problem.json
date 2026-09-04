@@ -4,10 +4,13 @@
   "id": 1919,
   "slug": "buddies-with-shared-streams",
   "title": "Buddies with Shared Streams",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

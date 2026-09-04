@@ -4,10 +4,14 @@
   "id": 489,
   "slug": "sweep-the-hidden-room",
   "title": "Sweep the Hidden Room",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "DFS",
     "Backtracking"
+  ],
+  "topics": [
+    "Backtracking",
+    "Interactive"
   ],
   "invocation": {
     "type": "interactive",

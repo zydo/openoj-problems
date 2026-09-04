@@ -4,8 +4,13 @@
   "id": 2682,
   "slug": "who-never-got-the-ball",
   "title": "Who Never Got the Ball",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

@@ -4,8 +4,12 @@
   "id": 591,
   "slug": "markup-snippet-validator",
   "title": "Markup Snippet Validator",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

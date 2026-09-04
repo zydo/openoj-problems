@@ -4,10 +4,19 @@
   "id": 2407,
   "slug": "longest-increasing-subsequence-with-bounded-steps",
   "title": "Longest Increasing Subsequence With Bounded Steps",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Queue",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

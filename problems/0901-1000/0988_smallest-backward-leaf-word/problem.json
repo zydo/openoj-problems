@@ -4,9 +4,16 @@
   "id": 988,
   "slug": "smallest-backward-leaf-word",
   "title": "Smallest Backward Leaf Word",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "String",
+    "Backtracking",
     "Tree",
     "Depth-First Search",
     "Binary Tree"

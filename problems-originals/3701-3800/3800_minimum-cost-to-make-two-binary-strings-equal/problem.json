@@ -4,8 +4,12 @@
   "id": 3800,
   "slug": "minimum-cost-to-make-two-binary-strings-equal",
   "title": "Minimum Cost to Make Two Binary Strings Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

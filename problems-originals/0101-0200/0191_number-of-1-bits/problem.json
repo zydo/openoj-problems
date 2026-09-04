@@ -4,8 +4,12 @@
   "id": 191,
   "slug": "number-of-1-bits",
   "title": "Number of 1 Bits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Divide and Conquer",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Divide and Conquer",
     "Bit Manipulation"
   ],

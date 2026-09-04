@@ -4,11 +4,19 @@
   "id": 1258,
   "slug": "synonym-swaps-in-a-sentence",
   "title": "Synonym Swaps in a Sentence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
     "Backtracking",
+    "Union-Find"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Sort",
     "Union-Find"
   ],
   "invocation": {

@@ -4,8 +4,15 @@
   "id": 2268,
   "slug": "minimum-number-of-keypresses",
   "title": "Minimum Number of Keypresses",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

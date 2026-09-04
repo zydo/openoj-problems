@@ -4,8 +4,12 @@
   "id": 3499,
   "slug": "one-trade-to-boost-uptime-i",
   "title": "One Trade To Boost Uptime I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

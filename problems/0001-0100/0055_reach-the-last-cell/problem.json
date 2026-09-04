@@ -4,9 +4,14 @@
   "id": 55,
   "slug": "reach-the-last-cell",
   "title": "Reach The Last Cell",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 3702,
   "slug": "longest-subsequence-with-non-zero-bitwise-xor",
   "title": "Longest Subsequence With Non-Zero Bitwise XOR",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

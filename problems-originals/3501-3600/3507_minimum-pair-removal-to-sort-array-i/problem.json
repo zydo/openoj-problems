@@ -4,8 +4,17 @@
   "id": 3507,
   "slug": "minimum-pair-removal-to-sort-array-i",
   "title": "Minimum Pair Removal to Sort Array I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Heap (Priority Queue)",
+    "Simulation",
+    "Doubly-Linked List",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Linked List",

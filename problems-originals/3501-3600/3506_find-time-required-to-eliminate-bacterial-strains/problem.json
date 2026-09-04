@@ -4,8 +4,14 @@
   "id": 3506,
   "slug": "find-time-required-to-eliminate-bacterial-strains",
   "title": "Find Time Required to Eliminate Bacterial Strains",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

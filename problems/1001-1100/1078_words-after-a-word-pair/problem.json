@@ -4,8 +4,11 @@
   "id": 1078,
   "slug": "words-after-a-word-pair",
   "title": "Words After a Word Pair",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 2964,
   "slug": "number-of-divisible-triplet-sums",
   "title": "Number of Divisible Triplet Sums",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

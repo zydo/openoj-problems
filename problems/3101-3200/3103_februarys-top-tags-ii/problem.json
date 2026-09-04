@@ -4,10 +4,13 @@
   "id": 3103,
   "slug": "februarys-top-tags-ii",
   "title": "February's Top Tags II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

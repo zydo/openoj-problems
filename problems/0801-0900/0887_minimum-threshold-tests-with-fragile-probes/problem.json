@@ -4,10 +4,15 @@
   "id": 887,
   "slug": "minimum-threshold-tests-with-fragile-probes",
   "title": "Minimum Threshold Tests With Fragile Probes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search"
+  ],
+  "topics": [
+    "Math",
+    "Binary Search",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

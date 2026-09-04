@@ -4,8 +4,13 @@
   "id": 874,
   "slug": "walking-robot-simulation",
   "title": "Walking Robot Simulation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

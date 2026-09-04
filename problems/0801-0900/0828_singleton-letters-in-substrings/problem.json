@@ -4,8 +4,13 @@
   "id": 828,
   "slug": "singleton-letters-in-substrings",
   "title": "Singleton Letters In Substrings",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming"

@@ -4,11 +4,21 @@
   "id": 1857,
   "slug": "most-frequent-color-on-a-directed-path",
   "title": "Most Frequent Color on a Directed Path",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Topological Sort",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
+    "Counting",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

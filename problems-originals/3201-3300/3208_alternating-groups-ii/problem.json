@@ -4,8 +4,12 @@
   "id": 3208,
   "slug": "alternating-groups-ii",
   "title": "Alternating Groups II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

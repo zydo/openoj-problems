@@ -4,8 +4,14 @@
   "id": 2408,
   "slug": "design-sql",
   "title": "Design SQL",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

@@ -4,8 +4,12 @@
   "id": 2591,
   "slug": "allowances-in-eights",
   "title": "Allowances in Eights",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

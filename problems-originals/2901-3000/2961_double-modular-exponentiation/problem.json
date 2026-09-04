@@ -4,8 +4,13 @@
   "id": 2961,
   "slug": "double-modular-exponentiation",
   "title": "Double Modular Exponentiation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Simulation"

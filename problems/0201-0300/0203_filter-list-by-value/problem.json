@@ -4,10 +4,14 @@
   "id": 203,
   "slug": "filter-list-by-value",
   "title": "Filter List by Value",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Linked List",
     "Simulation"
+  ],
+  "topics": [
+    "Linked List",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

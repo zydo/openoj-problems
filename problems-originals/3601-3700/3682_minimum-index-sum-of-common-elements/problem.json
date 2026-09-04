@@ -4,8 +4,12 @@
   "id": 3682,
   "slug": "minimum-index-sum-of-common-elements",
   "title": "Minimum Index Sum of Common Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

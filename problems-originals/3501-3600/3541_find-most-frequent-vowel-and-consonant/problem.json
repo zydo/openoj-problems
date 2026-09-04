@@ -4,8 +4,13 @@
   "id": 3541,
   "slug": "find-most-frequent-vowel-and-consonant",
   "title": "Find Most Frequent Vowel and Consonant",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

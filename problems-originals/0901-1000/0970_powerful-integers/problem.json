@@ -4,8 +4,13 @@
   "id": 970,
   "slug": "powerful-integers",
   "title": "Powerful Integers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "Enumeration"

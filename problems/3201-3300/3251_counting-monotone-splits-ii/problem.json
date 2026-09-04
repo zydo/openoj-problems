@@ -4,11 +4,18 @@
   "id": 3251,
   "slug": "counting-monotone-splits-ii",
   "title": "Counting Monotone Splits II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics",
     "Prefix Sum"
   ],
   "invocation": {

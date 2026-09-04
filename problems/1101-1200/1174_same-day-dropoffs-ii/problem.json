@@ -4,10 +4,13 @@
   "id": 1174,
   "slug": "same-day-dropoffs-ii",
   "title": "Same-Day Dropoffs II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

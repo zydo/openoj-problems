@@ -4,8 +4,15 @@
   "id": 1087,
   "slug": "brace-expansion",
   "title": "Brace Expansion",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking",
+    "Stack",
+    "Breadth-First Search",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Backtracking",
     "Stack",

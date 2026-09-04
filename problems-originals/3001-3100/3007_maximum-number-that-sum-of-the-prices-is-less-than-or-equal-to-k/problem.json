@@ -3,10 +3,16 @@
   "id": 3007,
   "slug": "maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
   "title": "Maximum Number That Sum of the Prices Is Less Than or Equal to K",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Digit DP",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Math",
+    "Binary Search",
+    "Dynamic Programming",
     "Bit Manipulation"
   ],
   "invocation": {

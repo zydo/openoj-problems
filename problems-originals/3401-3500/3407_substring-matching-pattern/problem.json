@@ -4,8 +4,12 @@
   "id": 3407,
   "slug": "substring-matching-pattern",
   "title": "Substring Matching Pattern",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "String Matching"
+  ],
+  "topics": [
     "String",
     "String Matching"
   ],

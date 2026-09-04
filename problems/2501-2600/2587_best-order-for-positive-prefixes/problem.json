@@ -4,8 +4,14 @@
   "id": 2587,
   "slug": "best-order-for-positive-prefixes",
   "title": "Best Order for Positive Prefixes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

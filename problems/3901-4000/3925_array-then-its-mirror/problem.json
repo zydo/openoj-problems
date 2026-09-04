@@ -4,8 +4,12 @@
   "id": 3925,
   "slug": "array-then-its-mirror",
   "title": "Array Then Its Mirror",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

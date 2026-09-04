@@ -4,8 +4,17 @@
   "id": 2708,
   "slug": "maximum-strength-of-a-group",
   "title": "Maximum Strength of a Group",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Greedy",
+    "Bit Manipulation",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Backtracking",

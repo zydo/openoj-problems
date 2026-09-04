@@ -4,8 +4,12 @@
   "id": 3646,
   "slug": "next-special-palindrome-number",
   "title": "Next Special Palindrome Number",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Backtracking",
     "Bit Manipulation"
   ],

@@ -4,8 +4,14 @@
   "id": 640,
   "slug": "balance-the-equation",
   "title": "Balance the Equation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Simulation",
+    "Linear Algebra"
+  ],
+  "topics": [
     "Math",
     "String",
     "Simulation",

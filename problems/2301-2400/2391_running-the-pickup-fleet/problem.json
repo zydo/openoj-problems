@@ -4,8 +4,13 @@
   "id": 2391,
   "slug": "running-the-pickup-fleet",
   "title": "Running the Pickup Fleet",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

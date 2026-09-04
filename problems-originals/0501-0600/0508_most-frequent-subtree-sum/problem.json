@@ -4,8 +4,15 @@
   "id": 508,
   "slug": "most-frequent-subtree-sum",
   "title": "Most Frequent Subtree Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

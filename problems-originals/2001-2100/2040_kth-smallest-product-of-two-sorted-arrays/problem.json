@@ -3,8 +3,12 @@
   "id": 2040,
   "slug": "kth-smallest-product-of-two-sorted-arrays",
   "title": "Kth Smallest Product of Two Sorted Arrays",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search"
+  ],
+  "topics": [
+    "Array",
     "Binary Search"
   ],
   "invocation": {

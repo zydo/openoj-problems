@@ -4,8 +4,18 @@
   "id": 691,
   "slug": "stickers-to-spell-word",
   "title": "Stickers to Spell Word",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

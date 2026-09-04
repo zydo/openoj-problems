@@ -4,8 +4,14 @@
   "id": 3745,
   "slug": "two-adds-and-one-takeaway",
   "title": "Two Adds And One Takeaway",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

@@ -4,8 +4,12 @@
   "id": 275,
   "slug": "citation-threshold-ii",
   "title": "Citation Threshold II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

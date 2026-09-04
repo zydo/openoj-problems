@@ -4,11 +4,18 @@
   "id": 676,
   "slug": "one-edit-dictionary",
   "title": "One-Edit Dictionary",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Trie",
     "String"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie"
   ],
   "invocation": {
     "type": "design",

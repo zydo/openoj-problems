@@ -4,8 +4,15 @@
   "id": 1644,
   "slug": "lowest-common-ancestor-of-a-binary-tree-ii",
   "title": "Lowest Common Ancestor of a Binary Tree II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",

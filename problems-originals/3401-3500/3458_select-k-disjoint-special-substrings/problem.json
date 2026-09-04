@@ -4,8 +4,15 @@
   "id": 3458,
   "slug": "select-k-disjoint-special-substrings",
   "title": "Select K Disjoint Special Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming",

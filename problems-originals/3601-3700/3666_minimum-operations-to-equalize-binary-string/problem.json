@@ -4,8 +4,15 @@
   "id": 3666,
   "slug": "minimum-operations-to-equalize-binary-string",
   "title": "Minimum Operations to Equalize Binary String",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Breadth-First Search",
+    "Union-Find",
+    "Ordered Set"
+  ],
+  "topics": [
     "Math",
     "String",
     "Breadth-First Search",

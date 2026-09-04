@@ -4,8 +4,13 @@
   "id": 1743,
   "slug": "restore-the-array-from-adjacent-pairs",
   "title": "Restore the Array From Adjacent Pairs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Depth-First Search"

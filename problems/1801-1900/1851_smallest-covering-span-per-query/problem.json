@@ -4,11 +4,18 @@
   "id": 1851,
   "slug": "smallest-covering-span-per-query",
   "title": "Smallest Covering Span per Query",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Sorting",
     "Union Find"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sweep Line",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

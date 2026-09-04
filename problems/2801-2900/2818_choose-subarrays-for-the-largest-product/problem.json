@@ -4,10 +4,19 @@
   "id": 2818,
   "slug": "choose-subarrays-for-the-largest-product",
   "title": "Choose Subarrays for the Largest Product",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Stack",
     "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack",
     "Number Theory"
   ],
   "invocation": {

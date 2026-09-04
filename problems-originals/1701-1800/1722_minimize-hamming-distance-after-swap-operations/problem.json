@@ -3,10 +3,15 @@
   "id": 1722,
   "slug": "minimize-hamming-distance-after-swap-operations",
   "title": "Minimize Hamming Distance After Swap Operations",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

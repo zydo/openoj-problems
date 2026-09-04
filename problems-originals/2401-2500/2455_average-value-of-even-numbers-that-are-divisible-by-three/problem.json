@@ -4,8 +4,12 @@
   "id": 2455,
   "slug": "average-value-of-even-numbers-that-are-divisible-by-three",
   "title": "Average Value of Even Numbers That Are Divisible by Three",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -4,8 +4,11 @@
   "id": 1083,
   "slug": "sales-analysis-ii",
   "title": "Sales Analysis II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

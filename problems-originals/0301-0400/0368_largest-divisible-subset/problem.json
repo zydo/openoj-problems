@@ -3,8 +3,14 @@
   "id": 368,
   "slug": "largest-divisible-subset",
   "title": "Largest Divisible Subset",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Dynamic Programming",
     "Sorting"
   ],

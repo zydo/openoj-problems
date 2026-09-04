@@ -4,8 +4,13 @@
   "id": 2065,
   "slug": "most-valuable-round-trip",
   "title": "Most Valuable Round Trip",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Graph Theory"

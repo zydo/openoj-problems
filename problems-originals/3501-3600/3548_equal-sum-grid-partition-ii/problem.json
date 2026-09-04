@@ -4,8 +4,15 @@
   "id": 3548,
   "slug": "equal-sum-grid-partition-ii",
   "title": "Equal Sum Grid Partition II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix",

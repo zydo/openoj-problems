@@ -4,8 +4,12 @@
   "id": 1228,
   "slug": "missing-number-in-arithmetic-progression",
   "title": "Missing Number In Arithmetic Progression",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

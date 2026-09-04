@@ -4,8 +4,13 @@
   "id": 376,
   "slug": "alternating-trend-subsequence",
   "title": "Alternating Trend Subsequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

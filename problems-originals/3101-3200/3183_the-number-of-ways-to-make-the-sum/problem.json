@@ -4,8 +4,15 @@
   "id": 3183,
   "slug": "the-number-of-ways-to-make-the-sum",
   "title": "The Number of Ways to Make the Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "Sieve Theory",
+    "Mixed Knapsack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Knapsack Problem",

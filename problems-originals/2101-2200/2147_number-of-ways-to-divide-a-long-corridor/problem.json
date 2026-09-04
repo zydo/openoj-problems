@@ -4,8 +4,13 @@
   "id": 2147,
   "slug": "number-of-ways-to-divide-a-long-corridor",
   "title": "Number of Ways to Divide a Long Corridor",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming"

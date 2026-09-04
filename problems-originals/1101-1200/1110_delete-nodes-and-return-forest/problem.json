@@ -4,8 +4,15 @@
   "id": 1110,
   "slug": "delete-nodes-and-return-forest",
   "title": "Delete Nodes And Return Forest",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Tree",

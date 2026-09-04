@@ -4,8 +4,12 @@
   "id": 2417,
   "slug": "nearest-balanced-digit-integer",
   "title": "Nearest Balanced-Digit Integer",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

@@ -4,10 +4,13 @@
   "id": 2881,
   "slug": "matching-every-donation",
   "title": "Matching Every Donation",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

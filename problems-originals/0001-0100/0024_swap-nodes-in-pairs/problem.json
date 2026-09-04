@@ -4,8 +4,12 @@
   "id": 24,
   "slug": "swap-nodes-in-pairs",
   "title": "Swap Nodes in Pairs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Recursion"
+  ],
+  "topics": [
     "Linked List",
     "Recursion"
   ],

@@ -4,11 +4,18 @@
   "id": 2931,
   "slug": "the-priciest-shopping-schedule",
   "title": "The Priciest Shopping Schedule",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Greedy",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

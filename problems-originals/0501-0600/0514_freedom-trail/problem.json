@@ -3,10 +3,16 @@
   "id": 514,
   "slug": "freedom-trail",
   "title": "Freedom Trail",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Breadth-First Search"
   ],
   "invocation": {
     "type": "function",

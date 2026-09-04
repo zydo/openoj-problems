@@ -4,11 +4,18 @@
   "id": 1457,
   "slug": "paths-that-can-form-a-palindrome",
   "title": "Paths That Can Form a Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "Tree",
     "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Binary Tree"
   ],
   "invocation": {

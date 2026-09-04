@@ -4,8 +4,12 @@
   "id": 3961,
   "slug": "maximize-sum-of-device-ratings",
   "title": "Maximize Sum of Device Ratings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Greedy",
+    "Math"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

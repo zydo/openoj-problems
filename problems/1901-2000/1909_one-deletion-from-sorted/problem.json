@@ -4,10 +4,13 @@
   "id": 1909,
   "slug": "one-deletion-from-sorted",
   "title": "One Deletion from Sorted",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Greedy"
+  ],
+  "topics": [
+    "Array"
   ],
   "invocation": {
     "type": "function",

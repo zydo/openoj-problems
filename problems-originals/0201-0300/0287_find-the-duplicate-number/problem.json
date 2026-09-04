@@ -3,11 +3,19 @@
   "id": 287,
   "slug": "find-the-duplicate-number",
   "title": "Find the Duplicate Number",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Two Pointers",
     "Binary Search",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Bit Manipulation",
+    "Pigeonhole Principle",
+    "Floyd's Cycle Finding Algorithm"
   ],
   "invocation": {
     "type": "function",

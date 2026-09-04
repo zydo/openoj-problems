@@ -4,10 +4,16 @@
   "id": 3003,
   "slug": "the-most-splits-one-rewrite-can-buy",
   "title": "The Most Splits One Rewrite Can Buy",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
+    "Bitmask"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
     "Bitmask"
   ],
   "invocation": {

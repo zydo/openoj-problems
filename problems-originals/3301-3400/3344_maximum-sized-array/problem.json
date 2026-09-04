@@ -4,8 +4,12 @@
   "id": 3344,
   "slug": "maximum-sized-array",
   "title": "Maximum Sized Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Binary Search",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Binary Search",
     "Bit Manipulation"
   ],

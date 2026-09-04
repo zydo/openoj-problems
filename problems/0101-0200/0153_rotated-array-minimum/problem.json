@@ -4,8 +4,12 @@
   "id": 153,
   "slug": "rotated-array-minimum",
   "title": "Rotated Array Minimum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

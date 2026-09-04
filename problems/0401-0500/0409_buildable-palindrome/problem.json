@@ -4,8 +4,13 @@
   "id": 409,
   "slug": "buildable-palindrome",
   "title": "Buildable Palindrome",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy"

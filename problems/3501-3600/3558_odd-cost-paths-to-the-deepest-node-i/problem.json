@@ -4,8 +4,13 @@
   "id": 3558,
   "slug": "odd-cost-paths-to-the-deepest-node-i",
   "title": "Odd-Cost Paths To The Deepest Node I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Math",
     "Tree",
     "Depth-First Search"

@@ -4,8 +4,13 @@
   "id": 3771,
   "slug": "points-from-every-dungeon-entrance",
   "title": "Points From Every Dungeon Entrance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Prefix Sum"

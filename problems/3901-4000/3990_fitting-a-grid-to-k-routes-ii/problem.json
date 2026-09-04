@@ -4,11 +4,16 @@
   "id": 3990,
   "slug": "fitting-a-grid-to-k-routes-ii",
   "title": "Fitting A Grid To K Routes II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Matrix",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Math",
+    "Greedy",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 923,
   "slug": "3sum-with-multiplicity",
   "title": "3Sum With Multiplicity",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

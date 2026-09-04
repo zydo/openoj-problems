@@ -4,11 +4,19 @@
   "id": 3410,
   "slug": "largest-subarray-sum-after-purging-a-value",
   "title": "Largest Subarray Sum After Purging a Value",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Segment Tree",
     "Prefix Sum"
   ],
   "invocation": {

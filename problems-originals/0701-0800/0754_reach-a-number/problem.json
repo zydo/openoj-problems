@@ -4,8 +4,12 @@
   "id": 754,
   "slug": "reach-a-number",
   "title": "Reach a Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

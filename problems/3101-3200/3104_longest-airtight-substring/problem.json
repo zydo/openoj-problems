@@ -4,11 +4,16 @@
   "id": 3104,
   "slug": "longest-airtight-substring",
   "title": "Longest Airtight Substring",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
     "String",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

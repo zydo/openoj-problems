@@ -4,8 +4,13 @@
   "id": 167,
   "slug": "the-in-order-pair-sum",
   "title": "The In-Order Pair Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search"

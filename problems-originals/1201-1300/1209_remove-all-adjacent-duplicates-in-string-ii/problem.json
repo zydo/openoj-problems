@@ -3,8 +3,12 @@
   "id": 1209,
   "slug": "remove-all-adjacent-duplicates-in-string-ii",
   "title": "Remove All Adjacent Duplicates in String II",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

@@ -4,8 +4,13 @@
   "id": 3014,
   "slug": "fewest-taps-to-type-a-word-i",
   "title": "Fewest Taps To Type A Word I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy"

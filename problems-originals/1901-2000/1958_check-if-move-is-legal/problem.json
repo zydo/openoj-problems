@@ -4,8 +4,13 @@
   "id": 1958,
   "slug": "check-if-move-is-legal",
   "title": "Check if Move is Legal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Enumeration"

@@ -3,10 +3,19 @@
   "id": 1157,
   "slug": "online-majority-element-in-subarray",
   "title": "Online Majority Element In Subarray",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sqrt Decomposition",
+    "Boyer–Moore Majority Vote Algorithm"
   ],
   "invocation": {
     "type": "design",

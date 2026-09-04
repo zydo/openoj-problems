@@ -4,8 +4,13 @@
   "id": 3160,
   "slug": "find-the-number-of-distinct-colors-among-the-balls",
   "title": "Find the Number of Distinct Colors Among the Balls",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

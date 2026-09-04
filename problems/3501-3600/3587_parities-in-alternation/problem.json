@@ -4,8 +4,12 @@
   "id": 3587,
   "slug": "parities-in-alternation",
   "title": "Parities In Alternation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

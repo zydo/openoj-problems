@@ -4,8 +4,13 @@
   "id": 2869,
   "slug": "minimum-operations-to-collect-elements",
   "title": "Minimum Operations to Collect Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation"

@@ -4,8 +4,11 @@
   "id": 2194,
   "slug": "cells-of-a-spreadsheet-rectangle",
   "title": "Cells of a Spreadsheet Rectangle",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

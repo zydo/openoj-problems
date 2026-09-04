@@ -4,8 +4,14 @@
   "id": 3326,
   "slug": "minimum-division-operations-to-make-array-non-decreasing",
   "title": "Minimum Division Operations to Make Array Non Decreasing",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

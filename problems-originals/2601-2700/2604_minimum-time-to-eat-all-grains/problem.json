@@ -4,8 +4,14 @@
   "id": 2604,
   "slug": "minimum-time-to-eat-all-grains",
   "title": "Minimum Time to Eat All Grains",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

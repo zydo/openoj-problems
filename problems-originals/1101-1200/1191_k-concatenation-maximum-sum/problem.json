@@ -3,10 +3,14 @@
   "id": 1191,
   "slug": "k-concatenation-maximum-sum",
   "title": "K-Concatenation Maximum Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

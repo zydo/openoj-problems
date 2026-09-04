@@ -4,8 +4,14 @@
   "id": 3371,
   "slug": "identify-the-largest-outlier-in-an-array",
   "title": "Identify the Largest Outlier in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting",

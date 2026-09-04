@@ -4,8 +4,14 @@
   "id": 1833,
   "slug": "maximum-ice-cream-bars",
   "title": "Maximum Ice Cream Bars",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

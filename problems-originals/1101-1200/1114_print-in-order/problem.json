@@ -4,8 +4,11 @@
   "id": 1114,
   "slug": "print-in-order",
   "title": "Print in Order",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

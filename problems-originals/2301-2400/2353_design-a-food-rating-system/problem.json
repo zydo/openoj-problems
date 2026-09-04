@@ -3,10 +3,18 @@
   "id": 2353,
   "slug": "design-a-food-rating-system",
   "title": "Design a Food Rating System",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

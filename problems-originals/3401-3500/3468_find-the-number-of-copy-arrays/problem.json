@@ -4,8 +4,12 @@
   "id": 3468,
   "slug": "find-the-number-of-copy-arrays",
   "title": "Find the Number of Copy Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

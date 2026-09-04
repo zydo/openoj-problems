@@ -3,10 +3,14 @@
   "id": 471,
   "slug": "encode-string-with-shortest-length",
   "title": "Encode String with Shortest Length",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Interval DP"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

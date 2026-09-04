@@ -4,9 +4,13 @@
   "id": 3563,
   "slug": "smallest-string-after-pair-deletions",
   "title": "Smallest String After Pair Deletions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
     "Dynamic Programming"
   ],
   "invocation": {

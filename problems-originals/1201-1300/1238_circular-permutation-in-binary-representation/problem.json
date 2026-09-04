@@ -4,8 +4,13 @@
   "id": 1238,
   "slug": "circular-permutation-in-binary-representation",
   "title": "Circular Permutation in Binary Representation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Backtracking",
     "Bit Manipulation"

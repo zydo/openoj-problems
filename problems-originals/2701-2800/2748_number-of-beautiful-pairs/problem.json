@@ -4,8 +4,15 @@
   "id": 2748,
   "slug": "number-of-beautiful-pairs",
   "title": "Number of Beautiful Pairs",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

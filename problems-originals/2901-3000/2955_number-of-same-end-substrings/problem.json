@@ -4,8 +4,15 @@
   "id": 2955,
   "slug": "number-of-same-end-substrings",
   "title": "Number of Same-End Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

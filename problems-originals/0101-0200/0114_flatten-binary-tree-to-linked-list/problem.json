@@ -4,8 +4,15 @@
   "id": 114,
   "slug": "flatten-binary-tree-to-linked-list",
   "title": "Flatten Binary Tree to Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Linked List",
     "Stack",
     "Tree",

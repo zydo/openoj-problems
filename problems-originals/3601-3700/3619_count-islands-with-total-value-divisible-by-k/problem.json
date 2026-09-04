@@ -4,8 +4,15 @@
   "id": 3619,
   "slug": "count-islands-with-total-value-divisible-by-k",
   "title": "Count Islands With Total Value Divisible by K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

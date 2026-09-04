@@ -4,8 +4,14 @@
   "id": 3695,
   "slug": "maximize-alternating-sum-using-swaps",
   "title": "Maximize Alternating Sum Using Swaps",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Union-Find",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Union-Find",

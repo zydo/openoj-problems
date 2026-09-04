@@ -4,8 +4,13 @@
   "id": 2447,
   "slug": "subarrays-with-a-set-gcd",
   "title": "Subarrays With a Set GCD",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Number Theory"

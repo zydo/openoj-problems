@@ -4,8 +4,11 @@
   "id": 1009,
   "slug": "bit-window-complement",
   "title": "Bit Window Complement",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

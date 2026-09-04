@@ -4,8 +4,13 @@
   "id": 2929,
   "slug": "distribute-candies-among-children-ii",
   "title": "Distribute Candies Among Children II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Combinatorics",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Combinatorics",
     "Enumeration"

@@ -4,8 +4,13 @@
   "id": 848,
   "slug": "cumulative-letter-shifts",
   "title": "Cumulative Letter Shifts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

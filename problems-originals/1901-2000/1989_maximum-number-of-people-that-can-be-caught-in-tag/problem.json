@@ -4,8 +4,13 @@
   "id": 1989,
   "slug": "maximum-number-of-people-that-can-be-caught-in-tag",
   "title": "Maximum Number of People That Can Be Caught in Tag",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy"

@@ -4,9 +4,16 @@
   "id": 321,
   "slug": "largest-digit-merge",
   "title": "Largest Digit Merge",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Stack",
     "Greedy",
     "Monotonic Stack"
   ],

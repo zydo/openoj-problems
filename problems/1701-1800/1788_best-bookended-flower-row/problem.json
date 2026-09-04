@@ -4,8 +4,14 @@
   "id": 1788,
   "slug": "best-bookended-flower-row",
   "title": "The Best Bookended Flower Row",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

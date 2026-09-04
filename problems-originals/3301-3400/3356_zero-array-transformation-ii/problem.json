@@ -4,8 +4,14 @@
   "id": 3356,
   "slug": "zero-array-transformation-ii",
   "title": "Zero Array Transformation II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

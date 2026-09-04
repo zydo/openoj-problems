@@ -4,8 +4,12 @@
   "id": 3774,
   "slug": "gap-between-the-top-k-and-bottom-k",
   "title": "Gap Between the Top k and Bottom k",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

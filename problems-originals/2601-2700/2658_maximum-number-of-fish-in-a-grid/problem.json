@@ -4,8 +4,15 @@
   "id": 2658,
   "slug": "maximum-number-of-fish-in-a-grid",
   "title": "Maximum Number of Fish in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

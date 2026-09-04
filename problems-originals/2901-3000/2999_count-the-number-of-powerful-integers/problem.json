@@ -3,9 +3,14 @@
   "id": 2999,
   "slug": "count-the-number-of-powerful-integers",
   "title": "Count the Number of Powerful Integers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

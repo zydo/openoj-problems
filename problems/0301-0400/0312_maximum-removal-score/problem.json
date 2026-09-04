@@ -4,8 +4,12 @@
   "id": 312,
   "slug": "maximum-removal-score",
   "title": "Maximum Removal Score",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

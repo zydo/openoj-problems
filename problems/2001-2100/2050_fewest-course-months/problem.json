@@ -4,11 +4,18 @@
   "id": 2050,
   "slug": "fewest-course-months",
   "title": "Fewest Course Months",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Topological Sort",
     "Dynamic Programming",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

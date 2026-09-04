@@ -4,8 +4,13 @@
   "id": 2706,
   "slug": "buy-two-chocolates",
   "title": "Buy Two Chocolates",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

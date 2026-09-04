@@ -4,8 +4,12 @@
   "id": 558,
   "slug": "quad-tree-grid-union",
   "title": "Quad-Tree Grid Union",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Divide and Conquer",
+    "Tree"
+  ],
+  "topics": [
     "Divide and Conquer",
     "Tree"
   ],

@@ -4,8 +4,13 @@
   "id": 510,
   "slug": "ordered-successor-ii",
   "title": "Ordered Successor II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Search Tree",
     "Binary Tree"

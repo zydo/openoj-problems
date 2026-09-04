@@ -4,10 +4,13 @@
   "id": 1069,
   "slug": "order-log-ii",
   "title": "Order Log II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

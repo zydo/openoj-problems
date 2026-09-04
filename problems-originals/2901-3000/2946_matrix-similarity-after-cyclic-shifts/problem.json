@@ -4,8 +4,14 @@
   "id": 2946,
   "slug": "matrix-similarity-after-cyclic-shifts",
   "title": "Matrix Similarity After Cyclic Shifts",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Matrix",

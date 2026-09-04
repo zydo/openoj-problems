@@ -4,8 +4,14 @@
   "id": 3730,
   "slug": "maximum-calories-burnt-from-jumps",
   "title": "Maximum Calories Burnt from Jumps",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy",

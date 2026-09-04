@@ -4,12 +4,21 @@
   "id": 1799,
   "slug": "best-score-from-gcd-pairings",
   "title": "Best Score From GCD Pairings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Bitmask",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Number Theory",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,14 @@
   "id": 3663,
   "slug": "the-rarest-digit",
   "title": "The Rarest Digit",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

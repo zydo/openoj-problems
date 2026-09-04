@@ -4,8 +4,13 @@
   "id": 2366,
   "slug": "minimum-splits-to-sort-the-array",
   "title": "Minimum Splits to Sort the Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

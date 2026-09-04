@@ -4,8 +4,12 @@
   "id": 1860,
   "slug": "rising-drain-crash-time",
   "title": "Rising Drain Crash Time",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

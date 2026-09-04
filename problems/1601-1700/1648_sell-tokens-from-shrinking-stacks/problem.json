@@ -4,13 +4,21 @@
   "id": 1648,
   "slug": "sell-tokens-from-shrinking-stacks",
   "title": "Sell Tokens From Shrinking Stacks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Binary Search",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

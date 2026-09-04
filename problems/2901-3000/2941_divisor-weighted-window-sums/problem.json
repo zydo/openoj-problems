@@ -4,11 +4,19 @@
   "id": 2941,
   "slug": "divisor-weighted-window-sums",
   "title": "Divisor-Weighted Window Sums",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Number Theory",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Number Theory",
+    "Euclidean Algorithm",
     "Greatest Common Divisor"
   ],
   "invocation": {

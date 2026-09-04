@@ -4,8 +4,13 @@
   "id": 90,
   "slug": "all-the-subsets-ii",
   "title": "All The Subsets II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation"

@@ -4,10 +4,16 @@
   "id": 2976,
   "slug": "cheapest-letter-rewrites",
   "title": "Cheapest Letter Rewrites",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Shortest Path",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Graph Theory",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

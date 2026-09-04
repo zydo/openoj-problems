@@ -4,8 +4,15 @@
   "id": 1477,
   "slug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
   "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

@@ -3,11 +3,16 @@
   "id": 2245,
   "slug": "maximum-trailing-zeros-in-a-cornered-path",
   "title": "Maximum Trailing Zeros in a Cornered Path",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "Prefix Sum",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

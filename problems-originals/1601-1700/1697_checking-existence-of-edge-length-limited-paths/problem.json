@@ -3,11 +3,18 @@
   "id": 1697,
   "slug": "checking-existence-of-edge-length-limited-paths",
   "title": "Checking Existence of Edge Length Limited Paths",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Sorting",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Union-Find",
+    "Graph Theory",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 1521,
   "slug": "find-a-value-of-a-mysterious-function-closest-to-target",
   "title": "Find a Value of a Mysterious Function Closest to Target",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Segment Tree",
+    "Sparse Table"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Bit Manipulation",

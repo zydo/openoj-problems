@@ -4,8 +4,14 @@
   "id": 911,
   "slug": "timeline-leader-tracker",
   "title": "Timeline Leader Tracker",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

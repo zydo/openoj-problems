@@ -4,10 +4,16 @@
   "id": 3522,
   "slug": "score-of-a-run-once-program",
   "title": "Score Of A Run-Once Program",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
     "Simulation"
   ],
   "invocation": {

@@ -4,10 +4,15 @@
   "id": 1913,
   "slug": "widest-product-gap",
   "title": "Widest Product Gap",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Quicksort"
   ],
   "invocation": {
     "type": "function",

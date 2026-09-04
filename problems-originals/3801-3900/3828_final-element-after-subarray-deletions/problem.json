@@ -4,8 +4,14 @@
   "id": 3828,
   "slug": "final-element-after-subarray-deletions",
   "title": "Final Element After Subarray Deletions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Brainteaser",
+    "Game Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Brainteaser",

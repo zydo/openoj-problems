@@ -4,8 +4,11 @@
   "id": 1116,
   "slug": "print-zero-even-odd",
   "title": "Print Zero Even Odd",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

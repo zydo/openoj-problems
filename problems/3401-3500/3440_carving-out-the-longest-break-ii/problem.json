@@ -4,8 +4,13 @@
   "id": 3440,
   "slug": "carving-out-the-longest-break-ii",
   "title": "Carving Out The Longest Break II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Enumeration"

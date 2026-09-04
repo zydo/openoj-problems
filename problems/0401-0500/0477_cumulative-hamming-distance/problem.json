@@ -4,9 +4,14 @@
   "id": 477,
   "slug": "cumulative-hamming-distance",
   "title": "Cumulative Hamming Distance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Bit Manipulation"
   ],
   "invocation": {

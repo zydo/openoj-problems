@@ -4,8 +4,13 @@
   "id": 986,
   "slug": "common-interval-pieces",
   "title": "Common Interval Pieces",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Sweep Line"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Sweep Line"

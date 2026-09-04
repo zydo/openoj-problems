@@ -4,8 +4,15 @@
   "id": 108,
   "slug": "balanced-tree-from-a-sorted-array",
   "title": "Balanced Tree From A Sorted Array",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Tree",

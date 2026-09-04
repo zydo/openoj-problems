@@ -4,12 +4,23 @@
   "id": 3292,
   "slug": "fewest-prefix-pieces-for-a-target-ii",
   "title": "Fewest Prefix Pieces For A Target II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Segment Tree",
     "String Matching"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy",
+    "Segment Tree",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

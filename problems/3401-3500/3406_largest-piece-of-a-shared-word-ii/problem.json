@@ -4,8 +4,12 @@
   "id": 3406,
   "slug": "largest-piece-of-a-shared-word-ii",
   "title": "Largest Piece Of A Shared Word II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

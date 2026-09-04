@@ -4,11 +4,18 @@
   "id": 2576,
   "slug": "most-pairs-under-doubling",
   "title": "Most Pairs Under Doubling",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Two Pointer",
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

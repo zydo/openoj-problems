@@ -4,8 +4,12 @@
   "id": 504,
   "slug": "base-7",
   "title": "Base 7",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

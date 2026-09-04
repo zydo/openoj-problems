@@ -4,8 +4,12 @@
   "id": 3232,
   "slug": "the-digit-class-wager",
   "title": "The Digit-Class Wager",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

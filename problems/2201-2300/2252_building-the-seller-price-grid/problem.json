@@ -4,10 +4,13 @@
   "id": 2252,
   "slug": "building-the-seller-price-grid",
   "title": "Building the Seller Price Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

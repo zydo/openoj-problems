@@ -3,11 +3,25 @@
   "id": 1947,
   "slug": "maximum-compatibility-score-sum",
   "title": "Maximum Compatibility Score Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask",
+    "Hungarian Algorithm",
+    "Bipartite Graph",
+    "Successive Shortest Path Algorithm",
+    "Matching (Graph)",
+    "Perfect Matching",
+    "Minimum-Cost Flow",
+    "Flow Network"
   ],
   "invocation": {
     "type": "function",

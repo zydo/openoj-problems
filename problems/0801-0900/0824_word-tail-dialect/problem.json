@@ -4,8 +4,11 @@
   "id": 824,
   "slug": "word-tail-dialect",
   "title": "Word Tail Dialect",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

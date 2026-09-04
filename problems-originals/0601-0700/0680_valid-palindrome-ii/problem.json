@@ -4,8 +4,13 @@
   "id": 680,
   "slug": "valid-palindrome-ii",
   "title": "Valid Palindrome II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Greedy"

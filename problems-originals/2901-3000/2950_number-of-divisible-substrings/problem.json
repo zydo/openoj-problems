@@ -4,8 +4,14 @@
   "id": 2950,
   "slug": "number-of-divisible-substrings",
   "title": "Number of Divisible Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting",

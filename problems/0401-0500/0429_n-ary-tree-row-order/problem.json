@@ -4,8 +4,12 @@
   "id": 429,
   "slug": "n-ary-tree-row-order",
   "title": "N-ary Tree Row Order",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search"
   ],

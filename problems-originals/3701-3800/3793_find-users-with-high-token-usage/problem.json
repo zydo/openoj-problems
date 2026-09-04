@@ -4,8 +4,11 @@
   "id": 3793,
   "slug": "find-users-with-high-token-usage",
   "title": "Find Users with High Token Usage",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

@@ -4,10 +4,13 @@
   "id": 2986,
   "slug": "rising-third-purchases",
   "title": "Rising Third Purchases",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

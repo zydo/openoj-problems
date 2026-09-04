@@ -4,8 +4,13 @@
   "id": 167,
   "slug": "two-sum-ii-input-array-is-sorted-crawl",
   "title": "Two Sum II - Input Array Is Sorted",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search"

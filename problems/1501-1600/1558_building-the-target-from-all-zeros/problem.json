@@ -4,8 +4,13 @@
   "id": 1558,
   "slug": "building-the-target-from-all-zeros",
   "title": "Building the Target From All Zeros",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation"

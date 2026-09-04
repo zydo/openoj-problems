@@ -4,8 +4,12 @@
   "id": 3431,
   "slug": "minimum-unlocked-indices-to-sort-nums",
   "title": "Minimum Unlocked Indices to Sort Nums",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

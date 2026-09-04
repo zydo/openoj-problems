@@ -4,8 +4,12 @@
   "id": 3962,
   "slug": "maximum-subarray-sum-after-at-most-k-swaps",
   "title": "Maximum Subarray Sum After at Most K Swaps",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Dynamic Programming",
+    "Greedy"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

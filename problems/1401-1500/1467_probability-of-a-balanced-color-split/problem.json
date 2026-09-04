@@ -4,12 +4,20 @@
   "id": 1467,
   "slug": "probability-of-a-balanced-color-split",
   "title": "Probability Of A Balanced Color Split",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Combinatorics",
     "Probability and Statistics",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Combinatorics",
+    "Probability and Statistics"
   ],
   "invocation": {
     "type": "function",

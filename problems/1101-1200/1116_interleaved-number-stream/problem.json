@@ -4,8 +4,11 @@
   "id": 1116,
   "slug": "interleaved-number-stream",
   "title": "Interleaved Number Stream",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

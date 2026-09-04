@@ -3,10 +3,13 @@
   "id": 262,
   "slug": "trips-and-users",
   "title": "Trips and Users",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

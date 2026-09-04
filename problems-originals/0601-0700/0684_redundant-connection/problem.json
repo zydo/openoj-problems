@@ -3,10 +3,16 @@
   "id": 684,
   "slug": "redundant-connection",
   "title": "Redundant Connection",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Union Find"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

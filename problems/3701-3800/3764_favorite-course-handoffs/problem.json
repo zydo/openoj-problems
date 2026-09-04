@@ -4,11 +4,15 @@
   "id": 3764,
   "slug": "favorite-course-handoffs",
   "title": "Favorite Course Handoffs",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "String",
+    "Sorting"
+  ],
+  "topics": [
+    "Hash Table",
     "Sorting"
   ],
   "invocation": {

@@ -3,11 +3,20 @@
   "id": 642,
   "slug": "design-search-autocomplete-system",
   "title": "Design Search Autocomplete System",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "String",
+    "Depth-First Search",
+    "Design",
+    "Trie",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

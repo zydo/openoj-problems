@@ -4,8 +4,13 @@
   "id": 2259,
   "slug": "remove-digit-from-number-to-maximize-result",
   "title": "Remove Digit From Number to Maximize Result",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Enumeration"

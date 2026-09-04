@@ -4,8 +4,12 @@
   "id": 3536,
   "slug": "maximum-product-of-two-digits",
   "title": "Maximum Product of Two Digits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Sorting"
+  ],
+  "topics": [
     "Math",
     "Sorting"
   ],

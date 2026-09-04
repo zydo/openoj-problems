@@ -4,8 +4,12 @@
   "id": 1557,
   "slug": "smallest-root-set",
   "title": "Smallest Root Set",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Directed Acyclic Graph"
+  ],
+  "topics": [
     "Graph Theory",
     "Directed Acyclic Graph"
   ],

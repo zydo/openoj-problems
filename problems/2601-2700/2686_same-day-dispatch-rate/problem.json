@@ -4,10 +4,13 @@
   "id": 2686,
   "slug": "same-day-dispatch-rate",
   "title": "Same-Day Dispatch Rate",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

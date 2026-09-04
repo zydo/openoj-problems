@@ -4,8 +4,12 @@
   "id": 495,
   "slug": "teemo-attacking",
   "title": "Teemo Attacking",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

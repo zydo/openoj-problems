@@ -4,11 +4,17 @@
   "id": 84,
   "slug": "largest-skyline-rectangle",
   "title": "Largest Skyline Rectangle",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Stack",
     "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Monotonic Stack",
+    "Range Minimum/Maximum Query"
   ],
   "invocation": {
     "type": "function",

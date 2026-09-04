@@ -4,8 +4,13 @@
   "id": 958,
   "slug": "check-completeness-of-a-binary-tree",
   "title": "Check Completeness of a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

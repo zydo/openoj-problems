@@ -4,8 +4,12 @@
   "id": 2189,
   "slug": "number-of-ways-to-build-house-of-cards",
   "title": "Number of Ways to Build House of Cards",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

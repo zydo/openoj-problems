@@ -4,8 +4,14 @@
   "id": 2585,
   "slug": "number-of-ways-to-earn-points",
   "title": "Number of Ways to Earn Points",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "Multiple Knapsack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Knapsack Problem",

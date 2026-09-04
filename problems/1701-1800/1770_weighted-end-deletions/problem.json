@@ -4,8 +4,12 @@
   "id": 1770,
   "slug": "weighted-end-deletions",
   "title": "Weighted End Deletions",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

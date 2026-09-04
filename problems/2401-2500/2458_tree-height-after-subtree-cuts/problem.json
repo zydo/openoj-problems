@@ -4,11 +4,18 @@
   "id": 2458,
   "slug": "tree-height-after-subtree-cuts",
   "title": "Tree Height After Subtree Cuts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Tree",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

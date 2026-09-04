@@ -4,10 +4,14 @@
   "id": 1884,
   "slug": "two-probes-one-threshold",
   "title": "Two Probes, One Threshold",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Number Theory",
     "Binary Search"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

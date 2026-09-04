@@ -4,8 +4,13 @@
   "id": 160,
   "slug": "where-two-lists-converge",
   "title": "Where Two Lists Converge",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List",
+    "Two Pointers"
+  ],
+  "topics": [
+    "Hash Table",
     "Linked List",
     "Two Pointers"
   ],

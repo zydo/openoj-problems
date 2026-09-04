@@ -4,11 +4,18 @@
   "id": 690,
   "slug": "team-weight-total",
   "title": "Team Weight Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
   ],
   "invocation": {
     "type": "function",

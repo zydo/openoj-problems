@@ -4,8 +4,14 @@
   "id": 1028,
   "slug": "recover-a-tree-from-preorder-traversal",
   "title": "Recover a Tree From Preorder Traversal",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "String",
     "Tree",
     "Depth-First Search",

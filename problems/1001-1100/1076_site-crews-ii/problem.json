@@ -4,10 +4,13 @@
   "id": 1076,
   "slug": "site-crews-ii",
   "title": "Site Crews II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

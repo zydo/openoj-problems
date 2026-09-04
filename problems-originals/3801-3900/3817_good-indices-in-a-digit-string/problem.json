@@ -4,8 +4,12 @@
   "id": 3817,
   "slug": "good-indices-in-a-digit-string",
   "title": "Good Indices in a Digit String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

@@ -4,8 +4,12 @@
   "id": 1640,
   "slug": "check-array-formation-through-concatenation",
   "title": "Check Array Formation Through Concatenation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

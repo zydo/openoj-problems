@@ -4,12 +4,22 @@
   "id": 913,
   "slug": "mouse-escape-game",
   "title": "Mouse Escape Game",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Graph Theory",
     "Topological Sort",
     "Game Theory"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
+    "Minimax",
+    "Game Theory",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

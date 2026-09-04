@@ -4,8 +4,15 @@
   "id": 1508,
   "slug": "range-sum-of-sorted-subarray-sums",
   "title": "Range Sum of Sorted Subarray Sums",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

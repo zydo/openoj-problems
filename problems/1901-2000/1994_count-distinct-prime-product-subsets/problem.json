@@ -4,11 +4,22 @@
   "id": 1994,
   "slug": "count-distinct-prime-product-subsets",
   "title": "Count Distinct-Prime Product Subsets",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Counting",
+    "Number Theory",
+    "Bitmask",
+    "Sieve Theory"
   ],
   "invocation": {
     "type": "function",

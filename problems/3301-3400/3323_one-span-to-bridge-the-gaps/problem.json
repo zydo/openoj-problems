@@ -4,8 +4,14 @@
   "id": 3323,
   "slug": "one-span-to-bridge-the-gaps",
   "title": "One Span To Bridge The Gaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sliding Window",

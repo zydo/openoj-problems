@@ -4,8 +4,14 @@
   "id": 1589,
   "slug": "best-permuted-request-total",
   "title": "Best Permuted Request Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

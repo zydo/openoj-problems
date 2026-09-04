@@ -4,8 +4,14 @@
   "id": 1395,
   "slug": "count-number-of-teams",
   "title": "Count Number of Teams",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Binary Indexed Tree",

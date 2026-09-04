@@ -3,8 +3,14 @@
   "id": 398,
   "slug": "random-pick-index",
   "title": "Random Pick Index",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Reservoir Sampling",
+    "Randomized"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
     "Reservoir Sampling",
     "Randomized"
   ],

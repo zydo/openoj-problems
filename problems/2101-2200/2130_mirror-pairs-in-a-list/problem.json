@@ -4,10 +4,15 @@
   "id": 2130,
   "slug": "mirror-pairs-in-a-list",
   "title": "Mirror Pairs in a List",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Two Pointers"
+  ],
+  "topics": [
+    "Linked List",
+    "Two Pointers",
+    "Stack"
   ],
   "invocation": {
     "type": "function",

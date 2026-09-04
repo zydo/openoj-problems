@@ -4,8 +4,15 @@
   "id": 2932,
   "slug": "maximum-strong-pair-xor-i",
   "title": "Maximum Strong Pair XOR I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Trie",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

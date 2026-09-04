@@ -4,8 +4,12 @@
   "id": 998,
   "slug": "extend-the-maximum-tree-ii",
   "title": "Extend the Maximum Tree II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Tree"
   ],

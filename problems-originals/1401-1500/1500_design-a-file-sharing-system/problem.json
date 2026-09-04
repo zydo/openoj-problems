@@ -4,8 +4,15 @@
   "id": 1500,
   "slug": "design-a-file-sharing-system",
   "title": "Design a File Sharing System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Data Stream"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Sorting",

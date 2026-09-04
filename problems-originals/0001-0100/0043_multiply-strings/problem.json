@@ -4,8 +4,13 @@
   "id": 43,
   "slug": "multiply-strings",
   "title": "Multiply Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Simulation"

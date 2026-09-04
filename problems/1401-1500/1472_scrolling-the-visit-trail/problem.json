@@ -4,12 +4,20 @@
   "id": 1472,
   "slug": "scrolling-the-visit-trail",
   "title": "Scrolling The Visit Trail",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Linked List",
     "Stack",
     "Design",
+    "Data Stream"
+  ],
+  "topics": [
+    "Array",
+    "Linked List",
+    "Stack",
+    "Design",
+    "Doubly-Linked List",
     "Data Stream"
   ],
   "invocation": {

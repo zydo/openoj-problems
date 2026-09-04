@@ -4,8 +4,12 @@
   "id": 3827,
   "slug": "count-monobit-integers",
   "title": "Count Monobit Integers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
     "Bit Manipulation",
     "Enumeration"
   ],

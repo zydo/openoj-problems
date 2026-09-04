@@ -4,8 +4,13 @@
   "id": 445,
   "slug": "add-two-numbers-ii",
   "title": "Add Two Numbers II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Math",
+    "Stack"
+  ],
+  "topics": [
     "Linked List",
     "Math",
     "Stack"

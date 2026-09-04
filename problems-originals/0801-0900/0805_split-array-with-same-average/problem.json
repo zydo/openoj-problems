@@ -3,12 +3,21 @@
   "id": 805,
   "slug": "split-array-with-same-average",
   "title": "Split Array With Same Average",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Meet in the Middle",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

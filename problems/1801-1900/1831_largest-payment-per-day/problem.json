@@ -4,10 +4,13 @@
   "id": 1831,
   "slug": "largest-payment-per-day",
   "title": "Largest Payment Per Day",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

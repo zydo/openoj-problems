@@ -4,9 +4,15 @@
   "id": 3842,
   "slug": "lamps-left-lit",
   "title": "Lamps Left Lit",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
     "Simulation"
   ],
   "invocation": {

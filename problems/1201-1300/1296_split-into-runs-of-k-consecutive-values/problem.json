@@ -4,10 +4,16 @@
   "id": 1296,
   "slug": "split-into-runs-of-k-consecutive-values",
   "title": "Split Into Runs of k Consecutive Values",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
     "Sorting"
   ],
   "invocation": {

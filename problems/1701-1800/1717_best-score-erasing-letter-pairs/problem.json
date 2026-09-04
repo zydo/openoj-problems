@@ -4,11 +4,16 @@
   "id": 1717,
   "slug": "best-score-erasing-letter-pairs",
   "title": "Best Score Erasing Letter Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Stack",
     "Greedy",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

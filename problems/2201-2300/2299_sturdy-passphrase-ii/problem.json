@@ -4,8 +4,11 @@
   "id": 2299,
   "slug": "sturdy-passphrase-ii",
   "title": "Sturdy Passphrase II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

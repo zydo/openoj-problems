@@ -4,8 +4,15 @@
   "id": 3261,
   "slug": "count-substrings-that-satisfy-k-constraint-ii",
   "title": "Count Substrings That Satisfy K-Constraint II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Binary Search",

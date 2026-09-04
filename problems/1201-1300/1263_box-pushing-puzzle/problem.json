@@ -4,10 +4,16 @@
   "id": 1263,
   "slug": "box-pushing-puzzle",
   "title": "Box Pushing Puzzle",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Heap (Priority Queue)",
     "Matrix"
   ],
   "invocation": {

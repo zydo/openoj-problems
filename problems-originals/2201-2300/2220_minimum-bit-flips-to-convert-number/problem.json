@@ -4,8 +4,11 @@
   "id": 2220,
   "slug": "minimum-bit-flips-to-convert-number",
   "title": "Minimum Bit Flips to Convert Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

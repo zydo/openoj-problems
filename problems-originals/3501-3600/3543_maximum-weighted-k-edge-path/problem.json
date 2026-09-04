@@ -4,8 +4,13 @@
   "id": 3543,
   "slug": "maximum-weighted-k-edge-path",
   "title": "Maximum Weighted K-Edge Path",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Dynamic Programming",
+    "Graph Theory"
+  ],
+  "topics": [
     "Hash Table",
     "Dynamic Programming",
     "Graph Theory"

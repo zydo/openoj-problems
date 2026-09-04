@@ -4,10 +4,16 @@
   "id": 3763,
   "slug": "step-gated-harvest",
   "title": "Step-Gated Harvest",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
     "Heap (Priority Queue)"
   ],
   "invocation": {

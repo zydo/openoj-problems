@@ -3,11 +3,18 @@
   "id": 2581,
   "slug": "count-number-of-possible-root-nodes",
   "title": "Count Number of Possible Root Nodes",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

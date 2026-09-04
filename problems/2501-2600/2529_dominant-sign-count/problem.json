@@ -4,8 +4,13 @@
   "id": 2529,
   "slug": "dominant-sign-count",
   "title": "Dominant Sign Count",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Counting"

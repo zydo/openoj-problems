@@ -4,8 +4,13 @@
   "id": 1630,
   "slug": "arithmetic-subarrays",
   "title": "Arithmetic Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

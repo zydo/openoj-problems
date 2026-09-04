@@ -4,8 +4,14 @@
   "id": 1818,
   "slug": "minimum-absolute-sum-difference",
   "title": "Minimum Absolute Sum Difference",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting",

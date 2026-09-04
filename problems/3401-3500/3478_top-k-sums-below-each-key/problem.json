@@ -4,11 +4,16 @@
   "id": 3478,
   "slug": "top-k-sums-below-each-key",
   "title": "Top-k Sums Below Each Key",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Heap",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3604,
   "slug": "minimum-time-to-reach-destination-in-directed-graph",
   "title": "Minimum Time to Reach Destination in Directed Graph",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"

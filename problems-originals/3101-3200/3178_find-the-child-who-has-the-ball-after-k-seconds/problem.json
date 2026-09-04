@@ -4,8 +4,12 @@
   "id": 3178,
   "slug": "find-the-child-who-has-the-ball-after-k-seconds",
   "title": "Find the Child Who Has the Ball After K Seconds",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

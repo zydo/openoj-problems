@@ -3,8 +3,13 @@
   "id": 221,
   "slug": "maximal-square",
   "title": "Maximal Square",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Matrix"
   ],

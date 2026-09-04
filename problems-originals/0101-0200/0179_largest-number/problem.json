@@ -3,10 +3,16 @@
   "id": 179,
   "slug": "largest-number",
   "title": "Largest Number",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

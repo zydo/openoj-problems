@@ -4,8 +4,12 @@
   "id": 2060,
   "slug": "two-encodings-one-original",
   "title": "Two Encodings, One Original",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

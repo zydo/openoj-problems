@@ -4,8 +4,13 @@
   "id": 814,
   "slug": "binary-tree-pruning",
   "title": "Binary Tree Pruning",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

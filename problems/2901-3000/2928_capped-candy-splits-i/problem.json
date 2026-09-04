@@ -4,8 +4,13 @@
   "id": 2928,
   "slug": "capped-candy-splits-i",
   "title": "Capped Candy Splits I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Combinatorics",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Combinatorics",
     "Enumeration"

@@ -4,10 +4,17 @@
   "id": 3477,
   "slug": "two-type-harvest-run-ii",
   "title": "Two-Type Harvest Run II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Segment Tree",
+    "Simulation",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

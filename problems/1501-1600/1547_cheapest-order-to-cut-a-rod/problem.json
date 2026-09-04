@@ -4,10 +4,15 @@
   "id": 1547,
   "slug": "cheapest-order-to-cut-a-rod",
   "title": "Cheapest Order to Cut a Rod",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

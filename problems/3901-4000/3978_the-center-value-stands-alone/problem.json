@@ -4,8 +4,12 @@
   "id": 3978,
   "slug": "the-center-value-stands-alone",
   "title": "The Center Value Stands Alone",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Counting"
   ],

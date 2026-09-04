@@ -4,12 +4,21 @@
   "id": 996,
   "slug": "square-sum-orderings",
   "title": "Square-Sum Orderings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

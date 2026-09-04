@@ -4,8 +4,12 @@
   "id": 2676,
   "slug": "throttle",
   "title": "Throttle",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Concurrency",
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

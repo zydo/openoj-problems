@@ -4,8 +4,12 @@
   "id": 3195,
   "slug": "the-tightest-cover-for-all-ones-i",
   "title": "The Tightest Cover For All Ones I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

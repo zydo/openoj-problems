@@ -4,8 +4,12 @@
   "id": 1144,
   "slug": "trim-down-to-a-zigzag",
   "title": "Trim Down to a Zigzag",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

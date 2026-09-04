@@ -4,8 +4,13 @@
   "id": 2032,
   "slug": "two-out-of-three",
   "title": "Two Out of Three",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation"

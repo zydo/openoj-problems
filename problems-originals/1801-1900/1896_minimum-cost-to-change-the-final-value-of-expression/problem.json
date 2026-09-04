@@ -3,8 +3,14 @@
   "id": 1896,
   "slug": "minimum-cost-to-change-the-final-value-of-expression",
   "title": "Minimum Cost to Change the Final Value of Expression",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack"
+  ],
+  "topics": [
+    "Math",
     "String",
     "Dynamic Programming",
     "Stack"

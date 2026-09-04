@@ -3,8 +3,12 @@
   "id": 309,
   "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
   "title": "Best Time to Buy and Sell Stock with Cooldown",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

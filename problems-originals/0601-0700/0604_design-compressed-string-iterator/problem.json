@@ -4,8 +4,14 @@
   "id": 604,
   "slug": "design-compressed-string-iterator",
   "title": "Design Compressed String Iterator",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Design",
+    "Iterator"
+  ],
+  "topics": [
     "Array",
     "String",
     "Design",

@@ -4,8 +4,15 @@
   "id": 229,
   "slug": "majority-element-ii",
   "title": "Majority Element II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting",
+    "Boyer–Moore Majority Vote Algorithm"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

@@ -4,8 +4,12 @@
   "id": 3582,
   "slug": "hashtag-from-a-caption",
   "title": "Hashtag From A Caption",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

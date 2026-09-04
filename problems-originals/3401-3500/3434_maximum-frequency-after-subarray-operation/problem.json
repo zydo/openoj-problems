@@ -4,8 +4,16 @@
   "id": 3434,
   "slug": "maximum-frequency-after-subarray-operation",
   "title": "Maximum Frequency After Subarray Operation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Greedy",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

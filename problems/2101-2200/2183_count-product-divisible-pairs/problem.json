@@ -4,12 +4,21 @@
   "id": 2183,
   "slug": "count-product-divisible-pairs",
   "title": "Count Product-Divisible Pairs",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 2704,
   "slug": "to-be-or-not-to-be",
   "title": "To Be Or Not To Be",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

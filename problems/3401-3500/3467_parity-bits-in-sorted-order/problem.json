@@ -4,8 +4,13 @@
   "id": 3467,
   "slug": "parity-bits-in-sorted-order",
   "title": "Parity Bits In Sorted Order",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Counting"

@@ -4,8 +4,12 @@
   "id": 2822,
   "slug": "inversion-of-object",
   "title": "Inversion of Object",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array",
+    "Hash Table"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

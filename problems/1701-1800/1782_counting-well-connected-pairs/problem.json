@@ -4,10 +4,19 @@
   "id": 1782,
   "slug": "counting-well-connected-pairs",
   "title": "Counting Well-Connected Pairs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
     "Two Pointers",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Graph Theory",
     "Sorting",
     "Counting"
   ],

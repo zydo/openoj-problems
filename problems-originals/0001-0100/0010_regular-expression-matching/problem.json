@@ -3,11 +3,16 @@
   "id": 10,
   "slug": "regular-expression-matching",
   "title": "Regular Expression Matching",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Expression Parsing"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

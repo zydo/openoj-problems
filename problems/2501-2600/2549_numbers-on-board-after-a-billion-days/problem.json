@@ -4,8 +4,14 @@
   "id": 2549,
   "slug": "numbers-on-board-after-a-billion-days",
   "title": "Numbers on the Board After a Billion Days",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Math",
     "Simulation"
   ],

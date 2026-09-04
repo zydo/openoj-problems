@@ -4,8 +4,12 @@
   "id": 836,
   "slug": "rectangle-overlap",
   "title": "Rectangle Overlap",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

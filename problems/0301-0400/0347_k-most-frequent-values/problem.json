@@ -4,10 +4,20 @@
   "id": 347,
   "slug": "k-most-frequent-values",
   "title": "K Most Frequent Values",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Heap",
+    "Quickselect"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
+    "Counting",
     "Quickselect"
   ],
   "invocation": {

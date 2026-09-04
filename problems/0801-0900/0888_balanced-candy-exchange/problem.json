@@ -4,10 +4,16 @@
   "id": 888,
   "slug": "balanced-candy-exchange",
   "title": "Balanced Candy Exchange",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

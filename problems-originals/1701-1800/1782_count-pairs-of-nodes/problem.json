@@ -4,8 +4,17 @@
   "id": 1782,
   "slug": "count-pairs-of-nodes",
   "title": "Count Pairs Of Nodes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Graph Theory",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

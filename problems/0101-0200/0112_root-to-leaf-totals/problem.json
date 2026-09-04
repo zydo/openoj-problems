@@ -4,8 +4,14 @@
   "id": 112,
   "slug": "root-to-leaf-totals",
   "title": "Root-To-Leaf Totals",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

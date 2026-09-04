@@ -4,8 +4,12 @@
   "id": 1557,
   "slug": "minimum-number-of-vertices-to-reach-all-nodes",
   "title": "Minimum Number of Vertices to Reach All Nodes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Directed Acyclic Graph"
+  ],
+  "topics": [
     "Graph Theory",
     "Directed Acyclic Graph"
   ],

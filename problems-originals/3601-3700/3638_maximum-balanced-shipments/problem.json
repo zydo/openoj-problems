@@ -4,8 +4,15 @@
   "id": 3638,
   "slug": "maximum-balanced-shipments",
   "title": "Maximum Balanced Shipments",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Stack",

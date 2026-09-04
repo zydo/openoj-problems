@@ -4,8 +4,11 @@
   "id": 580,
   "slug": "count-student-number-in-departments",
   "title": "Count Student Number in Departments",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

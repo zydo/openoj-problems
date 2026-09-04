@@ -4,10 +4,17 @@
   "id": 3749,
   "slug": "evaluate-nested-arithmetic-calls",
   "title": "Evaluate Nested Arithmetic Calls",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Expression Parsing",
     "Recursion",
+    "Stack"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Divide and Conquer",
     "Stack"
   ],
   "invocation": {

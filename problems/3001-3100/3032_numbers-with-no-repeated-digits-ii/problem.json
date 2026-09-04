@@ -4,10 +4,15 @@
   "id": 3032,
   "slug": "numbers-with-no-repeated-digits-ii",
   "title": "Numbers With No Repeated Digits II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

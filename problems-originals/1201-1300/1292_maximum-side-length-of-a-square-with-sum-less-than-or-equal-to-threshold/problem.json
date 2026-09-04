@@ -3,11 +3,17 @@
   "id": 1292,
   "slug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
   "title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Prefix Sum",
     "Binary Search",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Matrix",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

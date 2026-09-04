@@ -4,8 +4,12 @@
   "id": 2546,
   "slug": "reshape-binary-string-with-pair-moves",
   "title": "Reshape a Binary String with Pair Moves",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "String",
     "Bit Manipulation"
   ],

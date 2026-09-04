@@ -4,8 +4,13 @@
   "id": 2536,
   "slug": "rectangle-coverage-counts",
   "title": "Rectangle Coverage Counts",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

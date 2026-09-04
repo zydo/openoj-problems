@@ -3,11 +3,18 @@
   "id": 126,
   "slug": "word-ladder-ii",
   "title": "Word Ladder II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "BFS",
     "Backtracking"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Backtracking",
+    "Breadth-First Search",
+    "Bidirectional Search"
   ],
   "invocation": {
     "type": "function",

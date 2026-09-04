@@ -4,8 +4,13 @@
   "id": 1522,
   "slug": "diameter-of-n-ary-tree",
   "title": "Diameter of N-ary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "DP on Trees"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "DP on Trees"

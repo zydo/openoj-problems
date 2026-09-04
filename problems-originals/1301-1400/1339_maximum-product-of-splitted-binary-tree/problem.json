@@ -4,8 +4,13 @@
   "id": 1339,
   "slug": "maximum-product-of-splitted-binary-tree",
   "title": "Maximum Product of Splitted Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

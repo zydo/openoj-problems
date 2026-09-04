@@ -4,13 +4,23 @@
   "id": 1255,
   "slug": "best-word-score-from-a-letter-pool",
   "title": "Best Word Score From a Letter Pool",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
     "Backtracking",
     "Bit Manipulation",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Counting",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

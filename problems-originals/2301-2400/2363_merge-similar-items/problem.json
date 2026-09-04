@@ -4,8 +4,14 @@
   "id": 2363,
   "slug": "merge-similar-items",
   "title": "Merge Similar Items",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

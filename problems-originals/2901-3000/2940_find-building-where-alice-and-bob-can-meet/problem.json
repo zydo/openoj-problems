@@ -3,10 +3,19 @@
   "id": 2940,
   "slug": "find-building-where-alice-and-bob-can-meet",
   "title": "Find Building Where Alice and Bob Can Meet",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Stack",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Heap (Priority Queue)",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

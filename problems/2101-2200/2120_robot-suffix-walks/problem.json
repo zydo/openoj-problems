@@ -4,8 +4,12 @@
   "id": 2120,
   "slug": "robot-suffix-walks",
   "title": "Robot Suffix Walks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

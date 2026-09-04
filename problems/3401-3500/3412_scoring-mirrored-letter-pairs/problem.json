@@ -4,8 +4,14 @@
   "id": 3412,
   "slug": "scoring-mirrored-letter-pairs",
   "title": "Scoring Mirrored Letter Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Stack",

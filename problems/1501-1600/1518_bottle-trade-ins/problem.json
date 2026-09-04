@@ -4,8 +4,12 @@
   "id": 1518,
   "slug": "bottle-trade-ins",
   "title": "Bottle Trade-Ins",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

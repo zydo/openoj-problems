@@ -3,12 +3,19 @@
   "id": 3296,
   "slug": "minimum-number-of-seconds-to-make-mountain-height-zero",
   "title": "Minimum Number of Seconds to Make Mountain Height Zero",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Binary Search",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

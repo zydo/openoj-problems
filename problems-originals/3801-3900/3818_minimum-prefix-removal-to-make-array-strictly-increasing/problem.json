@@ -4,8 +4,11 @@
   "id": 3818,
   "slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
   "title": "Minimum Prefix Removal to Make Array Strictly Increasing",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

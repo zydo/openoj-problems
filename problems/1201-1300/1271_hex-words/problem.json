@@ -4,8 +4,12 @@
   "id": 1271,
   "slug": "hex-words",
   "title": "Hex Words",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

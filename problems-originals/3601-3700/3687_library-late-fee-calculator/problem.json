@@ -4,8 +4,12 @@
   "id": 3687,
   "slug": "library-late-fee-calculator",
   "title": "Library Late Fee Calculator",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -3,12 +3,19 @@
   "id": 1976,
   "slug": "number-of-ways-to-arrive-at-destination",
   "title": "Number of Ways to Arrive at Destination",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Shortest Path",
     "Heap",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

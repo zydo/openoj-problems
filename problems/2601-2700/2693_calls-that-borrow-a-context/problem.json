@@ -4,9 +4,12 @@
   "id": 2693,
   "slug": "calls-that-borrow-a-context",
   "title": "Calls That Borrow A Context",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
+    "Design"
+  ],
+  "topics": [
     "Design"
   ],
   "invocation": {

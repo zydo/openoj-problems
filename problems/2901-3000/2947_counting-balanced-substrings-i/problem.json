@@ -4,12 +4,20 @@
   "id": 2947,
   "slug": "counting-balanced-substrings-i",
   "title": "Counting Balanced Substrings I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Enumeration",
     "Prefix Sum",
     "Math"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Enumeration",
+    "Number Theory",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

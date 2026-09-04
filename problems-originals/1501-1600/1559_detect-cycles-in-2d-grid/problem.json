@@ -4,8 +4,15 @@
   "id": 1559,
   "slug": "detect-cycles-in-2d-grid",
   "title": "Detect Cycles in 2D Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

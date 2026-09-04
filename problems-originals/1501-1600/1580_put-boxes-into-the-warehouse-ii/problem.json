@@ -4,8 +4,13 @@
   "id": 1580,
   "slug": "put-boxes-into-the-warehouse-ii",
   "title": "Put Boxes Into the Warehouse II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

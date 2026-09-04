@@ -4,10 +4,19 @@
   "id": 2736,
   "slug": "peak-pair-sum-above-two-floors",
   "title": "Peak Pair Sum Above Two Floors",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Binary Indexed Tree",
+    "Segment Tree",
     "Sorting",
     "Monotonic Stack"
   ],

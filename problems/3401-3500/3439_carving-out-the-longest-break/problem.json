@@ -4,8 +4,13 @@
   "id": 3439,
   "slug": "carving-out-the-longest-break",
   "title": "Carving Out The Longest Break",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sliding Window"

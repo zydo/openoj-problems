@@ -3,11 +3,15 @@
   "id": 1278,
   "slug": "palindrome-partitioning-iii",
   "title": "Palindrome Partitioning III",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 68,
   "slug": "set-the-lines-flush",
   "title": "Set The Lines Flush",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Simulation"

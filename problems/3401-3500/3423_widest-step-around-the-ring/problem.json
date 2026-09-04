@@ -4,8 +4,11 @@
   "id": 3423,
   "slug": "widest-step-around-the-ring",
   "title": "Widest Step Around The Ring",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

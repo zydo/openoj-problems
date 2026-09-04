@@ -4,8 +4,13 @@
   "id": 2323,
   "slug": "fewest-days-to-clear-every-job-ii",
   "title": "Fewest Days to Clear Every Job II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

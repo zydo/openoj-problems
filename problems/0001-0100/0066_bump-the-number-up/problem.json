@@ -4,8 +4,12 @@
   "id": 66,
   "slug": "bump-the-number-up",
   "title": "Bump The Number Up",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

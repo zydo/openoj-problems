@@ -4,8 +4,13 @@
   "id": 1221,
   "slug": "finest-balanced-slices",
   "title": "Finest Balanced Slices",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Counting"

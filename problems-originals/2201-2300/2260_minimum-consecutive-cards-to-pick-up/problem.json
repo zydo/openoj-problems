@@ -4,8 +4,13 @@
   "id": 2260,
   "slug": "minimum-consecutive-cards-to-pick-up",
   "title": "Minimum Consecutive Cards to Pick Up",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

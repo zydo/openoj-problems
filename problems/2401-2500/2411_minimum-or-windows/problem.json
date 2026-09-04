@@ -4,10 +4,16 @@
   "id": 2411,
   "slug": "minimum-or-windows",
   "title": "Minimum OR Windows",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Bit Manipulation",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

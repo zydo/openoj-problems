@@ -4,8 +4,14 @@
   "id": 3811,
   "slug": "number-of-alternating-xor-partitions",
   "title": "Number of Alternating XOR Partitions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

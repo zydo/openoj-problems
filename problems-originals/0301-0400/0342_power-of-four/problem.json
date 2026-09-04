@@ -4,8 +4,13 @@
   "id": 342,
   "slug": "power-of-four",
   "title": "Power of Four",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Recursion"

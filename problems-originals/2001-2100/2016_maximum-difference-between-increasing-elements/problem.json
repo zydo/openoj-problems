@@ -4,8 +4,11 @@
   "id": 2016,
   "slug": "maximum-difference-between-increasing-elements",
   "title": "Maximum Difference Between Increasing Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

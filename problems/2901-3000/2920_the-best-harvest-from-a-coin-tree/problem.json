@@ -4,12 +4,21 @@
   "id": 2920,
   "slug": "the-best-harvest-from-a-coin-tree",
   "title": "The Best Harvest From A Coin Tree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Dynamic Programming",
     "Bit Manipulation",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search",
+    "Memoization",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

@@ -3,8 +3,13 @@
   "id": 1167,
   "slug": "minimum-cost-to-connect-sticks",
   "title": "Minimum Cost to Connect Sticks",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Heap (Priority Queue)"

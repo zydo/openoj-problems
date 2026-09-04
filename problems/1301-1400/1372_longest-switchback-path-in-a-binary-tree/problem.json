@@ -4,12 +4,19 @@
   "id": 1372,
   "slug": "longest-switchback-path-in-a-binary-tree",
   "title": "Longest Switchback Path in a Binary Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Tree",
     "Depth-First Search",
     "Binary Tree"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

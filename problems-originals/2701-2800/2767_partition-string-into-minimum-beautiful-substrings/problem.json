@@ -4,8 +4,14 @@
   "id": 2767,
   "slug": "partition-string-into-minimum-beautiful-substrings",
   "title": "Partition String Into Minimum Beautiful Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming",

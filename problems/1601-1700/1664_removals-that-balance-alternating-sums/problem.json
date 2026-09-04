@@ -4,8 +4,12 @@
   "id": 1664,
   "slug": "removals-that-balance-alternating-sums",
   "title": "Removals That Balance Alternating Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

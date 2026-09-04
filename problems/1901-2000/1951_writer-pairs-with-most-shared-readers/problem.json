@@ -4,10 +4,13 @@
   "id": 1951,
   "slug": "writer-pairs-with-most-shared-readers",
   "title": "Writer Pairs With the Most Shared Readers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

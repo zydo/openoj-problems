@@ -4,8 +4,13 @@
   "id": 3248,
   "slug": "snake-in-matrix",
   "title": "Snake in Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Simulation"

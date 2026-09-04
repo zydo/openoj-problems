@@ -3,8 +3,12 @@
   "id": 3466,
   "slug": "maximum-coin-collection",
   "title": "Maximum Coin Collection",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

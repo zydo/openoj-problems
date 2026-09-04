@@ -4,8 +4,12 @@
   "id": 3640,
   "slug": "rise-fall-rise-ii",
   "title": "Rise, Fall, Rise II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

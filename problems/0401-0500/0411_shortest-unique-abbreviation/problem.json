@@ -4,8 +4,14 @@
   "id": 411,
   "slug": "shortest-unique-abbreviation",
   "title": "Shortest Unique Abbreviation",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Backtracking",

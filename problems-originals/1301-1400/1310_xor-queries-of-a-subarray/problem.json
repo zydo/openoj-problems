@@ -3,11 +3,16 @@
   "id": 1310,
   "slug": "xor-queries-of-a-subarray",
   "title": "XOR Queries of a Subarray",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Prefix Sum",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

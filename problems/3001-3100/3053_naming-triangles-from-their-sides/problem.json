@@ -4,10 +4,14 @@
   "id": 3053,
   "slug": "naming-triangles-from-their-sides",
   "title": "Naming Triangles From Their Sides",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database",
+    "Polygons"
   ],
   "invocation": {
     "type": "sql",

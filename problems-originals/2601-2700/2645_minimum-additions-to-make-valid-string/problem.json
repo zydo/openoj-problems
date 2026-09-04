@@ -4,8 +4,14 @@
   "id": 2645,
   "slug": "minimum-additions-to-make-valid-string",
   "title": "Minimum Additions to Make Valid String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Stack",

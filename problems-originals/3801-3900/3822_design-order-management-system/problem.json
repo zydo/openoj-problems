@@ -4,8 +4,12 @@
   "id": 3822,
   "slug": "design-order-management-system",
   "title": "Design Order Management System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design"
+  ],
+  "topics": [
     "Hash Table",
     "Design"
   ],

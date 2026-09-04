@@ -4,8 +4,16 @@
   "id": 3636,
   "slug": "threshold-majority-queries",
   "title": "Threshold Majority Queries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Divide and Conquer",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

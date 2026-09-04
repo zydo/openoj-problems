@@ -4,8 +4,13 @@
   "id": 3495,
   "slug": "minimum-operations-to-make-array-elements-zero",
   "title": "Minimum Operations to Make Array Elements Zero",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation"

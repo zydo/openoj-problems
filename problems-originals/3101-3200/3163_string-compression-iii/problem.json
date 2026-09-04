@@ -4,8 +4,11 @@
   "id": 3163,
   "slug": "string-compression-iii",
   "title": "String Compression III",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

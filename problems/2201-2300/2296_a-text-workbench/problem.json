@@ -4,8 +4,16 @@
   "id": 2296,
   "slug": "a-text-workbench",
   "title": "A Text Workbench",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Linked List",
+    "String",
+    "Stack",
+    "Design",
+    "Simulation",
+    "Doubly-Linked List"
+  ],
+  "topics": [
     "Linked List",
     "String",
     "Stack",

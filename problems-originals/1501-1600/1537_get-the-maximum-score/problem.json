@@ -4,8 +4,14 @@
   "id": 1537,
   "slug": "get-the-maximum-score",
   "title": "Get the Maximum Score",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Dynamic Programming",

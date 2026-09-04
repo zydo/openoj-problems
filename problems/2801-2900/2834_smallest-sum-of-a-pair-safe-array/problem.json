@@ -4,8 +4,12 @@
   "id": 2834,
   "slug": "smallest-sum-of-a-pair-safe-array",
   "title": "Smallest Sum Of A Pair-Safe Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

@@ -4,9 +4,16 @@
   "id": 826,
   "slug": "worker-job-earnings",
   "title": "Worker Job Earnings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
     "Binary Search",
     "Greedy",
     "Sorting"

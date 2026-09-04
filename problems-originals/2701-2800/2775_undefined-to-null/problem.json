@@ -4,8 +4,11 @@
   "id": 2775,
   "slug": "undefined-to-null",
   "title": "Undefined to Null",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Recursion"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

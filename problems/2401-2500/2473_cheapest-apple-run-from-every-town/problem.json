@@ -4,11 +4,17 @@
   "id": 2473,
   "slug": "cheapest-apple-run-from-every-town",
   "title": "Cheapest Apple Run From Every Town",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Shortest Path",
     "Graph",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

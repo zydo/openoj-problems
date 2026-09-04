@@ -4,10 +4,16 @@
   "id": 1847,
   "slug": "nearest-qualifying-room",
   "title": "Nearest Qualifying Room",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Sorting",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

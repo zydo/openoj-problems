@@ -4,10 +4,13 @@
   "id": 2991,
   "slug": "the-winery-podium-by-nation",
   "title": "The Winery Podium by Nation",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

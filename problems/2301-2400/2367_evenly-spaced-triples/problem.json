@@ -4,10 +4,16 @@
   "id": 2367,
   "slug": "evenly-spaced-triples",
   "title": "Evenly Spaced Triples",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
     "Enumeration"
   ],
   "invocation": {

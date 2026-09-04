@@ -3,12 +3,17 @@
   "id": 1156,
   "slug": "swap-for-longest-repeated-character-substring",
   "title": "Swap For Longest Repeated Character Substring",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Two Pointers",
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

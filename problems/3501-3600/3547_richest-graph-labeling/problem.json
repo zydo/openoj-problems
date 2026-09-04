@@ -4,8 +4,13 @@
   "id": 3547,
   "slug": "richest-graph-labeling",
   "title": "Richest Graph Labeling",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Greedy",
+    "Graph Theory"
+  ],
+  "topics": [
     "Math",
     "Greedy",
     "Graph Theory"

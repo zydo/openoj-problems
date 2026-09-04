@@ -4,8 +4,13 @@
   "id": 242,
   "slug": "letter-count-match",
   "title": "Letter Count Match",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sorting"

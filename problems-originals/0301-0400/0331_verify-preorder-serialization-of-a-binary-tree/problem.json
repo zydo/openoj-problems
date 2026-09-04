@@ -4,8 +4,14 @@
   "id": 331,
   "slug": "verify-preorder-serialization-of-a-binary-tree",
   "title": "Verify Preorder Serialization of a Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Tree",

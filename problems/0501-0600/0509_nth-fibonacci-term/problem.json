@@ -4,8 +4,14 @@
   "id": 509,
   "slug": "nth-fibonacci-term",
   "title": "Nth Fibonacci Term",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Recursion",
+    "Memoization"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Recursion",

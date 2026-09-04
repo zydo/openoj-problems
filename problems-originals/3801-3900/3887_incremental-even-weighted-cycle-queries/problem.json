@@ -3,10 +3,14 @@
   "id": 3887,
   "slug": "incremental-even-weighted-cycle-queries",
   "title": "Incremental Even-Weighted Cycle Queries",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

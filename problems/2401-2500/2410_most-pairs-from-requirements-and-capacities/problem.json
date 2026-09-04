@@ -4,10 +4,16 @@
   "id": 2410,
   "slug": "most-pairs-from-requirements-and-capacities",
   "title": "Most Pairs From Requirements and Capacities",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
     "Sorting"
   ],
   "invocation": {

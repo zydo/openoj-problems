@@ -4,8 +4,14 @@
   "id": 617,
   "slug": "overlay-binary-trees",
   "title": "Overlay Binary Trees",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

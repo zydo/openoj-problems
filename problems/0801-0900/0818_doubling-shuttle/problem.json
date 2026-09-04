@@ -4,10 +4,15 @@
   "id": 818,
   "slug": "doubling-shuttle",
   "title": "Doubling Shuttle",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Heuristic Search",
+    "A* Search"
   ],
   "invocation": {
     "type": "function",

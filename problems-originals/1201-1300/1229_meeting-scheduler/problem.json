@@ -4,8 +4,13 @@
   "id": 1229,
   "slug": "meeting-scheduler",
   "title": "Meeting Scheduler",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Sorting"

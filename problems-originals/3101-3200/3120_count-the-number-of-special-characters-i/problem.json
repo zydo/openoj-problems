@@ -4,8 +4,12 @@
   "id": 3120,
   "slug": "count-the-number-of-special-characters-i",
   "title": "Count the Number of Special Characters I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

@@ -4,9 +4,16 @@
   "id": 3977,
   "slug": "the-rationed-signal-relay",
   "title": "The Rationed Signal Relay",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"

@@ -4,8 +4,12 @@
   "id": 1842,
   "slug": "next-palindrome-using-same-digits",
   "title": "Next Palindrome Using Same Digits",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

@@ -4,12 +4,20 @@
   "id": 2261,
   "slug": "distinct-subarrays-with-at-most-k-multiples",
   "title": "Distinct Subarrays With at Most K Multiples",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Trie",
     "Rolling Hash",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Trie",
+    "Rolling Hash",
+    "Hash Function",
     "Enumeration"
   ],
   "invocation": {

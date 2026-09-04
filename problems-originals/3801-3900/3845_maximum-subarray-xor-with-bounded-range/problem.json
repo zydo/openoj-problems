@@ -4,8 +4,17 @@
   "id": 3845,
   "slug": "maximum-subarray-xor-with-bounded-range",
   "title": "Maximum Subarray XOR with Bounded Range",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Trie",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Trie",

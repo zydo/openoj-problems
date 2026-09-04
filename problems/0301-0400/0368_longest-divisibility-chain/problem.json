@@ -4,8 +4,14 @@
   "id": 368,
   "slug": "longest-divisibility-chain",
   "title": "Longest Divisibility Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Dynamic Programming",
     "Sorting"
   ],

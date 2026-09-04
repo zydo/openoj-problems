@@ -4,8 +4,11 @@
   "id": 1507,
   "slug": "ordinal-date-to-iso-form",
   "title": "Ordinal Date To ISO Form",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

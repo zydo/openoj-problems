@@ -4,8 +4,13 @@
   "id": 1120,
   "slug": "highest-subtree-average",
   "title": "Highest Subtree Average",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

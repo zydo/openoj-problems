@@ -3,8 +3,13 @@
   "id": 2463,
   "slug": "minimum-total-distance-traveled",
   "title": "Minimum Total Distance Traveled",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Sorting"
   ],

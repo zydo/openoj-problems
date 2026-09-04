@@ -4,11 +4,19 @@
   "id": 1245,
   "slug": "widest-tree-path-from-an-edge-list",
   "title": "Widest Tree Path From an Edge List",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3197,
   "slug": "the-tightest-cover-for-all-ones-ii",
   "title": "The Tightest Cover For All Ones II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Enumeration"

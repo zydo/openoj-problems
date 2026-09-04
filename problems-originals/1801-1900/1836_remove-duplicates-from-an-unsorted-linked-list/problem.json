@@ -4,8 +4,12 @@
   "id": 1836,
   "slug": "remove-duplicates-from-an-unsorted-linked-list",
   "title": "Remove Duplicates From an Unsorted Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "topics": [
     "Hash Table",
     "Linked List"
   ],

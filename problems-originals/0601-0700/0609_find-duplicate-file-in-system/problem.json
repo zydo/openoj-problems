@@ -4,8 +4,13 @@
   "id": 609,
   "slug": "find-duplicate-file-in-system",
   "title": "Find Duplicate File in System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

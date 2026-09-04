@@ -4,8 +4,12 @@
   "id": 2255,
   "slug": "count-prefixes-of-a-given-string",
   "title": "Count Prefixes of a Given String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

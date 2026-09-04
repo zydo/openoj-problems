@@ -4,11 +4,16 @@
   "id": 2386,
   "slug": "kth-largest-subsequence-sum",
   "title": "Kth Largest Subsequence Sum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

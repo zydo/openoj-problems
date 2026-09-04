@@ -4,8 +4,13 @@
   "id": 3761,
   "slug": "closest-reversal-pairs",
   "title": "Closest Reversal Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math"

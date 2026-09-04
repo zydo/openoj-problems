@@ -4,8 +4,12 @@
   "id": 41,
   "slug": "smallest-absent-positive",
   "title": "Smallest Absent Positive",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

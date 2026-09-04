@@ -4,11 +4,18 @@
   "id": 2389,
   "slug": "budgeted-subsequence-lengths",
   "title": "Budgeted Subsequence Lengths",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Binary Search",
     "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
     "Prefix Sum"
   ],
   "invocation": {

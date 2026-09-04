@@ -4,9 +4,15 @@
   "id": 637,
   "slug": "binary-tree-level-averages",
   "title": "Binary Tree Level Averages",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
     "Breadth-First Search",
     "Binary Tree"
   ],

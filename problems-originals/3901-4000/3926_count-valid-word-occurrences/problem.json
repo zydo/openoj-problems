@@ -4,8 +4,14 @@
   "id": 3926,
   "slug": "count-valid-word-occurrences",
   "title": "Count Valid Word Occurrences",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

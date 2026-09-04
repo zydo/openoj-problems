@@ -4,8 +4,14 @@
   "id": 2282,
   "slug": "grid-sight-lines",
   "title": "Grid Sight Lines",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Matrix",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Matrix",

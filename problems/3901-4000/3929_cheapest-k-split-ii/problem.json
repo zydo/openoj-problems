@@ -4,8 +4,14 @@
   "id": 3929,
   "slug": "cheapest-k-split-ii",
   "title": "The Cheapest K-Split II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Dynamic Programming",

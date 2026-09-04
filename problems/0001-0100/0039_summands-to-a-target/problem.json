@@ -4,8 +4,12 @@
   "id": 39,
   "slug": "summands-to-a-target",
   "title": "Summands To A Target",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Backtracking"
   ],

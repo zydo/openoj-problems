@@ -4,8 +4,14 @@
   "id": 1390,
   "slug": "four-divisors",
   "title": "Four Divisors",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Prime Factorization",
+    "Sieve Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Prime Factorization",

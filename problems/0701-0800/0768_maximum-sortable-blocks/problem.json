@@ -4,10 +4,17 @@
   "id": 768,
   "slug": "maximum-sortable-blocks",
   "title": "Maximum Sortable Blocks",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Stack",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

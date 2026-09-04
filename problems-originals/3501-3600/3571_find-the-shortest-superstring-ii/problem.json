@@ -4,8 +4,11 @@
   "id": 3571,
   "slug": "find-the-shortest-superstring-ii",
   "title": "Find the Shortest Superstring II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

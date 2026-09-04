@@ -4,8 +4,16 @@
   "id": 241,
   "slug": "different-ways-to-add-parentheses",
   "title": "Different Ways to Add Parentheses",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Recursion",
+    "Memoization",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming",

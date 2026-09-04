@@ -4,12 +4,19 @@
   "id": 3419,
   "slug": "least-weight-cap-for-reaching-node-zero",
   "title": "Least Weight Cap for Reaching Node Zero",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Binary Search",
     "Breadth-First Search",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

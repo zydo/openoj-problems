@@ -4,10 +4,17 @@
   "id": 2593,
   "slug": "score-of-the-smallest-first-sweep",
   "title": "Score of the Smallest-First Sweep",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Simulation"
   ],
   "invocation": {

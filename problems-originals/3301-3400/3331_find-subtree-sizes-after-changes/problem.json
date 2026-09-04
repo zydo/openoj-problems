@@ -4,8 +4,15 @@
   "id": 3331,
   "slug": "find-subtree-sizes-after-changes",
   "title": "Find Subtree Sizes After Changes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

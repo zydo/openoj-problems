@@ -4,10 +4,15 @@
   "id": 3963,
   "slug": "one-clear-route-across-the-grid",
   "title": "One Clear Route Across The Grid",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Matrix",
     "Greedy"
+  ],
+  "topics": [
+    "Math",
+    "Greedy",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

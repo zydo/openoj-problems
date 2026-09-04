@@ -4,8 +4,11 @@
   "id": 3922,
   "slug": "minimum-flips-to-make-binary-string-coherent",
   "title": "Minimum Flips to Make Binary String Coherent",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

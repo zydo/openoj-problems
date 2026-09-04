@@ -4,8 +4,14 @@
   "id": 3755,
   "slug": "find-maximum-balanced-xor-subarray-length",
   "title": "Find Maximum Balanced XOR Subarray Length",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation",

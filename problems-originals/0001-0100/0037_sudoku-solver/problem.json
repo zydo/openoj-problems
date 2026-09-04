@@ -3,10 +3,18 @@
   "id": 37,
   "slug": "sudoku-solver",
   "title": "Sudoku Solver",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Backtracking",
+    "Matrix",
+    "Algorithm X",
+    "Dancing Links"
   ],
   "invocation": {
     "type": "function",

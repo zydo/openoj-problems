@@ -4,12 +4,19 @@
   "id": 109,
   "slug": "balanced-tree-from-sorted-list",
   "title": "Balanced Tree From Sorted List",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Binary Search Tree",
     "Divide And Conquer",
     "Two Pointers"
+  ],
+  "topics": [
+    "Linked List",
+    "Divide and Conquer",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

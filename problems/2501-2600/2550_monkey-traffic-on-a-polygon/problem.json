@@ -4,8 +4,12 @@
   "id": 2550,
   "slug": "monkey-traffic-on-a-polygon",
   "title": "Monkey Traffic on a Polygon",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Recursion"
   ],

@@ -4,8 +4,12 @@
   "id": 3697,
   "slug": "compute-decimal-representation",
   "title": "Compute Decimal Representation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -4,8 +4,12 @@
   "id": 3114,
   "slug": "latest-time-you-can-obtain-after-replacing-characters",
   "title": "Latest Time You Can Obtain After Replacing Characters",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

@@ -4,8 +4,12 @@
   "id": 3718,
   "slug": "first-absent-multiple-of-k",
   "title": "First Absent Multiple Of K",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

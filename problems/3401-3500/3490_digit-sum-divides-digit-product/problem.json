@@ -4,10 +4,13 @@
   "id": 3490,
   "slug": "digit-sum-divides-digit-product",
   "title": "Digit Sum Divides Digit Product",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Number Theory"
+  ],
+  "topics": [
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 745,
   "slug": "prefix-and-suffix-search",
   "title": "Prefix and Suffix Search",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

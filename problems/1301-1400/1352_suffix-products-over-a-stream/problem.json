@@ -4,8 +4,15 @@
   "id": 1352,
   "slug": "suffix-products-over-a-stream",
   "title": "Suffix Products Over a Stream",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Design",
+    "Data Stream",
     "Prefix Sum"
   ],
   "invocation": {

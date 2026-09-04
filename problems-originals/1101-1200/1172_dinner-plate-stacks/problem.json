@@ -4,8 +4,14 @@
   "id": 1172,
   "slug": "dinner-plate-stacks",
   "title": "Dinner Plate Stacks",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Stack",
+    "Design",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Hash Table",
     "Stack",
     "Design",

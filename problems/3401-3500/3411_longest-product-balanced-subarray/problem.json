@@ -4,12 +4,19 @@
   "id": 3411,
   "slug": "longest-product-balanced-subarray",
   "title": "Longest Product-Balanced Subarray",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math",
     "Number Theory",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Sliding Window",
+    "Enumeration",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

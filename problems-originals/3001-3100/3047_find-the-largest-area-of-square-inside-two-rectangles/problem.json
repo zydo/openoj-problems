@@ -4,8 +4,13 @@
   "id": 3047,
   "slug": "find-the-largest-area-of-square-inside-two-rectangles",
   "title": "Find the Largest Area of Square Inside Two Rectangles",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

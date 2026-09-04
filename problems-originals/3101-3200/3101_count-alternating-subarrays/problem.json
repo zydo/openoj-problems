@@ -4,8 +4,12 @@
   "id": 3101,
   "slug": "count-alternating-subarrays",
   "title": "Count Alternating Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

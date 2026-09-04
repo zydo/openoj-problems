@@ -4,8 +4,11 @@
   "id": 1435,
   "slug": "create-a-session-bar-chart",
   "title": "Create a Session Bar Chart",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

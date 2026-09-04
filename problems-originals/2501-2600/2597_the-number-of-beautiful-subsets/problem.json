@@ -4,8 +4,17 @@
   "id": 2597,
   "slug": "the-number-of-beautiful-subsets",
   "title": "The Number of Beautiful Subsets",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Sorting",
+    "Combinatorics"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

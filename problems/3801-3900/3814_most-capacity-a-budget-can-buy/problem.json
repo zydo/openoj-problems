@@ -4,9 +4,15 @@
   "id": 3814,
   "slug": "most-capacity-a-budget-can-buy",
   "title": "Most Capacity A Budget Can Buy",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
     "Binary Search",
     "Sorting"
   ],

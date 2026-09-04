@@ -4,8 +4,14 @@
   "id": 3859,
   "slug": "count-subarrays-with-k-distinct-integers",
   "title": "Count Subarrays With K Distinct Integers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

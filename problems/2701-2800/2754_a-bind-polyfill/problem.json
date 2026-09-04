@@ -4,9 +4,12 @@
   "id": 2754,
   "slug": "a-bind-polyfill",
   "title": "A Bind Polyfill",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

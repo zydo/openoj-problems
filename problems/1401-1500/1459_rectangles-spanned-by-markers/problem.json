@@ -4,10 +4,13 @@
   "id": 1459,
   "slug": "rectangles-spanned-by-markers",
   "title": "Rectangles Spanned By Markers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

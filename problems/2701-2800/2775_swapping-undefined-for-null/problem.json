@@ -4,10 +4,13 @@
   "id": 2775,
   "slug": "swapping-undefined-for-null",
   "title": "Swapping Undefined For Null",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Recursion"
   ],
   "invocation": {
     "type": "interactive",

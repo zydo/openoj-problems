@@ -4,8 +4,12 @@
   "id": 2446,
   "slug": "determine-if-two-events-have-conflict",
   "title": "Determine if Two Events Have Conflict",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

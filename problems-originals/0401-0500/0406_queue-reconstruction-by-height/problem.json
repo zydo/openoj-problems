@@ -3,11 +3,17 @@
   "id": 406,
   "slug": "queue-reconstruction-by-height",
   "title": "Queue Reconstruction by Height",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Sorting",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

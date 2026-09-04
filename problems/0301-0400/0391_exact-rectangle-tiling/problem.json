@@ -4,12 +4,19 @@
   "id": 391,
   "slug": "exact-rectangle-tiling",
   "title": "Exact Rectangle Tiling",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Sweep Line"
   ],
   "invocation": {
     "type": "function",

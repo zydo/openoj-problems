@@ -4,12 +4,20 @@
   "id": 253,
   "slug": "peak-interval-overlap",
   "title": "Peak Interval Overlap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Sorting",
     "Prefix Sum",
     "Difference Array"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

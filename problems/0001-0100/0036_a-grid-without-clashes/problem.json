@@ -4,8 +4,13 @@
   "id": 36,
   "slug": "a-grid-without-clashes",
   "title": "A Grid Without Clashes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix"

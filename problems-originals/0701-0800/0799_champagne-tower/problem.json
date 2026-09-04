@@ -4,8 +4,11 @@
   "id": 799,
   "slug": "champagne-tower",
   "title": "Champagne Tower",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

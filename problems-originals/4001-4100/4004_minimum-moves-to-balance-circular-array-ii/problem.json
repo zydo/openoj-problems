@@ -4,8 +4,13 @@
   "id": 4004,
   "slug": "minimum-moves-to-balance-circular-array-ii",
   "title": "Minimum Moves to Balance Circular Array II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Greedy",
+    "Math",
+    "Array"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

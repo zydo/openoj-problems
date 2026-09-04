@@ -4,8 +4,12 @@
   "id": 3258,
   "slug": "binary-substrings-under-a-cap-i",
   "title": "Binary Substrings Under A Cap I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

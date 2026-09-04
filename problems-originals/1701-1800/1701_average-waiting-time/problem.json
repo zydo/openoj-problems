@@ -4,8 +4,12 @@
   "id": 1701,
   "slug": "average-waiting-time",
   "title": "Average Waiting Time",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -4,10 +4,15 @@
   "id": 3994,
   "slug": "the-three-band-lineup",
   "title": "The Three-Band Lineup",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Two Pointers"
   ],
   "invocation": {
     "type": "function",

@@ -4,12 +4,17 @@
   "id": 4004,
   "slug": "fewest-transfers-to-balance-a-ring-ii",
   "title": "Fewest Transfers to Balance a Ring II",
-  "difficulty": "H5",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Heap (Priority Queue)",
     "Binary Search",
     "Math"
+  ],
+  "topics": [
+    "Greedy",
+    "Math",
+    "Array"
   ],
   "invocation": {
     "type": "function",

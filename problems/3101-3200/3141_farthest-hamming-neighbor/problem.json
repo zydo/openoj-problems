@@ -4,11 +4,16 @@
   "id": 3141,
   "slug": "farthest-hamming-neighbor",
   "title": "Farthest Hamming Neighbor",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Bit Manipulation",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Breadth-First Search"
   ],
   "invocation": {
     "type": "function",

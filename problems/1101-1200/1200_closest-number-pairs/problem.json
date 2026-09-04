@@ -4,8 +4,12 @@
   "id": 1200,
   "slug": "closest-number-pairs",
   "title": "Closest Number Pairs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

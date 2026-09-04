@@ -4,8 +4,13 @@
   "id": 1306,
   "slug": "jump-game-iii",
   "title": "Jump Game III",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search"

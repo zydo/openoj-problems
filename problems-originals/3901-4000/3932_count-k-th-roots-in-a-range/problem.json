@@ -4,8 +4,12 @@
   "id": 3932,
   "slug": "count-k-th-roots-in-a-range",
   "title": "Count K-th Roots in a Range",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

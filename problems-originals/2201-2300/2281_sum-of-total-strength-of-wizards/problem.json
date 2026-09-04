@@ -3,8 +3,14 @@
   "id": 2281,
   "slug": "sum-of-total-strength-of-wizards",
   "title": "Sum of Total Strength of Wizards",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Monotonic Stack",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
     "Monotonic Stack",
     "Prefix Sum"
   ],

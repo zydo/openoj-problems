@@ -4,8 +4,13 @@
   "id": 2746,
   "slug": "decremental-string-concatenation",
   "title": "Decremental String Concatenation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming"

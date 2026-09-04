@@ -4,8 +4,11 @@
   "id": 2288,
   "slug": "apply-discount-to-prices",
   "title": "Apply Discount to Prices",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

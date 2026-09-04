@@ -4,10 +4,16 @@
   "id": 355,
   "slug": "news-board",
   "title": "News Board",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "design",

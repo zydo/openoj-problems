@@ -4,11 +4,17 @@
   "id": 3608,
   "slug": "earliest-split-into-k-components",
   "title": "Earliest Split Into K Components",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Sorting",
     "Graph"
+  ],
+  "topics": [
+    "Binary Search",
+    "Union-Find",
+    "Graph Theory",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

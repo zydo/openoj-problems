@@ -4,8 +4,12 @@
   "id": 3079,
   "slug": "sum-of-max-digit-rewrites",
   "title": "Sum Of Max-Digit Rewrites",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

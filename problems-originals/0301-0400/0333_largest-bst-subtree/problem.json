@@ -4,8 +4,16 @@
   "id": 333,
   "slug": "largest-bst-subtree",
   "title": "Largest BST Subtree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree",
+    "DP on Trees"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Tree",
     "Depth-First Search",

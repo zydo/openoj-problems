@@ -4,8 +4,14 @@
   "id": 954,
   "slug": "doubling-pair-match",
   "title": "Doubling Pair Match",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

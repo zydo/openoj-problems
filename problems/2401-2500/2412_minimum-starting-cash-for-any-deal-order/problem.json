@@ -4,8 +4,13 @@
   "id": 2412,
   "slug": "minimum-starting-cash-for-any-deal-order",
   "title": "Minimum Starting Cash for Any Deal Order",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

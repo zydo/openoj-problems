@@ -4,10 +4,14 @@
   "id": 471,
   "slug": "shortest-repetition-encoding",
   "title": "Shortest Repetition Encoding",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Interval DP"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3028,
   "slug": "counting-returns-to-the-line",
   "title": "Counting Returns To The Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Simulation",
     "Prefix Sum"

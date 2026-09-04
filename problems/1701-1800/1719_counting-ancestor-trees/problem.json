@@ -4,11 +4,18 @@
   "id": 1719,
   "slug": "counting-ancestor-trees",
   "title": "Counting Ancestor Trees",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Graph Theory",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Graph Theory",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

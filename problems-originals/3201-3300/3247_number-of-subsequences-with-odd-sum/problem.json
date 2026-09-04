@@ -4,8 +4,14 @@
   "id": 3247,
   "slug": "number-of-subsequences-with-odd-sum",
   "title": "Number of Subsequences with Odd Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

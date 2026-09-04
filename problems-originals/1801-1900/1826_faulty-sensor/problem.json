@@ -4,8 +4,12 @@
   "id": 1826,
   "slug": "faulty-sensor",
   "title": "Faulty Sensor",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

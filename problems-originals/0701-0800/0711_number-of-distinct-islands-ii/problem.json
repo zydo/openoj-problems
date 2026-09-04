@@ -4,8 +4,18 @@
   "id": 711,
   "slug": "number-of-distinct-islands-ii",
   "title": "Number of Distinct Islands II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Sorting",
+    "Matrix",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Depth-First Search",

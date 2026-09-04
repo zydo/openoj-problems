@@ -4,8 +4,11 @@
   "id": 1107,
   "slug": "new-users-daily-count",
   "title": "New Users Daily Count",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

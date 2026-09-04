@@ -3,8 +3,12 @@
   "id": 1955,
   "slug": "count-number-of-special-subsequences",
   "title": "Count Number of Special Subsequences",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

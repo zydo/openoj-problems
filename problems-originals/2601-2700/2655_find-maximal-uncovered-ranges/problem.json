@@ -4,8 +4,12 @@
   "id": 2655,
   "slug": "find-maximal-uncovered-ranges",
   "title": "Find Maximal Uncovered Ranges",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

@@ -4,10 +4,19 @@
   "id": 1655,
   "slug": "fulfill-the-uniform-orders",
   "title": "Fulfill the Uniform Orders",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Bitmask"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Counting",
     "Bitmask"
   ],
   "invocation": {

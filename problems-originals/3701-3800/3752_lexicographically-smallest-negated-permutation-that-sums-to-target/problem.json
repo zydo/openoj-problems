@@ -4,8 +4,15 @@
   "id": 3752,
   "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
   "title": "Lexicographically Smallest Negated Permutation that Sums to Target",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers",

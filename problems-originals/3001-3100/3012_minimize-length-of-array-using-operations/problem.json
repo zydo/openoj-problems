@@ -4,8 +4,14 @@
   "id": 3012,
   "slug": "minimize-length-of-array-using-operations",
   "title": "Minimize Length of Array Using Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

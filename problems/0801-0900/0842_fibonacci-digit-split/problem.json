@@ -4,8 +4,12 @@
   "id": 842,
   "slug": "fibonacci-digit-split",
   "title": "Fibonacci Digit Split",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "String",
     "Backtracking"
   ],

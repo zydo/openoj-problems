@@ -4,11 +4,21 @@
   "id": 1257,
   "slug": "smallest-enclosing-region",
   "title": "Smallest Enclosing Region",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
     "Tree",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Lifting",
     "Lowest Common Ancestor"
   ],
   "invocation": {

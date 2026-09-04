@@ -4,8 +4,12 @@
   "id": 1013,
   "slug": "three-equal-sum-segments",
   "title": "Three Equal-Sum Segments",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

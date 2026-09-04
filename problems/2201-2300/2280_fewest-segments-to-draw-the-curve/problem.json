@@ -4,12 +4,19 @@
   "id": 2280,
   "slug": "fewest-segments-to-draw-the-curve",
   "title": "Fewest Segments to Draw the Curve",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Geometry",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 2596,
   "slug": "check-knight-tour-configuration",
   "title": "Check Knight Tour Configuration",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

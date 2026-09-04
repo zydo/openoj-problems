@@ -3,12 +3,18 @@
   "id": 820,
   "slug": "short-encoding-of-words",
   "title": "Short Encoding of Words",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Trie",
     "String",
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

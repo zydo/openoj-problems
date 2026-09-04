@@ -4,8 +4,13 @@
   "id": 933,
   "slug": "number-of-recent-calls",
   "title": "Number of Recent Calls",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "topics": [
     "Design",
     "Queue",
     "Data Stream"

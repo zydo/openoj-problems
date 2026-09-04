@@ -4,8 +4,12 @@
   "id": 2237,
   "slug": "bright-enough-street-spots",
   "title": "Bright Enough Street Spots",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

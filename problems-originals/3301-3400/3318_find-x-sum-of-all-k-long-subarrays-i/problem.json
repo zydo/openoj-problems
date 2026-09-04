@@ -4,8 +4,14 @@
   "id": 3318,
   "slug": "find-x-sum-of-all-k-long-subarrays-i",
   "title": "Find X-Sum of All K-Long Subarrays I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

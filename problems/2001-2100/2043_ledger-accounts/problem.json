@@ -4,8 +4,14 @@
   "id": 2043,
   "slug": "ledger-accounts",
   "title": "Ledger Accounts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

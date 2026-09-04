@@ -4,8 +4,12 @@
   "id": 3396,
   "slug": "the-fewest-front-trims-to-distinct",
   "title": "The Fewest Front Trims To Distinct",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

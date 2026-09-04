@@ -4,8 +4,12 @@
   "id": 2739,
   "slug": "total-distance-traveled",
   "title": "Total Distance Traveled",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

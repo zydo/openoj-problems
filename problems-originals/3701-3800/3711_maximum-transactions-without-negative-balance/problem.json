@@ -4,8 +4,13 @@
   "id": 3711,
   "slug": "maximum-transactions-without-negative-balance",
   "title": "Maximum Transactions Without Negative Balance",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Heap (Priority Queue)"

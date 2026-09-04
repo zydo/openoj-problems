@@ -4,8 +4,12 @@
   "id": 186,
   "slug": "reverse-words-in-a-string-ii",
   "title": "Reverse Words in a String II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

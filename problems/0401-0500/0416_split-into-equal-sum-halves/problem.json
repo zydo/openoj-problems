@@ -4,10 +4,16 @@
   "id": 416,
   "slug": "split-into-equal-sum-halves",
   "title": "Split Into Equal-Sum Halves",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

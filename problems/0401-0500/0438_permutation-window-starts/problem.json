@@ -4,8 +4,13 @@
   "id": 438,
   "slug": "permutation-window-starts",
   "title": "Permutation Window Starts",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

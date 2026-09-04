@@ -4,8 +4,13 @@
   "id": 3864,
   "slug": "minimum-cost-to-partition-a-binary-string",
   "title": "Minimum Cost to Partition a Binary String",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Divide and Conquer",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Divide and Conquer",
     "Prefix Sum"

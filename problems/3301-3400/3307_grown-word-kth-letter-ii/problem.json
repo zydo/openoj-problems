@@ -4,10 +4,15 @@
   "id": 3307,
   "slug": "grown-word-kth-letter-ii",
   "title": "The Grown Word's K-th Letter II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Math",
+    "Bit Manipulation",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,17 @@
   "id": 630,
   "slug": "most-courses-before-deadlines",
   "title": "Most Courses Before Deadlines",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

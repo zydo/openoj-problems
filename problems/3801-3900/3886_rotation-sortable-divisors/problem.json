@@ -4,8 +4,14 @@
   "id": 3886,
   "slug": "rotation-sortable-divisors",
   "title": "Rotation-Sortable Divisors",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting",

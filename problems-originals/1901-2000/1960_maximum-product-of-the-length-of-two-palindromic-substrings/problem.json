@@ -3,11 +3,19 @@
   "id": 1960,
   "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
   "title": "Maximum Product of the Length of Two Palindromic Substrings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Two Pointers",
     "Manacher"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Rolling Hash",
+    "Hash Function",
+    "Manacher",
+    "Palindromic Tree"
   ],
   "invocation": {
     "type": "function",

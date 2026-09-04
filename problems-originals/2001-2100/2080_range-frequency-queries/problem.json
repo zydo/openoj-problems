@@ -4,8 +4,15 @@
   "id": 2080,
   "slug": "range-frequency-queries",
   "title": "Range Frequency Queries",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

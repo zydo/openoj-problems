@@ -4,10 +4,15 @@
   "id": 3905,
   "slug": "simultaneous-color-spread",
   "title": "Simultaneous Color Spread",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "BFS"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

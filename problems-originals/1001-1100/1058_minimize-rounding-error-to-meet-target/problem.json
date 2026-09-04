@@ -4,8 +4,15 @@
   "id": 1058,
   "slug": "minimize-rounding-error-to-meet-target",
   "title": "Minimize Rounding Error to Meet Target",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String",

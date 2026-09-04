@@ -4,8 +4,15 @@
   "id": 3851,
   "slug": "maximum-requests-without-violating-the-limit",
   "title": "Maximum Requests Without Violating the Limit",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

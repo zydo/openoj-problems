@@ -4,8 +4,13 @@
   "id": 2486,
   "slug": "append-characters-to-string-to-make-subsequence",
   "title": "Append Characters to String to Make Subsequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Greedy"

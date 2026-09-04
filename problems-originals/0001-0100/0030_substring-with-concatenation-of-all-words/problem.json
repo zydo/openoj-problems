@@ -4,8 +4,13 @@
   "id": 30,
   "slug": "substring-with-concatenation-of-all-words",
   "title": "Substring with Concatenation of All Words",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

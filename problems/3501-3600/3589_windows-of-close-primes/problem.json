@@ -4,9 +4,17 @@
   "id": 3589,
   "slug": "windows-of-close-primes",
   "title": "Windows Of Close Primes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sliding Window",
+    "Number Theory",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Queue",
     "Sliding Window",
     "Number Theory",
     "Monotonic Queue"

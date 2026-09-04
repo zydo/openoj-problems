@@ -4,8 +4,13 @@
   "id": 3014,
   "slug": "minimum-number-of-pushes-to-type-word-i",
   "title": "Minimum Number of Pushes to Type Word I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy"

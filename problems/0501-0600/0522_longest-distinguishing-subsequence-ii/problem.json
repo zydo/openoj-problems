@@ -4,11 +4,18 @@
   "id": 522,
   "slug": "longest-distinguishing-subsequence-ii",
   "title": "Longest Distinguishing Subsequence II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

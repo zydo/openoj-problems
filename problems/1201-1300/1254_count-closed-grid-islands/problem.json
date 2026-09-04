@@ -4,11 +4,18 @@
   "id": 1254,
   "slug": "count-closed-grid-islands",
   "title": "Count Closed Grid Islands",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

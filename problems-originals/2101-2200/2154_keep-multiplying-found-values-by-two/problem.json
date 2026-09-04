@@ -4,8 +4,14 @@
   "id": 2154,
   "slug": "keep-multiplying-found-values-by-two",
   "title": "Keep Multiplying Found Values by Two",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

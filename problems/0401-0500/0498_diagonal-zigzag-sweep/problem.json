@@ -4,8 +4,13 @@
   "id": 498,
   "slug": "diagonal-zigzag-sweep",
   "title": "Diagonal Zigzag Sweep",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

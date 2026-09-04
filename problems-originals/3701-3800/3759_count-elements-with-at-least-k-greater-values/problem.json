@@ -4,8 +4,15 @@
   "id": 3759,
   "slug": "count-elements-with-at-least-k-greater-values",
   "title": "Count Elements With at Least K Greater Values",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Sorting",
+    "Quickselect"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Divide and Conquer",

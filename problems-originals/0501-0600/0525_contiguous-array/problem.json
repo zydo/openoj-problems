@@ -4,8 +4,13 @@
   "id": 525,
   "slug": "contiguous-array",
   "title": "Contiguous Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

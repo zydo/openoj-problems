@@ -4,12 +4,19 @@
   "id": 3296,
   "slug": "seconds-needed-to-level-a-mountain",
   "title": "Seconds Needed to Level a Mountain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Binary Search",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -3,9 +3,16 @@
   "id": 2969,
   "slug": "minimum-number-of-coins-for-fruits-ii",
   "title": "Minimum Number of Coins for Fruits II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Heap (Priority Queue)",
     "Monotonic Queue"
   ],
   "invocation": {

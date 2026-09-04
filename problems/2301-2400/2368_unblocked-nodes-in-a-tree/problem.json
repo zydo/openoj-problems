@@ -4,11 +4,20 @@
   "id": 2368,
   "slug": "unblocked-nodes-in-a-tree",
   "title": "Unblocked Nodes in a Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

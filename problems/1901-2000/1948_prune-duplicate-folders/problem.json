@@ -4,12 +4,21 @@
   "id": 1948,
   "slug": "prune-duplicate-folders",
   "title": "Prune Duplicate Folders",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Trie",
     "Tree"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Trie",
+    "Sorting",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

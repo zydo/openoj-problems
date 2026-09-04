@@ -4,10 +4,13 @@
   "id": 3308,
   "slug": "driver-standings-by-fuel-type",
   "title": "Driver Standings By Fuel Type",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,8 +4,15 @@
   "id": 2122,
   "slug": "recover-the-original-array",
   "title": "Recover the Original Array",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

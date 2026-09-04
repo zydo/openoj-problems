@@ -4,8 +4,12 @@
   "id": 1053,
   "slug": "one-swap-step-down",
   "title": "One-Swap Step Down",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

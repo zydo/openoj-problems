@@ -3,12 +3,21 @@
   "id": 2503,
   "slug": "maximum-number-of-points-from-grid-queries",
   "title": "Maximum Number of Points From Grid Queries",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Heap",
     "Breadth-First Search",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Breadth-First Search",
+    "Union-Find",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

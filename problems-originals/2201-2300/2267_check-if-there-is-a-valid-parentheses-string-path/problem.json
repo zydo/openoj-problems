@@ -4,8 +4,14 @@
   "id": 2267,
   "slug": "check-if-there-is-a-valid-parentheses-string-path",
   "title": "Check if There Is a Valid Parentheses String Path",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix",

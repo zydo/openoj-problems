@@ -4,8 +4,15 @@
   "id": 1488,
   "slug": "avoid-flood-in-the-city",
   "title": "Avoid Flood in The City",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

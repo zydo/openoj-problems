@@ -4,10 +4,17 @@
   "id": 2552,
   "slug": "zigzag-quadruplet-count",
   "title": "Zigzag Quadruplet Count",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
     "Enumeration",
     "Prefix Sum"
   ],

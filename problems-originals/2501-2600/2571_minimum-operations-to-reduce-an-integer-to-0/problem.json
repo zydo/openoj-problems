@@ -4,8 +4,13 @@
   "id": 2571,
   "slug": "minimum-operations-to-reduce-an-integer-to-0",
   "title": "Minimum Operations to Reduce an Integer to 0",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Greedy",
     "Bit Manipulation"

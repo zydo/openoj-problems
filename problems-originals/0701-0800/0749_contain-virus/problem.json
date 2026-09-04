@@ -4,8 +4,15 @@
   "id": 749,
   "slug": "contain-virus",
   "title": "Contain Virus",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

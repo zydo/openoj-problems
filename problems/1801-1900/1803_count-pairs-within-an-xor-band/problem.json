@@ -4,10 +4,15 @@
   "id": 1803,
   "slug": "count-pairs-within-an-xor-band",
   "title": "Count Pairs Within an XOR Band",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

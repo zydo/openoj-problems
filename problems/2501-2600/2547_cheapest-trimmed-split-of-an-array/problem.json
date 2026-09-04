@@ -4,8 +4,14 @@
   "id": 2547,
   "slug": "cheapest-trimmed-split-of-an-array",
   "title": "Cheapest Trimmed Split of an Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

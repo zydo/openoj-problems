@@ -4,8 +4,11 @@
   "id": 1551,
   "slug": "minimum-operations-to-make-array-equal",
   "title": "Minimum Operations to Make Array Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

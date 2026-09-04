@@ -4,8 +4,12 @@
   "id": 2139,
   "slug": "grow-the-score-from-one",
   "title": "Grow the Score from One",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

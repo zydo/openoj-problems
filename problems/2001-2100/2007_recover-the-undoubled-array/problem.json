@@ -4,8 +4,14 @@
   "id": 2007,
   "slug": "recover-the-undoubled-array",
   "title": "Recover the Undoubled Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

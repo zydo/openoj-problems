@@ -4,10 +4,13 @@
   "id": 584,
   "slug": "customers-not-referred-by-two",
   "title": "Customers Not Referred by Two",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

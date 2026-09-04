@@ -4,8 +4,14 @@
   "id": 3971,
   "slug": "the-fading-harvest",
   "title": "The Fading Harvest",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

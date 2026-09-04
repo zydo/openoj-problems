@@ -3,10 +3,16 @@
   "id": 2382,
   "slug": "maximum-segment-sum-after-removals",
   "title": "Maximum Segment Sum After Removals",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Union Find",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
     "Prefix Sum",
     "Ordered Set"
   ],

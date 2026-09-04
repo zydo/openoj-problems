@@ -4,8 +4,12 @@
   "id": 3215,
   "slug": "even-xor-triplets-ii",
   "title": "Even-Xor Triplets II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

@@ -4,10 +4,15 @@
   "id": 76,
   "slug": "smallest-covering-window",
   "title": "Smallest Covering Window",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
     "Sliding Window"
   ],
   "invocation": {

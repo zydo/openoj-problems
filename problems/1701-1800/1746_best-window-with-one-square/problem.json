@@ -4,8 +4,12 @@
   "id": 1746,
   "slug": "best-window-with-one-square",
   "title": "Best Window with One Square",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

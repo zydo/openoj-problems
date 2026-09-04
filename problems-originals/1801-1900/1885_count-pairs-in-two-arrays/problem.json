@@ -4,8 +4,14 @@
   "id": 1885,
   "slug": "count-pairs-in-two-arrays",
   "title": "Count Pairs in Two Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

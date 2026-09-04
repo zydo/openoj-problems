@@ -4,12 +4,19 @@
   "id": 1178,
   "slug": "playable-words-per-puzzle",
   "title": "Playable Words per Puzzle",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "String",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

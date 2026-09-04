@@ -4,11 +4,18 @@
   "id": 3102,
   "slug": "smallest-spread-after-dropping-a-point",
   "title": "Smallest Spread After Dropping a Point",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Geometry",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

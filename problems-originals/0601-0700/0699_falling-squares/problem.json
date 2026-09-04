@@ -4,8 +4,13 @@
   "id": 699,
   "slug": "falling-squares",
   "title": "Falling Squares",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Segment Tree",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Segment Tree",
     "Ordered Set"

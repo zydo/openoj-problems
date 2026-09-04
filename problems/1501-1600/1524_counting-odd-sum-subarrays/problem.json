@@ -4,11 +4,17 @@
   "id": 1524,
   "slug": "counting-odd-sum-subarrays",
   "title": "Counting Odd-Sum Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Prefix Sum",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

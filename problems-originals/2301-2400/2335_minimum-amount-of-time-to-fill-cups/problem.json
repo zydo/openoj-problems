@@ -4,8 +4,14 @@
   "id": 2335,
   "slug": "minimum-amount-of-time-to-fill-cups",
   "title": "Minimum Amount of Time to Fill Cups",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

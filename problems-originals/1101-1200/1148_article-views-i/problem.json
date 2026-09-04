@@ -4,8 +4,11 @@
   "id": 1148,
   "slug": "article-views-i",
   "title": "Article Views I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

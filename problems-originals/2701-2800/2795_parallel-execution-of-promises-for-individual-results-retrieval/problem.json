@@ -4,8 +4,11 @@
   "id": 2795,
   "slug": "parallel-execution-of-promises-for-individual-results-retrieval",
   "title": "Parallel Execution of Promises for Individual Results Retrieval",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

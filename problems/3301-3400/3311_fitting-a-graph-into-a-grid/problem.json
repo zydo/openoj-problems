@@ -4,9 +4,15 @@
   "id": 3311,
   "slug": "fitting-a-graph-into-a-grid",
   "title": "Fitting A Graph Into A Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Graph Theory",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Graph Theory",
     "Matrix"
   ],

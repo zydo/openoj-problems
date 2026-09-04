@@ -4,8 +4,12 @@
   "id": 2134,
   "slug": "gather-the-ones-on-a-ring-ii",
   "title": "Gather the Ones on a Ring II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

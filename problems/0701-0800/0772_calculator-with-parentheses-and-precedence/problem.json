@@ -4,11 +4,17 @@
   "id": 772,
   "slug": "calculator-with-parentheses-and-precedence",
   "title": "Calculator With Parentheses And Precedence",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Expression Parsing",
     "Stack"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Stack",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

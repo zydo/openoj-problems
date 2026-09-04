@@ -4,8 +4,13 @@
   "id": 3119,
   "slug": "maximum-number-of-potholes-that-can-be-fixed",
   "title": "Maximum Number of Potholes That Can Be Fixed",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Sorting"

@@ -4,10 +4,13 @@
   "id": 3358,
   "slug": "unscored-volumes-in-the-catalog",
   "title": "Unscored Volumes In The Catalog",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

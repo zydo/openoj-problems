@@ -4,8 +4,12 @@
   "id": 3173,
   "slug": "pairwise-or-of-neighbors",
   "title": "Pairwise OR Of Neighbors",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

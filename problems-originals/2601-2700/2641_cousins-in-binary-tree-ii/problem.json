@@ -4,8 +4,15 @@
   "id": 2641,
   "slug": "cousins-in-binary-tree-ii",
   "title": "Cousins in Binary Tree II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

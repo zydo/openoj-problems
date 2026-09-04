@@ -4,8 +4,11 @@
   "id": 2635,
   "slug": "apply-transform-over-each-element-in-array",
   "title": "Apply Transform Over Each Element in Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

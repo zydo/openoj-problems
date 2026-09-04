@@ -4,8 +4,13 @@
   "id": 3047,
   "slug": "largest-square-two-rectangles-share",
   "title": "The Largest Square Two Rectangles Share",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

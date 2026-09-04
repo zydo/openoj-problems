@@ -3,9 +3,12 @@
   "id": 1188,
   "slug": "design-bounded-blocking-queue",
   "title": "Design Bounded Blocking Queue",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Queue",
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

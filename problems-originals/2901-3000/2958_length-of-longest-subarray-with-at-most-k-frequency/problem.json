@@ -4,8 +4,13 @@
   "id": 2958,
   "slug": "length-of-longest-subarray-with-at-most-k-frequency",
   "title": "Length of Longest Subarray With at Most K Frequency",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

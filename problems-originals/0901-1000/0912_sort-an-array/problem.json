@@ -4,8 +4,18 @@
   "id": 912,
   "slug": "sort-an-array",
   "title": "Sort an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Merge Sort",
+    "Bucket Sort",
+    "Radix Sort",
+    "Counting Sort"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Sorting",

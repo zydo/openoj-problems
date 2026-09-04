@@ -4,8 +4,13 @@
   "id": 748,
   "slug": "shortest-coverage-word",
   "title": "Shortest Coverage Word",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

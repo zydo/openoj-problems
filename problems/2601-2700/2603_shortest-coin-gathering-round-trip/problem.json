@@ -4,11 +4,17 @@
   "id": 2603,
   "slug": "shortest-coin-gathering-round-trip",
   "title": "Shortest Coin-Gathering Round Trip",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Tree",
     "Graph",
+    "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Graph Theory",
     "Topological Sort"
   ],
   "invocation": {

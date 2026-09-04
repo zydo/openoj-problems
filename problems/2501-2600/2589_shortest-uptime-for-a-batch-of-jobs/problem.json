@@ -4,9 +4,16 @@
   "id": 2589,
   "slug": "shortest-uptime-for-a-batch-of-jobs",
   "title": "Shortest Uptime for a Batch of Jobs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Stack",
     "Greedy",
     "Sorting"
   ],

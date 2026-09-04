@@ -4,8 +4,12 @@
   "id": 3847,
   "slug": "find-the-score-difference-in-a-game",
   "title": "Find the Score Difference in a Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

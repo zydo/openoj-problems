@@ -4,8 +4,14 @@
   "id": 2195,
   "slug": "top-up-cheapest-missing-integers",
   "title": "Top Up The Cheapest Missing Integers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

@@ -4,8 +4,13 @@
   "id": 1057,
   "slug": "bike-assignments-by-closest-pair",
   "title": "Bike Assignments By Closest Pair",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)"

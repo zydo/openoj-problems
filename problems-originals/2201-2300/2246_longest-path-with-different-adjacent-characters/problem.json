@@ -3,11 +3,19 @@
   "id": 2246,
   "slug": "longest-path-with-different-adjacent-characters",
   "title": "Longest Path With Different Adjacent Characters",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort"
   ],
   "invocation": {
     "type": "function",

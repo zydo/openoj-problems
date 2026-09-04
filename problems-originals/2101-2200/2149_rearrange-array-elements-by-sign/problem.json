@@ -4,8 +4,13 @@
   "id": 2149,
   "slug": "rearrange-array-elements-by-sign",
   "title": "Rearrange Array Elements by Sign",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Simulation"

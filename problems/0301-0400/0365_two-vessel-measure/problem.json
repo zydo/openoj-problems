@@ -4,12 +4,21 @@
   "id": 365,
   "slug": "two-vessel-measure",
   "title": "Two-Vessel Measure",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Bézout's Lemma",
     "Euclidean Algorithm",
     "Greatest Common Divisor"
+  ],
+  "topics": [
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Bézout's Lemma",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor",
+    "Extended Euclidean Algorithm"
   ],
   "invocation": {
     "type": "function",

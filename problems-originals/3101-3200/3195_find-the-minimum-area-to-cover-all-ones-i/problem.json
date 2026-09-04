@@ -4,8 +4,12 @@
   "id": 3195,
   "slug": "find-the-minimum-area-to-cover-all-ones-i",
   "title": "Find the Minimum Area to Cover All Ones I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

@@ -4,11 +4,18 @@
   "id": 1996,
   "slug": "count-dominated-points",
   "title": "Count Dominated Points",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Sorting",
     "Monotonic Stack"
   ],
   "invocation": {

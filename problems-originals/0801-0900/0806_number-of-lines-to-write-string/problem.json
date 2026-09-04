@@ -4,8 +4,12 @@
   "id": 806,
   "slug": "number-of-lines-to-write-string",
   "title": "Number of Lines To Write String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

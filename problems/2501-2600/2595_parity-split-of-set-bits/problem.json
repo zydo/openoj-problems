@@ -4,10 +4,13 @@
   "id": 2595,
   "slug": "parity-split-of-set-bits",
   "title": "Parity Split of Set Bits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Bit Manipulation",
     "Math"
+  ],
+  "topics": [
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

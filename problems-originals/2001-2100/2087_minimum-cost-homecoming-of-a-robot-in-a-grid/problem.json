@@ -4,8 +4,12 @@
   "id": 2087,
   "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
   "title": "Minimum Cost Homecoming of a Robot in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

@@ -4,8 +4,14 @@
   "id": 427,
   "slug": "build-quad-tree",
   "title": "Build Quad-Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Tree",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Tree",

@@ -4,8 +4,12 @@
   "id": 3874,
   "slug": "counting-windows-with-a-lone-peak",
   "title": "Counting Windows With a Lone Peak",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

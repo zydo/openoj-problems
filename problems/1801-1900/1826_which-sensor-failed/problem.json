@@ -4,8 +4,12 @@
   "id": 1826,
   "slug": "which-sensor-failed",
   "title": "Which Sensor Failed",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

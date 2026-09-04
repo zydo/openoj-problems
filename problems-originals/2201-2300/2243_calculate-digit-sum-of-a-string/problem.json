@@ -4,8 +4,12 @@
   "id": 2243,
   "slug": "calculate-digit-sum-of-a-string",
   "title": "Calculate Digit Sum of a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

@@ -4,8 +4,15 @@
   "id": 1429,
   "slug": "first-unique-number",
   "title": "First Unique Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Data Stream"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

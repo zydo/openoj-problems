@@ -4,8 +4,14 @@
   "id": 2491,
   "slug": "divide-players-into-teams-of-equal-skill",
   "title": "Divide Players Into Teams of Equal Skill",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

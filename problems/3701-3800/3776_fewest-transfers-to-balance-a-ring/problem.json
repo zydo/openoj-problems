@@ -4,8 +4,13 @@
   "id": 3776,
   "slug": "fewest-transfers-to-balance-a-ring",
   "title": "Fewest Transfers to Balance a Ring",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

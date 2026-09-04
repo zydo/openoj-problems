@@ -4,8 +4,13 @@
   "id": 3090,
   "slug": "maximum-length-substring-with-two-occurrences",
   "title": "Maximum Length Substring With Two Occurrences",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

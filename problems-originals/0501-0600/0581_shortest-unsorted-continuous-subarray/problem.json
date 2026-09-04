@@ -4,8 +4,16 @@
   "id": 581,
   "slug": "shortest-unsorted-continuous-subarray",
   "title": "Shortest Unsorted Continuous Subarray",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Stack",

@@ -4,8 +4,13 @@
   "id": 385,
   "slug": "nested-value-reader",
   "title": "Nested Value Reader",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Depth-First Search"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Depth-First Search"

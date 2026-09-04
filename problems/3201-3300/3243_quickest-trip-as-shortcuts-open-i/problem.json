@@ -4,8 +4,13 @@
   "id": 3243,
   "slug": "quickest-trip-as-shortcuts-open-i",
   "title": "Quickest Trip as Shortcuts Open I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Graph Theory"

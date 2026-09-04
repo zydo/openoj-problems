@@ -4,11 +4,16 @@
   "id": 3090,
   "slug": "longest-two-each-window",
   "title": "Longest Two-Each Window",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Sliding Window",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

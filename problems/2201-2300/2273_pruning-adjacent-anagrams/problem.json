@@ -4,9 +4,15 @@
   "id": 2273,
   "slug": "pruning-adjacent-anagrams",
   "title": "Pruning Adjacent Anagrams",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "String",
     "Sorting"
   ],

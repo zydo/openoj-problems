@@ -4,11 +4,20 @@
   "id": 721,
   "slug": "merge-contact-records",
   "title": "Merge Contact Records",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Hash Table",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

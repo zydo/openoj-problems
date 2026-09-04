@@ -4,8 +4,12 @@
   "id": 401,
   "slug": "binary-watch",
   "title": "Binary Watch",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Backtracking",
     "Bit Manipulation"
   ],

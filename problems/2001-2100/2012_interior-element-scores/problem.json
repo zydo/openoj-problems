@@ -4,10 +4,13 @@
   "id": 2012,
   "slug": "interior-element-scores",
   "title": "Interior Element Scores",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array"
   ],
   "invocation": {
     "type": "function",

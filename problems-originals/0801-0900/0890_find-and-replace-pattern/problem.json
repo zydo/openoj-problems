@@ -4,8 +4,13 @@
   "id": 890,
   "slug": "find-and-replace-pattern",
   "title": "Find and Replace Pattern",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

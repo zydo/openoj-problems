@@ -4,8 +4,12 @@
   "id": 1360,
   "slug": "number-of-days-between-two-dates",
   "title": "Number of Days Between Two Dates",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

@@ -4,8 +4,13 @@
   "id": 1463,
   "slug": "twin-robot-cherry-harvest",
   "title": "Twin-Robot Cherry Harvest",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Matrix"
   ],

@@ -4,8 +4,11 @@
   "id": 830,
   "slug": "extended-run-ranges",
   "title": "Extended Run Ranges",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -4,10 +4,13 @@
   "id": 512,
   "slug": "first-login-device",
   "title": "First Login Device",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

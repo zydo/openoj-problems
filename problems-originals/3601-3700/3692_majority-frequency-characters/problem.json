@@ -4,8 +4,13 @@
   "id": 3692,
   "slug": "majority-frequency-characters",
   "title": "Majority Frequency Characters",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

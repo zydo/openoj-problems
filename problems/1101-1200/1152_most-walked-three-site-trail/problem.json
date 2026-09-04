@@ -4,8 +4,14 @@
   "id": 1152,
   "slug": "most-walked-three-site-trail",
   "title": "Most-Walked Three-Site Trail",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

@@ -3,12 +3,20 @@
   "id": 239,
   "slug": "sliding-window-maximum",
   "title": "Sliding Window Maximum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Queue",
     "Sliding Window",
     "Deque",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Monotonic Queue",
+    "Range Minimum/Maximum Query"
   ],
   "invocation": {
     "type": "function",

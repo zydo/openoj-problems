@@ -4,8 +4,12 @@
   "id": 3925,
   "slug": "concatenate-array-with-reverse",
   "title": "Concatenate Array With Reverse",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

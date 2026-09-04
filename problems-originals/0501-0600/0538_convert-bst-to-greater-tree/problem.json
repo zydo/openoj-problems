@@ -4,8 +4,14 @@
   "id": 538,
   "slug": "convert-bst-to-greater-tree",
   "title": "Convert BST to Greater Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Search Tree",

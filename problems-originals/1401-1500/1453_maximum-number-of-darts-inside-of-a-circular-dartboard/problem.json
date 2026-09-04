@@ -4,8 +4,13 @@
   "id": 1453,
   "slug": "maximum-number-of-darts-inside-of-a-circular-dartboard",
   "title": "Maximum Number of Darts Inside of a Circular Dartboard",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

@@ -4,8 +4,14 @@
   "id": 2128,
   "slug": "remove-all-ones-with-row-and-column-flips",
   "title": "Remove All Ones With Row and Column Flips",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation",

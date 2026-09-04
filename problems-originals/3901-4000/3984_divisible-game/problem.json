@@ -4,8 +4,13 @@
   "id": 3984,
   "slug": "divisible-game",
   "title": "Divisible Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Game Theory",
+    "Math",
+    "Number Theory"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -4,12 +4,20 @@
   "id": 758,
   "slug": "highlight-keyword-occurrences",
   "title": "Highlight Keyword Occurrences",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
     "String Matching",
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "String Matching",
+    "Aho–Corasick Algorithm"
   ],
   "invocation": {
     "type": "function",

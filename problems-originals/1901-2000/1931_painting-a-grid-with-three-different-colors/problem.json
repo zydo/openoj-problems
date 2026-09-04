@@ -3,11 +3,15 @@
   "id": 1931,
   "slug": "painting-a-grid-with-three-different-colors",
   "title": "Painting a Grid With Three Different Colors",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask Dp",
     "Matrix Exponentiation"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Graph Coloring"
   ],
   "invocation": {
     "type": "function",

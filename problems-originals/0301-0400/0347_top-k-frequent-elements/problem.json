@@ -3,10 +3,20 @@
   "id": 347,
   "slug": "top-k-frequent-elements",
   "title": "Top K Frequent Elements",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Heap",
+    "Quickselect"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
+    "Counting",
     "Quickselect"
   ],
   "invocation": {

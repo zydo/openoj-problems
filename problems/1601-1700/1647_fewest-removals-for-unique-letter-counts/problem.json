@@ -4,8 +4,14 @@
   "id": 1647,
   "slug": "fewest-removals-for-unique-letter-counts",
   "title": "Fewest Removals For Unique Letter Counts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

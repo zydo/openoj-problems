@@ -3,9 +3,13 @@
   "id": 370,
   "slug": "range-addition",
   "title": "Range Addition",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Prefix Sum"
   ],
   "invocation": {

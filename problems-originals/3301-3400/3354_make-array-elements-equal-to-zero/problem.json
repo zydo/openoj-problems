@@ -4,8 +4,13 @@
   "id": 3354,
   "slug": "make-array-elements-equal-to-zero",
   "title": "Make Array Elements Equal to Zero",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Simulation",
     "Prefix Sum"

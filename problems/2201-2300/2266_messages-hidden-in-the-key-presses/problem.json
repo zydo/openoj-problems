@@ -4,8 +4,14 @@
   "id": 2266,
   "slug": "messages-hidden-in-the-key-presses",
   "title": "Messages Hidden in the Key Presses",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

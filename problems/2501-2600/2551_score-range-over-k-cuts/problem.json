@@ -4,10 +4,16 @@
   "id": 2551,
   "slug": "score-range-over-k-cuts",
   "title": "Score Range Over K Cuts",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

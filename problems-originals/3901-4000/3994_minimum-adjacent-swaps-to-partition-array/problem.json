@@ -4,8 +4,13 @@
   "id": 3994,
   "slug": "minimum-adjacent-swaps-to-partition-array",
   "title": "Minimum Adjacent Swaps to Partition Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Two Pointers"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

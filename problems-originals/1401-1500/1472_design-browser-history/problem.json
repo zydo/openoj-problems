@@ -4,8 +4,16 @@
   "id": 1472,
   "slug": "design-browser-history",
   "title": "Design Browser History",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Linked List",
+    "Stack",
+    "Design",
+    "Doubly-Linked List",
+    "Data Stream"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Stack",

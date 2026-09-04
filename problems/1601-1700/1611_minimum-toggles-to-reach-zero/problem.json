@@ -4,11 +4,18 @@
   "id": 1611,
   "slug": "minimum-toggles-to-reach-zero",
   "title": "Minimum Toggles To Reach Zero",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Bit Manipulation",
     "Math",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Recursion",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

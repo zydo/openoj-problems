@@ -4,8 +4,12 @@
   "id": 2740,
   "slug": "split-on-the-tightest-gap",
   "title": "Split On The Tightest Gap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

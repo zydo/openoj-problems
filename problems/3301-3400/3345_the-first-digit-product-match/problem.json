@@ -4,8 +4,12 @@
   "id": 3345,
   "slug": "the-first-digit-product-match",
   "title": "The First Digit-Product Match",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

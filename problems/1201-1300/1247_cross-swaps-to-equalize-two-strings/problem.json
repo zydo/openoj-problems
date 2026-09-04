@@ -4,8 +4,13 @@
   "id": 1247,
   "slug": "cross-swaps-to-equalize-two-strings",
   "title": "Cross-Swaps to Equalize Two Strings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy"

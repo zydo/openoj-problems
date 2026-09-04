@@ -4,11 +4,17 @@
   "id": 402,
   "slug": "smallest-number-after-deletions",
   "title": "Smallest Number After Deletions",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Monotonic Stack",
     "Greedy",
     "Stack"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

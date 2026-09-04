@@ -3,10 +3,14 @@
   "id": 793,
   "slug": "preimage-size-of-factorial-zeroes-function",
   "title": "Preimage Size of Factorial Zeroes Function",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

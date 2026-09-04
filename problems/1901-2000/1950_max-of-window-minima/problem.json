@@ -4,11 +4,17 @@
   "id": 1950,
   "slug": "max-of-window-minima",
   "title": "Max of Window Minima",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Stack",
     "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Monotonic Stack",
+    "Cartesian Tree"
   ],
   "invocation": {
     "type": "function",

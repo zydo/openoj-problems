@@ -4,8 +4,12 @@
   "id": 1360,
   "slug": "elapsed-calendar-days",
   "title": "Elapsed Calendar Days",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

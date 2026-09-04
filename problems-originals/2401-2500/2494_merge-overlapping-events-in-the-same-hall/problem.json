@@ -4,8 +4,11 @@
   "id": 2494,
   "slug": "merge-overlapping-events-in-the-same-hall",
   "title": "Merge Overlapping Events in the Same Hall",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

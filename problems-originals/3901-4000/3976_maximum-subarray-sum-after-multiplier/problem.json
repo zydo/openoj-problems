@@ -4,8 +4,12 @@
   "id": 3976,
   "slug": "maximum-subarray-sum-after-multiplier",
   "title": "Maximum Subarray Sum After Multiplier",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -3,8 +3,12 @@
   "id": 1231,
   "slug": "divide-chocolate",
   "title": "Divide Chocolate",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search"
+  ],
+  "topics": [
+    "Array",
     "Binary Search"
   ],
   "invocation": {

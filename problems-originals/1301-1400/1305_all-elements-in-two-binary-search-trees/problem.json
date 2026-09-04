@@ -4,8 +4,15 @@
   "id": 1305,
   "slug": "all-elements-in-two-binary-search-trees",
   "title": "All Elements in Two Binary Search Trees",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Sorting",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Search Tree",

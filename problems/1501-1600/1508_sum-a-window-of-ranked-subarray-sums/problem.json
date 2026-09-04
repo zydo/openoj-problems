@@ -4,9 +4,16 @@
   "id": 1508,
   "slug": "sum-a-window-of-ranked-subarray-sums",
   "title": "Sum A Window Of Ranked Subarray Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
     "Sorting",
     "Prefix Sum"
   ],

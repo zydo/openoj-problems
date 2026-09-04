@@ -4,8 +4,13 @@
   "id": 3005,
   "slug": "the-top-frequency-element-count",
   "title": "The Top-Frequency Element Count",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

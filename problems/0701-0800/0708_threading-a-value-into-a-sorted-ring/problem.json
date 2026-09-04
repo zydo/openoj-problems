@@ -4,8 +4,11 @@
   "id": 708,
   "slug": "threading-a-value-into-a-sorted-ring",
   "title": "Threading a Value into a Sorted Ring",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

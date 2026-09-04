@@ -4,9 +4,14 @@
   "id": 3294,
   "slug": "convert-doubly-linked-list-to-array-ii",
   "title": "Convert Doubly Linked List to Array II",
-  "difficulty": "H1",
+  "difficulty": "Medium",
   "tags": [
     "Linked List"
+  ],
+  "topics": [
+    "Array",
+    "Linked List",
+    "Doubly-Linked List"
   ],
   "invocation": {
     "type": "function",

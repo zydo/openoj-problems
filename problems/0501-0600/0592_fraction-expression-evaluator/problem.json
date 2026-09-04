@@ -4,11 +4,18 @@
   "id": 592,
   "slug": "fraction-expression-evaluator",
   "title": "Fraction Expression Evaluator",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "String",
     "Simulation"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Simulation",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

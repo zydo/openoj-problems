@@ -4,8 +4,12 @@
   "id": 3069,
   "slug": "distribute-elements-into-two-arrays-i",
   "title": "Distribute Elements Into Two Arrays I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

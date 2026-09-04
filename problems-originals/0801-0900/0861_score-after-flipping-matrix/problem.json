@@ -4,8 +4,14 @@
   "id": 861,
   "slug": "score-after-flipping-matrix",
   "title": "Score After Flipping Matrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation",

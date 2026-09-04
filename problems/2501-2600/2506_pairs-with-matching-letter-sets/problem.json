@@ -4,12 +4,19 @@
   "id": 2506,
   "slug": "pairs-with-matching-letter-sets",
   "title": "Pairs With Matching Letter Sets",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "String",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 69,
   "slug": "sqrtx",
   "title": "Sqrt(x)",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Binary Search",
+    "Newton's Method"
+  ],
+  "topics": [
     "Math",
     "Binary Search",
     "Newton's Method"

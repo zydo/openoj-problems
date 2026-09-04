@@ -4,8 +4,15 @@
   "id": 3542,
   "slug": "minimum-operations-to-convert-all-elements-to-zero",
   "title": "Minimum Operations to Convert All Elements to Zero",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Stack",

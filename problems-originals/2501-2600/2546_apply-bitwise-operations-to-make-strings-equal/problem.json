@@ -4,8 +4,12 @@
   "id": 2546,
   "slug": "apply-bitwise-operations-to-make-strings-equal",
   "title": "Apply Bitwise Operations to Make Strings Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "String",
     "Bit Manipulation"
   ],

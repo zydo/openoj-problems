@@ -4,9 +4,17 @@
   "id": 2289,
   "slug": "rounds-until-non-decreasing",
   "title": "Rounds Until Non-decreasing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Monotonic Stack",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Linked List",
     "Dynamic Programming",
     "Stack",
     "Monotonic Stack",

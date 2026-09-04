@@ -4,8 +4,15 @@
   "id": 2402,
   "slug": "busiest-meeting-room",
   "title": "Busiest Meeting Room",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

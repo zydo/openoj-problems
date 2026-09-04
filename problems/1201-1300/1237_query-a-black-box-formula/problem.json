@@ -4,10 +4,16 @@
   "id": 1237,
   "slug": "query-a-black-box-formula",
   "title": "Query a Black-Box Formula",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Two Pointers",
+    "Interactive"
+  ],
+  "topics": [
+    "Math",
+    "Two Pointers",
+    "Binary Search",
     "Interactive"
   ],
   "invocation": {

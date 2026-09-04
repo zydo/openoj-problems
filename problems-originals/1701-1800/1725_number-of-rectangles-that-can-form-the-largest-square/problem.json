@@ -4,8 +4,11 @@
   "id": 1725,
   "slug": "number-of-rectangles-that-can-form-the-largest-square",
   "title": "Number Of Rectangles That Can Form The Largest Square",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

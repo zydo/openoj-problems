@@ -4,10 +4,13 @@
   "id": 618,
   "slug": "continental-class-roster",
   "title": "Continental Class Roster",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

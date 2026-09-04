@@ -4,8 +4,11 @@
   "id": 2205,
   "slug": "the-number-of-users-that-are-eligible-for-discount",
   "title": "The Number of Users That Are Eligible for Discount",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

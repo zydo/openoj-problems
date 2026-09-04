@@ -3,10 +3,14 @@
   "id": 1884,
   "slug": "egg-drop-with-2-eggs-and-n-floors",
   "title": "Egg Drop With 2 Eggs and N Floors",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Number Theory",
     "Binary Search"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

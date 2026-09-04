@@ -3,8 +3,13 @@
   "id": 2836,
   "slug": "maximize-value-of-function-in-a-ball-passing-game",
   "title": "Maximize Value of Function in a Ball Passing Game",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation"

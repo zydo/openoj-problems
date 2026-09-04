@@ -3,11 +3,20 @@
   "id": 721,
   "slug": "accounts-merge",
   "title": "Accounts Merge",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Hash Table",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

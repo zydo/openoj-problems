@@ -4,9 +4,14 @@
   "id": 997,
   "slug": "town-celebrity",
   "title": "Town Celebrity",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Graph Theory"
   ],
   "invocation": {

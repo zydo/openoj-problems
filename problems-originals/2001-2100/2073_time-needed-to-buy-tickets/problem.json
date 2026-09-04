@@ -4,8 +4,13 @@
   "id": 2073,
   "slug": "time-needed-to-buy-tickets",
   "title": "Time Needed to Buy Tickets",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Queue",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Simulation"

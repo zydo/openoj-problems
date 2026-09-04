@@ -4,11 +4,17 @@
   "id": 719,
   "slug": "kth-smallest-gap",
   "title": "K-th Smallest Gap",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
     "Sorting"
   ],
   "invocation": {

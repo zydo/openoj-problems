@@ -4,12 +4,20 @@
   "id": 1261,
   "slug": "find-values-in-rebuilt-tree",
   "title": "Find Values In a Rebuilt Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Hash Table",
     "Binary Tree",
     "Design"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "design",

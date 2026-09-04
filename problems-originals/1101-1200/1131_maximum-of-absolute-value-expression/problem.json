@@ -4,8 +4,12 @@
   "id": 1131,
   "slug": "maximum-of-absolute-value-expression",
   "title": "Maximum of Absolute Value Expression",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

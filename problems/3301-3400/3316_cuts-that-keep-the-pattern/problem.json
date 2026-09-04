@@ -4,8 +4,15 @@
   "id": 3316,
   "slug": "cuts-that-keep-the-pattern",
   "title": "Cuts That Keep The Pattern",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
     "String",
     "Dynamic Programming"
   ],

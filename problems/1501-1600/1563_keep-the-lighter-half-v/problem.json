@@ -4,9 +4,15 @@
   "id": 1563,
   "slug": "keep-the-lighter-half-v",
   "title": "Keep the Lighter Half V",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Dynamic Programming",
+    "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Dynamic Programming",
     "Game Theory"
   ],

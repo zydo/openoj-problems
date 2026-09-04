@@ -4,8 +4,13 @@
   "id": 266,
   "slug": "palindrome-permutation",
   "title": "Palindrome Permutation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Bit Manipulation"

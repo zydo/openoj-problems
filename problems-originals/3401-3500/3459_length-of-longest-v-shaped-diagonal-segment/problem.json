@@ -4,8 +4,14 @@
   "id": 3459,
   "slug": "length-of-longest-v-shaped-diagonal-segment",
   "title": "Length of Longest V-Shaped Diagonal Segment",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Memoization",

@@ -4,8 +4,12 @@
   "id": 771,
   "slug": "gem-tally",
   "title": "Gem Tally",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

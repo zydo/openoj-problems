@@ -4,10 +4,17 @@
   "id": 1612,
   "slug": "same-sum-for-every-assignment",
   "title": "Same Sum For Every Assignment",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
     "Counting"
   ],
   "invocation": {

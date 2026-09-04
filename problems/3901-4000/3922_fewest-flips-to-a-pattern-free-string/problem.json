@@ -4,10 +4,13 @@
   "id": 3922,
   "slug": "fewest-flips-to-a-pattern-free-string",
   "title": "Fewest Flips To A Pattern-Free String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String"
   ],
   "invocation": {
     "type": "function",

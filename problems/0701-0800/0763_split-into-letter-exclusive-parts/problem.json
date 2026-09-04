@@ -4,12 +4,18 @@
   "id": 763,
   "slug": "split-into-letter-exclusive-parts",
   "title": "Split Into Letter-Exclusive Parts",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Two Pointers",
     "Hash Table",
     "String"
+  ],
+  "topics": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

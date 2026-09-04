@@ -3,11 +3,22 @@
   "id": 773,
   "slug": "sliding-puzzle",
   "title": "Sliding Puzzle",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Breadth-First Search",
     "Matrix",
     "Hash Set"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Breadth-First Search",
+    "Memoization",
+    "Matrix",
+    "Heuristic Search",
+    "Bidirectional Search",
+    "A* Search"
   ],
   "invocation": {
     "type": "function",

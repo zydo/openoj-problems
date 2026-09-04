@@ -4,8 +4,13 @@
   "id": 3676,
   "slug": "segments-that-can-hold-water",
   "title": "Segments That Can Hold Water",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

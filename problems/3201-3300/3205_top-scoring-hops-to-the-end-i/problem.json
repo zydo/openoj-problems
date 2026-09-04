@@ -4,10 +4,17 @@
   "id": 3205,
   "slug": "top-scoring-hops-to-the-end-i",
   "title": "Top-Scoring Hops To The End I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

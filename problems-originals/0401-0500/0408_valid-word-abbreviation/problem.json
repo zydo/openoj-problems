@@ -4,8 +4,12 @@
   "id": 408,
   "slug": "valid-word-abbreviation",
   "title": "Valid Word Abbreviation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

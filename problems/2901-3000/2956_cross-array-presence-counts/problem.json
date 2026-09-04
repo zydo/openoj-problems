@@ -4,8 +4,12 @@
   "id": 2956,
   "slug": "cross-array-presence-counts",
   "title": "Cross-Array Presence Counts",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

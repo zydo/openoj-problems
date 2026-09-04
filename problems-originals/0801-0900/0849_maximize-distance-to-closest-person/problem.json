@@ -4,8 +4,11 @@
   "id": 849,
   "slug": "maximize-distance-to-closest-person",
   "title": "Maximize Distance to Closest Person",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

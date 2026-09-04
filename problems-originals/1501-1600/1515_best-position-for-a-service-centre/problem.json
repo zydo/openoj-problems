@@ -4,8 +4,14 @@
   "id": 1515,
   "slug": "best-position-for-a-service-centre",
   "title": "Best Position for a Service Centre",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Randomized"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

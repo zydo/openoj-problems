@@ -4,8 +4,12 @@
   "id": 306,
   "slug": "running-sum-split",
   "title": "Running Sum Split",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "String",
     "Backtracking"
   ],

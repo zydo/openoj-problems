@@ -4,8 +4,14 @@
   "id": 3634,
   "slug": "minimum-removals-to-balance-array",
   "title": "Minimum Removals to Balance Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sliding Window",

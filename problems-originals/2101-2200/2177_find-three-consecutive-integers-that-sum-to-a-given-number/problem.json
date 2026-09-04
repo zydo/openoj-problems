@@ -4,8 +4,12 @@
   "id": 2177,
   "slug": "find-three-consecutive-integers-that-sum-to-a-given-number",
   "title": "Find Three Consecutive Integers That Sum to a Given Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

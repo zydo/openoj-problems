@@ -4,12 +4,19 @@
   "id": 1938,
   "slug": "maximum-xor-along-root-paths",
   "title": "Maximum Xor Along Root Paths",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Trie",
     "Depth-First Search",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

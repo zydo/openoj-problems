@@ -4,11 +4,16 @@
   "id": 1691,
   "slug": "tallest-cuboid-stack",
   "title": "Tallest Cuboid Stack",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Sorting",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

@@ -4,12 +4,20 @@
   "id": 3867,
   "slug": "gcd-totals-from-opposite-ends",
   "title": "Gcd Totals From Opposite Ends",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Sorting",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Sorting",
+    "Simulation",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

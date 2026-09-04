@@ -4,8 +4,12 @@
   "id": 2188,
   "slug": "race-time-with-pit-stops",
   "title": "Race Time With Pit Stops",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

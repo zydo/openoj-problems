@@ -4,8 +4,11 @@
   "id": 2595,
   "slug": "number-of-even-and-odd-bits",
   "title": "Number of Even and Odd Bits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 3339,
   "slug": "find-the-number-of-k-even-arrays",
   "title": "Find the Number of K-Even Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

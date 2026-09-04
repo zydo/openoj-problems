@@ -4,9 +4,15 @@
   "id": 1162,
   "slug": "greatest-distance-to-land",
   "title": "Greatest Distance to Land",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Breadth-First Search",
     "Matrix"
   ],

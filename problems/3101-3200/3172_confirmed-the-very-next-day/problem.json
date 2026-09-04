@@ -4,10 +4,13 @@
   "id": 3172,
   "slug": "confirmed-the-very-next-day",
   "title": "Confirmed The Very Next Day",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

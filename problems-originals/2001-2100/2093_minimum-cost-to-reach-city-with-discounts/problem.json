@@ -4,8 +4,14 @@
   "id": 2093,
   "slug": "minimum-cost-to-reach-city-with-discounts",
   "title": "Minimum Cost to Reach City With Discounts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
+  ],
+  "topics": [
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path",

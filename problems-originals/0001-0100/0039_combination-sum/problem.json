@@ -3,8 +3,12 @@
   "id": 39,
   "slug": "combination-sum",
   "title": "Combination Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Backtracking"
   ],

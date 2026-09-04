@@ -4,10 +4,13 @@
   "id": 1212,
   "slug": "league-standings",
   "title": "League Standings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

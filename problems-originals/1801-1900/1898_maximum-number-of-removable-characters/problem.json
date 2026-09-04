@@ -3,8 +3,14 @@
   "id": 1898,
   "slug": "maximum-number-of-removable-characters",
   "title": "Maximum Number of Removable Characters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "String",

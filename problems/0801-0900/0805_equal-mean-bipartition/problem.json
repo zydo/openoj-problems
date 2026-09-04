@@ -4,12 +4,21 @@
   "id": 805,
   "slug": "equal-mean-bipartition",
   "title": "Equal-Mean Bipartition",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Meet in the Middle",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

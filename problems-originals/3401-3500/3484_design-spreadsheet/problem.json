@@ -4,8 +4,15 @@
   "id": 3484,
   "slug": "design-spreadsheet",
   "title": "Design Spreadsheet",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

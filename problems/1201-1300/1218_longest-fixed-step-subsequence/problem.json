@@ -4,8 +4,13 @@
   "id": 1218,
   "slug": "longest-fixed-step-subsequence",
   "title": "Longest Fixed-Step Subsequence",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

@@ -4,8 +4,15 @@
   "id": 1815,
   "slug": "maximum-number-of-groups-getting-fresh-donuts",
   "title": "Maximum Number of Groups Getting Fresh Donuts",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

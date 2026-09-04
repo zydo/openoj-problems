@@ -4,12 +4,19 @@
   "id": 2467,
   "slug": "best-root-to-leaf-walk-against-a-rival",
   "title": "Best Root-to-Leaf Walk Against a Rival",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

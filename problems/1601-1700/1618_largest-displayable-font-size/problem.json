@@ -4,11 +4,17 @@
   "id": 1618,
   "slug": "largest-displayable-font-size",
   "title": "Largest Displayable Font Size",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Interactive"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,14 @@
   "id": 2167,
   "slug": "minimum-cost-to-clear-flagged-cells",
   "title": "Minimum Cost to Clear Flagged Cells",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

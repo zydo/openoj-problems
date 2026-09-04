@@ -4,8 +4,18 @@
   "id": 1123,
   "slug": "lowest-common-ancestor-of-deepest-leaves",
   "title": "Lowest Common Ancestor of Deepest Leaves",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor",
+    "DP on Trees"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

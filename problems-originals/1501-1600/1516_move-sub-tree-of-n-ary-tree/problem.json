@@ -4,8 +4,12 @@
   "id": 1516,
   "slug": "move-sub-tree-of-n-ary-tree",
   "title": "Move Sub-Tree of N-Ary Tree",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search"
   ],

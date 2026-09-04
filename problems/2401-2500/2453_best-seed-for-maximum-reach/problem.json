@@ -4,8 +4,13 @@
   "id": 2453,
   "slug": "best-seed-for-maximum-reach",
   "title": "Best Seed for Maximum Reach",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

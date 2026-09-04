@@ -4,8 +4,13 @@
   "id": 2841,
   "slug": "richest-window-with-enough-distinct-values",
   "title": "Richest Window With Enough Distinct Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

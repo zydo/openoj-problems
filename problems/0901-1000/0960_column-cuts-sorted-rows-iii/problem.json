@@ -4,8 +4,13 @@
   "id": 960,
   "slug": "column-cuts-sorted-rows-iii",
   "title": "Column Cuts for Sorted Rows III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming"

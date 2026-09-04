@@ -4,8 +4,13 @@
   "id": 2150,
   "slug": "find-all-lonely-numbers-in-the-array",
   "title": "Find All Lonely Numbers in the Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

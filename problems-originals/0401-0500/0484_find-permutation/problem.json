@@ -4,8 +4,14 @@
   "id": 484,
   "slug": "find-permutation",
   "title": "Find Permutation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "String",
     "Stack",

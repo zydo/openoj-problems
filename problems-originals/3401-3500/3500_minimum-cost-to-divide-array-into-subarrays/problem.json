@@ -3,10 +3,16 @@
   "id": 3500,
   "slug": "minimum-cost-to-divide-array-into-subarrays",
   "title": "Minimum Cost to Divide Array Into Subarrays",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum",
+    "Li Chao Tree"
   ],
   "invocation": {
     "type": "function",

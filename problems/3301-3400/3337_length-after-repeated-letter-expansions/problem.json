@@ -4,8 +4,15 @@
   "id": 3337,
   "slug": "length-after-repeated-letter-expansions",
   "title": "Length After Repeated Letter Expansions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

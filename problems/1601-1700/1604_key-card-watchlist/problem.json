@@ -4,8 +4,14 @@
   "id": 1604,
   "slug": "key-card-watchlist",
   "title": "Key-Card Watchlist",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

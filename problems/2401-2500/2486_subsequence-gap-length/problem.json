@@ -4,8 +4,13 @@
   "id": 2486,
   "slug": "subsequence-gap-length",
   "title": "Subsequence Gap Length",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Greedy"

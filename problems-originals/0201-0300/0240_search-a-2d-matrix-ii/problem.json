@@ -3,11 +3,17 @@
   "id": 240,
   "slug": "search-a-2d-matrix-ii",
   "title": "Search a 2D Matrix II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "Binary Search",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

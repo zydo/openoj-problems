@@ -4,8 +4,13 @@
   "id": 1590,
   "slug": "make-sum-divisible-by-p",
   "title": "Make Sum Divisible by P",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

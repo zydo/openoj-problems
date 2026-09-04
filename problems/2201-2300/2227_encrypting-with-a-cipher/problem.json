@@ -4,8 +4,15 @@
   "id": 2227,
   "slug": "encrypting-with-a-cipher",
   "title": "Encrypting With A Cipher",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
+    "Array",
     "Hash Table",
     "String",
     "Design",

@@ -4,8 +4,14 @@
   "id": 3878,
   "slug": "subarrays-their-maximum-absorbs",
   "title": "Subarrays Their Maximum Absorbs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Stack",
+    "Bit Manipulation",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Bit Manipulation",

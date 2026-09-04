@@ -4,10 +4,15 @@
   "id": 854,
   "slug": "minimum-swaps-between-anagrams",
   "title": "Minimum Swaps Between Anagrams",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "String"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,13 @@
   "id": 172,
   "slug": "trailing-zeros-in-a-factorial",
   "title": "Trailing Zeros In A Factorial",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Math"
   ],
   "invocation": {
     "type": "function",

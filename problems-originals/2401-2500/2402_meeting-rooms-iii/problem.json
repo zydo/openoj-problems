@@ -3,8 +3,15 @@
   "id": 2402,
   "slug": "meeting-rooms-iii",
   "title": "Meeting Rooms III",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

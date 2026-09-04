@@ -4,8 +4,12 @@
   "id": 3760,
   "slug": "pieces-with-unique-first-letters",
   "title": "Pieces With Unique First Letters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

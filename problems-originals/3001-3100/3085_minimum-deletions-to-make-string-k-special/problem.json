@@ -4,8 +4,15 @@
   "id": 3085,
   "slug": "minimum-deletions-to-make-string-k-special",
   "title": "Minimum Deletions to Make String K-Special",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

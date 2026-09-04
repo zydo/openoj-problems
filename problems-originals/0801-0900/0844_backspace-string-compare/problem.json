@@ -4,8 +4,14 @@
   "id": 844,
   "slug": "backspace-string-compare",
   "title": "Backspace String Compare",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Stack",

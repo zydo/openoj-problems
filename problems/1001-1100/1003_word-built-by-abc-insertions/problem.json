@@ -4,8 +4,12 @@
   "id": 1003,
   "slug": "word-built-by-abc-insertions",
   "title": "Word Built by abc Insertions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

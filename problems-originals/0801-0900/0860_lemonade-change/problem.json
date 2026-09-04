@@ -4,8 +4,12 @@
   "id": 860,
   "slug": "lemonade-change",
   "title": "Lemonade Change",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

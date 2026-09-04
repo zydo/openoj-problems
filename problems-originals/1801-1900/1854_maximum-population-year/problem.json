@@ -4,8 +4,13 @@
   "id": 1854,
   "slug": "maximum-population-year",
   "title": "Maximum Population Year",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Counting",
     "Prefix Sum"

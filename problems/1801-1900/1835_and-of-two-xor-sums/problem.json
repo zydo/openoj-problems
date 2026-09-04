@@ -4,11 +4,16 @@
   "id": 1835,
   "slug": "and-of-two-xor-sums",
   "title": "The AND Of Two XOR Sums",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Bit Manipulation",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

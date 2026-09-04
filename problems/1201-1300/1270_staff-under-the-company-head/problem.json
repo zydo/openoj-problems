@@ -4,10 +4,13 @@
   "id": 1270,
   "slug": "staff-under-the-company-head",
   "title": "Staff Under the Company Head",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

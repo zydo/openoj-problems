@@ -4,8 +4,13 @@
   "id": 1128,
   "slug": "counting-matching-domino-pairs",
   "title": "Counting Matching Domino Pairs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

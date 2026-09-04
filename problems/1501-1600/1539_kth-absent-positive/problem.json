@@ -4,8 +4,12 @@
   "id": 1539,
   "slug": "kth-absent-positive",
   "title": "The kth Absent Positive",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

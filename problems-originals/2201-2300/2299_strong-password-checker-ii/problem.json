@@ -4,8 +4,11 @@
   "id": 2299,
   "slug": "strong-password-checker-ii",
   "title": "Strong Password Checker II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

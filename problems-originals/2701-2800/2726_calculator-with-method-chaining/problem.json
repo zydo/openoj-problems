@@ -4,8 +4,12 @@
   "id": 2726,
   "slug": "calculator-with-method-chaining",
   "title": "Calculator with Method Chaining",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design",
+    "Math"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

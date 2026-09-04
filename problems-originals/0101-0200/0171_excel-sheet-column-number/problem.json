@@ -4,8 +4,12 @@
   "id": 171,
   "slug": "excel-sheet-column-number",
   "title": "Excel Sheet Column Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

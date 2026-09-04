@@ -4,8 +4,13 @@
   "id": 2065,
   "slug": "maximum-path-quality-of-a-graph",
   "title": "Maximum Path Quality of a Graph",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Graph Theory"

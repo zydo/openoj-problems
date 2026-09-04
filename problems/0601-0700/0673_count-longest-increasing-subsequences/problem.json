@@ -4,10 +4,17 @@
   "id": 673,
   "slug": "count-longest-increasing-subsequences",
   "title": "Count Longest Increasing Subsequences",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Longest Increasing Subsequence"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Segment Tree",
     "Longest Increasing Subsequence"
   ],
   "invocation": {

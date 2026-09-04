@@ -4,8 +4,12 @@
   "id": 1704,
   "slug": "balanced-vowel-halves",
   "title": "Balanced Vowel Halves",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Counting"
   ],

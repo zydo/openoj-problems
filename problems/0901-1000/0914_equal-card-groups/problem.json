@@ -4,11 +4,20 @@
   "id": 914,
   "slug": "equal-card-groups",
   "title": "Equal Card Groups",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory",
+    "Euclidean Algorithm",
     "Greatest Common Divisor"
   ],
   "invocation": {

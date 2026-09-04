@@ -4,8 +4,14 @@
   "id": 428,
   "slug": "serialize-and-deserialize-n-ary-tree",
   "title": "Serialize and Deserialize N-ary Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "String",
     "Tree",
     "Depth-First Search",

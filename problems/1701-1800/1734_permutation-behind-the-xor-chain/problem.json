@@ -4,8 +4,12 @@
   "id": 1734,
   "slug": "permutation-behind-the-xor-chain",
   "title": "Permutation Behind the XOR Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

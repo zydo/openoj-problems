@@ -3,10 +3,15 @@
   "id": 167,
   "slug": "two-sum-ii-input-array-is-sorted",
   "title": "Two Sum II - Input Array Is Sorted",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

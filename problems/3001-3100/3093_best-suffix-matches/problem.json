@@ -4,10 +4,15 @@
   "id": 3093,
   "slug": "best-suffix-matches",
   "title": "Best Suffix Matches",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

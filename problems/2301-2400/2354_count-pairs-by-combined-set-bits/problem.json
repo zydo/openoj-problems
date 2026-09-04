@@ -4,10 +4,16 @@
   "id": 2354,
   "slug": "count-pairs-by-combined-set-bits",
   "title": "Count Pairs by Combined Set Bits",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
     "Bit Manipulation"
   ],
   "invocation": {

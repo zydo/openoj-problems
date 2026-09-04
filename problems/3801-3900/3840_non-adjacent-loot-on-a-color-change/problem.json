@@ -4,8 +4,12 @@
   "id": 3840,
   "slug": "non-adjacent-loot-on-a-color-change",
   "title": "Non-Adjacent Loot On A Color Change",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -3,8 +3,14 @@
   "id": 2444,
   "slug": "count-subarrays-with-fixed-bounds",
   "title": "Count Subarrays With Fixed Bounds",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Sliding Window",

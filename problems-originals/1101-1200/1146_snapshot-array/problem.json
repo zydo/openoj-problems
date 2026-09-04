@@ -3,10 +3,17 @@
   "id": 1146,
   "slug": "snapshot-array",
   "title": "Snapshot Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Design",
+    "Persistent Data Structure"
   ],
   "invocation": {
     "type": "design",

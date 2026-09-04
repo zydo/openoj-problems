@@ -4,8 +4,14 @@
   "id": 919,
   "slug": "level-order-tree-inserter",
   "title": "Level-Order Tree Inserter",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Design",

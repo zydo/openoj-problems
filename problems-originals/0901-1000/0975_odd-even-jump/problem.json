@@ -4,8 +4,16 @@
   "id": 975,
   "slug": "odd-even-jump",
   "title": "Odd Even Jump",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Stack",

@@ -4,8 +4,15 @@
   "id": 3346,
   "slug": "maximum-frequency-of-an-element-after-performing-operations-i",
   "title": "Maximum Frequency of an Element After Performing Operations I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sliding Window",

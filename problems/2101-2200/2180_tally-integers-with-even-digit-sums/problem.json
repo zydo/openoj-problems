@@ -4,8 +4,12 @@
   "id": 2180,
   "slug": "tally-integers-with-even-digit-sums",
   "title": "Tally Integers With Even Digit Sums",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

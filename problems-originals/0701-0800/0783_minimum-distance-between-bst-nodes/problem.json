@@ -4,8 +4,15 @@
   "id": 783,
   "slug": "minimum-distance-between-bst-nodes",
   "title": "Minimum Distance Between BST Nodes",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

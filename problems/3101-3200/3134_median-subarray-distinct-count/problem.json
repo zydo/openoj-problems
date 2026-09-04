@@ -4,8 +4,14 @@
   "id": 3134,
   "slug": "median-subarray-distinct-count",
   "title": "Median Subarray Distinct Count",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search",
+    "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Binary Search",
     "Sliding Window"
   ],

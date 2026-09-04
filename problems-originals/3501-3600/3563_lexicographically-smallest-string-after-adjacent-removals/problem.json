@@ -3,9 +3,13 @@
   "id": 3563,
   "slug": "lexicographically-smallest-string-after-adjacent-removals",
   "title": "Lexicographically Smallest String After Adjacent Removals",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
     "Dynamic Programming"
   ],
   "invocation": {

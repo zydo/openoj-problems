@@ -4,8 +4,14 @@
   "id": 3367,
   "slug": "heaviest-forest-under-a-degree-cap",
   "title": "Heaviest Forest Under a Degree Cap",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Sorting"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Tree",
     "Depth-First Search",

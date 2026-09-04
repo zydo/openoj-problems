@@ -4,10 +4,13 @@
   "id": 2118,
   "slug": "assemble-the-polynomial",
   "title": "Assemble the Polynomial",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

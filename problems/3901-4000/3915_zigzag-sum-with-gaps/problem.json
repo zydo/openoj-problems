@@ -4,8 +4,13 @@
   "id": 3915,
   "slug": "zigzag-sum-with-gaps",
   "title": "Zigzag Sum With Gaps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Segment Tree"

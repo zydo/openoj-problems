@@ -4,8 +4,13 @@
   "id": 1351,
   "slug": "count-negative-numbers-in-a-sorted-matrix",
   "title": "Count Negative Numbers in a Sorted Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Matrix"

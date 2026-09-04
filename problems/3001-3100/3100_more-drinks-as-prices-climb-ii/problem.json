@@ -4,8 +4,12 @@
   "id": 3100,
   "slug": "more-drinks-as-prices-climb-ii",
   "title": "More Drinks as Prices Climb II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

@@ -4,8 +4,12 @@
   "id": 3314,
   "slug": "smallest-or-pair-starts",
   "title": "Smallest Or-Pair Starts",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

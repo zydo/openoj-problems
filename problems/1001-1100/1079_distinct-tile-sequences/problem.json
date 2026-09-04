@@ -4,8 +4,14 @@
   "id": 1079,
   "slug": "distinct-tile-sequences",
   "title": "Distinct Tile Sequences",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Backtracking",
     "Counting"

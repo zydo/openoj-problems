@@ -4,8 +4,13 @@
   "id": 2498,
   "slug": "frog-jump-ii",
   "title": "Frog Jump II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy"

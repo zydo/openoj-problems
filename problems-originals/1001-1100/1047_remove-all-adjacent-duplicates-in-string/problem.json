@@ -4,8 +4,12 @@
   "id": 1047,
   "slug": "remove-all-adjacent-duplicates-in-string",
   "title": "Remove All Adjacent Duplicates In String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

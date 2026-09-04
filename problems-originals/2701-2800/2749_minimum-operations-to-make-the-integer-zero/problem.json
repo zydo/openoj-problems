@@ -4,8 +4,13 @@
   "id": 2749,
   "slug": "minimum-operations-to-make-the-integer-zero",
   "title": "Minimum Operations to Make the Integer Zero",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Bit Manipulation",
+    "Brainteaser",
+    "Enumeration"
+  ],
+  "topics": [
     "Bit Manipulation",
     "Brainteaser",
     "Enumeration"

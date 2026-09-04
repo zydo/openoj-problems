@@ -4,8 +4,12 @@
   "id": 2215,
   "slug": "values-each-list-holds-alone",
   "title": "Values Each List Holds Alone",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

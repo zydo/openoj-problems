@@ -3,10 +3,16 @@
   "id": 3272,
   "slug": "find-the-count-of-good-integers",
   "title": "Find the Count of Good Integers",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Number Theory"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Combinatorics",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

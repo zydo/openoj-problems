@@ -4,8 +4,16 @@
   "id": 2977,
   "slug": "minimum-cost-to-convert-string-ii",
   "title": "Minimum Cost to Convert String II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Trie",
+    "Shortest Path"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming",

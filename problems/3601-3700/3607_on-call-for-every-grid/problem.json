@@ -4,11 +4,21 @@
   "id": 3607,
   "slug": "on-call-for-every-grid",
   "title": "On Call For Every Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Union-Find",
     "Graph Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

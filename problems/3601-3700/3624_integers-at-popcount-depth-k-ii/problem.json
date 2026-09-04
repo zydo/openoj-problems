@@ -4,9 +4,15 @@
   "id": 3624,
   "slug": "integers-at-popcount-depth-k-ii",
   "title": "Integers at Popcount Depth K II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
     "Binary Indexed Tree",
     "Segment Tree"
   ],

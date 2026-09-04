@@ -4,11 +4,18 @@
   "id": 1986,
   "slug": "fewest-work-sessions",
   "title": "Fewest Work Sessions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Bit Manipulation",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

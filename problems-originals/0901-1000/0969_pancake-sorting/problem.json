@@ -4,8 +4,14 @@
   "id": 969,
   "slug": "pancake-sorting",
   "title": "Pancake Sorting",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy",

@@ -4,8 +4,12 @@
   "id": 1085,
   "slug": "sum-of-digits-in-the-minimum-number",
   "title": "Sum of Digits in the Minimum Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

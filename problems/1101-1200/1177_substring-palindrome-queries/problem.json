@@ -4,12 +4,19 @@
   "id": 1177,
   "slug": "substring-palindrome-queries",
   "title": "Substring Palindrome Queries",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Prefix Sum",
     "Bit Manipulation",
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

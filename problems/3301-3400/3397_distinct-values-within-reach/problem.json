@@ -4,8 +4,13 @@
   "id": 3397,
   "slug": "distinct-values-within-reach",
   "title": "Distinct Values Within Reach",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

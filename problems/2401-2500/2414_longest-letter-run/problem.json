@@ -4,8 +4,11 @@
   "id": 2414,
   "slug": "longest-letter-run",
   "title": "Longest Letter Run",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

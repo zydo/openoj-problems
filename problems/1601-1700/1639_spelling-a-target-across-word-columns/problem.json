@@ -4,8 +4,13 @@
   "id": 1639,
   "slug": "spelling-a-target-across-word-columns",
   "title": "Spelling a Target Across Word Columns",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming"

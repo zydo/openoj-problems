@@ -4,8 +4,12 @@
   "id": 3190,
   "slug": "fewest-steps-to-divisibility",
   "title": "Fewest Steps To Divisibility",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

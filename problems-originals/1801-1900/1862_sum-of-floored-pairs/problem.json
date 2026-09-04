@@ -3,10 +3,18 @@
   "id": 1862,
   "slug": "sum-of-floored-pairs",
   "title": "Sum of Floored Pairs",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Prefix Sum",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Counting",
+    "Enumeration",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

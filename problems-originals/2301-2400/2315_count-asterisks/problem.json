@@ -4,8 +4,11 @@
   "id": 2315,
   "slug": "count-asterisks",
   "title": "Count Asterisks",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

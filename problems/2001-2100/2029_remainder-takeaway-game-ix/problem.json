@@ -4,12 +4,22 @@
   "id": 2029,
   "slug": "remainder-takeaway-game-ix",
   "title": "Remainder Takeaway Game IX",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Greedy",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Minimax",
+    "Counting",
+    "Game Theory",
+    "Nim Game",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

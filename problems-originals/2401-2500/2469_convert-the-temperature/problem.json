@@ -4,8 +4,11 @@
   "id": 2469,
   "slug": "convert-the-temperature",
   "title": "Convert the Temperature",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

@@ -4,9 +4,16 @@
   "id": 3025,
   "slug": "quiet-corner-pairs-i",
   "title": "Quiet Corner Pairs I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Geometry",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Geometry",
     "Sorting",
     "Enumeration"

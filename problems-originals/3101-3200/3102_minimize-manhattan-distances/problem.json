@@ -4,8 +4,15 @@
   "id": 3102,
   "slug": "minimize-manhattan-distances",
   "title": "Minimize Manhattan Distances",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

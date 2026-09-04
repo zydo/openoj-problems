@@ -4,10 +4,15 @@
   "id": 583,
   "slug": "equalize-strings-by-deletion",
   "title": "Equalize Strings by Deletion",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2452,
   "slug": "near-edit-query-matches",
   "title": "Near-Edit Query Matches",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "String",
     "Trie"

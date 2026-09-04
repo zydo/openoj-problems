@@ -4,11 +4,17 @@
   "id": 264,
   "slug": "nth-five-smooth-number",
   "title": "Nth Five-Smooth Number",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Two Pointers",
     "Heap"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

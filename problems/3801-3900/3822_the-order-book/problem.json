@@ -4,10 +4,14 @@
   "id": 3822,
   "slug": "the-order-book",
   "title": "The Order Book",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Design"
   ],
   "invocation": {
     "type": "design",

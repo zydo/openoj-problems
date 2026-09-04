@@ -4,8 +4,13 @@
   "id": 1404,
   "slug": "binary-countdown-to-one",
   "title": "Binary Countdown to One",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Bit Manipulation",
     "Simulation"

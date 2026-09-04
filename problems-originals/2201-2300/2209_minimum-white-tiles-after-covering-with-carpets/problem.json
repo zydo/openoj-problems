@@ -4,8 +4,13 @@
   "id": 2209,
   "slug": "minimum-white-tiles-after-covering-with-carpets",
   "title": "Minimum White Tiles After Covering With Carpets",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Prefix Sum"

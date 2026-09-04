@@ -3,11 +3,16 @@
   "id": 1962,
   "slug": "remove-stones-to-minimize-the-total",
   "title": "Remove Stones to Minimize the Total",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Heap",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

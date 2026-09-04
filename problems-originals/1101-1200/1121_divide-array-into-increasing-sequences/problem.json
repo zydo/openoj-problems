@@ -4,8 +4,12 @@
   "id": 1121,
   "slug": "divide-array-into-increasing-sequences",
   "title": "Divide Array Into Increasing Sequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Counting"
   ],

@@ -4,8 +4,14 @@
   "id": 3552,
   "slug": "grid-teleportation-traversal",
   "title": "Grid Teleportation Traversal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Breadth-First Search",

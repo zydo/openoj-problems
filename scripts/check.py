@@ -129,6 +129,7 @@ def check_bundle(bundle: Path) -> list[Failure]:
         "title",
         "difficulty",
         "tags",
+        "topics",
         "invocation",
         "limits",
     }
@@ -139,19 +140,23 @@ def check_bundle(bundle: Path) -> list[Failure]:
         fail("invocation must be an object")
         return failures
     if not isinstance(problem["difficulty"], str) or problem["difficulty"] not in {
-        "H1",
-        "H2",
-        "H3",
-        "H4",
-        "H5",
+        "Easy",
+        "Medium",
+        "Hard",
     }:
-        fail("difficulty must be one of H1-H5")
+        fail("difficulty must be one of Easy, Medium, Hard")
     if (
         not isinstance(problem["tags"], list)
         or not problem["tags"]
         or not all(isinstance(tag, str) and tag for tag in problem["tags"])
     ):
         fail("tags must be a non-empty array of non-empty strings")
+    if (
+        not isinstance(problem["topics"], list)
+        or not problem["topics"]
+        or not all(isinstance(topic, str) and topic for topic in problem["topics"])
+    ):
+        fail("topics must be a non-empty array of non-empty strings")
     if problem["schema_version"] != 2:
         fail("unsupported schema_version")
     designated = problem["reference_solution"]

@@ -4,8 +4,14 @@
   "id": 1797,
   "slug": "design-authentication-manager",
   "title": "Design Authentication Manager",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Doubly-Linked List"
+  ],
+  "topics": [
     "Hash Table",
     "Linked List",
     "Design",

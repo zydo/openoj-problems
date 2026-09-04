@@ -4,8 +4,12 @@
   "id": 3576,
   "slug": "transform-array-to-all-equal-elements",
   "title": "Transform Array to All Equal Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

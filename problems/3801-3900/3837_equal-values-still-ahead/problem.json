@@ -4,8 +4,13 @@
   "id": 3837,
   "slug": "equal-values-still-ahead",
   "title": "Equal Values Still Ahead",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

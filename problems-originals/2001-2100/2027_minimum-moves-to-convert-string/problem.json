@@ -4,8 +4,12 @@
   "id": 2027,
   "slug": "minimum-moves-to-convert-string",
   "title": "Minimum Moves to Convert String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

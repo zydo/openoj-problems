@@ -4,8 +4,11 @@
   "id": 2715,
   "slug": "timeout-cancellation",
   "title": "Timeout Cancellation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

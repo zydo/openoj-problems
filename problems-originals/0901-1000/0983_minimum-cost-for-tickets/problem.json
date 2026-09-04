@@ -3,8 +3,12 @@
   "id": 983,
   "slug": "minimum-cost-for-tickets",
   "title": "Minimum Cost For Tickets",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

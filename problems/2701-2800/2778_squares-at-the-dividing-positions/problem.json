@@ -4,8 +4,12 @@
   "id": 2778,
   "slug": "squares-at-the-dividing-positions",
   "title": "Squares At The Dividing Positions",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

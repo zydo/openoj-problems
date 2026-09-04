@@ -4,10 +4,13 @@
   "id": 263,
   "slug": "5-smooth-number-check",
   "title": "5-Smooth Number Check",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Number Theory"
+  ],
+  "topics": [
+    "Math"
   ],
   "invocation": {
     "type": "function",

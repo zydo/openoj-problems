@@ -4,8 +4,11 @@
   "id": 92,
   "slug": "reverse-linked-list-ii",
   "title": "Reverse Linked List II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

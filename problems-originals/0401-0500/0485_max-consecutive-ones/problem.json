@@ -4,8 +4,11 @@
   "id": 485,
   "slug": "max-consecutive-ones",
   "title": "Max Consecutive Ones",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

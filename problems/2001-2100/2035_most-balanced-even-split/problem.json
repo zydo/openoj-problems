@@ -4,10 +4,21 @@
   "id": 2035,
   "slug": "most-balanced-even-split",
   "title": "Most Balanced Even Split",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Meet in the Middle",
     "Bitmask DP"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Meet in the Middle",
+    "Sorting",
+    "Ordered Set",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

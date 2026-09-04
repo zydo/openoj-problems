@@ -4,8 +4,15 @@
   "id": 3645,
   "slug": "maximum-total-from-optimal-activation-order",
   "title": "Maximum Total from Optimal Activation Order",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy",

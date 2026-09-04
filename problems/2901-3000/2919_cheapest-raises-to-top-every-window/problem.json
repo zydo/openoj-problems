@@ -4,8 +4,12 @@
   "id": 2919,
   "slug": "cheapest-raises-to-top-every-window",
   "title": "Cheapest Raises To Top Every Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

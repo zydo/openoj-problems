@@ -4,11 +4,17 @@
   "id": 563,
   "slug": "cumulative-tree-tilt",
   "title": "Cumulative Tree Tilt",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

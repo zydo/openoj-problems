@@ -4,8 +4,12 @@
   "id": 3121,
   "slug": "letters-in-both-cases-ii",
   "title": "Letters In Both Cases II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

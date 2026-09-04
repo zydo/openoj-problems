@@ -4,10 +4,13 @@
   "id": 2738,
   "slug": "whole-word-tallies-in-documents",
   "title": "Whole-Word Tallies In Documents",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

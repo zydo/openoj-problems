@@ -4,10 +4,13 @@
   "id": 177,
   "slug": "pay-by-rank",
   "title": "Pay By Rank",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

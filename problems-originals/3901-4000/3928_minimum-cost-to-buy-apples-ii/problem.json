@@ -4,8 +4,14 @@
   "id": 3928,
   "slug": "minimum-cost-to-buy-apples-ii",
   "title": "Minimum Cost to Buy Apples II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Array",
     "Graph Theory",
     "Heap (Priority Queue)",

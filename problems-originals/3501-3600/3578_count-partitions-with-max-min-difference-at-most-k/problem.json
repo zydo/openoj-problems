@@ -4,8 +4,16 @@
   "id": 3578,
   "slug": "count-partitions-with-max-min-difference-at-most-k",
   "title": "Count Partitions With Max-Min Difference at Most K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Queue",

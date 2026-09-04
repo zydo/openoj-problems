@@ -4,8 +4,13 @@
   "id": 1807,
   "slug": "evaluate-the-bracket-pairs-of-a-string",
   "title": "Evaluate the Bracket Pairs of a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

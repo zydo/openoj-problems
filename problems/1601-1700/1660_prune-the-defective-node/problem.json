@@ -4,10 +4,17 @@
   "id": 1660,
   "slug": "prune-the-defective-node",
   "title": "Prune the Defective Node",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
     "Breadth-First Search",
     "Binary Tree"
   ],

@@ -4,8 +4,12 @@
   "id": 3269,
   "slug": "filling-two-parity-ladders",
   "title": "Filling Two Parity Ladders",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

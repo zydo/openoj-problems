@@ -4,8 +4,14 @@
   "id": 3855,
   "slug": "sum-of-k-digit-numbers-in-a-range",
   "title": "Sum of K-Digit Numbers in a Range",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Divide and Conquer",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Divide and Conquer",
     "Combinatorics",

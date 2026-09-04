@@ -4,11 +4,17 @@
   "id": 3948,
   "slug": "the-prefix-mex-harvest",
   "title": "The Prefix MEX Harvest",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Queue"
   ],
   "invocation": {
     "type": "function",

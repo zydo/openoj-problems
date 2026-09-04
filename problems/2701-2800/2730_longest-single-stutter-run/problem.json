@@ -4,8 +4,12 @@
   "id": 2730,
   "slug": "longest-single-stutter-run",
   "title": "The Longest Single-Stutter Run",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

@@ -4,8 +4,12 @@
   "id": 2256,
   "slug": "smallest-average-gap",
   "title": "Smallest Average Gap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

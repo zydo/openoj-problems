@@ -4,8 +4,12 @@
   "id": 1566,
   "slug": "blocks-echoed-back-to-back",
   "title": "Blocks Echoed Back to Back",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

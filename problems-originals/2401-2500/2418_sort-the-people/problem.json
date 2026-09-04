@@ -4,8 +4,14 @@
   "id": 2418,
   "slug": "sort-the-people",
   "title": "Sort the People",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

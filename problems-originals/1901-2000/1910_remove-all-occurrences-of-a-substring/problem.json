@@ -4,8 +4,13 @@
   "id": 1910,
   "slug": "remove-all-occurrences-of-a-substring",
   "title": "Remove All Occurrences of a Substring",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

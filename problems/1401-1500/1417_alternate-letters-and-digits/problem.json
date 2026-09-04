@@ -4,8 +4,11 @@
   "id": 1417,
   "slug": "alternate-letters-and-digits",
   "title": "Alternate Letters and Digits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

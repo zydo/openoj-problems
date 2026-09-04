@@ -3,8 +3,11 @@
   "id": 1220,
   "slug": "count-vowels-permutation",
   "title": "Count Vowels Permutation",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

@@ -4,11 +4,17 @@
   "id": 1673,
   "slug": "smallest-fixed-length-subsequence",
   "title": "Smallest Fixed-Length Subsequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Monotonic Stack",
     "Stack",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

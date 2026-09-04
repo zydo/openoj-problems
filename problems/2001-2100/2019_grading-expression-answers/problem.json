@@ -4,12 +4,21 @@
   "id": 2019,
   "slug": "grading-expression-answers",
   "title": "Grading Expression Answers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Math",
     "Dynamic Programming",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

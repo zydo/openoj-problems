@@ -4,8 +4,14 @@
   "id": 3491,
   "slug": "phone-number-prefix",
   "title": "Phone Number Prefix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Trie",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "String",
     "Trie",

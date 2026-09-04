@@ -4,8 +4,13 @@
   "id": 1585,
   "slug": "check-if-string-is-transformable-with-substring-sort-operations",
   "title": "Check If String Is Transformable With Substring Sort Operations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Sorting"

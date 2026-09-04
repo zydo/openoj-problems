@@ -3,8 +3,16 @@
   "id": 472,
   "slug": "concatenated-words",
   "title": "Concatenated Words",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Trie",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming",

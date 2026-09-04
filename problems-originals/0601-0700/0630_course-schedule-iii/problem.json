@@ -3,11 +3,17 @@
   "id": 630,
   "slug": "course-schedule-iii",
   "title": "Course Schedule III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

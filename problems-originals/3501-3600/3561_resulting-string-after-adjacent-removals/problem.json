@@ -4,8 +4,13 @@
   "id": 3561,
   "slug": "resulting-string-after-adjacent-removals",
   "title": "Resulting String After Adjacent Removals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

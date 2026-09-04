@@ -4,8 +4,13 @@
   "id": 1808,
   "slug": "maximize-number-of-nice-divisors",
   "title": "Maximize Number of Nice Divisors",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Recursion",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Recursion",
     "Number Theory"

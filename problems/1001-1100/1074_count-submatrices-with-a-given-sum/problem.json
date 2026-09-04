@@ -4,8 +4,14 @@
   "id": 1074,
   "slug": "count-submatrices-with-a-given-sum",
   "title": "Count Submatrices With a Given Sum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix",

@@ -4,8 +4,11 @@
   "id": 293,
   "slug": "flip-game",
   "title": "Flip Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

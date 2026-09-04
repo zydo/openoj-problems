@@ -3,11 +3,17 @@
   "id": 2493,
   "slug": "divide-nodes-into-the-maximum-number-of-groups",
   "title": "Divide Nodes Into the Maximum Number of Groups",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "BFS",
     "Union Find"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

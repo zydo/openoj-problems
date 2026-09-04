@@ -4,8 +4,12 @@
   "id": 1646,
   "slug": "get-maximum-in-generated-array",
   "title": "Get Maximum in Generated Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

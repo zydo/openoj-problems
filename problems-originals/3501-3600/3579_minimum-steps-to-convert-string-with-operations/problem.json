@@ -4,8 +4,12 @@
   "id": 3579,
   "slug": "minimum-steps-to-convert-string-with-operations",
   "title": "Minimum Steps to Convert String with Operations",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

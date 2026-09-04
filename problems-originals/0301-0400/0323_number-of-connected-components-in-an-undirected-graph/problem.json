@@ -3,11 +3,17 @@
   "id": 323,
   "slug": "number-of-connected-components-in-an-undirected-graph",
   "title": "Number of Connected Components in an Undirected Graph",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Graph",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

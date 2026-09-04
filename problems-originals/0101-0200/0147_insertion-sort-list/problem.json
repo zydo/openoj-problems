@@ -4,8 +4,12 @@
   "id": 147,
   "slug": "insertion-sort-list",
   "title": "Insertion Sort List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Sorting"
+  ],
+  "topics": [
     "Linked List",
     "Sorting"
   ],

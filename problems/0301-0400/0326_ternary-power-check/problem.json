@@ -4,8 +4,12 @@
   "id": 326,
   "slug": "ternary-power-check",
   "title": "Ternary Power Check",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Recursion"
   ],

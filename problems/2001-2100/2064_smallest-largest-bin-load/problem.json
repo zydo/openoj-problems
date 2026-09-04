@@ -4,8 +4,13 @@
   "id": 2064,
   "slug": "smallest-largest-bin-load",
   "title": "Smallest Largest Bin Load",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy"

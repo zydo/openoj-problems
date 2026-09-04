@@ -4,8 +4,13 @@
   "id": 559,
   "slug": "nary-tree-height",
   "title": "N-Ary Tree Height",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"

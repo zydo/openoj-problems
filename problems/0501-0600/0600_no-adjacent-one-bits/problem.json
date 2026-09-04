@@ -4,9 +4,12 @@
   "id": 600,
   "slug": "no-adjacent-one-bits",
   "title": "No Adjacent One-Bits",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

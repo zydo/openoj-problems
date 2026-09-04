@@ -4,8 +4,11 @@
   "id": 708,
   "slug": "insert-into-a-sorted-circular-linked-list",
   "title": "Insert into a Sorted Circular Linked List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

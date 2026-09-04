@@ -4,9 +4,15 @@
   "id": 3257,
   "slug": "best-three-rook-lineup-ii",
   "title": "Best Three-Rook Lineup II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Matrix",
     "Enumeration"
   ],

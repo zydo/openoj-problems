@@ -4,12 +4,19 @@
   "id": 270,
   "slug": "nearest-bst-value",
   "title": "Nearest BST Value",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Binary Search",
     "Tree",
     "Depth-First Search",
     "Binary Search Tree"
+  ],
+  "topics": [
+    "Binary Search",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

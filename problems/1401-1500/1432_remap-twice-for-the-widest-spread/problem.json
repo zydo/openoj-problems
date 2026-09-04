@@ -4,8 +4,12 @@
   "id": 1432,
   "slug": "remap-twice-for-the-widest-spread",
   "title": "Remap Twice for the Widest Spread",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

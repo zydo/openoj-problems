@@ -4,11 +4,17 @@
   "id": 561,
   "slug": "maximized-pair-sum",
   "title": "Maximized Pair Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
   ],
   "invocation": {
     "type": "function",

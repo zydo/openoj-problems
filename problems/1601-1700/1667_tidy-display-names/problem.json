@@ -4,10 +4,13 @@
   "id": 1667,
   "slug": "tidy-display-names",
   "title": "Tidy Display Names",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

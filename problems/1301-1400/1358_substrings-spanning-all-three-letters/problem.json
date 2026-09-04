@@ -4,11 +4,16 @@
   "id": 1358,
   "slug": "substrings-spanning-all-three-letters",
   "title": "Substrings Spanning All Three Letters",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Sliding Window",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

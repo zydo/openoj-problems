@@ -4,8 +4,12 @@
   "id": 3689,
   "slug": "banking-the-biggest-subarray-spreads",
   "title": "Banking The Biggest Subarray Spreads",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

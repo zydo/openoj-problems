@@ -4,8 +4,12 @@
   "id": 2189,
   "slug": "card-house-blueprints",
   "title": "Card House Blueprints",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

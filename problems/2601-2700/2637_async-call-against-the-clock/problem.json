@@ -4,9 +4,12 @@
   "id": 2637,
   "slug": "async-call-against-the-clock",
   "title": "An Async Call Against The Clock",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Concurrency"
   ],
   "invocation": {
     "type": "interactive",

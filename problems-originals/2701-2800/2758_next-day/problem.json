@@ -4,8 +4,12 @@
   "id": 2758,
   "slug": "next-day",
   "title": "Next Day",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
+    "Math",
     "String"
   ],
   "invocation": {

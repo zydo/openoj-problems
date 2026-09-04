@@ -4,10 +4,15 @@
   "id": 3734,
   "slug": "smallest-palindromic-rearrangement-beating-the-target",
   "title": "Smallest Palindromic Rearrangement Beating The Target",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Greedy",
+    "Enumeration"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
     "Enumeration"
   ],
   "invocation": {

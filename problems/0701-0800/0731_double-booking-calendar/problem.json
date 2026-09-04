@@ -4,8 +4,16 @@
   "id": 731,
   "slug": "double-booking-calendar",
   "title": "Double-Booking Calendar",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Design",
+    "Segment Tree",
+    "Prefix Sum",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Design",

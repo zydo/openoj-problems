@@ -4,8 +4,12 @@
   "id": 1662,
   "slug": "check-if-two-string-arrays-are-equivalent",
   "title": "Check If Two String Arrays are Equivalent",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

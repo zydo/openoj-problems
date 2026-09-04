@@ -4,8 +4,19 @@
   "id": 3292,
   "slug": "minimum-number-of-valid-strings-to-form-target-ii",
   "title": "Minimum Number of Valid Strings to Form Target II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy",
+    "Segment Tree",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "String",
     "Binary Search",

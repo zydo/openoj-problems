@@ -4,8 +4,11 @@
   "id": 1173,
   "slug": "immediate-food-delivery-i",
   "title": "Immediate Food Delivery I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

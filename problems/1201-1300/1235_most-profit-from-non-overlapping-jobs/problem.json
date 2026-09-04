@@ -4,10 +4,16 @@
   "id": 1235,
   "slug": "most-profit-from-non-overlapping-jobs",
   "title": "Most Profit From Non-Overlapping Jobs",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Sorting"
   ],
   "invocation": {

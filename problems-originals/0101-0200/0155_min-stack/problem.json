@@ -3,9 +3,13 @@
   "id": 155,
   "slug": "min-stack",
   "title": "Min Stack",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Stack"
+  ],
+  "topics": [
+    "Stack",
+    "Design"
   ],
   "invocation": {
     "type": "design",

@@ -4,10 +4,15 @@
   "id": 2201,
   "slug": "fully-excavated-relics",
   "title": "Fully Excavated Relics",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Matrix",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Simulation"
   ],
   "invocation": {

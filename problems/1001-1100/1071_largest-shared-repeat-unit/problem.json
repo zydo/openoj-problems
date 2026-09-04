@@ -4,10 +4,16 @@
   "id": 1071,
   "slug": "largest-shared-repeat-unit",
   "title": "Largest Shared Repeat Unit",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "String"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

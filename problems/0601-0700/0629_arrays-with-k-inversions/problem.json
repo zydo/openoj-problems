@@ -4,8 +4,11 @@
   "id": 629,
   "slug": "arrays-with-k-inversions",
   "title": "Arrays With K Inversions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

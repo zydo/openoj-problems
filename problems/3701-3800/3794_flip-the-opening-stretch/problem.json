@@ -4,8 +4,12 @@
   "id": 3794,
   "slug": "flip-the-opening-stretch",
   "title": "Flip The Opening Stretch",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

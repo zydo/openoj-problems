@@ -4,11 +4,17 @@
   "id": 3634,
   "slug": "trim-until-balanced",
   "title": "Trim Until Balanced",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

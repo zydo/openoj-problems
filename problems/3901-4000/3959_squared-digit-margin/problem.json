@@ -4,10 +4,14 @@
   "id": 3959,
   "slug": "squared-digit-margin",
   "title": "Squared Digit Margin",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Simulation"
+  ],
+  "topics": [
+    "Math",
+    "String"
   ],
   "invocation": {
     "type": "function",

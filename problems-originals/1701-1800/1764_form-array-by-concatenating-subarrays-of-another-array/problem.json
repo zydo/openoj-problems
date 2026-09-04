@@ -4,8 +4,15 @@
   "id": 1764,
   "slug": "form-array-by-concatenating-subarrays-of-another-array",
   "title": "Form Array by Concatenating Subarrays of Another Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "String Matching",
+    "Knuth–Morris–Pratt Algorithm"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy",

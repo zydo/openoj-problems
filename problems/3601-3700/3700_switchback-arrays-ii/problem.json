@@ -4,8 +4,12 @@
   "id": 3700,
   "slug": "switchback-arrays-ii",
   "title": "Switchback Arrays II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

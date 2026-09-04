@@ -4,8 +4,12 @@
   "id": 3686,
   "slug": "number-of-stable-subsequences",
   "title": "Number of Stable Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -4,9 +4,14 @@
   "id": 2719,
   "slug": "count-numbers-by-digit-sum",
   "title": "Count Numbers by Digit Sum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "String",
     "Dynamic Programming"
   ],
   "invocation": {

@@ -4,10 +4,13 @@
   "id": 3140,
   "slug": "adjacent-open-seats-ii",
   "title": "Adjacent Open Seats II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

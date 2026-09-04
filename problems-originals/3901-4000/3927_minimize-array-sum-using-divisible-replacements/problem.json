@@ -4,8 +4,15 @@
   "id": 3927,
   "slug": "minimize-array-sum-using-divisible-replacements",
   "title": "Minimize Array Sum Using Divisible Replacements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

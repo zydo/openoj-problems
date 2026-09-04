@@ -4,8 +4,14 @@
   "id": 2499,
   "slug": "cheapest-unmatching-swaps",
   "title": "Cheapest Unmatching Swaps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

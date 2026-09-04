@@ -4,8 +4,13 @@
   "id": 1585,
   "slug": "sorting-one-digit-string-into-another",
   "title": "Sorting One Digit String Into Another",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Sorting"

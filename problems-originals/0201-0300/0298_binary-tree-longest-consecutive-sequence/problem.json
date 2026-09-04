@@ -4,8 +4,14 @@
   "id": 298,
   "slug": "binary-tree-longest-consecutive-sequence",
   "title": "Binary Tree Longest Consecutive Sequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",

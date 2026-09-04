@@ -4,9 +4,12 @@
   "id": 1188,
   "slug": "blocking-bounded-buffer",
   "title": "Blocking Bounded Buffer",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Queue",
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 2432,
   "slug": "worker-of-the-longest-shift",
   "title": "Worker of the Longest Shift",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

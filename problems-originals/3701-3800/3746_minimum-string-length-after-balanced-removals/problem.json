@@ -4,8 +4,13 @@
   "id": 3746,
   "slug": "minimum-string-length-after-balanced-removals",
   "title": "Minimum String Length After Balanced Removals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Counting"

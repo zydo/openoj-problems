@@ -4,11 +4,19 @@
   "id": 2476,
   "slug": "floor-and-ceiling-in-a-search-tree",
   "title": "Floor and Ceiling in a Search Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search Tree",
     "Binary Search",
     "Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

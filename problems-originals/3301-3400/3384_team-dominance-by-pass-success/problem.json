@@ -4,8 +4,11 @@
   "id": 3384,
   "slug": "team-dominance-by-pass-success",
   "title": "Team Dominance by Pass Success",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

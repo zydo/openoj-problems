@@ -4,8 +4,15 @@
   "id": 3556,
   "slug": "sum-of-largest-prime-substrings",
   "title": "Sum of Largest Prime Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Sorting",
+    "Number Theory"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

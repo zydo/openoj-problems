@@ -4,8 +4,13 @@
   "id": 3703,
   "slug": "peeling-off-k-balanced-chunks",
   "title": "Peeling Off K-Balanced Chunks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

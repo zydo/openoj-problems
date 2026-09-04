@@ -4,8 +4,12 @@
   "id": 1599,
   "slug": "maximum-profit-of-operating-a-centennial-wheel",
   "title": "Maximum Profit of Operating a Centennial Wheel",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

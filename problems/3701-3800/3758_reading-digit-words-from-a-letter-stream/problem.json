@@ -4,8 +4,12 @@
   "id": 3758,
   "slug": "reading-digit-words-from-a-letter-stream",
   "title": "Reading Digit Words From A Letter Stream",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Trie"
+  ],
+  "topics": [
     "String",
     "Trie"
   ],

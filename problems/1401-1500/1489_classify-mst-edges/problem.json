@@ -4,11 +4,21 @@
   "id": 1489,
   "slug": "classify-mst-edges",
   "title": "Classify MST Edges",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Minimum Spanning Tree",
     "Union Find"
+  ],
+  "topics": [
+    "Union-Find",
+    "Graph Theory",
+    "Sorting",
+    "Minimum Spanning Tree",
+    "Strongly Connected Component",
+    "Prim's Algorithm",
+    "Kruskal's Algorithm",
+    "Borůvka's Algorithm"
   ],
   "invocation": {
     "type": "function",

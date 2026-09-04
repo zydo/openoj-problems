@@ -4,10 +4,13 @@
   "id": 2705,
   "slug": "stripping-falsy-slots",
   "title": "Stripping Falsy Slots",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Recursion"
   ],
   "invocation": {
     "type": "interactive",

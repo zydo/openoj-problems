@@ -4,8 +4,14 @@
   "id": 812,
   "slug": "largest-triangle-area",
   "title": "Largest Triangle Area",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Polygons"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

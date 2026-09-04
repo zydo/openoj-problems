@@ -4,8 +4,13 @@
   "id": 2309,
   "slug": "greatest-english-letter-in-upper-and-lower-case",
   "title": "Greatest English Letter in Upper and Lower Case",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Enumeration"

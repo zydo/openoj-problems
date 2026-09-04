@@ -4,8 +4,14 @@
   "id": 1727,
   "slug": "largest-ones-block-with-shuffled-columns",
   "title": "Largest Ones Block With Shuffled Columns",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

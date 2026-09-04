@@ -3,8 +3,13 @@
   "id": 1765,
   "slug": "map-of-highest-peak",
   "title": "Map of Highest Peak",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Matrix"

@@ -3,10 +3,16 @@
   "id": 1915,
   "slug": "number-of-wonderful-substrings",
   "title": "Number of Wonderful Substrings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
     "Bit Manipulation",
     "Prefix Sum"
   ],

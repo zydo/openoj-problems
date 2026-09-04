@@ -4,8 +4,13 @@
   "id": 1762,
   "slug": "buildings-facing-the-open-sea",
   "title": "Buildings Facing the Open Sea",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

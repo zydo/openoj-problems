@@ -4,11 +4,17 @@
   "id": 3012,
   "slug": "shrinking-an-array-with-modulo-pairs",
   "title": "Shrinking An Array With Modulo Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

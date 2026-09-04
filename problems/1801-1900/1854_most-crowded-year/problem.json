@@ -4,8 +4,13 @@
   "id": 1854,
   "slug": "most-crowded-year",
   "title": "Most Crowded Year",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Counting",
     "Prefix Sum"

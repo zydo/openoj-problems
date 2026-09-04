@@ -3,11 +3,19 @@
   "id": 2097,
   "slug": "valid-arrangement-of-pairs",
   "title": "Valid Arrangement of Pairs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "DFS",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Graph Theory",
+    "Eulerian Circuit",
+    "Eulerian Path",
+    "Semi-Eulerian Graph"
   ],
   "invocation": {
     "type": "function",

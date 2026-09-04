@@ -4,10 +4,13 @@
   "id": 1440,
   "slug": "comparison-verdicts",
   "title": "Comparison Verdicts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

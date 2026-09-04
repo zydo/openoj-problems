@@ -3,11 +3,18 @@
   "id": 3515,
   "slug": "shortest-path-in-a-weighted-tree",
   "title": "Shortest Path in a Weighted Tree",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Binary Indexed Tree",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,13 @@
   "id": 1445,
   "slug": "fruit-stand-daily-balance",
   "title": "Fruit Stand Daily Balance",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

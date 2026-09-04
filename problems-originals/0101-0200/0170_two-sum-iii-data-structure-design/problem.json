@@ -4,8 +4,15 @@
   "id": 170,
   "slug": "two-sum-iii-data-structure-design",
   "title": "Two Sum III - Data structure design",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Design",
+    "Data Stream"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

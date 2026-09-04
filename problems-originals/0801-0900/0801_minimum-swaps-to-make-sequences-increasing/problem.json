@@ -3,10 +3,14 @@
   "id": 801,
   "slug": "minimum-swaps-to-make-sequences-increasing",
   "title": "Minimum Swaps To Make Sequences Increasing",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

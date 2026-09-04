@@ -4,8 +4,13 @@
   "id": 1010,
   "slug": "count-pairs-summing-to-a-multiple-of-60",
   "title": "Count Pairs Summing to a Multiple of 60",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

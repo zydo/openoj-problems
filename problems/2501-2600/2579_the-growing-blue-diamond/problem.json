@@ -4,8 +4,11 @@
   "id": 2579,
   "slug": "the-growing-blue-diamond",
   "title": "The Growing Blue Diamond",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

@@ -4,8 +4,16 @@
   "id": 3505,
   "slug": "minimum-operations-to-make-elements-within-k-subarrays-equal",
   "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

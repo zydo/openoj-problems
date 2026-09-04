@@ -4,8 +4,13 @@
   "id": 313,
   "slug": "super-ugly-number",
   "title": "Super Ugly Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming"

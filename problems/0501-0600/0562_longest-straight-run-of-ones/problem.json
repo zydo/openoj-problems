@@ -4,8 +4,13 @@
   "id": 562,
   "slug": "longest-straight-run-of-ones",
   "title": "Longest Straight Run of Ones",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

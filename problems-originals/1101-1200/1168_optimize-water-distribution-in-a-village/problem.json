@@ -3,12 +3,21 @@
   "id": 1168,
   "slug": "optimize-water-distribution-in-a-village",
   "title": "Optimize Water Distribution in a Village",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Minimum Spanning Tree",
     "Union Find",
     "Graph",
     "Greedy"
+  ],
+  "topics": [
+    "Union-Find",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Minimum Spanning Tree",
+    "Prim's Algorithm",
+    "Kruskal's Algorithm",
+    "Borůvka's Algorithm"
   ],
   "invocation": {
     "type": "function",

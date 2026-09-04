@@ -4,11 +4,18 @@
   "id": 215,
   "slug": "select-kth-largest",
   "title": "Select Kth Largest",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Quickselect",
     "Heap",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Quickselect"
   ],
   "invocation": {
     "type": "function",

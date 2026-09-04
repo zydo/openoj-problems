@@ -4,8 +4,12 @@
   "id": 3824,
   "slug": "minimum-k-to-reduce-array-within-limit",
   "title": "Minimum K to Reduce Array Within Limit",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

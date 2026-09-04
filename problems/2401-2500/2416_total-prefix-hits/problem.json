@@ -4,8 +4,14 @@
   "id": 2416,
   "slug": "total-prefix-hits",
   "title": "Total Prefix Hits",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Trie",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "String",
     "Trie",

@@ -3,8 +3,12 @@
   "id": 132,
   "slug": "palindrome-partitioning-ii",
   "title": "Palindrome Partitioning II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

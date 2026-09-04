@@ -4,11 +4,17 @@
   "id": 1775,
   "slug": "fewest-tweaks-to-balance-two-sums",
   "title": "Fewest Tweaks To Balance Two Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Counting",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

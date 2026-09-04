@@ -4,8 +4,14 @@
   "id": 919,
   "slug": "complete-binary-tree-inserter",
   "title": "Complete Binary Tree Inserter",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Design",

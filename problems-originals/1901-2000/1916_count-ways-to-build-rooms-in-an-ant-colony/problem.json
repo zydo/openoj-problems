@@ -3,12 +3,24 @@
   "id": 1916,
   "slug": "count-ways-to-build-rooms-in-an-ant-colony",
   "title": "Count Ways to Build Rooms in an Ant Colony",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Dynamic Programming",
     "Combinatorics",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Combinatorics",
+    "DP on Trees",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

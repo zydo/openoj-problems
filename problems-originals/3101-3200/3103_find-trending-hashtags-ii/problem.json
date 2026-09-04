@@ -4,8 +4,11 @@
   "id": 3103,
   "slug": "find-trending-hashtags-ii",
   "title": "Find Trending Hashtags II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

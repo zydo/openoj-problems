@@ -3,10 +3,19 @@
   "id": 2179,
   "slug": "count-good-triplets-in-an-array",
   "title": "Count Good Triplets in an Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Fenwick Tree",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

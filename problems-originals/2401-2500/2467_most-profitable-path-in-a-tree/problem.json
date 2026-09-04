@@ -3,12 +3,19 @@
   "id": 2467,
   "slug": "most-profitable-path-in-a-tree",
   "title": "Most Profitable Path in a Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

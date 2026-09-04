@@ -4,8 +4,11 @@
   "id": 830,
   "slug": "positions-of-large-groups",
   "title": "Positions of Large Groups",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

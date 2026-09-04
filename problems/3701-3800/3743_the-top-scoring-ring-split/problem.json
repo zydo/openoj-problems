@@ -4,8 +4,12 @@
   "id": 3743,
   "slug": "the-top-scoring-ring-split",
   "title": "The Top-Scoring Ring Split",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

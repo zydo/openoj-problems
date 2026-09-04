@@ -4,11 +4,14 @@
   "id": 534,
   "slug": "play-log-running-totals",
   "title": "Play Log Running Totals",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL",
     "Window Function"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

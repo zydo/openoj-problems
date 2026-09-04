@@ -4,8 +4,11 @@
   "id": 2985,
   "slug": "calculate-compressed-mean",
   "title": "Calculate Compressed Mean",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

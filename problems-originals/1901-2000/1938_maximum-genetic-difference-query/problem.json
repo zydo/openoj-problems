@@ -3,12 +3,19 @@
   "id": 1938,
   "slug": "maximum-genetic-difference-query",
   "title": "Maximum Genetic Difference Query",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Trie",
     "Depth-First Search",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

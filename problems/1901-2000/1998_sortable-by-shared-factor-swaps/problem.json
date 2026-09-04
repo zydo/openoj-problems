@@ -4,11 +4,21 @@
   "id": 1998,
   "slug": "sortable-by-shared-factor-swaps",
   "title": "Sortable by Shared-Factor Swaps",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Number Theory",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Union-Find",
+    "Sorting",
+    "Number Theory",
+    "Prime Factorization",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 1211,
   "slug": "queries-quality-and-percentage",
   "title": "Queries Quality and Percentage",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 1688,
   "slug": "count-of-matches-in-tournament",
   "title": "Count of Matches in Tournament",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

@@ -4,11 +4,18 @@
   "id": 1499,
   "slug": "best-pair-score-within-k",
   "title": "Best Pair Score Within k",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Queue",
     "Sliding Window",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

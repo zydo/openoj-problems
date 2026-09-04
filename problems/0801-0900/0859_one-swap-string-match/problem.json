@@ -4,8 +4,12 @@
   "id": 859,
   "slug": "one-swap-string-match",
   "title": "One-Swap String Match",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

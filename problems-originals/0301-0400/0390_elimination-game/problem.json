@@ -4,8 +4,12 @@
   "id": 390,
   "slug": "elimination-game",
   "title": "Elimination Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Recursion"
   ],

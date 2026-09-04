@@ -4,11 +4,17 @@
   "id": 1858,
   "slug": "longest-prefix-complete-word",
   "title": "Longest Prefix-Complete Word",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Trie",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

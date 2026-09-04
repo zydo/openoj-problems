@@ -4,8 +4,12 @@
   "id": 1103,
   "slug": "distribute-candies-to-people",
   "title": "Distribute Candies to People",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

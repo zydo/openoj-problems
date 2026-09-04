@@ -4,8 +4,14 @@
   "id": 3632,
   "slug": "subarrays-with-xor-at-least-k",
   "title": "Subarrays with XOR at Least K",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Trie",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Trie",

@@ -4,12 +4,19 @@
   "id": 832,
   "slug": "mirror-invert-matrix",
   "title": "Mirror Invert Matrix",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Two Pointers",
     "Bit Manipulation",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Bit Manipulation",
+    "Matrix",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

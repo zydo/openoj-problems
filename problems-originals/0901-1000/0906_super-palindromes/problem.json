@@ -4,8 +4,13 @@
   "id": 906,
   "slug": "super-palindromes",
   "title": "Super Palindromes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "String",
     "Enumeration"

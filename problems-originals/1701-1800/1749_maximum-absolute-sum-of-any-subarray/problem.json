@@ -4,8 +4,12 @@
   "id": 1749,
   "slug": "maximum-absolute-sum-of-any-subarray",
   "title": "Maximum Absolute Sum of Any Subarray",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

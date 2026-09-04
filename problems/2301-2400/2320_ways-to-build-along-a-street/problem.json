@@ -4,8 +4,11 @@
   "id": 2320,
   "slug": "ways-to-build-along-a-street",
   "title": "Ways To Build Along A Street",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

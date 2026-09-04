@@ -3,8 +3,14 @@
   "id": 2156,
   "slug": "find-substring-with-given-hash-value",
   "title": "Find Substring With Given Hash Value",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Sliding Window",
+    "Rolling Hash",
+    "Hash Function"
+  ],
+  "topics": [
     "String",
     "Sliding Window",
     "Rolling Hash",

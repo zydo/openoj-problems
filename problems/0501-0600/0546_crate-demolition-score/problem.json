@@ -4,8 +4,13 @@
   "id": 546,
   "slug": "crate-demolition-score",
   "title": "Crate Demolition Score",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Memoization"

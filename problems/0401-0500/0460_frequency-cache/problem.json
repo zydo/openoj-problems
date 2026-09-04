@@ -4,10 +4,16 @@
   "id": 460,
   "slug": "frequency-cache",
   "title": "Frequency Cache",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
     "Doubly Linked List"
+  ],
+  "topics": [
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Doubly-Linked List"
   ],
   "invocation": {
     "type": "design",

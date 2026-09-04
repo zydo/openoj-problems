@@ -3,11 +3,19 @@
   "id": 886,
   "slug": "possible-bipartition",
   "title": "Possible Bipartition",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "BFS",
     "DFS"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Graph Coloring",
+    "Bipartite Graph"
   ],
   "invocation": {
     "type": "function",

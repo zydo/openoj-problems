@@ -4,8 +4,12 @@
   "id": 1579,
   "slug": "remove-max-number-of-edges-to-keep-graph-fully-traversable",
   "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Union-Find",
     "Graph Theory"
   ],

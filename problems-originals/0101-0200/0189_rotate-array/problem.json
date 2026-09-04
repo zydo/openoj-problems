@@ -4,8 +4,13 @@
   "id": 189,
   "slug": "rotate-array",
   "title": "Rotate Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers"

@@ -3,11 +3,17 @@
   "id": 2603,
   "slug": "collect-coins-in-a-tree",
   "title": "Collect Coins in a Tree",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Tree",
     "Graph",
+    "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Graph Theory",
     "Topological Sort"
   ],
   "invocation": {

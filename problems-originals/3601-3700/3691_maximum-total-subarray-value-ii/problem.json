@@ -4,8 +4,14 @@
   "id": 3691,
   "slug": "maximum-total-subarray-value-ii",
   "title": "Maximum Total Subarray Value II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Segment Tree",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Segment Tree",

@@ -4,9 +4,15 @@
   "id": 3855,
   "slug": "total-of-all-digit-strings",
   "title": "Total of All Digit Strings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "Divide and Conquer",
     "Combinatorics",
     "Number Theory"
   ],

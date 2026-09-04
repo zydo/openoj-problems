@@ -4,10 +4,15 @@
   "id": 2972,
   "slug": "cuts-that-leave-a-rising-array-ii",
   "title": "Cuts That Leave a Rising Array II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

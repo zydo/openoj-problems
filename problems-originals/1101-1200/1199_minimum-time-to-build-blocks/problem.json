@@ -4,8 +4,14 @@
   "id": 1199,
   "slug": "minimum-time-to-build-blocks",
   "title": "Minimum Time to Build Blocks",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

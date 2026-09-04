@@ -4,10 +4,13 @@
   "id": 3465,
   "slug": "serial-codes-in-the-catalog",
   "title": "Serial Codes In The Catalog",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

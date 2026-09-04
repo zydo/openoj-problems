@@ -4,8 +4,14 @@
   "id": 1604,
   "slug": "alert-using-same-key-card-three-or-more-times-in-a-one-hour-period",
   "title": "Alert Using Same Key-Card Three or More Times in a One Hour Period",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

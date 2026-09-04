@@ -4,8 +4,16 @@
   "id": 2941,
   "slug": "maximum-gcd-sum-of-a-subarray",
   "title": "Maximum GCD-Sum of a Subarray",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

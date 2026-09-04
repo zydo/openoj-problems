@@ -4,8 +4,11 @@
   "id": 2636,
   "slug": "promise-pool",
   "title": "Promise Pool",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Concurrency"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

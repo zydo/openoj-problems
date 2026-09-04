@@ -4,8 +4,12 @@
   "id": 2771,
   "slug": "a-rising-run-out-of-two-rows",
   "title": "A Rising Run Out Of Two Rows",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

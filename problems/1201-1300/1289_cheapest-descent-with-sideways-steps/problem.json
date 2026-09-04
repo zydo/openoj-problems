@@ -4,8 +4,13 @@
   "id": 1289,
   "slug": "cheapest-descent-with-sideways-steps",
   "title": "Cheapest Descent with Sideways Steps",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Matrix"
   ],

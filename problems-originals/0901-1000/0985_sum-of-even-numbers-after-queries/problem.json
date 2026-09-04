@@ -4,8 +4,12 @@
   "id": 985,
   "slug": "sum-of-even-numbers-after-queries",
   "title": "Sum of Even Numbers After Queries",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -4,8 +4,12 @@
   "id": 1528,
   "slug": "shuffle-string",
   "title": "Shuffle String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

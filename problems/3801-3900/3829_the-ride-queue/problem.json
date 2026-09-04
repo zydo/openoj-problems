@@ -4,11 +4,17 @@
   "id": 3829,
   "slug": "the-ride-queue",
   "title": "The Ride Queue",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Queue",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

@@ -4,8 +4,13 @@
   "id": 1801,
   "slug": "unfilled-orders-after-matching",
   "title": "Unfilled Orders After Matching",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Heap (Priority Queue)",
     "Simulation"

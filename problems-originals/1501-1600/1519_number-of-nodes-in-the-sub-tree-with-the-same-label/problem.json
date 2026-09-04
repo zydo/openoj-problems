@@ -4,8 +4,16 @@
   "id": 1519,
   "slug": "number-of-nodes-in-the-sub-tree-with-the-same-label",
   "title": "Number of Nodes in the Sub-Tree With the Same Label",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Counting",
+    "DP on Trees"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

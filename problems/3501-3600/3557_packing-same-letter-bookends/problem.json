@@ -4,9 +4,15 @@
   "id": 3557,
   "slug": "packing-same-letter-bookends",
   "title": "Packing Same-Letter Bookends",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Greedy"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 1473,
   "slug": "painting-the-block-iii",
   "title": "Painting the Block III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

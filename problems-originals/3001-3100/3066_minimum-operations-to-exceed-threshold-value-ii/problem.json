@@ -3,9 +3,14 @@
   "id": 3066,
   "slug": "minimum-operations-to-exceed-threshold-value-ii",
   "title": "Minimum Operations to Exceed Threshold Value II",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Heap (Priority Queue)",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

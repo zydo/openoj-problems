@@ -3,8 +3,11 @@
   "id": 576,
   "slug": "out-of-boundary-paths",
   "title": "Out of Boundary Paths",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

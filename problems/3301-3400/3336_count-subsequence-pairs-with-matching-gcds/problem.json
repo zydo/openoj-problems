@@ -4,12 +4,20 @@
   "id": 3336,
   "slug": "count-subsequence-pairs-with-matching-gcds",
   "title": "Count Subsequence Pairs with Matching GCDs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
   ],
   "invocation": {
     "type": "function",

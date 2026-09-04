@@ -4,8 +4,12 @@
   "id": 2698,
   "slug": "find-the-punishment-number-of-an-integer",
   "title": "Find the Punishment Number of an Integer",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Backtracking"
+  ],
+  "topics": [
     "Math",
     "Backtracking"
   ],

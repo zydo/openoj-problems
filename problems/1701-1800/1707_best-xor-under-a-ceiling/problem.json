@@ -4,11 +4,16 @@
   "id": 1707,
   "slug": "best-xor-under-a-ceiling",
   "title": "Best XOR Under a Ceiling",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Bit Manipulation",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

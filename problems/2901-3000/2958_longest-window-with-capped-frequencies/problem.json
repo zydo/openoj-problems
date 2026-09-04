@@ -4,8 +4,13 @@
   "id": 2958,
   "slug": "longest-window-with-capped-frequencies",
   "title": "Longest Window With Capped Frequencies",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

@@ -4,10 +4,17 @@
   "id": 3135,
   "slug": "trim-and-pad-until-equal",
   "title": "Trim and Pad Until Equal",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

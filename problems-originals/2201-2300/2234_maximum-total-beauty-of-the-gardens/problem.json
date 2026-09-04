@@ -4,8 +4,17 @@
   "id": 2234,
   "slug": "maximum-total-beauty-of-the-gardens",
   "title": "Maximum Total Beauty of the Gardens",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

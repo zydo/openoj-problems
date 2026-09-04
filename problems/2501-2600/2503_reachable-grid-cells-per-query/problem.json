@@ -4,12 +4,21 @@
   "id": 2503,
   "slug": "reachable-grid-cells-per-query",
   "title": "Reachable Grid Cells Per Query",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Matrix",
     "Heap",
     "Breadth-First Search",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Breadth-First Search",
+    "Union-Find",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

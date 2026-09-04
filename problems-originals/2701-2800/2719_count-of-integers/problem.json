@@ -3,9 +3,14 @@
   "id": 2719,
   "slug": "count-of-integers",
   "title": "Count of Integers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "String",
     "Dynamic Programming"
   ],
   "invocation": {

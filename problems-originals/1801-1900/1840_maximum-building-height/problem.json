@@ -4,8 +4,13 @@
   "id": 1840,
   "slug": "maximum-building-height",
   "title": "Maximum Building Height",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting"

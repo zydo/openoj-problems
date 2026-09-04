@@ -4,8 +4,15 @@
   "id": 1610,
   "slug": "maximum-number-of-visible-points",
   "title": "Maximum Number of Visible Points",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sliding Window",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

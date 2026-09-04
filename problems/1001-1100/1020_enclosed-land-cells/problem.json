@@ -4,11 +4,18 @@
   "id": 1020,
   "slug": "enclosed-land-cells",
   "title": "Enclosed Land Cells",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

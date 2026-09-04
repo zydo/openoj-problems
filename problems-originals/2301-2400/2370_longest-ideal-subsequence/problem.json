@@ -4,8 +4,13 @@
   "id": 2370,
   "slug": "longest-ideal-subsequence",
   "title": "Longest Ideal Subsequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming"

@@ -4,9 +4,14 @@
   "id": 3722,
   "slug": "the-smallest-string-one-reversal-can-make",
   "title": "The Smallest String One Reversal Can Make",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Enumeration"
+  ],
+  "topics": [
+    "Two Pointers",
+    "Binary Search",
     "Enumeration"
   ],
   "invocation": {

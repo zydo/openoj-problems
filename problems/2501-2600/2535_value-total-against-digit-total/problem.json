@@ -4,8 +4,12 @@
   "id": 2535,
   "slug": "value-total-against-digit-total",
   "title": "Value Total Against Digit Total",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

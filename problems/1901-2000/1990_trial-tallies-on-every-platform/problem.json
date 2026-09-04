@@ -4,10 +4,13 @@
   "id": 1990,
   "slug": "trial-tallies-on-every-platform",
   "title": "Trial Tallies on Every Platform",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

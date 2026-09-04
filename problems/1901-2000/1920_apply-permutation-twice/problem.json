@@ -4,8 +4,12 @@
   "id": 1920,
   "slug": "apply-permutation-twice",
   "title": "Apply a Permutation Twice",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

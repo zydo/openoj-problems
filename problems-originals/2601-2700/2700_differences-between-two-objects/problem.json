@@ -4,8 +4,11 @@
   "id": 2700,
   "slug": "differences-between-two-objects",
   "title": "Differences Between Two Objects",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Recursion"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

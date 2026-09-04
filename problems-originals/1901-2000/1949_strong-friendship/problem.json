@@ -4,8 +4,11 @@
   "id": 1949,
   "slug": "strong-friendship",
   "title": "Strong Friendship",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

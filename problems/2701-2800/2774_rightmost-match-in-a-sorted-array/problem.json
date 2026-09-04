@@ -4,9 +4,13 @@
   "id": 2774,
   "slug": "rightmost-match-in-a-sorted-array",
   "title": "Rightmost Match In A Sorted Array",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

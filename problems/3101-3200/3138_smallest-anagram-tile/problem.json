@@ -4,8 +4,13 @@
   "id": 3138,
   "slug": "smallest-anagram-tile",
   "title": "Smallest Anagram Tile",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Counting"
   ],

@@ -4,12 +4,18 @@
   "id": 3013,
   "slug": "least-cost-split-within-a-span",
   "title": "Least-Cost Split Within a Span",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Sliding Window",
     "Heap",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

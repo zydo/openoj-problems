@@ -4,8 +4,14 @@
   "id": 2367,
   "slug": "number-of-arithmetic-triplets",
   "title": "Number of Arithmetic Triplets",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

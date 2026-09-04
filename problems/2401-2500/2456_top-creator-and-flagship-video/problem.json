@@ -4,12 +4,19 @@
   "id": 2456,
   "slug": "top-creator-and-flagship-video",
   "title": "Top Creator and Flagship Video",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "String",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

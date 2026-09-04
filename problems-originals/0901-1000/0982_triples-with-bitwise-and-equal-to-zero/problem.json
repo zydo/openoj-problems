@@ -4,8 +4,13 @@
   "id": 982,
   "slug": "triples-with-bitwise-and-equal-to-zero",
   "title": "Triples with Bitwise AND Equal To Zero",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Bit Manipulation"

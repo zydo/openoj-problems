@@ -4,8 +4,12 @@
   "id": 2903,
   "slug": "a-pair-apart-in-place-and-value-i",
   "title": "A Pair Apart In Place And Value I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

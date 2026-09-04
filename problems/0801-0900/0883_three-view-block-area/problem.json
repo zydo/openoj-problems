@@ -4,8 +4,14 @@
   "id": 883,
   "slug": "three-view-block-area",
   "title": "Three-View Block Area",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

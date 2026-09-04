@@ -4,8 +4,15 @@
   "id": 1311,
   "slug": "videos-by-level-k-friends",
   "title": "Videos by Level-K Friends",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
     "Hash Table",
     "Breadth-First Search",
     "Graph Theory",

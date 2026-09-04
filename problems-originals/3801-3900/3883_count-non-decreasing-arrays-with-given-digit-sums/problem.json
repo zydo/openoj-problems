@@ -4,8 +4,13 @@
   "id": 3883,
   "slug": "count-non-decreasing-arrays-with-given-digit-sums",
   "title": "Count Non Decreasing Arrays With Given Digit Sums",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

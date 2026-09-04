@@ -4,11 +4,17 @@
   "id": 1462,
   "slug": "course-prerequisite-queries",
   "title": "Course Prerequisite Queries",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Topological Sort",
     "DFS"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort"
   ],
   "invocation": {
     "type": "function",

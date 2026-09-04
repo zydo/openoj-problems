@@ -4,11 +4,18 @@
   "id": 3630,
   "slug": "best-three-way-bit-split",
   "title": "Best Three-Way Bit Split",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Bit Manipulation",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Bit Manipulation",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

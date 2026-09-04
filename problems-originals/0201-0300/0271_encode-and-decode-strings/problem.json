@@ -4,8 +4,13 @@
   "id": 271,
   "slug": "encode-and-decode-strings",
   "title": "Encode and Decode Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Design"
+  ],
+  "topics": [
     "Array",
     "String",
     "Design"

@@ -4,8 +4,16 @@
   "id": 2297,
   "slug": "jump-game-viii-crawl",
   "title": "Jump Game VIII",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Graph Theory",
+    "Monotonic Stack",
+    "Shortest Path"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Stack",

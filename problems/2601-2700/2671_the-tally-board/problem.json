@@ -4,8 +4,12 @@
   "id": 2671,
   "slug": "the-tally-board",
   "title": "The Tally Board",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design"
+  ],
+  "topics": [
     "Hash Table",
     "Design"
   ],

@@ -4,8 +4,13 @@
   "id": 1608,
   "slug": "special-array-with-x-elements-greater-than-or-equal-x",
   "title": "Special Array With X Elements Greater Than or Equal X",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

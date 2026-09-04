@@ -4,8 +4,12 @@
   "id": 806,
   "slug": "pixel-text-wrap",
   "title": "Pixel Text Wrap",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

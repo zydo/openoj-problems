@@ -4,8 +4,12 @@
   "id": 1206,
   "slug": "tiered-skip-list",
   "title": "Tiered Skip List",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Linked List",
+    "Design"
+  ],
+  "topics": [
     "Linked List",
     "Design"
   ],

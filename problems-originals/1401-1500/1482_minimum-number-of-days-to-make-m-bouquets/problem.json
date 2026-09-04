@@ -3,10 +3,14 @@
   "id": 1482,
   "slug": "minimum-number-of-days-to-make-m-bouquets",
   "title": "Minimum Number of Days to Make m Bouquets",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

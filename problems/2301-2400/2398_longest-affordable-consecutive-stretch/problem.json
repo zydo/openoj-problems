@@ -4,8 +4,17 @@
   "id": 2398,
   "slug": "longest-affordable-consecutive-stretch",
   "title": "Longest Affordable Consecutive Stretch",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Queue",

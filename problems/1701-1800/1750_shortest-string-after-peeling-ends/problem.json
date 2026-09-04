@@ -4,8 +4,12 @@
   "id": 1750,
   "slug": "shortest-string-after-peeling-ends",
   "title": "Shortest String After Peeling Ends",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

@@ -4,8 +4,12 @@
   "id": 1662,
   "slug": "same-word-from-string-fragments",
   "title": "Same Word From String Fragments",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

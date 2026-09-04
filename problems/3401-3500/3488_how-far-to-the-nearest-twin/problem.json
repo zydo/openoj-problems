@@ -4,8 +4,13 @@
   "id": 3488,
   "slug": "how-far-to-the-nearest-twin",
   "title": "How Far To The Nearest Twin",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search"

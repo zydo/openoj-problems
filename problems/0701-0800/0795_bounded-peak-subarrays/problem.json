@@ -4,10 +4,14 @@
   "id": 795,
   "slug": "bounded-peak-subarrays",
   "title": "Bounded Peak Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers"
   ],
   "invocation": {
     "type": "function",

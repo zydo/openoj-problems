@@ -4,10 +4,19 @@
   "id": 3507,
   "slug": "merge-the-smallest-pair-i",
   "title": "Merge the Smallest Pair I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Heap (Priority Queue)",
+    "Simulation",
+    "Doubly-Linked List",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

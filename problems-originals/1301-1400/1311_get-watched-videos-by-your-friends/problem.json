@@ -4,8 +4,15 @@
   "id": 1311,
   "slug": "get-watched-videos-by-your-friends",
   "title": "Get Watched Videos by Your Friends",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Breadth-First Search",

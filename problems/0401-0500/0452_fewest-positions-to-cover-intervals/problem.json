@@ -4,8 +4,13 @@
   "id": 452,
   "slug": "fewest-positions-to-cover-intervals",
   "title": "Fewest Positions To Cover Intervals",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

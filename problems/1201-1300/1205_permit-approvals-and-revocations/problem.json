@@ -4,10 +4,13 @@
   "id": 1205,
   "slug": "permit-approvals-and-revocations",
   "title": "Permit Approvals and Revocations",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

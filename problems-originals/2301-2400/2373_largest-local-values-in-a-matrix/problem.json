@@ -4,8 +4,12 @@
   "id": 2373,
   "slug": "largest-local-values-in-a-matrix",
   "title": "Largest Local Values in a Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

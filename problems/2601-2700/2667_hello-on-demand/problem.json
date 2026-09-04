@@ -4,9 +4,12 @@
   "id": 2667,
   "slug": "hello-on-demand",
   "title": "Hello On Demand",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

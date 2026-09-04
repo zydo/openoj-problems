@@ -4,8 +4,16 @@
   "id": 1122,
   "slug": "relative-sort-array",
   "title": "Relative Sort Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting Sort",
+    "Quicksort",
+    "Bubble Sort"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

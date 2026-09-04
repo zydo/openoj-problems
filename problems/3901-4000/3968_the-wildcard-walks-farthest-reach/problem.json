@@ -4,8 +4,13 @@
   "id": 3968,
   "slug": "the-wildcard-walks-farthest-reach",
   "title": "The Wildcard Walk's Farthest Reach",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Math",
     "String",
     "Counting"

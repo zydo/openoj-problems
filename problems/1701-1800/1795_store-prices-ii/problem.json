@@ -4,10 +4,13 @@
   "id": 1795,
   "slug": "store-prices-ii",
   "title": "Store Prices II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

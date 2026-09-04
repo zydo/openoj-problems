@@ -4,8 +4,13 @@
   "id": 103,
   "slug": "binary-tree-zigzag-level-order-traversal",
   "title": "Binary Tree Zigzag Level Order Traversal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

@@ -4,8 +4,12 @@
   "id": 467,
   "slug": "unique-substrings-in-wraparound-string",
   "title": "Unique Substrings in Wraparound String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

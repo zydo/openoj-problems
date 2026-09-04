@@ -3,8 +3,13 @@
   "id": 1063,
   "slug": "number-of-valid-subarrays",
   "title": "Number of Valid Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

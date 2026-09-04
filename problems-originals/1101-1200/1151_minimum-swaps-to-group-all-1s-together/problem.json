@@ -3,11 +3,15 @@
   "id": 1151,
   "slug": "minimum-swaps-to-group-all-1s-together",
   "title": "Minimum Swaps to Group All 1's Together",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sliding Window",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

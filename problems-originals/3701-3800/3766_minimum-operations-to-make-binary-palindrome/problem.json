@@ -4,8 +4,14 @@
   "id": 3766,
   "slug": "minimum-operations-to-make-binary-palindrome",
   "title": "Minimum Operations to Make Binary Palindrome",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

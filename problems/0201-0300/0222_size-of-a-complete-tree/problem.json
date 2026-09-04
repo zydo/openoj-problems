@@ -4,11 +4,17 @@
   "id": 222,
   "slug": "size-of-a-complete-tree",
   "title": "Size Of A Complete Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Tree",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Binary Search",
+    "Bit Manipulation",
+    "Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 2500,
   "slug": "delete-greatest-value-in-each-row",
   "title": "Delete Greatest Value in Each Row",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)",

@@ -4,8 +4,13 @@
   "id": 3902,
   "slug": "alternating-level-sums",
   "title": "Alternating Level Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

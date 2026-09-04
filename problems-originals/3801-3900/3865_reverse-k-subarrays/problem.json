@@ -4,8 +4,12 @@
   "id": 3865,
   "slug": "reverse-k-subarrays",
   "title": "Reverse K Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

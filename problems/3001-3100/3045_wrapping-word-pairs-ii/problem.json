@@ -4,11 +4,20 @@
   "id": 3045,
   "slug": "wrapping-word-pairs-ii",
   "title": "Wrapping Word Pairs II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Trie",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function",
+    "Z Algorithm"
   ],
   "invocation": {
     "type": "function",

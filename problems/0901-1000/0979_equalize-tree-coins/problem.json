@@ -4,12 +4,18 @@
   "id": 979,
   "slug": "equalize-tree-coins",
   "title": "Equalize Tree Coins",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree DP",
     "Tree",
     "Binary Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

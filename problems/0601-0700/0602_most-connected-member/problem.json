@@ -4,10 +4,13 @@
   "id": 602,
   "slug": "most-connected-member",
   "title": "Most Connected Member",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

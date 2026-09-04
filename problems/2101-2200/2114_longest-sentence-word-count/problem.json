@@ -4,8 +4,12 @@
   "id": 2114,
   "slug": "longest-sentence-word-count",
   "title": "Longest Sentence Word Count",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

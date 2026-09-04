@@ -4,8 +4,14 @@
   "id": 3891,
   "slug": "minimum-increase-to-maximize-special-indices",
   "title": "Minimum Increase to Maximize Special Indices",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy",

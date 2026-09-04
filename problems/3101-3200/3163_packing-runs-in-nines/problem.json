@@ -4,8 +4,11 @@
   "id": 3163,
   "slug": "packing-runs-in-nines",
   "title": "Packing Runs in Nines",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

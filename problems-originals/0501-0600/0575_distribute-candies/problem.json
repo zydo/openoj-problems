@@ -4,8 +4,12 @@
   "id": 575,
   "slug": "distribute-candies",
   "title": "Distribute Candies",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

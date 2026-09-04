@@ -4,8 +4,13 @@
   "id": 2661,
   "slug": "first-line-to-fill",
   "title": "First Line to Fill",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix"

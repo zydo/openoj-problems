@@ -4,8 +4,13 @@
   "id": 856,
   "slug": "score-of-parentheses",
   "title": "Score of Parentheses",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Bracket Sequences"

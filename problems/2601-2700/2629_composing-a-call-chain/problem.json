@@ -4,10 +4,13 @@
   "id": 2629,
   "slug": "composing-a-call-chain",
   "title": "Composing A Call Chain",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

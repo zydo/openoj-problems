@@ -4,8 +4,14 @@
   "id": 3890,
   "slug": "integers-with-multiple-sum-of-two-cubes",
   "title": "Integers With Multiple Sum of Two Cubes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Sorting",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
     "Hash Table",
     "Sorting",
     "Counting",

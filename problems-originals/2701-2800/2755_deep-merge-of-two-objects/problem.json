@@ -4,10 +4,14 @@
   "id": 2755,
   "slug": "deep-merge-of-two-objects",
   "title": "Deep Merge of Two Objects",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Recursion",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

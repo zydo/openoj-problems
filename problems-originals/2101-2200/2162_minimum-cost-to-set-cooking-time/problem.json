@@ -4,8 +4,12 @@
   "id": 2162,
   "slug": "minimum-cost-to-set-cooking-time",
   "title": "Minimum Cost to Set Cooking Time",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

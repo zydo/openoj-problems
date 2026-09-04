@@ -4,8 +4,12 @@
   "id": 2776,
   "slug": "convert-callback-based-function-to-promise-based-function",
   "title": "Convert Callback Based Function to Promise Based Function",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Concurrency",
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

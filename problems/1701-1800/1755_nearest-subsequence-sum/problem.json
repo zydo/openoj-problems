@@ -4,12 +4,21 @@
   "id": 1755,
   "slug": "nearest-subsequence-sum",
   "title": "Nearest Subsequence Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Two Pointers",
     "Meet in the Middle",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Meet in the Middle",
+    "Sorting",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 1544,
   "slug": "strip-conflicting-case-pairs",
   "title": "Strip Conflicting Case Pairs",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack"
+  ],
+  "topics": [
     "String",
     "Stack"
   ],

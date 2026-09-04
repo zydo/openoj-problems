@@ -4,8 +4,11 @@
   "id": 2119,
   "slug": "a-number-after-a-double-reversal",
   "title": "A Number After a Double Reversal",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

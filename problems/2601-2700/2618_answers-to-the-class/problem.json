@@ -4,9 +4,12 @@
   "id": 2618,
   "slug": "answers-to-the-class",
   "title": "Answers To The Class",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

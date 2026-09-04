@@ -4,8 +4,12 @@
   "id": 2319,
   "slug": "check-if-matrix-is-x-matrix",
   "title": "Check if Matrix Is X-Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

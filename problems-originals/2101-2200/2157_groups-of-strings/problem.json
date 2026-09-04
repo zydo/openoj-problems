@@ -3,11 +3,18 @@
   "id": 2157,
   "slug": "groups-of-strings",
   "title": "Groups of Strings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Union-Find",
     "Bit Manipulation",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

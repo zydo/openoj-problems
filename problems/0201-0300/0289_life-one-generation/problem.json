@@ -4,8 +4,13 @@
   "id": 289,
   "slug": "life-one-generation",
   "title": "Life, One Generation",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

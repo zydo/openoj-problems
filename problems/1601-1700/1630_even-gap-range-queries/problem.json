@@ -4,8 +4,13 @@
   "id": 1630,
   "slug": "even-gap-range-queries",
   "title": "Even-Gap Range Queries",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

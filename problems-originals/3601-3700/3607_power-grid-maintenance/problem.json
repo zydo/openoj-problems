@@ -4,8 +4,18 @@
   "id": 3607,
   "slug": "power-grid-maintenance",
   "title": "Power Grid Maintenance",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Depth-First Search",

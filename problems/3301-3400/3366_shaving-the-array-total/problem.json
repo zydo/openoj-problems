@@ -4,8 +4,12 @@
   "id": 3366,
   "slug": "shaving-the-array-total",
   "title": "Shaving the Array Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

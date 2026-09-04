@@ -4,8 +4,11 @@
   "id": 196,
   "slug": "delete-duplicate-emails",
   "title": "Delete Duplicate Emails",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

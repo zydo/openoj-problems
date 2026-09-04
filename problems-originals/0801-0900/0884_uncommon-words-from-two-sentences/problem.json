@@ -4,8 +4,13 @@
   "id": 884,
   "slug": "uncommon-words-from-two-sentences",
   "title": "Uncommon Words from Two Sentences",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

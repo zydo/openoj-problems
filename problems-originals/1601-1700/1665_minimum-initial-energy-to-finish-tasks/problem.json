@@ -3,8 +3,13 @@
   "id": 1665,
   "slug": "minimum-initial-energy-to-finish-tasks",
   "title": "Minimum Initial Energy to Finish Tasks",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

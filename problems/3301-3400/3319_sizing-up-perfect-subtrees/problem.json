@@ -4,8 +4,14 @@
   "id": 3319,
   "slug": "sizing-up-perfect-subtrees",
   "title": "Sizing Up Perfect Subtrees",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Sorting",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Sorting",

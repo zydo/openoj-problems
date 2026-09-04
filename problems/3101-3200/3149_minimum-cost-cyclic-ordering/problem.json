@@ -4,10 +4,16 @@
   "id": 3149,
   "slug": "minimum-cost-cyclic-ordering",
   "title": "Minimum-Cost Cyclic Ordering",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Bitmask DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

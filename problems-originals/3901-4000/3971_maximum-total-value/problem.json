@@ -4,8 +4,14 @@
   "id": 3971,
   "slug": "maximum-total-value",
   "title": "Maximum Total Value",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

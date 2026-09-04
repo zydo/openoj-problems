@@ -4,8 +4,14 @@
   "id": 2170,
   "slug": "minimum-operations-to-make-the-array-alternating",
   "title": "Minimum Operations to Make the Array Alternating",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

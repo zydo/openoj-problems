@@ -4,8 +4,15 @@
   "id": 3316,
   "slug": "find-maximum-removals-from-source-string",
   "title": "Find Maximum Removals From Source String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

@@ -4,8 +4,13 @@
   "id": 3184,
   "slug": "counting-whole-day-pairs-i",
   "title": "Counting Whole-Day Pairs I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

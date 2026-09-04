@@ -4,8 +4,15 @@
   "id": 1337,
   "slug": "the-k-weakest-rows-in-a-matrix",
   "title": "The K Weakest Rows in a Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting",

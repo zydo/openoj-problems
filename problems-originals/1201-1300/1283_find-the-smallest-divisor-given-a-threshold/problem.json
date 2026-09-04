@@ -3,8 +3,12 @@
   "id": 1283,
   "slug": "find-the-smallest-divisor-given-a-threshold",
   "title": "Find the Smallest Divisor Given a Threshold",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Binary Search"
+  ],
+  "topics": [
+    "Array",
     "Binary Search"
   ],
   "invocation": {

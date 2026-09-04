@@ -4,8 +4,13 @@
   "id": 1298,
   "slug": "maximum-candies-you-can-get-from-boxes",
   "title": "Maximum Candies You Can Get from Boxes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Graph Theory"

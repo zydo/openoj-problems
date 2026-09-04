@@ -4,10 +4,15 @@
   "id": 3211,
   "slug": "zeros-kept-apart",
   "title": "Zeros Kept Apart",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Backtracking"
+  ],
+  "topics": [
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

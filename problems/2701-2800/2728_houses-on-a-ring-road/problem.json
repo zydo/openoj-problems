@@ -4,8 +4,12 @@
   "id": 2728,
   "slug": "houses-on-a-ring-road",
   "title": "Houses On A Ring Road",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Interactive"
+  ],
+  "topics": [
     "Array",
     "Interactive"
   ],

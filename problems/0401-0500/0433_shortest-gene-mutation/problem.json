@@ -4,8 +4,14 @@
   "id": 433,
   "slug": "shortest-gene-mutation",
   "title": "Shortest Gene Mutation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search",
+    "Bidirectional Search"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Breadth-First Search",

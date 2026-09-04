@@ -4,8 +4,11 @@
   "id": 576,
   "slug": "grid-exit-walk-count",
   "title": "Grid Exit Walk Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

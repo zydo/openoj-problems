@@ -4,8 +4,11 @@
   "id": 328,
   "slug": "index-parity-list-grouping",
   "title": "Index Parity List Grouping",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

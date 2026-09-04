@@ -4,8 +4,12 @@
   "id": 1935,
   "slug": "typing-around-broken-keys",
   "title": "Typing Around Broken Keys",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

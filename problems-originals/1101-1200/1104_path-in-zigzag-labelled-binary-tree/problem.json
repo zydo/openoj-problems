@@ -4,8 +4,13 @@
   "id": 1104,
   "slug": "path-in-zigzag-labelled-binary-tree",
   "title": "Path In Zigzag Labelled Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Math",
     "Tree",
     "Binary Tree"

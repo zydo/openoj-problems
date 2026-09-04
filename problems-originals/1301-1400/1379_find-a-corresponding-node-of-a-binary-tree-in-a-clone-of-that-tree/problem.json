@@ -4,10 +4,16 @@
   "id": 1379,
   "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
   "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
     "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Binary Tree"
   ],
   "invocation": {

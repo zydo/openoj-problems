@@ -4,8 +4,11 @@
   "id": 3110,
   "slug": "score-of-a-string",
   "title": "Score of a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

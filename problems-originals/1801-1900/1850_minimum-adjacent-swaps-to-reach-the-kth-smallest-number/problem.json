@@ -4,8 +4,13 @@
   "id": 1850,
   "slug": "minimum-adjacent-swaps-to-reach-the-kth-smallest-number",
   "title": "Minimum Adjacent Swaps to Reach the Kth Smallest Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Greedy"

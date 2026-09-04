@@ -4,8 +4,14 @@
   "id": 936,
   "slug": "stamp-reconstruction",
   "title": "Stamp Reconstruction",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Stack",
+    "Greedy",
+    "Queue"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Greedy",

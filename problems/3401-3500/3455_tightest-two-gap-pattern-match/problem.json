@@ -4,10 +4,16 @@
   "id": 3455,
   "slug": "tightest-two-gap-pattern-match",
   "title": "Tightest Two-Gap Pattern Match",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Z Algorithm"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "String Matching"
   ],
   "invocation": {
     "type": "function",

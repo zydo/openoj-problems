@@ -4,8 +4,13 @@
   "id": 3897,
   "slug": "maximum-value-of-concatenated-binary-segments",
   "title": "Maximum Value of Concatenated Binary Segments",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

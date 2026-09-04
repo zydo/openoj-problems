@@ -4,8 +4,12 @@
   "id": 722,
   "slug": "remove-comments",
   "title": "Remove Comments",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

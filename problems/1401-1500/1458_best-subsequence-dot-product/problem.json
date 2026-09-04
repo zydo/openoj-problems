@@ -4,10 +4,15 @@
   "id": 1458,
   "slug": "best-subsequence-dot-product",
   "title": "Best Subsequence Dot Product",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
   ],
   "invocation": {
     "type": "function",

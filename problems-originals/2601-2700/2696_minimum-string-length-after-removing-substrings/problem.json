@@ -4,8 +4,13 @@
   "id": 2696,
   "slug": "minimum-string-length-after-removing-substrings",
   "title": "Minimum String Length After Removing Substrings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

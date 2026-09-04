@@ -4,8 +4,15 @@
   "id": 391,
   "slug": "perfect-rectangle",
   "title": "Perfect Rectangle",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Geometry",
+    "Sweep Line"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

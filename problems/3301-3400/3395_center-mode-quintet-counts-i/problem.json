@@ -4,12 +4,18 @@
   "id": 3395,
   "slug": "center-mode-quintet-counts-i",
   "title": "Center-Mode Quintet Counts I",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Combinatorics",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics"
   ],
   "invocation": {
     "type": "function",

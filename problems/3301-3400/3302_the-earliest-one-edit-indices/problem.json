@@ -4,8 +4,14 @@
   "id": 3302,
   "slug": "the-earliest-one-edit-indices",
   "title": "The Earliest One-Edit Indices",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Dynamic Programming",

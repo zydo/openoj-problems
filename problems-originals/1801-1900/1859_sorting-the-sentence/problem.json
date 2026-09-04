@@ -4,10 +4,15 @@
   "id": 1859,
   "slug": "sorting-the-sentence",
   "title": "Sorting the Sentence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Sorting"
+  ],
+  "topics": [
+    "String",
+    "Sorting",
+    "Bubble Sort"
   ],
   "invocation": {
     "type": "function",

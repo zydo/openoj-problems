@@ -3,10 +3,15 @@
   "id": 1024,
   "slug": "video-stitching",
   "title": "Video Stitching",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

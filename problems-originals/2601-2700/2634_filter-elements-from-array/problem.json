@@ -4,8 +4,11 @@
   "id": 2634,
   "slug": "filter-elements-from-array",
   "title": "Filter Elements from Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

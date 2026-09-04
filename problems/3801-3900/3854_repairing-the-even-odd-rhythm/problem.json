@@ -4,8 +4,12 @@
   "id": 3854,
   "slug": "repairing-the-even-odd-rhythm",
   "title": "Repairing The Even-Odd Rhythm",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

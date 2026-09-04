@@ -4,8 +4,12 @@
   "id": 3819,
   "slug": "only-the-non-negatives-spin",
   "title": "Only The Non-Negatives Spin",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

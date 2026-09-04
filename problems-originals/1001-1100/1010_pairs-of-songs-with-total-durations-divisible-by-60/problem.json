@@ -3,8 +3,13 @@
   "id": 1010,
   "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
   "title": "Pairs of Songs With Total Durations Divisible by 60",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

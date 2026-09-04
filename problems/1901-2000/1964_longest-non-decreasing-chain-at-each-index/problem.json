@@ -4,11 +4,17 @@
   "id": 1964,
   "slug": "longest-non-decreasing-chain-at-each-index",
   "title": "Longest Non-Decreasing Chain at Each Index",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Binary Indexed Tree",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

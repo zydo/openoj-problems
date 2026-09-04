@@ -4,8 +4,16 @@
   "id": 3279,
   "slug": "maximum-total-area-occupied-by-pistons",
   "title": "Maximum Total Area Occupied by Pistons",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Simulation",
+    "Counting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

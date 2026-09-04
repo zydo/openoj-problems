@@ -4,8 +4,12 @@
   "id": 3069,
   "slug": "dealing-into-two-growing-piles-i",
   "title": "Dealing Into Two Growing Piles I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

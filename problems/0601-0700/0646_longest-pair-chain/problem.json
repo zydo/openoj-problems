@@ -4,10 +4,17 @@
   "id": 646,
   "slug": "longest-pair-chain",
   "title": "Longest Pair Chain",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Sorting",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

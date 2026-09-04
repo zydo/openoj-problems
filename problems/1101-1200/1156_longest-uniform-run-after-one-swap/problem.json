@@ -4,12 +4,17 @@
   "id": 1156,
   "slug": "longest-uniform-run-after-one-swap",
   "title": "Longest Uniform Run After One Swap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Two Pointers",
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

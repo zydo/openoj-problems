@@ -4,12 +4,17 @@
   "id": 3807,
   "slug": "smallest-clearing-budget-for-a-short-route",
   "title": "Smallest Clearing Budget for a Short Route",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "BFS",
     "Shortest Path",
     "Graph"
+  ],
+  "topics": [
+    "Binary Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 77,
   "slug": "choose-k-from-n",
   "title": "Choose K From N",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Backtracking"
+  ],
+  "topics": [
     "Backtracking"
   ],
   "invocation": {

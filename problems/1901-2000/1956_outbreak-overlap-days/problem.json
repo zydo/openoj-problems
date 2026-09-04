@@ -4,11 +4,20 @@
   "id": 1956,
   "slug": "outbreak-overlap-days",
   "title": "Outbreak Overlap Days",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Geometry",
     "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Geometry",
+    "Sliding Window",
+    "Enumeration",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

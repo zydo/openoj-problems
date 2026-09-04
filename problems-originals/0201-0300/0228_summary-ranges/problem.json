@@ -4,8 +4,11 @@
   "id": 228,
   "slug": "summary-ranges",
   "title": "Summary Ranges",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

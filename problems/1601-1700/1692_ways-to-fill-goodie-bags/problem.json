@@ -4,8 +4,11 @@
   "id": 1692,
   "slug": "ways-to-fill-goodie-bags",
   "title": "Ways to Fill Goodie Bags",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

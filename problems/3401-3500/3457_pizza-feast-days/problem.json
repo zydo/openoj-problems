@@ -4,8 +4,13 @@
   "id": 3457,
   "slug": "pizza-feast-days",
   "title": "Pizza Feast Days",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

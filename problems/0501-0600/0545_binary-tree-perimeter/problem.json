@@ -4,8 +4,13 @@
   "id": 545,
   "slug": "binary-tree-perimeter",
   "title": "Binary Tree Perimeter",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

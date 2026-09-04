@@ -4,8 +4,12 @@
   "id": 1816,
   "slug": "truncate-sentence",
   "title": "Truncate Sentence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

@@ -4,8 +4,13 @@
   "id": 1167,
   "slug": "least-cost-to-merge-the-lengths",
   "title": "Least Cost to Merge the Lengths",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Heap (Priority Queue)"

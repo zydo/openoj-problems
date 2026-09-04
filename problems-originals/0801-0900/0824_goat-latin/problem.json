@@ -4,8 +4,11 @@
   "id": 824,
   "slug": "goat-latin",
   "title": "Goat Latin",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -3,10 +3,16 @@
   "id": 901,
   "slug": "online-stock-span",
   "title": "Online Stock Span",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Monotonic Stack",
     "Stack"
+  ],
+  "topics": [
+    "Stack",
+    "Design",
+    "Monotonic Stack",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

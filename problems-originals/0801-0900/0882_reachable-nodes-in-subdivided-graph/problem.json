@@ -3,11 +3,17 @@
   "id": 882,
   "slug": "reachable-nodes-in-subdivided-graph",
   "title": "Reachable Nodes In Subdivided Graph",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Shortest Path",
     "Graph",
     "Heap"
+  ],
+  "topics": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

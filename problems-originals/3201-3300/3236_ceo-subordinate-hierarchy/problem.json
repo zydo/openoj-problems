@@ -4,8 +4,11 @@
   "id": 3236,
   "slug": "ceo-subordinate-hierarchy",
   "title": "CEO Subordinate Hierarchy",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

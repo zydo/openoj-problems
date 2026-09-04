@@ -4,8 +4,14 @@
   "id": 1169,
   "slug": "invalid-transactions",
   "title": "Invalid Transactions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

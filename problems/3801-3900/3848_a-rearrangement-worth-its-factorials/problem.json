@@ -4,8 +4,12 @@
   "id": 3848,
   "slug": "a-rearrangement-worth-its-factorials",
   "title": "A Rearrangement Worth Its Factorials",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Math",
     "Counting"
   ],

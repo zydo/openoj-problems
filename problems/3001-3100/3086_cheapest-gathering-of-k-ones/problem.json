@@ -4,12 +4,18 @@
   "id": 3086,
   "slug": "cheapest-gathering-of-k-ones",
   "title": "Cheapest Gathering of K Ones",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Prefix Sum",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

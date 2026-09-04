@@ -4,8 +4,11 @@
   "id": 3214,
   "slug": "year-on-year-growth-rate",
   "title": "Year on Year Growth Rate",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

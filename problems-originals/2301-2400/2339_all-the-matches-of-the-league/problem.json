@@ -4,8 +4,11 @@
   "id": 2339,
   "slug": "all-the-matches-of-the-league",
   "title": "All the Matches of the League",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

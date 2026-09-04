@@ -4,8 +4,12 @@
   "id": 165,
   "slug": "compare-version-numbers",
   "title": "Compare Version Numbers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

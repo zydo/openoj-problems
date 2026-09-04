@@ -4,11 +4,17 @@
   "id": 1657,
   "slug": "interchangeable-words",
   "title": "Interchangeable Words",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Counting",
     "Sorting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

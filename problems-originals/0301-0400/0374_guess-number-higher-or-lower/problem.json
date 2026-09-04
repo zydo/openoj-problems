@@ -4,8 +4,12 @@
   "id": 374,
   "slug": "guess-number-higher-or-lower",
   "title": "Guess Number Higher or Lower",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Binary Search",
+    "Interactive"
+  ],
+  "topics": [
     "Binary Search",
     "Interactive"
   ],

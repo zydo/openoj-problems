@@ -4,8 +4,11 @@
   "id": 2884,
   "slug": "modify-columns",
   "title": "Modify Columns",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

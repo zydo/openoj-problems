@@ -4,8 +4,13 @@
   "id": 2784,
   "slug": "check-if-array-is-good",
   "title": "Check if Array is Good",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

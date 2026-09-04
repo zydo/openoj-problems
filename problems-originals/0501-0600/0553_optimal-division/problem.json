@@ -4,8 +4,13 @@
   "id": 553,
   "slug": "optimal-division",
   "title": "Optimal Division",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming"

@@ -4,8 +4,14 @@
   "id": 3281,
   "slug": "widest-gap-choosing-one-point-per-interval",
   "title": "Widest Gap Choosing One Point Per Interval",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

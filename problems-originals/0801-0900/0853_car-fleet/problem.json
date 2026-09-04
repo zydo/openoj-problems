@@ -3,8 +3,14 @@
   "id": 853,
   "slug": "car-fleet",
   "title": "Car Fleet",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Sorting",

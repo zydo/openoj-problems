@@ -4,10 +4,14 @@
   "id": 52,
   "slug": "queen-layouts-ii",
   "title": "Queen Layouts II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Backtracking"
+  ],
+  "topics": [
+    "Backtracking",
+    "Algorithm X"
   ],
   "invocation": {
     "type": "function",

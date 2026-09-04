@@ -4,8 +4,11 @@
   "id": 1613,
   "slug": "find-the-missing-ids",
   "title": "Find the Missing IDs",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

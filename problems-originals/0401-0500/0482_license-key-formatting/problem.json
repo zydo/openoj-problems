@@ -4,8 +4,11 @@
   "id": 482,
   "slug": "license-key-formatting",
   "title": "License Key Formatting",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

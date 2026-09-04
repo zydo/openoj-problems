@@ -4,8 +4,14 @@
   "id": 2195,
   "slug": "append-k-integers-with-minimal-sum",
   "title": "Append K Integers With Minimal Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

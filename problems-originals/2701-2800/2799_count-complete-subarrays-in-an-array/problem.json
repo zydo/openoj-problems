@@ -4,8 +4,13 @@
   "id": 2799,
   "slug": "count-complete-subarrays-in-an-array",
   "title": "Count Complete Subarrays in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

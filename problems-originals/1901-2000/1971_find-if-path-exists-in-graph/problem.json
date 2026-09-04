@@ -4,8 +4,14 @@
   "id": 1971,
   "slug": "find-if-path-exists-in-graph",
   "title": "Find if Path Exists in Graph",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
+  ],
+  "topics": [
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

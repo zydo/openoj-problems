@@ -4,8 +4,15 @@
   "id": 2227,
   "slug": "encrypt-and-decrypt-strings",
   "title": "Encrypt and Decrypt Strings",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

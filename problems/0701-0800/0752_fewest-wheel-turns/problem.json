@@ -4,11 +4,18 @@
   "id": 752,
   "slug": "fewest-wheel-turns",
   "title": "Fewest Wheel Turns",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Breadth-First Search",
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Breadth-First Search",
+    "Bidirectional Search"
   ],
   "invocation": {
     "type": "function",

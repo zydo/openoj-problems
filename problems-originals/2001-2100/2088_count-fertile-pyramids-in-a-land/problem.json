@@ -4,8 +4,13 @@
   "id": 2088,
   "slug": "count-fertile-pyramids-in-a-land",
   "title": "Count Fertile Pyramids in a Land",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

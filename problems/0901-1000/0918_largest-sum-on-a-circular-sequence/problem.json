@@ -4,12 +4,19 @@
   "id": 918,
   "slug": "largest-sum-on-a-circular-sequence",
   "title": "Largest Sum on a Circular Sequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Greedy",
     "Array",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Queue",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

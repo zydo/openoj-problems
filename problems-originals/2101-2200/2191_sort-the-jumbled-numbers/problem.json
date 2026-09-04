@@ -4,8 +4,12 @@
   "id": 2191,
   "slug": "sort-the-jumbled-numbers",
   "title": "Sort the Jumbled Numbers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

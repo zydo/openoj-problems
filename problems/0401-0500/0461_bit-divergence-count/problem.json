@@ -4,8 +4,11 @@
   "id": 461,
   "slug": "bit-divergence-count",
   "title": "Bit Divergence Count",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

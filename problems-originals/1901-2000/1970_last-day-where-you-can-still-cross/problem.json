@@ -3,11 +3,19 @@
   "id": 1970,
   "slug": "last-day-where-you-can-still-cross",
   "title": "Last Day Where You Can Still Cross",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Breadth-First Search",
     "Union Find",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

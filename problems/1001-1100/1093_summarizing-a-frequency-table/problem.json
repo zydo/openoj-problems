@@ -4,8 +4,13 @@
   "id": 1093,
   "slug": "summarizing-a-frequency-table",
   "title": "Summarizing a Frequency Table",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Probability and Statistics"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Probability and Statistics"

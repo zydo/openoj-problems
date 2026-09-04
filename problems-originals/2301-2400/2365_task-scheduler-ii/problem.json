@@ -4,8 +4,13 @@
   "id": 2365,
   "slug": "task-scheduler-ii",
   "title": "Task Scheduler II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

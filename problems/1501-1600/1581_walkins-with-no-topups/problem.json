@@ -4,10 +4,13 @@
   "id": 1581,
   "slug": "walkins-with-no-topups",
   "title": "Walk-Ins With No Top-Ups",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

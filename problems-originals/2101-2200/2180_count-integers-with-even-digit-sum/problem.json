@@ -4,8 +4,12 @@
   "id": 2180,
   "slug": "count-integers-with-even-digit-sum",
   "title": "Count Integers With Even Digit Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

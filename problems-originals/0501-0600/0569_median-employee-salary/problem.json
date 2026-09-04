@@ -4,8 +4,11 @@
   "id": 569,
   "slug": "median-employee-salary",
   "title": "Median Employee Salary",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

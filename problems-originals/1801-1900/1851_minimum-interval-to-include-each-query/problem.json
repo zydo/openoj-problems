@@ -3,11 +3,18 @@
   "id": 1851,
   "slug": "minimum-interval-to-include-each-query",
   "title": "Minimum Interval to Include Each Query",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Sorting",
     "Union Find"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sweep Line",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

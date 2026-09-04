@@ -4,10 +4,13 @@
   "id": 2994,
   "slug": "friday-spending-ii",
   "title": "Friday Spending II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

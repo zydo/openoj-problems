@@ -4,8 +4,15 @@
   "id": 1444,
   "slug": "number-of-ways-of-cutting-a-pizza",
   "title": "Number of Ways of Cutting a Pizza",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Memoization",

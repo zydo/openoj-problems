@@ -4,8 +4,13 @@
   "id": 2254,
   "slug": "running-a-clip-hub",
   "title": "Running A Clip Hub",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Heap (Priority Queue)"

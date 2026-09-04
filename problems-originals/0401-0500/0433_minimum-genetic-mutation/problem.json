@@ -4,8 +4,14 @@
   "id": 433,
   "slug": "minimum-genetic-mutation",
   "title": "Minimum Genetic Mutation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Breadth-First Search",
+    "Bidirectional Search"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Breadth-First Search",

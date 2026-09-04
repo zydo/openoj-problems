@@ -4,10 +4,15 @@
   "id": 2869,
   "slug": "completing-the-set-from-the-tail",
   "title": "Completing The Set From The Tail",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 560,
   "slug": "count-subarrays-with-sum-k",
   "title": "Count Subarrays With Sum K",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

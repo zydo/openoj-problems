@@ -4,8 +4,12 @@
   "id": 822,
   "slug": "card-flipping-game",
   "title": "Card Flipping Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

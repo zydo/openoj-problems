@@ -4,8 +4,18 @@
   "id": 3534,
   "slug": "path-existence-queries-in-a-graph-ii",
   "title": "Path Existence Queries in a Graph II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

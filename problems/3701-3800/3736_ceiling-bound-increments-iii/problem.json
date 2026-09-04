@@ -4,8 +4,12 @@
   "id": 3736,
   "slug": "ceiling-bound-increments-iii",
   "title": "Ceiling-Bound Increments III",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

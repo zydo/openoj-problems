@@ -4,8 +4,12 @@
   "id": 1920,
   "slug": "build-array-from-permutation",
   "title": "Build Array from Permutation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

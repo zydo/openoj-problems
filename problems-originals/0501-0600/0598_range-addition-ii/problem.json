@@ -4,8 +4,12 @@
   "id": 598,
   "slug": "range-addition-ii",
   "title": "Range Addition II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

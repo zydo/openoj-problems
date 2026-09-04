@@ -4,10 +4,17 @@
   "id": 3143,
   "slug": "square-that-never-repeats-a-tag",
   "title": "The Square That Never Repeats A Tag",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Binary Search",
     "Sorting"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 766,
   "slug": "constant-diagonal-grid",
   "title": "Constant Diagonal Grid",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

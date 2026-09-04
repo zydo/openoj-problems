@@ -3,10 +3,14 @@
   "id": 3782,
   "slug": "last-remaining-integer-after-alternating-deletion-operations",
   "title": "Last Remaining Integer After Alternating Deletion Operations",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
     "Recursion",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Math",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

@@ -3,11 +3,19 @@
   "id": 743,
   "slug": "network-delay-time",
   "title": "Network Delay Time",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Shortest Path",
     "Heap"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,16 @@
   "id": 2378,
   "slug": "largest-sum-of-non-adjacent-tree-edges",
   "title": "Largest Sum of Non-Adjacent Tree Edges",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Tree",
     "Depth First Search"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,13 @@
   "id": 2041,
   "slug": "seasoned-applicants-who-aced-the-auditions",
   "title": "Seasoned Applicants Who Aced The Auditions",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

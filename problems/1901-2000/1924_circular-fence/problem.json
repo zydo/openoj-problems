@@ -4,9 +4,15 @@
   "id": 1924,
   "slug": "circular-fence",
   "title": "Circular Fence",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Minimum Enclosing Circle"
   ],
   "invocation": {
     "type": "function",

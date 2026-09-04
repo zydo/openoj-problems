@@ -4,8 +4,11 @@
   "id": 709,
   "slug": "to-lower-case",
   "title": "To Lower Case",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

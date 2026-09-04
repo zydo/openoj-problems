@@ -4,10 +4,13 @@
   "id": 3126,
   "slug": "uptime-in-whole-days",
   "title": "Uptime In Whole Days",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -3,11 +3,19 @@
   "id": 2421,
   "slug": "number-of-good-paths",
   "title": "Number of Good Paths",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Union-Find",
     "Graph",
     "Tree",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Tree",
+    "Union-Find",
+    "Graph Theory",
     "Sorting"
   ],
   "invocation": {

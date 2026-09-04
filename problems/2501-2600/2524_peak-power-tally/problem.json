@@ -4,11 +4,18 @@
   "id": 2524,
   "slug": "peak-power-tally",
   "title": "Peak Power Tally",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
+    "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Stack",
     "Sliding Window"
   ],
   "invocation": {

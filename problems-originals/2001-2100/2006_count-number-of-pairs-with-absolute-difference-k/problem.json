@@ -4,8 +4,13 @@
   "id": 2006,
   "slug": "count-number-of-pairs-with-absolute-difference-k",
   "title": "Count Number of Pairs With Absolute Difference K",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

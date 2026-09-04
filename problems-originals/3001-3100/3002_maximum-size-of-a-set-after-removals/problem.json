@@ -4,8 +4,13 @@
   "id": 3002,
   "slug": "maximum-size-of-a-set-after-removals",
   "title": "Maximum Size of a Set After Removals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy"

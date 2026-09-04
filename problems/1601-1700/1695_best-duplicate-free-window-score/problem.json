@@ -4,8 +4,13 @@
   "id": 1695,
   "slug": "best-duplicate-free-window-score",
   "title": "Best Duplicate-Free Window Score",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

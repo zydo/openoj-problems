@@ -4,8 +4,14 @@
   "id": 3082,
   "slug": "find-the-sum-of-the-power-of-all-subsequences",
   "title": "Find the Sum of the Power of All Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Knapsack Problem",

@@ -4,8 +4,15 @@
   "id": 1963,
   "slug": "minimum-number-of-swaps-to-make-the-string-balanced",
   "title": "Minimum Number of Swaps to Make the String Balanced",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Stack",
+    "Greedy",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Stack",

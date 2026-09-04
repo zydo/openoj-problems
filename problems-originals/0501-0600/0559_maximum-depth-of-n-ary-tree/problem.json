@@ -4,8 +4,13 @@
   "id": 559,
   "slug": "maximum-depth-of-n-ary-tree",
   "title": "Maximum Depth of N-ary Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"

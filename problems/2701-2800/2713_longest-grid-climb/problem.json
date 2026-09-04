@@ -4,12 +4,22 @@
   "id": 2713,
   "slug": "longest-grid-climb",
   "title": "Longest Grid Climb",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Sorting",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming",
+    "Memoization",
+    "Sorting",
+    "Matrix",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

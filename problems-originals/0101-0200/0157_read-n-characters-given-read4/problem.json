@@ -4,8 +4,13 @@
   "id": 157,
   "slug": "read-n-characters-given-read4",
   "title": "Read N Characters Given Read4",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation",
+    "Interactive"
+  ],
+  "topics": [
     "Array",
     "Simulation",
     "Interactive"

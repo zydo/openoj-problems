@@ -4,11 +4,16 @@
   "id": 4012,
   "slug": "tasks-left-open-after-every-shift",
   "title": "Tasks Left Open After Every Shift",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Prefix Sum",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Simulation",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

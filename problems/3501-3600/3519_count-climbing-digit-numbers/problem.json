@@ -4,10 +4,15 @@
   "id": 3519,
   "slug": "count-climbing-digit-numbers",
   "title": "Count Climbing-Digit Numbers",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP",
     "Combinatorics"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 2840,
   "slug": "check-if-strings-can-be-made-equal-with-operations-ii",
   "title": "Check if Strings Can be Made Equal With Operations II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sorting"

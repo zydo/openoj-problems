@@ -4,8 +4,12 @@
   "id": 2291,
   "slug": "stock-picks-that-fit-the-budget",
   "title": "Stock Picks That Fit the Budget",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

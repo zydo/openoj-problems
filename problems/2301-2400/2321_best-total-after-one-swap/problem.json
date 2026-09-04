@@ -4,8 +4,12 @@
   "id": 2321,
   "slug": "best-total-after-one-swap",
   "title": "Best Total After One Swap",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

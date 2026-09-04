@@ -4,8 +4,12 @@
   "id": 908,
   "slug": "smallest-range-i",
   "title": "Smallest Range I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

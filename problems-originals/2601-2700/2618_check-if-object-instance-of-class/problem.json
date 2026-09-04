@@ -4,8 +4,11 @@
   "id": 2618,
   "slug": "check-if-object-instance-of-class",
   "title": "Check if Object Instance of Class",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

@@ -4,10 +4,13 @@
   "id": 601,
   "slug": "arena-attendance-run",
   "title": "Arena Attendance Run",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

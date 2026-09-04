@@ -4,8 +4,11 @@
   "id": 3617,
   "slug": "find-students-with-study-spiral-pattern",
   "title": "Find Students with Study Spiral Pattern",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

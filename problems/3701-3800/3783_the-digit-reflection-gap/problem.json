@@ -4,8 +4,11 @@
   "id": 3783,
   "slug": "the-digit-reflection-gap",
   "title": "The Digit-Reflection Gap",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

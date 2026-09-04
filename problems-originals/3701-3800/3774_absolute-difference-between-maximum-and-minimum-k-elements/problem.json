@@ -4,8 +4,12 @@
   "id": 3774,
   "slug": "absolute-difference-between-maximum-and-minimum-k-elements",
   "title": "Absolute Difference Between Maximum and Minimum K Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

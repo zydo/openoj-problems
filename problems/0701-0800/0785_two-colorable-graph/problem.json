@@ -4,12 +4,20 @@
   "id": 785,
   "slug": "two-colorable-graph",
   "title": "Two-Colorable Graph",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "BFS",
     "DFS",
     "Union Find"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Graph Coloring",
+    "Bipartite Graph"
   ],
   "invocation": {
     "type": "function",

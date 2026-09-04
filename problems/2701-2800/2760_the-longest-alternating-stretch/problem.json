@@ -4,8 +4,12 @@
   "id": 2760,
   "slug": "the-longest-alternating-stretch",
   "title": "The Longest Alternating Stretch",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

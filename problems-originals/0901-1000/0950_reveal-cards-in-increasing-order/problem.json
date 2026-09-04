@@ -4,8 +4,14 @@
   "id": 950,
   "slug": "reveal-cards-in-increasing-order",
   "title": "Reveal Cards In Increasing Order",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Queue",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Queue",
     "Sorting",

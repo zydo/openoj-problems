@@ -4,8 +4,11 @@
   "id": 1848,
   "slug": "minimum-distance-to-the-target-element",
   "title": "Minimum Distance to the Target Element",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

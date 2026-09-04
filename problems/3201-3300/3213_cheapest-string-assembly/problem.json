@@ -4,11 +4,17 @@
   "id": 3213,
   "slug": "cheapest-string-assembly",
   "title": "Cheapest String Assembly",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Suffix Array"
   ],
   "invocation": {
     "type": "function",

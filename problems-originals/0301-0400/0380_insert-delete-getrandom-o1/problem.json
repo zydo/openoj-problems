@@ -3,10 +3,17 @@
   "id": 380,
   "slug": "insert-delete-getrandom-o1",
   "title": "Insert Delete GetRandom O(1)",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Design",
+    "Randomized"
   ],
   "invocation": {
     "type": "design",

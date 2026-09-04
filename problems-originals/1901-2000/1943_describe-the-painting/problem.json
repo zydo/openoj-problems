@@ -3,9 +3,15 @@
   "id": 1943,
   "slug": "describe-the-painting",
   "title": "Describe the Painting",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Sorting",
     "Prefix Sum"
   ],

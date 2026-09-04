@@ -4,10 +4,13 @@
   "id": 2394,
   "slug": "volunteers-who-fell-short",
   "title": "Volunteers Who Fell Short",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

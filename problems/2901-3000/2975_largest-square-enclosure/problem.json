@@ -4,8 +4,13 @@
   "id": 2975,
   "slug": "largest-square-enclosure",
   "title": "Largest Square Enclosure",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

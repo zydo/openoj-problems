@@ -4,8 +4,13 @@
   "id": 1726,
   "slug": "tuple-with-same-product",
   "title": "Tuple with Same Product",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

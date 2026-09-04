@@ -4,8 +4,16 @@
   "id": 358,
   "slug": "rearrange-string-k-distance-apart",
   "title": "Rearrange String k Distance Apart",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

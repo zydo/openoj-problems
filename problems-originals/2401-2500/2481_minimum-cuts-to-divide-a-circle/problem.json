@@ -4,8 +4,12 @@
   "id": 2481,
   "slug": "minimum-cuts-to-divide-a-circle",
   "title": "Minimum Cuts to Divide a Circle",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

@@ -4,8 +4,12 @@
   "id": 3614,
   "slug": "typing-through-special-keys-ii",
   "title": "Typing Through Special Keys II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

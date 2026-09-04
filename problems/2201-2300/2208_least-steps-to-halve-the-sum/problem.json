@@ -4,8 +4,13 @@
   "id": 2208,
   "slug": "least-steps-to-halve-the-sum",
   "title": "Least Steps to Halve the Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Heap (Priority Queue)"

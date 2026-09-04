@@ -4,8 +4,16 @@
   "id": 3042,
   "slug": "count-prefix-and-suffix-pairs-i",
   "title": "Count Prefix and Suffix Pairs I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Trie",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "String",
     "Trie",

@@ -4,8 +4,11 @@
   "id": 38,
   "slug": "read-the-runs-aloud",
   "title": "Read The Runs Aloud",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

@@ -3,8 +3,12 @@
   "id": 1012,
   "slug": "numbers-with-repeated-digits",
   "title": "Numbers With Repeated Digits",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

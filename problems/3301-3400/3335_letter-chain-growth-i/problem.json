@@ -4,8 +4,15 @@
   "id": 3335,
   "slug": "letter-chain-growth-i",
   "title": "Letter Chain Growth I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
     "Math",
     "String",
     "Dynamic Programming",

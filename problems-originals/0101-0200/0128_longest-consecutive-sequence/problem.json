@@ -3,11 +3,16 @@
   "id": 128,
   "slug": "longest-consecutive-sequence",
   "title": "Longest Consecutive Sequence",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Union Find"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3651,
   "slug": "the-warp-gate-crossing",
   "title": "The Warp-Gate Crossing",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

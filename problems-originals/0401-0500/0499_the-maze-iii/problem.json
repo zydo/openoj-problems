@@ -4,8 +4,21 @@
   "id": 499,
   "slug": "the-maze-iii",
   "title": "The Maze III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path",
+    "Dijkstra's Algorithm",
+    "Heuristic Search",
+    "A* Search"
+  ],
+  "topics": [
     "Array",
     "String",
     "Depth-First Search",

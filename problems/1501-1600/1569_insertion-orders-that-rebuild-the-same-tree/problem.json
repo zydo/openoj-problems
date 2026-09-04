@@ -4,12 +4,25 @@
   "id": 1569,
   "slug": "insertion-orders-that-rebuild-the-same-tree",
   "title": "Insertion Orders That Rebuild the Same Tree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Divide and Conquer",
     "Binary Search Tree",
     "Combinatorics"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Tree",
+    "Union-Find",
+    "Binary Search Tree",
+    "Memoization",
+    "Combinatorics",
+    "Binary Tree",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

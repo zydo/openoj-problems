@@ -4,8 +4,12 @@
   "id": 2374,
   "slug": "node-with-highest-edge-score",
   "title": "Node With Highest Edge Score",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Graph Theory"
+  ],
+  "topics": [
     "Hash Table",
     "Graph Theory"
   ],

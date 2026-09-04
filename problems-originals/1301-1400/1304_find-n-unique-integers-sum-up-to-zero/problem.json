@@ -4,8 +4,12 @@
   "id": 1304,
   "slug": "find-n-unique-integers-sum-up-to-zero",
   "title": "Find N Unique Integers Sum up to Zero",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

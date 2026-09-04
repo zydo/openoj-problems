@@ -4,8 +4,12 @@
   "id": 2980,
   "slug": "forming-an-even-or",
   "title": "Forming an Even OR",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

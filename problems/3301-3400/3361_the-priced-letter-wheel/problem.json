@@ -4,8 +4,13 @@
   "id": 3361,
   "slug": "the-priced-letter-wheel",
   "title": "The Priced Letter Wheel",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

@@ -3,12 +3,20 @@
   "id": 1008,
   "slug": "construct-binary-search-tree-from-preorder-traversal",
   "title": "Construct Binary Search Tree from Preorder Traversal",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "Binary Search Tree",
     "Recursion",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Tree",
+    "Binary Search Tree",
+    "Monotonic Stack",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

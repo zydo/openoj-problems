@@ -4,8 +4,12 @@
   "id": 667,
   "slug": "beautiful-arrangement-ii",
   "title": "Beautiful Arrangement II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -4,8 +4,14 @@
   "id": 2358,
   "slug": "maximum-number-of-groups-entering-a-competition",
   "title": "Maximum Number of Groups Entering a Competition",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

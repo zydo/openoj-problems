@@ -4,8 +4,15 @@
   "id": 2168,
   "slug": "unique-substrings-with-equal-digit-frequency",
   "title": "Unique Substrings With Equal Digit Frequency",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Rolling Hash",
+    "Counting",
+    "Hash Function"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Rolling Hash",

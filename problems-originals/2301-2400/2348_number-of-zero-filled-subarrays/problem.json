@@ -4,8 +4,12 @@
   "id": 2348,
   "slug": "number-of-zero-filled-subarrays",
   "title": "Number of Zero-Filled Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

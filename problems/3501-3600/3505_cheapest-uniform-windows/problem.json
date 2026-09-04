@@ -4,11 +4,19 @@
   "id": 3505,
   "slug": "cheapest-uniform-windows",
   "title": "Cheapest Uniform Windows",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Sliding Window",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

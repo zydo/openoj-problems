@@ -4,12 +4,23 @@
   "id": 332,
   "slug": "order-every-flight",
   "title": "Order Every Flight",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Backtracking",
     "Depth-First Search",
     "Graph",
     "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Graph Theory",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Eulerian Circuit",
+    "Eulerian Path",
+    "Semi-Eulerian Graph"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,18 @@
   "id": 1738,
   "slug": "find-kth-largest-xor-coordinate-value",
   "title": "Find Kth Largest XOR Coordinate Value",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Bit Manipulation",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Prefix Sum",
+    "Quickselect"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Bit Manipulation",

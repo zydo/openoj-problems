@@ -4,11 +4,17 @@
   "id": 230,
   "slug": "select-kth-smallest-in-a-search-tree",
   "title": "Select Kth Smallest In A Search Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search Tree",
     "Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

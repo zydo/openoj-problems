@@ -4,8 +4,13 @@
   "id": 1608,
   "slug": "self-matching-threshold",
   "title": "Self-Matching Threshold",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

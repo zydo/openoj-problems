@@ -4,8 +4,13 @@
   "id": 394,
   "slug": "expand-bracket-repeats",
   "title": "Expand Bracket Repeats",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Recursion"

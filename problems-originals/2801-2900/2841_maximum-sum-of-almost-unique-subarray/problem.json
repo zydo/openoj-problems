@@ -4,8 +4,13 @@
   "id": 2841,
   "slug": "maximum-sum-of-almost-unique-subarray",
   "title": "Maximum Sum of Almost Unique Subarray",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window"

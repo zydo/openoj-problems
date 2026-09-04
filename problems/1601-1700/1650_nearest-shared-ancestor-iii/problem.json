@@ -4,11 +4,19 @@
   "id": 1650,
   "slug": "nearest-shared-ancestor-iii",
   "title": "Nearest Shared Ancestor of a Binary Tree III",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
+    "Hash Table",
+    "Two Pointers",
+    "Tree",
+    "Binary Tree",
+    "Binary Lifting",
     "Lowest Common Ancestor"
   ],
   "invocation": {

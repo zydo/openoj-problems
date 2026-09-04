@@ -4,8 +4,11 @@
   "id": 717,
   "slug": "trailing-single-bit-character",
   "title": "Trailing Single-Bit Character",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

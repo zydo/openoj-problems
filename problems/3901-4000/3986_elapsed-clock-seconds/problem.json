@@ -4,8 +4,12 @@
   "id": 3986,
   "slug": "elapsed-clock-seconds",
   "title": "Elapsed Clock Seconds",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

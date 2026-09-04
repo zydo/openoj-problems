@@ -4,8 +4,11 @@
   "id": 3368,
   "slug": "first-letter-capitalization",
   "title": "First Letter Capitalization",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

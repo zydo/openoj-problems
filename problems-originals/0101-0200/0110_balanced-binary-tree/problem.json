@@ -4,8 +4,13 @@
   "id": 110,
   "slug": "balanced-binary-tree",
   "title": "Balanced Binary Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

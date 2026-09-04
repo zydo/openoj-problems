@@ -4,8 +4,13 @@
   "id": 1453,
   "slug": "most-darts-on-one-board",
   "title": "Most Darts on One Board",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

@@ -4,8 +4,11 @@
   "id": 3465,
   "slug": "find-products-with-valid-serial-numbers",
   "title": "Find Products with Valid Serial Numbers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

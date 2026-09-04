@@ -4,12 +4,17 @@
   "id": 1357,
   "slug": "checkout-with-periodic-discount",
   "title": "Checkout With Periodic Discount",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Design",
     "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Design"
   ],
   "invocation": {
     "type": "design",

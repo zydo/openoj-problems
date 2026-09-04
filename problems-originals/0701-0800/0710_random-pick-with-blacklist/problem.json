@@ -3,9 +3,17 @@
   "id": 710,
   "slug": "random-pick-with-blacklist",
   "title": "Random Pick with Blacklist",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
+    "Randomized"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Binary Search",
+    "Sorting",
     "Randomized"
   ],
   "invocation": {

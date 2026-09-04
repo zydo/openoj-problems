@@ -4,9 +4,13 @@
   "id": 2777,
   "slug": "stepping-through-a-date-range",
   "title": "Stepping Through A Date Range",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

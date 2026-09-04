@@ -4,8 +4,13 @@
   "id": 3263,
   "slug": "wiring-a-doubly-list-from-a-chain",
   "title": "Wiring A Doubly List From A Chain",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Linked List",
+    "Doubly-Linked List"
+  ],
+  "topics": [
     "Array",
     "Linked List",
     "Doubly-Linked List"

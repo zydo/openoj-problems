@@ -4,11 +4,19 @@
   "id": 1878,
   "slug": "get-biggest-three-rhombus-sums-in-a-grid",
   "title": "Get Biggest Three Rhombus Sums in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Sorting",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Heap (Priority Queue)",
     "Matrix",
     "Prefix Sum"
   ],

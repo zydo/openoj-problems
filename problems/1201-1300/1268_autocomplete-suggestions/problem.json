@@ -4,11 +4,19 @@
   "id": 1268,
   "slug": "autocomplete-suggestions",
   "title": "Autocomplete Suggestions",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Trie",
     "Sorting",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Trie",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

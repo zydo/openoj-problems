@@ -4,11 +4,17 @@
   "id": 1627,
   "slug": "linked-by-a-shared-divisor",
   "title": "Linked by a Shared Divisor",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Union Find",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Union-Find",
     "Number Theory"
   ],
   "invocation": {

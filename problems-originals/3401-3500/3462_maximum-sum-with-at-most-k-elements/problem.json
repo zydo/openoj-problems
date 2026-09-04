@@ -4,8 +4,15 @@
   "id": 3462,
   "slug": "maximum-sum-with-at-most-k-elements",
   "title": "Maximum Sum With at Most K Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

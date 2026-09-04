@@ -4,11 +4,18 @@
   "id": 720,
   "slug": "longest-buildable-word",
   "title": "Longest Buildable Word",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "String",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
     "Sorting"
   ],
   "invocation": {

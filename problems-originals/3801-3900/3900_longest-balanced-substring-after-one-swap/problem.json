@@ -4,8 +4,13 @@
   "id": 3900,
   "slug": "longest-balanced-substring-after-one-swap",
   "title": "Longest Balanced Substring After One Swap",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Prefix Sum"

@@ -4,8 +4,12 @@
   "id": 2485,
   "slug": "find-the-pivot-integer",
   "title": "Find the Pivot Integer",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Math",
     "Prefix Sum"
   ],

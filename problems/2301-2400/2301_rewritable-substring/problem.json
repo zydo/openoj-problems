@@ -4,11 +4,17 @@
   "id": 2301,
   "slug": "rewritable-substring",
   "title": "Rewritable Substring",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "String Matching",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "String Matching"
   ],
   "invocation": {
     "type": "function",

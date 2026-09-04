@@ -4,8 +4,11 @@
   "id": 2880,
   "slug": "select-data",
   "title": "Select Data",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

@@ -4,8 +4,14 @@
   "id": 2933,
   "slug": "employees-with-login-bursts",
   "title": "Employees With Login Bursts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

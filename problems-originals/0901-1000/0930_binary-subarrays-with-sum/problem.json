@@ -4,8 +4,14 @@
   "id": 930,
   "slug": "binary-subarrays-with-sum",
   "title": "Binary Subarrays With Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

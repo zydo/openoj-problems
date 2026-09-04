@@ -4,8 +4,15 @@
   "id": 1514,
   "slug": "path-with-maximum-probability",
   "title": "Path with Maximum Probability",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
+  ],
+  "topics": [
     "Array",
     "Graph Theory",
     "Heap (Priority Queue)",

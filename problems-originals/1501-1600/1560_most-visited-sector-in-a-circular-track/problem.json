@@ -4,8 +4,12 @@
   "id": 1560,
   "slug": "most-visited-sector-in-a-circular-track",
   "title": "Most Visited Sector in a Circular Track",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

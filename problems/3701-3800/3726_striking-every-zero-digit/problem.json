@@ -4,8 +4,12 @@
   "id": 3726,
   "slug": "striking-every-zero-digit",
   "title": "Striking Every Zero Digit",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

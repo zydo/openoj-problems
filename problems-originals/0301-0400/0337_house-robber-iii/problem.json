@@ -3,11 +3,18 @@
   "id": 337,
   "slug": "house-robber-iii",
   "title": "House Robber III",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree DP",
     "Binary Tree",
     "DFS"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

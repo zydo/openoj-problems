@@ -4,8 +4,12 @@
   "id": 2834,
   "slug": "find-the-minimum-possible-sum-of-a-beautiful-array",
   "title": "Find the Minimum Possible Sum of a Beautiful Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

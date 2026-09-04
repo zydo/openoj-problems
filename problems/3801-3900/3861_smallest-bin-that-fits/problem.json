@@ -4,8 +4,11 @@
   "id": 3861,
   "slug": "smallest-bin-that-fits",
   "title": "The Smallest Bin That Fits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

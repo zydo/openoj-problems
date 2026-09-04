@@ -4,8 +4,13 @@
   "id": 3974,
   "slug": "maximum-total-sum-of-k-selected-elements",
   "title": "Maximum Total Sum of K Selected Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

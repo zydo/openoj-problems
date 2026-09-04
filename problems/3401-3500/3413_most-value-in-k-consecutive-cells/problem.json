@@ -4,12 +4,20 @@
   "id": 3413,
   "slug": "most-value-in-k-consecutive-cells",
   "title": "Most Value in K Consecutive Cells",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Two Pointer",
     "Prefix Sum",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

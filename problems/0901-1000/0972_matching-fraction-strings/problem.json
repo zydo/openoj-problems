@@ -4,8 +4,12 @@
   "id": 972,
   "slug": "matching-fraction-strings",
   "title": "Matching Fraction Strings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

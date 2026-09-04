@@ -4,10 +4,16 @@
   "id": 142,
   "slug": "cycle-entry-in-a-list",
   "title": "Cycle Entry In A List",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Two Pointers"
+  ],
+  "topics": [
+    "Hash Table",
+    "Linked List",
+    "Two Pointers",
+    "Floyd's Cycle Finding Algorithm"
   ],
   "invocation": {
     "type": "function",

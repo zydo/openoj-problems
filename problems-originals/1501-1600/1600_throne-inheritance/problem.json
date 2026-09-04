@@ -4,8 +4,14 @@
   "id": 1600,
   "slug": "throne-inheritance",
   "title": "Throne Inheritance",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Tree",
+    "Depth-First Search",
+    "Design"
+  ],
+  "topics": [
     "Hash Table",
     "Tree",
     "Depth-First Search",

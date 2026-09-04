@@ -4,8 +4,12 @@
   "id": 3033,
   "slug": "fill-the-matrix-blanks",
   "title": "Fill The Matrix Blanks",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

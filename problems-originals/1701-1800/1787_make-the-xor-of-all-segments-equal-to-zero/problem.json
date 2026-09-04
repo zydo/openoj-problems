@@ -4,8 +4,15 @@
   "id": 1787,
   "slug": "make-the-xor-of-all-segments-equal-to-zero",
   "title": "Make the XOR of All Segments Equal to Zero",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

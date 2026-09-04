@@ -4,12 +4,21 @@
   "id": 3845,
   "slug": "peak-xor-within-a-tight-value-band",
   "title": "Peak XOR Within a Tight Value Band",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Bit Manipulation",
     "Trie",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Trie",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

@@ -3,11 +3,15 @@
   "id": 1216,
   "slug": "valid-palindrome-iii",
   "title": "Valid Palindrome III",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Interval Dp",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

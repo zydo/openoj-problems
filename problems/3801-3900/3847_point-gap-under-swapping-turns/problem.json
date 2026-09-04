@@ -4,8 +4,12 @@
   "id": 3847,
   "slug": "point-gap-under-swapping-turns",
   "title": "Point Gap Under Swapping Turns",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -4,8 +4,14 @@
   "id": 1589,
   "slug": "maximum-sum-obtained-of-any-permutation",
   "title": "Maximum Sum Obtained of Any Permutation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

@@ -4,8 +4,13 @@
   "id": 1021,
   "slug": "strip-outer-parentheses",
   "title": "Strip Outer Parentheses",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Bracket Sequences"

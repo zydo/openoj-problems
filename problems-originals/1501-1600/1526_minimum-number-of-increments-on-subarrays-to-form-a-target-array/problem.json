@@ -3,9 +3,16 @@
   "id": 1526,
   "slug": "minimum-number-of-increments-on-subarrays-to-form-a-target-array",
   "title": "Minimum Number of Increments on Subarrays to Form a Target Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Difference Array",
+    "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
     "Greedy",
     "Monotonic Stack"
   ],

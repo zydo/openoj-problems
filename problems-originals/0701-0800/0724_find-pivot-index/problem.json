@@ -4,8 +4,12 @@
   "id": 724,
   "slug": "find-pivot-index",
   "title": "Find Pivot Index",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

@@ -4,8 +4,14 @@
   "id": 44,
   "slug": "wildcard-matching",
   "title": "Wildcard Matching",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Recursion"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Greedy",

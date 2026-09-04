@@ -3,11 +3,18 @@
   "id": 1494,
   "slug": "parallel-courses-ii",
   "title": "Parallel Courses II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Topological Sort"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Bitmask",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

@@ -3,10 +3,16 @@
   "id": 1751,
   "slug": "maximum-number-of-events-that-can-be-attended-ii",
   "title": "Maximum Number of Events That Can Be Attended II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Sorting"
   ],
   "invocation": {

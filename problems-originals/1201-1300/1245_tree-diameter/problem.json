@@ -3,11 +3,19 @@
   "id": 1245,
   "slug": "tree-diameter",
   "title": "Tree Diameter",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

@@ -3,10 +3,14 @@
   "id": 880,
   "slug": "decoded-string-at-index",
   "title": "Decoded String at Index",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Two Pointers"
+  ],
+  "topics": [
+    "String",
+    "Stack"
   ],
   "invocation": {
     "type": "function",

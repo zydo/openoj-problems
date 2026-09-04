@@ -4,8 +4,11 @@
   "id": 1507,
   "slug": "reformat-date",
   "title": "Reformat Date",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

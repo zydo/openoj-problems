@@ -4,8 +4,17 @@
   "id": 959,
   "slug": "regions-cut-by-slashes",
   "title": "Regions Cut By Slashes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix",
+    "Planar Graph"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Depth-First Search",

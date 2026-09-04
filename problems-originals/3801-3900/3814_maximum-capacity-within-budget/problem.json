@@ -4,8 +4,14 @@
   "id": 3814,
   "slug": "maximum-capacity-within-budget",
   "title": "Maximum Capacity Within Budget",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

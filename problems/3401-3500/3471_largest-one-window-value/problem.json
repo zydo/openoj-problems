@@ -4,8 +4,12 @@
   "id": 3471,
   "slug": "largest-one-window-value",
   "title": "The Largest One-Window Value",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

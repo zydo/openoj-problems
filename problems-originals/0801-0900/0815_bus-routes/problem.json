@@ -3,8 +3,13 @@
   "id": 815,
   "slug": "bus-routes",
   "title": "Bus Routes",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Breadth-First Search"

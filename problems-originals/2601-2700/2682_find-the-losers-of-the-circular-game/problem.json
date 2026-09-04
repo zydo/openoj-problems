@@ -4,8 +4,13 @@
   "id": 2682,
   "slug": "find-the-losers-of-the-circular-game",
   "title": "Find the Losers of the Circular Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Simulation"

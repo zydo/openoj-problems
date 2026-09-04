@@ -3,7 +3,7 @@
   "id": 200,
   "slug": "number-of-islands",
   "title": "Number of Islands",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Matrix",
@@ -11,6 +11,13 @@
     "BFS",
     "DFS",
     "Union-Find"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

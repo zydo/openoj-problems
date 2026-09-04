@@ -4,8 +4,11 @@
   "id": 1757,
   "slug": "recyclable-and-low-fat-products",
   "title": "Recyclable and Low Fat Products",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

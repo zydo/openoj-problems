@@ -4,8 +4,11 @@
   "id": 3358,
   "slug": "books-with-null-ratings",
   "title": "Books with NULL Ratings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

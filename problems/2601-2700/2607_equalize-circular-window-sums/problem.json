@@ -4,8 +4,15 @@
   "id": 2607,
   "slug": "equalize-circular-window-sums",
   "title": "Equalize Circular Window Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy",

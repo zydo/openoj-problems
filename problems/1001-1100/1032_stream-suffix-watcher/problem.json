@@ -4,9 +4,17 @@
   "id": 1032,
   "slug": "stream-suffix-watcher",
   "title": "Stream Suffix Watcher",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Design",
+    "Trie",
+    "Data Stream",
+    "Aho–Corasick Algorithm"
   ],
   "invocation": {
     "type": "design",

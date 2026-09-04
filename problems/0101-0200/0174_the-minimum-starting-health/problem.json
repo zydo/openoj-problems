@@ -4,8 +4,13 @@
   "id": 174,
   "slug": "the-minimum-starting-health",
   "title": "The Minimum Starting Health",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

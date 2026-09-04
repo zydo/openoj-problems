@@ -4,8 +4,13 @@
   "id": 644,
   "slug": "best-average-minimum-length",
   "title": "Best Average with Minimum Length",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Binary Search",
     "Prefix Sum"
   ],

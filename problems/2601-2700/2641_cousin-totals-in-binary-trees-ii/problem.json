@@ -4,8 +4,15 @@
   "id": 2641,
   "slug": "cousin-totals-in-binary-trees-ii",
   "title": "Cousin Totals in Binary Trees II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Hash Table",
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

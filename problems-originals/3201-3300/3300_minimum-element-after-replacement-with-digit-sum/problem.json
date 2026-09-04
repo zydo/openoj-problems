@@ -4,8 +4,12 @@
   "id": 3300,
   "slug": "minimum-element-after-replacement-with-digit-sum",
   "title": "Minimum Element After Replacement With Digit Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

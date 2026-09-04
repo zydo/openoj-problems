@@ -4,8 +4,12 @@
   "id": 2319,
   "slug": "is-this-a-cross-matrix",
   "title": "Is This A Cross Matrix",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

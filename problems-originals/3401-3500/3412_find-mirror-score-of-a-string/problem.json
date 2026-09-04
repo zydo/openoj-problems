@@ -4,8 +4,14 @@
   "id": 3412,
   "slug": "find-mirror-score-of-a-string",
   "title": "Find Mirror Score of a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Stack",

@@ -4,8 +4,12 @@
   "id": 1535,
   "slug": "array-duel-champion",
   "title": "Array Duel Champion",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

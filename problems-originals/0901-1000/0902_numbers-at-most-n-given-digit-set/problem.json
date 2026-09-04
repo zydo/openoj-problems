@@ -4,8 +4,15 @@
   "id": 902,
   "slug": "numbers-at-most-n-given-digit-set",
   "title": "Numbers At Most N Given Digit Set",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Binary Search",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String",

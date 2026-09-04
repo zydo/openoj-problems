@@ -4,8 +4,14 @@
   "id": 1659,
   "slug": "maximize-grid-happiness",
   "title": "Maximize Grid Happiness",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Bit Manipulation",
     "Memoization",

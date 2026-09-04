@@ -4,8 +4,11 @@
   "id": 3554,
   "slug": "find-category-recommendation-pairs",
   "title": "Find Category Recommendation Pairs",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

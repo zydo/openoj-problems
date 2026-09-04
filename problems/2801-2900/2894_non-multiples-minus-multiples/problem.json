@@ -4,8 +4,11 @@
   "id": 2894,
   "slug": "non-multiples-minus-multiples",
   "title": "Non-Multiples Minus Multiples",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

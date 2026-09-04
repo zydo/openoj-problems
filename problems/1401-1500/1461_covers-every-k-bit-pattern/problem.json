@@ -4,12 +4,20 @@
   "id": 1461,
   "slug": "covers-every-k-bit-pattern",
   "title": "Covers Every K-Bit Pattern",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
     "Rolling Hash",
     "Sliding Window"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Rolling Hash",
+    "Hash Function",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

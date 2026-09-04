@@ -4,8 +4,13 @@
   "id": 2571,
   "slug": "fewest-power-of-two-steps-to-zero",
   "title": "Fewest Power-of-Two Steps to Zero",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Greedy",
     "Bit Manipulation"

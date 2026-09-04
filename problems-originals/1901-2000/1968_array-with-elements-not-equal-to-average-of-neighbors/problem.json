@@ -4,8 +4,13 @@
   "id": 1968,
   "slug": "array-with-elements-not-equal-to-average-of-neighbors",
   "title": "Array With Elements Not Equal to Average of Neighbors",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

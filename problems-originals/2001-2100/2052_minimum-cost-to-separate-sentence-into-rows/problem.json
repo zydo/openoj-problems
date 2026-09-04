@@ -4,8 +4,12 @@
   "id": 2052,
   "slug": "minimum-cost-to-separate-sentence-into-rows",
   "title": "Minimum Cost to Separate Sentence Into Rows",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

@@ -4,8 +4,12 @@
   "id": 1619,
   "slug": "mean-of-array-after-removing-some-elements",
   "title": "Mean of Array After Removing Some Elements",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

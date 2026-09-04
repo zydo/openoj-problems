@@ -4,8 +4,11 @@
   "id": 728,
   "slug": "self-dividing-numbers",
   "title": "Self Dividing Numbers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 3917,
   "slug": "opposite-parity-ahead",
   "title": "Opposite Parity Ahead",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

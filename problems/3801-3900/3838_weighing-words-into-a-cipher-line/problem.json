@@ -4,8 +4,13 @@
   "id": 3838,
   "slug": "weighing-words-into-a-cipher-line",
   "title": "Weighing Words Into A Cipher Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Simulation"

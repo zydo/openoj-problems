@@ -4,8 +4,11 @@
   "id": 3637,
   "slug": "trionic-array-i",
   "title": "Trionic Array I",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

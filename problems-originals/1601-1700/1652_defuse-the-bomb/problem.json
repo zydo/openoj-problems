@@ -4,8 +4,12 @@
   "id": 1652,
   "slug": "defuse-the-bomb",
   "title": "Defuse the Bomb",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

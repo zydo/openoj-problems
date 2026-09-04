@@ -4,8 +4,14 @@
   "id": 2792,
   "slug": "count-nodes-that-are-great-enough",
   "title": "Count Nodes That Are Great Enough",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Divide and Conquer",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Divide and Conquer",
     "Tree",
     "Depth-First Search",

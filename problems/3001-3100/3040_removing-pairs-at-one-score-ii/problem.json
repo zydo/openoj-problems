@@ -4,10 +4,15 @@
   "id": 3040,
   "slug": "removing-pairs-at-one-score-ii",
   "title": "Removing Pairs At One Score II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

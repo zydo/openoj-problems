@@ -4,8 +4,15 @@
   "id": 108,
   "slug": "convert-sorted-array-to-binary-search-tree",
   "title": "Convert Sorted Array to Binary Search Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Tree",

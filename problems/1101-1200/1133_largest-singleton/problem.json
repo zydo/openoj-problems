@@ -4,10 +4,15 @@
   "id": 1133,
   "slug": "largest-singleton",
   "title": "Largest Singleton",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

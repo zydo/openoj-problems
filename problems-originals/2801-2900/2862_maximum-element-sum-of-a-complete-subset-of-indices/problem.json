@@ -3,10 +3,15 @@
   "id": 2862,
   "slug": "maximum-element-sum-of-a-complete-subset-of-indices",
   "title": "Maximum Element-Sum of a Complete Subset of Indices",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Number Theory",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

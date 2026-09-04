@@ -4,10 +4,15 @@
   "id": 2478,
   "slug": "count-partitions-with-prime-starts",
   "title": "Count Partitions With Prime Starts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Interval DP"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

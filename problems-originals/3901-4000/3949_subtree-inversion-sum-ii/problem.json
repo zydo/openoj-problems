@@ -4,8 +4,14 @@
   "id": 3949,
   "slug": "subtree-inversion-sum-ii",
   "title": "Subtree Inversion Sum II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Tree",

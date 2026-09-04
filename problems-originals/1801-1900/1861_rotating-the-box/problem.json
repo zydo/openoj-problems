@@ -4,8 +4,13 @@
   "id": 1861,
   "slug": "rotating-the-box",
   "title": "Rotating the Box",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Matrix"

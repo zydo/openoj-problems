@@ -4,12 +4,18 @@
   "id": 226,
   "slug": "binary-tree-mirror",
   "title": "Binary Tree Mirror",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Tree",
     "Binary Tree",
     "Depth-First Search",
     "Recursion"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

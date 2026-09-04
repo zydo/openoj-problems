@@ -4,8 +4,12 @@
   "id": 3360,
   "slug": "the-shrinking-take-pile",
   "title": "The Shrinking-Take Pile",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

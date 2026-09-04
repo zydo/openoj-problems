@@ -4,8 +4,13 @@
   "id": 2541,
   "slug": "fewest-moves-to-equalize-arrays-ii",
   "title": "Fewest Moves to Equalize Arrays II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

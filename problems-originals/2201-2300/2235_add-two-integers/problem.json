@@ -4,8 +4,11 @@
   "id": 2235,
   "slug": "add-two-integers",
   "title": "Add Two Integers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

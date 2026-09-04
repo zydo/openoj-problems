@@ -4,8 +4,18 @@
   "id": 638,
   "slug": "shopping-offers",
   "title": "Shopping Offers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Memoization",
+    "Bitmask",
+    "Knapsack Problem",
+    "Complete Knapsack"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Backtracking",

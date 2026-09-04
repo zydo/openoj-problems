@@ -4,8 +4,15 @@
   "id": 851,
   "slug": "loud-and-rich",
   "title": "Loud and Rich",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Graph Theory",

@@ -4,8 +4,12 @@
   "id": 2303,
   "slug": "calculate-amount-paid-in-taxes",
   "title": "Calculate Amount Paid in Taxes",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

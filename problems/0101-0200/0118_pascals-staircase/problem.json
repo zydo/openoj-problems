@@ -4,8 +4,12 @@
   "id": 118,
   "slug": "pascals-staircase",
   "title": "Pascal's Staircase",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

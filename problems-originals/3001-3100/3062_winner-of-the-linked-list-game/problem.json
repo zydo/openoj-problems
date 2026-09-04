@@ -4,8 +4,11 @@
   "id": 3062,
   "slug": "winner-of-the-linked-list-game",
   "title": "Winner of the Linked List Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

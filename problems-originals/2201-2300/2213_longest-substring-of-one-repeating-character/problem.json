@@ -3,10 +3,16 @@
   "id": 2213,
   "slug": "longest-substring-of-one-repeating-character",
   "title": "Longest Substring of One Repeating Character",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

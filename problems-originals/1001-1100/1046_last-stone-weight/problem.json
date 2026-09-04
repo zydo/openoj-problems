@@ -3,10 +3,14 @@
   "id": 1046,
   "slug": "last-stone-weight",
   "title": "Last Stone Weight",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,19 @@
   "id": 1985,
   "slug": "kth-largest-digit-string",
   "title": "Kth Largest Digit String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Quickselect"
   ],
   "invocation": {
     "type": "function",

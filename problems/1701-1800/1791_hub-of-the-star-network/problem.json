@@ -4,8 +4,11 @@
   "id": 1791,
   "slug": "hub-of-the-star-network",
   "title": "The Hub of the Star Network",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Graph Theory"
+  ],
+  "topics": [
     "Graph Theory"
   ],
   "invocation": {

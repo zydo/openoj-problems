@@ -4,8 +4,13 @@
   "id": 3032,
   "slug": "count-numbers-with-unique-digits-ii",
   "title": "Count Numbers With Unique Digits II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "Dynamic Programming"

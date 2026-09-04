@@ -4,8 +4,12 @@
   "id": 1328,
   "slug": "break-a-palindrome",
   "title": "Break a Palindrome",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

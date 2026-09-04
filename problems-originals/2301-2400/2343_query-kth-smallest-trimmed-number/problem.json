@@ -4,8 +4,17 @@
   "id": 2343,
   "slug": "query-kth-smallest-trimmed-number",
   "title": "Query Kth Smallest Trimmed Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Radix Sort",
+    "Quickselect"
+  ],
+  "topics": [
     "Array",
     "String",
     "Divide and Conquer",

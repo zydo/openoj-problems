@@ -3,12 +3,18 @@
   "id": 2462,
   "slug": "total-cost-to-hire-k-workers",
   "title": "Total Cost to Hire K Workers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Two Pointers",
     "Greedy",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Heap (Priority Queue)",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

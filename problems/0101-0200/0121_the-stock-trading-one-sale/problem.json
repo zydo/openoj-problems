@@ -4,8 +4,12 @@
   "id": 121,
   "slug": "the-stock-trading-one-sale",
   "title": "The Stock Trading, One Sale",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

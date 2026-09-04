@@ -4,11 +4,19 @@
   "id": 292,
   "slug": "last-stone-duel",
   "title": "Last Stone Duel",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Game Theory",
     "Brainteaser"
+  ],
+  "topics": [
+    "Math",
+    "Brainteaser",
+    "Minimax",
+    "Game Theory",
+    "Nim Game",
+    "Impartial Game"
   ],
   "invocation": {
     "type": "function",

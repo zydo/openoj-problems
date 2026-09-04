@@ -4,11 +4,16 @@
   "id": 3964,
   "slug": "new-bulbs-for-the-dark-spans",
   "title": "New Bulbs For The Dark Spans",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Difference Array"
+  ],
+  "topics": [
+    "Greedy",
+    "Sorting",
+    "Array"
   ],
   "invocation": {
     "type": "function",

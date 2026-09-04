@@ -4,9 +4,15 @@
   "id": 3526,
   "slug": "xor-ranges-in-a-reversible-array",
   "title": "XOR Ranges in a Reversible Array",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Balanced BST"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

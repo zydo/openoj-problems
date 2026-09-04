@@ -4,8 +4,14 @@
   "id": 1656,
   "slug": "design-an-ordered-stream",
   "title": "Design an Ordered Stream",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Data Stream"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

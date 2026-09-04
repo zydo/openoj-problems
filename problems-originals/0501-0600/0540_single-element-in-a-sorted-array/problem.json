@@ -3,8 +3,12 @@
   "id": 540,
   "slug": "single-element-in-a-sorted-array",
   "title": "Single Element in a Sorted Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

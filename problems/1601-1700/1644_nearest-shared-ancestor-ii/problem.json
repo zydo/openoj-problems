@@ -4,11 +4,18 @@
   "id": 1644,
   "slug": "nearest-shared-ancestor-ii",
   "title": "Nearest Shared Ancestor of a Binary Tree II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
     "Lowest Common Ancestor"
   ],
   "invocation": {

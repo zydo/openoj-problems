@@ -4,8 +4,11 @@
   "id": 915,
   "slug": "partition-array-into-disjoint-intervals",
   "title": "Partition Array into Disjoint Intervals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

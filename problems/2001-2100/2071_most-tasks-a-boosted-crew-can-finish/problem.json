@@ -4,12 +4,21 @@
   "id": 2071,
   "slug": "most-tasks-a-boosted-crew-can-finish",
   "title": "The Most Tasks a Boosted Crew Can Finish",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Greedy",
     "Monotonic Queue",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Queue",
+    "Sorting",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

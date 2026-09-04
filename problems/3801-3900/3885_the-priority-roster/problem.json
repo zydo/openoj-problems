@@ -4,11 +4,18 @@
   "id": 3885,
   "slug": "the-priority-roster",
   "title": "The Priority Roster",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Heap (Priority Queue)",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

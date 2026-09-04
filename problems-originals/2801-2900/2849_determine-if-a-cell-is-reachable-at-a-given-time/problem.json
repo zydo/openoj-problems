@@ -4,8 +4,11 @@
   "id": 2849,
   "slug": "determine-if-a-cell-is-reachable-at-a-given-time",
   "title": "Determine if a Cell Is Reachable at a Given Time",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

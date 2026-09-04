@@ -4,9 +4,15 @@
   "id": 2212,
   "slug": "winning-the-archery-duel",
   "title": "Winning the Archery Duel",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Backtracking",
     "Bit Manipulation",
     "Enumeration"
   ],

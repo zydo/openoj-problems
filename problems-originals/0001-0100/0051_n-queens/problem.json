@@ -3,10 +3,15 @@
   "id": 51,
   "slug": "n-queens",
   "title": "N-Queens",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Backtracking",
+    "Algorithm X"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,20 @@
   "id": 140,
   "slug": "spelling-the-string-from-the-dictionary-ii",
   "title": "Spelling The String From The Dictionary II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Backtracking"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Trie",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

@@ -3,12 +3,20 @@
   "id": 1838,
   "slug": "frequency-of-the-most-frequent-element",
   "title": "Frequency of the Most Frequent Element",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Binary Search",
     "Prefix Sum",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

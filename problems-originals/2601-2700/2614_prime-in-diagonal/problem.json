@@ -4,8 +4,14 @@
   "id": 2614,
   "slug": "prime-in-diagonal",
   "title": "Prime In Diagonal",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Matrix",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Matrix",

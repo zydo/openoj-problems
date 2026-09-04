@@ -4,9 +4,16 @@
   "id": 295,
   "slug": "running-median",
   "title": "Running Median",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap"
+  ],
+  "topics": [
+    "Two Pointers",
+    "Design",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Data Stream"
   ],
   "invocation": {
     "type": "design",

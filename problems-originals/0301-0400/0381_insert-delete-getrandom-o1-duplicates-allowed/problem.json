@@ -3,10 +3,17 @@
   "id": 381,
   "slug": "insert-delete-getrandom-o1-duplicates-allowed",
   "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Design",
+    "Randomized"
   ],
   "invocation": {
     "type": "design",

@@ -4,8 +4,11 @@
   "id": 688,
   "slug": "knight-probability-in-chessboard",
   "title": "Knight Probability in Chessboard",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

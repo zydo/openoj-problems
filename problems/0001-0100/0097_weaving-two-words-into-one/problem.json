@@ -4,8 +4,12 @@
   "id": 97,
   "slug": "weaving-two-words-into-one",
   "title": "Weaving Two Words Into One",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

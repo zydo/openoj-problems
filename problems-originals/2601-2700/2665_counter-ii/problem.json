@@ -4,8 +4,11 @@
   "id": 2665,
   "slug": "counter-ii",
   "title": "Counter II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

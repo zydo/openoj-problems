@@ -4,8 +4,12 @@
   "id": 3726,
   "slug": "remove-zeros-in-decimal-representation",
   "title": "Remove Zeros in Decimal Representation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

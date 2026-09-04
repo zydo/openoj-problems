@@ -4,12 +4,18 @@
   "id": 736,
   "slug": "interpret-scoped-expression",
   "title": "Interpret Scoped Expression",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Expression Parsing",
     "Recursion",
     "Stack"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

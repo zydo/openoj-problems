@@ -4,8 +4,15 @@
   "id": 2385,
   "slug": "minutes-to-blight-the-whole-tree",
   "title": "Minutes to Blight the Whole Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Hash Table",
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

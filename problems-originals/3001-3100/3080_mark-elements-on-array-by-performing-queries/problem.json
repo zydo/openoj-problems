@@ -4,8 +4,15 @@
   "id": 3080,
   "slug": "mark-elements-on-array-by-performing-queries",
   "title": "Mark Elements on Array by Performing Queries",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

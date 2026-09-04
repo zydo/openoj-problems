@@ -4,8 +4,12 @@
   "id": 168,
   "slug": "spreadsheet-column-letters",
   "title": "Spreadsheet Column Letters",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

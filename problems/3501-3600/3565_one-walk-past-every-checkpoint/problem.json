@@ -4,8 +4,13 @@
   "id": 3565,
   "slug": "one-walk-past-every-checkpoint",
   "title": "One Walk Past Every Checkpoint",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Recursion",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Recursion",
     "Matrix"

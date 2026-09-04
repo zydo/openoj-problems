@@ -4,11 +4,19 @@
   "id": 952,
   "slug": "largest-factor-linked-group",
   "title": "Largest Factor-Linked Group",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Union-Find",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Union-Find",
+    "Number Theory",
+    "Prime Factorization"
   ],
   "invocation": {
     "type": "function",

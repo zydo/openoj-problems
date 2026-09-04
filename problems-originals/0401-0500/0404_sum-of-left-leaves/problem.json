@@ -4,8 +4,14 @@
   "id": 404,
   "slug": "sum-of-left-leaves",
   "title": "Sum of Left Leaves",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

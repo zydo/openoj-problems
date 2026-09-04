@@ -4,8 +4,13 @@
   "id": 2150,
   "slug": "isolated-values-in-the-array",
   "title": "Isolated Values in the Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

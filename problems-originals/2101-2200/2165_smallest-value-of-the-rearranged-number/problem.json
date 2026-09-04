@@ -4,8 +4,12 @@
   "id": 2165,
   "slug": "smallest-value-of-the-rearranged-number",
   "title": "Smallest Value of the Rearranged Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Sorting"
+  ],
+  "topics": [
     "Math",
     "Sorting"
   ],

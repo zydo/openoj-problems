@@ -4,8 +4,15 @@
   "id": 2590,
   "slug": "a-board-of-chores",
   "title": "A Board Of Chores",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

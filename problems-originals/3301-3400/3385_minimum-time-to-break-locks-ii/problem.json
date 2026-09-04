@@ -4,8 +4,13 @@
   "id": 3385,
   "slug": "minimum-time-to-break-locks-ii",
   "title": "Minimum Time to Break Locks II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Graph Theory"

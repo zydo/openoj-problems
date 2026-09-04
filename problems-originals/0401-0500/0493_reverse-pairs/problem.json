@@ -3,11 +3,21 @@
   "id": 493,
   "slug": "reverse-pairs",
   "title": "Reverse Pairs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Divide and Conquer",
     "Binary Search",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Ordered Set",
+    "Treap"
   ],
   "invocation": {
     "type": "function",

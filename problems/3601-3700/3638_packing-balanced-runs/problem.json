@@ -4,10 +4,17 @@
   "id": 3638,
   "slug": "packing-balanced-runs",
   "title": "Packing Balanced Runs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

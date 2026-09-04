@@ -4,8 +4,13 @@
   "id": 3960,
   "slug": "frequency-balance-subarray",
   "title": "Frequency Balance Subarray",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Hash Table",
+    "Sliding Window",
+    "Counting"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -4,9 +4,12 @@
   "id": 2634,
   "slug": "hand-written-array-filter",
   "title": "Hand-Written Array Filter",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

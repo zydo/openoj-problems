@@ -4,8 +4,14 @@
   "id": 2983,
   "slug": "palindrome-from-two-half-shuffles",
   "title": "A Palindrome From Two Half Shuffles",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

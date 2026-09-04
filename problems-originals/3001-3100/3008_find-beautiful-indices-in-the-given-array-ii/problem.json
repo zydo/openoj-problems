@@ -4,8 +4,19 @@
   "id": 3008,
   "slug": "find-beautiful-indices-in-the-given-array-ii",
   "title": "Find Beautiful Indices in the Given Array II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Binary Search",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm",
+    "Boyer–Moore String-Search Algorithm"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Binary Search",

@@ -4,9 +4,16 @@
   "id": 3801,
   "slug": "cheapest-way-to-join-sorted-runs",
   "title": "Cheapest Way to Join Sorted Runs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
     "Binary Search",
     "Dynamic Programming",
     "Bit Manipulation"

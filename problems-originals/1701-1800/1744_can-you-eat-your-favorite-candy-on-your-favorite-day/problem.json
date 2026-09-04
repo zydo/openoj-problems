@@ -4,8 +4,12 @@
   "id": 1744,
   "slug": "can-you-eat-your-favorite-candy-on-your-favorite-day",
   "title": "Can You Eat Your Favorite Candy on Your Favorite Day?",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

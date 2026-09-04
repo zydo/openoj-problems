@@ -4,8 +4,15 @@
   "id": 1559,
   "slug": "letter-loops-in-a-grid",
   "title": "Letter Loops in a Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
     "Depth-First Search",
     "Breadth-First Search",
     "Union-Find",

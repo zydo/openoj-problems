@@ -4,8 +4,12 @@
   "id": 135,
   "slug": "weight-apportionment",
   "title": "Weight Apportionment",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

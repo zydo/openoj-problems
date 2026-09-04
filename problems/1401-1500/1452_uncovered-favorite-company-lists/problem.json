@@ -4,8 +4,13 @@
   "id": 1452,
   "slug": "uncovered-favorite-company-lists",
   "title": "Uncovered Favorite-Company Lists",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

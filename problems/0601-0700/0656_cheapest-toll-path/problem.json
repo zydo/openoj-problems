@@ -4,8 +4,12 @@
   "id": 656,
   "slug": "cheapest-toll-path",
   "title": "Cheapest Toll Path",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -4,10 +4,13 @@
   "id": 3050,
   "slug": "three-topping-pizza-prices",
   "title": "Three-Topping Pizza Prices",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

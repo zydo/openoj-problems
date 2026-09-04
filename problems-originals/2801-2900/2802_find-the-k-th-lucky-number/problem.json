@@ -4,8 +4,13 @@
   "id": 2802,
   "slug": "find-the-k-th-lucky-number",
   "title": "Find The K-th Lucky Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Bit Manipulation"

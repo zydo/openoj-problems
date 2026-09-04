@@ -4,10 +4,16 @@
   "id": 3072,
   "slug": "splitting-a-stream-by-greater-counts",
   "title": "Splitting a Stream by Greater Counts",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Fenwick Tree",
     "Balanced BST"
+  ],
+  "topics": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

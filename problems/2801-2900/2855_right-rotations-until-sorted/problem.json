@@ -4,8 +4,11 @@
   "id": 2855,
   "slug": "right-rotations-until-sorted",
   "title": "Right Rotations Until Sorted",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

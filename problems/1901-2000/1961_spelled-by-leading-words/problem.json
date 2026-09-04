@@ -4,11 +4,16 @@
   "id": 1961,
   "slug": "spelled-by-leading-words",
   "title": "Spelled by the Leading Words",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "String",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "String"
   ],
   "invocation": {
     "type": "function",

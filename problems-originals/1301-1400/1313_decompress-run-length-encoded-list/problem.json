@@ -4,8 +4,11 @@
   "id": 1313,
   "slug": "decompress-run-length-encoded-list",
   "title": "Decompress Run-Length Encoded List",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

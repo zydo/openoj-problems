@@ -4,8 +4,14 @@
   "id": 776,
   "slug": "split-bst",
   "title": "Split BST",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Binary Search Tree",
+    "Recursion",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Binary Search Tree",
     "Recursion",

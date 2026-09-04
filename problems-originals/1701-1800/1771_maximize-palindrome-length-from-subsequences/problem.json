@@ -4,8 +4,12 @@
   "id": 1771,
   "slug": "maximize-palindrome-length-from-subsequences",
   "title": "Maximize Palindrome Length From Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

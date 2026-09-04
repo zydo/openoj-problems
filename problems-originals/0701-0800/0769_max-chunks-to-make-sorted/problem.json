@@ -4,8 +4,15 @@
   "id": 769,
   "slug": "max-chunks-to-make-sorted",
   "title": "Max Chunks To Make Sorted",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Sorting",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Greedy",

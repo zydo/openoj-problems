@@ -4,8 +4,13 @@
   "id": 3224,
   "slug": "minimum-array-changes-to-make-differences-equal",
   "title": "Minimum Array Changes to Make Differences Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

@@ -4,8 +4,13 @@
   "id": 1888,
   "slug": "fewest-flips-after-rotation",
   "title": "Fewest Flips After Rotation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Sliding Window"

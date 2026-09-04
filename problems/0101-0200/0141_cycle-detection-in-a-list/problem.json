@@ -4,11 +4,17 @@
   "id": 141,
   "slug": "cycle-detection-in-a-list",
   "title": "Cycle Detection In A List",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Linked List",
     "Two Pointers",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Linked List",
+    "Two Pointers",
+    "Floyd's Cycle Finding Algorithm"
   ],
   "invocation": {
     "type": "function",

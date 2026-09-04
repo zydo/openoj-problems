@@ -4,8 +4,15 @@
   "id": 117,
   "slug": "populating-next-right-pointers-in-each-node-ii",
   "title": "Populating Next Right Pointers in Each Node II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Linked List",
     "Tree",
     "Depth-First Search",

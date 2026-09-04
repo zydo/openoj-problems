@@ -4,8 +4,13 @@
   "id": 3899,
   "slug": "measuring-a-triangles-corners",
   "title": "Measuring A Triangle's Corners",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry"

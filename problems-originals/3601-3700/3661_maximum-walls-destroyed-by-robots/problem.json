@@ -4,8 +4,14 @@
   "id": 3661,
   "slug": "maximum-walls-destroyed-by-robots",
   "title": "Maximum Walls Destroyed by Robots",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Dynamic Programming",

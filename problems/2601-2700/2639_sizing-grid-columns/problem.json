@@ -4,8 +4,12 @@
   "id": 2639,
   "slug": "sizing-grid-columns",
   "title": "Sizing Grid Columns",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

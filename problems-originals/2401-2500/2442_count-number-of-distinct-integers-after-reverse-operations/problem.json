@@ -4,8 +4,14 @@
   "id": 2442,
   "slug": "count-number-of-distinct-integers-after-reverse-operations",
   "title": "Count Number of Distinct Integers After Reverse Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

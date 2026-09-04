@@ -4,8 +4,13 @@
   "id": 1803,
   "slug": "count-pairs-with-xor-in-a-range-crawl",
   "title": "Count Pairs With XOR in a Range",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Trie"

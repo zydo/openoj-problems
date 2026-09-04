@@ -4,8 +4,13 @@
   "id": 848,
   "slug": "shifting-letters",
   "title": "Shifting Letters",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

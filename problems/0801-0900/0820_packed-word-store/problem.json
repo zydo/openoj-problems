@@ -4,12 +4,18 @@
   "id": 820,
   "slug": "packed-word-store",
   "title": "Packed Word Store",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Trie",
     "String",
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

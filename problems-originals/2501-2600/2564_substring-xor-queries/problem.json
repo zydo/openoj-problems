@@ -4,8 +4,14 @@
   "id": 2564,
   "slug": "substring-xor-queries",
   "title": "Substring XOR Queries",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

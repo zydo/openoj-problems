@@ -4,10 +4,16 @@
   "id": 3082,
   "slug": "the-nested-k-sum-tally",
   "title": "The Nested k-Sum Tally",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

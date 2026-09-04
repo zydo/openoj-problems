@@ -4,8 +4,13 @@
   "id": 3988,
   "slug": "create-grid-with-exactly-k-paths-i",
   "title": "Create Grid With Exactly K Paths I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Math",
+    "Greedy",
+    "Matrix"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

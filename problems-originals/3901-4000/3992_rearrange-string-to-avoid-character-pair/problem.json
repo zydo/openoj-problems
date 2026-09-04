@@ -4,8 +4,13 @@
   "id": 3992,
   "slug": "rearrange-string-to-avoid-character-pair",
   "title": "Rearrange String to Avoid Character Pair",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "String",
+    "Sorting",
+    "Counting"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

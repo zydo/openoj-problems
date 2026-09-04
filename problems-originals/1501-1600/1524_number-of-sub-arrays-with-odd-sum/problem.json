@@ -4,8 +4,14 @@
   "id": 1524,
   "slug": "number-of-sub-arrays-with-odd-sum",
   "title": "Number of Sub-arrays With Odd Sum",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

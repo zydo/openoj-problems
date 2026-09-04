@@ -4,8 +4,12 @@
   "id": 1945,
   "slug": "fold-digit-sums-of-letter-values",
   "title": "Fold Digit Sums of Letter Values",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

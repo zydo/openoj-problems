@@ -4,8 +4,12 @@
   "id": 338,
   "slug": "set-bit-counts-to-n",
   "title": "Set-Bit Counts to N",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Bit Manipulation"
   ],

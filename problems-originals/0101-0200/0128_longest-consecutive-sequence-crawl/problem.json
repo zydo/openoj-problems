@@ -4,8 +4,13 @@
   "id": 128,
   "slug": "longest-consecutive-sequence-crawl",
   "title": "Longest Consecutive Sequence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Union-Find"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Union-Find"

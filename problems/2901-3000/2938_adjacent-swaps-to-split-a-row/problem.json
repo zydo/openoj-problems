@@ -4,8 +4,13 @@
   "id": 2938,
   "slug": "adjacent-swaps-to-split-a-row",
   "title": "Adjacent Swaps To Split A Row",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
+    "Two Pointers",
     "String",
     "Greedy"
   ],

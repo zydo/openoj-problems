@@ -4,8 +4,12 @@
   "id": 3216,
   "slug": "lexicographically-smallest-string-after-a-swap",
   "title": "Lexicographically Smallest String After a Swap",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

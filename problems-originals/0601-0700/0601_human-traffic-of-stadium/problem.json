@@ -4,8 +4,11 @@
   "id": 601,
   "slug": "human-traffic-of-stadium",
   "title": "Human Traffic of Stadium",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

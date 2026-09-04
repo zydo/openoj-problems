@@ -4,8 +4,13 @@
   "id": 423,
   "slug": "reconstruct-original-digits-from-english",
   "title": "Reconstruct Original Digits from English",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String"

@@ -4,10 +4,16 @@
   "id": 3691,
   "slug": "banking-the-biggest-subarray-spreads-ii",
   "title": "Banking The Biggest Subarray Spreads II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Segment Tree",
     "Heap (Priority Queue)"
   ],
   "invocation": {

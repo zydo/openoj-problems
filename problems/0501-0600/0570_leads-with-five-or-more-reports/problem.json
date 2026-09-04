@@ -4,10 +4,13 @@
   "id": 570,
   "slug": "leads-with-five-or-more-reports",
   "title": "Leads With Five or More Reports",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

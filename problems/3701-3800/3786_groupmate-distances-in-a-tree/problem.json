@@ -4,8 +4,13 @@
   "id": 3786,
   "slug": "groupmate-distances-in-a-tree",
   "title": "Groupmate Distances In A Tree",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Depth-First Search"

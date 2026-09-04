@@ -4,8 +4,11 @@
   "id": 2010,
   "slug": "the-number-of-seniors-and-juniors-to-join-the-company-ii",
   "title": "The Number of Seniors and Juniors to Join the Company II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

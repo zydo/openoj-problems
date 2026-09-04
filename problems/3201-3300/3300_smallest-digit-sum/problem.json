@@ -4,8 +4,12 @@
   "id": 3300,
   "slug": "smallest-digit-sum",
   "title": "Smallest Digit Sum",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

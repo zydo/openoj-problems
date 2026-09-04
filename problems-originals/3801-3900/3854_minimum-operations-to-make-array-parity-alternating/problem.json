@@ -4,8 +4,12 @@
   "id": 3854,
   "slug": "minimum-operations-to-make-array-parity-alternating",
   "title": "Minimum Operations to Make Array Parity Alternating",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

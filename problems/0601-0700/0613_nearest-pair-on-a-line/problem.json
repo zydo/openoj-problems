@@ -4,10 +4,14 @@
   "id": 613,
   "slug": "nearest-pair-on-a-line",
   "title": "Nearest Pair on a Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database",
+    "Nearest Pair of Points"
   ],
   "invocation": {
     "type": "sql",

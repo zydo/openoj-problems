@@ -4,8 +4,13 @@
   "id": 2046,
   "slug": "sort-linked-list-already-sorted-using-absolute-values",
   "title": "Sort Linked List Already Sorted Using Absolute Values",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Linked List",
     "Two Pointers",
     "Sorting"

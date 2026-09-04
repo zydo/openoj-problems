@@ -4,8 +4,11 @@
   "id": 896,
   "slug": "single-direction-array",
   "title": "Single-Direction Array",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

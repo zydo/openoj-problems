@@ -4,8 +4,12 @@
   "id": 2917,
   "slug": "find-the-k-or-of-an-array",
   "title": "Find the K-or of an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

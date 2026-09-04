@@ -3,8 +3,15 @@
   "id": 3218,
   "slug": "minimum-cost-for-cutting-cake-i",
   "title": "Minimum Cost for Cutting Cake I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
     "Greedy",
     "Sorting"
   ],

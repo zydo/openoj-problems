@@ -4,11 +4,17 @@
   "id": 1051,
   "slug": "students-out-of-line",
   "title": "Students Out of Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Sorting",
     "Counting Sort"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Counting Sort",
+    "Bubble Sort"
   ],
   "invocation": {
     "type": "function",

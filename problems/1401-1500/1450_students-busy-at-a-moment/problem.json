@@ -4,8 +4,11 @@
   "id": 1450,
   "slug": "students-busy-at-a-moment",
   "title": "Students Busy at a Moment",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

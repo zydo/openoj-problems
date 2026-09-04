@@ -4,10 +4,16 @@
   "id": 1409,
   "slug": "move-to-front-queries",
   "title": "Move-to-Front Queries",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Binary Indexed Tree",
+    "Simulation",
+    "Sqrt Decomposition"
   ],
   "invocation": {
     "type": "function",

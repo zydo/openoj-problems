@@ -4,8 +4,15 @@
   "id": 2509,
   "slug": "cycle-length-queries-in-a-tree",
   "title": "Cycle Length Queries in a Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Tree",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Binary Tree",

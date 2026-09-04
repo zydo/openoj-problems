@@ -3,11 +3,17 @@
   "id": 3608,
   "slug": "minimum-time-for-k-connected-components",
   "title": "Minimum Time for K Connected Components",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Union Find",
     "Sorting",
     "Graph"
+  ],
+  "topics": [
+    "Binary Search",
+    "Union-Find",
+    "Graph Theory",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

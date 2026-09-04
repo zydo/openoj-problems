@@ -4,8 +4,14 @@
   "id": 2662,
   "slug": "minimum-cost-of-a-path-with-special-roads",
   "title": "Minimum Cost of a Path With Special Roads",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Array",
     "Graph Theory",
     "Heap (Priority Queue)",

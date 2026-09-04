@@ -4,12 +4,20 @@
   "id": 3391,
   "slug": "counting-ones-across-cube-layers",
   "title": "Counting Ones Across Cube Layers",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Design",
     "Heap (Priority Queue)",
     "Hash Table",
     "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

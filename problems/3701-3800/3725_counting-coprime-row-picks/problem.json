@@ -4,11 +4,19 @@
   "id": 3725,
   "slug": "counting-coprime-row-picks",
   "title": "Counting Coprime Row Picks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Matrix",
+    "Combinatorics",
     "Number Theory"
   ],
   "invocation": {

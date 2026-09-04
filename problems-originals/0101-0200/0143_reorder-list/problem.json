@@ -4,8 +4,14 @@
   "id": 143,
   "slug": "reorder-list",
   "title": "Reorder List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Two Pointers",
+    "Stack",
+    "Recursion"
+  ],
+  "topics": [
     "Linked List",
     "Two Pointers",
     "Stack",

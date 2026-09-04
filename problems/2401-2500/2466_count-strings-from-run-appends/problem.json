@@ -4,8 +4,11 @@
   "id": 2466,
   "slug": "count-strings-from-run-appends",
   "title": "Count Strings From Run Appends",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

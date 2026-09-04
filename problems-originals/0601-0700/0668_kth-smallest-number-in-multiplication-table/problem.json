@@ -3,8 +3,12 @@
   "id": 668,
   "slug": "kth-smallest-number-in-multiplication-table",
   "title": "Kth Smallest Number in Multiplication Table",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Binary Search"
+  ],
+  "topics": [
+    "Math",
     "Binary Search"
   ],
   "invocation": {

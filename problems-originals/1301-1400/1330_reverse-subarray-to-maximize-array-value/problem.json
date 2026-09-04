@@ -4,8 +4,13 @@
   "id": 1330,
   "slug": "reverse-subarray-to-maximize-array-value",
   "title": "Reverse Subarray To Maximize Array Value",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

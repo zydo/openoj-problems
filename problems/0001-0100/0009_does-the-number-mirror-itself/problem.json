@@ -4,8 +4,11 @@
   "id": 9,
   "slug": "does-the-number-mirror-itself",
   "title": "Does The Number Mirror Itself",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

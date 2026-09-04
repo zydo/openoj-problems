@@ -4,9 +4,16 @@
   "id": 2673,
   "slug": "balancing-root-to-leaf-costs",
   "title": "Balancing Root-to-Leaf Costs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Greedy",
+    "Tree",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Greedy",
     "Tree",
     "Binary Tree"

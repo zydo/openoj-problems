@@ -4,10 +4,15 @@
   "id": 3714,
   "slug": "longest-fair-share-substring-ii",
   "title": "The Longest Fair-Share Substring II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
     "Prefix Sum"
   ],
   "invocation": {

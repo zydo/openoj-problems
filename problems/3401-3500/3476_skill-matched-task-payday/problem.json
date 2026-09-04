@@ -4,11 +4,17 @@
   "id": 3476,
   "slug": "skill-matched-task-payday",
   "title": "Skill-Matched Task Payday",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

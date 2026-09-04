@@ -4,8 +4,11 @@
   "id": 3502,
   "slug": "fare-to-every-spot-in-line",
   "title": "Fare To Every Spot In Line",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

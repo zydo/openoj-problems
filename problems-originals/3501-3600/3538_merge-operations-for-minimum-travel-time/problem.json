@@ -4,8 +4,13 @@
   "id": 3538,
   "slug": "merge-operations-for-minimum-travel-time",
   "title": "Merge Operations for Minimum Travel Time",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

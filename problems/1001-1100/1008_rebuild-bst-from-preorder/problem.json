@@ -4,12 +4,20 @@
   "id": 1008,
   "slug": "rebuild-bst-from-preorder",
   "title": "Rebuild BST From Preorder",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Binary Tree",
     "Binary Search Tree",
     "Recursion",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Tree",
+    "Binary Search Tree",
+    "Monotonic Stack",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

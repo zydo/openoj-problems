@@ -4,11 +4,22 @@
   "id": 1908,
   "slug": "stone-pile-standoff",
   "title": "Stone Pile Standoff",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Bit Manipulation",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Brainteaser",
+    "Game Theory",
+    "Nim Game",
+    "Sprague–Grundy Theorem",
+    "Impartial Game"
   ],
   "invocation": {
     "type": "function",

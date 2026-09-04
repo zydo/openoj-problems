@@ -4,8 +4,12 @@
   "id": 3738,
   "slug": "longest-non-decreasing-subarray-after-replacing-at-most-one-element",
   "title": "Longest Non-Decreasing Subarray After Replacing at Most One Element",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

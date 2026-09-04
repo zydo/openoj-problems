@@ -4,8 +4,14 @@
   "id": 1236,
   "slug": "web-crawler",
   "title": "Web Crawler",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Interactive"
+  ],
+  "topics": [
     "String",
     "Depth-First Search",
     "Breadth-First Search",

@@ -4,12 +4,20 @@
   "id": 995,
   "slug": "fewest-window-flips",
   "title": "Fewest Window Flips",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Difference Array",
     "Queue",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Brute-Force Search"
   ],
   "invocation": {
     "type": "function",

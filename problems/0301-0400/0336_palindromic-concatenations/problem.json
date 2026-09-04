@@ -4,11 +4,18 @@
   "id": 336,
   "slug": "palindromic-concatenations",
   "title": "Palindromic Concatenations",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Hash Table",
     "Trie"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Trie",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

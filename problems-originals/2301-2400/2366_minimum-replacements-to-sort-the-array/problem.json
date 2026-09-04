@@ -3,8 +3,13 @@
   "id": 2366,
   "slug": "minimum-replacements-to-sort-the-array",
   "title": "Minimum Replacements to Sort the Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

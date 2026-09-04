@@ -4,10 +4,13 @@
   "id": 2995,
   "slug": "watchers-who-went-live",
   "title": "Watchers Who Went Live",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

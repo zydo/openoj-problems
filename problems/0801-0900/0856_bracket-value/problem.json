@@ -4,8 +4,13 @@
   "id": 856,
   "slug": "bracket-value",
   "title": "Bracket Value",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Bracket Sequences"

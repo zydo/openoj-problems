@@ -3,12 +3,20 @@
   "id": 3283,
   "slug": "maximum-number-of-moves-to-kill-all-pawns",
   "title": "Maximum Number of Moves to Kill All Pawns",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Breadth-First Search",
     "Bit Manipulation",
     "Game Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Game Theory",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

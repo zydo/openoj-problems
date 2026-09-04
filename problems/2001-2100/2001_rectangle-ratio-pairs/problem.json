@@ -4,12 +4,19 @@
   "id": 2001,
   "slug": "rectangle-ratio-pairs",
   "title": "Rectangle Ratio Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Math",
     "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory"
   ],
   "invocation": {
     "type": "function",

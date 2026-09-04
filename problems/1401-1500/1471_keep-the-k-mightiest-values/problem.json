@@ -4,9 +4,14 @@
   "id": 1471,
   "slug": "keep-the-k-mightiest-values",
   "title": "Keep the K Mightiest Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
     "Sorting"
   ],
   "invocation": {

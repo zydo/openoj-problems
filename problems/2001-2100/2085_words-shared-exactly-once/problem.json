@@ -4,8 +4,14 @@
   "id": 2085,
   "slug": "words-shared-exactly-once",
   "title": "Words Shared Exactly Once",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

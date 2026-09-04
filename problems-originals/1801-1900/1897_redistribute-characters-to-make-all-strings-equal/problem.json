@@ -4,8 +4,13 @@
   "id": 1897,
   "slug": "redistribute-characters-to-make-all-strings-equal",
   "title": "Redistribute Characters to Make All Strings Equal",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

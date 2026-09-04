@@ -4,8 +4,12 @@
   "id": 50,
   "slug": "raise-to-a-power",
   "title": "Raise To A Power",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "Recursion"
   ],

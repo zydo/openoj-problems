@@ -4,8 +4,11 @@
   "id": 163,
   "slug": "ranges-the-sorted-list-skips",
   "title": "Ranges The Sorted List Skips",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

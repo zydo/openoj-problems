@@ -4,9 +4,14 @@
   "id": 3364,
   "slug": "the-lightest-positive-window",
   "title": "The Lightest Positive Window",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Sliding Window",
     "Prefix Sum"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 3680,
   "slug": "generate-schedule",
   "title": "Generate Schedule",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

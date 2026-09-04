@@ -4,8 +4,12 @@
   "id": 1572,
   "slug": "summing-a-squares-two-diagonals",
   "title": "Summing a Square's Two Diagonals",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

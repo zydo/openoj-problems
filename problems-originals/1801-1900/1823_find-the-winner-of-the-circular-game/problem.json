@@ -3,8 +3,15 @@
   "id": 1823,
   "slug": "find-the-winner-of-the-circular-game",
   "title": "Find the Winner of the Circular Game",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Recursion",
+    "Queue",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Recursion",

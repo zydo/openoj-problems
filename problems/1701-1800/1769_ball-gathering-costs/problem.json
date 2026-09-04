@@ -4,8 +4,13 @@
   "id": 1769,
   "slug": "ball-gathering-costs",
   "title": "Ball Gathering Costs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "String",
     "Prefix Sum"

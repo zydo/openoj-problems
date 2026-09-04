@@ -4,11 +4,19 @@
   "id": 632,
   "slug": "tightest-multi-list-range",
   "title": "Tightest Multi-List Range",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "Sorting",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sliding Window",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

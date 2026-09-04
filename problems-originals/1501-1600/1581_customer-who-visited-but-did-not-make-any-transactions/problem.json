@@ -4,8 +4,11 @@
   "id": 1581,
   "slug": "customer-who-visited-but-did-not-make-any-transactions",
   "title": "Customer Who Visited but Did Not Make Any Transactions",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

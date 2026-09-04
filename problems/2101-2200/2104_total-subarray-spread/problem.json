@@ -4,8 +4,13 @@
   "id": 2104,
   "slug": "total-subarray-spread",
   "title": "Total Subarray Spread",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

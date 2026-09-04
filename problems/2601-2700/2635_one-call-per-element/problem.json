@@ -4,9 +4,12 @@
   "id": 2635,
   "slug": "one-call-per-element",
   "title": "One Call Per Element",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

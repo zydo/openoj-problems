@@ -4,8 +4,12 @@
   "id": 3991,
   "slug": "sort-array-using-prefix-reversals",
   "title": "Sort Array Using Prefix Reversals",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Breadth-First Search",
+    "Array"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -4,8 +4,14 @@
   "id": 1275,
   "slug": "find-winner-on-a-tic-tac-toe-game",
   "title": "Find Winner on a Tic Tac Toe Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix",

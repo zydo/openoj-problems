@@ -4,8 +4,13 @@
   "id": 2567,
   "slug": "minimum-score-by-changing-two-elements",
   "title": "Minimum Score by Changing Two Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

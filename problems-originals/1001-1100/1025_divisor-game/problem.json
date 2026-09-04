@@ -4,8 +4,15 @@
   "id": 1025,
   "slug": "divisor-game",
   "title": "Divisor Game",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Brainteaser",
+    "Game Theory",
+    "Impartial Game"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Brainteaser",

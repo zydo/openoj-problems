@@ -4,8 +4,13 @@
   "id": 1252,
   "slug": "cells-with-odd-values-in-a-matrix",
   "title": "Cells with Odd Values in a Matrix",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Simulation"

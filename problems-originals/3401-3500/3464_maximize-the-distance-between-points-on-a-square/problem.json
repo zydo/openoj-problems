@@ -3,11 +3,18 @@
   "id": 3464,
   "slug": "maximize-the-distance-between-points-on-a-square",
   "title": "Maximize the Distance Between Points on a Square",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Binary Search",
     "Geometry",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Geometry",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

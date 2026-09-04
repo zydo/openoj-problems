@@ -4,8 +4,12 @@
   "id": 345,
   "slug": "reverse-vowels-of-a-string",
   "title": "Reverse Vowels of a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

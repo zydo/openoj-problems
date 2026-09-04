@@ -4,11 +4,17 @@
   "id": 3784,
   "slug": "whittling-down-to-one-letter",
   "title": "Whittling Down To One Letter",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

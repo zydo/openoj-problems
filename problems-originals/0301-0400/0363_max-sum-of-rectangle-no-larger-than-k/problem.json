@@ -3,11 +3,18 @@
   "id": 363,
   "slug": "max-sum-of-rectangle-no-larger-than-k",
   "title": "Max Sum of Rectangle No Larger Than K",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Prefix Sum",
     "Binary Search",
     "Balanced BST"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Matrix",
+    "Prefix Sum",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

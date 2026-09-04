@@ -4,8 +4,11 @@
   "id": 2047,
   "slug": "number-of-valid-words-in-a-sentence",
   "title": "Number of Valid Words in a Sentence",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

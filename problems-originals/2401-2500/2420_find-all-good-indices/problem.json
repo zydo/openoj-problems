@@ -4,8 +4,13 @@
   "id": 2420,
   "slug": "find-all-good-indices",
   "title": "Find All Good Indices",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

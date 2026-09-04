@@ -3,11 +3,19 @@
   "id": 621,
   "slug": "task-scheduler",
   "title": "Task Scheduler",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Counting"
   ],
   "invocation": {
     "type": "function",

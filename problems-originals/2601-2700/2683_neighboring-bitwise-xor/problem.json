@@ -4,8 +4,12 @@
   "id": 2683,
   "slug": "neighboring-bitwise-xor",
   "title": "Neighboring Bitwise XOR",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

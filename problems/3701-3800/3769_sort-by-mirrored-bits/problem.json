@@ -4,8 +4,12 @@
   "id": 3769,
   "slug": "sort-by-mirrored-bits",
   "title": "Sort By Mirrored Bits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

@@ -4,10 +4,13 @@
   "id": 3384,
   "slug": "passing-dominance-by-half",
   "title": "Passing Dominance By Half",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

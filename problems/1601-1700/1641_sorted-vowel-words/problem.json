@@ -4,8 +4,13 @@
   "id": 1641,
   "slug": "sorted-vowel-words",
   "title": "Sorted Vowel Words",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Combinatorics"

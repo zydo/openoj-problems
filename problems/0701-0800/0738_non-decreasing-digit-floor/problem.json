@@ -4,8 +4,12 @@
   "id": 738,
   "slug": "non-decreasing-digit-floor",
   "title": "Non-Decreasing Digit Floor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

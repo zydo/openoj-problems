@@ -4,10 +4,15 @@
   "id": 252,
   "slug": "conflict-free-schedule",
   "title": "Conflict-Free Schedule",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Quicksort"
   ],
   "invocation": {
     "type": "function",

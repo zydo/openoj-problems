@@ -4,9 +4,14 @@
   "id": 3995,
   "slug": "cheapest-string-rewrite-iii",
   "title": "Cheapest String Rewrite III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Shortest Path",
     "Dynamic Programming"
   ],
   "invocation": {

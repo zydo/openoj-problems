@@ -4,8 +4,12 @@
   "id": 1052,
   "slug": "baristas-calm-stretch",
   "title": "The Barista's Calm Stretch",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

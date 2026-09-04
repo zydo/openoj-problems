@@ -4,8 +4,13 @@
   "id": 4007,
   "slug": "widest-possible-fence",
   "title": "Widest Possible Fence",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Hash Table",
+    "Sorting",
+    "Greedy"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

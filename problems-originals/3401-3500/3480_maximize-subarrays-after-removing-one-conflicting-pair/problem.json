@@ -3,10 +3,16 @@
   "id": 3480,
   "slug": "maximize-subarrays-after-removing-one-conflicting-pair",
   "title": "Maximize Subarrays After Removing One Conflicting Pair",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Segment Tree",
+    "Enumeration",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

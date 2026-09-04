@@ -4,10 +4,17 @@
   "id": 3759,
   "slug": "beaten-by-at-least-k-others",
   "title": "Beaten By At Least K Others",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
+    "Sorting",
+    "Quickselect"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
     "Sorting",
     "Quickselect"
   ],

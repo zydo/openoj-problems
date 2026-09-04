@@ -4,8 +4,12 @@
   "id": 3647,
   "slug": "the-heaviest-two-bag-load",
   "title": "The Heaviest Two-Bag Load",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

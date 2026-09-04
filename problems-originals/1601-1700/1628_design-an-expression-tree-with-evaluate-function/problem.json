@@ -4,8 +4,16 @@
   "id": 1628,
   "slug": "design-an-expression-tree-with-evaluate-function",
   "title": "Design an Expression Tree With Evaluate Function",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Tree"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Stack",

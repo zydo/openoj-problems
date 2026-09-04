@@ -3,8 +3,14 @@
   "id": 1125,
   "slug": "smallest-sufficient-team",
   "title": "Smallest Sufficient Team",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

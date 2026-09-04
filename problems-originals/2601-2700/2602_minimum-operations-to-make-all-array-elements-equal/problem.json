@@ -3,8 +3,14 @@
   "id": 2602,
   "slug": "minimum-operations-to-make-all-array-elements-equal",
   "title": "Minimum Operations to Make All Array Elements Equal",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting",

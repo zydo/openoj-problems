@@ -4,8 +4,13 @@
   "id": 3077,
   "slug": "k-blocks-with-alternating-weights",
   "title": "K Blocks with Alternating Weights",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

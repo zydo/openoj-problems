@@ -4,8 +4,11 @@
   "id": 3308,
   "slug": "find-top-performing-driver",
   "title": "Find Top Performing Driver",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

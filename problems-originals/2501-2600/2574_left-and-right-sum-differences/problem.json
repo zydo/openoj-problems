@@ -4,8 +4,12 @@
   "id": 2574,
   "slug": "left-and-right-sum-differences",
   "title": "Left and Right Sum Differences",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

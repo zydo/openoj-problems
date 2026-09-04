@@ -4,8 +4,12 @@
   "id": 3803,
   "slug": "count-residue-prefixes",
   "title": "Count Residue Prefixes",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

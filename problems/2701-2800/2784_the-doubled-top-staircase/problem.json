@@ -4,9 +4,14 @@
   "id": 2784,
   "slug": "the-doubled-top-staircase",
   "title": "The Doubled-Top Staircase",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Sorting"
   ],
   "invocation": {

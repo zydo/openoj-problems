@@ -4,8 +4,11 @@
   "id": 3622,
   "slug": "check-divisibility-by-digit-sum-and-product",
   "title": "Check Divisibility by Digit Sum and Product",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

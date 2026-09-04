@@ -4,8 +4,12 @@
   "id": 875,
   "slug": "slowest-clearing-rate",
   "title": "Slowest Clearing Rate",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

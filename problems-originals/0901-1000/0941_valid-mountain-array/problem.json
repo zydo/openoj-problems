@@ -4,8 +4,11 @@
   "id": 941,
   "slug": "valid-mountain-array",
   "title": "Valid Mountain Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

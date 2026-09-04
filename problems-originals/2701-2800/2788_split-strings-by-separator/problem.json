@@ -4,8 +4,12 @@
   "id": 2788,
   "slug": "split-strings-by-separator",
   "title": "Split Strings by Separator",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

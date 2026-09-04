@@ -4,8 +4,11 @@
   "id": 2787,
   "slug": "ways-to-express-an-integer-as-sum-of-powers",
   "title": "Ways to Express an Integer as Sum of Powers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

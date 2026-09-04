@@ -4,8 +4,15 @@
   "id": 947,
   "slug": "most-stones-removed-with-same-row-or-column",
   "title": "Most Stones Removed with Same Row or Column",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Depth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Bipartite Graph"
+  ],
+  "topics": [
     "Hash Table",
     "Depth-First Search",
     "Union-Find",

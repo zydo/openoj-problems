@@ -4,8 +4,12 @@
   "id": 3409,
   "slug": "longest-chain-of-shrinking-gaps",
   "title": "Longest Chain Of Shrinking Gaps",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

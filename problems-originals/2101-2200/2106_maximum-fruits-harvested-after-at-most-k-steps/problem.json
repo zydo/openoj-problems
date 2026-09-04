@@ -3,12 +3,18 @@
   "id": 2106,
   "slug": "maximum-fruits-harvested-after-at-most-k-steps",
   "title": "Maximum Fruits Harvested After at Most K Steps",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
     "Prefix Sum",
     "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

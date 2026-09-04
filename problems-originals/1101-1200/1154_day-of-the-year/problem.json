@@ -4,8 +4,12 @@
   "id": 1154,
   "slug": "day-of-the-year",
   "title": "Day of the Year",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

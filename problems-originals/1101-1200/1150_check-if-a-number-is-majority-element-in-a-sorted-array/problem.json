@@ -4,8 +4,12 @@
   "id": 1150,
   "slug": "check-if-a-number-is-majority-element-in-a-sorted-array",
   "title": "Check If a Number Is Majority Element in a Sorted Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

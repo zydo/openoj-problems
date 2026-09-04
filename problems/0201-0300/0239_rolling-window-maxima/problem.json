@@ -4,12 +4,20 @@
   "id": 239,
   "slug": "rolling-window-maxima",
   "title": "Rolling Window Maxima",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Queue",
     "Sliding Window",
     "Deque",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Monotonic Queue",
+    "Range Minimum/Maximum Query"
   ],
   "invocation": {
     "type": "function",

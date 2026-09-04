@@ -4,11 +4,18 @@
   "id": 889,
   "slug": "pre-post-binary-tree-reconstruction",
   "title": "Pre/Post Binary Tree Reconstruction",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Divide and Conquer",
+    "Binary Tree"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Tree",
     "Binary Tree"
   ],
   "invocation": {

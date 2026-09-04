@@ -4,11 +4,17 @@
   "id": 2925,
   "slug": "loot-the-tree-keep-every-path-alive",
   "title": "Loot The Tree, Keep Every Path Alive",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

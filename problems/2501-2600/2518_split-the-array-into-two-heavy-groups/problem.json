@@ -4,8 +4,12 @@
   "id": 2518,
   "slug": "split-the-array-into-two-heavy-groups",
   "title": "Split the Array Into Two Heavy Groups",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

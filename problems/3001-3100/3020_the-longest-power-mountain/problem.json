@@ -4,8 +4,13 @@
   "id": 3020,
   "slug": "the-longest-power-mountain",
   "title": "The Longest Power Mountain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

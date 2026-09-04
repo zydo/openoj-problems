@@ -4,8 +4,11 @@
   "id": 1592,
   "slug": "even-out-spaces-between-words",
   "title": "Even Out the Spaces Between Words",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

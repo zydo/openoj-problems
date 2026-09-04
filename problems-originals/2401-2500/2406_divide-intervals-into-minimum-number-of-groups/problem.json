@@ -3,11 +3,19 @@
   "id": 2406,
   "slug": "divide-intervals-into-minimum-number-of-groups",
   "title": "Divide Intervals Into Minimum Number of Groups",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Greedy",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

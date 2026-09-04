@@ -3,8 +3,13 @@
   "id": 3333,
   "slug": "find-the-original-typed-string-ii",
   "title": "Find the Original Typed String II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Prefix Sum"

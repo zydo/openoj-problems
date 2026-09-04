@@ -4,8 +4,13 @@
   "id": 2022,
   "slug": "repack-into-a-grid",
   "title": "Repack into a Grid",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

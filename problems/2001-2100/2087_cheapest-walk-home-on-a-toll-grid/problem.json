@@ -4,8 +4,12 @@
   "id": 2087,
   "slug": "cheapest-walk-home-on-a-toll-grid",
   "title": "Cheapest Walk Home on a Toll Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

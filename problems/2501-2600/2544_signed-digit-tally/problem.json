@@ -4,8 +4,11 @@
   "id": 2544,
   "slug": "signed-digit-tally",
   "title": "Signed Digit Tally",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

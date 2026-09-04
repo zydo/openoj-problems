@@ -4,8 +4,12 @@
   "id": 3232,
   "slug": "find-if-digit-game-can-be-won",
   "title": "Find if Digit Game Can Be Won",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

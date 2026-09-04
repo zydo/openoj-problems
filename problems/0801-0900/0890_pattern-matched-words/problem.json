@@ -4,8 +4,13 @@
   "id": 890,
   "slug": "pattern-matched-words",
   "title": "Pattern-Matched Words",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

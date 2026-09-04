@@ -4,8 +4,14 @@
   "id": 515,
   "slug": "row-by-row-maximum",
   "title": "Row-by-Row Maximum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

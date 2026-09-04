@@ -4,10 +4,13 @@
   "id": 1412,
   "slug": "middle-of-the-pack-contestants",
   "title": "Middle-of-the-Pack Contestants",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

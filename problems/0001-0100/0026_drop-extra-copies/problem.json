@@ -4,8 +4,12 @@
   "id": 26,
   "slug": "drop-extra-copies",
   "title": "Drop Extra Copies",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

@@ -4,8 +4,12 @@
   "id": 1502,
   "slug": "rearrange-into-equal-steps",
   "title": "Rearrange Into Equal Steps",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

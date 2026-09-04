@@ -4,12 +4,19 @@
   "id": 536,
   "slug": "binary-tree-from-bracketed-digits",
   "title": "Binary Tree from Bracketed Digits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Stack",
     "Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
   ],
   "invocation": {
     "type": "function",

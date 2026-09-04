@@ -4,8 +4,15 @@
   "id": 572,
   "slug": "subtree-of-another-tree",
   "title": "Subtree of Another Tree",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "String Matching",
+    "Binary Tree",
+    "Hash Function"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "String Matching",

@@ -4,10 +4,13 @@
   "id": 2159,
   "slug": "sort-each-column-its-own-way",
   "title": "Sort Each Column Its Own Way",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

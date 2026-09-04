@@ -4,8 +4,13 @@
   "id": 2390,
   "slug": "removing-stars-from-a-string",
   "title": "Removing Stars From a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

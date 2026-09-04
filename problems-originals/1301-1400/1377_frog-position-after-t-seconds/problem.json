@@ -4,11 +4,17 @@
   "id": 1377,
   "slug": "frog-position-after-t-seconds",
   "title": "Frog Position After T Seconds",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

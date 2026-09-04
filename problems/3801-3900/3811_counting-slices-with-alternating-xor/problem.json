@@ -4,8 +4,14 @@
   "id": 3811,
   "slug": "counting-slices-with-alternating-xor",
   "title": "Counting Slices With Alternating XOR",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming",

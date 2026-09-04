@@ -4,11 +4,18 @@
   "id": 1774,
   "slug": "nearest-price-sundae",
   "title": "Nearest Price Sundae",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Knapsack Problem"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Knapsack Problem",
+    "Mixed Knapsack"
   ],
   "invocation": {
     "type": "function",

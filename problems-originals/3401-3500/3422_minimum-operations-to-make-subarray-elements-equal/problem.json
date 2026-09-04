@@ -4,8 +4,15 @@
   "id": 3422,
   "slug": "minimum-operations-to-make-subarray-elements-equal",
   "title": "Minimum Operations to Make Subarray Elements Equal",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Sliding Window",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

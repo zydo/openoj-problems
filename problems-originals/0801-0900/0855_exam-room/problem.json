@@ -3,10 +3,15 @@
   "id": 855,
   "slug": "exam-room",
   "title": "Exam Room",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

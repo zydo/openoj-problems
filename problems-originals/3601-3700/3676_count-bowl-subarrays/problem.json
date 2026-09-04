@@ -4,8 +4,13 @@
   "id": 3676,
   "slug": "count-bowl-subarrays",
   "title": "Count Bowl Subarrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

@@ -4,11 +4,18 @@
   "id": 902,
   "slug": "digit-set-bound-count",
   "title": "Digit-Set Bound Count",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Dynamic Programming",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "String",
+    "Binary Search",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

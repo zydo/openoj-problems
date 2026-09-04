@@ -4,8 +4,11 @@
   "id": 1115,
   "slug": "tick-tock-alternation",
   "title": "Tick-Tock Alternation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

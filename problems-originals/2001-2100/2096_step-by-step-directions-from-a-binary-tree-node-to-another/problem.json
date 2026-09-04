@@ -4,8 +4,16 @@
   "id": 2096,
   "slug": "step-by-step-directions-from-a-binary-tree-node-to-another",
   "title": "Step-By-Step Directions From a Binary Tree Node to Another",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "Binary Lifting",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
     "String",
     "Tree",
     "Depth-First Search",

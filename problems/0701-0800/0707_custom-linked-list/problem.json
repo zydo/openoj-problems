@@ -4,8 +4,12 @@
   "id": 707,
   "slug": "custom-linked-list",
   "title": "Custom Linked List",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List",
+    "Design"
+  ],
+  "topics": [
     "Linked List",
     "Design"
   ],

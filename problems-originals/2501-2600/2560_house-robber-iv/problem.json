@@ -3,9 +3,15 @@
   "id": 2560,
   "slug": "house-robber-iv",
   "title": "House Robber IV",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

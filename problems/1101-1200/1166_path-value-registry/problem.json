@@ -4,11 +4,17 @@
   "id": 1166,
   "slug": "path-value-registry",
   "title": "Path Value Registry",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
     "Design"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
   ],
   "invocation": {
     "type": "design",

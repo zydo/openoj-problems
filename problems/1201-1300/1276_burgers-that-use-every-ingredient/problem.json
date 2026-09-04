@@ -4,8 +4,11 @@
   "id": 1276,
   "slug": "burgers-that-use-every-ingredient",
   "title": "Burgers That Use Every Ingredient",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

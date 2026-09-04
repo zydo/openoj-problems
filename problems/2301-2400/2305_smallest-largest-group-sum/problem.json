@@ -4,8 +4,15 @@
   "id": 2305,
   "slug": "smallest-largest-group-sum",
   "title": "Smallest Largest Group Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Backtracking",

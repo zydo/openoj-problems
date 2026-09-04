@@ -4,8 +4,12 @@
   "id": 1760,
   "slug": "minimum-largest-pile",
   "title": "Minimum Largest Pile",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

@@ -4,8 +4,13 @@
   "id": 110,
   "slug": "does-the-tree-split-evenly",
   "title": "Does The Tree Split Evenly?",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

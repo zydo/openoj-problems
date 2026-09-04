@@ -4,10 +4,17 @@
   "id": 1444,
   "slug": "splitting-an-apple-pizza",
   "title": "Splitting an Apple Pizza",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization",
     "Matrix",
     "Prefix Sum"
   ],

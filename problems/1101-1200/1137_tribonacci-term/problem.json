@@ -4,10 +4,15 @@
   "id": 1137,
   "slug": "tribonacci-term",
   "title": "Tribonacci Term",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Memoization"
   ],
   "invocation": {
     "type": "function",

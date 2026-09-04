@@ -4,8 +4,13 @@
   "id": 3147,
   "slug": "taking-maximum-energy-from-the-mystic-dungeon",
   "title": "Taking Maximum Energy From the Mystic Dungeon",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

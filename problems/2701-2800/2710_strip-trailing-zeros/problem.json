@@ -4,8 +4,11 @@
   "id": 2710,
   "slug": "strip-trailing-zeros",
   "title": "Strip Trailing Zeros",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

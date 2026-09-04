@@ -4,8 +4,12 @@
   "id": 1839,
   "slug": "longest-substring-of-all-vowels-in-order",
   "title": "Longest Substring Of All Vowels in Order",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

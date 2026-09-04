@@ -4,9 +4,16 @@
   "id": 1198,
   "slug": "smallest-value-in-every-row",
   "title": "Smallest Value in Every Row",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Matrix",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
     "Matrix",
     "Counting"
   ],

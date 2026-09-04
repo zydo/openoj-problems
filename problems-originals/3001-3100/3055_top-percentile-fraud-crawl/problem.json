@@ -4,8 +4,11 @@
   "id": 3055,
   "slug": "top-percentile-fraud-crawl",
   "title": "Top Percentile Fraud",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

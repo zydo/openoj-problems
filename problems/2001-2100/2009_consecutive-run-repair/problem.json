@@ -4,11 +4,17 @@
   "id": 2009,
   "slug": "consecutive-run-repair",
   "title": "Consecutive Run Repair",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Sliding Window",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

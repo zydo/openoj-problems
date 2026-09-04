@@ -3,11 +3,17 @@
   "id": 2024,
   "slug": "maximize-the-confusion-of-an-exam",
   "title": "Maximize the Confusion of an Exam",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Sliding Window",
     "Two Pointers"
+  ],
+  "topics": [
+    "String",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

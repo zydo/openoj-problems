@@ -4,8 +4,15 @@
   "id": 1338,
   "slug": "reduce-array-size-to-the-half",
   "title": "Reduce Array Size to The Half",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

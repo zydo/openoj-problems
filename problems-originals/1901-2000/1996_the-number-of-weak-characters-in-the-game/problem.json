@@ -3,11 +3,18 @@
   "id": 1996,
   "slug": "the-number-of-weak-characters-in-the-game",
   "title": "The Number of Weak Characters in the Game",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Sorting",
     "Greedy",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
+    "Greedy",
+    "Sorting",
     "Monotonic Stack"
   ],
   "invocation": {

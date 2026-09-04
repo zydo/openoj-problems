@@ -4,11 +4,17 @@
   "id": 1712,
   "slug": "three-way-splits-with-nondecreasing-sums",
   "title": "Three-Way Splits With Nondecreasing Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Prefix Sum",
     "Binary Search",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

@@ -3,8 +3,16 @@
   "id": 464,
   "slug": "can-i-win",
   "title": "Can I Win",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Memoization",
+    "Game Theory",
+    "Bitmask"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Bit Manipulation",

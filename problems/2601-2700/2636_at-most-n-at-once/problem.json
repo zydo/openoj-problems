@@ -4,11 +4,14 @@
   "id": 2636,
   "slug": "at-most-n-at-once",
   "title": "At Most N At Once",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Queue",
     "Simulation"
+  ],
+  "topics": [
+    "Concurrency"
   ],
   "invocation": {
     "type": "interactive",

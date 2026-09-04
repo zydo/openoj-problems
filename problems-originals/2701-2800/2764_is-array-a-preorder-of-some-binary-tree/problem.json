@@ -4,8 +4,14 @@
   "id": 2764,
   "slug": "is-array-a-preorder-of-some-binary-tree",
   "title": "Is Array a Preorder of Some Binary Tree",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Depth-First Search",

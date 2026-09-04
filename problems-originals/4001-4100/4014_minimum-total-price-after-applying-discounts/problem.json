@@ -4,8 +4,13 @@
   "id": 4014,
   "slug": "minimum-total-price-after-applying-discounts",
   "title": "Minimum Total Price After Applying Discounts",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Greedy",
+    "Sorting",
+    "Math"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

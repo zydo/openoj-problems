@@ -4,8 +4,11 @@
   "id": 2703,
   "slug": "return-length-of-arguments-passed",
   "title": "Return Length of Arguments Passed",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

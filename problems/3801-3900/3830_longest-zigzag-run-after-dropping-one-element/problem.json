@@ -4,8 +4,13 @@
   "id": 3830,
   "slug": "longest-zigzag-run-after-dropping-one-element",
   "title": "Longest Zigzag Run After Dropping One Element",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Enumeration"

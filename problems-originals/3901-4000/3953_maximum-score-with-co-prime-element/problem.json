@@ -4,8 +4,16 @@
   "id": 3953,
   "slug": "maximum-score-with-co-prime-element",
   "title": "Maximum Score with Co-Prime Element",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

@@ -4,8 +4,13 @@
   "id": 2996,
   "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
   "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting"

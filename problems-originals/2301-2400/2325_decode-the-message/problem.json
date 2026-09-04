@@ -4,8 +4,12 @@
   "id": 2325,
   "slug": "decode-the-message",
   "title": "Decode the Message",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

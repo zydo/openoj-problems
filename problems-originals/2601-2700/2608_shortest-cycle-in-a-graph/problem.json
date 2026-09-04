@@ -4,8 +4,12 @@
   "id": 2608,
   "slug": "shortest-cycle-in-a-graph",
   "title": "Shortest Cycle in a Graph",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Breadth-First Search",
     "Graph Theory"
   ],

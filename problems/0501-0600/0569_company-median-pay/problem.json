@@ -4,10 +4,13 @@
   "id": 569,
   "slug": "company-median-pay",
   "title": "Company Median Pay",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

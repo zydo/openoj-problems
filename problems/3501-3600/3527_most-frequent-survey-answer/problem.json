@@ -4,8 +4,14 @@
   "id": 3527,
   "slug": "most-frequent-survey-answer",
   "title": "Most Frequent Survey Answer",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

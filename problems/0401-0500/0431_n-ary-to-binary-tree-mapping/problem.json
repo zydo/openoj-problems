@@ -4,8 +4,15 @@
   "id": 431,
   "slug": "n-ary-to-binary-tree-mapping",
   "title": "N-ary to Binary Tree Mapping",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

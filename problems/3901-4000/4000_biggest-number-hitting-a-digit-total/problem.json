@@ -4,10 +4,15 @@
   "id": 4000,
   "slug": "biggest-number-hitting-a-digit-total",
   "title": "The Biggest Number Hitting A Digit Total",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Greedy"
+  ],
+  "topics": [
+    "Greedy",
+    "Math",
+    "String"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,15 @@
   "id": 2448,
   "slug": "cheapest-common-level",
   "title": "Cheapest Common Level",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

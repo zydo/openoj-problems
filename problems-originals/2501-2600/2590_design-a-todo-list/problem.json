@@ -4,8 +4,15 @@
   "id": 2590,
   "slug": "design-a-todo-list",
   "title": "Design a Todo List",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

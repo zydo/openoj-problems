@@ -4,8 +4,11 @@
   "id": 2124,
   "slug": "check-if-all-as-appears-before-all-bs",
   "title": "Check if All A's Appears Before All B's",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

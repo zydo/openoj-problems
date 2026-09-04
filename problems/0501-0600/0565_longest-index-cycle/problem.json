@@ -4,8 +4,12 @@
   "id": 565,
   "slug": "longest-index-cycle",
   "title": "Longest Index Cycle",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search"
   ],

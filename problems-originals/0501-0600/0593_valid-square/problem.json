@@ -4,8 +4,12 @@
   "id": 593,
   "slug": "valid-square",
   "title": "Valid Square",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

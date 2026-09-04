@@ -4,8 +4,13 @@
   "id": 3040,
   "slug": "maximum-number-of-operations-with-the-same-score-ii-crawl",
   "title": "Maximum Number of Operations With the Same Score II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Memoization"

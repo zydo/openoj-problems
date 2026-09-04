@@ -4,8 +4,13 @@
   "id": 1835,
   "slug": "find-xor-sum-of-all-pairs-bitwise-and",
   "title": "Find XOR Sum of All Pairs Bitwise AND",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Bit Manipulation"

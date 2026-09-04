@@ -4,10 +4,13 @@
   "id": 578,
   "slug": "top-answered-survey-question",
   "title": "Top Answered Survey Question",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

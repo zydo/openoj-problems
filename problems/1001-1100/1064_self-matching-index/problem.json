@@ -4,8 +4,12 @@
   "id": 1064,
   "slug": "self-matching-index",
   "title": "Self-Matching Index",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

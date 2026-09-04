@@ -4,10 +4,13 @@
   "id": 1532,
   "slug": "latest-three-parcels-per-sender",
   "title": "Latest Three Parcels per Sender",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

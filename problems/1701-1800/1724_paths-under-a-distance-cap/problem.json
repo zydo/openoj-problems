@@ -4,12 +4,21 @@
   "id": 1724,
   "slug": "paths-under-a-distance-cap",
   "title": "Paths Under A Distance Cap",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph Theory",
     "Union Find",
     "Design",
     "Sorting"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Design",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Minimum Spanning Tree"
   ],
   "invocation": {
     "type": "design",

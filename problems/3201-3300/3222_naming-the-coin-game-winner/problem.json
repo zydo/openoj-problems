@@ -4,9 +4,14 @@
   "id": 3222,
   "slug": "naming-the-coin-game-winner",
   "title": "Naming The Coin Game Winner",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
+    "Game Theory"
+  ],
+  "topics": [
+    "Math",
+    "Simulation",
     "Game Theory"
   ],
   "invocation": {

@@ -4,8 +4,11 @@
   "id": 1134,
   "slug": "armstrong-number",
   "title": "Armstrong Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

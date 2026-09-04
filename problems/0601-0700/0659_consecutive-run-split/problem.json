@@ -4,8 +4,14 @@
   "id": 659,
   "slug": "consecutive-run-split",
   "title": "Consecutive Run Split",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

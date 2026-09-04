@@ -4,8 +4,13 @@
   "id": 2895,
   "slug": "minimum-processing-time",
   "title": "Minimum Processing Time",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

@@ -4,8 +4,16 @@
   "id": 877,
   "slug": "stone-game",
   "title": "Stone Game",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Minimax",
+    "Game Theory",
+    "Zero-Sum Game"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

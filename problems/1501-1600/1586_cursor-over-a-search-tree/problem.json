@@ -4,11 +4,19 @@
   "id": 1586,
   "slug": "cursor-over-a-search-tree",
   "title": "Cursor Over A Search Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Binary Search Tree",
     "Design",
+    "Binary Tree",
+    "Iterator"
+  ],
+  "topics": [
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Search Tree",
     "Binary Tree",
     "Iterator"
   ],

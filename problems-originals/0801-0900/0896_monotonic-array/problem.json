@@ -4,8 +4,11 @@
   "id": 896,
   "slug": "monotonic-array",
   "title": "Monotonic Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 1397,
   "slug": "count-strings-avoiding-a-pattern",
   "title": "Count Strings Avoiding a Pattern",
-  "difficulty": "H5",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "String Matching"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "String Matching"

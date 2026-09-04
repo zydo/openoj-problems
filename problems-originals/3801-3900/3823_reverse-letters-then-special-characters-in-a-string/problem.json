@@ -4,8 +4,13 @@
   "id": 3823,
   "slug": "reverse-letters-then-special-characters-in-a-string",
   "title": "Reverse Letters Then Special Characters in a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Simulation"

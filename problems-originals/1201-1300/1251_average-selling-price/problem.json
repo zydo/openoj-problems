@@ -4,8 +4,11 @@
   "id": 1251,
   "slug": "average-selling-price",
   "title": "Average Selling Price",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

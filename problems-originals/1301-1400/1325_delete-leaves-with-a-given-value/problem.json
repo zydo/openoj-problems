@@ -4,8 +4,13 @@
   "id": 1325,
   "slug": "delete-leaves-with-a-given-value",
   "title": "Delete Leaves With a Given Value",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree"

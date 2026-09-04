@@ -4,10 +4,13 @@
   "id": 1479,
   "slug": "category-sales-by-weekday",
   "title": "Category Sales by Weekday",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

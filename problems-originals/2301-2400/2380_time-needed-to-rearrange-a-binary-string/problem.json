@@ -4,8 +4,13 @@
   "id": 2380,
   "slug": "time-needed-to-rearrange-a-binary-string",
   "title": "Time Needed to Rearrange a Binary String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Simulation"

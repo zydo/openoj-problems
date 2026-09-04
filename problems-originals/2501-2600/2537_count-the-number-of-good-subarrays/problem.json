@@ -3,10 +3,15 @@
   "id": 2537,
   "slug": "count-the-number-of-good-subarrays",
   "title": "Count the Number of Good Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

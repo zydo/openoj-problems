@@ -4,8 +4,12 @@
   "id": 1410,
   "slug": "html-entity-parser",
   "title": "HTML Entity Parser",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

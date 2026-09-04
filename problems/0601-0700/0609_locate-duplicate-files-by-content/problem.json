@@ -4,8 +4,13 @@
   "id": 609,
   "slug": "locate-duplicate-files-by-content",
   "title": "Locate Duplicate Files by Content",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

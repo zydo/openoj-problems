@@ -4,8 +4,11 @@
   "id": 935,
   "slug": "knight-dialer",
   "title": "Knight Dialer",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

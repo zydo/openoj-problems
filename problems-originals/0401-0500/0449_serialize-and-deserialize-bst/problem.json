@@ -4,8 +4,17 @@
   "id": 449,
   "slug": "serialize-and-deserialize-bst",
   "title": "Serialize and Deserialize BST",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "String",
     "Tree",
     "Depth-First Search",

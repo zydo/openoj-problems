@@ -4,8 +4,14 @@
   "id": 2561,
   "slug": "rearranging-fruits",
   "title": "Rearranging Fruits",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sort"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

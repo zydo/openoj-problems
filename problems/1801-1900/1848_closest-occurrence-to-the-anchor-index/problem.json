@@ -4,8 +4,11 @@
   "id": 1848,
   "slug": "closest-occurrence-to-the-anchor-index",
   "title": "Closest Occurrence to the Anchor Index",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 2464,
   "slug": "fewest-factor-sharing-segments",
   "title": "Fewest Factor-Sharing Segments",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

@@ -4,8 +4,17 @@
   "id": 365,
   "slug": "water-and-jug-problem",
   "title": "Water and Jug Problem",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Bézout's Lemma",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor",
+    "Extended Euclidean Algorithm"
+  ],
+  "topics": [
     "Math",
     "Depth-First Search",
     "Breadth-First Search",

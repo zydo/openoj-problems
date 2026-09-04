@@ -4,8 +4,12 @@
   "id": 2847,
   "slug": "smallest-number-with-given-digit-product",
   "title": "Smallest Number With Given Digit Product",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

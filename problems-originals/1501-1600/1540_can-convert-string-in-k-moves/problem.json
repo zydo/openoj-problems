@@ -4,8 +4,12 @@
   "id": 1540,
   "slug": "can-convert-string-in-k-moves",
   "title": "Can Convert String in K Moves",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

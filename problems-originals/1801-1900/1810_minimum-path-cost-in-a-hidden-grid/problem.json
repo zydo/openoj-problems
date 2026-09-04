@@ -3,11 +3,21 @@
   "id": 1810,
   "slug": "minimum-path-cost-in-a-hidden-grid",
   "title": "Minimum Path Cost in a Hidden Grid",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "DFS",
     "Shortest Path",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Interactive",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "interactive",

@@ -4,8 +4,19 @@
   "id": 2123,
   "slug": "minimum-operations-to-remove-adjacent-ones-in-matrix",
   "title": "Minimum Operations to Remove Adjacent Ones in Matrix",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Graph Theory",
+    "Matrix",
+    "Edmonds–Karp Algorithm",
+    "MPM Algorithm",
+    "Push-Relabel Algorithm",
+    "Flow Network",
+    "Dinic's Algorithm"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Graph Theory",

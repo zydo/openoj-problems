@@ -4,8 +4,15 @@
   "id": 353,
   "slug": "growing-serpent-game",
   "title": "Growing Serpent Game",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
     "Hash Table",
     "Design",
     "Queue",

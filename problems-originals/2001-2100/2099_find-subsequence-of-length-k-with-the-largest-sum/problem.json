@@ -4,8 +4,14 @@
   "id": 2099,
   "slug": "find-subsequence-of-length-k-with-the-largest-sum",
   "title": "Find Subsequence of Length K With the Largest Sum",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

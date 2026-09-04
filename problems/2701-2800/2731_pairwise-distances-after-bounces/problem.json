@@ -4,9 +4,15 @@
   "id": 2731,
   "slug": "pairwise-distances-after-bounces",
   "title": "Pairwise Distances After Bounces",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Brainteaser",
     "Sorting",
     "Prefix Sum"
   ],

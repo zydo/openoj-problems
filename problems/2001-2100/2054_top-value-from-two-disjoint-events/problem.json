@@ -4,12 +4,19 @@
   "id": 2054,
   "slug": "top-value-from-two-disjoint-events",
   "title": "Top Value From Two Disjoint Events",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
     "Dynamic Programming",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

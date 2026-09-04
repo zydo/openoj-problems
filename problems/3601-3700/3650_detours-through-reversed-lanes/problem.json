@@ -4,8 +4,13 @@
   "id": 3650,
   "slug": "detours-through-reversed-lanes",
   "title": "Detours Through Reversed Lanes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"

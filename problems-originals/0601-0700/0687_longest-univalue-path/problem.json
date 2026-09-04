@@ -4,8 +4,14 @@
   "id": 687,
   "slug": "longest-univalue-path",
   "title": "Longest Univalue Path",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Binary Tree",

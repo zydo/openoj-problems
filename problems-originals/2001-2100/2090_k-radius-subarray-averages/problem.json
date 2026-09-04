@@ -4,8 +4,12 @@
   "id": 2090,
   "slug": "k-radius-subarray-averages",
   "title": "K Radius Subarray Averages",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

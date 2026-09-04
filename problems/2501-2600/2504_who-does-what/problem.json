@@ -4,10 +4,13 @@
   "id": 2504,
   "slug": "who-does-what",
   "title": "Who Does What",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

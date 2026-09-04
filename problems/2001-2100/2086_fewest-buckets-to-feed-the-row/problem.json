@@ -4,8 +4,13 @@
   "id": 2086,
   "slug": "fewest-buckets-to-feed-the-row",
   "title": "Fewest Buckets to Feed the Row",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Greedy"

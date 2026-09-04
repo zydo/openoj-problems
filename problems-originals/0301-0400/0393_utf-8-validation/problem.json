@@ -4,8 +4,12 @@
   "id": 393,
   "slug": "utf-8-validation",
   "title": "UTF-8 Validation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

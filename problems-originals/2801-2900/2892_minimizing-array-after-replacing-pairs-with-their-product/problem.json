@@ -4,8 +4,13 @@
   "id": 2892,
   "slug": "minimizing-array-after-replacing-pairs-with-their-product",
   "title": "Minimizing Array After Replacing Pairs With Their Product",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Greedy"

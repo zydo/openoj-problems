@@ -3,10 +3,15 @@
   "id": 1493,
   "slug": "longest-subarray-of-1s-after-deleting-one-element",
   "title": "Longest Subarray of 1's After Deleting One Element",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Sliding Window",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

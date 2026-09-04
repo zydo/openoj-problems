@@ -4,11 +4,20 @@
   "id": 2842,
   "slug": "counting-peak-beauty-k-letter-picks",
   "title": "Counting Peak-Beauty K-Letter Picks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
     "Math",
     "Combinatorics"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Combinatorics",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

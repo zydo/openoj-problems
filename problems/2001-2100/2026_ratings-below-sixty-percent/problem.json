@@ -4,10 +4,13 @@
   "id": 2026,
   "slug": "ratings-below-sixty-percent",
   "title": "Ratings Below Sixty Percent",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

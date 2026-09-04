@@ -4,8 +4,13 @@
   "id": 3775,
   "slug": "reverse-words-with-same-vowel-count",
   "title": "Reverse Words With Same Vowel Count",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Simulation"

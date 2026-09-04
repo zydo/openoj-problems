@@ -4,8 +4,13 @@
   "id": 1370,
   "slug": "increasing-decreasing-string",
   "title": "Increasing Decreasing String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

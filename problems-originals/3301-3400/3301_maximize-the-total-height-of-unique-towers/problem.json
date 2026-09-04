@@ -4,8 +4,13 @@
   "id": 3301,
   "slug": "maximize-the-total-height-of-unique-towers",
   "title": "Maximize the Total Height of Unique Towers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

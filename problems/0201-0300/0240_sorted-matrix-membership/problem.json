@@ -4,11 +4,17 @@
   "id": 240,
   "slug": "sorted-matrix-membership",
   "title": "Sorted Matrix Membership",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "Binary Search",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

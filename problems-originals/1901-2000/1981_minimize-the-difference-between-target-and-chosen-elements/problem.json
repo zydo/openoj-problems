@@ -4,8 +4,13 @@
   "id": 1981,
   "slug": "minimize-the-difference-between-target-and-chosen-elements",
   "title": "Minimize the Difference Between Target and Chosen Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

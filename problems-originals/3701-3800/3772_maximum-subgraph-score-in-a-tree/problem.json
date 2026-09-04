@@ -3,11 +3,17 @@
   "id": 3772,
   "slug": "maximum-subgraph-score-in-a-tree",
   "title": "Maximum Subgraph Score in a Tree",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "DFS"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

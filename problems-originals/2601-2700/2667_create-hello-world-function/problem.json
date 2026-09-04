@@ -4,8 +4,11 @@
   "id": 2667,
   "slug": "create-hello-world-function",
   "title": "Create Hello World Function",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

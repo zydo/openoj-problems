@@ -4,8 +4,11 @@
   "id": 1669,
   "slug": "merge-in-between-linked-lists",
   "title": "Merge In Between Linked Lists",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

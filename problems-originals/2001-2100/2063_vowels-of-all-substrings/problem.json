@@ -4,8 +4,14 @@
   "id": 2063,
   "slug": "vowels-of-all-substrings",
   "title": "Vowels of All Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming",

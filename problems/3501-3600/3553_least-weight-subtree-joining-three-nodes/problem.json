@@ -4,11 +4,18 @@
   "id": 3553,
   "slug": "least-weight-subtree-joining-three-nodes",
   "title": "Least-Weight Subtree Joining Three Nodes",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "DFS",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

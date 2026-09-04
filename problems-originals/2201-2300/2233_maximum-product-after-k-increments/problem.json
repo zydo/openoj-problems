@@ -4,8 +4,13 @@
   "id": 2233,
   "slug": "maximum-product-after-k-increments",
   "title": "Maximum Product After K Increments",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Heap (Priority Queue)"

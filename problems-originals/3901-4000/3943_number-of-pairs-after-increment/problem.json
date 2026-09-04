@@ -4,8 +4,14 @@
   "id": 3943,
   "slug": "number-of-pairs-after-increment",
   "title": "Number of Pairs After Increment",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Divide and Conquer",

@@ -4,10 +4,15 @@
   "id": 2158,
   "slug": "fresh-paint-laid-down-each-day",
   "title": "Fresh Paint Laid Down Each Day",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Union Find"
+  ],
+  "topics": [
+    "Array",
+    "Segment Tree",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

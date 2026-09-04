@@ -4,8 +4,11 @@
   "id": 574,
   "slug": "winning-candidate",
   "title": "Winning Candidate",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

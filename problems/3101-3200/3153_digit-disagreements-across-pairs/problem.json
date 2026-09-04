@@ -4,9 +4,15 @@
   "id": 3153,
   "slug": "digit-disagreements-across-pairs",
   "title": "Digit Disagreements Across Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Math",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Math",
     "Counting"
   ],

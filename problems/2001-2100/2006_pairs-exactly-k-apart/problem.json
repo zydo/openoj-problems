@@ -4,8 +4,13 @@
   "id": 2006,
   "slug": "pairs-exactly-k-apart",
   "title": "Pairs Exactly K Apart",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

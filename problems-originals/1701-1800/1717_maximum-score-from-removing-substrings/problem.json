@@ -3,11 +3,16 @@
   "id": 1717,
   "slug": "maximum-score-from-removing-substrings",
   "title": "Maximum Score From Removing Substrings",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Stack",
     "Greedy",
     "String"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Greedy"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 1121,
   "slug": "split-into-rising-sequences",
   "title": "Split Into Rising Sequences",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Counting"
   ],

@@ -4,8 +4,15 @@
   "id": 2280,
   "slug": "minimum-lines-to-represent-a-line-chart",
   "title": "Minimum Lines to Represent a Line Chart",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

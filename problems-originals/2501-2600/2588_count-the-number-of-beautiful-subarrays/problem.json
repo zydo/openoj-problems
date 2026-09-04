@@ -3,10 +3,16 @@
   "id": 2588,
   "slug": "count-the-number-of-beautiful-subarrays",
   "title": "Count the Number of Beautiful Subarrays",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Bit Manipulation",
     "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation",
     "Prefix Sum"
   ],
   "invocation": {

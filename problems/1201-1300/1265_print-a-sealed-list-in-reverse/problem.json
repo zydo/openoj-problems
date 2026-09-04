@@ -4,11 +4,17 @@
   "id": 1265,
   "slug": "print-a-sealed-list-in-reverse",
   "title": "Print a Sealed List in Reverse",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Linked List",
     "Recursion",
     "Interactive"
+  ],
+  "topics": [
+    "Linked List",
+    "Two Pointers",
+    "Stack",
+    "Recursion"
   ],
   "invocation": {
     "type": "interactive",

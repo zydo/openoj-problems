@@ -4,8 +4,15 @@
   "id": 1611,
   "slug": "minimum-one-bit-operations-to-make-integers-zero",
   "title": "Minimum One Bit Operations to Make Integers Zero",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Recursion",
+    "Memoization"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming",
     "Bit Manipulation",

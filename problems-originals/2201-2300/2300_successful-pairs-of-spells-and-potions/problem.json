@@ -3,8 +3,14 @@
   "id": 2300,
   "slug": "successful-pairs-of-spells-and-potions",
   "title": "Successful Pairs of Spells and Potions",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

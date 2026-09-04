@@ -4,10 +4,13 @@
   "id": 184,
   "slug": "top-salary-in-each-division",
   "title": "Top Salary In Each Division",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

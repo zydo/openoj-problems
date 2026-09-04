@@ -4,12 +4,18 @@
   "id": 1928,
   "slug": "cheapest-route-within-time",
   "title": "Cheapest Route Within Time",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Graph",
     "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Dijkstra's Algorithm"
   ],
   "invocation": {
     "type": "function",

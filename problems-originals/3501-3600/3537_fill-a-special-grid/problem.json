@@ -4,8 +4,13 @@
   "id": 3537,
   "slug": "fill-a-special-grid",
   "title": "Fill a Special Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Matrix"

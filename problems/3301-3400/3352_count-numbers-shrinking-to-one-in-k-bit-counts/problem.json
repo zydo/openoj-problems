@@ -4,8 +4,14 @@
   "id": 3352,
   "slug": "count-numbers-shrinking-to-one-in-k-bit-counts",
   "title": "Count Numbers Shrinking to One in K Bit Counts",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Combinatorics"
+  ],
+  "topics": [
     "Math",
     "String",
     "Dynamic Programming",

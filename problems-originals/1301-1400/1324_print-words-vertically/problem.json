@@ -4,8 +4,13 @@
   "id": 1324,
   "slug": "print-words-vertically",
   "title": "Print Words Vertically",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "String",
     "Simulation"

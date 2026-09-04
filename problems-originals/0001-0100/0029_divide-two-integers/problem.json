@@ -4,8 +4,12 @@
   "id": 29,
   "slug": "divide-two-integers",
   "title": "Divide Two Integers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

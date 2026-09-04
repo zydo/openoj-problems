@@ -4,8 +4,12 @@
   "id": 205,
   "slug": "isomorphic-strings",
   "title": "Isomorphic Strings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "String"
   ],

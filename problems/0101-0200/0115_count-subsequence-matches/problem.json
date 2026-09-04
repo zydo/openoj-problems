@@ -4,8 +4,12 @@
   "id": 115,
   "slug": "count-subsequence-matches",
   "title": "Count Subsequence Matches",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

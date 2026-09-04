@@ -4,8 +4,12 @@
   "id": 3282,
   "slug": "earning-your-way-across-the-array",
   "title": "Earning Your Way Across The Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

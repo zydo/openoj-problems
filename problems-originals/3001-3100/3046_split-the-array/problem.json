@@ -4,8 +4,13 @@
   "id": 3046,
   "slug": "split-the-array",
   "title": "Split the Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

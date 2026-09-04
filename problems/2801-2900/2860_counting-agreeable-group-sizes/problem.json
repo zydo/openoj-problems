@@ -4,8 +4,13 @@
   "id": 2860,
   "slug": "counting-agreeable-group-sizes",
   "title": "Counting Agreeable Group Sizes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Enumeration"

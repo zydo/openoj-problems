@@ -4,9 +4,15 @@
   "id": 3433,
   "slug": "counting-mentions-in-an-activity-feed",
   "title": "Counting Mentions In An Activity Feed",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sorting",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Math",
     "Sorting",
     "Simulation"
   ],

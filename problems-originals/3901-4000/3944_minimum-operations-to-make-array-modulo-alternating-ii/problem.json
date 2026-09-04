@@ -4,8 +4,12 @@
   "id": 3944,
   "slug": "minimum-operations-to-make-array-modulo-alternating-ii",
   "title": "Minimum Operations to Make Array Modulo Alternating II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

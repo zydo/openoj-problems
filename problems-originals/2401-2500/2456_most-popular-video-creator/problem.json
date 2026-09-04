@@ -4,8 +4,15 @@
   "id": 2456,
   "slug": "most-popular-video-creator",
   "title": "Most Popular Video Creator",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

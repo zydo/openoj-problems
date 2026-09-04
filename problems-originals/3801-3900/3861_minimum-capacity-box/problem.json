@@ -4,8 +4,11 @@
   "id": 3861,
   "slug": "minimum-capacity-box",
   "title": "Minimum Capacity Box",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

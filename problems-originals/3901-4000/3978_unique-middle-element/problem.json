@@ -4,8 +4,12 @@
   "id": 3978,
   "slug": "unique-middle-element",
   "title": "Unique Middle Element",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Array",
+    "Counting"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

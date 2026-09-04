@@ -4,10 +4,13 @@
   "id": 3220,
   "slug": "daily-parity-totals",
   "title": "Daily Parity Totals",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

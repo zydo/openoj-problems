@@ -4,10 +4,13 @@
   "id": 1355,
   "slug": "middling-hobbies",
   "title": "Middling Hobbies",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

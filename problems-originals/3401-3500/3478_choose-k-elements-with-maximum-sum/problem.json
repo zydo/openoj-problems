@@ -3,11 +3,16 @@
   "id": 3478,
   "slug": "choose-k-elements-with-maximum-sum",
   "title": "Choose K Elements With Maximum Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Heap",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

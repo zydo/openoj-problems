@@ -4,12 +4,18 @@
   "id": 2791,
   "slug": "tree-paths-that-rearrange-to-palindromes",
   "title": "Tree Paths That Rearrange to Palindromes",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Bit Manipulation",
     "Hash Table",
     "Tree",
     "DFS"
+  ],
+  "topics": [
+    "Hash Table",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

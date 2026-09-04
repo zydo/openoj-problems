@@ -4,8 +4,12 @@
   "id": 1389,
   "slug": "create-target-array-in-the-given-order",
   "title": "Create Target Array in the Given Order",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -4,8 +4,13 @@
   "id": 2435,
   "slug": "count-grid-paths-with-divisible-sum",
   "title": "Count Grid Paths With Divisible Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

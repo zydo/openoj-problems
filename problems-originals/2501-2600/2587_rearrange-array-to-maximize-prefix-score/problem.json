@@ -4,8 +4,14 @@
   "id": 2587,
   "slug": "rearrange-array-to-maximize-prefix-score",
   "title": "Rearrange Array to Maximize Prefix Score",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

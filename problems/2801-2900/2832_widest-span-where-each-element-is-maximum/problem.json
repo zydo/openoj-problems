@@ -4,8 +4,13 @@
   "id": 2832,
   "slug": "widest-span-where-each-element-is-maximum",
   "title": "Widest Span Where Each Element Is Maximum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

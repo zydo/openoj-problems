@@ -4,8 +4,12 @@
   "id": 1882,
   "slug": "dispatch-jobs-across-machines",
   "title": "Dispatch Jobs Across Machines",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Heap (Priority Queue)"
   ],

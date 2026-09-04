@@ -4,10 +4,13 @@
   "id": 2644,
   "slug": "champion-divisor",
   "title": "Champion Divisor",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Math"
+  ],
+  "topics": [
+    "Array"
   ],
   "invocation": {
     "type": "function",

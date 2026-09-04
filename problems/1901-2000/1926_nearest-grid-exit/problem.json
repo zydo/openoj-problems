@@ -4,12 +4,17 @@
   "id": 1926,
   "slug": "nearest-grid-exit",
   "title": "Nearest Grid Exit",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Breadth-First Search",
     "Matrix",
     "Queue"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

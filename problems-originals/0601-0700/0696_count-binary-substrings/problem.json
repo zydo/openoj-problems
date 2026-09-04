@@ -4,8 +4,12 @@
   "id": 696,
   "slug": "count-binary-substrings",
   "title": "Count Binary Substrings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

@@ -4,8 +4,14 @@
   "id": 3750,
   "slug": "minimum-number-of-flips-to-reverse-binary-string",
   "title": "Minimum Number of Flips to Reverse Binary String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Two Pointers",
+    "String",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Two Pointers",
     "String",

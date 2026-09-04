@@ -4,8 +4,14 @@
   "id": 1307,
   "slug": "cryptarithm-feasibility",
   "title": "Cryptarithm Feasibility",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "Array",
     "Math",
     "String",

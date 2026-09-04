@@ -4,8 +4,14 @@
   "id": 1889,
   "slug": "supplier-with-least-spare-room",
   "title": "Supplier with the Least Spare Room",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting",

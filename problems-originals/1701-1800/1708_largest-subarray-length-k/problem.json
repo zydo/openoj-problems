@@ -4,8 +4,12 @@
   "id": 1708,
   "slug": "largest-subarray-length-k",
   "title": "Largest Subarray Length K",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

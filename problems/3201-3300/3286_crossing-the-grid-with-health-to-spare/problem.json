@@ -4,10 +4,18 @@
   "id": 3286,
   "slug": "crossing-the-grid-with-health-to-spare",
   "title": "Crossing The Grid With Health To Spare",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Breadth-First Search",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
     "Matrix",
     "Shortest Path"
   ],

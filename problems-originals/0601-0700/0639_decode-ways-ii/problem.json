@@ -4,8 +4,12 @@
   "id": 639,
   "slug": "decode-ways-ii",
   "title": "Decode Ways II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

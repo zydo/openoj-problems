@@ -4,8 +4,12 @@
   "id": 1290,
   "slug": "convert-binary-number-in-a-linked-list-to-integer",
   "title": "Convert Binary Number in a Linked List to Integer",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List",
+    "Math"
+  ],
+  "topics": [
     "Linked List",
     "Math"
   ],

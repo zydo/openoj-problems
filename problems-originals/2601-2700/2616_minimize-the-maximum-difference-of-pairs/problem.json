@@ -3,10 +3,17 @@
   "id": 2616,
   "slug": "minimize-the-maximum-difference-of-pairs",
   "title": "Minimize the Maximum Difference of Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
     "Greedy",
     "Sorting"
   ],

@@ -4,10 +4,16 @@
   "id": 22,
   "slug": "all-balanced-bracket-strings",
   "title": "All Balanced Bracket Strings",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Backtracking"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bracket Sequences"
   ],
   "invocation": {
     "type": "function",

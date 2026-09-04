@@ -3,11 +3,16 @@
   "id": 3141,
   "slug": "maximum-hamming-distances",
   "title": "Maximum Hamming Distances",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Bit Manipulation",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Breadth-First Search"
   ],
   "invocation": {
     "type": "function",

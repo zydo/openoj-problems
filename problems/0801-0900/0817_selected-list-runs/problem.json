@@ -4,8 +4,13 @@
   "id": 817,
   "slug": "selected-list-runs",
   "title": "Selected List Runs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "topics": [
+    "Array",
     "Hash Table",
     "Linked List"
   ],

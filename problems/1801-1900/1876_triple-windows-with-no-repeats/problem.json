@@ -4,8 +4,14 @@
   "id": 1876,
   "slug": "triple-windows-with-no-repeats",
   "title": "Triple Windows With No Repeats",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Sliding Window",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
     "String",
     "Sliding Window",
     "Counting"

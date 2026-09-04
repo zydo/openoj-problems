@@ -4,8 +4,13 @@
   "id": 1552,
   "slug": "maximize-the-smallest-gap",
   "title": "Maximize the Smallest Gap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

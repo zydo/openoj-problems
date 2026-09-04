@@ -4,10 +4,13 @@
   "id": 2889,
   "slug": "the-month-by-city-temperature-grid",
   "title": "The Month-By-City Temperature Grid",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

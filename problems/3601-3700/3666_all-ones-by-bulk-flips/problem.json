@@ -4,11 +4,18 @@
   "id": 3666,
   "slug": "all-ones-by-bulk-flips",
   "title": "All Ones By Bulk Flips",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "String",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Breadth-First Search",
+    "Union-Find",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

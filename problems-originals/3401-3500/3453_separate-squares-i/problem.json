@@ -3,10 +3,14 @@
   "id": 3453,
   "slug": "separate-squares-i",
   "title": "Separate Squares I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Binary Search",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search"
   ],
   "invocation": {
     "type": "function",

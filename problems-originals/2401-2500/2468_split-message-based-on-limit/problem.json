@@ -4,8 +4,12 @@
   "id": 2468,
   "slug": "split-message-based-on-limit",
   "title": "Split Message Based on Limit",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

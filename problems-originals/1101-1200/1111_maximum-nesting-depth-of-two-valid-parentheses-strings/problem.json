@@ -4,8 +4,13 @@
   "id": 1111,
   "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
   "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Bracket Sequences"

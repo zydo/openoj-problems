@@ -4,8 +4,12 @@
   "id": 1426,
   "slug": "successor-hits",
   "title": "Successor Hits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

@@ -4,10 +4,16 @@
   "id": 1388,
   "slug": "keep-a-third-of-the-ring",
   "title": "Keep a Third of the Ring",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Interval DP"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

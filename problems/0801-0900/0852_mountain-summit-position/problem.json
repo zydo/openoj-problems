@@ -4,10 +4,15 @@
   "id": 852,
   "slug": "mountain-summit-position",
   "title": "Mountain Summit Position",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Ternary Search"
   ],
   "invocation": {
     "type": "function",

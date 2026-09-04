@@ -4,8 +4,13 @@
   "id": 1940,
   "slug": "longest-common-subsequence-between-sorted-arrays",
   "title": "Longest Common Subsequence Between Sorted Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

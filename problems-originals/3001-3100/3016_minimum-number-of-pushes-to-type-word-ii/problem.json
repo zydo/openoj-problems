@@ -4,8 +4,15 @@
   "id": 3016,
   "slug": "minimum-number-of-pushes-to-type-word-ii",
   "title": "Minimum Number of Pushes to Type Word II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Greedy",

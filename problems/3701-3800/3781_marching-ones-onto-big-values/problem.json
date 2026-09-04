@@ -4,8 +4,14 @@
   "id": 3781,
   "slug": "marching-ones-onto-big-values",
   "title": "Marching Ones Onto Big Values",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "String",
     "Greedy",

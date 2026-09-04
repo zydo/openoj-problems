@@ -4,8 +4,15 @@
   "id": 3027,
   "slug": "find-the-number-of-ways-to-place-people-ii",
   "title": "Find the Number of Ways to Place People II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Geometry",

@@ -4,8 +4,11 @@
   "id": 3492,
   "slug": "how-much-cargo-fits-on-deck",
   "title": "How Much Cargo Fits On Deck",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 81,
   "slug": "search-in-rotated-sorted-array-ii",
   "title": "Search in Rotated Sorted Array II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

@@ -4,8 +4,12 @@
   "id": 2810,
   "slug": "faulty-keyboard",
   "title": "Faulty Keyboard",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

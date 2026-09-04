@@ -4,8 +4,11 @@
   "id": 2230,
   "slug": "the-users-that-are-eligible-for-discount",
   "title": "The Users That Are Eligible for Discount",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 1053,
   "slug": "previous-permutation-with-one-swap",
   "title": "Previous Permutation With One Swap",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

@@ -4,8 +4,15 @@
   "id": 1617,
   "slug": "count-subtrees-with-max-distance-between-cities",
   "title": "Count Subtrees With Max Distance Between Cities",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Enumeration",
+    "Bitmask"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Bit Manipulation",
     "Tree",

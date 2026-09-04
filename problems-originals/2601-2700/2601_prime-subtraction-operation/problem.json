@@ -4,8 +4,15 @@
   "id": 2601,
   "slug": "prime-subtraction-operation",
   "title": "Prime Subtraction Operation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

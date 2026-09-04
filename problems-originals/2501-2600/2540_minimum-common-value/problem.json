@@ -4,8 +4,14 @@
   "id": 2540,
   "slug": "minimum-common-value",
   "title": "Minimum Common Value",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

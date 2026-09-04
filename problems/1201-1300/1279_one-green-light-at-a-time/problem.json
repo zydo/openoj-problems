@@ -4,8 +4,11 @@
   "id": 1279,
   "slug": "one-green-light-at-a-time",
   "title": "One Green Light at a Time",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

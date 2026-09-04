@@ -4,8 +4,12 @@
   "id": 1736,
   "slug": "latest-time-by-replacing-hidden-digits",
   "title": "Latest Time by Replacing Hidden Digits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

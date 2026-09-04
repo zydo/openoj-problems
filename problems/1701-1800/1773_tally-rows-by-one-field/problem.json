@@ -4,8 +4,12 @@
   "id": 1773,
   "slug": "tally-rows-by-one-field",
   "title": "Tally Rows by One Field",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

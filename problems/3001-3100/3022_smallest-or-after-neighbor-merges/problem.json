@@ -4,8 +4,13 @@
   "id": 3022,
   "slug": "smallest-or-after-neighbor-merges",
   "title": "Smallest OR After Neighbor Merges",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Bit Manipulation"

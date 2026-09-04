@@ -4,8 +4,15 @@
   "id": 745,
   "slug": "prefix-suffix-word-search",
   "title": "Prefix-Suffix Word Search",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Design",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

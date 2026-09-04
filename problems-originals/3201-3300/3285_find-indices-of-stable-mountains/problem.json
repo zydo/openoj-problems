@@ -4,8 +4,11 @@
   "id": 3285,
   "slug": "find-indices-of-stable-mountains",
   "title": "Find Indices of Stable Mountains",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

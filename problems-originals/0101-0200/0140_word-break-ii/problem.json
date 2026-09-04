@@ -4,8 +4,17 @@
   "id": 140,
   "slug": "word-break-ii",
   "title": "Word Break II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Trie",
+    "Memoization"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

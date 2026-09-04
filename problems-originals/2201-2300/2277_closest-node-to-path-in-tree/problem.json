@@ -4,8 +4,14 @@
   "id": 2277,
   "slug": "closest-node-to-path-in-tree",
   "title": "Closest Node to Path in Tree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Depth-First Search",

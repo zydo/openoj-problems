@@ -4,10 +4,16 @@
   "id": 1039,
   "slug": "cheapest-polygon-triangulation",
   "title": "Cheapest Polygon Triangulation",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Triangulation",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

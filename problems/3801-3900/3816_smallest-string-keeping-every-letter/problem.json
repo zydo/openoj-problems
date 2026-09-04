@@ -4,11 +4,18 @@
   "id": 3816,
   "slug": "smallest-string-keeping-every-letter",
   "title": "Smallest String Keeping Every Letter",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
     "String",
     "Greedy"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Greedy",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,18 @@
   "id": 1418,
   "slug": "cafe-order-tally",
   "title": "Cafe Order Tally",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

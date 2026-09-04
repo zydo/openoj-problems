@@ -4,8 +4,13 @@
   "id": 3983,
   "slug": "nesting-with-one-wildcard",
   "title": "Nesting With One Wildcard",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Two Pointers",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Two Pointers",
     "Greedy"

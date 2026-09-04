@@ -4,8 +4,15 @@
   "id": 2967,
   "slug": "minimum-cost-to-make-array-equalindromic",
   "title": "Minimum Cost to Make Array Equalindromic",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Binary Search",

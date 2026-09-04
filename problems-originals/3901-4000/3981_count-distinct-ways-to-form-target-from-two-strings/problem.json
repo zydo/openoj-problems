@@ -4,8 +4,12 @@
   "id": 3981,
   "slug": "count-distinct-ways-to-form-target-from-two-strings",
   "title": "Count Distinct Ways to Form Target from Two Strings",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Dynamic Programming",
+    "String"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

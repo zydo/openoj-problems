@@ -4,8 +4,13 @@
   "id": 436,
   "slug": "find-right-interval",
   "title": "Find Right Interval",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

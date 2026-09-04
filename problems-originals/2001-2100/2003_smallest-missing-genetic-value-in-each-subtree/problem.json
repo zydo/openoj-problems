@@ -4,8 +4,15 @@
   "id": 2003,
   "slug": "smallest-missing-genetic-value-in-each-subtree",
   "title": "Smallest Missing Genetic Value in Each Subtree",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Union-Find"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Tree",

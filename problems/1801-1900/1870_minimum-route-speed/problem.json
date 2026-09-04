@@ -4,8 +4,12 @@
   "id": 1870,
   "slug": "minimum-route-speed",
   "title": "Minimum Route Speed",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "topics": [
     "Array",
     "Binary Search"
   ],

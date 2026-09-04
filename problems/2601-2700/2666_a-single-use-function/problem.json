@@ -4,9 +4,12 @@
   "id": 2666,
   "slug": "a-single-use-function",
   "title": "A Single-Use Function",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

@@ -4,10 +4,14 @@
   "id": 3777,
   "slug": "straightening-ranges-of-a-two-letter-string",
   "title": "Straightening Ranges of a Two-Letter String",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "String",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

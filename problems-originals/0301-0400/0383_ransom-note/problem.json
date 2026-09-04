@@ -4,8 +4,13 @@
   "id": 383,
   "slug": "ransom-note",
   "title": "Ransom Note",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Counting"

@@ -4,8 +4,12 @@
   "id": 1974,
   "slug": "typing-on-a-circular-keyboard",
   "title": "Typing on a Circular Keyboard",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

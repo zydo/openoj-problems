@@ -3,8 +3,13 @@
   "id": 1888,
   "slug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
   "title": "Minimum Number of Flips to Make the Binary String Alternating",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Sliding Window"

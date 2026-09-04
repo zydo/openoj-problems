@@ -4,8 +4,12 @@
   "id": 2075,
   "slug": "unscramble-the-diagonal-cipher",
   "title": "Unscramble the Diagonal Cipher",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

@@ -4,10 +4,13 @@
   "id": 1384,
   "slug": "yearly-revenue-per-track",
   "title": "Yearly Revenue per Track",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

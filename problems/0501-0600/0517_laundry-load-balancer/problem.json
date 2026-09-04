@@ -4,8 +4,12 @@
   "id": 517,
   "slug": "laundry-load-balancer",
   "title": "Laundry Load Balancer",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

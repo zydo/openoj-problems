@@ -4,11 +4,16 @@
   "id": 1242,
   "slug": "same-site-page-harvest-across-threads",
   "title": "Same-Site Page Harvest Across Threads",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Graph Theory",
     "Concurrency",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Concurrency"
   ],
   "invocation": {
     "type": "interactive",

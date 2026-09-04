@@ -4,8 +4,11 @@
   "id": 579,
   "slug": "find-cumulative-salary-of-an-employee",
   "title": "Find Cumulative Salary of an Employee",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

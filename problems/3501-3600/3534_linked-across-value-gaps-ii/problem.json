@@ -4,10 +4,20 @@
   "id": 3534,
   "slug": "linked-across-value-gaps-ii",
   "title": "Linked Across Value Gaps II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
+    "Graph Theory",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy",
+    "Bit Manipulation",
     "Graph Theory",
     "Sorting"
   ],

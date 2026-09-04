@@ -4,10 +4,17 @@
   "id": 465,
   "slug": "fewest-debt-settlements",
   "title": "Fewest Debt Settlements",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Backtracking",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

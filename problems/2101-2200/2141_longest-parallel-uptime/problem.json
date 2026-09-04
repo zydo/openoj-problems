@@ -4,8 +4,14 @@
   "id": 2141,
   "slug": "longest-parallel-uptime",
   "title": "Longest Parallel Uptime",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

@@ -4,8 +4,12 @@
   "id": 670,
   "slug": "maximum-swap",
   "title": "Maximum Swap",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

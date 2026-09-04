@@ -4,8 +4,12 @@
   "id": 2566,
   "slug": "maximum-difference-by-remapping-a-digit",
   "title": "Maximum Difference by Remapping a Digit",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

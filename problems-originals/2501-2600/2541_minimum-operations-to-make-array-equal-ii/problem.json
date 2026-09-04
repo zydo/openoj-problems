@@ -4,8 +4,13 @@
   "id": 2541,
   "slug": "minimum-operations-to-make-array-equal-ii",
   "title": "Minimum Operations to Make Array Equal II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

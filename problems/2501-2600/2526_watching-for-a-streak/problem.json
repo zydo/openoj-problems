@@ -4,8 +4,15 @@
   "id": 2526,
   "slug": "watching-for-a-streak",
   "title": "Watching For A Streak",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Design",
+    "Queue",
+    "Counting",
+    "Data Stream"
+  ],
+  "topics": [
     "Hash Table",
     "Design",
     "Queue",

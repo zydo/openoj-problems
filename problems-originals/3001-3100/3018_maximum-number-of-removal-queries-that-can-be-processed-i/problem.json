@@ -4,8 +4,12 @@
   "id": 3018,
   "slug": "maximum-number-of-removal-queries-that-can-be-processed-i",
   "title": "Maximum Number of Removal Queries That Can Be Processed I",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

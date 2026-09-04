@@ -4,8 +4,11 @@
   "id": 2377,
   "slug": "sort-the-olympic-table",
   "title": "Sort the Olympic Table",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

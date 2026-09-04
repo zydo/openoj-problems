@@ -4,8 +4,11 @@
   "id": 1752,
   "slug": "check-if-array-is-sorted-and-rotated",
   "title": "Check if Array Is Sorted and Rotated",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

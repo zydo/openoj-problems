@@ -3,10 +3,18 @@
   "id": 3023,
   "slug": "find-pattern-in-infinite-stream-i",
   "title": "Find Pattern in Infinite Stream I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "KMP"
+  ],
+  "topics": [
+    "Array",
+    "Sliding Window",
+    "Rolling Hash",
+    "String Matching",
+    "Interactive",
+    "Hash Function"
   ],
   "invocation": {
     "type": "interactive",

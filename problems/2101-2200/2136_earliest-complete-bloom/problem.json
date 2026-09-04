@@ -4,8 +4,13 @@
   "id": 2136,
   "slug": "earliest-complete-bloom",
   "title": "Earliest Complete Bloom",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

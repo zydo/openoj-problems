@@ -4,8 +4,14 @@
   "id": 3483,
   "slug": "unique-3-digit-even-numbers",
   "title": "Unique 3-Digit Even Numbers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Recursion",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Recursion",

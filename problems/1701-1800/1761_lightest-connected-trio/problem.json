@@ -4,8 +4,12 @@
   "id": 1761,
   "slug": "lightest-connected-trio",
   "title": "Lightest Connected Trio",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Graph Theory",
+    "Enumeration"
+  ],
+  "topics": [
     "Graph Theory",
     "Enumeration"
   ],

@@ -4,8 +4,13 @@
   "id": 2706,
   "slug": "cheapest-pair-of-sweets",
   "title": "Cheapest Pair Of Sweets",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

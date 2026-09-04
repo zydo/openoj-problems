@@ -4,11 +4,17 @@
   "id": 3088,
   "slug": "mirror-free-rearrangement",
   "title": "Mirror-Free Rearrangement",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "String",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
   ],
   "invocation": {
     "type": "function",

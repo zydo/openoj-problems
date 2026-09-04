@@ -3,8 +3,13 @@
   "id": 1983,
   "slug": "widest-pair-of-indices-with-equal-range-sum",
   "title": "Widest Pair of Indices With Equal Range Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

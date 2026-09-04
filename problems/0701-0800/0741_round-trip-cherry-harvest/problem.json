@@ -4,8 +4,13 @@
   "id": 741,
   "slug": "round-trip-cherry-harvest",
   "title": "Round-Trip Cherry Harvest",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Matrix"
   ],

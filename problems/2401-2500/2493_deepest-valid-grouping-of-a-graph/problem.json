@@ -4,11 +4,17 @@
   "id": 2493,
   "slug": "deepest-valid-grouping-of-a-graph",
   "title": "Deepest Valid Grouping of a Graph",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "BFS",
     "Union Find"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

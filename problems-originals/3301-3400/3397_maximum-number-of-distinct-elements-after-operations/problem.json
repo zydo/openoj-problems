@@ -4,8 +4,13 @@
   "id": 3397,
   "slug": "maximum-number-of-distinct-elements-after-operations",
   "title": "Maximum Number of Distinct Elements After Operations",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

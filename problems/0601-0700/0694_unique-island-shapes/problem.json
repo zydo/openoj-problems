@@ -4,10 +4,20 @@
   "id": 694,
   "slug": "unique-island-shapes",
   "title": "Unique Island Shapes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Breadth-First Search",
+    "Matrix",
+    "Hash Function"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Sorting",
     "Matrix",
     "Hash Function"
   ],

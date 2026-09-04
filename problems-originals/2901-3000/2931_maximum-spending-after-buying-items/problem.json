@@ -4,8 +4,15 @@
   "id": 2931,
   "slug": "maximum-spending-after-buying-items",
   "title": "Maximum Spending After Buying Items",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting",

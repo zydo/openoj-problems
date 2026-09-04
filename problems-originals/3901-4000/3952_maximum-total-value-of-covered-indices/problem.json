@@ -4,8 +4,14 @@
   "id": 3952,
   "slug": "maximum-total-value-of-covered-indices",
   "title": "Maximum Total Value of Covered Indices",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "String",
     "Dynamic Programming",

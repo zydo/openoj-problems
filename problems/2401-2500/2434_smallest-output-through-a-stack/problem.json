@@ -4,8 +4,14 @@
   "id": 2434,
   "slug": "smallest-output-through-a-stack",
   "title": "Smallest Output Through a Stack",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Greedy"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Stack",

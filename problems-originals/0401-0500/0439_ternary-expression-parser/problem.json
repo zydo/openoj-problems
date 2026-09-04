@@ -4,8 +4,13 @@
   "id": 439,
   "slug": "ternary-expression-parser",
   "title": "Ternary Expression Parser",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Recursion"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Recursion"

@@ -4,8 +4,12 @@
   "id": 926,
   "slug": "rising-binary-repair",
   "title": "Rising Binary Repair",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

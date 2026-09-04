@@ -4,8 +4,13 @@
   "id": 2522,
   "slug": "partition-string-into-substrings-with-values-at-most-k",
   "title": "Partition String Into Substrings With Values at Most K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming",
     "Greedy"

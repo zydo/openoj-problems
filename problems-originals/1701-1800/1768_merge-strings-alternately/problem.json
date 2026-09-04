@@ -4,8 +4,12 @@
   "id": 1768,
   "slug": "merge-strings-alternately",
   "title": "Merge Strings Alternately",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

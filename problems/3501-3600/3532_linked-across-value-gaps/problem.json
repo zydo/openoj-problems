@@ -4,11 +4,18 @@
   "id": 3532,
   "slug": "linked-across-value-gaps",
   "title": "Linked Across Value Gaps I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Graph Theory",
     "Union-Find"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Union-Find",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

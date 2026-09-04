@@ -4,8 +4,13 @@
   "id": 1754,
   "slug": "largest-merge-of-two-strings",
   "title": "Largest Merge Of Two Strings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Greedy"

@@ -4,8 +4,11 @@
   "id": 2077,
   "slug": "paths-in-maze-that-lead-to-same-room",
   "title": "Paths in Maze That Lead to Same Room",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory"
+  ],
+  "topics": [
     "Graph Theory"
   ],
   "invocation": {

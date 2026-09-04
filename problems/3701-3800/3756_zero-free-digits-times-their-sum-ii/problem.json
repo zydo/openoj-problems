@@ -4,8 +4,13 @@
   "id": 3756,
   "slug": "zero-free-digits-times-their-sum-ii",
   "title": "Zero-Free Digits Times Their Sum II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "String",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Math",
     "String",
     "Prefix Sum"

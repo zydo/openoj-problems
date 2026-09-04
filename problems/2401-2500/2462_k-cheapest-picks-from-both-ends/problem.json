@@ -4,12 +4,18 @@
   "id": 2462,
   "slug": "k-cheapest-picks-from-both-ends",
   "title": "K Cheapest Picks From Both Ends",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Two Pointers",
     "Greedy",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Heap (Priority Queue)",
+    "Simulation"
   ],
   "invocation": {
     "type": "function",

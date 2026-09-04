@@ -4,11 +4,17 @@
   "id": 3828,
   "slug": "the-endpoint-alice-spares",
   "title": "The Endpoint Alice Spares",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Game Theory",
     "Math"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Brainteaser",
+    "Game Theory"
   ],
   "invocation": {
     "type": "function",

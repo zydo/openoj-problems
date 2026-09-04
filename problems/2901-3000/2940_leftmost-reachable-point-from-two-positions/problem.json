@@ -4,10 +4,19 @@
   "id": 2940,
   "slug": "leftmost-reachable-point-from-two-positions",
   "title": "Leftmost Reachable Point From Two Positions",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Monotonic Stack",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Stack",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Heap (Priority Queue)",
+    "Monotonic Stack"
   ],
   "invocation": {
     "type": "function",

@@ -3,9 +3,13 @@
   "id": 1109,
   "slug": "corporate-flight-bookings",
   "title": "Corporate Flight Bookings",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Prefix Sum"
   ],
   "invocation": {

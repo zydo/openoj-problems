@@ -4,8 +4,17 @@
   "id": 3957,
   "slug": "maximum-sum-of-m-non-overlapping-subarrays-ii",
   "title": "Maximum Sum of M Non-Overlapping Subarrays II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Dynamic Programming",

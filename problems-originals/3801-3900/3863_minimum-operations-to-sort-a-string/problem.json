@@ -4,8 +4,11 @@
   "id": 3863,
   "slug": "minimum-operations-to-sort-a-string",
   "title": "Minimum Operations to Sort a String",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

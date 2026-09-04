@@ -4,8 +4,12 @@
   "id": 2728,
   "slug": "count-houses-in-a-circular-street",
   "title": "Count Houses in a Circular Street",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Interactive"
+  ],
+  "topics": [
     "Array",
     "Interactive"
   ],

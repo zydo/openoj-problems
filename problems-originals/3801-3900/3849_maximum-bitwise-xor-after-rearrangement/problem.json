@@ -4,8 +4,13 @@
   "id": 3849,
   "slug": "maximum-bitwise-xor-after-rearrangement",
   "title": "Maximum Bitwise XOR After Rearrangement",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Bit Manipulation"

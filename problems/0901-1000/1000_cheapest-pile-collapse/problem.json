@@ -4,10 +4,15 @@
   "id": 1000,
   "slug": "cheapest-pile-collapse",
   "title": "Cheapest Pile Collapse",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Interval DP",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

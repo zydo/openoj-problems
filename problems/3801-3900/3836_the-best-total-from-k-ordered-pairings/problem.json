@@ -4,8 +4,12 @@
   "id": 3836,
   "slug": "the-best-total-from-k-ordered-pairings",
   "title": "The Best Total From K Ordered Pairings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

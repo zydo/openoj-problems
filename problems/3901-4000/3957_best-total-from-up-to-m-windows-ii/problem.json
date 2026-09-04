@@ -4,12 +4,21 @@
   "id": 3957,
   "slug": "best-total-from-up-to-m-windows-ii",
   "title": "Best Total From Up To M Windows II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Binary Search",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

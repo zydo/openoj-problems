@@ -4,8 +4,13 @@
   "id": 3228,
   "slug": "counting-slides-of-ones-over-zeros",
   "title": "Counting Slides Of Ones Over Zeros",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "String",
     "Greedy",
     "Counting"

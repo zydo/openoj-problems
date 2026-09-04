@@ -4,10 +4,16 @@
   "id": 3943,
   "slug": "pair-counts-under-range-bumps",
   "title": "Pair Counts Under Range Bumps",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
+    "Counting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
     "Counting"
   ],
   "invocation": {

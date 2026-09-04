@@ -4,8 +4,12 @@
   "id": 2373,
   "slug": "max-pooling",
   "title": "Max Pooling",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Matrix"
   ],

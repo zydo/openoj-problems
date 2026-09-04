@@ -4,8 +4,13 @@
   "id": 1072,
   "slug": "uniform-rows-after-column-flips",
   "title": "Uniform Rows After Column Flips",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix"

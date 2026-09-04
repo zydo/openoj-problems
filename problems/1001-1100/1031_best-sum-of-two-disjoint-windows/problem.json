@@ -4,8 +4,13 @@
   "id": 1031,
   "slug": "best-sum-of-two-disjoint-windows",
   "title": "Best Sum of Two Disjoint Windows",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sliding Window"

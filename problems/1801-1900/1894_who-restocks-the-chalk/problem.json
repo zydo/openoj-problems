@@ -4,9 +4,15 @@
   "id": 1894,
   "slug": "who-restocks-the-chalk",
   "title": "Who Restocks the Chalk",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Simulation",
     "Prefix Sum"
   ],
   "invocation": {

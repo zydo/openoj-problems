@@ -4,8 +4,20 @@
   "id": 3312,
   "slug": "sorted-gcd-pair-queries",
   "title": "Sorted GCD Pair Queries",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Binary Search",
+    "Combinatorics",
+    "Counting",
+    "Number Theory",
+    "Prefix Sum",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

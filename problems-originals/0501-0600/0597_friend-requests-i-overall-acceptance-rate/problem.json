@@ -4,8 +4,11 @@
   "id": 597,
   "slug": "friend-requests-i-overall-acceptance-rate",
   "title": "Friend Requests I: Overall Acceptance Rate",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 643,
   "slug": "sliding-window-average-i",
   "title": "Sliding Window Average I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Sliding Window"
   ],

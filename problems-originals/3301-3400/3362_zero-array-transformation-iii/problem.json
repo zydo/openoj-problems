@@ -4,8 +4,16 @@
   "id": 3362,
   "slug": "zero-array-transformation-iii",
   "title": "Zero Array Transformation III",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Greedy",

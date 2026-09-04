@@ -4,8 +4,11 @@
   "id": 195,
   "slug": "a-files-tenth-line",
   "title": "A File's Tenth Line",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Shell"
+  ],
+  "topics": [
     "Shell"
   ],
   "invocation": {

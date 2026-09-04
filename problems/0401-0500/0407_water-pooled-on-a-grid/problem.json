@@ -4,10 +4,16 @@
   "id": 407,
   "slug": "water-pooled-on-a-grid",
   "title": "Water Pooled On A Grid",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Heap",
     "BFS",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
+    "Heap (Priority Queue)",
     "Matrix"
   ],
   "invocation": {

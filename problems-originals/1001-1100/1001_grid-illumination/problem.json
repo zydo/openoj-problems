@@ -4,8 +4,12 @@
   "id": 1001,
   "slug": "grid-illumination",
   "title": "Grid Illumination",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

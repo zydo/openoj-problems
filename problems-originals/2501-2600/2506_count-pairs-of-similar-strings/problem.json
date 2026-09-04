@@ -4,8 +4,15 @@
   "id": 2506,
   "slug": "count-pairs-of-similar-strings",
   "title": "Count Pairs Of Similar Strings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

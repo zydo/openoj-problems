@@ -4,8 +4,14 @@
   "id": 3359,
   "slug": "find-sorted-submatrices-with-maximum-element-at-most-k",
   "title": "Find Sorted Submatrices With Maximum Element at Most K",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Stack",
+    "Matrix",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Matrix",

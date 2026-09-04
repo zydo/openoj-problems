@@ -4,8 +4,12 @@
   "id": 3874,
   "slug": "valid-subarrays-with-exactly-one-peak",
   "title": "Valid Subarrays With Exactly One Peak",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

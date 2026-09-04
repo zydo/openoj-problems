@@ -4,8 +4,12 @@
   "id": 2735,
   "slug": "rotating-price-tags",
   "title": "Rotating Price Tags",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

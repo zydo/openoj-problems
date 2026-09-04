@@ -4,8 +4,14 @@
   "id": 387,
   "slug": "first-unique-character-in-a-string",
   "title": "First Unique Character in a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "String",
+    "Queue",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Queue",

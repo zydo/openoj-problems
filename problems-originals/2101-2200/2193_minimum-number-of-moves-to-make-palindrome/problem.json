@@ -3,11 +3,17 @@
   "id": 2193,
   "slug": "minimum-number-of-moves-to-make-palindrome",
   "title": "Minimum Number of Moves to Make Palindrome",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Greedy",
     "Fenwick Tree"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Greedy",
+    "Binary Indexed Tree"
   ],
   "invocation": {
     "type": "function",

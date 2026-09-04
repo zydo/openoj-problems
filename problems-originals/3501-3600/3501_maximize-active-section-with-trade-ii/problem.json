@@ -4,8 +4,14 @@
   "id": 3501,
   "slug": "maximize-active-section-with-trade-ii",
   "title": "Maximize Active Section with Trade II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Binary Search",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "String",
     "Binary Search",

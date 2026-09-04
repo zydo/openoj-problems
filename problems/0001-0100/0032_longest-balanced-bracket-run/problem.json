@@ -4,11 +4,17 @@
   "id": 32,
   "slug": "longest-balanced-bracket-run",
   "title": "Longest Balanced Bracket Run",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Stack",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Stack",
+    "Bracket Sequences"
   ],
   "invocation": {
     "type": "function",

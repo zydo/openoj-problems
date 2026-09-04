@@ -3,11 +3,19 @@
   "id": 2338,
   "slug": "count-the-number-of-ideal-arrays",
   "title": "Count the Number of Ideal Arrays",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Number Theory",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics",
+    "Number Theory",
+    "Prime Factorization",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

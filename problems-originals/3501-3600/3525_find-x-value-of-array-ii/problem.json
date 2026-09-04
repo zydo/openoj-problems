@@ -4,8 +4,13 @@
   "id": 3525,
   "slug": "find-x-value-of-array-ii",
   "title": "Find X Value of Array II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Segment Tree"

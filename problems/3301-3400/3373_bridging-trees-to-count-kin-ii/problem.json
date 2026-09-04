@@ -4,8 +4,13 @@
   "id": 3373,
   "slug": "bridging-trees-to-count-kin-ii",
   "title": "Bridging Trees To Count Kin II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"

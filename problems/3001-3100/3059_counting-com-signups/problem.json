@@ -4,10 +4,13 @@
   "id": 3059,
   "slug": "counting-com-signups",
   "title": "Counting .com Signups",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

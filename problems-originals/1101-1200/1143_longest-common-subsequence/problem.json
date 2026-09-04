@@ -3,10 +3,15 @@
   "id": 1143,
   "slug": "longest-common-subsequence",
   "title": "Longest Common Subsequence",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,13 @@
   "id": 1107,
   "slug": "first-logins-per-day",
   "title": "First Logins Per Day",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

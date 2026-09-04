@@ -3,8 +3,13 @@
   "id": 2387,
   "slug": "median-of-a-row-wise-sorted-matrix",
   "title": "Median of a Row Wise Sorted Matrix",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Matrix"

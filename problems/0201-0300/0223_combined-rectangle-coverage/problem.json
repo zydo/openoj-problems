@@ -4,8 +4,12 @@
   "id": 223,
   "slug": "combined-rectangle-coverage",
   "title": "Combined Rectangle Coverage",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Geometry"
+  ],
+  "topics": [
     "Math",
     "Geometry"
   ],

@@ -4,8 +4,14 @@
   "id": 3463,
   "slug": "fold-digits-down-to-two-ii",
   "title": "Fold Digits Down To Two II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Combinatorics",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "String",
     "Combinatorics",

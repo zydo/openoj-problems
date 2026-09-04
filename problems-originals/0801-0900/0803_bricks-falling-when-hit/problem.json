@@ -3,10 +3,15 @@
   "id": 803,
   "slug": "bricks-falling-when-hit",
   "title": "Bricks Falling When Hit",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Union Find",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

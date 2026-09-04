@@ -3,10 +3,16 @@
   "id": 1847,
   "slug": "closest-room",
   "title": "Closest Room",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Sorting",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

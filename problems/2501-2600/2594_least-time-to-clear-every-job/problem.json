@@ -4,8 +4,12 @@
   "id": 2594,
   "slug": "least-time-to-clear-every-job",
   "title": "Least Time to Clear Every Job",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Binary Search"
+  ],
+  "topics": [
+    "Array",
     "Binary Search"
   ],
   "invocation": {

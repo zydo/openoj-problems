@@ -4,8 +4,16 @@
   "id": 3973,
   "slug": "distinct-gate-paths-to-lca",
   "title": "Distinct Gate Paths to LCA",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Dynamic Programming",

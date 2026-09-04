@@ -4,8 +4,13 @@
   "id": 628,
   "slug": "best-triple-product",
   "title": "Best Triple Product",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting"

@@ -4,8 +4,11 @@
   "id": 1369,
   "slug": "get-the-second-most-recent-activity",
   "title": "Get the Second Most Recent Activity",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,15 @@
   "id": 2250,
   "slug": "count-number-of-rectangles-containing-each-point",
   "title": "Count Number of Rectangles Containing Each Point",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Binary Indexed Tree",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Binary Search",

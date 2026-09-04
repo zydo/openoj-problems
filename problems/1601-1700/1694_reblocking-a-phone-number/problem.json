@@ -4,8 +4,11 @@
   "id": 1694,
   "slug": "reblocking-a-phone-number",
   "title": "Reblocking a Phone Number",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

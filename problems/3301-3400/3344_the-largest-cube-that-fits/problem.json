@@ -4,8 +4,12 @@
   "id": 3344,
   "slug": "the-largest-cube-that-fits",
   "title": "The Largest Cube That Fits",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Binary Search",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Binary Search",
     "Bit Manipulation"
   ],

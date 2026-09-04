@@ -4,8 +4,14 @@
   "id": 3859,
   "slug": "subarrays-with-k-value-quotas",
   "title": "Subarrays With k Value Quotas",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

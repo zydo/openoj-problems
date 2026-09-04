@@ -4,10 +4,13 @@
   "id": 2292,
   "slug": "bestsellers-two-years-running",
   "title": "Bestsellers Two Years Running",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

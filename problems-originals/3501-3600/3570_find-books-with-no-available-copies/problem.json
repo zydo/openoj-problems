@@ -4,8 +4,11 @@
   "id": 3570,
   "slug": "find-books-with-no-available-copies",
   "title": "Find Books with No Available Copies",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

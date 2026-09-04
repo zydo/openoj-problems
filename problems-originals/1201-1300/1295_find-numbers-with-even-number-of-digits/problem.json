@@ -4,8 +4,12 @@
   "id": 1295,
   "slug": "find-numbers-with-even-number-of-digits",
   "title": "Find Numbers with Even Number of Digits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

@@ -4,8 +4,15 @@
   "id": 3572,
   "slug": "maximize-ysum-by-picking-a-triplet-of-distinct-xvalues",
   "title": "Maximize Y-Sum by Picking a Triplet of Distinct X-Values",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

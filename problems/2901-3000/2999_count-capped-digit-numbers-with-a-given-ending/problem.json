@@ -4,9 +4,14 @@
   "id": 2999,
   "slug": "count-capped-digit-numbers-with-a-given-ending",
   "title": "Count Capped-Digit Numbers With a Given Ending",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,10 +4,18 @@
   "id": 173,
   "slug": "in-order-tree-iterator",
   "title": "In-Order Tree Iterator",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "BST",
     "Stack"
+  ],
+  "topics": [
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Iterator"
   ],
   "invocation": {
     "type": "design",

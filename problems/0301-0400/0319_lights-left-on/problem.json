@@ -4,8 +4,12 @@
   "id": 319,
   "slug": "lights-left-on",
   "title": "Lights Left On",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Brainteaser"
+  ],
+  "topics": [
     "Math",
     "Brainteaser"
   ],

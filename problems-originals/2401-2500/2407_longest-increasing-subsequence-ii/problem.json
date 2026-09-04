@@ -3,10 +3,19 @@
   "id": 2407,
   "slug": "longest-increasing-subsequence-ii",
   "title": "Longest Increasing Subsequence II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Queue",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

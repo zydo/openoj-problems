@@ -4,8 +4,11 @@
   "id": 1789,
   "slug": "primary-department-for-each-employee",
   "title": "Primary Department for Each Employee",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

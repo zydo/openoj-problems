@@ -4,8 +4,11 @@
   "id": 1412,
   "slug": "find-the-quiet-students-in-all-exams",
   "title": "Find the Quiet Students in All Exams",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

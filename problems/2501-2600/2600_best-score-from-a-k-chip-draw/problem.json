@@ -4,8 +4,12 @@
   "id": 2600,
   "slug": "best-score-from-a-k-chip-draw",
   "title": "Best Score From a K-Chip Draw",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

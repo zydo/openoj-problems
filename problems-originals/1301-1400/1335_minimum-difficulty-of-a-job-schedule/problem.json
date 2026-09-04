@@ -3,10 +3,14 @@
   "id": 1335,
   "slug": "minimum-difficulty-of-a-job-schedule",
   "title": "Minimum Difficulty of a Job Schedule",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 2525,
   "slug": "categorize-box-according-to-criteria",
   "title": "Categorize Box According to Criteria",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

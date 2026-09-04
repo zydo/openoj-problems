@@ -4,8 +4,11 @@
   "id": 1800,
   "slug": "heaviest-rising-streak",
   "title": "Heaviest Rising Streak",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

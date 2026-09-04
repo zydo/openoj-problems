@@ -4,8 +4,13 @@
   "id": 487,
   "slug": "max-consecutive-ones-ii",
   "title": "Max Consecutive Ones II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sliding Window"

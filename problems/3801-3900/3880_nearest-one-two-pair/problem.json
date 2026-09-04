@@ -4,8 +4,12 @@
   "id": 3880,
   "slug": "nearest-one-two-pair",
   "title": "Nearest One-Two Pair",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

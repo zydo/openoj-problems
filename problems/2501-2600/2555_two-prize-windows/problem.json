@@ -4,9 +4,14 @@
   "id": 2555,
   "slug": "two-prize-windows",
   "title": "Two Prize Windows",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Sliding Window"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
     "Sliding Window"
   ],
   "invocation": {

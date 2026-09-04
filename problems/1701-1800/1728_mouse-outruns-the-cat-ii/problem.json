@@ -4,12 +4,24 @@
   "id": 1728,
   "slug": "mouse-outruns-the-cat-ii",
   "title": "Mouse Outruns the Cat II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Game Theory",
     "Dynamic Programming",
     "Topological Sort",
     "Graph Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
+    "Minimax",
+    "Matrix",
+    "Game Theory",
+    "Zero-Sum Game"
   ],
   "invocation": {
     "type": "function",

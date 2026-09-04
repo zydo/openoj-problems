@@ -4,8 +4,12 @@
   "id": 453,
   "slug": "minimum-moves-to-equal-array-elements",
   "title": "Minimum Moves to Equal Array Elements",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

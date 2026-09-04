@@ -4,8 +4,12 @@
   "id": 2437,
   "slug": "fillable-clock-readings",
   "title": "Fillable Clock Readings",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "String",
     "Enumeration"
   ],

@@ -4,8 +4,13 @@
   "id": 3567,
   "slug": "minimum-absolute-difference-in-sliding-submatrix",
   "title": "Minimum Absolute Difference in Sliding Submatrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Matrix"

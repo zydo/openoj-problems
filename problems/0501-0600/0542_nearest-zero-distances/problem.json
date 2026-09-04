@@ -4,9 +4,15 @@
   "id": 542,
   "slug": "nearest-zero-distances",
   "title": "Nearest Zero Distances",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Breadth-First Search",
     "Matrix"
   ],

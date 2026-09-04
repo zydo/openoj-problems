@@ -4,8 +4,13 @@
   "id": 2966,
   "slug": "divide-array-into-arrays-with-max-difference",
   "title": "Divide Array Into Arrays With Max Difference",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

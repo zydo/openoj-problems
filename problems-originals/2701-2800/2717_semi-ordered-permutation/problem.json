@@ -4,8 +4,12 @@
   "id": 2717,
   "slug": "semi-ordered-permutation",
   "title": "Semi-Ordered Permutation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -4,10 +4,13 @@
   "id": 2632,
   "slug": "currying-in-batches",
   "title": "Currying In Batches",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "JavaScript",
     "Recursion"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

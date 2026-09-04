@@ -4,8 +4,12 @@
   "id": 3579,
   "slug": "recasting-one-word-into-another",
   "title": "Recasting One Word Into Another",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

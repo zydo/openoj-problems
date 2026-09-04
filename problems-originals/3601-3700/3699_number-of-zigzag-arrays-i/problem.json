@@ -4,8 +4,12 @@
   "id": 3699,
   "slug": "number-of-zigzag-arrays-i",
   "title": "Number of ZigZag Arrays I",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Prefix Sum"
   ],

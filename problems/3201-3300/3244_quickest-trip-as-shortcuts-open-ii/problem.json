@@ -4,8 +4,14 @@
   "id": 3244,
   "slug": "quickest-trip-as-shortcuts-open-ii",
   "title": "Quickest Trip as Shortcuts Open II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Graph Theory",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Graph Theory",

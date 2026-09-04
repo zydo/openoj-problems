@@ -4,8 +4,13 @@
   "id": 2438,
   "slug": "range-product-queries-of-powers",
   "title": "Range Product Queries of Powers",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Prefix Sum"

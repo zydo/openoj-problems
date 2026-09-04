@@ -4,8 +4,11 @@
   "id": 2320,
   "slug": "count-number-of-ways-to-place-houses",
   "title": "Count Number of Ways to Place Houses",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Dynamic Programming"
   ],
   "invocation": {

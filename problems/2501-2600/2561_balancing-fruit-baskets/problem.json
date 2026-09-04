@@ -4,8 +4,14 @@
   "id": 2561,
   "slug": "balancing-fruit-baskets",
   "title": "Balancing Fruit Baskets",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sort"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

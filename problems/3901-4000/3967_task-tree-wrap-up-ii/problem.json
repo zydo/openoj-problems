@@ -4,11 +4,16 @@
   "id": 3967,
   "slug": "task-tree-wrap-up-ii",
   "title": "Task Tree Wrap-Up II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Dynamic Programming",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

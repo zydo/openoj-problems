@@ -4,8 +4,12 @@
   "id": 1411,
   "slug": "number-of-ways-to-paint-n-3-grid",
   "title": "Number of Ways to Paint N × 3 Grid",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Graph Coloring"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Graph Coloring"
   ],

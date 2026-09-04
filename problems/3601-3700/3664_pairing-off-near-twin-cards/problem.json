@@ -4,9 +4,16 @@
   "id": 3664,
   "slug": "pairing-off-near-twin-cards",
   "title": "Pairing Off Near-Twin Cards",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "String",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "String",
     "Counting",
     "Enumeration"

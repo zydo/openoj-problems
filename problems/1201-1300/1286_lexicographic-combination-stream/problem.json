@@ -4,9 +4,15 @@
   "id": 1286,
   "slug": "lexicographic-combination-stream",
   "title": "Lexicographic Combination Stream",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
+    "Design",
+    "Iterator"
+  ],
+  "topics": [
+    "String",
+    "Backtracking",
     "Design",
     "Iterator"
   ],

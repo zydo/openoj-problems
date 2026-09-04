@@ -4,10 +4,13 @@
   "id": 2888,
   "slug": "stacking-the-two-campus-rosters",
   "title": "Stacking The Two Campus Rosters",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,8 +4,12 @@
   "id": 161,
   "slug": "a-single-edit-apart",
   "title": "A Single Edit Apart",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

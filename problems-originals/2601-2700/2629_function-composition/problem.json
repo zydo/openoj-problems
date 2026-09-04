@@ -4,8 +4,11 @@
   "id": 2629,
   "slug": "function-composition",
   "title": "Function Composition",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [],
+  "topics": [
+    "Design"
+  ],
   "invocation": {
     "type": "interactive",
     "class_name": "Solution",

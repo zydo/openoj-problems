@@ -4,8 +4,13 @@
   "id": 1217,
   "slug": "gathering-the-chips",
   "title": "Gathering the Chips",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Greedy"

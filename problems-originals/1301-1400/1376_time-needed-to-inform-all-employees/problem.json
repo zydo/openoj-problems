@@ -4,8 +4,13 @@
   "id": 1376,
   "slug": "time-needed-to-inform-all-employees",
   "title": "Time Needed to Inform All Employees",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search"

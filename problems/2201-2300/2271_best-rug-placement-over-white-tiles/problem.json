@@ -4,8 +4,16 @@
   "id": 2271,
   "slug": "best-rug-placement-over-white-tiles",
   "title": "Best Rug Placement Over White Tiles",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Greedy",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
     "Greedy",
     "Sliding Window",
     "Sorting",

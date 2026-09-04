@@ -4,8 +4,13 @@
   "id": 3688,
   "slug": "bitwise-or-of-even-numbers-in-an-array",
   "title": "Bitwise OR of Even Numbers in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Simulation"

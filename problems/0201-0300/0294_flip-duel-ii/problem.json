@@ -4,11 +4,21 @@
   "id": 294,
   "slug": "flip-duel-ii",
   "title": "Flip Duel II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Backtracking",
     "Game Theory"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Memoization",
+    "Minimax",
+    "Game Theory",
+    "Sprague–Grundy Theorem",
+    "Impartial Game"
   ],
   "invocation": {
     "type": "function",

@@ -4,9 +4,15 @@
   "id": 2897,
   "slug": "pooling-bits-for-bigger-squares",
   "title": "Pooling Bits For Bigger Squares",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Greedy",
     "Bit Manipulation"
   ],

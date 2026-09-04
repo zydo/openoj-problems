@@ -4,9 +4,14 @@
   "id": 841,
   "slug": "unlock-every-room",
   "title": "Unlock Every Room",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Depth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
     "Graph Theory"
   ],
   "invocation": {

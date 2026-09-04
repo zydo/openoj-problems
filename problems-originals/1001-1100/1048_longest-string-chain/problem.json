@@ -3,10 +3,18 @@
   "id": 1048,
   "slug": "longest-string-chain",
   "title": "Longest String Chain",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
     "String",
     "Dynamic Programming",
     "Sorting"

@@ -3,8 +3,15 @@
   "id": 3337,
   "slug": "total-characters-in-string-after-transformations-ii",
   "title": "Total Characters in String After Transformations II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "String",

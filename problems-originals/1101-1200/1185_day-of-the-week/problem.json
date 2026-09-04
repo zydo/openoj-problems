@@ -4,8 +4,11 @@
   "id": 1185,
   "slug": "day-of-the-week",
   "title": "Day of the Week",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

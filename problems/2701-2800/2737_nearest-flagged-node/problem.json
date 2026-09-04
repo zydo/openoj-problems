@@ -4,8 +4,14 @@
   "id": 2737,
   "slug": "nearest-flagged-node",
   "title": "Nearest Flagged Node",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "Array",
     "Graph Theory",
     "Heap (Priority Queue)",

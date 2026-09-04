@@ -4,8 +4,12 @@
   "id": 265,
   "slug": "cheapest-row-paint-ii",
   "title": "Cheapest Row Paint II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

@@ -4,8 +4,13 @@
   "id": 2158,
   "slug": "amount-of-new-area-painted-each-day",
   "title": "Amount of New Area Painted Each Day",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Segment Tree",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Segment Tree",
     "Ordered Set"

@@ -4,8 +4,14 @@
   "id": 67,
   "slug": "add-binary",
   "title": "Add Binary",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Bit Manipulation",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "String",
     "Bit Manipulation",

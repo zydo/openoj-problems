@@ -4,8 +4,12 @@
   "id": 1785,
   "slug": "fewest-additions-to-reach-the-target",
   "title": "Fewest Additions to Reach the Target",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

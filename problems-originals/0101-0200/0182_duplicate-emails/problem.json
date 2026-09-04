@@ -4,8 +4,11 @@
   "id": 182,
   "slug": "duplicate-emails",
   "title": "Duplicate Emails",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

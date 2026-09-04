@@ -4,8 +4,12 @@
   "id": 2553,
   "slug": "spread-each-number-into-its-digits",
   "title": "Spread Each Number Into Its Digits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

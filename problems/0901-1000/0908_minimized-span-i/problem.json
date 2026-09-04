@@ -4,8 +4,12 @@
   "id": 908,
   "slug": "minimized-span-i",
   "title": "Minimized Span I",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

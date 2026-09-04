@@ -4,10 +4,13 @@
   "id": 1549,
   "slug": "each-lots-latest-bids",
   "title": "Each Lot's Latest Bids",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

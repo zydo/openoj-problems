@@ -4,11 +4,18 @@
   "id": 3331,
   "slug": "subtree-sizes-after-the-rewire",
   "title": "Subtree Sizes After The Rewire",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Depth-First Search",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

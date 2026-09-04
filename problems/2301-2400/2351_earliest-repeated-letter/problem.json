@@ -4,10 +4,16 @@
   "id": 2351,
   "slug": "earliest-repeated-letter",
   "title": "Earliest Repeated Letter",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Hash Table",
     "String",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
     "Counting"
   ],
   "invocation": {

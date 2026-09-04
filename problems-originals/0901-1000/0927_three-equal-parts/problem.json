@@ -4,8 +4,12 @@
   "id": 927,
   "slug": "three-equal-parts",
   "title": "Three Equal Parts",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

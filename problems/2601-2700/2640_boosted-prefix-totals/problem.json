@@ -4,8 +4,12 @@
   "id": 2640,
   "slug": "boosted-prefix-totals",
   "title": "Boosted Prefix Totals",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

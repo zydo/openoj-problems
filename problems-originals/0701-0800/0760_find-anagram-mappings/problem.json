@@ -4,8 +4,12 @@
   "id": 760,
   "slug": "find-anagram-mappings",
   "title": "Find Anagram Mappings",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

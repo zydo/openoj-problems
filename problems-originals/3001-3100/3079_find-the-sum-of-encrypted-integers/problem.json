@@ -4,8 +4,12 @@
   "id": 3079,
   "slug": "find-the-sum-of-encrypted-integers",
   "title": "Find the Sum of Encrypted Integers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

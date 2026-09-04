@@ -4,8 +4,15 @@
   "id": 2049,
   "slug": "count-nodes-with-the-highest-score",
   "title": "Count Nodes With the Highest Score",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree",
+    "DP on Trees"
+  ],
+  "topics": [
     "Array",
     "Tree",
     "Depth-First Search",

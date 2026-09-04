@@ -3,10 +3,16 @@
   "id": 3408,
   "slug": "design-task-manager",
   "title": "Design Task Manager",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Heap",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

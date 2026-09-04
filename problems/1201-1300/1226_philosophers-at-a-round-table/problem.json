@@ -4,8 +4,11 @@
   "id": 1226,
   "slug": "philosophers-at-a-round-table",
   "title": "Philosophers At a Round Table",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Concurrency"
+  ],
+  "topics": [
     "Concurrency"
   ],
   "invocation": {

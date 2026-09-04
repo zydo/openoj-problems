@@ -4,10 +4,16 @@
   "id": 1016,
   "slug": "contains-every-binary-form",
   "title": "Contains Every Binary Form",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

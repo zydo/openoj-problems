@@ -4,8 +4,14 @@
   "id": 3970,
   "slug": "cheapest-route-under-the-label-run-cap",
   "title": "Cheapest Route Under The Label-Run Cap",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "topics": [
     "String",
     "Graph Theory",
     "Heap (Priority Queue)",

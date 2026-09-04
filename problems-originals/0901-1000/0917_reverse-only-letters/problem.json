@@ -4,8 +4,12 @@
   "id": 917,
   "slug": "reverse-only-letters",
   "title": "Reverse Only Letters",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

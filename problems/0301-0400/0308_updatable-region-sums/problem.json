@@ -4,11 +4,19 @@
   "id": 308,
   "slug": "updatable-region-sums",
   "title": "Updatable Region Sums",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Fenwick Tree",
     "Matrix",
     "Segment Tree"
+  ],
+  "topics": [
+    "Array",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Matrix",
+    "Sqrt Decomposition"
   ],
   "invocation": {
     "type": "design",

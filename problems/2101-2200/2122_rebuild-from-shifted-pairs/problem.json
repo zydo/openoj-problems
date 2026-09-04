@@ -4,10 +4,17 @@
   "id": 2122,
   "slug": "rebuild-from-shifted-pairs",
   "title": "Rebuild from Shifted Pairs",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
+    "Sorting",
+    "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
     "Sorting",
     "Enumeration"
   ],

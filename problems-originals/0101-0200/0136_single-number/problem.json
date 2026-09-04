@@ -3,8 +3,12 @@
   "id": 136,
   "slug": "single-number",
   "title": "Single Number",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

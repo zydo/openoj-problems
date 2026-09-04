@@ -3,10 +3,15 @@
   "id": 305,
   "slug": "number-of-islands-ii",
   "title": "Number of Islands II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Union Find",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Union-Find"
   ],
   "invocation": {
     "type": "function",

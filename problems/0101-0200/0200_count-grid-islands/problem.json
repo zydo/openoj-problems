@@ -4,7 +4,7 @@
   "id": 200,
   "slug": "count-grid-islands",
   "title": "Count Grid Islands",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Matrix",
@@ -12,6 +12,13 @@
     "BFS",
     "DFS",
     "Union-Find"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

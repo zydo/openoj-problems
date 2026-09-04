@@ -4,8 +4,16 @@
   "id": 1361,
   "slug": "validate-binary-tree-nodes",
   "title": "Validate Binary Tree Nodes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

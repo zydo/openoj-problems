@@ -4,8 +4,12 @@
   "id": 541,
   "slug": "reverse-string-ii",
   "title": "Reverse String II",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

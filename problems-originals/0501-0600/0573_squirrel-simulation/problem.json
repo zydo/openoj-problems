@@ -4,8 +4,12 @@
   "id": 573,
   "slug": "squirrel-simulation",
   "title": "Squirrel Simulation",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

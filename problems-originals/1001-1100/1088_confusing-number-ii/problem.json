@@ -4,8 +4,12 @@
   "id": 1088,
   "slug": "confusing-number-ii",
   "title": "Confusing Number II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Backtracking"
+  ],
+  "topics": [
     "Math",
     "Backtracking"
   ],

@@ -4,8 +4,11 @@
   "id": 2113,
   "slug": "queries-on-a-cycling-array",
   "title": "Queries on a Cycling Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 972,
   "slug": "equal-rational-numbers",
   "title": "Equal Rational Numbers",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String"
+  ],
+  "topics": [
     "Math",
     "String"
   ],

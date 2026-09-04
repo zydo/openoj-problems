@@ -3,11 +3,16 @@
   "id": 131,
   "slug": "palindrome-partitioning",
   "title": "Palindrome Partitioning",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Backtracking",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking"
   ],
   "invocation": {
     "type": "function",

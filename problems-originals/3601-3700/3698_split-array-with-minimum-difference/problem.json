@@ -4,8 +4,12 @@
   "id": 3698,
   "slug": "split-array-with-minimum-difference",
   "title": "Split Array With Minimum Difference",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Prefix Sum"
   ],

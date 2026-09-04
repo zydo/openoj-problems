@@ -4,10 +4,15 @@
   "id": 2185,
   "slug": "words-sharing-a-given-lead-in",
   "title": "Words Sharing A Given Lead-In",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "String Matching"
   ],
   "invocation": {
     "type": "function",

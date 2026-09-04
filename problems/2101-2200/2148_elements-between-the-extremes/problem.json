@@ -4,8 +4,13 @@
   "id": 2148,
   "slug": "elements-between-the-extremes",
   "title": "Elements Between the Extremes",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Counting"

@@ -4,11 +4,19 @@
   "id": 3434,
   "slug": "one-uniform-shift-toward-the-target",
   "title": "One Uniform Shift Toward The Target",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Enumeration"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Greedy",
+    "Enumeration",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

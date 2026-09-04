@@ -4,8 +4,14 @@
   "id": 296,
   "slug": "optimal-rendezvous-point",
   "title": "Optimal Rendezvous Point",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Sorting",

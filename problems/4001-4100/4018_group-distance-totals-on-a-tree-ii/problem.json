@@ -4,11 +4,16 @@
   "id": 4018,
   "slug": "group-distance-totals-on-a-tree-ii",
   "title": "Group Distance Totals on a Tree II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Hash Table"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Math"
   ],
   "invocation": {
     "type": "function",

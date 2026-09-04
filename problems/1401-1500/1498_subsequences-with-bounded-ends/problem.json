@@ -4,11 +4,17 @@
   "id": 1498,
   "slug": "subsequences-with-bounded-ends",
   "title": "Subsequences With Bounded Ends",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Two Pointers",
     "Sorting",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

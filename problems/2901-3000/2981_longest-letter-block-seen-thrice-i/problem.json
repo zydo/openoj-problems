@@ -4,10 +4,17 @@
   "id": 2981,
   "slug": "longest-letter-block-seen-thrice-i",
   "title": "Longest Letter Block Seen Thrice I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Binary Search",
+    "Sliding Window",
     "Counting"
   ],
   "invocation": {

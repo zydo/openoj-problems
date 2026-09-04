@@ -4,8 +4,12 @@
   "id": 3733,
   "slug": "minimum-time-to-complete-all-deliveries",
   "title": "Minimum Time to Complete All Deliveries",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

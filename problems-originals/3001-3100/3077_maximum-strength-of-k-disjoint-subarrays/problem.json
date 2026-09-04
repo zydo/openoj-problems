@@ -3,8 +3,13 @@
   "id": 3077,
   "slug": "maximum-strength-of-k-disjoint-subarrays",
   "title": "Maximum Strength of K Disjoint Subarrays",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Prefix Sum"

@@ -4,8 +4,14 @@
   "id": 2284,
   "slug": "chattiest-sender-in-the-chat-log",
   "title": "Chattiest Sender in the Chat Log",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

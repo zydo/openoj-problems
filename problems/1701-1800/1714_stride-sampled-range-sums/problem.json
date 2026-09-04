@@ -4,8 +4,13 @@
   "id": 1714,
   "slug": "stride-sampled-range-sums",
   "title": "Stride-Sampled Range Sums",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sqrt Decomposition"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sqrt Decomposition"

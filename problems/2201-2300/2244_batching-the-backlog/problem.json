@@ -4,8 +4,14 @@
   "id": 2244,
   "slug": "batching-the-backlog",
   "title": "Batching the Backlog",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy",

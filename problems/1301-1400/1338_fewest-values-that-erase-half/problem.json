@@ -4,12 +4,19 @@
   "id": 1338,
   "slug": "fewest-values-that-erase-half",
   "title": "Fewest Values That Erase Half",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,13 @@
   "id": 3299,
   "slug": "sum-of-consecutive-subsequences",
   "title": "Sum of Consecutive Subsequences",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

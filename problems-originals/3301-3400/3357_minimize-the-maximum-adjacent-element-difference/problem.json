@@ -4,8 +4,13 @@
   "id": 3357,
   "slug": "minimize-the-maximum-adjacent-element-difference",
   "title": "Minimize the Maximum Adjacent Element Difference",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy"

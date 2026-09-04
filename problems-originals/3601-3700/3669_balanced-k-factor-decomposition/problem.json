@@ -4,8 +4,13 @@
   "id": 3669,
   "slug": "balanced-k-factor-decomposition",
   "title": "Balanced K-Factor Decomposition",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Backtracking",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Backtracking",
     "Number Theory"

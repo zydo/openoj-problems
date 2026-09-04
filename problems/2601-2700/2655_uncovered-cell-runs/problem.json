@@ -4,8 +4,12 @@
   "id": 2655,
   "slug": "uncovered-cell-runs",
   "title": "Uncovered Cell Runs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

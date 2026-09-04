@@ -3,8 +3,14 @@
   "id": 2172,
   "slug": "maximum-and-sum-of-array",
   "title": "Maximum AND Sum of Array",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",

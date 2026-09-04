@@ -4,8 +4,13 @@
   "id": 2438,
   "slug": "decomposed-power-range-products",
   "title": "Decomposed Power Range Products",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Prefix Sum"

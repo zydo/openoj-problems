@@ -4,8 +4,14 @@
   "id": 1086,
   "slug": "high-five",
   "title": "High Five",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

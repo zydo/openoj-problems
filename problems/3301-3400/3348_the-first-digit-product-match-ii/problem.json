@@ -4,10 +4,17 @@
   "id": 3348,
   "slug": "the-first-digit-product-match-ii",
   "title": "The First Digit-Product Match II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "String",
+    "Greedy",
+    "Number Theory"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Backtracking",
     "Greedy",
     "Number Theory"
   ],

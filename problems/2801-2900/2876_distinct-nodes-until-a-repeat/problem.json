@@ -4,10 +4,19 @@
   "id": 2876,
   "slug": "distinct-nodes-until-a-repeat",
   "title": "Distinct Nodes Until a Repeat",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "DFS"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Depth-First Search",
+    "Graph Theory",
+    "Topological Sort",
+    "Memoization",
+    "Kosaraju's Algorithm",
+    "Tarjan's SCC Algorithm"
   ],
   "invocation": {
     "type": "function",

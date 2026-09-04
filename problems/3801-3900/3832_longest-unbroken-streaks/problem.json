@@ -4,10 +4,13 @@
   "id": 3832,
   "slug": "longest-unbroken-streaks",
   "title": "Longest Unbroken Streaks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,8 +4,12 @@
   "id": 3370,
   "slug": "the-all-ones-ceiling",
   "title": "The All-Ones Ceiling",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation"
   ],

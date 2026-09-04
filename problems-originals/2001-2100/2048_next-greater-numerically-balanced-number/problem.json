@@ -4,8 +4,15 @@
   "id": 2048,
   "slug": "next-greater-numerically-balanced-number",
   "title": "Next Greater Numerically Balanced Number",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Math",
+    "Backtracking",
+    "Counting",
+    "Enumeration"
+  ],
+  "topics": [
     "Hash Table",
     "Math",
     "Backtracking",

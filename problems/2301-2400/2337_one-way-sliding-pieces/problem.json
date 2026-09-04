@@ -4,8 +4,12 @@
   "id": 2337,
   "slug": "one-way-sliding-pieces",
   "title": "One-Way Sliding Pieces",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

@@ -4,8 +4,13 @@
   "id": 3898,
   "slug": "find-the-degree-of-each-vertex",
   "title": "Find the Degree of Each Vertex",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Graph Theory",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Graph Theory",
     "Matrix"

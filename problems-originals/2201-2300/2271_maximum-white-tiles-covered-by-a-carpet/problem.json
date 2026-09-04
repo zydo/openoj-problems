@@ -4,8 +4,16 @@
   "id": 2271,
   "slug": "maximum-white-tiles-covered-by-a-carpet",
   "title": "Maximum White Tiles Covered by a Carpet",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Sliding Window",
+    "Sorting",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Greedy",

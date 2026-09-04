@@ -4,8 +4,13 @@
   "id": 3810,
   "slug": "minimum-operations-to-reach-target-array",
   "title": "Minimum Operations to Reach Target Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Greedy"

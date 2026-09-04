@@ -3,11 +3,18 @@
   "id": 752,
   "slug": "open-the-lock",
   "title": "Open the Lock",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Breadth-First Search",
     "String",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Breadth-First Search",
+    "Bidirectional Search"
   ],
   "invocation": {
     "type": "function",

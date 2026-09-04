@@ -4,8 +4,12 @@
   "id": 343,
   "slug": "maximum-split-product",
   "title": "Maximum Split Product",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

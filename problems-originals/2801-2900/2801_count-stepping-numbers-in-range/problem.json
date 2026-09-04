@@ -4,8 +4,12 @@
   "id": 2801,
   "slug": "count-stepping-numbers-in-range",
   "title": "Count Stepping Numbers in Range",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

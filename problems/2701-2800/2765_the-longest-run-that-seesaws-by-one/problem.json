@@ -4,8 +4,12 @@
   "id": 2765,
   "slug": "the-longest-run-that-seesaws-by-one",
   "title": "The Longest Run That Seesaws By One",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

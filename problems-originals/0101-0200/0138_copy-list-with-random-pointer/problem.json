@@ -4,8 +4,12 @@
   "id": 138,
   "slug": "copy-list-with-random-pointer",
   "title": "Copy List with Random Pointer",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "topics": [
     "Hash Table",
     "Linked List"
   ],

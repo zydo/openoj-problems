@@ -4,8 +4,12 @@
   "id": 3951,
   "slug": "minimum-energy-to-maintain-brightness",
   "title": "Minimum Energy to Maintain Brightness",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

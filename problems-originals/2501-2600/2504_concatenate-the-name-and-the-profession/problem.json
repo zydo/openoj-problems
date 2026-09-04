@@ -4,8 +4,11 @@
   "id": 2504,
   "slug": "concatenate-the-name-and-the-profession",
   "title": "Concatenate the Name and the Profession",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

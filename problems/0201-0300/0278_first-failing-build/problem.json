@@ -4,8 +4,12 @@
   "id": 278,
   "slug": "first-failing-build",
   "title": "First Failing Build",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Binary Search",
+    "Interactive"
+  ],
+  "topics": [
     "Binary Search",
     "Interactive"
   ],

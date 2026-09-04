@@ -3,8 +3,13 @@
   "id": 289,
   "slug": "game-of-life",
   "title": "Game of Life",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

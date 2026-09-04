@@ -3,8 +3,13 @@
   "id": 2208,
   "slug": "minimum-operations-to-halve-array-sum",
   "title": "Minimum Operations to Halve Array Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Heap (Priority Queue)"

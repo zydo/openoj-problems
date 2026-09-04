@@ -4,8 +4,13 @@
   "id": 2768,
   "slug": "number-of-black-blocks",
   "title": "Number of Black Blocks",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Enumeration"

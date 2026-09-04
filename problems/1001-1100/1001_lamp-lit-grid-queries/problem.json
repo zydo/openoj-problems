@@ -4,8 +4,12 @@
   "id": 1001,
   "slug": "lamp-lit-grid-queries",
   "title": "Lamp-Lit Grid Queries",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

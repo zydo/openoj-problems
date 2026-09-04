@@ -4,8 +4,11 @@
   "id": 1779,
   "slug": "nearest-aligned-point",
   "title": "Nearest Aligned Point",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

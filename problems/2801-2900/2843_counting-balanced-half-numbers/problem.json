@@ -4,8 +4,12 @@
   "id": 2843,
   "slug": "counting-balanced-half-numbers",
   "title": "Counting Balanced-Half Numbers",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Enumeration"
+  ],
+  "topics": [
     "Math",
     "Enumeration"
   ],

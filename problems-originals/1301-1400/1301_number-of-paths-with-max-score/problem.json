@@ -4,8 +4,13 @@
   "id": 1301,
   "slug": "number-of-paths-with-max-score",
   "title": "Number of Paths with Max Score",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

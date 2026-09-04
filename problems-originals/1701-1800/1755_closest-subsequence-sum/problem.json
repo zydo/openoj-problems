@@ -3,12 +3,21 @@
   "id": 1755,
   "slug": "closest-subsequence-sum",
   "title": "Closest Subsequence Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Two Pointers",
     "Meet in the Middle",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Meet in the Middle",
+    "Sorting",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

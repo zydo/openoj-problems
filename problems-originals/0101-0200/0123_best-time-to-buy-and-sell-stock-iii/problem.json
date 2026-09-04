@@ -3,10 +3,14 @@
   "id": 123,
   "slug": "best-time-to-buy-and-sell-stock-iii",
   "title": "Best Time to Buy and Sell Stock III",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

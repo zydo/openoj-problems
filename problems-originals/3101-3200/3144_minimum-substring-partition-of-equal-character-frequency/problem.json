@@ -4,8 +4,14 @@
   "id": 3144,
   "slug": "minimum-substring-partition-of-equal-character-frequency",
   "title": "Minimum Substring Partition of Equal Character Frequency",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Dynamic Programming",

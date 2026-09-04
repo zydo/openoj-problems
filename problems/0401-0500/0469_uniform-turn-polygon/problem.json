@@ -4,11 +4,17 @@
   "id": 469,
   "slug": "uniform-turn-polygon",
   "title": "Uniform-Turn Polygon",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Geometry",
+    "Polygons"
   ],
   "invocation": {
     "type": "function",

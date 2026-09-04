@@ -4,8 +4,12 @@
   "id": 1103,
   "slug": "round-robin-candy-gifts",
   "title": "Round-Robin Candy Gifts",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "topics": [
     "Math",
     "Simulation"
   ],

@@ -4,8 +4,11 @@
   "id": 3198,
   "slug": "find-cities-in-each-state",
   "title": "Find Cities in Each State",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 1900,
   "slug": "duel-rounds-of-the-two-best-players",
   "title": "Duel Rounds of the Two Best Players",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Memoization"
   ],

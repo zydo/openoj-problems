@@ -4,8 +4,13 @@
   "id": 248,
   "slug": "strobogrammatic-number-iii",
   "title": "Strobogrammatic Number III",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "String",
+    "Recursion"
+  ],
+  "topics": [
     "Array",
     "String",
     "Recursion"

@@ -4,10 +4,16 @@
   "id": 3272,
   "slug": "count-numbers-rearranging-to-palindrome-multiples",
   "title": "Count Numbers Rearranging to Palindrome Multiples",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Number Theory"
+  ],
+  "topics": [
+    "Hash Table",
+    "Math",
+    "Combinatorics",
+    "Enumeration"
   ],
   "invocation": {
     "type": "function",

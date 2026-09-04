@@ -4,8 +4,17 @@
   "id": 914,
   "slug": "x-of-a-kind-in-a-deck-of-cards",
   "title": "X of a Kind in a Deck of Cards",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Counting",
+    "Number Theory",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

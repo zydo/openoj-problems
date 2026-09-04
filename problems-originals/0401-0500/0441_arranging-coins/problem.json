@@ -4,8 +4,12 @@
   "id": 441,
   "slug": "arranging-coins",
   "title": "Arranging Coins",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

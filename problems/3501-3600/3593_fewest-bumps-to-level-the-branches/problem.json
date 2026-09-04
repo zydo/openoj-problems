@@ -4,8 +4,14 @@
   "id": 3593,
   "slug": "fewest-bumps-to-level-the-branches",
   "title": "Fewest Bumps To Level The Branches",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Tree",

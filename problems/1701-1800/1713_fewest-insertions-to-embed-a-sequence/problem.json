@@ -4,10 +4,17 @@
   "id": 1713,
   "slug": "fewest-insertions-to-embed-a-sequence",
   "title": "Fewest Insertions to Embed a Sequence",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Greedy",
+    "Longest Increasing Subsequence"
   ],
   "invocation": {
     "type": "function",

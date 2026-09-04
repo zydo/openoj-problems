@@ -4,8 +4,13 @@
   "id": 2697,
   "slug": "lexicographically-smallest-palindrome",
   "title": "Lexicographically Smallest Palindrome",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Greedy"

@@ -4,8 +4,11 @@
   "id": 2264,
   "slug": "biggest-run-of-three-equal-digits",
   "title": "Biggest Run of Three Equal Digits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

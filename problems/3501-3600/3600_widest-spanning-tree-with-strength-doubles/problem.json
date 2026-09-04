@@ -4,11 +4,18 @@
   "id": 3600,
   "slug": "widest-spanning-tree-with-strength-doubles",
   "title": "Widest Spanning Tree With Strength Doubles",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Minimum Spanning Tree",
     "Binary Search",
     "Union Find"
+  ],
+  "topics": [
+    "Binary Search",
+    "Greedy",
+    "Union-Find",
+    "Graph Theory",
+    "Minimum Spanning Tree"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,18 @@
   "id": 2612,
   "slug": "reversal-distances",
   "title": "Reversal Distances",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Breadth-First Search",
     "Union-Find"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Breadth-First Search",
+    "Union-Find",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

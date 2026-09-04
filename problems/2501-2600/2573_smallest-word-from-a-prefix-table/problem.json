@@ -4,11 +4,19 @@
   "id": 2573,
   "slug": "smallest-word-from-a-prefix-table",
   "title": "Smallest Word From a Prefix Table",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Dynamic Programming",
     "Greedy",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Greedy",
+    "Union-Find",
     "Matrix"
   ],
   "invocation": {

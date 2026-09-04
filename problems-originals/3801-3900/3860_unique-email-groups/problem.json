@@ -4,8 +4,13 @@
   "id": 3860,
   "slug": "unique-email-groups",
   "title": "Unique Email Groups",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String"

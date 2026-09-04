@@ -4,8 +4,12 @@
   "id": 3324,
   "slug": "find-the-sequence-of-strings-appeared-on-the-screen",
   "title": "Find the Sequence of Strings Appeared on the Screen",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Simulation"
   ],

@@ -3,8 +3,13 @@
   "id": 15,
   "slug": "3sum",
   "title": "3Sum",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Sorting"

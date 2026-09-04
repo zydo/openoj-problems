@@ -4,8 +4,11 @@
   "id": 2820,
   "slug": "election-results",
   "title": "Election Results",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [],
+  "topics": [
+    "Database"
+  ],
   "invocation": {
     "type": "sql",
     "parameters": [

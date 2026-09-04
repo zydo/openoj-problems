@@ -3,11 +3,17 @@
   "id": 470,
   "slug": "implement-rand10-using-rand7",
   "title": "Implement Rand10() Using Rand7()",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Math",
     "Randomized",
     "Probability"
+  ],
+  "topics": [
+    "Math",
+    "Rejection Sampling",
+    "Randomized",
+    "Probability and Statistics"
   ],
   "invocation": {
     "type": "function",

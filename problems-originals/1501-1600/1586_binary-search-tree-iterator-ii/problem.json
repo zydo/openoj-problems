@@ -4,8 +4,16 @@
   "id": 1586,
   "slug": "binary-search-tree-iterator-ii",
   "title": "Binary Search Tree Iterator II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Iterator"
+  ],
+  "topics": [
     "Stack",
     "Tree",
     "Design",

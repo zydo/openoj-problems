@@ -4,11 +4,19 @@
   "id": 451,
   "slug": "frequency-ordered-string",
   "title": "Frequency-Ordered String",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "String",
     "Sorting",
+    "Counting"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
     "Counting"
   ],
   "invocation": {

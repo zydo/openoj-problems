@@ -4,8 +4,13 @@
   "id": 2070,
   "slug": "most-beautiful-item-for-each-query",
   "title": "Most Beautiful Item for Each Query",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Sorting"

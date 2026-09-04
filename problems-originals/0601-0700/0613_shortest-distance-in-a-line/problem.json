@@ -4,9 +4,13 @@
   "id": 613,
   "slug": "shortest-distance-in-a-line",
   "title": "Shortest Distance in a Line",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
     "Database"
+  ],
+  "topics": [
+    "Database",
+    "Nearest Pair of Points"
   ],
   "invocation": {
     "type": "sql",

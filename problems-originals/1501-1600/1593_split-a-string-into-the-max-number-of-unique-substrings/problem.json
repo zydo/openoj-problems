@@ -4,8 +4,13 @@
   "id": 1593,
   "slug": "split-a-string-into-the-max-number-of-unique-substrings",
   "title": "Split a String Into the Max Number of Unique Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Backtracking"

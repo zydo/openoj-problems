@@ -3,10 +3,15 @@
   "id": 887,
   "slug": "super-egg-drop",
   "title": "Super Egg Drop",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Binary Search"
+  ],
+  "topics": [
+    "Math",
+    "Binary Search",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

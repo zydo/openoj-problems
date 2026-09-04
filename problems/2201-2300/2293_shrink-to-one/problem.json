@@ -4,8 +4,12 @@
   "id": 2293,
   "slug": "shrink-to-one",
   "title": "Shrink to One",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

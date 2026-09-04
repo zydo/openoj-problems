@@ -4,8 +4,13 @@
   "id": 762,
   "slug": "prime-number-of-set-bits-in-binary-representation",
   "title": "Prime Number of Set Bits in Binary Representation",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Bit Manipulation",
+    "Primality Test"
+  ],
+  "topics": [
     "Math",
     "Bit Manipulation",
     "Primality Test"

@@ -4,8 +4,11 @@
   "id": 1184,
   "slug": "distance-between-bus-stops",
   "title": "Distance Between Bus Stops",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

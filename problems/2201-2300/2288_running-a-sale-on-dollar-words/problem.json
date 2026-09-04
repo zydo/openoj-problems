@@ -4,10 +4,13 @@
   "id": 2288,
   "slug": "running-a-sale-on-dollar-words",
   "title": "Running a Sale on Dollar Words",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "String",
     "Simulation"
+  ],
+  "topics": [
+    "String"
   ],
   "invocation": {
     "type": "function",

@@ -3,10 +3,16 @@
   "id": 895,
   "slug": "maximum-frequency-stack",
   "title": "Maximum Frequency Stack",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Stack",
     "Hash Table"
+  ],
+  "topics": [
+    "Hash Table",
+    "Stack",
+    "Design",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

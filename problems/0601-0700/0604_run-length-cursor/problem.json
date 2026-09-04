@@ -4,10 +4,16 @@
   "id": 604,
   "slug": "run-length-cursor",
   "title": "Run-Length Cursor",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Design",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Design",
+    "Iterator"
   ],
   "invocation": {
     "type": "design",

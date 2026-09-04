@@ -4,8 +4,12 @@
   "id": 3689,
   "slug": "maximum-total-subarray-value-i",
   "title": "Maximum Total Subarray Value I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

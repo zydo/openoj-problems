@@ -4,8 +4,15 @@
   "id": 2397,
   "slug": "maximum-rows-covered-by-columns",
   "title": "Maximum Rows Covered by Columns",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation",
+    "Matrix",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Backtracking",
     "Bit Manipulation",

@@ -3,8 +3,13 @@
   "id": 1218,
   "slug": "longest-arithmetic-subsequence-of-given-difference",
   "title": "Longest Arithmetic Subsequence of Given Difference",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Dynamic Programming"

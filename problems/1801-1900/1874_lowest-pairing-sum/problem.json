@@ -4,8 +4,13 @@
   "id": 1874,
   "slug": "lowest-pairing-sum",
   "title": "Lowest Pairing Sum",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

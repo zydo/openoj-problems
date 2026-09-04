@@ -4,8 +4,15 @@
   "id": 3535,
   "slug": "unit-conversion-ii",
   "title": "Unit Conversion II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Depth-First Search",

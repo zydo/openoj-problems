@@ -4,8 +4,13 @@
   "id": 546,
   "slug": "remove-boxes",
   "title": "Remove Boxes",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Memoization"

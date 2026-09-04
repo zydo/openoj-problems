@@ -3,11 +3,20 @@
   "id": 1735,
   "slug": "count-ways-to-make-array-with-product",
   "title": "Count Ways to Make Array With Product",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Combinatorics",
     "Number Theory",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Combinatorics",
+    "Number Theory",
+    "Prime Factorization",
+    "Fermat's Little Theorem"
   ],
   "invocation": {
     "type": "function",

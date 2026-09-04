@@ -4,8 +4,12 @@
   "id": 3644,
   "slug": "largest-swap-key-that-sorts",
   "title": "Largest Swap Key That Sorts",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation"
   ],

@@ -4,11 +4,17 @@
   "id": 2479,
   "slug": "largest-xor-of-two-disjoint-subtrees",
   "title": "Largest XOR of Two Disjoint Subtrees",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Trie",
     "Tree",
     "DFS"
+  ],
+  "topics": [
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

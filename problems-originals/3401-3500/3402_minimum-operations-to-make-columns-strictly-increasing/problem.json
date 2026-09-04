@@ -4,8 +4,13 @@
   "id": 3402,
   "slug": "minimum-operations-to-make-columns-strictly-increasing",
   "title": "Minimum Operations to Make Columns Strictly Increasing",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Matrix"

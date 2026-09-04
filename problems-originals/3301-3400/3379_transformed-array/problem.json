@@ -4,8 +4,12 @@
   "id": 3379,
   "slug": "transformed-array",
   "title": "Transformed Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

@@ -4,9 +4,14 @@
   "id": 3509,
   "slug": "largest-product-at-alternating-sum-k",
   "title": "Largest Product at Alternating Sum K",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
     "Dynamic Programming"
   ],
   "invocation": {

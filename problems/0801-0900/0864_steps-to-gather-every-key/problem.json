@@ -4,11 +4,17 @@
   "id": 864,
   "slug": "steps-to-gather-every-key",
   "title": "Steps to Gather Every Key",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Graph",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Bit Manipulation",
+    "Breadth-First Search",
+    "Matrix"
   ],
   "invocation": {
     "type": "function",

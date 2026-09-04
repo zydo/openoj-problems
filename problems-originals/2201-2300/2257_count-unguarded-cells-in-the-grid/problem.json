@@ -4,8 +4,13 @@
   "id": 2257,
   "slug": "count-unguarded-cells-in-the-grid",
   "title": "Count Unguarded Cells in the Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

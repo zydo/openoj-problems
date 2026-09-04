@@ -4,10 +4,17 @@
   "id": 302,
   "slug": "ink-blot-bounding-box",
   "title": "Ink Blot Bounding Box",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Binary Search",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Depth-First Search",
+    "Breadth-First Search",
     "Matrix"
   ],
   "invocation": {

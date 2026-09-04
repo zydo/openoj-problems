@@ -4,8 +4,15 @@
   "id": 706,
   "slug": "design-hashmap",
   "title": "Design HashMap",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List",
+    "Design",
+    "Hash Function"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Linked List",

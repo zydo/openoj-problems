@@ -4,8 +4,11 @@
   "id": 65,
   "slug": "valid-number",
   "title": "Valid Number",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

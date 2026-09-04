@@ -4,10 +4,17 @@
   "id": 381,
   "slug": "random-draw-multiset",
   "title": "Random Draw Multiset",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Hash Table",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Design",
+    "Randomized"
   ],
   "invocation": {
     "type": "design",

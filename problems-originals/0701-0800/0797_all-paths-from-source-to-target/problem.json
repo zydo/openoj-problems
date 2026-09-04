@@ -3,11 +3,18 @@
   "id": 797,
   "slug": "all-paths-from-source-to-target",
   "title": "All Paths From Source to Target",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "DFS",
     "Backtracking"
+  ],
+  "topics": [
+    "Backtracking",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

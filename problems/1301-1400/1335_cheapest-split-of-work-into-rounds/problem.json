@@ -4,10 +4,14 @@
   "id": 1335,
   "slug": "cheapest-split-of-work-into-rounds",
   "title": "Cheapest Split of Work into Rounds",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

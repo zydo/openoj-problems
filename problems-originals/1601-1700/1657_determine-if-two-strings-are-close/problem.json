@@ -4,8 +4,14 @@
   "id": 1657,
   "slug": "determine-if-two-strings-are-close",
   "title": "Determine if Two Strings Are Close",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sorting",

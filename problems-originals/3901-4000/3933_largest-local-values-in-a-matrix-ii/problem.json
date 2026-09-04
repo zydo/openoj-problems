@@ -4,8 +4,13 @@
   "id": 3933,
   "slug": "largest-local-values-in-a-matrix-ii",
   "title": "Largest Local Values in a Matrix II",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Prefix Sum"

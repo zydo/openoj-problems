@@ -3,12 +3,18 @@
   "id": 736,
   "slug": "parse-lisp-expression",
   "title": "Parse Lisp Expression",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Expression Parsing",
     "Recursion",
     "Stack"
+  ],
+  "topics": [
+    "Hash Table",
+    "String",
+    "Stack",
+    "Recursion"
   ],
   "invocation": {
     "type": "function",

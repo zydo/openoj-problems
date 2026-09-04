@@ -4,8 +4,13 @@
   "id": 1471,
   "slug": "the-k-strongest-values-in-an-array",
   "title": "The k Strongest Values in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Sorting"

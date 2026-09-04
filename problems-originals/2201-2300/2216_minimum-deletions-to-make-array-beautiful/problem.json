@@ -4,8 +4,13 @@
   "id": 2216,
   "slug": "minimum-deletions-to-make-array-beautiful",
   "title": "Minimum Deletions to Make Array Beautiful",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Stack",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Greedy"

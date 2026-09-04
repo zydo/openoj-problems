@@ -4,8 +4,12 @@
   "id": 1701,
   "slug": "average-order-wait",
   "title": "Average Order Wait",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Simulation"
   ],

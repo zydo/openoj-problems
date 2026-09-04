@@ -4,8 +4,11 @@
   "id": 2769,
   "slug": "highest-number-within-reach",
   "title": "The Highest Number Within Reach",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

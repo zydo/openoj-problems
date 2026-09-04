@@ -4,11 +4,15 @@
   "id": 2726,
   "slug": "a-chainable-calculator",
   "title": "A Chainable Calculator",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript",
     "Math",
     "Design"
+  ],
+  "topics": [
+    "Design",
+    "Math"
   ],
   "invocation": {
     "type": "interactive",

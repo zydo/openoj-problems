@@ -3,9 +3,14 @@
   "id": 3877,
   "slug": "minimum-removals-to-achieve-target-xor",
   "title": "Minimum Removals to Achieve Target XOR",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Meet in the Middle",
+    "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
     "Bit Manipulation"
   ],
   "invocation": {

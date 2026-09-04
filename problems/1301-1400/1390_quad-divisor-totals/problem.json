@@ -4,11 +4,17 @@
   "id": 1390,
   "slug": "quad-divisor-totals",
   "title": "Quad-Divisor Totals",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Prime Factorization"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Prime Factorization",
+    "Sieve Theory"
   ],
   "invocation": {
     "type": "function",

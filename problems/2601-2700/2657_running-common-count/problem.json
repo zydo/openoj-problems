@@ -4,10 +4,15 @@
   "id": 2657,
   "slug": "running-common-count",
   "title": "Running Common Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Bit Manipulation"
   ],
   "invocation": {
     "type": "function",

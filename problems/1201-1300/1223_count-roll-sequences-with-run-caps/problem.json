@@ -4,8 +4,12 @@
   "id": 1223,
   "slug": "count-roll-sequences-with-run-caps",
   "title": "Count Roll Sequences With Run Caps",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming"
   ],
   "invocation": {

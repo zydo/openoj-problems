@@ -4,8 +4,12 @@
   "id": 1234,
   "slug": "shortest-balancing-patch",
   "title": "Shortest Balancing Patch",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "String",
     "Sliding Window"
   ],

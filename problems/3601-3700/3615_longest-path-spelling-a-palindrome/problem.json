@@ -4,10 +4,17 @@
   "id": 3615,
   "slug": "longest-path-spelling-a-palindrome",
   "title": "Longest Path Spelling a Palindrome",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Dynamic Programming",
+    "Bitmask"
+  ],
+  "topics": [
+    "String",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Graph Theory",
     "Bitmask"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 598,
   "slug": "stacked-corner-rectangles-ii",
   "title": "Stacked Corner Rectangles II",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

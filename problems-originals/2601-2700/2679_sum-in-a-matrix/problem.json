@@ -4,8 +4,15 @@
   "id": 2679,
   "slug": "sum-in-a-matrix",
   "title": "Sum in a Matrix",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)",

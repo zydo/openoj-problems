@@ -3,11 +3,16 @@
   "id": 282,
   "slug": "expression-add-operators",
   "title": "Expression Add Operators",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Backtracking",
     "Math",
     "String"
+  ],
+  "topics": [
+    "Math",
+    "String",
+    "Backtracking"
   ],
   "invocation": {
     "type": "function",

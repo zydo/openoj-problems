@@ -4,8 +4,14 @@
   "id": 3078,
   "slug": "match-alphanumerical-pattern-in-matrix-i",
   "title": "Match Alphanumerical Pattern in Matrix I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

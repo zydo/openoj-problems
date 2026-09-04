@@ -4,8 +4,11 @@
   "id": 2474,
   "slug": "customers-with-strictly-increasing-purchases",
   "title": "Customers With Strictly Increasing Purchases",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

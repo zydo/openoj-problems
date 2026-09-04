@@ -4,8 +4,14 @@
   "id": 360,
   "slug": "sort-transformed-array",
   "title": "Sort Transformed Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers",

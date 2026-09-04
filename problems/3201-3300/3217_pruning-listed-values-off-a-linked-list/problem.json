@@ -4,8 +4,13 @@
   "id": 3217,
   "slug": "pruning-listed-values-off-a-linked-list",
   "title": "Pruning Listed Values Off A Linked List",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Linked List"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Linked List"

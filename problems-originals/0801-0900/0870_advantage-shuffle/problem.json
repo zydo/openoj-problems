@@ -3,11 +3,17 @@
   "id": 870,
   "slug": "advantage-shuffle",
   "title": "Advantage Shuffle",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Sorting",
     "Greedy",
     "Two Pointers"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

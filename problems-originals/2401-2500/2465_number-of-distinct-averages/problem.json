@@ -4,8 +4,14 @@
   "id": 2465,
   "slug": "number-of-distinct-averages",
   "title": "Number of Distinct Averages",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers",

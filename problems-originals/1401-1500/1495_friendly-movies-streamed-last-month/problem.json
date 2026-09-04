@@ -4,8 +4,11 @@
   "id": 1495,
   "slug": "friendly-movies-streamed-last-month",
   "title": "Friendly Movies Streamed Last Month",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

@@ -4,8 +4,13 @@
   "id": 3727,
   "slug": "maximum-alternating-sum-of-squares",
   "title": "Maximum Alternating Sum of Squares",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

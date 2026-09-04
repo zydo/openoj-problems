@@ -4,8 +4,11 @@
   "id": 1716,
   "slug": "calculate-money-in-leetcode-bank",
   "title": "Calculate Money in Leetcode Bank",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

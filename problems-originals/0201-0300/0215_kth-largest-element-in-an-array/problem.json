@@ -3,11 +3,18 @@
   "id": 215,
   "slug": "kth-largest-element-in-an-array",
   "title": "Kth Largest Element in an Array",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Quickselect",
     "Heap",
     "Divide and Conquer"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Quickselect"
   ],
   "invocation": {
     "type": "function",

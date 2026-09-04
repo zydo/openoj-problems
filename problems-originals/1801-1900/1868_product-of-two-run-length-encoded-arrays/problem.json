@@ -4,8 +4,12 @@
   "id": 1868,
   "slug": "product-of-two-run-length-encoded-arrays",
   "title": "Product of Two Run-Length Encoded Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

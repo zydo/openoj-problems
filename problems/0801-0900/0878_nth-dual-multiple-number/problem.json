@@ -4,8 +4,14 @@
   "id": 878,
   "slug": "nth-dual-multiple-number",
   "title": "Nth Dual-Multiple Number",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "Binary Search",
+    "Least Common Multiple",
+    "Inclusion-Exclusion Principle"
+  ],
+  "topics": [
     "Math",
     "Binary Search",
     "Least Common Multiple",

@@ -4,8 +4,12 @@
   "id": 3496,
   "slug": "maximize-score-after-pair-deletions",
   "title": "Maximize Score After Pair Deletions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

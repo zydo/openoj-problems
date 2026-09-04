@@ -4,10 +4,15 @@
   "id": 2100,
   "slug": "guard-count-valleys",
   "title": "Guard Count Valleys",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

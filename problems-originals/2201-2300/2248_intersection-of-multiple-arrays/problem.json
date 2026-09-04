@@ -4,8 +4,14 @@
   "id": 2248,
   "slug": "intersection-of-multiple-arrays",
   "title": "Intersection of Multiple Arrays",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sorting",

@@ -4,8 +4,16 @@
   "id": 451,
   "slug": "sort-characters-by-frequency",
   "title": "Sort Characters By Frequency",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Bucket Sort",
+    "Counting"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sorting",

@@ -4,8 +4,11 @@
   "id": 2264,
   "slug": "largest-3-same-digit-number-in-string",
   "title": "Largest 3-Same-Digit Number in String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

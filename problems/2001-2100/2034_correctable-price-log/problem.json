@@ -4,11 +4,18 @@
   "id": 2034,
   "slug": "correctable-price-log",
   "title": "Correctable Price Log",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Hash Table",
     "Heap",
     "Balanced BST"
+  ],
+  "topics": [
+    "Hash Table",
+    "Design",
+    "Heap (Priority Queue)",
+    "Data Stream",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "design",

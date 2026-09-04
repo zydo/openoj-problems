@@ -4,12 +4,22 @@
   "id": 2152,
   "slug": "fewest-lines-through-all-points",
   "title": "Fewest Lines Through All the Points",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Bit Manipulation",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Geometry",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

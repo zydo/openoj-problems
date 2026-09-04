@@ -4,8 +4,15 @@
   "id": 1391,
   "slug": "check-if-there-is-a-valid-path-in-a-grid",
   "title": "Check if There is a Valid Path in a Grid",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Depth-First Search",
     "Breadth-First Search",

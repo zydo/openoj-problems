@@ -4,12 +4,22 @@
   "id": 218,
   "slug": "building-outline",
   "title": "Building Outline",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Divide and Conquer",
     "Heap (Priority Queue)",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sweep Line",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

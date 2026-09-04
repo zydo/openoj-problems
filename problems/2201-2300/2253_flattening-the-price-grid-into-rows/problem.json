@@ -4,10 +4,13 @@
   "id": 2253,
   "slug": "flattening-the-price-grid-into-rows",
   "title": "Flattening the Price Grid Into Rows",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

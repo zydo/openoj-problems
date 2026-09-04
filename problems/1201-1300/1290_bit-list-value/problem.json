@@ -4,8 +4,12 @@
   "id": 1290,
   "slug": "bit-list-value",
   "title": "Decimal Value of a Bit List",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List",
+    "Math"
+  ],
+  "topics": [
     "Linked List",
     "Math"
   ],

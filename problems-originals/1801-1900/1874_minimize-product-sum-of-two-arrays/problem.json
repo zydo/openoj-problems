@@ -4,8 +4,13 @@
   "id": 1874,
   "slug": "minimize-product-sum-of-two-arrays",
   "title": "Minimize Product Sum of Two Arrays",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

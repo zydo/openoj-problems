@@ -4,8 +4,12 @@
   "id": 3159,
   "slug": "find-occurrences-of-an-element-in-an-array",
   "title": "Find Occurrences of an Element in an Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

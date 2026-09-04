@@ -4,8 +4,12 @@
   "id": 775,
   "slug": "global-and-local-inversions",
   "title": "Global and Local Inversions",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Math"
+  ],
+  "topics": [
     "Array",
     "Math"
   ],

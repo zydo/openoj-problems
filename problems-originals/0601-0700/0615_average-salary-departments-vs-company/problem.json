@@ -4,8 +4,11 @@
   "id": 615,
   "slug": "average-salary-departments-vs-company",
   "title": "Average Salary: Departments VS Company",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

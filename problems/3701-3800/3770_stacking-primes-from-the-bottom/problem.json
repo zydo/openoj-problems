@@ -4,8 +4,13 @@
   "id": 3770,
   "slug": "stacking-primes-from-the-bottom",
   "title": "Stacking Primes From The Bottom",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
+    "Array",
     "Math",
     "Number Theory"
   ],

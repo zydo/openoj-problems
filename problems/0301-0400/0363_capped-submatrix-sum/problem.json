@@ -4,11 +4,18 @@
   "id": 363,
   "slug": "capped-submatrix-sum",
   "title": "Capped Submatrix Sum",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Prefix Sum",
     "Binary Search",
     "Balanced BST"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Matrix",
+    "Prefix Sum",
+    "Ordered Set"
   ],
   "invocation": {
     "type": "function",

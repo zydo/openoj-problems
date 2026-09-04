@@ -4,8 +4,13 @@
   "id": 2661,
   "slug": "first-completely-painted-row-or-column",
   "title": "First Completely Painted Row or Column",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Matrix"

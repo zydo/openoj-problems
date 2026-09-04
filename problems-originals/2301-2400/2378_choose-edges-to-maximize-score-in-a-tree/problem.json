@@ -3,11 +3,16 @@
   "id": 2378,
   "slug": "choose-edges-to-maximize-score-in-a-tree",
   "title": "Choose Edges to Maximize Score in a Tree",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Tree",
     "Depth First Search"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
   ],
   "invocation": {
     "type": "function",

@@ -3,10 +3,13 @@
   "id": 3490,
   "slug": "count-beautiful-numbers",
   "title": "Count Beautiful Numbers",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
     "Number Theory"
+  ],
+  "topics": [
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

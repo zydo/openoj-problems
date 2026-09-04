@@ -4,8 +4,13 @@
   "id": 273,
   "slug": "english-numeral-spelling",
   "title": "English Numeral Spelling",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Math",
+    "String",
+    "Recursion"
+  ],
+  "topics": [
     "Math",
     "String",
     "Recursion"

@@ -4,9 +4,16 @@
   "id": 2969,
   "slug": "fewest-coins-to-take-every-fruit",
   "title": "Fewest Coins to Take Every Fruit",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Dynamic Programming",
+    "Monotonic Queue"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Heap (Priority Queue)",
     "Monotonic Queue"
   ],
   "invocation": {

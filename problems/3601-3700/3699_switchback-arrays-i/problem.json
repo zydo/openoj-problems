@@ -4,8 +4,12 @@
   "id": 3699,
   "slug": "switchback-arrays-i",
   "title": "Switchback Arrays I",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Prefix Sum"
   ],

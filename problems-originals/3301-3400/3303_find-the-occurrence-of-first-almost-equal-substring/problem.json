@@ -4,8 +4,13 @@
   "id": 3303,
   "slug": "find-the-occurrence-of-first-almost-equal-substring",
   "title": "Find the Occurrence of First Almost Equal Substring",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "String Matching",
+    "Knuth–Morris–Pratt Algorithm"
+  ],
+  "topics": [
     "String",
     "String Matching",
     "Knuth–Morris–Pratt Algorithm"

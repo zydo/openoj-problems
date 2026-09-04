@@ -4,8 +4,14 @@
   "id": 1208,
   "slug": "longest-conversion-within-budget",
   "title": "Longest Conversion Within Budget",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Binary Search",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Binary Search",
     "Sliding Window",

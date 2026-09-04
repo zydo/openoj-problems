@@ -4,8 +4,12 @@
   "id": 283,
   "slug": "zeros-to-the-end",
   "title": "Zeros To The End",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Two Pointers"
   ],

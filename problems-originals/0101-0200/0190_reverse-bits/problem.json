@@ -4,8 +4,12 @@
   "id": 190,
   "slug": "reverse-bits",
   "title": "Reverse Bits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Divide and Conquer",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Divide and Conquer",
     "Bit Manipulation"
   ],

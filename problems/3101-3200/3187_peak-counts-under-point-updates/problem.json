@@ -4,8 +4,13 @@
   "id": 3187,
   "slug": "peak-counts-under-point-updates",
   "title": "Peak Counts Under Point Updates",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ],
+  "topics": [
     "Array",
     "Binary Indexed Tree",
     "Segment Tree"

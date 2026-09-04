@@ -4,8 +4,12 @@
   "id": 3169,
   "slug": "count-days-without-meetings",
   "title": "Count Days Without Meetings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

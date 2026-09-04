@@ -4,8 +4,12 @@
   "id": 3743,
   "slug": "maximize-cyclic-partition-score",
   "title": "Maximize Cyclic Partition Score",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

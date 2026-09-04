@@ -4,8 +4,12 @@
   "id": 467,
   "slug": "wraparound-substring-count",
   "title": "Wraparound Substring Count",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "String",
     "Dynamic Programming"
   ],

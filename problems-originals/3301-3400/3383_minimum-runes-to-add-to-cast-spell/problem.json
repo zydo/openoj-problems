@@ -3,11 +3,18 @@
   "id": 3383,
   "slug": "minimum-runes-to-add-to-cast-spell",
   "title": "Minimum Runes to Add to Cast Spell",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Graph",
     "Depth-First Search",
+    "Topological Sort"
+  ],
+  "topics": [
+    "Array",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
     "Topological Sort"
   ],
   "invocation": {

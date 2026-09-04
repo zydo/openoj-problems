@@ -4,8 +4,13 @@
   "id": 3583,
   "slug": "count-special-triplets",
   "title": "Count Special Triplets",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

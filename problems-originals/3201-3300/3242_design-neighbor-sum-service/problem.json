@@ -4,8 +4,15 @@
   "id": 3242,
   "slug": "design-neighbor-sum-service",
   "title": "Design Neighbor Sum Service",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Design",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Design",

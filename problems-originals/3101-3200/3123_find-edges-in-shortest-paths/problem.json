@@ -3,9 +3,16 @@
   "id": 3123,
   "slug": "find-edges-in-shortest-paths",
   "title": "Find Edges in Shortest Paths",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
+    "Shortest Path"
+  ],
+  "topics": [
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Graph Theory",
+    "Heap (Priority Queue)",
     "Shortest Path"
   ],
   "invocation": {

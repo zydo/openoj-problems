@@ -3,10 +3,16 @@
   "id": 1703,
   "slug": "minimum-adjacent-swaps-for-k-consecutive-ones",
   "title": "Minimum Adjacent Swaps for K Consecutive Ones",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Greedy",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sliding Window",
     "Prefix Sum"
   ],
   "invocation": {

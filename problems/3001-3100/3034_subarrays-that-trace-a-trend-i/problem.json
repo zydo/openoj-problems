@@ -4,10 +4,16 @@
   "id": 3034,
   "slug": "subarrays-that-trace-a-trend-i",
   "title": "Subarrays That Trace A Trend I",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String Matching"
+  ],
+  "topics": [
+    "Array",
+    "Rolling Hash",
+    "String Matching",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

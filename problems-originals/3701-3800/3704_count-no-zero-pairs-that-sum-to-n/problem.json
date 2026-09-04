@@ -3,10 +3,14 @@
   "id": 3704,
   "slug": "count-no-zero-pairs-that-sum-to-n",
   "title": "Count No-Zero Pairs That Sum to N",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Digit DP",
     "Combinatorics"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming"
   ],
   "invocation": {
     "type": "function",

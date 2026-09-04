@@ -3,11 +3,16 @@
   "id": 3787,
   "slug": "find-diameter-endpoints-of-a-tree",
   "title": "Find Diameter Endpoints of a Tree",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Tree",
     "Breadth-First Search",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Tree",
+    "Breadth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

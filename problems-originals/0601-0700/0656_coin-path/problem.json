@@ -4,8 +4,12 @@
   "id": 656,
   "slug": "coin-path",
   "title": "Coin Path",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

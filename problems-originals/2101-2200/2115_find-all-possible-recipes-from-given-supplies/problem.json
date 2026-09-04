@@ -3,11 +3,19 @@
   "id": 2115,
   "slug": "find-all-possible-recipes-from-given-supplies",
   "title": "Find All Possible Recipes from Given Supplies",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Graph",
     "Topological Sort",
     "Breadth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Graph Theory",
+    "Topological Sort",
+    "Directed Acyclic Graph"
   ],
   "invocation": {
     "type": "function",

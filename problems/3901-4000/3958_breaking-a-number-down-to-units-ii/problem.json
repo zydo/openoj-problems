@@ -4,8 +4,11 @@
   "id": 3958,
   "slug": "breaking-a-number-down-to-units-ii",
   "title": "Breaking a Number Down to Units II",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

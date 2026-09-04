@@ -4,11 +4,19 @@
   "id": 3327,
   "slug": "palindromic-subtree-strings",
   "title": "Palindromic Subtree Strings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Tree",
     "Depth-First Search"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Hash Function"
   ],
   "invocation": {
     "type": "function",

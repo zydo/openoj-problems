@@ -4,8 +4,12 @@
   "id": 1283,
   "slug": "smallest-divisor-under-a-cap",
   "title": "Smallest Divisor Under a Cap",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Binary Search"
+  ],
+  "topics": [
+    "Array",
     "Binary Search"
   ],
   "invocation": {

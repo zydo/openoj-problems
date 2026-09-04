@@ -4,10 +4,13 @@
   "id": 3057,
   "slug": "workloads-above-crew-average",
   "title": "Workloads Above The Crew Average",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

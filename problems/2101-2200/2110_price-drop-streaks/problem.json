@@ -4,11 +4,18 @@
   "id": 2110,
   "slug": "price-drop-streaks",
   "title": "Price Drop Streaks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Math",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Sliding Window"
   ],
   "invocation": {
     "type": "function",

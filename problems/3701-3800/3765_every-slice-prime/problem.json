@@ -4,8 +4,13 @@
   "id": 3765,
   "slug": "every-slice-prime",
   "title": "Every-Slice Prime",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Enumeration",
     "Number Theory"

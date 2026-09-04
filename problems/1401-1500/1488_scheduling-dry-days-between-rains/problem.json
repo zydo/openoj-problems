@@ -4,12 +4,19 @@
   "id": 1488,
   "slug": "scheduling-dry-days-between-rains",
   "title": "Scheduling Dry Days Between Rains",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Binary Search",
     "Hash Table"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Greedy",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

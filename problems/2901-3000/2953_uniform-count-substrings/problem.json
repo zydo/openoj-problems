@@ -4,8 +4,13 @@
   "id": 2953,
   "slug": "uniform-count-substrings",
   "title": "Uniform-Count Substrings",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Sliding Window"

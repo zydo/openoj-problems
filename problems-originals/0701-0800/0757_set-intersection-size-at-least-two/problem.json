@@ -3,8 +3,13 @@
   "id": 757,
   "slug": "set-intersection-size-at-least-two",
   "title": "Set Intersection Size At Least Two",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

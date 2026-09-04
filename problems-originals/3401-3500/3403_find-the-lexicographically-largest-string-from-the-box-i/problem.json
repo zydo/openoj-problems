@@ -4,8 +4,13 @@
   "id": 3403,
   "slug": "find-the-lexicographically-largest-string-from-the-box-i",
   "title": "Find the Lexicographically Largest String From the Box I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Two Pointers",
+    "String",
+    "Enumeration"
+  ],
+  "topics": [
     "Two Pointers",
     "String",
     "Enumeration"

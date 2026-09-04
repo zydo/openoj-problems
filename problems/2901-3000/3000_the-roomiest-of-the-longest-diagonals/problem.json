@@ -4,8 +4,11 @@
   "id": 3000,
   "slug": "the-roomiest-of-the-longest-diagonals",
   "title": "The Roomiest Of The Longest Diagonals",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

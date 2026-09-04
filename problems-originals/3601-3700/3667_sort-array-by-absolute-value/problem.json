@@ -4,8 +4,14 @@
   "id": 3667,
   "slug": "sort-array-by-absolute-value",
   "title": "Sort Array By Absolute Value",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Math",
     "Two Pointers",

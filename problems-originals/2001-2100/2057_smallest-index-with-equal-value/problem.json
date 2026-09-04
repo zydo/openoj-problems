@@ -4,8 +4,11 @@
   "id": 2057,
   "slug": "smallest-index-with-equal-value",
   "title": "Smallest Index With Equal Value",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array"
+  ],
+  "topics": [
     "Array"
   ],
   "invocation": {

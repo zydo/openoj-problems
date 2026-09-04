@@ -4,8 +4,13 @@
   "id": 2864,
   "slug": "maximum-odd-binary-number",
   "title": "Maximum Odd Binary Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "String",
     "Greedy"

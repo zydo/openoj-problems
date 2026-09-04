@@ -3,10 +3,18 @@
   "id": 173,
   "slug": "binary-search-tree-iterator",
   "title": "Binary Search Tree Iterator",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "BST",
     "Stack"
+  ],
+  "topics": [
+    "Stack",
+    "Tree",
+    "Design",
+    "Binary Search Tree",
+    "Binary Tree",
+    "Iterator"
   ],
   "invocation": {
     "type": "design",

@@ -4,9 +4,12 @@
   "id": 2704,
   "slug": "a-tiny-assertion-helper",
   "title": "A Tiny Assertion Helper",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "JavaScript"
+  ],
+  "topics": [
+    "Design"
   ],
   "invocation": {
     "type": "interactive",

@@ -4,11 +4,15 @@
   "id": 4005,
   "slug": "fewest-multiply-divide-steps-to-equalize-iii",
   "title": "Fewest Multiply-Divide Steps to Equalize III",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Math",
     "Number Theory",
     "Hash Table"
+  ],
+  "topics": [
+    "Number Theory",
+    "Math"
   ],
   "invocation": {
     "type": "function",

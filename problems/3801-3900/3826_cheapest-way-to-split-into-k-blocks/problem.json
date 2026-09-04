@@ -4,12 +4,20 @@
   "id": 3826,
   "slug": "cheapest-way-to-split-into-k-blocks",
   "title": "Cheapest Way To Split Into K Blocks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Dynamic Programming",
     "Divide and Conquer",
     "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Queue",
+    "Prefix Sum",
+    "Monotonic Queue"
   ],
   "invocation": {
     "type": "function",

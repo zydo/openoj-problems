@@ -4,10 +4,13 @@
   "id": 2701,
   "slug": "rising-payment-streaks",
   "title": "Rising Payment Streaks",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

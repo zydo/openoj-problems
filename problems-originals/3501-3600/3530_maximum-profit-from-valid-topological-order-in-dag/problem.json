@@ -3,11 +3,19 @@
   "id": 3530,
   "slug": "maximum-profit-from-valid-topological-order-in-dag",
   "title": "Maximum Profit from Valid Topological Order in DAG",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Bitmask DP",
     "Topological Sort",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Graph Theory",
+    "Topological Sort",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

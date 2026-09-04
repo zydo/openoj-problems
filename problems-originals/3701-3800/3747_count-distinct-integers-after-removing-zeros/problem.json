@@ -4,8 +4,12 @@
   "id": 3747,
   "slug": "count-distinct-integers-after-removing-zeros",
   "title": "Count Distinct Integers After Removing Zeros",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Math",
     "Dynamic Programming"
   ],

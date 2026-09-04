@@ -4,8 +4,12 @@
   "id": 1566,
   "slug": "detect-pattern-of-length-m-repeated-k-or-more-times",
   "title": "Detect Pattern of Length M Repeated K or More Times",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Enumeration"
   ],

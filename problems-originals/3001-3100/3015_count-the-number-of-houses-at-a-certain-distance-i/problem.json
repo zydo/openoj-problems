@@ -4,8 +4,13 @@
   "id": 3015,
   "slug": "count-the-number-of-houses-at-a-certain-distance-i",
   "title": "Count the Number of Houses at a Certain Distance I",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Breadth-First Search",
+    "Graph Theory",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Breadth-First Search",
     "Graph Theory",
     "Prefix Sum"

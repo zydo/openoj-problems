@@ -4,8 +4,12 @@
   "id": 1883,
   "slug": "fewest-skipped-rests-to-make-the-meeting",
   "title": "Fewest Skipped Rests to Make the Meeting",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

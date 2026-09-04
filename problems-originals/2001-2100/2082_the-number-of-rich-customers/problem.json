@@ -4,8 +4,11 @@
   "id": 2082,
   "slug": "the-number-of-rich-customers",
   "title": "The Number of Rich Customers",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {

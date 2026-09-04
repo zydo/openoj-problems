@@ -4,10 +4,13 @@
   "id": 2890,
   "slug": "unrolling-the-quarterly-sales-columns",
   "title": "Unrolling The Quarterly Sales Columns",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

@@ -4,10 +4,15 @@
   "id": 1293,
   "slug": "shortest-grid-walk-with-k-obstacle-crossings",
   "title": "Shortest Grid Walk with k Obstacle Crossings",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "BFS",
     "Shortest Path",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
+    "Breadth-First Search",
     "Matrix"
   ],
   "invocation": {

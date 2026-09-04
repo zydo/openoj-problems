@@ -4,9 +4,13 @@
   "id": 370,
   "slug": "apply-interval-updates",
   "title": "Apply Interval Updates",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Difference Array",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
     "Prefix Sum"
   ],
   "invocation": {

@@ -4,8 +4,14 @@
   "id": 1356,
   "slug": "sort-integers-by-the-number-of-1-bits",
   "title": "Sort Integers by The Number of 1 Bits",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Bit Manipulation",
+    "Sorting",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Bit Manipulation",
     "Sorting",

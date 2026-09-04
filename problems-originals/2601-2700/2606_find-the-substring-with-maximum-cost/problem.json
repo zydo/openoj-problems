@@ -4,8 +4,14 @@
   "id": 2606,
   "slug": "find-the-substring-with-maximum-cost",
   "title": "Find the Substring With Maximum Cost",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

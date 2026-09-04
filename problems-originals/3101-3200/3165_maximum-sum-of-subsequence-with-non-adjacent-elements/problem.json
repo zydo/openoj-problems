@@ -3,10 +3,16 @@
   "id": 3165,
   "slug": "maximum-sum-of-subsequence-with-non-adjacent-elements",
   "title": "Maximum Sum of Subsequence With Non-adjacent Elements",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Segment Tree",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Segment Tree"
   ],
   "invocation": {
     "type": "function",

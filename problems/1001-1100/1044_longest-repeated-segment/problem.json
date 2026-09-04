@@ -4,12 +4,24 @@
   "id": 1044,
   "slug": "longest-repeated-segment",
   "title": "Longest Repeated Segment",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "String",
     "Binary Search",
     "Rolling Hash",
     "Sliding Window"
+  ],
+  "topics": [
+    "String",
+    "Binary Search",
+    "Sliding Window",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function",
+    "Suffix Automaton",
+    "Suffix Tree",
+    "Z Algorithm",
+    "Boyer–Moore String-Search Algorithm"
   ],
   "invocation": {
     "type": "function",

@@ -4,11 +4,19 @@
   "id": 1373,
   "slug": "largest-bst-subtree-sum",
   "title": "Largest BST Subtree Sum",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Depth-First Search",
     "Binary Search Tree"
+  ],
+  "topics": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Binary Search Tree",
+    "Binary Tree",
+    "DP on Trees"
   ],
   "invocation": {
     "type": "function",

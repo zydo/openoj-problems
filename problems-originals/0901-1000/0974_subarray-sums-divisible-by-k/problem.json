@@ -4,8 +4,13 @@
   "id": 974,
   "slug": "subarray-sums-divisible-by-k",
   "title": "Subarray Sums Divisible by K",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Prefix Sum"

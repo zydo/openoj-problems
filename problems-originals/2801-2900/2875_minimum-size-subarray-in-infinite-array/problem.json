@@ -4,8 +4,14 @@
   "id": 2875,
   "slug": "minimum-size-subarray-in-infinite-array",
   "title": "Minimum Size Subarray in Infinite Array",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Sliding Window",

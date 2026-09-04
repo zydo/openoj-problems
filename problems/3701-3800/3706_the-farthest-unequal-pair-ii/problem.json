@@ -4,8 +4,12 @@
   "id": 3706,
   "slug": "the-farthest-unequal-pair-ii",
   "title": "The Farthest Unequal Pair II",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

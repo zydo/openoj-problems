@@ -4,11 +4,17 @@
   "id": 524,
   "slug": "longest-deletable-word",
   "title": "Longest Deletable Word",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
     "String"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

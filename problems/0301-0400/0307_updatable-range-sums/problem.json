@@ -4,11 +4,19 @@
   "id": 307,
   "slug": "updatable-range-sums",
   "title": "Updatable Range Sums",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Segment Tree",
     "Fenwick Tree",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Divide and Conquer",
+    "Design",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sqrt Decomposition"
   ],
   "invocation": {
     "type": "design",

@@ -4,8 +4,13 @@
   "id": 3363,
   "slug": "gathering-from-three-corners",
   "title": "Gathering From Three Corners",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Matrix"

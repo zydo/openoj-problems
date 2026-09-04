@@ -4,8 +4,11 @@
   "id": 3950,
   "slug": "one-pair-of-touching-ones",
   "title": "One Pair of Touching Ones",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Bit Manipulation"
   ],
   "invocation": {

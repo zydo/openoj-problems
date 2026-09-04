@@ -4,10 +4,15 @@
   "id": 20,
   "slug": "balanced-brackets",
   "title": "Balanced Brackets",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "Stack"
+  ],
+  "topics": [
+    "String",
+    "Stack",
+    "Bracket Sequences"
   ],
   "invocation": {
     "type": "function",

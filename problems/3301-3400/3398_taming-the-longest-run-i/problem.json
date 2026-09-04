@@ -4,8 +4,13 @@
   "id": 3398,
   "slug": "taming-the-longest-run-i",
   "title": "Taming The Longest Run I",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Binary Search",
+    "Enumeration"
+  ],
+  "topics": [
     "Array",
     "Binary Search",
     "Enumeration"

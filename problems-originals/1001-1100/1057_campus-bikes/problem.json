@@ -4,8 +4,13 @@
   "id": 1057,
   "slug": "campus-bikes",
   "title": "Campus Bikes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Heap (Priority Queue)"

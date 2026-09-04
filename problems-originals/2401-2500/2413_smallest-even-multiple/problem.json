@@ -4,8 +4,12 @@
   "id": 2413,
   "slug": "smallest-even-multiple",
   "title": "Smallest Even Multiple",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Number Theory"
+  ],
+  "topics": [
     "Math",
     "Number Theory"
   ],

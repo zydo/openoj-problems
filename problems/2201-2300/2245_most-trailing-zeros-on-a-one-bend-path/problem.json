@@ -4,11 +4,16 @@
   "id": 2245,
   "slug": "most-trailing-zeros-on-a-one-bend-path",
   "title": "Most Trailing Zeros on a One-Bend Path",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Matrix",
     "Prefix Sum",
     "Geometry"
+  ],
+  "topics": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
   ],
   "invocation": {
     "type": "function",

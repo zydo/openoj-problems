@@ -4,8 +4,13 @@
   "id": 16,
   "slug": "3sum-closest",
   "title": "3Sum Closest",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Sorting"

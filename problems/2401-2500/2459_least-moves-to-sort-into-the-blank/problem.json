@@ -4,11 +4,16 @@
   "id": 2459,
   "slug": "least-moves-to-sort-into-the-blank",
   "title": "Least Moves to Sort Into the Blank",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Greedy",
     "Sorting",
     "Array"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Sorting"
   ],
   "invocation": {
     "type": "function",

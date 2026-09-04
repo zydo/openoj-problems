@@ -4,8 +4,12 @@
   "id": 1323,
   "slug": "maximum-69-number",
   "title": "Maximum 69 Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Math",
+    "Greedy"
+  ],
+  "topics": [
     "Math",
     "Greedy"
   ],

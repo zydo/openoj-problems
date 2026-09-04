@@ -4,11 +4,20 @@
   "id": 3620,
   "slug": "best-bottleneck-route-within-a-budget",
   "title": "Best Bottleneck Route Within a Budget",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Graph",
     "Binary Search",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Heap (Priority Queue)",
+    "Shortest Path"
   ],
   "invocation": {
     "type": "function",

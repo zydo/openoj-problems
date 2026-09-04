@@ -4,8 +4,12 @@
   "id": 1333,
   "slug": "restaurant-shortlist-by-rating",
   "title": "Restaurant Shortlist By Rating",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Sorting"
   ],

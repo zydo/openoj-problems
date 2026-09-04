@@ -4,8 +4,18 @@
   "id": 3378,
   "slug": "count-connected-components-in-lcm-graph",
   "title": "Count Connected Components in LCM Graph",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Union-Find",
+    "Number Theory",
+    "Least Common Multiple",
+    "Euclidean Algorithm",
+    "Greatest Common Divisor"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Math",

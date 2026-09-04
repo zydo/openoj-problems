@@ -4,8 +4,14 @@
   "id": 723,
   "slug": "sugar-cascade",
   "title": "Sugar Cascade",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Matrix",

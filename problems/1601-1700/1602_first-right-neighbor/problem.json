@@ -4,8 +4,13 @@
   "id": 1602,
   "slug": "first-right-neighbor",
   "title": "First Right Neighbor",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Breadth-First Search",
     "Binary Tree"

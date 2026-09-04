@@ -4,8 +4,13 @@
   "id": 1710,
   "slug": "maximum-units-on-a-truck",
   "title": "Maximum Units on a Truck",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Greedy",
     "Sorting"

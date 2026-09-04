@@ -4,11 +4,17 @@
   "id": 2037,
   "slug": "walk-everyone-to-a-chair",
   "title": "Walk Everyone to a Chair",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Counting Sort"
   ],
   "invocation": {
     "type": "function",

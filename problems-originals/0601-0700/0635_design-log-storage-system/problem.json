@@ -4,8 +4,14 @@
   "id": 635,
   "slug": "design-log-storage-system",
   "title": "Design Log Storage System",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Hash Table",
+    "String",
+    "Design",
+    "Ordered Set"
+  ],
+  "topics": [
     "Hash Table",
     "String",
     "Design",

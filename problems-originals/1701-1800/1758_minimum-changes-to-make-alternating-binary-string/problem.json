@@ -4,8 +4,11 @@
   "id": 1758,
   "slug": "minimum-changes-to-make-alternating-binary-string",
   "title": "Minimum Changes To Make Alternating Binary String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "String"
+  ],
+  "topics": [
     "String"
   ],
   "invocation": {

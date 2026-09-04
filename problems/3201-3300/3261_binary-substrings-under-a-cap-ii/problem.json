@@ -4,10 +4,17 @@
   "id": 3261,
   "slug": "binary-substrings-under-a-cap-ii",
   "title": "Binary Substrings Under A Cap II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "String",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Binary Search",
     "Sliding Window",
     "Prefix Sum"
   ],

@@ -4,8 +4,13 @@
   "id": 1944,
   "slug": "sightlines-in-a-queue",
   "title": "Sightlines in a Queue",
-  "difficulty": "H2",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "topics": [
     "Array",
     "Stack",
     "Monotonic Stack"

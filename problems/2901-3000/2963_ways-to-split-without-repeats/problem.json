@@ -4,10 +4,16 @@
   "id": 2963,
   "slug": "ways-to-split-without-repeats",
   "title": "Ways To Split Without Repeats",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
+    "Combinatorics"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Math",
     "Combinatorics"
   ],
   "invocation": {

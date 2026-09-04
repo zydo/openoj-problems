@@ -4,8 +4,13 @@
   "id": 320,
   "slug": "word-shrink-variants",
   "title": "Word Shrink Variants",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "String",
     "Backtracking",
     "Bit Manipulation"

@@ -3,11 +3,18 @@
   "id": 474,
   "slug": "ones-and-zeroes",
   "title": "Ones and Zeroes",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "String",
     "Dynamic Programming"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
   ],
   "invocation": {
     "type": "function",

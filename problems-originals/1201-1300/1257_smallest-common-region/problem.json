@@ -4,8 +4,18 @@
   "id": 1257,
   "slug": "smallest-common-region",
   "title": "Smallest Common Region",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Lifting",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

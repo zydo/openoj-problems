@@ -4,8 +4,14 @@
   "id": 1858,
   "slug": "longest-word-with-all-prefixes",
   "title": "Longest Word With All Prefixes",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "String",
+    "Depth-First Search",
+    "Trie"
+  ],
+  "topics": [
     "Array",
     "String",
     "Depth-First Search",

@@ -4,8 +4,13 @@
   "id": 1913,
   "slug": "maximum-product-difference-between-two-pairs",
   "title": "Maximum Product Difference Between Two Pairs",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Sorting",
+    "Quicksort"
+  ],
+  "topics": [
     "Array",
     "Sorting",
     "Quicksort"

@@ -4,8 +4,13 @@
   "id": 246,
   "slug": "strobogrammatic-number",
   "title": "Strobogrammatic Number",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Hash Table",
     "Two Pointers",
     "String"

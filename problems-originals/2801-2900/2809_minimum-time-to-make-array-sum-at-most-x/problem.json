@@ -4,8 +4,13 @@
   "id": 2809,
   "slug": "minimum-time-to-make-array-sum-at-most-x",
   "title": "Minimum Time to Make Array Sum At Most x",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming",
     "Sorting"

@@ -4,8 +4,17 @@
   "id": 2071,
   "slug": "maximum-number-of-tasks-you-can-assign",
   "title": "Maximum Number of Tasks You Can Assign",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Greedy",
+    "Queue",
+    "Sorting",
+    "Monotonic Queue"
+  ],
+  "topics": [
     "Array",
     "Two Pointers",
     "Binary Search",

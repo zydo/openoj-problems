@@ -4,8 +4,12 @@
   "id": 1640,
   "slug": "assembling-an-array-from-pieces",
   "title": "Assembling an Array From Pieces",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

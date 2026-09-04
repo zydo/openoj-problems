@@ -3,9 +3,17 @@
   "id": 2289,
   "slug": "steps-to-make-array-non-decreasing",
   "title": "Steps to Make Array Non-decreasing",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
+    "Dynamic Programming",
+    "Stack",
+    "Monotonic Stack",
+    "Simulation"
+  ],
+  "topics": [
+    "Array",
+    "Linked List",
     "Dynamic Programming",
     "Stack",
     "Monotonic Stack",

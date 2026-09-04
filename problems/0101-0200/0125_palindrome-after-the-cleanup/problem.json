@@ -4,8 +4,12 @@
   "id": 125,
   "slug": "palindrome-after-the-cleanup",
   "title": "Palindrome After The Cleanup",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "topics": [
     "Two Pointers",
     "String"
   ],

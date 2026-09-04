@@ -4,8 +4,12 @@
   "id": 3678,
   "slug": "smallest-missing-integer-above-the-mean",
   "title": "Smallest Missing Integer Above The Mean",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

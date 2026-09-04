@@ -4,8 +4,11 @@
   "id": 1615,
   "slug": "maximal-network-rank",
   "title": "Maximal Network Rank",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Graph Theory"
+  ],
+  "topics": [
     "Graph Theory"
   ],
   "invocation": {

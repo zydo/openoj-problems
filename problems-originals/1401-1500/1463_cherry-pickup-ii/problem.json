@@ -3,8 +3,13 @@
   "id": 1463,
   "slug": "cherry-pickup-ii",
   "title": "Cherry Pickup II",
-  "difficulty": "H3",
+  "difficulty": "Hard",
   "tags": [
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "topics": [
+    "Array",
     "Dynamic Programming",
     "Matrix"
   ],

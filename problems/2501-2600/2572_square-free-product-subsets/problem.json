@@ -4,11 +4,19 @@
   "id": 2572,
   "slug": "square-free-product-subsets",
   "title": "Square-Free Product Subsets",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Dynamic Programming",
     "Bitmask DP",
     "Number Theory"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Number Theory",
+    "Bitmask"
   ],
   "invocation": {
     "type": "function",

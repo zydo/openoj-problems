@@ -4,8 +4,12 @@
   "id": 983,
   "slug": "cheapest-pass-plan",
   "title": "Cheapest Pass Plan",
-  "difficulty": "H2",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

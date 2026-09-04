@@ -4,8 +4,12 @@
   "id": 2515,
   "slug": "shortest-distance-to-target-string-in-a-circular-array",
   "title": "Shortest Distance to Target String in a Circular Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "String"
+  ],
+  "topics": [
     "Array",
     "String"
   ],

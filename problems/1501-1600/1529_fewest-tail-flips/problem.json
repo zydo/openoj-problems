@@ -4,8 +4,12 @@
   "id": 1529,
   "slug": "fewest-tail-flips",
   "title": "Fewest Tail Flips",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Greedy"
+  ],
+  "topics": [
     "String",
     "Greedy"
   ],

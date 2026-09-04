@@ -4,8 +4,13 @@
   "id": 2039,
   "slug": "the-time-when-the-network-becomes-idle",
   "title": "The Time When the Network Becomes Idle",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "topics": [
     "Array",
     "Breadth-First Search",
     "Graph Theory"

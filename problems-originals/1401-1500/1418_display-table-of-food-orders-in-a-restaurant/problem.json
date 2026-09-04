@@ -4,8 +4,15 @@
   "id": 1418,
   "slug": "display-table-of-food-orders-in-a-restaurant",
   "title": "Display Table of Food Orders in a Restaurant",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Sorting",
+    "Ordered Set"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "String",

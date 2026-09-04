@@ -3,9 +3,14 @@
   "id": 1475,
   "slug": "final-prices-with-a-special-discount-in-a-shop",
   "title": "Final Prices With a Special Discount in a Shop",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
+    "Monotonic Stack"
+  ],
+  "topics": [
+    "Array",
+    "Stack",
     "Monotonic Stack"
   ],
   "invocation": {

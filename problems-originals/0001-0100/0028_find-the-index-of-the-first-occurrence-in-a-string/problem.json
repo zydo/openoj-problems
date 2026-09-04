@@ -4,7 +4,7 @@
   "id": 28,
   "slug": "find-the-index-of-the-first-occurrence-in-a-string",
   "title": "Find the Index of the First Occurrence in a String",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
     "Boyer–Moore String-Search Algorithm",
     "Knuth–Morris–Pratt Algorithm",
@@ -12,6 +12,14 @@
     "String Matching",
     "Two Pointers",
     "Z Algorithm"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "String Matching",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm",
+    "Boyer–Moore String-Search Algorithm"
   ],
   "invocation": {
     "type": "function",

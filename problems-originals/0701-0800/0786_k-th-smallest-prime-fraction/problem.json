@@ -3,12 +3,19 @@
   "id": 786,
   "slug": "k-th-smallest-prime-fraction",
   "title": "K-th Smallest Prime Fraction",
-  "difficulty": "H4",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Two Pointers",
     "Binary Search",
     "Heap"
+  ],
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

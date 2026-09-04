@@ -4,8 +4,11 @@
   "id": 83,
   "slug": "remove-duplicates-from-sorted-list",
   "title": "Remove Duplicates from Sorted List",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Linked List"
+  ],
+  "topics": [
     "Linked List"
   ],
   "invocation": {

@@ -4,8 +4,12 @@
   "id": 2340,
   "slug": "anchoring-the-extremes",
   "title": "Anchoring the Extremes",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Array",
+    "Greedy"
+  ],
+  "topics": [
     "Array",
     "Greedy"
   ],

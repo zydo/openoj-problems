@@ -4,8 +4,13 @@
   "id": 3864,
   "slug": "cheapest-way-to-slice-a-bit-string",
   "title": "The Cheapest Way To Slice A Bit String",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
+    "String",
+    "Divide and Conquer",
+    "Prefix Sum"
+  ],
+  "topics": [
     "String",
     "Divide and Conquer",
     "Prefix Sum"

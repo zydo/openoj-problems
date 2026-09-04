@@ -4,8 +4,13 @@
   "id": 3703,
   "slug": "remove-k-balanced-substrings",
   "title": "Remove K-Balanced Substrings",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "String",
+    "Stack",
+    "Simulation"
+  ],
+  "topics": [
     "String",
     "Stack",
     "Simulation"

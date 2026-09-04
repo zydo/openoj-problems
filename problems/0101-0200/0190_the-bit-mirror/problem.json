@@ -4,8 +4,12 @@
   "id": 190,
   "slug": "the-bit-mirror",
   "title": "The Bit Mirror",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Divide and Conquer",
+    "Bit Manipulation"
+  ],
+  "topics": [
     "Divide and Conquer",
     "Bit Manipulation"
   ],

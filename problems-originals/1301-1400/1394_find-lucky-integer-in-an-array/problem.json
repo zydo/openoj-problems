@@ -4,8 +4,13 @@
   "id": 1394,
   "slug": "find-lucky-integer-in-an-array",
   "title": "Find Lucky Integer in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Counting"

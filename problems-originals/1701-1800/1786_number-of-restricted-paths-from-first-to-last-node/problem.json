@@ -4,8 +4,16 @@
   "id": 1786,
   "slug": "number-of-restricted-paths-from-first-to-last-node",
   "title": "Number of Restricted Paths From First to Last Node",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Dynamic Programming",
+    "Graph Theory",
+    "Topological Sort",
+    "Heap (Priority Queue)",
+    "Shortest Path",
+    "Dijkstra's Algorithm"
+  ],
+  "topics": [
     "Dynamic Programming",
     "Graph Theory",
     "Topological Sort",

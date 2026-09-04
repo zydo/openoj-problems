@@ -4,11 +4,19 @@
   "id": 28,
   "slug": "where-the-needle-first-sits",
   "title": "Where the Needle First Sits",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "String",
     "String Matching",
     "Knuth–Morris–Pratt Algorithm"
+  ],
+  "topics": [
+    "Two Pointers",
+    "String",
+    "String Matching",
+    "Z Algorithm",
+    "Knuth–Morris–Pratt Algorithm",
+    "Boyer–Moore String-Search Algorithm"
   ],
   "invocation": {
     "type": "function",

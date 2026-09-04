@@ -4,10 +4,16 @@
   "id": 2900,
   "slug": "an-alternating-chain-of-words",
   "title": "An Alternating Chain Of Words",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Array",
     "String",
+    "Greedy"
+  ],
+  "topics": [
+    "Array",
+    "String",
+    "Dynamic Programming",
     "Greedy"
   ],
   "invocation": {

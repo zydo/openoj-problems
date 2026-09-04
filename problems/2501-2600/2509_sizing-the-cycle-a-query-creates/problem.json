@@ -4,10 +4,17 @@
   "id": 2509,
   "slug": "sizing-the-cycle-a-query-creates",
   "title": "Sizing the Cycle a Query Creates",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Binary Tree",
+    "Lowest Common Ancestor"
+  ],
+  "topics": [
+    "Array",
+    "Tree",
+    "Binary Tree",
+    "Binary Lifting",
     "Lowest Common Ancestor"
   ],
   "invocation": {

@@ -3,12 +3,19 @@
   "id": 1178,
   "slug": "number-of-valid-words-for-each-puzzle",
   "title": "Number of Valid Words for Each Puzzle",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Array",
     "Hash Table",
     "String",
     "Bit Manipulation"
+  ],
+  "topics": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Bit Manipulation",
+    "Trie"
   ],
   "invocation": {
     "type": "function",

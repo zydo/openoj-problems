@@ -4,8 +4,11 @@
   "id": 1185,
   "slug": "weekday-of-a-date",
   "title": "Weekday of a Date",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Math"
+  ],
+  "topics": [
     "Math"
   ],
   "invocation": {

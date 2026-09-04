@@ -4,10 +4,13 @@
   "id": 1892,
   "slug": "friend-shelf-picks-ii",
   "title": "Friend Shelf Picks II",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

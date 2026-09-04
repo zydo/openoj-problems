@@ -4,8 +4,13 @@
   "id": 3417,
   "slug": "skipping-serpentine-sweep",
   "title": "The Skipping Serpentine Sweep",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "topics": [
     "Array",
     "Matrix",
     "Simulation"

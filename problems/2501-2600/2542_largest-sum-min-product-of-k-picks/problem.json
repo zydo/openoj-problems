@@ -4,11 +4,17 @@
   "id": 2542,
   "slug": "largest-sum-min-product-of-k-picks",
   "title": "Largest Sum-Min Product of K Picks",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Greedy",
     "Heap",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
   ],
   "invocation": {
     "type": "function",

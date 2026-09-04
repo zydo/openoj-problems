@@ -4,12 +4,19 @@
   "id": 1025,
   "slug": "divisor-takeaway-game",
   "title": "Divisor Takeaway Game",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
     "Math",
     "Dynamic Programming",
     "Brainteaser",
     "Game Theory"
+  ],
+  "topics": [
+    "Math",
+    "Dynamic Programming",
+    "Brainteaser",
+    "Game Theory",
+    "Impartial Game"
   ],
   "invocation": {
     "type": "function",

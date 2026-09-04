@@ -4,12 +4,19 @@
   "id": 2646,
   "slug": "cheapest-trips-after-halving-node-prices",
   "title": "Cheapest Trips After Halving Node Prices",
-  "difficulty": "H4",
+  "difficulty": "Hard",
   "tags": [
     "Tree",
     "Tree DP",
     "DFS",
     "Graph"
+  ],
+  "topics": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search",
+    "Graph Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,12 @@
   "id": 3678,
   "slug": "smallest-absent-positive-greater-than-average",
   "title": "Smallest Absent Positive Greater Than Average",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

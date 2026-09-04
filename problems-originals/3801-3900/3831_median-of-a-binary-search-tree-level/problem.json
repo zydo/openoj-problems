@@ -4,8 +4,15 @@
   "id": 3831,
   "slug": "median-of-a-binary-search-tree-level",
   "title": "Median of a Binary Search Tree Level",
-  "difficulty": "",
+  "difficulty": "Medium",
   "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "topics": [
     "Tree",
     "Depth-First Search",
     "Breadth-First Search",

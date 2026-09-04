@@ -4,8 +4,13 @@
   "id": 3655,
   "slug": "xor-after-range-multiplication-queries-ii",
   "title": "XOR After Range Multiplication Queries II",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Divide and Conquer",
+    "Prefix Sum"
+  ],
+  "topics": [
     "Array",
     "Divide and Conquer",
     "Prefix Sum"

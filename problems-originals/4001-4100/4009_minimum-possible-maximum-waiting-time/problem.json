@@ -4,8 +4,13 @@
   "id": 4009,
   "slug": "minimum-possible-maximum-waiting-time",
   "title": "Minimum Possible Maximum Waiting Time",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [],
+  "topics": [
+    "Greedy",
+    "Math",
+    "Binary Search"
+  ],
   "invocation": {
     "type": "function",
     "class_name": "Solution",

@@ -4,8 +4,13 @@
   "id": 2570,
   "slug": "combine-two-id-value-tables",
   "title": "Combine Two Id-Value Tables",
-  "difficulty": "H2",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table",
+    "Two Pointers"
+  ],
+  "topics": [
     "Array",
     "Hash Table",
     "Two Pointers"

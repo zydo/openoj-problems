@@ -4,10 +4,13 @@
   "id": 3058,
   "slug": "isolated-buddy-pairs",
   "title": "Isolated Buddy Pairs",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Database",
     "SQL"
+  ],
+  "topics": [
+    "Database"
   ],
   "invocation": {
     "type": "sql",

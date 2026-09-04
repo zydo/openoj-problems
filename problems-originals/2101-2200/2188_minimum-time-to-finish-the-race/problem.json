@@ -4,8 +4,12 @@
   "id": 2188,
   "slug": "minimum-time-to-finish-the-race",
   "title": "Minimum Time to Finish the Race",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "topics": [
     "Array",
     "Dynamic Programming"
   ],

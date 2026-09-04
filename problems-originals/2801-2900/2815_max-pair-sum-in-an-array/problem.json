@@ -4,8 +4,12 @@
   "id": 2815,
   "slug": "max-pair-sum-in-an-array",
   "title": "Max Pair Sum in an Array",
-  "difficulty": "",
+  "difficulty": "Easy",
   "tags": [
+    "Array",
+    "Hash Table"
+  ],
+  "topics": [
     "Array",
     "Hash Table"
   ],

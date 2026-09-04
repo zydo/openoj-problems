@@ -4,8 +4,12 @@
   "id": 3932,
   "slug": "kth-powers-in-a-window",
   "title": "K-th Powers in a Window",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "topics": [
     "Math",
     "Binary Search"
   ],

@@ -4,11 +4,18 @@
   "id": 3627,
   "slug": "top-triple-median-total",
   "title": "Top Triple Median Total",
-  "difficulty": "H3",
+  "difficulty": "Medium",
   "tags": [
     "Array",
     "Greedy",
     "Sorting"
+  ],
+  "topics": [
+    "Array",
+    "Math",
+    "Greedy",
+    "Sorting",
+    "Game Theory"
   ],
   "invocation": {
     "type": "function",

@@ -4,8 +4,11 @@
   "id": 2199,
   "slug": "finding-the-topic-of-each-post",
   "title": "Finding the Topic of Each Post",
-  "difficulty": "",
+  "difficulty": "Hard",
   "tags": [
+    "Database"
+  ],
+  "topics": [
     "Database"
   ],
   "invocation": {
