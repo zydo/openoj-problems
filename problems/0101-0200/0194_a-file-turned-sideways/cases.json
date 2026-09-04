@@ -1,202 +1,50 @@
 {
   "public": [
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'team score'),\n(2,'hawks 21'),\n(3,'owls 30'),\n(4,'finches 27');"
-      ],
-      "expected": [
-        [
-          "team hawks owls finches"
-        ],
-        [
-          "score 21 30 27"
-        ]
-      ]
+      "input": "name age\nalice 21\nryan 30\n",
+      "expected": "name alice ryan\nage 21 30"
     }
   ],
   "hidden": [
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'a b c d');"
-      ],
-      "expected": [
-        [
-          "a"
-        ],
-        [
-          "b"
-        ],
-        [
-          "c"
-        ],
-        [
-          "d"
-        ]
-      ]
+      "input": "solo\n",
+      "expected": "solo"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'a'),\n(2,'b'),\n(3,'c');"
-      ],
-      "expected": [
-        [
-          "a b c"
-        ]
-      ]
+      "input": "a b c d\n",
+      "expected": "a\nb\nc\nd"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'solo');"
-      ],
-      "expected": [
-        [
-          "solo"
-        ]
-      ]
+      "input": "x\ny\nz\n",
+      "expected": "x y z"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'x y z'),\n(2,'y z x'),\n(3,'z x y');"
-      ],
-      "expected": [
-        [
-          "x y z"
-        ],
-        [
-          "y z x"
-        ],
-        [
-          "z x y"
-        ]
-      ]
+      "input": "1 2 3\n4 5 6\n7 8 9\n",
+      "expected": "1 4 7\n2 5 8\n3 6 9"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'a a'),\n(2,'a a');"
-      ],
-      "expected": [
-        [
-          "a a"
-        ],
-        [
-          "a a"
-        ]
-      ]
+      "input": "first-name, age:1 x-2\nsecond.field, age:2 y-3\n",
+      "expected": "first-name, second.field,\nage:1 age:2\nx-2 y-3"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'1 2 3 4'),\n(2,'5 6 7 8');"
-      ],
-      "expected": [
-        [
-          "1 5"
-        ],
-        [
-          "2 6"
-        ],
-        [
-          "3 7"
-        ],
-        [
-          "4 8"
-        ]
-      ]
+      "input": "a b c d e\nf g h i j\n",
+      "expected": "a f\nb g\nc h\nd i\ne j"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'name age'),\n(2,'alice 21'),\n(3,'ryan 30'),\n(4,'bob 41');"
-      ],
-      "expected": [
-        [
-          "name alice ryan bob"
-        ],
-        [
-          "age 21 30 41"
-        ]
-      ]
+      "input": "one 1\ntwo 2\nthree 3\nfour 4\nfive 5\n",
+      "expected": "one two three four five\n1 2 3 4 5"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'a1 b1 c1 d1 e1'),\n(2,'a2 b2 c2 d2 e2'),\n(3,'a3 b3 c3 d3 e3'),\n(4,'a4 b4 c4 d4 e4'),\n(5,'a5 b5 c5 d5 e5');"
-      ],
-      "expected": [
-        [
-          "a1 a2 a3 a4 a5"
-        ],
-        [
-          "b1 b2 b3 b4 b5"
-        ],
-        [
-          "c1 c2 c3 c4 c5"
-        ],
-        [
-          "d1 d2 d3 d4 d5"
-        ],
-        [
-          "e1 e2 e3 e4 e5"
-        ]
-      ]
+      "input": "same same same\nsame same same\nsame same same\n",
+      "expected": "same same same\nsame same same\nsame same same"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'10 20 30'),\n(2,'40 50 60'),\n(3,'70 80 90');"
-      ],
-      "expected": [
-        [
-          "10 40 70"
-        ],
-        [
-          "20 50 80"
-        ],
-        [
-          "30 60 90"
-        ]
-      ]
+      "input": "r1c1 r1c2 r1c3 r1c4 r1c5\nr2c1 r2c2 r2c3 r2c4 r2c5\nr3c1 r3c2 r3c3 r3c4 r3c5\nr4c1 r4c2 r4c3 r4c4 r4c5\nr5c1 r5c2 r5c3 r5c4 r5c5\nr6c1 r6c2 r6c3 r6c4 r6c5\nr7c1 r7c2 r7c3 r7c4 r7c5\nr8c1 r8c2 r8c3 r8c4 r8c5\nr9c1 r9c2 r9c3 r9c4 r9c5\nr10c1 r10c2 r10c3 r10c4 r10c5\nr11c1 r11c2 r11c3 r11c4 r11c5\nr12c1 r12c2 r12c3 r12c4 r12c5\nr13c1 r13c2 r13c3 r13c4 r13c5\nr14c1 r14c2 r14c3 r14c4 r14c5\nr15c1 r15c2 r15c3 r15c4 r15c5\nr16c1 r16c2 r16c3 r16c4 r16c5\nr17c1 r17c2 r17c3 r17c4 r17c5\nr18c1 r18c2 r18c3 r18c4 r18c5\nr19c1 r19c2 r19c3 r19c4 r19c5\nr20c1 r20c2 r20c3 r20c4 r20c5\n",
+      "expected": "r1c1 r2c1 r3c1 r4c1 r5c1 r6c1 r7c1 r8c1 r9c1 r10c1 r11c1 r12c1 r13c1 r14c1 r15c1 r16c1 r17c1 r18c1 r19c1 r20c1\nr1c2 r2c2 r3c2 r4c2 r5c2 r6c2 r7c2 r8c2 r9c2 r10c2 r11c2 r12c2 r13c2 r14c2 r15c2 r16c2 r17c2 r18c2 r19c2 r20c2\nr1c3 r2c3 r3c3 r4c3 r5c3 r6c3 r7c3 r8c3 r9c3 r10c3 r11c3 r12c3 r13c3 r14c3 r15c3 r16c3 r17c3 r18c3 r19c3 r20c3\nr1c4 r2c4 r3c4 r4c4 r5c4 r6c4 r7c4 r8c4 r9c4 r10c4 r11c4 r12c4 r13c4 r14c4 r15c4 r16c4 r17c4 r18c4 r19c4 r20c4\nr1c5 r2c5 r3c5 r4c5 r5c5 r6c5 r7c5 r8c5 r9c5 r10c5 r11c5 r12c5 r13c5 r14c5 r15c5 r16c5 r17c5 r18c5 r19c5 r20c5"
     },
     {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'id 7 x'),\n(2,'42 y 0'),\n(3,'z 9 w');"
-      ],
-      "expected": [
-        [
-          "id 42 z"
-        ],
-        [
-          "7 y 9"
-        ],
-        [
-          "x 0 w"
-        ]
-      ]
-    },
-    {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'ab cd'),\n(2,'e f');"
-      ],
-      "expected": [
-        [
-          "ab e"
-        ],
-        [
-          "cd f"
-        ]
-      ]
-    },
-    {
-      "input": [
-        "INSERT INTO Document VALUES\n(1,'r1'),\n(2,'r2'),\n(3,'r3'),\n(4,'r4'),\n(5,'r5'),\n(6,'r6');"
-      ],
-      "expected": [
-        [
-          "r1 r2 r3 r4 r5 r6"
-        ]
-      ]
-    },
-    {
-      "input": [
-        ""
-      ],
-      "expected": []
+      "input": "f1r1 f2r1 f3r1 f4r1 f5r1 f6r1 f7r1 f8r1 f9r1 f10r1 f11r1 f12r1\nf1r2 f2r2 f3r2 f4r2 f5r2 f6r2 f7r2 f8r2 f9r2 f10r2 f11r2 f12r2\nf1r3 f2r3 f3r3 f4r3 f5r3 f6r3 f7r3 f8r3 f9r3 f10r3 f11r3 f12r3\nf1r4 f2r4 f3r4 f4r4 f5r4 f6r4 f7r4 f8r4 f9r4 f10r4 f11r4 f12r4\n",
+      "expected": "f1r1 f1r2 f1r3 f1r4\nf2r1 f2r2 f2r3 f2r4\nf3r1 f3r2 f3r3 f3r4\nf4r1 f4r2 f4r3 f4r4\nf5r1 f5r2 f5r3 f5r4\nf6r1 f6r2 f6r3 f6r4\nf7r1 f7r2 f7r3 f7r4\nf8r1 f8r2 f8r3 f8r4\nf9r1 f9r2 f9r3 f9r4\nf10r1 f10r2 f10r3 f10r4\nf11r1 f11r2 f11r3 f11r4\nf12r1 f12r2 f12r3 f12r4"
     }
   ]
 }

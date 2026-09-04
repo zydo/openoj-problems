@@ -11,36 +11,13 @@
   "topics": [
     "Shell"
   ],
-  "type": "Algorithms",
+  "type": "Shell",
   "invocation": {
-    "type": "function",
-    "class_name": "Solution",
-    "method": "wordFrequency",
-    "parameters": [
-      {
-        "name": "content",
-        "codec": "json",
-        "value_type": {
-          "kind": "string"
-        }
-      }
-    ],
-    "return_codec": "json",
-    "return_type": {
-      "kind": "array",
-      "items": {
-        "kind": "string"
-      }
-    },
-    "entrypoints": {
-      "go": "wordFrequency",
-      "rust": "word_frequency",
-      "typescript": "wordFrequency"
-    },
+    "type": "shell",
     "comparison": "exact"
   },
   "limits": {
-    "time_ms": 1500,
+    "time_ms": 3000,
     "memory_mb": 256,
     "output_kb": 64
   }

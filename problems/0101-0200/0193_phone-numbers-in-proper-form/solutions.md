@@ -1,26 +1,48 @@
 # Solutions — Phone Numbers In Proper Form
 
-## Whole-value glob, two patterns
+Four tools decide the same predicate over each line. The shell loop is
+the procedural baseline and spells every literal character out. awk
+matches whole records against a per-character pattern, sed against a
+grouped extended one, and grep — one program, one pattern, nothing but
+the match — closes the set.
 
-A listing is well-formed exactly when the entire `phone` value takes one
-of the two shapes, so the query reduces to a full-string pattern match
-per row. SQLite's `GLOB` matches the complete value — every character
-must be consumed — and `[0-9]` stands for a single digit, so
-`'[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]'` spells
-`xxx-xxx-xxxx` digit group by digit group. Letters, a doubled hyphen, a
-wrong length, or a stray trailing character all fail: the character
-classes admit digits only, and nothing outside the pattern may remain.
+## Read Line by Line
 
-The parenthesized shape is the second pattern — `(`, `)`, and the space
-are literal characters to `GLOB` — and the two are combined with `OR`.
-Because the filter is a plain `WHERE` over `Directory`, each qualifying
-listing contributes its own output row: a number entered several times
-is reported once per occurrence, and listings matching neither pattern
-drop out entirely. No `ORDER BY` is needed — the judge compares rows as
-an unordered multiset.
+A `while IFS= read -r` loop hands each line to `case`, whose glob
+alternation names the two allowed shapes character by character: digit
+digit digit hyphen ... for the bare form, and a literal open
+parenthesis, three digits, close parenthesis and space for the other.
+No pattern metacharacters beyond the bracket classes, so the shells
+own matcher is the whole solution.
 
-Each row is matched against two fixed-length patterns, so with `P` rows
-in `Directory` the query is one linear scan and no working memory beyond
-the output.
+It is the longest route and the clearest one about what a valid number
+is — but the tool is doing work a pattern matcher one process earlier
+already does.
 
-**Complexity:** `O(P)` time, `O(1)` auxiliary space.
+**Complexity:** `O(total characters)` time, `O(one line)` space.
+
+## awk Full-Line Match
+
+awk applies its default action — print — to every record whose record
+matches the anchored pattern, spelled per character for both shapes and
+joined by `||`. One process reads and decides.
+
+**Complexity:** `O(total characters)` time, `O(one line)` space.
+
+## sed Address Filter
+
+sed's native currency is line addresses, and `-E` lets the address be a
+grouped extended pattern: `([0-9]{3}-){2}` names the repeated
+three-digit-plus-hyphen run once, and the parenthesized shape is an
+ordinary alternation branch. The `p` flag under `-n` prints exactly the
+matching lines.
+
+**Complexity:** `O(total characters)` time, `O(one line)` space.
+
+## grep Extended Pattern
+
+The whole task in one process: `grep -E` with an anchored alternation
+naming the two shapes. No loop, no explicit print, no state — grep
+streams the lines and keeps the ones that match.
+
+**Complexity:** `O(total characters)` time, `O(one line)` space.

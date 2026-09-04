@@ -1,11 +1,39 @@
 # Solutions — Transpose File
 
-## Recursive split, column-wise ordered concat
+Three ways to read a table sideways, from a cell-at-a-time baseline to
+one pass with awk. The rescans shrink by an order of magnitude at each
+step: per cell, per column, then never.
 
-Transposing means regrouping the file's fields: instead of `n` lines of `k` fields each, the answer is `k` lines that each walk the `j`-th field of every input line in file order. SQL has no split, so the query first flattens every `line` into one row per field with a recursive CTE: the anchor peels the text before the first space off each `line` — `substr` up to `instr(line || ' ', ' ') - 1`, with the `|| ' '` handling a line's last field — and the recursive step repeats on the remainder, carrying `(id, pos, val, rest)` until `rest` is exhausted. Every field of the file comes out as exactly one `(id, pos, val)` row, `pos` counting fields from `1` left to right.
+## Rescan Every Cell
 
-With the fields materialized, the transpose is a single `GROUP BY pos`: each group holds one column of the input and is exactly one output line, so `group_concat(val, ' ' ORDER BY id)` emits it with the column's fields joined by single spaces in `id` — that is, file — order. The `ORDER BY` inside the aggregate is load-bearing: without it SQLite guarantees nothing about concatenation order, and `name ryan alice` would be as legal as `name alice ryan`. The `k` result rows themselves carry no required order, since the judge compares them as an unordered multiset.
+The buffered file is addressed like a spreadsheet: for each output
+column and each row, sed prints that row, cut keeps that column's
+field, and the cells concatenate into a line. `${index}p` plus
+`cut -d ' ' -f"$column"` makes the intent impossible to miss — and so
+does the cost, since one output cell costs a full pass over the file.
 
-Splitting emits and materializes one CTE row per field, and each field is visited once more by its group's aggregation, so with `F` total fields in the file the query is linear in the input size.
+The route exists to show the shape of the answer with no tool trickery:
+output cell `(i, j)` is input cell `(j, i)`. Everything after this is
+bookkeeping reductions of the same double loop.
 
-**Complexity:** `O(F)` time, `O(F)` space, for `F` total fields in the file.
+**Complexity:** `O(rows × columns × characters)` time, `O(file)` space.
+
+## Cut Each Column
+
+The file is still buffered, but each output line is now one pipeline:
+`cut -d ' ' -f"$column"` walks every row and keeps that column's field,
+and `paste -sd ' '` joins the column into a space-separated line. One
+rescan per column instead of per cell — the double loop's inner loop
+has moved into a single tool.
+
+**Complexity:** `O(columns × characters)` time, `O(file)` space.
+
+## One Pass, Nested Output
+
+awk reads the table once, storing each field at its `(row, column)`
+subscript; the END block then walks the array column-major, printing
+row `j`'s cell of column `i` with a space between neighbours and a
+newline at the end of each column. The input is read exactly once and
+never buffered by the shell — awk holds only the fields.
+
+**Complexity:** `O(rows × columns)` time, `O(rows × columns)` space.

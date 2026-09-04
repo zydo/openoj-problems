@@ -6,29 +6,18 @@
   "title": "Phone Numbers In Proper Form",
   "difficulty": "Easy",
   "tags": [
-    "Database",
-    "SQL"
+    "Shell"
   ],
   "topics": [
     "Shell"
   ],
-  "type": "Database",
+  "type": "Shell",
   "invocation": {
-    "type": "sql",
-    "parameters": [
-      {
-        "name": "dataset",
-        "codec": "sql_setup"
-      }
-    ],
-    "return_codec": "rows",
-    "comparison": "multiset",
-    "sql": {
-      "schema": "CREATE TABLE Directory (entryId INTEGER, phone TEXT);"
-    }
+    "type": "shell",
+    "comparison": "exact"
   },
   "limits": {
-    "time_ms": 1500,
+    "time_ms": 3000,
     "memory_mb": 256,
     "output_kb": 64
   }

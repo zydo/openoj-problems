@@ -11,23 +11,13 @@
   "topics": [
     "Shell"
   ],
-  "type": "Database",
+  "type": "Shell",
   "invocation": {
-    "type": "sql",
-    "parameters": [
-      {
-        "name": "dataset",
-        "codec": "sql_setup"
-      }
-    ],
-    "return_codec": "rows",
-    "comparison": "multiset",
-    "sql": {
-      "schema": "CREATE TABLE File (id INTEGER, line TEXT);"
-    }
+    "type": "shell",
+    "comparison": "exact"
   },
   "limits": {
-    "time_ms": 1500,
+    "time_ms": 3000,
     "memory_mb": 256,
     "output_kb": 64
   }

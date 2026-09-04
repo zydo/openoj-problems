@@ -2,46 +2,32 @@
 
 ## Description
 
-The entire text of a file arrives as one string, `content`. A word is
-any maximal run of non-whitespace characters, and neighboring words sit
-one or more whitespace characters apart. Tally how many times each
-distinct word appears, and return the tally as one `"word count"`
-string per distinct word — ranked from most frequent to least, with
-equally frequent words broken in ascending alphabetical order.
+A text file arrives on standard input as a stream of lowercase words:
+letters and single spaces only, with one or more spaces between
+neighbouring words and any number of spaces around the line breaks.
+Print every distinct word once — the word, a single space, its count —
+ordered by descending count. No two words ever share a count, so the
+order is always unambiguous.
 
 ### Example 1
 
 ```text
-Input: content = "rain in spain falls main\nplain in rain"
-Output: ["in 2", "rain 2", "falls 1", "main 1", "plain 1", "spain 1"]
-Explanation: "in" and "rain" tie at two appearances and lead the list;
-the four once-only words follow in alphabetical order.
-```
-
-### Example 2
-
-```text
-Input: content = "echo echo delta echo delta bravo"
-Output: ["echo 3", "delta 2", "bravo 1"]
-```
-
-### Example 3
-
-```text
-Input: content = "lone"
-Output: ["lone 1"]
-Explanation: A file with a single word yields a single line.
+Input:
+the day is sunny the the
+the sunny is is
+Output:
+the 4
+is 3
+sunny 2
+day 1
+Explanation: `the` appears four times, `is` three, `sunny` twice and
+`day` once, so the counts run down from four to one.
 ```
 
 ### Constraints
 
-- `content` contains lowercase letters, digits, and the whitespace
-  characters space `' '` and newline `'\n'`.
-- Neighboring words are separated by one or more whitespace characters.
-- Words with the same count are listed in ascending lexicographic
-  order.
-
-### Follow-up
-
-If the file were far too large to hold in memory all at once, how would
-your counting and ranking change?
+- The file holds between 1 and 1000 words.
+- Every word is 1 to 20 lowercase English letters.
+- Words are separated by one or more spaces; line breaks may sit
+  between words.
+- All word counts are distinct.

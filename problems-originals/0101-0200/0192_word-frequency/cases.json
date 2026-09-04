@@ -1,185 +1,58 @@
 {
   "public": [
     {
-      "input": [
-        "the day is sunny the the\nthe sunny is is"
-      ],
-      "expected": [
-        "the 4",
-        "is 3",
-        "sunny 2",
-        "day 1"
-      ]
+      "input": "the day is sunny the the\nthe sunny is is\n",
+      "expected": "the 4\nis 3\nsunny 2\nday 1"
     }
   ],
   "hidden": [
     {
-      "input": [
-        ""
-      ],
-      "expected": []
+      "input": "one\n",
+      "expected": "one 1"
     },
     {
-      "input": [
-        "hello"
-      ],
-      "expected": [
-        "hello 1"
-      ]
+      "input": "go go go go go\n",
+      "expected": "go 5"
     },
     {
-      "input": [
-        "x   x\n x  x"
-      ],
-      "expected": [
-        "x 4"
-      ]
+      "input": "a b a a\n",
+      "expected": "a 3\nb 1"
     },
     {
-      "input": [
-        "   the day   "
-      ],
-      "expected": [
-        "day 1",
-        "the 1"
-      ]
+      "input": "z z z y y x\n",
+      "expected": "z 3\ny 2\nx 1"
     },
     {
-      "input": [
-        "dog cat dog cat mouse mouse"
-      ],
-      "expected": [
-        "cat 2",
-        "dog 2",
-        "mouse 2"
-      ]
+      "input": "alpha    beta   alpha\n",
+      "expected": "alpha 2\nbeta 1"
     },
     {
-      "input": [
-        "b a ab b a ab"
-      ],
-      "expected": [
-        "a 2",
-        "ab 2",
-        "b 2"
-      ]
+      "input": "alpha \n beta beta\n",
+      "expected": "beta 2\nalpha 1"
     },
     {
-      "input": [
-        "zebra ant ant zebra zebra"
-      ],
-      "expected": [
-        "zebra 3",
-        "ant 2"
-      ]
+      "input": "one two three\none two\none\n",
+      "expected": "one 3\ntwo 2\nthree 1"
     },
     {
-      "input": [
-        "alpha  beta   gamma alpha"
-      ],
-      "expected": [
-        "alpha 2",
-        "beta 1",
-        "gamma 1"
-      ]
+      "input": "end start end\nstart end\n",
+      "expected": "end 3\nstart 2"
     },
     {
-      "input": [
-        "one\ntwo\nthree"
-      ],
-      "expected": [
-        "one 1",
-        "three 1",
-        "two 1"
-      ]
+      "input": "a b a a b c\n",
+      "expected": "a 3\nb 2\nc 1"
     },
     {
-      "input": [
-        "red blue\nblue  red\nred"
-      ],
-      "expected": [
-        "red 3",
-        "blue 2"
-      ]
+      "input": "mmmmmmmmmmmmmmmmmmmm aaa mmmmmmmmmmmmmmmmmmmm\n",
+      "expected": "mmmmmmmmmmmmmmmmmmmm 2\naaa 1"
     },
     {
-      "input": [
-        "apple banana apple cherry banana apple"
-      ],
-      "expected": [
-        "apple 3",
-        "banana 2",
-        "cherry 1"
-      ]
+      "input": "w12\nw12\nw12\nw12\nw12\nw12\nw12\nw12\nw12\nw12\nw12\nw12\nw11\nw11\nw11\nw11\nw11\nw11\nw11\nw11\nw11\nw11\nw11\nw10\nw10\nw10\nw10\nw10\nw10\nw10\nw10\nw10\nw10\nw9\nw9\nw9\nw9\nw9\nw9\nw9\nw9\nw9\nw8\nw8\nw8\nw8\nw8\nw8\nw8\nw8\nw7\nw7\nw7\nw7\nw7\nw7\nw7\nw6\nw6\nw6\nw6\nw6\nw6\nw5\nw5\nw5\nw5\nw5\nw4\nw4\nw4\nw4\nw3\nw3\nw3\nw2\nw2\nw1\n",
+      "expected": "w12 12\nw11 11\nw10 10\nw9 9\nw8 8\nw7 7\nw6 6\nw5 5\nw4 4\nw3 3\nw2 2\nw1 1"
     },
     {
-      "input": [
-        "ten ten ten ten ten ten ten ten ten ten one"
-      ],
-      "expected": [
-        "ten 10",
-        "one 1"
-      ]
-    },
-    {
-      "input": [
-        "w01 w04 w05 w07 w08 w08 w09 w10 w11 w11 w12 w12 w13 w14 w14 w15 w15 w15 w16 w16 w17 w17 w18 w18 w18 w19 w19 w19 w20 w20 w21 w21 w21 w22 w22 w22 w22 w23 w23 w23 w24 w24 w24 w25 w25 w25 w25 w26 w26 w26 w26 w27 w27 w27 w28 w28 w28 w28 w29 w29 w29 w29 w29 w30 w30 w30 w30\nw02 w04 w06 w07 w08 w09 w09 w10 w11 w11 w12 w13 w13 w14 w14 w15 w15 w16 w16 w16 w17 w17 w18 w18 w18 w19 w19 w20 w20 w20 w21 w21 w21 w22 w22 w22 w23 w23 w23 w23 w24 w24 w24 w25 w25 w25 w25 w26 w26 w26 w27 w27 w27 w27 w28 w28 w28 w28 w29 w29 w29 w29 w30 w30 w30 w30 w30\nw02 w04 w06 w07 w08 w09 w09 w10 w11 w11 w12 w13 w13 w14 w14 w15 w15 w16 w16 w16 w17 w17 w18 w18 w18 w19 w19 w20 w20 w20 w21 w21 w21 w22 w22 w22 w23 w23 w23 w23 w24 w24 w24 w25 w25 w25 w25 w26 w26 w26 w27 w27 w27 w27 w28 w28 w28 w28 w29 w29 w29 w29 w30 w30 w30 w30 w30\nw03 w05 w06 w07 w08 w09 w10 w10 w11 w12 w12 w13 w13 w14 w14 w15 w15 w16 w16 w17 w17 w17 w18 w18 w19 w19 w19 w20 w20 w20 w21 w21 w21 w22 w22 w22 w23 w23 w23 w24 w24 w24 w24 w25 w25 w25 w26 w26 w26 w26 w27 w27 w27 w27 w28 w28 w28 w28 w29 w29 w29 w29 w30 w30 w30 w30\nw03 w05 w06 w07 w08 w09 w10 w10 w11 w12 w12 w13 w13 w14 w14 w15 w15 w16 w16 w17 w17 w17 w18 w18 w19 w19 w19 w20 w20 w20 w21 w21 w21 w22 w22 w22 w23 w23 w23 w24 w24 w24 w24 w25 w25 w25 w26 w26 w26 w26 w27 w27 w27 w27 w28 w28 w28 w28 w29 w29 w29 w29 w30 w30 w30 w30\nw03 w05 w06 w07 w08 w09 w10 w10 w11 w12 w12 w13 w13 w14 w14 w15 w15 w16 w16 w17 w17 w17 w18 w18 w19 w19 w19 w20 w20 w20 w21 w21 w21 w22 w22 w22 w23 w23 w23 w24 w24 w24 w24 w25 w25 w25 w26 w26 w26 w26 w27 w27 w27 w27 w28 w28 w28 w28 w29 w29 w29 w29 w30 w30 w30 w30\nw04 w05 w06 w07 w08 w09 w10 w11 w11 w12 w12 w13 w13 w14 w14 w15 w15 w16 w16 w17 w17 w18 w18 w18 w19 w19 w19 w20 w20 w20 w21 w21 w21 w22 w22 w22 w23 w23 w23 w24 w24 w24 w25 w25 w25 w25 w26 w26 w26 w26 w27 w27 w27 w27 w28 w28 w28 w28 w29 w29 w29 w29 w30 w30 w30 w30"
-      ],
-      "expected": [
-        "w30 30",
-        "w29 29",
-        "w28 28",
-        "w27 27",
-        "w26 26",
-        "w25 25",
-        "w24 24",
-        "w23 23",
-        "w22 22",
-        "w21 21",
-        "w20 20",
-        "w19 19",
-        "w18 18",
-        "w17 17",
-        "w16 16",
-        "w15 15",
-        "w14 14",
-        "w13 13",
-        "w12 12",
-        "w11 11",
-        "w10 10",
-        "w09 9",
-        "w08 8",
-        "w07 7",
-        "w06 6",
-        "w05 5",
-        "w04 4",
-        "w03 3",
-        "w02 2",
-        "w01 1"
-      ]
-    },
-    {
-      "input": [
-        "a b c d e f g h i j k l m n o p"
-      ],
-      "expected": [
-        "a 1",
-        "b 1",
-        "c 1",
-        "d 1",
-        "e 1",
-        "f 1",
-        "g 1",
-        "h 1",
-        "i 1",
-        "j 1",
-        "k 1",
-        "l 1",
-        "m 1",
-        "n 1",
-        "o 1",
-        "p 1"
-      ]
+      "input": "k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k40 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k39 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k38 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k37 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k36 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k35 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k34 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k33 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k32 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k31 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k30 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k29 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k28 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k27 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k26 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k25 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k24 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k23 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k22 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k21 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k20 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k19 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k18 k17 k17 k17 k17 k17 k17 k17 k17 k17 k17 k17 k17 k17 k17 k17 k17 k17 k16 k16 k16 k16 k16 k16 k16 k16 k16 k16 k16 k16 k16 k16 k16 k16 k15 k15 k15 k15 k15 k15 k15 k15 k15 k15 k15 k15 k15 k15 k15 k14 k14 k14 k14 k14 k14 k14 k14 k14 k14 k14 k14 k14 k14 k13 k13 k13 k13 k13 k13 k13 k13 k13 k13 k13 k13 k13 k12 k12 k12 k12 k12 k12 k12 k12 k12 k12 k12 k12 k11 k11 k11 k11 k11 k11 k11 k11 k11 k11 k11 k10 k10 k10 k10 k10 k10 k10 k10 k10 k10 k9 k9 k9 k9 k9 k9 k9 k9 k9 k8 k8 k8 k8 k8 k8 k8 k8 k7 k7 k7 k7 k7 k7 k7 k6 k6 k6 k6 k6 k6 k5 k5 k5 k5 k5 k4 k4 k4 k4 k3 k3 k3 k2 k2 k1\n",
+      "expected": "k40 40\nk39 39\nk38 38\nk37 37\nk36 36\nk35 35\nk34 34\nk33 33\nk32 32\nk31 31\nk30 30\nk29 29\nk28 28\nk27 27\nk26 26\nk25 25\nk24 24\nk23 23\nk22 22\nk21 21\nk20 20\nk19 19\nk18 18\nk17 17\nk16 16\nk15 15\nk14 14\nk13 13\nk12 12\nk11 11\nk10 10\nk9 9\nk8 8\nk7 7\nk6 6\nk5 5\nk4 4\nk3 3\nk2 2\nk1 1"
     }
   ]
 }
