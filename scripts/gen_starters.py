@@ -137,7 +137,9 @@ def is_modern_python_slug(slug: str) -> bool:
     merged tree and after any future ledger update."""
     global _modern_slugs
     if _modern_slugs is None:
-        mapping_path = Path(__file__).resolve().parent.parent / "problems" / "MAPPING.json"
+        mapping_path = (
+            Path(__file__).resolve().parent.parent / "problems" / "MAPPING.json"
+        )
         mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
         _modern_slugs = {row["adapted"].split("_", 1)[1] for row in mapping.values()}
     return slug in _modern_slugs
@@ -170,8 +172,12 @@ def python_type(spec: dict) -> str:
         "number": "float",
         "boolean": "bool",
         "string": "str",
-        "linked_list": "ListNode | None" if PYTHON_STYLE == "modern" else "Optional[ListNode]",
-        "binary_tree": "TreeNode | None" if PYTHON_STYLE == "modern" else "Optional[TreeNode]",
+        "linked_list": "ListNode | None"
+        if PYTHON_STYLE == "modern"
+        else "Optional[ListNode]",
+        "binary_tree": "TreeNode | None"
+        if PYTHON_STYLE == "modern"
+        else "Optional[TreeNode]",
         "nary_tree": _py_optional("Node"),
         "quad_tree": _py_optional("QuadNode"),
         "nested": "NestedInteger",
@@ -188,7 +194,9 @@ def python_type(spec: dict) -> str:
         "special_tree": _py_optional("TreeNode"),
         "nary_tree_nodes": "list[Node]" if PYTHON_STYLE == "modern" else "List[Node]",
         "nary_tree_ref": _py_optional("Node"),
-    }.get(kind) or ("list[" if PYTHON_STYLE == "modern" else "List[") + f"{python_type(spec['items'])}]"
+    }.get(kind) or (
+        "list[" if PYTHON_STYLE == "modern" else "List["
+    ) + f"{python_type(spec['items'])}]"
 
 
 def _py_optional(name: str) -> str:
@@ -207,7 +215,13 @@ def javascript_type(spec: dict) -> str:
     kind = _kind(spec)
     if kind == "struct":
         return spec["class"]
-    if kind in {"graph", "random_list", "doubly_list", "doubly_list_node", "random_tree"}:
+    if kind in {
+        "graph",
+        "random_list",
+        "doubly_list",
+        "doubly_list_node",
+        "random_tree",
+    }:
         return _node_class(spec)
     return {
         "integer32": "number",
@@ -240,7 +254,13 @@ def typescript_type(spec: dict) -> str:
         return "any"
     if kind == "struct":
         return spec["class"]
-    if kind in {"graph", "random_list", "doubly_list", "doubly_list_node", "random_tree"}:
+    if kind in {
+        "graph",
+        "random_list",
+        "doubly_list",
+        "doubly_list_node",
+        "random_tree",
+    }:
         return _node_class(spec) + " | null"
     scalar = {
         "integer32": "number",
@@ -302,7 +322,13 @@ def java_type(spec: dict) -> str:
     kind = _kind(spec)
     if kind == "struct":
         return spec["class"]
-    if kind in {"graph", "random_list", "doubly_list", "doubly_list_node", "random_tree"}:
+    if kind in {
+        "graph",
+        "random_list",
+        "doubly_list",
+        "doubly_list_node",
+        "random_tree",
+    }:
         return _node_class(spec)
     if kind == "nary_tree_nodes":
         return "List<Node>"
@@ -340,7 +366,13 @@ def cpp_type(spec: dict, reference: bool = False) -> str:
     kind = _kind(spec)
     if kind == "struct":
         return spec["class"]
-    if kind in {"graph", "random_list", "doubly_list", "doubly_list_node", "random_tree"}:
+    if kind in {
+        "graph",
+        "random_list",
+        "doubly_list",
+        "doubly_list_node",
+        "random_tree",
+    }:
         return _node_class(spec) + "*"
     base = {
         "integer32": "int",
@@ -373,7 +405,13 @@ def go_type(spec: dict) -> str:
     kind = _kind(spec)
     if kind == "struct":
         return spec["class"]
-    if kind in {"graph", "random_list", "doubly_list", "doubly_list_node", "random_tree"}:
+    if kind in {
+        "graph",
+        "random_list",
+        "doubly_list",
+        "doubly_list_node",
+        "random_tree",
+    }:
         return "*" + _node_class(spec)
     return {
         "integer32": "int",
@@ -457,7 +495,11 @@ def rust_parameter_type(invocation: dict, spec: dict) -> str:
         if kind == "nary_tree_ref":
             nary_aliased.add(value_type.get("alias"))
     index = next(
-        (i for i, (_, s) in enumerate(_parameters(invocation)) if s is spec or s == spec),
+        (
+            i
+            for i, (_, s) in enumerate(_parameters(invocation))
+            if s is spec or s == spec
+        ),
         None,
     )
     if _kind(spec) == "nary_tree" and index is not None and index in nary_aliased:
@@ -533,19 +575,25 @@ RUST_EXTRA_PROVIDED_DOC = {
 }
 
 
-def _provided_doc(invocation: dict, base: str, extra: dict[str, str], prefix: str) -> str:
+def _provided_doc(
+    invocation: dict, base: str, extra: dict[str, str], prefix: str
+) -> str:
     """Document each bundle-provided type used by the invocation."""
     structs = _uses_structs(invocation)
     lines = [base.rstrip("\n")]
     lines.extend(line for kind, line in extra.items() if kind in structs)
     lines.extend(
-        f"{prefix}   {name}: (provided/) fields per the problem statement" for name in _struct_classes(invocation)
+        f"{prefix}   {name}: (provided/) fields per the problem statement"
+        for name in _struct_classes(invocation)
     )
     return "\n".join(lines) + "\n"
 
 
 def _parameters(invocation: dict) -> list[tuple[str, dict]]:
-    return [(parameter["name"], parameter["value_type"]) for parameter in invocation.get("parameters", [])]
+    return [
+        (parameter["name"], parameter["value_type"])
+        for parameter in invocation.get("parameters", [])
+    ]
 
 
 def generate(invocation: dict, language: str) -> str:
@@ -567,20 +615,31 @@ def generate(invocation: dict, language: str) -> str:
     if language == "python3":
         blocks = _py_imports()
         if structs:
-            blocks.append(_provided_doc(invocation, PY_PROVIDED_DOC, PY_EXTRA_PROVIDED_DOC, "#") + "\n\n")
+            blocks.append(
+                _provided_doc(invocation, PY_PROVIDED_DOC, PY_EXTRA_PROVIDED_DOC, "#")
+                + "\n\n"
+            )
         signature = ", ".join(
             [
                 f"self",
-                *(f"{parameter}: {python_type(spec)}" for parameter, spec in parameters),
+                *(
+                    f"{parameter}: {python_type(spec)}"
+                    for parameter, spec in parameters
+                ),
             ]
         )
-        blocks.append(f"class Solution:\n    def {name}({signature}) -> {python_type(return_type)}:\n")
+        blocks.append(
+            f"class Solution:\n    def {name}({signature}) -> {python_type(return_type)}:\n"
+        )
         blocks.append('        raise NotImplementedError("TODO")\n')
         return "".join(blocks)
 
     if language == "javascript":
         lines = ["/**"]
-        lines += [f" * @param {{{javascript_type(spec)}}} {parameter}" for parameter, spec in parameters]
+        lines += [
+            f" * @param {{{javascript_type(spec)}}} {parameter}"
+            for parameter, spec in parameters
+        ]
         lines.append(f" * @return {{{javascript_type(return_type)}}}")
         lines.append(" */")
         arguments = ", ".join(parameter for parameter, _ in parameters)
@@ -590,15 +649,21 @@ def generate(invocation: dict, language: str) -> str:
         return "\n".join(lines) + "\n"
 
     if language == "typescript":
-        signature = ", ".join(f"{parameter}: {typescript_type(spec)}" for parameter, spec in parameters)
+        signature = ", ".join(
+            f"{parameter}: {typescript_type(spec)}" for parameter, spec in parameters
+        )
         return f'function {name}({signature}): {typescript_type(return_type)} {{\n    throw new Error("TODO");\n}}\n'
 
     if language == "java":
         chunks = []
-        body_types = [java_type(spec) for _, spec in parameters] + [java_type(return_type)]
+        body_types = [java_type(spec) for _, spec in parameters] + [
+            java_type(return_type)
+        ]
         if any(type_name.startswith("List<") for type_name in body_types):
             chunks.append("import java.util.List;\n\n")
-        signature = ", ".join(f"{java_type(spec)} {parameter}" for parameter, spec in parameters)
+        signature = ", ".join(
+            f"{java_type(spec)} {parameter}" for parameter, spec in parameters
+        )
         chunks.append("class Solution {\n")
         chunks.append(f"    public {java_type(return_type)} {name}({signature}) {{\n")
         chunks.append('        throw new UnsupportedOperationException("TODO");\n')
@@ -606,7 +671,10 @@ def generate(invocation: dict, language: str) -> str:
         return "".join(chunks)
 
     if language == "cpp":
-        signature = ", ".join(f"{cpp_type(spec, reference=True)} {parameter}" for parameter, spec in parameters)
+        signature = ", ".join(
+            f"{cpp_type(spec, reference=True)} {parameter}"
+            for parameter, spec in parameters
+        )
         return (
             "class Solution {\n"
             "public:\n"
@@ -617,14 +685,24 @@ def generate(invocation: dict, language: str) -> str:
         )
 
     if language == "go":
-        signature = ", ".join(f"{parameter} {go_type(spec)}" for parameter, spec in parameters)
+        signature = ", ".join(
+            f"{parameter} {go_type(spec)}" for parameter, spec in parameters
+        )
         return f'func {name}({signature}) {go_type(return_type)} {{\n    panic("TODO")\n}}\n'
 
     if language == "rust":
         chunks = []
         if structs:
-            chunks.append(_provided_doc(invocation, RUST_PROVIDED_DOC, RUST_EXTRA_PROVIDED_DOC, "//") + "\n")
-        signature = ", ".join(f"{parameter}: {rust_parameter_type(invocation, spec)}" for parameter, spec in parameters)
+            chunks.append(
+                _provided_doc(
+                    invocation, RUST_PROVIDED_DOC, RUST_EXTRA_PROVIDED_DOC, "//"
+                )
+                + "\n"
+            )
+        signature = ", ".join(
+            f"{parameter}: {rust_parameter_type(invocation, spec)}"
+            for parameter, spec in parameters
+        )
         return_rendered = rust_return_type(invocation, return_type)
         rendered = signature + " -> " + return_rendered
         if "Rc<" in rendered or "RefCell<" in rendered:
@@ -684,7 +762,10 @@ def _generate_design(invocation: dict, language: str) -> str:
         ctor_signature = ", ".join(
             [
                 "self",
-                *(f"{name}: {param_type(spec)}" for name, spec in zip(constructor_names, constructor_specs)),
+                *(
+                    f"{name}: {param_type(spec)}"
+                    for name, spec in zip(constructor_names, constructor_specs)
+                ),
             ]
         )
         blocks.append(f"class {class_name}:\n")
@@ -695,15 +776,22 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            signature = ", ".join(["self", *(f"{n}: {param_type(s)}" for n, s in zip(names, specs))])
-            ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {python_type(returns)}"
+            signature = ", ".join(
+                ["self", *(f"{n}: {param_type(s)}" for n, s in zip(names, specs))]
+            )
+            ret = (
+                ""
+                if (returns is None or returns.get("kind") == "void")
+                else f" -> {python_type(returns)}"
+            )
             blocks.append(f"\n    def {name}({signature}){ret}:\n")
             blocks.append('        raise NotImplementedError("TODO")\n')
         return "".join(blocks)
 
     if language == "java":
         ctor_signature = ", ".join(
-            f"{param_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs)
+            f"{param_type(spec)} {name}"
+            for name, spec in zip(constructor_names, constructor_specs)
         )
         chunks = [f"class {class_name} {{\n"]
         chunks.append(f"    public {class_name}({ctor_signature}) {{\n    }}\n")
@@ -712,7 +800,11 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            ret = "void" if (returns is None or returns.get("kind") == "void") else java_type(returns)
+            ret = (
+                "void"
+                if (returns is None or returns.get("kind") == "void")
+                else java_type(returns)
+            )
             signature = ", ".join(f"{param_type(s)} {n}" for n, s in zip(names, specs))
             chunks.append(f"\n    public {ret} {name}({signature}) {{\n    }}\n")
         chunks.append("}\n")
@@ -720,7 +812,10 @@ def _generate_design(invocation: dict, language: str) -> str:
 
     if language == "cpp":
         lines = [f"class {class_name} {{\n  public:\n"]
-        ctor_args = ", ".join(f"{param_type(spec)} {name}" for name, spec in zip(constructor_names, constructor_specs))
+        ctor_args = ", ".join(
+            f"{param_type(spec)} {name}"
+            for name, spec in zip(constructor_names, constructor_specs)
+        )
         lines.append(f"    {class_name}({ctor_args});\n")
         for method in methods:
             name = method["name"]
@@ -728,7 +823,11 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            ret = "void" if (returns is None or returns.get("kind") == "void") else cpp_type(returns)
+            ret = (
+                "void"
+                if (returns is None or returns.get("kind") == "void")
+                else cpp_type(returns)
+            )
             args = ", ".join(f"{param_type(s)} {n}" for n, s in zip(names, specs))
             lines.append(f"    {ret} {cpp_name}({args});\n")
         lines.append("};\n")
@@ -736,8 +835,13 @@ def _generate_design(invocation: dict, language: str) -> str:
 
     if language == "go":
         out = ["package main\n\n", f"type {class_name} struct{{}}\n\n"]
-        ctor_args = ", ".join(f"{name} {param_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))
-        out.append(f'func New{class_name}Typed({ctor_args}) *{class_name} {{\n\tpanic("TODO")\n}}\n')
+        ctor_args = ", ".join(
+            f"{name} {param_type(spec)}"
+            for name, spec in zip(constructor_names, constructor_specs)
+        )
+        out.append(
+            f'func New{class_name}Typed({ctor_args}) *{class_name} {{\n\tpanic("TODO")\n}}\n'
+        )
         for method in methods:
             name = method["name"]
             go_name = entrypoints.get(f"go.{name}", name)
@@ -745,14 +849,25 @@ def _generate_design(invocation: dict, language: str) -> str:
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
             args = ", ".join(f"{n} {param_type(s)}" for n, s in zip(names, specs))
-            ret = "" if (returns is None or returns.get("kind") == "void") else f" {go_type(returns)}"
-            out.append(f'\nfunc (design *{class_name}) {go_name}({args}){ret} {{\n\tpanic("TODO")\n}}\n')
+            ret = (
+                ""
+                if (returns is None or returns.get("kind") == "void")
+                else f" {go_type(returns)}"
+            )
+            out.append(
+                f'\nfunc (design *{class_name}) {go_name}({args}){ret} {{\n\tpanic("TODO")\n}}\n'
+            )
         return "".join(out)
 
     if language == "rust":
         out = [f"pub struct {class_name};\n\nimpl {class_name} {{\n"]
-        ctor_args = ", ".join(f"{name}: {param_type(spec)}" for name, spec in zip(constructor_names, constructor_specs))
-        out.append(f'    pub fn new({ctor_args}) -> Self {{\n        panic!("TODO")\n    }}\n')
+        ctor_args = ", ".join(
+            f"{name}: {param_type(spec)}"
+            for name, spec in zip(constructor_names, constructor_specs)
+        )
+        out.append(
+            f'    pub fn new({ctor_args}) -> Self {{\n        panic!("TODO")\n    }}\n'
+        )
         for method in methods:
             name = method["name"]
             rust_name = entrypoints.get(f"rust.{name}", name)
@@ -760,7 +875,11 @@ def _generate_design(invocation: dict, language: str) -> str:
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
             args = ", ".join(f"{n}: {param_type(s)}" for n, s in zip(names, specs))
-            ret = "" if (returns is None or returns.get("kind") == "void") else f" -> {rust_type(returns)}"
+            ret = (
+                ""
+                if (returns is None or returns.get("kind") == "void")
+                else f" -> {rust_type(returns)}"
+            )
             out.append(
                 f'\n    pub fn {rust_name}(&mut self{", " + args if args else ""}){ret} {{\n        panic!("TODO")\n    }}\n'
             )
@@ -783,9 +902,15 @@ def _generate_design(invocation: dict, language: str) -> str:
             specs = [p.get("value_type") for p in method.get("parameters", [])]
             names = [p["name"] for p in method.get("parameters", [])]
             returns = method.get("return_type")
-            args = ", ".join((f"{n}: {param_type(s)}" if typed else n) for n, s in zip(names, specs))
+            args = ", ".join(
+                (f"{n}: {param_type(s)}" if typed else n) for n, s in zip(names, specs)
+            )
             ret = (
-                ("" if (returns is None or returns.get("kind") == "void") else f": {typescript_type(returns)}")
+                (
+                    ""
+                    if (returns is None or returns.get("kind") == "void")
+                    else f": {typescript_type(returns)}"
+                )
                 if typed
                 else ""
             )
@@ -813,12 +938,18 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
                                       "value_type": {"kind": "callback"}}]}]}
     """
     if language not in ("python3", "java"):
-        raise ValueError(f"Concurrency problems support python3 and java, not {language}")
+        raise ValueError(
+            f"Concurrency problems support python3 and java, not {language}"
+        )
     class_name = invocation["class_name"]
     constructor = invocation.get("constructor", {}).get("parameters", [])
     methods = invocation.get("methods", [])
-    parameters = constructor + [parameter for method in methods for parameter in method.get("parameters", [])]
-    callbacks = any(_kind(parameter["value_type"]) == "callback" for parameter in parameters)
+    parameters = constructor + [
+        parameter for method in methods for parameter in method.get("parameters", [])
+    ]
+    callbacks = any(
+        _kind(parameter["value_type"]) == "callback" for parameter in parameters
+    )
 
     if language == "python3":
         blocks = [*_py_imports(callbacks), f"class {class_name}:\n"]
@@ -842,8 +973,14 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
         blocks.append(f"    def __init__({signature(constructor)}) -> None:\n")
         blocks.append('        raise NotImplementedError("TODO")\n')
         for method in methods:
-            returns = python_type(method["return_type"]) if method.get("return_type") else "None"
-            blocks.append(f"\n    def {method['name']}({signature(method.get('parameters', []))}) -> {returns}:\n")
+            returns = (
+                python_type(method["return_type"])
+                if method.get("return_type")
+                else "None"
+            )
+            blocks.append(
+                f"\n    def {method['name']}({signature(method.get('parameters', []))}) -> {returns}:\n"
+            )
             blocks.append('        raise NotImplementedError("TODO")\n')
         return "".join(blocks)
 
@@ -859,7 +996,11 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
 
     def java_signature(specs: list[dict]) -> str:
         return ", ".join(
-            ("Runnable" if _kind(parameter["value_type"]) == "callback" else java_type(parameter["value_type"]))
+            (
+                "Runnable"
+                if _kind(parameter["value_type"]) == "callback"
+                else java_type(parameter["value_type"])
+            )
             + f" {parameter['name']}"
             for parameter in specs
         )
@@ -868,7 +1009,9 @@ def _generate_concurrent(invocation: dict, language: str) -> str:
     chunks.append('        throw new UnsupportedOperationException("TODO");\n')
     chunks.append("    }\n")
     for method in methods:
-        returns = java_type(method["return_type"]) if method.get("return_type") else "void"
+        returns = (
+            java_type(method["return_type"]) if method.get("return_type") else "void"
+        )
         chunks.append(
             f"\n    public {returns} {method['name']}({java_signature(method.get('parameters', []))})"
             " throws InterruptedException {\n"
@@ -896,11 +1039,16 @@ def _generate_interactive(invocation: dict, language: str) -> str:
     oracle = provided.get("class")
     if not isinstance(oracle, str) or not oracle:
         raise ValueError("invocation.provided.oracle.class must be a non-empty string")
-    parameter = (provided.get("parameter") or oracle[0].lower() + oracle[1:]).lstrip("_") or "oracle"
+    parameter = (provided.get("parameter") or oracle[0].lower() + oracle[1:]).lstrip(
+        "_"
+    ) or "oracle"
     class_name = invocation["class_name"]
     entrypoints = invocation.get("entrypoints") or {}
     method = entrypoints.get(language, invocation["method"])
-    auxiliary = [(parameter_["name"], parameter_["value_type"]) for parameter_ in invocation.get("parameters", [])]
+    auxiliary = [
+        (parameter_["name"], parameter_["value_type"])
+        for parameter_ in invocation.get("parameters", [])
+    ]
     returns = invocation.get("return_type") or {"kind": "integer", "bits": 32}
     is_void = returns.get("kind") == "void"
 
@@ -914,7 +1062,9 @@ def _generate_interactive(invocation: dict, language: str) -> str:
         )
         blocks = list(_py_imports())
         blocks.append(f"class {class_name}:\n")
-        blocks.append(f"    def {method}({signature}) -> {'None' if is_void else python_type(returns)}:\n")
+        blocks.append(
+            f"    def {method}({signature}) -> {'None' if is_void else python_type(returns)}:\n"
+        )
         blocks.append('        raise NotImplementedError("TODO")\n')
         return "".join(blocks)
 
@@ -930,7 +1080,9 @@ def _generate_interactive(invocation: dict, language: str) -> str:
             ]
         )
         chunks = [f"class {class_name} {{\n"]
-        chunks.append(f"    public {'void' if is_void else java_type(returns)} {method}({signature}) {{\n")
+        chunks.append(
+            f"    public {'void' if is_void else java_type(returns)} {method}({signature}) {{\n"
+        )
         chunks.append('        throw new UnsupportedOperationException("TODO");\n')
         chunks.append("    }\n}")
         return "".join(chunks)
@@ -955,7 +1107,9 @@ def _generate_interactive(invocation: dict, language: str) -> str:
         )
         blocks = [f"class {oracle};\n\n"]
         blocks.append(f"class {class_name} {{\npublic:\n")
-        blocks.append(f"    {'void' if is_void else cpp_type(returns)} {method}({signature});\n")
+        blocks.append(
+            f"    {'void' if is_void else cpp_type(returns)} {method}({signature});\n"
+        )
         blocks.append("};\n")
         return "".join(blocks)
 
@@ -1035,7 +1189,9 @@ def _uses_json_kind(invocation: dict) -> bool:
             return True
         return walk(spec.get("items"))
 
-    specs = [parameter.get("value_type") for parameter in invocation.get("parameters", [])]
+    specs = [
+        parameter.get("value_type") for parameter in invocation.get("parameters", [])
+    ]
     specs.append(invocation.get("return_type"))
     return any(walk(spec) for spec in specs)
 
@@ -1047,12 +1203,22 @@ def starter_files(invocation: dict) -> dict[str, str]:
     if invocation_type == "shell":
         return {"shell": generate(invocation, "shell")}
     if invocation_type == "design":
-        return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
+        return {
+            language: generate(invocation, language) for language in FUNCTION_LANGUAGES
+        }
     if invocation_type == "interactive":
-        return {language: generate(invocation, language) for language in FUNCTION_LANGUAGES}
+        return {
+            language: generate(invocation, language) for language in FUNCTION_LANGUAGES
+        }
     if invocation_type == "concurrent":
-        return {language: generate(invocation, language) for language in ("python3", "java")}
-    languages = ("javascript", "typescript") if _uses_json_kind(invocation) else FUNCTION_LANGUAGES
+        return {
+            language: generate(invocation, language) for language in ("python3", "java")
+        }
+    languages = (
+        ("javascript", "typescript")
+        if _uses_json_kind(invocation)
+        else FUNCTION_LANGUAGES
+    )
     return {language: generate(invocation, language) for language in languages}
 
 
@@ -1060,10 +1226,16 @@ def main() -> None:
     arguments = sys.argv[1:]
     check_only = "--check" in arguments
     style = next(
-        (argument.split("=", 1)[1] for argument in arguments if argument.startswith("--style=")),
+        (
+            argument.split("=", 1)[1]
+            for argument in arguments
+            if argument.startswith("--style=")
+        ),
         None,
     )
-    targets = [Path(argument) for argument in arguments if not argument.startswith("--")]
+    targets = [
+        Path(argument) for argument in arguments if not argument.startswith("--")
+    ]
     root = Path(__file__).resolve().parent.parent
     if not targets:
         # bundle dirs flat or inside the 100-id shards
@@ -1072,14 +1244,25 @@ def main() -> None:
             for tree in ("problems",)
             for child in root.glob(f"{tree}/*")
             if child.is_dir()
-            for sub in ([child] if (child / "problem.json").is_file() else sorted(child.iterdir()))
+            for sub in (
+                [child]
+                if (child / "problem.json").is_file()
+                else sorted(child.iterdir())
+            )
             if sub.is_dir() and (sub / "problem.json").is_file()
         )
     failures = 0
     for bundle in targets:
         # Style follows the bundle's provenance unless --style is given:
         # bettercode-derived slugs are modern, extend-derived ones legacy.
-        set_python_style(style or ("legacy" if not is_modern_python_slug(bundle.name.split("_", 1)[1]) else "modern"))
+        set_python_style(
+            style
+            or (
+                "legacy"
+                if not is_modern_python_slug(bundle.name.split("_", 1)[1])
+                else "modern"
+            )
+        )
         problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
         generated = starter_files(problem["invocation"])
         extension_language = {extension: key for key, extension in EXTENSIONS.items()}
@@ -1093,7 +1276,11 @@ def main() -> None:
         # (FORMAT.md). A brand-new bundle with none still gets the invocation's
         # complete default set.
         expected = (
-            {language: generated[language] for language in generated if language in present_languages}
+            {
+                language: generated[language]
+                for language in generated
+                if language in present_languages
+            }
             if present_languages
             else generated
         )
