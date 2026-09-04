@@ -19,8 +19,8 @@ Thirteen source problems were crawled into both corpora (ids 0120 0121 0128
 0139 0167 0169 0174 0432 1803 2297 3040 3049 3055). The bettercode original
 keeps the canonical name; the extend-side twin carries a `-crawl` slug
 suffix. Whole-set consistency is checked by
-`openoj/.localonly/verify_corpus.py` (coverage, slug parity, shard
+`openoj/scripts/verify_corpus.py` (coverage, slug parity, shard
 placement, file shape) — run it after any tree surgery. This archive is
 frozen: it is not covered by CI and is not served. Suspect a
 corpus/judge-data contradiction? Do not edit frozen `cases.json` —
-record it in `../CORPUS-FLAGS.md` with evidence.
+surface it with evidence instead.

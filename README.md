@@ -60,9 +60,9 @@ modern (PEP 585/604) annotations, extend-derived bundles the original
 On every push, a format check and a static completeness check run over
 the whole served tree (`problems/`, both provenances); the runtime judge
 sweep covers the bettercode-derived bundles on dispatch and weekly (see
-`.github/workflows/check.yml`). Judged verification for extend-derived
-bundles is run from an openoj checkout via its
-`.localonly/verify_extend.py`.
+`.github/workflows/check.yml`). Extend-derived bundles are
+judge-verified out-of-band from an openoj checkout:
+`python3 scripts/verify_solution.py problems/<shard>/<key>`.
 
 ## Serving this set
 

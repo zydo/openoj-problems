@@ -5,7 +5,7 @@ name: Check problems
 # pinned one by construction: format check + static bundle checks on
 # every push/PR over the merged served tree, plus the bettercode-derived
 # judge sweep on demand and weekly (extend-derived bundles are judged
-# out-of-band via openoj's .localonly/verify_solution.py).
+# out-of-band via openoj's scripts/verify_solution.py).
 
 on:
   push:
