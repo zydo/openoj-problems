@@ -50,7 +50,7 @@ def _load_formatters():
         return module
     raise SystemExit(
         "formatters.py not found. Formatting is owned by the openoj runner image:\n"
-        "  - run inside the image (docker run ghcr.io/zydo/openoj-runner ...), or\n"
+        "  - run inside the image (docker run ghcr.io/zydo/openoj ...), or\n"
         "  - set OPENOJ_RUNNER_DIR to a checkout of the openoj repo's runner/, or\n"
         "  - keep a sibling checkout of the openoj repo next to this one."
     )
@@ -107,9 +107,12 @@ def format_content(extension: str, content: str, tolerant: bool = True) -> str:
 def _targets(arguments: list[str]) -> list[Path]:
     if arguments:
         return [Path(argument).resolve() for argument in arguments]
-    problems = ROOT / "problems"
-    files = [problems / "FORMAT.md"]
-    files += sorted(problems.rglob("*"))
+    # default: every formattable file across both adapted trees (the
+    # problems symlink resolves into problems-adapt; extend-adapt is a
+    # sibling tree, not under the symlink).
+    files: list[Path] = [ROOT / "FORMAT.md"]
+    for tree in ("problems", "problems-extend-adapt"):
+        files += sorted((ROOT / tree).rglob("*"))
     return [path for path in files if path.is_file()]
 
 

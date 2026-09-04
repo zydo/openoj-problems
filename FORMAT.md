@@ -209,7 +209,7 @@ them and required for every function problem.
 
 `scripts/gen_starters.py` writes `starter.*` from `problem.json`; the file
 extension selects the language (`py`, `js`, `ts`, `java`, `cpp`, `go`,
-`rust`, `sql`). The set of `starter.*` files defines the
+`rust`, `sql`, `sh`). The set of `starter.*` files defines the
 languages the problem offers. Never edit a starter by hand — change
 `problem.json` and regenerate.
 

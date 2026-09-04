@@ -119,10 +119,12 @@ def _entry(invocation: dict, language: str) -> str:
 
 
 # The Python style starters are emitted in. "legacy" keeps the
-# LeetCode-era annotations (typing.List, typing.Optional) the live tree
-# was authored with; "modern" uses PEP 585/604 (list[int], X | None) and
-# drops the typing import unless something genuinely needs it. The
-# adapted tree generates modern; the live tree stays legacy.
+# LeetCode-era annotations (typing.List, typing.Optional) that the
+# problems-extend-adapt tree was authored with; "modern" uses PEP
+# 585/604 (list[int], X | None) and drops the typing import unless
+# something genuinely needs it. problems-adapt (and the problems
+# symlink, and problems-bettercode) generate modern; only
+# problems-extend-adapt stays legacy.
 PYTHON_STYLE = "legacy"
 
 
@@ -1052,13 +1054,16 @@ def main() -> None:
         # bundle dirs flat or inside the 100-id shards
         targets = sorted(
             child if (child / "problem.json").is_file() else sub
-            for child in root.glob("problems/*")
+            for tree in ("problems", "problems-extend-adapt")
+            for child in root.glob(f"{tree}/*")
             for sub in ([child] if (child / "problem.json").is_file() else sorted(child.iterdir()))
             if sub.is_dir() and (sub / "problem.json").is_file()
         )
-    set_python_style(style or ("modern" if any("problems" in p.parts for p in targets) else "legacy"))
     failures = 0
     for bundle in targets:
+        # Style follows the bundle's tree unless --style is given: only
+        # problems-extend-adapt keeps the legacy annotations.
+        set_python_style(style or ("legacy" if "problems-extend-adapt" in bundle.parts else "modern"))
         problem = json.loads((bundle / "problem.json").read_text(encoding="utf-8"))
         generated = starter_files(problem["invocation"])
         extension_language = {extension: key for key, extension in EXTENSIONS.items()}

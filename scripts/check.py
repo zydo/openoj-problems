@@ -22,9 +22,15 @@ passed as --api, default http://localhost:8080):
 Usage:
   check.py --problems=all [--skip-runtime] [--api http://localhost:8080]
   check.py --problems=0001_two-sum,0002_add-two-numbers
+  check.py --tree problems-extend-adapt --skip-runtime   # static tier over a tree
   check.py --runtime-only --problems=…            # CI runtime job (static
                                                   # tier runs separately in
                                                   # the formatter container)
+
+The static tier checks bundle structure and metadata; the runtime tier
+additionally submits the canonical solution through the judge against
+every case in cases.json (solution_<variant> files are judged by
+openoj's verify_solution.py, not here).
 """
 
 from __future__ import annotations
@@ -44,8 +50,6 @@ from format import format_content  # noqa: E402 — starters are generator outpu
 ROOT = Path(__file__).resolve().parent.parent
 PROBLEMS = ROOT / "problems"
 BUNDLE_NAME = re.compile(r"^([0-9]{4,})_([a-z0-9]+(?:-[a-z0-9]+)*)$")
-HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*$", re.M)
-SOLUTION_FOR = {extension: extension for extension in gen_starters.EXTENSIONS.values()}
 
 
 class Failure:
@@ -129,6 +133,21 @@ def check_bundle(bundle: Path) -> list[Failure]:
     if set(problem) != expected_keys:
         fail(f"problem.json keys must be exactly {sorted(expected_keys)}")
         return failures
+    if not isinstance(problem["invocation"], dict):
+        fail("invocation must be an object")
+        return failures
+    if not isinstance(problem["difficulty"], str) or problem["difficulty"] not in {
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+    }:
+        fail("difficulty must be one of H1-H5")
+    if not isinstance(problem["tags"], list) or not problem["tags"] or not all(
+        isinstance(tag, str) and tag for tag in problem["tags"]
+    ):
+        fail("tags must be a non-empty array of non-empty strings")
     if problem["schema_version"] != 2:
         fail("unsupported schema_version")
     designated = problem["reference_solution"]
@@ -225,9 +244,12 @@ def check_bundle(bundle: Path) -> list[Failure]:
                 fail(f"only {len(all_cases)} total cases (need >= 10 or exhaustive finite integer domain)")
 
     # starters: regenerate from problem.json and compare byte-for-byte.
-    # Python style follows the tree: the adapted tree is modernized, the
-    # live tree keeps its legacy annotations.
-    gen_starters.set_python_style("modern" if "problems" in bundle.parts else "legacy")
+    # Python style follows the tree: the extend-adapt tree keeps the
+    # legacy annotations; every other tree (problems-adapt, the problems
+    # symlink, problems-bettercode) is modernized.
+    gen_starters.set_python_style(
+        "legacy" if "problems-extend-adapt" in bundle.parts else "modern"
+    )
     try:
         generated = gen_starters.starter_files(problem["invocation"])
     except Exception as error:  # noqa: BLE001
@@ -443,7 +465,9 @@ def runtime_tier(selected: list[str], catalog: dict[str, dict], api: str) -> lis
         if problem is None:
             continue
         for starter in sorted(bundle.glob("starter.*")):
-            language = language_for[starter.name[len("starter.") :]]
+            language = language_for.get(starter.name[len("starter.") :])
+            if language is None:
+                continue  # not a generated starter extension; nothing to judge
             solution = bundle / f"solution.{starter.name[len('starter.') :]}"
             try:
                 code = solution.read_text(encoding="utf-8")

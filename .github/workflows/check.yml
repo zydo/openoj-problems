@@ -28,6 +28,10 @@ jobs:
         run: openoj format --check problems
       - name: Bundle static checks
         run: python3 scripts/check.py --tree problems --skip-runtime
+      - name: Format check (extend-adapt tree)
+        run: openoj format --check problems-extend-adapt
+      - name: Bundle static checks (extend-adapt tree)
+        run: python3 scripts/check.py --tree problems-extend-adapt --skip-runtime
 
   judge:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
