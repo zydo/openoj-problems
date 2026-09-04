@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int compactRuns(vector<string>& chars) {
-        throw logic_error("TODO");
-    }
+  public:
+    int compactRuns(vector<string> &chars) { throw logic_error("TODO"); }
 };

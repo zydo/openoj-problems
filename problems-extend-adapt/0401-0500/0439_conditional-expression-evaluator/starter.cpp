@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string evaluateConditional(string expression) {
-        throw logic_error("TODO");
-    }
+  public:
+    string evaluateConditional(string expression) { throw logic_error("TODO"); }
 };

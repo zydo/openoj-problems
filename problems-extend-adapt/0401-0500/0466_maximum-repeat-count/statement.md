@@ -3,7 +3,7 @@
 ## Description
 
 Write `[s, n]` for the string formed by concatenating `s` with itself `n`
-times. Say a string can be *carved* from another when deleting zero or more
+times. Say a string can be _carved_ from another when deleting zero or more
 characters of the second produces the first.
 
 Two source strings `s1`, `s2` and repetition counts `n1`, `n2` are given.

@@ -1,7 +1,7 @@
 class Solution {
   public:
     bool areSentencesEquivalent(vector<string> &sentence1, vector<string> &sentence2,
-                             vector<vector<string>> &similarPairs) {
+                                vector<vector<string>> &similarPairs) {
         // Different lengths can never be similar.
         if (sentence1.size() != sentence2.size())
             return false;

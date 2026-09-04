@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int countWraparoundSubstrings(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    int countWraparoundSubstrings(string s) { throw logic_error("TODO"); }
 };

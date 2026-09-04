@@ -1,6 +1,4 @@
 class Solution {
-public:
-    int greatestPalindromicProduct(int n) {
-        throw logic_error("TODO");
-    }
+  public:
+    int greatestPalindromicProduct(int n) { throw logic_error("TODO"); }
 };

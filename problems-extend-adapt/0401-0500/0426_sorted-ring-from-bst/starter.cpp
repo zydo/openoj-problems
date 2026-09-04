@@ -1,6 +1,4 @@
 class Solution {
-public:
-    NodeWithNext* bstToSortedRing(TreeNode* root) {
-        throw logic_error("TODO");
-    }
+  public:
+    NodeWithNext *bstToSortedRing(TreeNode *root) { throw logic_error("TODO"); }
 };

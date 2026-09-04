@@ -1,6 +1,4 @@
 class Solution {
-public:
-    string orderByFrequency(string s) {
-        throw logic_error("TODO");
-    }
+  public:
+    string orderByFrequency(string s) { throw logic_error("TODO"); }
 };

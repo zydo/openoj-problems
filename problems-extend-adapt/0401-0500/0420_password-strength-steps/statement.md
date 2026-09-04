@@ -2,7 +2,7 @@
 
 ## Description
 
-A password is *strong* when every rule below holds:
+A password is _strong_ when every rule below holds:
 
 - It has at least 6 characters and at most 20 characters.
 - It contains at least one lowercase letter, at least one uppercase letter,

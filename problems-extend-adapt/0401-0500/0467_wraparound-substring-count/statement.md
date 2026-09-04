@@ -2,7 +2,7 @@
 
 ## Description
 
-The *wraparound alphabet* is the endless string that repeats the alphabet in
+The _wraparound alphabet_ is the endless string that repeats the alphabet in
 order, `z` wrapping back to `a`:
 
 ```text

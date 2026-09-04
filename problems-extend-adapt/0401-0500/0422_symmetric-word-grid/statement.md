@@ -2,7 +2,7 @@
 
 ## Description
 
-An array `words` forms a *word square* when reading each row matches reading
+An array `words` forms a _word square_ when reading each row matches reading
 the corresponding column. For every position `k`, the `k`th word of the array
 and the `k`th vertical column must read the same sequence of letters. Return
 `true` if `words` is a word square and `false` otherwise.
