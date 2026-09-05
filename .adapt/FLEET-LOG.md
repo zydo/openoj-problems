@@ -46,3 +46,14 @@ Recreated 2026-09-05 per the fleet-discipline rules in openoj/CLAUDE.md.
   the output-pin (its numbers: quickselect mismatches 10/24 pinned cases);
   1471 died pre-writing; 0094 died during Rust Morris pre-research (it
   identified the 1080 raw-pointer precedent for back-pointers).
+
+## PROGRAM COMPLETE — 2026-09-06
+
+All 59 authorable roster bundles landed (bank `21e4f7f35`), the
+originals mirror deployed (`78bbfd231`): 208 multi-solution adapt
+bundles, 211 variants-carrying originals twins, parity verified,
+references resolving in both trees. Exclusions stand as documented:
+0280/0324 (statement pins) and 1382 (mirror-blocked, same class).
+The mirror tooling (`.localonly/mirror_to_originals.py`) encodes the
+seven translation lessons; the parity audit
+(`.localonly/mirror_parity_audit.py`) is the standing verifier.
