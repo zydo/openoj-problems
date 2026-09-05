@@ -16,14 +16,13 @@ impl TrieNode {
 
 // Merge phase, children before parents: a node's best three are its own word
 // first (a prefix of every other word through it, hence the smallest), then
-// the children's lists in letter order; every existing child already holds a
-// non-empty list, so gathering stops by the third child consulted.
+// the children's lists in letter order. Every child merges unconditionally —
+// search consults `top` at nodes the root's own gathering never needed.
 fn merge_top(node: &mut TrieNode) {
+    // every child is merged unconditionally: search reads `top` at every
+    // depth, so a subtree left unmerged would read back empty
     let mut top: Vec<String> = node.word.clone().into_iter().collect();
     for slot in 0..26 {
-        if top.len() >= 3 {
-            break;
-        }
         if let Some(child) = node.children[slot].as_mut() {
             merge_top(child);
             for word in child.top.iter() {

@@ -1,8 +1,39 @@
 # Solutions — Stone Pile Standoff
 
-This is classic multi-pile Nim, and it has a closed-form answer: the
-mover loses exactly when the piles XOR to zero. One fold over the array
-decides the game, no search required.
+The two solutions take opposite views of the same game. One plays it
+out: a memoized game-tree search walks every reachable position and
+decides each by asking whether some move strands the opponent on a lost
+one. The other never searches at all — Bouton's nim-sum theorem closes
+the game in one XOR fold over the array, no tree required.
+
+## Game-Tree Search with Memoization
+
+Take the rules at face value and enumerate play. A position is the
+multiset of remaining pile sizes, and the mover facing all-empty piles
+has no move and loses — that seeds the recursion. Every other position
+is won exactly when some legal move — pick a pile, take from it —
+strands the opponent on a position already known lost for them, and
+lost when every move hands the opponent a win. Filling that relation
+over the whole reachable game tree, bottom-up from the empty board, is
+the DP.
+
+Pile order is irrelevant — a position and any rearrangement of it
+offer exactly the same moves — so each state is canonicalized to sorted
+order before it enters the memo table. That collapses the search to the
+sorted vectors of at most seven piles holding at most seven stones: a
+few thousand positions, each expanded once over its at most forty-nine
+candidate reductions, until the table holds a verdict for every state
+the start can reach.
+
+The start position's entry is the answer: true when Alice has a move
+that strands Bob on a loss, false when every opening gifts him a won
+game. The cost is the state count times the moves per state —
+exponential in principle, tiny at these bounds, and the honest price of
+not knowing the closed form below.
+
+**Complexity:** `O(8^n · n^2)` time, `O(8^n · n)` space — loose bounds
+over the reachable positions; canonicalized, a few thousand memoized
+states at these constraints.
 
 ## Nim-sum (Bouton's theorem)
 

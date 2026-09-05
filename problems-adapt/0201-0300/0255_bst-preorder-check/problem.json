@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "bounds_recursion",
   "id": 255,
   "slug": "bst-preorder-check",
   "title": "BST Preorder Check",

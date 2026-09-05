@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "sorted_two_pointer",
   "id": 350,
   "slug": "common-values-ii",
   "title": "Common Values II",

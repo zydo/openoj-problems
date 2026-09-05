@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "bucket",
   "id": 692,
   "slug": "ranked-word-frequencies",
   "title": "Ranked Word Frequencies",

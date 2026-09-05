@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "spf_sieve",
   "id": 2521,
   "slug": "counting-the-primes-in-an-arrays-product",
   "title": "Counting the Primes in an Array's Product",

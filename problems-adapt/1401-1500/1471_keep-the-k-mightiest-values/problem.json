@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "heap",
   "id": 1471,
   "slug": "keep-the-k-mightiest-values",
   "title": "Keep the K Mightiest Values",

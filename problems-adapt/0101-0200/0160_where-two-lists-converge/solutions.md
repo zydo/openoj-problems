@@ -1,5 +1,39 @@
 # Solutions — Where Two Lists Converge
 
+Both walks read the answer off node identity rather than values: past the
+join the two heads traverse the very same nodes, so the first node the
+walks share by reference is the answer, and the unequal prefixes in
+front of it must not be allowed to fake a meeting between equal-valued
+look-alikes. The hash set asks the definition's own question directly —
+record list A's nodes, walk list B, stop at the first node already
+recorded — and pays for that directness with `O(m)` set storage. The
+two-pointer walk equalizes the distances the two walks have left, so
+they meet level at the join node while allocating nothing beyond the
+walkers themselves; that pointer form closes the file as the reference.
+
+## Hash set over list A
+
+The direct reading of the definition. Record every node of list A in a
+set keyed by the node's identity rather than its value — Example 1's two
+1s are two different nodes that merely hold equal numbers, so the set
+must key on the node itself to tell them apart. Walking list B then
+stops at the first node already recorded: any node B can reach that
+also belongs to A lies in the shared suffix, and the first such node is
+by construction the join. A B-walk that falls off the end untouched
+means no node of A ever entered B's path — the lists never meet.
+
+Each language reaches that identity key by its own means — object
+references in the managed runtimes, raw addresses in C++ and Go, `Rc`
+pointers in Rust — but the contract is one membership test per node,
+expected constant time, so every node is visited once and the whole
+search stays `O(m + n)`.
+
+The set is the bill: up to `m` stored references, `O(m)` extra space —
+exactly the allocation the follow-up's couple-of-pointers bound forbids,
+and the work the pointer walk below refuses to spend.
+
+**Complexity:** `O(m + n)` time, `O(m)` space.
+
 ## Two pointers, equalized walks
 
 The join point is a fact about node identity, not values: both heads lead

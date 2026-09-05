@@ -1,5 +1,47 @@
 # Solutions — Unique Reconstructed Order
 
+Both approaches read the sequences down to the same raw material: every
+consecutive pair inside a `sequences[i]` pins one precedence — `u` before
+`v` — and the shortest supersequences are exactly the permutations of
+`[1, n]` that respect every pinned pair, so the question is whether those
+precedences admit `nums` and nothing else. Kahn's algorithm builds the
+precedence graph and lets it emit its own order: a value is free to come
+next once none of its pinned predecessors are left, and the order is forced
+precisely when there is never more than one free value to pick. The
+pinned-adjacency scan reads the same pairs from the other end — it walks
+`nums` itself and asks which of its `n - 1` adjacent slots some pair pins,
+since `nums` is forced exactly when all of them are.
+
+## Kahn's algorithm
+
+Each consecutive pair of a sequence pins one precedence, and nothing else in
+the sequences constrains the order, so the pairs assemble into a graph — an
+edge `u -> v` per pair — whose topological orders are exactly the
+permutations of `[1, n]` that keep every sequence embedded: the shortest
+supersequences. `nums` is the only shortest supersequence exactly when that
+graph has a single topological order and the order is `nums` itself.
+
+Kahn's algorithm makes uniqueness visible instead of checked. A value is
+free to come next once every edge into it has been honored — once all its
+pinned predecessors have been placed — and a run can only branch, stall, or
+proceed: two free values at once could each take the next slot, so no order
+would be forced; no free value means the remaining edges loop and no order
+exists at all; otherwise the single free value is the forced next one. So
+the run must hold exactly one free value at every step, and each forced
+value must be `nums`'s next value — any deviation means `nums` is not the
+one order the pairs admit.
+
+The code first rejects any value outside `[1, n]` — `nums` could not
+contain it, so it is not even a supersequence — then records one edge and
+one outstanding-predecessor count per pair. Repeated pairs only pad a
+count, and all copies of a pair are honored together when their source is
+placed, so multiplicity changes nothing; a pair that runs backwards in
+`nums`, or one pinned to a single value, surfaces the honest way — as an
+ambiguous step, an order mismatch, or a count that never reaches zero. A
+run of `n` forced picks, always in `nums`'s own order, is the answer.
+
+**Complexity:** `O(total sequence length + n)` time, `O(total sequence length + n)` space.
+
 ## Pinned adjacencies
 
 Every value of `[1, n]` must occur in a supersequence of `sequences`, so

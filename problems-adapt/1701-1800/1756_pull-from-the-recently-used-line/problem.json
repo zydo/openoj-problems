@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "fenwick",
   "id": 1756,
   "slug": "pull-from-the-recently-used-line",
   "title": "Pull From The Recently Used Line",

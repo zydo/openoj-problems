@@ -1,5 +1,32 @@
 # Solutions — Self-Matching Index
 
+Both approaches answer the definition head-on — find the smallest index
+whose element equals the index — over an array whose strict monotonicity
+makes the gap `arr[i] - i` non-decreasing and a fixed point exactly a
+zero of that gap. The linear scan reads left to right and stops at the
+first agreement, spending none of that structure for an `O(n)` sweep.
+The binary search cashes the gap in: bisection lands on the leftmost
+index where it stops being negative, one final check confirms it is
+actually zero there, and the cost drops to `O(log n)` — strictly better
+at these bounds, so the search closes the file as the reference.
+
+## Linear scan
+
+The scan answers the definition directly: walk the positions left to
+right, compare `arr[i]` with `i` at each one, and return the first index
+that agrees — no later index can be smaller, so the first hit is exactly
+the smallest match the statement asks for. A pass that runs off the end
+without an agreement reports `-1`.
+
+Nothing in the loop consults the ordering or the distinctness of the
+values; the same code would find the leftmost fixed point of an
+unsorted, duplicate-riddled array. That indifference is its simplicity
+and its cost: every position up to the answer is examined, even when the
+sorted gap has already ruled the rest of the array out — the work the
+binary search below refuses to do.
+
+**Complexity:** `O(n)` time, `O(1)` space.
+
 ## Binary search on arr[i] - i
 
 Because `arr` is strictly increasing (distinct values, ascending order),

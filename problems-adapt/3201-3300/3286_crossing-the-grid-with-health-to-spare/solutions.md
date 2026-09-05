@@ -1,5 +1,39 @@
 # Solutions — Crossing The Grid With Health To Spare
 
+Both approaches price the crossing the same way: a step onto a `1` cell
+costs one point, a step onto a `0` cell is free, both corners are entered,
+and the crossing survives exactly when its cheapest corner-to-corner price
+stays at most `health - 1`. Dijkstra with a binary heap computes that price
+the textbook way — cells as nodes, side-adjacent moves as 0/1-weighted
+edges, a min-heap settling cells in nondecreasing cost — and pays a log
+factor for the privilege. The 0-1 BFS that closes the file keeps the same
+relaxation but swaps the heap for a double-ended queue whose layer order
+makes every operation constant, finishing the job in linear time.
+
+## Dijkstra with a Binary Heap
+
+Model the grid as a graph: every cell is a node, and each side-adjacent
+step is a directed edge whose weight follows the safety rule — 1 when the
+cell being entered is unsafe, 0 when it is safe. The cheapest crossing is
+then an ordinary single-source shortest path from `(0, 0)`, and the
+starting cell charging means `dist[0][0]` opens at `grid[0][0]` rather
+than 0.
+
+Dijkstra settles cells in nondecreasing cost: a min-heap of
+`(cost, row, col)` candidates pops the cheapest unsettled cell first, and
+non-negative weights make that pop final. A stale-entry guard skips
+records whose cost no longer matches the cell's stored distance — lazily
+discarded leftovers from better offers — and each of the four neighbors is
+relaxed only when the route through the current cell strictly improves it.
+The first time the bottom-right cell is popped, its cost is the minimum
+number of unsafe cells any crossing enters, so the answer is whether that
+cost stays within the `health - 1` budget and leaves the required positive
+remainder.
+
+**Complexity:** `O(mn log(mn))` time — every cell is relaxed O(4) times,
+each heap operation paying a log factor; `O(mn)` space for the distance
+matrix and heap.
+
 ## 0-1 BFS on the cheapest unsafe-cell count
 
 Think of the crossing as paying one health point for every unsafe cell it

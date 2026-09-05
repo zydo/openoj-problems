@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "topological_propagation",
   "id": 2192,
   "slug": "upstream-nodes-in-a-dag",
   "title": "Upstream Nodes in a DAG",

@@ -1,5 +1,39 @@
 # Solutions — Minimum Reorder Window
 
+Both approaches turn on the same fact: outside the reorder window, every
+element already sits exactly where a fully sorted array would put it. Sort
+a copy, line it up against the original, and the first and last positions
+that disagree are the window's two edges — a direct reading that pays
+`O(n log n)` for the sort and keeps a copy of the array alive beside it.
+The running extremes find the same two edges without sorting: a pass
+forward carrying the prefix maximum leaves its last flag on the right
+edge, a pass backward carrying the suffix minimum raises its leftmost flag
+on the left edge, and one pass each way answers the follow-up in `O(n)`
+time and `O(1)` space.
+
+## Sort and Compare
+
+The sorted arrangement is the one placement every element would accept, so
+the reorder window is exactly the stretch where the original refuses to
+match it. The code sorts a copy of `nums`, then compares the two arrays
+position by position: walking in from the left, the first disagreement is
+the window's left edge; walking in from the right, the last disagreement
+is its right edge. Each edge is forced — it holds a value that has to
+move, so no working window can drop it — and the pair is sufficient,
+because the two arrays agree everywhere outside the stretch, which makes
+its values exactly the ones the sorted order keeps there; sorting the
+stretch in place completes the array.
+
+Equal values make the comparison honest rather than lucky: a duplicate
+that fits agrees with its sorted counterpart and opens nothing. Every
+position of `[1, 2, 2, 3]` matches, so the answer is 0; in
+`[1, 3, 2, 2, 2]` the disagreements land on the `3` and on the final `2`
+— the plateau's middle positions match their sorted selves — and the scan
+still closes the length-4 window. An already sorted or entirely equal
+array agrees everywhere and answers 0.
+
+**Complexity:** `O(n log n)` time, `O(n)` space.
+
 ## Running extremes from both ends
 
 An element is misplaced exactly when an order seen from one end breaks at
