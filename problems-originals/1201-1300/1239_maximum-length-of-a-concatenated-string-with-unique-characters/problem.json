@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1239,
   "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
   "title": "Maximum Length of a Concatenated String with Unique Characters",

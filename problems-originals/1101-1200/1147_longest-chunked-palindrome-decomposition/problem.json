@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1147,
   "slug": "longest-chunked-palindrome-decomposition",
   "title": "Longest Chunked Palindrome Decomposition",

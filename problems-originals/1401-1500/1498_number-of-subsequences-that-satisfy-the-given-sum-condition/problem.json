@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1498,
   "slug": "number-of-subsequences-that-satisfy-the-given-sum-condition",
   "title": "Number of Subsequences That Satisfy the Given Sum Condition",

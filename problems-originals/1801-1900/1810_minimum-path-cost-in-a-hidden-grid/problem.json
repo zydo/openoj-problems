@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1810,
   "slug": "minimum-path-cost-in-a-hidden-grid",
   "title": "Minimum Path Cost in a Hidden Grid",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 552,
   "slug": "student-attendance-record-ii",
   "title": "Student Attendance Record II",

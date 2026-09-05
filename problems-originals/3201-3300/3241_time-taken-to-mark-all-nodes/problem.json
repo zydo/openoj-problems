@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3241,
   "slug": "time-taken-to-mark-all-nodes",
   "title": "Time Taken to Mark All Nodes",

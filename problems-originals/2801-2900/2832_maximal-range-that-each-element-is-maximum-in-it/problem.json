@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2832,
   "slug": "maximal-range-that-each-element-is-maximum-in-it",
   "title": "Maximal Range That Each Element Is Maximum in It",

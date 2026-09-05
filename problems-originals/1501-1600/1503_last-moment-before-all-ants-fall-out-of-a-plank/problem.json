@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1503,
   "slug": "last-moment-before-all-ants-fall-out-of-a-plank",
   "title": "Last Moment Before All Ants Fall Out of a Plank",

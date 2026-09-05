@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 808,
   "slug": "soup-servings",
   "title": "Soup Servings",

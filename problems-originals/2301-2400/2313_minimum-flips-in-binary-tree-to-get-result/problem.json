@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2313,
   "slug": "minimum-flips-in-binary-tree-to-get-result",
   "title": "Minimum Flips in Binary Tree to Get Result",

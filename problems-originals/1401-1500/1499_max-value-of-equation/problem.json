@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1499,
   "slug": "max-value-of-equation",
   "title": "Max Value of Equation",

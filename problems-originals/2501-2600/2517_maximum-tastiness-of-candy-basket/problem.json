@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2517,
   "slug": "maximum-tastiness-of-candy-basket",
   "title": "Maximum Tastiness of Candy Basket",

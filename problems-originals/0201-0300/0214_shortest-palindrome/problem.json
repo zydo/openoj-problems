@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 214,
   "slug": "shortest-palindrome",
   "title": "Shortest Palindrome",

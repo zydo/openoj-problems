@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 793,
   "slug": "preimage-size-of-factorial-zeroes-function",
   "title": "Preimage Size of Factorial Zeroes Function",

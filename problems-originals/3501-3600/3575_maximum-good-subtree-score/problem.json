@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3575,
   "slug": "maximum-good-subtree-score",
   "title": "Maximum Good Subtree Score",

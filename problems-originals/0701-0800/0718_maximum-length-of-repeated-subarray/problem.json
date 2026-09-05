@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 718,
   "slug": "maximum-length-of-repeated-subarray",
   "title": "Maximum Length of Repeated Subarray",

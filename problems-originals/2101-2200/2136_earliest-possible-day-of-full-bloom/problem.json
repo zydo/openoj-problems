@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2136,
   "slug": "earliest-possible-day-of-full-bloom",
   "title": "Earliest Possible Day of Full Bloom",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 330,
   "slug": "patching-array",
   "title": "Patching Array",

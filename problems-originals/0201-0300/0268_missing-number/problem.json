@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "xor",
   "id": 268,
   "slug": "missing-number",
   "title": "Missing Number",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3077,
   "slug": "maximum-strength-of-k-disjoint-subarrays",
   "title": "Maximum Strength of K Disjoint Subarrays",

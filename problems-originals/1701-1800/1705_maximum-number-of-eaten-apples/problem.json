@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1705,
   "slug": "maximum-number-of-eaten-apples",
   "title": "Maximum Number of Eaten Apples",

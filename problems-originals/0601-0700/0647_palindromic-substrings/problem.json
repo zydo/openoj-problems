@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 647,
   "slug": "palindromic-substrings",
   "title": "Palindromic Substrings",

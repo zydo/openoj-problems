@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3905,
   "slug": "multi-source-flood-fill",
   "title": "Multi Source Flood Fill",

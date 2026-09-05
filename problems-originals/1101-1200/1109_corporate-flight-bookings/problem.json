@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1109,
   "slug": "corporate-flight-bookings",
   "title": "Corporate Flight Bookings",

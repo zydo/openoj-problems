@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1735,
   "slug": "count-ways-to-make-array-with-product",
   "title": "Count Ways to Make Array With Product",

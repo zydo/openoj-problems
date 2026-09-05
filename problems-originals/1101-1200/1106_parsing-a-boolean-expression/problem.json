@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1106,
   "slug": "parsing-a-boolean-expression",
   "title": "Parsing A Boolean Expression",

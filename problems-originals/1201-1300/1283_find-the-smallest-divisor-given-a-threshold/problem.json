@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1283,
   "slug": "find-the-smallest-divisor-given-a-threshold",
   "title": "Find the Smallest Divisor Given a Threshold",

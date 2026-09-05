@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3613,
   "slug": "minimize-maximum-component-cost",
   "title": "Minimize Maximum Component Cost",

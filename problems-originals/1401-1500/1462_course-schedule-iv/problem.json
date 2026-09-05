@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1462,
   "slug": "course-schedule-iv",
   "title": "Course Schedule IV",

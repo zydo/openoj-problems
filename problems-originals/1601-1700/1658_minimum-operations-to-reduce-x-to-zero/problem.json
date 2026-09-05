@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1658,
   "slug": "minimum-operations-to-reduce-x-to-zero",
   "title": "Minimum Operations to Reduce X to Zero",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3023,
   "slug": "find-pattern-in-infinite-stream-i",
   "title": "Find Pattern in Infinite Stream I",

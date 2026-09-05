@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3393,
   "slug": "count-paths-with-the-given-xor-value",
   "title": "Count Paths With the Given XOR Value",

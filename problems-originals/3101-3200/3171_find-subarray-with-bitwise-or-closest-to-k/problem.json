@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3171,
   "slug": "find-subarray-with-bitwise-or-closest-to-k",
   "title": "Find Subarray With Bitwise OR Closest to K",

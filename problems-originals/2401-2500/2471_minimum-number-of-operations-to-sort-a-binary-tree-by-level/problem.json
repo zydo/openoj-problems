@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2471,
   "slug": "minimum-number-of-operations-to-sort-a-binary-tree-by-level",
   "title": "Minimum Number of Operations to Sort a Binary Tree by Level",

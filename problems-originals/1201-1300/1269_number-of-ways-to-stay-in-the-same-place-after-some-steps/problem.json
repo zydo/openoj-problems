@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1269,
   "slug": "number-of-ways-to-stay-in-the-same-place-after-some-steps",
   "title": "Number of Ways to Stay in the Same Place After Some Steps",

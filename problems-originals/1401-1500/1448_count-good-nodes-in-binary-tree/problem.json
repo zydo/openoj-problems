@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1448,
   "slug": "count-good-nodes-in-binary-tree",
   "title": "Count Good Nodes in Binary Tree",

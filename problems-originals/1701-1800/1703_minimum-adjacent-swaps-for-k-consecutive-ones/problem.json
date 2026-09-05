@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1703,
   "slug": "minimum-adjacent-swaps-for-k-consecutive-ones",
   "title": "Minimum Adjacent Swaps for K Consecutive Ones",

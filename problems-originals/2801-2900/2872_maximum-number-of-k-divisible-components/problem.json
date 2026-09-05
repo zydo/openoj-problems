@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2872,
   "slug": "maximum-number-of-k-divisible-components",
   "title": "Maximum Number of K-Divisible Components",

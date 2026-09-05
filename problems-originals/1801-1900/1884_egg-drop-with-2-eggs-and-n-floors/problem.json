@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1884,
   "slug": "egg-drop-with-2-eggs-and-n-floors",
   "title": "Egg Drop With 2 Eggs and N Floors",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2375,
   "slug": "construct-smallest-number-from-di-string",
   "title": "Construct Smallest Number From DI String",

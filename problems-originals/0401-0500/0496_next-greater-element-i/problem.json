@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 496,
   "slug": "next-greater-element-i",
   "title": "Next Greater Element I",

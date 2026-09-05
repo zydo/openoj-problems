@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "union_find",
   "id": 323,
   "slug": "number-of-connected-components-in-an-undirected-graph",
   "title": "Number of Connected Components in an Undirected Graph",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3519,
   "slug": "count-numbers-with-non-decreasing-digits",
   "title": "Count Numbers with Non-Decreasing Digits",

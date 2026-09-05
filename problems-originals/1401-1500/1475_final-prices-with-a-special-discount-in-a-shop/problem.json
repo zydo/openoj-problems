@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1475,
   "slug": "final-prices-with-a-special-discount-in-a-shop",
   "title": "Final Prices With a Special Discount in a Shop",

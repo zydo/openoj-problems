@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3287,
   "slug": "find-the-maximum-sequence-value-of-array",
   "title": "Find the Maximum Sequence Value of Array",

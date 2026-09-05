@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 847,
   "slug": "shortest-path-visiting-all-nodes",
   "title": "Shortest Path Visiting All Nodes",

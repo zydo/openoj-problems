@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1870,
   "slug": "minimum-speed-to-arrive-on-time",
   "title": "Minimum Speed to Arrive on Time",

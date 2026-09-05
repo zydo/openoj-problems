@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1353,
   "slug": "maximum-number-of-events-that-can-be-attended",
   "title": "Maximum Number of Events That Can Be Attended",

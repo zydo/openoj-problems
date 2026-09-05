@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "row_bisect",
   "id": 240,
   "slug": "search-a-2d-matrix-ii",
   "title": "Search a 2D Matrix II",

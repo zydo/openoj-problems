@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1187,
   "slug": "make-array-strictly-increasing",
   "title": "Make Array Strictly Increasing",

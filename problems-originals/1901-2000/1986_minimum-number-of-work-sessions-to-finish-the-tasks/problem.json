@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1986,
   "slug": "minimum-number-of-work-sessions-to-finish-the-tasks",
   "title": "Minimum Number of Work Sessions to Finish the Tasks",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1373,
   "slug": "maximum-sum-bst-in-binary-tree",
   "title": "Maximum Sum BST in Binary Tree",

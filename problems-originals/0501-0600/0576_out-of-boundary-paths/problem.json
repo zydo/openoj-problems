@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 576,
   "slug": "out-of-boundary-paths",
   "title": "Out of Boundary Paths",

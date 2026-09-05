@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2576,
   "slug": "find-the-maximum-number-of-marked-indices",
   "title": "Find the Maximum Number of Marked Indices",

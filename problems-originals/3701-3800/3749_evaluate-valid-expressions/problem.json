@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3749,
   "slug": "evaluate-valid-expressions",
   "title": "Evaluate Valid Expressions",

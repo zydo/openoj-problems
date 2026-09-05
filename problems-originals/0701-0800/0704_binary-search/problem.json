@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 704,
   "slug": "binary-search",
   "title": "Binary Search",

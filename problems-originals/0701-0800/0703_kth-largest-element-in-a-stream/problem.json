@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 703,
   "slug": "kth-largest-element-in-a-stream",
   "title": "Kth Largest Element in a Stream",

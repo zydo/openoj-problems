@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1798,
   "slug": "maximum-number-of-consecutive-values-you-can-make",
   "title": "Maximum Number of Consecutive Values You Can Make",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2940,
   "slug": "find-building-where-alice-and-bob-can-meet",
   "title": "Find Building Where Alice and Bob Can Meet",

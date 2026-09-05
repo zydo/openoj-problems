@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2818,
   "slug": "apply-operations-to-maximize-score",
   "title": "Apply Operations to Maximize Score",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "linear_sieve",
   "id": 204,
   "slug": "count-primes",
   "title": "Count Primes",

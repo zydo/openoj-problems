@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2731,
   "slug": "movement-of-robots",
   "title": "Movement of Robots",

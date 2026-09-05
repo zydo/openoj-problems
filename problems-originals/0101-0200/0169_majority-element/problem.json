@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 169,
   "slug": "majority-element",
   "title": "Majority Element",

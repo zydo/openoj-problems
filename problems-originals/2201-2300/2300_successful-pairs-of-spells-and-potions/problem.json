@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2300,
   "slug": "successful-pairs-of-spells-and-potions",
   "title": "Successful Pairs of Spells and Potions",

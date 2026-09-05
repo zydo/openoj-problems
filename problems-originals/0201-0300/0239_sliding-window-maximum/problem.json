@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "monotonic_deque",
   "id": 239,
   "slug": "sliding-window-maximum",
   "title": "Sliding Window Maximum",

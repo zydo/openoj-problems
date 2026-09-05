@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2638,
   "slug": "count-the-number-of-k-free-subsets",
   "title": "Count the Number of K-Free Subsets",

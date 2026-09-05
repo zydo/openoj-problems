@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 315,
   "slug": "count-of-smaller-numbers-after-self",
   "title": "Count of Smaller Numbers After Self",

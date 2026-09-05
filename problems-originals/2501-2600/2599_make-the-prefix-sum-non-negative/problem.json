@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2599,
   "slug": "make-the-prefix-sum-non-negative",
   "title": "Make the Prefix Sum Non-negative",

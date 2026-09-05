@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1994,
   "slug": "the-number-of-good-subsets",
   "title": "The Number of Good Subsets",

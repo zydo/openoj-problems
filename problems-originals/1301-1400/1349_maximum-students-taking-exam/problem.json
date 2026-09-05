@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1349,
   "slug": "maximum-students-taking-exam",
   "title": "Maximum Students Taking Exam",

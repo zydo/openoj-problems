@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2316,
   "slug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
   "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",

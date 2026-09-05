@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 211,
   "slug": "design-add-and-search-words-data-structure",
   "title": "Design Add and Search Words Data Structure",

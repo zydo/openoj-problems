@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 329,
   "slug": "longest-increasing-path-in-a-matrix",
   "title": "Longest Increasing Path in a Matrix",

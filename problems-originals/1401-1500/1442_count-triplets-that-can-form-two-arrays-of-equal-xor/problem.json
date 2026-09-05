@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1442,
   "slug": "count-triplets-that-can-form-two-arrays-of-equal-xor",
   "title": "Count Triplets That Can Form Two Arrays of Equal XOR",

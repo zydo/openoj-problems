@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "patience",
   "id": 300,
   "slug": "longest-increasing-subsequence",
   "title": "Longest Increasing Subsequence",

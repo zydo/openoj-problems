@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2163,
   "slug": "minimum-difference-in-sums-after-removal-of-elements",
   "title": "Minimum Difference in Sums After Removal of Elements",

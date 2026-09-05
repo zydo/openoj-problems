@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2360,
   "slug": "longest-cycle-in-a-graph",
   "title": "Longest Cycle in a Graph",

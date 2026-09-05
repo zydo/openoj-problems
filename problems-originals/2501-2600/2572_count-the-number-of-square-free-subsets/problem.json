@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2572,
   "slug": "count-the-number-of-square-free-subsets",
   "title": "Count the Number of Square-Free Subsets",

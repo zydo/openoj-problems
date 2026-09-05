@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2444,
   "slug": "count-subarrays-with-fixed-bounds",
   "title": "Count Subarrays With Fixed Bounds",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3526,
   "slug": "range-xor-queries-with-subarray-reversals",
   "title": "Range XOR Queries with Subarray Reversals",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3704,
   "slug": "count-no-zero-pairs-that-sum-to-n",
   "title": "Count No-Zero Pairs That Sum to N",

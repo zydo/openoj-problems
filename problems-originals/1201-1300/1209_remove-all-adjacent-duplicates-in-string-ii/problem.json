@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1209,
   "slug": "remove-all-adjacent-duplicates-in-string-ii",
   "title": "Remove All Adjacent Duplicates in String II",

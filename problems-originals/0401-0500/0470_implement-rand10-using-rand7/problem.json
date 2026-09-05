@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 470,
   "slug": "implement-rand10-using-rand7",
   "title": "Implement Rand10() Using Rand7()",

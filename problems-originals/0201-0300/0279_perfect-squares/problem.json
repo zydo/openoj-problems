@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "math_lagrange",
   "id": 279,
   "slug": "perfect-squares",
   "title": "Perfect Squares",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1760,
   "slug": "minimum-limit-of-balls-in-a-bag",
   "title": "Minimum Limit of Balls in a Bag",

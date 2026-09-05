@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1060,
   "slug": "missing-element-in-sorted-array",
   "title": "Missing Element in Sorted Array",

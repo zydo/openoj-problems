@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2581,
   "slug": "count-number-of-possible-root-nodes",
   "title": "Count Number of Possible Root Nodes",

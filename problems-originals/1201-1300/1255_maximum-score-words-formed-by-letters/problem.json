@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1255,
   "slug": "maximum-score-words-formed-by-letters",
   "title": "Maximum Score Words Formed by Letters",

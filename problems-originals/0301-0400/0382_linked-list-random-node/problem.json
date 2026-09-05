@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 382,
   "slug": "linked-list-random-node",
   "title": "Linked List Random Node",

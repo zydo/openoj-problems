@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3352,
   "slug": "count-k-reducible-numbers-less-than-n",
   "title": "Count K-Reducible Numbers Less Than N",

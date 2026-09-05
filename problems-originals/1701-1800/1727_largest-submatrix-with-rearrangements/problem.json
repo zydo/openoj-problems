@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1727,
   "slug": "largest-submatrix-with-rearrangements",
   "title": "Largest Submatrix With Rearrangements",

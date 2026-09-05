@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 698,
   "slug": "partition-to-k-equal-sum-subsets",
   "title": "Partition to K Equal Sum Subsets",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1888,
   "slug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
   "title": "Minimum Number of Flips to Make the Binary String Alternating",

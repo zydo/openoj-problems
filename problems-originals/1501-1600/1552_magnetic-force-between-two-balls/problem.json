@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1552,
   "slug": "magnetic-force-between-two-balls",
   "title": "Magnetic Force Between Two Balls",

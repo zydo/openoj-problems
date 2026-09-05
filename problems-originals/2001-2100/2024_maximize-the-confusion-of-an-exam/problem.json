@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2024,
   "slug": "maximize-the-confusion-of-an-exam",
   "title": "Maximize the Confusion of an Exam",

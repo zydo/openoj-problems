@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2862,
   "slug": "maximum-element-sum-of-a-complete-subset-of-indices",
   "title": "Maximum Element-Sum of a Complete Subset of Indices",

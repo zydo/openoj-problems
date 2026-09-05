@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3068,
   "slug": "find-the-maximum-sum-of-node-values",
   "title": "Find the Maximum Sum of Node Values",

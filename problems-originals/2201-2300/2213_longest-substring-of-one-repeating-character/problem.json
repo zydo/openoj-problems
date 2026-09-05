@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2213,
   "slug": "longest-substring-of-one-repeating-character",
   "title": "Longest Substring of One Repeating Character",

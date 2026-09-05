@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3608,
   "slug": "minimum-time-for-k-connected-components",
   "title": "Minimum Time for K Connected Components",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3807,
   "slug": "minimum-cost-to-repair-edges-to-traverse-a-graph",
   "title": "Minimum Cost to Repair Edges to Traverse a Graph",

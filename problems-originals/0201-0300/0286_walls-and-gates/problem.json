@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 286,
   "slug": "walls-and-gates",
   "title": "Walls and Gates",

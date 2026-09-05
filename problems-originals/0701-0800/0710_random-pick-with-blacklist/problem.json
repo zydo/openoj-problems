@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 710,
   "slug": "random-pick-with-blacklist",
   "title": "Random Pick with Blacklist",

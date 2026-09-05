@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1648,
   "slug": "sell-diminishing-valued-colored-balls",
   "title": "Sell Diminishing-Valued Colored Balls",

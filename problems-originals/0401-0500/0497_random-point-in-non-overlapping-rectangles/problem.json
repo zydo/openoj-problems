@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 497,
   "slug": "random-point-in-non-overlapping-rectangles",
   "title": "Random Point in Non-overlapping Rectangles",

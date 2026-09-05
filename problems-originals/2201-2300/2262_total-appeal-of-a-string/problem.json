@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2262,
   "slug": "total-appeal-of-a-string",
   "title": "Total Appeal of A String",

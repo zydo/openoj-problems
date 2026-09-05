@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 395,
   "slug": "longest-substring-with-at-least-k-repeating-characters",
   "title": "Longest Substring with At Least K Repeating Characters",

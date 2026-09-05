@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2097,
   "slug": "valid-arrangement-of-pairs",
   "title": "Valid Arrangement of Pairs",

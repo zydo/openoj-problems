@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2290,
   "slug": "minimum-obstacle-removal-to-reach-corner",
   "title": "Minimum Obstacle Removal to Reach Corner",

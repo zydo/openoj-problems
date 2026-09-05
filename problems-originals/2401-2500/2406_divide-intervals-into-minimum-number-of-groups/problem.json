@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2406,
   "slug": "divide-intervals-into-minimum-number-of-groups",
   "title": "Divide Intervals Into Minimum Number of Groups",

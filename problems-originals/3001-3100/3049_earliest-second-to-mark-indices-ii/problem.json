@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3049,
   "slug": "earliest-second-to-mark-indices-ii",
   "title": "Earliest Second to Mark Indices II",

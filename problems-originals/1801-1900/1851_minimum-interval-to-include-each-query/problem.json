@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1851,
   "slug": "minimum-interval-to-include-each-query",
   "title": "Minimum Interval to Include Each Query",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3181,
   "slug": "maximum-total-reward-using-operations-ii",
   "title": "Maximum Total Reward Using Operations II",

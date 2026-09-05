@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1218,
   "slug": "longest-arithmetic-subsequence-of-given-difference",
   "title": "Longest Arithmetic Subsequence of Given Difference",

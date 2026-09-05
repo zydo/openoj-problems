@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2193,
   "slug": "minimum-number-of-moves-to-make-palindrome",
   "title": "Minimum Number of Moves to Make Palindrome",

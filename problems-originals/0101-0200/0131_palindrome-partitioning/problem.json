@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 131,
   "slug": "palindrome-partitioning",
   "title": "Palindrome Partitioning",

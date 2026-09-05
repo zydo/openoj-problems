@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 124,
   "slug": "binary-tree-maximum-path-sum",
   "title": "Binary Tree Maximum Path Sum",

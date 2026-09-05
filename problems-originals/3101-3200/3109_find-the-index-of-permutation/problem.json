@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3109,
   "slug": "find-the-index-of-permutation",
   "title": "Find the Index of Permutation",

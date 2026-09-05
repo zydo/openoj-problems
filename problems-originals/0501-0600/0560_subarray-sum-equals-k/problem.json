@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 560,
   "slug": "subarray-sum-equals-k",
   "title": "Subarray Sum Equals K",

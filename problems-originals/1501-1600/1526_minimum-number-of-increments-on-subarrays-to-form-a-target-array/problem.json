@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1526,
   "slug": "minimum-number-of-increments-on-subarrays-to-form-a-target-array",
   "title": "Minimum Number of Increments on Subarrays to Form a Target Array",

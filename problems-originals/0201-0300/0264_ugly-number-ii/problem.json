@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "three_pointers",
   "id": 264,
   "slug": "ugly-number-ii",
   "title": "Ugly Number II",

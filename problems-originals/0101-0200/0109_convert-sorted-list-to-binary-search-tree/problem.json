@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "inorder_sim",
   "id": 109,
   "slug": "convert-sorted-list-to-binary-search-tree",
   "title": "Convert Sorted List to Binary Search Tree",

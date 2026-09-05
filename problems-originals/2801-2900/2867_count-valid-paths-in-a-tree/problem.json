@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2867,
   "slug": "count-valid-paths-in-a-tree",
   "title": "Count Valid Paths in a Tree",

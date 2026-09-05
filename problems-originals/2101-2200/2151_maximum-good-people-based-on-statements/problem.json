@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2151,
   "slug": "maximum-good-people-based-on-statements",
   "title": "Maximum Good People Based on Statements",

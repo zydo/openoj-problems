@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3449,
   "slug": "maximize-the-minimum-game-score",
   "title": "Maximize the Minimum Game Score",

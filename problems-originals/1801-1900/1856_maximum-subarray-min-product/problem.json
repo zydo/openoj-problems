@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1856,
   "slug": "maximum-subarray-min-product",
   "title": "Maximum Subarray Min-Product",

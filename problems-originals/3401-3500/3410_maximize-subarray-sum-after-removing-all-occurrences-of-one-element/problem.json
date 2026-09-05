@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3410,
   "slug": "maximize-subarray-sum-after-removing-all-occurrences-of-one-element",
   "title": "Maximize Subarray Sum After Removing All Occurrences of One Element",

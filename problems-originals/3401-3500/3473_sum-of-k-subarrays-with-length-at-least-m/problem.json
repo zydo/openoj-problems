@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3473,
   "slug": "sum-of-k-subarrays-with-length-at-least-m",
   "title": "Sum of K Subarrays With Length at Least M",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 846,
   "slug": "hand-of-straights",
   "title": "Hand of Straights",

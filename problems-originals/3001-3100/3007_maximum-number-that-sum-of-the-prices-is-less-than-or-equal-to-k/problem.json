@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3007,
   "slug": "maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
   "title": "Maximum Number That Sum of the Prices Is Less Than or Equal to K",

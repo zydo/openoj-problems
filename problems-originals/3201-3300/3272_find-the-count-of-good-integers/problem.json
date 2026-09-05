@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3272,
   "slug": "find-the-count-of-good-integers",
   "title": "Find the Count of Good Integers",

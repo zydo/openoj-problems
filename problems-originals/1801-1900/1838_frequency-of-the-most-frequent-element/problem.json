@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1838,
   "slug": "frequency-of-the-most-frequent-element",
   "title": "Frequency of the Most Frequent Element",

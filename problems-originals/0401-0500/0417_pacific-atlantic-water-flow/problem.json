@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "bfs_from_borders",
   "id": 417,
   "slug": "pacific-atlantic-water-flow",
   "title": "Pacific Atlantic Water Flow",

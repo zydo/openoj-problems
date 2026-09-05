@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1074,
   "slug": "number-of-submatrices-that-sum-to-target",
   "title": "Number of Submatrices That Sum to Target",

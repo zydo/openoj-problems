@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1685,
   "slug": "sum-of-absolute-differences-in-a-sorted-array",
   "title": "Sum of Absolute Differences in a Sorted Array",

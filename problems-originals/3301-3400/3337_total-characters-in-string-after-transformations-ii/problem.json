@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3337,
   "slug": "total-characters-in-string-after-transformations-ii",
   "title": "Total Characters in String After Transformations II",

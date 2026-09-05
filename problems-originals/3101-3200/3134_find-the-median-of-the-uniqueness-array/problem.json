@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3134,
   "slug": "find-the-median-of-the-uniqueness-array",
   "title": "Find the Median of the Uniqueness Array",

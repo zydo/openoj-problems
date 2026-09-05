@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2115,
   "slug": "find-all-possible-recipes-from-given-supplies",
   "title": "Find All Possible Recipes from Given Supplies",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1156,
   "slug": "swap-for-longest-repeated-character-substring",
   "title": "Swap For Longest Repeated Character Substring",

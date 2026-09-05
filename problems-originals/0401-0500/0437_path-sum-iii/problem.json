@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 437,
   "slug": "path-sum-iii",
   "title": "Path Sum III",

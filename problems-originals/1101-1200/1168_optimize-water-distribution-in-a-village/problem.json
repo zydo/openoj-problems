@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1168,
   "slug": "optimize-water-distribution-in-a-village",
   "title": "Optimize Water Distribution in a Village",

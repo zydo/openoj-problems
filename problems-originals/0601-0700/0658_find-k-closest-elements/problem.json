@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 658,
   "slug": "find-k-closest-elements",
   "title": "Find K Closest Elements",

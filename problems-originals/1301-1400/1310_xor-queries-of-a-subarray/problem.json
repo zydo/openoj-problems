@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1310,
   "slug": "xor-queries-of-a-subarray",
   "title": "XOR Queries of a Subarray",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3367,
   "slug": "maximize-sum-of-weights-after-edge-removals",
   "title": "Maximize Sum of Weights after Edge Removals",

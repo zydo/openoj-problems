@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2371,
   "slug": "minimize-maximum-value-in-a-grid",
   "title": "Minimize Maximum Value in a Grid",

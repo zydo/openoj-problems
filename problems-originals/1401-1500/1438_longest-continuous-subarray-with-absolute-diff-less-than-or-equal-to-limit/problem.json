@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1438,
   "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
   "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",

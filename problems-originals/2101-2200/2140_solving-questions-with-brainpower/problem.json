@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2140,
   "slug": "solving-questions-with-brainpower",
   "title": "Solving Questions With Brainpower",

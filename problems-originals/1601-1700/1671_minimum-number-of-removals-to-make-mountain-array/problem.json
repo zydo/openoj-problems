@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1671,
   "slug": "minimum-number-of-removals-to-make-mountain-array",
   "title": "Minimum Number of Removals to Make Mountain Array",

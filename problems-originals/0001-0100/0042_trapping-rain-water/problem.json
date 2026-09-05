@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 42,
   "slug": "trapping-rain-water",
   "title": "Trapping Rain Water",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1461,
   "slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
   "title": "Check If a String Contains All Binary Codes of Size K",

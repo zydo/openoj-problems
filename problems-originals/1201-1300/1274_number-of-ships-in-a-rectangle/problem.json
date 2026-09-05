@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1274,
   "slug": "number-of-ships-in-a-rectangle",
   "title": "Number of Ships in a Rectangle",

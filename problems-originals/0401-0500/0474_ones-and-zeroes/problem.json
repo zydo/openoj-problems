@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 474,
   "slug": "ones-and-zeroes",
   "title": "Ones and Zeroes",

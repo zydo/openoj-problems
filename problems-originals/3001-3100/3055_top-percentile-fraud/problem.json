@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3055,
   "slug": "top-percentile-fraud",
   "title": "Top Percentile Fraud",

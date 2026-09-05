@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1976,
   "slug": "number-of-ways-to-arrive-at-destination",
   "title": "Number of Ways to Arrive at Destination",

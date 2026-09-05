@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1997,
   "slug": "first-day-where-you-have-been-in-all-the-rooms",
   "title": "First Day Where You Have Been in All the Rooms",

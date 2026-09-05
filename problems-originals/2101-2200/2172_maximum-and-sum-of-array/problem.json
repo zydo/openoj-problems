@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2172,
   "slug": "maximum-and-sum-of-array",
   "title": "Maximum AND Sum of Array",

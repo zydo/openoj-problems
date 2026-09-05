@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1254,
   "slug": "number-of-closed-islands",
   "title": "Number of Closed Islands",

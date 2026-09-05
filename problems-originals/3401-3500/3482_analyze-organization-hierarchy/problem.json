@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3482,
   "slug": "analyze-organization-hierarchy",
   "title": "Analyze Organization Hierarchy",

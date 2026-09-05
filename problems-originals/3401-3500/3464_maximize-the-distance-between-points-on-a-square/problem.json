@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3464,
   "slug": "maximize-the-distance-between-points-on-a-square",
   "title": "Maximize the Distance Between Points on a Square",

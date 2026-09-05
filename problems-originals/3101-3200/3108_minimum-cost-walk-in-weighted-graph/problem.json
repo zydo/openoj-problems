@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3108,
   "slug": "minimum-cost-walk-in-weighted-graph",
   "title": "Minimum Cost Walk in Weighted Graph",

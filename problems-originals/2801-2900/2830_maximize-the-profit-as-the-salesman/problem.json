@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2830,
   "slug": "maximize-the-profit-as-the-salesman",
   "title": "Maximize the Profit as the Salesman",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "union_find",
   "id": 547,
   "slug": "number-of-provinces",
   "title": "Number of Provinces",

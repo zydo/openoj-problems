@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1326,
   "slug": "minimum-number-of-taps-to-open-to-water-a-garden",
   "title": "Minimum Number of Taps to Open to Water a Garden",

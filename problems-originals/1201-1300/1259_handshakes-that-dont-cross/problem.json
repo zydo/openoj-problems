@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1259,
   "slug": "handshakes-that-dont-cross",
   "title": "Handshakes That Don't Cross",

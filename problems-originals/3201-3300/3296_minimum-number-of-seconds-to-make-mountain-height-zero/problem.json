@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3296,
   "slug": "minimum-number-of-seconds-to-make-mountain-height-zero",
   "title": "Minimum Number of Seconds to Make Mountain Height Zero",

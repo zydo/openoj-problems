@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1032,
   "slug": "stream-of-characters",
   "title": "Stream of Characters",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1067,
   "slug": "digit-count-in-range",
   "title": "Digit Count in Range",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1000,
   "slug": "minimum-cost-to-merge-stones",
   "title": "Minimum Cost to Merge Stones",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2551,
   "slug": "put-marbles-in-bags",
   "title": "Put Marbles in Bags",

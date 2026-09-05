@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2827,
   "slug": "number-of-beautiful-integers-in-the-range",
   "title": "Number of Beautiful Integers in the Range",

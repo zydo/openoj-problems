@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 75,
   "slug": "sort-colors",
   "title": "Sort Colors",

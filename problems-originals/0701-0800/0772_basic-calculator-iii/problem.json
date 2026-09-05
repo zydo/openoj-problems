@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 772,
   "slug": "basic-calculator-iii",
   "title": "Basic Calculator III",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3472,
   "slug": "longest-palindromic-subsequence-after-at-most-k-operations",
   "title": "Longest Palindromic Subsequence After at Most K Operations",

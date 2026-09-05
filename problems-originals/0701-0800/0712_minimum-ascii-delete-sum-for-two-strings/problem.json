@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 712,
   "slug": "minimum-ascii-delete-sum-for-two-strings",
   "title": "Minimum ASCII Delete Sum for Two Strings",

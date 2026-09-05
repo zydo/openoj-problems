@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "iterative",
   "id": 21,
   "slug": "merge-two-sorted-lists",
   "title": "Merge Two Sorted Lists",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2378,
   "slug": "choose-edges-to-maximize-score-in-a-tree",
   "title": "Choose Edges to Maximize Score in a Tree",

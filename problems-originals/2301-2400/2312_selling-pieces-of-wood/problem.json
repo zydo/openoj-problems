@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2312,
   "slug": "selling-pieces-of-wood",
   "title": "Selling Pieces of Wood",

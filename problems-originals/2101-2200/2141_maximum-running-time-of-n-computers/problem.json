@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2141,
   "slug": "maximum-running-time-of-n-computers",
   "title": "Maximum Running Time of N Computers",

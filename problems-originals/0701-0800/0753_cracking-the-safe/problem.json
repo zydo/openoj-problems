@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 753,
   "slug": "cracking-the-safe",
   "title": "Cracking the Safe",

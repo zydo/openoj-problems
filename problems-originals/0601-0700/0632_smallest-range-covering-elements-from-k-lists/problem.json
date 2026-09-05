@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 632,
   "slug": "smallest-range-covering-elements-from-k-lists",
   "title": "Smallest Range Covering Elements from K Lists",

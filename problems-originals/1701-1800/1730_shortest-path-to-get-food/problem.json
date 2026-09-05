@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1730,
   "slug": "shortest-path-to-get-food",
   "title": "Shortest Path to Get Food",

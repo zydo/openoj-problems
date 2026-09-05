@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2435,
   "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
   "title": "Paths in Matrix Whose Sum Is Divisible by K",

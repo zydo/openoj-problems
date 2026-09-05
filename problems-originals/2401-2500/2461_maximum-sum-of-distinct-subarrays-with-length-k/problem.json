@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2461,
   "slug": "maximum-sum-of-distinct-subarrays-with-length-k",
   "title": "Maximum Sum of Distinct Subarrays With Length K",

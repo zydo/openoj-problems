@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2458,
   "slug": "height-of-binary-tree-after-subtree-removal-queries",
   "title": "Height of Binary Tree After Subtree Removal Queries",

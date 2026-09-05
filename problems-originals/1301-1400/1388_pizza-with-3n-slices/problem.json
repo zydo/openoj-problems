@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1388,
   "slug": "pizza-with-3n-slices",
   "title": "Pizza With 3n Slices",

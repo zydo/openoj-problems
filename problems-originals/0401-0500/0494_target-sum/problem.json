@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 494,
   "slug": "target-sum",
   "title": "Target Sum",

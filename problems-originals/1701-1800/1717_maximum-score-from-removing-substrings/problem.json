@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1717,
   "slug": "maximum-score-from-removing-substrings",
   "title": "Maximum Score From Removing Substrings",

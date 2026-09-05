@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 973,
   "slug": "k-closest-points-to-origin",
   "title": "K Closest Points to Origin",

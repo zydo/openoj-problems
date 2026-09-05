@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2425,
   "slug": "bitwise-xor-of-all-pairings",
   "title": "Bitwise XOR of All Pairings",

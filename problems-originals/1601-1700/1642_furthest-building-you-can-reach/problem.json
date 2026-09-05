@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1642,
   "slug": "furthest-building-you-can-reach",
   "title": "Furthest Building You Can Reach",

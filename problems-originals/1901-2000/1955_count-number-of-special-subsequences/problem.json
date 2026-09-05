@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1955,
   "slug": "count-number-of-special-subsequences",
   "title": "Count Number of Special Subsequences",

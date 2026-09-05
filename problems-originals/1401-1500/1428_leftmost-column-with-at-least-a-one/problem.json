@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1428,
   "slug": "leftmost-column-with-at-least-a-one",
   "title": "Leftmost Column with at Least a One",

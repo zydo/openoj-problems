@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1151,
   "slug": "minimum-swaps-to-group-all-1s-together",
   "title": "Minimum Swaps to Group All 1's Together",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 765,
   "slug": "couples-holding-hands",
   "title": "Couples Holding Hands",

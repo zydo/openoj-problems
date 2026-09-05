@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3026,
   "slug": "maximum-good-subarray-sum",
   "title": "Maximum Good Subarray Sum",

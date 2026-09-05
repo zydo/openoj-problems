@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3381,
   "slug": "maximum-subarray-sum-with-length-divisible-by-k",
   "title": "Maximum Subarray Sum With Length Divisible by K",

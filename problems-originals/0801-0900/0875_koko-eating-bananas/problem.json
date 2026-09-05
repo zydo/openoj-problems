@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 875,
   "slug": "koko-eating-bananas",
   "title": "Koko Eating Bananas",

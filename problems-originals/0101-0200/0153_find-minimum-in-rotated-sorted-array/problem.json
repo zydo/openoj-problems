@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 153,
   "slug": "find-minimum-in-rotated-sorted-array",
   "title": "Find Minimum in Rotated Sorted Array",

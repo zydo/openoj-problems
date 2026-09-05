@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2440,
   "slug": "create-components-with-same-value",
   "title": "Create Components With Same Value",

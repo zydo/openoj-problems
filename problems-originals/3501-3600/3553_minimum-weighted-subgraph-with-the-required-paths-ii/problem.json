@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3553,
   "slug": "minimum-weighted-subgraph-with-the-required-paths-ii",
   "title": "Minimum Weighted Subgraph With the Required Paths II",

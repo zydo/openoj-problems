@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 752,
   "slug": "open-the-lock",
   "title": "Open the Lock",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2537,
   "slug": "count-the-number-of-good-subarrays",
   "title": "Count the Number of Good Subarrays",

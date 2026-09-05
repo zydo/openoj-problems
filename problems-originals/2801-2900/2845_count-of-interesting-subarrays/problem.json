@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2845,
   "slug": "count-of-interesting-subarrays",
   "title": "Count of Interesting Subarrays",

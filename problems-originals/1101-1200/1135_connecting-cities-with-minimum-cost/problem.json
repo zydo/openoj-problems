@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1135,
   "slug": "connecting-cities-with-minimum-cost",
   "title": "Connecting Cities With Minimum Cost",

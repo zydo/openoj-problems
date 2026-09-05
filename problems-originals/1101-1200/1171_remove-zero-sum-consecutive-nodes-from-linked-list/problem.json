@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1171,
   "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
   "title": "Remove Zero Sum Consecutive Nodes from Linked List",

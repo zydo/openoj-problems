@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2410,
   "slug": "maximum-matching-of-players-with-trainers",
   "title": "Maximum Matching of Players With Trainers",

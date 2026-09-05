@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3448,
   "slug": "count-substrings-divisible-by-last-digit",
   "title": "Count Substrings Divisible By Last Digit",

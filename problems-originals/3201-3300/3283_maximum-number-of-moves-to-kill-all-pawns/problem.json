@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3283,
   "slug": "maximum-number-of-moves-to-kill-all-pawns",
   "title": "Maximum Number of Moves to Kill All Pawns",

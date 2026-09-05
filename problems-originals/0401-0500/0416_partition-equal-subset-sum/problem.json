@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 416,
   "slug": "partition-equal-subset-sum",
   "title": "Partition Equal Subset Sum",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2616,
   "slug": "minimize-the-maximum-difference-of-pairs",
   "title": "Minimize the Maximum Difference of Pairs",

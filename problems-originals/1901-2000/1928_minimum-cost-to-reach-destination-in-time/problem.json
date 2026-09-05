@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1928,
   "slug": "minimum-cost-to-reach-destination-in-time",
   "title": "Minimum Cost to Reach Destination in Time",

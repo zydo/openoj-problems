@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3116,
   "slug": "kth-smallest-amount-with-single-denomination-combination",
   "title": "Kth Smallest Amount With Single Denomination Combination",

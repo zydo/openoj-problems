@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "dijkstra_stops",
   "id": 787,
   "slug": "cheapest-flights-within-k-stops",
   "title": "Cheapest Flights Within K Stops",

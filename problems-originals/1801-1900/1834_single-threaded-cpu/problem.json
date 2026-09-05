@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1834,
   "slug": "single-threaded-cpu",
   "title": "Single-Threaded CPU",

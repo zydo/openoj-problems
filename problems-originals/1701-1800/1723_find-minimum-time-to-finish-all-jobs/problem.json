@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1723,
   "slug": "find-minimum-time-to-finish-all-jobs",
   "title": "Find Minimum Time to Finish All Jobs",

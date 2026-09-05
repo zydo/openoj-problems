@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3231,
   "slug": "minimum-number-of-increasing-subsequence-to-be-removed",
   "title": "Minimum Number of Increasing Subsequence to Be Removed",

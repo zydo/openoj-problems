@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2106,
   "slug": "maximum-fruits-harvested-after-at-most-k-steps",
   "title": "Maximum Fruits Harvested After at Most K Steps",

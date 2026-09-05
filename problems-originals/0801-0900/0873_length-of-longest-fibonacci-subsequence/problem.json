@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 873,
   "slug": "length-of-longest-fibonacci-subsequence",
   "title": "Length of Longest Fibonacci Subsequence",

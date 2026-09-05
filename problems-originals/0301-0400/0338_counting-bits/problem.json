@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "dp_lowest_bit",
   "id": 338,
   "slug": "counting-bits",
   "title": "Counting Bits",

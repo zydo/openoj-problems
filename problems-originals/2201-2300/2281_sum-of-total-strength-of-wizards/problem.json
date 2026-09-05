@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2281,
   "slug": "sum-of-total-strength-of-wizards",
   "title": "Sum of Total Strength of Wizards",

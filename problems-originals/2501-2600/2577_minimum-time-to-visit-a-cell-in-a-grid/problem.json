@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2577,
   "slug": "minimum-time-to-visit-a-cell-in-a-grid",
   "title": "Minimum Time to Visit a Cell In a Grid",

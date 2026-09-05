@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3877,
   "slug": "minimum-removals-to-achieve-target-xor",
   "title": "Minimum Removals to Achieve Target XOR",

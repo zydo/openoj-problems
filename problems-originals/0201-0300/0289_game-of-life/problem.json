@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "state_bits",
   "id": 289,
   "slug": "game-of-life",
   "title": "Game of Life",

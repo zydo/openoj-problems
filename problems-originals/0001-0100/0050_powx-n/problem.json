@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "fast_pow_iterative",
   "id": 50,
   "slug": "powx-n",
   "title": "Pow(x, n)",

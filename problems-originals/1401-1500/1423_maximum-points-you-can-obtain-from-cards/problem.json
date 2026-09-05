@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1423,
   "slug": "maximum-points-you-can-obtain-from-cards",
   "title": "Maximum Points You Can Obtain from Cards",

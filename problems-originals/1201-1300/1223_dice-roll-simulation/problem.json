@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1223,
   "slug": "dice-roll-simulation",
   "title": "Dice Roll Simulation",

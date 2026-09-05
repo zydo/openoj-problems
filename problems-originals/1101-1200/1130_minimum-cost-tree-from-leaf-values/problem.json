@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1130,
   "slug": "minimum-cost-tree-from-leaf-values",
   "title": "Minimum Cost Tree From Leaf Values",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2328,
   "slug": "number-of-increasing-paths-in-a-grid",
   "title": "Number of Increasing Paths in a Grid",

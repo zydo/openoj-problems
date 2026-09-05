@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2040,
   "slug": "kth-smallest-product-of-two-sorted-arrays",
   "title": "Kth Smallest Product of Two Sorted Arrays",

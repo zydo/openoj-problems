@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 774,
   "slug": "minimize-max-distance-to-gas-station",
   "title": "Minimize Max Distance to Gas Station",

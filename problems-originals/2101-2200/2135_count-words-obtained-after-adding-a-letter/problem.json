@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2135,
   "slug": "count-words-obtained-after-adding-a-letter",
   "title": "Count Words Obtained After Adding a Letter",

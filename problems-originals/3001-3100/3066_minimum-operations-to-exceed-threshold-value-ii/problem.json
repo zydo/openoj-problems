@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3066,
   "slug": "minimum-operations-to-exceed-threshold-value-ii",
   "title": "Minimum Operations to Exceed Threshold Value II",

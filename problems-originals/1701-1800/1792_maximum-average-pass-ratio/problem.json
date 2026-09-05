@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1792,
   "slug": "maximum-average-pass-ratio",
   "title": "Maximum Average Pass Ratio",

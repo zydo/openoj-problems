@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 471,
   "slug": "encode-string-with-shortest-length",
   "title": "Encode String with Shortest Length",

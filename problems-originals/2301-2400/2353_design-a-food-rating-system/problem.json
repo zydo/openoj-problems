@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2353,
   "slug": "design-a-food-rating-system",
   "title": "Design a Food Rating System",

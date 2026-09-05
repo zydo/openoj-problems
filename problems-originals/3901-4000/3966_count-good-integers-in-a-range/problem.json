@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3966,
   "slug": "count-good-integers-in-a-range",
   "title": "Count Good Integers in a Range",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1049,
   "slug": "last-stone-weight-ii",
   "title": "Last Stone Weight II",

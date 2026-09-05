@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2791,
   "slug": "count-paths-that-can-form-a-palindrome-in-a-tree",
   "title": "Count Paths That Can Form a Palindrome in a Tree",

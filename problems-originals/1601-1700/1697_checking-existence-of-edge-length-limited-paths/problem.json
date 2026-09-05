@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1697,
   "slug": "checking-existence-of-edge-length-limited-paths",
   "title": "Checking Existence of Edge Length Limited Paths",

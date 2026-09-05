@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3887,
   "slug": "incremental-even-weighted-cycle-queries",
   "title": "Incremental Even-Weighted Cycle Queries",

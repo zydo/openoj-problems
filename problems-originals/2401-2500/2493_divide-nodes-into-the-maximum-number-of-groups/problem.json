@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2493,
   "slug": "divide-nodes-into-the-maximum-number-of-groups",
   "title": "Divide Nodes Into the Maximum Number of Groups",

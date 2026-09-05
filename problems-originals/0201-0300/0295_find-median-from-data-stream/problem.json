@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 295,
   "slug": "find-median-from-data-stream",
   "title": "Find Median from Data Stream",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 262,
   "slug": "trips-and-users",
   "title": "Trips and Users",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2421,
   "slug": "number-of-good-paths",
   "title": "Number of Good Paths",

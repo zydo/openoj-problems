@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "dfs_color",
   "id": 886,
   "slug": "possible-bipartition",
   "title": "Possible Bipartition",

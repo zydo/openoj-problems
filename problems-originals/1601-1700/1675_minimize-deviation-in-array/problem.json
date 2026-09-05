@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1675,
   "slug": "minimize-deviation-in-array",
   "title": "Minimize Deviation in Array",

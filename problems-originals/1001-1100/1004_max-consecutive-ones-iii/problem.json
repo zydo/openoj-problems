@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1004,
   "slug": "max-consecutive-ones-iii",
   "title": "Max Consecutive Ones III",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 918,
   "slug": "maximum-sum-circular-subarray",
   "title": "Maximum Sum Circular Subarray",

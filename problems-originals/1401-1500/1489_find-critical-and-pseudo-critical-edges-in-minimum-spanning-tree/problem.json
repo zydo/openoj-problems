@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1489,
   "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
   "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",

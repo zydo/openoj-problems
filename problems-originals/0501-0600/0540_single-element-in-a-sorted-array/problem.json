@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 540,
   "slug": "single-element-in-a-sorted-array",
   "title": "Single Element in a Sorted Array",

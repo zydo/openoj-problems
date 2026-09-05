@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2111,
   "slug": "minimum-operations-to-make-the-array-k-increasing",
   "title": "Minimum Operations to Make the Array K-Increasing",

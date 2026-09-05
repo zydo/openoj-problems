@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1203,
   "slug": "sort-items-by-groups-respecting-dependencies",
   "title": "Sort Items by Groups Respecting Dependencies",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1497,
   "slug": "check-if-array-pairs-are-divisible-by-k",
   "title": "Check If Array Pairs Are Divisible by k",

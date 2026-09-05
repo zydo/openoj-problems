@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "dijkstra",
   "id": 1631,
   "slug": "path-with-minimum-effort",
   "title": "Path With Minimum Effort",

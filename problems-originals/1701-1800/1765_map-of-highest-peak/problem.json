@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1765,
   "slug": "map-of-highest-peak",
   "title": "Map of Highest Peak",

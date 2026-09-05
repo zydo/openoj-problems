@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 786,
   "slug": "k-th-smallest-prime-fraction",
   "title": "K-th Smallest Prime Fraction",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2355,
   "slug": "maximum-number-of-books-you-can-take",
   "title": "Maximum Number of Books You Can Take",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3276,
   "slug": "select-cells-in-grid-with-maximum-score",
   "title": "Select Cells in Grid With Maximum Score",

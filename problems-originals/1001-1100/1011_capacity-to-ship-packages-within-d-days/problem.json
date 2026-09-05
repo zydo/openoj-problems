@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1011,
   "slug": "capacity-to-ship-packages-within-d-days",
   "title": "Capacity To Ship Packages Within D Days",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3191,
   "slug": "minimum-operations-to-make-binary-array-elements-equal-to-one-i",
   "title": "Minimum Operations to Make Binary Array Elements Equal to One I",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1901,
   "slug": "find-a-peak-element-ii",
   "title": "Find a Peak Element II",

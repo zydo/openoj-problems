@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1960,
   "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
   "title": "Maximum Product of the Length of Two Palindromic Substrings",

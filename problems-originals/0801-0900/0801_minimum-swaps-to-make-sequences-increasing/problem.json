@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 801,
   "slug": "minimum-swaps-to-make-sequences-increasing",
   "title": "Minimum Swaps To Make Sequences Increasing",

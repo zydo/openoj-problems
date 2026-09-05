@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1483,
   "slug": "kth-ancestor-of-a-tree-node",
   "title": "Kth Ancestor of a Tree Node",

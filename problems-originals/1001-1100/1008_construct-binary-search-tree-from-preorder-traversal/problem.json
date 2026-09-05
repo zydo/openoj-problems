@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1008,
   "slug": "construct-binary-search-tree-from-preorder-traversal",
   "title": "Construct Binary Search Tree from Preorder Traversal",

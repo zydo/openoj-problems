@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 11,
   "slug": "container-with-most-water",
   "title": "Container With Most Water",

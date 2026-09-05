@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1300,
   "slug": "sum-of-mutated-array-closest-to-target",
   "title": "Sum of Mutated Array Closest to Target",

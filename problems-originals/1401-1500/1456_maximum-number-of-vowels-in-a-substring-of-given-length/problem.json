@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1456,
   "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
   "title": "Maximum Number of Vowels in a Substring of Given Length",

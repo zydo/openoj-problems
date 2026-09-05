@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1983,
   "slug": "widest-pair-of-indices-with-equal-range-sum",
   "title": "Widest Pair of Indices With Equal Range Sum",

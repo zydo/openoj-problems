@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 882,
   "slug": "reachable-nodes-in-subdivided-graph",
   "title": "Reachable Nodes In Subdivided Graph",

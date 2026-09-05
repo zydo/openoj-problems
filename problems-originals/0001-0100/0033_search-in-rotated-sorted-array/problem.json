@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 33,
   "slug": "search-in-rotated-sorted-array",
   "title": "Search in Rotated Sorted Array",

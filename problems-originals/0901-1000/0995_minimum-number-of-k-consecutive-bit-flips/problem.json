@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 995,
   "slug": "minimum-number-of-k-consecutive-bit-flips",
   "title": "Minimum Number of K Consecutive Bit Flips",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1125,
   "slug": "smallest-sufficient-team",
   "title": "Smallest Sufficient Team",

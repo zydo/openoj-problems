@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1627,
   "slug": "graph-connectivity-with-threshold",
   "title": "Graph Connectivity With Threshold",

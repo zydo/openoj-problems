@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1996,
   "slug": "the-number-of-weak-characters-in-the-game",
   "title": "The Number of Weak Characters in the Game",

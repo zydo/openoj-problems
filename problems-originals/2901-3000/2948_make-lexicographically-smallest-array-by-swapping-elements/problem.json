@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2948,
   "slug": "make-lexicographically-smallest-array-by-swapping-elements",
   "title": "Make Lexicographically Smallest Array by Swapping Elements",

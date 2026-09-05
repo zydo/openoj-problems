@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3072,
   "slug": "distribute-elements-into-two-arrays-ii",
   "title": "Distribute Elements Into Two Arrays II",

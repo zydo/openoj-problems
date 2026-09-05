@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2064,
   "slug": "minimized-maximum-of-products-distributed-to-any-store",
   "title": "Minimized Maximum of Products Distributed to Any Store",

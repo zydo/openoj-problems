@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 3145,
   "slug": "find-products-of-elements-of-big-array",
   "title": "Find Products of Elements of Big Array",

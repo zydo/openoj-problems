@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1970,
   "slug": "last-day-where-you-can-still-cross",
   "title": "Last Day Where You Can Still Cross",

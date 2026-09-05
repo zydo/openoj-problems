@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2127,
   "slug": "maximum-employees-to-be-invited-to-a-meeting",
   "title": "Maximum Employees to Be Invited to a Meeting",

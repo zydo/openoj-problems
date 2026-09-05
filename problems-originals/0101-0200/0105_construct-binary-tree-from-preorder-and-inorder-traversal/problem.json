@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 105,
   "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
   "title": "Construct Binary Tree from Preorder and Inorder Traversal",

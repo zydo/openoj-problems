@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2297,
   "slug": "jump-game-viii",
   "title": "Jump Game VIII",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 2836,
   "slug": "maximize-value-of-function-in-a-ball-passing-game",
   "title": "Maximize Value of Function in a Ball Passing Game",

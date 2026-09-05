@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1289,
   "slug": "minimum-falling-path-sum-ii",
   "title": "Minimum Falling Path Sum II",

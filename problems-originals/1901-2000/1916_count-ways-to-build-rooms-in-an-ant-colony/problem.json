@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1916,
   "slug": "count-ways-to-build-rooms-in-an-ant-colony",
   "title": "Count Ways to Build Rooms in an Ant Colony",

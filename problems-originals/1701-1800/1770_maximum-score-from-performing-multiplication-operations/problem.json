@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1770,
   "slug": "maximum-score-from-performing-multiplication-operations",
   "title": "Maximum Score from Performing Multiplication Operations",

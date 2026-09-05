@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 588,
   "slug": "design-in-memory-file-system",
   "title": "Design In-Memory File System",

@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "reference_solution": "",
   "id": 1466,
   "slug": "reorder-routes-to-make-all-paths-lead-to-the-city-zero",
   "title": "Reorder Routes to Make All Paths Lead to the City Zero",
