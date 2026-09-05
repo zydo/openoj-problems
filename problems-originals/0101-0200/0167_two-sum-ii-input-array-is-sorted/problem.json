@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "two_pointers",
   "id": 167,
   "slug": "two-sum-ii-input-array-is-sorted",
   "title": "Two Sum II - Input Array Is Sorted",

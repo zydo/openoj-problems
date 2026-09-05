@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "boyer_moore",
   "id": 169,
   "slug": "majority-element",
   "title": "Majority Element",
