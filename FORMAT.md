@@ -1,13 +1,13 @@
 # openoj-problems format
 
 A problem-set repository for [OpenOJ](https://github.com/zydo/openoj). Each
-problem is one directory under `problems/`, named `<zero-padded id>_<slug>`,
+problem is one directory under `problems-adapt/`, named `<zero-padded id>_<slug>`,
 inside an inclusive id-range shard directory of 100 problems
 (`<lo>-<hi>`, e.g. `0001-0100` for ids 1-100) — the directory name is
 the single source of the problem key:
 
 ```text
-problems/
+problems-adapt/
 └── 0001-0100/           inclusive id-range shards of 100
     └── 0001_pair-sum/
         ├── problem.json     machine data: metadata, invocation, limits

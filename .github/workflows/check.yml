@@ -27,9 +27,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Format check
-        run: openoj format --check problems
+        run: openoj format --check problems-adapt
       - name: Bundle static checks
-        run: python3 scripts/check.py --tree problems --skip-runtime
+        run: python3 scripts/check.py --tree problems-adapt --skip-runtime
 
   judge:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
@@ -91,13 +91,13 @@ jobs:
           set -e
           bundles=$(python3 - << 'PYEOF'
           import json
-          mapping = json.load(open("problems/MAPPING.json"))
+          mapping = json.load(open("problems-adapt/MAPPING.json"))
           shard = "${{ matrix.shard }}"
           low = int(shard.split("-")[0])
           for source, row in mapping.items():
               source_id = int(source.split("_", 1)[0])
               if (source_id - 1) // 100 * 100 + 1 == low:
-                  print(f"problems/{shard}/{row['adapted']}")
+                  print(f"problems-adapt/{shard}/{row['adapted']}")
           PYEOF
           )
           count=$(printf '%s\n' "$bundles" | grep -c . || true)

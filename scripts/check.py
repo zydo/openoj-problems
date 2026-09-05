@@ -48,7 +48,7 @@ import gen_starters  # noqa: E402
 from format import format_content  # noqa: E402 — starters are generator output + pinned formatting
 
 ROOT = Path(__file__).resolve().parent.parent
-PROBLEMS = ROOT / "problems"
+PROBLEMS = ROOT / "problems-adapt"
 BUNDLE_NAME = re.compile(r"^([0-9]{4,})_([a-z0-9]+(?:-[a-z0-9]+)*)$")
 
 
@@ -280,7 +280,7 @@ def check_bundle(bundle: Path) -> list[Failure]:
 
     # starters: regenerate from problem.json and compare byte-for-byte.
     # Python style follows provenance: the bettercode-derived slugs (the
-    # adapter set in problems/MAPPING.json) are modernized; everything
+    # adapter set in problems-adapt/MAPPING.json) are modernized; everything
     # extend-derived keeps the legacy annotations.
     gen_starters.set_python_style(
         "modern" if gen_starters.is_modern_python_slug(problem["slug"]) else "legacy"
@@ -593,7 +593,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--tree",
-        default="problems",
+        default="problems-adapt",
         help="which bundle tree to check, relative to the repo root (e.g. problems)",
     )
     parser.add_argument(

@@ -114,7 +114,7 @@ def _targets(arguments: list[str]) -> list[Path]:
         return [Path(argument).resolve() for argument in arguments]
     # default: every formattable file in the merged served tree.
     files: list[Path] = [ROOT / "FORMAT.md"]
-    files += sorted((ROOT / "problems").rglob("*"))
+    files += sorted((ROOT / "problems-adapt").rglob("*"))
     return [path for path in files if path.is_file()]
 
 

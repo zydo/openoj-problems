@@ -13,8 +13,8 @@ the actions/params and oracle protocols in every language, the schedule
 protocol in two.
 
 Usage:
-  gen_starters.py problems/0001-0100/0001_two-sum [ … ]  # default: all
-  gen_starters.py --check problems/…                     # diff, write nothing
+  gen_starters.py problems-adapt/0001-0100/0001_two-sum [ … ]  # default: all
+  gen_starters.py --check problems-adapt/…               # diff, write nothing
 """
 
 from __future__ import annotations
@@ -123,7 +123,7 @@ def _entry(invocation: dict, language: str) -> str:
 # extend-derived bundles were authored with; "modern" uses PEP 585/604
 # (list[int], X | None) and drops the typing import unless something
 # genuinely needs it. Provenance decides: the bettercode-derived slugs
-# (the adapter set in problems/MAPPING.json) are modern; everything
+# (the adapter set in problems-adapt/MAPPING.json) are modern; everything
 # extend-derived stays legacy — including the thirteen bundles whose
 # ids also exist in the bettercode set.
 PYTHON_STYLE = "legacy"
@@ -133,12 +133,12 @@ _modern_slugs: set[str] | None = None
 
 def is_modern_python_slug(slug: str) -> bool:
     """True for bettercode-derived bundles (modern starters). The adapter
-    set comes from problems/MAPPING.json, so the predicate works on the
+    set comes from problems-adapt/MAPPING.json, so the predicate works on the
     merged tree and after any future ledger update."""
     global _modern_slugs
     if _modern_slugs is None:
         mapping_path = (
-            Path(__file__).resolve().parent.parent / "problems" / "MAPPING.json"
+            Path(__file__).resolve().parent.parent / "problems-adapt" / "MAPPING.json"
         )
         mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
         _modern_slugs = {row["adapted"].split("_", 1)[1] for row in mapping.values()}
@@ -1241,7 +1241,7 @@ def main() -> None:
         # bundle dirs flat or inside the 100-id shards
         targets = sorted(
             child if (child / "problem.json").is_file() else sub
-            for tree in ("problems",)
+            for tree in ("problems-adapt",)
             for child in root.glob(f"{tree}/*")
             if child.is_dir()
             for sub in (

@@ -2,15 +2,15 @@
 
 The ids below are the bettercode-derived problems — the curated
 original-adapter set. Both merged trees share them: the adapted copies live
-under `problems/` (the served tree), the originals under
+under `problems-adapt/` (the adapted tree), the originals under
 `problems-originals/`. Every other id in either tree is extend-derived (the
 crawl corpus).
 
 Thirteen ids exist in BOTH subsets (the same source problem crawled into
-both corpora, adapted independently): in `problems/` they appear as two
+both corpora, adapted independently): in `problems-adapt/` they appear as two
 bundles with distinct slugs; in `problems-originals/` the extend-side
 original carries a `-crawl` slug suffix. Static checks treat the bettercode
-set as the adapter-slug set in `problems/MAPPING.json`.
+set as the adapter-slug set in `problems-adapt/MAPPING.json`.
 
 `0001`, `0002`, `0003`, `0004`, `0005`, `0010`, `0011`, `0015`, `0020`, `0021`, `0022`, `0023`, `0032`, `0033`, `0037`, `0039`
 `0041`, `0042`, `0049`, `0050`, `0051`, `0053`, `0055`, `0056`, `0062`, `0072`, `0075`, `0076`, `0084`, `0085`, `0102`, `0105`
