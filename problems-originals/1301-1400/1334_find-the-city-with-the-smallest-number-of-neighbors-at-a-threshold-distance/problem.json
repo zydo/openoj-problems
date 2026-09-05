@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "dijkstra_every_node",
   "id": 1334,
   "slug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
   "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",

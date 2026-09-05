@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "double_bfs",
   "id": 310,
   "slug": "minimum-height-trees",
   "title": "Minimum Height Trees",

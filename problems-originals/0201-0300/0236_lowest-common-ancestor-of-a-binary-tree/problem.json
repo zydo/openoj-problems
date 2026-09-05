@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "recursive_subtree_search",
   "id": 236,
   "slug": "lowest-common-ancestor-of-a-binary-tree",
   "title": "Lowest Common Ancestor of a Binary Tree",

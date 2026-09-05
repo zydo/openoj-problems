@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "rolling_bits",
   "id": 187,
   "slug": "repeated-dna-sequences",
   "title": "Repeated DNA Sequences",

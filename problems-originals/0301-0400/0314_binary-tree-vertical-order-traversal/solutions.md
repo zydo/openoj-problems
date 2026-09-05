@@ -1,5 +1,43 @@
 # Solutions — Binary Tree Vertical Order Traversal
 
+The answer is a total order on the nodes — columns left to right, rows top
+to bottom within a column, and the left-to-right reading order inside a
+shared cell — and the two approaches differ in when that order is realized.
+The depth-first walk collects a `(column, row, value)` record per node and
+hands the whole ordering question to one stable sort afterwards, paying
+`n log n` comparisons for the deferral. The breadth-first sweep instead
+realizes the order as the traversal runs: its queue emits nodes already in
+answer order, so each value joins its column as it is dequeued and no sort
+is ever paid.
+
+## Depth-first search, then one sort
+
+A root-first depth-first descent carries `(row, column)` coordinates down
+the tree: the root starts at `(0, 0)`, a left child is entered with its
+column one less than its parent's, a right child with one more, and every
+step drops one row. Each visited node appends one `(column, row, value)`
+record to a flat list — the walk keeps no answer structure at all, it only
+collects. Plain recursion is safe here: at most one hundred nodes means the
+descent never nests deeper than one hundred frames.
+
+One stable sort keyed on `(column, row)` then settles columns left to right
+and rows top to bottom, and the stability is load-bearing, because this
+statement's cell rule is reading order, not value order. Two nodes sharing
+a row and a column are cousins reached by mirrored zigzags, and a
+left-before-right walk visits same-depth nodes exactly in the statement's
+left-to-right reading order — so the stable sort preserves the walk order
+inside a cell. Sorting by value would silently swap such cousins whenever
+the left one carries the larger value, which the third example exercises:
+its `10` and `9` share a cell and must stay in reading order. The value
+therefore rides along as payload and never enters the key.
+
+With the records ordered, the answer is just runs of equal columns: each
+time the column changes a new group opens, and each record's value is
+appended to the open group.
+
+**Complexity:** `O(n log n)` time — the walk touches each node once and the
+sort dominates — and `O(n)` space for the records and the recursion frames.
+
 ## Breadth-first search with column indices
 
 Give every node a column: the root sits at column 0, a left child one column

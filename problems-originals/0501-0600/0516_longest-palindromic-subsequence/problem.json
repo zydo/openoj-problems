@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "lcs_reversed",
   "id": 516,
   "slug": "longest-palindromic-subsequence",
   "title": "Longest Palindromic Subsequence",

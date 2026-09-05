@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "bounds_recursion",
   "id": 255,
   "slug": "verify-preorder-sequence-in-binary-search-tree",
   "title": "Verify Preorder Sequence in Binary Search Tree",

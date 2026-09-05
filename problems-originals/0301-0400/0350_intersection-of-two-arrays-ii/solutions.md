@@ -1,5 +1,13 @@
 # Solutions — Intersection of Two Arrays II
 
+Both sweeps answer the same multiset question: a value belongs in the
+result exactly `min(count in nums1, count in nums2)` times, and the two
+approaches differ only in how they police that budget. The hash map makes
+it a lookup — count one array, then spend each value's remaining budget
+walking the other. Sorting gets the same answer from order alone: with
+both arrays ascending, two indexes meet every shared copy exactly where
+the sequences agree, and the result leaves the walk already sorted.
+
 ## Hash-map counts, then walk
 
 The intersection here is a multiset question: a value belongs in the result
@@ -25,3 +33,23 @@ chunk at a time, and pick from each chunk as it passes.
 
 **Complexity:** `O(n + m + k·log k)` time, `O(n)` space (n, m the input
 lengths, k the intersection's).
+
+## Sort both arrays, walk two pointers
+
+Sorting retires the map by giving both arrays the same shape: ascending
+values, so a shared copy can only live where the two orders agree. The
+code sorts `nums1` and `nums2` in place and keeps one index into each. At
+every step the smaller current value advances alone — nothing ahead on the
+other side can still match it — and when the two currents are equal, that
+value joins the result once and both indexes advance together.
+
+That tie step carries the whole min rule: every emission spends one copy of
+the value on each side, so a value occurring `p` times in `nums1` and `q`
+times in `nums2` is emitted exactly `min(p, q)` times before one of its two
+runs is spent. And because the walk visits values in ascending order, the
+picks leave the loop already sorted — the re-sort that pinned the hash-map
+walk's output disappears along with the map itself.
+
+**Complexity:** `O(n·log n + m·log m)` time, `O(1)` space beyond the
+output (n, m the input lengths; both sorts run in place and the walk
+allocates nothing else).

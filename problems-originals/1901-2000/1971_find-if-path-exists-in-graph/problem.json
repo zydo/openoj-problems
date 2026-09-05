@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "union_find",
   "id": 1971,
   "slug": "find-if-path-exists-in-graph",
   "title": "Find if Path Exists in Graph",

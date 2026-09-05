@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "fenwick_ranks",
   "id": 493,
   "slug": "reverse-pairs",
   "title": "Reverse Pairs",

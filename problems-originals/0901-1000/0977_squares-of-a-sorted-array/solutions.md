@@ -1,10 +1,32 @@
 # Solutions — Squares of a Sorted Array
 
-The input arrives sorted, and squaring keeps every magnitude while folding the
-number line at zero, so the largest remaining square always sits at one of the
-two ends of the unprocessed window — never inside it. Two pointers, one at
-each end, can therefore emit the answer from largest square to smallest
-without any sorting pass, meeting the follow-up's `O(n)` goal.
+Both approaches square the same values; they differ in where the order comes
+from. The direct reading never consults the input's arrangement: square every
+element in place, then let the language's sort produce it — a correct
+`O(n log n)` answer that leaves the constraints' one gift unused. The gift is
+real: `nums` arrives sorted, and squaring only folds the number line at zero,
+so the largest remaining square always sits at one of the two ends of the
+unprocessed window — never inside it. Two pointers, one at each end, can
+therefore emit the answer from largest square to smallest without any sorting
+pass, meeting the follow-up's `O(n)` goal.
+
+## Square and sort
+
+Take the statement at its word: the answer is the squares arranged in
+non-decreasing order, and a sort produces that from any input at all. Each
+value is squared — the sign dies in the squaring, so the negatives need no
+case of their own — and the squares are handed to the language's sort.
+Nothing reads the input's own arrangement: on an unsorted `nums` this code
+would behave identically.
+
+That indifference is exactly what it pays for. The sorted input already
+encodes the order the answer needs, but the sort rediscovers it from
+scratch, spending `O(n log n)` comparisons where a single merge of the two
+magnitude runs would do. Squares stay small — magnitudes are bounded by
+`10⁴`, so every square is at most `10⁸`, well inside 32-bit range — no
+comparison can overflow.
+
+**Complexity:** `O(n log n)` time, `O(n)` space.
 
 ## Two pointers from both ends
 

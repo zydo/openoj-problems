@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "height_probe_recursion",
   "id": 222,
   "slug": "count-complete-tree-nodes",
   "title": "Count Complete Tree Nodes",

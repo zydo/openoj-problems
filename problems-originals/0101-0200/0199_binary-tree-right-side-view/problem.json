@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "dfs_depth_first_seen",
   "id": 199,
   "slug": "binary-tree-right-side-view",
   "title": "Binary Tree Right Side View",

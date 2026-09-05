@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "sliding_window",
   "id": 340,
   "slug": "longest-substring-with-at-most-k-distinct-characters",
   "title": "Longest Substring with At Most K Distinct Characters",

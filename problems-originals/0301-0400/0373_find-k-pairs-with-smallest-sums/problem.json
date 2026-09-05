@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "min_heap",
   "id": 373,
   "slug": "find-k-pairs-with-smallest-sums",
   "title": "Find K Pairs with Smallest Sums",

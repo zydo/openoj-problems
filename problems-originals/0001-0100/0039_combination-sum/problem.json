@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "bottom_up",
   "id": 39,
   "slug": "combination-sum",
   "title": "Combination Sum",

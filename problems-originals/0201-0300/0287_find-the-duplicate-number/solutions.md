@@ -1,5 +1,46 @@
 # Solutions — Find the Duplicate Number
 
+Both approaches keep the statement's two promises — the array is only ever
+read, and the working storage is a couple of integers. The bisection leaves
+the array's layout alone and interrogates the value domain: with `n + 1`
+entries squeezed into `n` values, the count of entries at or below a
+threshold `x` exceeds `x` exactly when the repeat sits at or below `x`, and
+each halving of the range costs one full counting scan. Floyd's cycle
+detection makes the array carry the information instead — read as a linked
+list where cell `i` leads to cell `nums[i]`, the repeat is the loop's entry,
+and a two-speed pointer walk lands on it in a single linear chase.
+
+## Value Bisection
+
+The search space is the range `1..n`, not the array. Define `count(x)` as the
+number of entries whose value is at most `x`. Were every value `<= x` to occur
+at most once, `count(x)` could not exceed `x` — only `x` distinct values are
+available below the threshold — so `count(x) > x` certifies that the repeat
+lies at or below `x`. The converse holds too: once the repeat `d` is `<= x`,
+every entry above `x` comes from a value occurring at most once (the one
+repeat is already below the threshold), so those entries number at most
+`n - x`, forcing `count(x) >= n + 1 - (n - x) = x + 1`. The predicate is
+therefore exact — `count(x) > x` if and only if `d <= x` — and monotone in
+`x`, precisely the shape binary search needs.
+
+The bisection maintains `lo <= d <= hi`, opening at `1` and `n` (where
+`count(n) = n + 1` makes the predicate true outright). Each step takes
+`mid = (lo + hi) / 2`, counts the entries at or below it in one pass, and
+retires the half the count acquits: an excess sends `hi` down to `mid`, a
+shortfall pushes `lo` past it. After about `log2 n` halvings the bounds meet,
+and the value they meet on is the repeat.
+
+On `[2,5,1,4,2,3]` with `n = 5`: `count(3) = 4 > 3`, so `hi = 3`;
+`count(2) = 3 > 2`, so `hi = 2`; `count(1) = 1`, so `lo = 2`; the bounds have
+met on 2, the repeated value.
+
+Neither restriction is strained. The scan only compares and counts — nothing
+is written, ever — and the storage is two bounds plus a running counter, none
+of which grows with `n`. The price of refusing the pointer chase is the extra
+log factor: every halving re-reads the whole array.
+
+**Complexity:** `O(n log n)` time, `O(1)` space.
+
 ## Floyd's Cycle Detection (Linked-List View)
 
 The key reframing is to treat the array as a function from indices to indices: position `i` "points to" position `nums[i]`. Since there are `n + 1` positions but every value lies in `[1, n]`, following these pointers must eventually revisit a position — the sequence enters a cycle, and the duplicate value is precisely the cycle's entry point, because two different indices `i` and `j` with `nums[i] == nums[j] == d` both point into node `d`.

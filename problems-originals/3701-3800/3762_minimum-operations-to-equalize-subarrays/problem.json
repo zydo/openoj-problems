@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "persistent_segtree",
   "id": 3762,
   "slug": "minimum-operations-to-equalize-subarrays",
   "title": "Minimum Operations to Equalize Subarrays",

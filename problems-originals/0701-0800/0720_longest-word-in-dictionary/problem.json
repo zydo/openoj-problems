@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "trie_dfs",
   "id": 720,
   "slug": "longest-word-in-dictionary",
   "title": "Longest Word in Dictionary",

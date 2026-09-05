@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "hash_set",
   "id": 217,
   "slug": "contains-duplicate",
   "title": "Contains Duplicate",

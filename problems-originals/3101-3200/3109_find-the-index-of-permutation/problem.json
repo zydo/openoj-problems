@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "lehmer_merge",
   "id": 3109,
   "slug": "find-the-index-of-permutation",
   "title": "Find the Index of Permutation",

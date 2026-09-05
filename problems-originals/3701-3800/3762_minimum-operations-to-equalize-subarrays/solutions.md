@@ -8,7 +8,11 @@ remainders. Second, within such a run each element `nums[i]` sits `k *
 (nums[i] / k)` above the common residue, so equalizing the subarray means
 driving all the quotients `nums[i] / k` to one value with unit moves, and
 the cheapest target for that is any median of the quotients. What remains
-is bookkeeping: find the run containing the window, then price the moves.
+is bookkeeping: find the run containing the window, then price the moves —
+the merge sort tree by decomposing the window into pre-sorted nodes and
+binary searching the quotient value, the persistent segment tree by
+walking two prefix versions of a value tree straight down to the median,
+collecting the cost on the way.
 
 ## Merge Sort Tree Median Cost
 
@@ -44,3 +48,39 @@ two questions with the same asymptotics; the tree here keeps everything
 in plain arrays and rebuilds nothing per query.
 
 **Complexity:** `O(n log n + q log² n)` time, `O(n log n)` space.
+
+## Persistent Segment Tree
+
+A merge sort tree re-sorts index ranges to answer value questions; a
+persistent segment tree counts values directly. Compress the quotients to
+their distinct values and give every prefix its own segment tree over that
+value domain: version `i` counts, at each value, how many of `nums[0..i-1]`
+carry it, and version `0` is the empty tree. The `n + 1` versions never
+duplicate whole trees — inserting element `i` path-copies the single
+root-to-leaf route of its value into fresh nodes, leaving every other node
+shared with version `i - 1` — so all versions together cost `O(n log n)`
+nodes, and version `r + 1` minus version `l` is exactly the window
+`[l, r]`.
+
+The difference of two versions is read with one simultaneous walk of the
+two roots down the value domain, and that one walk answers both questions
+at once. At each node the left children's counts subtract to the number of
+window elements in the lower half of values: if that already covers the
+lower-median rank `(m + 1) / 2`, the median lies to the left; otherwise
+the rank is spent there, the half's count and value sum are banked as
+everything strictly below the median, and the walk steps right. The leaf
+it lands on names the median, and the banked prefix plus the root-level
+difference of the versions' sums price both halves with no second pass:
+elements below the median each climb by their shortfall
+(`median * below - sum_below`), elements at or above each pay their excess
+(`(window_sum - sum_below) - median * (m - below)`), and equals contribute
+nothing. Infeasible windows never reach the tree — the same remainder-run
+marks reject them first, and the totals stay far inside 64 bits.
+
+Building the versions costs `O(n log n)` time and space — one copied
+`O(log n)` route per element — and each query is a single `O(log n)`
+descent: the value search is the walk itself rather than a binary search
+over the quotient domain wrapped around a decomposition, so the extra
+logarithmic factor per query goes away.
+
+**Complexity:** `O(n log n + q log n)` time, `O(n log n)` space.

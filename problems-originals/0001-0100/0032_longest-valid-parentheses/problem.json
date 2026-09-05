@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "run_length_dp",
   "id": 32,
   "slug": "longest-valid-parentheses",
   "title": "Longest Valid Parentheses",

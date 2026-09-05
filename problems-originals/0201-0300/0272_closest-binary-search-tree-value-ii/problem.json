@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "two_stack_expansion",
   "id": 272,
   "slug": "closest-binary-search-tree-value-ii",
   "title": "Closest Binary Search Tree Value II",

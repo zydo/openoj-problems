@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "snowball_swap",
   "id": 283,
   "slug": "move-zeroes",
   "title": "Move Zeroes",

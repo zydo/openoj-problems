@@ -1,5 +1,13 @@
 # Solutions — Construct Binary Tree from Preorder and Inorder Traversal
 
+Both reconstructions are driven by the same reading of the two arrays:
+preorder names a subtree's root before its descendants, and inorder places
+that root between its two subtrees. The recursive split asks, per subtree,
+"where does my root sit in inorder?" and needs a hash map to answer fast.
+The iterative stack asks the converse question — "is the node I just built
+due yet in inorder?" — and needs no map at all, because a single cursor
+walking inorder detects the moment each left descent finishes.
+
 ## Divide and Conquer with an Inorder Index Map
 
 The first unconsumed value of `preorder` is always the root of the subtree
@@ -28,3 +36,35 @@ one split point.
 **Complexity:** `O(n)` time, `O(n)` space — the index map holds `n`
 entries and the recursion stack reaches tree height `h`, which is `O(n)`
 in the worst case of a degenerate chain.
+
+## Iterative Stack
+
+This one consumes `preorder` in a plain loop, one value at a time, and
+keeps the _spine_: the chain of already-built nodes whose left sides may
+still be growing and whose right child is still pending. A cursor into
+`inorder` marks the next entry awaiting its turn — and since inorder lists
+left subtree, root, right, a spine top equal to `inorder[cursor]` means
+exactly one thing: that node's entire left side is finished, because
+everything in it has already come up in inorder.
+
+So each new preorder value faces a two-way test. If the spine top is not
+yet due, the value is the top's left child — descend, push, continue. If
+the top is due, pop it (it will never receive another left descendant) and
+keep popping while the exposed ancestor is due too, advancing the cursor
+per pop; the new value becomes the right child of the deepest node popped,
+which is precisely the node whose left side that run of pops just closed.
+On the worked example, 1 becomes 5's left child; 9 arrives with 1 due, and
+popping 1 exposes 5 — also due — so 9 becomes 5's right child; then 7
+descends left off 9, and 12 arrives with 7 due, then 9 due, landing as 9's
+right child.
+
+Every value is pushed once, popped at most once, and the cursor only ever
+advances — a linear sweep with no map at all, the inorder array itself
+serving as the bookkeeping. The spine is the only extra storage, and it is
+exactly the right-most path of the partially built tree, so `O(h)` entries
+at any moment. (The Rust port, unable to keep mutable aliases along that
+path, records the same decisions in a slot arena — children always taking
+higher slots than parents — and assembles the owned boxes bottom-up from
+it.)
+
+**Complexity:** `O(n)` time, `O(h)` space beyond the output tree.

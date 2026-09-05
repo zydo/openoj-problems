@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "bfs",
   "id": 261,
   "slug": "graph-valid-tree",
   "title": "Graph Valid Tree",

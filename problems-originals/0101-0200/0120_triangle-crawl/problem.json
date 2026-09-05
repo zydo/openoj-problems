@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "bottom_up",
   "id": 120,
   "slug": "triangle-crawl",
   "title": "Triangle",

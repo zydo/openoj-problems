@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "prim_heap",
   "id": 1135,
   "slug": "connecting-cities-with-minimum-cost",
   "title": "Connecting Cities With Minimum Cost",

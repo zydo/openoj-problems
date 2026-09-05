@@ -4,9 +4,39 @@ Every marking is a wall segment running between two corners of its
 square, so a region is one connected piece of empty space once all the
 walls are up — and counting regions is a connectivity question about a
 layout the input only implies. The walls live below square resolution:
-two open areas can meet around a corner as well as along an edge. The
-productive move is to raise the resolution just enough — quarter every
-square — and track the pieces with a union-find.
+two open areas can meet around a corner as well as along an edge, so any
+method has to raise the resolution before it can count. The direct way
+is to redraw the board as a picture: blow each square up into a 3x3
+block, paint the wall onto that block's diagonal, and flood fill the
+pixels that stay open. The sharper way keeps no picture at all — quarter
+every square into four triangles and let a union-find record which
+quarters touch.
+
+## Upscale each square 3x, then flood fill the open pixels
+
+Redraw the board at triple resolution: square `(i, j)` becomes the 3x3
+block of pixels rows `3i .. 3i + 2`, columns `3j .. 3j + 2`, and its
+marking is painted as blocked pixels down one of the block's diagonals —
+a `/` blocks `(3i, 3j + 2)`, `(3i + 1, 3j + 1)`, `(3i + 2, 3j)`, a `\`
+blocks `(3i, 3j)`, `(3i + 1, 3j + 1)`, `(3i + 2, 3j + 2)`, and a blank
+blocks nothing. Regions are then simply the connected components of the
+open pixels under ordinary four-way adjacency, which an explicit-stack
+flood fill counts: sweep the `3n x 3n` picture, and every time an open
+pixel has not been seen yet, start a fill from it, mark everything it
+reaches, and add one to the tally.
+
+Three is the smallest scale that keeps the geometry honest. A wall must
+separate the two halves of its own square, which one blocked pixel per
+row of the block already achieves; but a wall must _not_ separate open
+areas that merely touch at a shared corner of the board, and at scale 3
+the pixel beside a diagonal's end is still open, so a path can slip
+around the corner exactly as the statement allows. Scale 2 fails that
+second test — the two blocked pixels of a `\` block would seal the
+corner shut — and anything larger than 3 only costs more pixels. The
+`9n²` pixels are each pushed and popped at most once, so the fill is
+linear in the picture and the whole method runs in `O(n²)`.
+
+**Complexity:** `O(n²)` time, `O(n²)` space.
 
 ## Quarter each square, then union every pair of triangles that touch
 
