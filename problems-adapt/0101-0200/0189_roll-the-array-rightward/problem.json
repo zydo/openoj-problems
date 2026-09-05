@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "cyclic_replacement",
   "id": 189,
   "slug": "roll-the-array-rightward",
   "title": "Roll The Array Rightward",

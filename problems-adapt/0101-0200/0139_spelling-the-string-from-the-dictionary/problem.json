@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "reference_solution": "",
+  "reference_solution": "trie_walk",
   "id": 139,
   "slug": "spelling-the-string-from-the-dictionary",
   "title": "Spelling The String From The Dictionary",
