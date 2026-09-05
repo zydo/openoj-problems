@@ -1,5 +1,40 @@
 # Solutions — Connected Stone Removal
 
+Both routes answer one question — into how many row-and-column-connected
+components do the stones fall — and differ only in how they find it. The
+depth-first walk makes the links explicit: bucket the stone indices by row
+and by column, then search out from each stone not yet reached, swallowing
+a whole shared line at a time. Union-find keeps no buckets and no walk,
+merging each stone on arrival into the class its row and its column already
+hold, so one sweep and one pass over the roots settle the count with the
+smaller constants.
+
+## Depth-first search over components
+
+Two stones are linked when they share a row or a column, and the linked
+components are exactly what the moves see. Inside a component of `k`
+stones, `k - 1` removals are always available — always take a stone that
+still has a neighbor on the board, and only the component's last stone runs
+out of company — while no move ever reaches across from one component to
+another. The answer is therefore `n` minus the number of components, and
+counting them is the whole task.
+
+The search finds them directly. One pass buckets the stone indices by row
+and by column, so every stone sits in exactly one row bucket and one column
+bucket and the two maps together hold `2n` entries. A stack-driven
+depth-first walk then starts at each stone not yet reached, counts one new
+component for it, and expands every stone it pops through that stone's row
+bucket and column bucket, marking and pushing whatever it finds unvisited.
+
+Popping a bucket as it is expanded is what keeps the walk linear: a row of
+`m` stones is scanned once, when the first of its stones comes off the
+stack, and never again — left in place, that crowded line would be
+rescanned by each of its `m` members in turn and the walk would degrade to
+`O(n²)`. Every stone is pushed once and every bucket is scanned once; the
+buckets and the visited flags are the only storage.
+
+**Complexity:** `O(n)` time, `O(n)` space.
+
 ## Union-find over rows and columns
 
 Call two stones connected when a chain of shared rows and columns joins
