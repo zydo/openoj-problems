@@ -25,9 +25,9 @@ starters, and recommended solutions in every offered language
   covered by CI.
 - `problems` — a **symlink** naming whichever tree the judge serves;
   the app takes the repository's `problems/` subdirectory as its
-  package root. It currently points at `problems-adapt` (the
-  originals' statements are the legacy curated text, so the adapted
-  tree remains what the site should serve). CI,
+  package root. It points at `problems-originals` as of
+  2026-09-05, the whole tree being schema-2 serveable since the 838
+  bettercode-era manifests were backfilled. CI,
   `scripts/`, and the authoring loop always address `problems-adapt`
   by name, never through the symlink.
 
