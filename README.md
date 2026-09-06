@@ -59,7 +59,7 @@ modern (PEP 585/604) annotations, extend-derived bundles the original
    ```bash
    OPENOJ_PROBLEMS_PATH=$PWD/problems-adapt OPENOJ_PROBLEMS=/problems \
      docker compose up -d --build api web runner
-   python3 scripts/check.py --problems=all --api http://localhost:8080
+   python3 scripts/check.py --problems=all --api http://localhost:8081
    ```
 
 ## CI

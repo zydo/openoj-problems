@@ -1,6 +1,6 @@
 # Mapping — adapted problems to their sources
 
-Ledger for the bettercode-derived subset of `problems/` (the marker file `BETTERCODE-SUBSET.md` lists the ids). Ids are the original bettercode ids since the 2026-09 renumber revert; maintain the ledger by hand — the generator script no longer exists.
+Ledger for the bettercode-derived subset of `problems-adapt/` (the marker file `BETTERCODE-SUBSET.md` lists the ids). Ids are the original bettercode ids since the 2026-09 renumber revert; maintain the ledger by hand — the generator script no longer exists.
 
 | ours                                                       | source                                                                             | old API → new API                                                                                                                                                                                                                                                             | kind                      |
 | ---------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |

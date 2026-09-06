@@ -39,7 +39,7 @@ Solutions are authored on top of the generated starters.
   "id": 1,
   "slug": "two-sum",
   "title": "Two Sum",
-  "difficulty": "H1",
+  "difficulty": "Easy",
   "tags": ["Array", "Hash Table"],
   "topics": ["Array", "Hash Table"],
   "type": "Algorithms",
@@ -204,7 +204,7 @@ Pure prose, one required grammar:
 ## Description                  required
 ### Example N                   required (N counts from 1), a ```text block
 ### Constraints                 required, bullet list (#### Constraint N optional)
-### Follow up                   optional
+### Follow-up                  optional
 ## Hints                        optional
 ### Hint 1, ### Hint 2, …       hints, when present, use this form
 ````
@@ -236,8 +236,9 @@ image in CI, or from a sibling openoj checkout locally (`OPENOJ_RUNNER_DIR`
 to point elsewhere). Generation (`gen_starters.py`), checking
 (`check.py`), CI, the editor's Format button, and the `openoj format` CLI
 all format through that single module, so output is byte-identical
-everywhere. This repo deliberately carries no formatter pins or
-`node_modules` of its own.
+everywhere. This repo deliberately tracks no formatter pins or
+`node_modules` of its own (a gitignored `node_modules/.bin` may exist
+for sibling-checkout formatting runs).
 
 | Files    | Formatter                                 | Language key in formatters.py |
 | -------- | ----------------------------------------- | ----------------------------- |
@@ -249,6 +250,7 @@ everywhere. This repo deliberately carries no formatter pins or
 | `*.ts`   | `prettier`                                | `typescript`                  |
 | `*.java` | `prettier` + `prettier-plugin-java`       | `java`                        |
 | `*.sql`  | `sql-formatter` (sqlite dialect)          | `sql`                         |
+| `*.sh`   | `shfmt` (`-ln bash -i 4`)                 | `shell`                       |
 | `*.json` | canonical 2-space JSON + trailing newline | `json`                        |
 | `*.md`   | `prettier` (`proseWrap: preserve`)        | `markdown`                    |
 
@@ -259,7 +261,7 @@ from the image:
 
 ```bash
 docker run --rm --user 0:0 -v "$PWD":/repo:rw \
-  ghcr.io/zydo/openoj:latest openoj format --check /repo
+  ghcr.io/zydo/openoj:latest openoj format --check /repo/problems-adapt /repo/FORMAT.md
 ```
 
 When you add or edit a solution, run the formatter before pushing — CI
@@ -276,5 +278,8 @@ The static tier (bundle completeness, schema conformance, statement grammar,
 duplicate ids/slugs, `solution.* ⊇ starter.*`, starter generator round-trip)
 always runs over the whole set regardless of the filter. The runtime tier
 (executing each selected problem's solutions against its cases through
-OpenOJ) runs only on the selected problems. CI passes the changed problem
-keys from the push's diff.
+OpenOJ) runs only on the selected problems. CI runs the static tier
+over the whole `problems-adapt/` tree on every push (with the format
+check), and a judge sweep of the bettercode-derived subset on demand
+and weekly; extend-derived bundles are judged out-of-band via openoj's
+`scripts/verify_solution.py`.
