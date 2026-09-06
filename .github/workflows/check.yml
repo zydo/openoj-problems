@@ -18,6 +18,12 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  # a scheduled sweep overlapping a manual dispatch would double 41 heavy
+  # container jobs; queue behind it instead
+  group: judge-${{ github.event_name == 'schedule' && 'schedule' || github.ref }}
+  cancel-in-progress: false
+
 jobs:
   static:
     runs-on: ubuntu-latest
