@@ -15,10 +15,10 @@ class Solution {
   public:
     vector<vector<int>> fencePoints(vector<vector<int>> &posts) {
         vector<pair<int, int>> unique;
-        for (auto &t : unique)
+        for (auto &t : posts)
             unique.push_back({t[0], t[1]});
         sort(unique.begin(), unique.end());
-        unique.erase(unique(unique.begin(), unique.end()), unique.end());
+        unique.erase(std::unique(unique.begin(), unique.end()), unique.end());
         if (unique.size() <= 1)
             return toVec(unique);
 
