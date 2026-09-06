@@ -15,17 +15,16 @@ Static (always runs over the whole set, regardless of --problems):
   - starters regenerate exactly from problem.json (gen_starters --check)
 
 Runtime (--problems selection; needs a running OpenOJ serving this repo,
-passed as --api, default http://localhost:8080):
+passed as --api, default http://localhost:8081):
   - every solution is submitted through the judge and must be ACCEPTED
     against every case in cases.json
 
 Usage:
-  check.py --problems=all [--skip-runtime] [--api http://localhost:8080]
-  check.py --problems=0001_two-sum,0002_add-two-numbers
-  check.py --tree problems --skip-runtime                # static tier over a tree
-  check.py --runtime-only --problems=…            # CI runtime job (static
-                                                  # tier runs separately in
-                                                  # the formatter container)
+  check.py --problems=all [--skip-runtime] [--api http://localhost:8081]
+  check.py --problems=0001_pair-sum,0002_add-digit-lists   # bare bundle keys
+  check.py --tree problems-originals --skip-runtime   # static tier over a tree
+  check.py --runtime-only --problems=…            # judge sweep, static tier
+                                                  # already run separately
 
 The static tier checks bundle structure and metadata; the runtime tier
 additionally submits the canonical solution through the judge against
@@ -458,9 +457,10 @@ def repo_root_failures() -> list[Failure]:
     return failures
 
 
-def static_tier() -> tuple[list[Failure], dict[str, dict]]:
+def static_tier() -> tuple[list[Failure], dict[str, dict], dict[str, Path]]:
     failures: list[Failure] = list(repo_root_failures())
     catalog: dict[str, dict] = {}
+    paths: dict[str, Path] = {}
     bundles = bundle_dirs(PROBLEMS)
     seen_ids: dict[int, tuple[str, dict]] = {}
     seen_slugs: dict[str, str] = {}
@@ -473,10 +473,13 @@ def static_tier() -> tuple[list[Failure], dict[str, dict]]:
                 first_name, first = seen_ids[problem["id"]]
                 # Thirteen source problems exist in both corpora and were
                 # adapted twice; a shared id is legitimate exactly when the
-                # two bundles come from different provenances.
+                # two bundles come from different provenances (one modern,
+                # one legacy) or, in the originals tree, when exactly one of
+                # the twins carries the `-crawl` suffix.
+                one_crawl = problem["slug"].endswith("-crawl") != first["slug"].endswith("-crawl")
                 if gen_starters.is_modern_python_slug(
                     problem["slug"]
-                ) == gen_starters.is_modern_python_slug(first["slug"]):
+                ) == gen_starters.is_modern_python_slug(first["slug"]) and not one_crawl:
                     failures.append(
                         Failure(
                             bundle.name,
@@ -500,9 +503,10 @@ def static_tier() -> tuple[list[Failure], dict[str, dict]]:
             else:
                 seen_slugs[problem["slug"]] = bundle.name
             catalog[bundle.name] = problem
+            paths[bundle.name] = bundle
         except (json.JSONDecodeError, OSError, KeyError):
             pass
-    return failures, catalog
+    return failures, catalog, paths
 
 
 def _open_session(api: str) -> str:
@@ -534,7 +538,7 @@ def submit(api: str, slug: str, language: str, code: str, session: str) -> dict:
 
 
 def runtime_tier(
-    selected: list[str], catalog: dict[str, dict], api: str
+    selected: list[str], catalog: dict[str, dict], api: str, paths: dict[str, Path]
 ) -> list[Failure]:
     failures: list[Failure] = []
     language_for = {
@@ -545,9 +549,12 @@ def runtime_tier(
     except Exception as error:  # noqa: BLE001
         return [Failure("session", f"could not open a judge session: {error}")]
     for position, key in enumerate(selected, start=1):
-        bundle = PROBLEMS / key
+        # the tree is sharded: the catalog carries each bundle's resolved
+        # directory (a bare PROBLEMS/key join would miss every shard)
+        bundle = paths.get(key)
         problem = catalog.get(key)
-        if problem is None:
+        if bundle is None or problem is None:
+            print(f"  [{position}/{len(selected)}] {key} skipped (not in catalog)")
             continue
         for starter in sorted(bundle.glob("starter.*")):
             language = language_for.get(starter.name[len("starter.") :])
@@ -606,8 +613,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--api",
-        default="http://localhost:8080",
-        help="OpenOJ base URL for the runtime tier",
+        default="http://localhost:8081",
+        help="OpenOJ base URL for the runtime tier (compose publishes 8081)",
     )
     arguments = parser.parse_args()
 
@@ -621,11 +628,13 @@ def main() -> None:
         raise SystemExit("--runtime-only and --skip-runtime together check nothing")
     if arguments.runtime_only:
         catalog = {}
+        paths = {}
         for bundle in bundle_dirs(PROBLEMS):
             try:
                 catalog[bundle.name] = json.loads(
                     (bundle / "problem.json").read_text(encoding="utf-8")
                 )
+                paths[bundle.name] = bundle
             except (json.JSONDecodeError, OSError):
                 print(
                     f"  FAIL {bundle.name}: unreadable problem.json (the static tier reports details)"
@@ -633,7 +642,7 @@ def main() -> None:
                 failures.append(Failure(bundle.name, "unreadable problem.json"))
     else:
         print(f"static tier: checking {len(bundle_dirs(PROBLEMS))} bundles")
-        failures, catalog = static_tier()
+        failures, catalog, paths = static_tier()
         for failure in failures:
             print(f"  FAIL {failure}")
         print(f"static tier: {len(failures)} failures")
@@ -654,7 +663,7 @@ def main() -> None:
         print(
             f"runtime tier: judging {len(selected)} selected problems against {arguments.api}"
         )
-        runtime_failures = runtime_tier(selected, catalog, arguments.api)
+        runtime_failures = runtime_tier(selected, catalog, arguments.api, paths)
         for failure in runtime_failures:
             print(f"  FAIL {failure}")
         failures += runtime_failures

@@ -112,7 +112,8 @@ def format_content(extension: str, content: str, tolerant: bool = True) -> str:
 def _targets(arguments: list[str]) -> list[Path]:
     if arguments:
         return [Path(argument).resolve() for argument in arguments]
-    # default: every formattable file in the merged served tree.
+    # default: every formattable file under FORMAT.md + the adapted tree
+    # (the bank's CI-gated set).
     files: list[Path] = [ROOT / "FORMAT.md"]
     files += sorted((ROOT / "problems-adapt").rglob("*"))
     return [path for path in files if path.is_file()]
@@ -150,7 +151,11 @@ def main() -> None:
             )
             if new_content != content:
                 if arguments.check:
-                    unformatted.append(path.relative_to(ROOT))
+                    try:
+                        unformatted.append(path.relative_to(ROOT))
+                    except ValueError:
+                        # a target outside the repo still gets reported
+                        unformatted.append(path)
                 else:
                     path.write_text(new_content, encoding="utf-8")
                     formatted_count += 1
