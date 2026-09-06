@@ -5,7 +5,10 @@
   "slug": "rename-columns",
   "title": "Rename Columns",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

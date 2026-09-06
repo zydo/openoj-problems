@@ -5,7 +5,9 @@
   "slug": "partial-function-with-placeholders",
   "title": "Partial Function with Placeholders",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

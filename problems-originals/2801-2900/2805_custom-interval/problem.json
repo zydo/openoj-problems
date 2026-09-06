@@ -5,7 +5,10 @@
   "slug": "custom-interval",
   "title": "Custom Interval",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Simulation"
+  ],
   "topics": [
     "Concurrency"
   ],

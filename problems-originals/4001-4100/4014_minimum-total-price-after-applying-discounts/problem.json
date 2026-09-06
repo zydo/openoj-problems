@@ -5,7 +5,11 @@
   "slug": "minimum-total-price-after-applying-discounts",
   "title": "Minimum Total Price After Applying Discounts",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
   "topics": [
     "Greedy",
     "Sorting",

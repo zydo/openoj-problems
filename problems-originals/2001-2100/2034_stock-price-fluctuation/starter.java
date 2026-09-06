@@ -1,22 +1,12 @@
 class StockPrice {
 
-    public StockPrice() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public StockPrice() {}
 
-    public void update(int timestamp, int price) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public void update(int timestamp, int price) {}
 
-    public int current() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int current() {}
 
-    public int maximum() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int maximum() {}
 
-    public int minimum() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int minimum() {}
 }

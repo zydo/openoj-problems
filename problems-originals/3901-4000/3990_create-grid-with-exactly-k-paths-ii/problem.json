@@ -5,7 +5,11 @@
   "slug": "create-grid-with-exactly-k-paths-ii",
   "title": "Create Grid With Exactly K Paths II",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Math",
+    "Matrix",
+    "Bit Manipulation"
+  ],
   "topics": [
     "Math",
     "Greedy",

@@ -5,7 +5,10 @@
   "slug": "inversion-of-object",
   "title": "Inversion of Object",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Hash Table"
+  ],
   "topics": [
     "Array",
     "Hash Table"

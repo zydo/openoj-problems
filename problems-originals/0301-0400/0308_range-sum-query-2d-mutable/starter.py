@@ -2,10 +2,10 @@ from typing import List, Optional
 
 
 class NumMatrix:
-    def __init__(self, matrix: List[List[int]]) -> None:
+    def __init__(self, matrix: List[List[int]]):
         raise NotImplementedError("TODO")
 
-    def update(self, row: int, col: int, val: int) -> None:
+    def update(self, row: int, col: int, val: int):
         raise NotImplementedError("TODO")
 
     def sumRegion(self, row1: int, col1: int, row2: int, col2: int) -> int:

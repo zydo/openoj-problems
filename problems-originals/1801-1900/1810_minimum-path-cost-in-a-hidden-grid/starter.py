@@ -2,5 +2,5 @@ from typing import List, Optional
 
 
 class Solution:
-    def findMinimumPath(self, master: GridMaster) -> int:
+    def findMinimumPath(self, gridMaster: GridMaster) -> int:
         raise NotImplementedError("TODO")

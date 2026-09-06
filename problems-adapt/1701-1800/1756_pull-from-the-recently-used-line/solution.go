@@ -1,52 +1,96 @@
 package main
 
-import "math"
-
-// The queue lives in consecutive blocks of about sqrt(n) slots: fetch
-// walks the blocks, subtracting each size from k, to find the kth
-// element, lifts it out of its own block, and re-appends it at the tail —
-// an empty block is dropped, a full tail rolls the value into a fresh
-// block.
+// The line rides a virtual tape: value v starts at tape position v and the
+// j-th fetch re-appends its element at position n + j, so tape order is
+// always line order. front marks the first live slot of the initial run — a
+// sorted hole list remembers the vacated ones — while a Fenwick tree over
+// the append stamps counts live elements per position, with a stamp-to-value
+// map beside it.
 type RecentLine struct {
-	blocks [][]int
-	width  int
+	limit   int
+	front   int
+	holes   []int
+	stamps  int
+	step    int
+	tree    []int
+	vals    []int
+	fetches int
 }
 
 func NewRecentLineTyped(n int) *RecentLine {
-	width := int(math.Sqrt(float64(n))) + 1
-	blocks := make([][]int, 0, n/width+1)
-	for start := 1; start <= n; start += width {
-		end := start + width
-		if end > n+1 {
-			end = n + 1
-		}
-		block := make([]int, 0, width)
-		for value := start; value < end; value++ {
-			block = append(block, value)
-		}
-		blocks = append(blocks, block)
+	stamps := 10000
+	step := 1
+	for step*2 <= stamps {
+		step *= 2
 	}
-	return &RecentLine{blocks: blocks, width: width}
+	return &RecentLine{
+		limit:  n,
+		front:  1,
+		holes:  []int{},
+		stamps: stamps,
+		step:   step,
+		tree:   make([]int, stamps+1),
+		vals:   make([]int, stamps+1),
+	}
 }
 
 func (design *RecentLine) fetch(k int) int {
-	index := 0
-	for k > len(design.blocks[index]) {
-		k -= len(design.blocks[index])
-		index++
-	}
-	block := design.blocks[index]
-	value := block[k-1]
-	block = append(block[:k-1], block[k:]...)
-	design.blocks[index] = block
-	if len(block) == 0 {
-		design.blocks = append(design.blocks[:index], design.blocks[index+1:]...)
-	}
-	if len(design.blocks) == 0 || len(design.blocks[len(design.blocks)-1]) >= design.width {
-		design.blocks = append(design.blocks, []int{value})
+	initLive := design.limit - design.front + 1 - len(design.holes)
+	var value int
+	if k <= initLive {
+		lo, hi := design.front, design.limit
+		for lo < hi {
+			mid := lo + (hi-lo)/2
+			if mid-design.front+1-design.holesUpTo(mid) >= k {
+				hi = mid
+			} else {
+				lo = mid + 1
+			}
+		}
+		value = lo
+		idx := design.holesUpTo(value)
+		design.holes = append(design.holes, 0)
+		copy(design.holes[idx+1:], design.holes[idx:])
+		design.holes[idx] = value
+		for len(design.holes) > 0 && design.holes[0] == design.front {
+			design.holes = design.holes[1:]
+			design.front++
+		}
 	} else {
-		tail := len(design.blocks) - 1
-		design.blocks[tail] = append(design.blocks[tail], value)
+		remaining := k - initLive
+		pos := 0
+		for hop := design.step; hop > 0; hop >>= 1 {
+			next := pos + hop
+			if next <= design.stamps && design.tree[next] < remaining {
+				pos = next
+				remaining -= design.tree[next]
+			}
+		}
+		stamp := pos + 1
+		value = design.vals[stamp]
+		design.update(stamp, -1)
 	}
+	design.fetches++
+	design.vals[design.fetches] = value
+	design.update(design.fetches, 1)
 	return value
+}
+
+func (design *RecentLine) holesUpTo(bound int) int {
+	lo, hi := 0, len(design.holes)
+	for lo < hi {
+		mid := (lo + hi) / 2
+		if design.holes[mid] <= bound {
+			lo = mid + 1
+		} else {
+			hi = mid
+		}
+	}
+	return lo
+}
+
+func (design *RecentLine) update(stamp int, delta int) {
+	for ; stamp <= design.stamps; stamp += stamp & -stamp {
+		design.tree[stamp] += delta
+	}
 }

@@ -1,14 +1,8 @@
 class SeatManager {
 
-    public SeatManager(int n) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public SeatManager(int n) {}
 
-    public int reserve() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int reserve() {}
 
-    public void unreserve(int seatNumber) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public void unreserve(int seatNumber) {}
 }

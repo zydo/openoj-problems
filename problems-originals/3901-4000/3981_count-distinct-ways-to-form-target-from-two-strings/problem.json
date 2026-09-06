@@ -5,7 +5,10 @@
   "slug": "count-distinct-ways-to-form-target-from-two-strings",
   "title": "Count Distinct Ways to Form Target from Two Strings",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
   "topics": [
     "Dynamic Programming",
     "String"

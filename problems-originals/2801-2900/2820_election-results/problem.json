@@ -5,7 +5,10 @@
   "slug": "election-results",
   "title": "Election Results",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

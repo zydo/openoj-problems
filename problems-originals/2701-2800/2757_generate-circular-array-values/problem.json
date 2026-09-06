@@ -5,7 +5,11 @@
   "slug": "generate-circular-array-values",
   "title": "Generate Circular Array Values",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Array",
+    "Simulation"
+  ],
   "topics": [
     "Array",
     "Design",

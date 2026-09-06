@@ -5,7 +5,10 @@
   "slug": "minimum-initial-strength-to-defeat-all-monsters",
   "title": "Minimum Initial Strength to Defeat All Monsters",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Prefix Sum"
+  ],
   "topics": [
     "Array",
     "Prefix Sum",

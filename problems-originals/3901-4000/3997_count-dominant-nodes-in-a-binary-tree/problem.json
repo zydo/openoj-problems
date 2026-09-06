@@ -5,7 +5,10 @@
   "slug": "count-dominant-nodes-in-a-binary-tree",
   "title": "Count Dominant Nodes in a Binary Tree",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
   "topics": [
     "Tree",
     "Binary Tree",

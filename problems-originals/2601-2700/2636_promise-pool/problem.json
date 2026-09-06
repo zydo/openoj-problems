@@ -5,7 +5,11 @@
   "slug": "promise-pool",
   "title": "Promise Pool",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Queue",
+    "Simulation"
+  ],
   "topics": [
     "Concurrency"
   ],

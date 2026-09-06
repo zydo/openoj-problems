@@ -2,10 +2,10 @@ from typing import List, Optional
 
 
 class Trie:
-    def __init__(self) -> None:
+    def __init__(self):
         raise NotImplementedError("TODO")
 
-    def insert(self, word: str) -> None:
+    def insert(self, word: str):
         raise NotImplementedError("TODO")
 
     def search(self, word: str) -> bool:

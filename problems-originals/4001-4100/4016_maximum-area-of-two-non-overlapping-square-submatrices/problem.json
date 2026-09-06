@@ -5,7 +5,12 @@
   "slug": "maximum-area-of-two-non-overlapping-square-submatrices",
   "title": "Maximum Area of Two Non-Overlapping Square Submatrices",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Matrix",
+    "Binary Search",
+    "Prefix Sum"
+  ],
   "topics": [
     "Dynamic Programming",
     "Matrix",

@@ -5,7 +5,10 @@
   "slug": "display-the-first-three-rows",
   "title": "Display the First Three Rows",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

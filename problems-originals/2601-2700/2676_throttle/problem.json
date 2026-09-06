@@ -5,7 +5,9 @@
   "slug": "throttle",
   "title": "Throttle",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency",
     "Design"

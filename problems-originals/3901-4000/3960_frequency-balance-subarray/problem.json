@@ -5,7 +5,11 @@
   "slug": "frequency-balance-subarray",
   "title": "Frequency Balance Subarray",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
   "topics": [
     "Hash Table",
     "Sliding Window",

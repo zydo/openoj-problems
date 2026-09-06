@@ -5,7 +5,10 @@
   "slug": "rearrange-string-to-avoid-character-pair",
   "title": "Rearrange String to Avoid Character Pair",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "String",
+    "Sorting"
+  ],
   "topics": [
     "String",
     "Sorting",

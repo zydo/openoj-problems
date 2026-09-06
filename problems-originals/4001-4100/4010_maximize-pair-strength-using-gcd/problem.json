@@ -5,7 +5,11 @@
   "slug": "maximize-pair-strength-using-gcd",
   "title": "Maximize Pair Strength Using GCD",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Math",
+    "Number Theory"
+  ],
   "topics": [
     "Number Theory",
     "Math",

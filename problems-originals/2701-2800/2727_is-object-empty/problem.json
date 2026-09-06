@@ -5,7 +5,10 @@
   "slug": "is-object-empty",
   "title": "Is Object Empty",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Array"
+  ],
   "topics": [
     "Design"
   ],

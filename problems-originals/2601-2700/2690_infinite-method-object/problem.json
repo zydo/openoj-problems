@@ -5,7 +5,9 @@
   "slug": "infinite-method-object",
   "title": "Infinite Method Object",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

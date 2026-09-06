@@ -5,7 +5,11 @@
   "slug": "minimum-lights-to-illuminate-a-road",
   "title": "Minimum Lights to Illuminate a Road",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Greedy",
+    "Difference Array"
+  ],
   "topics": [
     "Greedy",
     "Sorting",

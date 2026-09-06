@@ -5,7 +5,10 @@
   "slug": "status-of-flight-tickets",
   "title": "Status of Flight Tickets",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

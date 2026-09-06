@@ -5,7 +5,9 @@
   "slug": "chunk-array",
   "title": "Chunk Array",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Array"
   ],

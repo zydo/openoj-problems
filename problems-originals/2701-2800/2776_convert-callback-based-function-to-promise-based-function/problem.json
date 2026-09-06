@@ -5,7 +5,9 @@
   "slug": "convert-callback-based-function-to-promise-based-function",
   "title": "Convert Callback Based Function to Promise Based Function",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency",
     "Design"

@@ -5,7 +5,11 @@
   "slug": "subsequence-after-one-replacement",
   "title": "Subsequence After One Replacement",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "String",
+    "Two Pointers",
+    "Greedy"
+  ],
   "topics": [
     "String",
     "Two Pointers",

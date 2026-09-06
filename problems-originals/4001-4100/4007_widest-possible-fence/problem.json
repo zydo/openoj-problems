@@ -5,7 +5,11 @@
   "slug": "widest-possible-fence",
   "title": "Widest Possible Fence",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting"
+  ],
   "topics": [
     "Hash Table",
     "Sorting",

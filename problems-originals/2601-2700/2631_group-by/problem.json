@@ -5,7 +5,11 @@
   "slug": "group-by",
   "title": "Group By",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Array",
+    "Hash Table"
+  ],
   "topics": [
     "Array",
     "Hash Table"

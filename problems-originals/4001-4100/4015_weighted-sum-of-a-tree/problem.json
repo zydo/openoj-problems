@@ -5,7 +5,11 @@
   "slug": "weighted-sum-of-a-tree",
   "title": "Weighted Sum of a Tree",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Tree",
+    "Breadth-First Search",
+    "Array"
+  ],
   "topics": [
     "Tree",
     "Depth-First Search",

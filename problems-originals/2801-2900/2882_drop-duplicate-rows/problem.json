@@ -5,7 +5,10 @@
   "slug": "drop-duplicate-rows",
   "title": "Drop Duplicate Rows",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

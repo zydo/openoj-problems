@@ -5,7 +5,11 @@
   "slug": "minimum-distance-excluding-one-maximum-weighted-edge",
   "title": "Minimum Distance Excluding One Maximum Weighted Edge",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Graph",
+    "Heap",
+    "Shortest Path"
+  ],
   "topics": [
     "Graph Theory",
     "Shortest Path"

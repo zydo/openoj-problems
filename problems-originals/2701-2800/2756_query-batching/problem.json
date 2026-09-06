@@ -5,7 +5,10 @@
   "slug": "query-batching",
   "title": "Query Batching",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
   "topics": [
     "Concurrency",
     "Design"

@@ -1,6 +1,6 @@
 class Solution {
 
-    public int findMinimumPath(GridMaster master) {
+    public int findMinimumPath(GridMaster gridMaster) {
         throw new UnsupportedOperationException("TODO");
     }
 }

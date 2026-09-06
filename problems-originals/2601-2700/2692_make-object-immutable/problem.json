@@ -5,7 +5,10 @@
   "slug": "make-object-immutable",
   "title": "Make Object Immutable",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
   "topics": [
     "Design",
     "Recursion"

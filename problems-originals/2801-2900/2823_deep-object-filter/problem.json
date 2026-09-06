@@ -5,7 +5,10 @@
   "slug": "deep-object-filter",
   "title": "Deep Object Filter",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Depth-First Search"
+  ],
   "topics": [
     "Recursion"
   ],

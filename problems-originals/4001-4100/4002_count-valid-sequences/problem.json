@@ -5,7 +5,11 @@
   "slug": "count-valid-sequences",
   "title": "Count Valid Sequences",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Math",
+    "Combinatorics",
+    "Number Theory"
+  ],
   "topics": [
     "Combinatorics",
     "Math",

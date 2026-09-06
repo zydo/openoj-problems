@@ -5,7 +5,9 @@
   "slug": "immutability-helper",
   "title": "Immutability Helper",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design",
     "Recursion"

@@ -5,7 +5,10 @@
   "slug": "create-a-dataframe-from-list",
   "title": "Create a DataFrame from List",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

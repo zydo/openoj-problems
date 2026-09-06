@@ -5,7 +5,11 @@
   "slug": "finish-time-of-tasks-ii",
   "title": "Finish Time of Tasks II",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Tree",
+    "Dynamic Programming",
+    "Depth-First Search"
+  ],
   "topics": [
     "Tree",
     "Depth-First Search",

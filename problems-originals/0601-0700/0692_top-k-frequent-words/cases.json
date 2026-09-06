@@ -1364,6 +1364,37 @@
         "bravo",
         "charlie"
       ]
+    },
+    {
+      "input": [
+        [
+          "zebra",
+          "zebra",
+          "apple",
+          "zebra",
+          "apple"
+        ],
+        1
+      ],
+      "expected": [
+        "zebra"
+      ]
+    },
+    {
+      "input": [
+        [
+          "ab",
+          "abc",
+          "abd",
+          "ab",
+          "abc"
+        ],
+        2
+      ],
+      "expected": [
+        "ab",
+        "abc"
+      ]
     }
   ]
 }

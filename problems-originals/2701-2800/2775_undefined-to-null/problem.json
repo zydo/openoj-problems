@@ -5,7 +5,10 @@
   "slug": "undefined-to-null",
   "title": "Undefined to Null",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Depth-First Search"
+  ],
   "topics": [
     "Recursion"
   ],

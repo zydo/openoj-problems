@@ -5,7 +5,10 @@
   "slug": "number-of-elapsed-seconds-between-two-times",
   "title": "Number of Elapsed Seconds Between Two Times",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Math",
+    "String"
+  ],
   "topics": [
     "Math",
     "String"

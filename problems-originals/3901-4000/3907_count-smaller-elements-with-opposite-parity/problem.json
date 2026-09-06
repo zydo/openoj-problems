@@ -5,7 +5,10 @@
   "slug": "count-smaller-elements-with-opposite-parity",
   "title": "Count Smaller Elements With Opposite Parity",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Binary Indexed Tree"
+  ],
   "topics": [
     "Binary Indexed Tree",
     "Divide and Conquer",

@@ -5,7 +5,11 @@
   "slug": "join-two-arrays-by-id",
   "title": "Join Two Arrays by ID",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Array",
+    "Hash Table"
+  ],
   "topics": [
     "Array",
     "Hash Table",

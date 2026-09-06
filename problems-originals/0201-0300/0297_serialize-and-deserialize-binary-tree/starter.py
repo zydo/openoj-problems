@@ -2,7 +2,7 @@ from typing import List, Optional
 
 
 class Codec:
-    def __init__(self) -> None:
+    def __init__(self):
         raise NotImplementedError("TODO")
 
     def serialize(self, root: Optional[TreeNode]) -> str:

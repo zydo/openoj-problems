@@ -5,7 +5,11 @@
   "slug": "sort-array-using-prefix-reversals",
   "title": "Sort Array Using Prefix Reversals",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Enumeration"
+  ],
   "topics": [
     "Breadth-First Search",
     "Array"

@@ -5,7 +5,9 @@
   "slug": "to-be-or-not-to-be",
   "title": "To Be Or Not To Be",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

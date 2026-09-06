@@ -5,7 +5,10 @@
   "slug": "even-number-of-knight-moves",
   "title": "Even Number of Knight Moves",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Math",
+    "Breadth-First Search"
+  ],
   "topics": [
     "Math",
     "Breadth-First Search"

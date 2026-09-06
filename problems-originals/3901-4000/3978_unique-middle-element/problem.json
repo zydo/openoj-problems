@@ -5,7 +5,10 @@
   "slug": "unique-middle-element",
   "title": "Unique Middle Element",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Counting"
+  ],
   "topics": [
     "Array",
     "Counting"

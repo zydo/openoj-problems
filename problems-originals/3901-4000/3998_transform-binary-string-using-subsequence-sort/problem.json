@@ -5,7 +5,10 @@
   "slug": "transform-binary-string-using-subsequence-sort",
   "title": "Transform Binary String Using Subsequence Sort",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "String",
+    "Greedy"
+  ],
   "topics": [
     "String",
     "Greedy",

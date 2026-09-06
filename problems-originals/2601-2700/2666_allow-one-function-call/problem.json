@@ -5,7 +5,9 @@
   "slug": "allow-one-function-call",
   "title": "Allow One Function Call",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

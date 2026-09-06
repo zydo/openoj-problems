@@ -5,7 +5,10 @@
   "slug": "largest-integer-with-given-digit-sum",
   "title": "Largest Integer With Given Digit Sum",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
   "topics": [
     "Greedy",
     "Math",

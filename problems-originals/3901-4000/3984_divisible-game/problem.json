@@ -5,7 +5,11 @@
   "slug": "divisible-game",
   "title": "Divisible Game",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Number Theory"
+  ],
   "topics": [
     "Game Theory",
     "Math",

@@ -5,7 +5,10 @@
   "slug": "reshape-data-pivot",
   "title": "Reshape Data: Pivot",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

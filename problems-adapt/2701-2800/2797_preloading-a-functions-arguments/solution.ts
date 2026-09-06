@@ -13,7 +13,9 @@ const preload = function (fn: AnyFn, args: any[]): (...restArgs: any[]) => any {
                 modified[i] = restArgs[cursor++];
             }
         }
-        return fn(...modified, ...restArgs.slice(cursor));
+        // apply, not spread: V8 puts spread call arguments on the stack
+        // and a long argument list overflows it
+        return fn.apply(null, modified.concat(restArgs.slice(cursor)));
     };
 };
 

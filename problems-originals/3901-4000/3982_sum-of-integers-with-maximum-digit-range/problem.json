@@ -5,7 +5,10 @@
   "slug": "sum-of-integers-with-maximum-digit-range",
   "title": "Sum of Integers with Maximum Digit Range",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Math"
+  ],
   "topics": [
     "Math",
     "Array",

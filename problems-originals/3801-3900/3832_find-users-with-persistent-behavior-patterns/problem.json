@@ -5,7 +5,10 @@
   "slug": "find-users-with-persistent-behavior-patterns",
   "title": "Find Users with Persistent Behavior Patterns",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

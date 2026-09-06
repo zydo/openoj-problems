@@ -5,7 +5,11 @@
   "slug": "array-upper-bound",
   "title": "Array Upper Bound",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Array",
+    "Binary Search"
+  ],
   "topics": [
     "Array",
     "Binary Search"

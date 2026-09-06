@@ -5,7 +5,11 @@
   "slug": "minimum-total-cost-to-process-all-elements",
   "title": "Minimum Total Cost to Process All Elements",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Math",
+    "Greedy"
+  ],
   "topics": [
     "Greedy",
     "Math"

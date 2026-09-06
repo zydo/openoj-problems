@@ -5,7 +5,11 @@
   "slug": "minimum-possible-maximum-waiting-time",
   "title": "Minimum Possible Maximum Waiting Time",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Dynamic Programming",
+    "Greedy",
+    "Simulation"
+  ],
   "topics": [
     "Greedy",
     "Math",

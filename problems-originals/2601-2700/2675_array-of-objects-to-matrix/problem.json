@@ -5,7 +5,9 @@
   "slug": "array-of-objects-to-matrix",
   "title": "Array of Objects to Matrix",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Array",
     "Recursion"

@@ -5,7 +5,10 @@
   "slug": "maximum-value-of-an-alternating-sequence",
   "title": "Maximum Value of an Alternating Sequence",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Math",
+    "Greedy"
+  ],
   "topics": [
     "Math",
     "Greedy"

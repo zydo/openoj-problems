@@ -5,7 +5,12 @@
   "slug": "number-of-ways-to-paint-sheets",
   "title": "Number of Ways to Paint Sheets",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Math",
+    "Sorting",
+    "Binary Search"
+  ],
   "topics": [
     "Math",
     "Combinatorics"

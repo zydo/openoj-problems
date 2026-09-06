@@ -5,7 +5,10 @@
   "slug": "find-students-with-study-spiral-pattern",
   "title": "Find Students with Study Spiral Pattern",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

@@ -3,45 +3,84 @@ import java.util.List;
 
 class RecentLine {
 
-    // The queue lives in consecutive blocks of about sqrt(n) slots: fetch
-    // walks the blocks, subtracting each size from k, to find the kth
-    // element, lifts it out of its own block, and re-appends it at the tail
-    // — an empty block is dropped, a full tail rolls the value into a fresh
-    // block.
-    private final List<List<Integer>> blocks = new ArrayList<>();
-    private final int width;
+    // The line rides a virtual tape: value v starts at tape position v and the
+    // j-th fetch re-appends its element at position n + j, so tape order is
+    // always line order. front marks the first live slot of the initial run —
+    // a sorted hole list remembers the vacated ones — while a Fenwick tree
+    // over the append stamps counts live elements per position, with a
+    // stamp-to-value map beside it.
+    private static final int stampBudget = 10000;
+
+    private final int limit;
+    private final int step;
+    private final int[] tree = new int[stampBudget + 1];
+    private final int[] vals = new int[stampBudget + 1];
+    private final List<Integer> holes = new ArrayList<>();
+    private int front = 1;
+    private int fetches = 0;
 
     public RecentLine(int n) {
-        width = (int) Math.sqrt(n) + 1;
-        for (int start = 1; start <= n; start += width) {
-            int end = Math.min(start + width, n + 1);
-            List<Integer> block = new ArrayList<>(width);
-            for (int value = start; value < end; value++) {
-                block.add(value);
-            }
-            blocks.add(block);
-        }
+        limit = n;
+        step = Integer.highestOneBit(stampBudget);
     }
 
     public int fetch(int k) {
-        int index = 0;
-        while (k > blocks.get(index).size()) {
-            k -= blocks.get(index).size();
-            index++;
-        }
-        List<Integer> block = blocks.get(index);
-        int value = block.remove(k - 1);
-        if (block.isEmpty()) {
-            blocks.remove(index);
-        }
-        List<Integer> tail = blocks.isEmpty() ? null : blocks.get(blocks.size() - 1);
-        if (tail == null || tail.size() >= width) {
-            List<Integer> fresh = new ArrayList<>();
-            fresh.add(value);
-            blocks.add(fresh);
+        int initLive = limit - front + 1 - holes.size();
+        int value;
+        if (k <= initLive) {
+            int lo = front,
+                hi = limit;
+            while (lo < hi) {
+                int mid = (lo + hi) >>> 1;
+                if (mid - front + 1 - holesUpTo(mid) >= k) {
+                    hi = mid;
+                } else {
+                    lo = mid + 1;
+                }
+            }
+            value = lo;
+            holes.add(holesUpTo(value), value);
+            while (!holes.isEmpty() && holes.get(0) == front) {
+                holes.remove(0);
+                front++;
+            }
         } else {
-            tail.add(value);
+            int remaining = k - initLive;
+            int pos = 0;
+            for (int hop = step; hop > 0; hop >>= 1) {
+                int next = pos + hop;
+                if (next <= stampBudget && tree[next] < remaining) {
+                    pos = next;
+                    remaining -= tree[next];
+                }
+            }
+            int stamp = pos + 1;
+            value = vals[stamp];
+            add(stamp, -1);
         }
+        fetches++;
+        vals[fetches] = value;
+        add(fetches, 1);
         return value;
+    }
+
+    private int holesUpTo(int bound) {
+        int lo = 0,
+            hi = holes.size();
+        while (lo < hi) {
+            int mid = (lo + hi) >>> 1;
+            if (holes.get(mid) <= bound) {
+                lo = mid + 1;
+            } else {
+                hi = mid;
+            }
+        }
+        return lo;
+    }
+
+    private void add(int stamp, int delta) {
+        for (; stamp <= stampBudget; stamp += stamp & -stamp) {
+            tree[stamp] += delta;
+        }
     }
 }

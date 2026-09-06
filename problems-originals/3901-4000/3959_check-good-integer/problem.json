@@ -5,7 +5,10 @@
   "slug": "check-good-integer",
   "title": "Check Good Integer",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
   "topics": [
     "Math",
     "String"

@@ -5,7 +5,10 @@
   "slug": "array-prototype-foreach",
   "title": "Array Prototype ForEach",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Array"
+  ],
   "topics": [
     "Array"
   ],

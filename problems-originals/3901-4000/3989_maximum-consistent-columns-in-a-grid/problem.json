@@ -5,7 +5,11 @@
   "slug": "maximum-consistent-columns-in-a-grid",
   "title": "Maximum Consistent Columns in a Grid",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
   "topics": [
     "Dynamic Programming",
     "Bitmask",

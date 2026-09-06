@@ -5,7 +5,10 @@
   "slug": "construct-string-with-minimum-cost-easy",
   "title": "Construct String with Minimum Cost (Easy)",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
   "topics": [
     "String",
     "Dynamic Programming",

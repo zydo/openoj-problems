@@ -5,7 +5,9 @@
   "slug": "timeout-cancellation",
   "title": "Timeout Cancellation",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency"
   ],

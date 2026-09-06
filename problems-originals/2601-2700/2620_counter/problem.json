@@ -5,7 +5,9 @@
   "slug": "counter",
   "title": "Counter",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

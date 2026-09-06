@@ -33,7 +33,7 @@ class FindSumPairs {
     }
 
   private:
-    std::vector<int> &nums1;
-    std::vector<int> &nums2;
+    std::vector<int> nums1;
+    std::vector<int> nums2;
     std::unordered_map<int, long long> freq2;
 };

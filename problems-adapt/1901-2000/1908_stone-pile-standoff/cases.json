@@ -766,6 +766,18 @@
         ]
       ],
       "expected": true
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "expected": true
     }
   ]
 }

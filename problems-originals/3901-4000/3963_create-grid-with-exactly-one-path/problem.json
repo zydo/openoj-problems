@@ -5,7 +5,10 @@
   "slug": "create-grid-with-exactly-one-path",
   "title": "Create Grid With Exactly One Path",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Matrix",
+    "Greedy"
+  ],
   "topics": [
     "Math",
     "Greedy",

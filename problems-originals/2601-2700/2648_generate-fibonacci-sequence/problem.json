@@ -5,7 +5,10 @@
   "slug": "generate-fibonacci-sequence",
   "title": "Generate Fibonacci Sequence",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Math",
+    "JavaScript"
+  ],
   "topics": [
     "Design",
     "Math"

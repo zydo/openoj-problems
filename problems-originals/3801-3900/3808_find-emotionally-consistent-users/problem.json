@@ -5,7 +5,10 @@
   "slug": "find-emotionally-consistent-users",
   "title": "Find Emotionally Consistent Users",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

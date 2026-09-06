@@ -5,7 +5,10 @@
   "slug": "debounce",
   "title": "Debounce",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
   "topics": [
     "Concurrency",
     "Design"

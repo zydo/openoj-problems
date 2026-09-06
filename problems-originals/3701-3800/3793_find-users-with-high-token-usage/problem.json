@@ -5,7 +5,10 @@
   "slug": "find-users-with-high-token-usage",
   "title": "Find Users with High Token Usage",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

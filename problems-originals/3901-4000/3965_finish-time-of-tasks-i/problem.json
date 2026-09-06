@@ -5,7 +5,10 @@
   "slug": "finish-time-of-tasks-i",
   "title": "Finish Time of Tasks I",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Tree",
+    "Depth-First Search"
+  ],
   "topics": [
     "Tree",
     "Depth-First Search",

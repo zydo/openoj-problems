@@ -5,7 +5,9 @@
   "slug": "add-two-promises",
   "title": "Add Two Promises",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency"
   ],

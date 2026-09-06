@@ -5,7 +5,10 @@
   "slug": "create-a-new-column",
   "title": "Create a New Column",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

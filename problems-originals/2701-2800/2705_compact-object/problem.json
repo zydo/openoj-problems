@@ -5,7 +5,10 @@
   "slug": "compact-object",
   "title": "Compact Object",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Depth-First Search"
+  ],
   "topics": [
     "Recursion"
   ],

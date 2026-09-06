@@ -5,7 +5,9 @@
   "slug": "interval-cancellation",
   "title": "Interval Cancellation",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency"
   ],

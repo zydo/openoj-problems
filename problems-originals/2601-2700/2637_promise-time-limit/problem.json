@@ -5,7 +5,9 @@
   "slug": "promise-time-limit",
   "title": "Promise Time Limit",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency"
   ],

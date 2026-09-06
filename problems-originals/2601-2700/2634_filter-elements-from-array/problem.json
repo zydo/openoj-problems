@@ -5,7 +5,10 @@
   "slug": "filter-elements-from-array",
   "title": "Filter Elements from Array",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Array"
+  ],
   "topics": [
     "Array"
   ],

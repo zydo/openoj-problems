@@ -5,7 +5,10 @@
   "slug": "event-emitter",
   "title": "Event Emitter",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
   "topics": [
     "Design",
     "Hash Table"

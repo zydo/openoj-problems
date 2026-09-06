@@ -2,7 +2,7 @@ from typing import List, Optional
 
 
 class Router:
-    def __init__(self, memoryLimit: int) -> None:
+    def __init__(self, memoryLimit: int):
         raise NotImplementedError("TODO")
 
     def addPacket(self, source: int, destination: int, timestamp: int) -> bool:

@@ -5,7 +5,10 @@
   "slug": "modify-columns",
   "title": "Modify Columns",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

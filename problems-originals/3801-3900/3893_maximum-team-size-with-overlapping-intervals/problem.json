@@ -5,7 +5,11 @@
   "slug": "maximum-team-size-with-overlapping-intervals",
   "title": "Maximum Team Size with Overlapping Intervals",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
   "topics": [
     "Sorting",
     "Two Pointers",

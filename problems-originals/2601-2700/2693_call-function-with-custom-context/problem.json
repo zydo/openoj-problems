@@ -5,7 +5,10 @@
   "slug": "call-function-with-custom-context",
   "title": "Call Function with Custom Context",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
   "topics": [
     "Design"
   ],

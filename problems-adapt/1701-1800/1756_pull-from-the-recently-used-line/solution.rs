@@ -1,46 +1,89 @@
-// The queue lives in consecutive blocks of about sqrt(n) slots: fetch walks
-// the blocks, subtracting each size from k, to find the kth element, lifts it
-// out of its own block, and re-appends it at the tail — an empty block is
-// dropped, a full tail rolls the value into a fresh block.
+// The line rides a virtual tape: value v starts at tape position v and the
+// j-th fetch re-appends its element at position n + j, so tape order is
+// always line order. front marks the first live slot of the initial run — a
+// sorted hole list remembers the vacated ones — while a Fenwick tree over
+// the append stamps counts live elements per position, with a stamp-to-value
+// map beside it.
 pub struct RecentLine {
-    blocks: Vec<Vec<i32>>,
-    width: usize,
+    limit: i32,
+    front: i32,
+    holes: Vec<i32>,
+    stamps: usize,
+    step: usize,
+    tree: Vec<i32>,
+    vals: Vec<i32>,
+    fetches: usize,
 }
 
 impl RecentLine {
     pub fn new(n: i32) -> Self {
-        let n = n as usize;
-        let width = (n as f64).sqrt() as usize + 1;
-        let mut blocks: Vec<Vec<i32>> = Vec::with_capacity(n / width + 1);
-        let mut start = 1;
-        while start <= n {
-            let end = (start + width).min(n + 1);
-            blocks.push((start..end).map(|value| value as i32).collect());
-            start += width;
+        let stamps = 10000usize;
+        let mut step = 1usize;
+        while step * 2 <= stamps {
+            step *= 2;
         }
-        RecentLine { blocks, width }
+        RecentLine {
+            limit: n,
+            front: 1,
+            holes: Vec::new(),
+            stamps,
+            step,
+            tree: vec![0; stamps + 1],
+            vals: vec![0; stamps + 1],
+            fetches: 0,
+        }
     }
 
     pub fn fetch(&mut self, k: i32) -> i32 {
-        let mut k = k as usize;
-        let mut index = 0;
-        while k > self.blocks[index].len() {
-            k -= self.blocks[index].len();
-            index += 1;
-        }
-        let value = self.blocks[index].remove(k - 1);
-        if self.blocks[index].is_empty() {
-            self.blocks.remove(index);
-        }
-        let roll_over = match self.blocks.last() {
-            Some(tail) => tail.len() >= self.width,
-            None => true,
-        };
-        if roll_over {
-            self.blocks.push(vec![value]);
+        let init_live = self.limit - self.front + 1 - self.holes.len() as i32;
+        let value;
+        if k <= init_live {
+            let (mut lo, mut hi) = (self.front, self.limit);
+            while lo < hi {
+                let mid = lo + (hi - lo) / 2;
+                if mid - self.front + 1 - self.holes_up_to(mid) as i32 >= k {
+                    hi = mid;
+                } else {
+                    lo = mid + 1;
+                }
+            }
+            value = lo;
+            let idx = self.holes_up_to(value);
+            self.holes.insert(idx, value);
+            while self.holes.first() == Some(&self.front) {
+                self.holes.remove(0);
+                self.front += 1;
+            }
         } else {
-            self.blocks.last_mut().unwrap().push(value);
+            let mut remaining = (k - init_live) as usize;
+            let mut pos = 0usize;
+            let mut hop = self.step;
+            while hop > 0 {
+                let next = pos + hop;
+                if next <= self.stamps && (self.tree[next] as usize) < remaining {
+                    pos = next;
+                    remaining -= self.tree[next] as usize;
+                }
+                hop >>= 1;
+            }
+            let stamp = pos + 1;
+            value = self.vals[stamp];
+            self.add(stamp, -1);
         }
+        self.fetches += 1;
+        self.vals[self.fetches] = value;
+        self.add(self.fetches, 1);
         value
+    }
+
+    fn holes_up_to(&self, bound: i32) -> usize {
+        self.holes.partition_point(|&hole| hole <= bound)
+    }
+
+    fn add(&mut self, mut stamp: usize, delta: i32) {
+        while stamp <= self.stamps {
+            self.tree[stamp] += delta;
+            stamp += stamp & stamp.wrapping_neg();
+        }
     }
 }

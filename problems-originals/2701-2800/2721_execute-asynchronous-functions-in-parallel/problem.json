@@ -5,7 +5,9 @@
   "slug": "execute-asynchronous-functions-in-parallel",
   "title": "Execute Asynchronous Functions in Parallel",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency"
   ],

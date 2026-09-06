@@ -5,7 +5,10 @@
   "slug": "counter-ii",
   "title": "Counter II",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
   "topics": [
     "Design"
   ],

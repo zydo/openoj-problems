@@ -5,7 +5,10 @@
   "slug": "json-deep-equal",
   "title": "JSON Deep Equal",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Depth-First Search"
+  ],
   "topics": [
     "Recursion"
   ],

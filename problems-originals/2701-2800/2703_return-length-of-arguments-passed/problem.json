@@ -5,7 +5,9 @@
   "slug": "return-length-of-arguments-passed",
   "title": "Return Length of Arguments Passed",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

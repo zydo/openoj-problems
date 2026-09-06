@@ -162,6 +162,25 @@
         ]
       ],
       "expected": true
+    },
+    {
+      "input": [
+        "ab",
+        [
+          "abc",
+          "abcd"
+        ]
+      ],
+      "expected": false
+    },
+    {
+      "input": [
+        "abcdefghijklmnopqrst",
+        [
+          "abcdefghijklmnopqrst"
+        ]
+      ],
+      "expected": true
     }
   ]
 }

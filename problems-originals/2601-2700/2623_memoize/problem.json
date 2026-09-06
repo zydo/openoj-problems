@@ -5,7 +5,11 @@
   "slug": "memoize",
   "title": "Memoize",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Memoization",
+    "Hash Table",
+    "JavaScript"
+  ],
   "topics": [
     "Design",
     "Hash Table"

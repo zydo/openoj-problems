@@ -5,7 +5,11 @@
   "slug": "convert-object-to-json-string",
   "title": "Convert Object to JSON String",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "String",
+    "Depth-First Search"
+  ],
   "topics": [
     "Recursion",
     "String"

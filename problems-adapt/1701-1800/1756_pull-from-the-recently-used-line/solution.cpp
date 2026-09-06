@@ -1,47 +1,79 @@
 #include <algorithm>
-#include <cmath>
 #include <vector>
 
-// The queue lives in consecutive blocks of about sqrt(n) slots: fetch
-// walks the blocks, subtracting each size from k, to find the kth
-// element, lifts it out of its own block, and re-appends it at the tail
-// — an empty block is dropped, a full tail rolls the value into a fresh
-// block.
+// The line rides a virtual tape: value v starts at tape position v and the
+// j-th fetch re-appends its element at position n + j, so tape order is
+// always line order. front marks the first live slot of the initial run — a
+// sorted hole list remembers the vacated ones — while a Fenwick tree over
+// the append stamps counts live elements per position, with a stamp-to-value
+// map beside it.
 class RecentLine {
   public:
-    RecentLine(int n) : width_(static_cast<int>(std::sqrt(n)) + 1) {
-        for (int start = 1; start <= n; start += width_) {
-            int end = std::min(start + width_, n + 1);
-            std::vector<int> block;
-            block.reserve(width_);
-            for (int value = start; value < end; value++) {
-                block.push_back(value);
-            }
-            blocks_.push_back(std::move(block));
+    RecentLine(int n) : limit_(n) {
+        int step = 1;
+        while (step * 2 <= kStamps) {
+            step *= 2;
         }
+        step_ = step;
     }
 
     int fetch(int k) {
-        size_t index = 0;
-        while (k > static_cast<int>(blocks_[index].size())) {
-            k -= static_cast<int>(blocks_[index].size());
-            index++;
-        }
-        std::vector<int> &block = blocks_[index];
-        int value = block[k - 1];
-        block.erase(block.begin() + (k - 1));
-        if (block.empty()) {
-            blocks_.erase(blocks_.begin() + static_cast<std::ptrdiff_t>(index));
-        }
-        if (blocks_.empty() || blocks_.back().size() >= static_cast<size_t>(width_)) {
-            blocks_.push_back({value});
+        int initLive = limit_ - front_ + 1 - static_cast<int>(holes_.size());
+        int value;
+        if (k <= initLive) {
+            int lo = front_, hi = limit_;
+            while (lo < hi) {
+                int mid = lo + (hi - lo) / 2;
+                if (mid - front_ + 1 - holesUpTo(mid) >= k) {
+                    hi = mid;
+                } else {
+                    lo = mid + 1;
+                }
+            }
+            value = lo;
+            holes_.insert(holes_.begin() + holesUpTo(value), value);
+            while (!holes_.empty() && holes_.front() == front_) {
+                holes_.erase(holes_.begin());
+                front_++;
+            }
         } else {
-            blocks_.back().push_back(value);
+            int remaining = k - initLive;
+            int pos = 0;
+            for (int hop = step_; hop > 0; hop >>= 1) {
+                int next = pos + hop;
+                if (next <= kStamps && tree_[next] < remaining) {
+                    pos = next;
+                    remaining -= tree_[next];
+                }
+            }
+            int stamp = pos + 1;
+            value = vals_[stamp];
+            add(stamp, -1);
         }
+        fetches_++;
+        vals_[fetches_] = value;
+        add(fetches_, 1);
         return value;
     }
 
   private:
-    std::vector<std::vector<int>> blocks_;
-    int width_;
+    static constexpr int kStamps = 10000;
+
+    void add(int stamp, int delta) {
+        for (; stamp <= kStamps; stamp += stamp & -stamp) {
+            tree_[stamp] += delta;
+        }
+    }
+
+    int holesUpTo(int bound) const {
+        return static_cast<int>(std::upper_bound(holes_.begin(), holes_.end(), bound) - holes_.begin());
+    }
+
+    std::vector<int> holes_;
+    std::vector<int> tree_ = std::vector<int>(kStamps + 1, 0);
+    std::vector<int> vals_ = std::vector<int>(kStamps + 1, 0);
+    int limit_;
+    int front_ = 1;
+    int fetches_ = 0;
+    int step_ = 1;
 };

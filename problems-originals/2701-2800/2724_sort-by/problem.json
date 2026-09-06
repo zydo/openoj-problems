@@ -5,7 +5,11 @@
   "slug": "sort-by",
   "title": "Sort By",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Array",
+    "Sorting"
+  ],
   "topics": [
     "Array",
     "Sorting"

@@ -2,10 +2,10 @@ from typing import List, Optional
 
 
 class SnapshotArray:
-    def __init__(self, length: int) -> None:
+    def __init__(self, length: int):
         raise NotImplementedError("TODO")
 
-    def set(self, index: int, val: int) -> None:
+    def set(self, index: int, val: int):
         raise NotImplementedError("TODO")
 
     def snap(self) -> int:

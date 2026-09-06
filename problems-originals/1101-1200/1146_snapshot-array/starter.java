@@ -1,18 +1,10 @@
 class SnapshotArray {
 
-    public SnapshotArray(int length) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public SnapshotArray(int length) {}
 
-    public void set(int index, int val) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public void set(int index, int val) {}
 
-    public int snap() {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int snap() {}
 
-    public int get(int index, int snap_id) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int get(int index, int snap_id) {}
 }

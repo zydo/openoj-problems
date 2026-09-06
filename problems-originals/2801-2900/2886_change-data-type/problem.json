@@ -5,7 +5,10 @@
   "slug": "change-data-type",
   "title": "Change Data Type",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

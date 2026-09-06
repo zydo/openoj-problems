@@ -5,7 +5,10 @@
   "slug": "minimum-adjacent-swaps-to-partition-array",
   "title": "Minimum Adjacent Swaps to Partition Array",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Counting"
+  ],
   "topics": [
     "Array",
     "Greedy",

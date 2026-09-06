@@ -5,7 +5,10 @@
   "slug": "get-the-size-of-a-dataframe",
   "title": "Get the Size of a DataFrame",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

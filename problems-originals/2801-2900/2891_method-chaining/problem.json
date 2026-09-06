@@ -5,7 +5,10 @@
   "slug": "method-chaining",
   "title": "Method Chaining",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

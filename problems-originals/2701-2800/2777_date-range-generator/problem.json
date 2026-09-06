@@ -5,7 +5,11 @@
   "slug": "date-range-generator",
   "title": "Date Range Generator",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Math",
+    "String"
+  ],
   "topics": [
     "Math",
     "String"

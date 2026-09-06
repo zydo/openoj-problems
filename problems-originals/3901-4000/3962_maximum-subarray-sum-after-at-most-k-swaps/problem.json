@@ -5,7 +5,12 @@
   "slug": "maximum-subarray-sum-after-at-most-k-swaps",
   "title": "Maximum Subarray Sum After at Most K Swaps",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Greedy",
+    "Ordered Set",
+    "Sliding Window"
+  ],
   "topics": [
     "Dynamic Programming",
     "Greedy"

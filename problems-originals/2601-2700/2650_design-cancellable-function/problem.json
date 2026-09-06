@@ -5,7 +5,10 @@
   "slug": "design-cancellable-function",
   "title": "Design Cancellable Function",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
   "topics": [
     "Concurrency",
     "Design"

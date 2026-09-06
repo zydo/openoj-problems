@@ -5,7 +5,11 @@
   "slug": "memoize-ii",
   "title": "Memoize II",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Hash Table",
+    "Tree"
+  ],
   "topics": [
     "Design",
     "Hash Table",

@@ -2,10 +2,10 @@ from typing import List, Optional
 
 
 class StockPrice:
-    def __init__(self) -> None:
+    def __init__(self):
         raise NotImplementedError("TODO")
 
-    def update(self, timestamp: int, price: int) -> None:
+    def update(self, timestamp: int, price: int):
         raise NotImplementedError("TODO")
 
     def current(self) -> int:

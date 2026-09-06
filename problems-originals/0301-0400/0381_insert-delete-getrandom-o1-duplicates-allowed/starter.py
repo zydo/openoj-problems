@@ -2,7 +2,7 @@ from typing import List, Optional
 
 
 class RandomizedCollection:
-    def __init__(self) -> None:
+    def __init__(self):
         raise NotImplementedError("TODO")
 
     def insert(self, val: int) -> bool:

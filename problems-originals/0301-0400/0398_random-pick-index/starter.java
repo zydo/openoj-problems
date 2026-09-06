@@ -1,10 +1,6 @@
 class Solution {
 
-    public Solution(int[] nums) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public Solution(int[] nums) {}
 
-    public int pick(int target) {
-        throw new UnsupportedOperationException("TODO");
-    }
+    public int pick(int target) {}
 }

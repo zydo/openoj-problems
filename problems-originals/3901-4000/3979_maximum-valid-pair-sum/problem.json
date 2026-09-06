@@ -5,7 +5,10 @@
   "slug": "maximum-valid-pair-sum",
   "title": "Maximum Valid Pair Sum",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Dynamic Programming"
+  ],
   "topics": [
     "Array",
     "Greedy"

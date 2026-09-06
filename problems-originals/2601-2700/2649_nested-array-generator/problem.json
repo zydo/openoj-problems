@@ -5,7 +5,11 @@
   "slug": "nested-array-generator",
   "title": "Nested Array Generator",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Depth-First Search",
+    "Recursion"
+  ],
   "topics": [
     "Array",
     "Recursion"

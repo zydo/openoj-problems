@@ -5,7 +5,9 @@
   "slug": "bind-function-to-context",
   "title": "Bind Function to Context",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

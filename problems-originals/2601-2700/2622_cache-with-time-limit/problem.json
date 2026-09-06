@@ -5,7 +5,10 @@
   "slug": "cache-with-time-limit",
   "title": "Cache With Time Limit",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Hash Table",
+    "JavaScript"
+  ],
   "topics": [
     "Design",
     "Hash Table"

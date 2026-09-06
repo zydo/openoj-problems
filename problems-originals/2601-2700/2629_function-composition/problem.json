@@ -5,7 +5,10 @@
   "slug": "function-composition",
   "title": "Function Composition",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Array",
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

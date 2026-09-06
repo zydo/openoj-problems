@@ -5,7 +5,11 @@
   "slug": "minimum-operations-to-make-array-equal-iii",
   "title": "Minimum Operations to Make Array Equal III",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Math",
+    "Number Theory",
+    "Hash Table"
+  ],
   "topics": [
     "Number Theory",
     "Math"

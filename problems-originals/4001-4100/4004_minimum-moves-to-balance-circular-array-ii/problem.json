@@ -5,7 +5,12 @@
   "slug": "minimum-moves-to-balance-circular-array-ii",
   "title": "Minimum Moves to Balance Circular Array II",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Greedy",
+    "Heap (Priority Queue)",
+    "Binary Search",
+    "Math"
+  ],
   "topics": [
     "Greedy",
     "Math",

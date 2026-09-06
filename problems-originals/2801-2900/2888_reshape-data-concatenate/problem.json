@@ -5,7 +5,10 @@
   "slug": "reshape-data-concatenate",
   "title": "Reshape Data: Concatenate",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

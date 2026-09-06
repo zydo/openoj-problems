@@ -5,7 +5,9 @@
   "slug": "delay-the-resolution-of-each-promise",
   "title": "Delay the Resolution of Each Promise",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency"
   ],

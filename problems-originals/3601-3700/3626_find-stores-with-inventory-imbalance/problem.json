@@ -5,7 +5,10 @@
   "slug": "find-stores-with-inventory-imbalance",
   "title": "Find Stores with Inventory Imbalance",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

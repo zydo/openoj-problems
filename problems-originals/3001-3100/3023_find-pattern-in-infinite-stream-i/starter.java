@@ -1,6 +1,6 @@
 class Solution {
 
-    public int findPattern(InfiniteStream stream, int[] pattern) {
+    public int findPattern(InfiniteStream infiniteStream, int[] pattern) {
         throw new UnsupportedOperationException("TODO");
     }
 }

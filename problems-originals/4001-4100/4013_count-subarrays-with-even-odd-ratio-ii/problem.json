@@ -5,7 +5,11 @@
   "slug": "count-subarrays-with-even-odd-ratio-ii",
   "title": "Count Subarrays With Even Odd Ratio II",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Binary Indexed Tree",
+    "Prefix Sum"
+  ],
   "topics": [
     "Prefix Sum",
     "Binary Indexed Tree",

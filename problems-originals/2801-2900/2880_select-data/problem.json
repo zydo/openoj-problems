@@ -5,7 +5,10 @@
   "slug": "select-data",
   "title": "Select Data",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

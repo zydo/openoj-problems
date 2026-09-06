@@ -5,7 +5,11 @@
   "slug": "peaks-in-array-ii",
   "title": "Peaks in Array II",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Fenwick Tree",
+    "Binary Search"
+  ],
   "topics": [
     "Segment Tree",
     "Array"

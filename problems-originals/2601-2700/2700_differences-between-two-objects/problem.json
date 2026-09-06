@@ -5,7 +5,10 @@
   "slug": "differences-between-two-objects",
   "title": "Differences Between Two Objects",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Depth-First Search"
+  ],
   "topics": [
     "Recursion"
   ],

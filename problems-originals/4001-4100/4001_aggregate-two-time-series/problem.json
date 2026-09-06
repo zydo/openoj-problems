@@ -5,7 +5,11 @@
   "slug": "aggregate-two-time-series",
   "title": "Aggregate Two Time Series",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Simulation"
+  ],
   "topics": [
     "Array",
     "Two Pointers",

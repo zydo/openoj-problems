@@ -5,7 +5,10 @@
   "slug": "drop-missing-data",
   "title": "Drop Missing Data",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Database",
+    "SQL"
+  ],
   "topics": [
     "Database"
   ],

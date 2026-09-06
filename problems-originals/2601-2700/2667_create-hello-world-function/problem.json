@@ -5,7 +5,9 @@
   "slug": "create-hello-world-function",
   "title": "Create Hello World Function",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Design"
   ],

@@ -5,7 +5,11 @@
   "slug": "snail-traversal",
   "title": "Snail Traversal",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
   "topics": [
     "Array",
     "Simulation"

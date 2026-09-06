@@ -5,7 +5,10 @@
   "slug": "minimum-operations-to-transform-binary-string",
   "title": "Minimum Operations to Transform Binary String",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "String",
+    "Greedy"
+  ],
   "topics": [
     "String",
     "Greedy",

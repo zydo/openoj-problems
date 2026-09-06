@@ -5,7 +5,10 @@
   "slug": "array-wrapper",
   "title": "Array Wrapper",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Design"
+  ],
   "topics": [
     "Array",
     "Design"

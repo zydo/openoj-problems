@@ -5,7 +5,10 @@
   "slug": "array-reduce-transformation",
   "title": "Array Reduce Transformation",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Array",
+    "JavaScript"
+  ],
   "topics": [
     "Array",
     "Simulation"

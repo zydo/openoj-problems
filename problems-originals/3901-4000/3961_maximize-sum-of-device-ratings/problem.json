@@ -5,7 +5,11 @@
   "slug": "maximize-sum-of-device-ratings",
   "title": "Maximize Sum of Device Ratings",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
   "topics": [
     "Greedy",
     "Math"

@@ -5,7 +5,10 @@
   "slug": "factorial-generator",
   "title": "Factorial Generator",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Math",
+    "JavaScript"
+  ],
   "topics": [
     "Design",
     "Math"

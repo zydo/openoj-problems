@@ -5,7 +5,11 @@
   "slug": "palindromic-subarray-sum",
   "title": "Palindromic Subarray Sum",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
   "topics": [
     "Two Pointers",
     "Dynamic Programming"

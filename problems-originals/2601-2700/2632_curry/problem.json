@@ -5,7 +5,10 @@
   "slug": "curry",
   "title": "Curry",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Recursion"
+  ],
   "topics": [
     "Design"
   ],

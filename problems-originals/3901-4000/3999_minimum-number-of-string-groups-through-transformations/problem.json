@@ -5,7 +5,10 @@
   "slug": "minimum-number-of-string-groups-through-transformations",
   "title": "Minimum Number of String Groups Through Transformations",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "String",
+    "Hash Table"
+  ],
   "topics": [
     "String",
     "Hash Table",

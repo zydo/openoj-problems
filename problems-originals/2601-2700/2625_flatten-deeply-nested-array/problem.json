@@ -5,7 +5,11 @@
   "slug": "flatten-deeply-nested-array",
   "title": "Flatten Deeply Nested Array",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Stack",
+    "Depth-First Search"
+  ],
   "topics": [
     "Array",
     "Recursion"

@@ -5,7 +5,11 @@
   "slug": "total-sum-of-interaction-cost-in-tree-groups-ii",
   "title": "Total Sum of Interaction Cost in Tree Groups II",
   "difficulty": "Hard",
-  "tags": [],
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Hash Table"
+  ],
   "topics": [
     "Tree",
     "Depth-First Search",

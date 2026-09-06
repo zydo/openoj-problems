@@ -5,7 +5,10 @@
   "slug": "array-prototype-last",
   "title": "Array Prototype Last",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "Array",
+    "JavaScript"
+  ],
   "topics": [
     "Array"
   ],

@@ -5,7 +5,9 @@
   "slug": "create-object-from-two-arrays",
   "title": "Create Object from Two Arrays",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Array",
     "Hash Table"

@@ -5,7 +5,11 @@
   "slug": "calculator-with-method-chaining",
   "title": "Calculator with Method Chaining",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript",
+    "Math",
+    "Design"
+  ],
   "topics": [
     "Design",
     "Math"

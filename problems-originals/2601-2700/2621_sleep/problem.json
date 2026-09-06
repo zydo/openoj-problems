@@ -5,7 +5,9 @@
   "slug": "sleep",
   "title": "Sleep",
   "difficulty": "Easy",
-  "tags": [],
+  "tags": [
+    "JavaScript"
+  ],
   "topics": [
     "Concurrency"
   ],

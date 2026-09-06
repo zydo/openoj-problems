@@ -5,7 +5,10 @@
   "slug": "count-subarrays-with-even-odd-ratio-i",
   "title": "Count Subarrays With Even Odd Ratio I",
   "difficulty": "Medium",
-  "tags": [],
+  "tags": [
+    "Array",
+    "Two Pointers"
+  ],
   "topics": [
     "Math",
     "Prefix Sum"
